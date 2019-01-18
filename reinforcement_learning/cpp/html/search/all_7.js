@@ -1,0 +1,6 @@
+var searchData=
+[
+  ['live_5fmodel',['live_model',['../classreinforcement__learning_1_1live__model.html',1,'reinforcement_learning']]],
+  ['live_5fmodel',['live_model',['../classreinforcement__learning_1_1live__model.html#a1a2a77e0210741140f2f281e0a71da54',1,'reinforcement_learning::live_model::live_model(const utility::configuration &amp;config, error_fn fn=nullptr, void *err_context=nullptr, trace_logger_factory_t *trace_factory=&amp;trace_logger_factory, data_transport_factory_t *t_factory=&amp;data_transport_factory, model_factory_t *m_factory=&amp;model_factory, sender_factory_t *sender_factory=&amp;sender_factory)'],['../classreinforcement__learning_1_1live__model.html#a7a04706c494a1137feb8198dbe6a734c',1,'reinforcement_learning::live_model::live_model(const utility::configuration &amp;config, error_fn_t&lt; ErrCntxt &gt; fn=nullptr, ErrCntxt *err_context=nullptr, trace_logger_factory_t *trace_factory=&amp;trace_logger_factory, data_transport_factory_t *t_factory=&amp;data_transport_factory, model_factory_t *m_factory=&amp;model_factory, sender_factory_t *sender_factory=&amp;sender_factory)'],['../classreinforcement__learning_1_1live__model.html#a4d2a65a1671b1849ecc193fbbe4f1b5a',1,'reinforcement_learning::live_model::live_model(live_model &amp;&amp;)=default']]],
+  ['live_5fmodel_2eh',['live_model.h',['../live__model_8h.html',1,'']]]
+];
