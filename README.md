@@ -4,3 +4,6 @@
 
 ## Vowpal Wabbit Documentation
 See the [Vowpal Wabbit wiki](https://github.com/VowpalWabbit/vowpal_wabbit/wiki) for more documentation.
+
+### Python
+- [Python Bindings documentation](https://vowpalwabbit.github.io/docs/vowpal_wabbit/python/build/html)
