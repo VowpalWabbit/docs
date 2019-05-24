@@ -6,6 +6,13 @@ var NAVTREE =
     [ "API Configuration", "api_config.html", null ],
     [ "API Error Codes", "api_error_codes.html", null ],
     [ "API Context Format", "api_context_format.html", null ],
+    [ "Namespaces", null, [
+      [ "Namespace List", "namespaces.html", "namespaces" ],
+      [ "Namespace Members", "namespacemembers.html", [
+        [ "All", "namespacemembers.html", null ],
+        [ "Functions", "namespacemembers_func.html", null ]
+      ] ]
+    ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],

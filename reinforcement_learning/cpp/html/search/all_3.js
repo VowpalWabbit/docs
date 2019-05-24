@@ -5,7 +5,6 @@ var searchData=
   ['configuration',['configuration',['../classreinforcement__learning_1_1utility_1_1configuration.html',1,'reinforcement_learning::utility']]],
   ['configuration',['configuration',['../classreinforcement__learning_1_1utility_1_1configuration.html#a6b305fb03b25df66b1a5f168ec29f605',1,'reinforcement_learning::utility::configuration::configuration(const configuration &amp;)'],['../classreinforcement__learning_1_1utility_1_1configuration.html#abef58b69f9e44b60ec1f37466e7a5c0a',1,'reinforcement_learning::utility::configuration::configuration(configuration &amp;&amp;) noexcept']]],
   ['configuration_2eh',['configuration.h',['../configuration_8h.html',1,'']]],
-  ['const_5fiterator',['const_iterator',['../classreinforcement__learning_1_1ranking__response_1_1const__iterator.html',1,'reinforcement_learning::ranking_response']]],
   ['const_5fiterator',['const_iterator',['../classreinforcement__learning_1_1ranking__response_1_1const__iterator.html#ad2e98c617e117ef9b1efdbb2b0c41921',1,'reinforcement_learning::ranking_response::const_iterator::const_iterator(const ranking_response *)'],['../classreinforcement__learning_1_1ranking__response_1_1const__iterator.html#a21dc9a150b796b30c2a00f87ae6f62ba',1,'reinforcement_learning::ranking_response::const_iterator::const_iterator(const ranking_response *, size_t)']]],
-  ['create_5ffn_5fexception_5fs',['create_fn_exception_s',['../err__constants_8h.html#ad28ae244a48c10ef6e64b8353c3b0ece',1,'reinforcement_learning::error_code']]]
+  ['const_5fiterator',['const_iterator',['../classreinforcement__learning_1_1ranking__response_1_1const__iterator.html',1,'reinforcement_learning::ranking_response']]]
 ];

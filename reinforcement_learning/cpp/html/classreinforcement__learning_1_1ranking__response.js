@@ -21,5 +21,6 @@ var classreinforcement__learning_1_1ranking__response =
     [ "set_chosen_action_id", "classreinforcement__learning_1_1ranking__response.html#a8ef64bbb5a6aae4f1e8a7ecb797f3add", null ],
     [ "set_event_id", "classreinforcement__learning_1_1ranking__response.html#a8c5e01b6e7797592e7558cf33e2621e7", null ],
     [ "set_model_id", "classreinforcement__learning_1_1ranking__response.html#ad34ff0a5f012e547487976027c443bd7", null ],
+    [ "set_model_id", "classreinforcement__learning_1_1ranking__response.html#a8fb630ac54580c36ddfea0f3841d3286", null ],
     [ "size", "classreinforcement__learning_1_1ranking__response.html#a752ab7bd4b65823f04f696d815b2b0f6", null ]
 ];
