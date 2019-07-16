@@ -141,6 +141,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acb0ab6abbba6c69f1c6c44ba305919e4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreinforcement__learning_1_1live__model.html#acb0ab6abbba6c69f1c6c44ba305919e4">choose_rank</a> (const char *context_json, unsigned int flags, <a class="el" href="classreinforcement__learning_1_1ranking__response.html">ranking_response</a> &amp;resp, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
 <tr class="memdesc:acb0ab6abbba6c69f1c6c44ba305919e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Choose an action, given a list of actions, action features and context features. The inference library chooses an action by creating a probability distribution over the actions and then sampling from it. A unique event_id will be generated and returned in the <a class="el" href="classreinforcement__learning_1_1ranking__response.html" title="choose_rank() returns the action choice using ranking_response. ranking_response contains all the act...">ranking_response</a>. The same event_id should be used when reporting the outcome for this action.  <a href="#acb0ab6abbba6c69f1c6c44ba305919e4">More...</a><br /></td></tr>
 <tr class="separator:acb0ab6abbba6c69f1c6c44ba305919e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c264759ee6e4a8b3276037b0e2a667b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreinforcement__learning_1_1live__model.html#a4c264759ee6e4a8b3276037b0e2a667b">request_decision</a> (const char *context_json, unsigned int flags, decision_response &amp;resp, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
+<tr class="memdesc:a4c264759ee6e4a8b3276037b0e2a667b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Choose an action from the given set for each slot, given a list of actions, slots, action features, slot feautres and context features. The inference library chooses an action per slot by sampling the probability distribution produced per slot. A unique event_id can be supplied for each slot using the <code>_id</code> json field. The corresponding event_id should be used when reporting the outcome for each slot.  <a href="#a4c264759ee6e4a8b3276037b0e2a667b">More...</a><br /></td></tr>
+<tr class="separator:a4c264759ee6e4a8b3276037b0e2a667b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1e6a01a982d02698b6667013e50d23a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreinforcement__learning_1_1live__model.html#ac1e6a01a982d02698b6667013e50d23a">request_decision</a> (const char *context_json, decision_response &amp;resp, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
+<tr class="memdesc:ac1e6a01a982d02698b6667013e50d23a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Choose an action from the given set for each slot, given a list of actions, slots, action features, slot feautres and context features. The inference library chooses an action per slot by sampling the probability distribution produced per slot. A unique event_id can be supplied for each slot using the <code>_id</code> json field. The corresponding event_id should be used when reporting the outcome for each slot.  <a href="#ac1e6a01a982d02698b6667013e50d23a">More...</a><br /></td></tr>
+<tr class="separator:ac1e6a01a982d02698b6667013e50d23a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9e72e066a8e4c572da2cd19d93351cf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreinforcement__learning_1_1live__model.html#ab9e72e066a8e4c572da2cd19d93351cf">report_action_taken</a> (const char *event_id, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
 <tr class="memdesc:ab9e72e066a8e4c572da2cd19d93351cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report that action was taken.  <a href="#ab9e72e066a8e4c572da2cd19d93351cf">More...</a><br /></td></tr>
 <tr class="separator:ab9e72e066a8e4c572da2cd19d93351cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -754,6 +760,99 @@ template&lt;typename ErrCntxt &gt; </div>
   <table class="params">
     <tr><td class="paramname">event_id</td><td>The unique event_id used when choosing an action should be presented here. This is so that the action taken can be matched with feedback received. </td></tr>
     <tr><td class="paramname">outcome</td><td>Outcome as float </td></tr>
+    <tr><td class="paramname">status</td><td>Optional field with detailed string description if there is an error </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int Return error code. This will also be returned in the <a class="el" href="classreinforcement__learning_1_1api__status.html" title="Report status of all API calls. ">api_status</a> object </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4c264759ee6e4a8b3276037b0e2a667b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int reinforcement_learning::live_model::request_decision </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>context_json</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">decision_response &amp;&#160;</td>
+          <td class="paramname"><em>resp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *&#160;</td>
+          <td class="paramname"><em>status</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Choose an action from the given set for each slot, given a list of actions, slots, action features, slot feautres and context features. The inference library chooses an action per slot by sampling the probability distribution produced per slot. A unique event_id can be supplied for each slot using the <code>_id</code> json field. The corresponding event_id should be used when reporting the outcome for each slot. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context_json</td><td>Contains slots, slot_features, slot ids, actions, action features and context features in json format </td></tr>
+    <tr><td class="paramname">flags</td><td>Action flags (see action_flags.h) </td></tr>
+    <tr><td class="paramname">resp</td><td>Decision response contains the chosen action per slot, probability distribution used for sampling actions and ranked actions. </td></tr>
+    <tr><td class="paramname">status</td><td>Optional field with detailed string description if there is an error </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int Return error code. This will also be returned in the <a class="el" href="classreinforcement__learning_1_1api__status.html" title="Report status of all API calls. ">api_status</a> object </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac1e6a01a982d02698b6667013e50d23a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int reinforcement_learning::live_model::request_decision </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>context_json</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">decision_response &amp;&#160;</td>
+          <td class="paramname"><em>resp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *&#160;</td>
+          <td class="paramname"><em>status</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Choose an action from the given set for each slot, given a list of actions, slots, action features, slot feautres and context features. The inference library chooses an action per slot by sampling the probability distribution produced per slot. A unique event_id can be supplied for each slot using the <code>_id</code> json field. The corresponding event_id should be used when reporting the outcome for each slot. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context_json</td><td>Contains slots, slot_features, slot ids, actions, action features and context features in json format </td></tr>
+    <tr><td class="paramname">resp</td><td>Decision response contains the chosen action per slot, probability distribution used for sampling actions and ranked actions. </td></tr>
     <tr><td class="paramname">status</td><td>Optional field with detailed string description if there is an error </td></tr>
   </table>
   </dd>

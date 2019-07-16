@@ -17,5 +17,7 @@ var classreinforcement__learning_1_1live__model =
     [ "refresh_model", "classreinforcement__learning_1_1live__model.html#aa51b579ebc21fdcde6e1dc96033c141a", null ],
     [ "report_action_taken", "classreinforcement__learning_1_1live__model.html#ab9e72e066a8e4c572da2cd19d93351cf", null ],
     [ "report_outcome", "classreinforcement__learning_1_1live__model.html#ac18211a3d6a13944c9ba3a586431d355", null ],
-    [ "report_outcome", "classreinforcement__learning_1_1live__model.html#a23a6c76f1cc12ec097f682e1c4923859", null ]
+    [ "report_outcome", "classreinforcement__learning_1_1live__model.html#a23a6c76f1cc12ec097f682e1c4923859", null ],
+    [ "request_decision", "classreinforcement__learning_1_1live__model.html#a4c264759ee6e4a8b3276037b0e2a667b", null ],
+    [ "request_decision", "classreinforcement__learning_1_1live__model.html#ac1e6a01a982d02698b6667013e50d23a", null ]
 ];
