@@ -6,8 +6,8 @@
 See the [Vowpal Wabbit wiki](https://github.com/VowpalWabbit/vowpal_wabbit/wiki) for more documentation.
 
 ### C++
-- [C++ generated docs](vowpal_wabbit/cpp/html)
-  - [VW namespace](vowpal_wabbit/cpp/html/namespaceVW.html)
+- [C++ generated docs](vowpal_wabbit/cpp/latest)
+  - [VW namespace](vowpal_wabbit/cpp/latest/namespaceVW.html)
 
 ### Python
-- [Python Bindings documentation](vowpal_wabbit/python/html)
+- [Python Bindings documentation](vowpal_wabbit/python/latest)
