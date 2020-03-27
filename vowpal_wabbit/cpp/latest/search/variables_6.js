@@ -30,6 +30,7 @@ var searchData=
   ['final_5fregressor_5fname',['final_regressor_name',['../structvw.html#a1f8e40a38100ab3e27ada930a9f1af63',1,'vw']]],
   ['finalname',['finalname',['../classio__buf.html#a2d0023947ce48a62560161f4315830ac',1,'io_buf']]],
   ['finish',['finish',['../structSearch_1_1search__task.html#aa4784eebfd6de0497b23e824056f9d0c',1,'Search::search_task::finish()'],['../structSearch_1_1search__metatask.html#a0f8ba98f5e0e01e04d66bf8824fb8016',1,'Search::search_metatask::finish()']]],
+  ['finish_5fexample_5fcount',['finish_example_count',['../structlda.html#a02971f6ce6421f7e3d0b763dfdf44e75',1,'lda']]],
   ['finish_5fexample_5ff',['finish_example_f',['../structLEARNER_1_1finish__example__data.html#ada3b2204a8055a67651dcacb0c9cf01f',1,'LEARNER::finish_example_data']]],
   ['finish_5fexample_5ffd',['finish_example_fd',['../structLEARNER_1_1learner.html#af6d64471e880777424a31fbb0e51de2f',1,'LEARNER::learner']]],
   ['finished_5fcount',['finished_count',['../structparser.html#ad53b04588524b349d94531588be79b1f',1,'parser']]],
