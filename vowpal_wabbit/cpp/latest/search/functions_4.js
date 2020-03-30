@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['data',['data',['../structVW_1_1config_1_1options__serializer__i.html#a275b97d9ea4c93a2a2427545cfcdbe6c',1,'VW::config::options_serializer_i::data()'],['../structVW_1_1config_1_1options__serializer__boost__po.html#a7915084ba219fc7fa6a298462738847c',1,'VW::config::options_serializer_boost_po::data()']]],
+  ['data',['data',['../structVW_1_1config_1_1options__serializer__i.html#aa1bfa77a2d9b4ce6e9b837194279dd2a',1,'VW::config::options_serializer_i::data()'],['../structVW_1_1config_1_1options__serializer__boost__po.html#a1b2ac72532ab7d400b584c1f9bcc56e9',1,'VW::config::options_serializer_boost_po::data()']]],
   ['dealloc_5fexample',['dealloc_example',['../namespaceVW.html#adca7249949a43dd30ac1bf6d8a7185a5',1,'VW']]],
   ['decisionservicestate',['DecisionServiceState',['../classDecisionServiceState.html#a46369311924aed5584e968d2ac6ef603',1,'DecisionServiceState']]],
   ['decode_5ftag',['decode_tag',['../namespaceEntityRelationTask.html#a193ba4720c64e8daaa5a6109731753ec',1,'EntityRelationTask']]],

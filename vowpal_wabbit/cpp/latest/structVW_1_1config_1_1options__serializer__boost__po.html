@@ -117,8 +117,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a32f94b05ae7bcd62647309c54384a6c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af020b281db647d5d0b2d59ac0d039ef2"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1options__serializer__boost__po.html#af020b281db647d5d0b2d59ac0d039ef2">str</a> () override</td></tr>
 <tr class="separator:af020b281db647d5d0b2d59ac0d039ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7915084ba219fc7fa6a298462738847c"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1options__serializer__boost__po.html#a7915084ba219fc7fa6a298462738847c">data</a> () override</td></tr>
-<tr class="separator:a7915084ba219fc7fa6a298462738847c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b2ac72532ab7d400b584c1f9bcc56e9"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; const char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1options__serializer__boost__po.html#a1b2ac72532ab7d400b584c1f9bcc56e9">data</a> () override</td></tr>
+<tr class="separator:a1b2ac72532ab7d400b584c1f9bcc56e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb5fd394c40beb9d58e5c8753969a4b0"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1options__serializer__boost__po.html#abb5fd394c40beb9d58e5c8753969a4b0">size</a> () override</td></tr>
 <tr class="separator:abb5fd394c40beb9d58e5c8753969a4b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -181,7 +181,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="options__serializer__boost__po_8h_source.html#l00021">21</a> of file <a class="el" href="options__serializer__boost__po_8h_source.html">options_serializer_boost_po.h</a>.</p>
 
-<p>References <a class="el" href="options__serializer__boost__po_8cc_source.html#l00015">add()</a>, <a class="el" href="options__serializer__boost__po_8cc_source.html#l00011">data()</a>, <a class="el" href="options__serializer__boost__po_8h_source.html#l00072">m_output_stream</a>, <a class="el" href="options__serializer__boost__po_8cc_source.html#l00013">size()</a>, and <a class="el" href="options__serializer__boost__po_8cc_source.html#l00009">str()</a>.</p>
+<p>References <a class="el" href="options__serializer__boost__po_8cc_source.html#l00023">add()</a>, <a class="el" href="options__serializer__boost__po_8cc_source.html#l00013">data()</a>, <a class="el" href="options__serializer__boost__po_8h_source.html#l00072">m_output_stream</a>, <a class="el" href="options__serializer__boost__po_8cc_source.html#l00021">size()</a>, and <a class="el" href="options__serializer__boost__po_8cc_source.html#l00011">str()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{ <a class="code" href="structVW_1_1config_1_1options__serializer__boost__po.html#a5dd08dddc2f9feafd9543958a33efd8c">m_output_stream</a>.precision(15); }</div><div class="ttc" id="structVW_1_1config_1_1options__serializer__boost__po_html_a5dd08dddc2f9feafd9543958a33efd8c"><div class="ttname"><a href="structVW_1_1config_1_1options__serializer__boost__po.html#a5dd08dddc2f9feafd9543958a33efd8c">VW::config::options_serializer_boost_po::m_output_stream</a></div><div class="ttdeci">std::stringstream m_output_stream</div><div class="ttdef"><b>Definition:</b> <a href="options__serializer__boost__po_8h_source.html#l00072">options_serializer_boost_po.h:72</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -211,10 +211,10 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="structVW_1_1config_1_1options__serializer__i.html#af7826e4efa76b62256152ea346737171">VW::config::options_serializer_i</a>.</p>
 
-<p>Definition at line <a class="el" href="options__serializer__boost__po_8cc_source.html#l00015">15</a> of file <a class="el" href="options__serializer__boost__po_8cc_source.html">options_serializer_boost_po.cc</a>.</p>
+<p>Definition at line <a class="el" href="options__serializer__boost__po_8cc_source.html#l00023">23</a> of file <a class="el" href="options__serializer__boost__po_8cc_source.html">options_serializer_boost_po.cc</a>.</p>
 
 <p>Referenced by <a class="el" href="options__serializer__boost__po_8h_source.html#l00021">options_serializer_boost_po()</a>, <a class="el" href="parse__regressor_8cc_source.html#l00170">save_load_header()</a>, and <a class="el" href="parse__args_8cc_source.html#l01777">VW::seed_vw_model()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{ add_impl&lt;supported_options_types&gt;(option); }</div></div><!-- fragment -->
+<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{ add_impl&lt;supported_options_types&gt;(option); }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="aaab6ccb4a89e77460e873745232e4bdb"></a>
@@ -241,10 +241,10 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="options__serializer__boost__po_8cc_source.html#l00027">27</a> of file <a class="el" href="options__serializer__boost__po_8cc_source.html">options_serializer_boost_po.cc</a>.</p>
+<p>Definition at line <a class="el" href="options__serializer__boost__po_8cc_source.html#l00035">35</a> of file <a class="el" href="options__serializer__boost__po_8cc_source.html">options_serializer_boost_po.cc</a>.</p>
 
 <p>References <a class="el" href="vw__exception_8h_source.html#l00180">THROW</a>.</p>
-<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <a class="code" href="vw__exception_8h.html#a6418ba1768107875abafe9a0b6b8b2ad">THROW</a>(<span class="stringliteral">&quot;That is an unsupported option type.&quot;</span>);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div><div class="ttc" id="vw__exception_8h_html_a6418ba1768107875abafe9a0b6b8b2ad"><div class="ttname"><a href="vw__exception_8h.html#a6418ba1768107875abafe9a0b6b8b2ad">THROW</a></div><div class="ttdeci">#define THROW(args)</div><div class="ttdef"><b>Definition:</b> <a href="vw__exception_8h_source.html#l00180">vw_exception.h:180</a></div></div>
+<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="vw__exception_8h.html#a6418ba1768107875abafe9a0b6b8b2ad">THROW</a>(<span class="stringliteral">&quot;That is an unsupported option type.&quot;</span>);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div><div class="ttc" id="vw__exception_8h_html_a6418ba1768107875abafe9a0b6b8b2ad"><div class="ttname"><a href="vw__exception_8h.html#a6418ba1768107875abafe9a0b6b8b2ad">THROW</a></div><div class="ttdeci">#define THROW(args)</div><div class="ttdef"><b>Definition:</b> <a href="vw__exception_8h_source.html#l00180">vw_exception.h:180</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -302,7 +302,7 @@ template&lt;&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a7915084ba219fc7fa6a298462738847c"></a>
+<a class="anchor" id="a1b2ac72532ab7d400b584c1f9bcc56e9"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -310,7 +310,7 @@ template&lt;&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const char * options_serializer_boost_po::data </td>
+          <td class="memname">std::unique_ptr&lt; const char &gt; options_serializer_boost_po::data </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -323,14 +323,15 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="structVW_1_1config_1_1options__serializer__i.html#a275b97d9ea4c93a2a2427545cfcdbe6c">VW::config::options_serializer_i</a>.</p>
+<p>Implements <a class="el" href="structVW_1_1config_1_1options__serializer__i.html#aa1bfa77a2d9b4ce6e9b837194279dd2a">VW::config::options_serializer_i</a>.</p>
 
-<p>Definition at line <a class="el" href="options__serializer__boost__po_8cc_source.html#l00011">11</a> of file <a class="el" href="options__serializer__boost__po_8cc_source.html">options_serializer_boost_po.cc</a>.</p>
+<p>Definition at line <a class="el" href="options__serializer__boost__po_8cc_source.html#l00013">13</a> of file <a class="el" href="options__serializer__boost__po_8cc_source.html">options_serializer_boost_po.cc</a>.</p>
 
-<p>References <a class="el" href="options__serializer__boost__po_8h_source.html#l00072">m_output_stream</a>.</p>
+<p>References <a class="el" href="options__serializer__boost__po_8h_source.html#l00072">m_output_stream</a>, and <a class="el" href="options__serializer__boost__po_8cc_source.html#l00011">str()</a>.</p>
 
 <p>Referenced by <a class="el" href="options__serializer__boost__po_8h_source.html#l00021">options_serializer_boost_po()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="structVW_1_1config_1_1options__serializer__boost__po.html#a5dd08dddc2f9feafd9543958a33efd8c">m_output_stream</a>.str().c_str(); }</div><div class="ttc" id="structVW_1_1config_1_1options__serializer__boost__po_html_a5dd08dddc2f9feafd9543958a33efd8c"><div class="ttname"><a href="structVW_1_1config_1_1options__serializer__boost__po.html#a5dd08dddc2f9feafd9543958a33efd8c">VW::config::options_serializer_boost_po::m_output_stream</a></div><div class="ttdeci">std::stringstream m_output_stream</div><div class="ttdef"><b>Definition:</b> <a href="options__serializer__boost__po_8h_source.html#l00072">options_serializer_boost_po.h:72</a></div></div>
+<div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;                                                            {</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keyword">auto</span> <a class="code" href="structVW_1_1config_1_1options__serializer__boost__po.html#af020b281db647d5d0b2d59ac0d039ef2">str</a> = <a class="code" href="structVW_1_1config_1_1options__serializer__boost__po.html#a5dd08dddc2f9feafd9543958a33efd8c">m_output_stream</a>.str();</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keywordtype">char</span>* buffer = <span class="keyword">new</span> <span class="keywordtype">char</span>[<a class="code" href="structVW_1_1config_1_1options__serializer__boost__po.html#af020b281db647d5d0b2d59ac0d039ef2">str</a>.size() + 1];</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <a class="code" href="structVW_1_1config_1_1options__serializer__boost__po.html#af020b281db647d5d0b2d59ac0d039ef2">str</a>.copy(buffer, <a class="code" href="structVW_1_1config_1_1options__serializer__boost__po.html#af020b281db647d5d0b2d59ac0d039ef2">str</a>.size());</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  buffer[<a class="code" href="structVW_1_1config_1_1options__serializer__boost__po.html#af020b281db647d5d0b2d59ac0d039ef2">str</a>.size()] = <span class="charliteral">&#39;\0&#39;</span>;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keywordflow">return</span> std::unique_ptr&lt;const char&gt;(buffer);</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div><div class="ttc" id="structVW_1_1config_1_1options__serializer__boost__po_html_a5dd08dddc2f9feafd9543958a33efd8c"><div class="ttname"><a href="structVW_1_1config_1_1options__serializer__boost__po.html#a5dd08dddc2f9feafd9543958a33efd8c">VW::config::options_serializer_boost_po::m_output_stream</a></div><div class="ttdeci">std::stringstream m_output_stream</div><div class="ttdef"><b>Definition:</b> <a href="options__serializer__boost__po_8h_source.html#l00072">options_serializer_boost_po.h:72</a></div></div>
+<div class="ttc" id="structVW_1_1config_1_1options__serializer__boost__po_html_af020b281db647d5d0b2d59ac0d039ef2"><div class="ttname"><a href="structVW_1_1config_1_1options__serializer__boost__po.html#af020b281db647d5d0b2d59ac0d039ef2">VW::config::options_serializer_boost_po::str</a></div><div class="ttdeci">virtual std::string str() override</div><div class="ttdef"><b>Definition:</b> <a href="options__serializer__boost__po_8cc_source.html#l00011">options_serializer_boost_po.cc:11</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -358,10 +359,10 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="options__serializer__boost__po_8cc_source.html#l00018">18</a> of file <a class="el" href="options__serializer__boost__po_8cc_source.html">options_serializer_boost_po.cc</a>.</p>
+<p>Definition at line <a class="el" href="options__serializer__boost__po_8cc_source.html#l00026">26</a> of file <a class="el" href="options__serializer__boost__po_8cc_source.html">options_serializer_boost_po.cc</a>.</p>
 
 <p>References <a class="el" href="options_8h_source.html#l00024">VW::config::base_option::m_name</a>, <a class="el" href="options__serializer__boost__po_8h_source.html#l00072">m_output_stream</a>, and <a class="el" href="options_8h_source.html#l00078">VW::config::typed_option&lt; T &gt;::value()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keywordflow">if</span> (typed_option.<a class="code" href="structVW_1_1config_1_1typed__option.html#a1bf71cba9827e62d5b99a046f0b94a49">value</a>())</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  {</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="structVW_1_1config_1_1options__serializer__boost__po.html#a5dd08dddc2f9feafd9543958a33efd8c">m_output_stream</a> &lt;&lt; <span class="stringliteral">&quot; --&quot;</span> &lt;&lt; typed_option.<a class="code" href="structVW_1_1config_1_1base__option.html#aa4b1e915fd104a32495780d207254a9c">m_name</a>;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  }</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div><div class="ttc" id="structVW_1_1config_1_1options__serializer__boost__po_html_a5dd08dddc2f9feafd9543958a33efd8c"><div class="ttname"><a href="structVW_1_1config_1_1options__serializer__boost__po.html#a5dd08dddc2f9feafd9543958a33efd8c">VW::config::options_serializer_boost_po::m_output_stream</a></div><div class="ttdeci">std::stringstream m_output_stream</div><div class="ttdef"><b>Definition:</b> <a href="options__serializer__boost__po_8h_source.html#l00072">options_serializer_boost_po.h:72</a></div></div>
+<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordflow">if</span> (typed_option.<a class="code" href="structVW_1_1config_1_1typed__option.html#a1bf71cba9827e62d5b99a046f0b94a49">value</a>())</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  {</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="structVW_1_1config_1_1options__serializer__boost__po.html#a5dd08dddc2f9feafd9543958a33efd8c">m_output_stream</a> &lt;&lt; <span class="stringliteral">&quot; --&quot;</span> &lt;&lt; typed_option.<a class="code" href="structVW_1_1config_1_1base__option.html#aa4b1e915fd104a32495780d207254a9c">m_name</a>;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  }</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div><div class="ttc" id="structVW_1_1config_1_1options__serializer__boost__po_html_a5dd08dddc2f9feafd9543958a33efd8c"><div class="ttname"><a href="structVW_1_1config_1_1options__serializer__boost__po.html#a5dd08dddc2f9feafd9543958a33efd8c">VW::config::options_serializer_boost_po::m_output_stream</a></div><div class="ttdeci">std::stringstream m_output_stream</div><div class="ttdef"><b>Definition:</b> <a href="options__serializer__boost__po_8h_source.html#l00072">options_serializer_boost_po.h:72</a></div></div>
 <div class="ttc" id="structVW_1_1config_1_1base__option_html_aa4b1e915fd104a32495780d207254a9c"><div class="ttname"><a href="structVW_1_1config_1_1base__option.html#aa4b1e915fd104a32495780d207254a9c">VW::config::base_option::m_name</a></div><div class="ttdeci">std::string m_name</div><div class="ttdef"><b>Definition:</b> <a href="options_8h_source.html#l00024">options.h:24</a></div></div>
 <div class="ttc" id="structVW_1_1config_1_1typed__option_html_a1bf71cba9827e62d5b99a046f0b94a49"><div class="ttname"><a href="structVW_1_1config_1_1typed__option.html#a1bf71cba9827e62d5b99a046f0b94a49">VW::config::typed_option::value</a></div><div class="ttdeci">typed_option &amp; value(T value)</div><div class="ttdef"><b>Definition:</b> <a href="options_8h_source.html#l00078">options.h:78</a></div></div>
 </div><!-- fragment -->
@@ -511,12 +512,12 @@ template&lt;typename T &gt; </div>
 
 <p>Implements <a class="el" href="structVW_1_1config_1_1options__serializer__i.html#a01fafc3449c816d82e83e0efd5f0f3ee">VW::config::options_serializer_i</a>.</p>
 
-<p>Definition at line <a class="el" href="options__serializer__boost__po_8cc_source.html#l00013">13</a> of file <a class="el" href="options__serializer__boost__po_8cc_source.html">options_serializer_boost_po.cc</a>.</p>
+<p>Definition at line <a class="el" href="options__serializer__boost__po_8cc_source.html#l00021">21</a> of file <a class="el" href="options__serializer__boost__po_8cc_source.html">options_serializer_boost_po.cc</a>.</p>
 
 <p>References <a class="el" href="options__serializer__boost__po_8h_source.html#l00072">m_output_stream</a>.</p>
 
 <p>Referenced by <a class="el" href="options__serializer__boost__po_8h_source.html#l00021">options_serializer_boost_po()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="structVW_1_1config_1_1options__serializer__boost__po.html#a5dd08dddc2f9feafd9543958a33efd8c">m_output_stream</a>.str().size(); }</div><div class="ttc" id="structVW_1_1config_1_1options__serializer__boost__po_html_a5dd08dddc2f9feafd9543958a33efd8c"><div class="ttname"><a href="structVW_1_1config_1_1options__serializer__boost__po.html#a5dd08dddc2f9feafd9543958a33efd8c">VW::config::options_serializer_boost_po::m_output_stream</a></div><div class="ttdeci">std::stringstream m_output_stream</div><div class="ttdef"><b>Definition:</b> <a href="options__serializer__boost__po_8h_source.html#l00072">options_serializer_boost_po.h:72</a></div></div>
+<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="structVW_1_1config_1_1options__serializer__boost__po.html#a5dd08dddc2f9feafd9543958a33efd8c">m_output_stream</a>.str().size(); }</div><div class="ttc" id="structVW_1_1config_1_1options__serializer__boost__po_html_a5dd08dddc2f9feafd9543958a33efd8c"><div class="ttname"><a href="structVW_1_1config_1_1options__serializer__boost__po.html#a5dd08dddc2f9feafd9543958a33efd8c">VW::config::options_serializer_boost_po::m_output_stream</a></div><div class="ttdeci">std::stringstream m_output_stream</div><div class="ttdef"><b>Definition:</b> <a href="options__serializer__boost__po_8h_source.html#l00072">options_serializer_boost_po.h:72</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -543,12 +544,12 @@ template&lt;typename T &gt; </div>
 
 <p>Implements <a class="el" href="structVW_1_1config_1_1options__serializer__i.html#a86eef765a9c450deec0b0cf0aad55a36">VW::config::options_serializer_i</a>.</p>
 
-<p>Definition at line <a class="el" href="options__serializer__boost__po_8cc_source.html#l00009">9</a> of file <a class="el" href="options__serializer__boost__po_8cc_source.html">options_serializer_boost_po.cc</a>.</p>
+<p>Definition at line <a class="el" href="options__serializer__boost__po_8cc_source.html#l00011">11</a> of file <a class="el" href="options__serializer__boost__po_8cc_source.html">options_serializer_boost_po.cc</a>.</p>
 
 <p>References <a class="el" href="options__serializer__boost__po_8h_source.html#l00072">m_output_stream</a>.</p>
 
-<p>Referenced by <a class="el" href="options__serializer__boost__po_8h_source.html#l00021">options_serializer_boost_po()</a>, <a class="el" href="parse__regressor_8cc_source.html#l00170">save_load_header()</a>, and <a class="el" href="parse__args_8cc_source.html#l01777">VW::seed_vw_model()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="structVW_1_1config_1_1options__serializer__boost__po.html#a5dd08dddc2f9feafd9543958a33efd8c">m_output_stream</a>.str(); }</div><div class="ttc" id="structVW_1_1config_1_1options__serializer__boost__po_html_a5dd08dddc2f9feafd9543958a33efd8c"><div class="ttname"><a href="structVW_1_1config_1_1options__serializer__boost__po.html#a5dd08dddc2f9feafd9543958a33efd8c">VW::config::options_serializer_boost_po::m_output_stream</a></div><div class="ttdeci">std::stringstream m_output_stream</div><div class="ttdef"><b>Definition:</b> <a href="options__serializer__boost__po_8h_source.html#l00072">options_serializer_boost_po.h:72</a></div></div>
+<p>Referenced by <a class="el" href="options__serializer__boost__po_8cc_source.html#l00013">data()</a>, <a class="el" href="options__serializer__boost__po_8h_source.html#l00021">options_serializer_boost_po()</a>, <a class="el" href="parse__regressor_8cc_source.html#l00170">save_load_header()</a>, and <a class="el" href="parse__args_8cc_source.html#l01777">VW::seed_vw_model()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="structVW_1_1config_1_1options__serializer__boost__po.html#a5dd08dddc2f9feafd9543958a33efd8c">m_output_stream</a>.str(); }</div><div class="ttc" id="structVW_1_1config_1_1options__serializer__boost__po_html_a5dd08dddc2f9feafd9543958a33efd8c"><div class="ttname"><a href="structVW_1_1config_1_1options__serializer__boost__po.html#a5dd08dddc2f9feafd9543958a33efd8c">VW::config::options_serializer_boost_po::m_output_stream</a></div><div class="ttdeci">std::stringstream m_output_stream</div><div class="ttdef"><b>Definition:</b> <a href="options__serializer__boost__po_8h_source.html#l00072">options_serializer_boost_po.h:72</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -573,7 +574,7 @@ template&lt;typename T &gt; </div>
 
 <p>Definition at line <a class="el" href="options__serializer__boost__po_8h_source.html#l00072">72</a> of file <a class="el" href="options__serializer__boost__po_8h_source.html">options_serializer_boost_po.h</a>.</p>
 
-<p>Referenced by <a class="el" href="options__serializer__boost__po_8cc_source.html#l00011">data()</a>, <a class="el" href="options__serializer__boost__po_8h_source.html#l00021">options_serializer_boost_po()</a>, <a class="el" href="options__serializer__boost__po_8cc_source.html#l00018">serialize()</a>, <a class="el" href="options__serializer__boost__po_8cc_source.html#l00013">size()</a>, and <a class="el" href="options__serializer__boost__po_8cc_source.html#l00009">str()</a>.</p>
+<p>Referenced by <a class="el" href="options__serializer__boost__po_8cc_source.html#l00013">data()</a>, <a class="el" href="options__serializer__boost__po_8h_source.html#l00021">options_serializer_boost_po()</a>, <a class="el" href="options__serializer__boost__po_8cc_source.html#l00026">serialize()</a>, <a class="el" href="options__serializer__boost__po_8cc_source.html#l00021">size()</a>, and <a class="el" href="options__serializer__boost__po_8cc_source.html#l00011">str()</a>.</p>
 
 </div>
 </div>
@@ -584,7 +585,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 30 2020 01:11:48 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 30 2020 02:02:54 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
