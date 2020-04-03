@@ -1,13 +1,8 @@
-## Reinforcement Learning Documentation
+## [Vowpal Wabbit](https://github.com/VowpalWabbit/vowpal_wabbit/) documentation
+- [Wiki](https://github.com/VowpalWabbit/vowpal_wabbit/wiki)
+- [C++ generated docs](vowpal_wabbit/cpp/latest)
+- [Python bindings generated docs](vowpal_wabbit/python/latest)
+
+## [Reinforcement Learning](https://github.com/VowpalWabbit/reinforcement_learning/) documentation
 - [C++ Doxygen documentation](reinforcement_learning/cpp/html/)
 - [Python Doxygen documentation](reinforcement_learning/python/html/)
-
-## Vowpal Wabbit Documentation
-See the [Vowpal Wabbit wiki](https://github.com/VowpalWabbit/vowpal_wabbit/wiki) for more documentation.
-
-### C++
-- [C++ generated docs](vowpal_wabbit/cpp/latest)
-  - [VW namespace](vowpal_wabbit/cpp/latest/namespaceVW.html)
-
-### Python
-- [Python Bindings documentation](vowpal_wabbit/python/latest)
