@@ -59,36 +59,139 @@
 <td>Create an example initStringOrDict can specify example as VW formatted string, or a dictionary labelType can specify the desire label type</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#vowpalwabbit.pyvw.SearchTask.learn" title="vowpalwabbit.pyvw.SearchTask.learn"><code class="xref py py-obj docutils literal notranslate"><span class="pre">learn</span></code></a>(self,&nbsp;data_iterator)</td>
-<td>Train search task by providing an iterator of examples</td>
+<td>Train search task by providing an iterator of examples.</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#vowpalwabbit.pyvw.SearchTask.predict" title="vowpalwabbit.pyvw.SearchTask.predict"><code class="xref py py-obj docutils literal notranslate"><span class="pre">predict</span></code></a>(self,&nbsp;my_example[,&nbsp;useOracle])</td>
-<td>Return prediction</td>
+<td>Predict on the example</td>
 </tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="vowpalwabbit.pyvw.SearchTask.__init__">
 <code class="descname">__init__</code><span class="sig-paren">(</span><em>self</em>, <em>vw</em>, <em>sch</em>, <em>num_actions</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.SearchTask.__init__" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>vw</strong> <span class="classifier-delimiter">:</span> <span class="classifier">vw object</span></dt>
+<dd></dd>
+<dt><strong>sch</strong> <span class="classifier-delimiter">:</span> <span class="classifier">search object</span></dt>
+<dd></dd>
+<dt><strong>num_actions</strong> <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dd><p class="first last">The number of actions with the object can be initialized with</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>self</strong> <span class="classifier-delimiter">:</span> <span class="classifier">SearchTask</span></dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<dl class="last docutils">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">pyvw.vw</span></code></dt>
+<dd></dd>
+</dl>
+</div>
+</dd></dl>
 
 <dl class="method">
 <dt id="vowpalwabbit.pyvw.SearchTask.example">
 <code class="descname">example</code><span class="sig-paren">(</span><em>self</em>, <em>initStringOrDict=None</em>, <em>labelType=0</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.SearchTask.example" title="Permalink to this definition">¶</a></dt>
-<dd><p>Create an example
-initStringOrDict can specify example as VW formatted string, or a dictionary
-labelType can specify the desire label type</p>
+<dd><p>Create an example initStringOrDict can specify example as VW
+formatted string, or a dictionary labelType can specify the desire
+label type</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>initStringOrDict</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str/dict</span></dt>
+<dd><p class="first last">Example in either string or dictionary form</p>
+</dd>
+<dt><strong>labelType</strong> <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dd><ul class="first simple">
+<li>0 : lDEFAULT</li>
+<li>1 : lBINARY</li>
+<li>2 : lMULTICLASS</li>
+<li>3 : lCOST_SENSITIVE</li>
+<li>4 : lCONTEXTUAL_BANDIT</li>
+<li>5 : lMAX</li>
+<li>6 : lCONDITIONAL_CONTEXTUAL_BANDIT</li>
+</ul>
+<p class="last">The integer is used to map the corresponding labelType using the
+above available options</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>out</strong> <span class="classifier-delimiter">:</span> <span class="classifier">Example</span></dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="method">
 <dt id="vowpalwabbit.pyvw.SearchTask.learn">
 <code class="descname">learn</code><span class="sig-paren">(</span><em>self</em>, <em>data_iterator</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.SearchTask.learn" title="Permalink to this definition">¶</a></dt>
-<dd><p>Train search task by providing an iterator of examples</p>
+<dd><p>Train search task by providing an iterator of examples.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>data_iterator: iterable objects</strong></dt>
+<dd><p class="first last">Consists of examples to be learned</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>self</strong> <span class="classifier-delimiter">:</span> <span class="classifier">SearchTask</span></dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="method">
 <dt id="vowpalwabbit.pyvw.SearchTask.predict">
 <code class="descname">predict</code><span class="sig-paren">(</span><em>self</em>, <em>my_example</em>, <em>useOracle=False</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.SearchTask.predict" title="Permalink to this definition">¶</a></dt>
-<dd><p>Return prediction</p>
+<dd><p>Predict on the example</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>my_example</strong> <span class="classifier-delimiter">:</span> <span class="classifier">Example</span></dt>
+<dd><p class="first last">example used for prediction</p>
+</dd>
+<dt><strong>useOracle</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>out</strong> <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dd><p class="first last">Prediction on the example</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 </dd></dl>
@@ -202,10 +305,10 @@ also with added python-specific functionality.</p>
 <td>Remove all the features from a given namespace</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#vowpalwabbit.pyvw.example.feature" title="vowpalwabbit.pyvw.example.feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">feature</span></code></a>(self,&nbsp;ns,&nbsp;i)</td>
-<td>Get the i-th hashed feature id in a given namespace (i can range from 0 to self.num_features_in(ns)-1)</td>
+<td>Get the i-th hashed feature id in a given namespace</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#vowpalwabbit.pyvw.example.feature_weight" title="vowpalwabbit.pyvw.example.feature_weight"><code class="xref py py-obj docutils literal notranslate"><span class="pre">feature_weight</span></code></a>(self,&nbsp;ns,&nbsp;i)</td>
-<td>Get the value(weight) associated with a given feature id in a given namespace (i can range from 0 to self.num_features_in(ns)-1)</td>
+<td>Get the value(weight) associated with a given feature id</td>
 </tr>
 <tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_action_scores</span></code>()</td>
 <td>Get action scores from example prediction</td>
@@ -253,7 +356,7 @@ also with added python-specific functionality.</p>
 <td>Returns the counter of total number of examples seen up to and including this one</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#vowpalwabbit.pyvw.example.get_feature_id" title="vowpalwabbit.pyvw.example.get_feature_id"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_feature_id</span></code></a>(self,&nbsp;ns,&nbsp;feature[,&nbsp;ns_hash])</td>
-<td>Return the hashed feature id for a given feature in a given namespace.</td>
+<td>Get the hashed feature id for a given feature in a given namespace.</td>
 </tr>
 <tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_feature_number</span></code>()</td>
 <td>Returns the total number of features for this example</td>
@@ -280,7 +383,7 @@ also with added python-specific functionality.</p>
 <td>Get multilabel predictions from example prediction</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#vowpalwabbit.pyvw.example.get_ns" title="vowpalwabbit.pyvw.example.get_ns"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_ns</span></code></a>(self,&nbsp;id)</td>
-<td>Construct a namespace_id from either an integer or string (or, if a namespace_id is fed it, just return it directly).</td>
+<td>Construct a namespace_id</td>
 </tr>
 <tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_partial_prediction</span></code>()</td>
 <td>Returns the partial prediction associated with this example</td>
@@ -325,19 +428,19 @@ also with added python-specific functionality.</p>
 <td>Get the namespace id for namespace i (for i = 0..</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#vowpalwabbit.pyvw.example.num_features_in" title="vowpalwabbit.pyvw.example.num_features_in"><code class="xref py py-obj docutils literal notranslate"><span class="pre">num_features_in</span></code></a>(self,&nbsp;ns)</td>
-<td>Return the total number of features in a given namespace.</td>
+<td>Get the total number of features in a given namespace</td>
 </tr>
 <tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">num_namespaces</span></code>()</td>
 <td>The total number of namespaces associated with this example</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#vowpalwabbit.pyvw.example.pop_feature" title="vowpalwabbit.pyvw.example.pop_feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pop_feature</span></code></a>(self,&nbsp;ns)</td>
-<td>Remove the top feature from a given namespace; returns True if a feature was removed, returns False if there were no features to pop.</td>
+<td>Remove the top feature from a given namespace</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#vowpalwabbit.pyvw.example.pop_namespace" title="vowpalwabbit.pyvw.example.pop_namespace"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pop_namespace</span></code></a>(self)</td>
-<td>Remove the top namespace from an example; returns True if a namespace was removed, or False if there were no namespaces left.</td>
+<td>Remove the top namespace from an example</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#vowpalwabbit.pyvw.example.push_feature" title="vowpalwabbit.pyvw.example.push_feature"><code class="xref py py-obj docutils literal notranslate"><span class="pre">push_feature</span></code></a>(self,&nbsp;ns,&nbsp;feature[,&nbsp;v,&nbsp;ns_hash])</td>
-<td>Add an unhashed feature to a given namespace.</td>
+<td>Add an unhashed feature to a given namespace</td>
 </tr>
 <tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">push_feature_dict</span></code>()</td>
 <td>Add a (Python) dictionary of namespace/feature-list pairs</td>
@@ -355,7 +458,7 @@ also with added python-specific functionality.</p>
 <td>Push a new namespace onto this example.</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#vowpalwabbit.pyvw.example.set_label_string" title="vowpalwabbit.pyvw.example.set_label_string"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_label_string</span></code></a>(self,&nbsp;string)</td>
-<td>Give this example a new label, formatted as a string (ala the VW data file format).</td>
+<td>Give this example a new label</td>
 </tr>
 <tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_test_only</span></code>()</td>
 <td>Change the test-only bit on an example</td>
@@ -364,7 +467,7 @@ also with added python-specific functionality.</p>
 <td>If this example hasn’t already been setup (ie, quadratic features constructed, etc.), do so.</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#vowpalwabbit.pyvw.example.sum_feat_sq" title="vowpalwabbit.pyvw.example.sum_feat_sq"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sum_feat_sq</span></code></a>(self,&nbsp;ns)</td>
-<td>Return the total sum feature-value squared for a given namespace.</td>
+<td>Get the total sum feature-value squared for a given namespace</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#vowpalwabbit.pyvw.example.unsetup_example" title="vowpalwabbit.pyvw.example.unsetup_example"><code class="xref py py-obj docutils literal notranslate"><span class="pre">unsetup_example</span></code></a>(self)</td>
 <td>If this example has been setup, reverse that process so you can continue editing the examples.</td>
@@ -374,60 +477,228 @@ also with added python-specific functionality.</p>
 <dl class="method">
 <dt id="vowpalwabbit.pyvw.example.__init__">
 <code class="descname">__init__</code><span class="sig-paren">(</span><em>self</em>, <em>vw</em>, <em>initStringOrDictOrRawExample=None</em>, <em>labelType=0</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.example.__init__" title="Permalink to this definition">¶</a></dt>
-<dd><p>Construct a new example from vw. If initString is None, you
-get an “empty” example which you can construct by hand (see, eg,
-example.push_features). If initString is a string, then this
-string is parsed as it would be from a VW data file into an
-example (and “setup_example” is run). if it is a dict, then we add all features in that dictionary.
-finally, if it’s a function, we (repeatedly) execute it fn() until it’s not a function any more
-(for lazy feature computation).</p>
+<dd><p>Construct a new example from vw.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>vw</strong> <span class="classifier-delimiter">:</span> <span class="classifier">vw</span></dt>
+<dd><p class="first last">vw model</p>
+</dd>
+<dt><strong>initStringOrDictOrRawExample</strong> <span class="classifier-delimiter">:</span> <span class="classifier">dict/string/None</span></dt>
+<dd><p class="first last">If initString is None, you get an “empty” example which you
+can construct by hand (see, eg, example.push_features).
+If initString is a string, then this string is parsed as
+it would be from a VW data file into an example (and
+“setup_example” is run). if it is a dict, then we add all
+features in that dictionary. finally, if it’s a function,
+we (repeatedly) execute it fn() until it’s not a function
+any more(for lazy feature computation). By default is None</p>
+</dd>
+<dt><strong>labelType</strong> <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dd><ul class="first simple">
+<li>0 : lDEFAULT</li>
+<li>1 : lBINARY</li>
+<li>2 : lMULTICLASS</li>
+<li>3 : lCOST_SENSITIVE</li>
+<li>4 : lCONTEXTUAL_BANDIT</li>
+<li>5 : lMAX</li>
+<li>6 : lCONDITIONAL_CONTEXTUAL_BANDIT</li>
+</ul>
+<p class="last">The integer is used to map the corresponding labelType using the
+above available options</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>self</strong> <span class="classifier-delimiter">:</span> <span class="classifier">Example</span></dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<dl class="last docutils">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">pyvw.vw</span></code></dt>
+<dd></dd>
+</dl>
+</div>
 </dd></dl>
 
 <dl class="method">
 <dt id="vowpalwabbit.pyvw.example.ensure_namespace_exists">
 <code class="descname">ensure_namespace_exists</code><span class="sig-paren">(</span><em>self</em>, <em>ns</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.example.ensure_namespace_exists" title="Permalink to this definition">¶</a></dt>
-<dd><p>Check to see if a namespace already exists. If it does, do
-nothing. If it doesn’t, add it.</p>
+<dd><p>Check to see if a namespace already exists.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>ns</strong> <span class="classifier-delimiter">:</span> <span class="classifier">namespace</span></dt>
+<dd><p class="first last">If namespace exists does, do nothing. If it doesn’t, add it.</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="method">
 <dt id="vowpalwabbit.pyvw.example.feature">
 <code class="descname">feature</code><span class="sig-paren">(</span><em>self</em>, <em>ns</em>, <em>i</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.example.feature" title="Permalink to this definition">¶</a></dt>
-<dd><p>Get the i-th hashed feature id in a given namespace (i can
-range from 0 to self.num_features_in(ns)-1)</p>
+<dd><p>Get the i-th hashed feature id in a given namespace</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>ns</strong> <span class="classifier-delimiter">:</span> <span class="classifier">namespace</span></dt>
+<dd><p class="first last">namespace used to get the feature</p>
+</dd>
+<dt><strong>i</strong> <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dd><p class="first last">to get i-th hashed feature id in a given ns. It must range from
+0 to self.num_features_in(ns)-1</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>f</strong> <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dd><p class="first last">i-th hashed feature-id in a given ns</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="method">
 <dt id="vowpalwabbit.pyvw.example.feature_weight">
 <code class="descname">feature_weight</code><span class="sig-paren">(</span><em>self</em>, <em>ns</em>, <em>i</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.example.feature_weight" title="Permalink to this definition">¶</a></dt>
-<dd><p>Get the value(weight) associated with a given feature id in
-a given namespace (i can range from 0 to
-self.num_features_in(ns)-1)</p>
+<dd><p>Get the value(weight) associated with a given feature id</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>ns</strong> <span class="classifier-delimiter">:</span> <span class="classifier">namespace</span></dt>
+<dd><p class="first last">namespace used to get the feature id</p>
+</dd>
+<dt><strong>i</strong> <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dd><p class="first last">to get the weight of i-th feature in the given ns. It must range
+from 0 to self.num_features_in(ns)-1</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>out</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">weight(value) of the i-th feature of given ns</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="method">
 <dt id="vowpalwabbit.pyvw.example.get_feature_id">
 <code class="descname">get_feature_id</code><span class="sig-paren">(</span><em>self</em>, <em>ns</em>, <em>feature</em>, <em>ns_hash=None</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.example.get_feature_id" title="Permalink to this definition">¶</a></dt>
-<dd><p>Return the hashed feature id for a given feature in a given
+<dd><p>Get the hashed feature id for a given feature in a given
 namespace. feature can either be an integer (already a feature
-id) or a string, in which case it is hashed. Note that if
-–hash all is on, then get_feature_id(ns,”5”) !=
-get_feature_id(ns, 5). If you’ve already hashed the namespace,
-you can optionally provide that value to avoid re-hashing it.</p>
+id) or a string, in which case it is hashed.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>ns</strong> <span class="classifier-delimiter">:</span> <span class="classifier">namespace</span></dt>
+<dd><p class="first last">namespace used to get the feature</p>
+</dd>
+<dt><strong>feature</strong> <span class="classifier-delimiter">:</span> <span class="classifier">integer/string</span></dt>
+<dd><p class="first last">If integer the already a feature else will be hashed</p>
+</dd>
+<dt><strong>ns_hash</strong> <span class="classifier-delimiter">:</span> <span class="classifier">Optional, by default is None</span></dt>
+<dd><p class="first last">The hash of the namespace</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>out</strong> <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dd><p class="first last">Hashed feature id</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="first last admonition-title">Note</p>
+</div>
+<dl class="last docutils">
+<dt>If –hash all is on, then get_feature_id(ns,”5”) !=</dt>
+<dd></dd>
+<dt>get_feature_id(ns, 5). If you’ve already hashed the namespace,</dt>
+<dd></dd>
+<dt>you can optionally provide that value to avoid re-hashing it.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="method">
 <dt id="vowpalwabbit.pyvw.example.get_label">
-<code class="descname">get_label</code><span class="sig-paren">(</span><em>self</em>, <em>label_class=&lt;class vowpalwabbit.pyvw.simple_label at 0x7f7f7342bec0&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.example.get_label" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_label</code><span class="sig-paren">(</span><em>self</em>, <em>label_class=&lt;class vowpalwabbit.pyvw.simple_label at 0x7fe7d010cec0&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.example.get_label" title="Permalink to this definition">¶</a></dt>
 <dd><p>Given a known label class (default is simple_label), get
 the corresponding label structure for this example.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>label_class</strong> <span class="classifier-delimiter">:</span> <span class="classifier">label classes</span></dt>
+<dd><p class="first last">Get the label of the example of label_class type, by default is
+simple_label</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="method">
 <dt id="vowpalwabbit.pyvw.example.get_ns">
 <code class="descname">get_ns</code><span class="sig-paren">(</span><em>self</em>, <em>id</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.example.get_ns" title="Permalink to this definition">¶</a></dt>
-<dd><p>Construct a namespace_id from either an integer or string
-(or, if a namespace_id is fed it, just return it directly).</p>
+<dd><p>Construct a namespace_id</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>id</strong> <span class="classifier-delimiter">:</span> <span class="classifier">namespace_id/str/integer</span></dt>
+<dd><p class="first last">id used to create namespace</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>out</strong> <span class="classifier-delimiter">:</span> <span class="classifier">namespace_id</span></dt>
+<dd><p class="first last">namespace_id created using parameter passed(if id was namespace_id,
+just return it directly)</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="method">
@@ -447,68 +718,207 @@ call setup_example if the example hasn’t yet been setup).</p>
 <dl class="method">
 <dt id="vowpalwabbit.pyvw.example.num_features_in">
 <code class="descname">num_features_in</code><span class="sig-paren">(</span><em>self</em>, <em>ns</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.example.num_features_in" title="Permalink to this definition">¶</a></dt>
-<dd><p>Return the total number of features in a given namespace.</p>
+<dd><p>Get the total number of features in a given namespace</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>ns</strong> <span class="classifier-delimiter">:</span> <span class="classifier">namespace</span></dt>
+<dd><p class="first last">Get the total features of this namespace</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>num_features</strong> <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dd><p class="first last">Total number of features in the given ns</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="method">
 <dt id="vowpalwabbit.pyvw.example.pop_feature">
 <code class="descname">pop_feature</code><span class="sig-paren">(</span><em>self</em>, <em>ns</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.example.pop_feature" title="Permalink to this definition">¶</a></dt>
-<dd><p>Remove the top feature from a given namespace; returns True
-if a feature was removed, returns False if there were no
-features to pop.</p>
+<dd><p>Remove the top feature from a given namespace</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>ns</strong> <span class="classifier-delimiter">:</span> <span class="classifier">namespace</span></dt>
+<dd><p class="first last">namespace from which feature is popped</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>out</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">True if feature was removed else False as no feature was there to
+pop</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="method">
 <dt id="vowpalwabbit.pyvw.example.pop_namespace">
 <code class="descname">pop_namespace</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.example.pop_namespace" title="Permalink to this definition">¶</a></dt>
-<dd><p>Remove the top namespace from an example; returns True if a
-namespace was removed, or False if there were no namespaces
-left.</p>
+<dd><p>Remove the top namespace from an example</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>out</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">True if namespace was removed else False as no namespace was there
+to pop</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="method">
 <dt id="vowpalwabbit.pyvw.example.push_feature">
 <code class="descname">push_feature</code><span class="sig-paren">(</span><em>self</em>, <em>ns</em>, <em>feature</em>, <em>v=1.0</em>, <em>ns_hash=None</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.example.push_feature" title="Permalink to this definition">¶</a></dt>
-<dd><p>Add an unhashed feature to a given namespace.</p>
+<dd><p>Add an unhashed feature to a given namespace</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>ns</strong> <span class="classifier-delimiter">:</span> <span class="classifier">namespace</span></dt>
+<dd><p class="first last">namespace in which the feature is to be pushed</p>
+</dd>
+<dt><strong>f</strong> <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dd><p class="first last">feature</p>
+</dd>
+<dt><strong>v</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">The value of the feature, be default is 1.0</p>
+</dd>
+<dt><strong>ns_hash</strong> <span class="classifier-delimiter">:</span> <span class="classifier">Optional, by default is None</span></dt>
+<dd><p class="first last">The hash of the namespace</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="method">
 <dt id="vowpalwabbit.pyvw.example.push_features">
 <code class="descname">push_features</code><span class="sig-paren">(</span><em>self</em>, <em>ns</em>, <em>featureList</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.example.push_features" title="Permalink to this definition">¶</a></dt>
-<dd><p>Push a list of features to a given namespace. Each feature
-in the list can either be an integer (already hashed) or a
-string (to be hashed) and may be paired with a value or not
-(if not, the value is assumed to be 1.0).</p>
-<dl class="docutils">
-<dt>Examples:</dt>
-<dd><p class="first">ex.push_features(‘x’, [‘a’, ‘b’])
-ex.push_features(‘y’, [(‘c’, 1.), ‘d’])</p>
-<p class="last">space_hash = vw.hash_space( ‘x’ )
-feat_hash  = vw.hash_feature( ‘a’, space_hash )
-ex.push_features(‘x’, [feat_hash])    # note: ‘x’ should match the space_hash!</p>
+<dd><p>Push a list of features to a given namespace.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>ns</strong> <span class="classifier-delimiter">:</span> <span class="classifier">namespace</span></dt>
+<dd><p class="first last">namespace in which the features are pushed</p>
+</dd>
+<dt><strong>featureList</strong> <span class="classifier-delimiter">:</span> <span class="classifier">list</span></dt>
+<dd><p class="first last">Each feature in the list can either be an integer
+(already hashed) or a string (to be hashed) and may be
+paired with a value or not (if not, the value is assumed to be 1.0</p>
 </dd>
 </dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">vowpalwabbit</span> <span class="kn">import</span> <span class="n">pyvw</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">vw</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">vw</span><span class="p">(</span><span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ex</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">example</span><span class="p">(</span><span class="s1">&#39;1 |a two features |b more features here&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ex</span><span class="o">.</span><span class="n">push_features</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ex</span><span class="o">.</span><span class="n">push_features</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="p">[(</span><span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="mf">1.</span><span class="p">),</span> <span class="s1">&#39;d&#39;</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">space_hash</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">hash_space</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">feat_hash</span>  <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">hash_feature</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="n">space_hash</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ex</span><span class="o">.</span><span class="n">push_features</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="p">[</span><span class="n">feat_hash</span><span class="p">])</span> <span class="c1">#&#39;x&#39; should match the space_hash!</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ex</span><span class="o">.</span><span class="n">num_features_in</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+<span class="go">3</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ex</span><span class="o">.</span><span class="n">num_features_in</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
+<span class="go">2</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="method">
 <dt id="vowpalwabbit.pyvw.example.push_hashed_feature">
 <code class="descname">push_hashed_feature</code><span class="sig-paren">(</span><em>self</em>, <em>ns</em>, <em>f</em>, <em>v=1.0</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.example.push_hashed_feature" title="Permalink to this definition">¶</a></dt>
 <dd><p>Add a hashed feature to a given namespace.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>ns</strong> <span class="classifier-delimiter">:</span> <span class="classifier">namespace</span></dt>
+<dd><p class="first last">namespace in which the feature is to be pushed</p>
+</dd>
+<dt><strong>f</strong> <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dd><p class="first last">feature</p>
+</dd>
+<dt><strong>v</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">The value of the feature, be default is 1.0</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="method">
 <dt id="vowpalwabbit.pyvw.example.push_namespace">
 <code class="descname">push_namespace</code><span class="sig-paren">(</span><em>self</em>, <em>ns</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.example.push_namespace" title="Permalink to this definition">¶</a></dt>
-<dd><p>Push a new namespace onto this example. You should only do
-this if you’re sure that this example doesn’t already have the
-given namespace.</p>
+<dd><p>Push a new namespace onto this example.
+You should only do this if you’re sure that this example doesn’t
+already have the given namespace</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>ns</strong> <span class="classifier-delimiter">:</span> <span class="classifier">namespace</span></dt>
+<dd><p class="first last">namespace which is to be pushed onto example</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="method">
 <dt id="vowpalwabbit.pyvw.example.set_label_string">
 <code class="descname">set_label_string</code><span class="sig-paren">(</span><em>self</em>, <em>string</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.example.set_label_string" title="Permalink to this definition">¶</a></dt>
-<dd><p>Give this example a new label, formatted as a string (ala
-the VW data file format).</p>
+<dd><p>Give this example a new label</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>string</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">a new label to this example, formatted as a string (ala the VW data
+file format)</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="method">
@@ -521,14 +931,35 @@ features constructed, etc.), do so.</p>
 <dl class="method">
 <dt id="vowpalwabbit.pyvw.example.sum_feat_sq">
 <code class="descname">sum_feat_sq</code><span class="sig-paren">(</span><em>self</em>, <em>ns</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.example.sum_feat_sq" title="Permalink to this definition">¶</a></dt>
-<dd><p>Return the total sum feature-value squared for a given
-namespace.</p>
+<dd><p>Get the total sum feature-value squared for a given
+namespace</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>ns</strong> <span class="classifier-delimiter">:</span> <span class="classifier">namespace</span></dt>
+<dd><p class="first last">Get the total sum feature-value squared of this namespace</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>sum_sq</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">Total sum feature-value squared of the given ns</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="method">
 <dt id="vowpalwabbit.pyvw.example.unsetup_example">
 <code class="descname">unsetup_example</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.example.unsetup_example" title="Permalink to this definition">¶</a></dt>
-<dd><p>If this example has been setup, reverse that process so you can continue editing the examples.</p>
+<dd><p>If this example has been setup, reverse that process so you can
+continue editing the examples.</p>
 </dd></dl>
 
 </dd></dl>
@@ -568,8 +999,32 @@ in example ex.</p>
 <dl class="method">
 <dt id="vowpalwabbit.pyvw.example_namespace.__init__">
 <code class="descname">__init__</code><span class="sig-paren">(</span><em>self</em>, <em>ex</em>, <em>ns</em>, <em>ns_hash=None</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.example_namespace.__init__" title="Permalink to this definition">¶</a></dt>
-<dd><p>Construct an example_namespace given an example and a
-target namespace (ns should be a namespace_id)</p>
+<dd><p>Construct an example_namespace</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>ex</strong> <span class="classifier-delimiter">:</span> <span class="classifier">Example</span></dt>
+<dd><p class="first last">examples from which namespace is to be extracted</p>
+</dd>
+<dt><strong>ns</strong> <span class="classifier-delimiter">:</span> <span class="classifier">namespace_id</span></dt>
+<dd><p class="first last">Target namespace</p>
+</dd>
+<dt><strong>ns_hash</strong> <span class="classifier-delimiter">:</span> <span class="classifier">Optional, by default is None</span></dt>
+<dd><p class="first last">The hash of the namespace</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>self</strong> <span class="classifier-delimiter">:</span> <span class="classifier">example_namespace</span></dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="method">
@@ -597,16 +1052,48 @@ features to pop.</p>
 <code class="descname">push_feature</code><span class="sig-paren">(</span><em>self</em>, <em>feature</em>, <em>v=1.0</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.example_namespace.push_feature" title="Permalink to this definition">¶</a></dt>
 <dd><p>Add an unhashed feature to the current namespace (fails if
 setup has already run on this example).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>feature</strong> <span class="classifier-delimiter">:</span> <span class="classifier">integer/str</span></dt>
+<dd><p class="first last">Feature to be pushed to current namespace</p>
+</dd>
+<dt><strong>v</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">Feature value, by default is 1.0</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="method">
 <dt id="vowpalwabbit.pyvw.example_namespace.push_features">
 <code class="descname">push_features</code><span class="sig-paren">(</span><em>self</em>, <em>ns</em>, <em>featureList</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.example_namespace.push_features" title="Permalink to this definition">¶</a></dt>
-<dd><p>Push a list of features to a given namespace. Each feature
-in the list can either be an integer (already hashed) or a
-string (to be hashed) and may be paired with a value or not
-(if not, the value is assumed to be 1.0). See example.push_features
-for examples.</p>
+<dd><p>Push a list of features to a given namespace.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>ns</strong> <span class="classifier-delimiter">:</span> <span class="classifier">namespace</span></dt>
+<dd><p class="first last">namespace to which feature list is to be pushed</p>
+</dd>
+<dt><strong>featureList</strong> <span class="classifier-delimiter">:</span> <span class="classifier">list</span></dt>
+<dd><p class="first last">Each feature in the list can either be an integer (already hashed)
+or a string (to be hashed) and may be paired with a value or not
+(if not, the value is assumed to be 1.0).</p>
+</dd>
+<dt><strong>See example.push_features for examples.</strong></dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 </dd></dl>
@@ -615,6 +1102,47 @@ for examples.</p>
 <dt id="vowpalwabbit.pyvw.get_prediction">
 <code class="descclassname">vowpalwabbit.pyvw.</code><code class="descname">get_prediction</code><span class="sig-paren">(</span><em>ec</em>, <em>prediction_type</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.get_prediction" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get specified type of prediction from example</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>ec</strong> <span class="classifier-delimiter">:</span> <span class="classifier">Example</span></dt>
+<dd></dd>
+<dt><strong>prediction_type</strong> <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dd><ul class="first last simple">
+<li>0: pSCALAR</li>
+<li>1: pSCALARS</li>
+<li>2: pACTION_SCORES</li>
+<li>3: pACTION_PROBS</li>
+<li>4: pMULTICLASS</li>
+<li>5: pMULTILABELS</li>
+<li>6: pPROB</li>
+<li>7: pMULTICLASSPROBS</li>
+<li>8: pDECISION_SCORES</li>
+</ul>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>out</strong> <span class="classifier-delimiter">:</span> <span class="classifier">integer/list</span></dt>
+<dd><p class="first last">Prediction according to parameter prediction_type</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">vowpalwabbit</span> <span class="kn">import</span> <span class="n">pyvw</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pylibvw</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">vw</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">vw</span><span class="p">(</span><span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ex</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">example</span><span class="p">(</span><span class="s1">&#39;1 |a two features |b more features here&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pyvw</span><span class="o">.</span><span class="n">get_prediction</span><span class="p">(</span><span class="n">ex</span><span class="p">,</span> <span class="n">pylibvw</span><span class="o">.</span><span class="n">vw</span><span class="o">.</span><span class="n">pSCALAR</span><span class="p">)</span>
+<span class="go">0.0</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="class">
@@ -685,10 +1213,31 @@ really need to touch this.</p>
 <dl class="method">
 <dt id="vowpalwabbit.pyvw.namespace_id.__init__">
 <code class="descname">__init__</code><span class="sig-paren">(</span><em>self</em>, <em>ex</em>, <em>id</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.namespace_id.__init__" title="Permalink to this definition">¶</a></dt>
-<dd><p>Given an example and an id, construct a namespace_id. The
-id can either be an integer (in which case we take it to be an
+<dd><p>Given an example and an id, construct a namespace_id.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>ex</strong> <span class="classifier-delimiter">:</span> <span class="classifier">Example</span></dt>
+<dd><p class="first last">example used to create a namespace id</p>
+</dd>
+<dt><strong>id</strong> <span class="classifier-delimiter">:</span> <span class="classifier">integer/str</span></dt>
+<dd><p class="first last">The id can either be an integer (in which case we take it to be an
 index into ex.indices[]) or a string (in which case we take
 the first character as the namespace id).</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>self</strong> <span class="classifier-delimiter">:</span> <span class="classifier">namespace_id</span></dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 </dd></dl>
@@ -740,7 +1289,7 @@ the pylibvw.vw structure entirely.</p>
 <td>print example audit information</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#vowpalwabbit.pyvw.vw.example" title="vowpalwabbit.pyvw.vw.example"><code class="xref py py-obj docutils literal notranslate"><span class="pre">example</span></code></a>(self[,&nbsp;stringOrDict,&nbsp;labelType])</td>
-<td>TODO: document</td>
+<td>Create an example initStringOrDict can specify example as VW formatted string, or a dictionary labelType can specify the desire label type</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#vowpalwabbit.pyvw.vw.finish" title="vowpalwabbit.pyvw.vw.finish"><code class="xref py py-obj docutils literal notranslate"><span class="pre">finish</span></code></a>(self)</td>
 <td>stop VW by calling finish (and, eg, write weights to disk)</td>
@@ -770,7 +1319,7 @@ the pylibvw.vw structure entirely.</p>
 <td>return the total cumulative loss suffered so far</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#vowpalwabbit.pyvw.vw.get_weight" title="vowpalwabbit.pyvw.vw.get_weight"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_weight</span></code></a>(self,&nbsp;index[,&nbsp;offset])</td>
-<td>Given an (integer) index (and an optional offset), return the weight for that position in the (learned) weight vector.</td>
+<td>Get the weight at a particular position in the (learned) weight vector.</td>
 </tr>
 <tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_weighted_examples</span></code>()</td>
 <td>return the total weight of examples so far</td>
@@ -782,7 +1331,7 @@ the pylibvw.vw structure entirely.</p>
 <td>given a namespace (as a string), compute the hash of that namespace</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#vowpalwabbit.pyvw.vw.learn" title="vowpalwabbit.pyvw.vw.learn"><code class="xref py py-obj docutils literal notranslate"><span class="pre">learn</span></code></a>(self,&nbsp;ec)</td>
-<td>Perform an online update; ec can either be an example object or a string (in which case it is parsed and then learned on) or list which is iterated over.</td>
+<td>Perform an online update</td>
 </tr>
 <tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">learn_multi</span></code>()</td>
 <td>given a list pyvw examples, learn (and predict) on those examples</td>
@@ -794,7 +1343,7 @@ the pylibvw.vw structure entirely.</p>
 <td>Returns a collection of examples for a multiline example learner or a single example for a single example learner.</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#vowpalwabbit.pyvw.vw.predict" title="vowpalwabbit.pyvw.vw.predict"><code class="xref py py-obj docutils literal notranslate"><span class="pre">predict</span></code></a>(self,&nbsp;ec[,&nbsp;prediction_type])</td>
-<td>Just make a prediction on this example; ec can either be an example object or a string (in which case it is parsed and then predicted on).</td>
+<td>Just make a prediction on the example</td>
 </tr>
 <tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">predict_multi</span></code>()</td>
 <td>given a list of pyvw examples, predict on that example</td>
@@ -830,24 +1379,77 @@ the pylibvw.vw structure entirely.</p>
 <dl class="method">
 <dt id="vowpalwabbit.pyvw.vw.__init__">
 <code class="descname">__init__</code><span class="sig-paren">(</span><em>self</em>, <em>arg_str=None</em>, <em>**kw</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.vw.__init__" title="Permalink to this definition">¶</a></dt>
-<dd><p>Initialize the vw object. The (optional) argString is the
-same as the command line arguments you’d use to run vw (eg,”–audit”).
-you can also use key/value pairs as in:</p>
-<blockquote>
-<div>pyvw.vw(audit=True, b=24, k=True, c=True, l2=0.001)</div></blockquote>
-<dl class="docutils">
-<dt>or a combination, for instance:</dt>
-<dd>pyvw.vw(“–audit”, b=26)</dd>
-<dt>value in a pair could also be a list of values, for instance:</dt>
-<dd>pyvw.vw(“-q”, [“ab”, “ac”])</dd>
+<dd><p>Initialize the vw object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>arg_str</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">The command line arguments to initialize VW with,
+for example “–audit”. By default is None.</p>
+</dd>
+<dt><strong>**kw</strong> <span class="classifier-delimiter">:</span> <span class="classifier">Using key/value pairs for different options available</span></dt>
+<dd></dd>
 </dl>
-<p>will be translated into passing two -q keys</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>self</strong> <span class="classifier-delimiter">:</span> <span class="classifier">vw</span></dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">vowpalwabbit</span> <span class="kn">import</span> <span class="n">vw</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">vw1</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">vw</span><span class="p">(</span><span class="s1">&#39;--audit&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">vw2</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">vw</span><span class="p">(</span><span class="n">audit</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">24</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">l2</span><span class="o">=</span><span class="mf">0.001</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">vw3</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">vw</span><span class="p">(</span><span class="s2">&quot;--audit&quot;</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">26</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">vw4</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">vw</span><span class="p">(</span><span class="s2">&quot;-q&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;ab&quot;</span><span class="p">,</span> <span class="s2">&quot;ac&quot;</span><span class="p">])</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="method">
 <dt id="vowpalwabbit.pyvw.vw.example">
 <code class="descname">example</code><span class="sig-paren">(</span><em>self</em>, <em>stringOrDict=None</em>, <em>labelType=0</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.vw.example" title="Permalink to this definition">¶</a></dt>
-<dd><p>TODO: document</p>
+<dd><p>Create an example initStringOrDict can specify example as VW
+formatted string, or a dictionary labelType can specify the desire
+label type</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>initStringOrDict</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str/dict</span></dt>
+<dd><p class="first last">Example in either string or dictionary form</p>
+</dd>
+<dt><strong>labelType</strong> <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dd><ul class="first simple">
+<li>0 : lDEFAULT</li>
+<li>1 : lBINARY</li>
+<li>2 : lMULTICLASS</li>
+<li>3 : lCOST_SENSITIVE</li>
+<li>4 : lCONTEXTUAL_BANDIT</li>
+<li>5 : lMAX</li>
+<li>6 : lCONDITIONAL_CONTEXTUAL_BANDIT</li>
+</ul>
+<p class="last">The integer is used to map the corresponding labelType using the
+above available options</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>out</strong> <span class="classifier-delimiter">:</span> <span class="classifier">Example</span></dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="method">
@@ -860,13 +1462,48 @@ you can also use key/value pairs as in:</p>
 <dt id="vowpalwabbit.pyvw.vw.finish_example">
 <code class="descname">finish_example</code><span class="sig-paren">(</span><em>self</em>, <em>ex</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.vw.finish_example" title="Permalink to this definition">¶</a></dt>
 <dd><p>Should only be used in conjunction with the parse method</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>ex</strong> <span class="classifier-delimiter">:</span> <span class="classifier">Example</span></dt>
+<dd><p class="first last">example to be finished</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="method">
 <dt id="vowpalwabbit.pyvw.vw.get_weight">
 <code class="descname">get_weight</code><span class="sig-paren">(</span><em>self</em>, <em>index</em>, <em>offset=0</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.vw.get_weight" title="Permalink to this definition">¶</a></dt>
-<dd><p>Given an (integer) index (and an optional offset), return
-the weight for that position in the (learned) weight vector.</p>
+<dd><p>Get the weight at a particular position in the (learned) weight vector.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>index</strong> <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dd><p class="first last">position in the learned  weight vector</p>
+</dd>
+<dt><strong>offset</strong> <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dd><p class="first last">By default is 0</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>weight</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">Weight at the given index</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="method">
@@ -877,9 +1514,20 @@ the weight for that position in the (learned) weight vector.</p>
 <dl class="method">
 <dt id="vowpalwabbit.pyvw.vw.learn">
 <code class="descname">learn</code><span class="sig-paren">(</span><em>self</em>, <em>ec</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.vw.learn" title="Permalink to this definition">¶</a></dt>
-<dd><p>Perform an online update; ec can either be an example
-object or a string (in which case it is parsed and then
-learned on) or list which is iterated over.</p>
+<dd><p>Perform an online update</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>ec</strong> <span class="classifier-delimiter">:</span> <span class="classifier">example/str/list</span></dt>
+<dd><p class="first last">examples on which the model gets updated</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="method">
@@ -893,15 +1541,83 @@ learned on) or list which is iterated over.</p>
 <code class="descname">parse</code><span class="sig-paren">(</span><em>self</em>, <em>str_ex</em>, <em>labelType=0</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.vw.parse" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns a collection of examples for a multiline example learner or a single
 example for a single example learner.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>str_ex</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str/list of str</span></dt>
+<dd><p class="first last">string representing examples. If the string is multiline then each
+line is considered as an example. In case of list, each string
+element is considered as an example</p>
+</dd>
+<dt><strong>labelType</strong> <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dd><ul class="first simple">
+<li>0 : lDEFAULT</li>
+<li>1 : lBINARY</li>
+<li>2 : lMULTICLASS</li>
+<li>3 : lCOST_SENSITIVE</li>
+<li>4 : lCONTEXTUAL_BANDIT</li>
+<li>5 : lMAX</li>
+<li>6 : lCONDITIONAL_CONTEXTUAL_BANDIT</li>
+</ul>
+<p class="last">The integer is used to map the corresponding labelType using the
+above available options</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>ec</strong> <span class="classifier-delimiter">:</span> <span class="classifier">list</span></dt>
+<dd><p class="first last">list of examples parsed</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">vowpalwabbit</span> <span class="kn">import</span> <span class="n">pyvw</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">model</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">vw</span><span class="p">(</span><span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ex</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="s2">&quot;0:0.1:0.75 | a:0.5 b:1 c:2&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">len</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
+<span class="go">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">model</span> <span class="o">=</span> <span class="n">vw</span><span class="p">(</span><span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cb_adf</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ex</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">parse</span><span class="p">([</span><span class="s2">&quot;| a:1 b:0.5&quot;</span><span class="p">,</span> <span class="s2">&quot;0:0.1:0.75 | a:0.5 b:1 c:2&quot;</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">len</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span> <span class="c1"># Shows the multiline example is parsed</span>
+<span class="go">2</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="method">
 <dt id="vowpalwabbit.pyvw.vw.predict">
 <code class="descname">predict</code><span class="sig-paren">(</span><em>self</em>, <em>ec</em>, <em>prediction_type=None</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.vw.predict" title="Permalink to this definition">¶</a></dt>
-<dd><p>Just make a prediction on this example; ec can either be an example
-object or a string (in which case it is parsed and then predicted on).</p>
-<p>if prediction_type is provided the matching return type is used
-otherwise the the learner’s prediction type will determine the output.</p>
+<dd><p>Just make a prediction on the example</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>ec</strong> <span class="classifier-delimiter">:</span> <span class="classifier">Example/list/str</span></dt>
+<dd><p class="first last">examples to be predicted</p>
+</dd>
+<dt><strong>prediction_type</strong> <span class="classifier-delimiter">:</span> <span class="classifier">optional, by default is None</span></dt>
+<dd><p class="first last">if provided then the matching return type is
+used otherwise the the learner’s prediction type will determine the
+output.</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>prediction</strong> <span class="classifier-delimiter">:</span> <span class="classifier">Prediction made on each examples</span></dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="method">
