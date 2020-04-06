@@ -295,10 +295,10 @@ Public Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="loss__functions_8cc_source.html#l00273">273</a> of file <a class="el" href="loss__functions_8cc_source.html">loss_functions.cc</a>.</p>
 
-<p>References <a class="el" href="global__data_8h_source.html#l00133">shared_data::max_label</a>, and <a class="el" href="global__data_8h_source.html#l00132">shared_data::min_label</a>.</p>
+<p>References <a class="el" href="global__data_8h_source.html#l00134">shared_data::max_label</a>, and <a class="el" href="global__data_8h_source.html#l00133">shared_data::min_label</a>.</p>
 <div class="fragment"><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  {</div><div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <span class="keywordtype">float</span> v, t;</div><div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    t = 0.5f * (sd-&gt;<a class="code" href="structshared__data.html#a7169344996c735da7b771fb6ec93484e">min_label</a> + sd-&gt;<a class="code" href="structshared__data.html#ab7a25e683bebc7347fa97d71e116f712">max_label</a>);</div><div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="keywordflow">if</span> (prediction &gt; t)</div><div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;      v = -(1 - <a class="code" href="classquantileloss.html#a2b11e6c78edb029cf7e77e927f40923e">tau</a>);</div><div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;      v = <a class="code" href="classquantileloss.html#a2b11e6c78edb029cf7e77e927f40923e">tau</a>;</div><div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <span class="keywordflow">return</span> (t - prediction) / (eta_t * v);</div><div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;  }</div><div class="ttc" id="classquantileloss_html_a2b11e6c78edb029cf7e77e927f40923e"><div class="ttname"><a href="classquantileloss.html#a2b11e6c78edb029cf7e77e927f40923e">quantileloss::tau</a></div><div class="ttdeci">float tau</div><div class="ttdef"><b>Definition:</b> <a href="loss__functions_8cc_source.html#l00300">loss_functions.cc:300</a></div></div>
-<div class="ttc" id="structshared__data_html_a7169344996c735da7b771fb6ec93484e"><div class="ttname"><a href="structshared__data.html#a7169344996c735da7b771fb6ec93484e">shared_data::min_label</a></div><div class="ttdeci">float min_label</div><div class="ttdef"><b>Definition:</b> <a href="global__data_8h_source.html#l00132">global_data.h:132</a></div></div>
-<div class="ttc" id="structshared__data_html_ab7a25e683bebc7347fa97d71e116f712"><div class="ttname"><a href="structshared__data.html#ab7a25e683bebc7347fa97d71e116f712">shared_data::max_label</a></div><div class="ttdeci">float max_label</div><div class="ttdef"><b>Definition:</b> <a href="global__data_8h_source.html#l00133">global_data.h:133</a></div></div>
+<div class="ttc" id="structshared__data_html_a7169344996c735da7b771fb6ec93484e"><div class="ttname"><a href="structshared__data.html#a7169344996c735da7b771fb6ec93484e">shared_data::min_label</a></div><div class="ttdeci">float min_label</div><div class="ttdef"><b>Definition:</b> <a href="global__data_8h_source.html#l00133">global_data.h:133</a></div></div>
+<div class="ttc" id="structshared__data_html_ab7a25e683bebc7347fa97d71e116f712"><div class="ttname"><a href="structshared__data.html#ab7a25e683bebc7347fa97d71e116f712">shared_data::max_label</a></div><div class="ttdeci">float max_label</div><div class="ttdef"><b>Definition:</b> <a href="global__data_8h_source.html#l00134">global_data.h:134</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -531,7 +531,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 3 2020 16:13:23 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Apr 6 2020 15:29:12 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

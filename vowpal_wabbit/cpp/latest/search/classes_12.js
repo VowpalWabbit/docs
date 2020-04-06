@@ -20,6 +20,7 @@ var searchData=
   ['shared_5fdata',['shared_data',['../structshared__data.html',1,'']]],
   ['single_5fexample_5fhandler',['single_example_handler',['../classLEARNER_1_1single__example__handler.html',1,'LEARNER']]],
   ['single_5finstance_5fcontext',['single_instance_context',['../classLEARNER_1_1single__instance__context.html',1,'LEARNER']]],
+  ['slates_5fdata',['slates_data',['../structslates_1_1slates__data.html',1,'slates']]],
   ['slotsstate',['SlotsState',['../structSlotsState.html',1,'']]],
   ['sort_5fdata',['sort_data',['../structsort__data.html',1,'']]],
   ['spanningtree',['SpanningTree',['../classVW_1_1SpanningTree.html',1,'VW']]],

@@ -12,7 +12,7 @@ var searchData=
   ['data_5ffilename',['data_filename',['../structvw.html#aa0d6b8bdd383ac5a5d5ded9746886538',1,'vw::data_filename()'],['../structPredictParam.html#a4651563ed743cb3bc0ade15f2a37720e',1,'PredictParam::data_filename()']]],
   ['decay',['decay',['../structMARGINAL_1_1data.html#a4f48398c3154c0799543dae72e3724aa',1,'MARGINAL::data']]],
   ['decay_5flevels',['decay_levels',['../structlda.html#a040db4ac52102609348b008125b76784',1,'lda']]],
-  ['decision_5fscores',['decision_scores',['../unionpolyprediction.html#acbb064570d801ad6b4621680b6dd2c2e',1,'polyprediction']]],
+  ['decision_5fscores',['decision_scores',['../unionpolyprediction.html#a572baf036403a33ca9e06198322a8802',1,'polyprediction']]],
   ['decision_5fservice_5fjson',['decision_service_json',['../structparser.html#a864a4006507e401f9794ef6ebaa7e24c',1,'parser']]],
   ['decision_5fservice_5fstate',['decision_service_state',['../structContext.html#a864f2926ef8ba88769fa0872f076af69',1,'Context']]],
   ['default_5fbits',['default_bits',['../structvw.html#a3a30dd5b436a0073c85cc83fba6f519b',1,'vw']]],

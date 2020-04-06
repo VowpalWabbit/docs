@@ -33,7 +33,7 @@ var searchData=
   ['action_5fscore_2ecc',['action_score.cc',['../action__score_8cc.html',1,'']]],
   ['action_5fscore_2eh',['action_score.h',['../action__score_8h.html',1,'']]],
   ['action_5fscore_5fpool',['action_score_pool',['../structccb.html#a125630062c922c0020b5c022724b47d6',1,'ccb']]],
-  ['action_5fscores',['action_scores',['../namespaceACTION__SCORE.html#a1365a1f8fdcb863a5520832514d1fcaa',1,'ACTION_SCORE::action_scores()'],['../learner_8h.html#a5514b4a9448315c23ec344ca2d139e24a43568e6f9bdfff4805f9154606cde508',1,'action_scores():&#160;learner.h']]],
+  ['action_5fscores',['action_scores',['../namespaceACTION__SCORE.html#a19b4924cbde0701f86192906861fae94',1,'ACTION_SCORE::action_scores()'],['../learner_8h.html#a5514b4a9448315c23ec344ca2d139e24a43568e6f9bdfff4805f9154606cde508',1,'action_scores():&#160;learner.h']]],
   ['action_5fsum',['action_sum',['../structGEN__CS_1_1cb__to__cs__adf.html#a603aadff469c9a586f031e2833c2e076',1,'GEN_CS::cb_to_cs_adf']]],
   ['action_5ftype',['ACTION_TYPE',['../constant_8h.html#aa24f88139565835c44463bfbf3e4cd34',1,'constant.h']]],
   ['action_5fwith_5flabel',['action_with_label',['../structccb.html#a095d8892187fb2ad6f0fb6522dc9f89b',1,'ccb']]],

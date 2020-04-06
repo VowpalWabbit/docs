@@ -27,7 +27,7 @@ var searchData=
   ['tmp',['tmp',['../structOjaNewton.html#a0dac556b94912ab0c3dfcae3e55f7d66',1,'OjaNewton']]],
   ['tnormal_5fweights',['tnormal_weights',['../structvw.html#a8ce9b2281fbfbcd01bd64e06bf592942',1,'vw']]],
   ['tolerance',['tolerance',['../stagewise__poly_8cc.html#a786da50faf577687b38b88863257d571',1,'stagewise_poly.cc']]],
-  ['top_5faction_5findex',['TOP_ACTION_INDEX',['../namespaceCCB.html#a8410549d058d499a925dd6aa09dc7168',1,'CCB']]],
+  ['top_5faction_5findex',['TOP_ACTION_INDEX',['../namespaceCCB.html#a8410549d058d499a925dd6aa09dc7168',1,'CCB::TOP_ACTION_INDEX()'],['../constant_8h.html#ac761c6817afb4c15fe226ec2df85c024',1,'TOP_ACTION_INDEX():&#160;constant.h']]],
   ['top_5fk',['top_K',['../structmemory__tree__ns_1_1memory__tree.html#a5be6ce09e63bf1e5c8a155bb443d6546',1,'memory_tree_ns::memory_tree']]],
   ['topics',['topics',['../structlda.html#a3c385f5abf5c557a2da6006282f2f263',1,'lda']]],
   ['total',['total',['../classAllReduce.html#a4ab695c1c631c3db42936d03733db9e0',1,'AllReduce::total()'],['../structMWT_1_1mwt.html#aae3883954fea94de0d48dd3722527fdb',1,'MWT::mwt::total()']]],

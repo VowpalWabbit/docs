@@ -24,6 +24,8 @@ var searchData=
   ['shared_5ffeature_5fmerger_2eh',['shared_feature_merger.h',['../shared__feature__merger_8h.html',1,'']]],
   ['simple_5flabel_2ecc',['simple_label.cc',['../simple__label_8cc.html',1,'']]],
   ['simple_5flabel_2eh',['simple_label.h',['../simple__label_8h.html',1,'']]],
+  ['slates_2ecc',['slates.cc',['../slates_8cc.html',1,'']]],
+  ['slates_2eh',['slates.h',['../slates_8h.html',1,'']]],
   ['slates_5flabel_2ecc',['slates_label.cc',['../slates__label_8cc.html',1,'']]],
   ['slates_5flabel_2eh',['slates_label.h',['../slates__label_8h.html',1,'']]],
   ['spanning_5ftree_2ecc',['spanning_tree.cc',['../spanning__tree_8cc.html',1,'']]],

@@ -21,6 +21,7 @@ var searchData=
   ['del_5fneighbor_5ffeatures',['del_neighbor_features',['../namespaceSearch.html#a61d250ae11ce34c584261b747fbefe58',1,'Search']]],
   ['delete_5faction_5fscores',['delete_action_scores',['../namespaceACTION__SCORE.html#a782ecda6b6b3a7eb6e95052b1736c871',1,'ACTION_SCORE']]],
   ['delete_5fcb_5flabels',['delete_cb_labels',['../namespaceCCB.html#a2111abc4699e0d703f803a0bd9337aec',1,'CCB']]],
+  ['delete_5fdecision_5fscores',['delete_decision_scores',['../namespaceVW.html#af45fe75fddc205969f3411d1b6095361',1,'VW']]],
   ['delete_5flabel',['delete_label',['../namespaceCB.html#aa6ab645396c3d2523c0d28f78198f00a',1,'CB::delete_label()'],['../namespaceCB__EVAL.html#a31de6c3eb0f4552243941877081e042a',1,'CB_EVAL::delete_label()'],['../namespaceCCB.html#a02d31056148ccf5cdd241d2f964f1f07',1,'CCB::delete_label()'],['../namespaceCOST__SENSITIVE.html#a23aa9c8045c946ba9e21a1578a7c071e',1,'COST_SENSITIVE::delete_label()'],['../namespaceMULTICLASS.html#a35927aceec1271f93edd8ee3a236c7d6',1,'MULTICLASS::delete_label()'],['../namespaceMULTILABEL.html#a12870027a19ce7599da34393b216ece9',1,'MULTILABEL::delete_label()'],['../namespaceslates.html#a3cebd665303150cebfdb33ed4be9b5d5',1,'slates::delete_label()']]],
   ['delete_5fno_5flabel',['delete_no_label',['../namespaceno__label.html#a0d673d3c08d53b847162d3e7a92ede8f',1,'no_label']]],
   ['delete_5fscalars',['delete_scalars',['../example_8h.html#a450e49c6d5320e060391eaaf0c4ebd35',1,'delete_scalars():&#160;example.h'],['../namespaceMWT.html#a378763959ab5926143801f9300c5a4d4',1,'MWT::delete_scalars()']]],
