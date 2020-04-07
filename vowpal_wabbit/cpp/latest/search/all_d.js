@@ -45,6 +45,7 @@ var searchData=
   ['make_5fbase',['make_base',['../namespaceLEARNER.html#abcf6bdc2fa5e38928c33212e20dbbd74',1,'LEARNER']]],
   ['make_5fnew_5fpointer',['make_new_pointer',['../classSearch_1_1predictor.html#a5a8515072d8a4132e576a26d7222b726',1,'Search::predictor']]],
   ['make_5foption',['make_option',['../namespaceVW_1_1config.html#ae768389a49d24d07215612b2f824d520',1,'VW::config']]],
+  ['make_5funique',['make_unique',['../namespaceVW.html#a6e3217b67aa62bbcb889c612e5d8016a',1,'VW']]],
   ['marginal_2eh',['marginal.h',['../marginal_8h.html',1,'']]],
   ['marginal_5fsetup',['marginal_setup',['../marginal_8h.html#ad35c1b04031c47bdf8ca16637dca1bc4',1,'marginal.h']]],
   ['mask',['mask',['../classsparse__parameters.html#acd0d819874910aec30666ae130290324',1,'sparse_parameters::mask()'],['../classparameters.html#a417b307b1980e9744d7f2b94acd3a4b2',1,'parameters::mask()'],['../classdense__parameters.html#a34bd44e030d9a1de5ced97b12cb8f1c7',1,'dense_parameters::mask()']]],
