@@ -98,7 +98,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="object__pool_8h_source.html">object_pool.h</a>&gt;</code></p>
+<p><code>#include &lt;object_pool.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -141,13 +141,7 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a9da1cbe398f501a03b7478134f17e48d"><td class="memItemLeft" align="right" valign="top">std::queue&lt; T * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1no__lock__object__pool.html#a9da1cbe398f501a03b7478134f17e48d">m_pool</a></td></tr>
 <tr class="separator:a9da1cbe398f501a03b7478134f17e48d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename T, typename TInitializer, typename TCleanup = default_cleanup&lt;T&gt;&gt;<br />
-struct VW::no_lock_object_pool&lt; T, TInitializer, TCleanup &gt;</h3>
-
-
-<p>Definition at line <a class="el" href="object__pool_8h_source.html#l00034">34</a> of file <a class="el" href="object__pool_8h_source.html">object_pool.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a55f60639f3260fab7a259890d83b6f0e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -213,12 +207,6 @@ template&lt;typename T, typename TInitializer, typename TCleanup = default_clean
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="object__pool_8h_source.html#l00037">37</a> of file <a class="el" href="object__pool_8h_source.html">object_pool.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                                                                            {}, <span class="keywordtype">size_t</span> chunk_size = 8)</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      : <a class="code" href="structVW_1_1no__lock__object__pool.html#add18958536c3a82715e2b5637e83a493">m_initializer</a>(initializer), <a class="code" href="structVW_1_1no__lock__object__pool.html#af128f88080c494b6b9ff92a76ecc8dba">m_initial_chunk_size</a>(initial_chunk_size), <a class="code" href="structVW_1_1no__lock__object__pool.html#a1088c2d45a588b2ec896110c798d3d3c">m_chunk_size</a>(chunk_size)</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  {</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="structVW_1_1no__lock__object__pool.html#abfad34210c50826a232627bbf93b021b">new_chunk</a>(initial_chunk_size);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  }</div><div class="ttc" id="structVW_1_1no__lock__object__pool_html_af128f88080c494b6b9ff92a76ecc8dba"><div class="ttname"><a href="structVW_1_1no__lock__object__pool.html#af128f88080c494b6b9ff92a76ecc8dba">VW::no_lock_object_pool::m_initial_chunk_size</a></div><div class="ttdeci">size_t m_initial_chunk_size</div><div class="ttdef"><b>Definition:</b> <a href="object__pool_8h_source.html#l00123">object_pool.h:123</a></div></div>
-<div class="ttc" id="structVW_1_1no__lock__object__pool_html_add18958536c3a82715e2b5637e83a493"><div class="ttname"><a href="structVW_1_1no__lock__object__pool.html#add18958536c3a82715e2b5637e83a493">VW::no_lock_object_pool::m_initializer</a></div><div class="ttdeci">TInitializer m_initializer</div><div class="ttdef"><b>Definition:</b> <a href="object__pool_8h_source.html#l00121">object_pool.h:121</a></div></div>
-<div class="ttc" id="structVW_1_1no__lock__object__pool_html_a1088c2d45a588b2ec896110c798d3d3c"><div class="ttname"><a href="structVW_1_1no__lock__object__pool.html#a1088c2d45a588b2ec896110c798d3d3c">VW::no_lock_object_pool::m_chunk_size</a></div><div class="ttdeci">size_t m_chunk_size</div><div class="ttdef"><b>Definition:</b> <a href="object__pool_8h_source.html#l00124">object_pool.h:124</a></div></div>
-<div class="ttc" id="structVW_1_1no__lock__object__pool_html_abfad34210c50826a232627bbf93b021b"><div class="ttname"><a href="structVW_1_1no__lock__object__pool.html#abfad34210c50826a232627bbf93b021b">VW::no_lock_object_pool::new_chunk</a></div><div class="ttdeci">void new_chunk(size_t size)</div><div class="ttdef"><b>Definition:</b> <a href="object__pool_8h_source.html#l00102">object_pool.h:102</a></div></div>
-</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a8b44b0d2968ab930cb65ce416a254c81"></a>
@@ -244,10 +232,6 @@ template&lt;typename T, typename TInitializer, typename TCleanup = default_clean
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="object__pool_8h_source.html#l00043">43</a> of file <a class="el" href="object__pool_8h_source.html">object_pool.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  {</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">while</span> (!<a class="code" href="structVW_1_1no__lock__object__pool.html#a9da1cbe398f501a03b7478134f17e48d">m_pool</a>.empty())</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    {</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <span class="keyword">auto</span> front = <a class="code" href="structVW_1_1no__lock__object__pool.html#a9da1cbe398f501a03b7478134f17e48d">m_pool</a>.front();</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <a class="code" href="structVW_1_1no__lock__object__pool.html#a6b9f94ad452ceb53a4bd8a465fe3c5ff">m_cleanup</a>(front);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <a class="code" href="structVW_1_1no__lock__object__pool.html#a9da1cbe398f501a03b7478134f17e48d">m_pool</a>.pop();</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  }</div><div class="ttc" id="structVW_1_1no__lock__object__pool_html_a9da1cbe398f501a03b7478134f17e48d"><div class="ttname"><a href="structVW_1_1no__lock__object__pool.html#a9da1cbe398f501a03b7478134f17e48d">VW::no_lock_object_pool::m_pool</a></div><div class="ttdeci">std::queue&lt; T * &gt; m_pool</div><div class="ttdef"><b>Definition:</b> <a href="object__pool_8h_source.html#l00128">object_pool.h:128</a></div></div>
-<div class="ttc" id="structVW_1_1no__lock__object__pool_html_a6b9f94ad452ceb53a4bd8a465fe3c5ff"><div class="ttname"><a href="structVW_1_1no__lock__object__pool.html#a6b9f94ad452ceb53a4bd8a465fe3c5ff">VW::no_lock_object_pool::m_cleanup</a></div><div class="ttdeci">TCleanup m_cleanup</div><div class="ttdef"><b>Definition:</b> <a href="object__pool_8h_source.html#l00122">object_pool.h:122</a></div></div>
-</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -274,9 +258,6 @@ template&lt;typename T, typename TInitializer, typename TCleanup = default_clean
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="object__pool_8h_source.html#l00071">71</a> of file <a class="el" href="object__pool_8h_source.html">object_pool.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="structVW_1_1no__lock__object__pool.html#a9da1cbe398f501a03b7478134f17e48d">m_pool</a>.empty(); }</div><div class="ttc" id="structVW_1_1no__lock__object__pool_html_a9da1cbe398f501a03b7478134f17e48d"><div class="ttname"><a href="structVW_1_1no__lock__object__pool.html#a9da1cbe398f501a03b7478134f17e48d">VW::no_lock_object_pool::m_pool</a></div><div class="ttdeci">std::queue&lt; T * &gt; m_pool</div><div class="ttdef"><b>Definition:</b> <a href="object__pool_8h_source.html#l00128">object_pool.h:128</a></div></div>
-</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a8e8305f0952ceaffca8f2f34a4ddfd82"></a>
@@ -302,11 +283,6 @@ template&lt;typename T, typename TInitializer, typename TCleanup = default_clean
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="object__pool_8h_source.html#l00059">59</a> of file <a class="el" href="object__pool_8h_source.html">object_pool.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  {</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="structVW_1_1no__lock__object__pool.html#a9da1cbe398f501a03b7478134f17e48d">m_pool</a>.empty())</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    {</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <a class="code" href="structVW_1_1no__lock__object__pool.html#abfad34210c50826a232627bbf93b021b">new_chunk</a>(<a class="code" href="structVW_1_1no__lock__object__pool.html#a1088c2d45a588b2ec896110c798d3d3c">m_chunk_size</a>);</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">auto</span> obj = <a class="code" href="structVW_1_1no__lock__object__pool.html#a9da1cbe398f501a03b7478134f17e48d">m_pool</a>.front();</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="structVW_1_1no__lock__object__pool.html#a9da1cbe398f501a03b7478134f17e48d">m_pool</a>.pop();</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">return</span> obj;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  }</div><div class="ttc" id="structVW_1_1no__lock__object__pool_html_a1088c2d45a588b2ec896110c798d3d3c"><div class="ttname"><a href="structVW_1_1no__lock__object__pool.html#a1088c2d45a588b2ec896110c798d3d3c">VW::no_lock_object_pool::m_chunk_size</a></div><div class="ttdeci">size_t m_chunk_size</div><div class="ttdef"><b>Definition:</b> <a href="object__pool_8h_source.html#l00124">object_pool.h:124</a></div></div>
-<div class="ttc" id="structVW_1_1no__lock__object__pool_html_abfad34210c50826a232627bbf93b021b"><div class="ttname"><a href="structVW_1_1no__lock__object__pool.html#abfad34210c50826a232627bbf93b021b">VW::no_lock_object_pool::new_chunk</a></div><div class="ttdeci">void new_chunk(size_t size)</div><div class="ttdef"><b>Definition:</b> <a href="object__pool_8h_source.html#l00102">object_pool.h:102</a></div></div>
-<div class="ttc" id="structVW_1_1no__lock__object__pool_html_a9da1cbe398f501a03b7478134f17e48d"><div class="ttname"><a href="structVW_1_1no__lock__object__pool.html#a9da1cbe398f501a03b7478134f17e48d">VW::no_lock_object_pool::m_pool</a></div><div class="ttdeci">std::queue&lt; T * &gt; m_pool</div><div class="ttdef"><b>Definition:</b> <a href="object__pool_8h_source.html#l00128">object_pool.h:128</a></div></div>
-</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="adfa3d69ce295d20c0bfc2807056bef51"></a>
@@ -333,9 +309,6 @@ template&lt;typename T, typename TInitializer, typename TCleanup = default_clean
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="object__pool_8h_source.html#l00088">88</a> of file <a class="el" href="object__pool_8h_source.html">object_pool.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  {</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; bound : <a class="code" href="structVW_1_1no__lock__object__pool.html#a81a9c6d9ce13d9d64d2d742bc442c720">m_chunk_bounds</a>)</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    {</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      <span class="keywordflow">if</span> (obj &gt;= bound.first &amp;&amp; obj &lt;= bound.second)</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      {</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      }</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  }</div><div class="ttc" id="structVW_1_1no__lock__object__pool_html_a81a9c6d9ce13d9d64d2d742bc442c720"><div class="ttname"><a href="structVW_1_1no__lock__object__pool.html#a81a9c6d9ce13d9d64d2d742bc442c720">VW::no_lock_object_pool::m_chunk_bounds</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; T *, T * &gt; &gt; m_chunk_bounds</div><div class="ttdef"><b>Definition:</b> <a href="object__pool_8h_source.html#l00127">object_pool.h:127</a></div></div>
-</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="abfad34210c50826a232627bbf93b021b"></a>
@@ -362,13 +335,6 @@ template&lt;typename T, typename TInitializer, typename TCleanup = default_clean
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="object__pool_8h_source.html#l00102">102</a> of file <a class="el" href="object__pool_8h_source.html">object_pool.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  {</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="structVW_1_1no__lock__object__pool.html#a6859bb14fcc3d3f365fac4925f0461e3">size</a> == 0)</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    {</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;      <span class="keywordflow">return</span>;</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <a class="code" href="structVW_1_1no__lock__object__pool.html#a556f66d361b9d1ab9c5ebfb62ed1220b">m_chunks</a>.push_back(std::unique_ptr&lt;T[]&gt;(<span class="keyword">new</span> T[<a class="code" href="structVW_1_1no__lock__object__pool.html#a6859bb14fcc3d3f365fac4925f0461e3">size</a>]));</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keyword">auto</span>&amp; chunk = <a class="code" href="structVW_1_1no__lock__object__pool.html#a556f66d361b9d1ab9c5ebfb62ed1220b">m_chunks</a>.back();</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="code" href="structVW_1_1no__lock__object__pool.html#a81a9c6d9ce13d9d64d2d742bc442c720">m_chunk_bounds</a>.push_back({&amp;chunk[0], &amp;chunk[size - 1]});</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="structVW_1_1no__lock__object__pool.html#a6859bb14fcc3d3f365fac4925f0461e3">size</a>; i++)</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    {</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      memset(&amp;chunk[i], 0, <span class="keyword">sizeof</span>(T));</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      <span class="keyword">new</span> (&amp;chunk[i]) T{};</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      <a class="code" href="structVW_1_1no__lock__object__pool.html#a9da1cbe398f501a03b7478134f17e48d">m_pool</a>.push(<a class="code" href="structVW_1_1no__lock__object__pool.html#add18958536c3a82715e2b5637e83a493">m_initializer</a>(&amp;chunk[i]));</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  }</div><div class="ttc" id="structVW_1_1no__lock__object__pool_html_add18958536c3a82715e2b5637e83a493"><div class="ttname"><a href="structVW_1_1no__lock__object__pool.html#add18958536c3a82715e2b5637e83a493">VW::no_lock_object_pool::m_initializer</a></div><div class="ttdeci">TInitializer m_initializer</div><div class="ttdef"><b>Definition:</b> <a href="object__pool_8h_source.html#l00121">object_pool.h:121</a></div></div>
-<div class="ttc" id="structVW_1_1no__lock__object__pool_html_a556f66d361b9d1ab9c5ebfb62ed1220b"><div class="ttname"><a href="structVW_1_1no__lock__object__pool.html#a556f66d361b9d1ab9c5ebfb62ed1220b">VW::no_lock_object_pool::m_chunks</a></div><div class="ttdeci">std::vector&lt; std::unique_ptr&lt; T[]&gt; &gt; m_chunks</div><div class="ttdef"><b>Definition:</b> <a href="object__pool_8h_source.html#l00126">object_pool.h:126</a></div></div>
-<div class="ttc" id="structVW_1_1no__lock__object__pool_html_a9da1cbe398f501a03b7478134f17e48d"><div class="ttname"><a href="structVW_1_1no__lock__object__pool.html#a9da1cbe398f501a03b7478134f17e48d">VW::no_lock_object_pool::m_pool</a></div><div class="ttdeci">std::queue&lt; T * &gt; m_pool</div><div class="ttdef"><b>Definition:</b> <a href="object__pool_8h_source.html#l00128">object_pool.h:128</a></div></div>
-<div class="ttc" id="structVW_1_1no__lock__object__pool_html_a81a9c6d9ce13d9d64d2d742bc442c720"><div class="ttname"><a href="structVW_1_1no__lock__object__pool.html#a81a9c6d9ce13d9d64d2d742bc442c720">VW::no_lock_object_pool::m_chunk_bounds</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; T *, T * &gt; &gt; m_chunk_bounds</div><div class="ttdef"><b>Definition:</b> <a href="object__pool_8h_source.html#l00127">object_pool.h:127</a></div></div>
-<div class="ttc" id="structVW_1_1no__lock__object__pool_html_a6859bb14fcc3d3f365fac4925f0461e3"><div class="ttname"><a href="structVW_1_1no__lock__object__pool.html#a6859bb14fcc3d3f365fac4925f0461e3">VW::no_lock_object_pool::size</a></div><div class="ttdeci">size_t size() const </div><div class="ttdef"><b>Definition:</b> <a href="object__pool_8h_source.html#l00073">object_pool.h:73</a></div></div>
-</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a45906685022a8b20fdd9fb046ec43d46"></a>
@@ -395,10 +361,6 @@ template&lt;typename T, typename TInitializer, typename TCleanup = default_clean
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="object__pool_8h_source.html#l00053">53</a> of file <a class="el" href="object__pool_8h_source.html">object_pool.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  {</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    assert(<a class="code" href="structVW_1_1no__lock__object__pool.html#adfa3d69ce295d20c0bfc2807056bef51">is_from_pool</a>(obj));</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="structVW_1_1no__lock__object__pool.html#a9da1cbe398f501a03b7478134f17e48d">m_pool</a>.push(obj);</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  }</div><div class="ttc" id="structVW_1_1no__lock__object__pool_html_adfa3d69ce295d20c0bfc2807056bef51"><div class="ttname"><a href="structVW_1_1no__lock__object__pool.html#adfa3d69ce295d20c0bfc2807056bef51">VW::no_lock_object_pool::is_from_pool</a></div><div class="ttdeci">bool is_from_pool(T *obj) const </div><div class="ttdef"><b>Definition:</b> <a href="object__pool_8h_source.html#l00088">object_pool.h:88</a></div></div>
-<div class="ttc" id="structVW_1_1no__lock__object__pool_html_a9da1cbe398f501a03b7478134f17e48d"><div class="ttname"><a href="structVW_1_1no__lock__object__pool.html#a9da1cbe398f501a03b7478134f17e48d">VW::no_lock_object_pool::m_pool</a></div><div class="ttdeci">std::queue&lt; T * &gt; m_pool</div><div class="ttdef"><b>Definition:</b> <a href="object__pool_8h_source.html#l00128">object_pool.h:128</a></div></div>
-</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a6859bb14fcc3d3f365fac4925f0461e3"></a>
@@ -424,12 +386,6 @@ template&lt;typename T, typename TInitializer, typename TCleanup = default_clean
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="object__pool_8h_source.html#l00073">73</a> of file <a class="el" href="object__pool_8h_source.html">object_pool.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  {</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="structVW_1_1no__lock__object__pool.html#a6859bb14fcc3d3f365fac4925f0461e3">size</a> = 0;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">auto</span> num_chunks = <a class="code" href="structVW_1_1no__lock__object__pool.html#a81a9c6d9ce13d9d64d2d742bc442c720">m_chunk_bounds</a>.size();</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="structVW_1_1no__lock__object__pool.html#a81a9c6d9ce13d9d64d2d742bc442c720">m_chunk_bounds</a>.size() &gt; 0 &amp;&amp; <a class="code" href="structVW_1_1no__lock__object__pool.html#af128f88080c494b6b9ff92a76ecc8dba">m_initial_chunk_size</a> &gt; 0)</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    {</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      size += <a class="code" href="structVW_1_1no__lock__object__pool.html#af128f88080c494b6b9ff92a76ecc8dba">m_initial_chunk_size</a>;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      num_chunks--;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    size += num_chunks * <a class="code" href="structVW_1_1no__lock__object__pool.html#a1088c2d45a588b2ec896110c798d3d3c">m_chunk_size</a>;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="structVW_1_1no__lock__object__pool.html#a6859bb14fcc3d3f365fac4925f0461e3">size</a>;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  }</div><div class="ttc" id="structVW_1_1no__lock__object__pool_html_af128f88080c494b6b9ff92a76ecc8dba"><div class="ttname"><a href="structVW_1_1no__lock__object__pool.html#af128f88080c494b6b9ff92a76ecc8dba">VW::no_lock_object_pool::m_initial_chunk_size</a></div><div class="ttdeci">size_t m_initial_chunk_size</div><div class="ttdef"><b>Definition:</b> <a href="object__pool_8h_source.html#l00123">object_pool.h:123</a></div></div>
-<div class="ttc" id="structVW_1_1no__lock__object__pool_html_a1088c2d45a588b2ec896110c798d3d3c"><div class="ttname"><a href="structVW_1_1no__lock__object__pool.html#a1088c2d45a588b2ec896110c798d3d3c">VW::no_lock_object_pool::m_chunk_size</a></div><div class="ttdeci">size_t m_chunk_size</div><div class="ttdef"><b>Definition:</b> <a href="object__pool_8h_source.html#l00124">object_pool.h:124</a></div></div>
-<div class="ttc" id="structVW_1_1no__lock__object__pool_html_a81a9c6d9ce13d9d64d2d742bc442c720"><div class="ttname"><a href="structVW_1_1no__lock__object__pool.html#a81a9c6d9ce13d9d64d2d742bc442c720">VW::no_lock_object_pool::m_chunk_bounds</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; T *, T * &gt; &gt; m_chunk_bounds</div><div class="ttdef"><b>Definition:</b> <a href="object__pool_8h_source.html#l00127">object_pool.h:127</a></div></div>
-<div class="ttc" id="structVW_1_1no__lock__object__pool_html_a6859bb14fcc3d3f365fac4925f0461e3"><div class="ttname"><a href="structVW_1_1no__lock__object__pool.html#a6859bb14fcc3d3f365fac4925f0461e3">VW::no_lock_object_pool::size</a></div><div class="ttdeci">size_t size() const </div><div class="ttdef"><b>Definition:</b> <a href="object__pool_8h_source.html#l00073">object_pool.h:73</a></div></div>
-</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -453,8 +409,6 @@ template&lt;typename T, typename TInitializer, typename TCleanup = default_clean
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="object__pool_8h_source.html#l00127">127</a> of file <a class="el" href="object__pool_8h_source.html">object_pool.h</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a1088c2d45a588b2ec896110c798d3d3c"></a>
@@ -476,8 +430,6 @@ template&lt;typename T, typename TInitializer, typename TCleanup = default_clean
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="object__pool_8h_source.html#l00124">124</a> of file <a class="el" href="object__pool_8h_source.html">object_pool.h</a>.</p>
 
 </div>
 </div>
@@ -501,8 +453,6 @@ template&lt;typename T, typename TInitializer, typename TCleanup = default_clean
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="object__pool_8h_source.html#l00126">126</a> of file <a class="el" href="object__pool_8h_source.html">object_pool.h</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a6b9f94ad452ceb53a4bd8a465fe3c5ff"></a>
@@ -524,8 +474,6 @@ template&lt;typename T, typename TInitializer, typename TCleanup = default_clean
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="object__pool_8h_source.html#l00122">122</a> of file <a class="el" href="object__pool_8h_source.html">object_pool.h</a>.</p>
 
 </div>
 </div>
@@ -549,8 +497,6 @@ template&lt;typename T, typename TInitializer, typename TCleanup = default_clean
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="object__pool_8h_source.html#l00123">123</a> of file <a class="el" href="object__pool_8h_source.html">object_pool.h</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="add18958536c3a82715e2b5637e83a493"></a>
@@ -572,8 +518,6 @@ template&lt;typename T, typename TInitializer, typename TCleanup = default_clean
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="object__pool_8h_source.html#l00121">121</a> of file <a class="el" href="object__pool_8h_source.html">object_pool.h</a>.</p>
 
 </div>
 </div>
@@ -597,17 +541,15 @@ template&lt;typename T, typename TInitializer, typename TCleanup = default_clean
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="object__pool_8h_source.html#l00128">128</a> of file <a class="el" href="object__pool_8h_source.html">object_pool.h</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>/__w/vowpal_wabbit/vowpal_wabbit/vowpalwabbit/<a class="el" href="object__pool_8h_source.html">object_pool.h</a></li>
+<li>/__w/vowpal_wabbit/vowpal_wabbit/vowpalwabbit/<a class="el" href="object__pool_8h.html">object_pool.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 6 2020 15:29:12 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 7 2020 15:19:46 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

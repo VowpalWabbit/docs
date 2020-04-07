@@ -98,7 +98,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="example__predict__builder_8h_source.html">example_predict_builder.h</a>&gt;</code></p>
+<p><code>#include &lt;example_predict_builder.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -127,10 +127,7 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a6a9122cba2490e0f60809cf3d9be704c"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvw__slim_1_1example__predict__builder.html#a6a9122cba2490e0f60809cf3d9be704c">_feature_index_bit_mask</a></td></tr>
 <tr class="separator:a6a9122cba2490e0f60809cf3d9be704c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="example__predict__builder_8h_source.html#l00007">7</a> of file <a class="el" href="example__predict__builder_8h_source.html">example_predict_builder.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a256f5181516491c5b19f5c1707b51637"></a>
 <div class="memitem">
 <div class="memproto">
@@ -161,15 +158,6 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="example__predict__builder_8cc_source.html#l00007">7</a> of file <a class="el" href="example__predict__builder_8cc_source.html">example_predict_builder.cc</a>.</p>
-
-<p>References <a class="el" href="example__predict__builder_8h_source.html#l00012">_feature_index_bit_mask</a>, <a class="el" href="example__predict__builder_8h_source.html#l00011">_namespace_hash</a>, <a class="el" href="example__predict__builder_8cc_source.html#l00024">add_namespace()</a>, and <a class="el" href="hashstring_8h_source.html#l00015">hashstring()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    : <a class="code" href="classvw__slim_1_1example__predict__builder.html#a1e82e2aa03272dcd838a3069866b53dd">_ex</a>(ex)</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  <a class="code" href="classvw__slim_1_1example__predict__builder.html#a6a9122cba2490e0f60809cf3d9be704c">_feature_index_bit_mask</a> = ((uint64_t)1 &lt;&lt; feature_index_num_bits) - 1;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <a class="code" href="classvw__slim_1_1example__predict__builder.html#affb7b4e69adb82257b33ccfd766fdc76">add_namespace</a>(namespace_name[0]);</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <a class="code" href="classvw__slim_1_1example__predict__builder.html#acf8155ef4a4beecdff1979040dba8f32">_namespace_hash</a> = <a class="code" href="hashstring_8h.html#ad0c610591e5f64e2d6e5753b6f4266f8">hashstring</a>(namespace_name, strlen(namespace_name), 0);</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div><div class="ttc" id="classvw__slim_1_1example__predict__builder_html_affb7b4e69adb82257b33ccfd766fdc76"><div class="ttname"><a href="classvw__slim_1_1example__predict__builder.html#affb7b4e69adb82257b33ccfd766fdc76">vw_slim::example_predict_builder::add_namespace</a></div><div class="ttdeci">void add_namespace(namespace_index feature_group)</div><div class="ttdef"><b>Definition:</b> <a href="example__predict__builder_8cc_source.html#l00024">example_predict_builder.cc:24</a></div></div>
-<div class="ttc" id="classvw__slim_1_1example__predict__builder_html_a1e82e2aa03272dcd838a3069866b53dd"><div class="ttname"><a href="classvw__slim_1_1example__predict__builder.html#a1e82e2aa03272dcd838a3069866b53dd">vw_slim::example_predict_builder::_ex</a></div><div class="ttdeci">example_predict * _ex</div><div class="ttdef"><b>Definition:</b> <a href="example__predict__builder_8h_source.html#l00009">example_predict_builder.h:9</a></div></div>
-<div class="ttc" id="hashstring_8h_html_ad0c610591e5f64e2d6e5753b6f4266f8"><div class="ttname"><a href="hashstring_8h.html#ad0c610591e5f64e2d6e5753b6f4266f8">hashstring</a></div><div class="ttdeci">VW_STD14_CONSTEXPR uint64_t hashstring(const char *s, size_t len, uint64_t h)</div><div class="ttdef"><b>Definition:</b> <a href="hashstring_8h_source.html#l00015">hashstring.h:15</a></div></div>
-<div class="ttc" id="classvw__slim_1_1example__predict__builder_html_a6a9122cba2490e0f60809cf3d9be704c"><div class="ttname"><a href="classvw__slim_1_1example__predict__builder.html#a6a9122cba2490e0f60809cf3d9be704c">vw_slim::example_predict_builder::_feature_index_bit_mask</a></div><div class="ttdeci">uint64_t _feature_index_bit_mask</div><div class="ttdef"><b>Definition:</b> <a href="example__predict__builder_8h_source.html#l00012">example_predict_builder.h:12</a></div></div>
-<div class="ttc" id="classvw__slim_1_1example__predict__builder_html_acf8155ef4a4beecdff1979040dba8f32"><div class="ttname"><a href="classvw__slim_1_1example__predict__builder.html#acf8155ef4a4beecdff1979040dba8f32">vw_slim::example_predict_builder::_namespace_hash</a></div><div class="ttdeci">uint64_t _namespace_hash</div><div class="ttdef"><b>Definition:</b> <a href="example__predict__builder_8h_source.html#l00011">example_predict_builder.h:11</a></div></div>
-</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a1e4077d8b55d40414cb93ba7dc5206aa"></a>
@@ -202,14 +190,6 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="example__predict__builder_8cc_source.html#l00016">16</a> of file <a class="el" href="example__predict__builder_8cc_source.html">example_predict_builder.cc</a>.</p>
-
-<p>References <a class="el" href="example__predict__builder_8h_source.html#l00012">_feature_index_bit_mask</a>, and <a class="el" href="example__predict__builder_8cc_source.html#l00024">add_namespace()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    : <a class="code" href="classvw__slim_1_1example__predict__builder.html#a1e82e2aa03272dcd838a3069866b53dd">_ex</a>(ex), <a class="code" href="classvw__slim_1_1example__predict__builder.html#acf8155ef4a4beecdff1979040dba8f32">_namespace_hash</a>(namespace_idx)</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <a class="code" href="classvw__slim_1_1example__predict__builder.html#a6a9122cba2490e0f60809cf3d9be704c">_feature_index_bit_mask</a> = ((uint64_t)1 &lt;&lt; feature_index_num_bits) - 1;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <a class="code" href="classvw__slim_1_1example__predict__builder.html#affb7b4e69adb82257b33ccfd766fdc76">add_namespace</a>(namespace_idx);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div><div class="ttc" id="classvw__slim_1_1example__predict__builder_html_affb7b4e69adb82257b33ccfd766fdc76"><div class="ttname"><a href="classvw__slim_1_1example__predict__builder.html#affb7b4e69adb82257b33ccfd766fdc76">vw_slim::example_predict_builder::add_namespace</a></div><div class="ttdeci">void add_namespace(namespace_index feature_group)</div><div class="ttdef"><b>Definition:</b> <a href="example__predict__builder_8cc_source.html#l00024">example_predict_builder.cc:24</a></div></div>
-<div class="ttc" id="classvw__slim_1_1example__predict__builder_html_a1e82e2aa03272dcd838a3069866b53dd"><div class="ttname"><a href="classvw__slim_1_1example__predict__builder.html#a1e82e2aa03272dcd838a3069866b53dd">vw_slim::example_predict_builder::_ex</a></div><div class="ttdeci">example_predict * _ex</div><div class="ttdef"><b>Definition:</b> <a href="example__predict__builder_8h_source.html#l00009">example_predict_builder.h:9</a></div></div>
-<div class="ttc" id="classvw__slim_1_1example__predict__builder_html_a6a9122cba2490e0f60809cf3d9be704c"><div class="ttname"><a href="classvw__slim_1_1example__predict__builder.html#a6a9122cba2490e0f60809cf3d9be704c">vw_slim::example_predict_builder::_feature_index_bit_mask</a></div><div class="ttdeci">uint64_t _feature_index_bit_mask</div><div class="ttdef"><b>Definition:</b> <a href="example__predict__builder_8h_source.html#l00012">example_predict_builder.h:12</a></div></div>
-<div class="ttc" id="classvw__slim_1_1example__predict__builder_html_acf8155ef4a4beecdff1979040dba8f32"><div class="ttname"><a href="classvw__slim_1_1example__predict__builder.html#acf8155ef4a4beecdff1979040dba8f32">vw_slim::example_predict_builder::_namespace_hash</a></div><div class="ttdeci">uint64_t _namespace_hash</div><div class="ttdef"><b>Definition:</b> <a href="example__predict__builder_8h_source.html#l00011">example_predict_builder.h:11</a></div></div>
-</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -235,16 +215,6 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="example__predict__builder_8cc_source.html#l00024">24</a> of file <a class="el" href="example__predict__builder_8cc_source.html">example_predict_builder.cc</a>.</p>
-
-<p>References <a class="el" href="example__predict__builder_8h_source.html#l00009">_ex</a>, <a class="el" href="example__predict__builder_8h_source.html#l00010">_namespace_idx</a>, <a class="el" href="example__predict_8h_source.html#l00038">example_predict::indices</a>, and <a class="el" href="v__array_8h_source.html#l00147">v_array&lt; T &gt;::unique_add_sorted()</a>.</p>
-
-<p>Referenced by <a class="el" href="example__predict__builder_8cc_source.html#l00007">example_predict_builder()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <a class="code" href="classvw__slim_1_1example__predict__builder.html#a7cd27277a659cf553e49a7c67f713b13">_namespace_idx</a> = feature_group;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <a class="code" href="classvw__slim_1_1example__predict__builder.html#a1e82e2aa03272dcd838a3069866b53dd">_ex</a>-&gt;<a class="code" href="structexample__predict.html#ab098b66eb3c24b20ca349b7908ef54f3">indices</a>.<a class="code" href="structv__array.html#ae6f73dad46e8f35ac0b99c7bf4301841">unique_add_sorted</a>(feature_group);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div><div class="ttc" id="structexample__predict_html_ab098b66eb3c24b20ca349b7908ef54f3"><div class="ttname"><a href="structexample__predict.html#ab098b66eb3c24b20ca349b7908ef54f3">example_predict::indices</a></div><div class="ttdeci">v_array&lt; namespace_index &gt; indices</div><div class="ttdef"><b>Definition:</b> <a href="example__predict_8h_source.html#l00038">example_predict.h:38</a></div></div>
-<div class="ttc" id="classvw__slim_1_1example__predict__builder_html_a1e82e2aa03272dcd838a3069866b53dd"><div class="ttname"><a href="classvw__slim_1_1example__predict__builder.html#a1e82e2aa03272dcd838a3069866b53dd">vw_slim::example_predict_builder::_ex</a></div><div class="ttdeci">example_predict * _ex</div><div class="ttdef"><b>Definition:</b> <a href="example__predict__builder_8h_source.html#l00009">example_predict_builder.h:9</a></div></div>
-<div class="ttc" id="classvw__slim_1_1example__predict__builder_html_a7cd27277a659cf553e49a7c67f713b13"><div class="ttname"><a href="classvw__slim_1_1example__predict__builder.html#a7cd27277a659cf553e49a7c67f713b13">vw_slim::example_predict_builder::_namespace_idx</a></div><div class="ttdeci">namespace_index _namespace_idx</div><div class="ttdef"><b>Definition:</b> <a href="example__predict__builder_8h_source.html#l00010">example_predict_builder.h:10</a></div></div>
-<div class="ttc" id="structv__array_html_ae6f73dad46e8f35ac0b99c7bf4301841"><div class="ttname"><a href="structv__array.html#ae6f73dad46e8f35ac0b99c7bf4301841">v_array::unique_add_sorted</a></div><div class="ttdeci">size_t unique_add_sorted(const T &amp;new_ele)</div><div class="ttdef"><b>Definition:</b> <a href="v__array_8h_source.html#l00147">v_array.h:147</a></div></div>
-</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a6f693aa571f6c8ca6c951834aaa01c36"></a>
@@ -271,16 +241,6 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="example__predict__builder_8cc_source.html#l00037">37</a> of file <a class="el" href="example__predict__builder_8cc_source.html">example_predict_builder.cc</a>.</p>
-
-<p>References <a class="el" href="example__predict__builder_8h_source.html#l00009">_ex</a>, <a class="el" href="example__predict__builder_8h_source.html#l00011">_namespace_hash</a>, <a class="el" href="example__predict__builder_8h_source.html#l00010">_namespace_idx</a>, and <a class="el" href="example__predict_8h_source.html#l00039">example_predict::feature_space</a>.</p>
-
-<p>Referenced by <a class="el" href="ut__vw_8cc_source.html#l00382">cb_data_epsilon_0_skype_jb_test_runner()</a>, <a class="el" href="ut__vw_8cc_source.html#l00512">generate_cb_data_5()</a>, <a class="el" href="ut__vw_8cc_source.html#l00096">run_predict_in_memory()</a>, and <a class="el" href="ut__vw_8cc_source.html#l00348">TEST()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="classvw__slim_1_1example__predict__builder.html#a1e82e2aa03272dcd838a3069866b53dd">_ex</a>-&gt;<a class="code" href="structexample__predict.html#a59f24cbe1603a24ae5812b7d262f3668">feature_space</a>[<a class="code" href="classvw__slim_1_1example__predict__builder.html#a7cd27277a659cf553e49a7c67f713b13">_namespace_idx</a>].push_back(value, <a class="code" href="classvw__slim_1_1example__predict__builder.html#acf8155ef4a4beecdff1979040dba8f32">_namespace_hash</a> + feature_idx);</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div><div class="ttc" id="classvw__slim_1_1example__predict__builder_html_a1e82e2aa03272dcd838a3069866b53dd"><div class="ttname"><a href="classvw__slim_1_1example__predict__builder.html#a1e82e2aa03272dcd838a3069866b53dd">vw_slim::example_predict_builder::_ex</a></div><div class="ttdeci">example_predict * _ex</div><div class="ttdef"><b>Definition:</b> <a href="example__predict__builder_8h_source.html#l00009">example_predict_builder.h:9</a></div></div>
-<div class="ttc" id="structexample__predict_html_a59f24cbe1603a24ae5812b7d262f3668"><div class="ttname"><a href="structexample__predict.html#a59f24cbe1603a24ae5812b7d262f3668">example_predict::feature_space</a></div><div class="ttdeci">std::array&lt; features, NUM_NAMESPACES &gt; feature_space</div><div class="ttdef"><b>Definition:</b> <a href="example__predict_8h_source.html#l00039">example_predict.h:39</a></div></div>
-<div class="ttc" id="classvw__slim_1_1example__predict__builder_html_a7cd27277a659cf553e49a7c67f713b13"><div class="ttname"><a href="classvw__slim_1_1example__predict__builder.html#a7cd27277a659cf553e49a7c67f713b13">vw_slim::example_predict_builder::_namespace_idx</a></div><div class="ttdeci">namespace_index _namespace_idx</div><div class="ttdef"><b>Definition:</b> <a href="example__predict__builder_8h_source.html#l00010">example_predict_builder.h:10</a></div></div>
-<div class="ttc" id="classvw__slim_1_1example__predict__builder_html_acf8155ef4a4beecdff1979040dba8f32"><div class="ttname"><a href="classvw__slim_1_1example__predict__builder.html#acf8155ef4a4beecdff1979040dba8f32">vw_slim::example_predict_builder::_namespace_hash</a></div><div class="ttdeci">uint64_t _namespace_hash</div><div class="ttdef"><b>Definition:</b> <a href="example__predict__builder_8h_source.html#l00011">example_predict_builder.h:11</a></div></div>
-</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a179644956b05b05c6374bac36e7b3a58"></a>
@@ -307,19 +267,6 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="example__predict__builder_8cc_source.html#l00030">30</a> of file <a class="el" href="example__predict__builder_8cc_source.html">example_predict_builder.cc</a>.</p>
-
-<p>References <a class="el" href="example__predict__builder_8h_source.html#l00009">_ex</a>, <a class="el" href="example__predict__builder_8h_source.html#l00012">_feature_index_bit_mask</a>, <a class="el" href="example__predict__builder_8h_source.html#l00011">_namespace_hash</a>, <a class="el" href="example__predict__builder_8h_source.html#l00010">_namespace_idx</a>, <a class="el" href="example__predict_8h_source.html#l00039">example_predict::feature_space</a>, and <a class="el" href="hashstring_8h_source.html#l00015">hashstring()</a>.</p>
-
-<p>Referenced by <a class="el" href="ut__vw_8cc_source.html#l00096">run_predict_in_memory()</a>, and <a class="el" href="ut__vw_8cc_source.html#l00421">TEST()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <a class="code" href="feature__group_8h.html#a8dc3cab3cf2fe526c7e780dc6743727a">feature_index</a> feature_hash =</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      <a class="code" href="classvw__slim_1_1example__predict__builder.html#a6a9122cba2490e0f60809cf3d9be704c">_feature_index_bit_mask</a> &amp; <a class="code" href="hashstring_8h.html#ad0c610591e5f64e2d6e5753b6f4266f8">hashstring</a>(feature_name, strlen(feature_name), <a class="code" href="classvw__slim_1_1example__predict__builder.html#acf8155ef4a4beecdff1979040dba8f32">_namespace_hash</a>);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <a class="code" href="classvw__slim_1_1example__predict__builder.html#a1e82e2aa03272dcd838a3069866b53dd">_ex</a>-&gt;<a class="code" href="structexample__predict.html#a59f24cbe1603a24ae5812b7d262f3668">feature_space</a>[<a class="code" href="classvw__slim_1_1example__predict__builder.html#a7cd27277a659cf553e49a7c67f713b13">_namespace_idx</a>].push_back(value, feature_hash);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div><div class="ttc" id="classvw__slim_1_1example__predict__builder_html_a1e82e2aa03272dcd838a3069866b53dd"><div class="ttname"><a href="classvw__slim_1_1example__predict__builder.html#a1e82e2aa03272dcd838a3069866b53dd">vw_slim::example_predict_builder::_ex</a></div><div class="ttdeci">example_predict * _ex</div><div class="ttdef"><b>Definition:</b> <a href="example__predict__builder_8h_source.html#l00009">example_predict_builder.h:9</a></div></div>
-<div class="ttc" id="hashstring_8h_html_ad0c610591e5f64e2d6e5753b6f4266f8"><div class="ttname"><a href="hashstring_8h.html#ad0c610591e5f64e2d6e5753b6f4266f8">hashstring</a></div><div class="ttdeci">VW_STD14_CONSTEXPR uint64_t hashstring(const char *s, size_t len, uint64_t h)</div><div class="ttdef"><b>Definition:</b> <a href="hashstring_8h_source.html#l00015">hashstring.h:15</a></div></div>
-<div class="ttc" id="structexample__predict_html_a59f24cbe1603a24ae5812b7d262f3668"><div class="ttname"><a href="structexample__predict.html#a59f24cbe1603a24ae5812b7d262f3668">example_predict::feature_space</a></div><div class="ttdeci">std::array&lt; features, NUM_NAMESPACES &gt; feature_space</div><div class="ttdef"><b>Definition:</b> <a href="example__predict_8h_source.html#l00039">example_predict.h:39</a></div></div>
-<div class="ttc" id="feature__group_8h_html_a8dc3cab3cf2fe526c7e780dc6743727a"><div class="ttname"><a href="feature__group_8h.html#a8dc3cab3cf2fe526c7e780dc6743727a">feature_index</a></div><div class="ttdeci">uint64_t feature_index</div><div class="ttdef"><b>Definition:</b> <a href="feature__group_8h_source.html#l00022">feature_group.h:22</a></div></div>
-<div class="ttc" id="classvw__slim_1_1example__predict__builder_html_a7cd27277a659cf553e49a7c67f713b13"><div class="ttname"><a href="classvw__slim_1_1example__predict__builder.html#a7cd27277a659cf553e49a7c67f713b13">vw_slim::example_predict_builder::_namespace_idx</a></div><div class="ttdeci">namespace_index _namespace_idx</div><div class="ttdef"><b>Definition:</b> <a href="example__predict__builder_8h_source.html#l00010">example_predict_builder.h:10</a></div></div>
-<div class="ttc" id="classvw__slim_1_1example__predict__builder_html_a6a9122cba2490e0f60809cf3d9be704c"><div class="ttname"><a href="classvw__slim_1_1example__predict__builder.html#a6a9122cba2490e0f60809cf3d9be704c">vw_slim::example_predict_builder::_feature_index_bit_mask</a></div><div class="ttdeci">uint64_t _feature_index_bit_mask</div><div class="ttdef"><b>Definition:</b> <a href="example__predict__builder_8h_source.html#l00012">example_predict_builder.h:12</a></div></div>
-<div class="ttc" id="classvw__slim_1_1example__predict__builder_html_acf8155ef4a4beecdff1979040dba8f32"><div class="ttname"><a href="classvw__slim_1_1example__predict__builder.html#acf8155ef4a4beecdff1979040dba8f32">vw_slim::example_predict_builder::_namespace_hash</a></div><div class="ttdeci">uint64_t _namespace_hash</div><div class="ttdef"><b>Definition:</b> <a href="example__predict__builder_8h_source.html#l00011">example_predict_builder.h:11</a></div></div>
-</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -341,10 +288,6 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="example__predict__builder_8h_source.html#l00009">9</a> of file <a class="el" href="example__predict__builder_8h_source.html">example_predict_builder.h</a>.</p>
-
-<p>Referenced by <a class="el" href="example__predict__builder_8cc_source.html#l00024">add_namespace()</a>, <a class="el" href="example__predict__builder_8cc_source.html#l00037">push_feature()</a>, and <a class="el" href="example__predict__builder_8cc_source.html#l00030">push_feature_string()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a6a9122cba2490e0f60809cf3d9be704c"></a>
@@ -364,10 +307,6 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="example__predict__builder_8h_source.html#l00012">12</a> of file <a class="el" href="example__predict__builder_8h_source.html">example_predict_builder.h</a>.</p>
-
-<p>Referenced by <a class="el" href="example__predict__builder_8cc_source.html#l00007">example_predict_builder()</a>, and <a class="el" href="example__predict__builder_8cc_source.html#l00030">push_feature_string()</a>.</p>
 
 </div>
 </div>
@@ -389,10 +328,6 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="example__predict__builder_8h_source.html#l00011">11</a> of file <a class="el" href="example__predict__builder_8h_source.html">example_predict_builder.h</a>.</p>
-
-<p>Referenced by <a class="el" href="example__predict__builder_8cc_source.html#l00007">example_predict_builder()</a>, <a class="el" href="example__predict__builder_8cc_source.html#l00037">push_feature()</a>, and <a class="el" href="example__predict__builder_8cc_source.html#l00030">push_feature_string()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a7cd27277a659cf553e49a7c67f713b13"></a>
@@ -413,20 +348,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="example__predict__builder_8h_source.html#l00010">10</a> of file <a class="el" href="example__predict__builder_8h_source.html">example_predict_builder.h</a>.</p>
-
-<p>Referenced by <a class="el" href="example__predict__builder_8cc_source.html#l00024">add_namespace()</a>, <a class="el" href="example__predict__builder_8cc_source.html#l00037">push_feature()</a>, and <a class="el" href="example__predict__builder_8cc_source.html#l00030">push_feature_string()</a>.</p>
-
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>/__w/vowpal_wabbit/vowpal_wabbit/vowpalwabbit/slim/include/<a class="el" href="example__predict__builder_8h_source.html">example_predict_builder.h</a></li>
-<li>/__w/vowpal_wabbit/vowpal_wabbit/vowpalwabbit/slim/src/<a class="el" href="example__predict__builder_8cc_source.html">example_predict_builder.cc</a></li>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>/__w/vowpal_wabbit/vowpal_wabbit/vowpalwabbit/slim/include/<a class="el" href="example__predict__builder_8h.html">example_predict_builder.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 6 2020 15:29:13 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 7 2020 15:19:46 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

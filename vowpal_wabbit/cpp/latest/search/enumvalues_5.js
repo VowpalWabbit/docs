@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['get_5ftruth_5fstring',['GET_TRUTH_STRING',['../namespaceSearch.html#a3681db3587a7b37beb43cde6081b699aa9d346801510eca3189021c5f34830908',1,'Search']]]
+  ['jsonfeatures',['JsonFeatures',['../parse__example_8h.html#a6f1d7d9072a105050bdca31b9bbc576ea287412698e7cb7995a912cc5dd9f6db1',1,'parse_example.h']]]
 ];

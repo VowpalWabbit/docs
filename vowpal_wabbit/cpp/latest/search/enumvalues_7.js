@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['jsonfeatures',['JsonFeatures',['../parse__example_8h.html#a6f1d7d9072a105050bdca31b9bbc576ea287412698e7cb7995a912cc5dd9f6db1',1,'parse_example.h']]]
+  ['prob',['prob',['../learner_8h.html#a5514b4a9448315c23ec344ca2d139e24a385e54735cbf7e164d5ca45c7419d3a9',1,'learner.h']]]
 ];

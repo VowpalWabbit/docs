@@ -92,7 +92,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="parse__example__json_8h_source.html">parse_example_json.h</a>&gt;</code></p>
+<p><code>#include &lt;parse_example_json.h&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for LabelSinglePropertyState&lt; audit &gt;:</div>
 <div class="dyncontent">
@@ -137,13 +137,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a675dcc2bdda01de5cde893e77a6116b1 inherit pub_attribs_structBaseState"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBaseState.html#a675dcc2bdda01de5cde893e77a6116b1">name</a></td></tr>
 <tr class="separator:a675dcc2bdda01de5cde893e77a6116b1 inherit pub_attribs_structBaseState"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;bool audit&gt;<br />
-struct LabelSinglePropertyState&lt; audit &gt;</h3>
-
-
-<p>Definition at line <a class="el" href="parse__example__json_8h_source.html#l00355">355</a> of file <a class="el" href="parse__example__json_8h_source.html">parse_example_json.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="afbe53d47d34646ef3502eea9cf8b15b6"></a>
 <div class="memitem">
 <div class="memproto">
@@ -167,9 +161,6 @@ template&lt;bool audit&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parse__example__json_8h_source.html#l00357">357</a> of file <a class="el" href="parse__example__json_8h_source.html">parse_example_json.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;: <a class="code" href="structBaseState.html">BaseState&lt;audit&gt;</a>(<span class="stringliteral">&quot;LabelSingleProperty&quot;</span>) {}</div><div class="ttc" id="structBaseState_html"><div class="ttname"><a href="structBaseState.html">BaseState</a></div><div class="ttdef"><b>Definition:</b> <a href="parse__example__json_8h_source.html#l00049">parse_example_json.h:49</a></div></div>
-</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -209,14 +200,6 @@ template&lt;bool audit&gt; </div>
 
 <p>Reimplemented from <a class="el" href="structBaseState.html#a140b04dbacb66c0d75a2402e3e75ebfc">BaseState&lt; audit &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="parse__example__json_8h_source.html#l00360">360</a> of file <a class="el" href="parse__example__json_8h_source.html">parse_example_json.h</a>.</p>
-
-<p>References <a class="el" href="parse__example__json_8h_source.html#l01266">Context&lt; audit &gt;::key</a>, <a class="el" href="parse__example__json_8h_source.html#l01267">Context&lt; audit &gt;::key_length</a>, <a class="el" href="parse__example__json_8h_source.html#l01286">Context&lt; audit &gt;::label_object_state</a>, and <a class="el" href="parse__example__json_8h_source.html#l01270">Context&lt; audit &gt;::previous_state</a>.</p>
-<div class="fragment"><div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;  {</div><div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <span class="comment">// skip &quot;_label_&quot;</span></div><div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    ctx.<a class="code" href="structContext.html#a0643ecc80c34c5d21230efca9c86f4eb">key</a> += 7;</div><div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    ctx.<a class="code" href="structContext.html#a54c7294c2b973d14c8e6dded158652e3">key_length</a> -= 7;</div><div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;</div><div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    <span class="keywordflow">if</span> (ctx.<a class="code" href="structContext.html#accb075644231b884ecab3d1301524c4b">label_object_state</a>.Float(ctx, v) == <span class="keyword">nullptr</span>)</div><div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div><div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;</div><div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    <span class="keywordflow">return</span> ctx.<a class="code" href="structContext.html#ac1b1241f0d58f1b71146c1675e4dbdd7">previous_state</a>;</div><div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;  }</div><div class="ttc" id="structContext_html_accb075644231b884ecab3d1301524c4b"><div class="ttname"><a href="structContext.html#accb075644231b884ecab3d1301524c4b">Context::label_object_state</a></div><div class="ttdeci">LabelObjectState&lt; audit &gt; label_object_state</div><div class="ttdef"><b>Definition:</b> <a href="parse__example__json_8h_source.html#l01286">parse_example_json.h:1286</a></div></div>
-<div class="ttc" id="structContext_html_a0643ecc80c34c5d21230efca9c86f4eb"><div class="ttname"><a href="structContext.html#a0643ecc80c34c5d21230efca9c86f4eb">Context::key</a></div><div class="ttdeci">const char * key</div><div class="ttdef"><b>Definition:</b> <a href="parse__example__json_8h_source.html#l01266">parse_example_json.h:1266</a></div></div>
-<div class="ttc" id="structContext_html_a54c7294c2b973d14c8e6dded158652e3"><div class="ttname"><a href="structContext.html#a54c7294c2b973d14c8e6dded158652e3">Context::key_length</a></div><div class="ttdeci">rapidjson::SizeType key_length</div><div class="ttdef"><b>Definition:</b> <a href="parse__example__json_8h_source.html#l01267">parse_example_json.h:1267</a></div></div>
-<div class="ttc" id="structContext_html_ac1b1241f0d58f1b71146c1675e4dbdd7"><div class="ttname"><a href="structContext.html#ac1b1241f0d58f1b71146c1675e4dbdd7">Context::previous_state</a></div><div class="ttdeci">BaseState&lt; audit &gt; * previous_state</div><div class="ttdef"><b>Definition:</b> <a href="parse__example__json_8h_source.html#l01270">parse_example_json.h:1270</a></div></div>
-</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a1f51690c5b79d88e026b9520b6c88c18"></a>
@@ -267,14 +250,6 @@ template&lt;bool audit&gt; </div>
 
 <p>Reimplemented from <a class="el" href="structBaseState.html#a9f777b2fc11076e6fc2106260459e2c3">BaseState&lt; audit &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="parse__example__json_8h_source.html#l00372">372</a> of file <a class="el" href="parse__example__json_8h_source.html">parse_example_json.h</a>.</p>
-
-<p>References <a class="el" href="parse__example__json_8h_source.html#l01266">Context&lt; audit &gt;::key</a>, <a class="el" href="parse__example__json_8h_source.html#l01267">Context&lt; audit &gt;::key_length</a>, <a class="el" href="parse__example__json_8h_source.html#l01286">Context&lt; audit &gt;::label_object_state</a>, and <a class="el" href="parse__example__json_8h_source.html#l01270">Context&lt; audit &gt;::previous_state</a>.</p>
-<div class="fragment"><div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;  {</div><div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    <span class="comment">// skip &quot;_label_&quot;</span></div><div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    ctx.<a class="code" href="structContext.html#a0643ecc80c34c5d21230efca9c86f4eb">key</a> += 7;</div><div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    ctx.<a class="code" href="structContext.html#a54c7294c2b973d14c8e6dded158652e3">key_length</a> -= 7;</div><div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;</div><div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    <span class="keywordflow">if</span> (ctx.<a class="code" href="structContext.html#accb075644231b884ecab3d1301524c4b">label_object_state</a>.String(ctx, str, len, copy) == <span class="keyword">nullptr</span>)</div><div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div><div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;</div><div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    <span class="keywordflow">return</span> ctx.<a class="code" href="structContext.html#ac1b1241f0d58f1b71146c1675e4dbdd7">previous_state</a>;</div><div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;  }</div><div class="ttc" id="structContext_html_accb075644231b884ecab3d1301524c4b"><div class="ttname"><a href="structContext.html#accb075644231b884ecab3d1301524c4b">Context::label_object_state</a></div><div class="ttdeci">LabelObjectState&lt; audit &gt; label_object_state</div><div class="ttdef"><b>Definition:</b> <a href="parse__example__json_8h_source.html#l01286">parse_example_json.h:1286</a></div></div>
-<div class="ttc" id="structContext_html_a0643ecc80c34c5d21230efca9c86f4eb"><div class="ttname"><a href="structContext.html#a0643ecc80c34c5d21230efca9c86f4eb">Context::key</a></div><div class="ttdeci">const char * key</div><div class="ttdef"><b>Definition:</b> <a href="parse__example__json_8h_source.html#l01266">parse_example_json.h:1266</a></div></div>
-<div class="ttc" id="structContext_html_a54c7294c2b973d14c8e6dded158652e3"><div class="ttname"><a href="structContext.html#a54c7294c2b973d14c8e6dded158652e3">Context::key_length</a></div><div class="ttdeci">rapidjson::SizeType key_length</div><div class="ttdef"><b>Definition:</b> <a href="parse__example__json_8h_source.html#l01267">parse_example_json.h:1267</a></div></div>
-<div class="ttc" id="structContext_html_ac1b1241f0d58f1b71146c1675e4dbdd7"><div class="ttname"><a href="structContext.html#ac1b1241f0d58f1b71146c1675e4dbdd7">Context::previous_state</a></div><div class="ttdeci">BaseState&lt; audit &gt; * previous_state</div><div class="ttdef"><b>Definition:</b> <a href="parse__example__json_8h_source.html#l01270">parse_example_json.h:1270</a></div></div>
-</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="ae992dee388d03285735308d40bb443b2"></a>
@@ -313,23 +288,15 @@ template&lt;bool audit&gt; </div>
 
 <p>Reimplemented from <a class="el" href="structBaseState.html#a8a9591990137eed19b75341657563f07">BaseState&lt; audit &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="parse__example__json_8h_source.html#l00384">384</a> of file <a class="el" href="parse__example__json_8h_source.html">parse_example_json.h</a>.</p>
-
-<p>References <a class="el" href="parse__example__json_8h_source.html#l01266">Context&lt; audit &gt;::key</a>, <a class="el" href="parse__example__json_8h_source.html#l01267">Context&lt; audit &gt;::key_length</a>, <a class="el" href="parse__example__json_8h_source.html#l01286">Context&lt; audit &gt;::label_object_state</a>, and <a class="el" href="parse__example__json_8h_source.html#l01270">Context&lt; audit &gt;::previous_state</a>.</p>
-<div class="fragment"><div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;  {</div><div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    <span class="comment">// skip &quot;_label_&quot;</span></div><div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    ctx.<a class="code" href="structContext.html#a0643ecc80c34c5d21230efca9c86f4eb">key</a> += 7;</div><div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    ctx.<a class="code" href="structContext.html#a54c7294c2b973d14c8e6dded158652e3">key_length</a> -= 7;</div><div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;</div><div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    <span class="keywordflow">if</span> (ctx.<a class="code" href="structContext.html#accb075644231b884ecab3d1301524c4b">label_object_state</a>.Uint(ctx, v) == <span class="keyword">nullptr</span>)</div><div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div><div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;</div><div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    <span class="keywordflow">return</span> ctx.<a class="code" href="structContext.html#ac1b1241f0d58f1b71146c1675e4dbdd7">previous_state</a>;</div><div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;  }</div><div class="ttc" id="structContext_html_accb075644231b884ecab3d1301524c4b"><div class="ttname"><a href="structContext.html#accb075644231b884ecab3d1301524c4b">Context::label_object_state</a></div><div class="ttdeci">LabelObjectState&lt; audit &gt; label_object_state</div><div class="ttdef"><b>Definition:</b> <a href="parse__example__json_8h_source.html#l01286">parse_example_json.h:1286</a></div></div>
-<div class="ttc" id="structContext_html_a0643ecc80c34c5d21230efca9c86f4eb"><div class="ttname"><a href="structContext.html#a0643ecc80c34c5d21230efca9c86f4eb">Context::key</a></div><div class="ttdeci">const char * key</div><div class="ttdef"><b>Definition:</b> <a href="parse__example__json_8h_source.html#l01266">parse_example_json.h:1266</a></div></div>
-<div class="ttc" id="structContext_html_a54c7294c2b973d14c8e6dded158652e3"><div class="ttname"><a href="structContext.html#a54c7294c2b973d14c8e6dded158652e3">Context::key_length</a></div><div class="ttdeci">rapidjson::SizeType key_length</div><div class="ttdef"><b>Definition:</b> <a href="parse__example__json_8h_source.html#l01267">parse_example_json.h:1267</a></div></div>
-<div class="ttc" id="structContext_html_ac1b1241f0d58f1b71146c1675e4dbdd7"><div class="ttname"><a href="structContext.html#ac1b1241f0d58f1b71146c1675e4dbdd7">Context::previous_state</a></div><div class="ttdeci">BaseState&lt; audit &gt; * previous_state</div><div class="ttdef"><b>Definition:</b> <a href="parse__example__json_8h_source.html#l01270">parse_example_json.h:1270</a></div></div>
-</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>/__w/vowpal_wabbit/vowpal_wabbit/vowpalwabbit/<a class="el" href="parse__example__json_8h_source.html">parse_example_json.h</a></li>
+<li>/__w/vowpal_wabbit/vowpal_wabbit/vowpalwabbit/<a class="el" href="parse__example__json_8h.html">parse_example_json.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 6 2020 15:29:11 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 7 2020 15:19:46 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

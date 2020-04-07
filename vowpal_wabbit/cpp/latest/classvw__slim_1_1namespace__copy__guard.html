@@ -97,7 +97,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="vw__slim__predict_8h_source.html">vw_slim_predict.h</a>&gt;</code></p>
+<p><code>#include &lt;vw_slim_predict.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -117,10 +117,7 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:aba38ad5b8998abea507c7dc4a2375447"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvw__slim_1_1namespace__copy__guard.html#aba38ad5b8998abea507c7dc4a2375447">_remove_ns</a></td></tr>
 <tr class="separator:aba38ad5b8998abea507c7dc4a2375447"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="vw__slim__predict_8h_source.html#l00181">181</a> of file <a class="el" href="vw__slim__predict_8h_source.html">vw_slim_predict.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="acb059717b330a9956ce0fae67d48f853"></a>
 <div class="memitem">
 <div class="memproto">
@@ -145,16 +142,6 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vw__slim__predict_8cc_source.html#l00016">16</a> of file <a class="el" href="vw__slim__predict_8cc_source.html">vw_slim_predict.cc</a>.</p>
-
-<p>References <a class="el" href="vw__slim__predict_8h_source.html#l00183">_ex</a>, <a class="el" href="vw__slim__predict_8h_source.html#l00184">_ns</a>, <a class="el" href="vw__slim__predict_8h_source.html#l00185">_remove_ns</a>, <a class="el" href="recall__tree_8cc_source.html#l00124">recall_tree_ns::find()</a>, <a class="el" href="example__predict_8h_source.html#l00038">example_predict::indices</a>, and <a class="el" href="v__array_8h_source.html#l00105">v_array&lt; T &gt;::push_back()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                                                                                : <a class="code" href="classvw__slim_1_1namespace__copy__guard.html#a673827644c320fb3a3f93aaf2de41583">_ex</a>(ex), <a class="code" href="classvw__slim_1_1namespace__copy__guard.html#a2bd534bf7e9ab710d62a751998aed36a">_ns</a>(ns)</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keywordflow">if</span> (std::end(<a class="code" href="classvw__slim_1_1namespace__copy__guard.html#a673827644c320fb3a3f93aaf2de41583">_ex</a>.<a class="code" href="structexample__predict.html#ab098b66eb3c24b20ca349b7908ef54f3">indices</a>) == <a class="code" href="namespacerecall__tree__ns.html#aec0c0432b49652639d9a0b3cb3db554e">std::find</a>(std::begin(<a class="code" href="classvw__slim_1_1namespace__copy__guard.html#a673827644c320fb3a3f93aaf2de41583">_ex</a>.<a class="code" href="structexample__predict.html#ab098b66eb3c24b20ca349b7908ef54f3">indices</a>), std::end(<a class="code" href="classvw__slim_1_1namespace__copy__guard.html#a673827644c320fb3a3f93aaf2de41583">_ex</a>.<a class="code" href="structexample__predict.html#ab098b66eb3c24b20ca349b7908ef54f3">indices</a>), ns))</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  {</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="classvw__slim_1_1namespace__copy__guard.html#a673827644c320fb3a3f93aaf2de41583">_ex</a>.<a class="code" href="structexample__predict.html#ab098b66eb3c24b20ca349b7908ef54f3">indices</a>.<a class="code" href="structv__array.html#afd6a4614f027ac5f786507552ce13f13">push_back</a>(<a class="code" href="classvw__slim_1_1namespace__copy__guard.html#a2bd534bf7e9ab710d62a751998aed36a">_ns</a>);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="classvw__slim_1_1namespace__copy__guard.html#aba38ad5b8998abea507c7dc4a2375447">_remove_ns</a> = <span class="keyword">true</span>;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  }</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keywordflow">else</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="classvw__slim_1_1namespace__copy__guard.html#aba38ad5b8998abea507c7dc4a2375447">_remove_ns</a> = <span class="keyword">false</span>;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div><div class="ttc" id="structexample__predict_html_ab098b66eb3c24b20ca349b7908ef54f3"><div class="ttname"><a href="structexample__predict.html#ab098b66eb3c24b20ca349b7908ef54f3">example_predict::indices</a></div><div class="ttdeci">v_array&lt; namespace_index &gt; indices</div><div class="ttdef"><b>Definition:</b> <a href="example__predict_8h_source.html#l00038">example_predict.h:38</a></div></div>
-<div class="ttc" id="classvw__slim_1_1namespace__copy__guard_html_a673827644c320fb3a3f93aaf2de41583"><div class="ttname"><a href="classvw__slim_1_1namespace__copy__guard.html#a673827644c320fb3a3f93aaf2de41583">vw_slim::namespace_copy_guard::_ex</a></div><div class="ttdeci">example_predict &amp; _ex</div><div class="ttdef"><b>Definition:</b> <a href="vw__slim__predict_8h_source.html#l00183">vw_slim_predict.h:183</a></div></div>
-<div class="ttc" id="classvw__slim_1_1namespace__copy__guard_html_a2bd534bf7e9ab710d62a751998aed36a"><div class="ttname"><a href="classvw__slim_1_1namespace__copy__guard.html#a2bd534bf7e9ab710d62a751998aed36a">vw_slim::namespace_copy_guard::_ns</a></div><div class="ttdeci">unsigned char _ns</div><div class="ttdef"><b>Definition:</b> <a href="vw__slim__predict_8h_source.html#l00184">vw_slim_predict.h:184</a></div></div>
-<div class="ttc" id="structv__array_html_afd6a4614f027ac5f786507552ce13f13"><div class="ttname"><a href="structv__array.html#afd6a4614f027ac5f786507552ce13f13">v_array::push_back</a></div><div class="ttdeci">void push_back(const T &amp;new_ele)</div><div class="ttdef"><b>Definition:</b> <a href="v__array_8h_source.html#l00105">v_array.h:105</a></div></div>
-<div class="ttc" id="namespacerecall__tree__ns_html_aec0c0432b49652639d9a0b3cb3db554e"><div class="ttname"><a href="namespacerecall__tree__ns.html#aec0c0432b49652639d9a0b3cb3db554e">recall_tree_ns::find</a></div><div class="ttdeci">node_pred * find(recall_tree &amp;b, uint32_t cn, example &amp;ec)</div><div class="ttdef"><b>Definition:</b> <a href="recall__tree_8cc_source.html#l00124">recall_tree.cc:124</a></div></div>
-<div class="ttc" id="classvw__slim_1_1namespace__copy__guard_html_aba38ad5b8998abea507c7dc4a2375447"><div class="ttname"><a href="classvw__slim_1_1namespace__copy__guard.html#aba38ad5b8998abea507c7dc4a2375447">vw_slim::namespace_copy_guard::_remove_ns</a></div><div class="ttdeci">bool _remove_ns</div><div class="ttdef"><b>Definition:</b> <a href="vw__slim__predict_8h_source.html#l00185">vw_slim_predict.h:185</a></div></div>
-</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a22d01b974d0f3c559eb5086ca065eb39"></a>
@@ -170,16 +157,6 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vw__slim__predict_8cc_source.html#l00027">27</a> of file <a class="el" href="vw__slim__predict_8cc_source.html">vw_slim_predict.cc</a>.</p>
-
-<p>References <a class="el" href="vw__slim__predict_8h_source.html#l00183">_ex</a>, <a class="el" href="vw__slim__predict_8h_source.html#l00184">_ns</a>, <a class="el" href="vw__slim__predict_8h_source.html#l00185">_remove_ns</a>, <a class="el" href="example__predict_8h_source.html#l00039">example_predict::feature_space</a>, <a class="el" href="example__predict_8h_source.html#l00038">example_predict::indices</a>, and <a class="el" href="v__array_8h_source.html#l00056">v_array&lt; T &gt;::pop()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <a class="code" href="classvw__slim_1_1namespace__copy__guard.html#a673827644c320fb3a3f93aaf2de41583">_ex</a>.<a class="code" href="structexample__predict.html#ab098b66eb3c24b20ca349b7908ef54f3">indices</a>.<a class="code" href="structv__array.html#aab57c8e60560b774715c19e95cf76c8f">pop</a>();</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classvw__slim_1_1namespace__copy__guard.html#aba38ad5b8998abea507c7dc4a2375447">_remove_ns</a>)</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="classvw__slim_1_1namespace__copy__guard.html#a673827644c320fb3a3f93aaf2de41583">_ex</a>.<a class="code" href="structexample__predict.html#a59f24cbe1603a24ae5812b7d262f3668">feature_space</a>[<a class="code" href="classvw__slim_1_1namespace__copy__guard.html#a2bd534bf7e9ab710d62a751998aed36a">_ns</a>].clear();</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div><div class="ttc" id="structexample__predict_html_ab098b66eb3c24b20ca349b7908ef54f3"><div class="ttname"><a href="structexample__predict.html#ab098b66eb3c24b20ca349b7908ef54f3">example_predict::indices</a></div><div class="ttdeci">v_array&lt; namespace_index &gt; indices</div><div class="ttdef"><b>Definition:</b> <a href="example__predict_8h_source.html#l00038">example_predict.h:38</a></div></div>
-<div class="ttc" id="structv__array_html_aab57c8e60560b774715c19e95cf76c8f"><div class="ttname"><a href="structv__array.html#aab57c8e60560b774715c19e95cf76c8f">v_array::pop</a></div><div class="ttdeci">T pop()</div><div class="ttdef"><b>Definition:</b> <a href="v__array_8h_source.html#l00056">v_array.h:56</a></div></div>
-<div class="ttc" id="classvw__slim_1_1namespace__copy__guard_html_a673827644c320fb3a3f93aaf2de41583"><div class="ttname"><a href="classvw__slim_1_1namespace__copy__guard.html#a673827644c320fb3a3f93aaf2de41583">vw_slim::namespace_copy_guard::_ex</a></div><div class="ttdeci">example_predict &amp; _ex</div><div class="ttdef"><b>Definition:</b> <a href="vw__slim__predict_8h_source.html#l00183">vw_slim_predict.h:183</a></div></div>
-<div class="ttc" id="classvw__slim_1_1namespace__copy__guard_html_a2bd534bf7e9ab710d62a751998aed36a"><div class="ttname"><a href="classvw__slim_1_1namespace__copy__guard.html#a2bd534bf7e9ab710d62a751998aed36a">vw_slim::namespace_copy_guard::_ns</a></div><div class="ttdeci">unsigned char _ns</div><div class="ttdef"><b>Definition:</b> <a href="vw__slim__predict_8h_source.html#l00184">vw_slim_predict.h:184</a></div></div>
-<div class="ttc" id="structexample__predict_html_a59f24cbe1603a24ae5812b7d262f3668"><div class="ttname"><a href="structexample__predict.html#a59f24cbe1603a24ae5812b7d262f3668">example_predict::feature_space</a></div><div class="ttdeci">std::array&lt; features, NUM_NAMESPACES &gt; feature_space</div><div class="ttdef"><b>Definition:</b> <a href="example__predict_8h_source.html#l00039">example_predict.h:39</a></div></div>
-<div class="ttc" id="classvw__slim_1_1namespace__copy__guard_html_aba38ad5b8998abea507c7dc4a2375447"><div class="ttname"><a href="classvw__slim_1_1namespace__copy__guard.html#aba38ad5b8998abea507c7dc4a2375447">vw_slim::namespace_copy_guard::_remove_ns</a></div><div class="ttdeci">bool _remove_ns</div><div class="ttdef"><b>Definition:</b> <a href="vw__slim__predict_8h_source.html#l00185">vw_slim_predict.h:185</a></div></div>
-</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -207,13 +184,6 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vw__slim__predict_8cc_source.html#l00034">34</a> of file <a class="el" href="vw__slim__predict_8cc_source.html">vw_slim_predict.cc</a>.</p>
-
-<p>References <a class="el" href="vw__slim__predict_8h_source.html#l00183">_ex</a>, <a class="el" href="vw__slim__predict_8h_source.html#l00184">_ns</a>, and <a class="el" href="example__predict_8h_source.html#l00039">example_predict::feature_space</a>.</p>
-<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="classvw__slim_1_1namespace__copy__guard.html#a673827644c320fb3a3f93aaf2de41583">_ex</a>.<a class="code" href="structexample__predict.html#a59f24cbe1603a24ae5812b7d262f3668">feature_space</a>[<a class="code" href="classvw__slim_1_1namespace__copy__guard.html#a2bd534bf7e9ab710d62a751998aed36a">_ns</a>].push_back(v, idx);</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div><div class="ttc" id="classvw__slim_1_1namespace__copy__guard_html_a673827644c320fb3a3f93aaf2de41583"><div class="ttname"><a href="classvw__slim_1_1namespace__copy__guard.html#a673827644c320fb3a3f93aaf2de41583">vw_slim::namespace_copy_guard::_ex</a></div><div class="ttdeci">example_predict &amp; _ex</div><div class="ttdef"><b>Definition:</b> <a href="vw__slim__predict_8h_source.html#l00183">vw_slim_predict.h:183</a></div></div>
-<div class="ttc" id="classvw__slim_1_1namespace__copy__guard_html_a2bd534bf7e9ab710d62a751998aed36a"><div class="ttname"><a href="classvw__slim_1_1namespace__copy__guard.html#a2bd534bf7e9ab710d62a751998aed36a">vw_slim::namespace_copy_guard::_ns</a></div><div class="ttdeci">unsigned char _ns</div><div class="ttdef"><b>Definition:</b> <a href="vw__slim__predict_8h_source.html#l00184">vw_slim_predict.h:184</a></div></div>
-<div class="ttc" id="structexample__predict_html_a59f24cbe1603a24ae5812b7d262f3668"><div class="ttname"><a href="structexample__predict.html#a59f24cbe1603a24ae5812b7d262f3668">example_predict::feature_space</a></div><div class="ttdeci">std::array&lt; features, NUM_NAMESPACES &gt; feature_space</div><div class="ttdef"><b>Definition:</b> <a href="example__predict_8h_source.html#l00039">example_predict.h:39</a></div></div>
-</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -235,10 +205,6 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vw__slim__predict_8h_source.html#l00183">183</a> of file <a class="el" href="vw__slim__predict_8h_source.html">vw_slim_predict.h</a>.</p>
-
-<p>Referenced by <a class="el" href="vw__slim__predict_8cc_source.html#l00034">feature_push_back()</a>, <a class="el" href="vw__slim__predict_8cc_source.html#l00016">namespace_copy_guard()</a>, and <a class="el" href="vw__slim__predict_8cc_source.html#l00027">~namespace_copy_guard()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a2bd534bf7e9ab710d62a751998aed36a"></a>
@@ -258,10 +224,6 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="vw__slim__predict_8h_source.html#l00184">184</a> of file <a class="el" href="vw__slim__predict_8h_source.html">vw_slim_predict.h</a>.</p>
-
-<p>Referenced by <a class="el" href="vw__slim__predict_8cc_source.html#l00034">feature_push_back()</a>, <a class="el" href="vw__slim__predict_8cc_source.html#l00016">namespace_copy_guard()</a>, and <a class="el" href="vw__slim__predict_8cc_source.html#l00027">~namespace_copy_guard()</a>.</p>
 
 </div>
 </div>
@@ -283,20 +245,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vw__slim__predict_8h_source.html#l00185">185</a> of file <a class="el" href="vw__slim__predict_8h_source.html">vw_slim_predict.h</a>.</p>
-
-<p>Referenced by <a class="el" href="vw__slim__predict_8cc_source.html#l00016">namespace_copy_guard()</a>, and <a class="el" href="vw__slim__predict_8cc_source.html#l00027">~namespace_copy_guard()</a>.</p>
-
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>/__w/vowpal_wabbit/vowpal_wabbit/vowpalwabbit/slim/include/<a class="el" href="vw__slim__predict_8h_source.html">vw_slim_predict.h</a></li>
-<li>/__w/vowpal_wabbit/vowpal_wabbit/vowpalwabbit/slim/src/<a class="el" href="vw__slim__predict_8cc_source.html">vw_slim_predict.cc</a></li>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>/__w/vowpal_wabbit/vowpal_wabbit/vowpalwabbit/slim/include/<a class="el" href="vw__slim__predict_8h.html">vw_slim_predict.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 6 2020 15:29:13 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 7 2020 15:19:46 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

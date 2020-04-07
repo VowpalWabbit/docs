@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['rollmethod',['RollMethod',['../namespaceSearch.html#af3199dc957a6ccb64d61d25c7b350696',1,'Search']]]
+  ['vw_5fpredict_5fexploration',['vw_predict_exploration',['../namespacevw__slim.html#a8b7398db5b92b2538fdd8e6593b746b3',1,'vw_slim']]]
 ];

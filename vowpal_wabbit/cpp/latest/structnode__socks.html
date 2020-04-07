@@ -93,7 +93,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="allreduce_8h_source.html">allreduce.h</a>&gt;</code></p>
+<p><code>#include &lt;allreduce.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -111,10 +111,7 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a7ed2657a18004dbca8ac585405efdd56"><td class="memItemLeft" align="right" valign="top"><a class="el" href="allreduce_8h.html#a30353f381f5fccbb956eea1f3a110b6c">socket_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnode__socks.html#a7ed2657a18004dbca8ac585405efdd56">children</a> [2]</td></tr>
 <tr class="separator:a7ed2657a18004dbca8ac585405efdd56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="allreduce_8h_source.html#l00050">50</a> of file <a class="el" href="allreduce_8h_source.html">allreduce.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ae8e6f67b527b7bf3182a322ca3e9330d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -136,14 +133,6 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="allreduce_8h_source.html#l00055">55</a> of file <a class="el" href="allreduce_8h_source.html">allreduce.h</a>.</p>
-
-<p>References <a class="el" href="allreduce_8h_source.html#l00041">CLOSESOCK</a>.</p>
-<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  {</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="structnode__socks.html#a8cad0619d240dff1372e89eedb2211ff">current_master</a> != <span class="stringliteral">&quot;&quot;</span>)</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    {</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="structnode__socks.html#a9107491c00d5f397f28b1bcf50093704">parent</a> != -1)</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="allreduce_8h.html#a35da5532d470440b1afd69338e9053a8">CLOSESOCK</a>(this-&gt;<a class="code" href="structnode__socks.html#a9107491c00d5f397f28b1bcf50093704">parent</a>);</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="structnode__socks.html#a7ed2657a18004dbca8ac585405efdd56">children</a>[0] != -1)</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <a class="code" href="allreduce_8h.html#a35da5532d470440b1afd69338e9053a8">CLOSESOCK</a>(this-&gt;<a class="code" href="structnode__socks.html#a7ed2657a18004dbca8ac585405efdd56">children</a>[0]);</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="structnode__socks.html#a7ed2657a18004dbca8ac585405efdd56">children</a>[1] != -1)</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="code" href="allreduce_8h.html#a35da5532d470440b1afd69338e9053a8">CLOSESOCK</a>(this-&gt;<a class="code" href="structnode__socks.html#a7ed2657a18004dbca8ac585405efdd56">children</a>[1]);</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  }</div><div class="ttc" id="structnode__socks_html_a7ed2657a18004dbca8ac585405efdd56"><div class="ttname"><a href="structnode__socks.html#a7ed2657a18004dbca8ac585405efdd56">node_socks::children</a></div><div class="ttdeci">socket_t children[2]</div><div class="ttdef"><b>Definition:</b> <a href="allreduce_8h_source.html#l00054">allreduce.h:54</a></div></div>
-<div class="ttc" id="structnode__socks_html_a9107491c00d5f397f28b1bcf50093704"><div class="ttname"><a href="structnode__socks.html#a9107491c00d5f397f28b1bcf50093704">node_socks::parent</a></div><div class="ttdeci">socket_t parent</div><div class="ttdef"><b>Definition:</b> <a href="allreduce_8h_source.html#l00053">allreduce.h:53</a></div></div>
-<div class="ttc" id="allreduce_8h_html_a35da5532d470440b1afd69338e9053a8"><div class="ttname"><a href="allreduce_8h.html#a35da5532d470440b1afd69338e9053a8">CLOSESOCK</a></div><div class="ttdeci">#define CLOSESOCK</div><div class="ttdef"><b>Definition:</b> <a href="allreduce_8h_source.html#l00041">allreduce.h:41</a></div></div>
-<div class="ttc" id="structnode__socks_html_a8cad0619d240dff1372e89eedb2211ff"><div class="ttname"><a href="structnode__socks.html#a8cad0619d240dff1372e89eedb2211ff">node_socks::current_master</a></div><div class="ttdeci">std::string current_master</div><div class="ttdef"><b>Definition:</b> <a href="allreduce_8h_source.html#l00052">allreduce.h:52</a></div></div>
-</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a96190bc88fd053a435d4610394d89590"></a>
@@ -167,9 +156,6 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="allreduce_8h_source.html#l00067">67</a> of file <a class="el" href="allreduce_8h_source.html">allreduce.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{ <a class="code" href="structnode__socks.html#a8cad0619d240dff1372e89eedb2211ff">current_master</a> = <span class="stringliteral">&quot;&quot;</span>; }</div><div class="ttc" id="structnode__socks_html_a8cad0619d240dff1372e89eedb2211ff"><div class="ttname"><a href="structnode__socks.html#a8cad0619d240dff1372e89eedb2211ff">node_socks::current_master</a></div><div class="ttdeci">std::string current_master</div><div class="ttdef"><b>Definition:</b> <a href="allreduce_8h_source.html#l00052">allreduce.h:52</a></div></div>
-</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -183,10 +169,6 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="allreduce_8h_source.html#l00054">54</a> of file <a class="el" href="allreduce_8h_source.html">allreduce.h</a>.</p>
-
-<p>Referenced by <a class="el" href="allreduce__sockets_8cc_source.html#l00112">AllReduceSockets::all_reduce_init()</a>, <a class="el" href="allreduce__sockets_8cc_source.html#l00312">AllReduceSockets::broadcast()</a>, <a class="el" href="allreduce__sockets_8cc_source.html#l00290">AllReduceSockets::pass_down()</a>, and <a class="el" href="allreduce_8h_source.html#l00206">AllReduceSockets::reduce()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a8cad0619d240dff1372e89eedb2211ff"></a>
@@ -198,10 +180,6 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="allreduce_8h_source.html#l00052">52</a> of file <a class="el" href="allreduce_8h_source.html">allreduce.h</a>.</p>
-
-<p>Referenced by <a class="el" href="allreduce_8h_source.html#l00298">AllReduceSockets::all_reduce()</a>, and <a class="el" href="allreduce__sockets_8cc_source.html#l00112">AllReduceSockets::all_reduce_init()</a>.</p>
 
 </div>
 </div>
@@ -215,19 +193,15 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="allreduce_8h_source.html#l00053">53</a> of file <a class="el" href="allreduce_8h_source.html">allreduce.h</a>.</p>
-
-<p>Referenced by <a class="el" href="allreduce__sockets_8cc_source.html#l00112">AllReduceSockets::all_reduce_init()</a>, <a class="el" href="allreduce__sockets_8cc_source.html#l00312">AllReduceSockets::broadcast()</a>, <a class="el" href="allreduce_8h_source.html#l00189">AllReduceSockets::pass_up()</a>, and <a class="el" href="allreduce_8h_source.html#l00206">AllReduceSockets::reduce()</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>/__w/vowpal_wabbit/vowpal_wabbit/vowpalwabbit/<a class="el" href="allreduce_8h_source.html">allreduce.h</a></li>
+<li>/__w/vowpal_wabbit/vowpal_wabbit/vowpalwabbit/<a class="el" href="allreduce_8h.html">allreduce.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 6 2020 15:29:12 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 7 2020 15:19:46 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

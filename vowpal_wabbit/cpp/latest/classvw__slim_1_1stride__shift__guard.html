@@ -97,7 +97,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="vw__slim__predict_8h_source.html">vw_slim_predict.h</a>&gt;</code></p>
+<p><code>#include &lt;vw_slim_predict.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -113,10 +113,7 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:aa186fbcea7441e795d2e83d8e29f88d9"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvw__slim_1_1stride__shift__guard.html#aa186fbcea7441e795d2e83d8e29f88d9">_shift</a></td></tr>
 <tr class="separator:aa186fbcea7441e795d2e83d8e29f88d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="vw__slim__predict_8h_source.html#l00204">204</a> of file <a class="el" href="vw__slim__predict_8h_source.html">vw_slim_predict.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a79a7b214482ab648e3627c99f9958388"></a>
 <div class="memitem">
 <div class="memproto">
@@ -141,15 +138,6 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vw__slim__predict_8cc_source.html#l00047">47</a> of file <a class="el" href="vw__slim__predict_8cc_source.html">vw_slim_predict.cc</a>.</p>
-
-<p>References <a class="el" href="vw__slim__predict_8h_source.html#l00206">_ex</a>, <a class="el" href="vw__slim__predict_8h_source.html#l00207">_shift</a>, <a class="el" href="cache_8cc_source.html#l00039">f</a>, <a class="el" href="example__predict_8h_source.html#l00039">example_predict::feature_space</a>, and <a class="el" href="example__predict_8h_source.html#l00038">example_predict::indices</a>.</p>
-<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                                                          : <a class="code" href="classvw__slim_1_1stride__shift__guard.html#a91287f493f96144f08884439450987a7">_ex</a>(ex), <a class="code" href="classvw__slim_1_1stride__shift__guard.html#aa186fbcea7441e795d2e83d8e29f88d9">_shift</a>(shift)</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classvw__slim_1_1stride__shift__guard.html#aa186fbcea7441e795d2e83d8e29f88d9">_shift</a> &gt; 0)</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> ns : <a class="code" href="classvw__slim_1_1stride__shift__guard.html#a91287f493f96144f08884439450987a7">_ex</a>.<a class="code" href="structexample__predict.html#ab098b66eb3c24b20ca349b7908ef54f3">indices</a>)</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; <a class="code" href="cache_8cc.html#af900396d7b72ff2a7002e8befe8cf8f1">f</a> : <a class="code" href="classvw__slim_1_1stride__shift__guard.html#a91287f493f96144f08884439450987a7">_ex</a>.<a class="code" href="structexample__predict.html#a59f24cbe1603a24ae5812b7d262f3668">feature_space</a>[ns]) <a class="code" href="cache_8cc.html#af900396d7b72ff2a7002e8befe8cf8f1">f</a>.index() &lt;&lt;= <a class="code" href="classvw__slim_1_1stride__shift__guard.html#aa186fbcea7441e795d2e83d8e29f88d9">_shift</a>;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div><div class="ttc" id="structexample__predict_html_ab098b66eb3c24b20ca349b7908ef54f3"><div class="ttname"><a href="structexample__predict.html#ab098b66eb3c24b20ca349b7908ef54f3">example_predict::indices</a></div><div class="ttdeci">v_array&lt; namespace_index &gt; indices</div><div class="ttdef"><b>Definition:</b> <a href="example__predict_8h_source.html#l00038">example_predict.h:38</a></div></div>
-<div class="ttc" id="classvw__slim_1_1stride__shift__guard_html_a91287f493f96144f08884439450987a7"><div class="ttname"><a href="classvw__slim_1_1stride__shift__guard.html#a91287f493f96144f08884439450987a7">vw_slim::stride_shift_guard::_ex</a></div><div class="ttdeci">example_predict &amp; _ex</div><div class="ttdef"><b>Definition:</b> <a href="vw__slim__predict_8h_source.html#l00206">vw_slim_predict.h:206</a></div></div>
-<div class="ttc" id="structexample__predict_html_a59f24cbe1603a24ae5812b7d262f3668"><div class="ttname"><a href="structexample__predict.html#a59f24cbe1603a24ae5812b7d262f3668">example_predict::feature_space</a></div><div class="ttdeci">std::array&lt; features, NUM_NAMESPACES &gt; feature_space</div><div class="ttdef"><b>Definition:</b> <a href="example__predict_8h_source.html#l00039">example_predict.h:39</a></div></div>
-<div class="ttc" id="cache_8cc_html_af900396d7b72ff2a7002e8befe8cf8f1"><div class="ttname"><a href="cache_8cc.html#af900396d7b72ff2a7002e8befe8cf8f1">f</a></div><div class="ttdeci">float f</div><div class="ttdef"><b>Definition:</b> <a href="cache_8cc_source.html#l00039">cache.cc:39</a></div></div>
-<div class="ttc" id="classvw__slim_1_1stride__shift__guard_html_aa186fbcea7441e795d2e83d8e29f88d9"><div class="ttname"><a href="classvw__slim_1_1stride__shift__guard.html#aa186fbcea7441e795d2e83d8e29f88d9">vw_slim::stride_shift_guard::_shift</a></div><div class="ttdeci">uint64_t _shift</div><div class="ttdef"><b>Definition:</b> <a href="vw__slim__predict_8h_source.html#l00207">vw_slim_predict.h:207</a></div></div>
-</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a3ffe0ed6488b88a0a81df2f4e82f880c"></a>
@@ -165,15 +153,6 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vw__slim__predict_8cc_source.html#l00054">54</a> of file <a class="el" href="vw__slim__predict_8cc_source.html">vw_slim_predict.cc</a>.</p>
-
-<p>References <a class="el" href="vw__slim__predict_8h_source.html#l00206">_ex</a>, <a class="el" href="vw__slim__predict_8h_source.html#l00207">_shift</a>, <a class="el" href="cache_8cc_source.html#l00039">f</a>, <a class="el" href="example__predict_8h_source.html#l00039">example_predict::feature_space</a>, and <a class="el" href="example__predict_8h_source.html#l00038">example_predict::indices</a>.</p>
-<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classvw__slim_1_1stride__shift__guard.html#aa186fbcea7441e795d2e83d8e29f88d9">_shift</a> &gt; 0)</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> ns : <a class="code" href="classvw__slim_1_1stride__shift__guard.html#a91287f493f96144f08884439450987a7">_ex</a>.<a class="code" href="structexample__predict.html#ab098b66eb3c24b20ca349b7908ef54f3">indices</a>)</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; <a class="code" href="cache_8cc.html#af900396d7b72ff2a7002e8befe8cf8f1">f</a> : <a class="code" href="classvw__slim_1_1stride__shift__guard.html#a91287f493f96144f08884439450987a7">_ex</a>.<a class="code" href="structexample__predict.html#a59f24cbe1603a24ae5812b7d262f3668">feature_space</a>[ns]) <a class="code" href="cache_8cc.html#af900396d7b72ff2a7002e8befe8cf8f1">f</a>.index() &gt;&gt;= <a class="code" href="classvw__slim_1_1stride__shift__guard.html#aa186fbcea7441e795d2e83d8e29f88d9">_shift</a>;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div><div class="ttc" id="structexample__predict_html_ab098b66eb3c24b20ca349b7908ef54f3"><div class="ttname"><a href="structexample__predict.html#ab098b66eb3c24b20ca349b7908ef54f3">example_predict::indices</a></div><div class="ttdeci">v_array&lt; namespace_index &gt; indices</div><div class="ttdef"><b>Definition:</b> <a href="example__predict_8h_source.html#l00038">example_predict.h:38</a></div></div>
-<div class="ttc" id="classvw__slim_1_1stride__shift__guard_html_a91287f493f96144f08884439450987a7"><div class="ttname"><a href="classvw__slim_1_1stride__shift__guard.html#a91287f493f96144f08884439450987a7">vw_slim::stride_shift_guard::_ex</a></div><div class="ttdeci">example_predict &amp; _ex</div><div class="ttdef"><b>Definition:</b> <a href="vw__slim__predict_8h_source.html#l00206">vw_slim_predict.h:206</a></div></div>
-<div class="ttc" id="structexample__predict_html_a59f24cbe1603a24ae5812b7d262f3668"><div class="ttname"><a href="structexample__predict.html#a59f24cbe1603a24ae5812b7d262f3668">example_predict::feature_space</a></div><div class="ttdeci">std::array&lt; features, NUM_NAMESPACES &gt; feature_space</div><div class="ttdef"><b>Definition:</b> <a href="example__predict_8h_source.html#l00039">example_predict.h:39</a></div></div>
-<div class="ttc" id="cache_8cc_html_af900396d7b72ff2a7002e8befe8cf8f1"><div class="ttname"><a href="cache_8cc.html#af900396d7b72ff2a7002e8befe8cf8f1">f</a></div><div class="ttdeci">float f</div><div class="ttdef"><b>Definition:</b> <a href="cache_8cc_source.html#l00039">cache.cc:39</a></div></div>
-<div class="ttc" id="classvw__slim_1_1stride__shift__guard_html_aa186fbcea7441e795d2e83d8e29f88d9"><div class="ttname"><a href="classvw__slim_1_1stride__shift__guard.html#aa186fbcea7441e795d2e83d8e29f88d9">vw_slim::stride_shift_guard::_shift</a></div><div class="ttdeci">uint64_t _shift</div><div class="ttdef"><b>Definition:</b> <a href="vw__slim__predict_8h_source.html#l00207">vw_slim_predict.h:207</a></div></div>
-</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -195,10 +174,6 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vw__slim__predict_8h_source.html#l00206">206</a> of file <a class="el" href="vw__slim__predict_8h_source.html">vw_slim_predict.h</a>.</p>
-
-<p>Referenced by <a class="el" href="vw__slim__predict_8cc_source.html#l00047">stride_shift_guard()</a>, and <a class="el" href="vw__slim__predict_8cc_source.html#l00054">~stride_shift_guard()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="aa186fbcea7441e795d2e83d8e29f88d9"></a>
@@ -219,20 +194,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vw__slim__predict_8h_source.html#l00207">207</a> of file <a class="el" href="vw__slim__predict_8h_source.html">vw_slim_predict.h</a>.</p>
-
-<p>Referenced by <a class="el" href="vw__slim__predict_8cc_source.html#l00047">stride_shift_guard()</a>, and <a class="el" href="vw__slim__predict_8cc_source.html#l00054">~stride_shift_guard()</a>.</p>
-
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>/__w/vowpal_wabbit/vowpal_wabbit/vowpalwabbit/slim/include/<a class="el" href="vw__slim__predict_8h_source.html">vw_slim_predict.h</a></li>
-<li>/__w/vowpal_wabbit/vowpal_wabbit/vowpalwabbit/slim/src/<a class="el" href="vw__slim__predict_8cc_source.html">vw_slim_predict.cc</a></li>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>/__w/vowpal_wabbit/vowpal_wabbit/vowpalwabbit/slim/include/<a class="el" href="vw__slim__predict_8h.html">vw_slim_predict.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 6 2020 15:29:13 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 7 2020 15:19:46 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

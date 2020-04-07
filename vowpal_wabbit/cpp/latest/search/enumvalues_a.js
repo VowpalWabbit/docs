@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['no_5frollout',['NO_ROLLOUT',['../namespaceSearch.html#af3199dc957a6ccb64d61d25c7b350696a5ca68ddf75c4e5b8e9c83c469aaf068d',1,'Search']]]
+  ['unset',['unset',['../namespaceCCB.html#a58ee4b1ece77de222418e9eb75203cf5a81619981df4dbaaaae9411f0ffc93734',1,'CCB::unset()'],['../namespaceslates.html#a4271b3e088dd8ceb0dd0217b03940e6ca3c749b0de2db63501a0e239cb358dab1',1,'slates::unset()']]]
 ];

@@ -93,7 +93,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="parser_8h_source.html">parser.h</a>&gt;</code></p>
+<p><code>#include &lt;parser.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -179,10 +179,7 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:abef922392d111bc5567e672df2d35e57"><td class="memItemLeft" align="right" valign="top">std::exception_ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structparser.html#abef922392d111bc5567e672df2d35e57">exc_ptr</a></td></tr>
 <tr class="separator:abef922392d111bc5567e672df2d35e57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="parser_8h_source.html#l00038">38</a> of file <a class="el" href="parser_8h_source.html">parser.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="acc4d5681ab3211487e3caa8bea347128"></a>
 <div class="memitem">
 <div class="memproto">
@@ -215,27 +212,6 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parser_8h_source.html#l00040">40</a> of file <a class="el" href="parser_8h_source.html">parser.h</a>.</p>
-
-<p>References <a class="el" href="simple__label_8cc_source.html#l00111">simple_label</a>.</p>
-<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      : <a class="code" href="structparser.html#a866b711c273827a26f7d01e5c8e4adc5">example_pool</a>{<a class="code" href="structparser.html#a8aa85c8ebd0bf6317c7296710c4d28be">ring_size</a>}</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      , <a class="code" href="structparser.html#ae0ff2de4eeab90f8fff9fd2da5966ffc">ready_parsed_examples</a>{<a class="code" href="structparser.html#a8aa85c8ebd0bf6317c7296710c4d28be">ring_size</a>}</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      , <a class="code" href="structparser.html#a8aa85c8ebd0bf6317c7296710c4d28be">ring_size</a>{<a class="code" href="structparser.html#a8aa85c8ebd0bf6317c7296710c4d28be">ring_size</a>}</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      , <a class="code" href="structparser.html#ae7c79dc035b14bfc367ee7434c593453">begin_parsed_examples</a>(0)</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      , <a class="code" href="structparser.html#a937aa6babf6854343eafa7566d34e031">end_parsed_examples</a>(0)</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      , <a class="code" href="structparser.html#a57c9f679c9e61169c79427eebbcc1f5a">finished_examples</a>(0)</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      , <a class="code" href="structparser.html#aaaaa465f88b0b230c26509cdabc09a9f">strict_parse</a>{strict_parse_}</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  {</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    this-&gt;<a class="code" href="structparser.html#a9518bd05717a9c026371ff1044768f96">input</a> = <span class="keyword">new</span> <a class="code" href="classio__buf.html">io_buf</a>{};</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    this-&gt;<a class="code" href="structparser.html#a5e81bbedc9c76dc6a1bad33e11563c77">output</a> = <span class="keyword">new</span> <a class="code" href="classio__buf.html">io_buf</a>{};</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    this-&gt;<a class="code" href="structparser.html#af15b434af656966700c94a50a92c4fcd">lp</a> = <a class="code" href="simple__label_8cc.html#ada71ba5e575accdee38d3be663304389">simple_label</a>;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">// Free parser must still be used for the following fields.</span></div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    this-&gt;<a class="code" href="structparser.html#a8c5a3019734fa8f4ec4ca924eb4ce4a7">words</a> = v_init&lt;VW::string_view&gt;();</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    this-&gt;<a class="code" href="structparser.html#a1f0cbc0630ed3485dcc8ed05ea69abef">parse_name</a> = v_init&lt;VW::string_view&gt;();</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    this-&gt;<a class="code" href="structparser.html#a876d657c6de5e05dbefaa7a3e354ca4e">gram_mask</a> = v_init&lt;size_t&gt;();</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    this-&gt;<a class="code" href="structparser.html#a2df792349ebce230daa93e1bc5eb6d48">ids</a> = v_init&lt;size_t&gt;();</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    this-&gt;<a class="code" href="structparser.html#af91f2a3bc35a0f226486f23071eb020e">counts</a> = v_init&lt;size_t&gt;();</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  }</div><div class="ttc" id="simple__label_8cc_html_ada71ba5e575accdee38d3be663304389"><div class="ttname"><a href="simple__label_8cc.html#ada71ba5e575accdee38d3be663304389">simple_label</a></div><div class="ttdeci">label_parser simple_label</div><div class="ttdef"><b>Definition:</b> <a href="simple__label_8cc_source.html#l00111">simple_label.cc:111</a></div></div>
-<div class="ttc" id="structparser_html_a866b711c273827a26f7d01e5c8e4adc5"><div class="ttname"><a href="structparser.html#a866b711c273827a26f7d01e5c8e4adc5">parser::example_pool</a></div><div class="ttdeci">VW::object_pool&lt; example, example_initializer &gt; example_pool</div><div class="ttdef"><b>Definition:</b> <a href="parser_8h_source.html#l00074">parser.h:74</a></div></div>
-<div class="ttc" id="structparser_html_a57c9f679c9e61169c79427eebbcc1f5a"><div class="ttname"><a href="structparser.html#a57c9f679c9e61169c79427eebbcc1f5a">parser::finished_examples</a></div><div class="ttdeci">std::atomic&lt; uint64_t &gt; finished_examples</div><div class="ttdef"><b>Definition:</b> <a href="parser_8h_source.html#l00093">parser.h:93</a></div></div>
-<div class="ttc" id="structparser_html_ae0ff2de4eeab90f8fff9fd2da5966ffc"><div class="ttname"><a href="structparser.html#ae0ff2de4eeab90f8fff9fd2da5966ffc">parser::ready_parsed_examples</a></div><div class="ttdeci">VW::ptr_queue&lt; example &gt; ready_parsed_examples</div><div class="ttdef"><b>Definition:</b> <a href="parser_8h_source.html#l00075">parser.h:75</a></div></div>
-<div class="ttc" id="structparser_html_af91f2a3bc35a0f226486f23071eb020e"><div class="ttname"><a href="structparser.html#af91f2a3bc35a0f226486f23071eb020e">parser::counts</a></div><div class="ttdeci">v_array&lt; size_t &gt; counts</div><div class="ttdef"><b>Definition:</b> <a href="parser_8h_source.html#l00105">parser.h:105</a></div></div>
-<div class="ttc" id="structparser_html_a9518bd05717a9c026371ff1044768f96"><div class="ttname"><a href="structparser.html#a9518bd05717a9c026371ff1044768f96">parser::input</a></div><div class="ttdeci">io_buf * input</div><div class="ttdef"><b>Definition:</b> <a href="parser_8h_source.html#l00077">parser.h:77</a></div></div>
-<div class="ttc" id="structparser_html_aaaaa465f88b0b230c26509cdabc09a9f"><div class="ttname"><a href="structparser.html#aaaaa465f88b0b230c26509cdabc09a9f">parser::strict_parse</a></div><div class="ttdeci">bool strict_parse</div><div class="ttdef"><b>Definition:</b> <a href="parser_8h_source.html#l00118">parser.h:118</a></div></div>
-<div class="ttc" id="structparser_html_a2df792349ebce230daa93e1bc5eb6d48"><div class="ttname"><a href="structparser.html#a2df792349ebce230daa93e1bc5eb6d48">parser::ids</a></div><div class="ttdeci">v_array&lt; size_t &gt; ids</div><div class="ttdef"><b>Definition:</b> <a href="parser_8h_source.html#l00104">parser.h:104</a></div></div>
-<div class="ttc" id="structparser_html_a876d657c6de5e05dbefaa7a3e354ca4e"><div class="ttname"><a href="structparser.html#a876d657c6de5e05dbefaa7a3e354ca4e">parser::gram_mask</a></div><div class="ttdeci">v_array&lt; size_t &gt; gram_mask</div><div class="ttdef"><b>Definition:</b> <a href="parser_8h_source.html#l00102">parser.h:102</a></div></div>
-<div class="ttc" id="structparser_html_a8aa85c8ebd0bf6317c7296710c4d28be"><div class="ttname"><a href="structparser.html#a8aa85c8ebd0bf6317c7296710c4d28be">parser::ring_size</a></div><div class="ttdeci">const size_t ring_size</div><div class="ttdef"><b>Definition:</b> <a href="parser_8h_source.html#l00090">parser.h:90</a></div></div>
-<div class="ttc" id="classio__buf_html"><div class="ttname"><a href="classio__buf.html">io_buf</a></div><div class="ttdef"><b>Definition:</b> <a href="io__buf_8h_source.html#l00052">io_buf.h:52</a></div></div>
-<div class="ttc" id="structparser_html_a5e81bbedc9c76dc6a1bad33e11563c77"><div class="ttname"><a href="structparser.html#a5e81bbedc9c76dc6a1bad33e11563c77">parser::output</a></div><div class="ttdeci">io_buf * output</div><div class="ttdef"><b>Definition:</b> <a href="parser_8h_source.html#l00085">parser.h:85</a></div></div>
-<div class="ttc" id="structparser_html_ae7c79dc035b14bfc367ee7434c593453"><div class="ttname"><a href="structparser.html#ae7c79dc035b14bfc367ee7434c593453">parser::begin_parsed_examples</a></div><div class="ttdeci">std::atomic&lt; uint64_t &gt; begin_parsed_examples</div><div class="ttdef"><b>Definition:</b> <a href="parser_8h_source.html#l00091">parser.h:91</a></div></div>
-<div class="ttc" id="structparser_html_a937aa6babf6854343eafa7566d34e031"><div class="ttname"><a href="structparser.html#a937aa6babf6854343eafa7566d34e031">parser::end_parsed_examples</a></div><div class="ttdeci">std::atomic&lt; uint64_t &gt; end_parsed_examples</div><div class="ttdef"><b>Definition:</b> <a href="parser_8h_source.html#l00092">parser.h:92</a></div></div>
-<div class="ttc" id="structparser_html_a8c5a3019734fa8f4ec4ca924eb4ce4a7"><div class="ttname"><a href="structparser.html#a8c5a3019734fa8f4ec4ca924eb4ce4a7">parser::words</a></div><div class="ttdeci">v_array&lt; VW::string_view &gt; words</div><div class="ttdef"><b>Definition:</b> <a href="parser_8h_source.html#l00072">parser.h:72</a></div></div>
-<div class="ttc" id="structparser_html_a1f0cbc0630ed3485dcc8ed05ea69abef"><div class="ttname"><a href="structparser.html#a1f0cbc0630ed3485dcc8ed05ea69abef">parser::parse_name</a></div><div class="ttdeci">v_array&lt; VW::string_view &gt; parse_name</div><div class="ttdef"><b>Definition:</b> <a href="parser_8h_source.html#l00111">parser.h:111</a></div></div>
-<div class="ttc" id="structparser_html_af15b434af656966700c94a50a92c4fcd"><div class="ttname"><a href="structparser.html#af15b434af656966700c94a50a92c4fcd">parser::lp</a></div><div class="ttdeci">label_parser lp</div><div class="ttdef"><b>Definition:</b> <a href="parser_8h_source.html#l00113">parser.h:113</a></div></div>
-</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="acdd4eb1b51b876954c2f7605f65388ce"></a>
@@ -259,10 +235,6 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parser_8h_source.html#l00061">61</a> of file <a class="el" href="parser_8h_source.html">parser.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  {</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">delete</span> <a class="code" href="structparser.html#a9518bd05717a9c026371ff1044768f96">input</a>;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">delete</span> <a class="code" href="structparser.html#a5e81bbedc9c76dc6a1bad33e11563c77">output</a>;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  }</div><div class="ttc" id="structparser_html_a9518bd05717a9c026371ff1044768f96"><div class="ttname"><a href="structparser.html#a9518bd05717a9c026371ff1044768f96">parser::input</a></div><div class="ttdeci">io_buf * input</div><div class="ttdef"><b>Definition:</b> <a href="parser_8h_source.html#l00077">parser.h:77</a></div></div>
-<div class="ttc" id="structparser_html_a5e81bbedc9c76dc6a1bad33e11563c77"><div class="ttname"><a href="structparser.html#a5e81bbedc9c76dc6a1bad33e11563c77">parser::output</a></div><div class="ttdeci">io_buf * output</div><div class="ttdef"><b>Definition:</b> <a href="parser_8h_source.html#l00085">parser.h:85</a></div></div>
-</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a5264db72f6ed8ba82c078af43e3bfab2"></a>
@@ -325,10 +297,6 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parser_8h_source.html#l00081">81</a> of file <a class="el" href="parser_8h_source.html">parser.h</a>.</p>
-
-<p>Referenced by <a class="el" href="parser_8cc_source.html#l00327">enable_sources()</a>, <a class="el" href="lda__core_8cc_source.html#l01324">lda_setup()</a>, <a class="el" href="parse__args_8cc_source.html#l01313">parse_args()</a>, <a class="el" href="parser_8cc_source.html#l00886">VW::parse_example_label()</a>, <a class="el" href="cache_8cc_source.html#l00064">read_cached_features()</a>, <a class="el" href="parse__args_8cc_source.html#l01779">VW::seed_vw_model()</a>, and <a class="el" href="parse__example_8cc_source.html#l00480">substring_to_example()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="abb101905005cba3160d0a78339c2d302"></a>
@@ -340,10 +308,6 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="parser_8h_source.html#l00115">115</a> of file <a class="el" href="parser_8h_source.html">parser.h</a>.</p>
-
-<p>Referenced by <a class="el" href="parser_8cc_source.html#l00327">enable_sources()</a>.</p>
 
 </div>
 </div>
@@ -357,10 +321,6 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parser_8h_source.html#l00091">91</a> of file <a class="el" href="parser_8h_source.html">parser.h</a>.</p>
-
-<p>Referenced by <a class="el" href="parser_8cc_source.html#l00906">VW::clean_example()</a>, <a class="el" href="parser_8cc_source.html#l00703">VW::get_unused_example()</a>, and <a class="el" href="parser_8cc_source.html#l00793">VW::new_unused_example()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a42519589c5014a70b532ce88d3b243ef"></a>
@@ -372,10 +332,6 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="parser_8h_source.html#l00108">108</a> of file <a class="el" href="parser_8h_source.html">parser.h</a>.</p>
-
-<p>Referenced by <a class="el" href="parser_8cc_source.html#l00327">enable_sources()</a>, and <a class="el" href="parser_8cc_source.html#l00131">reset_source()</a>.</p>
 
 </div>
 </div>
@@ -389,10 +345,6 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parser_8h_source.html#l00105">105</a> of file <a class="el" href="parser_8h_source.html">parser.h</a>.</p>
-
-<p>Referenced by <a class="el" href="parser_8cc_source.html#l01037">free_parser()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a864a4006507e401f9794ef6ebaa7e24c"></a>
@@ -404,10 +356,6 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="parser_8h_source.html#l00116">116</a> of file <a class="el" href="parser_8h_source.html">parser.h</a>.</p>
-
-<p>Referenced by <a class="el" href="parser_8cc_source.html#l00327">enable_sources()</a>, and <a class="el" href="parse__example__json_8h_source.html#l01524">parse_line_json()</a>.</p>
 
 </div>
 </div>
@@ -421,10 +369,6 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parser_8h_source.html#l00101">101</a> of file <a class="el" href="parser_8h_source.html">parser.h</a>.</p>
-
-<p>Referenced by <a class="el" href="parser_8cc_source.html#l00610">lock_done()</a>, and <a class="el" href="parse__dispatch__loop_8h_source.html#l00011">parse_dispatch()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a751fa0c146800b9ab19e9db245d16994"></a>
@@ -436,10 +380,6 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="parser_8h_source.html#l00095">95</a> of file <a class="el" href="parser_8h_source.html">parser.h</a>.</p>
-
-<p>Referenced by <a class="el" href="csoaa_8cc_source.html#l00783">CSOAA::csldf_setup()</a>, <a class="el" href="search_8cc_source.html#l02676">Search::setup()</a>, and <a class="el" href="parser_8cc_source.html#l00716">VW::setup_example()</a>.</p>
 
 </div>
 </div>
@@ -453,10 +393,6 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parser_8h_source.html#l00092">92</a> of file <a class="el" href="parser_8h_source.html">parser.h</a>.</p>
-
-<p>Referenced by <a class="el" href="learner_8cc_source.html#l00288">LEARNER::generic_driver_onethread()</a>, <a class="el" href="parser_8cc_source.html#l00831">VW::import_example()</a>, <a class="el" href="parse__example_8cc_source.html#l00075">TC_parser&lt; audit &gt;::parserWarning()</a>, <a class="el" href="parser_8cc_source.html#l00801">VW::read_example()</a>, <a class="el" href="parser_8cc_source.html#l00131">reset_source()</a>, <a class="el" href="parser_8cc_source.html#l00716">VW::setup_example()</a>, and <a class="el" href="parser_8cc_source.html#l00934">thread_dispatch()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a866b711c273827a26f7d01e5c8e4adc5"></a>
@@ -468,10 +404,6 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="parser_8h_source.html#l00074">74</a> of file <a class="el" href="parser_8h_source.html">parser.h</a>.</p>
-
-<p>Referenced by <a class="el" href="parser_8cc_source.html#l00906">VW::clean_example()</a>, <a class="el" href="parser_8cc_source.html#l01037">free_parser()</a>, <a class="el" href="parser_8cc_source.html#l00703">VW::get_unused_example()</a>, and <a class="el" href="parser_8cc_source.html#l01069">VW::is_ring_example()</a>.</p>
 
 </div>
 </div>
@@ -485,10 +417,6 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parser_8h_source.html#l00119">119</a> of file <a class="el" href="parser_8h_source.html">parser.h</a>.</p>
-
-<p>Referenced by <a class="el" href="parse__dispatch__loop_8h_source.html#l00011">parse_dispatch()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="ad53b04588524b349d94531588be79b1f"></a>
@@ -500,8 +428,6 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="parser_8h_source.html#l00106">106</a> of file <a class="el" href="parser_8h_source.html">parser.h</a>.</p>
 
 </div>
 </div>
@@ -515,10 +441,6 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parser_8h_source.html#l00093">93</a> of file <a class="el" href="parser_8h_source.html">parser.h</a>.</p>
-
-<p>Referenced by <a class="el" href="parser_8cc_source.html#l00918">VW::finish_example()</a>, and <a class="el" href="parser_8cc_source.html#l00131">reset_source()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a876d657c6de5e05dbefaa7a3e354ca4e"></a>
@@ -530,10 +452,6 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="parser_8h_source.html#l00102">102</a> of file <a class="el" href="parser_8h_source.html">parser.h</a>.</p>
-
-<p>Referenced by <a class="el" href="parser_8cc_source.html#l01037">free_parser()</a>, and <a class="el" href="parser_8cc_source.html#l00669">generateGrams()</a>.</p>
 
 </div>
 </div>
@@ -547,10 +465,6 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parser_8h_source.html#l00083">83</a> of file <a class="el" href="parser_8h_source.html">parser.h</a>.</p>
-
-<p>Referenced by <a class="el" href="parse__args_8cc_source.html#l00498">VW::are_features_compatible()</a>, <a class="el" href="vw_8h_source.html#l00164">VW::hash_feature()</a>, <a class="el" href="vw_8h_source.html#l00174">VW::hash_feature_cstr()</a>, <a class="el" href="vw_8h_source.html#l00151">VW::hash_space()</a>, <a class="el" href="vw_8h_source.html#l00159">VW::hash_space_cstr()</a>, <a class="el" href="parse__example_8cc_source.html#l00162">TC_parser&lt; audit &gt;::maybeFeature()</a>, <a class="el" href="parse__example_8cc_source.html#l00366">TC_parser&lt; audit &gt;::nameSpaceInfo()</a>, and <a class="el" href="parse__args_8cc_source.html#l00598">parse_feature_tweaks()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a2df792349ebce230daa93e1bc5eb6d48"></a>
@@ -562,8 +476,6 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="parser_8h_source.html#l00104">104</a> of file <a class="el" href="parser_8h_source.html">parser.h</a>.</p>
 
 </div>
 </div>
@@ -577,10 +489,6 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parser_8h_source.html#l00094">94</a> of file <a class="el" href="parser_8h_source.html">parser.h</a>.</p>
-
-<p>Referenced by <a class="el" href="parser_8cc_source.html#l00683">end_pass_example()</a>, <a class="el" href="parse__dispatch__loop_8h_source.html#l00011">parse_dispatch()</a>, and <a class="el" href="parser_8cc_source.html#l00716">VW::setup_example()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a9518bd05717a9c026371ff1044768f96"></a>
@@ -592,10 +500,6 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="parser_8h_source.html#l00077">77</a> of file <a class="el" href="parser_8h_source.html">parser.h</a>.</p>
-
-<p>Referenced by <a class="el" href="parser_8cc_source.html#l00327">enable_sources()</a>, <a class="el" href="parser_8cc_source.html#l00221">finalize_source()</a>, <a class="el" href="parser_8cc_source.html#l00270">parse_cache()</a>, <a class="el" href="cache_8cc_source.html#l00064">read_cached_features()</a>, <a class="el" href="parse__example_8cc_source.html#l00014">read_features()</a>, <a class="el" href="parser_8cc_source.html#l00131">reset_source()</a>, and <a class="el" href="parser_8cc_source.html#l00087">set_compressed()</a>.</p>
 
 </div>
 </div>
@@ -609,10 +513,6 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parser_8h_source.html#l00107">107</a> of file <a class="el" href="parser_8h_source.html">parser.h</a>.</p>
-
-<p>Referenced by <a class="el" href="parser_8cc_source.html#l00327">enable_sources()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="af15b434af656966700c94a50a92c4fcd"></a>
@@ -624,10 +524,6 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="parser_8h_source.html#l00113">113</a> of file <a class="el" href="parser_8h_source.html">parser.h</a>.</p>
-
-<p>Referenced by <a class="el" href="cb__adf_8cc_source.html#l00478">cb_adf_setup()</a>, <a class="el" href="cb__algs_8cc_source.html#l00132">cb_algs_setup()</a>, <a class="el" href="cbify_8cc_source.html#l00460">cbifyldf_setup()</a>, <a class="el" href="conditional__contextual__bandit_8cc_source.html#l00601">CCB::ccb_explore_adf_setup()</a>, <a class="el" href="cs__active_8cc_source.html#l00313">cs_active_setup()</a>, <a class="el" href="csoaa_8cc_source.html#l00783">CSOAA::csldf_setup()</a>, <a class="el" href="csoaa_8cc_source.html#l00114">CSOAA::csoaa_setup()</a>, <a class="el" href="parser_8cc_source.html#l00683">end_pass_example()</a>, <a class="el" href="parse__example__json_8h_source.html#l00873">DefaultState&lt; audit &gt;::EndObject()</a>, <a class="el" href="explore__eval_8cc_source.html#l00190">explore_eval_setup()</a>, <a class="el" href="parser_8cc_source.html#l01037">free_parser()</a>, <a class="el" href="ezexample_8h_source.html#l00043">ezexample::get_new_example()</a>, <a class="el" href="parser_8cc_source.html#l00831">VW::import_example()</a>, <a class="el" href="parse__example__json_8h_source.html#l01387">VWReaderHandler&lt; audit &gt;::init()</a>, <a class="el" href="learner_8h_source.html#l00446">LEARNER::init_cost_sensitive_learner()</a>, <a class="el" href="learner_8h_source.html#l00433">LEARNER::init_multiclass_learner()</a>, <a class="el" href="lda__core_8cc_source.html#l01324">lda_setup()</a>, <a class="el" href="sender_8cc_source.html#l00083">learn()</a>, <a class="el" href="memory__tree_8cc_source.html#l01229">memory_tree_setup()</a>, <a class="el" href="ezexample_8h_source.html#l00230">ezexample::mini_setup_example()</a>, <a class="el" href="multilabel__oaa_8cc_source.html#l00056">multilabel_oaa_setup()</a>, <a class="el" href="mwt_8cc_source.html#l00233">mwt_setup()</a>, <a class="el" href="parser_8cc_source.html#l00793">VW::new_unused_example()</a>, <a class="el" href="parse__args_8cc_source.html#l00157">parse_dictionary_argument()</a>, <a class="el" href="parse__dispatch__loop_8h_source.html#l00011">parse_dispatch()</a>, <a class="el" href="parser_8cc_source.html#l00886">VW::parse_example_label()</a>, <a class="el" href="cache_8cc_source.html#l00064">read_cached_features()</a>, <a class="el" href="search_8cc_source.html#l03084">Search::search::set_label_parser()</a>, <a class="el" href="cb__explore__adf__softmax_8cc_source.html#l00056">VW::cb_explore_adf::softmax::setup()</a>, <a class="el" href="cb__explore__adf__greedy_8cc_source.html#l00070">VW::cb_explore_adf::greedy::setup()</a>, <a class="el" href="cb__explore__adf__first_8cc_source.html#l00074">VW::cb_explore_adf::first::setup()</a>, <a class="el" href="cb__explore__adf__bag_8cc_source.html#l00118">VW::cb_explore_adf::bag::setup()</a>, <a class="el" href="cb__explore__adf__cover_8cc_source.html#l00178">VW::cb_explore_adf::cover::setup()</a>, <a class="el" href="cb__explore__adf__regcb_8cc_source.html#l00233">VW::cb_explore_adf::regcb::setup()</a>, <a class="el" href="search_8cc_source.html#l02676">Search::setup()</a>, <a class="el" href="parser_8cc_source.html#l00716">VW::setup_example()</a>, <a class="el" href="slates_8cc_source.html#l00237">slates::slates_setup()</a>, <a class="el" href="parse__example__json_8h_source.html#l00189">LabelObjectState&lt; audit &gt;::StartObject()</a>, <a class="el" href="parse__example__json_8h_source.html#l00527">MultiState&lt; audit &gt;::StartObject()</a>, <a class="el" href="parse__example__json_8h_source.html#l00572">SlotsState&lt; audit &gt;::StartObject()</a>, <a class="el" href="parse__example_8cc_source.html#l00480">substring_to_example()</a>, and <a class="el" href="ezexample_8h_source.html#l00273">ezexample::train()</a>.</p>
 
 </div>
 </div>
@@ -641,10 +537,6 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parser_8h_source.html#l00109">109</a> of file <a class="el" href="parser_8h_source.html">parser.h</a>.</p>
-
-<p>Referenced by <a class="el" href="parser_8cc_source.html#l00327">enable_sources()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a5e81bbedc9c76dc6a1bad33e11563c77"></a>
@@ -656,10 +548,6 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="parser_8h_source.html#l00085">85</a> of file <a class="el" href="parser_8h_source.html">parser.h</a>.</p>
-
-<p>Referenced by <a class="el" href="parser_8cc_source.html#l00221">finalize_source()</a>, <a class="el" href="parser_8cc_source.html#l01037">free_parser()</a>, <a class="el" href="parser_8cc_source.html#l00238">make_write_cache()</a>, <a class="el" href="parser_8cc_source.html#l00270">parse_cache()</a>, <a class="el" href="parser_8cc_source.html#l00131">reset_source()</a>, <a class="el" href="parser_8cc_source.html#l00087">set_compressed()</a>, and <a class="el" href="parser_8cc_source.html#l00716">VW::setup_example()</a>.</p>
 
 </div>
 </div>
@@ -673,10 +561,6 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parser_8h_source.html#l00099">99</a> of file <a class="el" href="parser_8h_source.html">parser.h</a>.</p>
-
-<p>Referenced by <a class="el" href="parser_8cc_source.html#l00918">VW::finish_example()</a>, and <a class="el" href="parser_8cc_source.html#l00131">reset_source()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a62c95d8b49357d7a9251d07d8b6f383f"></a>
@@ -688,10 +572,6 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="parser_8h_source.html#l00098">98</a> of file <a class="el" href="parser_8h_source.html">parser.h</a>.</p>
-
-<p>Referenced by <a class="el" href="parser_8cc_source.html#l00918">VW::finish_example()</a>, and <a class="el" href="parser_8cc_source.html#l00131">reset_source()</a>.</p>
 
 </div>
 </div>
@@ -705,10 +585,6 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parser_8h_source.html#l00111">111</a> of file <a class="el" href="parser_8h_source.html">parser.h</a>.</p>
-
-<p>Referenced by <a class="el" href="parse__args_8cc_source.html#l01831">VW::finish()</a>, <a class="el" href="multilabel_8cc_source.html#l00096">MULTILABEL::parse_label()</a>, <a class="el" href="cb_8cc_source.html#l00111">CB::parse_label()</a>, <a class="el" href="cost__sensitive_8cc_source.html#l00124">COST_SENSITIVE::parse_label()</a>, <a class="el" href="slates__label_8cc_source.html#l00130">slates::parse_label()</a>, and <a class="el" href="ccb__label_8cc_source.html#l00291">CCB::parse_label()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="aac43955e9fbd3aee4e1e1c72a606334b"></a>
@@ -720,10 +596,6 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="parser_8h_source.html#l00078">78</a> of file <a class="el" href="parser_8h_source.html">parser.h</a>.</p>
-
-<p>Referenced by <a class="el" href="parser_8cc_source.html#l00327">enable_sources()</a>, <a class="el" href="parser_8cc_source.html#l00270">parse_cache()</a>, <a class="el" href="parse__dispatch__loop_8h_source.html#l00011">parse_dispatch()</a>, and <a class="el" href="parser_8cc_source.html#l00131">reset_source()</a>.</p>
 
 </div>
 </div>
@@ -737,10 +609,6 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parser_8h_source.html#l00075">75</a> of file <a class="el" href="parser_8h_source.html">parser.h</a>.</p>
-
-<p>Referenced by <a class="el" href="parser_8cc_source.html#l01037">free_parser()</a>, <a class="el" href="parser_8cc_source.html#l00947">VW::get_example()</a>, <a class="el" href="parser_8cc_source.html#l00610">lock_done()</a>, <a class="el" href="parser_8cc_source.html#l00131">reset_source()</a>, and <a class="el" href="parser_8cc_source.html#l00934">thread_dispatch()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a31e92900e2b124f96f0b21a0e5303bed"></a>
@@ -752,10 +620,6 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="parser_8h_source.html#l00084">84</a> of file <a class="el" href="parser_8h_source.html">parser.h</a>.</p>
-
-<p>Referenced by <a class="el" href="parser_8cc_source.html#l00327">enable_sources()</a>, <a class="el" href="parser_8cc_source.html#l00270">parse_cache()</a>, and <a class="el" href="parser_8cc_source.html#l00131">reset_source()</a>.</p>
 
 </div>
 </div>
@@ -769,10 +633,6 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parser_8h_source.html#l00090">90</a> of file <a class="el" href="parser_8h_source.html">parser.h</a>.</p>
-
-<p>Referenced by <a class="el" href="lda__core_8cc_source.html#l01324">lda_setup()</a>, <a class="el" href="sender_8cc_source.html#l00083">learn()</a>, <a class="el" href="sender_8cc_source.html#l00069">receive_result()</a>, and <a class="el" href="sender_8cc_source.html#l00104">sender_setup()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a5ae94d4ac8f7d070a13fa77800b73b49"></a>
@@ -784,10 +644,6 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="parser_8h_source.html#l00087">87</a> of file <a class="el" href="parser_8h_source.html">parser.h</a>.</p>
-
-<p>Referenced by <a class="el" href="parse__args_8cc_source.html#l01013">parse_example_tweaks()</a>, and <a class="el" href="parser_8cc_source.html#l00716">VW::setup_example()</a>.</p>
 
 </div>
 </div>
@@ -801,10 +657,6 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parser_8h_source.html#l00088">88</a> of file <a class="el" href="parser_8h_source.html">parser.h</a>.</p>
-
-<p>Referenced by <a class="el" href="parser_8cc_source.html#l00327">enable_sources()</a>, <a class="el" href="parser_8cc_source.html#l00270">parse_cache()</a>, and <a class="el" href="cache_8cc_source.html#l00064">read_cached_features()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="aaaaa465f88b0b230c26509cdabc09a9f"></a>
@@ -816,10 +668,6 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="parser_8h_source.html#l00118">118</a> of file <a class="el" href="parser_8h_source.html">parser.h</a>.</p>
-
-<p>Referenced by <a class="el" href="lda__core_8cc_source.html#l01324">lda_setup()</a>, and <a class="el" href="parse__example_8cc_source.html#l00075">TC_parser&lt; audit &gt;::parserWarning()</a>.</p>
 
 </div>
 </div>
@@ -833,10 +681,6 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parser_8h_source.html#l00079">79</a> of file <a class="el" href="parser_8h_source.html">parser.h</a>.</p>
-
-<p>Referenced by <a class="el" href="parser_8cc_source.html#l00327">enable_sources()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a8c5a3019734fa8f4ec4ca924eb4ce4a7"></a>
@@ -848,10 +692,6 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="parser_8h_source.html#l00072">72</a> of file <a class="el" href="parser_8h_source.html">parser.h</a>.</p>
-
-<p>Referenced by <a class="el" href="parser_8cc_source.html#l01037">free_parser()</a>, and <a class="el" href="parse__example_8cc_source.html#l00480">substring_to_example()</a>.</p>
 
 </div>
 </div>
@@ -865,19 +705,15 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parser_8h_source.html#l00086">86</a> of file <a class="el" href="parser_8h_source.html">parser.h</a>.</p>
-
-<p>Referenced by <a class="el" href="parser_8cc_source.html#l00327">enable_sources()</a>, <a class="el" href="parser_8cc_source.html#l00238">make_write_cache()</a>, <a class="el" href="parser_8cc_source.html#l00270">parse_cache()</a>, <a class="el" href="parser_8cc_source.html#l00131">reset_source()</a>, and <a class="el" href="parser_8cc_source.html#l00716">VW::setup_example()</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>/__w/vowpal_wabbit/vowpal_wabbit/vowpalwabbit/<a class="el" href="parser_8h_source.html">parser.h</a></li>
+<li>/__w/vowpal_wabbit/vowpal_wabbit/vowpalwabbit/<a class="el" href="parser_8h.html">parser.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 6 2020 15:29:12 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 7 2020 15:19:46 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

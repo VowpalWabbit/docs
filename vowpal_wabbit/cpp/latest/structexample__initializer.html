@@ -92,23 +92,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="parser_8h_source.html">parser.h</a>&gt;</code></p>
+<p><code>#include &lt;parser.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0a72eec84203c76194550229da35a89f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structexample.html">example</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structexample__initializer.html#a0a72eec84203c76194550229da35a89f">operator()</a> (<a class="el" href="structexample.html">example</a> *ex)</td></tr>
-<tr class="separator:a0a72eec84203c76194550229da35a89f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ab9327b64821393b8ae0854035dc8f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structexample.html">example</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structexample__initializer.html#a3ab9327b64821393b8ae0854035dc8f1">operator()</a> (<a class="el" href="structexample.html">example</a> *ex)</td></tr>
+<tr class="separator:a3ab9327b64821393b8ae0854035dc8f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="parser_8h_source.html#l00033">33</a> of file <a class="el" href="parser_8h_source.html">parser.h</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a0a72eec84203c76194550229da35a89f"></a>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a3ab9327b64821393b8ae0854035dc8f1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structexample.html">example</a> * example_initializer::operator() </td>
+          <td class="memname"><a class="el" href="structexample.html">example</a>* example_initializer::operator() </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structexample.html">example</a> *&#160;</td>
           <td class="paramname"><em>ex</em></td><td>)</td>
@@ -117,27 +114,15 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="parser_8cc_source.html#l00995">995</a> of file <a class="el" href="parser_8cc_source.html">parser.cc</a>.</p>
-
-<p>References <a class="el" href="example__predict_8h_source.html#l00039">example_predict::feature_space</a>, <a class="el" href="example_8h_source.html#l00083">example::in_use</a>, <a class="el" href="example__predict_8h_source.html#l00038">example_predict::indices</a>, <a class="el" href="example_8h_source.html#l00059">example::l</a>, <a class="el" href="example_8h_source.html#l00076">example::passthrough</a>, and <a class="el" href="example_8h_source.html#l00065">example::tag</a>.</p>
-<div class="fragment"><div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;{</div><div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;  memset(&amp;ex-&gt;<a class="code" href="structexample.html#a0c87f6e82d9c95ae42158bdbdab3acf5">l</a>, 0, <span class="keyword">sizeof</span>(<a class="code" href="unionpolylabel.html">polylabel</a>));</div><div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;  ex-&gt;<a class="code" href="structexample.html#a0eaa1fbdbe672ef899d1fb7e0c8fc136">passthrough</a> = <span class="keyword">nullptr</span>;</div><div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;  ex-&gt;<a class="code" href="structexample.html#ae05e98faef8389156ebb6d8f823ca378">tag</a> = v_init&lt;char&gt;();</div><div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;  ex-&gt;<a class="code" href="structexample__predict.html#ab098b66eb3c24b20ca349b7908ef54f3">indices</a> = v_init&lt;namespace_index&gt;();</div><div class="line"><a name="l01001"></a><span class="lineno"> 1001</span>&#160;IGNORE_DEPRECATED_USAGE_START</div><div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;  ex-&gt;<a class="code" href="structexample.html#a905cb7dd0c255b57735c01e408662cc4">in_use</a> = <span class="keyword">true</span>;</div><div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;IGNORE_DEPRECATED_USAGE_END</div><div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;  memset(ex-&gt;<a class="code" href="structexample__predict.html#a59f24cbe1603a24ae5812b7d262f3668">feature_space</a>.data(), 0, ex-&gt;<a class="code" href="structexample__predict.html#a59f24cbe1603a24ae5812b7d262f3668">feature_space</a>.size() * <span class="keyword">sizeof</span>(ex-&gt;<a class="code" href="structexample__predict.html#a59f24cbe1603a24ae5812b7d262f3668">feature_space</a>[0]));</div><div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;  <span class="keywordflow">return</span> ex;</div><div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;}</div><div class="ttc" id="structexample_html_ae05e98faef8389156ebb6d8f823ca378"><div class="ttname"><a href="structexample.html#ae05e98faef8389156ebb6d8f823ca378">example::tag</a></div><div class="ttdeci">v_array&lt; char &gt; tag</div><div class="ttdef"><b>Definition:</b> <a href="example_8h_source.html#l00065">example.h:65</a></div></div>
-<div class="ttc" id="structexample__predict_html_ab098b66eb3c24b20ca349b7908ef54f3"><div class="ttname"><a href="structexample__predict.html#ab098b66eb3c24b20ca349b7908ef54f3">example_predict::indices</a></div><div class="ttdeci">v_array&lt; namespace_index &gt; indices</div><div class="ttdef"><b>Definition:</b> <a href="example__predict_8h_source.html#l00038">example_predict.h:38</a></div></div>
-<div class="ttc" id="unionpolylabel_html"><div class="ttname"><a href="unionpolylabel.html">polylabel</a></div><div class="ttdef"><b>Definition:</b> <a href="example_8h_source.html#l00025">example.h:25</a></div></div>
-<div class="ttc" id="structexample__predict_html_a59f24cbe1603a24ae5812b7d262f3668"><div class="ttname"><a href="structexample__predict.html#a59f24cbe1603a24ae5812b7d262f3668">example_predict::feature_space</a></div><div class="ttdeci">std::array&lt; features, NUM_NAMESPACES &gt; feature_space</div><div class="ttdef"><b>Definition:</b> <a href="example__predict_8h_source.html#l00039">example_predict.h:39</a></div></div>
-<div class="ttc" id="structexample_html_a0c87f6e82d9c95ae42158bdbdab3acf5"><div class="ttname"><a href="structexample.html#a0c87f6e82d9c95ae42158bdbdab3acf5">example::l</a></div><div class="ttdeci">polylabel l</div><div class="ttdef"><b>Definition:</b> <a href="example_8h_source.html#l00059">example.h:59</a></div></div>
-<div class="ttc" id="structexample_html_a905cb7dd0c255b57735c01e408662cc4"><div class="ttname"><a href="structexample.html#a905cb7dd0c255b57735c01e408662cc4">example::in_use</a></div><div class="ttdeci">bool in_use</div><div class="ttdef"><b>Definition:</b> <a href="example_8h_source.html#l00083">example.h:83</a></div></div>
-<div class="ttc" id="structexample_html_a0eaa1fbdbe672ef899d1fb7e0c8fc136"><div class="ttname"><a href="structexample.html#a0eaa1fbdbe672ef899d1fb7e0c8fc136">example::passthrough</a></div><div class="ttdeci">features * passthrough</div><div class="ttdef"><b>Definition:</b> <a href="example_8h_source.html#l00076">example.h:76</a></div></div>
-</div><!-- fragment -->
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following files:<ul>
-<li>/__w/vowpal_wabbit/vowpal_wabbit/vowpalwabbit/<a class="el" href="parser_8h_source.html">parser.h</a></li>
-<li>/__w/vowpal_wabbit/vowpal_wabbit/vowpalwabbit/<a class="el" href="parser_8cc_source.html">parser.cc</a></li>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>/__w/vowpal_wabbit/vowpal_wabbit/vowpalwabbit/<a class="el" href="parser_8h.html">parser.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 6 2020 15:29:11 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 7 2020 15:19:46 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

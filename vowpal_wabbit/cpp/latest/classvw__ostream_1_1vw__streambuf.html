@@ -109,18 +109,15 @@ Inheritance diagram for vw_ostream::vw_streambuf:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a133b0d42fefe0fbbfe28667073160007"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvw__ostream_1_1vw__streambuf.html#a133b0d42fefe0fbbfe28667073160007">vw_streambuf</a> (<a class="el" href="classvw__ostream.html">vw_ostream</a> &amp;str)</td></tr>
 <tr class="separator:a133b0d42fefe0fbbfe28667073160007"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff7fa2a31fb6b9b649c291d3b5e4ddfb"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvw__ostream_1_1vw__streambuf.html#aff7fa2a31fb6b9b649c291d3b5e4ddfb">sync</a> ()</td></tr>
-<tr class="separator:aff7fa2a31fb6b9b649c291d3b5e4ddfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1062a9f2dcba30ef24828c788576eb48"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvw__ostream_1_1vw__streambuf.html#a1062a9f2dcba30ef24828c788576eb48">sync</a> ()</td></tr>
+<tr class="separator:a1062a9f2dcba30ef24828c788576eb48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a62a836ec586bc290e90d39326932bffe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvw__ostream.html">vw_ostream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvw__ostream_1_1vw__streambuf.html#a62a836ec586bc290e90d39326932bffe">parent</a></td></tr>
 <tr class="separator:a62a836ec586bc290e90d39326932bffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="error__reporting_8h_source.html#l00013">13</a> of file <a class="el" href="error__reporting_8h_source.html">error_reporting.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a133b0d42fefe0fbbfe28667073160007"></a>
 <div class="memitem">
 <div class="memproto">
@@ -143,15 +140,10 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="error__reporting_8h_source.html#l00018">18</a> of file <a class="el" href="error__reporting_8h_source.html">error_reporting.h</a>.</p>
-
-<p>References <a class="el" href="global__data_8cc_source.html#l00299">sync()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;: <a class="code" href="classvw__ostream_1_1vw__streambuf.html#a62a836ec586bc290e90d39326932bffe">parent</a>(str){};</div><div class="ttc" id="classvw__ostream_1_1vw__streambuf_html_a62a836ec586bc290e90d39326932bffe"><div class="ttname"><a href="classvw__ostream_1_1vw__streambuf.html#a62a836ec586bc290e90d39326932bffe">vw_ostream::vw_streambuf::parent</a></div><div class="ttdeci">vw_ostream &amp; parent</div><div class="ttdef"><b>Definition:</b> <a href="error__reporting_8h_source.html#l00015">error_reporting.h:15</a></div></div>
-</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aff7fa2a31fb6b9b649c291d3b5e4ddfb"></a>
+<a class="anchor" id="a1062a9f2dcba30ef24828c788576eb48"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -159,7 +151,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int vw_ostream::vw_streambuf::sync </td>
+          <td class="memname">virtual int vw_ostream::vw_streambuf::sync </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -172,13 +164,6 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="global__data_8cc_source.html#l00299">299</a> of file <a class="el" href="global__data_8cc_source.html">global_data.cc</a>.</p>
-
-<p>Referenced by <a class="el" href="error__reporting_8h_source.html#l00018">vw_streambuf()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;{</div><div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;  <span class="keywordtype">int</span> ret = std::stringbuf::sync();</div><div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;  <span class="keywordflow">if</span> (ret)</div><div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="keywordflow">return</span> ret;</div><div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;</div><div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;  <a class="code" href="classvw__ostream_1_1vw__streambuf.html#a62a836ec586bc290e90d39326932bffe">parent</a>.<a class="code" href="classvw__ostream.html#a453dc07231757ecbb3d2f1f4a3b723e8">trace_listener</a>(<a class="code" href="classvw__ostream_1_1vw__streambuf.html#a62a836ec586bc290e90d39326932bffe">parent</a>.<a class="code" href="classvw__ostream.html#a7707744792a18a30338e92b06137c688">trace_context</a>, str());</div><div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;  str(<span class="stringliteral">&quot;&quot;</span>);</div><div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;  <span class="keywordflow">return</span> 0;  <span class="comment">// success</span></div><div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;}</div><div class="ttc" id="classvw__ostream_1_1vw__streambuf_html_a62a836ec586bc290e90d39326932bffe"><div class="ttname"><a href="classvw__ostream_1_1vw__streambuf.html#a62a836ec586bc290e90d39326932bffe">vw_ostream::vw_streambuf::parent</a></div><div class="ttdeci">vw_ostream &amp; parent</div><div class="ttdef"><b>Definition:</b> <a href="error__reporting_8h_source.html#l00015">error_reporting.h:15</a></div></div>
-<div class="ttc" id="classvw__ostream_html_a7707744792a18a30338e92b06137c688"><div class="ttname"><a href="classvw__ostream.html#a7707744792a18a30338e92b06137c688">vw_ostream::trace_context</a></div><div class="ttdeci">void * trace_context</div><div class="ttdef"><b>Definition:</b> <a href="error__reporting_8h_source.html#l00027">error_reporting.h:27</a></div></div>
-<div class="ttc" id="classvw__ostream_html_a453dc07231757ecbb3d2f1f4a3b723e8"><div class="ttname"><a href="classvw__ostream.html#a453dc07231757ecbb3d2f1f4a3b723e8">vw_ostream::trace_listener</a></div><div class="ttdeci">trace_message_t trace_listener</div><div class="ttdef"><b>Definition:</b> <a href="error__reporting_8h_source.html#l00028">error_reporting.h:28</a></div></div>
-</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -200,18 +185,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="error__reporting_8h_source.html#l00015">15</a> of file <a class="el" href="error__reporting_8h_source.html">error_reporting.h</a>.</p>
-
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>/__w/vowpal_wabbit/vowpal_wabbit/vowpalwabbit/<a class="el" href="error__reporting_8h_source.html">error_reporting.h</a></li>
-<li>/__w/vowpal_wabbit/vowpal_wabbit/vowpalwabbit/<a class="el" href="global__data_8cc_source.html">global_data.cc</a></li>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>/__w/vowpal_wabbit/vowpal_wabbit/vowpalwabbit/<a class="el" href="error__reporting_8h.html">error_reporting.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 6 2020 15:29:12 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 7 2020 15:19:46 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

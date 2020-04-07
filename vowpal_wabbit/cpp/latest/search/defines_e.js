@@ -1,11 +1,17 @@
 var searchData=
 [
-  ['s_5fexploration_5fok',['S_EXPLORATION_OK',['../explore_8h.html#a9819e7e96cd7591d9b59397d49860721',1,'explore.h']]],
-  ['s_5fvw_5fpredict_5fok',['S_VW_PREDICT_OK',['../vw__slim__return__codes_8h.html#a648f0373019e260671d17a506473832a',1,'vw_slim_return_codes.h']]],
-  ['skip',['SKIP',['../warm__cb_8cc.html#a688a4adbb87520a2b68681bd6bfb199e',1,'warm_cb.cc']]],
-  ['sprintf_5fs',['sprintf_s',['../crossplat__compat_8h.html#a6b6019110450b61a0b4acc55d7d336ca',1,'crossplat_compat.h']]],
-  ['supervised_5fws',['SUPERVISED_WS',['../warm__cb_8cc.html#acf401aaec98807e3a0b37b39a2430d68',1,'warm_cb.cc']]],
-  ['svm_5fker_5flin',['SVM_KER_LIN',['../kernel__svm_8cc.html#a85903a300fd131c101b0a7a6e34045dd',1,'kernel_svm.cc']]],
-  ['svm_5fker_5fpoly',['SVM_KER_POLY',['../kernel__svm_8cc.html#a4ded7be9d8ecdb707a8c367290c00d9e',1,'kernel_svm.cc']]],
-  ['svm_5fker_5frbf',['SVM_KER_RBF',['../kernel__svm_8cc.html#a0c706f561949fab657b6bfca4a1f809b',1,'kernel_svm.cc']]]
+  ['version_5ffile_5fwith_5fcb_5fadf_5fsave',['VERSION_FILE_WITH_CB_ADF_SAVE',['../vw__versions_8h.html#a9c1532b1eb143f80816e4a61194d4dee',1,'vw_versions.h']]],
+  ['version_5ffile_5fwith_5fcubic',['VERSION_FILE_WITH_CUBIC',['../vw__versions_8h.html#aa0d3c0207ae194c3b39421a434c6f22b',1,'vw_versions.h']]],
+  ['version_5ffile_5fwith_5fheader_5fchained_5fhash',['VERSION_FILE_WITH_HEADER_CHAINED_HASH',['../vw__versions_8h.html#a9f9a63eebd51389d5c5d61d64faa725c',1,'vw_versions.h']]],
+  ['version_5ffile_5fwith_5fheader_5fhash',['VERSION_FILE_WITH_HEADER_HASH',['../vw__versions_8h.html#a6b65d9200d3c567a5dfbe8256a00aa00',1,'vw_versions.h']]],
+  ['version_5ffile_5fwith_5fheader_5fid',['VERSION_FILE_WITH_HEADER_ID',['../vw__versions_8h.html#af95fe020b67c477c6e9fc931a1abc836',1,'vw_versions.h']]],
+  ['version_5ffile_5fwith_5finteractions',['VERSION_FILE_WITH_INTERACTIONS',['../vw__versions_8h.html#a00aeb3fb6c20ea3e111d16b8c86b509f',1,'vw_versions.h']]],
+  ['version_5ffile_5fwith_5finteractions_5fin_5ffo',['VERSION_FILE_WITH_INTERACTIONS_IN_FO',['../vw__versions_8h.html#aef4c06cbe43d44bebff61e5787a34e1d',1,'vw_versions.h']]],
+  ['version_5ffile_5fwith_5frank_5fin_5fheader',['VERSION_FILE_WITH_RANK_IN_HEADER',['../vw__versions_8h.html#aaa4d1407b4bd1d5e2a333b52cdf83188',1,'vw_versions.h']]],
+  ['vsprintf_5fs',['vsprintf_s',['../crossplat__compat_8h.html#a803c6f2523bae626734a87a074e480e9',1,'crossplat_compat.h']]],
+  ['vw_5fassert',['VW_ASSERT',['../vw__exception_8h.html#afdf68ea80cc57c25b736d8306f88edee',1,'vw_exception.h']]],
+  ['vw_5fcalling_5fconv',['VW_CALLING_CONV',['../vwdll_8h.html#a64a642f52fe781ce11742e6c4d35acbb',1,'vwdll.h']]],
+  ['vw_5fdefault_5fvis',['VW_DEFAULT_VIS',['../vwvis_8h.html#a9269bf483ed786307360319e34bc95f6',1,'vwvis.h']]],
+  ['vw_5fdll_5fmember',['VW_DLL_MEMBER',['../vwdll_8h.html#a53a212046e5414fe4fb49122d858b154',1,'vwdll.h']]],
+  ['vw_5ftype_5fsafe_5fnull',['VW_TYPE_SAFE_NULL',['../vwdll_8h.html#a70551fec65dc75986bf05a4002a66a77',1,'vwdll.h']]]
 ];

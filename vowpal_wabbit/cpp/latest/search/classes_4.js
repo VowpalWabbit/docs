@@ -1,15 +1,9 @@
 var searchData=
 [
-  ['data',['data',['../structMARGINAL_1_1data.html',1,'MARGINAL']]],
-  ['data',['Data',['../structData.html',1,'']]],
-  ['decisionserviceinteraction',['DecisionServiceInteraction',['../structDecisionServiceInteraction.html',1,'']]],
-  ['decisionservicestate',['DecisionServiceState',['../classDecisionServiceState.html',1,'']]],
-  ['default_5fcleanup',['default_cleanup',['../structVW_1_1default__cleanup.html',1,'VW']]],
-  ['default_5fcleanup_3c_20example_20_3e',['default_cleanup&lt; example &gt;',['../structVW_1_1default__cleanup.html',1,'VW']]],
-  ['defaultstate',['DefaultState',['../classDefaultState.html',1,'']]],
-  ['dense_5fiterator',['dense_iterator',['../classdense__iterator.html',1,'']]],
-  ['dense_5fparameters',['dense_parameters',['../classdense__parameters.html',1,'']]],
-  ['dictionary_5finfo',['dictionary_info',['../structdictionary__info.html',1,'']]],
-  ['direction',['direction',['../structdirection.html',1,'']]],
-  ['duals',['Duals',['../structVW_1_1distributionally__robust_1_1ChiSquared_1_1Duals.html',1,'VW::distributionally_robust::ChiSquared']]]
+  ['example',['example',['../structexample.html',1,'']]],
+  ['example_5finitializer',['example_initializer',['../structexample__initializer.html',1,'']]],
+  ['example_5fpredict',['example_predict',['../structexample__predict.html',1,'']]],
+  ['example_5fpredict_5fbuilder',['example_predict_builder',['../classvw__slim_1_1example__predict__builder.html',1,'vw_slim']]],
+  ['expreplay',['expreplay',['../structExpReplay_1_1expreplay.html',1,'ExpReplay']]],
+  ['ezexample',['ezexample',['../classezexample.html',1,'']]]
 ];

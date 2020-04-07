@@ -92,11 +92,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">vw_allreduce.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="vw_8h_source.html">vw.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="allreduce_8h_source.html">allreduce.h</a>&quot;</code><br />
-</div>
-<p><a href="vw__allreduce_8h_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+<div class="textblock"><code>#include &quot;<a class="el" href="vw_8h.html">vw.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="allreduce_8h.html">allreduce.h</a>&quot;</code><br />
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ab7529d249be3d57d3122eceffa5d3d3a"><td class="memTemplParams" colspan="2">template&lt;class T , void(*)(T &amp;, const T &amp;) f&gt; </td></tr>
@@ -136,25 +134,12 @@ template&lt;class T , void(*)(T &amp;, const T &amp;) f&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="vw__allreduce_8h_source.html#l00011">11</a> of file <a class="el" href="vw__allreduce_8h_source.html">vw_allreduce.h</a>.</p>
-
-<p>References <a class="el" href="global__data_8h_source.html#l00373">vw::all_reduce</a>, <a class="el" href="global__data_8h_source.html#l00372">vw::all_reduce_type</a>, <a class="el" href="cache_8cc_source.html#l00039">f</a>, <a class="el" href="global__data_8h_source.html#l00317">Socket</a>, and <a class="el" href="global__data_8h_source.html#l00318">Thread</a>.</p>
-
-<p>Referenced by <a class="el" href="global__data_8cc_source.html#l00316">vw::vw()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="keywordflow">switch</span> (all.<a class="code" href="structvw.html#a23883363946e3f05963555a951407070">all_reduce_type</a>)</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  {</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="global__data_8h.html#ac80f47c3b2731d9979f60e1b2f6af364ac39207bbda0d1b98dc89636a45d61221">AllReduceType::Socket</a>:</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;      ((<a class="code" href="classAllReduceSockets.html">AllReduceSockets</a>*)all.<a class="code" href="structvw.html#a20c2edd21794e845c4e0b3c36ea35327">all_reduce</a>)-&gt;all_reduce&lt;T, <a class="code" href="cache_8cc.html#af900396d7b72ff2a7002e8befe8cf8f1">f</a>&gt;(buffer, n);</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;      <span class="keywordflow">break</span>;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="global__data_8h.html#ac80f47c3b2731d9979f60e1b2f6af364a69977c77ce078bea81ce7024513e42f7">AllReduceType::Thread</a>:</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      ((<a class="code" href="classAllReduceThreads.html">AllReduceThreads</a>*)all.<a class="code" href="structvw.html#a20c2edd21794e845c4e0b3c36ea35327">all_reduce</a>)-&gt;all_reduce&lt;T, f&gt;(buffer, n);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      <span class="keywordflow">break</span>;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  }</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div><div class="ttc" id="global__data_8h_html_ac80f47c3b2731d9979f60e1b2f6af364a69977c77ce078bea81ce7024513e42f7"><div class="ttname"><a href="global__data_8h.html#ac80f47c3b2731d9979f60e1b2f6af364a69977c77ce078bea81ce7024513e42f7">Thread</a></div><div class="ttdef"><b>Definition:</b> <a href="global__data_8h_source.html#l00318">global_data.h:318</a></div></div>
-<div class="ttc" id="classAllReduceThreads_html"><div class="ttname"><a href="classAllReduceThreads.html">AllReduceThreads</a></div><div class="ttdef"><b>Definition:</b> <a href="allreduce_8h_source.html#l00122">allreduce.h:122</a></div></div>
-<div class="ttc" id="global__data_8h_html_ac80f47c3b2731d9979f60e1b2f6af364ac39207bbda0d1b98dc89636a45d61221"><div class="ttname"><a href="global__data_8h.html#ac80f47c3b2731d9979f60e1b2f6af364ac39207bbda0d1b98dc89636a45d61221">Socket</a></div><div class="ttdef"><b>Definition:</b> <a href="global__data_8h_source.html#l00317">global_data.h:317</a></div></div>
-<div class="ttc" id="structvw_html_a20c2edd21794e845c4e0b3c36ea35327"><div class="ttname"><a href="structvw.html#a20c2edd21794e845c4e0b3c36ea35327">vw::all_reduce</a></div><div class="ttdeci">AllReduce * all_reduce</div><div class="ttdef"><b>Definition:</b> <a href="global__data_8h_source.html#l00373">global_data.h:373</a></div></div>
-<div class="ttc" id="structvw_html_a23883363946e3f05963555a951407070"><div class="ttname"><a href="structvw.html#a23883363946e3f05963555a951407070">vw::all_reduce_type</a></div><div class="ttdeci">AllReduceType all_reduce_type</div><div class="ttdef"><b>Definition:</b> <a href="global__data_8h_source.html#l00372">global_data.h:372</a></div></div>
-<div class="ttc" id="classAllReduceSockets_html"><div class="ttname"><a href="classAllReduceSockets.html">AllReduceSockets</a></div><div class="ttdef"><b>Definition:</b> <a href="allreduce_8h_source.html#l00178">allreduce.h:178</a></div></div>
-<div class="ttc" id="cache_8cc_html_af900396d7b72ff2a7002e8befe8cf8f1"><div class="ttname"><a href="cache_8cc.html#af900396d7b72ff2a7002e8befe8cf8f1">f</a></div><div class="ttdeci">float f</div><div class="ttdef"><b>Definition:</b> <a href="cache_8cc_source.html#l00039">cache.cc:39</a></div></div>
-</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 6 2020 15:29:11 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 7 2020 15:19:46 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
