@@ -30,7 +30,7 @@ var searchData=
   ['recall_5ftree_2eh',['recall_tree.h',['../recall__tree_8h.html',1,'']]],
   ['recall_5ftree_5fsetup',['recall_tree_setup',['../recall__tree_8h.html#a22354deeb5a4322c19459768d35638e5',1,'recall_tree.h']]],
   ['recompute_5fduals',['recompute_duals',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#affa2684872b3d923e2e3563b4b03a3cb',1,'VW::distributionally_robust::ChiSquared']]],
-  ['recur_5fsensitivity',['recur_sensitivity',['../namespaceLEARNER.html#a9f9758a3e18ceb28e55826860455b670',1,'LEARNER']]],
+  ['recur_5fsensitivity',['recur_sensitivity',['../namespaceVW_1_1LEARNER.html#ab6e5c6e7bedf2db4bf91c3bc2b3527c9',1,'VW::LEARNER']]],
   ['redefine',['redefine',['../structvw.html#a7bd371021399631bc719da959b490591',1,'vw']]],
   ['redefine_5fsome',['redefine_some',['../structvw.html#a457c47efe1d9caf4389a6c09d6767194',1,'vw']]],
   ['reduce',['reduce',['../classAllReduceSockets.html#ab86343f17853fab29daae3638934539a',1,'AllReduceSockets']]],

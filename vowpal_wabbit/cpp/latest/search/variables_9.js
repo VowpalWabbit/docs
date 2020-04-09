@@ -11,12 +11,12 @@ var searchData=
   ['in_5fpass_5fcounter',['in_pass_counter',['../structparser.html#a53510d464dc58fc86bce92c68a07a6b8',1,'parser']]],
   ['in_5fuse',['in_use',['../structexample.html#a905cb7dd0c255b57735c01e408662cc4',1,'example']]],
   ['inc',['inc',['../classLabelObjectState.html#a6d7683925b3cfe38f68d25e668da8969',1,'LabelObjectState']]],
-  ['increment',['increment',['../structLEARNER_1_1learner.html#ad9fa0ad20cde39189a936edc53af5e1c',1,'LEARNER::learner']]],
+  ['increment',['increment',['../structVW_1_1LEARNER_1_1learner.html#a30c2bcf54996490e0a4415e6509e9dfe',1,'VW::LEARNER::learner']]],
   ['index',['index',['../structLabelIndexState.html#a74debffb179393bae1b06ad872409acc',1,'LabelIndexState']]],
   ['index_5fname_5fmap',['index_name_map',['../structvw.html#a2e15a01ef633a5fce744f92561885b89',1,'vw']]],
   ['indices',['indices',['../structexample__predict.html#ab098b66eb3c24b20ca349b7908ef54f3',1,'example_predict']]],
   ['indicies',['indicies',['../structfeatures.html#a2d75751cdcc865b5e62031d40a770a6a',1,'features']]],
-  ['init_5ffd',['init_fd',['../structLEARNER_1_1learner.html#a908a236b21f50456c294c8d18b883403',1,'LEARNER::learner']]],
+  ['init_5ffd',['init_fd',['../structVW_1_1LEARNER_1_1learner.html#a31a5dbf17e187ef1bf28252bf70bea33',1,'VW::LEARNER::learner']]],
   ['init_5ftime',['init_time',['../structvw.html#aa6ee6bca2d810405959aaeda87219140',1,'vw']]],
   ['initial',['initial',['../structlabel__data.html#a38f61e1ace7d4bffc5c744523011f092',1,'label_data']]],
   ['initial_5fbuff_5fsize',['INITIAL_BUFF_SIZE',['../classio__buf.html#a7f8b2f3ff69ce40cfdb4d51f3b8d70c9',1,'io_buf']]],
@@ -35,7 +35,7 @@ var searchData=
   ['is_5fequivalent',['is_equivalent',['../classBeam_1_1beam.html#a6d4d2a5fb695a2c75d014a816339b0bf',1,'Beam::beam']]],
   ['is_5fldf',['is_ldf',['../classSearch_1_1predictor.html#a19435abdaefc0f16fbcb2f70127a2eec',1,'Search::predictor::is_ldf()'],['../namespaceSearch.html#a0cf0cfef46a3b6962d91d7de1ae67796',1,'Search::IS_LDF()']]],
   ['is_5fmore_5fthan_5ftwo_5flabels_5fobserved',['is_more_than_two_labels_observed',['../structshared__data.html#a959e85b4cdc13fa50902e95ab83cc7c9',1,'shared_data']]],
-  ['is_5fmultiline',['is_multiline',['../classezexample.html#a3dd913d925e01c604f21d7a899b05f1f',1,'ezexample::is_multiline()'],['../structLEARNER_1_1learner.html#a29359a5841a8c39f6a4213c053411215',1,'LEARNER::learner::is_multiline()']]],
+  ['is_5fmultiline',['is_multiline',['../classezexample.html#a3dd913d925e01c604f21d7a899b05f1f',1,'ezexample::is_multiline()'],['../structVW_1_1LEARNER_1_1learner.html#a6d534bda509f1a10b361a2d6d5136c97',1,'VW::LEARNER::learner::is_multiline()']]],
   ['is_5fnot_5fempty',['is_not_empty',['../classVW_1_1ptr__queue.html#adc68e980538d87bac18b8305f0ac55eb',1,'VW::ptr_queue']]],
   ['is_5fnot_5ffull',['is_not_full',['../classVW_1_1ptr__queue.html#a18203414eab919cdafe2119dfdb74838',1,'VW::ptr_queue']]]
 ];

@@ -67,7 +67,7 @@ var searchData=
   ['multiclass_5flog_5floss',['multiclass_log_loss',['../structshared__data.html#a4ce87ed2b649c66104956e3ca7491c05',1,'shared_data']]],
   ['multilabel',['multilabel',['../namespaceMULTILABEL.html#a3b81f08b0481c5045f8cda8ac5fefea5',1,'MULTILABEL']]],
   ['multilabels',['multilabels',['../unionpolylabel.html#a999dc75a1e71967c36a817cead6bf3b2',1,'polylabel::multilabels()'],['../unionpolyprediction.html#a9f6a01eabbe81af8ec89f7af7ff5de3c',1,'polyprediction::multilabels()']]],
-  ['multipredict_5ff',['multipredict_f',['../structLEARNER_1_1learn__data.html#ab70024dac770aacd32a013176ea2bef4',1,'LEARNER::learn_data']]],
+  ['multipredict_5ff',['multipredict_f',['../structVW_1_1LEARNER_1_1learn__data.html#ac961a8f38a1a2672b64174931120dbfa',1,'VW::LEARNER::learn_data']]],
   ['mut',['mut',['../classVW_1_1ptr__queue.html#a581ee112f1c3b22b692121f9cdf51729',1,'VW::ptr_queue']]],
   ['my_5ftag',['my_tag',['../classSearch_1_1predictor.html#acd91c3c5a6dbfd8f441f135d16e0c758',1,'Search::predictor']]]
 ];

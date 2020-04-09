@@ -44,8 +44,8 @@ var searchData=
   ['are_5fsame',['are_same',['../namespaceVW_1_1math.html#a5283b8fa4ef629eb885fce24d672cf07',1,'VW::math']]],
   ['arraystate',['ArrayState',['../classArrayState.html#a883f6c30958ca0600d7419c4153d3278',1,'ArrayState']]],
   ['arraytovectorstate',['ArrayToVectorState',['../classArrayToVectorState.html#abbe48c47b0b25a2ecea3320eeb285632',1,'ArrayToVectorState']]],
-  ['as_5fmultiline',['as_multiline',['../namespaceLEARNER.html#aa37c82ebc1cfeea9d9adc55039177661',1,'LEARNER']]],
-  ['as_5fsingleline',['as_singleline',['../namespaceLEARNER.html#abd71c87941b752738319b3d1ed64fe47',1,'LEARNER']]],
+  ['as_5fmultiline',['as_multiline',['../namespaceVW_1_1LEARNER.html#abcef6872def347bdad862409bdb35326',1,'VW::LEARNER']]],
+  ['as_5fsingleline',['as_singleline',['../namespaceVW_1_1LEARNER.html#aee01f4fe4f1ec032609e818cfb0cebe4',1,'VW::LEARNER']]],
   ['audit',['audit',['../classfeatures__value__index__audit__iterator.html#a0bd1950c29efff5156c33ba4e27b3452',1,'features_value_index_audit_iterator']]],
   ['audit_5fregressor_5fsetup',['audit_regressor_setup',['../audit__regressor_8h.html#a1731bf88fa5aeaf8cf2226aa4170d53f',1,'audit_regressor.h']]],
   ['autolink_5fsetup',['autolink_setup',['../autolink_8h.html#a49681d11f30088f3a1f27240f8caca7a',1,'autolink.h']]]

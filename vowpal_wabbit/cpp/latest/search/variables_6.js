@@ -14,11 +14,11 @@ var searchData=
   ['final_5fregressor_5fname',['final_regressor_name',['../structvw.html#a1f8e40a38100ab3e27ada930a9f1af63',1,'vw']]],
   ['finalname',['finalname',['../classio__buf.html#a2d0023947ce48a62560161f4315830ac',1,'io_buf']]],
   ['finish',['finish',['../structSearch_1_1search__task.html#aa4784eebfd6de0497b23e824056f9d0c',1,'Search::search_task::finish()'],['../structSearch_1_1search__metatask.html#a0f8ba98f5e0e01e04d66bf8824fb8016',1,'Search::search_metatask::finish()']]],
-  ['finish_5fexample_5ff',['finish_example_f',['../structLEARNER_1_1finish__example__data.html#ada3b2204a8055a67651dcacb0c9cf01f',1,'LEARNER::finish_example_data']]],
-  ['finish_5fexample_5ffd',['finish_example_fd',['../structLEARNER_1_1learner.html#af6d64471e880777424a31fbb0e51de2f',1,'LEARNER::learner']]],
+  ['finish_5fexample_5ff',['finish_example_f',['../structVW_1_1LEARNER_1_1finish__example__data.html#a137835aa833c6548f287fd102d7d639f',1,'VW::LEARNER::finish_example_data']]],
+  ['finish_5fexample_5ffd',['finish_example_fd',['../structVW_1_1LEARNER_1_1learner.html#a2631199905d824b65ee205cc7eaab33e',1,'VW::LEARNER::learner']]],
   ['finished_5fcount',['finished_count',['../structparser.html#ad53b04588524b349d94531588be79b1f',1,'parser']]],
   ['finished_5fexamples',['finished_examples',['../structparser.html#a57c9f679c9e61169c79427eebbcc1f5a',1,'parser']]],
-  ['finisher_5ffd',['finisher_fd',['../structLEARNER_1_1learner.html#a356c5e2a48677aae96bebce936f4ad67',1,'LEARNER::learner']]],
+  ['finisher_5ffd',['finisher_fd',['../structVW_1_1LEARNER_1_1learner.html#a3daec60758b75393a5cd0822fd7c92c9',1,'VW::LEARNER::learner']]],
   ['first_5fobserved_5flabel',['first_observed_label',['../structshared__data.html#acdead5f80e8283d6600d35a837cd0b97',1,'shared_data']]],
   ['float_5fstate',['float_state',['../structContext.html#a724f9710a5897be7e09e301afe8b1abe',1,'Context']]],
   ['fnv_5fprime',['FNV_prime',['../constant_8h.html#a7fa06e2bcb0551d4d612dbcc7871a919',1,'constant.h']]],
@@ -30,5 +30,5 @@ var searchData=
   ['ft_5foffset',['ft_offset',['../structflat__example.html#a0c98fc527c037d202d4e558b3518a10f',1,'flat_example::ft_offset()'],['../structexample__predict.html#a964a7741ec79edbb2e7e2298ffdd767a',1,'example_predict::ft_offset()']]],
   ['ftrs',['ftrs',['../structNamespace.html#af7140895e79fff354ad484f6c5fb463f',1,'Namespace']]],
   ['fun',['fun',['../classsparse__parameters.html#ad179eccdfc305180972ac3f67a836479',1,'sparse_parameters']]],
-  ['func',['func',['../structLEARNER_1_1func__data.html#a6e5fb4bcc728cfc733f7a7dea87faca2',1,'LEARNER::func_data']]]
+  ['func',['func',['../structVW_1_1LEARNER_1_1func__data.html#a64f72ac97241336c7a04a58a6e808eb1',1,'VW::LEARNER::func_data']]]
 ];

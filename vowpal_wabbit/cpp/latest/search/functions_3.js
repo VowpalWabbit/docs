@@ -3,7 +3,7 @@ var searchData=
   ['dealloc_5fexample',['dealloc_example',['../namespaceVW.html#a2cf9260494b1905cb29eb481e4b5453a',1,'VW']]],
   ['decisionservicestate',['DecisionServiceState',['../classDecisionServiceState.html#a46369311924aed5584e968d2ac6ef603',1,'DecisionServiceState']]],
   ['decr',['decr',['../structv__array.html#af6bf383b8dcaabdd1246b2b2a5350ce4',1,'v_array']]],
-  ['decrement_5foffset',['decrement_offset',['../namespaceLEARNER.html#a9ca058bc0a177f68d6614c2b7152345a',1,'LEARNER::decrement_offset(example &amp;ex, const size_t increment, const size_t i)'],['../namespaceLEARNER.html#a5665bfda75e7664ab2e55a48aef04130',1,'LEARNER::decrement_offset(multi_ex &amp;ec_seq, const size_t increment, const size_t i)']]],
+  ['decrement_5foffset',['decrement_offset',['../namespaceVW_1_1LEARNER.html#ae5f075f138c4ad98ddd3ef5bfce07091',1,'VW::LEARNER::decrement_offset(example &amp;ex, const size_t increment, const size_t i)'],['../namespaceVW_1_1LEARNER.html#a6516bc7edeaaa0843e216034562217f9',1,'VW::LEARNER::decrement_offset(multi_ex &amp;ec_seq, const size_t increment, const size_t i)']]],
   ['deep_5fcopy_5ffrom',['deep_copy_from',['../structfeatures.html#a06f20d9a83ccc61bdd694e623bf49734',1,'features']]],
   ['default_5fvalue',['default_value',['../structVW_1_1config_1_1typed__option.html#a8654b80a051fb2020347c9299a33b615',1,'VW::config::typed_option::default_value(T value)'],['../structVW_1_1config_1_1typed__option.html#a857823f83aae23dfb0d461248048828c',1,'VW::config::typed_option::default_value()']]],
   ['default_5fvalue_5fsupplied',['default_value_supplied',['../structVW_1_1config_1_1typed__option.html#a8ee8fe35b722a0bf452921aeecbb45b6',1,'VW::config::typed_option']]],

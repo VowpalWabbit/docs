@@ -9,8 +9,8 @@ var searchData=
   ['features_5fvalue_5findex_5faudit_5frange',['features_value_index_audit_range',['../classfeatures_1_1features__value__index__audit__range.html',1,'features']]],
   ['features_5fvalue_5findex_5fiterator',['features_value_index_iterator',['../classfeatures__value__index__iterator.html',1,'']]],
   ['features_5fvalue_5fiterator',['features_value_iterator',['../classfeatures__value__iterator.html',1,'']]],
-  ['finish_5fexample_5fdata',['finish_example_data',['../structLEARNER_1_1finish__example__data.html',1,'LEARNER']]],
+  ['finish_5fexample_5fdata',['finish_example_data',['../structVW_1_1LEARNER_1_1finish__example__data.html',1,'VW::LEARNER']]],
   ['flat_5fexample',['flat_example',['../structflat__example.html',1,'']]],
   ['floattofloatstate',['FloatToFloatState',['../classFloatToFloatState.html',1,'']]],
-  ['func_5fdata',['func_data',['../structLEARNER_1_1func__data.html',1,'LEARNER']]]
+  ['func_5fdata',['func_data',['../structVW_1_1LEARNER_1_1func__data.html',1,'VW::LEARNER']]]
 ];

@@ -11,7 +11,7 @@ var searchData=
   ['weighted_5flabeled_5fexamples',['weighted_labeled_examples',['../structshared__data.html#a92ff45eb41fa4b3ccab7576925c6acdc',1,'shared_data']]],
   ['weighted_5flabels',['weighted_labels',['../structshared__data.html#a462fe3c516f5d87de08862c7d7a9136d',1,'shared_data']]],
   ['weighted_5funlabeled_5fexamples',['weighted_unlabeled_examples',['../structshared__data.html#ac3d7065c2ec09563226497ab0805b4b5',1,'shared_data']]],
-  ['weights',['weights',['../structGD_1_1multipredict__info.html#ac1993819a02763fa326ed38197ae2ee4',1,'GD::multipredict_info::weights()'],['../structvw.html#a8c84a43b76ba98653da4377ea827a5b4',1,'vw::weights()'],['../structLEARNER_1_1learner.html#a61dd81fd7c10e27d3d6a6bce0d7ebc06',1,'LEARNER::learner::weights()']]],
+  ['weights',['weights',['../structGD_1_1multipredict__info.html#ac1993819a02763fa326ed38197ae2ee4',1,'GD::multipredict_info::weights()'],['../structvw.html#a8c84a43b76ba98653da4377ea827a5b4',1,'vw::weights()'],['../structVW_1_1LEARNER_1_1learner.html#aa72097142563b721f185f8ae862ec29d',1,'VW::LEARNER::learner::weights()']]],
   ['wmax',['wmax',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#aa83438e963ac6503cc573e82c333fcc5',1,'VW::distributionally_robust::ChiSquared']]],
   ['wmin',['wmin',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#a5e439af224dcac86463223a4e7fa3d51',1,'VW::distributionally_robust::ChiSquared']]],
   ['words',['words',['../structparser.html#a8c5a3019734fa8f4ec4ca924eb4ce4a7',1,'parser']]],

@@ -13,8 +13,8 @@ var searchData=
   ['labels',['labels',['../structMULTILABEL_1_1labels.html',1,'MULTILABEL']]],
   ['labelsinglepropertystate',['LabelSinglePropertyState',['../structLabelSinglePropertyState.html',1,'']]],
   ['labelstate',['LabelState',['../structLabelState.html',1,'']]],
-  ['learn_5fdata',['learn_data',['../structLEARNER_1_1learn__data.html',1,'LEARNER']]],
-  ['learner',['learner',['../structLEARNER_1_1learner.html',1,'LEARNER']]],
+  ['learn_5fdata',['learn_data',['../structVW_1_1LEARNER_1_1learn__data.html',1,'VW::LEARNER']]],
+  ['learner',['learner',['../structVW_1_1LEARNER_1_1learner.html',1,'VW::LEARNER']]],
   ['location_5freference',['location_reference',['../classvw__slim_1_1internal_1_1location__reference.html',1,'vw_slim::internal']]],
   ['location_5fvalue',['location_value',['../classvw__slim_1_1internal_1_1location__value.html',1,'vw_slim::internal']]],
   ['loss_5ffunction',['loss_function',['../classloss__function.html',1,'']]]

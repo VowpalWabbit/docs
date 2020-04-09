@@ -121,6 +121,7 @@ var searchData=
   ['compact',['compact',['../classBeam_1_1beam.html#a6443a6c269b87e0a4a214fcd00f5e527',1,'Beam::beam']]],
   ['compare_5fon_5fcost',['compare_on_cost',['../namespaceBeam.html#a6380de5acf5d68e33cf9ea76a6d756a5',1,'Beam']]],
   ['compare_5fon_5fhash_5fthen_5fcost',['compare_on_hash_then_cost',['../namespaceBeam.html#a7ef2d5f29e9164548b2460ac7c96ff3a',1,'Beam']]],
+  ['compat_2eh',['compat.h',['../compat_8h.html',1,'']]],
   ['compile_5fgram',['compile_gram',['../global__data_8h.html#a3299b15b31ba084de77f1ad030593391',1,'global_data.h']]],
   ['compile_5flimits',['compile_limits',['../global__data_8h.html#a2e242f958545ca182b27b58cfa0d5d4f',1,'global_data.h']]],
   ['compressed',['compressed',['../structinput__options.html#afd2ae7c290ae19ee2740320f9e1b63d3',1,'input_options::compressed()'],['../classcomp__io__buf.html#a3bbbdf195945b3a1eb3d20c2b8ad5559',1,'comp_io_buf::compressed()'],['../classio__buf.html#addb09f558fe6d9c43ae5700fb61b6231',1,'io_buf::compressed()']]],

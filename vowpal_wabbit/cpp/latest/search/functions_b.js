@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['make_5fbase',['make_base',['../namespaceLEARNER.html#abcf6bdc2fa5e38928c33212e20dbbd74',1,'LEARNER']]],
+  ['make_5fbase',['make_base',['../namespaceVW_1_1LEARNER.html#a772575fd3a96e67ade70cf79d379acc9',1,'VW::LEARNER']]],
   ['make_5fnew_5fpointer',['make_new_pointer',['../classSearch_1_1predictor.html#a5a8515072d8a4132e576a26d7222b726',1,'Search::predictor']]],
   ['make_5foption',['make_option',['../namespaceVW_1_1config.html#ae768389a49d24d07215612b2f824d520',1,'VW::config']]],
   ['make_5funique',['make_unique',['../namespaceVW.html#a6e3217b67aa62bbcb889c612e5d8016a',1,'VW']]],
@@ -18,8 +18,8 @@ var searchData=
   ['model_5fparser',['model_parser',['../classvw__slim_1_1model__parser.html#a60531cc8473aa75a7be9a324f35f6d88',1,'vw_slim::model_parser']]],
   ['move_5ffeature_5fnamespace',['move_feature_namespace',['../namespaceVW.html#ab9e00af55935c42d32d1c2c5c244150e',1,'VW']]],
   ['multilabel_5foaa_5fsetup',['multilabel_oaa_setup',['../multilabel__oaa_8h.html#a28ef12da818067a2b47bd1376a78912d',1,'multilabel_oaa.h']]],
-  ['multiline_5flearn_5for_5fpredict',['multiline_learn_or_predict',['../namespaceLEARNER.html#ac6b1975a87c6816f3944e4d2da6b6911',1,'LEARNER']]],
-  ['multipredict',['multipredict',['../structLEARNER_1_1learner.html#a31c97499538f3394d2a93dee5d1b5002',1,'LEARNER::learner::multipredict()'],['../namespaceExpReplay.html#a2cdfde4e8e996489c99036b4afa906e2',1,'ExpReplay::multipredict()']]],
+  ['multiline_5flearn_5for_5fpredict',['multiline_learn_or_predict',['../namespaceVW_1_1LEARNER.html#ae567a4278ece0021d1272d708e25b749',1,'VW::LEARNER']]],
+  ['multipredict',['multipredict',['../structVW_1_1LEARNER_1_1learner.html#a44d1395545c9fd963b1a9fcf7982f514',1,'VW::LEARNER::learner::multipredict()'],['../namespaceExpReplay.html#a2cdfde4e8e996489c99036b4afa906e2',1,'ExpReplay::multipredict()']]],
   ['multistate',['MultiState',['../structMultiState.html#a18d362406bbf876095cd67a48487f840',1,'MultiState']]],
   ['mwt_5fsetup',['mwt_setup',['../mwt_8h.html#a6e17bf8e1b9b9b8d0db765983898541c',1,'mwt.h']]]
 ];

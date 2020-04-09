@@ -1,8 +1,8 @@
 var searchData=
 [
   ['bag',['bag',['../namespacevw__slim.html#a8b7398db5b92b2538fdd8e6593b746b3a345ec4088b94393d5da64133ea3b0195',1,'vw_slim']]],
-  ['base',['base',['../structExpReplay_1_1expreplay.html#ae1c70b2c323f8586260ba243d9bb6399',1,'ExpReplay::expreplay::base()'],['../structLEARNER_1_1func__data.html#a7dcdf3005308a55956518c9a30110645',1,'LEARNER::func_data::base()'],['../structLEARNER_1_1learn__data.html#a99e61cc169c0d59fe4ea050070ddd0f4',1,'LEARNER::learn_data::base()'],['../structLEARNER_1_1save__load__data.html#af6a9d29b7abfc2654fd41c5327615c77',1,'LEARNER::save_load_data::base()'],['../structLEARNER_1_1finish__example__data.html#af0e71f7bc8b43caee73f83d38f8001cb',1,'LEARNER::finish_example_data::base()']]],
-  ['base_5flearner',['base_learner',['../namespaceLEARNER.html#a807843d5185e0c5005a54bf28c111c79',1,'LEARNER']]],
+  ['base',['base',['../structExpReplay_1_1expreplay.html#ae1c70b2c323f8586260ba243d9bb6399',1,'ExpReplay::expreplay::base()'],['../structVW_1_1LEARNER_1_1func__data.html#a3f26558c6ad681d2c0f50ddaa58cc2ef',1,'VW::LEARNER::func_data::base()'],['../structVW_1_1LEARNER_1_1learn__data.html#a37b76d25cbbc8b79029a94ab33844372',1,'VW::LEARNER::learn_data::base()'],['../structVW_1_1LEARNER_1_1save__load__data.html#ab6c03aa287b433156b29eb0720f7c50f',1,'VW::LEARNER::save_load_data::base()'],['../structVW_1_1LEARNER_1_1finish__example__data.html#aa10e1a4c6e872ec9faceb1060264be04',1,'VW::LEARNER::finish_example_data::base()']]],
+  ['base_5flearner',['base_learner',['../namespaceVW_1_1LEARNER.html#ab481a83a0a49d7b827babe725e135b20',1,'VW::LEARNER']]],
   ['base_5foption',['base_option',['../structVW_1_1config_1_1base__option.html#abeb225ef8ce057e0a8ca53cf64d54e9f',1,'VW::config::base_option']]],
   ['base_5foption',['base_option',['../structVW_1_1config_1_1base__option.html',1,'VW::config']]],
   ['base_5ftask',['base_task',['../structSearch_1_1search.html#ab3ef756d0531c055d67e23d807ca5ea5',1,'Search::search']]],

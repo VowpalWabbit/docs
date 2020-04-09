@@ -9,6 +9,7 @@ var searchData=
   ['greedy',['greedy',['../namespaceVW_1_1cb__explore__adf_1_1greedy.html',1,'VW::cb_explore_adf']]],
   ['internal',['internal',['../namespacevw__slim_1_1internal.html',1,'vw_slim']]],
   ['is_5fscalar_5fimpl',['is_scalar_impl',['../namespaceVW_1_1config_1_1is__scalar__impl.html',1,'VW::config']]],
+  ['learner',['LEARNER',['../namespaceVW_1_1LEARNER.html',1,'VW']]],
   ['math',['math',['../namespaceVW_1_1math.html',1,'VW']]],
   ['regcb',['regcb',['../namespaceVW_1_1cb__explore__adf_1_1regcb.html',1,'VW::cb_explore_adf']]],
   ['shared_5ffeature_5fmerger',['shared_feature_merger',['../namespaceVW_1_1shared__feature__merger.html',1,'VW']]],

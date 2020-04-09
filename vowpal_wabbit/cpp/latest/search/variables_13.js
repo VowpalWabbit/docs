@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['save_5fload_5ff',['save_load_f',['../structLEARNER_1_1save__load__data.html#a47d1b74e82778817799e06712fd98e3c',1,'LEARNER::save_load_data']]],
-  ['save_5fload_5ffd',['save_load_fd',['../structLEARNER_1_1learner.html#a665c6d746c9ef7a629873487fd0071d8',1,'LEARNER::learner']]],
+  ['save_5fload_5ff',['save_load_f',['../structVW_1_1LEARNER_1_1save__load__data.html#ac5cf5313f0395898c19bcc29ade84b58',1,'VW::LEARNER::save_load_data']]],
+  ['save_5fload_5ffd',['save_load_fd',['../structVW_1_1LEARNER_1_1learner.html#a603f1544b57eb67183777fb4a9d89da1',1,'VW::LEARNER::learner']]],
   ['save_5fper_5fpass',['save_per_pass',['../structvw.html#abefa5a1acbb8f854a5a3836328252227',1,'vw']]],
   ['save_5fresume',['save_resume',['../structvw.html#a262f38af13d21b126e0b8fe5c9b1093c',1,'vw']]],
   ['saved',['saved',['../structSlotsState.html#ac750456fe2fb01a49460cf310017535c',1,'SlotsState']]],
@@ -15,8 +15,8 @@ var searchData=
   ['searchstr',['searchstr',['../structvw.html#af1db5f5b1b98a4aa2a8062b6d65d7d89',1,'vw']]],
   ['second_5fobserved_5flabel',['second_observed_label',['../structshared__data.html#aa8665db15ad6cea576c387bfc1236e4a',1,'shared_data']]],
   ['self_5finteraction',['self_interaction',['../structINTERACTIONS_1_1feature__gen__data.html#aac086bebc701873e4bc2dd9e497a22d7',1,'INTERACTIONS::feature_gen_data']]],
-  ['sensitivity_5ff',['sensitivity_f',['../structLEARNER_1_1sensitivity__data.html#ad372693306177080ea8f0b1ca0ab2960',1,'LEARNER::sensitivity_data']]],
-  ['sensitivity_5ffd',['sensitivity_fd',['../structLEARNER_1_1learner.html#a5714bc1d413727fb0d21fafb3105e9a2',1,'LEARNER::learner']]],
+  ['sensitivity_5ff',['sensitivity_f',['../structVW_1_1LEARNER_1_1sensitivity__data.html#a3af18eebab310c678cf75e00e8b06152',1,'VW::LEARNER::sensitivity_data']]],
+  ['sensitivity_5ffd',['sensitivity_fd',['../structVW_1_1LEARNER_1_1learner.html#a6cf9fc939fdd743e8f87befdc26790ff',1,'VW::LEARNER::learner']]],
   ['set_5fminmax',['set_minmax',['../structvw.html#a69eeaba77ee80911e764ffa72edbb2c9',1,'vw']]],
   ['setup_5fobject',['setup_object',['../structHookTask_1_1task__data.html#ac09e6a6a181d27852f215c0d9a72bb04',1,'HookTask::task_data']]],
   ['shared_5fex_5findex',['SHARED_EX_INDEX',['../constant_8h.html#a753d241bccb62003b885fb0b2ae9c802',1,'constant.h']]],
