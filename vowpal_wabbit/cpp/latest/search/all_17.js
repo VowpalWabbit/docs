@@ -4,7 +4,7 @@ var searchData=
   ['wap_5fldf_5fnamespace',['wap_ldf_namespace',['../constant_8h.html#a08e7c9bf8fe6467dafd18a42120013e1',1,'constant.h']]],
   ['wap_5fvalue',['wap_value',['../structCOST__SENSITIVE_1_1wclass.html#ac6c25cd1d7f4be9de04cfd552dbff23e',1,'COST_SENSITIVE::wclass']]],
   ['warm_5fcb_2eh',['warm_cb.h',['../warm__cb_8h.html',1,'']]],
-  ['warm_5fcb_5fsetup',['warm_cb_setup',['../warm__cb_8h.html#a7c63a9f4285ee9cca3d088e843ed7bfc',1,'warm_cb.h']]],
+  ['warm_5fcb_5fsetup',['warm_cb_setup',['../warm__cb_8h.html#a750ea79c1df3429156af9be75b8122eb',1,'warm_cb.h']]],
   ['was_5fsupplied',['was_supplied',['../structVW_1_1config_1_1options__i.html#ab5171ac33158fca4580d3f0658c4929e',1,'VW::config::options_i::was_supplied()'],['../structVW_1_1config_1_1options__boost__po.html#a4bffdc02685a8feeac2079b0dca6ba64',1,'VW::config::options_boost_po::was_supplied()']]],
   ['wclass',['wclass',['../structCOST__SENSITIVE_1_1wclass.html',1,'COST_SENSITIVE']]],
   ['we_5fcreate_5fec',['we_create_ec',['../classezexample.html#a467d625d77484009236aa0a1f1b72b36',1,'ezexample']]],

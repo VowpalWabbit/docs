@@ -4,8 +4,8 @@ var searchData=
   ['accumulate_5favg',['accumulate_avg',['../accumulate_8h.html#a02f60b0c7b8ab43066ceb63249698f52',1,'accumulate.h']]],
   ['accumulate_5fscalar',['accumulate_scalar',['../accumulate_8h.html#a5f9b9046c85ecd62ead81d5fe7a7624b',1,'accumulate.h']]],
   ['accumulate_5fweighted_5favg',['accumulate_weighted_avg',['../accumulate_8h.html#a7f1082b9cdfb73a38f32cd8c0f010548',1,'accumulate.h']]],
-  ['active_5fcover_5fsetup',['active_cover_setup',['../active__cover_8h.html#ae3e85fb932a5d939540004bbda190731',1,'active_cover.h']]],
-  ['active_5fsetup',['active_setup',['../active_8h.html#ae45dc77e379230dd62970bf5cfa18c3e',1,'active.h']]],
+  ['active_5fcover_5fsetup',['active_cover_setup',['../active__cover_8h.html#a1032329df2b187084fee1be46d36bd57',1,'active_cover.h']]],
+  ['active_5fsetup',['active_setup',['../active_8h.html#a3c5b9b241856de34586dfb4c03e21cd0',1,'active.h']]],
   ['add',['add',['../structVW_1_1config_1_1option__group__definition.html#aecce8d13a7a8328d479bb3a52f9d3980',1,'VW::config::option_group_definition::add()'],['../structVW_1_1config_1_1options__serializer__i.html#af7826e4efa76b62256152ea346737171',1,'VW::config::options_serializer_i::add()'],['../structVW_1_1config_1_1options__serializer__boost__po.html#ae2ee7cfeb2ced035553980bb410c4bac',1,'VW::config::options_serializer_boost_po::add()']]],
   ['add_5fallowed',['add_allowed',['../classSearch_1_1predictor.html#a09dacbb9276d59c596533aa9cfb887cd',1,'Search::predictor::add_allowed(action a)'],['../classSearch_1_1predictor.html#a89eda2a983b6cc095d6db98aa6db38a2',1,'Search::predictor::add_allowed(action *a, size_t action_count)'],['../classSearch_1_1predictor.html#ae8dc447230e9191a22ba0bb411d7a0cd',1,'Search::predictor::add_allowed(v_array&lt; action &gt; &amp;a)'],['../classSearch_1_1predictor.html#aa0ea9659a93c304e9b7cb3a3a405e897',1,'Search::predictor::add_allowed(action a, float cost)'],['../classSearch_1_1predictor.html#a404f3b4fc776f1a439d1b51acc85f21c',1,'Search::predictor::add_allowed(action *a, float *costs, size_t action_count)'],['../classSearch_1_1predictor.html#ab6e3037b82e9d189757e1db7da1bdef1',1,'Search::predictor::add_allowed(v_array&lt; std::pair&lt; action, float &gt; &gt; &amp;a)'],['../classSearch_1_1predictor.html#adc89de8b504d4d56bdce80be8bcfd875',1,'Search::predictor::add_allowed(std::vector&lt; std::pair&lt; action, float &gt; &gt; &amp;a)']]],
   ['add_5fand_5fparse',['add_and_parse',['../structVW_1_1config_1_1options__i.html#a93c0de6c3ad57f6fb57441af2c908ba5',1,'VW::config::options_i::add_and_parse()'],['../structVW_1_1config_1_1options__boost__po.html#a91a481a5da5ecec7e982151e8ea797cf',1,'VW::config::options_boost_po::add_and_parse()']]],
@@ -47,6 +47,6 @@ var searchData=
   ['as_5fmultiline',['as_multiline',['../namespaceVW_1_1LEARNER.html#abcef6872def347bdad862409bdb35326',1,'VW::LEARNER']]],
   ['as_5fsingleline',['as_singleline',['../namespaceVW_1_1LEARNER.html#aee01f4fe4f1ec032609e818cfb0cebe4',1,'VW::LEARNER']]],
   ['audit',['audit',['../classfeatures__value__index__audit__iterator.html#a0bd1950c29efff5156c33ba4e27b3452',1,'features_value_index_audit_iterator']]],
-  ['audit_5fregressor_5fsetup',['audit_regressor_setup',['../audit__regressor_8h.html#a1731bf88fa5aeaf8cf2226aa4170d53f',1,'audit_regressor.h']]],
-  ['autolink_5fsetup',['autolink_setup',['../autolink_8h.html#a49681d11f30088f3a1f27240f8caca7a',1,'autolink.h']]]
+  ['audit_5fregressor_5fsetup',['audit_regressor_setup',['../audit__regressor_8h.html#a3df69f9384b672a5cf4249191fc8495d',1,'audit_regressor.h']]],
+  ['autolink_5fsetup',['autolink_setup',['../autolink_8h.html#a884a19682c32fd1da7109825826cdb08',1,'autolink.h']]]
 ];

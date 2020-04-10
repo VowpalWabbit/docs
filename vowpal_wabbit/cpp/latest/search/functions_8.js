@@ -21,7 +21,7 @@ var searchData=
   ['int',['Int',['../structVWReaderHandler.html#acff99671bc9ef886b71cc00a09741d45',1,'VWReaderHandler']]],
   ['int64',['Int64',['../structVWReaderHandler.html#aee6696771d323ac1e6500738a027fffb',1,'VWReaderHandler']]],
   ['int_5fof_5fstring',['int_of_string',['../parse__primitives_8h.html#a87d4af59fea5bc25b64dd3c854ff4d25',1,'parse_primitives.h']]],
-  ['interact_5fsetup',['interact_setup',['../interact_8h.html#a2e5531aac5705465133419986f19ad6d',1,'interact.h']]],
+  ['interact_5fsetup',['interact_setup',['../interact_8h.html#acabe826851aae05e41d703e1c973d07a',1,'interact.h']]],
   ['interaction_5fvalue',['INTERACTION_VALUE',['../namespaceINTERACTIONS.html#a85d42969fe5fe2302e2017a180202ed7',1,'INTERACTIONS']]],
   ['io_5fbuf',['io_buf',['../classio__buf.html#ae01bc5dd5cd7128faeff147ce34a1f36',1,'io_buf']]],
   ['is_5fcb_5fexplore_5fadf',['is_cb_explore_adf',['../classvw__slim_1_1vw__predict.html#a181a3da2b958c2bd94e89216f238758b',1,'vw_slim::vw_predict']]],

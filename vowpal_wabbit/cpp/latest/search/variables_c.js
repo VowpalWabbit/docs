@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['l',['l',['../structexample.html#a0c87f6e82d9c95ae42158bdbdab3acf5',1,'example::l()'],['../structflat__example.html#a39d3bef5f2dd630f893b46f1a7d16518',1,'flat_example::l()'],['../structvw.html#a7e45fe54c22277de4bf1ed9ad1a0abbb',1,'vw::l()']]],
+  ['l',['l',['../structexample.html#a0c87f6e82d9c95ae42158bdbdab3acf5',1,'example::l()'],['../structflat__example.html#a39d3bef5f2dd630f893b46f1a7d16518',1,'flat_example::l()'],['../structvw.html#a24fdb2776f7e855ca10895ca352c61fa',1,'vw::l()']]],
   ['l1_5flambda',['l1_lambda',['../structvw.html#a029233587c89ac4d4c1c1d70aa8c1640',1,'vw']]],
   ['l2_5flambda',['l2_lambda',['../structvw.html#a3710feef98613832b4c42744007b1093',1,'vw']]],
   ['label',['label',['../structMULTICLASS_1_1label__t.html#aa8b080653e3c08b5363152009728453d',1,'MULTICLASS::label_t::label()'],['../structlabel__data.html#a09103f622b965d8c14f0047b53ba7fe1',1,'label_data::label()']]],

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['l',['l',['../structexample.html#a0c87f6e82d9c95ae42158bdbdab3acf5',1,'example::l()'],['../structflat__example.html#a39d3bef5f2dd630f893b46f1a7d16518',1,'flat_example::l()'],['../structvw.html#a7e45fe54c22277de4bf1ed9ad1a0abbb',1,'vw::l()']]],
+  ['l',['l',['../structexample.html#a0c87f6e82d9c95ae42158bdbdab3acf5',1,'example::l()'],['../structflat__example.html#a39d3bef5f2dd630f893b46f1a7d16518',1,'flat_example::l()'],['../structvw.html#a24fdb2776f7e855ca10895ca352c61fa',1,'vw::l()']]],
   ['l1_5flambda',['l1_lambda',['../structvw.html#a029233587c89ac4d4c1c1d70aa8c1640',1,'vw']]],
   ['l2_5flambda',['l2_lambda',['../structvw.html#a3710feef98613832b4c42744007b1093',1,'vw']]],
   ['label',['label',['../structCB__EVAL_1_1label.html',1,'CB_EVAL']]],
@@ -37,13 +37,13 @@ var searchData=
   ['last_5fpred_5freg',['last_pred_reg',['../structGEN__CS_1_1cb__to__cs.html#a4d390b9d79b8a71897d727dea0299356',1,'GEN_CS::cb_to_cs']]],
   ['lda',['lda',['../structvw.html#a64bc066c8b21fa67a5a7b2700fb9160b',1,'vw']]],
   ['lda_5fcore_2eh',['lda_core.h',['../lda__core_8h.html',1,'']]],
-  ['lda_5fsetup',['lda_setup',['../lda__core_8h.html#af0c1f8d44e25e5c00f56edae9351b696',1,'lda_core.h']]],
+  ['lda_5fsetup',['lda_setup',['../lda__core_8h.html#a11c5b9f0067dbab1a38a327acf571dce',1,'lda_core.h']]],
   ['ldict',['ldict',['../structshared__data.html#af3f34859ae9c5e9494362515dc05de33',1,'shared_data']]],
-  ['learn',['learn',['../structVW_1_1cb__explore__adf_1_1cb__explore__adf__base.html#aaf35b6a2b6b77dec41953df48509a218',1,'VW::cb_explore_adf::cb_explore_adf_base::learn()'],['../structvw.html#adb9d40ecb21926593d311fc6a6ec5f29',1,'vw::learn(example &amp;)'],['../structvw.html#ae1057acfc5cb2ee3f9bc017307e8fd88',1,'vw::learn(multi_ex &amp;)'],['../structVW_1_1LEARNER_1_1learner.html#a5c925112a00430ff4390f3bb53d7de76',1,'VW::LEARNER::learner::learn()'],['../structslates_1_1slates__data.html#ad857d2be48d5caba3fe7259ea50ca1e7',1,'slates::slates_data::learn()']]],
+  ['learn',['learn',['../structVW_1_1cb__explore__adf_1_1cb__explore__adf__base.html#a875201d16d873a1b3106cc67e9d40066',1,'VW::cb_explore_adf::cb_explore_adf_base::learn()'],['../structvw.html#adb9d40ecb21926593d311fc6a6ec5f29',1,'vw::learn(example &amp;)'],['../structvw.html#ae1057acfc5cb2ee3f9bc017307e8fd88',1,'vw::learn(multi_ex &amp;)'],['../structVW_1_1LEARNER_1_1learner.html#a5c925112a00430ff4390f3bb53d7de76',1,'VW::LEARNER::learner::learn()'],['../structslates_1_1slates__data.html#a1f0e6bd7ac68fe2496fa346683ba775e',1,'slates::slates_data::learn()']]],
   ['learn_5fdata',['learn_data',['../structVW_1_1LEARNER_1_1learn__data.html',1,'VW::LEARNER']]],
   ['learn_5ff',['learn_f',['../structVW_1_1LEARNER_1_1learn__data.html#aa7342020a50ec32f1408367624329c3d',1,'VW::LEARNER::learn_data']]],
   ['learn_5ffd',['learn_fd',['../structVW_1_1LEARNER_1_1learner.html#acf4c745328e11384a9d943dd5e7d0fb8',1,'VW::LEARNER::learner']]],
-  ['learn_5for_5fpredict',['learn_or_predict',['../structslates_1_1slates__data.html#aa45219ac14e89e20d251f9ce006beb58',1,'slates::slates_data']]],
+  ['learn_5for_5fpredict',['learn_or_predict',['../structslates_1_1slates__data.html#a6b112e455b513502fbef3d734f02c6ab',1,'slates::slates_data']]],
   ['learner',['learner',['../structVW_1_1LEARNER_1_1learner.html#a18c8906c6c14bf0be2f0da934762496b',1,'VW::LEARNER::learner']]],
   ['learner',['learner',['../structVW_1_1LEARNER_1_1learner.html',1,'VW::LEARNER']]],
   ['learner_2eh',['learner.h',['../learner_8h.html',1,'']]],
@@ -64,7 +64,7 @@ var searchData=
   ['location_5fvalue',['location_value',['../classvw__slim_1_1internal_1_1location__value.html#abd400d4f784b972fd94f4a82d9ae013c',1,'vw_slim::internal::location_value']]],
   ['lock_5fdone',['lock_done',['../parser_8h.html#a0e83599c20ec7a560ea71a498f012aee',1,'parser.h']]],
   ['log_5fmulti_2eh',['log_multi.h',['../log__multi_8h.html',1,'']]],
-  ['log_5fmulti_5fsetup',['log_multi_setup',['../log__multi_8h.html#a54d45203f86fbdd137793476cbe82b30',1,'log_multi.h']]],
+  ['log_5fmulti_5fsetup',['log_multi_setup',['../log__multi_8h.html#a5da7392c17bdec31947da1b4927235e8',1,'log_multi.h']]],
   ['logger',['logger',['../structvw.html#a6f3a5a390dca7aeac4ab2116bcc3f8a8',1,'vw']]],
   ['loop_5fend',['loop_end',['../structINTERACTIONS_1_1feature__gen__data.html#a111a28e44d2bb5bb445b7b95206e86f8',1,'INTERACTIONS::feature_gen_data']]],
   ['loop_5fidx',['loop_idx',['../structINTERACTIONS_1_1feature__gen__data.html#a673ca244fe02d9673203e4af180981ee',1,'INTERACTIONS::feature_gen_data']]],
@@ -73,7 +73,7 @@ var searchData=
   ['loss_5ffunctions_2eh',['loss_functions.h',['../loss__functions_8h.html',1,'']]],
   ['lp',['lp',['../structparser.html#af15b434af656966700c94a50a92c4fcd',1,'parser']]],
   ['lrq_2eh',['lrq.h',['../lrq_8h.html',1,'']]],
-  ['lrq_5fsetup',['lrq_setup',['../lrq_8h.html#a846fcc9c2ae9fb6fc04a02fba5fb88e3',1,'lrq.h']]],
+  ['lrq_5fsetup',['lrq_setup',['../lrq_8h.html#a5f5be6c40d888aa65314fc5864ae3337',1,'lrq.h']]],
   ['lrqfa_2eh',['lrqfa.h',['../lrqfa_8h.html',1,'']]],
-  ['lrqfa_5fsetup',['lrqfa_setup',['../lrqfa_8h.html#af65445a708508ea0b30f7585dd312522',1,'lrqfa.h']]]
+  ['lrqfa_5fsetup',['lrqfa_setup',['../lrqfa_8h.html#a785d4e23f86b00f65c77f884919213c6',1,'lrqfa.h']]]
 ];

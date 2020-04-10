@@ -48,7 +48,7 @@ var searchData=
   ['int_5ffloat',['int_float',['../unionexploration_1_1int__float.html',1,'exploration']]],
   ['int_5fof_5fstring',['int_of_string',['../parse__primitives_8h.html#a87d4af59fea5bc25b64dd3c854ff4d25',1,'parse_primitives.h']]],
   ['interact_2eh',['interact.h',['../interact_8h.html',1,'']]],
-  ['interact_5fsetup',['interact_setup',['../interact_8h.html#a2e5531aac5705465133419986f19ad6d',1,'interact.h']]],
+  ['interact_5fsetup',['interact_setup',['../interact_8h.html#acabe826851aae05e41d703e1c973d07a',1,'interact.h']]],
   ['interaction_5fvalue',['INTERACTION_VALUE',['../namespaceINTERACTIONS.html#a85d42969fe5fe2302e2017a180202ed7',1,'INTERACTIONS']]],
   ['interactions',['INTERACTIONS',['../namespaceINTERACTIONS.html',1,'INTERACTIONS'],['../structexample__predict.html#afe01acc762c1cf62060e68f18c1ee3d5',1,'example_predict::interactions()'],['../structvw.html#ab2235636a350b07cef3259da29991b73',1,'vw::interactions()'],['../classCCBOutcomeList.html#a5700fd69e940bef9343ca090b447c07e',1,'CCBOutcomeList::interactions()']]],
   ['interactions_2eh',['interactions.h',['../interactions_8h.html',1,'']]],

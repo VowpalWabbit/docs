@@ -18,7 +18,7 @@ var searchData=
   ['read_5fstring',['read_string',['../classvw__slim_1_1model__parser.html#a4feb479f60a6842262a1f40e409d828c',1,'vw_slim::model_parser']]],
   ['read_5fweights',['read_weights',['../classvw__slim_1_1model__parser.html#a04ebc770ef447e7dd251e30d71c750c2',1,'vw_slim::model_parser::read_weights(std::unique_ptr&lt; W &gt; &amp;weights, uint64_t weight_length)'],['../classvw__slim_1_1model__parser.html#af11176e2c8e1c95b7b535f7c9aaef09d',1,'vw_slim::model_parser::read_weights(std::unique_ptr&lt; W &gt; &amp;weights, uint32_t num_bits, uint32_t stride_shift)']]],
   ['readto',['readto',['../io__buf_8h.html#a81561bb37d1949a8da248e596f45b44f',1,'io_buf.h']]],
-  ['recall_5ftree_5fsetup',['recall_tree_setup',['../recall__tree_8h.html#a22354deeb5a4322c19459768d35638e5',1,'recall_tree.h']]],
+  ['recall_5ftree_5fsetup',['recall_tree_setup',['../recall__tree_8h.html#acd39bf46df1a2310fd0ce2fc53fe7666',1,'recall_tree.h']]],
   ['recompute_5fduals',['recompute_duals',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#affa2684872b3d923e2e3563b4b03a3cb',1,'VW::distributionally_robust::ChiSquared']]],
   ['recur_5fsensitivity',['recur_sensitivity',['../namespaceVW_1_1LEARNER.html#ab6e5c6e7bedf2db4bf91c3bc2b3527c9',1,'VW::LEARNER']]],
   ['reduce',['reduce',['../classAllReduceSockets.html#ab86343f17853fab29daae3638934539a',1,'AllReduceSockets']]],

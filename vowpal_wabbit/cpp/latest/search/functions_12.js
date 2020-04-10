@@ -8,7 +8,7 @@ var searchData=
   ['to_5fargv_5fescaped',['to_argv_escaped',['../namespaceVW.html#aaa53638dfb7741e4f9934805338d539c',1,'VW']]],
   ['to_5fstring',['to_string',['../structVW_1_1version__struct.html#a26aad920a181656de96902a0d41eb79e',1,'VW::version_struct::to_string()'],['../learner_8h.html#acc691ecf423bae5c6acd360576699739',1,'to_string():&#160;learner.h']]],
   ['tokenize',['tokenize',['../parse__primitives_8h.html#a5927382966f47ee627aa402ed79bf127',1,'parse_primitives.h']]],
-  ['topk_5fsetup',['topk_setup',['../topk_8h.html#a4abb2fc2649f1c49a28a8b9c0a9684aa',1,'topk.h']]],
+  ['topk_5fsetup',['topk_setup',['../topk_8h.html#a07ff7b8d1a2c0224dab44d2c5ba52305',1,'topk.h']]],
   ['train',['train',['../classezexample.html#a2663a9ccb1d95c6ddbc6ee5bd891cbe9',1,'ezexample']]],
   ['transitionstate',['TransitionState',['../structContext.html#a2361db68e5270b12758993fba441f47d',1,'Context']]],
   ['trunc_5fweight',['trunc_weight',['../namespaceGD.html#a9c15740d0f166048172adbe5b0e7531b',1,'GD']]],

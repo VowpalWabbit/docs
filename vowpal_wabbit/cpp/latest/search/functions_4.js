@@ -1,7 +1,7 @@
 var searchData=
 [
   ['ec_5fis_5fexample_5fheader',['ec_is_example_header',['../namespaceCB.html#a2e10d3c30cd9736cd49e800ede17cc6c',1,'CB::ec_is_example_header()'],['../namespaceCCB.html#acc94442ee0e15eb69296c8545b2f946b',1,'CCB::ec_is_example_header()'],['../namespaceCOST__SENSITIVE.html#ab5c97d9fe5b4c5655fd8ac5f3cd30513',1,'COST_SENSITIVE::ec_is_example_header()']]],
-  ['ect_5fsetup',['ect_setup',['../ect_8h.html#a729bfd02c675334e52e8fc7b199e8b6d',1,'ect.h']]],
+  ['ect_5fsetup',['ect_setup',['../ect_8h.html#a1c17cd60e06518a0c0bee21e17691e10',1,'ect.h']]],
   ['effn',['effn',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#a54fc689e79a1b3cfc35740a6cfe0fa16',1,'VW::distributionally_robust::ChiSquared']]],
   ['emplace_5fback',['emplace_back',['../structv__array.html#a15413ef15d35a3d43c342d747165e2dc',1,'v_array']]],
   ['empty',['empty',['../classBeam_1_1beam.html#ae0b02c7464eaf2ca9dc2a227493dc6f1',1,'Beam::beam::empty()'],['../structVW_1_1no__lock__object__pool.html#aeb606330d613b4c3057f2aca982c9cbc',1,'VW::no_lock_object_pool::empty()'],['../structVW_1_1value__object__pool.html#aa7754d54c029f87ea011b8f51cef66b9',1,'VW::value_object_pool::empty()'],['../structVW_1_1object__pool.html#a07d034ac1bf0da39d45ce968bd34fe55',1,'VW::object_pool::empty()'],['../structv__array.html#a01916436cabbd621bf40731f78360550',1,'v_array::empty()']]],
@@ -26,8 +26,8 @@ var searchData=
   ['example_5fis_5fnewline_5fnot_5fheader',['example_is_newline_not_header',['../namespaceCB__ALGS.html#a0066e59b0219432265df0426329ea266',1,'CB_ALGS']]],
   ['example_5fpredict_5fbuilder',['example_predict_builder',['../classvw__slim_1_1example__predict__builder.html#a256f5181516491c5b19f5c1707b51637',1,'vw_slim::example_predict_builder::example_predict_builder(example_predict *ex, char *namespace_name, uint32_t feature_index_num_bits=18)'],['../classvw__slim_1_1example__predict__builder.html#a1e4077d8b55d40414cb93ba7dc5206aa',1,'vw_slim::example_predict_builder::example_predict_builder(example_predict *ex, namespace_index namespace_idx, uint32_t feature_index_num_bits=18)']]],
   ['expand_5finteractions',['expand_interactions',['../namespaceINTERACTIONS.html#a99d727992d21c53dec1fde14f3605bc2',1,'INTERACTIONS']]],
-  ['explore_5feval_5fsetup',['explore_eval_setup',['../explore__eval_8h.html#a1715915f566cd6d39d4f92ea202d9fa2',1,'explore_eval.h']]],
+  ['explore_5feval_5fsetup',['explore_eval_setup',['../explore__eval_8h.html#a94b216307397dd23c7951758cb70ddfc',1,'explore_eval.h']]],
   ['export_5fexample',['export_example',['../namespaceVW.html#a358dde510ef01529c4069b5ac1a5c108',1,'VW']]],
-  ['expreplay_5fsetup',['expreplay_setup',['../namespaceExpReplay.html#ac7f62f3bcfc749f772cec7cbbf30da61',1,'ExpReplay']]],
+  ['expreplay_5fsetup',['expreplay_setup',['../namespaceExpReplay.html#ad63808ef4c1f3ad225dca598a71ac85d',1,'ExpReplay']]],
   ['ezexample',['ezexample',['../classezexample.html#aaaa786481365ef9c0e50b1465fdf6947',1,'ezexample::ezexample(const ezexample &amp;ex)=delete'],['../classezexample.html#a97a6cba663f2bf212c62ef3aec7a886a',1,'ezexample::ezexample(vw *this_vw, bool multiline=false, vw *this_vw_parser=nullptr)'],['../classezexample.html#aa5e37570c5f4a8b5d5568ff692ed0da9',1,'ezexample::ezexample(vw *this_vw, example *this_ec, bool multiline=false, vw *this_vw_parser=nullptr)']]]
 ];

@@ -10,7 +10,7 @@ var searchData=
   ['scalars',['scalars',['../unionpolyprediction.html#acd55cc5dd67b6cb5a527bf2bdc66bf15',1,'polyprediction']]],
   ['sch',['sch',['../classSearch_1_1BaseTask.html#a011d890a114aab7249e05018e476dc89',1,'Search::BaseTask::sch()'],['../classSearch_1_1predictor.html#a4e002090fe6bf4ab9d7573c34960f9fb',1,'Search::predictor::sch()']]],
   ['score',['score',['../structACTION__SCORE_1_1action__score.html#ad27ff92133e2effa2d6dfefe415b2db4',1,'ACTION_SCORE::action_score']]],
-  ['scorer',['scorer',['../structGEN__CS_1_1cb__to__cs.html#a6148b9ece5c875a783a78db0159a29d0',1,'GEN_CS::cb_to_cs::scorer()'],['../structGEN__CS_1_1cb__to__cs__adf.html#a99c3b6929141f8eaa20b99d922987504',1,'GEN_CS::cb_to_cs_adf::scorer()'],['../structvw.html#aa147fa0e8ddbe1955c4cac146c7267f5',1,'vw::scorer()']]],
+  ['scorer',['scorer',['../structGEN__CS_1_1cb__to__cs.html#a1552d1d20ae26af989db7c160e288469',1,'GEN_CS::cb_to_cs::scorer()'],['../structGEN__CS_1_1cb__to__cs__adf.html#af04d1d44d5e5bc301a8d1d0fd61bb967',1,'GEN_CS::cb_to_cs_adf::scorer()'],['../structvw.html#a50989b3915c3836f0db7ba659ffa73a2',1,'vw::scorer()']]],
   ['sd',['sd',['../structvw.html#aada16c220b8d3eaf62aaee86168dde5e',1,'vw']]],
   ['searchstr',['searchstr',['../structvw.html#af1db5f5b1b98a4aa2a8062b6d65d7d89',1,'vw']]],
   ['second_5fobserved_5flabel',['second_observed_label',['../structshared__data.html#aa8665db15ad6cea576c387bfc1236e4a',1,'shared_data']]],
