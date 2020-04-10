@@ -27,6 +27,7 @@ var searchData=
   ['_7estride_5fshift_5fguard',['~stride_shift_guard',['../classvw__slim_1_1stride__shift__guard.html#a3ffe0ed6488b88a0a81df2f4e82f880c',1,'vw_slim::stride_shift_guard']]],
   ['_7evalue_5fobject_5fpool',['~value_object_pool',['../structVW_1_1value__object__pool.html#a6d1987e4678b7dba7aa9ae4b48a3905b',1,'VW::value_object_pool']]],
   ['_7eversion_5fstruct',['~version_struct',['../structVW_1_1version__struct.html#aa1217de574d459e67d340a2f63fd658b',1,'VW::version_struct']]],
+  ['_7evw',['~vw',['../structvw.html#a8b205287bbc6f9773885db2d04b1cbc2',1,'vw']]],
   ['_7evw_5fargument_5fdisagreement_5fexception',['~vw_argument_disagreement_exception',['../classVW_1_1vw__argument__disagreement__exception.html#a573b93ada6d726ad1fd48b82b4095067',1,'VW::vw_argument_disagreement_exception']]],
   ['_7evw_5fargument_5finvalid_5fvalue_5fexception',['~vw_argument_invalid_value_exception',['../classVW_1_1vw__argument__invalid__value__exception.html#aaf820ea4a58da5aba69e01fd792f949f',1,'VW::vw_argument_invalid_value_exception']]],
   ['_7evw_5fexception',['~vw_exception',['../classVW_1_1vw__exception.html#a2f4cc48f2cb670a5aa0d1fd8b487300a',1,'VW::vw_exception']]],
