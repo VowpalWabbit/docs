@@ -12,7 +12,7 @@ var searchData=
   ['unique_5fid',['unique_id',['../classAllReduceSockets.html#ad365b9d51ebb080a25ec97b8c4952889',1,'AllReduceSockets']]],
   ['unique_5fsort_2eh',['unique_sort.h',['../unique__sort_8h.html',1,'']]],
   ['unique_5fsort_5ffeatures',['unique_sort_features',['../unique__sort_8h.html#a821d46680f1930b521884c4805783bf3',1,'unique_sort.h']]],
-  ['unset',['unset',['../namespaceCCB.html#a58ee4b1ece77de222418e9eb75203cf5a81619981df4dbaaaae9411f0ffc93734',1,'CCB::unset()'],['../namespaceslates.html#a4271b3e088dd8ceb0dd0217b03940e6ca3c749b0de2db63501a0e239cb358dab1',1,'slates::unset()']]],
+  ['unset',['unset',['../namespaceCCB.html#a58ee4b1ece77de222418e9eb75203cf5a81619981df4dbaaaae9411f0ffc93734',1,'CCB::unset()'],['../namespaceVW_1_1slates.html#a894cb7b1b775c40313bbb5e1c4b48a50aa004f5e5953fa776ffbd2ca967a0104c',1,'VW::slates::unset()']]],
   ['update',['update',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#a94e981844ac9c0bdaa6d4bde9a61d894',1,'VW::distributionally_robust::ChiSquared::update()'],['../structshared__data.html#ad3b0fc9176c689eb63bf255499223c62',1,'shared_data::update()'],['../structVW_1_1LEARNER_1_1learner.html#af994d66959b825bc3b92af991529c7e6',1,'VW::LEARNER::learner::update()']]],
   ['update_5fdump_5finterval',['update_dump_interval',['../structshared__data.html#a86dc26ad7249ba38f03f8a2c6f315f37',1,'shared_data']]],
   ['update_5ff',['update_f',['../structVW_1_1LEARNER_1_1learn__data.html#a756f38f0bee0f8ed57c327836add861b',1,'VW::LEARNER::learn_data']]],

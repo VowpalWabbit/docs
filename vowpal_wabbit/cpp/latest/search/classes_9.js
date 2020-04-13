@@ -3,7 +3,7 @@ var searchData=
   ['label',['label',['../structCB_1_1label.html',1,'CB']]],
   ['label',['label',['../structCB__EVAL_1_1label.html',1,'CB_EVAL']]],
   ['label',['label',['../structCOST__SENSITIVE_1_1label.html',1,'COST_SENSITIVE']]],
-  ['label',['label',['../structslates_1_1label.html',1,'slates']]],
+  ['label',['label',['../structVW_1_1slates_1_1label.html',1,'VW::slates']]],
   ['label',['label',['../structCCB_1_1label.html',1,'CCB']]],
   ['label_5fdata',['label_data',['../structlabel__data.html',1,'']]],
   ['label_5fparser',['label_parser',['../structlabel__parser.html',1,'']]],

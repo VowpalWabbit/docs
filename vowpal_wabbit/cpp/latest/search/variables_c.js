@@ -12,7 +12,7 @@ var searchData=
   ['label_5fstate',['label_state',['../structContext.html#a3c166b5e671667715c4c7e673dfc9afb',1,'Context']]],
   ['label_5ftype',['label_type',['../structvw.html#ae656cbd881ecc9e450e8648e1ebbd16a',1,'vw']]],
   ['label_5fv',['label_v',['../structMULTILABEL_1_1labels.html#ae9b968050adb2459463cffec3b4c38c4',1,'MULTILABEL::labels']]],
-  ['labeled',['labeled',['../structslates_1_1label.html#ab163bc2dcd37622564088bd12032d9af',1,'slates::label']]],
+  ['labeled',['labeled',['../structVW_1_1slates_1_1label.html#a8ee43031c61a9a8a56d4c05bbec341ac',1,'VW::slates::label']]],
   ['last_5fcorrect_5fcost',['last_correct_cost',['../structGEN__CS_1_1cb__to__cs.html#a84aed12d3c21ee450ffcc3128e3db994',1,'GEN_CS::cb_to_cs']]],
   ['last_5fpred_5freg',['last_pred_reg',['../structGEN__CS_1_1cb__to__cs.html#a4d390b9d79b8a71897d727dea0299356',1,'GEN_CS::cb_to_cs']]],
   ['lda',['lda',['../structvw.html#a64bc066c8b21fa67a5a7b2700fb9160b',1,'vw']]],

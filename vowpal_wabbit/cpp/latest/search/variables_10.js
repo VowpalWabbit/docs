@@ -41,7 +41,7 @@ var searchData=
   ['printable_5fstart',['printable_start',['../namespaceINTERACTIONS.html#ade187a9be6c80424795021d22c045441',1,'INTERACTIONS']]],
   ['priv',['priv',['../structSearch_1_1search.html#a8e29701faa8a29f9ab75817000094dc8',1,'Search::search']]],
   ['prob',['prob',['../unionpolyprediction.html#a5ae119a8dc2c7652b4c8568a424c7698',1,'polyprediction']]],
-  ['probabilities',['probabilities',['../structCCB_1_1conditional__contextual__bandit__outcome.html#ac641f834f3dcf62b37e8013408a73fb5',1,'CCB::conditional_contextual_bandit_outcome::probabilities()'],['../structDecisionServiceInteraction.html#a2f21287e8b294ecb77353d00be37c981',1,'DecisionServiceInteraction::probabilities()'],['../structslates_1_1label.html#a6d84a6c993e9dfbde8a12fb643c843cb',1,'slates::label::probabilities()']]],
+  ['probabilities',['probabilities',['../structCCB_1_1conditional__contextual__bandit__outcome.html#ac641f834f3dcf62b37e8013408a73fb5',1,'CCB::conditional_contextual_bandit_outcome::probabilities()'],['../structDecisionServiceInteraction.html#a2f21287e8b294ecb77353d00be37c981',1,'DecisionServiceInteraction::probabilities()'],['../structVW_1_1slates_1_1label.html#a21f6a4a34b19aa952b134bd01d06eaad',1,'VW::slates::label::probabilities()']]],
   ['probability',['probability',['../structCB_1_1cb__class.html#a19e59d902fb4918ba679fa5f73f582ac',1,'CB::cb_class']]],
   ['probability_5ftolerance',['probability_tolerance',['../constant_8h.html#a2d817f5db781c538da7d027e030909b8',1,'constant.h']]],
   ['probabilityofdrop',['probabilityOfDrop',['../structDecisionServiceInteraction.html#a0e2a393fe1b1427ca5ee5c3fb98ea785',1,'DecisionServiceInteraction']]],

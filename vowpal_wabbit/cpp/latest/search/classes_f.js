@@ -8,7 +8,7 @@ var searchData=
   ['search_5ftask',['search_task',['../structSearch_1_1search__task.html',1,'Search']]],
   ['sensitivity_5fdata',['sensitivity_data',['../structVW_1_1LEARNER_1_1sensitivity__data.html',1,'VW::LEARNER']]],
   ['shared_5fdata',['shared_data',['../structshared__data.html',1,'']]],
-  ['slates_5fdata',['slates_data',['../structslates_1_1slates__data.html',1,'slates']]],
+  ['slates_5fdata',['slates_data',['../structVW_1_1slates_1_1slates__data.html',1,'VW::slates']]],
   ['slotsstate',['SlotsState',['../structSlotsState.html',1,'']]],
   ['spanningtree',['SpanningTree',['../classVW_1_1SpanningTree.html',1,'VW']]],
   ['sparse_5fiterator',['sparse_iterator',['../classsparse__iterator.html',1,'']]],
