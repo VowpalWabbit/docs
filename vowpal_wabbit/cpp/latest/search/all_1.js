@@ -16,7 +16,7 @@ var searchData=
   ['action_5fscores',['action_scores',['../namespaceACTION__SCORE.html#a19b4924cbde0701f86192906861fae94',1,'ACTION_SCORE::action_scores()'],['../learner_8h.html#a5514b4a9448315c23ec344ca2d139e24a43568e6f9bdfff4805f9154606cde508',1,'action_scores():&#160;learner.h']]],
   ['action_5fsum',['action_sum',['../structGEN__CS_1_1cb__to__cs__adf.html#a603aadff469c9a586f031e2833c2e076',1,'GEN_CS::cb_to_cs_adf']]],
   ['action_5ftype',['ACTION_TYPE',['../constant_8h.html#aa24f88139565835c44463bfbf3e4cd34',1,'constant.h']]],
-  ['actions',['actions',['../classLabelObjectState.html#ac8c3b4ad435a3391d3788a3c27613aea',1,'LabelObjectState::actions()'],['../structDecisionServiceInteraction.html#a5dc3dbcb448871ba574eeb0eb2f3838c',1,'DecisionServiceInteraction::actions()'],['../classCCBOutcomeList.html#a6111152542be44694b43bcbc5c59dd31',1,'CCBOutcomeList::actions()']]],
+  ['actions',['actions',['../structDecisionServiceInteraction.html#a5dc3dbcb448871ba574eeb0eb2f3838c',1,'DecisionServiceInteraction::actions()'],['../classLabelObjectState.html#ac8c3b4ad435a3391d3788a3c27613aea',1,'LabelObjectState::actions()'],['../classSlotOutcomeList.html#a07de2d8a7544511d401c70a553b7a3ee',1,'SlotOutcomeList::actions()']]],
   ['active',['active',['../structactive.html',1,'active'],['../structBeam_1_1beam__element.html#a60ae4810410bb735e6af202cf7ffc131',1,'Beam::beam_element::active()'],['../structvw.html#a150b8efa21ed8f6425698892a17537a8',1,'vw::active()']]],
   ['active_2eh',['active.h',['../active_8h.html',1,'']]],
   ['active_5fc0',['active_c0',['../structactive.html#a3421d80ae5bc66b42dadc1a6d608d5fe',1,'active']]],

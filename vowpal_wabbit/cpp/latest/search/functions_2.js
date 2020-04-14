@@ -17,7 +17,6 @@ var searchData=
   ['cbify_5fsetup',['cbify_setup',['../cbify_8h.html#adeca255cfb94597ce27b11fdeac86bdb',1,'cbify.h']]],
   ['cbifyldf_5fsetup',['cbifyldf_setup',['../cbify_8h.html#ac7fa2cbccd5fe0608a4f5c437b15ef76',1,'cbify.h']]],
   ['ccb_5fexplore_5fadf_5fsetup',['ccb_explore_adf_setup',['../namespaceCCB.html#a8a1233361f3872018e853a94993cafca',1,'CCB']]],
-  ['ccboutcomelist',['CCBOutcomeList',['../classCCBOutcomeList.html#ac87b69b542c01adbfcd91f0cb8a6a219',1,'CCBOutcomeList']]],
   ['ceil_5flog_5f2',['ceil_log_2',['../namespacevw__slim.html#a922890dab896ad4cb103cb6008971f8f',1,'vw_slim']]],
   ['cend',['cend',['../classsparse__parameters.html#a850944cb5c9dafc97b1e334aad51588e',1,'sparse_parameters::cend()'],['../classdense__parameters.html#af74d398d824492e194dab093ac39a62b',1,'dense_parameters::cend()'],['../structv__array.html#a02522d0efcc9eaea25c327a61a7718e6',1,'v_array::cend()']]],
   ['check_5funregistered',['check_unregistered',['../structVW_1_1config_1_1options__i.html#a8e919613bfe9058c3b390ed23c7179e5',1,'VW::config::options_i::check_unregistered()'],['../structVW_1_1config_1_1options__boost__po.html#ab33138bc413a3c6b7c6156d17954274c',1,'VW::config::options_boost_po::check_unregistered()']]],

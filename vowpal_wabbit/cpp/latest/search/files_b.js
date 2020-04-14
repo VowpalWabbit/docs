@@ -1,12 +1,11 @@
 var searchData=
 [
-  ['marginal_2eh',['marginal.h',['../marginal_8h.html',1,'']]],
-  ['memory_2eh',['memory.h',['../memory_8h.html',1,'']]],
-  ['memory_5ftree_2eh',['memory_tree.h',['../memory__tree_8h.html',1,'']]],
-  ['mf_2eh',['mf.h',['../mf_8h.html',1,'']]],
-  ['model_5fparser_2eh',['model_parser.h',['../model__parser_8h.html',1,'']]],
-  ['multiclass_2eh',['multiclass.h',['../multiclass_8h.html',1,'']]],
-  ['multilabel_2eh',['multilabel.h',['../multilabel_8h.html',1,'']]],
-  ['multilabel_5foaa_2eh',['multilabel_oaa.h',['../multilabel__oaa_8h.html',1,'']]],
-  ['mwt_2eh',['mwt.h',['../mwt_8h.html',1,'']]]
+  ['label_5fdictionary_2eh',['label_dictionary.h',['../label__dictionary_8h.html',1,'']]],
+  ['label_5fparser_2eh',['label_parser.h',['../label__parser_8h.html',1,'']]],
+  ['lda_5fcore_2eh',['lda_core.h',['../lda__core_8h.html',1,'']]],
+  ['learner_2eh',['learner.h',['../learner_8h.html',1,'']]],
+  ['log_5fmulti_2eh',['log_multi.h',['../log__multi_8h.html',1,'']]],
+  ['loss_5ffunctions_2eh',['loss_functions.h',['../loss__functions_8h.html',1,'']]],
+  ['lrq_2eh',['lrq.h',['../lrq_8h.html',1,'']]],
+  ['lrqfa_2eh',['lrqfa.h',['../lrqfa_8h.html',1,'']]]
 ];

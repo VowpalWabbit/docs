@@ -27,7 +27,7 @@ var searchData=
   ['initialize',['initialize',['../structSearch_1_1search__task.html#a9853405a85b5a1371f97e690c19416cd',1,'Search::search_task::initialize()'],['../structSearch_1_1search__metatask.html#a55f458263b052a399467df48f0b58930',1,'Search::search_metatask::initialize()']]],
   ['inner_5fpool',['inner_pool',['../structVW_1_1object__pool.html#ad1b6128ddd9ef4e380c1e10e935c84ad',1,'VW::object_pool']]],
   ['input',['input',['../structparser.html#a9518bd05717a9c026371ff1044768f96',1,'parser']]],
-  ['interactions',['interactions',['../structexample__predict.html#afe01acc762c1cf62060e68f18c1ee3d5',1,'example_predict::interactions()'],['../structvw.html#ab2235636a350b07cef3259da29991b73',1,'vw::interactions()'],['../classCCBOutcomeList.html#a5700fd69e940bef9343ca090b447c07e',1,'CCBOutcomeList::interactions()']]],
+  ['interactions',['interactions',['../structexample__predict.html#afe01acc762c1cf62060e68f18c1ee3d5',1,'example_predict::interactions()'],['../structvw.html#ab2235636a350b07cef3259da29991b73',1,'vw::interactions()'],['../classSlotOutcomeList.html#a0fc1f14e08b16bdb49a5304f6e0d2baa',1,'SlotOutcomeList::interactions()']]],
   ['inv_5fhash_5fregressor_5fname',['inv_hash_regressor_name',['../structvw.html#a85bc04c8d332d8c2933e798375db1af3',1,'vw']]],
   ['invalid_5fvw_5fexample',['INVALID_VW_EXAMPLE',['../vwdll_8h.html#ab50a2eeb73e146706e28920d92929ed9',1,'vwdll.h']]],
   ['invalid_5fvw_5fhandle',['INVALID_VW_HANDLE',['../vwdll_8h.html#ab1541f2a2f55dedf8783039be5ac92bd',1,'vwdll.h']]],

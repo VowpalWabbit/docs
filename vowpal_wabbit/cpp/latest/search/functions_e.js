@@ -6,6 +6,7 @@ var searchData=
   ['parse_5fline_5fjson',['parse_line_json',['../parse__example__json_8h.html#afe9609879dfa63273d15037068190a47',1,'parse_example_json.h']]],
   ['parse_5fmask_5fregressor_5fargs',['parse_mask_regressor_args',['../parse__regressor_8h.html#a38165185a46e204a3c321589da8acdf9',1,'parse_regressor.h']]],
   ['parse_5fmodules',['parse_modules',['../parse__args_8h.html#a7b1487bfae6e23251b34eb112255a5dc',1,'parse_args.h']]],
+  ['parse_5fslates_5fexample',['parse_slates_example',['../parse__slates__example__json_8h.html#a32065e1c2fa6994e5e0c872b4bb4f7aa',1,'parse_slates_example_json.h']]],
   ['parse_5fsources',['parse_sources',['../parse__args_8h.html#a18d1a01f8740ee2f82de7eb68c31f5b9',1,'parse_args.h']]],
   ['parsefloat',['parseFloat',['../parse__primitives_8h.html#abc245aa41d935b0e093691e2fc0cbc32',1,'parse_primitives.h']]],
   ['parser',['parser',['../structparser.html#acc4d5681ab3211487e3caa8bea347128',1,'parser::parser(size_t ring_size, bool strict_parse_)'],['../structparser.html#a5264db72f6ed8ba82c078af43e3bfab2',1,'parser::parser(const parser &amp;)=delete']]],
@@ -13,6 +14,7 @@ var searchData=
   ['pass_5fup',['pass_up',['../classAllReduceSockets.html#a450c1629bb3e63799a340822dbe1ba96',1,'AllReduceSockets']]],
   ['pop',['pop',['../classVW_1_1ptr__queue.html#a6e41c051fc5776a1e8d51b232e65e71d',1,'VW::ptr_queue::pop()'],['../structv__array.html#aab57c8e60560b774715c19e95cf76c8f',1,'v_array::pop()'],['../v__array_8h.html#af9b7eb63e8239c9e866ebd3fc8ef7570',1,'pop():&#160;v_array.h']]],
   ['pop_5fbest_5fitem',['pop_best_item',['../classBeam_1_1beam.html#ad20a36b0ceb323194a91caa252087026',1,'Beam::beam']]],
+  ['pop_5fns',['pop_ns',['../json__utils_8h.html#a9a24a29fa01e35d8625b1a76802585d4',1,'json_utils.h']]],
   ['popnamespace',['PopNamespace',['../structContext.html#a944e3b06af6954b3744ff4e218b381b3',1,'Context']]],
   ['position',['position',['../classvw__slim_1_1model__parser.html#ac0c9bba31c53ee70919d20f5b44d574f',1,'vw_slim::model_parser']]],
   ['post_5fprediction',['post_prediction',['../classSearch_1_1BaseTask.html#a5dce181c03bac90b2697c47b53b86526',1,'Search::BaseTask']]],
@@ -46,5 +48,6 @@ var searchData=
   ['push_5ffeature',['push_feature',['../classvw__slim_1_1example__predict__builder.html#a6f693aa571f6c8ca6c951834aaa01c36',1,'vw_slim::example_predict_builder']]],
   ['push_5ffeature_5fstring',['push_feature_string',['../classvw__slim_1_1example__predict__builder.html#a179644956b05b05c6374bac36e7b3a58',1,'vw_slim::example_predict_builder']]],
   ['push_5fmany',['push_many',['../v__array_8h.html#a9490092cc42677eee809440465fc6078',1,'v_array.h']]],
+  ['push_5fns',['push_ns',['../json__utils_8h.html#a1554bc5eeefd76bc5253823cd90ba398',1,'json_utils.h']]],
   ['pushnamespace',['PushNamespace',['../structContext.html#ab530801b17951c4cacb1f9a7c472e9d0',1,'Context']]]
 ];

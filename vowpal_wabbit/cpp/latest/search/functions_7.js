@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['handle_5ffeatures_5fvalue',['handle_features_value',['../parse__slates__example__json_8h.html#a0e917143bef3b67e5fd12981b55ed861',1,'parse_slates_example_json.h']]],
   ['hash',['hash',['../classezexample.html#a9f8c33b259da51d46c29693f38bd8781',1,'ezexample::hash(std::string fstr)'],['../classezexample.html#a9d70923eaa800ecca0688d3d0aa673c8',1,'ezexample::hash(char *fstr)'],['../classezexample.html#a4d20f47d1fba625e0b2f0f07ab72be06',1,'ezexample::hash(char c, std::string fstr)'],['../classezexample.html#ab6dbe3c565794705efffbcd3cdfa61c3',1,'ezexample::hash(char c, char *fstr)'],['../classio__buf.html#a2897cff64e19135ab948ede8ec150a04',1,'io_buf::hash()']]],
   ['hash_5ffeature',['hash_feature',['../namespaceVW.html#ae86b6bd5f4f2858597edad920195c5d4',1,'VW']]],
   ['hash_5ffeature_5fcstr',['hash_feature_cstr',['../namespaceVW.html#ac5b4b4e66968188dc1510e629a8325ee',1,'VW']]],

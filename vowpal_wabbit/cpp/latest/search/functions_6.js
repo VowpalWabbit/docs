@@ -45,6 +45,7 @@ var searchData=
   ['get_5fmultilabel_5fpredictions',['get_multilabel_predictions',['../namespaceVW.html#a273f5f1c98414ba01411de006c60c966',1,'VW']]],
   ['get_5fnew_5fexample',['get_new_example',['../classezexample.html#ac08af192bc570906b05d1c91005e2756',1,'ezexample']]],
   ['get_5fnum_5ffeatures',['get_num_features',['../classezexample.html#a3086ec6e30492494f1d544842d6b7cda',1,'ezexample']]],
+  ['get_5fnumber',['get_number',['../parse__slates__example__json_8h.html#a23dbf6d24901b2a77e4dea37c7775d38',1,'parse_slates_example_json.h']]],
   ['get_5fobject',['get_object',['../structVW_1_1no__lock__object__pool.html#a8e8305f0952ceaffca8f2f34a4ddfd82',1,'VW::no_lock_object_pool::get_object()'],['../structVW_1_1value__object__pool.html#a6f63370d5e741096404f72d6fca5501c',1,'VW::value_object_pool::get_object()'],['../structVW_1_1object__pool.html#a206230f351210d7a36779e2929e1d10c',1,'VW::object_pool::get_object()']]],
   ['get_5fobserved_5fcost',['get_observed_cost',['../namespaceCB__ADF.html#af1b5ceb8a8ddf87bc35fe7aa608d2f79',1,'CB_ADF::get_observed_cost()'],['../namespaceGEN__CS.html#abb78a3256e559df548715cde8bef35f7',1,'GEN_CS::get_observed_cost()']]],
   ['get_5foption',['get_option',['../structVW_1_1config_1_1options__i.html#aeb7bb7c02cf72631087338c6cc048ee9',1,'VW::config::options_i::get_option()'],['../structVW_1_1config_1_1options__boost__po.html#a516b49d8ac0c442f629ab1817baf8da9',1,'VW::config::options_boost_po::get_option()']]],

@@ -10,7 +10,7 @@ var searchData=
   ['object_5fqueue',['object_queue',['../classVW_1_1ptr__queue.html#a0fbfcc34981bfb4ed3202d8f1b7af22a',1,'VW::ptr_queue']]],
   ['ojanewton_2eh',['OjaNewton.h',['../OjaNewton_8h.html',1,'']]],
   ['ojanewton_5fsetup',['OjaNewton_setup',['../OjaNewton_8h.html#a5d3ed4931e43886d9b0007edb6dc189e',1,'OjaNewton.h']]],
-  ['old_5froot',['old_root',['../classCCBOutcomeList.html#a1462e82f9a8b28ce2464ce9b588c8ef6',1,'CCBOutcomeList']]],
+  ['old_5froot',['old_root',['../classSlotOutcomeList.html#ac991fcfa5277abe12e439070dc414302',1,'SlotOutcomeList']]],
   ['old_5fweighted_5flabeled_5fexamples',['old_weighted_labeled_examples',['../structshared__data.html#a22c93bc868692a1f3dbb5cc24ec1fa3a',1,'shared_data']]],
   ['open_5ffile',['open_file',['../classcomp__io__buf.html#aeabfba4ac2f268bc165fdd9281bd2c98',1,'comp_io_buf::open_file()'],['../classio__buf.html#a21be6f4d7f0bd15aa317859b1911321a',1,'io_buf::open_file(const char *name, bool stdin_off)'],['../classio__buf.html#a2b8542f05e758d61511be24ac755e362',1,'io_buf::open_file(const char *name, bool stdin_off, int flag=READ)']]],
   ['open_5fsocket',['open_socket',['../network_8h.html#ac40c8cc8b8b39abd04bc50416ab0f70f',1,'network.h']]],
@@ -61,5 +61,6 @@ var searchData=
   ['output_5ffeatures',['output_features',['../cache_8h.html#af4875cfa395d3d1b81065c5cb664d411',1,'cache.h']]],
   ['output_5ffloat',['output_float',['../classFloatToFloatState.html#ae91d12e334d9112b7b02d4b03031db94',1,'FloatToFloatState']]],
   ['output_5flock',['output_lock',['../structparser.html#a62c95d8b49357d7a9251d07d8b6f383f',1,'parser']]],
-  ['output_5fstring',['output_string',['../classStringToStringState.html#a4470ed511d1e65d1bf8bd54afacd9b65',1,'StringToStringState']]]
+  ['output_5fstring',['output_string',['../classStringToStringState.html#a4470ed511d1e65d1bf8bd54afacd9b65',1,'StringToStringState']]],
+  ['output_5fuint',['output_uint',['../classUIntToUIntState.html#a92433cf40bca8c074751b90cb29bb80f',1,'UIntToUIntState']]]
 ];

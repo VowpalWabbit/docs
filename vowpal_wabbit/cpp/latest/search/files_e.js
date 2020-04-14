@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['parse_5fargs_2eh',['parse_args.h',['../parse__args_8h.html',1,'']]],
-  ['parse_5fdispatch_5floop_2eh',['parse_dispatch_loop.h',['../parse__dispatch__loop_8h.html',1,'']]],
-  ['parse_5fexample_2eh',['parse_example.h',['../parse__example_8h.html',1,'']]],
-  ['parse_5fexample_5fjson_2eh',['parse_example_json.h',['../parse__example__json_8h.html',1,'']]],
-  ['parse_5fprimitives_2eh',['parse_primitives.h',['../parse__primitives_8h.html',1,'']]],
-  ['parse_5fregressor_2eh',['parse_regressor.h',['../parse__regressor_8h.html',1,'']]],
-  ['parser_2eh',['parser.h',['../parser_8h.html',1,'']]],
-  ['print_2eh',['print.h',['../print_8h.html',1,'']]]
+  ['oaa_2eh',['oaa.h',['../oaa_8h.html',1,'']]],
+  ['object_5fpool_2eh',['object_pool.h',['../object__pool_8h.html',1,'']]],
+  ['ojanewton_2eh',['OjaNewton.h',['../OjaNewton_8h.html',1,'']]],
+  ['options_2eh',['options.h',['../options_8h.html',1,'']]],
+  ['options_5fboost_5fpo_2eh',['options_boost_po.h',['../options__boost__po_8h.html',1,'']]],
+  ['options_5fserializer_5fboost_5fpo_2eh',['options_serializer_boost_po.h',['../options__serializer__boost__po_8h.html',1,'']]],
+  ['options_5ftypes_2eh',['options_types.h',['../options__types_8h.html',1,'']]],
+  ['opts_2eh',['opts.h',['../opts_8h.html',1,'']]]
 ];

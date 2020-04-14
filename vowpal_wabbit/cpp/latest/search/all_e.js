@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['n',['N',['../structExpReplay_1_1expreplay.html#a1303bcb5004ccc2cb6949480bdb43c11',1,'ExpReplay::expreplay::N()'],['../structVW_1_1distributionally__robust_1_1ChiSquared_1_1Duals.html#ab7c0cf5e3f381617f1d67cbc2a718455',1,'VW::distributionally_robust::ChiSquared::Duals::n()'],['../classVW_1_1distributionally__robust_1_1ChiSquared.html#a7acbe3fb6b41dc5ea3ca87ebc47fa46d',1,'VW::distributionally_robust::ChiSquared::n()']]],
+  ['n',['n',['../structVW_1_1distributionally__robust_1_1ChiSquared_1_1Duals.html#ab7c0cf5e3f381617f1d67cbc2a718455',1,'VW::distributionally_robust::ChiSquared::Duals::n()'],['../classVW_1_1distributionally__robust_1_1ChiSquared.html#a7acbe3fb6b41dc5ea3ca87ebc47fa46d',1,'VW::distributionally_robust::ChiSquared::n()'],['../structExpReplay_1_1expreplay.html#a1303bcb5004ccc2cb6949480bdb43c11',1,'ExpReplay::expreplay::N()']]],
   ['name',['name',['../structdictionary__info.html#aafd5bfbc5290ad275067a8cf3397970a',1,'dictionary_info::name()'],['../structNamespace.html#a2344df6d1bc705fc8afa24b2c9c79f57',1,'Namespace::name()'],['../structBaseState.html#a675dcc2bdda01de5cde893e77a6116b1',1,'BaseState::name()'],['../structVW_1_1primitive__feature__space.html#a8f5b0342e8c1f8c6d6e5648d14894a59',1,'VW::primitive_feature_space::name()']]],
   ['namedlabels',['namedlabels',['../classnamedlabels.html',1,'namedlabels'],['../classnamedlabels.html#afcf01360ddc060e60180ad00d35836db',1,'namedlabels::namedlabels()']]],
   ['namespace',['Namespace',['../structNamespace.html',1,'']]],

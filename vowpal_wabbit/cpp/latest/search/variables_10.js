@@ -45,7 +45,7 @@ var searchData=
   ['probability',['probability',['../structCB_1_1cb__class.html#a19e59d902fb4918ba679fa5f73f582ac',1,'CB::cb_class']]],
   ['probability_5ftolerance',['probability_tolerance',['../constant_8h.html#a2d817f5db781c538da7d027e030909b8',1,'constant.h']]],
   ['probabilityofdrop',['probabilityOfDrop',['../structDecisionServiceInteraction.html#a0e2a393fe1b1427ca5ee5c3fb98ea785',1,'DecisionServiceInteraction']]],
-  ['probs',['probs',['../classLabelObjectState.html#adbe8675cee3239b2f7b77ac3e4a90e53',1,'LabelObjectState::probs()'],['../classCCBOutcomeList.html#a8cae2cd84956c00e5dfd0296be8c2db5',1,'CCBOutcomeList::probs()']]],
+  ['probs',['probs',['../classLabelObjectState.html#adbe8675cee3239b2f7b77ac3e4a90e53',1,'LabelObjectState::probs()'],['../classSlotOutcomeList.html#ac2ffa4c802e2f0f674c7652923c58993',1,'SlotOutcomeList::probs()']]],
   ['program_5fname',['program_name',['../structvw.html#a3a47c849579030d6b922aa2891076858',1,'vw']]],
   ['progress_5fadd',['progress_add',['../structvw.html#ab7b7f1e764da852d44b5e900fa991d95',1,'vw']]],
   ['progress_5farg',['progress_arg',['../structvw.html#a33eefadb9fb5b904e8454a4c864f47a3',1,'vw']]],

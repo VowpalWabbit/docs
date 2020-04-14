@@ -1,11 +1,7 @@
 var searchData=
 [
-  ['oaa_2eh',['oaa.h',['../oaa_8h.html',1,'']]],
-  ['object_5fpool_2eh',['object_pool.h',['../object__pool_8h.html',1,'']]],
-  ['ojanewton_2eh',['OjaNewton.h',['../OjaNewton_8h.html',1,'']]],
-  ['options_2eh',['options.h',['../options_8h.html',1,'']]],
-  ['options_5fboost_5fpo_2eh',['options_boost_po.h',['../options__boost__po_8h.html',1,'']]],
-  ['options_5fserializer_5fboost_5fpo_2eh',['options_serializer_boost_po.h',['../options__serializer__boost__po_8h.html',1,'']]],
-  ['options_5ftypes_2eh',['options_types.h',['../options__types_8h.html',1,'']]],
-  ['opts_2eh',['opts.h',['../opts_8h.html',1,'']]]
+  ['network_2eh',['network.h',['../network_8h.html',1,'']]],
+  ['nn_2eh',['nn.h',['../nn_8h.html',1,'']]],
+  ['no_5flabel_2eh',['no_label.h',['../no__label_8h.html',1,'']]],
+  ['noop_2eh',['noop.h',['../noop_8h.html',1,'']]]
 ];

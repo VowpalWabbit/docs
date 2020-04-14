@@ -54,7 +54,7 @@ var searchData=
   ['limit',['limit',['../structvw.html#a13c792ae66dab87cbbcfa398378b4daa',1,'vw']]],
   ['limit_5fstrings',['limit_strings',['../structvw.html#a4ff18cf5dc745f11e69a3158212a35ab',1,'vw']]],
   ['line_5fto_5fexamples_5fjson',['line_to_examples_json',['../parse__example__json_8h.html#af1b6e9f641f001e97dec9598bb20dafc',1,'parse_example_json.h']]],
-  ['linenumber',['LineNumber',['../classVW_1_1vw__exception.html#a4128fcfca722a784d535bc9db97e542b',1,'VW::vw_exception::LineNumber() const '],['../classVW_1_1vw__exception.html#afd8cfa0928b0dbd4accf64babfc8a304',1,'VW::vw_exception::lineNumber()']]],
+  ['linenumber',['lineNumber',['../classVW_1_1vw__exception.html#afd8cfa0928b0dbd4accf64babfc8a304',1,'VW::vw_exception::lineNumber()'],['../classVW_1_1vw__exception.html#a4128fcfca722a784d535bc9db97e542b',1,'VW::vw_exception::LineNumber() const ']]],
   ['load',['load',['../classvw__slim_1_1vw__predict.html#afa69fa0744ec1d68dd6b1b283c2b2b97',1,'vw_slim::vw_predict']]],
   ['loaded_5fdictionaries',['loaded_dictionaries',['../structvw.html#a7393e01efdaba53b861f82b2fe54a15f',1,'vw']]],
   ['loc',['Loc',['../classvw__slim_1_1internal_1_1collection__pair__iterator.html#a806e70d2fe3868d4f86a4bc14da89cc6',1,'vw_slim::internal::collection_pair_iterator']]],
