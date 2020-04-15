@@ -20,8 +20,6 @@ var searchData=
   ['seeded',['seeded',['../classsparse__parameters.html#a0bcd82f1fcc037cf7227e6df012c8eeb',1,'sparse_parameters::seeded()'],['../classparameters.html#a9be19f8ae8444b962082b3aa693c1b2d',1,'parameters::seeded()'],['../classdense__parameters.html#ab9fd553c77187cf19372056b83e6ccf5',1,'dense_parameters::seeded()']]],
   ['sender_5fsetup',['sender_setup',['../sender_8h.html#a8db0274c4e509053703f326eb07c7553',1,'sender.h']]],
   ['sensitivity',['sensitivity',['../structVW_1_1LEARNER_1_1learner.html#aed129d0c66e093ff28c4252fde644744',1,'VW::LEARNER::learner']]],
-  ['serialize',['serialize',['../structVW_1_1config_1_1options__serializer__boost__po.html#a455fceea5c0f4a6de7d72dd14a520f6d',1,'VW::config::options_serializer_boost_po::serialize(typed_option&lt; T &gt; &amp;typed_option)'],['../structVW_1_1config_1_1options__serializer__boost__po.html#ae163098ed2c01e394f7b96e4d6bcf8ef',1,'VW::config::options_serializer_boost_po::serialize(typed_option&lt; std::vector&lt; T &gt;&gt; &amp;typed_option)'],['../structVW_1_1config_1_1options__serializer__boost__po.html#a1bcef2be4c3e7d65a89ad87b09e63d24',1,'VW::config::options_serializer_boost_po::serialize(typed_option&lt; bool &gt; &amp;typed_argument)']]],
-  ['serialize_5fif_5ft',['serialize_if_t',['../structVW_1_1config_1_1options__serializer__boost__po.html#ab0251a1ce4062fb55432085ff893d253',1,'VW::config::options_serializer_boost_po']]],
   ['set',['set',['../classio__buf.html#af32020bb18ceca0dc038900797715ae6',1,'io_buf']]],
   ['set_5fallowed',['set_allowed',['../classSearch_1_1predictor.html#a322cdf92cf948e2efc1e075937c41ece',1,'Search::predictor::set_allowed(action a)'],['../classSearch_1_1predictor.html#aaa91405488105facb78005bc831ec704',1,'Search::predictor::set_allowed(action *a, size_t action_count)'],['../classSearch_1_1predictor.html#a64ae8086db9f4329ad3b558293676361',1,'Search::predictor::set_allowed(v_array&lt; action &gt; &amp;a)'],['../classSearch_1_1predictor.html#aa64511d383417f5e467035f0612b3038',1,'Search::predictor::set_allowed(action a, float cost)'],['../classSearch_1_1predictor.html#af97495fb633063b6246e92556aee1060',1,'Search::predictor::set_allowed(action *a, float *costs, size_t action_count)'],['../classSearch_1_1predictor.html#a915c1d24d9ab809f82e98196966d772c',1,'Search::predictor::set_allowed(v_array&lt; std::pair&lt; action, float &gt; &gt; &amp;a)'],['../classSearch_1_1predictor.html#a81dafeee8066f001d199b6d81a5a6042',1,'Search::predictor::set_allowed(std::vector&lt; std::pair&lt; action, float &gt; &gt; &amp;a)']]],
   ['set_5fbaseline_5fenabled',['set_baseline_enabled',['../namespaceBASELINE.html#a6fdb87a5f17aac9b3a2509532c9c8400',1,'BASELINE']]],
@@ -64,8 +62,6 @@ var searchData=
   ['setup_5fbase',['setup_base',['../parse__args_8h.html#a9bc0009271a6b3758f18e95d5a92eb9f',1,'parse_args.h']]],
   ['setup_5fexample',['setup_example',['../namespaceVW.html#a15dbad8d468f8d9c303216cefde8b710',1,'VW']]],
   ['setup_5fexamples',['setup_examples',['../namespaceVW.html#a2164a7755052fd7cad082d5392bbadb8',1,'VW']]],
-  ['setup_5ffor_5fpredict',['setup_for_predict',['../classezexample.html#ac551abcef8576b624951930ee9d2250a',1,'ezexample']]],
-  ['setup_5fnew_5fezexample',['setup_new_ezexample',['../classezexample.html#a135c6f25079fb7e0f900c6fe70d347fe',1,'ezexample']]],
   ['shallow_5fcopy',['shallow_copy',['../classsparse__parameters.html#a6fec313fc9f374d2e63b1b5c49cb1c5c',1,'sparse_parameters::shallow_copy()'],['../classparameters.html#a4afbab5bd889906d9b46b19c0b5c6a62',1,'parameters::shallow_copy()'],['../classdense__parameters.html#ab022f18d74e9fa9fe1908961f7aadeb6',1,'dense_parameters::shallow_copy()']]],
   ['share',['share',['../classsparse__parameters.html#ae6e41bfdaecdb59b53b30cb10c6ba1e7',1,'sparse_parameters::share()'],['../classparameters.html#a66d2afba05054e89ec8f4f789ed81532',1,'parameters::share()'],['../classdense__parameters.html#a9c0cf4c46fa423d3065cfd827f47e5e8',1,'dense_parameters::share()']]],
   ['shared_5ffeature_5fmerger_5fsetup',['shared_feature_merger_setup',['../namespaceVW_1_1shared__feature__merger.html#ae357168e58313a47a907b7881f36c9b1',1,'VW::shared_feature_merger']]],
@@ -77,7 +73,6 @@ var searchData=
   ['slates_5fsetup',['slates_setup',['../namespaceVW_1_1slates.html#a8cacf24fc0e61d669aa178c7f393f862',1,'VW::slates']]],
   ['slotoutcomelist',['SlotOutcomeList',['../classSlotOutcomeList.html#a99714858f73a1a844d61765d49d2c679',1,'SlotOutcomeList']]],
   ['slotsstate',['SlotsState',['../structSlotsState.html#ac94f1e29e5831b3f76b939cc5eff4c33',1,'SlotsState']]],
-  ['sock_5fconnect',['sock_connect',['../classAllReduceSockets.html#a2552ae966284c09df115b89332e5c853',1,'AllReduceSockets']]],
   ['sort',['sort',['../structfeatures.html#ac1d0ea5e77002bab482dc38d62e7acdb',1,'features']]],
   ['sort_5faction_5fprobs',['sort_action_probs',['../namespaceVW_1_1cb__explore__adf.html#a9a7b608cba2aa775ba41ce214921428e',1,'VW::cb_explore_adf']]],
   ['sort_5fand_5ffilter_5fduplicate_5finteractions',['sort_and_filter_duplicate_interactions',['../namespaceINTERACTIONS.html#a5deef9fa1c541b2e2729b3c1f16ee00d',1,'INTERACTIONS']]],
@@ -106,6 +101,5 @@ var searchData=
   ['summarize_5fholdout_5fset',['summarize_holdout_set',['../simple__label_8h.html#abd0c0e37370fbdd251bfc12e609bb89e',1,'simple_label.h']]],
   ['svrg_5fsetup',['svrg_setup',['../svrg_8h.html#a06139fb26917b725af29c8137338d249',1,'svrg.h']]],
   ['swap_5fchosen',['swap_chosen',['../namespaceexploration.html#ab10e3e9ec434c6a0c679215080859a7e',1,'exploration::swap_chosen(ActionIt action_first, ActionIt action_last, uint32_t chosen_index)'],['../namespaceexploration.html#ab8dc7b408e2425c8bda6e5a5768b84f1',1,'exploration::swap_chosen(ActionIt action_first, ActionIt action_last, std::forward_iterator_tag, uint32_t chosen_index)'],['../namespaceexploration.html#a613076d27240b55ee0401e59aee8bf13',1,'exploration::swap_chosen(ActionsIt action_first, ActionsIt action_last, uint32_t chosen_index)']]],
-  ['sync',['sync',['../classvw__ostream_1_1vw__streambuf.html#a1062a9f2dcba30ef24828c788576eb48',1,'vw_ostream::vw_streambuf']]],
   ['sync_5fstats',['sync_stats',['../namespaceVW.html#aef7830b96def28617fce6cf5a32c1ae6',1,'VW']]]
 ];

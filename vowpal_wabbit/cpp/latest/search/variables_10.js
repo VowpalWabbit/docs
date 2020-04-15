@@ -2,7 +2,7 @@ var searchData=
 [
   ['p',['p',['../structvw.html#ab70afa2ceae01968d9d291c5c8b060be',1,'vw']]],
   ['pairs',['pairs',['../structvw.html#a852eb0370ef5897b04ae514bc9d270b7',1,'vw']]],
-  ['parent',['parent',['../structnode__socks.html#a9107491c00d5f397f28b1bcf50093704',1,'node_socks::parent()'],['../classvw__ostream_1_1vw__streambuf.html#a62a836ec586bc290e90d39326932bffe',1,'vw_ostream::vw_streambuf::parent()']]],
+  ['parent',['parent',['../structnode__socks.html#a9107491c00d5f397f28b1bcf50093704',1,'node_socks']]],
   ['parse_5flabel',['parse_label',['../structlabel__parser.html#a4e530da668b9320a390c919d70db25c2',1,'label_parser']]],
   ['parse_5fmask',['parse_mask',['../structvw.html#a1341f90722fcded4ecfd77030b8195a8',1,'vw']]],
   ['parse_5fname',['parse_name',['../structparser.html#a1f0cbc0630ed3485dcc8ed05ea69abef',1,'parser']]],
@@ -11,13 +11,12 @@ var searchData=
   ['pass_5flength',['pass_length',['../structvw.html#a5d00a4e6cc866eb34fed3d6ee6fa07bb',1,'vw']]],
   ['passes_5fcomplete',['passes_complete',['../structvw.html#ac89895b3c3071cc384cda7902e2c0710',1,'vw']]],
   ['passthrough',['passthrough',['../structexample.html#a0eaa1fbdbe672ef899d1fb7e0c8fc136',1,'example']]],
-  ['past_5fseeds',['past_seeds',['../classezexample.html#acbe720ac0e62f30eeabeca143d90ba56',1,'ezexample']]],
   ['per_5ffeature_5fregularizer_5finput',['per_feature_regularizer_input',['../structvw.html#a608a21c0046fcef6954223916390beef',1,'vw']]],
   ['per_5ffeature_5fregularizer_5foutput',['per_feature_regularizer_output',['../structvw.html#a9f7c490c60f9db80f599703186ca71a0',1,'vw']]],
   ['per_5ffeature_5fregularizer_5ftext',['per_feature_regularizer_text',['../structvw.html#a785187bd18fe17fab06559a2ff7a8207',1,'vw']]],
   ['permutations',['permutations',['../structvw.html#af6bb6bea75923040c95324f9da130a14',1,'vw']]],
   ['pid_5ffile',['pid_file',['../structinput__options.html#a1a6cefc79283682f609257da002e0984',1,'input_options']]],
-  ['port',['port',['../classAllReduceSockets.html#a1ba0231ca299faf8894fe40bd19855ae',1,'AllReduceSockets::port()'],['../structinput__options.html#a4b926362577553e6619d2e1af98f9d90',1,'input_options::port()']]],
+  ['port',['port',['../structinput__options.html#a4b926362577553e6619d2e1af98f9d90',1,'input_options']]],
   ['port_5ffile',['port_file',['../structinput__options.html#a808328fd629a040c525ff52379dc7233',1,'input_options']]],
   ['power_5ft',['power_t',['../structvw.html#a704c8131419ddb9518861b6b94bc0f0b',1,'vw']]],
   ['prec_5favg_5floss',['prec_avg_loss',['../structshared__data.html#ac5ae28baf7b4a1de5bce8579a1a9fbd6',1,'shared_data']]],
@@ -45,10 +44,8 @@ var searchData=
   ['probability',['probability',['../structCB_1_1cb__class.html#a19e59d902fb4918ba679fa5f73f582ac',1,'CB::cb_class']]],
   ['probability_5ftolerance',['probability_tolerance',['../constant_8h.html#a2d817f5db781c538da7d027e030909b8',1,'constant.h']]],
   ['probabilityofdrop',['probabilityOfDrop',['../structDecisionServiceInteraction.html#a0e2a393fe1b1427ca5ee5c3fb98ea785',1,'DecisionServiceInteraction']]],
-  ['probs',['probs',['../classLabelObjectState.html#adbe8675cee3239b2f7b77ac3e4a90e53',1,'LabelObjectState::probs()'],['../classSlotOutcomeList.html#ac2ffa4c802e2f0f674c7652923c58993',1,'SlotOutcomeList::probs()']]],
+  ['probs',['probs',['../classLabelObjectState.html#adbe8675cee3239b2f7b77ac3e4a90e53',1,'LabelObjectState']]],
   ['program_5fname',['program_name',['../structvw.html#a3a47c849579030d6b922aa2891076858',1,'vw']]],
   ['progress_5fadd',['progress_add',['../structvw.html#ab7b7f1e764da852d44b5e900fa991d95',1,'vw']]],
-  ['progress_5farg',['progress_arg',['../structvw.html#a33eefadb9fb5b904e8454a4c864f47a3',1,'vw']]],
-  ['prune_5fif_5fgt',['prune_if_gt',['../classBeam_1_1beam.html#a8921ebd582cd7b3bdea209dd5388e6cd',1,'Beam::beam']]],
-  ['pruning_5fcoefficient',['pruning_coefficient',['../classBeam_1_1beam.html#a29817fa29efcf1532b20aa0e083755e8',1,'Beam::beam']]]
+  ['progress_5farg',['progress_arg',['../structvw.html#a33eefadb9fb5b904e8454a4c864f47a3',1,'vw']]]
 ];

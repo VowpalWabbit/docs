@@ -93,13 +93,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="structVW_1_1LEARNER_1_1learner-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">VW::LEARNER::learner&lt; T, E &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Defines the interface for a learning algorithm.  
+ <a href="structVW_1_1LEARNER_1_1learner.html#details">More...</a></p>
 
 <p><code>#include &lt;reductions_fwd.h&gt;</code></p>
 <table class="memberdecls">
@@ -113,8 +114,10 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5c925112a00430ff4390f3bb53d7de76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1learner.html#a5c925112a00430ff4390f3bb53d7de76">learn</a> (E &amp;ec, size_t i=0)</td></tr>
+<tr class="memdesc:a5c925112a00430ff4390f3bb53d7de76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will update the model according to the labels and examples supplied.  <a href="#a5c925112a00430ff4390f3bb53d7de76">More...</a><br /></td></tr>
 <tr class="separator:a5c925112a00430ff4390f3bb53d7de76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e126b45e387c3aaaad6f1afa8dfe7ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1learner.html#a0e126b45e387c3aaaad6f1afa8dfe7ec">predict</a> (E &amp;ec, size_t i=0)</td></tr>
+<tr class="memdesc:a0e126b45e387c3aaaad6f1afa8dfe7ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a prediction for the given example.  <a href="#a0e126b45e387c3aaaad6f1afa8dfe7ec">More...</a><br /></td></tr>
 <tr class="separator:a0e126b45e387c3aaaad6f1afa8dfe7ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44d1395545c9fd963b1a9fcf7982f514"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1learner.html#a44d1395545c9fd963b1a9fcf7982f514">multipredict</a> (E &amp;ec, size_t lo, size_t count, <a class="el" href="unionpolyprediction.html">polyprediction</a> *pred, bool finalize_predictions)</td></tr>
 <tr class="separator:a44d1395545c9fd963b1a9fcf7982f514"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,34 +180,21 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a30c2bcf54996490e0a4415e6509e9dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d534bda509f1a10b361a2d6d5136c97"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1learner.html#a6d534bda509f1a10b361a2d6d5136c97">is_multiline</a></td></tr>
 <tr class="separator:a6d534bda509f1a10b361a2d6d5136c97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a18c8906c6c14bf0be2f0da934762496b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1learner.html#a18c8906c6c14bf0be2f0da934762496b">learner</a> ()</td></tr>
-<tr class="separator:a18c8906c6c14bf0be2f0da934762496b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a31a5dbf17e187ef1bf28252bf70bea33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVW_1_1LEARNER_1_1func__data.html">func_data</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1learner.html#a31a5dbf17e187ef1bf28252bf70bea33">init_fd</a></td></tr>
-<tr class="separator:a31a5dbf17e187ef1bf28252bf70bea33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf4c745328e11384a9d943dd5e7d0fb8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVW_1_1LEARNER_1_1learn__data.html">learn_data</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1learner.html#acf4c745328e11384a9d943dd5e7d0fb8">learn_fd</a></td></tr>
-<tr class="separator:acf4c745328e11384a9d943dd5e7d0fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cf9fc939fdd743e8f87befdc26790ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVW_1_1LEARNER_1_1sensitivity__data.html">sensitivity_data</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1learner.html#a6cf9fc939fdd743e8f87befdc26790ff">sensitivity_fd</a></td></tr>
-<tr class="separator:a6cf9fc939fdd743e8f87befdc26790ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2631199905d824b65ee205cc7eaab33e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVW_1_1LEARNER_1_1finish__example__data.html">finish_example_data</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1learner.html#a2631199905d824b65ee205cc7eaab33e">finish_example_fd</a></td></tr>
-<tr class="separator:a2631199905d824b65ee205cc7eaab33e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a603f1544b57eb67183777fb4a9d89da1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVW_1_1LEARNER_1_1save__load__data.html">save_load_data</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1learner.html#a603f1544b57eb67183777fb4a9d89da1">save_load_fd</a></td></tr>
-<tr class="separator:a603f1544b57eb67183777fb4a9d89da1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8edfa9f99dc6e56f0eab844f8b90091a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVW_1_1LEARNER_1_1func__data.html">func_data</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1learner.html#a8edfa9f99dc6e56f0eab844f8b90091a">end_pass_fd</a></td></tr>
-<tr class="separator:a8edfa9f99dc6e56f0eab844f8b90091a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5eb793a6bc43f090807f54a8725870e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVW_1_1LEARNER_1_1func__data.html">func_data</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1learner.html#a5eb793a6bc43f090807f54a8725870e1">end_examples_fd</a></td></tr>
-<tr class="separator:a5eb793a6bc43f090807f54a8725870e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3daec60758b75393a5cd0822fd7c92c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVW_1_1LEARNER_1_1func__data.html">func_data</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1learner.html#a3daec60758b75393a5cd0822fd7c92c9">finisher_fd</a></td></tr>
-<tr class="separator:a3daec60758b75393a5cd0822fd7c92c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9783eb611cd62afe17530621f3588896"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1learner.html#a9783eb611cd62afe17530621f3588896">learner_data</a></td></tr>
-<tr class="separator:a9783eb611cd62afe17530621f3588896"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;class T, class E&gt;<br />
+struct VW::LEARNER::learner&lt; T, E &gt;</h3>
+
+<p>Defines the interface for a learning algorithm. </p>
+<p>Learner is implemented as a struct of pointers, and associated methods. It implements a sort of virtual inheritance through the use of bundling function pointers with the associated objects to call them with. A reduction will recursively call the base given to it, whereas a base learner will not recurse and will simply return the result. Learner is not intended to be inherited from. Instead it is used through composition, and created through the various <a class="el" href="namespaceVW_1_1LEARNER.html#aac6557c2b691aeef9146de59cc4af4f6">VW::LEARNER::init_learner</a> overloaded functions that chain to the central factor function <a class="el" href="structVW_1_1LEARNER_1_1learner.html#a8fe9405c86f868f49a52eb2e2585476b">VW::LEARNER::learner::init_learner</a> The state of this learner, or reduction, is stored in the learner_data field. A <code>std::shared_pointer&lt;void&gt;</code> is used as this class uses type erasure to allow for an arbitrary reduction to be implemented. It is extremely important that the function pointers given to the class match the expected types of the object. If the learner is constructed using <a class="el" href="structVW_1_1LEARNER_1_1learner.html#a8fe9405c86f868f49a52eb2e2585476b">VW::LEARNER::learner::init_learner</a> and assembled before it is transformed into a <a class="el" href="namespaceVW_1_1LEARNER.html#ab481a83a0a49d7b827babe725e135b20" title="Used to type erase the object and pass around common type. ">VW::LEARNER::base_learner</a> with <a class="el" href="namespaceVW_1_1LEARNER.html#a772575fd3a96e67ade70cf79d379acc9">VW::LEARNER::make_base</a> then the usage of the templated functions should ensure types are correct.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Type of the reduction data object stored. This allows this specific reduction to have it's own state. </td></tr>
+    <tr><td class="paramname">E</td><td>Example type this reduction supports. Must be one of <a class="el" href="structexample.html">example</a> or <a class="el" href="reductions__fwd_8h.html#ababa4c0392834695d0ff6255e8d3ce77">multi_ex</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="ab620bd216bc93eaea7e057b2056ef912"></a>
 <div class="memitem">
 <div class="memproto">
@@ -229,32 +219,6 @@ template&lt;class T, class E&gt; </div>
           <td class="memname">using <a class="el" href="structVW_1_1LEARNER_1_1learner.html">VW::LEARNER::learner</a>&lt; T, E &gt;::<a class="el" href="structVW_1_1LEARNER_1_1learner.html#a03cfb61f3c905ae6be2a70a9e4be8b77">finish_fptr_type</a> =  void (*)(void*)</td>
         </tr>
       </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a18c8906c6c14bf0be2f0da934762496b"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T, class E&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structVW_1_1LEARNER_1_1learner.html">VW::LEARNER::learner</a>&lt; T, E &gt;::<a class="el" href="structVW_1_1LEARNER_1_1learner.html">learner</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
@@ -492,6 +456,16 @@ template&lt;class T, class E&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Will update the model according to the labels and examples supplied. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ec</td><td>The <a class="el" href="structexample.html">example</a> object or <a class="el" href="reductions__fwd_8h.html#ababa4c0392834695d0ff6255e8d3ce77">multi_ex</a> to be operated on. This object <b>must</b> have a valid label set for every <a class="el" href="structexample.html">example</a> in the field <a class="el" href="structexample.html#a0c87f6e82d9c95ae42158bdbdab3acf5">example::l</a> that corresponds to the type this reduction expects. </td></tr>
+    <tr><td class="paramname">i</td><td>This is the offset used for the weights in this call. If using multiple regressors/learners you can increment this value for each call. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>While some reductions may fill the <a class="el" href="structexample.html#ad1477e890371ed8253f1953d4190ba49">example::pred</a>, this is not guaranteed and is undefined behavior if accessed. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a44d1395545c9fd963b1a9fcf7982f514"></a>
@@ -581,6 +555,16 @@ template&lt;class T, class E&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Make a prediction for the given example. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ec</td><td>The <a class="el" href="structexample.html">example</a> object or <a class="el" href="reductions__fwd_8h.html#ababa4c0392834695d0ff6255e8d3ce77">multi_ex</a> to be operated on. This object <b>must</b> have a valid prediction allocated in the field <a class="el" href="structexample.html#ad1477e890371ed8253f1953d4190ba49">example::pred</a> that corresponds to this reduction type. </td></tr>
+    <tr><td class="paramname">i</td><td>This is the offset used for the weights in this call. If using multiple regressors/learners you can increment this value for each call. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The prediction calculated by this reduction be set on <a class="el" href="structexample.html#ad1477e890371ed8253f1953d4190ba49">example::pred</a>. If <code>E</code> is <a class="el" href="reductions__fwd_8h.html#ababa4c0392834695d0ff6255e8d3ce77">multi_ex</a> then the prediction is set on the 0th item in the list. </dd></dl>
 
 </div>
 </div>
@@ -993,94 +977,6 @@ template&lt;class T, class E&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a5eb793a6bc43f090807f54a8725870e1"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T, class E&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structVW_1_1LEARNER_1_1func__data.html">func_data</a> <a class="el" href="structVW_1_1LEARNER_1_1learner.html">VW::LEARNER::learner</a>&lt; T, E &gt;::end_examples_fd</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a8edfa9f99dc6e56f0eab844f8b90091a"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T, class E&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structVW_1_1LEARNER_1_1func__data.html">func_data</a> <a class="el" href="structVW_1_1LEARNER_1_1learner.html">VW::LEARNER::learner</a>&lt; T, E &gt;::end_pass_fd</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a2631199905d824b65ee205cc7eaab33e"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T, class E&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structVW_1_1LEARNER_1_1finish__example__data.html">finish_example_data</a> <a class="el" href="structVW_1_1LEARNER_1_1learner.html">VW::LEARNER::learner</a>&lt; T, E &gt;::finish_example_fd</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a3daec60758b75393a5cd0822fd7c92c9"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T, class E&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structVW_1_1LEARNER_1_1func__data.html">func_data</a> <a class="el" href="structVW_1_1LEARNER_1_1learner.html">VW::LEARNER::learner</a>&lt; T, E &gt;::finisher_fd</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a30c2bcf54996490e0a4415e6509e9dfe"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1091,28 +987,6 @@ template&lt;class T, class E&gt; </div>
           <td class="memname">size_t <a class="el" href="structVW_1_1LEARNER_1_1learner.html">VW::LEARNER::learner</a>&lt; T, E &gt;::increment</td>
         </tr>
       </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a31a5dbf17e187ef1bf28252bf70bea33"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T, class E&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structVW_1_1LEARNER_1_1func__data.html">func_data</a> <a class="el" href="structVW_1_1LEARNER_1_1learner.html">VW::LEARNER::learner</a>&lt; T, E &gt;::init_fd</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
@@ -1131,50 +1005,6 @@ template&lt;class T, class E&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="acf4c745328e11384a9d943dd5e7d0fb8"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T, class E&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structVW_1_1LEARNER_1_1learn__data.html">learn_data</a> <a class="el" href="structVW_1_1LEARNER_1_1learner.html">VW::LEARNER::learner</a>&lt; T, E &gt;::learn_fd</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a9783eb611cd62afe17530621f3588896"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T, class E&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::shared_ptr&lt;void&gt; <a class="el" href="structVW_1_1LEARNER_1_1learner.html">VW::LEARNER::learner</a>&lt; T, E &gt;::learner_data</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a2892afc61028b8c30af5c23087a643d2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1185,50 +1015,6 @@ template&lt;class T, class E&gt; </div>
           <td class="memname"><a class="el" href="learner_8h.html#a5514b4a9448315c23ec344ca2d139e24">prediction_type_t</a> <a class="el" href="structVW_1_1LEARNER_1_1learner.html">VW::LEARNER::learner</a>&lt; T, E &gt;::pred_type</td>
         </tr>
       </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a603f1544b57eb67183777fb4a9d89da1"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T, class E&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structVW_1_1LEARNER_1_1save__load__data.html">save_load_data</a> <a class="el" href="structVW_1_1LEARNER_1_1learner.html">VW::LEARNER::learner</a>&lt; T, E &gt;::save_load_fd</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a6cf9fc939fdd743e8f87befdc26790ff"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T, class E&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structVW_1_1LEARNER_1_1sensitivity__data.html">sensitivity_data</a> <a class="el" href="structVW_1_1LEARNER_1_1learner.html">VW::LEARNER::learner</a>&lt; T, E &gt;::sensitivity_fd</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
@@ -1253,7 +1039,7 @@ template&lt;class T, class E&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 15 2020 22:02:11 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 15 2020 22:38:04 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

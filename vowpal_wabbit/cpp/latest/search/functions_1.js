@@ -26,7 +26,6 @@ var searchData=
   ['booltoboolstate',['BoolToBoolState',['../classBoolToBoolState.html#a2e2d0f085308b87591abd89caca0cbb1',1,'BoolToBoolState']]],
   ['boosting_5fsetup',['boosting_setup',['../boosting_8h.html#abe96f1b40154e3f7ca0ec801fa64bbe3',1,'boosting.h']]],
   ['boundport',['BoundPort',['../classVW_1_1SpanningTree.html#a0eb4b437c9947d254a580a2d8b56e043',1,'VW::SpanningTree']]],
-  ['broadcast',['broadcast',['../classAllReduceSockets.html#ae2b83b638e9352f6c166ad9df183389b',1,'AllReduceSockets']]],
   ['bs_5fsetup',['bs_setup',['../bs_8h.html#a156436446a728503c737e622fc9dfede',1,'bs.h']]],
   ['buf_5fread',['buf_read',['../classio__buf.html#a0fe43cbf0e4539940ad28f482c322cd9',1,'io_buf']]],
   ['buf_5fwrite',['buf_write',['../classio__buf.html#aaff9b1ba96e89f3abfa6105f1f369b34',1,'io_buf']]]

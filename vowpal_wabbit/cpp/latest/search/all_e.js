@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['n',['n',['../structVW_1_1distributionally__robust_1_1ChiSquared_1_1Duals.html#ab7c0cf5e3f381617f1d67cbc2a718455',1,'VW::distributionally_robust::ChiSquared::Duals::n()'],['../classVW_1_1distributionally__robust_1_1ChiSquared.html#a7acbe3fb6b41dc5ea3ca87ebc47fa46d',1,'VW::distributionally_robust::ChiSquared::n()'],['../structExpReplay_1_1expreplay.html#a1303bcb5004ccc2cb6949480bdb43c11',1,'ExpReplay::expreplay::N()']]],
+  ['n',['n',['../structVW_1_1distributionally__robust_1_1ChiSquared_1_1Duals.html#ab7c0cf5e3f381617f1d67cbc2a718455',1,'VW::distributionally_robust::ChiSquared::Duals::n()'],['../structExpReplay_1_1expreplay.html#a1303bcb5004ccc2cb6949480bdb43c11',1,'ExpReplay::expreplay::N()']]],
   ['name',['name',['../structdictionary__info.html#aafd5bfbc5290ad275067a8cf3397970a',1,'dictionary_info::name()'],['../structNamespace.html#a2344df6d1bc705fc8afa24b2c9c79f57',1,'Namespace::name()'],['../structBaseState.html#a675dcc2bdda01de5cde893e77a6116b1',1,'BaseState::name()'],['../structVW_1_1primitive__feature__space.html#a8f5b0342e8c1f8c6d6e5648d14894a59',1,'VW::primitive_feature_space::name()']]],
   ['namedlabels',['namedlabels',['../classnamedlabels.html',1,'namedlabels'],['../classnamedlabels.html#afcf01360ddc060e60180ad00d35836db',1,'namedlabels::namedlabels()']]],
   ['namespace',['Namespace',['../structNamespace.html',1,'']]],
@@ -14,7 +14,6 @@ var searchData=
   ['nb_5fex_5fregressors',['nb_ex_regressors',['../structGEN__CS_1_1cb__to__cs.html#a01035400474484702805476f486fe449',1,'GEN_CS::cb_to_cs']]],
   ['neighbor_5fnamespace',['neighbor_namespace',['../constant_8h.html#a56c27bfb62e2e33a607225d9c8d06a82',1,'constant.h']]],
   ['network_2eh',['network.h',['../network_8h.html',1,'']]],
-  ['new_5fchunk',['new_chunk',['../structVW_1_1no__lock__object__pool.html#abfad34210c50826a232627bbf93b021b',1,'VW::no_lock_object_pool']]],
   ['new_5funused_5fexample',['new_unused_example',['../namespaceVW.html#ae49d60be8cfe85c0159d1af44f131789',1,'VW']]],
   ['ngram',['ngram',['../structvw.html#a2ea70956c0d786c3696d4739e4203f38',1,'vw']]],
   ['ngram_5fstrings',['ngram_strings',['../structvw.html#ab690aeb4f01b7f2e519d688b51e23f7e',1,'vw']]],
@@ -46,7 +45,6 @@ var searchData=
   ['normalized_5fidx',['normalized_idx',['../structvw.html#ad7062a07e5af79d245edd2f3b68a525a',1,'vw']]],
   ['normalized_5fsum_5fnorm_5fx',['normalized_sum_norm_x',['../structvw.html#afa2559e77fad3416bc8d651a029e02d8',1,'vw']]],
   ['not_5fnull',['not_null',['../classsparse__parameters.html#a391c2da96ed2b88d053c14684458b963',1,'sparse_parameters::not_null()'],['../classparameters.html#a791d1245a747b229ff6a80a6f6783d5b',1,'parameters::not_null()'],['../classdense__parameters.html#ad19f1750ed9161abd89c1c071b2b709d',1,'dense_parameters::not_null()']]],
-  ['ns_5fexists',['ns_exists',['../classezexample.html#a3269241da4637f7c09cb2df7cae6fa10',1,'ezexample']]],
   ['null',['Null',['../structBaseState.html#ac82289a503437ff8044c9fab9a416a49',1,'BaseState::Null()'],['../classArrayState.html#a9aa4847f5a9bf8ea8fdbcec3cdfe9ef4',1,'ArrayState::Null()'],['../classArrayToVectorState.html#aa6587bd7d968a5e86cc6bd15bb04830e',1,'ArrayToVectorState::Null()'],['../classStringToStringState.html#a5c360ce737306a4e076af2524be15d88',1,'StringToStringState::Null()'],['../classFloatToFloatState.html#abc46a5f0585754f98cf35732bd3ffc5a',1,'FloatToFloatState::Null()'],['../structVWReaderHandler.html#ae93183c2473e5c90730e3c051c47a44f',1,'VWReaderHandler::Null()']]],
   ['num_5factions',['num_actions',['../structGEN__CS_1_1cb__to__cs.html#a2e90df436e7af9200081952367583d30',1,'GEN_CS::cb_to_cs::num_actions()'],['../structHookTask_1_1task__data.html#a3cd682caa601613f82b1ff0dfefc0af2',1,'HookTask::task_data::num_actions()']]],
   ['num_5fbits',['num_bits',['../structvw.html#a01b6f14b593ea5a2fe5ae65dead97fab',1,'vw']]],

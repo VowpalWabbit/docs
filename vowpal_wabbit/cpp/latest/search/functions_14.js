@@ -75,7 +75,6 @@ var searchData=
   ['vw_5fsetfeature',['VW_SetFeature',['../vwdll_8h.html#a5be6782c07cb892276eb9e5e533cafcc',1,'vwdll.h']]],
   ['vw_5fsetfeaturespace',['VW_SetFeatureSpace',['../vwdll_8h.html#a5f02f658024eb8225ca4d0a01a3813d6',1,'vwdll.h']]],
   ['vw_5fstartparser',['VW_StartParser',['../vwdll_8h.html#a0f0861652cf1ac4bdffd1bc7fbbfe9f0',1,'vwdll.h']]],
-  ['vw_5fstreambuf',['vw_streambuf',['../classvw__ostream_1_1vw__streambuf.html#a133b0d42fefe0fbbfe28667073160007',1,'vw_ostream::vw_streambuf']]],
   ['vw_5funrecognised_5foption_5fexception',['vw_unrecognised_option_exception',['../classVW_1_1vw__unrecognised__option__exception.html#aaffd470d1c4e6935a8ca71ece0eac05f',1,'VW::vw_unrecognised_option_exception::vw_unrecognised_option_exception(const char *file, int lineNumber, const std::string &amp;message)'],['../classVW_1_1vw__unrecognised__option__exception.html#aaa0e1e35e53629d31779485562d69020',1,'VW::vw_unrecognised_option_exception::vw_unrecognised_option_exception(const vw_unrecognised_option_exception &amp;ex)']]],
   ['vwreaderhandlerdefault',['VWReaderHandlerDefault',['../structVWReaderHandler.html#aab0117dbc9e8b5199006283551a68005',1,'VWReaderHandler']]],
   ['vwreaderhandlernull',['VWReaderHandlerNull',['../structVWReaderHandler.html#a94f9123eb379d0af443f725911e83fc7',1,'VWReaderHandler']]]

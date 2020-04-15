@@ -94,6 +94,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">VW::LEARNER Namespace Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Contains the <a class="el" href="structVW_1_1LEARNER_1_1learner.html" title="Defines the interface for a learning algorithm. ">VW::LEARNER::learner</a> object and utilities for interacting with it.  
+<a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -104,6 +107,7 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1learn__data.html">learn_data</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1learner.html">learner</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the interface for a learning algorithm.  <a href="structVW_1_1LEARNER_1_1learner.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1save__load__data.html">save_load_data</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -113,10 +117,13 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:ab481a83a0a49d7b827babe725e135b20"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1LEARNER.html#ab481a83a0a49d7b827babe725e135b20">base_learner</a> = <a class="el" href="structVW_1_1LEARNER_1_1learner.html">learner</a>&lt; char, char &gt;</td></tr>
+<tr class="memdesc:ab481a83a0a49d7b827babe725e135b20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to type erase the object and pass around common type.  <a href="#ab481a83a0a49d7b827babe725e135b20">More...</a><br /></td></tr>
 <tr class="separator:ab481a83a0a49d7b827babe725e135b20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab17418c8747139674441f6d96e10aa16"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1LEARNER.html#ab17418c8747139674441f6d96e10aa16">single_learner</a> = <a class="el" href="structVW_1_1LEARNER_1_1learner.html">learner</a>&lt; char, <a class="el" href="structexample.html">example</a> &gt;</td></tr>
+<tr class="memdesc:ab17418c8747139674441f6d96e10aa16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used for reductions that process single <a class="el" href="structexample.html">example</a> objects at at time. It type erases the specific reduction object type.  <a href="#ab17418c8747139674441f6d96e10aa16">More...</a><br /></td></tr>
 <tr class="separator:ab17418c8747139674441f6d96e10aa16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1a8de5607718807546f15b47300a4a3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1LEARNER.html#af1a8de5607718807546f15b47300a4a3">multi_learner</a> = <a class="el" href="structVW_1_1LEARNER_1_1learner.html">learner</a>&lt; char, <a class="el" href="example_8h.html#ad706b5b0363eab6ede7915544c91825a">multi_ex</a> &gt;</td></tr>
+<tr class="memdesc:af1a8de5607718807546f15b47300a4a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used for multiline examples where there are several <a class="el" href="structexample.html">example</a> objects required to describe the overall example. It type erases the specific reduction object type.  <a href="#af1a8de5607718807546f15b47300a4a3">More...</a><br /></td></tr>
 <tr class="separator:af1a8de5607718807546f15b47300a4a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -185,7 +192,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ae567a4278ece0021d1272d708e25b749"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1LEARNER.html#ae567a4278ece0021d1272d708e25b749">multiline_learn_or_predict</a> (<a class="el" href="namespaceVW_1_1LEARNER.html#af1a8de5607718807546f15b47300a4a3">multi_learner</a> &amp;base, <a class="el" href="example_8h.html#ad706b5b0363eab6ede7915544c91825a">multi_ex</a> &amp;examples, const uint64_t offset, const uint32_t id=0)</td></tr>
 <tr class="separator:ae567a4278ece0021d1272d708e25b749"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Contains the <a class="el" href="structVW_1_1LEARNER_1_1learner.html" title="Defines the interface for a learning algorithm. ">VW::LEARNER::learner</a> object and utilities for interacting with it. </p>
+</div><h2 class="groupheader">Typedef Documentation</h2>
 <a class="anchor" id="ab481a83a0a49d7b827babe725e135b20"></a>
 <div class="memitem">
 <div class="memproto">
@@ -195,6 +204,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Used to type erase the object and pass around common type. </p>
 
 </div>
 </div>
@@ -208,6 +219,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Used for multiline examples where there are several <a class="el" href="structexample.html">example</a> objects required to describe the overall example. It type erases the specific reduction object type. </p>
+
 </div>
 </div>
 <a class="anchor" id="ab17418c8747139674441f6d96e10aa16"></a>
@@ -219,6 +232,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Used for reductions that process single <a class="el" href="structexample.html">example</a> objects at at time. It type erases the specific reduction object type. </p>
 
 </div>
 </div>
@@ -1112,7 +1127,7 @@ template&lt;bool is_learn&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 15 2020 22:02:11 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 15 2020 22:38:04 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -29,5 +29,5 @@ var searchData=
   ['explore_5feval_5fsetup',['explore_eval_setup',['../explore__eval_8h.html#a94b216307397dd23c7951758cb70ddfc',1,'explore_eval.h']]],
   ['export_5fexample',['export_example',['../namespaceVW.html#a358dde510ef01529c4069b5ac1a5c108',1,'VW']]],
   ['expreplay_5fsetup',['expreplay_setup',['../namespaceExpReplay.html#ad63808ef4c1f3ad225dca598a71ac85d',1,'ExpReplay']]],
-  ['ezexample',['ezexample',['../classezexample.html#aaaa786481365ef9c0e50b1465fdf6947',1,'ezexample::ezexample(const ezexample &amp;ex)=delete'],['../classezexample.html#a97a6cba663f2bf212c62ef3aec7a886a',1,'ezexample::ezexample(vw *this_vw, bool multiline=false, vw *this_vw_parser=nullptr)'],['../classezexample.html#aa5e37570c5f4a8b5d5568ff692ed0da9',1,'ezexample::ezexample(vw *this_vw, example *this_ec, bool multiline=false, vw *this_vw_parser=nullptr)']]]
+  ['ezexample',['ezexample',['../classezexample.html#a97a6cba663f2bf212c62ef3aec7a886a',1,'ezexample::ezexample(vw *this_vw, bool multiline=false, vw *this_vw_parser=nullptr)'],['../classezexample.html#aa5e37570c5f4a8b5d5568ff692ed0da9',1,'ezexample::ezexample(vw *this_vw, example *this_ec, bool multiline=false, vw *this_vw_parser=nullptr)']]]
 ];

@@ -11,7 +11,6 @@ var searchData=
   ['uniform_5frandom_5fmerand48',['uniform_random_merand48',['../namespaceexploration.html#a181ae01106bcdd79234a1bf66d88d645',1,'exploration']]],
   ['unique_5fadd_5fsorted',['unique_add_sorted',['../structv__array.html#ae6f73dad46e8f35ac0b99c7bf4301841',1,'v_array']]],
   ['unique_5ffeatures',['unique_features',['../unique__sort_8h.html#a209bc72175c2bbe3c9977f6952b8db5e',1,'unique_sort.h']]],
-  ['unique_5fid',['unique_id',['../classAllReduceSockets.html#ad365b9d51ebb080a25ec97b8c4952889',1,'AllReduceSockets']]],
   ['unique_5fsort_2eh',['unique_sort.h',['../unique__sort_8h.html',1,'']]],
   ['unique_5fsort_5ffeatures',['unique_sort_features',['../unique__sort_8h.html#a821d46680f1930b521884c4805783bf3',1,'unique_sort.h']]],
   ['unset',['unset',['../namespaceCCB.html#a58ee4b1ece77de222418e9eb75203cf5a81619981df4dbaaaae9411f0ffc93734',1,'CCB::unset()'],['../namespaceVW_1_1slates.html#a894cb7b1b775c40313bbb5e1c4b48a50aa004f5e5953fa776ffbd2ca967a0104c',1,'VW::slates::unset()']]],

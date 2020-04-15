@@ -31,7 +31,6 @@ var searchData=
   ['vw_5fnamespace',['vw_namespace',['../structvw__namespace.html',1,'']]],
   ['vw_5fostream',['vw_ostream',['../classvw__ostream.html',1,'']]],
   ['vw_5fpredict',['vw_predict',['../classvw__slim_1_1vw__predict.html',1,'vw_slim']]],
-  ['vw_5fstreambuf',['vw_streambuf',['../classvw__ostream_1_1vw__streambuf.html',1,'vw_ostream']]],
   ['vw_5funrecognised_5foption_5fexception',['vw_unrecognised_option_exception',['../classVW_1_1vw__unrecognised__option__exception.html',1,'VW']]],
   ['vwreaderhandler',['VWReaderHandler',['../structVWReaderHandler.html',1,'']]]
 ];

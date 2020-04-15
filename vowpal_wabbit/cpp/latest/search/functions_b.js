@@ -1,7 +1,6 @@
 var searchData=
 [
   ['make_5fbase',['make_base',['../namespaceVW_1_1LEARNER.html#a772575fd3a96e67ade70cf79d379acc9',1,'VW::LEARNER']]],
-  ['make_5fnew_5fpointer',['make_new_pointer',['../classSearch_1_1predictor.html#a5a8515072d8a4132e576a26d7222b726',1,'Search::predictor']]],
   ['make_5foption',['make_option',['../namespaceVW_1_1config.html#ae768389a49d24d07215612b2f824d520',1,'VW::config']]],
   ['make_5funique',['make_unique',['../namespaceVW.html#a6e3217b67aa62bbcb889c612e5d8016a',1,'VW']]],
   ['marginal_5fsetup',['marginal_setup',['../marginal_8h.html#a36fa30431f07256809f0025a0b10bd17',1,'marginal.h']]],

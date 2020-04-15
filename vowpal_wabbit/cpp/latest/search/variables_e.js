@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['n',['n',['../structVW_1_1distributionally__robust_1_1ChiSquared_1_1Duals.html#ab7c0cf5e3f381617f1d67cbc2a718455',1,'VW::distributionally_robust::ChiSquared::Duals::n()'],['../classVW_1_1distributionally__robust_1_1ChiSquared.html#a7acbe3fb6b41dc5ea3ca87ebc47fa46d',1,'VW::distributionally_robust::ChiSquared::n()'],['../structExpReplay_1_1expreplay.html#a1303bcb5004ccc2cb6949480bdb43c11',1,'ExpReplay::expreplay::N()']]],
+  ['n',['n',['../structVW_1_1distributionally__robust_1_1ChiSquared_1_1Duals.html#ab7c0cf5e3f381617f1d67cbc2a718455',1,'VW::distributionally_robust::ChiSquared::Duals::n()'],['../structExpReplay_1_1expreplay.html#a1303bcb5004ccc2cb6949480bdb43c11',1,'ExpReplay::expreplay::N()']]],
   ['name',['name',['../structdictionary__info.html#aafd5bfbc5290ad275067a8cf3397970a',1,'dictionary_info::name()'],['../structNamespace.html#a2344df6d1bc705fc8afa24b2c9c79f57',1,'Namespace::name()'],['../structBaseState.html#a675dcc2bdda01de5cde893e77a6116b1',1,'BaseState::name()'],['../structVW_1_1primitive__feature__space.html#a8f5b0342e8c1f8c6d6e5648d14894a59',1,'VW::primitive_feature_space::name()']]],
   ['namespace_5fdictionaries',['namespace_dictionaries',['../structvw.html#af16ebf4efcb03eb22d88cdd44a35869e',1,'vw']]],
   ['namespace_5fhash',['namespace_hash',['../structNamespace.html#a1dcb4de5a4b2c43e6e96597dcd438228',1,'Namespace']]],
@@ -21,7 +21,6 @@ var searchData=
   ['normalized',['normalized',['../classparameters.html#a151823ac932181e2ec63a13461bacc17',1,'parameters']]],
   ['normalized_5fidx',['normalized_idx',['../structvw.html#ad7062a07e5af79d245edd2f3b68a525a',1,'vw']]],
   ['normalized_5fsum_5fnorm_5fx',['normalized_sum_norm_x',['../structvw.html#afa2559e77fad3416bc8d651a029e02d8',1,'vw']]],
-  ['ns_5fexists',['ns_exists',['../classezexample.html#a3269241da4637f7c09cb2df7cae6fa10',1,'ezexample']]],
   ['num_5factions',['num_actions',['../structGEN__CS_1_1cb__to__cs.html#a2e90df436e7af9200081952367583d30',1,'GEN_CS::cb_to_cs::num_actions()'],['../structHookTask_1_1task__data.html#a3cd682caa601613f82b1ff0dfefc0af2',1,'HookTask::task_data::num_actions()']]],
   ['num_5fbits',['num_bits',['../structvw.html#a01b6f14b593ea5a2fe5ae65dead97fab',1,'vw']]],
   ['num_5fchildren',['num_children',['../structvw.html#a2dc2f1037c9154881ab2c8c901cbdfd6',1,'vw']]],

@@ -10,8 +10,6 @@ var searchData=
   ['parse_5fsources',['parse_sources',['../parse__args_8h.html#a18d1a01f8740ee2f82de7eb68c31f5b9',1,'parse_args.h']]],
   ['parsefloat',['parseFloat',['../parse__primitives_8h.html#abc245aa41d935b0e093691e2fc0cbc32',1,'parse_primitives.h']]],
   ['parser',['parser',['../structparser.html#acc4d5681ab3211487e3caa8bea347128',1,'parser::parser(size_t ring_size, bool strict_parse_)'],['../structparser.html#a5264db72f6ed8ba82c078af43e3bfab2',1,'parser::parser(const parser &amp;)=delete']]],
-  ['pass_5fdown',['pass_down',['../classAllReduceSockets.html#a345a963f2c0db12df34689612bb71de8',1,'AllReduceSockets']]],
-  ['pass_5fup',['pass_up',['../classAllReduceSockets.html#a450c1629bb3e63799a340822dbe1ba96',1,'AllReduceSockets']]],
   ['pop',['pop',['../classVW_1_1ptr__queue.html#a6e41c051fc5776a1e8d51b232e65e71d',1,'VW::ptr_queue::pop()'],['../structv__array.html#aab57c8e60560b774715c19e95cf76c8f',1,'v_array::pop()'],['../v__array_8h.html#af9b7eb63e8239c9e866ebd3fc8ef7570',1,'pop():&#160;v_array.h']]],
   ['pop_5fbest_5fitem',['pop_best_item',['../classBeam_1_1beam.html#ad20a36b0ceb323194a91caa252087026',1,'Beam::beam']]],
   ['pop_5fns',['pop_ns',['../json__utils_8h.html#a9a24a29fa01e35d8625b1a76802585d4',1,'json_utils.h']]],
