@@ -113,7 +113,7 @@ var searchData=
   ['push_5fback_5funchecked',['push_back_unchecked',['../structv__array.html#ac0c7a2f982de21ff617deac085b3aa89',1,'v_array']]],
   ['push_5ffeature',['push_feature',['../classvw__slim_1_1example__predict__builder.html#a6f693aa571f6c8ca6c951834aaa01c36',1,'vw_slim::example_predict_builder']]],
   ['push_5ffeature_5fstring',['push_feature_string',['../classvw__slim_1_1example__predict__builder.html#a179644956b05b05c6374bac36e7b3a58',1,'vw_slim::example_predict_builder']]],
-  ['push_5fmany',['push_many',['../v__array_8h.html#a9490092cc42677eee809440465fc6078',1,'v_array.h']]],
+  ['push_5fmany',['push_many',['../v__array_8h.html#acebbdfa66eefc12023c53deec7edc050',1,'v_array.h']]],
   ['push_5fns',['push_ns',['../json__utils_8h.html#a1554bc5eeefd76bc5253823cd90ba398',1,'json_utils.h']]],
   ['pushnamespace',['PushNamespace',['../structContext.html#ab530801b17951c4cacb1f9a7c472e9d0',1,'Context']]]
 ];
