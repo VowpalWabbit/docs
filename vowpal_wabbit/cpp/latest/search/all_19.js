@@ -30,6 +30,6 @@ var searchData=
   ['_7evw',['~vw',['../structvw.html#a8b205287bbc6f9773885db2d04b1cbc2',1,'vw']]],
   ['_7evw_5fargument_5fdisagreement_5fexception',['~vw_argument_disagreement_exception',['../classVW_1_1vw__argument__disagreement__exception.html#a573b93ada6d726ad1fd48b82b4095067',1,'VW::vw_argument_disagreement_exception']]],
   ['_7evw_5fargument_5finvalid_5fvalue_5fexception',['~vw_argument_invalid_value_exception',['../classVW_1_1vw__argument__invalid__value__exception.html#aaf820ea4a58da5aba69e01fd792f949f',1,'VW::vw_argument_invalid_value_exception']]],
-  ['_7evw_5fexception',['~vw_exception',['../classVW_1_1vw__exception.html#a2f4cc48f2cb670a5aa0d1fd8b487300a',1,'VW::vw_exception']]],
+  ['_7evw_5fexception',['~vw_exception',['../classVW_1_1vw__exception.html#ab47969e7267d0464d2d53c9e6980bc92',1,'VW::vw_exception']]],
   ['_7evw_5funrecognised_5foption_5fexception',['~vw_unrecognised_option_exception',['../classVW_1_1vw__unrecognised__option__exception.html#a4680cb4d5f81086588dc484201750cbb',1,'VW::vw_unrecognised_option_exception']]]
 ];
