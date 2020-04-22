@@ -75,7 +75,7 @@ var searchData=
   ['slotsstate',['SlotsState',['../structSlotsState.html#ac94f1e29e5831b3f76b939cc5eff4c33',1,'SlotsState']]],
   ['sort',['sort',['../structfeatures.html#ac1d0ea5e77002bab482dc38d62e7acdb',1,'features']]],
   ['sort_5faction_5fprobs',['sort_action_probs',['../namespaceVW_1_1cb__explore__adf.html#a9a7b608cba2aa775ba41ce214921428e',1,'VW::cb_explore_adf']]],
-  ['sort_5fand_5ffilter_5fduplicate_5finteractions',['sort_and_filter_duplicate_interactions',['../namespaceINTERACTIONS.html#a5deef9fa1c541b2e2729b3c1f16ee00d',1,'INTERACTIONS']]],
+  ['sort_5fand_5ffilter_5fduplicate_5finteractions',['sort_and_filter_duplicate_interactions',['../namespaceINTERACTIONS.html#ae8cd382cc96bcb221df2f5e45e337fe5',1,'INTERACTIONS']]],
   ['sort_5fby_5fscores',['sort_by_scores',['../classvw__slim_1_1vw__predict.html#a348ee1567173bd55ca4c930540201596',1,'vw_slim::vw_predict']]],
   ['spanningtree',['SpanningTree',['../classVW_1_1SpanningTree.html#a76c2f104c917104fa0e86a13c6d96a84',1,'VW::SpanningTree']]],
   ['sparse_5fiterator',['sparse_iterator',['../classsparse__iterator.html#a7b363f491b3dd9c5ce9a3ea3f4cc7dab',1,'sparse_iterator::sparse_iterator(weight_map::iterator &amp;iter, uint32_t stride)'],['../classsparse__iterator.html#a23deaeb1e4fc49a8fd989f27b4124288',1,'sparse_iterator::sparse_iterator(const sparse_iterator &amp;other)=default'],['../classsparse__iterator.html#ac458de3a48e28e960ff15fad46e75424',1,'sparse_iterator::sparse_iterator(sparse_iterator &amp;&amp;other)=default']]],

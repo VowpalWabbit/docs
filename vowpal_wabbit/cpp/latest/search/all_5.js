@@ -74,7 +74,7 @@ var searchData=
   ['examples_5fdont_5fchange',['EXAMPLES_DONT_CHANGE',['../namespaceSearch.html#a00f1706c73f53da6977b3358e53c8e58',1,'Search']]],
   ['exc_5fptr',['exc_ptr',['../structparser.html#abef922392d111bc5567e672df2d35e57',1,'parser']]],
   ['expand',['EXPAND',['../vw__exception_8h.html#ae4b532a93c757194ec73b6790a3e6b1f',1,'vw_exception.h']]],
-  ['expand_5finteractions',['expand_interactions',['../namespaceINTERACTIONS.html#a99d727992d21c53dec1fde14f3605bc2',1,'INTERACTIONS']]],
+  ['expand_5finteractions',['expand_interactions',['../namespaceINTERACTIONS.html#a0d586521269dbb651262b55b97121395',1,'INTERACTIONS']]],
   ['explicit_5fincluded_5factions',['explicit_included_actions',['../structCCB_1_1label.html#addf86d1b626620ed7cee7ea949568db4',1,'CCB::label']]],
   ['exploration',['exploration',['../namespaceexploration.html',1,'']]],
   ['explore_2eh',['explore.h',['../explore_8h.html',1,'']]],

@@ -44,7 +44,7 @@ var searchData=
   ['train',['train',['../classezexample.html#a2663a9ccb1d95c6ddbc6ee5bd891cbe9',1,'ezexample']]],
   ['training',['training',['../structvw.html#aa008bf77c7a0f5b90b21d16b3b1cf38c',1,'vw']]],
   ['transitionstate',['TransitionState',['../structContext.html#a2361db68e5270b12758993fba441f47d',1,'Context']]],
-  ['triples',['triples',['../structvw.html#a26ee28596bc95561800e08b4d97e9760',1,'vw']]],
+  ['triples',['triples',['../structvw.html#a028da66fe9c917a9e7b7f4d352154fc6',1,'vw']]],
   ['trunc_5fweight',['trunc_weight',['../namespaceGD.html#a9c15740d0f166048172adbe5b0e7531b',1,'GD']]],
   ['truncate_5fto',['truncate_to',['../structfeatures.html#aeb3898d3d87779ba751d03bb42a463b2',1,'features::truncate_to(const features_value_iterator &amp;pos)'],['../structfeatures.html#afd6b770b048e3a2ee96590f9e412a91b',1,'features::truncate_to(size_t i)']]],
   ['try_5fget_5fpositional_5foption_5ftoken',['try_get_positional_option_token',['../structVW_1_1config_1_1options__boost__po.html#a98f5ffe62475c65aae81139bbf2d1253',1,'VW::config::options_boost_po']]],

@@ -25,7 +25,7 @@ var searchData=
   ['example_5fis_5fnewline',['example_is_newline',['../example_8h.html#ad8ef938a3403c1301b406f6532895c23',1,'example.h']]],
   ['example_5fis_5fnewline_5fnot_5fheader',['example_is_newline_not_header',['../namespaceCB__ALGS.html#a0066e59b0219432265df0426329ea266',1,'CB_ALGS']]],
   ['example_5fpredict_5fbuilder',['example_predict_builder',['../classvw__slim_1_1example__predict__builder.html#a256f5181516491c5b19f5c1707b51637',1,'vw_slim::example_predict_builder::example_predict_builder(example_predict *ex, char *namespace_name, uint32_t feature_index_num_bits=18)'],['../classvw__slim_1_1example__predict__builder.html#a1e4077d8b55d40414cb93ba7dc5206aa',1,'vw_slim::example_predict_builder::example_predict_builder(example_predict *ex, namespace_index namespace_idx, uint32_t feature_index_num_bits=18)']]],
-  ['expand_5finteractions',['expand_interactions',['../namespaceINTERACTIONS.html#a99d727992d21c53dec1fde14f3605bc2',1,'INTERACTIONS']]],
+  ['expand_5finteractions',['expand_interactions',['../namespaceINTERACTIONS.html#a0d586521269dbb651262b55b97121395',1,'INTERACTIONS']]],
   ['explore_5feval_5fsetup',['explore_eval_setup',['../explore__eval_8h.html#a94b216307397dd23c7951758cb70ddfc',1,'explore_eval.h']]],
   ['export_5fexample',['export_example',['../namespaceVW.html#a358dde510ef01529c4069b5ac1a5c108',1,'VW']]],
   ['expreplay_5fsetup',['expreplay_setup',['../namespaceExpReplay.html#ad63808ef4c1f3ad225dca598a71ac85d',1,'ExpReplay']]],
