@@ -13,6 +13,7 @@ var searchData=
   ['nn_5foutput_5fnamespace',['nn_output_namespace',['../constant_8h.html#add9fa018879554a58b54f0b39a5c750b',1,'constant.h']]],
   ['no_5fbias',['no_bias',['../structvw.html#ae181de61c3d4731d88bd89936132d1cd',1,'vw']]],
   ['no_5fcaching',['NO_CACHING',['../namespaceSearch.html#ac4845b2f404fb40ccda20dbbee8371ce',1,'Search']]],
+  ['no_5fdaemon',['no_daemon',['../structvw.html#ad4840daf9a76c5776dd11da2efb47d82',1,'vw']]],
   ['no_5flabel_5fparser',['no_label_parser',['../namespaceno__label.html#a39c874dbb1f3c89a76e050fc608e28b6',1,'no_label']]],
   ['node',['node',['../classAllReduce.html#aabe2467446f88840299517725e20f84e',1,'AllReduce']]],
   ['node_5fid_5fnamespace',['node_id_namespace',['../constant_8h.html#a2ba4a93b0663f069dc7518d27442b9d2',1,'constant.h']]],

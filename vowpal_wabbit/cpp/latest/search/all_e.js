@@ -22,6 +22,7 @@ var searchData=
   ['nn_5fsetup',['nn_setup',['../nn_8h.html#ae907bdf43ea7b80fd25a1ef191eb7098',1,'nn.h']]],
   ['no_5fbias',['no_bias',['../structvw.html#ae181de61c3d4731d88bd89936132d1cd',1,'vw']]],
   ['no_5fcaching',['NO_CACHING',['../namespaceSearch.html#ac4845b2f404fb40ccda20dbbee8371ce',1,'Search']]],
+  ['no_5fdaemon',['no_daemon',['../structvw.html#ad4840daf9a76c5776dd11da2efb47d82',1,'vw']]],
   ['no_5flabel',['no_label',['../namespaceno__label.html',1,'no_label'],['../namespaceno__label.html#a85a10f8b84a537aa9f3da50a4e566a4c',1,'no_label::no_label()']]],
   ['no_5flabel_2eh',['no_label.h',['../no__label_8h.html',1,'']]],
   ['no_5flabel_5fparser',['no_label_parser',['../namespaceno__label.html#a39c874dbb1f3c89a76e050fc608e28b6',1,'no_label']]],
