@@ -28,6 +28,7 @@ var searchData=
   ['get_5faction_5fscore',['get_action_score',['../namespaceVW.html#abccfb69356247d2205b986d115a90422',1,'VW']]],
   ['get_5faction_5fscore_5flength',['get_action_score_length',['../namespaceVW.html#abdf3019bd07dfbedad298515e671ce4f',1,'VW']]],
   ['get_5fall_5foptions',['get_all_options',['../structVW_1_1config_1_1options__i.html#a85f6953648448929bb8ca2ac1c4493db',1,'VW::config::options_i::get_all_options()'],['../structVW_1_1config_1_1options__boost__po.html#ad05fe0f1674beda68f4a0d7928bb4f55',1,'VW::config::options_boost_po::get_all_options()']]],
+  ['get_5fand_5fupdate_5fgaussian',['get_and_update_gaussian',['../structrand__state.html#a55d0c86612d255e1fa9f2a277f7ee148',1,'rand_state']]],
   ['get_5fand_5fupdate_5frandom',['get_and_update_random',['../structrand__state.html#a30f7278d591560a2b576286d69903e1c',1,'rand_state']]],
   ['get_5fargv_5ffrom_5fstring',['get_argv_from_string',['../namespaceVW.html#a37f2cd35b86cf8169a70416900bcca3b',1,'VW']]],
   ['get_5fbeam_5fsize',['get_beam_size',['../classBeam_1_1beam.html#aec6980b8403790156ad5fb7b890a042f',1,'Beam::beam']]],

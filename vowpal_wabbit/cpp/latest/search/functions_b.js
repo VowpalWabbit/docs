@@ -10,6 +10,7 @@ var searchData=
   ['maybe_5foverride_5fprediction',['maybe_override_prediction',['../classSearch_1_1BaseTask.html#a664d7119df38d66bfca83fd402c3ab74',1,'Search::BaseTask']]],
   ['memory_5ftree_5fsetup',['memory_tree_setup',['../memory__tree_8h.html#a98a11e2879557fec910a6bed9c5cbee1',1,'memory_tree.h']]],
   ['merand48',['merand48',['../rand48_8h.html#a64cab1594b4166e9442ee1429123044b',1,'rand48.h']]],
+  ['merand48_5fboxmuller',['merand48_boxmuller',['../rand48_8h.html#a1a5d99f1fed8adf3248a30cae6b13437',1,'rand48.h']]],
   ['merand48_5fnoadvance',['merand48_noadvance',['../rand48_8h.html#a25a35c4d653d47b644ce40f0437f8101',1,'rand48.h']]],
   ['mf_5fsetup',['mf_setup',['../mf_8h.html#a3996863f01166d29d4709cc8e740b766',1,'mf.h']]],
   ['might_5finsert',['might_insert',['../classBeam_1_1beam.html#a27a76654671cb98e49e203f38097df57',1,'Beam::beam']]],
