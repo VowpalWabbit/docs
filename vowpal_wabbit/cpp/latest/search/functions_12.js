@@ -13,6 +13,7 @@ var searchData=
   ['transitionstate',['TransitionState',['../structContext.html#a2361db68e5270b12758993fba441f47d',1,'Context']]],
   ['trunc_5fweight',['trunc_weight',['../namespaceGD.html#a9c15740d0f166048172adbe5b0e7531b',1,'GD']]],
   ['truncate_5fto',['truncate_to',['../structfeatures.html#aeb3898d3d87779ba751d03bb42a463b2',1,'features::truncate_to(const features_value_iterator &amp;pos)'],['../structfeatures.html#afd6b770b048e3a2ee96590f9e412a91b',1,'features::truncate_to(size_t i)']]],
+  ['try_5fextract_5frandom_5fseed',['try_extract_random_seed',['../namespaceVW.html#ad0d3500b9970b8e8d0b35c5f189d6d4c',1,'VW']]],
   ['try_5fget_5fpositional_5foption_5ftoken',['try_get_positional_option_token',['../structVW_1_1config_1_1options__boost__po.html#a98f5ffe62475c65aae81139bbf2d1253',1,'VW::config::options_boost_po']]],
   ['tuple_5fdbf',['tuple_dbf',['../namespaceVW_1_1LEARNER.html#a8acf98b91b127b58d1a5d59ebe5979ec',1,'VW::LEARNER']]],
   ['type_5fhash',['type_hash',['../structVW_1_1config_1_1typed__option.html#af75aac6192cabac91008572cde768049',1,'VW::config::typed_option']]],
