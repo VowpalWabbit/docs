@@ -133,8 +133,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af79189f2fe6e552e3242c4493e660fe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06e3732a42ec506dbd766ebe8e4c10d5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1options__boost__po.html#a06e3732a42ec506dbd766ebe8e4c10d5">replace</a> (const std::string &amp;key, const std::string &amp;value) override</td></tr>
 <tr class="separator:a06e3732a42ec506dbd766ebe8e4c10d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98f5ffe62475c65aae81139bbf2d1253"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1options__boost__po.html#a98f5ffe62475c65aae81139bbf2d1253">try_get_positional_option_token</a> (const std::string &amp;key, std::string &amp;token, int position)</td></tr>
-<tr class="separator:a98f5ffe62475c65aae81139bbf2d1253"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a171fc89aecf3a26ffc53b060bbf46089"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1options__boost__po.html#a171fc89aecf3a26ffc53b060bbf46089">get_positional_tokens</a> () override</td></tr>
+<tr class="separator:a171fc89aecf3a26ffc53b060bbf46089"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0b0e05c301a391406b30362f06dc854"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
 <tr class="memitem:af0b0e05c301a391406b30362f06dc854"><td class="memTemplItemLeft" align="right" valign="top">po::typed_value&lt; std::vector&lt; bool &gt; &gt; *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1options__boost__po.html#af0b0e05c301a391406b30362f06dc854">convert_to_boost_value</a> (std::shared_ptr&lt; <a class="el" href="structVW_1_1config_1_1typed__option.html">typed_option</a>&lt; bool &gt;&gt; &amp;opt)</td></tr>
 <tr class="separator:af0b0e05c301a391406b30362f06dc854"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -349,6 +349,31 @@ template&lt;&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a171fc89aecf3a26ffc53b060bbf46089"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::string&gt; VW::config::options_boost_po::get_positional_tokens </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="structVW_1_1config_1_1options__i.html#a952d9499aec5ed87af96d3828a872998">VW::config::options_i</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="aacd61adebca74c1bcba8c371118c4691"></a>
 <div class="memitem">
 <div class="memproto">
@@ -470,46 +495,6 @@ template&lt;&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a98f5ffe62475c65aae81139bbf2d1253"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool VW::config::options_boost_po::try_get_positional_option_token </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::string &amp;&#160;</td>
-          <td class="paramname"><em>token</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>position</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a4bffdc02685a8feeac2079b0dca6ba64"></a>
 <div class="memitem">
 <div class="memproto">
@@ -542,7 +527,7 @@ template&lt;&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 7 2020 13:05:09 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu May 7 2020 19:36:16 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
