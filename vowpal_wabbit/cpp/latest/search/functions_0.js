@@ -31,6 +31,7 @@ var searchData=
   ['allreducesockets',['AllReduceSockets',['../classAllReduceSockets.html#a39d7eb04cefbf3d9f79bf81d4550c1a3',1,'AllReduceSockets']]],
   ['allreducesync',['AllReduceSync',['../classAllReduceSync.html#a9c7c97a0d8c0d81647614db8e4cac4ef',1,'AllReduceSync']]],
   ['allreducethreads',['AllReduceThreads',['../classAllReduceThreads.html#a55bf6976a5fb1cd2dc036b2899c29a07',1,'AllReduceThreads::AllReduceThreads(AllReduceThreads *root, const size_t ptotal, const size_t pnode, bool quiet=false)'],['../classAllReduceThreads.html#a8cccbdd0a46a186fd867529aa0f6c491',1,'AllReduceThreads::AllReduceThreads(const size_t ptotal, const size_t pnode, bool quiet=false)']]],
+  ['append_5fempty_5fnewline_5fexample_5ffor_5fdriver',['append_empty_newline_example_for_driver',['../parse__example__json_8h.html#a4404b05ce42808b401542d1f90dde1b0',1,'parse_example_json.h']]],
   ['apply_5fpdrop',['apply_pdrop',['../namespaceVW.html#aaa9feb4ea13990c5775fa3ef3f8a8ec8',1,'VW']]],
   ['are_5ffeatures_5fcompatible',['are_features_compatible',['../namespaceVW.html#a220e2434f6884967afd4ea2f8fc4e6d6',1,'VW']]],
   ['are_5fsame',['are_same',['../namespaceVW_1_1math.html#a5283b8fa4ef629eb885fce24d672cf07',1,'VW::math']]],

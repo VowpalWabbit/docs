@@ -24,7 +24,6 @@ var searchData=
   ['predictldf',['predictLDF',['../structSearch_1_1search.html#ab6d6c7c45072205a9420212a338f8247',1,'Search::search']]],
   ['predictneedsexample',['predictNeedsExample',['../structSearch_1_1search.html#a5666c275c0b94a402e542a9de27522d3',1,'Search::search']]],
   ['predictor',['predictor',['../classSearch_1_1predictor.html#a6a65220729da6d9ed4c74e54d0142cff',1,'Search::predictor']]],
-  ['prepare_5ffor_5flearner',['prepare_for_learner',['../parse__example__json_8h.html#aaae29798d1b1f8e9aeb40de3c7b4357c',1,'parse_example_json.h']]],
   ['pretty_5flabel',['pretty_label',['../structSearch_1_1search.html#ab05522f089e76ec3ebe1012fb875c850',1,'Search::search']]],
   ['print_5faction_5fscore',['print_action_score',['../namespaceACTION__SCORE.html#ac4c36c863ccf7605585614add369439c',1,'ACTION_SCORE']]],
   ['print_5faudit_5ffeatures',['print_audit_features',['../namespaceGD.html#abdacad36d07b1b72daa1fd3809c92400',1,'GD']]],
