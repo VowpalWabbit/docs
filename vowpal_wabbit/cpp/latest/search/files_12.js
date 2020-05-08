@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['scope_5fexit_2eh',['scope_exit.h',['../scope__exit_8h.html',1,'']]],
   ['scorer_2eh',['scorer.h',['../scorer_8h.html',1,'']]],
   ['search_2eh',['search.h',['../search_8h.html',1,'']]],
   ['search_5fdep_5fparser_2eh',['search_dep_parser.h',['../search__dep__parser_8h.html',1,'']]],

@@ -19,6 +19,7 @@ var searchData=
   ['dense_5fparameters',['dense_parameters',['../classdense__parameters.html#ac84576139f254e8bd0a68203f936bf05',1,'dense_parameters::dense_parameters(size_t length, uint32_t stride_shift=0)'],['../classdense__parameters.html#a00ca6d51dc5f023b3ef40a40f80937ea',1,'dense_parameters::dense_parameters()'],['../classdense__parameters.html#aa481a3bed1e5bc50886a750eb108e791',1,'dense_parameters::dense_parameters(const dense_parameters &amp;other)'],['../classdense__parameters.html#af9e0836e1af2e26448eb574429abfc0a',1,'dense_parameters::dense_parameters(dense_parameters &amp;&amp;)=delete']]],
   ['destroy_5ffree',['destroy_free',['../memory_8h.html#a23ace4280c96b88236a54ee372eb162b',1,'memory.h']]],
   ['do_5frecombination',['do_recombination',['../classBeam_1_1beam.html#a7c024b7c58509c405271300549fbfde0',1,'Beam::beam']]],
+  ['do_5fswap',['do_swap',['../classVW_1_1details_1_1swap__guard__impl.html#aab5175200e844e9aec7344cee91512a4',1,'VW::details::swap_guard_impl::do_swap()'],['../classVW_1_1details_1_1swap__guard__impl__rvalue.html#a8bc7cd28e0cfdaeb2b20246662ff01c0',1,'VW::details::swap_guard_impl_rvalue::do_swap()']]],
   ['double',['Double',['../structVWReaderHandler.html#a9b1d990eb0240611a2f3ccce3afaa963',1,'VWReaderHandler']]],
   ['dummy_5ffunc',['dummy_func',['../namespaceGD.html#ab2e68c1b372774e285f6d060c8537a5d',1,'GD']]]
 ];

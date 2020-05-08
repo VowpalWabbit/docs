@@ -4,6 +4,7 @@ var searchData=
   ['cb_5fexplore_5fadf',['cb_explore_adf',['../namespaceVW_1_1cb__explore__adf.html',1,'VW']]],
   ['config',['config',['../namespaceVW_1_1config.html',1,'VW']]],
   ['cover',['cover',['../namespaceVW_1_1cb__explore__adf_1_1cover.html',1,'VW::cb_explore_adf']]],
+  ['details',['details',['../namespaceVW_1_1details.html',1,'VW']]],
   ['distributionally_5frobust',['distributionally_robust',['../namespaceVW_1_1distributionally__robust.html',1,'VW']]],
   ['first',['first',['../namespaceVW_1_1cb__explore__adf_1_1first.html',1,'VW::cb_explore_adf']]],
   ['greedy',['greedy',['../namespaceVW_1_1cb__explore__adf_1_1greedy.html',1,'VW::cb_explore_adf']]],

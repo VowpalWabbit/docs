@@ -55,6 +55,7 @@ var searchData=
   ['distributionally_5frobust_2eh',['distributionally_robust.h',['../distributionally__robust_8h.html',1,'']]],
   ['do_5frecombination',['do_recombination',['../classBeam_1_1beam.html#a7c024b7c58509c405271300549fbfde0',1,'Beam::beam']]],
   ['do_5freset_5fsource',['do_reset_source',['../structvw.html#a560289918a63069c9bed7c77e16de90b',1,'vw']]],
+  ['do_5fswap',['do_swap',['../classVW_1_1details_1_1swap__guard__impl.html#aab5175200e844e9aec7344cee91512a4',1,'VW::details::swap_guard_impl::do_swap()'],['../classVW_1_1details_1_1swap__guard__impl__rvalue.html#a8bc7cd28e0cfdaeb2b20246662ff01c0',1,'VW::details::swap_guard_impl_rvalue::do_swap()']]],
   ['done',['done',['../structparser.html#a73041b4f11e952967779e142d70f0e32',1,'parser']]],
   ['double',['Double',['../structVWReaderHandler.html#a9b1d990eb0240611a2f3ccce3afaa963',1,'VWReaderHandler']]],
   ['dsjson',['dsjson',['../structinput__options.html#adbd9d55bfe27f7c844591e5840660ed8',1,'input_options']]],

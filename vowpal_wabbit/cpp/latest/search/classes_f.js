@@ -2,6 +2,7 @@ var searchData=
 [
   ['safe_5fexample_5fpredict',['safe_example_predict',['../classsafe__example__predict.html',1,'']]],
   ['save_5fload_5fdata',['save_load_data',['../structVW_1_1LEARNER_1_1save__load__data.html',1,'VW::LEARNER']]],
+  ['scope_5fexit_5fcaller',['scope_exit_caller',['../classVW_1_1details_1_1scope__exit__caller.html',1,'VW::details']]],
   ['score_5fiterator',['score_iterator',['../classACTION__SCORE_1_1score__iterator.html',1,'ACTION_SCORE']]],
   ['search',['search',['../structSearch_1_1search.html',1,'Search']]],
   ['search_5fmetatask',['search_metatask',['../structSearch_1_1search__metatask.html',1,'Search']]],
@@ -16,5 +17,7 @@ var searchData=
   ['sparse_5fparameters',['sparse_parameters',['../classsparse__parameters.html',1,'']]],
   ['strict_5fparse_5fexception',['strict_parse_exception',['../classVW_1_1strict__parse__exception.html',1,'VW']]],
   ['stride_5fshift_5fguard',['stride_shift_guard',['../classvw__slim_1_1stride__shift__guard.html',1,'vw_slim']]],
-  ['stringtostringstate',['StringToStringState',['../classStringToStringState.html',1,'']]]
+  ['stringtostringstate',['StringToStringState',['../classStringToStringState.html',1,'']]],
+  ['swap_5fguard_5fimpl',['swap_guard_impl',['../classVW_1_1details_1_1swap__guard__impl.html',1,'VW::details']]],
+  ['swap_5fguard_5fimpl_5frvalue',['swap_guard_impl_rvalue',['../classVW_1_1details_1_1swap__guard__impl__rvalue.html',1,'VW::details']]]
 ];
