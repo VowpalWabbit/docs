@@ -13,7 +13,6 @@ var searchData=
   ['v_5farray_3c_20feature_5findex_20_3e',['v_array&lt; feature_index &gt;',['../structv__array.html',1,'']]],
   ['v_5farray_3c_20feature_5fvalue_20_3e',['v_array&lt; feature_value &gt;',['../structv__array.html',1,'']]],
   ['v_5farray_3c_20float_20_3e',['v_array&lt; float &gt;',['../structv__array.html',1,'']]],
-  ['v_5farray_3c_20int_20_3e',['v_array&lt; int &gt;',['../structv__array.html',1,'']]],
   ['v_5farray_3c_20namespace_5findex_20_3e',['v_array&lt; namespace_index &gt;',['../structv__array.html',1,'']]],
   ['v_5farray_3c_20ptag_20_3e',['v_array&lt; ptag &gt;',['../structv__array.html',1,'']]],
   ['v_5farray_3c_20size_5ft_20_3e',['v_array&lt; size_t &gt;',['../structv__array.html',1,'']]],

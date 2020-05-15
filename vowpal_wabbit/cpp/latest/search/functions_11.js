@@ -75,6 +75,8 @@ var searchData=
   ['slates_5fsetup',['slates_setup',['../namespaceVW_1_1slates.html#a8cacf24fc0e61d669aa178c7f393f862',1,'VW::slates']]],
   ['slotoutcomelist',['SlotOutcomeList',['../classSlotOutcomeList.html#a99714858f73a1a844d61765d49d2c679',1,'SlotOutcomeList']]],
   ['slotsstate',['SlotsState',['../structSlotsState.html#ac94f1e29e5831b3f76b939cc5eff4c33',1,'SlotsState']]],
+  ['socket',['socket',['../structVW_1_1io_1_1socket.html#a4ffc583f44bb4f5492d0eba66191735b',1,'VW::io::socket']]],
+  ['socket_5fcloser',['socket_closer',['../structVW_1_1io_1_1details_1_1socket__closer.html#a55e12531f67efb22b3eb72a5913bd1bb',1,'VW::io::details::socket_closer']]],
   ['sort',['sort',['../structfeatures.html#ac1d0ea5e77002bab482dc38d62e7acdb',1,'features']]],
   ['sort_5faction_5fprobs',['sort_action_probs',['../namespaceVW_1_1cb__explore__adf.html#a9a7b608cba2aa775ba41ce214921428e',1,'VW::cb_explore_adf']]],
   ['sort_5fand_5ffilter_5fduplicate_5finteractions',['sort_and_filter_duplicate_interactions',['../namespaceINTERACTIONS.html#ae8cd382cc96bcb221df2f5e45e337fe5',1,'INTERACTIONS']]],

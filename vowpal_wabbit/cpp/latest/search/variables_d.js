@@ -10,7 +10,6 @@ var searchData=
   ['m_5ftype_5fhash',['m_type_hash',['../structVW_1_1config_1_1base__option.html#a3eda02f24b7010ae07aa27e195b5040f',1,'VW::config::base_option']]],
   ['major',['major',['../structVW_1_1version__struct.html#a7c6f65031ce115884665fee6c003319f',1,'VW::version_struct']]],
   ['max_5fexamples',['max_examples',['../structvw.html#a568261a9b3b87cc30907d53a08ab3f02',1,'vw']]],
-  ['max_5ffd',['max_fd',['../structparser.html#a0212867a595343ef36a89c0149258178',1,'parser']]],
   ['max_5flabel',['max_label',['../structshared__data.html#ab7a25e683bebc7347fa97d71e116f712',1,'shared_data']]],
   ['mc_5flabel',['mc_label',['../namespaceMULTICLASS.html#aac01d238b01e5f0cc20bb8c2fb5eba11',1,'MULTICLASS']]],
   ['message_5fnamespace',['message_namespace',['../constant_8h.html#a09941ced3b4fe4c40b71023a150152b0',1,'constant.h']]],

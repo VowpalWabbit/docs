@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['ref',['Ref',['../classvw__slim_1_1internal_1_1location__reference.html#a2cb2d9040226aa0ba192c8841d7c24bf',1,'vw_slim::internal::location_reference::Ref()'],['../classvw__slim_1_1internal_1_1collection__pair__iterator.html#a0fe3e989074b5ea0d7f10422e6bedac9',1,'vw_slim::internal::collection_pair_iterator::Ref()']]],
-  ['reference',['reference',['../classsparse__iterator.html#ac617a19674aab4b53a1c1bf52980fb58',1,'sparse_iterator::reference()'],['../classdense__iterator.html#ac3ec6a5f94f444fe4eb34e8a751aea53',1,'dense_iterator::reference()']]]
+  ['single_5flearner',['single_learner',['../namespaceVW_1_1LEARNER.html#ab17418c8747139674441f6d96e10aa16',1,'VW::LEARNER']]],
+  ['socket_5ft',['socket_t',['../allreduce_8h.html#a30353f381f5fccbb956eea1f3a110b6c',1,'socket_t():&#160;allreduce.h'],['../spanning__tree_8h.html#a30353f381f5fccbb956eea1f3a110b6c',1,'socket_t():&#160;spanning_tree.h']]],
+  ['string_5fview',['string_view',['../namespaceVW.html#a85aa9dc51ef86f7e832147b1c0c93d72',1,'VW']]],
+  ['supported_5foptions_5ftypes',['supported_options_types',['../namespaceVW_1_1config.html#a9413741270dc59749cfe7ff2a68fa0b1',1,'VW::config']]]
 ];

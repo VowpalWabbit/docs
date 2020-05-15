@@ -18,7 +18,6 @@ var searchData=
   ['cbify_2eh',['cbify.h',['../cbify_8h.html',1,'']]],
   ['ccb_5flabel_2eh',['ccb_label.h',['../ccb__label_8h.html',1,'']]],
   ['classweight_2eh',['classweight.h',['../classweight_8h.html',1,'']]],
-  ['comp_5fio_2eh',['comp_io.h',['../comp__io_8h.html',1,'']]],
   ['compat_2eh',['compat.h',['../compat_8h.html',1,'']]],
   ['conditional_5fcontextual_5fbandit_2eh',['conditional_contextual_bandit.h',['../conditional__contextual__bandit_8h.html',1,'']]],
   ['confidence_2eh',['confidence.h',['../confidence_8h.html',1,'']]],

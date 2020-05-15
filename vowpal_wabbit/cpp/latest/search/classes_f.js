@@ -12,6 +12,8 @@ var searchData=
   ['slates_5fdata',['slates_data',['../structVW_1_1slates_1_1slates__data.html',1,'VW::slates']]],
   ['slotoutcomelist',['SlotOutcomeList',['../classSlotOutcomeList.html',1,'']]],
   ['slotsstate',['SlotsState',['../structSlotsState.html',1,'']]],
+  ['socket',['socket',['../structVW_1_1io_1_1socket.html',1,'VW::io']]],
+  ['socket_5fcloser',['socket_closer',['../structVW_1_1io_1_1details_1_1socket__closer.html',1,'VW::io::details']]],
   ['spanningtree',['SpanningTree',['../classVW_1_1SpanningTree.html',1,'VW']]],
   ['sparse_5fiterator',['sparse_iterator',['../classsparse__iterator.html',1,'']]],
   ['sparse_5fparameters',['sparse_parameters',['../classsparse__parameters.html',1,'']]],

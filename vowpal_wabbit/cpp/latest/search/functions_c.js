@@ -14,6 +14,8 @@ var searchData=
   ['noop_5fsl',['noop_sl',['../namespaceVW_1_1LEARNER.html#a6ec1f35572a34a1f76a16014d0ddc5fe',1,'VW::LEARNER']]],
   ['not_5fnull',['not_null',['../classsparse__parameters.html#a391c2da96ed2b88d053c14684458b963',1,'sparse_parameters::not_null()'],['../classparameters.html#a791d1245a747b229ff6a80a6f6783d5b',1,'parameters::not_null()'],['../classdense__parameters.html#ad19f1750ed9161abd89c1c071b2b709d',1,'dense_parameters::not_null()']]],
   ['null',['Null',['../structBaseState.html#ac82289a503437ff8044c9fab9a416a49',1,'BaseState::Null()'],['../classArrayState.html#a9aa4847f5a9bf8ea8fdbcec3cdfe9ef4',1,'ArrayState::Null()'],['../classArrayToVectorState.html#aa6587bd7d968a5e86cc6bd15bb04830e',1,'ArrayToVectorState::Null()'],['../classStringToStringState.html#a5c360ce737306a4e076af2524be15d88',1,'StringToStringState::Null()'],['../classFloatToFloatState.html#abc46a5f0585754f98cf35732bd3ffc5a',1,'FloatToFloatState::Null()'],['../structVWReaderHandler.html#ae93183c2473e5c90730e3c051c47a44f',1,'VWReaderHandler::Null()']]],
-  ['num_5ffiles',['num_files',['../classcomp__io__buf.html#ada2c88cfc76badd29a9849e2662f7a2b',1,'comp_io_buf::num_files()'],['../classio__buf.html#aa403d3809c660d825af1115a002f4a4b',1,'io_buf::num_files()']]],
+  ['num_5ffiles',['num_files',['../classio__buf.html#a37bbb76c58eb35ee9ce9afff40bab90c',1,'io_buf']]],
+  ['num_5finput_5ffiles',['num_input_files',['../classio__buf.html#a806949dc7f0e14ca74435a35edd036d0',1,'io_buf']]],
+  ['num_5foutput_5ffiles',['num_output_files',['../classio__buf.html#af5696664eb5ec6a526cdbaeb50eed00c',1,'io_buf']]],
   ['num_5fweights',['num_weights',['../namespaceVW.html#a79f4b5129db34f40bdb6d0a970dd30b1',1,'VW']]]
 ];

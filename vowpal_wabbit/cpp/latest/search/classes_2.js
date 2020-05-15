@@ -6,7 +6,6 @@ var searchData=
   ['cb_5fto_5fcs_5fadf',['cb_to_cs_adf',['../structGEN__CS_1_1cb__to__cs__adf.html',1,'GEN_CS']]],
   ['chisquared',['ChiSquared',['../classVW_1_1distributionally__robust_1_1ChiSquared.html',1,'VW::distributionally_robust']]],
   ['collection_5fpair_5fiterator',['collection_pair_iterator',['../classvw__slim_1_1internal_1_1collection__pair__iterator.html',1,'vw_slim::internal']]],
-  ['comp_5fio_5fbuf',['comp_io_buf',['../classcomp__io__buf.html',1,'']]],
   ['conditional_5fcontextual_5fbandit_5foutcome',['conditional_contextual_bandit_outcome',['../structCCB_1_1conditional__contextual__bandit__outcome.html',1,'CCB']]],
   ['context',['Context',['../structContext.html',1,'']]]
 ];

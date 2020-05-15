@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['namespace_5findex',['namespace_index',['../example__predict_8h.html#a3302327c8e16f985dd6c4474bf279c40',1,'example_predict.h']]],
-  ['no_5flabel',['no_label',['../namespaceno__label.html#a85a10f8b84a537aa9f3da50a4e566a4c',1,'no_label']]]
+  ['pointer',['pointer',['../classsparse__iterator.html#ab9816131a0ecd982a07afd59d7f9bcdb',1,'sparse_iterator::pointer()'],['../classdense__iterator.html#a937e67c1c56b69bf494cce2c09bcd166',1,'dense_iterator::pointer()']]],
+  ['ptag',['ptag',['../search_8h.html#a64249862575d5782d267ae934eea9062',1,'search.h']]]
 ];

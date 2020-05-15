@@ -43,7 +43,7 @@ var searchData=
   ['spelling_5ffeatures',['spelling_features',['../structvw.html#ace167155548f142220e1e7ba0c988271',1,'vw']]],
   ['spelling_5fnamespace',['spelling_namespace',['../constant_8h.html#a277c1a47ab86f3c52c7711d09f781a2c',1,'constant.h']]],
   ['stdin_5foff',['stdin_off',['../structvw.html#a134566f77cf1e7453147f04dc662c96e',1,'vw']]],
-  ['stdout_5ffileno',['stdout_fileno',['../structvw.html#ae83bc779f5283cf7867a5b062ae9cef3',1,'vw']]],
+  ['stdout_5fadapter',['stdout_adapter',['../structvw.html#ab336880f90532f2e158bc0c138b1ca3b',1,'vw']]],
   ['step',['step',['../structGD_1_1multipredict__info.html#add0a35e5ea303b2e490b8c3f4530b502',1,'GD::multipredict_info']]],
   ['stream',['stream',['../structContext.html#afc6ea8b2127497162b91837ff2cadeb9',1,'Context']]],
   ['stream_5fend',['stream_end',['../structContext.html#a4d1c6c8c56361542025129612e1da6aa',1,'Context']]],

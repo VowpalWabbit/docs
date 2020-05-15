@@ -8,7 +8,6 @@ var searchData=
   ['label_5fobject_5fstate',['label_object_state',['../structContext.html#accb075644231b884ecab3d1301524c4b',1,'Context']]],
   ['label_5fsingle_5fproperty_5fstate',['label_single_property_state',['../structContext.html#a5ad5225510ed6a3d777c89f50ba72746',1,'Context']]],
   ['label_5fsize',['label_size',['../structlabel__parser.html#a1a53f9713a985bcec649040d5d573332',1,'label_parser']]],
-  ['label_5fsock',['label_sock',['../structparser.html#a4e0130d298d8b4c7341c7cbd879300e9',1,'parser']]],
   ['label_5fstate',['label_state',['../structContext.html#a3c166b5e671667715c4c7e673dfc9afb',1,'Context']]],
   ['label_5ftype',['label_type',['../structvw.html#ae656cbd881ecc9e450e8648e1ebbd16a',1,'vw']]],
   ['label_5fv',['label_v',['../structMULTILABEL_1_1labels.html#ae9b968050adb2459463cffec3b4c38c4',1,'MULTILABEL::labels']]],

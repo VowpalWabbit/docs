@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['n',['n',['../structVW_1_1distributionally__robust_1_1ChiSquared_1_1Duals.html#ab7c0cf5e3f381617f1d67cbc2a718455',1,'VW::distributionally_robust::ChiSquared::Duals::n()'],['../structExpReplay_1_1expreplay.html#a1303bcb5004ccc2cb6949480bdb43c11',1,'ExpReplay::expreplay::N()']]],
+  ['n',['N',['../structExpReplay_1_1expreplay.html#a1303bcb5004ccc2cb6949480bdb43c11',1,'ExpReplay::expreplay::N()'],['../structVW_1_1distributionally__robust_1_1ChiSquared_1_1Duals.html#ab7c0cf5e3f381617f1d67cbc2a718455',1,'VW::distributionally_robust::ChiSquared::Duals::n()']]],
   ['name',['name',['../structdictionary__info.html#aafd5bfbc5290ad275067a8cf3397970a',1,'dictionary_info::name()'],['../structNamespace.html#a2344df6d1bc705fc8afa24b2c9c79f57',1,'Namespace::name()'],['../structBaseState.html#a675dcc2bdda01de5cde893e77a6116b1',1,'BaseState::name()'],['../structVW_1_1primitive__feature__space.html#a8f5b0342e8c1f8c6d6e5648d14894a59',1,'VW::primitive_feature_space::name()']]],
   ['namedlabels',['namedlabels',['../classnamedlabels.html',1,'namedlabels'],['../classnamedlabels.html#afcf01360ddc060e60180ad00d35836db',1,'namedlabels::namedlabels()']]],
   ['namespace',['Namespace',['../structNamespace.html',1,'']]],
@@ -51,8 +51,10 @@ var searchData=
   ['num_5fbits',['num_bits',['../structvw.html#a01b6f14b593ea5a2fe5ae65dead97fab',1,'vw']]],
   ['num_5fchildren',['num_children',['../structvw.html#a2dc2f1037c9154881ab2c8c901cbdfd6',1,'vw']]],
   ['num_5ffeatures',['num_features',['../structexample.html#a35f3ec2680a21f971548cf5bb9f1fda0',1,'example::num_features()'],['../structflat__example.html#a524657b4d3359a3cfefe47f5cf3310ae',1,'flat_example::num_features()']]],
-  ['num_5ffiles',['num_files',['../classcomp__io__buf.html#ada2c88cfc76badd29a9849e2662f7a2b',1,'comp_io_buf::num_files()'],['../classio__buf.html#aa403d3809c660d825af1115a002f4a4b',1,'io_buf::num_files()']]],
+  ['num_5ffiles',['num_files',['../classio__buf.html#a37bbb76c58eb35ee9ce9afff40bab90c',1,'io_buf']]],
+  ['num_5finput_5ffiles',['num_input_files',['../classio__buf.html#a806949dc7f0e14ca74435a35edd036d0',1,'io_buf']]],
   ['num_5fnamespaces',['NUM_NAMESPACES',['../constant_8h.html#af6972edf713d5809ccd5658eca433d84',1,'constant.h']]],
+  ['num_5foutput_5ffiles',['num_output_files',['../classio__buf.html#af5696664eb5ec6a526cdbaeb50eed00c',1,'io_buf']]],
   ['num_5fweights',['num_weights',['../namespaceVW.html#a79f4b5129db34f40bdb6d0a970dd30b1',1,'VW']]],
   ['numpasses',['numpasses',['../structvw.html#ad1f9eb87601ea231196182e3fce1a2a7',1,'vw']]]
 ];
