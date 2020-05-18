@@ -176,7 +176,6 @@ Functions</h2></td></tr>
 <tr class="separator:a37faebe34a72f26470ab3de6a3a9ca57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6dc3954a86b00e3084579296a5cce290"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a6dc3954a86b00e3084579296a5cce290"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classVW_1_1details_1_1swap__guard__impl.html">details::swap_guard_impl</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a6dc3954a86b00e3084579296a5cce290">swap_guard</a> (T &amp;original_location, T &amp;value_to_swap) noexcept</td></tr>
-<tr class="memdesc:a6dc3954a86b00e3084579296a5cce290"><td class="mdescLeft">&#160;</td><td class="mdescRight">This guard will swap the two locations on creation and upon deletion swap them back.  <a href="#a6dc3954a86b00e3084579296a5cce290">More...</a><br /></td></tr>
 <tr class="separator:a6dc3954a86b00e3084579296a5cce290"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa82aa74f9a972a4d1d25ac908c16934e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aa82aa74f9a972a4d1d25ac908c16934e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classVW_1_1details_1_1swap__guard__impl__rvalue.html">details::swap_guard_impl_rvalue</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW.html#aa82aa74f9a972a4d1d25ac908c16934e">swap_guard</a> (T &amp;original_location, T &amp;&amp;value_to_swap) noexcept</td></tr>
@@ -2458,8 +2457,8 @@ template&lt;typename TScopeExitLambda &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Created an RAII object which executes the provided lambda when the scope exits. The primary use case is to handle cleanup in code where exceptions are possible but the code is not exception safe. </p>
-
+<p>Created an RAII object which executes the provided lambda when the scope exits. The primary use case is to handle cleanup in code where exceptions are possible but the code is not exception safe.</p>
+<p>#### Example: </p><div class="fragment"><div class="line">{</div><div class="line">  <span class="keyword">auto</span>* resource = <span class="comment">/* some_resource_that_needs_cleanup */</span>;</div><div class="line">  <span class="keyword">auto</span> guard = <a class="code" href="namespaceVW.html#a31bf6892187021f28960a19b5fede9b2">VW::scope_exit</a>([resource]() { <span class="comment">/* cleanup_resource(resource); */</span> });</div><div class="line">}</div><div class="line"><span class="comment">// Lambda has executed at this point.</span></div></div><!-- fragment --> 
 </div>
 </div>
 <a class="anchor" id="a0ee50bbc01fd5f36615ac6d988c94da8"></a>
@@ -2693,9 +2692,8 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>This guard will swap the two locations on creation and upon deletion swap them back. </p>
-
+<p>This guard will swap the two locations on creation and upon deletion swap them back.</p>
+<p>#### Example: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> use_widget(widget&amp; my_widget)</div><div class="line">{</div><div class="line">  <span class="keyword">auto</span> new_widget_value = ::get_new_widget_value();</div><div class="line">  <span class="keyword">auto</span> temp = std::move(my_widget.value);</div><div class="line">  my_widget.value = std::move(new_widget_value);</div><div class="line"></div><div class="line">  do_thing_with_widget(my_widget);</div><div class="line"></div><div class="line">  new_widget_value = std::move(my_widget.value);</div><div class="line">  my_widget.value = std::move(temp);</div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">// Can be replaced with:</span></div><div class="line"></div><div class="line"><span class="keywordtype">void</span> use_widget(widget&amp; my_widget)</div><div class="line">{</div><div class="line">  <span class="keyword">auto</span> new_widget_value = ::get_new_widget_value();</div><div class="line">  <span class="keyword">auto</span> guard = <a class="code" href="namespaceVW.html#a6dc3954a86b00e3084579296a5cce290">VW::swap_guard</a>(my_widget.value, new_widget_value);</div><div class="line">  do_thing_with_widget(my_widget);</div><div class="line">}</div></div><!-- fragment --> 
 </div>
 </div>
 <a class="anchor" id="aa82aa74f9a972a4d1d25ac908c16934e"></a>
@@ -2731,8 +2729,8 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This guard will swap the two locations on creation and upon deletion swap them back. Note: This overload allows for a temporary value to be passed in. </p>
-
+<p>This guard will swap the two locations on creation and upon deletion swap them back. Note: This overload allows for a temporary value to be passed in.</p>
+<p>#### Example: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> use_widget(widget&amp; my_widget)</div><div class="line">{</div><div class="line">  <span class="keyword">auto</span> new_widget_value = ::get_new_widget_value();</div><div class="line">  <span class="keyword">auto</span> temp = std::move(my_widget.value);</div><div class="line">  my_widget.value = std::move(new_widget_value);</div><div class="line"></div><div class="line">  do_thing_with_widget(my_widget);</div><div class="line"></div><div class="line">  new_widget_value = std::move(my_widget.value);</div><div class="line">  my_widget.value = std::move(temp);</div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">// Can be replaced with:</span></div><div class="line"></div><div class="line"><span class="keywordtype">void</span> use_widget(widget&amp; my_widget)</div><div class="line">{</div><div class="line">  <span class="keyword">auto</span> guard = <a class="code" href="namespaceVW.html#a6dc3954a86b00e3084579296a5cce290">VW::swap_guard</a>(my_widget.value, ::get_new_widget_value(););</div><div class="line">  do_thing_with_widget(my_widget);</div><div class="line">}</div></div><!-- fragment --> 
 </div>
 </div>
 <a class="anchor" id="aef7830b96def28617fce6cf5a32c1ae6"></a>
@@ -2931,7 +2929,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 15 2020 17:29:25 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon May 18 2020 16:54:36 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
