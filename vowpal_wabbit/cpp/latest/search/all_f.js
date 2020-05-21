@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['o_5flargefile',['O_LARGEFILE',['../io__buf_8h.html#a1126309aa58e7c99553c7f6be1bc7348',1,'io_buf.h']]],
   ['oaa_2eh',['oaa.h',['../oaa_8h.html',1,'']]],
   ['oaa_5fsetup',['oaa_setup',['../oaa_8h.html#a5db09fb60dc3726998423fa28f32ead8',1,'oaa.h']]],
   ['object_5fpool',['object_pool',['../structVW_1_1object__pool.html',1,'VW']]],
@@ -44,8 +43,8 @@ var searchData=
   ['options_5fboost_5fpo',['options_boost_po',['../structVW_1_1config_1_1options__boost__po.html#a454c7237d3e0aabf3c498f1eb6a7b4d4',1,'VW::config::options_boost_po::options_boost_po(int argc, char **argv)'],['../structVW_1_1config_1_1options__boost__po.html#af4009f5c05c69e4bed75af4e1f3140fc',1,'VW::config::options_boost_po::options_boost_po(std::vector&lt; std::string &gt; args)'],['../structVW_1_1config_1_1options__boost__po.html#ac6835b76aefd400cfdc273b10d83dcd9',1,'VW::config::options_boost_po::options_boost_po(options_boost_po &amp;)=delete']]],
   ['options_5fboost_5fpo_2eh',['options_boost_po.h',['../options__boost__po_8h.html',1,'']]],
   ['options_5fi',['options_i',['../structVW_1_1config_1_1options__i.html',1,'VW::config']]],
-  ['options_5fserializer_5fboost_5fpo',['options_serializer_boost_po',['../structVW_1_1config_1_1options__serializer__boost__po.html#a22ac6f22ef4ebee535397278c2e90a2d',1,'VW::config::options_serializer_boost_po']]],
   ['options_5fserializer_5fboost_5fpo',['options_serializer_boost_po',['../structVW_1_1config_1_1options__serializer__boost__po.html',1,'VW::config']]],
+  ['options_5fserializer_5fboost_5fpo',['options_serializer_boost_po',['../structVW_1_1config_1_1options__serializer__boost__po.html#a22ac6f22ef4ebee535397278c2e90a2d',1,'VW::config::options_serializer_boost_po']]],
   ['options_5fserializer_5fboost_5fpo_2eh',['options_serializer_boost_po.h',['../options__serializer__boost__po_8h.html',1,'']]],
   ['options_5fserializer_5fi',['options_serializer_i',['../structVW_1_1config_1_1options__serializer__i.html',1,'VW::config']]],
   ['options_5ftypes_2eh',['options_types.h',['../options__types_8h.html',1,'']]],

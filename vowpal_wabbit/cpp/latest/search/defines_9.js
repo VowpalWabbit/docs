@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['o_5flargefile',['O_LARGEFILE',['../io__buf_8h.html#a1126309aa58e7c99553c7f6be1bc7348',1,'io_buf.h']]]
+  ['process_5fself_5finteractions',['PROCESS_SELF_INTERACTIONS',['../interactions__predict_8h.html#a03b2a48f436f31fc6ab799c2ff495707',1,'interactions_predict.h']]]
 ];
