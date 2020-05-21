@@ -39,6 +39,7 @@ var searchData=
   ['delete_5fprediction',['delete_prediction',['../structvw.html#ac2b0c04220c30a62a64a1ef9e4b115b0',1,'vw']]],
   ['delete_5frun_5fobject',['delete_run_object',['../structHookTask_1_1task__data.html#afc26800c1d71af93e60d6a2f6a311313',1,'HookTask::task_data']]],
   ['delete_5fscalars',['delete_scalars',['../example_8h.html#a450e49c6d5320e060391eaaf0c4ebd35',1,'delete_scalars():&#160;example.h'],['../namespaceMWT.html#a378763959ab5926143801f9300c5a4d4',1,'MWT::delete_scalars()']]],
+  ['delete_5funions',['delete_unions',['../structexample.html#a585b1d5960593531ce24289959f3cb55',1,'example']]],
   ['delete_5fv',['delete_v',['../structv__array.html#a81c7c9af1948bd97850eb06785f2254f',1,'v_array']]],
   ['dense_5fiterator',['dense_iterator',['../classdense__iterator.html',1,'dense_iterator&lt; T &gt;'],['../classdense__iterator.html#a64935b77332789d16dbdadd4d21ebc93',1,'dense_iterator::dense_iterator()']]],
   ['dense_5fparameters',['dense_parameters',['../classdense__parameters.html',1,'dense_parameters'],['../classdense__parameters.html#ac84576139f254e8bd0a68203f936bf05',1,'dense_parameters::dense_parameters(size_t length, uint32_t stride_shift=0)'],['../classdense__parameters.html#a00ca6d51dc5f023b3ef40a40f80937ea',1,'dense_parameters::dense_parameters()'],['../classdense__parameters.html#aa481a3bed1e5bc50886a750eb108e791',1,'dense_parameters::dense_parameters(const dense_parameters &amp;other)'],['../classdense__parameters.html#af9e0836e1af2e26448eb574429abfc0a',1,'dense_parameters::dense_parameters(dense_parameters &amp;&amp;)=delete']]],

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['safe_5fexample_5fpredict',['safe_example_predict',['../classsafe__example__predict.html',1,'']]],
   ['save_5fload_5fdata',['save_load_data',['../structVW_1_1LEARNER_1_1save__load__data.html',1,'VW::LEARNER']]],
   ['scope_5fexit_5fcaller',['scope_exit_caller',['../classVW_1_1details_1_1scope__exit__caller.html',1,'VW::details']]],
   ['score_5fiterator',['score_iterator',['../classACTION__SCORE_1_1score__iterator.html',1,'ACTION_SCORE']]],

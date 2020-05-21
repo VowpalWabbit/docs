@@ -1,7 +1,6 @@
 var searchData=
 [
   ['operator_3c_3c_3c_20std_3a_3astring_20_3e',['operator&lt;&lt;&lt; std::string &gt;',['../options__boost__po_8h.html#a0cfe61438a1525a1ab34a22acb4d39f2',1,'options_boost_po.h']]],
-  ['safe_5fexample_5fpredict',['safe_example_predict',['../classsafe__example__predict.html#a109032261e888d32f7c05ba6e237d9da',1,'safe_example_predict']]],
   ['safe_5findex',['safe_index',['../parse__primitives_8h.html#aaa8ba6bb46396e53b57eafdec2f68667',1,'parse_primitives.h']]],
   ['safe_5fprobability',['safe_probability',['../namespaceGEN__CS.html#a31e398966e8643a1107404e035835c07',1,'GEN_CS']]],
   ['sample_5fafter_5fnormalizing',['sample_after_normalizing',['../namespaceexploration.html#aedb9fe8f3ab08de86f0438dd3ead8d29',1,'exploration::sample_after_normalizing(uint64_t seed, It pdf_first, It pdf_last, uint32_t &amp;chosen_index)'],['../namespaceexploration.html#a3575ff0c162a60c2672714dbfdd4b24d',1,'exploration::sample_after_normalizing(const char *seed, It pdf_first, It pdf_last, uint32_t &amp;chosen_index)'],['../namespaceexploration.html#a39c177b457d86b03cfaa219c6f09b378',1,'exploration::sample_after_normalizing(uint64_t seed, It pdf_first, It pdf_last, uint32_t &amp;chosen_index, std::input_iterator_tag)'],['../namespaceexploration.html#af19e331559b1a2041ec9f499d9233037',1,'exploration::sample_after_normalizing(const char *seed, It pdf_first, It pdf_last, uint32_t &amp;chosen_index, std::random_access_iterator_tag pdf_category)']]],

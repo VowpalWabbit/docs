@@ -27,7 +27,7 @@ var searchData=
   ['chisquared',['ChiSquared',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#a4c5e70598285f281e5f074f2f0710efb',1,'VW::distributionally_robust::ChiSquared']]],
   ['choose',['choose',['../namespaceINTERACTIONS.html#a8a29c20dab62a52e9813fa85711d4d42',1,'INTERACTIONS']]],
   ['classweight_5fsetup',['classweight_setup',['../classweight_8h.html#a9be12c3b3e1a9e78fe2eff00ffeab76f',1,'classweight.h']]],
-  ['clear',['clear',['../classsafe__example__predict.html#ac19de92a7f538913e7fc0b2b13472e77',1,'safe_example_predict::clear()'],['../structfeatures.html#a4bc967f302cfb466681a6b4c331bf33a',1,'features::clear()'],['../structv__array.html#aab10f7f1ac8ad24a8dc0b112fed415ef',1,'v_array::clear()']]],
+  ['clear',['clear',['../structfeatures.html#a4bc967f302cfb466681a6b4c331bf33a',1,'features::clear()'],['../structv__array.html#aab10f7f1ac8ad24a8dc0b112fed415ef',1,'v_array::clear()']]],
   ['clear_5ffeatures',['clear_features',['../classezexample.html#a567d973b79acf2c04cbb19bd030d9b19',1,'ezexample']]],
   ['close_5ffile',['close_file',['../classio__buf.html#a9bc9af0c82dce2e61945827f03c65a21',1,'io_buf']]],
   ['close_5ffiles',['close_files',['../classio__buf.html#a9bcb6229cda2b924aab63360e307658b',1,'io_buf']]],
