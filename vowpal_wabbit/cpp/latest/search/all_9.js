@@ -39,7 +39,7 @@ var searchData=
   ['input',['input',['../structparser.html#a9518bd05717a9c026371ff1044768f96',1,'parser']]],
   ['input_5ffiles',['input_files',['../classio__buf.html#a233f4cfbeb7f346bfc232056d9093175',1,'io_buf']]],
   ['input_5foptions',['input_options',['../structinput__options.html',1,'']]],
-  ['insert',['insert',['../classBeam_1_1beam.html#a00ccd66b04b1469823869b0b2fef0d5d',1,'Beam::beam::insert()'],['../structVW_1_1config_1_1options__i.html#a218ed8d8b6a9b367ce7dc622e1465f92',1,'VW::config::options_i::insert()'],['../structVW_1_1config_1_1options__boost__po.html#af79189f2fe6e552e3242c4493e660fe5',1,'VW::config::options_boost_po::insert()']]],
+  ['insert',['insert',['../classBeam_1_1beam.html#a00ccd66b04b1469823869b0b2fef0d5d',1,'Beam::beam::insert()'],['../structVW_1_1config_1_1options__i.html#a218ed8d8b6a9b367ce7dc622e1465f92',1,'VW::config::options_i::insert()'],['../structVW_1_1config_1_1options__boost__po.html#ab671ca03117a436f1cb84e14de00a48d',1,'VW::config::options_boost_po::insert()']]],
   ['int',['Int',['../structVWReaderHandler.html#acff99671bc9ef886b71cc00a09741d45',1,'VWReaderHandler']]],
   ['int64',['Int64',['../structVWReaderHandler.html#aee6696771d323ac1e6500738a027fffb',1,'VWReaderHandler']]],
   ['int_5ffloat',['int_float',['../unionexploration_1_1int__float.html',1,'exploration']]],

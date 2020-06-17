@@ -23,7 +23,7 @@ var searchData=
   ['recur_5fsensitivity',['recur_sensitivity',['../namespaceVW_1_1LEARNER.html#ab6e5c6e7bedf2db4bf91c3bc2b3527c9',1,'VW::LEARNER']]],
   ['releasefeaturespace',['releaseFeatureSpace',['../namespaceVW.html#ad1d82f751f07678f73bd421236477163',1,'VW']]],
   ['remns',['remns',['../classezexample.html#a1ced8ce215fef8f87d4ecf96e404da04',1,'ezexample']]],
-  ['replace',['replace',['../structVW_1_1config_1_1options__i.html#ab0b20f09ba0a920bac5b8e9dde165f8a',1,'VW::config::options_i::replace()'],['../structVW_1_1config_1_1options__boost__po.html#a06e3732a42ec506dbd766ebe8e4c10d5',1,'VW::config::options_boost_po::replace()']]],
+  ['replace',['replace',['../structVW_1_1config_1_1options__i.html#ab0b20f09ba0a920bac5b8e9dde165f8a',1,'VW::config::options_i::replace()'],['../structVW_1_1config_1_1options__boost__po.html#a2ccc103ef8ea4dc07dbe74fab480653c',1,'VW::config::options_boost_po::replace()']]],
   ['reset',['reset',['../structVW_1_1io_1_1reader.html#a680383c4f30fbd93e36737eb50028d64',1,'VW::io::reader::reset()'],['../classSearch_1_1predictor.html#a067e8732c3ec17aaa51d130751db8ed9',1,'Search::predictor::reset()']]],
   ['reset_5fbaseline_5fdisabled',['reset_baseline_disabled',['../namespaceBASELINE.html#aadd62b2c6aaf248dedb9d28dadcd2861',1,'BASELINE']]],
   ['reset_5ffile',['reset_file',['../classio__buf.html#a8f7c3b58c7bf31c4a1c4af58912be523',1,'io_buf']]],

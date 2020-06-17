@@ -10,5 +10,5 @@ var searchData=
   ['hash_5fspace_5fstatic',['hash_space_static',['../namespaceVW.html#afe967439ca1759e49a48658ec213505c',1,'VW']]],
   ['hashall',['hashall',['../hashstring_8h.html#a679aef0b2b6e042e29d16def76ae1b0e',1,'hashstring.h']]],
   ['hashstring',['hashstring',['../hashstring_8h.html#ad0c610591e5f64e2d6e5753b6f4266f8',1,'hashstring.h']]],
-  ['help',['help',['../structVW_1_1config_1_1typed__option.html#a797ef272d3c4284ded6eeb8af7aa9434',1,'VW::config::typed_option::help()'],['../structVW_1_1config_1_1options__i.html#a66098a9de72fc2415e5943fb7e463ac6',1,'VW::config::options_i::help()'],['../structVW_1_1config_1_1options__boost__po.html#aacd61adebca74c1bcba8c371118c4691',1,'VW::config::options_boost_po::help()']]]
+  ['help',['help',['../structVW_1_1config_1_1typed__option.html#a797ef272d3c4284ded6eeb8af7aa9434',1,'VW::config::typed_option::help()'],['../structVW_1_1config_1_1options__i.html#a068859ff0a9f9fc8934e3f3215e62926',1,'VW::config::options_i::help()'],['../structVW_1_1config_1_1options__boost__po.html#a4718e4d9e1ad9bd919f1c1b1950cc252',1,'VW::config::options_boost_po::help()']]]
 ];

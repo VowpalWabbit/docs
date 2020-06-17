@@ -76,7 +76,7 @@ var searchData=
   ['regression_5fdata_5fno_5fconstant_5fpred_5flen',['regression_data_no_constant_pred_len',['../data_8h.html#a85a312fb2302610cc8a0473ccb1c439c',1,'data.h']]],
   ['releasefeaturespace',['releaseFeatureSpace',['../namespaceVW.html#ad1d82f751f07678f73bd421236477163',1,'VW']]],
   ['remns',['remns',['../classezexample.html#a1ced8ce215fef8f87d4ecf96e404da04',1,'ezexample']]],
-  ['replace',['replace',['../structVW_1_1config_1_1options__i.html#ab0b20f09ba0a920bac5b8e9dde165f8a',1,'VW::config::options_i::replace()'],['../structVW_1_1config_1_1options__boost__po.html#a06e3732a42ec506dbd766ebe8e4c10d5',1,'VW::config::options_boost_po::replace()']]],
+  ['replace',['replace',['../structVW_1_1config_1_1options__i.html#ab0b20f09ba0a920bac5b8e9dde165f8a',1,'VW::config::options_i::replace()'],['../structVW_1_1config_1_1options__boost__po.html#a2ccc103ef8ea4dc07dbe74fab480653c',1,'VW::config::options_boost_po::replace()']]],
   ['replay_5fcount',['replay_count',['../structExpReplay_1_1expreplay.html#abec5829012cdfacf1f2c2d7faa2e8188',1,'ExpReplay::expreplay']]],
   ['report_5fmulticlass_5flog_5floss',['report_multiclass_log_loss',['../structshared__data.html#a95ee6d6b9595f0c04643502cf159d98e',1,'shared_data']]],
   ['reset',['reset',['../structVW_1_1io_1_1reader.html#a680383c4f30fbd93e36737eb50028d64',1,'VW::io::reader::reset()'],['../classSearch_1_1predictor.html#a067e8732c3ec17aaa51d130751db8ed9',1,'Search::predictor::reset()']]],
