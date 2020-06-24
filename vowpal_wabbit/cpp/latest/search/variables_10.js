@@ -1,7 +1,6 @@
 var searchData=
 [
   ['p',['p',['../structvw.html#ab70afa2ceae01968d9d291c5c8b060be',1,'vw']]],
-  ['pairs',['pairs',['../structvw.html#a46c6582364be7316fd5734fa1e60fed8',1,'vw']]],
   ['parent',['parent',['../structnode__socks.html#a9107491c00d5f397f28b1bcf50093704',1,'node_socks']]],
   ['parse_5flabel',['parse_label',['../structlabel__parser.html#a4e530da668b9320a390c919d70db25c2',1,'label_parser']]],
   ['parse_5fmask',['parse_mask',['../structvw.html#a1341f90722fcded4ecfd77030b8195a8',1,'vw']]],

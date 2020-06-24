@@ -45,14 +45,13 @@ var searchData=
   ['train',['train',['../classezexample.html#a2663a9ccb1d95c6ddbc6ee5bd891cbe9',1,'ezexample']]],
   ['training',['training',['../structvw.html#aa008bf77c7a0f5b90b21d16b3b1cf38c',1,'vw']]],
   ['transitionstate',['TransitionState',['../structContext.html#a2361db68e5270b12758993fba441f47d',1,'Context']]],
-  ['triples',['triples',['../structvw.html#a028da66fe9c917a9e7b7f4d352154fc6',1,'vw']]],
   ['trunc_5fweight',['trunc_weight',['../namespaceGD.html#a9c15740d0f166048172adbe5b0e7531b',1,'GD']]],
   ['truncate_5fto',['truncate_to',['../structfeatures.html#aeb3898d3d87779ba751d03bb42a463b2',1,'features::truncate_to(const features_value_iterator &amp;pos)'],['../structfeatures.html#afd6b770b048e3a2ee96590f9e412a91b',1,'features::truncate_to(size_t i)']]],
   ['try_5fextract_5frandom_5fseed',['try_extract_random_seed',['../namespaceVW.html#ad0d3500b9970b8e8d0b35c5f189d6d4c',1,'VW']]],
   ['tuple_5fdbf',['tuple_dbf',['../namespaceVW_1_1LEARNER.html#a8acf98b91b127b58d1a5d59ebe5979ec',1,'VW::LEARNER']]],
   ['type',['type',['../structCCB_1_1label.html#aeb312b579a5debb8537f8c433643c759',1,'CCB::label::type()'],['../structVW_1_1slates_1_1label.html#a3534b1caf54bde6f345dc0fd94379778',1,'VW::slates::label::type()']]],
   ['type_5fhash',['type_hash',['../structVW_1_1config_1_1typed__option.html#af75aac6192cabac91008572cde768049',1,'VW::config::typed_option']]],
-  ['typed_5foption',['typed_option',['../structVW_1_1config_1_1typed__option.html#a4fef197d751c94ee20f309db0abecf1e',1,'VW::config::typed_option']]],
   ['typed_5foption',['typed_option',['../structVW_1_1config_1_1typed__option.html',1,'VW::config']]],
+  ['typed_5foption',['typed_option',['../structVW_1_1config_1_1typed__option.html#a4fef197d751c94ee20f309db0abecf1e',1,'VW::config::typed_option']]],
   ['typelist',['typelist',['../structVW_1_1config_1_1typelist.html',1,'VW::config']]]
 ];
