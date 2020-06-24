@@ -41,12 +41,9 @@
 <span id="vowpalwabbit-sklearn"></span><h1>vowpalwabbit.sklearn<a class="headerlink" href="#module-vowpalwabbit.sklearn_vw" title="Permalink to this headline">¶</a></h1>
 <p>Utilities to support integration of Vowpal Wabbit and scikit-learn</p>
 <dl class="class">
-<dt id="vowpalwabbit.sklearn_vw.ThresholdingLinearClassifierMixin">
-<em class="property">class </em><code class="descclassname">vowpalwabbit.sklearn_vw.</code><code class="descname">ThresholdingLinearClassifierMixin</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.ThresholdingLinearClassifierMixin" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">sklearn.linear_model.base.LinearClassifierMixin</span></code></p>
-<p>Mixin for linear classifiers.  A threshold is used to specify the positive
-class cutoff</p>
-<p>Handles prediction for sparse and dense X.</p>
+<dt id="vowpalwabbit.sklearn_vw.LinearClassifierMixin">
+<em class="property">class </em><code class="descclassname">vowpalwabbit.sklearn_vw.</code><code class="descname">LinearClassifierMixin</code><a class="headerlink" href="#vowpalwabbit.sklearn_vw.LinearClassifierMixin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">sklearn.linear_model.logistic.LogisticRegression</span></code></p>
 <p class="rubric">Methods</p>
 <table border="1" class="longtable docutils">
 <colgroup>
@@ -57,56 +54,46 @@ class cutoff</p>
 <tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">decision_function</span></code>(self,&nbsp;X)</td>
 <td>Predict confidence scores for samples.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#vowpalwabbit.sklearn_vw.ThresholdingLinearClassifierMixin.predict" title="vowpalwabbit.sklearn_vw.ThresholdingLinearClassifierMixin.predict"><code class="xref py py-obj docutils literal notranslate"><span class="pre">predict</span></code></a>(self,&nbsp;X)</td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">densify</span></code>(self)</td>
+<td>Convert coefficient matrix to dense array format.</td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit</span></code>(self,&nbsp;X,&nbsp;y[,&nbsp;sample_weight])</td>
+<td>Fit the model according to the given training data.</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_params</span></code>(self[,&nbsp;deep])</td>
+<td>Get parameters for this estimator.</td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">predict</span></code>(self,&nbsp;X)</td>
 <td>Predict class labels for samples in X.</td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">score</span></code>(self,&nbsp;X,&nbsp;y[,&nbsp;sample_weight])</td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">predict_log_proba</span></code>(self,&nbsp;X)</td>
+<td>Log of probability estimates.</td>
+</tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">predict_proba</span></code>(self,&nbsp;X)</td>
+<td>Probability estimates.</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">score</span></code>(self,&nbsp;X,&nbsp;y[,&nbsp;sample_weight])</td>
 <td>Returns the mean accuracy on the given test data and labels.</td>
 </tr>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_params</span></code>(self,&nbsp;\*\*params)</td>
+<td>Set the parameters of this estimator.</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">sparsify</span></code>(self)</td>
+<td>Convert coefficient matrix to sparse format.</td>
+</tr>
 </tbody>
 </table>
 <dl class="method">
-<dt id="vowpalwabbit.sklearn_vw.ThresholdingLinearClassifierMixin.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>self</em>, <em>**params</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.ThresholdingLinearClassifierMixin.__init__" title="Permalink to this definition">¶</a></dt>
+<dt id="vowpalwabbit.sklearn_vw.LinearClassifierMixin.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.LinearClassifierMixin.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>x.__init__(…) initializes x; see help(type(x)) for signature</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="vowpalwabbit.sklearn_vw.ThresholdingLinearClassifierMixin.classes_">
-<code class="descname">classes_</code><em class="property"> = array([-1.,  1.])</em><a class="headerlink" href="#vowpalwabbit.sklearn_vw.ThresholdingLinearClassifierMixin.classes_" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="method">
-<dt id="vowpalwabbit.sklearn_vw.ThresholdingLinearClassifierMixin.predict">
-<code class="descname">predict</code><span class="sig-paren">(</span><em>self</em>, <em>X</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.ThresholdingLinearClassifierMixin.predict" title="Permalink to this definition">¶</a></dt>
-<dd><p>Predict class labels for samples in X.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
-<dt><strong>X</strong> <span class="classifier-delimiter">:</span> <span class="classifier">{array-like, sparse matrix}, shape = [n_samples, n_features]</span></dt>
-<dd><p class="first last">Samples.</p>
-</dd>
-</dl>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
-<dt><strong>C</strong> <span class="classifier-delimiter">:</span> <span class="classifier">array, shape = [n_samples]</span></dt>
-<dd><p class="first last">Predicted class label per sample.</p>
-</dd>
-</dl>
-</td>
-</tr>
-</tbody>
-</table>
 </dd></dl>
 
 </dd></dl>
 
 <dl class="class">
 <dt id="vowpalwabbit.sklearn_vw.VW">
-<em class="property">class </em><code class="descclassname">vowpalwabbit.sklearn_vw.</code><code class="descname">VW</code><span class="sig-paren">(</span><em>rank=None</em>, <em>lrq=None</em>, <em>lrqdropout=None</em>, <em>probabilities=None</em>, <em>random_seed=None</em>, <em>ring_size=None</em>, <em>convert_to_vw=None</em>, <em>bfgs=None</em>, <em>mem=None</em>, <em>ftrl=None</em>, <em>ftrl_alpha=None</em>, <em>ftrl_beta=None</em>, <em>learning_rate=None</em>, <em>l=None</em>, <em>power_t=None</em>, <em>decay_learning_rate=None</em>, <em>initial_t=None</em>, <em>feature_mask=None</em>, <em>initial_regressor=None</em>, <em>i=None</em>, <em>initial_weight=None</em>, <em>random_weights=None</em>, <em>input_feature_regularizer=None</em>, <em>audit=None</em>, <em>a=None</em>, <em>progress=None</em>, <em>P=None</em>, <em>quiet=None</em>, <em>data=None</em>, <em>d=None</em>, <em>cache=None</em>, <em>c=None</em>, <em>k=None</em>, <em>passes=None</em>, <em>no_stdin=None</em>, <em>hash=None</em>, <em>ignore=None</em>, <em>keep=None</em>, <em>redefine=None</em>, <em>bit_precision=None</em>, <em>b=None</em>, <em>noconstant=None</em>, <em>constant=None</em>, <em>C=None</em>, <em>ngram=None</em>, <em>skips=None</em>, <em>feature_limit=None</em>, <em>affix=None</em>, <em>spelling=None</em>, <em>dictionary=None</em>, <em>dictionary_path=None</em>, <em>interactions=None</em>, <em>permutations=None</em>, <em>leave_duplicate_interactions=None</em>, <em>quadratic=None</em>, <em>q=None</em>, <em>cubic=None</em>, <em>testonly=None</em>, <em>t=None</em>, <em>min_prediction=None</em>, <em>max_prediction=None</em>, <em>sort_features=None</em>, <em>loss_function=None</em>, <em>link=None</em>, <em>quantile_tau=None</em>, <em>l1=None</em>, <em>l2=None</em>, <em>named_labels=None</em>, <em>final_regressor=None</em>, <em>f=None</em>, <em>readable_model=None</em>, <em>invert_hash=None</em>, <em>save_resume=None</em>, <em>output_feature_regularizer_binary=None</em>, <em>output_feature_regularizer_text=None</em>, <em>oaa=None</em>, <em>ect=None</em>, <em>csoaa=None</em>, <em>wap=None</em>, <em>nn=None</em>, <em>dropout=None</em>, <em>inpass=None</em>, <em>meanfield=None</em>, <em>multitask=None</em>, <em>convert_labels=False</em>, <em>sgd=False</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VW" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">vowpalwabbit.sklearn_vw.</code><code class="descname">VW</code><span class="sig-paren">(</span><em>convert_to_vw=True</em>, <em>convert_labels=True</em>, <em>ring_size=None</em>, <em>strict_parse=None</em>, <em>learning_rate=None</em>, <em>l=None</em>, <em>power_t=None</em>, <em>decay_learning_rate=None</em>, <em>initial_t=None</em>, <em>feature_mask=None</em>, <em>initial_regressor=None</em>, <em>i=None</em>, <em>initial_weight=None</em>, <em>random_weights=None</em>, <em>normal_weights=None</em>, <em>truncated_normal_weights=None</em>, <em>sparse_weights=None</em>, <em>input_feature_regularizer=None</em>, <em>quiet=True</em>, <em>random_seed=None</em>, <em>hash=None</em>, <em>hash_seed=None</em>, <em>ignore=None</em>, <em>ignore_linear=None</em>, <em>keep=None</em>, <em>redefine=None</em>, <em>bit_precision=None</em>, <em>b=None</em>, <em>noconstant=None</em>, <em>constant=None</em>, <em>C=None</em>, <em>ngram=None</em>, <em>skips=None</em>, <em>feature_limit=None</em>, <em>affix=None</em>, <em>spelling=None</em>, <em>dictionary=None</em>, <em>dictionary_path=None</em>, <em>interactions=None</em>, <em>permutations=None</em>, <em>leave_duplicate_interactions=None</em>, <em>quadratic=None</em>, <em>q=None</em>, <em>cubic=None</em>, <em>testonly=None</em>, <em>t=None</em>, <em>holdout_off=None</em>, <em>holdout_period=None</em>, <em>holdout_after=None</em>, <em>early_terminate=None</em>, <em>passes=1</em>, <em>initial_pass_length=None</em>, <em>examples=None</em>, <em>min_prediction=None</em>, <em>max_prediction=None</em>, <em>sort_features=None</em>, <em>loss_function=None</em>, <em>quantile_tau=None</em>, <em>l1=None</em>, <em>l2=None</em>, <em>no_bias_regularization=None</em>, <em>named_labels=None</em>, <em>final_regressor=None</em>, <em>f=None</em>, <em>readable_model=None</em>, <em>invert_hash=None</em>, <em>save_resume=None</em>, <em>preserve_performance_counters=None</em>, <em>output_feature_regularizer_binary=None</em>, <em>output_feature_regularizer_text=None</em>, <em>oaa=None</em>, <em>ect=None</em>, <em>csoaa=None</em>, <em>wap=None</em>, <em>probabilities=None</em>, <em>nn=None</em>, <em>inpass=None</em>, <em>multitask=None</em>, <em>dropout=None</em>, <em>meanfield=None</em>, <em>conjugate_gradient=None</em>, <em>bfgs=None</em>, <em>hessian_on=None</em>, <em>mem=None</em>, <em>termination=None</em>, <em>lda=None</em>, <em>lda_alpha=None</em>, <em>lda_rho=None</em>, <em>lda_D=None</em>, <em>lda_epsilon=None</em>, <em>minibatch=None</em>, <em>svrg=None</em>, <em>stage_size=None</em>, <em>ftrl=None</em>, <em>coin=None</em>, <em>pistol=None</em>, <em>ftrl_alpha=None</em>, <em>ftrl_beta=None</em>, <em>ksvm=None</em>, <em>kernel=None</em>, <em>bandwidth=None</em>, <em>degree=None</em>, <em>sgd=None</em>, <em>adaptive=None</em>, <em>invariant=None</em>, <em>normalized=None</em>, <em>link=None</em>, <em>stage_poly=None</em>, <em>sched_exponent=None</em>, <em>batch_sz=None</em>, <em>batch_sz_no_doubling=None</em>, <em>lrq=None</em>, <em>lrqdropout=None</em>, <em>lrqfa=None</em>, <em>data=None</em>, <em>d=None</em>, <em>cache=None</em>, <em>c=None</em>, <em>cache_file=None</em>, <em>json=None</em>, <em>kill_cache=None</em>, <em>k=None</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VW" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">sklearn.base.BaseEstimator</span></code></p>
 <p>Vowpal Wabbit Scikit-learn Base Estimator wrapper</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -114,11 +101,14 @@ class cutoff</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Attributes:</th><td class="field-body"><dl class="first last docutils">
-<dt><strong>params</strong> <span class="classifier-delimiter">:</span> <span class="classifier">dictionary</span></dt>
-<dd><p class="first last">dictionary of model parameter keys and values</p>
+<dt><strong>convert_to_vw</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">flag to convert X input to vw format</p>
 </dd>
-<dt><strong>fit_</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
-<dd><p class="first last">this variable is only created after the model is fitted</p>
+<dt><strong>convert_labels</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">Convert labels of the form [0,1] to [-1,1]</p>
+</dd>
+<dt><strong>vw_</strong> <span class="classifier-delimiter">:</span> <span class="classifier">pyvw.vw</span></dt>
+<dd><p class="first last">vw instance</p>
 </dd>
 </dl>
 </td>
@@ -132,7 +122,7 @@ class cutoff</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="#vowpalwabbit.sklearn_vw.VW.fit" title="vowpalwabbit.sklearn_vw.VW.fit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit</span></code></a>(self,&nbsp;X[,&nbsp;y,&nbsp;sample_weight])</td>
+<tr class="row-odd"><td><a class="reference internal" href="#vowpalwabbit.sklearn_vw.VW.fit" title="vowpalwabbit.sklearn_vw.VW.fit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit</span></code></a>(self[,&nbsp;X,&nbsp;y,&nbsp;sample_weight])</td>
 <td>Fit the model according to the given training data</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#vowpalwabbit.sklearn_vw.VW.get_coefs" title="vowpalwabbit.sklearn_vw.VW.get_coefs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_coefs</span></code></a>(self)</td>
@@ -142,10 +132,10 @@ class cutoff</p>
 <td>Returns intercept weight for model</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#vowpalwabbit.sklearn_vw.VW.get_params" title="vowpalwabbit.sklearn_vw.VW.get_params"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_params</span></code></a>(self[,&nbsp;deep])</td>
-<td>This returns the set of vw and estimator parameters currently in use</td>
+<td>This returns the full set of vw and estimator parameters currently in use</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#vowpalwabbit.sklearn_vw.VW.get_vw" title="vowpalwabbit.sklearn_vw.VW.get_vw"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_vw</span></code></a>(self)</td>
-<td>Factory to create a vw instance on demand</td>
+<td>Get the vw instance</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#vowpalwabbit.sklearn_vw.VW.load" title="vowpalwabbit.sklearn_vw.VW.load"><code class="xref py py-obj docutils literal notranslate"><span class="pre">load</span></code></a>(self,&nbsp;filename)</td>
 <td>Load model from file</td>
@@ -159,275 +149,436 @@ class cutoff</p>
 <tr class="row-odd"><td><a class="reference internal" href="#vowpalwabbit.sklearn_vw.VW.set_coefs" title="vowpalwabbit.sklearn_vw.VW.set_coefs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_coefs</span></code></a>(self,&nbsp;coefs)</td>
 <td>Sets coefficients weights from ordered sparse matrix</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#vowpalwabbit.sklearn_vw.VW.set_params" title="vowpalwabbit.sklearn_vw.VW.set_params"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_params</span></code></a>(self,&nbsp;\*\*params)</td>
-<td>This destroys and recreates the Vowpal Wabbit model with updated parameters</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#vowpalwabbit.sklearn_vw.VW.transform" title="vowpalwabbit.sklearn_vw.VW.transform"><code class="xref py py-obj docutils literal notranslate"><span class="pre">transform</span></code></a>(self,&nbsp;X[,&nbsp;y])</td>
-<td>Transform does nothing by default besides closing the model. Transform is required for any estimator</td>
+<tr class="row-even"><td><a class="reference internal" href="#vowpalwabbit.sklearn_vw.VW.set_params" title="vowpalwabbit.sklearn_vw.VW.set_params"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_params</span></code></a>(self,&nbsp;\*\*kwargs)</td>
+<td>This destroys and recreates the Vowpal Wabbit model with updated parameters any parameters not provided will remain as they are currently</td>
 </tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="vowpalwabbit.sklearn_vw.VW.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>self</em>, <em>rank=None</em>, <em>lrq=None</em>, <em>lrqdropout=None</em>, <em>probabilities=None</em>, <em>random_seed=None</em>, <em>ring_size=None</em>, <em>convert_to_vw=None</em>, <em>bfgs=None</em>, <em>mem=None</em>, <em>ftrl=None</em>, <em>ftrl_alpha=None</em>, <em>ftrl_beta=None</em>, <em>learning_rate=None</em>, <em>l=None</em>, <em>power_t=None</em>, <em>decay_learning_rate=None</em>, <em>initial_t=None</em>, <em>feature_mask=None</em>, <em>initial_regressor=None</em>, <em>i=None</em>, <em>initial_weight=None</em>, <em>random_weights=None</em>, <em>input_feature_regularizer=None</em>, <em>audit=None</em>, <em>a=None</em>, <em>progress=None</em>, <em>P=None</em>, <em>quiet=None</em>, <em>data=None</em>, <em>d=None</em>, <em>cache=None</em>, <em>c=None</em>, <em>k=None</em>, <em>passes=None</em>, <em>no_stdin=None</em>, <em>hash=None</em>, <em>ignore=None</em>, <em>keep=None</em>, <em>redefine=None</em>, <em>bit_precision=None</em>, <em>b=None</em>, <em>noconstant=None</em>, <em>constant=None</em>, <em>C=None</em>, <em>ngram=None</em>, <em>skips=None</em>, <em>feature_limit=None</em>, <em>affix=None</em>, <em>spelling=None</em>, <em>dictionary=None</em>, <em>dictionary_path=None</em>, <em>interactions=None</em>, <em>permutations=None</em>, <em>leave_duplicate_interactions=None</em>, <em>quadratic=None</em>, <em>q=None</em>, <em>cubic=None</em>, <em>testonly=None</em>, <em>t=None</em>, <em>min_prediction=None</em>, <em>max_prediction=None</em>, <em>sort_features=None</em>, <em>loss_function=None</em>, <em>link=None</em>, <em>quantile_tau=None</em>, <em>l1=None</em>, <em>l2=None</em>, <em>named_labels=None</em>, <em>final_regressor=None</em>, <em>f=None</em>, <em>readable_model=None</em>, <em>invert_hash=None</em>, <em>save_resume=None</em>, <em>output_feature_regularizer_binary=None</em>, <em>output_feature_regularizer_text=None</em>, <em>oaa=None</em>, <em>ect=None</em>, <em>csoaa=None</em>, <em>wap=None</em>, <em>nn=None</em>, <em>dropout=None</em>, <em>inpass=None</em>, <em>meanfield=None</em>, <em>multitask=None</em>, <em>convert_labels=False</em>, <em>sgd=False</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VW.__init__" title="Permalink to this definition">¶</a></dt>
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>self</em>, <em>convert_to_vw=True</em>, <em>convert_labels=True</em>, <em>ring_size=None</em>, <em>strict_parse=None</em>, <em>learning_rate=None</em>, <em>l=None</em>, <em>power_t=None</em>, <em>decay_learning_rate=None</em>, <em>initial_t=None</em>, <em>feature_mask=None</em>, <em>initial_regressor=None</em>, <em>i=None</em>, <em>initial_weight=None</em>, <em>random_weights=None</em>, <em>normal_weights=None</em>, <em>truncated_normal_weights=None</em>, <em>sparse_weights=None</em>, <em>input_feature_regularizer=None</em>, <em>quiet=True</em>, <em>random_seed=None</em>, <em>hash=None</em>, <em>hash_seed=None</em>, <em>ignore=None</em>, <em>ignore_linear=None</em>, <em>keep=None</em>, <em>redefine=None</em>, <em>bit_precision=None</em>, <em>b=None</em>, <em>noconstant=None</em>, <em>constant=None</em>, <em>C=None</em>, <em>ngram=None</em>, <em>skips=None</em>, <em>feature_limit=None</em>, <em>affix=None</em>, <em>spelling=None</em>, <em>dictionary=None</em>, <em>dictionary_path=None</em>, <em>interactions=None</em>, <em>permutations=None</em>, <em>leave_duplicate_interactions=None</em>, <em>quadratic=None</em>, <em>q=None</em>, <em>cubic=None</em>, <em>testonly=None</em>, <em>t=None</em>, <em>holdout_off=None</em>, <em>holdout_period=None</em>, <em>holdout_after=None</em>, <em>early_terminate=None</em>, <em>passes=1</em>, <em>initial_pass_length=None</em>, <em>examples=None</em>, <em>min_prediction=None</em>, <em>max_prediction=None</em>, <em>sort_features=None</em>, <em>loss_function=None</em>, <em>quantile_tau=None</em>, <em>l1=None</em>, <em>l2=None</em>, <em>no_bias_regularization=None</em>, <em>named_labels=None</em>, <em>final_regressor=None</em>, <em>f=None</em>, <em>readable_model=None</em>, <em>invert_hash=None</em>, <em>save_resume=None</em>, <em>preserve_performance_counters=None</em>, <em>output_feature_regularizer_binary=None</em>, <em>output_feature_regularizer_text=None</em>, <em>oaa=None</em>, <em>ect=None</em>, <em>csoaa=None</em>, <em>wap=None</em>, <em>probabilities=None</em>, <em>nn=None</em>, <em>inpass=None</em>, <em>multitask=None</em>, <em>dropout=None</em>, <em>meanfield=None</em>, <em>conjugate_gradient=None</em>, <em>bfgs=None</em>, <em>hessian_on=None</em>, <em>mem=None</em>, <em>termination=None</em>, <em>lda=None</em>, <em>lda_alpha=None</em>, <em>lda_rho=None</em>, <em>lda_D=None</em>, <em>lda_epsilon=None</em>, <em>minibatch=None</em>, <em>svrg=None</em>, <em>stage_size=None</em>, <em>ftrl=None</em>, <em>coin=None</em>, <em>pistol=None</em>, <em>ftrl_alpha=None</em>, <em>ftrl_beta=None</em>, <em>ksvm=None</em>, <em>kernel=None</em>, <em>bandwidth=None</em>, <em>degree=None</em>, <em>sgd=None</em>, <em>adaptive=None</em>, <em>invariant=None</em>, <em>normalized=None</em>, <em>link=None</em>, <em>stage_poly=None</em>, <em>sched_exponent=None</em>, <em>batch_sz=None</em>, <em>batch_sz_no_doubling=None</em>, <em>lrq=None</em>, <em>lrqdropout=None</em>, <em>lrqfa=None</em>, <em>data=None</em>, <em>d=None</em>, <em>cache=None</em>, <em>c=None</em>, <em>cache_file=None</em>, <em>json=None</em>, <em>kill_cache=None</em>, <em>k=None</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VW.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>VW model constructor, exposing all supported parameters to keep sklearn happy</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
-<dt><strong>probabilities</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
-<dd><p class="first last">Float number between 0 and 1</p>
-</dd>
-<dt><strong>random_seed</strong> <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
-<dd><p class="first last">seed random number generator</p>
-</dd>
-<dt><strong>ring_size</strong> <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
-<dd><p class="first last">size of example ring</p>
-</dd>
-<dt><strong>convert_to_vw</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dt><strong>Estimator options</strong></dt>
+<dd><dl class="first docutils">
+<dt>convert_to_vw <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
 <dd><p class="first last">flag to convert X input to vw format</p>
 </dd>
-<dt><strong>Update options</strong></dt>
-<dd></dd>
-<dt><strong>bfgs</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
-<dd><p class="first last">use L-BFGS optimization algorithm</p>
+<dt>convert_labels <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">Convert labels of the form [0,1] to [-1,1]</p>
 </dd>
-<dt><strong>mem</strong> <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
-<dd><p class="first last">set the rank of the inverse hessian approximation used by bfgs</p>
+</dl>
+<p>VW options</p>
+<dl class="docutils">
+<dt>ring_size <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">size of example ring</p>
 </dd>
-<dt><strong>ftrl</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
-<dd><p class="first last">use FTRL-Proximal optimization algorithm</p>
+<dt>strict_parse <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">throw on malformed examples</p>
 </dd>
-<dt><strong>ftrl_alpha</strong> <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
-<dd><p class="first last">ftrl alpha parameter</p>
-</dd>
-<dt><strong>ftrl_beta</strong> <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
-<dd><p class="first last">ftrl beta parameter</p>
-</dd>
-<dt><strong>learning_rate,l</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+</dl>
+<p>Update options</p>
+<dl class="docutils">
+<dt>learning_rate,l <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
 <dd><p class="first last">Set learning rate</p>
 </dd>
-<dt><strong>power_t</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dt>power_t <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
 <dd><p class="first last">t power value</p>
 </dd>
-<dt><strong>decay_learning_rate</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dt>decay_learning_rate <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
 <dd><p class="first last">Set Decay factor for learning_rate between passes</p>
 </dd>
-<dt><strong>initial_t</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dt>initial_t <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
 <dd><p class="first last">initial t value</p>
 </dd>
-<dt><strong>feature_mask</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dt>feature_mask <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
 <dd><p class="first last">Use existing regressor to determine which parameters may be updated.
 If no initial_regressor given, also used for initial weights.</p>
 </dd>
-<dt><strong>Weight options</strong></dt>
-<dd></dd>
-<dt><strong>initial_regressor,i</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+</dl>
+<p>Weight options</p>
+<dl class="docutils">
+<dt>initial_regressor,i <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
 <dd><p class="first last">Initial regressor(s)</p>
 </dd>
-<dt><strong>initial_weight</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dt>initial_weight <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
 <dd><p class="first last">Set all weights to an initial value of arg.</p>
 </dd>
-<dt><strong>random_weights</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dt>random_weights <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
 <dd><p class="first last">make initial weights random</p>
 </dd>
-<dt><strong>input_feature_regularizer</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dt>normal_weights <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">make initial weights normal</p>
+</dd>
+<dt>truncated_normal_weights <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">make initial weights truncated normal</p>
+</dd>
+<dt>sparse_weights <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">Use a sparse datastructure for weights</p>
+</dd>
+<dt>input_feature_regularizer <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
 <dd><p class="first last">Per feature regularization input file</p>
 </dd>
-<dt><strong>Diagnostic options</strong></dt>
-<dd></dd>
-<dt><strong>audit,a</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
-<dd><p class="first last">print weights of features</p>
-</dd>
-<dt><strong>progress,P</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str/integer/float</span></dt>
-<dd><p class="first last">Progress update frequency. int: additive, float: multiplicative</p>
-</dd>
-<dt><strong>quiet</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+</dl>
+<p>Diagnostic options</p>
+<dl class="docutils">
+<dt>quiet <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
 <dd><p class="first last">Don’t output disgnostics and progress updates</p>
 </dd>
-<dt><strong>Input options</strong></dt>
-<dd></dd>
-<dt><strong>data,d</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
-<dd><p class="first last">path to data file for fitting external to sklearn</p>
+</dl>
+<p>Randomization options</p>
+<dl class="docutils">
+<dt>random_seed <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dd><p class="first last">seed random number generator</p>
 </dd>
-<dt><strong>cache,c</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
-<dd><p class="first last">use a cache. default is &lt;data&gt;.cache</p>
-</dd>
-<dt><strong>cache_file</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
-<dd><p class="first last">path to cache file to use</p>
-</dd>
-<dt><strong>k</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
-<dd><p class="first last">auto delete cache file</p>
-</dd>
-<dt><strong>passes</strong> <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
-<dd><p class="first last">Number of training passes</p>
-</dd>
-<dt><strong>convert_labels</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
-<dd><p class="first last">Convert labels of the form [0,1] to [-1,1]</p>
-</dd>
-<dt><strong>Feature options</strong></dt>
-<dd></dd>
-<dt><strong>hash</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+</dl>
+<p>Feature options</p>
+<dl class="docutils">
+<dt>hash <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
 <dd><p class="first last">how to hash the features. Available options: strings, all</p>
 </dd>
-<dt><strong>ignore</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dt>hash_seed <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">seed for hash function</p>
+</dd>
+<dt>ignore <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
 <dd><p class="first last">ignore namespaces beginning with character &lt;arg&gt;</p>
 </dd>
-<dt><strong>keep</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dt>ignore_linear <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">ignore namespaces beginning with character &lt;arg&gt; for linear terms only</p>
+</dd>
+<dt>keep <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
 <dd><p class="first last">keep namespaces beginning with character &lt;arg&gt;</p>
 </dd>
-<dt><strong>redefine</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dt>redefine <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
 <dd><p class="first last">Redefine namespaces beginning with characters of string S as namespace N. &lt;arg&gt; shall be in
 form ‘N:=S’ where := is operator. Empty N or S are treated as default namespace.
 Use ‘:’ as a wildcard in S.</p>
 </dd>
-<dt><strong>bit_precision,b</strong> <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dt>bit_precision,b <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
 <dd><p class="first last">number of bits in the feature table</p>
 </dd>
-<dt><strong>noconstant</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dt>noconstant <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
 <dd><p class="first last">Don’t add a constant feature</p>
 </dd>
-<dt><strong>constant,C</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dt>constant,C <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
 <dd><p class="first last">Set initial value of constant</p>
 </dd>
-<dt><strong>ngram</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dt>ngram <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
 <dd><p class="first last">Generate N grams. To generate N grams for a single namespace ‘foo’, arg should be fN.</p>
 </dd>
-<dt><strong>skips</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dt>skips <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
 <dd><p class="first last">Generate skips in N grams. This in conjunction with the ngram tag can be used to generate
 generalized n-skip-k-gram. To generate n-skips for a single namespace ‘foo’, arg should be fN.</p>
 </dd>
-<dt><strong>feature_limit</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dt>feature_limit <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
 <dd><p class="first last">limit to N features. To apply to a single namespace ‘foo’, arg should be fN</p>
 </dd>
-<dt><strong>affix</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dt>affix <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
 <dd><p class="first last">generate prefixes/suffixes of features; argument ‘+2a,-3b,+1’ means generate 2-char prefixes for
 namespace a, 3-char suffixes for b and 1 char prefixes for default namespace</p>
 </dd>
-<dt><strong>spelling</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dt>spelling <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
 <dd><p class="first last">compute spelling features for a give namespace (use ‘_’ for default namespace)</p>
 </dd>
-<dt><strong>dictionary</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dt>dictionary <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
 <dd><p class="first last">read a dictionary for additional features (arg either ‘x:file’ or just ‘file’)</p>
 </dd>
-<dt><strong>dictionary_path</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dt>dictionary_path <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
 <dd><p class="first last">look in this directory for dictionaries; defaults to current directory or env{PATH}</p>
 </dd>
-<dt><strong>interactions</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dt>interactions <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
 <dd><p class="first last">Create feature interactions of any level between namespaces.</p>
 </dd>
-<dt><strong>permutations</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dt>permutations <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
 <dd><p class="first last">Use permutations instead of combinations for feature interactions of same namespace.</p>
 </dd>
-<dt><strong>leave_duplicate_interactions</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dt>leave_duplicate_interactions <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
 <dd><p class="first last">Don’t remove interactions with duplicate combinations of namespaces. For
 ex. this is a duplicate: ‘-q ab -q ba’ and a lot more in ‘-q ::’.</p>
 </dd>
-<dt><strong>quadratic,q</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dt>quadratic,q <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
 <dd><p class="first last">Create and use quadratic features, q:: corresponds to a wildcard for all printable characters</p>
 </dd>
-<dt><strong>cubic</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dt>cubic <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
 <dd><p class="first last">Create and use cubic features</p>
 </dd>
-<dt><strong>Example options</strong></dt>
-<dd></dd>
-<dt><strong>testonly,t</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+</dl>
+<p>Example options</p>
+<dl class="docutils">
+<dt>testonly,t <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
 <dd><p class="first last">Ignore label information and just test</p>
 </dd>
-<dt><strong>min_prediction</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dt>holdout_off <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">no holdout data in multiple passes</p>
+</dd>
+<dt>holdout_period <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">holdout period for test only</p>
+</dd>
+<dt>holdout_after <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">holdout after n training examples</p>
+</dd>
+<dt>early_terminate <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">Specify the number of passes tolerated when holdout loss doesn’t
+decrease before early termination</p>
+</dd>
+<dt>passes <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">Number of Training Passes</p>
+</dd>
+<dt>initial_pass_length <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">initial number of examples per pass</p>
+</dd>
+<dt>examples <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">number of examples to parse</p>
+</dd>
+<dt>min_prediction <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
 <dd><p class="first last">Smallest prediction to output</p>
 </dd>
-<dt><strong>max_prediction</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dt>max_prediction <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
 <dd><p class="first last">Largest prediction to output</p>
 </dd>
-<dt><strong>sort_features</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dt>sort_features <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
 <dd><p class="first last">turn this on to disregard order in which features have been defined. This will lead to
 smaller cache sizes</p>
 </dd>
-<dt><strong>loss_function</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dt>loss_function <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
 <dd><p class="first last">default_value(“squared”), “Specify the loss function to be used, uses squared by default.
 Currently available ones are squared, classic, hinge, logistic and quantile.</p>
 </dd>
-<dt><strong>link</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
-<dd><p class="first last">apply a link function to convert output: e.g. ‘logistic’</p>
-</dd>
-<dt><strong>quantile_tau</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dt>quantile_tau <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
 <dd><p class="first last">Parameter tau associated with Quantile loss. Defaults to 0.5</p>
 </dd>
-<dt><strong>l1</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
-<dd><p class="first last">l_1 lambda</p>
+<dt>l1 <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">l_1 lambda (L1 regularization)</p>
 </dd>
-<dt><strong>l2</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
-<dd><p class="first last">l_2 lambda</p>
+<dt>l2 <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">l_2 lambda (L2 regularization)</p>
 </dd>
-<dt><strong>named_labels</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dt>no_bias_regularization <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">no bias in regularization</p>
+</dd>
+<dt>named_labels <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
 <dd><p class="first last">use names for labels (multiclass, etc.) rather than integers, argument specified all
 possible labels, comma-sep, eg “–named_labels Noun,Verb,Adj,Punc”</p>
 </dd>
-<dt><strong>Output model</strong></dt>
-<dd></dd>
-<dt><strong>final_regressor,f</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+</dl>
+<p>Output model</p>
+<dl class="last docutils">
+<dt>final_regressor,f <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
 <dd><p class="first last">Final regressor</p>
 </dd>
-<dt><strong>readable_model</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dt>readable_model <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
 <dd><p class="first last">Output human-readable final regressor with numeric features</p>
 </dd>
-<dt><strong>invert_hash</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dt>invert_hash <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
 <dd><p class="first last">Output human-readable final regressor with feature names.  Computationally expensive.</p>
 </dd>
-<dt><strong>save_resume</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dt>save_resume <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
 <dd><p class="first last">save extra state so learning can be resumed later with new data</p>
 </dd>
-<dt><strong>output_feature_regularizer_binary</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dt>preserve_performance_counters <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">reset performance counters when warmstarting</p>
+</dd>
+<dt>output_feature_regularizer_binary <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
 <dd><p class="first last">Per feature regularization output file</p>
 </dd>
-<dt><strong>output_feature_regularizer_text</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dt>output_feature_regularizer_text <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
 <dd><p class="first last">Per feature regularization output file, in text</p>
 </dd>
+</dl>
+</dd>
 <dt><strong>Multiclass options</strong></dt>
-<dd></dd>
-<dt><strong>oaa</strong> <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dd><dl class="first docutils">
+<dt>oaa <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
 <dd><p class="first last">Use one-against-all multiclass learning with labels</p>
 </dd>
-<dt><strong>ect</strong> <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dt>oaa_subsample <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">subsample this number of negative examples when learning</p>
+</dd>
+<dt>ect <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
 <dd><p class="first last">Use error correcting tournament multiclass learning</p>
 </dd>
-<dt><strong>csoaa</strong> <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dt>csoaa <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
 <dd><p class="first last">Use cost sensitive one-against-all multiclass learning</p>
 </dd>
-<dt><strong>wap</strong> <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dt>wap <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
 <dd><p class="first last">Use weighted all pairs multiclass learning</p>
 </dd>
-<dt><strong>Contextual Bandit Optimization</strong></dt>
-<dd></dd>
-<dt><strong>cb</strong> <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
-<dd><p class="first last">Use contextual bandit learning with specified costs</p>
+<dt>probabilities <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">predict probabilities of all classes</p>
 </dd>
-<dt><strong>cbify</strong> <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
-<dd><p class="first last">Convert multiclass on &lt;k&gt; classes into a contextual bandit problem</p>
-</dd>
-<dt><strong>Neural Network options</strong></dt>
-<dd></dd>
-<dt><strong>nn</strong> <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+</dl>
+<p>Neural Network options</p>
+<dl class="docutils">
+<dt>nn <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
 <dd><p class="first last">Use a sigmoidal feed-forward neural network with N hidden units</p>
 </dd>
-<dt><strong>dropout</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
-<dd><p class="first last">Train or test sigmoidal feed-forward network using dropout</p>
-</dd>
-<dt><strong>inpass</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dt>inpass <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
 <dd><p class="first last">Train or test sigmoidal feed-forward network with input pass-through</p>
 </dd>
-<dt><strong>multitask</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dt>multitask <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
 <dd><p class="first last">Share hidden layer across all reduced tasks</p>
 </dd>
-<dt><strong>meanfield</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dt>dropout <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">Train or test sigmoidal feed-forward network using dropout</p>
+</dd>
+<dt>meanfield <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
 <dd><p class="first last">Train or test sigmoidal feed-forward network using mean field</p>
 </dd>
-<dt><strong>Update Rule options</strong></dt>
-<dd></dd>
-<dt><strong>sgd</strong> <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
-<dd><p class="first last">Use sgd for the update rule</p>
+</dl>
+<p>LBFGS and Conjugate Gradient options</p>
+<dl class="docutils">
+<dt>conjugate_gradient <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">use conjugate gradient based optimization</p>
+</dd>
+<dt>bgfs <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">use bfgs updates</p>
+</dd>
+<dt>hessian_on <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">use second derivative in line search</p>
+</dd>
+<dt>mem <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">memory in bfgs</p>
+</dd>
+<dt>termination <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">termination threshold</p>
+</dd>
+</dl>
+<p>Latent Dirichlet Allocation options</p>
+<dl class="docutils">
+<dt>lda <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">Run lda with &lt;int&gt; topics</p>
+</dd>
+<dt>lda_alpha <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">Prior on sparsity of per-document topic weights</p>
+</dd>
+<dt>lda_rho <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">Prior on sparsity of topic distributions</p>
+</dd>
+<dt>lda_D <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">Number of documents</p>
+</dd>
+<dt>lda_epsilon <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">Loop convergence threshold</p>
+</dd>
+<dt>minibatch <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">Minibatch size for LDA</p>
+</dd>
+</dl>
+<p>Stochastic Variance Reduced Gradient options</p>
+<dl class="docutils">
+<dt>svrg <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">Streaming Stochastic Variance Reduced Gradient</p>
+</dd>
+<dt>stage_size <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">Number of passes per SVRG stage</p>
+</dd>
+</dl>
+<p>Follow the Regularized Leader options</p>
+<dl class="docutils">
+<dt>ftrl <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">Run Follow the Proximal Regularized Leader</p>
+</dd>
+<dt>coin <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">Coin betting optimizer</p>
+</dd>
+<dt>pistol <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">PiSTOL: Parameter free STOchastic Learning</p>
+</dd>
+<dt>ftrl_alpha <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">Alpha parameter for FTRL optimization</p>
+</dd>
+<dt>ftrl_beta <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">Beta parameters for FTRL optimization</p>
+</dd>
+</dl>
+<p>Kernel SVM options</p>
+<dl class="docutils">
+<dt>ksvm <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">kernel svm</p>
+</dd>
+<dt>kernel <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">type of kernel (rbf or linear (default))</p>
+</dd>
+<dt>bandwidth <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">bandwidth of rbf kernel</p>
+</dd>
+<dt>degree <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">degree of poly kernel</p>
+</dd>
+</dl>
+<p>Gradient Descent options</p>
+<dl class="docutils">
+<dt>sgd <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">use regular stochastic gradient descent update</p>
+</dd>
+<dt>adaptive <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">use adaptive, individual learning rates</p>
+</dd>
+<dt>adax <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">use adaptive learning rates with x^2 instead of g^2x^2</p>
+</dd>
+<dt>invariant <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">use save/importance aware updates</p>
+</dd>
+<dt>normalized <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">use per feature normalized updates</p>
+</dd>
+</dl>
+<p>Scorer options</p>
+<dl class="docutils">
+<dt>link <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Specify the link function: identity, logistic, glf1 or poisson</p>
+</dd>
+</dl>
+<p>Stagewise polynomial options:</p>
+<dl class="docutils">
+<dt>stage_poly <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">use stagewise polynomial feature learning</p>
+</dd>
+<dt>sched_exponent <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">exponent controlling quantity of included features</p>
+</dd>
+<dt>batch_sz <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">multiplier on batch size before including more features</p>
+</dd>
+<dt>batch_sz_no_doubling <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">batch_sz does not double</p>
+</dd>
+</dl>
+<p>Low Rank Quadratics options:</p>
+<dl class="docutils">
+<dt>lrq <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">use low rank quadratic features</p>
+</dd>
+<dt>lrqdropout <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">use dropout training for low rank quadratic features</p>
+</dd>
+<dt>lrqfa <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">use low rank quadratic features with field aware weights</p>
+</dd>
+</dl>
+<p>Input options</p>
+<dl class="last docutils">
+<dt>data,d <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">path to data file for fitting external to sklearn</p>
+</dd>
+<dt>cache,c <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">use a cache. default is &lt;data&gt;.cache</p>
+</dd>
+<dt>cache_file <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">path to cache file to use</p>
+</dd>
+<dt>json <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">enable JSON parsing</p>
+</dd>
+<dt>kill_cache, k <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">do not reuse existing cache file, create a new one always</p>
+</dd>
+</dl>
 </dd>
 </dl>
 </td>
@@ -442,9 +593,19 @@ possible labels, comma-sep, eg “–named_labels Noun,Verb,Adj,Punc”</p>
 </table>
 </dd></dl>
 
+<dl class="attribute">
+<dt id="vowpalwabbit.sklearn_vw.VW.convert_labels">
+<code class="descname">convert_labels</code><em class="property"> = True</em><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VW.convert_labels" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="vowpalwabbit.sklearn_vw.VW.convert_to_vw">
+<code class="descname">convert_to_vw</code><em class="property"> = True</em><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VW.convert_to_vw" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 <dl class="method">
 <dt id="vowpalwabbit.sklearn_vw.VW.fit">
-<code class="descname">fit</code><span class="sig-paren">(</span><em>self</em>, <em>X</em>, <em>y=None</em>, <em>sample_weight=None</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VW.fit" title="Permalink to this definition">¶</a></dt>
+<code class="descname">fit</code><span class="sig-paren">(</span><em>self</em>, <em>X=None</em>, <em>y=None</em>, <em>sample_weight=None</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VW.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit the model according to the given training data</p>
 <dl class="docutils">
 <dt>TODO: for first pass create and store example objects.</dt>
@@ -519,13 +680,13 @@ if not using convert_to_vw, X is expected to be a list of vw formatted feature v
 <dl class="method">
 <dt id="vowpalwabbit.sklearn_vw.VW.get_params">
 <code class="descname">get_params</code><span class="sig-paren">(</span><em>self</em>, <em>deep=True</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VW.get_params" title="Permalink to this definition">¶</a></dt>
-<dd><p>This returns the set of vw and estimator parameters currently in use</p>
+<dd><p>This returns the full set of vw and estimator parameters currently in use</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="vowpalwabbit.sklearn_vw.VW.get_vw">
 <code class="descname">get_vw</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VW.get_vw" title="Permalink to this definition">¶</a></dt>
-<dd><p>Factory to create a vw instance on demand</p>
+<dd><p>Get the vw instance</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -545,11 +706,6 @@ if not using convert_to_vw, X is expected to be a list of vw formatted feature v
 <code class="descname">load</code><span class="sig-paren">(</span><em>self</em>, <em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VW.load" title="Permalink to this definition">¶</a></dt>
 <dd><p>Load model from file</p>
 </dd></dl>
-
-<dl class="attribute">
-<dt id="vowpalwabbit.sklearn_vw.VW.params">
-<code class="descname">params</code><em class="property"> = {}</em><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VW.params" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
 
 <dl class="method">
 <dt id="vowpalwabbit.sklearn_vw.VW.predict">
@@ -606,69 +762,41 @@ if not using convert_to_vw, X is expected to be a list of vw formatted feature v
 
 <dl class="method">
 <dt id="vowpalwabbit.sklearn_vw.VW.set_params">
-<code class="descname">set_params</code><span class="sig-paren">(</span><em>self</em>, <em>**params</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VW.set_params" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="docutils">
-<dt>This destroys and recreates the Vowpal Wabbit model with updated parameters</dt>
-<dd>any parameters not provided will remain as they were initialized to at construction</dd>
-</dl>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
-<dt><strong>params</strong> <span class="classifier-delimiter">:</span> <span class="classifier">dict</span></dt>
-<dd><p class="first last">dictionary of model parameter keys and values to update</p>
-</dd>
-</dl>
-</td>
-</tr>
-</tbody>
-</table>
+<code class="descname">set_params</code><span class="sig-paren">(</span><em>self</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VW.set_params" title="Permalink to this definition">¶</a></dt>
+<dd><p>This destroys and recreates the Vowpal Wabbit model with updated parameters
+any parameters not provided will remain as they are currently</p>
 </dd></dl>
 
-<dl class="method">
-<dt id="vowpalwabbit.sklearn_vw.VW.transform">
-<code class="descname">transform</code><span class="sig-paren">(</span><em>self</em>, <em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VW.transform" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="docutils">
-<dt>Transform does nothing by default besides closing the model. Transform is required for any estimator</dt>
-<dd>in a sklearn pipeline that isn’t the final estimator</dd>
-</dl>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
-<dt><strong>X</strong> <span class="classifier-delimiter">:</span> <span class="classifier">{array-like, sparse matrix}, shape (n_samples, n_features or 1 if not convert_to_vw) or</span></dt>
-<dd><p class="first last">Training vector, where n_samples in the number of samples and
-n_features is the number of features.
-if not using convert_to_vw, X is expected to be a list of vw formatted feature vector strings with labels</p>
-</dd>
-<dt><strong>y</strong> <span class="classifier-delimiter">:</span> <span class="classifier">array-like, shape (n_samples,), optional if not convert_to_vw</span></dt>
-<dd><p class="first last">Target vector relative to X.</p>
-</dd>
-</dl>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
-<dt><strong>X</strong> <span class="classifier-delimiter">:</span> <span class="classifier">{array-like, sparse matrix}</span></dt>
-<dd><p class="first last">To be passed into next estimator in pipeline</p>
-</dd>
-</dl>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
+<dl class="attribute">
+<dt id="vowpalwabbit.sklearn_vw.VW.vw_">
+<code class="descname">vw_</code><em class="property"> = None</em><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VW.vw_" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 
 </dd></dl>
 
 <dl class="class">
 <dt id="vowpalwabbit.sklearn_vw.VWClassifier">
-<em class="property">class </em><code class="descclassname">vowpalwabbit.sklearn_vw.</code><code class="descname">VWClassifier</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VWClassifier" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">sklearn.linear_model.base.SparseCoefMixin</span></code>, <a class="reference internal" href="#vowpalwabbit.sklearn_vw.ThresholdingLinearClassifierMixin" title="vowpalwabbit.sklearn_vw.ThresholdingLinearClassifierMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">vowpalwabbit.sklearn_vw.ThresholdingLinearClassifierMixin</span></code></a>, <a class="reference internal" href="#vowpalwabbit.sklearn_vw.VW" title="vowpalwabbit.sklearn_vw.VW"><code class="xref py py-class docutils literal notranslate"><span class="pre">vowpalwabbit.sklearn_vw.VW</span></code></a></p>
-<p>Vowpal Wabbit Classifier model
+<em class="property">class </em><code class="descclassname">vowpalwabbit.sklearn_vw.</code><code class="descname">VWClassifier</code><span class="sig-paren">(</span><em>loss_function='logistic'</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VWClassifier" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#vowpalwabbit.sklearn_vw.VW" title="vowpalwabbit.sklearn_vw.VW"><code class="xref py py-class docutils literal notranslate"><span class="pre">vowpalwabbit.sklearn_vw.VW</span></code></a>, <a class="reference internal" href="#vowpalwabbit.sklearn_vw.LinearClassifierMixin" title="vowpalwabbit.sklearn_vw.LinearClassifierMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">vowpalwabbit.sklearn_vw.LinearClassifierMixin</span></code></a></p>
+<p>Vowpal Wabbit Classifier model for binary classification
 Use VWMultiClassifier for multiclass classification
-note - don’t try to apply link=’logistic’ on top of the existing functionality</p>
+Note - We are assuming the VW.predict returns logits, applying link=logistic will break this assumption</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Attributes:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>coef_</strong> <span class="classifier-delimiter">:</span> <span class="classifier">scipy.sparse_matrix</span></dt>
+<dd><p class="first last">Empty sparse matrix used the check if model has been fit</p>
+</dd>
+<dt><strong>classes_</strong> <span class="classifier-delimiter">:</span> <span class="classifier">np.array</span></dt>
+<dd><p class="first last">Binary class labels</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
 <p class="rubric">Methods</p>
 <table border="1" class="longtable docutils">
 <colgroup>
@@ -682,8 +810,8 @@ note - don’t try to apply link=’logistic’ on top of the existing functiona
 <tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">densify</span></code>(self)</td>
 <td>Convert coefficient matrix to dense array format.</td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit</span></code>(self,&nbsp;X[,&nbsp;y,&nbsp;sample_weight])</td>
-<td>Fit the model according to the given training data</td>
+<tr class="row-odd"><td><a class="reference internal" href="#vowpalwabbit.sklearn_vw.VWClassifier.fit" title="vowpalwabbit.sklearn_vw.VWClassifier.fit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit</span></code></a>(self[,&nbsp;X,&nbsp;y,&nbsp;sample_weight])</td>
+<td>Fit the model according to the given training data.</td>
 </tr>
 <tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_coefs</span></code>(self)</td>
 <td>Returns coefficient weights as ordered sparse matrix</td>
@@ -692,16 +820,22 @@ note - don’t try to apply link=’logistic’ on top of the existing functiona
 <td>Returns intercept weight for model</td>
 </tr>
 <tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_params</span></code>(self[,&nbsp;deep])</td>
-<td>This returns the set of vw and estimator parameters currently in use</td>
+<td>This returns the full set of vw and estimator parameters currently in use</td>
 </tr>
 <tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_vw</span></code>(self)</td>
-<td>Factory to create a vw instance on demand</td>
+<td>Get the vw instance</td>
 </tr>
 <tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">load</span></code>(self,&nbsp;filename)</td>
 <td>Load model from file</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#vowpalwabbit.sklearn_vw.VWClassifier.predict" title="vowpalwabbit.sklearn_vw.VWClassifier.predict"><code class="xref py py-obj docutils literal notranslate"><span class="pre">predict</span></code></a>(self,&nbsp;X)</td>
 <td>Predict class labels for samples in X.</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">predict_log_proba</span></code>(self,&nbsp;X)</td>
+<td>Log of probability estimates.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#vowpalwabbit.sklearn_vw.VWClassifier.predict_proba" title="vowpalwabbit.sklearn_vw.VWClassifier.predict_proba"><code class="xref py py-obj docutils literal notranslate"><span class="pre">predict_proba</span></code></a>(self,&nbsp;X)</td>
+<td>Predict probabilities for samples</td>
 </tr>
 <tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">save</span></code>(self,&nbsp;filename)</td>
 <td>Save model to file</td>
@@ -712,22 +846,462 @@ note - don’t try to apply link=’logistic’ on top of the existing functiona
 <tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_coefs</span></code>(self,&nbsp;coefs)</td>
 <td>Sets coefficients weights from ordered sparse matrix</td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_params</span></code>(self,&nbsp;\*\*params)</td>
-<td>This destroys and recreates the Vowpal Wabbit model with updated parameters</td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_params</span></code>(self,&nbsp;\*\*kwargs)</td>
+<td>This destroys and recreates the Vowpal Wabbit model with updated parameters any parameters not provided will remain as they are currently</td>
 </tr>
 <tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">sparsify</span></code>(self)</td>
 <td>Convert coefficient matrix to sparse format.</td>
-</tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">transform</span></code>(self,&nbsp;X[,&nbsp;y])</td>
-<td>Transform does nothing by default besides closing the model. Transform is required for any estimator</td>
 </tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="vowpalwabbit.sklearn_vw.VWClassifier.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>self</em>, <em>**params</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VWClassifier.__init__" title="Permalink to this definition">¶</a></dt>
-<dd><p>x.__init__(…) initializes x; see help(type(x)) for signature</p>
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>self</em>, <em>loss_function='logistic'</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VWClassifier.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>VW model constructor, exposing all supported parameters to keep sklearn happy</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>Estimator options</strong></dt>
+<dd><dl class="first docutils">
+<dt>convert_to_vw <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">flag to convert X input to vw format</p>
+</dd>
+<dt>convert_labels <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">Convert labels of the form [0,1] to [-1,1]</p>
+</dd>
+</dl>
+<p>VW options</p>
+<dl class="docutils">
+<dt>ring_size <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">size of example ring</p>
+</dd>
+<dt>strict_parse <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">throw on malformed examples</p>
+</dd>
+</dl>
+<p>Update options</p>
+<dl class="docutils">
+<dt>learning_rate,l <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">Set learning rate</p>
+</dd>
+<dt>power_t <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">t power value</p>
+</dd>
+<dt>decay_learning_rate <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">Set Decay factor for learning_rate between passes</p>
+</dd>
+<dt>initial_t <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">initial t value</p>
+</dd>
+<dt>feature_mask <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Use existing regressor to determine which parameters may be updated.
+If no initial_regressor given, also used for initial weights.</p>
+</dd>
+</dl>
+<p>Weight options</p>
+<dl class="docutils">
+<dt>initial_regressor,i <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Initial regressor(s)</p>
+</dd>
+<dt>initial_weight <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">Set all weights to an initial value of arg.</p>
+</dd>
+<dt>random_weights <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">make initial weights random</p>
+</dd>
+<dt>normal_weights <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">make initial weights normal</p>
+</dd>
+<dt>truncated_normal_weights <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">make initial weights truncated normal</p>
+</dd>
+<dt>sparse_weights <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">Use a sparse datastructure for weights</p>
+</dd>
+<dt>input_feature_regularizer <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Per feature regularization input file</p>
+</dd>
+</dl>
+<p>Diagnostic options</p>
+<dl class="docutils">
+<dt>quiet <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">Don’t output disgnostics and progress updates</p>
+</dd>
+</dl>
+<p>Randomization options</p>
+<dl class="docutils">
+<dt>random_seed <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dd><p class="first last">seed random number generator</p>
+</dd>
+</dl>
+<p>Feature options</p>
+<dl class="docutils">
+<dt>hash <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">how to hash the features. Available options: strings, all</p>
+</dd>
+<dt>hash_seed <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">seed for hash function</p>
+</dd>
+<dt>ignore <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">ignore namespaces beginning with character &lt;arg&gt;</p>
+</dd>
+<dt>ignore_linear <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">ignore namespaces beginning with character &lt;arg&gt; for linear terms only</p>
+</dd>
+<dt>keep <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">keep namespaces beginning with character &lt;arg&gt;</p>
+</dd>
+<dt>redefine <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Redefine namespaces beginning with characters of string S as namespace N. &lt;arg&gt; shall be in
+form ‘N:=S’ where := is operator. Empty N or S are treated as default namespace.
+Use ‘:’ as a wildcard in S.</p>
+</dd>
+<dt>bit_precision,b <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dd><p class="first last">number of bits in the feature table</p>
+</dd>
+<dt>noconstant <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">Don’t add a constant feature</p>
+</dd>
+<dt>constant,C <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">Set initial value of constant</p>
+</dd>
+<dt>ngram <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Generate N grams. To generate N grams for a single namespace ‘foo’, arg should be fN.</p>
+</dd>
+<dt>skips <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Generate skips in N grams. This in conjunction with the ngram tag can be used to generate
+generalized n-skip-k-gram. To generate n-skips for a single namespace ‘foo’, arg should be fN.</p>
+</dd>
+<dt>feature_limit <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">limit to N features. To apply to a single namespace ‘foo’, arg should be fN</p>
+</dd>
+<dt>affix <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">generate prefixes/suffixes of features; argument ‘+2a,-3b,+1’ means generate 2-char prefixes for
+namespace a, 3-char suffixes for b and 1 char prefixes for default namespace</p>
+</dd>
+<dt>spelling <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">compute spelling features for a give namespace (use ‘_’ for default namespace)</p>
+</dd>
+<dt>dictionary <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">read a dictionary for additional features (arg either ‘x:file’ or just ‘file’)</p>
+</dd>
+<dt>dictionary_path <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">look in this directory for dictionaries; defaults to current directory or env{PATH}</p>
+</dd>
+<dt>interactions <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Create feature interactions of any level between namespaces.</p>
+</dd>
+<dt>permutations <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">Use permutations instead of combinations for feature interactions of same namespace.</p>
+</dd>
+<dt>leave_duplicate_interactions <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">Don’t remove interactions with duplicate combinations of namespaces. For
+ex. this is a duplicate: ‘-q ab -q ba’ and a lot more in ‘-q ::’.</p>
+</dd>
+<dt>quadratic,q <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Create and use quadratic features, q:: corresponds to a wildcard for all printable characters</p>
+</dd>
+<dt>cubic <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Create and use cubic features</p>
+</dd>
+</dl>
+<p>Example options</p>
+<dl class="docutils">
+<dt>testonly,t <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">Ignore label information and just test</p>
+</dd>
+<dt>holdout_off <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">no holdout data in multiple passes</p>
+</dd>
+<dt>holdout_period <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">holdout period for test only</p>
+</dd>
+<dt>holdout_after <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">holdout after n training examples</p>
+</dd>
+<dt>early_terminate <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">Specify the number of passes tolerated when holdout loss doesn’t
+decrease before early termination</p>
+</dd>
+<dt>passes <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">Number of Training Passes</p>
+</dd>
+<dt>initial_pass_length <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">initial number of examples per pass</p>
+</dd>
+<dt>examples <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">number of examples to parse</p>
+</dd>
+<dt>min_prediction <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">Smallest prediction to output</p>
+</dd>
+<dt>max_prediction <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">Largest prediction to output</p>
+</dd>
+<dt>sort_features <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">turn this on to disregard order in which features have been defined. This will lead to
+smaller cache sizes</p>
+</dd>
+<dt>loss_function <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">default_value(“squared”), “Specify the loss function to be used, uses squared by default.
+Currently available ones are squared, classic, hinge, logistic and quantile.</p>
+</dd>
+<dt>quantile_tau <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">Parameter tau associated with Quantile loss. Defaults to 0.5</p>
+</dd>
+<dt>l1 <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">l_1 lambda (L1 regularization)</p>
+</dd>
+<dt>l2 <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">l_2 lambda (L2 regularization)</p>
+</dd>
+<dt>no_bias_regularization <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">no bias in regularization</p>
+</dd>
+<dt>named_labels <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">use names for labels (multiclass, etc.) rather than integers, argument specified all
+possible labels, comma-sep, eg “–named_labels Noun,Verb,Adj,Punc”</p>
+</dd>
+</dl>
+<p>Output model</p>
+<dl class="last docutils">
+<dt>final_regressor,f <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Final regressor</p>
+</dd>
+<dt>readable_model <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Output human-readable final regressor with numeric features</p>
+</dd>
+<dt>invert_hash <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Output human-readable final regressor with feature names.  Computationally expensive.</p>
+</dd>
+<dt>save_resume <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">save extra state so learning can be resumed later with new data</p>
+</dd>
+<dt>preserve_performance_counters <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">reset performance counters when warmstarting</p>
+</dd>
+<dt>output_feature_regularizer_binary <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Per feature regularization output file</p>
+</dd>
+<dt>output_feature_regularizer_text <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Per feature regularization output file, in text</p>
+</dd>
+</dl>
+</dd>
+<dt><strong>Multiclass options</strong></dt>
+<dd><dl class="first docutils">
+<dt>oaa <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dd><p class="first last">Use one-against-all multiclass learning with labels</p>
+</dd>
+<dt>oaa_subsample <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">subsample this number of negative examples when learning</p>
+</dd>
+<dt>ect <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dd><p class="first last">Use error correcting tournament multiclass learning</p>
+</dd>
+<dt>csoaa <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dd><p class="first last">Use cost sensitive one-against-all multiclass learning</p>
+</dd>
+<dt>wap <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dd><p class="first last">Use weighted all pairs multiclass learning</p>
+</dd>
+<dt>probabilities <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">predict probabilities of all classes</p>
+</dd>
+</dl>
+<p>Neural Network options</p>
+<dl class="docutils">
+<dt>nn <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dd><p class="first last">Use a sigmoidal feed-forward neural network with N hidden units</p>
+</dd>
+<dt>inpass <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">Train or test sigmoidal feed-forward network with input pass-through</p>
+</dd>
+<dt>multitask <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">Share hidden layer across all reduced tasks</p>
+</dd>
+<dt>dropout <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">Train or test sigmoidal feed-forward network using dropout</p>
+</dd>
+<dt>meanfield <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">Train or test sigmoidal feed-forward network using mean field</p>
+</dd>
+</dl>
+<p>LBFGS and Conjugate Gradient options</p>
+<dl class="docutils">
+<dt>conjugate_gradient <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">use conjugate gradient based optimization</p>
+</dd>
+<dt>bgfs <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">use bfgs updates</p>
+</dd>
+<dt>hessian_on <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">use second derivative in line search</p>
+</dd>
+<dt>mem <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">memory in bfgs</p>
+</dd>
+<dt>termination <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">termination threshold</p>
+</dd>
+</dl>
+<p>Latent Dirichlet Allocation options</p>
+<dl class="docutils">
+<dt>lda <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">Run lda with &lt;int&gt; topics</p>
+</dd>
+<dt>lda_alpha <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">Prior on sparsity of per-document topic weights</p>
+</dd>
+<dt>lda_rho <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">Prior on sparsity of topic distributions</p>
+</dd>
+<dt>lda_D <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">Number of documents</p>
+</dd>
+<dt>lda_epsilon <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">Loop convergence threshold</p>
+</dd>
+<dt>minibatch <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">Minibatch size for LDA</p>
+</dd>
+</dl>
+<p>Stochastic Variance Reduced Gradient options</p>
+<dl class="docutils">
+<dt>svrg <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">Streaming Stochastic Variance Reduced Gradient</p>
+</dd>
+<dt>stage_size <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">Number of passes per SVRG stage</p>
+</dd>
+</dl>
+<p>Follow the Regularized Leader options</p>
+<dl class="docutils">
+<dt>ftrl <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">Run Follow the Proximal Regularized Leader</p>
+</dd>
+<dt>coin <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">Coin betting optimizer</p>
+</dd>
+<dt>pistol <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">PiSTOL: Parameter free STOchastic Learning</p>
+</dd>
+<dt>ftrl_alpha <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">Alpha parameter for FTRL optimization</p>
+</dd>
+<dt>ftrl_beta <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">Beta parameters for FTRL optimization</p>
+</dd>
+</dl>
+<p>Kernel SVM options</p>
+<dl class="docutils">
+<dt>ksvm <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">kernel svm</p>
+</dd>
+<dt>kernel <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">type of kernel (rbf or linear (default))</p>
+</dd>
+<dt>bandwidth <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">bandwidth of rbf kernel</p>
+</dd>
+<dt>degree <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">degree of poly kernel</p>
+</dd>
+</dl>
+<p>Gradient Descent options</p>
+<dl class="docutils">
+<dt>sgd <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">use regular stochastic gradient descent update</p>
+</dd>
+<dt>adaptive <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">use adaptive, individual learning rates</p>
+</dd>
+<dt>adax <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">use adaptive learning rates with x^2 instead of g^2x^2</p>
+</dd>
+<dt>invariant <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">use save/importance aware updates</p>
+</dd>
+<dt>normalized <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">use per feature normalized updates</p>
+</dd>
+</dl>
+<p>Scorer options</p>
+<dl class="docutils">
+<dt>link <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Specify the link function: identity, logistic, glf1 or poisson</p>
+</dd>
+</dl>
+<p>Stagewise polynomial options:</p>
+<dl class="docutils">
+<dt>stage_poly <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">use stagewise polynomial feature learning</p>
+</dd>
+<dt>sched_exponent <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">exponent controlling quantity of included features</p>
+</dd>
+<dt>batch_sz <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">multiplier on batch size before including more features</p>
+</dd>
+<dt>batch_sz_no_doubling <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">batch_sz does not double</p>
+</dd>
+</dl>
+<p>Low Rank Quadratics options:</p>
+<dl class="docutils">
+<dt>lrq <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">use low rank quadratic features</p>
+</dd>
+<dt>lrqdropout <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">use dropout training for low rank quadratic features</p>
+</dd>
+<dt>lrqfa <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">use low rank quadratic features with field aware weights</p>
+</dd>
+</dl>
+<p>Input options</p>
+<dl class="last docutils">
+<dt>data,d <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">path to data file for fitting external to sklearn</p>
+</dd>
+<dt>cache,c <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">use a cache. default is &lt;data&gt;.cache</p>
+</dd>
+<dt>cache_file <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">path to cache file to use</p>
+</dd>
+<dt>json <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">enable JSON parsing</p>
+</dd>
+<dt>kill_cache, k <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">do not reuse existing cache file, create a new one always</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>self</strong> <span class="classifier-delimiter">:</span> <span class="classifier">BaseEstimator</span></dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
+
+<dl class="attribute">
+<dt id="vowpalwabbit.sklearn_vw.VWClassifier.classes_">
+<code class="descname">classes_</code><em class="property"> = array([-1.,  1.])</em><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VWClassifier.classes_" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="vowpalwabbit.sklearn_vw.VWClassifier.coef_">
+<code class="descname">coef_</code><em class="property"> = None</em><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VWClassifier.coef_" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 
 <dl class="method">
 <dt id="vowpalwabbit.sklearn_vw.VWClassifier.decision_function">
@@ -740,17 +1314,51 @@ sample to the hyperplane.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
-<dt><strong>X</strong> <span class="classifier-delimiter">:</span> <span class="classifier">{array-like, sparse matrix}, shape = (n_samples, n_features)</span></dt>
+<dt><strong>X</strong> <span class="classifier-delimiter">:</span> <span class="classifier">array_like or sparse matrix, shape (n_samples, n_features)</span></dt>
 <dd><p class="first last">Samples.</p>
 </dd>
 </dl>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
-<dt><strong>out</strong> <span class="classifier-delimiter">:</span> <span class="classifier">array, shape=(n_samples,) if n_classes == 2 else (n_samples, n_classes)</span></dt>
+<dt>array, shape=(n_samples,) if n_classes == 2 else (n_samples, n_classes)</dt>
 <dd><p class="first last">Confidence scores per (sample, class) combination. In the binary
 case, confidence score for self.classes_[1] where &gt;0 means this
 class would be predicted.</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="vowpalwabbit.sklearn_vw.VWClassifier.fit">
+<code class="descname">fit</code><span class="sig-paren">(</span><em>self</em>, <em>X=None</em>, <em>y=None</em>, <em>sample_weight=None</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VWClassifier.fit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fit the model according to the given training data.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>X</strong> <span class="classifier-delimiter">:</span> <span class="classifier">{array-like, sparse matrix} of shape (n_samples, n_features)</span></dt>
+<dd><p class="first last">Training vector, where n_samples is the number of samples and
+n_features is the number of features.</p>
+</dd>
+<dt><strong>y</strong> <span class="classifier-delimiter">:</span> <span class="classifier">array-like of shape (n_samples,)</span></dt>
+<dd><p class="first last">Target vector relative to X.</p>
+</dd>
+<dt><strong>sample_weight</strong> <span class="classifier-delimiter">:</span> <span class="classifier">array-like of shape (n_samples,) default=None</span></dt>
+<dd><p class="first last">Array of weights that are assigned to individual samples.
+If not provided, then each sample is given unit weight.</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt>self</dt>
+<dd><p class="first last">Fitted estimator.</p>
 </dd>
 </dl>
 </td>
@@ -768,15 +1376,42 @@ class would be predicted.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
-<dt><strong>X</strong> <span class="classifier-delimiter">:</span> <span class="classifier">{array-like, sparse matrix}, shape = [n_samples, n_features]</span></dt>
+<dt><strong>X</strong> <span class="classifier-delimiter">:</span> <span class="classifier">array_like or sparse matrix, shape (n_samples, n_features)</span></dt>
 <dd><p class="first last">Samples.</p>
 </dd>
 </dl>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
-<dt><strong>C</strong> <span class="classifier-delimiter">:</span> <span class="classifier">array, shape = [n_samples]</span></dt>
+<dt><strong>C</strong> <span class="classifier-delimiter">:</span> <span class="classifier">array, shape [n_samples]</span></dt>
 <dd><p class="first last">Predicted class label per sample.</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="vowpalwabbit.sklearn_vw.VWClassifier.predict_proba">
+<code class="descname">predict_proba</code><span class="sig-paren">(</span><em>self</em>, <em>X</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VWClassifier.predict_proba" title="Permalink to this definition">¶</a></dt>
+<dd><p>Predict probabilities for samples</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>X</strong> <span class="classifier-delimiter">:</span> <span class="classifier">{array-like, sparse matrix}, shape = (n_samples, n_features)</span></dt>
+<dd><p class="first last">Samples.</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>T</strong> <span class="classifier-delimiter">:</span> <span class="classifier">array-like of shape (n_samples, n_classes)</span></dt>
+<dd><p class="first last">Returns the probability of the sample for each class in the model,
+where classes are ordered as they are in <code class="docutils literal notranslate"><span class="pre">self.classes_</span></code>.</p>
 </dd>
 </dl>
 </td>
@@ -789,9 +1424,26 @@ class would be predicted.</p>
 
 <dl class="class">
 <dt id="vowpalwabbit.sklearn_vw.VWMultiClassifier">
-<em class="property">class </em><code class="descclassname">vowpalwabbit.sklearn_vw.</code><code class="descname">VWMultiClassifier</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VWMultiClassifier" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">sklearn.base.ClassifierMixin</span></code>, <a class="reference internal" href="#vowpalwabbit.sklearn_vw.VW" title="vowpalwabbit.sklearn_vw.VW"><code class="xref py py-class docutils literal notranslate"><span class="pre">vowpalwabbit.sklearn_vw.VW</span></code></a></p>
-<p>Vowpal Wabbit MultiClassifier model</p>
+<em class="property">class </em><code class="descclassname">vowpalwabbit.sklearn_vw.</code><code class="descname">VWMultiClassifier</code><span class="sig-paren">(</span><em>probabilities=True</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VWMultiClassifier" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#vowpalwabbit.sklearn_vw.VWClassifier" title="vowpalwabbit.sklearn_vw.VWClassifier"><code class="xref py py-class docutils literal notranslate"><span class="pre">vowpalwabbit.sklearn_vw.VWClassifier</span></code></a></p>
+<p>Vowpal Wabbit MultiClassifier model
+Note - We are assuming the VW.predict returns probabilities, setting probabilities=False will break this assumption</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Attributes:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>classes_</strong> <span class="classifier-delimiter">:</span> <span class="classifier">np.array</span></dt>
+<dd><p class="first last">class labels</p>
+</dd>
+<dt><strong>estimator_: dict</strong></dt>
+<dd><p class="first last">type of estimator to use [csoaa, ect, oaa, wap] and number of classes</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
 <p class="rubric">Methods</p>
 <table border="1" class="longtable docutils">
 <colgroup>
@@ -799,8 +1451,14 @@ class would be predicted.</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit</span></code>(self,&nbsp;X[,&nbsp;y,&nbsp;sample_weight])</td>
-<td>Fit the model according to the given training data</td>
+<tr class="row-odd"><td><a class="reference internal" href="#vowpalwabbit.sklearn_vw.VWMultiClassifier.decision_function" title="vowpalwabbit.sklearn_vw.VWMultiClassifier.decision_function"><code class="xref py py-obj docutils literal notranslate"><span class="pre">decision_function</span></code></a>(self,&nbsp;X)</td>
+<td>Predict confidence scores for samples.</td>
+</tr>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">densify</span></code>(self)</td>
+<td>Convert coefficient matrix to dense array format.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#vowpalwabbit.sklearn_vw.VWMultiClassifier.fit" title="vowpalwabbit.sklearn_vw.VWMultiClassifier.fit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit</span></code></a>(self[,&nbsp;X,&nbsp;y,&nbsp;sample_weight])</td>
+<td>Fit the model according to the given training data.</td>
 </tr>
 <tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_coefs</span></code>(self)</td>
 <td>Returns coefficient weights as ordered sparse matrix</td>
@@ -809,77 +1467,549 @@ class would be predicted.</p>
 <td>Returns intercept weight for model</td>
 </tr>
 <tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_params</span></code>(self[,&nbsp;deep])</td>
-<td>This returns the set of vw and estimator parameters currently in use</td>
+<td>This returns the full set of vw and estimator parameters currently in use</td>
 </tr>
 <tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_vw</span></code>(self)</td>
-<td>Factory to create a vw instance on demand</td>
+<td>Get the vw instance</td>
 </tr>
 <tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">load</span></code>(self,&nbsp;filename)</td>
 <td>Load model from file</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#vowpalwabbit.sklearn_vw.VWMultiClassifier.predict" title="vowpalwabbit.sklearn_vw.VWMultiClassifier.predict"><code class="xref py py-obj docutils literal notranslate"><span class="pre">predict</span></code></a>(self,&nbsp;X)</td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">predict</span></code>(self,&nbsp;X)</td>
 <td>Predict class labels for samples in X.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#vowpalwabbit.sklearn_vw.VWMultiClassifier.predict_proba" title="vowpalwabbit.sklearn_vw.VWMultiClassifier.predict_proba"><code class="xref py py-obj docutils literal notranslate"><span class="pre">predict_proba</span></code></a>(self,&nbsp;X)</td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">predict_log_proba</span></code>(self,&nbsp;X)</td>
+<td>Log of probability estimates.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#vowpalwabbit.sklearn_vw.VWMultiClassifier.predict_proba" title="vowpalwabbit.sklearn_vw.VWMultiClassifier.predict_proba"><code class="xref py py-obj docutils literal notranslate"><span class="pre">predict_proba</span></code></a>(self,&nbsp;X)</td>
 <td>Predict probabilities for each class.</td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">save</span></code>(self,&nbsp;filename)</td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">save</span></code>(self,&nbsp;filename)</td>
 <td>Save model to file</td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">score</span></code>(self,&nbsp;X,&nbsp;y[,&nbsp;sample_weight])</td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">score</span></code>(self,&nbsp;X,&nbsp;y[,&nbsp;sample_weight])</td>
 <td>Returns the mean accuracy on the given test data and labels.</td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_coefs</span></code>(self,&nbsp;coefs)</td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_coefs</span></code>(self,&nbsp;coefs)</td>
 <td>Sets coefficients weights from ordered sparse matrix</td>
 </tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_params</span></code>(self,&nbsp;\*\*params)</td>
-<td>This destroys and recreates the Vowpal Wabbit model with updated parameters</td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_params</span></code>(self,&nbsp;\*\*kwargs)</td>
+<td>This destroys and recreates the Vowpal Wabbit model with updated parameters any parameters not provided will remain as they are currently</td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">transform</span></code>(self,&nbsp;X[,&nbsp;y])</td>
-<td>Transform does nothing by default besides closing the model. Transform is required for any estimator</td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">sparsify</span></code>(self)</td>
+<td>Convert coefficient matrix to sparse format.</td>
 </tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="vowpalwabbit.sklearn_vw.VWMultiClassifier.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>self</em>, <em>**params</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VWMultiClassifier.__init__" title="Permalink to this definition">¶</a></dt>
-<dd><p>x.__init__(…) initializes x; see help(type(x)) for signature</p>
-</dd></dl>
-
-<dl class="method">
-<dt id="vowpalwabbit.sklearn_vw.VWMultiClassifier.predict">
-<code class="descname">predict</code><span class="sig-paren">(</span><em>self</em>, <em>X</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VWMultiClassifier.predict" title="Permalink to this definition">¶</a></dt>
-<dd><p>Predict class labels for samples in X.</p>
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>self</em>, <em>probabilities=True</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VWMultiClassifier.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>VW model constructor, exposing all supported parameters to keep sklearn happy</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
-<dt><strong>X</strong> <span class="classifier-delimiter">:</span> <span class="classifier">{array-like, sparse matrix}, shape = [n_samples, n_features]</span></dt>
+<dt><strong>Estimator options</strong></dt>
+<dd><dl class="first docutils">
+<dt>convert_to_vw <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">flag to convert X input to vw format</p>
+</dd>
+<dt>convert_labels <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">Convert labels of the form [0,1] to [-1,1]</p>
+</dd>
+</dl>
+<p>VW options</p>
+<dl class="docutils">
+<dt>ring_size <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">size of example ring</p>
+</dd>
+<dt>strict_parse <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">throw on malformed examples</p>
+</dd>
+</dl>
+<p>Update options</p>
+<dl class="docutils">
+<dt>learning_rate,l <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">Set learning rate</p>
+</dd>
+<dt>power_t <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">t power value</p>
+</dd>
+<dt>decay_learning_rate <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">Set Decay factor for learning_rate between passes</p>
+</dd>
+<dt>initial_t <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">initial t value</p>
+</dd>
+<dt>feature_mask <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Use existing regressor to determine which parameters may be updated.
+If no initial_regressor given, also used for initial weights.</p>
+</dd>
+</dl>
+<p>Weight options</p>
+<dl class="docutils">
+<dt>initial_regressor,i <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Initial regressor(s)</p>
+</dd>
+<dt>initial_weight <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">Set all weights to an initial value of arg.</p>
+</dd>
+<dt>random_weights <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">make initial weights random</p>
+</dd>
+<dt>normal_weights <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">make initial weights normal</p>
+</dd>
+<dt>truncated_normal_weights <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">make initial weights truncated normal</p>
+</dd>
+<dt>sparse_weights <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">Use a sparse datastructure for weights</p>
+</dd>
+<dt>input_feature_regularizer <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Per feature regularization input file</p>
+</dd>
+</dl>
+<p>Diagnostic options</p>
+<dl class="docutils">
+<dt>quiet <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">Don’t output disgnostics and progress updates</p>
+</dd>
+</dl>
+<p>Randomization options</p>
+<dl class="docutils">
+<dt>random_seed <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dd><p class="first last">seed random number generator</p>
+</dd>
+</dl>
+<p>Feature options</p>
+<dl class="docutils">
+<dt>hash <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">how to hash the features. Available options: strings, all</p>
+</dd>
+<dt>hash_seed <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">seed for hash function</p>
+</dd>
+<dt>ignore <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">ignore namespaces beginning with character &lt;arg&gt;</p>
+</dd>
+<dt>ignore_linear <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">ignore namespaces beginning with character &lt;arg&gt; for linear terms only</p>
+</dd>
+<dt>keep <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">keep namespaces beginning with character &lt;arg&gt;</p>
+</dd>
+<dt>redefine <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Redefine namespaces beginning with characters of string S as namespace N. &lt;arg&gt; shall be in
+form ‘N:=S’ where := is operator. Empty N or S are treated as default namespace.
+Use ‘:’ as a wildcard in S.</p>
+</dd>
+<dt>bit_precision,b <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dd><p class="first last">number of bits in the feature table</p>
+</dd>
+<dt>noconstant <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">Don’t add a constant feature</p>
+</dd>
+<dt>constant,C <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">Set initial value of constant</p>
+</dd>
+<dt>ngram <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Generate N grams. To generate N grams for a single namespace ‘foo’, arg should be fN.</p>
+</dd>
+<dt>skips <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Generate skips in N grams. This in conjunction with the ngram tag can be used to generate
+generalized n-skip-k-gram. To generate n-skips for a single namespace ‘foo’, arg should be fN.</p>
+</dd>
+<dt>feature_limit <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">limit to N features. To apply to a single namespace ‘foo’, arg should be fN</p>
+</dd>
+<dt>affix <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">generate prefixes/suffixes of features; argument ‘+2a,-3b,+1’ means generate 2-char prefixes for
+namespace a, 3-char suffixes for b and 1 char prefixes for default namespace</p>
+</dd>
+<dt>spelling <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">compute spelling features for a give namespace (use ‘_’ for default namespace)</p>
+</dd>
+<dt>dictionary <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">read a dictionary for additional features (arg either ‘x:file’ or just ‘file’)</p>
+</dd>
+<dt>dictionary_path <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">look in this directory for dictionaries; defaults to current directory or env{PATH}</p>
+</dd>
+<dt>interactions <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Create feature interactions of any level between namespaces.</p>
+</dd>
+<dt>permutations <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">Use permutations instead of combinations for feature interactions of same namespace.</p>
+</dd>
+<dt>leave_duplicate_interactions <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">Don’t remove interactions with duplicate combinations of namespaces. For
+ex. this is a duplicate: ‘-q ab -q ba’ and a lot more in ‘-q ::’.</p>
+</dd>
+<dt>quadratic,q <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Create and use quadratic features, q:: corresponds to a wildcard for all printable characters</p>
+</dd>
+<dt>cubic <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Create and use cubic features</p>
+</dd>
+</dl>
+<p>Example options</p>
+<dl class="docutils">
+<dt>testonly,t <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">Ignore label information and just test</p>
+</dd>
+<dt>holdout_off <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">no holdout data in multiple passes</p>
+</dd>
+<dt>holdout_period <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">holdout period for test only</p>
+</dd>
+<dt>holdout_after <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">holdout after n training examples</p>
+</dd>
+<dt>early_terminate <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">Specify the number of passes tolerated when holdout loss doesn’t
+decrease before early termination</p>
+</dd>
+<dt>passes <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">Number of Training Passes</p>
+</dd>
+<dt>initial_pass_length <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">initial number of examples per pass</p>
+</dd>
+<dt>examples <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">number of examples to parse</p>
+</dd>
+<dt>min_prediction <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">Smallest prediction to output</p>
+</dd>
+<dt>max_prediction <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">Largest prediction to output</p>
+</dd>
+<dt>sort_features <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">turn this on to disregard order in which features have been defined. This will lead to
+smaller cache sizes</p>
+</dd>
+<dt>loss_function <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">default_value(“squared”), “Specify the loss function to be used, uses squared by default.
+Currently available ones are squared, classic, hinge, logistic and quantile.</p>
+</dd>
+<dt>quantile_tau <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">Parameter tau associated with Quantile loss. Defaults to 0.5</p>
+</dd>
+<dt>l1 <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">l_1 lambda (L1 regularization)</p>
+</dd>
+<dt>l2 <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">l_2 lambda (L2 regularization)</p>
+</dd>
+<dt>no_bias_regularization <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">no bias in regularization</p>
+</dd>
+<dt>named_labels <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">use names for labels (multiclass, etc.) rather than integers, argument specified all
+possible labels, comma-sep, eg “–named_labels Noun,Verb,Adj,Punc”</p>
+</dd>
+</dl>
+<p>Output model</p>
+<dl class="last docutils">
+<dt>final_regressor,f <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Final regressor</p>
+</dd>
+<dt>readable_model <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Output human-readable final regressor with numeric features</p>
+</dd>
+<dt>invert_hash <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Output human-readable final regressor with feature names.  Computationally expensive.</p>
+</dd>
+<dt>save_resume <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">save extra state so learning can be resumed later with new data</p>
+</dd>
+<dt>preserve_performance_counters <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">reset performance counters when warmstarting</p>
+</dd>
+<dt>output_feature_regularizer_binary <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Per feature regularization output file</p>
+</dd>
+<dt>output_feature_regularizer_text <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Per feature regularization output file, in text</p>
+</dd>
+</dl>
+</dd>
+<dt><strong>Multiclass options</strong></dt>
+<dd><dl class="first docutils">
+<dt>oaa <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dd><p class="first last">Use one-against-all multiclass learning with labels</p>
+</dd>
+<dt>oaa_subsample <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">subsample this number of negative examples when learning</p>
+</dd>
+<dt>ect <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dd><p class="first last">Use error correcting tournament multiclass learning</p>
+</dd>
+<dt>csoaa <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dd><p class="first last">Use cost sensitive one-against-all multiclass learning</p>
+</dd>
+<dt>wap <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dd><p class="first last">Use weighted all pairs multiclass learning</p>
+</dd>
+<dt>probabilities <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">predict probabilities of all classes</p>
+</dd>
+</dl>
+<p>Neural Network options</p>
+<dl class="docutils">
+<dt>nn <span class="classifier-delimiter">:</span> <span class="classifier">integer</span></dt>
+<dd><p class="first last">Use a sigmoidal feed-forward neural network with N hidden units</p>
+</dd>
+<dt>inpass <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">Train or test sigmoidal feed-forward network with input pass-through</p>
+</dd>
+<dt>multitask <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">Share hidden layer across all reduced tasks</p>
+</dd>
+<dt>dropout <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">Train or test sigmoidal feed-forward network using dropout</p>
+</dd>
+<dt>meanfield <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">Train or test sigmoidal feed-forward network using mean field</p>
+</dd>
+</dl>
+<p>LBFGS and Conjugate Gradient options</p>
+<dl class="docutils">
+<dt>conjugate_gradient <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">use conjugate gradient based optimization</p>
+</dd>
+<dt>bgfs <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">use bfgs updates</p>
+</dd>
+<dt>hessian_on <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">use second derivative in line search</p>
+</dd>
+<dt>mem <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">memory in bfgs</p>
+</dd>
+<dt>termination <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">termination threshold</p>
+</dd>
+</dl>
+<p>Latent Dirichlet Allocation options</p>
+<dl class="docutils">
+<dt>lda <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">Run lda with &lt;int&gt; topics</p>
+</dd>
+<dt>lda_alpha <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">Prior on sparsity of per-document topic weights</p>
+</dd>
+<dt>lda_rho <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">Prior on sparsity of topic distributions</p>
+</dd>
+<dt>lda_D <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">Number of documents</p>
+</dd>
+<dt>lda_epsilon <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">Loop convergence threshold</p>
+</dd>
+<dt>minibatch <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">Minibatch size for LDA</p>
+</dd>
+</dl>
+<p>Stochastic Variance Reduced Gradient options</p>
+<dl class="docutils">
+<dt>svrg <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">Streaming Stochastic Variance Reduced Gradient</p>
+</dd>
+<dt>stage_size <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">Number of passes per SVRG stage</p>
+</dd>
+</dl>
+<p>Follow the Regularized Leader options</p>
+<dl class="docutils">
+<dt>ftrl <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">Run Follow the Proximal Regularized Leader</p>
+</dd>
+<dt>coin <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">Coin betting optimizer</p>
+</dd>
+<dt>pistol <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">PiSTOL: Parameter free STOchastic Learning</p>
+</dd>
+<dt>ftrl_alpha <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">Alpha parameter for FTRL optimization</p>
+</dd>
+<dt>ftrl_beta <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">Beta parameters for FTRL optimization</p>
+</dd>
+</dl>
+<p>Kernel SVM options</p>
+<dl class="docutils">
+<dt>ksvm <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">kernel svm</p>
+</dd>
+<dt>kernel <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">type of kernel (rbf or linear (default))</p>
+</dd>
+<dt>bandwidth <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">bandwidth of rbf kernel</p>
+</dd>
+<dt>degree <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">degree of poly kernel</p>
+</dd>
+</dl>
+<p>Gradient Descent options</p>
+<dl class="docutils">
+<dt>sgd <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">use regular stochastic gradient descent update</p>
+</dd>
+<dt>adaptive <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">use adaptive, individual learning rates</p>
+</dd>
+<dt>adax <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">use adaptive learning rates with x^2 instead of g^2x^2</p>
+</dd>
+<dt>invariant <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">use save/importance aware updates</p>
+</dd>
+<dt>normalized <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">use per feature normalized updates</p>
+</dd>
+</dl>
+<p>Scorer options</p>
+<dl class="docutils">
+<dt>link <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">Specify the link function: identity, logistic, glf1 or poisson</p>
+</dd>
+</dl>
+<p>Stagewise polynomial options:</p>
+<dl class="docutils">
+<dt>stage_poly <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">use stagewise polynomial feature learning</p>
+</dd>
+<dt>sched_exponent <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">exponent controlling quantity of included features</p>
+</dd>
+<dt>batch_sz <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">multiplier on batch size before including more features</p>
+</dd>
+<dt>batch_sz_no_doubling <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">batch_sz does not double</p>
+</dd>
+</dl>
+<p>Low Rank Quadratics options:</p>
+<dl class="docutils">
+<dt>lrq <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">use low rank quadratic features</p>
+</dd>
+<dt>lrqdropout <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">use dropout training for low rank quadratic features</p>
+</dd>
+<dt>lrqfa <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">use low rank quadratic features with field aware weights</p>
+</dd>
+</dl>
+<p>Input options</p>
+<dl class="last docutils">
+<dt>data,d <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">path to data file for fitting external to sklearn</p>
+</dd>
+<dt>cache,c <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">use a cache. default is &lt;data&gt;.cache</p>
+</dd>
+<dt>cache_file <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">path to cache file to use</p>
+</dd>
+<dt>json <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">enable JSON parsing</p>
+</dd>
+<dt>kill_cache, k <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd><p class="first last">do not reuse existing cache file, create a new one always</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>self</strong> <span class="classifier-delimiter">:</span> <span class="classifier">BaseEstimator</span></dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="vowpalwabbit.sklearn_vw.VWMultiClassifier.classes_">
+<code class="descname">classes_</code><em class="property"> = None</em><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VWMultiClassifier.classes_" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="vowpalwabbit.sklearn_vw.VWMultiClassifier.decision_function">
+<code class="descname">decision_function</code><span class="sig-paren">(</span><em>self</em>, <em>X</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VWMultiClassifier.decision_function" title="Permalink to this definition">¶</a></dt>
+<dd><p>Predict confidence scores for samples.
+The confidence score for a sample is the signed distance of that
+sample to the hyperplane.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>X</strong> <span class="classifier-delimiter">:</span> <span class="classifier">array_like or sparse matrix, shape (n_samples, n_features)</span></dt>
 <dd><p class="first last">Samples.</p>
 </dd>
 </dl>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
-<dt><strong>C</strong> <span class="classifier-delimiter">:</span> <span class="classifier">array, shape = [n_samples]</span></dt>
-<dd><p class="first last">Predicted class label per sample.</p>
+<dt>array, shape=(n_samples, n_classes)</dt>
+<dd><p class="first last">Confidence scores per (sample, class) combination.</p>
 </dd>
 </dl>
 </td>
 </tr>
 </tbody>
 </table>
-<p class="rubric">Examples</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mf">5.5</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">5.4</span><span class="p">,</span> <span class="mf">5.5</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mi">20</span><span class="p">,</span> <span class="o">-</span><span class="mi">20</span><span class="p">],</span>  <span class="p">[</span><span class="o">-</span><span class="mi">15</span><span class="p">,</span> <span class="o">-</span><span class="mi">20</span><span class="p">]</span> <span class="p">])</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">vowpalwabbit.sklearn_vw</span> <span class="kn">import</span> <span class="n">VWMultiClassifier</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">model</span> <span class="o">=</span> <span class="n">VWMultiClassifier</span><span class="p">(</span><span class="n">oaa</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">loss_function</span><span class="o">=</span><span class="s1">&#39;logistic&#39;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
-</pre></div>
-</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="vowpalwabbit.sklearn_vw.VWMultiClassifier.estimator_">
+<code class="descname">estimator_</code><em class="property"> = None</em><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VWMultiClassifier.estimator_" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="vowpalwabbit.sklearn_vw.VWMultiClassifier.fit">
+<code class="descname">fit</code><span class="sig-paren">(</span><em>self</em>, <em>X=None</em>, <em>y=None</em>, <em>sample_weight=None</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VWMultiClassifier.fit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fit the model according to the given training data.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>X</strong> <span class="classifier-delimiter">:</span> <span class="classifier">{array-like, sparse matrix} of shape (n_samples, n_features)</span></dt>
+<dd><p class="first last">Training vector, where n_samples is the number of samples and
+n_features is the number of features.</p>
+</dd>
+<dt><strong>y</strong> <span class="classifier-delimiter">:</span> <span class="classifier">array-like of shape (n_samples,)</span></dt>
+<dd><p class="first last">Target vector relative to X.</p>
+</dd>
+<dt><strong>sample_weight</strong> <span class="classifier-delimiter">:</span> <span class="classifier">array-like of shape (n_samples,) default=None</span></dt>
+<dd><p class="first last">Array of weights that are assigned to individual samples.
+If not provided, then each sample is given unit weight.</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt>self</dt>
+<dd><p class="first last">Fitted estimator.</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="method">
@@ -913,7 +2043,7 @@ class would be predicted.</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mf">5.5</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">5.4</span><span class="p">,</span> <span class="mf">5.5</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mi">20</span><span class="p">,</span> <span class="o">-</span><span class="mi">20</span><span class="p">],</span>  <span class="p">[</span><span class="o">-</span><span class="mi">15</span><span class="p">,</span> <span class="o">-</span><span class="mi">20</span><span class="p">]</span> <span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">vowpalwabbit.sklearn_vw</span> <span class="kn">import</span> <span class="n">VWMultiClassifier</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">model</span> <span class="o">=</span> <span class="n">VWMultiClassifier</span><span class="p">(</span><span class="n">oaa</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">loss_function</span><span class="o">=</span><span class="s1">&#39;logistic&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">model</span> <span class="o">=</span> <span class="n">VWMultiClassifier</span><span class="p">(</span><span class="n">oaa</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">loss_function</span><span class="o">=</span><span class="s1">&#39;logistic&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">model</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
 </pre></div>
@@ -924,9 +2054,21 @@ class would be predicted.</p>
 
 <dl class="class">
 <dt id="vowpalwabbit.sklearn_vw.VWRegressor">
-<em class="property">class </em><code class="descclassname">vowpalwabbit.sklearn_vw.</code><code class="descname">VWRegressor</code><span class="sig-paren">(</span><em>rank=None</em>, <em>lrq=None</em>, <em>lrqdropout=None</em>, <em>probabilities=None</em>, <em>random_seed=None</em>, <em>ring_size=None</em>, <em>convert_to_vw=None</em>, <em>bfgs=None</em>, <em>mem=None</em>, <em>ftrl=None</em>, <em>ftrl_alpha=None</em>, <em>ftrl_beta=None</em>, <em>learning_rate=None</em>, <em>l=None</em>, <em>power_t=None</em>, <em>decay_learning_rate=None</em>, <em>initial_t=None</em>, <em>feature_mask=None</em>, <em>initial_regressor=None</em>, <em>i=None</em>, <em>initial_weight=None</em>, <em>random_weights=None</em>, <em>input_feature_regularizer=None</em>, <em>audit=None</em>, <em>a=None</em>, <em>progress=None</em>, <em>P=None</em>, <em>quiet=None</em>, <em>data=None</em>, <em>d=None</em>, <em>cache=None</em>, <em>c=None</em>, <em>k=None</em>, <em>passes=None</em>, <em>no_stdin=None</em>, <em>hash=None</em>, <em>ignore=None</em>, <em>keep=None</em>, <em>redefine=None</em>, <em>bit_precision=None</em>, <em>b=None</em>, <em>noconstant=None</em>, <em>constant=None</em>, <em>C=None</em>, <em>ngram=None</em>, <em>skips=None</em>, <em>feature_limit=None</em>, <em>affix=None</em>, <em>spelling=None</em>, <em>dictionary=None</em>, <em>dictionary_path=None</em>, <em>interactions=None</em>, <em>permutations=None</em>, <em>leave_duplicate_interactions=None</em>, <em>quadratic=None</em>, <em>q=None</em>, <em>cubic=None</em>, <em>testonly=None</em>, <em>t=None</em>, <em>min_prediction=None</em>, <em>max_prediction=None</em>, <em>sort_features=None</em>, <em>loss_function=None</em>, <em>link=None</em>, <em>quantile_tau=None</em>, <em>l1=None</em>, <em>l2=None</em>, <em>named_labels=None</em>, <em>final_regressor=None</em>, <em>f=None</em>, <em>readable_model=None</em>, <em>invert_hash=None</em>, <em>save_resume=None</em>, <em>output_feature_regularizer_binary=None</em>, <em>output_feature_regularizer_text=None</em>, <em>oaa=None</em>, <em>ect=None</em>, <em>csoaa=None</em>, <em>wap=None</em>, <em>nn=None</em>, <em>dropout=None</em>, <em>inpass=None</em>, <em>meanfield=None</em>, <em>multitask=None</em>, <em>convert_labels=False</em>, <em>sgd=False</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VWRegressor" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">vowpalwabbit.sklearn_vw.</code><code class="descname">VWRegressor</code><span class="sig-paren">(</span><em>convert_to_vw=True</em>, <em>convert_labels=True</em>, <em>ring_size=None</em>, <em>strict_parse=None</em>, <em>learning_rate=None</em>, <em>l=None</em>, <em>power_t=None</em>, <em>decay_learning_rate=None</em>, <em>initial_t=None</em>, <em>feature_mask=None</em>, <em>initial_regressor=None</em>, <em>i=None</em>, <em>initial_weight=None</em>, <em>random_weights=None</em>, <em>normal_weights=None</em>, <em>truncated_normal_weights=None</em>, <em>sparse_weights=None</em>, <em>input_feature_regularizer=None</em>, <em>quiet=True</em>, <em>random_seed=None</em>, <em>hash=None</em>, <em>hash_seed=None</em>, <em>ignore=None</em>, <em>ignore_linear=None</em>, <em>keep=None</em>, <em>redefine=None</em>, <em>bit_precision=None</em>, <em>b=None</em>, <em>noconstant=None</em>, <em>constant=None</em>, <em>C=None</em>, <em>ngram=None</em>, <em>skips=None</em>, <em>feature_limit=None</em>, <em>affix=None</em>, <em>spelling=None</em>, <em>dictionary=None</em>, <em>dictionary_path=None</em>, <em>interactions=None</em>, <em>permutations=None</em>, <em>leave_duplicate_interactions=None</em>, <em>quadratic=None</em>, <em>q=None</em>, <em>cubic=None</em>, <em>testonly=None</em>, <em>t=None</em>, <em>holdout_off=None</em>, <em>holdout_period=None</em>, <em>holdout_after=None</em>, <em>early_terminate=None</em>, <em>passes=1</em>, <em>initial_pass_length=None</em>, <em>examples=None</em>, <em>min_prediction=None</em>, <em>max_prediction=None</em>, <em>sort_features=None</em>, <em>loss_function=None</em>, <em>quantile_tau=None</em>, <em>l1=None</em>, <em>l2=None</em>, <em>no_bias_regularization=None</em>, <em>named_labels=None</em>, <em>final_regressor=None</em>, <em>f=None</em>, <em>readable_model=None</em>, <em>invert_hash=None</em>, <em>save_resume=None</em>, <em>preserve_performance_counters=None</em>, <em>output_feature_regularizer_binary=None</em>, <em>output_feature_regularizer_text=None</em>, <em>oaa=None</em>, <em>ect=None</em>, <em>csoaa=None</em>, <em>wap=None</em>, <em>probabilities=None</em>, <em>nn=None</em>, <em>inpass=None</em>, <em>multitask=None</em>, <em>dropout=None</em>, <em>meanfield=None</em>, <em>conjugate_gradient=None</em>, <em>bfgs=None</em>, <em>hessian_on=None</em>, <em>mem=None</em>, <em>termination=None</em>, <em>lda=None</em>, <em>lda_alpha=None</em>, <em>lda_rho=None</em>, <em>lda_D=None</em>, <em>lda_epsilon=None</em>, <em>minibatch=None</em>, <em>svrg=None</em>, <em>stage_size=None</em>, <em>ftrl=None</em>, <em>coin=None</em>, <em>pistol=None</em>, <em>ftrl_alpha=None</em>, <em>ftrl_beta=None</em>, <em>ksvm=None</em>, <em>kernel=None</em>, <em>bandwidth=None</em>, <em>degree=None</em>, <em>sgd=None</em>, <em>adaptive=None</em>, <em>invariant=None</em>, <em>normalized=None</em>, <em>link=None</em>, <em>stage_poly=None</em>, <em>sched_exponent=None</em>, <em>batch_sz=None</em>, <em>batch_sz_no_doubling=None</em>, <em>lrq=None</em>, <em>lrqdropout=None</em>, <em>lrqfa=None</em>, <em>data=None</em>, <em>d=None</em>, <em>cache=None</em>, <em>c=None</em>, <em>cache_file=None</em>, <em>json=None</em>, <em>kill_cache=None</em>, <em>k=None</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VWRegressor" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#vowpalwabbit.sklearn_vw.VW" title="vowpalwabbit.sklearn_vw.VW"><code class="xref py py-class docutils literal notranslate"><span class="pre">vowpalwabbit.sklearn_vw.VW</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">sklearn.base.RegressorMixin</span></code></p>
 <p>Vowpal Wabbit Regressor model</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Attributes:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>vw_</strong></dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
 <p class="rubric">Methods</p>
 <table border="1" class="longtable docutils">
 <colgroup>
@@ -934,7 +2076,7 @@ class would be predicted.</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit</span></code>(self,&nbsp;X[,&nbsp;y,&nbsp;sample_weight])</td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">fit</span></code>(self[,&nbsp;X,&nbsp;y,&nbsp;sample_weight])</td>
 <td>Fit the model according to the given training data</td>
 </tr>
 <tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_coefs</span></code>(self)</td>
@@ -944,10 +2086,10 @@ class would be predicted.</p>
 <td>Returns intercept weight for model</td>
 </tr>
 <tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_params</span></code>(self[,&nbsp;deep])</td>
-<td>This returns the set of vw and estimator parameters currently in use</td>
+<td>This returns the full set of vw and estimator parameters currently in use</td>
 </tr>
 <tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_vw</span></code>(self)</td>
-<td>Factory to create a vw instance on demand</td>
+<td>Get the vw instance</td>
 </tr>
 <tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">load</span></code>(self,&nbsp;filename)</td>
 <td>Load model from file</td>
@@ -964,11 +2106,8 @@ class would be predicted.</p>
 <tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_coefs</span></code>(self,&nbsp;coefs)</td>
 <td>Sets coefficients weights from ordered sparse matrix</td>
 </tr>
-<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_params</span></code>(self,&nbsp;\*\*params)</td>
-<td>This destroys and recreates the Vowpal Wabbit model with updated parameters</td>
-</tr>
-<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">transform</span></code>(self,&nbsp;X[,&nbsp;y])</td>
-<td>Transform does nothing by default besides closing the model. Transform is required for any estimator</td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_params</span></code>(self,&nbsp;\*\*kwargs)</td>
+<td>This destroys and recreates the Vowpal Wabbit model with updated parameters any parameters not provided will remain as they are currently</td>
 </tr>
 </tbody>
 </table>
