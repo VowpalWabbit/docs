@@ -118,10 +118,6 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8675fc7da9dba0213a1cd09b213d2df6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__buf_8h.html#a8675fc7da9dba0213a1cd09b213d2df6">isbinary</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;i)</td></tr>
-<tr class="separator:a8675fc7da9dba0213a1cd09b213d2df6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81561bb37d1949a8da248e596f45b44f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__buf_8h.html#a81561bb37d1949a8da248e596f45b44f">readto</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;i, char *&amp;pointer, char terminal)</td></tr>
-<tr class="separator:a81561bb37d1949a8da248e596f45b44f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10997ed2c5ac46124bc21fce2220cc65"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__buf_8h.html#a10997ed2c5ac46124bc21fce2220cc65">bin_read</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;i, char *data, size_t len, const char *read_message)</td></tr>
 <tr class="separator:a10997ed2c5ac46124bc21fce2220cc65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a341dd49d200b1fe081c7ce03bacabeba"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__buf_8h.html#a341dd49d200b1fe081c7ce03bacabeba">bin_write</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;o, const char *data, uint32_t len)</td></tr>
@@ -161,7 +157,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span>                                                                                        \</div><div class="line">  {                                                                                         \</div><div class="line">    msg &lt;&lt; str &lt;&lt; <span class="stringliteral">&quot; = &quot;</span> &lt;&lt; what &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;                                                     <a class="code" href="io__buf_8h.html#a317681947f2ac8ceda45d4b16e852225">\</a></div><div class="line"><a class="code" href="io__buf_8h.html#a317681947f2ac8ceda45d4b16e852225">    bin_text_read_write_fixed</a>(model_file, (<span class="keywordtype">char</span>*)&amp;what, <span class="keyword">sizeof</span>(what), <span class="stringliteral">&quot;&quot;</span>, read, msg, text); \</div><div class="line">  } <span class="keywordflow">while</span> (0);</div><div class="ttc" id="io__buf_8h_html_a317681947f2ac8ceda45d4b16e852225"><div class="ttname"><a href="io__buf_8h.html#a317681947f2ac8ceda45d4b16e852225">bin_text_read_write_fixed</a></div><div class="ttdeci">size_t bin_text_read_write_fixed(io_buf &amp;io, char *data, size_t len, const char *read_message, bool read, std::stringstream &amp;msg, bool text)</div><div class="ttdef"><b>Definition:</b> io_buf.h:294</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span>                                                                                        \</div><div class="line">  {                                                                                         \</div><div class="line">    msg &lt;&lt; str &lt;&lt; <span class="stringliteral">&quot; = &quot;</span> &lt;&lt; what &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;                                                     <a class="code" href="io__buf_8h.html#a317681947f2ac8ceda45d4b16e852225">\</a></div><div class="line"><a class="code" href="io__buf_8h.html#a317681947f2ac8ceda45d4b16e852225">    bin_text_read_write_fixed</a>(model_file, (<span class="keywordtype">char</span>*)&amp;what, <span class="keyword">sizeof</span>(what), <span class="stringliteral">&quot;&quot;</span>, read, msg, text); \</div><div class="line">  } <span class="keywordflow">while</span> (0);</div><div class="ttc" id="io__buf_8h_html_a317681947f2ac8ceda45d4b16e852225"><div class="ttname"><a href="io__buf_8h.html#a317681947f2ac8ceda45d4b16e852225">bin_text_read_write_fixed</a></div><div class="ttdeci">size_t bin_text_read_write_fixed(io_buf &amp;io, char *data, size_t len, const char *read_message, bool read, std::stringstream &amp;msg, bool text)</div><div class="ttdef"><b>Definition:</b> io_buf.h:285</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -194,7 +190,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">auto</span> mywhat = (what);                                                                         \</div><div class="line">  do                                                                                            \</div><div class="line">  {                                                                                             \</div><div class="line">    msg &lt;&lt; str &lt;&lt; <span class="stringliteral">&quot; = &quot;</span> &lt;&lt; mywhat &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;                                                       <a class="code" href="io__buf_8h.html#a317681947f2ac8ceda45d4b16e852225">\</a></div><div class="line"><a class="code" href="io__buf_8h.html#a317681947f2ac8ceda45d4b16e852225">    bin_text_read_write_fixed</a>(model_file, (<span class="keywordtype">char</span>*)&amp;mywhat, <span class="keyword">sizeof</span>(mywhat), <span class="stringliteral">&quot;&quot;</span>, read, msg, text); \</div><div class="line">  } <span class="keywordflow">while</span> (0);</div><div class="ttc" id="io__buf_8h_html_a317681947f2ac8ceda45d4b16e852225"><div class="ttname"><a href="io__buf_8h.html#a317681947f2ac8ceda45d4b16e852225">bin_text_read_write_fixed</a></div><div class="ttdeci">size_t bin_text_read_write_fixed(io_buf &amp;io, char *data, size_t len, const char *read_message, bool read, std::stringstream &amp;msg, bool text)</div><div class="ttdef"><b>Definition:</b> io_buf.h:294</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">auto</span> mywhat = (what);                                                                         \</div><div class="line">  do                                                                                            \</div><div class="line">  {                                                                                             \</div><div class="line">    msg &lt;&lt; str &lt;&lt; <span class="stringliteral">&quot; = &quot;</span> &lt;&lt; mywhat &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;                                                       <a class="code" href="io__buf_8h.html#a317681947f2ac8ceda45d4b16e852225">\</a></div><div class="line"><a class="code" href="io__buf_8h.html#a317681947f2ac8ceda45d4b16e852225">    bin_text_read_write_fixed</a>(model_file, (<span class="keywordtype">char</span>*)&amp;mywhat, <span class="keyword">sizeof</span>(mywhat), <span class="stringliteral">&quot;&quot;</span>, read, msg, text); \</div><div class="line">  } <span class="keywordflow">while</span> (0);</div><div class="ttc" id="io__buf_8h_html_a317681947f2ac8ceda45d4b16e852225"><div class="ttname"><a href="io__buf_8h.html#a317681947f2ac8ceda45d4b16e852225">bin_text_read_write_fixed</a></div><div class="ttdeci">size_t bin_text_read_write_fixed(io_buf &amp;io, char *data, size_t len, const char *read_message, bool read, std::stringstream &amp;msg, bool text)</div><div class="ttdef"><b>Definition:</b> io_buf.h:285</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -581,58 +577,10 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a8675fc7da9dba0213a1cd09b213d2df6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool isbinary </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classio__buf.html">io_buf</a> &amp;&#160;</td>
-          <td class="paramname"><em>i</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a81561bb37d1949a8da248e596f45b44f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t readto </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classio__buf.html">io_buf</a> &amp;&#160;</td>
-          <td class="paramname"><em>i</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&amp;&#160;</td>
-          <td class="paramname"><em>pointer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char&#160;</td>
-          <td class="paramname"><em>terminal</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 17 2020 20:23:44 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 24 2020 18:45:25 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

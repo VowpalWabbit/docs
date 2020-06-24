@@ -7,6 +7,7 @@ var searchData=
   ['uint_5fstate',['uint_state',['../structContext.html#ab453e55e5f20d7d553a57133d7f1ab03',1,'Context']]],
   ['uinttouintstate',['UIntToUIntState',['../classUIntToUIntState.html',1,'UIntToUIntState&lt; audit &gt;'],['../classUIntToUIntState.html#aedc066cbeeb13f470803d116c3b63547',1,'UIntToUIntState::UIntToUIntState()']]],
   ['unbounded',['unbounded',['../structVW_1_1distributionally__robust_1_1ChiSquared_1_1Duals.html#a6381b04e6c93bffcb8949003905db362',1,'VW::distributionally_robust::ChiSquared::Duals']]],
+  ['unflushed_5fbytes_5fcount',['unflushed_bytes_count',['../classio__buf.html#a0f7330a9e7cd3f457a210552c557a164',1,'io_buf']]],
   ['uniform_5fhash',['uniform_hash',['../hash_8h.html#ab895a18954442f288c97979158e4b0d1',1,'hash.h']]],
   ['uniform_5frandom_5fmerand48',['uniform_random_merand48',['../namespaceexploration.html#a181ae01106bcdd79234a1bf66d88d645',1,'exploration']]],
   ['unique_5fadd_5fsorted',['unique_add_sorted',['../structv__array.html#ae6f73dad46e8f35ac0b99c7bf4301841',1,'v_array']]],

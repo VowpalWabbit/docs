@@ -31,7 +31,7 @@ var searchData=
   ['is_5fprintable_5fnamespace',['is_printable_namespace',['../namespaceINTERACTIONS.html#ab689f2484c76a1ed43a9441fbb6e09a1',1,'INTERACTIONS']]],
   ['is_5fresettable',['is_resettable',['../structVW_1_1io_1_1reader.html#a77d54b993a8afba329b104d1fbbdf29f',1,'VW::io::reader']]],
   ['is_5fring_5fexample',['is_ring_example',['../namespaceVW.html#a4827136233605decf732d3920d848295',1,'VW']]],
-  ['isbinary',['isbinary',['../io__buf_8h.html#a8675fc7da9dba0213a1cd09b213d2df6',1,'io_buf.h']]],
+  ['isbinary',['isbinary',['../classio__buf.html#a1974dd5257eaa530030fc59cce0589be',1,'io_buf']]],
   ['isvalid',['isValid',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#a808e770995c7355b648a944b5fb730bd',1,'VW::distributionally_robust::ChiSquared']]],
   ['iterator',['iterator',['../classexample__predict_1_1iterator.html#a74c039311924caf58a5dfcb0af857bad',1,'example_predict::iterator']]]
 ];

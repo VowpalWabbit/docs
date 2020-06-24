@@ -88,7 +88,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classio__buf-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">io_buf Class Reference</div>  </div>
@@ -117,6 +116,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1db2b72b6bc6b5ae0cef6639281dea1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7379ae798daebe39d85669912413127b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio__buf.html#a7379ae798daebe39d85669912413127b">add_file</a> (std::unique_ptr&lt; <a class="el" href="structVW_1_1io_1_1writer.html">VW::io::writer</a> &gt; &amp;&amp;file)</td></tr>
 <tr class="separator:a7379ae798daebe39d85669912413127b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb6180d90b0e5dc158cc4a78e9ea9160"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio__buf.html#adb6180d90b0e5dc158cc4a78e9ea9160">reset_buffer</a> ()</td></tr>
+<tr class="separator:adb6180d90b0e5dc158cc4a78e9ea9160"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f7c3b58c7bf31c4a1c4af58912be523"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio__buf.html#a8f7c3b58c7bf31c4a1c4af58912be523">reset_file</a> (<a class="el" href="structVW_1_1io_1_1reader.html">VW::io::reader</a> *f)</td></tr>
 <tr class="separator:a8f7c3b58c7bf31c4a1c4af58912be523"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae01bc5dd5cd7128faeff147ce34a1f36"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio__buf.html#ae01bc5dd5cd7128faeff147ce34a1f36">io_buf</a> ()</td></tr>
@@ -132,6 +133,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af5696664eb5ec6a526cdbaeb50eed00c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3508663785fd1367400ab4eb7ab33e9"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio__buf.html#ac3508663785fd1367400ab4eb7ab33e9">fill</a> (<a class="el" href="structVW_1_1io_1_1reader.html">VW::io::reader</a> *f)</td></tr>
 <tr class="separator:ac3508663785fd1367400ab4eb7ab33e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f7330a9e7cd3f457a210552c557a164"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio__buf.html#a0f7330a9e7cd3f457a210552c557a164">unflushed_bytes_count</a> ()</td></tr>
+<tr class="separator:a0f7330a9e7cd3f457a210552c557a164"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac61fc00776c65e38be5fc17365badac7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio__buf.html#ac61fc00776c65e38be5fc17365badac7">flush</a> ()</td></tr>
 <tr class="separator:ac61fc00776c65e38be5fc17365badac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bc9af0c82dce2e61945827f03c65a21"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio__buf.html#a9bc9af0c82dce2e61945827f03c65a21">close_file</a> ()</td></tr>
@@ -146,6 +149,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa66f1b7b868ba23259e277b352875249"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c0311f639b9062998f798bd0ce5da5f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio__buf.html#a3c0311f639b9062998f798bd0ce5da5f">bin_write_fixed</a> (const char *data, size_t len)</td></tr>
 <tr class="separator:a3c0311f639b9062998f798bd0ce5da5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1974dd5257eaa530030fc59cce0589be"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio__buf.html#a1974dd5257eaa530030fc59cce0589be">isbinary</a> ()</td></tr>
+<tr class="separator:a1974dd5257eaa530030fc59cce0589be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac82ca566a1b0ecf30fdb113e3e470652"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio__buf.html#ac82ca566a1b0ecf30fdb113e3e470652">readto</a> (char *&amp;pointer, char terminal)</td></tr>
+<tr class="separator:ac82ca566a1b0ecf30fdb113e3e470652"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fc5dfa66ea7487155fcafd57a45ec90"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio__buf.html#a6fc5dfa66ea7487155fcafd57a45ec90">copy_to</a> (void *dst, size_t max_size)</td></tr>
+<tr class="separator:a6fc5dfa66ea7487155fcafd57a45ec90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab24fb3dda9f92c52de4aa41197e1fd2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio__buf.html#ab24fb3dda9f92c52de4aa41197e1fd2b">replace_buffer</a> (char *buf, size_t capacity)</td></tr>
+<tr class="separator:ab24fb3dda9f92c52de4aa41197e1fd2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa79ba9e0c96d4ebde9ef98493c629806"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio__buf.html#aa79ba9e0c96d4ebde9ef98493c629806">buffer_start</a> ()</td></tr>
+<tr class="separator:aa79ba9e0c96d4ebde9ef98493c629806"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -158,29 +171,12 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aa7e4eb5a449cf93f86a5a0104cf9904f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structv__array.html">v_array</a>&lt; char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio__buf.html#aa7e4eb5a449cf93f86a5a0104cf9904f">space</a></td></tr>
-<tr class="separator:aa7e4eb5a449cf93f86a5a0104cf9904f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a233f4cfbeb7f346bfc232056d9093175"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr&lt; <a class="el" href="structVW_1_1io_1_1reader.html">VW::io::reader</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio__buf.html#a233f4cfbeb7f346bfc232056d9093175">input_files</a></td></tr>
 <tr class="separator:a233f4cfbeb7f346bfc232056d9093175"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec4a37f2605710d366533e107fdaf856"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr&lt; <a class="el" href="structVW_1_1io_1_1writer.html">VW::io::writer</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio__buf.html#aec4a37f2605710d366533e107fdaf856">output_files</a></td></tr>
 <tr class="separator:aec4a37f2605710d366533e107fdaf856"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f9d4ae0cffa446a5bf2c2d507f454e2"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio__buf.html#a4f9d4ae0cffa446a5bf2c2d507f454e2">count</a></td></tr>
-<tr class="separator:a4f9d4ae0cffa446a5bf2c2d507f454e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3bba98bc702c9de0e6d29ddd780a34f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio__buf.html#af3bba98bc702c9de0e6d29ddd780a34f">current</a></td></tr>
 <tr class="separator:af3bba98bc702c9de0e6d29ddd780a34f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab64203974cd28a08e711709bbab2b1b8"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio__buf.html#ab64203974cd28a08e711709bbab2b1b8">head</a></td></tr>
-<tr class="separator:ab64203974cd28a08e711709bbab2b1b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31d3ceba5db278fed121d7136ddcf450"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structv__array.html">v_array</a>&lt; char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio__buf.html#a31d3ceba5db278fed121d7136ddcf450">currentname</a></td></tr>
-<tr class="separator:a31d3ceba5db278fed121d7136ddcf450"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d0023947ce48a62560161f4315830ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structv__array.html">v_array</a>&lt; char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio__buf.html#a2d0023947ce48a62560161f4315830ac">finalname</a></td></tr>
-<tr class="separator:a2d0023947ce48a62560161f4315830ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a8422deb060c817b7cbddb76e09519a4c"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio__buf.html#a8422deb060c817b7cbddb76e09519a4c">READ</a> = 1</td></tr>
-<tr class="separator:a8422deb060c817b7cbddb76e09519a4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe462d81fbc98fb77336c156edfac89c"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio__buf.html#afe462d81fbc98fb77336c156edfac89c">WRITE</a> = 2</td></tr>
-<tr class="separator:afe462d81fbc98fb77336c156edfac89c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a0665faf40e41d643fc3aeda6915d7d9b"></a>
@@ -452,6 +448,29 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aa79ba9e0c96d4ebde9ef98493c629806"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* io_buf::buffer_start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a9bc9af0c82dce2e61945827f03c65a21"></a>
 <div class="memitem">
 <div class="memproto">
@@ -494,6 +513,32 @@ Static Public Attributes</h2></td></tr>
 <span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6fc5dfa66ea7487155fcafd57a45ec90"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t io_buf::copy_to </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>max_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>
@@ -564,6 +609,21 @@ Static Public Attributes</h2></td></tr>
 <span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1974dd5257eaa530030fc59cce0589be"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool io_buf::isbinary </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>
@@ -727,6 +787,81 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ac82ca566a1b0ecf30fdb113e3e470652"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t io_buf::readto </td>
+          <td>(</td>
+          <td class="paramtype">char *&amp;&#160;</td>
+          <td class="paramname"><em>pointer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>terminal</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab24fb3dda9f92c52de4aa41197e1fd2b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io_buf::replace_buffer </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>capacity</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adb6180d90b0e5dc158cc4a78e9ea9160"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void io_buf::reset_buffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a8f7c3b58c7bf31c4a1c4af58912be523"></a>
 <div class="memitem">
 <div class="memproto">
@@ -763,6 +898,29 @@ Static Public Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">char *&#160;</td>
           <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0f7330a9e7cd3f457a210552c557a164"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t io_buf::unflushed_bytes_count </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -880,60 +1038,12 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a4f9d4ae0cffa446a5bf2c2d507f454e2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t io_buf::count</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="af3bba98bc702c9de0e6d29ddd780a34f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">size_t io_buf::current</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a31d3ceba5db278fed121d7136ddcf450"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structv__array.html">v_array</a>&lt;char&gt; io_buf::currentname</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a2d0023947ce48a62560161f4315830ac"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structv__array.html">v_array</a>&lt;char&gt; io_buf::finalname</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ab64203974cd28a08e711709bbab2b1b8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char* io_buf::head</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -964,65 +1074,13 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a8422deb060c817b7cbddb76e09519a4c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr int io_buf::READ = 1</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aa7e4eb5a449cf93f86a5a0104cf9904f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structv__array.html">v_array</a>&lt;char&gt; io_buf::space</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="afe462d81fbc98fb77336c156edfac89c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr int io_buf::WRITE = 2</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>/__w/vowpal_wabbit/vowpal_wabbit/vowpalwabbit/<a class="el" href="io__buf_8h.html">io_buf.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 17 2020 20:23:44 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 24 2020 18:45:25 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

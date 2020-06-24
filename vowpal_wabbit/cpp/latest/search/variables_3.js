@@ -58,7 +58,7 @@ var searchData=
   ['cost',['cost',['../structBeam_1_1beam__element.html#a6d849514b67775933fc7c9a4e9c29975',1,'Beam::beam_element::cost()'],['../structCB_1_1cb__class.html#aba9eb88e830100c30273f7e008915d4d',1,'CB::cb_class::cost()'],['../structCCB_1_1conditional__contextual__bandit__outcome.html#a1c68cab923afb586d7bc6f7de7c7a98e',1,'CCB::conditional_contextual_bandit_outcome::cost()'],['../structVW_1_1slates_1_1label.html#ae02553fa48831fcbca891ed30e60fd29',1,'VW::slates::label::cost()']]],
   ['cost_5fsensitive',['cost_sensitive',['../structvw.html#af9e5eb2ecf3d580711945fc3f21edddf',1,'vw']]],
   ['costs',['costs',['../structCB_1_1label.html#a83515ee225c4673620f87be916afad26',1,'CB::label::costs()'],['../structCOST__SENSITIVE_1_1label.html#a0b3bd4e05a093705489822c812024fd6',1,'COST_SENSITIVE::label::costs()']]],
-  ['count',['count',['../structGD_1_1multipredict__info.html#a45e42ef1577c53c56eaad9fcd0d83cc0',1,'GD::multipredict_info::count()'],['../classio__buf.html#a4f9d4ae0cffa446a5bf2c2d507f454e2',1,'io_buf::count()']]],
+  ['count',['count',['../structGD_1_1multipredict__info.html#a45e42ef1577c53c56eaad9fcd0d83cc0',1,'GD::multipredict_info']]],
   ['counts',['counts',['../structparser.html#af91f2a3bc35a0f226486f23071eb020e',1,'parser']]],
   ['cs',['cs',['../unionpolylabel.html#aad89c13bd745b60a93a2d3d85f0619ed',1,'polylabel']]],
   ['cs_5flabel',['cs_label',['../namespaceCOST__SENSITIVE.html#a1ac8560c01e3044b4617da6d08d479eb',1,'COST_SENSITIVE']]],
@@ -69,5 +69,5 @@ var searchData=
   ['current_5fmaster',['current_master',['../structnode__socks.html#a8cad0619d240dff1372e89eedb2211ff',1,'node_socks']]],
   ['current_5fpass',['current_pass',['../structvw.html#a1f68b6894ba36213ed87a7e2a68d5d4c',1,'vw']]],
   ['current_5fstate',['current_state',['../structContext.html#a552c99987bee5a1506c47eed936466dd',1,'Context']]],
-  ['currentname',['currentname',['../classio__buf.html#a31d3ceba5db278fed121d7136ddcf450',1,'io_buf']]]
+  ['currentname',['currentname',['../structparser.html#a3ca43653ae1c9d497786cd80e1a0ca96',1,'parser']]]
 ];

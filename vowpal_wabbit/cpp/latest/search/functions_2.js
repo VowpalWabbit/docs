@@ -48,6 +48,7 @@ var searchData=
   ['copy_5farray_5fno_5fmemcpy',['copy_array_no_memcpy',['../v__array_8h.html#ac9d699e6eb09925ce08e4a5f7cf841cf',1,'v_array.h']]],
   ['copy_5fexample_5fdata',['copy_example_data',['../namespaceVW.html#ae2345bdd1ac4ff479d45e8e5927a8d2f',1,'VW::copy_example_data(bool audit, example *, example *, size_t, void(*copy_label)(void *, void *))'],['../namespaceVW.html#abaffe18149588bb2c8f42ef3da8aff59',1,'VW::copy_example_data(bool audit, example *, example *)']]],
   ['copy_5fexample_5fmetadata',['copy_example_metadata',['../namespaceVW.html#ac1e26643a8bdb85a4e27aeacde0f358c',1,'VW']]],
+  ['copy_5fto',['copy_to',['../classio__buf.html#a6fc5dfa66ea7487155fcafd57a45ec90',1,'io_buf']]],
   ['count_5flabel',['count_label',['../best__constant_8h.html#a9c2325f18b5809fcf84f7e8441fb7b94',1,'best_constant.h']]],
   ['create_5fbuffer_5fview',['create_buffer_view',['../namespaceVW_1_1io.html#a64fffb68e0d290a508476f0c8b160694',1,'VW::io']]],
   ['create_5fvector_5fwriter',['create_vector_writer',['../namespaceVW_1_1io.html#ae757f4f258f87ef5b1ceb012d3e356d2',1,'VW::io']]],

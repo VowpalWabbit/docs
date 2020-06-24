@@ -10,7 +10,7 @@ var searchData=
   ['filled',['filled',['../structExpReplay_1_1expreplay.html#afe9d61756339b6e4ef6c0e3ce4c5cf1e',1,'ExpReplay::expreplay']]],
   ['final_5fprediction_5fsink',['final_prediction_sink',['../structvw.html#aad1a1c3c0161656cfab07b5cd2b9ebd1',1,'vw']]],
   ['final_5fregressor_5fname',['final_regressor_name',['../structvw.html#a1f8e40a38100ab3e27ada930a9f1af63',1,'vw']]],
-  ['finalname',['finalname',['../classio__buf.html#a2d0023947ce48a62560161f4315830ac',1,'io_buf']]],
+  ['finalname',['finalname',['../structparser.html#a5a8f056721273d58c5032b0494b4ae8c',1,'parser']]],
   ['finish',['finish',['../structSearch_1_1search__task.html#aa4784eebfd6de0497b23e824056f9d0c',1,'Search::search_task::finish()'],['../structSearch_1_1search__metatask.html#a0f8ba98f5e0e01e04d66bf8824fb8016',1,'Search::search_metatask::finish()']]],
   ['finish_5fexample_5ff',['finish_example_f',['../structVW_1_1LEARNER_1_1finish__example__data.html#a137835aa833c6548f287fd102d7d639f',1,'VW::LEARNER::finish_example_data']]],
   ['finished_5fcount',['finished_count',['../structparser.html#ad53b04588524b349d94531588be79b1f',1,'parser']]],

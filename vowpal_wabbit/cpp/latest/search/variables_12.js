@@ -4,7 +4,6 @@ var searchData=
   ['random_5fseed',['random_seed',['../structvw.html#a1db4717c0085f702462064899d697078',1,'vw']]],
   ['random_5fweights',['random_weights',['../structvw.html#a05bba1784a89d36504b338811468359a',1,'vw']]],
   ['raw_5fprediction',['raw_prediction',['../structvw.html#aab2216e55d7634f08df219688f92ef68',1,'vw']]],
-  ['read',['READ',['../classio__buf.html#a8422deb060c817b7cbddb76e09519a4c',1,'io_buf']]],
   ['read_5fcached_5flabel',['read_cached_label',['../structlabel__parser.html#a827082cb837077af04cb281f8d264822',1,'label_parser']]],
   ['reader',['reader',['../structjson__parser.html#a7ccd95632770b12608291f09234000fb',1,'json_parser::reader()'],['../structparser.html#aac43955e9fbd3aee4e1e1c72a606334b',1,'parser::reader()']]],
   ['ready_5fparsed_5fexamples',['ready_parsed_examples',['../structparser.html#ae0ff2de4eeab90f8fff9fd2da5966ffc',1,'parser']]],

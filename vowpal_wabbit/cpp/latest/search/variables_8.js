@@ -6,7 +6,6 @@ var searchData=
   ['hash_5finv',['hash_inv',['../structvw.html#aba3e0772167ada6fdcf703d00e0c7ae6',1,'vw']]],
   ['hash_5fseed',['hash_seed',['../structvw.html#a96f11ba63ebbdb01c76b573bd6822cc5',1,'vw']]],
   ['hasher',['hasher',['../structparser.html#a55a42ce8e7ad6637f28bc40d95356b21',1,'parser']]],
-  ['head',['head',['../classio__buf.html#ab64203974cd28a08e711709bbab2b1b8',1,'io_buf']]],
   ['hessian_5fon',['hessian_on',['../structvw.html#aba81c9a5f90eda032abe3f2977a77698',1,'vw']]],
   ['history_5fnamespace',['history_namespace',['../constant_8h.html#a622e9192f051b3662837af6d3d0fbac8',1,'constant.h']]],
   ['holdout_5fafter',['holdout_after',['../structvw.html#a1caf02baa08f9e1e156615b98bbbd196',1,'vw']]],

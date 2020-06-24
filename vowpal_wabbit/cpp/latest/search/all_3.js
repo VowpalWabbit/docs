@@ -144,13 +144,14 @@ var searchData=
   ['copy_5fexample_5fdata',['copy_example_data',['../namespaceVW.html#ae2345bdd1ac4ff479d45e8e5927a8d2f',1,'VW::copy_example_data(bool audit, example *, example *, size_t, void(*copy_label)(void *, void *))'],['../namespaceVW.html#abaffe18149588bb2c8f42ef3da8aff59',1,'VW::copy_example_data(bool audit, example *, example *)']]],
   ['copy_5fexample_5fmetadata',['copy_example_metadata',['../namespaceVW.html#ac1e26643a8bdb85a4e27aeacde0f358c',1,'VW']]],
   ['copy_5flabel',['copy_label',['../structlabel__parser.html#a5ea152d70d58bd39c9d2d39719d12b44',1,'label_parser']]],
+  ['copy_5fto',['copy_to',['../classio__buf.html#a6fc5dfa66ea7487155fcafd57a45ec90',1,'io_buf']]],
   ['correctedexp',['correctedExp',['../correctedMath_8h.html#a9c796fdb44524ba9db47d99c594e3519',1,'correctedMath.h']]],
   ['correctedmath_2eh',['correctedMath.h',['../correctedMath_8h.html',1,'']]],
   ['cost',['cost',['../structBeam_1_1beam__element.html#a6d849514b67775933fc7c9a4e9c29975',1,'Beam::beam_element::cost()'],['../structCB_1_1cb__class.html#aba9eb88e830100c30273f7e008915d4d',1,'CB::cb_class::cost()'],['../structCCB_1_1conditional__contextual__bandit__outcome.html#a1c68cab923afb586d7bc6f7de7c7a98e',1,'CCB::conditional_contextual_bandit_outcome::cost()'],['../structVW_1_1slates_1_1label.html#ae02553fa48831fcbca891ed30e60fd29',1,'VW::slates::label::cost()']]],
   ['cost_5fsensitive',['COST_SENSITIVE',['../namespaceCOST__SENSITIVE.html',1,'COST_SENSITIVE'],['../structvw.html#af9e5eb2ecf3d580711945fc3f21edddf',1,'vw::cost_sensitive()']]],
   ['cost_5fsensitive_2eh',['cost_sensitive.h',['../cost__sensitive_8h.html',1,'']]],
   ['costs',['costs',['../structCB_1_1label.html#a83515ee225c4673620f87be916afad26',1,'CB::label::costs()'],['../structCOST__SENSITIVE_1_1label.html#a0b3bd4e05a093705489822c812024fd6',1,'COST_SENSITIVE::label::costs()']]],
-  ['count',['count',['../structGD_1_1multipredict__info.html#a45e42ef1577c53c56eaad9fcd0d83cc0',1,'GD::multipredict_info::count()'],['../classio__buf.html#a4f9d4ae0cffa446a5bf2c2d507f454e2',1,'io_buf::count()']]],
+  ['count',['count',['../structGD_1_1multipredict__info.html#a45e42ef1577c53c56eaad9fcd0d83cc0',1,'GD::multipredict_info']]],
   ['count_5flabel',['count_label',['../best__constant_8h.html#a9c2325f18b5809fcf84f7e8441fb7b94',1,'best_constant.h']]],
   ['counts',['counts',['../structparser.html#af91f2a3bc35a0f226486f23071eb020e',1,'parser']]],
   ['create_5fbuffer_5fview',['create_buffer_view',['../namespaceVW_1_1io.html#a64fffb68e0d290a508476f0c8b160694',1,'VW::io']]],
@@ -171,6 +172,6 @@ var searchData=
   ['current_5fmaster',['current_master',['../structnode__socks.html#a8cad0619d240dff1372e89eedb2211ff',1,'node_socks']]],
   ['current_5fpass',['current_pass',['../structvw.html#a1f68b6894ba36213ed87a7e2a68d5d4c',1,'vw']]],
   ['current_5fstate',['current_state',['../structContext.html#a552c99987bee5a1506c47eed936466dd',1,'Context::current_state()'],['../structVWReaderHandler.html#a815ced4a606d3f1e66176cf0bf156bcc',1,'VWReaderHandler::current_state()']]],
-  ['currentname',['currentname',['../classio__buf.html#a31d3ceba5db278fed121d7136ddcf450',1,'io_buf']]],
+  ['currentname',['currentname',['../structparser.html#a3ca43653ae1c9d497786cd80e1a0ca96',1,'parser']]],
   ['currentnamespace',['CurrentNamespace',['../structContext.html#a9d1381c22ba19a9ca58b7c0f615eaa3a',1,'Context']]]
 ];

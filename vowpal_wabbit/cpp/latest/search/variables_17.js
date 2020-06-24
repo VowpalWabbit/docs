@@ -13,6 +13,5 @@ var searchData=
   ['weights',['weights',['../structGD_1_1multipredict__info.html#ac1993819a02763fa326ed38197ae2ee4',1,'GD::multipredict_info::weights()'],['../structvw.html#a8c84a43b76ba98653da4377ea827a5b4',1,'vw::weights()'],['../structVW_1_1LEARNER_1_1learner.html#aa72097142563b721f185f8ae862ec29d',1,'VW::LEARNER::learner::weights()']]],
   ['words',['words',['../structparser.html#a8c5a3019734fa8f4ec4ca924eb4ce4a7',1,'parser']]],
   ['wpp',['wpp',['../structvw.html#ad9a07c1068f9c638b4ce548c048156f7',1,'vw']]],
-  ['write',['WRITE',['../classio__buf.html#afe462d81fbc98fb77336c156edfac89c',1,'io_buf']]],
   ['write_5fcache',['write_cache',['../structparser.html#a5f48db95a95c057288a00642d4cf9f14',1,'parser']]]
 ];

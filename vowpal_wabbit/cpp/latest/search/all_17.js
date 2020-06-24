@@ -24,7 +24,7 @@ var searchData=
   ['words',['words',['../structparser.html#a8c5a3019734fa8f4ec4ca924eb4ce4a7',1,'parser']]],
   ['wpp',['wpp',['../structvw.html#ad9a07c1068f9c638b4ce548c048156f7',1,'vw']]],
   ['wrap_5fsocket_5fdescriptor',['wrap_socket_descriptor',['../namespaceVW_1_1io.html#a9e41560d8a75f8e8da16232f5cb3c637',1,'VW::io']]],
-  ['write',['write',['../structVW_1_1io_1_1writer.html#a2af8e9f79503058aca22933edd085c82',1,'VW::io::writer::write()'],['../classio__buf.html#afe462d81fbc98fb77336c156edfac89c',1,'io_buf::WRITE()']]],
+  ['write',['write',['../structVW_1_1io_1_1writer.html#a2af8e9f79503058aca22933edd085c82',1,'VW::io::writer']]],
   ['write_5fcache',['write_cache',['../structparser.html#a5f48db95a95c057288a00642d4cf9f14',1,'parser']]],
   ['write_5ffile',['write_file',['../classio__buf.html#ab2b3de58d03310477d6a15764e81e7a1',1,'io_buf::write_file(VW::io::writer *f, void *buf, size_t nbytes)'],['../classio__buf.html#a7620ffb9af531d341956621792a9c37a',1,'io_buf::write_file(VW::io::writer *f, const void *buf, size_t nbytes)']]],
   ['writeit',['writeit',['../io__buf_8h.html#ac3dc74ce9e42a7cf9cb19834d4593d57',1,'io_buf.h']]],

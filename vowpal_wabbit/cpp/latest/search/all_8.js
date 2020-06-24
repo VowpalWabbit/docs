@@ -19,7 +19,7 @@ var searchData=
   ['hasher',['hasher',['../structparser.html#a55a42ce8e7ad6637f28bc40d95356b21',1,'parser']]],
   ['hashstring',['hashstring',['../hashstring_8h.html#ad0c610591e5f64e2d6e5753b6f4266f8',1,'hashstring.h']]],
   ['hashstring_2eh',['hashstring.h',['../hashstring_8h.html',1,'']]],
-  ['head',['head',['../structVW_1_1config_1_1typelist.html#a53badf648cb2451504736dc2a9e02d3e',1,'VW::config::typelist::head()'],['../classio__buf.html#ab64203974cd28a08e711709bbab2b1b8',1,'io_buf::head()']]],
+  ['head',['head',['../structVW_1_1config_1_1typelist.html#a53badf648cb2451504736dc2a9e02d3e',1,'VW::config::typelist']]],
   ['help',['help',['../structVW_1_1config_1_1typed__option.html#a797ef272d3c4284ded6eeb8af7aa9434',1,'VW::config::typed_option::help()'],['../structVW_1_1config_1_1options__i.html#a068859ff0a9f9fc8934e3f3215e62926',1,'VW::config::options_i::help()'],['../structVW_1_1config_1_1options__boost__po.html#a4718e4d9e1ad9bd919f1c1b1950cc252',1,'VW::config::options_boost_po::help()']]],
   ['hessian_5fon',['hessian_on',['../structvw.html#aba81c9a5f90eda032abe3f2977a77698',1,'vw']]],
   ['history_5fnamespace',['history_namespace',['../constant_8h.html#a622e9192f051b3662837af6d3d0fbac8',1,'constant.h']]],
