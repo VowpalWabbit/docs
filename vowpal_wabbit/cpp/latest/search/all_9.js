@@ -61,7 +61,7 @@ var searchData=
   ['is_5fcsoaa_5fldf',['is_csoaa_ldf',['../classvw__slim_1_1vw__predict.html#a9ba24efc479976aba999477520115862',1,'vw_slim::vw_predict']]],
   ['is_5ffrom_5fpool',['is_from_pool',['../structVW_1_1no__lock__object__pool.html#adfa3d69ce295d20c0bfc2807056bef51',1,'VW::no_lock_object_pool::is_from_pool()'],['../structVW_1_1object__pool.html#af171d9ebc0fc97a1b07a15b43cbbd00d',1,'VW::object_pool::is_from_pool()']]],
   ['is_5fldf',['is_ldf',['../structSearch_1_1search.html#a422ddacea62807980cd06c4e81bfd6e3',1,'Search::search::is_ldf()'],['../namespaceSearch.html#a0cf0cfef46a3b6962d91d7de1ae67796',1,'Search::IS_LDF()']]],
-  ['is_5fmore_5fthan_5ftwo_5flabels_5fobserved',['is_more_than_two_labels_observed',['../structshared__data.html#a959e85b4cdc13fa50902e95ab83cc7c9',1,'shared_data']]],
+  ['is_5fmore_5fthan_5ftwo_5flabels_5fobserved',['is_more_than_two_labels_observed',['../structshared__data.html#aace73283af2eb71308dd6eb0ee291fe1',1,'shared_data']]],
   ['is_5fmultiline',['is_multiline',['../structVW_1_1LEARNER_1_1learner.html#a6d534bda509f1a10b361a2d6d5136c97',1,'VW::LEARNER::learner']]],
   ['is_5fprintable_5fnamespace',['is_printable_namespace',['../namespaceINTERACTIONS.html#ab689f2484c76a1ed43a9441fbb6e09a1',1,'INTERACTIONS']]],
   ['is_5fresettable',['is_resettable',['../structVW_1_1io_1_1reader.html#a77d54b993a8afba329b104d1fbbdf29f',1,'VW::io::reader']]],

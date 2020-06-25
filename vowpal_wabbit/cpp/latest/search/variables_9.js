@@ -30,6 +30,6 @@ var searchData=
   ['invalid_5fvw_5fhandle',['INVALID_VW_HANDLE',['../vwdll_8h.html#ab1541f2a2f55dedf8783039be5ac92bd',1,'vwdll.h']]],
   ['invariant_5fupdates',['invariant_updates',['../structvw.html#a50963dd51a6db4d0c52cb643a24b6299',1,'vw']]],
   ['is_5fldf',['IS_LDF',['../namespaceSearch.html#a0cf0cfef46a3b6962d91d7de1ae67796',1,'Search']]],
-  ['is_5fmore_5fthan_5ftwo_5flabels_5fobserved',['is_more_than_two_labels_observed',['../structshared__data.html#a959e85b4cdc13fa50902e95ab83cc7c9',1,'shared_data']]],
+  ['is_5fmore_5fthan_5ftwo_5flabels_5fobserved',['is_more_than_two_labels_observed',['../structshared__data.html#aace73283af2eb71308dd6eb0ee291fe1',1,'shared_data']]],
   ['is_5fmultiline',['is_multiline',['../structVW_1_1LEARNER_1_1learner.html#a6d534bda509f1a10b361a2d6d5136c97',1,'VW::LEARNER::learner']]]
 ];

@@ -51,7 +51,7 @@ var searchData=
   ['finished_5fexamples',['finished_examples',['../structparser.html#a57c9f679c9e61169c79427eebbcc1f5a',1,'parser']]],
   ['first',['first',['../classsparse__parameters.html#a3718afe7252634a780881bd5ce3a6d0d',1,'sparse_parameters::first()'],['../classdense__parameters.html#af1fb04b3f82ba66dab975a49c0bb05a4',1,'dense_parameters::first()']]],
   ['first_5fderivative',['first_derivative',['../classloss__function.html#ae0863a09b3ae606c662d38f387a72a83',1,'loss_function']]],
-  ['first_5fobserved_5flabel',['first_observed_label',['../structshared__data.html#acdead5f80e8283d6600d35a837cd0b97',1,'shared_data']]],
+  ['first_5fobserved_5flabel',['first_observed_label',['../structshared__data.html#ad9928fa7af7f746db35a6803a17f452b',1,'shared_data']]],
   ['flat_5fexample',['flat_example',['../structflat__example.html',1,'']]],
   ['flatten_5fexample',['flatten_example',['../example_8h.html#a5b7c102894fabaed619cc86248551d9a',1,'example.h']]],
   ['flatten_5fsort_5fexample',['flatten_sort_example',['../example_8h.html#a5c55851c4a2c558e4d8f27ee17b5567c',1,'example.h']]],

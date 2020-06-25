@@ -47,7 +47,7 @@ var searchData=
   ['search_5ftask',['search_task',['../structSearch_1_1search__task.html',1,'Search']]],
   ['searchstr',['searchstr',['../structvw.html#af1db5f5b1b98a4aa2a8062b6d65d7d89',1,'vw']]],
   ['second_5fderivative',['second_derivative',['../classloss__function.html#a83379a81b39a5e48b0919616f4c1435d',1,'loss_function']]],
-  ['second_5fobserved_5flabel',['second_observed_label',['../structshared__data.html#aa8665db15ad6cea576c387bfc1236e4a',1,'shared_data']]],
+  ['second_5fobserved_5flabel',['second_observed_label',['../structshared__data.html#a7bc97afde96c2ca68808904f5c817dcc',1,'shared_data']]],
   ['seed_5fvw_5fmodel',['seed_vw_model',['../namespaceVW.html#a0ee50bbc01fd5f36615ac6d988c94da8',1,'VW']]],
   ['seeded',['seeded',['../classsparse__parameters.html#a0bcd82f1fcc037cf7227e6df012c8eeb',1,'sparse_parameters::seeded()'],['../classparameters.html#a9be19f8ae8444b962082b3aa693c1b2d',1,'parameters::seeded()'],['../classdense__parameters.html#ab9fd553c77187cf19372056b83e6ccf5',1,'dense_parameters::seeded()']]],
   ['self_5finteraction',['self_interaction',['../structINTERACTIONS_1_1feature__gen__data.html#aac086bebc701873e4bc2dd9e497a22d7',1,'INTERACTIONS::feature_gen_data']]],
