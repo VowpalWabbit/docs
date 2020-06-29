@@ -45,16 +45,18 @@
 <span id="vowpalwabbit-pyvw"></span><h1>vowpalwabbit.pyvw<a class="headerlink" href="#module-vowpalwabbit.pyvw" title="Permalink to this headline">¶</a></h1>
 <p>Python binding for pylibvw class</p>
 <dl class="class">
-<dt id="vowpalwabbit.pyvw.Col">
-<em class="property">class </em><code class="descclassname">vowpalwabbit.pyvw.</code><code class="descname">Col</code><span class="sig-paren">(</span><em>colname</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.Col" title="Permalink to this definition">¶</a></dt>
-<dd><p>Refer to a column of a dataframe.
-The methods of this class are used to:</p>
-<blockquote>
-<div><ul class="simple">
-<li>check if the column is in a specified dataframe</li>
-<li>extract the column from the specified dataframe</li>
-</ul>
-</div></blockquote>
+<dt id="vowpalwabbit.pyvw.AttributeDescriptor">
+<em class="property">class </em><code class="descclassname">vowpalwabbit.pyvw.</code><code class="descname">AttributeDescriptor</code><span class="sig-paren">(</span><em>attribute_name</em>, <em>expected_type</em>, <em>min_value=None</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.AttributeDescriptor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>This descriptor class enforces type checking and value checking for the
+attributes of the (managed) classes SimpleLabel, Feature, etc.</p>
+<p>If the attribute represents a column, no type or value checking are
+performed (since the dataframe and the subsequent column is not known yet)
+but the type and value requirements are passed to the _Col instance for
+future usage in the DFtoVW constructor.</p>
+<p>In the managed class, the optional presence of a column for an attribute is
+indicated using <a href="#id1"><span class="problematic" id="id2">*</span></a>_from_df attribute. The <a href="#id3"><span class="problematic" id="id4">*</span></a>_from_df attribute should be set
+before the actual attribute to take effect.</p>
 <p class="rubric">Methods</p>
 <table border="1" class="longtable docutils">
 <colgroup>
@@ -62,38 +64,38 @@ The methods of this class are used to:</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="#vowpalwabbit.pyvw.Col.col_exist" title="vowpalwabbit.pyvw.Col.col_exist"><code class="xref py py-obj docutils literal notranslate"><span class="pre">col_exist</span></code></a>(self,&nbsp;df)</td>
-<td>Check if the column ‘colname’ is in a dataframe ‘df’.</td>
+<tr class="row-odd"><td><a class="reference internal" href="#vowpalwabbit.pyvw.AttributeDescriptor.generate_error" title="vowpalwabbit.pyvw.AttributeDescriptor.generate_error"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generate_error</span></code></a>(self,&nbsp;instance,&nbsp;valid_type,&nbsp;…)</td>
+<td>Generate message error for the attribute</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#vowpalwabbit.pyvw.Col.get_col" title="vowpalwabbit.pyvw.Col.get_col"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_col</span></code></a>(self,&nbsp;df)</td>
-<td>Extract the column ‘colname’ from the dataframe ‘df’.</td>
+<tr class="row-even"><td><a class="reference internal" href="#vowpalwabbit.pyvw.AttributeDescriptor.initialize_col_type" title="vowpalwabbit.pyvw.AttributeDescriptor.initialize_col_type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">initialize_col_type</span></code></a>(self,&nbsp;instance,&nbsp;colname)</td>
+<td>Initialize the attribute as a _Col type</td>
 </tr>
 </tbody>
 </table>
 <dl class="method">
-<dt id="vowpalwabbit.pyvw.Col.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>self</em>, <em>colname</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.Col.__init__" title="Permalink to this definition">¶</a></dt>
-<dd><p>Initialize a Col object.</p>
+<dt id="vowpalwabbit.pyvw.AttributeDescriptor.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>self</em>, <em>attribute_name</em>, <em>expected_type</em>, <em>min_value=None</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.AttributeDescriptor.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize an AttributeDescriptor instance</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
-<dt><strong>colname</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
-<dd><p class="first last">The colname that refers to a column.</p>
+<dt><strong>attribute_name: str</strong></dt>
+<dd><p class="first last">The name of the attribute.</p>
+</dd>
+<dt><strong>expected_type: tuple</strong></dt>
+<dd><p class="first last">The expected type of the attribute.</p>
+</dd>
+<dt><strong>min_value: str/int/float</strong></dt>
+<dd><p class="first last">The minimum value of the attribute.</p>
 </dd>
 </dl>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first docutils">
-<dt><strong>self</strong> <span class="classifier-delimiter">:</span> <span class="classifier">Col</span></dt>
-<dd></dd>
-</dl>
-</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><dl class="first last docutils">
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><dl class="first last docutils">
 <dt>TypeError</dt>
-<dd><p class="first last">If attribute ‘colname’ is not a string.</p>
+<dd><p class="first last">If one of the arguments passed is not of valid type.</p>
 </dd>
 </dl>
 </td>
@@ -103,23 +105,32 @@ The methods of this class are used to:</p>
 </dd></dl>
 
 <dl class="method">
-<dt id="vowpalwabbit.pyvw.Col.col_exist">
-<code class="descname">col_exist</code><span class="sig-paren">(</span><em>self</em>, <em>df</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.Col.col_exist" title="Permalink to this definition">¶</a></dt>
-<dd><p>Check if the column ‘colname’ is in a dataframe ‘df’.</p>
+<dt id="vowpalwabbit.pyvw.AttributeDescriptor.generate_error">
+<code class="descname">generate_error</code><span class="sig-paren">(</span><em>self</em>, <em>instance</em>, <em>valid_type</em>, <em>valid_value</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.AttributeDescriptor.generate_error" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate message error for the attribute</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
-<dt><strong>df</strong> <span class="classifier-delimiter">:</span> <span class="classifier">pandas.DataFrame</span></dt>
-<dd><p class="first last">The dataframe in which to look for the column.</p>
+<dt><strong>instance: object</strong></dt>
+<dd><p class="first last">The managed class.</p>
+</dd>
+<dt><strong>valid_type: bool</strong></dt>
+<dd><p class="first last">True if the type if valid, False otherwise.</p>
+</dd>
+<dt><strong>valid_value: bool</strong></dt>
+<dd><p class="first last">True if the value range if valid, False otherwise.</p>
 </dd>
 </dl>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
-<dt>bool</dt>
-<dd><p class="first last">True if the column is in the dataframe, False otherwise.</p>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><dl class="first last docutils">
+<dt>TypeError</dt>
+<dd><p class="first last">If the type is not valid.</p>
+</dd>
+<dt>ValueRange</dt>
+<dd><p class="first last">If the value range is not valid.</p>
 </dd>
 </dl>
 </td>
@@ -129,30 +140,19 @@ The methods of this class are used to:</p>
 </dd></dl>
 
 <dl class="method">
-<dt id="vowpalwabbit.pyvw.Col.get_col">
-<code class="descname">get_col</code><span class="sig-paren">(</span><em>self</em>, <em>df</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.Col.get_col" title="Permalink to this definition">¶</a></dt>
-<dd><p>Extract the column ‘colname’ from the dataframe ‘df’.</p>
+<dt id="vowpalwabbit.pyvw.AttributeDescriptor.initialize_col_type">
+<code class="descname">initialize_col_type</code><span class="sig-paren">(</span><em>self</em>, <em>instance</em>, <em>colname</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.AttributeDescriptor.initialize_col_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize the attribute as a _Col type</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
-<dt><strong>df</strong> <span class="classifier-delimiter">:</span> <span class="classifier">pandas.DataFrame</span></dt>
-<dd><p class="first last">The dataframe from which to extract the column ‘colname’.</p>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>instance: object</strong></dt>
+<dd><p class="first last">The managed instance.</p>
 </dd>
-</dl>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first docutils">
-<dt><strong>out</strong> <span class="classifier-delimiter">:</span> <span class="classifier">pandas.Series</span></dt>
-<dd><p class="first last">The column extracted from the dataframe.</p>
-</dd>
-</dl>
-</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><dl class="first last docutils">
-<dt>KeyError</dt>
-<dd><p class="first last">If the column is not found in the dataframe.</p>
+<dt><strong>colname: str/int/float</strong></dt>
+<dd><p class="first last">The colname used for the _Col instance.</p>
 </dd>
 </dl>
 </td>
@@ -165,11 +165,11 @@ The methods of this class are used to:</p>
 
 <dl class="class">
 <dt id="vowpalwabbit.pyvw.DFtoVW">
-<em class="property">class </em><code class="descclassname">vowpalwabbit.pyvw.</code><code class="descname">DFtoVW</code><span class="sig-paren">(</span><em>df</em>, <em>namespaces</em>, <em>label=None</em>, <em>tag=None</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.DFtoVW" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">vowpalwabbit.pyvw.</code><code class="descname">DFtoVW</code><span class="sig-paren">(</span><em>df</em>, <em>features=None</em>, <em>namespaces=None</em>, <em>label=None</em>, <em>tag=None</em>, <em>tag_from_df=True</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.DFtoVW" title="Permalink to this definition">¶</a></dt>
 <dd><p>Convert a pandas DataFrame to a suitable VW format.
-Instances of this class are built with classes such as SimpleLabel, Feature
-or Namespace (that can themselves be built on Col object(s)).
-The class also provided a convenience constructor to initialize the class
+Instances of this class are built with classes such as SimpleLabel,
+Feature or Namespace.</p>
+<p>The class also provided a convenience constructor to initialize the class
 based on the target/features column names only.</p>
 <p class="rubric">Methods</p>
 <table border="1" class="longtable docutils">
@@ -178,38 +178,50 @@ based on the target/features column names only.</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="#vowpalwabbit.pyvw.DFtoVW.check_features_type" title="vowpalwabbit.pyvw.DFtoVW.check_features_type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">check_features_type</span></code></a>(self)</td>
-<td>Check if ‘features’ attribute of namespaces are of type Feature.</td>
+<tr class="row-odd"><td><a class="reference internal" href="#vowpalwabbit.pyvw.DFtoVW.check_columns_existence_in_df" title="vowpalwabbit.pyvw.DFtoVW.check_columns_existence_in_df"><code class="xref py py-obj docutils literal notranslate"><span class="pre">check_columns_existence_in_df</span></code></a>(self)</td>
+<td>Check if the columns are in the dataframe.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#vowpalwabbit.pyvw.DFtoVW.check_if_cols_exist" title="vowpalwabbit.pyvw.DFtoVW.check_if_cols_exist"><code class="xref py py-obj docutils literal notranslate"><span class="pre">check_if_cols_exist</span></code></a>(self)</td>
-<td>Check if the columns specified in the constructor are in the dataframe.</td>
+<tr class="row-even"><td><a class="reference internal" href="#vowpalwabbit.pyvw.DFtoVW.check_columns_type_and_values" title="vowpalwabbit.pyvw.DFtoVW.check_columns_type_and_values"><code class="xref py py-obj docutils literal notranslate"><span class="pre">check_columns_type_and_values</span></code></a>(self)</td>
+<td>Check columns type and values range</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#vowpalwabbit.pyvw.DFtoVW.check_features_type" title="vowpalwabbit.pyvw.DFtoVW.check_features_type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">check_features_type</span></code></a>(self,&nbsp;features)</td>
+<td>Check if the features argument is of type Feature.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#vowpalwabbit.pyvw.DFtoVW.check_instance_columns" title="vowpalwabbit.pyvw.DFtoVW.check_instance_columns"><code class="xref py py-obj docutils literal notranslate"><span class="pre">check_instance_columns</span></code></a>(self,&nbsp;instance)</td>
+<td>Check the columns type and values of a given instance.</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#vowpalwabbit.pyvw.DFtoVW.check_label_type" title="vowpalwabbit.pyvw.DFtoVW.check_label_type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">check_label_type</span></code></a>(self)</td>
-<td>Check label argument conformity.</td>
+<td>Check label type.</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#vowpalwabbit.pyvw.DFtoVW.check_namespaces_type" title="vowpalwabbit.pyvw.DFtoVW.check_namespaces_type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">check_namespaces_type</span></code></a>(self)</td>
 <td>Check if namespaces arguments are of type Namespace.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#vowpalwabbit.pyvw.DFtoVW.empty_col" title="vowpalwabbit.pyvw.DFtoVW.empty_col"><code class="xref py py-obj docutils literal notranslate"><span class="pre">empty_col</span></code></a>(self)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#vowpalwabbit.pyvw.DFtoVW.convert_df" title="vowpalwabbit.pyvw.DFtoVW.convert_df"><code class="xref py py-obj docutils literal notranslate"><span class="pre">convert_df</span></code></a>(self)</td>
+<td>Main method that converts the dataframe to the VW format.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#vowpalwabbit.pyvw.DFtoVW.empty_col" title="vowpalwabbit.pyvw.DFtoVW.empty_col"><code class="xref py py-obj docutils literal notranslate"><span class="pre">empty_col</span></code></a>(self)</td>
 <td>Create an empty string column.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#vowpalwabbit.pyvw.DFtoVW.from_colnames" title="vowpalwabbit.pyvw.DFtoVW.from_colnames"><code class="xref py py-obj docutils literal notranslate"><span class="pre">from_colnames</span></code></a>(cls,&nbsp;y,&nbsp;x,&nbsp;df)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#vowpalwabbit.pyvw.DFtoVW.from_colnames" title="vowpalwabbit.pyvw.DFtoVW.from_colnames"><code class="xref py py-obj docutils literal notranslate"><span class="pre">from_colnames</span></code></a>(cls,&nbsp;y,&nbsp;x,&nbsp;df[,&nbsp;label_type])</td>
 <td>Build DFtoVW instance using column names only.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#vowpalwabbit.pyvw.DFtoVW.process_df" title="vowpalwabbit.pyvw.DFtoVW.process_df"><code class="xref py py-obj docutils literal notranslate"><span class="pre">process_df</span></code></a>(self)</td>
-<td>Main method that converts the pandas dataframe to the VW format.</td>
+<tr class="row-even"><td><a class="reference internal" href="#vowpalwabbit.pyvw.DFtoVW.generate_missing_col_error" title="vowpalwabbit.pyvw.DFtoVW.generate_missing_col_error"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generate_missing_col_error</span></code></a>(self,&nbsp;…)</td>
+<td>Generate error if some columns are missing</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#vowpalwabbit.pyvw.DFtoVW.process_features" title="vowpalwabbit.pyvw.DFtoVW.process_features"><code class="xref py py-obj docutils literal notranslate"><span class="pre">process_features</span></code></a>(self,&nbsp;features)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#vowpalwabbit.pyvw.DFtoVW.process_features" title="vowpalwabbit.pyvw.DFtoVW.process_features"><code class="xref py py-obj docutils literal notranslate"><span class="pre">process_features</span></code></a>(self,&nbsp;features)</td>
 <td>Process the features (of a namespace) into a unique column.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#vowpalwabbit.pyvw.DFtoVW.process_label_and_tag" title="vowpalwabbit.pyvw.DFtoVW.process_label_and_tag"><code class="xref py py-obj docutils literal notranslate"><span class="pre">process_label_and_tag</span></code></a>(self)</td>
+<tr class="row-even"><td><a class="reference internal" href="#vowpalwabbit.pyvw.DFtoVW.process_label_and_tag" title="vowpalwabbit.pyvw.DFtoVW.process_label_and_tag"><code class="xref py py-obj docutils literal notranslate"><span class="pre">process_label_and_tag</span></code></a>(self)</td>
 <td>Process the label and tag into a unique column.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#vowpalwabbit.pyvw.DFtoVW.set_namespaces_or_features" title="vowpalwabbit.pyvw.DFtoVW.set_namespaces_or_features"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_namespaces_or_features</span></code></a>(self,&nbsp;namespaces,&nbsp;…)</td>
+<td>Set namespaces attributes</td>
 </tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="vowpalwabbit.pyvw.DFtoVW.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>self</em>, <em>df</em>, <em>namespaces</em>, <em>label=None</em>, <em>tag=None</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.DFtoVW.__init__" title="Permalink to this definition">¶</a></dt>
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>self</em>, <em>df</em>, <em>features=None</em>, <em>namespaces=None</em>, <em>label=None</em>, <em>tag=None</em>, <em>tag_from_df=True</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.DFtoVW.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>Initialize a DFtoVW instance.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -219,15 +231,22 @@ based on the target/features column names only.</p>
 <dt><strong>df</strong> <span class="classifier-delimiter">:</span> <span class="classifier">pandas.DataFrame</span></dt>
 <dd><p class="first last">The dataframe to convert to VW input format.</p>
 </dd>
-<dt><strong>namespaces</strong> <span class="classifier-delimiter">:</span> <span class="classifier">list of Namespace/Namespace</span></dt>
+<dt><strong>features: Feature/list of Feature</strong></dt>
+<dd><p class="first last">One or more Feature object(s).</p>
+</dd>
+<dt><strong>namespaces</strong> <span class="classifier-delimiter">:</span> <span class="classifier">Namespace/list of Namespace</span></dt>
 <dd><p class="first last">One or more Namespace object(s), each of being composed of one or
 more Feature object(s).</p>
 </dd>
 <dt><strong>label</strong> <span class="classifier-delimiter">:</span> <span class="classifier">SimpleLabel</span></dt>
-<dd><p class="first last">The label is the real numbers to be predicted for the examples.</p>
+<dd><p class="first last">The label.</p>
 </dd>
-<dt><strong>tag</strong> <span class="classifier-delimiter">:</span> <span class="classifier">Col or str</span></dt>
-<dd><p class="first last">The tag that is used as identifiers for the examples.</p>
+<dt><strong>tag</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str/int/float</span></dt>
+<dd><p class="first last">The tag (used as identifiers for examples).</p>
+</dd>
+<dt><strong>tag_from_df: bool (default: True)</strong></dt>
+<dd><p class="first last">True if the tag should refers to a column in the dataframe and
+False if the tag should be constant.</p>
 </dd>
 </dl>
 </td>
@@ -243,42 +262,68 @@ more Feature object(s).</p>
 <p class="rubric">Examples</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">vowpalwabbit.pyvw</span> <span class="kn">import</span> <span class="n">DFtoVW</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;y&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">3</span><span class="p">]})</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;y&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="s2">&quot;c&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">4</span><span class="p">]})</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">conv1</span> <span class="o">=</span> <span class="n">DFtoVW</span><span class="p">(</span><span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">,</span>
-<span class="go">                   label=SimpleLabel(Col(&quot;y&quot;)),</span>
-<span class="go">                   namespaces=Namespace(Feature(name=&quot;feat_a&quot;, value=Col(&quot;a&quot;))))</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">conv1</span><span class="o">.</span><span class="n">process_df</span><span class="p">()</span>
+<span class="go">                   label=SimpleLabel(&quot;y&quot;),</span>
+<span class="go">                   features=Feature(&quot;a&quot;))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">conv1</span><span class="o">.</span><span class="n">convert_df</span><span class="p">()</span>
 </pre></div>
 </div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">conv2</span> <span class="o">=</span> <span class="n">DFtoVW</span><span class="p">(</span><span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">,</span>
-<span class="go">                   label=SimpleLabel(Col(&quot;y&quot;)),</span>
-<span class="go">                   namespaces=Namespace(</span>
-<span class="go">                           name=&quot;DoubleIt&quot;, value=2,</span>
-<span class="go">                           features=Feature(name=&quot;feat_a&quot;, value=Col(&quot;a&quot;))))</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">conv2</span><span class="o">.</span><span class="n">process_df</span><span class="p">()</span>
+<span class="go">                   label=SimpleLabel(&quot;y&quot;),</span>
+<span class="go">                   features=[Feature(col) for col in [&quot;a&quot;, &quot;b&quot;]])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">conv2</span><span class="o">.</span><span class="n">convert_df</span><span class="p">()</span>
 </pre></div>
 </div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">conv3</span> <span class="o">=</span> <span class="n">DFtoVW</span><span class="p">(</span><span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">,</span>
-<span class="go">                   label=SimpleLabel(Col(&quot;y&quot;)),</span>
-<span class="go">                   namespaces=[Namespace(name=&quot;NS1&quot;, features=Feature(Col(&quot;a&quot;))),</span>
-<span class="go">                               Namespace(name=&quot;NS2&quot;, features=Feature(Col(&quot;b&quot;)))])</span>
-<span class="go">&gt;&gt;&gt;conv3.process_df()</span>
+<span class="go">                   label=SimpleLabel(&quot;y&quot;),</span>
+<span class="go">                   namespaces=Namespace(</span>
+<span class="go">                           name=&quot;DoubleIt&quot;, value=2,</span>
+<span class="go">                           features=Feature(value=&quot;a&quot;, name=&quot;feat_a&quot;)))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">conv3</span><span class="o">.</span><span class="n">convert_df</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">conv4</span> <span class="o">=</span> <span class="n">DFtoVW</span><span class="p">(</span><span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">,</span>
+<span class="go">                   label=SimpleLabel(&quot;y&quot;),</span>
+<span class="go">                   namespaces=[Namespace(name=&quot;NS1&quot;, features=[Feature(col) for col in [&quot;a&quot;, &quot;c&quot;]]),</span>
+<span class="go">                               Namespace(name=&quot;NS2&quot;, features=Feature(&quot;b&quot;))])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">conv4</span><span class="o">.</span><span class="n">convert_df</span><span class="p">()</span>
 </pre></div>
 </div>
 </dd></dl>
 
 <dl class="method">
+<dt id="vowpalwabbit.pyvw.DFtoVW.check_columns_existence_in_df">
+<code class="descname">check_columns_existence_in_df</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.DFtoVW.check_columns_existence_in_df" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if the columns are in the dataframe.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="vowpalwabbit.pyvw.DFtoVW.check_columns_type_and_values">
+<code class="descname">check_columns_type_and_values</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.DFtoVW.check_columns_type_and_values" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check columns type and values range</p>
+</dd></dl>
+
+<dl class="method">
 <dt id="vowpalwabbit.pyvw.DFtoVW.check_features_type">
-<code class="descname">check_features_type</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.DFtoVW.check_features_type" title="Permalink to this definition">¶</a></dt>
-<dd><p>Check if ‘features’ attribute of namespaces are of type Feature.</p>
+<code class="descname">check_features_type</code><span class="sig-paren">(</span><em>self</em>, <em>features</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.DFtoVW.check_features_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if the features argument is of type Feature.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><dl class="first last docutils">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>features: (list of) Feature,</strong></dt>
+<dd><p class="first last">The features argument to check.</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><dl class="first last docutils">
 <dt>TypeError</dt>
-<dd><p class="first last">If parameters any of the element in a ‘Namespace’ is not of type
-‘Feature’.</p>
+<dd><p class="first last">If the features is not a Feature of a list of Feature.</p>
 </dd>
 </dl>
 </td>
@@ -288,17 +333,24 @@ more Feature object(s).</p>
 </dd></dl>
 
 <dl class="method">
-<dt id="vowpalwabbit.pyvw.DFtoVW.check_if_cols_exist">
-<code class="descname">check_if_cols_exist</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.DFtoVW.check_if_cols_exist" title="Permalink to this definition">¶</a></dt>
-<dd><p>Check if the columns specified in the constructor are in the
-dataframe.</p>
+<dt id="vowpalwabbit.pyvw.DFtoVW.check_instance_columns">
+<code class="descname">check_instance_columns</code><span class="sig-paren">(</span><em>self</em>, <em>instance</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.DFtoVW.check_instance_columns" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check the columns type and values of a given instance.
+The method iterate through the attributes and look for _Col type
+attribute. Once found, the method use the _Col methods to check the
+type and the value range of the column. Also, the instance type in
+which the errors occur are prepend to the error message to be more
+explicit about where the error occurs in the formula.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><dl class="first last docutils">
+<dt>TypeError</dt>
+<dd><p class="first last">If a column is not of valid type.</p>
+</dd>
 <dt>ValueError</dt>
-<dd><p class="first last">If one or more columns are not in the dataframe.</p>
+<dd><p class="first last">If a column values are not in the valid range.</p>
 </dd>
 </dl>
 </td>
@@ -310,7 +362,7 @@ dataframe.</p>
 <dl class="method">
 <dt id="vowpalwabbit.pyvw.DFtoVW.check_label_type">
 <code class="descname">check_label_type</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.DFtoVW.check_label_type" title="Permalink to this definition">¶</a></dt>
-<dd><p>Check label argument conformity.</p>
+<dd><p>Check label type.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -336,7 +388,26 @@ dataframe.</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><dl class="first last docutils">
 <dt>TypeError</dt>
-<dd><p class="first last">If namespaces are not of type Namespace.</p>
+<dd><p class="first last">If namespaces are not of type Namespace or list of Namespace.</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="vowpalwabbit.pyvw.DFtoVW.convert_df">
+<code class="descname">convert_df</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.DFtoVW.convert_df" title="Permalink to this definition">¶</a></dt>
+<dd><p>Main method that converts the dataframe to the VW format.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt>list</dt>
+<dd><p class="first last">The list of parsed lines in VW format.</p>
 </dd>
 </dl>
 </td>
@@ -366,21 +437,24 @@ dataframe.</p>
 
 <dl class="classmethod">
 <dt id="vowpalwabbit.pyvw.DFtoVW.from_colnames">
-<em class="property">classmethod </em><code class="descname">from_colnames</code><span class="sig-paren">(</span><em>cls</em>, <em>y</em>, <em>x</em>, <em>df</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.DFtoVW.from_colnames" title="Permalink to this definition">¶</a></dt>
+<em class="property">classmethod </em><code class="descname">from_colnames</code><span class="sig-paren">(</span><em>cls</em>, <em>y</em>, <em>x</em>, <em>df</em>, <em>label_type='simple_label'</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.DFtoVW.from_colnames" title="Permalink to this definition">¶</a></dt>
 <dd><p>Build DFtoVW instance using column names only.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
-<dt><strong>y</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str/list</span></dt>
+<dt><strong>y</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str/list of str</span></dt>
 <dd><p class="first last">The column for the label.</p>
 </dd>
-<dt><strong>x</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str/list</span></dt>
+<dt><strong>x</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str/list of str</span></dt>
 <dd><p class="first last">The column(s) for the feature(s).</p>
 </dd>
 <dt><strong>df</strong> <span class="classifier-delimiter">:</span> <span class="classifier">pandas.DataFrame</span></dt>
 <dd><p class="first last">The dataframe used.</p>
+</dd>
+<dt><strong>label_type: str (default: ‘simple_label’)</strong></dt>
+<dd><p class="first last">The type of the label.</p>
 </dd>
 </dl>
 </td>
@@ -394,7 +468,10 @@ dataframe.</p>
 </tr>
 <tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><dl class="first last docutils">
 <dt>TypeError</dt>
-<dd><p class="first last">If argument label is a list of multiple strings</p>
+<dd><p class="first last">If argument label is not of valid type.</p>
+</dd>
+<dt>ValueError</dt>
+<dd><p class="first last">If argument label_type is not valid.</p>
 </dd>
 </dl>
 </td>
@@ -405,23 +482,28 @@ dataframe.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">vowpalwabbit.pyvw</span> <span class="kn">import</span> <span class="n">DFtoVW</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;y&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;x&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">2</span><span class="p">]})</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">conv</span> <span class="o">=</span> <span class="n">DFtoVW</span><span class="o">.</span><span class="n">from_colnames</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="s2">&quot;y&quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;x&quot;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">conv</span><span class="o">.</span><span class="n">process_df</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">conv</span> <span class="o">=</span> <span class="n">DFtoVW</span><span class="o">.</span><span class="n">from_colnames</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="s2">&quot;y&quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">conv</span><span class="o">.</span><span class="n">convert_df</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">df2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;y&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;x1&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="s2">&quot;x2&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="s2">&quot;x3&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">4</span><span class="p">]})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">conv2</span> <span class="o">=</span> <span class="n">DFtoVW</span><span class="o">.</span><span class="n">from_colnames</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="s2">&quot;y&quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="nb">set</span><span class="p">(</span><span class="n">df2</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span> <span class="o">-</span> <span class="nb">set</span><span class="p">(</span><span class="s2">&quot;y&quot;</span><span class="p">),</span> <span class="n">df</span><span class="o">=</span><span class="n">df2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">conv2</span><span class="o">.</span><span class="n">convert_df</span><span class="p">()</span>
 </pre></div>
 </div>
 </dd></dl>
 
 <dl class="method">
-<dt id="vowpalwabbit.pyvw.DFtoVW.process_df">
-<code class="descname">process_df</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.DFtoVW.process_df" title="Permalink to this definition">¶</a></dt>
-<dd><p>Main method that converts the pandas dataframe to the VW format.</p>
+<dt id="vowpalwabbit.pyvw.DFtoVW.generate_missing_col_error">
+<code class="descname">generate_missing_col_error</code><span class="sig-paren">(</span><em>self</em>, <em>absent_cols_dict</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.DFtoVW.generate_missing_col_error" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate error if some columns are missing</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
-<dt>list</dt>
-<dd><p class="first last">The list of parsed lines in VW format.</p>
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><dl class="first last docutils">
+<dt>ValueError</dt>
+<dd><p class="first last">If one or more columns are not in the dataframe.</p>
 </dd>
 </dl>
 </td>
@@ -475,12 +557,35 @@ dataframe.</p>
 </table>
 </dd></dl>
 
+<dl class="method">
+<dt id="vowpalwabbit.pyvw.DFtoVW.set_namespaces_or_features">
+<code class="descname">set_namespaces_or_features</code><span class="sig-paren">(</span><em>self</em>, <em>namespaces</em>, <em>features</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.DFtoVW.set_namespaces_or_features" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set namespaces attributes</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>namespaces: Namespace / list of Namespace objects</strong></dt>
+<dd><p class="first last">The namespaces argument.</p>
+</dd>
+<dt><strong>features: Feature / list of Feature objects</strong></dt>
+<dd><p class="first last">The features argument.</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
 </dd></dl>
 
 <dl class="class">
 <dt id="vowpalwabbit.pyvw.Feature">
-<em class="property">class </em><code class="descclassname">vowpalwabbit.pyvw.</code><code class="descname">Feature</code><span class="sig-paren">(</span><em>value</em>, <em>name=None</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.Feature" title="Permalink to this definition">¶</a></dt>
-<dd><p>A feature for the constructor of DFtoVW</p>
+<em class="property">class </em><code class="descclassname">vowpalwabbit.pyvw.</code><code class="descname">Feature</code><span class="sig-paren">(</span><em>value</em>, <em>name=None</em>, <em>value_from_df=True</em>, <em>name_from_df=False</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.Feature" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The feature type for the constructor of DFtoVW</p>
 <p class="rubric">Methods</p>
 <table border="1" class="longtable docutils">
 <colgroup>
@@ -495,18 +600,26 @@ dataframe.</p>
 </table>
 <dl class="method">
 <dt id="vowpalwabbit.pyvw.Feature.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>self</em>, <em>value</em>, <em>name=None</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.Feature.__init__" title="Permalink to this definition">¶</a></dt>
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>self</em>, <em>value</em>, <em>name=None</em>, <em>value_from_df=True</em>, <em>name_from_df=False</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.Feature.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>Initialize a Feature instance.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
-<dt><strong>value</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str/float/int or Col</span></dt>
-<dd><p class="first last">The value of the feature. Can be a literal or a Col object.</p>
+<dt><strong>value</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str/float/int</span></dt>
+<dd><p class="first last">The value of the feature.</p>
 </dd>
-<dt><strong>name</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str/float/int or Col, optional</span></dt>
-<dd><p class="first last">The name of the feature. Can be constant value or a Col object.</p>
+<dt><strong>name</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str/float/int, optional</span></dt>
+<dd><p class="first last">The name of the feature.</p>
+</dd>
+<dt><strong>value_from_df: bool (default: True)</strong></dt>
+<dd><p class="first last">True if the value refers to a column in the dataframe and False if
+the value is a constant.</p>
+</dd>
+<dt><strong>name_from_df: bool (default: False)</strong></dt>
+<dd><p class="first last">True if the name refers to a column in the dataframe and False if
+the name is a constant.</p>
 </dd>
 </dl>
 </td>
@@ -522,9 +635,18 @@ dataframe.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="vowpalwabbit.pyvw.Feature.expected_type">
-<code class="descname">expected_type</code><em class="property"> = {'name': (&lt;class vowpalwabbit.pyvw.Col&gt;, &lt;type 'str'&gt;, &lt;type 'float'&gt;, &lt;type 'int'&gt;), 'value': (&lt;class vowpalwabbit.pyvw.Col&gt;, &lt;type 'str'&gt;, &lt;type 'float'&gt;, &lt;type 'int'&gt;)}</em><a class="headerlink" href="#vowpalwabbit.pyvw.Feature.expected_type" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dt id="vowpalwabbit.pyvw.Feature.name">
+<code class="descname">name</code><a class="headerlink" href="#vowpalwabbit.pyvw.Feature.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>This descriptor class enforces type checking and value checking for the
+attributes of the (managed) classes SimpleLabel, Feature, etc.</p>
+<p>If the attribute represents a column, no type or value checking are
+performed (since the dataframe and the subsequent column is not known yet)
+but the type and value requirements are passed to the _Col instance for
+future usage in the DFtoVW constructor.</p>
+<p>In the managed class, the optional presence of a column for an attribute is
+indicated using <a href="#id5"><span class="problematic" id="id6">*</span></a>_from_df attribute. The <a href="#id7"><span class="problematic" id="id8">*</span></a>_from_df attribute should be set
+before the actual attribute to take effect.</p>
+</dd></dl>
 
 <dl class="method">
 <dt id="vowpalwabbit.pyvw.Feature.process">
@@ -536,7 +658,7 @@ dataframe.</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
 <dt><strong>df</strong> <span class="classifier-delimiter">:</span> <span class="classifier">pandas.DataFrame</span></dt>
-<dd><p class="first last">The dataframe from which to extract a column.</p>
+<dd><p class="first last">The dataframe from which to select the column(s).</p>
 </dd>
 </dl>
 </td>
@@ -552,12 +674,27 @@ dataframe.</p>
 </table>
 </dd></dl>
 
+<dl class="attribute">
+<dt id="vowpalwabbit.pyvw.Feature.value">
+<code class="descname">value</code><a class="headerlink" href="#vowpalwabbit.pyvw.Feature.value" title="Permalink to this definition">¶</a></dt>
+<dd><p>This descriptor class enforces type checking and value checking for the
+attributes of the (managed) classes SimpleLabel, Feature, etc.</p>
+<p>If the attribute represents a column, no type or value checking are
+performed (since the dataframe and the subsequent column is not known yet)
+but the type and value requirements are passed to the _Col instance for
+future usage in the DFtoVW constructor.</p>
+<p>In the managed class, the optional presence of a column for an attribute is
+indicated using <a href="#id9"><span class="problematic" id="id10">*</span></a>_from_df attribute. The <a href="#id11"><span class="problematic" id="id12">*</span></a>_from_df attribute should be set
+before the actual attribute to take effect.</p>
+</dd></dl>
+
 </dd></dl>
 
 <dl class="class">
 <dt id="vowpalwabbit.pyvw.Namespace">
 <em class="property">class </em><code class="descclassname">vowpalwabbit.pyvw.</code><code class="descname">Namespace</code><span class="sig-paren">(</span><em>features</em>, <em>name=None</em>, <em>value=None</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.Namespace" title="Permalink to this definition">¶</a></dt>
-<dd><p>A namespace for the constructor of DFtoVW.
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The namespace type for the constructor of DFtoVW.
 The Namespace is a container for Feature object(s), and thus must
 be composed of a Feature object or a list of Feature objects.</p>
 <p class="rubric">Methods</p>
@@ -567,7 +704,10 @@ be composed of a Feature object or a list of Feature objects.</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="#vowpalwabbit.pyvw.Namespace.process" title="vowpalwabbit.pyvw.Namespace.process"><code class="xref py py-obj docutils literal notranslate"><span class="pre">process</span></code></a>(self[,&nbsp;df])</td>
+<tr class="row-odd"><td><a class="reference internal" href="#vowpalwabbit.pyvw.Namespace.check_attributes_type" title="vowpalwabbit.pyvw.Namespace.check_attributes_type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">check_attributes_type</span></code></a>(self)</td>
+<td>Check if attributes are of valid type.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#vowpalwabbit.pyvw.Namespace.process" title="vowpalwabbit.pyvw.Namespace.process"><code class="xref py py-obj docutils literal notranslate"><span class="pre">process</span></code></a>(self)</td>
 <td>Returns the Namespace string representation</td>
 </tr>
 </tbody>
@@ -604,22 +744,41 @@ namespace.</p>
 </table>
 <p class="rubric">Examples</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">pyvw</span> <span class="kn">import</span> <span class="n">Namespace</span><span class="p">,</span> <span class="n">Feature</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">ns_one_feature</span> <span class="o">=</span> <span class="n">Namespace</span><span class="p">(</span><span class="n">Feature</span><span class="p">(</span><span class="n">Col</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">)))</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">ns_multi_features</span> <span class="o">=</span> <span class="n">Namespace</span><span class="p">([</span><span class="n">Feature</span><span class="p">(</span><span class="n">Col</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">)),</span> <span class="n">Feature</span><span class="p">(</span><span class="n">Col</span><span class="p">(</span><span class="s2">&quot;b&quot;</span><span class="p">))])</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">ns_one_feature_with_name</span> <span class="o">=</span> <span class="n">Namespace</span><span class="p">(</span><span class="n">Feature</span><span class="p">(</span><span class="n">Col</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">)),</span>
-<span class="go">                                         name=&quot;FirstNamespace&quot;)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ns_one_feature</span> <span class="o">=</span> <span class="n">Namespace</span><span class="p">(</span><span class="n">Feature</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ns_multi_features</span> <span class="o">=</span> <span class="n">Namespace</span><span class="p">([</span><span class="n">Feature</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">),</span> <span class="n">Feature</span><span class="p">(</span><span class="s2">&quot;b&quot;</span><span class="p">)])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ns_one_feature_with_name</span> <span class="o">=</span> <span class="n">Namespace</span><span class="p">(</span><span class="n">Feature</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">),</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;FirstNamespace&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ns_one_feature_with_name_and_value</span> <span class="o">=</span> <span class="n">Namespace</span><span class="p">(</span><span class="n">Feature</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">),</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;FirstNamespace&quot;</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 </pre></div>
 </div>
 </dd></dl>
 
+<dl class="method">
+<dt id="vowpalwabbit.pyvw.Namespace.check_attributes_type">
+<code class="descname">check_attributes_type</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.Namespace.check_attributes_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if attributes are of valid type.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><dl class="first last docutils">
+<dt>TypeError</dt>
+<dd><p class="first last">If one of the attribute is not valid.</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
 <dl class="attribute">
 <dt id="vowpalwabbit.pyvw.Namespace.expected_type">
-<code class="descname">expected_type</code><em class="property"> = {'features': (&lt;type 'list'&gt;, &lt;class vowpalwabbit.pyvw.Feature&gt;), 'name': (&lt;type 'str'&gt;, &lt;type 'int'&gt;, &lt;type 'float'&gt;), 'value': (&lt;type 'int'&gt;, &lt;type 'float'&gt;)}</em><a class="headerlink" href="#vowpalwabbit.pyvw.Namespace.expected_type" title="Permalink to this definition">¶</a></dt>
+<code class="descname">expected_type</code><em class="property"> = {'features': (&lt;class 'vowpalwabbit.pyvw.Feature'&gt;,), 'name': (&lt;type 'str'&gt;, &lt;type 'int'&gt;, &lt;type 'float'&gt;), 'value': (&lt;type 'int'&gt;, &lt;type 'float'&gt;)}</em><a class="headerlink" href="#vowpalwabbit.pyvw.Namespace.expected_type" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="vowpalwabbit.pyvw.Namespace.process">
-<code class="descname">process</code><span class="sig-paren">(</span><em>self</em>, <em>df=None</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.Namespace.process" title="Permalink to this definition">¶</a></dt>
+<code class="descname">process</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.Namespace.process" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the Namespace string representation</p>
 </dd></dl>
 
@@ -779,9 +938,9 @@ above available options</p>
 
 <dl class="class">
 <dt id="vowpalwabbit.pyvw.SimpleLabel">
-<em class="property">class </em><code class="descclassname">vowpalwabbit.pyvw.</code><code class="descname">SimpleLabel</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.SimpleLabel" title="Permalink to this definition">¶</a></dt>
-<dd><p>The SimpleLabel class is used to build a simple label for the
-constructor of DFtoVW.</p>
+<em class="property">class </em><code class="descclassname">vowpalwabbit.pyvw.</code><code class="descname">SimpleLabel</code><span class="sig-paren">(</span><em>name</em>, <em>name_from_df=True</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.SimpleLabel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The simple label type for the constructor of DFtoVW.</p>
 <p class="rubric">Methods</p>
 <table border="1" class="longtable docutils">
 <colgroup>
@@ -796,16 +955,20 @@ constructor of DFtoVW.</p>
 </table>
 <dl class="method">
 <dt id="vowpalwabbit.pyvw.SimpleLabel.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>self</em>, <em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.SimpleLabel.__init__" title="Permalink to this definition">¶</a></dt>
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>self</em>, <em>name</em>, <em>name_from_df=True</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.SimpleLabel.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>Initialize a SimpleLabel instance.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
-<dt><strong>name</strong> <span class="classifier-delimiter">:</span> <span class="classifier">Col/str/int/float</span></dt>
-<dd><p class="first last">A Col object specifying the column to extract from a dataframe or a
-constant value of type str/int/float.</p>
+<dt><strong>name</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str/int/float</span></dt>
+<dd><p class="first last">The name of the column. If name_from_df=False, it should be of type
+int or float.</p>
+</dd>
+<dt><strong>name_from_df: bool (default: True)</strong></dt>
+<dd><p class="first last">True if the name refers to a column in the dataframe and False if
+the name is a constant.</p>
 </dd>
 </dl>
 </td>
@@ -821,9 +984,18 @@ constant value of type str/int/float.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="vowpalwabbit.pyvw.SimpleLabel.expected_type">
-<code class="descname">expected_type</code><em class="property"> = {'name': (&lt;class vowpalwabbit.pyvw.Col&gt;, &lt;type 'str'&gt;, &lt;type 'int'&gt;, &lt;type 'float'&gt;)}</em><a class="headerlink" href="#vowpalwabbit.pyvw.SimpleLabel.expected_type" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dt id="vowpalwabbit.pyvw.SimpleLabel.name">
+<code class="descname">name</code><a class="headerlink" href="#vowpalwabbit.pyvw.SimpleLabel.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>This descriptor class enforces type checking and value checking for the
+attributes of the (managed) classes SimpleLabel, Feature, etc.</p>
+<p>If the attribute represents a column, no type or value checking are
+performed (since the dataframe and the subsequent column is not known yet)
+but the type and value requirements are passed to the _Col instance for
+future usage in the DFtoVW constructor.</p>
+<p>In the managed class, the optional presence of a column for an attribute is
+indicated using <a href="#id13"><span class="problematic" id="id14">*</span></a>_from_df attribute. The <a href="#id15"><span class="problematic" id="id16">*</span></a>_from_df attribute should be set
+before the actual attribute to take effect.</p>
+</dd></dl>
 
 <dl class="method">
 <dt id="vowpalwabbit.pyvw.SimpleLabel.process">
@@ -835,7 +1007,7 @@ constant value of type str/int/float.</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
 <dt><strong>df</strong> <span class="classifier-delimiter">:</span> <span class="classifier">pandas.DataFrame</span></dt>
-<dd><p class="first last">The dataframe from which to extract a column.</p>
+<dd><p class="first last">The dataframe from which to select the column.</p>
 </dd>
 </dl>
 </td>
@@ -1312,7 +1484,7 @@ id) or a string, in which case it is hashed.</p>
 
 <dl class="method">
 <dt id="vowpalwabbit.pyvw.example.get_label">
-<code class="descname">get_label</code><span class="sig-paren">(</span><em>self</em>, <em>label_class=&lt;class vowpalwabbit.pyvw.simple_label at 0x7fb2b229a210&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.example.get_label" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_label</code><span class="sig-paren">(</span><em>self</em>, <em>label_class=&lt;class vowpalwabbit.pyvw.simple_label at 0x7f70f17d27c0&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.example.get_label" title="Permalink to this definition">¶</a></dt>
 <dd><p>Given a known label class (default is simple_label), get
 the corresponding label structure for this example.</p>
 <table class="docutils field-list" frame="void" rules="none">
