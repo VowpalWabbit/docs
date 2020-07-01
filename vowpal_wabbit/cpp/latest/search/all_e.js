@@ -28,7 +28,7 @@ var searchData=
   ['no_5flabel_5fparser',['no_label_parser',['../namespaceno__label.html#a39c874dbb1f3c89a76e050fc608e28b6',1,'no_label']]],
   ['no_5flock_5fobject_5fpool',['no_lock_object_pool',['../structVW_1_1no__lock__object__pool.html',1,'VW']]],
   ['no_5flock_5fobject_5fpool',['no_lock_object_pool',['../structVW_1_1no__lock__object__pool.html#a55f60639f3260fab7a259890d83b6f0e',1,'VW::no_lock_object_pool::no_lock_object_pool()=default'],['../structVW_1_1no__lock__object__pool.html#a052f840458de1698921f7ab8af57e15f',1,'VW::no_lock_object_pool::no_lock_object_pool(size_t initial_chunk_size, TInitializer initializer={}, size_t chunk_size=8)']]],
-  ['no_5flock_5fobject_5fpool_3c_20example_2c_20example_5finitializer_2c_20default_5fcleanup_3c_20example_20_3e_20_3e',['no_lock_object_pool&lt; example, example_initializer, default_cleanup&lt; example &gt; &gt;',['../structVW_1_1no__lock__object__pool.html',1,'VW']]],
+  ['no_5flock_5fobject_5fpool_3c_20example_2c_20default_5finitializer_3c_20example_20_3e_2c_20default_5fcleanup_3c_20example_20_3e_20_3e',['no_lock_object_pool&lt; example, default_initializer&lt; example &gt;, default_cleanup&lt; example &gt; &gt;',['../structVW_1_1no__lock__object__pool.html',1,'VW']]],
   ['node',['node',['../classAllReduce.html#aabe2467446f88840299517725e20f84e',1,'AllReduce']]],
   ['node_5fid_5fnamespace',['node_id_namespace',['../constant_8h.html#a2ba4a93b0663f069dc7518d27442b9d2',1,'constant.h']]],
   ['node_5fsocks',['node_socks',['../structnode__socks.html',1,'node_socks'],['../structnode__socks.html#a96190bc88fd053a435d4610394d89590',1,'node_socks::node_socks()']]],

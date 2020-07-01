@@ -2,9 +2,9 @@ var searchData=
 [
   ['p',['p',['../structvw.html#ab70afa2ceae01968d9d291c5c8b060be',1,'vw']]],
   ['parent',['parent',['../structnode__socks.html#a9107491c00d5f397f28b1bcf50093704',1,'node_socks']]],
-  ['parse_5flabel',['parse_label',['../structlabel__parser.html#a4e530da668b9320a390c919d70db25c2',1,'label_parser']]],
+  ['parse_5flabel',['parse_label',['../structlabel__parser.html#a39bd9e8a6a2ffdd511c3234f8ab9bd77',1,'label_parser']]],
   ['parse_5fmask',['parse_mask',['../structvw.html#a1341f90722fcded4ecfd77030b8195a8',1,'vw']]],
-  ['parse_5fname',['parse_name',['../structparser.html#a1f0cbc0630ed3485dcc8ed05ea69abef',1,'parser']]],
+  ['parse_5fname',['parse_name',['../structparser.html#ac01dcb8e54f82d474306ad261ca049a9',1,'parser']]],
   ['parse_5fthread',['parse_thread',['../structvw.html#ab418994767bf1cd59751236abb690ccb',1,'vw']]],
   ['partial_5fprediction',['partial_prediction',['../structCB_1_1cb__class.html#ae34e712b9e45423e3b92bc9c340e8908',1,'CB::cb_class::partial_prediction()'],['../structCOST__SENSITIVE_1_1wclass.html#ada5dfb9c23fce4f1e76e6920b2490be5',1,'COST_SENSITIVE::wclass::partial_prediction()'],['../structexample.html#a3e4e427253321a8867a27827a3dd59c1',1,'example::partial_prediction()']]],
   ['pass_5flength',['pass_length',['../structvw.html#a5d00a4e6cc866eb34fed3d6ee6fa07bb',1,'vw']]],

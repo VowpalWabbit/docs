@@ -35,7 +35,7 @@ var searchData=
   ['sort_5ffeatures',['sort_features',['../structparser.html#a5ae94d4ac8f7d070a13fa77800b73b49',1,'parser']]],
   ['sorted',['sorted',['../structexample.html#a0477cb59212f3ef7524d6f9b04d50918',1,'example']]],
   ['sorted_5fcache',['sorted_cache',['../structparser.html#a4000a39c49cd83d4833c344849f1bc2d',1,'parser']]],
-  ['space_5fnames',['space_names',['../structfeatures.html#adc59d6bbd667824b40293f491d89943c',1,'features']]],
+  ['space_5fnames',['space_names',['../structfeatures.html#abfa8e8f04aa52231e411e079e3ff68c4',1,'features']]],
   ['sparse',['sparse',['../classparameters.html#a83947face4285f451b42f9283ea127e8',1,'parameters']]],
   ['sparse_5fweights',['sparse_weights',['../classparameters.html#a276f4673850e9650c1360a78c9afab97',1,'parameters']]],
   ['spelling_5ffeatures',['spelling_features',['../structvw.html#ace167155548f142220e1e7ba0c988271',1,'vw']]],

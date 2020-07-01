@@ -22,6 +22,8 @@ var searchData=
   ['default_5fcleanup',['default_cleanup',['../structVW_1_1default__cleanup.html',1,'VW']]],
   ['default_5fcleanup_3c_20example_20_3e',['default_cleanup&lt; example &gt;',['../structVW_1_1default__cleanup.html',1,'VW']]],
   ['default_5ffloat_5ftolerance',['DEFAULT_FLOAT_TOLERANCE',['../namespaceVW_1_1math.html#ab96338c13291d2355a5bfa3264d06d7d',1,'VW::math']]],
+  ['default_5finitializer',['default_initializer',['../structVW_1_1default__initializer.html',1,'VW']]],
+  ['default_5finitializer_3c_20example_20_3e',['default_initializer&lt; example &gt;',['../structVW_1_1default__initializer.html',1,'VW']]],
   ['default_5flabel',['default_label',['../structlabel__parser.html#a792ce56c637ad59d9444124d7c9f2bc1',1,'label_parser']]],
   ['default_5fnamespace',['default_namespace',['../constant_8h.html#ac5f7a89af82daae29351dde7bc52cce4',1,'constant.h']]],
   ['default_5fstate',['default_state',['../structContext.html#a0e0a976e8e6bf9b15f095758b5094521',1,'Context']]],
