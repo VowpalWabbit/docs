@@ -10,6 +10,8 @@ var searchData=
   ['m_5ftype_5fhash',['m_type_hash',['../structVW_1_1config_1_1base__option.html#a3eda02f24b7010ae07aa27e195b5040f',1,'VW::config::base_option']]],
   ['major',['major',['../structVW_1_1version__struct.html#a7c6f65031ce115884665fee6c003319f',1,'VW::version_struct']]],
   ['make_5fbase',['make_base',['../namespaceVW_1_1LEARNER.html#a772575fd3a96e67ade70cf79d379acc9',1,'VW::LEARNER']]],
+  ['make_5findex_5fsequence',['make_index_sequence',['../structVW_1_1details_1_1make__index__sequence.html',1,'VW::details']]],
+  ['make_5findex_5fsequence_3c_200_2c_20integers_2e_2e_2e_20_3e',['make_index_sequence&lt; 0, Integers... &gt;',['../structVW_1_1details_1_1make__index__sequence_3_010_00_01Integers_8_8_8_01_4.html',1,'VW::details']]],
   ['make_5foption',['make_option',['../namespaceVW_1_1config.html#ae768389a49d24d07215612b2f824d520',1,'VW::config']]],
   ['make_5funique',['make_unique',['../namespaceVW.html#a6e3217b67aa62bbcb889c612e5d8016a',1,'VW']]],
   ['marginal_2eh',['marginal.h',['../marginal_8h.html',1,'']]],

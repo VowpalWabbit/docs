@@ -9,6 +9,8 @@ var searchData=
   ['gen_5fcs_5fexample_5fsm',['gen_cs_example_sm',['../namespaceGEN__CS.html#ac31d5d7136415f79e6942fcef67b8571',1,'GEN_CS']]],
   ['gen_5fcs_5flabel',['gen_cs_label',['../namespaceGEN__CS.html#a73719868c419260647eff267ea5b485b',1,'GEN_CS']]],
   ['gen_5fcs_5ftest_5fexample',['gen_cs_test_example',['../namespaceGEN__CS.html#a212a6a0dab1ca399ff60154e0ec4b45f',1,'GEN_CS']]],
+  ['gen_5fnegative_5fpow10s',['gen_negative_pow10s',['../namespaceVW_1_1details.html#ae2be77302bcacd0a0ec124678e260372',1,'VW::details']]],
+  ['gen_5fpositive_5fpow10s',['gen_positive_pow10s',['../namespaceVW_1_1details.html#a49ac9f5d71c64d8d87e923b5c4d572d3',1,'VW::details']]],
   ['generate_5fbag',['generate_bag',['../namespaceexploration.html#a45f7314e2f8f30bb0b262c2e3f55bd71',1,'exploration::generate_bag(InputIt top_actions_first, InputIt top_actions_last, OutputIt pdf_first, OutputIt pdf_last)'],['../namespaceexploration.html#ab79ce7db02bb33f1ce3cc92d14b0c2b9',1,'exploration::generate_bag(InputIt top_actions_first, InputIt top_actions_last, std::input_iterator_tag, OutputIt pdf_first, OutputIt pdf_last, std::random_access_iterator_tag)']]],
   ['generate_5fccb_5flabel_5fprintout',['generate_ccb_label_printout',['../namespaceCCB.html#a08142cda8bb6deef728c8343edf329e3',1,'CCB']]],
   ['generate_5fepsilon_5fgreedy',['generate_epsilon_greedy',['../namespaceexploration.html#aace5080dc17f64700cf846fda27bf942',1,'exploration::generate_epsilon_greedy(float epsilon, uint32_t top_action, It pdf_first, It pdf_last)'],['../namespaceexploration.html#a209c5fa697a4623797a9525d4c831a28',1,'exploration::generate_epsilon_greedy(float epsilon, uint32_t top_action, It pdf_first, It pdf_last, std::random_access_iterator_tag)']]],

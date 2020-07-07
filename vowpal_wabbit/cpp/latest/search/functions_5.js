@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['fast_5fpow10',['fast_pow10',['../namespaceVW.html#a1c2be07eaaeaffca808d8d4106437a00',1,'VW']]],
   ['feature',['feature',['../structfeature.html#a67f5aeaea85ac93019524af7e2cc8925',1,'feature::feature()=default'],['../structfeature.html#a15ba23cd8a38d89fab9fdc17ca9f8dee',1,'feature::feature(float _x, uint64_t _index)'],['../structfeature.html#a3953a8a8732281c7d9a3f7125ed02630',1,'feature::feature(const feature &amp;)=default'],['../structfeature.html#a384013a8c01f18c577e5bd3028736b76',1,'feature::feature(feature &amp;&amp;) noexcept=default']]],
   ['feature_5findex_5fnum_5fbits',['feature_index_num_bits',['../classvw__slim_1_1vw__predict.html#a319098f444f533aafe6add9c9a0ac0de',1,'vw_slim::vw_predict']]],
   ['feature_5foffset_5fguard',['feature_offset_guard',['../classvw__slim_1_1feature__offset__guard.html#a43b29c20a39a0cd32faab93716667f68',1,'vw_slim::feature_offset_guard']]],
