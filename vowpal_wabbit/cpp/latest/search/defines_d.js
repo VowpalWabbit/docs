@@ -13,5 +13,10 @@ var searchData=
   ['vw_5fcalling_5fconv',['VW_CALLING_CONV',['../vwdll_8h.html#a64a642f52fe781ce11742e6c4d35acbb',1,'vwdll.h']]],
   ['vw_5fdll_5flocal',['VW_DLL_LOCAL',['../vwvis_8h.html#abb8340b867c28be777e09f71e9125a7b',1,'vwvis.h']]],
   ['vw_5fdll_5fpublic',['VW_DLL_PUBLIC',['../vwvis_8h.html#aa47c18e82570992596ce6017e8491fce',1,'vwvis.h']]],
-  ['vw_5ftype_5fsafe_5fnull',['VW_TYPE_SAFE_NULL',['../vwdll_8h.html#a70551fec65dc75986bf05a4002a66a77',1,'vwdll.h']]]
+  ['vw_5ftype_5fsafe_5fnull',['VW_TYPE_SAFE_NULL',['../vwdll_8h.html#a70551fec65dc75986bf05a4002a66a77',1,'vwdll.h']]],
+  ['vw_5fwarning_5fdisable',['VW_WARNING_DISABLE',['../future__compat_8h.html#a74769810b1e56a7d83bfe9abbb2bcc64',1,'future_compat.h']]],
+  ['vw_5fwarning_5fdisable_5fclass_5fmemaccess',['VW_WARNING_DISABLE_CLASS_MEMACCESS',['../future__compat_8h.html#a9225d298721facede08fbd2eebbdf5c6',1,'future_compat.h']]],
+  ['vw_5fwarning_5fdisable_5fdeprecated_5fusage',['VW_WARNING_DISABLE_DEPRECATED_USAGE',['../future__compat_8h.html#af0fa7adfe5074b8ce24ef0b649612436',1,'future_compat.h']]],
+  ['vw_5fwarning_5fstate_5fpop',['VW_WARNING_STATE_POP',['../future__compat_8h.html#a2d17cd6c08058ed32e5fb9dc77629280',1,'future_compat.h']]],
+  ['vw_5fwarning_5fstate_5fpush',['VW_WARNING_STATE_PUSH',['../future__compat_8h.html#a8b8610e8e86287f2b68275bf31acefb8',1,'future_compat.h']]]
 ];
