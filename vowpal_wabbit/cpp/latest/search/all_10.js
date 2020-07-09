@@ -36,6 +36,8 @@ var searchData=
   ['per_5ffeature_5fregularizer_5ftext',['per_feature_regularizer_text',['../structvw.html#a785187bd18fe17fab06559a2ff7a8207',1,'vw']]],
   ['permutations',['permutations',['../structvw.html#af6bb6bea75923040c95324f9da130a14',1,'vw']]],
   ['pid_5ffile',['pid_file',['../structinput__options.html#a1a6cefc79283682f609257da002e0984',1,'input_options']]],
+  ['plt_2eh',['plt.h',['../plt_8h.html',1,'']]],
+  ['plt_5fsetup',['plt_setup',['../plt_8h.html#a06d22b9fa9288a3b1b5d3e2453c7ffca',1,'plt.h']]],
   ['pointer',['pointer',['../classsparse__iterator.html#ab9816131a0ecd982a07afd59d7f9bcdb',1,'sparse_iterator::pointer()'],['../classdense__iterator.html#a937e67c1c56b69bf494cce2c09bcd166',1,'dense_iterator::pointer()']]],
   ['polylabel',['polylabel',['../unionpolylabel.html',1,'']]],
   ['polyprediction',['polyprediction',['../unionpolyprediction.html',1,'']]],
