@@ -89,14 +89,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">vw_exception.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdexcept&gt;</code><br />
 <code>#include &lt;sstream&gt;</code><br />
+<code>#include &lt;array&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
 <code>#include &lt;cstring&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;locale.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -142,6 +147,11 @@ Macros</h2></td></tr>
 <tr class="separator:a674dd1ba0db34c463bbf7e37ffef7a7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32adf79142f0a426b5e782fb7cd4cad3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vw__exception_8h.html#a32adf79142f0a426b5e782fb7cd4cad3">DBG</a>(x)</td></tr>
 <tr class="separator:a32adf79142f0a426b5e782fb7cd4cad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a1b035bcd185bb470cfb4dbae9478facd"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a1b035bcd185bb470cfb4dbae9478facd">VW::strerror_to_string</a> (int error_number)</td></tr>
+<tr class="separator:a1b035bcd185bb470cfb4dbae9478facd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a5fccb4fc71e44089a1b1a77fc76c0b68"></a>
@@ -185,7 +195,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span>                                                                                                                \</div><div class="line">  {                                                                                                                 \</div><div class="line">    std::cerr &lt;&lt; <span class="stringliteral">&quot;(&quot;</span> &lt;&lt; <a class="code" href="vw__exception_8h.html#a5fccb4fc71e44089a1b1a77fc76c0b68">__FILENAME__</a> &lt;&lt; <span class="stringliteral">&quot;:&quot;</span> &lt;&lt; __LINE__ &lt;&lt; <span class="stringliteral">&quot;,&quot;</span> &lt;&lt; __func__ &lt;&lt; <span class="stringliteral">&quot;) &quot;</span> &lt;&lt; #x &lt;&lt; <span class="stringliteral">&quot;: &quot;</span> &lt;&lt; x &lt;&lt; std::endl; \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div><div class="ttc" id="vw__exception_8h_html_a5fccb4fc71e44089a1b1a77fc76c0b68"><div class="ttname"><a href="vw__exception_8h.html#a5fccb4fc71e44089a1b1a77fc76c0b68">__FILENAME__</a></div><div class="ttdeci">#define __FILENAME__</div><div class="ttdef"><b>Definition:</b> vw_exception.h:15</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span>                                                                                                                \</div><div class="line">  {                                                                                                                 \</div><div class="line">    std::cerr &lt;&lt; <span class="stringliteral">&quot;(&quot;</span> &lt;&lt; <a class="code" href="vw__exception_8h.html#a5fccb4fc71e44089a1b1a77fc76c0b68">__FILENAME__</a> &lt;&lt; <span class="stringliteral">&quot;:&quot;</span> &lt;&lt; __LINE__ &lt;&lt; <span class="stringliteral">&quot;,&quot;</span> &lt;&lt; __func__ &lt;&lt; <span class="stringliteral">&quot;) &quot;</span> &lt;&lt; #x &lt;&lt; <span class="stringliteral">&quot;: &quot;</span> &lt;&lt; x &lt;&lt; std::endl; \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div><div class="ttc" id="vw__exception_8h_html_a5fccb4fc71e44089a1b1a77fc76c0b68"><div class="ttname"><a href="vw__exception_8h.html#a5fccb4fc71e44089a1b1a77fc76c0b68">__FILENAME__</a></div><div class="ttdeci">#define __FILENAME__</div><div class="ttdef"><b>Definition:</b> vw_exception.h:22</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -256,8 +266,8 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{                                                              \</div><div class="line">    std::stringstream __msg;                                     \</div><div class="line">    __msg &lt;&lt; args;                                               \</div><div class="line">    throw <a class="code" href="classVW_1_1vw__exception.html">VW::vw_exception</a>(<a class="code" href="vw__exception_8h.html#a5fccb4fc71e44089a1b1a77fc76c0b68">__FILENAME__</a>, __LINE__, __msg.str()); \</div><div class="line">  }</div><div class="ttc" id="vw__exception_8h_html_a5fccb4fc71e44089a1b1a77fc76c0b68"><div class="ttname"><a href="vw__exception_8h.html#a5fccb4fc71e44089a1b1a77fc76c0b68">__FILENAME__</a></div><div class="ttdeci">#define __FILENAME__</div><div class="ttdef"><b>Definition:</b> vw_exception.h:15</div></div>
-<div class="ttc" id="classVW_1_1vw__exception_html"><div class="ttname"><a href="classVW_1_1vw__exception.html">VW::vw_exception</a></div><div class="ttdef"><b>Definition:</b> vw_exception.h:20</div></div>
+<b>Value:</b><div class="fragment"><div class="line">{                                                              \</div><div class="line">    std::stringstream __msg;                                     \</div><div class="line">    __msg &lt;&lt; args;                                               \</div><div class="line">    throw <a class="code" href="classVW_1_1vw__exception.html">VW::vw_exception</a>(<a class="code" href="vw__exception_8h.html#a5fccb4fc71e44089a1b1a77fc76c0b68">__FILENAME__</a>, __LINE__, __msg.str()); \</div><div class="line">  }</div><div class="ttc" id="vw__exception_8h_html_a5fccb4fc71e44089a1b1a77fc76c0b68"><div class="ttname"><a href="vw__exception_8h.html#a5fccb4fc71e44089a1b1a77fc76c0b68">__FILENAME__</a></div><div class="ttdeci">#define __FILENAME__</div><div class="ttdef"><b>Definition:</b> vw_exception.h:22</div></div>
+<div class="ttc" id="classVW_1_1vw__exception_html"><div class="ttname"><a href="classVW_1_1vw__exception.html">VW::vw_exception</a></div><div class="ttdef"><b>Definition:</b> vw_exception.h:27</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -284,7 +294,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{                                                \</div><div class="line">    std::stringstream __msg;                       \</div><div class="line">    __msg &lt;&lt; args;                                 \</div><div class="line">    throw ex(<a class="code" href="vw__exception_8h.html#a5fccb4fc71e44089a1b1a77fc76c0b68">__FILENAME__</a>, __LINE__, __msg.str()); \</div><div class="line">  }</div><div class="ttc" id="vw__exception_8h_html_a5fccb4fc71e44089a1b1a77fc76c0b68"><div class="ttname"><a href="vw__exception_8h.html#a5fccb4fc71e44089a1b1a77fc76c0b68">__FILENAME__</a></div><div class="ttdeci">#define __FILENAME__</div><div class="ttdef"><b>Definition:</b> vw_exception.h:15</div></div>
+<b>Value:</b><div class="fragment"><div class="line">{                                                \</div><div class="line">    std::stringstream __msg;                       \</div><div class="line">    __msg &lt;&lt; args;                                 \</div><div class="line">    throw ex(<a class="code" href="vw__exception_8h.html#a5fccb4fc71e44089a1b1a77fc76c0b68">__FILENAME__</a>, __LINE__, __msg.str()); \</div><div class="line">  }</div><div class="ttc" id="vw__exception_8h_html_a5fccb4fc71e44089a1b1a77fc76c0b68"><div class="ttname"><a href="vw__exception_8h.html#a5fccb4fc71e44089a1b1a77fc76c0b68">__FILENAME__</a></div><div class="ttdeci">#define __FILENAME__</div><div class="ttdef"><b>Definition:</b> vw_exception.h:22</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -327,7 +337,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span>                                                          \</div><div class="line">  {                                                           \</div><div class="line">    std::stringstream __msgA;                                 \</div><div class="line">    __msgA &lt;&lt; args;                                           \</div><div class="line">    throw <a class="code" href="classVW_1_1vw__exception.html">VW::vw_exception</a>(__FILE__, __LINE__, __msgA.str()); \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div><div class="ttc" id="classVW_1_1vw__exception_html"><div class="ttname"><a href="classVW_1_1vw__exception.html">VW::vw_exception</a></div><div class="ttdef"><b>Definition:</b> vw_exception.h:20</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span>                                                          \</div><div class="line">  {                                                           \</div><div class="line">    std::stringstream __msgA;                                 \</div><div class="line">    __msgA &lt;&lt; args;                                           \</div><div class="line">    throw <a class="code" href="classVW_1_1vw__exception.html">VW::vw_exception</a>(__FILE__, __LINE__, __msgA.str()); \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div><div class="ttc" id="classVW_1_1vw__exception_html"><div class="ttname"><a href="classVW_1_1vw__exception.html">VW::vw_exception</a></div><div class="ttdef"><b>Definition:</b> vw_exception.h:27</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -344,7 +354,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span>                                                          \</div><div class="line">  {                                                           \</div><div class="line">    std::stringstream __msgB;                                 \</div><div class="line">    __msgB &lt;&lt; args;                                           \</div><div class="line">    throw <a class="code" href="classVW_1_1vw__exception.html">VW::vw_exception</a>(__FILE__, __LINE__, __msgB.str()); \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div><div class="ttc" id="classVW_1_1vw__exception_html"><div class="ttname"><a href="classVW_1_1vw__exception.html">VW::vw_exception</a></div><div class="ttdef"><b>Definition:</b> vw_exception.h:20</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span>                                                          \</div><div class="line">  {                                                           \</div><div class="line">    std::stringstream __msgB;                                 \</div><div class="line">    __msgB &lt;&lt; args;                                           \</div><div class="line">    throw <a class="code" href="classVW_1_1vw__exception.html">VW::vw_exception</a>(__FILE__, __LINE__, __msgB.str()); \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div><div class="ttc" id="classVW_1_1vw__exception_html"><div class="ttname"><a href="classVW_1_1vw__exception.html">VW::vw_exception</a></div><div class="ttdef"><b>Definition:</b> vw_exception.h:27</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -361,8 +371,9 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{                                                              \</div><div class="line">    std::stringstream __msg;                                     \</div><div class="line">    __msg &lt;&lt; args;                                               \</div><div class="line">    char __errmsg[256];                                          \</div><div class="line">    if (strerror_r(errno, __errmsg, <span class="keyword">sizeof</span> __errmsg) != 0)       \</div><div class="line">      __msg &lt;&lt; <span class="stringliteral">&quot;errno = unknown&quot;</span>;                                \</div><div class="line">    else                                                         \</div><div class="line">      __msg &lt;&lt; <span class="stringliteral">&quot;errno = &quot;</span> &lt;&lt; __errmsg;                           \</div><div class="line">    throw <a class="code" href="classVW_1_1vw__exception.html">VW::vw_exception</a>(<a class="code" href="vw__exception_8h.html#a5fccb4fc71e44089a1b1a77fc76c0b68">__FILENAME__</a>, __LINE__, __msg.str()); \</div><div class="line">  }</div><div class="ttc" id="vw__exception_8h_html_a5fccb4fc71e44089a1b1a77fc76c0b68"><div class="ttname"><a href="vw__exception_8h.html#a5fccb4fc71e44089a1b1a77fc76c0b68">__FILENAME__</a></div><div class="ttdeci">#define __FILENAME__</div><div class="ttdef"><b>Definition:</b> vw_exception.h:15</div></div>
-<div class="ttc" id="classVW_1_1vw__exception_html"><div class="ttname"><a href="classVW_1_1vw__exception.html">VW::vw_exception</a></div><div class="ttdef"><b>Definition:</b> vw_exception.h:20</div></div>
+<b>Value:</b><div class="fragment"><div class="line">{                                                              \</div><div class="line">    std::stringstream __msg;                                     \</div><div class="line">    __msg &lt;&lt; args;                                               \</div><div class="line">    __msg &lt;&lt; <span class="stringliteral">&quot;, errno = &quot;</span> &lt;&lt; <a class="code" href="namespaceVW.html#a1b035bcd185bb470cfb4dbae9478facd">VW::strerror_to_string</a>(errno);          \</div><div class="line">    throw <a class="code" href="classVW_1_1vw__exception.html">VW::vw_exception</a>(<a class="code" href="vw__exception_8h.html#a5fccb4fc71e44089a1b1a77fc76c0b68">__FILENAME__</a>, __LINE__, __msg.str()); \</div><div class="line">  }</div><div class="ttc" id="vw__exception_8h_html_a5fccb4fc71e44089a1b1a77fc76c0b68"><div class="ttname"><a href="vw__exception_8h.html#a5fccb4fc71e44089a1b1a77fc76c0b68">__FILENAME__</a></div><div class="ttdeci">#define __FILENAME__</div><div class="ttdef"><b>Definition:</b> vw_exception.h:22</div></div>
+<div class="ttc" id="namespaceVW_html_a1b035bcd185bb470cfb4dbae9478facd"><div class="ttname"><a href="namespaceVW.html#a1b035bcd185bb470cfb4dbae9478facd">VW::strerror_to_string</a></div><div class="ttdeci">std::string strerror_to_string(int error_number)</div><div class="ttdef"><b>Definition:</b> vw_exception.h:114</div></div>
+<div class="ttc" id="classVW_1_1vw__exception_html"><div class="ttname"><a href="classVW_1_1vw__exception.html">VW::vw_exception</a></div><div class="ttdef"><b>Definition:</b> vw_exception.h:27</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -389,14 +400,14 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">if</span> (!(condition))                \</div><div class="line">  {                                <a class="code" href="vw__exception_8h.html#a6418ba1768107875abafe9a0b6b8b2ad">\</a></div><div class="line"><a class="code" href="vw__exception_8h.html#a6418ba1768107875abafe9a0b6b8b2ad">    THROW</a>(args);                   \</div><div class="line">  }</div><div class="ttc" id="vw__exception_8h_html_a6418ba1768107875abafe9a0b6b8b2ad"><div class="ttname"><a href="vw__exception_8h.html#a6418ba1768107875abafe9a0b6b8b2ad">THROW</a></div><div class="ttdeci">#define THROW(args)</div><div class="ttdef"><b>Definition:</b> vw_exception.h:155</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">if</span> (!(condition))                \</div><div class="line">  {                                <a class="code" href="vw__exception_8h.html#a6418ba1768107875abafe9a0b6b8b2ad">\</a></div><div class="line"><a class="code" href="vw__exception_8h.html#a6418ba1768107875abafe9a0b6b8b2ad">    THROW</a>(args);                   \</div><div class="line">  }</div><div class="ttc" id="vw__exception_8h_html_a6418ba1768107875abafe9a0b6b8b2ad"><div class="ttname"><a href="vw__exception_8h.html#a6418ba1768107875abafe9a0b6b8b2ad">THROW</a></div><div class="ttdeci">#define THROW(args)</div><div class="ttdef"><b>Definition:</b> vw_exception.h:193</div></div>
 </div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 9 2020 14:47:48 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 9 2020 18:31:59 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
