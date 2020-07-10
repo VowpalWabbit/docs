@@ -49,7 +49,7 @@
 <em class="property">class </em><code class="descclassname">vowpalwabbit.pyvw.</code><code class="descname">AttributeDescriptor</code><span class="sig-paren">(</span><em>attribute_name</em>, <em>expected_type</em>, <em>min_value=None</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.AttributeDescriptor" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>This descriptor class enforces type checking and value checking for the
-attributes of the (managed) classes SimpleLabel, Feature, etc.</p>
+attributes of the (managed) classes SimpleLabel, MulticlassLabel, Feature, etc.</p>
 <p>If the attribute represents a column, no type or value checking are
 performed (since the dataframe and the subsequent column is not known yet)
 but the type and value requirements are passed to the _Col instance for
@@ -168,7 +168,7 @@ before the actual attribute to take effect.</p>
 <em class="property">class </em><code class="descclassname">vowpalwabbit.pyvw.</code><code class="descname">DFtoVW</code><span class="sig-paren">(</span><em>df</em>, <em>features=None</em>, <em>namespaces=None</em>, <em>label=None</em>, <em>tag=None</em>, <em>tag_from_df=True</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.DFtoVW" title="Permalink to this definition">¶</a></dt>
 <dd><p>Convert a pandas DataFrame to a suitable VW format.
 Instances of this class are built with classes such as SimpleLabel,
-Feature or Namespace.</p>
+MulticlassLabel, Feature or Namespace.</p>
 <p>The class also provided a convenience constructor to initialize the class
 based on the target/features column names only.</p>
 <p class="rubric">Methods</p>
@@ -369,7 +369,7 @@ explicit about where the error occurs in the formula.</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><dl class="first last docutils">
 <dt>TypeError</dt>
-<dd><p class="first last">If label is not of type SimpleLabel.</p>
+<dd><p class="first last">If label is not of type SimpleLabel or MulticlassLabel.</p>
 </dd>
 </dl>
 </td>
@@ -638,7 +638,7 @@ the name is a constant.</p>
 <dt id="vowpalwabbit.pyvw.Feature.name">
 <code class="descname">name</code><a class="headerlink" href="#vowpalwabbit.pyvw.Feature.name" title="Permalink to this definition">¶</a></dt>
 <dd><p>This descriptor class enforces type checking and value checking for the
-attributes of the (managed) classes SimpleLabel, Feature, etc.</p>
+attributes of the (managed) classes SimpleLabel, MulticlassLabel, Feature, etc.</p>
 <p>If the attribute represents a column, no type or value checking are
 performed (since the dataframe and the subsequent column is not known yet)
 but the type and value requirements are passed to the _Col instance for
@@ -678,13 +678,124 @@ before the actual attribute to take effect.</p>
 <dt id="vowpalwabbit.pyvw.Feature.value">
 <code class="descname">value</code><a class="headerlink" href="#vowpalwabbit.pyvw.Feature.value" title="Permalink to this definition">¶</a></dt>
 <dd><p>This descriptor class enforces type checking and value checking for the
-attributes of the (managed) classes SimpleLabel, Feature, etc.</p>
+attributes of the (managed) classes SimpleLabel, MulticlassLabel, Feature, etc.</p>
 <p>If the attribute represents a column, no type or value checking are
 performed (since the dataframe and the subsequent column is not known yet)
 but the type and value requirements are passed to the _Col instance for
 future usage in the DFtoVW constructor.</p>
 <p>In the managed class, the optional presence of a column for an attribute is
 indicated using <a href="#id9"><span class="problematic" id="id10">*</span></a>_from_df attribute. The <a href="#id11"><span class="problematic" id="id12">*</span></a>_from_df attribute should be set
+before the actual attribute to take effect.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="vowpalwabbit.pyvw.MulticlassLabel">
+<em class="property">class </em><code class="descclassname">vowpalwabbit.pyvw.</code><code class="descname">MulticlassLabel</code><span class="sig-paren">(</span><em>name</em>, <em>weight=None</em>, <em>name_from_df=True</em>, <em>weight_from_df=True</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.MulticlassLabel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The multiclass label type for the constructor of DFtoVW.</p>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#vowpalwabbit.pyvw.MulticlassLabel.process" title="vowpalwabbit.pyvw.MulticlassLabel.process"><code class="xref py py-obj docutils literal notranslate"><span class="pre">process</span></code></a>(self,&nbsp;df)</td>
+<td>Returns the MulticlassLabel string representation.</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="vowpalwabbit.pyvw.MulticlassLabel.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>self</em>, <em>name</em>, <em>weight=None</em>, <em>name_from_df=True</em>, <em>weight_from_df=True</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.MulticlassLabel.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize a MulticlassLabel instance.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>name</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str/int</span></dt>
+<dd><p class="first last">The name of the multi class. If name_from_df=False, it should be of
+type int.</p>
+</dd>
+<dt><strong>weight: str/int/float, optional</strong></dt>
+<dd><p class="first last">The (importance) weight of the multi class. If name_from_df=False,
+it should be of type int or float.</p>
+</dd>
+<dt><strong>name_from_df: bool (default: True)</strong></dt>
+<dd><p class="first last">True if the name refers to a column in the dataframe and False if
+the name is a constant.</p>
+</dd>
+<dt><strong>weight_from_df: bool (default: True)</strong></dt>
+<dd><p class="first last">True if the weight refers to a column in the dataframe and False if
+the weight is a constant.</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>self</strong> <span class="classifier-delimiter">:</span> <span class="classifier">MulticlassLabel</span></dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="vowpalwabbit.pyvw.MulticlassLabel.name">
+<code class="descname">name</code><a class="headerlink" href="#vowpalwabbit.pyvw.MulticlassLabel.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>This descriptor class enforces type checking and value checking for the
+attributes of the (managed) classes SimpleLabel, MulticlassLabel, Feature, etc.</p>
+<p>If the attribute represents a column, no type or value checking are
+performed (since the dataframe and the subsequent column is not known yet)
+but the type and value requirements are passed to the _Col instance for
+future usage in the DFtoVW constructor.</p>
+<p>In the managed class, the optional presence of a column for an attribute is
+indicated using <a href="#id13"><span class="problematic" id="id14">*</span></a>_from_df attribute. The <a href="#id15"><span class="problematic" id="id16">*</span></a>_from_df attribute should be set
+before the actual attribute to take effect.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="vowpalwabbit.pyvw.MulticlassLabel.process">
+<code class="descname">process</code><span class="sig-paren">(</span><em>self</em>, <em>df</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.MulticlassLabel.process" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the MulticlassLabel string representation.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>df</strong> <span class="classifier-delimiter">:</span> <span class="classifier">pandas.DataFrame</span></dt>
+<dd><p class="first last">The dataframe from which to select the column(s).</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt>str or pandas.Series</dt>
+<dd><p class="first last">The MulticlassLabel string representation.</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="vowpalwabbit.pyvw.MulticlassLabel.weight">
+<code class="descname">weight</code><a class="headerlink" href="#vowpalwabbit.pyvw.MulticlassLabel.weight" title="Permalink to this definition">¶</a></dt>
+<dd><p>This descriptor class enforces type checking and value checking for the
+attributes of the (managed) classes SimpleLabel, MulticlassLabel, Feature, etc.</p>
+<p>If the attribute represents a column, no type or value checking are
+performed (since the dataframe and the subsequent column is not known yet)
+but the type and value requirements are passed to the _Col instance for
+future usage in the DFtoVW constructor.</p>
+<p>In the managed class, the optional presence of a column for an attribute is
+indicated using <a href="#id17"><span class="problematic" id="id18">*</span></a>_from_df attribute. The <a href="#id19"><span class="problematic" id="id20">*</span></a>_from_df attribute should be set
 before the actual attribute to take effect.</p>
 </dd></dl>
 
@@ -987,13 +1098,13 @@ the name is a constant.</p>
 <dt id="vowpalwabbit.pyvw.SimpleLabel.name">
 <code class="descname">name</code><a class="headerlink" href="#vowpalwabbit.pyvw.SimpleLabel.name" title="Permalink to this definition">¶</a></dt>
 <dd><p>This descriptor class enforces type checking and value checking for the
-attributes of the (managed) classes SimpleLabel, Feature, etc.</p>
+attributes of the (managed) classes SimpleLabel, MulticlassLabel, Feature, etc.</p>
 <p>If the attribute represents a column, no type or value checking are
 performed (since the dataframe and the subsequent column is not known yet)
 but the type and value requirements are passed to the _Col instance for
 future usage in the DFtoVW constructor.</p>
 <p>In the managed class, the optional presence of a column for an attribute is
-indicated using <a href="#id13"><span class="problematic" id="id14">*</span></a>_from_df attribute. The <a href="#id15"><span class="problematic" id="id16">*</span></a>_from_df attribute should be set
+indicated using <a href="#id21"><span class="problematic" id="id22">*</span></a>_from_df attribute. The <a href="#id23"><span class="problematic" id="id24">*</span></a>_from_df attribute should be set
 before the actual attribute to take effect.</p>
 </dd></dl>
 
@@ -1484,7 +1595,7 @@ id) or a string, in which case it is hashed.</p>
 
 <dl class="method">
 <dt id="vowpalwabbit.pyvw.example.get_label">
-<code class="descname">get_label</code><span class="sig-paren">(</span><em>self</em>, <em>label_class=&lt;class vowpalwabbit.pyvw.simple_label at 0x7f1dd884f7c0&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.example.get_label" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_label</code><span class="sig-paren">(</span><em>self</em>, <em>label_class=&lt;class vowpalwabbit.pyvw.simple_label at 0x7fa14871e7c0&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.example.get_label" title="Permalink to this definition">¶</a></dt>
 <dd><p>Given a known label class (default is simple_label), get
 the corresponding label structure for this example.</p>
 <table class="docutils field-list" frame="void" rules="none">
