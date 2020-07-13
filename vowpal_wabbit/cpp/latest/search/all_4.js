@@ -6,6 +6,7 @@ var searchData=
   ['data_5ffilename',['data_filename',['../structvw.html#aa0d6b8bdd383ac5a5d5ded9746886538',1,'vw']]],
   ['dbg',['DBG',['../vw__exception_8h.html#a32adf79142f0a426b5e782fb7cd4cad3',1,'vw_exception.h']]],
   ['dealloc_5fexample',['dealloc_example',['../namespaceVW.html#a2cf9260494b1905cb29eb481e4b5453a',1,'VW']]],
+  ['debug_5fprint_2eh',['debug_print.h',['../debug__print_8h.html',1,'']]],
   ['decision_5fprobs',['decision_probs',['../learner_8h.html#a5514b4a9448315c23ec344ca2d139e24a0a1107ed44b212cea25e2da842e0cbbe',1,'learner.h']]],
   ['decision_5fscores',['decision_scores',['../unionpolyprediction.html#a572baf036403a33ca9e06198322a8802',1,'polyprediction']]],
   ['decision_5fscores_2eh',['decision_scores.h',['../decision__scores_8h.html',1,'']]],
