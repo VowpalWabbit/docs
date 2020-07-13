@@ -20,7 +20,7 @@ var searchData=
   ['insert',['insert',['../classBeam_1_1beam.html#a00ccd66b04b1469823869b0b2fef0d5d',1,'Beam::beam::insert()'],['../structVW_1_1config_1_1options__i.html#a218ed8d8b6a9b367ce7dc622e1465f92',1,'VW::config::options_i::insert()'],['../structVW_1_1config_1_1options__boost__po.html#ab671ca03117a436f1cb84e14de00a48d',1,'VW::config::options_boost_po::insert()']]],
   ['int',['Int',['../structVWReaderHandler.html#acff99671bc9ef886b71cc00a09741d45',1,'VWReaderHandler']]],
   ['int64',['Int64',['../structVWReaderHandler.html#aee6696771d323ac1e6500738a027fffb',1,'VWReaderHandler']]],
-  ['int_5fof_5fstring',['int_of_string',['../parse__primitives_8h.html#a87d4af59fea5bc25b64dd3c854ff4d25',1,'parse_primitives.h']]],
+  ['int_5fof_5fstring',['int_of_string',['../parse__primitives_8h.html#a0187acdae19e69c4ef85cb5eb7bb9fa0',1,'int_of_string(VW::string_view s, char *&amp;end):&#160;parse_primitives.h'],['../parse__primitives_8h.html#a87d4af59fea5bc25b64dd3c854ff4d25',1,'int_of_string(VW::string_view s):&#160;parse_primitives.h']]],
   ['interact_5fsetup',['interact_setup',['../interact_8h.html#acabe826851aae05e41d703e1c973d07a',1,'interact.h']]],
   ['interaction_5fvalue',['INTERACTION_VALUE',['../namespaceINTERACTIONS.html#a85d42969fe5fe2302e2017a180202ed7',1,'INTERACTIONS']]],
   ['io_5fbuf',['io_buf',['../classio__buf.html#a0665faf40e41d643fc3aeda6915d7d9b',1,'io_buf::io_buf(io_buf &amp;other)=delete'],['../classio__buf.html#a05183ca2d42844f8e55a3e3334eba4fa',1,'io_buf::io_buf(io_buf &amp;&amp;other)=delete'],['../classio__buf.html#ae01bc5dd5cd7128faeff147ce34a1f36',1,'io_buf::io_buf()']]],

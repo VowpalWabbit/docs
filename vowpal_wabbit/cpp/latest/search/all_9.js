@@ -45,7 +45,7 @@ var searchData=
   ['int',['Int',['../structVWReaderHandler.html#acff99671bc9ef886b71cc00a09741d45',1,'VWReaderHandler']]],
   ['int64',['Int64',['../structVWReaderHandler.html#aee6696771d323ac1e6500738a027fffb',1,'VWReaderHandler']]],
   ['int_5ffloat',['int_float',['../unionexploration_1_1int__float.html',1,'exploration']]],
-  ['int_5fof_5fstring',['int_of_string',['../parse__primitives_8h.html#a87d4af59fea5bc25b64dd3c854ff4d25',1,'parse_primitives.h']]],
+  ['int_5fof_5fstring',['int_of_string',['../parse__primitives_8h.html#a0187acdae19e69c4ef85cb5eb7bb9fa0',1,'int_of_string(VW::string_view s, char *&amp;end):&#160;parse_primitives.h'],['../parse__primitives_8h.html#a87d4af59fea5bc25b64dd3c854ff4d25',1,'int_of_string(VW::string_view s):&#160;parse_primitives.h']]],
   ['interact_2eh',['interact.h',['../interact_8h.html',1,'']]],
   ['interact_5fsetup',['interact_setup',['../interact_8h.html#acabe826851aae05e41d703e1c973d07a',1,'interact.h']]],
   ['interaction_5fvalue',['INTERACTION_VALUE',['../namespaceINTERACTIONS.html#a85d42969fe5fe2302e2017a180202ed7',1,'INTERACTIONS']]],
