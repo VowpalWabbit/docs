@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['c',['c',['../namespaceexploration.html#a3d3ce8990703e7933a87e28c40ba09d7',1,'exploration']]],
   ['cache',['cache',['../structinput__options.html#a01e267f82ebff128660f602b7765ae5c',1,'input_options']]],
   ['cache_5ffiles',['cache_files',['../structinput__options.html#aaa5711bc58e24146cf3c1a2538aaa7ac',1,'input_options']]],
   ['cache_5flabel',['cache_label',['../structlabel__parser.html#a954752d474128378070d524350347fe6',1,'label_parser']]],
@@ -52,6 +51,8 @@ var searchData=
   ['conditioning_5fnamespace',['conditioning_namespace',['../constant_8h.html#a315a4da9a17a4eda14c2e61824080c92',1,'constant.h']]],
   ['confidence',['confidence',['../structexample.html#a30e80546a762a93ac6420fe52d866ab2',1,'example']]],
   ['constant',['constant',['../constant_8h.html#a756519f5578552c555ce0353b3fa4fc6',1,'constant.h']]],
+  ['constant_5fa',['CONSTANT_A',['../namespaceexploration.html#abaf668aa89adbccbf973ed7087229251',1,'exploration']]],
+  ['constant_5fc',['CONSTANT_C',['../namespaceexploration.html#ab280cae4f247977e79c90ad5bc2c3053',1,'exploration']]],
   ['constant_5fnamespace',['constant_namespace',['../constant_8h.html#ac285b604938b5c167e499a1855cfbe5e',1,'constant.h']]],
   ['contraction',['contraction',['../structshared__data.html#a208ec97cf415ce6197c5508e59090982',1,'shared_data']]],
   ['copy_5flabel',['copy_label',['../structlabel__parser.html#a5ea152d70d58bd39c9d2d39719d12b44',1,'label_parser']]],

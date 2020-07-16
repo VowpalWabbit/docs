@@ -26,7 +26,7 @@ var searchData=
   ['bfgs',['bfgs',['../structvw.html#a95cfd823e6db9fdc1ca0098433c5e186',1,'vw']]],
   ['bfgs_2eh',['bfgs.h',['../bfgs_8h.html',1,'']]],
   ['bfgs_5fsetup',['bfgs_setup',['../bfgs_8h.html#ae882a8663631c189c41f5460dcbb58df',1,'bfgs.h']]],
-  ['bias',['bias',['../namespaceexploration.html#af8959a315f67ffc525d69efa4a1391a8',1,'exploration']]],
+  ['bias',['BIAS',['../namespaceexploration.html#af5f381e6405bb2a903cb4cf53b52a21f',1,'exploration']]],
   ['bin_5fread',['bin_read',['../io__buf_8h.html#a10997ed2c5ac46124bc21fce2220cc65',1,'io_buf.h']]],
   ['bin_5fread_5ffixed',['bin_read_fixed',['../classio__buf.html#aa66f1b7b868ba23259e277b352875249',1,'io_buf']]],
   ['bin_5ftext_5fread_5fwrite',['bin_text_read_write',['../io__buf_8h.html#a404c2bbb161ebc851cff5212a756e819',1,'io_buf.h']]],

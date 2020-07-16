@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['a',['a',['../namespaceexploration.html#ab7314f9e14ded0dbb39653608c37f656',1,'exploration']]],
   ['a_5fs',['a_s',['../unionpolyprediction.html#aff6f567473d301cd324039ccd13d74a8',1,'polyprediction']]],
   ['accumulate',['accumulate',['../accumulate_8h.html#aea2d714c4719eded697193fc3c0bcc0f',1,'accumulate.h']]],
   ['accumulate_2eh',['accumulate.h',['../accumulate_8h.html',1,'']]],

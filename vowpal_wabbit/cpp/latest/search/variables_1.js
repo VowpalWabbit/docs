@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['a',['a',['../namespaceexploration.html#ab7314f9e14ded0dbb39653608c37f656',1,'exploration']]],
   ['a_5fs',['a_s',['../unionpolyprediction.html#aff6f567473d301cd324039ccd13d74a8',1,'polyprediction']]],
   ['action',['action',['../structACTION__SCORE_1_1action__score.html#a3da08ec8bf04bb62c2435436de0b7beb',1,'ACTION_SCORE::action_score::action()'],['../structCB_1_1cb__class.html#a511b292fa65f62a62983677817b0e096',1,'CB::cb_class::action()'],['../structCB__EVAL_1_1label.html#a74e7d0b1d4b50ec21ae0dae9aa083946',1,'CB_EVAL::label::action()']]],
   ['action_5fcosts',['ACTION_COSTS',['../namespaceSearch.html#a86ee04bcb8443067b54b85e38e876cab',1,'Search']]],

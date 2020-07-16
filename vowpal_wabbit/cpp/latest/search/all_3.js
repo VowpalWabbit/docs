@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['c',['c',['../namespaceexploration.html#a3d3ce8990703e7933a87e28c40ba09d7',1,'exploration']]],
   ['cache',['cache',['../structinput__options.html#a01e267f82ebff128660f602b7765ae5c',1,'input_options']]],
   ['cache_2eh',['cache.h',['../cache_8h.html',1,'']]],
   ['cache_5ffeatures',['cache_features',['../cache_8h.html#a442df23fec457c355f2c1d17b4960eed',1,'cache.h']]],
@@ -133,6 +132,8 @@ var searchData=
   ['const_5fiterator',['const_iterator',['../classsparse__parameters.html#a2f9cea8c995aa2bce6e984b1b0b934af',1,'sparse_parameters::const_iterator()'],['../classdense__parameters.html#a629ff7365e43b32aeaa92b0638bb60f5',1,'dense_parameters::const_iterator()']]],
   ['constant',['constant',['../constant_8h.html#a756519f5578552c555ce0353b3fa4fc6',1,'constant.h']]],
   ['constant_2eh',['constant.h',['../constant_8h.html',1,'']]],
+  ['constant_5fa',['CONSTANT_A',['../namespaceexploration.html#abaf668aa89adbccbf973ed7087229251',1,'exploration']]],
+  ['constant_5fc',['CONSTANT_C',['../namespaceexploration.html#ab280cae4f247977e79c90ad5bc2c3053',1,'exploration']]],
   ['constant_5fnamespace',['constant_namespace',['../constant_8h.html#ac285b604938b5c167e499a1855cfbe5e',1,'constant.h']]],
   ['constexpr_5fint_5fpow10',['constexpr_int_pow10',['../namespaceVW_1_1details.html#ad3879df5b180db6a789f312968940cad',1,'VW::details']]],
   ['constexpr_5fnegative_5fint_5fpow10',['constexpr_negative_int_pow10',['../namespaceVW_1_1details.html#a00f89d94c130db70248d92c279b9780f',1,'VW::details']]],

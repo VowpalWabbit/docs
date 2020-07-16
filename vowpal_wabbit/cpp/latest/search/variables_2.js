@@ -4,7 +4,7 @@ var searchData=
   ['begin_5fparsed_5fexamples',['begin_parsed_examples',['../structparser.html#ae7c79dc035b14bfc367ee7434c593453',1,'parser']]],
   ['beta',['beta',['../structVW_1_1distributionally__robust_1_1ChiSquared_1_1Duals.html#abc85c1a1f4110f92c68bd188f0514f80',1,'VW::distributionally_robust::ChiSquared::Duals']]],
   ['bfgs',['bfgs',['../structvw.html#a95cfd823e6db9fdc1ca0098433c5e186',1,'vw']]],
-  ['bias',['bias',['../namespaceexploration.html#af8959a315f67ffc525d69efa4a1391a8',1,'exploration']]],
+  ['bias',['BIAS',['../namespaceexploration.html#af5f381e6405bb2a903cb4cf53b52a21f',1,'exploration']]],
   ['bool_5fstate',['bool_state',['../structContext.html#a0dda584309012bded089bb76d8a5be5d',1,'Context']]],
   ['bound_5fsock',['bound_sock',['../structparser.html#a42519589c5014a70b532ce88d3b243ef',1,'parser']]],
   ['buf',['buf',['../structExpReplay_1_1expreplay.html#a231e931ed1faacf4b218ae66ed32598d',1,'ExpReplay::expreplay']]],
