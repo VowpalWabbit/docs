@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['process_5fself_5finteractions',['PROCESS_SELF_INTERACTIONS',['../interactions__predict_8h.html#a03b2a48f436f31fc6ab799c2ff495707',1,'interactions_predict.h']]]
+  ['nominmax',['NOMINMAX',['../array__parameters_8h.html#a9f918755b601cf4bffca775992e6fb90',1,'NOMINMAX():&#160;array_parameters.h'],['../v__array_8h.html#a9f918755b601cf4bffca775992e6fb90',1,'NOMINMAX():&#160;v_array.h']]]
 ];

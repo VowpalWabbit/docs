@@ -166,6 +166,10 @@ Typedefs</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a485bcb8042f95f793e61258434951898"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a485bcb8042f95f793e61258434951898">convert</a> (size_t number)</td></tr>
 <tr class="separator:a485bcb8042f95f793e61258434951898"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50f7538dd71dc0487f0160a1cbe1777d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a50f7538dd71dc0487f0160a1cbe1777d">string_cpy</a> (char *dest, size_t dest_size, const char *src)</td></tr>
+<tr class="separator:a50f7538dd71dc0487f0160a1cbe1777d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a14838fa968bb4da6558105112c06d5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a5a14838fa968bb4da6558105112c06d5">file_open</a> (FILE **pf, const char *filename, const char *mode)</td></tr>
+<tr class="separator:a5a14838fa968bb4da6558105112c06d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44bc1852608ff4a4a4c17804097ca647"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a44bc1852608ff4a4a4c17804097ca647">print_decision_scores</a> (<a class="el" href="structVW_1_1io_1_1writer.html">VW::io::writer</a> *f, const <a class="el" href="namespaceVW.html#a84c21e57a0c1da95f3be2dbbc7418bd5">VW::decision_scores_t</a> &amp;decision_scores)</td></tr>
 <tr class="separator:a44bc1852608ff4a4a4c17804097ca647"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af45fe75fddc205969f3411d1b6095361"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#af45fe75fddc205969f3411d1b6095361">delete_decision_scores</a> (void *polypred)</td></tr>
@@ -905,6 +909,46 @@ template&lt;typename T &gt; </div>
           <td class="paramtype">int8_t&#160;</td>
           <td class="paramname"><em>exponent</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5a14838fa968bb4da6558105112c06d5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int VW::file_open </td>
+          <td>(</td>
+          <td class="paramtype">FILE **&#160;</td>
+          <td class="paramname"><em>pf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -2761,6 +2805,46 @@ template&lt;typename TScopeExitLambda &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a50f7538dd71dc0487f0160a1cbe1777d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int VW::string_cpy </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>dest_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>src</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a6dc3954a86b00e3084579296a5cce290"></a>
 <div class="memitem">
 <div class="memproto">
@@ -3031,7 +3115,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 22 2020 13:41:47 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 23 2020 14:24:01 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

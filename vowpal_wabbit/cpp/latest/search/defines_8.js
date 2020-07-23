@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nominmax',['NOMINMAX',['../array__parameters_8h.html#a9f918755b601cf4bffca775992e6fb90',1,'NOMINMAX():&#160;array_parameters.h'],['../v__array_8h.html#a9f918755b601cf4bffca775992e6fb90',1,'NOMINMAX():&#160;v_array.h']]]
+  ['last_5fcompatible_5fversion',['LAST_COMPATIBLE_VERSION',['../vw__versions_8h.html#ad504ab869ece6f0e02ed2d96f0a77673',1,'vw_versions.h']]]
 ];

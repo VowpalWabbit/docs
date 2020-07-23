@@ -87,20 +87,42 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">crossplat_compat.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;cstring&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;cstdio&gt;</code><br />
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespaceVW"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html">VW</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a6b6019110450b61a0b4acc55d7d336ca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crossplat__compat_8h.html#a6b6019110450b61a0b4acc55d7d336ca">sprintf_s</a>&#160;&#160;&#160;snprintf</td></tr>
 <tr class="separator:a6b6019110450b61a0b4acc55d7d336ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a803c6f2523bae626734a87a074e480e9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crossplat__compat_8h.html#a803c6f2523bae626734a87a074e480e9">vsprintf_s</a>&#160;&#160;&#160;vsnprintf</td></tr>
 <tr class="separator:a803c6f2523bae626734a87a074e480e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a832190fda79639e68038e8a2c0e2df02"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crossplat__compat_8h.html#a832190fda79639e68038e8a2c0e2df02">strtok_s</a>&#160;&#160;&#160;strtok_r</td></tr>
+<tr class="separator:a832190fda79639e68038e8a2c0e2df02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a33c9047aaa39206cb522b2b9900bbb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="crossplat__compat_8h.html#a0a33c9047aaa39206cb522b2b9900bbb">fscanf_s</a>&#160;&#160;&#160;fscanf</td></tr>
+<tr class="separator:a0a33c9047aaa39206cb522b2b9900bbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a50f7538dd71dc0487f0160a1cbe1777d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a50f7538dd71dc0487f0160a1cbe1777d">VW::string_cpy</a> (char *dest, size_t dest_size, const char *src)</td></tr>
+<tr class="separator:a50f7538dd71dc0487f0160a1cbe1777d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a14838fa968bb4da6558105112c06d5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a5a14838fa968bb4da6558105112c06d5">VW::file_open</a> (FILE **pf, const char *filename, const char *mode)</td></tr>
+<tr class="separator:a5a14838fa968bb4da6558105112c06d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -110,12 +132,36 @@ Variables</h2></td></tr>
 <tr class="separator:a409526622742cba7837fe43789181429"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a0a33c9047aaa39206cb522b2b9900bbb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define fscanf_s&#160;&#160;&#160;fscanf</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a6b6019110450b61a0b4acc55d7d336ca"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">#define sprintf_s&#160;&#160;&#160;snprintf</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a832190fda79639e68038e8a2c0e2df02"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define strtok_s&#160;&#160;&#160;strtok_r</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -162,7 +208,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 22 2020 13:41:46 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 23 2020 14:24:01 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
