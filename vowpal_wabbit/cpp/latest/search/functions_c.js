@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['namedlabels',['namedlabels',['../classnamedlabels.html#afcf01360ddc060e60180ad00d35836db',1,'namedlabels']]],
+  ['named_5flabels',['named_labels',['../classVW_1_1named__labels.html#af54e798bcd0812a93175a682f528c7b3',1,'VW::named_labels::named_labels(std::string label_list)'],['../classVW_1_1named__labels.html#a7ae0f4fd5b1c03bf1ab262b8f28bc819',1,'VW::named_labels::named_labels(const named_labels &amp;other)'],['../classVW_1_1named__labels.html#af0e51d1a22463fc7c3184fe83b04618c',1,'VW::named_labels::named_labels(named_labels &amp;&amp;other) noexcept=delete']]],
   ['namespace_5fcopy_5fguard',['namespace_copy_guard',['../classvw__slim_1_1namespace__copy__guard.html#acb059717b330a9956ce0fae67d48f853',1,'vw_slim::namespace_copy_guard']]],
   ['new_5funused_5fexample',['new_unused_example',['../namespaceVW.html#ae49d60be8cfe85c0159d1af44f131789',1,'VW']]],
   ['nn_5fsetup',['nn_setup',['../nn_8h.html#ae907bdf43ea7b80fd25a1ef191eb7098',1,'nn.h']]],

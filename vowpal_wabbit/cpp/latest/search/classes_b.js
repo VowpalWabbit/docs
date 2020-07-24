@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['namedlabels',['namedlabels',['../classnamedlabels.html',1,'']]],
+  ['named_5flabels',['named_labels',['../classVW_1_1named__labels.html',1,'VW']]],
   ['namespace',['Namespace',['../structNamespace.html',1,'']]],
   ['namespace_5fcopy_5fguard',['namespace_copy_guard',['../classvw__slim_1_1namespace__copy__guard.html',1,'vw_slim']]],
   ['no_5flock_5fobject_5fpool',['no_lock_object_pool',['../structVW_1_1no__lock__object__pool.html',1,'VW']]],

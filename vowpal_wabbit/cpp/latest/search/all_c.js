@@ -37,7 +37,7 @@ var searchData=
   ['lda',['lda',['../structvw.html#a64bc066c8b21fa67a5a7b2700fb9160b',1,'vw']]],
   ['lda_5fcore_2eh',['lda_core.h',['../lda__core_8h.html',1,'']]],
   ['lda_5fsetup',['lda_setup',['../lda__core_8h.html#a11c5b9f0067dbab1a38a327acf571dce',1,'lda_core.h']]],
-  ['ldict',['ldict',['../structshared__data.html#af3f34859ae9c5e9494362515dc05de33',1,'shared_data']]],
+  ['ldict',['ldict',['../structshared__data.html#a979c2e85da11a940fd214b3ce898d185',1,'shared_data']]],
   ['learn',['learn',['../structVW_1_1cb__explore__adf_1_1cb__explore__adf__base.html#a875201d16d873a1b3106cc67e9d40066',1,'VW::cb_explore_adf::cb_explore_adf_base::learn()'],['../structvw.html#adb9d40ecb21926593d311fc6a6ec5f29',1,'vw::learn(example &amp;)'],['../structvw.html#ae1057acfc5cb2ee3f9bc017307e8fd88',1,'vw::learn(multi_ex &amp;)'],['../structVW_1_1LEARNER_1_1learner.html#a5c925112a00430ff4390f3bb53d7de76',1,'VW::LEARNER::learner::learn()'],['../structVW_1_1slates_1_1slates__data.html#afb8eec65ca957af31bf72bb4fdc76901',1,'VW::slates::slates_data::learn()']]],
   ['learn_5fdata',['learn_data',['../structVW_1_1LEARNER_1_1learn__data.html',1,'VW::LEARNER']]],
   ['learn_5ff',['learn_f',['../structVW_1_1LEARNER_1_1learn__data.html#aa7342020a50ec32f1408367624329c3d',1,'VW::LEARNER::learn_data']]],

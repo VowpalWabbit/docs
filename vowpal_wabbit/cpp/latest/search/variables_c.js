@@ -15,7 +15,7 @@ var searchData=
   ['last_5fcorrect_5fcost',['last_correct_cost',['../structGEN__CS_1_1cb__to__cs.html#a84aed12d3c21ee450ffcc3128e3db994',1,'GEN_CS::cb_to_cs']]],
   ['last_5fpred_5freg',['last_pred_reg',['../structGEN__CS_1_1cb__to__cs.html#a4d390b9d79b8a71897d727dea0299356',1,'GEN_CS::cb_to_cs']]],
   ['lda',['lda',['../structvw.html#a64bc066c8b21fa67a5a7b2700fb9160b',1,'vw']]],
-  ['ldict',['ldict',['../structshared__data.html#af3f34859ae9c5e9494362515dc05de33',1,'shared_data']]],
+  ['ldict',['ldict',['../structshared__data.html#a979c2e85da11a940fd214b3ce898d185',1,'shared_data']]],
   ['learn_5ff',['learn_f',['../structVW_1_1LEARNER_1_1learn__data.html#aa7342020a50ec32f1408367624329c3d',1,'VW::LEARNER::learn_data']]],
   ['len',['len',['../structVW_1_1primitive__feature__space.html#a9105820ae67fbaa7a4ebf7af1c365821',1,'VW::primitive_feature_space']]],
   ['length',['length',['../structData.html#a8632fc8c2fe2275f20712086a489be41',1,'Data']]],
