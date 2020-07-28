@@ -4,7 +4,7 @@ var searchData=
   ['make_5foption',['make_option',['../namespaceVW_1_1config.html#ae768389a49d24d07215612b2f824d520',1,'VW::config']]],
   ['make_5funique',['make_unique',['../namespaceVW.html#a6e3217b67aa62bbcb889c612e5d8016a',1,'VW']]],
   ['marginal_5fsetup',['marginal_setup',['../marginal_8h.html#a36fa30431f07256809f0025a0b10bd17',1,'marginal.h']]],
-  ['mask',['mask',['../classsparse__parameters.html#acd0d819874910aec30666ae130290324',1,'sparse_parameters::mask()'],['../classparameters.html#a417b307b1980e9744d7f2b94acd3a4b2',1,'parameters::mask()'],['../classdense__parameters.html#a34bd44e030d9a1de5ced97b12cb8f1c7',1,'dense_parameters::mask()']]],
+  ['mask',['mask',['../classsparse__parameters.html#acd0d819874910aec30666ae130290324',1,'sparse_parameters::mask()'],['../classparameters.html#a2a044a9985b28a990661c09171a0992e',1,'parameters::mask()'],['../classdense__parameters.html#a34bd44e030d9a1de5ced97b12cb8f1c7',1,'dense_parameters::mask()']]],
   ['matcher_5fp',['MATCHER_P',['../ut__util_8h.html#a5b8c89fa9020f562a680bf7f856f8147',1,'ut_util.h']]],
   ['maybe_5fcompact',['maybe_compact',['../classBeam_1_1beam.html#ae02906b31a8e9a130a9b2dd234f1baba',1,'Beam::beam']]],
   ['maybe_5foverride_5fprediction',['maybe_override_prediction',['../classSearch_1_1BaseTask.html#a664d7119df38d66bfca83fd402c3ab74',1,'Search::BaseTask']]],
