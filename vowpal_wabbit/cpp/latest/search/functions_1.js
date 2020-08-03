@@ -29,5 +29,6 @@ var searchData=
   ['bs_5fsetup',['bs_setup',['../bs_8h.html#a156436446a728503c737e622fc9dfede',1,'bs.h']]],
   ['buf_5fread',['buf_read',['../classio__buf.html#a0fe43cbf0e4539940ad28f482c322cd9',1,'io_buf']]],
   ['buf_5fwrite',['buf_write',['../classio__buf.html#aaff9b1ba96e89f3abfa6105f1f369b34',1,'io_buf']]],
-  ['buffer_5fstart',['buffer_start',['../classio__buf.html#aa79ba9e0c96d4ebde9ef98493c629806',1,'io_buf']]]
+  ['buffer_5fstart',['buffer_start',['../classio__buf.html#aa79ba9e0c96d4ebde9ef98493c629806',1,'io_buf']]],
+  ['build',['build',['../structVW_1_1kskip__ngram__transformer.html#a315701be95f5d52920f40c63580e26b9',1,'VW::kskip_ngram_transformer']]]
 ];

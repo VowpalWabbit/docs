@@ -1,8 +1,21 @@
 var searchData=
 [
-  ['make_5findex_5fsequence',['make_index_sequence',['../structVW_1_1details_1_1make__index__sequence.html',1,'VW::details']]],
-  ['make_5findex_5fsequence_3c_200_2c_20integers_2e_2e_2e_20_3e',['make_index_sequence&lt; 0, Integers... &gt;',['../structVW_1_1details_1_1make__index__sequence_3_010_00_01Integers_8_8_8_01_4.html',1,'VW::details']]],
-  ['model_5fparser',['model_parser',['../classvw__slim_1_1model__parser.html',1,'vw_slim']]],
-  ['multipredict_5finfo',['multipredict_info',['../structGD_1_1multipredict__info.html',1,'GD']]],
-  ['multistate',['MultiState',['../structMultiState.html',1,'']]]
+  ['label',['label',['../structVW_1_1slates_1_1label.html',1,'VW::slates']]],
+  ['label',['label',['../structCB_1_1label.html',1,'CB']]],
+  ['label',['label',['../structCCB_1_1label.html',1,'CCB']]],
+  ['label',['label',['../structCOST__SENSITIVE_1_1label.html',1,'COST_SENSITIVE']]],
+  ['label',['label',['../structCB__EVAL_1_1label.html',1,'CB_EVAL']]],
+  ['label_5fdata',['label_data',['../structlabel__data.html',1,'']]],
+  ['label_5fparser',['label_parser',['../structlabel__parser.html',1,'']]],
+  ['label_5ft',['label_t',['../structMULTICLASS_1_1label__t.html',1,'MULTICLASS']]],
+  ['labelindexstate',['LabelIndexState',['../structLabelIndexState.html',1,'']]],
+  ['labelobjectstate',['LabelObjectState',['../classLabelObjectState.html',1,'']]],
+  ['labels',['labels',['../structMULTILABEL_1_1labels.html',1,'MULTILABEL']]],
+  ['labelsinglepropertystate',['LabelSinglePropertyState',['../structLabelSinglePropertyState.html',1,'']]],
+  ['labelstate',['LabelState',['../structLabelState.html',1,'']]],
+  ['learn_5fdata',['learn_data',['../structVW_1_1LEARNER_1_1learn__data.html',1,'VW::LEARNER']]],
+  ['learner',['learner',['../structVW_1_1LEARNER_1_1learner.html',1,'VW::LEARNER']]],
+  ['location_5freference',['location_reference',['../classvw__slim_1_1internal_1_1location__reference.html',1,'vw_slim::internal']]],
+  ['location_5fvalue',['location_value',['../classvw__slim_1_1internal_1_1location__value.html',1,'vw_slim::internal']]],
+  ['loss_5ffunction',['loss_function',['../classloss__function.html',1,'']]]
 ];

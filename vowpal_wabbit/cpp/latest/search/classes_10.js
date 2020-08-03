@@ -1,8 +1,24 @@
 var searchData=
 [
-  ['tagstate',['TagState',['../structTagState.html',1,'']]],
-  ['task_5fdata',['task_data',['../structHookTask_1_1task__data.html',1,'HookTask']]],
-  ['textstate',['TextState',['../structTextState.html',1,'']]],
-  ['typed_5foption',['typed_option',['../structVW_1_1config_1_1typed__option.html',1,'VW::config']]],
-  ['typelist',['typelist',['../structVW_1_1config_1_1typelist.html',1,'VW::config']]]
+  ['save_5fload_5fdata',['save_load_data',['../structVW_1_1LEARNER_1_1save__load__data.html',1,'VW::LEARNER']]],
+  ['scope_5fexit_5fcaller',['scope_exit_caller',['../classVW_1_1details_1_1scope__exit__caller.html',1,'VW::details']]],
+  ['score_5fiterator',['score_iterator',['../classACTION__SCORE_1_1score__iterator.html',1,'ACTION_SCORE']]],
+  ['search',['search',['../structSearch_1_1search.html',1,'Search']]],
+  ['search_5fmetatask',['search_metatask',['../structSearch_1_1search__metatask.html',1,'Search']]],
+  ['search_5ftask',['search_task',['../structSearch_1_1search__task.html',1,'Search']]],
+  ['sensitivity_5fdata',['sensitivity_data',['../structVW_1_1LEARNER_1_1sensitivity__data.html',1,'VW::LEARNER']]],
+  ['shared_5fdata',['shared_data',['../structshared__data.html',1,'']]],
+  ['slates_5fdata',['slates_data',['../structVW_1_1slates_1_1slates__data.html',1,'VW::slates']]],
+  ['slotoutcomelist',['SlotOutcomeList',['../classSlotOutcomeList.html',1,'']]],
+  ['slotsstate',['SlotsState',['../structSlotsState.html',1,'']]],
+  ['socket',['socket',['../structVW_1_1io_1_1socket.html',1,'VW::io']]],
+  ['socket_5fcloser',['socket_closer',['../structVW_1_1io_1_1details_1_1socket__closer.html',1,'VW::io::details']]],
+  ['spanningtree',['SpanningTree',['../classVW_1_1SpanningTree.html',1,'VW']]],
+  ['sparse_5fiterator',['sparse_iterator',['../classsparse__iterator.html',1,'']]],
+  ['sparse_5fparameters',['sparse_parameters',['../classsparse__parameters.html',1,'']]],
+  ['strict_5fparse_5fexception',['strict_parse_exception',['../classVW_1_1strict__parse__exception.html',1,'VW']]],
+  ['stride_5fshift_5fguard',['stride_shift_guard',['../classvw__slim_1_1stride__shift__guard.html',1,'vw_slim']]],
+  ['stringtostringstate',['StringToStringState',['../classStringToStringState.html',1,'']]],
+  ['swap_5fguard_5fimpl',['swap_guard_impl',['../classVW_1_1details_1_1swap__guard__impl.html',1,'VW::details']]],
+  ['swap_5fguard_5fimpl_5frvalue',['swap_guard_impl_rvalue',['../classVW_1_1details_1_1swap__guard__impl__rvalue.html',1,'VW::details']]]
 ];

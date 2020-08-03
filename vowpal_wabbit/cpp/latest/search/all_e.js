@@ -17,8 +17,6 @@ var searchData=
   ['neighbor_5fnamespace',['neighbor_namespace',['../constant_8h.html#a56c27bfb62e2e33a607225d9c8d06a82',1,'constant.h']]],
   ['network_2eh',['network.h',['../network_8h.html',1,'']]],
   ['new_5funused_5fexample',['new_unused_example',['../namespaceVW.html#ae49d60be8cfe85c0159d1af44f131789',1,'VW']]],
-  ['ngram',['ngram',['../structvw.html#a2ea70956c0d786c3696d4739e4203f38',1,'vw']]],
-  ['ngram_5fstrings',['ngram_strings',['../structvw.html#ab690aeb4f01b7f2e519d688b51e23f7e',1,'vw']]],
   ['nn_2eh',['nn.h',['../nn_8h.html',1,'']]],
   ['nn_5foutput_5fnamespace',['nn_output_namespace',['../constant_8h.html#add9fa018879554a58b54f0b39a5c750b',1,'constant.h']]],
   ['nn_5fsetup',['nn_setup',['../nn_8h.html#ae907bdf43ea7b80fd25a1ef191eb7098',1,'nn.h']]],

@@ -8,8 +8,6 @@ var searchData=
   ['namespace_5fpath',['namespace_path',['../structContext.html#a408bdeefe995ebb3993ac72842e14473',1,'Context']]],
   ['nb_5fex_5fregressors',['nb_ex_regressors',['../structGEN__CS_1_1cb__to__cs.html#a01035400474484702805476f486fe449',1,'GEN_CS::cb_to_cs']]],
   ['neighbor_5fnamespace',['neighbor_namespace',['../constant_8h.html#a56c27bfb62e2e33a607225d9c8d06a82',1,'constant.h']]],
-  ['ngram',['ngram',['../structvw.html#a2ea70956c0d786c3696d4739e4203f38',1,'vw']]],
-  ['ngram_5fstrings',['ngram_strings',['../structvw.html#ab690aeb4f01b7f2e519d688b51e23f7e',1,'vw']]],
   ['nn_5foutput_5fnamespace',['nn_output_namespace',['../constant_8h.html#add9fa018879554a58b54f0b39a5c750b',1,'constant.h']]],
   ['no_5fbias',['no_bias',['../structvw.html#ae181de61c3d4731d88bd89936132d1cd',1,'vw']]],
   ['no_5fcaching',['NO_CACHING',['../namespaceSearch.html#ac4845b2f404fb40ccda20dbbee8371ce',1,'Search']]],

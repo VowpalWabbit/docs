@@ -1,11 +1,10 @@
 var searchData=
 [
-  ['parameters',['parameters',['../classparameters.html',1,'']]],
-  ['parser',['parser',['../structparser.html',1,'']]],
-  ['polylabel',['polylabel',['../unionpolylabel.html',1,'']]],
-  ['polyprediction',['polyprediction',['../unionpolyprediction.html',1,'']]],
-  ['predictor',['predictor',['../classSearch_1_1predictor.html',1,'Search']]],
-  ['primitive_5ffeature_5fspace',['primitive_feature_space',['../structVW_1_1primitive__feature__space.html',1,'VW']]],
-  ['ptr_5fqueue',['ptr_queue',['../classVW_1_1ptr__queue.html',1,'VW']]],
-  ['ptr_5fqueue_3c_20example_20_3e',['ptr_queue&lt; example &gt;',['../classVW_1_1ptr__queue.html',1,'VW']]]
+  ['object_5fpool',['object_pool',['../structVW_1_1object__pool.html',1,'VW']]],
+  ['object_5fpool_3c_20example_20_3e',['object_pool&lt; example &gt;',['../structVW_1_1object__pool.html',1,'VW']]],
+  ['option_5fgroup_5fdefinition',['option_group_definition',['../structVW_1_1config_1_1option__group__definition.html',1,'VW::config']]],
+  ['options_5fboost_5fpo',['options_boost_po',['../structVW_1_1config_1_1options__boost__po.html',1,'VW::config']]],
+  ['options_5fi',['options_i',['../structVW_1_1config_1_1options__i.html',1,'VW::config']]],
+  ['options_5fserializer_5fboost_5fpo',['options_serializer_boost_po',['../structVW_1_1config_1_1options__serializer__boost__po.html',1,'VW::config']]],
+  ['options_5fserializer_5fi',['options_serializer_i',['../structVW_1_1config_1_1options__serializer__i.html',1,'VW::config']]]
 ];
