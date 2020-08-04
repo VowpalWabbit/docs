@@ -87,6 +87,7 @@ var searchData=
   ['reset_5fsource',['reset_source',['../parser_8h.html#a15933ea0422f9781ce061a9c802f6ca9',1,'parser.h']]],
   ['resettable',['resettable',['../structparser.html#a31e92900e2b124f96f0b21a0e5303bed',1,'parser']]],
   ['resize',['resize',['../structv__array.html#a4a32b45f55342a03095d74e7d4131ca3',1,'v_array']]],
+  ['return_5ferror',['RETURN_ERROR',['../api__status_8h.html#af5bb2027390d2e54b5001d8dd008a1d1',1,'api_status.h']]],
   ['return_5fexploration_5fon_5ffail',['RETURN_EXPLORATION_ON_FAIL',['../vw__slim__return__codes_8h.html#a2be967e8998a2b5aba07738d82fa220d',1,'vw_slim_return_codes.h']]],
   ['return_5ffeatures',['return_features',['../namespaceVW.html#a6ed9d821e6acd459339e226387f079ca',1,'VW']]],
   ['return_5fmultiple_5fexample',['return_multiple_example',['../namespaceVW.html#a37faebe34a72f26470ab3de6a3a9ca57',1,'VW']]],

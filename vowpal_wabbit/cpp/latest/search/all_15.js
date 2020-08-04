@@ -14,6 +14,7 @@ var searchData=
   ['unique_5ffeatures',['unique_features',['../unique__sort_8h.html#a209bc72175c2bbe3c9977f6952b8db5e',1,'unique_sort.h']]],
   ['unique_5fsort_2eh',['unique_sort.h',['../unique__sort_8h.html',1,'']]],
   ['unique_5fsort_5ffeatures',['unique_sort_features',['../unique__sort_8h.html#a821d46680f1930b521884c4805783bf3',1,'unique_sort.h']]],
+  ['unknown_5fs',['unknown_s',['../namespaceVW_1_1experimental_1_1error__code.html#a91f4888701cac87d262a46e6bfb5ebae',1,'VW::experimental::error_code']]],
   ['unset',['unset',['../namespaceCCB.html#a58ee4b1ece77de222418e9eb75203cf5a81619981df4dbaaaae9411f0ffc93734',1,'CCB::unset()'],['../namespaceVW_1_1slates.html#a894cb7b1b775c40313bbb5e1c4b48a50aa004f5e5953fa776ffbd2ca967a0104c',1,'VW::slates::unset()']]],
   ['update',['update',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#a94e981844ac9c0bdaa6d4bde9a61d894',1,'VW::distributionally_robust::ChiSquared::update()'],['../structshared__data.html#ad3b0fc9176c689eb63bf255499223c62',1,'shared_data::update()'],['../structVW_1_1LEARNER_1_1learner.html#af994d66959b825bc3b92af991529c7e6',1,'VW::LEARNER::learner::update()']]],
   ['update_5fdump_5finterval',['update_dump_interval',['../structshared__data.html#a86dc26ad7249ba38f03f8a2c6f315f37',1,'shared_data']]],

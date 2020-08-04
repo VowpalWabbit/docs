@@ -5,6 +5,7 @@ var searchData=
   ['active_2eh',['active.h',['../active_8h.html',1,'']]],
   ['active_5fcover_2eh',['active_cover.h',['../active__cover_8h.html',1,'']]],
   ['allreduce_2eh',['allreduce.h',['../allreduce_8h.html',1,'']]],
+  ['api_5fstatus_2eh',['api_status.h',['../api__status_8h.html',1,'']]],
   ['array_5fparameters_2eh',['array_parameters.h',['../array__parameters_8h.html',1,'']]],
   ['array_5fparameters_5fdense_2eh',['array_parameters_dense.h',['../array__parameters__dense_8h.html',1,'']]],
   ['audit_5fregressor_2eh',['audit_regressor.h',['../audit__regressor_8h.html',1,'']]],
