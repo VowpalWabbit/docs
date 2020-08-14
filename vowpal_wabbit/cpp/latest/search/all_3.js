@@ -61,6 +61,7 @@ var searchData=
   ['cb_5fexplore_5fadf_5fregcb_2eh',['cb_explore_adf_regcb.h',['../cb__explore__adf__regcb_8h.html',1,'']]],
   ['cb_5fexplore_5fadf_5frnd_2eh',['cb_explore_adf_rnd.h',['../cb__explore__adf__rnd_8h.html',1,'']]],
   ['cb_5fexplore_5fadf_5fsoftmax_2eh',['cb_explore_adf_softmax.h',['../cb__explore__adf__softmax_8h.html',1,'']]],
+  ['cb_5fexplore_5fadf_5fsquarecb_2eh',['cb_explore_adf_squarecb.h',['../cb__explore__adf__squarecb_8h.html',1,'']]],
   ['cb_5fexplore_5fsetup',['cb_explore_setup',['../cb__explore_8h.html#a23b68c61a3b8feb4198dcd164110838e',1,'cb_explore.h']]],
   ['cb_5flabel',['cb_label',['../classLabelObjectState.html#abfeca2588607b65014d22b5fb410c05e',1,'LabelObjectState::cb_label()'],['../namespaceCB.html#a53f211db30bb394a7e31aca72a7f4ff7',1,'CB::cb_label()']]],
   ['cb_5fsample_2eh',['cb_sample.h',['../cb__sample_8h.html',1,'']]],
