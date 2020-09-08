@@ -17,6 +17,7 @@ var searchData=
   ['vw_5ftype_5fsafe_5fnull',['VW_TYPE_SAFE_NULL',['../vwdll_8h.html#a70551fec65dc75986bf05a4002a66a77',1,'vwdll.h']]],
   ['vw_5fwarning_5fdisable',['VW_WARNING_DISABLE',['../future__compat_8h.html#a74769810b1e56a7d83bfe9abbb2bcc64',1,'future_compat.h']]],
   ['vw_5fwarning_5fdisable_5fclass_5fmemaccess',['VW_WARNING_DISABLE_CLASS_MEMACCESS',['../future__compat_8h.html#a9225d298721facede08fbd2eebbdf5c6',1,'future_compat.h']]],
+  ['vw_5fwarning_5fdisable_5fcpp_5f17_5flang_5fext',['VW_WARNING_DISABLE_CPP_17_LANG_EXT',['../future__compat_8h.html#a1a1a960a3c61cc8b77b76bbe4cd6b3b6',1,'future_compat.h']]],
   ['vw_5fwarning_5fdisable_5fdeprecated_5fusage',['VW_WARNING_DISABLE_DEPRECATED_USAGE',['../future__compat_8h.html#af0fa7adfe5074b8ce24ef0b649612436',1,'future_compat.h']]],
   ['vw_5fwarning_5fstate_5fpop',['VW_WARNING_STATE_POP',['../future__compat_8h.html#a2d17cd6c08058ed32e5fb9dc77629280',1,'future_compat.h']]],
   ['vw_5fwarning_5fstate_5fpush',['VW_WARNING_STATE_PUSH',['../future__compat_8h.html#a8b8610e8e86287f2b68275bf31acefb8',1,'future_compat.h']]]
