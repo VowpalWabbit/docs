@@ -21,6 +21,7 @@ var searchData=
   ['erase_5falloweds',['erase_alloweds',['../classSearch_1_1predictor.html#a37f20e137ca6bb4f4e26f3aca3e6cf89',1,'Search::predictor']]],
   ['erase_5foracles',['erase_oracles',['../classSearch_1_1predictor.html#a698e3f6835fa56ab5152519707d0790a',1,'Search::predictor']]],
   ['error',['error',['../structContext.html#aafced41f3e89369fbf1a02fce44cae5f',1,'Context::error()'],['../structVWReaderHandler.html#a530c57ae7488a6a1fb093e246916224f',1,'VWReaderHandler::error()']]],
+  ['error_5fcode_5fdefinition',['ERROR_CODE_DEFINITION',['../error__data_8h.html#aa5bbc6da29aa867353b4685f3d5f0be8',1,'error_data.h']]],
   ['escaped_5ftokenize',['escaped_tokenize',['../parse__primitives_8h.html#ae5600a8846c21114564ebd52b6c5a953',1,'parse_primitives.h']]],
   ['eval_5fcount_5fof_5fgenerated_5fft',['eval_count_of_generated_ft',['../namespaceINTERACTIONS.html#a70d329bc4b0d1fbf782ab05fdf48f1e8',1,'INTERACTIONS']]],
   ['example',['example',['../structexample.html#a0dd4a644507e758514515b19b54a63cf',1,'example::example()'],['../structexample.html#ae585e124bf2164583b422e091c864137',1,'example::example(const example &amp;)=delete'],['../structexample.html#a013d04bf791688fddc6bfa766849e9fa',1,'example::example(example &amp;&amp;other) noexcept']]],

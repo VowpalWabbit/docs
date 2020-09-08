@@ -20,6 +20,7 @@ var searchData=
   ['normalized',['normalized',['../classparameters.html#a151823ac932181e2ec63a13461bacc17',1,'parameters']]],
   ['normalized_5fidx',['normalized_idx',['../structvw.html#ad7062a07e5af79d245edd2f3b68a525a',1,'vw']]],
   ['normalized_5fsum_5fnorm_5fx',['normalized_sum_norm_x',['../structvw.html#afa2559e77fad3416bc8d651a029e02d8',1,'vw']]],
+  ['not_5fimplemented',['not_implemented',['../error__data_8h.html#ac0b7538a87fdb2c9510cdbdc8ac06573',1,'error_data.h']]],
   ['num_5factions',['num_actions',['../structGEN__CS_1_1cb__to__cs.html#a2e90df436e7af9200081952367583d30',1,'GEN_CS::cb_to_cs::num_actions()'],['../structHookTask_1_1task__data.html#a3cd682caa601613f82b1ff0dfefc0af2',1,'HookTask::task_data::num_actions()']]],
   ['num_5fbits',['num_bits',['../structvw.html#a01b6f14b593ea5a2fe5ae65dead97fab',1,'vw']]],
   ['num_5fchildren',['num_children',['../structvw.html#a2dc2f1037c9154881ab2c8c901cbdfd6',1,'vw']]],
