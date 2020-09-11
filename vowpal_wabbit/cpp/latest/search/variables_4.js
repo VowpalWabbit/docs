@@ -16,6 +16,7 @@ var searchData=
   ['delete_5fprediction',['delete_prediction',['../structvw.html#ac2b0c04220c30a62a64a1ef9e4b115b0',1,'vw']]],
   ['delete_5frun_5fobject',['delete_run_object',['../structHookTask_1_1task__data.html#afc26800c1d71af93e60d6a2f6a311313',1,'HookTask::task_data']]],
   ['dense_5fweights',['dense_weights',['../classparameters.html#aaac8b2f50c6d9ee2946d09c9183b4029',1,'parameters']]],
+  ['depth',['depth',['../structVW_1_1cats__tree_1_1tree__node.html#a1ea0d14ccf7fe22a107bd38b7364d860',1,'VW::cats_tree::tree_node']]],
   ['dict',['dict',['../structdictionary__info.html#a2d11720a16042a4f08e04b63a9a1ab85',1,'dictionary_info']]],
   ['dictionary_5fnamespace',['dictionary_namespace',['../constant_8h.html#a22d641c8a975eeb2634e4d0bc8b2b254',1,'constant.h']]],
   ['dictionary_5fpath',['dictionary_path',['../structvw.html#ae4c78e59541075fe4b806ff09d7aefbe',1,'vw']]],

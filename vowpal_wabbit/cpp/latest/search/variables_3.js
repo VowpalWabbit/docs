@@ -1,9 +1,11 @@
 var searchData=
 [
+  ['ca_5flabel',['CA_LABEL',['../constant_8h.html#a5a79e06dd262b0c3288cee6b0dfa9a26',1,'constant.h']]],
   ['cache',['cache',['../structinput__options.html#a01e267f82ebff128660f602b7765ae5c',1,'input_options']]],
   ['cache_5ffiles',['cache_files',['../structinput__options.html#aaa5711bc58e24146cf3c1a2538aaa7ac',1,'input_options']]],
   ['cache_5flabel',['cache_label',['../structlabel__parser.html#a954752d474128378070d524350347fe6',1,'label_parser']]],
   ['cb',['cb',['../unionpolylabel.html#a293cc4e63d558d42f7af0a174b44928b',1,'polylabel']]],
+  ['cb_5fcont',['cb_cont',['../unionpolylabel.html#a78c3cf73edbe7fdf476af44941226428',1,'polylabel']]],
   ['cb_5fdata_5f5_5fmodel',['cb_data_5_model',['../data_8h.html#a7bfed4a34b49ffa92cabc144f0585811',1,'data.h']]],
   ['cb_5fdata_5f5_5fmodel_5flen',['cb_data_5_model_len',['../data_8h.html#a47e105eecf968d5913ed3779dc751d4a',1,'data.h']]],
   ['cb_5fdata_5f5_5fpred',['cb_data_5_pred',['../data_8h.html#a80ea22313367f9ed5101eb3a9df66b76',1,'data.h']]],
@@ -56,9 +58,9 @@ var searchData=
   ['constant_5fnamespace',['constant_namespace',['../constant_8h.html#ac285b604938b5c167e499a1855cfbe5e',1,'constant.h']]],
   ['contraction',['contraction',['../structshared__data.html#a208ec97cf415ce6197c5508e59090982',1,'shared_data']]],
   ['copy_5flabel',['copy_label',['../structlabel__parser.html#a5ea152d70d58bd39c9d2d39719d12b44',1,'label_parser']]],
-  ['cost',['cost',['../structBeam_1_1beam__element.html#a6d849514b67775933fc7c9a4e9c29975',1,'Beam::beam_element::cost()'],['../structCB_1_1cb__class.html#aba9eb88e830100c30273f7e008915d4d',1,'CB::cb_class::cost()'],['../structCCB_1_1conditional__contextual__bandit__outcome.html#a1c68cab923afb586d7bc6f7de7c7a98e',1,'CCB::conditional_contextual_bandit_outcome::cost()'],['../structVW_1_1slates_1_1label.html#ae02553fa48831fcbca891ed30e60fd29',1,'VW::slates::label::cost()']]],
+  ['cost',['cost',['../structBeam_1_1beam__element.html#a6d849514b67775933fc7c9a4e9c29975',1,'Beam::beam_element::cost()'],['../structVW_1_1cats__tree_1_1node__cost.html#a6bd4b4447da297facb3ef339c83b2796',1,'VW::cats_tree::node_cost::cost()'],['../structCB_1_1cb__class.html#aba9eb88e830100c30273f7e008915d4d',1,'CB::cb_class::cost()'],['../structVW_1_1cb__continuous_1_1continuous__label__elm.html#aa8b78353c7f30e62f2c957217029e47b',1,'VW::cb_continuous::continuous_label_elm::cost()'],['../structCCB_1_1conditional__contextual__bandit__outcome.html#a1c68cab923afb586d7bc6f7de7c7a98e',1,'CCB::conditional_contextual_bandit_outcome::cost()'],['../structVW_1_1slates_1_1label.html#ae02553fa48831fcbca891ed30e60fd29',1,'VW::slates::label::cost()']]],
   ['cost_5fsensitive',['cost_sensitive',['../structvw.html#af9e5eb2ecf3d580711945fc3f21edddf',1,'vw']]],
-  ['costs',['costs',['../structCB_1_1label.html#a83515ee225c4673620f87be916afad26',1,'CB::label::costs()'],['../structCOST__SENSITIVE_1_1label.html#a0b3bd4e05a093705489822c812024fd6',1,'COST_SENSITIVE::label::costs()']]],
+  ['costs',['costs',['../structCB_1_1label.html#a83515ee225c4673620f87be916afad26',1,'CB::label::costs()'],['../structVW_1_1cb__continuous_1_1continuous__label.html#a5c8df23cff8932da98096a22ce4b2bf7',1,'VW::cb_continuous::continuous_label::costs()'],['../structCOST__SENSITIVE_1_1label.html#a0b3bd4e05a093705489822c812024fd6',1,'COST_SENSITIVE::label::costs()']]],
   ['count',['count',['../structGD_1_1multipredict__info.html#a45e42ef1577c53c56eaad9fcd0d83cc0',1,'GD::multipredict_info']]],
   ['counts',['counts',['../structparser.html#af91f2a3bc35a0f226486f23071eb020e',1,'parser']]],
   ['cs',['cs',['../unionpolylabel.html#aad89c13bd745b60a93a2d3d85f0619ed',1,'polylabel']]],

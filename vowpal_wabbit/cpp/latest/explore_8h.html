@@ -107,41 +107,59 @@ Macros</h2></td></tr>
 <tr class="separator:a9819e7e96cd7591d9b59397d49860721"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca3702914ee50a55c4dcbfe17e13f963"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="explore_8h.html#aca3702914ee50a55c4dcbfe17e13f963">E_EXPLORATION_BAD_RANGE</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:aca3702914ee50a55c4dcbfe17e13f963"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c046decfab962e1823b5ce3eb879826"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="explore_8h.html#a3c046decfab962e1823b5ce3eb879826">E_EXPLORATION_PDF_RANKING_SIZE_MISMATCH</a>&#160;&#160;&#160;2</td></tr>
-<tr class="separator:a3c046decfab962e1823b5ce3eb879826"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf7b5cddd327067a6dd5d422f49ae2be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="explore_8h.html#aaf7b5cddd327067a6dd5d422f49ae2be">E_EXPLORATION_PMF_RANKING_SIZE_MISMATCH</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:aaf7b5cddd327067a6dd5d422f49ae2be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add9c322e84246c092dc5fee7b7df39cc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="explore_8h.html#add9c322e84246c092dc5fee7b7df39cc">E_EXPLORATION_BAD_PDF</a>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:add9c322e84246c092dc5fee7b7df39cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aace5080dc17f64700cf846fda27bf942"><td class="memTemplParams" colspan="2">template&lt;typename It &gt; </td></tr>
-<tr class="memitem:aace5080dc17f64700cf846fda27bf942"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexploration.html#aace5080dc17f64700cf846fda27bf942">exploration::generate_epsilon_greedy</a> (float epsilon, uint32_t top_action, It pdf_first, It pdf_last)</td></tr>
-<tr class="memdesc:aace5080dc17f64700cf846fda27bf942"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates epsilon-greedy style exploration distribution.  <a href="namespaceexploration.html#aace5080dc17f64700cf846fda27bf942">More...</a><br /></td></tr>
-<tr class="separator:aace5080dc17f64700cf846fda27bf942"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5eacdc590e0879fc8655c77c3002ebc"><td class="memTemplParams" colspan="2">template&lt;typename InputIt , typename OutputIt &gt; </td></tr>
-<tr class="memitem:ad5eacdc590e0879fc8655c77c3002ebc"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexploration.html#ad5eacdc590e0879fc8655c77c3002ebc">exploration::generate_softmax</a> (float lambda, InputIt scores_first, InputIt scores_last, OutputIt pdf_first, OutputIt pdf_last)</td></tr>
-<tr class="memdesc:ad5eacdc590e0879fc8655c77c3002ebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates softmax style exploration distribution.  <a href="namespaceexploration.html#ad5eacdc590e0879fc8655c77c3002ebc">More...</a><br /></td></tr>
-<tr class="separator:ad5eacdc590e0879fc8655c77c3002ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45f7314e2f8f30bb0b262c2e3f55bd71"><td class="memTemplParams" colspan="2">template&lt;typename InputIt , typename OutputIt &gt; </td></tr>
-<tr class="memitem:a45f7314e2f8f30bb0b262c2e3f55bd71"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexploration.html#a45f7314e2f8f30bb0b262c2e3f55bd71">exploration::generate_bag</a> (InputIt top_actions_first, InputIt top_actions_last, OutputIt pdf_first, OutputIt pdf_last)</td></tr>
-<tr class="memdesc:a45f7314e2f8f30bb0b262c2e3f55bd71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates an exploration distribution according to votes on actions.  <a href="namespaceexploration.html#a45f7314e2f8f30bb0b262c2e3f55bd71">More...</a><br /></td></tr>
-<tr class="separator:a45f7314e2f8f30bb0b262c2e3f55bd71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae02cae6dc92c2bc747c469636a4e3a7a"><td class="memTemplParams" colspan="2">template&lt;typename It &gt; </td></tr>
-<tr class="memitem:ae02cae6dc92c2bc747c469636a4e3a7a"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexploration.html#ae02cae6dc92c2bc747c469636a4e3a7a">exploration::enforce_minimum_probability</a> (float minimum_uniform, bool update_zero_elements, It pdf_first, It pdf_last)</td></tr>
-<tr class="memdesc:ae02cae6dc92c2bc747c469636a4e3a7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the pdf to ensure each action is explored with at least minimum_uniform/num_actions.  <a href="namespaceexploration.html#ae02cae6dc92c2bc747c469636a4e3a7a">More...</a><br /></td></tr>
-<tr class="separator:ae02cae6dc92c2bc747c469636a4e3a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedb9fe8f3ab08de86f0438dd3ead8d29"><td class="memTemplParams" colspan="2">template&lt;typename It &gt; </td></tr>
-<tr class="memitem:aedb9fe8f3ab08de86f0438dd3ead8d29"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexploration.html#aedb9fe8f3ab08de86f0438dd3ead8d29">exploration::sample_after_normalizing</a> (uint64_t seed, It pdf_first, It pdf_last, uint32_t &amp;chosen_index)</td></tr>
-<tr class="memdesc:aedb9fe8f3ab08de86f0438dd3ead8d29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sample an index from the provided pdf. If the pdf is not normalized it will be updated in-place.  <a href="namespaceexploration.html#aedb9fe8f3ab08de86f0438dd3ead8d29">More...</a><br /></td></tr>
-<tr class="separator:aedb9fe8f3ab08de86f0438dd3ead8d29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3575ff0c162a60c2672714dbfdd4b24d"><td class="memTemplParams" colspan="2">template&lt;typename It &gt; </td></tr>
-<tr class="memitem:a3575ff0c162a60c2672714dbfdd4b24d"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexploration.html#a3575ff0c162a60c2672714dbfdd4b24d">exploration::sample_after_normalizing</a> (const char *seed, It pdf_first, It pdf_last, uint32_t &amp;chosen_index)</td></tr>
-<tr class="memdesc:a3575ff0c162a60c2672714dbfdd4b24d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sample an index from the provided pdf. If the pdf is not normalized it will be updated in-place.  <a href="namespaceexploration.html#a3575ff0c162a60c2672714dbfdd4b24d">More...</a><br /></td></tr>
-<tr class="separator:a3575ff0c162a60c2672714dbfdd4b24d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbbb0e479c2d44723062349a4e55ada6"><td class="memTemplParams" colspan="2">template&lt;typename It &gt; </td></tr>
+<tr class="memitem:adbbb0e479c2d44723062349a4e55ada6"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexploration.html#adbbb0e479c2d44723062349a4e55ada6">exploration::generate_epsilon_greedy</a> (float epsilon, uint32_t top_action, It pmf_first, It pmf_last)</td></tr>
+<tr class="memdesc:adbbb0e479c2d44723062349a4e55ada6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates epsilon-greedy style exploration distribution.  <a href="namespaceexploration.html#adbbb0e479c2d44723062349a4e55ada6">More...</a><br /></td></tr>
+<tr class="separator:adbbb0e479c2d44723062349a4e55ada6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe78de8b7c6b2a3856fd8cce1c55d006"><td class="memTemplParams" colspan="2">template&lt;typename InputIt , typename OutputIt &gt; </td></tr>
+<tr class="memitem:afe78de8b7c6b2a3856fd8cce1c55d006"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexploration.html#afe78de8b7c6b2a3856fd8cce1c55d006">exploration::generate_softmax</a> (float lambda, InputIt scores_first, InputIt scores_last, OutputIt pmf_first, OutputIt pmf_last)</td></tr>
+<tr class="memdesc:afe78de8b7c6b2a3856fd8cce1c55d006"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates softmax style exploration distribution.  <a href="namespaceexploration.html#afe78de8b7c6b2a3856fd8cce1c55d006">More...</a><br /></td></tr>
+<tr class="separator:afe78de8b7c6b2a3856fd8cce1c55d006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f2e861a96eac46a4306c487a771ed17"><td class="memTemplParams" colspan="2">template&lt;typename InputIt , typename OutputIt &gt; </td></tr>
+<tr class="memitem:a8f2e861a96eac46a4306c487a771ed17"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexploration.html#a8f2e861a96eac46a4306c487a771ed17">exploration::generate_bag</a> (InputIt top_actions_first, InputIt top_actions_last, OutputIt pmf_first, OutputIt pmf_last)</td></tr>
+<tr class="memdesc:a8f2e861a96eac46a4306c487a771ed17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates an exploration distribution according to votes on actions.  <a href="namespaceexploration.html#a8f2e861a96eac46a4306c487a771ed17">More...</a><br /></td></tr>
+<tr class="separator:a8f2e861a96eac46a4306c487a771ed17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a015a97df84dade185b3a72fb75b773c1"><td class="memTemplParams" colspan="2">template&lt;typename It &gt; </td></tr>
+<tr class="memitem:a015a97df84dade185b3a72fb75b773c1"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexploration.html#a015a97df84dade185b3a72fb75b773c1">exploration::enforce_minimum_probability</a> (float minimum_uniform, bool update_zero_elements, It pmf_first, It pmf_last)</td></tr>
+<tr class="memdesc:a015a97df84dade185b3a72fb75b773c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the pmf to ensure each action is explored with at least minimum_uniform/num_actions.  <a href="namespaceexploration.html#a015a97df84dade185b3a72fb75b773c1">More...</a><br /></td></tr>
+<tr class="separator:a015a97df84dade185b3a72fb75b773c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab382848bf181c7f4e2337a6dab830960"><td class="memTemplParams" colspan="2">template&lt;typename It &gt; </td></tr>
+<tr class="memitem:ab382848bf181c7f4e2337a6dab830960"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexploration.html#ab382848bf181c7f4e2337a6dab830960">exploration::sample_after_normalizing</a> (uint64_t seed, It pmf_first, It pmf_last, uint32_t &amp;chosen_index)</td></tr>
+<tr class="memdesc:ab382848bf181c7f4e2337a6dab830960"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sample an index from the provided pmf. If the pmf is not normalized it will be updated in-place.  <a href="namespaceexploration.html#ab382848bf181c7f4e2337a6dab830960">More...</a><br /></td></tr>
+<tr class="separator:ab382848bf181c7f4e2337a6dab830960"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd425d1b14f37276a3d453aff4f2cca4"><td class="memTemplParams" colspan="2">template&lt;typename It &gt; </td></tr>
+<tr class="memitem:afd425d1b14f37276a3d453aff4f2cca4"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexploration.html#afd425d1b14f37276a3d453aff4f2cca4">exploration::sample_after_normalizing</a> (const char *seed, It pmf_first, It pmf_last, uint32_t &amp;chosen_index)</td></tr>
+<tr class="memdesc:afd425d1b14f37276a3d453aff4f2cca4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sample an index from the provided pmf. If the pmf is not normalized it will be updated in-place.  <a href="namespaceexploration.html#afd425d1b14f37276a3d453aff4f2cca4">More...</a><br /></td></tr>
+<tr class="separator:afd425d1b14f37276a3d453aff4f2cca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab10e3e9ec434c6a0c679215080859a7e"><td class="memTemplParams" colspan="2">template&lt;typename ActionIt &gt; </td></tr>
 <tr class="memitem:ab10e3e9ec434c6a0c679215080859a7e"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexploration.html#ab10e3e9ec434c6a0c679215080859a7e">exploration::swap_chosen</a> (ActionIt action_first, ActionIt action_last, uint32_t chosen_index)</td></tr>
 <tr class="memdesc:ab10e3e9ec434c6a0c679215080859a7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap the first value with the chosen index.  <a href="namespaceexploration.html#ab10e3e9ec434c6a0c679215080859a7e">More...</a><br /></td></tr>
 <tr class="separator:ab10e3e9ec434c6a0c679215080859a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5450a3326aed19a97b409ff222e477ae"><td class="memTemplParams" colspan="2">template&lt;typename It &gt; </td></tr>
+<tr class="memitem:a5450a3326aed19a97b409ff222e477ae"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexploration.html#a5450a3326aed19a97b409ff222e477ae">exploration::sample_pdf</a> (uint64_t *p_seed, It pdf_first, It pdf_last, float &amp;chosen_value, float &amp;pdf_value)</td></tr>
+<tr class="memdesc:a5450a3326aed19a97b409ff222e477ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sample a continuous value from the provided pdf.  <a href="namespaceexploration.html#a5450a3326aed19a97b409ff222e477ae">More...</a><br /></td></tr>
+<tr class="separator:a5450a3326aed19a97b409ff222e477ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="add9c322e84246c092dc5fee7b7df39cc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define E_EXPLORATION_BAD_PDF&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="aca3702914ee50a55c4dcbfe17e13f963"></a>
 <div class="memitem">
 <div class="memproto">
@@ -154,12 +172,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a3c046decfab962e1823b5ce3eb879826"></a>
+<a class="anchor" id="aaf7b5cddd327067a6dd5d422f49ae2be"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define E_EXPLORATION_PDF_RANKING_SIZE_MISMATCH&#160;&#160;&#160;2</td>
+          <td class="memname">#define E_EXPLORATION_PMF_RANKING_SIZE_MISMATCH&#160;&#160;&#160;2</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -181,7 +199,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 9 2020 13:18:33 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 11 2020 18:03:46 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

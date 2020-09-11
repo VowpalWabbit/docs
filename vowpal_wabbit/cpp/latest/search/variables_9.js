@@ -1,7 +1,7 @@
 var searchData=
 [
   ['i',['i',['../unionexploration_1_1int__float.html#ad2bc6c4c956bde873b30883f1e1f73d3',1,'exploration::int_float']]],
-  ['id',['id',['../structvw.html#a7d0a3b6b38562a530f01e0b9162e3e83',1,'vw']]],
+  ['id',['id',['../structVW_1_1cats__tree_1_1tree__node.html#a61e16c2cc5da0df4b7060465ec4b9d46',1,'VW::cats_tree::tree_node::id()'],['../structvw.html#a7d0a3b6b38562a530f01e0b9162e3e83',1,'vw::id()'],['../structVW_1_1offset__tree_1_1tree__node.html#abdddece8c7416bbfae454d3a4af6d038',1,'VW::offset_tree::tree_node::id()']]],
   ['ids',['ids',['../structparser.html#a2df792349ebce230daa93e1bc5eb6d48',1,'parser']]],
   ['ignore',['ignore',['../structvw.html#a9895838c15043709e1cde223565faee1',1,'vw']]],
   ['ignore_5flinear',['ignore_linear',['../structvw.html#a3226665740102aae098c592cc9c7b911',1,'vw']]],
@@ -30,6 +30,7 @@ var searchData=
   ['invalid_5fvw_5fhandle',['INVALID_VW_HANDLE',['../vwdll_8h.html#ab1541f2a2f55dedf8783039be5ac92bd',1,'vwdll.h']]],
   ['invariant_5fupdates',['invariant_updates',['../structvw.html#a50963dd51a6db4d0c52cb643a24b6299',1,'vw']]],
   ['is_5fldf',['IS_LDF',['../namespaceSearch.html#a0cf0cfef46a3b6962d91d7de1ae67796',1,'Search']]],
+  ['is_5fleaf',['is_leaf',['../structVW_1_1cats__tree_1_1tree__node.html#a31e3c49061ab5a2f7e421756d3519235',1,'VW::cats_tree::tree_node::is_leaf()'],['../structVW_1_1offset__tree_1_1tree__node.html#a8ce024e6040b5f3a8f3a28ac64f27b03',1,'VW::offset_tree::tree_node::is_leaf()']]],
   ['is_5fmore_5fthan_5ftwo_5flabels_5fobserved',['is_more_than_two_labels_observed',['../structshared__data.html#aace73283af2eb71308dd6eb0ee291fe1',1,'shared_data']]],
   ['is_5fmultiline',['is_multiline',['../structVW_1_1LEARNER_1_1learner.html#a6d534bda509f1a10b361a2d6d5136c97',1,'VW::LEARNER::learner']]]
 ];

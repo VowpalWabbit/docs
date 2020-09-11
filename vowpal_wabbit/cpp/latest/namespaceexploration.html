@@ -98,60 +98,73 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aace5080dc17f64700cf846fda27bf942"><td class="memTemplParams" colspan="2">template&lt;typename It &gt; </td></tr>
-<tr class="memitem:aace5080dc17f64700cf846fda27bf942"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexploration.html#aace5080dc17f64700cf846fda27bf942">generate_epsilon_greedy</a> (float epsilon, uint32_t top_action, It pdf_first, It pdf_last)</td></tr>
-<tr class="memdesc:aace5080dc17f64700cf846fda27bf942"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates epsilon-greedy style exploration distribution.  <a href="#aace5080dc17f64700cf846fda27bf942">More...</a><br /></td></tr>
-<tr class="separator:aace5080dc17f64700cf846fda27bf942"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5eacdc590e0879fc8655c77c3002ebc"><td class="memTemplParams" colspan="2">template&lt;typename InputIt , typename OutputIt &gt; </td></tr>
-<tr class="memitem:ad5eacdc590e0879fc8655c77c3002ebc"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexploration.html#ad5eacdc590e0879fc8655c77c3002ebc">generate_softmax</a> (float lambda, InputIt scores_first, InputIt scores_last, OutputIt pdf_first, OutputIt pdf_last)</td></tr>
-<tr class="memdesc:ad5eacdc590e0879fc8655c77c3002ebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates softmax style exploration distribution.  <a href="#ad5eacdc590e0879fc8655c77c3002ebc">More...</a><br /></td></tr>
-<tr class="separator:ad5eacdc590e0879fc8655c77c3002ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45f7314e2f8f30bb0b262c2e3f55bd71"><td class="memTemplParams" colspan="2">template&lt;typename InputIt , typename OutputIt &gt; </td></tr>
-<tr class="memitem:a45f7314e2f8f30bb0b262c2e3f55bd71"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexploration.html#a45f7314e2f8f30bb0b262c2e3f55bd71">generate_bag</a> (InputIt top_actions_first, InputIt top_actions_last, OutputIt pdf_first, OutputIt pdf_last)</td></tr>
-<tr class="memdesc:a45f7314e2f8f30bb0b262c2e3f55bd71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates an exploration distribution according to votes on actions.  <a href="#a45f7314e2f8f30bb0b262c2e3f55bd71">More...</a><br /></td></tr>
-<tr class="separator:a45f7314e2f8f30bb0b262c2e3f55bd71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae02cae6dc92c2bc747c469636a4e3a7a"><td class="memTemplParams" colspan="2">template&lt;typename It &gt; </td></tr>
-<tr class="memitem:ae02cae6dc92c2bc747c469636a4e3a7a"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexploration.html#ae02cae6dc92c2bc747c469636a4e3a7a">enforce_minimum_probability</a> (float minimum_uniform, bool update_zero_elements, It pdf_first, It pdf_last)</td></tr>
-<tr class="memdesc:ae02cae6dc92c2bc747c469636a4e3a7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the pdf to ensure each action is explored with at least minimum_uniform/num_actions.  <a href="#ae02cae6dc92c2bc747c469636a4e3a7a">More...</a><br /></td></tr>
-<tr class="separator:ae02cae6dc92c2bc747c469636a4e3a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedb9fe8f3ab08de86f0438dd3ead8d29"><td class="memTemplParams" colspan="2">template&lt;typename It &gt; </td></tr>
-<tr class="memitem:aedb9fe8f3ab08de86f0438dd3ead8d29"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexploration.html#aedb9fe8f3ab08de86f0438dd3ead8d29">sample_after_normalizing</a> (uint64_t seed, It pdf_first, It pdf_last, uint32_t &amp;chosen_index)</td></tr>
-<tr class="memdesc:aedb9fe8f3ab08de86f0438dd3ead8d29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sample an index from the provided pdf. If the pdf is not normalized it will be updated in-place.  <a href="#aedb9fe8f3ab08de86f0438dd3ead8d29">More...</a><br /></td></tr>
-<tr class="separator:aedb9fe8f3ab08de86f0438dd3ead8d29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3575ff0c162a60c2672714dbfdd4b24d"><td class="memTemplParams" colspan="2">template&lt;typename It &gt; </td></tr>
-<tr class="memitem:a3575ff0c162a60c2672714dbfdd4b24d"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexploration.html#a3575ff0c162a60c2672714dbfdd4b24d">sample_after_normalizing</a> (const char *seed, It pdf_first, It pdf_last, uint32_t &amp;chosen_index)</td></tr>
-<tr class="memdesc:a3575ff0c162a60c2672714dbfdd4b24d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sample an index from the provided pdf. If the pdf is not normalized it will be updated in-place.  <a href="#a3575ff0c162a60c2672714dbfdd4b24d">More...</a><br /></td></tr>
-<tr class="separator:a3575ff0c162a60c2672714dbfdd4b24d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbbb0e479c2d44723062349a4e55ada6"><td class="memTemplParams" colspan="2">template&lt;typename It &gt; </td></tr>
+<tr class="memitem:adbbb0e479c2d44723062349a4e55ada6"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexploration.html#adbbb0e479c2d44723062349a4e55ada6">generate_epsilon_greedy</a> (float epsilon, uint32_t top_action, It pmf_first, It pmf_last)</td></tr>
+<tr class="memdesc:adbbb0e479c2d44723062349a4e55ada6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates epsilon-greedy style exploration distribution.  <a href="#adbbb0e479c2d44723062349a4e55ada6">More...</a><br /></td></tr>
+<tr class="separator:adbbb0e479c2d44723062349a4e55ada6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe78de8b7c6b2a3856fd8cce1c55d006"><td class="memTemplParams" colspan="2">template&lt;typename InputIt , typename OutputIt &gt; </td></tr>
+<tr class="memitem:afe78de8b7c6b2a3856fd8cce1c55d006"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexploration.html#afe78de8b7c6b2a3856fd8cce1c55d006">generate_softmax</a> (float lambda, InputIt scores_first, InputIt scores_last, OutputIt pmf_first, OutputIt pmf_last)</td></tr>
+<tr class="memdesc:afe78de8b7c6b2a3856fd8cce1c55d006"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates softmax style exploration distribution.  <a href="#afe78de8b7c6b2a3856fd8cce1c55d006">More...</a><br /></td></tr>
+<tr class="separator:afe78de8b7c6b2a3856fd8cce1c55d006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f2e861a96eac46a4306c487a771ed17"><td class="memTemplParams" colspan="2">template&lt;typename InputIt , typename OutputIt &gt; </td></tr>
+<tr class="memitem:a8f2e861a96eac46a4306c487a771ed17"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexploration.html#a8f2e861a96eac46a4306c487a771ed17">generate_bag</a> (InputIt top_actions_first, InputIt top_actions_last, OutputIt pmf_first, OutputIt pmf_last)</td></tr>
+<tr class="memdesc:a8f2e861a96eac46a4306c487a771ed17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates an exploration distribution according to votes on actions.  <a href="#a8f2e861a96eac46a4306c487a771ed17">More...</a><br /></td></tr>
+<tr class="separator:a8f2e861a96eac46a4306c487a771ed17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a015a97df84dade185b3a72fb75b773c1"><td class="memTemplParams" colspan="2">template&lt;typename It &gt; </td></tr>
+<tr class="memitem:a015a97df84dade185b3a72fb75b773c1"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexploration.html#a015a97df84dade185b3a72fb75b773c1">enforce_minimum_probability</a> (float minimum_uniform, bool update_zero_elements, It pmf_first, It pmf_last)</td></tr>
+<tr class="memdesc:a015a97df84dade185b3a72fb75b773c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the pmf to ensure each action is explored with at least minimum_uniform/num_actions.  <a href="#a015a97df84dade185b3a72fb75b773c1">More...</a><br /></td></tr>
+<tr class="separator:a015a97df84dade185b3a72fb75b773c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab382848bf181c7f4e2337a6dab830960"><td class="memTemplParams" colspan="2">template&lt;typename It &gt; </td></tr>
+<tr class="memitem:ab382848bf181c7f4e2337a6dab830960"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexploration.html#ab382848bf181c7f4e2337a6dab830960">sample_after_normalizing</a> (uint64_t seed, It pmf_first, It pmf_last, uint32_t &amp;chosen_index)</td></tr>
+<tr class="memdesc:ab382848bf181c7f4e2337a6dab830960"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sample an index from the provided pmf. If the pmf is not normalized it will be updated in-place.  <a href="#ab382848bf181c7f4e2337a6dab830960">More...</a><br /></td></tr>
+<tr class="separator:ab382848bf181c7f4e2337a6dab830960"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd425d1b14f37276a3d453aff4f2cca4"><td class="memTemplParams" colspan="2">template&lt;typename It &gt; </td></tr>
+<tr class="memitem:afd425d1b14f37276a3d453aff4f2cca4"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexploration.html#afd425d1b14f37276a3d453aff4f2cca4">sample_after_normalizing</a> (const char *seed, It pmf_first, It pmf_last, uint32_t &amp;chosen_index)</td></tr>
+<tr class="memdesc:afd425d1b14f37276a3d453aff4f2cca4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sample an index from the provided pmf. If the pmf is not normalized it will be updated in-place.  <a href="#afd425d1b14f37276a3d453aff4f2cca4">More...</a><br /></td></tr>
+<tr class="separator:afd425d1b14f37276a3d453aff4f2cca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab10e3e9ec434c6a0c679215080859a7e"><td class="memTemplParams" colspan="2">template&lt;typename ActionIt &gt; </td></tr>
 <tr class="memitem:ab10e3e9ec434c6a0c679215080859a7e"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexploration.html#ab10e3e9ec434c6a0c679215080859a7e">swap_chosen</a> (ActionIt action_first, ActionIt action_last, uint32_t chosen_index)</td></tr>
 <tr class="memdesc:ab10e3e9ec434c6a0c679215080859a7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swap the first value with the chosen index.  <a href="#ab10e3e9ec434c6a0c679215080859a7e">More...</a><br /></td></tr>
 <tr class="separator:ab10e3e9ec434c6a0c679215080859a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5450a3326aed19a97b409ff222e477ae"><td class="memTemplParams" colspan="2">template&lt;typename It &gt; </td></tr>
+<tr class="memitem:a5450a3326aed19a97b409ff222e477ae"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexploration.html#a5450a3326aed19a97b409ff222e477ae">sample_pdf</a> (uint64_t *p_seed, It pdf_first, It pdf_last, float &amp;chosen_value, float &amp;pdf_value)</td></tr>
+<tr class="memdesc:a5450a3326aed19a97b409ff222e477ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sample a continuous value from the provided pdf.  <a href="#a5450a3326aed19a97b409ff222e477ae">More...</a><br /></td></tr>
+<tr class="separator:a5450a3326aed19a97b409ff222e477ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d99f2849ca698712b1a2a6e451019c5"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexploration.html#a5d99f2849ca698712b1a2a6e451019c5">uniform_random_merand48_advance</a> (uint64_t &amp;initial)</td></tr>
+<tr class="separator:a5d99f2849ca698712b1a2a6e451019c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a181ae01106bcdd79234a1bf66d88d645"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexploration.html#a181ae01106bcdd79234a1bf66d88d645">uniform_random_merand48</a> (uint64_t initial)</td></tr>
 <tr class="separator:a181ae01106bcdd79234a1bf66d88d645"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a209c5fa697a4623797a9525d4c831a28"><td class="memTemplParams" colspan="2">template&lt;typename It &gt; </td></tr>
-<tr class="memitem:a209c5fa697a4623797a9525d4c831a28"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexploration.html#a209c5fa697a4623797a9525d4c831a28">generate_epsilon_greedy</a> (float epsilon, uint32_t top_action, It pdf_first, It pdf_last, std::random_access_iterator_tag)</td></tr>
-<tr class="separator:a209c5fa697a4623797a9525d4c831a28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a162f29e6e7787f23d36281e3aff1068e"><td class="memTemplParams" colspan="2">template&lt;typename InputIt , typename OutputIt &gt; </td></tr>
-<tr class="memitem:a162f29e6e7787f23d36281e3aff1068e"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexploration.html#a162f29e6e7787f23d36281e3aff1068e">generate_softmax</a> (float lambda, InputIt scores_first, InputIt scores_last, std::input_iterator_tag, OutputIt pdf_first, OutputIt pdf_last, std::random_access_iterator_tag)</td></tr>
-<tr class="separator:a162f29e6e7787f23d36281e3aff1068e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab79ce7db02bb33f1ce3cc92d14b0c2b9"><td class="memTemplParams" colspan="2">template&lt;typename InputIt , typename OutputIt &gt; </td></tr>
-<tr class="memitem:ab79ce7db02bb33f1ce3cc92d14b0c2b9"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexploration.html#ab79ce7db02bb33f1ce3cc92d14b0c2b9">generate_bag</a> (InputIt top_actions_first, InputIt top_actions_last, std::input_iterator_tag, OutputIt pdf_first, OutputIt pdf_last, std::random_access_iterator_tag)</td></tr>
-<tr class="separator:ab79ce7db02bb33f1ce3cc92d14b0c2b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ad2f5c7c89557a12683c29060c737e7"><td class="memTemplParams" colspan="2">template&lt;typename It &gt; </td></tr>
-<tr class="memitem:a4ad2f5c7c89557a12683c29060c737e7"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexploration.html#a4ad2f5c7c89557a12683c29060c737e7">enforce_minimum_probability</a> (float minimum_uniform, bool update_zero_elements, It pdf_first, It pdf_last, std::random_access_iterator_tag)</td></tr>
-<tr class="separator:a4ad2f5c7c89557a12683c29060c737e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39c177b457d86b03cfaa219c6f09b378"><td class="memTemplParams" colspan="2">template&lt;typename It &gt; </td></tr>
-<tr class="memitem:a39c177b457d86b03cfaa219c6f09b378"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexploration.html#a39c177b457d86b03cfaa219c6f09b378">sample_after_normalizing</a> (uint64_t seed, It pdf_first, It pdf_last, uint32_t &amp;chosen_index, std::input_iterator_tag)</td></tr>
-<tr class="separator:a39c177b457d86b03cfaa219c6f09b378"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af19e331559b1a2041ec9f499d9233037"><td class="memTemplParams" colspan="2">template&lt;typename It &gt; </td></tr>
-<tr class="memitem:af19e331559b1a2041ec9f499d9233037"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexploration.html#af19e331559b1a2041ec9f499d9233037">sample_after_normalizing</a> (const char *seed, It pdf_first, It pdf_last, uint32_t &amp;chosen_index, std::random_access_iterator_tag pdf_category)</td></tr>
-<tr class="separator:af19e331559b1a2041ec9f499d9233037"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1ca1086c858e0b92536fec36622b662"><td class="memTemplParams" colspan="2">template&lt;typename It &gt; </td></tr>
+<tr class="memitem:aa1ca1086c858e0b92536fec36622b662"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexploration.html#aa1ca1086c858e0b92536fec36622b662">generate_epsilon_greedy</a> (float epsilon, uint32_t top_action, It pmf_first, It pmf_last, std::random_access_iterator_tag)</td></tr>
+<tr class="separator:aa1ca1086c858e0b92536fec36622b662"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a473563230db7063f1b11758e9ad63806"><td class="memTemplParams" colspan="2">template&lt;typename InputIt , typename OutputIt &gt; </td></tr>
+<tr class="memitem:a473563230db7063f1b11758e9ad63806"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexploration.html#a473563230db7063f1b11758e9ad63806">generate_softmax</a> (float lambda, InputIt scores_first, InputIt scores_last, std::input_iterator_tag, OutputIt pmf_first, OutputIt pmf_last, std::random_access_iterator_tag)</td></tr>
+<tr class="separator:a473563230db7063f1b11758e9ad63806"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a332dc354292df3365a8563e667dbe46a"><td class="memTemplParams" colspan="2">template&lt;typename InputIt , typename OutputIt &gt; </td></tr>
+<tr class="memitem:a332dc354292df3365a8563e667dbe46a"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexploration.html#a332dc354292df3365a8563e667dbe46a">generate_bag</a> (InputIt top_actions_first, InputIt top_actions_last, std::input_iterator_tag, OutputIt pmf_first, OutputIt pmf_last, std::random_access_iterator_tag)</td></tr>
+<tr class="separator:a332dc354292df3365a8563e667dbe46a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c309fd7505376cd480aba9d0a119628"><td class="memTemplParams" colspan="2">template&lt;typename It &gt; </td></tr>
+<tr class="memitem:a7c309fd7505376cd480aba9d0a119628"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexploration.html#a7c309fd7505376cd480aba9d0a119628">enforce_minimum_probability</a> (float minimum_uniform, bool update_zero_elements, It pmf_first, It pmf_last, std::random_access_iterator_tag)</td></tr>
+<tr class="separator:a7c309fd7505376cd480aba9d0a119628"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7999e478ede90760a084ae469a927751"><td class="memTemplParams" colspan="2">template&lt;typename It &gt; </td></tr>
+<tr class="memitem:a7999e478ede90760a084ae469a927751"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexploration.html#a7999e478ede90760a084ae469a927751">sample_after_normalizing</a> (uint64_t seed, It pmf_first, It pmf_last, uint32_t &amp;chosen_index, std::input_iterator_tag)</td></tr>
+<tr class="separator:a7999e478ede90760a084ae469a927751"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab89d9a62f03c1d2f9a71a243a21c1eef"><td class="memTemplParams" colspan="2">template&lt;typename It &gt; </td></tr>
+<tr class="memitem:ab89d9a62f03c1d2f9a71a243a21c1eef"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexploration.html#ab89d9a62f03c1d2f9a71a243a21c1eef">sample_after_normalizing</a> (const char *seed, It pmf_first, It pmf_last, uint32_t &amp;chosen_index, std::random_access_iterator_tag pmf_category)</td></tr>
+<tr class="separator:ab89d9a62f03c1d2f9a71a243a21c1eef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8dc7b408e2425c8bda6e5a5768b84f1"><td class="memTemplParams" colspan="2">template&lt;typename ActionIt &gt; </td></tr>
 <tr class="memitem:ab8dc7b408e2425c8bda6e5a5768b84f1"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexploration.html#ab8dc7b408e2425c8bda6e5a5768b84f1">swap_chosen</a> (ActionIt action_first, ActionIt action_last, std::forward_iterator_tag, uint32_t chosen_index)</td></tr>
 <tr class="separator:ab8dc7b408e2425c8bda6e5a5768b84f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a613076d27240b55ee0401e59aee8bf13"><td class="memTemplParams" colspan="2">template&lt;typename ActionsIt &gt; </td></tr>
 <tr class="memitem:a613076d27240b55ee0401e59aee8bf13"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexploration.html#a613076d27240b55ee0401e59aee8bf13">swap_chosen</a> (ActionsIt action_first, ActionsIt action_last, uint32_t chosen_index)</td></tr>
 <tr class="separator:a613076d27240b55ee0401e59aee8bf13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab94fb5e8fa209aa46feaf80a2e1ad791"><td class="memTemplParams" colspan="2">template&lt;typename It &gt; </td></tr>
+<tr class="memitem:ab94fb5e8fa209aa46feaf80a2e1ad791"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexploration.html#ab94fb5e8fa209aa46feaf80a2e1ad791">sample_scores</a> (uint64_t *p_seed, It scores_first, It scores_last, uint32_t &amp;chosen_index, std::random_access_iterator_tag)</td></tr>
+<tr class="separator:ab94fb5e8fa209aa46feaf80a2e1ad791"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a834913e268a40935b1c843b11fcf6772"><td class="memTemplParams" colspan="2">template&lt;typename It &gt; </td></tr>
+<tr class="memitem:a834913e268a40935b1c843b11fcf6772"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexploration.html#a834913e268a40935b1c843b11fcf6772">sample_pdf</a> (uint64_t *p_seed, It pdf_first, It pdf_last, float &amp;chosen_value, float &amp;pdf_value, std::random_access_iterator_tag)</td></tr>
+<tr class="memdesc:a834913e268a40935b1c843b11fcf6772"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sample a continuous value from the provided pdf.  <a href="#a834913e268a40935b1c843b11fcf6772">More...</a><br /></td></tr>
+<tr class="separator:a834913e268a40935b1c843b11fcf6772"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -163,7 +176,7 @@ Variables</h2></td></tr>
 <tr class="separator:af5f381e6405bb2a903cb4cf53b52a21f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ae02cae6dc92c2bc747c469636a4e3a7a"></a>
+<a class="anchor" id="a015a97df84dade185b3a72fb75b773c1"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -185,13 +198,13 @@ template&lt;typename It &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">It&#160;</td>
-          <td class="paramname"><em>pdf_first</em>, </td>
+          <td class="paramname"><em>pmf_first</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">It&#160;</td>
-          <td class="paramname"><em>pdf_last</em>&#160;</td>
+          <td class="paramname"><em>pmf_last</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -201,19 +214,19 @@ template&lt;typename It &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Updates the pdf to ensure each action is explored with at least minimum_uniform/num_actions. </p>
+<p>Updates the pmf to ensure each action is explored with at least minimum_uniform/num_actions. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">It</td><td>Iterator type of the pdf. Must be a RandomAccessIterator. </td></tr>
+    <tr><td class="paramname">It</td><td>Iterator type of the pmf. Must be a RandomAccessIterator. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">minimum_uniform</td><td>The minimum amount of uniform distribution to impose on the pdf. </td></tr>
+    <tr><td class="paramname">minimum_uniform</td><td>The minimum amount of uniform distribution to impose on the pmf. </td></tr>
     <tr><td class="paramname">update_zero_elements</td><td>If true elements with zero probability are updated, otherwise those actions will be unchanged. </td></tr>
-    <tr><td class="paramname">pdf_first</td><td>Iterator pointing to the pre-allocated beginning of the pdf to be generated by this function. </td></tr>
-    <tr><td class="paramname">pdf_last</td><td>Iterator pointing to the pre-allocated end of the pdf to be generated by this function. </td></tr>
+    <tr><td class="paramname">pmf_first</td><td>Iterator pointing to the pre-allocated beginning of the pmf to be generated by this function. </td></tr>
+    <tr><td class="paramname">pmf_last</td><td>Iterator pointing to the pre-allocated end of the pmf to be generated by this function. </td></tr>
   </table>
   </dd>
 </dl>
@@ -221,7 +234,7 @@ template&lt;typename It &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a4ad2f5c7c89557a12683c29060c737e7"></a>
+<a class="anchor" id="a7c309fd7505376cd480aba9d0a119628"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -243,13 +256,13 @@ template&lt;typename It &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">It&#160;</td>
-          <td class="paramname"><em>pdf_first</em>, </td>
+          <td class="paramname"><em>pmf_first</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">It&#160;</td>
-          <td class="paramname"><em>pdf_last</em>, </td>
+          <td class="paramname"><em>pmf_last</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -267,7 +280,7 @@ template&lt;typename It &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a45f7314e2f8f30bb0b262c2e3f55bd71"></a>
+<a class="anchor" id="a8f2e861a96eac46a4306c487a771ed17"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -289,13 +302,13 @@ template&lt;typename InputIt , typename OutputIt &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">OutputIt&#160;</td>
-          <td class="paramname"><em>pdf_first</em>, </td>
+          <td class="paramname"><em>pmf_first</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">OutputIt&#160;</td>
-          <td class="paramname"><em>pdf_last</em>&#160;</td>
+          <td class="paramname"><em>pmf_last</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -309,7 +322,7 @@ template&lt;typename InputIt , typename OutputIt &gt; </div>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">InputIt</td><td>Iterator type of the input actions. Must be an InputIterator. </td></tr>
-    <tr><td class="paramname">OutputIt</td><td>Iterator type of the pre-allocated pdf. Must be a RandomAccessIterator. </td></tr>
+    <tr><td class="paramname">OutputIt</td><td>Iterator type of the pre-allocated pmf. Must be a RandomAccessIterator. </td></tr>
   </table>
   </dd>
 </dl>
@@ -317,8 +330,8 @@ template&lt;typename InputIt , typename OutputIt &gt; </div>
   <table class="params">
     <tr><td class="paramname">top_actions_first</td><td>Iterator pointing to the beginning of the top actions. </td></tr>
     <tr><td class="paramname">top_actions_last</td><td>Iterator pointing to the end of the top actions. </td></tr>
-    <tr><td class="paramname">pdf_first</td><td>Iterator pointing to the pre-allocated beginning of the pdf to be generated by this function. </td></tr>
-    <tr><td class="paramname">pdf_last</td><td>Iterator pointing to the pre-allocated end of the pdf to be generated by this function. </td></tr>
+    <tr><td class="paramname">pmf_first</td><td>Iterator pointing to the pre-allocated beginning of the pmf to be generated by this function. </td></tr>
+    <tr><td class="paramname">pmf_last</td><td>Iterator pointing to the pre-allocated end of the pmf to be generated by this function. </td></tr>
   </table>
   </dd>
 </dl>
@@ -326,7 +339,7 @@ template&lt;typename InputIt , typename OutputIt &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ab79ce7db02bb33f1ce3cc92d14b0c2b9"></a>
+<a class="anchor" id="a332dc354292df3365a8563e667dbe46a"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -354,13 +367,13 @@ template&lt;typename InputIt , typename OutputIt &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">OutputIt&#160;</td>
-          <td class="paramname"><em>pdf_first</em>, </td>
+          <td class="paramname"><em>pmf_first</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">OutputIt&#160;</td>
-          <td class="paramname"><em>pdf_last</em>, </td>
+          <td class="paramname"><em>pmf_last</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -378,7 +391,7 @@ template&lt;typename InputIt , typename OutputIt &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aace5080dc17f64700cf846fda27bf942"></a>
+<a class="anchor" id="adbbb0e479c2d44723062349a4e55ada6"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -400,13 +413,13 @@ template&lt;typename It &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">It&#160;</td>
-          <td class="paramname"><em>pdf_first</em>, </td>
+          <td class="paramname"><em>pmf_first</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">It&#160;</td>
-          <td class="paramname"><em>pdf_last</em>&#160;</td>
+          <td class="paramname"><em>pmf_last</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -419,7 +432,7 @@ template&lt;typename It &gt; </div>
 <p>Generates epsilon-greedy style exploration distribution. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">It</td><td>Iterator type of the pre-allocated pdf. Must be a RandomAccessIterator. </td></tr>
+    <tr><td class="paramname">It</td><td>Iterator type of the pre-allocated pmf. Must be a RandomAccessIterator. </td></tr>
   </table>
   </dd>
 </dl>
@@ -427,8 +440,8 @@ template&lt;typename It &gt; </div>
   <table class="params">
     <tr><td class="paramname">epsilon</td><td>Minimum probability used to explore among options. Each action is explored with at least epsilon/num_actions. </td></tr>
     <tr><td class="paramname">top_action</td><td>Index of the exploit actions. This action will be get probability mass of 1-epsilon + (epsilon/num_actions). </td></tr>
-    <tr><td class="paramname">pdf_first</td><td>Iterator pointing to the pre-allocated beginning of the pdf to be generated by this function. </td></tr>
-    <tr><td class="paramname">pdf_last</td><td>Iterator pointing to the pre-allocated end of the pdf to be generated by this function. </td></tr>
+    <tr><td class="paramname">pmf_first</td><td>Iterator pointing to the pre-allocated beginning of the pmf to be generated by this function. </td></tr>
+    <tr><td class="paramname">pmf_last</td><td>Iterator pointing to the pre-allocated end of the pmf to be generated by this function. </td></tr>
   </table>
   </dd>
 </dl>
@@ -436,7 +449,7 @@ template&lt;typename It &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a209c5fa697a4623797a9525d4c831a28"></a>
+<a class="anchor" id="aa1ca1086c858e0b92536fec36622b662"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -458,13 +471,13 @@ template&lt;typename It &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">It&#160;</td>
-          <td class="paramname"><em>pdf_first</em>, </td>
+          <td class="paramname"><em>pmf_first</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">It&#160;</td>
-          <td class="paramname"><em>pdf_last</em>, </td>
+          <td class="paramname"><em>pmf_last</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -482,7 +495,7 @@ template&lt;typename It &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ad5eacdc590e0879fc8655c77c3002ebc"></a>
+<a class="anchor" id="afe78de8b7c6b2a3856fd8cce1c55d006"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -510,13 +523,13 @@ template&lt;typename InputIt , typename OutputIt &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">OutputIt&#160;</td>
-          <td class="paramname"><em>pdf_first</em>, </td>
+          <td class="paramname"><em>pmf_first</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">OutputIt&#160;</td>
-          <td class="paramname"><em>pdf_last</em>&#160;</td>
+          <td class="paramname"><em>pmf_last</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -530,7 +543,7 @@ template&lt;typename InputIt , typename OutputIt &gt; </div>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">InputIt</td><td>Iterator type of the input scores. Must be an InputIterator. </td></tr>
-    <tr><td class="paramname">OutputIt</td><td>Iterator type of the pre-allocated pdf. Must be a RandomAccessIterator. </td></tr>
+    <tr><td class="paramname">OutputIt</td><td>Iterator type of the pre-allocated pmf. Must be a RandomAccessIterator. </td></tr>
   </table>
   </dd>
 </dl>
@@ -539,8 +552,8 @@ template&lt;typename InputIt , typename OutputIt &gt; </div>
     <tr><td class="paramname">lambda</td><td>Lambda parameter of softmax. </td></tr>
     <tr><td class="paramname">scores_first</td><td>Iterator pointing to beginning of the scores. </td></tr>
     <tr><td class="paramname">scores_last</td><td>Iterator pointing to end of the scores. </td></tr>
-    <tr><td class="paramname">pdf_first</td><td>Iterator pointing to the pre-allocated beginning of the pdf to be generated by this function. </td></tr>
-    <tr><td class="paramname">pdf_last</td><td>Iterator pointing to the pre-allocated end of the pdf to be generated by this function. </td></tr>
+    <tr><td class="paramname">pmf_first</td><td>Iterator pointing to the pre-allocated beginning of the pmf to be generated by this function. </td></tr>
+    <tr><td class="paramname">pmf_last</td><td>Iterator pointing to the pre-allocated end of the pmf to be generated by this function. </td></tr>
   </table>
   </dd>
 </dl>
@@ -548,7 +561,7 @@ template&lt;typename InputIt , typename OutputIt &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a162f29e6e7787f23d36281e3aff1068e"></a>
+<a class="anchor" id="a473563230db7063f1b11758e9ad63806"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -582,13 +595,13 @@ template&lt;typename InputIt , typename OutputIt &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">OutputIt&#160;</td>
-          <td class="paramname"><em>pdf_first</em>, </td>
+          <td class="paramname"><em>pmf_first</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">OutputIt&#160;</td>
-          <td class="paramname"><em>pdf_last</em>, </td>
+          <td class="paramname"><em>pmf_last</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -606,7 +619,7 @@ template&lt;typename InputIt , typename OutputIt &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aedb9fe8f3ab08de86f0438dd3ead8d29"></a>
+<a class="anchor" id="ab382848bf181c7f4e2337a6dab830960"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -622,13 +635,13 @@ template&lt;typename It &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">It&#160;</td>
-          <td class="paramname"><em>pdf_first</em>, </td>
+          <td class="paramname"><em>pmf_first</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">It&#160;</td>
-          <td class="paramname"><em>pdf_last</em>, </td>
+          <td class="paramname"><em>pmf_last</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -644,18 +657,18 @@ template&lt;typename It &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Sample an index from the provided pdf. If the pdf is not normalized it will be updated in-place. </p>
+<p>Sample an index from the provided pmf. If the pmf is not normalized it will be updated in-place. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">InputIt</td><td>Iterator type of the pdf. Must be a RandomAccessIterator. </td></tr>
+    <tr><td class="paramname">InputIt</td><td>Iterator type of the pmf. Must be a RandomAccessIterator. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">seed</td><td>The seed for the pseudo-random generator. </td></tr>
-    <tr><td class="paramname">pdf_first</td><td>Iterator pointing to the beginning of the pdf. </td></tr>
-    <tr><td class="paramname">pdf_last</td><td>Iterator pointing to the end of the pdf. </td></tr>
+    <tr><td class="paramname">pmf_first</td><td>Iterator pointing to the beginning of the pmf. </td></tr>
+    <tr><td class="paramname">pmf_last</td><td>Iterator pointing to the end of the pmf. </td></tr>
     <tr><td class="paramname">chosen_index</td><td>returns the chosen index. </td></tr>
   </table>
   </dd>
@@ -664,7 +677,7 @@ template&lt;typename It &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a3575ff0c162a60c2672714dbfdd4b24d"></a>
+<a class="anchor" id="afd425d1b14f37276a3d453aff4f2cca4"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -680,13 +693,13 @@ template&lt;typename It &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">It&#160;</td>
-          <td class="paramname"><em>pdf_first</em>, </td>
+          <td class="paramname"><em>pmf_first</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">It&#160;</td>
-          <td class="paramname"><em>pdf_last</em>, </td>
+          <td class="paramname"><em>pmf_last</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -702,18 +715,18 @@ template&lt;typename It &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Sample an index from the provided pdf. If the pdf is not normalized it will be updated in-place. </p>
+<p>Sample an index from the provided pmf. If the pmf is not normalized it will be updated in-place. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">It</td><td>Iterator type of the pdf. Must be a RandomAccessIterator. </td></tr>
+    <tr><td class="paramname">It</td><td>Iterator type of the pmf. Must be a RandomAccessIterator. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">seed</td><td>The seed for the pseudo-random generator. Will be hashed using MURMUR hash. </td></tr>
-    <tr><td class="paramname">pdf_first</td><td>Iterator pointing to the beginning of the pdf. </td></tr>
-    <tr><td class="paramname">pdf_last</td><td>Iterator pointing to the end of the pdf. </td></tr>
+    <tr><td class="paramname">pmf_first</td><td>Iterator pointing to the beginning of the pmf. </td></tr>
+    <tr><td class="paramname">pmf_last</td><td>Iterator pointing to the end of the pmf. </td></tr>
     <tr><td class="paramname">chosen_index</td><td>returns the chosen index. </td></tr>
   </table>
   </dd>
@@ -722,7 +735,7 @@ template&lt;typename It &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a39c177b457d86b03cfaa219c6f09b378"></a>
+<a class="anchor" id="a7999e478ede90760a084ae469a927751"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -738,13 +751,13 @@ template&lt;typename It &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">It&#160;</td>
-          <td class="paramname"><em>pdf_first</em>, </td>
+          <td class="paramname"><em>pmf_first</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">It&#160;</td>
-          <td class="paramname"><em>pdf_last</em>, </td>
+          <td class="paramname"><em>pmf_last</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -768,7 +781,7 @@ template&lt;typename It &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="af19e331559b1a2041ec9f499d9233037"></a>
+<a class="anchor" id="ab89d9a62f03c1d2f9a71a243a21c1eef"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -779,6 +792,52 @@ template&lt;typename It &gt; </div>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>seed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">It&#160;</td>
+          <td class="paramname"><em>pmf_first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">It&#160;</td>
+          <td class="paramname"><em>pmf_last</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t &amp;&#160;</td>
+          <td class="paramname"><em>chosen_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::random_access_iterator_tag&#160;</td>
+          <td class="paramname"><em>pmf_category</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5450a3326aed19a97b409ff222e477ae"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename It &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int exploration::sample_pdf </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t *&#160;</td>
+          <td class="paramname"><em>p_seed</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -795,6 +854,142 @@ template&lt;typename It &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>chosen_value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>pdf_value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sample a continuous value from the provided pdf. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">It</td><td>Iterator type of the pmf. Must be a RandomAccessIterator. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_seed</td><td>The seed for the pseudo-random generator. Will be hashed using MURMUR hash. The seed state will be advanced </td></tr>
+    <tr><td class="paramname">pdf_first</td><td>Iterator pointing to the beginning of the pdf. </td></tr>
+    <tr><td class="paramname">pdf_last</td><td>Iterator pointing to the end of the pdf. </td></tr>
+    <tr><td class="paramname">chosen_value</td><td>returns the sampled continuous value. </td></tr>
+    <tr><td class="paramname">pdf_value</td><td>returns the probablity density at the sampled location. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int returns 0 on success, otherwise an error code as defined by E_EXPLORATION_*. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a834913e268a40935b1c843b11fcf6772"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename It &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int exploration::sample_pdf </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t *&#160;</td>
+          <td class="paramname"><em>p_seed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">It&#160;</td>
+          <td class="paramname"><em>pdf_first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">It&#160;</td>
+          <td class="paramname"><em>pdf_last</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>chosen_value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>pdf_value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::random_access_iterator_tag&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sample a continuous value from the provided pdf. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">It</td><td>Iterator type of the pmf. Must be a RandomAccessIterator. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_seed</td><td>The seed for the pseudo-random generator. Will be hashed using MURMUR hash. The seed state will be advanced </td></tr>
+    <tr><td class="paramname">pdf_first</td><td>Iterator pointing to the beginning of the pdf. </td></tr>
+    <tr><td class="paramname">pdf_last</td><td>Iterator pointing to the end of the pdf. </td></tr>
+    <tr><td class="paramname">chosen_value</td><td>returns the sampled continuous value. </td></tr>
+    <tr><td class="paramname">pdf_value</td><td>returns the probablity density at the sampled location. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int returns 0 on success, otherwise an error code as defined by E_EXPLORATION_*. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab94fb5e8fa209aa46feaf80a2e1ad791"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename It &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int exploration::sample_scores </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t *&#160;</td>
+          <td class="paramname"><em>p_seed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">It&#160;</td>
+          <td class="paramname"><em>scores_first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">It&#160;</td>
+          <td class="paramname"><em>scores_last</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">uint32_t &amp;&#160;</td>
           <td class="paramname"><em>chosen_index</em>, </td>
         </tr>
@@ -802,7 +997,7 @@ template&lt;typename It &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::random_access_iterator_tag&#160;</td>
-          <td class="paramname"><em>pdf_category</em>&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -963,6 +1158,30 @@ template&lt;typename ActionsIt &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a5d99f2849ca698712b1a2a6e451019c5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float exploration::uniform_random_merand48_advance </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t &amp;&#160;</td>
+          <td class="paramname"><em>initial</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a class="anchor" id="af5f381e6405bb2a903cb4cf53b52a21f"></a>
 <div class="memitem">
@@ -1003,7 +1222,7 @@ template&lt;typename ActionsIt &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 9 2020 13:18:33 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 11 2020 18:03:47 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

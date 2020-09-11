@@ -1,13 +1,15 @@
 var searchData=
 [
   ['a_5fs',['a_s',['../unionpolyprediction.html#aff6f567473d301cd324039ccd13d74a8',1,'polyprediction']]],
+  ['a_5fs_5fpred_5fto_5fstring',['a_s_pred_to_string',['../example_8h.html#a38dcebb4f1c43e354e97c75fa9552f28',1,'example.h']]],
   ['accumulate',['accumulate',['../accumulate_8h.html#aea2d714c4719eded697193fc3c0bcc0f',1,'accumulate.h']]],
   ['accumulate_2eh',['accumulate.h',['../accumulate_8h.html',1,'']]],
   ['accumulate_5favg',['accumulate_avg',['../accumulate_8h.html#a02f60b0c7b8ab43066ceb63249698f52',1,'accumulate.h']]],
   ['accumulate_5fscalar',['accumulate_scalar',['../accumulate_8h.html#a5f9b9046c85ecd62ead81d5fe7a7624b',1,'accumulate.h']]],
   ['accumulate_5fweighted_5favg',['accumulate_weighted_avg',['../accumulate_8h.html#a7f1082b9cdfb73a38f32cd8c0f010548',1,'accumulate.h']]],
-  ['action',['action',['../structACTION__SCORE_1_1action__score.html#a3da08ec8bf04bb62c2435436de0b7beb',1,'ACTION_SCORE::action_score::action()'],['../structCB_1_1cb__class.html#a511b292fa65f62a62983677817b0e096',1,'CB::cb_class::action()'],['../structCB__EVAL_1_1label.html#a74e7d0b1d4b50ec21ae0dae9aa083946',1,'CB_EVAL::label::action()'],['../search_8h.html#a38f57e55606ccd5596fee801ba4d136b',1,'action():&#160;search.h'],['../namespaceCCB.html#a58ee4b1ece77de222418e9eb75203cf5a9c8600c3a2612eab5f83a717cc53ead8',1,'CCB::action()'],['../namespaceVW_1_1slates.html#a894cb7b1b775c40313bbb5e1c4b48a50a1794954332b410d61d4b8a75c593c7a5',1,'VW::slates::action()']]],
+  ['action',['action',['../structACTION__SCORE_1_1action__score.html#a3da08ec8bf04bb62c2435436de0b7beb',1,'ACTION_SCORE::action_score::action()'],['../structCB_1_1cb__class.html#a511b292fa65f62a62983677817b0e096',1,'CB::cb_class::action()'],['../structCB__EVAL_1_1label.html#a74e7d0b1d4b50ec21ae0dae9aa083946',1,'CB_EVAL::label::action()'],['../structVW_1_1cb__continuous_1_1continuous__label__elm.html#a3aebe64ba36297f71a1cb5d7b94a5d9e',1,'VW::cb_continuous::continuous_label_elm::action()'],['../structVW_1_1continuous__actions_1_1probability__density__function__value.html#a3102e2c2988ea567a378737163cd9f74',1,'VW::continuous_actions::probability_density_function_value::action()'],['../search_8h.html#a38f57e55606ccd5596fee801ba4d136b',1,'action():&#160;search.h'],['../namespaceCCB.html#a58ee4b1ece77de222418e9eb75203cf5a9c8600c3a2612eab5f83a717cc53ead8',1,'CCB::action()'],['../namespaceVW_1_1slates.html#a894cb7b1b775c40313bbb5e1c4b48a50a1794954332b410d61d4b8a75c593c7a5',1,'VW::slates::action()']]],
   ['action_5fcosts',['ACTION_COSTS',['../namespaceSearch.html#a86ee04bcb8443067b54b85e38e876cab',1,'Search']]],
+  ['action_5fpdf_5fvalue',['action_pdf_value',['../learner_8h.html#a5514b4a9448315c23ec344ca2d139e24a4a0b76be67ec342548cde44e9d897849',1,'learner.h']]],
   ['action_5fprobs',['action_probs',['../learner_8h.html#a5514b4a9448315c23ec344ca2d139e24aa78dde72b6338b01742027024d34eca6',1,'learner.h']]],
   ['action_5fscore',['action_score',['../structACTION__SCORE_1_1action__score.html',1,'ACTION_SCORE']]],
   ['action_5fscore',['ACTION_SCORE',['../namespaceACTION__SCORE.html',1,'']]],

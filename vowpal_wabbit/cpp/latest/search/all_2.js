@@ -1,6 +1,7 @@
 var searchData=
 [
   ['bag',['bag',['../namespacevw__slim.html#a8b7398db5b92b2538fdd8e6593b746b3a345ec4088b94393d5da64133ea3b0195',1,'vw_slim']]],
+  ['bandwidth',['bandwidth',['../structVW_1_1pmf__to__pdf_1_1reduction.html#a11e1fb3625c5c72a9edb47d2b8fee01c',1,'VW::pmf_to_pdf::reduction']]],
   ['base',['base',['../structExpReplay_1_1expreplay.html#a832c99799c109e5042e4b3901d5f546d',1,'ExpReplay::expreplay::base()'],['../structVW_1_1LEARNER_1_1func__data.html#a3f26558c6ad681d2c0f50ddaa58cc2ef',1,'VW::LEARNER::func_data::base()'],['../structVW_1_1LEARNER_1_1learn__data.html#a37b76d25cbbc8b79029a94ab33844372',1,'VW::LEARNER::learn_data::base()'],['../structVW_1_1LEARNER_1_1save__load__data.html#ab6c03aa287b433156b29eb0720f7c50f',1,'VW::LEARNER::save_load_data::base()'],['../structVW_1_1LEARNER_1_1finish__example__data.html#aa10e1a4c6e872ec9faceb1060264be04',1,'VW::LEARNER::finish_example_data::base()']]],
   ['base_5flearner',['base_learner',['../namespaceVW_1_1LEARNER.html#ab481a83a0a49d7b827babe725e135b20',1,'VW::LEARNER']]],
   ['base_5foption',['base_option',['../structVW_1_1config_1_1base__option.html',1,'VW::config']]],
@@ -39,7 +40,7 @@ var searchData=
   ['binary_2eh',['binary.h',['../binary_8h.html',1,'']]],
   ['binary_5fprint_5fresult',['binary_print_result',['../global__data_8h.html#a158dab5d2c8d07970b523bf2f910d2e2',1,'global_data.h']]],
   ['binary_5fprint_5fresult_5fby_5fref',['binary_print_result_by_ref',['../global__data_8h.html#a07600c7dfa8e52c7741daa1d80607abf',1,'global_data.h']]],
-  ['binary_5fsetup',['binary_setup',['../binary_8h.html#a2c8402a03bbb7c9e6216df4907242c80',1,'binary.h']]],
+  ['binary_5fsetup',['binary_setup',['../namespaceVW_1_1binary.html#aaf473676075fbfd894132f730f7991ba',1,'VW::binary']]],
   ['bool',['Bool',['../structBaseState.html#a9ccff8ff7ccb1612a47d75c39c84c924',1,'BaseState::Bool()'],['../classDefaultState.html#a7bb350ead38a4e1b9cbbfd62fa1b6222',1,'DefaultState::Bool()'],['../classBoolToBoolState.html#aa8099fe4578f7eaf665edf962f84d128',1,'BoolToBoolState::Bool()'],['../structVWReaderHandler.html#affe64a99b2e524d4c97f9950c1dc0091',1,'VWReaderHandler::Bool()']]],
   ['bool_5fstate',['bool_state',['../structContext.html#a0dda584309012bded089bb76d8a5be5d',1,'Context']]],
   ['booltoboolstate',['BoolToBoolState',['../classBoolToBoolState.html',1,'BoolToBoolState&lt; audit &gt;'],['../classBoolToBoolState.html#a2e2d0f085308b87591abd89caca0cbb1',1,'BoolToBoolState::BoolToBoolState()']]],
@@ -55,8 +56,13 @@ var searchData=
   ['buf',['buf',['../structExpReplay_1_1expreplay.html#a231e931ed1faacf4b218ae66ed32598d',1,'ExpReplay::expreplay']]],
   ['buf_5fread',['buf_read',['../classio__buf.html#a0fe43cbf0e4539940ad28f482c322cd9',1,'io_buf']]],
   ['buf_5fwrite',['buf_write',['../classio__buf.html#aaff9b1ba96e89f3abfa6105f1f369b34',1,'io_buf']]],
+  ['bufcache_5flabel',['bufcache_label',['../namespaceCB.html#af22fff7bd49678b9a735ca016ccbfdcc',1,'CB']]],
+  ['bufcache_5flabel_5fadditional_5ffields',['bufcache_label_additional_fields',['../namespaceCB.html#a1e1dae5a429dc754dbf1640c72dad201',1,'CB']]],
   ['buffer',['buffer',['../structData.html#a6dc409011ac0912b2e8e16bb8fd5d5ad',1,'Data']]],
   ['buffer_5fstart',['buffer_start',['../classio__buf.html#aa79ba9e0c96d4ebde9ef98493c629806',1,'io_buf']]],
   ['buffers',['buffers',['../classAllReduceSync.html#a9f9e0266fcc60ce2b7a0b06fb293e84d',1,'AllReduceSync']]],
-  ['build',['build',['../structVW_1_1kskip__ngram__transformer.html#a315701be95f5d52920f40c63580e26b9',1,'VW::kskip_ngram_transformer']]]
+  ['bufread_5flabel',['bufread_label',['../namespaceCB.html#a288dc757fcb070d9d9afa5dc76db0172',1,'CB']]],
+  ['bufread_5flabel_5fadditional_5ffields',['bufread_label_additional_fields',['../namespaceCB.html#a749ddff666a5bdb407c76d04ad08606d',1,'CB']]],
+  ['build',['build',['../structVW_1_1kskip__ngram__transformer.html#a315701be95f5d52920f40c63580e26b9',1,'VW::kskip_ngram_transformer']]],
+  ['build_5ftree',['build_tree',['../structVW_1_1cats__tree_1_1min__depth__binary__tree.html#a7d456d7260cf698c54197a62cc4aa424',1,'VW::cats_tree::min_depth_binary_tree::build_tree()'],['../structVW_1_1offset__tree_1_1min__depth__binary__tree.html#ac3e22135a078c06dc7298bc0fe2ae1e9',1,'VW::offset_tree::min_depth_binary_tree::build_tree()']]]
 ];

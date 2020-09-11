@@ -128,6 +128,7 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceVW"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html">VW</a></td></tr>
+<tr class="memdesc:namespaceVW"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Error Generator] <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceVW_1_1LEARNER"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1LEARNER.html">VW::LEARNER</a></td></tr>
 <tr class="memdesc:namespaceVW_1_1LEARNER"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains the <a class="el" href="structVW_1_1LEARNER_1_1learner.html" title="Defines the interface for a learning algorithm. ">VW::LEARNER::learner</a> object and utilities for interacting with it. <br /></td></tr>
@@ -151,14 +152,16 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="learner_8h.html#a5514b4a9448315c23ec344ca2d139e24aa27a6549ade38cc036f7b8c58a840510">prediction_type_t::scalar</a>, 
 <a class="el" href="learner_8h.html#a5514b4a9448315c23ec344ca2d139e24a4f14d3acdc8c1cb2ac2f808f2afded32">prediction_type_t::scalars</a>, 
 <a class="el" href="learner_8h.html#a5514b4a9448315c23ec344ca2d139e24a43568e6f9bdfff4805f9154606cde508">prediction_type_t::action_scores</a>, 
-<a class="el" href="learner_8h.html#a5514b4a9448315c23ec344ca2d139e24aa78dde72b6338b01742027024d34eca6">prediction_type_t::action_probs</a>, 
+<a class="el" href="learner_8h.html#a5514b4a9448315c23ec344ca2d139e24a437175ba4191210ee004e1d937494d09">prediction_type_t::pdf</a>, 
 <br />
-&#160;&#160;<a class="el" href="learner_8h.html#a5514b4a9448315c23ec344ca2d139e24aa0b3a0bee9f844f0c2999fe2ea393487">prediction_type_t::multiclass</a>, 
+&#160;&#160;<a class="el" href="learner_8h.html#a5514b4a9448315c23ec344ca2d139e24aa78dde72b6338b01742027024d34eca6">prediction_type_t::action_probs</a>, 
+<a class="el" href="learner_8h.html#a5514b4a9448315c23ec344ca2d139e24aa0b3a0bee9f844f0c2999fe2ea393487">prediction_type_t::multiclass</a>, 
 <a class="el" href="learner_8h.html#a5514b4a9448315c23ec344ca2d139e24aaf52dc7962379f4397484a51c3a8c6a2">prediction_type_t::multilabels</a>, 
 <a class="el" href="learner_8h.html#a5514b4a9448315c23ec344ca2d139e24a385e54735cbf7e164d5ca45c7419d3a9">prediction_type_t::prob</a>, 
-<a class="el" href="learner_8h.html#a5514b4a9448315c23ec344ca2d139e24a48a2fd2fd3d6db94e3c90d57df991cce">prediction_type_t::multiclassprobs</a>, 
 <br />
-&#160;&#160;<a class="el" href="learner_8h.html#a5514b4a9448315c23ec344ca2d139e24a0a1107ed44b212cea25e2da842e0cbbe">prediction_type_t::decision_probs</a>
+&#160;&#160;<a class="el" href="learner_8h.html#a5514b4a9448315c23ec344ca2d139e24a48a2fd2fd3d6db94e3c90d57df991cce">prediction_type_t::multiclassprobs</a>, 
+<a class="el" href="learner_8h.html#a5514b4a9448315c23ec344ca2d139e24a0a1107ed44b212cea25e2da842e0cbbe">prediction_type_t::decision_probs</a>, 
+<a class="el" href="learner_8h.html#a5514b4a9448315c23ec344ca2d139e24a4a0b76be67ec342548cde44e9d897849">prediction_type_t::action_pdf_value</a>
 <br />
  }</td></tr>
 <tr class="separator:a5514b4a9448315c23ec344ca2d139e24"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -256,6 +259,8 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a5514b4a9448315c23ec344ca2d139e24a43568e6f9bdfff4805f9154606cde508"></a>action_scores&#160;</td><td class="fielddoc">
 </td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a5514b4a9448315c23ec344ca2d139e24a437175ba4191210ee004e1d937494d09"></a>pdf&#160;</td><td class="fielddoc">
+</td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a5514b4a9448315c23ec344ca2d139e24aa78dde72b6338b01742027024d34eca6"></a>action_probs&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a5514b4a9448315c23ec344ca2d139e24aa0b3a0bee9f844f0c2999fe2ea393487"></a>multiclass&#160;</td><td class="fielddoc">
@@ -267,6 +272,8 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a5514b4a9448315c23ec344ca2d139e24a48a2fd2fd3d6db94e3c90d57df991cce"></a>multiclassprobs&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a5514b4a9448315c23ec344ca2d139e24a0a1107ed44b212cea25e2da842e0cbbe"></a>decision_probs&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a5514b4a9448315c23ec344ca2d139e24a4a0b76be67ec342548cde44e9d897849"></a>action_pdf_value&#160;</td><td class="fielddoc">
 </td></tr>
 </table>
 
@@ -292,7 +299,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 9 2020 13:18:33 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 11 2020 18:03:46 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
