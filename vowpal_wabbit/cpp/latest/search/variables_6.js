@@ -21,6 +21,7 @@ var searchData=
   ['foreground',['foreground',['../structinput__options.html#afb36dd3a1f5b147b90624c83943bd675',1,'input_options']]],
   ['found',['found',['../classLabelObjectState.html#a2f100b4e6527ea35c91b6981a2db0891',1,'LabelObjectState']]],
   ['found_5fcb',['found_cb',['../classLabelObjectState.html#a4406c8264307c775d2e601a9fb05114a',1,'LabelObjectState']]],
+  ['found_5fcb_5fcontinuous',['found_cb_continuous',['../classLabelObjectState.html#a3e0baed7531e4e864a9228d7936342ee',1,'LabelObjectState']]],
   ['fs',['fs',['../structflat__example.html#a77947dfb239fd7487b88e3842a8f0594',1,'flat_example::fs()'],['../structVW_1_1primitive__feature__space.html#a7196cfc91add16e07c8ff2d442c640e3',1,'VW::primitive_feature_space::fs()']]],
   ['ft_5farr',['ft_arr',['../structINTERACTIONS_1_1feature__gen__data.html#a2ec14b399a0a0260c6d561e38b1d1ec0',1,'INTERACTIONS::feature_gen_data']]],
   ['ft_5foffset',['ft_offset',['../structflat__example.html#a0c98fc527c037d202d4e558b3518a10f',1,'flat_example::ft_offset()'],['../structexample__predict.html#a964a7741ec79edbb2e7e2298ffdd767a',1,'example_predict::ft_offset()']]],

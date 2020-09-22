@@ -72,6 +72,7 @@ var searchData=
   ['foreground',['foreground',['../structinput__options.html#afb36dd3a1f5b147b90624c83943bd675',1,'input_options']]],
   ['found',['found',['../classLabelObjectState.html#a2f100b4e6527ea35c91b6981a2db0891',1,'LabelObjectState']]],
   ['found_5fcb',['found_cb',['../classLabelObjectState.html#a4406c8264307c775d2e601a9fb05114a',1,'LabelObjectState']]],
+  ['found_5fcb_5fcontinuous',['found_cb_continuous',['../classLabelObjectState.html#a3e0baed7531e4e864a9228d7936342ee',1,'LabelObjectState']]],
   ['free_5fargs',['free_args',['../namespaceVW.html#a015a165994e26522f321eef57a990ef5',1,'VW']]],
   ['free_5fflatten_5fexample',['free_flatten_example',['../example_8h.html#a43e653fb1e820bef507e28a6d1debe75',1,'example.h']]],
   ['free_5ffn',['free_fn',['../memory_8h.html#afb75fb532543a6a20691d77219196715',1,'memory.h']]],

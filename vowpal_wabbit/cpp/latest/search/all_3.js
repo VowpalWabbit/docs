@@ -150,6 +150,7 @@ var searchData=
   ['constexpr_5fint_5fpow10',['constexpr_int_pow10',['../namespaceVW_1_1details.html#ad3879df5b180db6a789f312968940cad',1,'VW::details']]],
   ['constexpr_5fnegative_5fint_5fpow10',['constexpr_negative_int_pow10',['../namespaceVW_1_1details.html#a00f89d94c130db70248d92c279b9780f',1,'VW::details']]],
   ['constexpr_5fnegative_5fint_5fpow10_5fwith_5foffset',['constexpr_negative_int_pow10_with_offset',['../namespaceVW_1_1details.html#ab6ae5a8a298fa337a11f73c58392378f',1,'VW::details']]],
+  ['cont_5flabel_5felement',['cont_label_element',['../classLabelObjectState.html#a66fd2e82164d7c6ee2743166f01f3345',1,'LabelObjectState']]],
   ['contain_5fsorted',['contain_sorted',['../structv__array.html#ae781447a0f8dcea7c9793c8a04fbcc4f',1,'v_array']]],
   ['context',['Context',['../structContext.html',1,'Context&lt; audit &gt;'],['../structContext.html#a64d619664771771e6300aee4e9dcf8bb',1,'Context::Context()']]],
   ['continuous_5flabel',['continuous_label',['../structVW_1_1cb__continuous_1_1continuous__label.html',1,'VW::cb_continuous']]],

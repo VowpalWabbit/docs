@@ -56,6 +56,7 @@ var searchData=
   ['constant_5fa',['CONSTANT_A',['../namespaceexploration.html#abaf668aa89adbccbf973ed7087229251',1,'exploration']]],
   ['constant_5fc',['CONSTANT_C',['../namespaceexploration.html#ab280cae4f247977e79c90ad5bc2c3053',1,'exploration']]],
   ['constant_5fnamespace',['constant_namespace',['../constant_8h.html#ac285b604938b5c167e499a1855cfbe5e',1,'constant.h']]],
+  ['cont_5flabel_5felement',['cont_label_element',['../classLabelObjectState.html#a66fd2e82164d7c6ee2743166f01f3345',1,'LabelObjectState']]],
   ['contraction',['contraction',['../structshared__data.html#a208ec97cf415ce6197c5508e59090982',1,'shared_data']]],
   ['copy_5flabel',['copy_label',['../structlabel__parser.html#a5ea152d70d58bd39c9d2d39719d12b44',1,'label_parser']]],
   ['cost',['cost',['../structBeam_1_1beam__element.html#a6d849514b67775933fc7c9a4e9c29975',1,'Beam::beam_element::cost()'],['../structVW_1_1cats__tree_1_1node__cost.html#a6bd4b4447da297facb3ef339c83b2796',1,'VW::cats_tree::node_cost::cost()'],['../structCB_1_1cb__class.html#aba9eb88e830100c30273f7e008915d4d',1,'CB::cb_class::cost()'],['../structVW_1_1cb__continuous_1_1continuous__label__elm.html#aa8b78353c7f30e62f2c957217029e47b',1,'VW::cb_continuous::continuous_label_elm::cost()'],['../structCCB_1_1conditional__contextual__bandit__outcome.html#a1c68cab923afb586d7bc6f7de7c7a98e',1,'CCB::conditional_contextual_bandit_outcome::cost()'],['../structVW_1_1slates_1_1label.html#ae02553fa48831fcbca891ed30e60fd29',1,'VW::slates::label::cost()']]],

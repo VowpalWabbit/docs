@@ -107,6 +107,8 @@ Inheritance diagram for LabelSinglePropertyState&lt; audit &gt;:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:afbe53d47d34646ef3502eea9cf8b15b6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLabelSinglePropertyState.html#afbe53d47d34646ef3502eea9cf8b15b6">LabelSinglePropertyState</a> ()</td></tr>
 <tr class="separator:afbe53d47d34646ef3502eea9cf8b15b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a006fcf84ddea20df3dcf22086f5baa56"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structBaseState.html">BaseState</a>&lt; audit &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLabelSinglePropertyState.html#a006fcf84ddea20df3dcf22086f5baa56">StartObject</a> (<a class="el" href="structContext.html">Context</a>&lt; audit &gt; &amp;ctx) override</td></tr>
+<tr class="separator:a006fcf84ddea20df3dcf22086f5baa56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77628422e4745f1c37cb79829bad87da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structBaseState.html">BaseState</a>&lt; audit &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLabelSinglePropertyState.html#a77628422e4745f1c37cb79829bad87da">Float</a> (<a class="el" href="structContext.html">Context</a>&lt; audit &gt; &amp;ctx, float v) override</td></tr>
 <tr class="separator:a77628422e4745f1c37cb79829bad87da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f51690c5b79d88e026b9520b6c88c18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structBaseState.html">BaseState</a>&lt; audit &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLabelSinglePropertyState.html#a1f51690c5b79d88e026b9520b6c88c18">String</a> (<a class="el" href="structContext.html">Context</a>&lt; audit &gt; &amp;ctx, const char *str, rapidjson::SizeType len, bool copy) override</td></tr>
@@ -120,8 +122,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac82289a503437ff8044c9fab9a416a49 inherit pub_methods_structBaseState"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ccff8ff7ccb1612a47d75c39c84c924 inherit pub_methods_structBaseState"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structBaseState.html">BaseState</a>&lt; audit &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBaseState.html#a9ccff8ff7ccb1612a47d75c39c84c924">Bool</a> (<a class="el" href="structContext.html">Context</a>&lt; audit &gt; &amp;ctx, bool b)</td></tr>
 <tr class="separator:a9ccff8ff7ccb1612a47d75c39c84c924 inherit pub_methods_structBaseState"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51afbf4e7529b462f1b276aaadffb871 inherit pub_methods_structBaseState"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structBaseState.html">BaseState</a>&lt; audit &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBaseState.html#a51afbf4e7529b462f1b276aaadffb871">StartObject</a> (<a class="el" href="structContext.html">Context</a>&lt; audit &gt; &amp;ctx)</td></tr>
-<tr class="separator:a51afbf4e7529b462f1b276aaadffb871 inherit pub_methods_structBaseState"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f4b60a1d1d484bd651940215aaba368 inherit pub_methods_structBaseState"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structBaseState.html">BaseState</a>&lt; audit &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBaseState.html#a0f4b60a1d1d484bd651940215aaba368">Key</a> (<a class="el" href="structContext.html">Context</a>&lt; audit &gt; &amp;ctx, const char *str, rapidjson::SizeType len, bool)</td></tr>
 <tr class="separator:a0f4b60a1d1d484bd651940215aaba368 inherit pub_methods_structBaseState"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52ba82f725483116ba5d5df8bb5ea824 inherit pub_methods_structBaseState"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structBaseState.html">BaseState</a>&lt; audit &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBaseState.html#a52ba82f725483116ba5d5df8bb5ea824">EndObject</a> (<a class="el" href="structContext.html">Context</a>&lt; audit &gt; &amp;ctx, rapidjson::SizeType)</td></tr>
@@ -199,6 +199,34 @@ template&lt;bool audit&gt; </div>
 </div><div class="memdoc">
 
 <p>Reimplemented from <a class="el" href="structBaseState.html#a140b04dbacb66c0d75a2402e3e75ebfc">BaseState&lt; audit &gt;</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a006fcf84ddea20df3dcf22086f5baa56"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;bool audit&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structBaseState.html">BaseState</a>&lt;audit&gt;* <a class="el" href="structLabelSinglePropertyState.html">LabelSinglePropertyState</a>&lt; audit &gt;::StartObject </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structContext.html">Context</a>&lt; audit &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="structBaseState.html#a51afbf4e7529b462f1b276aaadffb871">BaseState&lt; audit &gt;</a>.</p>
 
 </div>
 </div>
@@ -296,7 +324,7 @@ template&lt;bool audit&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 21 2020 09:25:43 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 22 2020 09:43:55 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
