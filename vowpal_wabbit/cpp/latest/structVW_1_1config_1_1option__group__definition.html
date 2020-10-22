@@ -106,6 +106,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aecce8d13a7a8328d479bb3a52f9d3980"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aecce8d13a7a8328d479bb3a52f9d3980"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structVW_1_1config_1_1option__group__definition.html">option_group_definition</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1option__group__definition.html#aecce8d13a7a8328d479bb3a52f9d3980">add</a> (T &amp;&amp;op)</td></tr>
 <tr class="separator:aecce8d13a7a8328d479bb3a52f9d3980"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8a46beb94dc04371a81271ffd365402"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ac8a46beb94dc04371a81271ffd365402"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structVW_1_1config_1_1option__group__definition.html">option_group_definition</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1option__group__definition.html#ac8a46beb94dc04371a81271ffd365402">add</a> (<a class="el" href="structVW_1_1config_1_1typed__option.html">typed_option</a>&lt; T &gt; &amp;op)</td></tr>
+<tr class="separator:ac8a46beb94dc04371a81271ffd365402"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d7a925884cedbc30f8bd14bebdb7ed5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1option__group__definition.html#a4d7a925884cedbc30f8bd14bebdb7ed5">check_necessary_enabled</a> (const <a class="el" href="structVW_1_1config_1_1options__i.html">options_i</a> &amp;options) const </td></tr>
+<tr class="separator:a4d7a925884cedbc30f8bd14bebdb7ed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af57a5d7164eb68e6a16abb47e5b238b9"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:af57a5d7164eb68e6a16abb47e5b238b9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structVW_1_1config_1_1option__group__definition.html">option_group_definition</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1option__group__definition.html#af57a5d7164eb68e6a16abb47e5b238b9">operator()</a> (T &amp;&amp;op)</td></tr>
 <tr class="separator:af57a5d7164eb68e6a16abb47e5b238b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -114,6 +119,8 @@ Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a81d5062ba2ba3f7de06c7574ac61375b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1option__group__definition.html#a81d5062ba2ba3f7de06c7574ac61375b">m_name</a></td></tr>
 <tr class="separator:a81d5062ba2ba3f7de06c7574ac61375b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1fb8b23e82ba0a516c324a035dc32ab"><td class="memItemLeft" align="right" valign="top">std::unordered_set&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1option__group__definition.html#ae1fb8b23e82ba0a516c324a035dc32ab">m_necessary_flags</a></td></tr>
+<tr class="separator:ae1fb8b23e82ba0a516c324a035dc32ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa177a1cac423c48716ef09661bda64e0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="structVW_1_1config_1_1base__option.html">base_option</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1option__group__definition.html#aa177a1cac423c48716ef09661bda64e0">m_options</a></td></tr>
 <tr class="separator:aa177a1cac423c48716ef09661bda64e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -169,6 +176,56 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="ac8a46beb94dc04371a81271ffd365402"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structVW_1_1config_1_1option__group__definition.html">option_group_definition</a>&amp; VW::config::option_group_definition::add </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structVW_1_1config_1_1typed__option.html">typed_option</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>op</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4d7a925884cedbc30f8bd14bebdb7ed5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool VW::config::option_group_definition::check_necessary_enabled </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structVW_1_1config_1_1options__i.html">options_i</a> &amp;&#160;</td>
+          <td class="paramname"><em>options</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="af57a5d7164eb68e6a16abb47e5b238b9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -208,6 +265,18 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="ae1fb8b23e82ba0a516c324a035dc32ab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_set&lt;std::string&gt; VW::config::option_group_definition::m_necessary_flags</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="aa177a1cac423c48716ef09661bda64e0"></a>
 <div class="memitem">
 <div class="memproto">
@@ -226,7 +295,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 22 2020 15:45:09 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 22 2020 17:02:36 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

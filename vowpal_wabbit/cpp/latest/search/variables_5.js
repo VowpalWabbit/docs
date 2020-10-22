@@ -5,6 +5,7 @@ var searchData=
   ['empty',['empty',['../unionpolylabel.html#a6d811b312990cfca1ccd76f553a89214',1,'polylabel']]],
   ['empty_5faudit_5fstrings',['EMPTY_AUDIT_STRINGS',['../interactions__predict_8h.html#a15fb23be401cf2a337ab90c20f3ec80c',1,'interactions_predict.h']]],
   ['emptylines_5fseparate_5fexamples',['emptylines_separate_examples',['../structparser.html#a751fa0c146800b9ab19e9db245d16994',1,'parser']]],
+  ['enabled_5freductions',['enabled_reductions',['../structvw.html#aa87af4c0891b4123d72ec61e5f61b62d',1,'vw']]],
   ['end_5farray',['end_array',['../structv__array.html#ae563c3b32418f28a3c424c2f88cdf721',1,'v_array']]],
   ['end_5fparsed_5fexamples',['end_parsed_examples',['../structparser.html#a937aa6babf6854343eafa7566d34e031',1,'parser']]],
   ['end_5fpass',['end_pass',['../structexample.html#aed100c9f43cef70f89c20dc5fdd30a12',1,'example']]],

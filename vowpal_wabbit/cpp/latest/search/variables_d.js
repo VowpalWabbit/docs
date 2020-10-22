@@ -5,6 +5,8 @@ var searchData=
   ['m_5fkeep',['m_keep',['../structVW_1_1config_1_1base__option.html#aea6aa73541aa87eac054242141ecba05',1,'VW::config::base_option']]],
   ['m_5flocation',['m_location',['../structVW_1_1config_1_1typed__option.html#a747adc2fed198c58c1fb5cf147352229',1,'VW::config::typed_option']]],
   ['m_5fname',['m_name',['../structVW_1_1config_1_1base__option.html#aa4b1e915fd104a32495780d207254a9c',1,'VW::config::base_option::m_name()'],['../structVW_1_1config_1_1option__group__definition.html#a81d5062ba2ba3f7de06c7574ac61375b',1,'VW::config::option_group_definition::m_name()']]],
+  ['m_5fnecessary',['m_necessary',['../structVW_1_1config_1_1base__option.html#abb0c616382a66ebe8b171e607607317c',1,'VW::config::base_option']]],
+  ['m_5fnecessary_5fflags',['m_necessary_flags',['../structVW_1_1config_1_1option__group__definition.html#ae1fb8b23e82ba0a516c324a035dc32ab',1,'VW::config::option_group_definition']]],
   ['m_5foptions',['m_options',['../structVW_1_1config_1_1option__group__definition.html#aa177a1cac423c48716ef09661bda64e0',1,'VW::config::option_group_definition']]],
   ['m_5fshort_5fname',['m_short_name',['../structVW_1_1config_1_1base__option.html#a9b83fa1a3563ce79fa211bbb1defa182',1,'VW::config::base_option']]],
   ['m_5ftype_5fhash',['m_type_hash',['../structVW_1_1config_1_1base__option.html#a3eda02f24b7010ae07aa27e195b5040f',1,'VW::config::base_option']]],

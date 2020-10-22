@@ -2,7 +2,7 @@ var searchData=
 [
   ['waitforsynchronization',['waitForSynchronization',['../classAllReduceSync.html#a16c5ea1af31dd85ca9b617da378d8bf1',1,'AllReduceSync']]],
   ['warm_5fcb_5fsetup',['warm_cb_setup',['../warm__cb_8h.html#a750ea79c1df3429156af9be75b8122eb',1,'warm_cb.h']]],
-  ['was_5fsupplied',['was_supplied',['../structVW_1_1config_1_1options__i.html#a673e4a143e22c4e2ff8c30dfaab9fd68',1,'VW::config::options_i::was_supplied()'],['../structVW_1_1config_1_1options__boost__po.html#ac028005c916e67c230759de97c49cff8',1,'VW::config::options_boost_po::was_supplied()']]],
+  ['was_5fsupplied',['was_supplied',['../structVW_1_1config_1_1options__i.html#a673e4a143e22c4e2ff8c30dfaab9fd68',1,'VW::config::options_i::was_supplied()'],['../structVW_1_1config_1_1options__name__extractor.html#a605f830b9de887fcfbea4472da65ef13',1,'VW::config::options_name_extractor::was_supplied()'],['../structVW_1_1config_1_1options__boost__po.html#ac028005c916e67c230759de97c49cff8',1,'VW::config::options_boost_po::was_supplied()']]],
   ['weight',['weight',['../namespaceCB.html#a8c047ff2bc5fccb5ae6be086092f3ca5',1,'CB']]],
   ['weight_5fgen',['weight_gen',['../namespaceBS.html#a3f19f4a11eca7bcb633823c1ac1e057a',1,'BS']]],
   ['weighted_5fexamples',['weighted_examples',['../structshared__data.html#a2997e24e8f7088cf4c1f782038238ae6',1,'shared_data']]],
