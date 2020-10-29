@@ -68,7 +68,7 @@ var searchData=
   ['logger',['logger',['../structvw.html#a6f3a5a390dca7aeac4ab2116bcc3f8a8',1,'vw']]],
   ['loop_5fend',['loop_end',['../structINTERACTIONS_1_1feature__gen__data.html#a111a28e44d2bb5bb445b7b95206e86f8',1,'INTERACTIONS::feature_gen_data']]],
   ['loop_5fidx',['loop_idx',['../structINTERACTIONS_1_1feature__gen__data.html#a673ca244fe02d9673203e4af180981ee',1,'INTERACTIONS::feature_gen_data']]],
-  ['loss',['loss',['../structexample.html#aec82f8fecc8ad2a13e54ecf83dfbc5c9',1,'example::loss()'],['../structvw.html#a6d53e7b5144384bf3e68fd8d7566a39a',1,'vw::loss()'],['../structSearch_1_1search.html#ac043f03704a4b004290936cb1dc6822f',1,'Search::search::loss()']]],
+  ['loss',['loss',['../structexample.html#aec82f8fecc8ad2a13e54ecf83dfbc5c9',1,'example::loss()'],['../structvw.html#a89de6d88640fec9c2f0fb466ea436114',1,'vw::loss()'],['../structSearch_1_1search.html#ac043f03704a4b004290936cb1dc6822f',1,'Search::search::loss()']]],
   ['loss_5ffunction',['loss_function',['../classloss__function.html',1,'']]],
   ['loss_5ffunctions_2eh',['loss_functions.h',['../loss__functions_8h.html',1,'']]],
   ['lp',['lp',['../structparser.html#af15b434af656966700c94a50a92c4fcd',1,'parser']]],

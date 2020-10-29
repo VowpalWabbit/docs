@@ -94,6 +94,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;string&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
 <code>#include &quot;<a class="el" href="parse__primitives_8h.html">parse_primitives.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -103,16 +104,16 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac1bd9757e6fdd5783d5e78025fd9c518"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classloss__function.html">loss_function</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loss__functions_8h.html#ac1bd9757e6fdd5783d5e78025fd9c518">getLossFunction</a> (<a class="el" href="structvw.html">vw</a> &amp;, std::string funcName, float function_parameter=0)</td></tr>
-<tr class="separator:ac1bd9757e6fdd5783d5e78025fd9c518"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b84e634bbce885699212a4104e2a720"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classloss__function.html">loss_function</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="loss__functions_8h.html#a8b84e634bbce885699212a4104e2a720">getLossFunction</a> (<a class="el" href="structvw.html">vw</a> &amp;, const std::string &amp;funcName, float function_parameter=0)</td></tr>
+<tr class="separator:a8b84e634bbce885699212a4104e2a720"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ac1bd9757e6fdd5783d5e78025fd9c518"></a>
+<a class="anchor" id="a8b84e634bbce885699212a4104e2a720"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classloss__function.html">loss_function</a>* getLossFunction </td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classloss__function.html">loss_function</a>&gt; getLossFunction </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structvw.html">vw</a> &amp;&#160;</td>
           <td class="paramname">, </td>
@@ -120,7 +121,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>funcName</em>, </td>
         </tr>
         <tr>
@@ -142,7 +143,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 23 2020 21:51:41 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 29 2020 15:25:05 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -90,7 +90,7 @@ var searchData=
   ['gethasher',['getHasher',['../parse__primitives_8h.html#ad2d39f84e4e19d8488c984287d0a497e',1,'parse_primitives.h']]],
   ['getk',['getK',['../classVW_1_1named__labels.html#a1083406eed955d447f2d689f27de05ff',1,'VW::named_labels']]],
   ['getloss',['getLoss',['../classloss__function.html#a46f4d6f9bb6d90efdf4b0ffc5fcbba9e',1,'loss_function']]],
-  ['getlossfunction',['getLossFunction',['../loss__functions_8h.html#ac1bd9757e6fdd5783d5e78025fd9c518',1,'loss_functions.h']]],
+  ['getlossfunction',['getLossFunction',['../loss__functions_8h.html#a8b84e634bbce885699212a4104e2a720',1,'loss_functions.h']]],
   ['getrevertingweight',['getRevertingWeight',['../classloss__function.html#aa787089f885b15b35aa460c3096a79fc',1,'loss_function']]],
   ['getsquaregrad',['getSquareGrad',['../classloss__function.html#a378d23c5adf0b9dd65417893dfa8b9bc',1,'loss_function']]],
   ['gettype',['getType',['../classloss__function.html#a7a9fc3e21b0331c6cafb0a81ff7966d8',1,'loss_function']]],
