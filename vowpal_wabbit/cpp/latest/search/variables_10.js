@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['p',['p',['../structvw.html#ab70afa2ceae01968d9d291c5c8b060be',1,'vw']]],
   ['parent',['parent',['../structnode__socks.html#a9107491c00d5f397f28b1bcf50093704',1,'node_socks']]],
   ['parent_5fid',['parent_id',['../structVW_1_1cats__tree_1_1tree__node.html#ab9afc293f9774abc9205c5b0f2cda56b',1,'VW::cats_tree::tree_node::parent_id()'],['../structVW_1_1offset__tree_1_1tree__node.html#a001698e8429ceada3da690bfb37cb1b8',1,'VW::offset_tree::tree_node::parent_id()']]],
   ['parse_5flabel',['parse_label',['../structlabel__parser.html#a39bd9e8a6a2ffdd511c3234f8ab9bd77',1,'label_parser']]],

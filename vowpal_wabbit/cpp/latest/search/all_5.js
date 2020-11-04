@@ -70,6 +70,7 @@ var searchData=
   ['example_5fis_5fnewline',['example_is_newline',['../example_8h.html#ad8ef938a3403c1301b406f6532895c23',1,'example.h']]],
   ['example_5fis_5fnewline_5fnot_5fheader',['example_is_newline_not_header',['../namespaceCB__ALGS.html#a0066e59b0219432265df0426329ea266',1,'CB_ALGS']]],
   ['example_5fnumber',['example_number',['../structshared__data.html#a0de1ca113ee6d22741ca6737a00cddd0',1,'shared_data']]],
+  ['example_5fparser',['example_parser',['../structvw.html#a511eb656017f5708368b1e6531107e31',1,'vw']]],
   ['example_5fpool',['example_pool',['../structparser.html#ad2b0db3600bd890b2a6a29280e15f2fd',1,'parser']]],
   ['example_5fpredict',['example_predict',['../structexample__predict.html',1,'example_predict'],['../structexample__predict.html#a8c2f391a1f3930af4841e8c1f2627f61',1,'example_predict::example_predict()'],['../structexample__predict.html#ad63d2064a1dbfbab5c6254dc885bb8f7',1,'example_predict::example_predict(const example_predict &amp;)=delete'],['../structexample__predict.html#a8b3fe12abd072bed4d40d49f0f1b86b3',1,'example_predict::example_predict(example_predict &amp;&amp;other) noexcept']]],
   ['example_5fpredict_2eh',['example_predict.h',['../example__predict_8h.html',1,'']]],

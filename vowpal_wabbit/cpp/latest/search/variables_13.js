@@ -21,7 +21,7 @@ var searchData=
   ['shared_5ftype',['SHARED_TYPE',['../constant_8h.html#a186c53aa4337a15980d33920c6f34e62',1,'constant.h']]],
   ['should_5fdelete_5foptions',['should_delete_options',['../structvw.html#a2722b046b681cb7f3856ed1efd0301f9',1,'vw']]],
   ['simple',['simple',['../unionpolylabel.html#a80ff268cb4e29afddaac58174d316297',1,'polylabel']]],
-  ['simple_5flabel',['simple_label',['../simple__label_8h.html#ada71ba5e575accdee38d3be663304389',1,'simple_label.h']]],
+  ['simple_5flabel_5fparser',['simple_label_parser',['../simple__label_8h.html#aaa82d9cad70b48e4e3590330232182ae',1,'simple_label.h']]],
   ['skip_5fgram_5ftransformer',['skip_gram_transformer',['../structvw.html#a970fcaf1f8b5f7c53781351a585c0550',1,'vw']]],
   ['skiplearn',['skipLearn',['../structDecisionServiceInteraction.html#a939a412554f4bb0d03bb9886557d52cc',1,'DecisionServiceInteraction']]],
   ['slates',['slates',['../unionpolylabel.html#a753625eb168531086340934ac3f2a92d',1,'polylabel']]],

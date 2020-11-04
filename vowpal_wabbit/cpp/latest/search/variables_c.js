@@ -14,6 +14,7 @@ var searchData=
   ['labeled',['labeled',['../structVW_1_1slates_1_1label.html#a8ee43031c61a9a8a56d4c05bbec341ac',1,'VW::slates::label']]],
   ['last_5fcorrect_5fcost',['last_correct_cost',['../structGEN__CS_1_1cb__to__cs.html#a84aed12d3c21ee450ffcc3128e3db994',1,'GEN_CS::cb_to_cs']]],
   ['last_5fpred_5freg',['last_pred_reg',['../structGEN__CS_1_1cb__to__cs.html#a4d390b9d79b8a71897d727dea0299356',1,'GEN_CS::cb_to_cs']]],
+  ['lbl_5fparser',['lbl_parser',['../structparser.html#a986cd8c09f666c0ae0928a0e3d092222',1,'parser']]],
   ['lda',['lda',['../structvw.html#a64bc066c8b21fa67a5a7b2700fb9160b',1,'vw']]],
   ['ldict',['ldict',['../structshared__data.html#a979c2e85da11a940fd214b3ce898d185',1,'shared_data']]],
   ['learn_5fcount',['learn_count',['../structVW_1_1cats__tree_1_1tree__node.html#af48b7cfebb8011772f461c724c08fdfb',1,'VW::cats_tree::tree_node']]],
@@ -29,6 +30,5 @@ var searchData=
   ['logger',['logger',['../structvw.html#a6f3a5a390dca7aeac4ab2116bcc3f8a8',1,'vw']]],
   ['loop_5fend',['loop_end',['../structINTERACTIONS_1_1feature__gen__data.html#a111a28e44d2bb5bb445b7b95206e86f8',1,'INTERACTIONS::feature_gen_data']]],
   ['loop_5fidx',['loop_idx',['../structINTERACTIONS_1_1feature__gen__data.html#a673ca244fe02d9673203e4af180981ee',1,'INTERACTIONS::feature_gen_data']]],
-  ['loss',['loss',['../structexample.html#aec82f8fecc8ad2a13e54ecf83dfbc5c9',1,'example::loss()'],['../structvw.html#a89de6d88640fec9c2f0fb466ea436114',1,'vw::loss()']]],
-  ['lp',['lp',['../structparser.html#af15b434af656966700c94a50a92c4fcd',1,'parser']]]
+  ['loss',['loss',['../structexample.html#aec82f8fecc8ad2a13e54ecf83dfbc5c9',1,'example::loss()'],['../structvw.html#a89de6d88640fec9c2f0fb466ea436114',1,'vw::loss()']]]
 ];

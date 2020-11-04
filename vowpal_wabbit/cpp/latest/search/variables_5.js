@@ -21,6 +21,7 @@ var searchData=
   ['example_5ffactory',['example_factory',['../structContext.html#af1836e824a1b55fd9f094c1953e11c85',1,'Context']]],
   ['example_5ffactory_5fcontext',['example_factory_context',['../structContext.html#ac6923f4aab4d39a175e7c079a57847b6',1,'Context']]],
   ['example_5fnumber',['example_number',['../structshared__data.html#a0de1ca113ee6d22741ca6737a00cddd0',1,'shared_data']]],
+  ['example_5fparser',['example_parser',['../structvw.html#a511eb656017f5708368b1e6531107e31',1,'vw']]],
   ['example_5fpool',['example_pool',['../structparser.html#ad2b0db3600bd890b2a6a29280e15f2fd',1,'parser']]],
   ['examples',['examples',['../structContext.html#afbc07929e07aec1daf5c896a6cbd7665',1,'Context']]],
   ['examples_5fdont_5fchange',['EXAMPLES_DONT_CHANGE',['../namespaceSearch.html#a00f1706c73f53da6977b3358e53c8e58',1,'Search']]],
