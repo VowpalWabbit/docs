@@ -37,7 +37,7 @@ var searchData=
   ['ccb_5flabel',['CCB_LABEL',['../constant_8h.html#a819220941aa2e5b0c3f7a7e9e29c27fa',1,'constant.h']]],
   ['ccb_5flabel_5fparser',['ccb_label_parser',['../namespaceCCB.html#af56cd40124a5bce77d72c7856c77d046',1,'CCB']]],
   ['ccb_5fslot_5fnamespace',['ccb_slot_namespace',['../constant_8h.html#aa0d4c4765f8f076fb7e1fe34fe8de1ed',1,'constant.h']]],
-  ['chain_5fhash',['chain_hash',['../structvw.html#a21c502f83c7901e9cfe32645f3299b1d',1,'vw::chain_hash()'],['../structinput__options.html#a4d852ffdd3b84ba8c7760167c472cfdd',1,'input_options::chain_hash()']]],
+  ['chain_5fhash_5fjson',['chain_hash_json',['../structvw.html#a0b2acf2943511ba3e4ee095c92e6db64',1,'vw::chain_hash_json()'],['../structinput__options.html#a541f854b01aec3b796f40f3739b93675',1,'input_options::chain_hash_json()']]],
   ['check_5fholdout_5fevery_5fn_5fpasses',['check_holdout_every_n_passes',['../structvw.html#aae068f91d8a164a01678e49274a41d0d',1,'vw']]],
   ['children',['children',['../structnode__socks.html#a7ed2657a18004dbca8ac585405efdd56',1,'node_socks']]],
   ['class_5findex',['class_index',['../structCOST__SENSITIVE_1_1wclass.html#af5f5e6653d8c582e6d6803fbad06c9a5',1,'COST_SENSITIVE::wclass']]],
