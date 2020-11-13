@@ -23,5 +23,5 @@ var searchData=
   ['trace_5flistener',['trace_listener',['../classvw__ostream.html#a453dc07231757ecbb3d2f1f4a3b723e8',1,'vw_ostream']]],
   ['trace_5fmessage',['trace_message',['../structvw.html#a925d7b1383c78902bdd02f3174d78d62',1,'vw']]],
   ['training',['training',['../structvw.html#aa008bf77c7a0f5b90b21d16b3b1cf38c',1,'vw']]],
-  ['type',['type',['../structCCB_1_1label.html#aeb312b579a5debb8537f8c433643c759',1,'CCB::label::type()'],['../structVW_1_1slates_1_1label.html#a3534b1caf54bde6f345dc0fd94379778',1,'VW::slates::label::type()']]]
+  ['type',['type',['../structCCB_1_1label.html#aeb312b579a5debb8537f8c433643c759',1,'CCB::label::type()'],['../structCCB_1_1reduction__features.html#ab6533591a593cdffe7e084881713f41f',1,'CCB::reduction_features::type()'],['../structVW_1_1slates_1_1label.html#a3534b1caf54bde6f345dc0fd94379778',1,'VW::slates::label::type()']]]
 ];

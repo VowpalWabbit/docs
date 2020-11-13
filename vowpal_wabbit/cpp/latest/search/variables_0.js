@@ -13,6 +13,7 @@ var searchData=
   ['_5fptr1',['_ptr1',['../classvw__slim_1_1internal_1_1location__reference.html#a2e738640ca91e31b8d9b1142d27eb2f3',1,'vw_slim::internal::location_reference']]],
   ['_5fptr2',['_ptr2',['../classvw__slim_1_1internal_1_1location__reference.html#a30ec033146f8fa110fe278bcd578efca',1,'vw_slim::internal::location_reference']]],
   ['_5frandom_5fstate',['_random_state',['../structactive.html#aaeacbea2d39e286537d5d0dd4683883c',1,'active::_random_state()'],['../structExpReplay_1_1expreplay.html#a464b04f61a51ee4addf19030712d5845',1,'ExpReplay::expreplay::_random_state()']]],
+  ['_5freduction_5ffeatures',['_reduction_features',['../structexample__predict.html#a196aefa0f742cb3bce1456bf18ca3be0',1,'example_predict']]],
   ['_5fshared_5fdata',['_shared_data',['../structparser.html#a29f98b675dc11176078222fccd8afeeb',1,'parser']]],
   ['_5fval1',['_val1',['../classvw__slim_1_1internal_1_1location__value.html#a3df29a7f09a252e114dd3c957ac14cf2',1,'vw_slim::internal::location_value']]],
   ['_5fval2',['_val2',['../classvw__slim_1_1internal_1_1location__value.html#ae732ca3bc027ec913f8af0343ec06efb',1,'vw_slim::internal::location_value']]],
