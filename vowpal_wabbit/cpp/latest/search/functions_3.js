@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['data',['data',['../classVW_1_1parsers_1_1flatbuffer_1_1parser.html#aefb122df0a2051f8fcdda8e6bb760398',1,'VW::parsers::flatbuffer::parser']]],
   ['dealloc_5fexample',['dealloc_example',['../namespaceVW.html#a2cf9260494b1905cb29eb481e4b5453a',1,'VW']]],
   ['decisionservicestate',['DecisionServiceState',['../classDecisionServiceState.html#a46369311924aed5584e968d2ac6ef603',1,'DecisionServiceState']]],
   ['decr',['decr',['../structv__array.html#af6bf383b8dcaabdd1246b2b2a5350ce4',1,'v_array']]],
