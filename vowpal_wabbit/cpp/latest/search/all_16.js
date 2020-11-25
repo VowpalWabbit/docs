@@ -34,6 +34,7 @@ var searchData=
   ['slates',['slates',['../namespaceVW_1_1slates.html',1,'VW']]],
   ['softmax',['softmax',['../namespaceVW_1_1cb__explore__adf_1_1softmax.html',1,'VW::cb_explore_adf']]],
   ['squarecb',['squarecb',['../namespaceVW_1_1cb__explore__adf_1_1squarecb.html',1,'VW::cb_explore_adf']]],
+  ['synthcover',['synthcover',['../namespaceVW_1_1cb__explore__adf_1_1synthcover.html',1,'VW::cb_explore_adf']]],
   ['v_5farray',['v_array',['../structv__array.html',1,'']]],
   ['v_5farray_2eh',['v_array.h',['../v__array_8h.html',1,'']]],
   ['v_5farray_3c_20action_20_3e',['v_array&lt; action &gt;',['../structv__array.html',1,'']]],

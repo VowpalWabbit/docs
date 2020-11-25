@@ -34,6 +34,7 @@ var searchData=
   ['slates',['slates',['../namespaceVW_1_1slates.html',1,'VW']]],
   ['softmax',['softmax',['../namespaceVW_1_1cb__explore__adf_1_1softmax.html',1,'VW::cb_explore_adf']]],
   ['squarecb',['squarecb',['../namespaceVW_1_1cb__explore__adf_1_1squarecb.html',1,'VW::cb_explore_adf']]],
+  ['synthcover',['synthcover',['../namespaceVW_1_1cb__explore__adf_1_1synthcover.html',1,'VW::cb_explore_adf']]],
   ['vw',['VW',['../namespaceVW.html',1,'']]],
   ['vw_5fslim',['vw_slim',['../namespacevw__slim.html',1,'']]]
 ];

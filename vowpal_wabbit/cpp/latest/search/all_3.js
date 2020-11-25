@@ -69,6 +69,7 @@ var searchData=
   ['cb_5fexplore_5fadf_5frnd_2eh',['cb_explore_adf_rnd.h',['../cb__explore__adf__rnd_8h.html',1,'']]],
   ['cb_5fexplore_5fadf_5fsoftmax_2eh',['cb_explore_adf_softmax.h',['../cb__explore__adf__softmax_8h.html',1,'']]],
   ['cb_5fexplore_5fadf_5fsquarecb_2eh',['cb_explore_adf_squarecb.h',['../cb__explore__adf__squarecb_8h.html',1,'']]],
+  ['cb_5fexplore_5fadf_5fsynthcover_2eh',['cb_explore_adf_synthcover.h',['../cb__explore__adf__synthcover_8h.html',1,'']]],
   ['cb_5fexplore_5fpdf_2eh',['cb_explore_pdf.h',['../cb__explore__pdf_8h.html',1,'']]],
   ['cb_5fexplore_5fpdf_5fsetup',['cb_explore_pdf_setup',['../namespaceVW_1_1continuous__action.html#a68068ab51d0e65137c0691c29d3d4eae',1,'VW::continuous_action']]],
   ['cb_5fexplore_5fsetup',['cb_explore_setup',['../cb__explore_8h.html#a23b68c61a3b8feb4198dcd164110838e',1,'cb_explore.h']]],
