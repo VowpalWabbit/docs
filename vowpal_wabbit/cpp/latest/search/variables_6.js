@@ -16,6 +16,7 @@ var searchData=
   ['finished_5fcount',['finished_count',['../structparser.html#ad53b04588524b349d94531588be79b1f',1,'parser']]],
   ['finished_5fexamples',['finished_examples',['../structparser.html#a57c9f679c9e61169c79427eebbcc1f5a',1,'parser']]],
   ['first_5fobserved_5flabel',['first_observed_label',['../structshared__data.html#ad9928fa7af7f746db35a6803a17f452b',1,'shared_data']]],
+  ['first_5fonly',['first_only',['../structVW_1_1pmf__to__pdf_1_1reduction.html#af9469be27491babc9fb2ab61a1481784',1,'VW::pmf_to_pdf::reduction']]],
   ['flat_5fconverter',['flat_converter',['../structvw.html#a9b51bc55f446cf165b14327536a8a2c5',1,'vw']]],
   ['flatbuffer',['flatbuffer',['../structinput__options.html#af68756d6cbe80559c98b31ea167a3566',1,'input_options']]],
   ['float_5fstate',['float_state',['../structContext.html#a724f9710a5897be7e09e301afe8b1abe',1,'Context']]],

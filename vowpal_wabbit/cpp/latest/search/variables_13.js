@@ -13,6 +13,7 @@ var searchData=
   ['sd',['sd',['../structvw.html#aada16c220b8d3eaf62aaee86168dde5e',1,'vw']]],
   ['searchstr',['searchstr',['../structvw.html#af1db5f5b1b98a4aa2a8062b6d65d7d89',1,'vw']]],
   ['second_5fobserved_5flabel',['second_observed_label',['../structshared__data.html#a7bc97afde96c2ca68808904f5c817dcc',1,'shared_data']]],
+  ['segment',['segment',['../classArrayToPdfState.html#a90a676dd3c2fef026dfa3c4748501f33',1,'ArrayToPdfState']]],
   ['self_5finteraction',['self_interaction',['../structINTERACTIONS_1_1feature__gen__data.html#aac086bebc701873e4bc2dd9e497a22d7',1,'INTERACTIONS::feature_gen_data']]],
   ['sensitivity_5ff',['sensitivity_f',['../structVW_1_1LEARNER_1_1sensitivity__data.html#a3af18eebab310c678cf75e00e8b06152',1,'VW::LEARNER::sensitivity_data']]],
   ['set_5fminmax',['set_minmax',['../structvw.html#a69eeaba77ee80911e764ffa72edbb2c9',1,'vw']]],

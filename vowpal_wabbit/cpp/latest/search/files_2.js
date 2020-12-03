@@ -31,6 +31,7 @@ var searchData=
   ['conditional_5fcontextual_5fbandit_2eh',['conditional_contextual_bandit.h',['../conditional__contextual__bandit_8h.html',1,'']]],
   ['confidence_2eh',['confidence.h',['../confidence_8h.html',1,'']]],
   ['constant_2eh',['constant.h',['../constant_8h.html',1,'']]],
+  ['continuous_5factions_5freduction_5ffeatures_2eh',['continuous_actions_reduction_features.h',['../continuous__actions__reduction__features_8h.html',1,'']]],
   ['correctedmath_2eh',['correctedMath.h',['../correctedMath_8h.html',1,'']]],
   ['cost_5fsensitive_2eh',['cost_sensitive.h',['../cost__sensitive_8h.html',1,'']]],
   ['crossplat_5fcompat_2eh',['crossplat_compat.h',['../crossplat__compat_8h.html',1,'']]],

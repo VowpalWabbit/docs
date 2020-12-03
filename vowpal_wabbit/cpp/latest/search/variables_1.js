@@ -19,6 +19,7 @@ var searchData=
   ['ar_5fbuf_5fsize',['ar_buf_size',['../allreduce_8h.html#ae5dbb7bf6624bc7ee3c1a40fec4452e4',1,'allreduce.h']]],
   ['arg',['arg',['../structHookTask_1_1task__data.html#a331a938dbd07647b86f82c6db97a0a03',1,'HookTask::task_data']]],
   ['array_5ffloat_5fstate',['array_float_state',['../structContext.html#ac5492ae0d8d2d852cbfc29c0b2142866',1,'Context']]],
+  ['array_5fpdf_5fstate',['array_pdf_state',['../structContext.html#a0c63973499515bb8cca9f9ef28b95eb0',1,'Context']]],
   ['array_5fstate',['array_state',['../structContext.html#afffe902d655a213d67b5ed8bc930c945',1,'Context']]],
   ['array_5fuint_5fstate',['array_uint_state',['../structContext.html#a4b41cc44be8c5ffcc29b8486e498dd03',1,'Context']]],
   ['audit',['audit',['../structvw.html#a6429c2918e06d399a27ccaf4000e4e33',1,'vw::audit()'],['../structparser.html#abb101905005cba3160d0a78339c2d302',1,'parser::audit()']]],

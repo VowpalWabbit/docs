@@ -40,6 +40,7 @@ var searchData=
   ['chain_5fhash_5fjson',['chain_hash_json',['../structvw.html#a0b2acf2943511ba3e4ee095c92e6db64',1,'vw::chain_hash_json()'],['../structinput__options.html#a541f854b01aec3b796f40f3739b93675',1,'input_options::chain_hash_json()']]],
   ['check_5fholdout_5fevery_5fn_5fpasses',['check_holdout_every_n_passes',['../structvw.html#aae068f91d8a164a01678e49274a41d0d',1,'vw']]],
   ['children',['children',['../structnode__socks.html#a7ed2657a18004dbca8ac585405efdd56',1,'node_socks']]],
+  ['chosen_5faction',['chosen_action',['../structVW_1_1continuous__actions_1_1reduction__features.html#a7787a47aa964d286d2424fea39cca0b7',1,'VW::continuous_actions::reduction_features']]],
   ['class_5findex',['class_index',['../structCOST__SENSITIVE_1_1wclass.html#af5f5e6653d8c582e6d6803fbad06c9a5',1,'COST_SENSITIVE::wclass']]],
   ['col_5favg_5floss',['col_avg_loss',['../structshared__data.html#a336342f8be49e813c9bfd5e8cef69444',1,'shared_data']]],
   ['col_5fcurrent_5ffeatures',['col_current_features',['../structshared__data.html#ac58b4bd5aaeb55095cdcdb43bf7564b3',1,'shared_data']]],
