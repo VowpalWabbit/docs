@@ -62,5 +62,6 @@ var searchData=
   ['num_5fnamespaces',['NUM_NAMESPACES',['../constant_8h.html#af6972edf713d5809ccd5658eca433d84',1,'constant.h']]],
   ['num_5foutput_5ffiles',['num_output_files',['../classio__buf.html#af5696664eb5ec6a526cdbaeb50eed00c',1,'io_buf']]],
   ['num_5fweights',['num_weights',['../namespaceVW.html#a79f4b5129db34f40bdb6d0a970dd30b1',1,'VW']]],
+  ['numeric_5fcasts_2eh',['numeric_casts.h',['../numeric__casts_8h.html',1,'']]],
   ['numpasses',['numpasses',['../structvw.html#ad1f9eb87601ea231196182e3fce1a2a7',1,'vw']]]
 ];
