@@ -2044,8 +2044,14 @@ class would be predicted.</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">vowpalwabbit.sklearn_vw</span> <span class="kn">import</span> <span class="n">VWMultiClassifier</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">model</span> <span class="o">=</span> <span class="n">VWMultiClassifier</span><span class="p">(</span><span class="n">oaa</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">loss_function</span><span class="o">=</span><span class="s1">&#39;logistic&#39;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">_</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">model</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+<span class="go">array([[0.38928846, 0.30534211, 0.30536944],</span>
+<span class="go">       [0.40664235, 0.29666999, 0.29668769],</span>
+<span class="go">       [0.52324486, 0.23841164, 0.23834346],</span>
+<span class="go">       [0.5268591 , 0.23660533, 0.23653553],</span>
+<span class="go">       [0.65397811, 0.17312808, 0.17289382],</span>
+<span class="go">       [0.61190444, 0.19416356, 0.19393198]])</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -2155,6 +2161,7 @@ n_features is the number of features.</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">hv</span> <span class="o">=</span> <span class="n">HashingVectorizer</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">hashed</span> <span class="o">=</span> <span class="n">hv</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">tovw</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">hashed</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">)</span>
+<span class="go">[&#39;-1 1 | 300839:1&#39;, &#39;1 1 | 980517:-1&#39;, &#39;-1 1 | 300839:1&#39;, &#39;-1 1 | 300839:1&#39;]</span>
 </pre></div>
 </div>
 </dd></dl>

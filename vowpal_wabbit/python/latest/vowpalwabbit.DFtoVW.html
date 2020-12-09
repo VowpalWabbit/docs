@@ -208,36 +208,40 @@ more Feature object(s).</p>
 </tbody>
 </table>
 <p class="rubric">Examples</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">vowpalwabbit.DFtoVW</span> <span class="kn">import</span> <span class="n">DFtoVW</span><span class="p">,</span> <span class="n">SimpleLabel</span><span class="p">,</span> <span class="n">Feature</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">vowpalwabbit.DFtoVW</span> <span class="kn">import</span> <span class="n">DFtoVW</span><span class="p">,</span> <span class="n">SimpleLabel</span><span class="p">,</span> <span class="n">Feature</span><span class="p">,</span> <span class="n">Namespace</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 </pre></div>
 </div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;y&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="s2">&quot;c&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">4</span><span class="p">]})</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">conv1</span> <span class="o">=</span> <span class="n">DFtoVW</span><span class="p">(</span><span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">,</span>
-<span class="go">                   label=SimpleLabel(&quot;y&quot;),</span>
-<span class="go">                   features=Feature(&quot;a&quot;))</span>
+<span class="gp">... </span>               <span class="n">label</span><span class="o">=</span><span class="n">SimpleLabel</span><span class="p">(</span><span class="s2">&quot;y&quot;</span><span class="p">),</span>
+<span class="gp">... </span>               <span class="n">features</span><span class="o">=</span><span class="n">Feature</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">))</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">conv1</span><span class="o">.</span><span class="n">convert_df</span><span class="p">()</span>
+<span class="go">[&#39;1 | a:2&#39;]</span>
 </pre></div>
 </div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">conv2</span> <span class="o">=</span> <span class="n">DFtoVW</span><span class="p">(</span><span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">,</span>
-<span class="go">                   label=SimpleLabel(&quot;y&quot;),</span>
-<span class="go">                   features=[Feature(col) for col in [&quot;a&quot;, &quot;b&quot;]])</span>
+<span class="gp">... </span>               <span class="n">label</span><span class="o">=</span><span class="n">SimpleLabel</span><span class="p">(</span><span class="s2">&quot;y&quot;</span><span class="p">),</span>
+<span class="gp">... </span>               <span class="n">features</span><span class="o">=</span><span class="p">[</span><span class="n">Feature</span><span class="p">(</span><span class="n">col</span><span class="p">)</span> <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">]])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">conv2</span><span class="o">.</span><span class="n">convert_df</span><span class="p">()</span>
+<span class="go">[&#39;1 | a:2 b:3&#39;]</span>
 </pre></div>
 </div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">conv3</span> <span class="o">=</span> <span class="n">DFtoVW</span><span class="p">(</span><span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">,</span>
-<span class="go">                   label=SimpleLabel(&quot;y&quot;),</span>
-<span class="go">                   namespaces=Namespace(</span>
-<span class="go">                           name=&quot;DoubleIt&quot;, value=2,</span>
-<span class="go">                           features=Feature(value=&quot;a&quot;, rename_feature=&quot;feat_a&quot;)))</span>
+<span class="gp">... </span>               <span class="n">label</span><span class="o">=</span><span class="n">SimpleLabel</span><span class="p">(</span><span class="s2">&quot;y&quot;</span><span class="p">),</span>
+<span class="gp">... </span>               <span class="n">namespaces</span><span class="o">=</span><span class="n">Namespace</span><span class="p">(</span>
+<span class="gp">... </span>                       <span class="n">name</span><span class="o">=</span><span class="s2">&quot;DoubleIt&quot;</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+<span class="gp">... </span>                       <span class="n">features</span><span class="o">=</span><span class="n">Feature</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="n">rename_feature</span><span class="o">=</span><span class="s2">&quot;feat_a&quot;</span><span class="p">)))</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">conv3</span><span class="o">.</span><span class="n">convert_df</span><span class="p">()</span>
+<span class="go">[&#39;1 |DoubleIt:2 feat_a:2&#39;]</span>
 </pre></div>
 </div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">conv4</span> <span class="o">=</span> <span class="n">DFtoVW</span><span class="p">(</span><span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">,</span>
-<span class="go">                   label=SimpleLabel(&quot;y&quot;),</span>
-<span class="go">                   namespaces=[Namespace(name=&quot;NS1&quot;, features=[Feature(col) for col in [&quot;a&quot;, &quot;c&quot;]]),</span>
-<span class="go">                               Namespace(name=&quot;NS2&quot;, features=Feature(&quot;b&quot;))])</span>
+<span class="gp">... </span>               <span class="n">label</span><span class="o">=</span><span class="n">SimpleLabel</span><span class="p">(</span><span class="s2">&quot;y&quot;</span><span class="p">),</span>
+<span class="gp">... </span>               <span class="n">namespaces</span><span class="o">=</span><span class="p">[</span><span class="n">Namespace</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;NS1&quot;</span><span class="p">,</span> <span class="n">features</span><span class="o">=</span><span class="p">[</span><span class="n">Feature</span><span class="p">(</span><span class="n">col</span><span class="p">)</span> <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="p">]]),</span>
+<span class="gp">... </span>                           <span class="n">Namespace</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;NS2&quot;</span><span class="p">,</span> <span class="n">features</span><span class="o">=</span><span class="n">Feature</span><span class="p">(</span><span class="s2">&quot;b&quot;</span><span class="p">))])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">conv4</span><span class="o">.</span><span class="n">convert_df</span><span class="p">()</span>
+<span class="go">[&#39;1 |NS1 a:2 c:4 |NS2 b:3&#39;]</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -432,11 +436,13 @@ explicit about where the error occurs in the formula.</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;y&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;x&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">2</span><span class="p">]})</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">conv</span> <span class="o">=</span> <span class="n">DFtoVW</span><span class="o">.</span><span class="n">from_colnames</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="s2">&quot;y&quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">conv</span><span class="o">.</span><span class="n">convert_df</span><span class="p">()</span>
+<span class="go">[&#39;1 | x:2&#39;]</span>
 </pre></div>
 </div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">df2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;y&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;x1&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="s2">&quot;x2&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="s2">&quot;x3&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">4</span><span class="p">]})</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">conv2</span> <span class="o">=</span> <span class="n">DFtoVW</span><span class="o">.</span><span class="n">from_colnames</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="s2">&quot;y&quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="nb">set</span><span class="p">(</span><span class="n">df2</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span> <span class="o">-</span> <span class="nb">set</span><span class="p">(</span><span class="s2">&quot;y&quot;</span><span class="p">),</span> <span class="n">df</span><span class="o">=</span><span class="n">df2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">conv2</span> <span class="o">=</span> <span class="n">DFtoVW</span><span class="o">.</span><span class="n">from_colnames</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="s2">&quot;y&quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="nb">sorted</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">df2</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span> <span class="o">-</span> <span class="nb">set</span><span class="p">(</span><span class="s2">&quot;y&quot;</span><span class="p">))),</span> <span class="n">df</span><span class="o">=</span><span class="n">df2</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">conv2</span><span class="o">.</span><span class="n">convert_df</span><span class="p">()</span>
+<span class="go">[&#39;1 | x1:2 x2:3 x3:4&#39;]</span>
 </pre></div>
 </div>
 </dd></dl>

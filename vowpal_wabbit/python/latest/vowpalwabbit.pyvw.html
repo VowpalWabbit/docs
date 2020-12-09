@@ -662,7 +662,7 @@ id) or a string, in which case it is hashed.</p>
 
 <dl class="method">
 <dt id="vowpalwabbit.pyvw.example.get_label">
-<code class="descname">get_label</code><span class="sig-paren">(</span><em>self</em>, <em>label_class=&lt;class vowpalwabbit.pyvw.simple_label at 0x7fea115e7d00&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.example.get_label" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_label</code><span class="sig-paren">(</span><em>self</em>, <em>label_class=&lt;class vowpalwabbit.pyvw.simple_label at 0x7fb923903d00&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.example.get_label" title="Permalink to this definition">¶</a></dt>
 <dd><p>Given a known label class (default is simple_label), get
 the corresponding label structure for this example.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -1411,11 +1411,11 @@ for example “–audit”. By default is None.</p>
 </tbody>
 </table>
 <p class="rubric">Examples</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">vowpalwabbit</span> <span class="kn">import</span> <span class="n">vw</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">vowpalwabbit</span> <span class="kn">import</span> <span class="n">pyvw</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">vw1</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">vw</span><span class="p">(</span><span class="s1">&#39;--audit&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">vw2</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">vw</span><span class="p">(</span><span class="n">audit</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">24</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">l2</span><span class="o">=</span><span class="mf">0.001</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">vw3</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">vw</span><span class="p">(</span><span class="s2">&quot;--audit&quot;</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">26</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">vw4</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">vw</span><span class="p">(</span><span class="s2">&quot;-q&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;ab&quot;</span><span class="p">,</span> <span class="s2">&quot;ac&quot;</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">vw4</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">vw</span><span class="p">(</span><span class="n">q</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;ab&quot;</span><span class="p">,</span> <span class="s2">&quot;ac&quot;</span><span class="p">])</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -1593,10 +1593,12 @@ above available options</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">vowpalwabbit</span> <span class="kn">import</span> <span class="n">pyvw</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">model</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">vw</span><span class="p">(</span><span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">ex</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="s2">&quot;0:0.1:0.75 | a:0.5 b:1 c:2&quot;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">len</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
-<span class="go">1</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">model</span> <span class="o">=</span> <span class="n">vw</span><span class="p">(</span><span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cb_adf</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
+<span class="go">&lt;class &#39;vowpalwabbit.pyvw.example&#39;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">model</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">vw</span><span class="p">(</span><span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cb_adf</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">ex</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">parse</span><span class="p">([</span><span class="s2">&quot;| a:1 b:0.5&quot;</span><span class="p">,</span> <span class="s2">&quot;0:0.1:0.75 | a:0.5 b:1 c:2&quot;</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
+<span class="go">&lt;class &#39;list&#39;&gt;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">len</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span> <span class="c1"># Shows the multiline example is parsed</span>
 <span class="go">2</span>
 </pre></div>
