@@ -10,7 +10,7 @@ var searchData=
   ['task_5fname',['task_name',['../structSearch_1_1search.html#a4864e478d4bb7af53e04a84cec754e3b',1,'Search::search::task_name()'],['../structSearch_1_1search__task.html#ad2c6420e44a300be33991333d9be5190',1,'Search::search_task::task_name()']]],
   ['test_5flabel',['test_label',['../structlabel__parser.html#a94fdf912915561ff63b47f1f66ad16da',1,'label_parser']]],
   ['test_5fonly',['test_only',['../structexample.html#aafed65a0405faa864c87b8b75d39ef4d',1,'example']]],
-  ['text_5freader',['text_reader',['../structparser.html#af0ab021757a952bf21bb2881d14c883f',1,'parser']]],
+  ['text_5freader',['text_reader',['../structparser.html#a092ece360ed49f1993a5f5ecaf631dc7',1,'parser']]],
   ['text_5fregressor_5fname',['text_regressor_name',['../structvw.html#a4d85f6f70e0f1d9318e4c29a46b913b8',1,'vw']]],
   ['text_5fstate',['text_state',['../structContext.html#ac34c3323257dbeacad07e50c8444c4d8',1,'Context']]],
   ['the_5flabel_5fparser',['the_label_parser',['../namespaceVW_1_1cb__continuous.html#a22672447d48d9395f3e5220cbd36a757',1,'VW::cb_continuous']]],
