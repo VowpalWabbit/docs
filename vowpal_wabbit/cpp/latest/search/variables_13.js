@@ -20,7 +20,6 @@ var searchData=
   ['setup_5fobject',['setup_object',['../structHookTask_1_1task__data.html#ac09e6a6a181d27852f215c0d9a72bb04',1,'HookTask::task_data']]],
   ['shared_5fex_5findex',['SHARED_EX_INDEX',['../constant_8h.html#a753d241bccb62003b885fb0b2ae9c802',1,'constant.h']]],
   ['shared_5ftype',['SHARED_TYPE',['../constant_8h.html#a186c53aa4337a15980d33920c6f34e62',1,'constant.h']]],
-  ['should_5fdelete_5foptions',['should_delete_options',['../structvw.html#a2722b046b681cb7f3856ed1efd0301f9',1,'vw']]],
   ['simple',['simple',['../unionpolylabel.html#a80ff268cb4e29afddaac58174d316297',1,'polylabel']]],
   ['simple_5flabel_5fparser',['simple_label_parser',['../simple__label_8h.html#aaa82d9cad70b48e4e3590330232182ae',1,'simple_label.h']]],
   ['skip_5fgram_5ftransformer',['skip_gram_transformer',['../structvw.html#a970fcaf1f8b5f7c53781351a585c0550',1,'vw']]],
