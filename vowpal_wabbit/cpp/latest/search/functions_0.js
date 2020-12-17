@@ -28,7 +28,7 @@ var searchData=
   ['addns',['addns',['../classezexample.html#acd73a21ae34056c80e9f6c8ad7fe3fb8',1,'ezexample']]],
   ['adjust_5fused_5findex',['adjust_used_index',['../parser_8h.html#a33ebdef15cebf351366415c2134071c0',1,'parser.h']]],
   ['all_5freduce',['all_reduce',['../classAllReduceThreads.html#a96f28ae8e4d752d3f919c6a7ddaf27af',1,'AllReduceThreads::all_reduce()'],['../classAllReduceSockets.html#a1c92f113271cb9d77859f594271f995f',1,'AllReduceSockets::all_reduce()'],['../vw__allreduce_8h.html#ab7529d249be3d57d3122eceffa5d3d3a',1,'all_reduce():&#160;vw_allreduce.h']]],
-  ['alloc_5fexamples',['alloc_examples',['../namespaceVW.html#ab5d12f5315e3c407bcc85c5859002cb2',1,'VW']]],
+  ['alloc_5fexamples',['alloc_examples',['../namespaceVW.html#ab5d12f5315e3c407bcc85c5859002cb2',1,'VW::alloc_examples(size_t, size_t)'],['../namespaceVW.html#a1675e0ea7791ed003bacf0d4b7d4eb25',1,'VW::alloc_examples(size_t)']]],
   ['allow_5foverride',['allow_override',['../structVW_1_1config_1_1typed__option.html#aa505f38aefd53deb66f828cf88f3f0dc',1,'VW::config::typed_option']]],
   ['allreduce',['AllReduce',['../classAllReduce.html#a0bb9048bf8ec0a14718ad6bb7d6dbeca',1,'AllReduce']]],
   ['allreducesockets',['AllReduceSockets',['../classAllReduceSockets.html#a39d7eb04cefbf3d9f79bf81d4550c1a3',1,'AllReduceSockets']]],

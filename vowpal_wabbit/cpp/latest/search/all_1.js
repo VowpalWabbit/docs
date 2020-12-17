@@ -53,7 +53,7 @@ var searchData=
   ['all',['all',['../structactive.html#a2e7546cd5a68b49e2fb159ff4a0a2fa8',1,'active::all()'],['../structExpReplay_1_1expreplay.html#a5ab3ac6200666c87b812c4b86c75a4be',1,'ExpReplay::expreplay::all()'],['../structContext.html#a6917ed9833aa5cc75f0d752aecfbf0c7',1,'Context::all()']]],
   ['all_5freduce',['all_reduce',['../structvw.html#a20c2edd21794e845c4e0b3c36ea35327',1,'vw::all_reduce()'],['../classAllReduceThreads.html#a96f28ae8e4d752d3f919c6a7ddaf27af',1,'AllReduceThreads::all_reduce()'],['../classAllReduceSockets.html#a1c92f113271cb9d77859f594271f995f',1,'AllReduceSockets::all_reduce()'],['../vw__allreduce_8h.html#ab7529d249be3d57d3122eceffa5d3d3a',1,'all_reduce():&#160;vw_allreduce.h']]],
   ['all_5freduce_5ftype',['all_reduce_type',['../structvw.html#a23883363946e3f05963555a951407070',1,'vw']]],
-  ['alloc_5fexamples',['alloc_examples',['../namespaceVW.html#ab5d12f5315e3c407bcc85c5859002cb2',1,'VW']]],
+  ['alloc_5fexamples',['alloc_examples',['../namespaceVW.html#ab5d12f5315e3c407bcc85c5859002cb2',1,'VW::alloc_examples(size_t, size_t)'],['../namespaceVW.html#a1675e0ea7791ed003bacf0d4b7d4eb25',1,'VW::alloc_examples(size_t)']]],
   ['allow_5foverride',['allow_override',['../structVW_1_1config_1_1typed__option.html#aa505f38aefd53deb66f828cf88f3f0dc',1,'VW::config::typed_option']]],
   ['allreduce',['AllReduce',['../classAllReduce.html',1,'AllReduce'],['../classAllReduce.html#a0bb9048bf8ec0a14718ad6bb7d6dbeca',1,'AllReduce::AllReduce()']]],
   ['allreduce_2eh',['allreduce.h',['../allreduce_8h.html',1,'']]],
