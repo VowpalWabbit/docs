@@ -38,6 +38,7 @@ var searchData=
   ['is_5fring_5fexample',['is_ring_example',['../namespaceVW.html#a4827136233605decf732d3920d848295',1,'VW']]],
   ['is_5froot',['is_root',['../structVW_1_1cats__tree_1_1tree__node.html#a7b54429fb86f87fa883bb302d8391908',1,'VW::cats_tree::tree_node']]],
   ['is_5ftest_5flabel',['is_test_label',['../namespaceCB.html#a56e1834ec1d73967d74af21db78976ab',1,'CB']]],
+  ['is_5fvalid_5fpdf',['is_valid_pdf',['../namespaceVW_1_1continuous__actions.html#a4f1b699c90c2a0efb59a20b42707ef48',1,'VW::continuous_actions']]],
   ['isbinary',['isbinary',['../classio__buf.html#a1974dd5257eaa530030fc59cce0589be',1,'io_buf']]],
   ['isvalid',['isValid',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#a808e770995c7355b648a944b5fb730bd',1,'VW::distributionally_robust::ChiSquared']]],
   ['iterator',['iterator',['../classexample__predict_1_1iterator.html#a74c039311924caf58a5dfcb0af857bad',1,'example_predict::iterator']]]
