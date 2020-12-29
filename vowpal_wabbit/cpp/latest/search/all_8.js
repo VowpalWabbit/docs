@@ -22,6 +22,7 @@ var searchData=
   ['head',['head',['../structVW_1_1config_1_1typelist.html#a53badf648cb2451504736dc2a9e02d3e',1,'VW::config::typelist']]],
   ['help',['help',['../structVW_1_1config_1_1typed__option.html#a797ef272d3c4284ded6eeb8af7aa9434',1,'VW::config::typed_option::help()'],['../structVW_1_1config_1_1options__i.html#a068859ff0a9f9fc8934e3f3215e62926',1,'VW::config::options_i::help()'],['../structVW_1_1config_1_1options__name__extractor.html#aeeb8db957c5cdf8835a1d0a5f72746af',1,'VW::config::options_name_extractor::help()'],['../structVW_1_1config_1_1options__boost__po.html#a4718e4d9e1ad9bd919f1c1b1950cc252',1,'VW::config::options_boost_po::help()']]],
   ['hessian_5fon',['hessian_on',['../structvw.html#aba81c9a5f90eda032abe3f2977a77698',1,'vw']]],
+  ['hide',['hide',['../structVW_1_1config_1_1option__group__definition.html#ad811a8e16e397b263c5f2c574212b622',1,'VW::config::option_group_definition']]],
   ['history_5fnamespace',['history_namespace',['../constant_8h.html#a622e9192f051b3662837af6d3d0fbac8',1,'constant.h']]],
   ['holdout_5fafter',['holdout_after',['../structvw.html#a1caf02baa08f9e1e156615b98bbbd196',1,'vw']]],
   ['holdout_5fbest_5floss',['holdout_best_loss',['../structshared__data.html#a00b7fa4030c40b18d1b612586aec46ea',1,'shared_data']]],

@@ -59,6 +59,7 @@ var searchData=
   ['bufcache_5flabel',['bufcache_label',['../namespaceCB.html#af22fff7bd49678b9a735ca016ccbfdcc',1,'CB']]],
   ['bufcache_5flabel_5fadditional_5ffields',['bufcache_label_additional_fields',['../namespaceCB.html#a1e1dae5a429dc754dbf1640c72dad201',1,'CB']]],
   ['buffer',['buffer',['../structData.html#a6dc409011ac0912b2e8e16bb8fd5d5ad',1,'Data']]],
+  ['buffer_5freplace',['buffer_replace',['../structbuffer__replace.html',1,'buffer_replace'],['../structbuffer__replace.html#acae9e6f8f541ef2ceb5173d8c005df94',1,'buffer_replace::buffer_replace()']]],
   ['buffer_5fstart',['buffer_start',['../classio__buf.html#aa79ba9e0c96d4ebde9ef98493c629806',1,'io_buf']]],
   ['buffers',['buffers',['../classAllReduceSync.html#a9f9e0266fcc60ce2b7a0b06fb293e84d',1,'AllReduceSync']]],
   ['bufread_5flabel',['bufread_label',['../namespaceCB.html#a288dc757fcb070d9d9afa5dc76db0172',1,'CB']]],
