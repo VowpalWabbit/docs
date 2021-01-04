@@ -7,6 +7,7 @@ var searchData=
   ['cats_5ftree',['cats_tree',['../namespaceVW_1_1cats__tree.html',1,'VW']]],
   ['cb_5fcontinuous',['cb_continuous',['../namespaceVW_1_1cb__continuous.html',1,'VW']]],
   ['cb_5fexplore_5fadf',['cb_explore_adf',['../namespaceVW_1_1cb__explore__adf.html',1,'VW']]],
+  ['cbzo',['cbzo',['../namespaceVW_1_1cbzo.html',1,'VW']]],
   ['config',['config',['../namespaceVW_1_1config.html',1,'VW']]],
   ['continuous_5faction',['continuous_action',['../namespaceVW_1_1continuous__action.html',1,'VW']]],
   ['continuous_5factions',['continuous_actions',['../namespaceVW_1_1continuous__actions.html',1,'VW']]],
