@@ -1,11 +1,7 @@
 var searchData=
 [
   ['m_5fallow_5foverride',['m_allow_override',['../structVW_1_1config_1_1base__option.html#a0c2545e0f32e7c24169e2a254b296427',1,'VW::config::base_option']]],
-  ['m_5fbackup',['m_backup',['../structbuffer__replace.html#a8fb5e7096c60ed8347a71d1684fd98aa',1,'buffer_replace']]],
-  ['m_5ffilename',['m_filename',['../structbuffer__replace.html#a86a582c61ce36a9311253a2c248e8fa4',1,'buffer_replace']]],
-  ['m_5ffilestr',['m_filestr',['../structbuffer__replace.html#a585baa023717bba4ee62527b0ff1b740',1,'buffer_replace']]],
   ['m_5fhelp',['m_help',['../structVW_1_1config_1_1base__option.html#a70385ec99c26aacdedbf5045ed41fce7',1,'VW::config::base_option']]],
-  ['m_5fhidden',['m_hidden',['../structVW_1_1config_1_1option__group__definition.html#a7770605b4af588775632543c0ce91aa4',1,'VW::config::option_group_definition']]],
   ['m_5fkeep',['m_keep',['../structVW_1_1config_1_1base__option.html#aea6aa73541aa87eac054242141ecba05',1,'VW::config::base_option']]],
   ['m_5flocation',['m_location',['../structVW_1_1config_1_1typed__option.html#a747adc2fed198c58c1fb5cf147352229',1,'VW::config::typed_option']]],
   ['m_5fname',['m_name',['../structVW_1_1config_1_1base__option.html#aa4b1e915fd104a32495780d207254a9c',1,'VW::config::base_option::m_name()'],['../structVW_1_1config_1_1option__group__definition.html#a81d5062ba2ba3f7de06c7574ac61375b',1,'VW::config::option_group_definition::m_name()']]],
@@ -13,7 +9,6 @@ var searchData=
   ['m_5fnecessary_5fflags',['m_necessary_flags',['../structVW_1_1config_1_1option__group__definition.html#ae1fb8b23e82ba0a516c324a035dc32ab',1,'VW::config::option_group_definition']]],
   ['m_5foptions',['m_options',['../structVW_1_1config_1_1option__group__definition.html#aa177a1cac423c48716ef09661bda64e0',1,'VW::config::option_group_definition']]],
   ['m_5fshort_5fname',['m_short_name',['../structVW_1_1config_1_1base__option.html#a9b83fa1a3563ce79fa211bbb1defa182',1,'VW::config::base_option']]],
-  ['m_5ftarget',['m_target',['../structbuffer__replace.html#a41efb37e286f79213eb4ab5dc95d86d6',1,'buffer_replace']]],
   ['m_5ftype_5fhash',['m_type_hash',['../structVW_1_1config_1_1base__option.html#a3eda02f24b7010ae07aa27e195b5040f',1,'VW::config::base_option']]],
   ['major',['major',['../structVW_1_1version__struct.html#a7c6f65031ce115884665fee6c003319f',1,'VW::version_struct']]],
   ['max_5fexamples',['max_examples',['../structvw.html#a568261a9b3b87cc30907d53a08ab3f02',1,'vw']]],

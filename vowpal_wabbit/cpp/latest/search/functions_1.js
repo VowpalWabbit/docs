@@ -31,7 +31,6 @@ var searchData=
   ['buf_5fwrite',['buf_write',['../classio__buf.html#aaff9b1ba96e89f3abfa6105f1f369b34',1,'io_buf']]],
   ['bufcache_5flabel',['bufcache_label',['../namespaceCB.html#af22fff7bd49678b9a735ca016ccbfdcc',1,'CB']]],
   ['bufcache_5flabel_5fadditional_5ffields',['bufcache_label_additional_fields',['../namespaceCB.html#a1e1dae5a429dc754dbf1640c72dad201',1,'CB']]],
-  ['buffer_5freplace',['buffer_replace',['../structbuffer__replace.html#acae9e6f8f541ef2ceb5173d8c005df94',1,'buffer_replace']]],
   ['buffer_5fstart',['buffer_start',['../classio__buf.html#aa79ba9e0c96d4ebde9ef98493c629806',1,'io_buf']]],
   ['bufread_5flabel',['bufread_label',['../namespaceCB.html#a288dc757fcb070d9d9afa5dc76db0172',1,'CB']]],
   ['bufread_5flabel_5fadditional_5ffields',['bufread_label_additional_fields',['../namespaceCB.html#a749ddff666a5bdb407c76d04ad08606d',1,'CB']]],
