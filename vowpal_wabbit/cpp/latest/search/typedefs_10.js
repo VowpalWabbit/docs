@@ -5,7 +5,7 @@ var searchData=
   ['val',['Val',['../classvw__slim_1_1internal_1_1location__reference.html#affb9a8b2866e15e550f331e40d2fca6a',1,'vw_slim::internal::location_reference']]],
   ['val1',['Val1',['../classvw__slim_1_1internal_1_1location__value.html#ae947e8bbfe233f10d58e5583fe41fe12',1,'vw_slim::internal::location_value']]],
   ['val2',['Val2',['../classvw__slim_1_1internal_1_1location__value.html#a377624f0f711944a095e7619033e0b27',1,'vw_slim::internal::location_value']]],
-  ['value_5ftype',['value_type',['../classsparse__iterator.html#abe50d4e29c764e5626bcacee099e2bc1',1,'sparse_iterator::value_type()'],['../classdense__iterator.html#afa2d71363704000dcabd84985192365c',1,'dense_iterator::value_type()']]],
+  ['value_5ftype',['value_type',['../classsparse__iterator.html#abe50d4e29c764e5626bcacee099e2bc1',1,'sparse_iterator::value_type()'],['../classdense__iterator.html#afa2d71363704000dcabd84985192365c',1,'dense_iterator::value_type()'],['../structVW_1_1config_1_1typed__option.html#aba8098705f929692df00010f134ae4ea',1,'VW::config::typed_option::value_type()']]],
   ['vw_5fexample',['VW_EXAMPLE',['../vwdll_8h.html#a9cfc98cce8125730d37c74abe8b1120a',1,'vwdll.h']]],
   ['vw_5ffeature',['VW_FEATURE',['../vwdll_8h.html#a903e05b3e51dcf8297bae3d9027fb5ad',1,'vwdll.h']]],
   ['vw_5ffeature_5fspace',['VW_FEATURE_SPACE',['../vwdll_8h.html#ab7f05cf16c1ff82aff770752abeafba2',1,'vwdll.h']]],

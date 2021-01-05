@@ -36,6 +36,7 @@ var searchData=
   ['final_5fprediction_5fsink',['final_prediction_sink',['../structvw.html#aad1a1c3c0161656cfab07b5cd2b9ebd1',1,'vw']]],
   ['final_5fregressor_5fname',['final_regressor_name',['../structvw.html#a1f8e40a38100ab3e27ada930a9f1af63',1,'vw']]],
   ['final_5frun',['final_run',['../classSearch_1_1BaseTask.html#acf6f63de9181d30634b10bb83e674c35',1,'Search::BaseTask']]],
+  ['finalize',['finalize',['../structVW_1_1config_1_1option__builder.html#a05a693cc372129f0f8c571748c198dad',1,'VW::config::option_builder']]],
   ['finalize_5fprediction',['finalize_prediction',['../namespaceGD.html#ae060266d4ebe05f6574689a079f46dee',1,'GD']]],
   ['finalize_5fregressor',['finalize_regressor',['../parse__regressor_8h.html#afcfe6e03987ce1240b62807a95a26beb',1,'parse_regressor.h']]],
   ['finalize_5fsource',['finalize_source',['../parser_8h.html#a8a9d06610ebdb673256e225b8de46635',1,'parser.h']]],

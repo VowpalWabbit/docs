@@ -16,6 +16,7 @@ var searchData=
   ['fill',['fill',['../classio__buf.html#ac3508663785fd1367400ab4eb7ab33e9',1,'io_buf']]],
   ['fill_5ftied',['fill_tied',['../namespaceVW_1_1cb__explore__adf.html#a4a711314dc30c96e275aaf89eef22c49',1,'VW::cb_explore_adf']]],
   ['final_5frun',['final_run',['../classSearch_1_1BaseTask.html#acf6f63de9181d30634b10bb83e674c35',1,'Search::BaseTask']]],
+  ['finalize',['finalize',['../structVW_1_1config_1_1option__builder.html#a05a693cc372129f0f8c571748c198dad',1,'VW::config::option_builder']]],
   ['finalize_5fprediction',['finalize_prediction',['../namespaceGD.html#ae060266d4ebe05f6574689a079f46dee',1,'GD']]],
   ['finalize_5fregressor',['finalize_regressor',['../parse__regressor_8h.html#afcfe6e03987ce1240b62807a95a26beb',1,'parse_regressor.h']]],
   ['finalize_5fsource',['finalize_source',['../parser_8h.html#a8a9d06610ebdb673256e225b8de46635',1,'parser.h']]],
