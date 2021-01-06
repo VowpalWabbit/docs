@@ -58,7 +58,7 @@ var searchData=
   ['dictionary_5finfo',['dictionary_info',['../structdictionary__info.html',1,'']]],
   ['dictionary_5fnamespace',['dictionary_namespace',['../constant_8h.html#a22d641c8a975eeb2634e4d0bc8b2b254',1,'constant.h']]],
   ['dictionary_5fpath',['dictionary_path',['../structvw.html#ae4c78e59541075fe4b806ff09d7aefbe',1,'vw']]],
-  ['difference_5ftype',['difference_type',['../classsparse__iterator.html#a8de55b3d9048198c4662ab19e46f0eb8',1,'sparse_iterator::difference_type()'],['../classdense__iterator.html#a9a301a97476fc5e450e0d173620458fb',1,'dense_iterator::difference_type()']]],
+  ['difference_5ftype',['difference_type',['../classACTION__SCORE_1_1score__iterator.html#adcbbac6e225d55f4eda87fdaa4a508f5',1,'ACTION_SCORE::score_iterator::difference_type()'],['../classsparse__iterator.html#a8de55b3d9048198c4662ab19e46f0eb8',1,'sparse_iterator::difference_type()'],['../classdense__iterator.html#a9a301a97476fc5e450e0d173620458fb',1,'dense_iterator::difference_type()']]],
   ['disable_5fshared_5fweights',['DISABLE_SHARED_WEIGHTS',['../vw__slim__predict_8h.html#aa21b5b3836a1997883d40f9c96026444',1,'vw_slim_predict.h']]],
   ['dispatch_5ffptr',['dispatch_fptr',['../parse__dispatch__loop_8h.html#afb52450a4cded8b00b6f321bde178267',1,'parse_dispatch_loop.h']]],
   ['distributionally_5frobust_2eh',['distributionally_robust.h',['../distributionally__robust_8h.html',1,'']]],

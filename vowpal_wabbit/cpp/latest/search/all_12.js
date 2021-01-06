@@ -44,7 +44,7 @@ var searchData=
   ['reductions_2eh',['reductions.h',['../reductions_8h.html',1,'']]],
   ['reductions_5ffwd_2eh',['reductions_fwd.h',['../reductions__fwd_8h.html',1,'']]],
   ['ref',['Ref',['../classvw__slim_1_1internal_1_1location__reference.html#a2cb2d9040226aa0ba192c8841d7c24bf',1,'vw_slim::internal::location_reference::Ref()'],['../classvw__slim_1_1internal_1_1collection__pair__iterator.html#a0fe3e989074b5ea0d7f10422e6bedac9',1,'vw_slim::internal::collection_pair_iterator::Ref()']]],
-  ['reference',['reference',['../classsparse__iterator.html#ac617a19674aab4b53a1c1bf52980fb58',1,'sparse_iterator::reference()'],['../classdense__iterator.html#ac3ec6a5f94f444fe4eb34e8a751aea53',1,'dense_iterator::reference()']]],
+  ['reference',['reference',['../classACTION__SCORE_1_1score__iterator.html#a4866aa934c07790c0f8e5bb04e14bc5b',1,'ACTION_SCORE::score_iterator::reference()'],['../classsparse__iterator.html#ac617a19674aab4b53a1c1bf52980fb58',1,'sparse_iterator::reference()'],['../classdense__iterator.html#ac3ec6a5f94f444fe4eb34e8a751aea53',1,'dense_iterator::reference()']]],
   ['reg_5fmode',['reg_mode',['../structvw.html#a0acc9b019a318a6cd71a7dd0e96a8a61',1,'vw']]],
   ['regression_5fdata_5f1_5fmodel',['regression_data_1_model',['../data_8h.html#aaf9b6c9158454809c6e1dd2bd5d525be',1,'data.h']]],
   ['regression_5fdata_5f1_5fmodel_5flen',['regression_data_1_model_len',['../data_8h.html#ada0d3a667dc0ff561a34851d9fe3fec1',1,'data.h']]],
