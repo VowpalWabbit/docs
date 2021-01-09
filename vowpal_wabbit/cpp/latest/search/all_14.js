@@ -14,7 +14,7 @@ var searchData=
   ['task_5fdata',['task_data',['../structSearch_1_1search.html#a4ca3d5d58d26c85ca5acd325c844bf70',1,'Search::search']]],
   ['task_5fname',['task_name',['../structSearch_1_1search.html#a4864e478d4bb7af53e04a84cec754e3b',1,'Search::search::task_name()'],['../structSearch_1_1search__task.html#ad2c6420e44a300be33991333d9be5190',1,'Search::search_task::task_name()']]],
   ['test_5fadf_5fsequence',['test_adf_sequence',['../namespaceCB__ADF.html#abbca52475f0637f671ea2dd2c4ec0065',1,'CB_ADF']]],
-  ['test_5flabel',['test_label',['../structlabel__parser.html#a94fdf912915561ff63b47f1f66ad16da',1,'label_parser']]],
+  ['test_5flabel',['test_label',['../structlabel__parser.html#abfe909faed7377ee855785d3a2936fe4',1,'label_parser::test_label()'],['../namespaceMULTICLASS.html#a95cadbeb4fe6dfe01342045d68b130f0',1,'MULTICLASS::test_label()']]],
   ['test_5fonly',['test_only',['../structexample.html#aafed65a0405faa864c87b8b75d39ef4d',1,'example']]],
   ['text_5freader',['text_reader',['../structparser.html#a092ece360ed49f1993a5f5ecaf631dc7',1,'parser']]],
   ['text_5fregressor_5fname',['text_regressor_name',['../structvw.html#a4d85f6f70e0f1d9318e4c29a46b913b8',1,'vw']]],

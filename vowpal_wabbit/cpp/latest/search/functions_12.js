@@ -3,6 +3,7 @@ var searchData=
   ['tagstate',['TagState',['../structTagState.html#a45e93c4c4eca7e556834771aac20e057',1,'TagState']]],
   ['takedown',['takedown',['../namespaceGraphTask.html#a478898a28fc45a45873296e7e8844741',1,'GraphTask::takedown()'],['../namespaceSequenceSpanTask.html#a18d654e30f150f7aeea0c6dda49c0347',1,'SequenceSpanTask::takedown()']]],
   ['test_5fadf_5fsequence',['test_adf_sequence',['../namespaceCB__ADF.html#abbca52475f0637f671ea2dd2c4ec0065',1,'CB_ADF']]],
+  ['test_5flabel',['test_label',['../namespaceMULTICLASS.html#a95cadbeb4fe6dfe01342045d68b130f0',1,'MULTICLASS']]],
   ['textstate',['TextState',['../structTextState.html#a7b198588c0209d4a4166953cc341538f',1,'TextState']]],
   ['to_5fargv',['to_argv',['../namespaceVW.html#a54e76507ba333ccaf9eeb58a40fb712c',1,'VW']]],
   ['to_5fargv_5fescaped',['to_argv_escaped',['../namespaceVW.html#aaa53638dfb7741e4f9934805338d539c',1,'VW']]],

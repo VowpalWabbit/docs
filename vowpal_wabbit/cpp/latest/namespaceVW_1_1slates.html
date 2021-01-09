@@ -118,6 +118,18 @@ Functions</h2></td></tr>
 <tr class="separator:a8cacf24fc0e61d669aa178c7f393f862"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0556aa1947485d24b533d93b8c43c8af"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1slates.html#a0556aa1947485d24b533d93b8c43c8af">generate_slates_label_printout</a> (const std::vector&lt; <a class="el" href="structexample.html">example</a> * &gt; &amp;slots)</td></tr>
 <tr class="separator:a0556aa1947485d24b533d93b8c43c8af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e6338c776c8f32ff9132e5934ed2177"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1slates.html#a1e6338c776c8f32ff9132e5934ed2177">default_label</a> (<a class="el" href="structVW_1_1slates_1_1label.html">VW::slates::label</a> &amp;v)</td></tr>
+<tr class="separator:a1e6338c776c8f32ff9132e5934ed2177"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95d70bcce2a95ca93c5ba4c61718d84f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1slates.html#a95d70bcce2a95ca93c5ba4c61718d84f">parse_label</a> (<a class="el" href="structparser.html">parser</a> *p, <a class="el" href="structshared__data.html">shared_data</a> *, <a class="el" href="structVW_1_1slates_1_1label.html">VW::slates::label</a> &amp;ld, std::vector&lt; <a class="el" href="namespaceVW.html#a85aa9dc51ef86f7e832147b1c0c93d72">VW::string_view</a> &gt; &amp;words, <a class="el" href="classreduction__features.html">reduction_features</a> &amp;)</td></tr>
+<tr class="separator:a95d70bcce2a95ca93c5ba4c61718d84f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36bcb234af6b9d480069baaee5aa454d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1slates.html#a36bcb234af6b9d480069baaee5aa454d">delete_label</a> (<a class="el" href="structVW_1_1slates_1_1label.html">VW::slates::label</a> &amp;ld)</td></tr>
+<tr class="separator:a36bcb234af6b9d480069baaee5aa454d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7122b0230db21b0dfdf8265fa71355b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1slates.html#a7122b0230db21b0dfdf8265fa71355b8">cache_label</a> (<a class="el" href="structVW_1_1slates_1_1label.html">VW::slates::label</a> &amp;ld, <a class="el" href="classio__buf.html">io_buf</a> &amp;cache)</td></tr>
+<tr class="separator:a7122b0230db21b0dfdf8265fa71355b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacb617431d6148d4c465511fb6ed0f67"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1slates.html#aacb617431d6148d4c465511fb6ed0f67">read_cached_label</a> (<a class="el" href="structshared__data.html">shared_data</a> *, <a class="el" href="structVW_1_1slates_1_1label.html">VW::slates::label</a> &amp;ld, <a class="el" href="classio__buf.html">io_buf</a> &amp;cache)</td></tr>
+<tr class="separator:aacb617431d6148d4c465511fb6ed0f67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48ea7777dba1fd6d5003ff8fd62d0619"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1slates.html#a48ea7777dba1fd6d5003ff8fd62d0619">copy_label</a> (<a class="el" href="structVW_1_1slates_1_1label.html">VW::slates::label</a> &amp;dst, <a class="el" href="structVW_1_1slates_1_1label.html">VW::slates::label</a> &amp;src)</td></tr>
+<tr class="separator:a48ea7777dba1fd6d5003ff8fd62d0619"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -148,6 +160,90 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a7122b0230db21b0dfdf8265fa71355b8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VW::slates::cache_label </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structVW_1_1slates_1_1label.html">VW::slates::label</a> &amp;&#160;</td>
+          <td class="paramname"><em>ld</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classio__buf.html">io_buf</a> &amp;&#160;</td>
+          <td class="paramname"><em>cache</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a48ea7777dba1fd6d5003ff8fd62d0619"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VW::slates::copy_label </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structVW_1_1slates_1_1label.html">VW::slates::label</a> &amp;&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structVW_1_1slates_1_1label.html">VW::slates::label</a> &amp;&#160;</td>
+          <td class="paramname"><em>src</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1e6338c776c8f32ff9132e5934ed2177"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VW::slates::default_label </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structVW_1_1slates_1_1label.html">VW::slates::label</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a36bcb234af6b9d480069baaee5aa454d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VW::slates::delete_label </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structVW_1_1slates_1_1label.html">VW::slates::label</a> &amp;&#160;</td>
+          <td class="paramname"><em>ld</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a0556aa1947485d24b533d93b8c43c8af"></a>
 <div class="memitem">
 <div class="memproto">
@@ -158,6 +254,82 @@ Variables</h2></td></tr>
           <td class="paramtype">const std::vector&lt; <a class="el" href="structexample.html">example</a> * &gt; &amp;&#160;</td>
           <td class="paramname"><em>slots</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a95d70bcce2a95ca93c5ba4c61718d84f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VW::slates::parse_label </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structparser.html">parser</a> *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structshared__data.html">shared_data</a> *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structVW_1_1slates_1_1label.html">VW::slates::label</a> &amp;&#160;</td>
+          <td class="paramname"><em>ld</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespaceVW.html#a85aa9dc51ef86f7e832147b1c0c93d72">VW::string_view</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>words</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classreduction__features.html">reduction_features</a> &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aacb617431d6148d4c465511fb6ed0f67"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t VW::slates::read_cached_label </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structshared__data.html">shared_data</a> *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structVW_1_1slates_1_1label.html">VW::slates::label</a> &amp;&#160;</td>
+          <td class="paramname"><em>ld</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classio__buf.html">io_buf</a> &amp;&#160;</td>
+          <td class="paramname"><em>cache</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -206,7 +378,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 8 2021 20:02:18 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jan 9 2021 00:42:23 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

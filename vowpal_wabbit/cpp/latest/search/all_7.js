@@ -84,7 +84,7 @@ var searchData=
   ['get_5ftyped_5foption',['get_typed_option',['../structVW_1_1config_1_1options__i.html#a6504279948e73f5824bad612c88712e7',1,'VW::config::options_i::get_typed_option(const std::string &amp;key)'],['../structVW_1_1config_1_1options__i.html#ad5cc007831b9c32a22ce3302c2dcc9e3',1,'VW::config::options_i::get_typed_option(const std::string &amp;key) const ']]],
   ['get_5funused_5fexample',['get_unused_example',['../namespaceVW.html#aaeaeba5beb029b8f5b9965a13b766ae5',1,'VW']]],
   ['get_5fvw_5fpointer_5funsafe',['get_vw_pointer_unsafe',['../structSearch_1_1search.html#ab9026dc6690d736ca5f4785d8493d448',1,'Search::search']]],
-  ['get_5fweight',['get_weight',['../structlabel__parser.html#a1dc1519b19a706c79c6aec09af040038',1,'label_parser::get_weight()'],['../namespaceVW.html#ad51621e341276ffe805acd4404dd8004',1,'VW::get_weight()']]],
+  ['get_5fweight',['get_weight',['../structlabel__parser.html#a8b99a8431cee1d57ba963ea2b9ffdfc0',1,'label_parser::get_weight()'],['../namespaceVW.html#ad51621e341276ffe805acd4404dd8004',1,'VW::get_weight()']]],
   ['get_5fwriter',['get_writer',['../structVW_1_1io_1_1socket.html#a1800ca045993bf0c10aaa4fd8bd6f453',1,'VW::io::socket']]],
   ['getblock',['getblock',['../namespaceMURMUR__HASH__3.html#acab1181c3de4de92ec8c9a30059fc8c0',1,'MURMUR_HASH_3']]],
   ['gethasher',['getHasher',['../parse__primitives_8h.html#ad2d39f84e4e19d8488c984287d0a497e',1,'parse_primitives.h']]],

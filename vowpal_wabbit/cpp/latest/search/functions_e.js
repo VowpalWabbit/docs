@@ -5,6 +5,7 @@ var searchData=
   ['parse_5fdispatch',['parse_dispatch',['../parse__dispatch__loop_8h.html#a2bf2e3f0ec92b32d4d10a9451ab0903f',1,'parse_dispatch_loop.h']]],
   ['parse_5fexample_5flabel',['parse_example_label',['../namespaceVW.html#a928869354fe3e9e0cb98a08d5348e378',1,'VW']]],
   ['parse_5fexamples',['parse_examples',['../classVW_1_1parsers_1_1flatbuffer_1_1parser.html#ad34fe16f7b9e15768bff53d7ab2bfdf9',1,'VW::parsers::flatbuffer::parser']]],
+  ['parse_5flabel',['parse_label',['../namespaceCCB.html#a81e58b57bea5f416862a5774ddfc1dd3',1,'CCB::parse_label()'],['../namespaceVW_1_1slates.html#a95d70bcce2a95ca93c5ba4c61718d84f',1,'VW::slates::parse_label()']]],
   ['parse_5fline_5fjson',['parse_line_json',['../parse__example__json_8h.html#afe9609879dfa63273d15037068190a47',1,'parse_example_json.h']]],
   ['parse_5fmask_5fregressor_5fargs',['parse_mask_regressor_args',['../parse__regressor_8h.html#a38165185a46e204a3c321589da8acdf9',1,'parse_regressor.h']]],
   ['parse_5fmodules',['parse_modules',['../parse__args_8h.html#a7b1487bfae6e23251b34eb112255a5dc',1,'parse_args.h']]],

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['cache_5ffeatures',['cache_features',['../cache_8h.html#a442df23fec457c355f2c1d17b4960eed',1,'cache.h']]],
-  ['cache_5flabel',['cache_label',['../namespaceCB.html#a13267d515310a65badc612e7e4a7621c',1,'CB']]],
+  ['cache_5flabel',['cache_label',['../namespaceCB.html#a68d67c7f5301de9f3ca35d3e58c3fa94',1,'CB::cache_label()'],['../namespaceCCB.html#a1eb4843badbf4cc3ebc62da94db58ea8',1,'CCB::cache_label()'],['../namespaceVW_1_1slates.html#a7122b0230db21b0dfdf8265fa71355b8',1,'VW::slates::cache_label()']]],
   ['cache_5ftag',['cache_tag',['../cache_8h.html#a50fc1f434e14517ba0a8becd7e39fdcc',1,'cache.h']]],
   ['calculate_5fand_5finsert_5finteractions',['calculate_and_insert_interactions',['../namespaceCCB.html#ad883cee5febf34d27ed29069169c1699',1,'CCB']]],
   ['call',['call',['../classVW_1_1details_1_1scope__exit__caller.html#a7b6e9b9f80f4910d743bfcaf32b53307',1,'VW::details::scope_exit_caller']]],
@@ -57,10 +57,10 @@ var searchData=
   ['convert_5fto_5fboost_5fvalue',['convert_to_boost_value',['../structVW_1_1config_1_1options__boost__po.html#af0b0e05c301a391406b30362f06dc854',1,'VW::config::options_boost_po']]],
   ['copy_5farray',['copy_array',['../v__array_8h.html#a986101d711024ed1e3f4f3f07d3d046c',1,'copy_array(v_array&lt; T &gt; &amp;dst, const v_array&lt; T &gt; &amp;src):&#160;v_array.h'],['../v__array_8h.html#acc0914cf14cbc3380b2bbf9416606722',1,'copy_array(v_array&lt; T &gt; &amp;dst, const v_array&lt; T &gt; &amp;src, T(*copy_item)(T &amp;)):&#160;v_array.h']]],
   ['copy_5farray_5fno_5fmemcpy',['copy_array_no_memcpy',['../v__array_8h.html#ac9d699e6eb09925ce08e4a5f7cf841cf',1,'v_array.h']]],
-  ['copy_5fexample_5fdata',['copy_example_data',['../namespaceVW.html#ae2345bdd1ac4ff479d45e8e5927a8d2f',1,'VW::copy_example_data(bool audit, example *, example *, size_t, void(*copy_label)(void *, void *))'],['../namespaceVW.html#a806d7d3dc68b978398677f6a2e5a2538',1,'VW::copy_example_data(bool audit, example *, example *, void(*copy_label)(void *, void *))'],['../namespaceVW.html#abaffe18149588bb2c8f42ef3da8aff59',1,'VW::copy_example_data(bool audit, example *, example *)']]],
+  ['copy_5fexample_5fdata',['copy_example_data',['../namespaceVW.html#a0c73528d7d8180f20210a3ee4128bb25',1,'VW::copy_example_data(bool audit, example *, example *, size_t, void(*copy_label)(polylabel *, polylabel *))'],['../namespaceVW.html#a9b7cc8aaea60b1ba4e5721fbb2573e75',1,'VW::copy_example_data(bool audit, example *, example *, void(*copy_label)(polylabel *, polylabel *))'],['../namespaceVW.html#abaffe18149588bb2c8f42ef3da8aff59',1,'VW::copy_example_data(bool audit, example *, example *)']]],
   ['copy_5fexample_5fmetadata',['copy_example_metadata',['../namespaceVW.html#ac1e26643a8bdb85a4e27aeacde0f358c',1,'VW']]],
-  ['copy_5flabel',['copy_label',['../namespaceCB.html#a7ffdbeff0dcde748a48f34e5180684c4',1,'CB']]],
-  ['copy_5flabel_5fadditional_5ffields',['copy_label_additional_fields',['../namespaceCB.html#aaa3abd8e316e445921aac1b3af5bbc17',1,'CB']]],
+  ['copy_5flabel',['copy_label',['../namespaceCB.html#a2971ad762871c355b829058ca86e2606',1,'CB::copy_label()'],['../namespaceCCB.html#a9d923b33c5f907e92009c015a2074c2e',1,'CCB::copy_label()'],['../namespaceVW_1_1slates.html#a48ea7777dba1fd6d5003ff8fd62d0619',1,'VW::slates::copy_label()']]],
+  ['copy_5flabel_5fadditional_5ffields',['copy_label_additional_fields',['../namespaceCB.html#adc6722b1af53b23e75b69bb03ba2e023',1,'CB']]],
   ['copy_5fto',['copy_to',['../classio__buf.html#a6fc5dfa66ea7487155fcafd57a45ec90',1,'io_buf']]],
   ['count_5flabel',['count_label',['../best__constant_8h.html#a9c2325f18b5809fcf84f7e8441fb7b94',1,'best_constant.h']]],
   ['create_5fbuffer_5fview',['create_buffer_view',['../namespaceVW_1_1io.html#a64fffb68e0d290a508476f0c8b160694',1,'VW::io']]],

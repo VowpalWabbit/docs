@@ -2,7 +2,7 @@ var searchData=
 [
   ['early_5fterminate',['early_terminate',['../structvw.html#af8de01320427613cb35d8ff4378e6830',1,'vw']]],
   ['ec',['ec',['../classSearch_1_1BaseTask.html#a95a3839551805bf71b18bf4d220c269b',1,'Search::BaseTask']]],
-  ['empty',['empty',['../unionpolylabel.html#a6d811b312990cfca1ccd76f553a89214',1,'polylabel']]],
+  ['empty',['empty',['../structpolylabel.html#a6d811b312990cfca1ccd76f553a89214',1,'polylabel']]],
   ['empty_5faudit_5fstrings',['EMPTY_AUDIT_STRINGS',['../interactions__predict_8h.html#a15fb23be401cf2a337ab90c20f3ec80c',1,'interactions_predict.h']]],
   ['emptylines_5fseparate_5fexamples',['emptylines_separate_examples',['../structparser.html#a751fa0c146800b9ab19e9db245d16994',1,'parser']]],
   ['enabled_5freductions',['enabled_reductions',['../structvw.html#aa87af4c0891b4123d72ec61e5f61b62d',1,'vw']]],
