@@ -25,13 +25,13 @@ var searchData=
   ['mtr_5fexample',['mtr_example',['../structGEN__CS_1_1cb__to__cs__adf.html#a31c5c92d3694977e8ac0494853972ee0',1,'GEN_CS::cb_to_cs_adf']]],
   ['multi',['multi',['../structpolylabel.html#a68946a978546b21fc85fde38d6147399',1,'polylabel']]],
   ['multi_5fstate',['multi_state',['../structContext.html#a2fba7304f5af22ace7333e0c22b6e269',1,'Context']]],
-  ['multiclass',['multiclass',['../unionpolyprediction.html#abc57dae8f83df4756ff4f8ec910f0fd1',1,'polyprediction']]],
+  ['multiclass',['multiclass',['../structpolyprediction.html#abc57dae8f83df4756ff4f8ec910f0fd1',1,'polyprediction']]],
   ['multiclass_5fdata_5f4_5fmodel',['multiclass_data_4_model',['../data_8h.html#a6846900f69d46874ca579d70b453a567',1,'data.h']]],
   ['multiclass_5fdata_5f4_5fmodel_5flen',['multiclass_data_4_model_len',['../data_8h.html#a307547d6ba886314bc409cda1871fdc8',1,'data.h']]],
   ['multiclass_5fdata_5f4_5fpred',['multiclass_data_4_pred',['../data_8h.html#af63cbc6eddda4d1bd11b43092b7277e4',1,'data.h']]],
   ['multiclass_5fdata_5f4_5fpred_5flen',['multiclass_data_4_pred_len',['../data_8h.html#a470ce4fc0c76364a436348aeda929c7c',1,'data.h']]],
   ['multiclass_5flog_5floss',['multiclass_log_loss',['../structshared__data.html#a4ce87ed2b649c66104956e3ca7491c05',1,'shared_data']]],
   ['multilabel',['multilabel',['../namespaceMULTILABEL.html#a3b81f08b0481c5045f8cda8ac5fefea5',1,'MULTILABEL']]],
-  ['multilabels',['multilabels',['../structpolylabel.html#a999dc75a1e71967c36a817cead6bf3b2',1,'polylabel::multilabels()'],['../unionpolyprediction.html#a9f6a01eabbe81af8ec89f7af7ff5de3c',1,'polyprediction::multilabels()']]],
+  ['multilabels',['multilabels',['../structpolylabel.html#a999dc75a1e71967c36a817cead6bf3b2',1,'polylabel::multilabels()'],['../structpolyprediction.html#a9f6a01eabbe81af8ec89f7af7ff5de3c',1,'polyprediction::multilabels()']]],
   ['multipredict_5ff',['multipredict_f',['../structVW_1_1LEARNER_1_1learn__data.html#ac961a8f38a1a2672b64174931120dbfa',1,'VW::LEARNER::learn_data']]]
 ];

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['a_5fs',['a_s',['../unionpolyprediction.html#aff6f567473d301cd324039ccd13d74a8',1,'polyprediction']]],
+  ['a_5fs',['a_s',['../structpolyprediction.html#aff6f567473d301cd324039ccd13d74a8',1,'polyprediction']]],
   ['a_5fs_5fpred_5fto_5fstring',['a_s_pred_to_string',['../example_8h.html#a38dcebb4f1c43e354e97c75fa9552f28',1,'example.h']]],
   ['accumulate',['accumulate',['../accumulate_8h.html#aea2d714c4719eded697193fc3c0bcc0f',1,'accumulate.h']]],
   ['accumulate_2eh',['accumulate.h',['../accumulate_8h.html',1,'']]],

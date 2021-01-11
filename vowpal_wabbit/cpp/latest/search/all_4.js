@@ -9,7 +9,7 @@ var searchData=
   ['debug_5flog_2eh',['debug_log.h',['../debug__log_8h.html',1,'']]],
   ['debug_5fprint_2eh',['debug_print.h',['../debug__print_8h.html',1,'']]],
   ['decision_5fprobs',['decision_probs',['../learner_8h.html#a5514b4a9448315c23ec344ca2d139e24a0a1107ed44b212cea25e2da842e0cbbe',1,'learner.h']]],
-  ['decision_5fscores',['decision_scores',['../unionpolyprediction.html#a572baf036403a33ca9e06198322a8802',1,'polyprediction']]],
+  ['decision_5fscores',['decision_scores',['../structpolyprediction.html#a572baf036403a33ca9e06198322a8802',1,'polyprediction']]],
   ['decision_5fscores_2eh',['decision_scores.h',['../decision__scores_8h.html',1,'']]],
   ['decision_5fscores_5ft',['decision_scores_t',['../namespaceVW.html#a84c21e57a0c1da95f3be2dbbc7418bd5',1,'VW']]],
   ['decision_5fservice_5fjson',['decision_service_json',['../structparser.html#a864a4006507e401f9794ef6ebaa7e24c',1,'parser']]],

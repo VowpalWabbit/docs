@@ -119,7 +119,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0e126b45e387c3aaaad6f1afa8dfe7ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1learner.html#a0e126b45e387c3aaaad6f1afa8dfe7ec">predict</a> (E &amp;ec, size_t i=0)</td></tr>
 <tr class="memdesc:a0e126b45e387c3aaaad6f1afa8dfe7ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a prediction for the given example.  <a href="#a0e126b45e387c3aaaad6f1afa8dfe7ec">More...</a><br /></td></tr>
 <tr class="separator:a0e126b45e387c3aaaad6f1afa8dfe7ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44d1395545c9fd963b1a9fcf7982f514"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1learner.html#a44d1395545c9fd963b1a9fcf7982f514">multipredict</a> (E &amp;ec, size_t lo, size_t count, <a class="el" href="unionpolyprediction.html">polyprediction</a> *pred, bool finalize_predictions)</td></tr>
+<tr class="memitem:a44d1395545c9fd963b1a9fcf7982f514"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1learner.html#a44d1395545c9fd963b1a9fcf7982f514">multipredict</a> (E &amp;ec, size_t lo, size_t count, <a class="el" href="structpolyprediction.html">polyprediction</a> *pred, bool finalize_predictions)</td></tr>
 <tr class="separator:a44d1395545c9fd963b1a9fcf7982f514"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfb6eec0422b5ea2783faf8dfec59912"><td class="memTemplParams" colspan="2">template&lt;class L &gt; </td></tr>
 <tr class="memitem:acfb6eec0422b5ea2783faf8dfec59912"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1learner.html#acfb6eec0422b5ea2783faf8dfec59912">set_predict</a> (void(*u)(T &amp;, L &amp;, E &amp;))</td></tr>
@@ -128,7 +128,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7e543f0c82050089137be8e6c7d7bdd8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1learner.html#a7e543f0c82050089137be8e6c7d7bdd8">set_learn</a> (void(*u)(T &amp;, L &amp;, E &amp;))</td></tr>
 <tr class="separator:a7e543f0c82050089137be8e6c7d7bdd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8965b602f3660c0d1243a5966c12da4"><td class="memTemplParams" colspan="2">template&lt;class L &gt; </td></tr>
-<tr class="memitem:af8965b602f3660c0d1243a5966c12da4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1learner.html#af8965b602f3660c0d1243a5966c12da4">set_multipredict</a> (void(*u)(T &amp;, L &amp;, E &amp;, size_t, size_t, <a class="el" href="unionpolyprediction.html">polyprediction</a> *, bool))</td></tr>
+<tr class="memitem:af8965b602f3660c0d1243a5966c12da4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1learner.html#af8965b602f3660c0d1243a5966c12da4">set_multipredict</a> (void(*u)(T &amp;, L &amp;, E &amp;, size_t, size_t, <a class="el" href="structpolyprediction.html">polyprediction</a> *, bool))</td></tr>
 <tr class="separator:af8965b602f3660c0d1243a5966c12da4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af994d66959b825bc3b92af991529c7e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1learner.html#af994d66959b825bc3b92af991529c7e6">update</a> (E &amp;ec, size_t i=0)</td></tr>
 <tr class="separator:af994d66959b825bc3b92af991529c7e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -498,7 +498,7 @@ template&lt;class T, class E&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="unionpolyprediction.html">polyprediction</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structpolyprediction.html">polyprediction</a> *&#160;</td>
           <td class="paramname"><em>pred</em>, </td>
         </tr>
         <tr>
@@ -818,7 +818,7 @@ template&lt;class L &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="structVW_1_1LEARNER_1_1learner.html">VW::LEARNER::learner</a>&lt; T, E &gt;::set_multipredict </td>
           <td>(</td>
-          <td class="paramtype">void(*)(T &amp;, L &amp;, E &amp;, size_t, size_t, <a class="el" href="unionpolyprediction.html">polyprediction</a> *, bool)&#160;</td>
+          <td class="paramtype">void(*)(T &amp;, L &amp;, E &amp;, size_t, size_t, <a class="el" href="structpolyprediction.html">polyprediction</a> *, bool)&#160;</td>
           <td class="paramname"><em>u</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1039,7 +1039,7 @@ template&lt;class T, class E&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 11 2021 10:43:22 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jan 11 2021 16:48:21 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
