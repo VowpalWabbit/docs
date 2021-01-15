@@ -116,6 +116,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a38c4ac1991ab52dff1d56895867e00a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a605f830b9de887fcfbea4472da65ef13"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1options__name__extractor.html#a605f830b9de887fcfbea4472da65ef13">was_supplied</a> (const std::string &amp;) const override</td></tr>
 <tr class="separator:a605f830b9de887fcfbea4472da65ef13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d3d69a96b3d423c6c2d21c7c55ddf59"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1options__name__extractor.html#a7d3d69a96b3d423c6c2d21c7c55ddf59">tint</a> (const std::string &amp;) override</td></tr>
+<tr class="separator:a7d3d69a96b3d423c6c2d21c7c55ddf59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01ee32eefb99bea9123b8b28adc178d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1options__name__extractor.html#a01ee32eefb99bea9123b8b28adc178d3">reset_tint</a> () override</td></tr>
+<tr class="separator:a01ee32eefb99bea9123b8b28adc178d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeeb8db957c5cdf8835a1d0a5f72746af"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1options__name__extractor.html#aeeb8db957c5cdf8835a1d0a5f72746af">help</a> () const override</td></tr>
 <tr class="separator:aeeb8db957c5cdf8835a1d0a5f72746af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b7f0aa157fd9d875e85b658a3357434"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1options__name__extractor.html#a7b7f0aa157fd9d875e85b658a3357434">check_unregistered</a> () override</td></tr>
@@ -128,6 +132,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6bc2ac82a4d768b8afe99730883254a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35c51929fd02f9733fe3471d788bbc9c"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; const <a class="el" href="structVW_1_1config_1_1base__option.html">base_option</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1options__name__extractor.html#a35c51929fd02f9733fe3471d788bbc9c">get_option</a> (const std::string &amp;) const override</td></tr>
 <tr class="separator:a35c51929fd02f9733fe3471d788bbc9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08f21a1b5de549c5884fa08029df6c97"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::vector&lt; <a class="el" href="structVW_1_1config_1_1option__group__definition.html">option_group_definition</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1options__name__extractor.html#a08f21a1b5de549c5884fa08029df6c97">get_collection_of_options</a> () const override</td></tr>
+<tr class="separator:a08f21a1b5de549c5884fa08029df6c97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca11fc47d09806702726e861dd1db826"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1options__name__extractor.html#aca11fc47d09806702726e861dd1db826">insert</a> (const std::string &amp;, const std::string &amp;) override</td></tr>
 <tr class="separator:aca11fc47d09806702726e861dd1db826"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ac39f1134cc97f5e06f2e7ee942ebb9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1options__name__extractor.html#a3ac39f1134cc97f5e06f2e7ee942ebb9">replace</a> (const std::string &amp;, const std::string &amp;) override</td></tr>
@@ -277,6 +283,31 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="structVW_1_1config_1_1options__i.html#a82a0dbacb62ea294584be2049bcda2a5">VW::config::options_i</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a08f21a1b5de549c5884fa08029df6c97"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;std::string, std::vector&lt;<a class="el" href="structVW_1_1config_1_1option__group__definition.html">option_group_definition</a>&gt; &gt; VW::config::options_name_extractor::get_collection_of_options </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="structVW_1_1config_1_1options__i.html#aa9ef13abb0bf80f7f4c1c9fa36b1aabb">VW::config::options_i</a>.</p>
 
 </div>
 </div>
@@ -454,6 +485,57 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a01ee32eefb99bea9123b8b28adc178d3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VW::config::options_name_extractor::reset_tint </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="structVW_1_1config_1_1options__i.html#abdc66d936603b9ee6dec26f80b829be6">VW::config::options_i</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7d3d69a96b3d423c6c2d21c7c55ddf59"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VW::config::options_name_extractor::tint </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="structVW_1_1config_1_1options__i.html#a4cad1f07848c2aba9ec4c503bb1c2527">VW::config::options_i</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a605f830b9de887fcfbea4472da65ef13"></a>
 <div class="memitem">
 <div class="memproto">
@@ -499,7 +581,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 14 2021 21:16:55 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 15 2021 19:33:01 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -1,6 +1,7 @@
 var searchData=
 [
   ['m_5fallow_5foverride',['m_allow_override',['../structVW_1_1config_1_1base__option.html#a0c2545e0f32e7c24169e2a254b296427',1,'VW::config::base_option']]],
+  ['m_5fdefault_5ftint',['m_default_tint',['../structVW_1_1config_1_1options__boost__po.html#ad75538ee4188b51632e536c59ee03eef',1,'VW::config::options_boost_po']]],
   ['m_5fhelp',['m_help',['../structVW_1_1config_1_1base__option.html#a70385ec99c26aacdedbf5045ed41fce7',1,'VW::config::base_option']]],
   ['m_5fkeep',['m_keep',['../structVW_1_1config_1_1base__option.html#aea6aa73541aa87eac054242141ecba05',1,'VW::config::base_option']]],
   ['m_5fname',['m_name',['../structVW_1_1config_1_1base__option.html#aa4b1e915fd104a32495780d207254a9c',1,'VW::config::base_option::m_name()'],['../structVW_1_1config_1_1option__group__definition.html#a81d5062ba2ba3f7de06c7574ac61375b',1,'VW::config::option_group_definition::m_name()']]],
