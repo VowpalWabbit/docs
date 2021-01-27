@@ -46,7 +46,7 @@ var searchData=
   ['set_5finput_5flength',['set_input_length',['../classSearch_1_1predictor.html#a1612ec614efb49942d270bab6266208c',1,'Search::predictor']]],
   ['set_5flabel',['set_label',['../classezexample.html#aee1a6e41c2924582100e0f36c5cd0344',1,'ezexample']]],
   ['set_5flabel_5ffeatures',['set_label_features',['../namespaceLabelDict.html#aff2b89f2a906bf4d20eafbbbc19c2063',1,'LabelDict']]],
-  ['set_5flabel_5fparser',['set_label_parser',['../structSearch_1_1search.html#aca7a85681f44f458816caf6b9b8318d1',1,'Search::search']]],
+  ['set_5flabel_5fparser',['set_label_parser',['../structSearch_1_1search.html#a5d8bc5b9d1cd23955377c6adadeaea08',1,'Search::search']]],
   ['set_5flearn',['set_learn',['../structVW_1_1LEARNER_1_1learner.html#a7e543f0c82050089137be8e6c7d7bdd8',1,'VW::LEARNER::learner']]],
   ['set_5flearner_5fid',['set_learner_id',['../classSearch_1_1predictor.html#ad691911bc7a899b90548446ce7435dbc',1,'Search::predictor']]],
   ['set_5fmetatask_5fdata',['set_metatask_data',['../structSearch_1_1search.html#a80df90139889443a17c33f08b607f881',1,'Search::search']]],
