@@ -61,8 +61,8 @@ var searchData=
   ['cb_5feval',['CB_EVAL',['../namespaceCB__EVAL.html',1,'CB_EVAL'],['../structpolylabel.html#a2a12f9013de24563bfc48a434363f05a',1,'polylabel::cb_eval()'],['../namespaceCB__EVAL.html#a3da28c9440893fd231a6a6e49aca97c2',1,'CB_EVAL::cb_eval()'],['../label__parser_8h.html#ac55dd8dc7400242f299d4b6f245f8acda5d5a4935266f886cefb66e44f237fd33',1,'cb_eval():&#160;label_parser.h']]],
   ['cb_5fexplore_2eh',['cb_explore.h',['../cb__explore_8h.html',1,'']]],
   ['cb_5fexplore_5fadf_5fbag_2eh',['cb_explore_adf_bag.h',['../cb__explore__adf__bag_8h.html',1,'']]],
-  ['cb_5fexplore_5fadf_5fbase',['cb_explore_adf_base',['../structVW_1_1cb__explore__adf_1_1cb__explore__adf__base.html',1,'VW::cb_explore_adf']]],
   ['cb_5fexplore_5fadf_5fbase',['cb_explore_adf_base',['../structVW_1_1cb__explore__adf_1_1cb__explore__adf__base.html#a16ad19a2ea86ae3d3db6c67e2a89f776',1,'VW::cb_explore_adf::cb_explore_adf_base']]],
+  ['cb_5fexplore_5fadf_5fbase',['cb_explore_adf_base',['../structVW_1_1cb__explore__adf_1_1cb__explore__adf__base.html',1,'VW::cb_explore_adf']]],
   ['cb_5fexplore_5fadf_5fcommon_2eh',['cb_explore_adf_common.h',['../cb__explore__adf__common_8h.html',1,'']]],
   ['cb_5fexplore_5fadf_5fcover_2eh',['cb_explore_adf_cover.h',['../cb__explore__adf__cover_8h.html',1,'']]],
   ['cb_5fexplore_5fadf_5ffirst_2eh',['cb_explore_adf_first.h',['../cb__explore__adf__first_8h.html',1,'']]],
@@ -113,8 +113,8 @@ var searchData=
   ['checksum',['checksum',['../classvw__slim_1_1model__parser.html#a8ccc4980a5dcab48729ebd09a188b6f2',1,'vw_slim::model_parser']]],
   ['children',['children',['../structnode__socks.html#a7ed2657a18004dbca8ac585405efdd56',1,'node_socks']]],
   ['chisq_5fonedof_5fisf',['chisq_onedof_isf',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#aaa304b1059a1a4e246d0763eb3ea83dd',1,'VW::distributionally_robust::ChiSquared']]],
-  ['chisquared',['ChiSquared',['../classVW_1_1distributionally__robust_1_1ChiSquared.html',1,'VW::distributionally_robust']]],
   ['chisquared',['ChiSquared',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#a4c5e70598285f281e5f074f2f0710efb',1,'VW::distributionally_robust::ChiSquared']]],
+  ['chisquared',['ChiSquared',['../classVW_1_1distributionally__robust_1_1ChiSquared.html',1,'VW::distributionally_robust']]],
   ['choose',['choose',['../namespaceINTERACTIONS.html#a8a29c20dab62a52e9813fa85711d4d42',1,'INTERACTIONS']]],
   ['chosen_5faction',['chosen_action',['../structVW_1_1continuous__actions_1_1reduction__features.html#a7787a47aa964d286d2424fea39cca0b7',1,'VW::continuous_actions::reduction_features::chosen_action()'],['../constant_8h.html#a9a8e2a00065278a565d6e3b4a4de10c2',1,'CHOSEN_ACTION():&#160;constant.h']]],
   ['class_5findex',['class_index',['../structCOST__SENSITIVE_1_1wclass.html#af5f5e6653d8c582e6d6803fbad06c9a5',1,'COST_SENSITIVE::wclass']]],
@@ -204,5 +204,6 @@ var searchData=
   ['current_5fpass',['current_pass',['../structvw.html#a1f68b6894ba36213ed87a7e2a68d5d4c',1,'vw']]],
   ['current_5fstate',['current_state',['../structContext.html#a552c99987bee5a1506c47eed936466dd',1,'Context::current_state()'],['../structVWReaderHandler.html#a815ced4a606d3f1e66176cf0bf156bcc',1,'VWReaderHandler::current_state()']]],
   ['currentname',['currentname',['../structparser.html#a3ca43653ae1c9d497786cd80e1a0ca96',1,'parser']]],
-  ['currentnamespace',['CurrentNamespace',['../structContext.html#a9d1381c22ba19a9ca58b7c0f615eaa3a',1,'Context']]]
+  ['currentnamespace',['CurrentNamespace',['../structContext.html#a9d1381c22ba19a9ca58b7c0f615eaa3a',1,'Context']]],
+  ['custom_5foutput_5fstream_5fbuf',['custom_output_stream_buf',['../classcustom__output__stream__buf.html',1,'custom_output_stream_buf'],['../classcustom__output__stream__buf.html#aebbfcfbcd2b9e6ba1c75810a7f25edf4',1,'custom_output_stream_buf::custom_output_stream_buf()']]]
 ];

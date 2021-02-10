@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['n',['n',['../structVW_1_1distributionally__robust_1_1ChiSquared_1_1Duals.html#ab7c0cf5e3f381617f1d67cbc2a718455',1,'VW::distributionally_robust::ChiSquared::Duals::n()'],['../structExpReplay_1_1expreplay.html#a1303bcb5004ccc2cb6949480bdb43c11',1,'ExpReplay::expreplay::N()']]],
+  ['n',['N',['../structExpReplay_1_1expreplay.html#a1303bcb5004ccc2cb6949480bdb43c11',1,'ExpReplay::expreplay::N()'],['../structVW_1_1distributionally__robust_1_1ChiSquared_1_1Duals.html#ab7c0cf5e3f381617f1d67cbc2a718455',1,'VW::distributionally_robust::ChiSquared::Duals::n()']]],
   ['name',['name',['../structdictionary__info.html#aafd5bfbc5290ad275067a8cf3397970a',1,'dictionary_info::name()'],['../structNamespace.html#a2344df6d1bc705fc8afa24b2c9c79f57',1,'Namespace::name()'],['../structBaseState.html#a675dcc2bdda01de5cde893e77a6116b1',1,'BaseState::name()'],['../structVW_1_1primitive__feature__space.html#a8f5b0342e8c1f8c6d6e5648d14894a59',1,'VW::primitive_feature_space::name()']]],
-  ['named_5flabels',['named_labels',['../classVW_1_1named__labels.html#af54e798bcd0812a93175a682f528c7b3',1,'VW::named_labels::named_labels(std::string label_list)'],['../classVW_1_1named__labels.html#a7ae0f4fd5b1c03bf1ab262b8f28bc819',1,'VW::named_labels::named_labels(const named_labels &amp;other)'],['../classVW_1_1named__labels.html#af0e51d1a22463fc7c3184fe83b04618c',1,'VW::named_labels::named_labels(named_labels &amp;&amp;other) noexcept=delete']]],
   ['named_5flabels',['named_labels',['../classVW_1_1named__labels.html',1,'VW']]],
+  ['named_5flabels',['named_labels',['../classVW_1_1named__labels.html#af54e798bcd0812a93175a682f528c7b3',1,'VW::named_labels::named_labels(std::string label_list)'],['../classVW_1_1named__labels.html#a7ae0f4fd5b1c03bf1ab262b8f28bc819',1,'VW::named_labels::named_labels(const named_labels &amp;other)'],['../classVW_1_1named__labels.html#af0e51d1a22463fc7c3184fe83b04618c',1,'VW::named_labels::named_labels(named_labels &amp;&amp;other) noexcept=delete']]],
   ['named_5flabels_2eh',['named_labels.h',['../named__labels_8h.html',1,'']]],
   ['namespace',['Namespace',['../structNamespace.html',1,'']]],
   ['namespace_5fcopy_5fguard',['namespace_copy_guard',['../classvw__slim_1_1namespace__copy__guard.html#acb059717b330a9956ce0fae67d48f853',1,'vw_slim::namespace_copy_guard']]],
@@ -43,6 +43,7 @@ var searchData=
   ['noop',['noop',['../namespaceVW_1_1LEARNER.html#abc1944c430e44d72bf88e16bebcb9d36',1,'VW::LEARNER']]],
   ['noop_2eh',['noop.h',['../noop_8h.html',1,'']]],
   ['noop_5fmm',['noop_mm',['../global__data_8h.html#ab1679df7e12cefeb7ce4d0094b9d29b3',1,'global_data.h']]],
+  ['noop_5foutput_5fstreambuf',['noop_output_streambuf',['../classnoop__output__streambuf.html',1,'']]],
   ['noop_5fsensitivity',['noop_sensitivity',['../namespaceVW_1_1LEARNER.html#a23877fd9c9757641d788ae73cf210914',1,'VW::LEARNER']]],
   ['noop_5fsetup',['noop_setup',['../noop_8h.html#a1e78d21c1bcf2ffb79cb5d5832257834',1,'noop.h']]],
   ['noop_5fsl',['noop_sl',['../namespaceVW_1_1LEARNER.html#a6ec1f35572a34a1f76a16014d0ddc5fe',1,'VW::LEARNER']]],

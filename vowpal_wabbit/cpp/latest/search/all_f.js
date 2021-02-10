@@ -2,8 +2,8 @@ var searchData=
 [
   ['oaa_2eh',['oaa.h',['../oaa_8h.html',1,'']]],
   ['oaa_5fsetup',['oaa_setup',['../oaa_8h.html#a5db09fb60dc3726998423fa28f32ead8',1,'oaa.h']]],
-  ['object_5fpool',['object_pool',['../structVW_1_1object__pool.html',1,'VW']]],
   ['object_5fpool',['object_pool',['../structVW_1_1object__pool.html#a120b97b4c9abae50db1790aaf8f03c13',1,'VW::object_pool::object_pool()=default'],['../structVW_1_1object__pool.html#acdcabd712940120db798ca9924edf5d7',1,'VW::object_pool::object_pool(size_t initial_chunk_size, TInitializer initializer={}, size_t chunk_size=8)']]],
+  ['object_5fpool',['object_pool',['../structVW_1_1object__pool.html',1,'VW']]],
   ['object_5fpool_2eh',['object_pool.h',['../object__pool_8h.html',1,'']]],
   ['object_5fpool_3c_20example_20_3e',['object_pool&lt; example &gt;',['../structVW_1_1object__pool.html',1,'VW']]],
   ['offset_5ftree',['offset_tree',['../structVW_1_1offset__tree_1_1offset__tree.html#acd1499471b62e6e344bb655b80e91e3a',1,'VW::offset_tree::offset_tree']]],
@@ -40,12 +40,12 @@ var searchData=
   ['operator_5b_5d',['operator[]',['../classsparse__parameters.html#adf594c8d3ee13da4adc59e0008720b1b',1,'sparse_parameters::operator[](size_t i)'],['../classsparse__parameters.html#a00b70ed6cbaa4fdf01e71a58ec8b6ec6',1,'sparse_parameters::operator[](size_t i) const '],['../classparameters.html#a85b07ebbbc124f14c57e2b853c5c0782',1,'parameters::operator[]()'],['../classdense__parameters.html#a5c553b60e522313ba666348e54ac4d56',1,'dense_parameters::operator[](size_t i) const '],['../classdense__parameters.html#ad45537e0523d8878ae515c04be6f2867',1,'dense_parameters::operator[](size_t i)'],['../classvw__slim_1_1internal_1_1collection__pair__iterator.html#afb97c92da7e8cac1b94b612c0630da2a',1,'vw_slim::internal::collection_pair_iterator::operator[]()'],['../structv__array.html#a9f14844c660daa1aa5af5119b889bfcb',1,'v_array::operator[]()']]],
   ['option_5fbuilder',['option_builder',['../structVW_1_1config_1_1option__builder.html#ab9001d9a123f2c75eebc5cf7a2e0efd2',1,'VW::config::option_builder']]],
   ['option_5fbuilder',['option_builder',['../structVW_1_1config_1_1option__builder.html',1,'VW::config']]],
-  ['option_5fgroup_5fdefinition',['option_group_definition',['../structVW_1_1config_1_1option__group__definition.html#a2073602ad99847e2640d7a33902f8cb9',1,'VW::config::option_group_definition']]],
   ['option_5fgroup_5fdefinition',['option_group_definition',['../structVW_1_1config_1_1option__group__definition.html',1,'VW::config']]],
+  ['option_5fgroup_5fdefinition',['option_group_definition',['../structVW_1_1config_1_1option__group__definition.html#a2073602ad99847e2640d7a33902f8cb9',1,'VW::config::option_group_definition']]],
   ['options',['options',['../structvw.html#a2e64506c21371f1025f5acbd136168ed',1,'vw']]],
   ['options_2eh',['options.h',['../options_8h.html',1,'']]],
-  ['options_5fboost_5fpo',['options_boost_po',['../structVW_1_1config_1_1options__boost__po.html#a454c7237d3e0aabf3c498f1eb6a7b4d4',1,'VW::config::options_boost_po::options_boost_po(int argc, char **argv)'],['../structVW_1_1config_1_1options__boost__po.html#a631dda2e7f32418a41e5ffce19aaf55c',1,'VW::config::options_boost_po::options_boost_po(const std::vector&lt; std::string &gt; &amp;args)'],['../structVW_1_1config_1_1options__boost__po.html#ac6835b76aefd400cfdc273b10d83dcd9',1,'VW::config::options_boost_po::options_boost_po(options_boost_po &amp;)=delete']]],
   ['options_5fboost_5fpo',['options_boost_po',['../structVW_1_1config_1_1options__boost__po.html',1,'VW::config']]],
+  ['options_5fboost_5fpo',['options_boost_po',['../structVW_1_1config_1_1options__boost__po.html#a454c7237d3e0aabf3c498f1eb6a7b4d4',1,'VW::config::options_boost_po::options_boost_po(int argc, char **argv)'],['../structVW_1_1config_1_1options__boost__po.html#a631dda2e7f32418a41e5ffce19aaf55c',1,'VW::config::options_boost_po::options_boost_po(const std::vector&lt; std::string &gt; &amp;args)'],['../structVW_1_1config_1_1options__boost__po.html#ac6835b76aefd400cfdc273b10d83dcd9',1,'VW::config::options_boost_po::options_boost_po(options_boost_po &amp;)=delete']]],
   ['options_5fboost_5fpo_2eh',['options_boost_po.h',['../options__boost__po_8h.html',1,'']]],
   ['options_5fdeleter_5ftype',['options_deleter_type',['../global__data_8h.html#a6a9836137e68daba98511b4fd85f2654',1,'global_data.h']]],
   ['options_5fi',['options_i',['../structVW_1_1config_1_1options__i.html',1,'VW::config']]],
@@ -70,5 +70,7 @@ var searchData=
   ['output_5ffloat',['output_float',['../classFloatToFloatState.html#ae91d12e334d9112b7b02d4b03031db94',1,'FloatToFloatState']]],
   ['output_5flock',['output_lock',['../structparser.html#a62c95d8b49357d7a9251d07d8b6f383f',1,'parser']]],
   ['output_5fstring',['output_string',['../classStringToStringState.html#a4470ed511d1e65d1bf8bd54afacd9b65',1,'StringToStringState']]],
-  ['output_5fuint',['output_uint',['../classUIntToUIntState.html#a92433cf40bca8c074751b90cb29bb80f',1,'UIntToUIntState']]]
+  ['output_5fuint',['output_uint',['../classUIntToUIntState.html#a92433cf40bca8c074751b90cb29bb80f',1,'UIntToUIntState']]],
+  ['overflow',['overflow',['../classnoop__output__streambuf.html#a1e7369e15438cd86bb106b9eb7395cc8',1,'noop_output_streambuf']]],
+  ['owning_5fostream',['owning_ostream',['../classowning__ostream.html',1,'owning_ostream'],['../classowning__ostream.html#afa082edf1eca4d3e69f802b77266e415',1,'owning_ostream::owning_ostream()']]]
 ];

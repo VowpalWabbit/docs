@@ -10,5 +10,6 @@ var searchData=
   ['conditional_5fcontextual_5fbandit_5foutcome',['conditional_contextual_bandit_outcome',['../structCCB_1_1conditional__contextual__bandit__outcome.html',1,'CCB']]],
   ['context',['Context',['../structContext.html',1,'']]],
   ['continuous_5flabel',['continuous_label',['../structVW_1_1cb__continuous_1_1continuous__label.html',1,'VW::cb_continuous']]],
-  ['continuous_5flabel_5felm',['continuous_label_elm',['../structVW_1_1cb__continuous_1_1continuous__label__elm.html',1,'VW::cb_continuous']]]
+  ['continuous_5flabel_5felm',['continuous_label_elm',['../structVW_1_1cb__continuous_1_1continuous__label__elm.html',1,'VW::cb_continuous']]],
+  ['custom_5foutput_5fstream_5fbuf',['custom_output_stream_buf',['../classcustom__output__stream__buf.html',1,'']]]
 ];

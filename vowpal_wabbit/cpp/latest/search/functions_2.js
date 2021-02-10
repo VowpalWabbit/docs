@@ -69,5 +69,6 @@ var searchData=
   ['csldf_5fsetup',['csldf_setup',['../namespaceCSOAA.html#aa895a0fa60e7893203ebf1eb5d71fbb0',1,'CSOAA']]],
   ['csoaa_5fsetup',['csoaa_setup',['../namespaceCSOAA.html#a33563bb8b950531cd74c1744551fe686',1,'CSOAA']]],
   ['current_5fstate',['current_state',['../structVWReaderHandler.html#a815ced4a606d3f1e66176cf0bf156bcc',1,'VWReaderHandler']]],
-  ['currentnamespace',['CurrentNamespace',['../structContext.html#a9d1381c22ba19a9ca58b7c0f615eaa3a',1,'Context']]]
+  ['currentnamespace',['CurrentNamespace',['../structContext.html#a9d1381c22ba19a9ca58b7c0f615eaa3a',1,'Context']]],
+  ['custom_5foutput_5fstream_5fbuf',['custom_output_stream_buf',['../classcustom__output__stream__buf.html#aebbfcfbcd2b9e6ba1c75810a7f25edf4',1,'custom_output_stream_buf']]]
 ];

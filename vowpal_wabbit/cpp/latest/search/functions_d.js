@@ -39,5 +39,7 @@ var searchData=
   ['output_5fand_5faccount_5fno_5flabel_5fexample',['output_and_account_no_label_example',['../namespaceno__label.html#a06da32ed4ca86beddace6eb614d83248',1,'no_label']]],
   ['output_5fbyte',['output_byte',['../cache_8h.html#aceecd924458f9cec915af446664256ee',1,'cache.h']]],
   ['output_5fexample',['output_example',['../namespaceCOST__SENSITIVE.html#a25e83fefdfb752b04ffcf849a3bfac1f',1,'COST_SENSITIVE::output_example()'],['../namespaceMULTILABEL.html#a50c2e8edc4a8c4f59372879683bc6df9',1,'MULTILABEL::output_example()']]],
-  ['output_5ffeatures',['output_features',['../cache_8h.html#af4875cfa395d3d1b81065c5cb664d411',1,'cache.h']]]
+  ['output_5ffeatures',['output_features',['../cache_8h.html#af4875cfa395d3d1b81065c5cb664d411',1,'cache.h']]],
+  ['overflow',['overflow',['../classnoop__output__streambuf.html#a1e7369e15438cd86bb106b9eb7395cc8',1,'noop_output_streambuf']]],
+  ['owning_5fostream',['owning_ostream',['../classowning__ostream.html#afa082edf1eca4d3e69f802b77266e415',1,'owning_ostream']]]
 ];
