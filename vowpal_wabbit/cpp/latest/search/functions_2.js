@@ -14,6 +14,7 @@ var searchData=
   ['cast_5fto_5fsmaller_5ftype',['cast_to_smaller_type',['../namespaceVW.html#a307838cf95f16718e3b1499033a79a81',1,'VW']]],
   ['cb_5fadf_5fsetup',['cb_adf_setup',['../cb__adf_8h.html#a42611f9c232cc381b2e9a3e2ace650db',1,'cb_adf.h']]],
   ['cb_5falgs_5fsetup',['cb_algs_setup',['../cb__algs_8h.html#a6893c6fd5abb0a869ec2054c2bf018e4',1,'cb_algs.h']]],
+  ['cb_5fclass',['cb_class',['../structCB_1_1cb__class.html#a279503f9bd38d5edca15a926ee48b9a0',1,'CB::cb_class::cb_class()=default'],['../structCB_1_1cb__class.html#ab369fc1c9fbdd40ae31f13439354dbfa',1,'CB::cb_class::cb_class(float cost, uint32_t action, float probability)']]],
   ['cb_5fdro_5fsetup',['cb_dro_setup',['../cb__dro_8h.html#a0dd019d10ccc08111a53962e9b8ffa79',1,'cb_dro.h']]],
   ['cb_5fexplore_5fadf_5fbase',['cb_explore_adf_base',['../structVW_1_1cb__explore__adf_1_1cb__explore__adf__base.html#a16ad19a2ea86ae3d3db6c67e2a89f776',1,'VW::cb_explore_adf::cb_explore_adf_base']]],
   ['cb_5fexplore_5fpdf_5fsetup',['cb_explore_pdf_setup',['../namespaceVW_1_1continuous__action.html#a68068ab51d0e65137c0691c29d3d4eae',1,'VW::continuous_action']]],
