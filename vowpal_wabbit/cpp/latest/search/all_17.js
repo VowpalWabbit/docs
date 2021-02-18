@@ -27,8 +27,11 @@ var searchData=
   ['write',['write',['../structVW_1_1io_1_1writer.html#a2af8e9f79503058aca22933edd085c82',1,'VW::io::writer']]],
   ['write_5fcache',['write_cache',['../structparser.html#a5f48db95a95c057288a00642d4cf9f14',1,'parser']]],
   ['write_5ffile',['write_file',['../classio__buf.html#ab2b3de58d03310477d6a15764e81e7a1',1,'io_buf::write_file(VW::io::writer *f, void *buf, size_t nbytes)'],['../classio__buf.html#a7620ffb9af531d341956621792a9c37a',1,'io_buf::write_file(VW::io::writer *f, const void *buf, size_t nbytes)']]],
+  ['write_5ffunc_5ft',['write_func_t',['../namespaceVW_1_1io.html#afa7ea16384ae2c7aadbc1408cd4be49a',1,'VW::io']]],
   ['writeit',['writeit',['../io__buf_8h.html#ac3dc74ce9e42a7cf9cb19834d4593d57',1,'io_buf.h']]],
   ['writeitvar',['writeitvar',['../io__buf_8h.html#aa441214d84044fca62cc7341883b7843',1,'io_buf.h']]],
+  ['writer',['writer',['../structVW_1_1io_1_1writer.html',1,'VW::io']]],
   ['writer',['writer',['../structVW_1_1io_1_1writer.html#a450d433694ee55b73fdc052d40c4ba6d',1,'VW::io::writer::writer()=default'],['../structVW_1_1io_1_1writer.html#aa5be44de0372ff6b7002fe3b0f0657e9',1,'VW::io::writer::writer(writer &amp;other)=delete'],['../structVW_1_1io_1_1writer.html#a5e2aec8dea0fcf87204f91ac010b0f56',1,'VW::io::writer::writer(writer &amp;&amp;other)=delete']]],
-  ['writer',['writer',['../structVW_1_1io_1_1writer.html',1,'VW::io']]]
+  ['writer_5fstream_5fbuf',['writer_stream_buf',['../classVW_1_1io_1_1writer__stream__buf.html',1,'VW::io']]],
+  ['writer_5fstream_5fbuf',['writer_stream_buf',['../classVW_1_1io_1_1writer__stream__buf.html#adbeb736dfb6013e5a0b0fecf6f6d9e13',1,'VW::io::writer_stream_buf']]]
 ];

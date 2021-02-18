@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Vowpal Wabbit: owning_ostream Class Reference</title>
+<title>Vowpal Wabbit: VW::io::writer_stream_buf Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -82,33 +82,39 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceVW.html">VW</a></li><li class="navelem"><a class="el" href="namespaceVW_1_1io.html">io</a></li><li class="navelem"><a class="el" href="classVW_1_1io_1_1writer__stream__buf.html">writer_stream_buf</a></li>  </ul>
+</div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="classowning__ostream-members.html">List of all members</a>  </div>
+<a href="classVW_1_1io_1_1writer__stream__buf-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">owning_ostream Class Reference</div>  </div>
+<div class="title">VW::io::writer_stream_buf Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;error_reporting.h&gt;</code></p>
+<p><code>#include &lt;custom_streambuf.h&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for owning_ostream:</div>
+Inheritance diagram for VW::io::writer_stream_buf:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="classowning__ostream.png" usemap="#owning_5Fostream_map" alt=""/>
-  <map id="owning_5Fostream_map" name="owning_ostream_map">
+  <img src="classVW_1_1io_1_1writer__stream__buf.png" usemap="#VW::io::writer_5Fstream_5Fbuf_map" alt=""/>
+  <map id="VW::io::writer_5Fstream_5Fbuf_map" name="VW::io::writer_stream_buf_map">
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afa082edf1eca4d3e69f802b77266e415"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classowning__ostream.html#afa082edf1eca4d3e69f802b77266e415">owning_ostream</a> (std::unique_ptr&lt; std::streambuf &gt; &amp;&amp;output)</td></tr>
-<tr class="separator:afa082edf1eca4d3e69f802b77266e415"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbeb736dfb6013e5a0b0fecf6f6d9e13"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1io_1_1writer__stream__buf.html#adbeb736dfb6013e5a0b0fecf6f6d9e13">writer_stream_buf</a> (std::unique_ptr&lt; <a class="el" href="structVW_1_1io_1_1writer.html">VW::io::writer</a> &gt; &amp;&amp;<a class="el" href="structVW_1_1io_1_1writer.html">writer</a>)</td></tr>
+<tr class="separator:adbeb736dfb6013e5a0b0fecf6f6d9e13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a121e72ca4a8acda19b53dd6b835a1c5f"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1io_1_1writer__stream__buf.html#a121e72ca4a8acda19b53dd6b835a1c5f">sync</a> () override</td></tr>
+<tr class="separator:a121e72ca4a8acda19b53dd6b835a1c5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="afa082edf1eca4d3e69f802b77266e415"></a>
+<a class="anchor" id="adbeb736dfb6013e5a0b0fecf6f6d9e13"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -116,10 +122,10 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">owning_ostream::owning_ostream </td>
+          <td class="memname">VW::io::writer_stream_buf::writer_stream_buf </td>
           <td>(</td>
-          <td class="paramtype">std::unique_ptr&lt; std::streambuf &gt; &amp;&amp;&#160;</td>
-          <td class="paramname"><em>output</em></td><td>)</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="structVW_1_1io_1_1writer.html">VW::io::writer</a> &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>writer</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -132,13 +138,37 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a121e72ca4a8acda19b53dd6b835a1c5f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int VW::io::writer_stream_buf::sync </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/__w/vowpal_wabbit/vowpal_wabbit/vowpalwabbit/<a class="el" href="error__reporting_8h.html">error_reporting.h</a></li>
+<li>/__w/vowpal_wabbit/vowpal_wabbit/vowpalwabbit/io/<a class="el" href="custom__streambuf_8h.html">custom_streambuf.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 17 2021 21:37:57 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 18 2021 14:09:10 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

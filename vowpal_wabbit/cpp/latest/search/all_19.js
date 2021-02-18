@@ -36,6 +36,7 @@ var searchData=
   ['_7estride_5fshift_5fguard',['~stride_shift_guard',['../classvw__slim_1_1stride__shift__guard.html#a3ffe0ed6488b88a0a81df2f4e82f880c',1,'vw_slim::stride_shift_guard']]],
   ['_7eswap_5fguard_5fimpl',['~swap_guard_impl',['../classVW_1_1details_1_1swap__guard__impl.html#a852f8fbb6f0a7a83e660e6218926c8e2',1,'VW::details::swap_guard_impl']]],
   ['_7eswap_5fguard_5fimpl_5frvalue',['~swap_guard_impl_rvalue',['../classVW_1_1details_1_1swap__guard__impl__rvalue.html#a0b49d31c92f6015e5296c94c3e1dbb40',1,'VW::details::swap_guard_impl_rvalue']]],
+  ['_7etrace_5fmessage_5fwrapper',['~trace_message_wrapper',['../structtrace__message__wrapper.html#a67dba64b58b02aee80c8d68bd2897b67',1,'trace_message_wrapper']]],
   ['_7evalue_5fobject_5fpool',['~value_object_pool',['../structVW_1_1value__object__pool.html#a6d1987e4678b7dba7aa9ae4b48a3905b',1,'VW::value_object_pool']]],
   ['_7eversion_5fstruct',['~version_struct',['../structVW_1_1version__struct.html#aa1217de574d459e67d340a2f63fd658b',1,'VW::version_struct']]],
   ['_7evw',['~vw',['../structvw.html#a8b205287bbc6f9773885db2d04b1cbc2',1,'vw']]],

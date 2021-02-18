@@ -37,5 +37,6 @@ var searchData=
   ['cost_5fsensitive_2eh',['cost_sensitive.h',['../cost__sensitive_8h.html',1,'']]],
   ['crossplat_5fcompat_2eh',['crossplat_compat.h',['../crossplat__compat_8h.html',1,'']]],
   ['cs_5factive_2eh',['cs_active.h',['../cs__active_8h.html',1,'']]],
-  ['csoaa_2eh',['csoaa.h',['../csoaa_8h.html',1,'']]]
+  ['csoaa_2eh',['csoaa.h',['../csoaa_8h.html',1,'']]],
+  ['custom_5fstreambuf_2eh',['custom_streambuf.h',['../custom__streambuf_8h.html',1,'']]]
 ];

@@ -43,7 +43,7 @@ var searchData=
   ['noop',['noop',['../namespaceVW_1_1LEARNER.html#abc1944c430e44d72bf88e16bebcb9d36',1,'VW::LEARNER']]],
   ['noop_2eh',['noop.h',['../noop_8h.html',1,'']]],
   ['noop_5fmm',['noop_mm',['../global__data_8h.html#ab1679df7e12cefeb7ce4d0094b9d29b3',1,'global_data.h']]],
-  ['noop_5foutput_5fstreambuf',['noop_output_streambuf',['../classnoop__output__streambuf.html',1,'']]],
+  ['noop_5foutput_5fstreambuf',['noop_output_streambuf',['../classVW_1_1io_1_1noop__output__streambuf.html',1,'VW::io']]],
   ['noop_5fsensitivity',['noop_sensitivity',['../namespaceVW_1_1LEARNER.html#a23877fd9c9757641d788ae73cf210914',1,'VW::LEARNER']]],
   ['noop_5fsetup',['noop_setup',['../noop_8h.html#a1e78d21c1bcf2ffb79cb5d5832257834',1,'noop.h']]],
   ['noop_5fsl',['noop_sl',['../namespaceVW_1_1LEARNER.html#a6ec1f35572a34a1f76a16014d0ddc5fe',1,'VW::LEARNER']]],

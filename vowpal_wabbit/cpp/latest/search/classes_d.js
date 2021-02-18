@@ -10,5 +10,5 @@ var searchData=
   ['options_5fname_5fextractor',['options_name_extractor',['../structVW_1_1config_1_1options__name__extractor.html',1,'VW::config']]],
   ['options_5fserializer_5fboost_5fpo',['options_serializer_boost_po',['../structVW_1_1config_1_1options__serializer__boost__po.html',1,'VW::config']]],
   ['options_5fserializer_5fi',['options_serializer_i',['../structVW_1_1config_1_1options__serializer__i.html',1,'VW::config']]],
-  ['owning_5fostream',['owning_ostream',['../classowning__ostream.html',1,'']]]
+  ['owning_5fostream',['owning_ostream',['../classVW_1_1io_1_1owning__ostream.html',1,'VW::io']]]
 ];
