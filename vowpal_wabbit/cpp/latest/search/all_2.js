@@ -40,7 +40,7 @@ var searchData=
   ['binary_2eh',['binary.h',['../binary_8h.html',1,'']]],
   ['binary_5fprint_5fresult',['binary_print_result',['../global__data_8h.html#a158dab5d2c8d07970b523bf2f910d2e2',1,'global_data.h']]],
   ['binary_5fprint_5fresult_5fby_5fref',['binary_print_result_by_ref',['../global__data_8h.html#a07600c7dfa8e52c7741daa1d80607abf',1,'global_data.h']]],
-  ['binary_5fsetup',['binary_setup',['../namespaceVW_1_1binary.html#aaf473676075fbfd894132f730f7991ba',1,'VW::binary']]],
+  ['binary_5fsetup',['binary_setup',['../namespaceVW_1_1binary.html#adb90b1277d9a5e0c8559ff5bd5ee8e8a',1,'VW::binary']]],
   ['bool',['Bool',['../structBaseState.html#a9ccff8ff7ccb1612a47d75c39c84c924',1,'BaseState::Bool()'],['../classDefaultState.html#a7bb350ead38a4e1b9cbbfd62fa1b6222',1,'DefaultState::Bool()'],['../classBoolToBoolState.html#aa8099fe4578f7eaf665edf962f84d128',1,'BoolToBoolState::Bool()'],['../structVWReaderHandler.html#affe64a99b2e524d4c97f9950c1dc0091',1,'VWReaderHandler::Bool()']]],
   ['bool_5fstate',['bool_state',['../structContext.html#a0dda584309012bded089bb76d8a5be5d',1,'Context']]],
   ['booltoboolstate',['BoolToBoolState',['../classBoolToBoolState.html',1,'BoolToBoolState&lt; audit &gt;'],['../classBoolToBoolState.html#a2e2d0f085308b87591abd89caca0cbb1',1,'BoolToBoolState::BoolToBoolState()']]],
@@ -64,5 +64,6 @@ var searchData=
   ['bufread_5flabel',['bufread_label',['../namespaceCB.html#aa73164f45f367d583a55aaa6675ed2fc',1,'CB']]],
   ['bufread_5flabel_5fadditional_5ffields',['bufread_label_additional_fields',['../namespaceCB.html#acb0ba7ade01167ed02776d3a761adccc',1,'CB']]],
   ['build',['build',['../structVW_1_1kskip__ngram__transformer.html#a315701be95f5d52920f40c63580e26b9',1,'VW::kskip_ngram_transformer']]],
+  ['build_5fsetupfn_5fname_5fdict',['build_setupfn_name_dict',['../structvw.html#ad06db1054dc9d8ce3c0e55a19d4312cb',1,'vw']]],
   ['build_5ftree',['build_tree',['../structVW_1_1cats__tree_1_1min__depth__binary__tree.html#a7d456d7260cf698c54197a62cc4aa424',1,'VW::cats_tree::min_depth_binary_tree::build_tree()'],['../structVW_1_1offset__tree_1_1min__depth__binary__tree.html#ac3e22135a078c06dc7298bc0fe2ae1e9',1,'VW::offset_tree::min_depth_binary_tree::build_tree()']]]
 ];

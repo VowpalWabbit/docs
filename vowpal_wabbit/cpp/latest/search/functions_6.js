@@ -64,6 +64,7 @@ var searchData=
   ['get_5frandom',['get_random',['../structrand__state.html#a18076b8640a0121637a4f79bf3d7ca7c',1,'rand_state']]],
   ['get_5frandom_5fstate',['get_random_state',['../structvw.html#a30bca3f2116b0b7db82d60c76467f6c4',1,'vw']]],
   ['get_5freader',['get_reader',['../structVW_1_1io_1_1socket.html#aed497a9478314393e165f7eb6478a627',1,'VW::io::socket']]],
+  ['get_5fsetupfn_5fname',['get_setupfn_name',['../structvw.html#a1f82a8d1d50639813cd50937a86bb97a',1,'vw']]],
   ['get_5fsibling',['get_sibling',['../structVW_1_1cats__tree_1_1min__depth__binary__tree.html#a55ae4f804d43ea6879184d64bf7dac4e',1,'VW::cats_tree::min_depth_binary_tree::get_sibling()'],['../structVW_1_1cats__tree_1_1cats__tree.html#a4675576a416f4a605a5d353743f66468',1,'VW::cats_tree::cats_tree::get_sibling()']]],
   ['get_5fstride',['get_stride',['../namespaceVW.html#a826a10fb5a8a42a54dffb9ad119eee97',1,'VW']]],
   ['get_5fstride_5fshift',['get_stride_shift',['../structSearch_1_1search.html#a2eb8c1360dfe5d59edbbe29f8919fbdd',1,'Search::search']]],

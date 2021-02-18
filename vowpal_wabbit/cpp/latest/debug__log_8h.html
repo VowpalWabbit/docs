@@ -87,18 +87,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
 <div class="title">debug_log.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<table class="memberdecls">
+<div class="textblock"><code>#include &quot;<a class="el" href="future__compat_8h.html">future_compat.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvw__dbg.html">vw_dbg</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a37ac68119a6e00019f8feeb85c725420"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug__log_8h.html#a37ac68119a6e00019f8feeb85c725420">VW_DEBUG_ENABLE</a>(x)&#160;&#160;&#160;static bool VW_DEBUG_LOG = x;</td></tr>
-<tr class="separator:a37ac68119a6e00019f8feeb85c725420"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd46076ede455cb78b77e9d5e420f399"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug__log_8h.html#afd46076ede455cb78b77e9d5e420f399">VW_DBG</a>(e)&#160;&#160;&#160;if (VW_DEBUG_LOG) std::cout &lt;&lt; <a class="el" href="example_8h.html#a82c40a547636e19f3604a949f02e22a1">depth_indent_string</a>(e)</td></tr>
+<tr class="memitem:ae7f81b1ffc5b9097daf7bfef6a624e6c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug__log_8h.html#ae7f81b1ffc5b9097daf7bfef6a624e6c">VW_DEBUG_LOG</a>&#160;&#160;&#160;<a class="el" href="structvw__dbg.html#a6c974ade8e99bfb1565c62d2f715b3e2">vw_dbg::default_log</a></td></tr>
+<tr class="separator:ae7f81b1ffc5b9097daf7bfef6a624e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af38b8deb09dc848104907552dd1355f0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug__log_8h.html#af38b8deb09dc848104907552dd1355f0">VW_LOG_SINK</a>&#160;&#160;&#160;std::cout</td></tr>
+<tr class="separator:af38b8deb09dc848104907552dd1355f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd46076ede455cb78b77e9d5e420f399"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug__log_8h.html#afd46076ede455cb78b77e9d5e420f399">VW_DBG</a>(e)&#160;&#160;&#160;if VW_STD17_CONSTEXPR (<a class="el" href="learner_8h.html#ae7f81b1ffc5b9097daf7bfef6a624e6c">VW_DEBUG_LOG</a>) <a class="el" href="debug__log_8h.html#af38b8deb09dc848104907552dd1355f0">VW_LOG_SINK</a> &lt;&lt; <a class="el" href="example_8h.html#a232dc9af8e7aa3d65df0b9a382ae524e">debug_depth_indent_string</a>(e)</td></tr>
 <tr class="separator:afd46076ede455cb78b77e9d5e420f399"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8bd0c00f6b943deea18229433afd90e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debug__log_8h.html#ab8bd0c00f6b943deea18229433afd90e">VW_DBG_0</a>&#160;&#160;&#160;if VW_STD17_CONSTEXPR (<a class="el" href="learner_8h.html#ae7f81b1ffc5b9097daf7bfef6a624e6c">VW_DEBUG_LOG</a>) <a class="el" href="debug__log_8h.html#af38b8deb09dc848104907552dd1355f0">VW_LOG_SINK</a></td></tr>
+<tr class="separator:ab8bd0c00f6b943deea18229433afd90e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="afd46076ede455cb78b77e9d5e420f399"></a>
@@ -110,23 +121,43 @@ Macros</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">e</td><td>)</td>
-          <td>&#160;&#160;&#160;if (VW_DEBUG_LOG) std::cout &lt;&lt; <a class="el" href="example_8h.html#a82c40a547636e19f3604a949f02e22a1">depth_indent_string</a>(e)</td>
+          <td>&#160;&#160;&#160;if VW_STD17_CONSTEXPR (<a class="el" href="learner_8h.html#ae7f81b1ffc5b9097daf7bfef6a624e6c">VW_DEBUG_LOG</a>) <a class="el" href="debug__log_8h.html#af38b8deb09dc848104907552dd1355f0">VW_LOG_SINK</a> &lt;&lt; <a class="el" href="example_8h.html#a232dc9af8e7aa3d65df0b9a382ae524e">debug_depth_indent_string</a>(e)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a37ac68119a6e00019f8feeb85c725420"></a>
+<a class="anchor" id="ab8bd0c00f6b943deea18229433afd90e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define VW_DEBUG_ENABLE</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">x</td><td>)</td>
-          <td>&#160;&#160;&#160;static bool VW_DEBUG_LOG = x;</td>
+          <td class="memname">#define VW_DBG_0&#160;&#160;&#160;if VW_STD17_CONSTEXPR (<a class="el" href="learner_8h.html#ae7f81b1ffc5b9097daf7bfef6a624e6c">VW_DEBUG_LOG</a>) <a class="el" href="debug__log_8h.html#af38b8deb09dc848104907552dd1355f0">VW_LOG_SINK</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae7f81b1ffc5b9097daf7bfef6a624e6c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VW_DEBUG_LOG&#160;&#160;&#160;<a class="el" href="structvw__dbg.html#a6c974ade8e99bfb1565c62d2f715b3e2">vw_dbg::default_log</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af38b8deb09dc848104907552dd1355f0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VW_LOG_SINK&#160;&#160;&#160;std::cout</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -136,7 +167,7 @@ Macros</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 18 2021 14:09:10 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 18 2021 23:28:35 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

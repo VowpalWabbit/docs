@@ -125,6 +125,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aafec6b84e96a9821ce817c46d9a6cf34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab49daf991dadd65f4f3bfa499bb74758"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structvw.html">vw</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvw.html#ab49daf991dadd65f4f3bfa499bb74758">operator=</a> (const <a class="el" href="structvw.html">vw</a> &amp;&amp;)=delete</td></tr>
 <tr class="separator:ab49daf991dadd65f4f3bfa499bb74758"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f82a8d1d50639813cd50937a86bb97a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvw.html#a1f82a8d1d50639813cd50937a86bb97a">get_setupfn_name</a> (<a class="el" href="global__data_8h.html#a06dae3007c6369fdfcf6c5e14b2b34e1">reduction_setup_fn</a> setup)</td></tr>
+<tr class="separator:a1f82a8d1d50639813cd50937a86bb97a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad06db1054dc9d8ce3c0e55a19d4312cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvw.html#ad06db1054dc9d8ce3c0e55a19d4312cb">build_setupfn_name_dict</a> ()</td></tr>
+<tr class="separator:ad06db1054dc9d8ce3c0e55a19d4312cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -302,8 +306,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a4d85f6f70e0f1d9318e4c29a46b913b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85bc04c8d332d8c2933e798375db1af3"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvw.html#a85bc04c8d332d8c2933e798375db1af3">inv_hash_regressor_name</a></td></tr>
 <tr class="separator:a85bc04c8d332d8c2933e798375db1af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad15d6225fe897253df9c187059fe6bcf"><td class="memItemLeft" align="right" valign="top">std::stack&lt; std::tuple&lt; std::string, <a class="el" href="global__data_8h.html#a06dae3007c6369fdfcf6c5e14b2b34e1">reduction_setup_fn</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvw.html#ad15d6225fe897253df9c187059fe6bcf">reduction_stack</a></td></tr>
-<tr class="separator:ad15d6225fe897253df9c187059fe6bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae19ec2a5ed59687038070447d00ade35"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::tuple&lt; std::string, <a class="el" href="global__data_8h.html#a06dae3007c6369fdfcf6c5e14b2b34e1">reduction_setup_fn</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvw.html#ae19ec2a5ed59687038070447d00ade35">reduction_stack</a></td></tr>
+<tr class="separator:ae19ec2a5ed59687038070447d00ade35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa87af4c0891b4123d72ec61e5f61b62d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvw.html#aa87af4c0891b4123d72ec61e5f61b62d">enabled_reductions</a></td></tr>
 <tr class="separator:aa87af4c0891b4123d72ec61e5f61b62d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad1a1c3c0161656cfab07b5cd2b9ebd1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr&lt; <a class="el" href="structVW_1_1io_1_1writer.html">VW::io::writer</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvw.html#aad1a1c3c0161656cfab07b5cd2b9ebd1">final_prediction_sink</a></td></tr>
@@ -431,6 +435,21 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ad06db1054dc9d8ce3c0e55a19d4312cb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vw::build_setupfn_name_dict </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a596becaba293b15fb8c64ebaf22a61dc"></a>
 <div class="memitem">
 <div class="memproto">
@@ -482,6 +501,22 @@ Public Attributes</h2></td></tr>
 <span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1f82a8d1d50639813cd50937a86bb97a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string vw::get_setupfn_name </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="global__data_8h.html#a06dae3007c6369fdfcf6c5e14b2b34e1">reduction_setup_fn</a>&#160;</td>
+          <td class="paramname"><em>setup</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>
@@ -1714,12 +1749,12 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad15d6225fe897253df9c187059fe6bcf"></a>
+<a class="anchor" id="ae19ec2a5ed59687038070447d00ade35"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::stack&lt;std::tuple&lt;std::string, <a class="el" href="global__data_8h.html#a06dae3007c6369fdfcf6c5e14b2b34e1">reduction_setup_fn</a>&gt; &gt; vw::reduction_stack</td>
+          <td class="memname">std::vector&lt;std::tuple&lt;std::string, <a class="el" href="global__data_8h.html#a06dae3007c6369fdfcf6c5e14b2b34e1">reduction_setup_fn</a>&gt; &gt; vw::reduction_stack</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1960,7 +1995,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 18 2021 14:09:10 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 18 2021 23:28:35 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

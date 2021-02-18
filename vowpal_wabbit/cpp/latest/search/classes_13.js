@@ -25,6 +25,7 @@ var searchData=
   ['vw',['vw',['../structvw.html',1,'']]],
   ['vw_5fargument_5fdisagreement_5fexception',['vw_argument_disagreement_exception',['../classVW_1_1vw__argument__disagreement__exception.html',1,'VW']]],
   ['vw_5fargument_5finvalid_5fvalue_5fexception',['vw_argument_invalid_value_exception',['../classVW_1_1vw__argument__invalid__value__exception.html',1,'VW']]],
+  ['vw_5fdbg',['vw_dbg',['../structvw__dbg.html',1,'']]],
   ['vw_5fexception',['vw_exception',['../classVW_1_1vw__exception.html',1,'VW']]],
   ['vw_5flogger',['vw_logger',['../structvw__logger.html',1,'']]],
   ['vw_5fnamespace',['vw_namespace',['../structvw__namespace.html',1,'']]],

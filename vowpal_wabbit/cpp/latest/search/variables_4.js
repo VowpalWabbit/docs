@@ -9,6 +9,7 @@ var searchData=
   ['default_5fbits',['default_bits',['../structvw.html#a3a30dd5b436a0073c85cc83fba6f519b',1,'vw']]],
   ['default_5ffloat_5ftolerance',['DEFAULT_FLOAT_TOLERANCE',['../namespaceVW_1_1math.html#ab96338c13291d2355a5bfa3264d06d7d',1,'VW::math']]],
   ['default_5flabel',['default_label',['../structlabel__parser.html#a9138ac15d32a511fa35591e6aa30946f',1,'label_parser']]],
+  ['default_5flog',['default_log',['../structvw__dbg.html#a6c974ade8e99bfb1565c62d2f715b3e2',1,'vw_dbg']]],
   ['default_5fnamespace',['default_namespace',['../constant_8h.html#ac5f7a89af82daae29351dde7bc52cce4',1,'constant.h']]],
   ['default_5fstate',['default_state',['../structContext.html#a0e0a976e8e6bf9b15f095758b5094521',1,'Context']]],
   ['delete_5fextra_5fdata',['delete_extra_data',['../structHookTask_1_1task__data.html#a61360c0115f8a58e64b432e90c48405a',1,'HookTask::task_data']]],

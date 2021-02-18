@@ -4,6 +4,7 @@ var searchData=
   ['cache',['cache',['../structinput__options.html#a01e267f82ebff128660f602b7765ae5c',1,'input_options']]],
   ['cache_5ffiles',['cache_files',['../structinput__options.html#aaa5711bc58e24146cf3c1a2538aaa7ac',1,'input_options']]],
   ['cache_5flabel',['cache_label',['../structlabel__parser.html#a3e961d44c74f3751192cccb07cdf4041',1,'label_parser']]],
+  ['cats_5fpdf',['cats_pdf',['../structvw__dbg.html#a63dc10504fbc0cbbca5a63ecbce94613',1,'vw_dbg']]],
   ['cb',['cb',['../structpolylabel.html#a293cc4e63d558d42f7af0a174b44928b',1,'polylabel']]],
   ['cb_5fcont',['cb_cont',['../structpolylabel.html#a78c3cf73edbe7fdf476af44941226428',1,'polylabel']]],
   ['cb_5fdata_5f5_5fmodel',['cb_data_5_model',['../data_8h.html#a7bfed4a34b49ffa92cabc144f0585811',1,'data.h']]],

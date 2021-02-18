@@ -18,6 +18,7 @@ var searchData=
   ['cast_5fsigned_5fto_5funsigned',['cast_signed_to_unsigned',['../namespaceVW.html#ab77eacf4a0ad7002efc6ffdaf20fad9f',1,'VW']]],
   ['cast_5fto_5fsmaller_5ftype',['cast_to_smaller_type',['../namespaceVW.html#a307838cf95f16718e3b1499033a79a81',1,'VW']]],
   ['cats_2eh',['cats.h',['../cats_8h.html',1,'']]],
+  ['cats_5fpdf',['cats_pdf',['../structvw__dbg.html#a63dc10504fbc0cbbca5a63ecbce94613',1,'vw_dbg']]],
   ['cats_5fpdf_2eh',['cats_pdf.h',['../cats__pdf_8h.html',1,'']]],
   ['cats_5ftree',['cats_tree',['../structVW_1_1cats__tree_1_1cats__tree.html',1,'VW::cats_tree']]],
   ['cats_5ftree_2eh',['cats_tree.h',['../cats__tree_8h.html',1,'']]],
