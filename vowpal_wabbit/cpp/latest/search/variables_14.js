@@ -22,5 +22,6 @@ var searchData=
   ['trace_5fmessage',['trace_message',['../structvw.html#af7f9a756371ddd4978d7ce33cb5e9a0a',1,'vw']]],
   ['trace_5fmessage_5fwrapper_5fcontext',['trace_message_wrapper_context',['../structvw.html#a1c7238f149071d568f7d8a1d275d7d77',1,'vw']]],
   ['training',['training',['../structvw.html#aa008bf77c7a0f5b90b21d16b3b1cf38c',1,'vw']]],
+  ['tree_5fbandwidth',['tree_bandwidth',['../structVW_1_1pmf__to__pdf_1_1reduction.html#a253f77aaf628fbae399afcc90637f796',1,'VW::pmf_to_pdf::reduction']]],
   ['type',['type',['../structCCB_1_1label.html#aeb312b579a5debb8537f8c433643c759',1,'CCB::label::type()'],['../structCCB_1_1reduction__features.html#ab6533591a593cdffe7e084881713f41f',1,'CCB::reduction_features::type()'],['../structVW_1_1slates_1_1label.html#a3534b1caf54bde6f345dc0fd94379778',1,'VW::slates::label::type()']]]
 ];
