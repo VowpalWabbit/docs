@@ -35,5 +35,6 @@ var searchData=
   ['multiclass_5flog_5floss',['multiclass_log_loss',['../structshared__data.html#a4ce87ed2b649c66104956e3ca7491c05',1,'shared_data']]],
   ['multilabel',['multilabel',['../namespaceMULTILABEL.html#a3b81f08b0481c5045f8cda8ac5fefea5',1,'MULTILABEL']]],
   ['multilabels',['multilabels',['../structpolylabel.html#a999dc75a1e71967c36a817cead6bf3b2',1,'polylabel::multilabels()'],['../structpolyprediction.html#a9f6a01eabbe81af8ec89f7af7ff5de3c',1,'polyprediction::multilabels()']]],
-  ['multipredict_5ff',['multipredict_f',['../structVW_1_1LEARNER_1_1learn__data.html#ac961a8f38a1a2672b64174931120dbfa',1,'VW::LEARNER::learn_data']]]
+  ['multipredict_5ff',['multipredict_f',['../structVW_1_1LEARNER_1_1learn__data.html#ac961a8f38a1a2672b64174931120dbfa',1,'VW::LEARNER::learn_data']]],
+  ['mut',['mut',['../structnamespace__interactions.html#a312a99308e3fdf58551e96b59beaf2e7',1,'namespace_interactions']]]
 ];

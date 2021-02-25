@@ -11,6 +11,7 @@ var searchData=
   ['namespace_5fdictionaries',['namespace_dictionaries',['../structvw.html#af16ebf4efcb03eb22d88cdd44a35869e',1,'vw']]],
   ['namespace_5fhash',['namespace_hash',['../structNamespace.html#a1dcb4de5a4b2c43e6e96597dcd438228',1,'Namespace']]],
   ['namespace_5findex',['namespace_index',['../example__predict_8h.html#a3302327c8e16f985dd6c4474bf279c40',1,'example_predict.h']]],
+  ['namespace_5finteractions',['namespace_interactions',['../structnamespace__interactions.html',1,'']]],
   ['namespace_5fletter',['namespace_letter',['../structvw__namespace.html#a156a82d3df8858e12bb459f75c2415c1',1,'vw_namespace']]],
   ['namespace_5fpath',['namespace_path',['../structContext.html#a408bdeefe995ebb3993ac72842e14473',1,'Context']]],
   ['nb_5fex_5fregressors',['nb_ex_regressors',['../structGEN__CS_1_1cb__to__cs.html#a01035400474484702805476f486fe449',1,'GEN_CS::cb_to_cs']]],

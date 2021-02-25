@@ -19,6 +19,7 @@ var searchData=
   ['learn_5fcount',['learn_count',['../structVW_1_1cats__tree_1_1tree__node.html#af48b7cfebb8011772f461c724c08fdfb',1,'VW::cats_tree::tree_node']]],
   ['learn_5ff',['learn_f',['../structVW_1_1LEARNER_1_1learn__data.html#aa7342020a50ec32f1408367624329c3d',1,'VW::LEARNER::learn_data']]],
   ['learner',['learner',['../structvw__dbg.html#a2c56037d4e2c362b5dbd5f692a93da90',1,'vw_dbg']]],
+  ['leave_5fduplicate_5finteractions',['leave_duplicate_interactions',['../structnamespace__interactions.html#a793809fbb18e4e4130feb728fac905d3',1,'namespace_interactions']]],
   ['left',['left',['../structVW_1_1continuous__actions_1_1pdf__segment.html#a06bbb545deb2037a44617751e5dd1bb0',1,'VW::continuous_actions::pdf_segment']]],
   ['left_5fid',['left_id',['../structVW_1_1cats__tree_1_1tree__node.html#ab77b989e4b84c8f7aae136ae9e3c5ed7',1,'VW::cats_tree::tree_node::left_id()'],['../structVW_1_1offset__tree_1_1tree__node.html#a5e5acb77efb2e47a223f1dc047c93dc0',1,'VW::offset_tree::tree_node::left_id()']]],
   ['left_5fonly',['left_only',['../structVW_1_1cats__tree_1_1tree__node.html#a1f6e50470e2ea7bf33cff550dd2f60b8',1,'VW::cats_tree::tree_node']]],
