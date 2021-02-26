@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Vowpal Wabbit: VW::value_object_pool&lt; T, TAllocator, TDeleter &gt; Struct Template Reference</title>
+<title>Vowpal Wabbit: VW::moved_object_pool&lt; T &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -84,15 +84,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceVW.html">VW</a></li><li class="navelem"><a class="el" href="structVW_1_1value__object__pool.html">value_object_pool</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceVW.html">VW</a></li><li class="navelem"><a class="el" href="structVW_1_1moved__object__pool.html">moved_object_pool</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="structVW_1_1value__object__pool-members.html">List of all members</a>  </div>
+<a href="structVW_1_1moved__object__pool-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">VW::value_object_pool&lt; T, TAllocator, TDeleter &gt; Struct Template Reference</div>  </div>
+<div class="title">VW::moved_object_pool&lt; T &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -100,31 +100,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae5e8d96d4fa7f8cac544728a299c3c29"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1value__object__pool.html#ae5e8d96d4fa7f8cac544728a299c3c29">value_object_pool</a> ()=default</td></tr>
-<tr class="separator:ae5e8d96d4fa7f8cac544728a299c3c29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d1987e4678b7dba7aa9ae4b48a3905b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1value__object__pool.html#a6d1987e4678b7dba7aa9ae4b48a3905b">~value_object_pool</a> ()</td></tr>
-<tr class="separator:a6d1987e4678b7dba7aa9ae4b48a3905b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d7166460608266d43d2ac6bbef7681a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1value__object__pool.html#a8d7166460608266d43d2ac6bbef7681a">return_object</a> (T obj)</td></tr>
-<tr class="separator:a8d7166460608266d43d2ac6bbef7681a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f63370d5e741096404f72d6fca5501c"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1value__object__pool.html#a6f63370d5e741096404f72d6fca5501c">get_object</a> ()</td></tr>
-<tr class="separator:a6f63370d5e741096404f72d6fca5501c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7754d54c029f87ea011b8f51cef66b9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1value__object__pool.html#aa7754d54c029f87ea011b8f51cef66b9">empty</a> () const </td></tr>
-<tr class="separator:aa7754d54c029f87ea011b8f51cef66b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbf5333616f188dd0ad6db62129eb196"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1value__object__pool.html#adbf5333616f188dd0ad6db62129eb196">size</a> () const </td></tr>
-<tr class="separator:adbf5333616f188dd0ad6db62129eb196"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a576da638798a649601d6c423a497a998"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1moved__object__pool.html#a576da638798a649601d6c423a497a998">moved_object_pool</a> ()=default</td></tr>
+<tr class="separator:a576da638798a649601d6c423a497a998"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1fd62e8760c4acd4c6b108ef8191fe4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1moved__object__pool.html#ae1fd62e8760c4acd4c6b108ef8191fe4">reclaim_object</a> (T &amp;&amp;obj)</td></tr>
+<tr class="separator:ae1fd62e8760c4acd4c6b108ef8191fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a0ec2f168640b9a7b6a16264a090b9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1moved__object__pool.html#a1a0ec2f168640b9a7b6a16264a090b9a">acquire_object</a> (T &amp;dest)</td></tr>
+<tr class="separator:a1a0ec2f168640b9a7b6a16264a090b9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23ee9d3ed35f4557046454503d2e86e8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1moved__object__pool.html#a23ee9d3ed35f4557046454503d2e86e8">empty</a> () const </td></tr>
+<tr class="separator:a23ee9d3ed35f4557046454503d2e86e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77e79fc4b16b87d63e5409e8d2147704"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1moved__object__pool.html#a77e79fc4b16b87d63e5409e8d2147704">size</a> () const </td></tr>
+<tr class="separator:a77e79fc4b16b87d63e5409e8d2147704"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ae5e8d96d4fa7f8cac544728a299c3c29"></a>
+<a class="anchor" id="a576da638798a649601d6c423a497a998"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T, typename TAllocator, typename TDeleter&gt; </div>
+template&lt;typename T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structVW_1_1value__object__pool.html">VW::value_object_pool</a>&lt; T, TAllocator, TDeleter &gt;::<a class="el" href="structVW_1_1value__object__pool.html">value_object_pool</a> </td>
+          <td class="memname"><a class="el" href="structVW_1_1moved__object__pool.html">VW::moved_object_pool</a>&lt; T &gt;::<a class="el" href="structVW_1_1moved__object__pool.html">moved_object_pool</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -139,19 +137,21 @@ template&lt;typename T, typename TAllocator, typename TDeleter&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a6d1987e4678b7dba7aa9ae4b48a3905b"></a>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a1a0ec2f168640b9a7b6a16264a090b9a"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T, typename TAllocator, typename TDeleter&gt; </div>
+template&lt;typename T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structVW_1_1value__object__pool.html">VW::value_object_pool</a>&lt; T, TAllocator, TDeleter &gt;::~<a class="el" href="structVW_1_1value__object__pool.html">value_object_pool</a> </td>
+          <td class="memname">void <a class="el" href="structVW_1_1moved__object__pool.html">VW::moved_object_pool</a>&lt; T &gt;::acquire_object </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">T &amp;&#160;</td>
+          <td class="paramname"><em>dest</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -164,18 +164,17 @@ template&lt;typename T, typename TAllocator, typename TDeleter&gt; </div>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aa7754d54c029f87ea011b8f51cef66b9"></a>
+<a class="anchor" id="a23ee9d3ed35f4557046454503d2e86e8"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T, typename TAllocator, typename TDeleter&gt; </div>
+template&lt;typename T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="structVW_1_1value__object__pool.html">VW::value_object_pool</a>&lt; T, TAllocator, TDeleter &gt;::empty </td>
+          <td class="memname">bool <a class="el" href="structVW_1_1moved__object__pool.html">VW::moved_object_pool</a>&lt; T &gt;::empty </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -190,44 +189,19 @@ template&lt;typename T, typename TAllocator, typename TDeleter&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a6f63370d5e741096404f72d6fca5501c"></a>
+<a class="anchor" id="ae1fd62e8760c4acd4c6b108ef8191fe4"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T, typename TAllocator, typename TDeleter&gt; </div>
+template&lt;typename T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">T <a class="el" href="structVW_1_1value__object__pool.html">VW::value_object_pool</a>&lt; T, TAllocator, TDeleter &gt;::get_object </td>
+          <td class="memname">void <a class="el" href="structVW_1_1moved__object__pool.html">VW::moved_object_pool</a>&lt; T &gt;::reclaim_object </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a8d7166460608266d43d2ac6bbef7681a"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T, typename TAllocator, typename TDeleter&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="structVW_1_1value__object__pool.html">VW::value_object_pool</a>&lt; T, TAllocator, TDeleter &gt;::return_object </td>
-          <td>(</td>
-          <td class="paramtype">T&#160;</td>
+          <td class="paramtype">T &amp;&amp;&#160;</td>
           <td class="paramname"><em>obj</em></td><td>)</td>
           <td></td>
         </tr>
@@ -241,17 +215,17 @@ template&lt;typename T, typename TAllocator, typename TDeleter&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="adbf5333616f188dd0ad6db62129eb196"></a>
+<a class="anchor" id="a77e79fc4b16b87d63e5409e8d2147704"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T, typename TAllocator, typename TDeleter&gt; </div>
+template&lt;typename T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t <a class="el" href="structVW_1_1value__object__pool.html">VW::value_object_pool</a>&lt; T, TAllocator, TDeleter &gt;::size </td>
+          <td class="memname">size_t <a class="el" href="structVW_1_1moved__object__pool.html">VW::moved_object_pool</a>&lt; T &gt;::size </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -272,7 +246,7 @@ template&lt;typename T, typename TAllocator, typename TDeleter&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 26 2021 15:32:50 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 26 2021 18:52:00 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

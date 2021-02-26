@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['v_5farray',['v_array',['../structv__array.html#a8bf9c834c2fd44e4c48cd6953a15a264',1,'v_array::v_array() noexcept'],['../structv__array.html#a44fd7fcab83d4a888a9e87edd63b423e',1,'v_array::v_array(v_array&lt; T &gt; &amp;&amp;other) noexcept'],['../structv__array.html#a2f78b9939045f57be46166ebfeee987b',1,'v_array::v_array(const v_array&lt; T &gt; &amp;other)']]],
   ['v_5farray_5fcontains',['v_array_contains',['../v__array_8h.html#a37ba1a7ee0f3f63f82e152532b9d3353',1,'v_array.h']]],
   ['v_5fextract',['v_extract',['../v__array_8h.html#aaf731b10e21962dbdb2365ea8ae100f7',1,'v_array.h']]],
   ['v_5finit',['v_init',['../v__array_8h.html#a294f16ab1916885e6f8210baa8f0c180',1,'v_array.h']]],
@@ -11,7 +12,6 @@ var searchData=
   ['validate_5fnum_5fbits',['validate_num_bits',['../namespaceVW.html#a4a2ff453816e9093180be827da53cf30',1,'VW']]],
   ['validate_5fversion',['validate_version',['../namespaceVW.html#a7e78e711be863b6f9c36c3901b33dacd',1,'VW']]],
   ['value',['value',['../classfeatures__value__iterator.html#ae66515fd88428ec7a542739528e05e4d',1,'features_value_iterator::value()'],['../structVW_1_1config_1_1typed__option.html#adf7fb61c1a7bb61fd0dc5460af996b54',1,'VW::config::typed_option::value(T value, bool called_from_add_and_parse=false)'],['../structVW_1_1config_1_1typed__option.html#a0dc8b68f8bec9746bf98d60fde8f13d3',1,'VW::config::typed_option::value() const ']]],
-  ['value_5fobject_5fpool',['value_object_pool',['../structVW_1_1value__object__pool.html#ae5e8d96d4fa7f8cac544728a299c3c29',1,'VW::value_object_pool']]],
   ['value_5fset_5fcallback',['value_set_callback',['../structVW_1_1config_1_1typed__option.html#a8f5c0c3f0bbd061a5c085e8c4594d1b3',1,'VW::config::typed_option::value_set_callback()'],['../structVW_1_1config_1_1typed__option__with__location.html#a4035449ac6343611b2acc0ea127a82bf',1,'VW::config::typed_option_with_location::value_set_callback()']]],
   ['value_5fsupplied',['value_supplied',['../structVW_1_1config_1_1typed__option.html#a63e12c4f4e0eceabb1663e6c2293de10',1,'VW::config::typed_option']]],
   ['values_5findices_5faudit',['values_indices_audit',['../structfeatures.html#ae4685fba7dbc7bfb1be4d8f4bfbdf0c8',1,'features']]],

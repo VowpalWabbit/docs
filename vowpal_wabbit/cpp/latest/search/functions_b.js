@@ -18,6 +18,7 @@ var searchData=
   ['mini_5fsetup_5fexample',['mini_setup_example',['../classezexample.html#aa4535bea4bcad8608adc2d3268fafe1d',1,'ezexample']]],
   ['model_5fparser',['model_parser',['../classvw__slim_1_1model__parser.html#a60531cc8473aa75a7be9a324f35f6d88',1,'vw_slim::model_parser']]],
   ['move_5ffeature_5fnamespace',['move_feature_namespace',['../namespaceVW.html#ab9e00af55935c42d32d1c2c5c244150e',1,'VW']]],
+  ['moved_5fobject_5fpool',['moved_object_pool',['../structVW_1_1moved__object__pool.html#a576da638798a649601d6c423a497a998',1,'VW::moved_object_pool']]],
   ['multiclass_5fpred_5fto_5fstring',['multiclass_pred_to_string',['../example_8h.html#a3466093196eb34402b8d395a13615139',1,'example.h']]],
   ['multilabel_5foaa_5fsetup',['multilabel_oaa_setup',['../multilabel__oaa_8h.html#a74dcd4a77c53998a3349e889b20e97a0',1,'multilabel_oaa.h']]],
   ['multiline_5flearn_5for_5fpredict',['multiline_learn_or_predict',['../namespaceVW_1_1LEARNER.html#ae567a4278ece0021d1272d708e25b749',1,'VW::LEARNER']]],
