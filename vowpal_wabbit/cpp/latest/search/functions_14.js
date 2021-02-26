@@ -1,7 +1,9 @@
 var searchData=
 [
   ['v_5farray_5fcontains',['v_array_contains',['../v__array_8h.html#a37ba1a7ee0f3f63f82e152532b9d3353',1,'v_array.h']]],
+  ['v_5fextract',['v_extract',['../v__array_8h.html#aaf731b10e21962dbdb2365ea8ae100f7',1,'v_array.h']]],
   ['v_5finit',['v_init',['../v__array_8h.html#a294f16ab1916885e6f8210baa8f0c180',1,'v_array.h']]],
+  ['v_5fmove',['v_move',['../v__array_8h.html#afd62f9eafc9b4ad56c834cdbd55d0a20',1,'v_array.h']]],
   ['v_5fstring2string',['v_string2string',['../v__array_8h.html#a0960f27e6b60bfea57f2db93b36f29d5',1,'v_array.h']]],
   ['valid_5fns',['valid_ns',['../example_8h.html#a2e31dea66535761be426441eae64ae21',1,'example.h']]],
   ['validate_5fdefault_5fbits',['validate_default_bits',['../namespaceVW.html#a4fc25d81a13f8bbd98838336bd2e84cf',1,'VW']]],

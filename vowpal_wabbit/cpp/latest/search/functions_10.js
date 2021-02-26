@@ -36,7 +36,6 @@ var searchData=
   ['reset_5fsource',['reset_source',['../parser_8h.html#a15933ea0422f9781ce061a9c802f6ca9',1,'parser.h']]],
   ['reset_5ftint',['reset_tint',['../structVW_1_1config_1_1options__i.html#abdc66d936603b9ee6dec26f80b829be6',1,'VW::config::options_i::reset_tint()'],['../structVW_1_1config_1_1options__name__extractor.html#a01ee32eefb99bea9123b8b28adc178d3',1,'VW::config::options_name_extractor::reset_tint()'],['../structVW_1_1config_1_1options__boost__po.html#a07b62dda5f8401381898700adbe047d1',1,'VW::config::options_boost_po::reset_tint()']]],
   ['resize',['resize',['../structv__array.html#a4a32b45f55342a03095d74e7d4131ca3',1,'v_array']]],
-  ['restore_5fprediction',['restore_prediction',['../structVW_1_1restore__prediction.html#a1f5003e0e759c02e224402f4abce2034',1,'VW::restore_prediction']]],
   ['return_5fcost',['return_cost',['../structVW_1_1cats__tree_1_1cats__tree.html#ad79d2e7d2ba4f1cb7a0915a2093b8afd',1,'VW::cats_tree::cats_tree']]],
   ['return_5ffeatures',['return_features',['../namespaceVW.html#a6ed9d821e6acd459339e226387f079ca',1,'VW']]],
   ['return_5fmultiple_5fexample',['return_multiple_example',['../namespaceVW.html#a37faebe34a72f26470ab3de6a3a9ca57',1,'VW']]],

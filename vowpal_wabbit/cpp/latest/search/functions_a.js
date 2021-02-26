@@ -2,6 +2,7 @@ var searchData=
 [
   ['labelindexstate',['LabelIndexState',['../structLabelIndexState.html#a94f9b8264a3b0c2469d1c77b1dd5e6d8',1,'LabelIndexState']]],
   ['labelobjectstate',['LabelObjectState',['../classLabelObjectState.html#a7ae7603f3d305b4915dbc431acf58b15',1,'LabelObjectState']]],
+  ['labels',['labels',['../structMULTILABEL_1_1labels.html#a769a5b5390d1fa3563099cca470c7d33',1,'MULTILABEL::labels::labels(v_array&lt; uint32_t &gt; labels)'],['../structMULTILABEL_1_1labels.html#aeae5b9420100a5ba8a8bd07d2153f59c',1,'MULTILABEL::labels::labels()']]],
   ['labelsinglepropertystate',['LabelSinglePropertyState',['../structLabelSinglePropertyState.html#afbe53d47d34646ef3502eea9cf8b15b6',1,'LabelSinglePropertyState']]],
   ['labelstate',['LabelState',['../structLabelState.html#a60dce1017e9ab90b4d658b528ddeba05',1,'LabelState']]],
   ['last',['last',['../structv__array.html#aaad3f3fbd9694eb40a85d9dd3e4959ce',1,'v_array']]],
