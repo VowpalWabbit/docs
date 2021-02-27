@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['back',['back',['../structv__array.html#aa8be05cf2d6653b29cece180ef4e07f9',1,'v_array::back()'],['../structv__array.html#ad1ee7af467ea1fc5535d43d3da6610e0',1,'v_array::back() const ']]],
   ['bag',['bag',['../namespacevw__slim.html#a8b7398db5b92b2538fdd8e6593b746b3a345ec4088b94393d5da64133ea3b0195',1,'vw_slim']]],
   ['bandwidth',['bandwidth',['../structVW_1_1pmf__to__pdf_1_1reduction.html#a63039df7e2d53bd036a62112dcef5c25',1,'VW::pmf_to_pdf::reduction']]],
   ['base',['base',['../structExpReplay_1_1expreplay.html#a832c99799c109e5042e4b3901d5f546d',1,'ExpReplay::expreplay::base()'],['../structVW_1_1LEARNER_1_1func__data.html#a3f26558c6ad681d2c0f50ddaa58cc2ef',1,'VW::LEARNER::func_data::base()'],['../structVW_1_1LEARNER_1_1learn__data.html#a37b76d25cbbc8b79029a94ab33844372',1,'VW::LEARNER::learn_data::base()'],['../structVW_1_1LEARNER_1_1save__load__data.html#ab6c03aa287b433156b29eb0720f7c50f',1,'VW::LEARNER::save_load_data::base()'],['../structVW_1_1LEARNER_1_1finish__example__data.html#aa10e1a4c6e872ec9faceb1060264be04',1,'VW::LEARNER::finish_example_data::base()']]],

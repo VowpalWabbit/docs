@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['back',['back',['../structv__array.html#aa8be05cf2d6653b29cece180ef4e07f9',1,'v_array::back()'],['../structv__array.html#ad1ee7af467ea1fc5535d43d3da6610e0',1,'v_array::back() const ']]],
   ['base_5foption',['base_option',['../structVW_1_1config_1_1base__option.html#abeb225ef8ce057e0a8ca53cf64d54e9f',1,'VW::config::base_option']]],
   ['base_5ftask',['base_task',['../structSearch_1_1search.html#ab3ef756d0531c055d67e23d807ca5ea5',1,'Search::search']]],
   ['baseline_5fenabled',['baseline_enabled',['../namespaceBASELINE.html#ad99952c661e0934c65824eb54ff668dd',1,'BASELINE']]],
