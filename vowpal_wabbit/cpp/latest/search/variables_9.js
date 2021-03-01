@@ -9,6 +9,7 @@ var searchData=
   ['ignore_5fsome_5flinear',['ignore_some_linear',['../structvw.html#ade19c1d0607732e94b981247b1ccde1f',1,'vw']]],
   ['ignore_5fstate',['ignore_state',['../structContext.html#aefdc82512c706a86bb7785b81337ae8b',1,'Context']]],
   ['in_5fpass_5fcounter',['in_pass_counter',['../structparser.html#a53510d464dc58fc86bce92c68a07a6b8',1,'parser']]],
+  ['in_5fuse',['in_use',['../structexample.html#a905cb7dd0c255b57735c01e408662cc4',1,'example']]],
   ['inc',['inc',['../classLabelObjectState.html#a6d7683925b3cfe38f68d25e668da8969',1,'LabelObjectState']]],
   ['increment',['increment',['../structVW_1_1LEARNER_1_1learner.html#a30c2bcf54996490e0a4415e6509e9dfe',1,'VW::LEARNER::learner']]],
   ['index',['index',['../structLabelIndexState.html#a74debffb179393bae1b06ad872409acc',1,'LabelIndexState']]],
