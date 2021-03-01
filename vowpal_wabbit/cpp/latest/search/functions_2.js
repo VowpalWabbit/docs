@@ -10,6 +10,7 @@ var searchData=
   ['calloc_5for_5fthrow',['calloc_or_throw',['../memory_8h.html#a9f714dbe7c12872e296e1c3db2b282c8',1,'calloc_or_throw(size_t nmemb):&#160;memory.h'],['../memory_8h.html#a31107095512273d04723b552457790d8',1,'calloc_or_throw():&#160;memory.h']]],
   ['calloc_5freserve',['calloc_reserve',['../v__array_8h.html#acf7f543a2adbe053d8129eebb9223694',1,'v_array.h']]],
   ['cancel',['cancel',['../classVW_1_1details_1_1swap__guard__impl.html#aebef30772dff93c42278ceb593272c21',1,'VW::details::swap_guard_impl::cancel()'],['../classVW_1_1details_1_1swap__guard__impl__rvalue.html#a91ddeb92dfbdb60e3dc80cfe928d77f7',1,'VW::details::swap_guard_impl_rvalue::cancel()'],['../classVW_1_1details_1_1scope__exit__caller.html#a28c36fed45ea8f80dfdfeec1e94e6e83',1,'VW::details::scope_exit_caller::cancel()']]],
+  ['capacity',['capacity',['../structv__array.html#aa8fc30b8c63e7db2602072216c7b8019',1,'v_array']]],
   ['cast_5fsigned_5fto_5funsigned',['cast_signed_to_unsigned',['../namespaceVW.html#ab77eacf4a0ad7002efc6ffdaf20fad9f',1,'VW']]],
   ['cast_5fto_5fsmaller_5ftype',['cast_to_smaller_type',['../namespaceVW.html#a307838cf95f16718e3b1499033a79a81',1,'VW']]],
   ['cb_5fadf_5fsetup',['cb_adf_setup',['../cb__adf_8h.html#a42611f9c232cc381b2e9a3e2ace650db',1,'cb_adf.h']]],
