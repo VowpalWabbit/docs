@@ -112,7 +112,7 @@ var searchData=
   ['vw_5fdbg',['vw_dbg',['../structvw__dbg.html',1,'vw_dbg'],['../debug__log_8h.html#afd46076ede455cb78b77e9d5e420f399',1,'VW_DBG():&#160;debug_log.h']]],
   ['vw_5fdbg_5f0',['VW_DBG_0',['../debug__log_8h.html#ab8bd0c00f6b943deea18229433afd90e',1,'debug_log.h']]],
   ['vw_5fdebug_5flog',['VW_DEBUG_LOG',['../debug__log_8h.html#ae7f81b1ffc5b9097daf7bfef6a624e6c',1,'VW_DEBUG_LOG():&#160;debug_log.h'],['../learner_8h.html#ae7f81b1ffc5b9097daf7bfef6a624e6c',1,'VW_DEBUG_LOG():&#160;learner.h']]],
-  ['vw_5fdeprecated',['VW_DEPRECATED',['../structv__array.html#afba780dcafd87c1c85e12c3909037413',1,'v_array::VW_DEPRECATED(&quot;v_array::pop() is deprecated. Use pop_back()&quot;) T pop()'],['../structv__array.html#ac18da04f4f7d43b52c8111723c97e38f',1,'v_array::VW_DEPRECATED(&quot;v_array::last() is deprecated. Use back()&quot;) T last() const ']]],
+  ['vw_5fdeprecated',['VW_DEPRECATED',['../structv__array.html#afba780dcafd87c1c85e12c3909037413',1,'v_array::VW_DEPRECATED(&quot;v_array::pop() is deprecated. Use pop_back()&quot;) T pop()'],['../structv__array.html#ac18da04f4f7d43b52c8111723c97e38f',1,'v_array::VW_DEPRECATED(&quot;v_array::last() is deprecated. Use back()&quot;) T last() const '],['../namespaceVW.html#a945ef752a0abded714e4bee3adb47cf5',1,'VW::VW_DEPRECATED()']]],
   ['vw_5fdll_5flocal',['VW_DLL_LOCAL',['../vwvis_8h.html#abb8340b867c28be777e09f71e9125a7b',1,'vwvis.h']]],
   ['vw_5fdll_5fpublic',['VW_DLL_PUBLIC',['../vwvis_8h.html#aa47c18e82570992596ce6017e8491fce',1,'vwvis.h']]],
   ['vw_5fendparser',['VW_EndParser',['../vwdll_8h.html#a8befb29cb80a7068112d803ab52ddb72',1,'vwdll.h']]],

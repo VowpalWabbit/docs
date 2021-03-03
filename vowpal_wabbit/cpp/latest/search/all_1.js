@@ -58,7 +58,7 @@ var searchData=
   ['all_5freduce_5ftype',['all_reduce_type',['../structvw.html#a23883363946e3f05963555a951407070',1,'vw']]],
   ['all_5fseen_5fnamespaces',['all_seen_namespaces',['../structnamespace__interactions.html#a689977e0117fba0828f8f69b52df79ac',1,'namespace_interactions']]],
   ['all_5fseen_5fnamespaces_5fsize',['all_seen_namespaces_size',['../structnamespace__interactions.html#a77e4df68b34bc5b811aafffae8a1d6da',1,'namespace_interactions']]],
-  ['alloc_5fexamples',['alloc_examples',['../namespaceVW.html#ab5d12f5315e3c407bcc85c5859002cb2',1,'VW::alloc_examples(size_t, size_t)'],['../namespaceVW.html#a1675e0ea7791ed003bacf0d4b7d4eb25',1,'VW::alloc_examples(size_t)']]],
+  ['alloc_5fexamples',['alloc_examples',['../namespaceVW.html#a5b9e3a83e7268f3eca1ac0aa505d6394',1,'VW::alloc_examples(size_t, size_t count)'],['../namespaceVW.html#ac835e595a49532a268ab8a4fd7b6467b',1,'VW::alloc_examples(size_t count)']]],
   ['allow_5foverride',['allow_override',['../structVW_1_1config_1_1option__builder.html#a3b18447ea149bf2fd477083026cad503',1,'VW::config::option_builder']]],
   ['allreduce',['AllReduce',['../classAllReduce.html',1,'AllReduce'],['../classAllReduce.html#a0bb9048bf8ec0a14718ad6bb7d6dbeca',1,'AllReduce::AllReduce()']]],
   ['allreduce_2eh',['allreduce.h',['../allreduce_8h.html',1,'']]],

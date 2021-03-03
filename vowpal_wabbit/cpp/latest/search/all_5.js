@@ -14,7 +14,7 @@ var searchData=
   ['e_5fvw_5fpredict_5ferr_5fnot_5fa_5fcb_5fmodel',['E_VW_PREDICT_ERR_NOT_A_CB_MODEL',['../vw__slim__return__codes_8h.html#a7d295d96f3014910bbf6550a87a96cbc',1,'vw_slim_return_codes.h']]],
   ['e_5fvw_5fpredict_5ferr_5fweight_5findex_5fout_5fof_5frange',['E_VW_PREDICT_ERR_WEIGHT_INDEX_OUT_OF_RANGE',['../vw__slim__return__codes_8h.html#a693ec9c382a8b0783cda24d16a21234f',1,'vw_slim_return_codes.h']]],
   ['early_5fterminate',['early_terminate',['../structvw.html#af8de01320427613cb35d8ff4378e6830',1,'vw']]],
-  ['ec',['ec',['../classSearch_1_1BaseTask.html#a95a3839551805bf71b18bf4d220c269b',1,'Search::BaseTask']]],
+  ['ec',['ec',['../classSearch_1_1BaseTask.html#a95a3839551805bf71b18bf4d220c269b',1,'Search::BaseTask::ec()'],['../namespaceVW.html#ac258f1f5c0c4657057cfd65f619a53fc',1,'VW::ec()']]],
   ['ec_5fis_5fexample_5fheader',['ec_is_example_header',['../namespaceCB.html#a2e10d3c30cd9736cd49e800ede17cc6c',1,'CB::ec_is_example_header()'],['../namespaceCCB.html#acc94442ee0e15eb69296c8545b2f946b',1,'CCB::ec_is_example_header()'],['../namespaceCOST__SENSITIVE.html#ab5c97d9fe5b4c5655fd8ac5f3cd30513',1,'COST_SENSITIVE::ec_is_example_header()']]],
   ['ec_5fis_5fexample_5funset',['ec_is_example_unset',['../namespaceCCB.html#a30a79b5de6f4f356930c206aaaa60c91',1,'CCB']]],
   ['ect_2eh',['ect.h',['../ect_8h.html',1,'']]],
