@@ -1,7 +1,6 @@
 var searchData=
 [
   ['_5f_5ffilename_5f_5f',['__FILENAME__',['../vw__exception_8h.html#a5fccb4fc71e44089a1b1a77fc76c0b68',1,'vw_exception.h']]],
-  ['_5f_5finline',['__INLINE',['../v__array_8h.html#ade2d8d7118f8ff49547f60aa0c3382bb',1,'v_array.h']]],
   ['_5fbegin',['_begin',['../classfeatures__value__iterator.html#a7b36ec5a4cdb03c02b6bbc73ed26d652',1,'features_value_iterator::_begin()'],['../structv__array.html#aac78f5cdf2f7a68a3114bac90a3b34b1',1,'v_array::_begin()']]],
   ['_5fbegin_5faudit',['_begin_audit',['../classfeatures__value__index__audit__iterator.html#aef54e5ce3ad57722833c684c4475cf9a',1,'features_value_index_audit_iterator']]],
   ['_5fbegin_5findex',['_begin_index',['../classfeatures__value__index__iterator.html#a563508df10450589fa90d2e547d25f23',1,'features_value_index_iterator']]],

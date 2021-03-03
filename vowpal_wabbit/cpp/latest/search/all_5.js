@@ -45,7 +45,6 @@ var searchData=
   ['erase',['erase',['../classBeam_1_1beam.html#ad4a71d456e26a89a32e4d5869398e2be',1,'Beam::beam']]],
   ['erase_5falloweds',['erase_alloweds',['../classSearch_1_1predictor.html#a37f20e137ca6bb4f4e26f3aca3e6cf89',1,'Search::predictor']]],
   ['erase_5foracles',['erase_oracles',['../classSearch_1_1predictor.html#a698e3f6835fa56ab5152519707d0790a',1,'Search::predictor']]],
-  ['erase_5fpoint',['erase_point',['../v__array_8h.html#a618281f14bf61d453a7e5b57559890a1',1,'v_array.h']]],
   ['err_5fconstants_2eh',['err_constants.h',['../err__constants_8h.html',1,'']]],
   ['error',['error',['../structContext.html#aafced41f3e89369fbf1a02fce44cae5f',1,'Context::error()'],['../structVWReaderHandler.html#a530c57ae7488a6a1fb093e246916224f',1,'VWReaderHandler::error()']]],
   ['error_5fcode_5fdefinition',['ERROR_CODE_DEFINITION',['../err__constants_8h.html#a7ee931acdd46e901d29cd566edf03b48',1,'ERROR_CODE_DEFINITION():&#160;err_constants.h'],['../error__constants_8h.html#a7ee931acdd46e901d29cd566edf03b48',1,'ERROR_CODE_DEFINITION():&#160;error_constants.h'],['../error__data_8h.html#aa5bbc6da29aa867353b4685f3d5f0be8',1,'ERROR_CODE_DEFINITION(3, options_disagree,&quot;Different values specified for two options that are constrained to be the same.&quot;) ERROR_CODE_DEFINITION(4:&#160;error_data.h']]],

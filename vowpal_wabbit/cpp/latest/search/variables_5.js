@@ -9,7 +9,6 @@ var searchData=
   ['end_5farray',['end_array',['../structv__array.html#ae563c3b32418f28a3c424c2f88cdf721',1,'v_array']]],
   ['end_5fparsed_5fexamples',['end_parsed_examples',['../structparser.html#a937aa6babf6854343eafa7566d34e031',1,'parser']]],
   ['end_5fpass',['end_pass',['../structexample.html#aed100c9f43cef70f89c20dc5fdd30a12',1,'example']]],
-  ['erase_5fpoint',['erase_point',['../v__array_8h.html#a618281f14bf61d453a7e5b57559890a1',1,'v_array.h']]],
   ['eta',['eta',['../structvw.html#a939cbdaf20c78bfeabfddbf57c9d8250',1,'vw']]],
   ['eta_5fdecay_5frate',['eta_decay_rate',['../structvw.html#a69ffab35eaf64edf9bf88c43f83e6072',1,'vw']]],
   ['event',['event',['../structCB__EVAL_1_1label.html#af295a09fa564952d45e7b016fc60e1ff',1,'CB_EVAL::label']]],

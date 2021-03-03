@@ -17,7 +17,7 @@ var searchData=
   ['pdf_5fsegment',['pdf_segment',['../structVW_1_1continuous__actions_1_1pdf__segment.html#a3497e9c8d94c09b27bf551249e0530e0',1,'VW::continuous_actions::pdf_segment::pdf_segment()=default'],['../structVW_1_1continuous__actions_1_1pdf__segment.html#af9d5c86abdb42cbd4f0edee93097439a',1,'VW::continuous_actions::pdf_segment::pdf_segment(float left, float right, float pdf_value)']]],
   ['plt_5fsetup',['plt_setup',['../plt_8h.html#a06d22b9fa9288a3b1b5d3e2453c7ffca',1,'plt.h']]],
   ['polyprediction',['polyprediction',['../structpolyprediction.html#ac2df54be5ce26dd2f273ddf41c2cb76c',1,'polyprediction::polyprediction()=default'],['../structpolyprediction.html#a2cff267744d89029e4ba7f1d70c25a79',1,'polyprediction::polyprediction(polyprediction &amp;&amp;)=default'],['../structpolyprediction.html#a4651d3dd111d351e2c48e2cd6e7aedee',1,'polyprediction::polyprediction(const polyprediction &amp;)=delete']]],
-  ['pop',['pop',['../classVW_1_1ptr__queue.html#a6e41c051fc5776a1e8d51b232e65e71d',1,'VW::ptr_queue::pop()'],['../v__array_8h.html#af9b7eb63e8239c9e866ebd3fc8ef7570',1,'pop():&#160;v_array.h']]],
+  ['pop',['pop',['../classVW_1_1ptr__queue.html#a6e41c051fc5776a1e8d51b232e65e71d',1,'VW::ptr_queue::pop()'],['../v__array_8h.html#a5428d524ce60e37fbd99122bf274e345',1,'pop():&#160;v_array.h']]],
   ['pop_5fback',['pop_back',['../structv__array.html#aeeac5274cea74fd95924f03aa0115dbc',1,'v_array']]],
   ['pop_5fbest_5fitem',['pop_best_item',['../classBeam_1_1beam.html#ad20a36b0ceb323194a91caa252087026',1,'Beam::beam']]],
   ['pop_5fns',['pop_ns',['../json__utils_8h.html#a9a24a29fa01e35d8625b1a76802585d4',1,'json_utils.h']]],

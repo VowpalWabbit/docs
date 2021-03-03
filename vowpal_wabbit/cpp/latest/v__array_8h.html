@@ -90,18 +90,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">v_array.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;algorithm&gt;</code><br />
+<div class="textblock"><code>#include &lt;ostream&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
 <code>#include &lt;cstdlib&gt;</code><br />
-<code>#include &lt;cstring&gt;</code><br />
 <code>#include &lt;cassert&gt;</code><br />
-<code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
 <code>#include &quot;<a class="el" href="future__compat_8h.html">future_compat.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="vw__exception_8h.html">vw_exception.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="memory_8h.html">memory.h</a>&quot;</code><br />
@@ -115,8 +113,6 @@ Classes</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a9f918755b601cf4bffca775992e6fb90"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__array_8h.html#a9f918755b601cf4bffca775992e6fb90">NOMINMAX</a></td></tr>
 <tr class="separator:a9f918755b601cf4bffca775992e6fb90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade2d8d7118f8ff49547f60aa0c3382bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__array_8h.html#ade2d8d7118f8ff49547f60aa0c3382bb">__INLINE</a>&#160;&#160;&#160;inline</td></tr>
-<tr class="separator:ade2d8d7118f8ff49547f60aa0c3382bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -143,9 +139,6 @@ Functions</h2></td></tr>
 <tr class="memitem:acf7f543a2adbe053d8129eebb9223694"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:acf7f543a2adbe053d8129eebb9223694"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="v__array_8h.html#acf7f543a2adbe053d8129eebb9223694">calloc_reserve</a> (<a class="el" href="structv__array.html">v_array</a>&lt; T &gt; &amp;v, size_t length)</td></tr>
 <tr class="separator:acf7f543a2adbe053d8129eebb9223694"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9b7eb63e8239c9e866ebd3fc8ef7570"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:af9b7eb63e8239c9e866ebd3fc8ef7570"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structv__array.html">v_array</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="v__array_8h.html#af9b7eb63e8239c9e866ebd3fc8ef7570">pop</a> (<a class="el" href="structv__array.html">v_array</a>&lt; <a class="el" href="structv__array.html">v_array</a>&lt; T &gt; &gt; &amp;stack)</td></tr>
-<tr class="separator:af9b7eb63e8239c9e866ebd3fc8ef7570"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37ba1a7ee0f3f63f82e152532b9d3353"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a37ba1a7ee0f3f63f82e152532b9d3353"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="v__array_8h.html#a37ba1a7ee0f3f63f82e152532b9d3353">v_array_contains</a> (<a class="el" href="structv__array.html">v_array</a>&lt; T &gt; &amp;A, T x)</td></tr>
 <tr class="separator:a37ba1a7ee0f3f63f82e152532b9d3353"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,35 +148,15 @@ Functions</h2></td></tr>
 <tr class="memitem:aa4d3ee613559a9d428375996578e1b5c"><td class="memTemplParams" colspan="2">template&lt;class T , class U &gt; </td></tr>
 <tr class="memitem:aa4d3ee613559a9d428375996578e1b5c"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="v__array_8h.html#aa4d3ee613559a9d428375996578e1b5c">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="structv__array.html">v_array</a>&lt; std::pair&lt; T, U &gt; &gt; &amp;v)</td></tr>
 <tr class="separator:aa4d3ee613559a9d428375996578e1b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5428d524ce60e37fbd99122bf274e345"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a5428d524ce60e37fbd99122bf274e345"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="future__compat_8h.html#a8b8610e8e86287f2b68275bf31acefb8">VW_WARNING_STATE_PUSH</a> <a class="el" href="future__compat_8h.html#af0fa7adfe5074b8ce24ef0b649612436">VW_WARNING_DISABLE_DEPRECATED_USAGE</a> <a class="el" href="structv__array.html">v_array</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="v__array_8h.html#a5428d524ce60e37fbd99122bf274e345">pop</a> (<a class="el" href="structv__array.html">v_array</a>&lt; <a class="el" href="structv__array.html">v_array</a>&lt; T &gt; &gt; &amp;stack)</td></tr>
+<tr class="separator:a5428d524ce60e37fbd99122bf274e345"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8622515ea1d2bd7096f9f18c12e2dae7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="v__array_8h.html#a6627a9b25f24f16a19e613ff7f0d8fa3">v_string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__array_8h.html#a8622515ea1d2bd7096f9f18c12e2dae7">string2v_string</a> (const std::string &amp;s)</td></tr>
 <tr class="separator:a8622515ea1d2bd7096f9f18c12e2dae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0960f27e6b60bfea57f2db93b36f29d5"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__array_8h.html#a0960f27e6b60bfea57f2db93b36f29d5">v_string2string</a> (const <a class="el" href="v__array_8h.html#a6627a9b25f24f16a19e613ff7f0d8fa3">v_string</a> &amp;v_s)</td></tr>
 <tr class="separator:a0960f27e6b60bfea57f2db93b36f29d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf731b10e21962dbdb2365ea8ae100f7"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:aaf731b10e21962dbdb2365ea8ae100f7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structv__array.html">v_array</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="v__array_8h.html#aaf731b10e21962dbdb2365ea8ae100f7">v_extract</a> (<a class="el" href="structv__array.html">v_array</a>&lt; T &gt; &amp;v)</td></tr>
-<tr class="separator:aaf731b10e21962dbdb2365ea8ae100f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd62f9eafc9b4ad56c834cdbd55d0a20"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:afd62f9eafc9b4ad56c834cdbd55d0a20"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="v__array_8h.html#afd62f9eafc9b4ad56c834cdbd55d0a20">v_move</a> (<a class="el" href="structv__array.html">v_array</a>&lt; T &gt; &amp;dst, <a class="el" href="structv__array.html">v_array</a>&lt; T &gt; &amp;from)</td></tr>
-<tr class="separator:afd62f9eafc9b4ad56c834cdbd55d0a20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a618281f14bf61d453a7e5b57559890a1"><td class="memItemLeft" align="right" valign="top">const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__array_8h.html#a618281f14bf61d453a7e5b57559890a1">erase_point</a> = ~((1u &lt;&lt; 10u) - 1u)</td></tr>
-<tr class="separator:a618281f14bf61d453a7e5b57559890a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="ade2d8d7118f8ff49547f60aa0c3382bb"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define __INLINE&#160;&#160;&#160;inline</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a9f918755b601cf4bffca775992e6fb90"></a>
 <div class="memitem">
 <div class="memproto">
@@ -384,14 +357,14 @@ template&lt;class T , class U &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="af9b7eb63e8239c9e866ebd3fc8ef7570"></a>
+<a class="anchor" id="a5428d524ce60e37fbd99122bf274e345"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structv__array.html">v_array</a>&lt;T&gt; pop </td>
+          <td class="memname"><a class="el" href="future__compat_8h.html#a8b8610e8e86287f2b68275bf31acefb8">VW_WARNING_STATE_PUSH</a> <a class="el" href="future__compat_8h.html#af0fa7adfe5074b8ce24ef0b649612436">VW_WARNING_DISABLE_DEPRECATED_USAGE</a> <a class="el" href="structv__array.html">v_array</a>&lt;T&gt; pop </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structv__array.html">v_array</a>&lt; <a class="el" href="structv__array.html">v_array</a>&lt; T &gt; &gt; &amp;&#160;</td>
           <td class="paramname"><em>stack</em></td><td>)</td>
@@ -488,24 +461,6 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aaf731b10e21962dbdb2365ea8ae100f7"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structv__array.html">v_array</a>&lt;T&gt; v_extract </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structv__array.html">v_array</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>v</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a294f16ab1916885e6f8210baa8f0c180"></a>
 <div class="memitem">
 <div class="memproto">
@@ -527,34 +482,6 @@ template&lt;class T &gt; </div>
 <span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="afd62f9eafc9b4ad56c834cdbd55d0a20"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void v_move </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structv__array.html">v_array</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>dst</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structv__array.html">v_array</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>from</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
 </div><div class="memdoc">
 
 </div>
@@ -583,23 +510,10 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="a618281f14bf61d453a7e5b57559890a1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const size_t erase_point = ~((1u &lt;&lt; 10u) - 1u)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 3 2021 15:12:54 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 3 2021 15:58:27 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
