@@ -163,6 +163,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa8fc30b8c63e7db2602072216c7b8019"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a32b45f55342a03095d74e7d4131ca3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structv__array.html#a4a32b45f55342a03095d74e7d4131ca3">resize</a> (size_t length)</td></tr>
 <tr class="separator:a4a32b45f55342a03095d74e7d4131ca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98438455a85a79912541a6ce2fca4c86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structv__array.html#a98438455a85a79912541a6ce2fca4c86">actual_resize</a> (size_t length)</td></tr>
+<tr class="separator:a98438455a85a79912541a6ce2fca4c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf7cb77bda8bba31471a5b28c06d168a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structv__array.html#adf7cb77bda8bba31471a5b28c06d168a">shrink_to_fit</a> ()</td></tr>
+<tr class="separator:adf7cb77bda8bba31471a5b28c06d168a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c3f57e00557828fe822bd8d34e7d458"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structv__array.html#a0c3f57e00557828fe822bd8d34e7d458">reserve</a> (size_t length)</td></tr>
+<tr class="separator:a0c3f57e00557828fe822bd8d34e7d458"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f2d33de09975903139639d2d4be3236"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structv__array.html#a3f2d33de09975903139639d2d4be3236">clear_noshrink</a> ()</td></tr>
+<tr class="separator:a3f2d33de09975903139639d2d4be3236"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab10f7f1ac8ad24a8dc0b112fed415ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structv__array.html#aab10f7f1ac8ad24a8dc0b112fed415ef">clear</a> ()</td></tr>
 <tr class="separator:aab10f7f1ac8ad24a8dc0b112fed415ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81c7c9af1948bd97850eb06785f2254f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structv__array.html#a81c7c9af1948bd97850eb06785f2254f">delete_v</a> ()</td></tr>
@@ -189,8 +197,6 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a3ca26a5f90d07eee59651f6518f4fd5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae563c3b32418f28a3c424c2f88cdf721"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structv__array.html#ae563c3b32418f28a3c424c2f88cdf721">end_array</a></td></tr>
 <tr class="separator:ae563c3b32418f28a3c424c2f88cdf721"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9f2948389e591d0ac526f3c88081188"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structv__array.html#ad9f2948389e591d0ac526f3c88081188">erase_count</a></td></tr>
-<tr class="separator:ad9f2948389e591d0ac526f3c88081188"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a879bb64e00d76e5ff2ea9237583fe26b"></a>
@@ -395,6 +401,32 @@ template&lt;class T&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a98438455a85a79912541a6ce2fca4c86"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structv__array.html">v_array</a>&lt; T &gt;::actual_resize </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>length</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="aa8be05cf2d6653b29cece180ef4e07f9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -581,6 +613,31 @@ template&lt;class T&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="structv__array.html">v_array</a>&lt; T &gt;::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3f2d33de09975903139639d2d4be3236"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structv__array.html">v_array</a>&lt; T &gt;::clear_noshrink </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -990,6 +1047,32 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a0c3f57e00557828fe822bd8d34e7d458"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structv__array.html">v_array</a>&lt; T &gt;::reserve </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>length</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a4a32b45f55342a03095d74e7d4131ca3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1004,6 +1087,31 @@ template&lt;class T&gt; </div>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>length</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adf7cb77bda8bba31471a5b28c06d168a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structv__array.html">v_array</a>&lt; T &gt;::shrink_to_fit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1162,20 +1270,6 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ad9f2948389e591d0ac526f3c88081188"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t <a class="el" href="structv__array.html">v_array</a>&lt; T &gt;::erase_count</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li>/__w/vowpal_wabbit/vowpal_wabbit/vowpalwabbit/<a class="el" href="reductions__fwd_8h.html">reductions_fwd.h</a></li>
 <li>/__w/vowpal_wabbit/vowpal_wabbit/vowpalwabbit/<a class="el" href="v__array_8h.html">v_array.h</a></li>
@@ -1183,7 +1277,7 @@ template&lt;class T&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 3 2021 14:30:00 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Mar 3 2021 15:12:54 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -122,6 +122,7 @@ var searchData=
   ['shared_5ffeature_5fmerger_5fsetup',['shared_feature_merger_setup',['../namespaceVW_1_1shared__feature__merger.html#ae357168e58313a47a907b7881f36c9b1',1,'VW::shared_feature_merger']]],
   ['shared_5ftype',['SHARED_TYPE',['../constant_8h.html#a186c53aa4337a15980d33920c6f34e62',1,'constant.h']]],
   ['short_5fname',['short_name',['../structVW_1_1config_1_1option__builder.html#ab001a5b75b29db80869a1810f4d11f88',1,'VW::config::option_builder']]],
+  ['shrink_5fto_5ffit',['shrink_to_fit',['../structv__array.html#adf7cb77bda8bba31471a5b28c06d168a',1,'v_array']]],
   ['sign',['sign',['../namespaceGD.html#a7da689f7a00be5d138af3bb360f2154a',1,'GD']]],
   ['simple',['simple',['../structpolylabel.html#a80ff268cb4e29afddaac58174d316297',1,'polylabel::simple()'],['../label__parser_8h.html#ac55dd8dc7400242f299d4b6f245f8acda8dbdda48fb8748d6746f1965824e966a',1,'simple():&#160;label_parser.h']]],
   ['simple_5flabel_2eh',['simple_label.h',['../simple__label_8h.html',1,'']]],
@@ -149,8 +150,8 @@ var searchData=
   ['slotsstate',['SlotsState',['../structSlotsState.html',1,'SlotsState&lt; audit &gt;'],['../structSlotsState.html#ac94f1e29e5831b3f76b939cc5eff4c33',1,'SlotsState::SlotsState()']]],
   ['socket',['socket',['../structVW_1_1io_1_1socket.html#a4ffc583f44bb4f5492d0eba66191735b',1,'VW::io::socket::socket()'],['../global__data_8h.html#ac80f47c3b2731d9979f60e1b2f6af364ac39207bbda0d1b98dc89636a45d61221',1,'Socket():&#160;global_data.h']]],
   ['socket',['socket',['../structVW_1_1io_1_1socket.html',1,'VW::io']]],
-  ['socket_5fcloser',['socket_closer',['../structVW_1_1io_1_1details_1_1socket__closer.html',1,'VW::io::details']]],
   ['socket_5fcloser',['socket_closer',['../structVW_1_1io_1_1details_1_1socket__closer.html#a55e12531f67efb22b3eb72a5913bd1bb',1,'VW::io::details::socket_closer']]],
+  ['socket_5fcloser',['socket_closer',['../structVW_1_1io_1_1details_1_1socket__closer.html',1,'VW::io::details']]],
   ['socket_5ft',['socket_t',['../allreduce_8h.html#a30353f381f5fccbb956eea1f3a110b6c',1,'socket_t():&#160;allreduce.h'],['../spanning__tree_8h.html#a30353f381f5fccbb956eea1f3a110b6c',1,'socket_t():&#160;spanning_tree.h']]],
   ['softmax',['softmax',['../namespacevw__slim.html#a8b7398db5b92b2538fdd8e6593b746b3ae23764ee317b5ffcbe4abd5d778474d6',1,'vw_slim']]],
   ['sort',['sort',['../structfeatures.html#ac1d0ea5e77002bab482dc38d62e7acdb',1,'features']]],
@@ -221,8 +222,8 @@ var searchData=
   ['swap_5fguard',['swap_guard',['../namespaceVW.html#a6dc3954a86b00e3084579296a5cce290',1,'VW::swap_guard(T &amp;original_location, T &amp;value_to_swap) noexcept'],['../namespaceVW.html#aa82aa74f9a972a4d1d25ac908c16934e',1,'VW::swap_guard(T &amp;original_location, T &amp;&amp;value_to_swap) noexcept']]],
   ['swap_5fguard_5fimpl',['swap_guard_impl',['../classVW_1_1details_1_1swap__guard__impl.html#aeca0c39d0e9991b403ff47fc5ef0d38a',1,'VW::details::swap_guard_impl::swap_guard_impl(T *original_location, T *value_to_swap) noexcept'],['../classVW_1_1details_1_1swap__guard__impl.html#ae2d899731f24d66a2ec14bece264b3a1',1,'VW::details::swap_guard_impl::swap_guard_impl(const swap_guard_impl &amp;)=delete'],['../classVW_1_1details_1_1swap__guard__impl.html#ad63fd63f7b225db199cde1d686e762f8',1,'VW::details::swap_guard_impl::swap_guard_impl(swap_guard_impl &amp;&amp;other) noexcept']]],
   ['swap_5fguard_5fimpl',['swap_guard_impl',['../classVW_1_1details_1_1swap__guard__impl.html',1,'VW::details']]],
-  ['swap_5fguard_5fimpl_5frvalue',['swap_guard_impl_rvalue',['../classVW_1_1details_1_1swap__guard__impl__rvalue.html',1,'VW::details']]],
   ['swap_5fguard_5fimpl_5frvalue',['swap_guard_impl_rvalue',['../classVW_1_1details_1_1swap__guard__impl__rvalue.html#a6e5a1e52b5511db87882311ea257c479',1,'VW::details::swap_guard_impl_rvalue::swap_guard_impl_rvalue(T *original_location, T &amp;&amp;value_to_swap) noexcept'],['../classVW_1_1details_1_1swap__guard__impl__rvalue.html#a1f9bf30eb45c8859b5f9615dc1b49256',1,'VW::details::swap_guard_impl_rvalue::swap_guard_impl_rvalue(const swap_guard_impl_rvalue &amp;)=delete'],['../classVW_1_1details_1_1swap__guard__impl__rvalue.html#aa55999bf6ca5b828e2717c18840559a6',1,'VW::details::swap_guard_impl_rvalue::swap_guard_impl_rvalue(swap_guard_impl_rvalue &amp;&amp;other) noexcept']]],
+  ['swap_5fguard_5fimpl_5frvalue',['swap_guard_impl_rvalue',['../classVW_1_1details_1_1swap__guard__impl__rvalue.html',1,'VW::details']]],
   ['sync',['sync',['../classVW_1_1io_1_1writer__stream__buf.html#a121e72ca4a8acda19b53dd6b835a1c5f',1,'VW::io::writer_stream_buf']]],
   ['sync_5fstats',['sync_stats',['../namespaceVW.html#aef7830b96def28617fce6cf5a32c1ae6',1,'VW']]]
 ];

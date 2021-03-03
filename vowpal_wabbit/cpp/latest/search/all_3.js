@@ -125,6 +125,7 @@ var searchData=
   ['classweight_5fsetup',['classweight_setup',['../classweight_8h.html#a9be12c3b3e1a9e78fe2eff00ffeab76f',1,'classweight.h']]],
   ['clear',['clear',['../structCCB_1_1reduction__features.html#aed1951db6cc6f0b420e69f083283389d',1,'CCB::reduction_features::clear()'],['../structVW_1_1continuous__actions_1_1reduction__features.html#a35835ddcdb9e645e2e52b4ac56d37c7f',1,'VW::continuous_actions::reduction_features::clear()'],['../structnamespace__interactions.html#a1ec229e588020aba67995248c85d7018',1,'namespace_interactions::clear()'],['../structfeatures.html#a4bc967f302cfb466681a6b4c331bf33a',1,'features::clear()'],['../classreduction__features.html#acbf9c70f673ce939b487a4959b6d4e32',1,'reduction_features::clear()'],['../structv__array.html#aab10f7f1ac8ad24a8dc0b112fed415ef',1,'v_array::clear()']]],
   ['clear_5ffeatures',['clear_features',['../classezexample.html#a567d973b79acf2c04cbb19bd030d9b19',1,'ezexample']]],
+  ['clear_5fnoshrink',['clear_noshrink',['../structv__array.html#a3f2d33de09975903139639d2d4be3236',1,'v_array']]],
   ['close_5ffile',['close_file',['../classio__buf.html#a9bc9af0c82dce2e61945827f03c65a21',1,'io_buf']]],
   ['close_5ffiles',['close_files',['../classio__buf.html#a9bcb6229cda2b924aab63360e307658b',1,'io_buf']]],
   ['closesock',['CLOSESOCK',['../allreduce_8h.html#a35da5532d470440b1afd69338e9053a8',1,'CLOSESOCK():&#160;allreduce.h'],['../spanning__tree_8h.html#a35da5532d470440b1afd69338e9053a8',1,'CLOSESOCK():&#160;spanning_tree.h']]],
