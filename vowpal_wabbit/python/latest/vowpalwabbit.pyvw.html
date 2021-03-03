@@ -772,7 +772,7 @@ id) or a string, in which case it is hashed.</p>
 
 <dl class="method">
 <dt id="vowpalwabbit.pyvw.example.get_label">
-<code class="descname">get_label</code><span class="sig-paren">(</span><em>self</em>, <em>label_class=&lt;class vowpalwabbit.pyvw.simple_label at 0x7ff67d4b1590&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.example.get_label" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_label</code><span class="sig-paren">(</span><em>self</em>, <em>label_class=&lt;class vowpalwabbit.pyvw.simple_label at 0x7ff6cd082670&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.example.get_label" title="Permalink to this definition">¶</a></dt>
 <dd><p>Given a known label class (default is simple_label), get
 the corresponding label structure for this example.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -1429,6 +1429,20 @@ the first character as the namespace id).</p>
 <p>The pyvw.vw object is a (trivial) wrapper around the pylibvw.vw
 object; you’re probably best off using this directly and ignoring
 the pylibvw.vw structure entirely.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Attributes:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>log_fwd</strong></dt>
+<dd></dd>
+<dt><strong>log_wrapper</strong></dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
 <p class="rubric">Methods</p>
 <table border="1" class="longtable docutils">
 <colgroup>
@@ -1639,6 +1653,11 @@ above available options</p>
 </table>
 </dd></dl>
 
+<dl class="attribute">
+<dt id="vowpalwabbit.pyvw.vw.finished">
+<code class="descname">finished</code><em class="property"> = False</em><a class="headerlink" href="#vowpalwabbit.pyvw.vw.finished" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 <dl class="method">
 <dt id="vowpalwabbit.pyvw.vw.get_config">
 <code class="descname">get_config</code><span class="sig-paren">(</span><em>self</em>, <em>filtered_enabled_reductions_only=True</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.vw.get_config" title="Permalink to this definition">¶</a></dt>
@@ -1679,6 +1698,11 @@ vector.</p>
 </table>
 </dd></dl>
 
+<dl class="attribute">
+<dt id="vowpalwabbit.pyvw.vw.init">
+<code class="descname">init</code><em class="property"> = False</em><a class="headerlink" href="#vowpalwabbit.pyvw.vw.init" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 <dl class="method">
 <dt id="vowpalwabbit.pyvw.vw.init_search_task">
 <code class="descname">init_search_task</code><span class="sig-paren">(</span><em>self</em>, <em>search_task</em>, <em>task_data=None</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.vw.init_search_task" title="Permalink to this definition">¶</a></dt>
@@ -1702,6 +1726,16 @@ vector.</p>
 </tbody>
 </table>
 </dd></dl>
+
+<dl class="attribute">
+<dt id="vowpalwabbit.pyvw.vw.log_fwd">
+<code class="descname">log_fwd</code><em class="property"> = None</em><a class="headerlink" href="#vowpalwabbit.pyvw.vw.log_fwd" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="vowpalwabbit.pyvw.vw.log_wrapper">
+<code class="descname">log_wrapper</code><em class="property"> = None</em><a class="headerlink" href="#vowpalwabbit.pyvw.vw.log_wrapper" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 
 <dl class="method">
 <dt id="vowpalwabbit.pyvw.vw.num_weights">
@@ -1766,6 +1800,11 @@ above available options</p>
 </pre></div>
 </div>
 </dd></dl>
+
+<dl class="attribute">
+<dt id="vowpalwabbit.pyvw.vw.parser_ran">
+<code class="descname">parser_ran</code><em class="property"> = False</em><a class="headerlink" href="#vowpalwabbit.pyvw.vw.parser_ran" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 
 <dl class="method">
 <dt id="vowpalwabbit.pyvw.vw.predict">
