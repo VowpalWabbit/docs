@@ -37,7 +37,7 @@ var searchData=
   ['_7eswap_5fguard_5fimpl',['~swap_guard_impl',['../classVW_1_1details_1_1swap__guard__impl.html#a852f8fbb6f0a7a83e660e6218926c8e2',1,'VW::details::swap_guard_impl']]],
   ['_7eswap_5fguard_5fimpl_5frvalue',['~swap_guard_impl_rvalue',['../classVW_1_1details_1_1swap__guard__impl__rvalue.html#a0b49d31c92f6015e5296c94c3e1dbb40',1,'VW::details::swap_guard_impl_rvalue']]],
   ['_7etrace_5fmessage_5fwrapper',['~trace_message_wrapper',['../structtrace__message__wrapper.html#a67dba64b58b02aee80c8d68bd2897b67',1,'trace_message_wrapper']]],
-  ['_7ev_5farray',['~v_array',['../structv__array.html#a8eccb7147b0a1f9953a1dfd5337f4c25',1,'v_array']]],
+  ['_7ev_5farray',['~v_array',['../structv__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_3_01T_01_4_1_1value_01_4_1_1type_01_4.html#afa84fc89479f725c177895e97b0105eb',1,'v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;']]],
   ['_7eversion_5fstruct',['~version_struct',['../structVW_1_1version__struct.html#aa1217de574d459e67d340a2f63fd658b',1,'VW::version_struct']]],
   ['_7evw',['~vw',['../structvw.html#a8b205287bbc6f9773885db2d04b1cbc2',1,'vw']]],
   ['_7evw_5fargument_5fdisagreement_5fexception',['~vw_argument_disagreement_exception',['../classVW_1_1vw__argument__disagreement__exception.html#a573b93ada6d726ad1fd48b82b4095067',1,'VW::vw_argument_disagreement_exception']]],

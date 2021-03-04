@@ -1,11 +1,11 @@
 var searchData=
 [
   ['_5f_5ffilename_5f_5f',['__FILENAME__',['../vw__exception_8h.html#a5fccb4fc71e44089a1b1a77fc76c0b68',1,'vw_exception.h']]],
-  ['_5fbegin',['_begin',['../classfeatures__value__iterator.html#a7b36ec5a4cdb03c02b6bbc73ed26d652',1,'features_value_iterator::_begin()'],['../structv__array.html#aac78f5cdf2f7a68a3114bac90a3b34b1',1,'v_array::_begin()']]],
+  ['_5fbegin',['_begin',['../classfeatures__value__iterator.html#a7b36ec5a4cdb03c02b6bbc73ed26d652',1,'features_value_iterator::_begin()'],['../structv__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_3_01T_01_4_1_1value_01_4_1_1type_01_4.html#afba2aada56b83cec5f836939a90b9270',1,'v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;::_begin()']]],
   ['_5fbegin_5faudit',['_begin_audit',['../classfeatures__value__index__audit__iterator.html#aef54e5ce3ad57722833c684c4475cf9a',1,'features_value_index_audit_iterator']]],
   ['_5fbegin_5findex',['_begin_index',['../classfeatures__value__index__iterator.html#a563508df10450589fa90d2e547d25f23',1,'features_value_index_iterator']]],
   ['_5fdebug_5fcurrent_5freduction_5fdepth',['_debug_current_reduction_depth',['../structexample__predict.html#a517057277daf4f3fa6907161a59e1111',1,'example_predict']]],
-  ['_5fend',['_end',['../structv__array.html#a3ca26a5f90d07eee59651f6518f4fd5c',1,'v_array']]],
+  ['_5fend',['_end',['../structv__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_3_01T_01_4_1_1value_01_4_1_1type_01_4.html#a9a8dac9cb166e959249b5482055a9b2f',1,'v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;']]],
   ['_5ffinal_5frun',['_final_run',['../classSearch_1_1BaseTask.html#a1789338f2860d67101b8ecbb694b18b7',1,'Search::BaseTask']]],
   ['_5fforeach_5faction',['_foreach_action',['../classSearch_1_1BaseTask.html#acb3dc8905bed89cd9f7b62879aa13260',1,'Search::BaseTask']]],
   ['_5finner_5fcontext',['_inner_context',['../structtrace__message__wrapper.html#a77be7f3251c83f7279636db44bb39417',1,'trace_message_wrapper']]],

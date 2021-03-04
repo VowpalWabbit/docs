@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['const_5fiterator',['const_iterator',['../classsparse__parameters.html#a2f9cea8c995aa2bce6e984b1b0b934af',1,'sparse_parameters::const_iterator()'],['../classdense__parameters.html#a629ff7365e43b32aeaa92b0638bb60f5',1,'dense_parameters::const_iterator()'],['../structv__array.html#a879bb64e00d76e5ff2ea9237583fe26b',1,'v_array::const_iterator()']]],
-  ['const_5fpointer',['const_pointer',['../structv__array.html#a351549e8717bab5dafecee85ce9a623e',1,'v_array']]],
-  ['const_5freference',['const_reference',['../structv__array.html#a5e82658cd0cb0ed6c32fb51e96d76565',1,'v_array']]]
+  ['const_5fiterator',['const_iterator',['../classsparse__parameters.html#a2f9cea8c995aa2bce6e984b1b0b934af',1,'sparse_parameters::const_iterator()'],['../classdense__parameters.html#a629ff7365e43b32aeaa92b0638bb60f5',1,'dense_parameters::const_iterator()'],['../structv__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_3_01T_01_4_1_1value_01_4_1_1type_01_4.html#a3f922f26798e4080cf0bd26c0a15ccfa',1,'v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;::const_iterator()']]],
+  ['const_5fpointer',['const_pointer',['../structv__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_3_01T_01_4_1_1value_01_4_1_1type_01_4.html#adfdfaf3c0b46a55e8237b622031bd651',1,'v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;']]],
+  ['const_5freference',['const_reference',['../structv__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_3_01T_01_4_1_1value_01_4_1_1type_01_4.html#a4c3ed9cff8a9d9501043713dc02ffb40',1,'v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;']]]
 ];
