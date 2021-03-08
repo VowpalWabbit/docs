@@ -42,7 +42,7 @@ var searchData=
   ['ensure_5fns_5fexists',['ensure_ns_exists',['../classezexample.html#ae1d3689c8215ed76b628bd1216a61380',1,'ezexample']]],
   ['entityrelationtask',['EntityRelationTask',['../namespaceEntityRelationTask.html',1,'']]],
   ['epsilon_5fgreedy',['epsilon_greedy',['../namespacevw__slim.html#a8b7398db5b92b2538fdd8e6593b746b3acc5611b9c9816ebefcecba7d52a7671d',1,'vw_slim']]],
-  ['erase',['erase',['../classBeam_1_1beam.html#ad4a71d456e26a89a32e4d5869398e2be',1,'Beam::beam']]],
+  ['erase',['erase',['../classBeam_1_1beam.html#ad4a71d456e26a89a32e4d5869398e2be',1,'Beam::beam::erase()'],['../structv__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_3_01T_01_4_1_1value_01_4_1_1type_01_4.html#a539f2784485eaada5c210be8e4924ddf',1,'v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;::erase(iterator it)'],['../structv__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_3_01T_01_4_1_1value_01_4_1_1type_01_4.html#a5c3a92770280a76d50f6e91c7ecbebb4',1,'v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;::erase(iterator first, iterator last)']]],
   ['erase_5falloweds',['erase_alloweds',['../classSearch_1_1predictor.html#a37f20e137ca6bb4f4e26f3aca3e6cf89',1,'Search::predictor']]],
   ['erase_5foracles',['erase_oracles',['../classSearch_1_1predictor.html#a698e3f6835fa56ab5152519707d0790a',1,'Search::predictor']]],
   ['err_5fconstants_2eh',['err_constants.h',['../err__constants_8h.html',1,'']]],
