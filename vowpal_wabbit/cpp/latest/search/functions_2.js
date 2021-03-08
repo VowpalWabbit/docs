@@ -13,6 +13,7 @@ var searchData=
   ['capacity',['capacity',['../structv__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_3_01T_01_4_1_1value_01_4_1_1type_01_4.html#ab956133ed17e8d329f2b4828199ed4cf',1,'v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;']]],
   ['cast_5fsigned_5fto_5funsigned',['cast_signed_to_unsigned',['../namespaceVW.html#ab77eacf4a0ad7002efc6ffdaf20fad9f',1,'VW']]],
   ['cast_5fto_5fsmaller_5ftype',['cast_to_smaller_type',['../namespaceVW.html#a307838cf95f16718e3b1499033a79a81',1,'VW']]],
+  ['cats',['cats',['../structVW_1_1continuous__action_1_1cats_1_1cats.html#abafa900ad835d7154424afe799673a92',1,'VW::continuous_action::cats::cats']]],
   ['cb_5fadf_5fsetup',['cb_adf_setup',['../cb__adf_8h.html#a42611f9c232cc381b2e9a3e2ace650db',1,'cb_adf.h']]],
   ['cb_5falgs_5fsetup',['cb_algs_setup',['../cb__algs_8h.html#a6893c6fd5abb0a869ec2054c2bf018e4',1,'cb_algs.h']]],
   ['cb_5fclass',['cb_class',['../structCB_1_1cb__class.html#a279503f9bd38d5edca15a926ee48b9a0',1,'CB::cb_class::cb_class()=default'],['../structCB_1_1cb__class.html#ab369fc1c9fbdd40ae31f13439354dbfa',1,'CB::cb_class::cb_class(float cost, uint32_t action, float probability)']]],

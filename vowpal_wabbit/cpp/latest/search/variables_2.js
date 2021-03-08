@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['bandwidth',['bandwidth',['../structVW_1_1pmf__to__pdf_1_1reduction.html#a63039df7e2d53bd036a62112dcef5c25',1,'VW::pmf_to_pdf::reduction']]],
+  ['bandwidth',['bandwidth',['../structVW_1_1continuous__action_1_1cats_1_1cats.html#ae7e5d793735bf8e3b0a67b4587f95d48',1,'VW::continuous_action::cats::cats::bandwidth()'],['../structVW_1_1pmf__to__pdf_1_1reduction.html#a63039df7e2d53bd036a62112dcef5c25',1,'VW::pmf_to_pdf::reduction::bandwidth()']]],
   ['base',['base',['../structExpReplay_1_1expreplay.html#a832c99799c109e5042e4b3901d5f546d',1,'ExpReplay::expreplay::base()'],['../structVW_1_1LEARNER_1_1func__data.html#a3f26558c6ad681d2c0f50ddaa58cc2ef',1,'VW::LEARNER::func_data::base()'],['../structVW_1_1LEARNER_1_1learn__data.html#a37b76d25cbbc8b79029a94ab33844372',1,'VW::LEARNER::learn_data::base()'],['../structVW_1_1LEARNER_1_1save__load__data.html#ab6c03aa287b433156b29eb0720f7c50f',1,'VW::LEARNER::save_load_data::base()'],['../structVW_1_1LEARNER_1_1finish__example__data.html#aa10e1a4c6e872ec9faceb1060264be04',1,'VW::LEARNER::finish_example_data::base()']]],
   ['begin_5fparsed_5fexamples',['begin_parsed_examples',['../structparser.html#ae7c79dc035b14bfc367ee7434c593453',1,'parser']]],
   ['beta',['beta',['../structVW_1_1distributionally__robust_1_1ChiSquared_1_1Duals.html#abc85c1a1f4110f92c68bd188f0514f80',1,'VW::distributionally_robust::ChiSquared::Duals']]],

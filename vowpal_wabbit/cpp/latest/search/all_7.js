@@ -56,6 +56,7 @@ var searchData=
   ['get_5finitial_5fngram_5fdefinitions',['get_initial_ngram_definitions',['../structVW_1_1kskip__ngram__transformer.html#ae012f9730385154553b5db17f2a51779',1,'VW::kskip_ngram_transformer']]],
   ['get_5finitial_5fskip_5fdefinitions',['get_initial_skip_definitions',['../structVW_1_1kskip__ngram__transformer.html#ad3c029c8b0011276a9d8e1d661c657a7',1,'VW::kskip_ngram_transformer']]],
   ['get_5flabel',['get_label',['../namespaceVW.html#ac598ec704e49cc16593464708fd58fd3',1,'VW']]],
+  ['get_5floss',['get_loss',['../structVW_1_1continuous__action_1_1cats_1_1cats.html#ac3dc03639d40a0734fdc6d16b674b515',1,'VW::continuous_action::cats::cats']]],
   ['get_5fmacro',['GET_MACRO',['../vw__exception_8h.html#a84890a00d8c73dde4e766ef13c716e10',1,'vw_exception.h']]],
   ['get_5fmask',['get_mask',['../structSearch_1_1search.html#af19188755a72fe300ad7293ef155f512',1,'Search::search']]],
   ['get_5fmetatask_5fdata',['get_metatask_data',['../structSearch_1_1search.html#a2ae695e32965086c2dea60681bbc8f18',1,'Search::search']]],
