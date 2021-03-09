@@ -55,7 +55,7 @@ var searchData=
   ['v_5farray_3c_20t_2c_20typename_20std_3a_3aenable_5fif_3c_20std_3a_3ais_5ftrivially_5fcopyable_3c_20t_20_3e_3a_3avalue_20_3e_3a_3atype_20_3e',['v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;',['../structv__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_3_01T_01_4_1_1value_01_4_1_1type_01_4.html',1,'']]],
   ['v_5farray_3c_20uint32_5ft_20_3e',['v_array&lt; uint32_t &gt;',['../structv__array.html',1,'']]],
   ['v_5farray_3c_20vw_3a_3acb_5fcontinuous_3a_3acontinuous_5flabel_5felm_20_3e',['v_array&lt; VW::cb_continuous::continuous_label_elm &gt;',['../structv__array.html',1,'']]],
-  ['v_5farray_5fcontains',['v_array_contains',['../v__array_8h.html#a37ba1a7ee0f3f63f82e152532b9d3353',1,'v_array.h']]],
+  ['v_5farray_5fcontains',['v_array_contains',['../v__array_8h.html#a1a64f0cb41cdea8d080ff97529e13690',1,'v_array.h']]],
   ['v_5farray_5fpool',['v_array_pool',['../namespaceVW.html#a7b747bf61c1045c5ac479cda41d3bdb6',1,'VW']]],
   ['v_5farray_5fpool_2eh',['v_array_pool.h',['../v__array__pool_8h.html',1,'']]],
   ['v_5finit',['v_init',['../v__array_8h.html#a294f16ab1916885e6f8210baa8f0c180',1,'v_array.h']]],
