@@ -14,7 +14,6 @@ var searchData=
   ['_7eezexample',['~ezexample',['../classezexample.html#a6fea2541b6843d993b25dd5964946ab2',1,'ezexample']]],
   ['_7efeature_5foffset_5fguard',['~feature_offset_guard',['../classvw__slim_1_1feature__offset__guard.html#a620aa4dbf9125cd004d5412f32a8e6e1',1,'vw_slim::feature_offset_guard']]],
   ['_7efeatures',['~features',['../structfeatures.html#a4bfd1bfe3ef4d8055ebf6e279ca8f7f9',1,'features']]],
-  ['_7eio_5fbuf',['~io_buf',['../classio__buf.html#a5591623ebfeae85570407b07544f39ae',1,'io_buf']]],
   ['_7eloss_5ffunction',['~loss_function',['../classloss__function.html#aed5498d652bd5a2ec91b75163d5fc6a0',1,'loss_function']]],
   ['_7enamespace_5fcopy_5fguard',['~namespace_copy_guard',['../classvw__slim_1_1namespace__copy__guard.html#a22d01b974d0f3c559eb5086ca065eb39',1,'vw_slim::namespace_copy_guard']]],
   ['_7eno_5flock_5fobject_5fpool',['~no_lock_object_pool',['../structVW_1_1no__lock__object__pool.html#a8b44b0d2968ab930cb65ce416a254c81',1,'VW::no_lock_object_pool']]],
