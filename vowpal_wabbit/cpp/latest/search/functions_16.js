@@ -7,6 +7,7 @@ var searchData=
   ['_7ebase_5foption',['~base_option',['../structVW_1_1config_1_1base__option.html#a1ccaaadba500eee142ba5ce2665aba2b',1,'VW::config::base_option']]],
   ['_7ebeam',['~beam',['../classBeam_1_1beam.html#ad8860e13bb9bfce9474438d5183ec9fe',1,'Beam::beam']]],
   ['_7ecats_5ftree',['~cats_tree',['../structVW_1_1cats__tree_1_1cats__tree.html#a9099d531ea944dd448fdb4b1368d020e',1,'VW::cats_tree::cats_tree']]],
+  ['_7ecbify_5fadf_5fdata',['~cbify_adf_data',['../structcbify__adf__data.html#a6e70367cedf15db21f104e138ad99ed9',1,'cbify_adf_data']]],
   ['_7edense_5fparameters',['~dense_parameters',['../classdense__parameters.html#a7e3fb6dec30515c9aa55406547185d93',1,'dense_parameters']]],
   ['_7eexample',['~example',['../structexample.html#abc948b6a1adf6f9cc03b47573b466c7f',1,'example']]],
   ['_7eexample_5fpredict',['~example_predict',['../structexample__predict.html#ab24c4c1883aa904ff4b1c1a8612230c7',1,'example_predict']]],

@@ -63,6 +63,7 @@ var searchData=
   ['copy_5farray_5fno_5fmemcpy',['copy_array_no_memcpy',['../v__array_8h.html#ac9d699e6eb09925ce08e4a5f7cf841cf',1,'v_array.h']]],
   ['copy_5fexample_5fdata',['copy_example_data',['../namespaceVW.html#a0c73528d7d8180f20210a3ee4128bb25',1,'VW::copy_example_data(bool audit, example *, example *, size_t, void(*copy_label)(polylabel *, polylabel *))'],['../namespaceVW.html#a9b7cc8aaea60b1ba4e5721fbb2573e75',1,'VW::copy_example_data(bool audit, example *, example *, void(*copy_label)(polylabel *, polylabel *))'],['../namespaceVW.html#abaffe18149588bb2c8f42ef3da8aff59',1,'VW::copy_example_data(bool audit, example *, example *)']]],
   ['copy_5fexample_5fmetadata',['copy_example_metadata',['../namespaceVW.html#ac1e26643a8bdb85a4e27aeacde0f358c',1,'VW']]],
+  ['copy_5fexample_5fto_5fadf',['copy_example_to_adf',['../structcbify__adf__data.html#a692d9b442b99fec22801f75029baa4e9',1,'cbify_adf_data']]],
   ['copy_5flabel',['copy_label',['../namespaceCB.html#a2971ad762871c355b829058ca86e2606',1,'CB::copy_label()'],['../namespaceCCB.html#a9d923b33c5f907e92009c015a2074c2e',1,'CCB::copy_label()'],['../namespaceVW_1_1slates.html#a48ea7777dba1fd6d5003ff8fd62d0619',1,'VW::slates::copy_label()']]],
   ['copy_5flabel_5fadditional_5ffields',['copy_label_additional_fields',['../namespaceCB.html#adc6722b1af53b23e75b69bb03ba2e023',1,'CB']]],
   ['copy_5fto',['copy_to',['../classio__buf.html#a6fc5dfa66ea7487155fcafd57a45ec90',1,'io_buf']]],
