@@ -42,6 +42,7 @@ var searchData=
   ['apply_5fpdrop',['apply_pdrop',['../namespaceVW.html#aaa9feb4ea13990c5775fa3ef3f8a8ec8',1,'VW']]],
   ['are_5ffeatures_5fcompatible',['are_features_compatible',['../namespaceVW.html#a220e2434f6884967afd4ea2f8fc4e6d6',1,'VW']]],
   ['are_5fsame',['are_same',['../namespaceVW_1_1math.html#a5283b8fa4ef629eb885fce24d672cf07',1,'VW::math']]],
+  ['are_5fsame_5frel',['are_same_rel',['../namespaceVW_1_1math.html#abd18c415fd17e7a0f19d7941ef78726b',1,'VW::math']]],
   ['arraystate',['ArrayState',['../classArrayState.html#a883f6c30958ca0600d7419c4153d3278',1,'ArrayState']]],
   ['arraytopdfstate',['ArrayToPdfState',['../classArrayToPdfState.html#af82a6c58b00c7ef1d5a56bded8579d4d',1,'ArrayToPdfState']]],
   ['arraytovectorstate',['ArrayToVectorState',['../classArrayToVectorState.html#abbe48c47b0b25a2ecea3320eeb285632',1,'ArrayToVectorState']]],
