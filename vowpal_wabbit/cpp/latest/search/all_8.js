@@ -10,7 +10,7 @@ var searchData=
   ['hash_5ffeature',['hash_feature',['../namespaceVW.html#ae86b6bd5f4f2858597edad920195c5d4',1,'VW']]],
   ['hash_5ffeature_5fcstr',['hash_feature_cstr',['../namespaceVW.html#ac5b4b4e66968188dc1510e629a8325ee',1,'VW']]],
   ['hash_5ffeature_5fstatic',['hash_feature_static',['../namespaceVW.html#aab7632906c11b37a43ea520161149431',1,'VW']]],
-  ['hash_5ffunc_5ft',['hash_func_t',['../parse__primitives_8h.html#a7b4e2c3cb538825c678ce42856412c14',1,'parse_primitives.h']]],
+  ['hash_5ffunc_5ft',['hash_func_t',['../hashstring_8h.html#a7b4e2c3cb538825c678ce42856412c14',1,'hashstring.h']]],
   ['hash_5finv',['hash_inv',['../structvw.html#aba3e0772167ada6fdcf703d00e0c7ae6',1,'vw']]],
   ['hash_5fseed',['hash_seed',['../structvw.html#a96f11ba63ebbdb01c76b573bd6822cc5',1,'vw']]],
   ['hash_5fspace',['hash_space',['../namespaceVW.html#a1e20d4795da9f219c9f825a065f1c205',1,'VW']]],

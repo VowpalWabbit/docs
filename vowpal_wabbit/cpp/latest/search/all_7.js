@@ -94,7 +94,7 @@ var searchData=
   ['get_5fweight',['get_weight',['../structlabel__parser.html#a8b99a8431cee1d57ba963ea2b9ffdfc0',1,'label_parser::get_weight()'],['../namespaceVW.html#ad51621e341276ffe805acd4404dd8004',1,'VW::get_weight()']]],
   ['get_5fwriter',['get_writer',['../structVW_1_1io_1_1socket.html#a1800ca045993bf0c10aaa4fd8bd6f453',1,'VW::io::socket']]],
   ['getblock',['getblock',['../namespaceMURMUR__HASH__3.html#acab1181c3de4de92ec8c9a30059fc8c0',1,'MURMUR_HASH_3']]],
-  ['gethasher',['getHasher',['../parse__primitives_8h.html#ad2d39f84e4e19d8488c984287d0a497e',1,'parse_primitives.h']]],
+  ['gethasher',['getHasher',['../hashstring_8h.html#ad2d39f84e4e19d8488c984287d0a497e',1,'hashstring.h']]],
   ['getk',['getK',['../classVW_1_1named__labels.html#a1083406eed955d447f2d689f27de05ff',1,'VW::named_labels']]],
   ['getloss',['getLoss',['../classloss__function.html#a46f4d6f9bb6d90efdf4b0ffc5fcbba9e',1,'loss_function']]],
   ['getlossfunction',['getLossFunction',['../loss__functions_8h.html#a8b84e634bbce885699212a4104e2a720',1,'loss_functions.h']]],

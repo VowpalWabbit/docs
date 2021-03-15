@@ -199,6 +199,7 @@ var searchData=
   ['create_5fbuffer_5fview',['create_buffer_view',['../namespaceVW_1_1io.html#a64fffb68e0d290a508476f0c8b160694',1,'VW::io']]],
   ['create_5fcustom_5fwriter',['create_custom_writer',['../namespaceVW_1_1io.html#a834593986bcfde6d6d1194953200c3e9',1,'VW::io']]],
   ['create_5fvector_5fwriter',['create_vector_writer',['../namespaceVW_1_1io.html#ae757f4f258f87ef5b1ceb012d3e356d2',1,'VW::io']]],
+  ['critical',['critical',['../namespaceVW_1_1io_1_1logger.html#a727315522185c0fa2906718f6ac84928a7e85bcb66fb9a809d5ab4f62a8b8bea8',1,'VW::io::logger']]],
   ['crossplat_5fcompat_2eh',['crossplat_compat.h',['../crossplat__compat_8h.html',1,'']]],
   ['cs',['cs',['../structpolylabel.html#aad89c13bd745b60a93a2d3d85f0619ed',1,'polylabel::cs()'],['../label__parser_8h.html#ac55dd8dc7400242f299d4b6f245f8acda95cc64dd2825f9df13ec4ad683ecf339',1,'cs():&#160;label_parser.h']]],
   ['cs_5factive_2eh',['cs_active.h',['../cs__active_8h.html',1,'']]],

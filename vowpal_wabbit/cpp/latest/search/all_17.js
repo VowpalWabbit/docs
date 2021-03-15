@@ -5,6 +5,7 @@ var searchData=
   ['wap_5fvalue',['wap_value',['../structCOST__SENSITIVE_1_1wclass.html#ac6c25cd1d7f4be9de04cfd552dbff23e',1,'COST_SENSITIVE::wclass']]],
   ['warm_5fcb_2eh',['warm_cb.h',['../warm__cb_8h.html',1,'']]],
   ['warm_5fcb_5fsetup',['warm_cb_setup',['../warm__cb_8h.html#a750ea79c1df3429156af9be75b8122eb',1,'warm_cb.h']]],
+  ['warn',['warn',['../namespaceVW_1_1io_1_1logger.html#a727315522185c0fa2906718f6ac84928a1ea4c3ab05ee0c6d4de30740443769cb',1,'VW::io::logger']]],
   ['was_5fsupplied',['was_supplied',['../structVW_1_1config_1_1options__i.html#a673e4a143e22c4e2ff8c30dfaab9fd68',1,'VW::config::options_i::was_supplied()'],['../structVW_1_1config_1_1options__name__extractor.html#a605f830b9de887fcfbea4472da65ef13',1,'VW::config::options_name_extractor::was_supplied()'],['../structVW_1_1config_1_1options__boost__po.html#ac028005c916e67c230759de97c49cff8',1,'VW::config::options_boost_po::was_supplied()']]],
   ['wclass',['wclass',['../structCOST__SENSITIVE_1_1wclass.html',1,'COST_SENSITIVE']]],
   ['weight',['weight',['../structCB_1_1label.html#a4d7a571a1e69a80df094698c0020f2e8',1,'CB::label::weight()'],['../structCCB_1_1label.html#a7a2d2e498f0d0cea49c78627fd2033f8',1,'CCB::label::weight()'],['../structexample.html#a403be75fc4fdd058e4f7c1baf39be11a',1,'example::weight()'],['../structMULTICLASS_1_1label__t.html#a0055ecea2640500fb7c8e88f566142e5',1,'MULTICLASS::label_t::weight()'],['../structlabel__data.html#aeb41a738c69f653c95af2ecbe24e7ef4',1,'label_data::weight()'],['../structVW_1_1slates_1_1label.html#a12cf62b7cbdc7917627aba1fea975b54',1,'VW::slates::label::weight()'],['../array__parameters__dense_8h.html#a4d04a2043fa7480d905108e63adb0bab',1,'weight():&#160;array_parameters_dense.h'],['../constant_8h.html#a4d04a2043fa7480d905108e63adb0bab',1,'weight():&#160;constant.h'],['../global__data_8h.html#a4d04a2043fa7480d905108e63adb0bab',1,'weight():&#160;global_data.h']]],
@@ -31,6 +32,6 @@ var searchData=
   ['writeitvar',['writeitvar',['../io__buf_8h.html#aa441214d84044fca62cc7341883b7843',1,'io_buf.h']]],
   ['writer',['writer',['../structVW_1_1io_1_1writer.html#a450d433694ee55b73fdc052d40c4ba6d',1,'VW::io::writer::writer()=default'],['../structVW_1_1io_1_1writer.html#aa5be44de0372ff6b7002fe3b0f0657e9',1,'VW::io::writer::writer(writer &amp;other)=delete'],['../structVW_1_1io_1_1writer.html#a5e2aec8dea0fcf87204f91ac010b0f56',1,'VW::io::writer::writer(writer &amp;&amp;other)=delete']]],
   ['writer',['writer',['../structVW_1_1io_1_1writer.html',1,'VW::io']]],
-  ['writer_5fstream_5fbuf',['writer_stream_buf',['../classVW_1_1io_1_1writer__stream__buf.html',1,'VW::io']]],
-  ['writer_5fstream_5fbuf',['writer_stream_buf',['../classVW_1_1io_1_1writer__stream__buf.html#adbeb736dfb6013e5a0b0fecf6f6d9e13',1,'VW::io::writer_stream_buf']]]
+  ['writer_5fstream_5fbuf',['writer_stream_buf',['../classVW_1_1io_1_1writer__stream__buf.html#adbeb736dfb6013e5a0b0fecf6f6d9e13',1,'VW::io::writer_stream_buf']]],
+  ['writer_5fstream_5fbuf',['writer_stream_buf',['../classVW_1_1io_1_1writer__stream__buf.html',1,'VW::io']]]
 ];

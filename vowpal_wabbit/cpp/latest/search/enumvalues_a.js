@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['thread',['Thread',['../global__data_8h.html#ac80f47c3b2731d9979f60e1b2f6af364a69977c77ce078bea81ce7024513e42f7',1,'global_data.h']]]
+  ['pdf',['pdf',['../learner_8h.html#a5514b4a9448315c23ec344ca2d139e24a437175ba4191210ee004e1d937494d09',1,'learner.h']]],
+  ['prob',['prob',['../learner_8h.html#a5514b4a9448315c23ec344ca2d139e24a385e54735cbf7e164d5ca45c7419d3a9',1,'learner.h']]]
 ];

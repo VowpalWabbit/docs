@@ -21,6 +21,7 @@ var searchData=
   ['_7enode_5fsocks',['~node_socks',['../structnode__socks.html#ae8e6f67b527b7bf3182a322ca3e9330d',1,'node_socks']]],
   ['_7eoptions_5fi',['~options_i',['../structVW_1_1config_1_1options__i.html#a41af87ba504cb6a3f9e69d1b151cc711',1,'VW::config::options_i']]],
   ['_7eparser',['~parser',['../structparser.html#acdd4eb1b51b876954c2f7605f65388ce',1,'parser']]],
+  ['_7epattern_5fguard',['~pattern_guard',['../classVW_1_1io_1_1logger_1_1pattern__guard.html#a25c15cfb8781a11fc9f8364441100a6c',1,'VW::io::logger::pattern_guard']]],
   ['_7epolyprediction',['~polyprediction',['../structpolyprediction.html#ac5e2b0323b947d57bac304efe12fca6a',1,'polyprediction']]],
   ['_7epredictor',['~predictor',['../classSearch_1_1predictor.html#a0ab1f660993d55a28f1a324a819ca210',1,'Search::predictor']]],
   ['_7ereader',['~reader',['../structVW_1_1io_1_1reader.html#acb42a09f82bb5363bb7518d459288128',1,'VW::io::reader']]],
