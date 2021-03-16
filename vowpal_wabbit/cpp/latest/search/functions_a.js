@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['label',['label',['../structCCB_1_1label.html#af82817642ffcc66f02abbd1ce3300848',1,'CCB::label::label()=default'],['../structCCB_1_1label.html#a1171eea19ee21dd27928463cc18333a1',1,'CCB::label::label(label &amp;&amp;other) noexcept'],['../structCCB_1_1label.html#a44d33b7f03ac3e133b9503868ed42a2d',1,'CCB::label::label(const label &amp;other)']]],
   ['labelindexstate',['LabelIndexState',['../structLabelIndexState.html#a94f9b8264a3b0c2469d1c77b1dd5e6d8',1,'LabelIndexState']]],
   ['labelobjectstate',['LabelObjectState',['../classLabelObjectState.html#a7ae7603f3d305b4915dbc431acf58b15',1,'LabelObjectState']]],
   ['labelsinglepropertystate',['LabelSinglePropertyState',['../structLabelSinglePropertyState.html#afbe53d47d34646ef3502eea9cf8b15b6',1,'LabelSinglePropertyState']]],

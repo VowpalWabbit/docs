@@ -5,7 +5,7 @@ var searchData=
   ['l2_5flambda',['l2_lambda',['../structvw.html#a3710feef98613832b4c42744007b1093',1,'vw']]],
   ['label',['label',['../structVW_1_1slates_1_1label.html',1,'VW::slates']]],
   ['label',['label',['../structCB__EVAL_1_1label.html',1,'CB_EVAL']]],
-  ['label',['label',['../structMULTICLASS_1_1label__t.html#aa8b080653e3c08b5363152009728453d',1,'MULTICLASS::label_t::label()'],['../structlabel__data.html#a09103f622b965d8c14f0047b53ba7fe1',1,'label_data::label()']]],
+  ['label',['label',['../structMULTICLASS_1_1label__t.html#aa8b080653e3c08b5363152009728453d',1,'MULTICLASS::label_t::label()'],['../structlabel__data.html#a09103f622b965d8c14f0047b53ba7fe1',1,'label_data::label()'],['../structCCB_1_1label.html#af82817642ffcc66f02abbd1ce3300848',1,'CCB::label::label()=default'],['../structCCB_1_1label.html#a1171eea19ee21dd27928463cc18333a1',1,'CCB::label::label(label &amp;&amp;other) noexcept'],['../structCCB_1_1label.html#a44d33b7f03ac3e133b9503868ed42a2d',1,'CCB::label::label(const label &amp;other)']]],
   ['label',['label',['../structCCB_1_1label.html',1,'CCB']]],
   ['label',['label',['../structCOST__SENSITIVE_1_1label.html',1,'COST_SENSITIVE']]],
   ['label',['label',['../structCB_1_1label.html',1,'CB']]],
