@@ -229,9 +229,9 @@ Functions</h2></td></tr>
 <tr class="separator:ac82237706e8e65e96b131cc0284b671f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe7e57e1b0c2133c81df4ab180727cc5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#afe7e57e1b0c2133c81df4ab180727cc5">read_lines</a> (<a class="el" href="structvw.html">vw</a> *all, const char *line, size_t len, <a class="el" href="structv__array.html">v_array</a>&lt; <a class="el" href="structexample.html">example</a> * &gt; &amp;examples)</td></tr>
 <tr class="separator:afe7e57e1b0c2133c81df4ab180727cc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f0050082a2097b2437c2e9c4b267af8"><td class="memTemplParams" colspan="2">template&lt;bool audit&gt; </td></tr>
-<tr class="memitem:a8f0050082a2097b2437c2e9c4b267af8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a8f0050082a2097b2437c2e9c4b267af8">read_line_json</a> (<a class="el" href="structvw.html">vw</a> &amp;all, <a class="el" href="structv__array.html">v_array</a>&lt; <a class="el" href="structexample.html">example</a> * &gt; &amp;examples, char *line, <a class="el" href="namespaceVW.html#a1401360fc0e0bd71ecfc439f9d5283d9">example_factory_t</a> example_factory, void *ex_factory_context)</td></tr>
-<tr class="separator:a8f0050082a2097b2437c2e9c4b267af8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96b23e9c89a8dd878ef91da2c123143d"><td class="memTemplParams" colspan="2">template&lt;bool audit&gt; </td></tr>
+<tr class="memitem:a96b23e9c89a8dd878ef91da2c123143d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a96b23e9c89a8dd878ef91da2c123143d">read_line_json</a> (<a class="el" href="structvw.html">vw</a> &amp;all, <a class="el" href="structv__array.html">v_array</a>&lt; <a class="el" href="structexample.html">example</a> * &gt; &amp;examples, char *line, <a class="el" href="namespaceVW.html#a1401360fc0e0bd71ecfc439f9d5283d9">example_factory_t</a> example_factory, void *ex_factory_context, std::unordered_map&lt; uint64_t, <a class="el" href="structexample.html">example</a> * &gt; *dedup_examples=nullptr)</td></tr>
+<tr class="separator:a96b23e9c89a8dd878ef91da2c123143d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa9feb4ea13990c5775fa3ef3f8a8ec8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#aaa9feb4ea13990c5775fa3ef3f8a8ec8">apply_pdrop</a> (<a class="el" href="structvw.html">vw</a> &amp;all, float pdrop, <a class="el" href="structv__array.html">v_array</a>&lt; <a class="el" href="structexample.html">example</a> * &gt; &amp;examples)</td></tr>
 <tr class="separator:aaa9feb4ea13990c5775fa3ef3f8a8ec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c3af6c2409186effd371723bfb4e97b"><td class="memTemplParams" colspan="2">template&lt;bool audit&gt; </td></tr>
@@ -2510,7 +2510,7 @@ template&lt;bool audit&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a8f0050082a2097b2437c2e9c4b267af8"></a>
+<a class="anchor" id="a96b23e9c89a8dd878ef91da2c123143d"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -2544,7 +2544,13 @@ template&lt;bool audit&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>ex_factory_context</em>&#160;</td>
+          <td class="paramname"><em>ex_factory_context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::unordered_map&lt; uint64_t, <a class="el" href="structexample.html">example</a> * &gt; *&#160;</td>
+          <td class="paramname"><em>dedup_examples</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3340,7 +3346,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 16 2021 00:43:10 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 16 2021 13:27:27 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

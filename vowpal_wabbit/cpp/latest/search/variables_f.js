@@ -10,5 +10,5 @@ var searchData=
   ['output_5ffloat',['output_float',['../classFloatToFloatState.html#ae91d12e334d9112b7b02d4b03031db94',1,'FloatToFloatState']]],
   ['output_5flock',['output_lock',['../structparser.html#a62c95d8b49357d7a9251d07d8b6f383f',1,'parser']]],
   ['output_5fstring',['output_string',['../classStringToStringState.html#a4470ed511d1e65d1bf8bd54afacd9b65',1,'StringToStringState']]],
-  ['output_5fuint',['output_uint',['../classUIntToUIntState.html#a92433cf40bca8c074751b90cb29bb80f',1,'UIntToUIntState']]]
+  ['output_5fuint',['output_uint',['../classUIntDedupState.html#a36fef1467fd47fdc4e3158cdac241d3e',1,'UIntDedupState::output_uint()'],['../classUIntToUIntState.html#a92433cf40bca8c074751b90cb29bb80f',1,'UIntToUIntState::output_uint()']]]
 ];

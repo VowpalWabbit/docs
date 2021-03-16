@@ -1,7 +1,7 @@
 var searchData=
 [
   ['parse_5fargs',['parse_args',['../parse__args_8h.html#a9a9be95bc75954b9770fae87f7abc9b0',1,'parse_args.h']]],
-  ['parse_5fcontext',['parse_context',['../parse__slates__example__json_8h.html#afdcf28005f3d1d45a1d904007eb5c2ae',1,'parse_slates_example_json.h']]],
+  ['parse_5fcontext',['parse_context',['../parse__slates__example__json_8h.html#a4774299a9032e0cba47e886c72b427b2',1,'parse_slates_example_json.h']]],
   ['parse_5fdispatch',['parse_dispatch',['../parse__dispatch__loop_8h.html#a2bf2e3f0ec92b32d4d10a9451ab0903f',1,'parse_dispatch_loop.h']]],
   ['parse_5fexample_5flabel',['parse_example_label',['../namespaceVW.html#a928869354fe3e9e0cb98a08d5348e378',1,'VW']]],
   ['parse_5fexamples',['parse_examples',['../classVW_1_1parsers_1_1flatbuffer_1_1parser.html#ad34fe16f7b9e15768bff53d7ab2bfdf9',1,'VW::parsers::flatbuffer::parser']]],
@@ -9,8 +9,8 @@ var searchData=
   ['parse_5fline_5fjson',['parse_line_json',['../parse__example__json_8h.html#afe9609879dfa63273d15037068190a47',1,'parse_example_json.h']]],
   ['parse_5fmask_5fregressor_5fargs',['parse_mask_regressor_args',['../parse__regressor_8h.html#a38165185a46e204a3c321589da8acdf9',1,'parse_regressor.h']]],
   ['parse_5fmodules',['parse_modules',['../parse__args_8h.html#a7b1487bfae6e23251b34eb112255a5dc',1,'parse_args.h']]],
-  ['parse_5fslates_5fexample_5fdsjson',['parse_slates_example_dsjson',['../parse__slates__example__json_8h.html#aa9dd84a736c11fb9f0722f99df968334',1,'parse_slates_example_json.h']]],
-  ['parse_5fslates_5fexample_5fjson',['parse_slates_example_json',['../parse__slates__example__json_8h.html#a5eb1f0f5716c06b92e8c04a56b4e44d1',1,'parse_slates_example_json.h']]],
+  ['parse_5fslates_5fexample_5fdsjson',['parse_slates_example_dsjson',['../parse__slates__example__json_8h.html#ae97ce4197a1169c07d4cf447e25c4612',1,'parse_slates_example_json.h']]],
+  ['parse_5fslates_5fexample_5fjson',['parse_slates_example_json',['../parse__slates__example__json_8h.html#aee4414ee6465d717bcdb83320e2e8df9',1,'parse_slates_example_json.h']]],
   ['parse_5fsources',['parse_sources',['../parse__args_8h.html#a18d1a01f8740ee2f82de7eb68c31f5b9',1,'parse_args.h']]],
   ['parsefloat',['parseFloat',['../parse__primitives_8h.html#a3a87cae297b0d0e4d62cd1c7128ad460',1,'parse_primitives.h']]],
   ['parser',['parser',['../classVW_1_1parsers_1_1flatbuffer_1_1parser.html#ace709bde4aea9f56d3ab57d84e4cdaa1',1,'VW::parsers::flatbuffer::parser::parser()'],['../structparser.html#acc4d5681ab3211487e3caa8bea347128',1,'parser::parser(size_t ring_size, bool strict_parse_)'],['../structparser.html#a5264db72f6ed8ba82c078af43e3bfab2',1,'parser::parser(const parser &amp;)=delete']]],

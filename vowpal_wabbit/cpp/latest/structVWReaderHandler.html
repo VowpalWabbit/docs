@@ -105,8 +105,8 @@ Inheritance diagram for VWReaderHandler&lt; audit &gt;:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac69b6f99b68d67c02e0e0cc58aa0d2e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVWReaderHandler.html#ac69b6f99b68d67c02e0e0cc58aa0d2e9">init</a> (<a class="el" href="structvw.html">vw</a> *all, <a class="el" href="structv__array.html">v_array</a>&lt; <a class="el" href="structexample.html">example</a> * &gt; *examples, rapidjson::InsituStringStream *stream, const char *stream_end, <a class="el" href="namespaceVW.html#a1401360fc0e0bd71ecfc439f9d5283d9">VW::example_factory_t</a> example_factory, void *example_factory_context)</td></tr>
-<tr class="separator:ac69b6f99b68d67c02e0e0cc58aa0d2e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87dee0b4e4859607b1530628ce3b991b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVWReaderHandler.html#a87dee0b4e4859607b1530628ce3b991b">init</a> (<a class="el" href="structvw.html">vw</a> *all, <a class="el" href="structv__array.html">v_array</a>&lt; <a class="el" href="structexample.html">example</a> * &gt; *examples, rapidjson::InsituStringStream *stream, const char *stream_end, <a class="el" href="namespaceVW.html#a1401360fc0e0bd71ecfc439f9d5283d9">VW::example_factory_t</a> example_factory, void *example_factory_context, std::unordered_map&lt; uint64_t, <a class="el" href="structexample.html">example</a> * &gt; *dedup_examples=nullptr)</td></tr>
+<tr class="separator:a87dee0b4e4859607b1530628ce3b991b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affe64a99b2e524d4c97f9950c1dc0091"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVWReaderHandler.html#affe64a99b2e524d4c97f9950c1dc0091">Bool</a> (bool v)</td></tr>
 <tr class="separator:affe64a99b2e524d4c97f9950c1dc0091"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acff99671bc9ef886b71cc00a09741d45"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVWReaderHandler.html#acff99671bc9ef886b71cc00a09741d45">Int</a> (int v)</td></tr>
@@ -304,7 +304,7 @@ template&lt;bool audit&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ac69b6f99b68d67c02e0e0cc58aa0d2e9"></a>
+<a class="anchor" id="a87dee0b4e4859607b1530628ce3b991b"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -347,7 +347,13 @@ template&lt;bool audit&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>example_factory_context</em>&#160;</td>
+          <td class="paramname"><em>example_factory_context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::unordered_map&lt; uint64_t, <a class="el" href="structexample.html">example</a> * &gt; *&#160;</td>
+          <td class="paramname"><em>dedup_examples</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -740,7 +746,7 @@ template&lt;bool audit&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 16 2021 00:43:10 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 16 2021 13:27:27 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

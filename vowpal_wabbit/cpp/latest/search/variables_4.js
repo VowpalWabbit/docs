@@ -6,6 +6,7 @@ var searchData=
   ['decision_5fscores',['decision_scores',['../structpolyprediction.html#a572baf036403a33ca9e06198322a8802',1,'polyprediction']]],
   ['decision_5fservice_5fjson',['decision_service_json',['../structparser.html#a864a4006507e401f9794ef6ebaa7e24c',1,'parser']]],
   ['decision_5fservice_5fstate',['decision_service_state',['../structContext.html#a864f2926ef8ba88769fa0872f076af69',1,'Context']]],
+  ['dedup_5fexamples',['dedup_examples',['../structContext.html#af45375bccfe1e0725d50a5d2dc208833',1,'Context']]],
   ['default_5fbits',['default_bits',['../structvw.html#a3a30dd5b436a0073c85cc83fba6f519b',1,'vw']]],
   ['default_5ffloat_5ftolerance',['DEFAULT_FLOAT_TOLERANCE',['../namespaceVW_1_1math.html#ab96338c13291d2355a5bfa3264d06d7d',1,'VW::math']]],
   ['default_5flabel',['default_label',['../structlabel__parser.html#a9138ac15d32a511fa35591e6aa30946f',1,'label_parser']]],
