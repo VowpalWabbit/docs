@@ -7,7 +7,6 @@ var searchData=
   ['empty_5faudit_5fstrings',['EMPTY_AUDIT_STRINGS',['../interactions__predict_8h.html#a15fb23be401cf2a337ab90c20f3ec80c',1,'interactions_predict.h']]],
   ['emptylines_5fseparate_5fexamples',['emptylines_separate_examples',['../structparser.html#a751fa0c146800b9ab19e9db245d16994',1,'parser']]],
   ['enabled_5freductions',['enabled_reductions',['../structvw.html#aa87af4c0891b4123d72ec61e5f61b62d',1,'vw']]],
-  ['end_5farray',['end_array',['../structv__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_3_01T_01_4_1_1value_01_4_1_1type_01_4.html#a408f81396da94dcbdf4288abf14faf08',1,'v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;']]],
   ['end_5fparsed_5fexamples',['end_parsed_examples',['../structparser.html#a937aa6babf6854343eafa7566d34e031',1,'parser']]],
   ['end_5fpass',['end_pass',['../structexample.html#aed100c9f43cef70f89c20dc5fdd30a12',1,'example']]],
   ['eta',['eta',['../structvw.html#a939cbdaf20c78bfeabfddbf57c9d8250',1,'vw']]],
