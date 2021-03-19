@@ -65,7 +65,7 @@ var searchData=
   ['event_5fsum',['event_sum',['../structGEN__CS_1_1cb__to__cs__adf.html#a2aad7caed595926fb7fbbd43a653e384',1,'GEN_CS::cb_to_cs_adf']]],
   ['eventid',['eventId',['../structDecisionServiceInteraction.html#ad0a964d3f92f2a2883eb31ed4de022fc',1,'DecisionServiceInteraction']]],
   ['ex',['ex',['../structContext.html#adcc570bacca06ff96c5435b57110ff11',1,'Context']]],
-  ['example',['example',['../structexample.html',1,'example'],['../structexample.html#a0dd4a644507e758514515b19b54a63cf',1,'example::example()'],['../structexample.html#ae585e124bf2164583b422e091c864137',1,'example::example(const example &amp;)=delete'],['../structexample.html#a230df0c1c303980ccc6df302b1ecd19d',1,'example::example(example &amp;&amp;other)=default']]],
+  ['example',['example',['../structexample.html',1,'example'],['../structexample.html#a8fb0a83e00944a48859528c4af47b4e9',1,'example::example()=default'],['../structexample.html#ae585e124bf2164583b422e091c864137',1,'example::example(const example &amp;)=delete'],['../structexample.html#a230df0c1c303980ccc6df302b1ecd19d',1,'example::example(example &amp;&amp;other)=default']]],
   ['example_2eh',['example.h',['../example_8h.html',1,'']]],
   ['example_5fcounter',['example_counter',['../structexample.html#ad424234c2abebdd161ad8d7c5052d2b3',1,'example::example_counter()'],['../structflat__example.html#aa0704798df68226c8b5e7a5ae029a2a0',1,'flat_example::example_counter()']]],
   ['example_5ffactory',['example_factory',['../structContext.html#af1836e824a1b55fd9f094c1953e11c85',1,'Context']]],

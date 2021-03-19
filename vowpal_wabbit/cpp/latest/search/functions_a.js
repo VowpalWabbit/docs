@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['label',['label',['../structCCB_1_1label.html#af82817642ffcc66f02abbd1ce3300848',1,'CCB::label::label()=default'],['../structCCB_1_1label.html#a1171eea19ee21dd27928463cc18333a1',1,'CCB::label::label(label &amp;&amp;other) noexcept'],['../structCCB_1_1label.html#a44d33b7f03ac3e133b9503868ed42a2d',1,'CCB::label::label(const label &amp;other)']]],
+  ['label',['label',['../structCCB_1_1label.html#af82817642ffcc66f02abbd1ce3300848',1,'CCB::label::label()=default'],['../structCCB_1_1label.html#a1171eea19ee21dd27928463cc18333a1',1,'CCB::label::label(label &amp;&amp;other) noexcept'],['../structCCB_1_1label.html#a44d33b7f03ac3e133b9503868ed42a2d',1,'CCB::label::label(const label &amp;other)'],['../structVW_1_1slates_1_1label.html#af0eebbfb8ef1ccba8ade84bc364713f1',1,'VW::slates::label::label()']]],
+  ['label_5fdata',['label_data',['../structlabel__data.html#a800529bafb869d908c46cb8f889e38e9',1,'label_data::label_data()'],['../structlabel__data.html#ad678fc0cb6150535974c72b12f236e2b',1,'label_data::label_data(float label, float weight, float initial)']]],
+  ['label_5ft',['label_t',['../structMULTICLASS_1_1label__t.html#ae24e23fa59cb45930453c489775440e8',1,'MULTICLASS::label_t::label_t()'],['../structMULTICLASS_1_1label__t.html#a728eea156aa3040188f110903658dbf4',1,'MULTICLASS::label_t::label_t(uint32_t label, float weight)']]],
   ['labelindexstate',['LabelIndexState',['../structLabelIndexState.html#a94f9b8264a3b0c2469d1c77b1dd5e6d8',1,'LabelIndexState']]],
   ['labelobjectstate',['LabelObjectState',['../classLabelObjectState.html#a7ae7603f3d305b4915dbc431acf58b15',1,'LabelObjectState']]],
   ['labelsinglepropertystate',['LabelSinglePropertyState',['../structLabelSinglePropertyState.html#afbe53d47d34646ef3502eea9cf8b15b6',1,'LabelSinglePropertyState']]],
