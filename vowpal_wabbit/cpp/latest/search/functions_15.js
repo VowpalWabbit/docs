@@ -4,7 +4,7 @@ var searchData=
   ['warm_5fcb_5fsetup',['warm_cb_setup',['../warm__cb_8h.html#a750ea79c1df3429156af9be75b8122eb',1,'warm_cb.h']]],
   ['was_5fsupplied',['was_supplied',['../structVW_1_1config_1_1options__i.html#a673e4a143e22c4e2ff8c30dfaab9fd68',1,'VW::config::options_i::was_supplied()'],['../structVW_1_1config_1_1options__name__extractor.html#a605f830b9de887fcfbea4472da65ef13',1,'VW::config::options_name_extractor::was_supplied()'],['../structVW_1_1config_1_1options__boost__po.html#ac028005c916e67c230759de97c49cff8',1,'VW::config::options_boost_po::was_supplied()']]],
   ['weight_5fgen',['weight_gen',['../namespaceBS.html#a3f19f4a11eca7bcb633823c1ac1e057a',1,'BS']]],
-  ['weighted_5fexamples',['weighted_examples',['../structshared__data.html#a2997e24e8f7088cf4c1f782038238ae6',1,'shared_data']]],
+  ['weighted_5fexamples',['weighted_examples',['../structshared__data.html#a1ef27351e1fded2369d23afc080c0734',1,'shared_data']]],
   ['what',['what',['../classVW_1_1vw__exception.html#aadedb04021854db704254fb43b6e19e6',1,'VW::vw_exception']]],
   ['with_5foutput_5fstring',['with_output_string',['../classSearch_1_1BaseTask.html#a91cae7d703dc5c6213f36e23d696de93',1,'Search::BaseTask']]],
   ['wrap_5fsocket_5fdescriptor',['wrap_socket_descriptor',['../namespaceVW_1_1io.html#a9e41560d8a75f8e8da16232f5cb3c637',1,'VW::io']]],

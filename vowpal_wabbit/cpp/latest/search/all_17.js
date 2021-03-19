@@ -12,7 +12,7 @@ var searchData=
   ['weight_5fgen',['weight_gen',['../namespaceBS.html#a3f19f4a11eca7bcb633823c1ac1e057a',1,'BS']]],
   ['weight_5findex',['weight_index',['../structfeature.html#a0a02b4c4c785a3ee3f8f1503ef7e4616',1,'feature']]],
   ['weight_5fmap',['weight_map',['../array__parameters_8h.html#ac90c24ea91cb3bc92f76bcd7d8a1252e',1,'array_parameters.h']]],
-  ['weighted_5fexamples',['weighted_examples',['../structshared__data.html#a2997e24e8f7088cf4c1f782038238ae6',1,'shared_data']]],
+  ['weighted_5fexamples',['weighted_examples',['../structshared__data.html#a1ef27351e1fded2369d23afc080c0734',1,'shared_data']]],
   ['weighted_5fholdout_5fexamples',['weighted_holdout_examples',['../structshared__data.html#a5db3d097543ecb5f9fb6d9ffedc6527b',1,'shared_data']]],
   ['weighted_5fholdout_5fexamples_5fsince_5flast_5fdump',['weighted_holdout_examples_since_last_dump',['../structshared__data.html#a285ee180f9258046c930d0b1d19b6574',1,'shared_data']]],
   ['weighted_5fholdout_5fexamples_5fsince_5flast_5fpass',['weighted_holdout_examples_since_last_pass',['../structshared__data.html#ac3a515ecfd72b0888766489ccaff1334',1,'shared_data']]],
