@@ -21,7 +21,6 @@ var searchData=
   ['decisionserviceinteraction',['DecisionServiceInteraction',['../structDecisionServiceInteraction.html',1,'']]],
   ['decisionservicestate',['DecisionServiceState',['../classDecisionServiceState.html',1,'DecisionServiceState&lt; audit &gt;'],['../classDecisionServiceState.html#a46369311924aed5584e968d2ac6ef603',1,'DecisionServiceState::DecisionServiceState()']]],
   ['declare_5fmetatask',['DECLARE_METATASK',['../search__meta_8h.html#aa9b72618a93bed688124de4212d654bd',1,'search_meta.h']]],
-  ['decr',['decr',['../structv__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_3_01T_01_4_1_1value_01_4_1_1type_01_4.html#aa419ddf865064bc8e7c1cdb0ad9dd0ab',1,'v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;']]],
   ['decrement_5foffset',['decrement_offset',['../namespaceVW_1_1LEARNER.html#ae5f075f138c4ad98ddd3ef5bfce07091',1,'VW::LEARNER::decrement_offset(example &amp;ex, const size_t increment, const size_t i)'],['../namespaceVW_1_1LEARNER.html#a6516bc7edeaaa0843e216034562217f9',1,'VW::LEARNER::decrement_offset(multi_ex &amp;ec_seq, const size_t increment, const size_t i)']]],
   ['dedup_5fexamples',['dedup_examples',['../structContext.html#af45375bccfe1e0725d50a5d2dc208833',1,'Context']]],
   ['deep_5fcopy_5ffrom',['deep_copy_from',['../structfeatures.html#a06f20d9a83ccc61bdd694e623bf49734',1,'features']]],
