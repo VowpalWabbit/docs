@@ -38,6 +38,7 @@ var searchData=
   ['bin_5ftext_5fwrite_5ffixed',['bin_text_write_fixed',['../io__buf_8h.html#a1af842e7b179c4efe32cf25d495d3691',1,'io_buf.h']]],
   ['bin_5fwrite',['bin_write',['../io__buf_8h.html#a341dd49d200b1fe081c7ce03bacabeba',1,'io_buf.h']]],
   ['bin_5fwrite_5ffixed',['bin_write_fixed',['../classio__buf.html#a3c0311f639b9062998f798bd0ce5da5f',1,'io_buf']]],
+  ['binary',['binary',['../structvw__dbg.html#aa1ae629795328b25b09b243a8aca29ef',1,'vw_dbg']]],
   ['binary_2eh',['binary.h',['../binary_8h.html',1,'']]],
   ['binary_5fprint_5fresult',['binary_print_result',['../global__data_8h.html#a158dab5d2c8d07970b523bf2f910d2e2',1,'global_data.h']]],
   ['binary_5fprint_5fresult_5fby_5fref',['binary_print_result_by_ref',['../global__data_8h.html#a07600c7dfa8e52c7741daa1d80607abf',1,'global_data.h']]],

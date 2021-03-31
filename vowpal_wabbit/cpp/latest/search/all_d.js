@@ -76,7 +76,7 @@ var searchData=
   ['multilabel_5foaa_5fsetup',['multilabel_oaa_setup',['../multilabel__oaa_8h.html#a74dcd4a77c53998a3349e889b20e97a0',1,'multilabel_oaa.h']]],
   ['multilabels',['multilabels',['../structpolylabel.html#a999dc75a1e71967c36a817cead6bf3b2',1,'polylabel::multilabels()'],['../structpolyprediction.html#a9f6a01eabbe81af8ec89f7af7ff5de3c',1,'polyprediction::multilabels()'],['../learner_8h.html#a5514b4a9448315c23ec344ca2d139e24aaf52dc7962379f4397484a51c3a8c6a2',1,'multilabels():&#160;learner.h']]],
   ['multiline_5flearn_5for_5fpredict',['multiline_learn_or_predict',['../namespaceVW_1_1LEARNER.html#ae567a4278ece0021d1272d708e25b749',1,'VW::LEARNER']]],
-  ['multipredict',['multipredict',['../structVW_1_1LEARNER_1_1learner.html#a44d1395545c9fd963b1a9fcf7982f514',1,'VW::LEARNER::learner::multipredict()'],['../namespaceExpReplay.html#a8cdc7e9511e549f74b5a8baaa6a75146',1,'ExpReplay::multipredict()']]],
+  ['multipredict',['multipredict',['../structVW_1_1LEARNER_1_1learner.html#a44d1395545c9fd963b1a9fcf7982f514',1,'VW::LEARNER::learner::multipredict()'],['../namespaceExpReplay.html#a2cdfde4e8e996489c99036b4afa906e2',1,'ExpReplay::multipredict()']]],
   ['multipredict_5ff',['multipredict_f',['../structVW_1_1LEARNER_1_1learn__data.html#ac961a8f38a1a2672b64174931120dbfa',1,'VW::LEARNER::learn_data']]],
   ['multipredict_5finfo',['multipredict_info',['../structGD_1_1multipredict__info.html',1,'GD']]],
   ['multistate',['MultiState',['../structMultiState.html',1,'MultiState&lt; audit &gt;'],['../structMultiState.html#a18d362406bbf876095cd67a48487f840',1,'MultiState::MultiState()']]],

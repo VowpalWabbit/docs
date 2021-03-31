@@ -17,7 +17,7 @@ var searchData=
   ['indices',['indices',['../structexample__predict.html#ab098b66eb3c24b20ca349b7908ef54f3',1,'example_predict']]],
   ['indicies',['indicies',['../structfeatures.html#a2d75751cdcc865b5e62031d40a770a6a',1,'features']]],
   ['init_5ftime',['init_time',['../structvw.html#aa6ee6bca2d810405959aaeda87219140',1,'vw']]],
-  ['initial',['initial',['../structlabel__data.html#a38f61e1ace7d4bffc5c744523011f092',1,'label_data']]],
+  ['initial',['initial',['../structexample.html#a7ef6519ac32de7927ff9378760d30a53',1,'example']]],
   ['initial_5fconstant',['initial_constant',['../structvw.html#a9d28baf91144b0ae9addc60eb982690b',1,'vw']]],
   ['initial_5fregressors',['initial_regressors',['../structvw.html#a71b34a8b359cc36d74ef3b8e0af634c9',1,'vw']]],
   ['initial_5ft',['initial_t',['../structvw.html#a1bd6ce7ea965d9d809dd3cd99acb3a98',1,'vw']]],

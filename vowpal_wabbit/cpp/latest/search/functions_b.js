@@ -22,7 +22,7 @@ var searchData=
   ['multiclass_5fpred_5fto_5fstring',['multiclass_pred_to_string',['../example_8h.html#a3466093196eb34402b8d395a13615139',1,'example.h']]],
   ['multilabel_5foaa_5fsetup',['multilabel_oaa_setup',['../multilabel__oaa_8h.html#a74dcd4a77c53998a3349e889b20e97a0',1,'multilabel_oaa.h']]],
   ['multiline_5flearn_5for_5fpredict',['multiline_learn_or_predict',['../namespaceVW_1_1LEARNER.html#ae567a4278ece0021d1272d708e25b749',1,'VW::LEARNER']]],
-  ['multipredict',['multipredict',['../structVW_1_1LEARNER_1_1learner.html#a44d1395545c9fd963b1a9fcf7982f514',1,'VW::LEARNER::learner::multipredict()'],['../namespaceExpReplay.html#a8cdc7e9511e549f74b5a8baaa6a75146',1,'ExpReplay::multipredict()']]],
+  ['multipredict',['multipredict',['../structVW_1_1LEARNER_1_1learner.html#a44d1395545c9fd963b1a9fcf7982f514',1,'VW::LEARNER::learner::multipredict()'],['../namespaceExpReplay.html#a2cdfde4e8e996489c99036b4afa906e2',1,'ExpReplay::multipredict()']]],
   ['multistate',['MultiState',['../structMultiState.html#a18d362406bbf876095cd67a48487f840',1,'MultiState']]],
   ['mwt_5fsetup',['mwt_setup',['../mwt_8h.html#aa194c6e766432c01b0f948b70bda174e',1,'mwt.h']]]
 ];

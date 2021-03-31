@@ -15,7 +15,7 @@ var searchData=
   ['vw_5fcalling_5fconv',['VW_CALLING_CONV',['../vwdll_8h.html#a64a642f52fe781ce11742e6c4d35acbb',1,'vwdll.h']]],
   ['vw_5fdbg',['VW_DBG',['../debug__log_8h.html#afd46076ede455cb78b77e9d5e420f399',1,'debug_log.h']]],
   ['vw_5fdbg_5f0',['VW_DBG_0',['../debug__log_8h.html#ab8bd0c00f6b943deea18229433afd90e',1,'debug_log.h']]],
-  ['vw_5fdebug_5flog',['VW_DEBUG_LOG',['../debug__log_8h.html#ae7f81b1ffc5b9097daf7bfef6a624e6c',1,'VW_DEBUG_LOG():&#160;debug_log.h'],['../learner_8h.html#ae7f81b1ffc5b9097daf7bfef6a624e6c',1,'VW_DEBUG_LOG():&#160;learner.h']]],
+  ['vw_5fdebug_5flog',['VW_DEBUG_LOG',['../debug__log_8h.html#ae7f81b1ffc5b9097daf7bfef6a624e6c',1,'VW_DEBUG_LOG():&#160;debug_log.h'],['../gd__predict_8h.html#ae7f81b1ffc5b9097daf7bfef6a624e6c',1,'VW_DEBUG_LOG():&#160;gd_predict.h'],['../learner_8h.html#ae7f81b1ffc5b9097daf7bfef6a624e6c',1,'VW_DEBUG_LOG():&#160;learner.h']]],
   ['vw_5fdll_5flocal',['VW_DLL_LOCAL',['../vwvis_8h.html#abb8340b867c28be777e09f71e9125a7b',1,'vwvis.h']]],
   ['vw_5fdll_5fpublic',['VW_DLL_PUBLIC',['../vwvis_8h.html#aa47c18e82570992596ce6017e8491fce',1,'vwvis.h']]],
   ['vw_5flog_5fsink',['VW_LOG_SINK',['../debug__log_8h.html#af38b8deb09dc848104907552dd1355f0',1,'debug_log.h']]],

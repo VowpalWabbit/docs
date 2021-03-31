@@ -1,10 +1,11 @@
 var searchData=
 [
   ['gamma',['gamma',['../structVW_1_1distributionally__robust_1_1ChiSquared_1_1Duals.html#a76d1e94b6b4d7b62fb3ec11b3c63e1c5',1,'VW::distributionally_robust::ChiSquared::Duals']]],
-  ['gd',['GD',['../namespaceGD.html',1,'']]],
+  ['gd',['GD',['../namespaceGD.html',1,'GD'],['../structvw__dbg.html#a1508160a8e72cafef740e6e29bbd102f',1,'vw_dbg::gd()']]],
   ['gd_2eh',['gd.h',['../gd_8h.html',1,'']]],
   ['gd_5fmf_2eh',['gd_mf.h',['../gd__mf_8h.html',1,'']]],
   ['gd_5fmf_5fsetup',['gd_mf_setup',['../gd__mf_8h.html#a89b44d3c0f2a2c11be8a0f4c42ecd33a',1,'gd_mf.h']]],
+  ['gd_5fpredict',['gd_predict',['../structvw__dbg.html#a64f354dba8a38b940a791ffd217de833',1,'vw_dbg']]],
   ['gd_5fpredict_2eh',['gd_predict.h',['../gd__predict_8h.html',1,'']]],
   ['gen_5fcs',['GEN_CS',['../namespaceGEN__CS.html',1,'']]],
   ['gen_5fcs_5fexample',['gen_cs_example',['../namespaceGEN__CS.html#a89fb692d7772146057e8d0e73dc8e45c',1,'GEN_CS::gen_cs_example(cb_to_cs &amp;c, example &amp;ec, CB::label &amp;ld, COST_SENSITIVE::label &amp;cs_ld)'],['../namespaceGEN__CS.html#a90b06613edf3dcee78892a9ba5cad780',1,'GEN_CS::gen_cs_example(cb_to_cs_adf &amp;c, multi_ex &amp;ec_seq, COST_SENSITIVE::label &amp;cs_labels)']]],
@@ -70,6 +71,7 @@ var searchData=
   ['get_5fobserved_5fcost_5for_5fdefault_5fcb_5fadf',['get_observed_cost_or_default_cb_adf',['../namespaceCB__ADF.html#a5b3c018a85975c355c18fadd84a619c9',1,'CB_ADF']]],
   ['get_5foption',['get_option',['../structVW_1_1config_1_1options__i.html#aeb7bb7c02cf72631087338c6cc048ee9',1,'VW::config::options_i::get_option(const std::string &amp;key)=0'],['../structVW_1_1config_1_1options__i.html#af96bce6df71a4f888b8e5973661097a7',1,'VW::config::options_i::get_option(const std::string &amp;key) const =0'],['../structVW_1_1config_1_1options__name__extractor.html#a6bc2ac82a4d768b8afe99730883254a1',1,'VW::config::options_name_extractor::get_option(const std::string &amp;) override'],['../structVW_1_1config_1_1options__name__extractor.html#a35c51929fd02f9733fe3471d788bbc9c',1,'VW::config::options_name_extractor::get_option(const std::string &amp;) const override'],['../structVW_1_1config_1_1options__boost__po.html#af840715329ef1f5c0d7328476575ec76',1,'VW::config::options_boost_po::get_option(const std::string &amp;key) override'],['../structVW_1_1config_1_1options__boost__po.html#aa96bafef47c6536605a5ed90b9b9a4a8',1,'VW::config::options_boost_po::get_option(const std::string &amp;key) const override']]],
   ['get_5foutput_5ffiles',['get_output_files',['../classio__buf.html#a8afbb703483c9f22257b33eff04abd14',1,'io_buf']]],
+  ['get_5fpmf',['get_pmf',['../structvw__dbg.html#ad0e139fefdac9d085c5dd353d884f7c9',1,'vw_dbg']]],
   ['get_5fpmf_2eh',['get_pmf.h',['../get__pmf_8h.html',1,'']]],
   ['get_5fpmf_5fsetup',['get_pmf_setup',['../namespaceVW_1_1continuous__action.html#ad3e62d987653c9ca7e2f4f93f2bf2d97',1,'VW::continuous_action']]],
   ['get_5fpositional_5ftokens',['get_positional_tokens',['../structVW_1_1config_1_1options__i.html#a6ba224bed7796f71ae654b21427d24d3',1,'VW::config::options_i::get_positional_tokens()'],['../structVW_1_1config_1_1options__name__extractor.html#ad717cc3bc2eee77258f9e55354164765',1,'VW::config::options_name_extractor::get_positional_tokens()'],['../structVW_1_1config_1_1options__boost__po.html#a071435726de8354da3a360633d82f176',1,'VW::config::options_boost_po::get_positional_tokens()']]],
