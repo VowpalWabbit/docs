@@ -5,7 +5,7 @@ var searchData=
   ['cache_2eh',['cache.h',['../cache_8h.html',1,'']]],
   ['cache_5ffeatures',['cache_features',['../cache_8h.html#a442df23fec457c355f2c1d17b4960eed',1,'cache.h']]],
   ['cache_5ffiles',['cache_files',['../structinput__options.html#aaa5711bc58e24146cf3c1a2538aaa7ac',1,'input_options']]],
-  ['cache_5flabel',['cache_label',['../structlabel__parser.html#a3e961d44c74f3751192cccb07cdf4041',1,'label_parser::cache_label()'],['../namespaceCB.html#a68d67c7f5301de9f3ca35d3e58c3fa94',1,'CB::cache_label()'],['../namespaceCCB.html#a1eb4843badbf4cc3ebc62da94db58ea8',1,'CCB::cache_label()'],['../namespaceVW_1_1slates.html#a7122b0230db21b0dfdf8265fa71355b8',1,'VW::slates::cache_label()']]],
+  ['cache_5flabel',['cache_label',['../structlabel__parser.html#afa73ee8f3fa09361373277f57dd03d3a',1,'label_parser::cache_label()'],['../namespaceCB.html#a68d67c7f5301de9f3ca35d3e58c3fa94',1,'CB::cache_label()'],['../namespaceCCB.html#a1eb4843badbf4cc3ebc62da94db58ea8',1,'CCB::cache_label()'],['../namespaceVW_1_1slates.html#a7122b0230db21b0dfdf8265fa71355b8',1,'VW::slates::cache_label()']]],
   ['cache_5ftag',['cache_tag',['../cache_8h.html#a240768c48f05af593153264363e1019d',1,'cache.h']]],
   ['calculate_5fand_5finsert_5finteractions',['calculate_and_insert_interactions',['../namespaceCCB.html#a87ba23adc908b75abfde80ac48f7d498',1,'CCB']]],
   ['call',['call',['../classVW_1_1details_1_1scope__exit__caller.html#a7b6e9b9f80f4910d743bfcaf32b53307',1,'VW::details::scope_exit_caller']]],
