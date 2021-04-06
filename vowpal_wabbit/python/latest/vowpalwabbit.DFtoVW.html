@@ -47,18 +47,6 @@
 instance for future usage in the DFtoVW class. Indeed, the type and value checking
 can only be done once the dataframe is known (i.e in DFtoVW class). This descriptor
 class is used in the following managed class: SimpleLabel, MulticlassLabel, Feature, etc.</p>
-<p class="rubric">Methods</p>
-<table border="1" class="longtable docutils">
-<colgroup>
-<col width="10%" />
-<col width="90%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="#vowpalwabbit.DFtoVW.AttributeDescriptor.initialize_col_type" title="vowpalwabbit.DFtoVW.AttributeDescriptor.initialize_col_type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">initialize_col_type</span></code></a>(self,&nbsp;instance,&nbsp;colname)</td>
-<td>Initialize the attribute as a _Col type</td>
-</tr>
-</tbody>
-</table>
 <dl class="method">
 <dt id="vowpalwabbit.DFtoVW.AttributeDescriptor.__init__">
 <code class="descname">__init__</code><span class="sig-paren">(</span><em>self</em>, <em>attribute_name</em>, <em>expected_type</em>, <em>min_value=None</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.AttributeDescriptor.__init__" title="Permalink to this definition">¶</a></dt>
@@ -91,28 +79,6 @@ class is used in the following managed class: SimpleLabel, MulticlassLabel, Feat
 </table>
 </dd></dl>
 
-<dl class="method">
-<dt id="vowpalwabbit.DFtoVW.AttributeDescriptor.initialize_col_type">
-<code class="descname">initialize_col_type</code><span class="sig-paren">(</span><em>self</em>, <em>instance</em>, <em>colname</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.AttributeDescriptor.initialize_col_type" title="Permalink to this definition">¶</a></dt>
-<dd><p>Initialize the attribute as a _Col type</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
-<dt><strong>instance: object</strong></dt>
-<dd><p class="first last">The managed instance.</p>
-</dd>
-<dt><strong>colname: str/int/float</strong></dt>
-<dd><p class="first last">The colname used for the _Col instance.</p>
-</dd>
-</dl>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
 </dd></dl>
 
 <dl class="class">
@@ -130,20 +96,20 @@ based on the target/features column names only.</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="#vowpalwabbit.DFtoVW.DFtoVW.check_columns_existence_in_df" title="vowpalwabbit.DFtoVW.DFtoVW.check_columns_existence_in_df"><code class="xref py py-obj docutils literal notranslate"><span class="pre">check_columns_existence_in_df</span></code></a>(self)</td>
-<td>Check if the columns are in the dataframe.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#vowpalwabbit.DFtoVW.DFtoVW.check_columns_type_and_values" title="vowpalwabbit.DFtoVW.DFtoVW.check_columns_type_and_values"><code class="xref py py-obj docutils literal notranslate"><span class="pre">check_columns_type_and_values</span></code></a>(self)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#vowpalwabbit.DFtoVW.DFtoVW.check_columns_type_and_values" title="vowpalwabbit.DFtoVW.DFtoVW.check_columns_type_and_values"><code class="xref py py-obj docutils literal notranslate"><span class="pre">check_columns_type_and_values</span></code></a>(self)</td>
 <td>Check columns type and values range</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#vowpalwabbit.DFtoVW.DFtoVW.check_features_type" title="vowpalwabbit.DFtoVW.DFtoVW.check_features_type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">check_features_type</span></code></a>(self,&nbsp;features)</td>
+<tr class="row-even"><td><a class="reference internal" href="#vowpalwabbit.DFtoVW.DFtoVW.check_features_type" title="vowpalwabbit.DFtoVW.DFtoVW.check_features_type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">check_features_type</span></code></a>(self,&nbsp;features)</td>
 <td>Check if the features argument is of type Feature.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#vowpalwabbit.DFtoVW.DFtoVW.check_instance_columns" title="vowpalwabbit.DFtoVW.DFtoVW.check_instance_columns"><code class="xref py py-obj docutils literal notranslate"><span class="pre">check_instance_columns</span></code></a>(self,&nbsp;instance)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#vowpalwabbit.DFtoVW.DFtoVW.check_instance_columns" title="vowpalwabbit.DFtoVW.DFtoVW.check_instance_columns"><code class="xref py py-obj docutils literal notranslate"><span class="pre">check_instance_columns</span></code></a>(self,&nbsp;instance)</td>
 <td>Check the columns type and values of a given instance.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#vowpalwabbit.DFtoVW.DFtoVW.check_label_type" title="vowpalwabbit.DFtoVW.DFtoVW.check_label_type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">check_label_type</span></code></a>(self)</td>
+<tr class="row-even"><td><a class="reference internal" href="#vowpalwabbit.DFtoVW.DFtoVW.check_label_type" title="vowpalwabbit.DFtoVW.DFtoVW.check_label_type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">check_label_type</span></code></a>(self)</td>
 <td>Check label type.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#vowpalwabbit.DFtoVW.DFtoVW.check_missing_columns_df" title="vowpalwabbit.DFtoVW.DFtoVW.check_missing_columns_df"><code class="xref py py-obj docutils literal notranslate"><span class="pre">check_missing_columns_df</span></code></a>(self)</td>
+<td>Check if the columns are in the dataframe.</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#vowpalwabbit.DFtoVW.DFtoVW.check_namespaces_type" title="vowpalwabbit.DFtoVW.DFtoVW.check_namespaces_type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">check_namespaces_type</span></code></a>(self)</td>
 <td>Check if namespaces arguments are of type Namespace.</td>
@@ -247,12 +213,6 @@ more Feature object(s).</p>
 </dd></dl>
 
 <dl class="method">
-<dt id="vowpalwabbit.DFtoVW.DFtoVW.check_columns_existence_in_df">
-<code class="descname">check_columns_existence_in_df</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.DFtoVW.check_columns_existence_in_df" title="Permalink to this definition">¶</a></dt>
-<dd><p>Check if the columns are in the dataframe.</p>
-</dd></dl>
-
-<dl class="method">
 <dt id="vowpalwabbit.DFtoVW.DFtoVW.check_columns_type_and_values">
 <code class="descname">check_columns_type_and_values</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.DFtoVW.check_columns_type_and_values" title="Permalink to this definition">¶</a></dt>
 <dd><p>Check columns type and values range</p>
@@ -331,6 +291,12 @@ explicit about where the error occurs in the formula.</p>
 </dd></dl>
 
 <dl class="method">
+<dt id="vowpalwabbit.DFtoVW.DFtoVW.check_missing_columns_df">
+<code class="descname">check_missing_columns_df</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.DFtoVW.check_missing_columns_df" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if the columns are in the dataframe.</p>
+</dd></dl>
+
+<dl class="method">
 <dt id="vowpalwabbit.DFtoVW.DFtoVW.check_namespaces_type">
 <code class="descname">check_namespaces_type</code><span class="sig-paren">(</span><em>self</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.DFtoVW.check_namespaces_type" title="Permalink to this definition">¶</a></dt>
 <dd><p>Check if namespaces arguments are of type Namespace.</p>
@@ -396,17 +362,17 @@ explicit about where the error occurs in the formula.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
-<dt><strong>y</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str/list of str</span></dt>
+<dt><strong>y</strong> <span class="classifier-delimiter">:</span> <span class="classifier">(list of) any hashable type (str/int/float/tuple/etc.) representing a column name</span></dt>
 <dd><p class="first last">The column for the label.</p>
 </dd>
-<dt><strong>x</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str/list of str</span></dt>
+<dt><strong>x</strong> <span class="classifier-delimiter">:</span> <span class="classifier">(list of) any hashable type (str/int/float/tuple/etc.) representing a column name</span></dt>
 <dd><p class="first last">The column(s) for the feature(s).</p>
 </dd>
 <dt><strong>df</strong> <span class="classifier-delimiter">:</span> <span class="classifier">pandas.DataFrame</span></dt>
 <dd><p class="first last">The dataframe used.</p>
 </dd>
 <dt><strong>label_type: str (default: ‘simple_label’)</strong></dt>
-<dd><p class="first last">The type of the label. Available labels: ‘simple_label’, ‘multiclass’, ‘multilabel’.</p>
+<dd><p class="first last">The type of the label. Available labels: ‘simple_label’, ‘multiclass_label’, ‘multi_label’.</p>
 </dd>
 </dl>
 </td>
@@ -599,7 +565,7 @@ explicit about where the error occurs in the formula.</p>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
-<dt><strong>out</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str or pandas.Series</span></dt>
+<dt>pandas.Series</dt>
 <dd><p class="first last">The Feature string representation.</p>
 </dd>
 </dl>
@@ -687,7 +653,7 @@ class is used in the following managed class: SimpleLabel, MulticlassLabel, Feat
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
-<dt>str or pandas.Series</dt>
+<dt>pandas.Series</dt>
 <dd><p class="first last">The MultiLabel string representation.</p>
 </dd>
 </dl>
@@ -769,7 +735,7 @@ class is used in the following managed class: SimpleLabel, MulticlassLabel, Feat
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
-<dt>str or pandas.Series</dt>
+<dt>pandas.Series</dt>
 <dd><p class="first last">The MulticlassLabel string representation.</p>
 </dd>
 </dl>
@@ -951,7 +917,7 @@ class is used in the following managed class: SimpleLabel, MulticlassLabel, Feat
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
-<dt>str or pandas.Series</dt>
+<dt>pandas.Series</dt>
 <dd><p class="first last">The SimpleLabel string representation.</p>
 </dd>
 </dl>
