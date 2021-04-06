@@ -50,7 +50,7 @@ var searchData=
   ['finish_5fexample_5fdata',['finish_example_data',['../structVW_1_1LEARNER_1_1finish__example__data.html',1,'VW::LEARNER']]],
   ['finish_5fexample_5ff',['finish_example_f',['../structVW_1_1LEARNER_1_1finish__example__data.html#a137835aa833c6548f287fd102d7d639f',1,'VW::LEARNER::finish_example_data']]],
   ['finish_5fexample_5fwithout_5floss',['finish_example_without_loss',['../namespaceMULTICLASS.html#ad5c2dd5bb54df4b91f992fd8335cd4ac',1,'MULTICLASS']]],
-  ['finish_5ffptr_5ftype',['finish_fptr_type',['../structVW_1_1LEARNER_1_1learner.html#a03cfb61f3c905ae6be2a70a9e4be8b77',1,'VW::LEARNER::learner']]],
+  ['finish_5ffptr_5ftype',['finish_fptr_type',['../structVW_1_1LEARNER_1_1learner.html#a03cfb61f3c905ae6be2a70a9e4be8b77',1,'VW::LEARNER::learner::finish_fptr_type()'],['../structVW_1_1LEARNER_1_1common__learner__builder.html#a11fbd0c3dbe0286b323505d97c4ee0cb',1,'VW::LEARNER::common_learner_builder::finish_fptr_type()']]],
   ['finish_5fmultiline_5fexample',['finish_multiline_example',['../structVW_1_1cb__explore__adf_1_1cb__explore__adf__base.html#ae8c9f59b96f92f49adb7e08edfeab12d',1,'VW::cb_explore_adf::cb_explore_adf_base']]],
   ['finished_5fcount',['finished_count',['../structparser.html#ad53b04588524b349d94531588be79b1f',1,'parser']]],
   ['finished_5fexamples',['finished_examples',['../structparser.html#a57c9f679c9e61169c79427eebbcc1f5a',1,'parser']]],

@@ -1,6 +1,7 @@
 var searchData=
 [
   ['back',['back',['../structv__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_3_01T_01_4_1_1value_01_4_1_1type_01_4.html#acd0b579691de6d7a9551294260b9535a',1,'v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;::back()'],['../structv__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_3_01T_01_4_1_1value_01_4_1_1type_01_4.html#ae08f6eee4f4498ae79dd6bb9049ca605',1,'v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;::back() const ']]],
+  ['base_5flearner_5fbuilder',['base_learner_builder',['../structVW_1_1LEARNER_1_1base__learner__builder.html#a231aa6864866b89101f4978880b222f4',1,'VW::LEARNER::base_learner_builder']]],
   ['base_5foption',['base_option',['../structVW_1_1config_1_1base__option.html#abeb225ef8ce057e0a8ca53cf64d54e9f',1,'VW::config::base_option']]],
   ['base_5ftask',['base_task',['../structSearch_1_1search.html#ab3ef756d0531c055d67e23d807ca5ea5',1,'Search::search']]],
   ['baseline_5fenabled',['baseline_enabled',['../namespaceBASELINE.html#ad99952c661e0934c65824eb54ff668dd',1,'BASELINE']]],
@@ -35,7 +36,7 @@ var searchData=
   ['buffer_5fstart',['buffer_start',['../classio__buf.html#aa79ba9e0c96d4ebde9ef98493c629806',1,'io_buf']]],
   ['bufread_5flabel',['bufread_label',['../namespaceCB.html#aa73164f45f367d583a55aaa6675ed2fc',1,'CB']]],
   ['bufread_5flabel_5fadditional_5ffields',['bufread_label_additional_fields',['../namespaceCB.html#acb0ba7ade01167ed02776d3a761adccc',1,'CB']]],
-  ['build',['build',['../structVW_1_1kskip__ngram__transformer.html#a315701be95f5d52920f40c63580e26b9',1,'VW::kskip_ngram_transformer']]],
+  ['build',['build',['../structVW_1_1kskip__ngram__transformer.html#a315701be95f5d52920f40c63580e26b9',1,'VW::kskip_ngram_transformer::build()'],['../structVW_1_1LEARNER_1_1reduction__learner__builder.html#a47a5cce3902677e538b3dbc7a0586e80',1,'VW::LEARNER::reduction_learner_builder::build()'],['../structVW_1_1LEARNER_1_1base__learner__builder.html#a9c2fc579a8e26ece21cbaa565d24db05',1,'VW::LEARNER::base_learner_builder::build()']]],
   ['build_5fsetupfn_5fname_5fdict',['build_setupfn_name_dict',['../structvw.html#ad06db1054dc9d8ce3c0e55a19d4312cb',1,'vw']]],
   ['build_5ftree',['build_tree',['../structVW_1_1cats__tree_1_1min__depth__binary__tree.html#a7d456d7260cf698c54197a62cc4aa424',1,'VW::cats_tree::min_depth_binary_tree::build_tree()'],['../structVW_1_1offset__tree_1_1min__depth__binary__tree.html#ac3e22135a078c06dc7298bc0fe2ae1e9',1,'VW::offset_tree::min_depth_binary_tree::build_tree()']]]
 ];

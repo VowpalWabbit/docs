@@ -26,6 +26,7 @@ var searchData=
   ['recompute_5fduals',['recompute_duals',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#affa2684872b3d923e2e3563b4b03a3cb',1,'VW::distributionally_robust::ChiSquared']]],
   ['recur_5fsensitivity',['recur_sensitivity',['../namespaceVW_1_1LEARNER.html#ab6e5c6e7bedf2db4bf91c3bc2b3527c9',1,'VW::LEARNER']]],
   ['reduction_5ffeatures',['reduction_features',['../structVW_1_1continuous__actions_1_1reduction__features.html#a51ae15b2cb558b88f08438a48b0b7d12',1,'VW::continuous_actions::reduction_features']]],
+  ['reduction_5flearner_5fbuilder',['reduction_learner_builder',['../structVW_1_1LEARNER_1_1reduction__learner__builder.html#a548785a5199a7c17cd24146e21280a0b',1,'VW::LEARNER::reduction_learner_builder']]],
   ['releasefeaturespace',['releaseFeatureSpace',['../namespaceVW.html#ad1d82f751f07678f73bd421236477163',1,'VW']]],
   ['remns',['remns',['../classezexample.html#a1ced8ce215fef8f87d4ecf96e404da04',1,'ezexample']]],
   ['replace',['replace',['../structVW_1_1config_1_1options__i.html#ab0b20f09ba0a920bac5b8e9dde165f8a',1,'VW::config::options_i::replace()'],['../structVW_1_1config_1_1options__name__extractor.html#a3ac39f1134cc97f5e06f2e7ee942ebb9',1,'VW::config::options_name_extractor::replace()'],['../structVW_1_1config_1_1options__boost__po.html#a2ccc103ef8ea4dc07dbe74fab480653c',1,'VW::config::options_boost_po::replace()']]],

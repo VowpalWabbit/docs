@@ -40,6 +40,8 @@ var searchData=
   ['reduction_5ffeatures',['reduction_features',['../structVW_1_1continuous__actions_1_1reduction__features.html',1,'VW::continuous_actions']]],
   ['reduction_5ffeatures',['reduction_features',['../classreduction__features.html',1,'reduction_features'],['../structVW_1_1continuous__actions_1_1reduction__features.html#a51ae15b2cb558b88f08438a48b0b7d12',1,'VW::continuous_actions::reduction_features::reduction_features()']]],
   ['reduction_5ffeatures_2eh',['reduction_features.h',['../reduction__features_8h.html',1,'']]],
+  ['reduction_5flearner_5fbuilder',['reduction_learner_builder',['../structVW_1_1LEARNER_1_1reduction__learner__builder.html',1,'VW::LEARNER']]],
+  ['reduction_5flearner_5fbuilder',['reduction_learner_builder',['../structVW_1_1LEARNER_1_1learner.html#a4a48cc2c45f13f709ae7315af5726c26',1,'VW::LEARNER::learner::reduction_learner_builder()'],['../structVW_1_1LEARNER_1_1reduction__learner__builder.html#a548785a5199a7c17cd24146e21280a0b',1,'VW::LEARNER::reduction_learner_builder::reduction_learner_builder()']]],
   ['reduction_5fsetup_5ffn',['reduction_setup_fn',['../global__data_8h.html#a06dae3007c6369fdfcf6c5e14b2b34e1',1,'global_data.h']]],
   ['reduction_5fstack',['reduction_stack',['../structvw.html#ae19ec2a5ed59687038070447d00ade35',1,'vw']]],
   ['reductions_2eh',['reductions.h',['../reductions_8h.html',1,'']]],

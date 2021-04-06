@@ -8,6 +8,7 @@ var searchData=
   ['_5ffinal_5frun',['_final_run',['../classSearch_1_1BaseTask.html#a1789338f2860d67101b8ecbb694b18b7',1,'Search::BaseTask']]],
   ['_5fforeach_5faction',['_foreach_action',['../classSearch_1_1BaseTask.html#acb3dc8905bed89cd9f7b62879aa13260',1,'Search::BaseTask']]],
   ['_5finner_5fcontext',['_inner_context',['../structtrace__message__wrapper.html#a77be7f3251c83f7279636db44bb39417',1,'trace_message_wrapper']]],
+  ['_5flearner',['_learner',['../structVW_1_1LEARNER_1_1common__learner__builder.html#af2b6433be9bd2341b08e9d6b8c685bba',1,'VW::LEARNER::common_learner_builder']]],
   ['_5fmaybe_5foverride_5fprediction',['_maybe_override_prediction',['../classSearch_1_1BaseTask.html#a4d7e476f06a5d561b800cef4e5243727',1,'Search::BaseTask']]],
   ['_5fp_5fbase',['_p_base',['../structVW_1_1pmf__to__pdf_1_1reduction.html#a2785bdb0c894ac6c90a4e0433bae1ba8',1,'VW::pmf_to_pdf::reduction']]],
   ['_5fpost_5fprediction',['_post_prediction',['../classSearch_1_1BaseTask.html#a4e1d2ad328f2cc573f2c99dbafd0b9e2',1,'Search::BaseTask']]],

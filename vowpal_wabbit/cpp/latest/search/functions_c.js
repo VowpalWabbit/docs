@@ -11,6 +11,7 @@ var searchData=
   ['noop',['noop',['../namespaceVW_1_1LEARNER.html#abc1944c430e44d72bf88e16bebcb9d36',1,'VW::LEARNER']]],
   ['noop_5fmm',['noop_mm',['../global__data_8h.html#ab1679df7e12cefeb7ce4d0094b9d29b3',1,'global_data.h']]],
   ['noop_5fsensitivity',['noop_sensitivity',['../namespaceVW_1_1LEARNER.html#a23877fd9c9757641d788ae73cf210914',1,'VW::LEARNER']]],
+  ['noop_5fsensitivity_5fbase',['noop_sensitivity_base',['../namespaceVW_1_1LEARNER.html#a49d900481813f0f01e7f70e7803911b5',1,'VW::LEARNER']]],
   ['noop_5fsetup',['noop_setup',['../noop_8h.html#a1e78d21c1bcf2ffb79cb5d5832257834',1,'noop.h']]],
   ['noop_5fsl',['noop_sl',['../namespaceVW_1_1LEARNER.html#a6ec1f35572a34a1f76a16014d0ddc5fe',1,'VW::LEARNER']]],
   ['not_5fnull',['not_null',['../classsparse__parameters.html#a391c2da96ed2b88d053c14684458b963',1,'sparse_parameters::not_null()'],['../classparameters.html#a791d1245a747b229ff6a80a6f6783d5b',1,'parameters::not_null()'],['../classdense__parameters.html#ad19f1750ed9161abd89c1c071b2b709d',1,'dense_parameters::not_null()']]],
