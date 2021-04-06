@@ -73,6 +73,7 @@ var searchData=
   ['is_5fleaf',['is_leaf',['../structVW_1_1cats__tree_1_1tree__node.html#a31e3c49061ab5a2f7e421756d3519235',1,'VW::cats_tree::tree_node::is_leaf()'],['../structVW_1_1offset__tree_1_1tree__node.html#a8ce024e6040b5f3a8f3a28ac64f27b03',1,'VW::offset_tree::tree_node::is_leaf()']]],
   ['is_5fmore_5fthan_5ftwo_5flabels_5fobserved',['is_more_than_two_labels_observed',['../structshared__data.html#aace73283af2eb71308dd6eb0ee291fe1',1,'shared_data']]],
   ['is_5fmultiline',['is_multiline',['../structVW_1_1LEARNER_1_1learner.html#a6d534bda509f1a10b361a2d6d5136c97',1,'VW::LEARNER::learner']]],
+  ['is_5fnewline',['is_newline',['../structexample.html#a75d11aa16a7f43f453acd937343f8ec4',1,'example']]],
   ['is_5fpdf_5fset',['is_pdf_set',['../structVW_1_1continuous__actions_1_1reduction__features.html#a8bee9fe7cb026d6ac9f4357a4cf859a0',1,'VW::continuous_actions::reduction_features']]],
   ['is_5fprintable_5fnamespace',['is_printable_namespace',['../namespaceINTERACTIONS.html#ab689f2484c76a1ed43a9441fbb6e09a1',1,'INTERACTIONS']]],
   ['is_5fresettable',['is_resettable',['../structVW_1_1io_1_1reader.html#a77d54b993a8afba329b104d1fbbdf29f',1,'VW::io::reader']]],
