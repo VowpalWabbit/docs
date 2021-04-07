@@ -14,7 +14,6 @@ var searchData=
   ['default_5fnamespace',['default_namespace',['../constant_8h.html#ac5f7a89af82daae29351dde7bc52cce4',1,'constant.h']]],
   ['default_5fstate',['default_state',['../structContext.html#a0e0a976e8e6bf9b15f095758b5094521',1,'Context']]],
   ['delete_5fextra_5fdata',['delete_extra_data',['../structHookTask_1_1task__data.html#a61360c0115f8a58e64b432e90c48405a',1,'HookTask::task_data']]],
-  ['delete_5flabel',['delete_label',['../structlabel__parser.html#a783c2ba2a13524a84a3d5e5adb2a4d1e',1,'label_parser']]],
   ['delete_5fprediction',['delete_prediction',['../structvw.html#ac2b0c04220c30a62a64a1ef9e4b115b0',1,'vw::delete_prediction()'],['../namespaceVW.html#ac40013c94c682c8e00855b3b1f1859a7',1,'VW::delete_prediction()']]],
   ['delete_5frun_5fobject',['delete_run_object',['../structHookTask_1_1task__data.html#afc26800c1d71af93e60d6a2f6a311313',1,'HookTask::task_data']]],
   ['dense_5fweights',['dense_weights',['../classparameters.html#aaac8b2f50c6d9ee2946d09c9183b4029',1,'parameters']]],
