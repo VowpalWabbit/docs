@@ -9,7 +9,7 @@ var searchData=
   ['label',['label',['../structCCB_1_1label.html',1,'CCB']]],
   ['label',['label',['../structCOST__SENSITIVE_1_1label.html',1,'COST_SENSITIVE']]],
   ['label',['label',['../structCB_1_1label.html',1,'CB']]],
-  ['label_5fdata',['label_data',['../structlabel__data.html',1,'label_data'],['../structlabel__data.html#a800529bafb869d908c46cb8f889e38e9',1,'label_data::label_data()'],['../structlabel__data.html#ad678fc0cb6150535974c72b12f236e2b',1,'label_data::label_data(float label, float weight, float initial)']]],
+  ['label_5fdata',['label_data',['../structlabel__data.html',1,'label_data'],['../structlabel__data.html#a800529bafb869d908c46cb8f889e38e9',1,'label_data::label_data()'],['../structlabel__data.html#a84397d398f811484280a7f8a5c9390c3',1,'label_data::label_data(float label)']]],
   ['label_5fdictionary_2eh',['label_dictionary.h',['../label__dictionary_8h.html',1,'']]],
   ['label_5ffeature_5fmap',['label_feature_map',['../namespaceLabelDict.html#ab02875d5e0a699cc21641a98327d815a',1,'LabelDict']]],
   ['label_5findex_5fstate',['label_index_state',['../structContext.html#a679ab3d8b198ccddba2ecc998480ba7f',1,'Context']]],
