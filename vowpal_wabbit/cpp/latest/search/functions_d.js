@@ -38,7 +38,7 @@ var searchData=
   ['output_5fand_5faccount_5fexample',['output_and_account_example',['../simple__label_8h.html#ae0d39e24813391ed06b7ed517adedf9b',1,'simple_label.h']]],
   ['output_5fand_5faccount_5fno_5flabel_5fexample',['output_and_account_no_label_example',['../namespaceno__label.html#a06da32ed4ca86beddace6eb614d83248',1,'no_label']]],
   ['output_5fbyte',['output_byte',['../cache_8h.html#aceecd924458f9cec915af446664256ee',1,'cache.h']]],
-  ['output_5fexample',['output_example',['../namespaceCOST__SENSITIVE.html#a25e83fefdfb752b04ffcf849a3bfac1f',1,'COST_SENSITIVE::output_example()'],['../namespaceMULTILABEL.html#a50c2e8edc4a8c4f59372879683bc6df9',1,'MULTILABEL::output_example()']]],
+  ['output_5fexample',['output_example',['../namespaceCOST__SENSITIVE.html#a25e83fefdfb752b04ffcf849a3bfac1f',1,'COST_SENSITIVE::output_example(vw &amp;all, example &amp;ec)'],['../namespaceCOST__SENSITIVE.html#ad2172e8c23baccb252d2c2115554451a',1,'COST_SENSITIVE::output_example(vw &amp;all, example &amp;ec, const COST_SENSITIVE::label &amp;cs_label, uint32_t multiclass_prediction)'],['../namespaceMULTILABEL.html#a50c2e8edc4a8c4f59372879683bc6df9',1,'MULTILABEL::output_example()']]],
   ['output_5ffeatures',['output_features',['../cache_8h.html#af4875cfa395d3d1b81065c5cb664d411',1,'cache.h']]],
   ['overflow',['overflow',['../classVW_1_1io_1_1noop__output__streambuf.html#ab6e5fbd324d84ef02e994fca2da18550',1,'VW::io::noop_output_streambuf']]],
   ['owning_5fostream',['owning_ostream',['../classVW_1_1io_1_1owning__ostream.html#ae2bb62055bb2fda0ff7adc4e67215d71',1,'VW::io::owning_ostream']]]

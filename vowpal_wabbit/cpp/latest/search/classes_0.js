@@ -2,6 +2,7 @@ var searchData=
 [
   ['action_5fscore',['action_score',['../structACTION__SCORE_1_1action__score.html',1,'ACTION_SCORE']]],
   ['active',['active',['../structactive.html',1,'']]],
+  ['active_5fmulticlass_5fprediction',['active_multiclass_prediction',['../structVW_1_1active__multiclass__prediction.html',1,'VW']]],
   ['allreduce',['AllReduce',['../classAllReduce.html',1,'']]],
   ['allreducesockets',['AllReduceSockets',['../classAllReduceSockets.html',1,'']]],
   ['allreducesync',['AllReduceSync',['../classAllReduceSync.html',1,'']]],

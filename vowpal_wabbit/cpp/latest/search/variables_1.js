@@ -9,6 +9,7 @@ var searchData=
   ['active',['active',['../structBeam_1_1beam__element.html#a60ae4810410bb735e6af202cf7ffc131',1,'Beam::beam_element::active()'],['../structvw.html#a150b8efa21ed8f6425698892a17537a8',1,'vw::active()']]],
   ['active_5fc0',['active_c0',['../structactive.html#a3421d80ae5bc66b42dadc1a6d608d5fe',1,'active']]],
   ['active_5finteractions',['active_interactions',['../structnamespace__interactions.html#a84f5c340059f3357762e0be7204c8f78',1,'namespace_interactions']]],
+  ['active_5fmulticlass',['active_multiclass',['../structpolyprediction.html#adf514f68c17010615a57b3bf0293dd60',1,'polyprediction']]],
   ['adaptive',['adaptive',['../classparameters.html#ae32e0735531564f9764905fcc46190c2',1,'parameters']]],
   ['add_5fconstant',['add_constant',['../structvw.html#aeb505400a0a7a55c9da48b36747e12c5',1,'vw']]],
   ['affix_5fconstant',['affix_constant',['../constant_8h.html#afe15f16dad3ceb280f08e853db17a03d',1,'constant.h']]],

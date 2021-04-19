@@ -33,6 +33,7 @@ var searchData=
   ['pred_5fscores',['pred_scores',['../structGEN__CS_1_1cb__to__cs.html#a82650b88bcf81698b14d707b3c4426c4',1,'GEN_CS::cb_to_cs::pred_scores()'],['../structGEN__CS_1_1cb__to__cs__adf.html#a2085ad7b75c0b0bf3971beeb6d298456',1,'GEN_CS::cb_to_cs_adf::pred_scores()']]],
   ['pred_5ftype',['pred_type',['../structVW_1_1LEARNER_1_1learner.html#a2892afc61028b8c30af5c23087a643d2',1,'VW::LEARNER::learner']]],
   ['predict_5ff',['predict_f',['../structVW_1_1LEARNER_1_1learn__data.html#a83ad71e50cb514f592d016c24876429a',1,'VW::LEARNER::learn_data']]],
+  ['predicted_5fclass',['predicted_class',['../structVW_1_1active__multiclass__prediction.html#ac2d89b36bfd8be92d0ebfd173180dc07',1,'VW::active_multiclass_prediction']]],
   ['preserve_5fperformance_5fcounters',['preserve_performance_counters',['../structvw.html#ac1c194273bff7969943f9ca78b5401e4',1,'vw']]],
   ['previous_5fstate',['previous_state',['../structContext.html#ac1b1241f0d58f1b71146c1675e4dbdd7',1,'Context']]],
   ['print',['print',['../structvw.html#a604edb5397fe46c7d5df0cbedf28b0a6',1,'vw']]],

@@ -65,7 +65,7 @@ var searchData=
   ['output_5fbool',['output_bool',['../classBoolToBoolState.html#a992594f6cfc11ec445918887aaf568d5',1,'BoolToBoolState']]],
   ['output_5fbyte',['output_byte',['../cache_8h.html#aceecd924458f9cec915af446664256ee',1,'cache.h']]],
   ['output_5fdone',['output_done',['../structparser.html#a95e78d7a022624fad51ef62a80887723',1,'parser']]],
-  ['output_5fexample',['output_example',['../namespaceCOST__SENSITIVE.html#a25e83fefdfb752b04ffcf849a3bfac1f',1,'COST_SENSITIVE::output_example()'],['../namespaceMULTILABEL.html#a50c2e8edc4a8c4f59372879683bc6df9',1,'MULTILABEL::output_example()']]],
+  ['output_5fexample',['output_example',['../namespaceCOST__SENSITIVE.html#a25e83fefdfb752b04ffcf849a3bfac1f',1,'COST_SENSITIVE::output_example(vw &amp;all, example &amp;ec)'],['../namespaceCOST__SENSITIVE.html#ad2172e8c23baccb252d2c2115554451a',1,'COST_SENSITIVE::output_example(vw &amp;all, example &amp;ec, const COST_SENSITIVE::label &amp;cs_label, uint32_t multiclass_prediction)'],['../namespaceMULTILABEL.html#a50c2e8edc4a8c4f59372879683bc6df9',1,'MULTILABEL::output_example()']]],
   ['output_5ffeatures',['output_features',['../cache_8h.html#af4875cfa395d3d1b81065c5cb664d411',1,'cache.h']]],
   ['output_5ffloat',['output_float',['../classFloatToFloatState.html#ae91d12e334d9112b7b02d4b03031db94',1,'FloatToFloatState']]],
   ['output_5flock',['output_lock',['../structparser.html#a62c95d8b49357d7a9251d07d8b6f383f',1,'parser']]],

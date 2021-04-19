@@ -77,6 +77,7 @@ var searchData=
   ['predict_5fbuffer_5ft',['predict_buffer_t',['../structVW_1_1offset__tree_1_1offset__tree.html#a39791638c040e8da6d70c1345bef71ae',1,'VW::offset_tree::offset_tree']]],
   ['predict_5ff',['predict_f',['../structVW_1_1LEARNER_1_1learn__data.html#a83ad71e50cb514f592d016c24876429a',1,'VW::LEARNER::learn_data']]],
   ['predict_5fpartial',['predict_partial',['../classezexample.html#ac455b4ac68277adf0be0d810c7f4b2e9',1,'ezexample']]],
+  ['predicted_5fclass',['predicted_class',['../structVW_1_1active__multiclass__prediction.html#ac2d89b36bfd8be92d0ebfd173180dc07',1,'VW::active_multiclass_prediction']]],
   ['prediction_5ftype_5ft',['prediction_type_t',['../learner_8h.html#a5514b4a9448315c23ec344ca2d139e24',1,'learner.h']]],
   ['predictldf',['predictLDF',['../structSearch_1_1search.html#ab6d6c7c45072205a9420212a338f8247',1,'Search::search']]],
   ['predictneedsexample',['predictNeedsExample',['../structSearch_1_1search.html#a5666c275c0b94a402e542a9de27522d3',1,'Search::search']]],

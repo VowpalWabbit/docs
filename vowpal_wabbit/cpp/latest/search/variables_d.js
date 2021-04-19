@@ -23,6 +23,7 @@ var searchData=
   ['min_5fvalue',['min_value',['../structVW_1_1continuous__action_1_1cats_1_1cats.html#a34263d4504320d078e70f32cf4d0baa2',1,'VW::continuous_action::cats::cats::min_value()'],['../structVW_1_1pmf__to__pdf_1_1reduction.html#a5a08da6d75f53dc032285fb576f23883',1,'VW::pmf_to_pdf::reduction::min_value()']]],
   ['minor',['minor',['../structVW_1_1version__struct.html#aaf8c97dec70775a9e43f804cb2fcbe64',1,'VW::version_struct']]],
   ['model_5ffile_5fver',['model_file_ver',['../structvw.html#aef7628e009ca4bfa6a5caf4ffcfd4fb5',1,'vw']]],
+  ['more_5finfo_5frequired_5ffor_5fclasses',['more_info_required_for_classes',['../structVW_1_1active__multiclass__prediction.html#ab9814a36e47b7f06526ebb1d978515b5',1,'VW::active_multiclass_prediction']]],
   ['mtr_5fec_5fseq',['mtr_ec_seq',['../structGEN__CS_1_1cb__to__cs__adf.html#ad086fbe45cc647bba1fe49315e8636d7',1,'GEN_CS::cb_to_cs_adf']]],
   ['mtr_5fexample',['mtr_example',['../structGEN__CS_1_1cb__to__cs__adf.html#a31c5c92d3694977e8ac0494853972ee0',1,'GEN_CS::cb_to_cs_adf']]],
   ['multi',['multi',['../structpolylabel.html#a68946a978546b21fc85fde38d6147399',1,'polylabel']]],
