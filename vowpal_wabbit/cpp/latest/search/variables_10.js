@@ -38,6 +38,7 @@ var searchData=
   ['previous_5fstate',['previous_state',['../structContext.html#ac1b1241f0d58f1b71146c1675e4dbdd7',1,'Context']]],
   ['print',['print',['../structvw.html#a604edb5397fe46c7d5df0cbedf28b0a6',1,'vw']]],
   ['print_5fby_5fref',['print_by_ref',['../structvw.html#a02b0679e7ac821c9ca48d2228f76219d',1,'vw']]],
+  ['print_5fexample_5ff',['print_example_f',['../structVW_1_1LEARNER_1_1finish__example__data.html#a3a645c3a05bb52eb9a31800f055bf0b0',1,'VW::LEARNER::finish_example_data']]],
   ['print_5finvert',['print_invert',['../structvw.html#a5fc8bf4e2faab872603875d10c61a846',1,'vw']]],
   ['print_5ftext',['print_text',['../structvw.html#acc1a4b9d34fb0fcb493224311d5c74d9',1,'vw']]],
   ['print_5ftext_5fby_5fref',['print_text_by_ref',['../structvw.html#ad120d181510526c4840962f5c592286e',1,'vw']]],

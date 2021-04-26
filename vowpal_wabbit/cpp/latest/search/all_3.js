@@ -90,6 +90,8 @@ var searchData=
   ['cb_5fsample_2eh',['cb_sample.h',['../cb__sample_8h.html',1,'']]],
   ['cb_5fsample_5fpdf',['cb_sample_pdf',['../structvw__dbg.html#acf5ffed9153e36f6944663a79f3de898',1,'vw_dbg']]],
   ['cb_5fsample_5fsetup',['cb_sample_setup',['../cb__sample_8h.html#aa0bca2a96fc39311f075d9f91cec617b',1,'cb_sample.h']]],
+  ['cb_5fto_5fcb_5fadf_2eh',['cb_to_cb_adf.h',['../cb__to__cb__adf_8h.html',1,'']]],
+  ['cb_5fto_5fcb_5fadf_5fsetup',['cb_to_cb_adf_setup',['../cb__to__cb__adf_8h.html#a39f6baa5cc1a4d71e2313651937b3b87',1,'cb_to_cb_adf.h']]],
   ['cb_5fto_5fcs',['cb_to_cs',['../structGEN__CS_1_1cb__to__cs.html',1,'GEN_CS']]],
   ['cb_5fto_5fcs_5fadf',['cb_to_cs_adf',['../structGEN__CS_1_1cb__to__cs__adf.html',1,'GEN_CS']]],
   ['cb_5ftype',['cb_type',['../structGEN__CS_1_1cb__to__cs.html#a4a94f22628a700aeb8cd11c1b850089d',1,'GEN_CS::cb_to_cs::cb_type()'],['../structGEN__CS_1_1cb__to__cs__adf.html#a67e533609d5933c85c88478ba2c5d886',1,'GEN_CS::cb_to_cs_adf::cb_type()']]],
@@ -147,8 +149,8 @@ var searchData=
   ['col_5fexample_5fcounter',['col_example_counter',['../structshared__data.html#a10d82190782fc22a71ac4876e086f1da',1,'shared_data']]],
   ['col_5fexample_5fweight',['col_example_weight',['../structshared__data.html#a6925b7da1a10bfa51973a82676d3ff86',1,'shared_data']]],
   ['col_5fsince_5flast',['col_since_last',['../structshared__data.html#a025bed7f6dacdc33c117e6567d4956ba',1,'shared_data']]],
-  ['collection_5fpair_5fiterator',['collection_pair_iterator',['../classvw__slim_1_1internal_1_1collection__pair__iterator.html#a0763ab1b0e41f39975a12bec7fb95d6f',1,'vw_slim::internal::collection_pair_iterator::collection_pair_iterator(It1 first, It2 second)'],['../classvw__slim_1_1internal_1_1collection__pair__iterator.html#a014eeaceecac325d2147e011e162ac7b',1,'vw_slim::internal::collection_pair_iterator::collection_pair_iterator()=default'],['../classvw__slim_1_1internal_1_1collection__pair__iterator.html#ab56ac5bde1e653e468c317b6dbb247ca',1,'vw_slim::internal::collection_pair_iterator::collection_pair_iterator(const collection_pair_iterator &amp;rhs)=default']]],
   ['collection_5fpair_5fiterator',['collection_pair_iterator',['../classvw__slim_1_1internal_1_1collection__pair__iterator.html',1,'vw_slim::internal']]],
+  ['collection_5fpair_5fiterator',['collection_pair_iterator',['../classvw__slim_1_1internal_1_1collection__pair__iterator.html#a0763ab1b0e41f39975a12bec7fb95d6f',1,'vw_slim::internal::collection_pair_iterator::collection_pair_iterator(It1 first, It2 second)'],['../classvw__slim_1_1internal_1_1collection__pair__iterator.html#a014eeaceecac325d2147e011e162ac7b',1,'vw_slim::internal::collection_pair_iterator::collection_pair_iterator()=default'],['../classvw__slim_1_1internal_1_1collection__pair__iterator.html#ab56ac5bde1e653e468c317b6dbb247ca',1,'vw_slim::internal::collection_pair_iterator::collection_pair_iterator(const collection_pair_iterator &amp;rhs)=default']]],
   ['common_5flearner_5fbuilder',['common_learner_builder',['../structVW_1_1LEARNER_1_1common__learner__builder.html',1,'VW::LEARNER']]],
   ['common_5flearner_5fbuilder',['common_learner_builder',['../structVW_1_1LEARNER_1_1learner.html#a416626872983209870f470dda7de18c7',1,'VW::LEARNER::learner::common_learner_builder()'],['../structVW_1_1LEARNER_1_1common__learner__builder.html#aec57e5dd72057b6cab6bed580b809519',1,'VW::LEARNER::common_learner_builder::common_learner_builder(learner&lt; DataT, ExampleT &gt; *learner, std::unique_ptr&lt; DataT &gt; &amp;&amp;data, const std::string &amp;name)'],['../structVW_1_1LEARNER_1_1common__learner__builder.html#a7b4dd134cf09ba458da1d23cdc33320b',1,'VW::LEARNER::common_learner_builder::common_learner_builder(std::unique_ptr&lt; DataT &gt; &amp;&amp;data, const std::string &amp;name)']]],
   ['common_5flearner_5fbuilder_3c_20base_5flearner_5fbuilder_3c_20datat_2c_20examplet_20_3e_2c_20datat_2c_20examplet_2c_20base_5flearner_20_3e',['common_learner_builder&lt; base_learner_builder&lt; DataT, ExampleT &gt;, DataT, ExampleT, base_learner &gt;',['../structVW_1_1LEARNER_1_1common__learner__builder.html',1,'VW::LEARNER']]],
@@ -229,5 +231,6 @@ var searchData=
   ['current_5fstate',['current_state',['../structContext.html#a552c99987bee5a1506c47eed936466dd',1,'Context::current_state()'],['../structVWReaderHandler.html#a815ced4a606d3f1e66176cf0bf156bcc',1,'VWReaderHandler::current_state()']]],
   ['currentname',['currentname',['../structparser.html#a3ca43653ae1c9d497786cd80e1a0ca96',1,'parser']]],
   ['currentnamespace',['CurrentNamespace',['../structContext.html#a9d1381c22ba19a9ca58b7c0f615eaa3a',1,'Context']]],
+  ['custom_5findex_5fmask',['custom_index_mask',['../structcbify__adf__data.html#af4c41f5a46de4df973030b851e777fa4',1,'cbify_adf_data']]],
   ['custom_5fstreambuf_2eh',['custom_streambuf.h',['../custom__streambuf_8h.html',1,'']]]
 ];

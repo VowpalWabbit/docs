@@ -86,5 +86,6 @@ var searchData=
   ['current_5fmaster',['current_master',['../structnode__socks.html#a8cad0619d240dff1372e89eedb2211ff',1,'node_socks']]],
   ['current_5fpass',['current_pass',['../structvw.html#a1f68b6894ba36213ed87a7e2a68d5d4c',1,'vw']]],
   ['current_5fstate',['current_state',['../structContext.html#a552c99987bee5a1506c47eed936466dd',1,'Context']]],
-  ['currentname',['currentname',['../structparser.html#a3ca43653ae1c9d497786cd80e1a0ca96',1,'parser']]]
+  ['currentname',['currentname',['../structparser.html#a3ca43653ae1c9d497786cd80e1a0ca96',1,'parser']]],
+  ['custom_5findex_5fmask',['custom_index_mask',['../structcbify__adf__data.html#af4c41f5a46de4df973030b851e777fa4',1,'cbify_adf_data']]]
 ];

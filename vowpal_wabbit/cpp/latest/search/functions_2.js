@@ -22,6 +22,7 @@ var searchData=
   ['cb_5fexplore_5fsetup',['cb_explore_setup',['../cb__explore_8h.html#a23b68c61a3b8feb4198dcd164110838e',1,'cb_explore.h']]],
   ['cb_5flabel_5fto_5fstring',['cb_label_to_string',['../example_8h.html#a348468f2000b1fdf32bb76c4c7c837be',1,'example.h']]],
   ['cb_5fsample_5fsetup',['cb_sample_setup',['../cb__sample_8h.html#aa0bca2a96fc39311f075d9f91cec617b',1,'cb_sample.h']]],
+  ['cb_5fto_5fcb_5fadf_5fsetup',['cb_to_cb_adf_setup',['../cb__to__cb__adf_8h.html#a39f6baa5cc1a4d71e2313651937b3b87',1,'cb_to_cb_adf.h']]],
   ['cbegin',['cbegin',['../classsparse__parameters.html#ac70911d257d0d1cb1f45666473f0e3cc',1,'sparse_parameters::cbegin()'],['../classdense__parameters.html#a09a747f87d439098bfc7c7d70fd0a935',1,'dense_parameters::cbegin()'],['../structv__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_3_01T_01_4_1_1value_01_4_1_1type_01_4.html#a356255aa49babcee051434825bbf6a86',1,'v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;::cbegin()']]],
   ['cbify_5fsetup',['cbify_setup',['../cbify_8h.html#adeca255cfb94597ce27b11fdeac86bdb',1,'cbify.h']]],
   ['cbifyldf_5fsetup',['cbifyldf_setup',['../cbify_8h.html#ac7fa2cbccd5fe0608a4f5c437b15ef76',1,'cbify.h']]],

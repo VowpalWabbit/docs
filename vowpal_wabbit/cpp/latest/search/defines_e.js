@@ -1,6 +1,7 @@
 var searchData=
 [
   ['version_5ffile_5fwith_5fcb_5fadf_5fsave',['VERSION_FILE_WITH_CB_ADF_SAVE',['../vw__versions_8h.html#a9c1532b1eb143f80816e4a61194d4dee',1,'vw_versions.h']]],
+  ['version_5ffile_5fwith_5fcb_5fto_5fcbadf',['VERSION_FILE_WITH_CB_TO_CBADF',['../vw__versions_8h.html#adc59f001f473bd24eed4fa2205e2a751',1,'vw_versions.h']]],
   ['version_5ffile_5fwith_5fccb_5fmulti_5fslots_5fseen_5fflag',['VERSION_FILE_WITH_CCB_MULTI_SLOTS_SEEN_FLAG',['../vw__versions_8h.html#abfded861c0649c3e6231f851bc562d4b',1,'vw_versions.h']]],
   ['version_5ffile_5fwith_5fcubic',['VERSION_FILE_WITH_CUBIC',['../vw__versions_8h.html#aa0d3c0207ae194c3b39421a434c6f22b',1,'vw_versions.h']]],
   ['version_5ffile_5fwith_5fheader_5fchained_5fhash',['VERSION_FILE_WITH_HEADER_CHAINED_HASH',['../vw__versions_8h.html#a9f9a63eebd51389d5c5d61d64faa725c',1,'vw_versions.h']]],
