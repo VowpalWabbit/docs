@@ -129,7 +129,7 @@ var searchData=
   ['shared_5ftype',['SHARED_TYPE',['../constant_8h.html#a186c53aa4337a15980d33920c6f34e62',1,'constant.h']]],
   ['short_5fname',['short_name',['../structVW_1_1config_1_1option__builder.html#ab001a5b75b29db80869a1810f4d11f88',1,'VW::config::option_builder']]],
   ['shrink_5fto_5ffit',['shrink_to_fit',['../structv__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_3_01T_01_4_1_1value_01_4_1_1type_01_4.html#aa5fef11f9b7f46378d00580e9778caea',1,'v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;']]],
-  ['sign',['sign',['../namespaceGD.html#a7da689f7a00be5d138af3bb360f2154a',1,'GD']]],
+  ['sign',['sign',['../namespaceVW_1_1math.html#ae8c83aaffc9d2ddd2502af06c5025715',1,'VW::math']]],
   ['simple',['simple',['../structpolylabel.html#a80ff268cb4e29afddaac58174d316297',1,'polylabel::simple()'],['../label__parser_8h.html#ac55dd8dc7400242f299d4b6f245f8acda8dbdda48fb8748d6746f1965824e966a',1,'simple():&#160;label_parser.h']]],
   ['simple_5flabel_2eh',['simple_label.h',['../simple__label_8h.html',1,'']]],
   ['simple_5flabel_5fparser',['simple_label_parser',['../simple__label__parser_8h.html#aaa82d9cad70b48e4e3590330232182ae',1,'simple_label_parser.h']]],

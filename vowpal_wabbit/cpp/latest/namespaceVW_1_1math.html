@@ -102,6 +102,18 @@ Functions</h2></td></tr>
 <tr class="memitem:abd18c415fd17e7a0f19d7941ef78726b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:abd18c415fd17e7a0f19d7941ef78726b"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1math.html#abd18c415fd17e7a0f19d7941ef78726b">are_same_rel</a> (T lhs, T rhs, T tolerance=<a class="el" href="vw__math_8h.html#a0e355e0dcb761f1b89524e0e77fd14bd">DEFAULT_TOLERANCE</a>)</td></tr>
 <tr class="separator:abd18c415fd17e7a0f19d7941ef78726b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0758ab980428dd364284750bb50121a"><td class="memItemLeft" align="right" valign="top">VW_STD14_CONSTEXPR size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1math.html#ac0758ab980428dd364284750bb50121a">factorial</a> (size_t n) noexcept</td></tr>
+<tr class="separator:ac0758ab980428dd364284750bb50121a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5baf3dcabd43e1ea4fa890cd67358c9"><td class="memItemLeft" align="right" valign="top">VW_STD14_CONSTEXPR size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1math.html#ad5baf3dcabd43e1ea4fa890cd67358c9">number_of_combinations_with_repetition</a> (size_t n, size_t k) noexcept</td></tr>
+<tr class="memdesc:ad5baf3dcabd43e1ea4fa890cd67358c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Both n and k must be non-zero.  <a href="#ad5baf3dcabd43e1ea4fa890cd67358c9">More...</a><br /></td></tr>
+<tr class="separator:ad5baf3dcabd43e1ea4fa890cd67358c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eca1eaf1fdd4ee67ab169f9efe28ebb"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1math.html#a7eca1eaf1fdd4ee67ab169f9efe28ebb">number_of_permutations_with_repetition</a> (size_t n, size_t k)</td></tr>
+<tr class="separator:a7eca1eaf1fdd4ee67ab169f9efe28ebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8c83aaffc9d2ddd2502af06c5025715"><td class="memItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1math.html#ae8c83aaffc9d2ddd2502af06c5025715">sign</a> (float w) noexcept</td></tr>
+<tr class="separator:ae8c83aaffc9d2ddd2502af06c5025715"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77171e0aba4b8c9fc8d5f49d2dd8d83f"><td class="memItemLeft" align="right" valign="top">VW_STD14_CONSTEXPR int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1math.html#a77171e0aba4b8c9fc8d5f49d2dd8d83f">choose</a> (int64_t n, int64_t k) noexcept</td></tr>
+<tr class="memdesc:a77171e0aba4b8c9fc8d5f49d2dd8d83f"><td class="mdescLeft">&#160;</td><td class="mdescRight">C(n,k) = n!/(k!(n-k)!)  <a href="#a77171e0aba4b8c9fc8d5f49d2dd8d83f">More...</a><br /></td></tr>
+<tr class="separator:a77171e0aba4b8c9fc8d5f49d2dd8d83f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -177,6 +189,160 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a77171e0aba4b8c9fc8d5f49d2dd8d83f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">VW_STD14_CONSTEXPR int64_t VW::math::choose </td>
+          <td>(</td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>k</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>C(n,k) = n!/(k!(n-k)!) </p>
+
+</div>
+</div>
+<a class="anchor" id="ac0758ab980428dd364284750bb50121a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">VW_STD14_CONSTEXPR size_t VW::math::factorial </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad5baf3dcabd43e1ea4fa890cd67358c9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">VW_STD14_CONSTEXPR size_t VW::math::number_of_combinations_with_repetition </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>k</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Both n and k must be non-zero. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7eca1eaf1fdd4ee67ab169f9efe28ebb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t VW::math::number_of_permutations_with_repetition </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>k</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae8c83aaffc9d2ddd2502af06c5025715"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr float VW::math::sign </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>w</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a class="anchor" id="ab96338c13291d2355a5bfa3264d06d7d"></a>
 <div class="memitem">
@@ -193,7 +359,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 27 2021 18:05:58 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 27 2021 19:27:50 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
