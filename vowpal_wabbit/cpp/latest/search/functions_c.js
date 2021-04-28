@@ -20,6 +20,6 @@ var searchData=
   ['num_5finput_5ffiles',['num_input_files',['../classio__buf.html#a806949dc7f0e14ca74435a35edd036d0',1,'io_buf']]],
   ['num_5foutput_5ffiles',['num_output_files',['../classio__buf.html#af5696664eb5ec6a526cdbaeb50eed00c',1,'io_buf']]],
   ['num_5fweights',['num_weights',['../namespaceVW.html#a79f4b5129db34f40bdb6d0a970dd30b1',1,'VW']]],
-  ['number_5fof_5fcombinations_5fwith_5frepetition',['number_of_combinations_with_repetition',['../namespaceVW_1_1math.html#ad5baf3dcabd43e1ea4fa890cd67358c9',1,'VW::math']]],
-  ['number_5fof_5fpermutations_5fwith_5frepetition',['number_of_permutations_with_repetition',['../namespaceVW_1_1math.html#a7eca1eaf1fdd4ee67ab169f9efe28ebb',1,'VW::math']]]
+  ['number_5fof_5fcombinations_5fwith_5frepetition',['number_of_combinations_with_repetition',['../namespaceVW_1_1math.html#a555bb5c5ffbd6c4e26a6e2aaa6df659c',1,'VW::math']]],
+  ['number_5fof_5fpermutations_5fwith_5frepetition',['number_of_permutations_with_repetition',['../namespaceVW_1_1math.html#a1a277e1f850e8b4281f2b504c33731eb',1,'VW::math']]]
 ];
