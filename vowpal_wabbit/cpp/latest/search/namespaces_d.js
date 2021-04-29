@@ -28,6 +28,7 @@ var searchData=
   ['learner',['LEARNER',['../namespaceVW_1_1LEARNER.html',1,'VW']]],
   ['logger',['logger',['../namespaceVW_1_1io_1_1logger.html',1,'VW::io']]],
   ['math',['math',['../namespaceVW_1_1math.html',1,'VW']]],
+  ['metrics',['metrics',['../namespaceVW_1_1metrics.html',1,'VW']]],
   ['offset_5ftree',['offset_tree',['../namespaceVW_1_1offset__tree.html',1,'VW']]],
   ['parsers',['parsers',['../namespaceVW_1_1parsers.html',1,'VW']]],
   ['pmf_5fto_5fpdf',['pmf_to_pdf',['../namespaceVW_1_1pmf__to__pdf.html',1,'VW']]],

@@ -2,6 +2,7 @@ var searchData=
 [
   ['sample_5fpdf',['sample_pdf',['../structvw__dbg.html#a2ebd7b6dbc052d399e35264754de9dcf',1,'vw_dbg']]],
   ['save_5fload_5ff',['save_load_f',['../structVW_1_1LEARNER_1_1save__load__data.html#ac5cf5313f0395898c19bcc29ade84b58',1,'VW::LEARNER::save_load_data']]],
+  ['save_5fmetric_5ff',['save_metric_f',['../structVW_1_1LEARNER_1_1save__metric__data.html#a3dfb7d36dfd00eef1fd92966818a9922',1,'VW::LEARNER::save_metric_data']]],
   ['save_5fper_5fpass',['save_per_pass',['../structvw.html#abefa5a1acbb8f854a5a3836328252227',1,'vw']]],
   ['save_5fresume',['save_resume',['../structvw.html#a262f38af13d21b126e0b8fe5c9b1093c',1,'vw']]],
   ['saved',['saved',['../structSlotsState.html#ac750456fe2fb01a49460cf310017535c',1,'SlotsState']]],

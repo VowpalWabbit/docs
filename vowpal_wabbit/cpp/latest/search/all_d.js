@@ -39,6 +39,8 @@ var searchData=
   ['message_5fnamespace',['message_namespace',['../constant_8h.html#a09941ced3b4fe4c40b71023a150152b0',1,'constant.h']]],
   ['metatask_5fdata',['metatask_data',['../structSearch_1_1search.html#a2614275853e5bf5265c8d2ddf59e9f6e',1,'Search::search']]],
   ['metatask_5fname',['metatask_name',['../structSearch_1_1search.html#a5555842a7681f12739d61635faf89c53',1,'Search::search::metatask_name()'],['../structSearch_1_1search__metatask.html#aecf1da2f6b5b8598d0e285d488f71456',1,'Search::search_metatask::metatask_name()']]],
+  ['metrics_2eh',['metrics.h',['../metrics_8h.html',1,'']]],
+  ['metrics_5fsetup',['metrics_setup',['../namespaceVW_1_1metrics.html#aae4d97e5908c4e8ac24b88f4d182c62f',1,'VW::metrics']]],
   ['mf_2eh',['mf.h',['../mf_8h.html',1,'']]],
   ['mf_5fsetup',['mf_setup',['../mf_8h.html#a3996863f01166d29d4709cc8e740b766',1,'mf.h']]],
   ['might_5finsert',['might_insert',['../classBeam_1_1beam.html#a27a76654671cb98e49e203f38097df57',1,'Beam::beam']]],
