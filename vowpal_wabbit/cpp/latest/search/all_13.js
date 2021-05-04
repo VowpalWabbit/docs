@@ -220,7 +220,7 @@ var searchData=
   ['stringtostringstate',['StringToStringState',['../classStringToStringState.html',1,'StringToStringState&lt; audit &gt;'],['../classStringToStringState.html#aaf9a240fe01ccc959897bab169312f4a',1,'StringToStringState::StringToStringState()']]],
   ['strtok_5fs',['strtok_s',['../crossplat__compat_8h.html#a832190fda79639e68038e8a2c0e2df02',1,'crossplat_compat.h']]],
   ['substring_5fto_5fexample',['substring_to_example',['../parse__example_8h.html#a208663c015926c985ea305eb5f41166c',1,'parse_example.h']]],
-  ['success',['success',['../namespaceVW_1_1error__code.html#afcc9d7133bafb372d45951b9993e2061',1,'VW::error_code::success()'],['../namespaceVW_1_1experimental_1_1error__code.html#a48e5bd366fd1f0c791155d6e08be0fb9',1,'VW::experimental::error_code::success()']]],
+  ['success',['success',['../namespaceVW_1_1experimental_1_1error__code.html#a48e5bd366fd1f0c791155d6e08be0fb9',1,'VW::experimental::error_code']]],
   ['sum_5ffeat_5fsq',['sum_feat_sq',['../structfeatures.html#aeb0f91647156e1357fd2ef536ee53fd9',1,'features']]],
   ['sum_5floss',['sum_loss',['../structshared__data.html#aadcbe6fbce05c332e87da9aa517b439e',1,'shared_data']]],
   ['sum_5floss_5fsince_5flast_5fdump',['sum_loss_since_last_dump',['../structshared__data.html#ac170e7cf74cd37469fab0ea76bf19ff5',1,'shared_data']]],

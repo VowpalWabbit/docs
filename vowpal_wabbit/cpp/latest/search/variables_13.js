@@ -49,7 +49,7 @@ var searchData=
   ['stream_5fend',['stream_end',['../structContext.html#a4d1c6c8c56361542025129612e1da6aa',1,'Context']]],
   ['strict_5fparse',['strict_parse',['../structparser.html#aaaaa465f88b0b230c26509cdabc09a9f',1,'parser']]],
   ['string_5fstate',['string_state',['../structContext.html#aa03736d125379efe8aac2577009be492',1,'Context']]],
-  ['success',['success',['../namespaceVW_1_1error__code.html#afcc9d7133bafb372d45951b9993e2061',1,'VW::error_code::success()'],['../namespaceVW_1_1experimental_1_1error__code.html#a48e5bd366fd1f0c791155d6e08be0fb9',1,'VW::experimental::error_code::success()']]],
+  ['success',['success',['../namespaceVW_1_1experimental_1_1error__code.html#a48e5bd366fd1f0c791155d6e08be0fb9',1,'VW::experimental::error_code']]],
   ['sum_5ffeat_5fsq',['sum_feat_sq',['../structfeatures.html#aeb0f91647156e1357fd2ef536ee53fd9',1,'features']]],
   ['sum_5floss',['sum_loss',['../structshared__data.html#aadcbe6fbce05c332e87da9aa517b439e',1,'shared_data']]],
   ['sum_5floss_5fsince_5flast_5fdump',['sum_loss_since_last_dump',['../structshared__data.html#ac170e7cf74cd37469fab0ea76bf19ff5',1,'shared_data']]]

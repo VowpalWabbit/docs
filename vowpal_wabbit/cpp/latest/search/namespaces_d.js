@@ -16,7 +16,6 @@ var searchData=
   ['details',['details',['../namespaceVW_1_1details.html',1,'VW']]],
   ['details',['details',['../namespaceVW_1_1io_1_1details.html',1,'VW::io']]],
   ['distributionally_5frobust',['distributionally_robust',['../namespaceVW_1_1distributionally__robust.html',1,'VW']]],
-  ['error_5fcode',['error_code',['../namespaceVW_1_1error__code.html',1,'VW']]],
   ['error_5fcode',['error_code',['../namespaceVW_1_1experimental_1_1error__code.html',1,'VW::experimental']]],
   ['experimental',['experimental',['../namespaceVW_1_1experimental.html',1,'VW']]],
   ['first',['first',['../namespaceVW_1_1cb__explore__adf_1_1first.html',1,'VW::cb_explore_adf']]],
