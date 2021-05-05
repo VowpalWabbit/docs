@@ -1,9 +1,6 @@
 var searchData=
 [
   ['_5f_5ffilename_5f_5f',['__FILENAME__',['../vw__exception_8h.html#a5fccb4fc71e44089a1b1a77fc76c0b68',1,'vw_exception.h']]],
-  ['_5fbegin',['_begin',['../classfeatures__value__iterator.html#a7b36ec5a4cdb03c02b6bbc73ed26d652',1,'features_value_iterator']]],
-  ['_5fbegin_5faudit',['_begin_audit',['../classfeatures__value__index__audit__iterator.html#aef54e5ce3ad57722833c684c4475cf9a',1,'features_value_index_audit_iterator']]],
-  ['_5fbegin_5findex',['_begin_index',['../classfeatures__value__index__iterator.html#a563508df10450589fa90d2e547d25f23',1,'features_value_index_iterator']]],
   ['_5fdebug_5fcurrent_5freduction_5fdepth',['_debug_current_reduction_depth',['../structexample__predict.html#a517057277daf4f3fa6907161a59e1111',1,'example_predict']]],
   ['_5ffinal_5frun',['_final_run',['../classSearch_1_1BaseTask.html#a1789338f2860d67101b8ecbb694b18b7',1,'Search::BaseTask']]],
   ['_5fforeach_5faction',['_foreach_action',['../classSearch_1_1BaseTask.html#acb3dc8905bed89cd9f7b62879aa13260',1,'Search::BaseTask']]],

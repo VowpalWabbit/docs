@@ -12,5 +12,6 @@ var searchData=
   ['arraytopdfstate',['ArrayToPdfState',['../classArrayToPdfState.html',1,'']]],
   ['arraytovectorstate',['ArrayToVectorState',['../classArrayToVectorState.html',1,'']]],
   ['arraytovectorstate_3c_20audit_2c_20float_20_3e',['ArrayToVectorState&lt; audit, float &gt;',['../classArrayToVectorState.html',1,'']]],
-  ['arraytovectorstate_3c_20audit_2c_20unsigned_20_3e',['ArrayToVectorState&lt; audit, unsigned &gt;',['../classArrayToVectorState.html',1,'']]]
+  ['arraytovectorstate_3c_20audit_2c_20unsigned_20_3e',['ArrayToVectorState&lt; audit, unsigned &gt;',['../classArrayToVectorState.html',1,'']]],
+  ['audit_5ffeatures_5fiterator',['audit_features_iterator',['../classaudit__features__iterator.html',1,'']]]
 ];

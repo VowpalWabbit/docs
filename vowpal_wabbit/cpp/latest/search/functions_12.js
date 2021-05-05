@@ -17,7 +17,7 @@ var searchData=
   ['tree_5fnode',['tree_node',['../structVW_1_1cats__tree_1_1tree__node.html#abe1e752a96be9e59d8b39fe3b9691b9e',1,'VW::cats_tree::tree_node::tree_node()'],['../structVW_1_1offset__tree_1_1tree__node.html#a024d6fbfdd0d0268c69c01680997e1ea',1,'VW::offset_tree::tree_node::tree_node()']]],
   ['tree_5fstats_5fto_5fstring',['tree_stats_to_string',['../structVW_1_1cats__tree_1_1min__depth__binary__tree.html#a4757a3209eb528a9592550e279188c2c',1,'VW::cats_tree::min_depth_binary_tree']]],
   ['trunc_5fweight',['trunc_weight',['../namespaceGD.html#a9c15740d0f166048172adbe5b0e7531b',1,'GD']]],
-  ['truncate_5fto',['truncate_to',['../structfeatures.html#aeb3898d3d87779ba751d03bb42a463b2',1,'features::truncate_to(const features_value_iterator &amp;pos)'],['../structfeatures.html#afd6b770b048e3a2ee96590f9e412a91b',1,'features::truncate_to(size_t i)']]],
+  ['truncate_5fto',['truncate_to',['../structfeatures.html#acf560cb29fb27e77cfa67eabe4c45260',1,'features::truncate_to(const audit_iterator &amp;pos)'],['../structfeatures.html#a0eb824ab01855389fd248bb6c0977265',1,'features::truncate_to(const iterator &amp;pos)'],['../structfeatures.html#afd6b770b048e3a2ee96590f9e412a91b',1,'features::truncate_to(size_t i)']]],
   ['try_5fclear',['try_clear',['../classVW_1_1experimental_1_1api__status.html#a4d87fbd99e49dde6fc12fbecd10deea4',1,'VW::experimental::api_status']]],
   ['try_5fextract_5frandom_5fseed',['try_extract_random_seed',['../namespaceVW.html#ad0d3500b9970b8e8d0b35c5f189d6d4c',1,'VW']]],
   ['try_5fupdate',['try_update',['../classVW_1_1experimental_1_1api__status.html#a4d6016a9758713154002db50e3faca73',1,'VW::experimental::api_status']]],

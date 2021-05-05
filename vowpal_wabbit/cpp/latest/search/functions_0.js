@@ -47,7 +47,13 @@ var searchData=
   ['arraytovectorstate',['ArrayToVectorState',['../classArrayToVectorState.html#abbe48c47b0b25a2ecea3320eeb285632',1,'ArrayToVectorState']]],
   ['as_5fmultiline',['as_multiline',['../namespaceVW_1_1LEARNER.html#abcef6872def347bdad862409bdb35326',1,'VW::LEARNER']]],
   ['as_5fsingleline',['as_singleline',['../namespaceVW_1_1LEARNER.html#aee01f4fe4f1ec032609e818cfb0cebe4',1,'VW::LEARNER']]],
-  ['audit',['audit',['../classfeatures__value__index__audit__iterator.html#a0bd1950c29efff5156c33ba4e27b3452',1,'features_value_index_audit_iterator']]],
+  ['audit',['audit',['../classaudit__features__iterator.html#ac08bd58fc632766ef262a397ac0c7bbb',1,'audit_features_iterator::audit()'],['../classaudit__features__iterator.html#aa4dd898386ae07bd375c19e80b0d0a99',1,'audit_features_iterator::audit() const ']]],
+  ['audit_5fbegin',['audit_begin',['../structfeatures.html#a91fd91c03563b73ce38254efda502abb',1,'features::audit_begin()'],['../structfeatures.html#a6d6c80c58a0173a245008ff684bdf158',1,'features::audit_begin() const ']]],
+  ['audit_5fcbegin',['audit_cbegin',['../structfeatures.html#a9d70352a1e1c38f979a0cdce502c3f28',1,'features']]],
+  ['audit_5fcend',['audit_cend',['../structfeatures.html#a9a89046364216c8db303dd06fe699fc7',1,'features']]],
+  ['audit_5fend',['audit_end',['../structfeatures.html#a744e9a03554c3c067ee5eaa1c27f4056',1,'features::audit_end()'],['../structfeatures.html#a09bf8a64c485f0dfbf83a1a08af5be5a',1,'features::audit_end() const ']]],
+  ['audit_5ffeatures_5fiterator',['audit_features_iterator',['../classaudit__features__iterator.html#ae9b965456952f0918bc5b547203f30c0',1,'audit_features_iterator::audit_features_iterator(feature_value_type_t *begin_values, feature_index_type_t *begin_indices, audit_type_t *begin_audit)'],['../classaudit__features__iterator.html#a03257a17795f10730e5a7d2a4c976ef0',1,'audit_features_iterator::audit_features_iterator(const audit_features_iterator &amp;)=default'],['../classaudit__features__iterator.html#a9213fdcc733f4a87df1714e3d1325c4d',1,'audit_features_iterator::audit_features_iterator(audit_features_iterator &amp;&amp;)=default']]],
+  ['audit_5frange',['audit_range',['../structfeatures.html#a11040c81107166abcfd97393a486f929',1,'features::audit_range()'],['../structfeatures.html#a2d468808a26617cf3fa81b1faa585338',1,'features::audit_range() const ']]],
   ['audit_5fregressor_5fsetup',['audit_regressor_setup',['../audit__regressor_8h.html#a3df69f9384b672a5cf4249191fc8495d',1,'audit_regressor.h']]],
   ['autolink_5fsetup',['autolink_setup',['../autolink_8h.html#a884a19682c32fd1da7109825826cdb08',1,'autolink.h']]]
 ];
