@@ -26,5 +26,5 @@ var searchData=
   ['do_5frecombination',['do_recombination',['../classBeam_1_1beam.html#a7c024b7c58509c405271300549fbfde0',1,'Beam::beam']]],
   ['do_5fswap',['do_swap',['../classVW_1_1details_1_1swap__guard__impl.html#aab5175200e844e9aec7344cee91512a4',1,'VW::details::swap_guard_impl::do_swap()'],['../classVW_1_1details_1_1swap__guard__impl__rvalue.html#a8bc7cd28e0cfdaeb2b20246662ff01c0',1,'VW::details::swap_guard_impl_rvalue::do_swap()']]],
   ['double',['Double',['../structVWReaderHandler.html#a9b1d990eb0240611a2f3ccce3afaa963',1,'VWReaderHandler']]],
-  ['dummy_5ffunc',['dummy_func',['../namespaceGD.html#ab2e68c1b372774e285f6d060c8537a5d',1,'GD']]]
+  ['dummy_5ffunc',['dummy_func',['../namespaceGD.html#a9a733cab6079e5f28fb3773aa43bea24',1,'GD']]]
 ];

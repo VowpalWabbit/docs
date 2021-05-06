@@ -68,6 +68,6 @@ var searchData=
   ['double',['Double',['../structVWReaderHandler.html#a9b1d990eb0240611a2f3ccce3afaa963',1,'VWReaderHandler']]],
   ['dsjson',['dsjson',['../structinput__options.html#adbd9d55bfe27f7c844591e5840660ed8',1,'input_options']]],
   ['duals',['Duals',['../structVW_1_1distributionally__robust_1_1ChiSquared_1_1Duals.html',1,'VW::distributionally_robust::ChiSquared']]],
-  ['dummy_5ffunc',['dummy_func',['../namespaceGD.html#ab2e68c1b372774e285f6d060c8537a5d',1,'GD']]],
+  ['dummy_5ffunc',['dummy_func',['../namespaceGD.html#a9a733cab6079e5f28fb3773aa43bea24',1,'GD']]],
   ['dump_5finterval',['dump_interval',['../structshared__data.html#acc14d5e78772dd39829a82e4df2912d7',1,'shared_data']]]
 ];

@@ -9,7 +9,7 @@ var searchData=
   ['cache_5ftag',['cache_tag',['../cache_8h.html#a240768c48f05af593153264363e1019d',1,'cache.h']]],
   ['calculate_5fand_5finsert_5finteractions',['calculate_and_insert_interactions',['../namespaceCCB.html#a87ba23adc908b75abfde80ac48f7d498',1,'CCB']]],
   ['call',['call',['../classVW_1_1details_1_1scope__exit__caller.html#a7b6e9b9f80f4910d743bfcaf32b53307',1,'VW::details::scope_exit_caller']]],
-  ['call_5ft',['call_T',['../namespaceINTERACTIONS.html#a8e472b652c4d5fa2fb488f5ddc6d3ee8',1,'INTERACTIONS::call_T(R &amp;dat, W &amp;weights, const float ft_value, const uint64_t ft_idx)'],['../namespaceINTERACTIONS.html#ab18a7fa27d05531415541c2e0c975ae2',1,'INTERACTIONS::call_T(R &amp;dat, const W &amp;weights, const float ft_value, const uint64_t ft_idx)']]],
+  ['call_5ffunct',['call_FuncT',['../namespaceINTERACTIONS.html#a3f4b68b37c7a284d5d90ebc7faffbfb9',1,'INTERACTIONS::call_FuncT(DataT &amp;dat, WeightsT &amp;weights, const float ft_value, const uint64_t ft_idx)'],['../namespaceINTERACTIONS.html#a4233427209a0bb10fea9da2acb83dc6d',1,'INTERACTIONS::call_FuncT(DataT &amp;dat, const WeightsT &amp;weights, const float ft_value, const uint64_t ft_idx)']]],
   ['calloc_5fmergable_5for_5fthrow',['calloc_mergable_or_throw',['../memory_8h.html#ac9b15880e88115a868bfaedde4c3553b',1,'memory.h']]],
   ['calloc_5for_5fthrow',['calloc_or_throw',['../memory_8h.html#a9f714dbe7c12872e296e1c3db2b282c8',1,'calloc_or_throw(size_t nmemb):&#160;memory.h'],['../memory_8h.html#a31107095512273d04723b552457790d8',1,'calloc_or_throw():&#160;memory.h']]],
   ['calloc_5freserve',['calloc_reserve',['../v__array_8h.html#acf7f543a2adbe053d8129eebb9223694',1,'v_array.h']]],

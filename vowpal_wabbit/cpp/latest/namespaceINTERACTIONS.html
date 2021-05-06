@@ -116,20 +116,20 @@ Functions</h2></td></tr>
 <tr class="memitem:a62a634dc481c2ef2afcdeaa0751288f7"><td class="memTemplParams" colspan="2">template&lt;class R , class S , void(*)(R &amp;, float, S) T&gt; </td></tr>
 <tr class="memitem:a62a634dc481c2ef2afcdeaa0751288f7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#a62a634dc481c2ef2afcdeaa0751288f7">generate_interactions</a> (<a class="el" href="structvw.html">vw</a> &amp;all, <a class="el" href="structexample__predict.html">example_predict</a> &amp;ec, R &amp;dat)</td></tr>
 <tr class="separator:a62a634dc481c2ef2afcdeaa0751288f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e472b652c4d5fa2fb488f5ddc6d3ee8"><td class="memTemplParams" colspan="2">template&lt;class R , void(*)(R &amp;, const float, float &amp;) T, class W &gt; </td></tr>
-<tr class="memitem:a8e472b652c4d5fa2fb488f5ddc6d3ee8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#a8e472b652c4d5fa2fb488f5ddc6d3ee8">call_T</a> (R &amp;dat, W &amp;weights, const float ft_value, const uint64_t ft_idx)</td></tr>
-<tr class="separator:a8e472b652c4d5fa2fb488f5ddc6d3ee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab18a7fa27d05531415541c2e0c975ae2"><td class="memTemplParams" colspan="2">template&lt;class R , void(*)(R &amp;, const float, const float &amp;) T, class W &gt; </td></tr>
-<tr class="memitem:ab18a7fa27d05531415541c2e0c975ae2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#ab18a7fa27d05531415541c2e0c975ae2">call_T</a> (R &amp;dat, const W &amp;weights, const float ft_value, const uint64_t ft_idx)</td></tr>
-<tr class="separator:ab18a7fa27d05531415541c2e0c975ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f4b68b37c7a284d5d90ebc7faffbfb9"><td class="memTemplParams" colspan="2">template&lt;class DataT , void(*)(DataT &amp;, const float, float &amp;) FuncT, class WeightsT &gt; </td></tr>
+<tr class="memitem:a3f4b68b37c7a284d5d90ebc7faffbfb9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#a3f4b68b37c7a284d5d90ebc7faffbfb9">call_FuncT</a> (DataT &amp;dat, WeightsT &amp;weights, const float ft_value, const uint64_t ft_idx)</td></tr>
+<tr class="separator:a3f4b68b37c7a284d5d90ebc7faffbfb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4233427209a0bb10fea9da2acb83dc6d"><td class="memTemplParams" colspan="2">template&lt;class DataT , void(*)(DataT &amp;, const float, const float &amp;) FuncT, class WeightsT &gt; </td></tr>
+<tr class="memitem:a4233427209a0bb10fea9da2acb83dc6d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#a4233427209a0bb10fea9da2acb83dc6d">call_FuncT</a> (DataT &amp;dat, const WeightsT &amp;weights, const float ft_value, const uint64_t ft_idx)</td></tr>
+<tr class="separator:a4233427209a0bb10fea9da2acb83dc6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85d42969fe5fe2302e2017a180202ed7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#a85d42969fe5fe2302e2017a180202ed7">INTERACTION_VALUE</a> (float value1, float value2)</td></tr>
 <tr class="separator:a85d42969fe5fe2302e2017a180202ed7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19d0a38817a50015f202db20749492cf"><td class="memTemplParams" colspan="2">template&lt;class R , class S , void(*)(R &amp;, float, S) T, bool audit, void(*)(R &amp;, const audit_strings *) audit_func, class W &gt; </td></tr>
-<tr class="memitem:a19d0a38817a50015f202db20749492cf"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#a19d0a38817a50015f202db20749492cf">inner_kernel</a> (R &amp;dat, <a class="el" href="structfeatures.html#ad64898b531c7bec0c0b1bb3f2a24ac93">features::const_audit_iterator</a> &amp;begin, <a class="el" href="structfeatures.html#ad64898b531c7bec0c0b1bb3f2a24ac93">features::const_audit_iterator</a> &amp;end, const uint64_t offset, W &amp;weights, <a class="el" href="feature__group_8h.html#afe724f24bdc273f5a3bef924f94b4a4a">feature_value</a> ft_value, <a class="el" href="feature__group_8h.html#a0100b371f093c4a60cd31557ff902c0d">feature_index</a> halfhash)</td></tr>
-<tr class="separator:a19d0a38817a50015f202db20749492cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89c91a4897e7b938f9395262dffcd79c"><td class="memTemplParams" colspan="2">template&lt;class R , class S , void(*)(R &amp;, float, S) T, bool audit, void(*)(R &amp;, const audit_strings *) audit_func, class W &gt; </td></tr>
-<tr class="memitem:a89c91a4897e7b938f9395262dffcd79c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#a89c91a4897e7b938f9395262dffcd79c">generate_interactions</a> (<a class="el" href="structnamespace__interactions.html">namespace_interactions</a> &amp;interactions, bool permutations, <a class="el" href="structexample__predict.html">example_predict</a> &amp;ec, R &amp;dat, W &amp;weights)</td></tr>
-<tr class="separator:a89c91a4897e7b938f9395262dffcd79c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3396c8a8f1e7f174c79f689a82299eb"><td class="memTemplParams" colspan="2">template&lt;class DataT , class WeightOrIndexT , void(*)(DataT &amp;, float, WeightOrIndexT) FuncT, bool audit, void(*)(DataT &amp;, const audit_strings *) audit_func, class WeightsT &gt; </td></tr>
+<tr class="memitem:ac3396c8a8f1e7f174c79f689a82299eb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#ac3396c8a8f1e7f174c79f689a82299eb">inner_kernel</a> (DataT &amp;dat, <a class="el" href="structfeatures.html#ad64898b531c7bec0c0b1bb3f2a24ac93">features::const_audit_iterator</a> &amp;begin, <a class="el" href="structfeatures.html#ad64898b531c7bec0c0b1bb3f2a24ac93">features::const_audit_iterator</a> &amp;end, const uint64_t offset, WeightsT &amp;weights, <a class="el" href="feature__group_8h.html#afe724f24bdc273f5a3bef924f94b4a4a">feature_value</a> ft_value, <a class="el" href="feature__group_8h.html#a0100b371f093c4a60cd31557ff902c0d">feature_index</a> halfhash)</td></tr>
+<tr class="separator:ac3396c8a8f1e7f174c79f689a82299eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77a839e030e6cdd89cdb6614db3b2345"><td class="memTemplParams" colspan="2">template&lt;class DataT , class WeightOrIndexT , void(*)(DataT &amp;, float, WeightOrIndexT) FuncT, bool audit, void(*)(DataT &amp;, const audit_strings *) audit_func, class WeightsT &gt; </td></tr>
+<tr class="memitem:a77a839e030e6cdd89cdb6614db3b2345"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#a77a839e030e6cdd89cdb6614db3b2345">generate_interactions</a> (<a class="el" href="structnamespace__interactions.html">namespace_interactions</a> &amp;interactions, bool permutations, <a class="el" href="structexample__predict.html">example_predict</a> &amp;ec, DataT &amp;dat, WeightsT &amp;weights)</td></tr>
+<tr class="separator:a77a839e030e6cdd89cdb6614db3b2345"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -145,25 +145,25 @@ Variables</h2></td></tr>
 <tr class="separator:affcb5fb4cf5bd6801bd9b33f6b02b669"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a8e472b652c4d5fa2fb488f5ddc6d3ee8"></a>
+<a class="anchor" id="a3f4b68b37c7a284d5d90ebc7faffbfb9"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class R , void(*)(R &amp;, const float, float &amp;) T, class W &gt; </div>
+template&lt;class DataT , void(*)(DataT &amp;, const float, float &amp;) FuncT, class WeightsT &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void INTERACTIONS::call_T </td>
+          <td class="memname">void INTERACTIONS::call_FuncT </td>
           <td>(</td>
-          <td class="paramtype">R &amp;&#160;</td>
+          <td class="paramtype">DataT &amp;&#160;</td>
           <td class="paramname"><em>dat</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">W &amp;&#160;</td>
+          <td class="paramtype">WeightsT &amp;&#160;</td>
           <td class="paramname"><em>weights</em>, </td>
         </tr>
         <tr>
@@ -193,25 +193,25 @@ template&lt;class R , void(*)(R &amp;, const float, float &amp;) T, class W &gt;
 
 </div>
 </div>
-<a class="anchor" id="ab18a7fa27d05531415541c2e0c975ae2"></a>
+<a class="anchor" id="a4233427209a0bb10fea9da2acb83dc6d"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class R , void(*)(R &amp;, const float, const float &amp;) T, class W &gt; </div>
+template&lt;class DataT , void(*)(DataT &amp;, const float, const float &amp;) FuncT, class WeightsT &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void INTERACTIONS::call_T </td>
+          <td class="memname">void INTERACTIONS::call_FuncT </td>
           <td>(</td>
-          <td class="paramtype">R &amp;&#160;</td>
+          <td class="paramtype">DataT &amp;&#160;</td>
           <td class="paramname"><em>dat</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const W &amp;&#160;</td>
+          <td class="paramtype">const WeightsT &amp;&#160;</td>
           <td class="paramname"><em>weights</em>, </td>
         </tr>
         <tr>
@@ -411,11 +411,11 @@ template&lt;class R , class S , void(*)(R &amp;, float, S) T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a89c91a4897e7b938f9395262dffcd79c"></a>
+<a class="anchor" id="a77a839e030e6cdd89cdb6614db3b2345"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class R , class S , void(*)(R &amp;, float, S) T, bool audit, void(*)(R &amp;, const audit_strings *) audit_func, class W &gt; </div>
+template&lt;class DataT , class WeightOrIndexT , void(*)(DataT &amp;, float, WeightOrIndexT) FuncT, bool audit, void(*)(DataT &amp;, const audit_strings *) audit_func, class WeightsT &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -441,13 +441,13 @@ template&lt;class R , class S , void(*)(R &amp;, float, S) T, bool audit, void(*
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">R &amp;&#160;</td>
+          <td class="paramtype">DataT &amp;&#160;</td>
           <td class="paramname"><em>dat</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">W &amp;&#160;</td>
+          <td class="paramtype">WeightsT &amp;&#160;</td>
           <td class="paramname"><em>weights</em>&#160;</td>
         </tr>
         <tr>
@@ -465,11 +465,11 @@ template&lt;class R , class S , void(*)(R &amp;, float, S) T, bool audit, void(*
 
 </div>
 </div>
-<a class="anchor" id="a19d0a38817a50015f202db20749492cf"></a>
+<a class="anchor" id="ac3396c8a8f1e7f174c79f689a82299eb"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class R , class S , void(*)(R &amp;, float, S) T, bool audit, void(*)(R &amp;, const audit_strings *) audit_func, class W &gt; </div>
+template&lt;class DataT , class WeightOrIndexT , void(*)(DataT &amp;, float, WeightOrIndexT) FuncT, bool audit, void(*)(DataT &amp;, const audit_strings *) audit_func, class WeightsT &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -477,7 +477,7 @@ template&lt;class R , class S , void(*)(R &amp;, float, S) T, bool audit, void(*
         <tr>
           <td class="memname">void INTERACTIONS::inner_kernel </td>
           <td>(</td>
-          <td class="paramtype">R &amp;&#160;</td>
+          <td class="paramtype">DataT &amp;&#160;</td>
           <td class="paramname"><em>dat</em>, </td>
         </tr>
         <tr>
@@ -501,7 +501,7 @@ template&lt;class R , class S , void(*)(R &amp;, float, S) T, bool audit, void(*
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">W &amp;&#160;</td>
+          <td class="paramtype">WeightsT &amp;&#160;</td>
           <td class="paramname"><em>weights</em>, </td>
         </tr>
         <tr>
@@ -719,7 +719,7 @@ template&lt;class R , class S , void(*)(R &amp;, float, S) T, bool audit, void(*
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 6 2021 14:39:12 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu May 6 2021 19:37:23 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
