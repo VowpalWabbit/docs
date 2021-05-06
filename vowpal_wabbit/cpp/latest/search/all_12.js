@@ -21,6 +21,7 @@ var searchData=
   ['read_5fline',['read_line',['../namespaceVW.html#ac82237706e8e65e96b131cc0284b671f',1,'VW']]],
   ['read_5fline_5fdecision_5fservice_5fjson',['read_line_decision_service_json',['../namespaceVW.html#a7c3af6c2409186effd371723bfb4e97b',1,'VW']]],
   ['read_5fline_5fjson',['read_line_json',['../namespaceVW.html#a96b23e9c89a8dd878ef91da2c123143d',1,'VW']]],
+  ['read_5fline_5fjson_5fs',['read_line_json_s',['../namespaceVW.html#a06821803c42648f4bc956ca620ce17ba',1,'VW']]],
   ['read_5flines',['read_lines',['../namespaceVW.html#afe7e57e1b0c2133c81df4ab180727cc5',1,'VW']]],
   ['read_5fregressor_5ffile',['read_regressor_file',['../parse__regressor_8h.html#a0255ad26c81992b45bda7f64c6a10494',1,'parse_regressor.h']]],
   ['read_5fstring',['read_string',['../classvw__slim_1_1model__parser.html#a4feb479f60a6842262a1f40e409d828c',1,'vw_slim::model_parser']]],
