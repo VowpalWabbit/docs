@@ -80,7 +80,7 @@ var searchData=
   ['values_5fabove_5fand_5fincluding_5fzero',['VALUES_ABOVE_AND_INCLUDING_ZERO',['../namespaceVW_1_1details.html#a68e7a75400178beccf8b637920c81ca5',1,'VW::details']]],
   ['values_5fabove_5fzero',['VALUES_ABOVE_ZERO',['../namespaceVW_1_1details.html#adb1e84d42c34af5804f2f7266b4e0ef3',1,'VW::details']]],
   ['values_5fbelow_5fzero',['VALUES_BELOW_ZERO',['../namespaceVW_1_1details.html#a1850458f654ac1db570f37d2bd0235a2',1,'VW::details']]],
-  ['vec_5fadd',['vec_add',['../namespaceGD.html#ac39d991ae78f9ce181021a6cfc12c2b8',1,'GD']]],
+  ['vec_5fadd',['vec_add',['../namespaceGD.html#ae6fd589c071ed3a52da36fc819e7d224',1,'GD']]],
   ['vec_5fadd_5fmultipredict',['vec_add_multipredict',['../namespaceGD.html#a233e8417eefdbbe50584f4e9cb7dee87',1,'GD']]],
   ['verify_5fhash',['verify_hash',['../classio__buf.html#aa0e2aa6f7e2c7c4c5d268b842a727275',1,'io_buf']]],
   ['version',['version',['../namespaceVW.html#a04410bfa758a55b0696864e5672adcf4',1,'VW']]],
