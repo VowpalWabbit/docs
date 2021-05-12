@@ -61,6 +61,7 @@ var searchData=
   ['num_5fbits',['num_bits',['../structvw.html#a01b6f14b593ea5a2fe5ae65dead97fab',1,'vw']]],
   ['num_5fchildren',['num_children',['../structvw.html#a2dc2f1037c9154881ab2c8c901cbdfd6',1,'vw']]],
   ['num_5ffeatures',['num_features',['../structexample.html#a35f3ec2680a21f971548cf5bb9f1fda0',1,'example::num_features()'],['../structflat__example.html#a524657b4d3359a3cfefe47f5cf3310ae',1,'flat_example::num_features()']]],
+  ['num_5ffeatures_5ffrom_5finteractions',['num_features_from_interactions',['../structexample.html#a4c8d46042f845f5b819c74e55b0a5845',1,'example']]],
   ['num_5ffiles',['num_files',['../classio__buf.html#a37bbb76c58eb35ee9ce9afff40bab90c',1,'io_buf']]],
   ['num_5finput_5ffiles',['num_input_files',['../classio__buf.html#a806949dc7f0e14ca74435a35edd036d0',1,'io_buf']]],
   ['num_5fnamespaces',['NUM_NAMESPACES',['../constant_8h.html#af6972edf713d5809ccd5658eca433d84',1,'constant.h']]],

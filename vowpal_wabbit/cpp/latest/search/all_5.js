@@ -58,7 +58,7 @@ var searchData=
   ['escaped_5ftokenize',['escaped_tokenize',['../parse__primitives_8h.html#ae5600a8846c21114564ebd52b6c5a953',1,'parse_primitives.h']]],
   ['eta',['eta',['../structvw.html#a939cbdaf20c78bfeabfddbf57c9d8250',1,'vw']]],
   ['eta_5fdecay_5frate',['eta_decay_rate',['../structvw.html#a69ffab35eaf64edf9bf88c43f83e6072',1,'vw']]],
-  ['eval_5fcount_5fof_5fgenerated_5fft',['eval_count_of_generated_ft',['../namespaceINTERACTIONS.html#a70d329bc4b0d1fbf782ab05fdf48f1e8',1,'INTERACTIONS']]],
+  ['eval_5fcount_5fof_5fgenerated_5fft',['eval_count_of_generated_ft',['../namespaceINTERACTIONS.html#abaadf0e53a790b6d3b24dce19a9be361',1,'INTERACTIONS']]],
   ['event',['event',['../structCB__EVAL_1_1label.html#af295a09fa564952d45e7b016fc60e1ff',1,'CB_EVAL::label']]],
   ['event_5fsum',['event_sum',['../structGEN__CS_1_1cb__to__cs__adf.html#a2aad7caed595926fb7fbbd43a653e384',1,'GEN_CS::cb_to_cs_adf']]],
   ['eventid',['eventId',['../structDecisionServiceInteraction.html#ad0a964d3f92f2a2883eb31ed4de022fc',1,'DecisionServiceInteraction']]],
