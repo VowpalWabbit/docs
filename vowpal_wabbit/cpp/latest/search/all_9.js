@@ -49,6 +49,7 @@ var searchData=
   ['int',['Int',['../structVWReaderHandler.html#acff99671bc9ef886b71cc00a09741d45',1,'VWReaderHandler']]],
   ['int64',['Int64',['../structVWReaderHandler.html#aee6696771d323ac1e6500738a027fffb',1,'VWReaderHandler']]],
   ['int_5ffloat',['int_float',['../unionexploration_1_1int__float.html',1,'exploration']]],
+  ['int_5fmetrics_5flist',['int_metrics_list',['../structVW_1_1metric__sink.html#aeb1c11432996dfef7f62728e9074fec1',1,'VW::metric_sink']]],
   ['int_5fof_5fstring',['int_of_string',['../parse__primitives_8h.html#a0187acdae19e69c4ef85cb5eb7bb9fa0',1,'int_of_string(VW::string_view s, char *&amp;end):&#160;parse_primitives.h'],['../parse__primitives_8h.html#a87d4af59fea5bc25b64dd3c854ff4d25',1,'int_of_string(VW::string_view s):&#160;parse_primitives.h']]],
   ['interact_2eh',['interact.h',['../interact_8h.html',1,'']]],
   ['interact_5fsetup',['interact_setup',['../interact_8h.html#acabe826851aae05e41d703e1c973d07a',1,'interact.h']]],
@@ -79,8 +80,8 @@ var searchData=
   ['is_5fresettable',['is_resettable',['../structVW_1_1io_1_1reader.html#a77d54b993a8afba329b104d1fbbdf29f',1,'VW::io::reader']]],
   ['is_5fring_5fexample',['is_ring_example',['../namespaceVW.html#a4827136233605decf732d3920d848295',1,'VW']]],
   ['is_5froot',['is_root',['../structVW_1_1cats__tree_1_1tree__node.html#a7b54429fb86f87fa883bb302d8391908',1,'VW::cats_tree::tree_node']]],
-  ['is_5fscalar_5foption_5ftype',['is_scalar_option_type',['../structVW_1_1config_1_1is__scalar__impl_1_1is__scalar__option__type.html',1,'VW::config::is_scalar_impl']]],
   ['is_5fscalar_5foption_5ftype',['is_scalar_option_type',['../structVW_1_1config_1_1is__scalar__option__type.html',1,'VW::config']]],
+  ['is_5fscalar_5foption_5ftype',['is_scalar_option_type',['../structVW_1_1config_1_1is__scalar__impl_1_1is__scalar__option__type.html',1,'VW::config::is_scalar_impl']]],
   ['is_5fscalar_5foption_5ftype_3c_20std_3a_3avector_3c_20args_2e_2e_2e_20_3e_20_3e',['is_scalar_option_type&lt; std::vector&lt; Args... &gt; &gt;',['../structVW_1_1config_1_1is__scalar__impl_1_1is__scalar__option__type_3_01std_1_1vector_3_01Args_8_8_8_01_4_01_4.html',1,'VW::config::is_scalar_impl']]],
   ['is_5ftest_5flabel',['is_test_label',['../namespaceCB.html#a6b09080ebdf865ae595099ca93bca9e7',1,'CB']]],
   ['is_5fvalid_5fpdf',['is_valid_pdf',['../namespaceVW_1_1continuous__actions.html#a4f1b699c90c2a0efb59a20b42707ef48',1,'VW::continuous_actions']]],
@@ -89,7 +90,7 @@ var searchData=
   ['isbinary',['isbinary',['../classio__buf.html#a1974dd5257eaa530030fc59cce0589be',1,'io_buf']]],
   ['isvalid',['isValid',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#a808e770995c7355b648a944b5fb730bd',1,'VW::distributionally_robust::ChiSquared']]],
   ['iter',['Iter',['../classvw__slim_1_1internal_1_1collection__pair__iterator.html#a5a90685549f3921ce9f3c216bf1b724b',1,'vw_slim::internal::collection_pair_iterator']]],
-  ['iterator',['iterator',['../classexample__predict_1_1iterator.html',1,'example_predict']]],
   ['iterator',['iterator',['../classsparse__parameters.html#a5eb8b393b6ea9cdd906c0619756a9bfa',1,'sparse_parameters::iterator()'],['../classdense__parameters.html#ab179f73b2cfa31b2c55895aa742bdafb',1,'dense_parameters::iterator()'],['../structfeatures.html#adb08a42ec07aefa8d0ca275e19d89021',1,'features::iterator()'],['../structv__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_3_01T_01_4_1_1value_01_4_1_1type_01_4.html#ae6e0aa94cba96f562f36db937f796de5',1,'v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;::iterator()'],['../classexample__predict_1_1iterator.html#a74c039311924caf58a5dfcb0af857bad',1,'example_predict::iterator::iterator()']]],
+  ['iterator',['iterator',['../classexample__predict_1_1iterator.html',1,'example_predict']]],
   ['iterator_5fcategory',['iterator_category',['../classACTION__SCORE_1_1score__iterator.html#a398c2f8c2e8558b126113185084d2840',1,'ACTION_SCORE::score_iterator::iterator_category()'],['../classsparse__iterator.html#a8b5684ea98f1d31ebbd630a5a927136a',1,'sparse_iterator::iterator_category()'],['../classdense__iterator.html#ae01abc70e39f6651d328f9c371651a75',1,'dense_iterator::iterator_category()'],['../classaudit__features__iterator.html#a34974aa11f8424f02937f627749bb510',1,'audit_features_iterator::iterator_category()'],['../classfeatures__iterator.html#ab911b39a65e6eab95a96ee89e239181b',1,'features_iterator::iterator_category()']]]
 ];

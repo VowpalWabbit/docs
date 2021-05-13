@@ -18,6 +18,7 @@ var searchData=
   ['first_5fobserved_5flabel',['first_observed_label',['../structshared__data.html#ad9928fa7af7f746db35a6803a17f452b',1,'shared_data']]],
   ['first_5fonly',['first_only',['../structVW_1_1pmf__to__pdf_1_1reduction.html#af9469be27491babc9fb2ab61a1481784',1,'VW::pmf_to_pdf::reduction']]],
   ['flatbuffer',['flatbuffer',['../structinput__options.html#af68756d6cbe80559c98b31ea167a3566',1,'input_options']]],
+  ['float_5fmetrics_5flist',['float_metrics_list',['../structVW_1_1metric__sink.html#a9c88f329f288399a777c5d76ef86fd1a',1,'VW::metric_sink']]],
   ['float_5fstate',['float_state',['../structContext.html#a724f9710a5897be7e09e301afe8b1abe',1,'Context']]],
   ['fnv_5fprime',['FNV_prime',['../constant_8h.html#a7fa06e2bcb0551d4d612dbcc7871a919',1,'constant.h']]],
   ['foreground',['foreground',['../structinput__options.html#afb36dd3a1f5b147b90624c83943bd675',1,'input_options']]],

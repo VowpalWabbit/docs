@@ -45,7 +45,7 @@ var searchData=
   ['per_5ffeature_5fregularizer_5foutput',['per_feature_regularizer_output',['../structvw.html#a9f7c490c60f9db80f599703186ca71a0',1,'vw']]],
   ['per_5ffeature_5fregularizer_5ftext',['per_feature_regularizer_text',['../structvw.html#a785187bd18fe17fab06559a2ff7a8207',1,'vw']]],
   ['permutations',['permutations',['../structvw.html#af6bb6bea75923040c95324f9da130a14',1,'vw']]],
-  ['persist_5fmetrics',['persist_metrics',['../structVW_1_1cb__explore__adf_1_1cb__explore__adf__base.html#a8c9c96dd3fb15be0913392ef488cbf18',1,'VW::cb_explore_adf::cb_explore_adf_base::persist_metrics()'],['../structVW_1_1LEARNER_1_1learner.html#a6b97965beb0ce0b978a2c82a9474eff5',1,'VW::LEARNER::learner::persist_metrics()']]],
+  ['persist_5fmetrics',['persist_metrics',['../structVW_1_1cb__explore__adf_1_1cb__explore__adf__base.html#a088ddf706581acff3db182ce075f7c78',1,'VW::cb_explore_adf::cb_explore_adf_base::persist_metrics()'],['../structVW_1_1LEARNER_1_1learner.html#ab5b1928dfad0b5dfc4daba230ecbbfed',1,'VW::LEARNER::learner::persist_metrics()']]],
   ['pid_5ffile',['pid_file',['../structinput__options.html#a1a6cefc79283682f609257da002e0984',1,'input_options']]],
   ['plt_2eh',['plt.h',['../plt_8h.html',1,'']]],
   ['plt_5fsetup',['plt_setup',['../plt_8h.html#a06d22b9fa9288a3b1b5d3e2453c7ffca',1,'plt.h']]],

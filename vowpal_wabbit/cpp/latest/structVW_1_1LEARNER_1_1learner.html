@@ -148,10 +148,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9129a600e89a45cad4b7db588ec864be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d3236dc2e7c56c94da6dcbe0e5103a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1learner.html#a0d3236dc2e7c56c94da6dcbe0e5103a6">set_save_load</a> (void(*sl)(T &amp;, <a class="el" href="classio__buf.html">io_buf</a> &amp;, bool, bool))</td></tr>
 <tr class="separator:a0d3236dc2e7c56c94da6dcbe0e5103a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b97965beb0ce0b978a2c82a9474eff5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1learner.html#a6b97965beb0ce0b978a2c82a9474eff5">persist_metrics</a> (std::vector&lt; std::tuple&lt; std::string, size_t &gt;&gt; &amp;metrics_list)</td></tr>
-<tr class="separator:a6b97965beb0ce0b978a2c82a9474eff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada3ee4f51971dde90b90dd0d3e64fab4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1learner.html#ada3ee4f51971dde90b90dd0d3e64fab4">set_persist_metrics</a> (void(*f)(T &amp;, std::vector&lt; std::tuple&lt; std::string, size_t &gt;&gt; &amp;))</td></tr>
-<tr class="separator:ada3ee4f51971dde90b90dd0d3e64fab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5b1928dfad0b5dfc4daba230ecbbfed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1learner.html#ab5b1928dfad0b5dfc4daba230ecbbfed">persist_metrics</a> (<a class="el" href="structVW_1_1metric__sink.html">metric_sink</a> &amp;metrics)</td></tr>
+<tr class="separator:ab5b1928dfad0b5dfc4daba230ecbbfed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59dc15272a8e6c448a279d9ad9986e3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1learner.html#a59dc15272a8e6c448a279d9ad9986e3a">set_persist_metrics</a> (void(*f)(T &amp;, <a class="el" href="structVW_1_1metric__sink.html">metric_sink</a> &amp;))</td></tr>
+<tr class="separator:a59dc15272a8e6c448a279d9ad9986e3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d08eaebd4639b2c26e54ca34c722f6d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1learner.html#a2d08eaebd4639b2c26e54ca34c722f6d">set_finish</a> (void(*f)(T &amp;))</td></tr>
 <tr class="separator:a2d08eaebd4639b2c26e54ca34c722f6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7f4e6f366f7d3a95254ebbed2f35f7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1learner.html#ae7f4e6f366f7d3a95254ebbed2f35f7c">finish</a> ()</td></tr>
@@ -661,7 +661,7 @@ template&lt;class T, class E&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a6b97965beb0ce0b978a2c82a9474eff5"></a>
+<a class="anchor" id="ab5b1928dfad0b5dfc4daba230ecbbfed"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -673,8 +673,8 @@ template&lt;class T, class E&gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="structVW_1_1LEARNER_1_1learner.html">VW::LEARNER::learner</a>&lt; T, E &gt;::persist_metrics </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; std::tuple&lt; std::string, size_t &gt;&gt; &amp;&#160;</td>
-          <td class="paramname"><em>metrics_list</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structVW_1_1metric__sink.html">metric_sink</a> &amp;&#160;</td>
+          <td class="paramname"><em>metrics</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1033,7 +1033,7 @@ template&lt;class L &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ada3ee4f51971dde90b90dd0d3e64fab4"></a>
+<a class="anchor" id="a59dc15272a8e6c448a279d9ad9986e3a"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1045,7 +1045,7 @@ template&lt;class T, class E&gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="structVW_1_1LEARNER_1_1learner.html">VW::LEARNER::learner</a>&lt; T, E &gt;::set_persist_metrics </td>
           <td>(</td>
-          <td class="paramtype">void(*)(T &amp;, std::vector&lt; std::tuple&lt; std::string, size_t &gt;&gt; &amp;)&#160;</td>
+          <td class="paramtype">void(*)(T &amp;, <a class="el" href="structVW_1_1metric__sink.html">metric_sink</a> &amp;)&#160;</td>
           <td class="paramname"><em>f</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1379,7 +1379,7 @@ template&lt;class T, class E&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 12 2021 15:46:44 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu May 13 2021 13:17:11 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
