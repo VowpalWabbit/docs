@@ -29,5 +29,7 @@ var searchData=
   ['num_5ffeatures',['num_features',['../structexample.html#a35f3ec2680a21f971548cf5bb9f1fda0',1,'example::num_features()'],['../structflat__example.html#a524657b4d3359a3cfefe47f5cf3310ae',1,'flat_example::num_features()']]],
   ['num_5ffeatures_5ffrom_5finteractions',['num_features_from_interactions',['../structexample.html#a4c8d46042f845f5b819c74e55b0a5845',1,'example']]],
   ['num_5fnamespaces',['NUM_NAMESPACES',['../constant_8h.html#af6972edf713d5809ccd5658eca433d84',1,'constant.h']]],
+  ['numberofeventszeroactions',['NumberOfEventsZeroActions',['../structdsjson__metrics.html#acfed6584417cf236d45d67dd86a292df',1,'dsjson_metrics']]],
+  ['numberofskippedevents',['NumberOfSkippedEvents',['../structdsjson__metrics.html#a1ce31d4459d477b15c56f63cb5a289aa',1,'dsjson_metrics']]],
   ['numpasses',['numpasses',['../structvw.html#ad1f9eb87601ea231196182e3fce1a2a7',1,'vw']]]
 ];

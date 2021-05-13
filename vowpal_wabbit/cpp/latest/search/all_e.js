@@ -69,6 +69,8 @@ var searchData=
   ['num_5fweights',['num_weights',['../namespaceVW.html#a79f4b5129db34f40bdb6d0a970dd30b1',1,'VW']]],
   ['number_5fof_5fcombinations_5fwith_5frepetition',['number_of_combinations_with_repetition',['../namespaceVW_1_1math.html#a555bb5c5ffbd6c4e26a6e2aaa6df659c',1,'VW::math']]],
   ['number_5fof_5fpermutations_5fwith_5frepetition',['number_of_permutations_with_repetition',['../namespaceVW_1_1math.html#a1a277e1f850e8b4281f2b504c33731eb',1,'VW::math']]],
+  ['numberofeventszeroactions',['NumberOfEventsZeroActions',['../structdsjson__metrics.html#acfed6584417cf236d45d67dd86a292df',1,'dsjson_metrics']]],
+  ['numberofskippedevents',['NumberOfSkippedEvents',['../structdsjson__metrics.html#a1ce31d4459d477b15c56f63cb5a289aa',1,'dsjson_metrics']]],
   ['numeric_5fcasts_2eh',['numeric_casts.h',['../numeric__casts_8h.html',1,'']]],
   ['numpasses',['numpasses',['../structvw.html#ad1f9eb87601ea231196182e3fce1a2a7',1,'vw']]]
 ];

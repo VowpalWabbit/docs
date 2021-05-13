@@ -19,6 +19,7 @@ var searchData=
   ['message_5fnamespace',['message_namespace',['../constant_8h.html#a09941ced3b4fe4c40b71023a150152b0',1,'constant.h']]],
   ['metatask_5fdata',['metatask_data',['../structSearch_1_1search.html#a2614275853e5bf5265c8d2ddf59e9f6e',1,'Search::search']]],
   ['metatask_5fname',['metatask_name',['../structSearch_1_1search.html#a5555842a7681f12739d61635faf89c53',1,'Search::search::metatask_name()'],['../structSearch_1_1search__metatask.html#aecf1da2f6b5b8598d0e285d488f71456',1,'Search::search_metatask::metatask_name()']]],
+  ['metrics',['metrics',['../structparser.html#ae97c6006e9009ad07071c0bce5769c4e',1,'parser']]],
   ['min_5flabel',['min_label',['../structshared__data.html#a7169344996c735da7b771fb6ec93484e',1,'shared_data']]],
   ['min_5fvalue',['min_value',['../structVW_1_1continuous__action_1_1cats_1_1cats.html#a34263d4504320d078e70f32cf4d0baa2',1,'VW::continuous_action::cats::cats::min_value()'],['../structVW_1_1pmf__to__pdf_1_1reduction.html#a5a08da6d75f53dc032285fb576f23883',1,'VW::pmf_to_pdf::reduction::min_value()']]],
   ['minor',['minor',['../structVW_1_1version__struct.html#aaf8c97dec70775a9e43f804cb2fcbe64',1,'VW::version_struct']]],

@@ -57,6 +57,8 @@ var searchData=
   ['first_5fderivative',['first_derivative',['../classloss__function.html#ae0863a09b3ae606c662d38f387a72a83',1,'loss_function']]],
   ['first_5fobserved_5flabel',['first_observed_label',['../structshared__data.html#ad9928fa7af7f746db35a6803a17f452b',1,'shared_data']]],
   ['first_5fonly',['first_only',['../structVW_1_1pmf__to__pdf_1_1reduction.html#af9469be27491babc9fb2ab61a1481784',1,'VW::pmf_to_pdf::reduction']]],
+  ['firsteventid',['FirstEventId',['../structdsjson__metrics.html#aedd286efa64705da90ec179ca47c3fb9',1,'dsjson_metrics']]],
+  ['firsteventtime',['FirstEventTime',['../structdsjson__metrics.html#a207dae03fd7cbda8161715b749a88fcc',1,'dsjson_metrics']]],
   ['flat_5fexample',['flat_example',['../structflat__example.html',1,'']]],
   ['flatbuffer',['flatbuffer',['../structinput__options.html#af68756d6cbe80559c98b31ea167a3566',1,'input_options']]],
   ['flatbuffer_5fto_5fexamples',['flatbuffer_to_examples',['../namespaceVW_1_1parsers_1_1flatbuffer.html#a9f26c15e3063176b7b5c38058a33ef46',1,'VW::parsers::flatbuffer']]],

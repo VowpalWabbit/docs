@@ -28,6 +28,7 @@ var searchData=
   ['throw_5for_5freturn_5fnormal',['THROW_OR_RETURN_NORMAL',['../vw__exception_8h.html#aed3f502493ab3d4d5331e89c6f9d213e',1,'vw_exception.h']]],
   ['throw_5for_5freturn_5fvoid',['THROW_OR_RETURN_VOID',['../vw__exception_8h.html#a02be463b33311c472f114b68bc40b910',1,'vw_exception.h']]],
   ['throwerrno',['THROWERRNO',['../vw__exception_8h.html#a9a08dc7c9e228832f9e243eff236be65',1,'vw_exception.h']]],
+  ['timestamp',['timestamp',['../structDecisionServiceInteraction.html#a0df87aa1435feb01a1c3478ab1a0631b',1,'DecisionServiceInteraction']]],
   ['tint',['tint',['../structVW_1_1config_1_1options__i.html#a4cad1f07848c2aba9ec4c503bb1c2527',1,'VW::config::options_i::tint()'],['../structVW_1_1config_1_1options__name__extractor.html#a7d3d69a96b3d423c6c2d21c7c55ddf59',1,'VW::config::options_name_extractor::tint()'],['../structVW_1_1config_1_1options__boost__po.html#a03c3c998fb52187b893a21b93e35b539',1,'VW::config::options_boost_po::tint()']]],
   ['tnormal_5fweights',['tnormal_weights',['../structvw.html#a8ce9b2281fbfbcd01bd64e06bf592942',1,'vw']]],
   ['to_5fargv',['to_argv',['../namespaceVW.html#a54e76507ba333ccaf9eeb58a40fb712c',1,'VW']]],
@@ -50,8 +51,8 @@ var searchData=
   ['training',['training',['../structvw.html#aa008bf77c7a0f5b90b21d16b3b1cf38c',1,'vw']]],
   ['transitionstate',['TransitionState',['../structContext.html#a2361db68e5270b12758993fba441f47d',1,'Context']]],
   ['tree_5fbandwidth',['tree_bandwidth',['../structVW_1_1pmf__to__pdf_1_1reduction.html#a253f77aaf628fbae399afcc90637f796',1,'VW::pmf_to_pdf::reduction']]],
-  ['tree_5fnode',['tree_node',['../structVW_1_1cats__tree_1_1tree__node.html#abe1e752a96be9e59d8b39fe3b9691b9e',1,'VW::cats_tree::tree_node::tree_node()'],['../structVW_1_1offset__tree_1_1tree__node.html#a024d6fbfdd0d0268c69c01680997e1ea',1,'VW::offset_tree::tree_node::tree_node()']]],
   ['tree_5fnode',['tree_node',['../structVW_1_1offset__tree_1_1tree__node.html',1,'VW::offset_tree']]],
+  ['tree_5fnode',['tree_node',['../structVW_1_1cats__tree_1_1tree__node.html#abe1e752a96be9e59d8b39fe3b9691b9e',1,'VW::cats_tree::tree_node::tree_node()'],['../structVW_1_1offset__tree_1_1tree__node.html#a024d6fbfdd0d0268c69c01680997e1ea',1,'VW::offset_tree::tree_node::tree_node()']]],
   ['tree_5fnode',['tree_node',['../structVW_1_1cats__tree_1_1tree__node.html',1,'VW::cats_tree']]],
   ['tree_5fstats_5fto_5fstring',['tree_stats_to_string',['../structVW_1_1cats__tree_1_1min__depth__binary__tree.html#a4757a3209eb528a9592550e279188c2c',1,'VW::cats_tree::min_depth_binary_tree']]],
   ['trunc_5fweight',['trunc_weight',['../namespaceGD.html#a9c15740d0f166048172adbe5b0e7531b',1,'GD']]],
@@ -64,7 +65,7 @@ var searchData=
   ['type_5fhash',['type_hash',['../structVW_1_1config_1_1typed__option.html#af75aac6192cabac91008572cde768049',1,'VW::config::typed_option']]],
   ['typed_5foption',['typed_option',['../structVW_1_1config_1_1typed__option.html',1,'VW::config']]],
   ['typed_5foption',['typed_option',['../structVW_1_1config_1_1typed__option.html#a68cf7610208fdd4116cf9c4c707ec697',1,'VW::config::typed_option']]],
-  ['typed_5foption_5fwith_5flocation',['typed_option_with_location',['../structVW_1_1config_1_1typed__option__with__location.html',1,'VW::config']]],
   ['typed_5foption_5fwith_5flocation',['typed_option_with_location',['../structVW_1_1config_1_1typed__option__with__location.html#a72c62aa3e0fb12562e96e51de34f66cf',1,'VW::config::typed_option_with_location']]],
+  ['typed_5foption_5fwith_5flocation',['typed_option_with_location',['../structVW_1_1config_1_1typed__option__with__location.html',1,'VW::config']]],
   ['typelist',['typelist',['../structVW_1_1config_1_1typelist.html',1,'VW::config']]]
 ];

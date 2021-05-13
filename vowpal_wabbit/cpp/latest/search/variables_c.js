@@ -13,6 +13,8 @@ var searchData=
   ['labeled',['labeled',['../structVW_1_1slates_1_1label.html#a8ee43031c61a9a8a56d4c05bbec341ac',1,'VW::slates::label']]],
   ['last_5fcorrect_5fcost',['last_correct_cost',['../structGEN__CS_1_1cb__to__cs.html#a84aed12d3c21ee450ffcc3128e3db994',1,'GEN_CS::cb_to_cs']]],
   ['last_5fpred_5freg',['last_pred_reg',['../structGEN__CS_1_1cb__to__cs.html#a4d390b9d79b8a71897d727dea0299356',1,'GEN_CS::cb_to_cs']]],
+  ['lasteventid',['LastEventId',['../structdsjson__metrics.html#aa673f398cf06ec1740db6b90afd433e3',1,'dsjson_metrics']]],
+  ['lasteventtime',['LastEventTime',['../structdsjson__metrics.html#af408836b971b1ba858d0033d3fb3211c',1,'dsjson_metrics']]],
   ['lbl_5fparser',['lbl_parser',['../structparser.html#a986cd8c09f666c0ae0928a0e3d092222',1,'parser']]],
   ['lda',['lda',['../structvw.html#a64bc066c8b21fa67a5a7b2700fb9160b',1,'vw']]],
   ['ldict',['ldict',['../structshared__data.html#a535958b995f49481d87c6d8fb62ab9ef',1,'shared_data']]],
