@@ -4,6 +4,7 @@ var searchData=
   ['cats_5ftree',['cats_tree',['../structVW_1_1cats__tree_1_1cats__tree.html',1,'VW::cats_tree']]],
   ['cb_5fclass',['cb_class',['../structCB_1_1cb__class.html',1,'CB']]],
   ['cb_5fexplore_5fadf_5fbase',['cb_explore_adf_base',['../structVW_1_1cb__explore__adf_1_1cb__explore__adf__base.html',1,'VW::cb_explore_adf']]],
+  ['cb_5fexplore_5fmetrics',['cb_explore_metrics',['../structVW_1_1cb__explore__adf_1_1cb__explore__metrics.html',1,'VW::cb_explore_adf']]],
   ['cb_5fto_5fcs',['cb_to_cs',['../structGEN__CS_1_1cb__to__cs.html',1,'GEN_CS']]],
   ['cb_5fto_5fcs_5fadf',['cb_to_cs_adf',['../structGEN__CS_1_1cb__to__cs__adf.html',1,'GEN_CS']]],
   ['cbify_5fadf_5fdata',['cbify_adf_data',['../structcbify__adf__data.html',1,'']]],
