@@ -97,6 +97,7 @@ var searchData=
   ['version_5ffile_5fwith_5finteractions',['VERSION_FILE_WITH_INTERACTIONS',['../vw__versions_8h.html#a00aeb3fb6c20ea3e111d16b8c86b509f',1,'vw_versions.h']]],
   ['version_5ffile_5fwith_5finteractions_5fin_5ffo',['VERSION_FILE_WITH_INTERACTIONS_IN_FO',['../vw__versions_8h.html#aef4c06cbe43d44bebff61e5787a34e1d',1,'vw_versions.h']]],
   ['version_5ffile_5fwith_5frank_5fin_5fheader',['VERSION_FILE_WITH_RANK_IN_HEADER',['../vw__versions_8h.html#aaa4d1407b4bd1d5e2a333b52cdf83188',1,'vw_versions.h']]],
+  ['version_5ffile_5fwith_5freg_5fcb_5fsave_5fresume',['VERSION_FILE_WITH_REG_CB_SAVE_RESUME',['../vw__versions_8h.html#afc056c9e7346782d54a6a9561231cb82',1,'vw_versions.h']]],
   ['version_5ffile_5fwith_5fsquare_5fcb_5fsave_5fresume',['VERSION_FILE_WITH_SQUARE_CB_SAVE_RESUME',['../vw__versions_8h.html#ad0479475294285ae6b997cc48082a9fd',1,'vw_versions.h']]],
   ['version_5fstruct',['version_struct',['../structVW_1_1version__struct.html',1,'VW']]],
   ['version_5fstruct',['version_struct',['../structVW_1_1version__struct.html#a23c2ee74b27d527cae0715d75fd1a800',1,'VW::version_struct::version_struct(int maj=0, int min=0, int rv=0)'],['../structVW_1_1version__struct.html#ae1b252a01d68084e2d7a8ea3f2778dae',1,'VW::version_struct::version_struct(const char *v_str)'],['../structVW_1_1version__struct.html#a714597d1668ad1a17960eb8793849534',1,'VW::version_struct::version_struct(const version_struct &amp;v)']]],
