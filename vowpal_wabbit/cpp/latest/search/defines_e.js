@@ -10,6 +10,7 @@ var searchData=
   ['version_5ffile_5fwith_5finteractions',['VERSION_FILE_WITH_INTERACTIONS',['../vw__versions_8h.html#a00aeb3fb6c20ea3e111d16b8c86b509f',1,'vw_versions.h']]],
   ['version_5ffile_5fwith_5finteractions_5fin_5ffo',['VERSION_FILE_WITH_INTERACTIONS_IN_FO',['../vw__versions_8h.html#aef4c06cbe43d44bebff61e5787a34e1d',1,'vw_versions.h']]],
   ['version_5ffile_5fwith_5frank_5fin_5fheader',['VERSION_FILE_WITH_RANK_IN_HEADER',['../vw__versions_8h.html#aaa4d1407b4bd1d5e2a333b52cdf83188',1,'vw_versions.h']]],
+  ['version_5ffile_5fwith_5fsquare_5fcb_5fsave_5fresume',['VERSION_FILE_WITH_SQUARE_CB_SAVE_RESUME',['../vw__versions_8h.html#ad0479475294285ae6b997cc48082a9fd',1,'vw_versions.h']]],
   ['vsprintf_5fs',['vsprintf_s',['../crossplat__compat_8h.html#a803c6f2523bae626734a87a074e480e9',1,'crossplat_compat.h']]],
   ['vw_5fapi_5fnoexcept',['VW_API_NOEXCEPT',['../vwvis_8h.html#ac4fbea6c6236d7a210eee67e302be106',1,'vwvis.h']]],
   ['vw_5fassert',['VW_ASSERT',['../vw__exception_8h.html#afdf68ea80cc57c25b736d8306f88edee',1,'vw_exception.h']]],
