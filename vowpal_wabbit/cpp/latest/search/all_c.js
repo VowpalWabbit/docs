@@ -9,6 +9,8 @@ var searchData=
   ['label',['label',['../structCB__EVAL_1_1label.html',1,'CB_EVAL']]],
   ['label',['label',['../structCCB_1_1label.html',1,'CCB']]],
   ['label',['label',['../structVW_1_1slates_1_1label.html',1,'VW::slates']]],
+  ['label_5faction_5ffirst_5foption',['label_action_first_option',['../structVW_1_1cb__explore__adf_1_1cb__explore__metrics.html#a6a7c1667355f42eb8d642d13955145f8',1,'VW::cb_explore_adf::cb_explore_metrics']]],
+  ['label_5faction_5fnot_5ffirst',['label_action_not_first',['../structVW_1_1cb__explore__adf_1_1cb__explore__metrics.html#a29bc83ce95727c722647bbfbe08994f5',1,'VW::cb_explore_adf::cb_explore_metrics']]],
   ['label_5fdata',['label_data',['../structlabel__data.html',1,'label_data'],['../structlabel__data.html#a800529bafb869d908c46cb8f889e38e9',1,'label_data::label_data()'],['../structlabel__data.html#a84397d398f811484280a7f8a5c9390c3',1,'label_data::label_data(float label)']]],
   ['label_5fdictionary_2eh',['label_dictionary.h',['../label__dictionary_8h.html',1,'']]],
   ['label_5ffeature_5fmap',['label_feature_map',['../namespaceLabelDict.html#ab02875d5e0a699cc21641a98327d815a',1,'LabelDict']]],

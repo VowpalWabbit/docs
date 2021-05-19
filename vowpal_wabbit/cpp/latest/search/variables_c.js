@@ -4,6 +4,8 @@ var searchData=
   ['l1_5flambda',['l1_lambda',['../structvw.html#a029233587c89ac4d4c1c1d70aa8c1640',1,'vw']]],
   ['l2_5flambda',['l2_lambda',['../structvw.html#a3710feef98613832b4c42744007b1093',1,'vw']]],
   ['label',['label',['../structMULTICLASS_1_1label__t.html#aa8b080653e3c08b5363152009728453d',1,'MULTICLASS::label_t::label()'],['../structlabel__data.html#a09103f622b965d8c14f0047b53ba7fe1',1,'label_data::label()']]],
+  ['label_5faction_5ffirst_5foption',['label_action_first_option',['../structVW_1_1cb__explore__adf_1_1cb__explore__metrics.html#a6a7c1667355f42eb8d642d13955145f8',1,'VW::cb_explore_adf::cb_explore_metrics']]],
+  ['label_5faction_5fnot_5ffirst',['label_action_not_first',['../structVW_1_1cb__explore__adf_1_1cb__explore__metrics.html#a29bc83ce95727c722647bbfbe08994f5',1,'VW::cb_explore_adf::cb_explore_metrics']]],
   ['label_5findex_5fstate',['label_index_state',['../structContext.html#a679ab3d8b198ccddba2ecc998480ba7f',1,'Context']]],
   ['label_5fobject_5fstate',['label_object_state',['../structContext.html#accb075644231b884ecab3d1301524c4b',1,'Context']]],
   ['label_5fsingle_5fproperty_5fstate',['label_single_property_state',['../structContext.html#a5ad5225510ed6a3d777c89f50ba72746',1,'Context']]],
