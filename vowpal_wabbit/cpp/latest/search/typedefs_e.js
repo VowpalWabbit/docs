@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['scores_5ft',['scores_t',['../structVW_1_1offset__tree_1_1offset__tree.html#a71a1c5bd771686ce85a5f9ce4c60f3e4',1,'VW::offset_tree::offset_tree']]],
-  ['single_5flearner',['single_learner',['../namespaceVW_1_1LEARNER.html#ab17418c8747139674441f6d96e10aa16',1,'VW::LEARNER']]],
-  ['socket_5ft',['socket_t',['../allreduce_8h.html#a30353f381f5fccbb956eea1f3a110b6c',1,'socket_t():&#160;allreduce.h'],['../spanning__tree_8h.html#a30353f381f5fccbb956eea1f3a110b6c',1,'socket_t():&#160;spanning_tree.h']]],
-  ['string_5fview',['string_view',['../namespaceVW.html#a85aa9dc51ef86f7e832147b1c0c93d72',1,'VW']]],
-  ['supported_5foptions_5ftypes',['supported_options_types',['../namespaceVW_1_1config.html#a6ba892ff351fd6a919c4af3f1b39c114',1,'VW::config']]]
+  ['reduction_5fsetup_5ffn',['reduction_setup_fn',['../global__data_8h.html#a06dae3007c6369fdfcf6c5e14b2b34e1',1,'global_data.h']]],
+  ['ref',['Ref',['../classvw__slim_1_1internal_1_1location__reference.html#a2cb2d9040226aa0ba192c8841d7c24bf',1,'vw_slim::internal::location_reference::Ref()'],['../classvw__slim_1_1internal_1_1collection__pair__iterator.html#a0fe3e989074b5ea0d7f10422e6bedac9',1,'vw_slim::internal::collection_pair_iterator::Ref()']]],
+  ['reference',['reference',['../classACTION__SCORE_1_1score__iterator.html#a4866aa934c07790c0f8e5bb04e14bc5b',1,'ACTION_SCORE::score_iterator::reference()'],['../classsparse__iterator.html#ac617a19674aab4b53a1c1bf52980fb58',1,'sparse_iterator::reference()'],['../classdense__iterator.html#ac3ec6a5f94f444fe4eb34e8a751aea53',1,'dense_iterator::reference()'],['../classaudit__features__iterator.html#a7398fef1308c0c09fd020b0e27fb5d07',1,'audit_features_iterator::reference()'],['../classfeatures__iterator.html#ae5648adb0d5103b25d49460400fab1af',1,'features_iterator::reference()'],['../structv__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_3_01T_01_4_1_1value_01_4_1_1type_01_4.html#a9f5353364c144b79df653ae7c616758c',1,'v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;::reference()']]]
 ];

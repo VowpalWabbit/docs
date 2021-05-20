@@ -22,6 +22,7 @@ var searchData=
   ['update',['update',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#a94e981844ac9c0bdaa6d4bde9a61d894',1,'VW::distributionally_robust::ChiSquared::update()'],['../structVW_1_1LEARNER_1_1learner.html#af994d66959b825bc3b92af991529c7e6',1,'VW::LEARNER::learner::update()'],['../structshared__data.html#ad3b0fc9176c689eb63bf255499223c62',1,'shared_data::update()']]],
   ['update_5fdump_5finterval',['update_dump_interval',['../structshared__data.html#a86dc26ad7249ba38f03f8a2c6f315f37',1,'shared_data']]],
   ['update_5ff',['update_f',['../structVW_1_1LEARNER_1_1learn__data.html#a756f38f0bee0f8ed57c327836add861b',1,'VW::LEARNER::learn_data']]],
+  ['update_5finteractions_5fif_5fnew_5fnamespace_5fseen',['update_interactions_if_new_namespace_seen',['../structINTERACTIONS_1_1interactions__generator.html#af59d8af7d6da2b2ff884c4d4ecb73dd9',1,'INTERACTIONS::interactions_generator']]],
   ['updated_5fprediction',['updated_prediction',['../structexample.html#a86c4567ec3771465b2387bdfe83eb86c',1,'example']]],
   ['ut_5futil_2eh',['ut_util.h',['../ut__util_8h.html',1,'']]]
 ];

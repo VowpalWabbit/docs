@@ -21,6 +21,7 @@ var searchData=
   ['weighted_5funlabeled_5fexamples',['weighted_unlabeled_examples',['../structshared__data.html#ac3d7065c2ec09563226497ab0805b4b5',1,'shared_data']]],
   ['weights',['weights',['../structGD_1_1multipredict__info.html#ac1993819a02763fa326ed38197ae2ee4',1,'GD::multipredict_info::weights()'],['../structvw.html#a8c84a43b76ba98653da4377ea827a5b4',1,'vw::weights()'],['../structVW_1_1LEARNER_1_1learner.html#aa72097142563b721f185f8ae862ec29d',1,'VW::LEARNER::learner::weights()']]],
   ['what',['what',['../classVW_1_1vw__exception.html#aadedb04021854db704254fb43b6e19e6',1,'VW::vw_exception']]],
+  ['wildcard_5fnamespace',['wildcard_namespace',['../constant_8h.html#aa97811baf6be533f89fe42c1043e7ab2',1,'constant.h']]],
   ['with_5foutput_5fstring',['with_output_string',['../classSearch_1_1BaseTask.html#a91cae7d703dc5c6213f36e23d696de93',1,'Search::BaseTask']]],
   ['words',['words',['../structparser.html#ab5a5d63e69677436cba0278783f50578',1,'parser']]],
   ['wpp',['wpp',['../structvw.html#ad9a07c1068f9c638b4ce548c048156f7',1,'vw']]],
@@ -30,8 +31,8 @@ var searchData=
   ['write_5ffunc_5ft',['write_func_t',['../namespaceVW_1_1io.html#afa7ea16384ae2c7aadbc1408cd4be49a',1,'VW::io']]],
   ['writeit',['writeit',['../io__buf_8h.html#ac3dc74ce9e42a7cf9cb19834d4593d57',1,'io_buf.h']]],
   ['writeitvar',['writeitvar',['../io__buf_8h.html#aa441214d84044fca62cc7341883b7843',1,'io_buf.h']]],
-  ['writer',['writer',['../structVW_1_1io_1_1writer.html#a450d433694ee55b73fdc052d40c4ba6d',1,'VW::io::writer::writer()=default'],['../structVW_1_1io_1_1writer.html#aa5be44de0372ff6b7002fe3b0f0657e9',1,'VW::io::writer::writer(writer &amp;other)=delete'],['../structVW_1_1io_1_1writer.html#a5e2aec8dea0fcf87204f91ac010b0f56',1,'VW::io::writer::writer(writer &amp;&amp;other)=delete']]],
   ['writer',['writer',['../structVW_1_1io_1_1writer.html',1,'VW::io']]],
-  ['writer_5fstream_5fbuf',['writer_stream_buf',['../classVW_1_1io_1_1writer__stream__buf.html#adbeb736dfb6013e5a0b0fecf6f6d9e13',1,'VW::io::writer_stream_buf']]],
-  ['writer_5fstream_5fbuf',['writer_stream_buf',['../classVW_1_1io_1_1writer__stream__buf.html',1,'VW::io']]]
+  ['writer',['writer',['../structVW_1_1io_1_1writer.html#a450d433694ee55b73fdc052d40c4ba6d',1,'VW::io::writer::writer()=default'],['../structVW_1_1io_1_1writer.html#aa5be44de0372ff6b7002fe3b0f0657e9',1,'VW::io::writer::writer(writer &amp;other)=delete'],['../structVW_1_1io_1_1writer.html#a5e2aec8dea0fcf87204f91ac010b0f56',1,'VW::io::writer::writer(writer &amp;&amp;other)=delete']]],
+  ['writer_5fstream_5fbuf',['writer_stream_buf',['../classVW_1_1io_1_1writer__stream__buf.html',1,'VW::io']]],
+  ['writer_5fstream_5fbuf',['writer_stream_buf',['../classVW_1_1io_1_1writer__stream__buf.html#adbeb736dfb6013e5a0b0fecf6f6d9e13',1,'VW::io::writer_stream_buf']]]
 ];

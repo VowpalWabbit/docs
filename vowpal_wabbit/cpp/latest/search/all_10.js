@@ -129,7 +129,7 @@ var searchData=
   ['probability_5ftolerance',['probability_tolerance',['../constant_8h.html#a2d817f5db781c538da7d027e030909b8',1,'constant.h']]],
   ['probabilityofdrop',['probabilityOfDrop',['../structDecisionServiceInteraction.html#a0e2a393fe1b1427ca5ee5c3fb98ea785',1,'DecisionServiceInteraction']]],
   ['probs',['probs',['../classLabelObjectState.html#adbe8675cee3239b2f7b77ac3e4a90e53',1,'LabelObjectState']]],
-  ['process_5fself_5finteractions',['PROCESS_SELF_INTERACTIONS',['../interactions__predict_8h.html#a03b2a48f436f31fc6ab799c2ff495707',1,'interactions_predict.h']]],
+  ['process_5fself_5finteractions',['PROCESS_SELF_INTERACTIONS',['../interactions_8h.html#a03b2a48f436f31fc6ab799c2ff495707',1,'interactions.h']]],
   ['program_5fname',['program_name',['../structvw.html#a3a47c849579030d6b922aa2891076858',1,'vw']]],
   ['progress_5fadd',['progress_add',['../structvw.html#ab7b7f1e764da852d44b5e900fa991d95',1,'vw']]],
   ['progress_5farg',['progress_arg',['../structvw.html#a33eefadb9fb5b904e8454a4c864f47a3',1,'vw']]],

@@ -87,44 +87,75 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">interactions.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="global__data_8h.html">global_data.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="interactions__predict_8h.html">interactions_predict.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="example__predict_8h.html">example_predict.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="reductions__fwd_8h.html">reductions_fwd.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="constant_8h.html">constant.h</a>&quot;</code><br />
+<code>#include &lt;cstddef&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;set&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structINTERACTIONS_1_1interactions__generator.html">INTERACTIONS::interactions_generator</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceINTERACTIONS"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html">INTERACTIONS</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a03b2a48f436f31fc6ab799c2ff495707"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interactions_8h.html#a03b2a48f436f31fc6ab799c2ff495707">PROCESS_SELF_INTERACTIONS</a>(ft_value)&#160;&#160;&#160;feature_self_interactions</td></tr>
+<tr class="separator:a03b2a48f436f31fc6ab799c2ff495707"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a4e36a984158e25b4053013d1e19fe70b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#a4e36a984158e25b4053013d1e19fe70b">INTERACTIONS::generate_func_t</a> = std::vector&lt; std::vector&lt; <a class="el" href="example__predict_8h.html#a3302327c8e16f985dd6c4474bf279c40">namespace_index</a> &gt;&gt;(const std::set&lt; <a class="el" href="example__predict_8h.html#a3302327c8e16f985dd6c4474bf279c40">namespace_index</a> &gt; &amp;namespaces, size_t num_to_pick)</td></tr>
+<tr class="separator:a4e36a984158e25b4053013d1e19fe70b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ad5ca6ac4771bad34429a06a8e83793f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceVW_1_1LEARNER.html#ab481a83a0a49d7b827babe725e135b20">VW::LEARNER::base_learner</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#ad5ca6ac4771bad34429a06a8e83793f0">INTERACTIONS::generate_interactions_setup</a> (<a class="el" href="structVW_1_1config_1_1options__i.html">VW::config::options_i</a> &amp;options, <a class="el" href="structvw.html">vw</a> &amp;all)</td></tr>
+<tr class="separator:ad5ca6ac4771bad34429a06a8e83793f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab689f2484c76a1ed43a9441fbb6e09a1"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#ab689f2484c76a1ed43a9441fbb6e09a1">INTERACTIONS::is_printable_namespace</a> (const unsigned char ns)</td></tr>
 <tr class="separator:ab689f2484c76a1ed43a9441fbb6e09a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d586521269dbb651262b55b97121395"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; <a class="el" href="example__predict_8h.html#a3302327c8e16f985dd6c4474bf279c40">namespace_index</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#a0d586521269dbb651262b55b97121395">INTERACTIONS::expand_interactions</a> (const std::vector&lt; std::vector&lt; <a class="el" href="example__predict_8h.html#a3302327c8e16f985dd6c4474bf279c40">namespace_index</a> &gt;&gt; &amp;vec, const size_t required_length, const std::string &amp;err_msg)</td></tr>
-<tr class="separator:a0d586521269dbb651262b55b97121395"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28c743dcd69026f8687253e2d62cc50e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#a28c743dcd69026f8687253e2d62cc50e">INTERACTIONS::expand_quadratics_wildcard_interactions</a> (<a class="el" href="structnamespace__interactions.html">namespace_interactions</a> &amp;interactions)</td></tr>
-<tr class="separator:a28c743dcd69026f8687253e2d62cc50e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab425e1173c73259e20bc610f381204f4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#ab425e1173c73259e20bc610f381204f4">INTERACTIONS::contains_wildcard</a> (const std::vector&lt; <a class="el" href="example__predict_8h.html#a3302327c8e16f985dd6c4474bf279c40">namespace_index</a> &gt; &amp;interaction)</td></tr>
+<tr class="separator:ab425e1173c73259e20bc610f381204f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaadf0e53a790b6d3b24dce19a9be361"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#abaadf0e53a790b6d3b24dce19a9be361">INTERACTIONS::eval_count_of_generated_ft</a> (bool permutations, const std::vector&lt; std::vector&lt; <a class="el" href="example__predict_8h.html#a3302327c8e16f985dd6c4474bf279c40">namespace_index</a> &gt;&gt; &amp;interactions, const std::array&lt; <a class="el" href="structfeatures.html">features</a>, <a class="el" href="constant_8h.html#af6972edf713d5809ccd5658eca433d84">NUM_NAMESPACES</a> &gt; &amp;feature_spaces, size_t &amp;new_features_cnt, float &amp;new_features_value)</td></tr>
+<tr class="separator:abaadf0e53a790b6d3b24dce19a9be361"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebfb30820450748a5196b37a08a15383"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; <a class="el" href="example__predict_8h.html#a3302327c8e16f985dd6c4474bf279c40">namespace_index</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#aebfb30820450748a5196b37a08a15383">INTERACTIONS::generate_namespace_combinations_with_repetition</a> (const std::set&lt; <a class="el" href="example__predict_8h.html#a3302327c8e16f985dd6c4474bf279c40">namespace_index</a> &gt; &amp;namespaces, size_t num_to_pick)</td></tr>
+<tr class="separator:aebfb30820450748a5196b37a08a15383"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c231034d75f45c0de5d5902de5bb66d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; <a class="el" href="example__predict_8h.html#a3302327c8e16f985dd6c4474bf279c40">namespace_index</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#a5c231034d75f45c0de5d5902de5bb66d">INTERACTIONS::generate_namespace_permutations_with_repetition</a> (const std::set&lt; <a class="el" href="example__predict_8h.html#a3302327c8e16f985dd6c4474bf279c40">namespace_index</a> &gt; &amp;namespaces, size_t num_to_pick)</td></tr>
+<tr class="separator:a5c231034d75f45c0de5d5902de5bb66d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a100617fbe0ad192a2b8b38f954b17eda"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; <a class="el" href="example__predict_8h.html#a3302327c8e16f985dd6c4474bf279c40">namespace_index</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#a100617fbe0ad192a2b8b38f954b17eda">INTERACTIONS::expand_quadratics_wildcard_interactions</a> (bool leave_duplicate_interactions, const std::set&lt; <a class="el" href="example__predict_8h.html#a3302327c8e16f985dd6c4474bf279c40">namespace_index</a> &gt; &amp;new_example_indices)</td></tr>
+<tr class="separator:a100617fbe0ad192a2b8b38f954b17eda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a991c5a05c6d343b974d3015f398c405e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#a991c5a05c6d343b974d3015f398c405e">INTERACTIONS::sort_interactions_comparator</a> (const std::vector&lt; <a class="el" href="example__predict_8h.html#a3302327c8e16f985dd6c4474bf279c40">namespace_index</a> &gt; &amp;a, const std::vector&lt; <a class="el" href="example__predict_8h.html#a3302327c8e16f985dd6c4474bf279c40">namespace_index</a> &gt; &amp;b)</td></tr>
 <tr class="separator:a991c5a05c6d343b974d3015f398c405e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8cd382cc96bcb221df2f5e45e337fe5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#ae8cd382cc96bcb221df2f5e45e337fe5">INTERACTIONS::sort_and_filter_duplicate_interactions</a> (std::vector&lt; std::vector&lt; <a class="el" href="example__predict_8h.html#a3302327c8e16f985dd6c4474bf279c40">namespace_index</a> &gt;&gt; &amp;vec, bool filter_duplicates, size_t &amp;removed_cnt, size_t &amp;sorted_cnt)</td></tr>
 <tr class="separator:ae8cd382cc96bcb221df2f5e45e337fe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abaadf0e53a790b6d3b24dce19a9be361"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#abaadf0e53a790b6d3b24dce19a9be361">INTERACTIONS::eval_count_of_generated_ft</a> (bool permutations, const std::vector&lt; std::vector&lt; <a class="el" href="example__predict_8h.html#a3302327c8e16f985dd6c4474bf279c40">namespace_index</a> &gt;&gt; &amp;interactions, const std::array&lt; <a class="el" href="structfeatures.html">features</a>, <a class="el" href="constant_8h.html#af6972edf713d5809ccd5658eca433d84">NUM_NAMESPACES</a> &gt; &amp;feature_spaces, size_t &amp;new_features_cnt, float &amp;new_features_value)</td></tr>
-<tr class="separator:abaadf0e53a790b6d3b24dce19a9be361"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86f0533db44640080af62f9a73e71e7d"><td class="memTemplParams" colspan="2">template&lt;class R , class S , void(*)(R &amp;, float, S) T, bool audit, void(*)(R &amp;, const audit_strings *) audit_func&gt; </td></tr>
-<tr class="memitem:a86f0533db44640080af62f9a73e71e7d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#a86f0533db44640080af62f9a73e71e7d">INTERACTIONS::generate_interactions</a> (<a class="el" href="structvw.html">vw</a> &amp;all, <a class="el" href="structexample__predict.html">example_predict</a> &amp;ec, R &amp;dat, size_t &amp;num_interacted_features)</td></tr>
-<tr class="separator:a86f0533db44640080af62f9a73e71e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62eee3dd32e3c827cdc4b5231653336b"><td class="memTemplParams" colspan="2">template&lt;class R , class S , void(*)(R &amp;, float, S) T&gt; </td></tr>
-<tr class="memitem:a62eee3dd32e3c827cdc4b5231653336b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#a62eee3dd32e3c827cdc4b5231653336b">INTERACTIONS::generate_interactions</a> (<a class="el" href="structvw.html">vw</a> &amp;all, <a class="el" href="structexample__predict.html">example_predict</a> &amp;ec, R &amp;dat, size_t &amp;num_interacted_features)</td></tr>
-<tr class="separator:a62eee3dd32e3c827cdc4b5231653336b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fb9fdc8c098226bffeb314e8279825e"><td class="memTemplParams" colspan="2">template&lt;generate_func_t generate_func, bool leave_duplicate_interactions&gt; </td></tr>
+<tr class="memitem:a2fb9fdc8c098226bffeb314e8279825e"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; <a class="el" href="example__predict_8h.html#a3302327c8e16f985dd6c4474bf279c40">namespace_index</a> &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#a2fb9fdc8c098226bffeb314e8279825e">INTERACTIONS::compile_interaction</a> (const std::vector&lt; <a class="el" href="example__predict_8h.html#a3302327c8e16f985dd6c4474bf279c40">namespace_index</a> &gt; &amp;interaction, const std::set&lt; <a class="el" href="example__predict_8h.html#a3302327c8e16f985dd6c4474bf279c40">namespace_index</a> &gt; &amp;indices)</td></tr>
+<tr class="separator:a2fb9fdc8c098226bffeb314e8279825e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7efbed42a22547c651d1841835c5a70"><td class="memTemplParams" colspan="2">template&lt;generate_func_t generate_func, bool leave_duplicate_interactions&gt; </td></tr>
+<tr class="memitem:ab7efbed42a22547c651d1841835c5a70"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; <a class="el" href="example__predict_8h.html#a3302327c8e16f985dd6c4474bf279c40">namespace_index</a> &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#ab7efbed42a22547c651d1841835c5a70">INTERACTIONS::compile_interactions</a> (const std::vector&lt; std::vector&lt; <a class="el" href="example__predict_8h.html#a3302327c8e16f985dd6c4474bf279c40">namespace_index</a> &gt;&gt; &amp;interactions, const std::set&lt; <a class="el" href="example__predict_8h.html#a3302327c8e16f985dd6c4474bf279c40">namespace_index</a> &gt; &amp;indices)</td></tr>
+<tr class="separator:ab7efbed42a22547c651d1841835c5a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:affcb5fb4cf5bd6801bd9b33f6b02b669"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#affcb5fb4cf5bd6801bd9b33f6b02b669">INTERACTIONS::feature_self_interactions</a> = true</td></tr>
+<tr class="separator:affcb5fb4cf5bd6801bd9b33f6b02b669"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade187a9be6c80424795021d22c045441"><td class="memItemLeft" align="right" valign="top">constexpr unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#ade187a9be6c80424795021d22c045441">INTERACTIONS::printable_start</a> = ' '</td></tr>
 <tr class="separator:ade187a9be6c80424795021d22c045441"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7057302d3be0589886a9176ed6de869"><td class="memItemLeft" align="right" valign="top">constexpr unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#ab7057302d3be0589886a9176ed6de869">INTERACTIONS::printable_end</a> = '~'</td></tr>
@@ -134,10 +165,27 @@ Variables</h2></td></tr>
 <tr class="memitem:ad43ded7c39680da1dcb520e277b1b025"><td class="memItemLeft" align="right" valign="top">constexpr uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#ad43ded7c39680da1dcb520e277b1b025">INTERACTIONS::valid_ns_size</a></td></tr>
 <tr class="separator:ad43ded7c39680da1dcb520e277b1b025"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a03b2a48f436f31fc6ab799c2ff495707"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PROCESS_SELF_INTERACTIONS</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ft_value</td><td>)</td>
+          <td>&#160;&#160;&#160;feature_self_interactions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 19 2021 19:20:15 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu May 20 2021 13:41:49 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
