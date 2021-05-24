@@ -7,7 +7,6 @@ var searchData=
   ['cache_5ffiles',['cache_files',['../structinput__options.html#aaa5711bc58e24146cf3c1a2538aaa7ac',1,'input_options']]],
   ['cache_5flabel',['cache_label',['../structlabel__parser.html#afa73ee8f3fa09361373277f57dd03d3a',1,'label_parser::cache_label()'],['../namespaceCB.html#a68d67c7f5301de9f3ca35d3e58c3fa94',1,'CB::cache_label()'],['../namespaceCCB.html#a1eb4843badbf4cc3ebc62da94db58ea8',1,'CCB::cache_label()'],['../namespaceVW_1_1slates.html#a7122b0230db21b0dfdf8265fa71355b8',1,'VW::slates::cache_label()']]],
   ['cache_5ftag',['cache_tag',['../cache_8h.html#a240768c48f05af593153264363e1019d',1,'cache.h']]],
-  ['calculate_5fand_5finsert_5finteractions',['calculate_and_insert_interactions',['../namespaceCCB.html#ad883cee5febf34d27ed29069169c1699',1,'CCB']]],
   ['calculate_5ftotal_5fsum_5ffeatures_5fsquared',['calculate_total_sum_features_squared',['../example_8h.html#a7e51cf08517951ccb1600f1264b5d8c1',1,'example.h']]],
   ['call',['call',['../classVW_1_1details_1_1scope__exit__caller.html#a7b6e9b9f80f4910d743bfcaf32b53307',1,'VW::details::scope_exit_caller']]],
   ['call_5ffunct',['call_FuncT',['../namespaceINTERACTIONS.html#a3f4b68b37c7a284d5d90ebc7faffbfb9',1,'INTERACTIONS::call_FuncT(DataT &amp;dat, WeightsT &amp;weights, const float ft_value, const uint64_t ft_idx)'],['../namespaceINTERACTIONS.html#a4233427209a0bb10fea9da2acb83dc6d',1,'INTERACTIONS::call_FuncT(DataT &amp;dat, const WeightsT &amp;weights, const float ft_value, const uint64_t ft_idx)']]],
