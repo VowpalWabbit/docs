@@ -31,6 +31,7 @@ var searchData=
   ['length',['length',['../structData.html#a8632fc8c2fe2275f20712086a489be41',1,'Data']]],
   ['limit',['limit',['../structvw.html#a13c792ae66dab87cbbcfa398378b4daa',1,'vw']]],
   ['limit_5fstrings',['limit_strings',['../structvw.html#a4ff18cf5dc745f11e69a3158212a35ab',1,'vw']]],
+  ['lineparseerror',['LineParseError',['../structdsjson__metrics.html#ab28dcf002ad9e0699e4ebfd6d3813b8c',1,'dsjson_metrics']]],
   ['loaded_5fdictionaries',['loaded_dictionaries',['../structvw.html#a7393e01efdaba53b861f82b2fe54a15f',1,'vw']]],
   ['logger',['logger',['../structvw.html#a6f3a5a390dca7aeac4ab2116bcc3f8a8',1,'vw']]],
   ['loop_5fend',['loop_end',['../structINTERACTIONS_1_1feature__gen__data.html#a111a28e44d2bb5bb445b7b95206e86f8',1,'INTERACTIONS::feature_gen_data']]],
