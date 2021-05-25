@@ -94,6 +94,7 @@ var searchData=
   ['cb_5fto_5fcb_5fadf_2eh',['cb_to_cb_adf.h',['../cb__to__cb__adf_8h.html',1,'']]],
   ['cb_5fto_5fcb_5fadf_5fsetup',['cb_to_cb_adf_setup',['../cb__to__cb__adf_8h.html#a39f6baa5cc1a4d71e2313651937b3b87',1,'cb_to_cb_adf.h']]],
   ['cb_5fto_5fcs',['cb_to_cs',['../structGEN__CS_1_1cb__to__cs.html',1,'GEN_CS']]],
+  ['cb_5fto_5fcs_5fadf',['cb_to_cs_adf',['../structGEN__CS_1_1cb__to__cs__adf.html#aebff82bb7c3bad684c668b1e64b3a2f6',1,'GEN_CS::cb_to_cs_adf']]],
   ['cb_5fto_5fcs_5fadf',['cb_to_cs_adf',['../structGEN__CS_1_1cb__to__cs__adf.html',1,'GEN_CS']]],
   ['cb_5ftype',['cb_type',['../structGEN__CS_1_1cb__to__cs.html#a4a94f22628a700aeb8cd11c1b850089d',1,'GEN_CS::cb_to_cs::cb_type()'],['../structGEN__CS_1_1cb__to__cs__adf.html#a67e533609d5933c85c88478ba2c5d886',1,'GEN_CS::cb_to_cs_adf::cb_type()']]],
   ['cb_5ftype_5fdm',['CB_TYPE_DM',['../cb__algs_8h.html#a65bcc744db15fb2d325d39d571f09498',1,'cb_algs.h']]],
