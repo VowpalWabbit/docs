@@ -14,7 +14,6 @@ var searchData=
   ['common_5flearner_5fbuilder_3c_20base_5flearner_5fbuilder_3c_20datat_2c_20examplet_20_3e_2c_20datat_2c_20examplet_2c_20base_5flearner_20_3e',['common_learner_builder&lt; base_learner_builder&lt; DataT, ExampleT &gt;, DataT, ExampleT, base_learner &gt;',['../structVW_1_1LEARNER_1_1common__learner__builder.html',1,'VW::LEARNER']]],
   ['common_5flearner_5fbuilder_3c_20reduction_5flearner_5fbuilder_3c_20datat_2c_20examplet_2c_20baselearnert_20_3e_2c_20datat_2c_20examplet_2c_20baselearnert_20_3e',['common_learner_builder&lt; reduction_learner_builder&lt; DataT, ExampleT, BaseLearnerT &gt;, DataT, ExampleT, BaseLearnerT &gt;',['../structVW_1_1LEARNER_1_1common__learner__builder.html',1,'VW::LEARNER']]],
   ['conditional_5fcontextual_5fbandit_5foutcome',['conditional_contextual_bandit_outcome',['../structCCB_1_1conditional__contextual__bandit__outcome.html',1,'CCB']]],
-  ['const_5ffeatures_5faudit_5frange',['const_features_audit_range',['../classfeatures_1_1const__features__audit__range.html',1,'features']]],
   ['context',['Context',['../structContext.html',1,'']]],
   ['continuous_5flabel',['continuous_label',['../structVW_1_1cb__continuous_1_1continuous__label.html',1,'VW::cb_continuous']]],
   ['continuous_5flabel_5felm',['continuous_label_elm',['../structVW_1_1cb__continuous_1_1continuous__label__elm.html',1,'VW::cb_continuous']]]

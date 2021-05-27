@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['kskip_5fngram_5ftransformer',['kskip_ngram_transformer',['../structVW_1_1kskip__ngram__transformer.html',1,'VW']]]
+  ['json_5fparser',['json_parser',['../structjson__parser.html',1,'']]]
 ];

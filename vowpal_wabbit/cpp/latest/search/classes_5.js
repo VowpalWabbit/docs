@@ -4,7 +4,6 @@ var searchData=
   ['feature_5fgen_5fdata',['feature_gen_data',['../structINTERACTIONS_1_1feature__gen__data.html',1,'INTERACTIONS']]],
   ['feature_5foffset_5fguard',['feature_offset_guard',['../classvw__slim_1_1feature__offset__guard.html',1,'vw_slim']]],
   ['features',['features',['../structfeatures.html',1,'']]],
-  ['features_5faudit_5frange',['features_audit_range',['../classfeatures_1_1features__audit__range.html',1,'features']]],
   ['features_5fiterator',['features_iterator',['../classfeatures__iterator.html',1,'']]],
   ['finish_5fexample_5fdata',['finish_example_data',['../structVW_1_1LEARNER_1_1finish__example__data.html',1,'VW::LEARNER']]],
   ['flat_5fexample',['flat_example',['../structflat__example.html',1,'']]],
