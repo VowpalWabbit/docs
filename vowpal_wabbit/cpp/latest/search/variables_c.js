@@ -33,6 +33,7 @@ var searchData=
   ['limit_5fstrings',['limit_strings',['../structvw.html#a4ff18cf5dc745f11e69a3158212a35ab',1,'vw']]],
   ['lineparseerror',['LineParseError',['../structdsjson__metrics.html#ab28dcf002ad9e0699e4ebfd6d3813b8c',1,'dsjson_metrics']]],
   ['loaded_5fdictionaries',['loaded_dictionaries',['../structvw.html#a7393e01efdaba53b861f82b2fe54a15f',1,'vw']]],
+  ['log_5fcount',['log_count',['../namespaceVW_1_1io_1_1logger_1_1detail.html#a621d71e6fba1dab32ec50d34603df45d',1,'VW::io::logger::detail']]],
   ['logger',['logger',['../structvw.html#a6f3a5a390dca7aeac4ab2116bcc3f8a8',1,'vw']]],
   ['loop_5fend',['loop_end',['../structINTERACTIONS_1_1feature__gen__data.html#a111a28e44d2bb5bb445b7b95206e86f8',1,'INTERACTIONS::feature_gen_data']]],
   ['loop_5fidx',['loop_idx',['../structINTERACTIONS_1_1feature__gen__data.html#a673ca244fe02d9673203e4af180981ee',1,'INTERACTIONS::feature_gen_data']]],

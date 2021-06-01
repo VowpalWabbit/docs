@@ -51,6 +51,7 @@ var searchData=
   ['set_5flearn',['set_learn',['../structVW_1_1LEARNER_1_1learner.html#a7e543f0c82050089137be8e6c7d7bdd8',1,'VW::LEARNER::learner::set_learn()'],['../structVW_1_1LEARNER_1_1common__learner__builder.html#a2dd965c0263c9a65cf675bf1f3f00fbc',1,'VW::LEARNER::common_learner_builder::set_learn()']]],
   ['set_5flearn_5freturns_5fprediction',['set_learn_returns_prediction',['../structVW_1_1LEARNER_1_1common__learner__builder.html#acb8001d061387a8bf56706ecd5c0a28d',1,'VW::LEARNER::common_learner_builder']]],
   ['set_5flearner_5fid',['set_learner_id',['../classSearch_1_1predictor.html#ad691911bc7a899b90548446ce7435dbc',1,'Search::predictor']]],
+  ['set_5fmax_5foutput',['set_max_output',['../namespaceVW_1_1io_1_1logger.html#a6264e2105e7e81cc617a2397c6e4f78d',1,'VW::io::logger']]],
   ['set_5fmetatask_5fdata',['set_metatask_data',['../structSearch_1_1search.html#a80df90139889443a17c33f08b607f881',1,'Search::search']]],
   ['set_5fmultipredict',['set_multipredict',['../structVW_1_1LEARNER_1_1learner.html#af8965b602f3660c0d1243a5966c12da4',1,'VW::LEARNER::learner::set_multipredict()'],['../structVW_1_1LEARNER_1_1common__learner__builder.html#a11c05cf5ba2c326f72f57eeccaca60ee',1,'VW::LEARNER::common_learner_builder::set_multipredict()']]],
   ['set_5fnum_5flearners',['set_num_learners',['../structSearch_1_1search.html#a6f6579fc74b803eab232c9976ca3135a',1,'Search::search']]],

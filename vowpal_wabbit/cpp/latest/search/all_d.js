@@ -25,6 +25,7 @@ var searchData=
   ['matcher_5fp',['MATCHER_P',['../ut__util_8h.html#a5b8c89fa9020f562a680bf7f856f8147',1,'ut_util.h']]],
   ['max_5fexamples',['max_examples',['../structvw.html#a568261a9b3b87cc30907d53a08ab3f02',1,'vw']]],
   ['max_5flabel',['max_label',['../structshared__data.html#ab7a25e683bebc7347fa97d71e116f712',1,'shared_data']]],
+  ['max_5flimit',['max_limit',['../namespaceVW_1_1io_1_1logger_1_1detail.html#a4bab62b1f7586e0fadcbc279aeea797f',1,'VW::io::logger::detail']]],
   ['max_5fvalue',['max_value',['../structVW_1_1continuous__action_1_1cats_1_1cats.html#aba3ff1bb74463146e9e1605e652a63b1',1,'VW::continuous_action::cats::cats::max_value()'],['../structVW_1_1pmf__to__pdf_1_1reduction.html#a0cebd3746d3b673682ac942037357be5',1,'VW::pmf_to_pdf::reduction::max_value()']]],
   ['maybe_5fcompact',['maybe_compact',['../classBeam_1_1beam.html#ae02906b31a8e9a130a9b2dd234f1baba',1,'Beam::beam']]],
   ['maybe_5foverride_5fprediction',['maybe_override_prediction',['../classSearch_1_1BaseTask.html#a664d7119df38d66bfca83fd402c3ab74',1,'Search::BaseTask']]],

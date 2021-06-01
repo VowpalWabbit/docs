@@ -7,5 +7,6 @@ var searchData=
   ['unbounded',['unbounded',['../structVW_1_1distributionally__robust_1_1ChiSquared_1_1Duals.html#a6381b04e6c93bffcb8949003905db362',1,'VW::distributionally_robust::ChiSquared::Duals']]],
   ['unknown_5fs',['unknown_s',['../namespaceVW_1_1experimental_1_1error__code.html#a91f4888701cac87d262a46e6bfb5ebae',1,'VW::experimental::error_code']]],
   ['update_5ff',['update_f',['../structVW_1_1LEARNER_1_1learn__data.html#a756f38f0bee0f8ed57c327836add861b',1,'VW::LEARNER::learn_data']]],
-  ['updated_5fprediction',['updated_prediction',['../structexample.html#a86c4567ec3771465b2387bdfe83eb86c',1,'example']]]
+  ['updated_5fprediction',['updated_prediction',['../structexample.html#a86c4567ec3771465b2387bdfe83eb86c',1,'example']]],
+  ['upper_5flimit',['upper_limit',['../structvw__logger.html#a4fd9afb3ff95de1a197fd8bc96425a3b',1,'vw_logger']]]
 ];

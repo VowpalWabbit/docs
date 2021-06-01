@@ -23,6 +23,7 @@ var searchData=
   ['log_5finfo',['log_info',['../namespaceVW_1_1io_1_1logger.html#a6cf5bf711f1ac0495df4e1fdbae74287',1,'VW::io::logger']]],
   ['log_5fmulti_5fsetup',['log_multi_setup',['../log__multi_8h.html#a5da7392c17bdec31947da1b4927235e8',1,'log_multi.h']]],
   ['log_5fset_5flevel',['log_set_level',['../namespaceVW_1_1io_1_1logger.html#a719b1edcdc18610131e44d09b8241f6c',1,'VW::io::logger']]],
+  ['log_5fsummary',['log_summary',['../namespaceVW_1_1io_1_1logger.html#ac047f70212d20d729cbc8f22848f5f64',1,'VW::io::logger']]],
   ['log_5fwarn',['log_warn',['../namespaceVW_1_1io_1_1logger.html#af83f918c15f601ab9f545fcbfe044136',1,'VW::io::logger']]],
   ['loss',['loss',['../structSearch_1_1search.html#ac043f03704a4b004290936cb1dc6822f',1,'Search::search']]],
   ['lrq_5fsetup',['lrq_setup',['../lrq_8h.html#a5f5be6c40d888aa65314fc5864ae3337',1,'lrq.h']]],

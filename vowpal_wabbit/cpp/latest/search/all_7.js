@@ -71,6 +71,7 @@ var searchData=
   ['get_5finput_5ffiles',['get_input_files',['../classio__buf.html#a770820ffd76eb21ead0fe25f359256ed',1,'io_buf']]],
   ['get_5flabel',['get_label',['../namespaceVW.html#ac598ec704e49cc16593464708fd58fd3',1,'VW']]],
   ['get_5flearner_5fby_5fname_5fprefix',['get_learner_by_name_prefix',['../structVW_1_1LEARNER_1_1learner.html#adf93ffd5c2941276ebea52aa84af8d8c',1,'VW::LEARNER::learner']]],
+  ['get_5flog_5fcount',['get_log_count',['../namespaceVW_1_1io_1_1logger.html#a4874fd35725191462a293d6f5e9f7cd4',1,'VW::io::logger']]],
   ['get_5floss',['get_loss',['../structVW_1_1continuous__action_1_1cats_1_1cats.html#ac3dc03639d40a0734fdc6d16b674b515',1,'VW::continuous_action::cats::cats']]],
   ['get_5fmacro',['GET_MACRO',['../vw__exception_8h.html#a84890a00d8c73dde4e766ef13c716e10',1,'vw_exception.h']]],
   ['get_5fmask',['get_mask',['../structSearch_1_1search.html#af19188755a72fe300ad7293ef155f512',1,'Search::search']]],
