@@ -10,6 +10,9 @@
     - [8.10.1](vowpal_wabbit/python/8.10.1/)
     - [8.9.0](vowpal_wabbit/python/8.9.0/)
     - [8.8.1](vowpal_wabbit/python/8.8.1/)
+
 ## [Reinforcement Learning](https://github.com/VowpalWabbit/reinforcement_learning/) documentation
-- [C++ Doxygen documentation](reinforcement_learning/cpp/html/)
-- [Python Doxygen documentation](reinforcement_learning/python/html/)
+- C++ generated docs
+    - [latest](reinforcement_learning/cpp/latest/)
+- Python bindings generated docs
+    - [latest](reinforcement_learning/python/latest/)
