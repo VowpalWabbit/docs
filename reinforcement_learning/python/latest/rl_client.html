@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>rl_client Reference &#8212; rl_client 0.0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css" />
+    
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="rl_client.constants Reference" href="constants.html" />
+    <link rel="prev" title="rl_client Documentation" href="index.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="constants.html" title="rl_client.constants Reference"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="rl_client Documentation"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">rl_client 0.0.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">rl_client Reference</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="module-rl_client">
+<span id="rl-client-reference"></span><h1>rl_client Reference<a class="headerlink" href="#module-rl_client" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="rl_client.Configuration">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">rl_client.</span></span><span class="sig-name descname"><span class="pre">Configuration</span></span><a class="headerlink" href="#rl_client.Configuration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Container class for all configuration values. Generally is constructed from client.json file read from disk</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="rl_client.Configuration.get">
+<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#rl_client.Configuration" title="rl_client.Configuration"><span class="pre">rl_client.Configuration</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">defval</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a><a class="headerlink" href="#rl_client.Configuration.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a config value or default.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> – Name of configuration value to get</p></li>
+<li><p><strong>defval</strong> – Value to return if name does not exist</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>string value from config</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="rl_client.Configuration.set">
+<span class="sig-name descname"><span class="pre">set</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#rl_client.Configuration" title="rl_client.Configuration"><span class="pre">rl_client.Configuration</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">arg0</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">arg1</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><span class="pre">None</span></a><a class="headerlink" href="#rl_client.Configuration.set" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="rl_client.LiveModel">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">rl_client.</span></span><span class="sig-name descname"><span class="pre">LiveModel</span></span><a class="headerlink" href="#rl_client.LiveModel" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt class="sig sig-object py" id="rl_client.LiveModel.choose_rank">
+<span class="sig-name descname"><span class="pre">choose_rank</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rl_client.LiveModel.choose_rank" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic">
+<li><p>choose_rank(self: rl_client.LiveModel, context: str, event_id: str, deferred: bool = False) -&gt; reinforcement_learning::ranking_response</p>
+<blockquote>
+<div><p>Request prediction for given context and use the given event_id</p>
+<dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#rl_client.RankingResponse" title="rl_client.RankingResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">rl_client.RankingResponse</span></code></a></p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p>choose_rank(self: rl_client.LiveModel, context: str, deferred: bool = False) -&gt; reinforcement_learning::ranking_response</p>
+<blockquote>
+<div><p>Request prediction for given context and let an event id be generated</p>
+<dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#rl_client.RankingResponse" title="rl_client.RankingResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">rl_client.RankingResponse</span></code></a></p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+</ol>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="rl_client.LiveModel.refresh_model">
+<span class="sig-name descname"><span class="pre">refresh_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#rl_client.LiveModel" title="rl_client.LiveModel"><span class="pre">rl_client.LiveModel</span></a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><span class="pre">None</span></a><a class="headerlink" href="#rl_client.LiveModel.refresh_model" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="rl_client.LiveModel.report_action_taken">
+<span class="sig-name descname"><span class="pre">report_action_taken</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#rl_client.LiveModel" title="rl_client.LiveModel"><span class="pre">rl_client.LiveModel</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">event_id</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)"><span class="pre">None</span></a><a class="headerlink" href="#rl_client.LiveModel.report_action_taken" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="rl_client.LiveModel.report_outcome">
+<span class="sig-name descname"><span class="pre">report_outcome</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rl_client.LiveModel.report_outcome" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li><p>report_outcome(self: rl_client.LiveModel, event_id: str, outcome: str) -&gt; None</p></li>
+<li><p>report_outcome(self: rl_client.LiveModel, event_id: str, outcome: float) -&gt; None</p></li>
+</ol>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="rl_client.RLException">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-prename descclassname"><span class="pre">rl_client.</span></span><span class="sig-name descname"><span class="pre">RLException</span></span><a class="headerlink" href="#rl_client.RLException" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py attribute">
+<dt class="sig sig-object py" id="rl_client.RLException.code">
+<span class="sig-name descname"><span class="pre">code</span></span><a class="headerlink" href="#rl_client.RLException.code" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the error code for this exception.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="rl_client.RankingResponse">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">rl_client.</span></span><span class="sig-name descname"><span class="pre">RankingResponse</span></span><a class="headerlink" href="#rl_client.RankingResponse" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py property">
+<dt class="sig sig-object py" id="rl_client.RankingResponse.actions_probabilities">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">actions_probabilities</span></span><a class="headerlink" href="#rl_client.RankingResponse.actions_probabilities" title="Permalink to this definition">¶</a></dt>
+<dd><p>The list of action ids and corresponding probabilities</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)">list</a>[(<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)">int</a>,<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)">float</a>)]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="rl_client.RankingResponse.chosen_action_id">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">chosen_action_id</span></span><a class="headerlink" href="#rl_client.RankingResponse.chosen_action_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Action chosen</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.9)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="rl_client.RankingResponse.event_id">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">event_id</span></span><a class="headerlink" href="#rl_client.RankingResponse.event_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Either the supplied event ID or auto generated if none was given</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)">str</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="rl_client.RankingResponse.model_id">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">model_id</span></span><a class="headerlink" href="#rl_client.RankingResponse.model_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>ID of model used to make this prediction</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)">str</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="rl_client.create_config_from_json">
+<span class="sig-prename descclassname"><span class="pre">rl_client.</span></span><span class="sig-name descname"><span class="pre">create_config_from_json</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config_json</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#rl_client.Configuration" title="rl_client.Configuration"><span class="pre">rl_client.Configuration</span></a><a class="headerlink" href="#rl_client.create_config_from_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse the input as JSON and return an <a class="reference internal" href="#rl_client.Configuration" title="rl_client.Configuration"><code class="xref py py-class docutils literal notranslate"><span class="pre">rl_client.Configuration</span></code></a> object which contains each field.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>config_json</strong> – JSON string to parse</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><a class="reference internal" href="#rl_client.Configuration" title="rl_client.Configuration"><code class="xref py py-class docutils literal notranslate"><span class="pre">rl_client.Configuration</span></code></a> object containing parsed values</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">rl_client Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="constants.html">rl_client.constants Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="migration_guide.html">Migration Guide</a></li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/rl_client.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="constants.html" title="rl_client.constants Reference"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="rl_client Documentation"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">rl_client 0.0.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">rl_client Reference</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.0.2.
+    </div>
+  </body>
+</html>
