@@ -50,7 +50,10 @@ var searchData=
   ['strict_5fparse',['strict_parse',['../structparser.html#aaaaa465f88b0b230c26509cdabc09a9f',1,'parser']]],
   ['string_5fstate',['string_state',['../structContext.html#aa03736d125379efe8aac2577009be492',1,'Context']]],
   ['success',['success',['../namespaceVW_1_1experimental_1_1error__code.html#a48e5bd366fd1f0c791155d6e08be0fb9',1,'VW::experimental::error_code']]],
+  ['sum_5factions',['sum_actions',['../structVW_1_1cb__explore__adf_1_1cb__explore__metrics.html#aec6cd01dbd5985c15f72bb61afa77d4a',1,'VW::cb_explore_adf::cb_explore_metrics']]],
   ['sum_5ffeat_5fsq',['sum_feat_sq',['../structfeatures.html#aeb0f91647156e1357fd2ef536ee53fd9',1,'features']]],
+  ['sum_5ffeatures',['sum_features',['../structVW_1_1cb__explore__adf_1_1cb__explore__metrics.html#a82127e224701fb906fd18b36a6b6936c',1,'VW::cb_explore_adf::cb_explore_metrics']]],
   ['sum_5floss',['sum_loss',['../structshared__data.html#aadcbe6fbce05c332e87da9aa517b439e',1,'shared_data']]],
-  ['sum_5floss_5fsince_5flast_5fdump',['sum_loss_since_last_dump',['../structshared__data.html#ac170e7cf74cd37469fab0ea76bf19ff5',1,'shared_data']]]
+  ['sum_5floss_5fsince_5flast_5fdump',['sum_loss_since_last_dump',['../structshared__data.html#ac170e7cf74cd37469fab0ea76bf19ff5',1,'shared_data']]],
+  ['sum_5fnamespaces',['sum_namespaces',['../structVW_1_1cb__explore__adf_1_1cb__explore__metrics.html#af8e0095334269048c8ea23c48aee9a77',1,'VW::cb_explore_adf::cb_explore_metrics']]]
 ];

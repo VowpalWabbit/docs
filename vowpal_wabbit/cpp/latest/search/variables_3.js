@@ -74,6 +74,7 @@ var searchData=
   ['cost_5fsensitive',['cost_sensitive',['../structvw.html#af9e5eb2ecf3d580711945fc3f21edddf',1,'vw']]],
   ['costs',['costs',['../structCB_1_1label.html#a83515ee225c4673620f87be916afad26',1,'CB::label::costs()'],['../structVW_1_1cb__continuous_1_1continuous__label.html#a5c8df23cff8932da98096a22ce4b2bf7',1,'VW::cb_continuous::continuous_label::costs()'],['../structCOST__SENSITIVE_1_1label.html#a0b3bd4e05a093705489822c812024fd6',1,'COST_SENSITIVE::label::costs()']]],
   ['count',['count',['../structGD_1_1multipredict__info.html#a45e42ef1577c53c56eaad9fcd0d83cc0',1,'GD::multipredict_info']]],
+  ['count_5fnon_5fzero_5fcost',['count_non_zero_cost',['../structVW_1_1cb__explore__adf_1_1cb__explore__metrics.html#aeac5d14dfc7aa32b3cca61dc81e14142',1,'VW::cb_explore_adf::cb_explore_metrics']]],
   ['counts',['counts',['../structparser.html#af91f2a3bc35a0f226486f23071eb020e',1,'parser']]],
   ['cs',['cs',['../structpolylabel.html#aad89c13bd745b60a93a2d3d85f0619ed',1,'polylabel']]],
   ['cs_5factive',['cs_active',['../structvw__dbg.html#a79efcf8fc3187c0d8e42730a419ed2a0',1,'vw_dbg']]],
