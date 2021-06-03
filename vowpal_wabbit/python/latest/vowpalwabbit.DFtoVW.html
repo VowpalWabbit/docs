@@ -947,7 +947,7 @@ namespace.</p>
 
 <dl class="class">
 <dt id="vowpalwabbit.DFtoVW.SimpleLabel">
-<em class="property">class </em><code class="descclassname">vowpalwabbit.DFtoVW.</code><code class="descname">SimpleLabel</code><span class="sig-paren">(</span><em>label</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.SimpleLabel" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">vowpalwabbit.DFtoVW.</code><code class="descname">SimpleLabel</code><span class="sig-paren">(</span><em>label</em>, <em>weight=None</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.SimpleLabel" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>The simple label type for the constructor of DFtoVW.</p>
 <p class="rubric">Methods</p>
@@ -964,7 +964,7 @@ namespace.</p>
 </table>
 <dl class="method">
 <dt id="vowpalwabbit.DFtoVW.SimpleLabel.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>self</em>, <em>label</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.SimpleLabel.__init__" title="Permalink to this definition">¶</a></dt>
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>self</em>, <em>label</em>, <em>weight=None</em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.SimpleLabel.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>Initialize a SimpleLabel instance.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -973,6 +973,9 @@ namespace.</p>
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
 <dt><strong>label</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
 <dd><p class="first last">The column name with the label.</p>
+</dd>
+<dt><strong>weight</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd><p class="first last">The column name with the weight.</p>
 </dd>
 </dl>
 </td>
@@ -1020,6 +1023,15 @@ class is used in the following managed class: SimpleLabel, MulticlassLabel, Feat
 </tr>
 </tbody>
 </table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="vowpalwabbit.DFtoVW.SimpleLabel.weight">
+<code class="descname">weight</code><a class="headerlink" href="#vowpalwabbit.DFtoVW.SimpleLabel.weight" title="Permalink to this definition">¶</a></dt>
+<dd><p>This descriptor class add type and value checking informations to the _Col
+instance for future usage in the DFtoVW class. Indeed, the type and value checking
+can only be done once the dataframe is known (i.e in DFtoVW class). This descriptor
+class is used in the following managed class: SimpleLabel, MulticlassLabel, Feature, etc.</p>
 </dd></dl>
 
 </dd></dl>
