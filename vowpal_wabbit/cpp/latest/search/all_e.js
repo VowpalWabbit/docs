@@ -19,6 +19,7 @@ var searchData=
   ['namespace_5fletter',['namespace_letter',['../structvw__namespace.html#a156a82d3df8858e12bb459f75c2415c1',1,'vw_namespace']]],
   ['namespace_5fpath',['namespace_path',['../structContext.html#a408bdeefe995ebb3993ac72842e14473',1,'Context']]],
   ['namespaced_5ffeatures',['namespaced_features',['../structVW_1_1namespaced__features.html',1,'VW']]],
+  ['namespaced_5ffeatures',['namespaced_features',['../structVW_1_1namespaced__features.html#a2c9cd31b85e87d5aada5b5e3f91bcfac',1,'VW::namespaced_features::namespaced_features()=default'],['../structVW_1_1namespaced__features.html#a0695f10329acfeb305360e734b2cd9d8',1,'VW::namespaced_features::namespaced_features(const namespaced_features &amp;)=default'],['../structVW_1_1namespaced__features.html#a8b41a3fff7cde098035bd5a6f88cc9b6',1,'VW::namespaced_features::namespaced_features(namespaced_features &amp;&amp;other)=default']]],
   ['namespaced_5ffeatures_2eh',['namespaced_features.h',['../namespaced__features_8h.html',1,'']]],
   ['nb_5fex_5fregressors',['nb_ex_regressors',['../structGEN__CS_1_1cb__to__cs.html#a01035400474484702805476f486fe449',1,'GEN_CS::cb_to_cs']]],
   ['necessary',['necessary',['../structVW_1_1config_1_1option__builder.html#ad77eeb7761b3ace8c185a1c759d62160',1,'VW::config::option_builder']]],
