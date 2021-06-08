@@ -37,7 +37,7 @@ var searchData=
   ['merand48',['merand48',['../rand48_8h.html#a64cab1594b4166e9442ee1429123044b',1,'rand48.h']]],
   ['merand48_5fboxmuller',['merand48_boxmuller',['../rand48_8h.html#a1a5d99f1fed8adf3248a30cae6b13437',1,'rand48.h']]],
   ['merand48_5fnoadvance',['merand48_noadvance',['../rand48_8h.html#a25a35c4d653d47b644ce40f0437f8101',1,'rand48.h']]],
-  ['merge_5ffeature_5fgroup',['merge_feature_group',['../structVW_1_1namespaced__features.html#a325758abdf19fb1f066f89d2b0952e39',1,'VW::namespaced_features']]],
+  ['merge_5ffeature_5fgroup',['merge_feature_group',['../structVW_1_1namespaced__features.html#a3097fb0677b945e3fac1929044fa2998',1,'VW::namespaced_features']]],
   ['merge_5foptions_5ffrom_5fheader_5fstrings',['merge_options_from_header_strings',['../parse__args_8h.html#aba34d846bf56121fdebc9aec399c993e',1,'parse_args.h']]],
   ['message_5fnamespace',['message_namespace',['../constant_8h.html#a09941ced3b4fe4c40b71023a150152b0',1,'constant.h']]],
   ['metatask_5fdata',['metatask_data',['../structSearch_1_1search.html#a2614275853e5bf5265c8d2ddf59e9f6e',1,'Search::search']]],
