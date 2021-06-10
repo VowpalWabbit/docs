@@ -12,6 +12,7 @@ var searchData=
   ['new_5funused_5fexample',['new_unused_example',['../namespaceVW.html#ae49d60be8cfe85c0159d1af44f131789',1,'VW']]],
   ['nn_5fsetup',['nn_setup',['../nn_8h.html#ae907bdf43ea7b80fd25a1ef191eb7098',1,'nn.h']]],
   ['no_5flock_5fobject_5fpool',['no_lock_object_pool',['../structVW_1_1no__lock__object__pool.html#a55f60639f3260fab7a259890d83b6f0e',1,'VW::no_lock_object_pool::no_lock_object_pool()=default'],['../structVW_1_1no__lock__object__pool.html#a052f840458de1698921f7ab8af57e15f',1,'VW::no_lock_object_pool::no_lock_object_pool(size_t initial_chunk_size, TInitializer initializer={}, size_t chunk_size=8)']]],
+  ['node_5fcost',['node_cost',['../structVW_1_1cats__tree_1_1node__cost.html#a967365cdf851d5a4bee2975042f07bf6',1,'VW::cats_tree::node_cost::node_cost()'],['../structVW_1_1cats__tree_1_1node__cost.html#a43e8c522900e87b290032fc8cea93c63',1,'VW::cats_tree::node_cost::node_cost(uint32_t node_id, float cost)']]],
   ['node_5fsocks',['node_socks',['../structnode__socks.html#a96190bc88fd053a435d4610394d89590',1,'node_socks']]],
   ['nonempty',['nonempty',['../structfeatures.html#a63a86b578573e909b59315d4d399f429',1,'features']]],
   ['noop',['noop',['../namespaceVW_1_1LEARNER.html#abc1944c430e44d72bf88e16bebcb9d36',1,'VW::LEARNER']]],

@@ -39,6 +39,7 @@ var searchData=
   ['no_5flock_5fobject_5fpool',['no_lock_object_pool',['../structVW_1_1no__lock__object__pool.html',1,'VW']]],
   ['no_5flock_5fobject_5fpool_3c_20example_2c_20default_5finitializer_3c_20example_20_3e_2c_20default_5fcleanup_3c_20example_20_3e_20_3e',['no_lock_object_pool&lt; example, default_initializer&lt; example &gt;, default_cleanup&lt; example &gt; &gt;',['../structVW_1_1no__lock__object__pool.html',1,'VW']]],
   ['node',['node',['../classAllReduce.html#aabe2467446f88840299517725e20f84e',1,'AllReduce']]],
+  ['node_5fcost',['node_cost',['../structVW_1_1cats__tree_1_1node__cost.html#a967365cdf851d5a4bee2975042f07bf6',1,'VW::cats_tree::node_cost::node_cost()'],['../structVW_1_1cats__tree_1_1node__cost.html#a43e8c522900e87b290032fc8cea93c63',1,'VW::cats_tree::node_cost::node_cost(uint32_t node_id, float cost)']]],
   ['node_5fcost',['node_cost',['../structVW_1_1cats__tree_1_1node__cost.html',1,'VW::cats_tree']]],
   ['node_5fid',['node_id',['../structVW_1_1cats__tree_1_1node__cost.html#af0247d2a8d12f878291b4759841e449c',1,'VW::cats_tree::node_cost']]],
   ['node_5fid_5fnamespace',['node_id_namespace',['../constant_8h.html#a2ba4a93b0663f069dc7518d27442b9d2',1,'constant.h']]],
