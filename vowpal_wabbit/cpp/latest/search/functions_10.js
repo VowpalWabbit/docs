@@ -19,6 +19,7 @@ var searchData=
   ['read_5flines',['read_lines',['../namespaceVW.html#afe7e57e1b0c2133c81df4ab180727cc5',1,'VW']]],
   ['read_5fregressor_5ffile',['read_regressor_file',['../parse__regressor_8h.html#a0255ad26c81992b45bda7f64c6a10494',1,'parse_regressor.h']]],
   ['read_5fstring',['read_string',['../classvw__slim_1_1model__parser.html#a4feb479f60a6842262a1f40e409d828c',1,'vw_slim::model_parser']]],
+  ['read_5fvalue',['read_value',['../classio__buf.html#aad08b1941d9b2b47be78a456fa20a43a',1,'io_buf']]],
   ['read_5fweights',['read_weights',['../classvw__slim_1_1model__parser.html#a04ebc770ef447e7dd251e30d71c750c2',1,'vw_slim::model_parser::read_weights(std::unique_ptr&lt; W &gt; &amp;weights, uint64_t weight_length)'],['../classvw__slim_1_1model__parser.html#af11176e2c8e1c95b7b535f7c9aaef09d',1,'vw_slim::model_parser::read_weights(std::unique_ptr&lt; W &gt; &amp;weights, uint32_t num_bits, uint32_t stride_shift)']]],
   ['reader',['reader',['../structVW_1_1io_1_1reader.html#a78c9e8ff184f30fd196da858d12ec7f2',1,'VW::io::reader::reader(bool is_resettable)'],['../structVW_1_1io_1_1reader.html#a99c523531ba57f6c0f0ad03c44d29f4c',1,'VW::io::reader::reader(reader &amp;other)=delete'],['../structVW_1_1io_1_1reader.html#a6a14b83e8e9ff6334197dc565503c78f',1,'VW::io::reader::reader(reader &amp;&amp;other)=delete']]],
   ['readto',['readto',['../classio__buf.html#ac82ca566a1b0ecf30fdb113e3e470652',1,'io_buf']]],
