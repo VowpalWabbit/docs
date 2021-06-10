@@ -28,12 +28,13 @@ var searchData=
   ['wrap_5fsocket_5fdescriptor',['wrap_socket_descriptor',['../namespaceVW_1_1io.html#a9e41560d8a75f8e8da16232f5cb3c637',1,'VW::io']]],
   ['write',['write',['../structVW_1_1io_1_1writer.html#a2af8e9f79503058aca22933edd085c82',1,'VW::io::writer']]],
   ['write_5fcache',['write_cache',['../structparser.html#a5f48db95a95c057288a00642d4cf9f14',1,'parser']]],
+  ['write_5fexample_5fto_5fcache',['write_example_to_cache',['../namespaceVW.html#aef4c6792f71a978d7c8f584680574e3d',1,'VW']]],
   ['write_5ffunc_5ft',['write_func_t',['../namespaceVW_1_1io.html#afa7ea16384ae2c7aadbc1408cd4be49a',1,'VW::io']]],
   ['write_5fvalue',['write_value',['../classio__buf.html#a6777f02c17704d4384c0c7ef575233db',1,'io_buf']]],
   ['writeit',['writeit',['../io__buf_8h.html#ac3dc74ce9e42a7cf9cb19834d4593d57',1,'io_buf.h']]],
   ['writeitvar',['writeitvar',['../io__buf_8h.html#aa441214d84044fca62cc7341883b7843',1,'io_buf.h']]],
-  ['writer',['writer',['../structVW_1_1io_1_1writer.html#a450d433694ee55b73fdc052d40c4ba6d',1,'VW::io::writer::writer()=default'],['../structVW_1_1io_1_1writer.html#aa5be44de0372ff6b7002fe3b0f0657e9',1,'VW::io::writer::writer(writer &amp;other)=delete'],['../structVW_1_1io_1_1writer.html#a5e2aec8dea0fcf87204f91ac010b0f56',1,'VW::io::writer::writer(writer &amp;&amp;other)=delete']]],
   ['writer',['writer',['../structVW_1_1io_1_1writer.html',1,'VW::io']]],
-  ['writer_5fstream_5fbuf',['writer_stream_buf',['../classVW_1_1io_1_1writer__stream__buf.html',1,'VW::io']]],
-  ['writer_5fstream_5fbuf',['writer_stream_buf',['../classVW_1_1io_1_1writer__stream__buf.html#adbeb736dfb6013e5a0b0fecf6f6d9e13',1,'VW::io::writer_stream_buf']]]
+  ['writer',['writer',['../structVW_1_1io_1_1writer.html#a450d433694ee55b73fdc052d40c4ba6d',1,'VW::io::writer::writer()=default'],['../structVW_1_1io_1_1writer.html#aa5be44de0372ff6b7002fe3b0f0657e9',1,'VW::io::writer::writer(writer &amp;other)=delete'],['../structVW_1_1io_1_1writer.html#a5e2aec8dea0fcf87204f91ac010b0f56',1,'VW::io::writer::writer(writer &amp;&amp;other)=delete']]],
+  ['writer_5fstream_5fbuf',['writer_stream_buf',['../classVW_1_1io_1_1writer__stream__buf.html#adbeb736dfb6013e5a0b0fecf6f6d9e13',1,'VW::io::writer_stream_buf']]],
+  ['writer_5fstream_5fbuf',['writer_stream_buf',['../classVW_1_1io_1_1writer__stream__buf.html',1,'VW::io']]]
 ];

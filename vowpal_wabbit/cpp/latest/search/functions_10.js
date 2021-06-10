@@ -8,6 +8,7 @@ var searchData=
   ['read_5fcached_5ffeatures',['read_cached_features',['../cache_8h.html#a331c74ea46fc5b011dcafc57d7855cb3',1,'cache.h']]],
   ['read_5fcached_5flabel',['read_cached_label',['../namespaceCB.html#a8dd64bd0cc06b320a83b2b7e8332f0e0',1,'CB::read_cached_label()'],['../namespaceCCB.html#a1d7a39b39a63aed3cedcb904c6dfc5f7',1,'CCB::read_cached_label()'],['../namespaceVW_1_1slates.html#aacb617431d6148d4c465511fb6ed0f67',1,'VW::slates::read_cached_label()']]],
   ['read_5fexample',['read_example',['../namespaceVW.html#ac21cb2a0d144ac8504a1b512521c0840',1,'VW::read_example(vw &amp;all, char *example_line)'],['../namespaceVW.html#afaedd626d4896dda92693ce1135398e6',1,'VW::read_example(vw &amp;all, std::string example_line)']]],
+  ['read_5fexample_5ffrom_5fcache',['read_example_from_cache',['../namespaceVW.html#ab0201754ba125807acabe528e66518b7',1,'VW']]],
   ['read_5ffeatures',['read_features',['../parse__example_8h.html#a70caacab48613b1bfc21e33bfd19b73a',1,'parse_example.h']]],
   ['read_5ffeatures_5fjson',['read_features_json',['../parse__example__json_8h.html#a3d17da2b9fcbd5781b02ba3e25ad117b',1,'parse_example_json.h']]],
   ['read_5ffeatures_5fstring',['read_features_string',['../parse__example_8h.html#afb8ecab5a9f21dce32db3e77e2132a7e',1,'parse_example.h']]],

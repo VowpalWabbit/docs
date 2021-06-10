@@ -206,6 +206,10 @@ Typedefs</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a485bcb8042f95f793e61258434951898"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a485bcb8042f95f793e61258434951898">convert</a> (size_t number)</td></tr>
 <tr class="separator:a485bcb8042f95f793e61258434951898"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef4c6792f71a978d7c8f584680574e3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#aef4c6792f71a978d7c8f584680574e3d">write_example_to_cache</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;output, <a class="el" href="structexample.html">example</a> *ae, <a class="el" href="structlabel__parser.html">label_parser</a> &amp;lbl_parser, uint64_t parse_mask)</td></tr>
+<tr class="separator:aef4c6792f71a978d7c8f584680574e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0201754ba125807acabe528e66518b7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ab0201754ba125807acabe528e66518b7">read_example_from_cache</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;input, <a class="el" href="structexample.html">example</a> *ae, <a class="el" href="structlabel__parser.html">label_parser</a> &amp;lbl_parser, bool sorted_cache, <a class="el" href="structshared__data.html">shared_data</a> *shared_dat)</td></tr>
+<tr class="separator:ab0201754ba125807acabe528e66518b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50f7538dd71dc0487f0160a1cbe1777d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a50f7538dd71dc0487f0160a1cbe1777d">string_cpy</a> (char *dest, size_t dest_size, const char *src)</td></tr>
 <tr class="separator:a50f7538dd71dc0487f0160a1cbe1777d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a14838fa968bb4da6558105112c06d5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a5a14838fa968bb4da6558105112c06d5">file_open</a> (FILE **pf, const char *filename, const char *mode)</td></tr>
@@ -2514,6 +2518,50 @@ template&lt;typename T , typename... Args&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="ab0201754ba125807acabe528e66518b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int VW::read_example_from_cache </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classio__buf.html">io_buf</a> &amp;&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structexample.html">example</a> *&#160;</td>
+          <td class="paramname"><em>ae</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structlabel__parser.html">label_parser</a> &amp;&#160;</td>
+          <td class="paramname"><em>lbl_parser</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>sorted_cache</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structshared__data.html">shared_data</a> *&#160;</td>
+          <td class="paramname"><em>shared_dat</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ac82237706e8e65e96b131cc0284b671f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -3452,6 +3500,44 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="aef4c6792f71a978d7c8f584680574e3d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VW::write_example_to_cache </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classio__buf.html">io_buf</a> &amp;&#160;</td>
+          <td class="paramname"><em>output</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structexample.html">example</a> *&#160;</td>
+          <td class="paramname"><em>ae</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structlabel__parser.html">label_parser</a> &amp;&#160;</td>
+          <td class="paramname"><em>lbl_parser</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>parse_mask</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a class="anchor" id="ac40013c94c682c8e00855b3b1f1859a7"></a>
 <div class="memitem">
@@ -3504,7 +3590,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 10 2021 14:33:12 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 10 2021 18:49:07 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
