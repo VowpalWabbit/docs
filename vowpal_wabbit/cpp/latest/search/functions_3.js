@@ -26,5 +26,6 @@ var searchData=
   ['do_5frecombination',['do_recombination',['../classBeam_1_1beam.html#a7c024b7c58509c405271300549fbfde0',1,'Beam::beam']]],
   ['do_5fswap',['do_swap',['../classVW_1_1details_1_1swap__guard__impl.html#aab5175200e844e9aec7344cee91512a4',1,'VW::details::swap_guard_impl::do_swap()'],['../classVW_1_1details_1_1swap__guard__impl__rvalue.html#a8bc7cd28e0cfdaeb2b20246662ff01c0',1,'VW::details::swap_guard_impl_rvalue::do_swap()']]],
   ['double',['Double',['../structVWReaderHandler.html#a9b1d990eb0240611a2f3ccce3afaa963',1,'VWReaderHandler']]],
+  ['duals',['Duals',['../structVW_1_1distributionally__robust_1_1ChiSquared_1_1Duals.html#aba0d5cb35265d6d46270d482e32e50be',1,'VW::distributionally_robust::ChiSquared::Duals::Duals()'],['../structVW_1_1distributionally__robust_1_1ChiSquared_1_1Duals.html#a4295bd3a87a6d99b14f285d19761f7e6',1,'VW::distributionally_robust::ChiSquared::Duals::Duals(bool unbounded, double kappa, double gamma, double beta, double n)']]],
   ['dummy_5ffunc',['dummy_func',['../namespaceGD.html#a9a733cab6079e5f28fb3773aa43bea24',1,'GD']]]
 ];
