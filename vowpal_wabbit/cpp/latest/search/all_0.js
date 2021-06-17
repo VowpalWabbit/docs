@@ -2,6 +2,7 @@ var searchData=
 [
   ['_5f_5ffilename_5f_5f',['__FILENAME__',['../vw__exception_8h.html#a5fccb4fc71e44089a1b1a77fc76c0b68',1,'vw_exception.h']]],
   ['_5fdebug_5fcurrent_5freduction_5fdepth',['_debug_current_reduction_depth',['../structexample__predict.html#a517057277daf4f3fa6907161a59e1111',1,'example_predict']]],
+  ['_5fdefault_5flogger',['_default_logger',['../namespaceVW_1_1io_1_1logger_1_1detail.html#a99138fd4e89a4e8509494ff26adeba5d',1,'VW::io::logger::detail']]],
   ['_5ffinal_5frun',['_final_run',['../classSearch_1_1BaseTask.html#a1789338f2860d67101b8ecbb694b18b7',1,'Search::BaseTask']]],
   ['_5fforeach_5faction',['_foreach_action',['../classSearch_1_1BaseTask.html#acb3dc8905bed89cd9f7b62879aa13260',1,'Search::BaseTask']]],
   ['_5finner_5fcontext',['_inner_context',['../structtrace__message__wrapper.html#a77be7f3251c83f7279636db44bb39417',1,'trace_message_wrapper']]],
