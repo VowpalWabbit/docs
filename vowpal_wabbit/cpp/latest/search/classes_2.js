@@ -8,6 +8,7 @@ var searchData=
   ['cb_5fto_5fcs',['cb_to_cs',['../structGEN__CS_1_1cb__to__cs.html',1,'GEN_CS']]],
   ['cb_5fto_5fcs_5fadf',['cb_to_cs_adf',['../structGEN__CS_1_1cb__to__cs__adf.html',1,'GEN_CS']]],
   ['cbify_5fadf_5fdata',['cbify_adf_data',['../structcbify__adf__data.html',1,'']]],
+  ['chained_5fproxy_5fiterator',['chained_proxy_iterator',['../structVW_1_1chained__proxy__iterator.html',1,'VW']]],
   ['chisquared',['ChiSquared',['../classVW_1_1distributionally__robust_1_1ChiSquared.html',1,'VW::distributionally_robust']]],
   ['collection_5fpair_5fiterator',['collection_pair_iterator',['../classvw__slim_1_1internal_1_1collection__pair__iterator.html',1,'vw_slim::internal']]],
   ['common_5flearner_5fbuilder',['common_learner_builder',['../structVW_1_1LEARNER_1_1common__learner__builder.html',1,'VW::LEARNER']]],
