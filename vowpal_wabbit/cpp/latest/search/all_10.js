@@ -141,7 +141,7 @@ var searchData=
   ['push_5fback',['push_back',['../structfeatures.html#ad204b1a4e0ca9b16b5db3b6261c14423',1,'features::push_back()'],['../structv__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_3_01T_01_4_1_1value_01_4_1_1type_01_4.html#ad22d5a7c737ccaa16358cfc3a6ea97b8',1,'v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;::push_back()']]],
   ['push_5fback_5funchecked',['push_back_unchecked',['../structv__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_3_01T_01_4_1_1value_01_4_1_1type_01_4.html#a31274ed7845f707a15548263b1567f0b',1,'v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;']]],
   ['push_5ffeature',['push_feature',['../classvw__slim_1_1example__predict__builder.html#a6f693aa571f6c8ca6c951834aaa01c36',1,'vw_slim::example_predict_builder']]],
-  ['push_5ffeature_5fstring',['push_feature_string',['../classvw__slim_1_1example__predict__builder.html#a179644956b05b05c6374bac36e7b3a58',1,'vw_slim::example_predict_builder']]],
+  ['push_5ffeature_5fstring',['push_feature_string',['../classvw__slim_1_1example__predict__builder.html#a1ccfe72dc03f0e34bf6832548f01f52b',1,'vw_slim::example_predict_builder']]],
   ['push_5fmany',['push_many',['../v__array_8h.html#acebbdfa66eefc12023c53deec7edc050',1,'v_array.h']]],
   ['push_5fns',['push_ns',['../json__utils_8h.html#a1554bc5eeefd76bc5253823cd90ba398',1,'json_utils.h']]],
   ['pushnamespace',['PushNamespace',['../structContext.html#ab530801b17951c4cacb1f9a7c472e9d0',1,'Context']]]

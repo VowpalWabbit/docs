@@ -8,7 +8,7 @@ var searchData=
   ['hash_2eh',['hash.h',['../hash_8h.html',1,'']]],
   ['hash_3c_20vw_3a_3astring_5fview_20_3e',['hash&lt; VW::string_view &gt;',['../structstd_1_1hash_3_01VW_1_1string__view_01_4.html',1,'std']]],
   ['hash_5ffeature',['hash_feature',['../namespaceVW.html#ae86b6bd5f4f2858597edad920195c5d4',1,'VW']]],
-  ['hash_5ffeature_5fcstr',['hash_feature_cstr',['../namespaceVW.html#ac5b4b4e66968188dc1510e629a8325ee',1,'VW']]],
+  ['hash_5ffeature_5fcstr',['hash_feature_cstr',['../namespaceVW.html#a66e3be12bac2f2f4586610fd987e465c',1,'VW']]],
   ['hash_5ffeature_5fstatic',['hash_feature_static',['../namespaceVW.html#aab7632906c11b37a43ea520161149431',1,'VW']]],
   ['hash_5ffunc_5ft',['hash_func_t',['../hashstring_8h.html#a7b4e2c3cb538825c678ce42856412c14',1,'hashstring.h']]],
   ['hash_5finv',['hash_inv',['../structvw.html#aba3e0772167ada6fdcf703d00e0c7ae6',1,'vw']]],
