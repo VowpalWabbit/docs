@@ -115,6 +115,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1reduction__learner__builder.html">reduction_learner_builder</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1reduction__no__data__learner__builder.html">reduction_no_data_learner_builder</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1save__load__data.html">save_load_data</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1save__metric__data.html">save_metric_data</a></td></tr>
@@ -214,6 +216,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a49999d9dc5b7fa848058419c7c7626f0"><td class="memTemplParams" colspan="2">template&lt;class DataT , class ExampleT , class BaseLearnerT &gt; </td></tr>
 <tr class="memitem:a49999d9dc5b7fa848058419c7c7626f0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="future__compat_8h.html#a2d17cd6c08058ed32e5fb9dc77629280">VW_WARNING_STATE_POP</a> <a class="el" href="structVW_1_1LEARNER_1_1reduction__learner__builder.html">reduction_learner_builder</a>&lt; DataT, ExampleT, BaseLearnerT &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1LEARNER.html#a49999d9dc5b7fa848058419c7c7626f0">make_reduction_learner</a> (std::unique_ptr&lt; DataT &gt; &amp;&amp;data, BaseLearnerT *base, void(*learn_fn)(DataT &amp;, BaseLearnerT &amp;, ExampleT &amp;), void(*predict_fn)(DataT &amp;, BaseLearnerT &amp;, ExampleT &amp;), const std::string &amp;name)</td></tr>
 <tr class="separator:a49999d9dc5b7fa848058419c7c7626f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a252cb604083a65666b1bccb0529b8924"><td class="memTemplParams" colspan="2">template&lt;class ExampleT , class BaseLearnerT &gt; </td></tr>
+<tr class="memitem:a252cb604083a65666b1bccb0529b8924"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structVW_1_1LEARNER_1_1reduction__no__data__learner__builder.html">reduction_no_data_learner_builder</a>&lt; ExampleT, BaseLearnerT &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1LEARNER.html#a252cb604083a65666b1bccb0529b8924">make_no_data_reduction_learner</a> (BaseLearnerT *base, void(*learn_fn)(char &amp;, BaseLearnerT &amp;, ExampleT &amp;), void(*predict_fn)(char &amp;, BaseLearnerT &amp;, ExampleT &amp;), const std::string &amp;name)</td></tr>
+<tr class="separator:a252cb604083a65666b1bccb0529b8924"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c6c1c245d2d9b2d5332bdc40c630815"><td class="memTemplParams" colspan="2">template&lt;class DataT , class ExampleT &gt; </td></tr>
 <tr class="memitem:a5c6c1c245d2d9b2d5332bdc40c630815"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structVW_1_1LEARNER_1_1base__learner__builder.html">base_learner_builder</a>&lt; DataT, ExampleT &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1LEARNER.html#a5c6c1c245d2d9b2d5332bdc40c630815">make_base_learner</a> (std::unique_ptr&lt; DataT &gt; &amp;&amp;data, void(*learn_fn)(DataT &amp;, <a class="el" href="namespaceVW_1_1LEARNER.html#ab481a83a0a49d7b827babe725e135b20">base_learner</a> &amp;, ExampleT &amp;), void(*predict_fn)(DataT &amp;, <a class="el" href="namespaceVW_1_1LEARNER.html#ab481a83a0a49d7b827babe725e135b20">base_learner</a> &amp;, ExampleT &amp;), const std::string &amp;name, <a class="el" href="learner_8h.html#a5514b4a9448315c23ec344ca2d139e24">prediction_type_t</a> pred_type, <a class="el" href="label__parser_8h.html#ac55dd8dc7400242f299d4b6f245f8acd">label_type_t</a> label_type)</td></tr>
 <tr class="separator:a5c6c1c245d2d9b2d5332bdc40c630815"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1178,6 +1183,46 @@ template&lt;class DataT , class ExampleT &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a252cb604083a65666b1bccb0529b8924"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ExampleT , class BaseLearnerT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structVW_1_1LEARNER_1_1reduction__no__data__learner__builder.html">reduction_no_data_learner_builder</a>&lt;ExampleT, BaseLearnerT&gt; VW::LEARNER::make_no_data_reduction_learner </td>
+          <td>(</td>
+          <td class="paramtype">BaseLearnerT *&#160;</td>
+          <td class="paramname"><em>base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(char &amp;, BaseLearnerT &amp;, ExampleT &amp;)&#160;</td>
+          <td class="paramname"><em>learn_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(char &amp;, BaseLearnerT &amp;, ExampleT &amp;)&#160;</td>
+          <td class="paramname"><em>predict_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a49999d9dc5b7fa848058419c7c7626f0"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1517,7 +1562,7 @@ template&lt;bool is_learn&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 25 2021 10:37:58 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 25 2021 13:17:23 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

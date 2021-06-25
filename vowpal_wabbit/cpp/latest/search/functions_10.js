@@ -30,6 +30,7 @@ var searchData=
   ['recur_5fsensitivity',['recur_sensitivity',['../namespaceVW_1_1LEARNER.html#ab6e5c6e7bedf2db4bf91c3bc2b3527c9',1,'VW::LEARNER']]],
   ['reduction_5ffeatures',['reduction_features',['../structVW_1_1continuous__actions_1_1reduction__features.html#a51ae15b2cb558b88f08438a48b0b7d12',1,'VW::continuous_actions::reduction_features']]],
   ['reduction_5flearner_5fbuilder',['reduction_learner_builder',['../structVW_1_1LEARNER_1_1reduction__learner__builder.html#a548785a5199a7c17cd24146e21280a0b',1,'VW::LEARNER::reduction_learner_builder']]],
+  ['reduction_5fno_5fdata_5flearner_5fbuilder',['reduction_no_data_learner_builder',['../structVW_1_1LEARNER_1_1reduction__no__data__learner__builder.html#a9661575efa5309f50028810c6f99f525',1,'VW::LEARNER::reduction_no_data_learner_builder']]],
   ['releasefeaturespace',['releaseFeatureSpace',['../namespaceVW.html#ad1d82f751f07678f73bd421236477163',1,'VW']]],
   ['remns',['remns',['../classezexample.html#a1ced8ce215fef8f87d4ecf96e404da04',1,'ezexample']]],
   ['remove_5ffeature_5fgroup',['remove_feature_group',['../structVW_1_1namespaced__features.html#ab37f9c48ea1fa45f394b0a9601c20290',1,'VW::namespaced_features']]],

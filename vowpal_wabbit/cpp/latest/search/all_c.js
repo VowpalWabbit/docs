@@ -51,6 +51,7 @@ var searchData=
   ['learner',['learner',['../structvw__dbg.html#a2c56037d4e2c362b5dbd5f692a93da90',1,'vw_dbg']]],
   ['learner',['learner',['../structVW_1_1LEARNER_1_1learner.html',1,'VW::LEARNER']]],
   ['learner_2eh',['learner.h',['../learner_8h.html',1,'']]],
+  ['learner_3c_20char_2c_20examplet_20_3e',['learner&lt; char, ExampleT &gt;',['../structVW_1_1LEARNER_1_1learner.html',1,'VW::LEARNER']]],
   ['learner_3c_20datat_2c_20examplet_20_3e',['learner&lt; DataT, ExampleT &gt;',['../structVW_1_1LEARNER_1_1learner.html',1,'VW::LEARNER']]],
   ['learner_5fcount',['learner_count',['../structVW_1_1cats__tree_1_1cats__tree.html#aff8e488d28fb651e1a0ba519b0f7e10f',1,'VW::cats_tree::cats_tree::learner_count()'],['../structVW_1_1offset__tree_1_1offset__tree.html#a8773e8d0e2b23168dfb21eceea0f8dbd',1,'VW::offset_tree::offset_tree::learner_count()']]],
   ['left',['left',['../structVW_1_1continuous__actions_1_1pdf__segment.html#a06bbb545deb2037a44617751e5dd1bb0',1,'VW::continuous_actions::pdf_segment']]],
