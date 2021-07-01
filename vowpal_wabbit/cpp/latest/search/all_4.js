@@ -43,7 +43,7 @@ var searchData=
   ['del_5fexample_5fnamespace_5ffrom_5fmemory',['del_example_namespace_from_memory',['../namespaceLabelDict.html#adf7e6204a1640a31ddb13d2f66105494',1,'LabelDict']]],
   ['del_5fexample_5fnamespaces_5ffrom_5fexample',['del_example_namespaces_from_example',['../namespaceLabelDict.html#a3b388d6797312cceae88a56f21ae4513',1,'LabelDict']]],
   ['delete_5fextra_5fdata',['delete_extra_data',['../structHookTask_1_1task__data.html#a61360c0115f8a58e64b432e90c48405a',1,'HookTask::task_data']]],
-  ['delete_5fprediction',['delete_prediction',['../structvw.html#ac2b0c04220c30a62a64a1ef9e4b115b0',1,'vw::delete_prediction()'],['../namespaceVW.html#ac40013c94c682c8e00855b3b1f1859a7',1,'VW::delete_prediction()']]],
+  ['delete_5fprediction',['delete_prediction',['../namespaceVW.html#ac40013c94c682c8e00855b3b1f1859a7',1,'VW']]],
   ['delete_5frun_5fobject',['delete_run_object',['../structHookTask_1_1task__data.html#afc26800c1d71af93e60d6a2f6a311313',1,'HookTask::task_data']]],
   ['delete_5fv',['delete_v',['../structv__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_3_01T_01_4_1_1value_01_4_1_1type_01_4.html#a06e3a352444bc4bb828092e4ba30eb19',1,'v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;']]],
   ['dense_5fiterator',['dense_iterator',['../classdense__iterator.html',1,'dense_iterator&lt; T &gt;'],['../classdense__iterator.html#a64935b77332789d16dbdadd4d21ebc93',1,'dense_iterator::dense_iterator()']]],
@@ -68,8 +68,8 @@ var searchData=
   ['double',['Double',['../structVWReaderHandler.html#a9b1d990eb0240611a2f3ccce3afaa963',1,'VWReaderHandler']]],
   ['dsjson',['dsjson',['../structinput__options.html#adbd9d55bfe27f7c844591e5840660ed8',1,'input_options']]],
   ['dsjson_5fmetrics',['dsjson_metrics',['../structdsjson__metrics.html',1,'']]],
-  ['duals',['Duals',['../structVW_1_1distributionally__robust_1_1ChiSquared_1_1Duals.html',1,'VW::distributionally_robust::ChiSquared']]],
   ['duals',['Duals',['../structVW_1_1distributionally__robust_1_1ChiSquared_1_1Duals.html#aba0d5cb35265d6d46270d482e32e50be',1,'VW::distributionally_robust::ChiSquared::Duals::Duals()'],['../structVW_1_1distributionally__robust_1_1ChiSquared_1_1Duals.html#a4295bd3a87a6d99b14f285d19761f7e6',1,'VW::distributionally_robust::ChiSquared::Duals::Duals(bool unbounded, double kappa, double gamma, double beta, double n)']]],
+  ['duals',['Duals',['../structVW_1_1distributionally__robust_1_1ChiSquared_1_1Duals.html',1,'VW::distributionally_robust::ChiSquared']]],
   ['dummy_5ffunc',['dummy_func',['../namespaceGD.html#a9a733cab6079e5f28fb3773aa43bea24',1,'GD']]],
   ['dump_5finterval',['dump_interval',['../structshared__data.html#acc14d5e78772dd39829a82e4df2912d7',1,'shared_data']]]
 ];

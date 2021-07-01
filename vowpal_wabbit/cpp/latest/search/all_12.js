@@ -98,7 +98,7 @@ var searchData=
   ['replace_5fbuffer',['replace_buffer',['../classio__buf.html#ab24fb3dda9f92c52de4aa41197e1fd2b',1,'io_buf']]],
   ['replay_5fcount',['replay_count',['../structExpReplay_1_1expreplay.html#abec5829012cdfacf1f2c2d7faa2e8188',1,'ExpReplay::expreplay']]],
   ['report_5fmulticlass_5flog_5floss',['report_multiclass_log_loss',['../structshared__data.html#a95ee6d6b9595f0c04643502cf159d98e',1,'shared_data']]],
-  ['reserve',['reserve',['../structv__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_3_01T_01_4_1_1value_01_4_1_1type_01_4.html#a43a71998c65c91d7a9d5697f53145b53',1,'v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;']]],
+  ['reserve',['reserve',['../structv__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_3_01T_01_4_1_1value_01_4_1_1type_01_4.html#a43a71998c65c91d7a9d5697f53145b53',1,'v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;::reserve()'],['../v__array_8h.html#ae51b1fbfb6be8dea690be8c18119ff83',1,'reserve():&#160;v_array.h']]],
   ['reset',['reset',['../structVW_1_1io_1_1reader.html#a680383c4f30fbd93e36737eb50028d64',1,'VW::io::reader::reset()'],['../classSearch_1_1predictor.html#a067e8732c3ec17aaa51d130751db8ed9',1,'Search::predictor::reset()']]],
   ['reset_5fbaseline_5fdisabled',['reset_baseline_disabled',['../namespaceBASELINE.html#aadd62b2c6aaf248dedb9d28dadcd2861',1,'BASELINE']]],
   ['reset_5fbuffer',['reset_buffer',['../classio__buf.html#adb6180d90b0e5dc158cc4a78e9ea9160',1,'io_buf']]],

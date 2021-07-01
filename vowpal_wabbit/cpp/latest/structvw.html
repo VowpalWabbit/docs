@@ -109,6 +109,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a596becaba293b15fb8c64ebaf22a61dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a420a02656da82b38a33d4f2e77427297"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvw.html#a420a02656da82b38a33d4f2e77427297">finish_example</a> (<a class="el" href="cb_8h.html#ababa4c0392834695d0ff6255e8d3ce77">multi_ex</a> &amp;)</td></tr>
 <tr class="separator:a420a02656da82b38a33d4f2e77427297"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1ff878edd591ec56f437be504a65782"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvw.html#af1ff878edd591ec56f437be504a65782">VW_DEPRECATED</a> (&quot;delete_prediction has been deprecated. Prediction types should have the proper destructor now. This will be &quot;&quot;removed in VW 9.0.&quot;) void(*delete_prediction)(void *)</td></tr>
+<tr class="separator:af1ff878edd591ec56f437be504a65782"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab73b9bae2e902cf1278e5a3f232832fc"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvw.html#ab73b9bae2e902cf1278e5a3f232832fc">length</a> ()</td></tr>
 <tr class="separator:ab73b9bae2e902cf1278e5a3f232832fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67691c9ee16e498df1c0a010d80b9ef3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvw.html#a67691c9ee16e498df1c0a010d80b9ef3">vw</a> ()</td></tr>
@@ -260,8 +262,6 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a7393e01efdaba53b861f82b2fe54a15f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af16ebf4efcb03eb22d88cdd44a35869e"><td class="memItemLeft" align="right" valign="top">std::array&lt; std::vector&lt; std::shared_ptr&lt; <a class="el" href="global__data_8h.html#a4ead0ba226339fb7cd0087f71b47126c">feature_dict</a> &gt; &gt;, <a class="el" href="constant_8h.html#af6972edf713d5809ccd5658eca433d84">NUM_NAMESPACES</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvw.html#af16ebf4efcb03eb22d88cdd44a35869e">namespace_dictionaries</a> {}</td></tr>
 <tr class="separator:af16ebf4efcb03eb22d88cdd44a35869e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2b0c04220c30a62a64a1ef9e4b115b0"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvw.html#ac2b0c04220c30a62a64a1ef9e4b115b0">delete_prediction</a> )(void *)</td></tr>
-<tr class="separator:ac2b0c04220c30a62a64a1ef9e4b115b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f3a5a390dca7aeac4ab2116bcc3f8a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structvw__logger.html">vw_logger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvw.html#a6f3a5a390dca7aeac4ab2116bcc3f8a8">logger</a></td></tr>
 <tr class="separator:a6f3a5a390dca7aeac4ab2116bcc3f8a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6429c2918e06d399a27ccaf4000e4e33"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvw.html#a6429c2918e06d399a27ccaf4000e4e33">audit</a></td></tr>
@@ -658,6 +658,22 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="af1ff878edd591ec56f437be504a65782"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">vw::VW_DEPRECATED </td>
+          <td>(</td>
+          <td class="paramtype">&quot;delete_prediction has been deprecated. Prediction types should have the proper destructor now. This will be &quot;&quot;removed in VW 9.0.&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="a150b8efa21ed8f6425698892a17537a8"></a>
 <div class="memitem">
@@ -821,18 +837,6 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">bool vw::default_bits</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ac2b0c04220c30a62a64a1ef9e4b115b0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void(* vw::delete_prediction) (void *)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2009,7 +2013,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 1 2021 00:22:06 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 1 2021 17:33:18 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

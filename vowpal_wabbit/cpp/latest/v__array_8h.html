@@ -90,7 +90,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">v_array.h File Reference</div>  </div>
 </div><!--header-->
@@ -140,9 +141,11 @@ Functions</h2></td></tr>
 <tr class="memitem:acebbdfa66eefc12023c53deec7edc050"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:acebbdfa66eefc12023c53deec7edc050"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="v__array_8h.html#acebbdfa66eefc12023c53deec7edc050">push_many</a> (<a class="el" href="structv__array.html">v_array</a>&lt; T &gt; &amp;v, const T *src, size_t num)</td></tr>
 <tr class="separator:acebbdfa66eefc12023c53deec7edc050"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf7f543a2adbe053d8129eebb9223694"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:acf7f543a2adbe053d8129eebb9223694"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="v__array_8h.html#acf7f543a2adbe053d8129eebb9223694">calloc_reserve</a> (<a class="el" href="structv__array.html">v_array</a>&lt; T &gt; &amp;v, size_t length)</td></tr>
-<tr class="separator:acf7f543a2adbe053d8129eebb9223694"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d84b1f557c37364588830f62d0ca1b7"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a4d84b1f557c37364588830f62d0ca1b7"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="v__array_8h.html#a4d84b1f557c37364588830f62d0ca1b7">VW_DEPRECATED</a> (&quot;calloc_reserve is no longer supported. You should use appropriate constructors instead. This will be removed in &quot;&quot;VW 9.0.&quot;) void calloc_reserve(<a class="el" href="structv__array.html">v_array</a>&lt; T &gt; &amp;v</td></tr>
+<tr class="separator:a4d84b1f557c37364588830f62d0ca1b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae51b1fbfb6be8dea690be8c18119ff83"><td class="memItemLeft" align="right" valign="top">v&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__array_8h.html#ae51b1fbfb6be8dea690be8c18119ff83">reserve</a> (<a class="el" href="v__array_8h.html#ae809d5359ac030c60a30a8f0b2294b82">length</a>)</td></tr>
+<tr class="separator:ae51b1fbfb6be8dea690be8c18119ff83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a64f0cb41cdea8d080ff97529e13690"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a1a64f0cb41cdea8d080ff97529e13690"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="v__array_8h.html#a1a64f0cb41cdea8d080ff97529e13690">v_array_contains</a> (const <a class="el" href="structv__array.html">v_array</a>&lt; T &gt; &amp;A, T x)</td></tr>
 <tr class="separator:a1a64f0cb41cdea8d080ff97529e13690"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,6 +162,11 @@ Functions</h2></td></tr>
 <tr class="separator:a8622515ea1d2bd7096f9f18c12e2dae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0960f27e6b60bfea57f2db93b36f29d5"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__array_8h.html#a0960f27e6b60bfea57f2db93b36f29d5">v_string2string</a> (const <a class="el" href="v__array_8h.html#a6627a9b25f24f16a19e613ff7f0d8fa3">v_string</a> &amp;v_s)</td></tr>
 <tr class="separator:a0960f27e6b60bfea57f2db93b36f29d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ae809d5359ac030c60a30a8f0b2294b82"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="v__array_8h.html#ae809d5359ac030c60a30a8f0b2294b82">length</a></td></tr>
+<tr class="separator:ae809d5359ac030c60a30a8f0b2294b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a9f918755b601cf4bffca775992e6fb90"></a>
@@ -187,34 +195,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="acf7f543a2adbe053d8129eebb9223694"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void calloc_reserve </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structv__array.html">v_array</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>v</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>length</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a986101d711024ed1e3f4f3f07d3d046c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -413,6 +393,22 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="ae51b1fbfb6be8dea690be8c18119ff83"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">v reserve </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="v__array_8h.html#ae809d5359ac030c60a30a8f0b2294b82">length</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a8622515ea1d2bd7096f9f18c12e2dae7"></a>
 <div class="memitem">
 <div class="memproto">
@@ -514,10 +510,41 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a4d84b1f557c37364588830f62d0ca1b7"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">VW_DEPRECATED </td>
+          <td>(</td>
+          <td class="paramtype">&quot;calloc_reserve is no longer supported. You should use appropriate constructors instead. This will be removed in &quot;&quot;VW 9.0.&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="ae809d5359ac030c60a30a8f0b2294b82"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t length</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div><div class="line">  v.clear()</div></div><!-- fragment -->
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 1 2021 00:22:06 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 1 2021 17:33:18 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

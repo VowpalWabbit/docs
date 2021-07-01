@@ -28,7 +28,7 @@ var searchData=
   ['left_5fid',['left_id',['../structVW_1_1cats__tree_1_1tree__node.html#ab77b989e4b84c8f7aae136ae9e3c5ed7',1,'VW::cats_tree::tree_node::left_id()'],['../structVW_1_1offset__tree_1_1tree__node.html#a5e5acb77efb2e47a223f1dc047c93dc0',1,'VW::offset_tree::tree_node::left_id()']]],
   ['left_5fonly',['left_only',['../structVW_1_1cats__tree_1_1tree__node.html#a1f6e50470e2ea7bf33cff550dd2f60b8',1,'VW::cats_tree::tree_node']]],
   ['len',['len',['../structVW_1_1primitive__feature__space.html#a9105820ae67fbaa7a4ebf7af1c365821',1,'VW::primitive_feature_space']]],
-  ['length',['length',['../structData.html#a8632fc8c2fe2275f20712086a489be41',1,'Data']]],
+  ['length',['length',['../structData.html#a8632fc8c2fe2275f20712086a489be41',1,'Data::length()'],['../v__array_8h.html#ae809d5359ac030c60a30a8f0b2294b82',1,'length():&#160;v_array.h']]],
   ['limit',['limit',['../structvw.html#a13c792ae66dab87cbbcfa398378b4daa',1,'vw']]],
   ['limit_5fstrings',['limit_strings',['../structvw.html#a4ff18cf5dc745f11e69a3158212a35ab',1,'vw']]],
   ['lineparseerror',['LineParseError',['../structdsjson__metrics.html#ab28dcf002ad9e0699e4ebfd6d3813b8c',1,'dsjson_metrics']]],
