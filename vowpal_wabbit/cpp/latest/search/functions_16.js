@@ -13,7 +13,6 @@ var searchData=
   ['_7eexample',['~example',['../structexample.html#abc948b6a1adf6f9cc03b47573b466c7f',1,'example']]],
   ['_7eexample_5fpredict',['~example_predict',['../structexample__predict.html#ab24c4c1883aa904ff4b1c1a8612230c7',1,'example_predict']]],
   ['_7eexpreplay',['~expreplay',['../structExpReplay_1_1expreplay.html#aca56deb2e71c7778483a73f0916835b6',1,'ExpReplay::expreplay']]],
-  ['_7eezexample',['~ezexample',['../classezexample.html#a6fea2541b6843d993b25dd5964946ab2',1,'ezexample']]],
   ['_7efeature_5foffset_5fguard',['~feature_offset_guard',['../classvw__slim_1_1feature__offset__guard.html#a620aa4dbf9125cd004d5412f32a8e6e1',1,'vw_slim::feature_offset_guard']]],
   ['_7efeatures',['~features',['../structfeatures.html#a4bfd1bfe3ef4d8055ebf6e279ca8f7f9',1,'features']]],
   ['_7elabel',['~label',['../structCCB_1_1label.html#a70760822c7e4d001ed65c02f55c176ab',1,'CCB::label']]],

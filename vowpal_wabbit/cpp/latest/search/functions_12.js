@@ -12,7 +12,6 @@ var searchData=
   ['tokenize',['tokenize',['../parse__primitives_8h.html#a5927382966f47ee627aa402ed79bf127',1,'parse_primitives.h']]],
   ['topk_5fsetup',['topk_setup',['../topk_8h.html#a07ff7b8d1a2c0224dab44d2c5ba52305',1,'topk.h']]],
   ['trace_5fmessage_5fwrapper',['trace_message_wrapper',['../structtrace__message__wrapper.html#a0f4bd67a78c68a80ff6bba1c4370eed0',1,'trace_message_wrapper']]],
-  ['train',['train',['../classezexample.html#a2663a9ccb1d95c6ddbc6ee5bd891cbe9',1,'ezexample']]],
   ['transitionstate',['TransitionState',['../structContext.html#a2361db68e5270b12758993fba441f47d',1,'Context']]],
   ['tree_5fnode',['tree_node',['../structVW_1_1cats__tree_1_1tree__node.html#abe1e752a96be9e59d8b39fe3b9691b9e',1,'VW::cats_tree::tree_node::tree_node()'],['../structVW_1_1offset__tree_1_1tree__node.html#a024d6fbfdd0d0268c69c01680997e1ea',1,'VW::offset_tree::tree_node::tree_node()']]],
   ['tree_5fstats_5fto_5fstring',['tree_stats_to_string',['../structVW_1_1cats__tree_1_1min__depth__binary__tree.html#a4757a3209eb528a9592550e279188c2c',1,'VW::cats_tree::min_depth_binary_tree']]],

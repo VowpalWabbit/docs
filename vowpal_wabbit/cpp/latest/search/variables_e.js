@@ -4,7 +4,6 @@ var searchData=
   ['name',['name',['../structdictionary__info.html#aafd5bfbc5290ad275067a8cf3397970a',1,'dictionary_info::name()'],['../structNamespace.html#a2344df6d1bc705fc8afa24b2c9c79f57',1,'Namespace::name()'],['../structBaseState.html#a675dcc2bdda01de5cde893e77a6116b1',1,'BaseState::name()'],['../structVW_1_1primitive__feature__space.html#a8f5b0342e8c1f8c6d6e5648d14894a59',1,'VW::primitive_feature_space::name()']]],
   ['namespace_5fdictionaries',['namespace_dictionaries',['../structvw.html#af16ebf4efcb03eb22d88cdd44a35869e',1,'vw']]],
   ['namespace_5fhash',['namespace_hash',['../structNamespace.html#a1dcb4de5a4b2c43e6e96597dcd438228',1,'Namespace']]],
-  ['namespace_5fletter',['namespace_letter',['../structvw__namespace.html#a156a82d3df8858e12bb459f75c2415c1',1,'vw_namespace']]],
   ['namespace_5fpath',['namespace_path',['../structContext.html#a408bdeefe995ebb3993ac72842e14473',1,'Context']]],
   ['nb_5fex_5fregressors',['nb_ex_regressors',['../structGEN__CS_1_1cb__to__cs.html#a01035400474484702805476f486fe449',1,'GEN_CS::cb_to_cs']]],
   ['neighbor_5fnamespace',['neighbor_namespace',['../constant_8h.html#a56c27bfb62e2e33a607225d9c8d06a82',1,'constant.h']]],

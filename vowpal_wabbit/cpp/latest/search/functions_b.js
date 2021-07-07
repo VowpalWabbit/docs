@@ -20,7 +20,6 @@ var searchData=
   ['metrics_5fsetup',['metrics_setup',['../namespaceVW_1_1metrics.html#aae4d97e5908c4e8ac24b88f4d182c62f',1,'VW::metrics']]],
   ['mf_5fsetup',['mf_setup',['../mf_8h.html#a3996863f01166d29d4709cc8e740b766',1,'mf.h']]],
   ['might_5finsert',['might_insert',['../classBeam_1_1beam.html#a27a76654671cb98e49e203f38097df57',1,'Beam::beam']]],
-  ['mini_5fsetup_5fexample',['mini_setup_example',['../classezexample.html#aa4535bea4bcad8608adc2d3268fafe1d',1,'ezexample']]],
   ['model_5fparser',['model_parser',['../classvw__slim_1_1model__parser.html#a60531cc8473aa75a7be9a324f35f6d88',1,'vw_slim::model_parser']]],
   ['move_5ffeature_5fnamespace',['move_feature_namespace',['../namespaceVW.html#ab9e00af55935c42d32d1c2c5c244150e',1,'VW']]],
   ['moved_5fobject_5fpool',['moved_object_pool',['../structVW_1_1moved__object__pool.html#a576da638798a649601d6c423a497a998',1,'VW::moved_object_pool']]],

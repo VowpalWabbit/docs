@@ -40,7 +40,6 @@ var searchData=
   ['endobject',['EndObject',['../structBaseState.html#a52ba82f725483116ba5d5df8bb5ea824',1,'BaseState::EndObject()'],['../classArrayToPdfState.html#ad6d9e1fff19642cc159c8f3f055805e7',1,'ArrayToPdfState::EndObject()'],['../classLabelObjectState.html#a86ed3675498ef6f0e01b2646febd41af',1,'LabelObjectState::EndObject()'],['../classDefaultState.html#a332563cde381134bd0c714b711120355',1,'DefaultState::EndObject()'],['../classDecisionServiceState.html#aa40fa885621c8eca3a6544564a9486f5',1,'DecisionServiceState::EndObject()'],['../structVWReaderHandler.html#ab7191ef279806f83b9322d61850e0a5b',1,'VWReaderHandler::EndObject()']]],
   ['ends_5fwith',['ends_with',['../parse__args_8h.html#ae94e2f16b12e091822cc710e34746508',1,'parse_args.h']]],
   ['enforce_5fminimum_5fprobability',['enforce_minimum_probability',['../namespaceexploration.html#a015a97df84dade185b3a72fb75b773c1',1,'exploration::enforce_minimum_probability(float minimum_uniform, bool update_zero_elements, It pmf_first, It pmf_last)'],['../namespaceexploration.html#a7c309fd7505376cd480aba9d0a119628',1,'exploration::enforce_minimum_probability(float minimum_uniform, bool update_zero_elements, It pmf_first, It pmf_last, std::random_access_iterator_tag)']]],
-  ['ensure_5fns_5fexists',['ensure_ns_exists',['../classezexample.html#ae1d3689c8215ed76b628bd1216a61380',1,'ezexample']]],
   ['entityrelationtask',['EntityRelationTask',['../namespaceEntityRelationTask.html',1,'']]],
   ['epsilon_5fgreedy',['epsilon_greedy',['../namespacevw__slim.html#a8b7398db5b92b2538fdd8e6593b746b3acc5611b9c9816ebefcecba7d52a7671d',1,'vw_slim']]],
   ['erase',['erase',['../classBeam_1_1beam.html#ad4a71d456e26a89a32e4d5869398e2be',1,'Beam::beam::erase()'],['../structv__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_3_01T_01_4_1_1value_01_4_1_1type_01_4.html#a539f2784485eaada5c210be8e4924ddf',1,'v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;::erase(iterator it)'],['../structv__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_3_01T_01_4_1_1value_01_4_1_1type_01_4.html#a5c3a92770280a76d50f6e91c7ecbebb4',1,'v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;::erase(iterator first, iterator last)']]],
@@ -93,12 +92,11 @@ var searchData=
   ['explore_5feval_5fsetup',['explore_eval_setup',['../explore__eval_8h.html#a94b216307397dd23c7951758cb70ddfc',1,'explore_eval.h']]],
   ['explore_5finternal_2eh',['explore_internal.h',['../explore__internal_8h.html',1,'']]],
   ['export_5fexample',['export_example',['../namespaceVW.html#a358dde510ef01529c4069b5ac1a5c108',1,'VW']]],
-  ['expreplay',['ExpReplay',['../namespaceExpReplay.html',1,'']]],
   ['expreplay',['expreplay',['../structExpReplay_1_1expreplay.html',1,'ExpReplay']]],
+  ['expreplay',['ExpReplay',['../namespaceExpReplay.html',1,'']]],
   ['expreplay_2eh',['expreplay.h',['../expreplay_8h.html',1,'']]],
   ['expreplay_5fsetup',['expreplay_setup',['../namespaceExpReplay.html#ad63808ef4c1f3ad225dca598a71ac85d',1,'ExpReplay']]],
   ['extra_5fdata',['extra_data',['../structHookTask_1_1task__data.html#a482c1deedfb74eca60aa155253387729',1,'HookTask::task_data']]],
   ['extra_5fdata2',['extra_data2',['../structHookTask_1_1task__data.html#aa3a063a99810936263c275086456b2e9',1,'HookTask::task_data']]],
-  ['ezexample',['ezexample',['../classezexample.html',1,'ezexample'],['../classezexample.html#a97a6cba663f2bf212c62ef3aec7a886a',1,'ezexample::ezexample(vw *this_vw, bool multiline=false, vw *this_vw_parser=nullptr)'],['../classezexample.html#aa5e37570c5f4a8b5d5568ff692ed0da9',1,'ezexample::ezexample(vw *this_vw, example *this_ec, bool multiline=false, vw *this_vw_parser=nullptr)']]],
   ['ezexample_2eh',['ezexample.h',['../ezexample_8h.html',1,'']]]
 ];

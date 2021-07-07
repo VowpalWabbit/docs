@@ -2,7 +2,7 @@ var searchData=
 [
   ['handle_5ffeatures_5fvalue',['handle_features_value',['../parse__slates__example__json_8h.html#a0e917143bef3b67e5fd12981b55ed861',1,'parse_slates_example_json.h']]],
   ['has_5fobserved_5fcost',['has_observed_cost',['../structCB_1_1cb__class.html#a2932cbc83a9e87bf18dab6cf36b8d2c7',1,'CB::cb_class']]],
-  ['hash',['hash',['../classezexample.html#a9f8c33b259da51d46c29693f38bd8781',1,'ezexample::hash(std::string fstr)'],['../classezexample.html#a9d70923eaa800ecca0688d3d0aa673c8',1,'ezexample::hash(char *fstr)'],['../classezexample.html#a4d20f47d1fba625e0b2f0f07ab72be06',1,'ezexample::hash(char c, std::string fstr)'],['../classezexample.html#ab6dbe3c565794705efffbcd3cdfa61c3',1,'ezexample::hash(char c, char *fstr)'],['../classio__buf.html#a2897cff64e19135ab948ede8ec150a04',1,'io_buf::hash()'],['../classVW_1_1iterator__t.html#acbf1d88628ad0183a9133f207a585517',1,'VW::iterator_t::hash()'],['../classVW_1_1indexed__iterator__t.html#a51a0db5d10d47a4fb3d65fdf0701fece',1,'VW::indexed_iterator_t::hash()']]],
+  ['hash',['hash',['../classio__buf.html#a2897cff64e19135ab948ede8ec150a04',1,'io_buf::hash()'],['../classVW_1_1iterator__t.html#acbf1d88628ad0183a9133f207a585517',1,'VW::iterator_t::hash()'],['../classVW_1_1indexed__iterator__t.html#a51a0db5d10d47a4fb3d65fdf0701fece',1,'VW::indexed_iterator_t::hash()']]],
   ['hash_5ffeature',['hash_feature',['../namespaceVW.html#ae86b6bd5f4f2858597edad920195c5d4',1,'VW']]],
   ['hash_5ffeature_5fcstr',['hash_feature_cstr',['../namespaceVW.html#a66e3be12bac2f2f4586610fd987e465c',1,'VW']]],
   ['hash_5ffeature_5fstatic',['hash_feature_static',['../namespaceVW.html#aab7632906c11b37a43ea520161149431',1,'VW']]],

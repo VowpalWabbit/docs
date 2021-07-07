@@ -25,7 +25,6 @@ var searchData=
   ['vw_5fdbg',['vw_dbg',['../structvw__dbg.html',1,'']]],
   ['vw_5fexception',['vw_exception',['../classVW_1_1vw__exception.html',1,'VW']]],
   ['vw_5flogger',['vw_logger',['../structvw__logger.html',1,'']]],
-  ['vw_5fnamespace',['vw_namespace',['../structvw__namespace.html',1,'']]],
   ['vw_5fpredict',['vw_predict',['../classvw__slim_1_1vw__predict.html',1,'vw_slim']]],
   ['vw_5funrecognised_5foption_5fexception',['vw_unrecognised_option_exception',['../classVW_1_1vw__unrecognised__option__exception.html',1,'VW']]],
   ['vwreaderhandler',['VWReaderHandler',['../structVWReaderHandler.html',1,'']]]
