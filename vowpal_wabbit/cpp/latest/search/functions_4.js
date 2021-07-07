@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['ec_5fis_5fexample_5fheader',['ec_is_example_header',['../namespaceCB.html#a2e10d3c30cd9736cd49e800ede17cc6c',1,'CB::ec_is_example_header()'],['../namespaceCCB.html#acc94442ee0e15eb69296c8545b2f946b',1,'CCB::ec_is_example_header()'],['../namespaceCOST__SENSITIVE.html#ab5c97d9fe5b4c5655fd8ac5f3cd30513',1,'COST_SENSITIVE::ec_is_example_header()']]],
+  ['ec_5fis_5fexample_5fheader',['ec_is_example_header',['../namespaceCB.html#a2e10d3c30cd9736cd49e800ede17cc6c',1,'CB::ec_is_example_header()'],['../namespaceCCB.html#acc94442ee0e15eb69296c8545b2f946b',1,'CCB::ec_is_example_header()'],['../namespaceCOST__SENSITIVE.html#ab5c97d9fe5b4c5655fd8ac5f3cd30513',1,'COST_SENSITIVE::ec_is_example_header()'],['../namespaceVW_1_1LEARNER.html#a8244fb35744a4bc42e3d3141d650b68d',1,'VW::LEARNER::ec_is_example_header()']]],
   ['ec_5fis_5fexample_5funset',['ec_is_example_unset',['../namespaceCCB.html#a30a79b5de6f4f356930c206aaaa60c91',1,'CCB']]],
   ['ect_5fsetup',['ect_setup',['../ect_8h.html#a1c17cd60e06518a0c0bee21e17691e10',1,'ect.h']]],
   ['effn',['effn',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#a54fc689e79a1b3cfc35740a6cfe0fa16',1,'VW::distributionally_robust::ChiSquared']]],
