@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['kappa',['kappa',['../structVW_1_1distributionally__robust_1_1ChiSquared_1_1Duals.html#ae1578968130303027140f8c221148ce9',1,'VW::distributionally_robust::ChiSquared::Duals']]],
+  ['kappa',['kappa',['../structVW_1_1distributionally__robust_1_1Duals.html#ab744a1ccbb7609311140f578b7353e1b',1,'VW::distributionally_robust::Duals']]],
   ['keep',['keep',['../structVW_1_1config_1_1option__builder.html#a84c18f2707244a81ed1a9a3e2c58fccd',1,'VW::config::option_builder']]],
   ['kernel_5fsvm_2eh',['kernel_svm.h',['../kernel__svm_8h.html',1,'']]],
   ['kernel_5fsvm_5fsetup',['kernel_svm_setup',['../kernel__svm_8h.html#ab1a4511a00fc860c618faa813c0b0305',1,'kernel_svm.h']]],

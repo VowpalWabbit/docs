@@ -26,7 +26,7 @@ var searchData=
   ['readto',['readto',['../classio__buf.html#ac82ca566a1b0ecf30fdb113e3e470652',1,'io_buf']]],
   ['recall_5ftree_5fsetup',['recall_tree_setup',['../recall__tree_8h.html#acd39bf46df1a2310fd0ce2fc53fe7666',1,'recall_tree.h']]],
   ['reclaim_5fobject',['reclaim_object',['../structVW_1_1moved__object__pool.html#ae1fd62e8760c4acd4c6b108ef8191fe4',1,'VW::moved_object_pool']]],
-  ['recompute_5fduals',['recompute_duals',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#affa2684872b3d923e2e3563b4b03a3cb',1,'VW::distributionally_robust::ChiSquared']]],
+  ['recompute_5fduals',['recompute_duals',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#a954da9a25d14837d54af1fb1f5e7a72f',1,'VW::distributionally_robust::ChiSquared']]],
   ['recur_5fsensitivity',['recur_sensitivity',['../namespaceVW_1_1LEARNER.html#ab6e5c6e7bedf2db4bf91c3bc2b3527c9',1,'VW::LEARNER']]],
   ['reduction_5ffeatures',['reduction_features',['../structVW_1_1continuous__actions_1_1reduction__features.html#a51ae15b2cb558b88f08438a48b0b7d12',1,'VW::continuous_actions::reduction_features']]],
   ['reduction_5flearner_5fbuilder',['reduction_learner_builder',['../structVW_1_1LEARNER_1_1reduction__learner__builder.html#a548785a5199a7c17cd24146e21280a0b',1,'VW::LEARNER::reduction_learner_builder']]],

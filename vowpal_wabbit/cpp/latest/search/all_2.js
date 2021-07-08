@@ -27,7 +27,7 @@ var searchData=
   ['begin_5fparsed_5fexamples',['begin_parsed_examples',['../structparser.html#ae7c79dc035b14bfc367ee7434c593453',1,'parser']]],
   ['begin_5fscores',['begin_scores',['../namespaceACTION__SCORE.html#a8bc9f1c61d11a838adc67861ecd0155a',1,'ACTION_SCORE']]],
   ['best_5fconstant_2eh',['best_constant.h',['../best__constant_8h.html',1,'']]],
-  ['beta',['beta',['../structVW_1_1distributionally__robust_1_1ChiSquared_1_1Duals.html#abc85c1a1f4110f92c68bd188f0514f80',1,'VW::distributionally_robust::ChiSquared::Duals']]],
+  ['beta',['beta',['../structVW_1_1distributionally__robust_1_1Duals.html#af225255f0c2895ff6b24e61226295326',1,'VW::distributionally_robust::Duals']]],
   ['bfgs',['bfgs',['../structvw.html#a95cfd823e6db9fdc1ca0098433c5e186',1,'vw']]],
   ['bfgs_2eh',['bfgs.h',['../bfgs_8h.html',1,'']]],
   ['bfgs_5fsetup',['bfgs_setup',['../bfgs_8h.html#ae882a8663631c189c41f5460dcbb58df',1,'bfgs.h']]],

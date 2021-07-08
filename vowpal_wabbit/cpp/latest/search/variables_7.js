@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['gamma',['gamma',['../structVW_1_1distributionally__robust_1_1ChiSquared_1_1Duals.html#a76d1e94b6b4d7b62fb3ec11b3c63e1c5',1,'VW::distributionally_robust::ChiSquared::Duals']]],
+  ['gamma',['gamma',['../structVW_1_1distributionally__robust_1_1Duals.html#a39e8eb45f5edbadce447b79aaed55177',1,'VW::distributionally_robust::Duals']]],
   ['gd',['gd',['../structvw__dbg.html#a1508160a8e72cafef740e6e29bbd102f',1,'vw_dbg']]],
   ['gd_5fpredict',['gd_predict',['../structvw__dbg.html#a64f354dba8a38b940a791ffd217de833',1,'vw_dbg']]],
   ['generated_5finteractions',['generated_interactions',['../structINTERACTIONS_1_1interactions__generator.html#a1bfa6ac9b6a49a0f228153a629ed5bde',1,'INTERACTIONS::interactions_generator']]],
