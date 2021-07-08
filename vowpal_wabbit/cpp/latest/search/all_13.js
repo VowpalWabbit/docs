@@ -174,7 +174,7 @@ var searchData=
   ['sort_5finteractions_5fcomparator',['sort_interactions_comparator',['../namespaceINTERACTIONS.html#a991c5a05c6d343b974d3015f398c405e',1,'INTERACTIONS']]],
   ['sorted',['sorted',['../structexample.html#a0477cb59212f3ef7524d6f9b04d50918',1,'example']]],
   ['sorted_5fcache',['sorted_cache',['../structparser.html#a4000a39c49cd83d4833c344849f1bc2d',1,'parser']]],
-  ['space_5fnames',['space_names',['../structfeatures.html#abfa8e8f04aa52231e411e079e3ff68c4',1,'features']]],
+  ['space_5fnames',['space_names',['../structfeatures.html#a6cd256d6e65c599e41df7dd99e5330e7',1,'features']]],
   ['spanning_5ftree_2eh',['spanning_tree.h',['../spanning__tree_8h.html',1,'']]],
   ['spanningtree',['SpanningTree',['../classVW_1_1SpanningTree.html',1,'VW']]],
   ['spanningtree',['SpanningTree',['../classVW_1_1SpanningTree.html#a76c2f104c917104fa0e86a13c6d96a84',1,'VW::SpanningTree']]],
