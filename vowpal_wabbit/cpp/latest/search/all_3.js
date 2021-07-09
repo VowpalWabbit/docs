@@ -6,6 +6,7 @@ var searchData=
   ['cache_5ffeatures',['cache_features',['../cache_8h.html#a442df23fec457c355f2c1d17b4960eed',1,'cache.h']]],
   ['cache_5ffiles',['cache_files',['../structinput__options.html#aaa5711bc58e24146cf3c1a2538aaa7ac',1,'input_options']]],
   ['cache_5flabel',['cache_label',['../structlabel__parser.html#afa73ee8f3fa09361373277f57dd03d3a',1,'label_parser::cache_label()'],['../namespaceCB.html#a68d67c7f5301de9f3ca35d3e58c3fa94',1,'CB::cache_label()'],['../namespaceCCB.html#a1eb4843badbf4cc3ebc62da94db58ea8',1,'CCB::cache_label()'],['../namespaceVW_1_1slates.html#a7122b0230db21b0dfdf8265fa71355b8',1,'VW::slates::cache_label()']]],
+  ['cache_5flabel_5fadditional_5ffields',['cache_label_additional_fields',['../namespaceCB.html#a4aaaad481a9436890af96d68205a2de0',1,'CB']]],
   ['cache_5ftag',['cache_tag',['../cache_8h.html#a240768c48f05af593153264363e1019d',1,'cache.h']]],
   ['calculate_5ftotal_5fsum_5ffeatures_5fsquared',['calculate_total_sum_features_squared',['../example_8h.html#a7e51cf08517951ccb1600f1264b5d8c1',1,'example.h']]],
   ['call',['call',['../classVW_1_1details_1_1scope__exit__caller.html#a7b6e9b9f80f4910d743bfcaf32b53307',1,'VW::details::scope_exit_caller']]],
