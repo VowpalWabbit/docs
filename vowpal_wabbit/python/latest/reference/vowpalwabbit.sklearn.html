@@ -1,0 +1,1967 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vowpalwabbit.sklearn &#8212; VowpalWabbit 8.11.0 documentation</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".cell"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="vowpalwabbit.DFtoVW" href="vowpalwabbit.DFtoVW.html" />
+    <link rel="prev" title="vowpalwabbit.pyvw" href="vowpalwabbit.pyvw.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+<nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main">
+header placeholder
+</nav>
+
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../tutorials/index.html">
+   Tutorials
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="simple">
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../examples/index.html">
+   Examples
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="simple">
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="index.html">
+   API Reference
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="vowpalwabbit.pyvw.html">
+     vowpalwabbit.pyvw
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     vowpalwabbit.sklearn
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="vowpalwabbit.DFtoVW.html">
+     vowpalwabbit.DFtoVW
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="vowpalwabbit.pyvw.pylibvw.html">
+     vowpalwabbit.pyvw.pylibvw
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+  </div>
+</nav>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+
+<nav id="bd-toc-nav">
+    
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+
+<div class="tocsection editthispage">
+    <a href="https://github.com/VowpalWabbit/vowpal_wabbit/edit/master/python/docs/source/reference/vowpalwabbit.sklearn.rst">
+        <i class="fas fa-pencil-alt"></i> Edit this page
+    </a>
+</div>
+
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+    
+    
+
+              <div>
+                
+  <div class="section" id="module-vowpalwabbit.sklearn_vw">
+<span id="vowpalwabbit-sklearn"></span><h1>vowpalwabbit.sklearn<a class="headerlink" href="#module-vowpalwabbit.sklearn_vw" title="Permalink to this headline">¶</a></h1>
+<p>Utilities to support integration of Vowpal Wabbit and scikit-learn</p>
+<dl class="py class">
+<dt id="vowpalwabbit.sklearn_vw.LinearClassifierMixin">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">vowpalwabbit.sklearn_vw.</span></code><code class="sig-name descname"><span class="pre">LinearClassifierMixin</span></code><a class="headerlink" href="#vowpalwabbit.sklearn_vw.LinearClassifierMixin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">sklearn.linear_model._logistic.LogisticRegression</span></code></p>
+<dl class="py method">
+<dt id="vowpalwabbit.sklearn_vw.LinearClassifierMixin.__init__">
+<code class="sig-name descname"><span class="pre">__init__</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.LinearClassifierMixin.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="vowpalwabbit.sklearn_vw.VW">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">vowpalwabbit.sklearn_vw.</span></code><code class="sig-name descname"><span class="pre">VW</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">convert_to_vw</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">convert_labels</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ring_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strict_parse</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">learning_rate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">l</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">power_t</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">decay_learning_rate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial_t</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">feature_mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial_regressor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">i</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial_weight</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_weights</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normal_weights</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">truncated_normal_weights</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sparse_weights</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_feature_regularizer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quiet</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_seed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hash</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hash_seed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignore</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignore_linear</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">redefine</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bit_precision</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noconstant</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constant</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">C</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ngram</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skips</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">feature_limit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">affix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spelling</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dictionary</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dictionary_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">interactions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">permutations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">leave_duplicate_interactions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quadratic</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cubic</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">testonly</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">holdout_off</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">holdout_period</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">holdout_after</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">early_terminate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">passes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial_pass_length</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">examples</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_prediction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_prediction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort_features</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">loss_function</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quantile_tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">l1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">l2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">no_bias_regularization</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">named_labels</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">final_regressor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">readable_model</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">invert_hash</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">save_resume</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">preserve_performance_counters</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_feature_regularizer_binary</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_feature_regularizer_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">oaa</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ect</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">csoaa</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wap</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">probabilities</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nn</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inpass</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">multitask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dropout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">meanfield</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conjugate_gradient</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bfgs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hessian_on</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mem</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">termination</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lda</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lda_alpha</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lda_rho</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lda_D</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lda_epsilon</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minibatch</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">svrg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stage_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ftrl</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pistol</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ftrl_alpha</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ftrl_beta</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ksvm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bandwidth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">degree</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sgd</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">adaptive</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">invariant</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normalized</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">link</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stage_poly</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sched_exponent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_sz</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_sz_no_doubling</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lrq</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lrqdropout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lrqfa</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">d</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cache</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cache_file</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">json</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kill_cache</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">k</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VW" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">sklearn.base.BaseEstimator</span></code></p>
+<p>Vowpal Wabbit Scikit-learn Base Estimator wrapper</p>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>convert_to_vw</strong><span class="classifier">bool</span></dt><dd><p>flag to convert X input to vw format</p>
+</dd>
+<dt><strong>convert_labels</strong><span class="classifier">bool</span></dt><dd><p>Convert labels of the form [0,1] to [-1,1]</p>
+</dd>
+<dt><strong>vw_</strong><span class="classifier">pyvw.vw</span></dt><dd><p>vw instance</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="vowpalwabbit.sklearn_vw.VW.__init__">
+<code class="sig-name descname"><span class="pre">__init__</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">convert_to_vw</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">convert_labels</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ring_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strict_parse</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">learning_rate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">l</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">power_t</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">decay_learning_rate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial_t</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">feature_mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial_regressor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">i</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial_weight</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_weights</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normal_weights</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">truncated_normal_weights</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sparse_weights</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_feature_regularizer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quiet</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_seed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hash</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hash_seed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignore</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignore_linear</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">redefine</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bit_precision</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noconstant</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constant</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">C</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ngram</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skips</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">feature_limit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">affix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spelling</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dictionary</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dictionary_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">interactions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">permutations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">leave_duplicate_interactions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quadratic</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cubic</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">testonly</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">holdout_off</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">holdout_period</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">holdout_after</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">early_terminate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">passes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial_pass_length</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">examples</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_prediction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_prediction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort_features</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">loss_function</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quantile_tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">l1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">l2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">no_bias_regularization</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">named_labels</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">final_regressor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">f</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">readable_model</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">invert_hash</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">save_resume</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">preserve_performance_counters</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_feature_regularizer_binary</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_feature_regularizer_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">oaa</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ect</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">csoaa</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wap</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">probabilities</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nn</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inpass</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">multitask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dropout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">meanfield</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conjugate_gradient</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bfgs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hessian_on</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mem</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">termination</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lda</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lda_alpha</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lda_rho</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lda_D</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lda_epsilon</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minibatch</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">svrg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stage_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ftrl</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pistol</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ftrl_alpha</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ftrl_beta</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ksvm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bandwidth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">degree</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sgd</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">adaptive</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">invariant</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normalized</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">link</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stage_poly</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sched_exponent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_sz</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_sz_no_doubling</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lrq</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lrqdropout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lrqfa</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">d</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cache</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cache_file</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">json</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kill_cache</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">k</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VW.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>VW model constructor, exposing all supported parameters to keep sklearn happy</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl>
+<dt><strong>Estimator options</strong></dt><dd><dl class="simple">
+<dt>convert_to_vw<span class="classifier">bool</span></dt><dd><p>flag to convert X input to vw format</p>
+</dd>
+<dt>convert_labels<span class="classifier">bool</span></dt><dd><p>Convert labels of the form [0,1] to [-1,1]</p>
+</dd>
+</dl>
+<p>VW options</p>
+<dl class="simple">
+<dt>ring_size<span class="classifier">int</span></dt><dd><p>size of example ring</p>
+</dd>
+<dt>strict_parse<span class="classifier">bool</span></dt><dd><p>throw on malformed examples</p>
+</dd>
+</dl>
+<p>Update options</p>
+<dl class="simple">
+<dt>learning_rate,l<span class="classifier">float</span></dt><dd><p>Set learning rate</p>
+</dd>
+<dt>power_t<span class="classifier">float</span></dt><dd><p>t power value</p>
+</dd>
+<dt>decay_learning_rate<span class="classifier">float</span></dt><dd><p>Set Decay factor for learning_rate between passes</p>
+</dd>
+<dt>initial_t<span class="classifier">float</span></dt><dd><p>initial t value</p>
+</dd>
+<dt>feature_mask<span class="classifier">str</span></dt><dd><p>Use existing regressor to determine which parameters may be updated.
+If no initial_regressor given, also used for initial weights.</p>
+</dd>
+</dl>
+<p>Weight options</p>
+<dl class="simple">
+<dt>initial_regressor,i<span class="classifier">str</span></dt><dd><p>Initial regressor(s)</p>
+</dd>
+<dt>initial_weight<span class="classifier">float</span></dt><dd><p>Set all weights to an initial value of arg.</p>
+</dd>
+<dt>random_weights<span class="classifier">bool</span></dt><dd><p>make initial weights random</p>
+</dd>
+<dt>normal_weights<span class="classifier">bool</span></dt><dd><p>make initial weights normal</p>
+</dd>
+<dt>truncated_normal_weights<span class="classifier">bool</span></dt><dd><p>make initial weights truncated normal</p>
+</dd>
+<dt>sparse_weights<span class="classifier">float</span></dt><dd><p>Use a sparse datastructure for weights</p>
+</dd>
+<dt>input_feature_regularizer<span class="classifier">str</span></dt><dd><p>Per feature regularization input file</p>
+</dd>
+</dl>
+<p>Diagnostic options</p>
+<dl class="simple">
+<dt>quiet<span class="classifier">bool</span></dt><dd><p>Don’t output disgnostics and progress updates</p>
+</dd>
+</dl>
+<p>Randomization options</p>
+<dl class="simple">
+<dt>random_seed<span class="classifier">integer</span></dt><dd><p>seed random number generator</p>
+</dd>
+</dl>
+<p>Feature options</p>
+<dl class="simple">
+<dt>hash<span class="classifier">str</span></dt><dd><p>how to hash the features. Available options: strings, all</p>
+</dd>
+<dt>hash_seed<span class="classifier">int</span></dt><dd><p>seed for hash function</p>
+</dd>
+<dt>ignore<span class="classifier">str</span></dt><dd><p>ignore namespaces beginning with character &lt;arg&gt;</p>
+</dd>
+<dt>ignore_linear<span class="classifier">str</span></dt><dd><p>ignore namespaces beginning with character &lt;arg&gt; for linear terms only</p>
+</dd>
+<dt>keep<span class="classifier">str</span></dt><dd><p>keep namespaces beginning with character &lt;arg&gt;</p>
+</dd>
+<dt>redefine<span class="classifier">str</span></dt><dd><p>Redefine namespaces beginning with characters of string S as namespace N. &lt;arg&gt; shall be in
+form ‘N:=S’ where := is operator. Empty N or S are treated as default namespace.
+Use ‘:’ as a wildcard in S.</p>
+</dd>
+<dt>bit_precision,b<span class="classifier">integer</span></dt><dd><p>number of bits in the feature table</p>
+</dd>
+<dt>noconstant<span class="classifier">bool</span></dt><dd><p>Don’t add a constant feature</p>
+</dd>
+<dt>constant,C<span class="classifier">float</span></dt><dd><p>Set initial value of constant</p>
+</dd>
+<dt>ngram<span class="classifier">str</span></dt><dd><p>Generate N grams. To generate N grams for a single namespace ‘foo’, arg should be fN.</p>
+</dd>
+<dt>skips<span class="classifier">str</span></dt><dd><p>Generate skips in N grams. This in conjunction with the ngram tag can be used to generate
+generalized n-skip-k-gram. To generate n-skips for a single namespace ‘foo’, arg should be fN.</p>
+</dd>
+<dt>feature_limit<span class="classifier">str</span></dt><dd><p>limit to N features. To apply to a single namespace ‘foo’, arg should be fN</p>
+</dd>
+<dt>affix<span class="classifier">str</span></dt><dd><p>generate prefixes/suffixes of features; argument ‘+2a,-3b,+1’ means generate 2-char prefixes for
+namespace a, 3-char suffixes for b and 1 char prefixes for default namespace</p>
+</dd>
+<dt>spelling<span class="classifier">str</span></dt><dd><p>compute spelling features for a give namespace (use ‘_’ for default namespace)</p>
+</dd>
+<dt>dictionary<span class="classifier">str</span></dt><dd><p>read a dictionary for additional features (arg either ‘x:file’ or just ‘file’)</p>
+</dd>
+<dt>dictionary_path<span class="classifier">str</span></dt><dd><p>look in this directory for dictionaries; defaults to current directory or env{PATH}</p>
+</dd>
+<dt>interactions<span class="classifier">str</span></dt><dd><p>Create feature interactions of any level between namespaces.</p>
+</dd>
+<dt>permutations<span class="classifier">bool</span></dt><dd><p>Use permutations instead of combinations for feature interactions of same namespace.</p>
+</dd>
+<dt>leave_duplicate_interactions<span class="classifier">bool</span></dt><dd><p>Don’t remove interactions with duplicate combinations of namespaces. For
+ex. this is a duplicate: ‘-q ab -q ba’ and a lot more in ‘-q ::’.</p>
+</dd>
+<dt>quadratic,q<span class="classifier">str</span></dt><dd><p>Create and use quadratic features, q:: corresponds to a wildcard for all printable characters</p>
+</dd>
+<dt>cubic<span class="classifier">str</span></dt><dd><p>Create and use cubic features</p>
+</dd>
+</dl>
+<p>Example options</p>
+<dl class="simple">
+<dt>testonly,t<span class="classifier">bool</span></dt><dd><p>Ignore label information and just test</p>
+</dd>
+<dt>holdout_off<span class="classifier">bool</span></dt><dd><p>no holdout data in multiple passes</p>
+</dd>
+<dt>holdout_period<span class="classifier">int</span></dt><dd><p>holdout period for test only</p>
+</dd>
+<dt>holdout_after<span class="classifier">int</span></dt><dd><p>holdout after n training examples</p>
+</dd>
+<dt>early_terminate<span class="classifier">int</span></dt><dd><p>Specify the number of passes tolerated when holdout loss doesn’t
+decrease before early termination</p>
+</dd>
+<dt>passes<span class="classifier">int</span></dt><dd><p>Number of Training Passes</p>
+</dd>
+<dt>initial_pass_length<span class="classifier">int</span></dt><dd><p>initial number of examples per pass</p>
+</dd>
+<dt>examples<span class="classifier">int</span></dt><dd><p>number of examples to parse</p>
+</dd>
+<dt>min_prediction<span class="classifier">float</span></dt><dd><p>Smallest prediction to output</p>
+</dd>
+<dt>max_prediction<span class="classifier">float</span></dt><dd><p>Largest prediction to output</p>
+</dd>
+<dt>sort_features<span class="classifier">bool</span></dt><dd><p>turn this on to disregard order in which features have been defined. This will lead to
+smaller cache sizes</p>
+</dd>
+<dt>loss_function<span class="classifier">str</span></dt><dd><p>default_value(“squared”), “Specify the loss function to be used, uses squared by default.
+Currently available ones are squared, classic, hinge, logistic and quantile.</p>
+</dd>
+<dt>quantile_tau<span class="classifier">float</span></dt><dd><p>Parameter tau associated with Quantile loss. Defaults to 0.5</p>
+</dd>
+<dt>l1<span class="classifier">float</span></dt><dd><p>l_1 lambda (L1 regularization)</p>
+</dd>
+<dt>l2<span class="classifier">float</span></dt><dd><p>l_2 lambda (L2 regularization)</p>
+</dd>
+<dt>no_bias_regularization<span class="classifier">bool</span></dt><dd><p>no bias in regularization</p>
+</dd>
+<dt>named_labels<span class="classifier">str</span></dt><dd><p>use names for labels (multiclass, etc.) rather than integers, argument specified all
+possible labels, comma-sep, eg “–named_labels Noun,Verb,Adj,Punc”</p>
+</dd>
+</dl>
+<p>Output model</p>
+<dl class="simple">
+<dt>final_regressor,f<span class="classifier">str</span></dt><dd><p>Final regressor</p>
+</dd>
+<dt>readable_model<span class="classifier">str</span></dt><dd><p>Output human-readable final regressor with numeric features</p>
+</dd>
+<dt>invert_hash<span class="classifier">str</span></dt><dd><p>Output human-readable final regressor with feature names.  Computationally expensive.</p>
+</dd>
+<dt>save_resume<span class="classifier">bool</span></dt><dd><p>save extra state so learning can be resumed later with new data</p>
+</dd>
+<dt>preserve_performance_counters<span class="classifier">bool</span></dt><dd><p>reset performance counters when warmstarting</p>
+</dd>
+<dt>output_feature_regularizer_binary<span class="classifier">str</span></dt><dd><p>Per feature regularization output file</p>
+</dd>
+<dt>output_feature_regularizer_text<span class="classifier">str</span></dt><dd><p>Per feature regularization output file, in text</p>
+</dd>
+</dl>
+</dd>
+<dt><strong>Multiclass options</strong></dt><dd><dl class="simple">
+<dt>oaa<span class="classifier">integer</span></dt><dd><p>Use one-against-all multiclass learning with labels</p>
+</dd>
+<dt>oaa_subsample<span class="classifier">int</span></dt><dd><p>subsample this number of negative examples when learning</p>
+</dd>
+<dt>ect<span class="classifier">integer</span></dt><dd><p>Use error correcting tournament multiclass learning</p>
+</dd>
+<dt>csoaa<span class="classifier">integer</span></dt><dd><p>Use cost sensitive one-against-all multiclass learning</p>
+</dd>
+<dt>wap<span class="classifier">integer</span></dt><dd><p>Use weighted all pairs multiclass learning</p>
+</dd>
+<dt>probabilities<span class="classifier">float</span></dt><dd><p>predict probabilities of all classes</p>
+</dd>
+</dl>
+<p>Neural Network options</p>
+<dl class="simple">
+<dt>nn<span class="classifier">integer</span></dt><dd><p>Use a sigmoidal feed-forward neural network with N hidden units</p>
+</dd>
+<dt>inpass<span class="classifier">bool</span></dt><dd><p>Train or test sigmoidal feed-forward network with input pass-through</p>
+</dd>
+<dt>multitask<span class="classifier">bool</span></dt><dd><p>Share hidden layer across all reduced tasks</p>
+</dd>
+<dt>dropout<span class="classifier">bool</span></dt><dd><p>Train or test sigmoidal feed-forward network using dropout</p>
+</dd>
+<dt>meanfield<span class="classifier">bool</span></dt><dd><p>Train or test sigmoidal feed-forward network using mean field</p>
+</dd>
+</dl>
+<p>LBFGS and Conjugate Gradient options</p>
+<dl class="simple">
+<dt>conjugate_gradient<span class="classifier">bool</span></dt><dd><p>use conjugate gradient based optimization</p>
+</dd>
+<dt>bgfs<span class="classifier">bool</span></dt><dd><p>use bfgs updates</p>
+</dd>
+<dt>hessian_on<span class="classifier">bool</span></dt><dd><p>use second derivative in line search</p>
+</dd>
+<dt>mem<span class="classifier">int</span></dt><dd><p>memory in bfgs</p>
+</dd>
+<dt>termination<span class="classifier">float</span></dt><dd><p>termination threshold</p>
+</dd>
+</dl>
+<p>Latent Dirichlet Allocation options</p>
+<dl class="simple">
+<dt>lda<span class="classifier">int</span></dt><dd><p>Run lda with &lt;int&gt; topics</p>
+</dd>
+<dt>lda_alpha<span class="classifier">float</span></dt><dd><p>Prior on sparsity of per-document topic weights</p>
+</dd>
+<dt>lda_rho<span class="classifier">float</span></dt><dd><p>Prior on sparsity of topic distributions</p>
+</dd>
+<dt>lda_D<span class="classifier">int</span></dt><dd><p>Number of documents</p>
+</dd>
+<dt>lda_epsilon<span class="classifier">float</span></dt><dd><p>Loop convergence threshold</p>
+</dd>
+<dt>minibatch<span class="classifier">int</span></dt><dd><p>Minibatch size for LDA</p>
+</dd>
+</dl>
+<p>Stochastic Variance Reduced Gradient options</p>
+<dl class="simple">
+<dt>svrg<span class="classifier">bool</span></dt><dd><p>Streaming Stochastic Variance Reduced Gradient</p>
+</dd>
+<dt>stage_size<span class="classifier">int</span></dt><dd><p>Number of passes per SVRG stage</p>
+</dd>
+</dl>
+<p>Follow the Regularized Leader options</p>
+<dl class="simple">
+<dt>ftrl<span class="classifier">bool</span></dt><dd><p>Run Follow the Proximal Regularized Leader</p>
+</dd>
+<dt>coin<span class="classifier">bool</span></dt><dd><p>Coin betting optimizer</p>
+</dd>
+<dt>pistol<span class="classifier">bool</span></dt><dd><p>PiSTOL: Parameter free STOchastic Learning</p>
+</dd>
+<dt>ftrl_alpha<span class="classifier">float</span></dt><dd><p>Alpha parameter for FTRL optimization</p>
+</dd>
+<dt>ftrl_beta<span class="classifier">float</span></dt><dd><p>Beta parameters for FTRL optimization</p>
+</dd>
+</dl>
+<p>Kernel SVM options</p>
+<dl class="simple">
+<dt>ksvm<span class="classifier">bool</span></dt><dd><p>kernel svm</p>
+</dd>
+<dt>kernel<span class="classifier">str</span></dt><dd><p>type of kernel (rbf or linear (default))</p>
+</dd>
+<dt>bandwidth<span class="classifier">int</span></dt><dd><p>bandwidth of rbf kernel</p>
+</dd>
+<dt>degree<span class="classifier">int</span></dt><dd><p>degree of poly kernel</p>
+</dd>
+</dl>
+<p>Gradient Descent options</p>
+<dl class="simple">
+<dt>sgd<span class="classifier">bool</span></dt><dd><p>use regular stochastic gradient descent update</p>
+</dd>
+<dt>adaptive<span class="classifier">bool</span></dt><dd><p>use adaptive, individual learning rates</p>
+</dd>
+<dt>adax<span class="classifier">bool</span></dt><dd><p>use adaptive learning rates with x^2 instead of g^2x^2</p>
+</dd>
+<dt>invariant<span class="classifier">bool</span></dt><dd><p>use save/importance aware updates</p>
+</dd>
+<dt>normalized<span class="classifier">bool</span></dt><dd><p>use per feature normalized updates</p>
+</dd>
+</dl>
+<p>Scorer options</p>
+<dl class="simple">
+<dt>link<span class="classifier">str</span></dt><dd><p>Specify the link function: identity, logistic, glf1 or poisson</p>
+</dd>
+</dl>
+<p>Stagewise polynomial options:</p>
+<dl class="simple">
+<dt>stage_poly<span class="classifier">bool</span></dt><dd><p>use stagewise polynomial feature learning</p>
+</dd>
+<dt>sched_exponent<span class="classifier">int</span></dt><dd><p>exponent controlling quantity of included features</p>
+</dd>
+<dt>batch_sz<span class="classifier">int</span></dt><dd><p>multiplier on batch size before including more features</p>
+</dd>
+<dt>batch_sz_no_doubling<span class="classifier">bool</span></dt><dd><p>batch_sz does not double</p>
+</dd>
+</dl>
+<p>Low Rank Quadratics options:</p>
+<dl class="simple">
+<dt>lrq<span class="classifier">bool</span></dt><dd><p>use low rank quadratic features</p>
+</dd>
+<dt>lrqdropout<span class="classifier">bool</span></dt><dd><p>use dropout training for low rank quadratic features</p>
+</dd>
+<dt>lrqfa<span class="classifier">bool</span></dt><dd><p>use low rank quadratic features with field aware weights</p>
+</dd>
+</dl>
+<p>Input options</p>
+<dl class="simple">
+<dt>data,d<span class="classifier">str</span></dt><dd><p>path to data file for fitting external to sklearn</p>
+</dd>
+<dt>cache,c<span class="classifier">str</span></dt><dd><p>use a cache. default is &lt;data&gt;.cache</p>
+</dd>
+<dt>cache_file<span class="classifier">str</span></dt><dd><p>path to cache file to use</p>
+</dd>
+<dt>json<span class="classifier">bool</span></dt><dd><p>enable JSON parsing</p>
+</dd>
+<dt>kill_cache, k<span class="classifier">bool</span></dt><dd><p>do not reuse existing cache file, create a new one always</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>self</strong><span class="classifier">BaseEstimator</span></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="vowpalwabbit.sklearn_vw.VW.convert_labels">
+<code class="sig-name descname"><span class="pre">convert_labels</span></code><em class="property"> <span class="pre">=</span> <span class="pre">True</span></em><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VW.convert_labels" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="vowpalwabbit.sklearn_vw.VW.convert_to_vw">
+<code class="sig-name descname"><span class="pre">convert_to_vw</span></code><em class="property"> <span class="pre">=</span> <span class="pre">True</span></em><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VW.convert_to_vw" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="vowpalwabbit.sklearn_vw.VW.fit">
+<code class="sig-name descname"><span class="pre">fit</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sample_weight</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VW.fit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fit the model according to the given training data</p>
+<dl class="simple">
+<dt>TODO: for first pass create and store example objects.</dt><dd><p>for N-1 passes use example objects directly (simulate cache file…but in memory for faster processing)</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>X</strong><span class="classifier">{array-like, sparse matrix}, shape (n_samples, n_features or 1 if not convert_to_vw) or</span></dt><dd><p>Training vector, where n_samples in the number of samples and
+n_features is the number of features.
+if not using convert_to_vw, X is expected to be a list of vw formatted feature vector strings with labels</p>
+</dd>
+<dt><strong>y</strong><span class="classifier">array-like, shape (n_samples,), optional if not convert_to_vw</span></dt><dd><p>Target vector relative to X.</p>
+</dd>
+<dt><strong>sample_weight</strong><span class="classifier">array-like, shape (n_samples,)</span></dt><dd><p>sample weight vector relative to X.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>self</strong><span class="classifier">BaseEstimator</span></dt><dd><p>So pipeline can call transform() after fit</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="vowpalwabbit.sklearn_vw.VW.get_coefs">
+<code class="sig-name descname"><span class="pre">get_coefs</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VW.get_coefs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns coefficient weights as ordered sparse matrix</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>sparse matrix</strong><span class="classifier">coefficient weights for model</span></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="vowpalwabbit.sklearn_vw.VW.get_intercept">
+<code class="sig-name descname"><span class="pre">get_intercept</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VW.get_intercept" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns intercept weight for model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>intercept value</strong><span class="classifier">integer, 0 if no constant</span></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="vowpalwabbit.sklearn_vw.VW.get_params">
+<code class="sig-name descname"><span class="pre">get_params</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">deep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VW.get_params" title="Permalink to this definition">¶</a></dt>
+<dd><p>This returns the full set of vw and estimator parameters currently in use</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="vowpalwabbit.sklearn_vw.VW.get_vw">
+<code class="sig-name descname"><span class="pre">get_vw</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VW.get_vw" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the vw instance</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>vw</strong><span class="classifier">pyvw.vw instance</span></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="vowpalwabbit.sklearn_vw.VW.load">
+<code class="sig-name descname"><span class="pre">load</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VW.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load model from file</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="vowpalwabbit.sklearn_vw.VW.predict">
+<code class="sig-name descname"><span class="pre">predict</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VW.predict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Predict with Vowpal Wabbit model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>X</strong><span class="classifier">{array-like, sparse matrix}, shape (n_samples, n_features or 1)</span></dt><dd><p>Training vector, where n_samples in the number of samples and
+n_features is the number of features.
+if not using convert_to_vw, X is expected to be a list of vw formatted feature vector strings with labels</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>y</strong><span class="classifier">array-like, shape (n_samples, 1 or n_classes)</span></dt><dd><p>Output vector relative to X.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="vowpalwabbit.sklearn_vw.VW.save">
+<code class="sig-name descname"><span class="pre">save</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VW.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save model to file</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="vowpalwabbit.sklearn_vw.VW.set_coefs">
+<code class="sig-name descname"><span class="pre">set_coefs</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coefs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VW.set_coefs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets coefficients weights from ordered sparse matrix</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>coefs</strong><span class="classifier">sparse matrix</span></dt><dd><p>coefficient weights for model</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="vowpalwabbit.sklearn_vw.VW.set_params">
+<code class="sig-name descname"><span class="pre">set_params</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VW.set_params" title="Permalink to this definition">¶</a></dt>
+<dd><p>This destroys and recreates the Vowpal Wabbit model with updated parameters
+any parameters not provided will remain as they are currently</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="vowpalwabbit.sklearn_vw.VW.vw_">
+<code class="sig-name descname"><span class="pre">vw_</span></code><em class="property"> <span class="pre">=</span> <span class="pre">None</span></em><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VW.vw_" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="vowpalwabbit.sklearn_vw.VWClassifier">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">vowpalwabbit.sklearn_vw.</span></code><code class="sig-name descname"><span class="pre">VWClassifier</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">loss_function</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'logistic'</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VWClassifier" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#vowpalwabbit.sklearn_vw.VW" title="vowpalwabbit.sklearn_vw.VW"><code class="xref py py-class docutils literal notranslate"><span class="pre">vowpalwabbit.sklearn_vw.VW</span></code></a>, <a class="reference internal" href="#vowpalwabbit.sklearn_vw.LinearClassifierMixin" title="vowpalwabbit.sklearn_vw.LinearClassifierMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">vowpalwabbit.sklearn_vw.LinearClassifierMixin</span></code></a></p>
+<p>Vowpal Wabbit Classifier model for binary classification
+Use VWMultiClassifier for multiclass classification
+Note - We are assuming the VW.predict returns logits, applying link=logistic will break this assumption</p>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>coef_</strong><span class="classifier">scipy.sparse_matrix</span></dt><dd><p>Empty sparse matrix used the check if model has been fit</p>
+</dd>
+<dt><strong>classes_</strong><span class="classifier">np.array</span></dt><dd><p>Binary class labels</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="vowpalwabbit.sklearn_vw.VWClassifier.__init__">
+<code class="sig-name descname"><span class="pre">__init__</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">loss_function</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'logistic'</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VWClassifier.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>VW model constructor, exposing all supported parameters to keep sklearn happy</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl>
+<dt><strong>Estimator options</strong></dt><dd><dl class="simple">
+<dt>convert_to_vw<span class="classifier">bool</span></dt><dd><p>flag to convert X input to vw format</p>
+</dd>
+<dt>convert_labels<span class="classifier">bool</span></dt><dd><p>Convert labels of the form [0,1] to [-1,1]</p>
+</dd>
+</dl>
+<p>VW options</p>
+<dl class="simple">
+<dt>ring_size<span class="classifier">int</span></dt><dd><p>size of example ring</p>
+</dd>
+<dt>strict_parse<span class="classifier">bool</span></dt><dd><p>throw on malformed examples</p>
+</dd>
+</dl>
+<p>Update options</p>
+<dl class="simple">
+<dt>learning_rate,l<span class="classifier">float</span></dt><dd><p>Set learning rate</p>
+</dd>
+<dt>power_t<span class="classifier">float</span></dt><dd><p>t power value</p>
+</dd>
+<dt>decay_learning_rate<span class="classifier">float</span></dt><dd><p>Set Decay factor for learning_rate between passes</p>
+</dd>
+<dt>initial_t<span class="classifier">float</span></dt><dd><p>initial t value</p>
+</dd>
+<dt>feature_mask<span class="classifier">str</span></dt><dd><p>Use existing regressor to determine which parameters may be updated.
+If no initial_regressor given, also used for initial weights.</p>
+</dd>
+</dl>
+<p>Weight options</p>
+<dl class="simple">
+<dt>initial_regressor,i<span class="classifier">str</span></dt><dd><p>Initial regressor(s)</p>
+</dd>
+<dt>initial_weight<span class="classifier">float</span></dt><dd><p>Set all weights to an initial value of arg.</p>
+</dd>
+<dt>random_weights<span class="classifier">bool</span></dt><dd><p>make initial weights random</p>
+</dd>
+<dt>normal_weights<span class="classifier">bool</span></dt><dd><p>make initial weights normal</p>
+</dd>
+<dt>truncated_normal_weights<span class="classifier">bool</span></dt><dd><p>make initial weights truncated normal</p>
+</dd>
+<dt>sparse_weights<span class="classifier">float</span></dt><dd><p>Use a sparse datastructure for weights</p>
+</dd>
+<dt>input_feature_regularizer<span class="classifier">str</span></dt><dd><p>Per feature regularization input file</p>
+</dd>
+</dl>
+<p>Diagnostic options</p>
+<dl class="simple">
+<dt>quiet<span class="classifier">bool</span></dt><dd><p>Don’t output disgnostics and progress updates</p>
+</dd>
+</dl>
+<p>Randomization options</p>
+<dl class="simple">
+<dt>random_seed<span class="classifier">integer</span></dt><dd><p>seed random number generator</p>
+</dd>
+</dl>
+<p>Feature options</p>
+<dl class="simple">
+<dt>hash<span class="classifier">str</span></dt><dd><p>how to hash the features. Available options: strings, all</p>
+</dd>
+<dt>hash_seed<span class="classifier">int</span></dt><dd><p>seed for hash function</p>
+</dd>
+<dt>ignore<span class="classifier">str</span></dt><dd><p>ignore namespaces beginning with character &lt;arg&gt;</p>
+</dd>
+<dt>ignore_linear<span class="classifier">str</span></dt><dd><p>ignore namespaces beginning with character &lt;arg&gt; for linear terms only</p>
+</dd>
+<dt>keep<span class="classifier">str</span></dt><dd><p>keep namespaces beginning with character &lt;arg&gt;</p>
+</dd>
+<dt>redefine<span class="classifier">str</span></dt><dd><p>Redefine namespaces beginning with characters of string S as namespace N. &lt;arg&gt; shall be in
+form ‘N:=S’ where := is operator. Empty N or S are treated as default namespace.
+Use ‘:’ as a wildcard in S.</p>
+</dd>
+<dt>bit_precision,b<span class="classifier">integer</span></dt><dd><p>number of bits in the feature table</p>
+</dd>
+<dt>noconstant<span class="classifier">bool</span></dt><dd><p>Don’t add a constant feature</p>
+</dd>
+<dt>constant,C<span class="classifier">float</span></dt><dd><p>Set initial value of constant</p>
+</dd>
+<dt>ngram<span class="classifier">str</span></dt><dd><p>Generate N grams. To generate N grams for a single namespace ‘foo’, arg should be fN.</p>
+</dd>
+<dt>skips<span class="classifier">str</span></dt><dd><p>Generate skips in N grams. This in conjunction with the ngram tag can be used to generate
+generalized n-skip-k-gram. To generate n-skips for a single namespace ‘foo’, arg should be fN.</p>
+</dd>
+<dt>feature_limit<span class="classifier">str</span></dt><dd><p>limit to N features. To apply to a single namespace ‘foo’, arg should be fN</p>
+</dd>
+<dt>affix<span class="classifier">str</span></dt><dd><p>generate prefixes/suffixes of features; argument ‘+2a,-3b,+1’ means generate 2-char prefixes for
+namespace a, 3-char suffixes for b and 1 char prefixes for default namespace</p>
+</dd>
+<dt>spelling<span class="classifier">str</span></dt><dd><p>compute spelling features for a give namespace (use ‘_’ for default namespace)</p>
+</dd>
+<dt>dictionary<span class="classifier">str</span></dt><dd><p>read a dictionary for additional features (arg either ‘x:file’ or just ‘file’)</p>
+</dd>
+<dt>dictionary_path<span class="classifier">str</span></dt><dd><p>look in this directory for dictionaries; defaults to current directory or env{PATH}</p>
+</dd>
+<dt>interactions<span class="classifier">str</span></dt><dd><p>Create feature interactions of any level between namespaces.</p>
+</dd>
+<dt>permutations<span class="classifier">bool</span></dt><dd><p>Use permutations instead of combinations for feature interactions of same namespace.</p>
+</dd>
+<dt>leave_duplicate_interactions<span class="classifier">bool</span></dt><dd><p>Don’t remove interactions with duplicate combinations of namespaces. For
+ex. this is a duplicate: ‘-q ab -q ba’ and a lot more in ‘-q ::’.</p>
+</dd>
+<dt>quadratic,q<span class="classifier">str</span></dt><dd><p>Create and use quadratic features, q:: corresponds to a wildcard for all printable characters</p>
+</dd>
+<dt>cubic<span class="classifier">str</span></dt><dd><p>Create and use cubic features</p>
+</dd>
+</dl>
+<p>Example options</p>
+<dl class="simple">
+<dt>testonly,t<span class="classifier">bool</span></dt><dd><p>Ignore label information and just test</p>
+</dd>
+<dt>holdout_off<span class="classifier">bool</span></dt><dd><p>no holdout data in multiple passes</p>
+</dd>
+<dt>holdout_period<span class="classifier">int</span></dt><dd><p>holdout period for test only</p>
+</dd>
+<dt>holdout_after<span class="classifier">int</span></dt><dd><p>holdout after n training examples</p>
+</dd>
+<dt>early_terminate<span class="classifier">int</span></dt><dd><p>Specify the number of passes tolerated when holdout loss doesn’t
+decrease before early termination</p>
+</dd>
+<dt>passes<span class="classifier">int</span></dt><dd><p>Number of Training Passes</p>
+</dd>
+<dt>initial_pass_length<span class="classifier">int</span></dt><dd><p>initial number of examples per pass</p>
+</dd>
+<dt>examples<span class="classifier">int</span></dt><dd><p>number of examples to parse</p>
+</dd>
+<dt>min_prediction<span class="classifier">float</span></dt><dd><p>Smallest prediction to output</p>
+</dd>
+<dt>max_prediction<span class="classifier">float</span></dt><dd><p>Largest prediction to output</p>
+</dd>
+<dt>sort_features<span class="classifier">bool</span></dt><dd><p>turn this on to disregard order in which features have been defined. This will lead to
+smaller cache sizes</p>
+</dd>
+<dt>loss_function<span class="classifier">str</span></dt><dd><p>default_value(“squared”), “Specify the loss function to be used, uses squared by default.
+Currently available ones are squared, classic, hinge, logistic and quantile.</p>
+</dd>
+<dt>quantile_tau<span class="classifier">float</span></dt><dd><p>Parameter tau associated with Quantile loss. Defaults to 0.5</p>
+</dd>
+<dt>l1<span class="classifier">float</span></dt><dd><p>l_1 lambda (L1 regularization)</p>
+</dd>
+<dt>l2<span class="classifier">float</span></dt><dd><p>l_2 lambda (L2 regularization)</p>
+</dd>
+<dt>no_bias_regularization<span class="classifier">bool</span></dt><dd><p>no bias in regularization</p>
+</dd>
+<dt>named_labels<span class="classifier">str</span></dt><dd><p>use names for labels (multiclass, etc.) rather than integers, argument specified all
+possible labels, comma-sep, eg “–named_labels Noun,Verb,Adj,Punc”</p>
+</dd>
+</dl>
+<p>Output model</p>
+<dl class="simple">
+<dt>final_regressor,f<span class="classifier">str</span></dt><dd><p>Final regressor</p>
+</dd>
+<dt>readable_model<span class="classifier">str</span></dt><dd><p>Output human-readable final regressor with numeric features</p>
+</dd>
+<dt>invert_hash<span class="classifier">str</span></dt><dd><p>Output human-readable final regressor with feature names.  Computationally expensive.</p>
+</dd>
+<dt>save_resume<span class="classifier">bool</span></dt><dd><p>save extra state so learning can be resumed later with new data</p>
+</dd>
+<dt>preserve_performance_counters<span class="classifier">bool</span></dt><dd><p>reset performance counters when warmstarting</p>
+</dd>
+<dt>output_feature_regularizer_binary<span class="classifier">str</span></dt><dd><p>Per feature regularization output file</p>
+</dd>
+<dt>output_feature_regularizer_text<span class="classifier">str</span></dt><dd><p>Per feature regularization output file, in text</p>
+</dd>
+</dl>
+</dd>
+<dt><strong>Multiclass options</strong></dt><dd><dl class="simple">
+<dt>oaa<span class="classifier">integer</span></dt><dd><p>Use one-against-all multiclass learning with labels</p>
+</dd>
+<dt>oaa_subsample<span class="classifier">int</span></dt><dd><p>subsample this number of negative examples when learning</p>
+</dd>
+<dt>ect<span class="classifier">integer</span></dt><dd><p>Use error correcting tournament multiclass learning</p>
+</dd>
+<dt>csoaa<span class="classifier">integer</span></dt><dd><p>Use cost sensitive one-against-all multiclass learning</p>
+</dd>
+<dt>wap<span class="classifier">integer</span></dt><dd><p>Use weighted all pairs multiclass learning</p>
+</dd>
+<dt>probabilities<span class="classifier">float</span></dt><dd><p>predict probabilities of all classes</p>
+</dd>
+</dl>
+<p>Neural Network options</p>
+<dl class="simple">
+<dt>nn<span class="classifier">integer</span></dt><dd><p>Use a sigmoidal feed-forward neural network with N hidden units</p>
+</dd>
+<dt>inpass<span class="classifier">bool</span></dt><dd><p>Train or test sigmoidal feed-forward network with input pass-through</p>
+</dd>
+<dt>multitask<span class="classifier">bool</span></dt><dd><p>Share hidden layer across all reduced tasks</p>
+</dd>
+<dt>dropout<span class="classifier">bool</span></dt><dd><p>Train or test sigmoidal feed-forward network using dropout</p>
+</dd>
+<dt>meanfield<span class="classifier">bool</span></dt><dd><p>Train or test sigmoidal feed-forward network using mean field</p>
+</dd>
+</dl>
+<p>LBFGS and Conjugate Gradient options</p>
+<dl class="simple">
+<dt>conjugate_gradient<span class="classifier">bool</span></dt><dd><p>use conjugate gradient based optimization</p>
+</dd>
+<dt>bgfs<span class="classifier">bool</span></dt><dd><p>use bfgs updates</p>
+</dd>
+<dt>hessian_on<span class="classifier">bool</span></dt><dd><p>use second derivative in line search</p>
+</dd>
+<dt>mem<span class="classifier">int</span></dt><dd><p>memory in bfgs</p>
+</dd>
+<dt>termination<span class="classifier">float</span></dt><dd><p>termination threshold</p>
+</dd>
+</dl>
+<p>Latent Dirichlet Allocation options</p>
+<dl class="simple">
+<dt>lda<span class="classifier">int</span></dt><dd><p>Run lda with &lt;int&gt; topics</p>
+</dd>
+<dt>lda_alpha<span class="classifier">float</span></dt><dd><p>Prior on sparsity of per-document topic weights</p>
+</dd>
+<dt>lda_rho<span class="classifier">float</span></dt><dd><p>Prior on sparsity of topic distributions</p>
+</dd>
+<dt>lda_D<span class="classifier">int</span></dt><dd><p>Number of documents</p>
+</dd>
+<dt>lda_epsilon<span class="classifier">float</span></dt><dd><p>Loop convergence threshold</p>
+</dd>
+<dt>minibatch<span class="classifier">int</span></dt><dd><p>Minibatch size for LDA</p>
+</dd>
+</dl>
+<p>Stochastic Variance Reduced Gradient options</p>
+<dl class="simple">
+<dt>svrg<span class="classifier">bool</span></dt><dd><p>Streaming Stochastic Variance Reduced Gradient</p>
+</dd>
+<dt>stage_size<span class="classifier">int</span></dt><dd><p>Number of passes per SVRG stage</p>
+</dd>
+</dl>
+<p>Follow the Regularized Leader options</p>
+<dl class="simple">
+<dt>ftrl<span class="classifier">bool</span></dt><dd><p>Run Follow the Proximal Regularized Leader</p>
+</dd>
+<dt>coin<span class="classifier">bool</span></dt><dd><p>Coin betting optimizer</p>
+</dd>
+<dt>pistol<span class="classifier">bool</span></dt><dd><p>PiSTOL: Parameter free STOchastic Learning</p>
+</dd>
+<dt>ftrl_alpha<span class="classifier">float</span></dt><dd><p>Alpha parameter for FTRL optimization</p>
+</dd>
+<dt>ftrl_beta<span class="classifier">float</span></dt><dd><p>Beta parameters for FTRL optimization</p>
+</dd>
+</dl>
+<p>Kernel SVM options</p>
+<dl class="simple">
+<dt>ksvm<span class="classifier">bool</span></dt><dd><p>kernel svm</p>
+</dd>
+<dt>kernel<span class="classifier">str</span></dt><dd><p>type of kernel (rbf or linear (default))</p>
+</dd>
+<dt>bandwidth<span class="classifier">int</span></dt><dd><p>bandwidth of rbf kernel</p>
+</dd>
+<dt>degree<span class="classifier">int</span></dt><dd><p>degree of poly kernel</p>
+</dd>
+</dl>
+<p>Gradient Descent options</p>
+<dl class="simple">
+<dt>sgd<span class="classifier">bool</span></dt><dd><p>use regular stochastic gradient descent update</p>
+</dd>
+<dt>adaptive<span class="classifier">bool</span></dt><dd><p>use adaptive, individual learning rates</p>
+</dd>
+<dt>adax<span class="classifier">bool</span></dt><dd><p>use adaptive learning rates with x^2 instead of g^2x^2</p>
+</dd>
+<dt>invariant<span class="classifier">bool</span></dt><dd><p>use save/importance aware updates</p>
+</dd>
+<dt>normalized<span class="classifier">bool</span></dt><dd><p>use per feature normalized updates</p>
+</dd>
+</dl>
+<p>Scorer options</p>
+<dl class="simple">
+<dt>link<span class="classifier">str</span></dt><dd><p>Specify the link function: identity, logistic, glf1 or poisson</p>
+</dd>
+</dl>
+<p>Stagewise polynomial options:</p>
+<dl class="simple">
+<dt>stage_poly<span class="classifier">bool</span></dt><dd><p>use stagewise polynomial feature learning</p>
+</dd>
+<dt>sched_exponent<span class="classifier">int</span></dt><dd><p>exponent controlling quantity of included features</p>
+</dd>
+<dt>batch_sz<span class="classifier">int</span></dt><dd><p>multiplier on batch size before including more features</p>
+</dd>
+<dt>batch_sz_no_doubling<span class="classifier">bool</span></dt><dd><p>batch_sz does not double</p>
+</dd>
+</dl>
+<p>Low Rank Quadratics options:</p>
+<dl class="simple">
+<dt>lrq<span class="classifier">bool</span></dt><dd><p>use low rank quadratic features</p>
+</dd>
+<dt>lrqdropout<span class="classifier">bool</span></dt><dd><p>use dropout training for low rank quadratic features</p>
+</dd>
+<dt>lrqfa<span class="classifier">bool</span></dt><dd><p>use low rank quadratic features with field aware weights</p>
+</dd>
+</dl>
+<p>Input options</p>
+<dl class="simple">
+<dt>data,d<span class="classifier">str</span></dt><dd><p>path to data file for fitting external to sklearn</p>
+</dd>
+<dt>cache,c<span class="classifier">str</span></dt><dd><p>use a cache. default is &lt;data&gt;.cache</p>
+</dd>
+<dt>cache_file<span class="classifier">str</span></dt><dd><p>path to cache file to use</p>
+</dd>
+<dt>json<span class="classifier">bool</span></dt><dd><p>enable JSON parsing</p>
+</dd>
+<dt>kill_cache, k<span class="classifier">bool</span></dt><dd><p>do not reuse existing cache file, create a new one always</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>self</strong><span class="classifier">BaseEstimator</span></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="vowpalwabbit.sklearn_vw.VWClassifier.classes_">
+<code class="sig-name descname"><span class="pre">classes_</span></code><em class="property"> <span class="pre">=</span> <span class="pre">array([-1.,</span>&#160; <span class="pre">1.])</span></em><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VWClassifier.classes_" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="vowpalwabbit.sklearn_vw.VWClassifier.coef_">
+<code class="sig-name descname"><span class="pre">coef_</span></code><em class="property"> <span class="pre">=</span> <span class="pre">None</span></em><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VWClassifier.coef_" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="vowpalwabbit.sklearn_vw.VWClassifier.decision_function">
+<code class="sig-name descname"><span class="pre">decision_function</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VWClassifier.decision_function" title="Permalink to this definition">¶</a></dt>
+<dd><p>Predict confidence scores for samples.
+The confidence score for a sample is the signed distance of that
+sample to the hyperplane.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>X</strong><span class="classifier">array_like or sparse matrix, shape (n_samples, n_features)</span></dt><dd><p>Samples.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>array, shape=(n_samples,) if n_classes == 2 else (n_samples, n_classes)</dt><dd><p>Confidence scores per (sample, class) combination. In the binary
+case, confidence score for self.classes_[1] where &gt;0 means this
+class would be predicted.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="vowpalwabbit.sklearn_vw.VWClassifier.fit">
+<code class="sig-name descname"><span class="pre">fit</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sample_weight</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VWClassifier.fit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fit the model according to the given training data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>X</strong><span class="classifier">{array-like, sparse matrix} of shape (n_samples, n_features)</span></dt><dd><p>Training vector, where n_samples is the number of samples and
+n_features is the number of features.</p>
+</dd>
+<dt><strong>y</strong><span class="classifier">array-like of shape (n_samples,)</span></dt><dd><p>Target vector relative to X.</p>
+</dd>
+<dt><strong>sample_weight</strong><span class="classifier">array-like of shape (n_samples,) default=None</span></dt><dd><p>Array of weights that are assigned to individual samples.
+If not provided, then each sample is given unit weight.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>self</dt><dd><p>Fitted estimator.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="vowpalwabbit.sklearn_vw.VWClassifier.predict">
+<code class="sig-name descname"><span class="pre">predict</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VWClassifier.predict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Predict class labels for samples in X.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>X</strong><span class="classifier">array_like or sparse matrix, shape (n_samples, n_features)</span></dt><dd><p>Samples.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>C</strong><span class="classifier">array, shape [n_samples]</span></dt><dd><p>Predicted class label per sample.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="vowpalwabbit.sklearn_vw.VWClassifier.predict_proba">
+<code class="sig-name descname"><span class="pre">predict_proba</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VWClassifier.predict_proba" title="Permalink to this definition">¶</a></dt>
+<dd><p>Predict probabilities for samples</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>X</strong><span class="classifier">{array-like, sparse matrix}, shape = (n_samples, n_features)</span></dt><dd><p>Samples.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>T</strong><span class="classifier">array-like of shape (n_samples, n_classes)</span></dt><dd><p>Returns the probability of the sample for each class in the model,
+where classes are ordered as they are in <code class="docutils literal notranslate"><span class="pre">self.classes_</span></code>.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="vowpalwabbit.sklearn_vw.VWMultiClassifier">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">vowpalwabbit.sklearn_vw.</span></code><code class="sig-name descname"><span class="pre">VWMultiClassifier</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">probabilities</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VWMultiClassifier" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#vowpalwabbit.sklearn_vw.VWClassifier" title="vowpalwabbit.sklearn_vw.VWClassifier"><code class="xref py py-class docutils literal notranslate"><span class="pre">vowpalwabbit.sklearn_vw.VWClassifier</span></code></a></p>
+<p>Vowpal Wabbit MultiClassifier model
+Note - We are assuming the VW.predict returns probabilities, setting probabilities=False will break this assumption</p>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>classes_</strong><span class="classifier">np.array</span></dt><dd><p>class labels</p>
+</dd>
+<dt><strong>estimator_: dict</strong></dt><dd><p>type of estimator to use [csoaa, ect, oaa, wap] and number of classes</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="vowpalwabbit.sklearn_vw.VWMultiClassifier.__init__">
+<code class="sig-name descname"><span class="pre">__init__</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">probabilities</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VWMultiClassifier.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>VW model constructor, exposing all supported parameters to keep sklearn happy</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl>
+<dt><strong>Estimator options</strong></dt><dd><dl class="simple">
+<dt>convert_to_vw<span class="classifier">bool</span></dt><dd><p>flag to convert X input to vw format</p>
+</dd>
+<dt>convert_labels<span class="classifier">bool</span></dt><dd><p>Convert labels of the form [0,1] to [-1,1]</p>
+</dd>
+</dl>
+<p>VW options</p>
+<dl class="simple">
+<dt>ring_size<span class="classifier">int</span></dt><dd><p>size of example ring</p>
+</dd>
+<dt>strict_parse<span class="classifier">bool</span></dt><dd><p>throw on malformed examples</p>
+</dd>
+</dl>
+<p>Update options</p>
+<dl class="simple">
+<dt>learning_rate,l<span class="classifier">float</span></dt><dd><p>Set learning rate</p>
+</dd>
+<dt>power_t<span class="classifier">float</span></dt><dd><p>t power value</p>
+</dd>
+<dt>decay_learning_rate<span class="classifier">float</span></dt><dd><p>Set Decay factor for learning_rate between passes</p>
+</dd>
+<dt>initial_t<span class="classifier">float</span></dt><dd><p>initial t value</p>
+</dd>
+<dt>feature_mask<span class="classifier">str</span></dt><dd><p>Use existing regressor to determine which parameters may be updated.
+If no initial_regressor given, also used for initial weights.</p>
+</dd>
+</dl>
+<p>Weight options</p>
+<dl class="simple">
+<dt>initial_regressor,i<span class="classifier">str</span></dt><dd><p>Initial regressor(s)</p>
+</dd>
+<dt>initial_weight<span class="classifier">float</span></dt><dd><p>Set all weights to an initial value of arg.</p>
+</dd>
+<dt>random_weights<span class="classifier">bool</span></dt><dd><p>make initial weights random</p>
+</dd>
+<dt>normal_weights<span class="classifier">bool</span></dt><dd><p>make initial weights normal</p>
+</dd>
+<dt>truncated_normal_weights<span class="classifier">bool</span></dt><dd><p>make initial weights truncated normal</p>
+</dd>
+<dt>sparse_weights<span class="classifier">float</span></dt><dd><p>Use a sparse datastructure for weights</p>
+</dd>
+<dt>input_feature_regularizer<span class="classifier">str</span></dt><dd><p>Per feature regularization input file</p>
+</dd>
+</dl>
+<p>Diagnostic options</p>
+<dl class="simple">
+<dt>quiet<span class="classifier">bool</span></dt><dd><p>Don’t output disgnostics and progress updates</p>
+</dd>
+</dl>
+<p>Randomization options</p>
+<dl class="simple">
+<dt>random_seed<span class="classifier">integer</span></dt><dd><p>seed random number generator</p>
+</dd>
+</dl>
+<p>Feature options</p>
+<dl class="simple">
+<dt>hash<span class="classifier">str</span></dt><dd><p>how to hash the features. Available options: strings, all</p>
+</dd>
+<dt>hash_seed<span class="classifier">int</span></dt><dd><p>seed for hash function</p>
+</dd>
+<dt>ignore<span class="classifier">str</span></dt><dd><p>ignore namespaces beginning with character &lt;arg&gt;</p>
+</dd>
+<dt>ignore_linear<span class="classifier">str</span></dt><dd><p>ignore namespaces beginning with character &lt;arg&gt; for linear terms only</p>
+</dd>
+<dt>keep<span class="classifier">str</span></dt><dd><p>keep namespaces beginning with character &lt;arg&gt;</p>
+</dd>
+<dt>redefine<span class="classifier">str</span></dt><dd><p>Redefine namespaces beginning with characters of string S as namespace N. &lt;arg&gt; shall be in
+form ‘N:=S’ where := is operator. Empty N or S are treated as default namespace.
+Use ‘:’ as a wildcard in S.</p>
+</dd>
+<dt>bit_precision,b<span class="classifier">integer</span></dt><dd><p>number of bits in the feature table</p>
+</dd>
+<dt>noconstant<span class="classifier">bool</span></dt><dd><p>Don’t add a constant feature</p>
+</dd>
+<dt>constant,C<span class="classifier">float</span></dt><dd><p>Set initial value of constant</p>
+</dd>
+<dt>ngram<span class="classifier">str</span></dt><dd><p>Generate N grams. To generate N grams for a single namespace ‘foo’, arg should be fN.</p>
+</dd>
+<dt>skips<span class="classifier">str</span></dt><dd><p>Generate skips in N grams. This in conjunction with the ngram tag can be used to generate
+generalized n-skip-k-gram. To generate n-skips for a single namespace ‘foo’, arg should be fN.</p>
+</dd>
+<dt>feature_limit<span class="classifier">str</span></dt><dd><p>limit to N features. To apply to a single namespace ‘foo’, arg should be fN</p>
+</dd>
+<dt>affix<span class="classifier">str</span></dt><dd><p>generate prefixes/suffixes of features; argument ‘+2a,-3b,+1’ means generate 2-char prefixes for
+namespace a, 3-char suffixes for b and 1 char prefixes for default namespace</p>
+</dd>
+<dt>spelling<span class="classifier">str</span></dt><dd><p>compute spelling features for a give namespace (use ‘_’ for default namespace)</p>
+</dd>
+<dt>dictionary<span class="classifier">str</span></dt><dd><p>read a dictionary for additional features (arg either ‘x:file’ or just ‘file’)</p>
+</dd>
+<dt>dictionary_path<span class="classifier">str</span></dt><dd><p>look in this directory for dictionaries; defaults to current directory or env{PATH}</p>
+</dd>
+<dt>interactions<span class="classifier">str</span></dt><dd><p>Create feature interactions of any level between namespaces.</p>
+</dd>
+<dt>permutations<span class="classifier">bool</span></dt><dd><p>Use permutations instead of combinations for feature interactions of same namespace.</p>
+</dd>
+<dt>leave_duplicate_interactions<span class="classifier">bool</span></dt><dd><p>Don’t remove interactions with duplicate combinations of namespaces. For
+ex. this is a duplicate: ‘-q ab -q ba’ and a lot more in ‘-q ::’.</p>
+</dd>
+<dt>quadratic,q<span class="classifier">str</span></dt><dd><p>Create and use quadratic features, q:: corresponds to a wildcard for all printable characters</p>
+</dd>
+<dt>cubic<span class="classifier">str</span></dt><dd><p>Create and use cubic features</p>
+</dd>
+</dl>
+<p>Example options</p>
+<dl class="simple">
+<dt>testonly,t<span class="classifier">bool</span></dt><dd><p>Ignore label information and just test</p>
+</dd>
+<dt>holdout_off<span class="classifier">bool</span></dt><dd><p>no holdout data in multiple passes</p>
+</dd>
+<dt>holdout_period<span class="classifier">int</span></dt><dd><p>holdout period for test only</p>
+</dd>
+<dt>holdout_after<span class="classifier">int</span></dt><dd><p>holdout after n training examples</p>
+</dd>
+<dt>early_terminate<span class="classifier">int</span></dt><dd><p>Specify the number of passes tolerated when holdout loss doesn’t
+decrease before early termination</p>
+</dd>
+<dt>passes<span class="classifier">int</span></dt><dd><p>Number of Training Passes</p>
+</dd>
+<dt>initial_pass_length<span class="classifier">int</span></dt><dd><p>initial number of examples per pass</p>
+</dd>
+<dt>examples<span class="classifier">int</span></dt><dd><p>number of examples to parse</p>
+</dd>
+<dt>min_prediction<span class="classifier">float</span></dt><dd><p>Smallest prediction to output</p>
+</dd>
+<dt>max_prediction<span class="classifier">float</span></dt><dd><p>Largest prediction to output</p>
+</dd>
+<dt>sort_features<span class="classifier">bool</span></dt><dd><p>turn this on to disregard order in which features have been defined. This will lead to
+smaller cache sizes</p>
+</dd>
+<dt>loss_function<span class="classifier">str</span></dt><dd><p>default_value(“squared”), “Specify the loss function to be used, uses squared by default.
+Currently available ones are squared, classic, hinge, logistic and quantile.</p>
+</dd>
+<dt>quantile_tau<span class="classifier">float</span></dt><dd><p>Parameter tau associated with Quantile loss. Defaults to 0.5</p>
+</dd>
+<dt>l1<span class="classifier">float</span></dt><dd><p>l_1 lambda (L1 regularization)</p>
+</dd>
+<dt>l2<span class="classifier">float</span></dt><dd><p>l_2 lambda (L2 regularization)</p>
+</dd>
+<dt>no_bias_regularization<span class="classifier">bool</span></dt><dd><p>no bias in regularization</p>
+</dd>
+<dt>named_labels<span class="classifier">str</span></dt><dd><p>use names for labels (multiclass, etc.) rather than integers, argument specified all
+possible labels, comma-sep, eg “–named_labels Noun,Verb,Adj,Punc”</p>
+</dd>
+</dl>
+<p>Output model</p>
+<dl class="simple">
+<dt>final_regressor,f<span class="classifier">str</span></dt><dd><p>Final regressor</p>
+</dd>
+<dt>readable_model<span class="classifier">str</span></dt><dd><p>Output human-readable final regressor with numeric features</p>
+</dd>
+<dt>invert_hash<span class="classifier">str</span></dt><dd><p>Output human-readable final regressor with feature names.  Computationally expensive.</p>
+</dd>
+<dt>save_resume<span class="classifier">bool</span></dt><dd><p>save extra state so learning can be resumed later with new data</p>
+</dd>
+<dt>preserve_performance_counters<span class="classifier">bool</span></dt><dd><p>reset performance counters when warmstarting</p>
+</dd>
+<dt>output_feature_regularizer_binary<span class="classifier">str</span></dt><dd><p>Per feature regularization output file</p>
+</dd>
+<dt>output_feature_regularizer_text<span class="classifier">str</span></dt><dd><p>Per feature regularization output file, in text</p>
+</dd>
+</dl>
+</dd>
+<dt><strong>Multiclass options</strong></dt><dd><dl class="simple">
+<dt>oaa<span class="classifier">integer</span></dt><dd><p>Use one-against-all multiclass learning with labels</p>
+</dd>
+<dt>oaa_subsample<span class="classifier">int</span></dt><dd><p>subsample this number of negative examples when learning</p>
+</dd>
+<dt>ect<span class="classifier">integer</span></dt><dd><p>Use error correcting tournament multiclass learning</p>
+</dd>
+<dt>csoaa<span class="classifier">integer</span></dt><dd><p>Use cost sensitive one-against-all multiclass learning</p>
+</dd>
+<dt>wap<span class="classifier">integer</span></dt><dd><p>Use weighted all pairs multiclass learning</p>
+</dd>
+<dt>probabilities<span class="classifier">float</span></dt><dd><p>predict probabilities of all classes</p>
+</dd>
+</dl>
+<p>Neural Network options</p>
+<dl class="simple">
+<dt>nn<span class="classifier">integer</span></dt><dd><p>Use a sigmoidal feed-forward neural network with N hidden units</p>
+</dd>
+<dt>inpass<span class="classifier">bool</span></dt><dd><p>Train or test sigmoidal feed-forward network with input pass-through</p>
+</dd>
+<dt>multitask<span class="classifier">bool</span></dt><dd><p>Share hidden layer across all reduced tasks</p>
+</dd>
+<dt>dropout<span class="classifier">bool</span></dt><dd><p>Train or test sigmoidal feed-forward network using dropout</p>
+</dd>
+<dt>meanfield<span class="classifier">bool</span></dt><dd><p>Train or test sigmoidal feed-forward network using mean field</p>
+</dd>
+</dl>
+<p>LBFGS and Conjugate Gradient options</p>
+<dl class="simple">
+<dt>conjugate_gradient<span class="classifier">bool</span></dt><dd><p>use conjugate gradient based optimization</p>
+</dd>
+<dt>bgfs<span class="classifier">bool</span></dt><dd><p>use bfgs updates</p>
+</dd>
+<dt>hessian_on<span class="classifier">bool</span></dt><dd><p>use second derivative in line search</p>
+</dd>
+<dt>mem<span class="classifier">int</span></dt><dd><p>memory in bfgs</p>
+</dd>
+<dt>termination<span class="classifier">float</span></dt><dd><p>termination threshold</p>
+</dd>
+</dl>
+<p>Latent Dirichlet Allocation options</p>
+<dl class="simple">
+<dt>lda<span class="classifier">int</span></dt><dd><p>Run lda with &lt;int&gt; topics</p>
+</dd>
+<dt>lda_alpha<span class="classifier">float</span></dt><dd><p>Prior on sparsity of per-document topic weights</p>
+</dd>
+<dt>lda_rho<span class="classifier">float</span></dt><dd><p>Prior on sparsity of topic distributions</p>
+</dd>
+<dt>lda_D<span class="classifier">int</span></dt><dd><p>Number of documents</p>
+</dd>
+<dt>lda_epsilon<span class="classifier">float</span></dt><dd><p>Loop convergence threshold</p>
+</dd>
+<dt>minibatch<span class="classifier">int</span></dt><dd><p>Minibatch size for LDA</p>
+</dd>
+</dl>
+<p>Stochastic Variance Reduced Gradient options</p>
+<dl class="simple">
+<dt>svrg<span class="classifier">bool</span></dt><dd><p>Streaming Stochastic Variance Reduced Gradient</p>
+</dd>
+<dt>stage_size<span class="classifier">int</span></dt><dd><p>Number of passes per SVRG stage</p>
+</dd>
+</dl>
+<p>Follow the Regularized Leader options</p>
+<dl class="simple">
+<dt>ftrl<span class="classifier">bool</span></dt><dd><p>Run Follow the Proximal Regularized Leader</p>
+</dd>
+<dt>coin<span class="classifier">bool</span></dt><dd><p>Coin betting optimizer</p>
+</dd>
+<dt>pistol<span class="classifier">bool</span></dt><dd><p>PiSTOL: Parameter free STOchastic Learning</p>
+</dd>
+<dt>ftrl_alpha<span class="classifier">float</span></dt><dd><p>Alpha parameter for FTRL optimization</p>
+</dd>
+<dt>ftrl_beta<span class="classifier">float</span></dt><dd><p>Beta parameters for FTRL optimization</p>
+</dd>
+</dl>
+<p>Kernel SVM options</p>
+<dl class="simple">
+<dt>ksvm<span class="classifier">bool</span></dt><dd><p>kernel svm</p>
+</dd>
+<dt>kernel<span class="classifier">str</span></dt><dd><p>type of kernel (rbf or linear (default))</p>
+</dd>
+<dt>bandwidth<span class="classifier">int</span></dt><dd><p>bandwidth of rbf kernel</p>
+</dd>
+<dt>degree<span class="classifier">int</span></dt><dd><p>degree of poly kernel</p>
+</dd>
+</dl>
+<p>Gradient Descent options</p>
+<dl class="simple">
+<dt>sgd<span class="classifier">bool</span></dt><dd><p>use regular stochastic gradient descent update</p>
+</dd>
+<dt>adaptive<span class="classifier">bool</span></dt><dd><p>use adaptive, individual learning rates</p>
+</dd>
+<dt>adax<span class="classifier">bool</span></dt><dd><p>use adaptive learning rates with x^2 instead of g^2x^2</p>
+</dd>
+<dt>invariant<span class="classifier">bool</span></dt><dd><p>use save/importance aware updates</p>
+</dd>
+<dt>normalized<span class="classifier">bool</span></dt><dd><p>use per feature normalized updates</p>
+</dd>
+</dl>
+<p>Scorer options</p>
+<dl class="simple">
+<dt>link<span class="classifier">str</span></dt><dd><p>Specify the link function: identity, logistic, glf1 or poisson</p>
+</dd>
+</dl>
+<p>Stagewise polynomial options:</p>
+<dl class="simple">
+<dt>stage_poly<span class="classifier">bool</span></dt><dd><p>use stagewise polynomial feature learning</p>
+</dd>
+<dt>sched_exponent<span class="classifier">int</span></dt><dd><p>exponent controlling quantity of included features</p>
+</dd>
+<dt>batch_sz<span class="classifier">int</span></dt><dd><p>multiplier on batch size before including more features</p>
+</dd>
+<dt>batch_sz_no_doubling<span class="classifier">bool</span></dt><dd><p>batch_sz does not double</p>
+</dd>
+</dl>
+<p>Low Rank Quadratics options:</p>
+<dl class="simple">
+<dt>lrq<span class="classifier">bool</span></dt><dd><p>use low rank quadratic features</p>
+</dd>
+<dt>lrqdropout<span class="classifier">bool</span></dt><dd><p>use dropout training for low rank quadratic features</p>
+</dd>
+<dt>lrqfa<span class="classifier">bool</span></dt><dd><p>use low rank quadratic features with field aware weights</p>
+</dd>
+</dl>
+<p>Input options</p>
+<dl class="simple">
+<dt>data,d<span class="classifier">str</span></dt><dd><p>path to data file for fitting external to sklearn</p>
+</dd>
+<dt>cache,c<span class="classifier">str</span></dt><dd><p>use a cache. default is &lt;data&gt;.cache</p>
+</dd>
+<dt>cache_file<span class="classifier">str</span></dt><dd><p>path to cache file to use</p>
+</dd>
+<dt>json<span class="classifier">bool</span></dt><dd><p>enable JSON parsing</p>
+</dd>
+<dt>kill_cache, k<span class="classifier">bool</span></dt><dd><p>do not reuse existing cache file, create a new one always</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>self</strong><span class="classifier">BaseEstimator</span></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="vowpalwabbit.sklearn_vw.VWMultiClassifier.classes_">
+<code class="sig-name descname"><span class="pre">classes_</span></code><em class="property"> <span class="pre">=</span> <span class="pre">None</span></em><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VWMultiClassifier.classes_" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="vowpalwabbit.sklearn_vw.VWMultiClassifier.decision_function">
+<code class="sig-name descname"><span class="pre">decision_function</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VWMultiClassifier.decision_function" title="Permalink to this definition">¶</a></dt>
+<dd><p>Predict confidence scores for samples.
+The confidence score for a sample is the signed distance of that
+sample to the hyperplane.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>X</strong><span class="classifier">array_like or sparse matrix, shape (n_samples, n_features)</span></dt><dd><p>Samples.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>array, shape=(n_samples, n_classes)</dt><dd><p>Confidence scores per (sample, class) combination.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="vowpalwabbit.sklearn_vw.VWMultiClassifier.estimator_">
+<code class="sig-name descname"><span class="pre">estimator_</span></code><em class="property"> <span class="pre">=</span> <span class="pre">None</span></em><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VWMultiClassifier.estimator_" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="vowpalwabbit.sklearn_vw.VWMultiClassifier.fit">
+<code class="sig-name descname"><span class="pre">fit</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sample_weight</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VWMultiClassifier.fit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fit the model according to the given training data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>X</strong><span class="classifier">{array-like, sparse matrix} of shape (n_samples, n_features)</span></dt><dd><p>Training vector, where n_samples is the number of samples and
+n_features is the number of features.</p>
+</dd>
+<dt><strong>y</strong><span class="classifier">array-like of shape (n_samples,)</span></dt><dd><p>Target vector relative to X.</p>
+</dd>
+<dt><strong>sample_weight</strong><span class="classifier">array-like of shape (n_samples,) default=None</span></dt><dd><p>Array of weights that are assigned to individual samples.
+If not provided, then each sample is given unit weight.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>self</dt><dd><p>Fitted estimator.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="vowpalwabbit.sklearn_vw.VWMultiClassifier.predict_proba">
+<code class="sig-name descname"><span class="pre">predict_proba</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VWMultiClassifier.predict_proba" title="Permalink to this definition">¶</a></dt>
+<dd><p>Predict probabilities for each class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>X</strong><span class="classifier">{array-like, sparse matrix}, shape = (n_samples, n_features)</span></dt><dd><p>Samples.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>array, shape=(n_samples,) if n_classes == 2 else (n_samples, n_classes)</dt><dd><p>Confidence scores per (sample, class) combination. In the binary
+case, confidence score for self.classes_[1] where &gt;0 means this
+class would be predicted.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mf">5.5</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mf">5.4</span><span class="p">,</span> <span class="mf">5.5</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mi">20</span><span class="p">,</span> <span class="o">-</span><span class="mi">20</span><span class="p">],</span>  <span class="p">[</span><span class="o">-</span><span class="mi">15</span><span class="p">,</span> <span class="o">-</span><span class="mi">20</span><span class="p">]</span> <span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">vowpalwabbit.sklearn_vw</span> <span class="kn">import</span> <span class="n">VWMultiClassifier</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">model</span> <span class="o">=</span> <span class="n">VWMultiClassifier</span><span class="p">(</span><span class="n">oaa</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">loss_function</span><span class="o">=</span><span class="s1">&#39;logistic&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">_</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">model</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+<span class="go">array([[0.38928846, 0.30534211, 0.30536944],</span>
+<span class="go">       [0.40664235, 0.29666999, 0.29668769],</span>
+<span class="go">       [0.52324486, 0.23841164, 0.23834346],</span>
+<span class="go">       [0.5268591 , 0.23660533, 0.23653553],</span>
+<span class="go">       [0.65397811, 0.17312808, 0.17289382],</span>
+<span class="go">       [0.61190444, 0.19416356, 0.19393198]])</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="vowpalwabbit.sklearn_vw.VWRegressor">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">vowpalwabbit.sklearn_vw.</span></code><code class="sig-name descname"><span class="pre">VWRegressor</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">convert_labels</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VWRegressor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#vowpalwabbit.sklearn_vw.VW" title="vowpalwabbit.sklearn_vw.VW"><code class="xref py py-class docutils literal notranslate"><span class="pre">vowpalwabbit.sklearn_vw.VW</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">sklearn.base.RegressorMixin</span></code></p>
+<p>Vowpal Wabbit Regressor model</p>
+<dl class="py method">
+<dt id="vowpalwabbit.sklearn_vw.VWRegressor.__init__">
+<code class="sig-name descname"><span class="pre">__init__</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">convert_labels</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.VWRegressor.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>VW model constructor, exposing all supported parameters to keep sklearn happy</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl>
+<dt><strong>Estimator options</strong></dt><dd><dl class="simple">
+<dt>convert_to_vw<span class="classifier">bool</span></dt><dd><p>flag to convert X input to vw format</p>
+</dd>
+<dt>convert_labels<span class="classifier">bool</span></dt><dd><p>Convert labels of the form [0,1] to [-1,1]</p>
+</dd>
+</dl>
+<p>VW options</p>
+<dl class="simple">
+<dt>ring_size<span class="classifier">int</span></dt><dd><p>size of example ring</p>
+</dd>
+<dt>strict_parse<span class="classifier">bool</span></dt><dd><p>throw on malformed examples</p>
+</dd>
+</dl>
+<p>Update options</p>
+<dl class="simple">
+<dt>learning_rate,l<span class="classifier">float</span></dt><dd><p>Set learning rate</p>
+</dd>
+<dt>power_t<span class="classifier">float</span></dt><dd><p>t power value</p>
+</dd>
+<dt>decay_learning_rate<span class="classifier">float</span></dt><dd><p>Set Decay factor for learning_rate between passes</p>
+</dd>
+<dt>initial_t<span class="classifier">float</span></dt><dd><p>initial t value</p>
+</dd>
+<dt>feature_mask<span class="classifier">str</span></dt><dd><p>Use existing regressor to determine which parameters may be updated.
+If no initial_regressor given, also used for initial weights.</p>
+</dd>
+</dl>
+<p>Weight options</p>
+<dl class="simple">
+<dt>initial_regressor,i<span class="classifier">str</span></dt><dd><p>Initial regressor(s)</p>
+</dd>
+<dt>initial_weight<span class="classifier">float</span></dt><dd><p>Set all weights to an initial value of arg.</p>
+</dd>
+<dt>random_weights<span class="classifier">bool</span></dt><dd><p>make initial weights random</p>
+</dd>
+<dt>normal_weights<span class="classifier">bool</span></dt><dd><p>make initial weights normal</p>
+</dd>
+<dt>truncated_normal_weights<span class="classifier">bool</span></dt><dd><p>make initial weights truncated normal</p>
+</dd>
+<dt>sparse_weights<span class="classifier">float</span></dt><dd><p>Use a sparse datastructure for weights</p>
+</dd>
+<dt>input_feature_regularizer<span class="classifier">str</span></dt><dd><p>Per feature regularization input file</p>
+</dd>
+</dl>
+<p>Diagnostic options</p>
+<dl class="simple">
+<dt>quiet<span class="classifier">bool</span></dt><dd><p>Don’t output disgnostics and progress updates</p>
+</dd>
+</dl>
+<p>Randomization options</p>
+<dl class="simple">
+<dt>random_seed<span class="classifier">integer</span></dt><dd><p>seed random number generator</p>
+</dd>
+</dl>
+<p>Feature options</p>
+<dl class="simple">
+<dt>hash<span class="classifier">str</span></dt><dd><p>how to hash the features. Available options: strings, all</p>
+</dd>
+<dt>hash_seed<span class="classifier">int</span></dt><dd><p>seed for hash function</p>
+</dd>
+<dt>ignore<span class="classifier">str</span></dt><dd><p>ignore namespaces beginning with character &lt;arg&gt;</p>
+</dd>
+<dt>ignore_linear<span class="classifier">str</span></dt><dd><p>ignore namespaces beginning with character &lt;arg&gt; for linear terms only</p>
+</dd>
+<dt>keep<span class="classifier">str</span></dt><dd><p>keep namespaces beginning with character &lt;arg&gt;</p>
+</dd>
+<dt>redefine<span class="classifier">str</span></dt><dd><p>Redefine namespaces beginning with characters of string S as namespace N. &lt;arg&gt; shall be in
+form ‘N:=S’ where := is operator. Empty N or S are treated as default namespace.
+Use ‘:’ as a wildcard in S.</p>
+</dd>
+<dt>bit_precision,b<span class="classifier">integer</span></dt><dd><p>number of bits in the feature table</p>
+</dd>
+<dt>noconstant<span class="classifier">bool</span></dt><dd><p>Don’t add a constant feature</p>
+</dd>
+<dt>constant,C<span class="classifier">float</span></dt><dd><p>Set initial value of constant</p>
+</dd>
+<dt>ngram<span class="classifier">str</span></dt><dd><p>Generate N grams. To generate N grams for a single namespace ‘foo’, arg should be fN.</p>
+</dd>
+<dt>skips<span class="classifier">str</span></dt><dd><p>Generate skips in N grams. This in conjunction with the ngram tag can be used to generate
+generalized n-skip-k-gram. To generate n-skips for a single namespace ‘foo’, arg should be fN.</p>
+</dd>
+<dt>feature_limit<span class="classifier">str</span></dt><dd><p>limit to N features. To apply to a single namespace ‘foo’, arg should be fN</p>
+</dd>
+<dt>affix<span class="classifier">str</span></dt><dd><p>generate prefixes/suffixes of features; argument ‘+2a,-3b,+1’ means generate 2-char prefixes for
+namespace a, 3-char suffixes for b and 1 char prefixes for default namespace</p>
+</dd>
+<dt>spelling<span class="classifier">str</span></dt><dd><p>compute spelling features for a give namespace (use ‘_’ for default namespace)</p>
+</dd>
+<dt>dictionary<span class="classifier">str</span></dt><dd><p>read a dictionary for additional features (arg either ‘x:file’ or just ‘file’)</p>
+</dd>
+<dt>dictionary_path<span class="classifier">str</span></dt><dd><p>look in this directory for dictionaries; defaults to current directory or env{PATH}</p>
+</dd>
+<dt>interactions<span class="classifier">str</span></dt><dd><p>Create feature interactions of any level between namespaces.</p>
+</dd>
+<dt>permutations<span class="classifier">bool</span></dt><dd><p>Use permutations instead of combinations for feature interactions of same namespace.</p>
+</dd>
+<dt>leave_duplicate_interactions<span class="classifier">bool</span></dt><dd><p>Don’t remove interactions with duplicate combinations of namespaces. For
+ex. this is a duplicate: ‘-q ab -q ba’ and a lot more in ‘-q ::’.</p>
+</dd>
+<dt>quadratic,q<span class="classifier">str</span></dt><dd><p>Create and use quadratic features, q:: corresponds to a wildcard for all printable characters</p>
+</dd>
+<dt>cubic<span class="classifier">str</span></dt><dd><p>Create and use cubic features</p>
+</dd>
+</dl>
+<p>Example options</p>
+<dl class="simple">
+<dt>testonly,t<span class="classifier">bool</span></dt><dd><p>Ignore label information and just test</p>
+</dd>
+<dt>holdout_off<span class="classifier">bool</span></dt><dd><p>no holdout data in multiple passes</p>
+</dd>
+<dt>holdout_period<span class="classifier">int</span></dt><dd><p>holdout period for test only</p>
+</dd>
+<dt>holdout_after<span class="classifier">int</span></dt><dd><p>holdout after n training examples</p>
+</dd>
+<dt>early_terminate<span class="classifier">int</span></dt><dd><p>Specify the number of passes tolerated when holdout loss doesn’t
+decrease before early termination</p>
+</dd>
+<dt>passes<span class="classifier">int</span></dt><dd><p>Number of Training Passes</p>
+</dd>
+<dt>initial_pass_length<span class="classifier">int</span></dt><dd><p>initial number of examples per pass</p>
+</dd>
+<dt>examples<span class="classifier">int</span></dt><dd><p>number of examples to parse</p>
+</dd>
+<dt>min_prediction<span class="classifier">float</span></dt><dd><p>Smallest prediction to output</p>
+</dd>
+<dt>max_prediction<span class="classifier">float</span></dt><dd><p>Largest prediction to output</p>
+</dd>
+<dt>sort_features<span class="classifier">bool</span></dt><dd><p>turn this on to disregard order in which features have been defined. This will lead to
+smaller cache sizes</p>
+</dd>
+<dt>loss_function<span class="classifier">str</span></dt><dd><p>default_value(“squared”), “Specify the loss function to be used, uses squared by default.
+Currently available ones are squared, classic, hinge, logistic and quantile.</p>
+</dd>
+<dt>quantile_tau<span class="classifier">float</span></dt><dd><p>Parameter tau associated with Quantile loss. Defaults to 0.5</p>
+</dd>
+<dt>l1<span class="classifier">float</span></dt><dd><p>l_1 lambda (L1 regularization)</p>
+</dd>
+<dt>l2<span class="classifier">float</span></dt><dd><p>l_2 lambda (L2 regularization)</p>
+</dd>
+<dt>no_bias_regularization<span class="classifier">bool</span></dt><dd><p>no bias in regularization</p>
+</dd>
+<dt>named_labels<span class="classifier">str</span></dt><dd><p>use names for labels (multiclass, etc.) rather than integers, argument specified all
+possible labels, comma-sep, eg “–named_labels Noun,Verb,Adj,Punc”</p>
+</dd>
+</dl>
+<p>Output model</p>
+<dl class="simple">
+<dt>final_regressor,f<span class="classifier">str</span></dt><dd><p>Final regressor</p>
+</dd>
+<dt>readable_model<span class="classifier">str</span></dt><dd><p>Output human-readable final regressor with numeric features</p>
+</dd>
+<dt>invert_hash<span class="classifier">str</span></dt><dd><p>Output human-readable final regressor with feature names.  Computationally expensive.</p>
+</dd>
+<dt>save_resume<span class="classifier">bool</span></dt><dd><p>save extra state so learning can be resumed later with new data</p>
+</dd>
+<dt>preserve_performance_counters<span class="classifier">bool</span></dt><dd><p>reset performance counters when warmstarting</p>
+</dd>
+<dt>output_feature_regularizer_binary<span class="classifier">str</span></dt><dd><p>Per feature regularization output file</p>
+</dd>
+<dt>output_feature_regularizer_text<span class="classifier">str</span></dt><dd><p>Per feature regularization output file, in text</p>
+</dd>
+</dl>
+</dd>
+<dt><strong>Multiclass options</strong></dt><dd><dl class="simple">
+<dt>oaa<span class="classifier">integer</span></dt><dd><p>Use one-against-all multiclass learning with labels</p>
+</dd>
+<dt>oaa_subsample<span class="classifier">int</span></dt><dd><p>subsample this number of negative examples when learning</p>
+</dd>
+<dt>ect<span class="classifier">integer</span></dt><dd><p>Use error correcting tournament multiclass learning</p>
+</dd>
+<dt>csoaa<span class="classifier">integer</span></dt><dd><p>Use cost sensitive one-against-all multiclass learning</p>
+</dd>
+<dt>wap<span class="classifier">integer</span></dt><dd><p>Use weighted all pairs multiclass learning</p>
+</dd>
+<dt>probabilities<span class="classifier">float</span></dt><dd><p>predict probabilities of all classes</p>
+</dd>
+</dl>
+<p>Neural Network options</p>
+<dl class="simple">
+<dt>nn<span class="classifier">integer</span></dt><dd><p>Use a sigmoidal feed-forward neural network with N hidden units</p>
+</dd>
+<dt>inpass<span class="classifier">bool</span></dt><dd><p>Train or test sigmoidal feed-forward network with input pass-through</p>
+</dd>
+<dt>multitask<span class="classifier">bool</span></dt><dd><p>Share hidden layer across all reduced tasks</p>
+</dd>
+<dt>dropout<span class="classifier">bool</span></dt><dd><p>Train or test sigmoidal feed-forward network using dropout</p>
+</dd>
+<dt>meanfield<span class="classifier">bool</span></dt><dd><p>Train or test sigmoidal feed-forward network using mean field</p>
+</dd>
+</dl>
+<p>LBFGS and Conjugate Gradient options</p>
+<dl class="simple">
+<dt>conjugate_gradient<span class="classifier">bool</span></dt><dd><p>use conjugate gradient based optimization</p>
+</dd>
+<dt>bgfs<span class="classifier">bool</span></dt><dd><p>use bfgs updates</p>
+</dd>
+<dt>hessian_on<span class="classifier">bool</span></dt><dd><p>use second derivative in line search</p>
+</dd>
+<dt>mem<span class="classifier">int</span></dt><dd><p>memory in bfgs</p>
+</dd>
+<dt>termination<span class="classifier">float</span></dt><dd><p>termination threshold</p>
+</dd>
+</dl>
+<p>Latent Dirichlet Allocation options</p>
+<dl class="simple">
+<dt>lda<span class="classifier">int</span></dt><dd><p>Run lda with &lt;int&gt; topics</p>
+</dd>
+<dt>lda_alpha<span class="classifier">float</span></dt><dd><p>Prior on sparsity of per-document topic weights</p>
+</dd>
+<dt>lda_rho<span class="classifier">float</span></dt><dd><p>Prior on sparsity of topic distributions</p>
+</dd>
+<dt>lda_D<span class="classifier">int</span></dt><dd><p>Number of documents</p>
+</dd>
+<dt>lda_epsilon<span class="classifier">float</span></dt><dd><p>Loop convergence threshold</p>
+</dd>
+<dt>minibatch<span class="classifier">int</span></dt><dd><p>Minibatch size for LDA</p>
+</dd>
+</dl>
+<p>Stochastic Variance Reduced Gradient options</p>
+<dl class="simple">
+<dt>svrg<span class="classifier">bool</span></dt><dd><p>Streaming Stochastic Variance Reduced Gradient</p>
+</dd>
+<dt>stage_size<span class="classifier">int</span></dt><dd><p>Number of passes per SVRG stage</p>
+</dd>
+</dl>
+<p>Follow the Regularized Leader options</p>
+<dl class="simple">
+<dt>ftrl<span class="classifier">bool</span></dt><dd><p>Run Follow the Proximal Regularized Leader</p>
+</dd>
+<dt>coin<span class="classifier">bool</span></dt><dd><p>Coin betting optimizer</p>
+</dd>
+<dt>pistol<span class="classifier">bool</span></dt><dd><p>PiSTOL: Parameter free STOchastic Learning</p>
+</dd>
+<dt>ftrl_alpha<span class="classifier">float</span></dt><dd><p>Alpha parameter for FTRL optimization</p>
+</dd>
+<dt>ftrl_beta<span class="classifier">float</span></dt><dd><p>Beta parameters for FTRL optimization</p>
+</dd>
+</dl>
+<p>Kernel SVM options</p>
+<dl class="simple">
+<dt>ksvm<span class="classifier">bool</span></dt><dd><p>kernel svm</p>
+</dd>
+<dt>kernel<span class="classifier">str</span></dt><dd><p>type of kernel (rbf or linear (default))</p>
+</dd>
+<dt>bandwidth<span class="classifier">int</span></dt><dd><p>bandwidth of rbf kernel</p>
+</dd>
+<dt>degree<span class="classifier">int</span></dt><dd><p>degree of poly kernel</p>
+</dd>
+</dl>
+<p>Gradient Descent options</p>
+<dl class="simple">
+<dt>sgd<span class="classifier">bool</span></dt><dd><p>use regular stochastic gradient descent update</p>
+</dd>
+<dt>adaptive<span class="classifier">bool</span></dt><dd><p>use adaptive, individual learning rates</p>
+</dd>
+<dt>adax<span class="classifier">bool</span></dt><dd><p>use adaptive learning rates with x^2 instead of g^2x^2</p>
+</dd>
+<dt>invariant<span class="classifier">bool</span></dt><dd><p>use save/importance aware updates</p>
+</dd>
+<dt>normalized<span class="classifier">bool</span></dt><dd><p>use per feature normalized updates</p>
+</dd>
+</dl>
+<p>Scorer options</p>
+<dl class="simple">
+<dt>link<span class="classifier">str</span></dt><dd><p>Specify the link function: identity, logistic, glf1 or poisson</p>
+</dd>
+</dl>
+<p>Stagewise polynomial options:</p>
+<dl class="simple">
+<dt>stage_poly<span class="classifier">bool</span></dt><dd><p>use stagewise polynomial feature learning</p>
+</dd>
+<dt>sched_exponent<span class="classifier">int</span></dt><dd><p>exponent controlling quantity of included features</p>
+</dd>
+<dt>batch_sz<span class="classifier">int</span></dt><dd><p>multiplier on batch size before including more features</p>
+</dd>
+<dt>batch_sz_no_doubling<span class="classifier">bool</span></dt><dd><p>batch_sz does not double</p>
+</dd>
+</dl>
+<p>Low Rank Quadratics options:</p>
+<dl class="simple">
+<dt>lrq<span class="classifier">bool</span></dt><dd><p>use low rank quadratic features</p>
+</dd>
+<dt>lrqdropout<span class="classifier">bool</span></dt><dd><p>use dropout training for low rank quadratic features</p>
+</dd>
+<dt>lrqfa<span class="classifier">bool</span></dt><dd><p>use low rank quadratic features with field aware weights</p>
+</dd>
+</dl>
+<p>Input options</p>
+<dl class="simple">
+<dt>data,d<span class="classifier">str</span></dt><dd><p>path to data file for fitting external to sklearn</p>
+</dd>
+<dt>cache,c<span class="classifier">str</span></dt><dd><p>use a cache. default is &lt;data&gt;.cache</p>
+</dd>
+<dt>cache_file<span class="classifier">str</span></dt><dd><p>path to cache file to use</p>
+</dd>
+<dt>json<span class="classifier">bool</span></dt><dd><p>enable JSON parsing</p>
+</dd>
+<dt>kill_cache, k<span class="classifier">bool</span></dt><dd><p>do not reuse existing cache file, create a new one always</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>self</strong><span class="classifier">BaseEstimator</span></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="vowpalwabbit.sklearn_vw.tovw">
+<code class="sig-prename descclassname"><span class="pre">vowpalwabbit.sklearn_vw.</span></code><code class="sig-name descname"><span class="pre">tovw</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sample_weight</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">convert_labels</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.sklearn_vw.tovw" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert array or sparse matrix to Vowpal Wabbit format</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>x</strong><span class="classifier">{array-like, sparse matrix}, shape (n_samples, n_features)</span></dt><dd><p>Training vector, where n_samples is the number of samples and
+n_features is the number of features.</p>
+</dd>
+<dt><strong>y</strong><span class="classifier">{array-like}, shape (n_samples,), optional</span></dt><dd><p>Target vector relative to X.</p>
+</dd>
+<dt><strong>sample_weight</strong><span class="classifier">{array-like}, shape (n_samples,), optional</span></dt><dd><p>sample weight vector relative to X.</p>
+</dd>
+<dt><strong>convert_labels</strong><span class="classifier">{bool} convert labels of the form [0,1] to [-1,1]</span></dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>out</strong><span class="classifier">{array-like}, shape (n_samples, 1)</span></dt><dd><p>Training vectors in VW string format</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <span class="n">HashingVectorizer</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">vowpalwabbit.sklearn_vw</span> <span class="kn">import</span> <span class="n">tovw</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="s1">&#39;cat&#39;</span><span class="p">,</span> <span class="s1">&#39;dog&#39;</span><span class="p">,</span> <span class="s1">&#39;cat&#39;</span><span class="p">,</span> <span class="s1">&#39;cat&#39;</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;catdog&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;label&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">hv</span> <span class="o">=</span> <span class="n">HashingVectorizer</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">hashed</span> <span class="o">=</span> <span class="n">hv</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">tovw</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">hashed</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">)</span>
+<span class="go">[&#39;-1 1 | 300839:1&#39;, &#39;1 1 | 980517:-1&#39;, &#39;-1 1 | 300839:1&#39;, &#39;-1 1 | 300839:1&#39;]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "VowpalWabbit/vowpal_wabbit",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./reference"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+
+              
+              <div class='prev-next-bottom'>
+                
+    <a class='left-prev' id="prev-link" href="vowpalwabbit.pyvw.html" title="previous page">vowpalwabbit.pyvw</a>
+    <a class='right-next' id="next-link" href="vowpalwabbit.DFtoVW.html" title="next page">vowpalwabbit.DFtoVW</a>
+
+              </div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  <footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2021, John langford et al.<br/>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.4.<br/>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>
