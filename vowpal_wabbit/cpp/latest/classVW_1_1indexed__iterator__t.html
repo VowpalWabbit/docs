@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Vowpal Wabbit: VW::indexed_iterator_t&lt; IndicesT, FeaturesT, IndexT, HashT &gt; Class Template Reference</title>
+<title>Vowpal Wabbit: VW::indexed_iterator_t&lt; ArrayT, IndexItT, ListT &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -94,38 +94,35 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#friends">Friends</a> &#124;
 <a href="classVW_1_1indexed__iterator__t-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">VW::indexed_iterator_t&lt; IndicesT, FeaturesT, IndexT, HashT &gt; Class Template Reference</div>  </div>
+<div class="title">VW::indexed_iterator_t&lt; ArrayT, IndexItT, ListT &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Insertion or removal will result in this value in invalidated.  
- <a href="classVW_1_1indexed__iterator__t.html#details">More...</a></p>
 
 <p><code>#include &lt;namespaced_feature_store.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a66ebfba78c74a32237c86bb94644ee46"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1indexed__iterator__t.html#a66ebfba78c74a32237c86bb94644ee46">difference_type</a> = std::ptrdiff_t</td></tr>
-<tr class="separator:a66ebfba78c74a32237c86bb94644ee46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb64d66b1219dc6ac2e708b54eccc151"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1indexed__iterator__t.html#adb64d66b1219dc6ac2e708b54eccc151">iterator_category</a> = std::bidirectional_iterator_tag</td></tr>
+<tr class="separator:adb64d66b1219dc6ac2e708b54eccc151"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38fc1e9adb5e56ba234af787588784ae"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1indexed__iterator__t.html#a38fc1e9adb5e56ba234af787588784ae">difference_type</a> = std::ptrdiff_t</td></tr>
+<tr class="separator:a38fc1e9adb5e56ba234af787588784ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad004887c5793fbfd3784087a4ced5b33"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1indexed__iterator__t.html#ad004887c5793fbfd3784087a4ced5b33">value_type</a> = ListT</td></tr>
+<tr class="separator:ad004887c5793fbfd3784087a4ced5b33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afcd1fb7c39bdf758f3c79e4dae12b59b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1indexed__iterator__t.html#afcd1fb7c39bdf758f3c79e4dae12b59b">indexed_iterator_t</a> (IndicesT *indices, FeaturesT *feature_groups, IndexT *namespace_indices, HashT *namespace_hashes)</td></tr>
-<tr class="separator:afcd1fb7c39bdf758f3c79e4dae12b59b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11765f52fe7d99affa03a79bb55c5633"><td class="memItemLeft" align="right" valign="top">FeaturesT &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1indexed__iterator__t.html#a11765f52fe7d99affa03a79bb55c5633">operator*</a> ()</td></tr>
-<tr class="separator:a11765f52fe7d99affa03a79bb55c5633"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79cc2be9b7bbe4d5cb62222e30a5a881"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVW_1_1indexed__iterator__t.html">indexed_iterator_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1indexed__iterator__t.html#a79cc2be9b7bbe4d5cb62222e30a5a881">operator++</a> ()</td></tr>
-<tr class="separator:a79cc2be9b7bbe4d5cb62222e30a5a881"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae298e654816712f352a4739625b0db80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVW_1_1indexed__iterator__t.html">indexed_iterator_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1indexed__iterator__t.html#ae298e654816712f352a4739625b0db80">operator--</a> ()</td></tr>
-<tr class="separator:ae298e654816712f352a4739625b0db80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5dc4a36939c30f553ff2389ef04cdfb"><td class="memItemLeft" align="right" valign="top">IndexT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1indexed__iterator__t.html#ae5dc4a36939c30f553ff2389ef04cdfb">index</a> ()</td></tr>
-<tr class="separator:ae5dc4a36939c30f553ff2389ef04cdfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51a0db5d10d47a4fb3d65fdf0701fece"><td class="memItemLeft" align="right" valign="top">HashT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1indexed__iterator__t.html#a51a0db5d10d47a4fb3d65fdf0701fece">hash</a> ()</td></tr>
-<tr class="separator:a51a0db5d10d47a4fb3d65fdf0701fece"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97d6a6406b212c4e0c0867b23f9d7acb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1indexed__iterator__t.html#a97d6a6406b212c4e0c0867b23f9d7acb">operator==</a> (const <a class="el" href="classVW_1_1indexed__iterator__t.html">indexed_iterator_t</a> &amp;rhs) const </td></tr>
-<tr class="separator:a97d6a6406b212c4e0c0867b23f9d7acb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4e7a86d409eeadd241d6596e313e480"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1indexed__iterator__t.html#ad4e7a86d409eeadd241d6596e313e480">operator!=</a> (const <a class="el" href="classVW_1_1indexed__iterator__t.html">indexed_iterator_t</a> &amp;rhs) const </td></tr>
-<tr class="separator:ad4e7a86d409eeadd241d6596e313e480"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09cde6f1b4fc5116c943fe768a4c4778"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1indexed__iterator__t.html#a09cde6f1b4fc5116c943fe768a4c4778">indexed_iterator_t</a> (IndexItT indices, ArrayT *feature_groups)</td></tr>
+<tr class="separator:a09cde6f1b4fc5116c943fe768a4c4778"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a835ca97ec6ab1c29e7777aa362bfc95b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVW_1_1indexed__iterator__t.html#ad004887c5793fbfd3784087a4ced5b33">value_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1indexed__iterator__t.html#a835ca97ec6ab1c29e7777aa362bfc95b">operator*</a> ()</td></tr>
+<tr class="separator:a835ca97ec6ab1c29e7777aa362bfc95b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a702ae98a2341ba86805583fcd30be843"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVW_1_1indexed__iterator__t.html">indexed_iterator_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1indexed__iterator__t.html#a702ae98a2341ba86805583fcd30be843">operator++</a> ()</td></tr>
+<tr class="separator:a702ae98a2341ba86805583fcd30be843"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a177146ca9f6a125b46c9e72d34a24b9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVW_1_1indexed__iterator__t.html">indexed_iterator_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1indexed__iterator__t.html#a177146ca9f6a125b46c9e72d34a24b9e">operator--</a> ()</td></tr>
+<tr class="separator:a177146ca9f6a125b46c9e72d34a24b9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afccdaea983abbc44b1186181dc5f31c3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1indexed__iterator__t.html#afccdaea983abbc44b1186181dc5f31c3">operator==</a> (const <a class="el" href="classVW_1_1indexed__iterator__t.html">indexed_iterator_t</a> &amp;rhs) const </td></tr>
+<tr class="separator:afccdaea983abbc44b1186181dc5f31c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add503d130734b344b644662d22a57707"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1indexed__iterator__t.html#add503d130734b344b644662d22a57707">operator!=</a> (const <a class="el" href="classVW_1_1indexed__iterator__t.html">indexed_iterator_t</a> &amp;rhs) const </td></tr>
+<tr class="separator:add503d130734b344b644662d22a57707"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -137,23 +134,46 @@ Friends</h2></td></tr>
 <tr class="separator:ae603fa3868d1bd92125a0a02ef5b27ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac83ddec3e6857ab55283bdd7ee7912e1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1indexed__iterator__t.html#ac83ddec3e6857ab55283bdd7ee7912e1">operator&gt;=</a> (const <a class="el" href="classVW_1_1indexed__iterator__t.html">indexed_iterator_t</a> &amp;lhs, const <a class="el" href="classVW_1_1indexed__iterator__t.html">indexed_iterator_t</a> &amp;rhs)</td></tr>
 <tr class="separator:ac83ddec3e6857ab55283bdd7ee7912e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee3089d34915e51b9d8d74f8bbcac1f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVW_1_1indexed__iterator__t.html#a66ebfba78c74a32237c86bb94644ee46">difference_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1indexed__iterator__t.html#aee3089d34915e51b9d8d74f8bbcac1f8">operator-</a> (const <a class="el" href="classVW_1_1indexed__iterator__t.html">indexed_iterator_t</a> &amp;lhs, const <a class="el" href="classVW_1_1indexed__iterator__t.html">indexed_iterator_t</a> &amp;rhs)</td></tr>
+<tr class="memitem:aee3089d34915e51b9d8d74f8bbcac1f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVW_1_1indexed__iterator__t.html#a38fc1e9adb5e56ba234af787588784ae">difference_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1indexed__iterator__t.html#aee3089d34915e51b9d8d74f8bbcac1f8">operator-</a> (const <a class="el" href="classVW_1_1indexed__iterator__t.html">indexed_iterator_t</a> &amp;lhs, const <a class="el" href="classVW_1_1indexed__iterator__t.html">indexed_iterator_t</a> &amp;rhs)</td></tr>
 <tr class="separator:aee3089d34915e51b9d8d74f8bbcac1f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename IndicesT, typename FeaturesT, typename IndexT, typename HashT&gt;<br />
-class VW::indexed_iterator_t&lt; IndicesT, FeaturesT, IndexT, HashT &gt;</h3>
-
-<p>Insertion or removal will result in this value in invalidated. </p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="a66ebfba78c74a32237c86bb94644ee46"></a>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="a38fc1e9adb5e56ba234af787588784ae"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename IndicesT , typename FeaturesT , typename IndexT , typename HashT &gt; </div>
+template&lt;typename ArrayT , typename IndexItT , typename ListT &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classVW_1_1indexed__iterator__t.html">VW::indexed_iterator_t</a>&lt; IndicesT, FeaturesT, IndexT, HashT &gt;::<a class="el" href="classVW_1_1indexed__iterator__t.html#a66ebfba78c74a32237c86bb94644ee46">difference_type</a> =  std::ptrdiff_t</td>
+          <td class="memname">using <a class="el" href="classVW_1_1indexed__iterator__t.html">VW::indexed_iterator_t</a>&lt; ArrayT, IndexItT, ListT &gt;::<a class="el" href="classVW_1_1indexed__iterator__t.html#a38fc1e9adb5e56ba234af787588784ae">difference_type</a> =  std::ptrdiff_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adb64d66b1219dc6ac2e708b54eccc151"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ArrayT , typename IndexItT , typename ListT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classVW_1_1indexed__iterator__t.html">VW::indexed_iterator_t</a>&lt; ArrayT, IndexItT, ListT &gt;::<a class="el" href="classVW_1_1indexed__iterator__t.html#adb64d66b1219dc6ac2e708b54eccc151">iterator_category</a> =  std::bidirectional_iterator_tag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad004887c5793fbfd3784087a4ced5b33"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ArrayT , typename IndexItT , typename ListT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classVW_1_1indexed__iterator__t.html">VW::indexed_iterator_t</a>&lt; ArrayT, IndexItT, ListT &gt;::<a class="el" href="classVW_1_1indexed__iterator__t.html#ad004887c5793fbfd3784087a4ced5b33">value_type</a> =  ListT</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -161,38 +181,26 @@ template&lt;typename IndicesT , typename FeaturesT , typename IndexT , typename 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="afcd1fb7c39bdf758f3c79e4dae12b59b"></a>
+<a class="anchor" id="a09cde6f1b4fc5116c943fe768a4c4778"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename IndicesT , typename FeaturesT , typename IndexT , typename HashT &gt; </div>
+template&lt;typename ArrayT , typename IndexItT , typename ListT &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classVW_1_1indexed__iterator__t.html">VW::indexed_iterator_t</a>&lt; IndicesT, FeaturesT, IndexT, HashT &gt;::<a class="el" href="classVW_1_1indexed__iterator__t.html">indexed_iterator_t</a> </td>
+          <td class="memname"><a class="el" href="classVW_1_1indexed__iterator__t.html">VW::indexed_iterator_t</a>&lt; ArrayT, IndexItT, ListT &gt;::<a class="el" href="classVW_1_1indexed__iterator__t.html">indexed_iterator_t</a> </td>
           <td>(</td>
-          <td class="paramtype">IndicesT *&#160;</td>
+          <td class="paramtype">IndexItT&#160;</td>
           <td class="paramname"><em>indices</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">FeaturesT *&#160;</td>
-          <td class="paramname"><em>feature_groups</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">IndexT *&#160;</td>
-          <td class="paramname"><em>namespace_indices</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">HashT *&#160;</td>
-          <td class="paramname"><em>namespace_hashes</em>&#160;</td>
+          <td class="paramtype">ArrayT *&#160;</td>
+          <td class="paramname"><em>feature_groups</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -210,69 +218,19 @@ template&lt;typename IndicesT , typename FeaturesT , typename IndexT , typename 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a51a0db5d10d47a4fb3d65fdf0701fece"></a>
+<a class="anchor" id="add503d130734b344b644662d22a57707"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename IndicesT , typename FeaturesT , typename IndexT , typename HashT &gt; </div>
+template&lt;typename ArrayT , typename IndexItT , typename ListT &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">HashT <a class="el" href="classVW_1_1indexed__iterator__t.html">VW::indexed_iterator_t</a>&lt; IndicesT, FeaturesT, IndexT, HashT &gt;::hash </td>
+          <td class="memname">bool <a class="el" href="classVW_1_1indexed__iterator__t.html">VW::indexed_iterator_t</a>&lt; ArrayT, IndexItT, ListT &gt;::operator!= </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ae5dc4a36939c30f553ff2389ef04cdfb"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename IndicesT , typename FeaturesT , typename IndexT , typename HashT &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">IndexT <a class="el" href="classVW_1_1indexed__iterator__t.html">VW::indexed_iterator_t</a>&lt; IndicesT, FeaturesT, IndexT, HashT &gt;::index </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ad4e7a86d409eeadd241d6596e313e480"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename IndicesT , typename FeaturesT , typename IndexT , typename HashT &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classVW_1_1indexed__iterator__t.html">VW::indexed_iterator_t</a>&lt; IndicesT, FeaturesT, IndexT, HashT &gt;::operator!= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classVW_1_1indexed__iterator__t.html">indexed_iterator_t</a>&lt; IndicesT, FeaturesT, IndexT, HashT &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classVW_1_1indexed__iterator__t.html">indexed_iterator_t</a>&lt; ArrayT, IndexItT, ListT &gt; &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -286,17 +244,17 @@ template&lt;typename IndicesT , typename FeaturesT , typename IndexT , typename 
 
 </div>
 </div>
-<a class="anchor" id="a11765f52fe7d99affa03a79bb55c5633"></a>
+<a class="anchor" id="a835ca97ec6ab1c29e7777aa362bfc95b"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename IndicesT , typename FeaturesT , typename IndexT , typename HashT &gt; </div>
+template&lt;typename ArrayT , typename IndexItT , typename ListT &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">FeaturesT&amp; <a class="el" href="classVW_1_1indexed__iterator__t.html">VW::indexed_iterator_t</a>&lt; IndicesT, FeaturesT, IndexT, HashT &gt;::operator* </td>
+          <td class="memname"><a class="el" href="classVW_1_1indexed__iterator__t.html#ad004887c5793fbfd3784087a4ced5b33">value_type</a>&amp; <a class="el" href="classVW_1_1indexed__iterator__t.html">VW::indexed_iterator_t</a>&lt; ArrayT, IndexItT, ListT &gt;::operator* </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -311,17 +269,17 @@ template&lt;typename IndicesT , typename FeaturesT , typename IndexT , typename 
 
 </div>
 </div>
-<a class="anchor" id="a79cc2be9b7bbe4d5cb62222e30a5a881"></a>
+<a class="anchor" id="a702ae98a2341ba86805583fcd30be843"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename IndicesT , typename FeaturesT , typename IndexT , typename HashT &gt; </div>
+template&lt;typename ArrayT , typename IndexItT , typename ListT &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classVW_1_1indexed__iterator__t.html">indexed_iterator_t</a>&amp; <a class="el" href="classVW_1_1indexed__iterator__t.html">VW::indexed_iterator_t</a>&lt; IndicesT, FeaturesT, IndexT, HashT &gt;::operator++ </td>
+          <td class="memname"><a class="el" href="classVW_1_1indexed__iterator__t.html">indexed_iterator_t</a>&amp; <a class="el" href="classVW_1_1indexed__iterator__t.html">VW::indexed_iterator_t</a>&lt; ArrayT, IndexItT, ListT &gt;::operator++ </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -336,17 +294,17 @@ template&lt;typename IndicesT , typename FeaturesT , typename IndexT , typename 
 
 </div>
 </div>
-<a class="anchor" id="ae298e654816712f352a4739625b0db80"></a>
+<a class="anchor" id="a177146ca9f6a125b46c9e72d34a24b9e"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename IndicesT , typename FeaturesT , typename IndexT , typename HashT &gt; </div>
+template&lt;typename ArrayT , typename IndexItT , typename ListT &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classVW_1_1indexed__iterator__t.html">indexed_iterator_t</a>&amp; <a class="el" href="classVW_1_1indexed__iterator__t.html">VW::indexed_iterator_t</a>&lt; IndicesT, FeaturesT, IndexT, HashT &gt;::operator-- </td>
+          <td class="memname"><a class="el" href="classVW_1_1indexed__iterator__t.html">indexed_iterator_t</a>&amp; <a class="el" href="classVW_1_1indexed__iterator__t.html">VW::indexed_iterator_t</a>&lt; ArrayT, IndexItT, ListT &gt;::operator-- </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -361,19 +319,19 @@ template&lt;typename IndicesT , typename FeaturesT , typename IndexT , typename 
 
 </div>
 </div>
-<a class="anchor" id="a97d6a6406b212c4e0c0867b23f9d7acb"></a>
+<a class="anchor" id="afccdaea983abbc44b1186181dc5f31c3"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename IndicesT , typename FeaturesT , typename IndexT , typename HashT &gt; </div>
+template&lt;typename ArrayT , typename IndexItT , typename ListT &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classVW_1_1indexed__iterator__t.html">VW::indexed_iterator_t</a>&lt; IndicesT, FeaturesT, IndexT, HashT &gt;::operator== </td>
+          <td class="memname">bool <a class="el" href="classVW_1_1indexed__iterator__t.html">VW::indexed_iterator_t</a>&lt; ArrayT, IndexItT, ListT &gt;::operator== </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classVW_1_1indexed__iterator__t.html">indexed_iterator_t</a>&lt; IndicesT, FeaturesT, IndexT, HashT &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classVW_1_1indexed__iterator__t.html">indexed_iterator_t</a>&lt; ArrayT, IndexItT, ListT &gt; &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -392,21 +350,21 @@ template&lt;typename IndicesT , typename FeaturesT , typename IndexT , typename 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename IndicesT , typename FeaturesT , typename IndexT , typename HashT &gt; </div>
+template&lt;typename ArrayT , typename IndexItT , typename ListT &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classVW_1_1indexed__iterator__t.html#a66ebfba78c74a32237c86bb94644ee46">difference_type</a> operator- </td>
+          <td class="memname"><a class="el" href="classVW_1_1indexed__iterator__t.html#a38fc1e9adb5e56ba234af787588784ae">difference_type</a> operator- </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classVW_1_1indexed__iterator__t.html">indexed_iterator_t</a>&lt; IndicesT, FeaturesT, IndexT, HashT &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classVW_1_1indexed__iterator__t.html">indexed_iterator_t</a>&lt; ArrayT, IndexItT, ListT &gt; &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classVW_1_1indexed__iterator__t.html">indexed_iterator_t</a>&lt; IndicesT, FeaturesT, IndexT, HashT &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classVW_1_1indexed__iterator__t.html">indexed_iterator_t</a>&lt; ArrayT, IndexItT, ListT &gt; &amp;&#160;</td>
           <td class="paramname"><em>rhs</em>&#160;</td>
         </tr>
         <tr>
@@ -428,7 +386,7 @@ template&lt;typename IndicesT , typename FeaturesT , typename IndexT , typename 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename IndicesT , typename FeaturesT , typename IndexT , typename HashT &gt; </div>
+template&lt;typename ArrayT , typename IndexItT , typename ListT &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -436,13 +394,13 @@ template&lt;typename IndicesT , typename FeaturesT , typename IndexT , typename 
         <tr>
           <td class="memname">bool operator&lt; </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classVW_1_1indexed__iterator__t.html">indexed_iterator_t</a>&lt; IndicesT, FeaturesT, IndexT, HashT &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classVW_1_1indexed__iterator__t.html">indexed_iterator_t</a>&lt; ArrayT, IndexItT, ListT &gt; &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classVW_1_1indexed__iterator__t.html">indexed_iterator_t</a>&lt; IndicesT, FeaturesT, IndexT, HashT &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classVW_1_1indexed__iterator__t.html">indexed_iterator_t</a>&lt; ArrayT, IndexItT, ListT &gt; &amp;&#160;</td>
           <td class="paramname"><em>rhs</em>&#160;</td>
         </tr>
         <tr>
@@ -464,7 +422,7 @@ template&lt;typename IndicesT , typename FeaturesT , typename IndexT , typename 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename IndicesT , typename FeaturesT , typename IndexT , typename HashT &gt; </div>
+template&lt;typename ArrayT , typename IndexItT , typename ListT &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -472,13 +430,13 @@ template&lt;typename IndicesT , typename FeaturesT , typename IndexT , typename 
         <tr>
           <td class="memname">bool operator&lt;= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classVW_1_1indexed__iterator__t.html">indexed_iterator_t</a>&lt; IndicesT, FeaturesT, IndexT, HashT &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classVW_1_1indexed__iterator__t.html">indexed_iterator_t</a>&lt; ArrayT, IndexItT, ListT &gt; &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classVW_1_1indexed__iterator__t.html">indexed_iterator_t</a>&lt; IndicesT, FeaturesT, IndexT, HashT &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classVW_1_1indexed__iterator__t.html">indexed_iterator_t</a>&lt; ArrayT, IndexItT, ListT &gt; &amp;&#160;</td>
           <td class="paramname"><em>rhs</em>&#160;</td>
         </tr>
         <tr>
@@ -500,7 +458,7 @@ template&lt;typename IndicesT , typename FeaturesT , typename IndexT , typename 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename IndicesT , typename FeaturesT , typename IndexT , typename HashT &gt; </div>
+template&lt;typename ArrayT , typename IndexItT , typename ListT &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -508,13 +466,13 @@ template&lt;typename IndicesT , typename FeaturesT , typename IndexT , typename 
         <tr>
           <td class="memname">bool operator&gt; </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classVW_1_1indexed__iterator__t.html">indexed_iterator_t</a>&lt; IndicesT, FeaturesT, IndexT, HashT &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classVW_1_1indexed__iterator__t.html">indexed_iterator_t</a>&lt; ArrayT, IndexItT, ListT &gt; &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classVW_1_1indexed__iterator__t.html">indexed_iterator_t</a>&lt; IndicesT, FeaturesT, IndexT, HashT &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classVW_1_1indexed__iterator__t.html">indexed_iterator_t</a>&lt; ArrayT, IndexItT, ListT &gt; &amp;&#160;</td>
           <td class="paramname"><em>rhs</em>&#160;</td>
         </tr>
         <tr>
@@ -536,7 +494,7 @@ template&lt;typename IndicesT , typename FeaturesT , typename IndexT , typename 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename IndicesT , typename FeaturesT , typename IndexT , typename HashT &gt; </div>
+template&lt;typename ArrayT , typename IndexItT , typename ListT &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -544,13 +502,13 @@ template&lt;typename IndicesT , typename FeaturesT , typename IndexT , typename 
         <tr>
           <td class="memname">bool operator&gt;= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classVW_1_1indexed__iterator__t.html">indexed_iterator_t</a>&lt; IndicesT, FeaturesT, IndexT, HashT &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classVW_1_1indexed__iterator__t.html">indexed_iterator_t</a>&lt; ArrayT, IndexItT, ListT &gt; &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classVW_1_1indexed__iterator__t.html">indexed_iterator_t</a>&lt; IndicesT, FeaturesT, IndexT, HashT &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classVW_1_1indexed__iterator__t.html">indexed_iterator_t</a>&lt; ArrayT, IndexItT, ListT &gt; &amp;&#160;</td>
           <td class="paramname"><em>rhs</em>&#160;</td>
         </tr>
         <tr>
@@ -574,7 +532,7 @@ template&lt;typename IndicesT , typename FeaturesT , typename IndexT , typename 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 15 2021 17:10:18 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 15 2021 19:42:22 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

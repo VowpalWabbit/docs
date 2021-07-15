@@ -124,15 +124,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>const_audit_iterator
 : <a class="el" href="structfeatures.html#af004a87bc7b463749d1c889d8c105acc">features</a>
 </li>
-<li>const_indexed_iterator
-: <a class="el" href="structVW_1_1namespaced__features.html#a76a8d3337a0e233bf7102b6d06ee0fcb">VW::namespaced_features</a>
-</li>
 <li>const_iterator
 : <a class="el" href="classdense__parameters.html#a629ff7365e43b32aeaa92b0638bb60f5">dense_parameters</a>
 , <a class="el" href="structfeatures.html#afecea49be4b08ab2ef2d749527eb251c">features</a>
 , <a class="el" href="classsparse__parameters.html#a2f9cea8c995aa2bce6e984b1b0b934af">sparse_parameters</a>
 , <a class="el" href="structv__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_3_01T_01_4_1_1value_01_4_1_1type_01_4.html#a3f922f26798e4080cf0bd26c0a15ccfa">v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;</a>
-, <a class="el" href="structVW_1_1namespaced__features.html#a65f5b0ac3072190d144548c7657fbf21">VW::namespaced_features</a>
+, <a class="el" href="structVW_1_1namespaced__feature__store.html#a315f980d8b6de84faa1ffa030f287bcf">VW::namespaced_feature_store</a>
+</li>
+<li>const_list_iterator
+: <a class="el" href="structVW_1_1namespaced__feature__store.html#aa00dad0e3b1546b06ddf9df1c5d5971c">VW::namespaced_feature_store</a>
 </li>
 <li>const_pointer
 : <a class="el" href="structv__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_3_01T_01_4_1_1value_01_4_1_1type_01_4.html#adfdfaf3c0b46a55e8237b622031bd651">v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;</a>
@@ -154,7 +154,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classfeatures__iterator.html#ae806f0bad2fd093fe18b90f67bc16620">features_iterator&lt; feature_value_type_t, feature_index_type_t &gt;</a>
 , <a class="el" href="classsparse__iterator.html#a8de55b3d9048198c4662ab19e46f0eb8">sparse_iterator&lt; T &gt;</a>
 , <a class="el" href="structVW_1_1chained__proxy__iterator.html#a9decb3381667cbc16ff49f50a081d060">VW::chained_proxy_iterator&lt; InnerIterator, IteratorT &gt;</a>
-, <a class="el" href="classVW_1_1indexed__iterator__t.html#a66ebfba78c74a32237c86bb94644ee46">VW::indexed_iterator_t&lt; IndicesT, FeaturesT, IndexT, HashT &gt;</a>
+, <a class="el" href="classVW_1_1indexed__iterator__t.html#a38fc1e9adb5e56ba234af787588784ae">VW::indexed_iterator_t&lt; ArrayT, IndexItT, ListT &gt;</a>
 </li>
 </ul>
 
@@ -191,8 +191,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
-<li>indexed_iterator
-: <a class="el" href="structVW_1_1namespaced__features.html#af31da66f5bd6f0f49d05d8dd0c861d85">VW::namespaced_features</a>
+<li>index_flat_iterator
+: <a class="el" href="structVW_1_1namespaced__feature__store.html#a4006ef95dbc08ef39c6dc5990fcfaced">VW::namespaced_feature_store</a>
 </li>
 <li>Iter
 : <a class="el" href="classvw__slim_1_1internal_1_1collection__pair__iterator.html#a5a90685549f3921ce9f3c216bf1b724b">vw_slim::internal::collection_pair_iterator&lt; It1, It2 &gt;</a>
@@ -202,7 +202,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="structfeatures.html#adb08a42ec07aefa8d0ca275e19d89021">features</a>
 , <a class="el" href="classsparse__parameters.html#a5eb8b393b6ea9cdd906c0619756a9bfa">sparse_parameters</a>
 , <a class="el" href="structv__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_3_01T_01_4_1_1value_01_4_1_1type_01_4.html#ae6e0aa94cba96f562f36db937f796de5">v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;</a>
-, <a class="el" href="structVW_1_1namespaced__features.html#ac9ca36f31ce5e28047506f4197a0cdc3">VW::namespaced_features</a>
+, <a class="el" href="structVW_1_1namespaced__feature__store.html#a59a39eb7e01b424097c21d31c61a55c5">VW::namespaced_feature_store</a>
 </li>
 <li>iterator_category
 : <a class="el" href="classACTION__SCORE_1_1score__iterator.html#a398c2f8c2e8558b126113185084d2840">ACTION_SCORE::score_iterator</a>
@@ -211,11 +211,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="classfeatures__iterator.html#ab911b39a65e6eab95a96ee89e239181b">features_iterator&lt; feature_value_type_t, feature_index_type_t &gt;</a>
 , <a class="el" href="classsparse__iterator.html#a8b5684ea98f1d31ebbd630a5a927136a">sparse_iterator&lt; T &gt;</a>
 , <a class="el" href="structVW_1_1chained__proxy__iterator.html#a3a3341a8d5124eb47aab9217aed0feb4">VW::chained_proxy_iterator&lt; InnerIterator, IteratorT &gt;</a>
+, <a class="el" href="classVW_1_1indexed__iterator__t.html#adb64d66b1219dc6ac2e708b54eccc151">VW::indexed_iterator_t&lt; ArrayT, IndexItT, ListT &gt;</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_l"></a>- l -</h3><ul>
+<li>list_iterator
+: <a class="el" href="structVW_1_1namespaced__feature__store.html#a0e94da9380e08138927435bdab4bc24f">VW::namespaced_feature_store</a>
+</li>
 <li>Loc
 : <a class="el" href="classvw__slim_1_1internal_1_1collection__pair__iterator.html#a806e70d2fe3868d4f86a4bc14da89cc6">vw_slim::internal::collection_pair_iterator&lt; It1, It2 &gt;</a>
 </li>
@@ -294,12 +298,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="structv__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_3_01T_01_4_1_1value_01_4_1_1type_01_4.html#a53d0122b3a7a3536ba8cf189f0ff80c3">v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;</a>
 , <a class="el" href="structVW_1_1chained__proxy__iterator.html#a7bf6327358288992c78ecc62c9f75a9f">VW::chained_proxy_iterator&lt; InnerIterator, IteratorT &gt;</a>
 , <a class="el" href="structVW_1_1config_1_1typed__option.html#aba8098705f929692df00010f134ae4ea">VW::config::typed_option&lt; T &gt;</a>
+, <a class="el" href="classVW_1_1indexed__iterator__t.html#ad004887c5793fbfd3784087a4ced5b33">VW::indexed_iterator_t&lt; ArrayT, IndexItT, ListT &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 15 2021 17:10:18 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 15 2021 19:42:22 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

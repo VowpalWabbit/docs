@@ -12,7 +12,7 @@ var searchData=
   ['in_5fuse',['in_use',['../structexample.html#a905cb7dd0c255b57735c01e408662cc4',1,'example']]],
   ['inc',['inc',['../classLabelObjectState.html#a6d7683925b3cfe38f68d25e668da8969',1,'LabelObjectState']]],
   ['increment',['increment',['../structcbify__adf__data.html#a495e1d54c72ff129f66bc487dd67ed31',1,'cbify_adf_data::increment()'],['../structVW_1_1LEARNER_1_1learner.html#a30c2bcf54996490e0a4415e6509e9dfe',1,'VW::LEARNER::learner::increment()']]],
-  ['index',['index',['../structLabelIndexState.html#a74debffb179393bae1b06ad872409acc',1,'LabelIndexState']]],
+  ['index',['index',['../structVW_1_1namespaced__features.html#aeaaa82d8a5c0140cc1ece69a98216590',1,'VW::namespaced_features::index()'],['../structLabelIndexState.html#a74debffb179393bae1b06ad872409acc',1,'LabelIndexState::index()']]],
   ['index_5fname_5fmap',['index_name_map',['../structvw.html#a2e15a01ef633a5fce744f92561885b89',1,'vw']]],
   ['indices',['indices',['../structexample__predict.html#ab098b66eb3c24b20ca349b7908ef54f3',1,'example_predict']]],
   ['indicies',['indicies',['../structfeatures.html#a2d75751cdcc865b5e62031d40a770a6a',1,'features']]],

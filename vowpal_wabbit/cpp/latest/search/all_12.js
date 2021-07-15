@@ -93,7 +93,7 @@ var searchData=
   ['regression_5fdata_5fno_5fconstant_5fpred',['regression_data_no_constant_pred',['../data_8h.html#a05a209546c5e6b29dbfb7e140e80918e',1,'data.h']]],
   ['regression_5fdata_5fno_5fconstant_5fpred_5flen',['regression_data_no_constant_pred_len',['../data_8h.html#a85a312fb2302610cc8a0473ccb1c439c',1,'data.h']]],
   ['releasefeaturespace',['releaseFeatureSpace',['../namespaceVW.html#ad1d82f751f07678f73bd421236477163',1,'VW']]],
-  ['remove_5ffeature_5fgroup',['remove_feature_group',['../structVW_1_1namespaced__features.html#ab37f9c48ea1fa45f394b0a9601c20290',1,'VW::namespaced_features']]],
+  ['remove',['remove',['../structVW_1_1namespaced__feature__store.html#acb024398f4c2b9b10be96d3bd9a5b562',1,'VW::namespaced_feature_store']]],
   ['replace',['replace',['../structVW_1_1config_1_1options__i.html#ab0b20f09ba0a920bac5b8e9dde165f8a',1,'VW::config::options_i::replace()'],['../structVW_1_1config_1_1options__name__extractor.html#a3ac39f1134cc97f5e06f2e7ee942ebb9',1,'VW::config::options_name_extractor::replace()'],['../structVW_1_1config_1_1options__boost__po.html#a2ccc103ef8ea4dc07dbe74fab480653c',1,'VW::config::options_boost_po::replace()']]],
   ['replace_5fbuffer',['replace_buffer',['../classio__buf.html#ab24fb3dda9f92c52de4aa41197e1fd2b',1,'io_buf']]],
   ['replay_5fcount',['replay_count',['../structExpReplay_1_1expreplay.html#abec5829012cdfacf1f2c2d7faa2e8188',1,'ExpReplay::expreplay']]],

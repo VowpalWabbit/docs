@@ -89,29 +89,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">namespaced_feature_store.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;utility&gt;</code><br />
+<div class="textblock"><code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;list&gt;</code><br />
+<code>#include &lt;array&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
-<code>#include &lt;unordered_map&gt;</code><br />
-<code>#include &lt;cassert&gt;</code><br />
-<code>#include &lt;set&gt;</code><br />
 <code>#include &quot;<a class="el" href="feature__group_8h.html">feature_group.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="generic__range_8h.html">generic_range.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="chained__proxy__iterator_8h.html">chained_proxy_iterator.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1iterator__t.html">VW::iterator_t&lt; FeaturesT, IndexT, HashT &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insertion or removal will result in this value in invalidated.  <a href="classVW_1_1iterator__t.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1indexed__iterator__t.html">VW::indexed_iterator_t&lt; ArrayT, IndexItT, ListT &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1indexed__iterator__t.html">VW::indexed_iterator_t&lt; IndicesT, FeaturesT, IndexT, HashT &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insertion or removal will result in this value in invalidated.  <a href="classVW_1_1indexed__iterator__t.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1namespaced__features.html">VW::namespaced_features</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1namespaced__feature__store.html">VW::namespaced_feature_store</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -123,6 +118,15 @@ Namespaces</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:a3302327c8e16f985dd6c4474bf279c40"><td class="memItemLeft" align="right" valign="top">typedef unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaced__feature__store_8h.html#a3302327c8e16f985dd6c4474bf279c40">namespace_index</a></td></tr>
 <tr class="separator:a3302327c8e16f985dd6c4474bf279c40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:aff7e7d4d5213e7b4fe6e732d801c7342"><td class="memTemplParams" colspan="2">template&lt;typename FuncT &gt; </td></tr>
+<tr class="memitem:aff7e7d4d5213e7b4fe6e732d801c7342"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW.html#aff7e7d4d5213e7b4fe6e732d801c7342">VW::foreach</a> (namespaced_feature_store &amp;store, FuncT func)</td></tr>
+<tr class="separator:aff7e7d4d5213e7b4fe6e732d801c7342"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab176e9ca772adb244601f6f3d5938c8f"><td class="memTemplParams" colspan="2">template&lt;typename FuncT &gt; </td></tr>
+<tr class="memitem:ab176e9ca772adb244601f6f3d5938c8f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ab176e9ca772adb244601f6f3d5938c8f">VW::foreach</a> (const namespaced_feature_store &amp;store, FuncT func)</td></tr>
+<tr class="separator:ab176e9ca772adb244601f6f3d5938c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a class="anchor" id="a3302327c8e16f985dd6c4474bf279c40"></a>
@@ -140,7 +144,7 @@ Typedefs</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 15 2021 17:10:17 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 15 2021 19:42:22 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
