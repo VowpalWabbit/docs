@@ -41,6 +41,7 @@ var searchData=
   ['get_5fcost_5fsensitive_5fprediction',['get_cost_sensitive_prediction',['../namespaceVW.html#adfb8aa387872650ef326e8a99be10ed0',1,'VW']]],
   ['get_5fcost_5fsensitive_5fprediction_5fconfidence_5fscores',['get_cost_sensitive_prediction_confidence_scores',['../namespaceVW.html#acfc559d229b8b2a9c5d0947a0419ca77',1,'VW']]],
   ['get_5fcurrent_5fstate',['get_current_state',['../structrand__state.html#abbbbfa9c60815b6c2aacc5746f995547',1,'rand_state']]],
+  ['get_5fenabled_5freductions',['get_enabled_reductions',['../structVW_1_1LEARNER_1_1learner.html#ac088cff3379b7309fad3b8a6aa132d01',1,'VW::LEARNER::learner']]],
   ['get_5ferror_5fcode',['get_error_code',['../classVW_1_1experimental_1_1api__status.html#a88008c17284453c0844d3288b6c3cbf3',1,'VW::experimental::api_status']]],
   ['get_5ferror_5fmsg',['get_error_msg',['../classVW_1_1experimental_1_1api__status.html#ae8a5214c1817103b6cdd17f41428a940',1,'VW::experimental::api_status']]],
   ['get_5fexample',['get_example',['../namespaceVW.html#a6bfe91dde1085dda861fa166028d686d',1,'VW']]],
