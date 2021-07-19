@@ -11,7 +11,6 @@ var searchData=
   ['ignorestate',['IgnoreState',['../structIgnoreState.html',1,'IgnoreState&lt; audit &gt;'],['../structIgnoreState.html#a892ac9be3ae919960e4b58e4429df82b',1,'IgnoreState::IgnoreState()']]],
   ['import_5fexample',['import_example',['../namespaceVW.html#a7c5253f911057dd415e987b1d91d3d71',1,'VW']]],
   ['in_5fpass_5fcounter',['in_pass_counter',['../structparser.html#a53510d464dc58fc86bce92c68a07a6b8',1,'parser']]],
-  ['in_5fuse',['in_use',['../structexample.html#a905cb7dd0c255b57735c01e408662cc4',1,'example']]],
   ['inc',['inc',['../classLabelObjectState.html#a6d7683925b3cfe38f68d25e668da8969',1,'LabelObjectState']]],
   ['increment',['increment',['../structcbify__adf__data.html#a495e1d54c72ff129f66bc487dd67ed31',1,'cbify_adf_data::increment()'],['../structVW_1_1LEARNER_1_1learner.html#a30c2bcf54996490e0a4415e6509e9dfe',1,'VW::LEARNER::learner::increment()']]],
   ['increment_5foffset',['increment_offset',['../namespaceVW_1_1LEARNER.html#a6bc641b70bc2c6b3ca39f2783f961cac',1,'VW::LEARNER::increment_offset(example &amp;ex, const size_t increment, const size_t i)'],['../namespaceVW_1_1LEARNER.html#a15a9fb65bfe9088e6359e4b281af0e84',1,'VW::LEARNER::increment_offset(multi_ex &amp;ec_seq, const size_t increment, const size_t i)']]],
