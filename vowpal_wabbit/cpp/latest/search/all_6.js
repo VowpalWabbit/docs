@@ -17,7 +17,6 @@ var searchData=
   ['feature_5foffset_5fguard',['feature_offset_guard',['../classvw__slim_1_1feature__offset__guard.html#a43b29c20a39a0cd32faab93716667f68',1,'vw_slim::feature_offset_guard']]],
   ['feature_5foffset_5fguard',['feature_offset_guard',['../classvw__slim_1_1feature__offset__guard.html',1,'vw_slim']]],
   ['feature_5fpush_5fback',['feature_push_back',['../classvw__slim_1_1namespace__copy__guard.html#ab181e0938496d88d912485e3d0e183aa',1,'vw_slim::namespace_copy_guard']]],
-  ['feature_5fself_5finteractions',['feature_self_interactions',['../namespaceINTERACTIONS.html#affcb5fb4cf5bd6801bd9b33f6b02b669',1,'INTERACTIONS']]],
   ['feature_5fspace',['feature_space',['../structexample__predict.html#a59f24cbe1603a24ae5812b7d262f3668',1,'example_predict']]],
   ['feature_5fvalue',['feature_value',['../feature__group_8h.html#afe724f24bdc273f5a3bef924f94b4a4a',1,'feature_group.h']]],
   ['featureinputtype',['FeatureInputType',['../parse__example_8h.html#a6f1d7d9072a105050bdca31b9bbc576e',1,'parse_example.h']]],

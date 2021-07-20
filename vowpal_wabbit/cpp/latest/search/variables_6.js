@@ -5,7 +5,6 @@ var searchData=
   ['feature_5fcount',['feature_count',['../structNamespace.html#aa7695877ea34d84f25a12c44def2347b',1,'Namespace']]],
   ['feature_5fgroup',['feature_group',['../structNamespace.html#a7ba33baa864fb7a27d078a97cf842be7',1,'Namespace']]],
   ['feature_5fmask',['feature_mask',['../structvw.html#a7f794c7df8fad287cd0453922246e6dd',1,'vw']]],
-  ['feature_5fself_5finteractions',['feature_self_interactions',['../namespaceINTERACTIONS.html#affcb5fb4cf5bd6801bd9b33f6b02b669',1,'INTERACTIONS']]],
   ['feature_5fspace',['feature_space',['../structexample__predict.html#a59f24cbe1603a24ae5812b7d262f3668',1,'example_predict']]],
   ['file_5fhash',['file_hash',['../structdictionary__info.html#a1ab499f54ad0f7cb77a6eb299a36f479',1,'dictionary_info']]],
   ['filled',['filled',['../structExpReplay_1_1expreplay.html#afe9d61756339b6e4ef6c0e3ce4c5cf1e',1,'ExpReplay::expreplay']]],
