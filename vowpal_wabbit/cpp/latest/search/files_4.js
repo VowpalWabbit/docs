@@ -10,6 +10,5 @@ var searchData=
   ['explore_2eh',['explore.h',['../explore_8h.html',1,'']]],
   ['explore_5feval_2eh',['explore_eval.h',['../explore__eval_8h.html',1,'']]],
   ['explore_5finternal_2eh',['explore_internal.h',['../explore__internal_8h.html',1,'']]],
-  ['expreplay_2eh',['expreplay.h',['../expreplay_8h.html',1,'']]],
-  ['ezexample_2eh',['ezexample.h',['../ezexample_8h.html',1,'']]]
+  ['expreplay_2eh',['expreplay.h',['../expreplay_8h.html',1,'']]]
 ];
