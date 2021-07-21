@@ -1,7 +1,6 @@
 var searchData=
 [
   ['v_5farray_5fpool',['v_array_pool',['../namespaceVW.html#a7b747bf61c1045c5ac479cda41d3bdb6',1,'VW']]],
-  ['v_5fstring',['v_string',['../v__array_8h.html#a6627a9b25f24f16a19e613ff7f0d8fa3',1,'v_array.h']]],
   ['val',['Val',['../classvw__slim_1_1internal_1_1location__reference.html#affb9a8b2866e15e550f331e40d2fca6a',1,'vw_slim::internal::location_reference']]],
   ['val1',['Val1',['../classvw__slim_1_1internal_1_1location__value.html#ae947e8bbfe233f10d58e5583fe41fe12',1,'vw_slim::internal::location_value']]],
   ['val2',['Val2',['../classvw__slim_1_1internal_1_1location__value.html#a377624f0f711944a095e7619033e0b27',1,'vw_slim::internal::location_value']]],

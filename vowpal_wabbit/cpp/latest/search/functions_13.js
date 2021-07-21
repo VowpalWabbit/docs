@@ -8,7 +8,6 @@ var searchData=
   ['uniform_5fhash',['uniform_hash',['../hash_8h.html#ab895a18954442f288c97979158e4b0d1',1,'hash.h']]],
   ['uniform_5frandom_5fmerand48',['uniform_random_merand48',['../namespaceexploration.html#a181ae01106bcdd79234a1bf66d88d645',1,'exploration']]],
   ['uniform_5frandom_5fmerand48_5fadvance',['uniform_random_merand48_advance',['../namespaceexploration.html#a5d99f2849ca698712b1a2a6e451019c5',1,'exploration']]],
-  ['unique_5fadd_5fsorted',['unique_add_sorted',['../structv__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_3_01T_01_4_1_1value_01_4_1_1type_01_4.html#a8e89fb360319849046dc5ba9c87099cc',1,'v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;']]],
   ['unique_5ffeatures',['unique_features',['../unique__sort_8h.html#a209bc72175c2bbe3c9977f6952b8db5e',1,'unique_sort.h']]],
   ['unique_5fsort_5ffeatures',['unique_sort_features',['../unique__sort_8h.html#a821d46680f1930b521884c4805783bf3',1,'unique_sort.h']]],
   ['update',['update',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#a94e981844ac9c0bdaa6d4bde9a61d894',1,'VW::distributionally_robust::ChiSquared::update()'],['../structVW_1_1LEARNER_1_1learner.html#af994d66959b825bc3b92af991529c7e6',1,'VW::LEARNER::learner::update()'],['../structshared__data.html#ad3b0fc9176c689eb63bf255499223c62',1,'shared_data::update()']]],

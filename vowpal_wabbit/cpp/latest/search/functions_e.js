@@ -19,7 +19,7 @@ var searchData=
   ['persist_5fmetrics',['persist_metrics',['../structVW_1_1cb__explore__adf_1_1cb__explore__adf__base.html#a088ddf706581acff3db182ce075f7c78',1,'VW::cb_explore_adf::cb_explore_adf_base::persist_metrics()'],['../structVW_1_1LEARNER_1_1learner.html#ab5b1928dfad0b5dfc4daba230ecbbfed',1,'VW::LEARNER::learner::persist_metrics()']]],
   ['plt_5fsetup',['plt_setup',['../plt_8h.html#a06d22b9fa9288a3b1b5d3e2453c7ffca',1,'plt.h']]],
   ['polyprediction',['polyprediction',['../structpolyprediction.html#ac2df54be5ce26dd2f273ddf41c2cb76c',1,'polyprediction::polyprediction()=default'],['../structpolyprediction.html#a2cff267744d89029e4ba7f1d70c25a79',1,'polyprediction::polyprediction(polyprediction &amp;&amp;)=default'],['../structpolyprediction.html#a4651d3dd111d351e2c48e2cd6e7aedee',1,'polyprediction::polyprediction(const polyprediction &amp;)=delete']]],
-  ['pop',['pop',['../classVW_1_1ptr__queue.html#a6e41c051fc5776a1e8d51b232e65e71d',1,'VW::ptr_queue::pop()'],['../v__array_8h.html#a5428d524ce60e37fbd99122bf274e345',1,'pop():&#160;v_array.h']]],
+  ['pop',['pop',['../classVW_1_1ptr__queue.html#a6e41c051fc5776a1e8d51b232e65e71d',1,'VW::ptr_queue']]],
   ['pop_5fback',['pop_back',['../structv__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_3_01T_01_4_1_1value_01_4_1_1type_01_4.html#a4e60a7be6ecba2b960d8c6590ec17312',1,'v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;']]],
   ['pop_5fbest_5fitem',['pop_best_item',['../classBeam_1_1beam.html#ad20a36b0ceb323194a91caa252087026',1,'Beam::beam']]],
   ['pop_5fns',['pop_ns',['../json__utils_8h.html#a9a24a29fa01e35d8625b1a76802585d4',1,'json_utils.h']]],
@@ -58,7 +58,6 @@ var searchData=
   ['push_5fback_5funchecked',['push_back_unchecked',['../structv__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_3_01T_01_4_1_1value_01_4_1_1type_01_4.html#a31274ed7845f707a15548263b1567f0b',1,'v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;']]],
   ['push_5ffeature',['push_feature',['../classvw__slim_1_1example__predict__builder.html#a6f693aa571f6c8ca6c951834aaa01c36',1,'vw_slim::example_predict_builder']]],
   ['push_5ffeature_5fstring',['push_feature_string',['../classvw__slim_1_1example__predict__builder.html#a1ccfe72dc03f0e34bf6832548f01f52b',1,'vw_slim::example_predict_builder']]],
-  ['push_5fmany',['push_many',['../v__array_8h.html#acebbdfa66eefc12023c53deec7edc050',1,'v_array.h']]],
   ['push_5fns',['push_ns',['../json__utils_8h.html#a1554bc5eeefd76bc5253823cd90ba398',1,'json_utils.h']]],
   ['pushnamespace',['PushNamespace',['../structContext.html#ab530801b17951c4cacb1f9a7c472e9d0',1,'Context']]]
 ];

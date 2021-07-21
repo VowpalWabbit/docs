@@ -45,7 +45,6 @@ var searchData=
   ['delete_5fextra_5fdata',['delete_extra_data',['../structHookTask_1_1task__data.html#a61360c0115f8a58e64b432e90c48405a',1,'HookTask::task_data']]],
   ['delete_5fprediction',['delete_prediction',['../namespaceVW.html#ac40013c94c682c8e00855b3b1f1859a7',1,'VW']]],
   ['delete_5frun_5fobject',['delete_run_object',['../structHookTask_1_1task__data.html#afc26800c1d71af93e60d6a2f6a311313',1,'HookTask::task_data']]],
-  ['delete_5fv',['delete_v',['../structv__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_3_01T_01_4_1_1value_01_4_1_1type_01_4.html#a06e3a352444bc4bb828092e4ba30eb19',1,'v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;']]],
   ['dense_5fiterator',['dense_iterator',['../classdense__iterator.html',1,'dense_iterator&lt; T &gt;'],['../classdense__iterator.html#a64935b77332789d16dbdadd4d21ebc93',1,'dense_iterator::dense_iterator()']]],
   ['dense_5fparameters',['dense_parameters',['../classdense__parameters.html',1,'dense_parameters'],['../classdense__parameters.html#ac84576139f254e8bd0a68203f936bf05',1,'dense_parameters::dense_parameters(size_t length, uint32_t stride_shift=0)'],['../classdense__parameters.html#a00ca6d51dc5f023b3ef40a40f80937ea',1,'dense_parameters::dense_parameters()'],['../classdense__parameters.html#ab056d8fa9e75710b3a196888b500a8a4',1,'dense_parameters::dense_parameters(const dense_parameters &amp;other)=delete'],['../classdense__parameters.html#a09a7374476805d580e0b1afd057e3444',1,'dense_parameters::dense_parameters(dense_parameters &amp;&amp;) noexcept=delete']]],
   ['dense_5fweights',['dense_weights',['../classparameters.html#aaac8b2f50c6d9ee2946d09c9183b4029',1,'parameters']]],
@@ -68,8 +67,8 @@ var searchData=
   ['double',['Double',['../structVWReaderHandler.html#a9b1d990eb0240611a2f3ccce3afaa963',1,'VWReaderHandler']]],
   ['dsjson',['dsjson',['../structinput__options.html#adbd9d55bfe27f7c844591e5840660ed8',1,'input_options']]],
   ['dsjson_5fmetrics',['dsjson_metrics',['../structdsjson__metrics.html',1,'']]],
-  ['duals',['Duals',['../structVW_1_1distributionally__robust_1_1Duals.html#ab9b646730bc1ce5699d89e7e2bc42c06',1,'VW::distributionally_robust::Duals::Duals()'],['../structVW_1_1distributionally__robust_1_1Duals.html#adaabb8969d2a11a78804d49c51deabcd',1,'VW::distributionally_robust::Duals::Duals(bool unbounded, double kappa, double gamma, double beta, double n)']]],
   ['duals',['Duals',['../structVW_1_1distributionally__robust_1_1Duals.html',1,'VW::distributionally_robust']]],
+  ['duals',['Duals',['../structVW_1_1distributionally__robust_1_1Duals.html#ab9b646730bc1ce5699d89e7e2bc42c06',1,'VW::distributionally_robust::Duals::Duals()'],['../structVW_1_1distributionally__robust_1_1Duals.html#adaabb8969d2a11a78804d49c51deabcd',1,'VW::distributionally_robust::Duals::Duals(bool unbounded, double kappa, double gamma, double beta, double n)']]],
   ['dummy_5ffunc',['dummy_func',['../namespaceGD.html#a9a733cab6079e5f28fb3773aa43bea24',1,'GD']]],
   ['dump_5finterval',['dump_interval',['../structshared__data.html#acc14d5e78772dd39829a82e4df2912d7',1,'shared_data']]]
 ];
