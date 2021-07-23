@@ -89,14 +89,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p>This is a diagnostic overload used to prevent <a class="el" href="structv__array.html" title="This is a diagnostic overload used to prevent v_array from being used with types that are not trivial...">v_array</a> from being used with types that are not trivially copyable.  
+ <a href="structv__array.html#details">More...</a></p>
+
 <p><code>#include &lt;v_array.h&gt;</code></p>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename T, typename Enable = void&gt;<br />
+struct v_array&lt; T, Enable &gt;</h3>
+
+<p>This is a diagnostic overload used to prevent <a class="el" href="structv__array.html" title="This is a diagnostic overload used to prevent v_array from being used with types that are not trivial...">v_array</a> from being used with types that are not trivially copyable. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Element type </td></tr>
+    <tr><td class="paramname">Enable</td><td>Used to check if T is trivially_copyable </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>If you get an error message saying that x uses undefined struct 'v_array&lt;...,void&gt;' that means the type is not trivially copyable and cannot be used with <a class="el" href="structv__array.html" title="This is a diagnostic overload used to prevent v_array from being used with types that are not trivial...">v_array</a>. </dd></dl>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>/__w/vowpal_wabbit/vowpal_wabbit/vowpalwabbit/<a class="el" href="v__array_8h.html">v_array.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 23 2021 13:33:00 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 23 2021 14:09:41 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
