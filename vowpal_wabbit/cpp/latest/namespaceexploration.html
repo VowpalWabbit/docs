@@ -884,6 +884,23 @@ template&lt;typename It &gt; </div>
     <tr><td class="paramname">pdf_first</td><td>Iterator pointing to the beginning of the pdf. </td></tr>
     <tr><td class="paramname">pdf_last</td><td>Iterator pointing to the end of the pdf. </td></tr>
     <tr><td class="paramname">chosen_value</td><td>returns the sampled continuous value. </td></tr>
+    <tr><td class="paramname">pdf_value</td><td>returns the probability density at the sampled location. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int returns 0 on success, otherwise an error code as defined by E_EXPLORATION_*.</dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">It</td><td>Iterator type of the pmf. Must be a RandomAccessIterator. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_seed</td><td>The seed for the pseudo-random generator. Will be hashed using MURMUR hash. The seed state will be advanced </td></tr>
+    <tr><td class="paramname">pdf_first</td><td>Iterator pointing to the beginning of the pdf. </td></tr>
+    <tr><td class="paramname">pdf_last</td><td>Iterator pointing to the end of the pdf. </td></tr>
+    <tr><td class="paramname">chosen_value</td><td>returns the sampled continuous value. </td></tr>
     <tr><td class="paramname">pdf_value</td><td>returns the probablity density at the sampled location. </td></tr>
   </table>
   </dd>
@@ -1222,7 +1239,7 @@ template&lt;typename ActionsIt &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 23 2021 10:44:57 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 23 2021 13:33:00 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
