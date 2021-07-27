@@ -11,6 +11,7 @@ var searchData=
   ['deep_5fcopy_5ffrom',['deep_copy_from',['../structfeatures.html#a06f20d9a83ccc61bdd694e623bf49734',1,'features']]],
   ['default_5flabel',['default_label',['../namespaceCB.html#a17f57dc6eeff9f45cbdc45da28cd6329',1,'CB::default_label()'],['../namespaceCCB.html#ad072b6b481d2664a80e1417e57d8d8a9',1,'CCB::default_label()'],['../namespaceCOST__SENSITIVE.html#af211ba9b26a434e427420bc54927ff50',1,'COST_SENSITIVE::default_label()'],['../namespaceVW_1_1slates.html#a1e6338c776c8f32ff9132e5934ed2177',1,'VW::slates::default_label()']]],
   ['default_5flabel_5fadditional_5ffields',['default_label_additional_fields',['../namespaceCB.html#a113bc49c47e990f682fb95e48cf04761',1,'CB']]],
+  ['default_5freduction_5fstack_5fsetup',['default_reduction_stack_setup',['../structVW_1_1default__reduction__stack__setup.html#a4292ec5246e8e519d61640dccaa59ac6',1,'VW::default_reduction_stack_setup']]],
   ['default_5fvalue',['default_value',['../structVW_1_1config_1_1option__builder.html#abd7158382bc9312da5c8d0caa7cd63da',1,'VW::config::option_builder::default_value()'],['../structVW_1_1config_1_1typed__option.html#ae6fc37d4a80f2b6bca47ac3f45c432fb',1,'VW::config::typed_option::default_value()']]],
   ['default_5fvalue_5fsupplied',['default_value_supplied',['../structVW_1_1config_1_1typed__option.html#a89970ef3dc1332bc7053870bfe111fec',1,'VW::config::typed_option']]],
   ['defaultstate',['DefaultState',['../classDefaultState.html#a95600a35c6cc28204b0eb01d647dd9f9',1,'DefaultState']]],

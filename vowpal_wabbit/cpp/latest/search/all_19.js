@@ -27,6 +27,7 @@ var searchData=
   ['_7ereader',['~reader',['../structVW_1_1io_1_1reader.html#acb42a09f82bb5363bb7518d459288128',1,'VW::io::reader']]],
   ['_7escope_5fexit_5fcaller',['~scope_exit_caller',['../classVW_1_1details_1_1scope__exit__caller.html#a4094efdd6be34a5adfdf11a3bc79b996',1,'VW::details::scope_exit_caller']]],
   ['_7esearch',['~search',['../structSearch_1_1search.html#a94474ae1eae14f20a678ecdca7ff20aa',1,'Search::search']]],
+  ['_7esetup_5fbase_5fi',['~setup_base_i',['../structVW_1_1setup__base__i.html#a77470d2254f711c05ae417dc2d75ee03',1,'VW::setup_base_i']]],
   ['_7eshared_5fdata',['~shared_data',['../structshared__data.html#ab108daa83fcef7d9edf3f09c2030f5bf',1,'shared_data']]],
   ['_7esocket',['~socket',['../structVW_1_1io_1_1socket.html#a623937bd36d1734b649e88dce7151bbf',1,'VW::io::socket']]],
   ['_7esocket_5fcloser',['~socket_closer',['../structVW_1_1io_1_1details_1_1socket__closer.html#aa54c996e134ed9e0a15e68e03692b61f',1,'VW::io::details::socket_closer']]],

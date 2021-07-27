@@ -7,6 +7,7 @@ var searchData=
   ['default_5fcleanup_3c_20example_20_3e',['default_cleanup&lt; example &gt;',['../structVW_1_1default__cleanup.html',1,'VW']]],
   ['default_5finitializer',['default_initializer',['../structVW_1_1default__initializer.html',1,'VW']]],
   ['default_5finitializer_3c_20example_20_3e',['default_initializer&lt; example &gt;',['../structVW_1_1default__initializer.html',1,'VW']]],
+  ['default_5freduction_5fstack_5fsetup',['default_reduction_stack_setup',['../structVW_1_1default__reduction__stack__setup.html',1,'VW']]],
   ['defaultstate',['DefaultState',['../classDefaultState.html',1,'']]],
   ['dense_5fiterator',['dense_iterator',['../classdense__iterator.html',1,'']]],
   ['dense_5fparameters',['dense_parameters',['../classdense__parameters.html',1,'']]],
