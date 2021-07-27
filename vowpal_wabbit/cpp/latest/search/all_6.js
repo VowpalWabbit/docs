@@ -93,7 +93,7 @@ var searchData=
   ['ft_5farr',['ft_arr',['../structINTERACTIONS_1_1feature__gen__data.html#a2ec14b399a0a0260c6d561e38b1d1ec0',1,'INTERACTIONS::feature_gen_data']]],
   ['ft_5foffset',['ft_offset',['../structflat__example.html#a0c98fc527c037d202d4e558b3518a10f',1,'flat_example::ft_offset()'],['../structexample__predict.html#a964a7741ec79edbb2e7e2298ffdd767a',1,'example_predict::ft_offset()']]],
   ['ftrl_2eh',['ftrl.h',['../ftrl_8h.html',1,'']]],
-  ['ftrl_5fsetup',['ftrl_setup',['../ftrl_8h.html#a1dcca0ade739c522fc7997bd3ac261b1',1,'ftrl.h']]],
+  ['ftrl_5fsetup',['ftrl_setup',['../ftrl_8h.html#a72e3882d092be3db019cb612b757b839',1,'ftrl.h']]],
   ['ftrs',['ftrs',['../structNamespace.html#af7140895e79fff354ad484f6c5fb463f',1,'Namespace']]],
   ['func',['func',['../structVW_1_1LEARNER_1_1func__data.html#a64f72ac97241336c7a04a58a6e808eb1',1,'VW::LEARNER::func_data']]],
   ['func_5fdata',['func_data',['../structVW_1_1LEARNER_1_1func__data.html',1,'VW::LEARNER']]],

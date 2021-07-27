@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['n',['n',['../structVW_1_1distributionally__robust_1_1Duals.html#ad72686b6b792efe744a034674dc09847',1,'VW::distributionally_robust::Duals::n()'],['../structExpReplay_1_1expreplay.html#a1303bcb5004ccc2cb6949480bdb43c11',1,'ExpReplay::expreplay::N()']]],
+  ['n',['N',['../structExpReplay_1_1expreplay.html#a1303bcb5004ccc2cb6949480bdb43c11',1,'ExpReplay::expreplay::N()'],['../structVW_1_1distributionally__robust_1_1Duals.html#ad72686b6b792efe744a034674dc09847',1,'VW::distributionally_robust::Duals::n()']]],
   ['name',['name',['../structdictionary__info.html#aafd5bfbc5290ad275067a8cf3397970a',1,'dictionary_info::name()'],['../structNamespace.html#a2344df6d1bc705fc8afa24b2c9c79f57',1,'Namespace::name()'],['../structBaseState.html#a675dcc2bdda01de5cde893e77a6116b1',1,'BaseState::name()'],['../structVW_1_1primitive__feature__space.html#a8f5b0342e8c1f8c6d6e5648d14894a59',1,'VW::primitive_feature_space::name()']]],
   ['named_5flabels',['named_labels',['../classVW_1_1named__labels.html',1,'VW']]],
   ['named_5flabels',['named_labels',['../classVW_1_1named__labels.html#af54e798bcd0812a93175a682f528c7b3',1,'VW::named_labels::named_labels(std::string label_list)'],['../classVW_1_1named__labels.html#a7ae0f4fd5b1c03bf1ab262b8f28bc819',1,'VW::named_labels::named_labels(const named_labels &amp;other)'],['../classVW_1_1named__labels.html#af0e51d1a22463fc7c3184fe83b04618c',1,'VW::named_labels::named_labels(named_labels &amp;&amp;other) noexcept=delete']]],
@@ -24,7 +24,7 @@ var searchData=
   ['new_5funused_5fexample',['new_unused_example',['../namespaceVW.html#ae49d60be8cfe85c0159d1af44f131789',1,'VW']]],
   ['nn_2eh',['nn.h',['../nn_8h.html',1,'']]],
   ['nn_5foutput_5fnamespace',['nn_output_namespace',['../constant_8h.html#add9fa018879554a58b54f0b39a5c750b',1,'constant.h']]],
-  ['nn_5fsetup',['nn_setup',['../nn_8h.html#a0c36763a5480afe18d3bec3f8baaa4a4',1,'nn.h']]],
+  ['nn_5fsetup',['nn_setup',['../nn_8h.html#ab81c8e137ace799313853ae75053830a',1,'nn.h']]],
   ['no_5fbias',['no_bias',['../structvw.html#ae181de61c3d4731d88bd89936132d1cd',1,'vw']]],
   ['no_5fcaching',['NO_CACHING',['../namespaceSearch.html#ac4845b2f404fb40ccda20dbbee8371ce',1,'Search']]],
   ['no_5fdaemon',['no_daemon',['../structvw.html#ad4840daf9a76c5776dd11da2efb47d82',1,'vw']]],
@@ -53,7 +53,7 @@ var searchData=
   ['noop_5fsave_5fload',['noop_save_load',['../namespaceVW_1_1LEARNER.html#abbaff2c8cf6f5b3ab801730c74b6e054',1,'VW::LEARNER']]],
   ['noop_5fsensitivity',['noop_sensitivity',['../namespaceVW_1_1LEARNER.html#a23877fd9c9757641d788ae73cf210914',1,'VW::LEARNER']]],
   ['noop_5fsensitivity_5fbase',['noop_sensitivity_base',['../namespaceVW_1_1LEARNER.html#a49d900481813f0f01e7f70e7803911b5',1,'VW::LEARNER']]],
-  ['noop_5fsetup',['noop_setup',['../noop_8h.html#afd20be6decd6e3b3be822ced37b126f6',1,'noop.h']]],
+  ['noop_5fsetup',['noop_setup',['../noop_8h.html#ad1aa4ff2d7dd30592a194500219ca917',1,'noop.h']]],
   ['normal_5fweights',['normal_weights',['../structvw.html#a8d95ff3814cbffbb2de2eccd4f19bdfc',1,'vw']]],
   ['normalized',['normalized',['../classparameters.html#a151823ac932181e2ec63a13461bacc17',1,'parameters']]],
   ['normalized_5fidx',['normalized_idx',['../structvw.html#ad7062a07e5af79d245edd2f3b68a525a',1,'vw']]],

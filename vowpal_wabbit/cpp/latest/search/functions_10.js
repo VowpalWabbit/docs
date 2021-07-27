@@ -25,7 +25,7 @@ var searchData=
   ['read_5fweights',['read_weights',['../classvw__slim_1_1model__parser.html#a04ebc770ef447e7dd251e30d71c750c2',1,'vw_slim::model_parser::read_weights(std::unique_ptr&lt; W &gt; &amp;weights, uint64_t weight_length)'],['../classvw__slim_1_1model__parser.html#af11176e2c8e1c95b7b535f7c9aaef09d',1,'vw_slim::model_parser::read_weights(std::unique_ptr&lt; W &gt; &amp;weights, uint32_t num_bits, uint32_t stride_shift)']]],
   ['reader',['reader',['../structVW_1_1io_1_1reader.html#a78c9e8ff184f30fd196da858d12ec7f2',1,'VW::io::reader::reader(bool is_resettable)'],['../structVW_1_1io_1_1reader.html#a99c523531ba57f6c0f0ad03c44d29f4c',1,'VW::io::reader::reader(reader &amp;other)=delete'],['../structVW_1_1io_1_1reader.html#a6a14b83e8e9ff6334197dc565503c78f',1,'VW::io::reader::reader(reader &amp;&amp;other)=delete']]],
   ['readto',['readto',['../classio__buf.html#ac82ca566a1b0ecf30fdb113e3e470652',1,'io_buf']]],
-  ['recall_5ftree_5fsetup',['recall_tree_setup',['../recall__tree_8h.html#a62c7371484587885aaad32b3dc713609',1,'recall_tree.h']]],
+  ['recall_5ftree_5fsetup',['recall_tree_setup',['../recall__tree_8h.html#a45973ce36a9b84ed92157752ca6571d0',1,'recall_tree.h']]],
   ['reclaim_5fobject',['reclaim_object',['../structVW_1_1moved__object__pool.html#ae1fd62e8760c4acd4c6b108ef8191fe4',1,'VW::moved_object_pool']]],
   ['recompute_5fduals',['recompute_duals',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#a954da9a25d14837d54af1fb1f5e7a72f',1,'VW::distributionally_robust::ChiSquared']]],
   ['recur_5fsensitivity',['recur_sensitivity',['../namespaceVW_1_1LEARNER.html#ab6e5c6e7bedf2db4bf91c3bc2b3527c9',1,'VW::LEARNER']]],

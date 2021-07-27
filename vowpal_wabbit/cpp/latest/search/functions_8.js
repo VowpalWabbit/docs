@@ -28,7 +28,7 @@ var searchData=
   ['int',['Int',['../structVWReaderHandler.html#acff99671bc9ef886b71cc00a09741d45',1,'VWReaderHandler']]],
   ['int64',['Int64',['../structVWReaderHandler.html#aee6696771d323ac1e6500738a027fffb',1,'VWReaderHandler']]],
   ['int_5fof_5fstring',['int_of_string',['../parse__primitives_8h.html#a0187acdae19e69c4ef85cb5eb7bb9fa0',1,'int_of_string(VW::string_view s, char *&amp;end):&#160;parse_primitives.h'],['../parse__primitives_8h.html#a87d4af59fea5bc25b64dd3c854ff4d25',1,'int_of_string(VW::string_view s):&#160;parse_primitives.h']]],
-  ['interact_5fsetup',['interact_setup',['../interact_8h.html#a92eed6fc1d56224a592f0be3f474580c',1,'interact.h']]],
+  ['interact_5fsetup',['interact_setup',['../interact_8h.html#a1d996ac70254ddd216cc37e175e36e33',1,'interact.h']]],
   ['interaction_5fvalue',['INTERACTION_VALUE',['../namespaceINTERACTIONS.html#a85d42969fe5fe2302e2017a180202ed7',1,'INTERACTIONS']]],
   ['internal_5fnode_5fcount',['internal_node_count',['../structVW_1_1cats__tree_1_1min__depth__binary__tree.html#a3b749cb53b4f7e4067e17435621933c5',1,'VW::cats_tree::min_depth_binary_tree::internal_node_count()'],['../structVW_1_1offset__tree_1_1min__depth__binary__tree.html#a319b16a275ccdc06fe6d0dc24fa0698e',1,'VW::offset_tree::min_depth_binary_tree::internal_node_count()']]],
   ['io_5fbuf',['io_buf',['../classio__buf.html#ae01bc5dd5cd7128faeff147ce34a1f36',1,'io_buf::io_buf()'],['../classio__buf.html#a0665faf40e41d643fc3aeda6915d7d9b',1,'io_buf::io_buf(io_buf &amp;other)=delete'],['../classio__buf.html#a05183ca2d42844f8e55a3e3334eba4fa',1,'io_buf::io_buf(io_buf &amp;&amp;other)=delete']]],

@@ -56,7 +56,7 @@ var searchData=
   ['int_5fmetrics_5flist',['int_metrics_list',['../structVW_1_1metric__sink.html#aeb1c11432996dfef7f62728e9074fec1',1,'VW::metric_sink']]],
   ['int_5fof_5fstring',['int_of_string',['../parse__primitives_8h.html#a0187acdae19e69c4ef85cb5eb7bb9fa0',1,'int_of_string(VW::string_view s, char *&amp;end):&#160;parse_primitives.h'],['../parse__primitives_8h.html#a87d4af59fea5bc25b64dd3c854ff4d25',1,'int_of_string(VW::string_view s):&#160;parse_primitives.h']]],
   ['interact_2eh',['interact.h',['../interact_8h.html',1,'']]],
-  ['interact_5fsetup',['interact_setup',['../interact_8h.html#a92eed6fc1d56224a592f0be3f474580c',1,'interact.h']]],
+  ['interact_5fsetup',['interact_setup',['../interact_8h.html#a1d996ac70254ddd216cc37e175e36e33',1,'interact.h']]],
   ['interaction_5fvalue',['INTERACTION_VALUE',['../namespaceINTERACTIONS.html#a85d42969fe5fe2302e2017a180202ed7',1,'INTERACTIONS']]],
   ['interactions',['INTERACTIONS',['../namespaceINTERACTIONS.html',1,'INTERACTIONS'],['../structexample__predict.html#afb676d8f3ba9052d93b865610e44bb90',1,'example_predict::interactions()'],['../structvw.html#a2faf990a8db6c15b4d80beaa68b7fee2',1,'vw::interactions()'],['../classSlotOutcomeList.html#a0fc1f14e08b16bdb49a5304f6e0d2baa',1,'SlotOutcomeList::interactions()']]],
   ['interactions_2eh',['interactions.h',['../interactions_8h.html',1,'']]],

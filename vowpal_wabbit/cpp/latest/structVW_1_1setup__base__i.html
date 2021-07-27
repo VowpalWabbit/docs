@@ -110,8 +110,14 @@ Inheritance diagram for VW::setup_base_i:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a255799fade5b6647897b60956bcef606"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceVW_1_1LEARNER.html#ab481a83a0a49d7b827babe725e135b20">VW::LEARNER::base_learner</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1setup__base__i.html#a255799fade5b6647897b60956bcef606">operator()</a> (<a class="el" href="structVW_1_1config_1_1options__i.html">VW::config::options_i</a> &amp;, <a class="el" href="structvw.html">vw</a> &amp;)=0</td></tr>
-<tr class="separator:a255799fade5b6647897b60956bcef606"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adac1363d3d7d0e3c3878af55418c1c41"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceVW_1_1LEARNER.html#ab481a83a0a49d7b827babe725e135b20">VW::LEARNER::base_learner</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1setup__base__i.html#adac1363d3d7d0e3c3878af55418c1c41">setup_base_learner</a> ()=0</td></tr>
+<tr class="separator:adac1363d3d7d0e3c3878af55418c1c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a30931eb3af0ddaa097792542b22701"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structVW_1_1config_1_1options__i.html">VW::config::options_i</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1setup__base__i.html#a8a30931eb3af0ddaa097792542b22701">get_options</a> ()=0</td></tr>
+<tr class="separator:a8a30931eb3af0ddaa097792542b22701"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab42b7808c9f3d0ab37a1fe6b4b3e8b73"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structvw.html">vw</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1setup__base__i.html#ab42b7808c9f3d0ab37a1fe6b4b3e8b73">get_all_pointer</a> ()=0</td></tr>
+<tr class="separator:ab42b7808c9f3d0ab37a1fe6b4b3e8b73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78c1bdca9878eaaee5e4cad9567a08df"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1setup__base__i.html#a78c1bdca9878eaaee5e4cad9567a08df">get_setupfn_name</a> (<a class="el" href="namespaceVW.html#a061b2a4fd546e526122acc8dc5a9dff8">reduction_setup_fn</a> setup)=0</td></tr>
+<tr class="separator:a78c1bdca9878eaaee5e4cad9567a08df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77470d2254f711c05ae417dc2d75ee03"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1setup__base__i.html#a77470d2254f711c05ae417dc2d75ee03">~setup_base_i</a> ()=default</td></tr>
 <tr class="separator:a77470d2254f711c05ae417dc2d75ee03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -140,7 +146,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a255799fade5b6647897b60956bcef606"></a>
+<a class="anchor" id="ab42b7808c9f3d0ab37a1fe6b4b3e8b73"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -148,21 +154,10 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="namespaceVW_1_1LEARNER.html#ab481a83a0a49d7b827babe725e135b20">VW::LEARNER::base_learner</a>* VW::setup_base_i::operator() </td>
+          <td class="memname">virtual <a class="el" href="structvw.html">vw</a>* VW::setup_base_i::get_all_pointer </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structVW_1_1config_1_1options__i.html">VW::config::options_i</a> &amp;&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structvw.html">vw</a> &amp;&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -172,7 +167,83 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="structVW_1_1default__reduction__stack__setup.html#a51e6c74bfdda29dfcd3683d9a5aa53bd">VW::default_reduction_stack_setup</a>, and <a class="el" href="structVW_1_1cached__learner.html#a00cb6805ce865b46d38d435357c1c688">VW::cached_learner</a>.</p>
+<p>Implemented in <a class="el" href="structVW_1_1cached__learner.html#ad2f47f11d5736fc89f92f4e49705c4f0">VW::cached_learner</a>, and <a class="el" href="structVW_1_1default__reduction__stack__setup.html#ad9a9af7992fe9cae6febf77555155894">VW::default_reduction_stack_setup</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8a30931eb3af0ddaa097792542b22701"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="structVW_1_1config_1_1options__i.html">VW::config::options_i</a>* VW::setup_base_i::get_options </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="structVW_1_1cached__learner.html#a55ae573432aceb5d894874fc0f5fc3bf">VW::cached_learner</a>, and <a class="el" href="structVW_1_1default__reduction__stack__setup.html#a282811a80175e781010df671961773d9">VW::default_reduction_stack_setup</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a78c1bdca9878eaaee5e4cad9567a08df"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string VW::setup_base_i::get_setupfn_name </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceVW.html#a061b2a4fd546e526122acc8dc5a9dff8">reduction_setup_fn</a>&#160;</td>
+          <td class="paramname"><em>setup</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="structVW_1_1cached__learner.html#ac60a805441842e5f29f5c9e1e8d60957">VW::cached_learner</a>, and <a class="el" href="structVW_1_1default__reduction__stack__setup.html#a7192322d7e4716e0e1e73bf95b15b30e">VW::default_reduction_stack_setup</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adac1363d3d7d0e3c3878af55418c1c41"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespaceVW_1_1LEARNER.html#ab481a83a0a49d7b827babe725e135b20">VW::LEARNER::base_learner</a>* VW::setup_base_i::setup_base_learner </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="structVW_1_1default__reduction__stack__setup.html#aa26f0f0b07a70884205807fe6b6868cb">VW::default_reduction_stack_setup</a>, and <a class="el" href="structVW_1_1cached__learner.html#ab77910560aacc8295f6a35b3a811ee3b">VW::cached_learner</a>.</p>
 
 </div>
 </div>
@@ -182,7 +253,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 27 2021 17:13:17 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 27 2021 19:16:46 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

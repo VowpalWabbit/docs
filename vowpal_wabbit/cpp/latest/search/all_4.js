@@ -35,7 +35,7 @@ var searchData=
   ['default_5flog',['default_log',['../structvw__dbg.html#a6c974ade8e99bfb1565c62d2f715b3e2',1,'vw_dbg']]],
   ['default_5fnamespace',['default_namespace',['../constant_8h.html#ac5f7a89af82daae29351dde7bc52cce4',1,'constant.h']]],
   ['default_5freduction_5fstack_5fsetup',['default_reduction_stack_setup',['../structVW_1_1default__reduction__stack__setup.html',1,'VW']]],
-  ['default_5freduction_5fstack_5fsetup',['default_reduction_stack_setup',['../structVW_1_1default__reduction__stack__setup.html#a4292ec5246e8e519d61640dccaa59ac6',1,'VW::default_reduction_stack_setup']]],
+  ['default_5freduction_5fstack_5fsetup',['default_reduction_stack_setup',['../structVW_1_1default__reduction__stack__setup.html#ad42c85a02d238467d2fc54a88d3ee9cb',1,'VW::default_reduction_stack_setup']]],
   ['default_5fstate',['default_state',['../structContext.html#a0e0a976e8e6bf9b15f095758b5094521',1,'Context']]],
   ['default_5ftolerance',['DEFAULT_TOLERANCE',['../vw__math_8h.html#a0e355e0dcb761f1b89524e0e77fd14bd',1,'vw_math.h']]],
   ['default_5fvalue',['default_value',['../structVW_1_1config_1_1option__builder.html#abd7158382bc9312da5c8d0caa7cd63da',1,'VW::config::option_builder::default_value()'],['../structVW_1_1config_1_1typed__option.html#ae6fc37d4a80f2b6bca47ac3f45c432fb',1,'VW::config::typed_option::default_value()']]],

@@ -7,7 +7,7 @@ var searchData=
   ['labelobjectstate',['LabelObjectState',['../classLabelObjectState.html#a7ae7603f3d305b4915dbc431acf58b15',1,'LabelObjectState']]],
   ['labelsinglepropertystate',['LabelSinglePropertyState',['../structLabelSinglePropertyState.html#afbe53d47d34646ef3502eea9cf8b15b6',1,'LabelSinglePropertyState']]],
   ['labelstate',['LabelState',['../structLabelState.html#a60dce1017e9ab90b4d658b528ddeba05',1,'LabelState']]],
-  ['lda_5fsetup',['lda_setup',['../lda__core_8h.html#ad531e78c35e3ac471b7a760d3eeab35a',1,'lda_core.h']]],
+  ['lda_5fsetup',['lda_setup',['../lda__core_8h.html#a8259ea449d6f9b77ca37c5d67cfc57d3',1,'lda_core.h']]],
   ['leaf_5fnode_5fcount',['leaf_node_count',['../structVW_1_1cats__tree_1_1min__depth__binary__tree.html#ac2b008d7a6d0c9271017b18d603deab1',1,'VW::cats_tree::min_depth_binary_tree::leaf_node_count()'],['../structVW_1_1offset__tree_1_1min__depth__binary__tree.html#a9830bb424d1074e51a0d3fb0eccb9975',1,'VW::offset_tree::min_depth_binary_tree::leaf_node_count()']]],
   ['learn',['learn',['../structVW_1_1continuous__action_1_1cats_1_1cats.html#a11ec827e725ea23aa01bd6dc881d63e4',1,'VW::continuous_action::cats::cats::learn()'],['../structVW_1_1cats__tree_1_1cats__tree.html#aaaccced6be1918cbdc90109513eb6bcf',1,'VW::cats_tree::cats_tree::learn()'],['../structVW_1_1cb__explore__adf_1_1cb__explore__adf__base.html#a875201d16d873a1b3106cc67e9d40066',1,'VW::cb_explore_adf::cb_explore_adf_base::learn()'],['../structvw.html#adb9d40ecb21926593d311fc6a6ec5f29',1,'vw::learn(example &amp;)'],['../structvw.html#ae1057acfc5cb2ee3f9bc017307e8fd88',1,'vw::learn(multi_ex &amp;)'],['../structVW_1_1LEARNER_1_1learner.html#a5c925112a00430ff4390f3bb53d7de76',1,'VW::LEARNER::learner::learn()'],['../structVW_1_1offset__tree_1_1offset__tree.html#aa59acc3be61ef7f0466aeacfa0fd89e2',1,'VW::offset_tree::offset_tree::learn()'],['../structVW_1_1pmf__to__pdf_1_1reduction.html#a6e537027d7d92fcc0c6d21ad2ebfb710',1,'VW::pmf_to_pdf::reduction::learn()'],['../structVW_1_1slates_1_1slates__data.html#afb8eec65ca957af31bf72bb4fdc76901',1,'VW::slates::slates_data::learn()'],['../namespaceExpReplay.html#ace602815200b559f1ab023c689418836',1,'ExpReplay::learn()']]],
   ['learner_5fcount',['learner_count',['../structVW_1_1cats__tree_1_1cats__tree.html#aff8e488d28fb651e1a0ba519b0f7e10f',1,'VW::cats_tree::cats_tree::learner_count()'],['../structVW_1_1offset__tree_1_1offset__tree.html#a8773e8d0e2b23168dfb21eceea0f8dbd',1,'VW::offset_tree::offset_tree::learner_count()']]],
@@ -21,11 +21,11 @@ var searchData=
   ['log_5fcritical',['log_critical',['../namespaceVW_1_1io_1_1logger.html#a12fab5934b711ff16b5397af2e4a892b',1,'VW::io::logger']]],
   ['log_5ferror',['log_error',['../namespaceVW_1_1io_1_1logger.html#a953bee84f740fda7e599ded01894ac0f',1,'VW::io::logger']]],
   ['log_5finfo',['log_info',['../namespaceVW_1_1io_1_1logger.html#a6cf5bf711f1ac0495df4e1fdbae74287',1,'VW::io::logger']]],
-  ['log_5fmulti_5fsetup',['log_multi_setup',['../log__multi_8h.html#a0005fafa182f4d02ab68481f90d57209',1,'log_multi.h']]],
+  ['log_5fmulti_5fsetup',['log_multi_setup',['../log__multi_8h.html#a47137a0deda50451a25ddee454e5f71c',1,'log_multi.h']]],
   ['log_5fset_5flevel',['log_set_level',['../namespaceVW_1_1io_1_1logger.html#a719b1edcdc18610131e44d09b8241f6c',1,'VW::io::logger']]],
   ['log_5fsummary',['log_summary',['../namespaceVW_1_1io_1_1logger.html#ac047f70212d20d729cbc8f22848f5f64',1,'VW::io::logger']]],
   ['log_5fwarn',['log_warn',['../namespaceVW_1_1io_1_1logger.html#af83f918c15f601ab9f545fcbfe044136',1,'VW::io::logger']]],
   ['loss',['loss',['../structSearch_1_1search.html#ac043f03704a4b004290936cb1dc6822f',1,'Search::search']]],
-  ['lrq_5fsetup',['lrq_setup',['../lrq_8h.html#a11d83b37d7710a7ee5dc607e126e9a3c',1,'lrq.h']]],
-  ['lrqfa_5fsetup',['lrqfa_setup',['../lrqfa_8h.html#a0041addf23ccc97ff5a256171efaca70',1,'lrqfa.h']]]
+  ['lrq_5fsetup',['lrq_setup',['../lrq_8h.html#a730e8c0c9e52be5168dd121d34736048',1,'lrq.h']]],
+  ['lrqfa_5fsetup',['lrqfa_setup',['../lrqfa_8h.html#ab19de8823793ac56377c7d8bd5b8eb83',1,'lrqfa.h']]]
 ];

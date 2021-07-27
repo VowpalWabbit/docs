@@ -45,5 +45,5 @@ var searchData=
   ['free_5fparser',['free_parser',['../parser_8h.html#a726349034276fd9ac5541976542f84b5',1,'parser.h']]],
   ['free_5fspace_5fnames',['free_space_names',['../structfeatures.html#a1625eb8137587988836b7c8835c5ef78',1,'features']]],
   ['from_5fstring',['from_string',['../structVW_1_1version__struct.html#a109fb67dd78a0ed981615e40e8f5e6bf',1,'VW::version_struct']]],
-  ['ftrl_5fsetup',['ftrl_setup',['../ftrl_8h.html#a1dcca0ade739c522fc7997bd3ac261b1',1,'ftrl.h']]]
+  ['ftrl_5fsetup',['ftrl_setup',['../ftrl_8h.html#a72e3882d092be3db019cb612b757b839',1,'ftrl.h']]]
 ];
