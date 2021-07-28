@@ -24,7 +24,7 @@ var searchData=
   ['parse_5fslates_5fexample_5fdsjson',['parse_slates_example_dsjson',['../parse__slates__example__json_8h.html#ae97ce4197a1169c07d4cf447e25c4612',1,'parse_slates_example_json.h']]],
   ['parse_5fslates_5fexample_5fjson',['parse_slates_example_json',['../parse__slates__example__json_8h.html#aee4414ee6465d717bcdb83320e2e8df9',1,'parse_slates_example_json.h']]],
   ['parse_5fslates_5fexample_5fjson_2eh',['parse_slates_example_json.h',['../parse__slates__example__json_8h.html',1,'']]],
-  ['parse_5fsources',['parse_sources',['../parse__args_8h.html#a18d1a01f8740ee2f82de7eb68c31f5b9',1,'parse_args.h']]],
+  ['parse_5fsources',['parse_sources',['../parse__args_8h.html#a75d83ec83c4678922550167e35d52fab',1,'parse_args.h']]],
   ['parse_5fthread',['parse_thread',['../structvw.html#ab418994767bf1cd59751236abb690ccb',1,'vw']]],
   ['parsefloat',['parseFloat',['../parse__primitives_8h.html#a3a87cae297b0d0e4d62cd1c7128ad460',1,'parse_primitives.h']]],
   ['parser',['parser',['../classVW_1_1parsers_1_1flatbuffer_1_1parser.html',1,'VW::parsers::flatbuffer']]],
