@@ -8,7 +8,7 @@ var searchData=
   ['cache_5flabel',['cache_label',['../structlabel__parser.html#afa73ee8f3fa09361373277f57dd03d3a',1,'label_parser::cache_label()'],['../namespaceCB.html#a68d67c7f5301de9f3ca35d3e58c3fa94',1,'CB::cache_label()'],['../namespaceCCB.html#a1eb4843badbf4cc3ebc62da94db58ea8',1,'CCB::cache_label()'],['../namespaceVW_1_1slates.html#a7122b0230db21b0dfdf8265fa71355b8',1,'VW::slates::cache_label()']]],
   ['cache_5flabel_5fadditional_5ffields',['cache_label_additional_fields',['../namespaceCB.html#a4aaaad481a9436890af96d68205a2de0',1,'CB']]],
   ['cache_5ftag',['cache_tag',['../cache_8h.html#a240768c48f05af593153264363e1019d',1,'cache.h']]],
-  ['cached_5flearner',['cached_learner',['../structVW_1_1cached__learner.html#aafd176494e5154aa4b16e91d05249be5',1,'VW::cached_learner']]],
+  ['cached_5flearner',['cached_learner',['../structVW_1_1cached__learner.html#a77469cf8d15648287247e3d8eb623b3f',1,'VW::cached_learner::cached_learner(VW::LEARNER::base_learner *learner=nullptr)'],['../structVW_1_1cached__learner.html#aafd176494e5154aa4b16e91d05249be5',1,'VW::cached_learner::cached_learner(vw &amp;all, VW::config::options_i &amp;options, VW::LEARNER::base_learner *learner=nullptr)']]],
   ['cached_5flearner',['cached_learner',['../structVW_1_1cached__learner.html',1,'VW']]],
   ['cached_5flearner_2eh',['cached_learner.h',['../cached__learner_8h.html',1,'']]],
   ['calculate_5ftotal_5fsum_5ffeatures_5fsquared',['calculate_total_sum_features_squared',['../example_8h.html#a7e51cf08517951ccb1600f1264b5d8c1',1,'example.h']]],

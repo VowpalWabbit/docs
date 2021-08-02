@@ -9,6 +9,7 @@ var searchData=
   ['ready_5fparsed_5fexamples',['ready_parsed_examples',['../structparser.html#ae0ff2de4eeab90f8fff9fd2da5966ffc',1,'parser']]],
   ['redefine',['redefine',['../structvw.html#a7bd371021399631bc719da959b490591',1,'vw']]],
   ['redefine_5fsome',['redefine_some',['../structvw.html#a457c47efe1d9caf4389a6c09d6767194',1,'vw']]],
+  ['reduction_5fstack',['reduction_stack',['../structVW_1_1default__reduction__stack__setup.html#a9098946999eb56e719a5ab3253b4d906',1,'VW::default_reduction_stack_setup']]],
   ['reg_5fmode',['reg_mode',['../structvw.html#a0acc9b019a318a6cd71a7dd0e96a8a61',1,'vw']]],
   ['regression_5fdata_5f1_5fmodel',['regression_data_1_model',['../data_8h.html#aaf9b6c9158454809c6e1dd2bd5d525be',1,'data.h']]],
   ['regression_5fdata_5f1_5fmodel_5flen',['regression_data_1_model_len',['../data_8h.html#ada0d3a667dc0ff561a34851d9fe3fec1',1,'data.h']]],

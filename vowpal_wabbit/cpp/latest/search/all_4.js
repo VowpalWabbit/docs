@@ -35,7 +35,7 @@ var searchData=
   ['default_5flog',['default_log',['../structvw__dbg.html#a6c974ade8e99bfb1565c62d2f715b3e2',1,'vw_dbg']]],
   ['default_5fnamespace',['default_namespace',['../constant_8h.html#ac5f7a89af82daae29351dde7bc52cce4',1,'constant.h']]],
   ['default_5freduction_5fstack_5fsetup',['default_reduction_stack_setup',['../structVW_1_1default__reduction__stack__setup.html',1,'VW']]],
-  ['default_5freduction_5fstack_5fsetup',['default_reduction_stack_setup',['../structVW_1_1default__reduction__stack__setup.html#ad42c85a02d238467d2fc54a88d3ee9cb',1,'VW::default_reduction_stack_setup']]],
+  ['default_5freduction_5fstack_5fsetup',['default_reduction_stack_setup',['../structVW_1_1default__reduction__stack__setup.html#ad42c85a02d238467d2fc54a88d3ee9cb',1,'VW::default_reduction_stack_setup::default_reduction_stack_setup(vw &amp;all, VW::config::options_i &amp;options)'],['../structVW_1_1default__reduction__stack__setup.html#a698f670053e583466b9ab08ac15efb27',1,'VW::default_reduction_stack_setup::default_reduction_stack_setup()']]],
   ['default_5fstate',['default_state',['../structContext.html#a0e0a976e8e6bf9b15f095758b5094521',1,'Context']]],
   ['default_5ftolerance',['DEFAULT_TOLERANCE',['../vw__math_8h.html#a0e355e0dcb761f1b89524e0e77fd14bd',1,'vw_math.h']]],
   ['default_5fvalue',['default_value',['../structVW_1_1config_1_1option__builder.html#abd7158382bc9312da5c8d0caa7cd63da',1,'VW::config::option_builder::default_value()'],['../structVW_1_1config_1_1typed__option.html#ae6fc37d4a80f2b6bca47ac3f45c432fb',1,'VW::config::typed_option::default_value()']]],
@@ -44,6 +44,7 @@ var searchData=
   ['del_5fexample_5fnamespace',['del_example_namespace',['../namespaceLabelDict.html#a4cb2645ae2bd2e2e37afc56dc947006e',1,'LabelDict']]],
   ['del_5fexample_5fnamespace_5ffrom_5fmemory',['del_example_namespace_from_memory',['../namespaceLabelDict.html#adf7e6204a1640a31ddb13d2f66105494',1,'LabelDict']]],
   ['del_5fexample_5fnamespaces_5ffrom_5fexample',['del_example_namespaces_from_example',['../namespaceLabelDict.html#a3b388d6797312cceae88a56f21ae4513',1,'LabelDict']]],
+  ['delayed_5fstate_5fattach',['delayed_state_attach',['../structVW_1_1cached__learner.html#a7980a47a489b76b66f51cd68cd380257',1,'VW::cached_learner::delayed_state_attach()'],['../structVW_1_1default__reduction__stack__setup.html#a124ca316f565fdde946750f21fa0babd',1,'VW::default_reduction_stack_setup::delayed_state_attach()'],['../structVW_1_1setup__base__i.html#a8208f79e8bfe63f63ea7a1a5d7d1f871',1,'VW::setup_base_i::delayed_state_attach()']]],
   ['delete_5fextra_5fdata',['delete_extra_data',['../structHookTask_1_1task__data.html#a61360c0115f8a58e64b432e90c48405a',1,'HookTask::task_data']]],
   ['delete_5fprediction',['delete_prediction',['../namespaceVW.html#ac40013c94c682c8e00855b3b1f1859a7',1,'VW']]],
   ['delete_5frun_5fobject',['delete_run_object',['../structHookTask_1_1task__data.html#afc26800c1d71af93e60d6a2f6a311313',1,'HookTask::task_data']]],
@@ -69,8 +70,8 @@ var searchData=
   ['double',['Double',['../structVWReaderHandler.html#a9b1d990eb0240611a2f3ccce3afaa963',1,'VWReaderHandler']]],
   ['dsjson',['dsjson',['../structinput__options.html#adbd9d55bfe27f7c844591e5840660ed8',1,'input_options']]],
   ['dsjson_5fmetrics',['dsjson_metrics',['../structdsjson__metrics.html',1,'']]],
-  ['duals',['Duals',['../structVW_1_1distributionally__robust_1_1Duals.html',1,'VW::distributionally_robust']]],
   ['duals',['Duals',['../structVW_1_1distributionally__robust_1_1Duals.html#ab9b646730bc1ce5699d89e7e2bc42c06',1,'VW::distributionally_robust::Duals::Duals()'],['../structVW_1_1distributionally__robust_1_1Duals.html#adaabb8969d2a11a78804d49c51deabcd',1,'VW::distributionally_robust::Duals::Duals(bool unbounded, double kappa, double gamma, double beta, double n)']]],
+  ['duals',['Duals',['../structVW_1_1distributionally__robust_1_1Duals.html',1,'VW::distributionally_robust']]],
   ['dummy_5ffunc',['dummy_func',['../namespaceGD.html#a9a733cab6079e5f28fb3773aa43bea24',1,'GD']]],
   ['dump_5finterval',['dump_interval',['../structshared__data.html#acc14d5e78772dd39829a82e4df2912d7',1,'shared_data']]]
 ];
