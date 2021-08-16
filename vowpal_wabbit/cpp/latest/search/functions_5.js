@@ -3,6 +3,7 @@ var searchData=
   ['factorial',['factorial',['../namespaceVW_1_1math.html#a36fabad29dd6a60b30820b0dd1c119da',1,'VW::math']]],
   ['fast_5fpow10',['fast_pow10',['../namespaceVW.html#a1c2be07eaaeaffca808d8d4106437a00',1,'VW']]],
   ['feature',['feature',['../structfeature.html#a67f5aeaea85ac93019524af7e2cc8925',1,'feature::feature()=default'],['../structfeature.html#a15ba23cd8a38d89fab9fdc17ca9f8dee',1,'feature::feature(float _x, uint64_t _index)'],['../structfeature.html#a3953a8a8732281c7d9a3f7125ed02630',1,'feature::feature(const feature &amp;)=default'],['../structfeature.html#a68e494ef5a0658849ddd93164e37a395',1,'feature::feature(feature &amp;&amp;)=default']]],
+  ['feature_5fgen_5fdata',['feature_gen_data',['../structINTERACTIONS_1_1feature__gen__data.html#af40383c89fec1d2167b79849bf87769f',1,'INTERACTIONS::feature_gen_data']]],
   ['feature_5findex_5fnum_5fbits',['feature_index_num_bits',['../classvw__slim_1_1vw__predict.html#a319098f444f533aafe6add9c9a0ac0de',1,'vw_slim::vw_predict']]],
   ['feature_5foffset_5fguard',['feature_offset_guard',['../classvw__slim_1_1feature__offset__guard.html#a43b29c20a39a0cd32faab93716667f68',1,'vw_slim::feature_offset_guard']]],
   ['feature_5fpush_5fback',['feature_push_back',['../classvw__slim_1_1namespace__copy__guard.html#ab181e0938496d88d912485e3d0e183aa',1,'vw_slim::namespace_copy_guard']]],

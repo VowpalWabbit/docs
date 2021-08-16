@@ -85,6 +85,7 @@ var searchData=
   ['cubic_5fconstant',['cubic_constant',['../constant_8h.html#a35e3ed020df3b2ca3e41057955905246',1,'constant.h']]],
   ['cubic_5fconstant2',['cubic_constant2',['../constant_8h.html#a834d38a058ed07e44f53e20e232c82aa',1,'constant.h']]],
   ['current',['current',['../classio__buf.html#af3bba98bc702c9de0e6d29ddd780a34f',1,'io_buf']]],
+  ['current_5fit',['current_it',['../structINTERACTIONS_1_1feature__gen__data.html#a5802c147862db9d8aca5e72fe7be8abb',1,'INTERACTIONS::feature_gen_data']]],
   ['current_5fmaster',['current_master',['../structnode__socks.html#a8cad0619d240dff1372e89eedb2211ff',1,'node_socks']]],
   ['current_5fpass',['current_pass',['../structvw.html#a1f68b6894ba36213ed87a7e2a68d5d4c',1,'vw']]],
   ['current_5fstate',['current_state',['../structContext.html#a552c99987bee5a1506c47eed936466dd',1,'Context']]],

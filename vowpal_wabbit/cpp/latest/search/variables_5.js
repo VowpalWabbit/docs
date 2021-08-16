@@ -6,6 +6,7 @@ var searchData=
   ['empty',['empty',['../structpolylabel.html#a6d811b312990cfca1ccd76f553a89214',1,'polylabel']]],
   ['empty_5faudit_5fstrings',['EMPTY_AUDIT_STRINGS',['../interactions__predict_8h.html#a15fb23be401cf2a337ab90c20f3ec80c',1,'interactions_predict.h']]],
   ['emptylines_5fseparate_5fexamples',['emptylines_separate_examples',['../structparser.html#a751fa0c146800b9ab19e9db245d16994',1,'parser']]],
+  ['end_5fit',['end_it',['../structINTERACTIONS_1_1feature__gen__data.html#a2294a786f788b6fd23517222aad41e79',1,'INTERACTIONS::feature_gen_data']]],
   ['end_5fparsed_5fexamples',['end_parsed_examples',['../structparser.html#a937aa6babf6854343eafa7566d34e031',1,'parser']]],
   ['end_5fpass',['end_pass',['../structexample.html#aed100c9f43cef70f89c20dc5fdd30a12',1,'example']]],
   ['eta',['eta',['../structvw.html#a939cbdaf20c78bfeabfddbf57c9d8250',1,'vw']]],

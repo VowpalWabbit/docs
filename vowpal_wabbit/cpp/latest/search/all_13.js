@@ -60,7 +60,7 @@ var searchData=
   ['seed_5fvw_5fmodel',['seed_vw_model',['../namespaceVW.html#a0ee50bbc01fd5f36615ac6d988c94da8',1,'VW']]],
   ['seeded',['seeded',['../classsparse__parameters.html#a0bcd82f1fcc037cf7227e6df012c8eeb',1,'sparse_parameters::seeded()'],['../classparameters.html#ad7f546ea9478466eb12f4f6769afe99b',1,'parameters::seeded()'],['../classdense__parameters.html#ab9fd553c77187cf19372056b83e6ccf5',1,'dense_parameters::seeded()']]],
   ['segment',['segment',['../classArrayToPdfState.html#a90a676dd3c2fef026dfa3c4748501f33',1,'ArrayToPdfState']]],
-  ['self_5finteraction',['self_interaction',['../structINTERACTIONS_1_1feature__gen__data.html#aac086bebc701873e4bc2dd9e497a22d7',1,'INTERACTIONS::feature_gen_data']]],
+  ['self_5finteraction',['self_interaction',['../structINTERACTIONS_1_1feature__gen__data.html#a9d489e35f7b4ba4f306a540c2877e9d7',1,'INTERACTIONS::feature_gen_data']]],
   ['sender_2eh',['sender.h',['../sender_8h.html',1,'']]],
   ['sender_5fsetup',['sender_setup',['../sender_8h.html#aa96487cada103cbc79addeb519009c21',1,'sender.h']]],
   ['sensitivity',['sensitivity',['../structVW_1_1LEARNER_1_1learner.html#aed129d0c66e093ff28c4252fde644744',1,'VW::LEARNER::learner']]],
