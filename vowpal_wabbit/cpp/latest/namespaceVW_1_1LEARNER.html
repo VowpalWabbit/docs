@@ -224,6 +224,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a5c6c1c245d2d9b2d5332bdc40c630815"><td class="memTemplParams" colspan="2">template&lt;class DataT , class ExampleT &gt; </td></tr>
 <tr class="memitem:a5c6c1c245d2d9b2d5332bdc40c630815"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structVW_1_1LEARNER_1_1base__learner__builder.html">base_learner_builder</a>&lt; DataT, ExampleT &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1LEARNER.html#a5c6c1c245d2d9b2d5332bdc40c630815">make_base_learner</a> (std::unique_ptr&lt; DataT &gt; &amp;&amp;data, void(*learn_fn)(DataT &amp;, <a class="el" href="namespaceVW_1_1LEARNER.html#ab481a83a0a49d7b827babe725e135b20">base_learner</a> &amp;, ExampleT &amp;), void(*predict_fn)(DataT &amp;, <a class="el" href="namespaceVW_1_1LEARNER.html#ab481a83a0a49d7b827babe725e135b20">base_learner</a> &amp;, ExampleT &amp;), const std::string &amp;name, <a class="el" href="learner_8h.html#a5514b4a9448315c23ec344ca2d139e24">prediction_type_t</a> pred_type, <a class="el" href="label__parser_8h.html#ac55dd8dc7400242f299d4b6f245f8acd">label_type_t</a> label_type)</td></tr>
 <tr class="separator:a5c6c1c245d2d9b2d5332bdc40c630815"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb98c90c16a4aee32d9ac7bc68fecaef"><td class="memTemplParams" colspan="2">template&lt;class ExampleT &gt; </td></tr>
+<tr class="memitem:adb98c90c16a4aee32d9ac7bc68fecaef"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structVW_1_1LEARNER_1_1base__learner__builder.html">base_learner_builder</a>&lt; char, ExampleT &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1LEARNER.html#adb98c90c16a4aee32d9ac7bc68fecaef">make_no_data_base_learner</a> (void(*learn_fn)(char &amp;, <a class="el" href="namespaceVW_1_1LEARNER.html#ab481a83a0a49d7b827babe725e135b20">base_learner</a> &amp;, ExampleT &amp;), void(*predict_fn)(char &amp;, <a class="el" href="namespaceVW_1_1LEARNER.html#ab481a83a0a49d7b827babe725e135b20">base_learner</a> &amp;, ExampleT &amp;), const std::string &amp;name, <a class="el" href="learner_8h.html#a5514b4a9448315c23ec344ca2d139e24">prediction_type_t</a> pred_type, <a class="el" href="label__parser_8h.html#ac55dd8dc7400242f299d4b6f245f8acd">label_type_t</a> label_type)</td></tr>
+<tr class="separator:adb98c90c16a4aee32d9ac7bc68fecaef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Contains the <a class="el" href="structVW_1_1LEARNER_1_1learner.html" title="Defines the interface for a learning algorithm. ">VW::LEARNER::learner</a> object and utilities for interacting with it. </p>
@@ -1219,6 +1222,52 @@ template&lt;class DataT , class ExampleT &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="adb98c90c16a4aee32d9ac7bc68fecaef"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class ExampleT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structVW_1_1LEARNER_1_1base__learner__builder.html">base_learner_builder</a>&lt;char, ExampleT&gt; VW::LEARNER::make_no_data_base_learner </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(char &amp;, <a class="el" href="namespaceVW_1_1LEARNER.html#ab481a83a0a49d7b827babe725e135b20">base_learner</a> &amp;, ExampleT &amp;)&#160;</td>
+          <td class="paramname"><em>learn_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(char &amp;, <a class="el" href="namespaceVW_1_1LEARNER.html#ab481a83a0a49d7b827babe725e135b20">base_learner</a> &amp;, ExampleT &amp;)&#160;</td>
+          <td class="paramname"><em>predict_fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="learner_8h.html#a5514b4a9448315c23ec344ca2d139e24">prediction_type_t</a>&#160;</td>
+          <td class="paramname"><em>pred_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="label__parser_8h.html#ac55dd8dc7400242f299d4b6f245f8acd">label_type_t</a>&#160;</td>
+          <td class="paramname"><em>label_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a252cb604083a65666b1bccb0529b8924"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1598,7 +1647,7 @@ template&lt;bool is_learn&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 16 2021 23:57:31 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 17 2021 00:46:13 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
