@@ -40,7 +40,7 @@ var searchData=
   ['merand48_5fboxmuller',['merand48_boxmuller',['../rand48_8h.html#a1a5d99f1fed8adf3248a30cae6b13437',1,'rand48.h']]],
   ['merand48_5fnoadvance',['merand48_noadvance',['../rand48_8h.html#a25a35c4d653d47b644ce40f0437f8101',1,'rand48.h']]],
   ['merge_5foptions_5ffrom_5fheader_5fstrings',['merge_options_from_header_strings',['../parse__args_8h.html#aba34d846bf56121fdebc9aec399c993e',1,'parse_args.h']]],
-  ['metatask_5fdata',['metatask_data',['../structSearch_1_1search.html#a2614275853e5bf5265c8d2ddf59e9f6e',1,'Search::search']]],
+  ['metatask_5fdata',['metatask_data',['../structSearch_1_1search.html#abb2ad964ac4c41bb6649da3549a276c9',1,'Search::search']]],
   ['metatask_5fname',['metatask_name',['../structSearch_1_1search.html#a5555842a7681f12739d61635faf89c53',1,'Search::search::metatask_name()'],['../structSearch_1_1search__metatask.html#aecf1da2f6b5b8598d0e285d488f71456',1,'Search::search_metatask::metatask_name()']]],
   ['metric_5flabeled',['metric_labeled',['../structVW_1_1cb__explore__adf_1_1cb__explore__metrics.html#a5bd2c1ef6c7469581ca2f90f4ace2db0',1,'VW::cb_explore_adf::cb_explore_metrics']]],
   ['metric_5fpredict_5fin_5flearn',['metric_predict_in_learn',['../structVW_1_1cb__explore__adf_1_1cb__explore__metrics.html#afcc8e7a3780f653b74f1fcad0e1b8507',1,'VW::cb_explore_adf::cb_explore_metrics']]],

@@ -95,7 +95,5 @@ var searchData=
   ['expreplay',['ExpReplay',['../namespaceExpReplay.html',1,'']]],
   ['expreplay',['expreplay',['../structExpReplay_1_1expreplay.html',1,'ExpReplay']]],
   ['expreplay_2eh',['expreplay.h',['../expreplay_8h.html',1,'']]],
-  ['expreplay_5fsetup',['expreplay_setup',['../namespaceExpReplay.html#a28b99881a0718c6b24a68c3a9870e40c',1,'ExpReplay']]],
-  ['extra_5fdata',['extra_data',['../structHookTask_1_1task__data.html#a482c1deedfb74eca60aa155253387729',1,'HookTask::task_data']]],
-  ['extra_5fdata2',['extra_data2',['../structHookTask_1_1task__data.html#aa3a063a99810936263c275086456b2e9',1,'HookTask::task_data']]]
+  ['expreplay_5fsetup',['expreplay_setup',['../namespaceExpReplay.html#a28b99881a0718c6b24a68c3a9870e40c',1,'ExpReplay']]]
 ];

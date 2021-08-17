@@ -18,7 +18,7 @@ var searchData=
   ['max_5flimit',['max_limit',['../namespaceVW_1_1io_1_1logger_1_1detail.html#a4bab62b1f7586e0fadcbc279aeea797f',1,'VW::io::logger::detail']]],
   ['max_5fvalue',['max_value',['../structVW_1_1continuous__action_1_1cats_1_1cats.html#aba3ff1bb74463146e9e1605e652a63b1',1,'VW::continuous_action::cats::cats::max_value()'],['../structVW_1_1pmf__to__pdf_1_1reduction.html#a0cebd3746d3b673682ac942037357be5',1,'VW::pmf_to_pdf::reduction::max_value()']]],
   ['mc_5flabel',['mc_label',['../namespaceMULTICLASS.html#aac01d238b01e5f0cc20bb8c2fb5eba11',1,'MULTICLASS']]],
-  ['metatask_5fdata',['metatask_data',['../structSearch_1_1search.html#a2614275853e5bf5265c8d2ddf59e9f6e',1,'Search::search']]],
+  ['metatask_5fdata',['metatask_data',['../structSearch_1_1search.html#abb2ad964ac4c41bb6649da3549a276c9',1,'Search::search']]],
   ['metatask_5fname',['metatask_name',['../structSearch_1_1search.html#a5555842a7681f12739d61635faf89c53',1,'Search::search::metatask_name()'],['../structSearch_1_1search__metatask.html#aecf1da2f6b5b8598d0e285d488f71456',1,'Search::search_metatask::metatask_name()']]],
   ['metric_5flabeled',['metric_labeled',['../structVW_1_1cb__explore__adf_1_1cb__explore__metrics.html#a5bd2c1ef6c7469581ca2f90f4ace2db0',1,'VW::cb_explore_adf::cb_explore_metrics']]],
   ['metric_5fpredict_5fin_5flearn',['metric_predict_in_learn',['../structVW_1_1cb__explore__adf_1_1cb__explore__metrics.html#afcc8e7a3780f653b74f1fcad0e1b8507',1,'VW::cb_explore_adf::cb_explore_metrics']]],
