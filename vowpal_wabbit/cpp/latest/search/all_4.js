@@ -21,6 +21,7 @@ var searchData=
   ['decisionserviceinteraction',['DecisionServiceInteraction',['../structDecisionServiceInteraction.html',1,'']]],
   ['decisionservicestate',['DecisionServiceState',['../classDecisionServiceState.html',1,'DecisionServiceState&lt; audit &gt;'],['../classDecisionServiceState.html#a46369311924aed5584e968d2ac6ef603',1,'DecisionServiceState::DecisionServiceState()']]],
   ['declare_5fmetatask',['DECLARE_METATASK',['../search__meta_8h.html#aa9b72618a93bed688124de4212d654bd',1,'search_meta.h']]],
+  ['decode_5finline_5fhex',['decode_inline_hex',['../namespaceVW.html#a35a3b0811086c2b3119c99660075077d',1,'VW']]],
   ['decrement_5foffset',['decrement_offset',['../namespaceVW_1_1LEARNER.html#ae5f075f138c4ad98ddd3ef5bfce07091',1,'VW::LEARNER::decrement_offset(example &amp;ex, const size_t increment, const size_t i)'],['../namespaceVW_1_1LEARNER.html#a6516bc7edeaaa0843e216034562217f9',1,'VW::LEARNER::decrement_offset(multi_ex &amp;ec_seq, const size_t increment, const size_t i)']]],
   ['dedup_5fexamples',['dedup_examples',['../structContext.html#af45375bccfe1e0725d50a5d2dc208833',1,'Context']]],
   ['deep_5fcopy_5ffrom',['deep_copy_from',['../structfeatures.html#a06f20d9a83ccc61bdd694e623bf49734',1,'features']]],
@@ -68,8 +69,8 @@ var searchData=
   ['double',['Double',['../structVWReaderHandler.html#a9b1d990eb0240611a2f3ccce3afaa963',1,'VWReaderHandler']]],
   ['dsjson',['dsjson',['../structinput__options.html#adbd9d55bfe27f7c844591e5840660ed8',1,'input_options']]],
   ['dsjson_5fmetrics',['dsjson_metrics',['../structdsjson__metrics.html',1,'']]],
-  ['duals',['Duals',['../structVW_1_1distributionally__robust_1_1Duals.html',1,'VW::distributionally_robust']]],
   ['duals',['Duals',['../structVW_1_1distributionally__robust_1_1Duals.html#ab9b646730bc1ce5699d89e7e2bc42c06',1,'VW::distributionally_robust::Duals::Duals()'],['../structVW_1_1distributionally__robust_1_1Duals.html#adaabb8969d2a11a78804d49c51deabcd',1,'VW::distributionally_robust::Duals::Duals(bool unbounded, double kappa, double gamma, double beta, double n)']]],
+  ['duals',['Duals',['../structVW_1_1distributionally__robust_1_1Duals.html',1,'VW::distributionally_robust']]],
   ['dummy_5ffunc',['dummy_func',['../namespaceGD.html#a9a733cab6079e5f28fb3773aa43bea24',1,'GD']]],
   ['dump_5finterval',['dump_interval',['../structshared__data.html#acc14d5e78772dd39829a82e4df2912d7',1,'shared_data']]]
 ];

@@ -19,6 +19,7 @@ var searchData=
   ['text_5freader',['text_reader',['../structparser.html#a092ece360ed49f1993a5f5ecaf631dc7',1,'parser']]],
   ['text_5fregressor_5fname',['text_regressor_name',['../structvw.html#a4d85f6f70e0f1d9318e4c29a46b913b8',1,'vw']]],
   ['text_5fstate',['text_state',['../structContext.html#ac34c3323257dbeacad07e50c8444c4d8',1,'Context']]],
+  ['text_5futils_2eh',['text_utils.h',['../text__utils_8h.html',1,'']]],
   ['textstate',['TextState',['../structTextState.html',1,'TextState&lt; audit &gt;'],['../structTextState.html#a7b198588c0209d4a4166953cc341538f',1,'TextState::TextState()']]],
   ['the_5flabel_5fparser',['the_label_parser',['../namespaceVW_1_1cb__continuous.html#a22672447d48d9395f3e5220cbd36a757',1,'VW::cb_continuous']]],
   ['thread',['Thread',['../global__data_8h.html#ac80f47c3b2731d9979f60e1b2f6af364a69977c77ce078bea81ce7024513e42f7',1,'global_data.h']]],
@@ -62,9 +63,9 @@ var searchData=
   ['tuple_5fdbf',['tuple_dbf',['../namespaceVW_1_1LEARNER.html#a8acf98b91b127b58d1a5d59ebe5979ec',1,'VW::LEARNER']]],
   ['type',['type',['../structCCB_1_1label.html#aeb312b579a5debb8537f8c433643c759',1,'CCB::label::type()'],['../structCCB_1_1reduction__features.html#ab6533591a593cdffe7e084881713f41f',1,'CCB::reduction_features::type()'],['../structVW_1_1slates_1_1label.html#a3534b1caf54bde6f345dc0fd94379778',1,'VW::slates::label::type()']]],
   ['type_5fhash',['type_hash',['../structVW_1_1config_1_1typed__option.html#af75aac6192cabac91008572cde768049',1,'VW::config::typed_option']]],
-  ['typed_5foption',['typed_option',['../structVW_1_1config_1_1typed__option.html',1,'VW::config']]],
   ['typed_5foption',['typed_option',['../structVW_1_1config_1_1typed__option.html#a68cf7610208fdd4116cf9c4c707ec697',1,'VW::config::typed_option']]],
-  ['typed_5foption_5fwith_5flocation',['typed_option_with_location',['../structVW_1_1config_1_1typed__option__with__location.html#a72c62aa3e0fb12562e96e51de34f66cf',1,'VW::config::typed_option_with_location']]],
+  ['typed_5foption',['typed_option',['../structVW_1_1config_1_1typed__option.html',1,'VW::config']]],
   ['typed_5foption_5fwith_5flocation',['typed_option_with_location',['../structVW_1_1config_1_1typed__option__with__location.html',1,'VW::config']]],
+  ['typed_5foption_5fwith_5flocation',['typed_option_with_location',['../structVW_1_1config_1_1typed__option__with__location.html#a72c62aa3e0fb12562e96e51de34f66cf',1,'VW::config::typed_option_with_location']]],
   ['typelist',['typelist',['../structVW_1_1config_1_1typelist.html',1,'VW::config']]]
 ];

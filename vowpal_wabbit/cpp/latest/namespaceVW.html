@@ -285,6 +285,12 @@ Functions</h2></td></tr>
 <tr class="separator:a31bf6892187021f28960a19b5fede9b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0d3500b9970b8e8d0b35c5f189d6d4c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ad0d3500b9970b8e8d0b35c5f189d6d4c">try_extract_random_seed</a> (const <a class="el" href="structexample.html">example</a> &amp;ex, <a class="el" href="namespaceVW.html#a85aa9dc51ef86f7e832147b1c0c93d72">VW::string_view</a> &amp;view)</td></tr>
 <tr class="separator:ad0d3500b9970b8e8d0b35c5f189d6d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1856ebb596653eee616c0c7a62717b68"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a1856ebb596653eee616c0c7a62717b68">ends_with</a> (<a class="el" href="namespaceVW.html#a85aa9dc51ef86f7e832147b1c0c93d72">VW::string_view</a> full_string, <a class="el" href="namespaceVW.html#a85aa9dc51ef86f7e832147b1c0c93d72">VW::string_view</a> ending)</td></tr>
+<tr class="memdesc:a1856ebb596653eee616c0c7a62717b68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a string ends with some other string.  <a href="#a1856ebb596653eee616c0c7a62717b68">More...</a><br /></td></tr>
+<tr class="separator:a1856ebb596653eee616c0c7a62717b68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35a3b0811086c2b3119c99660075077d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a35a3b0811086c2b3119c99660075077d">decode_inline_hex</a> (<a class="el" href="namespaceVW.html#a85aa9dc51ef86f7e832147b1c0c93d72">VW::string_view</a> arg)</td></tr>
+<tr class="memdesc:a35a3b0811086c2b3119c99660075077d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace hex sequences in a string with their corresponding byte. A hex sequence must only contain two digits and must be in the form .  <a href="#a35a3b0811086c2b3119c99660075077d">More...</a><br /></td></tr>
+<tr class="separator:a35a3b0811086c2b3119c99660075077d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd37f3e380e5b8a268468230029fd44d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structvw.html">vw</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#acd37f3e380e5b8a268468230029fd44d">initialize</a> (std::unique_ptr&lt; <a class="el" href="structVW_1_1config_1_1options__i.html">config::options_i</a>, <a class="el" href="global__data_8h.html#a6a9836137e68daba98511b4fd85f2654">options_deleter_type</a> &gt; options, <a class="el" href="classio__buf.html">io_buf</a> *model=nullptr, bool skip_model_load=false, <a class="el" href="error__reporting_8h.html#a483c6d5166644be0183b7c55ded1ff18">trace_message_t</a> trace_listener=nullptr, void *trace_context=nullptr)</td></tr>
 <tr class="separator:acd37f3e380e5b8a268468230029fd44d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02a0b7a78264739e4b9ffcbe96c178d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structvw.html">vw</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a02a0b7a78264739e4b9ffcbe96c178d7">initialize</a> (<a class="el" href="structVW_1_1config_1_1options__i.html">config::options_i</a> &amp;options, <a class="el" href="classio__buf.html">io_buf</a> *model=nullptr, bool skip_model_load=false, <a class="el" href="error__reporting_8h.html#a483c6d5166644be0183b7c55ded1ff18">trace_message_t</a> trace_listener=nullptr, void *trace_context=nullptr)</td></tr>
@@ -1043,6 +1049,31 @@ template&lt;typename RetType , typename InputType &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a35a3b0811086c2b3119c99660075077d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string VW::decode_inline_hex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceVW.html#a85aa9dc51ef86f7e832147b1c0c93d72">VW::string_view</a>&#160;</td>
+          <td class="paramname"><em>arg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Replace hex sequences in a string with their corresponding byte. A hex sequence must only contain two digits and must be in the form . </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arg</td><td>String to replace hex values within </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A copy of the original string with hex values replaced with corresponding byte. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a93293c32bad929d5e5c775b1043ca636"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1082,6 +1113,42 @@ template&lt;typename RetType , typename InputType &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1856ebb596653eee616c0c7a62717b68"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool VW::ends_with </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceVW.html#a85aa9dc51ef86f7e832147b1c0c93d72">VW::string_view</a>&#160;</td>
+          <td class="paramname"><em>full_string</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceVW.html#a85aa9dc51ef86f7e832147b1c0c93d72">VW::string_view</a>&#160;</td>
+          <td class="paramname"><em>ending</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if a string ends with some other string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">full_string</td><td>String to check ending of </td></tr>
+    <tr><td class="paramname">ending</td><td>Ending value to check </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if full_string ends with ending, otherwise false. </dd></dl>
 
 </div>
 </div>
@@ -3739,7 +3806,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 18 2021 15:49:34 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 18 2021 19:57:05 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
