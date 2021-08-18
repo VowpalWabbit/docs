@@ -1,6 +1,7 @@
 var searchData=
 [
   ['handle_5ffeatures_5fvalue',['handle_features_value',['../parse__slates__example__json_8h.html#a0e917143bef3b67e5fd12981b55ed861',1,'parse_slates_example_json.h']]],
+  ['has_5fempty_5finteraction',['has_empty_interaction',['../namespaceINTERACTIONS.html#a083a49ae11718d0162ebc84e672f86e7',1,'INTERACTIONS']]],
   ['has_5fobserved_5fcost',['has_observed_cost',['../structCB_1_1cb__class.html#a2932cbc83a9e87bf18dab6cf36b8d2c7',1,'CB::cb_class']]],
   ['hash',['hash',['../classio__buf.html#a2897cff64e19135ab948ede8ec150a04',1,'io_buf']]],
   ['hash_5ffeature',['hash_feature',['../namespaceVW.html#ae86b6bd5f4f2858597edad920195c5d4',1,'VW']]],

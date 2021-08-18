@@ -2,6 +2,7 @@ var searchData=
 [
   ['handle_5ffeatures_5fvalue',['handle_features_value',['../parse__slates__example__json_8h.html#a0e917143bef3b67e5fd12981b55ed861',1,'parse_slates_example_json.h']]],
   ['handler',['handler',['../structjson__parser.html#a0c02103e082e847fa4d44247f53a52b8',1,'json_parser']]],
+  ['has_5fempty_5finteraction',['has_empty_interaction',['../namespaceINTERACTIONS.html#a083a49ae11718d0162ebc84e672f86e7',1,'INTERACTIONS']]],
   ['has_5fobserved_5fcost',['has_observed_cost',['../structCB_1_1cb__class.html#a2932cbc83a9e87bf18dab6cf36b8d2c7',1,'CB::cb_class']]],
   ['has_5fseen_5farray_5fstart',['has_seen_array_start',['../classArrayToVectorState.html#ad57a1b42a0873ba2f4b751e2fc53bce0',1,'ArrayToVectorState']]],
   ['hash',['hash',['../structBeam_1_1beam__element.html#aa6e352c06b5e97fd8a49de0d35b36fde',1,'Beam::beam_element::hash()'],['../structVW_1_1namespaced__features.html#a8df33ddd5eb1ba383a4a411acceec2f8',1,'VW::namespaced_features::hash()'],['../structINTERACTIONS_1_1feature__gen__data.html#ac423c4c48d7427dd0e895bab5b09b906',1,'INTERACTIONS::feature_gen_data::hash()'],['../classio__buf.html#a2897cff64e19135ab948ede8ec150a04',1,'io_buf::hash()']]],
