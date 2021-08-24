@@ -4,6 +4,7 @@ var searchData=
   ['data',['data',['../structBeam_1_1beam__element.html#a682e840e00a741c83781db76d9f077a4',1,'Beam::beam_element::data()'],['../structVW_1_1LEARNER_1_1func__data.html#a0a9fe7c48cd7e4bc331272322a901ca0',1,'VW::LEARNER::func_data::data()'],['../structVW_1_1LEARNER_1_1learn__data.html#a704bbdb5763205cb2a63f921b99b9b1d',1,'VW::LEARNER::learn_data::data()'],['../structVW_1_1LEARNER_1_1sensitivity__data.html#adef38901bc5ecc1077613ad1efa8ed27',1,'VW::LEARNER::sensitivity_data::data()'],['../structVW_1_1LEARNER_1_1save__load__data.html#a2a568803a07d86060425d5f29c8a6d35',1,'VW::LEARNER::save_load_data::data()'],['../structVW_1_1LEARNER_1_1save__metric__data.html#a1e245dad9efe1fbf15f63604dc709d25',1,'VW::LEARNER::save_metric_data::data()'],['../structVW_1_1LEARNER_1_1finish__example__data.html#a8160a7e2804e4ce2aef6088493307905',1,'VW::LEARNER::finish_example_data::data()'],['../classDecisionServiceState.html#a1772e234a9636e3af8f02a88ecdc2bd5',1,'DecisionServiceState::data()']]],
   ['data_5ffilename',['data_filename',['../structvw.html#aa0d6b8bdd383ac5a5d5ded9746886538',1,'vw']]],
   ['decision_5fscores',['decision_scores',['../structpolyprediction.html#a572baf036403a33ca9e06198322a8802',1,'polyprediction']]],
+  ['decision_5fservice_5fdata',['decision_service_data',['../structContext.html#ac491d806859f4f46127c9d5365b42cdb',1,'Context']]],
   ['decision_5fservice_5fjson',['decision_service_json',['../structparser.html#a864a4006507e401f9794ef6ebaa7e24c',1,'parser']]],
   ['decision_5fservice_5fstate',['decision_service_state',['../structContext.html#a864f2926ef8ba88769fa0872f076af69',1,'Context']]],
   ['dedup_5fexamples',['dedup_examples',['../structContext.html#af45375bccfe1e0725d50a5d2dc208833',1,'Context']]],
@@ -22,5 +23,6 @@ var searchData=
   ['do_5freset_5fsource',['do_reset_source',['../structvw.html#a560289918a63069c9bed7c77e16de90b',1,'vw']]],
   ['done',['done',['../structparser.html#a73041b4f11e952967779e142d70f0e32',1,'parser']]],
   ['dsjson',['dsjson',['../structinput__options.html#adbd9d55bfe27f7c844591e5840660ed8',1,'input_options']]],
+  ['dsjsonsumcostoriginal',['DsjsonSumCostOriginal',['../structdsjson__metrics.html#ab56fdaea2bd7a1f1124ab5f8931b7eb7',1,'dsjson_metrics']]],
   ['dump_5finterval',['dump_interval',['../structshared__data.html#acc14d5e78772dd39829a82e4df2912d7',1,'shared_data']]]
 ];

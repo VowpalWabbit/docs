@@ -2,6 +2,7 @@ var searchData=
 [
   ['old_5fweighted_5flabeled_5fexamples',['old_weighted_labeled_examples',['../structshared__data.html#a22c93bc868692a1f3dbb5cc24ec1fa3a',1,'shared_data']]],
   ['options',['options',['../structvw.html#a2e64506c21371f1025f5acbd136168ed',1,'vw']]],
+  ['originallabelcost',['originalLabelCost',['../structDecisionServiceInteraction.html#a6cfb3cd1a774e916f97d213a0ed0a859',1,'DecisionServiceInteraction']]],
   ['outcome',['outcome',['../structCCB_1_1label.html#a26688701390e4a716c0339ff18e24185',1,'CCB::label']]],
   ['output',['output',['../structparser.html#ae5f82a782db70fdf54a69ac9b78770ca',1,'parser']]],
   ['output_5farray',['output_array',['../classArrayToVectorState.html#a4228f52b49bdaa970cca00319a904beb',1,'ArrayToVectorState']]],
