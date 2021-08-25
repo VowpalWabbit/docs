@@ -38,7 +38,7 @@
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script async="async" src="https://unpkg.com/thebe@latest/lib/index.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script >
         const thebe_selector = ".cell"
         const thebe_selector_input = "pre"
@@ -527,28 +527,28 @@ num sources = 1
 Enabled reductions: gd, scorer-identity
 average  since         example        example  current  current  current
 loss     last          counter         weight    label  predict features
-2.590933 2.590933            1            1.0   1.6096   0.0000        2
-3.120173 3.649412            2            2.0   2.0796   0.1692        3
-2.357417 1.594662            4            4.0   1.6096   0.2631        3
-2.448673 2.539929            8            8.0   2.7727   0.6425        3
-5.700645 8.952618           16           16.0   2.3980   0.9543        3
-5.275451 4.850257           32           32.0   1.7919   0.6907        3
-4.004174 2.732898           64           64.0   1.7919   1.3005        3
-3.165016 2.325858          128          128.0   2.3027   1.6471        3
-2.391400 1.617783          256          256.0   1.7919   1.8179        3
-2.195565 1.999729          512          512.0   2.3027   1.9895        2
-2.065517 1.935470         1024         1024.0   2.3027   1.8935        3
-1.920603 1.775689         2048         2048.0   1.6096   1.5865        3
-1.835761 1.750919         4096         4096.0   2.3980   2.1376        3
-1.770953 1.706144         8192         8192.0   0.0010   1.1547        2
+2.590933 2.590933            1            1.0   1.6096   0.0000        3
+3.270511 3.950088            2            2.0   2.3980   0.4105        3
+2.708735 2.146959            4            4.0   1.6096   0.3592        3
+2.487110 2.265485            8            8.0   1.0989   0.3178        2
+2.661166 2.835221           16           16.0   2.1973   0.8559        3
+3.837591 5.014016           32           32.0   2.8333   1.2185        3
+2.340957 0.844324           64           64.0   1.7919   1.3005        3
+2.745565 3.150173          128          128.0   2.3027   1.8296        3
+2.187275 1.628985          256          256.0   2.1973   2.5000        3
+2.097625 2.007975          512          512.0   1.3865   1.7925        3
+2.023923 1.950222         1024         1024.0   2.9958   3.1646        3
+1.905728 1.787532         2048         2048.0   1.7919   1.4360        2
+1.843439 1.781151         4096         4096.0   2.8333   2.4268        3
+1.779130 1.714821         8192         8192.0   1.0989   1.4923        3
 
 finished run
 number of examples = 10000
 weighted example sum = 10000.000000
-weighted label sum = 17620.148577
-average loss = 1.752259
-best constant = 1.762015
-total feature number = 27600
+weighted label sum = 18160.771934
+average loss = 1.761561
+best constant = 1.816077
+total feature number = 27800
 </pre></div>
 </div>
 </div>
@@ -576,13 +576,13 @@ num sources = 1
 Enabled reductions: gd, scorer-identity
 average  since         example        example  current  current  current
 loss     last          counter         weight    label  predict features
-0.562161 0.562161            1            1.0   1.6096   0.8599        2
-0.411066 0.259972            2            2.0   2.0796   1.5697        3
-0.284255 0.157444            4            4.0   1.6096   1.0485        3
-0.244725 0.205195            8            8.0   2.7727   2.5849        3
-3.042175 5.839625           16           16.0   2.3980   3.0911        3
-3.097474 3.152772           32           32.0   1.7919   0.8327        3
-2.426900 1.756327           64           64.0   1.7919   2.1356        3
+0.714400 0.714400            1            1.0   1.6096   0.7644        3
+0.438698 0.162996            2            2.0   2.3980   2.8017        3
+0.265331 0.091964            4            4.0   1.6096   2.0239        3
+0.397552 0.529773            8            8.0   1.0989   0.5122        2
+0.385781 0.374009           16           16.0   2.1973   2.3819        3
+1.734112 3.082444           32           32.0   2.8333   2.4649        3
+0.996196 0.258279           64           64.0   1.7919   1.7098        3
 </pre></div>
 </div>
 </div>
@@ -605,9 +605,7 @@ loss     last          counter         weight    label  predict features
 </div>
 <div class="cell_output docutils container">
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>final_regressor = vw.poisson.model
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Num weight bits = 2
+Num weight bits = 2
 learning rate = 0.1
 initial_t = 0
 power_t = 0.5
@@ -621,31 +619,33 @@ loss     last          counter         weight    label  predict features
 finished run
 number of examples = 100
 weighted example sum = 100.000000
-weighted label sum = 176.201486
-average loss = 1.665853
-best constant = 1.762015
-total feature number = 276
-8.094381 8.094381            1            1.0   5.0000   0.0000        2
-12.484187 16.873993            2            2.0   8.0000   0.1735        3
-8.908704 5.333220            4            4.0   5.0000   0.2744        3
-12.907465 16.906226            8            8.0  16.0000   0.6733        3
-14.402131 15.896797           16           16.0  11.0000   1.1491        3
-11.390329 8.378526           32           32.0   6.0000   0.9547        3
-8.117527 4.844726           64           64.0   6.0000   1.6529        3
-5.158118 2.198709          128          128.0  10.0000   2.0451        3
-3.166723 1.175328          256          256.0   6.0000   2.0941        3
-2.142176 1.117630          512          512.0  10.0000   2.1522        2
-1.626521 1.110865         1024         1024.0  10.0000   2.0797        3
-1.360190 1.093859         2048         2048.0   5.0000   1.9089        3
-1.224662 1.089133         4096         4096.0  11.0000   2.2646        3
-1.152822 1.080982         8192         8192.0   1.0000   1.7103        2
+weighted label sum = 181.607719
+average loss = 1.681199
+best constant = 1.816077
+total feature number = 278
+8.094381 8.094381            1            1.0   5.0000   0.0000        3
+16.296340 24.498299            2            2.0  11.0000   0.4231        3
+12.368533 8.440726            4            4.0   5.0000   0.3678        3
+11.847250 11.325967            8            8.0   3.0000   0.3212        2
+16.525516 21.203781           16           16.0   9.0000   0.9035        3
+14.646373 12.767230           32           32.0  17.0000   1.3761        3
+10.072816 5.499259           64           64.0   6.0000   1.4983        3
+6.280216 2.487616          128          128.0  10.0000   2.1168        3
+3.926690 1.573165          256          256.0   9.0000   2.6791        3
+2.661197 1.395703          512          512.0   4.0000   2.0037        3
+2.028208 1.395219         1024         1024.0  20.0000   3.0248        3
+1.710513 1.392817         2048         2048.0   6.0000   1.7919        2
+1.550411 1.390309         4096         4096.0  17.0000   2.4353        3
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.468361 1.386311         8192         8192.0   3.0000   1.8938        3
 
 finished run
 number of examples = 10000
 weighted example sum = 10000.000000
-weighted label sum = 88100.000000
-average loss = 1.139033
-total feature number = 27600
+weighted label sum = 93200.000000
+average loss = 1.452783
+total feature number = 27800
 </pre></div>
 </div>
 </div>
@@ -670,13 +670,13 @@ num sources = 1
 Enabled reductions: gd, scorer-identity
 average  since         example        example  current  current  current
 loss     last          counter         weight    label  predict features
-12.225657 12.225657            1            1.0   5.0000   1.5035        2
-24.791179 37.356701            2            2.0   8.0000   1.8880        3
-17.609980 10.428780            4            4.0   5.0000   1.6120        3
-42.236964 66.863949            8            8.0  16.0000   2.4600        3
-59.415001 76.593037           16           16.0  11.0000   2.8445        3
-59.512996 59.610991           32           32.0   6.0000   1.5235        3
-60.523333 61.533670           64           64.0   6.0000   2.2135        3
+12.036188 12.036188            1            1.0   5.0000   1.5307        3
+41.401532 70.766876            2            2.0  11.0000   2.5877        3
+28.667980 15.934428            4            4.0   5.0000   2.2017        3
+29.358761 30.049543            8            8.0   3.0000   1.4044        2
+64.396517 99.434273           16           16.0   9.0000   2.3640        3
+78.939771 93.483025           32           32.0  17.0000   2.4326        3
+78.118250 77.296729           64           64.0   6.0000   2.0141        3
 </pre></div>
 </div>
 </div>
