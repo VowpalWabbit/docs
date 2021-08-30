@@ -83,7 +83,7 @@ var searchData=
   ['is_5fnewline',['is_newline',['../structexample.html#a75d11aa16a7f43f453acd937343f8ec4',1,'example']]],
   ['is_5fpdf_5fset',['is_pdf_set',['../structVW_1_1continuous__actions_1_1reduction__features.html#a8bee9fe7cb026d6ac9f4357a4cf859a0',1,'VW::continuous_actions::reduction_features']]],
   ['is_5fprintable_5fnamespace',['is_printable_namespace',['../namespaceINTERACTIONS.html#ab689f2484c76a1ed43a9441fbb6e09a1',1,'INTERACTIONS']]],
-  ['is_5fresettable',['is_resettable',['../structVW_1_1io_1_1reader.html#a77d54b993a8afba329b104d1fbbdf29f',1,'VW::io::reader']]],
+  ['is_5fresettable',['is_resettable',['../structVW_1_1io_1_1reader.html#a77d54b993a8afba329b104d1fbbdf29f',1,'VW::io::reader::is_resettable()'],['../classio__buf.html#a5e2f3b56661caf56d20dac666d705e6e',1,'io_buf::is_resettable()']]],
   ['is_5fring_5fexample',['is_ring_example',['../namespaceVW.html#a4827136233605decf732d3920d848295',1,'VW']]],
   ['is_5froot',['is_root',['../structVW_1_1cats__tree_1_1tree__node.html#a7b54429fb86f87fa883bb302d8391908',1,'VW::cats_tree::tree_node']]],
   ['is_5fscalar_5foption_5ftype',['is_scalar_option_type',['../structVW_1_1config_1_1is__scalar__option__type.html',1,'VW::config']]],

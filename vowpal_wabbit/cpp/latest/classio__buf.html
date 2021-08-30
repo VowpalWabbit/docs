@@ -88,7 +88,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classio__buf-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">io_buf Class Reference</div>  </div>
@@ -121,10 +120,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1db2b72b6bc6b5ae0cef6639281dea1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7379ae798daebe39d85669912413127b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio__buf.html#a7379ae798daebe39d85669912413127b">add_file</a> (std::unique_ptr&lt; <a class="el" href="structVW_1_1io_1_1writer.html">VW::io::writer</a> &gt; &amp;&amp;file)</td></tr>
 <tr class="separator:a7379ae798daebe39d85669912413127b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb6180d90b0e5dc158cc4a78e9ea9160"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio__buf.html#adb6180d90b0e5dc158cc4a78e9ea9160">reset_buffer</a> ()</td></tr>
-<tr class="separator:adb6180d90b0e5dc158cc4a78e9ea9160"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f7c3b58c7bf31c4a1c4af58912be523"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio__buf.html#a8f7c3b58c7bf31c4a1c4af58912be523">reset_file</a> (<a class="el" href="structVW_1_1io_1_1reader.html">VW::io::reader</a> *f)</td></tr>
-<tr class="separator:a8f7c3b58c7bf31c4a1c4af58912be523"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a198a3880f7b097595750b5626aa7ba5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio__buf.html#a198a3880f7b097595750b5626aa7ba5f">reset</a> ()</td></tr>
+<tr class="memdesc:a198a3880f7b097595750b5626aa7ba5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls reset on all contained input files. Moves back to the first file being the current one processed and resets the buffer position. If the contained readers are not resettable then this function will fail. The buffer should be tested with <a class="el" href="classio__buf.html#a5e2f3b56661caf56d20dac666d705e6e" title="Test if this io_buf supports resetting. ">io_buf::is_resettable</a> prior to calling this to avoid failure.  <a href="#a198a3880f7b097595750b5626aa7ba5f">More...</a><br /></td></tr>
+<tr class="separator:a198a3880f7b097595750b5626aa7ba5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e2f3b56661caf56d20dac666d705e6e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio__buf.html#a5e2f3b56661caf56d20dac666d705e6e">is_resettable</a> () const </td></tr>
+<tr class="memdesc:a5e2f3b56661caf56d20dac666d705e6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test if this <a class="el" href="classio__buf.html">io_buf</a> supports resetting.  <a href="#a5e2f3b56661caf56d20dac666d705e6e">More...</a><br /></td></tr>
+<tr class="separator:a5e2f3b56661caf56d20dac666d705e6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af32020bb18ceca0dc038900797715ae6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio__buf.html#af32020bb18ceca0dc038900797715ae6">set</a> (char *p)</td></tr>
 <tr class="separator:af32020bb18ceca0dc038900797715ae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37bbb76c58eb35ee9ce9afff40bab90c"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio__buf.html#a37bbb76c58eb35ee9ce9afff40bab90c">num_files</a> () const </td></tr>
@@ -173,11 +174,6 @@ Public Member Functions</h2></td></tr>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:af89b8680e7bc0703cebd0afe7f884128"><td class="memItemLeft" align="right" valign="top">static ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio__buf.html#af89b8680e7bc0703cebd0afe7f884128">read_file</a> (<a class="el" href="structVW_1_1io_1_1reader.html">VW::io::reader</a> *f, void *buf, size_t nbytes)</td></tr>
 <tr class="separator:af89b8680e7bc0703cebd0afe7f884128"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:af3bba98bc702c9de0e6d29ddd780a34f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio__buf.html#af3bba98bc702c9de0e6d29ddd780a34f">current</a> = 0</td></tr>
-<tr class="separator:af3bba98bc702c9de0e6d29ddd780a34f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ae01bc5dd5cd7128faeff147ce34a1f36"></a>
@@ -629,6 +625,26 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a5e2f3b56661caf56d20dac666d705e6e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool io_buf::is_resettable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Test if this <a class="el" href="classio__buf.html">io_buf</a> supports resetting. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if all contained input files can be reset </dd>
+<dd>
+false if any contained input files cannot be reset </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a1974dd5257eaa530030fc59cce0589be"></a>
 <div class="memitem">
 <div class="memproto">
@@ -881,50 +897,20 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="adb6180d90b0e5dc158cc4a78e9ea9160"></a>
+<a class="anchor" id="a198a3880f7b097595750b5626aa7ba5f"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void io_buf::reset_buffer </td>
+          <td class="memname">void io_buf::reset </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="a8f7c3b58c7bf31c4a1c4af58912be523"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void io_buf::reset_file </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structVW_1_1io_1_1reader.html">VW::io::reader</a> *&#160;</td>
-          <td class="paramname"><em>f</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>Calls reset on all contained input files. Moves back to the first file being the current one processed and resets the buffer position. If the contained readers are not resettable then this function will fail. The buffer should be tested with <a class="el" href="classio__buf.html#a5e2f3b56661caf56d20dac666d705e6e" title="Test if this io_buf supports resetting. ">io_buf::is_resettable</a> prior to calling this to avoid failure. </p>
 
 </div>
 </div>
@@ -1025,26 +1011,13 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="af3bba98bc702c9de0e6d29ddd780a34f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t io_buf::current = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>/__w/vowpal_wabbit/vowpal_wabbit/vowpalwabbit/<a class="el" href="io__buf_8h.html">io_buf.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 30 2021 15:24:13 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 30 2021 16:10:04 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
