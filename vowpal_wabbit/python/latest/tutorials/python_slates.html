@@ -628,28 +628,28 @@ Enabled reductions: gd, generate_interactions, scorer-identity, csoaa_ldf-rank, 
 average  since         example        example  current  current  current
 loss     last          counter         weight    label  predict features
     n.a.     n.a.            1            1.0  ?,?,... 0,0,0,...      138
--0.813927 -0.813927            2            2.0  0,0,... 0,0,0,...      138
--0.679639 -0.545352            4            4.0  0,1,... 0,1,0,...      138
--0.748206 -0.816773            8            8.0  0,0,... 0,0,0,...      138
--0.703708 -0.659209           16           16.0  0,1,... 0,1,2,...      138
--0.684556 -0.665403           32           32.0  0,2,... 0,2,1,...      138
--0.670966 -0.657377           64           64.0  2,0,... 2,0,1,...      138
--0.683254 -0.695542          128          128.0  2,0,... 2,0,3,...      138
--0.780422 -0.877591          256          256.0  0,0,... 0,0,0,...      138
--0.810466 -0.840510          512          512.0  2,0,... 2,0,1,...      138
--0.845653 -0.880840         1024         1024.0  2,0,... 2,0,3,...      138
+-0.554570 -0.554570            2            2.0  0,0,... 0,0,0,...      138
+-0.532225 -0.509880            4            4.0  0,1,... 0,1,0,...      138
+-0.586694 -0.641163            8            8.0  0,0,... 0,0,0,...      138
+-0.613203 -0.639712           16           16.0  0,0,... 0,0,2,...      138
+-0.645619 -0.678035           32           32.0  0,0,... 0,0,1,...      138
+-0.668864 -0.692108           64           64.0  1,0,... 1,0,1,...      138
+-0.697807 -0.726750          128          128.0  2,0,... 2,0,0,...      138
+-0.736937 -0.776067          256          256.0  0,0,... 0,0,0,...      138
+-0.800782 -0.864626          512          512.0  1,2,... 1,2,1,...      138
+-0.839257 -0.877733         1024         1024.0  1,1,... 1,1,0,...      138
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.888838 -0.932024         2048         2048.0  1,1,... 1,1,0,...      138
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.873631 -0.908005         2048         2048.0  1,1,... 1,1,0,...      138
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.913207 -0.937575         4096         4096.0  2,0,... 2,0,3,...      138
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.905358 -0.937084         4096         4096.0  2,0,... 2,0,3,...      138
 
 finished run
 number of examples = 5000
 weighted example sum = 5000.000000
 weighted label sum = 0.000000
-average loss = -0.913238
+average loss = -0.906509
 total feature number = 690000
 </pre></div>
 </div>
@@ -682,6 +682,11 @@ total feature number = 690000
         <span class="n">sum_prob</span> <span class="o">+=</span> <span class="n">prob</span>
         <span class="k">if</span><span class="p">(</span><span class="n">sum_prob</span> <span class="o">&gt;</span> <span class="n">draw</span><span class="p">):</span>
             <span class="k">return</span> <span class="n">index</span><span class="p">,</span> <span class="n">prob</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
 </div>
@@ -720,32 +725,35 @@ Enabled reductions: gd, scorer-identity, csoaa_ldf-rank, cb_adf, cb_explore_adf_
 average  since         example        example  current  current  current
 loss     last          counter         weight    label  predict features
     n.a.     n.a.            1            1.0  unknown        0:0.0277778...      684
--0.596332 -0.596332            2            2.0 18:-0.6:0.028        0:0.0277778...      684
--0.681214 -0.766095            4            4.0 18:-0.77:0.81       18:0.805556...      684
--0.615241 -0.549267            8            8.0 18:-0.45:0.81       18:0.805556...      684
--0.622823 -0.630405           16           16.0 33:-0.83:0.0056       18:0.805556...      684
--0.670048 -0.717273           32           32.0 33:-0.72:0.81       33:0.805556...      684
--0.687038 -0.704029           64           64.0 13:-0.56:0.81       13:0.805556...      684
+-0.891256 -0.891256            2            2.0 8:-0.89:0.028        0:0.0277778...      684
+-0.705385 -0.519514            4            4.0 8:-0.52:0.81        8:0.805556...      684
+-0.674292 -0.643199            8            8.0 29:-0.67:0.0056        8:0.805556...      684
+-0.693755 -0.713217           16           16.0 29:-0.79:0.81       29:0.805556...      684
+-0.691479 -0.689204           32           32.0 6:-0.4:0.0056       23:0.805556...      684
+-0.621224 -0.550969           64           64.0 23:-0.88:0.81       23:0.805556...      684
+-0.657489 -0.693753          128          128.0 30:-0.56:0.81       30:0.805556...      684
+-0.618047 -0.578605          256          256.0 33:-0.55:0.0056        6:0.805556...      684
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.728152 -0.769266          128          128.0 32:-0.86:0.81       32:0.805556...      684
--0.784815 -0.841477          256          256.0 20:-0.87:0.81       20:0.805556...      684
--0.789339 -0.793864          512          512.0 13:-0.75:0.81       13:0.805556...      684
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.670909 -0.723772          512          512.0 17:-0.91:0.81
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.823472 -0.857604         1024         1024.0 16:-0.98:0.81       16:0.805556...      684
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>       17:0.805556...      684
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.868918 -0.914364         2048         2048.0 27:-1:0.81       27:0.805556...      684
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.764135 -0.857361         1024         1024.0 35:-0.91:0.81       35:0.805556...      684
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.893890 -0.918861         4096         4096.0 35:-0.87:0.81       35:0.805556...      684
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.832148 -0.900161         2048         2048.0 16:-0.89:0.81       16:0.805556...      684
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.879291 -0.926435         4096         4096.0 16:-0.98:0.81       16:0.805556...      684
 
 finished run
 number of examples = 5000
 weighted example sum = 5000.000000
 weighted label sum = 0.000000
-average loss = -0.900736
+average loss = -0.889154
 total feature number = 3430000
 </pre></div>
 </div>
@@ -765,7 +773,7 @@ total feature number = 3430000
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f583d90c730&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7fb88ae20d60&gt;
 </pre></div>
 </div>
 <img alt="../_images/python_slates_12_1.png" src="../_images/python_slates_12_1.png" />
