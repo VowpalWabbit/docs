@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['n',['N',['../structExpReplay_1_1expreplay.html#a1303bcb5004ccc2cb6949480bdb43c11',1,'ExpReplay::expreplay::N()'],['../structVW_1_1distributionally__robust_1_1Duals.html#ad72686b6b792efe744a034674dc09847',1,'VW::distributionally_robust::Duals::n()']]],
+  ['n',['n',['../structVW_1_1distributionally__robust_1_1Duals.html#ad72686b6b792efe744a034674dc09847',1,'VW::distributionally_robust::Duals::n()'],['../structExpReplay_1_1expreplay.html#a1303bcb5004ccc2cb6949480bdb43c11',1,'ExpReplay::expreplay::N()']]],
   ['name',['name',['../structdictionary__info.html#aafd5bfbc5290ad275067a8cf3397970a',1,'dictionary_info::name()'],['../structNamespace.html#a2344df6d1bc705fc8afa24b2c9c79f57',1,'Namespace::name()'],['../structBaseState.html#a675dcc2bdda01de5cde893e77a6116b1',1,'BaseState::name()'],['../structVW_1_1primitive__feature__space.html#a8f5b0342e8c1f8c6d6e5648d14894a59',1,'VW::primitive_feature_space::name()']]],
   ['namespace_5fdictionaries',['namespace_dictionaries',['../structvw.html#af16ebf4efcb03eb22d88cdd44a35869e',1,'vw']]],
   ['namespace_5fhash',['namespace_hash',['../structNamespace.html#a1dcb4de5a4b2c43e6e96597dcd438228',1,'Namespace']]],
