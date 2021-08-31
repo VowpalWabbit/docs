@@ -6,6 +6,7 @@ var searchData=
   ['accumulate_5fscalar',['accumulate_scalar',['../accumulate_8h.html#a5f9b9046c85ecd62ead81d5fe7a7624b',1,'accumulate.h']]],
   ['accumulate_5fweighted_5favg',['accumulate_weighted_avg',['../accumulate_8h.html#a7f1082b9cdfb73a38f32cd8c0f010548',1,'accumulate.h']]],
   ['acquire_5fobject',['acquire_object',['../structVW_1_1moved__object__pool.html#a1a0ec2f168640b9a7b6a16264a090b9a',1,'VW::moved_object_pool']]],
+  ['active',['active',['../structactive.html#afcac267540632a6dce8b29efec6e7a5e',1,'active']]],
   ['active_5fcover_5fsetup',['active_cover_setup',['../active__cover_8h.html#a80c7ee282a06a23be33517fd7f7a4dac',1,'active_cover.h']]],
   ['active_5fsetup',['active_setup',['../active_8h.html#a1ab12284000ec943215a7451ed2ac7fa',1,'active.h']]],
   ['add',['add',['../structVW_1_1config_1_1option__group__definition.html#aad392b60a5d0ad5c6d4c5537677ca259',1,'VW::config::option_group_definition::add(option_builder&lt; T &gt; &amp;&amp;op)'],['../structVW_1_1config_1_1option__group__definition.html#a767e7bf0f58ac1db94925486071fe044',1,'VW::config::option_group_definition::add(option_builder&lt; T &gt; &amp;op)'],['../structVW_1_1config_1_1options__serializer__i.html#af7826e4efa76b62256152ea346737171',1,'VW::config::options_serializer_i::add()'],['../structVW_1_1config_1_1options__serializer__boost__po.html#abb58f7d817bd20b8c5f8d9f30b388208',1,'VW::config::options_serializer_boost_po::add()']]],
