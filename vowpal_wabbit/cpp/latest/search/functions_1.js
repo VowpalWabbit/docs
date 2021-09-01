@@ -21,7 +21,6 @@ var searchData=
   ['bin_5ftext_5fwrite_5ffixed',['bin_text_write_fixed',['../io__buf_8h.html#a1af842e7b179c4efe32cf25d495d3691',1,'io_buf.h']]],
   ['bin_5fwrite',['bin_write',['../io__buf_8h.html#a341dd49d200b1fe081c7ce03bacabeba',1,'io_buf.h']]],
   ['bin_5fwrite_5ffixed',['bin_write_fixed',['../classio__buf.html#a3c0311f639b9062998f798bd0ce5da5f',1,'io_buf']]],
-  ['binary_5fprint_5fresult',['binary_print_result',['../global__data_8h.html#a158dab5d2c8d07970b523bf2f910d2e2',1,'global_data.h']]],
   ['binary_5fprint_5fresult_5fby_5fref',['binary_print_result_by_ref',['../global__data_8h.html#a07600c7dfa8e52c7741daa1d80607abf',1,'global_data.h']]],
   ['binary_5fsetup',['binary_setup',['../namespaceVW_1_1binary.html#abf019e0e8ba229829b2ebd23a90ba820',1,'VW::binary']]],
   ['bool',['Bool',['../structBaseState.html#a9ccff8ff7ccb1612a47d75c39c84c924',1,'BaseState::Bool()'],['../classDefaultState.html#a7bb350ead38a4e1b9cbbfd62fa1b6222',1,'DefaultState::Bool()'],['../classBoolToBoolState.html#aa8099fe4578f7eaf665edf962f84d128',1,'BoolToBoolState::Bool()'],['../structVWReaderHandler.html#affe64a99b2e524d4c97f9950c1dc0091',1,'VWReaderHandler::Bool()']]],

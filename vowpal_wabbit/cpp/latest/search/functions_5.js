@@ -9,7 +9,7 @@ var searchData=
   ['feature_5fpush_5fback',['feature_push_back',['../classvw__slim_1_1namespace__copy__guard.html#ab181e0938496d88d912485e3d0e183aa',1,'vw_slim::namespace_copy_guard']]],
   ['features',['features',['../structfeatures.html#a18a707ead5527cfe7f742c7ca22ade82',1,'features::features()=default'],['../structfeatures.html#adcbe5f5028d5bedd16a60739ec9a908c',1,'features::features(const features &amp;)=default'],['../structfeatures.html#af3e3cd4188fd95ae614e42701f8554bb',1,'features::features(features &amp;&amp;other)=default']]],
   ['features_5fiterator',['features_iterator',['../classfeatures__iterator.html#a3ea90311ab78de0fdfb826be49e4c65a',1,'features_iterator::features_iterator()'],['../classfeatures__iterator.html#a7e76c9dcfe0dec65624d0955cc6afbca',1,'features_iterator::features_iterator(feature_value_type_t *begin_values, feature_index_type_t *begin_indices)'],['../classfeatures__iterator.html#a0a059df673f40cbe813a8fcd31e1fa2f',1,'features_iterator::features_iterator(const features_iterator &amp;)=default'],['../classfeatures__iterator.html#a9dd0f169ca2177a2fba248e8a7f9eefc',1,'features_iterator::features_iterator(features_iterator &amp;&amp;)=default']]],
-  ['features_5fto_5fstring',['features_to_string',['../example__predict_8h.html#a554666d25683fdc27afb591809e614d1',1,'example_predict.h']]],
+  ['features_5fto_5fstring',['features_to_string',['../example__predict_8h.html#a31065cd5e2c2b173512303f780f03cf6',1,'example_predict.h']]],
   ['file_5fopen',['file_open',['../namespaceVW.html#a5a14838fa968bb4da6558105112c06d5',1,'VW']]],
   ['filename',['Filename',['../classVW_1_1vw__exception.html#a8b2db370d9f9c9124a12dc636f5832af',1,'VW::vw_exception']]],
   ['fill',['fill',['../classio__buf.html#ac3508663785fd1367400ab4eb7ab33e9',1,'io_buf']]],
@@ -18,7 +18,6 @@ var searchData=
   ['finalize',['finalize',['../structVW_1_1config_1_1option__builder.html#a05a693cc372129f0f8c571748c198dad',1,'VW::config::option_builder']]],
   ['finalize_5fprediction',['finalize_prediction',['../namespaceGD.html#ae060266d4ebe05f6574689a079f46dee',1,'GD']]],
   ['finalize_5fregressor',['finalize_regressor',['../parse__regressor_8h.html#afcfe6e03987ce1240b62807a95a26beb',1,'parse_regressor.h']]],
-  ['finalize_5fsource',['finalize_source',['../parser_8h.html#a8a9d06610ebdb673256e225b8de46635',1,'parser.h']]],
   ['find_5fopt',['find_opt',['../namespacevw__slim.html#a8157ee4f6e1d28024851aea42a48c8ff',1,'vw_slim::find_opt(std::string const &amp;command_line_args, std::string arg_name, std::vector&lt; T &gt; &amp;out_values)'],['../namespacevw__slim.html#aa2d959254412f3cc457c4da0bbd6efba',1,'vw_slim::find_opt(std::string const &amp;command_line_args, std::string arg_name)']]],
   ['find_5fopt_5ffloat',['find_opt_float',['../namespacevw__slim.html#a5811fae22ec0911241e0ff7c272934cd',1,'vw_slim']]],
   ['find_5fopt_5fint',['find_opt_int',['../namespacevw__slim.html#ad897b76fbe2d1c96675f63286ba06fb5',1,'vw_slim']]],
@@ -44,7 +43,6 @@ var searchData=
   ['free_5fflatten_5fexample',['free_flatten_example',['../example_8h.html#a43e653fb1e820bef507e28a6d1debe75',1,'example.h']]],
   ['free_5fit',['free_it',['../memory_8h.html#a8d7c2f582fe6b06111fd091cb0f5c6b1',1,'memory.h']]],
   ['free_5fparser',['free_parser',['../parser_8h.html#a726349034276fd9ac5541976542f84b5',1,'parser.h']]],
-  ['free_5fspace_5fnames',['free_space_names',['../structfeatures.html#a1625eb8137587988836b7c8835c5ef78',1,'features']]],
   ['from_5fstring',['from_string',['../structVW_1_1version__struct.html#a109fb67dd78a0ed981615e40e8f5e6bf',1,'VW::version_struct']]],
   ['ftrl_5fsetup',['ftrl_setup',['../ftrl_8h.html#a72e3882d092be3db019cb612b757b839',1,'ftrl.h']]]
 ];

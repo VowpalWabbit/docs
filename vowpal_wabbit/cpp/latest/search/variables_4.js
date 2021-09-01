@@ -14,7 +14,6 @@ var searchData=
   ['default_5flog',['default_log',['../structvw__dbg.html#a6c974ade8e99bfb1565c62d2f715b3e2',1,'vw_dbg']]],
   ['default_5fnamespace',['default_namespace',['../constant_8h.html#ac5f7a89af82daae29351dde7bc52cce4',1,'constant.h']]],
   ['default_5fstate',['default_state',['../structContext.html#a0e0a976e8e6bf9b15f095758b5094521',1,'Context']]],
-  ['delete_5fprediction',['delete_prediction',['../namespaceVW.html#ac40013c94c682c8e00855b3b1f1859a7',1,'VW']]],
   ['dense_5fweights',['dense_weights',['../classparameters.html#aaac8b2f50c6d9ee2946d09c9183b4029',1,'parameters']]],
   ['depth',['depth',['../structVW_1_1cats__tree_1_1tree__node.html#a1ea0d14ccf7fe22a107bd38b7364d860',1,'VW::cats_tree::tree_node']]],
   ['dict',['dict',['../structdictionary__info.html#a2d11720a16042a4f08e04b63a9a1ab85',1,'dictionary_info']]],

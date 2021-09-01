@@ -102,7 +102,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a120b97b4c9abae50db1790aaf8f03c13"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1object__pool.html#a120b97b4c9abae50db1790aaf8f03c13">object_pool</a> ()=default</td></tr>
 <tr class="separator:a120b97b4c9abae50db1790aaf8f03c13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdcabd712940120db798ca9924edf5d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1object__pool.html#acdcabd712940120db798ca9924edf5d7">object_pool</a> (<a class="el" href="namespaceVW.html#a1b612838cb4c4e9de986bd948829a38f">size_t</a> initial_chunk_size, TInitializer initializer={}, <a class="el" href="namespaceVW.html#a1b612838cb4c4e9de986bd948829a38f">size_t</a> chunk_size=8)</td></tr>
+<tr class="memitem:acdcabd712940120db798ca9924edf5d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1object__pool.html#acdcabd712940120db798ca9924edf5d7">object_pool</a> (size_t initial_chunk_size, TInitializer initializer={}, size_t chunk_size=8)</td></tr>
 <tr class="separator:acdcabd712940120db798ca9924edf5d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a974e0aabc3e1626f364a8941a7307c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1object__pool.html#a2a974e0aabc3e1626f364a8941a7307c">return_object</a> (T *obj)</td></tr>
 <tr class="separator:a2a974e0aabc3e1626f364a8941a7307c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -110,7 +110,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a206230f351210d7a36779e2929e1d10c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07d034ac1bf0da39d45ce968bd34fe55"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1object__pool.html#a07d034ac1bf0da39d45ce968bd34fe55">empty</a> () const </td></tr>
 <tr class="separator:a07d034ac1bf0da39d45ce968bd34fe55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f08d08ee9176bffa8cdb377e9cdbca1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceVW.html#a1b612838cb4c4e9de986bd948829a38f">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1object__pool.html#a2f08d08ee9176bffa8cdb377e9cdbca1">size</a> () const </td></tr>
+<tr class="memitem:a2f08d08ee9176bffa8cdb377e9cdbca1"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1object__pool.html#a2f08d08ee9176bffa8cdb377e9cdbca1">size</a> () const </td></tr>
 <tr class="separator:a2f08d08ee9176bffa8cdb377e9cdbca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af171d9ebc0fc97a1b07a15b43cbbd00d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1object__pool.html#af171d9ebc0fc97a1b07a15b43cbbd00d">is_from_pool</a> (T *obj) const </td></tr>
 <tr class="separator:af171d9ebc0fc97a1b07a15b43cbbd00d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,7 +153,7 @@ template&lt;typename T, typename TInitializer = default_initializer&lt;T&gt;, ty
         <tr>
           <td class="memname"><a class="el" href="structVW_1_1object__pool.html">VW::object_pool</a>&lt; T, TInitializer, TCleanup &gt;::<a class="el" href="structVW_1_1object__pool.html">object_pool</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceVW.html#a1b612838cb4c4e9de986bd948829a38f">size_t</a>&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>initial_chunk_size</em>, </td>
         </tr>
         <tr>
@@ -165,7 +165,7 @@ template&lt;typename T, typename TInitializer = default_initializer&lt;T&gt;, ty
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespaceVW.html#a1b612838cb4c4e9de986bd948829a38f">size_t</a>&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>chunk_size</em> = <code>8</code>&#160;</td>
         </tr>
         <tr>
@@ -296,7 +296,7 @@ template&lt;typename T, typename TInitializer = default_initializer&lt;T&gt;, ty
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceVW.html#a1b612838cb4c4e9de986bd948829a38f">size_t</a> <a class="el" href="structVW_1_1object__pool.html">VW::object_pool</a>&lt; T, TInitializer, TCleanup &gt;::size </td>
+          <td class="memname">size_t <a class="el" href="structVW_1_1object__pool.html">VW::object_pool</a>&lt; T, TInitializer, TCleanup &gt;::size </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -317,7 +317,7 @@ template&lt;typename T, typename TInitializer = default_initializer&lt;T&gt;, ty
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 1 2021 16:35:08 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 1 2021 18:01:50 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

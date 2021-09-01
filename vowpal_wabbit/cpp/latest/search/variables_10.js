@@ -36,11 +36,9 @@ var searchData=
   ['predicted_5fclass',['predicted_class',['../structVW_1_1active__multiclass__prediction.html#ac2d89b36bfd8be92d0ebfd173180dc07',1,'VW::active_multiclass_prediction']]],
   ['preserve_5fperformance_5fcounters',['preserve_performance_counters',['../structvw.html#ac1c194273bff7969943f9ca78b5401e4',1,'vw']]],
   ['previous_5fstate',['previous_state',['../structContext.html#ac1b1241f0d58f1b71146c1675e4dbdd7',1,'Context']]],
-  ['print',['print',['../structvw.html#a604edb5397fe46c7d5df0cbedf28b0a6',1,'vw']]],
   ['print_5fby_5fref',['print_by_ref',['../structvw.html#a02b0679e7ac821c9ca48d2228f76219d',1,'vw']]],
   ['print_5fexample_5ff',['print_example_f',['../structVW_1_1LEARNER_1_1finish__example__data.html#a3a645c3a05bb52eb9a31800f055bf0b0',1,'VW::LEARNER::finish_example_data']]],
   ['print_5finvert',['print_invert',['../structvw.html#a5fc8bf4e2faab872603875d10c61a846',1,'vw']]],
-  ['print_5ftext',['print_text',['../structvw.html#acc1a4b9d34fb0fcb493224311d5c74d9',1,'vw']]],
   ['print_5ftext_5fby_5fref',['print_text_by_ref',['../structvw.html#ad120d181510526c4840962f5c592286e',1,'vw']]],
   ['printable_5fend',['printable_end',['../namespaceINTERACTIONS.html#ab7057302d3be0589886a9176ed6de869',1,'INTERACTIONS']]],
   ['printable_5fns_5fsize',['printable_ns_size',['../namespaceINTERACTIONS.html#a7f87947f9c265befa67546371409c3f4',1,'INTERACTIONS']]],
@@ -52,7 +50,6 @@ var searchData=
   ['probability_5ftolerance',['probability_tolerance',['../constant_8h.html#a2d817f5db781c538da7d027e030909b8',1,'constant.h']]],
   ['probabilityofdrop',['probabilityOfDrop',['../structDecisionServiceInteraction.html#a0e2a393fe1b1427ca5ee5c3fb98ea785',1,'DecisionServiceInteraction']]],
   ['probs',['probs',['../classLabelObjectState.html#adbe8675cee3239b2f7b77ac3e4a90e53',1,'LabelObjectState']]],
-  ['program_5fname',['program_name',['../structvw.html#a3a47c849579030d6b922aa2891076858',1,'vw']]],
   ['progress_5fadd',['progress_add',['../structvw.html#ab7b7f1e764da852d44b5e900fa991d95',1,'vw']]],
   ['progress_5farg',['progress_arg',['../structvw.html#a33eefadb9fb5b904e8454a4c864f47a3',1,'vw']]]
 ];
