@@ -22,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -32,14 +32,14 @@
     
   <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script >
+    <script>
         const thebe_selector = ".cell"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
@@ -465,16 +465,16 @@
   <div class="section" id="module-vowpalwabbit.DFtoVW">
 <span id="vowpalwabbit-dftovw"></span><h1>vowpalwabbit.DFtoVW<a class="headerlink" href="#module-vowpalwabbit.DFtoVW" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
-<dt id="vowpalwabbit.DFtoVW.AttributeDescriptor">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">vowpalwabbit.DFtoVW.</span></code><code class="sig-name descname"><span class="pre">AttributeDescriptor</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">attribute_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.AttributeDescriptor" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="vowpalwabbit.DFtoVW.AttributeDescriptor">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">vowpalwabbit.DFtoVW.</span></span><span class="sig-name descname"><span class="pre">AttributeDescriptor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">attribute_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.AttributeDescriptor" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>This descriptor class add type and value checking informations to the _Col
 instance for future usage in the DFtoVW class. Indeed, the type and value checking
 can only be done once the dataframe is known (i.e in DFtoVW class). This descriptor
 class is used in the following managed class: SimpleLabel, MulticlassLabel, Feature, etc.</p>
 <dl class="py method">
-<dt id="vowpalwabbit.DFtoVW.AttributeDescriptor.__init__">
-<code class="sig-name descname"><span class="pre">__init__</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">attribute_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.AttributeDescriptor.__init__" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="vowpalwabbit.DFtoVW.AttributeDescriptor.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">attribute_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.AttributeDescriptor.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>Initialize an AttributeDescriptor instance</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -499,13 +499,13 @@ class is used in the following managed class: SimpleLabel, MulticlassLabel, Feat
 </dd></dl>
 
 <dl class="py class">
-<dt id="vowpalwabbit.DFtoVW.ContextualbanditLabel">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">vowpalwabbit.DFtoVW.</span></code><code class="sig-name descname"><span class="pre">ContextualbanditLabel</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">action</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cost</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">probability</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.ContextualbanditLabel" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="vowpalwabbit.DFtoVW.ContextualbanditLabel">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">vowpalwabbit.DFtoVW.</span></span><span class="sig-name descname"><span class="pre">ContextualbanditLabel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">action</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cost</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">probability</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.ContextualbanditLabel" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>The contextual bandit label type for the constructor of DFtoVW.</p>
 <dl class="py method">
-<dt id="vowpalwabbit.DFtoVW.ContextualbanditLabel.__init__">
-<code class="sig-name descname"><span class="pre">__init__</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">action</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cost</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">probability</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.ContextualbanditLabel.__init__" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="vowpalwabbit.DFtoVW.ContextualbanditLabel.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">action</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cost</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">probability</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.ContextualbanditLabel.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>Initialize a ContextualbanditLabel instance.
 Parameters
 ———-
@@ -523,8 +523,8 @@ action: str</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="vowpalwabbit.DFtoVW.ContextualbanditLabel.action">
-<code class="sig-name descname"><span class="pre">action</span></code><a class="headerlink" href="#vowpalwabbit.DFtoVW.ContextualbanditLabel.action" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="vowpalwabbit.DFtoVW.ContextualbanditLabel.action">
+<span class="sig-name descname"><span class="pre">action</span></span><a class="headerlink" href="#vowpalwabbit.DFtoVW.ContextualbanditLabel.action" title="Permalink to this definition">¶</a></dt>
 <dd><p>This descriptor class add type and value checking informations to the _Col
 instance for future usage in the DFtoVW class. Indeed, the type and value checking
 can only be done once the dataframe is known (i.e in DFtoVW class). This descriptor
@@ -532,8 +532,8 @@ class is used in the following managed class: SimpleLabel, MulticlassLabel, Feat
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="vowpalwabbit.DFtoVW.ContextualbanditLabel.cost">
-<code class="sig-name descname"><span class="pre">cost</span></code><a class="headerlink" href="#vowpalwabbit.DFtoVW.ContextualbanditLabel.cost" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="vowpalwabbit.DFtoVW.ContextualbanditLabel.cost">
+<span class="sig-name descname"><span class="pre">cost</span></span><a class="headerlink" href="#vowpalwabbit.DFtoVW.ContextualbanditLabel.cost" title="Permalink to this definition">¶</a></dt>
 <dd><p>This descriptor class add type and value checking informations to the _Col
 instance for future usage in the DFtoVW class. Indeed, the type and value checking
 can only be done once the dataframe is known (i.e in DFtoVW class). This descriptor
@@ -541,8 +541,8 @@ class is used in the following managed class: SimpleLabel, MulticlassLabel, Feat
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="vowpalwabbit.DFtoVW.ContextualbanditLabel.probability">
-<code class="sig-name descname"><span class="pre">probability</span></code><a class="headerlink" href="#vowpalwabbit.DFtoVW.ContextualbanditLabel.probability" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="vowpalwabbit.DFtoVW.ContextualbanditLabel.probability">
+<span class="sig-name descname"><span class="pre">probability</span></span><a class="headerlink" href="#vowpalwabbit.DFtoVW.ContextualbanditLabel.probability" title="Permalink to this definition">¶</a></dt>
 <dd><p>This descriptor class add type and value checking informations to the _Col
 instance for future usage in the DFtoVW class. Indeed, the type and value checking
 can only be done once the dataframe is known (i.e in DFtoVW class). This descriptor
@@ -550,8 +550,8 @@ class is used in the following managed class: SimpleLabel, MulticlassLabel, Feat
 </dd></dl>
 
 <dl class="py method">
-<dt id="vowpalwabbit.DFtoVW.ContextualbanditLabel.process">
-<code class="sig-name descname"><span class="pre">process</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.ContextualbanditLabel.process" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="vowpalwabbit.DFtoVW.ContextualbanditLabel.process">
+<span class="sig-name descname"><span class="pre">process</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.ContextualbanditLabel.process" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the ContextualbanditLabel string representation.
 Parameters
 ———-
@@ -568,8 +568,8 @@ df : pandas.DataFrame</p>
 </dd></dl>
 
 <dl class="py class">
-<dt id="vowpalwabbit.DFtoVW.DFtoVW">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">vowpalwabbit.DFtoVW.</span></code><code class="sig-name descname"><span class="pre">DFtoVW</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">features</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">namespaces</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tag</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.DFtoVW" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="vowpalwabbit.DFtoVW.DFtoVW">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">vowpalwabbit.DFtoVW.</span></span><span class="sig-name descname"><span class="pre">DFtoVW</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">features</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">namespaces</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tag</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.DFtoVW" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Convert a pandas DataFrame to a suitable VW format.
 Instances of this class are built with classes such as SimpleLabel,
@@ -577,8 +577,8 @@ MulticlassLabel, Feature or Namespace.</p>
 <p>The class also provided a convenience constructor to initialize the class
 based on the target/features column names only.</p>
 <dl class="py method">
-<dt id="vowpalwabbit.DFtoVW.DFtoVW.__init__">
-<code class="sig-name descname"><span class="pre">__init__</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">features</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">namespaces</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tag</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.DFtoVW.__init__" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="vowpalwabbit.DFtoVW.DFtoVW.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">features</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">namespaces</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tag</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.DFtoVW.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>Initialize a DFtoVW instance.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -642,14 +642,14 @@ more Feature object(s).</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="vowpalwabbit.DFtoVW.DFtoVW.check_columns_type_and_values">
-<code class="sig-name descname"><span class="pre">check_columns_type_and_values</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.DFtoVW.check_columns_type_and_values" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="vowpalwabbit.DFtoVW.DFtoVW.check_columns_type_and_values">
+<span class="sig-name descname"><span class="pre">check_columns_type_and_values</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.DFtoVW.check_columns_type_and_values" title="Permalink to this definition">¶</a></dt>
 <dd><p>Check columns type and values range.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="vowpalwabbit.DFtoVW.DFtoVW.check_features_type">
-<code class="sig-name descname"><span class="pre">check_features_type</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">features</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.DFtoVW.check_features_type" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="vowpalwabbit.DFtoVW.DFtoVW.check_features_type">
+<span class="sig-name descname"><span class="pre">check_features_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">features</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.DFtoVW.check_features_type" title="Permalink to this definition">¶</a></dt>
 <dd><p>Check if the features argument is of type Feature.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -668,8 +668,8 @@ more Feature object(s).</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="vowpalwabbit.DFtoVW.DFtoVW.check_instance_columns">
-<code class="sig-name descname"><span class="pre">check_instance_columns</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.DFtoVW.check_instance_columns" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="vowpalwabbit.DFtoVW.DFtoVW.check_instance_columns">
+<span class="sig-name descname"><span class="pre">check_instance_columns</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.DFtoVW.check_instance_columns" title="Permalink to this definition">¶</a></dt>
 <dd><p>Check the columns type and values of a given instance.
 The method iterate through the attributes and look for _Col type
 attribute. Once found, the method use the _Col methods to check the
@@ -689,8 +689,8 @@ explicit about where the error occurs in the formula.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="vowpalwabbit.DFtoVW.DFtoVW.check_label_type">
-<code class="sig-name descname"><span class="pre">check_label_type</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.DFtoVW.check_label_type" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="vowpalwabbit.DFtoVW.DFtoVW.check_label_type">
+<span class="sig-name descname"><span class="pre">check_label_type</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.DFtoVW.check_label_type" title="Permalink to this definition">¶</a></dt>
 <dd><p>Check label type.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Raises</dt>
@@ -703,14 +703,14 @@ explicit about where the error occurs in the formula.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="vowpalwabbit.DFtoVW.DFtoVW.check_missing_columns_df">
-<code class="sig-name descname"><span class="pre">check_missing_columns_df</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.DFtoVW.check_missing_columns_df" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="vowpalwabbit.DFtoVW.DFtoVW.check_missing_columns_df">
+<span class="sig-name descname"><span class="pre">check_missing_columns_df</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.DFtoVW.check_missing_columns_df" title="Permalink to this definition">¶</a></dt>
 <dd><p>Check if the columns are in the dataframe.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="vowpalwabbit.DFtoVW.DFtoVW.check_namespaces_type">
-<code class="sig-name descname"><span class="pre">check_namespaces_type</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.DFtoVW.check_namespaces_type" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="vowpalwabbit.DFtoVW.DFtoVW.check_namespaces_type">
+<span class="sig-name descname"><span class="pre">check_namespaces_type</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.DFtoVW.check_namespaces_type" title="Permalink to this definition">¶</a></dt>
 <dd><p>Check if namespaces arguments are of type Namespace.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Raises</dt>
@@ -723,8 +723,8 @@ explicit about where the error occurs in the formula.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="vowpalwabbit.DFtoVW.DFtoVW.convert_df">
-<code class="sig-name descname"><span class="pre">convert_df</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.DFtoVW.convert_df" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="vowpalwabbit.DFtoVW.DFtoVW.convert_df">
+<span class="sig-name descname"><span class="pre">convert_df</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.DFtoVW.convert_df" title="Permalink to this definition">¶</a></dt>
 <dd><p>Main method that converts the dataframe to the VW format.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -737,8 +737,8 @@ explicit about where the error occurs in the formula.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="vowpalwabbit.DFtoVW.DFtoVW.empty_col">
-<code class="sig-name descname"><span class="pre">empty_col</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.DFtoVW.empty_col" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="vowpalwabbit.DFtoVW.DFtoVW.empty_col">
+<span class="sig-name descname"><span class="pre">empty_col</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.DFtoVW.empty_col" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create an empty string column.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -751,8 +751,8 @@ explicit about where the error occurs in the formula.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="vowpalwabbit.DFtoVW.DFtoVW.from_colnames">
-<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">from_colnames</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'simple_label'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.DFtoVW.from_colnames" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="vowpalwabbit.DFtoVW.DFtoVW.from_colnames">
+<em class="property"><span class="pre">classmethod</span> </em><span class="sig-name descname"><span class="pre">from_colnames</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'simple_label'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.DFtoVW.from_colnames" title="Permalink to this definition">¶</a></dt>
 <dd><p>Build DFtoVW instance using column names only.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -800,8 +800,8 @@ explicit about where the error occurs in the formula.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="vowpalwabbit.DFtoVW.DFtoVW.process_features">
-<code class="sig-name descname"><span class="pre">process_features</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">features</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.DFtoVW.process_features" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="vowpalwabbit.DFtoVW.DFtoVW.process_features">
+<span class="sig-name descname"><span class="pre">process_features</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">features</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.DFtoVW.process_features" title="Permalink to this definition">¶</a></dt>
 <dd><p>Process the features (of a namespace) into a unique column.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -820,8 +820,8 @@ explicit about where the error occurs in the formula.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="vowpalwabbit.DFtoVW.DFtoVW.process_label_and_tag">
-<code class="sig-name descname"><span class="pre">process_label_and_tag</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.DFtoVW.process_label_and_tag" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="vowpalwabbit.DFtoVW.DFtoVW.process_label_and_tag">
+<span class="sig-name descname"><span class="pre">process_label_and_tag</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.DFtoVW.process_label_and_tag" title="Permalink to this definition">¶</a></dt>
 <dd><p>Process the label and tag into a unique column.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -834,8 +834,8 @@ explicit about where the error occurs in the formula.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="vowpalwabbit.DFtoVW.DFtoVW.raise_missing_col_error">
-<code class="sig-name descname"><span class="pre">raise_missing_col_error</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">missing_cols_dict</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.DFtoVW.raise_missing_col_error" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="vowpalwabbit.DFtoVW.DFtoVW.raise_missing_col_error">
+<span class="sig-name descname"><span class="pre">raise_missing_col_error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">missing_cols_dict</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.DFtoVW.raise_missing_col_error" title="Permalink to this definition">¶</a></dt>
 <dd><p>Raises error if some columns are missing.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Raises</dt>
@@ -848,8 +848,8 @@ explicit about where the error occurs in the formula.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="vowpalwabbit.DFtoVW.DFtoVW.set_namespaces">
-<code class="sig-name descname"><span class="pre">set_namespaces</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">namespaces</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">features</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.DFtoVW.set_namespaces" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="vowpalwabbit.DFtoVW.DFtoVW.set_namespaces">
+<span class="sig-name descname"><span class="pre">set_namespaces</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">namespaces</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">features</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.DFtoVW.set_namespaces" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set namespaces attributes</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -866,13 +866,13 @@ explicit about where the error occurs in the formula.</p>
 </dd></dl>
 
 <dl class="py class">
-<dt id="vowpalwabbit.DFtoVW.Feature">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">vowpalwabbit.DFtoVW.</span></code><code class="sig-name descname"><span class="pre">Feature</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rename_feature</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">as_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.Feature" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="vowpalwabbit.DFtoVW.Feature">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">vowpalwabbit.DFtoVW.</span></span><span class="sig-name descname"><span class="pre">Feature</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rename_feature</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">as_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.Feature" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>The feature type for the constructor of DFtoVW</p>
 <dl class="py method">
-<dt id="vowpalwabbit.DFtoVW.Feature.__init__">
-<code class="sig-name descname"><span class="pre">__init__</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rename_feature</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">as_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.Feature.__init__" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="vowpalwabbit.DFtoVW.Feature.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rename_feature</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">as_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.Feature.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>Initialize a Feature instance.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -892,8 +892,8 @@ explicit about where the error occurs in the formula.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="vowpalwabbit.DFtoVW.Feature.process">
-<code class="sig-name descname"><span class="pre">process</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.Feature.process" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="vowpalwabbit.DFtoVW.Feature.process">
+<span class="sig-name descname"><span class="pre">process</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.Feature.process" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the Feature string representation.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -912,8 +912,8 @@ explicit about where the error occurs in the formula.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="vowpalwabbit.DFtoVW.Feature.value">
-<code class="sig-name descname"><span class="pre">value</span></code><a class="headerlink" href="#vowpalwabbit.DFtoVW.Feature.value" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="vowpalwabbit.DFtoVW.Feature.value">
+<span class="sig-name descname"><span class="pre">value</span></span><a class="headerlink" href="#vowpalwabbit.DFtoVW.Feature.value" title="Permalink to this definition">¶</a></dt>
 <dd><p>This descriptor class add type and value checking informations to the _Col
 instance for future usage in the DFtoVW class. Indeed, the type and value checking
 can only be done once the dataframe is known (i.e in DFtoVW class). This descriptor
@@ -923,13 +923,13 @@ class is used in the following managed class: SimpleLabel, MulticlassLabel, Feat
 </dd></dl>
 
 <dl class="py class">
-<dt id="vowpalwabbit.DFtoVW.MultiLabel">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">vowpalwabbit.DFtoVW.</span></code><code class="sig-name descname"><span class="pre">MultiLabel</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.MultiLabel" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="vowpalwabbit.DFtoVW.MultiLabel">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">vowpalwabbit.DFtoVW.</span></span><span class="sig-name descname"><span class="pre">MultiLabel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.MultiLabel" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>The multi labels type for the constructor of DFtoVW.</p>
 <dl class="py method">
-<dt id="vowpalwabbit.DFtoVW.MultiLabel.__init__">
-<code class="sig-name descname"><span class="pre">__init__</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.MultiLabel.__init__" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="vowpalwabbit.DFtoVW.MultiLabel.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.MultiLabel.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>Initialize a MultiLabel instance.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -947,8 +947,8 @@ class is used in the following managed class: SimpleLabel, MulticlassLabel, Feat
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="vowpalwabbit.DFtoVW.MultiLabel.label">
-<code class="sig-name descname"><span class="pre">label</span></code><a class="headerlink" href="#vowpalwabbit.DFtoVW.MultiLabel.label" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="vowpalwabbit.DFtoVW.MultiLabel.label">
+<span class="sig-name descname"><span class="pre">label</span></span><a class="headerlink" href="#vowpalwabbit.DFtoVW.MultiLabel.label" title="Permalink to this definition">¶</a></dt>
 <dd><p>This descriptor class add type and value checking informations to the _Col
 instance for future usage in the DFtoVW class. Indeed, the type and value checking
 can only be done once the dataframe is known (i.e in DFtoVW class). This descriptor
@@ -956,8 +956,8 @@ class is used in the following managed class: SimpleLabel, MulticlassLabel, Feat
 </dd></dl>
 
 <dl class="py method">
-<dt id="vowpalwabbit.DFtoVW.MultiLabel.process">
-<code class="sig-name descname"><span class="pre">process</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.MultiLabel.process" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="vowpalwabbit.DFtoVW.MultiLabel.process">
+<span class="sig-name descname"><span class="pre">process</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.MultiLabel.process" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the MultiLabel string representation.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -978,13 +978,13 @@ class is used in the following managed class: SimpleLabel, MulticlassLabel, Feat
 </dd></dl>
 
 <dl class="py class">
-<dt id="vowpalwabbit.DFtoVW.MulticlassLabel">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">vowpalwabbit.DFtoVW.</span></code><code class="sig-name descname"><span class="pre">MulticlassLabel</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weight</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.MulticlassLabel" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="vowpalwabbit.DFtoVW.MulticlassLabel">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">vowpalwabbit.DFtoVW.</span></span><span class="sig-name descname"><span class="pre">MulticlassLabel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weight</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.MulticlassLabel" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>The multiclass label type for the constructor of DFtoVW.</p>
 <dl class="py method">
-<dt id="vowpalwabbit.DFtoVW.MulticlassLabel.__init__">
-<code class="sig-name descname"><span class="pre">__init__</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weight</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.MulticlassLabel.__init__" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="vowpalwabbit.DFtoVW.MulticlassLabel.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weight</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.MulticlassLabel.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>Initialize a MulticlassLabel instance.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1004,8 +1004,8 @@ class is used in the following managed class: SimpleLabel, MulticlassLabel, Feat
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="vowpalwabbit.DFtoVW.MulticlassLabel.label">
-<code class="sig-name descname"><span class="pre">label</span></code><a class="headerlink" href="#vowpalwabbit.DFtoVW.MulticlassLabel.label" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="vowpalwabbit.DFtoVW.MulticlassLabel.label">
+<span class="sig-name descname"><span class="pre">label</span></span><a class="headerlink" href="#vowpalwabbit.DFtoVW.MulticlassLabel.label" title="Permalink to this definition">¶</a></dt>
 <dd><p>This descriptor class add type and value checking informations to the _Col
 instance for future usage in the DFtoVW class. Indeed, the type and value checking
 can only be done once the dataframe is known (i.e in DFtoVW class). This descriptor
@@ -1013,8 +1013,8 @@ class is used in the following managed class: SimpleLabel, MulticlassLabel, Feat
 </dd></dl>
 
 <dl class="py method">
-<dt id="vowpalwabbit.DFtoVW.MulticlassLabel.process">
-<code class="sig-name descname"><span class="pre">process</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.MulticlassLabel.process" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="vowpalwabbit.DFtoVW.MulticlassLabel.process">
+<span class="sig-name descname"><span class="pre">process</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.MulticlassLabel.process" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the MulticlassLabel string representation.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1033,8 +1033,8 @@ class is used in the following managed class: SimpleLabel, MulticlassLabel, Feat
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="vowpalwabbit.DFtoVW.MulticlassLabel.weight">
-<code class="sig-name descname"><span class="pre">weight</span></code><a class="headerlink" href="#vowpalwabbit.DFtoVW.MulticlassLabel.weight" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="vowpalwabbit.DFtoVW.MulticlassLabel.weight">
+<span class="sig-name descname"><span class="pre">weight</span></span><a class="headerlink" href="#vowpalwabbit.DFtoVW.MulticlassLabel.weight" title="Permalink to this definition">¶</a></dt>
 <dd><p>This descriptor class add type and value checking informations to the _Col
 instance for future usage in the DFtoVW class. Indeed, the type and value checking
 can only be done once the dataframe is known (i.e in DFtoVW class). This descriptor
@@ -1044,15 +1044,15 @@ class is used in the following managed class: SimpleLabel, MulticlassLabel, Feat
 </dd></dl>
 
 <dl class="py class">
-<dt id="vowpalwabbit.DFtoVW.Namespace">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">vowpalwabbit.DFtoVW.</span></code><code class="sig-name descname"><span class="pre">Namespace</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">features</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.Namespace" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="vowpalwabbit.DFtoVW.Namespace">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">vowpalwabbit.DFtoVW.</span></span><span class="sig-name descname"><span class="pre">Namespace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">features</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.Namespace" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>The namespace type for the constructor of DFtoVW.
 The Namespace is a container for Feature object(s), and thus must
 be composed of a Feature object or a list of Feature objects.</p>
 <dl class="py method">
-<dt id="vowpalwabbit.DFtoVW.Namespace.__init__">
-<code class="sig-name descname"><span class="pre">__init__</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">features</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.Namespace.__init__" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="vowpalwabbit.DFtoVW.Namespace.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">features</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.Namespace.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>Initialize a Namespace instance.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1083,8 +1083,8 @@ namespace.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="vowpalwabbit.DFtoVW.Namespace.check_attributes_type">
-<code class="sig-name descname"><span class="pre">check_attributes_type</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.Namespace.check_attributes_type" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="vowpalwabbit.DFtoVW.Namespace.check_attributes_type">
+<span class="sig-name descname"><span class="pre">check_attributes_type</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.Namespace.check_attributes_type" title="Permalink to this definition">¶</a></dt>
 <dd><p>Check if attributes are of valid type.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Raises</dt>
@@ -1097,13 +1097,13 @@ namespace.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="vowpalwabbit.DFtoVW.Namespace.expected_type">
-<code class="sig-name descname"><span class="pre">expected_type</span></code><em class="property"> <span class="pre">=</span> <span class="pre">{'features':</span> <span class="pre">(&lt;class</span> <span class="pre">'vowpalwabbit.DFtoVW.Feature'&gt;,),</span> <span class="pre">'name':</span> <span class="pre">(&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;,</span> <span class="pre">&lt;class</span> <span class="pre">'float'&gt;),</span> <span class="pre">'value':</span> <span class="pre">(&lt;class</span> <span class="pre">'int'&gt;,</span> <span class="pre">&lt;class</span> <span class="pre">'float'&gt;)}</span></em><a class="headerlink" href="#vowpalwabbit.DFtoVW.Namespace.expected_type" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="vowpalwabbit.DFtoVW.Namespace.expected_type">
+<span class="sig-name descname"><span class="pre">expected_type</span></span><em class="property"> <span class="pre">=</span> <span class="pre">{'features':</span> <span class="pre">(&lt;class</span> <span class="pre">'vowpalwabbit.DFtoVW.Feature'&gt;,),</span> <span class="pre">'name':</span> <span class="pre">(&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;,</span> <span class="pre">&lt;class</span> <span class="pre">'float'&gt;),</span> <span class="pre">'value':</span> <span class="pre">(&lt;class</span> <span class="pre">'int'&gt;,</span> <span class="pre">&lt;class</span> <span class="pre">'float'&gt;)}</span></em><a class="headerlink" href="#vowpalwabbit.DFtoVW.Namespace.expected_type" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="vowpalwabbit.DFtoVW.Namespace.process">
-<code class="sig-name descname"><span class="pre">process</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.Namespace.process" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="vowpalwabbit.DFtoVW.Namespace.process">
+<span class="sig-name descname"><span class="pre">process</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.Namespace.process" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the Namespace string representation</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -1118,13 +1118,13 @@ namespace.</p>
 </dd></dl>
 
 <dl class="py class">
-<dt id="vowpalwabbit.DFtoVW.SimpleLabel">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">vowpalwabbit.DFtoVW.</span></code><code class="sig-name descname"><span class="pre">SimpleLabel</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weight</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.SimpleLabel" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="vowpalwabbit.DFtoVW.SimpleLabel">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">vowpalwabbit.DFtoVW.</span></span><span class="sig-name descname"><span class="pre">SimpleLabel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weight</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.SimpleLabel" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>The simple label type for the constructor of DFtoVW.</p>
 <dl class="py method">
-<dt id="vowpalwabbit.DFtoVW.SimpleLabel.__init__">
-<code class="sig-name descname"><span class="pre">__init__</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weight</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.SimpleLabel.__init__" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="vowpalwabbit.DFtoVW.SimpleLabel.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weight</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.SimpleLabel.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>Initialize a SimpleLabel instance.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1144,8 +1144,8 @@ namespace.</p>
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="vowpalwabbit.DFtoVW.SimpleLabel.label">
-<code class="sig-name descname"><span class="pre">label</span></code><a class="headerlink" href="#vowpalwabbit.DFtoVW.SimpleLabel.label" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="vowpalwabbit.DFtoVW.SimpleLabel.label">
+<span class="sig-name descname"><span class="pre">label</span></span><a class="headerlink" href="#vowpalwabbit.DFtoVW.SimpleLabel.label" title="Permalink to this definition">¶</a></dt>
 <dd><p>This descriptor class add type and value checking informations to the _Col
 instance for future usage in the DFtoVW class. Indeed, the type and value checking
 can only be done once the dataframe is known (i.e in DFtoVW class). This descriptor
@@ -1153,8 +1153,8 @@ class is used in the following managed class: SimpleLabel, MulticlassLabel, Feat
 </dd></dl>
 
 <dl class="py method">
-<dt id="vowpalwabbit.DFtoVW.SimpleLabel.process">
-<code class="sig-name descname"><span class="pre">process</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.SimpleLabel.process" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="vowpalwabbit.DFtoVW.SimpleLabel.process">
+<span class="sig-name descname"><span class="pre">process</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.DFtoVW.SimpleLabel.process" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the SimpleLabel string representation.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1173,8 +1173,8 @@ class is used in the following managed class: SimpleLabel, MulticlassLabel, Feat
 </dd></dl>
 
 <dl class="py attribute">
-<dt id="vowpalwabbit.DFtoVW.SimpleLabel.weight">
-<code class="sig-name descname"><span class="pre">weight</span></code><a class="headerlink" href="#vowpalwabbit.DFtoVW.SimpleLabel.weight" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="vowpalwabbit.DFtoVW.SimpleLabel.weight">
+<span class="sig-name descname"><span class="pre">weight</span></span><a class="headerlink" href="#vowpalwabbit.DFtoVW.SimpleLabel.weight" title="Permalink to this definition">¶</a></dt>
 <dd><p>This descriptor class add type and value checking informations to the _Col
 instance for future usage in the DFtoVW class. Indeed, the type and value checking
 can only be done once the dataframe is known (i.e in DFtoVW class). This descriptor
@@ -1235,7 +1235,7 @@ class is used in the following managed class: SimpleLabel, MulticlassLabel, Feat
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.4.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.1.2.<br/>
 </p>
     </div>
     

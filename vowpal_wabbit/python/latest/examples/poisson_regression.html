@@ -22,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -32,14 +32,14 @@
     
   <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script >
+    <script>
         const thebe_selector = ".cell"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
@@ -469,7 +469,7 @@
 
               <div>
                 
-  <div class="section" id="poisson-regression">
+  <div class="tex2jax_ignore mathjax_ignore section" id="poisson-regression">
 <h1>Poisson Regression<a class="headerlink" href="#poisson-regression" title="Permalink to this headline">¶</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -527,31 +527,28 @@ num sources = 1
 Enabled reductions: gd, scorer-identity
 average  since         example        example  current  current  current
 loss     last          counter         weight    label  predict features
-6.965002 6.965002            1            1.0   2.6391   0.0000        3
-4.618320 2.271639            2            2.0   1.6096   0.1024        3
-4.069600 3.520880            4            4.0   2.3980   0.2502        3
-3.661455 3.253310            8            8.0   2.3027   0.5077        3
-2.867602 2.073749           16           16.0   2.4850   0.8058        3
-2.187106 1.506609           32           32.0   1.6096   0.7252        2
-1.503837 0.820568           64           64.0   2.6391   1.6670        3
-1.423842 1.343847          128          128.0   2.3980   1.4943        3
-1.048164 0.672486          256          256.0   3.0911   2.7729        3
-0.972069 0.895973          512          512.0   1.9461   1.9460        3
-0.863642 0.755215         1024         1024.0   0.0010   0.9015        2
-0.798607 0.733572         2048         2048.0   2.3980   2.4938        3
-0.770637 0.742666         4096         4096.0   2.6391   2.6699        3
-0.742152 0.713666         8192         8192.0   1.7919   1.7298        3
+5.750335 5.750335            1            1.0   2.3980   0.0000        3
+5.240987 4.731638            2            2.0   2.3980   0.2228        2
+5.113338 4.985689            4            4.0   2.7081   0.3605        3
+3.981912 2.850485            8            8.0   2.6391   0.4961        3
+3.203775 2.425639           16           16.0   1.3865   0.6530        3
+2.431529 1.659282           32           32.0   2.0796   0.9635        2
+1.691718 0.951907           64           64.0   1.7919   0.9311        2
+1.571946 1.452173          128          128.0   2.4850   2.0356        3
+1.181125 0.790304          256          256.0   1.9461   2.1079        3
+1.088522 0.995920          512          512.0   2.5650   2.8586        3
+0.976810 0.865097         1024         1024.0   1.9461   1.4573        3
+0.914517 0.852224         2048         2048.0   2.3980   1.9384        3
+0.878541 0.842565         4096         4096.0   2.4850   1.8035        3
+0.862317 0.846093         8192         8192.0   2.5650   2.3697        3
 
 finished run
-number of examples = 
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>10000
+number of examples = 10000
 weighted example sum = 10000.000000
-weighted label sum = 19481.125184
-average loss = 0.735336
-best constant = 1.948112
-total feature number = 28700
+weighted label sum = 19398.170919
+average loss = 0.863673
+best constant = 1.939817
+total feature number = 28100
 </pre></div>
 </div>
 </div>
@@ -579,15 +576,13 @@ num sources = 1
 Enabled reductions: gd, scorer-identity
 average  since         example        example  current  current  current
 loss     last          counter         weight    label  predict features
-0.058794 0.058794            1            1.0   2.6391   2.3967        3
-0.114292 0.169790            2            2.0   1.6096   1.1976        3
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.213549 0.312806            4            4.0   2.3980   1.8820        3
-0.209222 0.204895            8            8.0   2.3027   2.0597        3
-0.213432 0.217642           16           16.0   2.4850   2.5717        3
-0.193677 0.173923           32           32.0   1.6096   1.0330        2
-0.181263 0.168849           64           64.0   2.6391   2.5665        3
+0.112112 0.112112            1            1.0   2.3980   2.0632        3
+0.161395 0.210677            2            2.0   2.3980   1.9390        2
+0.112642 0.063890            4            4.0   2.7081   2.9735        3
+0.095979 0.079316            8            8.0   2.6391   2.3817        3
+0.200138 0.304296           16           16.0   1.3865   1.7694        3
+0.266170 0.332202           32           32.0   2.0796   1.7859        2
+0.269931 0.273691           64           64.0   1.7919   1.0080        2
 </pre></div>
 </div>
 </div>
@@ -624,31 +619,32 @@ loss     last          counter         weight    label  predict features
 finished run
 number of examples = 100
 weighted example sum = 100.000000
-weighted label sum = 194.811252
-average loss = 0.704559
-best constant = 1.948112
-total feature number = 287
-47.893608 47.893608            1            1.0  14.0000   0.0000        3
-27.579374 7.265140            2            2.0   5.0000   0.1051        3
-23.296873 19.014372            4            4.0  11.0000   0.2115        3
-21.845073 20.393273            8            8.0  10.0000   0.4757        3
-17.742413 13.639753           16           16.0  12.0000   0.7871        3
-14.500101 11.257789           32           32.0   5.0000   0.7570        2
-10.499852 6.499602           64           64.0  14.0000   1.7729        3
-6.487772 2.475692          128          128.0  11.0000   1.6667        3
-3.814620 1.141468          256          256.0  22.0000   2.8904        3
-2.483482 1.152344          512          512.0   7.0000   2.0613        3
-1.790851 1.098219         1024         1024.0   1.0000   1.1739        2
-1.445121 1.099392         2048         2048.0  11.0000   2.4865        3
-1.272660 1.100200         4096         4096.0  14.0000   2.6238        3
-1.184264 1.095867         8192         8192.0   6.0000   1.9476        3
-
-finished run
+weighted label sum = 193.981709
+average loss = 0.838498
+best constant = 1.939817
+total feature number = 281
+32.753696 32.753696            1            1.0  11.0000   0.0000        3
+30.494119 28.234541            2            2.0  11.0000   0.2288        2
+32.155058 33.815997            4            4.0  15.0000   0.3682        3
+24.824260 17.493463            8            8.0  14.0000   0.4963        3
+21.155195 17.486129           16           16.0   4.0000   0.6895        3
+15.998750 10.842306           32           32.0   8.0000   1.0031        2
+11.422207 6.845664           64           64.0   6.0000   0.9927        2
+7.136839 2.851471          128          128.0  12.0000   2.2615        3
+4.292528 1.448217          256          256.0   7.0000   2.2804        3
+2.816098 1.339668          512          512.0  13.0000   2.9350        3
+2.087661 1.359224         1024         1024.0   7.0000   1.6506        3
+1.719713 1.351766         2048         2048.0  11.0000   2.0704        3
+1.527260 1.334806         4096         4096.0  12.0000   2.0033        3
+1.430224 1.333189         8192         8192.0  13.0000   2.3713        3
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>finished run
 number of examples = 10000
 weighted example sum = 10000.000000
-weighted label sum = 91200.000000
-average loss = 1.168106
-total feature number = 28700
+weighted label sum = 90400.000000
+average loss = 1.412597
+total feature number = 28100
 </pre></div>
 </div>
 </div>
@@ -664,10 +660,7 @@ total feature number = 28700
 </div>
 <div class="cell_output docutils container">
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Num weight bits = 2
-learning rate = 
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.5
+learning rate = 0.5
 initial_t = 0
 power_t = 0.5
 using no cache
@@ -676,13 +669,13 @@ num sources = 1
 Enabled reductions: gd, scorer-identity
 average  since         example        example  current  current  current
 loss     last          counter         weight    label  predict features
-134.615799 134.615799            1            1.0  14.0000   2.3976        3
-73.088830 11.561860            2            2.0   5.0000   1.5997        3
-59.791834 46.494838            4            4.0  11.0000   2.0555        3
-61.780856 63.769878            8            8.0  10.0000   2.1708        3
-56.282924 50.784992           16           16.0  12.0000   2.5124        3
-60.271443 64.259961           32           32.0   5.0000   1.4872        2
-64.901262 69.531082           64           64.0  14.0000   2.5113        3
+77.889359 77.889359            1            1.0  11.0000   2.1745        3
+78.207584 78.525810            2            2.0  11.0000   2.1385        2
+91.913018 105.618452            4            4.0  15.0000   2.7526        3
+74.509489 57.105961            8            8.0  14.0000   2.4004        3
+75.659143 76.808796           16           16.0   4.0000   2.0029        3
+66.805004 57.950866           32           32.0   8.0000   2.0392        2
+66.149107 65.493209           64           64.0   6.0000   1.5151        2
 </pre></div>
 </div>
 </div>
@@ -773,7 +766,7 @@ loss     last          counter         weight    label  predict features
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.4.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.1.2.<br/>
 </p>
     </div>
     

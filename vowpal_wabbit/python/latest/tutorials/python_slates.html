@@ -22,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -32,14 +32,14 @@
     
   <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script >
+    <script>
         const thebe_selector = ".cell"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
@@ -499,7 +499,7 @@
 
               <div>
                 
-  <div class="section" id="slates">
+  <div class="tex2jax_ignore mathjax_ignore section" id="slates">
 <h1>Slates<a class="headerlink" href="#slates" title="Permalink to this headline">¶</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -628,29 +628,26 @@ Enabled reductions: gd, generate_interactions, scorer-identity, csoaa_ldf-rank, 
 average  since         example        example  current  current  current
 loss     last          counter         weight    label  predict features
     n.a.     n.a.            1            1.0  ?,?,... 0,0,0,...      138
--0.815197 -0.815197            2            2.0  0,0,... 0,0,0,...      138
--0.834913 -0.854630            4            4.0  0,1,... 0,1,0,...      138
--0.814112 -0.793311            8            8.0  0,0,... 0,0,0,...      138
--0.694786 -0.575461           16           16.0  0,1,... 0,1,0,...      138
--0.677239 -0.659691           32           32.0  0,0,... 0,0,1,...      138
--0.739472 -0.801705           64           64.0  1,1,... 1,1,1,...      138
--0.764521 -0.789570          128          128.0  2,0,... 2,0,0,...      138
--0.802982 -0.841444          256          256.0  2,2,... 2,2,1,...      138
--0.825898 -0.848814          512          512.0  1,2,... 1,2,0,...      138
--0.866925 -0.907953         1024         1024.0  1,1,... 1,1,0,...      138
--0.887792 -0.908659         2048         2048.0  2,2,... 2,2,3,...      138
+-0.588576 -0.588576            2            2.0  0,0,... 0,0,0,...      138
+-0.520858 -0.453140            4            4.0  0,1,... 0,1,0,...      138
+-0.585855 -0.650852            8            8.0  0,0,... 0,0,0,...      138
+-0.656899 -0.727943           16           16.0  0,1,... 0,1,0,...      138
+-0.615606 -0.574312           32           32.0  0,1,... 0,1,2,...      138
+-0.656098 -0.696591           64           64.0  1,0,... 1,0,0,...      138
+-0.693532 -0.730966          128          128.0  2,1,... 2,1,1,...      138
+-0.727011 -0.760489          256          256.0  2,0,... 2,0,0,...      138
+-0.799692 -0.872373          512          512.0  1,1,... 1,1,0,...      138
+-0.851640 -0.903587         1024         1024.0  1,2,... 1,2,0,...      138
+-0.890635 -0.929630         2048         2048.0  2,0,... 2,0,3,...      138
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.905638 -0.923483         4096         4096.0  2,0,... 2,0,3,...      138
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.909528 -0.928421         4096         4096.0  2,0,... 2,0,3,...      138
 
 finished run
 number of examples = 5000
-weighted example sum = 
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5000.000000
+weighted example sum = 5000.000000
 weighted label sum = 0.000000
-average loss = -0.909764
+average loss = -0.912006
 total feature number = 690000
 </pre></div>
 </div>
@@ -721,35 +718,30 @@ Enabled reductions: gd, scorer-identity, csoaa_ldf-rank, cb_adf, cb_explore_adf_
 average  since         example        example  current  current  current
 loss     last          counter         weight    label  predict features
     n.a.     n.a.            1            1.0  unknown        0:0.0277778...      684
--0.604143 -0.604143            2            2.0 10:-0.6:0.028        0:0.0277778...      684
--0.709339 -0.814535            4            4.0 17:-0.81:0.0056       10:0.805556...      684
--0.789622 -0.869905            8            8.0 17:-0.82:0.81       17:0.805556...      684
--0.698582 -0.607543           16           16.0 17:-0.69:0.81       17:0.805556...      684
--0.735678 -0.772773           32           32.0 19:-0.56:0.0056        8:0.805556...      684
--0.702182 -0.668687           64           64.0 17:-0.79:0.81       17:0.805556...      684
--0.707039 -0.711895          128          128.0 17:-0.8:0.81       17:0.805556...      684
--0.774105 -0.841172          256          256.0 25:-0.7:0.81       25:0.805556...      684
+-0.759918 -0.759918            2            2.0 9:-0.76:0.028        0:0.0277778...      684
+-0.600528 -0.441139            4            4.0 9:-0.44:0.81        9:0.805556...      684
+-0.531488 -0.462447            8            8.0 3:-0.19:0.0056        9:0.805556...      684
+-0.596391 -0.661295           16           16.0 17:-0.56:0.81       17:0.805556...      684
+-0.669120 -0.741848           32           32.0 17:-0.48:0.81       17:0.805556...      684
+-0.730022 -0.790925           64           64.0 10:-0.48:0.0056       16:0.805556...      684
+-0.767204 -0.804385          128          128.0 1:-0.76:0.0056       17:0.805556...      684
+-0.787789 -0.808375          256          256.0 16:-0.88:0.81       16:0.805556...      684
+-0.769244 -0.750699          512          512.0 13:-0.48:0.81       13:0.805556...      684
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.799018 -0.823930          512          512.0 33:-0.84:0.0056       25:0.805556...      684
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.827359 -0.885475         1024         1024.0 16:-0.97:0.81       16:0.805556...      684
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.838922 -0.878826         1024         1024.0 20:-0.78:0.81       20:0.805556...      684
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.875210 -0.923061         2048         2048.0 27:-0.97:0.81       27:0.805556...      684
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.852481 -0.866040         2048         2048.0 16:-0.83:0.81       16:0.805556...      684
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.892681 -0.932881         4096         4096.0 27:-1.1:0.81       27:0.805556...      684
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.904623 -0.934035         4096         4096.0 27:-0.99:0.81       27:0.805556...      684
 
 finished run
 number of examples = 5000
-weighted example sum = 
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5000.000000
+weighted example sum = 5000.000000
 weighted label sum = 0.000000
-average loss = -0.899224
+average loss = -0.905830
 total feature number = 3430000
 </pre></div>
 </div>
@@ -769,7 +761,7 @@ total feature number = 3430000
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f0ba04f3610&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f53d0e21a90&gt;
 </pre></div>
 </div>
 <img alt="../_images/python_slates_12_1.png" src="../_images/python_slates_12_1.png" />
@@ -828,7 +820,7 @@ total feature number = 3430000
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.4.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.1.2.<br/>
 </p>
     </div>
     
