@@ -4,6 +4,7 @@ var searchData=
   ['uint64',['Uint64',['../structVWReaderHandler.html#a27694b1de7d3120f4a0e23361671fb1b',1,'VWReaderHandler']]],
   ['uintdedupstate',['UIntDedupState',['../classUIntDedupState.html#a572e819bd3db939945f89e35e6deb0b4',1,'UIntDedupState']]],
   ['uinttouintstate',['UIntToUIntState',['../classUIntToUIntState.html#aedc066cbeeb13f470803d116c3b63547',1,'UIntToUIntState']]],
+  ['unflatten_5fnamespace_5fextents',['unflatten_namespace_extents',['../namespaceVW_1_1details.html#a871aa56b01b26d70b06ff0b3039f516a',1,'VW::details']]],
   ['unflushed_5fbytes_5fcount',['unflushed_bytes_count',['../classio__buf.html#a0f7330a9e7cd3f457a210552c557a164',1,'io_buf']]],
   ['uniform_5fhash',['uniform_hash',['../hash_8h.html#ab895a18954442f288c97979158e4b0d1',1,'hash.h']]],
   ['uniform_5frandom_5fmerand48',['uniform_random_merand48',['../namespaceexploration.html#a181ae01106bcdd79234a1bf66d88d645',1,'exploration']]],

@@ -4,6 +4,8 @@ var searchData=
   ['has_5fempty_5finteraction',['has_empty_interaction',['../namespaceINTERACTIONS.html#a083a49ae11718d0162ebc84e672f86e7',1,'INTERACTIONS']]],
   ['has_5fobserved_5fcost',['has_observed_cost',['../structCB_1_1cb__class.html#a2932cbc83a9e87bf18dab6cf36b8d2c7',1,'CB::cb_class']]],
   ['hash',['hash',['../classio__buf.html#a2897cff64e19135ab948ede8ec150a04',1,'io_buf']]],
+  ['hash_5fextents_5fbegin',['hash_extents_begin',['../structfeatures.html#a6aef3c800173ba6fd6d0017f5e0a097f',1,'features::hash_extents_begin(uint64_t hash)'],['../structfeatures.html#a01a2881a0cb03e3fba533641d767cf4b',1,'features::hash_extents_begin(uint64_t hash) const ']]],
+  ['hash_5fextents_5fend',['hash_extents_end',['../structfeatures.html#a66d3c2eb4d7baf9c5badbd623d1d5082',1,'features::hash_extents_end(uint64_t hash)'],['../structfeatures.html#ac819b7d0148152c989d25c75aaccf94d',1,'features::hash_extents_end(uint64_t hash) const ']]],
   ['hash_5ffeature',['hash_feature',['../namespaceVW.html#ae86b6bd5f4f2858597edad920195c5d4',1,'VW']]],
   ['hash_5ffeature_5fcstr',['hash_feature_cstr',['../namespaceVW.html#a66e3be12bac2f2f4586610fd987e465c',1,'VW']]],
   ['hash_5ffeature_5fstatic',['hash_feature_static',['../namespaceVW.html#aab7632906c11b37a43ea520161149431',1,'VW']]],

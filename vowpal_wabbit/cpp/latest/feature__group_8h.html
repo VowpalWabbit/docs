@@ -89,7 +89,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">feature_group.h File Reference</div>  </div>
 </div><!--header-->
@@ -102,6 +103,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;cstddef&gt;</code><br />
+<code>#include &lt;numeric&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;type_traits&gt;</code><br />
 </div><table class="memberdecls">
@@ -109,7 +111,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfeature.html">feature</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1namespace__extent.html">VW::namespace_extent</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaudit__features__iterator.html">audit_features_iterator&lt; feature_value_type_t, feature_index_type_t, audit_type_t &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns__extent__iterator.html">ns_extent_iterator&lt; features_t, audit_features_iterator_t, extent_it &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfeatures__iterator.html">features_iterator&lt; feature_value_type_t, feature_index_type_t &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,6 +129,8 @@ Classes</h2></td></tr>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceVW"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html">VW</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespaceVW_1_1details"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html">VW::details</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -134,6 +142,13 @@ Typedefs</h2></td></tr>
 <tr class="separator:af0171bfe35d4470c391dbcbb0f3b1a0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bf681255e2fe98ef5dd75040110a62b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="feature__group_8h.html#a6bf681255e2fe98ef5dd75040110a62b">namespace_index</a> = unsigned char</td></tr>
 <tr class="separator:a6bf681255e2fe98ef5dd75040110a62b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a7be5bf400217849488ddc681486a842f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; bool, uint64_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#a7be5bf400217849488ddc681486a842f">VW::details::flatten_namespace_extents</a> (const std::vector&lt; namespace_extent &gt; &amp;extents, size_t overall_feature_space_size)</td></tr>
+<tr class="separator:a7be5bf400217849488ddc681486a842f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a871aa56b01b26d70b06ff0b3039f516a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; namespace_extent &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#a871aa56b01b26d70b06ff0b3039f516a">VW::details::unflatten_namespace_extents</a> (const std::vector&lt; std::pair&lt; bool, uint64_t &gt;&gt; &amp;extents)</td></tr>
+<tr class="separator:a871aa56b01b26d70b06ff0b3039f516a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a class="anchor" id="af0171bfe35d4470c391dbcbb0f3b1a0c"></a>
@@ -187,7 +202,7 @@ Typedefs</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 2 2021 17:30:16 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 2 2021 20:00:05 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
