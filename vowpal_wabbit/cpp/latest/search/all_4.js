@@ -59,7 +59,6 @@ var searchData=
   ['dictionary_5fpath',['dictionary_path',['../structvw.html#ae4c78e59541075fe4b806ff09d7aefbe',1,'vw']]],
   ['difference_5ftype',['difference_type',['../classACTION__SCORE_1_1score__iterator.html#adcbbac6e225d55f4eda87fdaa4a508f5',1,'ACTION_SCORE::score_iterator::difference_type()'],['../classsparse__iterator.html#a8de55b3d9048198c4662ab19e46f0eb8',1,'sparse_iterator::difference_type()'],['../classdense__iterator.html#a9a301a97476fc5e450e0d173620458fb',1,'dense_iterator::difference_type()'],['../structVW_1_1chained__proxy__iterator.html#a9decb3381667cbc16ff49f50a081d060',1,'VW::chained_proxy_iterator::difference_type()'],['../classaudit__features__iterator.html#abf396cf34ef7f6e96479e2dfe8397d8b',1,'audit_features_iterator::difference_type()'],['../classfeatures__iterator.html#ae806f0bad2fd093fe18b90f67bc16620',1,'features_iterator::difference_type()'],['../classVW_1_1indexed__iterator__t.html#a38fc1e9adb5e56ba234af787588784ae',1,'VW::indexed_iterator_t::difference_type()']]],
   ['disable_5fshared_5fweights',['DISABLE_SHARED_WEIGHTS',['../vw__slim__predict_8h.html#aa21b5b3836a1997883d40f9c96026444',1,'vw_slim_predict.h']]],
-  ['dispatch_5ffptr',['dispatch_fptr',['../parse__dispatch__loop_8h.html#afb52450a4cded8b00b6f321bde178267',1,'parse_dispatch_loop.h']]],
   ['distributionally_5frobust_2eh',['distributionally_robust.h',['../distributionally__robust_8h.html',1,'']]],
   ['do_5frecombination',['do_recombination',['../classBeam_1_1beam.html#a7c024b7c58509c405271300549fbfde0',1,'Beam::beam']]],
   ['do_5freset_5fsource',['do_reset_source',['../structvw.html#a560289918a63069c9bed7c77e16de90b',1,'vw']]],
@@ -69,8 +68,8 @@ var searchData=
   ['dsjson',['dsjson',['../structinput__options.html#adbd9d55bfe27f7c844591e5840660ed8',1,'input_options']]],
   ['dsjson_5fmetrics',['dsjson_metrics',['../structdsjson__metrics.html',1,'']]],
   ['dsjsonsumcostoriginal',['DsjsonSumCostOriginal',['../structdsjson__metrics.html#ab56fdaea2bd7a1f1124ab5f8931b7eb7',1,'dsjson_metrics']]],
-  ['duals',['Duals',['../structVW_1_1distributionally__robust_1_1Duals.html#ab9b646730bc1ce5699d89e7e2bc42c06',1,'VW::distributionally_robust::Duals::Duals()'],['../structVW_1_1distributionally__robust_1_1Duals.html#adaabb8969d2a11a78804d49c51deabcd',1,'VW::distributionally_robust::Duals::Duals(bool unbounded, double kappa, double gamma, double beta, double n)']]],
   ['duals',['Duals',['../structVW_1_1distributionally__robust_1_1Duals.html',1,'VW::distributionally_robust']]],
+  ['duals',['Duals',['../structVW_1_1distributionally__robust_1_1Duals.html#ab9b646730bc1ce5699d89e7e2bc42c06',1,'VW::distributionally_robust::Duals::Duals()'],['../structVW_1_1distributionally__robust_1_1Duals.html#adaabb8969d2a11a78804d49c51deabcd',1,'VW::distributionally_robust::Duals::Duals(bool unbounded, double kappa, double gamma, double beta, double n)']]],
   ['dummy_5ffunc',['dummy_func',['../namespaceGD.html#a9a733cab6079e5f28fb3773aa43bea24',1,'GD']]],
   ['dump_5finterval',['dump_interval',['../structshared__data.html#acc14d5e78772dd39829a82e4df2912d7',1,'shared_data']]]
 ];

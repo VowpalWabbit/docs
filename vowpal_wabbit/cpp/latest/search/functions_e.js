@@ -2,7 +2,7 @@ var searchData=
 [
   ['parse_5fargs',['parse_args',['../parse__args_8h.html#a9a9be95bc75954b9770fae87f7abc9b0',1,'parse_args.h']]],
   ['parse_5fcontext',['parse_context',['../parse__slates__example__json_8h.html#a4774299a9032e0cba47e886c72b427b2',1,'parse_slates_example_json.h']]],
-  ['parse_5fdispatch',['parse_dispatch',['../parse__dispatch__loop_8h.html#a2bf2e3f0ec92b32d4d10a9451ab0903f',1,'parse_dispatch_loop.h']]],
+  ['parse_5fdispatch',['parse_dispatch',['../parse__dispatch__loop_8h.html#ac21d2ca4dca91b8b7494f913b79c6005',1,'parse_dispatch_loop.h']]],
   ['parse_5fexample_5flabel',['parse_example_label',['../namespaceVW.html#a928869354fe3e9e0cb98a08d5348e378',1,'VW']]],
   ['parse_5fexamples',['parse_examples',['../classVW_1_1parsers_1_1flatbuffer_1_1parser.html#ad34fe16f7b9e15768bff53d7ab2bfdf9',1,'VW::parsers::flatbuffer::parser']]],
   ['parse_5flabel',['parse_label',['../namespaceCCB.html#a81e58b57bea5f416862a5774ddfc1dd3',1,'CCB::parse_label()'],['../namespaceVW_1_1slates.html#a95d70bcce2a95ca93c5ba4c61718d84f',1,'VW::slates::parse_label()']]],
