@@ -144,6 +144,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a4233427209a0bb10fea9da2acb83dc6d"><td class="memTemplParams" colspan="2">template&lt;class DataT , void(*)(DataT &amp;, const float, float) FuncT, class WeightsT &gt; </td></tr>
 <tr class="memitem:a4233427209a0bb10fea9da2acb83dc6d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#a4233427209a0bb10fea9da2acb83dc6d">call_FuncT</a> (DataT &amp;dat, const WeightsT &amp;weights, const float ft_value, const uint64_t ft_idx)</td></tr>
 <tr class="separator:a4233427209a0bb10fea9da2acb83dc6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0694fb4d5182647e28fcd437e18d37e0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#a0694fb4d5182647e28fcd437e18d37e0">term_is_empty</a> (<a class="el" href="example__predict_8h.html#a3302327c8e16f985dd6c4474bf279c40">namespace_index</a> term, const std::array&lt; <a class="el" href="structfeatures.html">features</a>, <a class="el" href="constant_8h.html#af6972edf713d5809ccd5658eca433d84">NUM_NAMESPACES</a> &gt; &amp;feature_groups)</td></tr>
+<tr class="separator:a0694fb4d5182647e28fcd437e18d37e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefdfbdd88ded225ad331ddcb32ca2eea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#aefdfbdd88ded225ad331ddcb32ca2eea">has_empty_interaction_quadratic</a> (const std::array&lt; <a class="el" href="structfeatures.html">features</a>, <a class="el" href="constant_8h.html#af6972edf713d5809ccd5658eca433d84">NUM_NAMESPACES</a> &gt; &amp;feature_groups, const std::vector&lt; <a class="el" href="example__predict_8h.html#a3302327c8e16f985dd6c4474bf279c40">namespace_index</a> &gt; &amp;namespace_indexes)</td></tr>
+<tr class="separator:aefdfbdd88ded225ad331ddcb32ca2eea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3faf4c7e6e1b0057a98da5ca053b7174"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#a3faf4c7e6e1b0057a98da5ca053b7174">has_empty_interaction_cubic</a> (const std::array&lt; <a class="el" href="structfeatures.html">features</a>, <a class="el" href="constant_8h.html#af6972edf713d5809ccd5658eca433d84">NUM_NAMESPACES</a> &gt; &amp;feature_groups, const std::vector&lt; <a class="el" href="example__predict_8h.html#a3302327c8e16f985dd6c4474bf279c40">namespace_index</a> &gt; &amp;namespace_indexes)</td></tr>
+<tr class="separator:a3faf4c7e6e1b0057a98da5ca053b7174"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a083a49ae11718d0162ebc84e672f86e7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#a083a49ae11718d0162ebc84e672f86e7">has_empty_interaction</a> (const std::array&lt; <a class="el" href="structfeatures.html">features</a>, <a class="el" href="constant_8h.html#af6972edf713d5809ccd5658eca433d84">NUM_NAMESPACES</a> &gt; &amp;feature_groups, const std::vector&lt; <a class="el" href="example__predict_8h.html#a3302327c8e16f985dd6c4474bf279c40">namespace_index</a> &gt; &amp;namespace_indexes)</td></tr>
 <tr class="separator:a083a49ae11718d0162ebc84e672f86e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85d42969fe5fe2302e2017a180202ed7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#a85d42969fe5fe2302e2017a180202ed7">INTERACTION_VALUE</a> (float value1, float value2)</td></tr>
@@ -841,6 +847,74 @@ template&lt;class DataT , class WeightOrIndexT , void(*)(DataT &amp;, float, Wei
 
 </div>
 </div>
+<a class="anchor" id="a3faf4c7e6e1b0057a98da5ca053b7174"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool INTERACTIONS::has_empty_interaction_cubic </td>
+          <td>(</td>
+          <td class="paramtype">const std::array&lt; <a class="el" href="structfeatures.html">features</a>, <a class="el" href="constant_8h.html#af6972edf713d5809ccd5658eca433d84">NUM_NAMESPACES</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>feature_groups</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="example__predict_8h.html#a3302327c8e16f985dd6c4474bf279c40">namespace_index</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>namespace_indexes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aefdfbdd88ded225ad331ddcb32ca2eea"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool INTERACTIONS::has_empty_interaction_quadratic </td>
+          <td>(</td>
+          <td class="paramtype">const std::array&lt; <a class="el" href="structfeatures.html">features</a>, <a class="el" href="constant_8h.html#af6972edf713d5809ccd5658eca433d84">NUM_NAMESPACES</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>feature_groups</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="example__predict_8h.html#a3302327c8e16f985dd6c4474bf279c40">namespace_index</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>namespace_indexes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ac3396c8a8f1e7f174c79f689a82299eb"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1141,6 +1215,40 @@ template&lt;bool Audit, typename KernelFuncT , typename AuditFuncT &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a0694fb4d5182647e28fcd437e18d37e0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool INTERACTIONS::term_is_empty </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="example__predict_8h.html#a3302327c8e16f985dd6c4474bf279c40">namespace_index</a>&#160;</td>
+          <td class="paramname"><em>term</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::array&lt; <a class="el" href="structfeatures.html">features</a>, <a class="el" href="constant_8h.html#af6972edf713d5809ccd5658eca433d84">NUM_NAMESPACES</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>feature_groups</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a class="anchor" id="ab7057302d3be0589886a9176ed6de869"></a>
 <div class="memitem">
@@ -1195,7 +1303,7 @@ template&lt;bool Audit, typename KernelFuncT , typename AuditFuncT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 8 2021 23:21:52 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 9 2021 00:41:46 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

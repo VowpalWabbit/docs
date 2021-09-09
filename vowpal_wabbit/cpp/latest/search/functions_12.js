@@ -2,6 +2,7 @@ var searchData=
 [
   ['tagstate',['TagState',['../structTagState.html#a45e93c4c4eca7e556834771aac20e057',1,'TagState']]],
   ['takedown',['takedown',['../namespaceGraphTask.html#a478898a28fc45a45873296e7e8844741',1,'GraphTask::takedown()'],['../namespaceSequenceSpanTask.html#a18d654e30f150f7aeea0c6dda49c0347',1,'SequenceSpanTask::takedown()']]],
+  ['term_5fis_5fempty',['term_is_empty',['../namespaceINTERACTIONS.html#a0694fb4d5182647e28fcd437e18d37e0',1,'INTERACTIONS']]],
   ['test_5fadf_5fsequence',['test_adf_sequence',['../namespaceCB__ADF.html#abbca52475f0637f671ea2dd2c4ec0065',1,'CB_ADF']]],
   ['test_5flabel',['test_label',['../namespaceMULTICLASS.html#a95cadbeb4fe6dfe01342045d68b130f0',1,'MULTICLASS']]],
   ['textstate',['TextState',['../structTextState.html#a7b198588c0209d4a4166953cc341538f',1,'TextState']]],

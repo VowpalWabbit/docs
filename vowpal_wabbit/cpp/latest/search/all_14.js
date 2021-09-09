@@ -13,6 +13,7 @@ var searchData=
   ['task_5fdata',['task_data',['../structSearch_1_1search.html#a5a683fe3742c3b43f79fc40a8bdf365f',1,'Search::search']]],
   ['task_5fdata',['task_data',['../structHookTask_1_1task__data.html',1,'HookTask']]],
   ['task_5fname',['task_name',['../structSearch_1_1search.html#a4864e478d4bb7af53e04a84cec754e3b',1,'Search::search::task_name()'],['../structSearch_1_1search__task.html#ad2c6420e44a300be33991333d9be5190',1,'Search::search_task::task_name()']]],
+  ['term_5fis_5fempty',['term_is_empty',['../namespaceINTERACTIONS.html#a0694fb4d5182647e28fcd437e18d37e0',1,'INTERACTIONS']]],
   ['test_5fadf_5fsequence',['test_adf_sequence',['../namespaceCB__ADF.html#abbca52475f0637f671ea2dd2c4ec0065',1,'CB_ADF']]],
   ['test_5flabel',['test_label',['../structlabel__parser.html#abfe909faed7377ee855785d3a2936fe4',1,'label_parser::test_label()'],['../namespaceMULTICLASS.html#a95cadbeb4fe6dfe01342045d68b130f0',1,'MULTICLASS::test_label()']]],
   ['test_5fonly',['test_only',['../structexample.html#aafed65a0405faa864c87b8b75d39ef4d',1,'example']]],
@@ -63,9 +64,9 @@ var searchData=
   ['tuple_5fdbf',['tuple_dbf',['../namespaceVW_1_1LEARNER.html#a8acf98b91b127b58d1a5d59ebe5979ec',1,'VW::LEARNER']]],
   ['type',['type',['../structCCB_1_1label.html#aeb312b579a5debb8537f8c433643c759',1,'CCB::label::type()'],['../structCCB_1_1reduction__features.html#ab6533591a593cdffe7e084881713f41f',1,'CCB::reduction_features::type()'],['../structVW_1_1slates_1_1label.html#a3534b1caf54bde6f345dc0fd94379778',1,'VW::slates::label::type()']]],
   ['type_5fhash',['type_hash',['../structVW_1_1config_1_1typed__option.html#af75aac6192cabac91008572cde768049',1,'VW::config::typed_option']]],
-  ['typed_5foption',['typed_option',['../structVW_1_1config_1_1typed__option.html#a68cf7610208fdd4116cf9c4c707ec697',1,'VW::config::typed_option']]],
   ['typed_5foption',['typed_option',['../structVW_1_1config_1_1typed__option.html',1,'VW::config']]],
-  ['typed_5foption_5fwith_5flocation',['typed_option_with_location',['../structVW_1_1config_1_1typed__option__with__location.html',1,'VW::config']]],
+  ['typed_5foption',['typed_option',['../structVW_1_1config_1_1typed__option.html#a68cf7610208fdd4116cf9c4c707ec697',1,'VW::config::typed_option']]],
   ['typed_5foption_5fwith_5flocation',['typed_option_with_location',['../structVW_1_1config_1_1typed__option__with__location.html#a72c62aa3e0fb12562e96e51de34f66cf',1,'VW::config::typed_option_with_location']]],
+  ['typed_5foption_5fwith_5flocation',['typed_option_with_location',['../structVW_1_1config_1_1typed__option__with__location.html',1,'VW::config']]],
   ['typelist',['typelist',['../structVW_1_1config_1_1typelist.html',1,'VW::config']]]
 ];

@@ -2,6 +2,8 @@ var searchData=
 [
   ['handle_5ffeatures_5fvalue',['handle_features_value',['../parse__slates__example__json_8h.html#a0e917143bef3b67e5fd12981b55ed861',1,'parse_slates_example_json.h']]],
   ['has_5fempty_5finteraction',['has_empty_interaction',['../namespaceINTERACTIONS.html#a083a49ae11718d0162ebc84e672f86e7',1,'INTERACTIONS']]],
+  ['has_5fempty_5finteraction_5fcubic',['has_empty_interaction_cubic',['../namespaceINTERACTIONS.html#a3faf4c7e6e1b0057a98da5ca053b7174',1,'INTERACTIONS']]],
+  ['has_5fempty_5finteraction_5fquadratic',['has_empty_interaction_quadratic',['../namespaceINTERACTIONS.html#aefdfbdd88ded225ad331ddcb32ca2eea',1,'INTERACTIONS']]],
   ['has_5fobserved_5fcost',['has_observed_cost',['../structCB_1_1cb__class.html#a2932cbc83a9e87bf18dab6cf36b8d2c7',1,'CB::cb_class']]],
   ['hash',['hash',['../classio__buf.html#a2897cff64e19135ab948ede8ec150a04',1,'io_buf']]],
   ['hash_5fextents_5fbegin',['hash_extents_begin',['../structfeatures.html#a6aef3c800173ba6fd6d0017f5e0a097f',1,'features::hash_extents_begin(uint64_t hash)'],['../structfeatures.html#a01a2881a0cb03e3fba533641d767cf4b',1,'features::hash_extents_begin(uint64_t hash) const ']]],
