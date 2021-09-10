@@ -32,7 +32,7 @@ var searchData=
   ['_7esocket_5fcloser',['~socket_closer',['../structVW_1_1io_1_1details_1_1socket__closer.html#aa54c996e134ed9e0a15e68e03692b61f',1,'VW::io::details::socket_closer']]],
   ['_7espanningtree',['~SpanningTree',['../classVW_1_1SpanningTree.html#a5037a1700c322fdf426a4e177b8a8b25',1,'VW::SpanningTree']]],
   ['_7esparse_5fparameters',['~sparse_parameters',['../classsparse__parameters.html#a51abfccaaa9f023f2a1794de176d5e5d',1,'sparse_parameters']]],
-  ['_7estrict_5fparse_5fexception',['~strict_parse_exception',['../classVW_1_1strict__parse__exception.html#a338f9da08ae52e457d8513b13744af3e',1,'VW::strict_parse_exception']]],
+  ['_7estrict_5fparse_5fexception',['~strict_parse_exception',['../classVW_1_1strict__parse__exception.html#a4293706e08b9bd4e9798648ceffe77ff',1,'VW::strict_parse_exception']]],
   ['_7estride_5fshift_5fguard',['~stride_shift_guard',['../classvw__slim_1_1stride__shift__guard.html#a3ffe0ed6488b88a0a81df2f4e82f880c',1,'vw_slim::stride_shift_guard']]],
   ['_7eswap_5fguard_5fimpl',['~swap_guard_impl',['../classVW_1_1details_1_1swap__guard__impl.html#a852f8fbb6f0a7a83e660e6218926c8e2',1,'VW::details::swap_guard_impl']]],
   ['_7eswap_5fguard_5fimpl_5frvalue',['~swap_guard_impl_rvalue',['../classVW_1_1details_1_1swap__guard__impl__rvalue.html#a0b49d31c92f6015e5296c94c3e1dbb40',1,'VW::details::swap_guard_impl_rvalue']]],
@@ -40,9 +40,9 @@ var searchData=
   ['_7ev_5farray',['~v_array',['../structv__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_3_01T_01_4_1_1value_01_4_1_1type_01_4.html#afa84fc89479f725c177895e97b0105eb',1,'v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;']]],
   ['_7eversion_5fstruct',['~version_struct',['../structVW_1_1version__struct.html#aa1217de574d459e67d340a2f63fd658b',1,'VW::version_struct']]],
   ['_7evw',['~vw',['../structvw.html#a8b205287bbc6f9773885db2d04b1cbc2',1,'vw']]],
-  ['_7evw_5fargument_5fdisagreement_5fexception',['~vw_argument_disagreement_exception',['../classVW_1_1vw__argument__disagreement__exception.html#a573b93ada6d726ad1fd48b82b4095067',1,'VW::vw_argument_disagreement_exception']]],
-  ['_7evw_5fargument_5finvalid_5fvalue_5fexception',['~vw_argument_invalid_value_exception',['../classVW_1_1vw__argument__invalid__value__exception.html#aaf820ea4a58da5aba69e01fd792f949f',1,'VW::vw_argument_invalid_value_exception']]],
+  ['_7evw_5fargument_5fdisagreement_5fexception',['~vw_argument_disagreement_exception',['../classVW_1_1vw__argument__disagreement__exception.html#ad111eda2c2e5d0387d6fbba72af1ed01',1,'VW::vw_argument_disagreement_exception']]],
+  ['_7evw_5fargument_5finvalid_5fvalue_5fexception',['~vw_argument_invalid_value_exception',['../classVW_1_1vw__argument__invalid__value__exception.html#af57af5268d1bc20ba6b67afd62c34429',1,'VW::vw_argument_invalid_value_exception']]],
   ['_7evw_5fexception',['~vw_exception',['../classVW_1_1vw__exception.html#ab47969e7267d0464d2d53c9e6980bc92',1,'VW::vw_exception']]],
-  ['_7evw_5funrecognised_5foption_5fexception',['~vw_unrecognised_option_exception',['../classVW_1_1vw__unrecognised__option__exception.html#a4680cb4d5f81086588dc484201750cbb',1,'VW::vw_unrecognised_option_exception']]],
+  ['_7evw_5funrecognised_5foption_5fexception',['~vw_unrecognised_option_exception',['../classVW_1_1vw__unrecognised__option__exception.html#a4087f3bfdcd5eea27a1aec1a2422547f',1,'VW::vw_unrecognised_option_exception']]],
   ['_7ewriter',['~writer',['../structVW_1_1io_1_1writer.html#ae579d910a68497ea484a0d057a6ad4be',1,'VW::io::writer']]]
 ];

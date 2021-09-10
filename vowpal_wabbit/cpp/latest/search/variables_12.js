@@ -5,7 +5,7 @@ var searchData=
   ['random_5fweights',['random_weights',['../structvw.html#a05bba1784a89d36504b338811468359a',1,'vw']]],
   ['raw_5fprediction',['raw_prediction',['../structvw.html#aab2216e55d7634f08df219688f92ef68',1,'vw']]],
   ['read_5fcached_5flabel',['read_cached_label',['../structlabel__parser.html#ad9b44cbc1685ca5237f1b48b54a4dd56',1,'label_parser']]],
-  ['reader',['reader',['../structjson__parser.html#a7ccd95632770b12608291f09234000fb',1,'json_parser::reader()'],['../structparser.html#aac43955e9fbd3aee4e1e1c72a606334b',1,'parser::reader()']]],
+  ['reader',['reader',['../structjson__parser.html#a7ccd95632770b12608291f09234000fb',1,'json_parser::reader()'],['../structparser.html#a9bed58f58e3f77db4cff279be2efca8f',1,'parser::reader()']]],
   ['ready_5fparsed_5fexamples',['ready_parsed_examples',['../structparser.html#ae0ff2de4eeab90f8fff9fd2da5966ffc',1,'parser']]],
   ['redefine',['redefine',['../structvw.html#a7bd371021399631bc719da959b490591',1,'vw']]],
   ['redefine_5fsome',['redefine_some',['../structvw.html#a457c47efe1d9caf4389a6c09d6767194',1,'vw']]],

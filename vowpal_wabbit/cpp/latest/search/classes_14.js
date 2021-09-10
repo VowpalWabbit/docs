@@ -5,7 +5,7 @@ var searchData=
   ['v_5farray_3c_20action_5fscore_20_3e',['v_array&lt; action_score &gt;',['../structv__array.html',1,'']]],
   ['v_5farray_3c_20beam_3a_3abeam_5felement_3c_20t_20_3e_20_3e',['v_array&lt; Beam::beam_element&lt; T &gt; &gt;',['../structv__array.html',1,'']]],
   ['v_5farray_3c_20char_20_3e',['v_array&lt; char &gt;',['../structv__array.html',1,'']]],
-  ['v_5farray_3c_20example_20_2a_20_3e',['v_array&lt; example * &gt;',['../structv__array.html',1,'']]],
+  ['v_5farray_3c_20example_20_2a_3e',['v_array&lt; example *&gt;',['../structv__array.html',1,'']]],
   ['v_5farray_3c_20feature_5findex_20_3e',['v_array&lt; feature_index &gt;',['../structv__array.html',1,'']]],
   ['v_5farray_3c_20feature_5fvalue_20_3e',['v_array&lt; feature_value &gt;',['../structv__array.html',1,'']]],
   ['v_5farray_3c_20float_20_3e',['v_array&lt; float &gt;',['../structv__array.html',1,'']]],
