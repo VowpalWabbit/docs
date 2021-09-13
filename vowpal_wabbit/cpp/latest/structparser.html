@@ -88,9 +88,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ae0ff2de4eeab90f8fff9fd2da5966ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3a0b681b749f14b61443fc8f7fd22ff"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classio__buf.html">io_buf</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structparser.html#af3a0b681b749f14b61443fc8f7fd22ff">input</a></td></tr>
 <tr class="separator:af3a0b681b749f14b61443fc8f7fd22ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bed58f58e3f77db4cff279be2efca8f"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structparser.html#a9bed58f58e3f77db4cff279be2efca8f">reader</a> )(<a class="el" href="structvw.html">vw</a> *, <a class="el" href="structv__array.html">v_array</a>&lt; <a class="el" href="structexample.html">example</a> *&gt; &amp;examples)</td></tr>
-<tr class="memdesc:a9bed58f58e3f77db4cff279be2efca8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">reader consumes the input <a class="el" href="classio__buf.html">io_buf</a> in the vw object and is generally for file based parsing  <a href="#a9bed58f58e3f77db4cff279be2efca8f">More...</a><br /></td></tr>
-<tr class="separator:a9bed58f58e3f77db4cff279be2efca8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af74965e5eb49a944a36f31ed49204316"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structparser.html#af74965e5eb49a944a36f31ed49204316">reader</a> )(<a class="el" href="structvw.html">vw</a> *, <a class="el" href="classio__buf.html">io_buf</a> &amp;, <a class="el" href="structv__array.html">v_array</a>&lt; <a class="el" href="structexample.html">example</a> *&gt; &amp;examples)</td></tr>
+<tr class="separator:af74965e5eb49a944a36f31ed49204316"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a476d6fb16145627dc783add1642c5db6"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structparser.html#a476d6fb16145627dc783add1642c5db6">text_reader</a> )(<a class="el" href="structvw.html">vw</a> *, const char *, size_t, <a class="el" href="structv__array.html">v_array</a>&lt; <a class="el" href="structexample.html">example</a> *&gt; &amp;)</td></tr>
 <tr class="memdesc:a476d6fb16145627dc783add1642c5db6"><td class="mdescLeft">&#160;</td><td class="mdescRight">text_reader consumes the char* input and is for text based parsing  <a href="#a476d6fb16145627dc783add1642c5db6">More...</a><br /></td></tr>
 <tr class="separator:a476d6fb16145627dc783add1642c5db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -594,19 +593,18 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a9bed58f58e3f77db4cff279be2efca8f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9bed58f58e3f77db4cff279be2efca8f">&#9670;&nbsp;</a></span>reader</h2>
+<a id="af74965e5eb49a944a36f31ed49204316"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af74965e5eb49a944a36f31ed49204316">&#9670;&nbsp;</a></span>reader</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int(* parser::reader) (<a class="el" href="structvw.html">vw</a> *, <a class="el" href="structv__array.html">v_array</a>&lt; <a class="el" href="structexample.html">example</a> * &gt; &amp;examples)</td>
+          <td class="memname">int(* parser::reader) (<a class="el" href="structvw.html">vw</a> *, <a class="el" href="classio__buf.html">io_buf</a> &amp;, <a class="el" href="structv__array.html">v_array</a>&lt; <a class="el" href="structexample.html">example</a> * &gt; &amp;examples)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>reader consumes the input <a class="el" href="classio__buf.html">io_buf</a> in the vw object and is generally for file based parsing </p>
+<p>reader consumes the given <a class="el" href="classio__buf.html">io_buf</a> and produces parsed examples. The number of produced examples is implementation defined. However, in practice for single_line parsers a single example is produced. And for multi_line parsers multiple are produced which all correspond the the same overall logical example. examples must have a single empty example in it when this call is made. </p>
 
 </div>
 </div>
@@ -744,7 +742,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 13 2021 14:16:15 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Sep 13 2021 15:34:35 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

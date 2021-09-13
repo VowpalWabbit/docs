@@ -56,7 +56,7 @@ var searchData=
   ['firsteventtime',['FirstEventTime',['../structdsjson__metrics.html#a207dae03fd7cbda8161715b749a88fcc',1,'dsjson_metrics']]],
   ['flat_5fexample',['flat_example',['../structflat__example.html',1,'']]],
   ['flatbuffer',['flatbuffer',['../structinput__options.html#af68756d6cbe80559c98b31ea167a3566',1,'input_options']]],
-  ['flatbuffer_5fto_5fexamples',['flatbuffer_to_examples',['../namespaceVW_1_1parsers_1_1flatbuffer.html#a75e19b05fbfe1d6d93f089e00e8577de',1,'VW::parsers::flatbuffer']]],
+  ['flatbuffer_5fto_5fexamples',['flatbuffer_to_examples',['../namespaceVW_1_1parsers_1_1flatbuffer.html#a0199f9929fb63648ced6c1501faf5aa5',1,'VW::parsers::flatbuffer']]],
   ['flatten_5fexample',['flatten_example',['../example_8h.html#a5b7c102894fabaed619cc86248551d9a',1,'example.h']]],
   ['flatten_5fnamespace_5fextents',['flatten_namespace_extents',['../namespaceVW_1_1details.html#a7be5bf400217849488ddc681486a842f',1,'VW::details']]],
   ['flatten_5fsort_5fexample',['flatten_sort_example',['../example_8h.html#a5c55851c4a2c558e4d8f27ee17b5567c',1,'example.h']]],
