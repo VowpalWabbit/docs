@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nominmax',['NOMINMAX',['../array__parameters_8h.html#a9f918755b601cf4bffca775992e6fb90',1,'NOMINMAX():&#160;array_parameters.h'],['../v__array_8h.html#a9f918755b601cf4bffca775992e6fb90',1,'NOMINMAX():&#160;v_array.h']]]
+  ['nominmax',['NOMINMAX',['../array__parameters_8h.html#a9f918755b601cf4bffca775992e6fb90',1,'NOMINMAX():&#160;array_parameters.h'],['../v__array_8h.html#a9f918755b601cf4bffca775992e6fb90',1,'NOMINMAX():&#160;v_array.h'],['../vw__math_8h.html#a9f918755b601cf4bffca775992e6fb90',1,'NOMINMAX():&#160;vw_math.h']]]
 ];

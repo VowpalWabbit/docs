@@ -131,6 +131,7 @@ var searchData=
   ['chisquared',['ChiSquared',['../classVW_1_1distributionally__robust_1_1ChiSquared.html',1,'VW::distributionally_robust::ChiSquared'],['../classVW_1_1distributionally__robust_1_1ChiSquared.html#a4c5e70598285f281e5f074f2f0710efb',1,'VW::distributionally_robust::ChiSquared::ChiSquared()']]],
   ['choose',['choose',['../namespaceVW_1_1math.html#a77171e0aba4b8c9fc8d5f49d2dd8d83f',1,'VW::math']]],
   ['chosen_5faction',['chosen_action',['../structVW_1_1continuous__actions_1_1reduction__features.html#a7787a47aa964d286d2424fea39cca0b7',1,'VW::continuous_actions::reduction_features::chosen_action()'],['../constant_8h.html#a9a8e2a00065278a565d6e3b4a4de10c2',1,'CHOSEN_ACTION():&#160;constant.h']]],
+  ['clamp',['clamp',['../namespaceVW_1_1math.html#a7a1ee8356abb810e0ebaf3626ad591b7',1,'VW::math']]],
   ['class_5findex',['class_index',['../structCOST__SENSITIVE_1_1wclass.html#af5f5e6653d8c582e6d6803fbad06c9a5',1,'COST_SENSITIVE::wclass']]],
   ['classweight_2eh',['classweight.h',['../classweight_8h.html',1,'']]],
   ['classweight_5fsetup',['classweight_setup',['../classweight_8h.html#a7d705e11996b1ad7007c243412d12b98',1,'classweight.h']]],

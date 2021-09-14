@@ -90,6 +90,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a77171e0aba4b8c9fc8d5f49d2dd8d83f"><td class="memItemLeft" align="right" valign="top">VW_STD14_CONSTEXPR int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1math.html#a77171e0aba4b8c9fc8d5f49d2dd8d83f">choose</a> (int64_t n, int64_t k) noexcept</td></tr>
 <tr class="memdesc:a77171e0aba4b8c9fc8d5f49d2dd8d83f"><td class="mdescLeft">&#160;</td><td class="mdescRight">C(n,k) = n!/(k!(n-k)!)  <a href="#a77171e0aba4b8c9fc8d5f49d2dd8d83f">More...</a><br /></td></tr>
 <tr class="separator:a77171e0aba4b8c9fc8d5f49d2dd8d83f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a1ee8356abb810e0ebaf3626ad591b7"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a7a1ee8356abb810e0ebaf3626ad591b7"><td class="memTemplItemLeft" align="right" valign="top">VW_STD14_CONSTEXPR T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1math.html#a7a1ee8356abb810e0ebaf3626ad591b7">clamp</a> (const T &amp;num, const T &amp;lower_bound, const T &amp;upper_bound)</td></tr>
+<tr class="memdesc:a7a1ee8356abb810e0ebaf3626ad591b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clamp a value in the range [lower_bound, upper_bound].  <a href="#a7a1ee8356abb810e0ebaf3626ad591b7">More...</a><br /></td></tr>
+<tr class="separator:a7a1ee8356abb810e0ebaf3626ad591b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -204,6 +208,52 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>C(n,k) = n!/(k!(n-k)!) </p>
+
+</div>
+</div>
+<a id="a7a1ee8356abb810e0ebaf3626ad591b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a1ee8356abb810e0ebaf3626ad591b7">&#9670;&nbsp;</a></span>clamp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">VW_STD14_CONSTEXPR T VW::math::clamp </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>lower_bound</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>upper_bound</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clamp a value in the range [lower_bound, upper_bound]. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">num</td><td>value to clamp </td></tr>
+    <tr><td class="paramname">lower_bound</td><td>lower bound of clamp range </td></tr>
+    <tr><td class="paramname">upper_bound</td><td>upper bound of clamp range </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -351,7 +401,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 14 2021 00:45:26 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 14 2021 13:17:25 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
