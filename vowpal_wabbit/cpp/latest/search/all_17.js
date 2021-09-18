@@ -30,6 +30,7 @@ var searchData=
   ['write_5fcache',['write_cache',['../structparser.html#a5f48db95a95c057288a00642d4cf9f14',1,'parser']]],
   ['write_5fexample_5fto_5fcache',['write_example_to_cache',['../namespaceVW.html#aef4c6792f71a978d7c8f584680574e3d',1,'VW']]],
   ['write_5ffunc_5ft',['write_func_t',['../namespaceVW_1_1io.html#afa7ea16384ae2c7aadbc1408cd4be49a',1,'VW::io']]],
+  ['write_5ftext_5fmode_5foutput',['write_text_mode_output',['../namespaceVW_1_1model__utils_1_1details.html#a036dbbc459d89ad19f29a35b92d7bdf6',1,'VW::model_utils::details']]],
   ['write_5fvalue',['write_value',['../classio__buf.html#a6777f02c17704d4384c0c7ef575233db',1,'io_buf']]],
   ['writeit',['writeit',['../io__buf_8h.html#ac3dc74ce9e42a7cf9cb19834d4593d57',1,'io_buf.h']]],
   ['writeitvar',['writeitvar',['../io__buf_8h.html#aa441214d84044fca62cc7341883b7843',1,'io_buf.h']]],

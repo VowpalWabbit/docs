@@ -62,6 +62,7 @@ var searchData=
   ['model_5ffile_5fver',['model_file_ver',['../structvw.html#aef7628e009ca4bfa6a5caf4ffcfd4fb5',1,'vw']]],
   ['model_5fparser',['model_parser',['../classvw__slim_1_1model__parser.html',1,'vw_slim::model_parser'],['../classvw__slim_1_1model__parser.html#a60531cc8473aa75a7be9a324f35f6d88',1,'vw_slim::model_parser::model_parser()']]],
   ['model_5fparser_2eh',['model_parser.h',['../model__parser_8h.html',1,'']]],
+  ['model_5futils_2eh',['model_utils.h',['../model__utils_8h.html',1,'']]],
   ['more_5finfo_5frequired_5ffor_5fclasses',['more_info_required_for_classes',['../structVW_1_1active__multiclass__prediction.html#ab9814a36e47b7f06526ebb1d978515b5',1,'VW::active_multiclass_prediction']]],
   ['move_5ffeature_5fnamespace',['move_feature_namespace',['../namespaceVW.html#ab9e00af55935c42d32d1c2c5c244150e',1,'VW']]],
   ['moved_5fobject_5fpool',['moved_object_pool',['../structVW_1_1moved__object__pool.html',1,'VW::moved_object_pool&lt; T &gt;'],['../structVW_1_1moved__object__pool.html#a576da638798a649601d6c423a497a998',1,'VW::moved_object_pool::moved_object_pool()']]],

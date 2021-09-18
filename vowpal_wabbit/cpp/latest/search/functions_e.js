@@ -52,6 +52,7 @@ var searchData=
   ['probability_5fdensity_5ffunction_5fvalue',['probability_density_function_value',['../structVW_1_1continuous__actions_1_1probability__density__function__value.html#a55690d149fe5493d2667cd9b1c8ba30c',1,'VW::continuous_actions::probability_density_function_value::probability_density_function_value()=default'],['../structVW_1_1continuous__actions_1_1probability__density__function__value.html#ae25d76915a1a1363bb98e126245b62d1',1,'VW::continuous_actions::probability_density_function_value::probability_density_function_value(float action, float pdf_value)']]],
   ['process_5fcubic_5finteraction',['process_cubic_interaction',['../namespaceINTERACTIONS.html#ab7abecaa30d2da53976732595d9fa361',1,'INTERACTIONS']]],
   ['process_5fgeneric_5finteraction',['process_generic_interaction',['../namespaceINTERACTIONS.html#ab6dde6a55414235a599180d402ed9b15',1,'INTERACTIONS']]],
+  ['process_5fmodel_5ffield',['process_model_field',['../namespaceVW_1_1model__utils.html#a8369057d5016e6cfdf02f0ea80570572',1,'VW::model_utils']]],
   ['process_5fquadratic_5finteraction',['process_quadratic_interaction',['../namespaceINTERACTIONS.html#aaea6570ca6c9cf7f69b12116c7b758cf',1,'INTERACTIONS']]],
   ['ptr_5fqueue',['ptr_queue',['../classVW_1_1ptr__queue.html#a309ec3256a71c0f9ea6f6dc5338c5958',1,'VW::ptr_queue']]],
   ['push',['push',['../classVW_1_1ptr__queue.html#acc297cbc891cd074634fbd4a75489f0a',1,'VW::ptr_queue']]],
