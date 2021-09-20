@@ -5,6 +5,7 @@ var searchData=
   ['ecs',['ecs',['../structcbify__adf__data.html#a75754773c6506d0ee115886559c0e90e',1,'cbify_adf_data']]],
   ['empty',['empty',['../structpolylabel.html#a6d811b312990cfca1ccd76f553a89214',1,'polylabel']]],
   ['empty_5faudit_5fstrings',['EMPTY_AUDIT_STRINGS',['../interactions__predict_8h.html#a15fb23be401cf2a337ab90c20f3ec80c',1,'interactions_predict.h']]],
+  ['empty_5fversion_5ffile',['EMPTY_VERSION_FILE',['../namespaceVW_1_1version__definitions.html#ab18b47007e482b7941289af58dc13a55',1,'VW::version_definitions']]],
   ['emptylines_5fseparate_5fexamples',['emptylines_separate_examples',['../structparser.html#a751fa0c146800b9ab19e9db245d16994',1,'parser']]],
   ['end_5findex',['end_index',['../structVW_1_1namespace__extent.html#ad4c20a0d5b90f1aded05ed438a19281b',1,'VW::namespace_extent']]],
   ['end_5fit',['end_it',['../structINTERACTIONS_1_1feature__gen__data.html#a2294a786f788b6fd23517222aad41e79',1,'INTERACTIONS::feature_gen_data']]],

@@ -26,7 +26,7 @@ var searchData=
   ['labels',['labels',['../structMULTILABEL_1_1labels.html',1,'MULTILABEL']]],
   ['labelsinglepropertystate',['LabelSinglePropertyState',['../structLabelSinglePropertyState.html',1,'LabelSinglePropertyState&lt; audit &gt;'],['../structLabelSinglePropertyState.html#afbe53d47d34646ef3502eea9cf8b15b6',1,'LabelSinglePropertyState::LabelSinglePropertyState()']]],
   ['labelstate',['LabelState',['../structLabelState.html',1,'LabelState&lt; audit &gt;'],['../structLabelState.html#a60dce1017e9ab90b4d658b528ddeba05',1,'LabelState::LabelState()']]],
-  ['last_5fcompatible_5fversion',['LAST_COMPATIBLE_VERSION',['../vw__versions_8h.html#ad504ab869ece6f0e02ed2d96f0a77673',1,'vw_versions.h']]],
+  ['last_5fcompatible_5fversion',['LAST_COMPATIBLE_VERSION',['../namespaceVW_1_1version__definitions.html#a705965b39b52128f510483ca9d116135',1,'VW::version_definitions']]],
   ['last_5fcorrect_5fcost',['last_correct_cost',['../structGEN__CS_1_1cb__to__cs.html#a84aed12d3c21ee450ffcc3128e3db994',1,'GEN_CS::cb_to_cs']]],
   ['last_5fpred_5freg',['last_pred_reg',['../structGEN__CS_1_1cb__to__cs.html#a4d390b9d79b8a71897d727dea0299356',1,'GEN_CS::cb_to_cs']]],
   ['lasteventid',['LastEventId',['../structdsjson__metrics.html#aa673f398cf06ec1740db6b90afd433e3',1,'dsjson_metrics']]],

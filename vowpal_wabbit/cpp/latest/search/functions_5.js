@@ -44,6 +44,6 @@ var searchData=
   ['free_5fflatten_5fexample',['free_flatten_example',['../example_8h.html#a43e653fb1e820bef507e28a6d1debe75',1,'example.h']]],
   ['free_5fit',['free_it',['../memory_8h.html#a8d7c2f582fe6b06111fd091cb0f5c6b1',1,'memory.h']]],
   ['free_5fparser',['free_parser',['../parser_8h.html#a726349034276fd9ac5541976542f84b5',1,'parser.h']]],
-  ['from_5fstring',['from_string',['../structVW_1_1version__struct.html#a109fb67dd78a0ed981615e40e8f5e6bf',1,'VW::version_struct']]],
+  ['from_5fstring',['from_string',['../structVW_1_1version__struct.html#af3f04eb10b57a3fb52192082200f8a5e',1,'VW::version_struct']]],
   ['ftrl_5fsetup',['ftrl_setup',['../ftrl_8h.html#a72e3882d092be3db019cb612b757b839',1,'ftrl.h']]]
 ];

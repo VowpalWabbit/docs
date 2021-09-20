@@ -13,7 +13,6 @@ var searchData=
   ['e_5fvw_5fpredict_5ferr_5fno_5fmodel_5floaded',['E_VW_PREDICT_ERR_NO_MODEL_LOADED',['../vw__slim__return__codes_8h.html#a73316d70a75be9e87b796fe810a26d03',1,'vw_slim_return_codes.h']]],
   ['e_5fvw_5fpredict_5ferr_5fnot_5fa_5fcb_5fmodel',['E_VW_PREDICT_ERR_NOT_A_CB_MODEL',['../vw__slim__return__codes_8h.html#a7d295d96f3014910bbf6550a87a96cbc',1,'vw_slim_return_codes.h']]],
   ['e_5fvw_5fpredict_5ferr_5fweight_5findex_5fout_5fof_5frange',['E_VW_PREDICT_ERR_WEIGHT_INDEX_OUT_OF_RANGE',['../vw__slim__return__codes_8h.html#a693ec9c382a8b0783cda24d16a21234f',1,'vw_slim_return_codes.h']]],
-  ['empty_5fversion_5ffile',['EMPTY_VERSION_FILE',['../vw__versions_8h.html#aca051e0cfb7aaf083e7b888828544dca',1,'vw_versions.h']]],
   ['error_5fcode_5fdefinition',['ERROR_CODE_DEFINITION',['../error__constants_8h.html#a7ee931acdd46e901d29cd566edf03b48',1,'error_constants.h']]],
   ['expand',['EXPAND',['../vw__exception_8h.html#ae4b532a93c757194ec73b6790a3e6b1f',1,'vw_exception.h']]]
 ];

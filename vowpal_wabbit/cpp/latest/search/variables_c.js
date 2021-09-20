@@ -13,6 +13,7 @@ var searchData=
   ['label_5ftype',['label_type',['../structlabel__parser.html#a2ba568545041de9ca472b9ab761e8abd',1,'label_parser']]],
   ['label_5fv',['label_v',['../structMULTILABEL_1_1labels.html#ae9b968050adb2459463cffec3b4c38c4',1,'MULTILABEL::labels']]],
   ['labeled',['labeled',['../structVW_1_1slates_1_1label.html#a8ee43031c61a9a8a56d4c05bbec341ac',1,'VW::slates::label']]],
+  ['last_5fcompatible_5fversion',['LAST_COMPATIBLE_VERSION',['../namespaceVW_1_1version__definitions.html#a705965b39b52128f510483ca9d116135',1,'VW::version_definitions']]],
   ['last_5fcorrect_5fcost',['last_correct_cost',['../structGEN__CS_1_1cb__to__cs.html#a84aed12d3c21ee450ffcc3128e3db994',1,'GEN_CS::cb_to_cs']]],
   ['last_5fpred_5freg',['last_pred_reg',['../structGEN__CS_1_1cb__to__cs.html#a4d390b9d79b8a71897d727dea0299356',1,'GEN_CS::cb_to_cs']]],
   ['lasteventid',['LastEventId',['../structdsjson__metrics.html#aa673f398cf06ec1740db6b90afd433e3',1,'dsjson_metrics']]],

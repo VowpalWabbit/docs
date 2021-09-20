@@ -38,6 +38,7 @@ var searchData=
   ['softmax',['softmax',['../namespaceVW_1_1cb__explore__adf_1_1softmax.html',1,'VW::cb_explore_adf']]],
   ['squarecb',['squarecb',['../namespaceVW_1_1cb__explore__adf_1_1squarecb.html',1,'VW::cb_explore_adf']]],
   ['synthcover',['synthcover',['../namespaceVW_1_1cb__explore__adf_1_1synthcover.html',1,'VW::cb_explore_adf']]],
+  ['version_5fdefinitions',['version_definitions',['../namespaceVW_1_1version__definitions.html',1,'VW']]],
   ['vw',['VW',['../namespaceVW.html',1,'']]],
   ['vw_5fslim',['vw_slim',['../namespacevw__slim.html',1,'']]]
 ];

@@ -86,7 +86,7 @@ var searchData=
   ['free_5fit',['free_it',['../memory_8h.html#a8d7c2f582fe6b06111fd091cb0f5c6b1',1,'memory.h']]],
   ['free_5fparser',['free_parser',['../parser_8h.html#a726349034276fd9ac5541976542f84b5',1,'parser.h']]],
   ['free_5fptr',['free_ptr',['../memory_8h.html#a4dbd8ec0fd15b599650458cdf2b3f1bf',1,'memory.h']]],
-  ['from_5fstring',['from_string',['../structVW_1_1version__struct.html#a109fb67dd78a0ed981615e40e8f5e6bf',1,'VW::version_struct']]],
+  ['from_5fstring',['from_string',['../structVW_1_1version__struct.html#af3f04eb10b57a3fb52192082200f8a5e',1,'VW::version_struct']]],
   ['fs',['fs',['../structflat__example.html#a77947dfb239fd7487b88e3842a8f0594',1,'flat_example::fs()'],['../structVW_1_1primitive__feature__space.html#a7196cfc91add16e07c8ff2d442c640e3',1,'VW::primitive_feature_space::fs()']]],
   ['fscanf_5fs',['fscanf_s',['../crossplat__compat_8h.html#a0a33c9047aaa39206cb522b2b9900bbb',1,'crossplat_compat.h']]],
   ['ft_5foffset',['ft_offset',['../structflat__example.html#a0c98fc527c037d202d4e558b3518a10f',1,'flat_example::ft_offset()'],['../structexample__predict.html#a964a7741ec79edbb2e7e2298ffdd767a',1,'example_predict::ft_offset()']]],
