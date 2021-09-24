@@ -7,7 +7,7 @@ var searchData=
   ['feats',['feats',['../structVW_1_1namespaced__features.html#a59db853277055d9402202db89f2578a0',1,'VW::namespaced_features']]],
   ['feature',['feature',['../structfeature.html',1,'feature'],['../structfeature.html#a67f5aeaea85ac93019524af7e2cc8925',1,'feature::feature()=default'],['../structfeature.html#a15ba23cd8a38d89fab9fdc17ca9f8dee',1,'feature::feature(float _x, uint64_t _index)'],['../structfeature.html#a3953a8a8732281c7d9a3f7125ed02630',1,'feature::feature(const feature &amp;)=default'],['../structfeature.html#a68e494ef5a0658849ddd93164e37a395',1,'feature::feature(feature &amp;&amp;)=default']]],
   ['feature_5fcount',['feature_count',['../structNamespace.html#aa7695877ea34d84f25a12c44def2347b',1,'Namespace']]],
-  ['feature_5fdict',['feature_dict',['../global__data_8h.html#a4ead0ba226339fb7cd0087f71b47126c',1,'global_data.h']]],
+  ['feature_5fdict',['feature_dict',['../global__data_8h.html#a56ae611adb000a4727703806c40b0724',1,'global_data.h']]],
   ['feature_5fgen_5fdata',['feature_gen_data',['../structINTERACTIONS_1_1feature__gen__data.html',1,'INTERACTIONS::feature_gen_data'],['../structINTERACTIONS_1_1feature__gen__data.html#af40383c89fec1d2167b79849bf87769f',1,'INTERACTIONS::feature_gen_data::feature_gen_data()']]],
   ['feature_5fgroup',['feature_group',['../structNamespace.html#a7ba33baa864fb7a27d078a97cf842be7',1,'Namespace']]],
   ['feature_5fgroup_2eh',['feature_group.h',['../feature__group_8h.html',1,'']]],

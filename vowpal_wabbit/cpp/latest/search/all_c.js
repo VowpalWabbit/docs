@@ -8,7 +8,7 @@ var searchData=
   ['label_5faction_5fnot_5ffirst',['label_action_not_first',['../structVW_1_1cb__explore__adf_1_1cb__explore__metrics.html#a29bc83ce95727c722647bbfbe08994f5',1,'VW::cb_explore_adf::cb_explore_metrics']]],
   ['label_5fdata',['label_data',['../structlabel__data.html',1,'label_data'],['../structlabel__data.html#a800529bafb869d908c46cb8f889e38e9',1,'label_data::label_data()'],['../structlabel__data.html#a84397d398f811484280a7f8a5c9390c3',1,'label_data::label_data(float label)']]],
   ['label_5fdictionary_2eh',['label_dictionary.h',['../label__dictionary_8h.html',1,'']]],
-  ['label_5ffeature_5fmap',['label_feature_map',['../namespaceLabelDict.html#ab02875d5e0a699cc21641a98327d815a',1,'LabelDict']]],
+  ['label_5ffeature_5fmap',['label_feature_map',['../namespaceLabelDict.html#a9b8fd67cc680c09a0cc9f0fe73bbeb3f',1,'LabelDict']]],
   ['label_5findex_5fstate',['label_index_state',['../structContext.html#a679ab3d8b198ccddba2ecc998480ba7f',1,'Context']]],
   ['label_5fobject_5fstate',['label_object_state',['../structContext.html#accb075644231b884ecab3d1301524c4b',1,'Context']]],
   ['label_5fparser',['label_parser',['../structlabel__parser.html',1,'']]],

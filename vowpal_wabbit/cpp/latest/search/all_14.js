@@ -44,7 +44,7 @@ var searchData=
   ['total_5fsum_5ffeat_5fsq',['total_sum_feat_sq',['../structexample.html#ad434838ba5443d5f6b5529558d5c1a8c',1,'example::total_sum_feat_sq()'],['../structflat__example.html#aa233932b8fedfd4092068bee8779cd6a',1,'flat_example::total_sum_feat_sq()']]],
   ['trace',['trace',['../namespaceVW_1_1io_1_1logger.html#a727315522185c0fa2906718f6ac84928a04a75036e9d520bb983c5ed03b8d0182',1,'VW::io::logger']]],
   ['trace_5fmessage',['trace_message',['../structvw.html#af7f9a756371ddd4978d7ce33cb5e9a0a',1,'vw']]],
-  ['trace_5fmessage_5ft',['trace_message_t',['../error__reporting_8h.html#a483c6d5166644be0183b7c55ded1ff18',1,'error_reporting.h']]],
+  ['trace_5fmessage_5ft',['trace_message_t',['../error__reporting_8h.html#a98d6d6ac9c0371b98232d6c04df7ee99',1,'error_reporting.h']]],
   ['trace_5fmessage_5fwrapper',['trace_message_wrapper',['../structtrace__message__wrapper.html',1,'trace_message_wrapper'],['../structtrace__message__wrapper.html#a0f4bd67a78c68a80ff6bba1c4370eed0',1,'trace_message_wrapper::trace_message_wrapper()']]],
   ['trace_5fmessage_5fwrapper_5fcontext',['trace_message_wrapper_context',['../structvw.html#a1c7238f149071d568f7d8a1d275d7d77',1,'vw']]],
   ['track_5fstack',['track_stack',['../structvw__dbg.html#a261cfa69df4a69a43b50076eccef24d2',1,'vw_dbg']]],
