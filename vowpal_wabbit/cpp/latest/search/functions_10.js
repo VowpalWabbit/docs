@@ -18,7 +18,7 @@ var searchData=
   ['read_5fline_5fdecision_5fservice_5fjson',['read_line_decision_service_json',['../namespaceVW.html#aeb4682f5c6fe4f9996e5bb65b188240f',1,'VW']]],
   ['read_5fline_5fjson_5fs',['read_line_json_s',['../namespaceVW.html#ac8aba9d1df88c1409a24327130abaeb1',1,'VW']]],
   ['read_5flines',['read_lines',['../namespaceVW.html#a07beba3d37d1ded126fe3bb9d4238329',1,'VW']]],
-  ['read_5fregressor_5ffile',['read_regressor_file',['../parse__regressor_8h.html#a0255ad26c81992b45bda7f64c6a10494',1,'parse_regressor.h']]],
+  ['read_5fregressor_5ffile',['read_regressor_file',['../parse__regressor_8h.html#a4dffa6e0939788944e5789d2057afd8c',1,'parse_regressor.h']]],
   ['read_5fstring',['read_string',['../classvw__slim_1_1model__parser.html#a4feb479f60a6842262a1f40e409d828c',1,'vw_slim::model_parser']]],
   ['read_5fvalue',['read_value',['../classio__buf.html#aad08b1941d9b2b47be78a456fa20a43a',1,'io_buf']]],
   ['read_5fweights',['read_weights',['../classvw__slim_1_1model__parser.html#a04ebc770ef447e7dd251e30d71c750c2',1,'vw_slim::model_parser::read_weights(std::unique_ptr&lt; W &gt; &amp;weights, uint64_t weight_length)'],['../classvw__slim_1_1model__parser.html#af11176e2c8e1c95b7b535f7c9aaef09d',1,'vw_slim::model_parser::read_weights(std::unique_ptr&lt; W &gt; &amp;weights, uint32_t num_bits, uint32_t stride_shift)']]],
