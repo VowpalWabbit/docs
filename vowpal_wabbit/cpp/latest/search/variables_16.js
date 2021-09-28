@@ -6,6 +6,7 @@ var searchData=
   ['values_5fabove_5fand_5fincluding_5fzero',['VALUES_ABOVE_AND_INCLUDING_ZERO',['../namespaceVW_1_1details.html#a68e7a75400178beccf8b637920c81ca5',1,'VW::details']]],
   ['values_5fabove_5fzero',['VALUES_ABOVE_ZERO',['../namespaceVW_1_1details.html#adb1e84d42c34af5804f2f7266b4e0ef3',1,'VW::details']]],
   ['values_5fbelow_5fzero',['VALUES_BELOW_ZERO',['../namespaceVW_1_1details.html#a1850458f654ac1db570f37d2bd0235a2',1,'VW::details']]],
+  ['version_5ffile_5fwith_5factive_5fseen_5flabels',['VERSION_FILE_WITH_ACTIVE_SEEN_LABELS',['../namespaceVW_1_1version__definitions.html#afed4e25841cda4160ad7ec2f20721276',1,'VW::version_definitions']]],
   ['version_5ffile_5fwith_5fcb_5fadf_5fsave',['VERSION_FILE_WITH_CB_ADF_SAVE',['../namespaceVW_1_1version__definitions.html#ac780e91d0a156944cac8227252f38306',1,'VW::version_definitions']]],
   ['version_5ffile_5fwith_5fcb_5fto_5fcbadf',['VERSION_FILE_WITH_CB_TO_CBADF',['../namespaceVW_1_1version__definitions.html#a731372b00e6f7abca7b7949031557f0f',1,'VW::version_definitions']]],
   ['version_5ffile_5fwith_5fccb_5fmulti_5fslots_5fseen_5fflag',['VERSION_FILE_WITH_CCB_MULTI_SLOTS_SEEN_FLAG',['../namespaceVW_1_1version__definitions.html#a650a0d96553640772118189b7286ffef',1,'VW::version_definitions']]],
