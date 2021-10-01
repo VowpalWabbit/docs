@@ -16,6 +16,7 @@ var searchData=
   ['search',['search',['../structvw__dbg.html#a714718400f44bb859325eee0b25ce79f',1,'vw_dbg']]],
   ['searchstr',['searchstr',['../structvw.html#af1db5f5b1b98a4aa2a8062b6d65d7d89',1,'vw']]],
   ['second_5fobserved_5flabel',['second_observed_label',['../structshared__data.html#a7bc97afde96c2ca68808904f5c817dcc',1,'shared_data']]],
+  ['seen_5ffirst',['seen_first',['../classFloatToFloatState__OriginalLabelCostHack.html#a72ccadad67ddb0e646ff915bd8833b93',1,'FloatToFloatState_OriginalLabelCostHack']]],
   ['segment',['segment',['../classArrayToPdfState.html#a90a676dd3c2fef026dfa3c4748501f33',1,'ArrayToPdfState']]],
   ['self_5finteraction',['self_interaction',['../structINTERACTIONS_1_1feature__gen__data.html#a9d489e35f7b4ba4f306a540c2877e9d7',1,'INTERACTIONS::feature_gen_data']]],
   ['sensitivity_5ff',['sensitivity_f',['../structVW_1_1LEARNER_1_1sensitivity__data.html#a3af18eebab310c678cf75e00e8b06152',1,'VW::LEARNER::sensitivity_data']]],

@@ -8,6 +8,8 @@ var searchData=
   ['finish_5fexample_5fdata',['finish_example_data',['../structVW_1_1LEARNER_1_1finish__example__data.html',1,'VW::LEARNER']]],
   ['flat_5fexample',['flat_example',['../structflat__example.html',1,'']]],
   ['floattofloatstate',['FloatToFloatState',['../classFloatToFloatState.html',1,'']]],
+  ['floattofloatstate_3c_20audit_2c_20float_5faggregation_3a_3aset_20_3e',['FloatToFloatState&lt; audit, float_aggregation::set &gt;',['../classFloatToFloatState.html',1,'']]],
+  ['floattofloatstate_5foriginallabelcosthack',['FloatToFloatState_OriginalLabelCostHack',['../classFloatToFloatState__OriginalLabelCostHack.html',1,'']]],
   ['formatter_3c_20vw_3a_3astring_5fview_20_3e',['formatter&lt; VW::string_view &gt;',['../structfmt_1_1formatter_3_01VW_1_1string__view_01_4.html',1,'fmt']]],
   ['func_5fdata',['func_data',['../structVW_1_1LEARNER_1_1func__data.html',1,'VW::LEARNER']]]
 ];
