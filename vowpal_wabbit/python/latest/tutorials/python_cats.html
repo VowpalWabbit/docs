@@ -4,11 +4,12 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Simulating a smart thermostat using CATS: a Contextual Bandit algorithm with a continuous action space &#8212; VowpalWabbit latest documentation</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.f8312eac34e2432659a6ef7e609c047e.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -23,14 +24,14 @@
 
     
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/blank.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
     <link rel="stylesheet" type="text/css" href="../_static/nav.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.c258f241e0e9126fa012.js">
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -51,7 +52,10 @@
     <link rel="next" title="Classification with Vowpal Wabbit" href="python_classification.html" />
     <link rel="prev" title="Offline policy evaluation using the VW command line" href="off_policy_evaluation.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -562,7 +566,7 @@
 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="simulating-a-smart-thermostat-using-cats-a-contextual-bandit-algorithm-with-a-continuous-action-space">
+  <section class="tex2jax_ignore mathjax_ignore" id="simulating-a-smart-thermostat-using-cats-a-contextual-bandit-algorithm-with-a-continuous-action-space">
 <h1>Simulating a smart thermostat using CATS: a Contextual Bandit algorithm with a continuous action space<a class="headerlink" href="#simulating-a-smart-thermostat-using-cats-a-contextual-bandit-algorithm-with-a-continuous-action-space" title="Permalink to this headline">¶</a></h1>
 <p>In this tutorial we will simulate the scenario of personalizing a thermostat for a household with two rooms using Contextual Bandits in a continuous action space. The goal is to maximize user satisfaction with the thermostat quantified by measuring thermostat accuracy or reward (TR). The thermostat proposes a temperature and the user will either accept the temperature or adjust it to fit their needs.</p>
 <p>Let’s recall that in a CB setting, a data point has four components,</p>
@@ -601,7 +605,7 @@ The context is therefore (room, time_of_day).</p>
 </div>
 </div>
 </div>
-<div class="section" id="simulate-reward">
+<section id="simulate-reward">
 <h2>Simulate reward<a class="headerlink" href="#simulate-reward" title="Permalink to this headline">¶</a></h2>
 <p>In the real world we will have to learn the room temperature preferences as we observe the interactions between the proposed temperature for each room and the one selected by the people living in the house. Since this is a simulation we will have to define the preference profile for each room. The reward that we provide to the learner will follow this preference profile. Our hope is to see if the learner can take better and better decisions as we see more samples which in turn means we are maximizing the reward.</p>
 <p>We will also modify the reward function in a few different ways and see if the CB learner picks up the changes. We will compare the TR with and without learning.</p>
@@ -668,8 +672,8 @@ The context is therefore (room, time_of_day).</p>
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="getting-a-decision">
+</section>
+<section id="getting-a-decision">
 <h2>Getting a decision<a class="headerlink" href="#getting-a-decision" title="Permalink to this headline">¶</a></h2>
 <p>We call VW and get a predicted temperature and the value of the probability density function at that temperature. Since we are predicting over a continuous range VW will sample a pdf before returning the predicted value and the density of the pdf at that point. We are incorporating exploration into our strategy so the pdf will be more dense around the value that VW chooses to predict, and less dense in the rest of the continuous range. So it is more likely that VW will choose an action around the predicted value.</p>
 <p>We have all of the information we need to choose a temperature for a specific room and time of day. To use VW to achieve this, we will do the following:</p>
@@ -685,8 +689,8 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="simulation-set-up">
+</section>
+<section id="simulation-set-up">
 <h2>Simulation set up<a class="headerlink" href="#simulation-set-up" title="Permalink to this headline">¶</a></h2>
 <p>Now that we have done all of the setup work and know how to interact with VW, let’s simulate the world of our two rooms. The scenario is that the thermostat it turned on in each room and it has to propose a temperature. Remember that the reward function allows us to define the worlds reaction to what VW recommends.</p>
 <p>We will choose between ‘Living Room’ and ‘Bedroom’ uniformly at random and also choose the time of day uniformly at random. We can think of this as tossing a coin to choose between the rooms (‘Living Room’ if heads and ‘Bedroom’ if tails) and another coin toss for choosing time of day.</p>
@@ -768,8 +772,8 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="scenario-1">
+</section>
+<section id="scenario-1">
 <h2>Scenario 1<a class="headerlink" href="#scenario-1" title="Permalink to this headline">¶</a></h2>
 <p>We will use the first reward function get_cost and assume that the preferences for room temperatures do not change over time and see what happens to the smart thermostat as we learn. We will also see what happens when there is no learning. We will use the “no learning” case as our baseline to compare to.</p>
 <p>We will be using the CATS algorithm which does tree based learning with smoothing. That means that we need to provide the number of actions (buckets/tree leaves) that the continuous range will be discretized into, and then we need to define the bandwidth which is the radius around the chosen discreet action that the algorithm will sample a temperature from with higher probability.</p>
@@ -778,7 +782,7 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 <p>Let’s say that for a given context, it selects the third bucket that starts from 8 degrees celsius, goes until 12 degrees celsius, and has a center of 10 degrees celsius. For a smoothing radius (bandwidth) of 1 the resulting probability density function (pdf) that VW will have to sample from will have a higher density around</p>
 <p><code class="docutils literal notranslate"><span class="pre">[bucket_centre</span> <span class="pre">-</span> <span class="pre">bandwidth,</span> <span class="pre">bucket_centre</span> <span class="pre">+</span> <span class="pre">bandwidth]</span></code></p>
 <p>i.e. [9, 11]. If bandwidth was bigger, for example 5 then we would have higher density (and therefore higher probability of selecting an action) in the range [5, 15], providing a smoothing range that spans the discretized buckets. The bandwidth is defined in terms of the continuous range (max_value - min_value)</p>
-<div class="section" id="with-learning">
+<section id="with-learning">
 <h3>With Learning<a class="headerlink" href="#with-learning" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -799,8 +803,8 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 <img alt="../_images/python_cats_15_0.png" src="../_images/python_cats_15_0.png" />
 </div>
 </div>
-</div>
-<div class="section" id="without-learning">
+</section>
+<section id="without-learning">
 <h3>Without Learning<a class="headerlink" href="#without-learning" title="Permalink to this headline">¶</a></h3>
 <p>Let’s do the same but without learning. The reward rate never improves and just hovers around 0.5</p>
 <div class="cell docutils container">
@@ -822,9 +826,9 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 <img alt="../_images/python_cats_17_0.png" src="../_images/python_cats_17_0.png" />
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="parameter-sweep">
+</section>
+</section>
+<section id="parameter-sweep">
 <h2>Parameter sweep<a class="headerlink" href="#parameter-sweep" title="Permalink to this headline">¶</a></h2>
 <p>Next let’s do a parameter sweep for different values of <code class="docutils literal notranslate"><span class="pre">num_actions</span></code> and <code class="docutils literal notranslate"><span class="pre">bandwidth</span></code>. We will use the below function to help us plot the reward rates for different combinations of <code class="docutils literal notranslate"><span class="pre">num_actions</span></code> and <code class="docutils literal notranslate"><span class="pre">bandwidths</span></code></p>
 <div class="cell docutils container">
@@ -863,7 +867,7 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 </div>
 </div>
 </div>
-<div class="section" id="id1">
+<section id="id1">
 <h3>With Learning<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <p>We will try all the number of actions as powers of 2 from 8 until 2048. Since our continuous range stays the same (0-32) we are creating smaller range buckets as the number of actions grows. The number of actions needs to be a power of 2 as it represents the number of leaves that the internal binary tree will have. Small number of actions might result in coarser discretizaton leading to results similar to uniform random. On the other hand really large number of actions could mean that we need a lot more data in order to train all of the buckets.</p>
 <p>We will also try all the combinaitons of the above action numbers with bandwidths ranging from 0 to 25. The smaller the bandwidth the smaller the smoothing range around the selected continuous value. Really large bandwidths will result in large smoothing ranges and could lead to results similar to uniform random.</p>
@@ -1098,8 +1102,8 @@ Plotting...
 <img alt="../_images/python_cats_21_40.png" src="../_images/python_cats_21_40.png" />
 </div>
 </div>
-</div>
-<div class="section" id="id2">
+</section>
+<section id="id2">
 <h3>Without Learning<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1292,12 +1296,12 @@ Plotting...
 <img alt="../_images/python_cats_23_20.png" src="../_images/python_cats_23_20.png" />
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="scenario-2">
+</section>
+</section>
+<section id="scenario-2">
 <h2>Scenario 2<a class="headerlink" href="#scenario-2" title="Permalink to this headline">¶</a></h2>
 <p>In the real world peoples preferences change as e.g. the seasons change. So now in the simulation we are going to incorporate two different cost functions, and swap over to the second one halfway through. Below is a a table of the new cost function we are going to use, get_cost_1:</p>
-<div class="section" id="living-room">
+<section id="living-room">
 <h3>Living Room<a class="headerlink" href="#living-room" title="Permalink to this headline">¶</a></h3>
 <table class="colwidths-auto table">
 <thead>
@@ -1317,8 +1321,8 @@ Plotting...
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="bedroom">
+</section>
+<section id="bedroom">
 <h3>Bedroom<a class="headerlink" href="#bedroom" title="Permalink to this headline">¶</a></h3>
 <table class="colwidths-auto table">
 <thead>
@@ -1433,8 +1437,8 @@ Plotting...
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="id3">
+</section>
+<section id="id3">
 <h3>With Learning<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
 <p>Now that we have run a parameter sweep we can better pick the values of num_actions and bandwidth. For the next scenario we will pick <code class="docutils literal notranslate"><span class="pre">num_actions</span> <span class="pre">128</span></code> and <code class="docutils literal notranslate"><span class="pre">bandwidth</span> <span class="pre">2</span></code>.</p>
 <p>Let us now switch to the second cost function after a few samples (running the first cost function). Recall that this cost function changes the preferences of the room temperatures but it is still working with the same continuous action space as before. We should see the learner pick up these changes and optimize towards the new preferences.</p>
@@ -1463,8 +1467,8 @@ Plotting...
 <img alt="../_images/python_cats_29_0.png" src="../_images/python_cats_29_0.png" />
 </div>
 </div>
-</div>
-<div class="section" id="id4">
+</section>
+<section id="id4">
 <h3>Without Learning<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1491,11 +1495,11 @@ Plotting...
 <img alt="../_images/python_cats_31_0.png" src="../_images/python_cats_31_0.png" />
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="scenario-3">
+</section>
+</section>
+<section id="scenario-3">
 <h2>Scenario 3<a class="headerlink" href="#scenario-3" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="better-cost-function">
+<section id="better-cost-function">
 <h3>Better cost function<a class="headerlink" href="#better-cost-function" title="Permalink to this headline">¶</a></h3>
 <p>The cost function we have been using until now has been a bit too simplistic but has served us well enough to showcase the differences in learning and also in showing CB pickup the new cost cost function and adjust to it.</p>
 <p>A slightly better cost function for our simulated world could be the difference between the temperature recommended and the temperature chosen. The smaller the difference the better the thermostat is doing. We are going to model that by taking the absolute cost: <code class="docutils literal notranslate"><span class="pre">1.0</span> <span class="pre">-</span> <span class="pre">|selected_temperature</span> <span class="pre">-</span> <span class="pre">predicted_temerature|</span> <span class="pre">/</span> <span class="pre">range</span></code> and the transforming that cost into a reward by multiplying it with <code class="docutils literal notranslate"><span class="pre">-1</span></code></p>
@@ -1770,9 +1774,9 @@ Plotting...
 <img alt="../_images/python_cats_35_40.png" src="../_images/python_cats_35_40.png" />
 </div>
 </div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1798,12 +1802,23 @@ Plotting...
               
 
               
-              <div class='prev-next-bottom'>
-                
-    <a class='left-prev' id="prev-link" href="off_policy_evaluation.html" title="previous page">Offline policy evaluation using the VW command line</a>
-    <a class='right-next' id="next-link" href="python_classification.html" title="next page">Classification with Vowpal Wabbit</a>
-
-              </div>
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="off_policy_evaluation.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">Previous</p>
+            <p class="prev-next-title">Offline policy evaluation using the VW command line</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="python_classification.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">Next</p>
+        <p class="prev-next-title">Classification with Vowpal Wabbit</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
               
           </main>
           
@@ -1811,20 +1826,19 @@ Plotting...
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  <footer class="footer mt-5 mt-md-0">
+  <script src="../_static/js/index.c258f241e0e9126fa012.js"></script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
     
     <div class="footer-item">
       <p class="copyright">
-    &copy; Copyright 2021, John langford et al.<br/>
+    &copy; Copyright 2021, John langford et al.<br>
 </p>
     </div>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.2.0.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.2.0.<br>
 </p>
     </div>
     

@@ -4,11 +4,12 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Search - Speech Tagger &#8212; VowpalWabbit latest documentation</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.f8312eac34e2432659a6ef7e609c047e.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -23,14 +24,14 @@
 
     
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/blank.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
     <link rel="stylesheet" type="text/css" href="../_static/nav.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.c258f241e0e9126fa012.js">
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -51,7 +52,10 @@
     <link rel="next" title="API Reference" href="../reference/index.html" />
     <link rel="prev" title="Search - Sequence" href="search_sequence.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -494,7 +498,7 @@
 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="search-speech-tagger">
+  <section class="tex2jax_ignore mathjax_ignore" id="search-speech-tagger">
 <h1>Search - Speech Tagger<a class="headerlink" href="#search-speech-tagger" title="Permalink to this headline">¶</a></h1>
 <p>This tutorial walks you through writing learning to search code using the VW python interface. Once you’ve completed this, you can graduate to the C++ version, which will be faster for the computer but more painful for you.</p>
 <p>The “learning to search” paradigm solves problems that look like the following. You have a sequence of decisions to make. At the end of making these decisions, the world tells you how bad your decisions were. You want to condition later decisions on earlier decisions. But thankfully, at “training time,” you have access to an <em>oracle</em> that will tell you the right answer.</p>
@@ -620,7 +624,7 @@
 </div>
 </div>
 <p>If we look back at our POS tag definitions, this is DET NOUN VERB DET NOUN, which is indeed correct!</p>
-<div class="section" id="removing-the-auto-features">
+<section id="removing-the-auto-features">
 <h2>Removing the AUTO features<a class="headerlink" href="#removing-the-auto-features" title="Permalink to this headline">¶</a></h2>
 <p>In the above example we used both AUTO_HAMMING_LOSS and AUTO_CONDITION_FEATURES. To make more explicit what these are doing, let’s rewrite our <code class="docutils literal notranslate"><span class="pre">SequenceLabeler</span></code> class without them! Here’s a version that gets rid of both simultaneously. It is only modestly more complex:</p>
 <div class="cell docutils container">
@@ -660,8 +664,8 @@
 <p>There are essentially two things that changed here. In order to get rid of AUTO_HAMMING_LOSS, we had to keep track of how many errors the predictor had made. This is done by checking whether <code class="docutils literal notranslate"><span class="pre">pred</span> <span class="pre">!=</span> <span class="pre">pos</span></code> inside the inner loop, and then at the end calling <code class="docutils literal notranslate"><span class="pre">self.sch.loss(loss)</span></code> to tell the search procedure how well we did.</p>
 <p>In order to get rid of AUTO_CONDITION_FEATURES, we need to explicitly add the previous prediction as features to the example we are predicting with. Here, we’ve done this by extracting the previous prediction (<code class="docutils literal notranslate"><span class="pre">prevPred</span></code>) and explicitly adding it as a feature (in the ‘p’ namespace) during the example construction.</p>
 <p><strong>Important Note:</strong> even though we’re not using AUTO_CONDITION_FEATURES, we <em>still</em> must tell the search process that this prediction depends on the previous prediction. We need to do this because the learning algorithm automatically memoizes certain computations, and so it needs to know that, when memoizing, to remember that this prediction <em>might have been different</em> if a previous decision were different.</p>
-</div>
-<div class="section" id="very-silly-covington-esqu-dependency-parsing">
+</section>
+<section id="very-silly-covington-esqu-dependency-parsing">
 <h2>Very silly Covington-esqu dependency parsing<a class="headerlink" href="#very-silly-covington-esqu-dependency-parsing" title="Permalink to this headline">¶</a></h2>
 <p>Let’s also try a variant of dependency parsing to see that this doesn’t work just for sequence-labeling list tasks. First we need to define some data:</p>
 <div class="cell docutils container">
@@ -748,8 +752,8 @@
 </div>
 </div>
 <p>One could argue that a more natural way to do this would be with LDF rather than the inner loop over <code class="docutils literal notranslate"><span class="pre">m</span></code>. We’ll do that next.</p>
-</div>
-<div class="section" id="ldf-based-covington-style-dependency-parser">
+</section>
+<section id="ldf-based-covington-style-dependency-parser">
 <h2>LDF-based Covington-style dependency parser<a class="headerlink" href="#ldf-based-covington-style-dependency-parser" title="Permalink to this headline">¶</a></h2>
 <p>One of the weirdnesses in the previous parser implementation is that it makes N-many binary decisions per word (“is word n my parent?”) rather than a single N-way decision. The latter makes more sense.</p>
 <p>The challenge is that you cannot set this up as a vanilla multiclass classification problem because (a) the number of “classes” is a function of the input (a length N sentence will have N classes) and (b) class “1” and “2” don’t mean anything consistently across examples.</p>
@@ -828,8 +832,8 @@
 </div>
 <p>The correct parse of this sentence is <code class="docutils literal notranslate"><span class="pre">[1,</span> <span class="pre">2,</span> <span class="pre">-1,</span> <span class="pre">4,</span> <span class="pre">2]</span></code> which is what this should have printed.</p>
 <p>There are two major things to notice in the initialization of VW. The first is that we say <code class="docutils literal notranslate"><span class="pre">--search</span> <span class="pre">0</span></code>. The zero labels argument to <code class="docutils literal notranslate"><span class="pre">--search</span></code> declares that this is going to be an LDF task. We also have to tell VW that we want an LDF-enabled cost-sensitive learner, which is what <code class="docutils literal notranslate"><span class="pre">--csoaa_ldf</span> <span class="pre">m</span></code> does (if you’re wondering, <code class="docutils literal notranslate"><span class="pre">m</span></code> means “multiline” – just treat it as something you have to do). The rest should be familiar.</p>
-</div>
-<div class="section" id="a-simple-word-alignment-model">
+</section>
+<section id="a-simple-word-alignment-model">
 <h2>A simple word-alignment model<a class="headerlink" href="#a-simple-word-alignment-model" title="Permalink to this headline">¶</a></h2>
 <p>Okay, as a last example we’ll do a simple word alignment model in the spirit of the IBM models. Note that this will be a <em>supervised</em> model; doing unsupervised stuff is a bit trickier.</p>
 <p>Here’s some word alignment data. The dataset is triples of <code class="docutils literal notranslate"><span class="pre">E,</span> <span class="pre">A,</span> <span class="pre">F</span></code> where <code class="docutils literal notranslate"><span class="pre">A[i]</span></code> = list of words <code class="docutils literal notranslate"><span class="pre">E[i]</span></code> aligned to, or <code class="docutils literal notranslate"><span class="pre">[]</span></code> for null-aligned:</p>
@@ -945,8 +949,8 @@
 </div>
 </div>
 <p>If this worked correctly, it should have printed <code class="docutils literal notranslate"><span class="pre">[[0],</span> <span class="pre">[2],</span> <span class="pre">[1]]</span></code>.</p>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -972,12 +976,23 @@
               
 
               
-              <div class='prev-next-bottom'>
-                
-    <a class='left-prev' id="prev-link" href="search_sequence.html" title="previous page">Search - Sequence</a>
-    <a class='right-next' id="next-link" href="../reference/index.html" title="next page">API Reference</a>
-
-              </div>
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="search_sequence.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">Previous</p>
+            <p class="prev-next-title">Search - Sequence</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../reference/index.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">Next</p>
+        <p class="prev-next-title">API Reference</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
               
           </main>
           
@@ -985,20 +1000,19 @@
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  <footer class="footer mt-5 mt-md-0">
+  <script src="../_static/js/index.c258f241e0e9126fa012.js"></script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
     
     <div class="footer-item">
       <p class="copyright">
-    &copy; Copyright 2021, John langford et al.<br/>
+    &copy; Copyright 2021, John langford et al.<br>
 </p>
     </div>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.2.0.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.2.0.<br>
 </p>
     </div>
     

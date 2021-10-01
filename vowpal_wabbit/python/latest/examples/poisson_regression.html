@@ -4,11 +4,12 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Poisson Regression &#8212; VowpalWabbit latest documentation</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.f8312eac34e2432659a6ef7e609c047e.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -23,14 +24,14 @@
 
     
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/blank.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
     <link rel="stylesheet" type="text/css" href="../_static/nav.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.c258f241e0e9126fa012.js">
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -51,7 +52,10 @@
     <link rel="next" title="Predict comparison" href="predict.html" />
     <link rel="prev" title="Mini VW" href="mini_vw.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -469,7 +473,7 @@
 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="poisson-regression">
+  <section class="tex2jax_ignore mathjax_ignore" id="poisson-regression">
 <h1>Poisson Regression<a class="headerlink" href="#poisson-regression" title="Permalink to this headline">¶</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -527,28 +531,29 @@ num sources = 1
 Enabled reductions: gd, scorer-identity
 average  since         example        example  current  current  current
 loss     last          counter         weight    label  predict features
-3.787122 3.787122            1            1.0   1.9461   0.0000        3
-3.778238 3.769353            2            2.0   2.0796   0.1381        3
-3.178951 2.579665            4            4.0   1.9461   0.4173        3
-2.229746 1.280540            8            8.0   1.7919   0.4108        3
-2.486356 2.742967           16           16.0   2.8904   0.8983        3
-1.869728 1.253100           32           32.0   2.6391   1.5985        3
-2.267354 2.664981           64           64.0   2.6391   1.2938        3
-2.281272 2.295190          128          128.0   0.6936   1.1139        3
-1.962766 1.644259          256          256.0   2.3027   2.0013        3
-2.139470 2.316175          512          512.0   2.3027   1.5830        3
-2.026320 1.913170         1024         1024.0   1.0989   1.3960        3
-1.949954 1.873589         2048         2048.0   2.0796   1.4634        3
-1.916976 1.883997         4096         4096.0   1.7919   1.6283        3
-1.868915 1.820855         8192         8192.0   1.9461   1.8701        3
-
-finished run
+6.579359 6.579359            1            1.0   2.5650   0.0000        3
+4.499100 2.418842            2            2.0   1.9461   0.3908        3
+2.487899 0.476697            4            4.0   1.0989   0.1335        3
+3.684522 4.881146            8            8.0   2.9958   0.6027        3
+6.158356 8.632191           16           16.0   2.4850   0.6369        3
+4.194919 2.231482           32           32.0   2.0796   0.9159        2
+3.505736 2.816553           64           64.0   1.9461   1.3997        3
+2.975300 2.444864          128          128.0   1.9461   1.5992        3
+2.587665 2.200031          256          256.0   2.5650   1.6412        2
+2.354081 2.120497          512          512.0   2.0796   2.2444        3
+2.152381 1.950682         1024         1024.0   2.4850   2.4181        3
+2.027233 1.902085         2048         2048.0   2.0796   2.2637        3
+1.963912 1.900590         4096         4096.0   1.7919   1.0595        3
+1.897795 1.831679         8192         8192.0   1.9461   1.1630        3
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>finished run
 number of examples = 10000
 weighted example sum = 10000.000000
-weighted label sum = 18371.597241
-average loss = 1.858689
-best constant = 1.837160
-total feature number = 28100
+weighted label sum = 17511.474474
+average loss = 1.879030
+best constant = 1.751148
+total feature number = 28000
 </pre></div>
 </div>
 </div>
@@ -576,13 +581,13 @@ num sources = 1
 Enabled reductions: gd, scorer-identity
 average  since         example        example  current  current  current
 loss     last          counter         weight    label  predict features
-0.472337 0.472337            1            1.0   1.9461   1.2588        3
-0.784146 1.095955            2            2.0   2.0796   1.0327        3
-0.399452 0.014758            4            4.0   1.9461   2.0564        3
-0.208529 0.017607            8            8.0   1.7919   1.8178        3
-0.402750 0.596971           16           16.0   2.8904   2.9608        3
-0.301102 0.199454           32           32.0   2.6391   3.2959        3
-1.033821 1.766541           64           64.0   2.6391   1.5561        3
+0.393430 0.393430            1            1.0   2.5650   1.9378        3
+0.554038 0.714646            2            2.0   1.9461   2.7914        3
+0.491174 0.428310            4            4.0   1.0989   0.5062        3
+0.409261 0.327349            8            8.0   2.9958   3.1355        3
+3.375355 6.341450           16           16.0   2.4850   2.1823        3
+1.779930 0.184505           32           32.0   2.0796   1.5810        2
+1.790938 1.801945           64           64.0   1.9461   2.3802        3
 </pre></div>
 </div>
 </div>
@@ -619,32 +624,32 @@ loss     last          counter         weight    label  predict features
 finished run
 number of examples = 100
 weighted example sum = 100.000000
-weighted label sum = 183.715972
-average loss = 1.785975
-best constant = 1.837160
-total feature number = 281
-15.242744 15.242744            1            1.0   7.0000   0.0000        3
-16.272673 17.302601            2            2.0   8.0000   0.1421        3
-14.055986 11.839299            4            4.0   7.0000   0.4480        3
-10.107670 6.159354            8            8.0   6.0000   0.4365        3
-13.841600 17.575531           16           16.0  18.0000   0.9273        3
-11.677861 9.514121           32           32.0  14.0000   1.7064        3
-9.041272 6.404682           64           64.0  14.0000   1.4390        3
-5.676847 2.312423          128          128.0   2.0000   1.3531        3
-3.526626 1.376404          256          256.0  10.0000   2.2213        3
-2.455882 1.385138          512          512.0  10.0000   1.8192        3
-1.889916 1.323951         1024         1024.0   3.0000   1.7023        3
-1.610264 1.330611         2048         2048.0   8.0000   1.7925        3
-1.472076 1.333889         4096         4096.0   6.0000   1.9215        3
-1.399501 1.326925         8192         8192.0   7.0000   2.1441        3
+weighted label sum = 175.114745
+average loss = 1.791365
+best constant = 1.751148
+total feature number = 280
+42.688690 42.688690            1            1.0  13.0000   0.0000        3
+26.652145 10.615601            2            2.0   7.0000   0.4010        3
+13.851167 1.050188            4            4.0   3.0000   0.1328        3
+28.739087 43.627007            8            8.0  20.0000   0.6053        3
+20.234456 11.729825           16           16.0  12.0000   0.6945        3
+17.968524 15.702593           32           32.0   8.0000   1.0353        2
+12.558887 7.149250           64           64.0   7.0000   1.6184        3
+7.852875 3.146863          128          128.0   7.0000   1.9110        3
+4.775133 1.697390          256          256.0  13.0000   1.9714        2
+3.128870 1.482608          512          512.0   8.0000   2.4002        3
+2.289808 1.450746         1024         1024.0  12.0000   2.4938        3
+1.868496 1.447184         2048         2048.0   8.0000   2.3887        3
+1.658181 1.447865         4096         4096.0   6.0000   1.5939        3
+1.551831 1.445481         8192         8192.0   7.0000   1.6904        3
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>finished run
 number of examples = 10000
 weighted example sum = 10000.000000
-weighted label sum = 91900.000000
-average loss = 1.386287
-total feature number = 28100
+weighted label sum = 88100.000000
+average loss = 1.532562
+total feature number = 28000
 </pre></div>
 </div>
 </div>
@@ -669,13 +674,13 @@ num sources = 1
 Enabled reductions: gd, scorer-identity
 average  since         example        example  current  current  current
 loss     last          counter         weight    label  predict features
-26.936357 26.936357            1            1.0   7.0000   1.8100        3
-33.328055 39.719753            2            2.0   8.0000   1.6976        3
-30.214432 27.100809            4            4.0   7.0000   2.2576        3
-24.563288 18.912144            8            8.0   6.0000   2.0364        3
-49.012466 73.461645           16           16.0  18.0000   2.7069        3
-59.934479 70.856491           32           32.0  14.0000   3.0433        3
-67.642016 75.349554           64           64.0  14.0000   1.9235        3
+117.239243 117.239243            1            1.0  13.0000   2.1723        3
+68.243094 19.246946            2            2.0   7.0000   2.6129        3
+34.855111 1.467128            4            4.0   3.0000   1.3524        3
+113.477316 192.099520            8            8.0  20.0000   3.0534        3
+75.898605 38.319895           16           16.0  12.0000   2.2580        3
+82.580643 89.262680           32           32.0   8.0000   1.8970        2
+75.249659 67.918674           64           64.0   7.0000   2.3804        3
 </pre></div>
 </div>
 </div>
@@ -714,7 +719,7 @@ loss     last          counter         weight    label  predict features
 <img alt="../_images/poisson_regression_9_1.png" src="../_images/poisson_regression_9_1.png" />
 </div>
 </div>
-</div>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -740,12 +745,23 @@ loss     last          counter         weight    label  predict features
               
 
               
-              <div class='prev-next-bottom'>
-                
-    <a class='left-prev' id="prev-link" href="mini_vw.html" title="previous page">Mini VW</a>
-    <a class='right-next' id="next-link" href="predict.html" title="next page">Predict comparison</a>
-
-              </div>
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="mini_vw.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">Previous</p>
+            <p class="prev-next-title">Mini VW</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="predict.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">Next</p>
+        <p class="prev-next-title">Predict comparison</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
               
           </main>
           
@@ -753,20 +769,19 @@ loss     last          counter         weight    label  predict features
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  <footer class="footer mt-5 mt-md-0">
+  <script src="../_static/js/index.c258f241e0e9126fa012.js"></script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
     
     <div class="footer-item">
       <p class="copyright">
-    &copy; Copyright 2021, John langford et al.<br/>
+    &copy; Copyright 2021, John langford et al.<br>
 </p>
     </div>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.2.0.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.2.0.<br>
 </p>
     </div>
     

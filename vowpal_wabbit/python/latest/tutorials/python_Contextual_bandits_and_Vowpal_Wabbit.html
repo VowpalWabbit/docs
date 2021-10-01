@@ -4,11 +4,12 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Contextual bandits and Vowpal Wabbit &#8212; VowpalWabbit latest documentation</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.f8312eac34e2432659a6ef7e609c047e.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -23,14 +24,14 @@
 
     
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/blank.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
     <link rel="stylesheet" type="text/css" href="../_static/nav.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.c258f241e0e9126fa012.js">
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -51,7 +52,10 @@
     <link rel="next" title="Simulating a news personalization scenario using Contextual Bandits" href="python_Simulating_a_news_personalization_scenario_using_Contextual_Bandits.html" />
     <link rel="prev" title="Classification with Vowpal Wabbit" href="python_classification.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -577,17 +581,17 @@
 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="contextual-bandits-and-vowpal-wabbit">
+  <section class="tex2jax_ignore mathjax_ignore" id="contextual-bandits-and-vowpal-wabbit">
 <h1>Contextual bandits and Vowpal Wabbit<a class="headerlink" href="#contextual-bandits-and-vowpal-wabbit" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="overview">
+<section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
 <p>This tutorial includes an overview of the contextual bandits approach to reinforcement learning and describes how to approach a contextual bandit problem using Vowpal Wabbit. You will learn how to use Vowpal Wabbit in a contextual bandit setting with the Python tutorial—including when and how to work with different contextual bandits approaches, how to format data, and understand the results. No prior knowledge of contextual bandits or Vowpal Wabbit is required.</p>
-</div>
-<div class="section" id="the-contextual-bandit-problem">
+</section>
+<section id="the-contextual-bandit-problem">
 <h2>The contextual bandit problem<a class="headerlink" href="#the-contextual-bandit-problem" title="Permalink to this headline">¶</a></h2>
 <p>In the contextual bandit problem, a learner repeatedly observes a context, chooses an action, and observes a loss/cost/reward for the chosen action only. Contextual bandit algorithms  use additional side information (or context) to aid real world decision-making. They work well for choosing actions in dynamic environments where options change rapidly, and the set of available actions is limited.</p>
-</div>
-<div class="section" id="working-with-contextual-bandits-in-vowpal-wabbit">
+</section>
+<section id="working-with-contextual-bandits-in-vowpal-wabbit">
 <h2>Working with contextual bandits in Vowpal Wabbit<a class="headerlink" href="#working-with-contextual-bandits-in-vowpal-wabbit" title="Permalink to this headline">¶</a></h2>
 <p>To introduce a Vowpal Wabbit approach to the contextual bandit problem and explore the capabilities of this approach to reinforcement learning, this guide uses a hypothetical application called <strong>APP</strong>.</p>
 <p><strong>APP</strong> interacts with the context of a user’s behavior (search history, visited pages, or geolocation) in a dynamic environment–such as a news website or a cloud controller. <strong>APP</strong> differs from MAB because we have some information available to the <strong>APP</strong>, which is the context.</p>
@@ -613,12 +617,12 @@
 <li><p><strong>Reward</strong>: - the total downtime</p></li>
 </ul>
 <p>You want  <strong>APP</strong> to take actions that provide the highest possible reward. In machine learning parlance, we want a <strong>model</strong> that tells us which action to take.</p>
-<div class="section" id="policy-vs-model">
+<section id="policy-vs-model">
 <h3>Policy vs. model<a class="headerlink" href="#policy-vs-model" title="Permalink to this headline">¶</a></h3>
 <p>We use the term <strong>policy</strong> many times in this tutorial. In reinforcement learning, the policy is roughly equivalent to <strong>model</strong>. In machine learning, the model means <strong>learned function</strong>. When someone says policy, it is more specific than model because it indicates this is a model that acts in the world.</p>
 <p>Contexts and actions are typically represented as feature vectors in contextual bandit algorithms. For example, <strong>APP</strong> chooses actions by applying a policy <strong>π</strong> that takes a context as input and returns an action. The goal is to find a policy that maximizes the average reward over a sequence of interactions.</p>
-</div>
-<div class="section" id="specifying-the-contextual-bandit-approach">
+</section>
+<section id="specifying-the-contextual-bandit-approach">
 <h3>Specifying the contextual bandit approach<a class="headerlink" href="#specifying-the-contextual-bandit-approach" title="Permalink to this headline">¶</a></h3>
 <p>There are multiple policy evaluation approaches available to optimize a policy. Vowpal Wabbit offers four approaches to specify a contextual bandit approach using <code class="docutils literal notranslate"><span class="pre">--cb_type</span></code>:</p>
 <ul class="simple">
@@ -630,8 +634,8 @@
 <blockquote>
 <div><p><strong>Note:</strong> The focal point of contextual bandit learning research is efficient exploration algorithms. For more details, see the <a class="reference external" href="https://arxiv.org/pdf/1802.04064.pdf">Contextual Bandit bake-off paper</a>.</p>
 </div></blockquote>
-</div>
-<div class="section" id="specifying-exploration-algorithms">
+</section>
+<section id="specifying-exploration-algorithms">
 <h3>Specifying exploration algorithms<a class="headerlink" href="#specifying-exploration-algorithms" title="Permalink to this headline">¶</a></h3>
 <p>Vowpal Wabbit offers five exploration algorithms:</p>
 <ul class="simple">
@@ -644,9 +648,9 @@
 <blockquote>
 <div><p><strong>Note:</strong> For more details on contextual bandits algorithms and Vowpal Wabbit, please refer to the <a class="reference external" href="https://github.com/VowpalWabbit/vowpal_wabbit/wiki/Contextual-Bandit-algorithms">Vowpal Wabbit Github Wiki</a>.</p>
 </div></blockquote>
-</div>
-</div>
-<div class="section" id="contextual-bandit-algorithms-and-input-formats">
+</section>
+</section>
+<section id="contextual-bandit-algorithms-and-input-formats">
 <h2>Contextual bandit algorithms and input formats<a class="headerlink" href="#contextual-bandit-algorithms-and-input-formats" title="Permalink to this headline">¶</a></h2>
 <p>There are four main components to a contextual bandit problem:</p>
 <ul class="simple">
@@ -664,7 +668,7 @@ The contextual bandit learning algorithm for when the maximum number of actions 
 <li><p><code class="docutils literal notranslate"><span class="pre">--cb_explore_adf</span></code><br />
 The contextual bandit learning algorithm for when the set of actions changes over time or you have rich information for each action.</p></li>
 </ol>
-<div class="section" id="input-format-for-cb">
+<section id="input-format-for-cb">
 <h3>Input format for <code class="docutils literal notranslate"><span class="pre">--cb</span></code><a class="headerlink" href="#input-format-for-cb" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>--cb &lt;number_of_actions&gt;
 </pre></div>
@@ -689,8 +693,8 @@ The contextual bandit learning algorithm for when the set of actions changes ove
 <blockquote>
 <div><p><strong>Note:</strong> This usage is for the Vowpal Wabbit command line. See below for a Python tutorial.</p>
 </div></blockquote>
-</div>
-<div class="section" id="input-format-for-cb-explore">
+</section>
+<section id="input-format-for-cb-explore">
 <h3>Input format for <code class="docutils literal notranslate"><span class="pre">--cb_explore</span></code><a class="headerlink" href="#input-format-for-cb-explore" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>--cb_explore &lt;number_of_actions&gt;
 </pre></div>
@@ -699,7 +703,7 @@ The contextual bandit learning algorithm for when the set of actions changes ove
 <blockquote>
 <div><p><strong>Note:</strong> This format explores the action space so you must specify which algorithm you want to use for exploration.</p>
 </div></blockquote>
-<div class="section" id="usage">
+<section id="usage">
 <h4>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h4>
 <p>The following examples use the input format for the <code class="docutils literal notranslate"><span class="pre">--cb</span></code> command example above:</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>vw -d train.dat --cb_explore 4 --first 2
@@ -718,9 +722,9 @@ The contextual bandit learning algorithm for when the set of actions changes ove
 </div>
 <p>This algorithm is a theoretically optimal exploration algorithm. Similar to the previous bagging <strong>m</strong> example, different policies are trained in this case. Unlike bagging, the training of these policies is explicitly optimized to result in a diverse set of predictions—choosing all the actions which are not already learned to be bad in a given context.</p>
 <p>For more information and research on this theoretically optimal exploration algorithm see this <a class="reference external" href="http://arxiv.org/abs/1402.0555">paper</a>.</p>
-</div>
-</div>
-<div class="section" id="input-format-for-cb-explore-adf">
+</section>
+</section>
+<section id="input-format-for-cb-explore-adf">
 <h3>Input format for <code class="docutils literal notranslate"><span class="pre">--cb_explore_adf</span></code><a class="headerlink" href="#input-format-for-cb-explore-adf" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>--cb_explore_adf
 </pre></div>
@@ -738,8 +742,8 @@ The contextual bandit learning algorithm for when the set of actions changes ove
 <blockquote>
 <div><p><strong>Note:</strong> This format explores the action space so you must specify which algorithm you want to use for exploration.</p>
 </div></blockquote>
-</div>
-<div class="section" id="shared-contextual-features">
+</section>
+<section id="shared-contextual-features">
 <h3>Shared contextual features<a class="headerlink" href="#shared-contextual-features" title="Permalink to this headline">¶</a></h3>
 <p>You can specify contextual features which share all line actions at the beginning of an example, which always has a <code class="docutils literal notranslate"><span class="pre">shared</span></code> label, as in the second multiline example below.</p>
 <p>Since the shared line is not associated with any action, it should never contain the label information.</p>
@@ -766,7 +770,7 @@ shared | s_1 s_2
 </pre></div>
 </div>
 <p>Action 0 is ignored, has cost 0.1 and a probability of 0.75.</p>
-<div class="section" id="id1">
+<section id="id1">
 <h4>Usage<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
 <p>In the case of the softmax explorer, which uses the policy not only to predict an action but also predict a score indicating the quality of each action. The probability of action <strong>a</strong> creates distribution proportional to <strong>exp(lambda * score(x, a))</strong>.</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>vw -d train_adf.dat --cb_explore_adf
@@ -785,10 +789,10 @@ shared | s_1 s_2
 </pre></div>
 </div>
 <p>Here <strong>lambda</strong> is a parameter, which leads to uniform exploration for <strong>lambda = 0</strong>, and stops exploring as <strong>lambda</strong> approaches infinity. In general, this provides an excellent knob for controlled exploration based on the uncertainty in the learned policy.</p>
-</div>
-</div>
-</div>
-<div class="section" id="create-contextual-bandit-data">
+</section>
+</section>
+</section>
+<section id="create-contextual-bandit-data">
 <h2>Create contextual bandit data<a class="headerlink" href="#create-contextual-bandit-data" title="Permalink to this headline">¶</a></h2>
 <p>Begin by loading the required Python packages:</p>
 <div class="cell docutils container">
@@ -996,8 +1000,8 @@ shared | s_1 s_2
 </table>
 </div></div></div>
 </div>
-</div>
-<div class="section" id="contextual-bandits-python-tutorial">
+</section>
+<section id="contextual-bandits-python-tutorial">
 <h2>Contextual bandits Python tutorial<a class="headerlink" href="#contextual-bandits-python-tutorial" title="Permalink to this headline">¶</a></h2>
 <p>First, create the Python model store the model parameters in the Python <code class="docutils literal notranslate"><span class="pre">vw</span></code> object.</p>
 <p>Use the following command for a contextual bandit with four possible actions:</p>
@@ -1014,9 +1018,7 @@ shared | s_1 s_2
 learning rate = 0.5
 initial_t = 0
 power_t = 0.5
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>using no cache
+using no cache
 Reading datafile = 
 num sources = 1
 Enabled reductions: gd, scorer-identity, csoaa_ldf-rank, cb_adf, shared_feature_merger, cb_to_cbadf
@@ -1123,8 +1125,8 @@ loss     last          counter         weight    label  predict features
 </div>
 </div>
 <p>The <code class="docutils literal notranslate"><span class="pre">-i</span></code> argument means input regressor, telling Vowpal Wabbit to load a model from that file instead of starting from scratch.</p>
-</div>
-<div class="section" id="more-to-explore">
+</section>
+<section id="more-to-explore">
 <h2>More to explore<a class="headerlink" href="#more-to-explore" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Review the <a class="reference external" href="https://vowpalwabbit.org/docs/vowpal_wabbit/python/latest/examples/">example Python notebooks</a>.</p></li>
@@ -1132,8 +1134,8 @@ loss     last          counter         weight    label  predict features
 <li><p>Browse <a class="reference external" href="https://github.com/VowpalWabbit/vowpal_wabbit/wiki/Examples">examples on the GitHub wiki</a>.</p></li>
 <li><p>Learn various <a class="reference external" href="https://github.com/VowpalWabbit/vowpal_wabbit/wiki/Command-Line-Arguments">VW commands</a>.</p></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1159,12 +1161,23 @@ loss     last          counter         weight    label  predict features
               
 
               
-              <div class='prev-next-bottom'>
-                
-    <a class='left-prev' id="prev-link" href="python_classification.html" title="previous page">Classification with Vowpal Wabbit</a>
-    <a class='right-next' id="next-link" href="python_Simulating_a_news_personalization_scenario_using_Contextual_Bandits.html" title="next page">Simulating a news personalization scenario using Contextual Bandits</a>
-
-              </div>
+              <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="python_classification.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">Previous</p>
+            <p class="prev-next-title">Classification with Vowpal Wabbit</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="python_Simulating_a_news_personalization_scenario_using_Contextual_Bandits.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">Next</p>
+        <p class="prev-next-title">Simulating a news personalization scenario using Contextual Bandits</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
               
           </main>
           
@@ -1172,20 +1185,19 @@ loss     last          counter         weight    label  predict features
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  <footer class="footer mt-5 mt-md-0">
+  <script src="../_static/js/index.c258f241e0e9126fa012.js"></script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
     
     <div class="footer-item">
       <p class="copyright">
-    &copy; Copyright 2021, John langford et al.<br/>
+    &copy; Copyright 2021, John langford et al.<br>
 </p>
     </div>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.2.0.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.2.0.<br>
 </p>
     </div>
     
