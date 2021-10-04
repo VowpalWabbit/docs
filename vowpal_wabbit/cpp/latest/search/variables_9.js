@@ -9,6 +9,7 @@ var searchData=
   ['ignore_5fsome_5flinear',['ignore_some_linear',['../structvw.html#ade19c1d0607732e94b981247b1ccde1f',1,'vw']]],
   ['ignore_5fstate',['ignore_state',['../structContext.html#aefdc82512c706a86bb7785b81337ae8b',1,'Context']]],
   ['in_5fpass_5fcounter',['in_pass_counter',['../structparser.html#a53510d464dc58fc86bce92c68a07a6b8',1,'parser']]],
+  ['in_5fprocess_5fframes',['in_process_frames',['../structINTERACTIONS_1_1generate__interactions__object__cache.html#a1cca13f980633bfd603cd13296ec0b8c',1,'INTERACTIONS::generate_interactions_object_cache']]],
   ['inc',['inc',['../classLabelObjectState.html#a6d7683925b3cfe38f68d25e668da8969',1,'LabelObjectState']]],
   ['increment',['increment',['../structcbify__adf__data.html#a495e1d54c72ff129f66bc487dd67ed31',1,'cbify_adf_data::increment()'],['../structVW_1_1LEARNER_1_1learner.html#a30c2bcf54996490e0a4415e6509e9dfe',1,'VW::LEARNER::learner::increment()']]],
   ['index',['index',['../structVW_1_1namespaced__features.html#aeaaa82d8a5c0140cc1ece69a98216590',1,'VW::namespaced_features::index()'],['../structLabelIndexState.html#a74debffb179393bae1b06ad872409acc',1,'LabelIndexState::index()']]],

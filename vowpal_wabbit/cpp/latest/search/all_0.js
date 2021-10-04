@@ -5,6 +5,7 @@ var searchData=
   ['_5fdefault_5flogger',['_default_logger',['../namespaceVW_1_1io_1_1logger_1_1detail.html#a99138fd4e89a4e8509494ff26adeba5d',1,'VW::io::logger::detail']]],
   ['_5ffinal_5frun',['_final_run',['../classSearch_1_1BaseTask.html#a1789338f2860d67101b8ecbb694b18b7',1,'Search::BaseTask']]],
   ['_5fforeach_5faction',['_foreach_action',['../classSearch_1_1BaseTask.html#acb3dc8905bed89cd9f7b62879aa13260',1,'Search::BaseTask']]],
+  ['_5fgenerate_5finteractions_5fobject_5fcache',['_generate_interactions_object_cache',['../structvw.html#ab2295f1e498075b47761c356fdf5921f',1,'vw']]],
   ['_5finner_5fcontext',['_inner_context',['../structtrace__message__wrapper.html#a77be7f3251c83f7279636db44bb39417',1,'trace_message_wrapper']]],
   ['_5flearner',['_learner',['../structVW_1_1LEARNER_1_1common__learner__builder.html#af2b6433be9bd2341b08e9d6b8c685bba',1,'VW::LEARNER::common_learner_builder']]],
   ['_5fmax_5fseen_5flabel',['_max_seen_label',['../structactive.html#a1caaf49123e357f76477a68c7539fc2e',1,'active']]],

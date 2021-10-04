@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['offset',['offset',['../structINTERACTIONS_1_1extent__interaction__expansion__stack__item.html#adb98082a8e717734c516e75230379767',1,'INTERACTIONS::extent_interaction_expansion_stack_item']]],
   ['old_5fweighted_5flabeled_5fexamples',['old_weighted_labeled_examples',['../structshared__data.html#a22c93bc868692a1f3dbb5cc24ec1fa3a',1,'shared_data']]],
   ['options',['options',['../structvw.html#a2e64506c21371f1025f5acbd136168ed',1,'vw']]],
   ['original_5flabel_5fcost_5fstate',['original_label_cost_state',['../structContext.html#aa44a0ff03bc749b2daacf82368ba49fe',1,'Context']]],

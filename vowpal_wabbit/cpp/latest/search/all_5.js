@@ -59,7 +59,7 @@ var searchData=
   ['escaped_5ftokenize',['escaped_tokenize',['../parse__primitives_8h.html#ae5600a8846c21114564ebd52b6c5a953',1,'parse_primitives.h']]],
   ['eta',['eta',['../structvw.html#a939cbdaf20c78bfeabfddbf57c9d8250',1,'vw']]],
   ['eta_5fdecay_5frate',['eta_decay_rate',['../structvw.html#a69ffab35eaf64edf9bf88c43f83e6072',1,'vw']]],
-  ['eval_5fcount_5fof_5fgenerated_5fft',['eval_count_of_generated_ft',['../namespaceINTERACTIONS.html#abaadf0e53a790b6d3b24dce19a9be361',1,'INTERACTIONS']]],
+  ['eval_5fsum_5fft_5fsquared_5fof_5fgenerated_5fft',['eval_sum_ft_squared_of_generated_ft',['../namespaceINTERACTIONS.html#a78e5ff2da1f80708815c8e1449d057b6',1,'INTERACTIONS']]],
   ['event',['event',['../structCB__EVAL_1_1label.html#af295a09fa564952d45e7b016fc60e1ff',1,'CB_EVAL::label']]],
   ['event_5fsum',['event_sum',['../structGEN__CS_1_1cb__to__cs__adf.html#a2aad7caed595926fb7fbbd43a653e384',1,'GEN_CS::cb_to_cs_adf']]],
   ['eventid',['eventId',['../structDecisionServiceInteraction.html#ad0a964d3f92f2a2883eb31ed4de022fc',1,'DecisionServiceInteraction']]],
@@ -96,5 +96,8 @@ var searchData=
   ['expreplay',['expreplay',['../structExpReplay_1_1expreplay.html',1,'ExpReplay::expreplay&lt; lp &gt;'],['../namespaceExpReplay.html',1,'ExpReplay']]],
   ['expreplay_2eh',['expreplay.h',['../expreplay_8h.html',1,'']]],
   ['expreplay_5fsetup',['expreplay_setup',['../namespaceExpReplay.html#a28b99881a0718c6b24a68c3a9870e40c',1,'ExpReplay']]],
-  ['extent_5fiterator',['extent_iterator',['../structfeatures.html#a3a2e72823a8718ebe9f29b6bc9ece626',1,'features']]]
+  ['extent_5finteraction_5fexpansion_5fstack_5fitem',['extent_interaction_expansion_stack_item',['../structINTERACTIONS_1_1extent__interaction__expansion__stack__item.html',1,'INTERACTIONS']]],
+  ['extent_5finteractions',['extent_interactions',['../structexample__predict.html#a0038fd7b453fcbe55c4135caffc9a897',1,'example_predict::extent_interactions()'],['../structvw.html#a6ba0098943d1e0d3b7441616742fee78',1,'vw::extent_interactions()']]],
+  ['extent_5fiterator',['extent_iterator',['../structfeatures.html#a3a2e72823a8718ebe9f29b6bc9ece626',1,'features']]],
+  ['extent_5fterm',['extent_term',['../feature__group_8h.html#ab770bf81983f504bd535130eaacff536',1,'feature_group.h']]]
 ];

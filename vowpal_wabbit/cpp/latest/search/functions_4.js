@@ -28,7 +28,7 @@ var searchData=
   ['error',['error',['../structContext.html#aafced41f3e89369fbf1a02fce44cae5f',1,'Context::error()'],['../structVWReaderHandler.html#a530c57ae7488a6a1fb093e246916224f',1,'VWReaderHandler::error()']]],
   ['error_5fcode_5fdefinition',['ERROR_CODE_DEFINITION',['../error__data_8h.html#a4c40ddf91942f1e17537ef74ff4a57fa',1,'error_data.h']]],
   ['escaped_5ftokenize',['escaped_tokenize',['../parse__primitives_8h.html#ae5600a8846c21114564ebd52b6c5a953',1,'parse_primitives.h']]],
-  ['eval_5fcount_5fof_5fgenerated_5fft',['eval_count_of_generated_ft',['../namespaceINTERACTIONS.html#abaadf0e53a790b6d3b24dce19a9be361',1,'INTERACTIONS']]],
+  ['eval_5fsum_5fft_5fsquared_5fof_5fgenerated_5fft',['eval_sum_ft_squared_of_generated_ft',['../namespaceINTERACTIONS.html#a78e5ff2da1f80708815c8e1449d057b6',1,'INTERACTIONS']]],
   ['example',['example',['../structexample.html#a8fb0a83e00944a48859528c4af47b4e9',1,'example::example()=default'],['../structexample.html#ae585e124bf2164583b422e091c864137',1,'example::example(const example &amp;)=delete'],['../structexample.html#a230df0c1c303980ccc6df302b1ecd19d',1,'example::example(example &amp;&amp;other)=default']]],
   ['example_5fis_5fnewline',['example_is_newline',['../example_8h.html#ad8ef938a3403c1301b406f6532895c23',1,'example.h']]],
   ['example_5fis_5fnewline_5fnot_5fheader',['example_is_newline_not_header',['../namespaceCB__ALGS.html#a0066e59b0219432265df0426329ea266',1,'CB_ALGS']]],

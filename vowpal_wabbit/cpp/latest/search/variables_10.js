@@ -35,6 +35,7 @@ var searchData=
   ['predict_5ff',['predict_f',['../structVW_1_1LEARNER_1_1learn__data.html#a83ad71e50cb514f592d016c24876429a',1,'VW::LEARNER::learn_data']]],
   ['predicted_5fclass',['predicted_class',['../structVW_1_1active__multiclass__prediction.html#ac2d89b36bfd8be92d0ebfd173180dc07',1,'VW::active_multiclass_prediction']]],
   ['preserve_5fperformance_5fcounters',['preserve_performance_counters',['../structvw.html#ac1c194273bff7969943f9ca78b5401e4',1,'vw']]],
+  ['prev_5fterm',['prev_term',['../structINTERACTIONS_1_1extent__interaction__expansion__stack__item.html#ae411236fd798baef07344204069230cb',1,'INTERACTIONS::extent_interaction_expansion_stack_item']]],
   ['previous_5fstate',['previous_state',['../structContext.html#ac1b1241f0d58f1b71146c1675e4dbdd7',1,'Context']]],
   ['print_5fby_5fref',['print_by_ref',['../structvw.html#a02b0679e7ac821c9ca48d2228f76219d',1,'vw']]],
   ['print_5fexample_5ff',['print_example_f',['../structVW_1_1LEARNER_1_1finish__example__data.html#a3a645c3a05bb52eb9a31800f055bf0b0',1,'VW::LEARNER::finish_example_data']]],
