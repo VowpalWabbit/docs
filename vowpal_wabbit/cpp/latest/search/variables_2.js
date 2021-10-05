@@ -5,7 +5,6 @@ var searchData=
   ['baseline_5fenabled_5fmessage_5fnamespace',['baseline_enabled_message_namespace',['../constant_8h.html#a82e4d47d3c4860a560f346a3a993ab03',1,'constant.h']]],
   ['begin_5findex',['begin_index',['../structVW_1_1namespace__extent.html#a5baa64e9ec5418497aaa1dd9b804f21b',1,'VW::namespace_extent']]],
   ['begin_5fit',['begin_it',['../structINTERACTIONS_1_1feature__gen__data.html#ab9ae05431dbd95d0202987cd57652233',1,'INTERACTIONS::feature_gen_data']]],
-  ['begin_5fparsed_5fexamples',['begin_parsed_examples',['../structparser.html#ae7c79dc035b14bfc367ee7434c593453',1,'parser']]],
   ['beta',['beta',['../structVW_1_1distributionally__robust_1_1Duals.html#af225255f0c2895ff6b24e61226295326',1,'VW::distributionally_robust::Duals']]],
   ['bfgs',['bfgs',['../structvw.html#a95cfd823e6db9fdc1ca0098433c5e186',1,'vw']]],
   ['bias',['BIAS',['../namespaceexploration.html#af5f381e6405bb2a903cb4cf53b52a21f',1,'exploration']]],

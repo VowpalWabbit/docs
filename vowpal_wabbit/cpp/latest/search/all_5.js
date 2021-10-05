@@ -34,7 +34,6 @@ var searchData=
   ['end_5findex',['end_index',['../structVW_1_1namespace__extent.html#ad4c20a0d5b90f1aded05ed438a19281b',1,'VW::namespace_extent']]],
   ['end_5fit',['end_it',['../structINTERACTIONS_1_1feature__gen__data.html#a2294a786f788b6fd23517222aad41e79',1,'INTERACTIONS::feature_gen_data']]],
   ['end_5fns_5fextent',['end_ns_extent',['../structfeatures.html#a837ef0c4b63b4db91f6cb0fe12d269ad',1,'features']]],
-  ['end_5fparsed_5fexamples',['end_parsed_examples',['../structparser.html#a937aa6babf6854343eafa7566d34e031',1,'parser']]],
   ['end_5fparser',['end_parser',['../namespaceVW.html#a3df419eda9f20560bdf679d110dcc409',1,'VW']]],
   ['end_5fpass',['end_pass',['../structexample.html#aed100c9f43cef70f89c20dc5fdd30a12',1,'example::end_pass()'],['../structVW_1_1LEARNER_1_1learner.html#a65a55e020a68bbe83b96ce700793da87',1,'VW::LEARNER::learner::end_pass()'],['../namespaceExpReplay.html#a583647bd62af0abf4ad766f808fe3225',1,'ExpReplay::end_pass()']]],
   ['end_5fscores',['end_scores',['../namespaceACTION__SCORE.html#aada75fa9e350a859e40c801513ef51e1',1,'ACTION_SCORE']]],

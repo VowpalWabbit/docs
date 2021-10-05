@@ -47,7 +47,6 @@ var searchData=
   ['finish_5ffptr_5ftype',['finish_fptr_type',['../structVW_1_1LEARNER_1_1learner.html#a03cfb61f3c905ae6be2a70a9e4be8b77',1,'VW::LEARNER::learner::finish_fptr_type()'],['../structVW_1_1LEARNER_1_1common__learner__builder.html#a11fbd0c3dbe0286b323505d97c4ee0cb',1,'VW::LEARNER::common_learner_builder::finish_fptr_type()']]],
   ['finish_5fmultiline_5fexample',['finish_multiline_example',['../structVW_1_1cb__explore__adf_1_1cb__explore__adf__base.html#ae8c9f59b96f92f49adb7e08edfeab12d',1,'VW::cb_explore_adf::cb_explore_adf_base']]],
   ['finished_5fcount',['finished_count',['../structparser.html#ad53b04588524b349d94531588be79b1f',1,'parser']]],
-  ['finished_5fexamples',['finished_examples',['../structparser.html#a57c9f679c9e61169c79427eebbcc1f5a',1,'parser']]],
   ['first',['first',['../classsparse__parameters.html#a3718afe7252634a780881bd5ce3a6d0d',1,'sparse_parameters::first()'],['../classdense__parameters.html#af1fb04b3f82ba66dab975a49c0bb05a4',1,'dense_parameters::first()']]],
   ['first_5fderivative',['first_derivative',['../classloss__function.html#ae0863a09b3ae606c662d38f387a72a83',1,'loss_function']]],
   ['first_5fobserved_5flabel',['first_observed_label',['../structshared__data.html#ad9928fa7af7f746db35a6803a17f452b',1,'shared_data']]],
