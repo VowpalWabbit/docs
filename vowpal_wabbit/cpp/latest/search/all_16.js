@@ -32,6 +32,7 @@ var searchData=
   ['offset_5ftree',['offset_tree',['../namespaceVW_1_1offset__tree.html',1,'VW']]],
   ['parsers',['parsers',['../namespaceVW_1_1parsers.html',1,'VW']]],
   ['pmf_5fto_5fpdf',['pmf_to_pdf',['../namespaceVW_1_1pmf__to__pdf.html',1,'VW']]],
+  ['process_5fmodel_5ffield',['process_model_field',['../structVW_1_1distributionally__robust_1_1Duals.html#a7d6d5cd62b1d7c89392969ca83e62735',1,'VW::distributionally_robust::Duals::process_model_field()'],['../classVW_1_1distributionally__robust_1_1ChiSquared.html#adfda4543a9d3166fd492b9c3ad8a4b03',1,'VW::distributionally_robust::ChiSquared::process_model_field()']]],
   ['regcb',['regcb',['../namespaceVW_1_1cb__explore__adf_1_1regcb.html',1,'VW::cb_explore_adf']]],
   ['rnd',['rnd',['../namespaceVW_1_1cb__explore__adf_1_1rnd.html',1,'VW::cb_explore_adf']]],
   ['setup_5fexample',['setup_example',['../structexample.html#a2d5972eecb71715bf12c91c2c7240a70',1,'example']]],
