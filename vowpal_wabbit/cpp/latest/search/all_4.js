@@ -66,8 +66,11 @@ var searchData=
   ['double',['Double',['../structVWReaderHandler.html#a9b1d990eb0240611a2f3ccce3afaa963',1,'VWReaderHandler']]],
   ['dsjson',['dsjson',['../structinput__options.html#adbd9d55bfe27f7c844591e5840660ed8',1,'input_options']]],
   ['dsjson_5fmetrics',['dsjson_metrics',['../structdsjson__metrics.html',1,'']]],
+  ['dsjsonnumberoflabelequalbaselinefirstslot',['DsjsonNumberOfLabelEqualBaselineFirstSlot',['../structdsjson__metrics.html#a8db5e6f6e3335784f99f1c32b71ae954',1,'dsjson_metrics']]],
+  ['dsjsonnumberoflabelnotequalbaselinefirstslot',['DsjsonNumberOfLabelNotEqualBaselineFirstSlot',['../structdsjson__metrics.html#ac76950df6b4423f821fe0fcdf376ec82',1,'dsjson_metrics']]],
   ['dsjsonsumcostoriginal',['DsjsonSumCostOriginal',['../structdsjson__metrics.html#ab56fdaea2bd7a1f1124ab5f8931b7eb7',1,'dsjson_metrics']]],
   ['dsjsonsumcostoriginalfirstslot',['DsjsonSumCostOriginalFirstSlot',['../structdsjson__metrics.html#a5e6bce30f642ce22b989061d0aae0764',1,'dsjson_metrics']]],
+  ['dsjsonsumcostoriginallabelequalbaselinefirstslot',['DsjsonSumCostOriginalLabelEqualBaselineFirstSlot',['../structdsjson__metrics.html#acaa135d32df2822dcf8de15129efbaa3',1,'dsjson_metrics']]],
   ['duals',['Duals',['../structVW_1_1distributionally__robust_1_1Duals.html',1,'VW::distributionally_robust::Duals'],['../structVW_1_1distributionally__robust_1_1Duals.html#ab9b646730bc1ce5699d89e7e2bc42c06',1,'VW::distributionally_robust::Duals::Duals()'],['../structVW_1_1distributionally__robust_1_1Duals.html#adaabb8969d2a11a78804d49c51deabcd',1,'VW::distributionally_robust::Duals::Duals(bool unbounded, double kappa, double gamma, double beta, double n)']]],
   ['dummy_5ffunc',['dummy_func',['../namespaceGD.html#a9a733cab6079e5f28fb3773aa43bea24',1,'GD']]],
   ['dump_5finterval',['dump_interval',['../structshared__data.html#acc14d5e78772dd39829a82e4df2912d7',1,'shared_data']]]

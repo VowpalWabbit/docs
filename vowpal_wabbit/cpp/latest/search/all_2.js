@@ -10,6 +10,7 @@ var searchData=
   ['base_5ftask',['base_task',['../structSearch_1_1search.html#ab3ef756d0531c055d67e23d807ca5ea5',1,'Search::search']]],
   ['baseline',['BASELINE',['../namespaceBASELINE.html',1,'']]],
   ['baseline_2eh',['baseline.h',['../baseline_8h.html',1,'']]],
+  ['baseline_5factions',['baseline_actions',['../structDecisionServiceInteraction.html#a8b11b8481da92f85361d5310f7d656f9',1,'DecisionServiceInteraction']]],
   ['baseline_5fenabled',['baseline_enabled',['../namespaceBASELINE.html#ad99952c661e0934c65824eb54ff668dd',1,'BASELINE']]],
   ['baseline_5fenabled_5fmessage_5fnamespace',['baseline_enabled_message_namespace',['../constant_8h.html#a82e4d47d3c4860a560f346a3a993ab03',1,'constant.h']]],
   ['baseline_5fsetup',['baseline_setup',['../baseline_8h.html#a7c8b5249bf5e2307df693ae48147bc11',1,'baseline.h']]],
