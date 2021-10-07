@@ -10,5 +10,6 @@ var searchData=
   ['array_5fparameters_2eh',['array_parameters.h',['../array__parameters_8h.html',1,'']]],
   ['array_5fparameters_5fdense_2eh',['array_parameters_dense.h',['../array__parameters__dense_8h.html',1,'']]],
   ['audit_5fregressor_2eh',['audit_regressor.h',['../audit__regressor_8h.html',1,'']]],
-  ['autolink_2eh',['autolink.h',['../autolink_8h.html',1,'']]]
+  ['autolink_2eh',['autolink.h',['../autolink_8h.html',1,'']]],
+  ['automl_2eh',['automl.h',['../automl_8h.html',1,'']]]
 ];

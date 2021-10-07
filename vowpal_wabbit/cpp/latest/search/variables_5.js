@@ -3,6 +3,7 @@ var searchData=
   ['early_5fterminate',['early_terminate',['../structvw.html#af8de01320427613cb35d8ff4378e6830',1,'vw']]],
   ['ec',['ec',['../classSearch_1_1BaseTask.html#a95a3839551805bf71b18bf4d220c269b',1,'Search::BaseTask']]],
   ['ecs',['ecs',['../structcbify__adf__data.html#a75754773c6506d0ee115886559c0e90e',1,'cbify_adf_data']]],
+  ['eligible_5fto_5finactivate',['eligible_to_inactivate',['../structVW_1_1automl_1_1scored__config.html#a836e538cf16a089772fa615dfa975b9a',1,'VW::automl::scored_config']]],
   ['empty',['empty',['../structpolylabel.html#a6d811b312990cfca1ccd76f553a89214',1,'polylabel']]],
   ['empty_5faudit_5fstrings',['EMPTY_AUDIT_STRINGS',['../interactions__predict_8h.html#a15fb23be401cf2a337ab90c20f3ec80c',1,'interactions_predict.h']]],
   ['empty_5fversion_5ffile',['EMPTY_VERSION_FILE',['../namespaceVW_1_1version__definitions.html#ab18b47007e482b7941289af58dc13a55',1,'VW::version_definitions']]],
@@ -25,6 +26,7 @@ var searchData=
   ['examples',['examples',['../structContext.html#afbc07929e07aec1daf5c896a6cbd7665',1,'Context']]],
   ['examples_5fdont_5fchange',['EXAMPLES_DONT_CHANGE',['../namespaceSearch.html#a00f1706c73f53da6977b3358e53c8e58',1,'Search']]],
   ['exc_5fptr',['exc_ptr',['../structparser.html#abef922392d111bc5567e672df2d35e57',1,'parser']]],
+  ['exclusions',['exclusions',['../structVW_1_1automl_1_1exclusion__config.html#a9599467e1c79284ae424eb79382feca1',1,'VW::automl::exclusion_config']]],
   ['explicit_5fincluded_5factions',['explicit_included_actions',['../structCCB_1_1label.html#addf86d1b626620ed7cee7ea949568db4',1,'CCB::label::explicit_included_actions()'],['../structCCB_1_1reduction__features.html#a3456c6b465951b54a3402fcd03e21a10',1,'CCB::reduction_features::explicit_included_actions()']]],
   ['explore',['explore',['../structVW_1_1cb__explore__adf_1_1cb__explore__adf__base.html#a8f91aca20167b536fbe0c73f667e69f1',1,'VW::cb_explore_adf::cb_explore_adf_base']]],
   ['extent_5finteractions',['extent_interactions',['../structexample__predict.html#a0038fd7b453fcbe55c4135caffc9a897',1,'example_predict::extent_interactions()'],['../structvw.html#a6ba0098943d1e0d3b7441616742fee78',1,'vw::extent_interactions()']]]

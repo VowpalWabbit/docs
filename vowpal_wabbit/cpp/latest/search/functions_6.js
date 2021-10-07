@@ -58,6 +58,7 @@ var searchData=
   ['get_5finitial_5fngram_5fdefinitions',['get_initial_ngram_definitions',['../structVW_1_1kskip__ngram__transformer.html#a4e47b5be0b521ac62da5320990500e93',1,'VW::kskip_ngram_transformer']]],
   ['get_5finitial_5fskip_5fdefinitions',['get_initial_skip_definitions',['../structVW_1_1kskip__ngram__transformer.html#af5ba02717f1d37c8e4ca0bab19bdef48',1,'VW::kskip_ngram_transformer']]],
   ['get_5finput_5ffiles',['get_input_files',['../classio__buf.html#a61b3146ade17c1b0bb9bfdc7796044b8',1,'io_buf']]],
+  ['get_5finternal_5ftype_5ferased_5fdata_5fpointer_5ftest_5fuse_5fonly',['get_internal_type_erased_data_pointer_test_use_only',['../structVW_1_1LEARNER_1_1learner.html#a5770acb264e2cd046e5cb443948e2766',1,'VW::LEARNER::learner']]],
   ['get_5flabel',['get_label',['../namespaceVW.html#ac598ec704e49cc16593464708fd58fd3',1,'VW']]],
   ['get_5flearner_5fby_5fname_5fprefix',['get_learner_by_name_prefix',['../structVW_1_1LEARNER_1_1learner.html#aeb8ea4f5d1783c4aacb6b4c1f40af46f',1,'VW::LEARNER::learner']]],
   ['get_5flog_5fcount',['get_log_count',['../namespaceVW_1_1io_1_1logger.html#a4874fd35725191462a293d6f5e9f7cd4',1,'VW::io::logger']]],

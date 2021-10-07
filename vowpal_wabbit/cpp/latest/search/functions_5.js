@@ -1,6 +1,7 @@
 var searchData=
 [
   ['factorial',['factorial',['../namespaceVW_1_1math.html#a36fabad29dd6a60b30820b0dd1c119da',1,'VW::math']]],
+  ['fail_5fif_5fenabled',['fail_if_enabled',['../namespaceVW_1_1automl_1_1details.html#a28806c46d61e1bf4edee2b7dc53e32c9',1,'VW::automl::details']]],
   ['fast_5fpow10',['fast_pow10',['../namespaceVW.html#a1c2be07eaaeaffca808d8d4106437a00',1,'VW']]],
   ['feature',['feature',['../structfeature.html#a67f5aeaea85ac93019524af7e2cc8925',1,'feature::feature()=default'],['../structfeature.html#a15ba23cd8a38d89fab9fdc17ca9f8dee',1,'feature::feature(float _x, uint64_t _index)'],['../structfeature.html#a3953a8a8732281c7d9a3f7125ed02630',1,'feature::feature(const feature &amp;)=default'],['../structfeature.html#a68e494ef5a0658849ddd93164e37a395',1,'feature::feature(feature &amp;&amp;)=default']]],
   ['feature_5fgen_5fdata',['feature_gen_data',['../structINTERACTIONS_1_1feature__gen__data.html#af40383c89fec1d2167b79849bf87769f',1,'INTERACTIONS::feature_gen_data']]],

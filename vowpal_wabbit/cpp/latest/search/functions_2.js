@@ -44,6 +44,7 @@ var searchData=
   ['classweight_5fsetup',['classweight_setup',['../classweight_8h.html#a7d705e11996b1ad7007c243412d12b98',1,'classweight.h']]],
   ['clear',['clear',['../structCCB_1_1reduction__features.html#aed1951db6cc6f0b420e69f083283389d',1,'CCB::reduction_features::clear()'],['../structVW_1_1continuous__actions_1_1reduction__features.html#a35835ddcdb9e645e2e52b4ac56d37c7f',1,'VW::continuous_actions::reduction_features::clear()'],['../structfeatures.html#a4bc967f302cfb466681a6b4c331bf33a',1,'features::clear()'],['../classreduction__features.html#acbf9c70f673ce939b487a4959b6d4e32',1,'reduction_features::clear()'],['../structv__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_3_01T_01_4_1_1value_01_4_1_1type_01_4.html#a86e515ec792613e48c172dad3b0075ad',1,'v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;::clear()']]],
   ['clear_5fnoshrink',['clear_noshrink',['../structv__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_3_01T_01_4_1_1value_01_4_1_1type_01_4.html#a7473a8b5dfb1cdf58115fe0865a44eac',1,'v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;']]],
+  ['clear_5foffset',['clear_offset',['../classdense__parameters.html#aa4e7cdcb003ec6c74d655ffb58e9e5ba',1,'dense_parameters']]],
   ['close_5ffile',['close_file',['../classio__buf.html#a9bc9af0c82dce2e61945827f03c65a21',1,'io_buf']]],
   ['close_5ffiles',['close_files',['../classio__buf.html#a9bcb6229cda2b924aab63360e307658b',1,'io_buf']]],
   ['cmd_5fstring_5freplace_5fvalue',['cmd_string_replace_value',['../namespaceVW.html#a435759911ac1f45a66cb9677e4d761f9',1,'VW']]],
@@ -59,6 +60,7 @@ var searchData=
   ['compile_5flimits',['compile_limits',['../global__data_8h.html#a2e242f958545ca182b27b58cfa0d5d4f',1,'global_data.h']]],
   ['concat',['concat',['../structfeatures.html#a3b04343635688a655d002d3ecd0f7fa5',1,'features']]],
   ['confidence_5fsetup',['confidence_setup',['../confidence_8h.html#a70f8904a3780635fa7af6db965d840f7',1,'confidence.h']]],
+  ['config_5foracle',['config_oracle',['../structVW_1_1automl_1_1config__manager.html#a06340a28da5e196fa4971360249ac9f4',1,'VW::automl::config_manager::config_oracle()'],['../structVW_1_1automl_1_1interaction__config__manager.html#abd0aec98ab74bef0d9710eb1556aaa26',1,'VW::automl::interaction_config_manager::config_oracle()']]],
   ['constexpr_5fint_5fpow10',['constexpr_int_pow10',['../namespaceVW_1_1details.html#ad3879df5b180db6a789f312968940cad',1,'VW::details']]],
   ['constexpr_5fnegative_5fint_5fpow10',['constexpr_negative_int_pow10',['../namespaceVW_1_1details.html#a00f89d94c130db70248d92c279b9780f',1,'VW::details']]],
   ['constexpr_5fnegative_5fint_5fpow10_5fwith_5foffset',['constexpr_negative_int_pow10_with_offset',['../namespaceVW_1_1details.html#ab6ae5a8a298fa337a11f73c58392378f',1,'VW::details']]],
@@ -70,6 +72,7 @@ var searchData=
   ['copy_5fexample_5fdata_5fwith_5flabel',['copy_example_data_with_label',['../namespaceVW.html#a51f22667a1c11c2a523ea3fcf42b8d34',1,'VW']]],
   ['copy_5fexample_5fmetadata',['copy_example_metadata',['../namespaceVW.html#af392a5d3678ff1b726f8a9f2720ac89e',1,'VW']]],
   ['copy_5fexample_5fto_5fadf',['copy_example_to_adf',['../structcbify__adf__data.html#a692d9b442b99fec22801f75029baa4e9',1,'cbify_adf_data']]],
+  ['copy_5foffsets',['copy_offsets',['../classdense__parameters.html#a1f23bd502c41c3782e4fe2fe68f7aeb8',1,'dense_parameters']]],
   ['copy_5fto',['copy_to',['../classio__buf.html#a6fc5dfa66ea7487155fcafd57a45ec90',1,'io_buf']]],
   ['count_5flabel',['count_label',['../best__constant_8h.html#a9c2325f18b5809fcf84f7e8441fb7b94',1,'best_constant.h']]],
   ['create_5fbuffer_5fview',['create_buffer_view',['../namespaceVW_1_1io.html#a64fffb68e0d290a508476f0c8b160694',1,'VW::io']]],
@@ -80,6 +83,7 @@ var searchData=
   ['cs_5fprep_5flabels',['cs_prep_labels',['../namespaceGEN__CS.html#a03dee8bef2c73360fc878bafff245fc9',1,'GEN_CS']]],
   ['csldf_5fsetup',['csldf_setup',['../namespaceCSOAA.html#a93ccb591dd3214dc953a1daed8f36543',1,'CSOAA']]],
   ['csoaa_5fsetup',['csoaa_setup',['../namespaceCSOAA.html#afc7dd22ca802ed9429304069443b2deb',1,'CSOAA']]],
+  ['current_5fips',['current_ips',['../structVW_1_1automl_1_1scored__config.html#ad72c7ff026297ce7a119a76269f7cf44',1,'VW::automl::scored_config']]],
   ['current_5fstate',['current_state',['../structVWReaderHandler.html#a815ced4a606d3f1e66176cf0bf156bcc',1,'VWReaderHandler']]],
   ['currentnamespace',['CurrentNamespace',['../structContext.html#a9d1381c22ba19a9ca58b7c0f615eaa3a',1,'Context']]]
 ];

@@ -11,6 +11,7 @@ var searchData=
   ['active_5fmulticlass',['active_multiclass',['../structpolyprediction.html#adf514f68c17010615a57b3bf0293dd60',1,'polyprediction']]],
   ['adaptive',['adaptive',['../classparameters.html#ae32e0735531564f9764905fcc46190c2',1,'parameters']]],
   ['add_5fconstant',['add_constant',['../structvw.html#aeb505400a0a7a55c9da48b36747e12c5',1,'vw']]],
+  ['adf_5flearner',['adf_learner',['../structVW_1_1automl_1_1automl.html#a06104be85521daaf5ebeb42e21c9bcea',1,'VW::automl::automl']]],
   ['affix_5fconstant',['affix_constant',['../constant_8h.html#afe15f16dad3ceb280f08e853db17a03d',1,'constant.h']]],
   ['affix_5ffeatures',['affix_features',['../structvw.html#a3ad35377c7ba2420051bd44dab2c3675',1,'vw']]],
   ['affix_5fnamespace',['affix_namespace',['../constant_8h.html#a88894f353e2009957517ea749f90d6d7',1,'constant.h']]],

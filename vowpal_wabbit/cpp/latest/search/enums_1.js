@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['example_5ftype',['example_type',['../namespaceCCB.html#a58ee4b1ece77de222418e9eb75203cf5',1,'CCB::example_type()'],['../namespaceVW_1_1slates.html#a894cb7b1b775c40313bbb5e1c4b48a50',1,'VW::slates::example_type()']]]
+  ['config_5fstate',['config_state',['../namespaceVW_1_1automl.html#a217bf531c4117e8716b614266c97955a',1,'VW::automl']]]
 ];

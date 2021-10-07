@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['prediction_5ftype_5ft',['prediction_type_t',['../learner_8h.html#a5514b4a9448315c23ec344ca2d139e24',1,'learner.h']]]
+  ['label_5ftype_5ft',['label_type_t',['../label__parser_8h.html#ac55dd8dc7400242f299d4b6f245f8acd',1,'label_parser.h']]],
+  ['log_5flevel',['log_level',['../namespaceVW_1_1io_1_1logger.html#a727315522185c0fa2906718f6ac84928',1,'VW::io::logger']]]
 ];

@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['automl',['automl',['../namespaceVW_1_1automl.html',1,'VW']]],
   ['bag',['bag',['../namespaceVW_1_1cb__explore__adf_1_1bag.html',1,'VW::cb_explore_adf']]],
   ['binary',['binary',['../namespaceVW_1_1binary.html',1,'VW']]],
   ['cats',['cats',['../namespaceVW_1_1continuous__action_1_1cats.html',1,'VW::continuous_action']]],
@@ -14,7 +15,7 @@ var searchData=
   ['copy_5fexample_5fdata',['copy_example_data',['../structexample.html#ab8dccc9e56964ad2c109dc486eae9654',1,'example']]],
   ['cover',['cover',['../namespaceVW_1_1cb__explore__adf_1_1cover.html',1,'VW::cb_explore_adf']]],
   ['detail',['detail',['../namespaceVW_1_1io_1_1logger_1_1detail.html',1,'VW::io::logger']]],
-  ['details',['details',['../namespaceVW_1_1details.html',1,'VW::details'],['../namespaceVW_1_1io_1_1details.html',1,'VW::io::details'],['../namespaceVW_1_1model__utils_1_1details.html',1,'VW::model_utils::details']]],
+  ['details',['details',['../namespaceVW_1_1automl_1_1details.html',1,'VW::automl::details'],['../namespaceVW_1_1details.html',1,'VW::details'],['../namespaceVW_1_1io_1_1details.html',1,'VW::io::details'],['../namespaceVW_1_1model__utils_1_1details.html',1,'VW::model_utils::details']]],
   ['distributionally_5frobust',['distributionally_robust',['../namespaceVW_1_1distributionally__robust.html',1,'VW']]],
   ['error_5fcode',['error_code',['../namespaceVW_1_1experimental_1_1error__code.html',1,'VW::experimental']]],
   ['experimental',['experimental',['../namespaceVW_1_1experimental.html',1,'VW']]],

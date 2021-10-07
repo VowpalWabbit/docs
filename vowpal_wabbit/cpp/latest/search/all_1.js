@@ -46,6 +46,7 @@ var searchData=
   ['add_5fpassthrough_5ffeature_5fmagic',['add_passthrough_feature_magic',['../example_8h.html#aa0190126b893c278311204a6efed303c',1,'example.h']]],
   ['addbufs',['addbufs',['../allreduce_8h.html#a41ac30b843783568189b056f78844715',1,'allreduce.h']]],
   ['addfeature',['AddFeature',['../structNamespace.html#a85dc1b49c87f8450e3198c2aeca804e8',1,'Namespace::AddFeature(feature_value v, feature_index i, const char *feature_name)'],['../structNamespace.html#a0a97d572f25c286531fbff978cf2a542',1,'Namespace::AddFeature(vw *all, const char *str)'],['../structNamespace.html#a2b4c8bca4f3973982c7b7dc67140e2ca',1,'Namespace::AddFeature(vw *all, const char *key, const char *value)']]],
+  ['adf_5flearner',['adf_learner',['../structVW_1_1automl_1_1automl.html#a06104be85521daaf5ebeb42e21c9bcea',1,'VW::automl::automl']]],
   ['affix_5fconstant',['affix_constant',['../constant_8h.html#afe15f16dad3ceb280f08e853db17a03d',1,'constant.h']]],
   ['affix_5ffeatures',['affix_features',['../structvw.html#a3ad35377c7ba2420051bd44dab2c3675',1,'vw']]],
   ['affix_5fnamespace',['affix_namespace',['../constant_8h.html#a88894f353e2009957517ea749f90d6d7',1,'constant.h']]],
@@ -64,6 +65,7 @@ var searchData=
   ['api_5fstatus',['api_status',['../classVW_1_1experimental_1_1api__status.html',1,'VW::experimental::api_status'],['../classVW_1_1experimental_1_1api__status.html#a83460b76f47b7b76ee50d4c40e7f8826',1,'VW::experimental::api_status::api_status()']]],
   ['api_5fstatus_2eh',['api_status.h',['../api__status_8h.html',1,'']]],
   ['append_5fempty_5fnewline_5fexample_5ffor_5fdriver',['append_empty_newline_example_for_driver',['../parse__example__json_8h.html#ae5c12b95e04e6d7dab74ca045d6f3e23',1,'parse_example_json.h']]],
+  ['apply_5fconfig',['apply_config',['../structVW_1_1automl_1_1config__manager.html#a685ca0990680e023af7892fa91b074e4',1,'VW::automl::config_manager::apply_config()'],['../structVW_1_1automl_1_1interaction__config__manager.html#a5904ccb7e79475985a6ad928338b9018',1,'VW::automl::interaction_config_manager::apply_config()']]],
   ['apply_5fpdrop',['apply_pdrop',['../namespaceVW.html#aace75bd4d07be67406c615cb5e7c1315',1,'VW']]],
   ['ar_5fbuf_5fsize',['ar_buf_size',['../allreduce_8h.html#ae5dbb7bf6624bc7ee3c1a40fec4452e4',1,'allreduce.h']]],
   ['are_5ffeatures_5fcompatible',['are_features_compatible',['../namespaceVW.html#a220e2434f6884967afd4ea2f8fc4e6d6',1,'VW']]],
@@ -101,5 +103,9 @@ var searchData=
   ['autolink_2eh',['autolink.h',['../autolink_8h.html',1,'']]],
   ['autolink_5fnamespace',['autolink_namespace',['../constant_8h.html#ac2bad8142eb4b0916e5a556988a08ffd',1,'constant.h']]],
   ['autolink_5fsetup',['autolink_setup',['../autolink_8h.html#a851d160114a28d263c8dee21c50b6d33',1,'autolink.h']]],
+  ['automl',['automl',['../structVW_1_1automl_1_1automl.html',1,'VW::automl::automl&lt; CMType &gt;'],['../structVW_1_1automl_1_1automl.html#a1b7b13bfe51b8633b7b73d94f1bb7245',1,'VW::automl::automl::automl()']]],
+  ['automl_2eh',['automl.h',['../automl_8h.html',1,'']]],
+  ['automl_5fsetup',['automl_setup',['../namespaceVW_1_1automl.html#a84e3ff65bcb03f398c790b721f7bf89a',1,'VW::automl']]],
+  ['automl_5fstate',['automl_state',['../namespaceVW_1_1automl.html#a8a86d9026583a9fe9ceb6c946f8d898c',1,'VW::automl']]],
   ['avg_5floss_5fregressors',['avg_loss_regressors',['../structGEN__CS_1_1cb__to__cs.html#ae63989605eba00d78586ecc741a4e8fa',1,'GEN_CS::cb_to_cs']]]
 ];

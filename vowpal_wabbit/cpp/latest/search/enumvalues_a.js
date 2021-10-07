@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['pdf',['pdf',['../learner_8h.html#a5514b4a9448315c23ec344ca2d139e24a437175ba4191210ee004e1d937494d09',1,'learner.h']]],
-  ['prob',['prob',['../learner_8h.html#a5514b4a9448315c23ec344ca2d139e24a385e54735cbf7e164d5ca45c7419d3a9',1,'learner.h']]]
+  ['off',['off',['../namespaceVW_1_1io_1_1logger.html#a727315522185c0fa2906718f6ac84928a3262d48df5d75e3452f0f16b313b7808',1,'VW::io::logger']]]
 ];

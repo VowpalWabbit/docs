@@ -16,6 +16,8 @@ var searchData=
   ['last_5fcompatible_5fversion',['LAST_COMPATIBLE_VERSION',['../namespaceVW_1_1version__definitions.html#a705965b39b52128f510483ca9d116135',1,'VW::version_definitions']]],
   ['last_5fcorrect_5fcost',['last_correct_cost',['../structGEN__CS_1_1cb__to__cs.html#a84aed12d3c21ee450ffcc3128e3db994',1,'GEN_CS::cb_to_cs']]],
   ['last_5fpred_5freg',['last_pred_reg',['../structGEN__CS_1_1cb__to__cs.html#a4d390b9d79b8a71897d727dea0299356',1,'GEN_CS::cb_to_cs']]],
+  ['last_5fr',['last_r',['../structVW_1_1automl_1_1scored__config.html#a8da6da88262e8662ede6285dfb3e2c5d',1,'VW::automl::scored_config']]],
+  ['last_5fw',['last_w',['../structVW_1_1automl_1_1scored__config.html#a9de674a0d326bd86e837a65f11726567',1,'VW::automl::scored_config']]],
   ['lasteventid',['LastEventId',['../structdsjson__metrics.html#aa673f398cf06ec1740db6b90afd433e3',1,'dsjson_metrics']]],
   ['lasteventtime',['LastEventTime',['../structdsjson__metrics.html#af408836b971b1ba858d0033d3fb3211c',1,'dsjson_metrics']]],
   ['lbl_5fparser',['lbl_parser',['../structparser.html#a986cd8c09f666c0ae0928a0e3d092222',1,'parser']]],
@@ -25,6 +27,7 @@ var searchData=
   ['learn_5ff',['learn_f',['../structVW_1_1LEARNER_1_1learn__data.html#aa7342020a50ec32f1408367624329c3d',1,'VW::LEARNER::learn_data']]],
   ['learn_5freturns_5fprediction',['learn_returns_prediction',['../structVW_1_1LEARNER_1_1learner.html#a8cac2d0d662aa9c5206f0709544a9a90',1,'VW::LEARNER::learner']]],
   ['learner',['learner',['../structvw__dbg.html#a2c56037d4e2c362b5dbd5f692a93da90',1,'vw_dbg']]],
+  ['lease',['lease',['../structVW_1_1automl_1_1exclusion__config.html#abdbd80e531fc27e8ad2b08ae501c7725',1,'VW::automl::exclusion_config']]],
   ['left',['left',['../structVW_1_1continuous__actions_1_1pdf__segment.html#a06bbb545deb2037a44617751e5dd1bb0',1,'VW::continuous_actions::pdf_segment']]],
   ['left_5fid',['left_id',['../structVW_1_1cats__tree_1_1tree__node.html#ab77b989e4b84c8f7aae136ae9e3c5ed7',1,'VW::cats_tree::tree_node::left_id()'],['../structVW_1_1offset__tree_1_1tree__node.html#a5e5acb77efb2e47a223f1dc047c93dc0',1,'VW::offset_tree::tree_node::left_id()']]],
   ['left_5fonly',['left_only',['../structVW_1_1cats__tree_1_1tree__node.html#a1f6e50470e2ea7bf33cff550dd2f60b8',1,'VW::cats_tree::tree_node']]],
@@ -33,8 +36,10 @@ var searchData=
   ['limit',['limit',['../structvw.html#a13c792ae66dab87cbbcfa398378b4daa',1,'vw']]],
   ['limit_5fstrings',['limit_strings',['../structvw.html#a4ff18cf5dc745f11e69a3158212a35ab',1,'vw']]],
   ['lineparseerror',['LineParseError',['../structdsjson__metrics.html#ab28dcf002ad9e0699e4ebfd6d3813b8c',1,'dsjson_metrics']]],
+  ['live_5finteractions',['live_interactions',['../structVW_1_1automl_1_1scored__config.html#a928804b745d256fde3f5e85784190d68',1,'VW::automl::scored_config']]],
   ['loaded_5fdictionaries',['loaded_dictionaries',['../structvw.html#a7393e01efdaba53b861f82b2fe54a15f',1,'vw']]],
   ['log_5fcount',['log_count',['../namespaceVW_1_1io_1_1logger_1_1detail.html#a621d71e6fba1dab32ec50d34603df45d',1,'VW::io::logger::detail']]],
   ['logger',['logger',['../structvw.html#a6f3a5a390dca7aeac4ab2116bcc3f8a8',1,'vw']]],
-  ['loss',['loss',['../structexample.html#aec82f8fecc8ad2a13e54ecf83dfbc5c9',1,'example::loss()'],['../structvw.html#a89de6d88640fec9c2f0fb466ea436114',1,'vw::loss()']]]
+  ['loss',['loss',['../structexample.html#aec82f8fecc8ad2a13e54ecf83dfbc5c9',1,'example::loss()'],['../structvw.html#a89de6d88640fec9c2f0fb466ea436114',1,'vw::loss()']]],
+  ['lower_5fbound',['lower_bound',['../structVW_1_1automl_1_1exclusion__config.html#ad9186cca87098a3464a7e04ea3f3d6b2',1,'VW::automl::exclusion_config']]]
 ];
