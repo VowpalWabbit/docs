@@ -1,7 +1,6 @@
 var searchData=
 [
   ['f',['f',['../unionexploration_1_1int__float.html#aae7ba8412357e474898bc44bc43ab394',1,'exploration::int_float']]],
-  ['feats',['feats',['../structVW_1_1namespaced__features.html#a59db853277055d9402202db89f2578a0',1,'VW::namespaced_features']]],
   ['feature_5fcount',['feature_count',['../structNamespace.html#aa7695877ea34d84f25a12c44def2347b',1,'Namespace']]],
   ['feature_5fgroup',['feature_group',['../structNamespace.html#a7ba33baa864fb7a27d078a97cf842be7',1,'Namespace']]],
   ['feature_5fmask',['feature_mask',['../structvw.html#a7f794c7df8fad287cd0453922246e6dd',1,'vw']]],

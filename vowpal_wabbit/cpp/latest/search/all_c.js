@@ -57,7 +57,6 @@ var searchData=
   ['line_5fto_5fexamples_5fjson',['line_to_examples_json',['../parse__example__json_8h.html#a85f1e763efcbe41565f72137da4e2c70',1,'parse_example_json.h']]],
   ['linenumber',['LineNumber',['../classVW_1_1vw__exception.html#a8ba6b06af8143510242c443b00b257da',1,'VW::vw_exception']]],
   ['lineparseerror',['LineParseError',['../structdsjson__metrics.html#ab28dcf002ad9e0699e4ebfd6d3813b8c',1,'dsjson_metrics']]],
-  ['list_5fiterator',['list_iterator',['../structVW_1_1namespaced__feature__store.html#a0e94da9380e08138927435bdab4bc24f',1,'VW::namespaced_feature_store']]],
   ['load',['load',['../classvw__slim_1_1vw__predict.html#afa69fa0744ec1d68dd6b1b283c2b2b97',1,'vw_slim::vw_predict']]],
   ['loaded_5fdictionaries',['loaded_dictionaries',['../structvw.html#a7393e01efdaba53b861f82b2fe54a15f',1,'vw']]],
   ['loc',['Loc',['../classvw__slim_1_1internal_1_1collection__pair__iterator.html#a806e70d2fe3868d4f86a4bc14da89cc6',1,'vw_slim::internal::collection_pair_iterator']]],
