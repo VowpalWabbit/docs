@@ -83,7 +83,7 @@ var searchData=
   ['loss',['loss',['../structexample.html#aec82f8fecc8ad2a13e54ecf83dfbc5c9',1,'example::loss()'],['../structvw.html#a89de6d88640fec9c2f0fb466ea436114',1,'vw::loss()'],['../structSearch_1_1search.html#ac043f03704a4b004290936cb1dc6822f',1,'Search::search::loss()']]],
   ['loss_5ffunction',['loss_function',['../classloss__function.html',1,'']]],
   ['loss_5ffunctions_2eh',['loss_functions.h',['../loss__functions_8h.html',1,'']]],
-  ['lower_5fbound',['lower_bound',['../structVW_1_1automl_1_1exclusion__config.html#ad9186cca87098a3464a7e04ea3f3d6b2',1,'VW::automl::exclusion_config']]],
+  ['lower_5fbound',['lower_bound',['../structVW_1_1automl_1_1exclusion__config.html#ad9186cca87098a3464a7e04ea3f3d6b2',1,'VW::automl::exclusion_config::lower_bound()'],['../classVW_1_1distributionally__robust_1_1ChiSquared.html#a96a69b2819ddbdd169f1c6b4b014916a',1,'VW::distributionally_robust::ChiSquared::lower_bound()']]],
   ['lrq_2eh',['lrq.h',['../lrq_8h.html',1,'']]],
   ['lrq_5fsetup',['lrq_setup',['../lrq_8h.html#a730e8c0c9e52be5168dd121d34736048',1,'lrq.h']]],
   ['lrqfa_2eh',['lrqfa.h',['../lrqfa_8h.html',1,'']]],

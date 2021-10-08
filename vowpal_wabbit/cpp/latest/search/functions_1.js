@@ -4,6 +4,7 @@ var searchData=
   ['base_5flearner_5fbuilder',['base_learner_builder',['../structVW_1_1LEARNER_1_1base__learner__builder.html#a231aa6864866b89101f4978880b222f4',1,'VW::LEARNER::base_learner_builder']]],
   ['base_5foption',['base_option',['../structVW_1_1config_1_1base__option.html#abeb225ef8ce057e0a8ca53cf64d54e9f',1,'VW::config::base_option']]],
   ['base_5ftask',['base_task',['../structSearch_1_1search.html#ab3ef756d0531c055d67e23d807ca5ea5',1,'Search::search']]],
+  ['baseline_5fchallenger_5fcb_5fsetup',['baseline_challenger_cb_setup',['../baseline__challenger__cb_8h.html#adf6cff385788afb3c2be682f0bb54a20',1,'baseline_challenger_cb.h']]],
   ['baseline_5fenabled',['baseline_enabled',['../namespaceBASELINE.html#ad99952c661e0934c65824eb54ff668dd',1,'BASELINE']]],
   ['baseline_5fsetup',['baseline_setup',['../baseline_8h.html#a7c8b5249bf5e2307df693ae48147bc11',1,'baseline.h']]],
   ['basestate',['BaseState',['../structBaseState.html#a5220e86eb9830c343a3564e701ae44a1',1,'BaseState']]],

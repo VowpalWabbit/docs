@@ -26,6 +26,7 @@ var searchData=
   ['log_5fsummary',['log_summary',['../namespaceVW_1_1io_1_1logger.html#ac047f70212d20d729cbc8f22848f5f64',1,'VW::io::logger']]],
   ['log_5fwarn',['log_warn',['../namespaceVW_1_1io_1_1logger.html#a67f6373b4b7104dcbff9dc29cb25d3a6',1,'VW::io::logger']]],
   ['loss',['loss',['../structSearch_1_1search.html#ac043f03704a4b004290936cb1dc6822f',1,'Search::search']]],
+  ['lower_5fbound',['lower_bound',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#a96a69b2819ddbdd169f1c6b4b014916a',1,'VW::distributionally_robust::ChiSquared']]],
   ['lrq_5fsetup',['lrq_setup',['../lrq_8h.html#a730e8c0c9e52be5168dd121d34736048',1,'lrq.h']]],
   ['lrqfa_5fsetup',['lrqfa_setup',['../lrqfa_8h.html#ab19de8823793ac56377c7d8bd5b8eb83',1,'lrqfa.h']]]
 ];
