@@ -30,6 +30,7 @@ var searchData=
   ['write_5fcache',['write_cache',['../structparser.html#a5f48db95a95c057288a00642d4cf9f14',1,'parser']]],
   ['write_5fexample_5fto_5fcache',['write_example_to_cache',['../namespaceVW.html#aef4c6792f71a978d7c8f584680574e3d',1,'VW']]],
   ['write_5ffunc_5ft',['write_func_t',['../namespaceVW_1_1io.html#a47b86ce42993535702b35d2045e1cd7b',1,'VW::io']]],
+  ['write_5fmodel_5ffield',['write_model_field',['../namespaceVW_1_1model__utils.html#a8bad00bab50bdc71c18b3b3f5a30122b',1,'VW::model_utils::write_model_field(io_buf &amp;, const VW::distributionally_robust::Duals &amp;, const std::string &amp;, bool)'],['../namespaceVW_1_1model__utils.html#abc56e8d86632db27cfaddbcc2a403bfb',1,'VW::model_utils::write_model_field(io_buf &amp;, const VW::distributionally_robust::ChiSquared &amp;, const std::string &amp;, bool)'],['../namespaceVW_1_1model__utils.html#a3fcd4db144e072738f63a8d43585f55d',1,'VW::model_utils::write_model_field(io_buf &amp;io, const T &amp;var, const std::string &amp;name_or_readable_field_template, bool text)']]],
   ['write_5ftext_5fmode_5foutput',['write_text_mode_output',['../namespaceVW_1_1model__utils_1_1details.html#a036dbbc459d89ad19f29a35b92d7bdf6',1,'VW::model_utils::details']]],
   ['write_5fvalue',['write_value',['../classio__buf.html#a6777f02c17704d4384c0c7ef575233db',1,'io_buf']]],
   ['writeit',['writeit',['../io__buf_8h.html#ac3dc74ce9e42a7cf9cb19834d4593d57',1,'io_buf.h']]],

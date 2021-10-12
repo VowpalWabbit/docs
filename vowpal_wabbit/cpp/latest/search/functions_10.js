@@ -18,6 +18,7 @@ var searchData=
   ['read_5fline_5fdecision_5fservice_5fjson',['read_line_decision_service_json',['../namespaceVW.html#aeb4682f5c6fe4f9996e5bb65b188240f',1,'VW']]],
   ['read_5fline_5fjson_5fs',['read_line_json_s',['../namespaceVW.html#ac8aba9d1df88c1409a24327130abaeb1',1,'VW']]],
   ['read_5flines',['read_lines',['../namespaceVW.html#a07beba3d37d1ded126fe3bb9d4238329',1,'VW']]],
+  ['read_5fmodel_5ffield',['read_model_field',['../namespaceVW_1_1model__utils.html#a8aaaa4bd88810a72f1fdc72467a2a59f',1,'VW::model_utils::read_model_field(io_buf &amp;, VW::distributionally_robust::Duals &amp;)'],['../namespaceVW_1_1model__utils.html#aebbddbad19b428f4e36fa6f5e32adffd',1,'VW::model_utils::read_model_field(io_buf &amp;, VW::distributionally_robust::ChiSquared &amp;)'],['../namespaceVW_1_1model__utils.html#a00c0484c8e2f535471c1609b4b6b7dbf',1,'VW::model_utils::read_model_field(io_buf &amp;io, T &amp;var)']]],
   ['read_5fregressor_5ffile',['read_regressor_file',['../parse__regressor_8h.html#a4dffa6e0939788944e5789d2057afd8c',1,'parse_regressor.h']]],
   ['read_5fstring',['read_string',['../classvw__slim_1_1model__parser.html#a4feb479f60a6842262a1f40e409d828c',1,'vw_slim::model_parser']]],
   ['read_5fvalue',['read_value',['../classio__buf.html#aad08b1941d9b2b47be78a456fa20a43a',1,'io_buf']]],

@@ -71,6 +71,7 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="io__buf_8h.html">io_buf.h</a>&quot;</code><br />
 <code>#include &lt;fmt/format.h&gt;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -88,15 +89,19 @@ Functions</h2></td></tr>
 <tr class="memitem:a036dbbc459d89ad19f29a35b92d7bdf6"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a036dbbc459d89ad19f29a35b92d7bdf6"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1model__utils_1_1details.html#a036dbbc459d89ad19f29a35b92d7bdf6">VW::model_utils::details::write_text_mode_output</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;io, const T &amp;var, const std::string &amp;name_or_readable_field_template)</td></tr>
 <tr class="separator:a036dbbc459d89ad19f29a35b92d7bdf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8369057d5016e6cfdf02f0ea80570572"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a8369057d5016e6cfdf02f0ea80570572"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1model__utils.html#a8369057d5016e6cfdf02f0ea80570572">VW::model_utils::process_model_field</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;io, T &amp;var, bool read, const std::string &amp;name_or_readable_field_template, bool text)</td></tr>
-<tr class="memdesc:a8369057d5016e6cfdf02f0ea80570572"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is the uniform interface for serializing a variable to the model file.  <a href="namespaceVW_1_1model__utils.html#a8369057d5016e6cfdf02f0ea80570572">More...</a><br /></td></tr>
-<tr class="separator:a8369057d5016e6cfdf02f0ea80570572"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00c0484c8e2f535471c1609b4b6b7dbf"><td class="memTemplParams" colspan="2">template&lt;typename T , typename std::enable_if&lt;!std::is_pointer&lt; T &gt;::value &amp;&amp;std::is_trivially_copyable&lt; T &gt;::value &amp;&amp;std::is_pod&lt; T &gt;::value, bool &gt;::type  = true&gt; </td></tr>
+<tr class="memitem:a00c0484c8e2f535471c1609b4b6b7dbf"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1model__utils.html#a00c0484c8e2f535471c1609b4b6b7dbf">VW::model_utils::read_model_field</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;io, T &amp;var)</td></tr>
+<tr class="memdesc:a00c0484c8e2f535471c1609b4b6b7dbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is the uniform interface reading a variable from the model file. The value must be a POD type.  <a href="namespaceVW_1_1model__utils.html#a00c0484c8e2f535471c1609b4b6b7dbf">More...</a><br /></td></tr>
+<tr class="separator:a00c0484c8e2f535471c1609b4b6b7dbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fcd4db144e072738f63a8d43585f55d"><td class="memTemplParams" colspan="2">template&lt;typename T , typename std::enable_if&lt;!std::is_pointer&lt; T &gt;::value &amp;&amp;std::is_trivially_copyable&lt; T &gt;::value &amp;&amp;std::is_pod&lt; T &gt;::value, bool &gt;::type  = true&gt; </td></tr>
+<tr class="memitem:a3fcd4db144e072738f63a8d43585f55d"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1model__utils.html#a3fcd4db144e072738f63a8d43585f55d">VW::model_utils::write_model_field</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;io, const T &amp;var, const std::string &amp;name_or_readable_field_template, bool text)</td></tr>
+<tr class="memdesc:a3fcd4db144e072738f63a8d43585f55d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is the uniform interface for serializing a variable to the model file. The value must be a POD type.  <a href="namespaceVW_1_1model__utils.html#a3fcd4db144e072738f63a8d43585f55d">More...</a><br /></td></tr>
+<tr class="separator:a3fcd4db144e072738f63a8d43585f55d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 11 2021 20:56:52 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 12 2021 12:51:37 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -33,7 +33,7 @@ var searchData=
   ['offset_5ftree',['offset_tree',['../namespaceVW_1_1offset__tree.html',1,'VW']]],
   ['parsers',['parsers',['../namespaceVW_1_1parsers.html',1,'VW']]],
   ['pmf_5fto_5fpdf',['pmf_to_pdf',['../namespaceVW_1_1pmf__to__pdf.html',1,'VW']]],
-  ['process_5fmodel_5ffield',['process_model_field',['../structVW_1_1distributionally__robust_1_1Duals.html#a7d6d5cd62b1d7c89392969ca83e62735',1,'VW::distributionally_robust::Duals::process_model_field()'],['../classVW_1_1distributionally__robust_1_1ChiSquared.html#adfda4543a9d3166fd492b9c3ad8a4b03',1,'VW::distributionally_robust::ChiSquared::process_model_field()']]],
+  ['read_5fmodel_5ffield',['read_model_field',['../structVW_1_1distributionally__robust_1_1Duals.html#aef15a5551ea1ee70742039e39639bd13',1,'VW::distributionally_robust::Duals::read_model_field()'],['../classVW_1_1distributionally__robust_1_1ChiSquared.html#acc05389e4f644b2b459bef1e91757f21',1,'VW::distributionally_robust::ChiSquared::read_model_field()']]],
   ['regcb',['regcb',['../namespaceVW_1_1cb__explore__adf_1_1regcb.html',1,'VW::cb_explore_adf']]],
   ['rnd',['rnd',['../namespaceVW_1_1cb__explore__adf_1_1rnd.html',1,'VW::cb_explore_adf']]],
   ['setup_5fexample',['setup_example',['../structexample.html#a2d5972eecb71715bf12c91c2c7240a70',1,'example']]],
@@ -201,5 +201,6 @@ var searchData=
   ['vwreaderhandler',['VWReaderHandler',['../structVWReaderHandler.html',1,'']]],
   ['vwreaderhandlerdefault',['VWReaderHandlerDefault',['../structVWReaderHandler.html#aab0117dbc9e8b5199006283551a68005',1,'VWReaderHandler']]],
   ['vwreaderhandlernull',['VWReaderHandlerNull',['../structVWReaderHandler.html#a94f9123eb379d0af443f725911e83fc7',1,'VWReaderHandler']]],
-  ['vwvis_2eh',['vwvis.h',['../vwvis_8h.html',1,'']]]
+  ['vwvis_2eh',['vwvis.h',['../vwvis_8h.html',1,'']]],
+  ['write_5fmodel_5ffield',['write_model_field',['../structVW_1_1distributionally__robust_1_1Duals.html#a7f7f2fb18a8de9898fffe9123bd897cd',1,'VW::distributionally_robust::Duals::write_model_field()'],['../classVW_1_1distributionally__robust_1_1ChiSquared.html#aa2184c490d11c7de3f8e4e5643a22c9e',1,'VW::distributionally_robust::ChiSquared::write_model_field()']]]
 ];
