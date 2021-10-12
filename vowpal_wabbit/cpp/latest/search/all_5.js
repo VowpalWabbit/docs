@@ -70,7 +70,7 @@ var searchData=
   ['example_5ffactory',['example_factory',['../structContext.html#af1836e824a1b55fd9f094c1953e11c85',1,'Context']]],
   ['example_5ffactory_5fcontext',['example_factory_context',['../structContext.html#ac6923f4aab4d39a175e7c079a57847b6',1,'Context']]],
   ['example_5ffactory_5ft',['example_factory_t',['../namespaceVW.html#a28e15f52840539d6b0c56aa196e11278',1,'VW']]],
-  ['example_5fis_5fnewline',['example_is_newline',['../example_8h.html#ad8ef938a3403c1301b406f6532895c23',1,'example.h']]],
+  ['example_5fis_5fnewline',['example_is_newline',['../example_8h.html#ae6b66936c22d9b796835961b805ad947',1,'example.h']]],
   ['example_5fis_5fnewline_5fnot_5fheader',['example_is_newline_not_header',['../namespaceCB__ALGS.html#a0066e59b0219432265df0426329ea266',1,'CB_ALGS']]],
   ['example_5fnumber',['example_number',['../structshared__data.html#a0de1ca113ee6d22741ca6737a00cddd0',1,'shared_data']]],
   ['example_5fparser',['example_parser',['../structvw.html#a511eb656017f5708368b1e6531107e31',1,'vw']]],
