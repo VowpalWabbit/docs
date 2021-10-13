@@ -119,12 +119,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9bc9af0c82dce2e61945827f03c65a21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bcb6229cda2b924aab63360e307658b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio__buf.html#a9bcb6229cda2b924aab63360e307658b">close_files</a> ()</td></tr>
 <tr class="separator:a9bcb6229cda2b924aab63360e307658b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6777f02c17704d4384c0c7ef575233db"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a6777f02c17704d4384c0c7ef575233db"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classio__buf.html#a6777f02c17704d4384c0c7ef575233db">write_value</a> (const T &amp;value)</td></tr>
-<tr class="separator:a6777f02c17704d4384c0c7ef575233db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad08b1941d9b2b47be78a456fa20a43a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:aad08b1941d9b2b47be78a456fa20a43a"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classio__buf.html#aad08b1941d9b2b47be78a456fa20a43a">read_value</a> (const char *debug_name=nullptr)</td></tr>
-<tr class="separator:aad08b1941d9b2b47be78a456fa20a43a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3ee188048a899b186ef8d5c56771018"><td class="memTemplParams" colspan="2">template&lt;typename T , typename std::enable_if&lt;!std::is_pointer&lt; T &gt;::value &amp;&amp;std::is_trivially_copyable&lt; T &gt;::value, bool &gt;::type  = true&gt; </td></tr>
+<tr class="memitem:af3ee188048a899b186ef8d5c56771018"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classio__buf.html#af3ee188048a899b186ef8d5c56771018">write_value</a> (const T &amp;value)</td></tr>
+<tr class="separator:af3ee188048a899b186ef8d5c56771018"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6225bdc4e860e68cb6e1f2c21c40260f"><td class="memTemplParams" colspan="2">template&lt;typename T , typename std::enable_if&lt;!std::is_pointer&lt; T &gt;::value &amp;&amp;std::is_trivially_copyable&lt; T &gt;::value, bool &gt;::type  = true&gt; </td></tr>
+<tr class="memitem:a6225bdc4e860e68cb6e1f2c21c40260f"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classio__buf.html#a6225bdc4e860e68cb6e1f2c21c40260f">read_value</a> (<a class="el" href="namespaceVW.html#a85aa9dc51ef86f7e832147b1c0c93d72">VW::string_view</a> debug_name=&quot;&quot;)</td></tr>
+<tr class="separator:a6225bdc4e860e68cb6e1f2c21c40260f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b15e7f926a47c1335d709ffa06fcc91"><td class="memTemplParams" colspan="2">template&lt;typename T , typename std::enable_if&lt;!std::is_pointer&lt; T &gt;::value &amp;&amp;std::is_trivially_copyable&lt; T &gt;::value, bool &gt;::type  = true&gt; </td></tr>
+<tr class="memitem:a8b15e7f926a47c1335d709ffa06fcc91"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classio__buf.html#a8b15e7f926a47c1335d709ffa06fcc91">read_value_and_accumulate_size</a> (<a class="el" href="namespaceVW.html#a85aa9dc51ef86f7e832147b1c0c93d72">VW::string_view</a> debug_name, size_t &amp;size)</td></tr>
+<tr class="separator:a8b15e7f926a47c1335d709ffa06fcc91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaff9b1ba96e89f3abfa6105f1f369b34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio__buf.html#aaff9b1ba96e89f3abfa6105f1f369b34">buf_write</a> (char *&amp;pointer, size_t n)</td></tr>
 <tr class="separator:aaff9b1ba96e89f3abfa6105f1f369b34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fe43cbf0e4539940ad28f482c322cd9"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classio__buf.html#a0fe43cbf0e4539940ad28f482c322cd9">buf_read</a> (char *&amp;pointer, size_t n)</td></tr>
@@ -839,13 +842,13 @@ false if any contained input files cannot be reset </dd></dl>
 
 </div>
 </div>
-<a id="aad08b1941d9b2b47be78a456fa20a43a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad08b1941d9b2b47be78a456fa20a43a">&#9670;&nbsp;</a></span>read_value()</h2>
+<a id="a6225bdc4e860e68cb6e1f2c21c40260f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6225bdc4e860e68cb6e1f2c21c40260f">&#9670;&nbsp;</a></span>read_value()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename T , typename std::enable_if&lt;!std::is_pointer&lt; T &gt;::value &amp;&amp;std::is_trivially_copyable&lt; T &gt;::value, bool &gt;::type  = true&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -853,9 +856,47 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">T io_buf::read_value </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>debug_name</em> = <code>nullptr</code></td><td>)</td>
+          <td class="paramtype"><a class="el" href="namespaceVW.html#a85aa9dc51ef86f7e832147b1c0c93d72">VW::string_view</a>&#160;</td>
+          <td class="paramname"><em>debug_name</em> = <code>&quot;&quot;</code></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8b15e7f926a47c1335d709ffa06fcc91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b15e7f926a47c1335d709ffa06fcc91">&#9670;&nbsp;</a></span>read_value_and_accumulate_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename std::enable_if&lt;!std::is_pointer&lt; T &gt;::value &amp;&amp;std::is_trivially_copyable&lt; T &gt;::value, bool &gt;::type  = true&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T io_buf::read_value_and_accumulate_size </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceVW.html#a85aa9dc51ef86f7e832147b1c0c93d72">VW::string_view</a>&#160;</td>
+          <td class="paramname"><em>debug_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t &amp;&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -1019,19 +1060,19 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a6777f02c17704d4384c0c7ef575233db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6777f02c17704d4384c0c7ef575233db">&#9670;&nbsp;</a></span>write_value()</h2>
+<a id="af3ee188048a899b186ef8d5c56771018"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3ee188048a899b186ef8d5c56771018">&#9670;&nbsp;</a></span>write_value()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename T , typename std::enable_if&lt;!std::is_pointer&lt; T &gt;::value &amp;&amp;std::is_trivially_copyable&lt; T &gt;::value, bool &gt;::type  = true&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void io_buf::write_value </td>
+          <td class="memname">size_t io_buf::write_value </td>
           <td>(</td>
           <td class="paramtype">const T &amp;&#160;</td>
           <td class="paramname"><em>value</em></td><td>)</td>
@@ -1053,7 +1094,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 13 2021 14:56:02 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 13 2021 21:16:29 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
