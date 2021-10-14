@@ -25,6 +25,7 @@ var searchData=
   ['dsjsonnumberoflabelequalbaselinefirstslot',['DsjsonNumberOfLabelEqualBaselineFirstSlot',['../structdsjson__metrics.html#a8db5e6f6e3335784f99f1c32b71ae954',1,'dsjson_metrics']]],
   ['dsjsonnumberoflabelnotequalbaselinefirstslot',['DsjsonNumberOfLabelNotEqualBaselineFirstSlot',['../structdsjson__metrics.html#ac76950df6b4423f821fe0fcdf376ec82',1,'dsjson_metrics']]],
   ['dsjsonsumcostoriginal',['DsjsonSumCostOriginal',['../structdsjson__metrics.html#ab56fdaea2bd7a1f1124ab5f8931b7eb7',1,'dsjson_metrics']]],
+  ['dsjsonsumcostoriginalbaseline',['DsjsonSumCostOriginalBaseline',['../structdsjson__metrics.html#acb64793d0f8792b56fb0af59541904df',1,'dsjson_metrics']]],
   ['dsjsonsumcostoriginalfirstslot',['DsjsonSumCostOriginalFirstSlot',['../structdsjson__metrics.html#a5e6bce30f642ce22b989061d0aae0764',1,'dsjson_metrics']]],
   ['dsjsonsumcostoriginallabelequalbaselinefirstslot',['DsjsonSumCostOriginalLabelEqualBaselineFirstSlot',['../structdsjson__metrics.html#acaa135d32df2822dcf8de15129efbaa3',1,'dsjson_metrics']]],
   ['dump_5finterval',['dump_interval',['../structshared__data.html#acc14d5e78772dd39829a82e4df2912d7',1,'shared_data']]]
