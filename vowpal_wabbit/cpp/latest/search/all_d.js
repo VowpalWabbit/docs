@@ -69,6 +69,7 @@ var searchData=
   ['move_5ffeature_5fnamespace',['move_feature_namespace',['../namespaceVW.html#ab9e00af55935c42d32d1c2c5c244150e',1,'VW']]],
   ['moved_5fobject_5fpool',['moved_object_pool',['../structVW_1_1moved__object__pool.html',1,'VW::moved_object_pool&lt; T &gt;'],['../structVW_1_1moved__object__pool.html#a576da638798a649601d6c423a497a998',1,'VW::moved_object_pool::moved_object_pool()']]],
   ['moved_5fobject_5fpool_3c_20interactions_3a_3aextent_5finteraction_5fexpansion_5fstack_5fitem_20_3e',['moved_object_pool&lt; INTERACTIONS::extent_interaction_expansion_stack_item &gt;',['../structVW_1_1moved__object__pool.html',1,'VW']]],
+  ['mtr',['mtr',['../namespaceVW.html#a787382d2700da9128c5f05a62009e012af80a6c5780922a877062945f3fe22753',1,'VW']]],
   ['mtr_5fec_5fseq',['mtr_ec_seq',['../structGEN__CS_1_1cb__to__cs__adf.html#ad086fbe45cc647bba1fe49315e8636d7',1,'GEN_CS::cb_to_cs_adf']]],
   ['mtr_5fexample',['mtr_example',['../structGEN__CS_1_1cb__to__cs__adf.html#a31c5c92d3694977e8ac0494853972ee0',1,'GEN_CS::cb_to_cs_adf']]],
   ['multi',['multi',['../structpolylabel.html#a68946a978546b21fc85fde38d6147399',1,'polylabel']]],

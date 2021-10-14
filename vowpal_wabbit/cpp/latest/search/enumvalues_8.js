@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['mtr',['mtr',['../namespaceVW.html#a787382d2700da9128c5f05a62009e012af80a6c5780922a877062945f3fe22753',1,'VW']]],
   ['multiclass',['multiclass',['../label__parser_8h.html#ac55dd8dc7400242f299d4b6f245f8acdaa0b3a0bee9f844f0c2999fe2ea393487',1,'multiclass():&#160;label_parser.h'],['../learner_8h.html#a5514b4a9448315c23ec344ca2d139e24aa0b3a0bee9f844f0c2999fe2ea393487',1,'multiclass():&#160;learner.h']]],
   ['multiclassprobs',['multiclassprobs',['../learner_8h.html#a5514b4a9448315c23ec344ca2d139e24a48a2fd2fd3d6db94e3c90d57df991cce',1,'learner.h']]],
   ['multilabel',['multilabel',['../label__parser_8h.html#ac55dd8dc7400242f299d4b6f245f8acda2ac9461055b0530d74ce809866aacc63',1,'label_parser.h']]],

@@ -41,7 +41,7 @@ var searchData=
   ['cb_5flabel',['cb_label',['../classLabelObjectState.html#abfeca2588607b65014d22b5fb410c05e',1,'LabelObjectState::cb_label()'],['../namespaceCB.html#a53f211db30bb394a7e31aca72a7f4ff7',1,'CB::cb_label()']]],
   ['cb_5fsample',['cb_sample',['../structvw__dbg.html#a8faccb518a038876e6cdbf74ecf7b951',1,'vw_dbg']]],
   ['cb_5fsample_5fpdf',['cb_sample_pdf',['../structvw__dbg.html#acf5ffed9153e36f6944663a79f3de898',1,'vw_dbg']]],
-  ['cb_5ftype',['cb_type',['../structGEN__CS_1_1cb__to__cs.html#a4a94f22628a700aeb8cd11c1b850089d',1,'GEN_CS::cb_to_cs::cb_type()'],['../structGEN__CS_1_1cb__to__cs__adf.html#a67e533609d5933c85c88478ba2c5d886',1,'GEN_CS::cb_to_cs_adf::cb_type()']]],
+  ['cb_5ftype',['cb_type',['../structGEN__CS_1_1cb__to__cs.html#a59af5b5ad541e703a950ca6189185bfa',1,'GEN_CS::cb_to_cs::cb_type()'],['../structGEN__CS_1_1cb__to__cs__adf.html#a9361684cf4b51c47c7cdf94bcb477c0e',1,'GEN_CS::cb_to_cs_adf::cb_type()']]],
   ['cbify',['cbify',['../structvw__dbg.html#ad5c9b95a78e142a366ba76d99afd496d',1,'vw_dbg']]],
   ['ccb',['ccb',['../structvw__dbg.html#aff89b72190836ae25a9b1720b2fc9f13',1,'vw_dbg']]],
   ['ccb_5fid_5fnamespace',['ccb_id_namespace',['../constant_8h.html#a5ebc1ea85a769c016ae3409fbd1ca9c5',1,'constant.h']]],

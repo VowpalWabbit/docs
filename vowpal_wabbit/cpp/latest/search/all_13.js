@@ -163,6 +163,7 @@ var searchData=
   ['slotoutcomelist',['SlotOutcomeList',['../classSlotOutcomeList.html',1,'SlotOutcomeList&lt; audit &gt;'],['../classSlotOutcomeList.html#a99714858f73a1a844d61765d49d2c679',1,'SlotOutcomeList::SlotOutcomeList()']]],
   ['slots_5fstate',['slots_state',['../structContext.html#a5055c79470b50094e15a35c2c3789a14',1,'Context']]],
   ['slotsstate',['SlotsState',['../structSlotsState.html',1,'SlotsState&lt; audit &gt;'],['../structSlotsState.html#ac94f1e29e5831b3f76b939cc5eff4c33',1,'SlotsState::SlotsState()']]],
+  ['sm',['sm',['../namespaceVW.html#a787382d2700da9128c5f05a62009e012aed79acb0cd3d7f8320c53c7798335ef0',1,'VW']]],
   ['so_5ffar',['so_far',['../structINTERACTIONS_1_1extent__interaction__expansion__stack__item.html#a78df2cdec6aec788d54c7927becba396',1,'INTERACTIONS::extent_interaction_expansion_stack_item']]],
   ['socket',['socket',['../structVW_1_1io_1_1socket.html',1,'VW::io::socket'],['../structVW_1_1io_1_1socket.html#a4ffc583f44bb4f5492d0eba66191735b',1,'VW::io::socket::socket()'],['../global__data_8h.html#ac80f47c3b2731d9979f60e1b2f6af364ac39207bbda0d1b98dc89636a45d61221',1,'Socket():&#160;global_data.h']]],
   ['socket_5fcloser',['socket_closer',['../structVW_1_1io_1_1details_1_1socket__closer.html',1,'VW::io::details::socket_closer'],['../structVW_1_1io_1_1details_1_1socket__closer.html#a55e12531f67efb22b3eb72a5913bd1bb',1,'VW::io::details::socket_closer::socket_closer()']]],
