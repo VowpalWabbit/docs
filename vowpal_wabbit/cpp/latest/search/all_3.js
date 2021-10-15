@@ -214,6 +214,8 @@ var searchData=
   ['costs',['costs',['../structCB_1_1label.html#a6e14bf93d493b2de26f8c4b85ffb2e9f',1,'CB::label::costs()'],['../structVW_1_1cb__continuous_1_1continuous__label.html#a5c8df23cff8932da98096a22ce4b2bf7',1,'VW::cb_continuous::continuous_label::costs()'],['../structCOST__SENSITIVE_1_1label.html#a08bee823d36bdd550db79c4d3a22299a',1,'COST_SENSITIVE::label::costs()']]],
   ['count',['count',['../structGD_1_1multipredict__info.html#a45e42ef1577c53c56eaad9fcd0d83cc0',1,'GD::multipredict_info']]],
   ['count_5flabel',['count_label',['../best__constant_8h.html#a9c2325f18b5809fcf84f7e8441fb7b94',1,'best_constant.h']]],
+  ['count_5flabel_2eh',['count_label.h',['../count__label_8h.html',1,'']]],
+  ['count_5flabel_5fsetup',['count_label_setup',['../namespaceVW.html#a8013fe45918cccb9dbf6ed09cc5e5105',1,'VW']]],
   ['count_5fnon_5fzero_5fcost',['count_non_zero_cost',['../structVW_1_1cb__explore__adf_1_1cb__explore__metrics.html#aeac5d14dfc7aa32b3cca61dc81e14142',1,'VW::cb_explore_adf::cb_explore_metrics']]],
   ['counts',['counts',['../structparser.html#af91f2a3bc35a0f226486f23071eb020e',1,'parser']]],
   ['create_5fbuffer_5fview',['create_buffer_view',['../namespaceVW_1_1io.html#a64fffb68e0d290a508476f0c8b160694',1,'VW::io']]],

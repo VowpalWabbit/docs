@@ -72,8 +72,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a05169b985f0f195336e5a65c5d0a910e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structshared__data.html#a05169b985f0f195336e5a65c5d0a910e">shared_data</a> ()</td></tr>
-<tr class="separator:a05169b985f0f195336e5a65c5d0a910e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc460f7a2cc3f29601b99aea4398815a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structshared__data.html#afc460f7a2cc3f29601b99aea4398815a">shared_data</a> ()=default</td></tr>
+<tr class="separator:afc460f7a2cc3f29601b99aea4398815a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab108daa83fcef7d9edf3f09c2030f5bf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structshared__data.html#ab108daa83fcef7d9edf3f09c2030f5bf">~shared_data</a> ()=default</td></tr>
 <tr class="separator:ab108daa83fcef7d9edf3f09c2030f5bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd62c95dc9785257dd9df9cd198400c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structshared__data.html#afd62c95dc9785257dd9df9cd198400c8">shared_data</a> (const <a class="el" href="structshared__data.html">shared_data</a> &amp;other)</td></tr>
@@ -158,12 +158,12 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a4ce87ed2b649c66104956e3ca7491c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab87cb3417f60f24650c9d8d33bf8f91a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structshared__data.html#ab87cb3417f60f24650c9d8d33bf8f91a">holdout_multiclass_log_loss</a> = 0.0</td></tr>
 <tr class="separator:ab87cb3417f60f24650c9d8d33bf8f91a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aace73283af2eb71308dd6eb0ee291fe1"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structshared__data.html#aace73283af2eb71308dd6eb0ee291fe1">is_more_than_two_labels_observed</a></td></tr>
-<tr class="separator:aace73283af2eb71308dd6eb0ee291fe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9928fa7af7f746db35a6803a17f452b"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structshared__data.html#ad9928fa7af7f746db35a6803a17f452b">first_observed_label</a></td></tr>
-<tr class="separator:ad9928fa7af7f746db35a6803a17f452b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bc97afde96c2ca68808904f5c817dcc"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structshared__data.html#a7bc97afde96c2ca68808904f5c817dcc">second_observed_label</a></td></tr>
-<tr class="separator:a7bc97afde96c2ca68808904f5c817dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a959e85b4cdc13fa50902e95ab83cc7c9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structshared__data.html#a959e85b4cdc13fa50902e95ab83cc7c9">is_more_than_two_labels_observed</a> = false</td></tr>
+<tr class="separator:a959e85b4cdc13fa50902e95ab83cc7c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdead5f80e8283d6600d35a837cd0b97"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structshared__data.html#acdead5f80e8283d6600d35a837cd0b97">first_observed_label</a> = FLT_MAX</td></tr>
+<tr class="separator:acdead5f80e8283d6600d35a837cd0b97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8665db15ad6cea576c387bfc1236e4a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structshared__data.html#aa8665db15ad6cea576c387bfc1236e4a">second_observed_label</a> = FLT_MAX</td></tr>
+<tr class="separator:aa8665db15ad6cea576c387bfc1236e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -193,11 +193,14 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:ac58b4bd5aaeb55095cdcdb43bf7564b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a05169b985f0f195336e5a65c5d0a910e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05169b985f0f195336e5a65c5d0a910e">&#9670;&nbsp;</a></span>shared_data() <span class="overload">[1/3]</span></h2>
+<a id="afc460f7a2cc3f29601b99aea4398815a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc460f7a2cc3f29601b99aea4398815a">&#9670;&nbsp;</a></span>shared_data() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">shared_data::shared_data </td>
@@ -206,6 +209,11 @@ Static Public Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -888,14 +896,14 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ad9928fa7af7f746db35a6803a17f452b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9928fa7af7f746db35a6803a17f452b">&#9670;&nbsp;</a></span>first_observed_label</h2>
+<a id="acdead5f80e8283d6600d35a837cd0b97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdead5f80e8283d6600d35a837cd0b97">&#9670;&nbsp;</a></span>first_observed_label</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::atomic&lt;float&gt; shared_data::first_observed_label</td>
+          <td class="memname">float shared_data::first_observed_label = FLT_MAX</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1000,14 +1008,14 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aace73283af2eb71308dd6eb0ee291fe1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aace73283af2eb71308dd6eb0ee291fe1">&#9670;&nbsp;</a></span>is_more_than_two_labels_observed</h2>
+<a id="a959e85b4cdc13fa50902e95ab83cc7c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a959e85b4cdc13fa50902e95ab83cc7c9">&#9670;&nbsp;</a></span>is_more_than_two_labels_observed</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::atomic&lt;bool&gt; shared_data::is_more_than_two_labels_observed</td>
+          <td class="memname">bool shared_data::is_more_than_two_labels_observed = false</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1222,14 +1230,14 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a7bc97afde96c2ca68808904f5c817dcc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7bc97afde96c2ca68808904f5c817dcc">&#9670;&nbsp;</a></span>second_observed_label</h2>
+<a id="aa8665db15ad6cea576c387bfc1236e4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8665db15ad6cea576c387bfc1236e4a">&#9670;&nbsp;</a></span>second_observed_label</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::atomic&lt;float&gt; shared_data::second_observed_label</td>
+          <td class="memname">float shared_data::second_observed_label = FLT_MAX</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1382,7 +1390,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 14 2021 20:14:39 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 15 2021 15:48:56 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

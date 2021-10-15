@@ -37,6 +37,7 @@ var searchData=
   ['continuous_5factions_5freduction_5ffeatures_2eh',['continuous_actions_reduction_features.h',['../continuous__actions__reduction__features_8h.html',1,'']]],
   ['correctedmath_2eh',['correctedMath.h',['../correctedMath_8h.html',1,'']]],
   ['cost_5fsensitive_2eh',['cost_sensitive.h',['../cost__sensitive_8h.html',1,'']]],
+  ['count_5flabel_2eh',['count_label.h',['../count__label_8h.html',1,'']]],
   ['crossplat_5fcompat_2eh',['crossplat_compat.h',['../crossplat__compat_8h.html',1,'']]],
   ['cs_5factive_2eh',['cs_active.h',['../cs__active_8h.html',1,'']]],
   ['csoaa_2eh',['csoaa.h',['../csoaa_8h.html',1,'']]],

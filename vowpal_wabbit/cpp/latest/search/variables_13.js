@@ -16,7 +16,7 @@ var searchData=
   ['sd',['sd',['../structvw.html#aada16c220b8d3eaf62aaee86168dde5e',1,'vw']]],
   ['search',['search',['../structvw__dbg.html#a714718400f44bb859325eee0b25ce79f',1,'vw_dbg']]],
   ['searchstr',['searchstr',['../structvw.html#af1db5f5b1b98a4aa2a8062b6d65d7d89',1,'vw']]],
-  ['second_5fobserved_5flabel',['second_observed_label',['../structshared__data.html#a7bc97afde96c2ca68808904f5c817dcc',1,'shared_data']]],
+  ['second_5fobserved_5flabel',['second_observed_label',['../structshared__data.html#aa8665db15ad6cea576c387bfc1236e4a',1,'shared_data']]],
   ['seed',['seed',['../structVW_1_1automl_1_1interaction__config__manager.html#a7bfeb83c9132828942dd9db761f332ef',1,'VW::automl::interaction_config_manager']]],
   ['seen_5ffirst',['seen_first',['../classFloatToFloatState__OriginalLabelCostHack.html#a72ccadad67ddb0e646ff915bd8833b93',1,'FloatToFloatState_OriginalLabelCostHack']]],
   ['segment',['segment',['../classArrayToPdfState.html#a90a676dd3c2fef026dfa3c4748501f33',1,'ArrayToPdfState']]],

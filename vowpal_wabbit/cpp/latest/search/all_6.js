@@ -49,7 +49,7 @@ var searchData=
   ['finished_5fcount',['finished_count',['../structparser.html#ad53b04588524b349d94531588be79b1f',1,'parser']]],
   ['first',['first',['../classsparse__parameters.html#a3718afe7252634a780881bd5ce3a6d0d',1,'sparse_parameters::first()'],['../classdense__parameters.html#af1fb04b3f82ba66dab975a49c0bb05a4',1,'dense_parameters::first()']]],
   ['first_5fderivative',['first_derivative',['../classloss__function.html#ae0863a09b3ae606c662d38f387a72a83',1,'loss_function']]],
-  ['first_5fobserved_5flabel',['first_observed_label',['../structshared__data.html#ad9928fa7af7f746db35a6803a17f452b',1,'shared_data']]],
+  ['first_5fobserved_5flabel',['first_observed_label',['../structshared__data.html#acdead5f80e8283d6600d35a837cd0b97',1,'shared_data']]],
   ['first_5fonly',['first_only',['../structVW_1_1pmf__to__pdf_1_1reduction.html#af9469be27491babc9fb2ab61a1481784',1,'VW::pmf_to_pdf::reduction']]],
   ['first_5fslot_5ffloat',['first_slot_float',['../classFloatToFloatState__OriginalLabelCostHack.html#a71058192a82ef3323ff22c60496450b1',1,'FloatToFloatState_OriginalLabelCostHack']]],
   ['firsteventid',['FirstEventId',['../structdsjson__metrics.html#aedd286efa64705da90ec179ca47c3fb9',1,'dsjson_metrics']]],

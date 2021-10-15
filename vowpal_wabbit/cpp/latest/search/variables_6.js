@@ -13,7 +13,7 @@ var searchData=
   ['finish',['finish',['../structSearch_1_1search__task.html#aa4784eebfd6de0497b23e824056f9d0c',1,'Search::search_task::finish()'],['../structSearch_1_1search__metatask.html#a0f8ba98f5e0e01e04d66bf8824fb8016',1,'Search::search_metatask::finish()']]],
   ['finish_5fexample_5ff',['finish_example_f',['../structVW_1_1LEARNER_1_1finish__example__data.html#a137835aa833c6548f287fd102d7d639f',1,'VW::LEARNER::finish_example_data']]],
   ['finished_5fcount',['finished_count',['../structparser.html#ad53b04588524b349d94531588be79b1f',1,'parser']]],
-  ['first_5fobserved_5flabel',['first_observed_label',['../structshared__data.html#ad9928fa7af7f746db35a6803a17f452b',1,'shared_data']]],
+  ['first_5fobserved_5flabel',['first_observed_label',['../structshared__data.html#acdead5f80e8283d6600d35a837cd0b97',1,'shared_data']]],
   ['first_5fonly',['first_only',['../structVW_1_1pmf__to__pdf_1_1reduction.html#af9469be27491babc9fb2ab61a1481784',1,'VW::pmf_to_pdf::reduction']]],
   ['first_5fslot_5ffloat',['first_slot_float',['../classFloatToFloatState__OriginalLabelCostHack.html#a71058192a82ef3323ff22c60496450b1',1,'FloatToFloatState_OriginalLabelCostHack']]],
   ['firsteventid',['FirstEventId',['../structdsjson__metrics.html#aedd286efa64705da90ec179ca47c3fb9',1,'dsjson_metrics']]],
