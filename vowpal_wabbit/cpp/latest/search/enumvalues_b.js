@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['pdf',['pdf',['../learner_8h.html#a5514b4a9448315c23ec344ca2d139e24a437175ba4191210ee004e1d937494d09',1,'learner.h']]],
-  ['prob',['prob',['../learner_8h.html#a5514b4a9448315c23ec344ca2d139e24a385e54735cbf7e164d5ca45c7419d3a9',1,'learner.h']]]
+  ['pdf',['pdf',['../namespaceVW.html#a4f76045a06b3efe3c5c612b777b6c836a437175ba4191210ee004e1d937494d09',1,'VW']]],
+  ['prob',['prob',['../namespaceVW.html#a4f76045a06b3efe3c5c612b777b6c836a385e54735cbf7e164d5ca45c7419d3a9',1,'VW']]]
 ];

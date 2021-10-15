@@ -10,7 +10,7 @@ var searchData=
   ['label_5fobject_5fstate',['label_object_state',['../structContext.html#accb075644231b884ecab3d1301524c4b',1,'Context']]],
   ['label_5fsingle_5fproperty_5fstate',['label_single_property_state',['../structContext.html#a5ad5225510ed6a3d777c89f50ba72746',1,'Context']]],
   ['label_5fstate',['label_state',['../structContext.html#a3c166b5e671667715c4c7e673dfc9afb',1,'Context']]],
-  ['label_5ftype',['label_type',['../structlabel__parser.html#a2ba568545041de9ca472b9ab761e8abd',1,'label_parser']]],
+  ['label_5ftype',['label_type',['../structlabel__parser.html#a8416deaa2da9244903550c9d1339dc4a',1,'label_parser']]],
   ['label_5fv',['label_v',['../structMULTILABEL_1_1labels.html#ae9b968050adb2459463cffec3b4c38c4',1,'MULTILABEL::labels']]],
   ['labeled',['labeled',['../structVW_1_1slates_1_1label.html#a8ee43031c61a9a8a56d4c05bbec341ac',1,'VW::slates::label']]],
   ['last_5fcompatible_5fversion',['LAST_COMPATIBLE_VERSION',['../namespaceVW_1_1version__definitions.html#a705965b39b52128f510483ca9d116135',1,'VW::version_definitions']]],

@@ -24,7 +24,7 @@ var searchData=
   ['cb_5flabel_5fto_5fstring',['cb_label_to_string',['../example_8h.html#a348468f2000b1fdf32bb76c4c7c837be',1,'example.h']]],
   ['cb_5fsample_5fsetup',['cb_sample_setup',['../cb__sample_8h.html#ae3be8b20bedb55f8be38e659e802a8bd',1,'cb_sample.h']]],
   ['cb_5fto_5fcb_5fadf_5fsetup',['cb_to_cb_adf_setup',['../cb__to__cb__adf_8h.html#ae17b8c846a6701f79526b126d6d90bd1',1,'cb_to_cb_adf.h']]],
-  ['cb_5ftype_5ffrom_5fstring',['cb_type_from_string',['../namespaceVW.html#a9b3662e419798bcf81e8c03ee2b079f9',1,'VW']]],
+  ['cb_5ftype_5ffrom_5fstring',['cb_type_from_string',['../namespaceVW.html#a356b015f53b784891ff85bff21a158e7',1,'VW']]],
   ['cbegin',['cbegin',['../classsparse__parameters.html#ac70911d257d0d1cb1f45666473f0e3cc',1,'sparse_parameters::cbegin()'],['../classdense__parameters.html#a09a747f87d439098bfc7c7d70fd0a935',1,'dense_parameters::cbegin()'],['../structfeatures.html#a2abf0057c397d76c5359ad3cf3457542',1,'features::cbegin()'],['../structv__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_3_01T_01_4_1_1value_01_4_1_1type_01_4.html#a356255aa49babcee051434825bbf6a86',1,'v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;::cbegin()']]],
   ['cbify_5fsetup',['cbify_setup',['../cbify_8h.html#ace0f2fef989533b00d81ecf5041ae750',1,'cbify.h']]],
   ['cbifyldf_5fsetup',['cbifyldf_setup',['../cbify_8h.html#aa892cae850b7eb2b518c3fe9da3d875c',1,'cbify.h']]],
