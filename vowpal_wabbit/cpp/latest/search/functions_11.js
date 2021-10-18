@@ -96,7 +96,7 @@ var searchData=
   ['socket_5fcloser',['socket_closer',['../structVW_1_1io_1_1details_1_1socket__closer.html#a55e12531f67efb22b3eb72a5913bd1bb',1,'VW::io::details::socket_closer']]],
   ['sort',['sort',['../structfeatures.html#ac1d0ea5e77002bab482dc38d62e7acdb',1,'features']]],
   ['sort_5faction_5fprobs',['sort_action_probs',['../namespaceVW_1_1cb__explore__adf.html#a9a7b608cba2aa775ba41ce214921428e',1,'VW::cb_explore_adf']]],
-  ['sort_5fand_5ffilter_5fduplicate_5finteractions',['sort_and_filter_duplicate_interactions',['../namespaceINTERACTIONS.html#ae8cd382cc96bcb221df2f5e45e337fe5',1,'INTERACTIONS']]],
+  ['sort_5fand_5ffilter_5fduplicate_5finteractions',['sort_and_filter_duplicate_interactions',['../namespaceINTERACTIONS.html#aa6742d5262651a76b4e8cc074641669c',1,'INTERACTIONS']]],
   ['sort_5fby_5fscores',['sort_by_scores',['../classvw__slim_1_1vw__predict.html#a348ee1567173bd55ca4c930540201596',1,'vw_slim::vw_predict']]],
   ['sort_5finteractions_5fcomparator',['sort_interactions_comparator',['../namespaceINTERACTIONS.html#a991c5a05c6d343b974d3015f398c405e',1,'INTERACTIONS']]],
   ['spanningtree',['SpanningTree',['../classVW_1_1SpanningTree.html#a76c2f104c917104fa0e86a13c6d96a84',1,'VW::SpanningTree']]],

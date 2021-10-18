@@ -22,6 +22,8 @@ var searchData=
   ['index_5fsequence',['index_sequence',['../classVW_1_1details_1_1index__sequence.html',1,'VW::details']]],
   ['index_5fsequence_3c_20integers_2e_2e_2e_20_3e',['index_sequence&lt; Integers... &gt;',['../classVW_1_1details_1_1index__sequence.html',1,'VW::details']]],
   ['indices',['indices',['../structexample__predict.html#ab098b66eb3c24b20ca349b7908ef54f3',1,'example_predict']]],
+  ['indices_5fto_5fvalues_5fignore_5flast_5findex',['indices_to_values_ignore_last_index',['../namespaceINTERACTIONS.html#a39db93fa48415de36ea84148fbf16d06',1,'INTERACTIONS']]],
+  ['indices_5fto_5fvalues_5fone_5fbased',['indices_to_values_one_based',['../namespaceINTERACTIONS.html#aa9fabd214e4e23e254d5fd239ed3189b',1,'INTERACTIONS']]],
   ['indicies',['indicies',['../structfeatures.html#a2d75751cdcc865b5e62031d40a770a6a',1,'features']]],
   ['info',['info',['../namespaceVW_1_1io_1_1logger.html#a727315522185c0fa2906718f6ac84928acaf9b6b99962bf5c2264824231d7a40c',1,'VW::io::logger']]],
   ['init',['init',['../structVW_1_1cats__tree_1_1cats__tree.html#a4ab9cfe0e8aa14f7b22d480c2a600d38',1,'VW::cats_tree::cats_tree::init()'],['../structVW_1_1offset__tree_1_1offset__tree.html#a10740c73d3474b8cc80cbc0e689f0955',1,'VW::offset_tree::offset_tree::init()'],['../classLabelObjectState.html#a2f72eb3187118545cedfe1aeb213140b',1,'LabelObjectState::init()'],['../structContext.html#a4740db8b5f721680e08364df550d603f',1,'Context::init()'],['../structVWReaderHandler.html#a22f63108dc143f5ba8d37d3b1c822625',1,'VWReaderHandler::init()']]],

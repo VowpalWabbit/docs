@@ -81,8 +81,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a766c3f00caddfddd8b73b25cc62bb18c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#a766c3f00caddfddd8b73b25cc62bb18c">generate_func_t</a> = std::vector&lt; std::vector&lt; <a class="el" href="example__predict_8h.html#a6bf681255e2fe98ef5dd75040110a62b">namespace_index</a> &gt; &gt;(const std::set&lt; <a class="el" href="example__predict_8h.html#a6bf681255e2fe98ef5dd75040110a62b">namespace_index</a> &gt; &amp;namespaces, size_t num_to_pick)</td></tr>
-<tr class="separator:a766c3f00caddfddd8b73b25cc62bb18c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02dde3dd79338d4d1b5325d67d2daed9"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a02dde3dd79338d4d1b5325d67d2daed9"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#a02dde3dd79338d4d1b5325d67d2daed9">generate_func_t</a> = std::vector&lt; std::vector&lt; T &gt; &gt;(const std::set&lt; T &gt; &amp;namespaces, size_t num_to_pick)</td></tr>
+<tr class="separator:a02dde3dd79338d4d1b5325d67d2daed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab95fb6e22eb7a46087e552870f54d253"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#ab95fb6e22eb7a46087e552870f54d253">features_range_t</a> = std::pair&lt; <a class="el" href="structfeatures.html#af004a87bc7b463749d1c889d8c105acc">features::const_audit_iterator</a>, <a class="el" href="structfeatures.html#af004a87bc7b463749d1c889d8c105acc">features::const_audit_iterator</a> &gt;</td></tr>
 <tr class="separator:ab95fb6e22eb7a46087e552870f54d253"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -100,24 +101,44 @@ Functions</h2></td></tr>
 <tr class="separator:ab689f2484c76a1ed43a9441fbb6e09a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab425e1173c73259e20bc610f381204f4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#ab425e1173c73259e20bc610f381204f4">contains_wildcard</a> (const std::vector&lt; <a class="el" href="example__predict_8h.html#a6bf681255e2fe98ef5dd75040110a62b">namespace_index</a> &gt; &amp;interaction)</td></tr>
 <tr class="separator:ab425e1173c73259e20bc610f381204f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d94141d12f6bca7e1b7343e5951b891"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#a5d94141d12f6bca7e1b7343e5951b891">contains_wildcard</a> (const std::vector&lt; <a class="el" href="feature__group_8h.html#ab770bf81983f504bd535130eaacff536">extent_term</a> &gt; &amp;interaction)</td></tr>
+<tr class="separator:a5d94141d12f6bca7e1b7343e5951b891"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78e5ff2da1f80708815c8e1449d057b6"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#a78e5ff2da1f80708815c8e1449d057b6">eval_sum_ft_squared_of_generated_ft</a> (bool permutations, const std::vector&lt; std::vector&lt; <a class="el" href="example__predict_8h.html#a6bf681255e2fe98ef5dd75040110a62b">namespace_index</a> &gt;&gt; &amp;interactions, const std::vector&lt; std::vector&lt; <a class="el" href="feature__group_8h.html#ab770bf81983f504bd535130eaacff536">extent_term</a> &gt;&gt; &amp;extent_interactions, const std::array&lt; <a class="el" href="structfeatures.html">features</a>, <a class="el" href="constant_8h.html#af6972edf713d5809ccd5658eca433d84">NUM_NAMESPACES</a> &gt; &amp;feature_spaces)</td></tr>
 <tr class="separator:a78e5ff2da1f80708815c8e1449d057b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebfb30820450748a5196b37a08a15383"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; <a class="el" href="example__predict_8h.html#a6bf681255e2fe98ef5dd75040110a62b">namespace_index</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#aebfb30820450748a5196b37a08a15383">generate_namespace_combinations_with_repetition</a> (const std::set&lt; <a class="el" href="example__predict_8h.html#a6bf681255e2fe98ef5dd75040110a62b">namespace_index</a> &gt; &amp;namespaces, size_t num_to_pick)</td></tr>
-<tr class="separator:aebfb30820450748a5196b37a08a15383"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c231034d75f45c0de5d5902de5bb66d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; <a class="el" href="example__predict_8h.html#a6bf681255e2fe98ef5dd75040110a62b">namespace_index</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#a5c231034d75f45c0de5d5902de5bb66d">generate_namespace_permutations_with_repetition</a> (const std::set&lt; <a class="el" href="example__predict_8h.html#a6bf681255e2fe98ef5dd75040110a62b">namespace_index</a> &gt; &amp;namespaces, size_t num_to_pick)</td></tr>
-<tr class="separator:a5c231034d75f45c0de5d5902de5bb66d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9fabd214e4e23e254d5fd239ed3189b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aa9fabd214e4e23e254d5fd239ed3189b"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#aa9fabd214e4e23e254d5fd239ed3189b">indices_to_values_one_based</a> (const std::vector&lt; size_t &gt; &amp;indices, const std::set&lt; T &gt; &amp;values)</td></tr>
+<tr class="separator:aa9fabd214e4e23e254d5fd239ed3189b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39db93fa48415de36ea84148fbf16d06"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a39db93fa48415de36ea84148fbf16d06"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#a39db93fa48415de36ea84148fbf16d06">indices_to_values_ignore_last_index</a> (const std::vector&lt; size_t &gt; &amp;indices, const std::set&lt; T &gt; &amp;values)</td></tr>
+<tr class="separator:a39db93fa48415de36ea84148fbf16d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82537842aef36929fa2e8534514cebc1"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a82537842aef36929fa2e8534514cebc1"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#a82537842aef36929fa2e8534514cebc1">must_be_left_sorted</a> (const std::vector&lt; T &gt; &amp;oi)</td></tr>
+<tr class="separator:a82537842aef36929fa2e8534514cebc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6742d5262651a76b4e8cc074641669c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aa6742d5262651a76b4e8cc074641669c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#aa6742d5262651a76b4e8cc074641669c">sort_and_filter_duplicate_interactions</a> (std::vector&lt; std::vector&lt; T &gt;&gt; &amp;vec, bool filter_duplicates, size_t &amp;removed_cnt, size_t &amp;sorted_cnt)</td></tr>
+<tr class="separator:aa6742d5262651a76b4e8cc074641669c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa535baccd686632531b68071cbead314"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aa535baccd686632531b68071cbead314"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; T &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#aa535baccd686632531b68071cbead314">generate_namespace_combinations_with_repetition</a> (const std::set&lt; T &gt; &amp;namespaces, size_t num_to_pick)</td></tr>
+<tr class="separator:aa535baccd686632531b68071cbead314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1ca717a6f57774015ebfb2bae57fd34"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ac1ca717a6f57774015ebfb2bae57fd34"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; T &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#ac1ca717a6f57774015ebfb2bae57fd34">generate_namespace_permutations_with_repetition</a> (const std::set&lt; T &gt; &amp;namespaces, size_t num_to_pick)</td></tr>
+<tr class="separator:ac1ca717a6f57774015ebfb2bae57fd34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a100617fbe0ad192a2b8b38f954b17eda"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; <a class="el" href="example__predict_8h.html#a6bf681255e2fe98ef5dd75040110a62b">namespace_index</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#a100617fbe0ad192a2b8b38f954b17eda">expand_quadratics_wildcard_interactions</a> (bool leave_duplicate_interactions, const std::set&lt; <a class="el" href="example__predict_8h.html#a6bf681255e2fe98ef5dd75040110a62b">namespace_index</a> &gt; &amp;new_example_indices)</td></tr>
 <tr class="separator:a100617fbe0ad192a2b8b38f954b17eda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a991c5a05c6d343b974d3015f398c405e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#a991c5a05c6d343b974d3015f398c405e">sort_interactions_comparator</a> (const std::vector&lt; <a class="el" href="example__predict_8h.html#a6bf681255e2fe98ef5dd75040110a62b">namespace_index</a> &gt; &amp;a, const std::vector&lt; <a class="el" href="example__predict_8h.html#a6bf681255e2fe98ef5dd75040110a62b">namespace_index</a> &gt; &amp;b)</td></tr>
 <tr class="separator:a991c5a05c6d343b974d3015f398c405e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8cd382cc96bcb221df2f5e45e337fe5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#ae8cd382cc96bcb221df2f5e45e337fe5">sort_and_filter_duplicate_interactions</a> (std::vector&lt; std::vector&lt; <a class="el" href="example__predict_8h.html#a6bf681255e2fe98ef5dd75040110a62b">namespace_index</a> &gt;&gt; &amp;vec, bool filter_duplicates, size_t &amp;removed_cnt, size_t &amp;sorted_cnt)</td></tr>
-<tr class="separator:ae8cd382cc96bcb221df2f5e45e337fe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fb9fdc8c098226bffeb314e8279825e"><td class="memTemplParams" colspan="2">template&lt;generate_func_t generate_func, bool leave_duplicate_interactions&gt; </td></tr>
+<tr class="memitem:a2fb9fdc8c098226bffeb314e8279825e"><td class="memTemplParams" colspan="2">template&lt;generate_func_t&lt; namespace_index &gt; generate_func, bool leave_duplicate_interactions&gt; </td></tr>
 <tr class="memitem:a2fb9fdc8c098226bffeb314e8279825e"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; <a class="el" href="example__predict_8h.html#a6bf681255e2fe98ef5dd75040110a62b">namespace_index</a> &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#a2fb9fdc8c098226bffeb314e8279825e">compile_interaction</a> (const std::vector&lt; <a class="el" href="example__predict_8h.html#a6bf681255e2fe98ef5dd75040110a62b">namespace_index</a> &gt; &amp;interaction, const std::set&lt; <a class="el" href="example__predict_8h.html#a6bf681255e2fe98ef5dd75040110a62b">namespace_index</a> &gt; &amp;indices)</td></tr>
 <tr class="separator:a2fb9fdc8c098226bffeb314e8279825e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7efbed42a22547c651d1841835c5a70"><td class="memTemplParams" colspan="2">template&lt;generate_func_t generate_func, bool leave_duplicate_interactions&gt; </td></tr>
+<tr class="memitem:a224eba6bf77417e93e53f286a26c75d0"><td class="memTemplParams" colspan="2">template&lt;generate_func_t&lt; extent_term &gt; generate_func, bool leave_duplicate_interactions&gt; </td></tr>
+<tr class="memitem:a224eba6bf77417e93e53f286a26c75d0"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; <a class="el" href="feature__group_8h.html#ab770bf81983f504bd535130eaacff536">extent_term</a> &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#a224eba6bf77417e93e53f286a26c75d0">compile_extent_interaction</a> (const std::vector&lt; <a class="el" href="feature__group_8h.html#ab770bf81983f504bd535130eaacff536">extent_term</a> &gt; &amp;interaction, const std::set&lt; <a class="el" href="feature__group_8h.html#ab770bf81983f504bd535130eaacff536">extent_term</a> &gt; &amp;all_seen_extents)</td></tr>
+<tr class="separator:a224eba6bf77417e93e53f286a26c75d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7efbed42a22547c651d1841835c5a70"><td class="memTemplParams" colspan="2">template&lt;generate_func_t&lt; namespace_index &gt; generate_func, bool leave_duplicate_interactions&gt; </td></tr>
 <tr class="memitem:ab7efbed42a22547c651d1841835c5a70"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; <a class="el" href="example__predict_8h.html#a6bf681255e2fe98ef5dd75040110a62b">namespace_index</a> &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#ab7efbed42a22547c651d1841835c5a70">compile_interactions</a> (const std::vector&lt; std::vector&lt; <a class="el" href="example__predict_8h.html#a6bf681255e2fe98ef5dd75040110a62b">namespace_index</a> &gt;&gt; &amp;interactions, const std::set&lt; <a class="el" href="example__predict_8h.html#a6bf681255e2fe98ef5dd75040110a62b">namespace_index</a> &gt; &amp;indices)</td></tr>
 <tr class="separator:ab7efbed42a22547c651d1841835c5a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a363a3a63b9419a334a7209ed26e44311"><td class="memTemplParams" colspan="2">template&lt;generate_func_t&lt; extent_term &gt; generate_func, bool leave_duplicate_interactions&gt; </td></tr>
+<tr class="memitem:a363a3a63b9419a334a7209ed26e44311"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; <a class="el" href="feature__group_8h.html#ab770bf81983f504bd535130eaacff536">extent_term</a> &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#a363a3a63b9419a334a7209ed26e44311">compile_extent_interactions</a> (const std::vector&lt; std::vector&lt; <a class="el" href="feature__group_8h.html#ab770bf81983f504bd535130eaacff536">extent_term</a> &gt;&gt; &amp;interactions, const std::set&lt; <a class="el" href="feature__group_8h.html#ab770bf81983f504bd535130eaacff536">extent_term</a> &gt; &amp;indices)</td></tr>
+<tr class="separator:a363a3a63b9419a334a7209ed26e44311"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f4b68b37c7a284d5d90ebc7faffbfb9"><td class="memTemplParams" colspan="2">template&lt;class DataT , void(*)(DataT &amp;, const float, float &amp;) FuncT, class WeightsT &gt; </td></tr>
 <tr class="memitem:a3f4b68b37c7a284d5d90ebc7faffbfb9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#a3f4b68b37c7a284d5d90ebc7faffbfb9">call_FuncT</a> (DataT &amp;dat, WeightsT &amp;weights, const float ft_value, const uint64_t ft_idx)</td></tr>
 <tr class="separator:a3f4b68b37c7a284d5d90ebc7faffbfb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -187,14 +208,16 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a766c3f00caddfddd8b73b25cc62bb18c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a766c3f00caddfddd8b73b25cc62bb18c">&#9670;&nbsp;</a></span>generate_func_t</h2>
+<a id="a02dde3dd79338d4d1b5325d67d2daed9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02dde3dd79338d4d1b5325d67d2daed9">&#9670;&nbsp;</a></span>generate_func_t</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespaceINTERACTIONS.html#a766c3f00caddfddd8b73b25cc62bb18c">INTERACTIONS::generate_func_t</a> = typedef std::vector&lt;std::vector&lt;<a class="el" href="example__predict_8h.html#a6bf681255e2fe98ef5dd75040110a62b">namespace_index</a>&gt; &gt;( const std::set&lt;<a class="el" href="example__predict_8h.html#a6bf681255e2fe98ef5dd75040110a62b">namespace_index</a>&gt;&amp; namespaces, size_t num_to_pick)</td>
+          <td class="memname">using <a class="el" href="namespaceINTERACTIONS.html#a02dde3dd79338d4d1b5325d67d2daed9">INTERACTIONS::generate_func_t</a> = typedef std::vector&lt;std::vector&lt;T&gt; &gt;(const std::set&lt;T&gt;&amp; namespaces, size_t num_to_pick)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -302,13 +325,73 @@ template&lt;class DataT , void(*)(DataT &amp;, const float, float) FuncT, class 
 
 </div>
 </div>
+<a id="a224eba6bf77417e93e53f286a26c75d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a224eba6bf77417e93e53f286a26c75d0">&#9670;&nbsp;</a></span>compile_extent_interaction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;generate_func_t&lt; extent_term &gt; generate_func, bool leave_duplicate_interactions&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::vector&lt;<a class="el" href="feature__group_8h.html#ab770bf81983f504bd535130eaacff536">extent_term</a>&gt; &gt; INTERACTIONS::compile_extent_interaction </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="feature__group_8h.html#ab770bf81983f504bd535130eaacff536">extent_term</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>interaction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::set&lt; <a class="el" href="feature__group_8h.html#ab770bf81983f504bd535130eaacff536">extent_term</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>all_seen_extents</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a363a3a63b9419a334a7209ed26e44311"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a363a3a63b9419a334a7209ed26e44311">&#9670;&nbsp;</a></span>compile_extent_interactions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;generate_func_t&lt; extent_term &gt; generate_func, bool leave_duplicate_interactions&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::vector&lt;<a class="el" href="feature__group_8h.html#ab770bf81983f504bd535130eaacff536">extent_term</a>&gt; &gt; INTERACTIONS::compile_extent_interactions </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::vector&lt; <a class="el" href="feature__group_8h.html#ab770bf81983f504bd535130eaacff536">extent_term</a> &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>interactions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::set&lt; <a class="el" href="feature__group_8h.html#ab770bf81983f504bd535130eaacff536">extent_term</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>indices</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a2fb9fdc8c098226bffeb314e8279825e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2fb9fdc8c098226bffeb314e8279825e">&#9670;&nbsp;</a></span>compile_interaction()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;generate_func_t generate_func, bool leave_duplicate_interactions&gt; </div>
+template&lt;generate_func_t&lt; namespace_index &gt; generate_func, bool leave_duplicate_interactions&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">std::vector&lt;std::vector&lt;<a class="el" href="example__predict_8h.html#a6bf681255e2fe98ef5dd75040110a62b">namespace_index</a>&gt; &gt; INTERACTIONS::compile_interaction </td>
@@ -338,7 +421,7 @@ template&lt;generate_func_t generate_func, bool leave_duplicate_interactions&gt;
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;generate_func_t generate_func, bool leave_duplicate_interactions&gt; </div>
+template&lt;generate_func_t&lt; namespace_index &gt; generate_func, bool leave_duplicate_interactions&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">std::vector&lt;std::vector&lt;<a class="el" href="example__predict_8h.html#a6bf681255e2fe98ef5dd75040110a62b">namespace_index</a>&gt; &gt; INTERACTIONS::compile_interactions </td>
@@ -363,7 +446,7 @@ template&lt;generate_func_t generate_func, bool leave_duplicate_interactions&gt;
 </div>
 </div>
 <a id="ab425e1173c73259e20bc610f381204f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab425e1173c73259e20bc610f381204f4">&#9670;&nbsp;</a></span>contains_wildcard()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab425e1173c73259e20bc610f381204f4">&#9670;&nbsp;</a></span>contains_wildcard() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -375,6 +458,32 @@ template&lt;generate_func_t generate_func, bool leave_duplicate_interactions&gt;
           <td class="memname">bool INTERACTIONS::contains_wildcard </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; <a class="el" href="example__predict_8h.html#a6bf681255e2fe98ef5dd75040110a62b">namespace_index</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>interaction</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5d94141d12f6bca7e1b7343e5951b891"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d94141d12f6bca7e1b7343e5951b891">&#9670;&nbsp;</a></span>contains_wildcard() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool INTERACTIONS::contains_wildcard </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="feature__group_8h.html#ab770bf81983f504bd535130eaacff536">extent_term</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>interaction</em></td><td>)</td>
           <td></td>
         </tr>
@@ -790,16 +899,18 @@ template&lt;class DataT , class WeightOrIndexT , void(*)(DataT &amp;, float, Wei
 
 </div>
 </div>
-<a id="aebfb30820450748a5196b37a08a15383"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aebfb30820450748a5196b37a08a15383">&#9670;&nbsp;</a></span>generate_namespace_combinations_with_repetition()</h2>
+<a id="aa535baccd686632531b68071cbead314"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa535baccd686632531b68071cbead314">&#9670;&nbsp;</a></span>generate_namespace_combinations_with_repetition()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;std::vector&lt;<a class="el" href="example__predict_8h.html#a6bf681255e2fe98ef5dd75040110a62b">namespace_index</a>&gt; &gt; INTERACTIONS::generate_namespace_combinations_with_repetition </td>
+          <td class="memname">std::vector&lt;std::vector&lt;T&gt; &gt; INTERACTIONS::generate_namespace_combinations_with_repetition </td>
           <td>(</td>
-          <td class="paramtype">const std::set&lt; <a class="el" href="example__predict_8h.html#a6bf681255e2fe98ef5dd75040110a62b">namespace_index</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::set&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"><em>namespaces</em>, </td>
         </tr>
         <tr>
@@ -818,16 +929,18 @@ template&lt;class DataT , class WeightOrIndexT , void(*)(DataT &amp;, float, Wei
 
 </div>
 </div>
-<a id="a5c231034d75f45c0de5d5902de5bb66d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c231034d75f45c0de5d5902de5bb66d">&#9670;&nbsp;</a></span>generate_namespace_permutations_with_repetition()</h2>
+<a id="ac1ca717a6f57774015ebfb2bae57fd34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1ca717a6f57774015ebfb2bae57fd34">&#9670;&nbsp;</a></span>generate_namespace_permutations_with_repetition()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;std::vector&lt;<a class="el" href="example__predict_8h.html#a6bf681255e2fe98ef5dd75040110a62b">namespace_index</a>&gt; &gt; INTERACTIONS::generate_namespace_permutations_with_repetition </td>
+          <td class="memname">std::vector&lt;std::vector&lt;T&gt; &gt; INTERACTIONS::generate_namespace_permutations_with_repetition </td>
           <td>(</td>
-          <td class="paramtype">const std::set&lt; <a class="el" href="example__predict_8h.html#a6bf681255e2fe98ef5dd75040110a62b">namespace_index</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::set&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"><em>namespaces</em>, </td>
         </tr>
         <tr>
@@ -1032,6 +1145,66 @@ template&lt;class DataT , class WeightOrIndexT , void(*)(DataT &amp;, float, Wei
 
 </div>
 </div>
+<a id="a39db93fa48415de36ea84148fbf16d06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39db93fa48415de36ea84148fbf16d06">&#9670;&nbsp;</a></span>indices_to_values_ignore_last_index()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;T&gt; INTERACTIONS::indices_to_values_ignore_last_index </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>indices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::set&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>values</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa9fabd214e4e23e254d5fd239ed3189b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9fabd214e4e23e254d5fd239ed3189b">&#9670;&nbsp;</a></span>indices_to_values_one_based()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;T&gt; INTERACTIONS::indices_to_values_one_based </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>indices</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::set&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>values</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ac3396c8a8f1e7f174c79f689a82299eb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac3396c8a8f1e7f174c79f689a82299eb">&#9670;&nbsp;</a></span>inner_kernel()</h2>
 
@@ -1142,6 +1315,34 @@ template&lt;class DataT , class WeightOrIndexT , void(*)(DataT &amp;, float, Wei
           <td>(</td>
           <td class="paramtype">const unsigned char&#160;</td>
           <td class="paramname"><em>ns</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a82537842aef36929fa2e8534514cebc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82537842aef36929fa2e8534514cebc1">&#9670;&nbsp;</a></span>must_be_left_sorted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool INTERACTIONS::must_be_left_sorted </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>oi</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1286,16 +1487,18 @@ template&lt;bool Audit, typename KernelFuncT , typename AuditFuncT &gt; </div>
 
 </div>
 </div>
-<a id="ae8cd382cc96bcb221df2f5e45e337fe5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8cd382cc96bcb221df2f5e45e337fe5">&#9670;&nbsp;</a></span>sort_and_filter_duplicate_interactions()</h2>
+<a id="aa6742d5262651a76b4e8cc074641669c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6742d5262651a76b4e8cc074641669c">&#9670;&nbsp;</a></span>sort_and_filter_duplicate_interactions()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void INTERACTIONS::sort_and_filter_duplicate_interactions </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; std::vector&lt; <a class="el" href="example__predict_8h.html#a6bf681255e2fe98ef5dd75040110a62b">namespace_index</a> &gt;&gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; std::vector&lt; T &gt;&gt; &amp;&#160;</td>
           <td class="paramname"><em>vec</em>, </td>
         </tr>
         <tr>
@@ -1444,15 +1647,15 @@ template&lt;bool Audit, typename KernelFuncT , typename AuditFuncT &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">    <a class="code" href="namespaceINTERACTIONS.html#ab7057302d3be0589886a9176ed6de869">printable_end</a> - <a class="code" href="namespaceINTERACTIONS.html#ade187a9be6c80424795021d22c045441">printable_start</a> - 1</div><div class="ttc" id="namespaceINTERACTIONS_html_ab7057302d3be0589886a9176ed6de869"><div class="ttname"><a href="namespaceINTERACTIONS.html#ab7057302d3be0589886a9176ed6de869">INTERACTIONS::printable_end</a></div><div class="ttdeci">constexpr unsigned char printable_end</div><div class="ttdef"><b>Definition:</b> interactions.h:22</div></div>
-<div class="ttc" id="namespaceINTERACTIONS_html_ade187a9be6c80424795021d22c045441"><div class="ttname"><a href="namespaceINTERACTIONS.html#ade187a9be6c80424795021d22c045441">INTERACTIONS::printable_start</a></div><div class="ttdeci">constexpr unsigned char printable_start</div><div class="ttdef"><b>Definition:</b> interactions.h:21</div></div>
+<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">    <a class="code" href="namespaceINTERACTIONS.html#ab7057302d3be0589886a9176ed6de869">printable_end</a> - <a class="code" href="namespaceINTERACTIONS.html#ade187a9be6c80424795021d22c045441">printable_start</a> - 1</div><div class="ttc" id="namespaceINTERACTIONS_html_ab7057302d3be0589886a9176ed6de869"><div class="ttname"><a href="namespaceINTERACTIONS.html#ab7057302d3be0589886a9176ed6de869">INTERACTIONS::printable_end</a></div><div class="ttdeci">constexpr unsigned char printable_end</div><div class="ttdef"><b>Definition:</b> interactions.h:24</div></div>
+<div class="ttc" id="namespaceINTERACTIONS_html_ade187a9be6c80424795021d22c045441"><div class="ttname"><a href="namespaceINTERACTIONS.html#ade187a9be6c80424795021d22c045441">INTERACTIONS::printable_start</a></div><div class="ttdeci">constexpr unsigned char printable_start</div><div class="ttdef"><b>Definition:</b> interactions.h:23</div></div>
 </div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 16 2021 11:53:11 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 18 2021 15:28:10 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

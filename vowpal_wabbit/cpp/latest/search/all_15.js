@@ -23,6 +23,7 @@ var searchData=
   ['update_5fchamp',['update_champ',['../structVW_1_1automl_1_1config__manager.html#ac79da52b573b6cd18f96150bde89b2d8',1,'VW::automl::config_manager::update_champ()'],['../structVW_1_1automl_1_1interaction__config__manager.html#abeaf9300bfde82f87b9beab0c7f79fd7',1,'VW::automl::interaction_config_manager::update_champ()']]],
   ['update_5fcount',['update_count',['../structVW_1_1automl_1_1scored__config.html#a56406eeb486c7dda88853c4c662ef294',1,'VW::automl::scored_config']]],
   ['update_5fdump_5finterval',['update_dump_interval',['../structshared__data.html#a86dc26ad7249ba38f03f8a2c6f315f37',1,'shared_data']]],
+  ['update_5fextent_5finteractions_5fif_5fnew_5fnamespace_5fseen',['update_extent_interactions_if_new_namespace_seen',['../structINTERACTIONS_1_1interactions__generator.html#a0d482f7a88a4fee0edd97e58e9b897b9',1,'INTERACTIONS::interactions_generator']]],
   ['update_5ff',['update_f',['../structVW_1_1LEARNER_1_1learn__data.html#a756f38f0bee0f8ed57c327836add861b',1,'VW::LEARNER::learn_data']]],
   ['update_5finteractions_5fif_5fnew_5fnamespace_5fseen',['update_interactions_if_new_namespace_seen',['../structINTERACTIONS_1_1interactions__generator.html#af59d8af7d6da2b2ff884c4d4ecb73dd9',1,'INTERACTIONS::interactions_generator']]],
   ['updated_5fprediction',['updated_prediction',['../structexample.html#a86c4567ec3771465b2387bdfe83eb86c',1,'example']]],

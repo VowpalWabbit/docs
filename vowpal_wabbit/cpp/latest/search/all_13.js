@@ -171,7 +171,7 @@ var searchData=
   ['softmax',['softmax',['../namespacevw__slim.html#a8b7398db5b92b2538fdd8e6593b746b3ae23764ee317b5ffcbe4abd5d778474d6',1,'vw_slim']]],
   ['sort',['sort',['../structfeatures.html#ac1d0ea5e77002bab482dc38d62e7acdb',1,'features']]],
   ['sort_5faction_5fprobs',['sort_action_probs',['../namespaceVW_1_1cb__explore__adf.html#a9a7b608cba2aa775ba41ce214921428e',1,'VW::cb_explore_adf']]],
-  ['sort_5fand_5ffilter_5fduplicate_5finteractions',['sort_and_filter_duplicate_interactions',['../namespaceINTERACTIONS.html#ae8cd382cc96bcb221df2f5e45e337fe5',1,'INTERACTIONS']]],
+  ['sort_5fand_5ffilter_5fduplicate_5finteractions',['sort_and_filter_duplicate_interactions',['../namespaceINTERACTIONS.html#aa6742d5262651a76b4e8cc074641669c',1,'INTERACTIONS']]],
   ['sort_5fby_5fscores',['sort_by_scores',['../classvw__slim_1_1vw__predict.html#a348ee1567173bd55ca4c930540201596',1,'vw_slim::vw_predict']]],
   ['sort_5ffeatures',['sort_features',['../structparser.html#a5ae94d4ac8f7d070a13fa77800b73b49',1,'parser']]],
   ['sort_5finteractions_5fcomparator',['sort_interactions_comparator',['../namespaceINTERACTIONS.html#a991c5a05c6d343b974d3015f398c405e',1,'INTERACTIONS']]],
