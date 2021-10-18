@@ -220,7 +220,6 @@ var searchData=
   ['count_5flabel_2eh',['count_label.h',['../count__label_8h.html',1,'']]],
   ['count_5flabel_5fsetup',['count_label_setup',['../namespaceVW.html#a8013fe45918cccb9dbf6ed09cc5e5105',1,'VW']]],
   ['count_5fnon_5fzero_5fcost',['count_non_zero_cost',['../structVW_1_1cb__explore__adf_1_1cb__explore__metrics.html#aeac5d14dfc7aa32b3cca61dc81e14142',1,'VW::cb_explore_adf::cb_explore_metrics']]],
-  ['counts',['counts',['../structparser.html#af91f2a3bc35a0f226486f23071eb020e',1,'parser']]],
   ['create_5fbuffer_5fview',['create_buffer_view',['../namespaceVW_1_1io.html#a64fffb68e0d290a508476f0c8b160694',1,'VW::io']]],
   ['create_5fcustom_5fwriter',['create_custom_writer',['../namespaceVW_1_1io.html#a834593986bcfde6d6d1194953200c3e9',1,'VW::io']]],
   ['create_5fvector_5fwriter',['create_vector_writer',['../namespaceVW_1_1io.html#ae757f4f258f87ef5b1ceb012d3e356d2',1,'VW::io']]],

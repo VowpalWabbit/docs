@@ -11,7 +11,6 @@ var searchData=
   ['v_5farray_3c_20float_20_3e',['v_array&lt; float &gt;',['../structv__array.html',1,'']]],
   ['v_5farray_3c_20namespace_5findex_20_3e',['v_array&lt; namespace_index &gt;',['../structv__array.html',1,'']]],
   ['v_5farray_3c_20ptag_20_3e',['v_array&lt; ptag &gt;',['../structv__array.html',1,'']]],
-  ['v_5farray_3c_20size_5ft_20_3e',['v_array&lt; size_t &gt;',['../structv__array.html',1,'']]],
   ['v_5farray_3c_20t_2c_20typename_20std_3a_3aenable_5fif_3c_20std_3a_3ais_5ftrivially_5fcopyable_3c_20t_20_3e_3a_3avalue_20_3e_3a_3atype_20_3e',['v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;',['../structv__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_3_01T_01_4_1_1value_01_4_1_1type_01_4.html',1,'']]],
   ['v_5farray_3c_20uint32_5ft_20_3e',['v_array&lt; uint32_t &gt;',['../structv__array.html',1,'']]],
   ['v_5farray_3c_20vw_3a_3acb_5fcontinuous_3a_3acontinuous_5flabel_5felm_20_3e',['v_array&lt; VW::cb_continuous::continuous_label_elm &gt;',['../structv__array.html',1,'']]],

@@ -2,7 +2,6 @@ var searchData=
 [
   ['i',['i',['../unionexploration_1_1int__float.html#ad2bc6c4c956bde873b30883f1e1f73d3',1,'exploration::int_float']]],
   ['id',['id',['../structVW_1_1cats__tree_1_1tree__node.html#a61e16c2cc5da0df4b7060465ec4b9d46',1,'VW::cats_tree::tree_node::id()'],['../structvw.html#a7d0a3b6b38562a530f01e0b9162e3e83',1,'vw::id()'],['../structVW_1_1offset__tree_1_1tree__node.html#abdddece8c7416bbfae454d3a4af6d038',1,'VW::offset_tree::tree_node::id()']]],
-  ['ids',['ids',['../structparser.html#a2df792349ebce230daa93e1bc5eb6d48',1,'parser']]],
   ['ignore',['ignore',['../structvw.html#a9895838c15043709e1cde223565faee1',1,'vw']]],
   ['ignore_5flinear',['ignore_linear',['../structvw.html#a3226665740102aae098c592cc9c7b911',1,'vw']]],
   ['ignore_5fsome',['ignore_some',['../structvw.html#aba994529ae945261c57f218746c621df',1,'vw']]],
