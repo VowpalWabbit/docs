@@ -41,7 +41,7 @@ var searchData=
   ['topk_5fsetup',['topk_setup',['../topk_8h.html#a93b35383874d3e11bc2a11800c948b8d',1,'topk.h']]],
   ['total',['total',['../classAllReduce.html#a4ab695c1c631c3db42936d03733db9e0',1,'AllReduce']]],
   ['total_5ffeatures',['total_features',['../structshared__data.html#aaedd51e57f247fce49e552319c267253',1,'shared_data']]],
-  ['total_5flearn_5fcount',['total_learn_count',['../structVW_1_1automl_1_1interaction__config__manager.html#a294315f1d5097856446bd963292c0fe8',1,'VW::automl::interaction_config_manager']]],
+  ['total_5flearn_5fcount',['total_learn_count',['../structVW_1_1automl_1_1interaction__config__manager.html#a26f8184c3502cb46665053653ae323f3',1,'VW::automl::interaction_config_manager']]],
   ['total_5fsum_5ffeat_5fsq',['total_sum_feat_sq',['../structexample.html#ad434838ba5443d5f6b5529558d5c1a8c',1,'example::total_sum_feat_sq()'],['../structflat__example.html#aa233932b8fedfd4092068bee8779cd6a',1,'flat_example::total_sum_feat_sq()']]],
   ['trace',['trace',['../namespaceVW_1_1io_1_1logger.html#a727315522185c0fa2906718f6ac84928a04a75036e9d520bb983c5ed03b8d0182',1,'VW::io::logger']]],
   ['trace_5fmessage',['trace_message',['../structvw.html#af7f9a756371ddd4978d7ce33cb5e9a0a',1,'vw']]],

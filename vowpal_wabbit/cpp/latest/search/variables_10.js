@@ -44,7 +44,7 @@ var searchData=
   ['printable_5fend',['printable_end',['../namespaceINTERACTIONS.html#ab7057302d3be0589886a9176ed6de869',1,'INTERACTIONS']]],
   ['printable_5fns_5fsize',['printable_ns_size',['../namespaceINTERACTIONS.html#a7f87947f9c265befa67546371409c3f4',1,'INTERACTIONS']]],
   ['printable_5fstart',['printable_start',['../namespaceINTERACTIONS.html#ade187a9be6c80424795021d22c045441',1,'INTERACTIONS']]],
-  ['priority_5fchallengers',['priority_challengers',['../structVW_1_1automl_1_1interaction__config__manager.html#af5fc5493186a11e2679312129564ac4e',1,'VW::automl::interaction_config_manager']]],
+  ['priority_5fchallengers',['priority_challengers',['../structVW_1_1automl_1_1interaction__config__manager.html#a53918b6cb7e594780716775bb2401ddb',1,'VW::automl::interaction_config_manager']]],
   ['priv',['priv',['../structSearch_1_1search.html#a8e29701faa8a29f9ab75817000094dc8',1,'Search::search']]],
   ['prob',['prob',['../structpolyprediction.html#a5ae119a8dc2c7652b4c8568a424c7698',1,'polyprediction']]],
   ['probabilities',['probabilities',['../structCCB_1_1conditional__contextual__bandit__outcome.html#ac641f834f3dcf62b37e8013408a73fb5',1,'CCB::conditional_contextual_bandit_outcome::probabilities()'],['../structDecisionServiceInteraction.html#a2f21287e8b294ecb77353d00be37c981',1,'DecisionServiceInteraction::probabilities()'],['../structVW_1_1slates_1_1label.html#a21f6a4a34b19aa952b134bd01d06eaad',1,'VW::slates::label::probabilities()']]],

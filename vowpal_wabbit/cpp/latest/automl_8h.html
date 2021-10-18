@@ -76,14 +76,10 @@ $(function() {
 <div class="textblock"><code>#include &quot;<a class="el" href="rand__state_8h.html">rand_state.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="reductions__fwd_8h.html">reductions_fwd.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="distributionally__robust_8h.html">distributionally_robust.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="constant_8h.html">constant.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="metric__sink_8h.html">metric_sink.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="action__score_8h.html">action_score.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="debug__log_8h.html">debug_log.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="reductions_8h.html">reductions.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="learner_8h.html">learner.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="logger_8h.html">io/logger.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="vw_8h.html">vw.h</a>&quot;</code><br />
 <code>#include &lt;map&gt;</code><br />
 <code>#include &lt;set&gt;</code><br />
 <code>#include &lt;queue&gt;</code><br />
@@ -109,6 +105,8 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceVW_1_1automl_1_1details"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1automl_1_1details.html">VW::automl::details</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespaceVW_1_1model__utils"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1model__utils.html">VW::model_utils</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -116,8 +114,8 @@ Typedefs</h2></td></tr>
 <tr class="separator:a716d80c28387db516085735aec283f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84247259951b7bf65f9eedac5f14031d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1automl.html#a84247259951b7bf65f9eedac5f14031d">VW::automl::interaction_vec_t</a> = std::vector&lt; std::vector&lt; <a class="el" href="example__predict_8h.html#a6bf681255e2fe98ef5dd75040110a62b">namespace_index</a> &gt; &gt;</td></tr>
 <tr class="separator:a84247259951b7bf65f9eedac5f14031d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1253abdd209cdf201ee5ae3bd2e3063d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1automl.html#a1253abdd209cdf201ee5ae3bd2e3063d">VW::automl::priority_func</a> = float(const exclusion_config &amp;, const std::map&lt; <a class="el" href="example__predict_8h.html#a6bf681255e2fe98ef5dd75040110a62b">namespace_index</a>, size_t &gt; &amp;)</td></tr>
-<tr class="separator:a1253abdd209cdf201ee5ae3bd2e3063d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53f2a825a871aa7558f642b5fa69ba3a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1automl.html#a53f2a825a871aa7558f642b5fa69ba3a">VW::automl::priority_func</a> = float(const exclusion_config &amp;, const std::map&lt; <a class="el" href="example__predict_8h.html#a6bf681255e2fe98ef5dd75040110a62b">namespace_index</a>, uint64_t &gt; &amp;)</td></tr>
+<tr class="separator:a53f2a825a871aa7558f642b5fa69ba3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -138,18 +136,36 @@ Functions</h2></td></tr>
 <tr class="separator:a84e3ff65bcb03f398c790b721f7bf89a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28806c46d61e1bf4edee2b7dc53e32c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1automl_1_1details.html#a28806c46d61e1bf4edee2b7dc53e32c9">VW::automl::details::fail_if_enabled</a> (<a class="el" href="structvw.html">vw</a> &amp;, const std::set&lt; std::string &gt; &amp;)</td></tr>
 <tr class="separator:a28806c46d61e1bf4edee2b7dc53e32c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa150c35bd9efb471e9b16e826ef6288f"><td class="memTemplParams" colspan="2">template&lt;typename CMType &gt; </td></tr>
+<tr class="memitem:aa150c35bd9efb471e9b16e826ef6288f"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1model__utils.html#aa150c35bd9efb471e9b16e826ef6288f">VW::model_utils::write_model_field</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;, const <a class="el" href="structVW_1_1automl_1_1automl.html">VW::automl::automl</a>&lt; CMType &gt; &amp;, const std::string &amp;, bool)</td></tr>
+<tr class="separator:aa150c35bd9efb471e9b16e826ef6288f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8aeecc8f4a6d0f0a3e74bb3fda3e854"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1model__utils.html#ad8aeecc8f4a6d0f0a3e74bb3fda3e854">VW::model_utils::read_model_field</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;, <a class="el" href="structVW_1_1automl_1_1exclusion__config.html">VW::automl::exclusion_config</a> &amp;)</td></tr>
+<tr class="separator:ad8aeecc8f4a6d0f0a3e74bb3fda3e854"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace6a6877eb87b84ba5487bdf901c1507"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1model__utils.html#ace6a6877eb87b84ba5487bdf901c1507">VW::model_utils::read_model_field</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;, <a class="el" href="structVW_1_1automl_1_1scored__config.html">VW::automl::scored_config</a> &amp;)</td></tr>
+<tr class="separator:ace6a6877eb87b84ba5487bdf901c1507"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26a86c07b478867999429fe5817867e4"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1model__utils.html#a26a86c07b478867999429fe5817867e4">VW::model_utils::read_model_field</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;, <a class="el" href="structVW_1_1automl_1_1interaction__config__manager.html">VW::automl::interaction_config_manager</a> &amp;)</td></tr>
+<tr class="separator:a26a86c07b478867999429fe5817867e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90768e9eba9ed7e83f35a50983d3f38e"><td class="memTemplParams" colspan="2">template&lt;typename CMType &gt; </td></tr>
+<tr class="memitem:a90768e9eba9ed7e83f35a50983d3f38e"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1model__utils.html#a90768e9eba9ed7e83f35a50983d3f38e">VW::model_utils::read_model_field</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;, <a class="el" href="structVW_1_1automl_1_1automl.html">VW::automl::automl</a>&lt; CMType &gt; &amp;)</td></tr>
+<tr class="separator:a90768e9eba9ed7e83f35a50983d3f38e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84170b33a9c50e4de0b397e74f9f10ce"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1model__utils.html#a84170b33a9c50e4de0b397e74f9f10ce">VW::model_utils::write_model_field</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;, const <a class="el" href="structVW_1_1automl_1_1exclusion__config.html">VW::automl::exclusion_config</a> &amp;, const std::string &amp;, bool)</td></tr>
+<tr class="separator:a84170b33a9c50e4de0b397e74f9f10ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafb97739d22eabbd626fc54a191e3bb1"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1model__utils.html#aafb97739d22eabbd626fc54a191e3bb1">VW::model_utils::write_model_field</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;, const <a class="el" href="structVW_1_1automl_1_1scored__config.html">VW::automl::scored_config</a> &amp;, const std::string &amp;, bool)</td></tr>
+<tr class="separator:aafb97739d22eabbd626fc54a191e3bb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52913ea1ab546215b3ff8c7eb1daf138"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1model__utils.html#a52913ea1ab546215b3ff8c7eb1daf138">VW::model_utils::write_model_field</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;, const <a class="el" href="structVW_1_1automl_1_1interaction__config__manager.html">VW::automl::interaction_config_manager</a> &amp;, const std::string &amp;, bool)</td></tr>
+<tr class="separator:a52913ea1ab546215b3ff8c7eb1daf138"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a06ef03470ba03b4be83ec435c739a77e"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1automl.html#a06ef03470ba03b4be83ec435c739a77e">VW::automl::MAX_CONFIGS</a> = 10</td></tr>
-<tr class="separator:a06ef03470ba03b4be83ec435c739a77e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e9a8478ae0f5a52bc13a04a0f0cc728"><td class="memItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1automl.html#a7e9a8478ae0f5a52bc13a04a0f0cc728">VW::automl::CONGIGS_PER_CHAMP_CHANGE</a> = 5</td></tr>
-<tr class="separator:a7e9a8478ae0f5a52bc13a04a0f0cc728"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f8848e89d7f44473504d15276558e36"><td class="memItemLeft" align="right" valign="top">constexpr uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1automl.html#a5f8848e89d7f44473504d15276558e36">VW::automl::MAX_CONFIGS</a> = 10</td></tr>
+<tr class="separator:a5f8848e89d7f44473504d15276558e36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac178282b8641183a48a546201eb58fe1"><td class="memItemLeft" align="right" valign="top">constexpr uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1automl.html#ac178282b8641183a48a546201eb58fe1">VW::automl::CONGIGS_PER_CHAMP_CHANGE</a> = 5</td></tr>
+<tr class="separator:ac178282b8641183a48a546201eb58fe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 18 2021 17:16:30 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 18 2021 18:19:55 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

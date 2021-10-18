@@ -70,6 +70,10 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="io__buf_8h.html">io_buf.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="cache_8h.html">cache.h</a>&quot;</code><br />
+<code>#include &lt;set&gt;</code><br />
+<code>#include &lt;map&gt;</code><br />
+<code>#include &lt;queue&gt;</code><br />
 <code>#include &lt;fmt/format.h&gt;</code><br />
 <code>#include &lt;type_traits&gt;</code><br />
 </div><table class="memberdecls">
@@ -97,11 +101,41 @@ Functions</h2></td></tr>
 <tr class="memitem:a3fcd4db144e072738f63a8d43585f55d"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1model__utils.html#a3fcd4db144e072738f63a8d43585f55d">VW::model_utils::write_model_field</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;io, const T &amp;var, const std::string &amp;name_or_readable_field_template, bool text)</td></tr>
 <tr class="memdesc:a3fcd4db144e072738f63a8d43585f55d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is the uniform interface for serializing a variable to the model file. The value must be a POD type.  <a href="namespaceVW_1_1model__utils.html#a3fcd4db144e072738f63a8d43585f55d">More...</a><br /></td></tr>
 <tr class="separator:a3fcd4db144e072738f63a8d43585f55d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62fd1356d587b9c389fce46778684491"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a62fd1356d587b9c389fce46778684491"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1model__utils.html#a62fd1356d587b9c389fce46778684491">VW::model_utils::read_model_field</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;io, std::set&lt; T &gt; &amp;set)</td></tr>
+<tr class="separator:a62fd1356d587b9c389fce46778684491"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3725b08d133f7e5ac73fda59911399d5"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a3725b08d133f7e5ac73fda59911399d5"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1model__utils.html#a3725b08d133f7e5ac73fda59911399d5">VW::model_utils::write_model_field</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;io, const std::set&lt; T &gt; &amp;set, const std::string &amp;upstream_name, bool text)</td></tr>
+<tr class="separator:a3725b08d133f7e5ac73fda59911399d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08c35819101a9baf5e13d9153a3f7f13"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a08c35819101a9baf5e13d9153a3f7f13"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1model__utils.html#a08c35819101a9baf5e13d9153a3f7f13">VW::model_utils::read_model_field</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;io, std::vector&lt; T &gt; &amp;vec)</td></tr>
+<tr class="separator:a08c35819101a9baf5e13d9153a3f7f13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63b33f484e590dee32e292b72a672428"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a63b33f484e590dee32e292b72a672428"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1model__utils.html#a63b33f484e590dee32e292b72a672428">VW::model_utils::write_model_field</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;io, const std::vector&lt; T &gt; &amp;vec, const std::string &amp;upstream_name, bool text)</td></tr>
+<tr class="separator:a63b33f484e590dee32e292b72a672428"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ffef8255ca1e431223fe9a2175c8775"><td class="memTemplParams" colspan="2">template&lt;typename F , typename S &gt; </td></tr>
+<tr class="memitem:a5ffef8255ca1e431223fe9a2175c8775"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1model__utils.html#a5ffef8255ca1e431223fe9a2175c8775">VW::model_utils::read_model_field</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;io, std::pair&lt; F, S &gt; &amp;pair)</td></tr>
+<tr class="separator:a5ffef8255ca1e431223fe9a2175c8775"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1888b4534a99ea9f32942516ad7de9d"><td class="memTemplParams" colspan="2">template&lt;typename F , typename S &gt; </td></tr>
+<tr class="memitem:ae1888b4534a99ea9f32942516ad7de9d"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1model__utils.html#ae1888b4534a99ea9f32942516ad7de9d">VW::model_utils::write_model_field</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;io, const std::pair&lt; F, S &gt; &amp;pair, const std::string &amp;upstream_name, bool text)</td></tr>
+<tr class="separator:ae1888b4534a99ea9f32942516ad7de9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad804bf4cfb660d74878289dd42fef60d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ad804bf4cfb660d74878289dd42fef60d"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1model__utils.html#ad804bf4cfb660d74878289dd42fef60d">VW::model_utils::read_model_field</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;io, std::priority_queue&lt; T &gt; &amp;pq)</td></tr>
+<tr class="separator:ad804bf4cfb660d74878289dd42fef60d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9d74a8a343dbc8260c64ba59d385429"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:af9d74a8a343dbc8260c64ba59d385429"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1model__utils.html#af9d74a8a343dbc8260c64ba59d385429">VW::model_utils::write_model_field</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;io, const std::priority_queue&lt; T &gt; &amp;pq, const std::string &amp;upstream_name, bool text)</td></tr>
+<tr class="separator:af9d74a8a343dbc8260c64ba59d385429"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7999ab495d886668f1c1707c006fcb88"><td class="memTemplParams" colspan="2">template&lt;typename K , typename V &gt; </td></tr>
+<tr class="memitem:a7999ab495d886668f1c1707c006fcb88"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1model__utils.html#a7999ab495d886668f1c1707c006fcb88">VW::model_utils::read_model_field</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;io, std::map&lt; K, V &gt; &amp;map)</td></tr>
+<tr class="separator:a7999ab495d886668f1c1707c006fcb88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a701da8532e7c8d9ad8b2027b36db7ef0"><td class="memTemplParams" colspan="2">template&lt;typename K , typename V &gt; </td></tr>
+<tr class="memitem:a701da8532e7c8d9ad8b2027b36db7ef0"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1model__utils.html#a701da8532e7c8d9ad8b2027b36db7ef0">VW::model_utils::write_model_field</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;io, const std::map&lt; K, V &gt; &amp;map, const std::string &amp;upstream_name, bool text)</td></tr>
+<tr class="separator:a701da8532e7c8d9ad8b2027b36db7ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 18 2021 17:16:30 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 18 2021 18:19:55 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

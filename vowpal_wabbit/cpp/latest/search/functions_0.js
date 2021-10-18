@@ -34,7 +34,7 @@ var searchData=
   ['allreducethreads',['AllReduceThreads',['../classAllReduceThreads.html#a55bf6976a5fb1cd2dc036b2899c29a07',1,'AllReduceThreads::AllReduceThreads(AllReduceThreads *root, const size_t ptotal, const size_t pnode, bool quiet=false)'],['../classAllReduceThreads.html#a8cccbdd0a46a186fd867529aa0f6c491',1,'AllReduceThreads::AllReduceThreads(const size_t ptotal, const size_t pnode, bool quiet=false)']]],
   ['api_5fstatus',['api_status',['../classVW_1_1experimental_1_1api__status.html#a83460b76f47b7b76ee50d4c40e7f8826',1,'VW::experimental::api_status']]],
   ['append_5fempty_5fnewline_5fexample_5ffor_5fdriver',['append_empty_newline_example_for_driver',['../parse__example__json_8h.html#ae5c12b95e04e6d7dab74ca045d6f3e23',1,'parse_example_json.h']]],
-  ['apply_5fconfig',['apply_config',['../structVW_1_1automl_1_1config__manager.html#a685ca0990680e023af7892fa91b074e4',1,'VW::automl::config_manager::apply_config()'],['../structVW_1_1automl_1_1interaction__config__manager.html#a5904ccb7e79475985a6ad928338b9018',1,'VW::automl::interaction_config_manager::apply_config()']]],
+  ['apply_5fconfig',['apply_config',['../structVW_1_1automl_1_1config__manager.html#a6ba9f50e0f69a4847946225046ed1e19',1,'VW::automl::config_manager::apply_config()'],['../structVW_1_1automl_1_1interaction__config__manager.html#a6045d3a1b2003610450212e80a694ef5',1,'VW::automl::interaction_config_manager::apply_config()']]],
   ['apply_5fpdrop',['apply_pdrop',['../namespaceVW.html#aace75bd4d07be67406c615cb5e7c1315',1,'VW']]],
   ['are_5ffeatures_5fcompatible',['are_features_compatible',['../namespaceVW.html#a220e2434f6884967afd4ea2f8fc4e6d6',1,'VW']]],
   ['are_5fsame',['are_same',['../namespaceVW_1_1math.html#a5283b8fa4ef629eb885fce24d672cf07',1,'VW::math']]],

@@ -2,10 +2,10 @@ var searchData=
 [
   ['oaa_5fsetup',['oaa_setup',['../oaa_8h.html#ac06c5f00a8cb3a0679f9d0919207a97c',1,'oaa.h']]],
   ['object_5fpool',['object_pool',['../structVW_1_1object__pool.html#a120b97b4c9abae50db1790aaf8f03c13',1,'VW::object_pool::object_pool()=default'],['../structVW_1_1object__pool.html#acdcabd712940120db798ca9924edf5d7',1,'VW::object_pool::object_pool(size_t initial_chunk_size, TInitializer initializer={}, size_t chunk_size=8)']]],
-  ['offset_5flearn',['offset_learn',['../structVW_1_1automl_1_1automl.html#a7891a1440e01bd41f35cfd684f8c3803',1,'VW::automl::automl']]],
+  ['offset_5flearn',['offset_learn',['../structVW_1_1automl_1_1automl.html#a9955f1e55f493dbc21b6a0f37cc343f2',1,'VW::automl::automl']]],
   ['offset_5ftree',['offset_tree',['../structVW_1_1offset__tree_1_1offset__tree.html#acd1499471b62e6e344bb655b80e91e3a',1,'VW::offset_tree::offset_tree']]],
   ['ojanewton_5fsetup',['OjaNewton_setup',['../OjaNewton_8h.html#a7bd43042b8ed5586f11b3236c91105e6',1,'OjaNewton.h']]],
-  ['one_5fstep',['one_step',['../structVW_1_1automl_1_1automl.html#a48e721f6fa75166a485da229bf4a66ea',1,'VW::automl::automl']]],
+  ['one_5fstep',['one_step',['../structVW_1_1automl_1_1automl.html#ab2eb083375cc048d5e05428ffcb0628c',1,'VW::automl::automl']]],
   ['open_5fcompressed_5ffile_5freader',['open_compressed_file_reader',['../namespaceVW_1_1io.html#ae3d15f5cdf1ed5c88af05c93cdb7fd77',1,'VW::io']]],
   ['open_5fcompressed_5ffile_5fwriter',['open_compressed_file_writer',['../namespaceVW_1_1io.html#a6f3214e25b032ee68eec48ee13b0a7ab',1,'VW::io']]],
   ['open_5fcompressed_5fstdin',['open_compressed_stdin',['../namespaceVW_1_1io.html#a05d0037f027cd69bf16233ae94e3b7e7',1,'VW::io']]],
