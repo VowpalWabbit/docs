@@ -31,7 +31,6 @@ var searchData=
   ['prec_5fsince_5flast',['prec_since_last',['../structshared__data.html#ac412a11d8b5afa1ba7deb875ab89d244',1,'shared_data']]],
   ['pred',['pred',['../structexample.html#ad1477e890371ed8253f1953d4190ba49',1,'example::pred()'],['../structGD_1_1multipredict__info.html#a5a0e631eb4f37b7a521eecf037c3d9c9',1,'GD::multipredict_info::pred()']]],
   ['pred_5fscores',['pred_scores',['../structGEN__CS_1_1cb__to__cs.html#a82650b88bcf81698b14d707b3c4426c4',1,'GEN_CS::cb_to_cs::pred_scores()'],['../structGEN__CS_1_1cb__to__cs__adf.html#a2085ad7b75c0b0bf3971beeb6d298456',1,'GEN_CS::cb_to_cs_adf::pred_scores()']]],
-  ['pred_5ftype',['pred_type',['../structVW_1_1LEARNER_1_1learner.html#a2892afc61028b8c30af5c23087a643d2',1,'VW::LEARNER::learner']]],
   ['predict_5ff',['predict_f',['../structVW_1_1LEARNER_1_1learn__data.html#a83ad71e50cb514f592d016c24876429a',1,'VW::LEARNER::learn_data']]],
   ['predicted_5fclass',['predicted_class',['../structVW_1_1active__multiclass__prediction.html#ac2d89b36bfd8be92d0ebfd173180dc07',1,'VW::active_multiclass_prediction']]],
   ['preserve_5fperformance_5fcounters',['preserve_performance_counters',['../structvw.html#ac1c194273bff7969943f9ca78b5401e4',1,'vw']]],

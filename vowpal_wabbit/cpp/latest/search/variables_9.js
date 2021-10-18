@@ -36,6 +36,5 @@ var searchData=
   ['is_5fldf',['IS_LDF',['../namespaceSearch.html#a0cf0cfef46a3b6962d91d7de1ae67796',1,'Search']]],
   ['is_5fleaf',['is_leaf',['../structVW_1_1cats__tree_1_1tree__node.html#a31e3c49061ab5a2f7e421756d3519235',1,'VW::cats_tree::tree_node::is_leaf()'],['../structVW_1_1offset__tree_1_1tree__node.html#a8ce024e6040b5f3a8f3a28ac64f27b03',1,'VW::offset_tree::tree_node::is_leaf()']]],
   ['is_5fmore_5fthan_5ftwo_5flabels_5fobserved',['is_more_than_two_labels_observed',['../structshared__data.html#a959e85b4cdc13fa50902e95ab83cc7c9',1,'shared_data']]],
-  ['is_5fmultiline',['is_multiline',['../structVW_1_1LEARNER_1_1learner.html#a6d534bda509f1a10b361a2d6d5136c97',1,'VW::LEARNER::learner']]],
   ['is_5fnewline',['is_newline',['../structexample.html#a75d11aa16a7f43f453acd937343f8ec4',1,'example']]]
 ];
