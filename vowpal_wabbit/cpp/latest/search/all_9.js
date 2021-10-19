@@ -87,7 +87,7 @@ var searchData=
   ['is_5froot',['is_root',['../structVW_1_1cats__tree_1_1tree__node.html#ad501d5758aae3ae13ce47fcf2047f5ab',1,'VW::cats_tree::tree_node']]],
   ['is_5fscalar_5foption_5ftype',['is_scalar_option_type',['../structVW_1_1config_1_1is__scalar__impl_1_1is__scalar__option__type.html',1,'VW::config::is_scalar_impl::is_scalar_option_type&lt; T &gt;'],['../structVW_1_1config_1_1is__scalar__option__type.html',1,'VW::config::is_scalar_option_type&lt; T &gt;']]],
   ['is_5fscalar_5foption_5ftype_3c_20std_3a_3avector_3c_20args_2e_2e_2e_20_3e_20_3e',['is_scalar_option_type&lt; std::vector&lt; Args... &gt; &gt;',['../structVW_1_1config_1_1is__scalar__impl_1_1is__scalar__option__type_3_01std_1_1vector_3_01Args_8_8_8_01_4_01_4.html',1,'VW::config::is_scalar_impl']]],
-  ['is_5ftest_5flabel',['is_test_label',['../namespaceCB.html#a6b09080ebdf865ae595099ca93bca9e7',1,'CB']]],
+  ['is_5ftest_5flabel',['is_test_label',['../namespaceCB.html#a178fc5ebdc6874d05fd07f20d4fe74a3',1,'CB']]],
   ['is_5fvalid_5fpdf',['is_valid_pdf',['../namespaceVW_1_1continuous__actions.html#a4f1b699c90c2a0efb59a20b42707ef48',1,'VW::continuous_actions']]],
   ['is_5fvector',['is_vector',['../structVW_1_1config_1_1options__i_1_1is__vector.html',1,'VW::config::options_i']]],
   ['is_5fvector_3c_20std_3a_3avector_3c_20t_2c_20a_20_3e_20_3e',['is_vector&lt; std::vector&lt; T, A &gt; &gt;',['../structVW_1_1config_1_1options__i_1_1is__vector_3_01std_1_1vector_3_01T_00_01A_01_4_01_4.html',1,'VW::config::options_i']]],

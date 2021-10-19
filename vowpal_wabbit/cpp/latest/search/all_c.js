@@ -13,6 +13,7 @@ var searchData=
   ['label_5fobject_5fstate',['label_object_state',['../structContext.html#accb075644231b884ecab3d1301524c4b',1,'Context']]],
   ['label_5fparser',['label_parser',['../structlabel__parser.html',1,'']]],
   ['label_5fparser_2eh',['label_parser.h',['../label__parser_8h.html',1,'']]],
+  ['label_5fparser_5freuse_5fmem',['label_parser_reuse_mem',['../structVW_1_1label__parser__reuse__mem.html',1,'VW']]],
   ['label_5fsingle_5fproperty_5fstate',['label_single_property_state',['../structContext.html#a5ad5225510ed6a3d777c89f50ba72746',1,'Context']]],
   ['label_5fstate',['label_state',['../structContext.html#a3c166b5e671667715c4c7e673dfc9afb',1,'Context']]],
   ['label_5ft',['label_t',['../structMULTICLASS_1_1label__t.html',1,'MULTICLASS::label_t'],['../structMULTICLASS_1_1label__t.html#ae24e23fa59cb45930453c489775440e8',1,'MULTICLASS::label_t::label_t()'],['../structMULTICLASS_1_1label__t.html#a728eea156aa3040188f110903658dbf4',1,'MULTICLASS::label_t::label_t(uint32_t label, float weight)']]],

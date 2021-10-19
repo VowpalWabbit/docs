@@ -2,10 +2,10 @@ var searchData=
 [
   ['parent',['parent',['../structnode__socks.html#a9107491c00d5f397f28b1bcf50093704',1,'node_socks']]],
   ['parent_5fid',['parent_id',['../structVW_1_1cats__tree_1_1tree__node.html#ab9afc293f9774abc9205c5b0f2cda56b',1,'VW::cats_tree::tree_node::parent_id()'],['../structVW_1_1offset__tree_1_1tree__node.html#a001698e8429ceada3da690bfb37cb1b8',1,'VW::offset_tree::tree_node::parent_id()']]],
-  ['parse_5flabel',['parse_label',['../structlabel__parser.html#aeb67a55ecef37e7a62a33b0a298b4b98',1,'label_parser']]],
+  ['parse_5flabel',['parse_label',['../structlabel__parser.html#a76f0e241e6393827093809800f69aa87',1,'label_parser']]],
   ['parse_5fmask',['parse_mask',['../structvw.html#a1341f90722fcded4ecfd77030b8195a8',1,'vw']]],
-  ['parse_5fname',['parse_name',['../structparser.html#ac01dcb8e54f82d474306ad261ca049a9',1,'parser']]],
   ['parse_5fthread',['parse_thread',['../structvw.html#ab418994767bf1cd59751236abb690ccb',1,'vw']]],
+  ['parser_5fmemory_5fto_5freuse',['parser_memory_to_reuse',['../structparser.html#a09703a07c41f669a8cdd3ecf29e986ae',1,'parser']]],
   ['partial_5fprediction',['partial_prediction',['../structCB_1_1cb__class.html#ae34e712b9e45423e3b92bc9c340e8908',1,'CB::cb_class::partial_prediction()'],['../structCOST__SENSITIVE_1_1wclass.html#ada5dfb9c23fce4f1e76e6920b2490be5',1,'COST_SENSITIVE::wclass::partial_prediction()'],['../structexample.html#a3e4e427253321a8867a27827a3dd59c1',1,'example::partial_prediction()']]],
   ['pass_5flength',['pass_length',['../structvw.html#a5d00a4e6cc866eb34fed3d6ee6fa07bb',1,'vw']]],
   ['passes_5fcomplete',['passes_complete',['../structvw.html#ac89895b3c3071cc384cda7902e2c0710',1,'vw']]],

@@ -40,7 +40,7 @@ var searchData=
   ['is_5fresettable',['is_resettable',['../structVW_1_1io_1_1reader.html#a11a6f3236d294b5f2931894e1d9078fe',1,'VW::io::reader::is_resettable()'],['../classio__buf.html#a3c1e57f6419e84157b978f542c8e5c6e',1,'io_buf::is_resettable()']]],
   ['is_5fring_5fexample',['is_ring_example',['../namespaceVW.html#a380c2368b3bb8a0f08eeb7c0177e9348',1,'VW']]],
   ['is_5froot',['is_root',['../structVW_1_1cats__tree_1_1tree__node.html#ad501d5758aae3ae13ce47fcf2047f5ab',1,'VW::cats_tree::tree_node']]],
-  ['is_5ftest_5flabel',['is_test_label',['../namespaceCB.html#a6b09080ebdf865ae595099ca93bca9e7',1,'CB']]],
+  ['is_5ftest_5flabel',['is_test_label',['../namespaceCB.html#a178fc5ebdc6874d05fd07f20d4fe74a3',1,'CB']]],
   ['is_5fvalid_5fpdf',['is_valid_pdf',['../namespaceVW_1_1continuous__actions.html#a4f1b699c90c2a0efb59a20b42707ef48',1,'VW::continuous_actions']]],
   ['isbinary',['isbinary',['../classio__buf.html#a1974dd5257eaa530030fc59cce0589be',1,'io_buf']]],
   ['isvalid',['isValid',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#a808e770995c7355b648a944b5fb730bd',1,'VW::distributionally_robust::ChiSquared']]],

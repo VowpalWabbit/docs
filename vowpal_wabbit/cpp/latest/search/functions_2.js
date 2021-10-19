@@ -1,8 +1,8 @@
 var searchData=
 [
   ['cache_5ffeatures',['cache_features',['../cache_8h.html#a442df23fec457c355f2c1d17b4960eed',1,'cache.h']]],
-  ['cache_5flabel',['cache_label',['../namespaceCB.html#a68d67c7f5301de9f3ca35d3e58c3fa94',1,'CB::cache_label()'],['../namespaceCCB.html#a1eb4843badbf4cc3ebc62da94db58ea8',1,'CCB::cache_label()'],['../namespaceVW_1_1slates.html#a7122b0230db21b0dfdf8265fa71355b8',1,'VW::slates::cache_label()']]],
-  ['cache_5flabel_5fadditional_5ffields',['cache_label_additional_fields',['../namespaceCB.html#a4aaaad481a9436890af96d68205a2de0',1,'CB']]],
+  ['cache_5flabel',['cache_label',['../namespaceCB.html#a3c91cb68d1d5097ba5bbc6de350cc9b6',1,'CB::cache_label()'],['../namespaceCCB.html#a910c18b0b2bfd99da1b6e1d22b1bff0b',1,'CCB::cache_label()'],['../namespaceVW_1_1slates.html#abba7be4b96b63bd9ef58fee86ff7507f',1,'VW::slates::cache_label()']]],
+  ['cache_5flabel_5fadditional_5ffields',['cache_label_additional_fields',['../namespaceCB.html#a9863103086946a66da27667065f3e07e',1,'CB']]],
   ['cache_5ftag',['cache_tag',['../cache_8h.html#a240768c48f05af593153264363e1019d',1,'cache.h']]],
   ['cached_5flearner',['cached_learner',['../structVW_1_1cached__learner.html#a77469cf8d15648287247e3d8eb623b3f',1,'VW::cached_learner::cached_learner(VW::LEARNER::base_learner *learner=nullptr)'],['../structVW_1_1cached__learner.html#aafd176494e5154aa4b16e91d05249be5',1,'VW::cached_learner::cached_learner(vw &amp;all, VW::config::options_i &amp;options, VW::LEARNER::base_learner *learner=nullptr)']]],
   ['calculate_5ftotal_5fsum_5ffeatures_5fsquared',['calculate_total_sum_features_squared',['../example_8h.html#a7e51cf08517951ccb1600f1264b5d8c1',1,'example.h']]],
