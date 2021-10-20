@@ -95,6 +95,7 @@ var searchData=
   ['get_5foptions',['get_options',['../structVW_1_1cached__learner.html#a55ae573432aceb5d894874fc0f5fc3bf',1,'VW::cached_learner::get_options()'],['../structVW_1_1default__reduction__stack__setup.html#a282811a80175e781010df671961773d9',1,'VW::default_reduction_stack_setup::get_options()'],['../structVW_1_1setup__base__i.html#a8a30931eb3af0ddaa097792542b22701',1,'VW::setup_base_i::get_options()']]],
   ['get_5foutput_5ffiles',['get_output_files',['../classio__buf.html#acea29f17983f2a999feb815fbcc68df0',1,'io_buf']]],
   ['get_5foutput_5fprediction_5ftype',['get_output_prediction_type',['../structVW_1_1LEARNER_1_1learner.html#a42f9f9efcd320b55b3ed88ed1ffb24a8',1,'VW::LEARNER::learner']]],
+  ['get_5fpid',['get_pid',['../namespaceVW.html#a33ca5617f73211fc230cb29051046d0c',1,'VW']]],
   ['get_5fpmf',['get_pmf',['../structvw__dbg.html#ad0e139fefdac9d085c5dd353d884f7c9',1,'vw_dbg']]],
   ['get_5fpmf_2eh',['get_pmf.h',['../get__pmf_8h.html',1,'']]],
   ['get_5fpmf_5fsetup',['get_pmf_setup',['../namespaceVW_1_1continuous__action.html#aa7a5ad56502a68a1845afa0018f01bd1',1,'VW::continuous_action']]],
