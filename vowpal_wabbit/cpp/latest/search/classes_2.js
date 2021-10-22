@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['cache_5ftemp_5fbuffer',['cache_temp_buffer',['../structVW_1_1details_1_1cache__temp__buffer.html',1,'VW::details']]],
   ['cached_5flearner',['cached_learner',['../structVW_1_1cached__learner.html',1,'VW']]],
   ['cats',['cats',['../structVW_1_1continuous__action_1_1cats_1_1cats.html',1,'VW::continuous_action::cats']]],
   ['cats_5ftree',['cats_tree',['../structVW_1_1cats__tree_1_1cats__tree.html',1,'VW::cats_tree']]],

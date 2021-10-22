@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['_5fbacking_5fbuffer',['_backing_buffer',['../structVW_1_1details_1_1cache__temp__buffer.html#a6bc6741107af3702b3ded999ee6ce822',1,'VW::details::cache_temp_buffer']]],
+  ['_5fcache_5ftemp_5fbuffer',['_cache_temp_buffer',['../structparser.html#afa8555ea9b1fe7fb9f00a9e0a9b185d1',1,'parser']]],
   ['_5fdebug_5fcurrent_5freduction_5fdepth',['_debug_current_reduction_depth',['../structexample__predict.html#a517057277daf4f3fa6907161a59e1111',1,'example_predict']]],
   ['_5fdefault_5flogger',['_default_logger',['../namespaceVW_1_1io_1_1logger_1_1detail.html#a99138fd4e89a4e8509494ff26adeba5d',1,'VW::io::logger::detail']]],
   ['_5ffinal_5frun',['_final_run',['../classSearch_1_1BaseTask.html#a1789338f2860d67101b8ecbb694b18b7',1,'Search::BaseTask']]],
@@ -19,6 +21,7 @@ var searchData=
   ['_5freduction_5ffeatures',['_reduction_features',['../structflat__example.html#a2c6614f006682543680da155c6e665c4',1,'flat_example::_reduction_features()'],['../structexample__predict.html#a196aefa0f742cb3bce1456bf18ca3be0',1,'example_predict::_reduction_features()']]],
   ['_5fshared_5fdata',['_shared_data',['../structactive.html#a1666e66196216a67dc0515b01411f3b4',1,'active::_shared_data()'],['../structparser.html#a29f98b675dc11176078222fccd8afeeb',1,'parser::_shared_data()']]],
   ['_5fstderr_5flogger',['_stderr_logger',['../namespaceVW_1_1io_1_1logger_1_1detail.html#aea449437c4fabc79d35adb1924eafc1e',1,'VW::io::logger::detail']]],
+  ['_5ftemporary_5fcache_5fbuffer',['_temporary_cache_buffer',['../structVW_1_1details_1_1cache__temp__buffer.html#a66852b16aa6f98874889ea4a8ec35799',1,'VW::details::cache_temp_buffer']]],
   ['_5ftrace_5fmessage',['_trace_message',['../structtrace__message__wrapper.html#a84c304d2df916c59062e121c81cc4dec',1,'trace_message_wrapper']]],
   ['_5fval1',['_val1',['../classvw__slim_1_1internal_1_1location__value.html#a3df29a7f09a252e114dd3c957ac14cf2',1,'vw_slim::internal::location_value']]],
   ['_5fval2',['_val2',['../classvw__slim_1_1internal_1_1location__value.html#ae732ca3bc027ec913f8af0343ec06efb',1,'vw_slim::internal::location_value']]],
