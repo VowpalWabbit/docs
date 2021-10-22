@@ -219,7 +219,6 @@ var searchData=
   ['string_5fcpy',['string_cpy',['../namespaceVW.html#a50f7538dd71dc0487f0160a1cbe1777d',1,'VW']]],
   ['string_5fstate',['string_state',['../structContext.html#aa03736d125379efe8aac2577009be492',1,'Context']]],
   ['string_5fview',['string_view',['../namespaceVW.html#a85aa9dc51ef86f7e832147b1c0c93d72',1,'VW']]],
-  ['stringfeatures',['StringFeatures',['../parse__example_8h.html#a6f1d7d9072a105050bdca31b9bbc576ea0f24f5c8020b79523bb39b0cbd8f2db5',1,'parse_example.h']]],
   ['stringtostringstate',['StringToStringState',['../classStringToStringState.html',1,'StringToStringState&lt; audit &gt;'],['../classStringToStringState.html#aaf9a240fe01ccc959897bab169312f4a',1,'StringToStringState::StringToStringState()']]],
   ['strtok_5fs',['strtok_s',['../crossplat__compat_8h.html#a832190fda79639e68038e8a2c0e2df02',1,'crossplat_compat.h']]],
   ['substring_5fto_5fexample',['substring_to_example',['../parse__example_8h.html#a208663c015926c985ea305eb5f41166c',1,'parse_example.h']]],
