@@ -62,6 +62,7 @@ var searchData=
   ['get_5finput_5flabel_5ftype',['get_input_label_type',['../structVW_1_1LEARNER_1_1learner.html#a09b8063109e374c443946ec1cbc46008',1,'VW::LEARNER::learner']]],
   ['get_5finternal_5ftype_5ferased_5fdata_5fpointer_5ftest_5fuse_5fonly',['get_internal_type_erased_data_pointer_test_use_only',['../structVW_1_1LEARNER_1_1learner.html#a5770acb264e2cd046e5cb443948e2766',1,'VW::LEARNER::learner']]],
   ['get_5flabel',['get_label',['../namespaceVW.html#ac598ec704e49cc16593464708fd58fd3',1,'VW']]],
+  ['get_5flabel_5fparser',['get_label_parser',['../namespaceVW.html#a71870200689a779f9792b179e01f4ab0',1,'VW']]],
   ['get_5flearner_5fby_5fname_5fprefix',['get_learner_by_name_prefix',['../structVW_1_1LEARNER_1_1learner.html#aeb8ea4f5d1783c4aacb6b4c1f40af46f',1,'VW::LEARNER::learner']]],
   ['get_5flog_5fcount',['get_log_count',['../namespaceVW_1_1io_1_1logger.html#a4874fd35725191462a293d6f5e9f7cd4',1,'VW::io::logger']]],
   ['get_5floss',['get_loss',['../structVW_1_1continuous__action_1_1cats_1_1cats.html#a005e83349e0348702cbcaa189cdd104c',1,'VW::continuous_action::cats::cats']]],
