@@ -48,6 +48,7 @@ var searchData=
   ['metric_5fpredict_5fin_5flearn',['metric_predict_in_learn',['../structVW_1_1cb__explore__adf_1_1cb__explore__metrics.html#afcc8e7a3780f653b74f1fcad0e1b8507',1,'VW::cb_explore_adf::cb_explore_metrics']]],
   ['metric_5fsink',['metric_sink',['../structVW_1_1metric__sink.html',1,'VW']]],
   ['metric_5fsink_2eh',['metric_sink.h',['../metric__sink_8h.html',1,'']]],
+  ['metric_5fsink_5fvisitor',['metric_sink_visitor',['../structVW_1_1metric__sink__visitor.html',1,'VW']]],
   ['metric_5fsum_5fcost',['metric_sum_cost',['../structVW_1_1cb__explore__adf_1_1cb__explore__metrics.html#a78d16a74d792bce64aa16b20f1a77aac',1,'VW::cb_explore_adf::cb_explore_metrics']]],
   ['metric_5fsum_5fcost_5ffirst',['metric_sum_cost_first',['../structVW_1_1cb__explore__adf_1_1cb__explore__metrics.html#a2d6caf5ea8146ef00130ddc99ca84970',1,'VW::cb_explore_adf::cb_explore_metrics']]],
   ['metrics',['metrics',['../structparser.html#ae97c6006e9009ad07071c0bce5769c4e',1,'parser']]],

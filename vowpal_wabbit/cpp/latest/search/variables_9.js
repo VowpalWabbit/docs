@@ -24,7 +24,6 @@ var searchData=
   ['initial_5fweight',['initial_weight',['../structvw.html#a9526629e8291b90aab9aff51424ecfc5',1,'vw']]],
   ['initialize',['initialize',['../structSearch_1_1search__task.html#a9853405a85b5a1371f97e690c19416cd',1,'Search::search_task::initialize()'],['../structSearch_1_1search__metatask.html#a55f458263b052a399467df48f0b58930',1,'Search::search_metatask::initialize()']]],
   ['input',['input',['../structparser.html#a879fafa20463b21873abf1945c17f493',1,'parser']]],
-  ['int_5fmetrics_5flist',['int_metrics_list',['../structVW_1_1metric__sink.html#aeb1c11432996dfef7f62728e9074fec1',1,'VW::metric_sink']]],
   ['interactions',['interactions',['../structexample__predict.html#afb676d8f3ba9052d93b865610e44bb90',1,'example_predict::interactions()'],['../structvw.html#a2faf990a8db6c15b4d80beaa68b7fee2',1,'vw::interactions()'],['../classSlotOutcomeList.html#a0fc1f14e08b16bdb49a5304f6e0d2baa',1,'SlotOutcomeList::interactions()']]],
   ['inv_5fhash_5fregressor_5fname',['inv_hash_regressor_name',['../structvw.html#a85bc04c8d332d8c2933e798375db1af3',1,'vw']]],
   ['invalid_5fvw_5fexample',['INVALID_VW_EXAMPLE',['../vwdll_8h.html#ab50a2eeb73e146706e28920d92929ed9',1,'vwdll.h']]],

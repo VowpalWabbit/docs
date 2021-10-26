@@ -18,7 +18,6 @@ var searchData=
   ['firsteventid',['FirstEventId',['../structdsjson__metrics.html#aedd286efa64705da90ec179ca47c3fb9',1,'dsjson_metrics']]],
   ['firsteventtime',['FirstEventTime',['../structdsjson__metrics.html#a207dae03fd7cbda8161715b749a88fcc',1,'dsjson_metrics']]],
   ['flatbuffer',['flatbuffer',['../structinput__options.html#af68756d6cbe80559c98b31ea167a3566',1,'input_options']]],
-  ['float_5fmetrics_5flist',['float_metrics_list',['../structVW_1_1metric__sink.html#a9c88f329f288399a777c5d76ef86fd1a',1,'VW::metric_sink']]],
   ['float_5fstate',['float_state',['../structContext.html#a96aa41c0ab1a401932ae2c999b465af0',1,'Context']]],
   ['fnv_5fprime',['FNV_prime',['../constant_8h.html#a7fa06e2bcb0551d4d612dbcc7871a919',1,'constant.h']]],
   ['foreground',['foreground',['../structinput__options.html#afb36dd3a1f5b147b90624c83943bd675',1,'input_options']]],

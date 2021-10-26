@@ -15,6 +15,7 @@ var searchData=
   ['verify_5fhash',['verify_hash',['../classio__buf.html#aa0e2aa6f7e2c7c4c5d268b842a727275',1,'io_buf']]],
   ['version',['version',['../namespaceVW.html#a1a26c5125e2b6aa1902d5c7a3fccf888',1,'VW']]],
   ['version_5fstruct',['version_struct',['../structVW_1_1version__struct.html#ace4269b259846532bc32d90fe430d6af',1,'VW::version_struct::version_struct(int maj=0, int min=0, int rv=0)'],['../structVW_1_1version__struct.html#ae1b252a01d68084e2d7a8ea3f2778dae',1,'VW::version_struct::version_struct(const char *v_str)'],['../structVW_1_1version__struct.html#a223dc0f5a529f06a8ff2041a7c830dec',1,'VW::version_struct::version_struct(const version_struct &amp;other)=default'],['../structVW_1_1version__struct.html#a0b2c20a8707d1e42e81a0bf1f04df7fb',1,'VW::version_struct::version_struct(version_struct &amp;&amp;other) noexcept=default']]],
+  ['visit',['visit',['../structVW_1_1metric__sink.html#a386d1ac84defeb04f9609ed045c0c627',1,'VW::metric_sink']]],
   ['vw',['vw',['../structvw.html#a67691c9ee16e498df1c0a010d80b9ef3',1,'vw::vw()'],['../structvw.html#a03694244fb6d51cdf2991de1a3cda53a',1,'vw::vw(const vw &amp;)=delete'],['../structvw.html#aafec6b84e96a9821ce817c46d9a6cf34',1,'vw::vw(const vw &amp;&amp;)=delete']]],
   ['vw_5faddlabel',['VW_AddLabel',['../vwdll_8h.html#aaaedef4cf9645cabbf1216bb5244b1b2',1,'vwdll.h']]],
   ['vw_5faddstringlabel',['VW_AddStringLabel',['../vwdll_8h.html#a17a2ce7c5316f14f5e93578423547839',1,'vwdll.h']]],

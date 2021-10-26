@@ -46,6 +46,7 @@ var searchData=
   ['binary_5fprint_5fresult_5fby_5fref',['binary_print_result_by_ref',['../global__data_8h.html#a07600c7dfa8e52c7741daa1d80607abf',1,'global_data.h']]],
   ['binary_5fsetup',['binary_setup',['../namespaceVW_1_1binary.html#abf019e0e8ba229829b2ebd23a90ba820',1,'VW::binary']]],
   ['bool',['Bool',['../structBaseState.html#a9ccff8ff7ccb1612a47d75c39c84c924',1,'BaseState::Bool()'],['../classDefaultState.html#a7bb350ead38a4e1b9cbbfd62fa1b6222',1,'DefaultState::Bool()'],['../classBoolToBoolState.html#aa8099fe4578f7eaf665edf962f84d128',1,'BoolToBoolState::Bool()'],['../structVWReaderHandler.html#affe64a99b2e524d4c97f9950c1dc0091',1,'VWReaderHandler::Bool()']]],
+  ['bool_5fmetric',['bool_metric',['../structVW_1_1metric__sink__visitor.html#a797a83c1203a2d66d9716df0965c7567',1,'VW::metric_sink_visitor']]],
   ['bool_5fstate',['bool_state',['../structContext.html#a0dda584309012bded089bb76d8a5be5d',1,'Context']]],
   ['booltoboolstate',['BoolToBoolState',['../classBoolToBoolState.html',1,'BoolToBoolState&lt; audit &gt;'],['../classBoolToBoolState.html#a2e2d0f085308b87591abd89caca0cbb1',1,'BoolToBoolState::BoolToBoolState()']]],
   ['boosting_2eh',['boosting.h',['../boosting_8h.html',1,'']]],

@@ -23,6 +23,7 @@ var searchData=
   ['insert_5farguments',['insert_arguments',['../structVW_1_1config_1_1options__i.html#aa952f0d4022ec3c849043d15ce047695',1,'VW::config::options_i']]],
   ['int',['Int',['../structVWReaderHandler.html#acff99671bc9ef886b71cc00a09741d45',1,'VWReaderHandler']]],
   ['int64',['Int64',['../structVWReaderHandler.html#aee6696771d323ac1e6500738a027fffb',1,'VWReaderHandler']]],
+  ['int_5fmetric',['int_metric',['../structVW_1_1metric__sink__visitor.html#a276be1447438c81daeaa8c794829becd',1,'VW::metric_sink_visitor']]],
   ['int_5fof_5fstring',['int_of_string',['../parse__primitives_8h.html#a0187acdae19e69c4ef85cb5eb7bb9fa0',1,'int_of_string(VW::string_view s, char *&amp;end):&#160;parse_primitives.h'],['../parse__primitives_8h.html#a87d4af59fea5bc25b64dd3c854ff4d25',1,'int_of_string(VW::string_view s):&#160;parse_primitives.h']]],
   ['interact_5fsetup',['interact_setup',['../interact_8h.html#a1d996ac70254ddd216cc37e175e36e33',1,'interact.h']]],
   ['interaction_5fconfig_5fmanager',['interaction_config_manager',['../structVW_1_1automl_1_1interaction__config__manager.html#a36a465c1b6741239d2d73008917bc16f',1,'VW::automl::interaction_config_manager']]],
