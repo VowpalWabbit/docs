@@ -9,7 +9,7 @@ var searchData=
   ['read_5fcached_5flabel',['read_cached_label',['../namespaceCB.html#a6cc59aafe0b79cb420ce034b02e6f587',1,'CB::read_cached_label()'],['../namespaceCCB.html#a2901c083781ff5ea1326bfb08eb36ab3',1,'CCB::read_cached_label()'],['../namespaceVW_1_1slates.html#a8c776dff89faa8743ac8b8bcd616beb0',1,'VW::slates::read_cached_label()']]],
   ['read_5fcached_5flabel_5fadditional_5ffields',['read_cached_label_additional_fields',['../namespaceCB.html#acbf7b4dd9d0702134c4ab128f2eef0e1',1,'CB']]],
   ['read_5fexample',['read_example',['../namespaceVW.html#a6048cdc3ae2d936b9955888f697e3a34',1,'VW::read_example(vw &amp;all, const char *example_line)'],['../namespaceVW.html#a35bb7ed97a2451c2f667e718c50845a8',1,'VW::read_example(vw &amp;all, const std::string &amp;example_line)']]],
-  ['read_5fexample_5ffrom_5fcache',['read_example_from_cache',['../namespaceVW.html#ab0201754ba125807acabe528e66518b7',1,'VW']]],
+  ['read_5fexample_5ffrom_5fcache',['read_example_from_cache',['../namespaceVW.html#aac2d36339299caa1f11e577ec798fc79',1,'VW']]],
   ['read_5ffeatures',['read_features',['../parse__example_8h.html#a1e2e650affd3600ddebec3d8cf6e0e7a',1,'parse_example.h']]],
   ['read_5ffeatures_5fjson',['read_features_json',['../parse__example__json_8h.html#a65edbb7acde4eb6a1ac114cbde2ae5cf',1,'parse_example_json.h']]],
   ['read_5ffeatures_5fstring',['read_features_string',['../parse__example_8h.html#a705946173b529ab71ac4a6524520b5a3',1,'parse_example.h']]],
