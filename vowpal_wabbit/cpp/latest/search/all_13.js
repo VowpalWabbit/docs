@@ -14,6 +14,7 @@ var searchData=
   ['save_5fload_5fdata',['save_load_data',['../structVW_1_1LEARNER_1_1save__load__data.html',1,'VW::LEARNER']]],
   ['save_5fload_5ff',['save_load_f',['../structVW_1_1LEARNER_1_1save__load__data.html#ac5cf5313f0395898c19bcc29ade84b58',1,'VW::LEARNER::save_load_data']]],
   ['save_5fload_5fheader',['save_load_header',['../parse__regressor_8h.html#aa357fe1fc108b17aab0e4e99f4ec83fa',1,'parse_regressor.h']]],
+  ['save_5fload_5fmodel_5fexception',['save_load_model_exception',['../classVW_1_1save__load__model__exception.html',1,'VW::save_load_model_exception'],['../classVW_1_1save__load__model__exception.html#aaffd2d39e3c389ecd1618843a0399136',1,'VW::save_load_model_exception::save_load_model_exception(const char *file, int lineNumber, const std::string &amp;message)'],['../classVW_1_1save__load__model__exception.html#abf11dfa9c0972c70be0a4bef45a9bbf3',1,'VW::save_load_model_exception::save_load_model_exception(const save_load_model_exception &amp;ex)=default'],['../classVW_1_1save__load__model__exception.html#ab87a42b1c2c35fd8234f6c905b7c34ef',1,'VW::save_load_model_exception::save_load_model_exception(save_load_model_exception &amp;&amp;ex)=default']]],
   ['save_5fload_5fonline_5fstate',['save_load_online_state',['../namespaceGD.html#a547633dd0ee57936c5b05e5dd7a9c679',1,'GD']]],
   ['save_5fload_5fregressor',['save_load_regressor',['../namespaceGD.html#ab93e1d0f0e09083fe80c44bee9821367',1,'GD']]],
   ['save_5fmetric_5fdata',['save_metric_data',['../structVW_1_1LEARNER_1_1save__metric__data.html',1,'VW::LEARNER']]],

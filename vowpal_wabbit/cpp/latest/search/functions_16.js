@@ -24,6 +24,7 @@ var searchData=
   ['_7epattern_5fguard',['~pattern_guard',['../classVW_1_1io_1_1logger_1_1pattern__guard.html#a25c15cfb8781a11fc9f8364441100a6c',1,'VW::io::logger::pattern_guard']]],
   ['_7epolyprediction',['~polyprediction',['../structpolyprediction.html#ac5e2b0323b947d57bac304efe12fca6a',1,'polyprediction']]],
   ['_7ereader',['~reader',['../structVW_1_1io_1_1reader.html#acb42a09f82bb5363bb7518d459288128',1,'VW::io::reader']]],
+  ['_7esave_5fload_5fmodel_5fexception',['~save_load_model_exception',['../classVW_1_1save__load__model__exception.html#ac0b585d6283a8659dfad06cb86ddb073',1,'VW::save_load_model_exception']]],
   ['_7escope_5fexit_5fcaller',['~scope_exit_caller',['../classVW_1_1details_1_1scope__exit__caller.html#a4094efdd6be34a5adfdf11a3bc79b996',1,'VW::details::scope_exit_caller']]],
   ['_7esearch',['~search',['../structSearch_1_1search.html#a94474ae1eae14f20a678ecdca7ff20aa',1,'Search::search']]],
   ['_7esetup_5fbase_5fi',['~setup_base_i',['../structVW_1_1setup__base__i.html#a77470d2254f711c05ae417dc2d75ee03',1,'VW::setup_base_i']]],
