@@ -1,7 +1,7 @@
 var searchData=
 [
   ['back',['back',['../structv__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_3_01T_01_4_1_1value_01_4_1_1type_01_4.html#acd0b579691de6d7a9551294260b9535a',1,'v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;::back()'],['../structv__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_3_01T_01_4_1_1value_01_4_1_1type_01_4.html#aa2b05aa076a1bfdda5c753868ff7eaf1',1,'v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;::back() const']]],
-  ['base_5flearner_5fbuilder',['base_learner_builder',['../structVW_1_1LEARNER_1_1base__learner__builder.html#a231aa6864866b89101f4978880b222f4',1,'VW::LEARNER::base_learner_builder']]],
+  ['base_5flearner_5fbuilder',['base_learner_builder',['../structVW_1_1LEARNER_1_1base__learner__builder.html#a580100358a9b7d2f716f637caf6a52f2',1,'VW::LEARNER::base_learner_builder']]],
   ['base_5foption',['base_option',['../structVW_1_1config_1_1base__option.html#abeb225ef8ce057e0a8ca53cf64d54e9f',1,'VW::config::base_option']]],
   ['base_5ftask',['base_task',['../structSearch_1_1search.html#ab3ef756d0531c055d67e23d807ca5ea5',1,'Search::search']]],
   ['baseline_5fchallenger_5fcb_5fsetup',['baseline_challenger_cb_setup',['../baseline__challenger__cb_8h.html#adf6cff385788afb3c2be682f0bb54a20',1,'baseline_challenger_cb.h']]],

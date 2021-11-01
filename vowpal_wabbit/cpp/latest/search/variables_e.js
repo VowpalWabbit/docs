@@ -18,6 +18,7 @@ var searchData=
   ['node_5fid_5fnamespace',['node_id_namespace',['../constant_8h.html#a2ba4a93b0663f069dc7518d27442b9d2',1,'constant.h']]],
   ['nodes',['nodes',['../structVW_1_1cats__tree_1_1min__depth__binary__tree.html#a8fe541d98bb1c4f0b4c808495ffa41a5',1,'VW::cats_tree::min_depth_binary_tree::nodes()'],['../structVW_1_1offset__tree_1_1min__depth__binary__tree.html#a699e1e2eae14061a799762e4189f55bf',1,'VW::offset_tree::min_depth_binary_tree::nodes()']]],
   ['nonormalize',['nonormalize',['../structvw.html#a8c44e6e160e3fd7fb21c42e0aa462450',1,'vw']]],
+  ['nopred',['nopred',['../structpolyprediction.html#aca14fb2e109e574d6c06bd6beadfb483',1,'polyprediction']]],
   ['normal_5fweights',['normal_weights',['../structvw.html#a8d95ff3814cbffbb2de2eccd4f19bdfc',1,'vw']]],
   ['normalized',['normalized',['../classparameters.html#a151823ac932181e2ec63a13461bacc17',1,'parameters']]],
   ['normalized_5fidx',['normalized_idx',['../structvw.html#ad7062a07e5af79d245edd2f3b68a525a',1,'vw']]],

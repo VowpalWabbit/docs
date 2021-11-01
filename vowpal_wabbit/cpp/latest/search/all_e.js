@@ -48,6 +48,7 @@ var searchData=
   ['noop_5fsensitivity',['noop_sensitivity',['../namespaceVW_1_1LEARNER.html#a23877fd9c9757641d788ae73cf210914',1,'VW::LEARNER']]],
   ['noop_5fsensitivity_5fbase',['noop_sensitivity_base',['../namespaceVW_1_1LEARNER.html#a49d900481813f0f01e7f70e7803911b5',1,'VW::LEARNER']]],
   ['noop_5fsetup',['noop_setup',['../noop_8h.html#ad1aa4ff2d7dd30592a194500219ca917',1,'noop.h']]],
+  ['nopred',['nopred',['../structpolyprediction.html#aca14fb2e109e574d6c06bd6beadfb483',1,'polyprediction::nopred()'],['../namespaceVW.html#a4f76045a06b3efe3c5c612b777b6c836a09eb1413668687809928cc79f86e2886',1,'VW::nopred()']]],
   ['normal_5fweights',['normal_weights',['../structvw.html#a8d95ff3814cbffbb2de2eccd4f19bdfc',1,'vw']]],
   ['normalized',['normalized',['../classparameters.html#a151823ac932181e2ec63a13461bacc17',1,'parameters']]],
   ['normalized_5fidx',['normalized_idx',['../structvw.html#ad7062a07e5af79d245edd2f3b68a525a',1,'vw']]],
