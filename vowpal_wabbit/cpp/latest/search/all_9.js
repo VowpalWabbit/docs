@@ -2,7 +2,7 @@ var searchData=
 [
   ['i',['i',['../unionexploration_1_1int__float.html#ad2bc6c4c956bde873b30883f1e1f73d3',1,'exploration::int_float']]],
   ['id',['id',['../structVW_1_1cats__tree_1_1tree__node.html#a61e16c2cc5da0df4b7060465ec4b9d46',1,'VW::cats_tree::tree_node::id()'],['../structvw.html#a7d0a3b6b38562a530f01e0b9162e3e83',1,'vw::id()'],['../structVW_1_1offset__tree_1_1tree__node.html#abdddece8c7416bbfae454d3a4af6d038',1,'VW::offset_tree::tree_node::id()']]],
-  ['ignore',['Ignore',['../classDefaultState.html#a0b4a49d922219a5b71926061b304ea21',1,'DefaultState::Ignore()'],['../structvw.html#a9895838c15043709e1cde223565faee1',1,'vw::ignore()']]],
+  ['ignore',['ignore',['../structvw.html#a9895838c15043709e1cde223565faee1',1,'vw::ignore()'],['../classDefaultState.html#a0b4a49d922219a5b71926061b304ea21',1,'DefaultState::Ignore()']]],
   ['ignore_5flinear',['ignore_linear',['../structvw.html#a3226665740102aae098c592cc9c7b911',1,'vw']]],
   ['ignore_5fsome',['ignore_some',['../structvw.html#aba994529ae945261c57f218746c621df',1,'vw']]],
   ['ignore_5fsome_5flinear',['ignore_some_linear',['../structvw.html#ade19c1d0607732e94b981247b1ccde1f',1,'vw']]],
@@ -54,7 +54,7 @@ var searchData=
   ['int_5fof_5fstring',['int_of_string',['../parse__primitives_8h.html#a0187acdae19e69c4ef85cb5eb7bb9fa0',1,'int_of_string(VW::string_view s, char *&amp;end):&#160;parse_primitives.h'],['../parse__primitives_8h.html#a87d4af59fea5bc25b64dd3c854ff4d25',1,'int_of_string(VW::string_view s):&#160;parse_primitives.h']]],
   ['interact_2eh',['interact.h',['../interact_8h.html',1,'']]],
   ['interact_5fsetup',['interact_setup',['../interact_8h.html#a1d996ac70254ddd216cc37e175e36e33',1,'interact.h']]],
-  ['interaction_5fconfig_5fmanager',['interaction_config_manager',['../structVW_1_1automl_1_1interaction__config__manager.html',1,'VW::automl::interaction_config_manager'],['../structVW_1_1automl_1_1interaction__config__manager.html#a36a465c1b6741239d2d73008917bc16f',1,'VW::automl::interaction_config_manager::interaction_config_manager()']]],
+  ['interaction_5fconfig_5fmanager',['interaction_config_manager',['../structVW_1_1automl_1_1interaction__config__manager.html',1,'VW::automl::interaction_config_manager'],['../structVW_1_1automl_1_1interaction__config__manager.html#a93717f72cca3ede582c9165f3c19af69',1,'VW::automl::interaction_config_manager::interaction_config_manager()']]],
   ['interaction_5fvalue',['INTERACTION_VALUE',['../namespaceINTERACTIONS.html#a85d42969fe5fe2302e2017a180202ed7',1,'INTERACTIONS']]],
   ['interaction_5fvec_5ft',['interaction_vec_t',['../namespaceVW_1_1automl.html#a84247259951b7bf65f9eedac5f14031d',1,'VW::automl']]],
   ['interactions',['INTERACTIONS',['../namespaceINTERACTIONS.html',1,'INTERACTIONS'],['../structexample__predict.html#afb676d8f3ba9052d93b865610e44bb90',1,'example_predict::interactions()'],['../structvw.html#a2faf990a8db6c15b4d80beaa68b7fee2',1,'vw::interactions()'],['../classSlotOutcomeList.html#a0fc1f14e08b16bdb49a5304f6e0d2baa',1,'SlotOutcomeList::interactions()']]],

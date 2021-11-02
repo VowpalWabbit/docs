@@ -531,28 +531,28 @@ num sources = 1
 Enabled reductions: gd, scorer-identity, count_label
 average  since         example        example  current  current  current
 loss     last          counter         weight    label  predict features
-5.750335 5.750335            1            1.0   2.3980   0.0000        3
-5.772577 5.794818            2            2.0   2.5650   0.1578        3
-5.491870 5.211164            4            4.0   2.4850   0.3164        3
-4.374216 3.256562            8            8.0   2.7727   0.5752        3
-3.607921 2.841626           16           16.0   0.0010   0.4752        3
-2.669603 1.731285           32           32.0   1.7919   0.8469        3
-1.770575 0.871546           64           64.0   1.7919   1.4984        3
-1.172948 0.575321          128          128.0   2.5650   2.0107        3
-0.727343 0.281738          256          256.0   1.7919   2.1661        3
-0.474431 0.221520          512          512.0   2.0796   2.0658        3
-0.349766 0.225101         1024         1024.0   2.3027   2.0629        3
-0.282832 0.215898         2048         2048.0   2.7727   2.9387        3
-0.244877 0.206921         4096         4096.0   2.8904   2.5711        3
-0.223139 0.201401         8192         8192.0   0.0010   0.8328        2
+2.590933 2.590933            1            1.0   1.6096   0.0000        3
+3.742593 4.894253            2            2.0   2.5650   0.3527        3
+4.211462 4.680331            4            4.0   2.4850   0.3400        3
+3.665015 3.118568            8            8.0   2.0796   0.7100        3
+6.131378 8.597742           16           16.0   2.3027   0.8382        3
+7.294041 8.456704           32           32.0  -6.9078   0.3531        1
+4.241631 1.189221           64           64.0   3.0911   1.6047        3
+4.186631 4.131631          128          128.0   2.3027   1.7600        3
+3.576020 2.965410          256          256.0   2.4850   2.0435        3
+3.311313 3.046605          512          512.0   1.6096   1.2894        2
+3.129062 2.946810         1024         1024.0   2.4850   2.5199        3
+2.952302 2.775542         2048         2048.0   2.4850   2.5171        3
+2.796398 2.640494         4096         4096.0   1.7919   0.8923        3
+2.683042 2.569687         8192         8192.0   2.1973   1.5845        3
 
 finished run
 number of examples = 10000
 weighted example sum = 10000.000000
-weighted label sum = 20144.300711
-average loss = 0.218806
-best constant = 2.014430
-total feature number = 28900
+weighted label sum = 15605.015317
+average loss = 2.655716
+best constant = 1.560502
+total feature number = 27500
 </pre></div>
 </div>
 </div>
@@ -570,6 +570,25 @@ total feature number = 28900
 </div>
 <div class="cell_output docutils container">
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>only testing
+Num weight bits = 2
+learning rate = 0.5
+initial_t = 0
+power_t = 0.5
+using no cache
+Reading datafile = 
+num sources = 1
+Enabled reductions: gd, scorer-identity, count_label
+average  since         example        example  current  current  current
+loss     last          counter         weight    label  predict features
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.103776 0.103776            1            1.0   1.6096   1.9318        3
+0.296046 0.488316            2            2.0   2.5650   1.8662        3
+0.302685 0.309324            4            4.0   2.4850   2.0651        3
+0.304077 0.305469            8            8.0   2.0796   2.2874        3
+2.888070 5.472063           16           16.0   2.3027   3.0911        3
+4.250726 5.613383           32           32.0  -6.9078  -0.5462        1
+2.295735 0.340745           64           64.0   3.0911   3.0911        3
 </pre></div>
 </div>
 </div>
@@ -591,24 +610,7 @@ total feature number = 28900
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Num weight bits = 2
-learning rate = 0.5
-initial_t = 0
-power_t = 0.5
-using no cache
-Reading datafile = 
-num sources = 1
-Enabled reductions: gd, scorer-identity, count_label
-average  since         example        example  current  current  current
-loss     last          counter         weight    label  predict features
-0.008448 0.008448            1            1.0   2.3980   2.4899        3
-0.025313 0.042178            2            2.0   2.5650   2.3597        3
-0.044401 0.063489            4            4.0   2.4850   2.2145        3
-0.075827 0.107253            8            8.0   2.7727   2.7801        3
-0.172727 0.269627           16           16.0   0.0010   1.1095        3
-0.187477 0.202227           32           32.0   1.7919   1.7197        3
-0.193481 0.199485           64           64.0   1.7919   2.5345        3
-final_regressor = vw.poisson.model
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>final_regressor = vw.poisson.model
 Num weight bits = 2
 learning rate = 0.1
 initial_t = 0
@@ -623,31 +625,32 @@ loss     last          counter         weight    label  predict features
 finished run
 number of examples = 100
 weighted example sum = 100.000000
-weighted label sum = 201.443007
-average loss = 0.198395
-best constant = 2.014430
-total feature number = 289
-32.753696 32.753696            1            1.0  11.0000   0.0000        3
-35.790348 38.827000            2            2.0  13.0000   0.1621        3
-36.451645 37.112943            4            4.0  12.0000   0.3422        3
-28.773230 21.094815            8            8.0  16.0000   0.5813        3
-24.555718 20.338207           16           16.0   1.0000   0.4938        3
-18.505918 12.456118           32           32.0   6.0000   0.8891        3
-12.440057 6.374195           64           64.0   6.0000   1.6015        3
-8.070992 3.701926          128          128.0  13.0000   2.1978        3
-4.721347 1.371703          256          256.0   6.0000   2.3157        3
-2.936364 1.151381          512          512.0   8.0000   2.1534        3
-2.061487 1.186610         1024         1024.0  10.0000   2.1503        3
-1.624099 1.186710         2048         2048.0  16.0000   2.9015        3
-1.402249 1.180400         4096         4096.0  18.0000   2.5627        3
-1.290462 1.178675         8192         8192.0   1.0000   1.2362        2
-
-finished run
+weighted label sum = 156.050153
+average loss = 2.502353
+best constant = 1.560502
+total feature number = 275
+8.094381 8.094381            1            1.0   5.0000   0.0000        3
+21.103477 34.112572            2            2.0  13.0000   0.3636        3
+24.959841 28.816206            4            4.0  12.0000   0.3688        3
+23.792057 22.624274            8            8.0   8.0000   0.7329        3
+19.296818 14.801578           16           16.0  10.0000   0.9430        3
+15.092878 10.888939           32           32.0   0.0000   0.5532        1
+10.773595 6.454311           64           64.0  22.0000   1.9061        3
+6.760923 2.748251          128          128.0  10.0000   2.1614        3
+4.040126 1.319330          256          256.0  12.0000   2.3911        3
+2.644326 1.248526          512          512.0   5.0000   1.6839        2
+1.944146 1.243966         1024         1024.0  12.0000   2.5419        3
+1.578011 1.211876         2048         2048.0  12.0000   2.4702        3
+1.394695 1.211378         4096         4096.0   6.0000   1.5811        3
+1.302898 1.211102         8192         8192.0   9.0000   1.9558        3
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>finished run
 number of examples = 10000
 weighted example sum = 10000.000000
-weighted label sum = 92300.000000
-average loss = 1.269833
-total feature number = 28900
+weighted label sum = 84500.000000
+average loss = 1.285712
+total feature number = 27500
 </pre></div>
 </div>
 </div>
@@ -672,13 +675,13 @@ num sources = 1
 Enabled reductions: gd, scorer-identity, count_label
 average  since         example        example  current  current  current
 loss     last          counter         weight    label  predict features
-72.698105 72.698105            1            1.0  11.0000   2.4737        3
-92.852016 113.005928            2            2.0  13.0000   2.3696        3
-107.303440 121.754864            4            4.0  12.0000   2.2599        3
-91.217104 75.130769            8            8.0  16.0000   2.6930        3
-88.950101 86.683098           16           16.0   1.0000   1.4591        3
-77.797319 66.644536           32           32.0   6.0000   1.9088        3
-67.332686 56.868054           64           64.0   6.0000   2.4903        3
+8.163140 8.163140            1            1.0   5.0000   2.1429        3
+63.631291 119.099442            2            2.0  13.0000   2.0867        3
+75.948071 88.264851            4            4.0  12.0000   2.1871        3
+87.091885 98.235699            8            8.0   8.0000   2.2607        3
+76.237332 65.382780           16           16.0  10.0000   2.8212        3
+66.227938 56.218543           32           32.0   0.0000   0.9777        1
+67.342837 68.457737           64           64.0  22.0000   2.7918        3
 </pre></div>
 </div>
 </div>
