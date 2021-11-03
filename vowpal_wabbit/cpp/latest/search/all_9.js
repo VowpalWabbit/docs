@@ -2,7 +2,7 @@ var searchData=
 [
   ['i',['i',['../unionexploration_1_1int__float.html#ad2bc6c4c956bde873b30883f1e1f73d3',1,'exploration::int_float']]],
   ['id',['id',['../structVW_1_1cats__tree_1_1tree__node.html#a61e16c2cc5da0df4b7060465ec4b9d46',1,'VW::cats_tree::tree_node::id()'],['../structvw.html#a7d0a3b6b38562a530f01e0b9162e3e83',1,'vw::id()'],['../structVW_1_1offset__tree_1_1tree__node.html#abdddece8c7416bbfae454d3a4af6d038',1,'VW::offset_tree::tree_node::id()']]],
-  ['ignore',['ignore',['../structvw.html#a9895838c15043709e1cde223565faee1',1,'vw::ignore()'],['../classDefaultState.html#a0b4a49d922219a5b71926061b304ea21',1,'DefaultState::Ignore()']]],
+  ['ignore',['Ignore',['../classDefaultState.html#a0b4a49d922219a5b71926061b304ea21',1,'DefaultState::Ignore()'],['../structvw.html#a9895838c15043709e1cde223565faee1',1,'vw::ignore()']]],
   ['ignore_5flinear',['ignore_linear',['../structvw.html#a3226665740102aae098c592cc9c7b911',1,'vw']]],
   ['ignore_5fsome',['ignore_some',['../structvw.html#aba994529ae945261c57f218746c621df',1,'vw']]],
   ['ignore_5fsome_5flinear',['ignore_some_linear',['../structvw.html#ade19c1d0607732e94b981247b1ccde1f',1,'vw']]],
@@ -25,7 +25,7 @@ var searchData=
   ['indices_5fto_5fvalues_5fone_5fbased',['indices_to_values_one_based',['../namespaceINTERACTIONS.html#aa9fabd214e4e23e254d5fd239ed3189b',1,'INTERACTIONS']]],
   ['indicies',['indicies',['../structfeatures.html#a2d75751cdcc865b5e62031d40a770a6a',1,'features']]],
   ['info',['info',['../namespaceVW_1_1io_1_1logger.html#a727315522185c0fa2906718f6ac84928acaf9b6b99962bf5c2264824231d7a40c',1,'VW::io::logger']]],
-  ['init',['init',['../structVW_1_1cats__tree_1_1cats__tree.html#a4ab9cfe0e8aa14f7b22d480c2a600d38',1,'VW::cats_tree::cats_tree::init()'],['../structVW_1_1offset__tree_1_1offset__tree.html#a10740c73d3474b8cc80cbc0e689f0955',1,'VW::offset_tree::offset_tree::init()'],['../classLabelObjectState.html#a2f72eb3187118545cedfe1aeb213140b',1,'LabelObjectState::init()'],['../structContext.html#a4740db8b5f721680e08364df550d603f',1,'Context::init()'],['../structVWReaderHandler.html#a22f63108dc143f5ba8d37d3b1c822625',1,'VWReaderHandler::init()']]],
+  ['init',['init',['../structVW_1_1cats__tree_1_1cats__tree.html#a4ab9cfe0e8aa14f7b22d480c2a600d38',1,'VW::cats_tree::cats_tree::init()'],['../structVW_1_1offset__tree_1_1offset__tree.html#a10740c73d3474b8cc80cbc0e689f0955',1,'VW::offset_tree::offset_tree::init()'],['../structContext.html#a8b416fef1ad691bb0faebe1162a1628f',1,'Context::init()'],['../structVWReaderHandler.html#a6c2c2709672ae098ae976a68c14e9526',1,'VWReaderHandler::init()']]],
   ['init_5fadf_5fdata',['init_adf_data',['../structcbify__adf__data.html#a600ee1b796ee0e10fc952c04e4a53235',1,'cbify_adf_data']]],
   ['init_5fdriver',['init_driver',['../structVW_1_1LEARNER_1_1learner.html#afd03cc32129409392a5640dcc5e80e6a',1,'VW::LEARNER::learner']]],
   ['init_5ffeatures',['init_features',['../namespaceVW.html#a556b1fcb45c9e73bfd3afb432bd71185',1,'VW']]],

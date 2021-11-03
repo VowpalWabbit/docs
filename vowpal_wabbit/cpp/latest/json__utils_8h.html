@@ -69,7 +69,8 @@ $(function() {
 <div class="title">json_utils.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;string&gt;</code><br />
+<div class="textblock"><code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &quot;<a class="el" href="feature__group_8h.html">feature_group.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="global__data_8h.html">global_data.h</a>&quot;</code><br />
@@ -85,9 +86,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a1554bc5eeefd76bc5253823cd90ba398"><td class="memTemplParams" colspan="2">template&lt;bool audit&gt; </td></tr>
-<tr class="memitem:a1554bc5eeefd76bc5253823cd90ba398"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="json__utils_8h.html#a1554bc5eeefd76bc5253823cd90ba398">push_ns</a> (<a class="el" href="structexample.html">example</a> *ex, const char *ns, std::vector&lt; <a class="el" href="structNamespace.html">Namespace</a>&lt; audit &gt;&gt; &amp;namespaces, <a class="el" href="structvw.html">vw</a> &amp;all)</td></tr>
-<tr class="separator:a1554bc5eeefd76bc5253823cd90ba398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a369697b76b50f293f77035311abe2683"><td class="memTemplParams" colspan="2">template&lt;bool audit&gt; </td></tr>
+<tr class="memitem:a369697b76b50f293f77035311abe2683"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="json__utils_8h.html#a369697b76b50f293f77035311abe2683">push_ns</a> (<a class="el" href="structexample.html">example</a> *ex, const char *ns, std::vector&lt; <a class="el" href="structNamespace.html">Namespace</a>&lt; audit &gt;&gt; &amp;namespaces, <a class="el" href="hashstring_8h.html#a77dae8dac3c33439a15f7270f64cff8c">hash_func_t</a> hash_func, uint64_t hash_seed)</td></tr>
+<tr class="separator:a369697b76b50f293f77035311abe2683"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a24a29fa01e35d8625b1a76802585d4"><td class="memTemplParams" colspan="2">template&lt;bool audit&gt; </td></tr>
 <tr class="memitem:a9a24a29fa01e35d8625b1a76802585d4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="json__utils_8h.html#a9a24a29fa01e35d8625b1a76802585d4">pop_ns</a> (<a class="el" href="structexample.html">example</a> *ex, std::vector&lt; <a class="el" href="structNamespace.html">Namespace</a>&lt; audit &gt;&gt; &amp;namespaces)</td></tr>
 <tr class="separator:a9a24a29fa01e35d8625b1a76802585d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,8 +124,8 @@ template&lt;bool audit&gt; </div>
 
 </div>
 </div>
-<a id="a1554bc5eeefd76bc5253823cd90ba398"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1554bc5eeefd76bc5253823cd90ba398">&#9670;&nbsp;</a></span>push_ns()</h2>
+<a id="a369697b76b50f293f77035311abe2683"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a369697b76b50f293f77035311abe2683">&#9670;&nbsp;</a></span>push_ns()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -152,8 +153,14 @@ template&lt;bool audit&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structvw.html">vw</a> &amp;&#160;</td>
-          <td class="paramname"><em>all</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="hashstring_8h.html#a77dae8dac3c33439a15f7270f64cff8c">hash_func_t</a>&#160;</td>
+          <td class="paramname"><em>hash_func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>hash_seed</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -168,7 +175,7 @@ template&lt;bool audit&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Nov 3 2021 14:39:32 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 3 2021 15:36:41 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

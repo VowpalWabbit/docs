@@ -73,10 +73,10 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a85dc1b49c87f8450e3198c2aeca804e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNamespace.html#a85dc1b49c87f8450e3198c2aeca804e8">AddFeature</a> (<a class="el" href="feature__group_8h.html#afe724f24bdc273f5a3bef924f94b4a4a">feature_value</a> v, <a class="el" href="feature__group_8h.html#a0100b371f093c4a60cd31557ff902c0d">feature_index</a> i, const char *feature_name)</td></tr>
 <tr class="separator:a85dc1b49c87f8450e3198c2aeca804e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a97d572f25c286531fbff978cf2a542"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNamespace.html#a0a97d572f25c286531fbff978cf2a542">AddFeature</a> (<a class="el" href="structvw.html">vw</a> *all, const char *str)</td></tr>
-<tr class="separator:a0a97d572f25c286531fbff978cf2a542"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b4c8bca4f3973982c7b7dc67140e2ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNamespace.html#a2b4c8bca4f3973982c7b7dc67140e2ca">AddFeature</a> (<a class="el" href="structvw.html">vw</a> *all, const char *key, const char *value)</td></tr>
-<tr class="separator:a2b4c8bca4f3973982c7b7dc67140e2ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add1f22148decdee051aca9beea32a511"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNamespace.html#add1f22148decdee051aca9beea32a511">AddFeature</a> (const char *str, <a class="el" href="hashstring_8h.html#a77dae8dac3c33439a15f7270f64cff8c">hash_func_t</a> hash_func, uint64_t parse_mask)</td></tr>
+<tr class="separator:add1f22148decdee051aca9beea32a511"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b7c4e7690dd1dab7404928c8ed83242"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNamespace.html#a6b7c4e7690dd1dab7404928c8ed83242">AddFeature</a> (const char *key, const char *value, <a class="el" href="hashstring_8h.html#a77dae8dac3c33439a15f7270f64cff8c">hash_func_t</a> hash_func, uint64_t parse_mask)</td></tr>
+<tr class="separator:a6b7c4e7690dd1dab7404928c8ed83242"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -136,8 +136,8 @@ template&lt;bool audit&gt; </div>
 
 </div>
 </div>
-<a id="a0a97d572f25c286531fbff978cf2a542"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a97d572f25c286531fbff978cf2a542">&#9670;&nbsp;</a></span>AddFeature() <span class="overload">[2/3]</span></h2>
+<a id="add1f22148decdee051aca9beea32a511"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add1f22148decdee051aca9beea32a511">&#9670;&nbsp;</a></span>AddFeature() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -150,14 +150,20 @@ template&lt;bool audit&gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="structNamespace.html">Namespace</a>&lt; audit &gt;::AddFeature </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structvw.html">vw</a> *&#160;</td>
-          <td class="paramname"><em>all</em>, </td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>str</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="hashstring_8h.html#a77dae8dac3c33439a15f7270f64cff8c">hash_func_t</a>&#160;</td>
+          <td class="paramname"><em>hash_func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>parse_mask</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -174,8 +180,8 @@ template&lt;bool audit&gt; </div>
 
 </div>
 </div>
-<a id="a2b4c8bca4f3973982c7b7dc67140e2ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b4c8bca4f3973982c7b7dc67140e2ca">&#9670;&nbsp;</a></span>AddFeature() <span class="overload">[3/3]</span></h2>
+<a id="a6b7c4e7690dd1dab7404928c8ed83242"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b7c4e7690dd1dab7404928c8ed83242">&#9670;&nbsp;</a></span>AddFeature() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -188,12 +194,6 @@ template&lt;bool audit&gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="structNamespace.html">Namespace</a>&lt; audit &gt;::AddFeature </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structvw.html">vw</a> *&#160;</td>
-          <td class="paramname"><em>all</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
@@ -201,7 +201,19 @@ template&lt;bool audit&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="hashstring_8h.html#a77dae8dac3c33439a15f7270f64cff8c">hash_func_t</a>&#160;</td>
+          <td class="paramname"><em>hash_func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>parse_mask</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -305,7 +317,7 @@ template&lt;bool audit&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Nov 3 2021 14:39:32 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 3 2021 15:36:41 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
