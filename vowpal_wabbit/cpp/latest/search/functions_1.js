@@ -34,6 +34,6 @@ var searchData=
   ['buf_5fwrite',['buf_write',['../classio__buf.html#aaff9b1ba96e89f3abfa6105f1f369b34',1,'io_buf']]],
   ['buffer_5fstart',['buffer_start',['../classio__buf.html#aa79ba9e0c96d4ebde9ef98493c629806',1,'io_buf']]],
   ['build',['build',['../structVW_1_1kskip__ngram__transformer.html#a315701be95f5d52920f40c63580e26b9',1,'VW::kskip_ngram_transformer::build()'],['../structVW_1_1LEARNER_1_1reduction__learner__builder.html#a47a5cce3902677e538b3dbc7a0586e80',1,'VW::LEARNER::reduction_learner_builder::build()'],['../structVW_1_1LEARNER_1_1reduction__no__data__learner__builder.html#ac2d7082936547b28f8ef466940d9d0c1',1,'VW::LEARNER::reduction_no_data_learner_builder::build()'],['../structVW_1_1LEARNER_1_1base__learner__builder.html#a9c2fc579a8e26ece21cbaa565d24db05',1,'VW::LEARNER::base_learner_builder::build()']]],
-  ['build_5fsetupfn_5fname_5fdict',['build_setupfn_name_dict',['../structvw.html#a704252e85990cd7988ec2fcfb6a1612b',1,'vw']]],
+  ['build_5fsetupfn_5fname_5fdict',['build_setupfn_name_dict',['../structVW_1_1workspace.html#a89abfb668c872684f5d098c96f611165',1,'VW::workspace']]],
   ['build_5ftree',['build_tree',['../structVW_1_1cats__tree_1_1min__depth__binary__tree.html#a7d456d7260cf698c54197a62cc4aa424',1,'VW::cats_tree::min_depth_binary_tree::build_tree()'],['../structVW_1_1offset__tree_1_1min__depth__binary__tree.html#ac3e22135a078c06dc7298bc0fe2ae1e9',1,'VW::offset_tree::min_depth_binary_tree::build_tree()']]]
 ];

@@ -4,7 +4,7 @@ var searchData=
   ['namespace_5fcopy_5fguard',['namespace_copy_guard',['../classvw__slim_1_1namespace__copy__guard.html#acb059717b330a9956ce0fae67d48f853',1,'vw_slim::namespace_copy_guard']]],
   ['namespace_5fextent',['namespace_extent',['../structVW_1_1namespace__extent.html#a27471d9e8dd98e051fb5e9995165926b',1,'VW::namespace_extent::namespace_extent()=default'],['../structVW_1_1namespace__extent.html#afcd61e2d4212c3e9df13ce40620b2a8d',1,'VW::namespace_extent::namespace_extent(size_t begin_index, size_t end_index, uint64_t hash)'],['../structVW_1_1namespace__extent.html#a88abff1f46aa17ca322cdd66740e19a9',1,'VW::namespace_extent::namespace_extent(size_t begin_index, uint64_t hash)']]],
   ['necessary',['necessary',['../structVW_1_1config_1_1option__builder.html#ad77eeb7761b3ace8c185a1c759d62160',1,'VW::config::option_builder']]],
-  ['new_5funused_5fexample',['new_unused_example',['../namespaceVW.html#ae49d60be8cfe85c0159d1af44f131789',1,'VW']]],
+  ['new_5funused_5fexample',['new_unused_example',['../namespaceVW.html#a3846d133af77206c04acf204f01b5dba',1,'VW']]],
   ['nn_5fsetup',['nn_setup',['../nn_8h.html#ab81c8e137ace799313853ae75053830a',1,'nn.h']]],
   ['no_5flock_5fobject_5fpool',['no_lock_object_pool',['../structVW_1_1no__lock__object__pool.html#a55f60639f3260fab7a259890d83b6f0e',1,'VW::no_lock_object_pool::no_lock_object_pool()=default'],['../structVW_1_1no__lock__object__pool.html#a052f840458de1698921f7ab8af57e15f',1,'VW::no_lock_object_pool::no_lock_object_pool(size_t initial_chunk_size, TInitializer initializer={}, size_t chunk_size=8)']]],
   ['node_5fcost',['node_cost',['../structVW_1_1cats__tree_1_1node__cost.html#a967365cdf851d5a4bee2975042f07bf6',1,'VW::cats_tree::node_cost::node_cost()'],['../structVW_1_1cats__tree_1_1node__cost.html#a43e8c522900e87b290032fc8cea93c63',1,'VW::cats_tree::node_cost::node_cost(uint32_t node_id, float cost)']]],
@@ -23,7 +23,7 @@ var searchData=
   ['num_5ffiles',['num_files',['../classio__buf.html#ab8485d590a3bf27b1de7dbe548506149',1,'io_buf']]],
   ['num_5finput_5ffiles',['num_input_files',['../classio__buf.html#a9e96ad28d318c8f2f0542945ee4abd18',1,'io_buf']]],
   ['num_5foutput_5ffiles',['num_output_files',['../classio__buf.html#a8ace80e6275fefec30eb34d0d7f65078',1,'io_buf']]],
-  ['num_5fweights',['num_weights',['../namespaceVW.html#a79f4b5129db34f40bdb6d0a970dd30b1',1,'VW']]],
+  ['num_5fweights',['num_weights',['../namespaceVW.html#a04b594a4e250da0d08d159315c51449d',1,'VW']]],
   ['number_5fof_5fcombinations_5fwith_5frepetition',['number_of_combinations_with_repetition',['../namespaceVW_1_1math.html#a6bba0fe85cf39d89c5a9f13b58987dc1',1,'VW::math']]],
   ['number_5fof_5fpermutations_5fwith_5frepetition',['number_of_permutations_with_repetition',['../namespaceVW_1_1math.html#a1a277e1f850e8b4281f2b504c33731eb',1,'VW::math']]]
 ];

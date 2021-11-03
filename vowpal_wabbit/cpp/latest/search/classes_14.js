@@ -15,7 +15,6 @@ var searchData=
   ['v_5farray_3c_20uint32_5ft_20_3e',['v_array&lt; uint32_t &gt;',['../structv__array.html',1,'']]],
   ['v_5farray_3c_20vw_3a_3acb_5fcontinuous_3a_3acontinuous_5flabel_5felm_20_3e',['v_array&lt; VW::cb_continuous::continuous_label_elm &gt;',['../structv__array.html',1,'']]],
   ['version_5fstruct',['version_struct',['../structVW_1_1version__struct.html',1,'VW']]],
-  ['vw',['vw',['../structvw.html',1,'']]],
   ['vw_5fargument_5fdisagreement_5fexception',['vw_argument_disagreement_exception',['../classVW_1_1vw__argument__disagreement__exception.html',1,'VW']]],
   ['vw_5fargument_5finvalid_5fvalue_5fexception',['vw_argument_invalid_value_exception',['../classVW_1_1vw__argument__invalid__value__exception.html',1,'VW']]],
   ['vw_5fdbg',['vw_dbg',['../structvw__dbg.html',1,'']]],

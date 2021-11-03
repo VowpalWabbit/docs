@@ -7,7 +7,7 @@ var searchData=
   ['begin_5findex',['begin_index',['../structVW_1_1namespace__extent.html#a5baa64e9ec5418497aaa1dd9b804f21b',1,'VW::namespace_extent']]],
   ['begin_5fit',['begin_it',['../structINTERACTIONS_1_1feature__gen__data.html#ab9ae05431dbd95d0202987cd57652233',1,'INTERACTIONS::feature_gen_data']]],
   ['beta',['beta',['../structVW_1_1distributionally__robust_1_1Duals.html#af225255f0c2895ff6b24e61226295326',1,'VW::distributionally_robust::Duals']]],
-  ['bfgs',['bfgs',['../structvw.html#a95cfd823e6db9fdc1ca0098433c5e186',1,'vw']]],
+  ['bfgs',['bfgs',['../structVW_1_1workspace.html#aead7aace93337cea621fd55cec162a44',1,'VW::workspace']]],
   ['bias',['BIAS',['../namespaceexploration.html#af5f381e6405bb2a903cb4cf53b52a21f',1,'exploration']]],
   ['binary',['binary',['../structvw__dbg.html#aa1ae629795328b25b09b243a8aca29ef',1,'vw_dbg']]],
   ['bool_5fstate',['bool_state',['../structContext.html#a0dda584309012bded089bb76d8a5be5d',1,'Context']]],

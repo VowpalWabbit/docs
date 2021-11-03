@@ -23,5 +23,5 @@ var searchData=
   ['version_5ffile_5fwith_5fsquare_5fcb_5fsave_5fresume',['VERSION_FILE_WITH_SQUARE_CB_SAVE_RESUME',['../namespaceVW_1_1version__definitions.html#a5cec48da29ff1277a021024aef2aaab5',1,'VW::version_definitions']]],
   ['version_5fpass_5fuint64',['VERSION_PASS_UINT64',['../namespaceVW_1_1version__definitions.html#a39f39c69b663a2908c2f7b3478bf3643',1,'VW::version_definitions']]],
   ['version_5fsave_5fresume_5ffix',['VERSION_SAVE_RESUME_FIX',['../namespaceVW_1_1version__definitions.html#a9feeb73af29c0c2fd26cc443dbc73a1d',1,'VW::version_definitions']]],
-  ['vw_5fis_5fmain',['vw_is_main',['../structvw.html#a0d4529b47cfb9715fe3695a4964d3a9f',1,'vw']]]
+  ['vw_5fis_5fmain',['vw_is_main',['../structVW_1_1workspace.html#a44af05567e6b4b84e3eac44568298920',1,'VW::workspace']]]
 ];
