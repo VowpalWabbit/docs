@@ -68,7 +68,7 @@ var searchData=
   ['confidence',['confidence',['../structexample.html#a30e80546a762a93ac6420fe52d866ab2',1,'example']]],
   ['config_5findex',['config_index',['../structVW_1_1automl_1_1scored__config.html#afb96835c3b6156d1dacb43744cf7ad71',1,'VW::automl::scored_config']]],
   ['configs',['configs',['../structVW_1_1automl_1_1interaction__config__manager.html#a2c86381bff39e3312e29321e4860fd93',1,'VW::automl::interaction_config_manager']]],
-  ['congigs_5fper_5fchamp_5fchange',['CONGIGS_PER_CHAMP_CHANGE',['../namespaceVW_1_1automl.html#ac178282b8641183a48a546201eb58fe1',1,'VW::automl']]],
+  ['configs_5fper_5fchamp_5fchange',['CONFIGS_PER_CHAMP_CHANGE',['../namespaceVW_1_1automl.html#afb2ba45ffecee771ae2244d3efb3b591',1,'VW::automl']]],
   ['constant',['constant',['../constant_8h.html#a756519f5578552c555ce0353b3fa4fc6',1,'constant.h']]],
   ['constant_5fa',['CONSTANT_A',['../namespaceexploration.html#abaf668aa89adbccbf973ed7087229251',1,'exploration']]],
   ['constant_5fc',['CONSTANT_C',['../namespaceexploration.html#ab280cae4f247977e79c90ad5bc2c3053',1,'exploration']]],

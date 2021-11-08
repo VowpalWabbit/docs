@@ -55,6 +55,7 @@ var searchData=
   ['options_5fserializer_5fi',['options_serializer_i',['../structVW_1_1config_1_1options__serializer__i.html',1,'VW::config']]],
   ['options_5ftypes_2eh',['options_types.h',['../options__types_8h.html',1,'']]],
   ['opts_2eh',['opts.h',['../opts_8h.html',1,'']]],
+  ['oracle_5ftype',['oracle_type',['../structVW_1_1automl_1_1interaction__config__manager.html#ab15d018f806d114edf66279b43ef62a8',1,'VW::automl::interaction_config_manager']]],
   ['original_5flabel_5fcost_5fstate',['original_label_cost_state',['../structContext.html#aa44a0ff03bc749b2daacf82368ba49fe',1,'Context']]],
   ['originallabelcost',['originalLabelCost',['../structDecisionServiceInteraction.html#a6cfb3cd1a774e916f97d213a0ed0a859',1,'DecisionServiceInteraction']]],
   ['originallabelcostfirstslot',['originalLabelCostFirstSlot',['../structDecisionServiceInteraction.html#a0176b1c151fe113ce0ffe9428725185b',1,'DecisionServiceInteraction']]],
