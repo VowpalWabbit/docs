@@ -63,6 +63,7 @@ var searchData=
   ['interactions_5fpredict_2eh',['interactions_predict.h',['../interactions__predict_8h.html',1,'']]],
   ['internal_5fnode_5fcount',['internal_node_count',['../structVW_1_1cats__tree_1_1min__depth__binary__tree.html#af73217c6129fe64e077cacee3fb7fa66',1,'VW::cats_tree::min_depth_binary_tree::internal_node_count()'],['../structVW_1_1offset__tree_1_1min__depth__binary__tree.html#a46ad35cc80b61aebb9d72de87e463a60',1,'VW::offset_tree::min_depth_binary_tree::internal_node_count()']]],
   ['inv_5fhash_5fregressor_5fname',['inv_hash_regressor_name',['../structVW_1_1workspace.html#a8a4150e901445336a09ba8b49d126fcb',1,'VW::workspace']]],
+  ['invalid_5fchoice_5ferror',['invalid_choice_error',['../structVW_1_1config_1_1typed__option.html#a986f03bcf95ce15c9361142a365ddd07',1,'VW::config::typed_option::invalid_choice_error(const U &amp;)'],['../structVW_1_1config_1_1typed__option.html#a3f0ba89653811b1c1c4334b743d28d32',1,'VW::config::typed_option::invalid_choice_error(const std::string &amp;value)'],['../structVW_1_1config_1_1typed__option.html#ae57a288ff32c3832c8a0d797b243125d',1,'VW::config::typed_option::invalid_choice_error(const int &amp;value)']]],
   ['invalid_5fvw_5fexample',['INVALID_VW_EXAMPLE',['../vwdll_8h.html#ab50a2eeb73e146706e28920d92929ed9',1,'vwdll.h']]],
   ['invalid_5fvw_5fhandle',['INVALID_VW_HANDLE',['../vwdll_8h.html#ab1541f2a2f55dedf8783039be5ac92bd',1,'vwdll.h']]],
   ['invariant_5fupdates',['invariant_updates',['../structVW_1_1workspace.html#a550fe0b2eaefd21c8d5fb5f57eb019cf',1,'VW::workspace']]],

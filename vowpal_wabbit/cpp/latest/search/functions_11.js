@@ -60,6 +60,7 @@ var searchData=
   ['set_5fmetatask_5fdata',['set_metatask_data',['../structSearch_1_1search.html#a80df90139889443a17c33f08b607f881',1,'Search::search']]],
   ['set_5fmultipredict',['set_multipredict',['../structVW_1_1LEARNER_1_1common__learner__builder.html#a11c05cf5ba2c326f72f57eeccaca60ee',1,'VW::LEARNER::common_learner_builder']]],
   ['set_5fnum_5flearners',['set_num_learners',['../structSearch_1_1search.html#a6f6579fc74b803eab232c9976ca3135a',1,'Search::search']]],
+  ['set_5fone_5fof',['set_one_of',['../structVW_1_1config_1_1typed__option.html#a815e69ff7af860a3776043dfd1c8264c',1,'VW::config::typed_option']]],
   ['set_5foptions',['set_options',['../structSearch_1_1search.html#ad90917db0ca26356830294430e5761f4',1,'Search::search']]],
   ['set_5foracle',['set_oracle',['../classSearch_1_1predictor.html#a4b50d64ce44355ade9821430d56647b3',1,'Search::predictor::set_oracle(action a)'],['../classSearch_1_1predictor.html#a7ac3628b6565df1cb0d464766649edfd',1,'Search::predictor::set_oracle(action *a, size_t action_count)'],['../classSearch_1_1predictor.html#aa636697b8d4ed9db017aea8d93bdf168',1,'Search::predictor::set_oracle(v_array&lt; action &gt; &amp;a)']]],
   ['set_5foutput_5flabel_5ftype',['set_output_label_type',['../structVW_1_1LEARNER_1_1common__learner__builder.html#a9655ab62a08ddd5dc98dc897a718632c',1,'VW::LEARNER::common_learner_builder']]],

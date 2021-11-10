@@ -123,6 +123,7 @@ var searchData=
   ['check_5fholdout_5fevery_5fn_5fpasses',['check_holdout_every_n_passes',['../structVW_1_1workspace.html#ab6dac51e5b236f6e4c812f365d96bb35',1,'VW::workspace']]],
   ['check_5flength_5fmatches',['check_length_matches',['../namespaceVW_1_1model__utils_1_1details.html#a822741e25c98c7a9843c7ac856da0975',1,'VW::model_utils::details']]],
   ['check_5fnecessary_5fenabled',['check_necessary_enabled',['../structVW_1_1config_1_1option__group__definition.html#aae7bf6faa96b52aba31e620059dbd0b4',1,'VW::config::option_group_definition']]],
+  ['check_5fone_5fof',['check_one_of',['../structVW_1_1config_1_1option__group__definition.html#a90fe04a0ff93f56497d522b30b076be5',1,'VW::config::option_group_definition']]],
   ['check_5funregistered',['check_unregistered',['../structVW_1_1config_1_1options__i.html#a8e919613bfe9058c3b390ed23c7179e5',1,'VW::config::options_i::check_unregistered()'],['../structVW_1_1config_1_1options__name__extractor.html#a7b7f0aa157fd9d875e85b658a3357434',1,'VW::config::options_name_extractor::check_unregistered()'],['../structVW_1_1config_1_1options__boost__po.html#a046fd58437a365e1de06a7a0fc31ff8d',1,'VW::config::options_boost_po::check_unregistered()']]],
   ['checksum',['checksum',['../classvw__slim_1_1model__parser.html#a8ccc4980a5dcab48729ebd09a188b6f2',1,'vw_slim::model_parser']]],
   ['children',['children',['../structnode__socks.html#a7ed2657a18004dbca8ac585405efdd56',1,'node_socks']]],
