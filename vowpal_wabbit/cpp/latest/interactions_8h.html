@@ -103,8 +103,8 @@ Typedefs</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a5ee3c11303fb42b0ebc9e1d64c5ba206"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceVW_1_1LEARNER.html#ab481a83a0a49d7b827babe725e135b20">VW::LEARNER::base_learner</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#a5ee3c11303fb42b0ebc9e1d64c5ba206">INTERACTIONS::generate_interactions_setup</a> (<a class="el" href="structVW_1_1config_1_1options__i.html">VW::config::options_i</a> &amp;options, <a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;all)</td></tr>
 <tr class="separator:a5ee3c11303fb42b0ebc9e1d64c5ba206"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab689f2484c76a1ed43a9441fbb6e09a1"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#ab689f2484c76a1ed43a9441fbb6e09a1">INTERACTIONS::is_printable_namespace</a> (const unsigned char ns)</td></tr>
-<tr class="separator:ab689f2484c76a1ed43a9441fbb6e09a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33286dfd58d6227a0f1e303cfdbd9651"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#a33286dfd58d6227a0f1e303cfdbd9651">INTERACTIONS::is_interaction_ns</a> (const unsigned char ns)</td></tr>
+<tr class="separator:a33286dfd58d6227a0f1e303cfdbd9651"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab425e1173c73259e20bc610f381204f4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#ab425e1173c73259e20bc610f381204f4">INTERACTIONS::contains_wildcard</a> (const std::vector&lt; <a class="el" href="example__predict_8h.html#a6bf681255e2fe98ef5dd75040110a62b">namespace_index</a> &gt; &amp;interaction)</td></tr>
 <tr class="separator:ab425e1173c73259e20bc610f381204f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d94141d12f6bca7e1b7343e5951b891"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#a5d94141d12f6bca7e1b7343e5951b891">INTERACTIONS::contains_wildcard</a> (const std::vector&lt; <a class="el" href="feature__group_8h.html#ab770bf81983f504bd535130eaacff536">extent_term</a> &gt; &amp;interaction)</td></tr>
@@ -148,19 +148,15 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ade187a9be6c80424795021d22c045441"><td class="memItemLeft" align="right" valign="top">constexpr unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#ade187a9be6c80424795021d22c045441">INTERACTIONS::printable_start</a> = ' '</td></tr>
-<tr class="separator:ade187a9be6c80424795021d22c045441"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7057302d3be0589886a9176ed6de869"><td class="memItemLeft" align="right" valign="top">constexpr unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#ab7057302d3be0589886a9176ed6de869">INTERACTIONS::printable_end</a> = '~'</td></tr>
-<tr class="separator:ab7057302d3be0589886a9176ed6de869"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f87947f9c265befa67546371409c3f4"><td class="memItemLeft" align="right" valign="top">constexpr unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#a7f87947f9c265befa67546371409c3f4">INTERACTIONS::printable_ns_size</a> = printable_end - printable_start</td></tr>
-<tr class="separator:a7f87947f9c265befa67546371409c3f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad43ded7c39680da1dcb520e277b1b025"><td class="memItemLeft" align="right" valign="top">constexpr uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#ad43ded7c39680da1dcb520e277b1b025">INTERACTIONS::valid_ns_size</a></td></tr>
-<tr class="separator:ad43ded7c39680da1dcb520e277b1b025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf08db0bf4b65d619500a58517562f12"><td class="memItemLeft" align="right" valign="top">constexpr unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#adf08db0bf4b65d619500a58517562f12">INTERACTIONS::interaction_ns_start</a> = ' '</td></tr>
+<tr class="separator:adf08db0bf4b65d619500a58517562f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad03527522a7fe5b0b38ede5186f365ec"><td class="memItemLeft" align="right" valign="top">constexpr unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#ad03527522a7fe5b0b38ede5186f365ec">INTERACTIONS::interaction_ns_end</a> = '~'</td></tr>
+<tr class="separator:ad03527522a7fe5b0b38ede5186f365ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 19 2021 21:03:03 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Nov 19 2021 23:21:53 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

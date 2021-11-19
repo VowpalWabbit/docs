@@ -64,7 +64,6 @@ var searchData=
   ['val2',['Val2',['../classvw__slim_1_1internal_1_1location__value.html#a377624f0f711944a095e7619033e0b27',1,'vw_slim::internal::location_value']]],
   ['valid_5fconfig_5fsize',['valid_config_size',['../structVW_1_1automl_1_1interaction__config__manager.html#aa50021feabbf82852deb9f344dc935c2',1,'VW::automl::interaction_config_manager']]],
   ['valid_5fns',['valid_ns',['../example_8h.html#a2e31dea66535761be426441eae64ae21',1,'example.h']]],
-  ['valid_5fns_5fsize',['valid_ns_size',['../namespaceINTERACTIONS.html#ad43ded7c39680da1dcb520e277b1b025',1,'INTERACTIONS']]],
   ['validate_5fdefault_5fbits',['validate_default_bits',['../namespaceVW.html#a64ff027d8e2f08ee3a8681178003b667',1,'VW']]],
   ['validate_5fextents',['validate_extents',['../structfeatures.html#ae66f0c976f7fe3f77d0b118a806c0513',1,'features']]],
   ['validate_5fmin_5fmax_5flabel',['validate_min_max_label',['../namespaceVW.html#a263c6f2b4d4152510ef10f79f2d3172c',1,'VW']]],

@@ -24,6 +24,8 @@ var searchData=
   ['initial_5fweight',['initial_weight',['../structVW_1_1workspace.html#a5ce0a725f475e4da41a41cc58edfd6bb',1,'VW::workspace']]],
   ['initialize',['initialize',['../structSearch_1_1search__task.html#a9853405a85b5a1371f97e690c19416cd',1,'Search::search_task::initialize()'],['../structSearch_1_1search__metatask.html#a55f458263b052a399467df48f0b58930',1,'Search::search_metatask::initialize()']]],
   ['input',['input',['../structparser.html#a879fafa20463b21873abf1945c17f493',1,'parser']]],
+  ['interaction_5fns_5fend',['interaction_ns_end',['../namespaceINTERACTIONS.html#ad03527522a7fe5b0b38ede5186f365ec',1,'INTERACTIONS']]],
+  ['interaction_5fns_5fstart',['interaction_ns_start',['../namespaceINTERACTIONS.html#adf08db0bf4b65d619500a58517562f12',1,'INTERACTIONS']]],
   ['interactions',['interactions',['../structexample__predict.html#afb676d8f3ba9052d93b865610e44bb90',1,'example_predict::interactions()'],['../structVW_1_1workspace.html#ad707621b18f8975075b3373b6699bc3f',1,'VW::workspace::interactions()'],['../classSlotOutcomeList.html#a0fc1f14e08b16bdb49a5304f6e0d2baa',1,'SlotOutcomeList::interactions()']]],
   ['inv_5fhash_5fregressor_5fname',['inv_hash_regressor_name',['../structVW_1_1workspace.html#a8a4150e901445336a09ba8b49d126fcb',1,'VW::workspace']]],
   ['invalid_5fvw_5fexample',['INVALID_VW_EXAMPLE',['../vwdll_8h.html#ab50a2eeb73e146706e28920d92929ed9',1,'vwdll.h']]],

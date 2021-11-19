@@ -1,7 +1,6 @@
 var searchData=
 [
   ['valid_5fconfig_5fsize',['valid_config_size',['../structVW_1_1automl_1_1interaction__config__manager.html#aa50021feabbf82852deb9f344dc935c2',1,'VW::automl::interaction_config_manager']]],
-  ['valid_5fns_5fsize',['valid_ns_size',['../namespaceINTERACTIONS.html#ad43ded7c39680da1dcb520e277b1b025',1,'INTERACTIONS']]],
   ['value',['value',['../structVW_1_1config_1_1options__i_1_1is__vector.html#a3d77cce25468a3e472473b0217050eaf',1,'VW::config::options_i::is_vector::value()'],['../structVW_1_1config_1_1options__i_1_1is__vector_3_01std_1_1vector_3_01T_00_01A_01_4_01_4.html#a5c06b7a367a41082108ef6bdf019c34b',1,'VW::config::options_i::is_vector&lt; std::vector&lt; T, A &gt; &gt;::value()'],['../structVW_1_1config_1_1is__scalar__option__type.html#a5cf80b1f184bd33234a20ad75fcd4ef9',1,'VW::config::is_scalar_option_type::value()']]],
   ['values',['values',['../structfeatures.html#a12befb364b2dcda6f052c9e794ac68e4',1,'features']]],
   ['values_5fabove_5fand_5fincluding_5fzero',['VALUES_ABOVE_AND_INCLUDING_ZERO',['../namespaceVW_1_1details.html#a68e7a75400178beccf8b637920c81ca5',1,'VW::details']]],
