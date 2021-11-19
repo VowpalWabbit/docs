@@ -126,7 +126,7 @@ var searchData=
   ['get_5fuint',['get_uint',['../structVW_1_1metric__sink.html#ac66f1b4cc3c003ee6a2a2649b3455fcf',1,'VW::metric_sink']]],
   ['get_5funused_5fexample',['get_unused_example',['../namespaceVW.html#ad7456d12cfa4456bf02a489c77c7305e',1,'VW']]],
   ['get_5fvw_5fpointer_5funsafe',['get_vw_pointer_unsafe',['../structSearch_1_1search.html#a7cb1d324253b2cc4d7122579028f7d87',1,'Search::search']]],
-  ['get_5fweight',['get_weight',['../structlabel__parser.html#a3f7bc93d6cc7df72f539b8cef5b175ed',1,'label_parser::get_weight()'],['../namespaceVW.html#ad51621e341276ffe805acd4404dd8004',1,'VW::get_weight()']]],
+  ['get_5fweight',['get_weight',['../structlabel__parser.html#a3f7bc93d6cc7df72f539b8cef5b175ed',1,'label_parser::get_weight()'],['../namespaceVW.html#ad2c22f7b3c1d7429f6cc2dfe4cbc6278',1,'VW::get_weight()']]],
   ['get_5fwriter',['get_writer',['../structVW_1_1io_1_1socket.html#a1800ca045993bf0c10aaa4fd8bd6f453',1,'VW::io::socket']]],
   ['getblock',['getblock',['../namespaceMURMUR__HASH__3.html#acab1181c3de4de92ec8c9a30059fc8c0',1,'MURMUR_HASH_3']]],
   ['gethasher',['getHasher',['../hashstring_8h.html#ad2d39f84e4e19d8488c984287d0a497e',1,'hashstring.h']]],
