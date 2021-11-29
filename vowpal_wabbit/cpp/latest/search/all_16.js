@@ -103,7 +103,7 @@ var searchData=
   ['version_5fstruct',['version_struct',['../structVW_1_1version__struct.html',1,'VW::version_struct'],['../structVW_1_1version__struct.html#ace4269b259846532bc32d90fe430d6af',1,'VW::version_struct::version_struct(int maj=0, int min=0, int rv=0)'],['../structVW_1_1version__struct.html#ae1b252a01d68084e2d7a8ea3f2778dae',1,'VW::version_struct::version_struct(const char *v_str)'],['../structVW_1_1version__struct.html#a223dc0f5a529f06a8ff2041a7c830dec',1,'VW::version_struct::version_struct(const version_struct &amp;other)=default'],['../structVW_1_1version__struct.html#a0b2c20a8707d1e42e81a0bf1f04df7fb',1,'VW::version_struct::version_struct(version_struct &amp;&amp;other) noexcept=default']]],
   ['visit',['visit',['../structVW_1_1metric__sink.html#a386d1ac84defeb04f9609ed045c0c627',1,'VW::metric_sink']]],
   ['vsprintf_5fs',['vsprintf_s',['../crossplat__compat_8h.html#a803c6f2523bae626734a87a074e480e9',1,'crossplat_compat.h']]],
-  ['vw',['VW',['../namespaceVW.html',1,'VW'],['../global__data_8h.html#a9953f828dd26f6e08b15104bf2e25a64',1,'vw():&#160;global_data.h']]],
+  ['vw',['VW',['../namespaceVW.html',1,'VW'],['../global__data_8h.html#aa72fdae5a5e5f41861ec0cb698959644',1,'VW():&#160;global_data.h']]],
   ['vw_2eh',['vw.h',['../vw_8h.html',1,'']]],
   ['vw_5faddlabel',['VW_AddLabel',['../vwdll_8h.html#aaaedef4cf9645cabbf1216bb5244b1b2',1,'vwdll.h']]],
   ['vw_5faddstringlabel',['VW_AddStringLabel',['../vwdll_8h.html#a17a2ce7c5316f14f5e93578423547839',1,'vwdll.h']]],
