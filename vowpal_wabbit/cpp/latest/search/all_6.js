@@ -88,6 +88,8 @@ var searchData=
   ['free_5fit',['free_it',['../memory_8h.html#a8d7c2f582fe6b06111fd091cb0f5c6b1',1,'memory.h']]],
   ['free_5fparser',['free_parser',['../parser_8h.html#a1980573996bb6bfdbbcbcbd79dc390d7',1,'parser.h']]],
   ['free_5fptr',['free_ptr',['../memory_8h.html#a4dbd8ec0fd15b599650458cdf2b3f1bf',1,'memory.h']]],
+  ['freegrad_2eh',['freegrad.h',['../freegrad_8h.html',1,'']]],
+  ['freegrad_5fsetup',['freegrad_setup',['../namespaceVW.html#afe97763a1ea4678cf8ccb3d6e58f2149',1,'VW']]],
   ['from_5fstring',['from_string',['../structVW_1_1version__struct.html#af3f04eb10b57a3fb52192082200f8a5e',1,'VW::version_struct']]],
   ['fs',['fs',['../structflat__example.html#a77947dfb239fd7487b88e3842a8f0594',1,'flat_example::fs()'],['../structVW_1_1primitive__feature__space.html#a7196cfc91add16e07c8ff2d442c640e3',1,'VW::primitive_feature_space::fs()']]],
   ['fscanf_5fs',['fscanf_s',['../crossplat__compat_8h.html#a0a33c9047aaa39206cb522b2b9900bbb',1,'crossplat_compat.h']]],
