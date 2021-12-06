@@ -69,7 +69,7 @@ var searchData=
   ['set_5fpersist_5fmetrics',['set_persist_metrics',['../structVW_1_1LEARNER_1_1common__learner__builder.html#a19d259c62225378ec13fa4f727e50001',1,'VW::LEARNER::common_learner_builder']]],
   ['set_5fpredict',['set_predict',['../structVW_1_1LEARNER_1_1common__learner__builder.html#a6cf239181ec9ad800a07dd5fd1ea978a',1,'VW::LEARNER::common_learner_builder']]],
   ['set_5fprint_5fexample',['set_print_example',['../structVW_1_1LEARNER_1_1common__learner__builder.html#a3359c9c47cbbc760f5f65c6b5d75b47f',1,'VW::LEARNER::common_learner_builder']]],
-  ['set_5frandom_5fstate',['set_random_state',['../structrand__state.html#a5d52e81418f361963c4519804f0d38c1',1,'rand_state']]],
+  ['set_5frandom_5fstate',['set_random_state',['../structVW_1_1rand__state.html#a9de725cf53af77e5e57cafbae7345fc3',1,'VW::rand_state']]],
   ['set_5fsave_5fload',['set_save_load',['../structVW_1_1LEARNER_1_1common__learner__builder.html#a627c5141cf0eec0469e5b9570e2ec21e',1,'VW::LEARNER::common_learner_builder']]],
   ['set_5fsensitivity',['set_sensitivity',['../structVW_1_1LEARNER_1_1common__learner__builder.html#a8ccb03722e85a41a8019366a93c00cf2',1,'VW::LEARNER::common_learner_builder']]],
   ['set_5fstring',['set_string',['../structVW_1_1metric__sink.html#ad57ecdeb03cac319e171cc1d02a4091c',1,'VW::metric_sink']]],
