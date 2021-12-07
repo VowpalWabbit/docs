@@ -13,7 +13,7 @@ var searchData=
   ['task_5fdata',['task_data',['../structHookTask_1_1task__data.html',1,'HookTask::task_data'],['../structSearch_1_1search.html#a5a683fe3742c3b43f79fc40a8bdf365f',1,'Search::search::task_data()']]],
   ['task_5fname',['task_name',['../structSearch_1_1search.html#a4864e478d4bb7af53e04a84cec754e3b',1,'Search::search::task_name()'],['../structSearch_1_1search__task.html#ad2c6420e44a300be33991333d9be5190',1,'Search::search_task::task_name()']]],
   ['term_5fis_5fempty',['term_is_empty',['../namespaceINTERACTIONS.html#a0694fb4d5182647e28fcd437e18d37e0',1,'INTERACTIONS']]],
-  ['test_5fadf_5fsequence',['test_adf_sequence',['../namespaceCB__ADF.html#abbca52475f0637f671ea2dd2c4ec0065',1,'CB_ADF']]],
+  ['test_5fadf_5fsequence',['test_adf_sequence',['../namespaceCB__ADF.html#a222ad1ea00e45ecd5ac9186abdf21bff',1,'CB_ADF']]],
   ['test_5flabel',['test_label',['../structlabel__parser.html#a32fb1836c87a47252571be87a0b1ac7d',1,'label_parser::test_label()'],['../namespaceMULTICLASS.html#a95cadbeb4fe6dfe01342045d68b130f0',1,'MULTICLASS::test_label()']]],
   ['test_5fonly',['test_only',['../structexample.html#aafed65a0405faa864c87b8b75d39ef4d',1,'example']]],
   ['text_5freader',['text_reader',['../structparser.html#a78bfff4214bd617918bf7a989b5dd971',1,'parser']]],

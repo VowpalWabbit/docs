@@ -80,8 +80,8 @@ Functions</h2></td></tr>
 <tr class="separator:a2e10d3c30cd9736cd49e800ede17cc6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49cd7f7de14b12a2bafc4ae55693c69b"><td class="memItemLeft" align="right" valign="top">std::pair&lt; bool, <a class="el" href="structCB_1_1cb__class.html">cb_class</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceCB.html#a49cd7f7de14b12a2bafc4ae55693c69b">get_observed_cost_cb</a> (const <a class="el" href="structCB_1_1label.html">label</a> &amp;ld)</td></tr>
 <tr class="separator:a49cd7f7de14b12a2bafc4ae55693c69b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2df3b188ded2312795626a7e279d696c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceCB.html#a2df3b188ded2312795626a7e279d696c">print_update</a> (<a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;all, bool is_test, <a class="el" href="structexample.html">example</a> &amp;ec, <a class="el" href="cb_8h.html#ababa4c0392834695d0ff6255e8d3ce77">multi_ex</a> *ec_seq, bool action_scores, <a class="el" href="structCB_1_1cb__class.html">CB::cb_class</a> *known_cost)</td></tr>
-<tr class="separator:a2df3b188ded2312795626a7e279d696c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1aac2148c5919b7514a62441f736d68f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceCB.html#a1aac2148c5919b7514a62441f736d68f">print_update</a> (<a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;all, bool is_test, const <a class="el" href="structexample.html">example</a> &amp;ec, const <a class="el" href="cb_8h.html#ababa4c0392834695d0ff6255e8d3ce77">multi_ex</a> *ec_seq, bool action_scores, const <a class="el" href="structCB_1_1cb__class.html">CB::cb_class</a> *known_cost)</td></tr>
+<tr class="separator:a1aac2148c5919b7514a62441f736d68f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbf7b4dd9d0702134c4ab128f2eef0e1"><td class="memTemplParams" colspan="2">template&lt;typename LabelT  = CB::label&gt; </td></tr>
 <tr class="memitem:acbf7b4dd9d0702134c4ab128f2eef0e1"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceCB.html#acbf7b4dd9d0702134c4ab128f2eef0e1">read_cached_label_additional_fields</a> (LabelT &amp;ld, <a class="el" href="classio__buf.html">io_buf</a> &amp;cache)</td></tr>
 <tr class="separator:acbf7b4dd9d0702134c4ab128f2eef0e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -320,8 +320,8 @@ template&lt;typename LabelT  = CB::label, typename LabelElmT  = cb_class&gt; </d
 
 </div>
 </div>
-<a id="a2df3b188ded2312795626a7e279d696c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2df3b188ded2312795626a7e279d696c">&#9670;&nbsp;</a></span>print_update()</h2>
+<a id="a1aac2148c5919b7514a62441f736d68f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1aac2148c5919b7514a62441f736d68f">&#9670;&nbsp;</a></span>print_update()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -341,13 +341,13 @@ template&lt;typename LabelT  = CB::label, typename LabelElmT  = cb_class&gt; </d
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structexample.html">example</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structexample.html">example</a> &amp;&#160;</td>
           <td class="paramname"><em>ec</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="cb_8h.html#ababa4c0392834695d0ff6255e8d3ce77">multi_ex</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="cb_8h.html#ababa4c0392834695d0ff6255e8d3ce77">multi_ex</a> *&#160;</td>
           <td class="paramname"><em>ec_seq</em>, </td>
         </tr>
         <tr>
@@ -359,7 +359,7 @@ template&lt;typename LabelT  = CB::label, typename LabelElmT  = cb_class&gt; </d
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structCB_1_1cb__class.html">CB::cb_class</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="structCB_1_1cb__class.html">CB::cb_class</a> *&#160;</td>
           <td class="paramname"><em>known_cost</em>&#160;</td>
         </tr>
         <tr>
@@ -450,7 +450,7 @@ template&lt;typename LabelT  = CB::label&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 6 2021 21:11:35 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 7 2021 13:43:38 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

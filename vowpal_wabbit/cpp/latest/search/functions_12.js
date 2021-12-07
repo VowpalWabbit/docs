@@ -3,7 +3,7 @@ var searchData=
   ['tagstate',['TagState',['../structTagState.html#a45e93c4c4eca7e556834771aac20e057',1,'TagState']]],
   ['takedown',['takedown',['../namespaceGraphTask.html#a478898a28fc45a45873296e7e8844741',1,'GraphTask::takedown()'],['../namespaceSequenceSpanTask.html#a18d654e30f150f7aeea0c6dda49c0347',1,'SequenceSpanTask::takedown()']]],
   ['term_5fis_5fempty',['term_is_empty',['../namespaceINTERACTIONS.html#a0694fb4d5182647e28fcd437e18d37e0',1,'INTERACTIONS']]],
-  ['test_5fadf_5fsequence',['test_adf_sequence',['../namespaceCB__ADF.html#abbca52475f0637f671ea2dd2c4ec0065',1,'CB_ADF']]],
+  ['test_5fadf_5fsequence',['test_adf_sequence',['../namespaceCB__ADF.html#a222ad1ea00e45ecd5ac9186abdf21bff',1,'CB_ADF']]],
   ['test_5flabel',['test_label',['../namespaceMULTICLASS.html#a95cadbeb4fe6dfe01342045d68b130f0',1,'MULTICLASS']]],
   ['textstate',['TextState',['../structTextState.html#a7b198588c0209d4a4166953cc341538f',1,'TextState']]],
   ['tint',['tint',['../structVW_1_1config_1_1options__i.html#a4cad1f07848c2aba9ec4c503bb1c2527',1,'VW::config::options_i::tint()'],['../structVW_1_1config_1_1options__name__extractor.html#a7d3d69a96b3d423c6c2d21c7c55ddf59',1,'VW::config::options_name_extractor::tint()'],['../structVW_1_1config_1_1options__boost__po.html#a03c3c998fb52187b893a21b93e35b539',1,'VW::config::options_boost_po::tint()']]],
