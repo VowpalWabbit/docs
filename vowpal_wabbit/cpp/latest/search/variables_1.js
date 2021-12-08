@@ -26,6 +26,8 @@ var searchData=
   ['array_5fstate',['array_state',['../structContext.html#afffe902d655a213d67b5ed8bc930c945',1,'Context']]],
   ['array_5fuint_5fstate',['array_uint_state',['../structContext.html#a4b41cc44be8c5ffcc29b8486e498dd03',1,'Context']]],
   ['audit',['audit',['../structVW_1_1workspace.html#a0c81d2b8bc9b6855fea00384e3d47623',1,'VW::workspace::audit()'],['../structparser.html#abb101905005cba3160d0a78339c2d302',1,'parser::audit()']]],
+  ['audit_5fbuffer',['audit_buffer',['../structVW_1_1workspace.html#a0f3d90765dddb364f2867718a0d4b8b9',1,'VW::workspace']]],
+  ['audit_5fwriter',['audit_writer',['../structVW_1_1workspace.html#a8375d00e9752db8dc93155b582fa7994',1,'VW::workspace']]],
   ['auto_5fcondition_5ffeatures',['AUTO_CONDITION_FEATURES',['../namespaceSearch.html#a64c3357ab3222147fb87242f94990116',1,'Search']]],
   ['auto_5fhamming_5floss',['AUTO_HAMMING_LOSS',['../namespaceSearch.html#a2e71a83a633bcffc3df35b1de1bec797',1,'Search']]],
   ['autolink_5fnamespace',['autolink_namespace',['../constant_8h.html#ac2bad8142eb4b0916e5a556988a08ffd',1,'constant.h']]],
