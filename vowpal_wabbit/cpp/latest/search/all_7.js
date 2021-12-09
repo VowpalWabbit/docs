@@ -90,6 +90,7 @@ var searchData=
   ['get_5fmask',['get_mask',['../structSearch_1_1search.html#af19188755a72fe300ad7293ef155f512',1,'Search::search']]],
   ['get_5fmetatask_5fdata',['get_metatask_data',['../structSearch_1_1search.html#a2ae695e32965086c2dea60681bbc8f18',1,'Search::search']]],
   ['get_5fmultilabel_5fpredictions',['get_multilabel_predictions',['../namespaceVW.html#a273f5f1c98414ba01411de006c60c966',1,'VW']]],
+  ['get_5fname',['get_name',['../structVW_1_1LEARNER_1_1learner.html#ad1682d12a19ecc850955e12edc1bbebb',1,'VW::LEARNER::learner']]],
   ['get_5fnum_5ffeatures',['get_num_features',['../structexample.html#af258de80e770c97a7b9f427776ae1554',1,'example']]],
   ['get_5fnumber',['get_number',['../parse__slates__example__json_8h.html#a23dbf6d24901b2a77e4dea37c7775d38',1,'parse_slates_example_json.h']]],
   ['get_5fobject',['get_object',['../structVW_1_1no__lock__object__pool.html#a8e8305f0952ceaffca8f2f34a4ddfd82',1,'VW::no_lock_object_pool::get_object()'],['../structVW_1_1object__pool.html#a206230f351210d7a36779e2929e1d10c',1,'VW::object_pool::get_object()']]],
