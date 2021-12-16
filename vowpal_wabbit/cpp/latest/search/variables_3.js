@@ -84,6 +84,7 @@ var searchData=
   ['cs_5factive',['cs_active',['../structvw__dbg.html#a79efcf8fc3187c0d8e42730a419ed2a0',1,'vw_dbg']]],
   ['cs_5flabel',['cs_label',['../namespaceCOST__SENSITIVE.html#a1ac8560c01e3044b4617da6d08d479eb',1,'COST_SENSITIVE']]],
   ['csoaa',['csoaa',['../structvw__dbg.html#ae4a1925f489dae82f16e923c9912b942',1,'vw_dbg']]],
+  ['csoaa_5fldf',['csoaa_ldf',['../structvw__dbg.html#a87487325d7ec30135283c521438b21d5',1,'vw_dbg']]],
   ['ctx',['ctx',['../structVWReaderHandler.html#a9f3b6e73b45f4d591256d98089a1ccc1',1,'VWReaderHandler']]],
   ['cubic_5fconstant',['cubic_constant',['../constant_8h.html#a35e3ed020df3b2ca3e41057955905246',1,'constant.h']]],
   ['cubic_5fconstant2',['cubic_constant2',['../constant_8h.html#a834d38a058ed07e44f53e20e232c82aa',1,'constant.h']]],

@@ -237,6 +237,8 @@ var searchData=
   ['csldf_5fsetup',['csldf_setup',['../namespaceCSOAA.html#a93ccb591dd3214dc953a1daed8f36543',1,'CSOAA']]],
   ['csoaa',['CSOAA',['../namespaceCSOAA.html',1,'CSOAA'],['../structvw__dbg.html#ae4a1925f489dae82f16e923c9912b942',1,'vw_dbg::csoaa()']]],
   ['csoaa_2eh',['csoaa.h',['../csoaa_8h.html',1,'']]],
+  ['csoaa_5fldf',['csoaa_ldf',['../structvw__dbg.html#a87487325d7ec30135283c521438b21d5',1,'vw_dbg']]],
+  ['csoaa_5fldf_2eh',['csoaa_ldf.h',['../csoaa__ldf_8h.html',1,'']]],
   ['csoaa_5fsetup',['csoaa_setup',['../namespaceCSOAA.html#afc7dd22ca802ed9429304069443b2deb',1,'CSOAA']]],
   ['ctx',['ctx',['../structVWReaderHandler.html#a9f3b6e73b45f4d591256d98089a1ccc1',1,'VWReaderHandler']]],
   ['cubic_5fconstant',['cubic_constant',['../constant_8h.html#a35e3ed020df3b2ca3e41057955905246',1,'constant.h']]],
