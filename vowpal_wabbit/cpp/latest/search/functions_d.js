@@ -43,7 +43,6 @@ var searchData=
   ['output_5fand_5faccount_5fno_5flabel_5fexample',['output_and_account_no_label_example',['../namespaceno__label.html#ad73bd13f46cbafe5a803fef91452c5c9',1,'no_label']]],
   ['output_5fbyte',['output_byte',['../cache_8h.html#aceecd924458f9cec915af446664256ee',1,'cache.h']]],
   ['output_5fexample',['output_example',['../namespaceCOST__SENSITIVE.html#aff6b605d10dc0809ee8ac1a6008cbf55',1,'COST_SENSITIVE::output_example(VW::workspace &amp;all, const example &amp;ec)'],['../namespaceCOST__SENSITIVE.html#ae3ec552f071a9f886375ccd229165eae',1,'COST_SENSITIVE::output_example(VW::workspace &amp;all, const example &amp;ec, const COST_SENSITIVE::label &amp;cs_label, uint32_t multiclass_prediction)'],['../namespaceMULTILABEL.html#a5c9013cc915c8ca1da1ad60948563017',1,'MULTILABEL::output_example()']]],
-  ['output_5ffeatures',['output_features',['../cache_8h.html#af4875cfa395d3d1b81065c5cb664d411',1,'cache.h']]],
   ['output_5fmetrics',['output_metrics',['../namespaceVW_1_1metrics.html#abb283641a0b3ae2e61421cdb705ac86e',1,'VW::metrics']]],
   ['overflow',['overflow',['../classVW_1_1io_1_1noop__output__streambuf.html#ab6e5fbd324d84ef02e994fca2da18550',1,'VW::io::noop_output_streambuf']]],
   ['owning_5fostream',['owning_ostream',['../classVW_1_1io_1_1owning__ostream.html#ae2bb62055bb2fda0ff7adc4e67215d71',1,'VW::io::owning_ostream']]]

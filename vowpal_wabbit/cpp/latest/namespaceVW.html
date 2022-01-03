@@ -255,8 +255,8 @@ Functions</h2></td></tr>
 <tr class="separator:a485bcb8042f95f793e61258434951898"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb098b696c5d4ffb0bea3005932c991d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#adb098b696c5d4ffb0bea3005932c991d">write_example_to_cache</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;output, <a class="el" href="structexample.html">example</a> *ae, <a class="el" href="structlabel__parser.html">label_parser</a> &amp;lbl_parser, uint64_t parse_mask, <a class="el" href="structVW_1_1details_1_1cache__temp__buffer.html">VW::details::cache_temp_buffer</a> &amp;temp_buffer)</td></tr>
 <tr class="separator:adb098b696c5d4ffb0bea3005932c991d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac2d36339299caa1f11e577ec798fc79"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#aac2d36339299caa1f11e577ec798fc79">read_example_from_cache</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;input, <a class="el" href="structexample.html">example</a> *ae, <a class="el" href="structlabel__parser.html">label_parser</a> &amp;lbl_parser, bool sorted_cache)</td></tr>
-<tr class="separator:aac2d36339299caa1f11e577ec798fc79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1eb9ea0a152a9f4e903be7f706fd8a0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ad1eb9ea0a152a9f4e903be7f706fd8a0">read_example_from_cache</a> (<a class="el" href="structVW_1_1workspace.html">VW::workspace</a> *all, <a class="el" href="classio__buf.html">io_buf</a> &amp;buf, <a class="el" href="structv__array.html">v_array</a>&lt; <a class="el" href="structexample.html">example</a> *&gt; &amp;examples)</td></tr>
+<tr class="separator:ad1eb9ea0a152a9f4e903be7f706fd8a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a356b015f53b784891ff85bff21a158e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceVW.html#afc6602380e780c653a55bf44b6e5c881">cb_type_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a356b015f53b784891ff85bff21a158e7">cb_type_from_string</a> (<a class="el" href="namespaceVW.html#a85aa9dc51ef86f7e832147b1c0c93d72">string_view</a> str)</td></tr>
 <tr class="separator:a356b015f53b784891ff85bff21a158e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8eb4eceaff6e66ed1dceef02ef291c14"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceVW.html#a85aa9dc51ef86f7e832147b1c0c93d72">string_view</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a8eb4eceaff6e66ed1dceef02ef291c14">to_string</a> (<a class="el" href="namespaceVW.html#afc6602380e780c653a55bf44b6e5c881">cb_type_t</a> type)</td></tr>
@@ -2985,8 +2985,8 @@ template&lt;typename T , typename... Args&gt; </div>
 
 </div>
 </div>
-<a id="aac2d36339299caa1f11e577ec798fc79"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac2d36339299caa1f11e577ec798fc79">&#9670;&nbsp;</a></span>read_example_from_cache()</h2>
+<a id="ad1eb9ea0a152a9f4e903be7f706fd8a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1eb9ea0a152a9f4e903be7f706fd8a0">&#9670;&nbsp;</a></span>read_example_from_cache()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2994,26 +2994,20 @@ template&lt;typename T , typename... Args&gt; </div>
         <tr>
           <td class="memname">int VW::read_example_from_cache </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="structVW_1_1workspace.html">VW::workspace</a> *&#160;</td>
+          <td class="paramname"><em>all</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype"><a class="el" href="classio__buf.html">io_buf</a> &amp;&#160;</td>
-          <td class="paramname"><em>input</em>, </td>
+          <td class="paramname"><em>buf</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structexample.html">example</a> *&#160;</td>
-          <td class="paramname"><em>ae</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structlabel__parser.html">label_parser</a> &amp;&#160;</td>
-          <td class="paramname"><em>lbl_parser</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>sorted_cache</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="structv__array.html">v_array</a>&lt; <a class="el" href="structexample.html">example</a> *&gt; &amp;&#160;</td>
+          <td class="paramname"><em>examples</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -4265,7 +4259,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 3 2022 15:49:42 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jan 3 2022 17:49:23 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

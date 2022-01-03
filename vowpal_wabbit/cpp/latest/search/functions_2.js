@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['cache_5ffeatures',['cache_features',['../cache_8h.html#a442df23fec457c355f2c1d17b4960eed',1,'cache.h']]],
+  ['cache_5ffeatures',['cache_features',['../cache_8h.html#aec7ec6a34fa037b99dcff4cc1fc87452',1,'cache.h']]],
+  ['cache_5findex',['cache_index',['../cache_8h.html#a8d7d5e613733f379068b586c9c66f854',1,'cache.h']]],
   ['cache_5ftag',['cache_tag',['../cache_8h.html#a240768c48f05af593153264363e1019d',1,'cache.h']]],
   ['cache_5ftemp_5fbuffer',['cache_temp_buffer',['../structVW_1_1details_1_1cache__temp__buffer.html#ae6cb5ecc548beca280733d19a5385a14',1,'VW::details::cache_temp_buffer']]],
   ['cached_5flearner',['cached_learner',['../structVW_1_1cached__learner.html#a77469cf8d15648287247e3d8eb623b3f',1,'VW::cached_learner::cached_learner(VW::LEARNER::base_learner *learner=nullptr)'],['../structVW_1_1cached__learner.html#a85d2d615319a53475b1ea20ab00b46b4',1,'VW::cached_learner::cached_learner(VW::workspace &amp;all, VW::config::options_i &amp;options, VW::LEARNER::base_learner *learner=nullptr)']]],
