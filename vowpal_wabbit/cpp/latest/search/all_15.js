@@ -27,6 +27,5 @@ var searchData=
   ['update_5ff',['update_f',['../structVW_1_1LEARNER_1_1learn__data.html#a756f38f0bee0f8ed57c327836add861b',1,'VW::LEARNER::learn_data']]],
   ['update_5finteractions_5fif_5fnew_5fnamespace_5fseen',['update_interactions_if_new_namespace_seen',['../structINTERACTIONS_1_1interactions__generator.html#af59d8af7d6da2b2ff884c4d4ecb73dd9',1,'INTERACTIONS::interactions_generator']]],
   ['updated_5fprediction',['updated_prediction',['../structexample.html#a86c4567ec3771465b2387bdfe83eb86c',1,'example']]],
-  ['upper_5flimit',['upper_limit',['../structvw__logger.html#a4fd9afb3ff95de1a197fd8bc96425a3b',1,'vw_logger']]],
   ['ut_5futil_2eh',['ut_util.h',['../ut__util_8h.html',1,'']]]
 ];

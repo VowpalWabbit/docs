@@ -38,8 +38,7 @@ var searchData=
   ['lineparseerror',['LineParseError',['../structdsjson__metrics.html#ab28dcf002ad9e0699e4ebfd6d3813b8c',1,'dsjson_metrics']]],
   ['live_5finteractions',['live_interactions',['../structVW_1_1automl_1_1scored__config.html#a928804b745d256fde3f5e85784190d68',1,'VW::automl::scored_config']]],
   ['loaded_5fdictionaries',['loaded_dictionaries',['../structVW_1_1workspace.html#a40c9de1e1015c27d3d5b098481acbad7',1,'VW::workspace']]],
-  ['log_5fcount',['log_count',['../namespaceVW_1_1io_1_1logger_1_1detail.html#a621d71e6fba1dab32ec50d34603df45d',1,'VW::io::logger::detail']]],
-  ['logger',['logger',['../structVW_1_1workspace.html#a780ec754fde9d215df2b515d95445ad4',1,'VW::workspace']]],
+  ['logger',['logger',['../structVW_1_1workspace.html#a64e66403030d2917810f6684439c38dc',1,'VW::workspace']]],
   ['loss',['loss',['../structexample.html#aec82f8fecc8ad2a13e54ecf83dfbc5c9',1,'example::loss()'],['../structVW_1_1workspace.html#a7353810c29b1e203dc46ea27098aa634',1,'VW::workspace::loss()']]],
   ['lower_5fbound',['lower_bound',['../structVW_1_1automl_1_1exclusion__config.html#ad9186cca87098a3464a7e04ea3f3d6b2',1,'VW::automl::exclusion_config']]]
 ];

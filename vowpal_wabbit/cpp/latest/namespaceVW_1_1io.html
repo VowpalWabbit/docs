@@ -66,6 +66,7 @@ $(function() {
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">VW::io Namespace Reference</div>  </div>
@@ -76,11 +77,11 @@ $(function() {
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceVW_1_1io_1_1details"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io_1_1details.html">details</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceVW_1_1io_1_1logger"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io_1_1logger.html">logger</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1io_1_1logger.html">logger</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1io_1_1noop__output__streambuf.html">noop_output_streambuf</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1io_1_1owning__ostream.html">owning_ostream</a></td></tr>
@@ -98,6 +99,26 @@ Classes</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:a47b86ce42993535702b35d2045e1cd7b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io.html#a47b86ce42993535702b35d2045e1cd7b">write_func_t</a> = ssize_t(*)(void *, const char *, size_t)</td></tr>
 <tr class="separator:a47b86ce42993535702b35d2045e1cd7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ac0bb552479e3284943bb50d27084d074"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io.html#ac0bb552479e3284943bb50d27084d074">output_location</a> { <a class="el" href="namespaceVW_1_1io.html#ac0bb552479e3284943bb50d27084d074ac68271a63ddbc431c307beb7d2918275">output_location::out</a>, 
+<a class="el" href="namespaceVW_1_1io.html#ac0bb552479e3284943bb50d27084d074a56bd7107802ebe56c6918992f0608ec6">output_location::err</a>, 
+<a class="el" href="namespaceVW_1_1io.html#ac0bb552479e3284943bb50d27084d074a6805d2eb09708dde50e925b430024691">output_location::compat</a>
+ }</td></tr>
+<tr class="separator:ac0bb552479e3284943bb50d27084d074"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf6d3dfe9781b53c9fbc2908a8f0641c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io.html#aaf6d3dfe9781b53c9fbc2908a8f0641c">log_level</a> { <br />
+&#160;&#160;<a class="el" href="namespaceVW_1_1io.html#aaf6d3dfe9781b53c9fbc2908a8f0641ca04a75036e9d520bb983c5ed03b8d0182">log_level::trace</a> = spdlog::level::trace, 
+<a class="el" href="namespaceVW_1_1io.html#aaf6d3dfe9781b53c9fbc2908a8f0641caad42f6697b035b7580e4fef93be20b4d">log_level::debug</a> = spdlog::level::debug, 
+<a class="el" href="namespaceVW_1_1io.html#aaf6d3dfe9781b53c9fbc2908a8f0641cacaf9b6b99962bf5c2264824231d7a40c">log_level::info</a> = spdlog::level::info, 
+<a class="el" href="namespaceVW_1_1io.html#aaf6d3dfe9781b53c9fbc2908a8f0641ca1ea4c3ab05ee0c6d4de30740443769cb">log_level::warn</a> = spdlog::level::warn, 
+<br />
+&#160;&#160;<a class="el" href="namespaceVW_1_1io.html#aaf6d3dfe9781b53c9fbc2908a8f0641cacb5e100e5a9a3e7f6d1fd97512215282">log_level::error</a> = spdlog::level::err, 
+<a class="el" href="namespaceVW_1_1io.html#aaf6d3dfe9781b53c9fbc2908a8f0641ca7e85bcb66fb9a809d5ab4f62a8b8bea8">log_level::critical</a> = spdlog::level::critical, 
+<a class="el" href="namespaceVW_1_1io.html#aaf6d3dfe9781b53c9fbc2908a8f0641ca3262d48df5d75e3452f0f16b313b7808">log_level::off</a> = spdlog::level::off
+<br />
+ }</td></tr>
+<tr class="separator:aaf6d3dfe9781b53c9fbc2908a8f0641c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -125,6 +146,16 @@ Functions</h2></td></tr>
 <tr class="separator:ae757f4f258f87ef5b1ceb012d3e356d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64fffb68e0d290a508476f0c8b160694"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="structVW_1_1io_1_1reader.html">reader</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io.html#a64fffb68e0d290a508476f0c8b160694">create_buffer_view</a> (const char *data, size_t len)</td></tr>
 <tr class="separator:a64fffb68e0d290a508476f0c8b160694"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdd00bcfa4079aa83dc0791cc256ea2f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceVW_1_1io.html#ac0bb552479e3284943bb50d27084d074">output_location</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io.html#acdd00bcfa4079aa83dc0791cc256ea2f">get_output_location</a> (const std::string &amp;name)</td></tr>
+<tr class="separator:acdd00bcfa4079aa83dc0791cc256ea2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ad16c5f90facc29df5eb8d3222dfffe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceVW_1_1io.html#aaf6d3dfe9781b53c9fbc2908a8f0641c">log_level</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io.html#a7ad16c5f90facc29df5eb8d3222dfffe">get_log_level</a> (const std::string &amp;level)</td></tr>
+<tr class="separator:a7ad16c5f90facc29df5eb8d3222dfffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a320c76af5bc4c3e1a89309cd5b916bf0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVW_1_1io_1_1logger.html">logger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io.html#a320c76af5bc4c3e1a89309cd5b916bf0">create_default_logger</a> ()</td></tr>
+<tr class="separator:a320c76af5bc4c3e1a89309cd5b916bf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abded10f9d1291725518a9699aabba30d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVW_1_1io_1_1logger.html">logger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io.html#abded10f9d1291725518a9699aabba30d">create_null_logger</a> ()</td></tr>
+<tr class="separator:abded10f9d1291725518a9699aabba30d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68e95a424127d15f0729039e0b81da10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVW_1_1io_1_1logger.html">logger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io.html#a68e95a424127d15f0729039e0b81da10">create_custom_sink_logger</a> (void *context, void(*func)(void *, const std::string &amp;))</td></tr>
+<tr class="separator:a68e95a424127d15f0729039e0b81da10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a47b86ce42993535702b35d2045e1cd7b"></a>
@@ -138,6 +169,65 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="aaf6d3dfe9781b53c9fbc2908a8f0641c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf6d3dfe9781b53c9fbc2908a8f0641c">&#9670;&nbsp;</a></span>log_level</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum VW::io::log_level</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aaf6d3dfe9781b53c9fbc2908a8f0641ca04a75036e9d520bb983c5ed03b8d0182"></a>trace&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaf6d3dfe9781b53c9fbc2908a8f0641caad42f6697b035b7580e4fef93be20b4d"></a>debug&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaf6d3dfe9781b53c9fbc2908a8f0641cacaf9b6b99962bf5c2264824231d7a40c"></a>info&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaf6d3dfe9781b53c9fbc2908a8f0641ca1ea4c3ab05ee0c6d4de30740443769cb"></a>warn&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaf6d3dfe9781b53c9fbc2908a8f0641cacb5e100e5a9a3e7f6d1fd97512215282"></a>error&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaf6d3dfe9781b53c9fbc2908a8f0641ca7e85bcb66fb9a809d5ab4f62a8b8bea8"></a>critical&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaf6d3dfe9781b53c9fbc2908a8f0641ca3262d48df5d75e3452f0f16b313b7808"></a>off&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="ac0bb552479e3284943bb50d27084d074"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0bb552479e3284943bb50d27084d074">&#9670;&nbsp;</a></span>output_location</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum VW::io::output_location</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac0bb552479e3284943bb50d27084d074ac68271a63ddbc431c307beb7d2918275"></a>out&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac0bb552479e3284943bb50d27084d074a56bd7107802ebe56c6918992f0608ec6"></a>err&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac0bb552479e3284943bb50d27084d074a6805d2eb09708dde50e925b430024691"></a>compat&#160;</td><td class="fielddoc"></td></tr>
+</table>
 
 </div>
 </div>
@@ -177,6 +267,42 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a68e95a424127d15f0729039e0b81da10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68e95a424127d15f0729039e0b81da10">&#9670;&nbsp;</a></span>create_custom_sink_logger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structVW_1_1io_1_1logger.html">logger</a> VW::io::create_custom_sink_logger </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(void *, const std::string &amp;)&#160;</td>
+          <td class="paramname"><em>func</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a834593986bcfde6d6d1194953200c3e9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a834593986bcfde6d6d1194953200c3e9">&#9670;&nbsp;</a></span>create_custom_writer()</h2>
 
@@ -205,6 +331,56 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a320c76af5bc4c3e1a89309cd5b916bf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a320c76af5bc4c3e1a89309cd5b916bf0">&#9670;&nbsp;</a></span>create_default_logger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structVW_1_1io_1_1logger.html">logger</a> VW::io::create_default_logger </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abded10f9d1291725518a9699aabba30d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abded10f9d1291725518a9699aabba30d">&#9670;&nbsp;</a></span>create_null_logger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structVW_1_1io_1_1logger.html">logger</a> VW::io::create_null_logger </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ae757f4f258f87ef5b1ceb012d3e356d2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae757f4f258f87ef5b1ceb012d3e356d2">&#9670;&nbsp;</a></span>create_vector_writer()</h2>
 
@@ -226,6 +402,42 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a7ad16c5f90facc29df5eb8d3222dfffe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ad16c5f90facc29df5eb8d3222dfffe">&#9670;&nbsp;</a></span>get_log_level()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceVW_1_1io.html#aaf6d3dfe9781b53c9fbc2908a8f0641c">log_level</a> VW::io::get_log_level </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>level</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acdd00bcfa4079aa83dc0791cc256ea2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdd00bcfa4079aa83dc0791cc256ea2f">&#9670;&nbsp;</a></span>get_output_location()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceVW_1_1io.html#ac0bb552479e3284943bb50d27084d074">output_location</a> VW::io::get_output_location </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -397,7 +609,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 5 2022 20:12:21 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jan 5 2022 21:01:15 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

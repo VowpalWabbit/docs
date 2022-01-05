@@ -21,7 +21,6 @@ var searchData=
   ['_7eno_5flock_5fobject_5fpool',['~no_lock_object_pool',['../structVW_1_1no__lock__object__pool.html#a8b44b0d2968ab930cb65ce416a254c81',1,'VW::no_lock_object_pool']]],
   ['_7enode_5fsocks',['~node_socks',['../structnode__socks.html#ae8e6f67b527b7bf3182a322ca3e9330d',1,'node_socks']]],
   ['_7eoptions_5fi',['~options_i',['../structVW_1_1config_1_1options__i.html#a41af87ba504cb6a3f9e69d1b151cc711',1,'VW::config::options_i']]],
-  ['_7epattern_5fguard',['~pattern_guard',['../classVW_1_1io_1_1logger_1_1pattern__guard.html#a25c15cfb8781a11fc9f8364441100a6c',1,'VW::io::logger::pattern_guard']]],
   ['_7epolyprediction',['~polyprediction',['../structpolyprediction.html#ac5e2b0323b947d57bac304efe12fca6a',1,'polyprediction']]],
   ['_7ereader',['~reader',['../structVW_1_1io_1_1reader.html#acb42a09f82bb5363bb7518d459288128',1,'VW::io::reader']]],
   ['_7esave_5fload_5fmodel_5fexception',['~save_load_model_exception',['../classVW_1_1save__load__model__exception.html#ac0b585d6283a8659dfad06cb86ddb073',1,'VW::save_load_model_exception']]],

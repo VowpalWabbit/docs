@@ -8,6 +8,5 @@ var searchData=
   ['unknown_5fs',['unknown_s',['../namespaceVW_1_1experimental_1_1error__code.html#a91f4888701cac87d262a46e6bfb5ebae',1,'VW::experimental::error_code']]],
   ['update_5fcount',['update_count',['../structVW_1_1automl_1_1scored__config.html#a047efd1ca4fa8b93227af2624be8fb31',1,'VW::automl::scored_config']]],
   ['update_5ff',['update_f',['../structVW_1_1LEARNER_1_1learn__data.html#a756f38f0bee0f8ed57c327836add861b',1,'VW::LEARNER::learn_data']]],
-  ['updated_5fprediction',['updated_prediction',['../structexample.html#a86c4567ec3771465b2387bdfe83eb86c',1,'example']]],
-  ['upper_5flimit',['upper_limit',['../structvw__logger.html#a4fd9afb3ff95de1a197fd8bc96425a3b',1,'vw_logger']]]
+  ['updated_5fprediction',['updated_prediction',['../structexample.html#a86c4567ec3771465b2387bdfe83eb86c',1,'example']]]
 ];

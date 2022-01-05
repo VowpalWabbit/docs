@@ -76,11 +76,19 @@ $(function() {
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;utility&gt;</code><br />
 <code>#include &lt;spdlog/spdlog.h&gt;</code><br />
+<code>#include &lt;spdlog/sinks/base_sink.h&gt;</code><br />
+<code>#include &lt;spdlog/sinks/stdout_sinks.h&gt;</code><br />
+<code>#include &lt;spdlog/sinks/null_sink.h&gt;</code><br />
 <code>#include &lt;fmt/ostream.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="vw__exception_8h.html">../vw_exception.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1io_1_1logger_1_1pattern__guard.html">VW::io::logger::pattern_guard</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1io_1_1details_1_1logger__impl.html">VW::io::details::logger_impl</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1io_1_1details_1_1function__ptr__sink.html">VW::io::details::function_ptr_sink&lt; Mutex &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1io_1_1logger.html">VW::io::logger</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -89,78 +97,51 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceVW_1_1io"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io.html">VW::io</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceVW_1_1io_1_1logger"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io_1_1logger.html">VW::io::logger</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceVW_1_1io_1_1logger_1_1detail"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io_1_1logger_1_1detail.html">VW::io::logger::detail</a></td></tr>
+<tr class="memitem:namespaceVW_1_1io_1_1details"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io_1_1details.html">VW::io::details</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a727315522185c0fa2906718f6ac84928"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io_1_1logger.html#a727315522185c0fa2906718f6ac84928">VW::io::logger::log_level</a> { <br />
-&#160;&#160;<a class="el" href="namespaceVW_1_1io_1_1logger.html#a727315522185c0fa2906718f6ac84928a04a75036e9d520bb983c5ed03b8d0182">VW::io::logger::log_level::trace</a> = spdlog::level::trace, 
-<a class="el" href="namespaceVW_1_1io_1_1logger.html#a727315522185c0fa2906718f6ac84928aad42f6697b035b7580e4fef93be20b4d">VW::io::logger::log_level::debug</a> = spdlog::level::debug, 
-<a class="el" href="namespaceVW_1_1io_1_1logger.html#a727315522185c0fa2906718f6ac84928acaf9b6b99962bf5c2264824231d7a40c">VW::io::logger::log_level::info</a> = spdlog::level::info, 
-<a class="el" href="namespaceVW_1_1io_1_1logger.html#a727315522185c0fa2906718f6ac84928a1ea4c3ab05ee0c6d4de30740443769cb">VW::io::logger::log_level::warn</a> = spdlog::level::warn, 
+<tr class="memitem:ac0bb552479e3284943bb50d27084d074"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io.html#ac0bb552479e3284943bb50d27084d074">VW::io::output_location</a> { <a class="el" href="namespaceVW_1_1io.html#ac0bb552479e3284943bb50d27084d074ac68271a63ddbc431c307beb7d2918275">VW::io::output_location::out</a>, 
+<a class="el" href="namespaceVW_1_1io.html#ac0bb552479e3284943bb50d27084d074a56bd7107802ebe56c6918992f0608ec6">VW::io::output_location::err</a>, 
+<a class="el" href="namespaceVW_1_1io.html#ac0bb552479e3284943bb50d27084d074a6805d2eb09708dde50e925b430024691">VW::io::output_location::compat</a>
+ }</td></tr>
+<tr class="separator:ac0bb552479e3284943bb50d27084d074"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf6d3dfe9781b53c9fbc2908a8f0641c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io.html#aaf6d3dfe9781b53c9fbc2908a8f0641c">VW::io::log_level</a> { <br />
+&#160;&#160;<a class="el" href="namespaceVW_1_1io.html#aaf6d3dfe9781b53c9fbc2908a8f0641ca04a75036e9d520bb983c5ed03b8d0182">VW::io::log_level::trace</a> = spdlog::level::trace, 
+<a class="el" href="namespaceVW_1_1io.html#aaf6d3dfe9781b53c9fbc2908a8f0641caad42f6697b035b7580e4fef93be20b4d">VW::io::log_level::debug</a> = spdlog::level::debug, 
+<a class="el" href="namespaceVW_1_1io.html#aaf6d3dfe9781b53c9fbc2908a8f0641cacaf9b6b99962bf5c2264824231d7a40c">VW::io::log_level::info</a> = spdlog::level::info, 
+<a class="el" href="namespaceVW_1_1io.html#aaf6d3dfe9781b53c9fbc2908a8f0641ca1ea4c3ab05ee0c6d4de30740443769cb">VW::io::log_level::warn</a> = spdlog::level::warn, 
 <br />
-&#160;&#160;<a class="el" href="namespaceVW_1_1io_1_1logger.html#a727315522185c0fa2906718f6ac84928acb5e100e5a9a3e7f6d1fd97512215282">VW::io::logger::log_level::error</a> = spdlog::level::err, 
-<a class="el" href="namespaceVW_1_1io_1_1logger.html#a727315522185c0fa2906718f6ac84928a7e85bcb66fb9a809d5ab4f62a8b8bea8">VW::io::logger::log_level::critical</a> = spdlog::level::critical, 
-<a class="el" href="namespaceVW_1_1io_1_1logger.html#a727315522185c0fa2906718f6ac84928a3262d48df5d75e3452f0f16b313b7808">VW::io::logger::log_level::off</a> = spdlog::level::off
+&#160;&#160;<a class="el" href="namespaceVW_1_1io.html#aaf6d3dfe9781b53c9fbc2908a8f0641cacb5e100e5a9a3e7f6d1fd97512215282">VW::io::log_level::error</a> = spdlog::level::err, 
+<a class="el" href="namespaceVW_1_1io.html#aaf6d3dfe9781b53c9fbc2908a8f0641ca7e85bcb66fb9a809d5ab4f62a8b8bea8">VW::io::log_level::critical</a> = spdlog::level::critical, 
+<a class="el" href="namespaceVW_1_1io.html#aaf6d3dfe9781b53c9fbc2908a8f0641ca3262d48df5d75e3452f0f16b313b7808">VW::io::log_level::off</a> = spdlog::level::off
 <br />
  }</td></tr>
-<tr class="separator:a727315522185c0fa2906718f6ac84928"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:aaf6d3dfe9781b53c9fbc2908a8f0641c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a0442d336856398bfc3b71b506625688e"><td class="memTemplParams" colspan="2">template&lt;typename FormatString , typename... Args&gt; </td></tr>
-<tr class="memitem:a0442d336856398bfc3b71b506625688e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io_1_1logger.html#a0442d336856398bfc3b71b506625688e">VW::io::logger::log_info</a> (const FormatString &amp;fmt, Args &amp;&amp;... args)</td></tr>
-<tr class="separator:a0442d336856398bfc3b71b506625688e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67f6373b4b7104dcbff9dc29cb25d3a6"><td class="memTemplParams" colspan="2">template&lt;typename FormatString , typename... Args&gt; </td></tr>
-<tr class="memitem:a67f6373b4b7104dcbff9dc29cb25d3a6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io_1_1logger.html#a67f6373b4b7104dcbff9dc29cb25d3a6">VW::io::logger::log_warn</a> (const FormatString &amp;fmt, Args &amp;&amp;... args)</td></tr>
-<tr class="separator:a67f6373b4b7104dcbff9dc29cb25d3a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44108db0d0689e94690e9932dc18c62a"><td class="memTemplParams" colspan="2">template&lt;typename FormatString , typename... Args&gt; </td></tr>
-<tr class="memitem:a44108db0d0689e94690e9932dc18c62a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io_1_1logger.html#a44108db0d0689e94690e9932dc18c62a">VW::io::logger::log_error</a> (const FormatString &amp;fmt, Args &amp;&amp;... args)</td></tr>
-<tr class="separator:a44108db0d0689e94690e9932dc18c62a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abce3d3680f33fb9d8c154c300bb64545"><td class="memTemplParams" colspan="2">template&lt;typename FormatString , typename... Args&gt; </td></tr>
-<tr class="memitem:abce3d3680f33fb9d8c154c300bb64545"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io_1_1logger.html#abce3d3680f33fb9d8c154c300bb64545">VW::io::logger::log_critical</a> (const FormatString &amp;fmt, Args &amp;&amp;... args)</td></tr>
-<tr class="separator:abce3d3680f33fb9d8c154c300bb64545"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b257371657982552671d8091021df1b"><td class="memTemplParams" colspan="2">template&lt;typename FormatString , typename... Args&gt; </td></tr>
-<tr class="memitem:a9b257371657982552671d8091021df1b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io_1_1logger.html#a9b257371657982552671d8091021df1b">VW::io::logger::errlog_info</a> (const FormatString &amp;fmt, Args &amp;&amp;... args)</td></tr>
-<tr class="separator:a9b257371657982552671d8091021df1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e34242c33eee0a71703b90c76a5f916"><td class="memTemplParams" colspan="2">template&lt;typename FormatString , typename... Args&gt; </td></tr>
-<tr class="memitem:a0e34242c33eee0a71703b90c76a5f916"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io_1_1logger.html#a0e34242c33eee0a71703b90c76a5f916">VW::io::logger::errlog_warn</a> (const FormatString &amp;fmt, Args &amp;&amp;... args)</td></tr>
-<tr class="separator:a0e34242c33eee0a71703b90c76a5f916"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1dc622891923863227dd842e35968fa"><td class="memTemplParams" colspan="2">template&lt;typename FormatString , typename... Args&gt; </td></tr>
-<tr class="memitem:ae1dc622891923863227dd842e35968fa"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io_1_1logger.html#ae1dc622891923863227dd842e35968fa">VW::io::logger::errlog_error</a> (const FormatString &amp;fmt, Args &amp;&amp;... args)</td></tr>
-<tr class="separator:ae1dc622891923863227dd842e35968fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5d6a45480e914207ba0e7a20a3986bf"><td class="memTemplParams" colspan="2">template&lt;typename FormatString , typename... Args&gt; </td></tr>
-<tr class="memitem:ac5d6a45480e914207ba0e7a20a3986bf"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io_1_1logger.html#ac5d6a45480e914207ba0e7a20a3986bf">VW::io::logger::errlog_critical</a> (const FormatString &amp;fmt, Args &amp;&amp;... args)</td></tr>
-<tr class="separator:ac5d6a45480e914207ba0e7a20a3986bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a719b1edcdc18610131e44d09b8241f6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io_1_1logger.html#a719b1edcdc18610131e44d09b8241f6c">VW::io::logger::log_set_level</a> (log_level lvl)</td></tr>
-<tr class="separator:a719b1edcdc18610131e44d09b8241f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3dec3e77e2c3a5ba5ac57449c1d1be8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io_1_1logger.html#a3dec3e77e2c3a5ba5ac57449c1d1be8f">VW::io::logger::initialize_logger</a> ()</td></tr>
-<tr class="separator:a3dec3e77e2c3a5ba5ac57449c1d1be8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6264e2105e7e81cc617a2397c6e4f78d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io_1_1logger.html#a6264e2105e7e81cc617a2397c6e4f78d">VW::io::logger::set_max_output</a> (size_t max)</td></tr>
-<tr class="separator:a6264e2105e7e81cc617a2397c6e4f78d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4874fd35725191462a293d6f5e9f7cd4"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io_1_1logger.html#a4874fd35725191462a293d6f5e9f7cd4">VW::io::logger::get_log_count</a> ()</td></tr>
-<tr class="separator:a4874fd35725191462a293d6f5e9f7cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac047f70212d20d729cbc8f22848f5f64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io_1_1logger.html#ac047f70212d20d729cbc8f22848f5f64">VW::io::logger::log_summary</a> ()</td></tr>
-<tr class="separator:ac047f70212d20d729cbc8f22848f5f64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdd00bcfa4079aa83dc0791cc256ea2f"><td class="memItemLeft" align="right" valign="top">output_location&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io.html#acdd00bcfa4079aa83dc0791cc256ea2f">VW::io::get_output_location</a> (const std::string &amp;name)</td></tr>
+<tr class="separator:acdd00bcfa4079aa83dc0791cc256ea2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ad16c5f90facc29df5eb8d3222dfffe"><td class="memItemLeft" align="right" valign="top">log_level&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io.html#a7ad16c5f90facc29df5eb8d3222dfffe">VW::io::get_log_level</a> (const std::string &amp;level)</td></tr>
+<tr class="separator:a7ad16c5f90facc29df5eb8d3222dfffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a320c76af5bc4c3e1a89309cd5b916bf0"><td class="memItemLeft" align="right" valign="top">logger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io.html#a320c76af5bc4c3e1a89309cd5b916bf0">VW::io::create_default_logger</a> ()</td></tr>
+<tr class="separator:a320c76af5bc4c3e1a89309cd5b916bf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abded10f9d1291725518a9699aabba30d"><td class="memItemLeft" align="right" valign="top">logger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io.html#abded10f9d1291725518a9699aabba30d">VW::io::create_null_logger</a> ()</td></tr>
+<tr class="separator:abded10f9d1291725518a9699aabba30d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68e95a424127d15f0729039e0b81da10"><td class="memItemLeft" align="right" valign="top">logger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io.html#a68e95a424127d15f0729039e0b81da10">VW::io::create_custom_sink_logger</a> (void *context, void(*func)(void *, const std::string &amp;))</td></tr>
+<tr class="separator:a68e95a424127d15f0729039e0b81da10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:aea449437c4fabc79d35adb1924eafc1e"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io_1_1logger_1_1detail.html#aea449437c4fabc79d35adb1924eafc1e">VW::io::logger::detail::_stderr_logger</a></td></tr>
-<tr class="separator:aea449437c4fabc79d35adb1924eafc1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99138fd4e89a4e8509494ff26adeba5d"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; spdlog::logger &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io_1_1logger_1_1detail.html#a99138fd4e89a4e8509494ff26adeba5d">VW::io::logger::detail::_default_logger</a></td></tr>
-<tr class="separator:a99138fd4e89a4e8509494ff26adeba5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4bab62b1f7586e0fadcbc279aeea797f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io_1_1logger_1_1detail.html#a4bab62b1f7586e0fadcbc279aeea797f">VW::io::logger::detail::max_limit</a></td></tr>
-<tr class="separator:a4bab62b1f7586e0fadcbc279aeea797f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a621d71e6fba1dab32ec50d34603df45d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io_1_1logger_1_1detail.html#a621d71e6fba1dab32ec50d34603df45d">VW::io::logger::detail::log_count</a></td></tr>
-<tr class="separator:a621d71e6fba1dab32ec50d34603df45d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10e5fd4df3142d76f8a58e7ea812dd12"><td class="memItemLeft" align="right" valign="top">const constexpr char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io_1_1details.html#a10e5fd4df3142d76f8a58e7ea812dd12">VW::io::details::default_pattern</a> = &quot;[%l] %v&quot;</td></tr>
+<tr class="separator:a10e5fd4df3142d76f8a58e7ea812dd12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 5 2022 20:12:20 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jan 5 2022 21:01:15 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

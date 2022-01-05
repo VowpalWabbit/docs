@@ -620,7 +620,8 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>creating features for following interactions: SA UAS US UA
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[warning] The current default logging behavior of VW is to log to a mix of stderr and stdout for logging based messages. This behavior is now deprecated. Please specify the stream to log to with --log_output_stream stdout|stderr to silence this message.
+creating features for following interactions: SA UAS US UA
 Num weight bits = 18
 learning rate = 0.05
 initial_t = 0
@@ -634,29 +635,27 @@ Output pred = decision_probs
 average  since         example        example  current  current  current
 loss     last          counter         weight    label  predict features
     n.a.     n.a.            1            1.0  ?,?,... 0,0,0,...      293
--0.718462 -0.718462            2            2.0  0,0,... 0,0,0,...      293
--0.783196 -0.847929            4            4.0  0,1,... 0,1,0,...      293
--0.771505 -0.759813            8            8.0  0,0,... 0,0,0,...      293
--0.746178 -0.720851           16           16.0  0,0,... 0,0,0,...      293
--0.746438 -0.746699           32           32.0  0,0,... 0,0,0,...      293
--0.804823 -0.863207           64           64.0  1,2,... 1,2,1,...      293
--0.792211 -0.779600          128          128.0  0,2,... 0,2,1,...      293
--0.841840 -0.891469          256          256.0  2,1,... 2,1,3,...      293
--0.851332 -0.860824          512          512.0  2,0,... 2,0,1,...      293
--0.872253 -0.893174         1024         1024.0  2,0,... 2,0,3,...      293
--0.897472 -0.922691         2048         2048.0  1,1,... 1,1,0,...      293
+-0.515806 -0.515806            2            2.0  0,0,... 0,0,0,...      293
+-0.558876 -0.601946            4            4.0  0,1,... 0,1,0,...      293
+-0.711832 -0.864788            8            8.0  0,0,... 0,0,0,...      293
+-0.790108 -0.868383           16           16.0  0,2,... 0,2,0,...      293
+-0.749783 -0.709459           32           32.0  0,1,... 0,1,0,...      293
+-0.727503 -0.705223           64           64.0  1,2,... 1,2,2,...      293
+-0.730519 -0.733536          128          128.0  1,2,... 1,2,3,...      293
+-0.797653 -0.864787          256          256.0  1,0,... 1,0,0,...      293
+-0.824531 -0.851409          512          512.0  1,2,... 1,2,0,...      293
+-0.854653 -0.884775         1024         1024.0  2,0,... 2,0,3,...      293
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.908657 -0.919842         4096         4096.0  2,0,... 2,0,3,...      293
-
-finished run
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.880692 -0.906731         2048         2048.0  1,1,... 1,1,1,...      293
+-0.908592 -0.936493         4096         4096.0  2,0,... 2,0,3,...      293
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>finished run
 number of examples = 5000
-weighted example sum = 
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5000.000000
+weighted example sum = 5000.000000
 weighted label sum = 0.000000
-average loss = -0.910707
+average loss = -0.911579
 total feature number = 1465000
 </pre></div>
 </div>
@@ -714,8 +713,9 @@ total feature number = 1465000
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>creating features for following interactions: AA AU AAU
-WARNING: some interactions contain duplicate characters and their characters order has been changed. Interactions affected: 1.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[warning] The current default logging behavior of VW is to log to a mix of stderr and stdout for logging based messages. This behavior is now deprecated. Please specify the stream to log to with --log_output_stream stdout|stderr to silence this message.
+creating features for following interactions: AA AU AAU
+[warning] Some interactions contain duplicate characters and their characters order has been changed. Interactions affected: 1.
 Num weight bits = 18
 learning rate = 0.05
 initial_t = 0
@@ -729,30 +729,30 @@ Output pred = action_probs
 average  since         example        example  current  current  current
 loss     last          counter         weight    label  predict features
     n.a.     n.a.            1            1.0  unknown        0:0.0277778...      720
--0.688980 -0.688980            2            2.0 33:-0.69:0.028        0:0.0277778...      720
--0.630408 -0.571836            4            4.0 8:-0.57:0.0056       33:0.805556...      720
--0.617927 -0.605445            8            8.0 8:-0.49:0.81        8:0.805556...      720
--0.639889 -0.661851           16           16.0 8:-0.67:0.81        8:0.805556...      720
--0.705989 -0.772089           32           32.0 4:-1.1:0.81        4:0.805556...      720
--0.788293 -0.870597           64           64.0 4:-0.93:0.81        4:0.805556...      720
--0.760979 -0.733666          128          128.0 18:-0.59:0.0056       34:0.805556...      720
--0.772923 -0.784867          256          256.0 34:-0.59:0.81       34:0.805556...      720
--0.765018 -0.757112          512          512.0 32:-0.83:0.81       32:0.805556...      720
+-0.665482 -0.665482            2            2.0 29:-0.67:0.028        0:0.0277778...      720
+-0.623205 -0.580927            4            4.0 29:-0.58:0.81       29:0.805556...      720
+-0.685102 -0.747000            8            8.0 29:-0.65:0.81       29:0.805556...      720
+-0.696527 -0.707952           16           16.0 25:-0.76:0.81       25:0.805556...      720
+-0.785309 -0.874091           32           32.0 25:-0.9:0.81       25:0.805556...      720
+-0.782976 -0.780643           64           64.0 8:-0.83:0.81        8:0.805556...      720
+-0.750191 -0.717406          128          128.0 20:-1.1:0.81       20:0.805556...      720
+-0.768144 -0.786096          256          256.0 13:-0.81:0.81       13:0.805556...      720
+-0.782516 -0.796888          512          512.0 17:-0.59:0.81       17:0.805556...      720
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.821859 -0.878700         1024         1024.0 28:-0.98:0.0056       17:0.805556...      720
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.832646 -0.882777         1024         1024.0 27:-0.99:0.81       27:0.805556...      720
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.865096 -0.908333         2048         2048.0 27:-0.8:0.81       27:0.805556...      720
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.885113 -0.937580         2048         2048.0 27:-0.89:0.81       27:0.805556...      720
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.898504 -0.931911         4096         4096.0 25:-0.52:0.0056       16:0.805556...      720
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.910527 -0.935941         4096         4096.0 27:-1:0.81       27:0.805556...      720
 
 finished run
 number of examples = 5000
 weighted example sum = 5000.000000
 weighted label sum = 0.000000
-average loss = -0.901615
+average loss = -0.915948
 total feature number = 3600000
 </pre></div>
 </div>
@@ -772,7 +772,7 @@ total feature number = 3600000
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f68b664c370&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f9944fc2610&gt;
 </pre></div>
 </div>
 <img alt="../_images/python_slates_12_1.png" src="../_images/python_slates_12_1.png" />

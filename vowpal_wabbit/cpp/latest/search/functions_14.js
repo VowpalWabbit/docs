@@ -63,7 +63,6 @@ var searchData=
   ['vw_5finitializewithmodel',['VW_InitializeWithModel',['../vwdll_8h.html#acec8458051b273d9d2004e4314c4c161',1,'vwdll.h']]],
   ['vw_5finitializewithmodelescaped',['VW_InitializeWithModelEscaped',['../vwdll_8h.html#a4bd533d5dec4b3b5a6aa768cce55c9ec',1,'vwdll.h']]],
   ['vw_5flearn',['VW_Learn',['../vwdll_8h.html#a4bad3e5c144fadf1ca7b19f3a18e19f0',1,'vwdll.h']]],
-  ['vw_5flogger',['vw_logger',['../structvw__logger.html#aab7d8c73734da8a6d7e3a1bd3f96102f',1,'vw_logger::vw_logger()'],['../structvw__logger.html#a3fd17ed8f1fdcd9fca39a2ae22776a94',1,'vw_logger::vw_logger(const vw_logger &amp;other)=delete']]],
   ['vw_5fnum_5fweights',['VW_Num_Weights',['../vwdll_8h.html#a78c1b3e862083f5f140f051fc7545904',1,'vwdll.h']]],
   ['vw_5fpredict',['vw_predict',['../classvw__slim_1_1vw__predict.html#a869a1822619f609ac0e4c8b57ca5f3a9',1,'vw_slim::vw_predict::vw_predict()'],['../vwdll_8h.html#a49164b649aec3eae351bb833241a4fc6',1,'VW_Predict():&#160;vwdll.h']]],
   ['vw_5fpredictcostsensitive',['VW_PredictCostSensitive',['../vwdll_8h.html#a69073a04503dfc1ef6acfe438036dff3',1,'vwdll.h']]],

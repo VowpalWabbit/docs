@@ -43,7 +43,7 @@ var searchData=
   ['bin_5fwrite_5ffixed',['bin_write_fixed',['../classio__buf.html#a3c0311f639b9062998f798bd0ce5da5f',1,'io_buf']]],
   ['binary',['binary',['../structvw__dbg.html#aa1ae629795328b25b09b243a8aca29ef',1,'vw_dbg']]],
   ['binary_2eh',['binary.h',['../binary_8h.html',1,'']]],
-  ['binary_5fprint_5fresult_5fby_5fref',['binary_print_result_by_ref',['../global__data_8h.html#a07600c7dfa8e52c7741daa1d80607abf',1,'global_data.h']]],
+  ['binary_5fprint_5fresult_5fby_5fref',['binary_print_result_by_ref',['../global__data_8h.html#ab1873ad2309ce8aad0622b9a0ddf0e10',1,'global_data.h']]],
   ['binary_5fsetup',['binary_setup',['../namespaceVW_1_1binary.html#abf019e0e8ba229829b2ebd23a90ba820',1,'VW::binary']]],
   ['bool',['Bool',['../structBaseState.html#a9ccff8ff7ccb1612a47d75c39c84c924',1,'BaseState::Bool()'],['../classDefaultState.html#a7bb350ead38a4e1b9cbbfd62fa1b6222',1,'DefaultState::Bool()'],['../classBoolToBoolState.html#aa8099fe4578f7eaf665edf962f84d128',1,'BoolToBoolState::Bool()'],['../structVWReaderHandler.html#affe64a99b2e524d4c97f9950c1dc0091',1,'VWReaderHandler::Bool()']]],
   ['bool_5fmetric',['bool_metric',['../structVW_1_1metric__sink__visitor.html#a797a83c1203a2d66d9716df0965c7567',1,'VW::metric_sink_visitor']]],
@@ -64,7 +64,7 @@ var searchData=
   ['buffer',['buffer',['../structData.html#a6dc409011ac0912b2e8e16bb8fd5d5ad',1,'Data']]],
   ['buffer_5fstart',['buffer_start',['../classio__buf.html#aa79ba9e0c96d4ebde9ef98493c629806',1,'io_buf']]],
   ['buffers',['buffers',['../classAllReduceSync.html#a9f9e0266fcc60ce2b7a0b06fb293e84d',1,'AllReduceSync']]],
-  ['build',['build',['../structVW_1_1kskip__ngram__transformer.html#a315701be95f5d52920f40c63580e26b9',1,'VW::kskip_ngram_transformer::build()'],['../structVW_1_1LEARNER_1_1reduction__learner__builder.html#a47a5cce3902677e538b3dbc7a0586e80',1,'VW::LEARNER::reduction_learner_builder::build()'],['../structVW_1_1LEARNER_1_1reduction__no__data__learner__builder.html#ac2d7082936547b28f8ef466940d9d0c1',1,'VW::LEARNER::reduction_no_data_learner_builder::build()'],['../structVW_1_1LEARNER_1_1base__learner__builder.html#a9c2fc579a8e26ece21cbaa565d24db05',1,'VW::LEARNER::base_learner_builder::build()']]],
+  ['build',['build',['../structVW_1_1kskip__ngram__transformer.html#a8c5816562f81d079edb7e8ff51616867',1,'VW::kskip_ngram_transformer::build()'],['../structVW_1_1LEARNER_1_1reduction__learner__builder.html#a47a5cce3902677e538b3dbc7a0586e80',1,'VW::LEARNER::reduction_learner_builder::build()'],['../structVW_1_1LEARNER_1_1reduction__no__data__learner__builder.html#ac2d7082936547b28f8ef466940d9d0c1',1,'VW::LEARNER::reduction_no_data_learner_builder::build()'],['../structVW_1_1LEARNER_1_1base__learner__builder.html#a9c2fc579a8e26ece21cbaa565d24db05',1,'VW::LEARNER::base_learner_builder::build()']]],
   ['build_5fsetupfn_5fname_5fdict',['build_setupfn_name_dict',['../structVW_1_1workspace.html#a89abfb668c872684f5d098c96f611165',1,'VW::workspace']]],
   ['build_5ftree',['build_tree',['../structVW_1_1cats__tree_1_1min__depth__binary__tree.html#a7d456d7260cf698c54197a62cc4aa424',1,'VW::cats_tree::min_depth_binary_tree::build_tree()'],['../structVW_1_1offset__tree_1_1min__depth__binary__tree.html#ac3e22135a078c06dc7298bc0fe2ae1e9',1,'VW::offset_tree::min_depth_binary_tree::build_tree()']]]
 ];

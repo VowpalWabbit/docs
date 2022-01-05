@@ -17,7 +17,6 @@ var searchData=
   ['max_5fconfigs',['MAX_CONFIGS',['../namespaceVW_1_1automl.html#a5f8848e89d7f44473504d15276558e36',1,'VW::automl']]],
   ['max_5fexamples',['max_examples',['../structVW_1_1workspace.html#a74503c26819a4c7aff237c0b2dac6a93',1,'VW::workspace']]],
   ['max_5flabel',['max_label',['../structshared__data.html#ab7a25e683bebc7347fa97d71e116f712',1,'shared_data']]],
-  ['max_5flimit',['max_limit',['../namespaceVW_1_1io_1_1logger_1_1detail.html#a4bab62b1f7586e0fadcbc279aeea797f',1,'VW::io::logger::detail']]],
   ['max_5flive_5fconfigs',['max_live_configs',['../structVW_1_1automl_1_1interaction__config__manager.html#a44ef41a78d74bb89232bb885523f9458',1,'VW::automl::interaction_config_manager']]],
   ['max_5fvalue',['max_value',['../structVW_1_1continuous__action_1_1cats_1_1cats.html#aba3ff1bb74463146e9e1605e652a63b1',1,'VW::continuous_action::cats::cats::max_value()'],['../structVW_1_1pmf__to__pdf_1_1reduction.html#a0cebd3746d3b673682ac942037357be5',1,'VW::pmf_to_pdf::reduction::max_value()']]],
   ['mc_5flabel',['mc_label',['../namespaceMULTICLASS.html#aac01d238b01e5f0cc20bb8c2fb5eba11',1,'MULTICLASS']]],

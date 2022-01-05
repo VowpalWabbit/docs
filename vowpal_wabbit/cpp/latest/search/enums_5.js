@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vw_5fpredict_5fexploration',['vw_predict_exploration',['../namespacevw__slim.html#a8b7398db5b92b2538fdd8e6593b746b3',1,'vw_slim']]]
+  ['prediction_5ftype_5ft',['prediction_type_t',['../namespaceVW.html#a4f76045a06b3efe3c5c612b777b6c836',1,'VW']]]
 ];

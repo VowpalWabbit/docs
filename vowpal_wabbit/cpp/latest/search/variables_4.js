@@ -13,6 +13,7 @@ var searchData=
   ['default_5flabel',['default_label',['../structlabel__parser.html#ab967e4cb5b5de41e9f8104cef66b042a',1,'label_parser']]],
   ['default_5flog',['default_log',['../structvw__dbg.html#a6c974ade8e99bfb1565c62d2f715b3e2',1,'vw_dbg']]],
   ['default_5fnamespace',['default_namespace',['../constant_8h.html#ac5f7a89af82daae29351dde7bc52cce4',1,'constant.h']]],
+  ['default_5fpattern',['default_pattern',['../namespaceVW_1_1io_1_1details.html#a10e5fd4df3142d76f8a58e7ea812dd12',1,'VW::io::details']]],
   ['default_5fstate',['default_state',['../structContext.html#a0e0a976e8e6bf9b15f095758b5094521',1,'Context']]],
   ['dense_5fweights',['dense_weights',['../classparameters.html#aaac8b2f50c6d9ee2946d09c9183b4029',1,'parameters']]],
   ['depth',['depth',['../structVW_1_1cats__tree_1_1tree__node.html#a1ea0d14ccf7fe22a107bd38b7364d860',1,'VW::cats_tree::tree_node']]],
