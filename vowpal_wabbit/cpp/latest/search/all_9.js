@@ -2,7 +2,7 @@ var searchData=
 [
   ['i',['i',['../unionexploration_1_1int__float.html#ad2bc6c4c956bde873b30883f1e1f73d3',1,'exploration::int_float']]],
   ['id',['id',['../structVW_1_1cats__tree_1_1tree__node.html#a61e16c2cc5da0df4b7060465ec4b9d46',1,'VW::cats_tree::tree_node::id()'],['../structVW_1_1workspace.html#a1a5991719de1f9ac2db1d7f77a46e531',1,'VW::workspace::id()'],['../structVW_1_1offset__tree_1_1tree__node.html#abdddece8c7416bbfae454d3a4af6d038',1,'VW::offset_tree::tree_node::id()']]],
-  ['ignore',['Ignore',['../classDefaultState.html#a0b4a49d922219a5b71926061b304ea21',1,'DefaultState::Ignore()'],['../structVW_1_1workspace.html#aba2139155728faa7aa46b66f3365d1f7',1,'VW::workspace::ignore()']]],
+  ['ignore',['ignore',['../structVW_1_1workspace.html#aba2139155728faa7aa46b66f3365d1f7',1,'VW::workspace::ignore()'],['../classDefaultState.html#a0b4a49d922219a5b71926061b304ea21',1,'DefaultState::Ignore()']]],
   ['ignore_5flinear',['ignore_linear',['../structVW_1_1workspace.html#aadd1a2ddcd8c5a0a35c53b582cd0059c',1,'VW::workspace']]],
   ['ignore_5fsome',['ignore_some',['../structVW_1_1workspace.html#adb7c2aa536667110430169904f8b39d2',1,'VW::workspace']]],
   ['ignore_5fsome_5flinear',['ignore_some_linear',['../structVW_1_1workspace.html#a46f34e6768ebc227f54ae9ca817a5160',1,'VW::workspace']]],
@@ -53,7 +53,7 @@ var searchData=
   ['int_5fof_5fstring',['int_of_string',['../parse__primitives_8h.html#a0187acdae19e69c4ef85cb5eb7bb9fa0',1,'int_of_string(VW::string_view s, char *&amp;end):&#160;parse_primitives.h'],['../parse__primitives_8h.html#a87d4af59fea5bc25b64dd3c854ff4d25',1,'int_of_string(VW::string_view s):&#160;parse_primitives.h']]],
   ['interact_2eh',['interact.h',['../interact_8h.html',1,'']]],
   ['interact_5fsetup',['interact_setup',['../interact_8h.html#a1d996ac70254ddd216cc37e175e36e33',1,'interact.h']]],
-  ['interaction_5fconfig_5fmanager',['interaction_config_manager',['../structVW_1_1automl_1_1interaction__config__manager.html',1,'VW::automl::interaction_config_manager'],['../structVW_1_1automl_1_1interaction__config__manager.html#a72a1db6ff27725d8db1d6526b2e999d5',1,'VW::automl::interaction_config_manager::interaction_config_manager()']]],
+  ['interaction_5fconfig_5fmanager',['interaction_config_manager',['../structVW_1_1automl_1_1interaction__config__manager.html',1,'VW::automl::interaction_config_manager'],['../structVW_1_1automl_1_1interaction__config__manager.html#a9d6e8da69e88813c9ee76610857a3685',1,'VW::automl::interaction_config_manager::interaction_config_manager()']]],
   ['interaction_5fground_2eh',['interaction_ground.h',['../interaction__ground_8h.html',1,'']]],
   ['interaction_5fground_5fsetup',['interaction_ground_setup',['../namespaceVW.html#ab7fd3c1d41b34c3b9825747d5009f0b9',1,'VW']]],
   ['interaction_5fns_5fend',['interaction_ns_end',['../namespaceINTERACTIONS.html#ad03527522a7fe5b0b38ede5186f365ec',1,'INTERACTIONS']]],

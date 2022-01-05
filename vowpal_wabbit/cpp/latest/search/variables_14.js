@@ -19,6 +19,7 @@ var searchData=
   ['tokens',['tokens',['../structVW_1_1label__parser__reuse__mem.html#abd4d46fe52aa8f9b495c9e2b7663935c',1,'VW::label_parser_reuse_mem']]],
   ['top_5faction_5findex',['TOP_ACTION_INDEX',['../constant_8h.html#ac761c6817afb4c15fe226ec2df85c024',1,'constant.h']]],
   ['total',['total',['../classAllReduce.html#a4ab695c1c631c3db42936d03733db9e0',1,'AllReduce']]],
+  ['total_5fchamp_5fswitches',['total_champ_switches',['../structVW_1_1automl_1_1interaction__config__manager.html#ac727bf380a42e1fd59b738b029ebb6cc',1,'VW::automl::interaction_config_manager']]],
   ['total_5ffeatures',['total_features',['../structshared__data.html#aaedd51e57f247fce49e552319c267253',1,'shared_data']]],
   ['total_5flearn_5fcount',['total_learn_count',['../structVW_1_1automl_1_1interaction__config__manager.html#a26f8184c3502cb46665053653ae323f3',1,'VW::automl::interaction_config_manager']]],
   ['total_5fsum_5ffeat_5fsq',['total_sum_feat_sq',['../structexample.html#ad434838ba5443d5f6b5529558d5c1a8c',1,'example::total_sum_feat_sq()'],['../structflat__example.html#aa233932b8fedfd4092068bee8779cd6a',1,'flat_example::total_sum_feat_sq()']]],
