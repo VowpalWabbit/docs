@@ -71,7 +71,6 @@ var searchData=
   ['are_5ffeatures_5fcompatible',['are_features_compatible',['../namespaceVW.html#a380938edfb77928b82057e47333b0b30',1,'VW']]],
   ['are_5fsame',['are_same',['../namespaceVW_1_1math.html#a5283b8fa4ef629eb885fce24d672cf07',1,'VW::math']]],
   ['are_5fsame_5frel',['are_same_rel',['../namespaceVW_1_1math.html#abd18c415fd17e7a0f19d7941ef78726b',1,'VW::math']]],
-  ['arg',['arg',['../structHookTask_1_1task__data.html#a331a938dbd07647b86f82c6db97a0a03',1,'HookTask::task_data']]],
   ['argmaxtask',['ArgmaxTask',['../namespaceArgmaxTask.html',1,'']]],
   ['array_5ffloat_5fstate',['array_float_state',['../structContext.html#ac5492ae0d8d2d852cbfc29c0b2142866',1,'Context']]],
   ['array_5fparameters_2eh',['array_parameters.h',['../array__parameters_8h.html',1,'']]],

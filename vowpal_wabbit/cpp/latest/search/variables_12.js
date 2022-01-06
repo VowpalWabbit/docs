@@ -61,10 +61,6 @@ var searchData=
   ['root_5fidx',['root_idx',['../structVW_1_1cats__tree_1_1min__depth__binary__tree.html#a3afa9ad5e228efc383db85b1b3b44e31',1,'VW::cats_tree::min_depth_binary_tree::root_idx()'],['../structVW_1_1offset__tree_1_1min__depth__binary__tree.html#ac94cf6e3ec3d1ae4057af9fc1dda6ecb',1,'VW::offset_tree::min_depth_binary_tree::root_idx()']]],
   ['root_5fstate',['root_state',['../structContext.html#a5daf877aaa1271612041d1837d3d9b8f',1,'Context']]],
   ['run',['run',['../structSearch_1_1search__task.html#adf444315a78d17d968d09c64b7a4f5df',1,'Search::search_task::run()'],['../structSearch_1_1search__metatask.html#a99e42dc6e8de0c2f8dbfe0822fb4c4f6',1,'Search::search_metatask::run()']]],
-  ['run_5ff',['run_f',['../structHookTask_1_1task__data.html#a466e5c46123c51ce06e8d49a1a58bbea',1,'HookTask::task_data']]],
-  ['run_5fobject',['run_object',['../structHookTask_1_1task__data.html#ab67f4012e950e83be5ec6954c916793b',1,'HookTask::task_data']]],
   ['run_5fsetup',['run_setup',['../structSearch_1_1search__task.html#aa582b8dc46c5fc2e19dde7749eb9cf34',1,'Search::search_task::run_setup()'],['../structSearch_1_1search__metatask.html#a45b1727341efed3a07f1ad3464618669',1,'Search::search_metatask::run_setup()']]],
-  ['run_5fsetup_5ff',['run_setup_f',['../structHookTask_1_1task__data.html#a458e29be448889aff3613081629a2c63',1,'HookTask::task_data']]],
-  ['run_5ftakedown',['run_takedown',['../structSearch_1_1search__task.html#a73aaf2d1415651a89b9f449328cf38f1',1,'Search::search_task::run_takedown()'],['../structSearch_1_1search__metatask.html#a3f9b2369800e53db01d1aa3b7f0c5e88',1,'Search::search_metatask::run_takedown()']]],
-  ['run_5ftakedown_5ff',['run_takedown_f',['../structHookTask_1_1task__data.html#afa33f53c0e93899d4f90eb136c38b078',1,'HookTask::task_data']]]
+  ['run_5ftakedown',['run_takedown',['../structSearch_1_1search__task.html#a73aaf2d1415651a89b9f449328cf38f1',1,'Search::search_task::run_takedown()'],['../structSearch_1_1search__metatask.html#a3f9b2369800e53db01d1aa3b7f0c5e88',1,'Search::search_metatask::run_takedown()']]]
 ];

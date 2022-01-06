@@ -534,28 +534,29 @@ Input label = simple
 Output pred = scalar
 average  since         example        example  current  current  current
 loss     last          counter         weight    label  predict features
-5.302358 5.302358            1            1.0   2.3027   0.0000        3
-5.544497 5.786635            2            2.0   2.6391   0.2336        3
-3.547264 1.550030            4            4.0   0.6936   0.1926        3
-9.393145 15.239026            8            8.0   2.5650   0.4788        3
-9.122246 8.851347           16           16.0   1.6096   0.4521        3
-5.683158 2.244069           32           32.0   1.6096   0.5464        2
-3.552704 1.422250           64           64.0   2.0796   1.2713        3
-3.425729 3.298753          128          128.0   1.6096   1.3940        3
-2.549083 1.672438          256          256.0   1.6096   1.4073        3
-2.297350 2.045617          512          512.0   2.1973   2.1603        3
-2.139553 1.981755         1024         1024.0   2.3027   2.1914        3
-1.985360 1.831168         2048         2048.0   2.5650   1.6947        3
-1.898464 1.811567         4096         4096.0   1.6096   1.8423        2
-1.836451 1.774438         8192         8192.0   2.4850   2.0282        3
-
-finished run
+1.922505 1.922505            1            1.0   1.3865   0.0000        3
+1.143174 0.363843            2            2.0   0.6936   0.0905        3
+2.586415 4.029657            4            4.0   3.2189   0.4379        3
+2.931625 3.276835            8            8.0   1.3865   0.4031        3
+2.733547 2.535469           16           16.0   2.8904   0.9800        3
+2.219916 1.706285           32           32.0   2.3980   1.2510        3
+5.197723 8.175529           64           64.0   2.8333   1.6388        3
+2.858096 0.518469          128          128.0   2.4850   2.0302        3
+3.190355 3.522615          256          256.0   2.3027   2.1519        3
+2.740283 2.290212          512          512.0   1.6096   1.5049        3
+2.588436 2.436588         1024         1024.0   2.3027   2.1179        3
+2.524667 2.460898         2048         2048.0   2.0796   1.5730        3
+2.419861 2.315056         4096         4096.0   2.3980   2.4631        3
+2.318605 2.217348         8192         8192.0   2.4850   1.8819        3
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>finished run
 number of examples = 10000
 weighted example sum = 10000.000000
-weighted label sum = 18597.400859
-average loss = 1.818900
-best constant = 1.859740
-total feature number = 28600
+weighted label sum = 17889.493287
+average loss = 2.288859
+best constant = 1.788949
+total feature number = 28300
 </pre></div>
 </div>
 </div>
@@ -573,7 +574,9 @@ total feature number = 28600
 </div>
 <div class="cell_output docutils container">
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[warning] The current default logging behavior of VW is to log to a mix of stderr and stdout for logging based messages. This behavior is now deprecated. Please specify the stream to log to with --log_output_stream stdout|stderr to silence this message.
-only testing
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>only testing
 Num weight bits = 2
 learning rate = 0.5
 initial_t = 0
@@ -586,16 +589,13 @@ Input label = simple
 Output pred = scalar
 average  since         example        example  current  current  current
 loss     last          counter         weight    label  predict features
-0.851049 0.851049 
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>           1            1.0   2.3027   1.3802        3
-1.220285 1.589521            2            2.0   2.6391   1.3784        3
-0.620340 0.020395            4            4.0   0.6936   0.5106        3
-6.541669 12.462999            8            8.0   2.5650   2.8996        3
-6.250425 5.959180           16           16.0   1.6096   1.8145        3
-3.182223 0.114021           32           32.0   1.6096   0.9463        2
-1.714047 0.245872           64           64.0   2.0796   2.0314        3
+0.225011 0.225011            1            1.0   1.3865   1.8609        3
+0.150114 0.075217            2            2.0   0.6936   0.4194        3
+0.146828 0.143542            4            4.0   3.2189   3.2189        3
+0.117505 0.088182            8            8.0   1.3865   1.1401        3
+0.257836 0.398166           16           16.0   2.8904   3.2189        3
+0.251815 0.245795           32           32.0   2.3980   2.5976        3
+3.146106 6.040397           64           64.0   2.8333   3.0249        3
 </pre></div>
 </div>
 </div>
@@ -635,31 +635,36 @@ loss     last          counter         weight    label  predict features
 finished run
 number of examples = 100
 weighted example sum = 100.000000
-weighted label sum = 185.974009
-average loss = 1.738158
-best constant = 1.859740
-total feature number = 286
-28.051704 28.051704            1            1.0  10.0000   0.0000        3
-34.884232 41.716759            2            2.0  14.0000   0.2400        3
-20.552104 6.219976            4            4.0   2.0000   0.1935        3
-18.138891 15.725678            8            8.0  13.0000   0.5711        3
-16.908438 15.677986           16           16.0   5.0000   0.6535        3
-15.409285 13.910132           32           32.0   5.0000   0.8305        2
-11.734561 8.059837           64           64.0   8.0000   1.6457        3
-7.105483 2.476406          128          128.0   5.0000   1.8336        3
-4.173395 1.241307          256          256.0   5.0000   1.7602        3
-2.682371 1.191348          512          512.0   9.0000   2.3728        3
-1.924962 1.167552         1024         1024.0  10.0000   2.3548        3
-1.543824 1.162687         2048         2048.0  13.0000   1.9692        3
-1.351022 1.158220         4096         4096.0   5.0000   2.1038        2
-1.254752 1.158482         8192         8192.0  12.0000   2.1997        3
+weighted label sum = 178.894933
+average loss = 2.150484
+best constant = 1.788949
+total feature number = 283
+5.090357 5.090357            1            1.0   4.0000   0.0000        3
+2.842647 0.594936            2            2.0   2.0000   0.0933        3
+24.954467 47.066287            4            4.0  25.0000   0.4074        3
+23.686299 22.418132            8            8.0   4.0000   0.3675        3
+21.249090 18.811880           16           16.0  18.0000   0.8299        3
+18.118075 14.987061           32           32.0  11.0000   1.1418        3
+13.130362 8.142648           64           64.0  17.0000   1.7801        3
+8.163114 3.195867          128          128.0  12.0000   2.2595        3
+4.784844 1.406574          256          256.0  10.0000   2.4084        3
+3.032473 1.280102          512          512.0   5.0000   1.8186        3
+2.126159 1.219845         1024         1024.0  10.0000   2.2474        3
+1.676307 1.226455         2048         2048.0   8.0000   1.8988        3
+1.452980 1.229653         4096         4096.0  11.0000   2.4824        3
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.335938 1.218895         8192         8192.0  12.0000   2.1207        3
 
 finished run
 number of examples = 10000
-weighted example sum = 10000.000000
-weighted label sum = 96700.000000
-average loss = 1.236895
-total feature number = 28600
+weighted example sum = 
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>10000.000000
+weighted label sum = 94900.000000
+average loss = 1.314476
+total feature number = 28300
 </pre></div>
 </div>
 </div>
@@ -675,7 +680,9 @@ total feature number = 28600
 </div>
 <div class="cell_output docutils container">
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[warning] The current default logging behavior of VW is to log to a mix of stderr and stdout for logging based messages. This behavior is now deprecated. Please specify the stream to log to with --log_output_stream stdout|stderr to silence this message.
-Num weight bits = 2
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Num weight bits = 2
 learning rate = 0.5
 initial_t = 0
 power_t = 0.5
@@ -687,13 +694,13 @@ Input label = simple
 Output pred = scalar
 average  since         example        example  current  current  current
 loss     last          counter         weight    label  predict features
-66.461311 66.461311            1            1.0  10.0000   1.8476        3
-106.924938 147.388565            2            2.0  14.0000   1.8596        3
-59.295519 11.666099            4            4.0   2.0000   1.3715        3
-53.299131 47.302743            8            8.0  13.0000   2.6959        3
-59.870679 66.442227           16           16.0   5.0000   2.0887        3
-73.639086 87.407493           32           32.0   5.0000   1.6035        2
-85.882921 98.126756           64           64.0   8.0000   2.2107        3
+3.520396 3.520396            1            1.0   4.0000   2.1237        3
+1.923639 0.326882            2            2.0   2.0000   1.4283        3
+121.417782 240.911925            4            4.0  25.0000   3.0602        3
+97.957525 74.497269            8            8.0   4.0000   1.7760        3
+85.478940 73.000354           16           16.0  18.0000   3.0574        3
+81.003289 76.527639           32           32.0  11.0000   2.4687        3
+75.853345 70.703401           64           64.0  17.0000   2.7097        3
 </pre></div>
 </div>
 </div>

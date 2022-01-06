@@ -22,7 +22,6 @@ var searchData=
   ['self_5finteraction',['self_interaction',['../structINTERACTIONS_1_1feature__gen__data.html#a9d489e35f7b4ba4f306a540c2877e9d7',1,'INTERACTIONS::feature_gen_data']]],
   ['sensitivity_5ff',['sensitivity_f',['../structVW_1_1LEARNER_1_1sensitivity__data.html#a3af18eebab310c678cf75e00e8b06152',1,'VW::LEARNER::sensitivity_data']]],
   ['set_5fminmax',['set_minmax',['../structVW_1_1workspace.html#ae69e4a48a58425fcf057ba4fcb20478c',1,'VW::workspace']]],
-  ['setup_5fobject',['setup_object',['../structHookTask_1_1task__data.html#a1cecd59df866ca4eae54412b9458bd05',1,'HookTask::task_data']]],
   ['shared_5fex_5findex',['SHARED_EX_INDEX',['../constant_8h.html#a753d241bccb62003b885fb0b2ae9c802',1,'constant.h']]],
   ['shared_5ftype',['SHARED_TYPE',['../constant_8h.html#a186c53aa4337a15980d33920c6f34e62',1,'constant.h']]],
   ['simple',['simple',['../structpolylabel.html#a80ff268cb4e29afddaac58174d316297',1,'polylabel']]],
