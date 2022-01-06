@@ -520,7 +520,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[warning] The current default logging behavior of VW is to log to a mix of stderr and stdout for logging based messages. This behavior is now deprecated. Please specify the stream to log to with --log_output_stream stdout|stderr to silence this message.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[warning] The old default logging behavior of logging to a mix of stdout and stderr is deprecated. Please choose either &#39;stdout&#39; or &#39;stderr&#39; for --log_output_stream to silence this warning.
 final_regressor = vw.log.model
 Num weight bits = 2
 learning rate = 0.1
@@ -534,28 +534,28 @@ Input label = simple
 Output pred = scalar
 average  since         example        example  current  current  current
 loss     last          counter         weight    label  predict features
-4.324595 4.324595            1            1.0   2.0796   0.0000        3
-3.932764 3.540933            2            2.0   2.3027   0.4209        3
-3.594317 3.255869            4            4.0   1.9461   0.3115        2
-3.041672 2.489026            8            8.0   1.3865   0.3530        3
-2.806459 2.571246           16           16.0   2.1973   0.7980        3
-3.903760 5.001062           32           32.0   2.1973   0.8552        3
-2.472315 1.040869           64           64.0   2.7081   1.8669        3
-2.391520 2.310725          128          128.0   2.3980   2.1326        3
-1.794069 1.196618          256          256.0   2.9445   2.0486        3
-1.591210 1.388351          512          512.0   2.1973   2.0544        3
-1.540499 1.489788         1024         1024.0   1.6096   1.3813        2
-1.447849 1.355200         2048         2048.0   2.5650   2.9484        3
-1.409432 1.371015         4096         4096.0   2.1973   2.5260        3
-1.381131 1.352830         8192         8192.0   1.7919   1.2173        3
+3.787122 3.787122            1            1.0   1.9461   0.0000        3
+4.898040 6.008958            2            2.0   2.6391   0.1878        3
+4.829443 4.760846            4            4.0   2.1973   0.2715        2
+4.701064 4.572686            8            8.0   2.6391   0.5474        3
+3.433661 2.166258           16           16.0   1.6096   0.4560        2
+4.501556 5.569451           32           32.0   2.5650   1.0030        3
+3.604960 2.708364           64           64.0   2.9958   1.6430        3
+2.629198 1.653437          128          128.0   2.3980   1.8280        3
+2.162410 1.695622          256          256.0   1.9461   1.7852        2
+1.685876 1.209341          512          512.0   2.5650   2.0287        3
+1.547546 1.409215         1024         1024.0   1.7919   1.7562        3
+1.495125 1.442704         2048         2048.0   2.0796   2.1344        3
+1.437978 1.380831         4096         4096.0   2.3027   1.5504        3
+1.395231 1.352484         8192         8192.0   2.3980   2.9958        3
 
 finished run
 number of examples = 10000
 weighted example sum = 10000.000000
-weighted label sum = 20196.182816
-average loss = 1.373276
-best constant = 2.019618
-total feature number = 28900
+weighted label sum = 18635.109935
+average loss = 1.383760
+best constant = 1.863511
+total feature number = 27500
 </pre></div>
 </div>
 </div>
@@ -572,7 +572,7 @@ total feature number = 28900
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[warning] The current default logging behavior of VW is to log to a mix of stderr and stdout for logging based messages. This behavior is now deprecated. Please specify the stream to log to with --log_output_stream stdout|stderr to silence this message.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[warning] The old default logging behavior of logging to a mix of stdout and stderr is deprecated. Please choose either &#39;stdout&#39; or &#39;stderr&#39; for --log_output_stream to silence this warning.
 only testing
 Num weight bits = 2
 learning rate = 0.5
@@ -586,13 +586,16 @@ Input label = simple
 Output pred = scalar
 average  since         example        example  current  current  current
 loss     last          counter         weight    label  predict features
-0.487784 0.487784            1            1.0   2.0796   1.3812        3
-0.279782 0.071780            2            2.0   2.3027   2.5706        3
-0.188635 0.097488            4            4.0   1.9461   1.5241        2
-0.185852 0.183068            8            8.0   1.3865   1.2084        3
-0.122183 0.058515           16           16.0   2.1973   2.0523        3
-1.923173 3.724163           32           32.0   2.1973   1.5440        3
-1.050400 0.177627           64           64.0   2.7081   2.9012        3
+0.371480 0.371480            1            1.0
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   1.9461   2.5555        3
+0.230311 0.089142            2            2.0   2.6391   2.9377        3
+0.312158 0.394005            4            4.0   2.1973   1.6002        2
+0.221956 0.131754            8            8.0   2.6391   2.4483        3
+0.285050 0.348143           16           16.0   1.6096   0.7496        2
+2.074791 3.864532           32           32.0   2.5650   2.2572        3
+1.910734 1.746676           64           64.0   2.9958   2.9958        3
 </pre></div>
 </div>
 </div>
@@ -614,7 +617,7 @@ loss     last          counter         weight    label  predict features
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[warning] The current default logging behavior of VW is to log to a mix of stderr and stdout for logging based messages. This behavior is now deprecated. Please specify the stream to log to with --log_output_stream stdout|stderr to silence this message.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[warning] The old default logging behavior of logging to a mix of stdout and stderr is deprecated. Please choose either &#39;stdout&#39; or &#39;stderr&#39; for --log_output_stream to silence this warning.
 final_regressor = vw.poisson.model
 Num weight bits = 2
 learning rate = 0.1
@@ -632,34 +635,31 @@ loss     last          counter         weight    label  predict features
 finished run
 number of examples = 100
 weighted example sum = 100.000000
-weighted label sum = 201.961828
-average loss = 1.339834
-best constant = 2.019618
-total feature number = 289
-19.271065 19.271065            1            1.0   8.0000   0.0000        3
-19.873438 20.475811            2            2.0  10.0000   0.4330        3
-17.700335 15.527232            4            4.0   7.0000   0.3223        2
-14.855503 12.010671            8            8.0   4.0000   0.3659        3
-18.078847 21.302192           16           16.0   9.0000   0.8559        3
-14.206375 10.333902           32           32.0   9.0000   0.9779        3
-10.528620 6.850865           64           64.0  15.0000   2.0903        3
-6.320223 2.111826          128          128.0  11.0000   2.3939        3
-3.797643 1.275062          256          256.0  19.0000   2.2374        3
-2.471965 1.146287          512          512.0   9.0000   2.1723        3
-1.818383 1.164801         1024         1024.0   5.0000   1.6610        2
-1.476207 1.134032         2048         2048.0  13.0000   2.8270        3
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.305301 1.134396         4096         4096.0   9.0000   2.5240        3
-1.213568 1.121834         8192         8192.0   6.0000   1.7463        3
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>finished run
+weighted label sum = 186.351099
+average loss = 1.331841
+best constant = 1.863511
+total feature number = 275
+15.242744 15.242744            1            1.0   7.0000   0.0000        3
+29.075470 42.908195            2            2.0  14.0000   0.1933        3
+29.626564 30.177658            4            4.0   9.0000   0.2986        2
+32.279538 34.932511            8            8.0  14.0000   0.5765        3
+24.075059 15.870580           16           16.0   5.0000   0.4850        2
+19.783542 15.492024           32           32.0  13.0000   1.1274        3
+12.872203 5.960865           64           64.0  20.0000   1.8438        3
+8.266573 3.660943          128          128.0  11.0000   2.1689        3
+4.780222 1.293871          256          256.0   7.0000   2.0689        2
+3.054090 1.327958          512          512.0  13.0000   2.1931        3
+2.155415 1.256739         1024         1024.0   6.0000   1.9301        3
+1.698151 1.240887         2048         2048.0   8.0000   2.1932        3
+1.472460 1.246770         4096         4096.0  10.0000   1.8238        3
+1.355225 1.237990         8192         8192.0  11.0000   2.8653        3
+
+finished run
 number of examples = 10000
 weighted example sum = 10000.000000
-weighted label sum = 98700.000000
-average loss = 1.196158
-total feature number = 28900
+weighted label sum = 90100.000000
+average loss = 1.334478
+total feature number = 27500
 </pre></div>
 </div>
 </div>
@@ -674,8 +674,10 @@ total feature number = 28900
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[warning] The current default logging behavior of VW is to log to a mix of stderr and stdout for logging based messages. This behavior is now deprecated. Please specify the stream to log to with --log_output_stream stdout|stderr to silence this message.
-Num weight bits = 2
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[warning] The old default logging behavior of logging to a mix of stdout and stderr is deprecated. Please choose either &#39;stdout&#39; or &#39;stderr&#39; for --log_output_stream to silence this warning.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Num weight bits = 2
 learning rate = 0.5
 initial_t = 0
 power_t = 0.5
@@ -687,13 +689,13 @@ Input label = simple
 Output pred = scalar
 average  since         example        example  current  current  current
 loss     last          counter         weight    label  predict features
-37.946751 37.946751            1            1.0   8.0000   1.8399        3
-47.053768 56.160786            2            2.0  10.0000   2.5059        3
-41.403781 35.753795            4            4.0   7.0000   1.9507        2
-36.395059 31.386337            8            8.0   4.0000   1.7464        3
-74.633233 112.871407           16           16.0   9.0000   2.2254        3
-68.031372 61.429511           32           32.0   9.0000   1.9392        3
-77.313539 86.595706           64           64.0  15.0000   2.7016        3
+21.018499 21.018499            1            1.0   7.0000   2.4154        3
+74.593905 128.169312            2            2.0  14.0000   2.6788        3
+86.290915 97.987925            4            4.0   9.0000   1.7569        2
+113.298194 140.305473            8            8.0  14.0000   2.4809        3
+91.874205 70.450216           16           16.0   5.0000   1.3448        2
+91.271409 90.668613           32           32.0  13.0000   2.3492        3
+72.762111 54.252812           64           64.0  20.0000   2.8598        3
 </pre></div>
 </div>
 </div>
