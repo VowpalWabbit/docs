@@ -534,28 +534,28 @@ Input label = simple
 Output pred = scalar
 average  since         example        example  current  current  current
 loss     last          counter         weight    label  predict features
-2.590933 2.590933            1            1.0   1.6096   0.0000        3
-3.523562 4.456192            2            2.0   2.4850   0.3740        3
-2.906130 2.288697            4            4.0   1.0989   0.2222        3
-2.860214 2.814299            8            8.0   2.3027   0.4196        3
-5.698500 8.536785           16           16.0   1.6096   0.4989        3
-3.809679 1.920858           32           32.0   1.3865   0.7800        3
-2.388275 0.966872           64           64.0   2.3980   1.2943        3
-2.319186 2.250097          128          128.0   2.3027   1.8894        3
-1.757752 1.196318          256          256.0   1.0989   1.2432        2
-1.673261 1.588769          512          512.0  -6.9078   0.7289        1
-1.501908 1.330556         1024         1024.0   2.5650   2.4398        3
-1.405826 1.309744         2048         2048.0   1.3865   2.5170        3
-1.358526 1.311227         4096         4096.0   1.9461   1.2102        3
-1.324032 1.289537         8192         8192.0   2.5650   2.5687        3
+47.717091 47.717091            1            1.0  -6.9078   0.0000        1
+28.327739 8.938388            2            2.0   2.8904  -0.0993        3
+16.208873 4.090007            4            4.0   1.7919   0.0355        3
+10.090823 3.972774            8            8.0   2.0796   0.1190        2
+9.660885 9.230948           16           16.0   2.3027   0.4124        3
+7.683175 5.705465           32           32.0   1.9461   0.8491        3
+6.437410 5.191644           64           64.0   2.6391   1.2554        3
+4.990835 3.544261          128          128.0   2.3027   1.1366        3
+4.771984 4.553134          256          256.0   2.5650   2.3507        3
+4.101292 3.430599          512          512.0   0.6936   0.9753        3
+3.880318 3.659345         1024         1024.0   2.1973   2.2647        3
+3.724044 3.567771         2048         2048.0   2.5650   1.6743        3
+3.553625 3.383206         4096         4096.0   2.4850   2.1529        3
+3.416876 3.280128         8192         8192.0   0.0010   0.9734        3
 
 finished run
 number of examples = 10000
 weighted example sum = 10000.000000
-weighted label sum = 17955.588803
-average loss = 1.314974
-best constant = 1.795559
-total feature number = 28300
+weighted label sum = 14860.351184
+average loss = 3.376272
+best constant = 1.486035
+total feature number = 27400
 </pre></div>
 </div>
 </div>
@@ -573,9 +573,7 @@ total feature number = 28300
 </div>
 <div class="cell_output docutils container">
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[warning] The old default logging behavior of logging to a mix of stdout and stderr is deprecated. Please choose either &#39;stdout&#39; or &#39;stderr&#39; for --log_output_stream to silence this warning.
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>only testing
+only testing
 Num weight bits = 2
 learning rate = 0.5
 initial_t = 0
@@ -588,13 +586,13 @@ Input label = simple
 Output pred = scalar
 average  since         example        example  current  current  current
 loss     last          counter         weight    label  predict features
-0.240414 0.240414            1            1.0   1.6096   1.1193        3
-0.123774 0.007135            2            2.0   2.4850   2.5695        3
-0.122524 0.121273            4            4.0   1.0989   0.9392        3
-0.156815 0.191107            8            8.0   2.3027   1.8301        3
-3.363209 6.569604           16           16.0   1.6096   1.2804        3
-1.763130 0.163050           32           32.0   1.3865   1.2994        3
-1.035057 0.306985           64           64.0   2.3980   1.8872        3
+40.496750 40.496750            1            1.0  -6.9078  -0.5441        1
+20.260255 0.023760            2            2.0   2.8904   3.0446        3
+10.199883 0.139511            4            4.0   1.7919   1.2693        3
+5.372805 0.545727            8            8.0   2.0796   0.6822        2
+5.381420 5.390034           16           16.0   2.3027   2.3469        3
+4.385306 3.389192           32           32.0   1.9461   3.0343        3
+3.965155 3.545003           64           64.0   2.6391   3.0446        3
 </pre></div>
 </div>
 </div>
@@ -617,9 +615,7 @@ loss     last          counter         weight    label  predict features
 </div>
 <div class="cell_output docutils container">
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[warning] The old default logging behavior of logging to a mix of stdout and stderr is deprecated. Please choose either &#39;stdout&#39; or &#39;stderr&#39; for --log_output_stream to silence this warning.
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>final_regressor = vw.poisson.model
+final_regressor = vw.poisson.model
 Num weight bits = 2
 learning rate = 0.1
 initial_t = 0
@@ -636,32 +632,33 @@ loss     last          counter         weight    label  predict features
 finished run
 number of examples = 100
 weighted example sum = 100.000000
-weighted label sum = 179.555888
-average loss = 1.275571
-best constant = 1.795559
-total feature number = 283
-8.094381 8.094381            1            1.0   5.0000   0.0000        3
-18.710221 29.326061            2            2.0  12.0000   0.3855        3
-15.135432 11.560643            4            4.0   3.0000   0.2386        3
-15.572753 16.010073            8            8.0  10.0000   0.4116        3
-14.023139 12.473525           16           16.0   5.0000   0.5840        3
-12.917286 11.811434           32           32.0   4.0000   0.9368        3
-9.417010 5.916734           64           64.0  11.0000   1.5064        3
-5.794658 2.172305          128          128.0  10.0000   2.1833        3
-3.626502 1.458346          256          256.0   3.0000   1.5332        2
-2.435855 1.245208          512          512.0   0.0000   1.0914        1
-1.832622 1.229389         1024         1024.0  13.0000   2.4426        3
-1.546034 1.259446         2048         2048.0   4.0000   2.5262        3
-1.392698 1.239362         4096         4096.0   7.0000   1.6441        3
-1.315633 1.238568         8192         8192.0  13.0000   2.4740        3
+weighted label sum = 148.603512
+average loss = 3.185453
+best constant = 1.486035
+total feature number = 274
+2.000000 2.000000            1            1.0   0.0000   0.0000        1
+37.650990 73.301979            2            2.0  18.0000  -0.0953        3
+28.065853 18.480716            4            4.0   6.0000   0.0900        3
+26.995677 25.925502            8            8.0   8.0000   0.2098        2
+23.699942 20.404207           16           16.0  10.0000   0.5695        3
+18.730709 13.761476           32           32.0   7.0000   1.0861        3
+14.035000 9.339292           64           64.0  14.0000   1.6532        3
+8.859404 3.683807          128          128.0  10.0000   1.6372        3
+5.313677 1.767950          256          256.0  13.0000   2.8026        3
+3.329157 1.344638          512          512.0   2.0000   1.5105        3
+2.344631 1.360105         1024         1024.0   9.0000   2.4280        3
+1.865365 1.386098         2048         2048.0  13.0000   2.0863        3
+1.613536 1.361707         4096         4096.0  12.0000   2.3134        3
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>finished run
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.487955 1.362375         8192         8192.0   1.0000   1.7145        3
+
+finished run
 number of examples = 10000
 weighted example sum = 10000.000000
-weighted label sum = 85000.000000
-average loss = 1.300918
-total feature number = 
+weighted label sum = 84800.000000
+average loss = 1.463964
+total feature number = 27400
 </pre></div>
 </div>
 </div>
@@ -676,8 +673,7 @@ total feature number =
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>28300
-[warning] The old default logging behavior of logging to a mix of stdout and stderr is deprecated. Please choose either &#39;stdout&#39; or &#39;stderr&#39; for --log_output_stream to silence this warning.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[warning] The old default logging behavior of logging to a mix of stdout and stderr is deprecated. Please choose either &#39;stdout&#39; or &#39;stderr&#39; for --log_output_stream to silence this warning.
 Num weight bits = 2
 learning rate = 0.5
 initial_t = 0
@@ -690,13 +686,13 @@ Input label = simple
 Output pred = scalar
 average  since         example        example  current  current  current
 loss     last          counter         weight    label  predict features
-11.390168 11.390168            1            1.0   5.0000   1.6251        3
-51.438023 91.485878            2            2.0  12.0000   2.4352        3
-40.038332 28.638641            4            4.0   3.0000   1.5265        3
-45.029948 50.021564            8            8.0  10.0000   1.9979        3
-45.840572 46.651196           16           16.0   5.0000   1.6808        3
-56.014382 66.188192           32           32.0   4.0000   1.7236        3
-59.249772 62.485163           64           64.0  11.0000   2.1266        3
+0.974431 0.974431            1            1.0   0.0000   0.9871        1
+117.970148 234.965866            2            2.0  18.0000   2.6714        3
+78.082470 38.194791            4            4.0   6.0000   1.8293        3
+79.476580 80.870691            8            8.0   8.0000   1.5962        2
+76.312078 73.147576           16           16.0  10.0000   2.3059        3
+68.598666 60.885255           32           32.0   7.0000   2.6767        3
+69.533914 70.469161           64           64.0  14.0000   2.6714        3
 </pre></div>
 </div>
 </div>
