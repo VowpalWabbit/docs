@@ -1,6 +1,7 @@
 var searchData=
 [
   ['ect_2eh',['ect.h',['../ect_8h.html',1,'']]],
+  ['epsilon_5freduction_5ffeatures_2eh',['epsilon_reduction_features.h',['../epsilon__reduction__features_8h.html',1,'']]],
   ['error_5fconstants_2eh',['error_constants.h',['../error__constants_8h.html',1,'']]],
   ['error_5fdata_2eh',['error_data.h',['../error__data_8h.html',1,'']]],
   ['error_5freporting_2eh',['error_reporting.h',['../error__reporting_8h.html',1,'']]],

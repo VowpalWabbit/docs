@@ -43,6 +43,7 @@ var searchData=
   ['is_5fring_5fexample',['is_ring_example',['../namespaceVW.html#ac6faac6a3b5c0a1c6243d143a5d896cd',1,'VW']]],
   ['is_5froot',['is_root',['../structVW_1_1cats__tree_1_1tree__node.html#ad501d5758aae3ae13ce47fcf2047f5ab',1,'VW::cats_tree::tree_node']]],
   ['is_5ftest_5flabel',['is_test_label',['../namespaceCB.html#a178fc5ebdc6874d05fd07f20d4fe74a3',1,'CB']]],
+  ['is_5fvalid_5fepsilon',['is_valid_epsilon',['../structVW_1_1cb__explore__adf_1_1greedy_1_1reduction__features.html#af745d1de202802ce6f428813d5d270cf',1,'VW::cb_explore_adf::greedy::reduction_features']]],
   ['is_5fvalid_5fpdf',['is_valid_pdf',['../namespaceVW_1_1continuous__actions.html#a4f1b699c90c2a0efb59a20b42707ef48',1,'VW::continuous_actions']]],
   ['isbinary',['isbinary',['../classio__buf.html#a1974dd5257eaa530030fc59cce0589be',1,'io_buf']]],
   ['isvalid',['isValid',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#a808e770995c7355b648a944b5fb730bd',1,'VW::distributionally_robust::ChiSquared']]],

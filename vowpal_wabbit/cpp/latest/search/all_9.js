@@ -2,7 +2,7 @@ var searchData=
 [
   ['i',['i',['../unionexploration_1_1int__float.html#ad2bc6c4c956bde873b30883f1e1f73d3',1,'exploration::int_float']]],
   ['id',['id',['../structVW_1_1cats__tree_1_1tree__node.html#a61e16c2cc5da0df4b7060465ec4b9d46',1,'VW::cats_tree::tree_node::id()'],['../structVW_1_1workspace.html#a1a5991719de1f9ac2db1d7f77a46e531',1,'VW::workspace::id()'],['../structVW_1_1offset__tree_1_1tree__node.html#abdddece8c7416bbfae454d3a4af6d038',1,'VW::offset_tree::tree_node::id()']]],
-  ['ignore',['ignore',['../structVW_1_1workspace.html#aba2139155728faa7aa46b66f3365d1f7',1,'VW::workspace::ignore()'],['../classDefaultState.html#a0b4a49d922219a5b71926061b304ea21',1,'DefaultState::Ignore()']]],
+  ['ignore',['Ignore',['../classDefaultState.html#a0b4a49d922219a5b71926061b304ea21',1,'DefaultState::Ignore()'],['../structVW_1_1workspace.html#aba2139155728faa7aa46b66f3365d1f7',1,'VW::workspace::ignore()']]],
   ['ignore_5flinear',['ignore_linear',['../structVW_1_1workspace.html#aadd1a2ddcd8c5a0a35c53b582cd0059c',1,'VW::workspace']]],
   ['ignore_5fsome',['ignore_some',['../structVW_1_1workspace.html#adb7c2aa536667110430169904f8b39d2',1,'VW::workspace']]],
   ['ignore_5fsome_5flinear',['ignore_some_linear',['../structVW_1_1workspace.html#a46f34e6768ebc227f54ae9ca817a5160',1,'VW::workspace']]],
@@ -91,6 +91,7 @@ var searchData=
   ['is_5fscalar_5foption_5ftype',['is_scalar_option_type',['../structVW_1_1config_1_1is__scalar__impl_1_1is__scalar__option__type.html',1,'VW::config::is_scalar_impl::is_scalar_option_type&lt; T &gt;'],['../structVW_1_1config_1_1is__scalar__option__type.html',1,'VW::config::is_scalar_option_type&lt; T &gt;']]],
   ['is_5fscalar_5foption_5ftype_3c_20std_3a_3avector_3c_20args_2e_2e_2e_20_3e_20_3e',['is_scalar_option_type&lt; std::vector&lt; Args... &gt; &gt;',['../structVW_1_1config_1_1is__scalar__impl_1_1is__scalar__option__type_3_01std_1_1vector_3_01Args_8_8_8_01_4_01_4.html',1,'VW::config::is_scalar_impl']]],
   ['is_5ftest_5flabel',['is_test_label',['../namespaceCB.html#a178fc5ebdc6874d05fd07f20d4fe74a3',1,'CB']]],
+  ['is_5fvalid_5fepsilon',['is_valid_epsilon',['../structVW_1_1cb__explore__adf_1_1greedy_1_1reduction__features.html#af745d1de202802ce6f428813d5d270cf',1,'VW::cb_explore_adf::greedy::reduction_features']]],
   ['is_5fvalid_5fpdf',['is_valid_pdf',['../namespaceVW_1_1continuous__actions.html#a4f1b699c90c2a0efb59a20b42707ef48',1,'VW::continuous_actions']]],
   ['is_5fvector',['is_vector',['../structVW_1_1config_1_1options__i_1_1is__vector.html',1,'VW::config::options_i']]],
   ['is_5fvector_3c_20std_3a_3avector_3c_20t_2c_20a_20_3e_20_3e',['is_vector&lt; std::vector&lt; T, A &gt; &gt;',['../structVW_1_1config_1_1options__i_1_1is__vector_3_01std_1_1vector_3_01T_00_01A_01_4_01_4.html',1,'VW::config::options_i']]],

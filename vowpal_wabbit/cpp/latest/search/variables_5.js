@@ -11,6 +11,7 @@ var searchData=
   ['end_5findex',['end_index',['../structVW_1_1namespace__extent.html#ad4c20a0d5b90f1aded05ed438a19281b',1,'VW::namespace_extent']]],
   ['end_5fit',['end_it',['../structINTERACTIONS_1_1feature__gen__data.html#a2294a786f788b6fd23517222aad41e79',1,'INTERACTIONS::feature_gen_data']]],
   ['end_5fpass',['end_pass',['../structexample.html#aed100c9f43cef70f89c20dc5fdd30a12',1,'example']]],
+  ['epsilon',['epsilon',['../structVW_1_1cb__explore__adf_1_1greedy_1_1reduction__features.html#a3616c21e0c6d6e6fcb7e09b55b34ae53',1,'VW::cb_explore_adf::greedy::reduction_features']]],
   ['eta',['eta',['../structVW_1_1workspace.html#ad79f6dc7d719ba0d0de5f829177fb745',1,'VW::workspace']]],
   ['eta_5fdecay_5frate',['eta_decay_rate',['../structVW_1_1workspace.html#a657b3989f456fadc02b1067dc3bc1db5',1,'VW::workspace']]],
   ['event',['event',['../structCB__EVAL_1_1label.html#af295a09fa564952d45e7b016fc60e1ff',1,'CB_EVAL::label']]],
