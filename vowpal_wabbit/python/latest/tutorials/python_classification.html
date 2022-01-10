@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Classification with Vowpal Wabbit &#8212; VowpalWabbit latest documentation</title>
+    <title>Python: Classification &#8212; VowpalWabbit latest documentation</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -301,7 +301,7 @@
    </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     Classification with Vowpal Wabbit
+     Python: Classification
     </a>
    </li>
    <li class="toctree-l2">
@@ -445,11 +445,6 @@
    Vowpal Wabbit input format
   </a>
  </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#how-was-this-data-set-generated">
-   How was this data set generated?
-  </a>
- </li>
 </ul>
 
 </nav>
@@ -488,134 +483,36 @@
 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="classification-with-vowpal-wabbit">
-<h1>Classification with Vowpal Wabbit<a class="headerlink" href="#classification-with-vowpal-wabbit" title="Permalink to this headline">¶</a></h1>
-<p>Note: This should be run in Binder instead of interactively on this page. This is because it depends on some files which the interactive page doesn’t pick up.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="python-classification">
+<h1>Python: Classification<a class="headerlink" href="#python-classification" title="Permalink to this headline">¶</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">string</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">sklearn</span>
+<span class="kn">import</span> <span class="nn">sklearn.model_selection</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">training_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;iris-training.csv&#39;</span><span class="p">)</span>
-<span class="n">testing_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;iris-testing.csv&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">iris_dataset</span> <span class="o">=</span> <span class="n">sklearn</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">load_iris</span><span class="p">()</span>
+<span class="n">iris_dataframe</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
+    <span class="n">data</span><span class="o">=</span><span class="n">iris_dataset</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">iris_dataset</span><span class="o">.</span><span class="n">feature_names</span><span class="p">)</span>
+<span class="c1"># vw expects labels starting from 1</span>
+<span class="n">iris_dataframe</span><span class="p">[</span><span class="s2">&quot;y&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">iris_dataset</span><span class="o">.</span><span class="n">target</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="n">training_data</span><span class="p">,</span> <span class="n">testing_data</span> <span class="o">=</span> <span class="n">sklearn</span><span class="o">.</span><span class="n">model_selection</span><span class="o">.</span><span class="n">train_test_split</span><span class="p">(</span>
+    <span class="n">iris_dataframe</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">training_data</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>sepal length (cm)</th>
-      <th>sepal width (cm)</th>
-      <th>petal length (cm)</th>
-      <th>petal width (cm)</th>
-      <th>y</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>count</th>
-      <td>120.000000</td>
-      <td>120.000000</td>
-      <td>120.000000</td>
-      <td>120.000000</td>
-      <td>120.000000</td>
-    </tr>
-    <tr>
-      <th>mean</th>
-      <td>5.785833</td>
-      <td>3.045833</td>
-      <td>3.742500</td>
-      <td>1.213333</td>
-      <td>2.008333</td>
-    </tr>
-    <tr>
-      <th>std</th>
-      <td>0.749935</td>
-      <td>0.424243</td>
-      <td>1.677867</td>
-      <td>0.758031</td>
-      <td>0.804356</td>
-    </tr>
-    <tr>
-      <th>min</th>
-      <td>4.300000</td>
-      <td>2.000000</td>
-      <td>1.000000</td>
-      <td>0.100000</td>
-      <td>1.000000</td>
-    </tr>
-    <tr>
-      <th>25%</th>
-      <td>5.100000</td>
-      <td>2.800000</td>
-      <td>1.600000</td>
-      <td>0.375000</td>
-      <td>1.000000</td>
-    </tr>
-    <tr>
-      <th>50%</th>
-      <td>5.750000</td>
-      <td>3.000000</td>
-      <td>4.300000</td>
-      <td>1.300000</td>
-      <td>2.000000</td>
-    </tr>
-    <tr>
-      <th>75%</th>
-      <td>6.325000</td>
-      <td>3.300000</td>
-      <td>5.100000</td>
-      <td>1.800000</td>
-      <td>3.000000</td>
-    </tr>
-    <tr>
-      <th>max</th>
-      <td>7.700000</td>
-      <td>4.400000</td>
-      <td>6.700000</td>
-      <td>2.500000</td>
-      <td>3.000000</td>
-    </tr>
-  </tbody>
-</table>
-</div></div></div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">to_vw_format</span><span class="p">(</span><span class="n">line</span><span class="p">):</span>
-    <span class="n">chars</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">escape</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">punctuation</span><span class="p">)</span>
-    <span class="n">res</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="nb">int</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">y</span><span class="p">)</span><span class="si">}</span><span class="s1"> |&#39;</span>
-    <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">line</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;y&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">iteritems</span><span class="p">():</span>
-        <span class="n">feature_name</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;([&#39;</span><span class="o">+</span><span class="n">chars</span><span class="o">+</span><span class="s1">&#39;]|\s)+&#39;</span><span class="p">,</span> <span class="s1">&#39;_&#39;</span><span class="p">,</span> <span class="n">idx</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">to_vw_format</span><span class="p">(</span><span class="n">row</span><span class="p">):</span>
+    <span class="n">res</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="nb">int</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">y</span><span class="p">)</span><span class="si">}</span><span class="s1"> |&#39;</span>
+    <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">row</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;y&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">iteritems</span><span class="p">():</span>
+        <span class="n">feature_name</span> <span class="o">=</span> <span class="n">idx</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="s1">&#39;_&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;(&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;)&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
         <span class="n">res</span> <span class="o">+=</span> <span class="sa">f</span><span class="s1">&#39; </span><span class="si">{</span><span class="n">feature_name</span><span class="si">}</span><span class="s1">:</span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s1">&#39;</span>
     <span class="k">return</span> <span class="n">res</span>
 </pre></div>
@@ -624,7 +521,7 @@
 </div>
 <section id="vowpal-wabbit-input-format">
 <h2>Vowpal Wabbit input format<a class="headerlink" href="#vowpal-wabbit-input-format" title="Permalink to this headline">¶</a></h2>
-<p>Vowpal Wabbit has its own input format we can use. Lets see how it looks like.</p>
+<p>Vowpal Wabbit has its own input format we can use. Let’s see what it looks like.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">ex</span> <span class="ow">in</span> <span class="n">training_data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">to_vw_format</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
@@ -633,16 +530,16 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3 | sepal_length_cm_:6.4 sepal_width_cm_:3.1 petal_length_cm_:5.5 petal_width_cm_:1.8
-1 | sepal_length_cm_:5.1 sepal_width_cm_:3.5 petal_length_cm_:1.4 petal_width_cm_:0.2
-1 | sepal_length_cm_:5.4 sepal_width_cm_:3.7 petal_length_cm_:1.5 petal_width_cm_:0.2
-3 | sepal_length_cm_:6.2 sepal_width_cm_:2.8 petal_length_cm_:4.8 petal_width_cm_:1.8
-3 | sepal_length_cm_:5.8 sepal_width_cm_:2.7 petal_length_cm_:5.1 petal_width_cm_:1.9
-1 | sepal_length_cm_:4.9 sepal_width_cm_:3.1 petal_length_cm_:1.5 petal_width_cm_:0.2
-1 | sepal_length_cm_:4.6 sepal_width_cm_:3.2 petal_length_cm_:1.4 petal_width_cm_:0.2
-3 | sepal_length_cm_:5.8 sepal_width_cm_:2.7 petal_length_cm_:5.1 petal_width_cm_:1.9
-1 | sepal_length_cm_:4.3 sepal_width_cm_:3.0 petal_length_cm_:1.1 petal_width_cm_:0.1
-2 | sepal_length_cm_:6.7 sepal_width_cm_:3.0 petal_length_cm_:5.0 petal_width_cm_:1.7
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1 | sepal_length_cm:4.3 sepal_width_cm:3.0 petal_length_cm:1.1 petal_width_cm:0.1
+3 | sepal_length_cm:6.4 sepal_width_cm:2.8 petal_length_cm:5.6 petal_width_cm:2.2
+2 | sepal_length_cm:6.1 sepal_width_cm:2.8 petal_length_cm:4.0 petal_width_cm:1.3
+3 | sepal_length_cm:6.4 sepal_width_cm:2.8 petal_length_cm:5.6 petal_width_cm:2.1
+3 | sepal_length_cm:7.2 sepal_width_cm:3.6 petal_length_cm:6.1 petal_width_cm:2.5
+3 | sepal_length_cm:6.4 sepal_width_cm:2.7 petal_length_cm:5.3 petal_width_cm:1.9
+3 | sepal_length_cm:7.7 sepal_width_cm:3.8 petal_length_cm:6.7 petal_width_cm:2.2
+1 | sepal_length_cm:4.8 sepal_width_cm:3.1 petal_length_cm:1.6 petal_width_cm:0.2
+1 | sepal_length_cm:4.6 sepal_width_cm:3.2 petal_length_cm:1.4 petal_width_cm:0.2
+1 | sepal_length_cm:5.2 sepal_width_cm:3.5 petal_length_cm:1.5 petal_width_cm:0.2
 </pre></div>
 </div>
 </div>
@@ -651,47 +548,18 @@
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">vowpalwabbit</span> <span class="kn">import</span> <span class="n">pyvw</span>
 
-<span class="n">vw</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">vw</span><span class="p">(</span><span class="s2">&quot;--oaa 3&quot;</span><span class="p">)</span>
+<span class="n">vw</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">vw</span><span class="p">(</span><span class="s2">&quot;--oaa 3&quot;</span><span class="p">,</span> <span class="n">enable_logging</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
-<span class="c1"># learn from training set</span>
-<span class="k">for</span> <span class="n">example</span> <span class="ow">in</span> <span class="n">training_data</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">to_vw_format</span><span class="p">,</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">):</span>
-    <span class="n">vw</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">example</span><span class="p">)</span>
+<span class="c1"># learn from training set with multiple passes</span>
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">example</span> <span class="ow">in</span> <span class="n">training_data</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">to_vw_format</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">vw</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">example</span><span class="p">)</span>
 
 <span class="c1"># predict from the testing set</span>
 <span class="n">predictions</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">example</span> <span class="ow">in</span> <span class="n">testing_data</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">to_vw_format</span><span class="p">,</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">):</span>
+<span class="k">for</span> <span class="n">example</span> <span class="ow">in</span> <span class="n">testing_data</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">to_vw_format</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
     <span class="n">predicted_class</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">example</span><span class="p">)</span>
     <span class="n">predictions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">predicted_class</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[warning] The old default logging behavior of logging to a mix of stdout and stderr is deprecated. Please choose either &#39;stdout&#39; or &#39;stderr&#39; for --log_output to silence this warning.
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[info] label 3 found -- labels are now considered 1-indexed.
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Num weight bits = 18
-learning rate = 0.5
-initial_t = 0
-power_t = 0.5
-using no cache
-Reading datafile = stdin
-num sources = 1
-Enabled reductions: gd, scorer-identity, oaa
-Input label = multiclass
-Output pred = multiclass
-average  since         example        example  current  current  current
-loss     last          counter         weight    label  predict features
-1.000000 1.000000            1            1.0        3        1        5
-1.000000 1.000000            2            2.0        1        3        5
-0.750000 0.500000            4            4.0        3        1        5
-0.500000 0.250000            8            8.0        3        3        5
-0.500000 0.500000           16           16.0        2        2        5
-0.375000 0.250000           32           32.0        3        3        5
-0.375000 0.375000           64           64.0        2        3        5
-0.312500 0.250000          128          128.0        1        1        5
 </pre></div>
 </div>
 </div>
@@ -700,33 +568,12 @@ loss     last          counter         weight    label  predict features
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">accuracy</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">testing_data</span><span class="p">[</span><span class="n">testing_data</span><span class="o">.</span><span class="n">y</span> <span class="o">==</span> <span class="n">predictions</span><span class="p">])</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">testing_data</span><span class="p">)</span>
 
-<span class="sa">f</span><span class="s1">&#39;Model accuracy </span><span class="si">{</span><span class="n">accuracy</span><span class="si">}</span><span class="s1">&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Model accuracy </span><span class="si">{</span><span class="n">accuracy</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Model accuracy 0.7666666666666667&#39;
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="how-was-this-data-set-generated">
-<h2>How was this data set generated?<a class="headerlink" href="#how-was-this-data-set-generated" title="Permalink to this headline">¶</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">load_iris</span>
-<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
-<span class="kn">import</span> <span class="nn">os</span>
-
-<span class="n">ds</span> <span class="o">=</span> <span class="n">load_iris</span><span class="p">()</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">columns</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="n">feature_names</span><span class="p">)</span>
-<span class="n">df</span><span class="p">[</span><span class="s2">&quot;y&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="n">target</span> <span class="o">+</span> <span class="mi">1</span> <span class="c1"># vw expects labels startins on 1</span>
-
-<span class="n">training_data</span><span class="p">,</span> <span class="n">testing_data</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">random_state</span> <span class="o">=</span> <span class="mi">2019</span><span class="p">,</span> <span class="n">test_size</span> <span class="o">=</span> <span class="mf">0.2</span><span class="p">)</span>
-
-<span class="n">training_data</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">(),</span> <span class="s1">&#39;iris-training.csv&#39;</span><span class="p">),</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-<span class="n">testing_data</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">(),</span><span class="s1">&#39;iris-testing.csv&#39;</span><span class="p">),</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Model accuracy 0.8333333333333334
 </pre></div>
 </div>
 </div>
