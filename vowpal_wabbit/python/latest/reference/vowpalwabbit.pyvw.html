@@ -1438,8 +1438,14 @@ above available options</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="vowpalwabbit.pyvw.vw.get_log">
-<span class="sig-name descname"><span class="pre">get_log</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.vw.get_log" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<span class="sig-name descname"><span class="pre">get_log</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#vowpalwabbit.pyvw.vw.get_log" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get all log messages produced. One line per item in the list. To get the complete log including run results, this should be called after <a class="reference internal" href="#vowpalwabbit.pyvw.vw.finish" title="vowpalwabbit.pyvw.vw.finish"><code class="xref py py-func docutils literal notranslate"><span class="pre">finish()</span></code></a></p>
+<dl class="simple">
+<dt>Raises:</dt><dd><p>Exception: Raises an exception if this function is called but the init function was called without setting enable_logging to True</p>
+</dd>
+</dl>
+<p>Returns: A list of strings, where each item is a line in the log</p>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="vowpalwabbit.pyvw.vw.get_weight">
