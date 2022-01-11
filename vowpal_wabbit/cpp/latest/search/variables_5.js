@@ -3,7 +3,7 @@ var searchData=
   ['early_5fterminate',['early_terminate',['../structVW_1_1workspace.html#a9130a68b27b5860681f921fe7aa64228',1,'VW::workspace']]],
   ['ec',['ec',['../classSearch_1_1BaseTask.html#a95a3839551805bf71b18bf4d220c269b',1,'Search::BaseTask']]],
   ['ecs',['ecs',['../structcbify__adf__data.html#a75754773c6506d0ee115886559c0e90e',1,'cbify_adf_data']]],
-  ['eligible_5fto_5finactivate',['eligible_to_inactivate',['../structVW_1_1automl_1_1scored__config.html#a836e538cf16a089772fa615dfa975b9a',1,'VW::automl::scored_config']]],
+  ['eligible_5fto_5finactivate',['eligible_to_inactivate',['../structVW_1_1automl_1_1aml__score.html#a1debcfc0c3f230aafd74d16d074e0fc0',1,'VW::automl::aml_score']]],
   ['empty',['empty',['../structpolylabel.html#a6d811b312990cfca1ccd76f553a89214',1,'polylabel']]],
   ['empty_5faudit_5fstrings',['EMPTY_AUDIT_STRINGS',['../interactions__predict_8h.html#a15fb23be401cf2a337ab90c20f3ec80c',1,'interactions_predict.h']]],
   ['empty_5fversion_5ffile',['EMPTY_VERSION_FILE',['../namespaceVW_1_1version__definitions.html#ab18b47007e482b7941289af58dc13a55',1,'VW::version_definitions']]],

@@ -62,6 +62,7 @@ var searchData=
   ['allreducesync',['AllReduceSync',['../classAllReduceSync.html',1,'AllReduceSync'],['../classAllReduceSync.html#a9c7c97a0d8c0d81647614db8e4cac4ef',1,'AllReduceSync::AllReduceSync()']]],
   ['allreducethreads',['AllReduceThreads',['../classAllReduceThreads.html',1,'AllReduceThreads'],['../classAllReduceThreads.html#a55bf6976a5fb1cd2dc036b2899c29a07',1,'AllReduceThreads::AllReduceThreads(AllReduceThreads *root, const size_t ptotal, const size_t pnode, bool quiet=false)'],['../classAllReduceThreads.html#a8cccbdd0a46a186fd867529aa0f6c491',1,'AllReduceThreads::AllReduceThreads(const size_t ptotal, const size_t pnode, bool quiet=false)']]],
   ['allreducetype',['AllReduceType',['../global__data_8h.html#ac80f47c3b2731d9979f60e1b2f6af364',1,'global_data.h']]],
+  ['aml_5fscore',['aml_score',['../structVW_1_1automl_1_1aml__score.html',1,'VW::automl']]],
   ['api_5fstatus',['api_status',['../classVW_1_1experimental_1_1api__status.html',1,'VW::experimental::api_status'],['../classVW_1_1experimental_1_1api__status.html#a83460b76f47b7b76ee50d4c40e7f8826',1,'VW::experimental::api_status::api_status()']]],
   ['api_5fstatus_2eh',['api_status.h',['../api__status_8h.html',1,'']]],
   ['append_5fempty_5fnewline_5fexample_5ffor_5fdriver',['append_empty_newline_example_for_driver',['../parse__example__json_8h.html#ab7dbfa96e069eafaa2212e6a0657cce7',1,'parse_example_json.h']]],

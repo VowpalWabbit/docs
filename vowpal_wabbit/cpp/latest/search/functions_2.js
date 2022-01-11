@@ -91,7 +91,7 @@ var searchData=
   ['cs_5fprep_5flabels',['cs_prep_labels',['../namespaceGEN__CS.html#a03dee8bef2c73360fc878bafff245fc9',1,'GEN_CS']]],
   ['csldf_5fsetup',['csldf_setup',['../namespaceCSOAA.html#a93ccb591dd3214dc953a1daed8f36543',1,'CSOAA']]],
   ['csoaa_5fsetup',['csoaa_setup',['../namespaceCSOAA.html#afc7dd22ca802ed9429304069443b2deb',1,'CSOAA']]],
-  ['current_5fips',['current_ips',['../structVW_1_1automl_1_1scored__config.html#ad72c7ff026297ce7a119a76269f7cf44',1,'VW::automl::scored_config']]],
+  ['current_5fips',['current_ips',['../structVW_1_1scored__config.html#a3a13ed052463ae47bc43faade3e0ed39',1,'VW::scored_config']]],
   ['current_5fstate',['current_state',['../structVWReaderHandler.html#a815ced4a606d3f1e66176cf0bf156bcc',1,'VWReaderHandler']]],
   ['currentnamespace',['CurrentNamespace',['../structContext.html#a9d1381c22ba19a9ca58b7c0f615eaa3a',1,'Context']]]
 ];
