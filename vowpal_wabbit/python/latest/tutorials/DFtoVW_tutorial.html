@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Tutorial: Using DFtoVW and exploring the outputs of VW model &#8212; VowpalWabbit latest documentation</title>
+    <title>Pandas DataFrame to VowpalWabbit Format Conversion &#8212; VowpalWabbit latest documentation</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -281,42 +281,42 @@
   <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="cmd_first_steps.html">
-     Command line tutorial
+     Command Line Basics
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="cmd_linear_regression.html">
-     Linear Regression Tutorial
+     Command Line Linear Regression
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="off_policy_evaluation.html">
-     Offline policy evaluation using the VW command line
+     Offline Policy Evaluation Using the Command Line
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="python_cats.html">
-     Simulating a smart thermostat using CATS: a Contextual Bandit algorithm with a continuous action space
+     Contextual Bandits with Continuous Actions
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="python_classification.html">
-     Python: Classification
+     Classification
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="python_Contextual_bandits_and_Vowpal_Wabbit.html">
-     Contextual bandits and Vowpal Wabbit
+     Contextual Bandits
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="python_Simulating_a_news_personalization_scenario_using_Contextual_Bandits.html">
-     Simulating a news personalization scenario using Contextual Bandits
+     Contextual Bandit News Personalization
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="python_first_steps.html">
-     Basics with Python
+     Python Basics
     </a>
    </li>
    <li class="toctree-l2">
@@ -326,7 +326,7 @@
    </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     Tutorial: Using DFtoVW and exploring the outputs of VW model
+     Pandas DataFrame to VowpalWabbit Format Conversion
     </a>
    </li>
   </ul>
@@ -459,11 +459,13 @@
   <a class="reference internal nav-link" href="#function-and-class-definition">
    Function and class definition
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#constants">
-   Constants
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#constants">
+     Constants
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#data">
@@ -514,13 +516,11 @@
      3.1. Retrieving model’s parameters, losses/predictions and summary metrics from the log
     </a>
    </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#visualizing-the-average-loss-and-the-distribution-of-selected-metrics">
-   3.2. Visualizing the average loss and the distribution of selected metrics
-  </a>
-  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#visualizing-the-average-loss-and-the-distribution-of-selected-metrics">
+     3.2. Visualizing the average loss and the distribution of selected metrics
+    </a>
+   </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#visualizing-the-predictions-of-the-model">
      3.3. Visualizing the predictions of the model
@@ -596,10 +596,13 @@
 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="tutorial-using-dftovw-and-exploring-the-outputs-of-vw-model">
-<h1>Tutorial: Using DFtoVW and exploring the outputs of VW model<a class="headerlink" href="#tutorial-using-dftovw-and-exploring-the-outputs-of-vw-model" title="Permalink to this headline">¶</a></h1>
-<hr class="docutils" />
-<p>The purpose of this tutorial is to show how to use the <code class="docutils literal notranslate"><span class="pre">DFtoVW</span></code> class to convert a pandas’s DataFrame into a list of Vowpal Wabbit examples and to explore the outputs (model weights, VW output log) of the trained model. The VW output log is parsed using the class <code class="docutils literal notranslate"><span class="pre">VWLogParser</span></code> defined in this notebook.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="pandas-dataframe-to-vowpalwabbit-format-conversion">
+<h1>Pandas DataFrame to VowpalWabbit Format Conversion<a class="headerlink" href="#pandas-dataframe-to-vowpalwabbit-format-conversion" title="Permalink to this headline">¶</a></h1>
+<div class="admonition-credit admonition">
+<p class="admonition-title">Credit</p>
+<p>Thank you <a class="reference external" href="https://github.com/etiennekintzler">&#64;etiennekintzler</a> for contributing this tutorial.</p>
+</div>
+<p>The purpose of this tutorial is to show how to use the <a class="reference internal" href="../reference/vowpalwabbit.DFtoVW.html#vowpalwabbit.DFtoVW.DFtoVW" title="vowpalwabbit.DFtoVW.DFtoVW"><code class="xref py py-class docutils literal notranslate"><span class="pre">vowpalwabbit.DFtoVW.DFtoVW</span></code></a> class to convert a pandas’s DataFrame into a list of Vowpal Wabbit examples and to explore the outputs (model weights, VW output log) of the trained model. The VW output log is parsed using the class <code class="docutils literal notranslate"><span class="pre">VWLogParser</span></code> defined in this notebook.</p>
 <p>The task is to predict the concentration of <a class="reference external" href="https://en.wikipedia.org/wiki/Particulates">particulate matter</a> (more specifically PM 2.5) in the atmosphere of 5 chinese cities. The original dataset contains 19 columns (targets, datetime and atmospheric features) and 167 358 observations.</p>
 <ul class="simple">
 <li><p>For more details on the data, see the following UCI repository: https://archive.ics.uci.edu/ml/datasets/PM2.5+Data+of+Five+Chinese+Cities</p></li>
@@ -798,9 +801,8 @@
 </div>
 </div>
 </div>
-</section>
 <section id="constants">
-<h2>Constants<a class="headerlink" href="#constants" title="Permalink to this headline">¶</a></h2>
+<h3>Constants<a class="headerlink" href="#constants" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Data</span>
@@ -814,6 +816,7 @@
 </div>
 </div>
 </div>
+</section>
 </section>
 <hr class="docutils" />
 <section id="data">
@@ -1448,9 +1451,8 @@ And the last 10 lines:<div class="cell docutils container">
 </div>
 </div>
 </section>
-</section>
 <section id="visualizing-the-average-loss-and-the-distribution-of-selected-metrics">
-<h2>3.2. Visualizing the average loss and the distribution of selected metrics<a class="headerlink" href="#visualizing-the-average-loss-and-the-distribution-of-selected-metrics" title="Permalink to this headline">¶</a></h2>
+<h3>3.2. Visualizing the average loss and the distribution of selected metrics<a class="headerlink" href="#visualizing-the-average-loss-and-the-distribution-of-selected-metrics" title="Permalink to this headline">¶</a></h3>
 <p>The following plots represent the average loss through time and the instantaneous loss:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1495,6 +1497,7 @@ And the last 10 lines:<div class="cell docutils container">
 </div>
 </div>
 <p>We notice that the distribution of the predictions differs substantially from the one of the labels.</p>
+</section>
 <section id="visualizing-the-predictions-of-the-model">
 <h3>3.3. Visualizing the predictions of the model<a class="headerlink" href="#visualizing-the-predictions-of-the-model" title="Permalink to this headline">¶</a></h3>
 <p>This section offers a visualization of the model’s predictions and compares them with the labels (the truth).</p>

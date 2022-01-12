@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Simulating a smart thermostat using CATS: a Contextual Bandit algorithm with a continuous action space &#8212; VowpalWabbit latest documentation</title>
+    <title>Contextual Bandits with Continuous Actions &#8212; VowpalWabbit latest documentation</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -49,8 +49,8 @@
     <link rel="shortcut icon" href="../_static/favicon.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Python: Classification" href="python_classification.html" />
-    <link rel="prev" title="Offline policy evaluation using the VW command line" href="off_policy_evaluation.html" />
+    <link rel="next" title="Classification" href="python_classification.html" />
+    <link rel="prev" title="Offline Policy Evaluation Using the Command Line" href="off_policy_evaluation.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -281,42 +281,42 @@
   <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="cmd_first_steps.html">
-     Command line tutorial
+     Command Line Basics
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="cmd_linear_regression.html">
-     Linear Regression Tutorial
+     Command Line Linear Regression
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="off_policy_evaluation.html">
-     Offline policy evaluation using the VW command line
+     Offline Policy Evaluation Using the Command Line
     </a>
    </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     Simulating a smart thermostat using CATS: a Contextual Bandit algorithm with a continuous action space
+     Contextual Bandits with Continuous Actions
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="python_classification.html">
-     Python: Classification
+     Classification
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="python_Contextual_bandits_and_Vowpal_Wabbit.html">
-     Contextual bandits and Vowpal Wabbit
+     Contextual Bandits
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="python_Simulating_a_news_personalization_scenario_using_Contextual_Bandits.html">
-     Simulating a news personalization scenario using Contextual Bandits
+     Contextual Bandit News Personalization
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="python_first_steps.html">
-     Basics with Python
+     Python Basics
     </a>
    </li>
    <li class="toctree-l2">
@@ -326,7 +326,7 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="DFtoVW_tutorial.html">
-     Tutorial: Using DFtoVW and exploring the outputs of VW model
+     Pandas DataFrame to VowpalWabbit Format Conversion
     </a>
    </li>
   </ul>
@@ -566,8 +566,8 @@
 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="simulating-a-smart-thermostat-using-cats-a-contextual-bandit-algorithm-with-a-continuous-action-space">
-<h1>Simulating a smart thermostat using CATS: a Contextual Bandit algorithm with a continuous action space<a class="headerlink" href="#simulating-a-smart-thermostat-using-cats-a-contextual-bandit-algorithm-with-a-continuous-action-space" title="Permalink to this headline">¶</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="contextual-bandits-with-continuous-actions">
+<h1>Contextual Bandits with Continuous Actions<a class="headerlink" href="#contextual-bandits-with-continuous-actions" title="Permalink to this headline">¶</a></h1>
 <p>In this tutorial we will simulate the scenario of personalizing a thermostat for a household with two rooms using Contextual Bandits in a continuous action space. The goal is to maximize user satisfaction with the thermostat quantified by measuring thermostat accuracy or reward (TR). The thermostat proposes a temperature and the user will either accept the temperature or adjust it to fit their needs.</p>
 <p>Let’s recall that in a CB setting, a data point has four components,</p>
 <ul class="simple">
@@ -588,7 +588,6 @@ The context is therefore (room, time_of_day).</p>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">from</span> <span class="nn">vowpalwabbit</span> <span class="kn">import</span> <span class="n">pyvw</span>
-<span class="kn">import</span> <span class="nn">pylibvw</span>
 <span class="kn">import</span> <span class="nn">random</span>
 <span class="kn">import</span> <span class="nn">math</span>
 <span class="kn">import</span> <span class="nn">json</span>
@@ -1848,13 +1847,13 @@ Plotting...
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Offline policy evaluation using the VW command line</p>
+            <p class="prev-next-title">Offline Policy Evaluation Using the Command Line</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="python_classification.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Python: Classification</p>
+        <p class="prev-next-title">Classification</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
