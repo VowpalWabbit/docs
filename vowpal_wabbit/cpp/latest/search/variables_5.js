@@ -24,6 +24,7 @@ var searchData=
   ['example_5fnumber',['example_number',['../structshared__data.html#a0de1ca113ee6d22741ca6737a00cddd0',1,'shared_data']]],
   ['example_5fparser',['example_parser',['../structVW_1_1workspace.html#aee857c5e4d572d09c9243a8f9a9e3aac',1,'VW::workspace']]],
   ['example_5fpool',['example_pool',['../structparser.html#ad2b0db3600bd890b2a6a29280e15f2fd',1,'parser']]],
+  ['example_5fqueue_5flimit',['example_queue_limit',['../structparser.html#a22832e405bb961a4c4f19654723aef48',1,'parser']]],
   ['examples',['examples',['../structContext.html#afbc07929e07aec1daf5c896a6cbd7665',1,'Context']]],
   ['examples_5fdont_5fchange',['EXAMPLES_DONT_CHANGE',['../namespaceSearch.html#a00f1706c73f53da6977b3358e53c8e58',1,'Search']]],
   ['exc_5fptr',['exc_ptr',['../structparser.html#abef922392d111bc5567e672df2d35e57',1,'parser']]],
