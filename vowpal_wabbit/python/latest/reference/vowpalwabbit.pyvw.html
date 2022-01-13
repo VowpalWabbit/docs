@@ -470,6 +470,71 @@
 <span id="vowpalwabbit-pyvw"></span><h1>vowpalwabbit.pyvw<a class="headerlink" href="#module-vowpalwabbit.pyvw" title="Permalink to this headline">¶</a></h1>
 <p>Python binding for pylibvw class</p>
 <dl class="py class">
+<dt class="sig sig-object py" id="vowpalwabbit.pyvw.AbstractLabel">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vowpalwabbit.pyvw.</span></span><span class="sig-name descname"><span class="pre">AbstractLabel</span></span><a class="headerlink" href="#vowpalwabbit.pyvw.AbstractLabel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>An abstract class for a VW label.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="vowpalwabbit.pyvw.AbstractLabel.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.AbstractLabel.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vowpalwabbit.pyvw.AbstractLabel.from_example">
+<span class="sig-name descname"><span class="pre">from_example</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ex</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#vowpalwabbit.pyvw.example" title="vowpalwabbit.pyvw.example"><span class="pre">vowpalwabbit.pyvw.example</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.AbstractLabel.from_example" title="Permalink to this definition">¶</a></dt>
+<dd><p>grab a label from a given VW example</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="vowpalwabbit.pyvw.CBLabel">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vowpalwabbit.pyvw.</span></span><span class="sig-name descname"><span class="pre">CBLabel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">costs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prediction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.CBLabel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#vowpalwabbit.pyvw.AbstractLabel" title="vowpalwabbit.pyvw.AbstractLabel"><code class="xref py py-class docutils literal notranslate"><span class="pre">vowpalwabbit.pyvw.AbstractLabel</span></code></a></p>
+<p>Class for contextual bandits VW label</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="vowpalwabbit.pyvw.CBLabel.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">costs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prediction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.CBLabel.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vowpalwabbit.pyvw.CBLabel.from_example">
+<span class="sig-name descname"><span class="pre">from_example</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ex</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.CBLabel.from_example" title="Permalink to this definition">¶</a></dt>
+<dd><p>grab a label from a given VW example</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="vowpalwabbit.pyvw.CostSensitiveElement">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vowpalwabbit.pyvw.</span></span><span class="sig-name descname"><span class="pre">CostSensitiveElement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">cost</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><span class="pre">float</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">partial_prediction</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><span class="pre">float</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wap_value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><span class="pre">float</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.CostSensitiveElement" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="vowpalwabbit.pyvw.CostSensitiveElement.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">cost</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><span class="pre">float</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">partial_prediction</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><span class="pre">float</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wap_value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><span class="pre">float</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.CostSensitiveElement.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="vowpalwabbit.pyvw.CostSensitiveLabel">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vowpalwabbit.pyvw.</span></span><span class="sig-name descname"><span class="pre">CostSensitiveLabel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">costs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#vowpalwabbit.pyvw.example" title="vowpalwabbit.pyvw.example"><span class="pre">vowpalwabbit.pyvw.example</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#vowpalwabbit.pyvw.CostSensitiveElement" title="vowpalwabbit.pyvw.CostSensitiveElement"><span class="pre">vowpalwabbit.pyvw.CostSensitiveElement</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prediction</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><span class="pre">float</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.CostSensitiveLabel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#vowpalwabbit.pyvw.AbstractLabel" title="vowpalwabbit.pyvw.AbstractLabel"><code class="xref py py-class docutils literal notranslate"><span class="pre">vowpalwabbit.pyvw.AbstractLabel</span></code></a></p>
+<p>Class for cost sensative VW label</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="vowpalwabbit.pyvw.CostSensitiveLabel.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">costs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#vowpalwabbit.pyvw.example" title="vowpalwabbit.pyvw.example"><span class="pre">vowpalwabbit.pyvw.example</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#vowpalwabbit.pyvw.CostSensitiveElement" title="vowpalwabbit.pyvw.CostSensitiveElement"><span class="pre">vowpalwabbit.pyvw.CostSensitiveElement</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prediction</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><span class="pre">float</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.CostSensitiveLabel.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vowpalwabbit.pyvw.CostSensitiveLabel.from_example">
+<span class="sig-name descname"><span class="pre">from_example</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ex</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#vowpalwabbit.pyvw.example" title="vowpalwabbit.pyvw.example"><span class="pre">vowpalwabbit.pyvw.example</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.CostSensitiveLabel.from_example" title="Permalink to this definition">¶</a></dt>
+<dd><p>grab a label from a given VW example</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
 <dt class="sig sig-object py" id="vowpalwabbit.pyvw.LabelType">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vowpalwabbit.pyvw.</span></span><span class="sig-name descname"><span class="pre">LabelType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.LabelType" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/enum.html#enum.IntEnum" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">enum.IntEnum</span></code></a></p>
@@ -528,6 +593,42 @@
 <dt class="sig sig-object py" id="vowpalwabbit.pyvw.LabelType.SLATES">
 <span class="sig-name descname"><span class="pre">SLATES</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">7</span></em><a class="headerlink" href="#vowpalwabbit.pyvw.LabelType.SLATES" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="vowpalwabbit.pyvw.MulticlassLabel">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vowpalwabbit.pyvw.</span></span><span class="sig-name descname"><span class="pre">MulticlassLabel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#vowpalwabbit.pyvw.example" title="vowpalwabbit.pyvw.example"><span class="pre">vowpalwabbit.pyvw.example</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weight</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><span class="pre">float</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prediction</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.MulticlassLabel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#vowpalwabbit.pyvw.AbstractLabel" title="vowpalwabbit.pyvw.AbstractLabel"><code class="xref py py-class docutils literal notranslate"><span class="pre">vowpalwabbit.pyvw.AbstractLabel</span></code></a></p>
+<p>Class for multiclass VW label with prediction</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="vowpalwabbit.pyvw.MulticlassLabel.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#vowpalwabbit.pyvw.example" title="vowpalwabbit.pyvw.example"><span class="pre">vowpalwabbit.pyvw.example</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weight</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><span class="pre">float</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prediction</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.MulticlassLabel.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vowpalwabbit.pyvw.MulticlassLabel.from_example">
+<span class="sig-name descname"><span class="pre">from_example</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ex</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#vowpalwabbit.pyvw.example" title="vowpalwabbit.pyvw.example"><span class="pre">vowpalwabbit.pyvw.example</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.MulticlassLabel.from_example" title="Permalink to this definition">¶</a></dt>
+<dd><p>grab a label from a given VW example</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="vowpalwabbit.pyvw.MulticlassProbabilitiesLabel">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vowpalwabbit.pyvw.</span></span><span class="sig-name descname"><span class="pre">MulticlassProbabilitiesLabel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#vowpalwabbit.pyvw.example" title="vowpalwabbit.pyvw.example"><span class="pre">vowpalwabbit.pyvw.example</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prediction</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.MulticlassProbabilitiesLabel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#vowpalwabbit.pyvw.AbstractLabel" title="vowpalwabbit.pyvw.AbstractLabel"><code class="xref py py-class docutils literal notranslate"><span class="pre">vowpalwabbit.pyvw.AbstractLabel</span></code></a></p>
+<p>Class for multiclass VW label with probabilities</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="vowpalwabbit.pyvw.MulticlassProbabilitiesLabel.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#vowpalwabbit.pyvw.example" title="vowpalwabbit.pyvw.example"><span class="pre">vowpalwabbit.pyvw.example</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prediction</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.MulticlassProbabilitiesLabel.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vowpalwabbit.pyvw.MulticlassProbabilitiesLabel.from_example">
+<span class="sig-name descname"><span class="pre">from_example</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ex</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#vowpalwabbit.pyvw.example" title="vowpalwabbit.pyvw.example"><span class="pre">vowpalwabbit.pyvw.example</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.MulticlassProbabilitiesLabel.from_example" title="Permalink to this definition">¶</a></dt>
+<dd><p>grab a label from a given VW example</p>
+</dd></dl>
 
 </dd></dl>
 
@@ -699,6 +800,24 @@ label type</p>
 </dd></dl>
 
 <dl class="py class">
+<dt class="sig sig-object py" id="vowpalwabbit.pyvw.SimpleLabel">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vowpalwabbit.pyvw.</span></span><span class="sig-name descname"><span class="pre">SimpleLabel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#vowpalwabbit.pyvw.example" title="vowpalwabbit.pyvw.example"><span class="pre">vowpalwabbit.pyvw.example</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weight</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><span class="pre">float</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><span class="pre">float</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prediction</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><span class="pre">float</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.SimpleLabel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#vowpalwabbit.pyvw.AbstractLabel" title="vowpalwabbit.pyvw.AbstractLabel"><code class="xref py py-class docutils literal notranslate"><span class="pre">vowpalwabbit.pyvw.AbstractLabel</span></code></a></p>
+<p>Class for simple VW label</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="vowpalwabbit.pyvw.SimpleLabel.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#vowpalwabbit.pyvw.example" title="vowpalwabbit.pyvw.example"><span class="pre">vowpalwabbit.pyvw.example</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weight</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><span class="pre">float</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><span class="pre">float</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prediction</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><span class="pre">float</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.SimpleLabel.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vowpalwabbit.pyvw.SimpleLabel.from_example">
+<span class="sig-name descname"><span class="pre">from_example</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ex</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#vowpalwabbit.pyvw.example" title="vowpalwabbit.pyvw.example"><span class="pre">vowpalwabbit.pyvw.example</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.SimpleLabel.from_example" title="Permalink to this definition">¶</a></dt>
+<dd><p>grab a label from a given VW example</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
 <dt class="sig sig-object py" id="vowpalwabbit.pyvw.VWOption">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vowpalwabbit.pyvw.</span></span><span class="sig-name descname"><span class="pre">VWOption</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">help_str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">short_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keep</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">necessary</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allow_override</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value_supplied</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default_value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default_value_supplied</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.VWOption" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
@@ -767,54 +886,33 @@ label type</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="vowpalwabbit.pyvw.abstract_label">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vowpalwabbit.pyvw.</span></span><span class="sig-name descname"><span class="pre">abstract_label</span></span><a class="headerlink" href="#vowpalwabbit.pyvw.abstract_label" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
-<p>An abstract class for a VW label.</p>
+<dd><p>Bases: <a class="reference internal" href="#vowpalwabbit.pyvw.AbstractLabel" title="vowpalwabbit.pyvw.AbstractLabel"><code class="xref py py-class docutils literal notranslate"><span class="pre">vowpalwabbit.pyvw.AbstractLabel</span></code></a></p>
 <dl class="py method">
 <dt class="sig sig-object py" id="vowpalwabbit.pyvw.abstract_label.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.abstract_label.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="py method">
-<dt class="sig sig-object py" id="vowpalwabbit.pyvw.abstract_label.from_example">
-<span class="sig-name descname"><span class="pre">from_example</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ex</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.abstract_label.from_example" title="Permalink to this definition">¶</a></dt>
-<dd><p>grab a label from a given VW example</p>
-</dd></dl>
-
 </dd></dl>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="vowpalwabbit.pyvw.cbandits_label">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vowpalwabbit.pyvw.</span></span><span class="sig-name descname"><span class="pre">cbandits_label</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">costs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prediction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.cbandits_label" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#vowpalwabbit.pyvw.abstract_label" title="vowpalwabbit.pyvw.abstract_label"><code class="xref py py-class docutils literal notranslate"><span class="pre">vowpalwabbit.pyvw.abstract_label</span></code></a></p>
-<p>Class for contextual bandits VW label</p>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vowpalwabbit.pyvw.</span></span><span class="sig-name descname"><span class="pre">cbandits_label</span></span><a class="headerlink" href="#vowpalwabbit.pyvw.cbandits_label" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#vowpalwabbit.pyvw.CBLabel" title="vowpalwabbit.pyvw.CBLabel"><code class="xref py py-class docutils literal notranslate"><span class="pre">vowpalwabbit.pyvw.CBLabel</span></code></a></p>
 <dl class="py method">
 <dt class="sig sig-object py" id="vowpalwabbit.pyvw.cbandits_label.__init__">
-<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">costs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prediction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.cbandits_label.__init__" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.cbandits_label.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="vowpalwabbit.pyvw.cbandits_label.from_example">
-<span class="sig-name descname"><span class="pre">from_example</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ex</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.cbandits_label.from_example" title="Permalink to this definition">¶</a></dt>
-<dd><p>grab a label from a given VW example</p>
-</dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="vowpalwabbit.pyvw.cost_sensitive_label">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vowpalwabbit.pyvw.</span></span><span class="sig-name descname"><span class="pre">cost_sensitive_label</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">costs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prediction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.cost_sensitive_label" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#vowpalwabbit.pyvw.abstract_label" title="vowpalwabbit.pyvw.abstract_label"><code class="xref py py-class docutils literal notranslate"><span class="pre">vowpalwabbit.pyvw.abstract_label</span></code></a></p>
-<p>Class for cost sensative VW label</p>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vowpalwabbit.pyvw.</span></span><span class="sig-name descname"><span class="pre">cost_sensitive_label</span></span><a class="headerlink" href="#vowpalwabbit.pyvw.cost_sensitive_label" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#vowpalwabbit.pyvw.CostSensitiveLabel" title="vowpalwabbit.pyvw.CostSensitiveLabel"><code class="xref py py-class docutils literal notranslate"><span class="pre">vowpalwabbit.pyvw.CostSensitiveLabel</span></code></a></p>
 <dl class="py method">
 <dt class="sig sig-object py" id="vowpalwabbit.pyvw.cost_sensitive_label.__init__">
-<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">costs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prediction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.cost_sensitive_label.__init__" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.cost_sensitive_label.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="vowpalwabbit.pyvw.cost_sensitive_label.from_example">
-<span class="sig-name descname"><span class="pre">from_example</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ex</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.cost_sensitive_label.from_example" title="Permalink to this definition">¶</a></dt>
-<dd><p>grab a label from a given VW example</p>
-</dd></dl>
 
 </dd></dl>
 
@@ -957,14 +1055,14 @@ id) or a string, in which case it is hashed.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="vowpalwabbit.pyvw.example.get_label">
-<span class="sig-name descname"><span class="pre">get_label</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label_class=&lt;class</span> <span class="pre">'vowpalwabbit.pyvw.simple_label'&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.example.get_label" title="Permalink to this definition">¶</a></dt>
-<dd><p>Given a known label class (default is simple_label), get
+<span class="sig-name descname"><span class="pre">get_label</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label_class=&lt;class</span> <span class="pre">'vowpalwabbit.pyvw.SimpleLabel'&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.example.get_label" title="Permalink to this definition">¶</a></dt>
+<dd><p>Given a known label class (default is Simplelabel), get
 the corresponding label structure for this example.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>label_class</strong><span class="classifier">label classes</span></dt><dd><p>Get the label of the example of label_class type, by default is
-simple_label</p>
+Simplelabel</p>
 </dd>
 </dl>
 </dd>
@@ -1326,37 +1424,23 @@ or a string (to be hashed) and may be paired with a value or not
 
 <dl class="py class">
 <dt class="sig sig-object py" id="vowpalwabbit.pyvw.multiclass_label">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vowpalwabbit.pyvw.</span></span><span class="sig-name descname"><span class="pre">multiclass_label</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weight</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prediction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.multiclass_label" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#vowpalwabbit.pyvw.abstract_label" title="vowpalwabbit.pyvw.abstract_label"><code class="xref py py-class docutils literal notranslate"><span class="pre">vowpalwabbit.pyvw.abstract_label</span></code></a></p>
-<p>Class for multiclass VW label with prediction</p>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vowpalwabbit.pyvw.</span></span><span class="sig-name descname"><span class="pre">multiclass_label</span></span><a class="headerlink" href="#vowpalwabbit.pyvw.multiclass_label" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#vowpalwabbit.pyvw.MulticlassLabel" title="vowpalwabbit.pyvw.MulticlassLabel"><code class="xref py py-class docutils literal notranslate"><span class="pre">vowpalwabbit.pyvw.MulticlassLabel</span></code></a></p>
 <dl class="py method">
 <dt class="sig sig-object py" id="vowpalwabbit.pyvw.multiclass_label.__init__">
-<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weight</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prediction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.multiclass_label.__init__" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.multiclass_label.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="vowpalwabbit.pyvw.multiclass_label.from_example">
-<span class="sig-name descname"><span class="pre">from_example</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ex</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.multiclass_label.from_example" title="Permalink to this definition">¶</a></dt>
-<dd><p>grab a label from a given VW example</p>
-</dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="vowpalwabbit.pyvw.multiclass_probabilities_label">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vowpalwabbit.pyvw.</span></span><span class="sig-name descname"><span class="pre">multiclass_probabilities_label</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prediction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.multiclass_probabilities_label" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#vowpalwabbit.pyvw.abstract_label" title="vowpalwabbit.pyvw.abstract_label"><code class="xref py py-class docutils literal notranslate"><span class="pre">vowpalwabbit.pyvw.abstract_label</span></code></a></p>
-<p>Class for multiclass VW label with probabilities</p>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vowpalwabbit.pyvw.</span></span><span class="sig-name descname"><span class="pre">multiclass_probabilities_label</span></span><a class="headerlink" href="#vowpalwabbit.pyvw.multiclass_probabilities_label" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#vowpalwabbit.pyvw.MulticlassProbabilitiesLabel" title="vowpalwabbit.pyvw.MulticlassProbabilitiesLabel"><code class="xref py py-class docutils literal notranslate"><span class="pre">vowpalwabbit.pyvw.MulticlassProbabilitiesLabel</span></code></a></p>
 <dl class="py method">
 <dt class="sig sig-object py" id="vowpalwabbit.pyvw.multiclass_probabilities_label.__init__">
-<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prediction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.multiclass_probabilities_label.__init__" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.multiclass_probabilities_label.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="vowpalwabbit.pyvw.multiclass_probabilities_label.from_example">
-<span class="sig-name descname"><span class="pre">from_example</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ex</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.multiclass_probabilities_label.from_example" title="Permalink to this definition">¶</a></dt>
-<dd><p>grab a label from a given VW example</p>
-</dd></dl>
 
 </dd></dl>
 
@@ -1395,19 +1479,12 @@ the first character as the namespace id).</p>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="vowpalwabbit.pyvw.simple_label">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vowpalwabbit.pyvw.</span></span><span class="sig-name descname"><span class="pre">simple_label</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weight</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prediction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.simple_label" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#vowpalwabbit.pyvw.abstract_label" title="vowpalwabbit.pyvw.abstract_label"><code class="xref py py-class docutils literal notranslate"><span class="pre">vowpalwabbit.pyvw.abstract_label</span></code></a></p>
-<p>Class for simple VW label</p>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vowpalwabbit.pyvw.</span></span><span class="sig-name descname"><span class="pre">simple_label</span></span><a class="headerlink" href="#vowpalwabbit.pyvw.simple_label" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#vowpalwabbit.pyvw.SimpleLabel" title="vowpalwabbit.pyvw.SimpleLabel"><code class="xref py py-class docutils literal notranslate"><span class="pre">vowpalwabbit.pyvw.SimpleLabel</span></code></a></p>
 <dl class="py method">
 <dt class="sig sig-object py" id="vowpalwabbit.pyvw.simple_label.__init__">
-<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weight</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prediction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.simple_label.__init__" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.simple_label.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="vowpalwabbit.pyvw.simple_label.from_example">
-<span class="sig-name descname"><span class="pre">from_example</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ex</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.simple_label.from_example" title="Permalink to this definition">¶</a></dt>
-<dd><p>grab a label from a given VW example</p>
-</dd></dl>
 
 </dd></dl>
 
