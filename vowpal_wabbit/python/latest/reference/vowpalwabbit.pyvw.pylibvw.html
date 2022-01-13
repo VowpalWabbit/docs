@@ -744,6 +744,26 @@ documented compared to this two definition situation.</p>
 <dd><p>given an example that you’ve created by hand, prepare it for learning (eg, compute quadratic feature)</p>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="vowpalwabbit.pyvw.pylibvw.vw.tACTION">
+<span class="sig-name descname"><span class="pre">tACTION</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#vowpalwabbit.pyvw.pylibvw.vw.tACTION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="vowpalwabbit.pyvw.pylibvw.vw.tSHARED">
+<span class="sig-name descname"><span class="pre">tSHARED</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#vowpalwabbit.pyvw.pylibvw.vw.tSHARED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="vowpalwabbit.pyvw.pylibvw.vw.tSLOT">
+<span class="sig-name descname"><span class="pre">tSLOT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#vowpalwabbit.pyvw.pylibvw.vw.tSLOT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="vowpalwabbit.pyvw.pylibvw.vw.tUNSET">
+<span class="sig-name descname"><span class="pre">tUNSET</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#vowpalwabbit.pyvw.pylibvw.vw.tUNSET" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="vowpalwabbit.pyvw.pylibvw.vw.unsetup_example">
 <span class="sig-name descname"><span class="pre">unsetup_example</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">(vw)arg1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">(example)arg2</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span> <span class="pre">:</span></span></span><a class="headerlink" href="#vowpalwabbit.pyvw.pylibvw.vw.unsetup_example" title="Permalink to this definition">¶</a></dt>
@@ -1012,6 +1032,54 @@ documented compared to this two definition situation.</p>
 <dt class="sig sig-object py" id="vowpalwabbit.pyvw.pylibvw.example.get_simplelabel_weight">
 <span class="sig-name descname"><span class="pre">get_simplelabel_weight</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">(example)arg1</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span> <span class="pre">:</span></span></span><a class="headerlink" href="#vowpalwabbit.pyvw.pylibvw.example.get_simplelabel_weight" title="Permalink to this definition">¶</a></dt>
 <dd><p>Assuming a simple_label label type, return the importance weight</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vowpalwabbit.pyvw.pylibvw.example.get_slates_action">
+<span class="sig-name descname"><span class="pre">get_slates_action</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">(example)arg1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">(int)arg2</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span> <span class="pre">:</span></span></span><a class="headerlink" href="#vowpalwabbit.pyvw.pylibvw.example.get_slates_action" title="Permalink to this definition">¶</a></dt>
+<dd><p>Assuming a slates label type, get the action of example at index i</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vowpalwabbit.pyvw.pylibvw.example.get_slates_cost">
+<span class="sig-name descname"><span class="pre">get_slates_cost</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">(example)arg1</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span> <span class="pre">:</span></span></span><a class="headerlink" href="#vowpalwabbit.pyvw.pylibvw.example.get_slates_cost" title="Permalink to this definition">¶</a></dt>
+<dd><p>Assuming a slates label type, get the cost of example</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vowpalwabbit.pyvw.pylibvw.example.get_slates_labeled">
+<span class="sig-name descname"><span class="pre">get_slates_labeled</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">(example)arg1</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span> <span class="pre">:</span></span></span><a class="headerlink" href="#vowpalwabbit.pyvw.pylibvw.example.get_slates_labeled" title="Permalink to this definition">¶</a></dt>
+<dd><p>Assuming a slates label type, get if example is labeled</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vowpalwabbit.pyvw.pylibvw.example.get_slates_num_probabilities">
+<span class="sig-name descname"><span class="pre">get_slates_num_probabilities</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">(example)arg1</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span> <span class="pre">:</span></span></span><a class="headerlink" href="#vowpalwabbit.pyvw.pylibvw.example.get_slates_num_probabilities" title="Permalink to this definition">¶</a></dt>
+<dd><p>Assuming a slates label type, get number of actions in example</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vowpalwabbit.pyvw.pylibvw.example.get_slates_probability">
+<span class="sig-name descname"><span class="pre">get_slates_probability</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">(example)arg1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">(int)arg2</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span> <span class="pre">:</span></span></span><a class="headerlink" href="#vowpalwabbit.pyvw.pylibvw.example.get_slates_probability" title="Permalink to this definition">¶</a></dt>
+<dd><p>Assuming a slates label type, get the probability of example at index i</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vowpalwabbit.pyvw.pylibvw.example.get_slates_slot_id">
+<span class="sig-name descname"><span class="pre">get_slates_slot_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">(example)arg1</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span> <span class="pre">:</span></span></span><a class="headerlink" href="#vowpalwabbit.pyvw.pylibvw.example.get_slates_slot_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Assuming a slates label type, get the slot_id of example</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vowpalwabbit.pyvw.pylibvw.example.get_slates_type">
+<span class="sig-name descname"><span class="pre">get_slates_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">(example)arg1</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span> <span class="pre">:</span></span></span><a class="headerlink" href="#vowpalwabbit.pyvw.pylibvw.example.get_slates_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Assuming a slates label type, get the type of example</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vowpalwabbit.pyvw.pylibvw.example.get_slates_weight">
+<span class="sig-name descname"><span class="pre">get_slates_weight</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">(example)arg1</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span> <span class="pre">:</span></span></span><a class="headerlink" href="#vowpalwabbit.pyvw.pylibvw.example.get_slates_weight" title="Permalink to this definition">¶</a></dt>
+<dd><p>Assuming a slates label type, get the weight of example</p>
 </dd></dl>
 
 <dl class="py method">
