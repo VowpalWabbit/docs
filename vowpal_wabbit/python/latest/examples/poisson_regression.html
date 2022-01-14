@@ -533,28 +533,28 @@ Input label = simple
 Output pred = scalar
 average  since         example        example  current  current  current
 loss     last          counter         weight    label  predict features
-0.000001 0.000001            1            1.0   0.0010   0.0000        2
-2.643130 5.286260            2            2.0   2.3027   0.0035        3
-3.252692 3.862254            4            4.0   2.0796   0.2702        3
-2.804063 2.355434            8            8.0   2.4850   0.5552        3
-3.042480 3.280897           16           16.0   2.7727   1.0352        3
-2.465554 1.888628           32           32.0   1.7919   0.9322        3
-3.416306 4.367058           64           64.0   2.9958   1.4752        3
-1.962080 0.507854          128          128.0   1.7919   2.0054        3
-1.817120 1.672161          256          256.0   1.9461   1.6315        3
-1.595392 1.373663          512          512.0   2.3980   2.0644        3
-1.477007 1.358622         1024         1024.0   2.1973   1.5638        2
-1.434263 1.391519         2048         2048.0   2.3980   2.1150        3
-1.383888 1.333514         4096         4096.0   1.3865   1.1113        3
-1.348562 1.313236         8192         8192.0   1.7919   1.9316        3
+8.027429 8.027429            1            1.0   2.8333   0.0000        3
+4.790607 1.553785            2            2.0   1.3865   0.1400        3
+5.565171 6.339735            4            4.0   2.7727   0.2829        3
+4.546707 3.528243            8            8.0   2.5650   0.4911        3
+3.905884 3.265061           16           16.0   2.4850   0.9869        3
+2.646687 1.387490           32           32.0   2.9958   1.1951        3
+1.863063 1.079439           64           64.0   3.0446   1.6190        3
+1.172472 0.481882          128          128.0   1.7919   1.8374        3
+0.733784 0.295096          256          256.0   1.0989   1.5372        2
+0.472511 0.211237          512          512.0   2.3027   2.0895        3
+0.345261 0.218012         1024         1024.0   2.1973   2.1934        3
+0.281988 0.218715         2048         2048.0   0.0010   1.1743        2
+0.245461 0.208934         4096         4096.0   2.4850   2.8581        3
+0.226774 0.208087         8192         8192.0   2.1973   1.9356        2
 
 finished run
 number of examples = 10000
 weighted example sum = 10000.000000
-weighted label sum = 18517.065330
-average loss = 1.339483
-best constant = 1.851707
-total feature number = 28200
+weighted label sum = 20783.087285
+average loss = 0.223240
+best constant = 2.078309
+total feature number = 28400
 </pre></div>
 </div>
 </div>
@@ -572,7 +572,9 @@ total feature number = 28200
 </div>
 <div class="cell_output docutils container">
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>only testing
-Num weight bits = 2
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Num weight bits = 2
 learning rate = 0.5
 initial_t = 0
 power_t = 0.5
@@ -584,13 +586,13 @@ Input label = simple
 Output pred = scalar
 average  since         example        example  current  current  current
 loss     last          counter         weight    label  predict features
-0.204048 0.204048            1            1.0   0.0010   0.4527        2
-0.123916 0.043785            2            2.0   2.3027   2.0934        3
-0.070688 0.017459            4            4.0   2.0796   2.0934        3
-0.177718 0.284748            8            8.0   2.4850   3.0139        3
-0.269561 0.361404           16           16.0   2.7727   3.1781        3
-0.279374 0.289188           32           32.0   1.7919   1.3960        3
-1.918271 3.557168           64           64.0   2.9958   2.4364        3
+0.133502 0.133502            1            1.0   2.8333   2.4679        3
+0.272417 0.411332            2            2.0   1.3865   2.0279        3
+0.187708 0.102999            4            4.0   2.7727   2.3192        3
+0.176276 0.164844            8            8.0   2.5650   2.4861        3
+0.185453 0.194629           16           16.0   2.4850   3.0201        3
+0.217271 0.249089           32           32.0   2.9958   2.7349        3
+0.238434 0.259596           64           64.0   3.0446   2.5923        3
 </pre></div>
 </div>
 </div>
@@ -629,24 +631,36 @@ loss     last          counter         weight    label  predict features
 finished run
 number of examples = 100
 weighted example sum = 100.000000
-weighted label sum = 185.170653
-average loss = 1.300023
-best constant = 1.851707
-total feature number = 282
-0.000002 0.000002            1            1.0   1.0000   0.0000        2
-14.025853 28.051704            2            2.0  10.0000   0.0000        3
-17.145300 20.264746            4            4.0   8.0000   0.2604        3
-14.998941 12.852582            8            8.0  12.0000   0.5182        3
-19.349768 23.700595           16           16.0  16.0000   1.0802        3
-16.843757 14.337746           32           32.0   6.0000   1.0142        3
-11.028620 5.213483           64           64.0  20.0000   1.7069        3
-6.721099 2.413578          128          128.0   6.0000   2.2688        3
-3.967868 1.214636          256          256.0   7.0000   1.8544        3
-2.570460 1.173052          512          512.0  11.0000   2.1710        3
-1.878047 1.185634         1024         1024.0   9.0000   1.7987        2
-1.530423 1.182800         2048         2048.0  11.0000   2.2233        3
-1.350995 1.171567         4096         4096.0   4.0000   1.5730        3
-1.261360 1.171725         8192         8192.0   6.0000   2.1111        3
+weighted label sum = 207.830873
+average loss = 0.206479
+best constant = 2.078309
+total feature number = 284
+64.329262 64.329262            1            1.0  17.0000   0.0000        3
+34.290180 4.251098            2            2.0   4.0000   0.1435        3
+43.048183 51.806187            4            4.0  16.0000   0.2638        3
+32.750154 22.452124            8            8.0  13.0000   0.4566        3
+28.568139 24.386124           16           16.0  12.0000   0.9556        3
+20.336313 12.104486           32           32.0  20.0000   1.1870        3
+14.477733 8.619153           64           64.0  21.0000   1.6834        3
+9.041238 3.604743          128          128.0   6.0000   1.9603        3
+5.301286 1.561335          256          256.0   3.0000   1.6568        2
+3.248353 1.195419          512          512.0  10.0000   2.1658        3
+2.247405 1.246458         1024         1024.0   9.0000   2.2436        3
+1.746030 1.244654         2048         2048.0   1.0000   1.3719        2
+1.483416 1.220802         4096         4096.0  12.0000   2.8314        3
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.355401 1.227385         8192         8192.0   9.0000   1.9841        2
+
+finished run
+number of examples = 
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>10000
+weighted example sum = 10000.000000
+weighted label sum = 97400.000000
+average loss = 1.332008
+total feature number = 28400
 </pre></div>
 </div>
 </div>
@@ -661,16 +675,8 @@ total feature number = 282
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>finished run
-number of examples = 10000
-weighted example sum = 10000.000000
-weighted label sum = 90100.000000
-average loss = 1.245048
-total feature number = 28200
-Num weight bits = 2
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>learning rate = 0.5
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Num weight bits = 2
+learning rate = 0.5
 initial_t = 0
 power_t = 0.5
 using no cache
@@ -681,13 +687,13 @@ Input label = simple
 Output pred = scalar
 average  since         example        example  current  current  current
 loss     last          counter         weight    label  predict features
-0.065077 0.065077            1            1.0   1.0000   1.2551        2
-30.446931 60.828785            2            2.0  10.0000   2.2007        3
-38.796976 47.147020            4            4.0   8.0000   2.2007        3
-37.190557 35.584138            8            8.0  12.0000   2.7302        3
-70.716413 104.242269           16           16.0  16.0000   2.8382        3
-86.675215 102.634017           32           32.0   6.0000   1.7953        3
-74.191116 61.707018           64           64.0  20.0000   2.4008        3
+210.372177 210.372177            1            1.0  17.0000   2.4958        3
+106.774748 3.177319            2            2.0   4.0000   2.2175        3
+143.770457 180.766167            4            4.0  16.0000   2.4085        3
+107.589459 71.408460            8            8.0  13.0000   2.4464        3
+102.085131 96.580804           16           16.0  12.0000   2.9601        3
+88.056076 74.027021           32           32.0  20.0000   2.7526        3
+82.425210 76.794344           64           64.0  21.0000   2.6489        3
 </pre></div>
 </div>
 </div>
