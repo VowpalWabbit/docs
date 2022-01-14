@@ -26,8 +26,6 @@ var searchData=
   ['_5fp_5fbase',['_p_base',['../structVW_1_1pmf__to__pdf_1_1reduction.html#a2785bdb0c894ac6c90a4e0433bae1ba8',1,'VW::pmf_to_pdf::reduction']]],
   ['_5fparse_5fmask',['_parse_mask',['../structContext.html#a2f83e8c7eb3745ae12fd41dd525b613e',1,'Context']]],
   ['_5fpost_5fprediction',['_post_prediction',['../classSearch_1_1BaseTask.html#a4e1d2ad328f2cc573f2c99dbafd0b9e2',1,'Search::BaseTask']]],
-  ['_5fptr1',['_ptr1',['../classvw__slim_1_1internal_1_1location__reference.html#a2e738640ca91e31b8d9b1142d27eb2f3',1,'vw_slim::internal::location_reference']]],
-  ['_5fptr2',['_ptr2',['../classvw__slim_1_1internal_1_1location__reference.html#a30ec033146f8fa110fe278bcd578efca',1,'vw_slim::internal::location_reference']]],
   ['_5frandom_5fstate',['_random_state',['../structactive.html#a316a18fe47e505f11658923475e863c3',1,'active::_random_state()'],['../structExpReplay_1_1expreplay.html#a8b47509c5fb2d0fbacb46df406f4b430',1,'ExpReplay::expreplay::_random_state()']]],
   ['_5freduction_5ffeatures',['_reduction_features',['../structflat__example.html#a2c6614f006682543680da155c6e665c4',1,'flat_example::_reduction_features()'],['../structexample__predict.html#a196aefa0f742cb3bce1456bf18ca3be0',1,'example_predict::_reduction_features()']]],
   ['_5freuse_5fmem',['_reuse_mem',['../structContext.html#a715ce82969edf6ca51f8458f50eb238b',1,'Context']]],
@@ -36,7 +34,5 @@ var searchData=
   ['_5fspdlog_5fstdout_5flogger',['_spdlog_stdout_logger',['../structVW_1_1io_1_1details_1_1logger__impl.html#ad0ea97a34a4dd08e7be7f4a8afb74755',1,'VW::io::details::logger_impl']]],
   ['_5ftemporary_5fcache_5fbuffer',['_temporary_cache_buffer',['../structVW_1_1details_1_1cache__temp__buffer.html#a66852b16aa6f98874889ea4a8ec35799',1,'VW::details::cache_temp_buffer']]],
   ['_5ftrace_5fmessage',['_trace_message',['../structtrace__message__wrapper.html#a84c304d2df916c59062e121c81cc4dec',1,'trace_message_wrapper']]],
-  ['_5fval1',['_val1',['../classvw__slim_1_1internal_1_1location__value.html#a3df29a7f09a252e114dd3c957ac14cf2',1,'vw_slim::internal::location_value']]],
-  ['_5fval2',['_val2',['../classvw__slim_1_1internal_1_1location__value.html#ae732ca3bc027ec913f8af0343ec06efb',1,'vw_slim::internal::location_value']]],
   ['_5fwith_5foutput_5fstring',['_with_output_string',['../classSearch_1_1BaseTask.html#a1999fd3295a1cfc9ed6ae1638977304c',1,'Search::BaseTask']]]
 ];

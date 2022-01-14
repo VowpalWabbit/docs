@@ -15,8 +15,6 @@ var searchData=
   ['line_5fto_5fexamples_5fjson',['line_to_examples_json',['../parse__example__json_8h.html#a3e8f686647ba09845844e8c7fb4060c1',1,'parse_example_json.h']]],
   ['linenumber',['LineNumber',['../classVW_1_1vw__exception.html#a8ba6b06af8143510242c443b00b257da',1,'VW::vw_exception']]],
   ['load',['load',['../classvw__slim_1_1vw__predict.html#afa69fa0744ec1d68dd6b1b283c2b2b97',1,'vw_slim::vw_predict']]],
-  ['location_5freference',['location_reference',['../classvw__slim_1_1internal_1_1location__reference.html#a71dfdc7763c69779ec6def3183d3c023',1,'vw_slim::internal::location_reference::location_reference()=delete'],['../classvw__slim_1_1internal_1_1location__reference.html#ad63097452a13b2547ae251ee00eea052',1,'vw_slim::internal::location_reference::location_reference(const Ref &amp;other)'],['../classvw__slim_1_1internal_1_1location__reference.html#a6b20068bdc32a3c5f3ad8f0a2ce022f7',1,'vw_slim::internal::location_reference::location_reference(It1 first, It2 second)']]],
-  ['location_5fvalue',['location_value',['../classvw__slim_1_1internal_1_1location__value.html#abd400d4f784b972fd94f4a82d9ae013c',1,'vw_slim::internal::location_value']]],
   ['lock_5fdone',['lock_done',['../parser_8h.html#a0e83599c20ec7a560ea71a498f012aee',1,'parser.h']]],
   ['log_5fmulti_5fsetup',['log_multi_setup',['../log__multi_8h.html#a47137a0deda50451a25ddee454e5f71c',1,'log_multi.h']]],
   ['log_5fsummary',['log_summary',['../structVW_1_1io_1_1logger.html#ac047f70212d20d729cbc8f22848f5f64',1,'VW::io::logger']]],
