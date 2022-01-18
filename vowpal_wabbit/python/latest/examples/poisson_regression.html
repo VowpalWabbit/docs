@@ -8,31 +8,31 @@
 
     <title>Poisson Regression &#8212; VowpalWabbit latest documentation</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet">
-  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
-
+    <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  
     
-  <link rel="stylesheet"
-    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
-
+    <link rel="stylesheet"
+      href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+      href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+      href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  
     
       
-
+  
     
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/blank.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/pydata-sphinx-theme.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
     <link rel="stylesheet" type="text/css" href="../_static/nav.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
-
+    <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
@@ -257,7 +257,8 @@
           
             
             <!-- Only show if we have sidebars configured, else just a small margin  -->
-            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+            <div class="col-12 col-md-3 bd-sidebar">
+              <div class="sidebar-start-items"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
 </form><a href="https://vowpalwabbit.org/docs/">
@@ -424,6 +425,9 @@
 
   </div>
 </nav>
+              </div>
+              <div class="sidebar-end-items">
+              </div>
             </div>
             
           
@@ -533,30 +537,28 @@ Input label = simple
 Output pred = scalar
 average  since         example        example  current  current  current
 loss     last          counter         weight    label  predict features
-3.210998 3.210998            1            1.0   1.7919   0.0000        3
-4.361281 5.511565            2            2.0   2.5650   0.2174        3
-2.443528 0.525776            4            4.0   1.0989   0.2412        3
-2.014128 1.584728            8            8.0   1.0989   0.3368        3
-2.306779 2.599430           16           16.0   1.3865   0.5580        3
-2.030900 1.755020           32           32.0   2.3027   1.0997        3
-1.368907 0.706914           64           64.0   1.0989   1.1630        2
-1.364782 1.360658          128          128.0   2.6391   2.1248        3
-1.032802 0.700822          256          256.0   2.4850   2.1362        3
-0.989862 0.946923          512          512.0   2.5650   2.9744        3
-0.897476 0.805089         1024         1024.0   2.3980   1.9519        3
-0.844325 0.791175         2048         2048.0   2.3980   2.1337        3
-0.812892 0.781459         4096         4096.0   1.7919   1.0884        3
-0.799482 0.786072         8192         8192.0   2.0796   1.5271        2
+4.828282 4.828282            1            1.0   2.1973   0.0000        3
+4.297449 3.766617            2            2.0   2.0796   0.1388        2
+4.216340 4.135230            4            4.0   1.9461   0.2796        2
+3.726891 3.237441            8            8.0   2.0796   0.4706        3
+2.966789 2.206688           16           16.0   1.3865   0.6664        3
+2.395047 1.823304           32           32.0   2.3027   1.0532        3
+1.586443 0.777839           64           64.0   2.4850   1.4996        3
+1.456536 1.326629          128          128.0   1.7919   1.5355        3
+1.056353 0.656171          256          256.0   2.7081   2.3376        3
+0.960450 0.864547          512          512.0   2.7727   2.3299        3
+0.845980 0.731510         1024         1024.0   3.1355   2.9619        3
+0.782972 0.719965         2048         2048.0   1.0989   1.5578        2
+0.760113 0.737254         4096         4096.0   1.0989   0.9881        2
+0.737134 0.714154         8192         8192.0   2.6391   3.0377        3
 
 finished run
 number of examples = 10000
 weighted example sum = 10000.000000
-weighted label sum = 19728.878589
-average loss = 0.801502
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>best constant = 1.972888
-total feature number = 28500
+weighted label sum = 19310.819695
+average loss = 0.731789
+best constant = 1.931082
+total feature number = 27600
 </pre></div>
 </div>
 </div>
@@ -586,13 +588,13 @@ Input label = simple
 Output pred = scalar
 average  since         example        example  current  current  current
 loss     last          counter         weight    label  predict features
-0.009258 0.009258            1            1.0   1.7919   1.8881        3
-0.005444 0.001630            2            2.0   2.5650   2.5247        3
-0.120228 0.235013            4            4.0   1.0989   1.7712        3
-0.093712 0.067196            8            8.0   1.0989   1.2516        3
-0.127573 0.161434           16           16.0   1.3865   1.2998        3
-0.162863 0.198152           32           32.0   2.3027   1.9811        3
-0.165805 0.168748           64           64.0   1.0989   1.3479        2
+0.265219 0.265219            1            1.0   2.1973   1.6823        3
+0.134609 0.003998            2            2.0   2.0796   2.0163        2
+0.070608 0.006607            4            4.0   1.9461   2.0163        2
+0.064530 0.058453            8            8.0   2.0796   2.2378        3
+0.173043 0.281556           16           16.0   1.3865   2.0765        3
+0.148051 0.123059           32           32.0   2.3027   2.1552        3
+0.137644 0.127237           64           64.0   2.4850   2.2828        3
 </pre></div>
 </div>
 </div>
@@ -631,33 +633,32 @@ loss     last          counter         weight    label  predict features
 finished run
 number of examples = 100
 weighted example sum = 100.000000
-weighted label sum = 197.288786
-average loss = 0.778738
-best constant = 1.972888
-total feature number = 285
-11.501116 11.501116            1            1.0   6.0000   0.0000        3
-24.435224 37.369331            2            2.0  13.0000   0.2239        3
-12.759274 1.083324            4            4.0   3.0000   0.2499        3
-9.740562 6.721850            8            8.0   3.0000   0.3051        3
-13.176908 16.613254           16           16.0   4.0000   0.5524        3
-13.062888 12.948867           32           32.0  10.0000   1.1532        3
-9.028584 4.994281           64           64.0   3.0000   1.2668        2
-5.691063 2.353541          128          128.0  14.0000   2.3451        3
-3.426772 1.162482          256          256.0  12.0000   2.2417        3
-2.378761 1.330750          512          512.0  13.0000   3.0055        3
-1.803748 1.228735         1024         1024.0  11.0000   2.0883        3
-1.508679 1.213609         2048         2048.0  11.0000   2.1831        3
-1.364221 1.219763         4096         4096.0   6.0000   1.5036        3
+weighted label sum = 193.108197
+average loss = 0.708406
+best constant = 1.931082
+total feature number = 276
+23.550041 23.550041            1            1.0   9.0000   0.0000        3
+20.422612 17.295183            2            2.0   8.0000   0.1427        2
+28.065124 35.707635            4            4.0   7.0000   0.3126        2
+23.127412 18.189699            8            8.0   8.0000   0.4425        3
+19.197434 15.267457           16           16.0   4.0000   0.6091        3
+17.120669 15.043903           32           32.0  10.0000   1.0403        3
+11.487469 5.854269           64           64.0  12.0000   1.4688        3
+7.269423 3.051377          128          128.0   6.0000   1.6599        3
+4.104335 0.939248          256          256.0  15.0000   2.4750        3
+2.485192 0.866048          512          512.0  16.0000   2.4025        3
+1.664514 0.843836         1024         1024.0  23.0000   2.9108        3
+1.251739 0.838964         2048         2048.0   3.0000   1.7409        2
+1.044591 0.837443         4096         4096.0   3.0000   1.3411        2
+0.941494 0.838398         8192         8192.0  14.0000   2.8174        3
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.288371 1.212520         8192         8192.0   8.0000   1.8770        2
-
-finished run
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>finished run
 number of examples = 10000
 weighted example sum = 10000.000000
-weighted label sum = 92200.000000
-average loss = 1.274836
-total feature number = 28500
+weighted label sum = 85200.000000
+average loss = 0.922852
+total feature number = 27600
 </pre></div>
 </div>
 </div>
@@ -684,13 +685,13 @@ Input label = simple
 Output pred = scalar
 average  since         example        example  current  current  current
 loss     last          counter         weight    label  predict features
-15.426071 15.426071            1            1.0   6.0000   2.0724        3
-62.978275 110.530479            2            2.0  13.0000   2.4867        3
-31.816654 0.655032            4            4.0   3.0000   2.0185        3
-22.945447 14.074240            8            8.0   3.0000   1.6581        3
-40.614637 58.283827           16           16.0   4.0000   1.7148        3
-58.239940 75.865243           32           32.0  10.0000   2.0980        3
-63.548858 68.857777           64           64.0   3.0000   1.7716        2
+50.674229 50.674229            1            1.0   9.0000   1.8814        3
+42.692467 34.710705            2            2.0   8.0000   2.1084        2
+108.043910 173.395353            4            4.0   7.0000   2.1084        2
+78.653410 49.262910            8            8.0   8.0000   2.2626        3
+69.684347 60.715285           16           16.0   4.0000   2.1527        3
+76.276022 82.867697           32           32.0  10.0000   2.2037        3
+61.094150 45.912278           64           64.0  12.0000   2.2917        3
 </pre></div>
 </div>
 </div>
@@ -756,7 +757,7 @@ loss     last          counter         weight    label  predict features
 
               
               <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
+<div class='prev-next-area'>
     <a class='left-prev' id="prev-link" href="mini_vw.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
@@ -779,8 +780,8 @@ loss     last          counter         weight    label  predict features
       </div>
     </div>
   
-  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
-<footer class="footer mt-5 mt-md-0">
+    <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <footer class="footer mt-5 mt-md-0">
   <div class="container">
     
     <div class="footer-item">
@@ -791,7 +792,7 @@ loss     last          counter         weight    label  predict features
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.3.2.<br>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.4.0.<br>
 </p>
     </div>
     
