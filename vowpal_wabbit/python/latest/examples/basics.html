@@ -491,7 +491,7 @@
 <p>One we’ve imported <code class="docutils literal notranslate"><span class="pre">pyvw</span></code>, we can initialize VW either by passing a command line string (e.g., <code class="docutils literal notranslate"><span class="pre">&quot;--quiet</span> <span class="pre">-q</span> <span class="pre">ab</span> <span class="pre">--l2</span> <span class="pre">0.01&quot;</span></code>) or, in a more python-friendly manner, providing those as named arguments. Here we do the latter.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vw</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">vw</span><span class="p">(</span><span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">q</span><span class="o">=</span><span class="s1">&#39;ab&#39;</span><span class="p">,</span> <span class="n">l2</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vw</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">q</span><span class="o">=</span><span class="s1">&#39;ab&#39;</span><span class="p">,</span> <span class="n">l2</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -505,7 +505,7 @@
 </div>
 </div>
 </div>
-<p>Documentation can be looked at with <code class="docutils literal notranslate"><span class="pre">help</span></code> or you can look it up in the <a class="reference internal" href="../reference/vowpalwabbit.pyvw.html#vowpalwabbit.pyvw.vw.learn" title="vowpalwabbit.pyvw.vw.learn"><code class="xref py py-meth docutils literal notranslate"><span class="pre">generated</span> <span class="pre">docs</span></code></a>.</p>
+<p>Documentation can be looked at with <code class="docutils literal notranslate"><span class="pre">help</span></code> or you can look it up in the <a class="reference internal" href="../reference/vowpalwabbit.pyvw.html#vowpalwabbit.pyvw.Workspace.learn" title="vowpalwabbit.pyvw.Workspace.learn"><code class="xref py py-meth docutils literal notranslate"><span class="pre">generated</span> <span class="pre">docs</span></code></a>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="n">vw</span><span class="o">.</span><span class="n">learn</span><span class="p">)</span>
@@ -515,13 +515,13 @@
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Help on method learn in module vowpalwabbit.pyvw:
 
-learn(ec) method of vowpalwabbit.pyvw.vw instance
+learn(ec) method of vowpalwabbit.pyvw.Workspace instance
     Perform an online update
     
     Parameters
     ----------
     
-    ec : example/str/list
+    ec : Example/str/list
         examples on which the model gets updated
 </pre></div>
 </div>

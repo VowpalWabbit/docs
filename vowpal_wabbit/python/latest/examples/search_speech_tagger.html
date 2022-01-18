@@ -587,7 +587,7 @@
 <p>Now, we’re ready to train the model. We do this in three steps. First, we initialize a vw object, telling it that we have a <code class="docutils literal notranslate"><span class="pre">--search</span></code> task with 4 labels, second that the specific type of <code class="docutils literal notranslate"><span class="pre">--search_task</span></code> is <code class="docutils literal notranslate"><span class="pre">hook</span></code> (you will always use the <code class="docutils literal notranslate"><span class="pre">hook</span></code> task) and finally that we want it to be quiet and use a larger <code class="docutils literal notranslate"><span class="pre">ring_size</span></code> (you can ignore the <code class="docutils literal notranslate"><span class="pre">ring_size</span></code> for now).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vw</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">vw</span><span class="p">(</span><span class="s2">&quot;--search 4 --audit --quiet --search_task hook --ring_size 1024&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vw</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--search 4 --audit --quiet --search_task hook --ring_size 1024&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -744,7 +744,7 @@
 <p>We can train and run this parser with:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vw</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">vw</span><span class="p">(</span><span class="s2">&quot;--search 2 --quiet --search_task hook --ring_size 1024&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vw</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--search 2 --quiet --search_task hook --ring_size 1024&quot;</span><span class="p">)</span>
 <span class="n">task</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">init_search_task</span><span class="p">(</span><span class="n">CovingtonDepParser</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span> <span class="c1"># do ten passes over the training data</span>
     <span class="n">task</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">my_dataset</span><span class="p">)</span>
@@ -825,7 +825,7 @@
 <p>Given all this, we can now train and test our parser:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vw</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">vw</span><span class="p">(</span><span class="s2">&quot;--search 0 --csoaa_ldf m --search_task hook --ring_size 1024 --quiet&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vw</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--search 0 --csoaa_ldf m --search_task hook --ring_size 1024 --quiet&quot;</span><span class="p">)</span>
 <span class="n">task</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">init_search_task</span><span class="p">(</span><span class="n">CovingtonDepParserLDF</span><span class="p">)</span>
 <span class="c1">#BUG: This currently does not work because oracle generation is incorrect (generates invalid oracle values)#for p in range(2): # do two passes over the training data</span>
 <span class="c1">#    task.learn(my_dataset)</span>
@@ -943,7 +943,7 @@
 <p>We can train and test this model to make sure it does the right thing:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vw</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">vw</span><span class="p">(</span><span class="s2">&quot;--search 0 --csoaa_ldf m --search_task hook --ring_size 1024 --quiet -q ef -q ep&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vw</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--search 0 --csoaa_ldf m --search_task hook --ring_size 1024 --quiet -q ef -q ep&quot;</span><span class="p">)</span>
 <span class="n">task</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">init_search_task</span><span class="p">(</span><span class="n">WordAligner</span><span class="p">)</span>
 <span class="c1"># BUG: This is currently broken due to incorrect oracle generation. Currently under investigation.#for p in range(10):</span>
 <span class="c1">#    task.learn(my_dataset)</span>

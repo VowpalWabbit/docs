@@ -512,7 +512,7 @@
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Train log-transform model</span>
 <span class="n">training_samples</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">logz</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="mf">0.001</span> <span class="o">+</span> <span class="n">z</span><span class="p">)</span>
-<span class="n">vw</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">vw</span><span class="p">(</span><span class="s2">&quot;-b 2 --loss_function squared -l 0.1 --holdout_off -f vw.log.model --readable_model vw.readable.log.model&quot;</span><span class="p">)</span>
+<span class="n">vw</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;-b 2 --loss_function squared -l 0.1 --holdout_off -f vw.log.model --readable_model vw.readable.log.model&quot;</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">logz</span><span class="p">)):</span>
     <span class="n">training_samples</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{label}</span><span class="s2"> | x:</span><span class="si">{x}</span><span class="s2"> y:</span><span class="si">{y}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="n">logz</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
 <span class="c1"># Do hundred passes over the data and store the model in vw.log.model</span>
@@ -537,28 +537,31 @@ Input label = simple
 Output pred = scalar
 average  since         example        example  current  current  current
 loss     last          counter         weight    label  predict features
-4.828282 4.828282            1            1.0   2.1973   0.0000        3
-4.297449 3.766617            2            2.0   2.0796   0.1388        2
-4.216340 4.135230            4            4.0   1.9461   0.2796        2
-3.726891 3.237441            8            8.0   2.0796   0.4706        3
-2.966789 2.206688           16           16.0   1.3865   0.6664        3
-2.395047 1.823304           32           32.0   2.3027   1.0532        3
-1.586443 0.777839           64           64.0   2.4850   1.4996        3
-1.456536 1.326629          128          128.0   1.7919   1.5355        3
-1.056353 0.656171          256          256.0   2.7081   2.3376        3
-0.960450 0.864547          512          512.0   2.7727   2.3299        3
-0.845980 0.731510         1024         1024.0   3.1355   2.9619        3
-0.782972 0.719965         2048         2048.0   1.0989   1.5578        2
-0.760113 0.737254         4096         4096.0   1.0989   0.9881        2
-0.737134 0.714154         8192         8192.0   2.6391   3.0377        3
+3.787122 3.787122            1            1.0   1.9461   0.0000        3
+3.760244 3.733366            2            2.0   2.1973   0.2651        3
+2.317413 0.874582            4            4.0   0.0010   0.2023        3
+2.736096 3.154780            8            8.0   2.6391   0.5471        3
+2.623563 2.511030           16           16.0   2.9958   0.8651        3
+2.056725 1.489886           32           32.0   1.3865   0.7831        3
+1.531031 1.005337           64           64.0   0.6936   1.0795        3
+1.937148 2.343266          128          128.0   2.3980   1.6981        3
+1.572424 1.207700          256          256.0   1.7919   2.1505        3
+1.617489 1.662553          512          512.0   1.6096   1.4541        2
+1.500065 1.382641         1024         1024.0   2.0796   1.5484        2
+1.425806 1.351547         2048         2048.0   2.1973   2.8339        3
+1.400753 1.375701         4096         4096.0  -6.9078   0.4644        1
+1.352361 1.303969         8192         8192.0   2.9445   2.5955        3
 
 finished run
 number of examples = 10000
 weighted example sum = 10000.000000
-weighted label sum = 19310.819695
-average loss = 0.731789
-best constant = 1.931082
-total feature number = 27600
+weighted label sum = 19449.554239
+average loss = 1.347003
+best constant = 
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.944955
+total feature number = 28400
 </pre></div>
 </div>
 </div>
@@ -566,7 +569,7 @@ total feature number = 27600
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Generate predictions from the log-transform model</span>
-<span class="n">vw</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">vw</span><span class="p">(</span><span class="s2">&quot;-i vw.log.model -t&quot;</span><span class="p">)</span>
+<span class="n">vw</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;-i vw.log.model -t&quot;</span><span class="p">)</span>
 <span class="n">log_predictions</span> <span class="o">=</span> <span class="p">[</span><span class="n">vw</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">sample</span><span class="p">)</span> <span class="k">for</span> <span class="n">sample</span> <span class="ow">in</span> <span class="n">training_samples</span><span class="p">]</span>
 <span class="c1"># Measure bias in the log-domain</span>
 <span class="n">log_bias</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">log_predictions</span> <span class="o">-</span> <span class="n">logz</span><span class="p">)</span>
@@ -576,7 +579,9 @@ total feature number = 27600
 </div>
 <div class="cell_output docutils container">
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>only testing
-Num weight bits = 2
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Num weight bits = 2
 learning rate = 0.5
 initial_t = 0
 power_t = 0.5
@@ -588,13 +593,13 @@ Input label = simple
 Output pred = scalar
 average  since         example        example  current  current  current
 loss     last          counter         weight    label  predict features
-0.265219 0.265219            1            1.0   2.1973   1.6823        3
-0.134609 0.003998            2            2.0   2.0796   2.0163        2
-0.070608 0.006607            4            4.0   1.9461   2.0163        2
-0.064530 0.058453            8            8.0   2.0796   2.2378        3
-0.173043 0.281556           16           16.0   1.3865   2.0765        3
-0.148051 0.123059           32           32.0   2.3027   2.1552        3
-0.137644 0.127237           64           64.0   2.4850   2.2828        3
+0.340526 0.340526            1            1.0   1.9461   1.3625        3
+0.175328 0.010130            2            2.0   2.1973   2.2980        3
+0.426490 0.677653            4            4.0   0.0010   1.1628        3
+0.264316 0.102141            8            8.0   2.6391   3.1355        3
+0.273845 0.283375           16           16.0   2.9958   2.9810        3
+0.244854 0.215862           32           32.0   1.3865   1.1628        3
+0.211136 0.177417           64           64.0   0.6936   0.9736        3
 </pre></div>
 </div>
 </div>
@@ -604,7 +609,7 @@ loss     last          counter         weight    label  predict features
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Train original domain model using poisson regression</span>
 <span class="n">training_samples</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">vw</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">vw</span><span class="p">(</span><span class="s2">&quot;-b 2 --loss_function poisson -l 0.1 --holdout_off -f vw.poisson.model --readable_model vw.readable.poisson.model&quot;</span><span class="p">)</span>
+<span class="n">vw</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;-b 2 --loss_function poisson -l 0.1 --holdout_off -f vw.poisson.model --readable_model vw.readable.poisson.model&quot;</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">z</span><span class="p">)):</span>
     <span class="n">training_samples</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{label}</span><span class="s2"> | x:</span><span class="si">{x}</span><span class="s2"> y:</span><span class="si">{y}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="n">z</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
 <span class="c1"># Do hundred passes over the data and store the model in vw.log.model</span>
@@ -633,32 +638,33 @@ loss     last          counter         weight    label  predict features
 finished run
 number of examples = 100
 weighted example sum = 100.000000
-weighted label sum = 193.108197
-average loss = 0.708406
-best constant = 1.931082
-total feature number = 276
-23.550041 23.550041            1            1.0   9.0000   0.0000        3
-20.422612 17.295183            2            2.0   8.0000   0.1427        2
-28.065124 35.707635            4            4.0   7.0000   0.3126        2
-23.127412 18.189699            8            8.0   8.0000   0.4425        3
-19.197434 15.267457           16           16.0   4.0000   0.6091        3
-17.120669 15.043903           32           32.0  10.0000   1.0403        3
-11.487469 5.854269           64           64.0  12.0000   1.4688        3
-7.269423 3.051377          128          128.0   6.0000   1.6599        3
-4.104335 0.939248          256          256.0  15.0000   2.4750        3
-2.485192 0.866048          512          512.0  16.0000   2.4025        3
-1.664514 0.843836         1024         1024.0  23.0000   2.9108        3
-1.251739 0.838964         2048         2048.0   3.0000   1.7409        2
-1.044591 0.837443         4096         4096.0   3.0000   1.3411        2
-0.941494 0.838398         8192         8192.0  14.0000   2.8174        3
+weighted label sum = 194.495542
+average loss = 1.293814
+best constant = 1.944955
+total feature number = 284
+15.242744 15.242744            1            1.0   7.0000   0.0000        3
+17.254318 19.265892            2            2.0   9.0000   0.2729        3
+10.315734 3.377149            4            4.0   1.0000   0.2113        3
+16.740236 23.164738            8            8.0  14.0000   0.5675        3
+17.946390 19.152544           16           16.0  20.0000   0.8765        3
+13.933954 9.921519           32           32.0   4.0000   0.7985        3
+11.330095 8.726235           64           64.0   2.0000   1.1419        3
+7.032286 2.734478          128          128.0  11.0000   1.9007        3
+4.208355 1.384423          256          256.0   6.0000   2.3280        3
+2.778235 1.348115          512          512.0   5.0000   1.6488        2
+2.032355 1.286475         1024         1024.0   8.0000   1.8015        2
+1.656614 1.280873         2048         2048.0   9.0000   2.7621        3
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>finished run
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.469364 1.282114         4096         4096.0   0.0000   1.1728        1
+1.372083 1.274801         8192         8192.0  19.0000   2.5125        3
+
+finished run
 number of examples = 10000
 weighted example sum = 10000.000000
-weighted label sum = 85200.000000
-average loss = 0.922852
-total feature number = 27600
+weighted label sum = 97200.000000
+average loss = 1.355205
+total feature number = 28400
 </pre></div>
 </div>
 </div>
@@ -666,7 +672,7 @@ total feature number = 27600
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Generate predictions from the poisson model</span>
-<span class="n">vw</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">vw</span><span class="p">(</span><span class="s2">&quot;-i vw.poisson.model&quot;</span><span class="p">)</span>
+<span class="n">vw</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;-i vw.poisson.model&quot;</span><span class="p">)</span>
 <span class="n">poisson_predictions</span> <span class="o">=</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">vw</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">sample</span><span class="p">))</span> <span class="k">for</span> <span class="n">sample</span> <span class="ow">in</span> <span class="n">training_samples</span><span class="p">]</span>
 <span class="n">poisson_bias</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">poisson_predictions</span> <span class="o">-</span> <span class="n">z</span><span class="p">)</span>
 </pre></div>
@@ -685,13 +691,13 @@ Input label = simple
 Output pred = scalar
 average  since         example        example  current  current  current
 loss     last          counter         weight    label  predict features
-50.674229 50.674229            1            1.0   9.0000   1.8814        3
-42.692467 34.710705            2            2.0   8.0000   2.1084        2
-108.043910 173.395353            4            4.0   7.0000   2.1084        2
-78.653410 49.262910            8            8.0   8.0000   2.2626        3
-69.684347 60.715285           16           16.0   4.0000   2.1527        3
-76.276022 82.867697           32           32.0  10.0000   2.2037        3
-61.094150 45.912278           64           64.0  12.0000   2.2917        3
+26.689482 26.689482            1            1.0   7.0000   1.8338        3
+35.285960 43.882439            2            2.0   9.0000   2.3756        3
+21.593210 7.900461            4            4.0   1.0000   1.7099        3
+53.019490 84.445769            8            8.0  14.0000   2.8396        3
+71.715516 90.411543           16           16.0  20.0000   2.7287        3
+61.805255 51.894993           32           32.0   4.0000   1.7099        3
+78.447961 95.090667           64           64.0   2.0000   1.5989        3
 </pre></div>
 </div>
 </div>

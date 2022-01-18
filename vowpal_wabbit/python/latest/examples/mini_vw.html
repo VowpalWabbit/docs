@@ -483,7 +483,7 @@
 
 
 <span class="k">def</span> <span class="nf">mini_vw</span><span class="p">(</span><span class="n">inputFile</span><span class="p">,</span> <span class="n">numPasses</span><span class="p">,</span> <span class="n">otherArgs</span><span class="p">):</span>
-    <span class="n">vw</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">vw</span><span class="p">(</span><span class="n">otherArgs</span><span class="p">)</span>
+    <span class="n">vw</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="n">otherArgs</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">numPasses</span><span class="p">):</span>
         <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;pass&#39;</span><span class="p">,</span> <span class="p">(</span><span class="n">p</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span>
         <span class="n">h</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">inputFile</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>

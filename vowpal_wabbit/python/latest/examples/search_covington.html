@@ -598,7 +598,7 @@
 <span class="c1"># demo the non-ldf version:</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;training non-LDF&#39;</span><span class="p">)</span>
-<span class="n">vw</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">vw</span><span class="p">(</span><span class="s2">&quot;--search 2 --search_task hook --ring_size 1024 --quiet&quot;</span><span class="p">)</span>
+<span class="n">vw</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--search 2 --search_task hook --ring_size 1024 --quiet&quot;</span><span class="p">)</span>
 <span class="n">task</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">init_search_task</span><span class="p">(</span><span class="n">CovingtonDepParser</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span> <span class="c1"># do two passes over the training data</span>
     <span class="n">task</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">my_dataset</span><span class="p">)</span>
@@ -607,7 +607,7 @@
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;should have printed [ 1 2 -1 4 2 ]&#39;</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;training LDF&#39;</span><span class="p">)</span>
-<span class="n">vw</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">vw</span><span class="p">(</span><span class="s2">&quot;--search 0 --csoaa_ldf m --search_task hook --ring_size 1024 --quiet&quot;</span><span class="p">)</span>
+<span class="n">vw</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--search 0 --csoaa_ldf m --search_task hook --ring_size 1024 --quiet&quot;</span><span class="p">)</span>
 <span class="n">task</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">init_search_task</span><span class="p">(</span><span class="n">CovingtonDepParserLDF</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">):</span> <span class="c1"># do two passes over the training data</span>
    <span class="n">task</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">my_dataset</span><span class="p">)</span>
