@@ -84,8 +84,8 @@ Inheritance diagram for VW::automl::interaction_config_manager:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9d6e8da69e88813c9ee76610857a3685"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1automl_1_1interaction__config__manager.html#a9d6e8da69e88813c9ee76610857a3685">interaction_config_manager</a> (uint64_t, uint64_t, std::shared_ptr&lt; <a class="el" href="structVW_1_1rand__state.html">VW::rand_state</a> &gt;, uint64_t, bool, std::string, <a class="el" href="classdense__parameters.html">dense_parameters</a> &amp;, float(*)(const <a class="el" href="structVW_1_1automl_1_1exclusion__config.html">exclusion_config</a> &amp;, const std::map&lt; <a class="el" href="namespaceVW_1_1automl.html#a716d80c28387db516085735aec283f4b">namespace_index</a>, uint64_t &gt; &amp;))</td></tr>
-<tr class="separator:a9d6e8da69e88813c9ee76610857a3685"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa17d1d90364e97c26a64ca6de502f019"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1automl_1_1interaction__config__manager.html#aa17d1d90364e97c26a64ca6de502f019">interaction_config_manager</a> (uint64_t, uint64_t, std::shared_ptr&lt; <a class="el" href="structVW_1_1rand__state.html">VW::rand_state</a> &gt;, uint64_t, bool, std::string, <a class="el" href="classdense__parameters.html">dense_parameters</a> &amp;, float(*)(const <a class="el" href="structVW_1_1automl_1_1exclusion__config.html">exclusion_config</a> &amp;, const std::map&lt; <a class="el" href="namespaceVW_1_1automl.html#a716d80c28387db516085735aec283f4b">namespace_index</a>, uint64_t &gt; &amp;), double, double)</td></tr>
+<tr class="separator:aa17d1d90364e97c26a64ca6de502f019"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6045d3a1b2003610450212e80a694ef5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1automl_1_1interaction__config__manager.html#a6045d3a1b2003610450212e80a694ef5">apply_config</a> (<a class="el" href="structexample.html">example</a> *, uint64_t)</td></tr>
 <tr class="separator:a6045d3a1b2003610450212e80a694ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac60d60e691a0dbc96a500cb4b0b06fbe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1automl_1_1interaction__config__manager.html#ac60d60e691a0dbc96a500cb4b0b06fbe">revert_config</a> (<a class="el" href="structexample.html">example</a> *)</td></tr>
@@ -142,6 +142,12 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ab15d018f806d114edf66279b43ef62a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e5ea68a4ca34cf7ece998db9204852e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdense__parameters.html">dense_parameters</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1automl_1_1interaction__config__manager.html#a3e5ea68a4ca34cf7ece998db9204852e">weights</a></td></tr>
 <tr class="separator:a3e5ea68a4ca34cf7ece998db9204852e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ad9ad680ec585fa3e805c71b3640c6f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceVW_1_1automl.html#a53f2a825a871aa7558f642b5fa69ba3a">priority_func</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1automl_1_1interaction__config__manager.html#a4ad9ad680ec585fa3e805c71b3640c6f">calc_priority</a></td></tr>
+<tr class="separator:a4ad9ad680ec585fa3e805c71b3640c6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7b43446d3259ad0b465f2b3a51efc0f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1automl_1_1interaction__config__manager.html#aa7b43446d3259ad0b465f2b3a51efc0f">automl_alpha</a></td></tr>
+<tr class="separator:aa7b43446d3259ad0b465f2b3a51efc0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41b97c60a5b505fd6494551debef7f8c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1automl_1_1interaction__config__manager.html#a41b97c60a5b505fd6494551debef7f8c">automl_tau</a></td></tr>
+<tr class="separator:a41b97c60a5b505fd6494551debef7f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a139e4e122185ac056290aab7ade18b75"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="namespaceVW_1_1automl.html#a716d80c28387db516085735aec283f4b">namespace_index</a>, uint64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1automl_1_1interaction__config__manager.html#a139e4e122185ac056290aab7ade18b75">ns_counter</a></td></tr>
 <tr class="separator:a139e4e122185ac056290aab7ade18b75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c86381bff39e3312e29321e4860fd93"><td class="memItemLeft" align="right" valign="top">std::map&lt; uint64_t, <a class="el" href="structVW_1_1automl_1_1exclusion__config.html">exclusion_config</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1automl_1_1interaction__config__manager.html#a2c86381bff39e3312e29321e4860fd93">configs</a></td></tr>
@@ -152,8 +158,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a4eba45fc90ec828b83d64f54e69a2af1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a9d6e8da69e88813c9ee76610857a3685"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d6e8da69e88813c9ee76610857a3685">&#9670;&nbsp;</a></span>interaction_config_manager()</h2>
+<a id="aa17d1d90364e97c26a64ca6de502f019"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa17d1d90364e97c26a64ca6de502f019">&#9670;&nbsp;</a></span>interaction_config_manager()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -204,6 +210,18 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float(*)(const <a class="el" href="structVW_1_1automl_1_1exclusion__config.html">exclusion_config</a> &amp;, const std::map&lt; <a class="el" href="namespaceVW_1_1automl.html#a716d80c28387db516085735aec283f4b">namespace_index</a>, uint64_t &gt; &amp;)&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -379,6 +397,48 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="aa7b43446d3259ad0b465f2b3a51efc0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7b43446d3259ad0b465f2b3a51efc0f">&#9670;&nbsp;</a></span>automl_alpha</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double VW::automl::interaction_config_manager::automl_alpha</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a41b97c60a5b505fd6494551debef7f8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41b97c60a5b505fd6494551debef7f8c">&#9670;&nbsp;</a></span>automl_tau</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double VW::automl::interaction_config_manager::automl_tau</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4ad9ad680ec585fa3e805c71b3640c6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ad9ad680ec585fa3e805c71b3640c6f">&#9670;&nbsp;</a></span>calc_priority</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceVW_1_1automl.html#a53f2a825a871aa7558f642b5fa69ba3a">priority_func</a>* VW::automl::interaction_config_manager::calc_priority</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a2c86381bff39e3312e29321e4860fd93"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2c86381bff39e3312e29321e4860fd93">&#9670;&nbsp;</a></span>configs</h2>
 
@@ -595,7 +655,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 19 2022 13:55:09 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jan 19 2022 18:13:27 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

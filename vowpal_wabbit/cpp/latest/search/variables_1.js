@@ -30,5 +30,7 @@ var searchData=
   ['auto_5fcondition_5ffeatures',['AUTO_CONDITION_FEATURES',['../namespaceSearch.html#a64c3357ab3222147fb87242f94990116',1,'Search']]],
   ['auto_5fhamming_5floss',['AUTO_HAMMING_LOSS',['../namespaceSearch.html#a2e71a83a633bcffc3df35b1de1bec797',1,'Search']]],
   ['autolink_5fnamespace',['autolink_namespace',['../constant_8h.html#ac2bad8142eb4b0916e5a556988a08ffd',1,'constant.h']]],
+  ['automl_5falpha',['automl_alpha',['../structVW_1_1automl_1_1interaction__config__manager.html#aa7b43446d3259ad0b465f2b3a51efc0f',1,'VW::automl::interaction_config_manager']]],
+  ['automl_5ftau',['automl_tau',['../structVW_1_1automl_1_1interaction__config__manager.html#a41b97c60a5b505fd6494551debef7f8c',1,'VW::automl::interaction_config_manager']]],
   ['avg_5floss_5fregressors',['avg_loss_regressors',['../structGEN__CS_1_1cb__to__cs.html#ae63989605eba00d78586ecc741a4e8fa',1,'GEN_CS::cb_to_cs']]]
 ];

@@ -20,7 +20,7 @@ var searchData=
   ['scoped_5fcalloc_5for_5fthrow',['scoped_calloc_or_throw',['../memory_8h.html#a3af35e76b34d133a833f0510be29a35d',1,'memory.h']]],
   ['score_5fcomp',['score_comp',['../namespaceACTION__SCORE.html#a53dfc2b1c229fa3174bf702779a5b3a8',1,'ACTION_SCORE']]],
   ['score_5fiterator',['score_iterator',['../classACTION__SCORE_1_1score__iterator.html#a10fbcf6f0c3748f86a1df809fbc1e2ff',1,'ACTION_SCORE::score_iterator']]],
-  ['scored_5fconfig',['scored_config',['../structVW_1_1scored__config.html#a97f4b7c4a4cb0342bca75c9db5783162',1,'VW::scored_config']]],
+  ['scored_5fconfig',['scored_config',['../structVW_1_1scored__config.html#a97f4b7c4a4cb0342bca75c9db5783162',1,'VW::scored_config::scored_config()'],['../structVW_1_1scored__config.html#ac5605fccaa38bbecbef7d6fff491384a',1,'VW::scored_config::scored_config(double alpha, double tau)']]],
   ['scorer_5fsetup',['scorer_setup',['../scorer_8h.html#a03d68d4fa0b2d498af8ef5741fce794f',1,'scorer.h']]],
   ['search',['search',['../structSearch_1_1search.html#a43f210a82e87d89f35b5e2b4464172a7',1,'Search::search']]],
   ['second_5fderivative',['second_derivative',['../classloss__function.html#a83379a81b39a5e48b0919616f4c1435d',1,'loss_function']]],
