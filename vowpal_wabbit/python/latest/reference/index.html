@@ -49,7 +49,7 @@
     <link rel="shortcut icon" href="../_static/favicon.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="vowpalwabbit.pyvw" href="vowpalwabbit.pyvw.html" />
+    <link rel="next" title="vowpalwabbit" href="vowpalwabbit.html" />
     <link rel="prev" title="Search - Speech Tagger" href="../examples/search_speech_tagger.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -400,8 +400,13 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="vowpalwabbit.pyvw.html">
-     vowpalwabbit.pyvw
+    <a class="reference internal" href="vowpalwabbit.html">
+     vowpalwabbit
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="vowpalwabbit.dftovw.html">
+     vowpalwabbit.dftovw
     </a>
    </li>
    <li class="toctree-l2">
@@ -410,8 +415,8 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="vowpalwabbit.DFtoVW.html">
-     vowpalwabbit.DFtoVW
+    <a class="reference internal" href="vowpalwabbit.pyvw.html">
+     vowpalwabbit.pyvw
     </a>
    </li>
    <li class="toctree-l2">
@@ -445,8 +450,18 @@
 <nav id="bd-toc-nav">
     <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#usage">
-   Usage
+  <a class="reference internal nav-link" href="#core-module">
+   Core module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#optional-modules">
+   Optional modules
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#implementation-internal-modules">
+   Implementation/internal modules
   </a>
  </li>
 </ul>
@@ -482,43 +497,30 @@
                 
   <section id="api-reference">
 <h1>API Reference<a class="headerlink" href="#api-reference" title="Permalink to this headline">¶</a></h1>
+<section id="core-module">
+<h2>Core module<a class="headerlink" href="#core-module" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="vowpalwabbit.html">vowpalwabbit</a></li>
+</ul>
+</div>
+</section>
+<section id="optional-modules">
+<h2>Optional modules<a class="headerlink" href="#optional-modules" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="vowpalwabbit.dftovw.html">vowpalwabbit.dftovw</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vowpalwabbit.sklearn.html">vowpalwabbit.sklearn</a></li>
+</ul>
+</div>
+</section>
+<section id="implementation-internal-modules">
+<h2>Implementation/internal modules<a class="headerlink" href="#implementation-internal-modules" title="Permalink to this headline">¶</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="vowpalwabbit.pyvw.html">vowpalwabbit.pyvw</a></li>
-<li class="toctree-l1"><a class="reference internal" href="vowpalwabbit.sklearn.html">vowpalwabbit.sklearn</a></li>
-<li class="toctree-l1"><a class="reference internal" href="vowpalwabbit.DFtoVW.html">vowpalwabbit.DFtoVW</a></li>
 <li class="toctree-l1"><a class="reference internal" href="vowpalwabbit.pyvw.pylibvw.html">vowpalwabbit.pyvw.pylibvw</a></li>
 </ul>
-</div>
-<section id="usage">
-<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
-<p>You can use the python wrapper directly like this:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">vowpalwabbit</span> <span class="kn">import</span> <span class="n">pyvw</span>
-<span class="n">vw</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">vw</span><span class="p">(</span><span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">ex</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">example</span><span class="p">(</span><span class="s1">&#39;1 | a b c&#39;</span><span class="p">)</span>
-<span class="n">vw</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
-<span class="n">vw</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>Or you can use the included scikit-learn interface like this:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">datasets</span>
-<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
-<span class="kn">from</span> <span class="nn">vowpalwabbit.sklearn_vw</span> <span class="kn">import</span> <span class="n">VWClassifier</span>
-    <span class="c1"># generate some data</span>
-<span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">make_hastie_10_2</span><span class="p">(</span><span class="n">n_samples</span><span class="o">=</span><span class="mi">10000</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">X</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
-    <span class="c1"># split train and test set</span>
-<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">256</span><span class="p">)</span>
-    <span class="c1"># build model</span>
-<span class="n">model</span> <span class="o">=</span> <span class="n">VWClassifier</span><span class="p">()</span>
-<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
-    <span class="c1"># predict model</span>
-<span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
-    <span class="c1"># evaluate model</span>
-<span class="n">model</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
-<span class="n">model</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
-</pre></div>
 </div>
 </section>
 </section>
@@ -556,10 +558,10 @@
             <p class="prev-next-title">Search - Speech Tagger</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="vowpalwabbit.pyvw.html" title="next page">
+    <a class='right-next' id="next-link" href="vowpalwabbit.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">vowpalwabbit.pyvw</p>
+        <p class="prev-next-title">vowpalwabbit</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
