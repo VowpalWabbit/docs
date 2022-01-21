@@ -184,9 +184,18 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>request_multi_slot_dec
 <tr class="memitem:a3eb32d25593f08b5272bfda44d0e7f2d"><td class="memItemLeft" align="right" valign="top"><a id="a3eb32d25593f08b5272bfda44d0e7f2d"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>request_multi_slot_decision</b> (const char *event_id, const char *context_json, unsigned int flags, multi_slot_response_detailed &amp;resp, const int *baseline_actions, size_t baseline_actions_size, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
 <tr class="separator:a3eb32d25593f08b5272bfda44d0e7f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d1bb04940297650dfaf3edc59da88f8"><td class="memItemLeft" align="right" valign="top"><a id="a0d1bb04940297650dfaf3edc59da88f8"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>request_episodic_decision</b> (const char *event_id, const char *previous_id, const char *context_json, <a class="el" href="classreinforcement__learning_1_1ranking__response.html">ranking_response</a> &amp;resp, episode_state &amp;episode, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
+<tr class="separator:a0d1bb04940297650dfaf3edc59da88f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50f2a266dd0a495c1974f809d8b6d113"><td class="memItemLeft" align="right" valign="top"><a id="a50f2a266dd0a495c1974f809d8b6d113"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>request_episodic_decision</b> (const char *event_id, const char *previous_id, const char *context_json, unsigned int flags, <a class="el" href="classreinforcement__learning_1_1ranking__response.html">ranking_response</a> &amp;resp, episode_state &amp;episode, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
+<tr class="separator:a50f2a266dd0a495c1974f809d8b6d113"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9e72e066a8e4c572da2cd19d93351cf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreinforcement__learning_1_1live__model.html#ab9e72e066a8e4c572da2cd19d93351cf">report_action_taken</a> (const char *event_id, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
 <tr class="memdesc:ab9e72e066a8e4c572da2cd19d93351cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report that action was taken.  <a href="classreinforcement__learning_1_1live__model.html#ab9e72e066a8e4c572da2cd19d93351cf">More...</a><br /></td></tr>
 <tr class="separator:ab9e72e066a8e4c572da2cd19d93351cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8560e38e94107ed7bc6be4d2165f5021"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreinforcement__learning_1_1live__model.html#a8560e38e94107ed7bc6be4d2165f5021">report_action_taken</a> (const char *primary_id, const char *secondary_id, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
+<tr class="memdesc:a8560e38e94107ed7bc6be4d2165f5021"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report that action was taken.  <a href="classreinforcement__learning_1_1live__model.html#a8560e38e94107ed7bc6be4d2165f5021">More...</a><br /></td></tr>
+<tr class="separator:a8560e38e94107ed7bc6be4d2165f5021"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac18211a3d6a13944c9ba3a586431d355"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreinforcement__learning_1_1live__model.html#ac18211a3d6a13944c9ba3a586431d355">report_outcome</a> (const char *event_id, const char *outcome, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
 <tr class="memdesc:ac18211a3d6a13944c9ba3a586431d355"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report the outcome for the top action.  <a href="classreinforcement__learning_1_1live__model.html#ac18211a3d6a13944c9ba3a586431d355">More...</a><br /></td></tr>
 <tr class="separator:ac18211a3d6a13944c9ba3a586431d355"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -714,7 +723,7 @@ template&lt;typename ErrCntxt &gt; </div>
 </div>
 </div>
 <a id="ab9e72e066a8e4c572da2cd19d93351cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab9e72e066a8e4c572da2cd19d93351cf">&#9670;&nbsp;</a></span>report_action_taken()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9e72e066a8e4c572da2cd19d93351cf">&#9670;&nbsp;</a></span>report_action_taken() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -743,6 +752,51 @@ template&lt;typename ErrCntxt &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">event_id</td><td>The unique event_id used when choosing an action should be presented here. This is so that the action taken can be matched with feedback received. </td></tr>
+    <tr><td class="paramname">status</td><td>Optional field with detailed string description if there is an error </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int Return error code. This will also be returned in the <a class="el" href="classreinforcement__learning_1_1api__status.html" title="Report status of all API calls.">api_status</a> object </dd></dl>
+
+</div>
+</div>
+<a id="a8560e38e94107ed7bc6be4d2165f5021"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8560e38e94107ed7bc6be4d2165f5021">&#9670;&nbsp;</a></span>report_action_taken() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int reinforcement_learning::live_model::report_action_taken </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>primary_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>secondary_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *&#160;</td>
+          <td class="paramname"><em>status</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Report that action was taken. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">primary_id</td><td>The unique primary_id used when choosing an action should be presented here. This is so that the action taken can be matched with feedback received. </td></tr>
+    <tr><td class="paramname">secondary_id</td><td>Index of the partial outcome. </td></tr>
     <tr><td class="paramname">status</td><td>Optional field with detailed string description if there is an error </td></tr>
   </table>
   </dd>

@@ -76,6 +76,16 @@
 </dd></dl>
 
 <dl class="py class">
+<dt class="sig sig-object py" id="rl_client.EpisodeState">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">rl_client.</span></span><span class="sig-name descname"><span class="pre">EpisodeState</span></span><a class="headerlink" href="#rl_client.EpisodeState" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py property">
+<dt class="sig sig-object py" id="rl_client.EpisodeState.episode_id">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">episode_id</span></span><a class="headerlink" href="#rl_client.EpisodeState.episode_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
 <dt class="sig sig-object py" id="rl_client.LiveModel">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">rl_client.</span></span><span class="sig-name descname"><span class="pre">LiveModel</span></span><a class="headerlink" href="#rl_client.LiveModel" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="py method">
@@ -123,8 +133,14 @@
 <ol class="arabic simple">
 <li><p>report_outcome(self: rl_client.LiveModel, event_id: str, outcome: str) -&gt; None</p></li>
 <li><p>report_outcome(self: rl_client.LiveModel, event_id: str, outcome: float) -&gt; None</p></li>
+<li><p>report_outcome(self: rl_client.LiveModel, episode_id: str, event_id: str, outcome: float) -&gt; None</p></li>
 </ol>
 </dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="rl_client.LiveModel.request_episodic_decision">
+<span class="sig-name descname"><span class="pre">request_episodic_decision</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self:</span> <span class="pre">rl_client.LiveModel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">event_id:</span> <span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">previous_id:</span> <span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context:</span> <span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">episode:</span> <span class="pre">reinforcement_learning::episode_state</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">reinforcement_learning::ranking_response</span></span></span><a class="headerlink" href="#rl_client.LiveModel.request_episodic_decision" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 
 </dd></dl>
 
@@ -259,7 +275,7 @@
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.3.1.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
     </div>
   </body>
 </html>

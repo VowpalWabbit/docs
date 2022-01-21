@@ -75,7 +75,7 @@
 
 <span class="c1"># ...</span>
 
-<span class="n">client</span> <span class="o">=</span> <span class="n">rl_client</span><span class="o">.</span><span class="n">live_model</span><span class="p">(</span><span class="n">_</span><span class="p">,</span> <span class="n">on_error</span><span class="p">)</span>
+<span class="n">client</span> <span class="o">=</span> <span class="n">rl_client</span><span class="o">.</span><span class="n">LiveModel</span><span class="p">(</span><span class="n">_</span><span class="p">,</span> <span class="n">on_error</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
@@ -87,13 +87,13 @@
 </pre></div>
 </div>
 <p>Changes to:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">client</span> <span class="o">=</span> <span class="n">rl_client</span><span class="o">.</span><span class="n">live_model</span><span class="p">(</span><span class="n">config</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">client</span> <span class="o">=</span> <span class="n">rl_client</span><span class="o">.</span><span class="n">LiveModel</span><span class="p">(</span><span class="n">config</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
 <section id="choose-rank-return-value">
 <h2>4. <cite>choose_rank</cite> return value<a class="headerlink" href="#choose-rank-return-value" title="Permalink to this headline">¶</a></h2>
-<p><cite>choose_rank</cite> no longer returns a tuple, but now returns a <code class="xref py py-meth docutils literal notranslate"><span class="pre">rl_client.ranking_response()</span></code> object that contains the same information as was contained in the tuple.</p>
+<p><cite>choose_rank</cite> no longer returns a tuple, but now returns a <a class="reference internal" href="rl_client.html#rl_client.RankingResponse" title="rl_client.RankingResponse"><code class="xref py py-meth docutils literal notranslate"><span class="pre">rl_client.RankingResponse()</span></code></a> object that contains the same information as was contained in the tuple.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">model_id</span><span class="p">,</span> <span class="n">chosen_action_id</span><span class="p">,</span> <span class="n">actions_probabilities</span><span class="p">,</span> <span class="n">event_id</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">choose_rank</span><span class="p">(</span><span class="n">context</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -166,7 +166,7 @@
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.3.1.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
     </div>
   </body>
 </html>

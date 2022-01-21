@@ -105,6 +105,7 @@ $(document).ready(function(){initNavTree('rl_sim_8cc-example.html',''); initResi
 <div class="line"><span class="preprocessor">#include &quot;person.h&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &quot;simulation_stats.h&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &quot;constants.h&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;multistep.h&quot;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">using namespace </span>std;</div>
 <div class="line"> </div>
@@ -120,6 +121,7 @@ $(document).ready(function(){initNavTree('rl_sim_8cc-example.html',''); initResi
 <div class="line">    <span class="keywordflow">case</span> CA: <span class="keywordflow">return</span> ca_loop();</div>
 <div class="line">    <span class="keywordflow">case</span> CCB: <span class="keywordflow">return</span> ccb_loop();</div>
 <div class="line">    <span class="keywordflow">case</span> Slates: <span class="keywordflow">return</span> slates_loop();</div>
+<div class="line">    <span class="keywordflow">case</span> Multistep : <span class="keywordflow">return</span> multistep_loop();</div>
 <div class="line">    <span class="keywordflow">default</span>:</div>
 <div class="line">      std::cout &lt;&lt; <span class="stringliteral">&quot;Invalid loop kind:&quot;</span> &lt;&lt; _loop_kind &lt;&lt; std::endl;</div>
 <div class="line">      <span class="keywordflow">return</span> -1;</div>
@@ -170,6 +172,68 @@ $(document).ready(function(){initNavTree('rl_sim_8cc-example.html',''); initResi
 <div class="line"> </div>
 <div class="line">  <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
+<div class="line"> </div>
+<div class="line">std::string create_episode_id(<span class="keywordtype">size_t</span> episode_id) {</div>
+<div class="line">  std::ostringstream oss;</div>
+<div class="line">  oss &lt;&lt; <span class="stringliteral">&quot;episode&quot;</span> &lt;&lt; <span class="stringliteral">&quot;-&quot;</span> &lt;&lt; episode_id;</div>
+<div class="line">  <span class="keywordflow">return</span> oss.str();</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> rl_sim::multistep_loop() {</div>
+<div class="line">  r::ranking_response response;</div>
+<div class="line">  simulation_stats&lt;size_t&gt; stats;</div>
+<div class="line"> </div>
+<div class="line">  <span class="keyword">const</span> <span class="keywordtype">size_t</span> episode_length = 2;</div>
+<div class="line">  <span class="keywordtype">size_t</span> episode_indx = 0;</div>
+<div class="line">  <span class="keywordflow">while</span> (_run_loop) {</div>
+<div class="line">    <span class="keyword">const</span> std::string episode_id = create_episode_id(episode_indx++);</div>
+<div class="line">    r::api_status status;</div>
+<div class="line">    r::episode_state episode(episode_id.c_str());</div>
+<div class="line"> </div>
+<div class="line">    std::string previous_id;</div>
+<div class="line">    <span class="keywordtype">float</span> episodic_outcome = 0;</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; episode_length; ++i) {</div>
+<div class="line">      <span class="keyword">auto</span>&amp; p = pick_a_random_person();</div>
+<div class="line">      <span class="keyword">const</span> <span class="keyword">auto</span> context_features = p.get_features();</div>
+<div class="line">      <span class="keyword">const</span> <span class="keyword">auto</span> action_features = get_action_features();</div>
+<div class="line">      <span class="keyword">const</span> <span class="keyword">auto</span> context_json = create_context_json(context_features, action_features);</div>
+<div class="line">      <span class="keyword">const</span> <span class="keyword">auto</span> req_id = create_event_id();</div>
+<div class="line"> </div>
+<div class="line">      r::ranking_response response1;</div>
+<div class="line">      <span class="keywordflow">if</span> (_rl-&gt;request_episodic_decision(req_id.c_str(), i == 0 ? <span class="keyword">nullptr</span> : previous_id.c_str(),</div>
+<div class="line">        context_json.c_str(), response, episode, &amp;status) != err::success) {</div>
+<div class="line">        std::cout &lt;&lt; status.get_error_msg() &lt;&lt; std::endl;</div>
+<div class="line">        <span class="keywordflow">return</span> -1;</div>
+<div class="line">      }</div>
+<div class="line"> </div>
+<div class="line">      <span class="keywordtype">size_t</span> chosen_action;</div>
+<div class="line">      <span class="keywordflow">if</span> (response.get_chosen_action_id(chosen_action) != err::success) {</div>
+<div class="line">        std::cout &lt;&lt; status.get_error_msg() &lt;&lt; std::endl;</div>
+<div class="line">        <span class="keywordflow">continue</span>;</div>
+<div class="line">      }</div>
+<div class="line"> </div>
+<div class="line">      <span class="keyword">const</span> <span class="keyword">auto</span> outcome_per_step = p.get_outcome(_topics[chosen_action]);</div>
+<div class="line">      stats.record(p.id(), chosen_action, outcome_per_step);</div>
+<div class="line"> </div>
+<div class="line">      std::cout &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; stats.count() &lt;&lt; <span class="stringliteral">&quot;, ctxt, &quot;</span> &lt;&lt; p.id() &lt;&lt; <span class="stringliteral">&quot;, action, &quot;</span> &lt;&lt; chosen_action &lt;&lt; <span class="stringliteral">&quot;, outcome, &quot;</span> &lt;&lt; outcome_per_step</div>
+<div class="line">        &lt;&lt; <span class="stringliteral">&quot;, dist, &quot;</span> &lt;&lt; get_dist_str(response) &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; stats.get_stats(p.id(), chosen_action) &lt;&lt; std::endl;</div>
+<div class="line"> </div>
+<div class="line">      episodic_outcome += outcome_per_step;</div>
+<div class="line">      previous_id = req_id;</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">if</span> (_rl-&gt;report_outcome(episode.get_episode_id(), episodic_outcome, &amp;status) != err::success) {</div>
+<div class="line">      std::cout &lt;&lt; status.get_error_msg() &lt;&lt; std::endl;</div>
+<div class="line">      <span class="keywordflow">continue</span>;</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    std::this_thread::sleep_for(std::chrono::milliseconds(2000));</div>
+<div class="line">  }</div>
+<div class="line"> </div>
+<div class="line">  <span class="keywordflow">return</span> 0;</div>
+<div class="line">}</div>
+<div class="line"> </div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> rl_sim::ca_loop(){</div>
 <div class="line">  r::continuous_action_response response;</div>
@@ -430,15 +494,15 @@ $(document).ready(function(){initNavTree('rl_sim_8cc-example.html',''); initResi
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">bool</span> rl_sim::init_continuous_sim_world() {</div>
 <div class="line">  <span class="comment">// initialize continuous actions robot joints</span></div>
-<div class="line">  </div>
+<div class="line"> </div>
 <div class="line">  _friction = {25.4, 41.2, 66.5, 81.9, 104.4};</div>
-<div class="line">  </div>
+<div class="line"> </div>
 <div class="line">  <span class="comment">// temperature (C) range: 20.f to 45.f</span></div>
 <div class="line">  <span class="comment">// angular velocity range: 0.f to 200.f</span></div>
 <div class="line">  <span class="comment">// load range: -60.f to 60.f</span></div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// first joint j1</span></div>
-<div class="line">  joint::friction_prob fb = </div>
+<div class="line">  joint::friction_prob fb =</div>
 <div class="line">  {</div>
 <div class="line">    { _friction[0], 0.08f },</div>
 <div class="line">    { _friction[1], 0.03f },</div>
@@ -450,7 +514,7 @@ $(document).ready(function(){initNavTree('rl_sim_8cc-example.html',''); initResi
 <div class="line">  _robot_joints.emplace_back(<span class="stringliteral">&quot;j1&quot;</span>, 20.3, 102.4, -10.2, fb);</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// second joint j2</span></div>
-<div class="line">  fb = </div>
+<div class="line">  fb =</div>
 <div class="line">  {</div>
 <div class="line">    { _friction[0],0.08f },</div>
 <div class="line">    { _friction[1],0.30f },</div>
@@ -539,12 +603,14 @@ $(document).ready(function(){initNavTree('rl_sim_8cc-example.html',''); initResi
 <div class="line"> </div>
 <div class="line"> </div>
 <div class="line">rl_sim::rl_sim(boost::program_options::variables_map vm) : _options(std::move(vm)), _loop_kind(CB) {</div>
-<div class="line">  <span class="keywordflow">if</span>(_options[<span class="stringliteral">&quot;ccb&quot;</span>].as&lt;bool&gt;())</div>
+<div class="line">  <span class="keywordflow">if</span> (_options[<span class="stringliteral">&quot;ccb&quot;</span>].as&lt;bool&gt;())</div>
 <div class="line">    _loop_kind = CCB;</div>
-<div class="line">  <span class="keywordflow">else</span> <span class="keywordflow">if</span>(_options[<span class="stringliteral">&quot;slates&quot;</span>].as&lt;bool&gt;())</div>
+<div class="line">  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (_options[<span class="stringliteral">&quot;slates&quot;</span>].as&lt;bool&gt;())</div>
 <div class="line">    _loop_kind = Slates;</div>
-<div class="line">  <span class="keywordflow">else</span> <span class="keywordflow">if</span>(_options[<span class="stringliteral">&quot;ca&quot;</span>].as&lt;bool&gt;())</div>
+<div class="line">  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (_options[<span class="stringliteral">&quot;ca&quot;</span>].as&lt;bool&gt;())</div>
 <div class="line">    _loop_kind = CA;</div>
+<div class="line">  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (_options[<span class="stringliteral">&quot;multistep&quot;</span>].as&lt;bool&gt;())</div>
+<div class="line">    _loop_kind = Multistep;</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line">std::string get_dist_str(<span class="keyword">const</span> <a class="code" href="classreinforcement__learning_1_1ranking__response.html">reinforcement_learning::ranking_response</a>&amp; response) {</div>
