@@ -1016,16 +1016,18 @@ shared | s_1 s_2
 <p>Use the following command for a contextual bandit with four possible actions:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">vowpalwabbit</span> <span class="kn">import</span> <span class="n">pyvw</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">vowpalwabbit</span>
 
-<span class="n">vw</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--cb 4&quot;</span><span class="p">)</span>
+<span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--cb 4&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>using no cache
 Reading datafile = stdin
-num sources = 1
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>num sources = 1
 Num weight bits = 18
 learning rate = 0.5
 initial_t = 0
@@ -1091,7 +1093,10 @@ loss     last          counter         weight    label  predict features
 4 3
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.952381 1.428571            8            8.0  unknown        2:0.128945...       12
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.952381 1.428571 
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>           8            8.0  unknown        2:0.128945...       12
 </pre></div>
 </div>
 </div>
@@ -1105,7 +1110,7 @@ loss     last          counter         weight    label  predict features
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vw</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">&#39;cb.model&#39;</span><span class="p">)</span>
 <span class="k">del</span> <span class="n">vw</span>
 
-<span class="n">vw</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--cb 4 -i cb.model&quot;</span><span class="p">)</span>
+<span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--cb 4 -i cb.model&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">vw</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="s1">&#39;| a b&#39;</span><span class="p">))</span>
 </pre></div>
 </div>

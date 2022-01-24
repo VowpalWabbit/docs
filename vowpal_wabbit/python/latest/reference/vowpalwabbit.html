@@ -704,7 +704,7 @@ features in that dictionary. finally, if it’s a function,
 we (repeatedly) execute it fn() until it’s not a function
 any more(for lazy feature computation). By default is None</p>
 </dd>
-<dt><strong>labelType</strong><span class="classifier"><a class="reference internal" href="#vowpalwabbit.LabelType" title="vowpalwabbit.LabelType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LabelType</span></code></a> value or corresponding integer value (integer is deprecateds). Supplying 0 or None means to use the default label type based on the setup VW learner.</span></dt><dd></dd>
+<dt><strong>labelType</strong><span class="classifier"><a class="reference internal" href="#vowpalwabbit.LabelType" title="vowpalwabbit.LabelType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LabelType</span></code></a> value or corresponding integer value (integer is deprecated). Supplying 0 or None means to use the default label type based on the setup VW learner.</span></dt><dd></dd>
 <dt><strong>Returns</strong></dt><dd></dd>
 <dt><strong>——-</strong></dt><dd></dd>
 <dt><strong>self</strong><span class="classifier">Example</span></dt><dd></dd>
@@ -714,7 +714,7 @@ any more(for lazy feature computation). By default is None</p>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
 <dl class="simple">
-<dt><a class="reference internal" href="vowpalwabbit.pyvw.html#vowpalwabbit.pyvw.vw" title="vowpalwabbit.pyvw.vw"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pyvw.vw</span></code></a></dt><dd></dd>
+<dt><a class="reference internal" href="#vowpalwabbit.Workspace" title="vowpalwabbit.Workspace"><code class="xref py py-obj docutils literal notranslate"><span class="pre">vowpalwabbit.Workspace</span></code></a></dt><dd></dd>
 </dl>
 </div>
 </dd></dl>
@@ -1025,8 +1025,8 @@ paired with a value or not (if not, the value is assumed to be 1.0</p>
 </dd>
 </dl>
 <p class="rubric">Examples</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">vowpalwabbit</span> <span class="kn">import</span> <span class="n">pyvw</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">vw</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">vowpalwabbit</span> <span class="kn">import</span> <span class="n">Workspace</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">vw</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">ex</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">example</span><span class="p">(</span><span class="s1">&#39;1 |a two features |b more features here&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">ex</span><span class="o">.</span><span class="n">push_features</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">ex</span><span class="o">.</span><span class="n">push_features</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="p">[(</span><span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="mf">1.</span><span class="p">),</span> <span class="s1">&#39;d&#39;</span><span class="p">])</span>
@@ -1531,11 +1531,11 @@ for example “–audit”. By default is None.</p>
 </dd>
 </dl>
 <p class="rubric">Examples</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">vowpalwabbit</span> <span class="kn">import</span> <span class="n">pyvw</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">vw1</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s1">&#39;--audit&#39;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">vw2</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="n">audit</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">24</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">l2</span><span class="o">=</span><span class="mf">0.001</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">vw3</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--audit&quot;</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">26</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">vw4</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="n">q</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;ab&quot;</span><span class="p">,</span> <span class="s2">&quot;ac&quot;</span><span class="p">])</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">vowpalwabbit</span> <span class="kn">import</span> <span class="n">Workspace</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">vw1</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="s1">&#39;--audit&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">vw2</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="n">audit</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">24</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">l2</span><span class="o">=</span><span class="mf">0.001</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">vw3</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--audit&quot;</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">26</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">vw4</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="n">q</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;ab&quot;</span><span class="p">,</span> <span class="s2">&quot;ac&quot;</span><span class="p">])</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -1551,7 +1551,7 @@ label type</p>
 <dd class="field-odd"><dl>
 <dt><strong>initStringOrDict</strong><span class="classifier">str/dict</span></dt><dd><p>Example in either string or dictionary form</p>
 </dd>
-<dt><strong>labelType</strong><span class="classifier">The direct integer value of the <a class="reference internal" href="vowpalwabbit.pyvw.html#vowpalwabbit.pyvw.LabelType" title="vowpalwabbit.pyvw.LabelType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LabelType</span></code></a> enum can be used or the enum directly. Supplying 0 or None means to use the default label type based on the setup VW learner.</span></dt><dd></dd>
+<dt><strong>labelType</strong><span class="classifier">The direct integer value of the <a class="reference internal" href="#vowpalwabbit.LabelType" title="vowpalwabbit.LabelType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LabelType</span></code></a> enum can be used or the enum directly. Supplying 0 or None means to use the default label type based on the setup VW learner.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -1700,7 +1700,7 @@ a single example for a single example learner.</p>
 line is considered as an example. In case of list, each string
 element is considered as an example</p>
 </dd>
-<dt><strong>labelType</strong><span class="classifier">The direct integer value of the <a class="reference internal" href="vowpalwabbit.pyvw.html#vowpalwabbit.pyvw.LabelType" title="vowpalwabbit.pyvw.LabelType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LabelType</span></code></a> enum can be used or the enum directly. Supplying 0 or None means to use the default label type based on the setup VW learner.</span></dt><dd></dd>
+<dt><strong>labelType</strong><span class="classifier">The direct integer value of the <a class="reference internal" href="#vowpalwabbit.LabelType" title="vowpalwabbit.LabelType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LabelType</span></code></a> enum can be used or the enum directly. Supplying 0 or None means to use the default label type based on the setup VW learner.</span></dt><dd></dd>
 </dl>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -1711,12 +1711,12 @@ element is considered as an example</p>
 </dd>
 </dl>
 <p class="rubric">Examples</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">vowpalwabbit</span> <span class="kn">import</span> <span class="n">pyvw</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">model</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">vowpalwabbit</span> <span class="kn">import</span> <span class="n">Workspace</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">model</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">ex</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="s2">&quot;0:0.1:0.75 | a:0.5 b:1 c:2&quot;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
 <span class="go">&lt;class &#39;vowpalwabbit.pyvw.Example&#39;&gt;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">model</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cb_adf</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">model</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cb_adf</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">ex</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">parse</span><span class="p">([</span><span class="s2">&quot;| a:1 b:0.5&quot;</span><span class="p">,</span> <span class="s2">&quot;0:0.1:0.75 | a:0.5 b:1 c:2&quot;</span><span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
 <span class="go">&lt;class &#39;list&#39;&gt;</span>

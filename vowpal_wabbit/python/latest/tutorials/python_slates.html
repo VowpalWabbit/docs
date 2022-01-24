@@ -450,28 +450,62 @@
 <nav id="bd-toc-nav">
     <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#combinatorial-bandits">
+   Combinatorial bandits
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-slates-problem-setting">
+   The Slates problem setting
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vowpal-wabbit-slates-example-format">
+   Vowpal Wabbit Slates example format
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#scenario-outfit-optimization">
    Scenario: Outfit optimization
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#reward-function">
-   Reward function
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id1">
-   Slates
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#contextual-bandit">
-   Contextual Bandit
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#part-one-setup">
+     Part One - setup
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#reward-function">
+     Reward function
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Slates
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#slates-simulation">
+       Slates simulation
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#contextual-bandit">
+     Contextual Bandit
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#comparison">
    Comparison
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summary">
+   Summary
   </a>
  </li>
 </ul>
@@ -514,15 +548,58 @@
                 
   <section class="tex2jax_ignore mathjax_ignore" id="slates">
 <h1>Slates<a class="headerlink" href="#slates" title="Permalink to this headline">¶</a></h1>
+<section id="combinatorial-bandits">
+<h2>Combinatorial bandits<a class="headerlink" href="#combinatorial-bandits" title="Permalink to this headline">¶</a></h2>
+<p>A common setting when using bandits is the desire to make multiple decisions jointly as each individual decision could impact the outcome of the others. For example, when optimizing the layout of a web page, you have a list of context boxes to decide upon, one usually only has whole-page metrics so the impact of all decisions are all connected and cant be associated with any single decision.</p>
+<p>One way to address this is, instead of making multiple decisions for each box, is make single decision with a combinatorial number of arms to cover every combination of individual decisions. This combinatorial explosion in the number of arms make traditional Contextual Bandits methods such as IPS (Inverse Propensity Score) untractable and requiring a large amount of data.</p>
+</section>
+<section id="the-slates-problem-setting">
+<h2>The Slates problem setting<a class="headerlink" href="#the-slates-problem-setting" title="Permalink to this headline">¶</a></h2>
+<p>The <a class="reference external" href="http://arxiv.org/abs/1605.04812">Slates</a> setting is an extension to the Contextual Bandits one. With Slates, there’s a set of slots (a slot is akin to a decision) and each slot has a set of associated actions. When making a decision, an action is selected for each slot based on the policy and which slot they are associated with.</p>
+<p>A single, global, reward is produced that signals the outcome of an entire slate of decisions. There’s a linearity assumption on the impact of each action on the observed reward.</p>
+</section>
+<section id="vowpal-wabbit-slates-example-format">
+<h2>Vowpal Wabbit Slates example format<a class="headerlink" href="#vowpal-wabbit-slates-example-format" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">slates</span> <span class="n">shared</span> <span class="o">|</span> <span class="n">a</span>
+<span class="n">slates</span> <span class="n">action</span> <span class="mi">0</span> <span class="o">|</span> <span class="n">a</span>
+<span class="n">slates</span> <span class="n">action</span> <span class="mi">0</span> <span class="o">|</span> <span class="n">b</span>
+<span class="n">slates</span> <span class="n">action</span> <span class="mi">0</span> <span class="o">|</span> <span class="n">c</span>
+<span class="n">slates</span> <span class="n">action</span> <span class="mi">1</span> <span class="o">|</span> <span class="n">d</span>
+<span class="n">slates</span> <span class="n">action</span> <span class="mi">1</span> <span class="o">|</span> <span class="n">e</span>
+<span class="n">slates</span> <span class="n">slot</span> <span class="o">|</span> <span class="n">x</span>
+<span class="n">slates</span> <span class="n">slot</span> <span class="o">|</span> <span class="n">y</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">slates</span> <span class="pre">shared</span></code> is the shared context for all of the decisions. Often these are user related features. Each <code class="docutils literal notranslate"><span class="pre">slates</span> <span class="pre">action</span></code> needs to tell which slot they are associated with, slots are 0-indexed. Finally, <code class="docutils literal notranslate"><span class="pre">slates</span> <span class="pre">slot</span></code> is used to list the features of each slot.</p>
+</section>
+<section id="scenario-outfit-optimization">
+<h2>Scenario: Outfit optimization<a class="headerlink" href="#scenario-outfit-optimization" title="Permalink to this headline">¶</a></h2>
+<p>In this example our goal is to select the best outfit for the occasion, in this case it is a job interview. The shared context represents the kind of job being interviewed for, in our example it’s either <code class="docutils literal notranslate"><span class="pre">corporate</span></code> or <code class="docutils literal notranslate"><span class="pre">trade</span></code>.</p>
+<ul class="simple">
+<li><p>Each slot represent the clothing type, here it will be <code class="docutils literal notranslate"><span class="pre">torso</span></code>, <code class="docutils literal notranslate"><span class="pre">legs</span></code> and <code class="docutils literal notranslate"><span class="pre">footwear</span></code></p></li>
+<li><p>The clothing items are represented by each action</p></li>
+<li><p>The reward is how suitable an outfit choice is for a given ocasion</p></li>
+</ul>
+<p>We will compare using Slates with CB to see its effectiveness.</p>
+<p><img alt="slates_scenario.png" src="../_images/slates_scenario.png" /></p>
+<section id="part-one-setup">
+<h3>Part One - setup<a class="headerlink" href="#part-one-setup" title="Permalink to this headline">¶</a></h3>
+<p>Let’s start by importing the python libraries we’ll use in this example:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">vowpalwabbit</span> <span class="kn">import</span> <span class="n">pyvw</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">vowpalwabbit</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">random</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-
-<span class="n">NUM_ITERATIONS</span> <span class="o">=</span> <span class="mi">2500</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now, the simulator parameters:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">NUM_ITERATIONS</span> <span class="o">=</span> <span class="mi">2500</span>
 <span class="n">shared_contexts</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;corporate&quot;</span><span class="p">,</span> <span class="s2">&quot;trade&quot;</span><span class="p">]</span>
 <span class="n">torso_items</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;tshirt&quot;</span><span class="p">,</span> <span class="s2">&quot;buttonupshirt&quot;</span><span class="p">,</span> <span class="s2">&quot;highvis&quot;</span><span class="p">]</span>
 <span class="n">legs_items</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;workpants&quot;</span><span class="p">,</span> <span class="s2">&quot;formalpants&quot;</span><span class="p">,</span> <span class="s2">&quot;shorts&quot;</span><span class="p">]</span>
@@ -531,23 +608,16 @@
 </div>
 </div>
 </div>
-<section id="scenario-outfit-optimization">
-<h2>Scenario: Outfit optimization<a class="headerlink" href="#scenario-outfit-optimization" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Slots are different clothing types</p></li>
-<li><p>Actions are the individual pieces of clothing for each slot</p></li>
-</ul>
-<p><img alt="slates_scenario.png" src="../_images/slates_scenario.png" /></p>
 </section>
 <section id="reward-function">
-<h2>Reward function<a class="headerlink" href="#reward-function" title="Permalink to this headline">¶</a></h2>
-<p>The chosen action and context is supplied to the this to determine the reward. Noise is injected to make the learning problem harder and reflect how in reality there may be variation in how the reward function reacts, possibly because of missing information.</p>
+<h3>Reward function<a class="headerlink" href="#reward-function" title="Permalink to this headline">¶</a></h3>
+<p>Our reward function receives as arguments the shared context (the occasion) and the selected actions for each slot (the types of clothing). In order to reflect real world problems, and make it more dificult, we inject normal noise in the reward value.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">noise</span><span class="p">(</span><span class="n">center</span><span class="p">,</span> <span class="n">stddev</span><span class="o">=</span><span class="mf">0.075</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">loc</span> <span class="o">=</span> <span class="n">center</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="mf">0.075</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">reward_function</span><span class="p">(</span><span class="n">shared_context</span><span class="p">,</span> <span class="n">torso_index</span><span class="p">,</span> <span class="n">legs_index</span><span class="p">,</span> <span class="n">feet_index</span><span class="p">):</span>    
+<span class="k">def</span> <span class="nf">reward_function</span><span class="p">(</span><span class="n">shared_context</span><span class="p">,</span> <span class="n">torso_index</span><span class="p">,</span> <span class="n">legs_index</span><span class="p">,</span> <span class="n">feet_index</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">shared_context</span> <span class="o">==</span> <span class="s2">&quot;corporate&quot;</span><span class="p">:</span>
         <span class="n">torso_values</span> <span class="o">=</span> <span class="p">[</span><span class="n">noise</span><span class="p">(</span><span class="mf">0.2</span><span class="p">),</span> <span class="n">noise</span><span class="p">(</span><span class="mf">0.3</span><span class="p">),</span> <span class="n">noise</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)]</span>
         <span class="n">legs_val</span> <span class="o">=</span> <span class="p">[</span><span class="n">noise</span><span class="p">(</span><span class="mf">0.1</span><span class="p">),</span> <span class="n">noise</span><span class="p">(</span><span class="mf">0.3</span><span class="p">),</span> <span class="n">noise</span><span class="p">(</span><span class="mf">0.2</span><span class="p">)]</span>    
@@ -565,7 +635,8 @@
 </div>
 </section>
 <section id="id1">
-<h2>Slates<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<h3>Slates<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>The following piece of code generate examples that will be used for inference and training:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">generate_slates_text_format</span><span class="p">(</span><span class="n">shared_context</span><span class="p">):</span>
@@ -608,11 +679,21 @@
 </div>
 </div>
 </div>
+<section id="slates-simulation">
+<h4>Slates simulation<a class="headerlink" href="#slates-simulation" title="Permalink to this headline">¶</a></h4>
+<p>Let’s create the <code class="docutils literal notranslate"><span class="pre">Workspace</span></code> instance we’ll use with this simulator</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">slates_vw</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--slates --epsilon 0.2 --interactions SA UAS US UA -l 0.05 --power_t 0&quot;</span><span class="p">)</span>
-
-<span class="n">slates_rewards</span> <span class="o">=</span> <span class="p">[]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">slates_vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--slates --epsilon 0.2 --interactions SA UAS US UA -l 0.05 --power_t 0&quot;</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Notice we’re passing <code class="docutils literal notranslate"><span class="pre">--slates</span></code> which enable usage of the Slates algorithm. For an explanation of the other arguments, go back to the <a class="reference external" href="https://vowpalwabbit.org/docs/vowpal_wabbit/python/latest/tutorials/cmd_first_steps.html">Command Line Tutorial</a>]</p>
+<p>Now, the core simulation loop:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">slates_rewards</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">NUM_ITERATIONS</span><span class="p">):</span>
     <span class="n">shared_context</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">shared_contexts</span><span class="p">)</span>
     <span class="n">slates_prediction</span> <span class="o">=</span> <span class="n">slates_vw</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">generate_slates_text_format</span><span class="p">(</span><span class="n">shared_context</span><span class="p">))</span>
@@ -627,52 +708,12 @@
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>creating features for following interactions: SA UAS US UA
-using no cache
-Reading datafile = stdin
-num sources = 1
-Num weight bits = 18
-learning rate = 0.05
-initial_t = 0
-power_t = 0
-Enabled reductions: gd, generate_interactions, scorer-identity, csoaa_ldf-rank, cb_adf, cb_explore_adf_greedy, cb_sample, shared_feature_merger, ccb_explore_adf, slates
-Input label = slates
-Output pred = decision_probs
-average  since         example        example  current  current  current
-loss     last          counter         weight    label  predict features
-    n.a.     n.a.            1            1.0  ?,?,... 0,0,0,...      293
--0.839477 -0.839477            2            2.0  0,0,... 0,0,0,...      293
--0.744249 -0.649021            4            4.0  0,1,... 0,1,0,...      293
--0.657526 -0.570803            8            8.0  0,0,... 0,0,0,...      293
--0.671756 -0.685985           16           16.0  0,1,... 0,1,0,...      293
--0.657950 -0.644144           32           32.0  0,0,... 0,0,1,...      293
--0.710712 -0.763474           64           64.0  1,1,... 1,1,1,...      293
--0.686169 -0.661625          128          128.0  2,1,... 2,1,0,...      293
--0.761163 -0.836157          256          256.0  2,0,... 2,0,1,...      293
--0.809697 -0.858232          512          512.0  1,1,... 1,1,0,...      293
--0.858916 -0.908134         1024         1024.0  1,1,... 1,1,0,...      293
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.888059 -0.917202         2048         2048.0  2,0,... 2,0,3,...      293
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.909982 -0.931905         4096         4096.0  2,2,... 2,2,3,...      293
-
-finished run
-number of examples = 5000
-weighted example sum = 5000.000000
-weighted label sum = 0.000000
-average loss = -0.906285
-total feature number = 1465000
-</pre></div>
-</div>
-</div>
 </div>
 </section>
+</section>
 <section id="contextual-bandit">
-<h2>Contextual Bandit<a class="headerlink" href="#contextual-bandit" title="Permalink to this headline">¶</a></h2>
-<p>This involves expanding out <em>all</em> possible combinations.</p>
+<h3>Contextual Bandit<a class="headerlink" href="#contextual-bandit" title="Permalink to this headline">¶</a></h3>
+<p>Let’s try to solve the same problem by using CB with combinatorial actions:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">generate_combinations</span><span class="p">(</span><span class="n">shared_context</span><span class="p">,</span> <span class="n">torso_items</span><span class="p">,</span> <span class="n">legs_items</span><span class="p">,</span> <span class="n">feet_items</span><span class="p">):</span>
@@ -683,7 +724,7 @@ total feature number = 1465000
             <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">feet</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">feet_items</span><span class="p">):</span>
                 <span class="n">examples</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;|Action torso=</span><span class="si">{</span><span class="n">torso</span><span class="si">}</span><span class="s2"> legs=</span><span class="si">{</span><span class="n">legs</span><span class="si">}</span><span class="s2"> feet=</span><span class="si">{</span><span class="n">feet</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
                 <span class="n">descriptions</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">,</span><span class="n">k</span><span class="p">))</span>
-                
+
     <span class="k">return</span> <span class="n">examples</span><span class="p">,</span> <span class="n">descriptions</span>
 
 <span class="k">def</span> <span class="nf">sample_custom_pmf</span><span class="p">(</span><span class="n">pmf</span><span class="p">):</span>
@@ -696,13 +737,8 @@ total feature number = 1465000
         <span class="n">sum_prob</span> <span class="o">+=</span> <span class="n">prob</span>
         <span class="k">if</span><span class="p">(</span><span class="n">sum_prob</span> <span class="o">&gt;</span> <span class="n">draw</span><span class="p">):</span>
             <span class="k">return</span> <span class="n">index</span><span class="p">,</span> <span class="n">prob</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cb_vw</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--cb_explore_adf --epsilon 0.2 --interactions AA AU AAU -l 0.05 --power_t 0&quot;</span><span class="p">)</span>
+
+<span class="n">cb_vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--cb_explore_adf --epsilon 0.2 --interactions AA AU AAU -l 0.05 --power_t 0&quot;</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
 <span class="n">cb_rewards</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">NUM_ITERATIONS</span><span class="p">):</span>
@@ -720,60 +756,12 @@ total feature number = 1465000
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>creating features for following interactions: AA AU AAU
-using no cache
-Reading datafile = stdin
-num sources = 1
-Num weight bits = 18
-learning rate = 0.05
-initial_t = 0
-power_t = 0
-Enabled reductions: gd, scorer-identity, csoaa_ldf-rank, cb_adf, cb_explore_adf_greedy, shared_feature_merger
-Input label = cb
-Output pred = action_probs
-average  since         example        example  current  current  current
-loss     last          counter         weight    label  predict features
-    n.a.     n.a.            1            1.0  unknown        0:0.0277778...      720
--0.777275 -0.777275            2            2.0 33:-0.78:0.028        0:0.0277778...      720
--0.841775 -0.906275            4            4.0 33:-0.91:0.81       33:0.805556...      720
--0.739189 -0.636603            8            8.0 10:-0.43:0.81       10:0.805556...      720
--0.680554 -0.621919           16           16.0 29:-0.8:0.0056       10:0.805556...      720
--0.555686 -0.430818           32           32.0 9:-0.76:0.81        9:0.805556...      720
--0.715145 -0.874604           64           64.0 33:-0.92:0.81       33:0.805556...      720
--0.762956 -0.810767          128          128.0 17:-0.87:0.81 
-</pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[warning] Some interactions contain duplicate characters and their characters order has been changed. Interactions affected: 1.
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>      17:0.805556...      720
--0.803402 -0.843848          256          256.0 17:-1.1:0.81       17:0.805556...      720
--0.846263 -0.889123          512          512.0 17:-1.1:0.81       17:0.805556...      720
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.865207 -0.884151         1024         1024.0 27:-1:0.81       27:0.805556...      720
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.875377 -0.885547         2048         2048.0 16:-1.2:0.81       16:0.805556...      720
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>-0.899153 -0.922929         4096         4096.0 27:-1.1:0.81       27:0.805556...      720
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>finished run
-number of examples = 5000
-weighted example sum = 5000.000000
-weighted label sum = 0.000000
-average loss = -0.900378
-total feature number = 3600000
-</pre></div>
-</div>
-</div>
-</div>
+</section>
 </section>
 <section id="comparison">
 <h2>Comparison<a class="headerlink" href="#comparison" title="Permalink to this headline">¶</a></h2>
+<p>Let’s plot the two runs so we can compare the result:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">cb_rewards</span><span class="p">)</span><span class="o">.</span><span class="n">expanding</span><span class="p">()</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
@@ -785,12 +773,22 @@ total feature number = 3600000
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7fc269726640&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f0e6b7739a0&gt;
 </pre></div>
 </div>
-<img alt="../_images/python_slates_12_1.png" src="../_images/python_slates_12_1.png" />
+<img alt="../_images/python_slates_15_1.png" src="../_images/python_slates_15_1.png" />
 </div>
 </div>
+<p>As we can see, Slates learns a better policy with lower regret.</p>
+</section>
+<section id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h2>
+<p>In this tutorial, we learned what Slates is, how to use it with VW and how it compares to solving the same problem with Contextual Bandits.</p>
+<p>For further information, visit the following links:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/VowpalWabbit/vowpal_wabbit/wiki/Slates">Slate input format</a></p></li>
+<li><p><a class="reference external" href="https://github.com/adith387/slates_semisynth_expts">Examples from the original publication</a></p></li>
+</ul>
 </section>
 </section>
 
