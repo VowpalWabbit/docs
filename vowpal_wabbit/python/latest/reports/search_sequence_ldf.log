@@ -89,19 +89,39 @@ print('should have printed: [1, 2, 3, 1, 2]')
 [0;31m---------------------------------------------------------------------------[0m
 [0;31mRuntimeError[0m                              Traceback (most recent call last)
 Input [0;32mIn [1][0m, in [0;36m<module>[0;34m[0m
-[1;32m     48[0m         [38;5;28;01mreturn[39;00m output
-[1;32m     50[0m [38;5;66;03m# initialize VW as usual, but use 'hook' as the search_task[39;00m
-[0;32m---> 51[0m vw [38;5;241m=[39m [43mpyvw[49m[38;5;241;43m.[39;49m[43mWorkspace[49m[43m([49m[38;5;124;43m"[39;49m[38;5;124;43m--search 0 --csoaa_ldf m --quiet --search_task hook --ring_size 1024[39;49m[38;5;124;43m"[39;49m[43m)[49m
-[1;32m     53[0m [38;5;66;03m# tell VW to construct your search task object[39;00m
-[1;32m     54[0m sequenceLabeler [38;5;241m=[39m vw[38;5;241m.[39minit_search_task(SequenceLabeler)
+[1;32m     58[0m i [38;5;241m=[39m [38;5;241m0[39m
+[1;32m     59[0m [38;5;28;01mwhile[39;00m i [38;5;241m<[39m [38;5;241m10[39m:
+[0;32m---> 60[0m     [43msequenceLabeler[49m[38;5;241;43m.[39;49m[43mlearn[49m[43m([49m[43mmy_dataset[49m[43m)[49m
+[1;32m     61[0m     i [38;5;241m+[39m[38;5;241m=[39m [38;5;241m1[39m
+[1;32m     63[0m [38;5;66;03m# now see the predictions on a test sentence[39;00m
 
-File [0;32m/usr/local/lib/python3.9/site-packages/vowpalwabbit/pyvw.py:451[0m, in [0;36mWorkspace.__init__[0;34m(self, arg_str, enable_logging, **kw)[0m
-[1;32m    449[0m     [38;5;28msuper[39m()[38;5;241m.[39m[38;5;21m__init__[39m([38;5;124m"[39m[38;5;124m [39m[38;5;124m"[39m[38;5;241m.[39mjoin(l), [38;5;28mself[39m[38;5;241m.[39m_log_wrapper)
-[1;32m    450[0m [38;5;28;01melse[39;00m:
-[0;32m--> 451[0m     [38;5;28;43msuper[39;49m[43m([49m[43m)[49m[38;5;241;43m.[39;49m[38;5;21;43m__init__[39;49m[43m([49m[38;5;124;43m"[39;49m[38;5;124;43m [39;49m[38;5;124;43m"[39;49m[38;5;241;43m.[39;49m[43mjoin[49m[43m([49m[43ml[49m[43m)[49m[43m)[49m
-[1;32m    452[0m [38;5;28mself[39m[38;5;241m.[39minit [38;5;241m=[39m [38;5;28;01mTrue[39;00m
-[1;32m    454[0m [38;5;66;03m# check to see if native parser needs to run[39;00m
+File [0;32m/usr/local/lib/python3.9/site-packages/vowpalwabbit/pyvw.py:260[0m, in [0;36mSearchTask.learn[0;34m(self, data_iterator)[0m
+[1;32m    245[0m [38;5;124;03m"""Train search task by providing an iterator of examples.[39;00m
+[1;32m    246[0m 
+[1;32m    247[0m [38;5;124;03mParameters[39;00m
+[0;32m   (...)[0m
+[1;32m    257[0m 
+[1;32m    258[0m [38;5;124;03m"""[39;00m
+[1;32m    259[0m [38;5;28;01mfor[39;00m my_example [38;5;129;01min[39;00m data_iterator[38;5;241m.[39m[38;5;21m__iter__[39m():
+[0;32m--> 260[0m     [38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43m_call_vw[49m[43m([49m[43mmy_example[49m[43m,[49m[43m [49m[43misTest[49m[38;5;241;43m=[39;49m[38;5;28;43;01mFalse[39;49;00m[43m)[49m
 
-[0;31mRuntimeError[0m: Tried to use a multiline reduction as a singleline reduction. Name: shared_feature_merger
-RuntimeError: Tried to use a multiline reduction as a singleline reduction. Name: shared_feature_merger
+File [0;32m/usr/local/lib/python3.9/site-packages/vowpalwabbit/pyvw.py:240[0m, in [0;36mSearchTask._call_vw[0;34m(self, my_example, isTest, useOracle)[0m
+[1;32m    238[0m [38;5;28mself[39m[38;5;241m.[39msch[38;5;241m.[39mset_structured_predict_hook(run, setup, takedown)
+[1;32m    239[0m [38;5;28mself[39m[38;5;241m.[39msch[38;5;241m.[39mset_force_oracle(useOracle)
+[0;32m--> 240[0m [38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43mvw[49m[38;5;241;43m.[39;49m[43mlearn[49m[43m([49m
+[1;32m    241[0m [43m    [49m[38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43mbogus_example[49m
+[1;32m    242[0m [43m[49m[43m)[49m
+
+File [0;32m/usr/local/lib/python3.9/site-packages/vowpalwabbit/pyvw.py:646[0m, in [0;36mWorkspace.learn[0;34m(self, ec)[0m
+[1;32m    643[0m     pylibvw[38;5;241m.[39mvw[38;5;241m.[39mlearn([38;5;28mself[39m, ec)
+[1;32m    645[0m [38;5;28;01melif[39;00m [38;5;28misinstance[39m(ec, [38;5;28mlist[39m):
+[0;32m--> 646[0m     [43mpylibvw[49m[38;5;241;43m.[39;49m[43mvw[49m[38;5;241;43m.[39;49m[43mlearn_multi[49m[43m([49m[38;5;28;43mself[39;49m[43m,[49m[43m [49m[43mec[49m[43m)[49m
+[1;32m    648[0m [38;5;28;01melse[39;00m:
+[1;32m    649[0m     [38;5;28;01mraise[39;00m [38;5;167;01mTypeError[39;00m(
+[1;32m    650[0m         [38;5;124m"[39m[38;5;124mexpecting string or example object as ec argument for learn,[39m[38;5;124m"[39m
+[1;32m    651[0m         [38;5;124m"[39m[38;5;124m got [39m[38;5;132;01m%s[39;00m[38;5;124m"[39m [38;5;241m%[39m [38;5;28mtype[39m(ec)
+[1;32m    652[0m     )
+
+[0;31mRuntimeError[0m: Exception in 'search_run_fn'
+RuntimeError: Exception in 'search_run_fn'
 

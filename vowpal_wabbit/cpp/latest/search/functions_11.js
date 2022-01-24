@@ -50,7 +50,6 @@ var searchData=
   ['set_5finput_5flabel_5ftype',['set_input_label_type',['../structVW_1_1LEARNER_1_1common__learner__builder.html#a20a162864c9b7de3389d8c4ad78ab431',1,'VW::LEARNER::common_learner_builder']]],
   ['set_5finput_5flength',['set_input_length',['../classSearch_1_1predictor.html#a1612ec614efb49942d270bab6266208c',1,'Search::predictor']]],
   ['set_5finput_5fprediction_5ftype',['set_input_prediction_type',['../structVW_1_1LEARNER_1_1common__learner__builder.html#a2887ffcccc30ddd4f930b426921a6765',1,'VW::LEARNER::common_learner_builder']]],
-  ['set_5fis_5fldf',['set_is_ldf',['../structSearch_1_1search.html#a30707f7fa124f8b6eed084e313ea9f24',1,'Search::search']]],
   ['set_5flabel_5ffeatures',['set_label_features',['../namespaceLabelDict.html#aff2b89f2a906bf4d20eafbbbc19c2063',1,'LabelDict']]],
   ['set_5flabel_5fparser',['set_label_parser',['../structSearch_1_1search.html#a6a71c5113f0447920bc674a33e752966',1,'Search::search']]],
   ['set_5flearn',['set_learn',['../structVW_1_1LEARNER_1_1common__learner__builder.html#a2dd965c0263c9a65cf675bf1f3f00fbc',1,'VW::LEARNER::common_learner_builder']]],
