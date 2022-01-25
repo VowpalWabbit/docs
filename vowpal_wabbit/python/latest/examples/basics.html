@@ -524,7 +524,7 @@ learn(ec: Union[ForwardRef(&#39;Example&#39;), List[ForwardRef(&#39;Example&#39;
     Perform an online update
     
     Args:
-        ec: examples on which the model gets updated
+        ec: Examples on which the model gets updated. If using a single object the learner must be a single line learner. If using a list of objects the learner must be a multiline learner. If passing strings they are parsed using :py:meth:`~vowpalwabbit.Workspace.parse` before being learned from. If passing Example objects then they must be given to :py:meth:`~vowpalwabbit.Workspace.finish_example` at a later point.
 </pre></div>
 </div>
 </div>
