@@ -516,8 +516,7 @@
 <p>For any vw project in python, we have to start by importing the pyvw library:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">print_function</span>
-<span class="kn">from</span> <span class="nn">vowpalwabbit</span> <span class="kn">import</span> <span class="n">pyvw</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">vowpalwabbit</span>
 </pre></div>
 </div>
 </div>
@@ -547,6 +546,11 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[(2, &#39;it&#39;), (3, &#39;ate&#39;), (2, &#39;it&#39;), (4, &#39;all&#39;)]
+</pre></div>
+</div>
+</div>
 </div>
 <p>Here we have an example of a (correctly) tagged sentence.</p>
 <p>Now, we need to write the structured prediction code. To do this, we have to write a new class that derives from the <code class="docutils literal notranslate"><span class="pre">pyvw.SearchTask</span></code> class.</p>
@@ -556,12 +560,12 @@
 <p>Here is a basic implementation of sequence labeling:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">SequenceLabeler</span><span class="p">(</span><span class="n">pyvw</span><span class="o">.</span><span class="n">SearchTask</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">SequenceLabeler</span><span class="p">(</span><span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">pyvw</span><span class="o">.</span><span class="n">SearchTask</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vw</span><span class="p">,</span> <span class="n">sch</span><span class="p">,</span> <span class="n">num_actions</span><span class="p">):</span>
         <span class="c1"># you must must must initialize the parent class</span>
         <span class="c1"># this will automatically store self.sch &lt;- sch, self.vw &lt;- vw</span>
-        <span class="n">pyvw</span><span class="o">.</span><span class="n">SearchTask</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vw</span><span class="p">,</span> <span class="n">sch</span><span class="p">,</span> <span class="n">num_actions</span><span class="p">)</span>
-        
+        <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">pyvw</span><span class="o">.</span><span class="n">SearchTask</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vw</span><span class="p">,</span> <span class="n">sch</span><span class="p">,</span> <span class="n">num_actions</span><span class="p">)</span>
+
         <span class="c1"># set whatever options you want</span>
         <span class="n">sch</span><span class="o">.</span><span class="n">set_options</span><span class="p">(</span> <span class="n">sch</span><span class="o">.</span><span class="n">AUTO_HAMMING_LOSS</span> <span class="o">|</span> <span class="n">sch</span><span class="o">.</span><span class="n">AUTO_CONDITION_FEATURES</span> <span class="p">)</span>
 
@@ -592,7 +596,7 @@
 <p>Now, we’re ready to train the model. We do this in three steps. First, we initialize a vw object, telling it that we have a <code class="docutils literal notranslate"><span class="pre">--search</span></code> task with 4 labels, second that the specific type of <code class="docutils literal notranslate"><span class="pre">--search_task</span></code> is <code class="docutils literal notranslate"><span class="pre">hook</span></code> (you will always use the <code class="docutils literal notranslate"><span class="pre">hook</span></code> task) and finally that we want it to be quiet and use a larger <code class="docutils literal notranslate"><span class="pre">ring_size</span></code> (you can ignore the <code class="docutils literal notranslate"><span class="pre">ring_size</span></code> for now).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vw</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--search 4 --audit --quiet --search_task hook --ring_size 1024&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--search 4 --search_task hook&quot;</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -622,12 +626,22 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[(1, &#39;the&#39;), (1, &#39;sandwich&#39;), (1, &#39;ate&#39;), (1, &#39;a&#39;), (1, &#39;monster&#39;)]
+</pre></div>
+</div>
+</div>
 </div>
 <p>We’ve used <code class="docutils literal notranslate"><span class="pre">0</span></code> as the labels so you can be sure that vw isn’t cheating and it’s actually making predictions:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">out</span> <span class="o">=</span> <span class="n">sequenceLabeler</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">test_example</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">out</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1, 2, 3, 1, 2]
 </pre></div>
 </div>
 </div>
@@ -638,9 +652,9 @@
 <p>In the above example we used both AUTO_HAMMING_LOSS and AUTO_CONDITION_FEATURES. To make more explicit what these are doing, let’s rewrite our <code class="docutils literal notranslate"><span class="pre">SequenceLabeler</span></code> class without them! Here’s a version that gets rid of both simultaneously. It is only modestly more complex:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">SequenceLabeler2</span><span class="p">(</span><span class="n">pyvw</span><span class="o">.</span><span class="n">SearchTask</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">SequenceLabeler2</span><span class="p">(</span><span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">pyvw</span><span class="o">.</span><span class="n">SearchTask</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vw</span><span class="p">,</span> <span class="n">sch</span><span class="p">,</span> <span class="n">num_actions</span><span class="p">):</span>
-        <span class="n">pyvw</span><span class="o">.</span><span class="n">SearchTask</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vw</span><span class="p">,</span> <span class="n">sch</span><span class="p">,</span> <span class="n">num_actions</span><span class="p">)</span>
+        <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">pyvw</span><span class="o">.</span><span class="n">SearchTask</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vw</span><span class="p">,</span> <span class="n">sch</span><span class="p">,</span> <span class="n">num_actions</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">_run</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sentence</span><span class="p">):</span>
         <span class="n">output</span> <span class="o">=</span> <span class="p">[]</span>
@@ -665,6 +679,11 @@
 <span class="n">sequenceLabeler2</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">init_search_task</span><span class="p">(</span><span class="n">SequenceLabeler2</span><span class="p">)</span>
 <span class="n">sequenceLabeler2</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">my_dataset</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">sequenceLabeler2</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span> <span class="p">[(</span><span class="mi">1</span><span class="p">,</span><span class="n">w</span><span class="p">)</span> <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="s2">&quot;the sandwich ate a monster&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">()]</span> <span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1, 2, 3, 1, 2]
 </pre></div>
 </div>
 </div>
@@ -706,9 +725,9 @@
 <p>The basic idea of a Covington-style dependency parser is to loop over all O(N^2) word pairs and ask if one is the parent of the other. In a real parser you would want to make sure that you don’t have cycles, that you have a unique root and (perhaps) that the resulting graph is projective. I’m not doing that here. Hopefully I’ll add a shift-reduce parser example later that <em>does</em> do this. Here’s an implementation of this idea:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CovingtonDepParser</span><span class="p">(</span><span class="n">pyvw</span><span class="o">.</span><span class="n">SearchTask</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CovingtonDepParser</span><span class="p">(</span><span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">pyvw</span><span class="o">.</span><span class="n">SearchTask</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vw</span><span class="p">,</span> <span class="n">sch</span><span class="p">,</span> <span class="n">num_actions</span><span class="p">):</span>
-        <span class="n">pyvw</span><span class="o">.</span><span class="n">SearchTask</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vw</span><span class="p">,</span> <span class="n">sch</span><span class="p">,</span> <span class="n">num_actions</span><span class="p">)</span>
+        <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">pyvw</span><span class="o">.</span><span class="n">SearchTask</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vw</span><span class="p">,</span> <span class="n">sch</span><span class="p">,</span> <span class="n">num_actions</span><span class="p">)</span>
         <span class="n">sch</span><span class="o">.</span><span class="n">set_options</span><span class="p">(</span> <span class="n">sch</span><span class="o">.</span><span class="n">AUTO_HAMMING_LOSS</span> <span class="o">|</span> <span class="n">sch</span><span class="o">.</span><span class="n">AUTO_CONDITION_FEATURES</span> <span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">_run</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sentence</span><span class="p">):</span>
@@ -749,13 +768,20 @@
 <p>We can train and run this parser with:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vw</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--search 2 --quiet --search_task hook --ring_size 1024&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--search 2 --search_task hook&quot;</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">task</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">init_search_task</span><span class="p">(</span><span class="n">CovingtonDepParser</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span> <span class="c1"># do ten passes over the training data</span>
     <span class="n">task</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">my_dataset</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;testing&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">task</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span> <span class="p">[(</span><span class="n">w</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="s2">&quot;the monster ate a sandwich&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">()]</span> <span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;should have printed [ 1 2 -1 4 2 ]&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>testing
+[1, 2, -1, 4, 2]
+should have printed [ 1 2 -1 4 2 ]
 </pre></div>
 </div>
 </div>
@@ -770,9 +796,9 @@
 <p>Here’s a re-implementation of Covington using LDF:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CovingtonDepParserLDF</span><span class="p">(</span><span class="n">pyvw</span><span class="o">.</span><span class="n">SearchTask</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CovingtonDepParserLDF</span><span class="p">(</span><span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">pyvw</span><span class="o">.</span><span class="n">SearchTask</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vw</span><span class="p">,</span> <span class="n">sch</span><span class="p">,</span> <span class="n">num_actions</span><span class="p">):</span>
-        <span class="n">pyvw</span><span class="o">.</span><span class="n">SearchTask</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vw</span><span class="p">,</span> <span class="n">sch</span><span class="p">,</span> <span class="n">num_actions</span><span class="p">)</span>
+        <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">pyvw</span><span class="o">.</span><span class="n">SearchTask</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vw</span><span class="p">,</span> <span class="n">sch</span><span class="p">,</span> <span class="n">num_actions</span><span class="p">)</span>
         <span class="n">sch</span><span class="o">.</span><span class="n">set_options</span><span class="p">(</span> <span class="n">sch</span><span class="o">.</span><span class="n">AUTO_HAMMING_LOSS</span> <span class="o">|</span> <span class="n">sch</span><span class="o">.</span><span class="n">IS_LDF</span> <span class="o">|</span> <span class="n">sch</span><span class="o">.</span><span class="n">AUTO_CONDITION_FEATURES</span> <span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">makeExample</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sentence</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">m</span><span class="p">):</span>
@@ -830,7 +856,7 @@
 <p>Given all this, we can now train and test our parser:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vw</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--search 0 --csoaa_ldf m --search_task hook --ring_size 1024 --quiet&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--search 0 --csoaa_ldf m --search_task hook&quot;</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">task</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">init_search_task</span><span class="p">(</span><span class="n">CovingtonDepParserLDF</span><span class="p">)</span>
 <span class="c1">#BUG: This currently does not work because oracle generation is incorrect (generates invalid oracle values)#for p in range(2): # do two passes over the training data</span>
 <span class="c1">#    task.learn(my_dataset)</span>
@@ -878,9 +904,9 @@
 <p>And now we can define our structured prediction task. This is also an LDF problem. Basically for each word on the English side, we’ll loop over all possible phrases on the Foreign side to which it could align (maximum phrase length of three). For each of these options we’ll create an example to be fed into the LDF classifier. We also ensure that the same foreign word cannot be covered by multiple English words, though this might not be a good idea in general.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">WordAligner</span><span class="p">(</span><span class="n">pyvw</span><span class="o">.</span><span class="n">SearchTask</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">WordAligner</span><span class="p">(</span><span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">pyvw</span><span class="o">.</span><span class="n">SearchTask</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vw</span><span class="p">,</span> <span class="n">sch</span><span class="p">,</span> <span class="n">num_actions</span><span class="p">):</span>
-        <span class="n">pyvw</span><span class="o">.</span><span class="n">SearchTask</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vw</span><span class="p">,</span> <span class="n">sch</span><span class="p">,</span> <span class="n">num_actions</span><span class="p">)</span>
+        <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">pyvw</span><span class="o">.</span><span class="n">SearchTask</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vw</span><span class="p">,</span> <span class="n">sch</span><span class="p">,</span> <span class="n">num_actions</span><span class="p">)</span>
         <span class="n">sch</span><span class="o">.</span><span class="n">set_options</span><span class="p">(</span> <span class="n">sch</span><span class="o">.</span><span class="n">AUTO_HAMMING_LOSS</span> <span class="o">|</span> <span class="n">sch</span><span class="o">.</span><span class="n">IS_LDF</span> <span class="o">|</span> <span class="n">sch</span><span class="o">.</span><span class="n">AUTO_CONDITION_FEATURES</span> <span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">makeExample</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">E</span><span class="p">,</span> <span class="n">F</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">j0</span><span class="p">,</span> <span class="n">l</span><span class="p">):</span>
@@ -948,7 +974,7 @@
 <p>We can train and test this model to make sure it does the right thing:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vw</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--search 0 --csoaa_ldf m --search_task hook --ring_size 1024 --quiet -q ef -q ep&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--search 0 --csoaa_ldf m --search_task hook -q ef -q ep&quot;</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">task</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">init_search_task</span><span class="p">(</span><span class="n">WordAligner</span><span class="p">)</span>
 <span class="c1"># BUG: This is currently broken due to incorrect oracle generation. Currently under investigation.#for p in range(10):</span>
 <span class="c1">#    task.learn(my_dataset)</span>

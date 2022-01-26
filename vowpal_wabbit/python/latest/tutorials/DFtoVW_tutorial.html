@@ -644,7 +644,7 @@
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
 
-<span class="kn">from</span> <span class="nn">vowpalwabbit.DFtoVW</span> <span class="kn">import</span> <span class="n">DFtoVW</span>
+<span class="kn">from</span> <span class="nn">vowpalwabbit.dftovw</span> <span class="kn">import</span> <span class="n">DFtoVW</span>
 <span class="kn">from</span> <span class="nn">vowpalwabbit</span> <span class="kn">import</span> <span class="n">Workspace</span>
 </pre></div>
 </div>
@@ -842,143 +842,6 @@
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Importing file: PM_DATA/ShanghaiPM20100101_20151231.csv
-Importing file: PM_DATA/ShenyangPM20100101_20151231.csv
-Importing file: PM_DATA/ChengduPM20100101_20151231.csv
-Importing file: PM_DATA/GuangzhouPM20100101_20151231.csv
-Importing file: PM_DATA/BeijingPM20100101_20151231.csv
-</pre></div>
-</div>
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>year</th>
-      <th>month</th>
-      <th>day</th>
-      <th>hour</th>
-      <th>season</th>
-      <th>PM</th>
-      <th>DEWP</th>
-      <th>HUMI</th>
-      <th>PRES</th>
-      <th>TEMP</th>
-      <th>cbwd</th>
-      <th>Iws</th>
-      <th>precipitation</th>
-      <th>Iprec</th>
-      <th>city</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>2011</td>
-      <td>9</td>
-      <td>27</td>
-      <td>2</td>
-      <td>3.0</td>
-      <td>226.0</td>
-      <td>13.0</td>
-      <td>87.00</td>
-      <td>1017.0</td>
-      <td>15.000000</td>
-      <td>SE</td>
-      <td>41.13</td>
-      <td>0.0</td>
-      <td>0.000000</td>
-      <td>beijing</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>2013</td>
-      <td>6</td>
-      <td>26</td>
-      <td>2</td>
-      <td>2.0</td>
-      <td>51.0</td>
-      <td>17.0</td>
-      <td>82.89</td>
-      <td>1000.0</td>
-      <td>20.000000</td>
-      <td>SE</td>
-      <td>1.00</td>
-      <td>8.8</td>
-      <td>10.900000</td>
-      <td>shenyang</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>2013</td>
-      <td>11</td>
-      <td>16</td>
-      <td>19</td>
-      <td>3.0</td>
-      <td>102.0</td>
-      <td>5.0</td>
-      <td>48.03</td>
-      <td>1019.0</td>
-      <td>16.000000</td>
-      <td>SW</td>
-      <td>3.00</td>
-      <td>0.0</td>
-      <td>0.000000</td>
-      <td>shanghai</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>2015</td>
-      <td>5</td>
-      <td>20</td>
-      <td>16</td>
-      <td>1.0</td>
-      <td>13.0</td>
-      <td>0.0</td>
-      <td>14.00</td>
-      <td>1012.0</td>
-      <td>30.000000</td>
-      <td>NW</td>
-      <td>4.92</td>
-      <td>0.0</td>
-      <td>0.000000</td>
-      <td>beijing</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>2015</td>
-      <td>5</td>
-      <td>9</td>
-      <td>15</td>
-      <td>1.0</td>
-      <td>7.0</td>
-      <td>22.1</td>
-      <td>91.00</td>
-      <td>1000.0</td>
-      <td>23.700001</td>
-      <td>SE</td>
-      <td>1.70</td>
-      <td>1.5</td>
-      <td>35.700001</td>
-      <td>guangzhou</td>
-    </tr>
-  </tbody>
-</table>
-</div></div></div>
 </div>
 <br>
 The full label of some features (the non obvious ones):
@@ -1000,26 +863,6 @@ The full label of some features (the non obvious ones):
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">dtypes</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>year               int64
-month              int64
-day                int64
-hour               int64
-season           float64
-PM               float64
-DEWP             float64
-HUMI             float64
-PRES             float64
-TEMP             float64
-cbwd              object
-Iws              float64
-precipitation    float64
-Iprec            float64
-city              object
-dtype: object
 </pre></div>
 </div>
 </div>
@@ -1062,40 +905,6 @@ dtype: object
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>index</th>
-      <th>variable</th>
-      <th>corr</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>55</th>
-      <td>Iprec</td>
-      <td>precipitation</td>
-      <td>0.999998</td>
-    </tr>
-  </tbody>
-</table>
-</div></div></div>
 </div>
 <p>We drop the <code class="docutils literal notranslate"><span class="pre">Iprec</span></code> variable since it is almost perfectly correlated with the <code class="docutils literal notranslate"><span class="pre">precipitation</span></code> variable.</p>
 <div class="cell docutils container">
@@ -1132,26 +941,11 @@ dtype: object
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>label: PM
-features: [&#39;year&#39;, &#39;month&#39;, &#39;day&#39;, &#39;hour&#39;, &#39;season&#39;, &#39;DEWP&#39;, &#39;HUMI&#39;, &#39;PRES&#39;, &#39;TEMP&#39;, &#39;cbwd&#39;, &#39;Iws&#39;, &#39;precipitation&#39;, &#39;city&#39;]
-</pre></div>
-</div>
-</div>
 </div>
 <p>We can inspect the first few examples:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">examples</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;226.0 | year=2011 month=9 day=27 hour=2 season=3.0 DEWP:0.08959465332461863 HUMI:0.3882591675380959 PRES:0.33023244897304604 TEMP:-0.09454293289813515 cbwd=SE Iws:0.3992336466478102 precipitation:-0.0025309449430064965 city=beijing&#39;,
- &#39;51.0 | year=2013 month=6 day=26 hour=2 season=2.0 DEWP:0.16859123637869186 HUMI:0.3127123038886084 PRES:-1.3551226813011634 TEMP:0.3627977627323019 cbwd=SE Iws:-0.4485512843970286 precipitation:0.001016342077488344 city=shenyang&#39;,
- &#39;102.0 | year=2013 month=11 day=16 hour=19 season=3.0 DEWP:-0.06839851278352785 HUMI:-0.32805744472967246 PRES:0.5285095231229531 TEMP:-0.003074793772047733 cbwd=SW Iws:-0.4062993566100942 precipitation:-0.0025309449430064965 city=shanghai&#39;,
- &#39;13.0 | year=2015 month=5 day=20 hour=16 season=1.0 DEWP:-0.1671442416011194 HUMI:-0.9535707707618039 PRES:-0.16546023640172142 TEMP:1.277479153993176 cbwd=NW Iws:-0.36573750593463716 precipitation:-0.0025309449430064965 city=beijing&#39;,
- &#39;7.0 | year=2015 month=5 day=9 hour=15 season=1.0 DEWP:0.26931188727731065 HUMI:0.4617840956641178 PRES:-1.3551226813011634 TEMP:0.7012299470146112 cbwd=SE Iws:-0.4337631086575553 precipitation:-0.0019262937463312396 city=guangzhou&#39;]
 </pre></div>
 </div>
 </div>
@@ -1171,12 +965,6 @@ features: [&#39;year&#39;, &#39;month&#39;, &#39;day&#39;, &#39;hour&#39;, &#39;
 <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">e</span><span class="p">))</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;ValueError&#39;&gt;
-In &#39;Feature&#39;: column(s) &#39;COLUMN_NOT_IN_DF&#39; not found in dataframe.
 </pre></div>
 </div>
 </div>
@@ -1211,49 +999,11 @@ In &#39;Feature&#39;: column(s) &#39;COLUMN_NOT_IN_DF&#39; not found in datafram
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;Num weight bits = 18\n&#39;,
- &#39;learning rate = 0.5\n&#39;,
- &#39;initial_t = 0\n&#39;,
- &#39;power_t = 0.5\n&#39;,
- &#39;using no cache\n&#39;,
- &#39;Reading datafile = \n&#39;,
- &#39;num sources = 1\n&#39;,
- &#39;Enabled reductions: gd, scorer\n&#39;,
- &#39;average  since         example        example  current  current  current\n&#39;,
- &#39;loss     last          counter         weight    label  predict features\n&#39;,
- &#39;51076.000000 51076.000000            1            1.0 226.0000   0.0000       14\n&#39;,
- &#39;26838.500000 2601.000000            2            2.0  51.0000   0.0000       14\n&#39;,
- &#39;21342.025716 10349.077148            3            3.0 102.0000   0.2696       14\n&#39;,
- &#39;16048.769287 169.000000            4            4.0  13.0000   0.0000       14\n&#39;,
- &#39;12846.064875 35.247227            5            5.0   7.0000   1.0631       14\n&#39;,
- &#39;10843.260626 829.239380            6            6.0  30.0000   1.2035       14\n&#39;,
- &#39;9308.463007 99.677292            7            7.0  11.0000   1.0161       14\n&#39;,
- &#39;11939.431742 30356.212891            8            8.0 175.0000   0.7697       14\n&#39;,
- &#39;10640.592718 249.880524            9            9.0  17.0000   1.1924       14\n&#39;,
- &#39;9759.436229 1829.027832           10           10.0  44.0000   1.2329       14\n&#39;]
-</pre></div>
-</div>
-</div>
 </div>
 <br>
 And the last 10 lines:<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">get_log</span><span class="p">()[</span><span class="o">-</span><span class="mi">10</span><span class="p">:]</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;4165.377903 1177.436157       167357       167357.0  27.0000  61.3138       14\n&#39;,
- &#39;4165.371186 3041.161621       167358       167358.0  27.0000  82.1467       14\n&#39;,
- &#39;\n&#39;,
- &#39;finished run\n&#39;,
- &#39;number of examples = 167358\n&#39;,
- &#39;weighted example sum = 167358.000000\n&#39;,
- &#39;weighted label sum = 12331595.000000\n&#39;,
- &#39;average loss = 4165.371186\n&#39;,
- &#39;best constant = 73.683929\n&#39;,
- &#39;total feature number = 2336281\n&#39;]
 </pre></div>
 </div>
 </div>
@@ -1289,175 +1039,6 @@ And the last 10 lines:<div class="cell docutils container">
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Model&#39;s parameters
-</pre></div>
-</div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;Num weight bits&#39;: 18,
- &#39;learning rate&#39;: 0.5,
- &#39;initial_t&#39;: 0,
- &#39;power_t&#39;: 0.5,
- &#39;Reading datafile&#39;: &#39;&#39;,
- &#39;num sources&#39;: 1,
- &#39;Enabled reductions&#39;: &#39;gd, scorer&#39;}
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Information at each iteration
-</pre></div>
-</div>
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>average_loss</th>
-      <th>since_last</th>
-      <th>example_counter</th>
-      <th>example_weight</th>
-      <th>current_label</th>
-      <th>current_predict</th>
-      <th>current_features</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>51076.000000</td>
-      <td>51076.000000</td>
-      <td>1</td>
-      <td>1.0</td>
-      <td>226.0</td>
-      <td>0.0000</td>
-      <td>14</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>26838.500000</td>
-      <td>2601.000000</td>
-      <td>2</td>
-      <td>2.0</td>
-      <td>51.0</td>
-      <td>0.0000</td>
-      <td>14</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>21342.025716</td>
-      <td>10349.077148</td>
-      <td>3</td>
-      <td>3.0</td>
-      <td>102.0</td>
-      <td>0.2696</td>
-      <td>14</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>16048.769287</td>
-      <td>169.000000</td>
-      <td>4</td>
-      <td>4.0</td>
-      <td>13.0</td>
-      <td>0.0000</td>
-      <td>14</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>12846.064875</td>
-      <td>35.247227</td>
-      <td>5</td>
-      <td>5.0</td>
-      <td>7.0</td>
-      <td>1.0631</td>
-      <td>14</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>167353</th>
-      <td>4165.421788</td>
-      <td>978.738098</td>
-      <td>167354</td>
-      <td>167354.0</td>
-      <td>42.0</td>
-      <td>73.2848</td>
-      <td>14</td>
-    </tr>
-    <tr>
-      <th>167354</th>
-      <td>4165.402167</td>
-      <td>881.800232</td>
-      <td>167355</td>
-      <td>167355.0</td>
-      <td>110.0</td>
-      <td>80.3049</td>
-      <td>14</td>
-    </tr>
-    <tr>
-      <th>167355</th>
-      <td>4165.395757</td>
-      <td>3092.619873</td>
-      <td>167356</td>
-      <td>167356.0</td>
-      <td>27.0</td>
-      <td>82.6113</td>
-      <td>14</td>
-    </tr>
-    <tr>
-      <th>167356</th>
-      <td>4165.377903</td>
-      <td>1177.436157</td>
-      <td>167357</td>
-      <td>167357.0</td>
-      <td>27.0</td>
-      <td>61.3138</td>
-      <td>14</td>
-    </tr>
-    <tr>
-      <th>167357</th>
-      <td>4165.371186</td>
-      <td>3041.161621</td>
-      <td>167358</td>
-      <td>167358.0</td>
-      <td>27.0</td>
-      <td>82.1467</td>
-      <td>14</td>
-    </tr>
-  </tbody>
-</table>
-<p>167358 rows × 7 columns</p>
-</div></div><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Summary metrics
-</pre></div>
-</div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;number of examples&#39;: 167358,
- &#39;weighted example sum&#39;: 167358,
- &#39;weighted label sum&#39;: 12331595,
- &#39;average loss&#39;: 4165.371186,
- &#39;best constant&#39;: 73.683929,
- &#39;total feature number&#39;: 2336281}
-</pre></div>
-</div>
-</div>
 </div>
 </section>
 <section id="visualizing-the-average-loss-and-the-distribution-of-selected-metrics">
@@ -1475,9 +1056,6 @@ And the last 10 lines:<div class="cell docutils container">
 <span class="n">g</span><span class="o">.</span><span class="n">fig</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../_images/DFtoVW_tutorial_40_0.png" src="../_images/DFtoVW_tutorial_40_0.png" />
 </div>
 </div>
 <p>In what follows, we consider the metrics recorded after the  50 000th iteration.</p>
@@ -1500,9 +1078,6 @@ And the last 10 lines:<div class="cell docutils container">
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../_images/DFtoVW_tutorial_43_0.png" src="../_images/DFtoVW_tutorial_43_0.png" />
 </div>
 </div>
 <p>We notice that the distribution of the predictions differs substantially from the one of the labels.</p>
@@ -1536,9 +1111,6 @@ And the last 10 lines:<div class="cell docutils container">
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../_images/DFtoVW_tutorial_45_0.png" src="../_images/DFtoVW_tutorial_45_0.png" />
 </div>
 </div>
 <p>The model tends to undervalue the concentration of PM. Another way to see it is that the distribution of errors (difference between the label and the prediction) has a right-skewed.</p>
@@ -1577,9 +1149,6 @@ And the last 10 lines:<div class="cell docutils container">
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../_images/DFtoVW_tutorial_50_0.png" src="../_images/DFtoVW_tutorial_50_0.png" />
-</div>
 </div>
 <p>Based on the weights learnt by the model, the predicted value for PM will be higher:</p>
 <ul class="simple">
@@ -1612,9 +1181,6 @@ And the last 10 lines:<div class="cell docutils container">
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../_images/DFtoVW_tutorial_52_0.png" src="../_images/DFtoVW_tutorial_52_0.png" />
 </div>
 </div>
 <p>Higher cumulated wind speed (Iws) and higher temperature (TEMP) are associated with lower predicted values.</p>
@@ -1652,9 +1218,6 @@ And the last 10 lines:<div class="cell docutils container">
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../_images/DFtoVW_tutorial_58_0.png" src="../_images/DFtoVW_tutorial_58_0.png" />
 </div>
 </div>
 <p>We decide to train the model on the log transformed version of the target (called <code class="docutils literal notranslate"><span class="pre">log_PM</span></code>).</p>
@@ -1707,41 +1270,12 @@ And the last 10 lines:<div class="cell docutils container">
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>namespace: datetime_ns
-	feature: year
-	feature: month
-	feature: day
-	feature: hour
-	feature: season
-namespace: weather_ns
-	feature: DEWP
-	feature: HUMI
-	feature: PRES
-	feature: TEMP
-	feature: cbwd
-	feature: Iws
-	feature: precipitation
-namespace: city_ns
-	feature: city
-</pre></div>
-</div>
-</div>
 </div>
 <p>We can inspect the first few examples:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">examples_advanced</span> <span class="o">=</span> <span class="n">converter_advanced</span><span class="o">.</span><span class="n">convert_df</span><span class="p">()</span>
 <span class="n">examples_advanced</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;5.420534999272286 |datetime_ns year=2011 month=9 day=27 hour=2 season=3.0 |weather_ns DEWP:0.08959465332461863 HUMI:0.3882591675380959 PRES:0.33023244897304604 TEMP:-0.09454293289813515 cbwd=SE Iws:0.3992336466478102 precipitation:-0.0025309449430064965 |city_ns city=beijing&#39;,
- &#39;3.9318256327243257 |datetime_ns year=2013 month=6 day=26 hour=2 season=2.0 |weather_ns DEWP:0.16859123637869186 HUMI:0.3127123038886084 PRES:-1.3551226813011634 TEMP:0.3627977627323019 cbwd=SE Iws:-0.4485512843970286 precipitation:0.001016342077488344 |city_ns city=shenyang&#39;,
- &#39;4.624972813284271 |datetime_ns year=2013 month=11 day=16 hour=19 season=3.0 |weather_ns DEWP:-0.06839851278352785 HUMI:-0.32805744472967246 PRES:0.5285095231229531 TEMP:-0.003074793772047733 cbwd=SW Iws:-0.4062993566100942 precipitation:-0.0025309449430064965 |city_ns city=shanghai&#39;,
- &#39;2.5649493574615367 |datetime_ns year=2015 month=5 day=20 hour=16 season=1.0 |weather_ns DEWP:-0.1671442416011194 HUMI:-0.9535707707618039 PRES:-0.16546023640172142 TEMP:1.277479153993176 cbwd=NW Iws:-0.36573750593463716 precipitation:-0.0025309449430064965 |city_ns city=beijing&#39;,
- &#39;1.9459101490553132 |datetime_ns year=2015 month=5 day=9 hour=15 season=1.0 |weather_ns DEWP:0.26931188727731065 HUMI:0.4617840956641178 PRES:-1.3551226813011634 TEMP:0.7012299470146112 cbwd=SE Iws:-0.4337631086575553 precipitation:-0.0019262937463312396 |city_ns city=guangzhou&#39;]
 </pre></div>
 </div>
 </div>
@@ -1804,9 +1338,6 @@ namespace: city_ns
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../_images/DFtoVW_tutorial_73_0.png" src="../_images/DFtoVW_tutorial_73_0.png" />
-</div>
 </div>
 <br>
 <p>In this new model, the distribution of the predictions is more in line with the distribution of the labels.</p>
@@ -1840,9 +1371,6 @@ namespace: city_ns
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../_images/DFtoVW_tutorial_75_0.png" src="../_images/DFtoVW_tutorial_75_0.png" />
 </div>
 </div>
 <p>The model with interactions and log-transformed target offers substantial improvements over the simple model: the <strong>loss</strong> (computed on the last 10 000 observations) <strong>decreases by about 23%</strong>.</p>

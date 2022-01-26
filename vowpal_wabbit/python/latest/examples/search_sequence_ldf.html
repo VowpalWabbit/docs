@@ -536,7 +536,7 @@
         <span class="k">return</span> <span class="n">output</span>
 
 <span class="c1"># initialize VW as usual, but use &#39;hook&#39; as the search_task</span>
-<span class="n">vw</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--search 0 --csoaa_ldf m --quiet --search_task hook --ring_size 1024&quot;</span><span class="p">)</span>
+<span class="n">vw</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--search 0 --csoaa_ldf m --search_task hook&quot;</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
 <span class="c1"># tell VW to construct your search task object</span>
 <span class="n">sequenceLabeler</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">init_search_task</span><span class="p">(</span><span class="n">SequenceLabeler</span><span class="p">)</span>
@@ -557,9 +557,7 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>training!
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1, 2, 3, 1, 2]
+[1, 2, 3, 1, 2]
 should have printed: [1, 2, 3, 1, 2]
 </pre></div>
 </div>

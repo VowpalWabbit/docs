@@ -484,8 +484,8 @@
                 
   <section class="tex2jax_ignore mathjax_ignore" id="python-basics">
 <h1>Python Basics<a class="headerlink" href="#python-basics" title="Permalink to this headline">¶</a></h1>
-<p>This notebook demonstrates the most basic capabilities of the <code class="docutils literal notranslate"><span class="pre">pyvw</span></code> Python-&gt;VW interface.</p>
-<p>Any pyvw application needs to begin by importing <a class="reference internal" href="../reference/vowpalwabbit.pyvw.html#module-vowpalwabbit.pyvw" title="vowpalwabbit.pyvw"><code class="xref py py-mod docutils literal notranslate"><span class="pre">vowpalwabbit.pyvw</span></code></a></p>
+<p>This notebook demonstrates the most basic capabilities of the <code class="docutils literal notranslate"><span class="pre">vowpalwabit</span></code> Python interface.</p>
+<p>Any application using the Python package needs to begin by importing <a class="reference internal" href="../reference/vowpalwabbit.html#module-vowpalwabbit" title="vowpalwabbit"><code class="xref py py-mod docutils literal notranslate"><span class="pre">vowpalwabbit</span></code></a>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">vowpalwabbit</span>
@@ -493,7 +493,7 @@
 </div>
 </div>
 </div>
-<p>One we’ve imported <code class="docutils literal notranslate"><span class="pre">pyvw</span></code>, we can initialize VW either by passing a command line string (e.g., <code class="docutils literal notranslate"><span class="pre">&quot;--quiet</span> <span class="pre">-q</span> <span class="pre">ab</span> <span class="pre">--l2</span> <span class="pre">0.01&quot;</span></code>) or, in a more python-friendly manner, providing those as named arguments. Here we do the latter.</p>
+<p>One we’ve imported <code class="docutils literal notranslate"><span class="pre">vowpalwabbit</span></code>, we can initialize VW either by passing a command line string (e.g., <code class="docutils literal notranslate"><span class="pre">&quot;--quiet</span> <span class="pre">-q</span> <span class="pre">ab</span> <span class="pre">--l2</span> <span class="pre">0.01&quot;</span></code>) or, in a more python-friendly manner, providing those as named arguments. Here we do the latter.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">q</span><span class="o">=</span><span class="s1">&#39;ab&#39;</span><span class="p">,</span> <span class="n">l2</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span>
@@ -547,10 +547,9 @@ learn(ec: Union[ForwardRef(&#39;Example&#39;), List[ForwardRef(&#39;Example&#39;
 <p>Okay, so the prediction isn’t quite where we want it yet. Let’s learn a few more times and then print the prediction.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vw</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
-<span class="n">vw</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
-<span class="n">vw</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
-<span class="n">vw</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+    <span class="n">vw</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
+
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;current prediction = </span><span class="si">{</span><span class="n">ex</span><span class="o">.</span><span class="n">get_updated_prediction</span><span class="p">()</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -591,11 +590,9 @@ learn(ec: Union[ForwardRef(&#39;Example&#39;), List[ForwardRef(&#39;Example&#39;
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ex2</span><span class="o">.</span><span class="n">set_label_string</span><span class="p">(</span><span class="s1">&#39;-2.0&#39;</span><span class="p">)</span>
-<span class="n">vw</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">ex2</span><span class="p">)</span>
-<span class="n">vw</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">ex2</span><span class="p">)</span>
-<span class="n">vw</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">ex2</span><span class="p">)</span>
-<span class="n">vw</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">ex2</span><span class="p">)</span>
-<span class="n">vw</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">ex2</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+    <span class="n">vw</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">ex2</span><span class="p">)</span>
+
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;current prediction = </span><span class="si">{</span><span class="n">ex2</span><span class="o">.</span><span class="n">get_updated_prediction</span><span class="p">()</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -676,8 +673,7 @@ ex2 prediction = 0.0
 </div>
 </div>
 </div>
-<p>This is the end of the intro. For more, look at <code class="docutils literal notranslate"><span class="pre">test.py</span></code> in the <code class="docutils literal notranslate"><span class="pre">python</span></code> directory of the VW distribution; this contains some more examples. For even more, look at the python docs in <code class="docutils literal notranslate"><span class="pre">pyvw.py</span></code>, for instance <code class="docutils literal notranslate"><span class="pre">help(pyvw.vw)</span></code> and so on!</p>
-<p>Happy VW-Pythoning!</p>
+<p>This is the end of the intro. For more, check out the docs for the main module <a class="reference internal" href="../reference/vowpalwabbit.html#module-vowpalwabbit" title="vowpalwabbit"><code class="xref py py-mod docutils literal notranslate"><span class="pre">vowpalwabbit</span></code></a>.</p>
 </section>
 
     <script type="text/x-thebe-config">
