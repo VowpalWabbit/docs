@@ -17,6 +17,7 @@ var searchData=
   ['version_5ffile_5fwith_5fheader_5fid',['VERSION_FILE_WITH_HEADER_ID',['../namespaceVW_1_1version__definitions.html#a8c5221a9bf715dc0df86f0fbcd0a99c8',1,'VW::version_definitions']]],
   ['version_5ffile_5fwith_5finteractions',['VERSION_FILE_WITH_INTERACTIONS',['../namespaceVW_1_1version__definitions.html#a1269cea08858ced6cae96849c47c3792',1,'VW::version_definitions']]],
   ['version_5ffile_5fwith_5finteractions_5fin_5ffo',['VERSION_FILE_WITH_INTERACTIONS_IN_FO',['../namespaceVW_1_1version__definitions.html#a9fa9134120cf31e95f814f8e05ed3ee0',1,'VW::version_definitions']]],
+  ['version_5ffile_5fwith_5fl1_5fand_5fl2_5fstate_5fin_5fmodel_5fdata',['VERSION_FILE_WITH_L1_AND_L2_STATE_IN_MODEL_DATA',['../namespaceVW_1_1version__definitions.html#a7f3383259ac5aed567e3683c5ddd4e9a',1,'VW::version_definitions']]],
   ['version_5ffile_5fwith_5frank_5fin_5fheader',['VERSION_FILE_WITH_RANK_IN_HEADER',['../namespaceVW_1_1version__definitions.html#a2847783741ce31539a5a991a37b2562f',1,'VW::version_definitions']]],
   ['version_5ffile_5fwith_5freg_5fcb_5fsave_5fresume',['VERSION_FILE_WITH_REG_CB_SAVE_RESUME',['../namespaceVW_1_1version__definitions.html#a567d2a3aec80618d6659c9843cc6577b',1,'VW::version_definitions']]],
   ['version_5ffile_5fwith_5fsquare_5fcb_5fsave_5fresume',['VERSION_FILE_WITH_SQUARE_CB_SAVE_RESUME',['../namespaceVW_1_1version__definitions.html#a5cec48da29ff1277a021024aef2aaab5',1,'VW::version_definitions']]],
