@@ -82,10 +82,12 @@ $(function() {
 <code>#include &quot;<a class="el" href="learner_8h.html">learner.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="array__parameters__dense_8h.html">array_parameters_dense.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="scored__config_8h.html">scored_config.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="vw__string__view_8h.html">vw_string_view.h</a>&quot;</code><br />
 <code>#include &lt;map&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;set&gt;</code><br />
 <code>#include &lt;queue&gt;</code><br />
+<code>#include &lt;fmt/format.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -98,6 +100,10 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1automl_1_1interaction__config__manager.html">VW::automl::interaction_config_manager</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1automl_1_1automl.html">VW::automl::automl&lt; CMType &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfmt_1_1formatter_3_01VW_1_1automl_1_1automl__state_01_4.html">fmt::formatter&lt; VW::automl::automl_state &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfmt_1_1formatter_3_01VW_1_1automl_1_1config__state_01_4.html">fmt::formatter&lt; VW::automl::config_state &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -139,6 +145,10 @@ Functions</h2></td></tr>
 <tr class="separator:a84e3ff65bcb03f398c790b721f7bf89a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d73727f81ddbfe7e5634d536dca8ea2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1automl_1_1details.html#a2d73727f81ddbfe7e5634d536dca8ea2">VW::automl::details::fail_if_enabled</a> (<a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;, const std::set&lt; std::string &gt; &amp;)</td></tr>
 <tr class="separator:a2d73727f81ddbfe7e5634d536dca8ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe933710eaaaf36de183fc19cfb84cbc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceVW.html#a85aa9dc51ef86f7e832147b1c0c93d72">VW::string_view</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#afe933710eaaaf36de183fc19cfb84cbc">VW::to_string</a> (automl::automl_state state)</td></tr>
+<tr class="separator:afe933710eaaaf36de183fc19cfb84cbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6cb09b1dfad4a3bb807835f8654e1df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceVW.html#a85aa9dc51ef86f7e832147b1c0c93d72">VW::string_view</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ac6cb09b1dfad4a3bb807835f8654e1df">VW::to_string</a> (automl::config_state state)</td></tr>
+<tr class="separator:ac6cb09b1dfad4a3bb807835f8654e1df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa150c35bd9efb471e9b16e826ef6288f"><td class="memTemplParams" colspan="2">template&lt;typename CMType &gt; </td></tr>
 <tr class="memitem:aa150c35bd9efb471e9b16e826ef6288f"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1model__utils.html#aa150c35bd9efb471e9b16e826ef6288f">VW::model_utils::write_model_field</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;, const <a class="el" href="structVW_1_1automl_1_1automl.html">VW::automl::automl</a>&lt; CMType &gt; &amp;, const std::string &amp;, bool)</td></tr>
 <tr class="separator:aa150c35bd9efb471e9b16e826ef6288f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,7 +180,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 28 2022 19:42:19 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jan 31 2022 17:46:48 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
