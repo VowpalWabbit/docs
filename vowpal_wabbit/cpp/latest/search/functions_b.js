@@ -4,7 +4,7 @@ var searchData=
   ['make_5fbase_5flearner',['make_base_learner',['../namespaceVW_1_1LEARNER.html#a484a02f9e0497820c15def786a29264e',1,'VW::LEARNER']]],
   ['make_5fno_5fdata_5fbase_5flearner',['make_no_data_base_learner',['../namespaceVW_1_1LEARNER.html#a6b843e709da14c961d84e06a42ff5a1d',1,'VW::LEARNER']]],
   ['make_5fno_5fdata_5freduction_5flearner',['make_no_data_reduction_learner',['../namespaceVW_1_1LEARNER.html#a252cb604083a65666b1bccb0529b8924',1,'VW::LEARNER']]],
-  ['make_5foption',['make_option',['../namespaceVW_1_1config.html#a346f383b4c3ea9f2f6828ecfa6593f66',1,'VW::config']]],
+  ['make_5foption',['make_option',['../namespaceVW_1_1config.html#a346f383b4c3ea9f2f6828ecfa6593f66',1,'VW::config::make_option(const std::string &amp;name, T &amp;location)'],['../namespaceVW_1_1config.html#a096bcef54bd1b2b29fddc7bee3832987',1,'VW::config::make_option(const std::string &amp;name)']]],
   ['make_5freduction_5flearner',['make_reduction_learner',['../namespaceVW_1_1LEARNER.html#a49999d9dc5b7fa848058419c7c7626f0',1,'VW::LEARNER']]],
   ['make_5funique',['make_unique',['../namespaceVW.html#a76aaae1b56188dc3bfd7d9971d3802e1',1,'VW']]],
   ['marginal_5fsetup',['marginal_setup',['../marginal_8h.html#ac85713701e9811993b6610485f93291c',1,'marginal.h']]],
