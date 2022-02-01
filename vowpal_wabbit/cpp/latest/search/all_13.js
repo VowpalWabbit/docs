@@ -241,7 +241,7 @@ var searchData=
   ['sum_5fnamespaces',['sum_namespaces',['../structVW_1_1cb__explore__adf_1_1cb__explore__metrics.html#af8e0095334269048c8ea23c48aee9a77',1,'VW::cb_explore_adf::cb_explore_metrics']]],
   ['summarize_5fholdout_5fset',['summarize_holdout_set',['../simple__label_8h.html#a1f008fdec4c9c16ad05f52f3bd3e0be6',1,'simple_label.h']]],
   ['super',['super',['../structVW_1_1LEARNER_1_1reduction__learner__builder.html#ae0de9506b08615b7e10bbe85c957bc80',1,'VW::LEARNER::reduction_learner_builder::super()'],['../structVW_1_1LEARNER_1_1reduction__no__data__learner__builder.html#a906e5d9ab291304f9c8cdf05cb124954',1,'VW::LEARNER::reduction_no_data_learner_builder::super()'],['../structVW_1_1LEARNER_1_1base__learner__builder.html#a4188788256a0d9481bb5ab58f5007c98',1,'VW::LEARNER::base_learner_builder::super()']]],
-  ['supported_5foptions_5ftypes',['supported_options_types',['../namespaceVW_1_1config.html#a02cf476155c97a5f44f6ec43e6f3eded',1,'VW::config']]],
+  ['supported_5foptions_5ftypes',['supported_options_types',['../namespaceVW_1_1config.html#a20a00a91ddf93993505b9c632c1962b7',1,'VW::config']]],
   ['svrg_2eh',['svrg.h',['../svrg_8h.html',1,'']]],
   ['svrg_5fsetup',['svrg_setup',['../svrg_8h.html#a642d84f39752af394dfdfb34b92cc53b',1,'svrg.h']]],
   ['swap',['swap',['../classaudit__features__iterator.html#a502f653e52f0e7834af4ab51537dc02f',1,'audit_features_iterator::swap()'],['../classfeatures__iterator.html#a566ea0516d309f8c174d2e1a04dda00d',1,'features_iterator::swap()']]],

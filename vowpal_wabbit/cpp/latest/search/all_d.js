@@ -19,7 +19,7 @@ var searchData=
   ['make_5findex_5fsequence_3c_200_2c_20integers_2e_2e_2e_20_3e',['make_index_sequence&lt; 0, Integers... &gt;',['../structVW_1_1details_1_1make__index__sequence_3_010_00_01Integers_8_8_8_01_4.html',1,'VW::details']]],
   ['make_5fno_5fdata_5fbase_5flearner',['make_no_data_base_learner',['../namespaceVW_1_1LEARNER.html#a6b843e709da14c961d84e06a42ff5a1d',1,'VW::LEARNER']]],
   ['make_5fno_5fdata_5freduction_5flearner',['make_no_data_reduction_learner',['../namespaceVW_1_1LEARNER.html#a252cb604083a65666b1bccb0529b8924',1,'VW::LEARNER']]],
-  ['make_5foption',['make_option',['../namespaceVW_1_1config.html#a346f383b4c3ea9f2f6828ecfa6593f66',1,'VW::config::make_option(const std::string &amp;name, T &amp;location)'],['../namespaceVW_1_1config.html#a096bcef54bd1b2b29fddc7bee3832987',1,'VW::config::make_option(const std::string &amp;name)']]],
+  ['make_5foption',['make_option',['../namespaceVW_1_1config.html#a346f383b4c3ea9f2f6828ecfa6593f66',1,'VW::config']]],
   ['make_5freduction_5flearner',['make_reduction_learner',['../namespaceVW_1_1LEARNER.html#a49999d9dc5b7fa848058419c7c7626f0',1,'VW::LEARNER']]],
   ['make_5funique',['make_unique',['../namespaceVW.html#a76aaae1b56188dc3bfd7d9971d3802e1',1,'VW']]],
   ['marginal_2eh',['marginal.h',['../marginal_8h.html',1,'']]],
