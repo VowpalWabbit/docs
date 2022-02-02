@@ -65,6 +65,7 @@ var searchData=
   ['type',['type',['../structCCB_1_1label.html#aeb312b579a5debb8537f8c433643c759',1,'CCB::label::type()'],['../structCCB_1_1reduction__features.html#ab6533591a593cdffe7e084881713f41f',1,'CCB::reduction_features::type()'],['../structVW_1_1slates_1_1label.html#a3534b1caf54bde6f345dc0fd94379778',1,'VW::slates::label::type()']]],
   ['type_5fhash',['type_hash',['../structVW_1_1config_1_1typed__option.html#af75aac6192cabac91008572cde768049',1,'VW::config::typed_option']]],
   ['typed_5foption',['typed_option',['../structVW_1_1config_1_1typed__option.html',1,'VW::config::typed_option&lt; T &gt;'],['../structVW_1_1config_1_1typed__option.html#a68cf7610208fdd4116cf9c4c707ec697',1,'VW::config::typed_option::typed_option()']]],
+  ['typed_5foption_5fvisitor',['typed_option_visitor',['../structVW_1_1config_1_1typed__option__visitor.html',1,'VW::config']]],
   ['typed_5foption_5fwith_5flocation',['typed_option_with_location',['../structVW_1_1config_1_1typed__option__with__location.html',1,'VW::config::typed_option_with_location&lt; T &gt;'],['../structVW_1_1config_1_1typed__option__with__location.html#a72c62aa3e0fb12562e96e51de34f66cf',1,'VW::config::typed_option_with_location::typed_option_with_location()']]],
   ['typelist',['typelist',['../structVW_1_1config_1_1typelist.html',1,'VW::config']]]
 ];

@@ -1,6 +1,7 @@
 var searchData=
 [
   ['a_5fs_5fpred_5fto_5fstring',['a_s_pred_to_string',['../example_8h.html#a38dcebb4f1c43e354e97c75fa9552f28',1,'example.h']]],
+  ['accept',['accept',['../structVW_1_1config_1_1base__option.html#a2cb0de0f2a79dc79491e513f45544c21',1,'VW::config::base_option::accept()'],['../structVW_1_1config_1_1typed__option.html#a194138ce24ea698b2683219ea45a4d89',1,'VW::config::typed_option::accept()']]],
   ['accumulate',['accumulate',['../accumulate_8h.html#a9c81db5bfb143b1ee5cbaf3fd2ba16bb',1,'accumulate.h']]],
   ['accumulate_5favg',['accumulate_avg',['../accumulate_8h.html#ae7d1a422f4d4275e1d80eb34c9dd7c80',1,'accumulate.h']]],
   ['accumulate_5fscalar',['accumulate_scalar',['../accumulate_8h.html#aa94d955c8579488573bac30da3e04bc2',1,'accumulate.h']]],
