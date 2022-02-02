@@ -356,6 +356,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a68c70a944575aab16671c0e4ecded5e2"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a68c70a944575aab16671c0e4ecded5e2">decode_inline_hex</a> (<a class="el" href="namespaceVW.html#a85aa9dc51ef86f7e832147b1c0c93d72">VW::string_view</a> arg, <a class="el" href="structVW_1_1io_1_1logger.html">VW::io::logger</a> &amp;logger)</td></tr>
 <tr class="memdesc:a68c70a944575aab16671c0e4ecded5e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace hex sequences in a string with their corresponding byte. A hex sequence must only contain two digits and must be in the form .  <a href="#a68c70a944575aab16671c0e4ecded5e2">More...</a><br /></td></tr>
 <tr class="separator:a68c70a944575aab16671c0e4ecded5e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaedcd615754cddd49edc4e3f98c6d603"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#aaedcd615754cddd49edc4e3f98c6d603">wrap_text</a> (<a class="el" href="namespaceVW.html#a85aa9dc51ef86f7e832147b1c0c93d72">VW::string_view</a> text, size_t width)</td></tr>
+<tr class="memdesc:aaedcd615754cddd49edc4e3f98c6d603"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrap text by whole words with the given column width.  <a href="#aaedcd615754cddd49edc4e3f98c6d603">More...</a><br /></td></tr>
+<tr class="separator:aaedcd615754cddd49edc4e3f98c6d603"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a26c5125e2b6aa1902d5c7a3fccf888"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structVW_1_1version__struct.html">version_struct</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a1a26c5125e2b6aa1902d5c7a3fccf888">version</a> (VW_VERSION_MAJOR, VW_VERSION_MINOR, VW_VERSION_PATCH)</td></tr>
 <tr class="separator:a1a26c5125e2b6aa1902d5c7a3fccf888"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27ced230ebb1071b5c5d162236b7afa5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVW_1_1workspace.html">VW::workspace</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a27ced230ebb1071b5c5d162236b7afa5">initialize</a> (std::unique_ptr&lt; <a class="el" href="structVW_1_1config_1_1options__i.html">config::options_i</a>, <a class="el" href="global__data_8h.html#a6a9836137e68daba98511b4fd85f2654">options_deleter_type</a> &gt; options, <a class="el" href="classio__buf.html">io_buf</a> *model=nullptr, bool skip_model_load=false, <a class="el" href="error__reporting_8h.html#a98d6d6ac9c0371b98232d6c04df7ee99">trace_message_t</a> trace_listener=nullptr, void *trace_context=nullptr)</td></tr>
@@ -4271,6 +4274,44 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="aaedcd615754cddd49edc4e3f98c6d603"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaedcd615754cddd49edc4e3f98c6d603">&#9670;&nbsp;</a></span>wrap_text()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string VW::wrap_text </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceVW.html#a85aa9dc51ef86f7e832147b1c0c93d72">VW::string_view</a>&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>width</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wrap text by whole words with the given column width. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>text to wrap </td></tr>
+    <tr><td class="paramname">width</td><td>column width to wrap to </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::string copy of string with required newlines </dd></dl>
+
+</div>
+</div>
 <a id="adb098b696c5d4ffb0bea3005932c991d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adb098b696c5d4ffb0bea3005932c991d">&#9670;&nbsp;</a></span>write_example_to_cache()</h2>
 
@@ -4335,7 +4376,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 2 2022 19:42:40 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 2 2022 21:04:46 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
