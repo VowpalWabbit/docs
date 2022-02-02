@@ -84,14 +84,16 @@ Inheritance diagram for VW::config::options_i:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a93c0de6c3ad57f6fb57441af2c908ba5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1options__i.html#a93c0de6c3ad57f6fb57441af2c908ba5">add_and_parse</a> (const <a class="el" href="structVW_1_1config_1_1option__group__definition.html">option_group_definition</a> &amp;group)=0</td></tr>
-<tr class="separator:a93c0de6c3ad57f6fb57441af2c908ba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6444475c24889f2a20f2df7473ba73e7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1options__i.html#a6444475c24889f2a20f2df7473ba73e7">internal_add_and_parse</a> (const <a class="el" href="structVW_1_1config_1_1option__group__definition.html">option_group_definition</a> &amp;group)=0</td></tr>
+<tr class="separator:a6444475c24889f2a20f2df7473ba73e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58de60af39721dc86899fa870005deda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1options__i.html#a58de60af39721dc86899fa870005deda">add_and_parse</a> (const <a class="el" href="structVW_1_1config_1_1option__group__definition.html">option_group_definition</a> &amp;group)</td></tr>
+<tr class="separator:a58de60af39721dc86899fa870005deda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa07bba08b3165b0df050402bf88f920b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1options__i.html#aa07bba08b3165b0df050402bf88f920b">add_parse_and_check_necessary</a> (const <a class="el" href="structVW_1_1config_1_1option__group__definition.html">option_group_definition</a> &amp;group)</td></tr>
+<tr class="separator:aa07bba08b3165b0df050402bf88f920b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cad1f07848c2aba9ec4c503bb1c2527"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1options__i.html#a4cad1f07848c2aba9ec4c503bb1c2527">tint</a> (const std::string &amp;reduction_name)=0</td></tr>
 <tr class="separator:a4cad1f07848c2aba9ec4c503bb1c2527"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdc66d936603b9ee6dec26f80b829be6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1options__i.html#abdc66d936603b9ee6dec26f80b829be6">reset_tint</a> ()=0</td></tr>
 <tr class="separator:abdc66d936603b9ee6dec26f80b829be6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace1759c334832db08c7e4d7d922809a0"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1options__i.html#ace1759c334832db08c7e4d7d922809a0">add_parse_and_check_necessary</a> (const <a class="el" href="structVW_1_1config_1_1option__group__definition.html">option_group_definition</a> &amp;group)=0</td></tr>
-<tr class="separator:ace1759c334832db08c7e4d7d922809a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a673e4a143e22c4e2ff8c30dfaab9fd68"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1options__i.html#a673e4a143e22c4e2ff8c30dfaab9fd68">was_supplied</a> (const std::string &amp;key) const =0</td></tr>
 <tr class="separator:a673e4a143e22c4e2ff8c30dfaab9fd68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a126d126a40231ce81a2a637a39839897"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1options__i.html#a126d126a40231ce81a2a637a39839897">help</a> (const std::vector&lt; std::string &gt; &amp;enabled_reductions) const =0</td></tr>
@@ -150,59 +152,39 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a93c0de6c3ad57f6fb57441af2c908ba5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93c0de6c3ad57f6fb57441af2c908ba5">&#9670;&nbsp;</a></span>add_and_parse()</h2>
+<a id="a58de60af39721dc86899fa870005deda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58de60af39721dc86899fa870005deda">&#9670;&nbsp;</a></span>add_and_parse()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void VW::config::options_i::add_and_parse </td>
+          <td class="memname">void VW::config::options_i::add_and_parse </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structVW_1_1config_1_1option__group__definition.html">option_group_definition</a> &amp;&#160;</td>
           <td class="paramname"><em>group</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="structVW_1_1config_1_1options__name__extractor.html#a93fc781336dce8b84b4d81ca6a7f016a">VW::config::options_name_extractor</a>, and <a class="el" href="structVW_1_1config_1_1options__boost__po.html#a1d3cdf07fbf5afc766d133b3e80f246d">VW::config::options_boost_po</a>.</p>
-
 </div>
 </div>
-<a id="ace1759c334832db08c7e4d7d922809a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace1759c334832db08c7e4d7d922809a0">&#9670;&nbsp;</a></span>add_parse_and_check_necessary()</h2>
+<a id="aa07bba08b3165b0df050402bf88f920b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa07bba08b3165b0df050402bf88f920b">&#9670;&nbsp;</a></span>add_parse_and_check_necessary()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool VW::config::options_i::add_parse_and_check_necessary </td>
+          <td class="memname">bool VW::config::options_i::add_parse_and_check_necessary </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structVW_1_1config_1_1option__group__definition.html">option_group_definition</a> &amp;&#160;</td>
           <td class="paramname"><em>group</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="structVW_1_1config_1_1options__name__extractor.html#a38c4ac1991ab52dff1d56895867e00a8">VW::config::options_name_extractor</a>, and <a class="el" href="structVW_1_1config_1_1options__boost__po.html#accba646656d7e7931050b24e73df25c8">VW::config::options_boost_po</a>.</p>
 
 </div>
 </div>
@@ -520,6 +502,34 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a6444475c24889f2a20f2df7473ba73e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6444475c24889f2a20f2df7473ba73e7">&#9670;&nbsp;</a></span>internal_add_and_parse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void VW::config::options_i::internal_add_and_parse </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structVW_1_1config_1_1option__group__definition.html">option_group_definition</a> &amp;&#160;</td>
+          <td class="paramname"><em>group</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="structVW_1_1config_1_1options__name__extractor.html#a0a86864296cb9b89eb3bc800e4a612be">VW::config::options_name_extractor</a>, and <a class="el" href="structVW_1_1config_1_1options__boost__po.html#a1639ffed22af877e74db5407d9284f3a">VW::config::options_boost_po</a>.</p>
+
+</div>
+</div>
 <a id="ab0b20f09ba0a920bac5b8e9dde165f8a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab0b20f09ba0a920bac5b8e9dde165f8a">&#9670;&nbsp;</a></span>replace()</h2>
 
@@ -647,7 +657,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 2 2022 15:42:51 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 2 2022 19:42:40 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -198,6 +198,7 @@ var searchData=
   ['constexpr_5fnegative_5fint_5fpow10',['constexpr_negative_int_pow10',['../namespaceVW_1_1details.html#a00f89d94c130db70248d92c279b9780f',1,'VW::details']]],
   ['constexpr_5fnegative_5fint_5fpow10_5fwith_5foffset',['constexpr_negative_int_pow10_with_offset',['../namespaceVW_1_1details.html#ab6ae5a8a298fa337a11f73c58392378f',1,'VW::details']]],
   ['cont_5flabel_5felement',['cont_label_element',['../classLabelObjectState.html#a66fd2e82164d7c6ee2743166f01f3345',1,'LabelObjectState']]],
+  ['contains_5fnecessary_5foptions',['contains_necessary_options',['../structVW_1_1config_1_1option__group__definition.html#a88a152dc45a6aa1c61c91c99a61dacfd',1,'VW::config::option_group_definition']]],
   ['contains_5fwildcard',['contains_wildcard',['../namespaceINTERACTIONS.html#ab425e1173c73259e20bc610f381204f4',1,'INTERACTIONS::contains_wildcard(const std::vector&lt; namespace_index &gt; &amp;interaction)'],['../namespaceINTERACTIONS.html#a5d94141d12f6bca7e1b7343e5951b891',1,'INTERACTIONS::contains_wildcard(const std::vector&lt; extent_term &gt; &amp;interaction)']]],
   ['context',['Context',['../structContext.html',1,'Context&lt; audit &gt;'],['../structContext.html#a64d619664771771e6300aee4e9dcf8bb',1,'Context::Context()']]],
   ['continuous',['continuous',['../namespaceVW.html#adf253bc5d95217ce3aadf6e2421dafd2ad2884efee751eb4746b685827c7efcd9',1,'VW']]],
