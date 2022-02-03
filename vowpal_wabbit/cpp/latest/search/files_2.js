@@ -31,6 +31,7 @@ var searchData=
   ['ccb_5flabel_2eh',['ccb_label.h',['../ccb__label_8h.html',1,'']]],
   ['ccb_5freduction_5ffeatures_2eh',['ccb_reduction_features.h',['../ccb__reduction__features_8h.html',1,'']]],
   ['classweight_2eh',['classweight.h',['../classweight_8h.html',1,'']]],
+  ['cli_5fhelp_5fformatter_2eh',['cli_help_formatter.h',['../cli__help__formatter_8h.html',1,'']]],
   ['compat_2eh',['compat.h',['../compat_8h.html',1,'']]],
   ['conditional_5fcontextual_5fbandit_2eh',['conditional_contextual_bandit.h',['../conditional__contextual__bandit_8h.html',1,'']]],
   ['confidence_2eh',['confidence.h',['../confidence_8h.html',1,'']]],

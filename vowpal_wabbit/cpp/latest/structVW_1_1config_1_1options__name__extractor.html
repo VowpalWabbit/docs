@@ -92,8 +92,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7d3d69a96b3d423c6c2d21c7c55ddf59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01ee32eefb99bea9123b8b28adc178d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1options__name__extractor.html#a01ee32eefb99bea9123b8b28adc178d3">reset_tint</a> () override</td></tr>
 <tr class="separator:a01ee32eefb99bea9123b8b28adc178d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accb9377125747bd5b67db30741584e8a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1options__name__extractor.html#accb9377125747bd5b67db30741584e8a">help</a> (const std::vector&lt; std::string &gt; &amp;) const override</td></tr>
-<tr class="separator:accb9377125747bd5b67db30741584e8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ce53ad1bf85b6410c68eb43595935f6"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="structVW_1_1config_1_1option__group__definition.html">option_group_definition</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1options__name__extractor.html#a6ce53ad1bf85b6410c68eb43595935f6">get_all_option_group_definitions</a> () const override</td></tr>
+<tr class="separator:a6ce53ad1bf85b6410c68eb43595935f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac802f62d2cc6aa3fd214313846f5a447"><td class="memItemLeft" align="right" valign="top">const std::set&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1options__name__extractor.html#ac802f62d2cc6aa3fd214313846f5a447">get_supplied_options</a> () const override</td></tr>
+<tr class="separator:ac802f62d2cc6aa3fd214313846f5a447"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a346d3db989a399744183a783ede8739e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1options__name__extractor.html#a346d3db989a399744183a783ede8739e">check_unregistered</a> (<a class="el" href="structVW_1_1io_1_1logger.html">VW::io::logger</a> &amp;) override</td></tr>
 <tr class="separator:a346d3db989a399744183a783ede8739e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d6216b04e950f98bbebf49024ad67b9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="structVW_1_1config_1_1base__option.html">base_option</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1options__name__extractor.html#a9d6216b04e950f98bbebf49024ad67b9">get_all_options</a> () override</td></tr>
@@ -132,6 +134,10 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a3335b4d823e548577f2e4394aeea86c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5226f0b6489644d85d68f154d719e8f6"><td class="memItemLeft" align="right" valign="top">std::set&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1options__name__extractor.html#a5226f0b6489644d85d68f154d719e8f6">m_added_help_group_names</a></td></tr>
 <tr class="separator:a5226f0b6489644d85d68f154d719e8f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1b18324641465e05dbe91c94cc5f9d4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structVW_1_1config_1_1option__group__definition.html">option_group_definition</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1options__name__extractor.html#ae1b18324641465e05dbe91c94cc5f9d4">m_unused_groups</a></td></tr>
+<tr class="separator:ae1b18324641465e05dbe91c94cc5f9d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a144be45c808fb859f6811ecd4a427cf0"><td class="memItemLeft" align="right" valign="top">std::set&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1options__name__extractor.html#a144be45c808fb859f6811ecd4a427cf0">m_unused_supplied</a></td></tr>
+<tr class="separator:a144be45c808fb859f6811ecd4a427cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a346d3db989a399744183a783ede8739e"></a>
@@ -159,6 +165,33 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="structVW_1_1config_1_1options__i.html#a64038a07f51db006335531d358a096ad">VW::config::options_i</a>.</p>
+
+</div>
+</div>
+<a id="a6ce53ad1bf85b6410c68eb43595935f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ce53ad1bf85b6410c68eb43595935f6">&#9670;&nbsp;</a></span>get_all_option_group_definitions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt;<a class="el" href="structVW_1_1config_1_1option__group__definition.html">option_group_definition</a>&gt;&amp; VW::config::options_name_extractor::get_all_option_group_definitions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="structVW_1_1config_1_1options__i.html#a14366f2293a17826059fb971a683b88f">VW::config::options_i</a>.</p>
 
 </div>
 </div>
@@ -326,8 +359,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="accb9377125747bd5b67db30741584e8a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#accb9377125747bd5b67db30741584e8a">&#9670;&nbsp;</a></span>help()</h2>
+<a id="ac802f62d2cc6aa3fd214313846f5a447"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac802f62d2cc6aa3fd214313846f5a447">&#9670;&nbsp;</a></span>get_supplied_options()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -336,9 +369,8 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string VW::config::options_name_extractor::help </td>
+          <td class="memname">const std::set&lt;std::string&gt;&amp; VW::config::options_name_extractor::get_supplied_options </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
@@ -350,7 +382,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="structVW_1_1config_1_1options__i.html#a126d126a40231ce81a2a637a39839897">VW::config::options_i</a>.</p>
+<p>Implements <a class="el" href="structVW_1_1config_1_1options__i.html#a82c7935cd41225f52cd24fe7cb2e8ec5">VW::config::options_i</a>.</p>
 
 </div>
 </div>
@@ -570,13 +602,41 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ae1b18324641465e05dbe91c94cc5f9d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1b18324641465e05dbe91c94cc5f9d4">&#9670;&nbsp;</a></span>m_unused_groups</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="structVW_1_1config_1_1option__group__definition.html">option_group_definition</a>&gt; VW::config::options_name_extractor::m_unused_groups</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a144be45c808fb859f6811ecd4a427cf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a144be45c808fb859f6811ecd4a427cf0">&#9670;&nbsp;</a></span>m_unused_supplied</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::set&lt;std::string&gt; VW::config::options_name_extractor::m_unused_supplied</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>/__w/vowpal_wabbit/vowpal_wabbit/vowpalwabbit/<a class="el" href="options_8h.html">options.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 3 2022 15:48:18 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 3 2022 20:45:45 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

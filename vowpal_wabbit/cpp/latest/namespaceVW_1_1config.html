@@ -81,6 +81,10 @@ Namespaces</h2></td></tr>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1base__option.html">base_option</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1cli__help__formatter.html">cli_help_formatter</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1help__formatter.html">help_formatter</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1is__scalar__option__type.html">is_scalar_option_type</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1option__builder.html">option_builder</a></td></tr>
@@ -116,6 +120,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a346f383b4c3ea9f2f6828ecfa6593f66"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a346f383b4c3ea9f2f6828ecfa6593f66"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structVW_1_1config_1_1option__builder.html">option_builder</a>&lt; <a class="el" href="structVW_1_1config_1_1typed__option__with__location.html">typed_option_with_location</a>&lt; T &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1config.html#a346f383b4c3ea9f2f6828ecfa6593f66">make_option</a> (const std::string &amp;name, T &amp;location)</td></tr>
 <tr class="separator:a346f383b4c3ea9f2f6828ecfa6593f66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaaf7f6c305317bcc97c28b2a13eb746"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structVW_1_1config_1_1option__group__definition.html">option_group_definition</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1config.html#acaaf7f6c305317bcc97c28b2a13eb746">remove_disabled_necessary_options</a> (<a class="el" href="structVW_1_1config_1_1options__i.html">options_i</a> &amp;options, const std::vector&lt; <a class="el" href="structVW_1_1config_1_1option__group__definition.html">option_group_definition</a> &gt; &amp;groups)</td></tr>
+<tr class="separator:acaaf7f6c305317bcc97c28b2a13eb746"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4dc0de0ad40837d6de685879dd3cbb69"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a4dc0de0ad40837d6de685879dd3cbb69"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1config.html#a4dc0de0ad40837d6de685879dd3cbb69">operator==</a> (const <a class="el" href="structVW_1_1config_1_1typed__option.html">typed_option</a>&lt; T &gt; &amp;lhs, const <a class="el" href="structVW_1_1config_1_1typed__option.html">typed_option</a>&lt; T &gt; &amp;rhs)</td></tr>
 <tr class="separator:a4dc0de0ad40837d6de685879dd3cbb69"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -388,10 +394,46 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="acaaf7f6c305317bcc97c28b2a13eb746"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acaaf7f6c305317bcc97c28b2a13eb746">&#9670;&nbsp;</a></span>remove_disabled_necessary_options()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="structVW_1_1config_1_1option__group__definition.html">option_group_definition</a>&gt; VW::config::remove_disabled_necessary_options </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structVW_1_1config_1_1options__i.html">options_i</a> &amp;&#160;</td>
+          <td class="paramname"><em>options</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="structVW_1_1config_1_1option__group__definition.html">option_group_definition</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>groups</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 3 2022 15:48:18 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 3 2022 20:45:45 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
