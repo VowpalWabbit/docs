@@ -28,6 +28,7 @@ var searchData=
   ['head',['head',['../structVW_1_1config_1_1typelist.html#a53badf648cb2451504736dc2a9e02d3e',1,'VW::config::typelist']]],
   ['help',['help',['../structVW_1_1config_1_1option__builder.html#af0ab17d905621f08b1545d575c132dab',1,'VW::config::option_builder']]],
   ['help_5fformatter',['help_formatter',['../structVW_1_1config_1_1help__formatter.html',1,'VW::config']]],
+  ['help_5fformatter_2eh',['help_formatter.h',['../help__formatter_8h.html',1,'']]],
   ['hidden',['hidden',['../structVW_1_1config_1_1option__builder.html#a3f396c3b570ca1631698525d2e2b760f',1,'VW::config::option_builder']]],
   ['history_5fnamespace',['history_namespace',['../constant_8h.html#a622e9192f051b3662837af6d3d0fbac8',1,'constant.h']]],
   ['holdout_5fafter',['holdout_after',['../structVW_1_1workspace.html#a0b0e80a0b71a5d9aa42cdd79e0b5c894',1,'VW::workspace']]],

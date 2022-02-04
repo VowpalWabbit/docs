@@ -12,6 +12,7 @@ var searchData=
   ['cbify_5fadf_5fdata',['cbify_adf_data',['../structcbify__adf__data.html',1,'']]],
   ['chisquared',['ChiSquared',['../classVW_1_1distributionally__robust_1_1ChiSquared.html',1,'VW::distributionally_robust']]],
   ['cli_5fhelp_5fformatter',['cli_help_formatter',['../structVW_1_1config_1_1cli__help__formatter.html',1,'VW::config']]],
+  ['cli_5foptions_5fserializer',['cli_options_serializer',['../structVW_1_1config_1_1cli__options__serializer.html',1,'VW::config']]],
   ['common_5flearner_5fbuilder',['common_learner_builder',['../structVW_1_1LEARNER_1_1common__learner__builder.html',1,'VW::LEARNER']]],
   ['common_5flearner_5fbuilder_3c_20base_5flearner_5fbuilder_3c_20datat_2c_20examplet_20_3e_2c_20datat_2c_20examplet_2c_20base_5flearner_20_3e',['common_learner_builder&lt; base_learner_builder&lt; DataT, ExampleT &gt;, DataT, ExampleT, base_learner &gt;',['../structVW_1_1LEARNER_1_1common__learner__builder.html',1,'VW::LEARNER']]],
   ['common_5flearner_5fbuilder_3c_20reduction_5flearner_5fbuilder_3c_20char_2c_20examplet_2c_20baselearnert_20_3e_2c_20char_2c_20examplet_2c_20baselearnert_20_3e',['common_learner_builder&lt; reduction_learner_builder&lt; char, ExampleT, BaseLearnerT &gt;, char, ExampleT, BaseLearnerT &gt;',['../structVW_1_1LEARNER_1_1common__learner__builder.html',1,'VW::LEARNER']]],

@@ -40,7 +40,7 @@ var searchData=
   ['default_5fstate',['default_state',['../structContext.html#a0e0a976e8e6bf9b15f095758b5094521',1,'Context']]],
   ['default_5ftau',['DEFAULT_TAU',['../distributionally__robust_8h.html#a211700867992d9a992485c8d36c64e20',1,'distributionally_robust.h']]],
   ['default_5ftolerance',['DEFAULT_TOLERANCE',['../vw__math_8h.html#a0e355e0dcb761f1b89524e0e77fd14bd',1,'vw_math.h']]],
-  ['default_5fvalue',['default_value',['../structVW_1_1config_1_1option__builder.html#abd7158382bc9312da5c8d0caa7cd63da',1,'VW::config::option_builder::default_value()'],['../structVW_1_1config_1_1typed__option.html#af50bd66f1e41a19ba3ac6e3184584d9f',1,'VW::config::typed_option::default_value()']]],
+  ['default_5fvalue',['default_value',['../structVW_1_1config_1_1typed__option.html#af50bd66f1e41a19ba3ac6e3184584d9f',1,'VW::config::typed_option::default_value()'],['../structVW_1_1config_1_1option__builder.html#abd7158382bc9312da5c8d0caa7cd63da',1,'VW::config::option_builder::default_value()']]],
   ['default_5fvalue_5fsupplied',['default_value_supplied',['../structVW_1_1config_1_1typed__option.html#ad5485f8cc959e530eaef3bf90ae87bb8',1,'VW::config::typed_option']]],
   ['defaultstate',['DefaultState',['../classDefaultState.html',1,'DefaultState&lt; audit &gt;'],['../classDefaultState.html#a95600a35c6cc28204b0eb01d647dd9f9',1,'DefaultState::DefaultState()']]],
   ['del_5fexample_5fnamespace',['del_example_namespace',['../namespaceLabelDict.html#a4cb2645ae2bd2e2e37afc56dc947006e',1,'LabelDict']]],

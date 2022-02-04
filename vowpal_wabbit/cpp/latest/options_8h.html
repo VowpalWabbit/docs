@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Vowpal Wabbit: /__w/vowpal_wabbit/vowpal_wabbit/vowpalwabbit/options.h File Reference</title>
+<title>Vowpal Wabbit: /__w/vowpal_wabbit/vowpal_wabbit/vowpalwabbit/config/options.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -58,62 +58,29 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_23e69c20c74a4591a9cfc65aaff8f3d1.html">vowpalwabbit</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_23e69c20c74a4591a9cfc65aaff8f3d1.html">vowpalwabbit</a></li><li class="navelem"><a class="el" href="dir_4f4c5690fa6818c779b8e7b9e7afbc88.html">config</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
 <div class="title">options.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;string&gt;</code><br />
-<code>#include &lt;utility&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
-<code>#include &lt;map&gt;</code><br />
-<code>#include &lt;set&gt;</code><br />
-<code>#include &lt;typeinfo&gt;</code><br />
-<code>#include &lt;memory&gt;</code><br />
-<code>#include &lt;unordered_set&gt;</code><br />
-<code>#include &lt;sstream&gt;</code><br />
-<code>#include &lt;cstdio&gt;</code><br />
-<code>#include &lt;fmt/format.h&gt;</code><br />
-<code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;type_traits&gt;</code><br />
-<code>#include &quot;<a class="el" href="options__types_8h.html">options_types.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="vw__exception_8h.html">vw_exception.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="option_8h.html">config/option.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="option__group__definition_8h.html">config/option_group_definition.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="future__compat_8h.html">future_compat.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="logger_8h.html">io/logger.h</a>&quot;</code><br />
+<code>#include &lt;map&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1details_1_1is__vector.html">VW::config::details::is_vector&lt; T, _ &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1details_1_1is__vector_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1i2b5346937f7b3296ded19472f05a8f61.html">VW::config::details::is_vector&lt; T, typename std::enable_if&lt; std::is_same&lt; typename std::decay&lt; T &gt;::type, std::vector&lt; typename std::decay&lt; T &gt;::type::value_type, typename std::decay&lt; T &gt;::type::allocator_type &gt; &gt;::value &gt;::type &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1option__builder.html">VW::config::option_builder&lt; T &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1typed__option.html">VW::config::typed_option&lt; T &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1typed__option__visitor.html">VW::config::typed_option_visitor</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1base__option.html">VW::config::base_option</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1typed__option.html">VW::config::typed_option&lt; T &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1typed__option__with__location.html">VW::config::typed_option_with_location&lt; T &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1options__i.html">VW::config::options_i</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1option__group__definition.html">VW::config::option_group_definition</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1help__formatter.html">VW::config::help_formatter</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1options__name__extractor.html">VW::config::options_name_extractor</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1options__serializer__i.html">VW::config::options_serializer_i</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -122,31 +89,11 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceVW_1_1config"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1config.html">VW::config</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceVW_1_1config_1_1details"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1config_1_1details.html">VW::config::details</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a346f383b4c3ea9f2f6828ecfa6593f66"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a346f383b4c3ea9f2f6828ecfa6593f66"><td class="memTemplItemLeft" align="right" valign="top">option_builder&lt; typed_option_with_location&lt; T &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1config.html#a346f383b4c3ea9f2f6828ecfa6593f66">VW::config::make_option</a> (const std::string &amp;name, T &amp;location)</td></tr>
-<tr class="separator:a346f383b4c3ea9f2f6828ecfa6593f66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acaaf7f6c305317bcc97c28b2a13eb746"><td class="memItemLeft" align="right" valign="top">std::vector&lt; option_group_definition &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1config.html#acaaf7f6c305317bcc97c28b2a13eb746">VW::config::remove_disabled_necessary_options</a> (options_i &amp;options, const std::vector&lt; option_group_definition &gt; &amp;groups)</td></tr>
-<tr class="separator:acaaf7f6c305317bcc97c28b2a13eb746"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4dc0de0ad40837d6de685879dd3cbb69"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a4dc0de0ad40837d6de685879dd3cbb69"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1config.html#a4dc0de0ad40837d6de685879dd3cbb69">VW::config::operator==</a> (const typed_option&lt; T &gt; &amp;lhs, const typed_option&lt; T &gt; &amp;rhs)</td></tr>
-<tr class="separator:a4dc0de0ad40837d6de685879dd3cbb69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6aa135899b8c9a0ac0e1ca8cfd9f0b2c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a6aa135899b8c9a0ac0e1ca8cfd9f0b2c"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1config.html#a6aa135899b8c9a0ac0e1ca8cfd9f0b2c">VW::config::operator!=</a> (const typed_option&lt; T &gt; &amp;lhs, const typed_option&lt; T &gt; &amp;rhs)</td></tr>
-<tr class="separator:a6aa135899b8c9a0ac0e1ca8cfd9f0b2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaee6c975c055a788bc18dc17565ec5d6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1config.html#aaee6c975c055a788bc18dc17565ec5d6">VW::config::operator==</a> (const base_option &amp;lhs, const base_option &amp;rhs)</td></tr>
-<tr class="separator:aaee6c975c055a788bc18dc17565ec5d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84b8bd58bf8fa31fff0302b6245d8cf1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1config.html#a84b8bd58bf8fa31fff0302b6245d8cf1">VW::config::operator!=</a> (const base_option &amp;lhs, const base_option &amp;rhs)</td></tr>
-<tr class="separator:a84b8bd58bf8fa31fff0302b6245d8cf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 4 2022 21:15:10 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 4 2022 22:46:03 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
