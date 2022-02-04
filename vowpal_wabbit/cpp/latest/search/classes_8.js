@@ -8,7 +8,7 @@ var searchData=
   ['interaction_5fconfig_5fmanager',['interaction_config_manager',['../structVW_1_1automl_1_1interaction__config__manager.html',1,'VW::automl']]],
   ['interactions_5fgenerator',['interactions_generator',['../structINTERACTIONS_1_1interactions__generator.html',1,'INTERACTIONS']]],
   ['io_5fbuf',['io_buf',['../classio__buf.html',1,'']]],
-  ['is_5fscalar_5foption_5ftype',['is_scalar_option_type',['../structVW_1_1config_1_1is__scalar__impl_1_1is__scalar__option__type.html',1,'VW::config::is_scalar_impl::is_scalar_option_type&lt; T &gt;'],['../structVW_1_1config_1_1is__scalar__option__type.html',1,'VW::config::is_scalar_option_type&lt; T &gt;']]],
-  ['is_5fscalar_5foption_5ftype_3c_20std_3a_3avector_3c_20args_2e_2e_2e_20_3e_20_3e',['is_scalar_option_type&lt; std::vector&lt; Args... &gt; &gt;',['../structVW_1_1config_1_1is__scalar__impl_1_1is__scalar__option__type_3_01std_1_1vector_3_01Args_8_8_8_01_4_01_4.html',1,'VW::config::is_scalar_impl']]],
+  ['is_5fvector',['is_vector',['../structVW_1_1config_1_1details_1_1is__vector.html',1,'VW::config::details']]],
+  ['is_5fvector_3c_20t_2c_20typename_20std_3a_3aenable_5fif_3c_20std_3a_3ais_5fsame_3c_20typename_20std_3a_3adecay_3c_20t_20_3e_3a_3atype_2c_20std_3a_3avector_3c_20typename_20std_3a_3adecay_3c_20t_20_3e_3a_3atype_3a_3avalue_5ftype_2c_20typename_20std_3a_3adecay_3c_20t_20_3e_3a_3atype_3a_3aallocator_5ftype_20_3e_20_3e_3a_3avalue_20_3e_3a_3atype_20_3e',['is_vector&lt; T, typename std::enable_if&lt; std::is_same&lt; typename std::decay&lt; T &gt;::type, std::vector&lt; typename std::decay&lt; T &gt;::type::value_type, typename std::decay&lt; T &gt;::type::allocator_type &gt; &gt;::value &gt;::type &gt;',['../structVW_1_1config_1_1details_1_1is__vector_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1i2b5346937f7b3296ded19472f05a8f61.html',1,'VW::config::details']]],
   ['iterator',['iterator',['../classexample__predict_1_1iterator.html',1,'example_predict']]]
 ];
