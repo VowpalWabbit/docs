@@ -195,6 +195,7 @@ var searchData=
   ['sparse_5fweights',['sparse_weights',['../classparameters.html#a276f4673850e9650c1360a78c9afab97',1,'parameters']]],
   ['spelling_5ffeatures',['spelling_features',['../structVW_1_1workspace.html#ae1554e16748cc811a124f4a2b671799a',1,'VW::workspace']]],
   ['spelling_5fnamespace',['spelling_namespace',['../constant_8h.html#a277c1a47ab86f3c52c7711d09f781a2c',1,'constant.h']]],
+  ['split_5fcommand_5fline',['split_command_line',['../namespaceVW.html#a634c99ddf9b3cc7c7f650def077a8d91',1,'VW::split_command_line(const std::string &amp;cmd_line)'],['../namespaceVW.html#a23ec1597f80b4a5894fc6976c9941ea6',1,'VW::split_command_line(VW::string_view cmd_line)']]],
   ['spoof_5fhex_5fencoded_5fnamespaces',['spoof_hex_encoded_namespaces',['../parse__args_8h.html#a3ab340678bf816e7e292c2a3b569ba24',1,'parse_args.h']]],
   ['sprintf_5fs',['sprintf_s',['../crossplat__compat_8h.html#a6b6019110450b61a0b4acc55d7d336ca',1,'crossplat_compat.h']]],
   ['stable_5funique',['stable_unique',['../stable__unique_8h.html#a125b98f951b4a0e80cace507601c01b6',1,'stable_unique.h']]],
