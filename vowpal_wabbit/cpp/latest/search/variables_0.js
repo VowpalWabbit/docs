@@ -29,7 +29,7 @@ var searchData=
   ['_5frandom_5fstate',['_random_state',['../structactive.html#a316a18fe47e505f11658923475e863c3',1,'active::_random_state()'],['../structExpReplay_1_1expreplay.html#a8b47509c5fb2d0fbacb46df406f4b430',1,'ExpReplay::expreplay::_random_state()']]],
   ['_5freduction_5ffeatures',['_reduction_features',['../structflat__example.html#a2c6614f006682543680da155c6e665c4',1,'flat_example::_reduction_features()'],['../structexample__predict.html#a196aefa0f742cb3bce1456bf18ca3be0',1,'example_predict::_reduction_features()']]],
   ['_5freuse_5fmem',['_reuse_mem',['../structContext.html#a715ce82969edf6ca51f8458f50eb238b',1,'Context']]],
-  ['_5fshared_5fdata',['_shared_data',['../structactive.html#a1666e66196216a67dc0515b01411f3b4',1,'active::_shared_data()'],['../structparser.html#a29f98b675dc11176078222fccd8afeeb',1,'parser::_shared_data()']]],
+  ['_5fshared_5fdata',['_shared_data',['../structparser.html#a29f98b675dc11176078222fccd8afeeb',1,'parser::_shared_data()'],['../structactive.html#a1666e66196216a67dc0515b01411f3b4',1,'active::_shared_data()']]],
   ['_5fspdlog_5fstderr_5flogger',['_spdlog_stderr_logger',['../structVW_1_1io_1_1details_1_1logger__impl.html#a794e60682470dba78e41ab08bf48575d',1,'VW::io::details::logger_impl']]],
   ['_5fspdlog_5fstdout_5flogger',['_spdlog_stdout_logger',['../structVW_1_1io_1_1details_1_1logger__impl.html#ad0ea97a34a4dd08e7be7f4a8afb74755',1,'VW::io::details::logger_impl']]],
   ['_5ftemporary_5fcache_5fbuffer',['_temporary_cache_buffer',['../structVW_1_1details_1_1cache__temp__buffer.html#a66852b16aa6f98874889ea4a8ec35799',1,'VW::details::cache_temp_buffer']]],

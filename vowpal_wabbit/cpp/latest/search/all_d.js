@@ -63,7 +63,7 @@ var searchData=
   ['mf_5fsetup',['mf_setup',['../mf_8h.html#ac197f2792161d87c554020ecbde039e7',1,'mf.h']]],
   ['might_5finsert',['might_insert',['../classBeam_1_1beam.html#a27a76654671cb98e49e203f38097df57',1,'Beam::beam']]],
   ['min_5factions',['min_actions',['../structVW_1_1cb__explore__adf_1_1cb__explore__metrics.html#addf1729e68c1112ce4b6683a4d3fff71',1,'VW::cb_explore_adf::cb_explore_metrics']]],
-  ['min_5fdepth_5fbinary_5ftree',['min_depth_binary_tree',['../structVW_1_1offset__tree_1_1min__depth__binary__tree.html',1,'VW::offset_tree::min_depth_binary_tree'],['../structVW_1_1cats__tree_1_1min__depth__binary__tree.html',1,'VW::cats_tree::min_depth_binary_tree']]],
+  ['min_5fdepth_5fbinary_5ftree',['min_depth_binary_tree',['../structVW_1_1cats__tree_1_1min__depth__binary__tree.html',1,'VW::cats_tree::min_depth_binary_tree'],['../structVW_1_1offset__tree_1_1min__depth__binary__tree.html',1,'VW::offset_tree::min_depth_binary_tree']]],
   ['min_5flabel',['min_label',['../structshared__data.html#a7169344996c735da7b771fb6ec93484e',1,'shared_data']]],
   ['min_5fvalue',['min_value',['../structVW_1_1continuous__action_1_1cats_1_1cats.html#a34263d4504320d078e70f32cf4d0baa2',1,'VW::continuous_action::cats::cats::min_value()'],['../structVW_1_1pmf__to__pdf_1_1reduction.html#a5a08da6d75f53dc032285fb576f23883',1,'VW::pmf_to_pdf::reduction::min_value()']]],
   ['minor',['minor',['../structVW_1_1version__struct.html#aaf8c97dec70775a9e43f804cb2fcbe64',1,'VW::version_struct']]],

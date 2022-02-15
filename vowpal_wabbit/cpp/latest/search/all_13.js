@@ -10,7 +10,7 @@ var searchData=
   ['sample_5fpdf_2eh',['sample_pdf.h',['../sample__pdf_8h.html',1,'']]],
   ['sample_5fpdf_5fsetup',['sample_pdf_setup',['../namespaceVW_1_1continuous__action.html#ad218f75f4c9adc8baf69282d5effd7be',1,'VW::continuous_action']]],
   ['sample_5fscores',['sample_scores',['../namespaceexploration.html#ab94fb5e8fa209aa46feaf80a2e1ad791',1,'exploration']]],
-  ['save_5fload',['save_load',['../structVW_1_1cb__explore__adf_1_1cb__explore__adf__base.html#a2253bde7f538a200b652075b9c508050',1,'VW::cb_explore_adf::cb_explore_adf_base::save_load()'],['../classVW_1_1distributionally__robust_1_1ChiSquared.html#a1ef82b5394d962bafcbfe5bcfbbdd96e',1,'VW::distributionally_robust::ChiSquared::save_load()'],['../structVW_1_1LEARNER_1_1learner.html#a9129a600e89a45cad4b7db588ec864be',1,'VW::LEARNER::learner::save_load()']]],
+  ['save_5fload',['save_load',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#a1ef82b5394d962bafcbfe5bcfbbdd96e',1,'VW::distributionally_robust::ChiSquared::save_load()'],['../structVW_1_1LEARNER_1_1learner.html#a9129a600e89a45cad4b7db588ec864be',1,'VW::LEARNER::learner::save_load()'],['../structVW_1_1cb__explore__adf_1_1cb__explore__adf__base.html#a2253bde7f538a200b652075b9c508050',1,'VW::cb_explore_adf::cb_explore_adf_base::save_load()']]],
   ['save_5fload_5fdata',['save_load_data',['../structVW_1_1LEARNER_1_1save__load__data.html',1,'VW::LEARNER']]],
   ['save_5fload_5ff',['save_load_f',['../structVW_1_1LEARNER_1_1save__load__data.html#ac5cf5313f0395898c19bcc29ade84b58',1,'VW::LEARNER::save_load_data']]],
   ['save_5fload_5fheader',['save_load_header',['../parse__regressor_8h.html#a9706222629d47f27f6481fa053510d24',1,'parse_regressor.h']]],

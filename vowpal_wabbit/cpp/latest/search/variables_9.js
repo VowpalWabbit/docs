@@ -1,7 +1,7 @@
 var searchData=
 [
   ['i',['i',['../unionexploration_1_1int__float.html#ad2bc6c4c956bde873b30883f1e1f73d3',1,'exploration::int_float']]],
-  ['id',['id',['../structVW_1_1cats__tree_1_1tree__node.html#a61e16c2cc5da0df4b7060465ec4b9d46',1,'VW::cats_tree::tree_node::id()'],['../structVW_1_1workspace.html#a1a5991719de1f9ac2db1d7f77a46e531',1,'VW::workspace::id()'],['../structVW_1_1offset__tree_1_1tree__node.html#abdddece8c7416bbfae454d3a4af6d038',1,'VW::offset_tree::tree_node::id()']]],
+  ['id',['id',['../structVW_1_1workspace.html#a1a5991719de1f9ac2db1d7f77a46e531',1,'VW::workspace::id()'],['../structVW_1_1cats__tree_1_1tree__node.html#a61e16c2cc5da0df4b7060465ec4b9d46',1,'VW::cats_tree::tree_node::id()'],['../structVW_1_1offset__tree_1_1tree__node.html#abdddece8c7416bbfae454d3a4af6d038',1,'VW::offset_tree::tree_node::id()']]],
   ['ignore',['ignore',['../structVW_1_1workspace.html#aba2139155728faa7aa46b66f3365d1f7',1,'VW::workspace']]],
   ['ignore_5flinear',['ignore_linear',['../structVW_1_1workspace.html#aadd1a2ddcd8c5a0a35c53b582cd0059c',1,'VW::workspace']]],
   ['ignore_5fsome',['ignore_some',['../structVW_1_1workspace.html#adb7c2aa536667110430169904f8b39d2',1,'VW::workspace']]],
@@ -10,7 +10,7 @@ var searchData=
   ['in_5fpass_5fcounter',['in_pass_counter',['../structparser.html#a53510d464dc58fc86bce92c68a07a6b8',1,'parser']]],
   ['in_5fprocess_5fframes',['in_process_frames',['../structINTERACTIONS_1_1generate__interactions__object__cache.html#a1cca13f980633bfd603cd13296ec0b8c',1,'INTERACTIONS::generate_interactions_object_cache']]],
   ['inc',['inc',['../classLabelObjectState.html#a6d7683925b3cfe38f68d25e668da8969',1,'LabelObjectState']]],
-  ['increment',['increment',['../structcbify__adf__data.html#a495e1d54c72ff129f66bc487dd67ed31',1,'cbify_adf_data::increment()'],['../structVW_1_1LEARNER_1_1learner.html#a30c2bcf54996490e0a4415e6509e9dfe',1,'VW::LEARNER::learner::increment()']]],
+  ['increment',['increment',['../structVW_1_1LEARNER_1_1learner.html#a30c2bcf54996490e0a4415e6509e9dfe',1,'VW::LEARNER::learner::increment()'],['../structcbify__adf__data.html#a495e1d54c72ff129f66bc487dd67ed31',1,'cbify_adf_data::increment()']]],
   ['index',['index',['../structLabelIndexState.html#a74debffb179393bae1b06ad872409acc',1,'LabelIndexState']]],
   ['index_5fname_5fmap',['index_name_map',['../structVW_1_1workspace.html#a880ab7ece937c42f3b2ec3a02e45504f',1,'VW::workspace']]],
   ['index_5fqueue',['index_queue',['../structVW_1_1automl_1_1interaction__config__manager.html#a4eba45fc90ec828b83d64f54e69a2af1',1,'VW::automl::interaction_config_manager']]],
