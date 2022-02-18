@@ -147,7 +147,6 @@ var searchData=
   ['closesock',['CLOSESOCK',['../allreduce_8h.html#a35da5532d470440b1afd69338e9053a8',1,'CLOSESOCK():&#160;allreduce.h'],['../spanning__tree_8h.html#a35da5532d470440b1afd69338e9053a8',1,'CLOSESOCK():&#160;spanning_tree.h']]],
   ['cm',['cm',['../structVW_1_1automl_1_1automl.html#af406aeff58ca803b66b5b0734a621c96',1,'VW::automl::automl']]],
   ['cmd_5fstring_5freplace_5fvalue',['cmd_string_replace_value',['../namespaceVW.html#a435759911ac1f45a66cb9677e4d761f9',1,'VW']]],
-  ['cmp',['cmp',['../namespaceACTION__SCORE.html#a1ce55403f581514bdd318e5ef3bfdce8',1,'ACTION_SCORE']]],
   ['col_5favg_5floss',['col_avg_loss',['../structshared__data.html#a336342f8be49e813c9bfd5e8cef69444',1,'shared_data']]],
   ['col_5fcurrent_5ffeatures',['col_current_features',['../structshared__data.html#ac58b4bd5aaeb55095cdcdb43bf7564b3',1,'shared_data']]],
   ['col_5fcurrent_5flabel',['col_current_label',['../structshared__data.html#a2162a87e73622692900c2e597f5e18e5',1,'shared_data']]],

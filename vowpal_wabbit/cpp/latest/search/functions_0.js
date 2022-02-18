@@ -7,6 +7,8 @@ var searchData=
   ['accumulate_5fscalar',['accumulate_scalar',['../accumulate_8h.html#aa94d955c8579488573bac30da3e04bc2',1,'accumulate.h']]],
   ['accumulate_5fweighted_5favg',['accumulate_weighted_avg',['../accumulate_8h.html#af931f2e9fccc2dc33e73d60a89c7649f',1,'accumulate.h']]],
   ['acquire_5fobject',['acquire_object',['../structVW_1_1moved__object__pool.html#a1a0ec2f168640b9a7b6a16264a090b9a',1,'VW::moved_object_pool']]],
+  ['action_5fscore_5fcompare_5fgt',['action_score_compare_gt',['../namespaceVW.html#ac8becc8ccd3691b01f9bd6872675c9e9',1,'VW']]],
+  ['action_5fscore_5fcompare_5flt',['action_score_compare_lt',['../namespaceVW.html#a1ba263e76513d7a0c4c65248cfcabc37',1,'VW']]],
   ['active',['active',['../structactive.html#afa4841e1124b664c34f9e5f128026301',1,'active']]],
   ['active_5fcover_5fsetup',['active_cover_setup',['../active__cover_8h.html#a80c7ee282a06a23be33517fd7f7a4dac',1,'active_cover.h']]],
   ['active_5fsetup',['active_setup',['../active_8h.html#a1ab12284000ec943215a7451ed2ac7fa',1,'active.h']]],

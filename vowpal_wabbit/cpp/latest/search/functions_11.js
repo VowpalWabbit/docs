@@ -18,7 +18,6 @@ var searchData=
   ['scope_5fexit',['scope_exit',['../namespaceVW.html#a31bf6892187021f28960a19b5fede9b2',1,'VW']]],
   ['scope_5fexit_5fcaller',['scope_exit_caller',['../classVW_1_1details_1_1scope__exit__caller.html#adbdd65155d1fd230c6cdb901d0c7a7cd',1,'VW::details::scope_exit_caller::scope_exit_caller(TScopeExitLambda &amp;&amp;lambda) noexcept'],['../classVW_1_1details_1_1scope__exit__caller.html#a21514c50346968d8c8937ecb415f66b0',1,'VW::details::scope_exit_caller::scope_exit_caller(const scope_exit_caller &amp;)=delete'],['../classVW_1_1details_1_1scope__exit__caller.html#a2e5f511d6bc15121d63cfd45ab83f0e1',1,'VW::details::scope_exit_caller::scope_exit_caller(scope_exit_caller &amp;&amp;other) noexcept']]],
   ['scoped_5fcalloc_5for_5fthrow',['scoped_calloc_or_throw',['../memory_8h.html#a3af35e76b34d133a833f0510be29a35d',1,'memory.h']]],
-  ['score_5fcomp',['score_comp',['../namespaceACTION__SCORE.html#a53dfc2b1c229fa3174bf702779a5b3a8',1,'ACTION_SCORE']]],
   ['score_5fiterator',['score_iterator',['../classACTION__SCORE_1_1score__iterator.html#a10fbcf6f0c3748f86a1df809fbc1e2ff',1,'ACTION_SCORE::score_iterator']]],
   ['scored_5fconfig',['scored_config',['../structVW_1_1scored__config.html#a97f4b7c4a4cb0342bca75c9db5783162',1,'VW::scored_config::scored_config()'],['../structVW_1_1scored__config.html#ac5605fccaa38bbecbef7d6fff491384a',1,'VW::scored_config::scored_config(double alpha, double tau)']]],
   ['scorer_5fsetup',['scorer_setup',['../scorer_8h.html#a03d68d4fa0b2d498af8ef5741fce794f',1,'scorer.h']]],

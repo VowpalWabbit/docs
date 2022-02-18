@@ -49,7 +49,6 @@ var searchData=
   ['close_5ffile',['close_file',['../classio__buf.html#a9bc9af0c82dce2e61945827f03c65a21',1,'io_buf']]],
   ['close_5ffiles',['close_files',['../classio__buf.html#a9bcb6229cda2b924aab63360e307658b',1,'io_buf']]],
   ['cmd_5fstring_5freplace_5fvalue',['cmd_string_replace_value',['../namespaceVW.html#a435759911ac1f45a66cb9677e4d761f9',1,'VW']]],
-  ['cmp',['cmp',['../namespaceACTION__SCORE.html#a1ce55403f581514bdd318e5ef3bfdce8',1,'ACTION_SCORE']]],
   ['common_5flearner_5fbuilder',['common_learner_builder',['../structVW_1_1LEARNER_1_1common__learner__builder.html#aec57e5dd72057b6cab6bed580b809519',1,'VW::LEARNER::common_learner_builder::common_learner_builder(learner&lt; DataT, ExampleT &gt; *learner, std::unique_ptr&lt; DataT &gt; &amp;&amp;data, const std::string &amp;name)'],['../structVW_1_1LEARNER_1_1common__learner__builder.html#a7b4dd134cf09ba458da1d23cdc33320b',1,'VW::LEARNER::common_learner_builder::common_learner_builder(std::unique_ptr&lt; DataT &gt; &amp;&amp;data, const std::string &amp;name)']]],
   ['compact',['compact',['../classBeam_1_1beam.html#a6443a6c269b87e0a4a214fcd00f5e527',1,'Beam::beam']]],
   ['compare_5fon_5fcost',['compare_on_cost',['../namespaceBeam.html#a6380de5acf5d68e33cf9ea76a6d756a5',1,'Beam']]],
