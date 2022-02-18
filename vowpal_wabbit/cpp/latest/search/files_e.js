@@ -9,6 +9,7 @@ var searchData=
   ['option_5fgroup_5fdefinition_2eh',['option_group_definition.h',['../option__group__definition_8h.html',1,'']]],
   ['options_2eh',['options.h',['../options_8h.html',1,'']]],
   ['options_5fboost_5fpo_2eh',['options_boost_po.h',['../options__boost__po_8h.html',1,'']]],
+  ['options_5fcli_2eh',['options_cli.h',['../options__cli_8h.html',1,'']]],
   ['options_5fname_5fextractor_2eh',['options_name_extractor.h',['../options__name__extractor_8h.html',1,'']]],
   ['options_5fserializer_2eh',['options_serializer.h',['../options__serializer_8h.html',1,'']]],
   ['options_5ftypes_2eh',['options_types.h',['../options__types_8h.html',1,'']]],

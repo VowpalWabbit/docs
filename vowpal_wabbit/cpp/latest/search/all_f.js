@@ -50,6 +50,8 @@ var searchData=
   ['options_2eh',['options.h',['../options_8h.html',1,'']]],
   ['options_5fboost_5fpo',['options_boost_po',['../structVW_1_1config_1_1options__boost__po.html',1,'VW::config::options_boost_po'],['../structVW_1_1config_1_1options__boost__po.html#a454c7237d3e0aabf3c498f1eb6a7b4d4',1,'VW::config::options_boost_po::options_boost_po(int argc, char **argv)'],['../structVW_1_1config_1_1options__boost__po.html#a631dda2e7f32418a41e5ffce19aaf55c',1,'VW::config::options_boost_po::options_boost_po(const std::vector&lt; std::string &gt; &amp;args)'],['../structVW_1_1config_1_1options__boost__po.html#ac6835b76aefd400cfdc273b10d83dcd9',1,'VW::config::options_boost_po::options_boost_po(options_boost_po &amp;)=delete']]],
   ['options_5fboost_5fpo_2eh',['options_boost_po.h',['../options__boost__po_8h.html',1,'']]],
+  ['options_5fcli',['options_cli',['../structVW_1_1config_1_1options__cli.html',1,'VW::config::options_cli'],['../structVW_1_1config_1_1options__cli.html#ae8dfd0bf12354ef94f130206d6e27d68',1,'VW::config::options_cli::options_cli()']]],
+  ['options_5fcli_2eh',['options_cli.h',['../options__cli_8h.html',1,'']]],
   ['options_5fdeleter_5ftype',['options_deleter_type',['../global__data_8h.html#a6a9836137e68daba98511b4fd85f2654',1,'global_data.h']]],
   ['options_5fi',['options_i',['../structVW_1_1config_1_1options__i.html',1,'VW::config']]],
   ['options_5fname_5fextractor',['options_name_extractor',['../structVW_1_1config_1_1options__name__extractor.html',1,'VW::config']]],

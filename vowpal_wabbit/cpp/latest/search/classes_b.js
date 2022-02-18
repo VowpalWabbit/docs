@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['label',['label',['../structCB_1_1label.html',1,'CB::label'],['../structCB__EVAL_1_1label.html',1,'CB_EVAL::label'],['../structVW_1_1slates_1_1label.html',1,'VW::slates::label'],['../structCOST__SENSITIVE_1_1label.html',1,'COST_SENSITIVE::label'],['../structCCB_1_1label.html',1,'CCB::label']]],
+  ['label',['label',['../structCB_1_1label.html',1,'CB::label'],['../structCB__EVAL_1_1label.html',1,'CB_EVAL::label'],['../structVW_1_1slates_1_1label.html',1,'VW::slates::label'],['../structCCB_1_1label.html',1,'CCB::label'],['../structCOST__SENSITIVE_1_1label.html',1,'COST_SENSITIVE::label']]],
   ['label_5fdata',['label_data',['../structlabel__data.html',1,'']]],
   ['label_5fparser',['label_parser',['../structlabel__parser.html',1,'']]],
   ['label_5fparser_5freuse_5fmem',['label_parser_reuse_mem',['../structVW_1_1label__parser__reuse__mem.html',1,'VW']]],

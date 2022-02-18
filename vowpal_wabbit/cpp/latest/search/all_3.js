@@ -124,7 +124,6 @@ var searchData=
   ['check_5fholdout_5fevery_5fn_5fpasses',['check_holdout_every_n_passes',['../structVW_1_1workspace.html#ab6dac51e5b236f6e4c812f365d96bb35',1,'VW::workspace']]],
   ['check_5flength_5fmatches',['check_length_matches',['../namespaceVW_1_1model__utils_1_1details.html#a822741e25c98c7a9843c7ac856da0975',1,'VW::model_utils::details']]],
   ['check_5fone_5fof',['check_one_of',['../structVW_1_1config_1_1option__group__definition.html#ae177a8ef66282e0bcdcac58f7ff17d97',1,'VW::config::option_group_definition']]],
-  ['check_5funregistered',['check_unregistered',['../structVW_1_1config_1_1options__i.html#a58ddeadbef70e2cf8f40054241dafc15',1,'VW::config::options_i']]],
   ['checksum',['checksum',['../classvw__slim_1_1model__parser.html#a8ccc4980a5dcab48729ebd09a188b6f2',1,'vw_slim::model_parser']]],
   ['children',['children',['../structnode__socks.html#a7ed2657a18004dbca8ac585405efdd56',1,'node_socks']]],
   ['chisq',['chisq',['../structVW_1_1scored__config.html#a214b539da10b3eefd1274d09b6a4472d',1,'VW::scored_config']]],

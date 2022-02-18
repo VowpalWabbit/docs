@@ -36,7 +36,6 @@ var searchData=
   ['check_5fdisagreeing_5foption_5fvalues',['check_disagreeing_option_values',['../namespaceVW_1_1config.html#abb73c3065244a70a4a395f3ede0e259e',1,'VW::config::check_disagreeing_option_values(T value, const std::string &amp;name, const std::vector&lt; T &gt; &amp;final_arguments)'],['../namespaceVW_1_1config.html#a723d8d6d11a6dee00e54c451b1e9acd8',1,'VW::config::check_disagreeing_option_values(bool value, const std::string &amp;name, const std::vector&lt; bool &gt; &amp;final_arguments)']]],
   ['check_5flength_5fmatches',['check_length_matches',['../namespaceVW_1_1model__utils_1_1details.html#a822741e25c98c7a9843c7ac856da0975',1,'VW::model_utils::details']]],
   ['check_5fone_5fof',['check_one_of',['../structVW_1_1config_1_1option__group__definition.html#ae177a8ef66282e0bcdcac58f7ff17d97',1,'VW::config::option_group_definition']]],
-  ['check_5funregistered',['check_unregistered',['../structVW_1_1config_1_1options__i.html#a58ddeadbef70e2cf8f40054241dafc15',1,'VW::config::options_i']]],
   ['checksum',['checksum',['../classvw__slim_1_1model__parser.html#a8ccc4980a5dcab48729ebd09a188b6f2',1,'vw_slim::model_parser']]],
   ['chisq_5fonedof_5fisf',['chisq_onedof_isf',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#aaa304b1059a1a4e246d0763eb3ea83dd',1,'VW::distributionally_robust::ChiSquared']]],
   ['chisquared',['ChiSquared',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#a4c5e70598285f281e5f074f2f0710efb',1,'VW::distributionally_robust::ChiSquared']]],

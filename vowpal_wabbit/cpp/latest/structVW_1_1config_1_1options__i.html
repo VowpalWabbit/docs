@@ -80,7 +80,8 @@ Inheritance diagram for VW::config::options_i:</div>
   <img src="structVW_1_1config_1_1options__i.png" usemap="#VW::config::options_5Fi_map" alt=""/>
   <map id="VW::config::options_5Fi_map" name="VW::config::options_5Fi_map">
 <area href="structVW_1_1config_1_1options__boost__po.html" alt="VW::config::options_boost_po" shape="rect" coords="0,56,213,80"/>
-<area href="structVW_1_1config_1_1options__name__extractor.html" alt="VW::config::options_name_extractor" shape="rect" coords="223,56,436,80"/>
+<area href="structVW_1_1config_1_1options__cli.html" alt="VW::config::options_cli" shape="rect" coords="223,56,436,80"/>
+<area href="structVW_1_1config_1_1options__name__extractor.html" alt="VW::config::options_name_extractor" shape="rect" coords="446,56,659,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -104,10 +105,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6444475c24889f2a20f2df7473ba73e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0b20f09ba0a920bac5b8e9dde165f8a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1options__i.html#ab0b20f09ba0a920bac5b8e9dde165f8a">replace</a> (const std::string &amp;key, const std::string &amp;value)=0</td></tr>
 <tr class="separator:ab0b20f09ba0a920bac5b8e9dde165f8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58ddeadbef70e2cf8f40054241dafc15"><td class="memItemLeft" align="right" valign="top">virtual VW_ATTR(nodiscard) virtual std void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1options__i.html#a58ddeadbef70e2cf8f40054241dafc15">check_unregistered</a> (<a class="el" href="structVW_1_1io_1_1logger.html">VW::io::logger</a> &amp;logger)=0</td></tr>
-<tr class="separator:a58ddeadbef70e2cf8f40054241dafc15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41af87ba504cb6a3f9e69d1b151cc711"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1options__i.html#a41af87ba504cb6a3f9e69d1b151cc711">~options_i</a> ()=default</td></tr>
-<tr class="separator:a41af87ba504cb6a3f9e69d1b151cc711"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af552887c1e0b69fd3d0e8ab02eaa445d"><td class="memItemLeft" align="right" valign="top">virtual VW_ATTR(nodiscard) virtual std&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1options__i.html#af552887c1e0b69fd3d0e8ab02eaa445d">~options_i</a> ()=default</td></tr>
+<tr class="separator:af552887c1e0b69fd3d0e8ab02eaa445d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -124,10 +123,12 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:aad92c069735f46dbcb905e07d87205fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc3c163cf04b1b9362afd234ac7e5871"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::shared_ptr&lt; <a class="el" href="structVW_1_1config_1_1base__option.html">base_option</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1options__i.html#afc3c163cf04b1b9362afd234ac7e5871">m_options</a></td></tr>
 <tr class="separator:afc3c163cf04b1b9362afd234ac7e5871"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc6cbbd4a2c404abda43637458e52779"><td class="memItemLeft" align="right" valign="top">std::map&lt; char, std::shared_ptr&lt; <a class="el" href="structVW_1_1config_1_1base__option.html">base_option</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1config_1_1options__i.html#adc6cbbd4a2c404abda43637458e52779">m_short_options</a></td></tr>
+<tr class="separator:adc6cbbd4a2c404abda43637458e52779"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a41af87ba504cb6a3f9e69d1b151cc711"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41af87ba504cb6a3f9e69d1b151cc711">&#9670;&nbsp;</a></span>~options_i()</h2>
+<a id="af552887c1e0b69fd3d0e8ab02eaa445d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af552887c1e0b69fd3d0e8ab02eaa445d">&#9670;&nbsp;</a></span>~options_i()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -136,7 +137,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual VW::config::options_i::~options_i </td>
+          <td class="memname">virtual VW_ATTR (nodiscard) virtual std VW::config::options_i::~options_i </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -184,32 +185,6 @@ Protected Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a58ddeadbef70e2cf8f40054241dafc15"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58ddeadbef70e2cf8f40054241dafc15">&#9670;&nbsp;</a></span>check_unregistered()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual VW_ATTR (nodiscard) virtual std void VW::config::options_i::check_unregistered </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structVW_1_1io_1_1logger.html">VW::io::logger</a> &amp;&#160;</td>
-          <td class="paramname"><em>logger</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
@@ -294,7 +269,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="structVW_1_1config_1_1options__boost__po.html#a1639ffed22af877e74db5407d9284f3a">VW::config::options_boost_po</a>, and <a class="el" href="structVW_1_1config_1_1options__name__extractor.html#a0a86864296cb9b89eb3bc800e4a612be">VW::config::options_name_extractor</a>.</p>
+<p>Implemented in <a class="el" href="structVW_1_1config_1_1options__boost__po.html#a1639ffed22af877e74db5407d9284f3a">VW::config::options_boost_po</a>, <a class="el" href="structVW_1_1config_1_1options__cli.html#a575ed0c822f492a0d6710bf395ad1a39">VW::config::options_cli</a>, and <a class="el" href="structVW_1_1config_1_1options__name__extractor.html#a0a86864296cb9b89eb3bc800e4a612be">VW::config::options_name_extractor</a>.</p>
 
 </div>
 </div>
@@ -332,7 +307,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="structVW_1_1config_1_1options__boost__po.html#a2ccc103ef8ea4dc07dbe74fab480653c">VW::config::options_boost_po</a>, and <a class="el" href="structVW_1_1config_1_1options__name__extractor.html#a3ac39f1134cc97f5e06f2e7ee942ebb9">VW::config::options_name_extractor</a>.</p>
+<p>Implemented in <a class="el" href="structVW_1_1config_1_1options__boost__po.html#a2ccc103ef8ea4dc07dbe74fab480653c">VW::config::options_boost_po</a>, <a class="el" href="structVW_1_1config_1_1options__cli.html#a8f093c53833396cb028ea4c11ddeb0a5">VW::config::options_cli</a>, and <a class="el" href="structVW_1_1config_1_1options__name__extractor.html#a3ac39f1134cc97f5e06f2e7ee942ebb9">VW::config::options_name_extractor</a>.</p>
 
 </div>
 </div>
@@ -482,13 +457,35 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="adc6cbbd4a2c404abda43637458e52779"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc6cbbd4a2c404abda43637458e52779">&#9670;&nbsp;</a></span>m_short_options</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;char, std::shared_ptr&lt;<a class="el" href="structVW_1_1config_1_1base__option.html">base_option</a>&gt; &gt; VW::config::options_i::m_short_options</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>/__w/vowpal_wabbit/vowpal_wabbit/vowpalwabbit/config/<a class="el" href="options_8h.html">options.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 17 2022 22:17:08 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 18 2022 20:14:34 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
