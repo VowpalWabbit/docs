@@ -9,7 +9,6 @@ var searchData=
   ['has_5fseen_5farray_5fstart',['has_seen_array_start',['../classArrayToVectorState.html#ad57a1b42a0873ba2f4b751e2fc53bce0',1,'ArrayToVectorState']]],
   ['hash',['hash',['../structBeam_1_1beam__element.html#aa6e352c06b5e97fd8a49de0d35b36fde',1,'Beam::beam_element::hash()'],['../structVW_1_1namespace__extent.html#a56f2e4bb53c8909de61acb8eea886820',1,'VW::namespace_extent::hash()'],['../structINTERACTIONS_1_1feature__gen__data.html#ac423c4c48d7427dd0e895bab5b09b906',1,'INTERACTIONS::feature_gen_data::hash()'],['../classio__buf.html#a2897cff64e19135ab948ede8ec150a04',1,'io_buf::hash()']]],
   ['hash_2eh',['hash.h',['../hash_8h.html',1,'']]],
-  ['hash_3c_20vw_3a_3astring_5fview_20_3e',['hash&lt; VW::string_view &gt;',['../structstd_1_1hash_3_01VW_1_1string__view_01_4.html',1,'std']]],
   ['hash_5fextents_5fbegin',['hash_extents_begin',['../structfeatures.html#a6aef3c800173ba6fd6d0017f5e0a097f',1,'features::hash_extents_begin(uint64_t hash)'],['../structfeatures.html#ab9088ef7796dd46498ae29400197c30a',1,'features::hash_extents_begin(uint64_t hash) const']]],
   ['hash_5fextents_5fend',['hash_extents_end',['../structfeatures.html#a66d3c2eb4d7baf9c5badbd623d1d5082',1,'features::hash_extents_end(uint64_t hash)'],['../structfeatures.html#a0918382e463faec02a9532943791e8bf',1,'features::hash_extents_end(uint64_t hash) const']]],
   ['hash_5ffeature',['hash_feature',['../namespaceVW.html#accec3be413c638722d20ed8842629547',1,'VW']]],

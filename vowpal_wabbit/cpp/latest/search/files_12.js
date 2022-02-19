@@ -22,5 +22,6 @@ var searchData=
   ['spanning_5ftree_2eh',['spanning_tree.h',['../spanning__tree_8h.html',1,'']]],
   ['stable_5funique_2eh',['stable_unique.h',['../stable__unique_8h.html',1,'']]],
   ['stagewise_5fpoly_2eh',['stagewise_poly.h',['../stagewise__poly_8h.html',1,'']]],
+  ['string_5fview_2eh',['string_view.h',['../string__view_8h.html',1,'']]],
   ['svrg_2eh',['svrg.h',['../svrg_8h.html',1,'']]]
 ];
