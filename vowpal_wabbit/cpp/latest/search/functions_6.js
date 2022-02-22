@@ -113,7 +113,6 @@ var searchData=
   ['getloss',['getLoss',['../classloss__function.html#a46f4d6f9bb6d90efdf4b0ffc5fcbba9e',1,'loss_function']]],
   ['getlossfunction',['getLossFunction',['../loss__functions_8h.html#aaaabc79f73828bf052eed448c86ec54d',1,'loss_functions.h']]],
   ['getparameter',['getParameter',['../classloss__function.html#a947457fee4c5e839f33ebf51f509b14a',1,'loss_function']]],
-  ['getrevertingweight',['getRevertingWeight',['../classloss__function.html#aa787089f885b15b35aa460c3096a79fc',1,'loss_function']]],
   ['getsquaregrad',['getSquareGrad',['../classloss__function.html#a378d23c5adf0b9dd65417893dfa8b9bc',1,'loss_function']]],
   ['gettype',['getType',['../classloss__function.html#a7a9fc3e21b0331c6cafb0a81ff7966d8',1,'loss_function']]],
   ['getunsafeupdate',['getUnsafeUpdate',['../classloss__function.html#a449eab0aa5ce03a01aa40e17eeefb833',1,'loss_function']]],
