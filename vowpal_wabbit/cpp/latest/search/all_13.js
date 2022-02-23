@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['operator_3c_3c_3cstd_3a_3astring_20_3e',['operator&lt;&lt;&lt;std::string &gt;',['../options__boost__po_8h.html#a4d1b73f21e623f4c6ed8d876bc1083a4',1,'options_boost_po.h']]],
   ['s_5fexploration_5fok',['S_EXPLORATION_OK',['../explore_8h.html#a9819e7e96cd7591d9b59397d49860721',1,'explore.h']]],
   ['s_5fvw_5fpredict_5fok',['S_VW_PREDICT_OK',['../vw__slim__return__codes_8h.html#a648f0373019e260671d17a506473832a',1,'vw_slim_return_codes.h']]],
   ['safe_5findex',['safe_index',['../parse__primitives_8h.html#aaa8ba6bb46396e53b57eafdec2f68667',1,'parse_primitives.h']]],
