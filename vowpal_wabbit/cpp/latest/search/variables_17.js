@@ -14,5 +14,6 @@ var searchData=
   ['wildcard_5fnamespace',['wildcard_namespace',['../constant_8h.html#aa97811baf6be533f89fe42c1043e7ab2',1,'constant.h']]],
   ['words',['words',['../structparser.html#ab5a5d63e69677436cba0278783f50578',1,'parser']]],
   ['wpp',['wpp',['../structVW_1_1workspace.html#a3510119148d38226ff3388c447dbe235',1,'VW::workspace']]],
+  ['wrapping',['wrapping',['../structVW_1_1column__definition.html#a1634f0a00993f3b35e5d34f77c10d37f',1,'VW::column_definition']]],
   ['write_5fcache',['write_cache',['../structparser.html#a5f48db95a95c057288a00642d4cf9f14',1,'parser']]]
 ];

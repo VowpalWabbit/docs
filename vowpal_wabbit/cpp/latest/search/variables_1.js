@@ -16,6 +16,7 @@ var searchData=
   ['affix_5ffeatures',['affix_features',['../structVW_1_1workspace.html#a79257c69fccee5825b98dedeef98cd34',1,'VW::workspace']]],
   ['affix_5fnamespace',['affix_namespace',['../constant_8h.html#a88894f353e2009957517ea749f90d6d7',1,'constant.h']]],
   ['aggr_5ffloat',['aggr_float',['../classFloatToFloatState__OriginalLabelCostHack.html#a6ea5e425a7e09a01bc091c2e755a8638',1,'FloatToFloatState_OriginalLabelCostHack']]],
+  ['alignment',['alignment',['../structVW_1_1column__definition.html#a158af253bdad5179beb1d18d90666e0c',1,'VW::column_definition']]],
   ['all',['all',['../structExpReplay_1_1expreplay.html#a62716a09d385d6a6f12cf555fbf8e301',1,'ExpReplay::expreplay']]],
   ['all_5freduce',['all_reduce',['../structVW_1_1workspace.html#a7211fc6d0beebccda6b1221a1854ffb1',1,'VW::workspace']]],
   ['all_5freduce_5ftype',['all_reduce_type',['../structVW_1_1workspace.html#a215b52fbee86545485f592a779f18895',1,'VW::workspace']]],
