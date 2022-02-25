@@ -56,6 +56,7 @@ var searchData=
   ['v_5farray_5fpool',['v_array_pool',['../namespaceVW.html#a07630cfca8cc0e4357e1dfc3dc9219ad',1,'VW']]],
   ['v_5farray_5fpool_2eh',['v_array_pool.h',['../v__array__pool_8h.html',1,'']]],
   ['valid_5fconfig_5fsize',['valid_config_size',['../structVW_1_1automl_1_1interaction__config__manager.html#aa50021feabbf82852deb9f344dc935c2',1,'VW::automl::interaction_config_manager']]],
+  ['valid_5fepsilon_5fsupplied',['valid_epsilon_supplied',['../structVW_1_1cb__explore__adf_1_1greedy_1_1reduction__features.html#a79f1e75e57e7f15d23035c0ab39816e9',1,'VW::cb_explore_adf::greedy::reduction_features']]],
   ['valid_5fns',['valid_ns',['../example_8h.html#a2e31dea66535761be426441eae64ae21',1,'example.h']]],
   ['validate_5fdefault_5fbits',['validate_default_bits',['../namespaceVW.html#a64ff027d8e2f08ee3a8681178003b667',1,'VW']]],
   ['validate_5fextents',['validate_extents',['../structfeatures.html#ae66f0c976f7fe3f77d0b118a806c0513',1,'features']]],
