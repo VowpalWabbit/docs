@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['parse_5fargs',['parse_args',['../parse__args_8h.html#a9a5e899ad15eb53cb8879d3e91a852da',1,'parse_args.h']]],
   ['parse_5fcontext',['parse_context',['../parse__slates__example__json_8h.html#ab6b1357e3a2bc4883b1f3d145e4cb1e9',1,'parse_slates_example_json.h']]],
   ['parse_5fdispatch',['parse_dispatch',['../parse__dispatch__loop_8h.html#a896e2dc3e71579cf8d67d3b89d5d4e64',1,'parse_dispatch_loop.h']]],
   ['parse_5fexample_5flabel',['parse_example_label',['../namespaceVW.html#a09e02bc005af2724d771a1bb86adf010',1,'VW::parse_example_label(string_view label, const label_parser &amp;lbl_parser, const named_labels *ldict, label_parser_reuse_mem &amp;reuse_mem, example &amp;ec, VW::io::logger &amp;logger)'],['../namespaceVW.html#a1aed0253bec2ed2c16e4328ad6352ec2',1,'VW::parse_example_label(VW::workspace &amp;all, example &amp;ec, const std::string &amp;label)']]],

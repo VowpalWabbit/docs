@@ -65,6 +65,7 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
@@ -88,6 +89,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1io_1_1details_1_1function__ptr__sink.html">VW::io::details::function_ptr_sink&lt; Mutex &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1io_1_1details_1_1function__ptr__legacy__sink.html">VW::io::details::function_ptr_legacy_sink&lt; Mutex &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1io_1_1logger.html">VW::io::logger</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -99,6 +102,13 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceVW_1_1io_1_1details"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io_1_1details.html">VW::io::details</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ac6a4933fbf7b93c637cd2f301cbb900f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io.html#ac6a4933fbf7b93c637cd2f301cbb900f">VW::io::logger_output_func_t</a> = void(*)(void *, <a class="el" href="namespaceVW_1_1io.html#aaf6d3dfe9781b53c9fbc2908a8f0641c">VW::io::log_level</a>, const std::string &amp;)</td></tr>
+<tr class="separator:ac6a4933fbf7b93c637cd2f301cbb900f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52dbd68a7427bf3765f22254b4bfd664"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io.html#a52dbd68a7427bf3765f22254b4bfd664">VW::io::logger_legacy_output_func_t</a> = void(*)(void *, const std::string &amp;)</td></tr>
+<tr class="separator:a52dbd68a7427bf3765f22254b4bfd664"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -130,8 +140,10 @@ Functions</h2></td></tr>
 <tr class="separator:a320c76af5bc4c3e1a89309cd5b916bf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abded10f9d1291725518a9699aabba30d"><td class="memItemLeft" align="right" valign="top">logger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io.html#abded10f9d1291725518a9699aabba30d">VW::io::create_null_logger</a> ()</td></tr>
 <tr class="separator:abded10f9d1291725518a9699aabba30d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68e95a424127d15f0729039e0b81da10"><td class="memItemLeft" align="right" valign="top">logger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io.html#a68e95a424127d15f0729039e0b81da10">VW::io::create_custom_sink_logger</a> (void *context, void(*func)(void *, const std::string &amp;))</td></tr>
-<tr class="separator:a68e95a424127d15f0729039e0b81da10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f919c655b6f037f503cd1d2ec3701b1"><td class="memItemLeft" align="right" valign="top">logger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io.html#a4f919c655b6f037f503cd1d2ec3701b1">VW::io::create_custom_sink_logger</a> (void *context, logger_output_func_t func)</td></tr>
+<tr class="separator:a4f919c655b6f037f503cd1d2ec3701b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d082090958b291e909fe77f9c667138"><td class="memItemLeft" align="right" valign="top">logger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io.html#a6d082090958b291e909fe77f9c667138">VW::io::create_custom_sink_logger_legacy</a> (void *context, logger_legacy_output_func_t func)</td></tr>
+<tr class="separator:a6d082090958b291e909fe77f9c667138"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -141,7 +153,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 28 2022 15:56:37 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 28 2022 22:32:45 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

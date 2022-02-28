@@ -68,6 +68,7 @@ var searchData=
   ['done',['done',['../structparser.html#a73041b4f11e952967779e142d70f0e32',1,'parser']]],
   ['double',['Double',['../structVWReaderHandler.html#a9b1d990eb0240611a2f3ccce3afaa963',1,'VWReaderHandler']]],
   ['dr',['dr',['../namespaceVW.html#afc6602380e780c653a55bf44b6e5c881ab4688aaaaf17fad03225929fe56ad458',1,'VW']]],
+  ['driver_5foutput_5ffunc_5ft',['driver_output_func_t',['../namespaceVW.html#a58dd7d81c6029805118e521ef7696f80',1,'VW']]],
   ['dsjson',['dsjson',['../structinput__options.html#adbd9d55bfe27f7c844591e5840660ed8',1,'input_options']]],
   ['dsjson_5fmetrics',['dsjson_metrics',['../structdsjson__metrics.html',1,'']]],
   ['dsjsonnumberoflabelequalbaselinefirstslot',['DsjsonNumberOfLabelEqualBaselineFirstSlot',['../structdsjson__metrics.html#a8db5e6f6e3335784f99f1c32b71ae954',1,'dsjson_metrics']]],

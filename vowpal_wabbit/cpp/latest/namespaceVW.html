@@ -201,6 +201,8 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ae39ca8662fac3c3327f8a94b6dbc0b14"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ae39ca8662fac3c3327f8a94b6dbc0b14"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ae39ca8662fac3c3327f8a94b6dbc0b14">vector_pool</a> = <a class="el" href="structVW_1_1moved__object__pool.html">VW::moved_object_pool</a>&lt; std::vector&lt; T &gt; &gt;</td></tr>
 <tr class="separator:ae39ca8662fac3c3327f8a94b6dbc0b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58dd7d81c6029805118e521ef7696f80"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a58dd7d81c6029805118e521ef7696f80">driver_output_func_t</a> = void(*)(void *, const std::string &amp;)</td></tr>
+<tr class="separator:a58dd7d81c6029805118e521ef7696f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a909e5c86e4a38cb08ec00a0831dc105d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a909e5c86e4a38cb08ec00a0831dc105d">string_view</a> = nonstd::string_view</td></tr>
 <tr class="separator:a909e5c86e4a38cb08ec00a0831dc105d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -410,8 +412,11 @@ Functions</h2></td></tr>
 <tr class="separator:a7302611eef55f3a024f328b240f8e439"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bc59822edecfb2e609dd098c96a04e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVW_1_1workspace.html">VW::workspace</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a5bc59822edecfb2e609dd098c96a04e3">initialize_with_builder</a> (const std::string &amp;s, <a class="el" href="classio__buf.html">io_buf</a> *model=nullptr, bool skipModelLoad=false, <a class="el" href="error__reporting_8h.html#a98d6d6ac9c0371b98232d6c04df7ee99">trace_message_t</a> trace_listener=nullptr, void *trace_context=nullptr, std::unique_ptr&lt; <a class="el" href="structVW_1_1setup__base__i.html">VW::setup_base_i</a> &gt;=nullptr)</td></tr>
 <tr class="separator:a5bc59822edecfb2e609dd098c96a04e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a435759911ac1f45a66cb9677e4d761f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a435759911ac1f45a66cb9677e4d761f9">cmd_string_replace_value</a> (std::stringstream *&amp;ss, std::string flag_to_replace, const std::string &amp;new_value)</td></tr>
-<tr class="separator:a435759911ac1f45a66cb9677e4d761f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1acc44b163a8387d2198dda5e8a3ccbe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="future__compat_8h.html#a8b8610e8e86287f2b68275bf31acefb8">VW_WARNING_STATE_PUSH</a> <a class="el" href="future__compat_8h.html#a586b956b1f90b982afb6aa52a878f7cd">VW_WARNING_DISABLE_BADLY_FORMED_XML</a> std::unique_ptr&lt; <a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a1acc44b163a8387d2198dda5e8a3ccbe">initialize_experimental</a> (std::unique_ptr&lt; <a class="el" href="structVW_1_1config_1_1options__i.html">config::options_i</a> &gt; options, std::unique_ptr&lt; <a class="el" href="structVW_1_1io_1_1reader.html">VW::io::reader</a> &gt; model_override_reader=nullptr, <a class="el" href="namespaceVW.html#a58dd7d81c6029805118e521ef7696f80">driver_output_func_t</a> driver_output_func=nullptr, void *driver_output_func_context=nullptr, <a class="el" href="namespaceVW_1_1io.html#ac6a4933fbf7b93c637cd2f301cbb900f">VW::io::logger_output_func_t</a> logger_output_func=nullptr, void *logger_output_func_context=nullptr, std::unique_ptr&lt; <a class="el" href="structVW_1_1setup__base__i.html">VW::setup_base_i</a> &gt; setup_base=nullptr)</td></tr>
+<tr class="memdesc:a1acc44b163a8387d2198dda5e8a3ccbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a workspace. This interface is currently experimental, but will replace the existing array of initialize functions.  <a href="#a1acc44b163a8387d2198dda5e8a3ccbe">More...</a><br /></td></tr>
+<tr class="separator:a1acc44b163a8387d2198dda5e8a3ccbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa899e7b0b12a4f5b31ee9c88fcf79603"><td class="memItemLeft" align="right" valign="top"><a class="el" href="future__compat_8h.html#a2d17cd6c08058ed32e5fb9dc77629280">VW_WARNING_STATE_POP</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#aa899e7b0b12a4f5b31ee9c88fcf79603">cmd_string_replace_value</a> (std::stringstream *&amp;ss, std::string flag_to_replace, const std::string &amp;new_value)</td></tr>
+<tr class="separator:aa899e7b0b12a4f5b31ee9c88fcf79603"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54e76507ba333ccaf9eeb58a40fb712c"><td class="memItemLeft" align="right" valign="top">char **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a54e76507ba333ccaf9eeb58a40fb712c">to_argv</a> (std::string const &amp;s, int &amp;argc)</td></tr>
 <tr class="separator:a54e76507ba333ccaf9eeb58a40fb712c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa53638dfb7741e4f9934805338d539c"><td class="memItemLeft" align="right" valign="top">char **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#aaa53638dfb7741e4f9934805338d539c">to_argv_escaped</a> (std::string const &amp;s, int &amp;argc)</td></tr>
@@ -420,10 +425,11 @@ Functions</h2></td></tr>
 <tr class="separator:a015a165994e26522f321eef57a990ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a380938edfb77928b82057e47333b0b30"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a380938edfb77928b82057e47333b0b30">are_features_compatible</a> (<a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;vw1, <a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;vw2)</td></tr>
 <tr class="separator:a380938edfb77928b82057e47333b0b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20df3866bc7e212ae51fa9f50b764e78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a20df3866bc7e212ae51fa9f50b764e78">finish</a> (<a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;all, bool delete_all=true)</td></tr>
-<tr class="separator:a20df3866bc7e212ae51fa9f50b764e78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb5f90dd1d333be875f8c2e0797344e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#adb5f90dd1d333be875f8c2e0797344e6">sync_stats</a> (<a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;all)</td></tr>
-<tr class="separator:adb5f90dd1d333be875f8c2e0797344e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad03bc6dcdc5b741c04f0648dc5096db4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="future__compat_8h.html#a8b8610e8e86287f2b68275bf31acefb8">VW_WARNING_STATE_PUSH</a> <a class="el" href="future__compat_8h.html#a586b956b1f90b982afb6aa52a878f7cd">VW_WARNING_DISABLE_BADLY_FORMED_XML</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ad03bc6dcdc5b741c04f0648dc5096db4">finish</a> (<a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;all, bool delete_all=true)</td></tr>
+<tr class="memdesc:ad03bc6dcdc5b741c04f0648dc5096db4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call <a class="el" href="namespaceVW.html#ad03bc6dcdc5b741c04f0648dc5096db4" title="Call finish() after you are done with the vw instance. This cleans up memory usage if delete_all is t...">finish()</a> after you are done with the vw instance. This cleans up memory usage if delete_all is true. Finish will cause final stat printouts and model serialization to occur. IMPORTANT: If lifetime is managed by a unique_ptr from initialize_experimental, then you must call this with delete_all = false.  <a href="#ad03bc6dcdc5b741c04f0648dc5096db4">More...</a><br /></td></tr>
+<tr class="separator:ad03bc6dcdc5b741c04f0648dc5096db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2503f6bd0197fb5207fde06a924f71f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="future__compat_8h.html#a2d17cd6c08058ed32e5fb9dc77629280">VW_WARNING_STATE_POP</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a2503f6bd0197fb5207fde06a924f71f6">sync_stats</a> (<a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;all)</td></tr>
+<tr class="separator:a2503f6bd0197fb5207fde06a924f71f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6238d1a7d724d7343ee052dc696eb7ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a6238d1a7d724d7343ee052dc696eb7ae">start_parser</a> (<a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;all)</td></tr>
 <tr class="separator:a6238d1a7d724d7343ee052dc696eb7ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5de08c7ab3051ed4990832c4991cd6c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a5de08c7ab3051ed4990832c4991cd6c1">end_parser</a> (<a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;all)</td></tr>
@@ -557,6 +563,20 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">using VW::decision_scores_t = typedef std::vector&lt;<a class="el" href="namespaceACTION__SCORE.html#a19b4924cbde0701f86192906861fae94">ACTION_SCORE::action_scores</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a58dd7d81c6029805118e521ef7696f80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58dd7d81c6029805118e521ef7696f80">&#9670;&nbsp;</a></span>driver_output_func_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using VW::driver_output_func_t = typedef void (*)(void*, const std::string&amp;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1187,14 +1207,14 @@ template&lt;typename RetType , typename InputType &gt; </div>
 
 </div>
 </div>
-<a id="a435759911ac1f45a66cb9677e4d761f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a435759911ac1f45a66cb9677e4d761f9">&#9670;&nbsp;</a></span>cmd_string_replace_value()</h2>
+<a id="aa899e7b0b12a4f5b31ee9c88fcf79603"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa899e7b0b12a4f5b31ee9c88fcf79603">&#9670;&nbsp;</a></span>cmd_string_replace_value()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void VW::cmd_string_replace_value </td>
+          <td class="memname"><a class="el" href="future__compat_8h.html#a2d17cd6c08058ed32e5fb9dc77629280">VW_WARNING_STATE_POP</a> void VW::cmd_string_replace_value </td>
           <td>(</td>
           <td class="paramtype">std::stringstream *&amp;&#160;</td>
           <td class="paramname"><em>ss</em>, </td>
@@ -1620,14 +1640,14 @@ template&lt;typename RetType , typename InputType &gt; </div>
 
 </div>
 </div>
-<a id="a20df3866bc7e212ae51fa9f50b764e78"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20df3866bc7e212ae51fa9f50b764e78">&#9670;&nbsp;</a></span>finish()</h2>
+<a id="ad03bc6dcdc5b741c04f0648dc5096db4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad03bc6dcdc5b741c04f0648dc5096db4">&#9670;&nbsp;</a></span>finish()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void VW::finish </td>
+          <td class="memname"><a class="el" href="future__compat_8h.html#a8b8610e8e86287f2b68275bf31acefb8">VW_WARNING_STATE_PUSH</a> <a class="el" href="future__compat_8h.html#a586b956b1f90b982afb6aa52a878f7cd">VW_WARNING_DISABLE_BADLY_FORMED_XML</a> void VW::finish </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;&#160;</td>
           <td class="paramname"><em>all</em>, </td>
@@ -1645,6 +1665,15 @@ template&lt;typename RetType , typename InputType &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Call <a class="el" href="namespaceVW.html#ad03bc6dcdc5b741c04f0648dc5096db4" title="Call finish() after you are done with the vw instance. This cleans up memory usage if delete_all is t...">finish()</a> after you are done with the vw instance. This cleans up memory usage if delete_all is true. Finish will cause final stat printouts and model serialization to occur. IMPORTANT: If lifetime is managed by a unique_ptr from initialize_experimental, then you must call this with delete_all = false. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">all</td><td>workspace to be finished </td></tr>
+    <tr><td class="paramname">delete_all</td><td>whethere to also also call delete on this instance. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -2874,6 +2903,79 @@ template&lt;size_t num_cols&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1acc44b163a8387d2198dda5e8a3ccbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1acc44b163a8387d2198dda5e8a3ccbe">&#9670;&nbsp;</a></span>initialize_experimental()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="future__compat_8h.html#a8b8610e8e86287f2b68275bf31acefb8">VW_WARNING_STATE_PUSH</a> <a class="el" href="future__compat_8h.html#a586b956b1f90b982afb6aa52a878f7cd">VW_WARNING_DISABLE_BADLY_FORMED_XML</a> std::unique_ptr&lt;<a class="el" href="structVW_1_1workspace.html">VW::workspace</a>&gt; VW::initialize_experimental </td>
+          <td>(</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="structVW_1_1config_1_1options__i.html">config::options_i</a> &gt;&#160;</td>
+          <td class="paramname"><em>options</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="structVW_1_1io_1_1reader.html">VW::io::reader</a> &gt;&#160;</td>
+          <td class="paramname"><em>model_override_reader</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceVW.html#a58dd7d81c6029805118e521ef7696f80">driver_output_func_t</a>&#160;</td>
+          <td class="paramname"><em>driver_output_func</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>driver_output_func_context</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceVW_1_1io.html#ac6a4933fbf7b93c637cd2f301cbb900f">VW::io::logger_output_func_t</a>&#160;</td>
+          <td class="paramname"><em>logger_output_func</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>logger_output_func_context</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="structVW_1_1setup__base__i.html">VW::setup_base_i</a> &gt;&#160;</td>
+          <td class="paramname"><em>setup_base</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize a workspace. This interface is currently experimental, but will replace the existing array of initialize functions. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">options</td><td>The options to initialize the workspace with. Usually an instance of <a class="el" href="structVW_1_1config_1_1options__cli.html">VW::config::options_cli</a>. </td></tr>
+    <tr><td class="paramname">model_override_reader</td><td>optional reading source to read the model from. Will override any model specified on the command line. </td></tr>
+    <tr><td class="paramname">driver_output_func</td><td>optional function to forward driver ouput to </td></tr>
+    <tr><td class="paramname">driver_output_func_context</td><td>context for driver_output_func </td></tr>
+    <tr><td class="paramname">logger_output_func</td><td>optional function to forward logger ouput to </td></tr>
+    <tr><td class="paramname">logger_output_func_context</td><td>context for logger_output_func </td></tr>
+    <tr><td class="paramname">setup_base</td><td>optional advanced override of reduction stack </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::unique_ptr&lt;VW::workspace&gt; initialized workspace </dd></dl>
 
 </div>
 </div>
@@ -4311,14 +4413,14 @@ template&lt;typename T &gt; </div>
 <p>#### Example: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> use_widget(widget&amp; my_widget)</div><div class="line">{</div><div class="line">  <span class="keyword">auto</span> new_widget_value = ::get_new_widget_value();</div><div class="line">  <span class="keyword">auto</span> temp = std::move(my_widget.value);</div><div class="line">  my_widget.value = std::move(new_widget_value);</div><div class="line"></div><div class="line">  do_thing_with_widget(my_widget);</div><div class="line"></div><div class="line">  new_widget_value = std::move(my_widget.value);</div><div class="line">  my_widget.value = std::move(temp);</div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">// Can be replaced with:</span></div><div class="line"></div><div class="line"><span class="keywordtype">void</span> use_widget(widget&amp; my_widget)</div><div class="line">{</div><div class="line">  <span class="keyword">auto</span> guard = <a class="code" href="namespaceVW.html#a6dc3954a86b00e3084579296a5cce290">VW::swap_guard</a>(my_widget.value, ::get_new_widget_value(););</div><div class="line">  do_thing_with_widget(my_widget);</div><div class="line">}</div></div><!-- fragment --> 
 </div>
 </div>
-<a id="adb5f90dd1d333be875f8c2e0797344e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb5f90dd1d333be875f8c2e0797344e6">&#9670;&nbsp;</a></span>sync_stats()</h2>
+<a id="a2503f6bd0197fb5207fde06a924f71f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2503f6bd0197fb5207fde06a924f71f6">&#9670;&nbsp;</a></span>sync_stats()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void VW::sync_stats </td>
+          <td class="memname"><a class="el" href="future__compat_8h.html#a2d17cd6c08058ed32e5fb9dc77629280">VW_WARNING_STATE_POP</a> void VW::sync_stats </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;&#160;</td>
           <td class="paramname"><em>all</em></td><td>)</td>
@@ -4800,7 +4902,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 28 2022 15:56:37 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 28 2022 22:32:45 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
