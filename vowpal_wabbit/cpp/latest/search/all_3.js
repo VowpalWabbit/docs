@@ -214,7 +214,7 @@ var searchData=
   ['cost_5fsensitive_2eh',['cost_sensitive.h',['../cost__sensitive_8h.html',1,'']]],
   ['costs',['costs',['../structCB_1_1label.html#a6e14bf93d493b2de26f8c4b85ffb2e9f',1,'CB::label::costs()'],['../structVW_1_1cb__continuous_1_1continuous__label.html#a5c8df23cff8932da98096a22ce4b2bf7',1,'VW::cb_continuous::continuous_label::costs()'],['../structCOST__SENSITIVE_1_1label.html#a08bee823d36bdd550db79c4d3a22299a',1,'COST_SENSITIVE::label::costs()']]],
   ['count',['count',['../structGD_1_1multipredict__info.html#a45e42ef1577c53c56eaad9fcd0d83cc0',1,'GD::multipredict_info']]],
-  ['count_5flabel',['count_label',['../best__constant_8h.html#a9c2325f18b5809fcf84f7e8441fb7b94',1,'best_constant.h']]],
+  ['count_5flabel',['count_label',['../namespaceVW.html#ade7c66e76f0dc0b979504435741b275b',1,'VW']]],
   ['count_5flabel_2eh',['count_label.h',['../count__label_8h.html',1,'']]],
   ['count_5flabel_5fsetup',['count_label_setup',['../namespaceVW.html#a8013fe45918cccb9dbf6ed09cc5e5105',1,'VW']]],
   ['count_5fnon_5fzero_5fcost',['count_non_zero_cost',['../structVW_1_1cb__explore__adf_1_1cb__explore__metrics.html#aeac5d14dfc7aa32b3cca61dc81e14142',1,'VW::cb_explore_adf::cb_explore_metrics']]],

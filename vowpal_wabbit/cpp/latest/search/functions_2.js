@@ -74,7 +74,7 @@ var searchData=
   ['copy_5fexample_5fto_5fadf',['copy_example_to_adf',['../structcbify__adf__data.html#a692d9b442b99fec22801f75029baa4e9',1,'cbify_adf_data']]],
   ['copy_5foffsets',['copy_offsets',['../classdense__parameters.html#a1f23bd502c41c3782e4fe2fe68f7aeb8',1,'dense_parameters']]],
   ['copy_5fto',['copy_to',['../classio__buf.html#a6fc5dfa66ea7487155fcafd57a45ec90',1,'io_buf']]],
-  ['count_5flabel',['count_label',['../best__constant_8h.html#a9c2325f18b5809fcf84f7e8441fb7b94',1,'best_constant.h']]],
+  ['count_5flabel',['count_label',['../namespaceVW.html#ade7c66e76f0dc0b979504435741b275b',1,'VW']]],
   ['count_5flabel_5fsetup',['count_label_setup',['../namespaceVW.html#a8013fe45918cccb9dbf6ed09cc5e5105',1,'VW']]],
   ['create_5fbuffer_5fview',['create_buffer_view',['../namespaceVW_1_1io.html#a64fffb68e0d290a508476f0c8b160694',1,'VW::io']]],
   ['create_5fcustom_5fsink_5flogger',['create_custom_sink_logger',['../namespaceVW_1_1io.html#a68e95a424127d15f0729039e0b81da10',1,'VW::io']]],

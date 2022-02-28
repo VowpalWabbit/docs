@@ -21,7 +21,7 @@ var searchData=
   ['scored_5fconfig',['scored_config',['../structVW_1_1scored__config.html#a97f4b7c4a4cb0342bca75c9db5783162',1,'VW::scored_config::scored_config()'],['../structVW_1_1scored__config.html#ac5605fccaa38bbecbef7d6fff491384a',1,'VW::scored_config::scored_config(double alpha, double tau)']]],
   ['scorer_5fsetup',['scorer_setup',['../scorer_8h.html#a03d68d4fa0b2d498af8ef5741fce794f',1,'scorer.h']]],
   ['search',['search',['../structSearch_1_1search.html#a43f210a82e87d89f35b5e2b4464172a7',1,'Search::search']]],
-  ['second_5fderivative',['second_derivative',['../classloss__function.html#a83379a81b39a5e48b0919616f4c1435d',1,'loss_function']]],
+  ['second_5fderivative',['second_derivative',['../classloss__function.html#aee9b80f741319e6d43c3589024af6051',1,'loss_function']]],
   ['seed_5fvw_5fmodel',['seed_vw_model',['../namespaceVW.html#a04498066bbc429f1d3a6970d37c1133a',1,'VW']]],
   ['seeded',['seeded',['../classsparse__parameters.html#afe0647e417782979ac74fba9d0cf731c',1,'sparse_parameters::seeded()'],['../classparameters.html#a11a0f9a4f1185cf951842710f4f12b9a',1,'parameters::seeded()'],['../classdense__parameters.html#a0fb1f66bd20de6ae10ae9724c375c04f',1,'dense_parameters::seeded()']]],
   ['sender_5fsetup',['sender_setup',['../sender_8h.html#aa96487cada103cbc79addeb519009c21',1,'sender.h']]],
