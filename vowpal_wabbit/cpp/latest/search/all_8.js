@@ -24,7 +24,6 @@ var searchData=
   ['hasher',['hasher',['../structparser.html#a55a42ce8e7ad6637f28bc40d95356b21',1,'parser']]],
   ['hashstring',['hashstring',['../hashstring_8h.html#ad0c610591e5f64e2d6e5753b6f4266f8',1,'hashstring.h']]],
   ['hashstring_2eh',['hashstring.h',['../hashstring_8h.html',1,'']]],
-  ['head',['head',['../structVW_1_1config_1_1typelist.html#a53badf648cb2451504736dc2a9e02d3e',1,'VW::config::typelist']]],
   ['help',['help',['../structVW_1_1config_1_1option__builder.html#af0ab17d905621f08b1545d575c132dab',1,'VW::config::option_builder']]],
   ['help_5fformatter',['help_formatter',['../structVW_1_1config_1_1help__formatter.html',1,'VW::config']]],
   ['help_5fformatter_2eh',['help_formatter.h',['../help__formatter_8h.html',1,'']]],
