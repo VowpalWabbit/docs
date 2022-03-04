@@ -10,6 +10,8 @@ var searchData=
   ['dedup_5fexamples',['dedup_examples',['../structContext.html#af45375bccfe1e0725d50a5d2dc208833',1,'Context']]],
   ['default_5falpha',['DEFAULT_ALPHA',['../distributionally__robust_8h.html#aa0c9ea16a765d63a4294d81a9225148c',1,'distributionally_robust.h']]],
   ['default_5fbits',['default_bits',['../structVW_1_1workspace.html#a46b7fcede46b35c05fe6d09d25d90c5e',1,'VW::workspace']]],
+  ['default_5ffloat_5fformatting_5fdecimal_5fprecision',['DEFAULT_FLOAT_FORMATTING_DECIMAL_PRECISION',['../namespaceVW.html#af8eb5e597fb5fed66f7621c69136c5f7',1,'VW']]],
+  ['default_5ffloat_5fprecision',['DEFAULT_FLOAT_PRECISION',['../namespaceVW.html#aef06ce0bb4447dff21e8a131b7a4a0b8',1,'VW']]],
   ['default_5ffloat_5ftolerance',['DEFAULT_FLOAT_TOLERANCE',['../namespaceVW_1_1math.html#ab96338c13291d2355a5bfa3264d06d7d',1,'VW::math']]],
   ['default_5flabel',['default_label',['../structlabel__parser.html#ab967e4cb5b5de41e9f8104cef66b042a',1,'label_parser']]],
   ['default_5flog',['default_log',['../structvw__dbg.html#a6c974ade8e99bfb1565c62d2f715b3e2',1,'vw_dbg']]],

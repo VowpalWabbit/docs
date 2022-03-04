@@ -13,6 +13,7 @@ var searchData=
   ['continuous_5faction',['continuous_action',['../namespaceVW_1_1continuous__action.html',1,'VW']]],
   ['continuous_5factions',['continuous_actions',['../namespaceVW_1_1continuous__actions.html',1,'VW']]],
   ['cover',['cover',['../namespaceVW_1_1cb__explore__adf_1_1cover.html',1,'VW::cb_explore_adf']]],
+  ['debug',['debug',['../namespaceVW_1_1debug.html',1,'VW']]],
   ['details',['details',['../namespaceVW_1_1automl_1_1details.html',1,'VW::automl::details'],['../namespaceVW_1_1config_1_1details.html',1,'VW::config::details'],['../namespaceVW_1_1details.html',1,'VW::details'],['../namespaceVW_1_1io_1_1details.html',1,'VW::io::details'],['../namespaceVW_1_1model__utils_1_1details.html',1,'VW::model_utils::details']]],
   ['distributionally_5frobust',['distributionally_robust',['../namespaceVW_1_1distributionally__robust.html',1,'VW']]],
   ['error_5fcode',['error_code',['../namespaceVW_1_1experimental_1_1error__code.html',1,'VW::experimental']]],

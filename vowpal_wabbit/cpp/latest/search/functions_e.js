@@ -49,7 +49,7 @@ var searchData=
   ['print_5fupdate_5fslates',['print_update_slates',['../namespaceVW.html#a6ebb701f73e316db2ecc4c297b52738b',1,'VW']]],
   ['print_5fupdate_5fwith_5fprobability',['print_update_with_probability',['../namespaceMULTICLASS.html#a41ad4a34660f94a725de77c2861268d6',1,'MULTICLASS']]],
   ['print_5fupdate_5fwith_5fscore',['print_update_with_score',['../namespaceMULTICLASS.html#a4e6ab64f5e21359273361943c12bb8bd',1,'MULTICLASS']]],
-  ['prob_5fdist_5fpred_5fto_5fstring',['prob_dist_pred_to_string',['../example_8h.html#affb82c9caa64bd4625c3a88cfd810317',1,'example.h']]],
+  ['prob_5fdist_5fpred_5fto_5fstring',['prob_dist_pred_to_string',['../namespaceVW_1_1debug.html#a1211af86973a94d79e75cb0072a14020',1,'VW::debug']]],
   ['probability_5fdensity_5ffunction_5fvalue',['probability_density_function_value',['../structVW_1_1continuous__actions_1_1probability__density__function__value.html#a55690d149fe5493d2667cd9b1c8ba30c',1,'VW::continuous_actions::probability_density_function_value::probability_density_function_value()=default'],['../structVW_1_1continuous__actions_1_1probability__density__function__value.html#ae25d76915a1a1363bb98e126245b62d1',1,'VW::continuous_actions::probability_density_function_value::probability_density_function_value(float action, float pdf_value)']]],
   ['process_5fcubic_5finteraction',['process_cubic_interaction',['../namespaceINTERACTIONS.html#ab7abecaa30d2da53976732595d9fa361',1,'INTERACTIONS']]],
   ['process_5fgeneric_5finteraction',['process_generic_interaction',['../namespaceINTERACTIONS.html#ad566668c70b5dec4f9cae61f7bf7461d',1,'INTERACTIONS']]],

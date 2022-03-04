@@ -86,7 +86,7 @@ var searchData=
   ['cb_5fexplore_5fsetup',['cb_explore_setup',['../cb__explore_8h.html#af68accd5234e73d6cd17fec919b0ad3c',1,'cb_explore.h']]],
   ['cb_5flabel',['cb_label',['../classLabelObjectState.html#abfeca2588607b65014d22b5fb410c05e',1,'LabelObjectState::cb_label()'],['../namespaceCB.html#a53f211db30bb394a7e31aca72a7f4ff7',1,'CB::cb_label()']]],
   ['cb_5flabel_5fparser_2eh',['cb_label_parser.h',['../cb__label__parser_8h.html',1,'']]],
-  ['cb_5flabel_5fto_5fstring',['cb_label_to_string',['../example_8h.html#a348468f2000b1fdf32bb76c4c7c837be',1,'example.h']]],
+  ['cb_5flabel_5fto_5fstring',['cb_label_to_string',['../namespaceVW_1_1debug.html#a3910c7824a695a246dfd15a2ff3fadc6',1,'VW::debug']]],
   ['cb_5fsample',['cb_sample',['../structvw__dbg.html#a8faccb518a038876e6cdbf74ecf7b951',1,'vw_dbg']]],
   ['cb_5fsample_2eh',['cb_sample.h',['../cb__sample_8h.html',1,'']]],
   ['cb_5fsample_5fpdf',['cb_sample_pdf',['../structvw__dbg.html#acf5ffed9153e36f6944663a79f3de898',1,'vw_dbg']]],
