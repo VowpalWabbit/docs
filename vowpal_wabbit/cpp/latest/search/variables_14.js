@@ -1,7 +1,7 @@
 var searchData=
 [
   ['t',['t',['../structshared__data.html#a40b662eb223f0c8fa01ad05494b7e08b',1,'shared_data']]],
-  ['tag',['tag',['../structexample.html#ae05e98faef8389156ebb6d8f823ca378',1,'example::tag()'],['../structflat__example.html#a2e238b318b87c4dc13a5ad84d4dfc466',1,'flat_example::tag()']]],
+  ['tag',['tag',['../structexample.html#acaab7394cd67a2af85ee91c9a28f6d4f',1,'example::tag()'],['../structflat__example.html#a2e238b318b87c4dc13a5ad84d4dfc466',1,'flat_example::tag()']]],
   ['tag_5flen',['tag_len',['../structflat__example.html#a5fcf4765dd1c6d05cfb4f5501f84b127',1,'flat_example']]],
   ['tag_5fstate',['tag_state',['../structContext.html#aa6d1824e347151def7ebfe71586de5a0',1,'Context']]],
   ['task',['task',['../namespaceDepParserTask.html#a30fa83f93eb80f206e38dcb30c86a282',1,'DepParserTask::task()'],['../namespaceEntityRelationTask.html#acbc7d9b16ae9f0350fcd8b5d7091203a',1,'EntityRelationTask::task()'],['../namespaceGraphTask.html#aac9dec212f834eb3627fb692ff1f360e',1,'GraphTask::task()'],['../namespaceHookTask.html#ad6d4e76d26a7204f7ff5823e54a915c6',1,'HookTask::task()'],['../namespaceMulticlassTask.html#abd78c1450628c6d41ecf06b1df7f62b9',1,'MulticlassTask::task()'],['../namespaceSequenceTask.html#a5dbf798597bbe088538470af58dce9e1',1,'SequenceTask::task()'],['../namespaceSequenceSpanTask.html#a1a593028b8e39ec9c704258ac57864d0',1,'SequenceSpanTask::task()'],['../namespaceSequenceTaskCostToGo.html#a59cb7b8fdf76dc0bf4df56b14154194a',1,'SequenceTaskCostToGo::task()'],['../namespaceArgmaxTask.html#a0696433f27fcb50aad99db57dad89e23',1,'ArgmaxTask::task()'],['../namespaceSequenceTask__DemoLDF.html#a922359b40526d5ada023c945cb4812c8',1,'SequenceTask_DemoLDF::task()']]],
@@ -9,7 +9,7 @@ var searchData=
   ['task_5fname',['task_name',['../structSearch_1_1search.html#a4864e478d4bb7af53e04a84cec754e3b',1,'Search::search::task_name()'],['../structSearch_1_1search__task.html#ad2c6420e44a300be33991333d9be5190',1,'Search::search_task::task_name()']]],
   ['test_5flabel',['test_label',['../structlabel__parser.html#a32fb1836c87a47252571be87a0b1ac7d',1,'label_parser']]],
   ['test_5fonly',['test_only',['../structexample.html#aafed65a0405faa864c87b8b75d39ef4d',1,'example']]],
-  ['text_5freader',['text_reader',['../structparser.html#a78bfff4214bd617918bf7a989b5dd971',1,'parser']]],
+  ['text_5freader',['text_reader',['../structparser.html#aae152507f5283789cef52cc608fd77ad',1,'parser']]],
   ['text_5fregressor_5fname',['text_regressor_name',['../structVW_1_1workspace.html#aa0641fbbfdbea79b75a96952742241be',1,'VW::workspace']]],
   ['text_5fstate',['text_state',['../structContext.html#ac34c3323257dbeacad07e50c8444c4d8',1,'Context']]],
   ['the_5flabel_5fparser',['the_label_parser',['../namespaceVW_1_1cb__continuous.html#a22672447d48d9395f3e5220cbd36a757',1,'VW::cb_continuous']]],

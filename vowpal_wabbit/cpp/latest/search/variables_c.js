@@ -11,7 +11,7 @@ var searchData=
   ['label_5fsingle_5fproperty_5fstate',['label_single_property_state',['../structContext.html#a5ad5225510ed6a3d777c89f50ba72746',1,'Context']]],
   ['label_5fstate',['label_state',['../structContext.html#a3c166b5e671667715c4c7e673dfc9afb',1,'Context']]],
   ['label_5ftype',['label_type',['../structlabel__parser.html#a8416deaa2da9244903550c9d1339dc4a',1,'label_parser']]],
-  ['label_5fv',['label_v',['../structMULTILABEL_1_1labels.html#ae9b968050adb2459463cffec3b4c38c4',1,'MULTILABEL::labels']]],
+  ['label_5fv',['label_v',['../structMULTILABEL_1_1labels.html#ab0696074f47cd7bfa8493108754c1c03',1,'MULTILABEL::labels']]],
   ['labeled',['labeled',['../structVW_1_1slates_1_1label.html#a8ee43031c61a9a8a56d4c05bbec341ac',1,'VW::slates::label']]],
   ['last_5fcompatible_5fversion',['LAST_COMPATIBLE_VERSION',['../namespaceVW_1_1version__definitions.html#a705965b39b52128f510483ca9d116135',1,'VW::version_definitions']]],
   ['last_5fcorrect_5fcost',['last_correct_cost',['../structGEN__CS_1_1cb__to__cs.html#a84aed12d3c21ee450ffcc3128e3db994',1,'GEN_CS::cb_to_cs']]],

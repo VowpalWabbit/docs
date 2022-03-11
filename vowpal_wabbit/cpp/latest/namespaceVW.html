@@ -178,6 +178,12 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1strict__parse__exception.html">strict_parse_exception</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1v__array.html">v_array</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a diagnostic overload used to prevent <a class="el" href="structVW_1_1v__array.html" title="This is a diagnostic overload used to prevent v_array from being used with types that are not trivial...">v_array</a> from being used with types that are not trivially copyable.  <a href="structVW_1_1v__array.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1v__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_b889746ac0d5b5a66c0cc84b6b35321b.html">v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structVW_1_1v__array.html" title="This is a diagnostic overload used to prevent v_array from being used with types that are not trivial...">v_array</a> is a container type that makes use of realloc for efficiency. However, it is only safe to use trivially copyable types, as std::realloc may do a memcpy if a new piece of memory must be allocated.  <a href="structVW_1_1v__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_b889746ac0d5b5a66c0cc84b6b35321b.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1version__struct.html">version_struct</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1vw__argument__disagreement__exception.html">vw_argument_disagreement_exception</a></td></tr>
@@ -193,14 +199,14 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a2c2dd5a57f72da299c6d8737ccc18c1f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a2c2dd5a57f72da299c6d8737ccc18c1f">decision_scores_t</a> = std::vector&lt; <a class="el" href="namespaceACTION__SCORE.html#a19b4924cbde0701f86192906861fae94">ACTION_SCORE::action_scores</a> &gt;</td></tr>
+<tr class="memitem:a2c2dd5a57f72da299c6d8737ccc18c1f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a2c2dd5a57f72da299c6d8737ccc18c1f">decision_scores_t</a> = std::vector&lt; <a class="el" href="namespaceACTION__SCORE.html#a73cec56adace2b62e070a0686309704c">ACTION_SCORE::action_scores</a> &gt;</td></tr>
 <tr class="separator:a2c2dd5a57f72da299c6d8737ccc18c1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28e15f52840539d6b0c56aa196e11278"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a28e15f52840539d6b0c56aa196e11278">example_factory_t</a> = <a class="el" href="structexample.html">example</a> &amp;(*)(void *)</td></tr>
 <tr class="separator:a28e15f52840539d6b0c56aa196e11278"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8643b24faaf7720a7f1544bde47f4a5a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a8643b24faaf7720a7f1544bde47f4a5a">reduction_setup_fn</a> = <a class="el" href="namespaceVW_1_1LEARNER.html#ab481a83a0a49d7b827babe725e135b20">VW::LEARNER::base_learner</a> *(*)(<a class="el" href="structVW_1_1setup__base__i.html">VW::setup_base_i</a> &amp;)</td></tr>
 <tr class="separator:a8643b24faaf7720a7f1544bde47f4a5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07630cfca8cc0e4357e1dfc3dc9219ad"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a07630cfca8cc0e4357e1dfc3dc9219ad"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a07630cfca8cc0e4357e1dfc3dc9219ad">v_array_pool</a> = <a class="el" href="structVW_1_1moved__object__pool.html">VW::moved_object_pool</a>&lt; <a class="el" href="structv__array.html">v_array</a>&lt; T &gt; &gt;</td></tr>
+<tr class="memitem:a07630cfca8cc0e4357e1dfc3dc9219ad"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a07630cfca8cc0e4357e1dfc3dc9219ad">v_array_pool</a> = <a class="el" href="structVW_1_1moved__object__pool.html">VW::moved_object_pool</a>&lt; <a class="el" href="structVW_1_1v__array.html">v_array</a>&lt; T &gt; &gt;</td></tr>
 <tr class="separator:a07630cfca8cc0e4357e1dfc3dc9219ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae39ca8662fac3c3327f8a94b6dbc0b14"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ae39ca8662fac3c3327f8a94b6dbc0b14"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ae39ca8662fac3c3327f8a94b6dbc0b14">vector_pool</a> = <a class="el" href="structVW_1_1moved__object__pool.html">VW::moved_object_pool</a>&lt; std::vector&lt; T &gt; &gt;</td></tr>
@@ -275,7 +281,7 @@ Functions</h2></td></tr>
 <tr class="separator:a1ba263e76513d7a0c4c65248cfcabc37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8becc8ccd3691b01f9bd6872675c9e9"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ac8becc8ccd3691b01f9bd6872675c9e9">action_score_compare_gt</a> (const <a class="el" href="structACTION__SCORE_1_1action__score.html">ACTION_SCORE::action_score</a> &amp;left, const <a class="el" href="structACTION__SCORE_1_1action__score.html">ACTION_SCORE::action_score</a> &amp;right)</td></tr>
 <tr class="separator:ac8becc8ccd3691b01f9bd6872675c9e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4167ceb0fcc278189712317154544cb"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ad4167ceb0fcc278189712317154544cb">to_string</a> (const <a class="el" href="namespaceACTION__SCORE.html#a19b4924cbde0701f86192906861fae94">ACTION_SCORE::action_scores</a> &amp;action_scores_or_probs, int decimal_precision=<a class="el" href="namespaceVW.html#aef06ce0bb4447dff21e8a131b7a4a0b8">DEFAULT_FLOAT_PRECISION</a>)</td></tr>
+<tr class="memitem:ad4167ceb0fcc278189712317154544cb"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ad4167ceb0fcc278189712317154544cb">to_string</a> (const <a class="el" href="namespaceACTION__SCORE.html#a73cec56adace2b62e070a0686309704c">ACTION_SCORE::action_scores</a> &amp;action_scores_or_probs, int decimal_precision=<a class="el" href="namespaceVW.html#aef06ce0bb4447dff21e8a131b7a4a0b8">DEFAULT_FLOAT_PRECISION</a>)</td></tr>
 <tr class="separator:ad4167ceb0fcc278189712317154544cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99900dca096264e830ebf2adbb6df04b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a99900dca096264e830ebf2adbb6df04b">to_string</a> (const <a class="el" href="structVW_1_1active__multiclass__prediction.html">VW::active_multiclass_prediction</a> &amp;active_multiclass)</td></tr>
 <tr class="separator:a99900dca096264e830ebf2adbb6df04b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -287,7 +293,7 @@ Functions</h2></td></tr>
 <tr class="separator:a485bcb8042f95f793e61258434951898"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb098b696c5d4ffb0bea3005932c991d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#adb098b696c5d4ffb0bea3005932c991d">write_example_to_cache</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;output, <a class="el" href="structexample.html">example</a> *ae, <a class="el" href="structlabel__parser.html">label_parser</a> &amp;lbl_parser, uint64_t parse_mask, <a class="el" href="structVW_1_1details_1_1cache__temp__buffer.html">VW::details::cache_temp_buffer</a> &amp;temp_buffer)</td></tr>
 <tr class="separator:adb098b696c5d4ffb0bea3005932c991d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1eb9ea0a152a9f4e903be7f706fd8a0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ad1eb9ea0a152a9f4e903be7f706fd8a0">read_example_from_cache</a> (<a class="el" href="structVW_1_1workspace.html">VW::workspace</a> *all, <a class="el" href="classio__buf.html">io_buf</a> &amp;buf, <a class="el" href="structv__array.html">v_array</a>&lt; <a class="el" href="structexample.html">example</a> *&gt; &amp;examples)</td></tr>
+<tr class="memitem:ad1eb9ea0a152a9f4e903be7f706fd8a0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ad1eb9ea0a152a9f4e903be7f706fd8a0">read_example_from_cache</a> (<a class="el" href="structVW_1_1workspace.html">VW::workspace</a> *all, <a class="el" href="classio__buf.html">io_buf</a> &amp;buf, <a class="el" href="structVW_1_1v__array.html">v_array</a>&lt; <a class="el" href="structexample.html">example</a> *&gt; &amp;examples)</td></tr>
 <tr class="separator:ad1eb9ea0a152a9f4e903be7f706fd8a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8b6f58cf4c2edc3019e662d42f0bd60"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ab8b6f58cf4c2edc3019e662d42f0bd60">to_string</a> (const <a class="el" href="structVW_1_1cb__continuous_1_1continuous__label__elm.html">cb_continuous::continuous_label_elm</a> &amp;elm, int decimal_precision=<a class="el" href="namespaceVW.html#aef06ce0bb4447dff21e8a131b7a4a0b8">DEFAULT_FLOAT_PRECISION</a>)</td></tr>
 <tr class="separator:ab8b6f58cf4c2edc3019e662d42f0bd60"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -317,9 +323,9 @@ Functions</h2></td></tr>
 <tr class="separator:a438340cadb70ab8eb3e461e3e8106b00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b843d55755ec5a44f188d38c5f6fc92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a1b843d55755ec5a44f188d38c5f6fc92">setup_example</a> (<a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;all, <a class="el" href="structexample.html">example</a> *ae)</td></tr>
 <tr class="separator:a1b843d55755ec5a44f188d38c5f6fc92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5138e935be8a677f810065c58998a23"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#aa5138e935be8a677f810065c58998a23">to_string</a> (const <a class="el" href="structv__array.html">v_array</a>&lt; float &gt; &amp;scalars, int decimal_precision=<a class="el" href="namespaceVW.html#aef06ce0bb4447dff21e8a131b7a4a0b8">DEFAULT_FLOAT_PRECISION</a>)</td></tr>
+<tr class="memitem:aa5138e935be8a677f810065c58998a23"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#aa5138e935be8a677f810065c58998a23">to_string</a> (const <a class="el" href="structVW_1_1v__array.html">v_array</a>&lt; float &gt; &amp;scalars, int decimal_precision=<a class="el" href="namespaceVW.html#aef06ce0bb4447dff21e8a131b7a4a0b8">DEFAULT_FLOAT_PRECISION</a>)</td></tr>
 <tr class="separator:aa5138e935be8a677f810065c58998a23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4614d4ceeec932ef67ad58f9f0e8da5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a4614d4ceeec932ef67ad58f9f0e8da5f">return_multiple_example</a> (<a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;all, <a class="el" href="structv__array.html">v_array</a>&lt; <a class="el" href="structexample.html">example</a> *&gt; &amp;examples)</td></tr>
+<tr class="memitem:a4614d4ceeec932ef67ad58f9f0e8da5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a4614d4ceeec932ef67ad58f9f0e8da5f">return_multiple_example</a> (<a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;all, <a class="el" href="structVW_1_1v__array.html">v_array</a>&lt; <a class="el" href="structexample.html">example</a> *&gt; &amp;examples)</td></tr>
 <tr class="separator:a4614d4ceeec932ef67ad58f9f0e8da5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c2be07eaaeaffca808d8d4106437a00"><td class="memItemLeft" align="right" valign="top">VW_STD14_CONSTEXPR float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a1c2be07eaaeaffca808d8d4106437a00">fast_pow10</a> (int8_t exponent)</td></tr>
 <tr class="separator:a1c2be07eaaeaffca808d8d4106437a00"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -353,19 +359,19 @@ Functions</h2></td></tr>
 <tr class="separator:ad7456d12cfa4456bf02a489c77c7305e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1e6ee5809bc3136ddf5728c9ec045c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ab1e6ee5809bc3136ddf5728c9ec045c6">read_line</a> (<a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;all, <a class="el" href="structexample.html">example</a> *ex, const char *line)</td></tr>
 <tr class="separator:ab1e6ee5809bc3136ddf5728c9ec045c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0c43a4cba5ee2f2885956cf517ab02e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ad0c43a4cba5ee2f2885956cf517ab02e">read_lines</a> (<a class="el" href="structVW_1_1workspace.html">VW::workspace</a> *all, const char *line, size_t len, <a class="el" href="structv__array.html">v_array</a>&lt; <a class="el" href="structexample.html">example</a> *&gt; &amp;examples)</td></tr>
+<tr class="memitem:ad0c43a4cba5ee2f2885956cf517ab02e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ad0c43a4cba5ee2f2885956cf517ab02e">read_lines</a> (<a class="el" href="structVW_1_1workspace.html">VW::workspace</a> *all, const char *line, size_t len, <a class="el" href="structVW_1_1v__array.html">v_array</a>&lt; <a class="el" href="structexample.html">example</a> *&gt; &amp;examples)</td></tr>
 <tr class="separator:ad0c43a4cba5ee2f2885956cf517ab02e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f419dbfd322dd686293ffa7205fbf49"><td class="memTemplParams" colspan="2">template&lt;bool audit&gt; </td></tr>
-<tr class="memitem:a1f419dbfd322dd686293ffa7205fbf49"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a1f419dbfd322dd686293ffa7205fbf49">read_line_json_s</a> (const <a class="el" href="structlabel__parser.html">label_parser</a> &amp;lbl_parser, <a class="el" href="hashstring_8h.html#a77dae8dac3c33439a15f7270f64cff8c">hash_func_t</a> hash_func, uint64_t hash_seed, uint64_t parse_mask, bool <a class="el" href="namespaceVW.html#a678c9814055a1d31aca35531904aa0de">chain_hash</a>, <a class="el" href="structVW_1_1label__parser__reuse__mem.html">VW::label_parser_reuse_mem</a> *reuse_mem, const <a class="el" href="classVW_1_1named__labels.html">VW::named_labels</a> *ldict, <a class="el" href="structv__array.html">v_array</a>&lt; <a class="el" href="structexample.html">example</a> *&gt; &amp;examples, char *line, size_t length, <a class="el" href="namespaceVW.html#a28e15f52840539d6b0c56aa196e11278">example_factory_t</a> example_factory, void *ex_factory_context, <a class="el" href="structVW_1_1io_1_1logger.html">VW::io::logger</a> &amp;logger, std::unordered_map&lt; uint64_t, <a class="el" href="structexample.html">example</a> *&gt; *dedup_examples=nullptr)</td></tr>
-<tr class="separator:a1f419dbfd322dd686293ffa7205fbf49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25edf9f88af4e4a8d887f3416f2badc5"><td class="memTemplParams" colspan="2">template&lt;bool audit&gt; </td></tr>
-<tr class="memitem:a25edf9f88af4e4a8d887f3416f2badc5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a25edf9f88af4e4a8d887f3416f2badc5">read_line_json_s</a> (<a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;all, <a class="el" href="structv__array.html">v_array</a>&lt; <a class="el" href="structexample.html">example</a> *&gt; &amp;examples, char *line, size_t length, <a class="el" href="namespaceVW.html#a28e15f52840539d6b0c56aa196e11278">example_factory_t</a> example_factory, void *ex_factory_context, std::unordered_map&lt; uint64_t, <a class="el" href="structexample.html">example</a> *&gt; *dedup_examples=nullptr)</td></tr>
-<tr class="separator:a25edf9f88af4e4a8d887f3416f2badc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bb307ef5d7535ed079c7a553f5affed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a2bb307ef5d7535ed079c7a553f5affed">apply_pdrop</a> (<a class="el" href="namespaceVW.html#adf253bc5d95217ce3aadf6e2421dafd2">label_type_t</a> label_type, float pdrop, <a class="el" href="structv__array.html">v_array</a>&lt; <a class="el" href="structexample.html">example</a> *&gt; &amp;examples, <a class="el" href="structVW_1_1io_1_1logger.html">VW::io::logger</a> &amp;logger)</td></tr>
-<tr class="separator:a2bb307ef5d7535ed079c7a553f5affed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3a6e27457d55bb35b40fcad55003568"><td class="memTemplParams" colspan="2">template&lt;bool audit&gt; </td></tr>
-<tr class="memitem:ab3a6e27457d55bb35b40fcad55003568"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ab3a6e27457d55bb35b40fcad55003568">read_line_decision_service_json</a> (<a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;all, <a class="el" href="structv__array.html">v_array</a>&lt; <a class="el" href="structexample.html">example</a> *&gt; &amp;examples, char *line, size_t length, bool copy_line, <a class="el" href="namespaceVW.html#a28e15f52840539d6b0c56aa196e11278">example_factory_t</a> example_factory, void *ex_factory_context, <a class="el" href="structDecisionServiceInteraction.html">DecisionServiceInteraction</a> *data)</td></tr>
-<tr class="separator:ab3a6e27457d55bb35b40fcad55003568"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbebc00dc1a75a44c4d06c801028c73b"><td class="memTemplParams" colspan="2">template&lt;bool audit&gt; </td></tr>
+<tr class="memitem:adbebc00dc1a75a44c4d06c801028c73b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW.html#adbebc00dc1a75a44c4d06c801028c73b">read_line_json_s</a> (const <a class="el" href="structlabel__parser.html">label_parser</a> &amp;lbl_parser, <a class="el" href="hashstring_8h.html#a77dae8dac3c33439a15f7270f64cff8c">hash_func_t</a> hash_func, uint64_t hash_seed, uint64_t parse_mask, bool <a class="el" href="namespaceVW.html#a678c9814055a1d31aca35531904aa0de">chain_hash</a>, <a class="el" href="structVW_1_1label__parser__reuse__mem.html">VW::label_parser_reuse_mem</a> *reuse_mem, const <a class="el" href="classVW_1_1named__labels.html">VW::named_labels</a> *ldict, <a class="el" href="structVW_1_1v__array.html">VW::v_array</a>&lt; <a class="el" href="structexample.html">example</a> *&gt; &amp;examples, char *line, size_t length, <a class="el" href="namespaceVW.html#a28e15f52840539d6b0c56aa196e11278">example_factory_t</a> example_factory, void *ex_factory_context, <a class="el" href="structVW_1_1io_1_1logger.html">VW::io::logger</a> &amp;logger, std::unordered_map&lt; uint64_t, <a class="el" href="structexample.html">example</a> *&gt; *dedup_examples=nullptr)</td></tr>
+<tr class="separator:adbebc00dc1a75a44c4d06c801028c73b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f3f72b19d8fb7f44ef9d7883be702e8"><td class="memTemplParams" colspan="2">template&lt;bool audit&gt; </td></tr>
+<tr class="memitem:a5f3f72b19d8fb7f44ef9d7883be702e8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a5f3f72b19d8fb7f44ef9d7883be702e8">read_line_json_s</a> (<a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;all, <a class="el" href="structVW_1_1v__array.html">VW::v_array</a>&lt; <a class="el" href="structexample.html">example</a> *&gt; &amp;examples, char *line, size_t length, <a class="el" href="namespaceVW.html#a28e15f52840539d6b0c56aa196e11278">example_factory_t</a> example_factory, void *ex_factory_context, std::unordered_map&lt; uint64_t, <a class="el" href="structexample.html">example</a> *&gt; *dedup_examples=nullptr)</td></tr>
+<tr class="separator:a5f3f72b19d8fb7f44ef9d7883be702e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56e4bb37e63bae5a45ea1984f81f9711"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a56e4bb37e63bae5a45ea1984f81f9711">apply_pdrop</a> (<a class="el" href="namespaceVW.html#adf253bc5d95217ce3aadf6e2421dafd2">label_type_t</a> label_type, float pdrop, <a class="el" href="structVW_1_1v__array.html">VW::v_array</a>&lt; <a class="el" href="structexample.html">example</a> *&gt; &amp;examples, <a class="el" href="structVW_1_1io_1_1logger.html">VW::io::logger</a> &amp;logger)</td></tr>
+<tr class="separator:a56e4bb37e63bae5a45ea1984f81f9711"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6325b4b69ff1b113e6d150b3438977e3"><td class="memTemplParams" colspan="2">template&lt;bool audit&gt; </td></tr>
+<tr class="memitem:a6325b4b69ff1b113e6d150b3438977e3"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a6325b4b69ff1b113e6d150b3438977e3">read_line_decision_service_json</a> (<a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;all, <a class="el" href="structVW_1_1v__array.html">VW::v_array</a>&lt; <a class="el" href="structexample.html">example</a> *&gt; &amp;examples, char *line, size_t length, bool copy_line, <a class="el" href="namespaceVW.html#a28e15f52840539d6b0c56aa196e11278">example_factory_t</a> example_factory, void *ex_factory_context, <a class="el" href="structDecisionServiceInteraction.html">DecisionServiceInteraction</a> *data)</td></tr>
+<tr class="separator:a6325b4b69ff1b113e6d150b3438977e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade2b2ea67dbdc0f69a48ff7c53b2e0d2"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ade2b2ea67dbdc0f69a48ff7c53b2e0d2">trim_whitespace</a> (const std::string &amp;s)</td></tr>
 <tr class="separator:ade2b2ea67dbdc0f69a48ff7c53b2e0d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3a8e8eca701e791df569f6d05be6fca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceVW.html#a909e5c86e4a38cb08ec00a0831dc105d">VW::string_view</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ae3a8e8eca701e791df569f6d05be6fca">trim_whitespace</a> (<a class="el" href="namespaceVW.html#a909e5c86e4a38cb08ec00a0831dc105d">VW::string_view</a> str)</td></tr>
@@ -475,7 +481,7 @@ Functions</h2></td></tr>
 <tr class="separator:af68b50e059611dd1fe9f1713a3e5e06a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1aed0253bec2ed2c16e4328ad6352ec2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a1aed0253bec2ed2c16e4328ad6352ec2">parse_example_label</a> (<a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;all, <a class="el" href="structexample.html">example</a> &amp;ec, const std::string &amp;label)</td></tr>
 <tr class="separator:a1aed0253bec2ed2c16e4328ad6352ec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f904d0c7e7af1b82ff92b1105c110fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a1f904d0c7e7af1b82ff92b1105c110fc">setup_examples</a> (<a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;all, <a class="el" href="structv__array.html">v_array</a>&lt; <a class="el" href="structexample.html">example</a> *&gt; &amp;examples)</td></tr>
+<tr class="memitem:a1f904d0c7e7af1b82ff92b1105c110fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a1f904d0c7e7af1b82ff92b1105c110fc">setup_examples</a> (<a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;all, <a class="el" href="structVW_1_1v__array.html">v_array</a>&lt; <a class="el" href="structexample.html">example</a> *&gt; &amp;examples)</td></tr>
 <tr class="separator:a1f904d0c7e7af1b82ff92b1105c110fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3846d133af77206c04acf204f01b5dba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structexample.html">example</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a3846d133af77206c04acf204f01b5dba">new_unused_example</a> (<a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;all)</td></tr>
 <tr class="separator:a3846d133af77206c04acf204f01b5dba"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -493,7 +499,7 @@ Functions</h2></td></tr>
 <tr class="separator:aabe692d026065cc4f681f477a11aa94d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfb8aa387872650ef326e8a99be10ed0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#adfb8aa387872650ef326e8a99be10ed0">get_cost_sensitive_prediction</a> (<a class="el" href="structexample.html">example</a> *ec)</td></tr>
 <tr class="separator:adfb8aa387872650ef326e8a99be10ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfc559d229b8b2a9c5d0947a0419ca77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structv__array.html">v_array</a>&lt; float &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#acfc559d229b8b2a9c5d0947a0419ca77">get_cost_sensitive_prediction_confidence_scores</a> (<a class="el" href="structexample.html">example</a> *ec)</td></tr>
+<tr class="memitem:acfc559d229b8b2a9c5d0947a0419ca77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVW_1_1v__array.html">v_array</a>&lt; float &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#acfc559d229b8b2a9c5d0947a0419ca77">get_cost_sensitive_prediction_confidence_scores</a> (<a class="el" href="structexample.html">example</a> *ec)</td></tr>
 <tr class="separator:acfc559d229b8b2a9c5d0947a0419ca77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a273f5f1c98414ba01411de006c60c966"><td class="memItemLeft" align="right" valign="top">uint32_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a273f5f1c98414ba01411de006c60c966">get_multilabel_predictions</a> (<a class="el" href="structexample.html">example</a> *ec, size_t &amp;len)</td></tr>
 <tr class="separator:a273f5f1c98414ba01411de006c60c966"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -593,7 +599,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using VW::decision_scores_t = typedef std::vector&lt;<a class="el" href="namespaceACTION__SCORE.html#a19b4924cbde0701f86192906861fae94">ACTION_SCORE::action_scores</a>&gt;</td>
+          <td class="memname">using VW::decision_scores_t = typedef std::vector&lt;<a class="el" href="namespaceACTION__SCORE.html#a73cec56adace2b62e070a0686309704c">ACTION_SCORE::action_scores</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -665,7 +671,7 @@ Variables</h2></td></tr>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using VW::v_array_pool = typedef <a class="el" href="structVW_1_1moved__object__pool.html">VW::moved_object_pool</a>&lt;<a class="el" href="structv__array.html">v_array</a>&lt;T&gt; &gt;</td>
+          <td class="memname">using VW::v_array_pool = typedef <a class="el" href="structVW_1_1moved__object__pool.html">VW::moved_object_pool</a>&lt;<a class="el" href="structVW_1_1v__array.html">v_array</a>&lt;T&gt; &gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1002,8 +1008,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a2bb307ef5d7535ed079c7a553f5affed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2bb307ef5d7535ed079c7a553f5affed">&#9670;&nbsp;</a></span>apply_pdrop()</h2>
+<a id="a56e4bb37e63bae5a45ea1984f81f9711"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56e4bb37e63bae5a45ea1984f81f9711">&#9670;&nbsp;</a></span>apply_pdrop()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1026,7 +1032,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structv__array.html">v_array</a>&lt; <a class="el" href="structexample.html">example</a> *&gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structVW_1_1v__array.html">VW::v_array</a>&lt; <a class="el" href="structexample.html">example</a> *&gt; &amp;&#160;</td>
           <td class="paramname"><em>examples</em>, </td>
         </tr>
         <tr>
@@ -2057,7 +2063,7 @@ template&lt;size_t num_cols&gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structv__array.html">v_array</a>&lt;float&gt;&amp; VW::get_cost_sensitive_prediction_confidence_scores </td>
+          <td class="memname"><a class="el" href="structVW_1_1v__array.html">v_array</a>&lt;float&gt;&amp; VW::get_cost_sensitive_prediction_confidence_scores </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structexample.html">example</a> *&#160;</td>
           <td class="paramname"><em>ec</em></td><td>)</td>
@@ -3529,7 +3535,7 @@ template&lt;typename T , typename... Args&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structv__array.html">v_array</a>&lt; <a class="el" href="structexample.html">example</a> *&gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structVW_1_1v__array.html">v_array</a>&lt; <a class="el" href="structexample.html">example</a> *&gt; &amp;&#160;</td>
           <td class="paramname"><em>examples</em>&#160;</td>
         </tr>
         <tr>
@@ -3576,8 +3582,8 @@ template&lt;typename T , typename... Args&gt; </div>
 
 </div>
 </div>
-<a id="ab3a6e27457d55bb35b40fcad55003568"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab3a6e27457d55bb35b40fcad55003568">&#9670;&nbsp;</a></span>read_line_decision_service_json()</h2>
+<a id="a6325b4b69ff1b113e6d150b3438977e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6325b4b69ff1b113e6d150b3438977e3">&#9670;&nbsp;</a></span>read_line_decision_service_json()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3593,7 +3599,7 @@ template&lt;bool audit&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structv__array.html">v_array</a>&lt; <a class="el" href="structexample.html">example</a> *&gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structVW_1_1v__array.html">VW::v_array</a>&lt; <a class="el" href="structexample.html">example</a> *&gt; &amp;&#160;</td>
           <td class="paramname"><em>examples</em>, </td>
         </tr>
         <tr>
@@ -3642,8 +3648,8 @@ template&lt;bool audit&gt; </div>
 
 </div>
 </div>
-<a id="a1f419dbfd322dd686293ffa7205fbf49"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f419dbfd322dd686293ffa7205fbf49">&#9670;&nbsp;</a></span>read_line_json_s() <span class="overload">[1/2]</span></h2>
+<a id="adbebc00dc1a75a44c4d06c801028c73b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbebc00dc1a75a44c4d06c801028c73b">&#9670;&nbsp;</a></span>read_line_json_s() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3695,7 +3701,7 @@ template&lt;bool audit&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structv__array.html">v_array</a>&lt; <a class="el" href="structexample.html">example</a> *&gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structVW_1_1v__array.html">VW::v_array</a>&lt; <a class="el" href="structexample.html">example</a> *&gt; &amp;&#160;</td>
           <td class="paramname"><em>examples</em>, </td>
         </tr>
         <tr>
@@ -3744,8 +3750,8 @@ template&lt;bool audit&gt; </div>
 
 </div>
 </div>
-<a id="a25edf9f88af4e4a8d887f3416f2badc5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25edf9f88af4e4a8d887f3416f2badc5">&#9670;&nbsp;</a></span>read_line_json_s() <span class="overload">[2/2]</span></h2>
+<a id="a5f3f72b19d8fb7f44ef9d7883be702e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f3f72b19d8fb7f44ef9d7883be702e8">&#9670;&nbsp;</a></span>read_line_json_s() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3761,7 +3767,7 @@ template&lt;bool audit&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structv__array.html">v_array</a>&lt; <a class="el" href="structexample.html">example</a> *&gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structVW_1_1v__array.html">VW::v_array</a>&lt; <a class="el" href="structexample.html">example</a> *&gt; &amp;&#160;</td>
           <td class="paramname"><em>examples</em>, </td>
         </tr>
         <tr>
@@ -3831,7 +3837,7 @@ template&lt;bool audit&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structv__array.html">v_array</a>&lt; <a class="el" href="structexample.html">example</a> *&gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structVW_1_1v__array.html">v_array</a>&lt; <a class="el" href="structexample.html">example</a> *&gt; &amp;&#160;</td>
           <td class="paramname"><em>examples</em>&#160;</td>
         </tr>
         <tr>
@@ -3905,7 +3911,7 @@ template&lt;bool audit&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structv__array.html">v_array</a>&lt; <a class="el" href="structexample.html">example</a> *&gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structVW_1_1v__array.html">v_array</a>&lt; <a class="el" href="structexample.html">example</a> *&gt; &amp;&#160;</td>
           <td class="paramname"><em>examples</em>&#160;</td>
         </tr>
         <tr>
@@ -4182,7 +4188,7 @@ template&lt;typename TScopeExitLambda &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structv__array.html">v_array</a>&lt; <a class="el" href="structexample.html">example</a> *&gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structVW_1_1v__array.html">v_array</a>&lt; <a class="el" href="structexample.html">example</a> *&gt; &amp;&#160;</td>
           <td class="paramname"><em>examples</em>&#160;</td>
         </tr>
         <tr>
@@ -4865,7 +4871,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">std::string VW::to_string </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceACTION__SCORE.html#a19b4924cbde0701f86192906861fae94">ACTION_SCORE::action_scores</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespaceACTION__SCORE.html#a73cec56adace2b62e070a0686309704c">ACTION_SCORE::action_scores</a> &amp;&#160;</td>
           <td class="paramname"><em>action_scores_or_probs</em>, </td>
         </tr>
         <tr>
@@ -4893,7 +4899,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">std::string VW::to_string </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structv__array.html">v_array</a>&lt; float &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structVW_1_1v__array.html">v_array</a>&lt; float &gt; &amp;&#160;</td>
           <td class="paramname"><em>scalars</em>, </td>
         </tr>
         <tr>
@@ -5281,7 +5287,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 11 2022 15:48:51 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 11 2022 17:07:58 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

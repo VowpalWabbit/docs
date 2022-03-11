@@ -25,11 +25,11 @@ var searchData=
   ['example_5fparser',['example_parser',['../structVW_1_1workspace.html#aee857c5e4d572d09c9243a8f9a9e3aac',1,'VW::workspace']]],
   ['example_5fpool',['example_pool',['../structparser.html#ad2b0db3600bd890b2a6a29280e15f2fd',1,'parser']]],
   ['example_5fqueue_5flimit',['example_queue_limit',['../structparser.html#a22832e405bb961a4c4f19654723aef48',1,'parser']]],
-  ['examples',['examples',['../structContext.html#afbc07929e07aec1daf5c896a6cbd7665',1,'Context']]],
+  ['examples',['examples',['../structContext.html#af58c932d64df211634ca3cb534101cac',1,'Context']]],
   ['examples_5fdont_5fchange',['EXAMPLES_DONT_CHANGE',['../namespaceSearch.html#a00f1706c73f53da6977b3358e53c8e58',1,'Search']]],
   ['exc_5fptr',['exc_ptr',['../structparser.html#abef922392d111bc5567e672df2d35e57',1,'parser']]],
   ['exclusions',['exclusions',['../structVW_1_1automl_1_1exclusion__config.html#a9599467e1c79284ae424eb79382feca1',1,'VW::automl::exclusion_config']]],
-  ['explicit_5fincluded_5factions',['explicit_included_actions',['../structCCB_1_1label.html#addf86d1b626620ed7cee7ea949568db4',1,'CCB::label::explicit_included_actions()'],['../structCCB_1_1reduction__features.html#a3456c6b465951b54a3402fcd03e21a10',1,'CCB::reduction_features::explicit_included_actions()']]],
+  ['explicit_5fincluded_5factions',['explicit_included_actions',['../structCCB_1_1label.html#af7a2d5daa79b468b8671712a4a01835b',1,'CCB::label::explicit_included_actions()'],['../structCCB_1_1reduction__features.html#a7b4dc06b9e1293fc465d99883454f253',1,'CCB::reduction_features::explicit_included_actions()']]],
   ['explore',['explore',['../structVW_1_1cb__explore__adf_1_1cb__explore__adf__base.html#a8f91aca20167b536fbe0c73f667e69f1',1,'VW::cb_explore_adf::cb_explore_adf_base']]],
   ['extent_5finteractions',['extent_interactions',['../structexample__predict.html#a0038fd7b453fcbe55c4135caffc9a897',1,'example_predict::extent_interactions()'],['../structVW_1_1workspace.html#ac5b414cf0351eb930d74a55844ed69e3',1,'VW::workspace::extent_interactions()']]]
 ];
