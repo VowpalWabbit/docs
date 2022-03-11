@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['offset',['offset',['../structINTERACTIONS_1_1extent__interaction__expansion__stack__item.html#adb98082a8e717734c516e75230379767',1,'INTERACTIONS::extent_interaction_expansion_stack_item']]],
+  ['offset',['offset',['../structVW_1_1details_1_1invert__hash__info.html#accb54a0b742e5a2ef44b2bfb3b0e665c',1,'VW::details::invert_hash_info::offset()'],['../structINTERACTIONS_1_1extent__interaction__expansion__stack__item.html#adb98082a8e717734c516e75230379767',1,'INTERACTIONS::extent_interaction_expansion_stack_item::offset()']]],
   ['old_5fweighted_5flabeled_5fexamples',['old_weighted_labeled_examples',['../structshared__data.html#a22c93bc868692a1f3dbb5cc24ec1fa3a',1,'shared_data']]],
   ['options',['options',['../structVW_1_1workspace.html#ad87a23d32e412e1af4a788e4ce6f11a2',1,'VW::workspace']]],
   ['oracle_5ftype',['oracle_type',['../structVW_1_1automl_1_1interaction__config__manager.html#ab15d018f806d114edf66279b43ef62a8',1,'VW::automl::interaction_config_manager']]],

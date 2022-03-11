@@ -103,7 +103,7 @@ var searchData=
   ['audit_5frange',['audit_range',['../structfeatures.html#a814073020a57834aedccb52bf7a5c96a',1,'features::audit_range()'],['../structfeatures.html#a0ff10c86103f0fd7a4f0ae2fb4fa76eb',1,'features::audit_range() const']]],
   ['audit_5fregressor_2eh',['audit_regressor.h',['../audit__regressor_8h.html',1,'']]],
   ['audit_5fregressor_5fsetup',['audit_regressor_setup',['../audit__regressor_8h.html#ae53528e788c03f5a5b2a6fea5230ac5e',1,'audit_regressor.h']]],
-  ['audit_5fstrings',['audit_strings',['../feature__group_8h.html#af0171bfe35d4470c391dbcbb0f3b1a0c',1,'feature_group.h']]],
+  ['audit_5fstrings',['audit_strings',['../structVW_1_1audit__strings.html',1,'VW::audit_strings'],['../structVW_1_1audit__strings.html#ac70f202d3aaa36f00566212a1175825e',1,'VW::audit_strings::audit_strings()=default'],['../structVW_1_1audit__strings.html#a998c84150315edd9262983010c8331f6',1,'VW::audit_strings::audit_strings(std::string ns, std::string name)'],['../structVW_1_1audit__strings.html#a3d79841a7c72843393161cbd90c80e0e',1,'VW::audit_strings::audit_strings(std::string ns, std::string name, std::string str_value)']]],
   ['audit_5fwriter',['audit_writer',['../structVW_1_1workspace.html#a8375d00e9752db8dc93155b582fa7994',1,'VW::workspace']]],
   ['auto_5fcondition_5ffeatures',['AUTO_CONDITION_FEATURES',['../namespaceSearch.html#a64c3357ab3222147fb87242f94990116',1,'Search']]],
   ['auto_5fhamming_5floss',['AUTO_HAMMING_LOSS',['../namespaceSearch.html#a2e71a83a633bcffc3df35b1de1bec797',1,'Search']]],

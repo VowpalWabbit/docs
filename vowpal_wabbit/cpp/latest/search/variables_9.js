@@ -12,7 +12,7 @@ var searchData=
   ['inc',['inc',['../classLabelObjectState.html#a6d7683925b3cfe38f68d25e668da8969',1,'LabelObjectState']]],
   ['increment',['increment',['../structVW_1_1LEARNER_1_1learner.html#a30c2bcf54996490e0a4415e6509e9dfe',1,'VW::LEARNER::learner::increment()'],['../structcbify__adf__data.html#a495e1d54c72ff129f66bc487dd67ed31',1,'cbify_adf_data::increment()']]],
   ['index',['index',['../structLabelIndexState.html#a74debffb179393bae1b06ad872409acc',1,'LabelIndexState']]],
-  ['index_5fname_5fmap',['index_name_map',['../structVW_1_1workspace.html#a880ab7ece937c42f3b2ec3a02e45504f',1,'VW::workspace']]],
+  ['index_5fname_5fmap',['index_name_map',['../structVW_1_1workspace.html#a68c2e292772d7e55f99c6458977f5f8e',1,'VW::workspace']]],
   ['index_5fqueue',['index_queue',['../structVW_1_1automl_1_1interaction__config__manager.html#a4eba45fc90ec828b83d64f54e69a2af1',1,'VW::automl::interaction_config_manager']]],
   ['indices',['indices',['../structexample__predict.html#ab098b66eb3c24b20ca349b7908ef54f3',1,'example_predict::indices()'],['../structfeatures.html#a0631f38f1a9f9a7320bc4dfd5ac60079',1,'features::indices()']]],
   ['initial',['initial',['../structsimple__label__reduction__features.html#a1480d951626ca2e794e3acee38f1f3d4',1,'simple_label_reduction_features']]],

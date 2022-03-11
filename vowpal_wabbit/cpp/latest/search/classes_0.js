@@ -16,5 +16,6 @@ var searchData=
   ['arraytovectorstate_3c_20audit_2c_20unsigned_20_3e',['ArrayToVectorState&lt; audit, unsigned &gt;',['../classArrayToVectorState.html',1,'']]],
   ['audit_5ffeatures_5fiterator',['audit_features_iterator',['../classaudit__features__iterator.html',1,'']]],
   ['audit_5ffeatures_5fiterator_3c_20const_20feature_5fvalue_2c_20const_20feature_5findex_2c_20const_20audit_5fstrings_20_3e',['audit_features_iterator&lt; const feature_value, const feature_index, const audit_strings &gt;',['../classaudit__features__iterator.html',1,'']]],
+  ['audit_5fstrings',['audit_strings',['../structVW_1_1audit__strings.html',1,'VW']]],
   ['automl',['automl',['../structVW_1_1automl_1_1automl.html',1,'VW::automl']]]
 ];

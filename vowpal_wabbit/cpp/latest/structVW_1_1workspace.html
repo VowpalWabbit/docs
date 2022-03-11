@@ -87,6 +87,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:abc5527962dfae2dba0796c41594de1e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d95c723487dee7d69eec4e43334fdc8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1workspace.html#a0d95c723487dee7d69eec4e43334fdc8">finish_example</a> (<a class="el" href="cb_8h.html#ababa4c0392834695d0ff6255e8d3ce77">multi_ex</a> &amp;)</td></tr>
 <tr class="separator:a0d95c723487dee7d69eec4e43334fdc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2511f756e18eabdc25d46b0997bf5928"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1workspace.html#a2511f756e18eabdc25d46b0997bf5928">dump_weights_to_json_experimental</a> ()</td></tr>
+<tr class="memdesc:a2511f756e18eabdc25d46b0997bf5928"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a JSON string with the current model state and invert hash lookup table. Base reduction in use must be gd and <a class="el" href="structVW_1_1workspace.html#a6a0affacdd26dc9bfdae40907d49f474">workspace.hash_inv</a> must be true. This function is experimental and subject to change.  <a href="#a2511f756e18eabdc25d46b0997bf5928">More...</a><br /></td></tr>
+<tr class="separator:a2511f756e18eabdc25d46b0997bf5928"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae78be71f5cd857899a811022ca1c03ab"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1workspace.html#ae78be71f5cd857899a811022ca1c03ab">length</a> ()</td></tr>
 <tr class="separator:ae78be71f5cd857899a811022ca1c03ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c09bb48919f9417c4c3a1c53650534e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1workspace.html#a6c09bb48919f9417c4c3a1c53650534e">workspace</a> (<a class="el" href="structVW_1_1io_1_1logger.html">VW::io::logger</a> <a class="el" href="structVW_1_1workspace.html#a64e66403030d2917810f6684439c38dc">logger</a>)</td></tr>
@@ -290,6 +293,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:aa0641fbbfdbea79b75a96952742241be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a4150e901445336a09ba8b49d126fcb"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1workspace.html#a8a4150e901445336a09ba8b49d126fcb">inv_hash_regressor_name</a></td></tr>
 <tr class="separator:a8a4150e901445336a09ba8b49d126fcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b561280c4b4f6a2f1791488ff3fe918"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1workspace.html#a8b561280c4b4f6a2f1791488ff3fe918">json_weights_file_name</a></td></tr>
+<tr class="separator:a8b561280c4b4f6a2f1791488ff3fe918"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7988dbf3ee8a1f79ca8f47ad73108e54"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr&lt; <a class="el" href="structVW_1_1io_1_1writer.html">VW::io::writer</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1workspace.html#a7988dbf3ee8a1f79ca8f47ad73108e54">final_prediction_sink</a></td></tr>
 <tr class="separator:a7988dbf3ee8a1f79ca8f47ad73108e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72755b57b42c9839b75e7d23b15e739a"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="structVW_1_1io_1_1writer.html">VW::io::writer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1workspace.html#a72755b57b42c9839b75e7d23b15e739a">raw_prediction</a></td></tr>
@@ -324,8 +329,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a9365651f6a3a4f67c5b00cd2f416b116"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61f33a51a9aa8ee569e58bdd344f8d11"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1workspace.html#a61f33a51a9aa8ee569e58bdd344f8d11">progress_arg</a></td></tr>
 <tr class="separator:a61f33a51a9aa8ee569e58bdd344f8d11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a880ab7ece937c42f3b2ec3a02e45504f"><td class="memItemLeft" align="right" valign="top">std::map&lt; uint64_t, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1workspace.html#a880ab7ece937c42f3b2ec3a02e45504f">index_name_map</a></td></tr>
-<tr class="separator:a880ab7ece937c42f3b2ec3a02e45504f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68c2e292772d7e55f99c6458977f5f8e"><td class="memItemLeft" align="right" valign="top">std::map&lt; uint64_t, <a class="el" href="structVW_1_1details_1_1invert__hash__info.html">VW::details::invert_hash_info</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1workspace.html#a68c2e292772d7e55f99c6458977f5f8e">index_name_map</a></td></tr>
+<tr class="separator:a68c2e292772d7e55f99c6458977f5f8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1739c8984ecdde64051dd1c815bcf61"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1workspace.html#ab1739c8984ecdde64051dd1c815bcf61">is_ccb_input_model</a> = false</td></tr>
 <tr class="separator:ab1739c8984ecdde64051dd1c815bcf61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -441,6 +446,26 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2511f756e18eabdc25d46b0997bf5928"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2511f756e18eabdc25d46b0997bf5928">&#9670;&nbsp;</a></span>dump_weights_to_json_experimental()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string VW::workspace::dump_weights_to_json_experimental </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate a JSON string with the current model state and invert hash lookup table. Base reduction in use must be gd and <a class="el" href="structVW_1_1workspace.html#a6a0affacdd26dc9bfdae40907d49f474">workspace.hash_inv</a> must be true. This function is experimental and subject to change. </p>
+<dl class="section return"><dt>Returns</dt><dd>std::string JSON formatted string </dd></dl>
 
 </div>
 </div>
@@ -1191,14 +1216,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a880ab7ece937c42f3b2ec3a02e45504f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a880ab7ece937c42f3b2ec3a02e45504f">&#9670;&nbsp;</a></span>index_name_map</h2>
+<a id="a68c2e292772d7e55f99c6458977f5f8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68c2e292772d7e55f99c6458977f5f8e">&#9670;&nbsp;</a></span>index_name_map</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt;uint64_t, std::string&gt; VW::workspace::index_name_map</td>
+          <td class="memname">std::map&lt;uint64_t, <a class="el" href="structVW_1_1details_1_1invert__hash__info.html">VW::details::invert_hash_info</a>&gt; VW::workspace::index_name_map</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1311,6 +1336,20 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">bool VW::workspace::is_ccb_input_model = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8b561280c4b4f6a2f1791488ff3fe918"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b561280c4b4f6a2f1791488ff3fe918">&#9670;&nbsp;</a></span>json_weights_file_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string VW::workspace::json_weights_file_name</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2205,7 +2244,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 10 2022 22:02:17 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 11 2022 15:48:51 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

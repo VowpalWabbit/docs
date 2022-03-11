@@ -3,6 +3,7 @@ var searchData=
   ['wap_5fldf_5fnamespace',['wap_ldf_namespace',['../constant_8h.html#a08e7c9bf8fe6467dafd18a42120013e1',1,'constant.h']]],
   ['wap_5fvalue',['wap_value',['../structCOST__SENSITIVE_1_1wclass.html#ac6c25cd1d7f4be9de04cfd552dbff23e',1,'COST_SENSITIVE::wclass']]],
   ['weight',['weight',['../structCB_1_1label.html#a4d7a571a1e69a80df094698c0020f2e8',1,'CB::label::weight()'],['../structCCB_1_1label.html#a7a2d2e498f0d0cea49c78627fd2033f8',1,'CCB::label::weight()'],['../structexample.html#a403be75fc4fdd058e4f7c1baf39be11a',1,'example::weight()'],['../structMULTICLASS_1_1label__t.html#a0055ecea2640500fb7c8e88f566142e5',1,'MULTICLASS::label_t::weight()'],['../structsimple__label__reduction__features.html#a6a3325a1f94fed4fbde71848bcee3072',1,'simple_label_reduction_features::weight()'],['../structVW_1_1slates_1_1label.html#a12cf62b7cbdc7917627aba1fea975b54',1,'VW::slates::label::weight()']]],
+  ['weight_5fcomponents',['weight_components',['../structVW_1_1details_1_1invert__hash__info.html#a20163cda042f18086ce800e03eaa1441',1,'VW::details::invert_hash_info']]],
   ['weight_5findex',['weight_index',['../structfeature.html#a0a02b4c4c785a3ee3f8f1503ef7e4616',1,'feature']]],
   ['weighted_5fholdout_5fexamples',['weighted_holdout_examples',['../structshared__data.html#a5db3d097543ecb5f9fb6d9ffedc6527b',1,'shared_data']]],
   ['weighted_5fholdout_5fexamples_5fsince_5flast_5fdump',['weighted_holdout_examples_since_last_dump',['../structshared__data.html#a285ee180f9258046c930d0b1d19b6574',1,'shared_data']]],

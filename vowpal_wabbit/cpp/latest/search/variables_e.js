@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['n',['n',['../structVW_1_1distributionally__robust_1_1Duals.html#ad72686b6b792efe744a034674dc09847',1,'VW::distributionally_robust::Duals::n()'],['../structExpReplay_1_1expreplay.html#a1303bcb5004ccc2cb6949480bdb43c11',1,'ExpReplay::expreplay::N()']]],
-  ['name',['name',['../structdictionary__info.html#aafd5bfbc5290ad275067a8cf3397970a',1,'dictionary_info::name()'],['../structNamespace.html#a2344df6d1bc705fc8afa24b2c9c79f57',1,'Namespace::name()'],['../structBaseState.html#a675dcc2bdda01de5cde893e77a6116b1',1,'BaseState::name()'],['../structVW_1_1primitive__feature__space.html#a8f5b0342e8c1f8c6d6e5648d14894a59',1,'VW::primitive_feature_space::name()']]],
+  ['n',['N',['../structExpReplay_1_1expreplay.html#a1303bcb5004ccc2cb6949480bdb43c11',1,'ExpReplay::expreplay::N()'],['../structVW_1_1distributionally__robust_1_1Duals.html#ad72686b6b792efe744a034674dc09847',1,'VW::distributionally_robust::Duals::n()']]],
+  ['name',['name',['../structVW_1_1audit__strings.html#aeda51a335733a0481b53d8057c22fdf9',1,'VW::audit_strings::name()'],['../structdictionary__info.html#aafd5bfbc5290ad275067a8cf3397970a',1,'dictionary_info::name()'],['../structNamespace.html#a2344df6d1bc705fc8afa24b2c9c79f57',1,'Namespace::name()'],['../structBaseState.html#a675dcc2bdda01de5cde893e77a6116b1',1,'BaseState::name()'],['../structVW_1_1primitive__feature__space.html#a8f5b0342e8c1f8c6d6e5648d14894a59',1,'VW::primitive_feature_space::name()']]],
   ['namespace_5fdictionaries',['namespace_dictionaries',['../structVW_1_1workspace.html#a7a54ee459d452d564df57ff42b799677',1,'VW::workspace']]],
   ['namespace_5fextents',['namespace_extents',['../structfeatures.html#af549d0f8686ce819c6467ff446ff86b3',1,'features']]],
   ['namespace_5fhash',['namespace_hash',['../structNamespace.html#a1dcb4de5a4b2c43e6e96597dcd438228',1,'Namespace']]],
@@ -24,6 +24,7 @@ var searchData=
   ['normalized_5fidx',['normalized_idx',['../structVW_1_1workspace.html#a23ee88f7ef030182ec255a7a9008de13',1,'VW::workspace']]],
   ['normalized_5fsum_5fnorm_5fx',['normalized_sum_norm_x',['../structVW_1_1workspace.html#a5b1dad02c4acba50e1f312c5e7e75bee',1,'VW::workspace']]],
   ['not_5fimplemented',['not_implemented',['../error__data_8h.html#ac0b7538a87fdb2c9510cdbdc8ac06573',1,'error_data.h']]],
+  ['ns',['ns',['../structVW_1_1audit__strings.html#ae12b6141b6e9f12005f58916f9e90816',1,'VW::audit_strings']]],
   ['ns_5fcounter',['ns_counter',['../structVW_1_1automl_1_1interaction__config__manager.html#a139e4e122185ac056290aab7ade18b75',1,'VW::automl::interaction_config_manager']]],
   ['ns_5fexclude_5flist',['NS_EXCLUDE_LIST',['../namespaceVW_1_1automl.html#ad5ef459da78a40863d7f45d1bd39b78d',1,'VW::automl']]],
   ['num_5factions',['num_actions',['../structGEN__CS_1_1cb__to__cs.html#a2e90df436e7af9200081952367583d30',1,'GEN_CS::cb_to_cs::num_actions()'],['../structVW_1_1continuous__action_1_1cats_1_1cats.html#a88cee12e996680b9f87c9a1ae3a3faba',1,'VW::continuous_action::cats::cats::num_actions()'],['../structcbify__adf__data.html#a563bf5d574c8715d3da0e17040c00074',1,'cbify_adf_data::num_actions()'],['../structVW_1_1pmf__to__pdf_1_1reduction.html#a678258fe8dc138d3acd70f4e47f1e6a3',1,'VW::pmf_to_pdf::reduction::num_actions()']]],

@@ -6,7 +6,7 @@ var searchData=
   ['object_5fpool_2eh',['object_pool.h',['../object__pool_8h.html',1,'']]],
   ['object_5fpool_3c_20example_20_3e',['object_pool&lt; example &gt;',['../structVW_1_1object__pool.html',1,'VW']]],
   ['off',['off',['../namespaceVW_1_1io.html#aaf6d3dfe9781b53c9fbc2908a8f0641ca3262d48df5d75e3452f0f16b313b7808',1,'VW::io']]],
-  ['offset',['offset',['../structINTERACTIONS_1_1extent__interaction__expansion__stack__item.html#adb98082a8e717734c516e75230379767',1,'INTERACTIONS::extent_interaction_expansion_stack_item']]],
+  ['offset',['offset',['../structVW_1_1details_1_1invert__hash__info.html#accb54a0b742e5a2ef44b2bfb3b0e665c',1,'VW::details::invert_hash_info::offset()'],['../structINTERACTIONS_1_1extent__interaction__expansion__stack__item.html#adb98082a8e717734c516e75230379767',1,'INTERACTIONS::extent_interaction_expansion_stack_item::offset()']]],
   ['offset_5flearn',['offset_learn',['../structVW_1_1automl_1_1automl.html#a9955f1e55f493dbc21b6a0f37cc343f2',1,'VW::automl::automl']]],
   ['offset_5ftree',['offset_tree',['../structVW_1_1offset__tree_1_1offset__tree.html',1,'VW::offset_tree::offset_tree'],['../structVW_1_1offset__tree_1_1offset__tree.html#acd1499471b62e6e344bb655b80e91e3a',1,'VW::offset_tree::offset_tree::offset_tree()']]],
   ['offset_5ftree_2eh',['offset_tree.h',['../offset__tree_8h.html',1,'']]],
