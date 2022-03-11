@@ -245,7 +245,7 @@ $(document).ready(function(){initNavTree('rl_sim_8cc-example.html',''); initResi
 <div class="line">    <span class="keyword">const</span> <span class="keyword">auto</span> req_id = create_event_id();</div>
 <div class="line">    r::api_status status;</div>
 <div class="line"> </div>
-<div class="line">    <span class="keywordflow">if</span> (_rl-&gt;request_continuous_action(req_id.c_str(), context_json.c_str(), response, &amp;status) != err::success)</div>
+<div class="line">    <span class="keywordflow">if</span> (_rl-&gt;request_continuous_action(req_id.c_str(), context_json, response, &amp;status) != err::success)</div>
 <div class="line">    {</div>
 <div class="line">      std::cout &lt;&lt; status.get_error_msg() &lt;&lt; std::endl;</div>
 <div class="line">      <span class="keywordflow">continue</span>;</div>
@@ -282,7 +282,7 @@ $(document).ready(function(){initNavTree('rl_sim_8cc-example.html',''); initResi
 <div class="line">    r::api_status status;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Choose an action</span></div>
-<div class="line">    <span class="keywordflow">if</span> ( _rl-&gt;request_multi_slot_decision(event_id.c_str(), context_json.c_str(), decision, &amp;status) != err::success) {</div>
+<div class="line">    <span class="keywordflow">if</span> ( _rl-&gt;request_multi_slot_decision(event_id.c_str(), context_json, decision, &amp;status) != err::success) {</div>
 <div class="line">      std::cout &lt;&lt; status.get_error_msg() &lt;&lt; std::endl;</div>
 <div class="line">      <span class="keywordflow">continue</span>;</div>
 <div class="line">    }</div>

@@ -124,72 +124,72 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a58d9f7ad5148b12aa4e6e6c02f324276"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreinforcement__learning_1_1live__model.html#a58d9f7ad5148b12aa4e6e6c02f324276">init</a> (<a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
 <tr class="memdesc:a58d9f7ad5148b12aa4e6e6c02f324276"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize inference library. Initialize the library and start the background threads used for model managment and sending actions and outcomes to the online trainer.  <a href="classreinforcement__learning_1_1live__model.html#a58d9f7ad5148b12aa4e6e6c02f324276">More...</a><br /></td></tr>
 <tr class="separator:a58d9f7ad5148b12aa4e6e6c02f324276"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51726db2fff3dba2c20554b9806855e8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreinforcement__learning_1_1live__model.html#a51726db2fff3dba2c20554b9806855e8">choose_rank</a> (const char *event_id, const char *context_json, <a class="el" href="classreinforcement__learning_1_1ranking__response.html">ranking_response</a> &amp;resp, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
-<tr class="memdesc:a51726db2fff3dba2c20554b9806855e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Choose an action, given a list of actions, action features and context features. The inference library chooses an action by creating a probability distribution over the actions and then sampling from it.  <a href="classreinforcement__learning_1_1live__model.html#a51726db2fff3dba2c20554b9806855e8">More...</a><br /></td></tr>
-<tr class="separator:a51726db2fff3dba2c20554b9806855e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a7a475cb4d09a844aba17b255d5de95"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreinforcement__learning_1_1live__model.html#a2a7a475cb4d09a844aba17b255d5de95">choose_rank</a> (const char *context_json, <a class="el" href="classreinforcement__learning_1_1ranking__response.html">ranking_response</a> &amp;resp, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
-<tr class="memdesc:a2a7a475cb4d09a844aba17b255d5de95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Choose an action, given a list of actions, action features and context features. The inference library chooses an action by creating a probability distribution over the actions and then sampling from it. A unique event_id will be generated and returned in the <a class="el" href="classreinforcement__learning_1_1ranking__response.html" title="choose_rank() returns the action choice using ranking_response. ranking_response contains all the act...">ranking_response</a>. The same event_id should be used when reporting the outcome for this action.  <a href="classreinforcement__learning_1_1live__model.html#a2a7a475cb4d09a844aba17b255d5de95">More...</a><br /></td></tr>
-<tr class="separator:a2a7a475cb4d09a844aba17b255d5de95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb63ab783c6f029acf42b4ff98e3aaaf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreinforcement__learning_1_1live__model.html#afb63ab783c6f029acf42b4ff98e3aaaf">choose_rank</a> (const char *event_id, const char *context_json, unsigned int flags, <a class="el" href="classreinforcement__learning_1_1ranking__response.html">ranking_response</a> &amp;resp, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
-<tr class="memdesc:afb63ab783c6f029acf42b4ff98e3aaaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Choose an action, given a list of actions, action features and context features. The inference library chooses an action by creating a probability distribution over the actions and then sampling from it.  <a href="classreinforcement__learning_1_1live__model.html#afb63ab783c6f029acf42b4ff98e3aaaf">More...</a><br /></td></tr>
-<tr class="separator:afb63ab783c6f029acf42b4ff98e3aaaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb0ab6abbba6c69f1c6c44ba305919e4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreinforcement__learning_1_1live__model.html#acb0ab6abbba6c69f1c6c44ba305919e4">choose_rank</a> (const char *context_json, unsigned int flags, <a class="el" href="classreinforcement__learning_1_1ranking__response.html">ranking_response</a> &amp;resp, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
-<tr class="memdesc:acb0ab6abbba6c69f1c6c44ba305919e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Choose an action, given a list of actions, action features and context features. The inference library chooses an action by creating a probability distribution over the actions and then sampling from it. A unique event_id will be generated and returned in the <a class="el" href="classreinforcement__learning_1_1ranking__response.html" title="choose_rank() returns the action choice using ranking_response. ranking_response contains all the act...">ranking_response</a>. The same event_id should be used when reporting the outcome for this action.  <a href="classreinforcement__learning_1_1live__model.html#acb0ab6abbba6c69f1c6c44ba305919e4">More...</a><br /></td></tr>
-<tr class="separator:acb0ab6abbba6c69f1c6c44ba305919e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88900e50af8ecd7c89f17df9946e3655"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreinforcement__learning_1_1live__model.html#a88900e50af8ecd7c89f17df9946e3655">request_continuous_action</a> (const char *event_id, const char *context_json, unsigned int flags, continuous_action_response &amp;response, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
-<tr class="memdesc:a88900e50af8ecd7c89f17df9946e3655"><td class="mdescLeft">&#160;</td><td class="mdescRight">(DEPRECATED) Choose an action from a continuous range, given a list of context features The inference library chooses an action by sampling the probability density function produced per continuous action range. The corresponding event_id should be used when reporting the outcome for the continuous action.  <a href="classreinforcement__learning_1_1live__model.html#a88900e50af8ecd7c89f17df9946e3655">More...</a><br /></td></tr>
-<tr class="separator:a88900e50af8ecd7c89f17df9946e3655"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a737b2b073fc6a59470fde26be19d5df6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreinforcement__learning_1_1live__model.html#a737b2b073fc6a59470fde26be19d5df6">request_continuous_action</a> (const char *event_id, const char *context_json, continuous_action_response &amp;response, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
-<tr class="memdesc:a737b2b073fc6a59470fde26be19d5df6"><td class="mdescLeft">&#160;</td><td class="mdescRight">(DEPRECATED) Choose an action from a continuous range, given a list of context features The inference library chooses an action by sampling the probability density function produced per continuous action range. The corresponding event_id should be used when reporting the outcome for the continuous action.  <a href="classreinforcement__learning_1_1live__model.html#a737b2b073fc6a59470fde26be19d5df6">More...</a><br /></td></tr>
-<tr class="separator:a737b2b073fc6a59470fde26be19d5df6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a776cdca72d67dfd65f335c7b9ff54c06"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreinforcement__learning_1_1live__model.html#a776cdca72d67dfd65f335c7b9ff54c06">request_continuous_action</a> (const char *context_json, unsigned int flags, continuous_action_response &amp;response, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
-<tr class="memdesc:a776cdca72d67dfd65f335c7b9ff54c06"><td class="mdescLeft">&#160;</td><td class="mdescRight">(DEPRECATED) Choose an action from a continuous range, given a list of context features The inference library chooses an action by sampling the probability density function produced per continuous action range. A unique event_id will be generated and returned in the continuous_action_response. The same event_id should be used when reporting the outcome for this action.  <a href="classreinforcement__learning_1_1live__model.html#a776cdca72d67dfd65f335c7b9ff54c06">More...</a><br /></td></tr>
-<tr class="separator:a776cdca72d67dfd65f335c7b9ff54c06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25f9c52d70d7908d3d1373e34ce2e0f6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreinforcement__learning_1_1live__model.html#a25f9c52d70d7908d3d1373e34ce2e0f6">request_continuous_action</a> (const char *context_json, continuous_action_response &amp;response, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
-<tr class="memdesc:a25f9c52d70d7908d3d1373e34ce2e0f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">(DEPRECATED) Choose an action from a continuous range, given a list of context features The inference library chooses an action by sampling the probability density function produced per continuous action range. A unique event_id will be generated and returned in the continuous_action_response. The same event_id should be used when reporting the outcome for this action.  <a href="classreinforcement__learning_1_1live__model.html#a25f9c52d70d7908d3d1373e34ce2e0f6">More...</a><br /></td></tr>
-<tr class="separator:a25f9c52d70d7908d3d1373e34ce2e0f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c264759ee6e4a8b3276037b0e2a667b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreinforcement__learning_1_1live__model.html#a4c264759ee6e4a8b3276037b0e2a667b">request_decision</a> (const char *context_json, unsigned int flags, decision_response &amp;resp, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
-<tr class="memdesc:a4c264759ee6e4a8b3276037b0e2a667b"><td class="mdescLeft">&#160;</td><td class="mdescRight">(DEPRECATED) Choose an action from the given set for each slot, given a list of actions, slots, action features, slot feautres and context features. The inference library chooses an action per slot by sampling the probability distribution produced per slot. A unique event_id can be supplied for each slot using the <code>_id</code> json field. The corresponding event_id should be used when reporting the outcome for each slot.  <a href="classreinforcement__learning_1_1live__model.html#a4c264759ee6e4a8b3276037b0e2a667b">More...</a><br /></td></tr>
-<tr class="separator:a4c264759ee6e4a8b3276037b0e2a667b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1e6a01a982d02698b6667013e50d23a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreinforcement__learning_1_1live__model.html#ac1e6a01a982d02698b6667013e50d23a">request_decision</a> (const char *context_json, decision_response &amp;resp, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
-<tr class="memdesc:ac1e6a01a982d02698b6667013e50d23a"><td class="mdescLeft">&#160;</td><td class="mdescRight">(DEPRECATED) Choose an action from the given set for each slot, given a list of actions, slots, action features, slot feautres and context features. The inference library chooses an action per slot by sampling the probability distribution produced per slot. A unique event_id can be supplied for each slot using the <code>_id</code> json field. The corresponding event_id should be used when reporting the outcome for each slot.  <a href="classreinforcement__learning_1_1live__model.html#ac1e6a01a982d02698b6667013e50d23a">More...</a><br /></td></tr>
-<tr class="separator:ac1e6a01a982d02698b6667013e50d23a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad12bec20c20db4fb097cfb750d31a009"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreinforcement__learning_1_1live__model.html#ad12bec20c20db4fb097cfb750d31a009">request_multi_slot_decision</a> (const char *event_id, const char *context_json, unsigned int flags, multi_slot_response &amp;resp, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
-<tr class="memdesc:ad12bec20c20db4fb097cfb750d31a009"><td class="mdescLeft">&#160;</td><td class="mdescRight">(DEPRECATED) Choose an action from the given set for each slot, given a list of actions, slots, action features, slot features and context features. The inference library chooses an action per slot by sampling the probability distribution produced per slot. The corresponding event_id should be used when reporting the outcome for each slot.  <a href="classreinforcement__learning_1_1live__model.html#ad12bec20c20db4fb097cfb750d31a009">More...</a><br /></td></tr>
-<tr class="separator:ad12bec20c20db4fb097cfb750d31a009"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c94c6d294d944d9c6f54ff632fd4d0b"><td class="memItemLeft" align="right" valign="top"><a id="a3c94c6d294d944d9c6f54ff632fd4d0b"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>request_multi_slot_decision</b> (const char *event_id, const char *context_json, multi_slot_response &amp;resp, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
-<tr class="separator:a3c94c6d294d944d9c6f54ff632fd4d0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a770849de7e649e94e0f1731030f70517"><td class="memItemLeft" align="right" valign="top"><a id="a770849de7e649e94e0f1731030f70517"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>request_multi_slot_decision</b> (const char *context_json, unsigned int flags, multi_slot_response &amp;resp, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
-<tr class="separator:a770849de7e649e94e0f1731030f70517"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa46ffbc6d8db4317736cb5ed778f8750"><td class="memItemLeft" align="right" valign="top"><a id="aa46ffbc6d8db4317736cb5ed778f8750"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>request_multi_slot_decision</b> (const char *context_json, multi_slot_response &amp;resp, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
-<tr class="separator:aa46ffbc6d8db4317736cb5ed778f8750"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a831b14fbbcb1e110498d32fcbe4e78b2"><td class="memItemLeft" align="right" valign="top"><a id="a831b14fbbcb1e110498d32fcbe4e78b2"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>request_multi_slot_decision</b> (const char *event_id, const char *context_json, unsigned int flags, multi_slot_response &amp;resp, const int *baseline_actions, size_t baseline_actions_size, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
-<tr class="separator:a831b14fbbcb1e110498d32fcbe4e78b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1def66089cfbf98bce3b536aeef994b3"><td class="memItemLeft" align="right" valign="top"><a id="a1def66089cfbf98bce3b536aeef994b3"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>request_multi_slot_decision</b> (const char *event_id, const char *context_json, unsigned int flags, multi_slot_response_detailed &amp;resp, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
-<tr class="separator:a1def66089cfbf98bce3b536aeef994b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad59d8e3a84674a4465ac978b709dd2a1"><td class="memItemLeft" align="right" valign="top"><a id="ad59d8e3a84674a4465ac978b709dd2a1"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>request_multi_slot_decision</b> (const char *event_id, const char *context_json, multi_slot_response_detailed &amp;resp, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
-<tr class="separator:ad59d8e3a84674a4465ac978b709dd2a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ed7bd5a829bcc1fbea7cda56a69f43e"><td class="memItemLeft" align="right" valign="top"><a id="a9ed7bd5a829bcc1fbea7cda56a69f43e"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>request_multi_slot_decision</b> (const char *context_json, unsigned int flags, multi_slot_response_detailed &amp;resp, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
-<tr class="separator:a9ed7bd5a829bcc1fbea7cda56a69f43e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a341401923568d04ce6bd0953f0c76b96"><td class="memItemLeft" align="right" valign="top"><a id="a341401923568d04ce6bd0953f0c76b96"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>request_multi_slot_decision</b> (const char *context_json, multi_slot_response_detailed &amp;resp, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
-<tr class="separator:a341401923568d04ce6bd0953f0c76b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3eb32d25593f08b5272bfda44d0e7f2d"><td class="memItemLeft" align="right" valign="top"><a id="a3eb32d25593f08b5272bfda44d0e7f2d"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>request_multi_slot_decision</b> (const char *event_id, const char *context_json, unsigned int flags, multi_slot_response_detailed &amp;resp, const int *baseline_actions, size_t baseline_actions_size, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
-<tr class="separator:a3eb32d25593f08b5272bfda44d0e7f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d1bb04940297650dfaf3edc59da88f8"><td class="memItemLeft" align="right" valign="top"><a id="a0d1bb04940297650dfaf3edc59da88f8"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>request_episodic_decision</b> (const char *event_id, const char *previous_id, const char *context_json, <a class="el" href="classreinforcement__learning_1_1ranking__response.html">ranking_response</a> &amp;resp, episode_state &amp;episode, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
-<tr class="separator:a0d1bb04940297650dfaf3edc59da88f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50f2a266dd0a495c1974f809d8b6d113"><td class="memItemLeft" align="right" valign="top"><a id="a50f2a266dd0a495c1974f809d8b6d113"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>request_episodic_decision</b> (const char *event_id, const char *previous_id, const char *context_json, unsigned int flags, <a class="el" href="classreinforcement__learning_1_1ranking__response.html">ranking_response</a> &amp;resp, episode_state &amp;episode, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
-<tr class="separator:a50f2a266dd0a495c1974f809d8b6d113"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76cf0070aea8a2ec9970c12a0b6e523e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreinforcement__learning_1_1live__model.html#a76cf0070aea8a2ec9970c12a0b6e523e">choose_rank</a> (const char *event_id, string_view context_json, <a class="el" href="classreinforcement__learning_1_1ranking__response.html">ranking_response</a> &amp;resp, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
+<tr class="memdesc:a76cf0070aea8a2ec9970c12a0b6e523e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Choose an action, given a list of actions, action features and context features. The inference library chooses an action by creating a probability distribution over the actions and then sampling from it.  <a href="classreinforcement__learning_1_1live__model.html#a76cf0070aea8a2ec9970c12a0b6e523e">More...</a><br /></td></tr>
+<tr class="separator:a76cf0070aea8a2ec9970c12a0b6e523e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a314c0ce4fdaf2bbbfd393408806fd186"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreinforcement__learning_1_1live__model.html#a314c0ce4fdaf2bbbfd393408806fd186">choose_rank</a> (string_view context_json, <a class="el" href="classreinforcement__learning_1_1ranking__response.html">ranking_response</a> &amp;resp, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
+<tr class="memdesc:a314c0ce4fdaf2bbbfd393408806fd186"><td class="mdescLeft">&#160;</td><td class="mdescRight">Choose an action, given a list of actions, action features and context features. The inference library chooses an action by creating a probability distribution over the actions and then sampling from it. A unique event_id will be generated and returned in the <a class="el" href="classreinforcement__learning_1_1ranking__response.html" title="choose_rank() returns the action choice using ranking_response. ranking_response contains all the act...">ranking_response</a>. The same event_id should be used when reporting the outcome for this action.  <a href="classreinforcement__learning_1_1live__model.html#a314c0ce4fdaf2bbbfd393408806fd186">More...</a><br /></td></tr>
+<tr class="separator:a314c0ce4fdaf2bbbfd393408806fd186"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5780b9c189220fad19a6577f54ba9057"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreinforcement__learning_1_1live__model.html#a5780b9c189220fad19a6577f54ba9057">choose_rank</a> (const char *event_id, string_view context_json, unsigned int flags, <a class="el" href="classreinforcement__learning_1_1ranking__response.html">ranking_response</a> &amp;resp, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
+<tr class="memdesc:a5780b9c189220fad19a6577f54ba9057"><td class="mdescLeft">&#160;</td><td class="mdescRight">Choose an action, given a list of actions, action features and context features. The inference library chooses an action by creating a probability distribution over the actions and then sampling from it.  <a href="classreinforcement__learning_1_1live__model.html#a5780b9c189220fad19a6577f54ba9057">More...</a><br /></td></tr>
+<tr class="separator:a5780b9c189220fad19a6577f54ba9057"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a073b653e005330565536bfed5dbc881f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreinforcement__learning_1_1live__model.html#a073b653e005330565536bfed5dbc881f">choose_rank</a> (string_view context_json, unsigned int flags, <a class="el" href="classreinforcement__learning_1_1ranking__response.html">ranking_response</a> &amp;resp, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
+<tr class="memdesc:a073b653e005330565536bfed5dbc881f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Choose an action, given a list of actions, action features and context features. The inference library chooses an action by creating a probability distribution over the actions and then sampling from it. A unique event_id will be generated and returned in the <a class="el" href="classreinforcement__learning_1_1ranking__response.html" title="choose_rank() returns the action choice using ranking_response. ranking_response contains all the act...">ranking_response</a>. The same event_id should be used when reporting the outcome for this action.  <a href="classreinforcement__learning_1_1live__model.html#a073b653e005330565536bfed5dbc881f">More...</a><br /></td></tr>
+<tr class="separator:a073b653e005330565536bfed5dbc881f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2aef8bdd54ca320d217363fad375968"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreinforcement__learning_1_1live__model.html#af2aef8bdd54ca320d217363fad375968">request_continuous_action</a> (const char *event_id, string_view context_json, unsigned int flags, continuous_action_response &amp;response, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
+<tr class="memdesc:af2aef8bdd54ca320d217363fad375968"><td class="mdescLeft">&#160;</td><td class="mdescRight">(DEPRECATED) Choose an action from a continuous range, given a list of context features The inference library chooses an action by sampling the probability density function produced per continuous action range. The corresponding event_id should be used when reporting the outcome for the continuous action.  <a href="classreinforcement__learning_1_1live__model.html#af2aef8bdd54ca320d217363fad375968">More...</a><br /></td></tr>
+<tr class="separator:af2aef8bdd54ca320d217363fad375968"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afce0542a1da03640334189adea6d972d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreinforcement__learning_1_1live__model.html#afce0542a1da03640334189adea6d972d">request_continuous_action</a> (const char *event_id, string_view context_json, continuous_action_response &amp;response, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
+<tr class="memdesc:afce0542a1da03640334189adea6d972d"><td class="mdescLeft">&#160;</td><td class="mdescRight">(DEPRECATED) Choose an action from a continuous range, given a list of context features The inference library chooses an action by sampling the probability density function produced per continuous action range. The corresponding event_id should be used when reporting the outcome for the continuous action.  <a href="classreinforcement__learning_1_1live__model.html#afce0542a1da03640334189adea6d972d">More...</a><br /></td></tr>
+<tr class="separator:afce0542a1da03640334189adea6d972d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0975985798bdbce3e7214b24f050a0b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreinforcement__learning_1_1live__model.html#ab0975985798bdbce3e7214b24f050a0b">request_continuous_action</a> (string_view context_json, unsigned int flags, continuous_action_response &amp;response, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
+<tr class="memdesc:ab0975985798bdbce3e7214b24f050a0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">(DEPRECATED) Choose an action from a continuous range, given a list of context features The inference library chooses an action by sampling the probability density function produced per continuous action range. A unique event_id will be generated and returned in the continuous_action_response. The same event_id should be used when reporting the outcome for this action.  <a href="classreinforcement__learning_1_1live__model.html#ab0975985798bdbce3e7214b24f050a0b">More...</a><br /></td></tr>
+<tr class="separator:ab0975985798bdbce3e7214b24f050a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeac0be38f29b4a800f5c89add76f381b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreinforcement__learning_1_1live__model.html#aeac0be38f29b4a800f5c89add76f381b">request_continuous_action</a> (string_view context_json, continuous_action_response &amp;response, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
+<tr class="memdesc:aeac0be38f29b4a800f5c89add76f381b"><td class="mdescLeft">&#160;</td><td class="mdescRight">(DEPRECATED) Choose an action from a continuous range, given a list of context features The inference library chooses an action by sampling the probability density function produced per continuous action range. A unique event_id will be generated and returned in the continuous_action_response. The same event_id should be used when reporting the outcome for this action.  <a href="classreinforcement__learning_1_1live__model.html#aeac0be38f29b4a800f5c89add76f381b">More...</a><br /></td></tr>
+<tr class="separator:aeac0be38f29b4a800f5c89add76f381b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ac3768ac51d7fdd710767f0b97bf4af"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreinforcement__learning_1_1live__model.html#a0ac3768ac51d7fdd710767f0b97bf4af">request_decision</a> (string_view context_json, unsigned int flags, decision_response &amp;resp, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
+<tr class="memdesc:a0ac3768ac51d7fdd710767f0b97bf4af"><td class="mdescLeft">&#160;</td><td class="mdescRight">(DEPRECATED) Choose an action from the given set for each slot, given a list of actions, slots, action features, slot feautres and context features. The inference library chooses an action per slot by sampling the probability distribution produced per slot. A unique event_id can be supplied for each slot using the <code>_id</code> json field. The corresponding event_id should be used when reporting the outcome for each slot.  <a href="classreinforcement__learning_1_1live__model.html#a0ac3768ac51d7fdd710767f0b97bf4af">More...</a><br /></td></tr>
+<tr class="separator:a0ac3768ac51d7fdd710767f0b97bf4af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02fb3b4e3914ec8d055d7caa85db66d8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreinforcement__learning_1_1live__model.html#a02fb3b4e3914ec8d055d7caa85db66d8">request_decision</a> (string_view context_json, decision_response &amp;resp, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
+<tr class="memdesc:a02fb3b4e3914ec8d055d7caa85db66d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">(DEPRECATED) Choose an action from the given set for each slot, given a list of actions, slots, action features, slot feautres and context features. The inference library chooses an action per slot by sampling the probability distribution produced per slot. A unique event_id can be supplied for each slot using the <code>_id</code> json field. The corresponding event_id should be used when reporting the outcome for each slot.  <a href="classreinforcement__learning_1_1live__model.html#a02fb3b4e3914ec8d055d7caa85db66d8">More...</a><br /></td></tr>
+<tr class="separator:a02fb3b4e3914ec8d055d7caa85db66d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a946f1e677c718b7c243a957af15ef0e1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreinforcement__learning_1_1live__model.html#a946f1e677c718b7c243a957af15ef0e1">request_multi_slot_decision</a> (const char *event_id, string_view context_json, unsigned int flags, multi_slot_response &amp;resp, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
+<tr class="memdesc:a946f1e677c718b7c243a957af15ef0e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">(DEPRECATED) Choose an action from the given set for each slot, given a list of actions, slots, action features, slot features and context features. The inference library chooses an action per slot by sampling the probability distribution produced per slot. The corresponding event_id should be used when reporting the outcome for each slot.  <a href="classreinforcement__learning_1_1live__model.html#a946f1e677c718b7c243a957af15ef0e1">More...</a><br /></td></tr>
+<tr class="separator:a946f1e677c718b7c243a957af15ef0e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae44ebd69f1555e579f0254759202a452"><td class="memItemLeft" align="right" valign="top"><a id="ae44ebd69f1555e579f0254759202a452"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>request_multi_slot_decision</b> (const char *event_id, string_view context_json, multi_slot_response &amp;resp, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
+<tr class="separator:ae44ebd69f1555e579f0254759202a452"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fc228058ebed0bb584409bcbab994f6"><td class="memItemLeft" align="right" valign="top"><a id="a2fc228058ebed0bb584409bcbab994f6"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>request_multi_slot_decision</b> (string_view context_json, unsigned int flags, multi_slot_response &amp;resp, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
+<tr class="separator:a2fc228058ebed0bb584409bcbab994f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0795b4c0a4026d3da5d306f6847388a"><td class="memItemLeft" align="right" valign="top"><a id="ac0795b4c0a4026d3da5d306f6847388a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>request_multi_slot_decision</b> (string_view context_json, multi_slot_response &amp;resp, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
+<tr class="separator:ac0795b4c0a4026d3da5d306f6847388a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaec7b03e6264187fe9ddfd167c214601"><td class="memItemLeft" align="right" valign="top"><a id="aaec7b03e6264187fe9ddfd167c214601"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>request_multi_slot_decision</b> (const char *event_id, string_view context_json, unsigned int flags, multi_slot_response &amp;resp, const int *baseline_actions, size_t baseline_actions_size, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
+<tr class="separator:aaec7b03e6264187fe9ddfd167c214601"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6aa28d4a57de75fd116028f32484c5c5"><td class="memItemLeft" align="right" valign="top"><a id="a6aa28d4a57de75fd116028f32484c5c5"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>request_multi_slot_decision</b> (const char *event_id, string_view context_json, unsigned int flags, multi_slot_response_detailed &amp;resp, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
+<tr class="separator:a6aa28d4a57de75fd116028f32484c5c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bbb1b2c46662958821000e0233cd8d2"><td class="memItemLeft" align="right" valign="top"><a id="a4bbb1b2c46662958821000e0233cd8d2"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>request_multi_slot_decision</b> (const char *event_id, string_view context_json, multi_slot_response_detailed &amp;resp, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
+<tr class="separator:a4bbb1b2c46662958821000e0233cd8d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcff2c5d665d394556033d178e725204"><td class="memItemLeft" align="right" valign="top"><a id="afcff2c5d665d394556033d178e725204"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>request_multi_slot_decision</b> (string_view context_json, unsigned int flags, multi_slot_response_detailed &amp;resp, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
+<tr class="separator:afcff2c5d665d394556033d178e725204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06391f355e38fd1ebcf4e480364768da"><td class="memItemLeft" align="right" valign="top"><a id="a06391f355e38fd1ebcf4e480364768da"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>request_multi_slot_decision</b> (string_view context_json, multi_slot_response_detailed &amp;resp, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
+<tr class="separator:a06391f355e38fd1ebcf4e480364768da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a092d0f5127c41f0a53ef730327ac2bf9"><td class="memItemLeft" align="right" valign="top"><a id="a092d0f5127c41f0a53ef730327ac2bf9"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>request_multi_slot_decision</b> (const char *event_id, string_view context_json, unsigned int flags, multi_slot_response_detailed &amp;resp, const int *baseline_actions, size_t baseline_actions_size, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
+<tr class="separator:a092d0f5127c41f0a53ef730327ac2bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a454fb154dbe56fa651149883815484e7"><td class="memItemLeft" align="right" valign="top"><a id="a454fb154dbe56fa651149883815484e7"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>request_episodic_decision</b> (const char *event_id, const char *previous_id, string_view context_json, <a class="el" href="classreinforcement__learning_1_1ranking__response.html">ranking_response</a> &amp;resp, episode_state &amp;episode, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
+<tr class="separator:a454fb154dbe56fa651149883815484e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5ba7a158abd7a01bec50a389a598af4"><td class="memItemLeft" align="right" valign="top"><a id="ae5ba7a158abd7a01bec50a389a598af4"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>request_episodic_decision</b> (const char *event_id, const char *previous_id, string_view context_json, unsigned int flags, <a class="el" href="classreinforcement__learning_1_1ranking__response.html">ranking_response</a> &amp;resp, episode_state &amp;episode, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
+<tr class="separator:ae5ba7a158abd7a01bec50a389a598af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9e72e066a8e4c572da2cd19d93351cf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreinforcement__learning_1_1live__model.html#ab9e72e066a8e4c572da2cd19d93351cf">report_action_taken</a> (const char *event_id, <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
 <tr class="memdesc:ab9e72e066a8e4c572da2cd19d93351cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report that action was taken.  <a href="classreinforcement__learning_1_1live__model.html#ab9e72e066a8e4c572da2cd19d93351cf">More...</a><br /></td></tr>
 <tr class="separator:ab9e72e066a8e4c572da2cd19d93351cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -245,7 +245,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>refresh_model</b> (<a 
 <div class="textblock"><p>Interface class for the Inference API. </p>
 <ul>
 <li>(1) Instantiate and Initialize</li>
-<li>(2) <a class="el" href="classreinforcement__learning_1_1live__model.html#a51726db2fff3dba2c20554b9806855e8" title="Choose an action, given a list of actions, action features and context features. The inference librar...">choose_rank()</a> to choose an action from a list of actions</li>
+<li>(2) <a class="el" href="classreinforcement__learning_1_1live__model.html#a76cf0070aea8a2ec9970c12a0b6e523e" title="Choose an action, given a list of actions, action features and context features. The inference librar...">choose_rank()</a> to choose an action from a list of actions</li>
 <li>(3) <a class="el" href="classreinforcement__learning_1_1live__model.html#ac18211a3d6a13944c9ba3a586431d355" title="Report the outcome for the top action.">report_outcome()</a> to provide feedback on chosen action </li>
 </ul>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
@@ -487,8 +487,8 @@ template&lt;typename ErrCntxt &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a2a7a475cb4d09a844aba17b255d5de95"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a7a475cb4d09a844aba17b255d5de95">&#9670;&nbsp;</a></span>choose_rank() <span class="overload">[1/4]</span></h2>
+<a id="a76cf0070aea8a2ec9970c12a0b6e523e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76cf0070aea8a2ec9970c12a0b6e523e">&#9670;&nbsp;</a></span>choose_rank() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -497,6 +497,12 @@ template&lt;typename ErrCntxt &gt; </div>
           <td class="memname">int reinforcement_learning::live_model::choose_rank </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>event_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string_view&#160;</td>
           <td class="paramname"><em>context_json</em>, </td>
         </tr>
         <tr>
@@ -519,9 +525,10 @@ template&lt;typename ErrCntxt &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Choose an action, given a list of actions, action features and context features. The inference library chooses an action by creating a probability distribution over the actions and then sampling from it. A unique event_id will be generated and returned in the <a class="el" href="classreinforcement__learning_1_1ranking__response.html" title="choose_rank() returns the action choice using ranking_response. ranking_response contains all the act...">ranking_response</a>. The same event_id should be used when reporting the outcome for this action. </p>
+<p>Choose an action, given a list of actions, action features and context features. The inference library chooses an action by creating a probability distribution over the actions and then sampling from it. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">event_id</td><td>The unique identifier for this interaction. The same event_id should be used when reporting the outcome for this action. </td></tr>
     <tr><td class="paramname">context_json</td><td>Contains action, action features and context features in json format </td></tr>
     <tr><td class="paramname">resp</td><td>Ranking response contains the chosen action, probability distribution used for sampling actions and ranked actions </td></tr>
     <tr><td class="paramname">status</td><td>Optional field with detailed string description if there is an error </td></tr>
@@ -532,8 +539,8 @@ template&lt;typename ErrCntxt &gt; </div>
 
 </div>
 </div>
-<a id="acb0ab6abbba6c69f1c6c44ba305919e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb0ab6abbba6c69f1c6c44ba305919e4">&#9670;&nbsp;</a></span>choose_rank() <span class="overload">[2/4]</span></h2>
+<a id="a5780b9c189220fad19a6577f54ba9057"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5780b9c189220fad19a6577f54ba9057">&#9670;&nbsp;</a></span>choose_rank() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -542,6 +549,12 @@ template&lt;typename ErrCntxt &gt; </div>
           <td class="memname">int reinforcement_learning::live_model::choose_rank </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>event_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string_view&#160;</td>
           <td class="paramname"><em>context_json</em>, </td>
         </tr>
         <tr>
@@ -570,9 +583,10 @@ template&lt;typename ErrCntxt &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Choose an action, given a list of actions, action features and context features. The inference library chooses an action by creating a probability distribution over the actions and then sampling from it. A unique event_id will be generated and returned in the <a class="el" href="classreinforcement__learning_1_1ranking__response.html" title="choose_rank() returns the action choice using ranking_response. ranking_response contains all the act...">ranking_response</a>. The same event_id should be used when reporting the outcome for this action. </p>
+<p>Choose an action, given a list of actions, action features and context features. The inference library chooses an action by creating a probability distribution over the actions and then sampling from it. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">event_id</td><td>The unique identifier for this interaction. The same event_id should be used when reporting the outcome for this action. </td></tr>
     <tr><td class="paramname">context_json</td><td>Contains action, action features and context features in json format </td></tr>
     <tr><td class="paramname">flags</td><td>Action flags (see action_flags.h) </td></tr>
     <tr><td class="paramname">resp</td><td>Ranking response contains the chosen action, probability distribution used for sampling actions and ranked actions </td></tr>
@@ -584,8 +598,8 @@ template&lt;typename ErrCntxt &gt; </div>
 
 </div>
 </div>
-<a id="a51726db2fff3dba2c20554b9806855e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51726db2fff3dba2c20554b9806855e8">&#9670;&nbsp;</a></span>choose_rank() <span class="overload">[3/4]</span></h2>
+<a id="a314c0ce4fdaf2bbbfd393408806fd186"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a314c0ce4fdaf2bbbfd393408806fd186">&#9670;&nbsp;</a></span>choose_rank() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -593,13 +607,7 @@ template&lt;typename ErrCntxt &gt; </div>
         <tr>
           <td class="memname">int reinforcement_learning::live_model::choose_rank </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>event_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype">string_view&#160;</td>
           <td class="paramname"><em>context_json</em>, </td>
         </tr>
         <tr>
@@ -622,10 +630,9 @@ template&lt;typename ErrCntxt &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Choose an action, given a list of actions, action features and context features. The inference library chooses an action by creating a probability distribution over the actions and then sampling from it. </p>
+<p>Choose an action, given a list of actions, action features and context features. The inference library chooses an action by creating a probability distribution over the actions and then sampling from it. A unique event_id will be generated and returned in the <a class="el" href="classreinforcement__learning_1_1ranking__response.html" title="choose_rank() returns the action choice using ranking_response. ranking_response contains all the act...">ranking_response</a>. The same event_id should be used when reporting the outcome for this action. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">event_id</td><td>The unique identifier for this interaction. The same event_id should be used when reporting the outcome for this action. </td></tr>
     <tr><td class="paramname">context_json</td><td>Contains action, action features and context features in json format </td></tr>
     <tr><td class="paramname">resp</td><td>Ranking response contains the chosen action, probability distribution used for sampling actions and ranked actions </td></tr>
     <tr><td class="paramname">status</td><td>Optional field with detailed string description if there is an error </td></tr>
@@ -636,8 +643,8 @@ template&lt;typename ErrCntxt &gt; </div>
 
 </div>
 </div>
-<a id="afb63ab783c6f029acf42b4ff98e3aaaf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afb63ab783c6f029acf42b4ff98e3aaaf">&#9670;&nbsp;</a></span>choose_rank() <span class="overload">[4/4]</span></h2>
+<a id="a073b653e005330565536bfed5dbc881f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a073b653e005330565536bfed5dbc881f">&#9670;&nbsp;</a></span>choose_rank() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -645,13 +652,7 @@ template&lt;typename ErrCntxt &gt; </div>
         <tr>
           <td class="memname">int reinforcement_learning::live_model::choose_rank </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>event_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype">string_view&#160;</td>
           <td class="paramname"><em>context_json</em>, </td>
         </tr>
         <tr>
@@ -680,10 +681,9 @@ template&lt;typename ErrCntxt &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Choose an action, given a list of actions, action features and context features. The inference library chooses an action by creating a probability distribution over the actions and then sampling from it. </p>
+<p>Choose an action, given a list of actions, action features and context features. The inference library chooses an action by creating a probability distribution over the actions and then sampling from it. A unique event_id will be generated and returned in the <a class="el" href="classreinforcement__learning_1_1ranking__response.html" title="choose_rank() returns the action choice using ranking_response. ranking_response contains all the act...">ranking_response</a>. The same event_id should be used when reporting the outcome for this action. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">event_id</td><td>The unique identifier for this interaction. The same event_id should be used when reporting the outcome for this action. </td></tr>
     <tr><td class="paramname">context_json</td><td>Contains action, action features and context features in json format </td></tr>
     <tr><td class="paramname">flags</td><td>Action flags (see action_flags.h) </td></tr>
     <tr><td class="paramname">resp</td><td>Ranking response contains the chosen action, probability distribution used for sampling actions and ranked actions </td></tr>
@@ -1103,105 +1103,8 @@ template&lt;typename ErrCntxt &gt; </div>
 
 </div>
 </div>
-<a id="a25f9c52d70d7908d3d1373e34ce2e0f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25f9c52d70d7908d3d1373e34ce2e0f6">&#9670;&nbsp;</a></span>request_continuous_action() <span class="overload">[1/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int reinforcement_learning::live_model::request_continuous_action </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>context_json</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">continuous_action_response &amp;&#160;</td>
-          <td class="paramname"><em>response</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *&#160;</td>
-          <td class="paramname"><em>status</em> = <code>nullptr</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>(DEPRECATED) Choose an action from a continuous range, given a list of context features The inference library chooses an action by sampling the probability density function produced per continuous action range. A unique event_id will be generated and returned in the continuous_action_response. The same event_id should be used when reporting the outcome for this action. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">context_json</td><td>Contains context features in json format </td></tr>
-    <tr><td class="paramname">response</td><td>Continuous action response contains the chosen action and the probability density value of the chosen action location from the continuous range. </td></tr>
-    <tr><td class="paramname">status</td><td>Optional field with detailed string description if there is an error </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>int Return error code. This will also be returned in the <a class="el" href="classreinforcement__learning_1_1api__status.html" title="Report status of all API calls.">api_status</a> object </dd></dl>
-
-</div>
-</div>
-<a id="a776cdca72d67dfd65f335c7b9ff54c06"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a776cdca72d67dfd65f335c7b9ff54c06">&#9670;&nbsp;</a></span>request_continuous_action() <span class="overload">[2/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int reinforcement_learning::live_model::request_continuous_action </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>context_json</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>flags</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">continuous_action_response &amp;&#160;</td>
-          <td class="paramname"><em>response</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *&#160;</td>
-          <td class="paramname"><em>status</em> = <code>nullptr</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>(DEPRECATED) Choose an action from a continuous range, given a list of context features The inference library chooses an action by sampling the probability density function produced per continuous action range. A unique event_id will be generated and returned in the continuous_action_response. The same event_id should be used when reporting the outcome for this action. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">context_json</td><td>Contains context features in json format </td></tr>
-    <tr><td class="paramname">flags</td><td>Action flags (see action_flags.h) </td></tr>
-    <tr><td class="paramname">response</td><td>Continuous action response contains the chosen action and the probability density value of the chosen action location from the continuous range. </td></tr>
-    <tr><td class="paramname">status</td><td>Optional field with detailed string description if there is an error </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>int Return error code. This will also be returned in the <a class="el" href="classreinforcement__learning_1_1api__status.html" title="Report status of all API calls.">api_status</a> object </dd></dl>
-
-</div>
-</div>
-<a id="a737b2b073fc6a59470fde26be19d5df6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a737b2b073fc6a59470fde26be19d5df6">&#9670;&nbsp;</a></span>request_continuous_action() <span class="overload">[3/4]</span></h2>
+<a id="afce0542a1da03640334189adea6d972d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afce0542a1da03640334189adea6d972d">&#9670;&nbsp;</a></span>request_continuous_action() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1215,7 +1118,7 @@ template&lt;typename ErrCntxt &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype">string_view&#160;</td>
           <td class="paramname"><em>context_json</em>, </td>
         </tr>
         <tr>
@@ -1252,8 +1155,8 @@ template&lt;typename ErrCntxt &gt; </div>
 
 </div>
 </div>
-<a id="a88900e50af8ecd7c89f17df9946e3655"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88900e50af8ecd7c89f17df9946e3655">&#9670;&nbsp;</a></span>request_continuous_action() <span class="overload">[4/4]</span></h2>
+<a id="af2aef8bdd54ca320d217363fad375968"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2aef8bdd54ca320d217363fad375968">&#9670;&nbsp;</a></span>request_continuous_action() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1267,7 +1170,7 @@ template&lt;typename ErrCntxt &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype">string_view&#160;</td>
           <td class="paramname"><em>context_json</em>, </td>
         </tr>
         <tr>
@@ -1311,8 +1214,105 @@ template&lt;typename ErrCntxt &gt; </div>
 
 </div>
 </div>
-<a id="ac1e6a01a982d02698b6667013e50d23a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac1e6a01a982d02698b6667013e50d23a">&#9670;&nbsp;</a></span>request_decision() <span class="overload">[1/2]</span></h2>
+<a id="aeac0be38f29b4a800f5c89add76f381b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeac0be38f29b4a800f5c89add76f381b">&#9670;&nbsp;</a></span>request_continuous_action() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int reinforcement_learning::live_model::request_continuous_action </td>
+          <td>(</td>
+          <td class="paramtype">string_view&#160;</td>
+          <td class="paramname"><em>context_json</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">continuous_action_response &amp;&#160;</td>
+          <td class="paramname"><em>response</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *&#160;</td>
+          <td class="paramname"><em>status</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>(DEPRECATED) Choose an action from a continuous range, given a list of context features The inference library chooses an action by sampling the probability density function produced per continuous action range. A unique event_id will be generated and returned in the continuous_action_response. The same event_id should be used when reporting the outcome for this action. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context_json</td><td>Contains context features in json format </td></tr>
+    <tr><td class="paramname">response</td><td>Continuous action response contains the chosen action and the probability density value of the chosen action location from the continuous range. </td></tr>
+    <tr><td class="paramname">status</td><td>Optional field with detailed string description if there is an error </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int Return error code. This will also be returned in the <a class="el" href="classreinforcement__learning_1_1api__status.html" title="Report status of all API calls.">api_status</a> object </dd></dl>
+
+</div>
+</div>
+<a id="ab0975985798bdbce3e7214b24f050a0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0975985798bdbce3e7214b24f050a0b">&#9670;&nbsp;</a></span>request_continuous_action() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int reinforcement_learning::live_model::request_continuous_action </td>
+          <td>(</td>
+          <td class="paramtype">string_view&#160;</td>
+          <td class="paramname"><em>context_json</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">continuous_action_response &amp;&#160;</td>
+          <td class="paramname"><em>response</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *&#160;</td>
+          <td class="paramname"><em>status</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>(DEPRECATED) Choose an action from a continuous range, given a list of context features The inference library chooses an action by sampling the probability density function produced per continuous action range. A unique event_id will be generated and returned in the continuous_action_response. The same event_id should be used when reporting the outcome for this action. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context_json</td><td>Contains context features in json format </td></tr>
+    <tr><td class="paramname">flags</td><td>Action flags (see action_flags.h) </td></tr>
+    <tr><td class="paramname">response</td><td>Continuous action response contains the chosen action and the probability density value of the chosen action location from the continuous range. </td></tr>
+    <tr><td class="paramname">status</td><td>Optional field with detailed string description if there is an error </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int Return error code. This will also be returned in the <a class="el" href="classreinforcement__learning_1_1api__status.html" title="Report status of all API calls.">api_status</a> object </dd></dl>
+
+</div>
+</div>
+<a id="a02fb3b4e3914ec8d055d7caa85db66d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02fb3b4e3914ec8d055d7caa85db66d8">&#9670;&nbsp;</a></span>request_decision() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1320,7 +1320,7 @@ template&lt;typename ErrCntxt &gt; </div>
         <tr>
           <td class="memname">int reinforcement_learning::live_model::request_decision </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype">string_view&#160;</td>
           <td class="paramname"><em>context_json</em>, </td>
         </tr>
         <tr>
@@ -1356,8 +1356,8 @@ template&lt;typename ErrCntxt &gt; </div>
 
 </div>
 </div>
-<a id="a4c264759ee6e4a8b3276037b0e2a667b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c264759ee6e4a8b3276037b0e2a667b">&#9670;&nbsp;</a></span>request_decision() <span class="overload">[2/2]</span></h2>
+<a id="a0ac3768ac51d7fdd710767f0b97bf4af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ac3768ac51d7fdd710767f0b97bf4af">&#9670;&nbsp;</a></span>request_decision() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1365,7 +1365,7 @@ template&lt;typename ErrCntxt &gt; </div>
         <tr>
           <td class="memname">int reinforcement_learning::live_model::request_decision </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype">string_view&#160;</td>
           <td class="paramname"><em>context_json</em>, </td>
         </tr>
         <tr>
@@ -1408,8 +1408,8 @@ template&lt;typename ErrCntxt &gt; </div>
 
 </div>
 </div>
-<a id="ad12bec20c20db4fb097cfb750d31a009"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad12bec20c20db4fb097cfb750d31a009">&#9670;&nbsp;</a></span>request_multi_slot_decision()</h2>
+<a id="a946f1e677c718b7c243a957af15ef0e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a946f1e677c718b7c243a957af15ef0e1">&#9670;&nbsp;</a></span>request_multi_slot_decision()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1423,7 +1423,7 @@ template&lt;typename ErrCntxt &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype">string_view&#160;</td>
           <td class="paramname"><em>context_json</em>, </td>
         </tr>
         <tr>
