@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['a_5fs',['a_s',['../structpolyprediction.html#aff6f567473d301cd324039ccd13d74a8',1,'polyprediction']]],
+  ['a_5fs',['a_s',['../structVW_1_1polyprediction.html#abe21cff15e4830948ac50169a25a4c58',1,'VW::polyprediction']]],
   ['action',['action',['../structACTION__SCORE_1_1action__score.html#a3da08ec8bf04bb62c2435436de0b7beb',1,'ACTION_SCORE::action_score::action()'],['../structCB_1_1cb__class.html#a511b292fa65f62a62983677817b0e096',1,'CB::cb_class::action()'],['../structCB__EVAL_1_1label.html#a74e7d0b1d4b50ec21ae0dae9aa083946',1,'CB_EVAL::label::action()'],['../structVW_1_1cb__continuous_1_1continuous__label__elm.html#a3aebe64ba36297f71a1cb5d7b94a5d9e',1,'VW::cb_continuous::continuous_label_elm::action()'],['../structVW_1_1continuous__actions_1_1probability__density__function__value.html#a3102e2c2988ea567a378737163cd9f74',1,'VW::continuous_actions::probability_density_function_value::action()']]],
   ['action_5fcosts',['ACTION_COSTS',['../namespaceSearch.html#a86ee04bcb8443067b54b85e38e876cab',1,'Search']]],
   ['action_5fsum',['action_sum',['../structGEN__CS_1_1cb__to__cs__adf.html#a603aadff469c9a586f031e2833c2e076',1,'GEN_CS::cb_to_cs_adf']]],
@@ -8,7 +8,7 @@ var searchData=
   ['actions',['actions',['../structDecisionServiceInteraction.html#a5dc3dbcb448871ba574eeb0eb2f3838c',1,'DecisionServiceInteraction::actions()'],['../classLabelObjectState.html#ac8c3b4ad435a3391d3788a3c27613aea',1,'LabelObjectState::actions()']]],
   ['active',['active',['../structBeam_1_1beam__element.html#a60ae4810410bb735e6af202cf7ffc131',1,'Beam::beam_element::active()'],['../structVW_1_1workspace.html#a13db26d284e2ec61861eaceb12b230f9',1,'VW::workspace::active()']]],
   ['active_5fc0',['active_c0',['../structactive.html#a3421d80ae5bc66b42dadc1a6d608d5fe',1,'active']]],
-  ['active_5fmulticlass',['active_multiclass',['../structpolyprediction.html#adf514f68c17010615a57b3bf0293dd60',1,'polyprediction']]],
+  ['active_5fmulticlass',['active_multiclass',['../structVW_1_1polyprediction.html#a3cac575939db13cde68b4c1356733114',1,'VW::polyprediction']]],
   ['adaptive',['adaptive',['../classparameters.html#ae32e0735531564f9764905fcc46190c2',1,'parameters']]],
   ['add_5fconstant',['add_constant',['../structVW_1_1workspace.html#ad761dc98a023f1e8c2a031cf8dcc02d4',1,'VW::workspace']]],
   ['adf_5flearner',['adf_learner',['../structVW_1_1automl_1_1automl.html#a06104be85521daaf5ebeb42e21c9bcea',1,'VW::automl::automl']]],

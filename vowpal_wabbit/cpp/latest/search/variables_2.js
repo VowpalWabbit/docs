@@ -12,7 +12,7 @@ var searchData=
   ['binary',['binary',['../structvw__dbg.html#aa1ae629795328b25b09b243a8aca29ef',1,'vw_dbg']]],
   ['bool_5fstate',['bool_state',['../structContext.html#a0dda584309012bded089bb76d8a5be5d',1,'Context']]],
   ['bound_5fsock',['bound_sock',['../structparser.html#a42519589c5014a70b532ce88d3b243ef',1,'parser']]],
-  ['buf',['buf',['../structExpReplay_1_1expreplay.html#a231e931ed1faacf4b218ae66ed32598d',1,'ExpReplay::expreplay']]],
+  ['buf',['buf',['../structExpReplay_1_1expreplay.html#a026b4d8e7ce8f3b9ae503645524cd3b5',1,'ExpReplay::expreplay']]],
   ['buffer',['buffer',['../structData.html#a6dc409011ac0912b2e8e16bb8fd5d5ad',1,'Data']]],
   ['buffers',['buffers',['../classAllReduceSync.html#a9f9e0266fcc60ce2b7a0b06fb293e84d',1,'AllReduceSync']]]
 ];

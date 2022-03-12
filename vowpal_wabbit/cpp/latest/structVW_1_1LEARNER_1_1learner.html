@@ -95,11 +95,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0e126b45e387c3aaaad6f1afa8dfe7ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1learner.html#a0e126b45e387c3aaaad6f1afa8dfe7ec">predict</a> (E &amp;ec, size_t i=0)</td></tr>
 <tr class="memdesc:a0e126b45e387c3aaaad6f1afa8dfe7ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a prediction for the given example.  <a href="#a0e126b45e387c3aaaad6f1afa8dfe7ec">More...</a><br /></td></tr>
 <tr class="separator:a0e126b45e387c3aaaad6f1afa8dfe7ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44d1395545c9fd963b1a9fcf7982f514"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1learner.html#a44d1395545c9fd963b1a9fcf7982f514">multipredict</a> (E &amp;ec, size_t lo, size_t count, <a class="el" href="structpolyprediction.html">polyprediction</a> *pred, bool finalize_predictions)</td></tr>
+<tr class="memitem:a44d1395545c9fd963b1a9fcf7982f514"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1learner.html#a44d1395545c9fd963b1a9fcf7982f514">multipredict</a> (E &amp;ec, size_t lo, size_t count, <a class="el" href="structVW_1_1polyprediction.html">polyprediction</a> *pred, bool finalize_predictions)</td></tr>
 <tr class="separator:a44d1395545c9fd963b1a9fcf7982f514"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af994d66959b825bc3b92af991529c7e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1learner.html#af994d66959b825bc3b92af991529c7e6">update</a> (E &amp;ec, size_t i=0)</td></tr>
 <tr class="separator:af994d66959b825bc3b92af991529c7e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed129d0c66e093ff28c4252fde644744"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1learner.html#aed129d0c66e093ff28c4252fde644744">sensitivity</a> (<a class="el" href="structexample.html">example</a> &amp;ec, size_t i=0)</td></tr>
+<tr class="memitem:aed129d0c66e093ff28c4252fde644744"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1learner.html#aed129d0c66e093ff28c4252fde644744">sensitivity</a> (<a class="el" href="structVW_1_1example.html">example</a> &amp;ec, size_t i=0)</td></tr>
 <tr class="separator:aed129d0c66e093ff28c4252fde644744"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9129a600e89a45cad4b7db588ec864be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1learner.html#a9129a600e89a45cad4b7db588ec864be">save_load</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;io, const bool read, const bool text)</td></tr>
 <tr class="separator:a9129a600e89a45cad4b7db588ec864be"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,7 +169,7 @@ struct VW::LEARNER::learner&lt; T, E &gt;</h3>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>Type of the reduction data object stored. This allows this specific reduction to have it's own state. </td></tr>
-    <tr><td class="paramname">E</td><td>Example type this reduction supports. Must be one of <a class="el" href="structexample.html">example</a> or <a class="el" href="reductions__fwd_8h.html#ababa4c0392834695d0ff6255e8d3ce77">multi_ex</a> </td></tr>
+    <tr><td class="paramname">E</td><td>Example type this reduction supports. Must be one of ::example or <a class="el" href="namespaceVW.html#a505a6662876c6cba2fcdebb6d21ebbd2">multi_ex</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -664,12 +664,12 @@ template&lt;class T, class E&gt; </div>
 <p>Will update the model according to the labels and examples supplied. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ec</td><td>The <a class="el" href="structexample.html">example</a> object or <a class="el" href="reductions__fwd_8h.html#ababa4c0392834695d0ff6255e8d3ce77">multi_ex</a> to be operated on. This object <b>must</b> have a valid label set for every <a class="el" href="structexample.html">example</a> in the field <a class="el" href="structexample.html#a0c87f6e82d9c95ae42158bdbdab3acf5">example::l</a> that corresponds to the type this reduction expects. </td></tr>
+    <tr><td class="paramname">ec</td><td>The ::example object or <a class="el" href="namespaceVW.html#a505a6662876c6cba2fcdebb6d21ebbd2">multi_ex</a> to be operated on. This object <b>must</b> have a valid label set for every ::example in the field <a class="el" href="structVW_1_1example.html#adfcc771a9e46a65130c9dcf8b18870e6">example::l</a> that corresponds to the type this reduction expects. </td></tr>
     <tr><td class="paramname">i</td><td>This is the offset used for the weights in this call. If using multiple regressors/learners you can increment this value for each call. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>While some reductions may fill the <a class="el" href="structexample.html#ad1477e890371ed8253f1953d4190ba49">example::pred</a>, this is not guaranteed and is undefined behavior if accessed. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>While some reductions may fill the <a class="el" href="structVW_1_1example.html#a9302a52e74bafd839a213cbba89cfe4a">example::pred</a>, this is not guaranteed and is undefined behavior if accessed. </dd></dl>
 
 </div>
 </div>
@@ -705,7 +705,7 @@ template&lt;class T, class E&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structpolyprediction.html">polyprediction</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structVW_1_1polyprediction.html">polyprediction</a> *&#160;</td>
           <td class="paramname"><em>pred</em>, </td>
         </tr>
         <tr>
@@ -796,12 +796,12 @@ template&lt;class T, class E&gt; </div>
 <p>Make a prediction for the given example. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ec</td><td>The <a class="el" href="structexample.html">example</a> object or <a class="el" href="reductions__fwd_8h.html#ababa4c0392834695d0ff6255e8d3ce77">multi_ex</a> to be operated on. This object <b>must</b> have a valid prediction allocated in the field <a class="el" href="structexample.html#ad1477e890371ed8253f1953d4190ba49">example::pred</a> that corresponds to this reduction type. </td></tr>
+    <tr><td class="paramname">ec</td><td>The ::example object or <a class="el" href="namespaceVW.html#a505a6662876c6cba2fcdebb6d21ebbd2">multi_ex</a> to be operated on. This object <b>must</b> have a valid prediction allocated in the field <a class="el" href="structVW_1_1example.html#a9302a52e74bafd839a213cbba89cfe4a">example::pred</a> that corresponds to this reduction type. </td></tr>
     <tr><td class="paramname">i</td><td>This is the offset used for the weights in this call. If using multiple regressors/learners you can increment this value for each call. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The prediction calculated by this reduction be set on <a class="el" href="structexample.html#ad1477e890371ed8253f1953d4190ba49">example::pred</a>. If <code>E</code> is <a class="el" href="reductions__fwd_8h.html#ababa4c0392834695d0ff6255e8d3ce77">multi_ex</a> then the prediction is set on the 0th item in the list. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The prediction calculated by this reduction be set on <a class="el" href="structVW_1_1example.html#a9302a52e74bafd839a213cbba89cfe4a">example::pred</a>. If <code>E</code> is <a class="el" href="namespaceVW.html#a505a6662876c6cba2fcdebb6d21ebbd2">multi_ex</a> then the prediction is set on the 0th item in the list. </dd></dl>
 
 </div>
 </div>
@@ -901,7 +901,7 @@ template&lt;class T, class E&gt; </div>
         <tr>
           <td class="memname">float <a class="el" href="structVW_1_1LEARNER_1_1learner.html">VW::LEARNER::learner</a>&lt; T, E &gt;::sensitivity </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structexample.html">example</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structVW_1_1example.html">example</a> &amp;&#160;</td>
           <td class="paramname"><em>ec</em>, </td>
         </tr>
         <tr>
@@ -1123,7 +1123,7 @@ template&lt;class T, class E&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 12 2022 01:47:51 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Mar 12 2022 13:52:14 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

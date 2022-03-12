@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['l',['l',['../structexample.html#a0c87f6e82d9c95ae42158bdbdab3acf5',1,'example::l()'],['../structflat__example.html#a39d3bef5f2dd630f893b46f1a7d16518',1,'flat_example::l()'],['../structVW_1_1workspace.html#aeecce10973024deaf9ea0a4b4b144606',1,'VW::workspace::l()']]],
+  ['l',['l',['../structVW_1_1example.html#adfcc771a9e46a65130c9dcf8b18870e6',1,'VW::example::l()'],['../structVW_1_1flat__example.html#ac06ce4e30446607fac19572a00011d19',1,'VW::flat_example::l()'],['../structVW_1_1workspace.html#aeecce10973024deaf9ea0a4b4b144606',1,'VW::workspace::l()']]],
   ['l1_5flambda',['l1_lambda',['../structVW_1_1workspace.html#ae7797a50d730e07c4310a0d6826abf01',1,'VW::workspace']]],
   ['l2_5flambda',['l2_lambda',['../structVW_1_1workspace.html#a0892885d065a4eef0f904e8228d57d14',1,'VW::workspace']]],
   ['label',['label',['../structMULTICLASS_1_1label__t.html#aa8b080653e3c08b5363152009728453d',1,'MULTICLASS::label_t::label()'],['../structlabel__data.html#a09103f622b965d8c14f0047b53ba7fe1',1,'label_data::label()']]],
@@ -10,7 +10,7 @@ var searchData=
   ['label_5fobject_5fstate',['label_object_state',['../structContext.html#accb075644231b884ecab3d1301524c4b',1,'Context']]],
   ['label_5fsingle_5fproperty_5fstate',['label_single_property_state',['../structContext.html#a5ad5225510ed6a3d777c89f50ba72746',1,'Context']]],
   ['label_5fstate',['label_state',['../structContext.html#a3c166b5e671667715c4c7e673dfc9afb',1,'Context']]],
-  ['label_5ftype',['label_type',['../structlabel__parser.html#a8416deaa2da9244903550c9d1339dc4a',1,'label_parser']]],
+  ['label_5ftype',['label_type',['../structVW_1_1label__parser.html#aa9e6bd3aaf1bf6d8cb86eb7fe1990fc8',1,'VW::label_parser']]],
   ['label_5fv',['label_v',['../structMULTILABEL_1_1labels.html#ab0696074f47cd7bfa8493108754c1c03',1,'MULTILABEL::labels']]],
   ['labeled',['labeled',['../structVW_1_1slates_1_1label.html#a8ee43031c61a9a8a56d4c05bbec341ac',1,'VW::slates::label']]],
   ['last_5fcompatible_5fversion',['LAST_COMPATIBLE_VERSION',['../namespaceVW_1_1version__definitions.html#a705965b39b52128f510483ca9d116135',1,'VW::version_definitions']]],
@@ -20,7 +20,7 @@ var searchData=
   ['last_5fw',['last_w',['../structVW_1_1scored__config.html#aaab8dd5d3ce56876a2436c400ea7a01f',1,'VW::scored_config']]],
   ['lasteventid',['LastEventId',['../structdsjson__metrics.html#aa673f398cf06ec1740db6b90afd433e3',1,'dsjson_metrics']]],
   ['lasteventtime',['LastEventTime',['../structdsjson__metrics.html#af408836b971b1ba858d0033d3fb3211c',1,'dsjson_metrics']]],
-  ['lbl_5fparser',['lbl_parser',['../structparser.html#a986cd8c09f666c0ae0928a0e3d092222',1,'parser']]],
+  ['lbl_5fparser',['lbl_parser',['../structparser.html#a4c24590fbd68c12a3ad2c3b0a714d102',1,'parser']]],
   ['lda',['lda',['../structVW_1_1workspace.html#a9d65c02f12dac8af000b913eb5aee9f3',1,'VW::workspace']]],
   ['ldict',['ldict',['../structshared__data.html#a535958b995f49481d87c6d8fb62ab9ef',1,'shared_data']]],
   ['learn_5fcount',['learn_count',['../structVW_1_1cats__tree_1_1tree__node.html#af48b7cfebb8011772f461c724c08fdfb',1,'VW::cats_tree::tree_node']]],
@@ -39,6 +39,6 @@ var searchData=
   ['live_5finteractions',['live_interactions',['../structVW_1_1automl_1_1aml__score.html#a0ab65375b32bde73cdf1234c5186110b',1,'VW::automl::aml_score']]],
   ['loaded_5fdictionaries',['loaded_dictionaries',['../structVW_1_1workspace.html#a40c9de1e1015c27d3d5b098481acbad7',1,'VW::workspace']]],
   ['logger',['logger',['../structVW_1_1workspace.html#a64e66403030d2917810f6684439c38dc',1,'VW::workspace']]],
-  ['loss',['loss',['../structexample.html#aec82f8fecc8ad2a13e54ecf83dfbc5c9',1,'example::loss()'],['../structVW_1_1workspace.html#a7353810c29b1e203dc46ea27098aa634',1,'VW::workspace::loss()']]],
+  ['loss',['loss',['../structVW_1_1example.html#a6b45287a6e699a3fc3d3a2f7a916728b',1,'VW::example::loss()'],['../structVW_1_1workspace.html#a7353810c29b1e203dc46ea27098aa634',1,'VW::workspace::loss()']]],
   ['lower_5fbound',['lower_bound',['../structVW_1_1automl_1_1exclusion__config.html#ad9186cca87098a3464a7e04ea3f3d6b2',1,'VW::automl::exclusion_config']]]
 ];

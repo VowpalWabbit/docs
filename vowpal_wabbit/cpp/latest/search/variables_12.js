@@ -5,9 +5,9 @@ var searchData=
   ['random_5fstate',['random_state',['../structVW_1_1automl_1_1interaction__config__manager.html#abf18a50e8ad20975efe09d1d1eb05a5f',1,'VW::automl::interaction_config_manager']]],
   ['random_5fweights',['random_weights',['../structVW_1_1workspace.html#a0450fdc35ec3c3f247b0c4142f79bb65',1,'VW::workspace']]],
   ['raw_5fprediction',['raw_prediction',['../structVW_1_1workspace.html#a72755b57b42c9839b75e7d23b15e739a',1,'VW::workspace']]],
-  ['read_5fcached_5flabel',['read_cached_label',['../structlabel__parser.html#a40fab62338dde262d4730457e737902f',1,'label_parser']]],
-  ['reader',['reader',['../structjson__parser.html#a7ccd95632770b12608291f09234000fb',1,'json_parser::reader()'],['../structparser.html#a230bd4c350885d737936fde13e752279',1,'parser::reader()']]],
-  ['ready_5fparsed_5fexamples',['ready_parsed_examples',['../structparser.html#ae0ff2de4eeab90f8fff9fd2da5966ffc',1,'parser']]],
+  ['read_5fcached_5flabel',['read_cached_label',['../structVW_1_1label__parser.html#a96f5af9464f646a53a5b853b96d38611',1,'VW::label_parser']]],
+  ['reader',['reader',['../structjson__parser.html#a7ccd95632770b12608291f09234000fb',1,'json_parser::reader()'],['../structparser.html#aa5ee63724ebceeac333986ce159e3eb4',1,'parser::reader()']]],
+  ['ready_5fparsed_5fexamples',['ready_parsed_examples',['../structparser.html#a5fe824471da29d566951eccef30041bd',1,'parser']]],
   ['redefine',['redefine',['../structVW_1_1workspace.html#a4db77f0861355170dead821c2b17e75e',1,'VW::workspace']]],
   ['redefine_5fsome',['redefine_some',['../structVW_1_1workspace.html#a21905006a34ca0579048fb609c30c5fd',1,'VW::workspace']]],
   ['reduction_5fstack',['reduction_stack',['../structVW_1_1default__reduction__stack__setup.html#a9098946999eb56e719a5ab3253b4d906',1,'VW::default_reduction_stack_setup']]],
@@ -59,7 +59,7 @@ var searchData=
   ['right_5fonly',['right_only',['../structVW_1_1cats__tree_1_1tree__node.html#a15c0d6d517cfb1d954494aa7b0cedd9e',1,'VW::cats_tree::tree_node']]],
   ['root_5fidx',['root_idx',['../structVW_1_1cats__tree_1_1min__depth__binary__tree.html#a3afa9ad5e228efc383db85b1b3b44e31',1,'VW::cats_tree::min_depth_binary_tree::root_idx()'],['../structVW_1_1offset__tree_1_1min__depth__binary__tree.html#ac94cf6e3ec3d1ae4057af9fc1dda6ecb',1,'VW::offset_tree::min_depth_binary_tree::root_idx()']]],
   ['root_5fstate',['root_state',['../structContext.html#a5daf877aaa1271612041d1837d3d9b8f',1,'Context']]],
-  ['run',['run',['../structSearch_1_1search__task.html#adf444315a78d17d968d09c64b7a4f5df',1,'Search::search_task::run()'],['../structSearch_1_1search__metatask.html#a99e42dc6e8de0c2f8dbfe0822fb4c4f6',1,'Search::search_metatask::run()']]],
-  ['run_5fsetup',['run_setup',['../structSearch_1_1search__task.html#aa582b8dc46c5fc2e19dde7749eb9cf34',1,'Search::search_task::run_setup()'],['../structSearch_1_1search__metatask.html#a45b1727341efed3a07f1ad3464618669',1,'Search::search_metatask::run_setup()']]],
-  ['run_5ftakedown',['run_takedown',['../structSearch_1_1search__task.html#a73aaf2d1415651a89b9f449328cf38f1',1,'Search::search_task::run_takedown()'],['../structSearch_1_1search__metatask.html#a3f9b2369800e53db01d1aa3b7f0c5e88',1,'Search::search_metatask::run_takedown()']]]
+  ['run',['run',['../structSearch_1_1search__task.html#a8925e378730517d6bcdff2839b8216dc',1,'Search::search_task::run()'],['../structSearch_1_1search__metatask.html#a182d84cb74c3869c1fe252d28c974544',1,'Search::search_metatask::run()']]],
+  ['run_5fsetup',['run_setup',['../structSearch_1_1search__task.html#ae19b7575faba508a1be2c00ba13f0a18',1,'Search::search_task::run_setup()'],['../structSearch_1_1search__metatask.html#a17aaddbfcb5f6ce671a0eb4f9297cd80',1,'Search::search_metatask::run_setup()']]],
+  ['run_5ftakedown',['run_takedown',['../structSearch_1_1search__task.html#abb3dbac7c012f5de6fb52286191f1b58',1,'Search::search_task::run_takedown()'],['../structSearch_1_1search__metatask.html#a1725c72a51c1fa7268ea8e9fcdd687ff',1,'Search::search_metatask::run_takedown()']]]
 ];

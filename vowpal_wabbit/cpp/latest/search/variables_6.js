@@ -4,7 +4,7 @@ var searchData=
   ['feature_5fcount',['feature_count',['../structNamespace.html#aa7695877ea34d84f25a12c44def2347b',1,'Namespace']]],
   ['feature_5fgroup',['feature_group',['../structNamespace.html#a7ba33baa864fb7a27d078a97cf842be7',1,'Namespace']]],
   ['feature_5fmask',['feature_mask',['../structVW_1_1workspace.html#a2b69dfb1a44e46fbaa0ba40ab05e0ad8',1,'VW::workspace']]],
-  ['feature_5fspace',['feature_space',['../structexample__predict.html#a59f24cbe1603a24ae5812b7d262f3668',1,'example_predict']]],
+  ['feature_5fspace',['feature_space',['../structVW_1_1example__predict.html#aff83d481714c0efece6cdec03f4cf6bb',1,'VW::example_predict']]],
   ['file_5fhash',['file_hash',['../structdictionary__info.html#a1ab499f54ad0f7cb77a6eb299a36f479',1,'dictionary_info']]],
   ['filled',['filled',['../structExpReplay_1_1expreplay.html#afe9d61756339b6e4ef6c0e3ce4c5cf1e',1,'ExpReplay::expreplay']]],
   ['final_5fprediction_5fsink',['final_prediction_sink',['../structVW_1_1workspace.html#a7988dbf3ee8a1f79ca8f47ad73108e54',1,'VW::workspace']]],
@@ -25,8 +25,8 @@ var searchData=
   ['found_5fcb',['found_cb',['../classLabelObjectState.html#a4406c8264307c775d2e601a9fb05114a',1,'LabelObjectState']]],
   ['found_5fcb_5fcontinuous',['found_cb_continuous',['../classLabelObjectState.html#a3e0baed7531e4e864a9228d7936342ee',1,'LabelObjectState']]],
   ['frame_5fpool',['frame_pool',['../structINTERACTIONS_1_1generate__interactions__object__cache.html#ac8d50f36747fbf6b740dd67bdb775c73',1,'INTERACTIONS::generate_interactions_object_cache']]],
-  ['fs',['fs',['../structflat__example.html#a77947dfb239fd7487b88e3842a8f0594',1,'flat_example::fs()'],['../structVW_1_1primitive__feature__space.html#a7196cfc91add16e07c8ff2d442c640e3',1,'VW::primitive_feature_space::fs()']]],
-  ['ft_5foffset',['ft_offset',['../structflat__example.html#a0c98fc527c037d202d4e558b3518a10f',1,'flat_example::ft_offset()'],['../structexample__predict.html#a964a7741ec79edbb2e7e2298ffdd767a',1,'example_predict::ft_offset()']]],
+  ['fs',['fs',['../structVW_1_1flat__example.html#ada7dfc5df3473964d69cd361be424508',1,'VW::flat_example::fs()'],['../structVW_1_1primitive__feature__space.html#a7196cfc91add16e07c8ff2d442c640e3',1,'VW::primitive_feature_space::fs()']]],
+  ['ft_5foffset',['ft_offset',['../structVW_1_1flat__example.html#a3459cb3ce9e89949f3349c447e579c7b',1,'VW::flat_example::ft_offset()'],['../structVW_1_1example__predict.html#a538c4e64a1b4a0de9efbb9b81750cb86',1,'VW::example_predict::ft_offset()']]],
   ['ftrs',['ftrs',['../structNamespace.html#af7140895e79fff354ad484f6c5fb463f',1,'Namespace']]],
   ['func',['func',['../structVW_1_1LEARNER_1_1func__data.html#a64f72ac97241336c7a04a58a6e808eb1',1,'VW::LEARNER::func_data']]]
 ];

@@ -1,9 +1,9 @@
 var searchData=
 [
   ['tagstate',['TagState',['../structTagState.html#a45e93c4c4eca7e556834771aac20e057',1,'TagState']]],
-  ['takedown',['takedown',['../namespaceGraphTask.html#a478898a28fc45a45873296e7e8844741',1,'GraphTask::takedown()'],['../namespaceSequenceSpanTask.html#a18d654e30f150f7aeea0c6dda49c0347',1,'SequenceSpanTask::takedown()']]],
-  ['term_5fis_5fempty',['term_is_empty',['../namespaceINTERACTIONS.html#a0694fb4d5182647e28fcd437e18d37e0',1,'INTERACTIONS']]],
-  ['test_5fadf_5fsequence',['test_adf_sequence',['../namespaceCB__ADF.html#a222ad1ea00e45ecd5ac9186abdf21bff',1,'CB_ADF']]],
+  ['takedown',['takedown',['../namespaceGraphTask.html#adc3459a1c28beacb61d3d164b1b9f3c4',1,'GraphTask::takedown()'],['../namespaceSequenceSpanTask.html#a71802c71668faa68bc865f11f9f483f9',1,'SequenceSpanTask::takedown()']]],
+  ['term_5fis_5fempty',['term_is_empty',['../namespaceINTERACTIONS.html#a08c43dcfb18bad357afa0e576b7f7404',1,'INTERACTIONS']]],
+  ['test_5fadf_5fsequence',['test_adf_sequence',['../namespaceCB__ADF.html#ae983436306ba050ec90665b5558cf92b',1,'CB_ADF']]],
   ['test_5flabel',['test_label',['../namespaceMULTICLASS.html#a95cadbeb4fe6dfe01342045d68b130f0',1,'MULTICLASS']]],
   ['textstate',['TextState',['../structTextState.html#a7b198588c0209d4a4166953cc341538f',1,'TextState']]],
   ['tint',['tint',['../structVW_1_1config_1_1options__i.html#a3f0a59d91749682ca234ec15006326d2',1,'VW::config::options_i']]],
@@ -21,7 +21,7 @@ var searchData=
   ['trunc_5fweight',['trunc_weight',['../namespaceGD.html#a9c15740d0f166048172adbe5b0e7531b',1,'GD']]],
   ['truncate_5fto',['truncate_to',['../structfeatures.html#ac35a787dc55c446f77679cd4929a4b26',1,'features::truncate_to(const audit_iterator &amp;pos, float sum_feat_sq_of_removed_section)'],['../structfeatures.html#a55088bf8122152a1256d4ecd0c1ad819',1,'features::truncate_to(const iterator &amp;pos, float sum_feat_sq_of_removed_section)'],['../structfeatures.html#ab04ac601cec5fdcdbd67b6cdaa0f328d',1,'features::truncate_to(size_t i, float sum_feat_sq_of_removed_section)'],['../structfeatures.html#acf560cb29fb27e77cfa67eabe4c45260',1,'features::truncate_to(const audit_iterator &amp;pos)'],['../structfeatures.html#a0eb824ab01855389fd248bb6c0977265',1,'features::truncate_to(const iterator &amp;pos)'],['../structfeatures.html#afd6b770b048e3a2ee96590f9e412a91b',1,'features::truncate_to(size_t i)']]],
   ['try_5fclear',['try_clear',['../classVW_1_1experimental_1_1api__status.html#a4d87fbd99e49dde6fc12fbecd10deea4',1,'VW::experimental::api_status']]],
-  ['try_5fextract_5frandom_5fseed',['try_extract_random_seed',['../namespaceVW.html#ad0d3500b9970b8e8d0b35c5f189d6d4c',1,'VW']]],
+  ['try_5fextract_5frandom_5fseed',['try_extract_random_seed',['../namespaceVW.html#aa6eb176304ec358f81f4c8c382b664e2',1,'VW']]],
   ['try_5fupdate',['try_update',['../classVW_1_1experimental_1_1api__status.html#a4d6016a9758713154002db50e3faca73',1,'VW::experimental::api_status']]],
   ['tuple_5fdbf',['tuple_dbf',['../namespaceVW_1_1LEARNER.html#a8acf98b91b127b58d1a5d59ebe5979ec',1,'VW::LEARNER']]],
   ['type_5fhash',['type_hash',['../structVW_1_1config_1_1typed__option.html#af75aac6192cabac91008572cde768049',1,'VW::config::typed_option']]],

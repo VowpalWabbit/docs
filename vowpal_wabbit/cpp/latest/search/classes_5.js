@@ -6,7 +6,7 @@ var searchData=
   ['features',['features',['../structfeatures.html',1,'']]],
   ['features_5fiterator',['features_iterator',['../classfeatures__iterator.html',1,'']]],
   ['finish_5fexample_5fdata',['finish_example_data',['../structVW_1_1LEARNER_1_1finish__example__data.html',1,'VW::LEARNER']]],
-  ['flat_5fexample',['flat_example',['../structflat__example.html',1,'']]],
+  ['flat_5fexample',['flat_example',['../structVW_1_1flat__example.html',1,'VW']]],
   ['floattofloatstate',['FloatToFloatState',['../classFloatToFloatState.html',1,'']]],
   ['floattofloatstate_3c_20audit_2c_20float_5faggregation_3a_3aset_20_3e',['FloatToFloatState&lt; audit, float_aggregation::set &gt;',['../classFloatToFloatState.html',1,'']]],
   ['floattofloatstate_5foriginallabelcosthack',['FloatToFloatState_OriginalLabelCostHack',['../classFloatToFloatState__OriginalLabelCostHack.html',1,'']]],

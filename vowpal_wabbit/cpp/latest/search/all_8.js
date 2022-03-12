@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['handle_5ffeatures_5fvalue',['handle_features_value',['../parse__slates__example__json_8h.html#a319ec531f94998a3124fe2bb19255c80',1,'parse_slates_example_json.h']]],
+  ['handle_5ffeatures_5fvalue',['handle_features_value',['../parse__slates__example__json_8h.html#a8aa996ba6ebd4f7297d16c0b28e405c4',1,'parse_slates_example_json.h']]],
   ['handler',['handler',['../structjson__parser.html#a0c02103e082e847fa4d44247f53a52b8',1,'json_parser']]],
-  ['has_5fempty_5finteraction',['has_empty_interaction',['../namespaceINTERACTIONS.html#a083a49ae11718d0162ebc84e672f86e7',1,'INTERACTIONS::has_empty_interaction(const std::array&lt; features, NUM_NAMESPACES &gt; &amp;feature_groups, const std::vector&lt; namespace_index &gt; &amp;namespace_indexes)'],['../namespaceINTERACTIONS.html#a1071f975dddf9f87a6f45c4ce48a6ed1',1,'INTERACTIONS::has_empty_interaction(const std::array&lt; features, NUM_NAMESPACES &gt; &amp;feature_groups, const std::vector&lt; extent_term &gt; &amp;namespace_indexes)']]],
-  ['has_5fempty_5finteraction_5fcubic',['has_empty_interaction_cubic',['../namespaceINTERACTIONS.html#a3faf4c7e6e1b0057a98da5ca053b7174',1,'INTERACTIONS']]],
-  ['has_5fempty_5finteraction_5fquadratic',['has_empty_interaction_quadratic',['../namespaceINTERACTIONS.html#aefdfbdd88ded225ad331ddcb32ca2eea',1,'INTERACTIONS']]],
+  ['has_5fempty_5finteraction',['has_empty_interaction',['../namespaceINTERACTIONS.html#ae0ef592134bc77a708e5d2df00e28643',1,'INTERACTIONS::has_empty_interaction(const std::array&lt; features, NUM_NAMESPACES &gt; &amp;feature_groups, const std::vector&lt; VW::namespace_index &gt; &amp;namespace_indexes)'],['../namespaceINTERACTIONS.html#a1071f975dddf9f87a6f45c4ce48a6ed1',1,'INTERACTIONS::has_empty_interaction(const std::array&lt; features, NUM_NAMESPACES &gt; &amp;feature_groups, const std::vector&lt; extent_term &gt; &amp;namespace_indexes)']]],
+  ['has_5fempty_5finteraction_5fcubic',['has_empty_interaction_cubic',['../namespaceINTERACTIONS.html#ab1d474319ed96ab063be5cfd356cc5a0',1,'INTERACTIONS']]],
+  ['has_5fempty_5finteraction_5fquadratic',['has_empty_interaction_quadratic',['../namespaceINTERACTIONS.html#a571ae402ec59b6b1b2f72059f1235c36',1,'INTERACTIONS']]],
   ['has_5fobserved_5fcost',['has_observed_cost',['../structCB_1_1cb__class.html#a2f61508f2bac6020d397bb103f626a28',1,'CB::cb_class']]],
   ['has_5fseen_5farray_5fstart',['has_seen_array_start',['../classArrayToVectorState.html#ad57a1b42a0873ba2f4b751e2fc53bce0',1,'ArrayToVectorState']]],
   ['hash',['hash',['../structBeam_1_1beam__element.html#aa6e352c06b5e97fd8a49de0d35b36fde',1,'Beam::beam_element::hash()'],['../structVW_1_1namespace__extent.html#a56f2e4bb53c8909de61acb8eea886820',1,'VW::namespace_extent::hash()'],['../structINTERACTIONS_1_1feature__gen__data.html#ac423c4c48d7427dd0e895bab5b09b906',1,'INTERACTIONS::feature_gen_data::hash()'],['../classio__buf.html#a2897cff64e19135ab948ede8ec150a04',1,'io_buf::hash()']]],
