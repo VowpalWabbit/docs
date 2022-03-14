@@ -26,6 +26,6 @@ var searchData=
   ['do_5fswap',['do_swap',['../classVW_1_1details_1_1swap__guard__impl.html#aab5175200e844e9aec7344cee91512a4',1,'VW::details::swap_guard_impl::do_swap()'],['../classVW_1_1details_1_1swap__guard__impl__rvalue.html#a8bc7cd28e0cfdaeb2b20246662ff01c0',1,'VW::details::swap_guard_impl_rvalue::do_swap()']]],
   ['double',['Double',['../structVWReaderHandler.html#a9b1d990eb0240611a2f3ccce3afaa963',1,'VWReaderHandler']]],
   ['duals',['Duals',['../structVW_1_1distributionally__robust_1_1Duals.html#ab9b646730bc1ce5699d89e7e2bc42c06',1,'VW::distributionally_robust::Duals::Duals()'],['../structVW_1_1distributionally__robust_1_1Duals.html#adaabb8969d2a11a78804d49c51deabcd',1,'VW::distributionally_robust::Duals::Duals(bool unbounded, double kappa, double gamma, double beta, double n)']]],
-  ['dummy_5ffunc',['dummy_func',['../namespaceGD.html#a9a733cab6079e5f28fb3773aa43bea24',1,'GD']]],
+  ['dummy_5ffunc',['dummy_func',['../namespaceGD.html#a654b239b0b90d7e0e47ce3bb1e221795',1,'GD']]],
   ['dump_5fweights_5fto_5fjson_5fexperimental',['dump_weights_to_json_experimental',['../structVW_1_1workspace.html#a2511f756e18eabdc25d46b0997bf5928',1,'VW::workspace']]]
 ];
