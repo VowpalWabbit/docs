@@ -33,5 +33,7 @@ var searchData=
   ['dsjsonsumcostoriginalbaseline',['DsjsonSumCostOriginalBaseline',['../structdsjson__metrics.html#acb64793d0f8792b56fb0af59541904df',1,'dsjson_metrics']]],
   ['dsjsonsumcostoriginalfirstslot',['DsjsonSumCostOriginalFirstSlot',['../structdsjson__metrics.html#a5e6bce30f642ce22b989061d0aae0764',1,'dsjson_metrics']]],
   ['dsjsonsumcostoriginallabelequalbaselinefirstslot',['DsjsonSumCostOriginalLabelEqualBaselineFirstSlot',['../structdsjson__metrics.html#acaa135d32df2822dcf8de15129efbaa3',1,'dsjson_metrics']]],
-  ['dump_5finterval',['dump_interval',['../structshared__data.html#acc14d5e78772dd39829a82e4df2912d7',1,'shared_data']]]
+  ['dump_5finterval',['dump_interval',['../structshared__data.html#acc14d5e78772dd39829a82e4df2912d7',1,'shared_data']]],
+  ['dump_5fjson_5fweights_5finclude_5fextra_5fonline_5fstate',['dump_json_weights_include_extra_online_state',['../structVW_1_1workspace.html#a14f27e53096b7f9887ba9a3af0efaa8c',1,'VW::workspace']]],
+  ['dump_5fjson_5fweights_5finclude_5ffeature_5fnames',['dump_json_weights_include_feature_names',['../structVW_1_1workspace.html#ada014e9abfaac61ea4a90636c4bcba00',1,'VW::workspace']]]
 ];

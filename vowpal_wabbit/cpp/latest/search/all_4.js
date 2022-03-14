@@ -81,5 +81,7 @@ var searchData=
   ['duals',['Duals',['../structVW_1_1distributionally__robust_1_1Duals.html',1,'VW::distributionally_robust::Duals'],['../structVW_1_1distributionally__robust_1_1Duals.html#ab9b646730bc1ce5699d89e7e2bc42c06',1,'VW::distributionally_robust::Duals::Duals()'],['../structVW_1_1distributionally__robust_1_1Duals.html#adaabb8969d2a11a78804d49c51deabcd',1,'VW::distributionally_robust::Duals::Duals(bool unbounded, double kappa, double gamma, double beta, double n)']]],
   ['dummy_5ffunc',['dummy_func',['../namespaceGD.html#a654b239b0b90d7e0e47ce3bb1e221795',1,'GD']]],
   ['dump_5finterval',['dump_interval',['../structshared__data.html#acc14d5e78772dd39829a82e4df2912d7',1,'shared_data']]],
+  ['dump_5fjson_5fweights_5finclude_5fextra_5fonline_5fstate',['dump_json_weights_include_extra_online_state',['../structVW_1_1workspace.html#a14f27e53096b7f9887ba9a3af0efaa8c',1,'VW::workspace']]],
+  ['dump_5fjson_5fweights_5finclude_5ffeature_5fnames',['dump_json_weights_include_feature_names',['../structVW_1_1workspace.html#ada014e9abfaac61ea4a90636c4bcba00',1,'VW::workspace']]],
   ['dump_5fweights_5fto_5fjson_5fexperimental',['dump_weights_to_json_experimental',['../structVW_1_1workspace.html#a2511f756e18eabdc25d46b0997bf5928',1,'VW::workspace']]]
 ];
