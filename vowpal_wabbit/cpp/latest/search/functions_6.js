@@ -116,7 +116,7 @@ var searchData=
   ['getparameter',['getParameter',['../classloss__function.html#aca07564090a2b1abc3907d9ad4fcc895',1,'loss_function']]],
   ['getsquaregrad',['getSquareGrad',['../classloss__function.html#a76bb70cc0b3f85f3b623b19962985819',1,'loss_function']]],
   ['gettype',['getType',['../classloss__function.html#a210bdfb9f5352fbac80e82bedada7814',1,'loss_function']]],
-  ['getunsafeupdate',['getUnsafeUpdate',['../classloss__function.html#aebd4bc7df955d3605a1fc0b63b890564',1,'loss_function']]],
+  ['getunsafeupdate',['getUnsafeUpdate',['../classloss__function.html#a7140e41af92d2773200551e25171f762',1,'loss_function']]],
   ['getupdate',['getUpdate',['../classloss__function.html#a2170e19fcee0364bfed5e90960c16be6',1,'loss_function']]],
   ['global_5fprint_5fnewline',['global_print_newline',['../namespaceCB__ADF.html#adc961d20db4a43b33722792d2186c969',1,'CB_ADF']]]
 ];
