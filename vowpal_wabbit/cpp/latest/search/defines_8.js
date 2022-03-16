@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['nominmax',['NOMINMAX',['../array__parameters_8h.html#a9f918755b601cf4bffca775992e6fb90',1,'NOMINMAX():&#160;array_parameters.h'],['../v__array_8h.html#a9f918755b601cf4bffca775992e6fb90',1,'NOMINMAX():&#160;v_array.h'],['../vw__math_8h.html#a9f918755b601cf4bffca775992e6fb90',1,'NOMINMAX():&#160;vw_math.h']]],
+  ['nominmax',['NOMINMAX',['../array__parameters_8h.html#a9f918755b601cf4bffca775992e6fb90',1,'NOMINMAX():&#160;array_parameters.h'],['../vw__math_8h.html#a9f918755b601cf4bffca775992e6fb90',1,'NOMINMAX():&#160;vw_math.h']]],
   ['nonstd_5fsv_5flite_5fh_5fincluded',['NONSTD_SV_LITE_H_INCLUDED',['../string__view_8h.html#a1c008bda6a4563beb861ae1d824771be',1,'string_view.h']]],
   ['nssv_5fbetween',['nssv_BETWEEN',['../string__view_8h.html#a4857ee74c41ff85351615d051fb26eb2',1,'string_view.h']]],
   ['nssv_5fbuiltin_5fmemcmp',['nssv_BUILTIN_MEMCMP',['../string__view_8h.html#adac831731b1a37acfd7cbb097424ecf3',1,'string_view.h']]],
