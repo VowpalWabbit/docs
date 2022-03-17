@@ -71,16 +71,13 @@ $(function() {
 <div class="title">vw.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="compat_8h.html">compat.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="options_8h.html">config/options.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="example_8h.html">example.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;memory&gt;</code><br />
+<code>#include &quot;<a class="el" href="compat_8h.html">compat.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="global__data_8h.html">global_data.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="hash_8h.html">hash.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="hashstring_8h.html">hashstring.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="logger_8h.html">io/logger.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="parse__example_8h.html">parse_example.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="parser_8h.html">parser.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="simple__label_8h.html">simple_label.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="vw__fwd_8h.html">vw_fwd.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -113,7 +110,7 @@ Functions</h2></td></tr>
 <tr class="separator:a7302611eef55f3a024f328b240f8e439"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bc59822edecfb2e609dd098c96a04e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVW_1_1workspace.html">VW::workspace</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a5bc59822edecfb2e609dd098c96a04e3">VW::initialize_with_builder</a> (const std::string &amp;s, <a class="el" href="classio__buf.html">io_buf</a> *model=nullptr, bool skipModelLoad=false, <a class="el" href="error__reporting_8h.html#a98d6d6ac9c0371b98232d6c04df7ee99">trace_message_t</a> trace_listener=nullptr, void *trace_context=nullptr, std::unique_ptr&lt; <a class="el" href="structVW_1_1setup__base__i.html">VW::setup_base_i</a> &gt;=nullptr)</td></tr>
 <tr class="separator:a5bc59822edecfb2e609dd098c96a04e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1acc44b163a8387d2198dda5e8a3ccbe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="future__compat_8h.html#a8b8610e8e86287f2b68275bf31acefb8">VW_WARNING_STATE_PUSH</a> <a class="el" href="future__compat_8h.html#a586b956b1f90b982afb6aa52a878f7cd">VW_WARNING_DISABLE_BADLY_FORMED_XML</a> std::unique_ptr&lt; <a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a1acc44b163a8387d2198dda5e8a3ccbe">VW::initialize_experimental</a> (std::unique_ptr&lt; config::options_i &gt; options, std::unique_ptr&lt; <a class="el" href="structVW_1_1io_1_1reader.html">VW::io::reader</a> &gt; model_override_reader=nullptr, driver_output_func_t driver_output_func=nullptr, void *driver_output_func_context=nullptr, <a class="el" href="namespaceVW_1_1io.html#ac6a4933fbf7b93c637cd2f301cbb900f">VW::io::logger_output_func_t</a> logger_output_func=nullptr, void *logger_output_func_context=nullptr, std::unique_ptr&lt; <a class="el" href="structVW_1_1setup__base__i.html">VW::setup_base_i</a> &gt; setup_base=nullptr)</td></tr>
+<tr class="memitem:a1acc44b163a8387d2198dda5e8a3ccbe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="future__compat_8h.html#a8b8610e8e86287f2b68275bf31acefb8">VW_WARNING_STATE_PUSH</a> <a class="el" href="future__compat_8h.html#a586b956b1f90b982afb6aa52a878f7cd">VW_WARNING_DISABLE_BADLY_FORMED_XML</a> std::unique_ptr&lt; <a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a1acc44b163a8387d2198dda5e8a3ccbe">VW::initialize_experimental</a> (std::unique_ptr&lt; config::options_i &gt; options, std::unique_ptr&lt; <a class="el" href="structVW_1_1io_1_1reader.html">VW::io::reader</a> &gt; model_override_reader=nullptr, driver_output_func_t driver_output_func=nullptr, void *driver_output_func_context=nullptr, <a class="el" href="namespaceVW_1_1io.html#a7be1e8b9b7c3eaea712ca1a06dd5f275">VW::io::logger_output_func_t</a> logger_output_func=nullptr, void *logger_output_func_context=nullptr, std::unique_ptr&lt; <a class="el" href="structVW_1_1setup__base__i.html">VW::setup_base_i</a> &gt; setup_base=nullptr)</td></tr>
 <tr class="memdesc:a1acc44b163a8387d2198dda5e8a3ccbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a workspace. This interface is currently experimental, but will replace the existing array of initialize functions.  <a href="namespaceVW.html#a1acc44b163a8387d2198dda5e8a3ccbe">More...</a><br /></td></tr>
 <tr class="separator:a1acc44b163a8387d2198dda5e8a3ccbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa899e7b0b12a4f5b31ee9c88fcf79603"><td class="memItemLeft" align="right" valign="top"><a class="el" href="future__compat_8h.html#a2d17cd6c08058ed32e5fb9dc77629280">VW_WARNING_STATE_POP</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#aa899e7b0b12a4f5b31ee9c88fcf79603">VW::cmd_string_replace_value</a> (std::stringstream *&amp;ss, std::string flag_to_replace, const std::string &amp;new_value)</td></tr>
@@ -247,7 +244,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 17 2022 20:49:44 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 17 2022 21:42:52 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

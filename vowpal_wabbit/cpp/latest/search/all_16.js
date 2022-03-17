@@ -129,6 +129,7 @@ var searchData=
   ['vw_5ffinishexample',['VW_FinishExample',['../vwdll_8h.html#a59f65f4daad6bcd72e521b9bf9d1dc4f',1,'vwdll.h']]],
   ['vw_5ffreeauditdataa',['VW_FreeAuditDataA',['../vwdll_8h.html#a73b96efc51c7833108e0a75bb2e8f582',1,'vwdll.h']]],
   ['vw_5ffreeiobuf',['VW_FreeIOBuf',['../vwdll_8h.html#a59dee36d269cdd334702ca284c4bb608',1,'vwdll.h']]],
+  ['vw_5ffwd_2eh',['vw_fwd.h',['../vw__fwd_8h.html',1,'']]],
   ['vw_5fget_5fstride',['VW_Get_Stride',['../vwdll_8h.html#a0d2f8145cc5b64960701f99a7dc78f6a',1,'vwdll.h']]],
   ['vw_5fget_5fweight',['VW_Get_Weight',['../vwdll_8h.html#a4c910d492d305169f639f719e0c53f96',1,'vwdll.h']]],
   ['vw_5fgetactionscore',['VW_GetActionScore',['../vwdll_8h.html#a83da7b881eb1f5e8dc2a7ab2e6356ea1',1,'vwdll.h']]],

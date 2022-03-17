@@ -6,6 +6,7 @@ var searchData=
   ['vw_2eh',['vw.h',['../vw_8h.html',1,'']]],
   ['vw_5fallreduce_2eh',['vw_allreduce.h',['../vw__allreduce_8h.html',1,'']]],
   ['vw_5fexception_2eh',['vw_exception.h',['../vw__exception_8h.html',1,'']]],
+  ['vw_5ffwd_2eh',['vw_fwd.h',['../vw__fwd_8h.html',1,'']]],
   ['vw_5fmath_2eh',['vw_math.h',['../vw__math_8h.html',1,'']]],
   ['vw_5fslim_5fpredict_2eh',['vw_slim_predict.h',['../vw__slim__predict_8h.html',1,'']]],
   ['vw_5fslim_5freturn_5fcodes_2eh',['vw_slim_return_codes.h',['../vw__slim__return__codes_8h.html',1,'']]],

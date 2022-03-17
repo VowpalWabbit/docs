@@ -21,7 +21,7 @@ var searchData=
   ['text_5futils_2eh',['text_utils.h',['../text__utils_8h.html',1,'']]],
   ['textstate',['TextState',['../structTextState.html',1,'TextState&lt; audit &gt;'],['../structTextState.html#a7b198588c0209d4a4166953cc341538f',1,'TextState::TextState()']]],
   ['the_5flabel_5fparser',['the_label_parser',['../namespaceVW_1_1cb__continuous.html#a5992a27e761bb5f499635adc1ab76aa1',1,'VW::cb_continuous']]],
-  ['thread',['Thread',['../global__data_8h.html#ac80f47c3b2731d9979f60e1b2f6af364ad97477d6d8a838ead9348185bb5b6742',1,'global_data.h']]],
+  ['thread',['Thread',['../allreduce_8h.html#ac80f47c3b2731d9979f60e1b2f6af364ad97477d6d8a838ead9348185bb5b6742',1,'allreduce.h']]],
   ['throw',['THROW',['../vw__exception_8h.html#a6418ba1768107875abafe9a0b6b8b2ad',1,'vw_exception.h']]],
   ['throw_5fex',['THROW_EX',['../vw__exception_8h.html#ad50abb70f1329aeedfb472f419c37494',1,'vw_exception.h']]],
   ['throw_5for_5freturn',['THROW_OR_RETURN',['../vw__exception_8h.html#ac56b8975466c9f2f8c864a7ca2058648',1,'vw_exception.h']]],

@@ -13,6 +13,7 @@ var searchData=
   ['search_5fmulticlasstask_2eh',['search_multiclasstask.h',['../search__multiclasstask_8h.html',1,'']]],
   ['search_5fsequencetask_2eh',['search_sequencetask.h',['../search__sequencetask_8h.html',1,'']]],
   ['sender_2eh',['sender.h',['../sender_8h.html',1,'']]],
+  ['setup_5fbase_2eh',['setup_base.h',['../setup__base_8h.html',1,'']]],
   ['shared_5fdata_2eh',['shared_data.h',['../shared__data_8h.html',1,'']]],
   ['shared_5ffeature_5fmerger_2eh',['shared_feature_merger.h',['../shared__feature__merger_8h.html',1,'']]],
   ['simple_5flabel_2eh',['simple_label.h',['../simple__label_8h.html',1,'']]],
