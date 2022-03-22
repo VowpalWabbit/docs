@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['ec_5fis_5fexample_5fheader',['ec_is_example_header',['../namespaceCB.html#ae4c1d8872c981abd321b7b6c1588eb6a',1,'CB::ec_is_example_header()'],['../namespaceCOST__SENSITIVE.html#a61dbf3b8e84940c0872fa6b7061405d4',1,'COST_SENSITIVE::ec_is_example_header()'],['../namespaceVW_1_1LEARNER.html#a8244fb35744a4bc42e3d3141d650b68d',1,'VW::LEARNER::ec_is_example_header()'],['../namespaceCCB.html#ae1e61ee213ced628869709ef5d5e7ab3',1,'CCB::ec_is_example_header()']]],
-  ['ec_5fis_5fexample_5funset',['ec_is_example_unset',['../namespaceCCB.html#a056e4b7395047b8b7752070fd4aa3a10',1,'CCB']]],
+  ['ec_5fis_5fexample_5fheader',['ec_is_example_header',['../namespaceCB.html#ae4c1d8872c981abd321b7b6c1588eb6a',1,'CB::ec_is_example_header()'],['../namespaceCOST__SENSITIVE.html#a61dbf3b8e84940c0872fa6b7061405d4',1,'COST_SENSITIVE::ec_is_example_header()'],['../namespaceVW_1_1LEARNER.html#a8244fb35744a4bc42e3d3141d650b68d',1,'VW::LEARNER::ec_is_example_header()'],['../namespaceVW_1_1reductions_1_1ccb.html#a009a678db8f7de15cfaa5a103c009d30',1,'VW::reductions::ccb::ec_is_example_header()']]],
+  ['ec_5fis_5fexample_5funset',['ec_is_example_unset',['../namespaceVW_1_1reductions_1_1ccb.html#a6c5d3fdfce3d92b10f822ab50cd9fb51',1,'VW::reductions::ccb']]],
   ['ect_5fsetup',['ect_setup',['../ect_8h.html#a2a117751404ca0e2ed8010a05a87479d',1,'ect.h']]],
   ['effn',['effn',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#a54fc689e79a1b3cfc35740a6cfe0fa16',1,'VW::distributionally_robust::ChiSquared']]],
   ['emplace_5fback',['emplace_back',['../structVW_1_1v__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_b889746ac0d5b5a66c0cc84b6b35321b.html#a80149346d1485f9f9047799b07cfa883',1,'VW::v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;']]],

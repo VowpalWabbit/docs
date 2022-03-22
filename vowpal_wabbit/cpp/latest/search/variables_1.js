@@ -7,7 +7,7 @@ var searchData=
   ['action_5ftype',['ACTION_TYPE',['../constant_8h.html#aa24f88139565835c44463bfbf3e4cd34',1,'constant.h']]],
   ['actions',['actions',['../structDecisionServiceInteraction.html#a5dc3dbcb448871ba574eeb0eb2f3838c',1,'DecisionServiceInteraction::actions()'],['../classLabelObjectState.html#ac8c3b4ad435a3391d3788a3c27613aea',1,'LabelObjectState::actions()']]],
   ['active',['active',['../structBeam_1_1beam__element.html#a60ae4810410bb735e6af202cf7ffc131',1,'Beam::beam_element::active()'],['../structVW_1_1workspace.html#a13db26d284e2ec61861eaceb12b230f9',1,'VW::workspace::active()']]],
-  ['active_5fc0',['active_c0',['../structactive.html#a3421d80ae5bc66b42dadc1a6d608d5fe',1,'active']]],
+  ['active_5fc0',['active_c0',['../structVW_1_1reductions_1_1active.html#a841bcbdf85755e76c12172c91aefa72b',1,'VW::reductions::active']]],
   ['active_5fmulticlass',['active_multiclass',['../structVW_1_1polyprediction.html#a3cac575939db13cde68b4c1356733114',1,'VW::polyprediction']]],
   ['adaptive',['adaptive',['../classparameters.html#ae32e0735531564f9764905fcc46190c2',1,'parameters']]],
   ['add_5fconstant',['add_constant',['../structVW_1_1workspace.html#ad761dc98a023f1e8c2a031cf8dcc02d4',1,'VW::workspace']]],

@@ -3,7 +3,7 @@ var searchData=
   ['waitforsynchronization',['waitForSynchronization',['../classAllReduceSync.html#a16c5ea1af31dd85ca9b617da378d8bf1',1,'AllReduceSync']]],
   ['warm_5fcb_5fsetup',['warm_cb_setup',['../warm__cb_8h.html#ae894dcf1dd327be0ad7825d119123a69',1,'warm_cb.h']]],
   ['wclass',['wclass',['../structCOST__SENSITIVE_1_1wclass.html#ac914fb8aabd8555678a0211f644bba5e',1,'COST_SENSITIVE::wclass::wclass(float x, uint32_t class_index, float partial_prediction, float wap_value)'],['../structCOST__SENSITIVE_1_1wclass.html#a4e402a7d8db185c577b090893ba0a401',1,'COST_SENSITIVE::wclass::wclass()']]],
-  ['weight_5fgen',['weight_gen',['../namespaceBS.html#a42b573618f7a1571e3a0346643fc7bb7',1,'BS']]],
+  ['weight_5fgen',['weight_gen',['../namespaceVW_1_1reductions_1_1bs.html#a788ac271be44833f91e133054ab76e17',1,'VW::reductions::bs']]],
   ['weighted_5fexamples',['weighted_examples',['../structshared__data.html#acea161d78c0bd3dab928b99268f46f9c',1,'shared_data']]],
   ['what',['what',['../classVW_1_1vw__exception.html#a31eff794b28b77a6e244a0bea4a0cfa0',1,'VW::vw_exception']]],
   ['with_5foutput_5fstring',['with_output_string',['../classSearch_1_1BaseTask.html#a91cae7d703dc5c6213f36e23d696de93',1,'Search::BaseTask']]],

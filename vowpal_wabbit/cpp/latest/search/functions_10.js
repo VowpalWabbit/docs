@@ -39,7 +39,7 @@ var searchData=
   ['replace_5fbuffer',['replace_buffer',['../classio__buf.html#ab24fb3dda9f92c52de4aa41197e1fd2b',1,'io_buf']]],
   ['reserve',['reserve',['../structVW_1_1v__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_b889746ac0d5b5a66c0cc84b6b35321b.html#aa6996396841d6be6ff223108daace937',1,'VW::v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;']]],
   ['reset',['reset',['../structVW_1_1distributionally__robust_1_1Duals.html#adf78fd1630eea7a378c78c3c7b6e72f3',1,'VW::distributionally_robust::Duals::reset()'],['../classVW_1_1distributionally__robust_1_1ChiSquared.html#aa2290ec79d10151a1537662f5badd087',1,'VW::distributionally_robust::ChiSquared::reset()'],['../structVW_1_1io_1_1reader.html#a680383c4f30fbd93e36737eb50028d64',1,'VW::io::reader::reset()'],['../classio__buf.html#a198a3880f7b097595750b5626aa7ba5f',1,'io_buf::reset()'],['../classSearch_1_1predictor.html#a067e8732c3ec17aaa51d130751db8ed9',1,'Search::predictor::reset()']]],
-  ['reset_5fbaseline_5fdisabled',['reset_baseline_disabled',['../namespaceBASELINE.html#a684d25636d9909f94548ecbcd33c5180',1,'BASELINE']]],
+  ['reset_5fbaseline_5fdisabled',['reset_baseline_disabled',['../namespaceVW_1_1reductions_1_1baseline.html#a810f708754dbd5fc42225830bd5ba9af',1,'VW::reductions::baseline']]],
   ['reset_5fsource',['reset_source',['../parser_8h.html#aa39da12726c030e67c73b459d3e2de5e',1,'parser.h']]],
   ['reset_5fstats',['reset_stats',['../structVW_1_1scored__config.html#a88c57b6e9caa6df5dbc6fc97184eda74',1,'VW::scored_config']]],
   ['reset_5ftint',['reset_tint',['../structVW_1_1config_1_1options__i.html#a89180d69d5edc823dbe652509ffb0c5d',1,'VW::config::options_i']]],
