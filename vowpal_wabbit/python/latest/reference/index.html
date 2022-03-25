@@ -8,31 +8,28 @@
 
     <title>API Reference &#8212; VowpalWabbit latest documentation</title>
     
-    <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 <link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-  
+
     
-    <link rel="stylesheet"
-      href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-    <link rel="preload" as="font" type="font/woff2" crossorigin
-      href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-    <link rel="preload" as="font" type="font/woff2" crossorigin
-      href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
-  
-    
-      
-  
-    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/pydata-sphinx-theme.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
     <link rel="stylesheet" type="text/css" href="../_static/nav.css" />
     
-    <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
-  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
@@ -60,7 +57,7 @@ const thebe_selector_output = ".output, .cell_output"
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
     
     <div class="container-fluid" id="banner"></div>
 
@@ -450,7 +447,7 @@ const thebe_selector_output = ".output, .cell_output"
               
               <div class="toc-item">
                 
-<div class="tocsection onthispage pt-5 pb-3">
+<div class="tocsection onthispage mt-5 pt-1 pb-3">
     <i class="fas fa-list"></i> On this page
 </div>
 
@@ -508,9 +505,9 @@ const thebe_selector_output = ".output, .cell_output"
               <div>
                 
   <section id="api-reference">
-<h1>API Reference<a class="headerlink" href="#api-reference" title="Permalink to this headline">¶</a></h1>
+<h1>API Reference<a class="headerlink" href="#api-reference" title="Permalink to this headline">#</a></h1>
 <section id="core-module">
-<h2>Core module<a class="headerlink" href="#core-module" title="Permalink to this headline">¶</a></h2>
+<h2>Core module<a class="headerlink" href="#core-module" title="Permalink to this headline">#</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="vowpalwabbit.html">vowpalwabbit</a></li>
@@ -518,7 +515,7 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </section>
 <section id="optional-modules">
-<h2>Optional modules<a class="headerlink" href="#optional-modules" title="Permalink to this headline">¶</a></h2>
+<h2>Optional modules<a class="headerlink" href="#optional-modules" title="Permalink to this headline">#</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="vowpalwabbit.dftovw.html">vowpalwabbit.dftovw</a></li>
@@ -527,7 +524,7 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </section>
 <section id="implementation-internal-modules">
-<h2>Implementation/internal modules<a class="headerlink" href="#implementation-internal-modules" title="Permalink to this headline">¶</a></h2>
+<h2>Implementation/internal modules<a class="headerlink" href="#implementation-internal-modules" title="Permalink to this headline">#</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="vowpalwabbit.pyvw.html">vowpalwabbit.pyvw</a></li>
@@ -536,7 +533,7 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </section>
 <section id="migration-guides">
-<h2>Migration guides<a class="headerlink" href="#migration-guides" title="Permalink to this headline">¶</a></h2>
+<h2>Migration guides<a class="headerlink" href="#migration-guides" title="Permalink to this headline">#</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="python_8110_900_migration_guide.html">Python 8.11 to 9 migration</a></li>
@@ -593,8 +590,9 @@ const thebe_selector_output = ".output, .cell_output"
       </div>
     </div>
   
-    <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
-  <footer class="footer mt-5 mt-md-0">
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
     
     <div class="footer-item">
