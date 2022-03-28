@@ -16,5 +16,5 @@ var searchData=
   ['learner_3c_20datat_2c_20examplet_20_3e',['learner&lt; DataT, ExampleT &gt;',['../structVW_1_1LEARNER_1_1learner.html',1,'VW::LEARNER']]],
   ['logger',['logger',['../structVW_1_1io_1_1logger.html',1,'VW::io']]],
   ['logger_5fimpl',['logger_impl',['../structVW_1_1io_1_1details_1_1logger__impl.html',1,'VW::io::details']]],
-  ['loss_5ffunction',['loss_function',['../classloss__function.html',1,'']]]
+  ['loss_5ffunction',['loss_function',['../classVW_1_1loss__function.html',1,'VW']]]
 ];

@@ -16,7 +16,7 @@ var searchData=
   ['_7efeatures',['~features',['../structfeatures.html#a4bfd1bfe3ef4d8055ebf6e279ca8f7f9',1,'features']]],
   ['_7ehelp_5fformatter',['~help_formatter',['../structVW_1_1config_1_1help__formatter.html#adaeb1ac494c9737fd3f81e5c14bb31a3',1,'VW::config::help_formatter']]],
   ['_7elabel',['~label',['../structCCB_1_1label.html#a70760822c7e4d001ed65c02f55c176ab',1,'CCB::label']]],
-  ['_7eloss_5ffunction',['~loss_function',['../classloss__function.html#aed5498d652bd5a2ec91b75163d5fc6a0',1,'loss_function']]],
+  ['_7eloss_5ffunction',['~loss_function',['../classVW_1_1loss__function.html#af3fc89f246fb37ec452c34ad1f8b89d4',1,'VW::loss_function']]],
   ['_7emetric_5fsink_5fvisitor',['~metric_sink_visitor',['../structVW_1_1metric__sink__visitor.html#ac0f739fd8a6246c75a6bd9057e25a103',1,'VW::metric_sink_visitor']]],
   ['_7enamespace_5fcopy_5fguard',['~namespace_copy_guard',['../classvw__slim_1_1namespace__copy__guard.html#a22d01b974d0f3c559eb5086ca065eb39',1,'vw_slim::namespace_copy_guard']]],
   ['_7eno_5flock_5fobject_5fpool',['~no_lock_object_pool',['../structVW_1_1no__lock__object__pool.html#a8b44b0d2968ab930cb65ce416a254c81',1,'VW::no_lock_object_pool']]],

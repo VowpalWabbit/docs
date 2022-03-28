@@ -55,7 +55,7 @@ var searchData=
   ['search_5fsequencetask_2eh',['search_sequencetask.h',['../search__sequencetask_8h.html',1,'']]],
   ['search_5ftask',['search_task',['../structSearch_1_1search__task.html',1,'Search']]],
   ['searchstr',['searchstr',['../structVW_1_1workspace.html#a0a487f35b64f40c6b1ff3c33fcdc2d01',1,'VW::workspace']]],
-  ['second_5fderivative',['second_derivative',['../classloss__function.html#aee9b80f741319e6d43c3589024af6051',1,'loss_function']]],
+  ['second_5fderivative',['second_derivative',['../classVW_1_1loss__function.html#a3450b066882102f6bda989805d96a8e1',1,'VW::loss_function']]],
   ['second_5fobserved_5flabel',['second_observed_label',['../structshared__data.html#aa8665db15ad6cea576c387bfc1236e4a',1,'shared_data']]],
   ['seed_5fvw_5fmodel',['seed_vw_model',['../namespaceVW.html#a04498066bbc429f1d3a6970d37c1133a',1,'VW']]],
   ['seeded',['seeded',['../classsparse__parameters.html#afe0647e417782979ac74fba9d0cf731c',1,'sparse_parameters::seeded()'],['../classparameters.html#a11a0f9a4f1185cf951842710f4f12b9a',1,'parameters::seeded()'],['../classdense__parameters.html#a0fb1f66bd20de6ae10ae9724c375c04f',1,'dense_parameters::seeded()']]],
