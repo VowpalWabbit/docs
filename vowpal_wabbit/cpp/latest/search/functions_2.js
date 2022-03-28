@@ -75,7 +75,7 @@ var searchData=
   ['copy_5foffsets',['copy_offsets',['../classdense__parameters.html#a1f23bd502c41c3782e4fe2fe68f7aeb8',1,'dense_parameters']]],
   ['copy_5fto',['copy_to',['../classio__buf.html#a6fc5dfa66ea7487155fcafd57a45ec90',1,'io_buf']]],
   ['count_5flabel',['count_label',['../namespaceVW.html#ade7c66e76f0dc0b979504435741b275b',1,'VW']]],
-  ['count_5flabel_5fsetup',['count_label_setup',['../namespaceVW.html#a8013fe45918cccb9dbf6ed09cc5e5105',1,'VW']]],
+  ['count_5flabel_5fsetup',['count_label_setup',['../namespaceVW_1_1reductions.html#a1f6081575b93a41fd460eb682232459d',1,'VW::reductions']]],
   ['create_5fbuffer_5fview',['create_buffer_view',['../namespaceVW_1_1io.html#a64fffb68e0d290a508476f0c8b160694',1,'VW::io']]],
   ['create_5fcustom_5fsink_5flogger',['create_custom_sink_logger',['../namespaceVW_1_1io.html#a4f919c655b6f037f503cd1d2ec3701b1',1,'VW::io']]],
   ['create_5fcustom_5fsink_5flogger_5flegacy',['create_custom_sink_logger_legacy',['../namespaceVW_1_1io.html#a6d082090958b291e909fe77f9c667138',1,'VW::io']]],

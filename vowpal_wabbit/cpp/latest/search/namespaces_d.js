@@ -33,7 +33,6 @@ var searchData=
   ['reductions',['reductions',['../namespaceVW_1_1reductions.html',1,'VW']]],
   ['regcb',['regcb',['../namespaceVW_1_1cb__explore__adf_1_1regcb.html',1,'VW::cb_explore_adf']]],
   ['rnd',['rnd',['../namespaceVW_1_1cb__explore__adf_1_1rnd.html',1,'VW::cb_explore_adf']]],
-  ['shared_5ffeature_5fmerger',['shared_feature_merger',['../namespaceVW_1_1shared__feature__merger.html',1,'VW']]],
   ['slates',['slates',['../namespaceVW_1_1slates.html',1,'VW']]],
   ['softmax',['softmax',['../namespaceVW_1_1cb__explore__adf_1_1softmax.html',1,'VW::cb_explore_adf']]],
   ['squarecb',['squarecb',['../namespaceVW_1_1cb__explore__adf_1_1squarecb.html',1,'VW::cb_explore_adf']]],

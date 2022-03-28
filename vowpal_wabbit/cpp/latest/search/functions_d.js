@@ -4,7 +4,7 @@ var searchData=
   ['object_5fpool',['object_pool',['../structVW_1_1object__pool.html#a120b97b4c9abae50db1790aaf8f03c13',1,'VW::object_pool::object_pool()=default'],['../structVW_1_1object__pool.html#acdcabd712940120db798ca9924edf5d7',1,'VW::object_pool::object_pool(size_t initial_chunk_size, TInitializer initializer={}, size_t chunk_size=8)']]],
   ['offset_5flearn',['offset_learn',['../structVW_1_1automl_1_1automl.html#a9955f1e55f493dbc21b6a0f37cc343f2',1,'VW::automl::automl']]],
   ['offset_5ftree',['offset_tree',['../structVW_1_1offset__tree_1_1offset__tree.html#acd1499471b62e6e344bb655b80e91e3a',1,'VW::offset_tree::offset_tree']]],
-  ['ojanewton_5fsetup',['OjaNewton_setup',['../oja__newton_8h.html#a7bd43042b8ed5586f11b3236c91105e6',1,'oja_newton.h']]],
+  ['oja_5fnewton_5fsetup',['oja_newton_setup',['../namespaceVW_1_1reductions.html#a95d6df1b7e548d958a2f0743e9f8ad2c',1,'VW::reductions']]],
   ['one_5fof',['one_of',['../structVW_1_1config_1_1typed__option.html#ab41fb1c9ab27f46f362e6ab05710e58c',1,'VW::config::typed_option::one_of()'],['../structVW_1_1config_1_1option__builder.html#a460eacfd4e574dfce5bd815c923ce136',1,'VW::config::option_builder::one_of()']]],
   ['one_5fstep',['one_step',['../structVW_1_1automl_1_1automl.html#ab2eb083375cc048d5e05428ffcb0628c',1,'VW::automl::automl']]],
   ['open_5fcompressed_5ffile_5freader',['open_compressed_file_reader',['../namespaceVW_1_1io.html#ae3d15f5cdf1ed5c88af05c93cdb7fd77',1,'VW::io']]],

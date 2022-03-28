@@ -16,7 +16,7 @@ var searchData=
   ['noop_5fsave_5fload',['noop_save_load',['../namespaceVW_1_1LEARNER.html#abbaff2c8cf6f5b3ab801730c74b6e054',1,'VW::LEARNER']]],
   ['noop_5fsensitivity',['noop_sensitivity',['../namespaceVW_1_1LEARNER.html#a23877fd9c9757641d788ae73cf210914',1,'VW::LEARNER']]],
   ['noop_5fsensitivity_5fbase',['noop_sensitivity_base',['../namespaceVW_1_1LEARNER.html#a49d900481813f0f01e7f70e7803911b5',1,'VW::LEARNER']]],
-  ['noop_5fsetup',['noop_setup',['../noop_8h.html#ad1aa4ff2d7dd30592a194500219ca917',1,'noop.h']]],
+  ['noop_5fsetup',['noop_setup',['../namespaceVW_1_1reductions.html#a2ec8ed7d06f967f9c6156215863e47d5',1,'VW::reductions']]],
   ['not_5fnull',['not_null',['../classsparse__parameters.html#a391c2da96ed2b88d053c14684458b963',1,'sparse_parameters::not_null()'],['../classparameters.html#a791d1245a747b229ff6a80a6f6783d5b',1,'parameters::not_null()'],['../classdense__parameters.html#ad19f1750ed9161abd89c1c071b2b709d',1,'dense_parameters::not_null()']]],
   ['ns_5fextent_5fiterator',['ns_extent_iterator',['../classns__extent__iterator.html#a75382a698a72a97df1c82569bd6410f6',1,'ns_extent_iterator']]],
   ['nssv_5fdisable_5fmsvc_5fwarnings',['nssv_DISABLE_MSVC_WARNINGS',['../string__view_8h.html#ae1ec1b4ff8cc322a6d958703a1d5284e',1,'string_view.h']]],

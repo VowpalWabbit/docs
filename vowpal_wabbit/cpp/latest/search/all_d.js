@@ -60,7 +60,7 @@ var searchData=
   ['metrics_2eh',['metrics.h',['../metrics_8h.html',1,'']]],
   ['metrics_5fsetup',['metrics_setup',['../namespaceVW_1_1metrics.html#ac675bac477d5068f5f537f6601f14392',1,'VW::metrics']]],
   ['mf_2eh',['mf.h',['../mf_8h.html',1,'']]],
-  ['mf_5fsetup',['mf_setup',['../mf_8h.html#ac197f2792161d87c554020ecbde039e7',1,'mf.h']]],
+  ['mf_5fsetup',['mf_setup',['../namespaceVW_1_1reductions.html#af0da44d62d4ee75d60c36f7a988d3b62',1,'VW::reductions']]],
   ['might_5finsert',['might_insert',['../classBeam_1_1beam.html#a27a76654671cb98e49e203f38097df57',1,'Beam::beam']]],
   ['min_5factions',['min_actions',['../structVW_1_1cb__explore__adf_1_1cb__explore__metrics.html#addf1729e68c1112ce4b6683a4d3fff71',1,'VW::cb_explore_adf::cb_explore_metrics']]],
   ['min_5fdepth_5fbinary_5ftree',['min_depth_binary_tree',['../structVW_1_1cats__tree_1_1min__depth__binary__tree.html',1,'VW::cats_tree::min_depth_binary_tree'],['../structVW_1_1offset__tree_1_1min__depth__binary__tree.html',1,'VW::offset_tree::min_depth_binary_tree']]],

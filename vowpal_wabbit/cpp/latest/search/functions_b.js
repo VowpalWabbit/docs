@@ -18,7 +18,7 @@ var searchData=
   ['merand48_5fnoadvance',['merand48_noadvance',['../rand48_8h.html#a25a35c4d653d47b644ce40f0437f8101',1,'rand48.h']]],
   ['merge_5foptions_5ffrom_5fheader_5fstrings',['merge_options_from_header_strings',['../parse__args_8h.html#aba34d846bf56121fdebc9aec399c993e',1,'parse_args.h']]],
   ['metrics_5fsetup',['metrics_setup',['../namespaceVW_1_1metrics.html#ac675bac477d5068f5f537f6601f14392',1,'VW::metrics']]],
-  ['mf_5fsetup',['mf_setup',['../mf_8h.html#ac197f2792161d87c554020ecbde039e7',1,'mf.h']]],
+  ['mf_5fsetup',['mf_setup',['../namespaceVW_1_1reductions.html#af0da44d62d4ee75d60c36f7a988d3b62',1,'VW::reductions']]],
   ['might_5finsert',['might_insert',['../classBeam_1_1beam.html#a27a76654671cb98e49e203f38097df57',1,'Beam::beam']]],
   ['model_5fparser',['model_parser',['../classvw__slim_1_1model__parser.html#a60531cc8473aa75a7be9a324f35f6d88',1,'vw_slim::model_parser']]],
   ['move_5ffeature_5fnamespace',['move_feature_namespace',['../namespaceVW.html#ab9e00af55935c42d32d1c2c5c244150e',1,'VW']]],
