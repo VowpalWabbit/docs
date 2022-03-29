@@ -13,7 +13,7 @@ var searchData=
   ['setup_5fbase_5fi',['setup_base_i',['../structVW_1_1setup__base__i.html',1,'VW']]],
   ['shared_5fdata',['shared_data',['../structshared__data.html',1,'']]],
   ['simple_5flabel_5freduction_5ffeatures',['simple_label_reduction_features',['../structsimple__label__reduction__features.html',1,'']]],
-  ['slates_5fdata',['slates_data',['../structVW_1_1slates_1_1slates__data.html',1,'VW::slates']]],
+  ['slates_5fdata',['slates_data',['../structVW_1_1reductions_1_1slates__data.html',1,'VW::reductions']]],
   ['slotoutcomelist',['SlotOutcomeList',['../classSlotOutcomeList.html',1,'']]],
   ['slotsstate',['SlotsState',['../structSlotsState.html',1,'']]],
   ['socket',['socket',['../structVW_1_1io_1_1socket.html',1,'VW::io']]],

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['parent',['parent',['../structnode__socks.html#a9107491c00d5f397f28b1bcf50093704',1,'node_socks']]],
-  ['parent_5fid',['parent_id',['../structVW_1_1cats__tree_1_1tree__node.html#ab9afc293f9774abc9205c5b0f2cda56b',1,'VW::cats_tree::tree_node::parent_id()'],['../structVW_1_1offset__tree_1_1tree__node.html#a001698e8429ceada3da690bfb37cb1b8',1,'VW::offset_tree::tree_node::parent_id()']]],
+  ['parent_5fid',['parent_id',['../structVW_1_1reductions_1_1cats_1_1tree__node.html#a963efbee0341063f968ade5d2309897c',1,'VW::reductions::cats::tree_node::parent_id()'],['../structVW_1_1reductions_1_1offset__tree_1_1tree__node.html#aed2c1377f18d2ab92e458a2540cf6488',1,'VW::reductions::offset_tree::tree_node::parent_id()']]],
   ['parse_5flabel',['parse_label',['../structVW_1_1label__parser.html#a876f636e2f941dd9353f519d60a3ae81',1,'VW::label_parser']]],
   ['parse_5fmask',['parse_mask',['../structVW_1_1workspace.html#a68d900442a96b235c874558fc5a2c47f',1,'VW::workspace']]],
   ['parse_5fthread',['parse_thread',['../structVW_1_1workspace.html#a067da2035fd9915db780fc5d57d583aa',1,'VW::workspace']]],

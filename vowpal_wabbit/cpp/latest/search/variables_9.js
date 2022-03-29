@@ -1,7 +1,7 @@
 var searchData=
 [
   ['i',['i',['../unionexploration_1_1int__float.html#ad2bc6c4c956bde873b30883f1e1f73d3',1,'exploration::int_float']]],
-  ['id',['id',['../structVW_1_1workspace.html#a1a5991719de1f9ac2db1d7f77a46e531',1,'VW::workspace::id()'],['../structVW_1_1cats__tree_1_1tree__node.html#a61e16c2cc5da0df4b7060465ec4b9d46',1,'VW::cats_tree::tree_node::id()'],['../structVW_1_1offset__tree_1_1tree__node.html#abdddece8c7416bbfae454d3a4af6d038',1,'VW::offset_tree::tree_node::id()']]],
+  ['id',['id',['../structVW_1_1workspace.html#a1a5991719de1f9ac2db1d7f77a46e531',1,'VW::workspace::id()'],['../structVW_1_1reductions_1_1cats_1_1tree__node.html#a144b411b84491fef71c98112ecc70bb2',1,'VW::reductions::cats::tree_node::id()'],['../structVW_1_1reductions_1_1offset__tree_1_1tree__node.html#a1d865acba63cb90467b31604862fcc86',1,'VW::reductions::offset_tree::tree_node::id()']]],
   ['ignore',['ignore',['../structVW_1_1workspace.html#aba2139155728faa7aa46b66f3365d1f7',1,'VW::workspace']]],
   ['ignore_5flinear',['ignore_linear',['../structVW_1_1workspace.html#aadd1a2ddcd8c5a0a35c53b582cd0059c',1,'VW::workspace']]],
   ['ignore_5fsome',['ignore_some',['../structVW_1_1workspace.html#adb7c2aa536667110430169904f8b39d2',1,'VW::workspace']]],
@@ -32,7 +32,7 @@ var searchData=
   ['ips',['ips',['../structVW_1_1automl_1_1exclusion__config.html#adabc354673a09471858fb3e729aa7844',1,'VW::automl::exclusion_config::ips()'],['../structVW_1_1scored__config.html#ae8b16dca60656801855dfe0e29710eb5',1,'VW::scored_config::ips()']]],
   ['is_5fccb_5finput_5fmodel',['is_ccb_input_model',['../structVW_1_1workspace.html#ab1739c8984ecdde64051dd1c815bcf61',1,'VW::workspace']]],
   ['is_5fldf',['IS_LDF',['../namespaceSearch.html#a0cf0cfef46a3b6962d91d7de1ae67796',1,'Search']]],
-  ['is_5fleaf',['is_leaf',['../structVW_1_1cats__tree_1_1tree__node.html#a31e3c49061ab5a2f7e421756d3519235',1,'VW::cats_tree::tree_node::is_leaf()'],['../structVW_1_1offset__tree_1_1tree__node.html#a8ce024e6040b5f3a8f3a28ac64f27b03',1,'VW::offset_tree::tree_node::is_leaf()']]],
+  ['is_5fleaf',['is_leaf',['../structVW_1_1reductions_1_1cats_1_1tree__node.html#aaeca171a8bd84152998e5f84aac96a17',1,'VW::reductions::cats::tree_node::is_leaf()'],['../structVW_1_1reductions_1_1offset__tree_1_1tree__node.html#a0563f7cfb4856ce6cdc83ea4af258ca4',1,'VW::reductions::offset_tree::tree_node::is_leaf()']]],
   ['is_5fmore_5fthan_5ftwo_5flabels_5fobserved',['is_more_than_two_labels_observed',['../structshared__data.html#a959e85b4cdc13fa50902e95ab83cc7c9',1,'shared_data']]],
   ['is_5fnewline',['is_newline',['../structVW_1_1example.html#a435413fdf7bdce5c17d83768f70610bc',1,'VW::example']]]
 ];

@@ -6,7 +6,7 @@ var searchData=
   ['feature_5fmask',['feature_mask',['../structVW_1_1workspace.html#a2b69dfb1a44e46fbaa0ba40ab05e0ad8',1,'VW::workspace']]],
   ['feature_5fspace',['feature_space',['../structVW_1_1example__predict.html#aff83d481714c0efece6cdec03f4cf6bb',1,'VW::example_predict']]],
   ['file_5fhash',['file_hash',['../structdictionary__info.html#a1ab499f54ad0f7cb77a6eb299a36f479',1,'dictionary_info']]],
-  ['filled',['filled',['../structExpReplay_1_1expreplay.html#afe9d61756339b6e4ef6c0e3ce4c5cf1e',1,'ExpReplay::expreplay']]],
+  ['filled',['filled',['../structVW_1_1reductions_1_1expreplay_1_1expreplay.html#ae17b136b1a031e59cec247192b36421e',1,'VW::reductions::expreplay::expreplay']]],
   ['final_5fprediction_5fsink',['final_prediction_sink',['../structVW_1_1workspace.html#a7988dbf3ee8a1f79ca8f47ad73108e54',1,'VW::workspace']]],
   ['final_5fregressor_5fname',['final_regressor_name',['../structVW_1_1workspace.html#a3a01bd40a1f009df4e66c2555e1fb2bb',1,'VW::workspace']]],
   ['finalname',['finalname',['../structparser.html#a5a8f056721273d58c5032b0494b4ae8c',1,'parser']]],

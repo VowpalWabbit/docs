@@ -20,7 +20,7 @@ var searchData=
   ['default_5fstate',['default_state',['../structContext.html#a0e0a976e8e6bf9b15f095758b5094521',1,'Context']]],
   ['default_5ftau',['DEFAULT_TAU',['../distributionally__robust_8h.html#a211700867992d9a992485c8d36c64e20',1,'distributionally_robust.h']]],
   ['dense_5fweights',['dense_weights',['../classparameters.html#aaac8b2f50c6d9ee2946d09c9183b4029',1,'parameters']]],
-  ['depth',['depth',['../structVW_1_1cats__tree_1_1tree__node.html#a1ea0d14ccf7fe22a107bd38b7364d860',1,'VW::cats_tree::tree_node']]],
+  ['depth',['depth',['../structVW_1_1reductions_1_1cats_1_1tree__node.html#acb1440e502f8187eded48f614bd3e59e',1,'VW::reductions::cats::tree_node']]],
   ['dict',['dict',['../structdictionary__info.html#a2d11720a16042a4f08e04b63a9a1ab85',1,'dictionary_info']]],
   ['dictionary_5fnamespace',['dictionary_namespace',['../constant_8h.html#a22d641c8a975eeb2634e4d0bc8b2b254',1,'constant.h']]],
   ['dictionary_5fpath',['dictionary_path',['../structVW_1_1workspace.html#ad31d947bacad4b327034a7bf16e837d5',1,'VW::workspace']]],

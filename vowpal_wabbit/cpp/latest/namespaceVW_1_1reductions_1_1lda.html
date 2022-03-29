@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Vowpal Wabbit: VW::metrics Namespace Reference</title>
+<title>Vowpal Wabbit: VW::reductions::lda Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -58,55 +58,57 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceVW.html">VW</a></li><li class="navelem"><a class="el" href="namespaceVW_1_1metrics.html">metrics</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceVW.html">VW</a></li><li class="navelem"><a class="el" href="namespaceVW_1_1reductions.html">reductions</a></li><li class="navelem"><a class="el" href="namespaceVW_1_1reductions_1_1lda.html">lda</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">VW::metrics Namespace Reference</div>  </div>
+<div class="title">VW::reductions::lda Namespace Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac675bac477d5068f5f537f6601f14392"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceVW_1_1LEARNER.html#ab481a83a0a49d7b827babe725e135b20">VW::LEARNER::base_learner</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1metrics.html#ac675bac477d5068f5f537f6601f14392">metrics_setup</a> (<a class="el" href="structVW_1_1setup__base__i.html">VW::setup_base_i</a> &amp;stack_builder)</td></tr>
-<tr class="separator:ac675bac477d5068f5f537f6601f14392"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb283641a0b3ae2e61421cdb705ac86e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1metrics.html#abb283641a0b3ae2e61421cdb705ac86e">output_metrics</a> (<a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;all)</td></tr>
-<tr class="separator:abb283641a0b3ae2e61421cdb705ac86e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a116d458aaf4934d5623e0a3492a7dc98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1reductions_1_1lda.html#a116d458aaf4934d5623e0a3492a7dc98">get_top_weights</a> (<a class="el" href="structVW_1_1workspace.html">VW::workspace</a> *all, int top_words_count, int topic, std::vector&lt; <a class="el" href="structfeature.html">feature</a> &gt; &amp;output)</td></tr>
+<tr class="separator:a116d458aaf4934d5623e0a3492a7dc98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ac675bac477d5068f5f537f6601f14392"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac675bac477d5068f5f537f6601f14392">&#9670;&nbsp;</a></span>metrics_setup()</h2>
+<a id="a116d458aaf4934d5623e0a3492a7dc98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a116d458aaf4934d5623e0a3492a7dc98">&#9670;&nbsp;</a></span>get_top_weights()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceVW_1_1LEARNER.html#ab481a83a0a49d7b827babe725e135b20">VW::LEARNER::base_learner</a>* VW::metrics::metrics_setup </td>
+          <td class="memname">void VW::reductions::lda::get_top_weights </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structVW_1_1setup__base__i.html">VW::setup_base_i</a> &amp;&#160;</td>
-          <td class="paramname"><em>stack_builder</em></td><td>)</td>
-          <td></td>
+          <td class="paramtype"><a class="el" href="structVW_1_1workspace.html">VW::workspace</a> *&#160;</td>
+          <td class="paramname"><em>all</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abb283641a0b3ae2e61421cdb705ac86e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb283641a0b3ae2e61421cdb705ac86e">&#9670;&nbsp;</a></span>output_metrics()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">void VW::metrics::output_metrics </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;&#160;</td>
-          <td class="paramname"><em>all</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>top_words_count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>topic</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="structfeature.html">feature</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>output</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -116,7 +118,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 29 2022 13:22:15 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 29 2022 15:19:39 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

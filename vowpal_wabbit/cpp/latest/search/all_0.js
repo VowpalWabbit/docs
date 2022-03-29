@@ -27,7 +27,7 @@ var searchData=
   ['_5fp_5fbase',['_p_base',['../structVW_1_1pmf__to__pdf_1_1reduction.html#a2785bdb0c894ac6c90a4e0433bae1ba8',1,'VW::pmf_to_pdf::reduction']]],
   ['_5fparse_5fmask',['_parse_mask',['../structContext.html#a2f83e8c7eb3745ae12fd41dd525b613e',1,'Context']]],
   ['_5fpost_5fprediction',['_post_prediction',['../classSearch_1_1BaseTask.html#a4e1d2ad328f2cc573f2c99dbafd0b9e2',1,'Search::BaseTask']]],
-  ['_5frandom_5fstate',['_random_state',['../structVW_1_1reductions_1_1active.html#aff7ce78d4b917ab4a8d6c3c96e679969',1,'VW::reductions::active::_random_state()'],['../structExpReplay_1_1expreplay.html#a8b47509c5fb2d0fbacb46df406f4b430',1,'ExpReplay::expreplay::_random_state()']]],
+  ['_5frandom_5fstate',['_random_state',['../structVW_1_1reductions_1_1active.html#aff7ce78d4b917ab4a8d6c3c96e679969',1,'VW::reductions::active::_random_state()'],['../structVW_1_1reductions_1_1expreplay_1_1expreplay.html#a188f39cab60abb2f50432061d40d2bf8',1,'VW::reductions::expreplay::expreplay::_random_state()']]],
   ['_5freduction_5ffeatures',['_reduction_features',['../structVW_1_1flat__example.html#af4162bdf34972cb23de187bd6ac405f2',1,'VW::flat_example::_reduction_features()'],['../structVW_1_1example__predict.html#af8636281f693ee8fb744970406791142',1,'VW::example_predict::_reduction_features()']]],
   ['_5freuse_5fmem',['_reuse_mem',['../structContext.html#a715ce82969edf6ca51f8458f50eb238b',1,'Context']]],
   ['_5fshared_5fdata',['_shared_data',['../structparser.html#a29f98b675dc11176078222fccd8afeeb',1,'parser::_shared_data()'],['../structVW_1_1reductions_1_1active.html#af731146226ff4857651d9a6bc1f584b4',1,'VW::reductions::active::_shared_data()']]],

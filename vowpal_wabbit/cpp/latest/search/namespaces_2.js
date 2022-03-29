@@ -6,6 +6,5 @@ var searchData=
   ['cb_5feval',['CB_EVAL',['../namespaceCB__EVAL.html',1,'']]],
   ['cb_5fexplore',['CB_EXPLORE',['../namespaceCB__EXPLORE.html',1,'']]],
   ['ccb',['CCB',['../namespaceCCB.html',1,'']]],
-  ['cost_5fsensitive',['COST_SENSITIVE',['../namespaceCOST__SENSITIVE.html',1,'']]],
-  ['csoaa',['CSOAA',['../namespaceCSOAA.html',1,'']]]
+  ['cost_5fsensitive',['COST_SENSITIVE',['../namespaceCOST__SENSITIVE.html',1,'']]]
 ];
