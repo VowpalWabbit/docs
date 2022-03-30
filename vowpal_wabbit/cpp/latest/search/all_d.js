@@ -103,7 +103,7 @@ var searchData=
   ['multilabel_5foaa_5fsetup',['multilabel_oaa_setup',['../namespaceVW_1_1reductions.html#a67f6c10668d890000101032e5b60b244',1,'VW::reductions']]],
   ['multilabels',['multilabels',['../structVW_1_1polylabel.html#a5b37fc21056032782c251167f1cd95a3',1,'VW::polylabel::multilabels()'],['../structVW_1_1polyprediction.html#a5d90ae1cf655e46886d797466ee60375',1,'VW::polyprediction::multilabels()'],['../namespaceVW.html#a4f76045a06b3efe3c5c612b777b6c836aaf52dc7962379f4397484a51c3a8c6a2',1,'VW::multilabels()']]],
   ['multiline_5flearn_5for_5fpredict',['multiline_learn_or_predict',['../namespaceVW_1_1LEARNER.html#ae567a4278ece0021d1272d708e25b749',1,'VW::LEARNER']]],
-  ['multipredict',['multipredict',['../structVW_1_1LEARNER_1_1learner.html#a44d1395545c9fd963b1a9fcf7982f514',1,'VW::LEARNER::learner::multipredict()'],['../namespaceVW_1_1reductions_1_1expreplay.html#aea039d82c72675d80010045cbce9f596',1,'VW::reductions::expreplay::multipredict()']]],
+  ['multipredict',['multipredict',['../structVW_1_1LEARNER_1_1learner.html#a44d1395545c9fd963b1a9fcf7982f514',1,'VW::LEARNER::learner::multipredict()'],['../namespaceVW_1_1reductions_1_1expreplay.html#a497f39fbdc15a1ce2938b53358a96bf1',1,'VW::reductions::expreplay::multipredict()']]],
   ['multipredict_5ff',['multipredict_f',['../structVW_1_1LEARNER_1_1learn__data.html#ac961a8f38a1a2672b64174931120dbfa',1,'VW::LEARNER::learn_data']]],
   ['multipredict_5finfo',['multipredict_info',['../structGD_1_1multipredict__info.html',1,'GD']]],
   ['multistate',['MultiState',['../structMultiState.html',1,'MultiState&lt; audit &gt;'],['../structMultiState.html#a18d362406bbf876095cd67a48487f840',1,'MultiState::MultiState()']]],

@@ -26,7 +26,7 @@ var searchData=
   ['multiclass_5fpred_5fto_5fstring',['multiclass_pred_to_string',['../namespaceVW_1_1debug.html#a9c0a9968718373271b11fb4f69a94382',1,'VW::debug']]],
   ['multilabel_5foaa_5fsetup',['multilabel_oaa_setup',['../namespaceVW_1_1reductions.html#a67f6c10668d890000101032e5b60b244',1,'VW::reductions']]],
   ['multiline_5flearn_5for_5fpredict',['multiline_learn_or_predict',['../namespaceVW_1_1LEARNER.html#ae567a4278ece0021d1272d708e25b749',1,'VW::LEARNER']]],
-  ['multipredict',['multipredict',['../structVW_1_1LEARNER_1_1learner.html#a44d1395545c9fd963b1a9fcf7982f514',1,'VW::LEARNER::learner::multipredict()'],['../namespaceVW_1_1reductions_1_1expreplay.html#aea039d82c72675d80010045cbce9f596',1,'VW::reductions::expreplay::multipredict()']]],
+  ['multipredict',['multipredict',['../structVW_1_1LEARNER_1_1learner.html#a44d1395545c9fd963b1a9fcf7982f514',1,'VW::LEARNER::learner::multipredict()'],['../namespaceVW_1_1reductions_1_1expreplay.html#a497f39fbdc15a1ce2938b53358a96bf1',1,'VW::reductions::expreplay::multipredict()']]],
   ['multistate',['MultiState',['../structMultiState.html#a18d362406bbf876095cd67a48487f840',1,'MultiState']]],
   ['must_5fbe_5fleft_5fsorted',['must_be_left_sorted',['../namespaceINTERACTIONS.html#a82537842aef36929fa2e8534514cebc1',1,'INTERACTIONS']]],
   ['mwt_5fsetup',['mwt_setup',['../namespaceVW_1_1reductions.html#a1b1c72bb11aff0e360709e15da52c48c',1,'VW::reductions']]]
