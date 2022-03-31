@@ -6,7 +6,7 @@ var searchData=
   ['uinttouintstate',['UIntToUIntState',['../classUIntToUIntState.html#aedc066cbeeb13f470803d116c3b63547',1,'UIntToUIntState']]],
   ['unflatten_5fnamespace_5fextents',['unflatten_namespace_extents',['../namespaceVW_1_1details.html#a871aa56b01b26d70b06ff0b3039f516a',1,'VW::details']]],
   ['unflushed_5fbytes_5fcount',['unflushed_bytes_count',['../classio__buf.html#a0f7330a9e7cd3f457a210552c557a164',1,'io_buf']]],
-  ['uniform_5fhash',['uniform_hash',['../hash_8h.html#ab895a18954442f288c97979158e4b0d1',1,'hash.h']]],
+  ['uniform_5fhash',['uniform_hash',['../namespaceVW.html#a8fe50f2e30103adf6d7b7812677b545a',1,'VW::uniform_hash()'],['../hash_8h.html#ab895a18954442f288c97979158e4b0d1',1,'uniform_hash():&#160;hash.h']]],
   ['uniform_5frandom_5fmerand48',['uniform_random_merand48',['../namespaceexploration.html#a181ae01106bcdd79234a1bf66d88d645',1,'exploration']]],
   ['uniform_5frandom_5fmerand48_5fadvance',['uniform_random_merand48_advance',['../namespaceexploration.html#a5d99f2849ca698712b1a2a6e451019c5',1,'exploration']]],
   ['unique_5ffeatures',['unique_features',['../unique__sort_8h.html#a209bc72175c2bbe3c9977f6952b8db5e',1,'unique_sort.h']]],

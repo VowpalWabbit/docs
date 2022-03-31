@@ -108,6 +108,12 @@ Functions</h2></td></tr>
 <tr class="separator:a7be5bf400217849488ddc681486a842f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a871aa56b01b26d70b06ff0b3039f516a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structVW_1_1namespace__extent.html">namespace_extent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#a871aa56b01b26d70b06ff0b3039f516a">unflatten_namespace_extents</a> (const std::vector&lt; std::pair&lt; bool, uint64_t &gt;&gt; &amp;extents)</td></tr>
 <tr class="separator:a871aa56b01b26d70b06ff0b3039f516a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af141aa5de22ad4b5c23c5d0e44a58272"><td class="memItemLeft" align="right" valign="top">constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#af141aa5de22ad4b5c23c5d0e44a58272">rotl32</a> (uint32_t x, int8_t r) noexcept</td></tr>
+<tr class="separator:af141aa5de22ad4b5c23c5d0e44a58272"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0969827f2d184289944119b2dc569b9c"><td class="memItemLeft" align="right" valign="top">static VW_STD14_CONSTEXPR uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#a0969827f2d184289944119b2dc569b9c">fmix</a> (uint32_t h) noexcept</td></tr>
+<tr class="separator:a0969827f2d184289944119b2dc569b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a852fd9b5c7c40d9dab896a7b1b68bd52"><td class="memItemLeft" align="right" valign="top">static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#a852fd9b5c7c40d9dab896a7b1b68bd52">getblock</a> (const uint32_t *p, int i) noexcept</td></tr>
+<tr class="separator:a852fd9b5c7c40d9dab896a7b1b68bd52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -217,6 +223,32 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a0969827f2d184289944119b2dc569b9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0969827f2d184289944119b2dc569b9c">&#9670;&nbsp;</a></span>fmix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static VW_STD14_CONSTEXPR uint32_t VW::details::fmix </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>h</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ae2be77302bcacd0a0ec124678e260372"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae2be77302bcacd0a0ec124678e260372">&#9670;&nbsp;</a></span>gen_negative_pow10s()</h2>
 
@@ -253,6 +285,78 @@ template&lt;std::size_t ArrayLength, std::size_t... IntegerSequence&gt; </div>
           <td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a852fd9b5c7c40d9dab896a7b1b68bd52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a852fd9b5c7c40d9dab896a7b1b68bd52">&#9670;&nbsp;</a></span>getblock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr uint32_t VW::details::getblock </td>
+          <td>(</td>
+          <td class="paramtype">const uint32_t *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af141aa5de22ad4b5c23c5d0e44a58272"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af141aa5de22ad4b5c23c5d0e44a58272">&#9670;&nbsp;</a></span>rotl32()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint32_t VW::details::rotl32 </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int8_t&#160;</td>
+          <td class="paramname"><em>r</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -379,7 +483,7 @@ template&lt;std::size_t ArrayLength, std::size_t... IntegerSequence&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 31 2022 18:07:15 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 31 2022 18:37:29 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

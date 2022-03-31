@@ -109,7 +109,7 @@ var searchData=
   ['get_5fvw_5fpointer_5funsafe',['get_vw_pointer_unsafe',['../structSearch_1_1search.html#a7cb1d324253b2cc4d7122579028f7d87',1,'Search::search']]],
   ['get_5fweight',['get_weight',['../namespaceVW.html#ad2c22f7b3c1d7429f6cc2dfe4cbc6278',1,'VW']]],
   ['get_5fwriter',['get_writer',['../structVW_1_1io_1_1socket.html#a1800ca045993bf0c10aaa4fd8bd6f453',1,'VW::io::socket']]],
-  ['getblock',['getblock',['../namespaceMURMUR__HASH__3.html#acab1181c3de4de92ec8c9a30059fc8c0',1,'MURMUR_HASH_3']]],
+  ['getblock',['getblock',['../namespaceVW_1_1details.html#a852fd9b5c7c40d9dab896a7b1b68bd52',1,'VW::details']]],
   ['gethasher',['getHasher',['../hashstring_8h.html#ad2d39f84e4e19d8488c984287d0a497e',1,'hashstring.h']]],
   ['getk',['getK',['../classVW_1_1named__labels.html#a67c785be69b162b59cc7102965145435',1,'VW::named_labels']]],
   ['global_5fprint_5fnewline',['global_print_newline',['../namespaceCB__ADF.html#adc961d20db4a43b33722792d2186c969',1,'CB_ADF']]]
