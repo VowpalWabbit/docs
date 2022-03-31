@@ -1,8 +1,8 @@
 var searchData=
 [
   ['sample_5fpdf',['sample_pdf',['../structvw__dbg.html#a2ebd7b6dbc052d399e35264754de9dcf',1,'vw_dbg']]],
-  ['save_5fload_5ff',['save_load_f',['../structVW_1_1LEARNER_1_1save__load__data.html#ac5cf5313f0395898c19bcc29ade84b58',1,'VW::LEARNER::save_load_data']]],
-  ['save_5fmetric_5ff',['save_metric_f',['../structVW_1_1LEARNER_1_1save__metric__data.html#a3dfb7d36dfd00eef1fd92966818a9922',1,'VW::LEARNER::save_metric_data']]],
+  ['save_5fload_5ff',['save_load_f',['../structVW_1_1LEARNER_1_1details_1_1save__load__data.html#ab55446c88dee4d34d7d2dad76d5b933d',1,'VW::LEARNER::details::save_load_data']]],
+  ['save_5fmetric_5ff',['save_metric_f',['../structVW_1_1LEARNER_1_1details_1_1save__metric__data.html#acee61b14caef5ea581bfc2a73d6eb8e6',1,'VW::LEARNER::details::save_metric_data']]],
   ['save_5fper_5fpass',['save_per_pass',['../structVW_1_1workspace.html#a258c631b215bb741f4af15ffb66011ac',1,'VW::workspace']]],
   ['save_5fresume',['save_resume',['../structVW_1_1workspace.html#ad41351c7e3c05f83a3cf809bc0ee25fd',1,'VW::workspace']]],
   ['saved',['saved',['../structSlotsState.html#ac750456fe2fb01a49460cf310017535c',1,'SlotsState']]],
@@ -20,7 +20,7 @@ var searchData=
   ['seen_5ffirst',['seen_first',['../classFloatToFloatState__OriginalLabelCostHack.html#a72ccadad67ddb0e646ff915bd8833b93',1,'FloatToFloatState_OriginalLabelCostHack']]],
   ['segment',['segment',['../classArrayToPdfState.html#a90a676dd3c2fef026dfa3c4748501f33',1,'ArrayToPdfState']]],
   ['self_5finteraction',['self_interaction',['../structINTERACTIONS_1_1feature__gen__data.html#a9d489e35f7b4ba4f306a540c2877e9d7',1,'INTERACTIONS::feature_gen_data']]],
-  ['sensitivity_5ff',['sensitivity_f',['../structVW_1_1LEARNER_1_1sensitivity__data.html#a3af18eebab310c678cf75e00e8b06152',1,'VW::LEARNER::sensitivity_data']]],
+  ['sensitivity_5ff',['sensitivity_f',['../structVW_1_1LEARNER_1_1details_1_1sensitivity__data.html#a840509fd3b625ec47d016682f36ace48',1,'VW::LEARNER::details::sensitivity_data']]],
   ['set_5fminmax',['set_minmax',['../structVW_1_1workspace.html#ae69e4a48a58425fcf057ba4fcb20478c',1,'VW::workspace']]],
   ['shared_5fex_5findex',['SHARED_EX_INDEX',['../constant_8h.html#a753d241bccb62003b885fb0b2ae9c802',1,'constant.h']]],
   ['shared_5ftype',['SHARED_TYPE',['../constant_8h.html#a186c53aa4337a15980d33920c6f34e62',1,'constant.h']]],

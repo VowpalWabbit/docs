@@ -10,7 +10,7 @@ var searchData=
   ['labels',['labels',['../structMULTILABEL_1_1labels.html',1,'MULTILABEL']]],
   ['labelsinglepropertystate',['LabelSinglePropertyState',['../structLabelSinglePropertyState.html',1,'']]],
   ['labelstate',['LabelState',['../structLabelState.html',1,'']]],
-  ['learn_5fdata',['learn_data',['../structVW_1_1LEARNER_1_1learn__data.html',1,'VW::LEARNER']]],
+  ['learn_5fdata',['learn_data',['../structVW_1_1LEARNER_1_1details_1_1learn__data.html',1,'VW::LEARNER::details']]],
   ['learner',['learner',['../structVW_1_1LEARNER_1_1learner.html',1,'VW::LEARNER']]],
   ['learner_3c_20char_2c_20examplet_20_3e',['learner&lt; char, ExampleT &gt;',['../structVW_1_1LEARNER_1_1learner.html',1,'VW::LEARNER']]],
   ['learner_3c_20datat_2c_20examplet_20_3e',['learner&lt; DataT, ExampleT &gt;',['../structVW_1_1LEARNER_1_1learner.html',1,'VW::LEARNER']]],

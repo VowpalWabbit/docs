@@ -29,7 +29,7 @@ var searchData=
   ['recall_5ftree_5fsetup',['recall_tree_setup',['../namespaceVW_1_1reductions.html#a324d3a874299a04018dac84d5949b79b',1,'VW::reductions']]],
   ['reclaim_5fobject',['reclaim_object',['../structVW_1_1moved__object__pool.html#ae1fd62e8760c4acd4c6b108ef8191fe4',1,'VW::moved_object_pool']]],
   ['recompute_5fduals',['recompute_duals',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#a954da9a25d14837d54af1fb1f5e7a72f',1,'VW::distributionally_robust::ChiSquared']]],
-  ['recur_5fsensitivity',['recur_sensitivity',['../namespaceVW_1_1LEARNER.html#ab6e5c6e7bedf2db4bf91c3bc2b3527c9',1,'VW::LEARNER']]],
+  ['recur_5fsensitivity',['recur_sensitivity',['../namespaceVW_1_1LEARNER_1_1details.html#ac9920ae7cf09500eabd1d88ddae4886b',1,'VW::LEARNER::details']]],
   ['reduction_5ffeatures',['reduction_features',['../structVW_1_1continuous__actions_1_1reduction__features.html#a51ae15b2cb558b88f08438a48b0b7d12',1,'VW::continuous_actions::reduction_features::reduction_features()'],['../structVW_1_1cb__explore__adf_1_1greedy_1_1reduction__features.html#a669b2d1b296d7d31477326b9c1668ea9',1,'VW::cb_explore_adf::greedy::reduction_features::reduction_features()']]],
   ['reduction_5flearner_5fbuilder',['reduction_learner_builder',['../structVW_1_1LEARNER_1_1reduction__learner__builder.html#a548785a5199a7c17cd24146e21280a0b',1,'VW::LEARNER::reduction_learner_builder']]],
   ['reduction_5fno_5fdata_5flearner_5fbuilder',['reduction_no_data_learner_builder',['../structVW_1_1LEARNER_1_1reduction__no__data__learner__builder.html#a9661575efa5309f50028810c6f99f525',1,'VW::LEARNER::reduction_no_data_learner_builder']]],

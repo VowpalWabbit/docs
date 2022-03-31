@@ -11,7 +11,7 @@ var searchData=
   ['final_5fregressor_5fname',['final_regressor_name',['../structVW_1_1workspace.html#a3a01bd40a1f009df4e66c2555e1fb2bb',1,'VW::workspace']]],
   ['finalname',['finalname',['../structparser.html#a5a8f056721273d58c5032b0494b4ae8c',1,'parser']]],
   ['finish',['finish',['../structSearch_1_1search__task.html#aa4784eebfd6de0497b23e824056f9d0c',1,'Search::search_task::finish()'],['../structSearch_1_1search__metatask.html#a0f8ba98f5e0e01e04d66bf8824fb8016',1,'Search::search_metatask::finish()']]],
-  ['finish_5fexample_5ff',['finish_example_f',['../structVW_1_1LEARNER_1_1finish__example__data.html#a137835aa833c6548f287fd102d7d639f',1,'VW::LEARNER::finish_example_data']]],
+  ['finish_5fexample_5ff',['finish_example_f',['../structVW_1_1LEARNER_1_1details_1_1finish__example__data.html#adaacde5955752d251276146355c9507d',1,'VW::LEARNER::details::finish_example_data']]],
   ['first_5fobserved_5flabel',['first_observed_label',['../structshared__data.html#acdead5f80e8283d6600d35a837cd0b97',1,'shared_data']]],
   ['first_5fonly',['first_only',['../structVW_1_1pmf__to__pdf_1_1reduction.html#af9469be27491babc9fb2ab61a1481784',1,'VW::pmf_to_pdf::reduction']]],
   ['first_5fslot_5ffloat',['first_slot_float',['../classFloatToFloatState__OriginalLabelCostHack.html#a71058192a82ef3323ff22c60496450b1',1,'FloatToFloatState_OriginalLabelCostHack']]],
@@ -28,5 +28,5 @@ var searchData=
   ['fs',['fs',['../structVW_1_1flat__example.html#ada7dfc5df3473964d69cd361be424508',1,'VW::flat_example::fs()'],['../structVW_1_1primitive__feature__space.html#a7196cfc91add16e07c8ff2d442c640e3',1,'VW::primitive_feature_space::fs()']]],
   ['ft_5foffset',['ft_offset',['../structVW_1_1flat__example.html#a3459cb3ce9e89949f3349c447e579c7b',1,'VW::flat_example::ft_offset()'],['../structVW_1_1example__predict.html#a538c4e64a1b4a0de9efbb9b81750cb86',1,'VW::example_predict::ft_offset()']]],
   ['ftrs',['ftrs',['../structNamespace.html#af7140895e79fff354ad484f6c5fb463f',1,'Namespace']]],
-  ['func',['func',['../structVW_1_1LEARNER_1_1func__data.html#a64f72ac97241336c7a04a58a6e808eb1',1,'VW::LEARNER::func_data']]]
+  ['func',['func',['../structVW_1_1LEARNER_1_1details_1_1func__data.html#af3de34062533b36a0defaf2e5443c5a3',1,'VW::LEARNER::details::func_data']]]
 ];

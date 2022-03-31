@@ -24,7 +24,7 @@ var searchData=
   ['lda',['lda',['../structVW_1_1workspace.html#a9d65c02f12dac8af000b913eb5aee9f3',1,'VW::workspace']]],
   ['ldict',['ldict',['../structshared__data.html#a535958b995f49481d87c6d8fb62ab9ef',1,'shared_data']]],
   ['learn_5fcount',['learn_count',['../structVW_1_1reductions_1_1cats_1_1tree__node.html#a9d784277d0b84578f4e9ba4785026509',1,'VW::reductions::cats::tree_node']]],
-  ['learn_5ff',['learn_f',['../structVW_1_1LEARNER_1_1learn__data.html#aa7342020a50ec32f1408367624329c3d',1,'VW::LEARNER::learn_data']]],
+  ['learn_5ff',['learn_f',['../structVW_1_1LEARNER_1_1details_1_1learn__data.html#a2959d6c09447d7a54588b33f24c4b347',1,'VW::LEARNER::details::learn_data']]],
   ['learn_5freturns_5fprediction',['learn_returns_prediction',['../structVW_1_1LEARNER_1_1learner.html#a8cac2d0d662aa9c5206f0709544a9a90',1,'VW::LEARNER::learner']]],
   ['learner',['learner',['../structvw__dbg.html#a2c56037d4e2c362b5dbd5f692a93da90',1,'vw_dbg']]],
   ['lease',['lease',['../structVW_1_1automl_1_1exclusion__config.html#a92fbdbbd16b21ee26aa5e909872e72eb',1,'VW::automl::exclusion_config']]],
