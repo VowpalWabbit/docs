@@ -23,7 +23,7 @@ var searchData=
   ['_5fmaybe_5foverride_5fprediction',['_maybe_override_prediction',['../classSearch_1_1BaseTask.html#a4d7e476f06a5d561b800cef4e5243727',1,'Search::BaseTask']]],
   ['_5fmin_5fseen_5flabel',['_min_seen_label',['../structVW_1_1reductions_1_1active.html#aafed704f5f51a86712bbc84066609460',1,'VW::reductions::active']]],
   ['_5fmodel_5fversion',['_model_version',['../structVW_1_1reductions_1_1active.html#a4ad13d2442a681a9f12c46018f446e95',1,'VW::reductions::active']]],
-  ['_5fp_5fbase',['_p_base',['../structVW_1_1pmf__to__pdf_1_1reduction.html#a2785bdb0c894ac6c90a4e0433bae1ba8',1,'VW::pmf_to_pdf::reduction']]],
+  ['_5fp_5fbase',['_p_base',['../structVW_1_1reductions_1_1pmf__to__pdf__reduction.html#a3b40657cd28b07b8bb5fd614665487c7',1,'VW::reductions::pmf_to_pdf_reduction']]],
   ['_5fparse_5fmask',['_parse_mask',['../structContext.html#a2f83e8c7eb3745ae12fd41dd525b613e',1,'Context']]],
   ['_5fpost_5fprediction',['_post_prediction',['../classSearch_1_1BaseTask.html#a4e1d2ad328f2cc573f2c99dbafd0b9e2',1,'Search::BaseTask']]],
   ['_5frandom_5fstate',['_random_state',['../structVW_1_1reductions_1_1active.html#aff7ce78d4b917ab4a8d6c3c96e679969',1,'VW::reductions::active::_random_state()'],['../structVW_1_1reductions_1_1expreplay_1_1expreplay.html#a188f39cab60abb2f50432061d40d2bf8',1,'VW::reductions::expreplay::expreplay::_random_state()']]],

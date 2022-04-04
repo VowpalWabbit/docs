@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['valid_5fconfig_5fsize',['valid_config_size',['../structVW_1_1automl_1_1interaction__config__manager.html#aa50021feabbf82852deb9f344dc935c2',1,'VW::automl::interaction_config_manager']]],
+  ['valid_5fconfig_5fsize',['valid_config_size',['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a0262972152bb39b5886cccca614e0488',1,'VW::reductions::automl::interaction_config_manager']]],
   ['values',['values',['../structfeatures.html#af2271fc753d151a8a709e055c84295cf',1,'features']]],
   ['values_5fabove_5fand_5fincluding_5fzero',['VALUES_ABOVE_AND_INCLUDING_ZERO',['../namespaceVW_1_1details.html#a68e7a75400178beccf8b637920c81ca5',1,'VW::details']]],
   ['values_5fabove_5fzero',['VALUES_ABOVE_ZERO',['../namespaceVW_1_1details.html#adb1e84d42c34af5804f2f7266b4e0ef3',1,'VW::details']]],

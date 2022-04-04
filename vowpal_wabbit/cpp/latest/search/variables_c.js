@@ -27,7 +27,7 @@ var searchData=
   ['learn_5ff',['learn_f',['../structVW_1_1LEARNER_1_1details_1_1learn__data.html#a2959d6c09447d7a54588b33f24c4b347',1,'VW::LEARNER::details::learn_data']]],
   ['learn_5freturns_5fprediction',['learn_returns_prediction',['../structVW_1_1LEARNER_1_1learner.html#a8cac2d0d662aa9c5206f0709544a9a90',1,'VW::LEARNER::learner']]],
   ['learner',['learner',['../structvw__dbg.html#a2c56037d4e2c362b5dbd5f692a93da90',1,'vw_dbg']]],
-  ['lease',['lease',['../structVW_1_1automl_1_1exclusion__config.html#a92fbdbbd16b21ee26aa5e909872e72eb',1,'VW::automl::exclusion_config']]],
+  ['lease',['lease',['../structVW_1_1reductions_1_1automl_1_1exclusion__config.html#aa1dfd00b2c1311797ebf983103d8a090',1,'VW::reductions::automl::exclusion_config']]],
   ['left',['left',['../structVW_1_1continuous__actions_1_1pdf__segment.html#a06bbb545deb2037a44617751e5dd1bb0',1,'VW::continuous_actions::pdf_segment']]],
   ['left_5fid',['left_id',['../structVW_1_1reductions_1_1cats_1_1tree__node.html#ad47b521d919b704c42b856f8b88ea1b2',1,'VW::reductions::cats::tree_node::left_id()'],['../structVW_1_1reductions_1_1offset__tree_1_1tree__node.html#a86135703b0a4baa43981339d92ed3fe9',1,'VW::reductions::offset_tree::tree_node::left_id()']]],
   ['left_5fonly',['left_only',['../structVW_1_1reductions_1_1cats_1_1tree__node.html#a54e352e33d1a6b857cfab469f85fa7ea',1,'VW::reductions::cats::tree_node']]],
@@ -36,9 +36,9 @@ var searchData=
   ['limit',['limit',['../structVW_1_1workspace.html#a3b3431fa71587bbc18749957154677d2',1,'VW::workspace']]],
   ['limit_5fstrings',['limit_strings',['../structVW_1_1workspace.html#adccb7b6d53a0bc804af3e23045d8f1f6',1,'VW::workspace']]],
   ['lineparseerror',['LineParseError',['../structdsjson__metrics.html#ab28dcf002ad9e0699e4ebfd6d3813b8c',1,'dsjson_metrics']]],
-  ['live_5finteractions',['live_interactions',['../structVW_1_1automl_1_1aml__score.html#a0ab65375b32bde73cdf1234c5186110b',1,'VW::automl::aml_score']]],
+  ['live_5finteractions',['live_interactions',['../structVW_1_1reductions_1_1automl_1_1aml__score.html#aed393e1fda7eee23e2903e1afcbdf60d',1,'VW::reductions::automl::aml_score']]],
   ['loaded_5fdictionaries',['loaded_dictionaries',['../structVW_1_1workspace.html#a40c9de1e1015c27d3d5b098481acbad7',1,'VW::workspace']]],
   ['logger',['logger',['../structVW_1_1workspace.html#a64e66403030d2917810f6684439c38dc',1,'VW::workspace']]],
   ['loss',['loss',['../structVW_1_1example.html#a6b45287a6e699a3fc3d3a2f7a916728b',1,'VW::example::loss()'],['../structVW_1_1workspace.html#a7353810c29b1e203dc46ea27098aa634',1,'VW::workspace::loss()']]],
-  ['lower_5fbound',['lower_bound',['../structVW_1_1automl_1_1exclusion__config.html#ad9186cca87098a3464a7e04ea3f3d6b2',1,'VW::automl::exclusion_config']]]
+  ['lower_5fbound',['lower_bound',['../structVW_1_1reductions_1_1automl_1_1exclusion__config.html#a1f3f5d0259442246214650b3e172510f',1,'VW::reductions::automl::exclusion_config']]]
 ];

@@ -7,7 +7,7 @@ var searchData=
   ['allreducesockets',['AllReduceSockets',['../classAllReduceSockets.html',1,'']]],
   ['allreducesync',['AllReduceSync',['../classAllReduceSync.html',1,'']]],
   ['allreducethreads',['AllReduceThreads',['../classAllReduceThreads.html',1,'']]],
-  ['aml_5fscore',['aml_score',['../structVW_1_1automl_1_1aml__score.html',1,'VW::automl']]],
+  ['aml_5fscore',['aml_score',['../structVW_1_1reductions_1_1automl_1_1aml__score.html',1,'VW::reductions::automl']]],
   ['api_5fstatus',['api_status',['../classVW_1_1experimental_1_1api__status.html',1,'VW::experimental']]],
   ['arraystate',['ArrayState',['../classArrayState.html',1,'']]],
   ['arraytopdfstate',['ArrayToPdfState',['../classArrayToPdfState.html',1,'']]],
@@ -17,5 +17,5 @@ var searchData=
   ['audit_5ffeatures_5fiterator',['audit_features_iterator',['../classaudit__features__iterator.html',1,'']]],
   ['audit_5ffeatures_5fiterator_3c_20const_20feature_5fvalue_2c_20const_20feature_5findex_2c_20const_20vw_3a_3aaudit_5fstrings_20_3e',['audit_features_iterator&lt; const feature_value, const feature_index, const VW::audit_strings &gt;',['../classaudit__features__iterator.html',1,'']]],
   ['audit_5fstrings',['audit_strings',['../structVW_1_1audit__strings.html',1,'VW']]],
-  ['automl',['automl',['../structVW_1_1automl_1_1automl.html',1,'VW::automl']]]
+  ['automl',['automl',['../structVW_1_1reductions_1_1automl_1_1automl.html',1,'VW::reductions::automl']]]
 ];

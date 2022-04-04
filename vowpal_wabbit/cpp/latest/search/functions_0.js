@@ -35,10 +35,10 @@ var searchData=
   ['allreducesockets',['AllReduceSockets',['../classAllReduceSockets.html#a39d7eb04cefbf3d9f79bf81d4550c1a3',1,'AllReduceSockets']]],
   ['allreducesync',['AllReduceSync',['../classAllReduceSync.html#a9c7c97a0d8c0d81647614db8e4cac4ef',1,'AllReduceSync']]],
   ['allreducethreads',['AllReduceThreads',['../classAllReduceThreads.html#a55bf6976a5fb1cd2dc036b2899c29a07',1,'AllReduceThreads::AllReduceThreads(AllReduceThreads *root, const size_t ptotal, const size_t pnode, bool quiet=false)'],['../classAllReduceThreads.html#a8cccbdd0a46a186fd867529aa0f6c491',1,'AllReduceThreads::AllReduceThreads(const size_t ptotal, const size_t pnode, bool quiet=false)']]],
-  ['aml_5fscore',['aml_score',['../structVW_1_1automl_1_1aml__score.html#ac0191dffb9ea3d6012dd07284752a728',1,'VW::automl::aml_score::aml_score()'],['../structVW_1_1automl_1_1aml__score.html#a11a081c6bacf77fcd36ca40cf73daa00',1,'VW::automl::aml_score::aml_score(double alpha, double tau)']]],
+  ['aml_5fscore',['aml_score',['../structVW_1_1reductions_1_1automl_1_1aml__score.html#a370febfb3ee20d9c851f1966c0982c39',1,'VW::reductions::automl::aml_score::aml_score()'],['../structVW_1_1reductions_1_1automl_1_1aml__score.html#affeae66b1935e096d8c4e141a0b6c242',1,'VW::reductions::automl::aml_score::aml_score(double alpha, double tau)']]],
   ['api_5fstatus',['api_status',['../classVW_1_1experimental_1_1api__status.html#a83460b76f47b7b76ee50d4c40e7f8826',1,'VW::experimental::api_status']]],
   ['append_5fempty_5fnewline_5fexample_5ffor_5fdriver',['append_empty_newline_example_for_driver',['../parse__example__json_8h.html#a79370838a784508f124c38f32393876f',1,'parse_example_json.h']]],
-  ['apply_5fconfig',['apply_config',['../structVW_1_1automl_1_1config__manager.html#a6ba9f50e0f69a4847946225046ed1e19',1,'VW::automl::config_manager::apply_config()'],['../structVW_1_1automl_1_1interaction__config__manager.html#a6045d3a1b2003610450212e80a694ef5',1,'VW::automl::interaction_config_manager::apply_config()']]],
+  ['apply_5fconfig',['apply_config',['../structVW_1_1reductions_1_1automl_1_1config__manager.html#ad7a3e018498f143d096da58b904dff1f',1,'VW::reductions::automl::config_manager::apply_config()'],['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a33702685b3b7983b9d735578a8ec65bc',1,'VW::reductions::automl::interaction_config_manager::apply_config()']]],
   ['apply_5fpdrop',['apply_pdrop',['../namespaceVW.html#abe4f505e4e9f9f5acce1dedf64361af0',1,'VW']]],
   ['are_5ffeatures_5fcompatible',['are_features_compatible',['../namespaceVW.html#a380938edfb77928b82057e47333b0b30',1,'VW']]],
   ['are_5fsame',['are_same',['../namespaceVW_1_1math.html#a5283b8fa4ef629eb885fce24d672cf07',1,'VW::math']]],
@@ -58,6 +58,6 @@ var searchData=
   ['audit_5fregressor_5fsetup',['audit_regressor_setup',['../namespaceVW_1_1reductions.html#ab1d1c1f11d3b602d226efbd92cd19e68',1,'VW::reductions']]],
   ['audit_5fstrings',['audit_strings',['../structVW_1_1audit__strings.html#ac70f202d3aaa36f00566212a1175825e',1,'VW::audit_strings::audit_strings()=default'],['../structVW_1_1audit__strings.html#a998c84150315edd9262983010c8331f6',1,'VW::audit_strings::audit_strings(std::string ns, std::string name)'],['../structVW_1_1audit__strings.html#a3d79841a7c72843393161cbd90c80e0e',1,'VW::audit_strings::audit_strings(std::string ns, std::string name, std::string str_value)']]],
   ['autolink_5fsetup',['autolink_setup',['../namespaceVW_1_1reductions.html#a933182652dd4ec23f11f4524de35e2db',1,'VW::reductions']]],
-  ['automl',['automl',['../structVW_1_1automl_1_1automl.html#a1b7b13bfe51b8633b7b73d94f1bb7245',1,'VW::automl::automl']]],
-  ['automl_5fsetup',['automl_setup',['../namespaceVW_1_1automl.html#a84e3ff65bcb03f398c790b721f7bf89a',1,'VW::automl']]]
+  ['automl',['automl',['../structVW_1_1reductions_1_1automl_1_1automl.html#a5672ad2a75951f415e83d66d8275acb3',1,'VW::reductions::automl::automl']]],
+  ['automl_5fsetup',['automl_setup',['../namespaceVW_1_1reductions.html#a7a59da5065ab7af3e82e8a0c055f7c45',1,'VW::reductions']]]
 ];
