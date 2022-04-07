@@ -129,7 +129,7 @@ var searchData=
   ['get_5fvw_5fpointer_5funsafe',['get_vw_pointer_unsafe',['../structSearch_1_1search.html#a7cb1d324253b2cc4d7122579028f7d87',1,'Search::search']]],
   ['get_5fweight',['get_weight',['../structVW_1_1label__parser.html#ae7a6398d612487cb0ea8e7e422d3cc08',1,'VW::label_parser::get_weight()'],['../namespaceVW.html#ad2c22f7b3c1d7429f6cc2dfe4cbc6278',1,'VW::get_weight()']]],
   ['get_5fwriter',['get_writer',['../structVW_1_1io_1_1socket.html#a1800ca045993bf0c10aaa4fd8bd6f453',1,'VW::io::socket']]],
-  ['getblock',['getblock',['../namespaceVW_1_1details.html#a852fd9b5c7c40d9dab896a7b1b68bd52',1,'VW::details']]],
+  ['getblock',['getblock',['../namespaceVW_1_1common_1_1details.html#ae314c707660df92a7532ab6f47767833',1,'VW::common::details']]],
   ['gethasher',['getHasher',['../hashstring_8h.html#ad2d39f84e4e19d8488c984287d0a497e',1,'hashstring.h']]],
   ['getk',['getK',['../classVW_1_1named__labels.html#a67c785be69b162b59cc7102965145435',1,'VW::named_labels']]],
   ['git_5fcommit',['git_commit',['../namespaceVW.html#a7d89e09709dcb4deeb550e17aa8ea75b',1,'VW']]],
