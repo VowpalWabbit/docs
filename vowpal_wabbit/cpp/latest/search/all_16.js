@@ -175,7 +175,6 @@ var searchData=
   ['vw_5fslim_5fpredict_2eh',['vw_slim_predict.h',['../vw__slim__predict_8h.html',1,'']]],
   ['vw_5fslim_5freturn_5fcodes_2eh',['vw_slim_return_codes.h',['../vw__slim__return__codes_8h.html',1,'']]],
   ['vw_5fstartparser',['VW_StartParser',['../vwdll_8h.html#a9cc923f1f0cc15c271139789cf45d595',1,'vwdll.h']]],
-  ['vw_5fstring_5fview_2eh',['vw_string_view.h',['../vw__string__view_8h.html',1,'']]],
   ['vw_5fstring_5fview_5ffmt_2eh',['vw_string_view_fmt.h',['../vw__string__view__fmt_8h.html',1,'']]],
   ['vw_5ftype_5fsafe_5fnull',['VW_TYPE_SAFE_NULL',['../vwdll_8h.html#a70551fec65dc75986bf05a4002a66a77',1,'vwdll.h']]],
   ['vw_5funrecognised_5foption_5fexception',['vw_unrecognised_option_exception',['../classVW_1_1vw__unrecognised__option__exception.html',1,'VW::vw_unrecognised_option_exception'],['../classVW_1_1vw__unrecognised__option__exception.html#aaffd470d1c4e6935a8ca71ece0eac05f',1,'VW::vw_unrecognised_option_exception::vw_unrecognised_option_exception(const char *file, int lineNumber, const std::string &amp;message)'],['../classVW_1_1vw__unrecognised__option__exception.html#a2c410495338bf8dd68dd0d622454d4b7',1,'VW::vw_unrecognised_option_exception::vw_unrecognised_option_exception(const vw_unrecognised_option_exception &amp;ex)=default'],['../classVW_1_1vw__unrecognised__option__exception.html#a126d8d2f0402380adf97064060097bc4',1,'VW::vw_unrecognised_option_exception::vw_unrecognised_option_exception(vw_unrecognised_option_exception &amp;&amp;ex)=default']]],

@@ -10,7 +10,6 @@ var searchData=
   ['vw_5fmath_2eh',['vw_math.h',['../vw__math_8h.html',1,'']]],
   ['vw_5fslim_5fpredict_2eh',['vw_slim_predict.h',['../vw__slim__predict_8h.html',1,'']]],
   ['vw_5fslim_5freturn_5fcodes_2eh',['vw_slim_return_codes.h',['../vw__slim__return__codes_8h.html',1,'']]],
-  ['vw_5fstring_5fview_2eh',['vw_string_view.h',['../vw__string__view_8h.html',1,'']]],
   ['vw_5fstring_5fview_5ffmt_2eh',['vw_string_view_fmt.h',['../vw__string__view__fmt_8h.html',1,'']]],
   ['vw_5fvalidate_2eh',['vw_validate.h',['../vw__validate_8h.html',1,'']]],
   ['vw_5fversions_2eh',['vw_versions.h',['../vw__versions_8h.html',1,'']]],
