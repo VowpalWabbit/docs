@@ -112,6 +112,7 @@ var searchData=
   ['vw_5fexample',['VW_EXAMPLE',['../vwdll_8h.html#a9cfc98cce8125730d37c74abe8b1120a',1,'vwdll.h']]],
   ['vw_5fexception',['vw_exception',['../classVW_1_1vw__exception.html',1,'VW::vw_exception'],['../classVW_1_1vw__exception.html#aef08fb6d58407b554eadaf943783c29a',1,'VW::vw_exception::vw_exception(const char *file, int lineNumber, std::string const &amp;message)'],['../classVW_1_1vw__exception.html#a682da0eaa56e263baef39509812add4c',1,'VW::vw_exception::vw_exception(const vw_exception &amp;ex)=default'],['../classVW_1_1vw__exception.html#ab3fa9858de11b5d1c7d35336f07e9da1',1,'VW::vw_exception::vw_exception(vw_exception &amp;&amp;ex)=default']]],
   ['vw_5fexception_2eh',['vw_exception.h',['../vw__exception_8h.html',1,'']]],
+  ['vw_5fexport_5fexception',['VW_EXPORT_EXCEPTION',['../vw__exception_8h.html#a8d5a15d30c3e6c363f5eea6432bd8780',1,'vw_exception.h']]],
   ['vw_5fexportexample',['VW_ExportExample',['../vwdll_8h.html#acf03aa72020300ba14818dfba781f2c4',1,'vwdll.h']]],
   ['vw_5ffeature',['VW_FEATURE',['../vwdll_8h.html#a903e05b3e51dcf8297bae3d9027fb5ad',1,'vwdll.h']]],
   ['vw_5ffeature_5fspace',['VW_FEATURE_SPACE',['../vwdll_8h.html#ab7f05cf16c1ff82aff770752abeafba2',1,'vwdll.h']]],
