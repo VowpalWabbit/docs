@@ -30,7 +30,6 @@ var searchData=
   ['marginal_2eh',['marginal.h',['../marginal_8h.html',1,'']]],
   ['marginal_5fsetup',['marginal_setup',['../namespaceVW_1_1reductions.html#a9ab0348ac4d025e15aa1f773b636979c',1,'VW::reductions']]],
   ['mask',['mask',['../classsparse__parameters.html#a889cb5ba13ea2a981a306caee24fb711',1,'sparse_parameters::mask()'],['../classparameters.html#a0211965b68a6021fc65d778564107ba0',1,'parameters::mask()'],['../classdense__parameters.html#ab18ff8dd1a000af48b7225e64853b6e4',1,'dense_parameters::mask()']]],
-  ['matcher_5fp',['MATCHER_P',['../ut__util_8h.html#a091af8e836cb9aa324dcef7f6d2894fb',1,'ut_util.h']]],
   ['max_5factions',['max_actions',['../structVW_1_1cb__explore__adf_1_1cb__explore__metrics.html#a152f694f66f8c8a02d67a9b8d04ac80e',1,'VW::cb_explore_adf::cb_explore_metrics']]],
   ['max_5fexamples',['max_examples',['../structVW_1_1workspace.html#a74503c26819a4c7aff237c0b2dac6a93',1,'VW::workspace']]],
   ['max_5flabel',['max_label',['../structshared__data.html#ab7a25e683bebc7347fa97d71e116f712',1,'shared_data']]],

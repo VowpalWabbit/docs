@@ -9,7 +9,6 @@ var searchData=
   ['make_5funique',['make_unique',['../namespaceVW.html#a76aaae1b56188dc3bfd7d9971d3802e1',1,'VW']]],
   ['marginal_5fsetup',['marginal_setup',['../namespaceVW_1_1reductions.html#a9ab0348ac4d025e15aa1f773b636979c',1,'VW::reductions']]],
   ['mask',['mask',['../classsparse__parameters.html#a889cb5ba13ea2a981a306caee24fb711',1,'sparse_parameters::mask()'],['../classparameters.html#a0211965b68a6021fc65d778564107ba0',1,'parameters::mask()'],['../classdense__parameters.html#ab18ff8dd1a000af48b7225e64853b6e4',1,'dense_parameters::mask()']]],
-  ['matcher_5fp',['MATCHER_P',['../ut__util_8h.html#a091af8e836cb9aa324dcef7f6d2894fb',1,'ut_util.h']]],
   ['maybe_5fcompact',['maybe_compact',['../classBeam_1_1beam.html#ae02906b31a8e9a130a9b2dd234f1baba',1,'Beam::beam']]],
   ['maybe_5foverride_5fprediction',['maybe_override_prediction',['../classSearch_1_1BaseTask.html#a664d7119df38d66bfca83fd402c3ab74',1,'Search::BaseTask']]],
   ['memory_5ftree_5fsetup',['memory_tree_setup',['../namespaceVW_1_1reductions.html#a2f00e1bb16c60423741c752140f03ac9',1,'VW::reductions']]],
