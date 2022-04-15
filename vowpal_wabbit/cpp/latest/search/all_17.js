@@ -29,7 +29,7 @@ var searchData=
   ['wrap_5fchar',['wrap_char',['../namespaceVW.html#a2df9a38d00dfa94b1694b2a6d8a7f225aa18f1925a241b0238b3728ca0b400a74',1,'VW']]],
   ['wrap_5fsocket_5fdescriptor',['wrap_socket_descriptor',['../namespaceVW_1_1io.html#a9e41560d8a75f8e8da16232f5cb3c637',1,'VW::io']]],
   ['wrap_5fspace',['wrap_space',['../namespaceVW.html#a2df9a38d00dfa94b1694b2a6d8a7f225abe98e7b80cc11a14facfdc37c99d4ca0',1,'VW']]],
-  ['wrap_5ftext',['wrap_text',['../namespaceVW_1_1common.html#a6a1c8be5ea80f2bb8c9d911ed1dd7e56',1,'VW::common']]],
+  ['wrap_5ftext',['wrap_text',['../namespaceVW.html#aa3895003f151896b7b116446b144ff8d',1,'VW']]],
   ['wrap_5ftype',['wrap_type',['../namespaceVW.html#a2df9a38d00dfa94b1694b2a6d8a7f225',1,'VW']]],
   ['wrapping',['wrapping',['../structVW_1_1column__definition.html#a1634f0a00993f3b35e5d34f77c10d37f',1,'VW::column_definition']]],
   ['write',['write',['../structVW_1_1io_1_1writer.html#a2af8e9f79503058aca22933edd085c82',1,'VW::io::writer']]],
