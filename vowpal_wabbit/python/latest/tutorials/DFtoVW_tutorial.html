@@ -928,7 +928,7 @@ The full label of some features (the non obvious ones):
 <p>We now use <code class="docutils literal notranslate"><span class="pre">DFtoVW</span></code> class to convert this DataFrame to VW input format.</p>
 <p>There are 2 ways to use the class <code class="docutils literal notranslate"><span class="pre">DFtoVW</span></code>:</p>
 <ul class="simple">
-<li><p><strong>Basic usage</strong>, using the <code class="docutils literal notranslate"><span class="pre">DFtoVW.from_colnames</span></code> class method.</p></li>
+<li><p><strong>Basic usage</strong>, using the <code class="docutils literal notranslate"><span class="pre">DFtoVW.from_column_names</span></code> class method.</p></li>
 <li><p><strong>Advanced usage</strong>, that relies on the VW input format specification (see <a class="reference external" href="https://github.com/VowpalWabbit/vowpal_wabbit/wiki/Input-format">Input format section of wiki</a>). It is build upon classes such as <code class="docutils literal notranslate"><span class="pre">Feature</span></code>, <code class="docutils literal notranslate"><span class="pre">Namespace</span></code> or <code class="docutils literal notranslate"><span class="pre">SimpleLabel</span></code>, <code class="docutils literal notranslate"><span class="pre">MulticlassLabel</span></code> etc.</p></li>
 </ul>
 <p>The current section illustrates the basic usage. Section 4 will present the advanced usage.</p>
@@ -940,7 +940,7 @@ The full label of some features (the non obvious ones):
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;label:&quot;</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;features:&quot;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
 
-<span class="n">converter</span> <span class="o">=</span> <span class="n">DFtoVW</span><span class="o">.</span><span class="n">from_colnames</span><span class="p">(</span><span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="p">)</span>
+<span class="n">converter</span> <span class="o">=</span> <span class="n">DFtoVW</span><span class="o">.</span><span class="n">from_column_names</span><span class="p">(</span><span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="p">)</span>
 <span class="n">examples</span> <span class="o">=</span> <span class="n">converter</span><span class="o">.</span><span class="n">convert_df</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -965,7 +965,7 @@ The full label of some features (the non obvious ones):
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">try</span><span class="p">:</span>
-    <span class="n">DFtoVW</span><span class="o">.</span><span class="n">from_colnames</span><span class="p">(</span><span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;TEMP&quot;</span><span class="p">,</span> <span class="s2">&quot;COLUMN_NOT_IN_DF&quot;</span><span class="p">])</span>
+    <span class="n">DFtoVW</span><span class="o">.</span><span class="n">from_column_names</span><span class="p">(</span><span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;TEMP&quot;</span><span class="p">,</span> <span class="s2">&quot;COLUMN_NOT_IN_DF&quot;</span><span class="p">])</span>
 <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">e</span><span class="p">))</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
