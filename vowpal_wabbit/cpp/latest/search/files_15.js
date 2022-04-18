@@ -14,5 +14,5 @@ var searchData=
   ['vw_5fvalidate_2eh',['vw_validate.h',['../vw__validate_8h.html',1,'']]],
   ['vw_5fversions_2eh',['vw_versions.h',['../vw__versions_8h.html',1,'']]],
   ['vwdll_2eh',['vwdll.h',['../vwdll_8h.html',1,'']]],
-  ['vwvis_2eh',['vwvis.h',['../vwvis_8h.html',1,'']]]
+  ['vwvis_2eh',['vwvis.h',['../c__wrapper_2include_2vw_2c__wrapper_2vwvis_8h.html',1,'(Global Namespace)'],['../common_2include_2vw_2common_2vwvis_8h.html',1,'(Global Namespace)']]]
 ];

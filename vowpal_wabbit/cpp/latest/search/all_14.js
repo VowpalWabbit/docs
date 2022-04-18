@@ -18,7 +18,7 @@ var searchData=
   ['text_5freader',['text_reader',['../structparser.html#ae5bf8bbf70835b2ed99dc77c625821ad',1,'parser']]],
   ['text_5fregressor_5fname',['text_regressor_name',['../structVW_1_1workspace.html#aa0641fbbfdbea79b75a96952742241be',1,'VW::workspace']]],
   ['text_5fstate',['text_state',['../structContext.html#ac34c3323257dbeacad07e50c8444c4d8',1,'Context']]],
-  ['text_5futils_2eh',['text_utils.h',['../common_2include_2vw_2common_2text__utils_8h.html',1,'(Global Namespace)'],['../text__utils_8h.html',1,'(Global Namespace)']]],
+  ['text_5futils_2eh',['text_utils.h',['../common_2include_2vw_2common_2text__utils_8h.html',1,'(Global Namespace)'],['../core_2include_2vw_2core_2text__utils_8h.html',1,'(Global Namespace)']]],
   ['textstate',['TextState',['../structTextState.html',1,'TextState&lt; audit &gt;'],['../structTextState.html#a7b198588c0209d4a4166953cc341538f',1,'TextState::TextState()']]],
   ['the_5flabel_5fparser',['the_label_parser',['../namespaceVW_1_1cb__continuous.html#a5992a27e761bb5f499635adc1ab76aa1',1,'VW::cb_continuous']]],
   ['thread',['Thread',['../allreduce_8h.html#ac80f47c3b2731d9979f60e1b2f6af364ad97477d6d8a838ead9348185bb5b6742',1,'allreduce.h']]],

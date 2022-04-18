@@ -1,14 +1,14 @@
 var searchData=
 [
   ['vsprintf_5fs',['vsprintf_s',['../crossplat__compat_8h.html#a803c6f2523bae626734a87a074e480e9',1,'crossplat_compat.h']]],
-  ['vw_5fapi_5fnoexcept',['VW_API_NOEXCEPT',['../vwvis_8h.html#ac4fbea6c6236d7a210eee67e302be106',1,'vwvis.h']]],
+  ['vw_5fapi_5fnoexcept',['VW_API_NOEXCEPT',['../c__wrapper_2include_2vw_2c__wrapper_2vwvis_8h.html#ac4fbea6c6236d7a210eee67e302be106',1,'VW_API_NOEXCEPT():&#160;vwvis.h'],['../common_2include_2vw_2common_2vwvis_8h.html#ac4fbea6c6236d7a210eee67e302be106',1,'VW_API_NOEXCEPT():&#160;vwvis.h']]],
   ['vw_5fassert',['VW_ASSERT',['../vw__exception_8h.html#afdf68ea80cc57c25b736d8306f88edee',1,'vw_exception.h']]],
   ['vw_5fcalling_5fconv',['VW_CALLING_CONV',['../vwdll_8h.html#a64a642f52fe781ce11742e6c4d35acbb',1,'vwdll.h']]],
   ['vw_5fdbg',['VW_DBG',['../debug__log_8h.html#afd46076ede455cb78b77e9d5e420f399',1,'debug_log.h']]],
   ['vw_5fdbg_5f0',['VW_DBG_0',['../debug__log_8h.html#ab8bd0c00f6b943deea18229433afd90e',1,'debug_log.h']]],
   ['vw_5fdebug_5flog',['VW_DEBUG_LOG',['../debug__log_8h.html#ae7f81b1ffc5b9097daf7bfef6a624e6c',1,'VW_DEBUG_LOG():&#160;debug_log.h'],['../gd__predict_8h.html#ae7f81b1ffc5b9097daf7bfef6a624e6c',1,'VW_DEBUG_LOG():&#160;gd_predict.h'],['../learner_8h.html#ae7f81b1ffc5b9097daf7bfef6a624e6c',1,'VW_DEBUG_LOG():&#160;learner.h']]],
-  ['vw_5fdll_5flocal',['VW_DLL_LOCAL',['../vwvis_8h.html#abb8340b867c28be777e09f71e9125a7b',1,'vwvis.h']]],
-  ['vw_5fdll_5fpublic',['VW_DLL_PUBLIC',['../vwvis_8h.html#aa47c18e82570992596ce6017e8491fce',1,'vwvis.h']]],
+  ['vw_5fdll_5flocal',['VW_DLL_LOCAL',['../c__wrapper_2include_2vw_2c__wrapper_2vwvis_8h.html#abb8340b867c28be777e09f71e9125a7b',1,'VW_DLL_LOCAL():&#160;vwvis.h'],['../common_2include_2vw_2common_2vwvis_8h.html#abb8340b867c28be777e09f71e9125a7b',1,'VW_DLL_LOCAL():&#160;vwvis.h']]],
+  ['vw_5fdll_5fpublic',['VW_DLL_PUBLIC',['../c__wrapper_2include_2vw_2c__wrapper_2vwvis_8h.html#aa47c18e82570992596ce6017e8491fce',1,'VW_DLL_PUBLIC():&#160;vwvis.h'],['../common_2include_2vw_2common_2vwvis_8h.html#aa47c18e82570992596ce6017e8491fce',1,'VW_DLL_PUBLIC():&#160;vwvis.h']]],
   ['vw_5fexport_5fexception',['VW_EXPORT_EXCEPTION',['../vw__exception_8h.html#a8d5a15d30c3e6c363f5eea6432bd8780',1,'vw_exception.h']]],
   ['vw_5flog_5fsink',['VW_LOG_SINK',['../debug__log_8h.html#af38b8deb09dc848104907552dd1355f0',1,'debug_log.h']]],
   ['vw_5ftype_5fsafe_5fnull',['VW_TYPE_SAFE_NULL',['../vwdll_8h.html#a70551fec65dc75986bf05a4002a66a77',1,'vwdll.h']]],

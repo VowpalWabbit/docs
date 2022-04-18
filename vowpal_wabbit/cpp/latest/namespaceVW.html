@@ -230,10 +230,10 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a505a6662876c6cba2fcdebb6d21ebbd2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a505a6662876c6cba2fcdebb6d21ebbd2">multi_ex</a> = std::vector&lt; <a class="el" href="structVW_1_1example.html">example</a> * &gt;</td></tr>
-<tr class="separator:a505a6662876c6cba2fcdebb6d21ebbd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a909e5c86e4a38cb08ec00a0831dc105d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a909e5c86e4a38cb08ec00a0831dc105d">string_view</a> = nonstd::string_view</td></tr>
 <tr class="separator:a909e5c86e4a38cb08ec00a0831dc105d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a505a6662876c6cba2fcdebb6d21ebbd2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a505a6662876c6cba2fcdebb6d21ebbd2">multi_ex</a> = std::vector&lt; <a class="el" href="structVW_1_1example.html">example</a> * &gt;</td></tr>
+<tr class="separator:a505a6662876c6cba2fcdebb6d21ebbd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c2dd5a57f72da299c6d8737ccc18c1f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a2c2dd5a57f72da299c6d8737ccc18c1f">decision_scores_t</a> = std::vector&lt; <a class="el" href="namespaceACTION__SCORE.html#a73cec56adace2b62e070a0686309704c">ACTION_SCORE::action_scores</a> &gt;</td></tr>
 <tr class="separator:a2c2dd5a57f72da299c6d8737ccc18c1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28e15f52840539d6b0c56aa196e11278"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a28e15f52840539d6b0c56aa196e11278">example_factory_t</a> = <a class="el" href="structVW_1_1example.html">example</a> &amp;(*)(void *)</td></tr>
@@ -312,6 +312,22 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a8fe50f2e30103adf6d7b7812677b545a"><td class="memItemLeft" align="right" valign="top">VW_STD14_CONSTEXPR uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a8fe50f2e30103adf6d7b7812677b545a">uniform_hash</a> (const void *key, size_t len, uint64_t seed)</td></tr>
+<tr class="separator:a8fe50f2e30103adf6d7b7812677b545a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac785d16a63879ff6c549c0dc07434cee"><td class="memTemplParams" colspan="2">template&lt;typename ContainerT &gt; </td></tr>
+<tr class="memitem:ac785d16a63879ff6c549c0dc07434cee"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ac785d16a63879ff6c549c0dc07434cee">tokenize</a> (char delim, <a class="el" href="namespaceVW.html#a909e5c86e4a38cb08ec00a0831dc105d">VW::string_view</a> s, ContainerT &amp;ret, bool allow_empty=false)</td></tr>
+<tr class="separator:ac785d16a63879ff6c549c0dc07434cee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1856ebb596653eee616c0c7a62717b68"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a1856ebb596653eee616c0c7a62717b68">ends_with</a> (<a class="el" href="namespaceVW.html#a909e5c86e4a38cb08ec00a0831dc105d">VW::string_view</a> full_string, <a class="el" href="namespaceVW.html#a909e5c86e4a38cb08ec00a0831dc105d">VW::string_view</a> ending)</td></tr>
+<tr class="memdesc:a1856ebb596653eee616c0c7a62717b68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a string ends with some other string.  <a href="#a1856ebb596653eee616c0c7a62717b68">More...</a><br /></td></tr>
+<tr class="separator:a1856ebb596653eee616c0c7a62717b68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eb2469f78155f44bebec956ed17d543"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a4eb2469f78155f44bebec956ed17d543">starts_with</a> (<a class="el" href="namespaceVW.html#a909e5c86e4a38cb08ec00a0831dc105d">VW::string_view</a> full_string, <a class="el" href="namespaceVW.html#a909e5c86e4a38cb08ec00a0831dc105d">VW::string_view</a> starting)</td></tr>
+<tr class="memdesc:a4eb2469f78155f44bebec956ed17d543"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a string starts with some other string.  <a href="#a4eb2469f78155f44bebec956ed17d543">More...</a><br /></td></tr>
+<tr class="separator:a4eb2469f78155f44bebec956ed17d543"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3895003f151896b7b116446b144ff8d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#aa3895003f151896b7b116446b144ff8d">wrap_text</a> (<a class="el" href="namespaceVW.html#a909e5c86e4a38cb08ec00a0831dc105d">VW::string_view</a> text, size_t width, bool wrap_after=true)</td></tr>
+<tr class="memdesc:aa3895003f151896b7b116446b144ff8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrap text by whole words with the given column width.  <a href="#aa3895003f151896b7b116446b144ff8d">More...</a><br /></td></tr>
+<tr class="separator:aa3895003f151896b7b116446b144ff8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b035bcd185bb470cfb4dbae9478facd"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a1b035bcd185bb470cfb4dbae9478facd">strerror_to_string</a> (int error_number)</td></tr>
+<tr class="separator:a1b035bcd185bb470cfb4dbae9478facd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ba263e76513d7a0c4c65248cfcabc37"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a1ba263e76513d7a0c4c65248cfcabc37">action_score_compare_lt</a> (const <a class="el" href="structACTION__SCORE_1_1action__score.html">ACTION_SCORE::action_score</a> &amp;left, const <a class="el" href="structACTION__SCORE_1_1action__score.html">ACTION_SCORE::action_score</a> &amp;right)</td></tr>
 <tr class="separator:a1ba263e76513d7a0c4c65248cfcabc37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8becc8ccd3691b01f9bd6872675c9e9"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ac8becc8ccd3691b01f9bd6872675c9e9">action_score_compare_gt</a> (const <a class="el" href="structACTION__SCORE_1_1action__score.html">ACTION_SCORE::action_score</a> &amp;left, const <a class="el" href="structACTION__SCORE_1_1action__score.html">ACTION_SCORE::action_score</a> &amp;right)</td></tr>
@@ -340,22 +356,6 @@ Functions</h2></td></tr>
 <tr class="separator:a8eb4eceaff6e66ed1dceef02ef291c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e4469cd06aa9e4ca5ff6d7f28de17de"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a0e4469cd06aa9e4ca5ff6d7f28de17de">to_string</a> (<a class="el" href="namespaceCCB.html#a58ee4b1ece77de222418e9eb75203cf5">CCB::example_type</a> type)</td></tr>
 <tr class="separator:a0e4469cd06aa9e4ca5ff6d7f28de17de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fe50f2e30103adf6d7b7812677b545a"><td class="memItemLeft" align="right" valign="top">VW_STD14_CONSTEXPR uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a8fe50f2e30103adf6d7b7812677b545a">uniform_hash</a> (const void *key, size_t len, uint64_t seed)</td></tr>
-<tr class="separator:a8fe50f2e30103adf6d7b7812677b545a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac785d16a63879ff6c549c0dc07434cee"><td class="memTemplParams" colspan="2">template&lt;typename ContainerT &gt; </td></tr>
-<tr class="memitem:ac785d16a63879ff6c549c0dc07434cee"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ac785d16a63879ff6c549c0dc07434cee">tokenize</a> (char delim, <a class="el" href="namespaceVW.html#a909e5c86e4a38cb08ec00a0831dc105d">VW::string_view</a> s, ContainerT &amp;ret, bool allow_empty=false)</td></tr>
-<tr class="separator:ac785d16a63879ff6c549c0dc07434cee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1856ebb596653eee616c0c7a62717b68"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a1856ebb596653eee616c0c7a62717b68">ends_with</a> (<a class="el" href="namespaceVW.html#a909e5c86e4a38cb08ec00a0831dc105d">VW::string_view</a> full_string, <a class="el" href="namespaceVW.html#a909e5c86e4a38cb08ec00a0831dc105d">VW::string_view</a> ending)</td></tr>
-<tr class="memdesc:a1856ebb596653eee616c0c7a62717b68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a string ends with some other string.  <a href="#a1856ebb596653eee616c0c7a62717b68">More...</a><br /></td></tr>
-<tr class="separator:a1856ebb596653eee616c0c7a62717b68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4eb2469f78155f44bebec956ed17d543"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a4eb2469f78155f44bebec956ed17d543">starts_with</a> (<a class="el" href="namespaceVW.html#a909e5c86e4a38cb08ec00a0831dc105d">VW::string_view</a> full_string, <a class="el" href="namespaceVW.html#a909e5c86e4a38cb08ec00a0831dc105d">VW::string_view</a> starting)</td></tr>
-<tr class="memdesc:a4eb2469f78155f44bebec956ed17d543"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a string starts with some other string.  <a href="#a4eb2469f78155f44bebec956ed17d543">More...</a><br /></td></tr>
-<tr class="separator:a4eb2469f78155f44bebec956ed17d543"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3895003f151896b7b116446b144ff8d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#aa3895003f151896b7b116446b144ff8d">wrap_text</a> (<a class="el" href="namespaceVW.html#a909e5c86e4a38cb08ec00a0831dc105d">VW::string_view</a> text, size_t width, bool wrap_after=true)</td></tr>
-<tr class="memdesc:aa3895003f151896b7b116446b144ff8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrap text by whole words with the given column width.  <a href="#aa3895003f151896b7b116446b144ff8d">More...</a><br /></td></tr>
-<tr class="separator:aa3895003f151896b7b116446b144ff8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b035bcd185bb470cfb4dbae9478facd"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a1b035bcd185bb470cfb4dbae9478facd">strerror_to_string</a> (int error_number)</td></tr>
-<tr class="separator:a1b035bcd185bb470cfb4dbae9478facd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50f7538dd71dc0487f0160a1cbe1777d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a50f7538dd71dc0487f0160a1cbe1777d">string_cpy</a> (char *dest, size_t dest_size, const char *src)</td></tr>
 <tr class="separator:a50f7538dd71dc0487f0160a1cbe1777d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a14838fa968bb4da6558105112c06d5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a5a14838fa968bb4da6558105112c06d5">file_open</a> (FILE **pf, const char *filename, const char *mode)</td></tr>
@@ -5818,7 +5818,7 @@ template&lt;typename ContainerT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 18 2022 16:12:48 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Apr 18 2022 19:19:13 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
