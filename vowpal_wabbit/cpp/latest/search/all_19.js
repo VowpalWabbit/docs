@@ -7,6 +7,7 @@ var searchData=
   ['_7ebase_5foption',['~base_option',['../structVW_1_1config_1_1base__option.html#a1ccaaadba500eee142ba5ce2665aba2b',1,'VW::config::base_option']]],
   ['_7ebeam',['~beam',['../classBeam_1_1beam.html#ad8860e13bb9bfce9474438d5183ec9fe',1,'Beam::beam']]],
   ['_7ecats_5ftree',['~cats_tree',['../structVW_1_1reductions_1_1cats_1_1cats__tree.html#ad801b645e2761d7214dac7cfe02be51c',1,'VW::reductions::cats::cats_tree']]],
+  ['_7ecb_5fexplore_5fadf_5flarge_5faction_5fspace',['~cb_explore_adf_large_action_space',['../structVW_1_1cb__explore__adf_1_1cb__explore__adf__large__action__space.html#a4b749d1b9b06d959fd69ccc1d90e7b52',1,'VW::cb_explore_adf::cb_explore_adf_large_action_space']]],
   ['_7ecbify_5fadf_5fdata',['~cbify_adf_data',['../structVW_1_1reductions_1_1cbify__adf__data.html#acbc70acc005dc4a6249afabf10b4ca2b',1,'VW::reductions::cbify_adf_data']]],
   ['_7edense_5fparameters',['~dense_parameters',['../classdense__parameters.html#a7e3fb6dec30515c9aa55406547185d93',1,'dense_parameters']]],
   ['_7eexample',['~example',['../structVW_1_1example.html#a3a690e93d7e8ec60aa827c93ee2fda47',1,'VW::example']]],
