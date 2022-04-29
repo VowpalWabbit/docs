@@ -22,8 +22,8 @@
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
     <link rel="stylesheet" type="text/css" href="../_static/nav.css" />
     
@@ -430,6 +430,11 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../command_line_args.html">
+   Command line options
+  </a>
+ </li>
 </ul>
 
   </div>
@@ -579,7 +584,7 @@ const thebe_selector_output = ".output, .cell_output"
 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="contextual-bandits-with-continuous-actions">
+  <section id="contextual-bandits-with-continuous-actions">
 <h1>Contextual Bandits with Continuous Actions<a class="headerlink" href="#contextual-bandits-with-continuous-actions" title="Permalink to this headline">#</a></h1>
 <p>In this tutorial we will simulate the scenario of personalizing a thermostat for a household with two rooms using Contextual Bandits in a continuous action space. The goal is to maximize user satisfaction with the thermostat quantified by measuring thermostat accuracy or reward (TR). The thermostat proposes a temperature and the user will either accept the temperature or adjust it to fit their needs.</p>
 <p>Let’s recall that in a CB setting, a data point has four components,</p>
@@ -721,7 +726,7 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 </div>
 </div>
 <p>We will instantiate a CB learner in VW and then simulate the thermostat interaction num_iterations number of times. In each interaction, we:</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Decide between ‘Living Room’ and ‘Bedroom’</p></li>
 <li><p>Decide time of day</p></li>
 <li><p>Pass context i.e. (room, time of day) to learner to get a temperature i.e. a value between min (0 degrees) and max (32 degrees) and probability of choosing that temperature</p></li>
@@ -812,7 +817,7 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/python_cats_15_0.png" src="../_images/python_cats_15_0.png" />
+<img alt="../_images/869b8a00b217c359da3fd82ba4b799f59f814fd858cc587c63e7f4d482f98acf.png" src="../_images/869b8a00b217c359da3fd82ba4b799f59f814fd858cc587c63e7f4d482f98acf.png" />
 </div>
 </div>
 </section>
@@ -835,7 +840,7 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/python_cats_17_0.png" src="../_images/python_cats_17_0.png" />
+<img alt="../_images/41f336552a2928101f4a44e5462050ab0729a25a4da9f5a27c7f9ac16524c36f.png" src="../_images/41f336552a2928101f4a44e5462050ab0729a25a4da9f5a27c7f9ac16524c36f.png" />
 </div>
 </div>
 </section>
@@ -1027,7 +1032,7 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 25
 </pre></div>
 </div>
-<img alt="../_images/python_cats_21_39.png" src="../_images/python_cats_21_39.png" />
+<img alt="../_images/63f07e205303b9a804b8aa821938af584813468f33823434adf6fcd6b106e8ef.png" src="../_images/63f07e205303b9a804b8aa821938af584813468f33823434adf6fcd6b106e8ef.png" />
 </div>
 </div>
 </section>
@@ -1138,7 +1143,7 @@ Running simulation for: --cats 2048 and --bandwidth 3
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 25
 </pre></div>
 </div>
-<img alt="../_images/python_cats_23_20.png" src="../_images/python_cats_23_20.png" />
+<img alt="../_images/42fee1e056d2b12d14724860043d0194bcaa827a1de9959e3e7b59c8c6a6e4b5.png" src="../_images/42fee1e056d2b12d14724860043d0194bcaa827a1de9959e3e7b59c8c6a6e4b5.png" />
 </div>
 </div>
 </section>
@@ -1150,19 +1155,19 @@ Running simulation for: --cats 2048 and --bandwidth 3
 <h3>Living Room<a class="headerlink" href="#living-room" title="Permalink to this headline">#</a></h3>
 <table class="colwidths-auto table">
 <thead>
-<tr class="row-odd"><th class="text-align:left head"><p></p></th>
-<th class="text-align:center head"><p>get_cost</p></th>
-<th class="text-align:center head"><p>get_cost_1</p></th>
+<tr class="row-odd"><th class="text-left head"><p></p></th>
+<th class="text-center head"><p>get_cost</p></th>
+<th class="text-center head"><p>get_cost_1</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:left"><p><strong>Morning</strong></p></td>
-<td class="text-align:center"><p>Cold</p></td>
-<td class="text-align:center"><p>Hot</p></td>
+<tr class="row-even"><td class="text-left"><p><strong>Morning</strong></p></td>
+<td class="text-center"><p>Cold</p></td>
+<td class="text-center"><p>Hot</p></td>
 </tr>
-<tr class="row-odd"><td class="text-align:left"><p><strong>Afternoon</strong></p></td>
-<td class="text-align:center"><p>Hot</p></td>
-<td class="text-align:center"><p>Cold</p></td>
+<tr class="row-odd"><td class="text-left"><p><strong>Afternoon</strong></p></td>
+<td class="text-center"><p>Hot</p></td>
+<td class="text-center"><p>Cold</p></td>
 </tr>
 </tbody>
 </table>
@@ -1171,19 +1176,19 @@ Running simulation for: --cats 2048 and --bandwidth 3
 <h3>Bedroom<a class="headerlink" href="#bedroom" title="Permalink to this headline">#</a></h3>
 <table class="colwidths-auto table">
 <thead>
-<tr class="row-odd"><th class="text-align:left head"><p></p></th>
-<th class="text-align:center head"><p>get_cost</p></th>
-<th class="text-align:center head"><p>get_cost_1</p></th>
+<tr class="row-odd"><th class="text-left head"><p></p></th>
+<th class="text-center head"><p>get_cost</p></th>
+<th class="text-center head"><p>get_cost_1</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:left"><p><strong>Morning</strong></p></td>
-<td class="text-align:center"><p>Hot</p></td>
-<td class="text-align:center"><p>Cold</p></td>
+<tr class="row-even"><td class="text-left"><p><strong>Morning</strong></p></td>
+<td class="text-center"><p>Hot</p></td>
+<td class="text-center"><p>Cold</p></td>
 </tr>
-<tr class="row-odd"><td class="text-align:left"><p><strong>Afternoon</strong></p></td>
-<td class="text-align:center"><p>Cold</p></td>
-<td class="text-align:center"><p>Cold</p></td>
+<tr class="row-odd"><td class="text-left"><p><strong>Afternoon</strong></p></td>
+<td class="text-center"><p>Cold</p></td>
+<td class="text-center"><p>Cold</p></td>
 </tr>
 </tbody>
 </table>
@@ -1309,7 +1314,7 @@ Running simulation for: --cats 2048 and --bandwidth 3
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/python_cats_29_0.png" src="../_images/python_cats_29_0.png" />
+<img alt="../_images/b887756d33975ad4ab8dd1233936f5229dacedd235ab65e60cc8f6f20e7bef00.png" src="../_images/b887756d33975ad4ab8dd1233936f5229dacedd235ab65e60cc8f6f20e7bef00.png" />
 </div>
 </div>
 </section>
@@ -1337,7 +1342,7 @@ Running simulation for: --cats 2048 and --bandwidth 3
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/python_cats_31_0.png" src="../_images/python_cats_31_0.png" />
+<img alt="../_images/dfe1cecdc4c6d695f920e2b3713c1777aa8e3ba8695cc15c49dda6495ba6d2f7.png" src="../_images/dfe1cecdc4c6d695f920e2b3713c1777aa8e3ba8695cc15c49dda6495ba6d2f7.png" />
 </div>
 </div>
 </section>
@@ -1531,7 +1536,7 @@ Running simulation for: --cats 2048 and --bandwidth 3
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 25
 </pre></div>
 </div>
-<img alt="../_images/python_cats_35_39.png" src="../_images/python_cats_35_39.png" />
+<img alt="../_images/8079b26455a9eaf54d67d5e1d1c5997fe85427b6e8a29a6fe58a7ae7acd477e7.png" src="../_images/8079b26455a9eaf54d67d5e1d1c5997fe85427b6e8a29a6fe58a7ae7acd477e7.png" />
 </div>
 </div>
 </section>
