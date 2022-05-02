@@ -4,6 +4,7 @@ var searchData=
   ['m_5fallow_5foverride',['m_allow_override',['../structVW_1_1config_1_1base__option.html#a0c2545e0f32e7c24169e2a254b296427',1,'VW::config::base_option']]],
   ['m_5fcurrent_5freduction_5ftint',['m_current_reduction_tint',['../structVW_1_1config_1_1options__i.html#aad92c069735f46dbcb905e07d87205fd',1,'VW::config::options_i']]],
   ['m_5fdefault_5ftint',['m_default_tint',['../structVW_1_1config_1_1options__i.html#af15964279f111bbd393f230dab04a3f3',1,'VW::config::options_i']]],
+  ['m_5fexperimental',['m_experimental',['../structVW_1_1config_1_1base__option.html#afbdad5ed3968707924dba0c6747cbd69',1,'VW::config::base_option']]],
   ['m_5fhelp',['m_help',['../structVW_1_1config_1_1base__option.html#a70385ec99c26aacdedbf5045ed41fce7',1,'VW::config::base_option']]],
   ['m_5fhidden_5ffrom_5fhelp',['m_hidden_from_help',['../structVW_1_1config_1_1base__option.html#a1c6543330395313d90b20c6769ffef2a',1,'VW::config::base_option']]],
   ['m_5fkeep',['m_keep',['../structVW_1_1config_1_1base__option.html#aea6aa73541aa87eac054242141ecba05',1,'VW::config::base_option']]],

@@ -95,6 +95,7 @@ var searchData=
   ['exclusions',['exclusions',['../structVW_1_1reductions_1_1automl_1_1exclusion__config.html#ae857a2d3e34884b0da756320a3f1c897',1,'VW::reductions::automl::exclusion_config']]],
   ['expand',['EXPAND',['../vw__exception_8h.html#ae4b532a93c757194ec73b6790a3e6b1f',1,'vw_exception.h']]],
   ['expand_5fquadratics_5fwildcard_5finteractions',['expand_quadratics_wildcard_interactions',['../namespaceINTERACTIONS.html#afaa06b631fa37347e7bacaa8b6ba67fa',1,'INTERACTIONS']]],
+  ['experimental',['experimental',['../structVW_1_1config_1_1option__builder.html#a3fa79c5f73be001800f949747a18bf8a',1,'VW::config::option_builder']]],
   ['experimenting',['Experimenting',['../namespaceVW_1_1reductions_1_1automl.html#a73822d9332c63d629d0c7ca5121706e3affb05b3e66b30a7ebbe221fc1c8599ef',1,'VW::reductions::automl']]],
   ['explicit_5fincluded_5factions',['explicit_included_actions',['../structCCB_1_1label.html#af7a2d5daa79b468b8671712a4a01835b',1,'CCB::label::explicit_included_actions()'],['../structCCB_1_1reduction__features.html#a7b4dc06b9e1293fc465d99883454f253',1,'CCB::reduction_features::explicit_included_actions()']]],
   ['exploration',['exploration',['../namespaceexploration.html',1,'']]],

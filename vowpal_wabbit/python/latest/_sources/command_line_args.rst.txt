@@ -24,6 +24,7 @@ quiet
 
 
 
+
 Don't output diagnostics and progress updates. Supplying this implies --log_level off and --driver_output_off. Supplying this overrides an explicit log_level argument.
 
 
@@ -34,6 +35,7 @@ driver_output_off
 .. code-block::
 
     --driver_output_off
+
 
 
 
@@ -50,6 +52,7 @@ driver_output
 
 
 
+
 Specify the stream to output driver output to
 
 
@@ -60,6 +63,7 @@ log_level
 .. code-block::
 
     --log_level <critical|error|info|off|warn> (default: info)
+
 
 
 
@@ -76,6 +80,7 @@ log_output
 
 
 
+
 Specify the stream to output log messages to. In the past VW's choice of stream for logging messages wasn't consistent. Supplying compat will maintain that old behavior. Compat is now deprecated so it is recommended that stdout or stderr is chosen.
 
 
@@ -86,6 +91,7 @@ limit_output
 .. code-block::
 
     --limit_output <uint> (default: 0)
+
 
 
 
@@ -103,6 +109,7 @@ ring_size
 .. code-block::
 
     --ring_size <int> (default: 256)
+
 
 
 
@@ -124,6 +131,7 @@ example_queue_limit
 
 
 
+
 Max number of examples to store after parsing but before the learner has processed. Rarely needs to be changed.
 
 
@@ -134,6 +142,7 @@ strict_parse
 .. code-block::
 
     --strict_parse
+
 
 
 
@@ -174,6 +183,7 @@ initial_regressor
 
 
 
+
 Initial regressor(s)
 
 
@@ -184,6 +194,7 @@ initial_weight
 .. code-block::
 
     --initial_weight <float> (default: 0)
+
 
 
 
@@ -200,6 +211,7 @@ random_weights
 
 
 
+
 Make initial weights random
 
 
@@ -210,6 +222,7 @@ normal_weights
 .. code-block::
 
     --normal_weights
+
 
 
 
@@ -226,6 +239,7 @@ truncated_normal_weights
 
 
 
+
 Make initial weights truncated normal
 
 
@@ -239,6 +253,7 @@ sparse_weights
 
 
 
+
 Use a sparse datastructure for weights
 
 
@@ -249,6 +264,7 @@ input_feature_regularizer
 .. code-block::
 
     --input_feature_regularizer <str>
+
 
 
 
@@ -282,6 +298,7 @@ span_server
 
 
 
+
 Location of server for setting up spanning tree
 
 
@@ -292,6 +309,7 @@ unique_id
 .. code-block::
 
     --unique_id <uint> (default: 0)
+
 
 
 
@@ -311,6 +329,7 @@ total
 
 
 
+
 Total number of nodes used in cluster parallel job
 
 
@@ -321,6 +340,7 @@ node
 .. code-block::
 
     --node <uint> (default: 0)
+
 
 
 
@@ -336,6 +356,7 @@ span_server_port
 .. code-block::
 
     --span_server_port <int> (default: 26543)
+
 
 
 
@@ -356,6 +377,7 @@ version
 
 
 
+
 Version information
 
 
@@ -366,6 +388,7 @@ audit
 .. code-block::
 
     --audit, -a
+
 
 
 
@@ -384,6 +407,7 @@ progress
 .. code-block::
 
     --progress, -P <str>
+
 
 
 
@@ -408,6 +432,7 @@ dry_run
 
 
 
+
 Parse arguments and print corresponding metadata. Will not execute driver
 
 
@@ -418,6 +443,7 @@ help
 .. code-block::
 
     --help, -h
+
 
 
 
@@ -435,6 +461,7 @@ random_seed
 .. code-block::
 
     --random_seed <uint> (default: 0)
+
 
 
 
@@ -461,6 +488,7 @@ hash
     </span>
 
 
+
 How to hash the features
 
 
@@ -480,6 +508,7 @@ hash_seed
     </span>
 
 
+
 Seed for hash function
 
 
@@ -497,6 +526,7 @@ ignore
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Ignore namespaces beginning with character <arg>
@@ -521,6 +551,7 @@ ignore_linear
     </span>
 
 
+
 Ignore namespaces beginning with character <arg> for linear terms only
 
 
@@ -538,6 +569,7 @@ keep
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Keep namespaces beginning with character <arg>
@@ -561,6 +593,7 @@ redefine
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Redefine namespaces beginning with characters of std::string S as namespace N. <arg> shall be in form 'N:=S' where := is operator. Empty N or S are treated as default namespace. Use ':' as a wildcard in S.
@@ -594,6 +627,7 @@ bit_precision
 
 
 
+
 Number of bits in the feature table
 
 
@@ -604,6 +638,7 @@ noconstant
 .. code-block::
 
     --noconstant
+
 
 
 
@@ -620,6 +655,7 @@ constant
 
 
 
+
 Set initial value of constant
 
 
@@ -630,6 +666,7 @@ ngram
 .. code-block::
 
     --ngram <list[str]>
+
 
 
 
@@ -658,6 +695,7 @@ skips
 
 
 
+
 Generate skips in N grams. This in conjunction with the ngram tag can be used to generate generalized n-skip-k-gram. To generate n-skips for a single namespace 'foo', arg should be fN.
 
 
@@ -668,6 +706,7 @@ feature_limit
 .. code-block::
 
     --feature_limit <list[str]>
+
 
 
 
@@ -690,6 +729,7 @@ affix
     </span>
 
 
+
 Generate prefixes/suffixes of features; argument '+2a,-3b,+1' means generate 2-char prefixes for namespace a, 3-char suffixes for b and 1 char prefixes for default namespace
 
 
@@ -707,6 +747,7 @@ spelling
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Compute spelling features for a give namespace (use '_' for default namespace)
@@ -728,6 +769,7 @@ dictionary
     </span>
 
 
+
 Read a dictionary for additional features (arg either 'x:file' or just 'file')
 
 
@@ -738,6 +780,7 @@ dictionary_path
 .. code-block::
 
     --dictionary_path <list[str]>
+
 
 
 
@@ -758,6 +801,7 @@ interactions
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Create feature interactions of any level between namespaces
@@ -788,7 +832,16 @@ experimental_full_name_interactions
     </span>
 
 
-EXPERIMENTAL: Create feature interactions of any level between namespaces by specifying the full name of each namespace.
+
+.. raw:: html
+
+    <a href="https://github.com/VowpalWabbit/vowpal_wabbit/wiki/Experimental">
+        <span class="option-tag option-warning">
+            <abbr title="This option is subject to change.">experimental</abbr>
+        </span>
+    </a>
+
+Create feature interactions of any level between namespaces by specifying the full name of each namespace.
 
 
 
@@ -798,6 +851,7 @@ permutations
 .. code-block::
 
     --permutations
+
 
 
 
@@ -833,6 +887,7 @@ leave_duplicate_interactions
 
 
 
+
 Don't remove interactions with duplicate combinations of namespaces. For ex. this is a duplicate: '-q ab -q ba' and a lot more in '-q ::'.
 
 
@@ -850,6 +905,7 @@ quadratic
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Create and use quadratic features
@@ -896,6 +952,7 @@ cubic
     </span>
 
 
+
 Create and use cubic features
 
 Is similar to -q, but it takes three letters as the argument, thus enabling
@@ -921,6 +978,7 @@ testonly
 
 
 
+
 Ignore label information and just test
 
 Makes VW run in testing mode. The labels are ignored so this is useful for
@@ -936,6 +994,7 @@ holdout_off
 .. code-block::
 
     --holdout_off
+
 
 
 
@@ -959,6 +1018,7 @@ holdout_period
 
 
 
+
 Holdout period for test only
 
 Specifies the period of holdout example used for holdout validation in
@@ -977,6 +1037,7 @@ holdout_after
 
 
 
+
 Holdout after n training examples, default off (disables holdout_period)
 
 
@@ -987,6 +1048,7 @@ early_terminate
 .. code-block::
 
     --early_terminate <uint> (default: 3)
+
 
 
 
@@ -1003,6 +1065,7 @@ passes
 
 
 
+
 Number of Training Passes
 
 
@@ -1013,6 +1076,7 @@ initial_pass_length
 .. code-block::
 
     --initial_pass_length <int> (default: -1)
+
 
 
 
@@ -1035,6 +1099,7 @@ examples
 
 
 
+
 Number of examples to parse. -1 for no limit
 
 
@@ -1045,6 +1110,7 @@ min_prediction
 .. code-block::
 
     --min_prediction <float>
+
 
 
 
@@ -1065,6 +1131,7 @@ max_prediction
 
 
 
+
 Largest prediction to output
 
 ``--min_prediction`` and ``--max_prediction`` control the range of the
@@ -1082,6 +1149,7 @@ sort_features
 
 
 
+
 Turn this on to disregard order in which features have been defined. This will lead to smaller cache sizes
 
 
@@ -1092,6 +1160,7 @@ loss_function
 .. code-block::
 
     --loss_function <classic|expectile|hinge|logistic|poisson|quantile|squared> (default: squared)
+
 
 
 
@@ -1108,6 +1177,7 @@ quantile_tau
 
 
 
+
 Parameter \tau associated with Quantile loss. Defaults to 0.5
 
 
@@ -1118,6 +1188,7 @@ l1
 .. code-block::
 
     --l1 <float> (default: 0)
+
 
 
 
@@ -1134,6 +1205,7 @@ l2
 
 
 
+
 L_2 lambda
 
 
@@ -1144,6 +1216,7 @@ no_bias_regularization
 .. code-block::
 
     --no_bias_regularization
+
 
 
 
@@ -1166,6 +1239,7 @@ named_labels
     </span>
 
 
+
 Use names for labels (multiclass, etc.) rather than integers, argument specified all possible labels, comma-sep, eg "--named_labels Noun,Verb,Adj,Punc"
 
 
@@ -1183,6 +1257,7 @@ final_regressor
 
 
 
+
 Final regressor
 
 
@@ -1196,6 +1271,7 @@ readable_model
 
 
 
+
 Output human-readable final regressor with numeric features
 
 
@@ -1206,6 +1282,7 @@ invert_hash
 .. code-block::
 
     --invert_hash <str>
+
 
 
 
@@ -1234,7 +1311,16 @@ dump_json_weights_experimental
 
 
 
-Experimental: Output json representation of model parameters.
+
+.. raw:: html
+
+    <a href="https://github.com/VowpalWabbit/vowpal_wabbit/wiki/Experimental">
+        <span class="option-tag option-warning">
+            <abbr title="This option is subject to change.">experimental</abbr>
+        </span>
+    </a>
+
+Output json representation of model parameters.
 
 
 
@@ -1247,7 +1333,16 @@ dump_json_weights_include_feature_names_experimental
 
 
 
-Experimental: Whether to include feature names in json output
+
+.. raw:: html
+
+    <a href="https://github.com/VowpalWabbit/vowpal_wabbit/wiki/Experimental">
+        <span class="option-tag option-warning">
+            <abbr title="This option is subject to change.">experimental</abbr>
+        </span>
+    </a>
+
+Whether to include feature names in json output
 
 
 
@@ -1260,7 +1355,16 @@ dump_json_weights_include_extra_online_state_experimental
 
 
 
-Experimental: Whether to include extra online state in json output
+
+.. raw:: html
+
+    <a href="https://github.com/VowpalWabbit/vowpal_wabbit/wiki/Experimental">
+        <span class="option-tag option-warning">
+            <abbr title="This option is subject to change.">experimental</abbr>
+        </span>
+    </a>
+
+Whether to include extra online state in json output
 
 
 
@@ -1270,6 +1374,7 @@ predict_only_model
 .. code-block::
 
     --predict_only_model
+
 
 
 
@@ -1286,6 +1391,7 @@ save_resume
 
 
 
+
 This flag is now deprecated and models can continue learning by default
 
 
@@ -1299,6 +1405,7 @@ preserve_performance_counters
 
 
 
+
 Reset performance counters when warmstarting
 
 
@@ -1309,6 +1416,7 @@ save_per_pass
 .. code-block::
 
     --save_per_pass
+
 
 
 
@@ -1327,6 +1435,7 @@ output_feature_regularizer_binary
 
 
 
+
 Per feature regularization output file
 
 
@@ -1340,6 +1449,7 @@ output_feature_regularizer_text
 
 
 
+
 Per feature regularization output file, in text
 
 
@@ -1350,6 +1460,7 @@ id
 .. code-block::
 
     --id <str>
+
 
 
 
@@ -1421,6 +1532,7 @@ learning_rate
     </span>
 
 
+
 Set learning rate
 
 
@@ -1440,6 +1552,7 @@ power_t
     </span>
 
 
+
 T power value
 
 
@@ -1450,6 +1563,7 @@ decay_learning_rate
 .. code-block::
 
     --decay_learning_rate <float> (default: 1)
+
 
 
 
@@ -1466,6 +1580,7 @@ initial_t
 
 
 
+
 Initial t value
 
 
@@ -1476,6 +1591,7 @@ feature_mask
 .. code-block::
 
     --feature_mask <str>
+
 
 
 
@@ -1497,6 +1613,7 @@ predictions
 
 
 
+
 File to output predictions to
 
 ``-p /dev/stdout`` will is a handy trick for seeing outputs on linux/unix platforms.
@@ -1509,6 +1626,7 @@ raw_predictions
 .. code-block::
 
     --raw_predictions, -r <str>
+
 
 
 
@@ -1556,6 +1674,7 @@ data
 
 
 
+
 Example set
 
 
@@ -1566,6 +1685,7 @@ daemon
 .. code-block::
 
     --daemon
+
 
 
 
@@ -1582,6 +1702,7 @@ foreground
 
 
 
+
 In persistent daemon mode, do not run in the background
 
 
@@ -1592,6 +1713,7 @@ port
 .. code-block::
 
     --port <uint>
+
 
 
 
@@ -1608,6 +1730,7 @@ num_children
 
 
 
+
 Number of children for persistent daemon mode
 
 
@@ -1618,6 +1741,7 @@ pid_file
 .. code-block::
 
     --pid_file <str>
+
 
 
 
@@ -1634,6 +1758,7 @@ port_file
 
 
 
+
 Write port used in persistent daemon mode
 
 
@@ -1644,6 +1769,7 @@ cache
 .. code-block::
 
     --cache, -c
+
 
 
 
@@ -1660,6 +1786,7 @@ cache_file
 
 
 
+
 The location(s) of cache_file
 
 
@@ -1670,6 +1797,7 @@ json
 .. code-block::
 
     --json
+
 
 
 
@@ -1686,6 +1814,7 @@ dsjson
 
 
 
+
 Enable Decision Service JSON parsing
 
 
@@ -1699,6 +1828,7 @@ kill_cache
 
 
 
+
 Do not reuse existing cache: create a new one always
 
 
@@ -1709,6 +1839,7 @@ compressed
 .. code-block::
 
     --compressed
+
 
 
 
@@ -1729,6 +1860,7 @@ no_stdin
 
 
 
+
 Do not default to reading from stdin
 
 
@@ -1739,6 +1871,7 @@ no_daemon
 .. code-block::
 
     --no_daemon
+
 
 
 
@@ -1761,6 +1894,7 @@ chain_hash
     </span>
 
 
+
 Enable chain hash in JSON for feature name and string feature value. e.g. {'A': {'B': 'C'}} is hashed as A^B^C.
 
 
@@ -1773,6 +1907,15 @@ flatbuffer
     --flatbuffer
 
 
+
+
+.. raw:: html
+
+    <a href="https://github.com/VowpalWabbit/vowpal_wabbit/wiki/Experimental">
+        <span class="option-tag option-warning">
+            <abbr title="This option is subject to change.">experimental</abbr>
+        </span>
+    </a>
 
 Data file will be interpreted as a flatbuffer file
 
@@ -1793,6 +1936,7 @@ dont_output_best_constant
 .. code-block::
 
     --dont_output_best_constant
+
 
 
 
@@ -1818,6 +1962,7 @@ extra_metrics
     <span class="option-tag">
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
+
 
 Specify filename to write metrics to. Note: There is no fixed schema
 
@@ -1847,6 +1992,7 @@ audit_regressor
     <span class="option-tag">
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
+
 
 Stores feature names and their regressor values. Same dataset must be used for both regressor training and this mode.
 
@@ -1884,6 +2030,7 @@ search
     </span>
 
 
+
 Use learning to search, argument=maximum action id or 0 for LDF
 
 
@@ -1909,6 +2056,7 @@ search_task
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 The search task (use "--search_task list" to get a list of available tasks)
 
 
@@ -1926,6 +2074,7 @@ search_metatask
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 The search metatask (use "--search_metatask list" to get a list of available metatasks Note: a valid search_task needs to be supplied in addition for this to output.)
@@ -1947,6 +2096,7 @@ search_interpolation
     </span>
 
 
+
 At what level should interpolation happen? [*data|policy]
 
 
@@ -1957,6 +2107,7 @@ search_rollout
 .. code-block::
 
     --search_rollout <learn|mix|mix_per_roll|mix_per_state|none|oracle|policy|ref>
+
 
 
 
@@ -1973,6 +2124,7 @@ search_rollin
 
 
 
+
 How should past trajectories be generated
 
 
@@ -1983,6 +2135,7 @@ search_passes_per_policy
 .. code-block::
 
     --search_passes_per_policy <uint> (default: 1)
+
 
 
 
@@ -1999,6 +2152,7 @@ search_beta
 
 
 
+
 Interpolation rate for policies (only valid for search_interpolation=policy)
 
 
@@ -2009,6 +2163,7 @@ search_alpha
 .. code-block::
 
     --search_alpha <float> (default: 1.000000013351432e-10)
+
 
 
 
@@ -2025,6 +2180,7 @@ search_total_nb_policies
 
 
 
+
 If we are going to train the policies through multiple separate calls to vw, we need to specify this parameter and tell vw how many policies are eventually going to be trained
 
 
@@ -2035,6 +2191,7 @@ search_trained_nb_policies
 .. code-block::
 
     --search_trained_nb_policies <uint>
+
 
 
 
@@ -2051,6 +2208,7 @@ search_allowed_transitions
 
 
 
+
 Read file of allowed transitions [def: all transitions are allowed]
 
 
@@ -2061,6 +2219,7 @@ search_subsample_time
 .. code-block::
 
     --search_subsample_time <float>
+
 
 
 
@@ -2083,6 +2242,7 @@ search_neighbor_features
     </span>
 
 
+
 Copy features from neighboring lines. argument looks like: '-1:a,+2' meaning copy previous line namespace a and next next line from namespace _unnamed_, where ',' separates them
 
 
@@ -2093,6 +2253,7 @@ search_rollout_num_steps
 .. code-block::
 
     --search_rollout_num_steps <uint> (default: 0)
+
 
 
 
@@ -2115,6 +2276,7 @@ search_history_length
     </span>
 
 
+
 Some tasks allow you to specify how much history their depend on; specify that here
 
 
@@ -2125,6 +2287,7 @@ search_no_caching
 .. code-block::
 
     --search_no_caching
+
 
 
 
@@ -2141,6 +2304,7 @@ search_xv
 
 
 
+
 Train two separate policies, alternating prediction/learning
 
 
@@ -2151,6 +2315,7 @@ search_perturb_oracle
 .. code-block::
 
     --search_perturb_oracle <float> (default: 0)
+
 
 
 
@@ -2167,6 +2332,7 @@ search_linear_ordering
 
 
 
+
 Insist on generating examples in linear order (def: hoopla permutation)
 
 
@@ -2180,6 +2346,7 @@ search_active_verify
 
 
 
+
 Verify that active learning is doing the right thing (arg = multiplier, should be = cost_range * range_c)
 
 
@@ -2190,6 +2357,7 @@ search_save_every_k_runs
 .. code-block::
 
     --search_save_every_k_runs <uint> (default: 0)
+
 
 
 
@@ -2222,6 +2390,7 @@ replay_c
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Use experience replay at a specified level [b=classification/regression, m=multiclass, c=cost sensitive] with specified buffer size
 
 
@@ -2232,6 +2401,7 @@ replay_c_count
 .. code-block::
 
     --replay_c_count <uint> (default: 1)
+
 
 
 
@@ -2264,6 +2434,7 @@ ot
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Offset tree with <k> labels
 
 
@@ -2278,6 +2449,7 @@ cb_to_cbadf
 .. code-block::
 
     --cb_to_cbadf <uint>
+
 
 
 
@@ -2300,6 +2472,7 @@ cb
     </span>
 
 
+
 Maps cb_adf to cb. Disable with cb_force_legacy
 
 
@@ -2317,6 +2490,7 @@ cb_explore
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Translate cb explore to cb_explore_adf. Disable with cb_force_legacy
@@ -2338,6 +2512,7 @@ cbify
     </span>
 
 
+
 Translate cbify to cb_adf. Disable with cb_force_legacy
 
 
@@ -2355,6 +2530,7 @@ cb_force_legacy
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Default to non-adf cb implementation (cb_algs)
@@ -2386,6 +2562,7 @@ cbify_ldf
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Convert csoaa_ldf into a contextual bandit problem
 
 
@@ -2399,6 +2576,7 @@ loss0
 
 
 
+
 Loss for correct label
 
 
@@ -2409,6 +2587,7 @@ loss1
 .. code-block::
 
     --loss1 <float> (default: 1)
+
 
 
 
@@ -2441,6 +2620,7 @@ cbify
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Convert multiclass on <k> classes into a contextual bandit problem
 
 
@@ -2454,6 +2634,7 @@ cbify_cs
 
 
 
+
 Consume cost-sensitive classification examples instead of multiclass
 
 
@@ -2464,6 +2645,7 @@ cbify_reg
 .. code-block::
 
     --cbify_reg
+
 
 
 
@@ -2486,6 +2668,7 @@ cats
     </span>
 
 
+
 Continuous action tree with smoothing
 
 
@@ -2503,6 +2686,7 @@ cb_discrete
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Discretizes continuous space and adds cb_explore as option
@@ -2524,6 +2708,7 @@ min_value
     </span>
 
 
+
 Minimum continuous value
 
 
@@ -2543,6 +2728,7 @@ max_value
     </span>
 
 
+
 Maximum continuous value
 
 
@@ -2553,6 +2739,7 @@ loss_option
 .. code-block::
 
     --loss_option <int> (default: 0)
+
 
 
 
@@ -2569,6 +2756,7 @@ loss_report
 
 
 
+
 Loss report option - 0:normalized, 1:denormalized
 
 
@@ -2579,6 +2767,7 @@ loss_01_ratio
 .. code-block::
 
     --loss_01_ratio <float> (default: 0.10000000149011612)
+
 
 
 
@@ -2595,6 +2784,7 @@ loss0
 
 
 
+
 Loss for correct label
 
 
@@ -2605,6 +2795,7 @@ loss1
 .. code-block::
 
     --loss1 <float> (default: 1)
+
 
 
 
@@ -2625,6 +2816,7 @@ flip_loss_sign
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Flip sign of loss (use reward instead of loss)
@@ -2656,6 +2848,7 @@ cats
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Number of discrete actions <k> for cats
 
 
@@ -2673,6 +2866,7 @@ min_value
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Minimum continuous value
@@ -2694,6 +2888,7 @@ max_value
     </span>
 
 
+
 Maximum continuous value
 
 
@@ -2711,6 +2906,7 @@ bandwidth
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Bandwidth (radius) of randomization around discrete actions in terms of continuous range. By default will be set to half of the continuous action unit-range resulting in smoothing that stays inside the action space unit-range:
@@ -2744,6 +2940,7 @@ sample_pdf
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Sample a pdf and pick a continuous valued action
 
 
@@ -2772,6 +2969,7 @@ cats_pdf
     <span class="option-tag">
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
+
 
 Number of tree labels <k> for cats_pdf
 
@@ -2802,6 +3000,7 @@ cb_explore_pdf
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Sample a pdf and pick a continuous valued action
 
 
@@ -2819,6 +3018,7 @@ epsilon
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Epsilon-greedy exploration
@@ -2840,6 +3040,7 @@ min_value
     </span>
 
 
+
 Min value for continuous range
 
 
@@ -2859,6 +3060,7 @@ max_value
     </span>
 
 
+
 Max value for continuous range
 
 
@@ -2876,6 +3078,7 @@ first_only
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Use user provided first action or user provided pdf or uniform random
@@ -2907,6 +3110,7 @@ pmf_to_pdf
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Number of discrete actions <k> for pmf_to_pdf
 
 
@@ -2924,6 +3128,7 @@ min_value
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Minimum continuous value
@@ -2945,6 +3150,7 @@ max_value
     </span>
 
 
+
 Maximum continuous value
 
 
@@ -2962,6 +3168,7 @@ bandwidth
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Bandwidth (radius) of randomization around discrete actions in terms of continuous range. By default will be set to half of the continuous action unit-range resulting in smoothing that stays inside the action space unit-range:
@@ -2983,6 +3190,7 @@ first_only
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Use user provided first action or user provided pdf or uniform random
@@ -3014,6 +3222,7 @@ get_pmf
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Convert a single multiclass prediction to a pmf
 
 
@@ -3043,6 +3252,7 @@ warm_cb
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Convert multiclass on <k> classes into a contextual bandit problem
 
 
@@ -3053,6 +3263,7 @@ warm_cb_cs
 .. code-block::
 
     --warm_cb_cs
+
 
 
 
@@ -3069,6 +3280,7 @@ loss0
 
 
 
+
 Loss for correct label
 
 
@@ -3082,6 +3294,7 @@ loss1
 
 
 
+
 Loss for incorrect label
 
 
@@ -3092,6 +3305,7 @@ warm_start
 .. code-block::
 
     --warm_start <uint> (default: 0)
+
 
 
 
@@ -3114,6 +3328,7 @@ epsilon
     </span>
 
 
+
 Epsilon-greedy exploration
 
 
@@ -3124,6 +3339,7 @@ interaction
 .. code-block::
 
     --interaction <uint> (default: 4294967295)
+
 
 
 
@@ -3140,6 +3356,7 @@ warm_start_update
 
 
 
+
 Indicator of warm start updates
 
 
@@ -3150,6 +3367,7 @@ interaction_update
 .. code-block::
 
     --interaction_update
+
 
 
 
@@ -3166,6 +3384,7 @@ corrupt_type_warm_start
 
 
 
+
 Type of label corruption in the warm start phase (1: uniformly at random, 2: circular, 3: replacing with overwriting label)
 
 
@@ -3176,6 +3395,7 @@ corrupt_prob_warm_start
 .. code-block::
 
     --corrupt_prob_warm_start <float> (default: 0)
+
 
 
 
@@ -3192,6 +3412,7 @@ choices_lambda
 
 
 
+
 The number of candidate lambdas to aggregate (lambda is the importance weight parameter between the two sources)
 
 
@@ -3202,6 +3423,7 @@ lambda_scheme
 .. code-block::
 
     --lambda_scheme <1|2|3|4> (default: 1)
+
 
 
 
@@ -3218,6 +3440,7 @@ overwrite_label
 
 
 
+
 The label used by type 3 corruptions (overwriting)
 
 
@@ -3228,6 +3451,7 @@ sim_bandit
 .. code-block::
 
     --sim_bandit
+
 
 
 
@@ -3260,6 +3484,7 @@ slates
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Enable slates reduction
 
 
@@ -3289,6 +3514,7 @@ ccb_explore_adf
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Do Conditional Contextual Bandit learning with multiline action dependent features
 
 
@@ -3302,6 +3528,7 @@ all_slots_loss
 
 
 
+
 Report average loss from all slots
 
 
@@ -3312,6 +3539,7 @@ no_predict
 .. code-block::
 
     --no_predict
+
 
 
 
@@ -3332,6 +3560,7 @@ cb_type
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Contextual bandit method to use
@@ -3363,6 +3592,7 @@ epsilon_decay
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Use decay of exploration reduction
 
 
@@ -3380,6 +3610,7 @@ model_count
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Set number of exploration models
@@ -3401,6 +3632,7 @@ min_scope
     </span>
 
 
+
 Minimum example count of model before removing
 
 
@@ -3420,6 +3652,7 @@ epsilon_decay_alpha
     </span>
 
 
+
 Set confidence interval for champion change
 
 
@@ -3437,6 +3670,7 @@ epsilon_decay_tau
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Time constant for count decay
@@ -3468,6 +3702,7 @@ explore_eval
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Evaluate explore_eval adf policies
 
 
@@ -3478,6 +3713,7 @@ multiplier
 .. code-block::
 
     --multiplier <float>
+
 
 
 
@@ -3510,6 +3746,7 @@ cb_sample
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Sample from CB pdf and swap top action
 
 
@@ -3539,6 +3776,7 @@ cb_dro
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Use DRO for cb learning
 
 
@@ -3556,6 +3794,7 @@ cb_dro_alpha
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Confidence level for cb dro
@@ -3577,6 +3816,7 @@ cb_dro_tau
     </span>
 
 
+
 Time constant for count decay for cb dro
 
 
@@ -3594,6 +3834,7 @@ cb_dro_wmax
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Maximum importance weight for cb_dro
@@ -3625,6 +3866,7 @@ cb_explore_adf
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Online explore-exploit for a contextual bandit problem with multiline action dependent features
 
 
@@ -3642,6 +3884,7 @@ epsilon
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Epsilon-greedy exploration
@@ -3669,6 +3912,7 @@ bag
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Bagging-based exploration
 
 
@@ -3688,6 +3932,7 @@ greedify
     </span>
 
 
+
 Always update first policy once in bagging
 
 
@@ -3705,6 +3950,7 @@ first_only
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Only explore the first action in a tie-breaking event
@@ -3736,6 +3982,7 @@ cb_explore_adf
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Online explore-exploit for a contextual bandit problem with multiline action dependent features
 
 
@@ -3761,6 +4008,7 @@ cover
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Online cover based exploration
 
 
@@ -3778,6 +4026,7 @@ psi
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Disagreement parameter for cover
@@ -3799,6 +4048,7 @@ nounif
     </span>
 
 
+
 Do not explore uniformly on zero-probability actions in cover
 
 
@@ -3816,6 +4066,7 @@ first_only
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Only explore the first action in a tie-breaking event
@@ -3837,6 +4088,7 @@ cb_type
     </span>
 
 
+
 Contextual bandit method to use
 
 
@@ -3854,6 +4106,7 @@ epsilon
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Epsilon-greedy exploration
@@ -3885,6 +4138,7 @@ cb_explore_adf
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Online explore-exploit for a contextual bandit problem with multiline action dependent features
 
 
@@ -3910,6 +4164,7 @@ first
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Tau-first exploration
 
 
@@ -3927,6 +4182,7 @@ epsilon
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Epsilon-greedy exploration
@@ -3958,6 +4214,7 @@ cb_explore_adf
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Online explore-exploit for a contextual bandit problem with multiline action dependent features
 
 
@@ -3975,6 +4232,7 @@ epsilon
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Epsilon-greedy exploration
@@ -4002,6 +4260,7 @@ synthcover
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Use synthetic cover exploration
 
 
@@ -4021,6 +4280,7 @@ synthcoverpsi
     </span>
 
 
+
 Exploration reward bonus
 
 
@@ -4038,6 +4298,7 @@ synthcoversize
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Number of policies in cover
@@ -4069,6 +4330,7 @@ cb_explore_adf
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Online explore-exploit for a contextual bandit problem with multiline action dependent features
 
 
@@ -4094,6 +4356,7 @@ squarecb
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 SquareCB exploration
 
 
@@ -4111,6 +4374,7 @@ gamma_scale
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Sets SquareCB greediness parameter to gamma=[gamma_scale]*[num examples]^1/2
@@ -4132,6 +4396,7 @@ gamma_exponent
     </span>
 
 
+
 Exponent on [num examples] in SquareCB greediness parameter gamma
 
 
@@ -4149,6 +4414,7 @@ elim
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Only perform SquareCB exploration over plausible actions (computed via RegCB strategy)
@@ -4170,6 +4436,7 @@ mellowness
     </span>
 
 
+
 Mellowness parameter c_0 for computing plausible action set. Only used with --elim
 
 
@@ -4187,6 +4454,7 @@ cb_min_cost
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Lower bound on cost. Only used with --elim
@@ -4208,6 +4476,7 @@ cb_max_cost
     </span>
 
 
+
 Upper bound on cost. Only used with --elim
 
 
@@ -4225,6 +4494,7 @@ cb_type
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Contextual bandit method to use. SquareCB only supports supervised regression (mtr)
@@ -4256,6 +4526,7 @@ cb_explore_adf
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Online explore-exploit for a contextual bandit problem with multiline action dependent features
 
 
@@ -4281,6 +4552,7 @@ regcb
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 RegCB-elim exploration
 
 
@@ -4298,6 +4570,7 @@ regcbopt
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 RegCB optimistic exploration
@@ -4319,6 +4592,7 @@ mellowness
     </span>
 
 
+
 RegCB mellowness parameter c_0. Default 0.1
 
 
@@ -4336,6 +4610,7 @@ cb_min_cost
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Lower bound on cost
@@ -4357,6 +4632,7 @@ cb_max_cost
     </span>
 
 
+
 Upper bound on cost
 
 
@@ -4376,6 +4652,7 @@ first_only
     </span>
 
 
+
 Only explore the first action in a tie-breaking event
 
 
@@ -4393,6 +4670,7 @@ cb_type
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Contextual bandit method to use. RegCB only supports supervised regression (mtr)
@@ -4424,6 +4702,7 @@ cb_explore_adf
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Online explore-exploit for a contextual bandit problem with multiline action dependent features
 
 
@@ -4441,6 +4720,7 @@ epsilon
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Minimum exploration probability
@@ -4468,6 +4748,7 @@ rnd
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Rnd based exploration
 
 
@@ -4487,6 +4768,7 @@ rnd_alpha
     </span>
 
 
+
 CI width for rnd (bigger => more exploration on repeating features)
 
 
@@ -4504,6 +4786,7 @@ rnd_invlambda
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Covariance regularization strength rnd (bigger => more exploration on new features)
@@ -4535,6 +4818,7 @@ cb_explore_adf
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Online explore-exploit for a contextual bandit problem with multiline action dependent features
 
 
@@ -4552,6 +4836,7 @@ epsilon
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Epsilon-greedy exploration
@@ -4579,6 +4864,7 @@ softmax
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Softmax exploration
 
 
@@ -4596,6 +4882,7 @@ lambda
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Parameter for softmax
@@ -4627,6 +4914,7 @@ cb_explore_adf
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Online explore-exploit for a contextual bandit problem with multiline action dependent features
 
 
@@ -4646,6 +4934,7 @@ epsilon
     </span>
 
 
+
 Epsilon-greedy exploration
 
 
@@ -4663,6 +4952,7 @@ first_only
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Only explore the first action in a tie-breaking event
@@ -4694,6 +4984,7 @@ cb_explore_adf
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Online explore-exploit for a contextual bandit problem with multiline action dependent features
 
 
@@ -4719,6 +5010,15 @@ large_action_space
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
+.. raw:: html
+
+    <a href="https://github.com/VowpalWabbit/vowpal_wabbit/wiki/Experimental">
+        <span class="option-tag option-warning">
+            <abbr title="This option is subject to change.">experimental</abbr>
+        </span>
+    </a>
+
 Large action space exploration
 
 
@@ -4738,6 +5038,15 @@ max_actions
     </span>
 
 
+
+.. raw:: html
+
+    <a href="https://github.com/VowpalWabbit/vowpal_wabbit/wiki/Experimental">
+        <span class="option-tag option-warning">
+            <abbr title="This option is subject to change.">experimental</abbr>
+        </span>
+    </a>
+
 Max number of actions to explore
 
 
@@ -4755,6 +5064,7 @@ gamma
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Gamma hyperparameter
@@ -4786,6 +5096,7 @@ cb_explore
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Online explore-exploit for a <k> action contextual bandit problem
 
 
@@ -4803,6 +5114,7 @@ first
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Tau-first exploration
@@ -4824,6 +5136,7 @@ epsilon
     </span>
 
 
+
 Epsilon-greedy exploration
 
 
@@ -4841,6 +5154,7 @@ bag
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Bagging-based exploration
@@ -4862,6 +5176,7 @@ cover
     </span>
 
 
+
 Online cover based exploration
 
 
@@ -4881,6 +5196,7 @@ nounif
     </span>
 
 
+
 Do not explore uniformly on zero-probability actions in cover
 
 
@@ -4898,6 +5214,7 @@ psi
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Disagreement parameter for cover
@@ -4929,7 +5246,16 @@ automl
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
-Experimental: Set number of live configs
+
+.. raw:: html
+
+    <a href="https://github.com/VowpalWabbit/vowpal_wabbit/wiki/Experimental">
+        <span class="option-tag option-warning">
+            <abbr title="This option is subject to change.">experimental</abbr>
+        </span>
+    </a>
+
+Set number of live configs
 
 
 
@@ -4947,6 +5273,15 @@ global_lease
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
 
+
+
+.. raw:: html
+
+    <a href="https://github.com/VowpalWabbit/vowpal_wabbit/wiki/Experimental">
+        <span class="option-tag option-warning">
+            <abbr title="This option is subject to change.">experimental</abbr>
+        </span>
+    </a>
 
 Set initial lease for automl interactions
 
@@ -4967,6 +5302,15 @@ cm_type
     </span>
 
 
+
+.. raw:: html
+
+    <a href="https://github.com/VowpalWabbit/vowpal_wabbit/wiki/Experimental">
+        <span class="option-tag option-warning">
+            <abbr title="This option is subject to change.">experimental</abbr>
+        </span>
+    </a>
+
 Set type of config manager
 
 
@@ -4985,6 +5329,15 @@ priority_type
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
 
+
+
+.. raw:: html
+
+    <a href="https://github.com/VowpalWabbit/vowpal_wabbit/wiki/Experimental">
+        <span class="option-tag option-warning">
+            <abbr title="This option is subject to change.">experimental</abbr>
+        </span>
+    </a>
 
 Set function to determine next config
 
@@ -5005,6 +5358,15 @@ priority_challengers
     </span>
 
 
+
+.. raw:: html
+
+    <a href="https://github.com/VowpalWabbit/vowpal_wabbit/wiki/Experimental">
+        <span class="option-tag option-warning">
+            <abbr title="This option is subject to change.">experimental</abbr>
+        </span>
+    </a>
+
 Set number of priority challengers to use
 
 
@@ -5024,6 +5386,15 @@ keep_configs
     </span>
 
 
+
+.. raw:: html
+
+    <a href="https://github.com/VowpalWabbit/vowpal_wabbit/wiki/Experimental">
+        <span class="option-tag option-warning">
+            <abbr title="This option is subject to change.">experimental</abbr>
+        </span>
+    </a>
+
 Keep all configs after champ change
 
 
@@ -5036,6 +5407,15 @@ verbose_metrics
     --verbose_metrics
 
 
+
+
+.. raw:: html
+
+    <a href="https://github.com/VowpalWabbit/vowpal_wabbit/wiki/Experimental">
+        <span class="option-tag option-warning">
+            <abbr title="This option is subject to change.">experimental</abbr>
+        </span>
+    </a>
 
 Extended metrics for debugging
 
@@ -5056,6 +5436,15 @@ oracle_type
     </span>
 
 
+
+.. raw:: html
+
+    <a href="https://github.com/VowpalWabbit/vowpal_wabbit/wiki/Experimental">
+        <span class="option-tag option-warning">
+            <abbr title="This option is subject to change.">experimental</abbr>
+        </span>
+    </a>
+
 Set oracle to generate configs
 
 
@@ -5075,6 +5464,15 @@ automl_alpha
     </span>
 
 
+
+.. raw:: html
+
+    <a href="https://github.com/VowpalWabbit/vowpal_wabbit/wiki/Experimental">
+        <span class="option-tag option-warning">
+            <abbr title="This option is subject to change.">experimental</abbr>
+        </span>
+    </a>
+
 Set confidence interval for champion change
 
 
@@ -5093,6 +5491,15 @@ automl_tau
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
 
+
+
+.. raw:: html
+
+    <a href="https://github.com/VowpalWabbit/vowpal_wabbit/wiki/Experimental">
+        <span class="option-tag option-warning">
+            <abbr title="This option is subject to change.">experimental</abbr>
+        </span>
+    </a>
 
 Time constant for count decay
 
@@ -5123,7 +5530,16 @@ baseline_challenger_cb
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
-Experimental: Build a CI around the baseline action and use it instead of the model if it's perfoming better
+
+.. raw:: html
+
+    <a href="https://github.com/VowpalWabbit/vowpal_wabbit/wiki/Experimental">
+        <span class="option-tag option-warning">
+            <abbr title="This option is subject to change.">experimental</abbr>
+        </span>
+    </a>
+
+Build a CI around the baseline action and use it instead of the model if it's perfoming better
 
 
 
@@ -5141,6 +5557,15 @@ cb_c_alpha
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
 
+
+
+.. raw:: html
+
+    <a href="https://github.com/VowpalWabbit/vowpal_wabbit/wiki/Experimental">
+        <span class="option-tag option-warning">
+            <abbr title="This option is subject to change.">experimental</abbr>
+        </span>
+    </a>
 
 Confidence level for baseline
 
@@ -5160,6 +5585,15 @@ cb_c_tau
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
 
+
+
+.. raw:: html
+
+    <a href="https://github.com/VowpalWabbit/vowpal_wabbit/wiki/Experimental">
+        <span class="option-tag option-warning">
+            <abbr title="This option is subject to change.">experimental</abbr>
+        </span>
+    </a>
 
 Time constant for count decay
 
@@ -5190,6 +5624,7 @@ cats_tree
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 CATS Tree with <k> labels
 
 
@@ -5209,6 +5644,7 @@ tree_bandwidth
     </span>
 
 
+
 Tree bandwidth for continuous actions in terms of #actions
 
 
@@ -5226,6 +5662,7 @@ link
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 The learner in each node must return a prediction in range [-1,1], so only glf1 is allowed
@@ -5257,6 +5694,7 @@ multiworld_test
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Evaluate features as a policies
 
 
@@ -5270,6 +5708,7 @@ learn
 
 
 
+
 Do Contextual Bandit learning on <n> classes
 
 
@@ -5280,6 +5719,7 @@ exclude_eval
 .. code-block::
 
     --exclude_eval
+
 
 
 
@@ -5312,7 +5752,16 @@ experimental_igl
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
-Experimental: Do Interaction Grounding with multiline action dependent features
+
+.. raw:: html
+
+    <a href="https://github.com/VowpalWabbit/vowpal_wabbit/wiki/Experimental">
+        <span class="option-tag option-warning">
+            <abbr title="This option is subject to change.">experimental</abbr>
+        </span>
+    </a>
+
+Do Interaction Grounding with multiline action dependent features
 
 
 [Reduction] Contextual Bandit with Action Dependent Features Options
@@ -5341,6 +5790,7 @@ cb_adf
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Do Contextual Bandit learning with multiline action dependent features
 
 
@@ -5360,6 +5810,7 @@ rank_all
     </span>
 
 
+
 Return actions sorted by score order
 
 
@@ -5370,6 +5821,7 @@ no_predict
 .. code-block::
 
     --no_predict
+
 
 
 
@@ -5392,6 +5844,7 @@ clip_p
     </span>
 
 
+
 Clipping probability in importance weight. Default: 0.f (no clipping)
 
 
@@ -5409,6 +5862,7 @@ cb_type
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Contextual bandit method to use
@@ -5440,6 +5894,7 @@ cb
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Use contextual bandit learning with <k> costs
 
 
@@ -5459,6 +5914,7 @@ cb_type
     </span>
 
 
+
 Contextual bandit method to use
 
 
@@ -5469,6 +5925,7 @@ eval
 .. code-block::
 
     --eval
+
 
 
 
@@ -5489,6 +5946,7 @@ cb_force_legacy
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Default to non-adf cb implementation (cb_to_cb_adf)
@@ -5520,6 +5978,7 @@ csoaa_ldf
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Use one-against-all multiclass learning with label dependent features
 
 See http://www.umiacs.umd.edu/~hal/tmp/multiclassVW.html
@@ -5532,6 +5991,7 @@ ldf_override
 .. code-block::
 
     --ldf_override <str>
+
 
 
 
@@ -5554,6 +6014,7 @@ csoaa_rank
     </span>
 
 
+
 Return actions sorted by score order
 
 
@@ -5571,6 +6032,7 @@ probabilities
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Predict probabilities of all classes
@@ -5601,6 +6063,7 @@ wap_ldf
     <span class="option-tag">
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
+
 
 Use weighted all-pairs multiclass learning with label dependent features. Specify singleline or multiline.
 
@@ -5633,6 +6096,7 @@ interact
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Put weights on feature products from namespaces <n1> and <n2>
 
 
@@ -5662,6 +6126,7 @@ csoaa
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 One-against-all multiclass with <k> costs
 
 
@@ -5679,6 +6144,7 @@ indexing
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Choose between 0 or 1-indexing
@@ -5710,6 +6176,7 @@ cs_active
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Cost-sensitive active learning with <k> costs
 
 
@@ -5720,6 +6187,7 @@ simulation
 .. code-block::
 
     --simulation
+
 
 
 
@@ -5736,6 +6204,7 @@ baseline
 
 
 
+
 Cost-sensitive active learning baseline
 
 
@@ -5746,6 +6215,7 @@ domination
 .. code-block::
 
     --domination <int> (default: 1)
+
 
 
 
@@ -5768,6 +6238,7 @@ mellowness
     </span>
 
 
+
 Mellowness parameter c_0
 
 
@@ -5778,6 +6249,7 @@ range_c
 .. code-block::
 
     --range_c <float> (default: 0.5)
+
 
 
 
@@ -5794,6 +6266,7 @@ max_labels
 
 
 
+
 Maximum number of label queries
 
 
@@ -5804,6 +6277,7 @@ min_labels
 .. code-block::
 
     --min_labels <uint> (default: 18446744073709552000)
+
 
 
 
@@ -5820,6 +6294,7 @@ cost_max
 
 
 
+
 Cost upper bound
 
 
@@ -5833,6 +6308,7 @@ cost_min
 
 
 
+
 Cost lower bound
 
 
@@ -5843,6 +6319,7 @@ csa_debug
 .. code-block::
 
     --csa_debug
+
 
 
 
@@ -5875,6 +6352,7 @@ plt
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Probabilistic Label Tree with <k> labels
 
 
@@ -5894,6 +6372,7 @@ kary_tree
     </span>
 
 
+
 Use <k>-ary tree
 
 
@@ -5907,6 +6386,7 @@ threshold
 
 
 
+
 Predict labels with conditional marginal probability greater than <thr> threshold
 
 
@@ -5917,6 +6397,7 @@ top_k
 .. code-block::
 
     --top_k <uint> (default: 0)
+
 
 
 
@@ -5949,6 +6430,7 @@ multilabel_oaa
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 One-against-all multilabel with <k> labels
 
 
@@ -5959,6 +6441,7 @@ probabilities
 .. code-block::
 
     --probabilities
+
 
 
 
@@ -5979,6 +6462,7 @@ link
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Specify the link function
@@ -6003,6 +6487,7 @@ classweight
     <span class="option-tag">
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
+
 
 Importance weight multiplier for class
 
@@ -6033,6 +6518,7 @@ memory_tree
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Make a memory tree with at most <n> nodes
 
 
@@ -6043,6 +6529,7 @@ max_number_of_labels
 .. code-block::
 
     --max_number_of_labels <uint> (default: 10)
+
 
 
 
@@ -6059,6 +6546,7 @@ leaf_example_multiplier
 
 
 
+
 Multiplier on examples per leaf (default = log nodes)
 
 
@@ -6069,6 +6557,7 @@ alpha
 .. code-block::
 
     --alpha <float> (default: 0.10000000149011612)
+
 
 
 
@@ -6085,6 +6574,7 @@ dream_repeats
 
 
 
+
 Number of dream operations per example (default = 1)
 
 
@@ -6095,6 +6585,7 @@ top_K
 .. code-block::
 
     --top_K <int> (default: 1)
+
 
 
 
@@ -6111,6 +6602,7 @@ learn_at_leaf
 
 
 
+
 Enable learning at leaf
 
 
@@ -6121,6 +6613,7 @@ oas
 .. code-block::
 
     --oas
+
 
 
 
@@ -6137,6 +6630,7 @@ dream_at_update
 
 
 
+
 Turn on dream operations at reward based update as well
 
 
@@ -6147,6 +6641,7 @@ online
 .. code-block::
 
     --online
+
 
 
 
@@ -6179,6 +6674,7 @@ recall_tree
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Use online tree for multiclass
 
 
@@ -6198,6 +6694,7 @@ max_candidates
     </span>
 
 
+
 Maximum number of labels per leaf in the tree
 
 
@@ -6208,6 +6705,7 @@ bern_hyper
 .. code-block::
 
     --bern_hyper <float> (default: 1)
+
 
 
 
@@ -6230,6 +6728,7 @@ max_depth
     </span>
 
 
+
 Maximum depth of the tree, default log_2 (#classes)
 
 
@@ -6249,6 +6748,7 @@ node_only
     </span>
 
 
+
 Only use node features, not full path features
 
 
@@ -6266,6 +6766,7 @@ randomized_routing
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Randomized routing
@@ -6297,6 +6798,7 @@ log_multi
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Use online tree for multiclass
 
 
@@ -6310,6 +6812,7 @@ no_progress
 
 
 
+
 Disable progressive validation
 
 
@@ -6320,6 +6823,7 @@ swap_resistance
 .. code-block::
 
     --swap_resistance <uint> (default: 4)
+
 
 
 
@@ -6352,6 +6856,7 @@ ect
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Error correcting tournament with <k> labels
 
 
@@ -6371,6 +6876,7 @@ error
     </span>
 
 
+
 Errors allowed by ECT
 
 
@@ -6388,6 +6894,7 @@ link
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Specify the link function
@@ -6419,6 +6926,7 @@ boosting
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Online boosting with <N> weak learners
 
 
@@ -6429,6 +6937,7 @@ gamma
 .. code-block::
 
     --gamma <float> (default: 0.10000000149011612)
+
 
 
 
@@ -6449,6 +6958,7 @@ alg
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Specify the boosting algorithm: BBM (default), logistic (AdaBoost.OL.W), adaptive (AdaBoost.OL)
@@ -6480,6 +6990,7 @@ oaa
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 One-against-all multiclass with <k> labels
 
 
@@ -6490,6 +7001,7 @@ oaa_subsample
 .. code-block::
 
     --oaa_subsample <uint>
+
 
 
 
@@ -6506,6 +7018,7 @@ probabilities
 
 
 
+
 Predict probabilities of all classes
 
 
@@ -6516,6 +7029,7 @@ scores
 .. code-block::
 
     --scores
+
 
 
 
@@ -6536,6 +7050,7 @@ indexing
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Choose between 0 or 1-indexing
@@ -6567,6 +7082,7 @@ top
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Top k recommendation
 
 
@@ -6596,6 +7112,7 @@ replay_m
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Use experience replay at a specified level [b=classification/regression, m=multiclass, c=cost sensitive] with specified buffer size
 
 
@@ -6606,6 +7123,7 @@ replay_m_count
 .. code-block::
 
     --replay_m_count <uint> (default: 1)
+
 
 
 
@@ -6638,6 +7156,7 @@ binary
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Report loss as binary classification on -1,1
 
 
@@ -6667,6 +7186,7 @@ bootstrap
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 K-way bootstrap by online importance resampling
 
 
@@ -6684,6 +7204,7 @@ bs_type
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Prediction type
@@ -6715,6 +7236,7 @@ cbzo
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Solve 1-slot Continuous Action Contextual Bandit using Zeroth-Order Optimization
 
 
@@ -6734,6 +7256,7 @@ policy
     </span>
 
 
+
 Policy/Model to Learn
 
 
@@ -6751,6 +7274,7 @@ radius
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Exploration Radius
@@ -6789,6 +7313,7 @@ lda
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Run lda with <int> topics
 
 
@@ -6806,6 +7331,7 @@ lda_alpha
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Prior on sparsity of per-document topic weights
@@ -6827,6 +7353,7 @@ lda_rho
     </span>
 
 
+
 Prior on sparsity of topic distributions
 
 
@@ -6837,6 +7364,7 @@ lda_D
 .. code-block::
 
     --lda_D <float> (default: 10000)
+
 
 
 
@@ -6853,6 +7381,7 @@ lda_epsilon
 
 
 
+
 Loop convergence threshold
 
 
@@ -6863,6 +7392,7 @@ minibatch
 .. code-block::
 
     --minibatch <uint> (default: 1)
+
 
 
 
@@ -6879,6 +7409,7 @@ math-mode
 
 
 
+
 Math mode: 0=simd, 1=accuracy, 2=fast-approx
 
 
@@ -6889,6 +7420,7 @@ metrics
 .. code-block::
 
     --metrics
+
 
 
 
@@ -6913,6 +7445,7 @@ link
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Specify the link function
@@ -6974,6 +7507,7 @@ stage_poly
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Use stagewise polynomial feature learning
 
 
@@ -6984,6 +7518,7 @@ sched_exponent
 .. code-block::
 
     --sched_exponent <float> (default: 1)
+
 
 
 
@@ -7000,6 +7535,7 @@ batch_sz
 
 
 
+
 Multiplier on batch size before including more features
 
 
@@ -7010,6 +7546,7 @@ batch_sz_no_doubling
 .. code-block::
 
     --batch_sz_no_doubling
+
 
 
 
@@ -7042,6 +7579,7 @@ lrqfa
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Use low rank quadratic features with field aware weights
 
 
@@ -7071,6 +7609,7 @@ lrq
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Use low rank quadratic features
 
 
@@ -7088,6 +7627,7 @@ lrqdropout
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Use dropout training for low rank quadratic features
@@ -7119,6 +7659,7 @@ autolink
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Create link function with polynomial d
 
 
@@ -7148,6 +7689,7 @@ marginal
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Substitute marginal label estimates for ids
 
 
@@ -7158,6 +7700,7 @@ initial_denominator
 .. code-block::
 
     --initial_denominator <float> (default: 1)
+
 
 
 
@@ -7174,6 +7717,7 @@ initial_numerator
 
 
 
+
 Initial numerator
 
 
@@ -7184,6 +7728,7 @@ compete
 .. code-block::
 
     --compete
+
 
 
 
@@ -7200,6 +7745,7 @@ update_before_learn
 
 
 
+
 Update marginal values before learning
 
 
@@ -7213,6 +7759,7 @@ unweighted_marginals
 
 
 
+
 Ignore importance weights when computing marginals
 
 
@@ -7223,6 +7770,7 @@ decay
 .. code-block::
 
     --decay <float> (default: 0)
+
 
 
 
@@ -7255,6 +7803,7 @@ nn
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Sigmoidal feedforward network with <k> hidden units
 
 
@@ -7272,6 +7821,7 @@ inpass
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Train or test sigmoidal feedforward network with input passthrough
@@ -7293,6 +7843,7 @@ multitask
     </span>
 
 
+
 Share hidden layer across all reduced tasks
 
 
@@ -7312,6 +7863,7 @@ dropout
     </span>
 
 
+
 Train or test sigmoidal feedforward network using dropout
 
 
@@ -7322,6 +7874,7 @@ meanfield
 .. code-block::
 
     --meanfield
+
 
 
 
@@ -7354,6 +7907,7 @@ confidence
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Get confidence for binary predictions
 
 
@@ -7364,6 +7918,7 @@ confidence_after_training
 .. code-block::
 
     --confidence_after_training
+
 
 
 
@@ -7396,6 +7951,7 @@ active_cover
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Enable active learning with cover
 
 
@@ -7415,6 +7971,7 @@ mellowness
     </span>
 
 
+
 Active learning mellowness parameter c_0
 
 
@@ -7428,6 +7985,7 @@ alpha
 
 
 
+
 Active learning variance upper bound parameter alpha
 
 
@@ -7438,6 +7996,7 @@ beta_scale
 .. code-block::
 
     --beta_scale <float> (default: 3.1622776985168457)
+
 
 
 
@@ -7460,6 +8019,7 @@ cover
     </span>
 
 
+
 Cover size
 
 
@@ -7470,6 +8030,7 @@ oracular
 .. code-block::
 
     --oracular
+
 
 
 
@@ -7516,6 +8077,7 @@ active
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Enable active learning
 
 
@@ -7526,6 +8088,7 @@ simulation
 .. code-block::
 
     --simulation
+
 
 
 
@@ -7546,6 +8109,7 @@ mellowness
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Active learning mellowness parameter c_0. Default 8
@@ -7577,6 +8141,7 @@ replay_b
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Use experience replay at a specified level [b=classification/regression, m=multiclass, c=cost sensitive] with specified buffer size
 
 
@@ -7587,6 +8152,7 @@ replay_b_count
 .. code-block::
 
     --replay_b_count <uint> (default: 1)
+
 
 
 
@@ -7619,6 +8185,7 @@ baseline
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Learn an additive baseline (from constant features) and a residual separately in regression
 
 
@@ -7629,6 +8196,7 @@ lr_multiplier
 .. code-block::
 
     --lr_multiplier <float> (default: 1)
+
 
 
 
@@ -7651,6 +8219,7 @@ global_only
     </span>
 
 
+
 Use separate example with only global constant for baseline predictions
 
 
@@ -7670,6 +8239,7 @@ check_enabled
     </span>
 
 
+
 Only use baseline when the example contains enabled flag
 
 
@@ -7684,6 +8254,7 @@ leave_duplicate_interactions
 .. code-block::
 
     --leave_duplicate_interactions
+
 
 
 
@@ -7716,6 +8287,7 @@ new_mf
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Rank for reduction-based matrix factorization
 
 
@@ -7745,6 +8317,7 @@ OjaNewton
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Online Newton with Oja's Sketch
 
 
@@ -7755,6 +8328,7 @@ sketch_size
 .. code-block::
 
     --sketch_size <int> (default: 10)
+
 
 
 
@@ -7771,6 +8345,7 @@ epoch_size
 
 
 
+
 Size of epoch
 
 
@@ -7781,6 +8356,7 @@ alpha
 .. code-block::
 
     --alpha <float> (default: 1)
+
 
 
 
@@ -7797,6 +8373,7 @@ alpha_inverse
 
 
 
+
 One over alpha, similar to learning rate
 
 
@@ -7807,6 +8384,7 @@ learning_rate_cnt
 .. code-block::
 
     --learning_rate_cnt <float> (default: 2)
+
 
 
 
@@ -7823,6 +8401,7 @@ normalize
 
 
 
+
 Normalize the features or not
 
 
@@ -7833,6 +8412,7 @@ random_init
 .. code-block::
 
     --random_init <str>
+
 
 
 
@@ -7865,6 +8445,7 @@ conjugate_gradient
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Use conjugate gradient based optimization
 
 
@@ -7894,6 +8475,7 @@ bfgs
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Use conjugate gradient based optimization
 
 ``--bfgs`` and ``--conjugate_gradient`` uses a batch optimizer based on LBFGS or
@@ -7911,6 +8493,7 @@ hessian_on
 .. code-block::
 
     --hessian_on
+
 
 
 
@@ -7932,6 +8515,7 @@ mem
 
 
 
+
 Memory in bfgs
 
 
@@ -7942,6 +8526,7 @@ termination
 .. code-block::
 
     --termination <float> (default: 0.0010000000474974513)
+
 
 
 
@@ -7974,6 +8559,7 @@ noop
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Do no learning
 
 
@@ -8002,6 +8588,7 @@ print
     <span class="option-tag">
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
+
 
 Print examples
 
@@ -8032,6 +8619,7 @@ rank
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Rank for matrix factorization
 
 Rank sticks VW in matrix factorization mode. You'll need a relatively small
@@ -8045,6 +8633,7 @@ bfgs
 .. code-block::
 
     --bfgs
+
 
 
 
@@ -8065,6 +8654,7 @@ conjugate_gradient
 .. code-block::
 
     --conjugate_gradient
+
 
 
 
@@ -8096,6 +8686,7 @@ sendto
     <span class="option-tag">
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
+
 
 Send examples to <host>
 
@@ -8129,6 +8720,7 @@ svrg
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Streaming Stochastic Variance Reduced Gradient
 
 
@@ -8139,6 +8731,7 @@ stage_size
 .. code-block::
 
     --stage_size <int> (default: 1)
+
 
 
 
@@ -8171,6 +8764,7 @@ freegrad
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Diagonal FreeGrad Algorithm
 
 
@@ -8181,6 +8775,7 @@ restart
 .. code-block::
 
     --restart
+
 
 
 
@@ -8197,6 +8792,7 @@ project
 
 
 
+
 Project the outputs to adapt to both the lipschitz and comparator norm
 
 
@@ -8210,6 +8806,7 @@ radius
 
 
 
+
 Radius of the l2-ball for the projection. If not supplied, an adaptive radius will be used
 
 
@@ -8220,6 +8817,7 @@ fepsilon
 .. code-block::
 
     --fepsilon <float> (default: 1)
+
 
 
 
@@ -8252,6 +8850,7 @@ ftrl
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 FTRL: Follow the Proximal Regularized Leader
 
 ``--ftrl`` and ``--ftrl_alpha`` and ``--ftrl_beta`` uses a per-Coordinate
@@ -8270,6 +8869,7 @@ ftrl_alpha
 
 
 
+
 Learning rate for FTRL optimization
 
 
@@ -8280,6 +8880,7 @@ ftrl_beta
 .. code-block::
 
     --ftrl_beta <float>
+
 
 
 
@@ -8312,6 +8913,7 @@ pistol
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 PiSTOL: Parameter-free STOchastic Learning
 
 
@@ -8325,6 +8927,7 @@ ftrl_alpha
 
 
 
+
 Learning rate for FTRL optimization
 
 
@@ -8335,6 +8938,7 @@ ftrl_beta
 .. code-block::
 
     --ftrl_beta <float>
+
 
 
 
@@ -8367,6 +8971,7 @@ coin
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Coin betting optimizer
 
 
@@ -8380,6 +8985,7 @@ ftrl_alpha
 
 
 
+
 Learning rate for FTRL optimization
 
 
@@ -8390,6 +8996,7 @@ ftrl_beta
 .. code-block::
 
     --ftrl_beta <float>
+
 
 
 
@@ -8422,6 +9029,7 @@ ksvm
         <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
     </span>
 
+
 Kernel svm
 
 
@@ -8432,6 +9040,7 @@ reprocess
 .. code-block::
 
     --reprocess <uint> (default: 1)
+
 
 
 
@@ -8448,6 +9057,7 @@ pool_greedy
 
 
 
+
 Use greedy selection on mini pools
 
 
@@ -8458,6 +9068,7 @@ para_active
 .. code-block::
 
     --para_active
+
 
 
 
@@ -8474,6 +9085,7 @@ pool_size
 
 
 
+
 Size of pools for active learning
 
 
@@ -8484,6 +9096,7 @@ subsample
 .. code-block::
 
     --subsample <uint> (default: 1)
+
 
 
 
@@ -8506,6 +9119,7 @@ kernel
     </span>
 
 
+
 Type of kernel
 
 
@@ -8525,6 +9139,7 @@ bandwidth
     </span>
 
 
+
 Bandwidth of rbf kernel
 
 
@@ -8542,6 +9157,7 @@ degree
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Degree of poly kernel
@@ -8567,6 +9183,7 @@ sgd
     </span>
 
 
+
 Use regular stochastic gradient descent update
 
 
@@ -8584,6 +9201,7 @@ adaptive
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Use adaptive, individual learning rates
@@ -8610,6 +9228,7 @@ adax
 
 
 
+
 Use adaptive learning rates with x^2 instead of g^2x^2
 
 
@@ -8627,6 +9246,7 @@ invariant
     <span class="option-tag">
         <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
     </span>
+
 
 
 Use safe/importance aware updates
@@ -8648,6 +9268,7 @@ normalized
     </span>
 
 
+
 Use per feature normalized updates
 
 
@@ -8658,6 +9279,7 @@ sparse_l2
 .. code-block::
 
     --sparse_l2 <float> (default: 0)
+
 
 
 
@@ -8674,6 +9296,7 @@ l1_state
 
 
 
+
 Amount of accumulated implicit l1 regularization
 
 
@@ -8684,6 +9307,7 @@ l2_state
 .. code-block::
 
     --l2_state <float> (default: 1)
+
 
 
 

@@ -39,6 +39,7 @@ var searchData=
   ['example_5fpredict_5fbuilder',['example_predict_builder',['../classvw__slim_1_1example__predict__builder.html#acdee03685d9d37572f4a5f84ac231f12',1,'vw_slim::example_predict_builder::example_predict_builder(VW::example_predict *ex, const char *namespace_name, uint32_t feature_index_num_bits=18)'],['../classvw__slim_1_1example__predict__builder.html#a301c81bdc84a99e321545e157fcc3bed',1,'vw_slim::example_predict_builder::example_predict_builder(VW::example_predict *ex, VW::namespace_index namespace_idx, uint32_t feature_index_num_bits=18)']]],
   ['exclusion_5fconfig',['exclusion_config',['../structVW_1_1reductions_1_1automl_1_1exclusion__config.html#a0024c603eafe1b6d8598883ab6de7914',1,'VW::reductions::automl::exclusion_config']]],
   ['expand_5fquadratics_5fwildcard_5finteractions',['expand_quadratics_wildcard_interactions',['../namespaceINTERACTIONS.html#afaa06b631fa37347e7bacaa8b6ba67fa',1,'INTERACTIONS']]],
+  ['experimental',['experimental',['../structVW_1_1config_1_1option__builder.html#a3fa79c5f73be001800f949747a18bf8a',1,'VW::config::option_builder']]],
   ['explore_5feval_5fsetup',['explore_eval_setup',['../namespaceVW_1_1reductions.html#a6359b86b6061ca9b7a6252aa6311d9c3',1,'VW::reductions']]],
   ['export_5fexample',['export_example',['../namespaceVW.html#a189b2455ab65ce4c5f7d72a361bad75d',1,'VW']]],
   ['expreplay_5fsetup',['expreplay_setup',['../namespaceVW_1_1reductions.html#ac0ab6fa17defbab14a1828966642ca2e',1,'VW::reductions']]]
