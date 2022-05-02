@@ -34,7 +34,7 @@ var searchData=
   ['_5frandom_5fstate',['_random_state',['../structVW_1_1reductions_1_1active.html#aff7ce78d4b917ab4a8d6c3c96e679969',1,'VW::reductions::active::_random_state()'],['../structVW_1_1reductions_1_1expreplay_1_1expreplay.html#a188f39cab60abb2f50432061d40d2bf8',1,'VW::reductions::expreplay::expreplay::_random_state()']]],
   ['_5freduction_5ffeatures',['_reduction_features',['../structVW_1_1flat__example.html#af4162bdf34972cb23de187bd6ac405f2',1,'VW::flat_example::_reduction_features()'],['../structVW_1_1example__predict.html#af8636281f693ee8fb744970406791142',1,'VW::example_predict::_reduction_features()']]],
   ['_5freuse_5fmem',['_reuse_mem',['../structContext.html#a715ce82969edf6ca51f8458f50eb238b',1,'Context']]],
-  ['_5fscored_5fconfigs',['_scored_configs',['../structVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#ac580fd0662e91e6f51994dceea41ea48',1,'VW::reductions::epsilon_decay::epsilon_decay_data']]],
+  ['_5fscored_5fconfigs',['_scored_configs',['../structVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#a326fc4e67b21cf649ccd4d46b9c053d4',1,'VW::reductions::epsilon_decay::epsilon_decay_data']]],
   ['_5fshared_5fdata',['_shared_data',['../structparser.html#a29f98b675dc11176078222fccd8afeeb',1,'parser::_shared_data()'],['../structVW_1_1reductions_1_1active.html#af731146226ff4857651d9a6bc1f584b4',1,'VW::reductions::active::_shared_data()']]],
   ['_5fspdlog_5fstderr_5flogger',['_spdlog_stderr_logger',['../structVW_1_1io_1_1details_1_1logger__impl.html#a794e60682470dba78e41ab08bf48575d',1,'VW::io::details::logger_impl']]],
   ['_5fspdlog_5fstdout_5flogger',['_spdlog_stdout_logger',['../structVW_1_1io_1_1details_1_1logger__impl.html#ad0ea97a34a4dd08e7be7f4a8afb74755',1,'VW::io::details::logger_impl']]],

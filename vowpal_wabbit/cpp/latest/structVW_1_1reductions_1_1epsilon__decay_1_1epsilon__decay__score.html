@@ -119,12 +119,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a80a75f95d311e6bd62201bca49c20aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1786dc9e23a1ff79af94e40bf07c5a33"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__score.html#a1786dc9e23a1ff79af94e40bf07c5a33">epsilon_decay_score</a> (double alpha, double tau, uint64_t model_idx)</td></tr>
 <tr class="separator:a1786dc9e23a1ff79af94e40bf07c5a33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ac803f8887d4b6e519312173142794a"><td class="memTemplParams" colspan="2">template&lt;class ForwardIt &gt; </td></tr>
-<tr class="memitem:a8ac803f8887d4b6e519312173142794a"><td class="memTemplItemLeft" align="right" valign="top">ForwardIt&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__score.html#a8ac803f8887d4b6e519312173142794a">swap_models</a> (ForwardIt first, ForwardIt n_first, ForwardIt end)</td></tr>
-<tr class="separator:a8ac803f8887d4b6e519312173142794a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2315a57f942a29f78dcfeb876436461"><td class="memTemplParams" colspan="2">template&lt;class ForwardIt &gt; </td></tr>
-<tr class="memitem:ad2315a57f942a29f78dcfeb876436461"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__score.html#ad2315a57f942a29f78dcfeb876436461">reset_models</a> (ForwardIt first, ForwardIt end, <a class="el" href="classparameters.html">parameters</a> &amp;weights, double epsilon_decay_alpha, double epsilon_decay_tau, uint64_t model_count)</td></tr>
-<tr class="separator:ad2315a57f942a29f78dcfeb876436461"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85b7dcb4960bc4a5f6a2f66d7255c4ff"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__score.html#a85b7dcb4960bc4a5f6a2f66d7255c4ff">decayed_epsilon</a> (uint64_t <a class="el" href="structVW_1_1scored__config.html#aa516d7719993364b78d706803a4042a3">update_count</a>)</td></tr>
 <tr class="separator:a85b7dcb4960bc4a5f6a2f66d7255c4ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a760f299864d5789212a5df932e3450"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__score.html#a2a760f299864d5789212a5df932e3450">get_upper_bound</a> () const</td></tr>
@@ -329,96 +323,6 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ad2315a57f942a29f78dcfeb876436461"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2315a57f942a29f78dcfeb876436461">&#9670;&nbsp;</a></span>reset_models()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class ForwardIt &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void VW::reductions::epsilon_decay::epsilon_decay_score::reset_models </td>
-          <td>(</td>
-          <td class="paramtype">ForwardIt&#160;</td>
-          <td class="paramname"><em>first</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ForwardIt&#160;</td>
-          <td class="paramname"><em>end</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classparameters.html">parameters</a> &amp;&#160;</td>
-          <td class="paramname"><em>weights</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>epsilon_decay_alpha</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>epsilon_decay_tau</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>model_count</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8ac803f8887d4b6e519312173142794a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ac803f8887d4b6e519312173142794a">&#9670;&nbsp;</a></span>swap_models()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class ForwardIt &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">ForwardIt VW::reductions::epsilon_decay::epsilon_decay_score::swap_models </td>
-          <td>(</td>
-          <td class="paramtype">ForwardIt&#160;</td>
-          <td class="paramname"><em>first</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ForwardIt&#160;</td>
-          <td class="paramname"><em>n_first</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ForwardIt&#160;</td>
-          <td class="paramname"><em>end</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="aaf43a420ee4d44ab044e437442fe3792"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaf43a420ee4d44ab044e437442fe3792">&#9670;&nbsp;</a></span>update_bounds()</h2>
 
@@ -482,7 +386,7 @@ template&lt;class ForwardIt &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 2 2022 12:57:58 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon May 2 2022 17:03:57 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
