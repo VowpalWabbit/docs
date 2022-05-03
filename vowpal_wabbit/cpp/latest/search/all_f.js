@@ -73,7 +73,6 @@ var searchData=
   ['output_5fand_5faccount_5fno_5flabel_5fexample',['output_and_account_no_label_example',['../namespaceno__label.html#a5b566db7739129ea435cdada4ad20c63',1,'no_label']]],
   ['output_5farray',['output_array',['../classArrayToVectorState.html#a4228f52b49bdaa970cca00319a904beb',1,'ArrayToVectorState']]],
   ['output_5fbool',['output_bool',['../classBoolToBoolState.html#a992594f6cfc11ec445918887aaf568d5',1,'BoolToBoolState']]],
-  ['output_5fbyte',['output_byte',['../cache_8h.html#aceecd924458f9cec915af446664256ee',1,'cache.h']]],
   ['output_5fdone',['output_done',['../structparser.html#a95e78d7a022624fad51ef62a80887723',1,'parser']]],
   ['output_5fexample',['output_example',['../namespaceCOST__SENSITIVE.html#a5b9a361e7393bf1210eac4bf136959c2',1,'COST_SENSITIVE::output_example(VW::workspace &amp;all, const VW::example &amp;ec)'],['../namespaceCOST__SENSITIVE.html#ad63eea4dae0a1d15239a6eea3386119d',1,'COST_SENSITIVE::output_example(VW::workspace &amp;all, const VW::example &amp;ec, const COST_SENSITIVE::label &amp;cs_label, uint32_t multiclass_prediction)'],['../namespaceMULTILABEL.html#ac62bc517f7e01177284b94622175dc41',1,'MULTILABEL::output_example()']]],
   ['output_5ffloat',['output_float',['../classFloatToFloatState.html#a65e1b0d0c6b794561c32bea5d94be016',1,'FloatToFloatState']]],

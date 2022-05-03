@@ -44,7 +44,6 @@ var searchData=
   ['output',['output',['../structSearch_1_1search.html#aae620bf25e62520c3376bd918023b21d',1,'Search::search']]],
   ['output_5fand_5faccount_5fexample',['output_and_account_example',['../simple__label_8h.html#a1d3a23f4e39655ad6cc71a362aa9ffc1',1,'simple_label.h']]],
   ['output_5fand_5faccount_5fno_5flabel_5fexample',['output_and_account_no_label_example',['../namespaceno__label.html#a5b566db7739129ea435cdada4ad20c63',1,'no_label']]],
-  ['output_5fbyte',['output_byte',['../cache_8h.html#aceecd924458f9cec915af446664256ee',1,'cache.h']]],
   ['output_5fexample',['output_example',['../namespaceCOST__SENSITIVE.html#a5b9a361e7393bf1210eac4bf136959c2',1,'COST_SENSITIVE::output_example(VW::workspace &amp;all, const VW::example &amp;ec)'],['../namespaceCOST__SENSITIVE.html#ad63eea4dae0a1d15239a6eea3386119d',1,'COST_SENSITIVE::output_example(VW::workspace &amp;all, const VW::example &amp;ec, const COST_SENSITIVE::label &amp;cs_label, uint32_t multiclass_prediction)'],['../namespaceMULTILABEL.html#ac62bc517f7e01177284b94622175dc41',1,'MULTILABEL::output_example()']]],
   ['output_5fmetrics',['output_metrics',['../namespaceVW_1_1reductions.html#adaadb749c2e583c67ddd484269b0b439',1,'VW::reductions']]],
   ['overflow',['overflow',['../classVW_1_1io_1_1noop__output__streambuf.html#ab6e5fbd324d84ef02e994fca2da18550',1,'VW::io::noop_output_streambuf']]],

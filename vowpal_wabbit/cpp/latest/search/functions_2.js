@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['cache_5ffeatures',['cache_features',['../cache_8h.html#aec7ec6a34fa037b99dcff4cc1fc87452',1,'cache.h']]],
-  ['cache_5findex',['cache_index',['../cache_8h.html#a8d7d5e613733f379068b586c9c66f854',1,'cache.h']]],
-  ['cache_5ftag',['cache_tag',['../cache_8h.html#a6f271ba2703365ed743547fe64cc5fee',1,'cache.h']]],
+  ['cache_5ffeatures',['cache_features',['../namespaceVW_1_1details.html#ac72243e892e0454ba1847f80ecc483d4',1,'VW::details']]],
+  ['cache_5findex',['cache_index',['../namespaceVW_1_1details.html#a00e24fd4fd4b2c9886c4b9b404427474',1,'VW::details']]],
+  ['cache_5ftag',['cache_tag',['../namespaceVW_1_1details.html#ac06af20e847d3d698d0628e940ce43f5',1,'VW::details']]],
   ['cache_5ftemp_5fbuffer',['cache_temp_buffer',['../structVW_1_1details_1_1cache__temp__buffer.html#ae6cb5ecc548beca280733d19a5385a14',1,'VW::details::cache_temp_buffer']]],
   ['cached_5flearner',['cached_learner',['../structVW_1_1cached__learner.html#a77469cf8d15648287247e3d8eb623b3f',1,'VW::cached_learner::cached_learner(VW::LEARNER::base_learner *learner=nullptr)'],['../structVW_1_1cached__learner.html#a85d2d615319a53475b1ea20ab00b46b4',1,'VW::cached_learner::cached_learner(VW::workspace &amp;all, VW::config::options_i &amp;options, VW::LEARNER::base_learner *learner=nullptr)']]],
   ['calculate_5fshrink_5ffactor',['calculate_shrink_factor',['../structVW_1_1cb__explore__adf_1_1cb__explore__adf__large__action__space.html#a625932732070034413086ba5cc2e4451',1,'VW::cb_explore_adf::cb_explore_adf_large_action_space']]],
@@ -82,7 +82,6 @@ var searchData=
   ['constexpr_5fnegative_5fint_5fpow10_5fwith_5foffset',['constexpr_negative_int_pow10_with_offset',['../namespaceVW_1_1details.html#ab6ae5a8a298fa337a11f73c58392378f',1,'VW::details']]],
   ['contains_5fwildcard',['contains_wildcard',['../namespaceINTERACTIONS.html#a9227c7e3b62e506c926a0bd3ee821c87',1,'INTERACTIONS::contains_wildcard(const std::vector&lt; VW::namespace_index &gt; &amp;interaction)'],['../namespaceINTERACTIONS.html#a5d94141d12f6bca7e1b7343e5951b891',1,'INTERACTIONS::contains_wildcard(const std::vector&lt; extent_term &gt; &amp;interaction)']]],
   ['context',['Context',['../structContext.html#a64d619664771771e6300aee4e9dcf8bb',1,'Context']]],
-  ['convert',['convert',['../namespaceVW.html#a485bcb8042f95f793e61258434951898',1,'VW']]],
   ['copy_5fexample_5fdata',['copy_example_data',['../namespaceVW.html#a438340cadb70ab8eb3e461e3e8106b00',1,'VW']]],
   ['copy_5fexample_5fdata_5fwith_5flabel',['copy_example_data_with_label',['../namespaceVW.html#a51f22667a1c11c2a523ea3fcf42b8d34',1,'VW']]],
   ['copy_5fexample_5fmetadata',['copy_example_metadata',['../namespaceVW.html#af392a5d3678ff1b726f8a9f2720ac89e',1,'VW']]],

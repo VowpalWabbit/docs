@@ -129,6 +129,18 @@ Functions</h2></td></tr>
 <tr class="separator:a0969827f2d184289944119b2dc569b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a852fd9b5c7c40d9dab896a7b1b68bd52"><td class="memItemLeft" align="right" valign="top">static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#a852fd9b5c7c40d9dab896a7b1b68bd52">getblock</a> (const uint32_t *p, int i) noexcept</td></tr>
 <tr class="separator:a852fd9b5c7c40d9dab896a7b1b68bd52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac06af20e847d3d698d0628e940ce43f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#ac06af20e847d3d698d0628e940ce43f5">cache_tag</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;cache, const <a class="el" href="structVW_1_1v__array.html">VW::v_array</a>&lt; char &gt; &amp;tag)</td></tr>
+<tr class="separator:ac06af20e847d3d698d0628e940ce43f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00e24fd4fd4b2c9886c4b9b404427474"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#a00e24fd4fd4b2c9886c4b9b404427474">cache_index</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;cache, <a class="el" href="namespaceVW.html#abbbfd142fffaccd884cf1762f553eb50">VW::namespace_index</a> index)</td></tr>
+<tr class="separator:a00e24fd4fd4b2c9886c4b9b404427474"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac72243e892e0454ba1847f80ecc483d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#ac72243e892e0454ba1847f80ecc483d4">cache_features</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;cache, const <a class="el" href="structfeatures.html">features</a> &amp;feats, uint64_t mask)</td></tr>
+<tr class="separator:ac72243e892e0454ba1847f80ecc483d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af959541b41aaf0750a0a5b42a8ae260a"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#af959541b41aaf0750a0a5b42a8ae260a">read_cached_tag</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;cache, <a class="el" href="structVW_1_1v__array.html">VW::v_array</a>&lt; char &gt; &amp;tag)</td></tr>
+<tr class="separator:af959541b41aaf0750a0a5b42a8ae260a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05b89b7e6655dc425da740746e1b1206"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#a05b89b7e6655dc425da740746e1b1206">read_cached_index</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;input, <a class="el" href="namespaceVW.html#abbbfd142fffaccd884cf1762f553eb50">VW::namespace_index</a> &amp;index)</td></tr>
+<tr class="separator:a05b89b7e6655dc425da740746e1b1206"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbee9d948ad678151af6084711502a0b"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#afbee9d948ad678151af6084711502a0b">read_cached_features</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;input, <a class="el" href="structfeatures.html">features</a> &amp;feats, bool &amp;sorted)</td></tr>
+<tr class="separator:afbee9d948ad678151af6084711502a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3879df5b180db6a789f312968940cad"><td class="memItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#ad3879df5b180db6a789f312968940cad">constexpr_int_pow10</a> (uint8_t exponent)</td></tr>
 <tr class="separator:ad3879df5b180db6a789f312968940cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00f89d94c130db70248d92c279b9780f"><td class="memItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#a00f89d94c130db70248d92c279b9780f">constexpr_negative_int_pow10</a> (uint8_t exponent)</td></tr>
@@ -164,6 +176,96 @@ Variables</h2></td></tr>
 <tr class="separator:a0f1125444903ece7363ba8cca4b435a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ac72243e892e0454ba1847f80ecc483d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac72243e892e0454ba1847f80ecc483d4">&#9670;&nbsp;</a></span>cache_features()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VW::details::cache_features </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classio__buf.html">io_buf</a> &amp;&#160;</td>
+          <td class="paramname"><em>cache</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structfeatures.html">features</a> &amp;&#160;</td>
+          <td class="paramname"><em>feats</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>mask</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a00e24fd4fd4b2c9886c4b9b404427474"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00e24fd4fd4b2c9886c4b9b404427474">&#9670;&nbsp;</a></span>cache_index()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VW::details::cache_index </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classio__buf.html">io_buf</a> &amp;&#160;</td>
+          <td class="paramname"><em>cache</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceVW.html#abbbfd142fffaccd884cf1762f553eb50">VW::namespace_index</a>&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac06af20e847d3d698d0628e940ce43f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac06af20e847d3d698d0628e940ce43f5">&#9670;&nbsp;</a></span>cache_tag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VW::details::cache_tag </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classio__buf.html">io_buf</a> &amp;&#160;</td>
+          <td class="paramname"><em>cache</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structVW_1_1v__array.html">VW::v_array</a>&lt; char &gt; &amp;&#160;</td>
+          <td class="paramname"><em>tag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ad3879df5b180db6a789f312968940cad"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad3879df5b180db6a789f312968940cad">&#9670;&nbsp;</a></span>constexpr_int_pow10()</h2>
 
@@ -386,6 +488,96 @@ template&lt;std::size_t ArrayLength, std::size_t... IntegerSequence&gt; </div>
 
 </div>
 </div>
+<a id="afbee9d948ad678151af6084711502a0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbee9d948ad678151af6084711502a0b">&#9670;&nbsp;</a></span>read_cached_features()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t VW::details::read_cached_features </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classio__buf.html">io_buf</a> &amp;&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structfeatures.html">features</a> &amp;&#160;</td>
+          <td class="paramname"><em>feats</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>sorted</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a05b89b7e6655dc425da740746e1b1206"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05b89b7e6655dc425da740746e1b1206">&#9670;&nbsp;</a></span>read_cached_index()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t VW::details::read_cached_index </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classio__buf.html">io_buf</a> &amp;&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceVW.html#abbbfd142fffaccd884cf1762f553eb50">VW::namespace_index</a> &amp;&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af959541b41aaf0750a0a5b42a8ae260a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af959541b41aaf0750a0a5b42a8ae260a">&#9670;&nbsp;</a></span>read_cached_tag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t VW::details::read_cached_tag </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classio__buf.html">io_buf</a> &amp;&#160;</td>
+          <td class="paramname"><em>cache</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structVW_1_1v__array.html">VW::v_array</a>&lt; char &gt; &amp;&#160;</td>
+          <td class="paramname"><em>tag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af141aa5de22ad4b5c23c5d0e44a58272"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af141aa5de22ad4b5c23c5d0e44a58272">&#9670;&nbsp;</a></span>rotl32()</h2>
 
@@ -544,7 +736,7 @@ template&lt;std::size_t ArrayLength, std::size_t... IntegerSequence&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 2 2022 21:03:35 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue May 3 2022 15:42:41 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
