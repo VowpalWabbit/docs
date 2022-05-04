@@ -39,7 +39,6 @@ var searchData=
   ['so_5ffar',['so_far',['../structINTERACTIONS_1_1extent__interaction__expansion__stack__item.html#a78df2cdec6aec788d54c7927becba396',1,'INTERACTIONS::extent_interaction_expansion_stack_item']]],
   ['sort_5ffeatures',['sort_features',['../structparser.html#a5ae94d4ac8f7d070a13fa77800b73b49',1,'parser']]],
   ['sorted',['sorted',['../structVW_1_1example.html#ab9050ee843f96b866eb55641b8e9679c',1,'VW::example']]],
-  ['sorted_5fcache',['sorted_cache',['../structparser.html#a4000a39c49cd83d4833c344849f1bc2d',1,'parser']]],
   ['space_5fnames',['space_names',['../structfeatures.html#ac3bc8bb26c26c054e6e9046b2ca80b95',1,'features']]],
   ['sparse',['sparse',['../classparameters.html#a83947face4285f451b42f9283ea127e8',1,'parameters']]],
   ['sparse_5fweights',['sparse_weights',['../classparameters.html#a276f4673850e9650c1360a78c9afab97',1,'parameters']]],
