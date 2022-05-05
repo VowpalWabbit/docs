@@ -126,11 +126,11 @@ Functions</h2></td></tr>
 <tr class="memitem:a036dbbc459d89ad19f29a35b92d7bdf6"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a036dbbc459d89ad19f29a35b92d7bdf6"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1model__utils_1_1details.html#a036dbbc459d89ad19f29a35b92d7bdf6">VW::model_utils::details::write_text_mode_output</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;io, const T &amp;var, const std::string &amp;name_or_readable_field_template)</td></tr>
 <tr class="separator:a036dbbc459d89ad19f29a35b92d7bdf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00c0484c8e2f535471c1609b4b6b7dbf"><td class="memTemplParams" colspan="2">template&lt;typename T , typename std::enable_if&lt;!std::is_pointer&lt; T &gt;::value &amp;&amp;std::is_trivially_copyable&lt; T &gt;::value &amp;&amp;std::is_pod&lt; T &gt;::value, bool &gt;::type  = true&gt; </td></tr>
+<tr class="memitem:a00c0484c8e2f535471c1609b4b6b7dbf"><td class="memTemplParams" colspan="2">template&lt;typename T , typename std::enable_if&lt; !std::is_pointer&lt; T &gt;::value &amp;&amp;std::is_trivial&lt; T &gt;::value &amp;&amp;std::is_standard_layout&lt; T &gt;::value, bool &gt;::type  = true&gt; </td></tr>
 <tr class="memitem:a00c0484c8e2f535471c1609b4b6b7dbf"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1model__utils.html#a00c0484c8e2f535471c1609b4b6b7dbf">VW::model_utils::read_model_field</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;io, T &amp;var)</td></tr>
 <tr class="memdesc:a00c0484c8e2f535471c1609b4b6b7dbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is the uniform interface reading a variable from the model file. The value must be a POD type.  <a href="namespaceVW_1_1model__utils.html#a00c0484c8e2f535471c1609b4b6b7dbf">More...</a><br /></td></tr>
 <tr class="separator:a00c0484c8e2f535471c1609b4b6b7dbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fcd4db144e072738f63a8d43585f55d"><td class="memTemplParams" colspan="2">template&lt;typename T , typename std::enable_if&lt;!std::is_pointer&lt; T &gt;::value &amp;&amp;std::is_trivially_copyable&lt; T &gt;::value &amp;&amp;std::is_pod&lt; T &gt;::value, bool &gt;::type  = true&gt; </td></tr>
+<tr class="memitem:a3fcd4db144e072738f63a8d43585f55d"><td class="memTemplParams" colspan="2">template&lt;typename T , typename std::enable_if&lt; !std::is_pointer&lt; T &gt;::value &amp;&amp;std::is_trivial&lt; T &gt;::value &amp;&amp;std::is_standard_layout&lt; T &gt;::value, bool &gt;::type  = true&gt; </td></tr>
 <tr class="memitem:a3fcd4db144e072738f63a8d43585f55d"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1model__utils.html#a3fcd4db144e072738f63a8d43585f55d">VW::model_utils::write_model_field</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;io, const T &amp;var, const std::string &amp;name_or_readable_field_template, bool text)</td></tr>
 <tr class="memdesc:a3fcd4db144e072738f63a8d43585f55d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is the uniform interface for serializing a variable to the model file. The value must be a POD type.  <a href="namespaceVW_1_1model__utils.html#a3fcd4db144e072738f63a8d43585f55d">More...</a><br /></td></tr>
 <tr class="separator:a3fcd4db144e072738f63a8d43585f55d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -178,7 +178,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 14:52:06 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu May 5 2022 17:25:29 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -164,11 +164,11 @@ Functions</h2></td></tr>
 <tr class="separator:a70aba1bb3cb2d0d09258f542dce24ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b3d3c6a8b0fef26a364ba3407e74ded"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1model__utils.html#a8b3d3c6a8b0fef26a364ba3407e74ded">write_model_field</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;io, const <a class="el" href="structVW_1_1flat__example.html">flat_example</a> &amp;fe, const std::string &amp;upstream_name, bool text, <a class="el" href="structVW_1_1label__parser.html">VW::label_parser</a> &amp;lbl_parser, uint64_t parse_mask)</td></tr>
 <tr class="separator:a8b3d3c6a8b0fef26a364ba3407e74ded"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00c0484c8e2f535471c1609b4b6b7dbf"><td class="memTemplParams" colspan="2">template&lt;typename T , typename std::enable_if&lt;!std::is_pointer&lt; T &gt;::value &amp;&amp;std::is_trivially_copyable&lt; T &gt;::value &amp;&amp;std::is_pod&lt; T &gt;::value, bool &gt;::type  = true&gt; </td></tr>
+<tr class="memitem:a00c0484c8e2f535471c1609b4b6b7dbf"><td class="memTemplParams" colspan="2">template&lt;typename T , typename std::enable_if&lt; !std::is_pointer&lt; T &gt;::value &amp;&amp;std::is_trivial&lt; T &gt;::value &amp;&amp;std::is_standard_layout&lt; T &gt;::value, bool &gt;::type  = true&gt; </td></tr>
 <tr class="memitem:a00c0484c8e2f535471c1609b4b6b7dbf"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1model__utils.html#a00c0484c8e2f535471c1609b4b6b7dbf">read_model_field</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;io, T &amp;var)</td></tr>
 <tr class="memdesc:a00c0484c8e2f535471c1609b4b6b7dbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is the uniform interface reading a variable from the model file. The value must be a POD type.  <a href="#a00c0484c8e2f535471c1609b4b6b7dbf">More...</a><br /></td></tr>
 <tr class="separator:a00c0484c8e2f535471c1609b4b6b7dbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fcd4db144e072738f63a8d43585f55d"><td class="memTemplParams" colspan="2">template&lt;typename T , typename std::enable_if&lt;!std::is_pointer&lt; T &gt;::value &amp;&amp;std::is_trivially_copyable&lt; T &gt;::value &amp;&amp;std::is_pod&lt; T &gt;::value, bool &gt;::type  = true&gt; </td></tr>
+<tr class="memitem:a3fcd4db144e072738f63a8d43585f55d"><td class="memTemplParams" colspan="2">template&lt;typename T , typename std::enable_if&lt; !std::is_pointer&lt; T &gt;::value &amp;&amp;std::is_trivial&lt; T &gt;::value &amp;&amp;std::is_standard_layout&lt; T &gt;::value, bool &gt;::type  = true&gt; </td></tr>
 <tr class="memitem:a3fcd4db144e072738f63a8d43585f55d"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1model__utils.html#a3fcd4db144e072738f63a8d43585f55d">write_model_field</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;io, const T &amp;var, const std::string &amp;name_or_readable_field_template, bool text)</td></tr>
 <tr class="memdesc:a3fcd4db144e072738f63a8d43585f55d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is the uniform interface for serializing a variable to the model file. The value must be a POD type.  <a href="#a3fcd4db144e072738f63a8d43585f55d">More...</a><br /></td></tr>
 <tr class="separator:a3fcd4db144e072738f63a8d43585f55d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -572,13 +572,41 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ad9d30e0fb9252abe5e2fe2c2fca5d089"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9d30e0fb9252abe5e2fe2c2fca5d089">&#9670;&nbsp;</a></span>read_model_field() <span class="overload">[12/34]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t VW::model_utils::read_model_field </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classio__buf.html">io_buf</a> &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structCOST__SENSITIVE_1_1wclass.html">COST_SENSITIVE::wclass</a> &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a00c0484c8e2f535471c1609b4b6b7dbf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00c0484c8e2f535471c1609b4b6b7dbf">&#9670;&nbsp;</a></span>read_model_field() <span class="overload">[12/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a00c0484c8e2f535471c1609b4b6b7dbf">&#9670;&nbsp;</a></span>read_model_field() <span class="overload">[13/34]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename std::enable_if&lt;!std::is_pointer&lt; T &gt;::value &amp;&amp;std::is_trivially_copyable&lt; T &gt;::value &amp;&amp;std::is_pod&lt; T &gt;::value, bool &gt;::type  = true&gt; </div>
+template&lt;typename T , typename std::enable_if&lt; !std::is_pointer&lt; T &gt;::value &amp;&amp;std::is_trivial&lt; T &gt;::value &amp;&amp;std::is_standard_layout&lt; T &gt;::value, bool &gt;::type  = true&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">size_t VW::model_utils::read_model_field </td>
@@ -615,34 +643,6 @@ template&lt;typename T , typename std::enable_if&lt;!std::is_pointer&lt; T &gt;:
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>size_t the number of bytes read </dd></dl>
-
-</div>
-</div>
-<a id="ad9d30e0fb9252abe5e2fe2c2fca5d089"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9d30e0fb9252abe5e2fe2c2fca5d089">&#9670;&nbsp;</a></span>read_model_field() <span class="overload">[13/34]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t VW::model_utils::read_model_field </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classio__buf.html">io_buf</a> &amp;&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structCOST__SENSITIVE_1_1wclass.html">COST_SENSITIVE::wclass</a> &amp;&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -996,8 +996,36 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a6006b7de87ca2f6c5cb1f0a75a214042"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6006b7de87ca2f6c5cb1f0a75a214042">&#9670;&nbsp;</a></span>read_model_field() <span class="overload">[26/34]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t VW::model_utils::read_model_field </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classio__buf.html">io_buf</a> &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structCCB_1_1label.html">CCB::label</a> &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa761ab9b3e6ccb0cde9d3dfab3167e5b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa761ab9b3e6ccb0cde9d3dfab3167e5b">&#9670;&nbsp;</a></span>read_model_field() <span class="overload">[26/34]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa761ab9b3e6ccb0cde9d3dfab3167e5b">&#9670;&nbsp;</a></span>read_model_field() <span class="overload">[27/34]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1015,34 +1043,6 @@ template&lt;typename F , typename S &gt; </div>
           <td></td>
           <td class="paramtype">std::pair&lt; F, S &gt; &amp;&#160;</td>
           <td class="paramname"><em>pair</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6006b7de87ca2f6c5cb1f0a75a214042"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6006b7de87ca2f6c5cb1f0a75a214042">&#9670;&nbsp;</a></span>read_model_field() <span class="overload">[27/34]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t VW::model_utils::read_model_field </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classio__buf.html">io_buf</a> &amp;&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structCCB_1_1label.html">CCB::label</a> &amp;&#160;</td>
-          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2028,7 +2028,7 @@ template&lt;typename CMType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename std::enable_if&lt;!std::is_pointer&lt; T &gt;::value &amp;&amp;std::is_trivially_copyable&lt; T &gt;::value &amp;&amp;std::is_pod&lt; T &gt;::value, bool &gt;::type  = true&gt; </div>
+template&lt;typename T , typename std::enable_if&lt; !std::is_pointer&lt; T &gt;::value &amp;&amp;std::is_trivial&lt; T &gt;::value &amp;&amp;std::is_standard_layout&lt; T &gt;::value, bool &gt;::type  = true&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">size_t VW::model_utils::write_model_field </td>
@@ -2684,7 +2684,7 @@ template&lt;typename CMType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 5 2022 14:52:06 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu May 5 2022 17:25:29 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
