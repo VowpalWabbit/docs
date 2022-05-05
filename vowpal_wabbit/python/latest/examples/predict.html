@@ -499,14 +499,25 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 <span class="k">def</span> <span class="nf">my_predict</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">ex</span><span class="p">):</span>
-    <span class="n">pp</span> <span class="o">=</span> <span class="mf">0.</span>
-    <span class="k">for</span> <span class="n">f</span><span class="p">,</span><span class="n">v</span> <span class="ow">in</span> <span class="n">ex</span><span class="o">.</span><span class="n">iter_features</span><span class="p">():</span>
+    <span class="n">pp</span> <span class="o">=</span> <span class="mf">0.0</span>
+    <span class="k">for</span> <span class="n">f</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">ex</span><span class="o">.</span><span class="n">iter_features</span><span class="p">():</span>
         <span class="n">pp</span> <span class="o">+=</span> <span class="n">vw</span><span class="o">.</span><span class="n">get_weight</span><span class="p">(</span><span class="n">f</span><span class="p">)</span> <span class="o">*</span> <span class="n">v</span>
     <span class="k">return</span> <span class="n">pp</span>
 
-<span class="k">def</span> <span class="nf">ensure_close</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">eps</span><span class="o">=</span><span class="mf">1e-6</span><span class="p">):</span>
-    <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">a</span><span class="o">-</span><span class="n">b</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">eps</span><span class="p">:</span>
-        <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;test failed: expected &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; and &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">b</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; to be &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">eps</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;-close, but they differ by &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">a</span><span class="o">-</span><span class="n">b</span><span class="p">)))</span>
+
+<span class="k">def</span> <span class="nf">ensure_close</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">eps</span><span class="o">=</span><span class="mf">1e-6</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">a</span> <span class="o">-</span> <span class="n">b</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">eps</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span>
+            <span class="s2">&quot;test failed: expected &quot;</span>
+            <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+            <span class="o">+</span> <span class="s2">&quot; and &quot;</span>
+            <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+            <span class="o">+</span> <span class="s2">&quot; to be &quot;</span>
+            <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">eps</span><span class="p">)</span>
+            <span class="o">+</span> <span class="s2">&quot;-close, but they differ by &quot;</span>
+            <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">a</span> <span class="o">-</span> <span class="n">b</span><span class="p">))</span>
+        <span class="p">)</span>
+
 
 <span class="c1">###############################################################################</span>
 <span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--quiet&quot;</span><span class="p">)</span>
@@ -517,38 +528,50 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 <span class="c1">###############################################################################</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;# do some stuff with a read example:&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# do some stuff with a read example:&quot;</span><span class="p">)</span>
 <span class="n">ex</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">example</span><span class="p">(</span><span class="s2">&quot;1 |x a b |y c&quot;</span><span class="p">)</span>
-<span class="n">ex</span><span class="o">.</span><span class="n">learn</span><span class="p">()</span> <span class="p">;</span> <span class="n">ex</span><span class="o">.</span><span class="n">learn</span><span class="p">()</span> <span class="p">;</span> <span class="n">ex</span><span class="o">.</span><span class="n">learn</span><span class="p">()</span> <span class="p">;</span> <span class="n">ex</span><span class="o">.</span><span class="n">learn</span><span class="p">()</span>
+<span class="n">ex</span><span class="o">.</span><span class="n">learn</span><span class="p">()</span>
+<span class="n">ex</span><span class="o">.</span><span class="n">learn</span><span class="p">()</span>
+<span class="n">ex</span><span class="o">.</span><span class="n">learn</span><span class="p">()</span>
+<span class="n">ex</span><span class="o">.</span><span class="n">learn</span><span class="p">()</span>
 
 <span class="n">updated_pred</span> <span class="o">=</span> <span class="n">ex</span><span class="o">.</span><span class="n">get_updated_prediction</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;current partial prediction =&#39;</span><span class="p">,</span> <span class="n">updated_pred</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;current partial prediction =&quot;</span><span class="p">,</span> <span class="n">updated_pred</span><span class="p">)</span>
 
 <span class="c1"># compute our own prediction</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;        my view of example =&#39;</span><span class="p">,</span> <span class="nb">str</span><span class="p">([(</span><span class="n">f</span><span class="p">,</span><span class="n">v</span><span class="p">,</span><span class="n">vw</span><span class="o">.</span><span class="n">get_weight</span><span class="p">(</span><span class="n">f</span><span class="p">))</span> <span class="k">for</span> <span class="n">f</span><span class="p">,</span><span class="n">v</span> <span class="ow">in</span> <span class="n">ex</span><span class="o">.</span><span class="n">iter_features</span><span class="p">()]))</span>
+<span class="nb">print</span><span class="p">(</span>
+    <span class="s2">&quot;        my view of example =&quot;</span><span class="p">,</span>
+    <span class="nb">str</span><span class="p">([(</span><span class="n">f</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">vw</span><span class="o">.</span><span class="n">get_weight</span><span class="p">(</span><span class="n">f</span><span class="p">))</span> <span class="k">for</span> <span class="n">f</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">ex</span><span class="o">.</span><span class="n">iter_features</span><span class="p">()]),</span>
+<span class="p">)</span>
 <span class="n">my_pred</span> <span class="o">=</span> <span class="n">my_predict</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">ex</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;     my partial prediction =&#39;</span><span class="p">,</span> <span class="n">my_pred</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;     my partial prediction =&quot;</span><span class="p">,</span> <span class="n">my_pred</span><span class="p">)</span>
 <span class="n">ensure_close</span><span class="p">(</span><span class="n">updated_pred</span><span class="p">,</span> <span class="n">my_pred</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
 <span class="n">vw</span><span class="o">.</span><span class="n">finish_example</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
 
 <span class="c1">###############################################################################</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;# make our own example from scratch&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# make our own example from scratch&quot;</span><span class="p">)</span>
 <span class="n">ex</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">example</span><span class="p">()</span>
 <span class="n">ex</span><span class="o">.</span><span class="n">set_label_string</span><span class="p">(</span><span class="s2">&quot;0&quot;</span><span class="p">)</span>
-<span class="n">ex</span><span class="o">.</span><span class="n">push_features</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">])</span>
-<span class="n">ex</span><span class="o">.</span><span class="n">push_features</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="p">[(</span><span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="mf">1.</span><span class="p">)])</span>
+<span class="n">ex</span><span class="o">.</span><span class="n">push_features</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">])</span>
+<span class="n">ex</span><span class="o">.</span><span class="n">push_features</span><span class="p">(</span><span class="s2">&quot;y&quot;</span><span class="p">,</span> <span class="p">[(</span><span class="s2">&quot;c&quot;</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">)])</span>
 <span class="n">ex</span><span class="o">.</span><span class="n">setup_example</span><span class="p">()</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;        my view of example =&#39;</span><span class="p">,</span> <span class="nb">str</span><span class="p">([(</span><span class="n">f</span><span class="p">,</span><span class="n">v</span><span class="p">,</span><span class="n">vw</span><span class="o">.</span><span class="n">get_weight</span><span class="p">(</span><span class="n">f</span><span class="p">))</span> <span class="k">for</span> <span class="n">f</span><span class="p">,</span><span class="n">v</span> <span class="ow">in</span> <span class="n">ex</span><span class="o">.</span><span class="n">iter_features</span><span class="p">()]))</span>
+<span class="nb">print</span><span class="p">(</span>
+    <span class="s2">&quot;        my view of example =&quot;</span><span class="p">,</span>
+    <span class="nb">str</span><span class="p">([(</span><span class="n">f</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">vw</span><span class="o">.</span><span class="n">get_weight</span><span class="p">(</span><span class="n">f</span><span class="p">))</span> <span class="k">for</span> <span class="n">f</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">ex</span><span class="o">.</span><span class="n">iter_features</span><span class="p">()]),</span>
+<span class="p">)</span>
 <span class="n">my_pred2</span> <span class="o">=</span> <span class="n">my_predict</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">ex</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;     my partial prediction =&#39;</span><span class="p">,</span> <span class="n">my_pred2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;     my partial prediction =&quot;</span><span class="p">,</span> <span class="n">my_pred2</span><span class="p">)</span>
 <span class="n">ensure_close</span><span class="p">(</span><span class="n">my_pred</span><span class="p">,</span> <span class="n">my_pred2</span><span class="p">)</span>
 
-<span class="n">ex</span><span class="o">.</span><span class="n">learn</span><span class="p">()</span> <span class="p">;</span> <span class="n">ex</span><span class="o">.</span><span class="n">learn</span><span class="p">()</span> <span class="p">;</span> <span class="n">ex</span><span class="o">.</span><span class="n">learn</span><span class="p">()</span> <span class="p">;</span> <span class="n">ex</span><span class="o">.</span><span class="n">learn</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;  final partial prediction =&#39;</span><span class="p">,</span> <span class="n">ex</span><span class="o">.</span><span class="n">get_updated_prediction</span><span class="p">())</span>
-<span class="n">ensure_close</span><span class="p">(</span><span class="n">ex</span><span class="o">.</span><span class="n">get_updated_prediction</span><span class="p">(),</span> <span class="n">my_predict</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span><span class="n">ex</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="n">ex</span><span class="o">.</span><span class="n">learn</span><span class="p">()</span>
+<span class="n">ex</span><span class="o">.</span><span class="n">learn</span><span class="p">()</span>
+<span class="n">ex</span><span class="o">.</span><span class="n">learn</span><span class="p">()</span>
+<span class="n">ex</span><span class="o">.</span><span class="n">learn</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;  final partial prediction =&quot;</span><span class="p">,</span> <span class="n">ex</span><span class="o">.</span><span class="n">get_updated_prediction</span><span class="p">())</span>
+<span class="n">ensure_close</span><span class="p">(</span><span class="n">ex</span><span class="o">.</span><span class="n">get_updated_prediction</span><span class="p">(),</span> <span class="n">my_predict</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">ex</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
 <span class="n">vw</span><span class="o">.</span><span class="n">finish_example</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
 
 
@@ -562,7 +585,7 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="k">for</span> <span class="n">ex</span> <span class="ow">in</span> <span class="n">exList</span><span class="p">:</span>
     <span class="n">vw</span><span class="o">.</span><span class="n">finish_example</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
 
-<span class="n">exList</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1"># this should __del__ the examples, we hope :)</span>
+<span class="n">exList</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># this should __del__ the examples, we hope :)</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">120</span><span class="p">):</span>
     <span class="n">ex</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">example</span><span class="p">()</span>
     <span class="n">exList</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
@@ -576,13 +599,12 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
     <span class="n">ex</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">example</span><span class="p">(</span><span class="s2">&quot;1 foo| a b&quot;</span><span class="p">)</span>
     <span class="n">ex</span><span class="o">.</span><span class="n">learn</span><span class="p">()</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;tag =&#39;</span><span class="p">,</span> <span class="n">ex</span><span class="o">.</span><span class="n">get_tag</span><span class="p">())</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;partial pred =&#39;</span><span class="p">,</span> <span class="n">ex</span><span class="o">.</span><span class="n">get_partial_prediction</span><span class="p">())</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;loss =&#39;</span><span class="p">,</span> <span class="n">ex</span><span class="o">.</span><span class="n">get_loss</span><span class="p">())</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;tag =&quot;</span><span class="p">,</span> <span class="n">ex</span><span class="o">.</span><span class="n">get_tag</span><span class="p">())</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;partial pred =&quot;</span><span class="p">,</span> <span class="n">ex</span><span class="o">.</span><span class="n">get_partial_prediction</span><span class="p">())</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;loss =&quot;</span><span class="p">,</span> <span class="n">ex</span><span class="o">.</span><span class="n">get_loss</span><span class="p">())</span>
 
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;label =&#39;</span><span class="p">,</span> <span class="n">ex</span><span class="o">.</span><span class="n">get_label</span><span class="p">())</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;label =&quot;</span><span class="p">,</span> <span class="n">ex</span><span class="o">.</span><span class="n">get_label</span><span class="p">())</span>
     <span class="n">vw</span><span class="o">.</span><span class="n">finish_example</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
-
 
 
 <span class="c1"># to be safe, finish explicity (should happen by default anyway)</span>
@@ -590,28 +612,31 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 <span class="c1">###############################################################################</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;# test some save/load behavior&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# test some save/load behavior&quot;</span><span class="p">)</span>
 <span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--quiet -f test.model&quot;</span><span class="p">)</span>
 <span class="n">ex</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">example</span><span class="p">(</span><span class="s2">&quot;1 |x a b |y c&quot;</span><span class="p">)</span>
-<span class="n">ex</span><span class="o">.</span><span class="n">learn</span><span class="p">()</span> <span class="p">;</span> <span class="n">ex</span><span class="o">.</span><span class="n">learn</span><span class="p">()</span> <span class="p">;</span> <span class="n">ex</span><span class="o">.</span><span class="n">learn</span><span class="p">()</span> <span class="p">;</span> <span class="n">ex</span><span class="o">.</span><span class="n">learn</span><span class="p">()</span>
+<span class="n">ex</span><span class="o">.</span><span class="n">learn</span><span class="p">()</span>
+<span class="n">ex</span><span class="o">.</span><span class="n">learn</span><span class="p">()</span>
+<span class="n">ex</span><span class="o">.</span><span class="n">learn</span><span class="p">()</span>
+<span class="n">ex</span><span class="o">.</span><span class="n">learn</span><span class="p">()</span>
 <span class="n">before_save</span> <span class="o">=</span> <span class="n">ex</span><span class="o">.</span><span class="n">get_updated_prediction</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;before saving, prediction =&#39;</span><span class="p">,</span> <span class="n">before_save</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;before saving, prediction =&quot;</span><span class="p">,</span> <span class="n">before_save</span><span class="p">)</span>
 <span class="n">vw</span><span class="o">.</span><span class="n">finish_example</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
 
-<span class="n">vw</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>   <span class="c1"># this should create the file</span>
+<span class="n">vw</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>  <span class="c1"># this should create the file</span>
 
 <span class="c1"># now re-start vw by loading that model</span>
 <span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--quiet -i test.model&quot;</span><span class="p">)</span>
 <span class="n">ex</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">example</span><span class="p">(</span><span class="s2">&quot;1 |x a b |y c&quot;</span><span class="p">)</span>  <span class="c1"># test example</span>
 <span class="n">ex</span><span class="o">.</span><span class="n">learn</span><span class="p">()</span>
 <span class="n">after_save</span> <span class="o">=</span> <span class="n">ex</span><span class="o">.</span><span class="n">get_partial_prediction</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39; after saving, prediction =&#39;</span><span class="p">,</span> <span class="n">after_save</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot; after saving, prediction =&quot;</span><span class="p">,</span> <span class="n">after_save</span><span class="p">)</span>
 <span class="n">vw</span><span class="o">.</span><span class="n">finish_example</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
 
 <span class="n">ensure_close</span><span class="p">(</span><span class="n">before_save</span><span class="p">,</span> <span class="n">after_save</span><span class="p">)</span>
-<span class="n">vw</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>   <span class="c1"># this should create the file</span>
+<span class="n">vw</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>  <span class="c1"># this should create the file</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;done!&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;done!&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>

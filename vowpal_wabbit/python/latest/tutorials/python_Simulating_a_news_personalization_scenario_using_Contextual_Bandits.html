@@ -647,18 +647,18 @@ const thebe_selector_output = ".output, .cell_output"
 <p>The reward function below specifies that Tom likes politics in the morning and music in the afternoon whereas Anna likes sports in the morning and politics in the afternoon. It looks dense but we are just simulating our hypothetical world in the format of the feedback the learner understands: cost. If the learner recommends an article that aligns with the reward function, we give a positive reward. In our simulated world this is a click.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_cost</span><span class="p">(</span><span class="n">context</span><span class="p">,</span><span class="n">action</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s1">&#39;user&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Tom&quot;</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s1">&#39;time_of_day&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s1">&#39;politics&#39;</span><span class="p">:</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_cost</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">action</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;user&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Tom&quot;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;politics&quot;</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">USER_LIKED_ARTICLE</span>
-        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s1">&#39;time_of_day&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;afternoon&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s1">&#39;music&#39;</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;afternoon&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;music&quot;</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">USER_LIKED_ARTICLE</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">USER_DISLIKED_ARTICLE</span>
-    <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s1">&#39;user&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Anna&quot;</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s1">&#39;time_of_day&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s1">&#39;sports&#39;</span><span class="p">:</span>
+    <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;user&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Anna&quot;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;sports&quot;</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">USER_LIKED_ARTICLE</span>
-        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s1">&#39;time_of_day&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;afternoon&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s1">&#39;politics&#39;</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;afternoon&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;politics&quot;</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">USER_LIKED_ARTICLE</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">USER_DISLIKED_ARTICLE</span>
@@ -673,16 +673,18 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># This function modifies (context, action, cost, probability) to VW friendly format</span>
-<span class="k">def</span> <span class="nf">to_vw_example_format</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">cb_label</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">to_vw_example_format</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">cb_label</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">cb_label</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
         <span class="n">chosen_action</span><span class="p">,</span> <span class="n">cost</span><span class="p">,</span> <span class="n">prob</span> <span class="o">=</span> <span class="n">cb_label</span>
     <span class="n">example_string</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
-    <span class="n">example_string</span> <span class="o">+=</span> <span class="s2">&quot;shared |User user=</span><span class="si">{}</span><span class="s2"> time_of_day=</span><span class="si">{}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">context</span><span class="p">[</span><span class="s2">&quot;user&quot;</span><span class="p">],</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">])</span>
+    <span class="n">example_string</span> <span class="o">+=</span> <span class="s2">&quot;shared |User user=</span><span class="si">{}</span><span class="s2"> time_of_day=</span><span class="si">{}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+        <span class="n">context</span><span class="p">[</span><span class="s2">&quot;user&quot;</span><span class="p">],</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span>
+    <span class="p">)</span>
     <span class="k">for</span> <span class="n">action</span> <span class="ow">in</span> <span class="n">actions</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">cb_label</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="n">chosen_action</span><span class="p">:</span>
             <span class="n">example_string</span> <span class="o">+=</span> <span class="s2">&quot;0:</span><span class="si">{}</span><span class="s2">:</span><span class="si">{}</span><span class="s2"> &quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">cost</span><span class="p">,</span> <span class="n">prob</span><span class="p">)</span>
         <span class="n">example_string</span> <span class="o">+=</span> <span class="s2">&quot;|Action article=</span><span class="si">{}</span><span class="s2"> </span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">action</span><span class="p">)</span>
-    <span class="c1">#Strip the last newline</span>
+    <span class="c1"># Strip the last newline</span>
     <span class="k">return</span> <span class="n">example_string</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
 </pre></div>
 </div>
@@ -691,10 +693,10 @@ const thebe_selector_output = ".output, .cell_output"
 <p>To understand what’s going on here let’s go through an example. Here, it’s the morning and the user is Tom. There are four possible articles. So in the VW format there is one line that starts with shared, this is the shared context, followed by four lines each corresponding to an article.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">context</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;user&quot;</span><span class="p">:</span><span class="s2">&quot;Tom&quot;</span><span class="p">,</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">:</span><span class="s2">&quot;morning&quot;</span><span class="p">}</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">context</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;user&quot;</span><span class="p">:</span> <span class="s2">&quot;Tom&quot;</span><span class="p">,</span> <span class="s2">&quot;time_of_day&quot;</span><span class="p">:</span> <span class="s2">&quot;morning&quot;</span><span class="p">}</span>
 <span class="n">actions</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;politics&quot;</span><span class="p">,</span> <span class="s2">&quot;sports&quot;</span><span class="p">,</span> <span class="s2">&quot;music&quot;</span><span class="p">,</span> <span class="s2">&quot;food&quot;</span><span class="p">]</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">to_vw_example_format</span><span class="p">(</span><span class="n">context</span><span class="p">,</span><span class="n">actions</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">to_vw_example_format</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">actions</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -717,13 +719,13 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">sample_custom_pmf</span><span class="p">(</span><span class="n">pmf</span><span class="p">):</span>
     <span class="n">total</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">pmf</span><span class="p">)</span>
-    <span class="n">scale</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="n">total</span>
+    <span class="n">scale</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">/</span> <span class="n">total</span>
     <span class="n">pmf</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="o">*</span> <span class="n">scale</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">pmf</span><span class="p">]</span>
     <span class="n">draw</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span>
     <span class="n">sum_prob</span> <span class="o">=</span> <span class="mf">0.0</span>
     <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">prob</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">pmf</span><span class="p">):</span>
         <span class="n">sum_prob</span> <span class="o">+=</span> <span class="n">prob</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">sum_prob</span> <span class="o">&gt;</span> <span class="n">draw</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">sum_prob</span> <span class="o">&gt;</span> <span class="n">draw</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">index</span><span class="p">,</span> <span class="n">prob</span>
 </pre></div>
 </div>
@@ -739,7 +741,7 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_action</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">context</span><span class="p">,</span> <span class="n">actions</span><span class="p">):</span>
-    <span class="n">vw_text_example</span> <span class="o">=</span> <span class="n">to_vw_example_format</span><span class="p">(</span><span class="n">context</span><span class="p">,</span><span class="n">actions</span><span class="p">)</span>
+    <span class="n">vw_text_example</span> <span class="o">=</span> <span class="n">to_vw_example_format</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">actions</span><span class="p">)</span>
     <span class="n">pmf</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">vw_text_example</span><span class="p">)</span>
     <span class="n">chosen_action_index</span><span class="p">,</span> <span class="n">prob</span> <span class="o">=</span> <span class="n">sample_custom_pmf</span><span class="p">(</span><span class="n">pmf</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">actions</span><span class="p">[</span><span class="n">chosen_action_index</span><span class="p">],</span> <span class="n">prob</span>
@@ -754,15 +756,18 @@ const thebe_selector_output = ".output, .cell_output"
 <p>We will choose between Tom and Anna uniformly at random and also choose their time of visit uniformly at random. You can think of this as us tossing a coin to choose between Tom and Anna (Anna if heads and Tom if tails) and another coin toss for choosing time of day.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">users</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Tom&#39;</span><span class="p">,</span> <span class="s1">&#39;Anna&#39;</span><span class="p">]</span>
-<span class="n">times_of_day</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;morning&#39;</span><span class="p">,</span> <span class="s1">&#39;afternoon&#39;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">users</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Tom&quot;</span><span class="p">,</span> <span class="s2">&quot;Anna&quot;</span><span class="p">]</span>
+<span class="n">times_of_day</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;morning&quot;</span><span class="p">,</span> <span class="s2">&quot;afternoon&quot;</span><span class="p">]</span>
 <span class="n">actions</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;politics&quot;</span><span class="p">,</span> <span class="s2">&quot;sports&quot;</span><span class="p">,</span> <span class="s2">&quot;music&quot;</span><span class="p">,</span> <span class="s2">&quot;food&quot;</span><span class="p">,</span> <span class="s2">&quot;finance&quot;</span><span class="p">,</span> <span class="s2">&quot;health&quot;</span><span class="p">,</span> <span class="s2">&quot;camping&quot;</span><span class="p">]</span>
+
 
 <span class="k">def</span> <span class="nf">choose_user</span><span class="p">(</span><span class="n">users</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">users</span><span class="p">)</span>
 
+
 <span class="k">def</span> <span class="nf">choose_time_of_day</span><span class="p">(</span><span class="n">times_of_day</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">times_of_day</span><span class="p">)</span>
+
 
 <span class="c1"># display preference matrix</span>
 <span class="k">def</span> <span class="nf">get_preference_matrix</span><span class="p">(</span><span class="n">cost_fun</span><span class="p">):</span>
@@ -770,12 +775,15 @@ const thebe_selector_output = ".output, .cell_output"
         <span class="n">rows</span> <span class="o">=</span> <span class="n">itertools</span><span class="o">.</span><span class="n">product</span><span class="p">(</span><span class="o">*</span><span class="n">data_dict</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
         <span class="k">return</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="o">.</span><span class="n">from_records</span><span class="p">(</span><span class="n">rows</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">data_dict</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
 
-    <span class="n">df</span> <span class="o">=</span> <span class="n">expand_grid</span><span class="p">({</span><span class="s1">&#39;users&#39;</span><span class="p">:</span><span class="n">users</span><span class="p">,</span> <span class="s1">&#39;times_of_day&#39;</span><span class="p">:</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="s1">&#39;actions&#39;</span><span class="p">:</span> <span class="n">actions</span><span class="p">})</span>
-    <span class="n">df</span><span class="p">[</span><span class="s1">&#39;cost&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">r</span><span class="p">:</span> <span class="n">cost_fun</span><span class="p">({</span><span class="s1">&#39;user&#39;</span><span class="p">:</span> <span class="n">r</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s1">&#39;time_of_day&#39;</span><span class="p">:</span> <span class="n">r</span><span class="p">[</span><span class="mi">1</span><span class="p">]},</span> <span class="n">r</span><span class="p">[</span><span class="mi">2</span><span class="p">]),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">expand_grid</span><span class="p">({</span><span class="s2">&quot;users&quot;</span><span class="p">:</span> <span class="n">users</span><span class="p">,</span> <span class="s2">&quot;times_of_day&quot;</span><span class="p">:</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="s2">&quot;actions&quot;</span><span class="p">:</span> <span class="n">actions</span><span class="p">})</span>
+    <span class="n">df</span><span class="p">[</span><span class="s2">&quot;cost&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span>
+        <span class="k">lambda</span> <span class="n">r</span><span class="p">:</span> <span class="n">cost_fun</span><span class="p">({</span><span class="s2">&quot;user&quot;</span><span class="p">:</span> <span class="n">r</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s2">&quot;time_of_day&quot;</span><span class="p">:</span> <span class="n">r</span><span class="p">[</span><span class="mi">1</span><span class="p">]},</span> <span class="n">r</span><span class="p">[</span><span class="mi">2</span><span class="p">]),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span>
+    <span class="p">)</span>
 
-    <span class="k">return</span> <span class="n">df</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;users&#39;</span><span class="p">,</span> <span class="s1">&#39;times_of_day&#39;</span><span class="p">],</span> 
-            <span class="n">columns</span><span class="o">=</span><span class="s1">&#39;actions&#39;</span><span class="p">,</span> 
-            <span class="n">values</span><span class="o">=</span><span class="s1">&#39;cost&#39;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">df</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span>
+        <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;users&quot;</span><span class="p">,</span> <span class="s2">&quot;times_of_day&quot;</span><span class="p">],</span> <span class="n">columns</span><span class="o">=</span><span class="s2">&quot;actions&quot;</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="s2">&quot;cost&quot;</span>
+    <span class="p">)</span>
+
 
 <span class="n">get_preference_matrix</span><span class="p">(</span><span class="n">get_cost</span><span class="p">)</span>
 </pre></div>
@@ -884,18 +892,20 @@ const thebe_selector_output = ".output, .cell_output"
 <p>This is the same for every one of our simulations, so we define the process in the <code class="docutils literal notranslate"><span class="pre">run_simulation</span></code> function. The cost function must be supplied as this is essentially us simulating how the world works.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">run_simulation</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">users</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">cost_function</span><span class="p">,</span> <span class="n">do_learn</span> <span class="o">=</span> <span class="kc">True</span><span class="p">):</span>
-    <span class="n">cost_sum</span> <span class="o">=</span> <span class="mf">0.</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">run_simulation</span><span class="p">(</span>
+    <span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">users</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">cost_function</span><span class="p">,</span> <span class="n">do_learn</span><span class="o">=</span><span class="kc">True</span>
+<span class="p">):</span>
+    <span class="n">cost_sum</span> <span class="o">=</span> <span class="mf">0.0</span>
     <span class="n">ctr</span> <span class="o">=</span> <span class="p">[]</span>
 
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_iterations</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_iterations</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
         <span class="c1"># 1. In each simulation choose a user</span>
         <span class="n">user</span> <span class="o">=</span> <span class="n">choose_user</span><span class="p">(</span><span class="n">users</span><span class="p">)</span>
         <span class="c1"># 2. Choose time of day for a given user</span>
         <span class="n">time_of_day</span> <span class="o">=</span> <span class="n">choose_time_of_day</span><span class="p">(</span><span class="n">times_of_day</span><span class="p">)</span>
 
         <span class="c1"># 3. Pass context to vw to get an action</span>
-        <span class="n">context</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;user&#39;</span><span class="p">:</span> <span class="n">user</span><span class="p">,</span> <span class="s1">&#39;time_of_day&#39;</span><span class="p">:</span> <span class="n">time_of_day</span><span class="p">}</span>
+        <span class="n">context</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;user&quot;</span><span class="p">:</span> <span class="n">user</span><span class="p">,</span> <span class="s2">&quot;time_of_day&quot;</span><span class="p">:</span> <span class="n">time_of_day</span><span class="p">}</span>
         <span class="n">action</span><span class="p">,</span> <span class="n">prob</span> <span class="o">=</span> <span class="n">get_action</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">context</span><span class="p">,</span> <span class="n">actions</span><span class="p">)</span>
 
         <span class="c1"># 4. Get cost of the action we chose</span>
@@ -904,12 +914,15 @@ const thebe_selector_output = ".output, .cell_output"
 
         <span class="k">if</span> <span class="n">do_learn</span><span class="p">:</span>
             <span class="c1"># 5. Inform VW of what happened so we can learn from it</span>
-            <span class="n">vw_format</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">to_vw_example_format</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="p">(</span><span class="n">action</span><span class="p">,</span> <span class="n">cost</span><span class="p">,</span> <span class="n">prob</span><span class="p">)),</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">LabelType</span><span class="o">.</span><span class="n">CONTEXTUAL_BANDIT</span><span class="p">)</span>
+            <span class="n">vw_format</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span>
+                <span class="n">to_vw_example_format</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="p">(</span><span class="n">action</span><span class="p">,</span> <span class="n">cost</span><span class="p">,</span> <span class="n">prob</span><span class="p">)),</span>
+                <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">LabelType</span><span class="o">.</span><span class="n">CONTEXTUAL_BANDIT</span><span class="p">,</span>
+            <span class="p">)</span>
             <span class="c1"># 6. Learn</span>
             <span class="n">vw</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">vw_format</span><span class="p">)</span>
 
         <span class="c1"># We negate this so that on the plot instead of minimizing cost, we are maximizing reward</span>
-        <span class="n">ctr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="o">*</span><span class="n">cost_sum</span><span class="o">/</span><span class="n">i</span><span class="p">)</span>
+        <span class="n">ctr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span> <span class="o">*</span> <span class="n">cost_sum</span> <span class="o">/</span> <span class="n">i</span><span class="p">)</span>
 
     <span class="k">return</span> <span class="n">ctr</span>
 </pre></div>
@@ -920,10 +933,10 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">plot_ctr</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">,</span> <span class="n">ctr</span><span class="p">):</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">num_iterations</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span> <span class="n">ctr</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;num_iterations&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;ctr&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_iterations</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">ctr</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;num_iterations&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;ctr&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
 </pre></div>
 </div>
 </div>
@@ -947,7 +960,7 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/293065ac7b1a5e2b2be0a3eec1b822f6fdce4dd8100476cc4f192b73fe6c2964.png" src="../_images/293065ac7b1a5e2b2be0a3eec1b822f6fdce4dd8100476cc4f192b73fe6c2964.png" />
+<img alt="../_images/6b8da278a65231df5937552d1a28aa2106deff2e59c5f54ec8d93dd1fef0d58b.png" src="../_images/6b8da278a65231df5937552d1a28aa2106deff2e59c5f54ec8d93dd1fef0d58b.png" />
 </div>
 </div>
 <section id="aside-interactions">
@@ -966,7 +979,7 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/a224bb909e539b6b476333e1d716dfcc133b6ae51773d49811e9db1fe9e0f47d.png" src="../_images/a224bb909e539b6b476333e1d716dfcc133b6ae51773d49811e9db1fe9e0f47d.png" />
+<img alt="../_images/098637ab7c7b526900e7011cbbec5cb8af265e78acbbcd3213917f536a4ed26a.png" src="../_images/098637ab7c7b526900e7011cbbec5cb8af265e78acbbcd3213917f536a4ed26a.png" />
 </div>
 </div>
 </section>
@@ -980,14 +993,16 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--cb_explore_adf -q UA --quiet --epsilon 0.2&quot;</span><span class="p">)</span>
 
 <span class="n">num_iterations</span> <span class="o">=</span> <span class="mi">5000</span>
-<span class="n">ctr</span> <span class="o">=</span> <span class="n">run_simulation</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">users</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">get_cost</span><span class="p">,</span> <span class="n">do_learn</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">ctr</span> <span class="o">=</span> <span class="n">run_simulation</span><span class="p">(</span>
+    <span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">users</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">get_cost</span><span class="p">,</span> <span class="n">do_learn</span><span class="o">=</span><span class="kc">False</span>
+<span class="p">)</span>
 
 <span class="n">plot_ctr</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">,</span> <span class="n">ctr</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/2ac37a2b65a684fa69523a6ea66c3488c66653691067b7f5ed12030f850ad9b2.png" src="../_images/2ac37a2b65a684fa69523a6ea66c3488c66653691067b7f5ed12030f850ad9b2.png" />
+<img alt="../_images/c65244321c88b1861044d72a3c89fd2d7a0d7872e9863522135f886d90490b7e.png" src="../_images/c65244321c88b1861044d72a3c89fd2d7a0d7872e9863522135f886d90490b7e.png" />
 </div>
 </div>
 </section>
@@ -1039,22 +1054,23 @@ const thebe_selector_output = ".output, .cell_output"
 <p>This reward function is still working with actions that the learner has seen previously.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_cost_new1</span><span class="p">(</span><span class="n">context</span><span class="p">,</span><span class="n">action</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s1">&#39;user&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Tom&quot;</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s1">&#39;time_of_day&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s1">&#39;politics&#39;</span><span class="p">:</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_cost_new1</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">action</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;user&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Tom&quot;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;politics&quot;</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">USER_LIKED_ARTICLE</span>
-        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s1">&#39;time_of_day&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;afternoon&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s1">&#39;sports&#39;</span><span class="p">:</span>
-            <span class="k">return</span> <span class="n">USER_LIKED_ARTICLE</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="k">return</span> <span class="n">USER_DISLIKED_ARTICLE</span>
-    <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s1">&#39;user&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Anna&quot;</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s1">&#39;time_of_day&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s1">&#39;sports&#39;</span><span class="p">:</span>
-            <span class="k">return</span> <span class="n">USER_LIKED_ARTICLE</span>
-        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s1">&#39;time_of_day&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;afternoon&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s1">&#39;sports&#39;</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;afternoon&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;sports&quot;</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">USER_LIKED_ARTICLE</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">USER_DISLIKED_ARTICLE</span>
-        
+    <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;user&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Anna&quot;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;sports&quot;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">USER_LIKED_ARTICLE</span>
+        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;afternoon&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;sports&quot;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">USER_LIKED_ARTICLE</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">USER_DISLIKED_ARTICLE</span>
+
+
 <span class="n">get_preference_matrix</span><span class="p">(</span><span class="n">get_cost_new1</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -1149,8 +1165,10 @@ const thebe_selector_output = ".output, .cell_output"
 <p>To make it easy to show the effect of the cost function changing we are going to modify the <code class="docutils literal notranslate"><span class="pre">run_simulation</span></code> function. It is a little less readable now, but it supports accepting a list of cost functions and it will operate over each cost function in turn. This is perfect for what we need.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">run_simulation_multiple_cost_functions</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">users</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">cost_functions</span><span class="p">,</span> <span class="n">do_learn</span> <span class="o">=</span> <span class="kc">True</span><span class="p">):</span>
-    <span class="n">cost_sum</span> <span class="o">=</span> <span class="mf">0.</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">run_simulation_multiple_cost_functions</span><span class="p">(</span>
+    <span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">users</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">cost_functions</span><span class="p">,</span> <span class="n">do_learn</span><span class="o">=</span><span class="kc">True</span>
+<span class="p">):</span>
+    <span class="n">cost_sum</span> <span class="o">=</span> <span class="mf">0.0</span>
     <span class="n">ctr</span> <span class="o">=</span> <span class="p">[]</span>
 
     <span class="n">start_counter</span> <span class="o">=</span> <span class="mi">1</span>
@@ -1163,7 +1181,7 @@ const thebe_selector_output = ".output, .cell_output"
             <span class="n">time_of_day</span> <span class="o">=</span> <span class="n">choose_time_of_day</span><span class="p">(</span><span class="n">times_of_day</span><span class="p">)</span>
 
             <span class="c1"># Construct context based on chosen user and time of day</span>
-            <span class="n">context</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;user&#39;</span><span class="p">:</span> <span class="n">user</span><span class="p">,</span> <span class="s1">&#39;time_of_day&#39;</span><span class="p">:</span> <span class="n">time_of_day</span><span class="p">}</span>
+            <span class="n">context</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;user&quot;</span><span class="p">:</span> <span class="n">user</span><span class="p">,</span> <span class="s2">&quot;time_of_day&quot;</span><span class="p">:</span> <span class="n">time_of_day</span><span class="p">}</span>
 
             <span class="c1"># 3. Use the get_action function we defined earlier</span>
             <span class="n">action</span><span class="p">,</span> <span class="n">prob</span> <span class="o">=</span> <span class="n">get_action</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">context</span><span class="p">,</span> <span class="n">actions</span><span class="p">)</span>
@@ -1174,12 +1192,15 @@ const thebe_selector_output = ".output, .cell_output"
 
             <span class="k">if</span> <span class="n">do_learn</span><span class="p">:</span>
                 <span class="c1"># 5. Inform VW of what happened so we can learn from it</span>
-                <span class="n">vw_format</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">to_vw_example_format</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="p">(</span><span class="n">action</span><span class="p">,</span> <span class="n">cost</span><span class="p">,</span> <span class="n">prob</span><span class="p">)),</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">LabelType</span><span class="o">.</span><span class="n">CONTEXTUAL_BANDIT</span><span class="p">)</span>
+                <span class="n">vw_format</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span>
+                    <span class="n">to_vw_example_format</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="p">(</span><span class="n">action</span><span class="p">,</span> <span class="n">cost</span><span class="p">,</span> <span class="n">prob</span><span class="p">)),</span>
+                    <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">LabelType</span><span class="o">.</span><span class="n">CONTEXTUAL_BANDIT</span><span class="p">,</span>
+                <span class="p">)</span>
                 <span class="c1"># 6. Learn</span>
                 <span class="n">vw</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">vw_format</span><span class="p">)</span>
 
             <span class="c1"># We negate this so that on the plot instead of minimizing cost, we are maximizing reward</span>
-            <span class="n">ctr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="o">*</span><span class="n">cost_sum</span><span class="o">/</span><span class="n">i</span><span class="p">)</span>
+            <span class="n">ctr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span> <span class="o">*</span> <span class="n">cost_sum</span> <span class="o">/</span> <span class="n">i</span><span class="p">)</span>
         <span class="n">start_counter</span> <span class="o">=</span> <span class="n">end_counter</span>
         <span class="n">end_counter</span> <span class="o">=</span> <span class="n">start_counter</span> <span class="o">+</span> <span class="n">num_iterations</span>
 </pre></div>
@@ -1188,8 +1209,10 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">run_simulation_multiple_cost_functions</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">users</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">cost_functions</span><span class="p">,</span> <span class="n">do_learn</span> <span class="o">=</span> <span class="kc">True</span><span class="p">):</span>
-    <span class="n">cost_sum</span> <span class="o">=</span> <span class="mf">0.</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">run_simulation_multiple_cost_functions</span><span class="p">(</span>
+    <span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">users</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">cost_functions</span><span class="p">,</span> <span class="n">do_learn</span><span class="o">=</span><span class="kc">True</span>
+<span class="p">):</span>
+    <span class="n">cost_sum</span> <span class="o">=</span> <span class="mf">0.0</span>
     <span class="n">ctr</span> <span class="o">=</span> <span class="p">[]</span>
 
     <span class="n">start_counter</span> <span class="o">=</span> <span class="mi">1</span>
@@ -1202,7 +1225,7 @@ const thebe_selector_output = ".output, .cell_output"
             <span class="n">time_of_day</span> <span class="o">=</span> <span class="n">choose_time_of_day</span><span class="p">(</span><span class="n">times_of_day</span><span class="p">)</span>
 
             <span class="c1"># Construct context based on chosen user and time of day</span>
-            <span class="n">context</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;user&#39;</span><span class="p">:</span> <span class="n">user</span><span class="p">,</span> <span class="s1">&#39;time_of_day&#39;</span><span class="p">:</span> <span class="n">time_of_day</span><span class="p">}</span>
+            <span class="n">context</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;user&quot;</span><span class="p">:</span> <span class="n">user</span><span class="p">,</span> <span class="s2">&quot;time_of_day&quot;</span><span class="p">:</span> <span class="n">time_of_day</span><span class="p">}</span>
 
             <span class="c1"># 3. Use the get_action function we defined earlier</span>
             <span class="n">action</span><span class="p">,</span> <span class="n">prob</span> <span class="o">=</span> <span class="n">get_action</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">context</span><span class="p">,</span> <span class="n">actions</span><span class="p">)</span>
@@ -1213,12 +1236,15 @@ const thebe_selector_output = ".output, .cell_output"
 
             <span class="k">if</span> <span class="n">do_learn</span><span class="p">:</span>
                 <span class="c1"># 5. Inform VW of what happened so we can learn from it</span>
-                <span class="n">vw_format</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">to_vw_example_format</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="p">(</span><span class="n">action</span><span class="p">,</span> <span class="n">cost</span><span class="p">,</span> <span class="n">prob</span><span class="p">)),</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">LabelType</span><span class="o">.</span><span class="n">CONTEXTUAL_BANDIT</span><span class="p">)</span>
+                <span class="n">vw_format</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span>
+                    <span class="n">to_vw_example_format</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="p">(</span><span class="n">action</span><span class="p">,</span> <span class="n">cost</span><span class="p">,</span> <span class="n">prob</span><span class="p">)),</span>
+                    <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">LabelType</span><span class="o">.</span><span class="n">CONTEXTUAL_BANDIT</span><span class="p">,</span>
+                <span class="p">)</span>
                 <span class="c1"># 6. Learn</span>
                 <span class="n">vw</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">vw_format</span><span class="p">)</span>
 
             <span class="c1"># We negate this so that on the plot instead of minimizing cost, we are maximizing reward</span>
-            <span class="n">ctr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="o">*</span><span class="n">cost_sum</span><span class="o">/</span><span class="n">i</span><span class="p">)</span>
+            <span class="n">ctr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span> <span class="o">*</span> <span class="n">cost_sum</span> <span class="o">/</span> <span class="n">i</span><span class="p">)</span>
         <span class="n">start_counter</span> <span class="o">=</span> <span class="n">end_counter</span>
         <span class="n">end_counter</span> <span class="o">=</span> <span class="n">start_counter</span> <span class="o">+</span> <span class="n">num_iterations</span>
 
@@ -1242,14 +1268,16 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="n">cost_functions</span> <span class="o">=</span> <span class="p">[</span><span class="n">get_cost</span><span class="p">,</span> <span class="n">get_cost_new1</span><span class="p">]</span>
 <span class="n">total_iterations</span> <span class="o">=</span> <span class="n">num_iterations_per_cost_func</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">cost_functions</span><span class="p">)</span>
 
-<span class="n">ctr</span> <span class="o">=</span> <span class="n">run_simulation_multiple_cost_functions</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations_per_cost_func</span><span class="p">,</span> <span class="n">users</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">cost_functions</span><span class="p">)</span>
+<span class="n">ctr</span> <span class="o">=</span> <span class="n">run_simulation_multiple_cost_functions</span><span class="p">(</span>
+    <span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations_per_cost_func</span><span class="p">,</span> <span class="n">users</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">cost_functions</span>
+<span class="p">)</span>
 
 <span class="n">plot_ctr</span><span class="p">(</span><span class="n">total_iterations</span><span class="p">,</span> <span class="n">ctr</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/4e0d89d062635744d6850e36ab265ff08e58de97717d677649c6a1635d106c74.png" src="../_images/4e0d89d062635744d6850e36ab265ff08e58de97717d677649c6a1635d106c74.png" />
+<img alt="../_images/9360d06f1ab0ec3328606a1c0e984aada9863ead1b1d686a7e4547c3db4df9e3.png" src="../_images/9360d06f1ab0ec3328606a1c0e984aada9863ead1b1d686a7e4547c3db4df9e3.png" />
 </div>
 </div>
 <p><strong>Note:</strong> The initial spike in CTR depends on the rewards received for the first few examples. When you run on your own, you may see something different initially because our simulator is designed to have randomness.</p>
@@ -1268,13 +1296,21 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="n">cost_functions</span> <span class="o">=</span> <span class="p">[</span><span class="n">get_cost</span><span class="p">,</span> <span class="n">get_cost_new1</span><span class="p">]</span>
 <span class="n">total_iterations</span> <span class="o">=</span> <span class="n">num_iterations_per_cost_func</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">cost_functions</span><span class="p">)</span>
 
-<span class="n">ctr</span> <span class="o">=</span> <span class="n">run_simulation_multiple_cost_functions</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations_per_cost_func</span><span class="p">,</span> <span class="n">users</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">cost_functions</span><span class="p">,</span> <span class="n">do_learn</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">ctr</span> <span class="o">=</span> <span class="n">run_simulation_multiple_cost_functions</span><span class="p">(</span>
+    <span class="n">vw</span><span class="p">,</span>
+    <span class="n">num_iterations_per_cost_func</span><span class="p">,</span>
+    <span class="n">users</span><span class="p">,</span>
+    <span class="n">times_of_day</span><span class="p">,</span>
+    <span class="n">actions</span><span class="p">,</span>
+    <span class="n">cost_functions</span><span class="p">,</span>
+    <span class="n">do_learn</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+<span class="p">)</span>
 <span class="n">plot_ctr</span><span class="p">(</span><span class="n">total_iterations</span><span class="p">,</span> <span class="n">ctr</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/88a150550450eb2fedbc02362225689da1f449b21836e49ec305871981ce52fe.png" src="../_images/88a150550450eb2fedbc02362225689da1f449b21836e49ec305871981ce52fe.png" />
+<img alt="../_images/e94978e80c8953b1bddb43af55e7ea3d2c15e523dd6b0ba9e0331b5fe61a4475.png" src="../_images/e94978e80c8953b1bddb43af55e7ea3d2c15e523dd6b0ba9e0331b5fe61a4475.png" />
 </div>
 </div>
 </section>
@@ -1325,18 +1361,18 @@ const thebe_selector_output = ".output, .cell_output"
 </table>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_cost_new2</span><span class="p">(</span><span class="n">context</span><span class="p">,</span><span class="n">action</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s1">&#39;user&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Tom&quot;</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s1">&#39;time_of_day&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s1">&#39;politics&#39;</span><span class="p">:</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_cost_new2</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">action</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;user&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Tom&quot;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;politics&quot;</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">USER_LIKED_ARTICLE</span>
-        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s1">&#39;time_of_day&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;afternoon&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s1">&#39;food&#39;</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;afternoon&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;food&quot;</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">USER_LIKED_ARTICLE</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">USER_DISLIKED_ARTICLE</span>
-    <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s1">&#39;user&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Anna&quot;</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s1">&#39;time_of_day&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s1">&#39;food&#39;</span><span class="p">:</span>
+    <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;user&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Anna&quot;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;food&quot;</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">USER_LIKED_ARTICLE</span>
-        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s1">&#39;time_of_day&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;afternoon&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s1">&#39;food&#39;</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;afternoon&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;food&quot;</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">USER_LIKED_ARTICLE</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">USER_DISLIKED_ARTICLE</span>
@@ -1359,14 +1395,16 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="n">cost_functions</span> <span class="o">=</span> <span class="p">[</span><span class="n">get_cost</span><span class="p">,</span> <span class="n">get_cost_new2</span><span class="p">]</span>
 <span class="n">total_iterations</span> <span class="o">=</span> <span class="n">num_iterations_per_cost_func</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">cost_functions</span><span class="p">)</span>
 
-<span class="n">ctr</span> <span class="o">=</span> <span class="n">run_simulation_multiple_cost_functions</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations_per_cost_func</span><span class="p">,</span> <span class="n">users</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">cost_functions</span><span class="p">)</span>
+<span class="n">ctr</span> <span class="o">=</span> <span class="n">run_simulation_multiple_cost_functions</span><span class="p">(</span>
+    <span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations_per_cost_func</span><span class="p">,</span> <span class="n">users</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">cost_functions</span>
+<span class="p">)</span>
 
 <span class="n">plot_ctr</span><span class="p">(</span><span class="n">total_iterations</span><span class="p">,</span> <span class="n">ctr</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/aaa6208aad360f1c2a55e92e38e64f8490c5110e0782d510f117d006307f5a5f.png" src="../_images/aaa6208aad360f1c2a55e92e38e64f8490c5110e0782d510f117d006307f5a5f.png" />
+<img alt="../_images/7deefae4bb70c4f27100e89861eb38c5c6a7a03cfba946f06c40b120ff3dc073.png" src="../_images/7deefae4bb70c4f27100e89861eb38c5c6a7a03cfba946f06c40b120ff3dc073.png" />
 </div>
 </div>
 </section>
@@ -1384,14 +1422,22 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="n">cost_functions</span> <span class="o">=</span> <span class="p">[</span><span class="n">get_cost</span><span class="p">,</span> <span class="n">get_cost_new2</span><span class="p">]</span>
 <span class="n">total_iterations</span> <span class="o">=</span> <span class="n">num_iterations_per_cost_func</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">cost_functions</span><span class="p">)</span>
 
-<span class="n">ctr</span> <span class="o">=</span> <span class="n">run_simulation_multiple_cost_functions</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations_per_cost_func</span><span class="p">,</span> <span class="n">users</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">cost_functions</span><span class="p">,</span> <span class="n">do_learn</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">ctr</span> <span class="o">=</span> <span class="n">run_simulation_multiple_cost_functions</span><span class="p">(</span>
+    <span class="n">vw</span><span class="p">,</span>
+    <span class="n">num_iterations_per_cost_func</span><span class="p">,</span>
+    <span class="n">users</span><span class="p">,</span>
+    <span class="n">times_of_day</span><span class="p">,</span>
+    <span class="n">actions</span><span class="p">,</span>
+    <span class="n">cost_functions</span><span class="p">,</span>
+    <span class="n">do_learn</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+<span class="p">)</span>
 
 <span class="n">plot_ctr</span><span class="p">(</span><span class="n">total_iterations</span><span class="p">,</span> <span class="n">ctr</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/d1d44249dc98d8e98250bbfde51c675069ad1df07968a92d1171042154692db2.png" src="../_images/d1d44249dc98d8e98250bbfde51c675069ad1df07968a92d1171042154692db2.png" />
+<img alt="../_images/3e75c3aeeb888714a1aa7ce06982135affa9a7a7599088816ea7e8289d05ad7b.png" src="../_images/3e75c3aeeb888714a1aa7ce06982135affa9a7a7599088816ea7e8289d05ad7b.png" />
 </div>
 </div>
 </section>

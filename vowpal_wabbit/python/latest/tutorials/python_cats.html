@@ -632,8 +632,8 @@ The context is therefore (room, time_of_day).</p>
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_cost</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">temperature</span><span class="p">,</span> <span class="n">min_value</span><span class="p">,</span> <span class="n">max_value</span><span class="p">):</span>
     <span class="nb">range</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">max_value</span> <span class="o">-</span> <span class="n">min_value</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s1">&#39;room&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Living Room&quot;</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s1">&#39;time_of_day&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;room&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Living Room&quot;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span><span class="p">:</span>
             <span class="c1"># randomly pick a temperature in this range</span>
             <span class="n">selected_temperature</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">18</span><span class="p">)</span>
             <span class="c1"># the absolute difference between selected temperature and proposed temperature</span>
@@ -641,7 +641,7 @@ The context is therefore (room, time_of_day).</p>
                 <span class="k">return</span> <span class="n">USER_LIKED_TEMPERATURE</span>
             <span class="k">else</span><span class="p">:</span>
                 <span class="k">return</span> <span class="n">USER_DISLIKED_TEMPERATURE</span>
-        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s1">&#39;time_of_day&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;afternoon&quot;</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;afternoon&quot;</span><span class="p">:</span>
             <span class="n">selected_temperature</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span> <span class="mi">29</span><span class="p">)</span>
             <span class="c1"># the absolute difference between selected temperature and proposed temperature</span>
             <span class="k">if</span> <span class="n">math</span><span class="o">.</span><span class="n">fabs</span><span class="p">(</span><span class="n">selected_temperature</span> <span class="o">-</span> <span class="n">temperature</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mf">5.0</span><span class="p">:</span>
@@ -650,8 +650,8 @@ The context is therefore (room, time_of_day).</p>
                 <span class="k">return</span> <span class="n">USER_DISLIKED_TEMPERATURE</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">USER_DISLIKED_TEMPERATURE</span>
-    <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s1">&#39;room&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Bedroom&quot;</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s1">&#39;time_of_day&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span><span class="p">:</span>
+    <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;room&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Bedroom&quot;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span><span class="p">:</span>
             <span class="c1"># randomly pick a temperature in this range</span>
             <span class="n">selected_temperature</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">22</span><span class="p">,</span> <span class="mi">29</span><span class="p">)</span>
             <span class="c1"># the absolute difference between selected temperature and proposed temperature</span>
@@ -659,7 +659,7 @@ The context is therefore (room, time_of_day).</p>
                 <span class="k">return</span> <span class="n">USER_LIKED_TEMPERATURE</span>
             <span class="k">else</span><span class="p">:</span>
                 <span class="k">return</span> <span class="n">USER_DISLIKED_TEMPERATURE</span>
-        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s1">&#39;time_of_day&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;afternoon&quot;</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;afternoon&quot;</span><span class="p">:</span>
             <span class="c1"># randomly pick a temperature in this range</span>
             <span class="n">selected_temperature</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">18</span><span class="p">)</span>
             <span class="c1"># the absolute difference between selected temperature and proposed temperature</span>
@@ -682,8 +682,15 @@ The context is therefore (room, time_of_day).</p>
     <span class="n">example_dict</span> <span class="o">=</span> <span class="p">{}</span>
     <span class="k">if</span> <span class="n">cats_label</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
         <span class="n">chosen_temp</span><span class="p">,</span> <span class="n">cost</span><span class="p">,</span> <span class="n">pdf_value</span> <span class="o">=</span> <span class="n">cats_label</span>
-        <span class="n">example_dict</span><span class="p">[</span><span class="s1">&#39;_label_ca&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;action&#39;</span> <span class="p">:</span> <span class="n">chosen_temp</span><span class="p">,</span> <span class="s1">&#39;cost&#39;</span><span class="p">:</span> <span class="n">cost</span><span class="p">,</span> <span class="s1">&#39;pdf_value&#39;</span><span class="p">:</span> <span class="n">pdf_value</span><span class="p">}</span>
-    <span class="n">example_dict</span><span class="p">[</span><span class="s1">&#39;c&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;room=</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">context</span><span class="p">[</span><span class="s1">&#39;room&#39;</span><span class="p">]):</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;time_of_day=</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">context</span><span class="p">[</span><span class="s1">&#39;time_of_day&#39;</span><span class="p">])</span> <span class="p">:</span> <span class="mi">1</span><span class="p">}</span>
+        <span class="n">example_dict</span><span class="p">[</span><span class="s2">&quot;_label_ca&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;action&quot;</span><span class="p">:</span> <span class="n">chosen_temp</span><span class="p">,</span>
+            <span class="s2">&quot;cost&quot;</span><span class="p">:</span> <span class="n">cost</span><span class="p">,</span>
+            <span class="s2">&quot;pdf_value&quot;</span><span class="p">:</span> <span class="n">pdf_value</span><span class="p">,</span>
+        <span class="p">}</span>
+    <span class="n">example_dict</span><span class="p">[</span><span class="s2">&quot;c&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;room=</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">context</span><span class="p">[</span><span class="s2">&quot;room&quot;</span><span class="p">]):</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="s2">&quot;time_of_day=</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]):</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="p">}</span>
     <span class="k">return</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">example_dict</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -713,11 +720,13 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 <p>We will choose between ‘Living Room’ and ‘Bedroom’ uniformly at random and also choose the time of day uniformly at random. We can think of this as tossing a coin to choose between the rooms (‘Living Room’ if heads and ‘Bedroom’ if tails) and another coin toss for choosing time of day.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rooms</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Living Room&#39;</span><span class="p">,</span> <span class="s1">&#39;Bedroom&#39;</span><span class="p">]</span>
-<span class="n">times_of_day</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;morning&#39;</span><span class="p">,</span> <span class="s1">&#39;afternoon&#39;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rooms</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Living Room&quot;</span><span class="p">,</span> <span class="s2">&quot;Bedroom&quot;</span><span class="p">]</span>
+<span class="n">times_of_day</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;morning&quot;</span><span class="p">,</span> <span class="s2">&quot;afternoon&quot;</span><span class="p">]</span>
+
 
 <span class="k">def</span> <span class="nf">choose_room</span><span class="p">(</span><span class="n">rooms</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">rooms</span><span class="p">)</span>
+
 
 <span class="k">def</span> <span class="nf">choose_time_of_day</span><span class="p">(</span><span class="n">times_of_day</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">times_of_day</span><span class="p">)</span>
@@ -737,11 +746,20 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 <p>The above steps are repeatedly executed during our simulations, so we define the process in the run_simulation function. The cost function must be supplied as this is essentially us simulating how the world works.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">run_simulation</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">rooms</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">cost_function</span><span class="p">,</span> <span class="n">min_value</span><span class="p">,</span> <span class="n">max_value</span><span class="p">,</span> <span class="n">do_learn</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">run_simulation</span><span class="p">(</span>
+    <span class="n">vw</span><span class="p">,</span>
+    <span class="n">num_iterations</span><span class="p">,</span>
+    <span class="n">rooms</span><span class="p">,</span>
+    <span class="n">times_of_day</span><span class="p">,</span>
+    <span class="n">cost_function</span><span class="p">,</span>
+    <span class="n">min_value</span><span class="p">,</span>
+    <span class="n">max_value</span><span class="p">,</span>
+    <span class="n">do_learn</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="p">):</span>
 
     <span class="n">reward_rate</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="n">hits</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">cost_sum</span> <span class="o">=</span> <span class="mf">0.</span>
+    <span class="n">cost_sum</span> <span class="o">=</span> <span class="mf">0.0</span>
 
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_iterations</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
         <span class="c1"># 1. In each simulation choose a room</span>
@@ -749,18 +767,20 @@ Finally we return the chosen temperature and the probability of choosing it (we 
         <span class="c1"># 2. Choose time of day for a given room</span>
         <span class="n">time_of_day</span> <span class="o">=</span> <span class="n">choose_time_of_day</span><span class="p">(</span><span class="n">times_of_day</span><span class="p">)</span>
         <span class="c1"># 3. Pass context to vw to get a temperature</span>
-        <span class="n">context</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;room&#39;</span><span class="p">:</span> <span class="n">room</span><span class="p">,</span> <span class="s1">&#39;time_of_day&#39;</span><span class="p">:</span> <span class="n">time_of_day</span><span class="p">}</span>
+        <span class="n">context</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;room&quot;</span><span class="p">:</span> <span class="n">room</span><span class="p">,</span> <span class="s2">&quot;time_of_day&quot;</span><span class="p">:</span> <span class="n">time_of_day</span><span class="p">}</span>
         <span class="n">temperature</span><span class="p">,</span> <span class="n">pdf_value</span> <span class="o">=</span> <span class="n">predict_temperature</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">context</span><span class="p">)</span>
-        
+
         <span class="c1"># 4. Get cost of the action we chose</span>
         <span class="n">cost</span> <span class="o">=</span> <span class="n">cost_function</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">temperature</span><span class="p">,</span> <span class="n">min_value</span><span class="p">,</span> <span class="n">max_value</span><span class="p">)</span>
-        <span class="k">if</span> <span class="n">cost</span> <span class="o">&lt;=</span> <span class="o">-</span><span class="mf">0.75</span><span class="p">:</span> <span class="c1"># count something as a hit only if it has a high reward</span>
+        <span class="k">if</span> <span class="n">cost</span> <span class="o">&lt;=</span> <span class="o">-</span><span class="mf">0.75</span><span class="p">:</span>  <span class="c1"># count something as a hit only if it has a high reward</span>
             <span class="n">hits</span> <span class="o">+=</span> <span class="mi">1</span>
         <span class="n">cost_sum</span> <span class="o">+=</span> <span class="n">cost</span>
 
         <span class="k">if</span> <span class="n">do_learn</span><span class="p">:</span>
             <span class="c1"># 5. Inform VW of what happened so we can learn from it</span>
-            <span class="n">txt_ex</span> <span class="o">=</span> <span class="n">to_vw_example_format</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">cats_label</span><span class="o">=</span><span class="p">(</span><span class="n">temperature</span><span class="p">,</span> <span class="n">cost</span><span class="p">,</span> <span class="n">pdf_value</span><span class="p">))</span>
+            <span class="n">txt_ex</span> <span class="o">=</span> <span class="n">to_vw_example_format</span><span class="p">(</span>
+                <span class="n">context</span><span class="p">,</span> <span class="n">cats_label</span><span class="o">=</span><span class="p">(</span><span class="n">temperature</span><span class="p">,</span> <span class="n">cost</span><span class="p">,</span> <span class="n">pdf_value</span><span class="p">)</span>
+            <span class="p">)</span>
             <span class="n">vw_format</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">txt_ex</span><span class="p">,</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">LabelType</span><span class="o">.</span><span class="n">CONTINUOUS</span><span class="p">)</span>
             <span class="c1"># 6. Learn</span>
             <span class="n">vw</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">vw_format</span><span class="p">)</span>
@@ -768,7 +788,7 @@ Finally we return the chosen temperature and the probability of choosing it (we 
             <span class="n">vw</span><span class="o">.</span><span class="n">finish_example</span><span class="p">(</span><span class="n">vw_format</span><span class="p">)</span>
 
         <span class="c1"># We negate this so that on the plot instead of minimizing cost, we are maximizing reward</span>
-        <span class="n">reward_rate</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="o">*</span><span class="n">cost_sum</span><span class="o">/</span><span class="n">i</span><span class="p">)</span>
+        <span class="n">reward_rate</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span> <span class="o">*</span> <span class="n">cost_sum</span> <span class="o">/</span> <span class="n">i</span><span class="p">)</span>
 
     <span class="k">return</span> <span class="n">reward_rate</span><span class="p">,</span> <span class="n">hits</span>
 </pre></div>
@@ -781,10 +801,10 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">plot_reward_rate</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">,</span> <span class="n">reward_rate</span><span class="p">,</span> <span class="n">title</span><span class="p">):</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_iterations</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">reward_rate</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;num_iterations&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;reward rate&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;num_iterations&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;reward rate&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
 </pre></div>
 </div>
 </div>
@@ -809,15 +829,25 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 <span class="n">bandwidth</span> <span class="o">=</span> <span class="mi">1</span>
 
 <span class="c1"># Instantiate VW learner</span>
-<span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--cats &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">num_actions</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;  --bandwidth &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">bandwidth</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; --min_value 0 --max_value 32 --json --chain_hash --coin --epsilon 0.2 -q :: --quiet&quot;</span><span class="p">)</span>
-<span class="n">ctr</span><span class="p">,</span> <span class="n">hits</span> <span class="o">=</span> <span class="n">run_simulation</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">rooms</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">get_cost</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="n">do_learn</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span>
+    <span class="s2">&quot;--cats &quot;</span>
+    <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">num_actions</span><span class="p">)</span>
+    <span class="o">+</span> <span class="s2">&quot;  --bandwidth &quot;</span>
+    <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">bandwidth</span><span class="p">)</span>
+    <span class="o">+</span> <span class="s2">&quot; --min_value 0 --max_value 32 --json --chain_hash --coin --epsilon 0.2 -q :: --quiet&quot;</span>
+<span class="p">)</span>
+<span class="n">ctr</span><span class="p">,</span> <span class="n">hits</span> <span class="o">=</span> <span class="n">run_simulation</span><span class="p">(</span>
+    <span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">rooms</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">get_cost</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="n">do_learn</span><span class="o">=</span><span class="kc">True</span>
+<span class="p">)</span>
 <span class="n">vw</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>
-<span class="n">plot_reward_rate</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">,</span> <span class="n">ctr</span><span class="p">,</span> <span class="s1">&#39;reward rate with num_actions = 32 and bandwidth = 1&#39;</span><span class="p">)</span>
+<span class="n">plot_reward_rate</span><span class="p">(</span>
+    <span class="n">num_iterations</span><span class="p">,</span> <span class="n">ctr</span><span class="p">,</span> <span class="s2">&quot;reward rate with num_actions = 32 and bandwidth = 1&quot;</span>
+<span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/1d052656e61ad3e6d19788f81ecee016621fd0121826e2bfd49078172bc07d06.png" src="../_images/1d052656e61ad3e6d19788f81ecee016621fd0121826e2bfd49078172bc07d06.png" />
+<img alt="../_images/ac5d468de6c97345104a80a776a36091700907d361142b8627a7a75e530b493d.png" src="../_images/ac5d468de6c97345104a80a776a36091700907d361142b8627a7a75e530b493d.png" />
 </div>
 </div>
 </section>
@@ -832,15 +862,25 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 <span class="n">bandwidth</span> <span class="o">=</span> <span class="mi">1</span>
 
 <span class="c1"># Instantiate VW learner</span>
-<span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--cats &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">num_actions</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;  --bandwidth &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">bandwidth</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; --min_value 0 --max_value 32 --json --chain_hash --coin --epsilon 0.2 -q :: --quiet&quot;</span><span class="p">)</span>
-<span class="n">ctr</span><span class="p">,</span> <span class="n">hits</span> <span class="o">=</span> <span class="n">run_simulation</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">rooms</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">get_cost</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="n">do_learn</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span>
+    <span class="s2">&quot;--cats &quot;</span>
+    <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">num_actions</span><span class="p">)</span>
+    <span class="o">+</span> <span class="s2">&quot;  --bandwidth &quot;</span>
+    <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">bandwidth</span><span class="p">)</span>
+    <span class="o">+</span> <span class="s2">&quot; --min_value 0 --max_value 32 --json --chain_hash --coin --epsilon 0.2 -q :: --quiet&quot;</span>
+<span class="p">)</span>
+<span class="n">ctr</span><span class="p">,</span> <span class="n">hits</span> <span class="o">=</span> <span class="n">run_simulation</span><span class="p">(</span>
+    <span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">rooms</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">get_cost</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="n">do_learn</span><span class="o">=</span><span class="kc">False</span>
+<span class="p">)</span>
 <span class="n">vw</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>
-<span class="n">plot_reward_rate</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">,</span> <span class="n">ctr</span><span class="p">,</span> <span class="s1">&#39;click through rate with num_actions = 32 and bandwidth = 1&#39;</span><span class="p">)</span>
+<span class="n">plot_reward_rate</span><span class="p">(</span>
+    <span class="n">num_iterations</span><span class="p">,</span> <span class="n">ctr</span><span class="p">,</span> <span class="s2">&quot;click through rate with num_actions = 32 and bandwidth = 1&quot;</span>
+<span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/f5f3a5c2c0060e9fbacb71106e380d081f0e2de8ba232b207129f765bb32ae8a.png" src="../_images/f5f3a5c2c0060e9fbacb71106e380d081f0e2de8ba232b207129f765bb32ae8a.png" />
+<img alt="../_images/5f8043f2ff71bc91093abdd21c2f05b8bdf730f858508933820e7a084b6f1e11.png" src="../_images/5f8043f2ff71bc91093abdd21c2f05b8bdf730f858508933820e7a084b6f1e11.png" />
 </div>
 </div>
 </section>
@@ -858,24 +898,26 @@ Finally we return the chosen temperature and the probability of choosing it (we 
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">actions</span><span class="p">)):</span>
         <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">bandwidths</span><span class="p">)):</span>
             <span class="k">if</span> <span class="n">bandwidths</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">actions</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
-                <span class="n">axs</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;NA&#39;</span><span class="p">)</span>
+                <span class="n">axs</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;NA&quot;</span><span class="p">)</span>
                 <span class="k">continue</span>
             <span class="n">reward_rate</span><span class="p">,</span> <span class="n">hits</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">actions</span><span class="p">[</span><span class="n">i</span><span class="p">])][</span><span class="nb">str</span><span class="p">(</span><span class="n">bandwidths</span><span class="p">[</span><span class="n">j</span><span class="p">])]</span>
-            <span class="n">hits_percentage</span> <span class="o">=</span> <span class="p">(</span><span class="n">hits</span><span class="o">/</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">))</span><span class="o">*</span><span class="mi">100</span>
+            <span class="n">hits_percentage</span> <span class="o">=</span> <span class="p">(</span><span class="n">hits</span> <span class="o">/</span> <span class="p">(</span><span class="n">num_iterations</span><span class="p">))</span> <span class="o">*</span> <span class="mi">100</span>
             <span class="n">axs</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_iterations</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">reward_rate</span><span class="p">)</span>
-            <span class="n">axs</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;hits </span><span class="si">{:.2f}</span><span class="s1">% TR </span><span class="si">{:.2f}</span><span class="s1">%&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">hits_percentage</span><span class="p">,</span> <span class="n">reward_rate</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="mi">100</span><span class="p">))</span>
-            <span class="n">axs</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span>
+            <span class="n">axs</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span>
+                <span class="s2">&quot;hits </span><span class="si">{:.2f}</span><span class="s2">% TR </span><span class="si">{:.2f}</span><span class="s2">%&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">hits_percentage</span><span class="p">,</span> <span class="n">reward_rate</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="mi">100</span><span class="p">)</span>
+            <span class="p">)</span>
+            <span class="n">axs</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
 
     <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">axs</span><span class="p">):</span>
         <span class="k">for</span> <span class="n">j</span><span class="p">,</span> <span class="n">ax</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">row</span><span class="p">):</span>
-            <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;b: &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">bandwidths</span><span class="p">[</span><span class="n">j</span><span class="o">%</span><span class="k">len</span>(bandwidths)]), fontsize=14)
-            <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;k: &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">actions</span><span class="p">[</span><span class="n">i</span><span class="o">%</span><span class="k">len</span>(actions)]), fontsize=14)
+            <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;b: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">bandwidths</span><span class="p">[</span><span class="n">j</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">bandwidths</span><span class="p">)]),</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+            <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;k: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">actions</span><span class="p">[</span><span class="n">i</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">actions</span><span class="p">)]),</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
 
-    <span class="n">fig</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.04</span><span class="p">,</span> <span class="s1">&#39;num_iterations&#39;</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
-    <span class="n">fig</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.04</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="s1">&#39;reward_rate&#39;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">rotation</span><span class="o">=</span><span class="s1">&#39;vertical&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.04</span><span class="p">,</span> <span class="s2">&quot;num_iterations&quot;</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.04</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="s2">&quot;reward_rate&quot;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">rotation</span><span class="o">=</span><span class="s2">&quot;vertical&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
     <span class="n">fig</span><span class="o">.</span><span class="n">set_figheight</span><span class="p">(</span><span class="mi">18</span><span class="p">)</span>
     <span class="n">fig</span><span class="o">.</span><span class="n">set_figwidth</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;#examples </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">))</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s2">&quot;#examples </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">))</span>
 
     <span class="c1"># Hide x labels and tick labels for top plots and y ticks for right plots.</span>
     <span class="k">for</span> <span class="n">ax</span> <span class="ow">in</span> <span class="n">axs</span><span class="o">.</span><span class="n">flat</span><span class="p">:</span>
@@ -904,10 +946,14 @@ Finally we return the chosen temperature and the probability of choosing it (we 
         <span class="k">if</span> <span class="n">bd</span> <span class="o">&gt;=</span> <span class="n">actions</span><span class="p">:</span>
             <span class="k">continue</span>
         <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Running simulation for: --cats </span><span class="si">{</span><span class="n">actions</span><span class="si">}</span><span class="s2"> and --bandwidth </span><span class="si">{</span><span class="n">bd</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-        <span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;--cats </span><span class="si">{</span><span class="n">actions</span><span class="si">}</span><span class="s2">  --bandwidth </span><span class="si">{</span><span class="n">bd</span><span class="si">}</span><span class="s2"> --min_value 0 --max_value 32 --json --chain_hash --coin --epsilon 0.2 -q :: --quiet&quot;</span><span class="p">)</span>
-        <span class="n">rr</span><span class="p">,</span> <span class="n">hits</span> <span class="o">=</span> <span class="n">run_simulation</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">rooms</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">get_cost</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="n">do_learn</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span>
+            <span class="sa">f</span><span class="s2">&quot;--cats </span><span class="si">{</span><span class="n">actions</span><span class="si">}</span><span class="s2">  --bandwidth </span><span class="si">{</span><span class="n">bd</span><span class="si">}</span><span class="s2"> --min_value 0 --max_value 32 --json --chain_hash --coin --epsilon 0.2 -q :: --quiet&quot;</span>
+        <span class="p">)</span>
+        <span class="n">rr</span><span class="p">,</span> <span class="n">hits</span> <span class="o">=</span> <span class="n">run_simulation</span><span class="p">(</span>
+            <span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">rooms</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">get_cost</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="n">do_learn</span><span class="o">=</span><span class="kc">True</span>
+        <span class="p">)</span>
         <span class="n">vw</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>
-        
+
         <span class="n">data</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">actions</span><span class="p">)][</span><span class="nb">str</span><span class="p">(</span><span class="n">bd</span><span class="p">)]</span> <span class="o">=</span> <span class="p">(</span><span class="n">rr</span><span class="p">,</span> <span class="n">hits</span><span class="p">)</span>
 
 <span class="n">plot_reward_sweep</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">,</span> <span class="n">num_actions</span><span class="p">,</span> <span class="n">bandwidths</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
@@ -1032,7 +1078,7 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 25
 </pre></div>
 </div>
-<img alt="../_images/b4e58c9e0baf6219e031d025fb36cef813f686088a7f6da11565e1156be466eb.png" src="../_images/b4e58c9e0baf6219e031d025fb36cef813f686088a7f6da11565e1156be466eb.png" />
+<img alt="../_images/87a415cf7c96d57aa77ae0c6adb975bc739f3bca90a6234617dd886ddf3154b7.png" src="../_images/87a415cf7c96d57aa77ae0c6adb975bc739f3bca90a6234617dd886ddf3154b7.png" />
 </div>
 </div>
 </section>
@@ -1054,8 +1100,12 @@ Finally we return the chosen temperature and the probability of choosing it (we 
         <span class="k">if</span> <span class="n">bd</span> <span class="o">&gt;=</span> <span class="n">actions</span><span class="p">:</span>
             <span class="k">continue</span>
         <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Running simulation for: --cats </span><span class="si">{</span><span class="n">actions</span><span class="si">}</span><span class="s2"> and --bandwidth </span><span class="si">{</span><span class="n">bd</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-        <span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;--cats </span><span class="si">{</span><span class="n">actions</span><span class="si">}</span><span class="s2"> --bandwidth </span><span class="si">{</span><span class="n">bd</span><span class="si">}</span><span class="s2"> --min_value 0 --max_value 32 --json --chain_hash --coin --epsilon 0.2 -q :: --quiet&quot;</span><span class="p">)</span>
-        <span class="n">rr</span><span class="p">,</span> <span class="n">hits</span> <span class="o">=</span> <span class="n">run_simulation</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">rooms</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">get_cost</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="n">do_learn</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span>
+            <span class="sa">f</span><span class="s2">&quot;--cats </span><span class="si">{</span><span class="n">actions</span><span class="si">}</span><span class="s2"> --bandwidth </span><span class="si">{</span><span class="n">bd</span><span class="si">}</span><span class="s2"> --min_value 0 --max_value 32 --json --chain_hash --coin --epsilon 0.2 -q :: --quiet&quot;</span>
+        <span class="p">)</span>
+        <span class="n">rr</span><span class="p">,</span> <span class="n">hits</span> <span class="o">=</span> <span class="n">run_simulation</span><span class="p">(</span>
+            <span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">rooms</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">get_cost</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="n">do_learn</span><span class="o">=</span><span class="kc">False</span>
+        <span class="p">)</span>
         <span class="n">vw</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>
         <span class="n">data</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">actions</span><span class="p">)][</span><span class="nb">str</span><span class="p">(</span><span class="n">bd</span><span class="p">)]</span> <span class="o">=</span> <span class="p">(</span><span class="n">rr</span><span class="p">,</span> <span class="n">hits</span><span class="p">)</span>
 
@@ -1143,7 +1193,7 @@ Running simulation for: --cats 2048 and --bandwidth 3
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 25
 </pre></div>
 </div>
-<img alt="../_images/e6ac4d63ca23d268051e1a12f3f6de3caa76307a9ed07662ea5005044a15dfab.png" src="../_images/e6ac4d63ca23d268051e1a12f3f6de3caa76307a9ed07662ea5005044a15dfab.png" />
+<img alt="../_images/02e2f370f2ca7a4f8dfa512d58e60668944f3415d0a5bd9db1a1fbc01d970bb5.png" src="../_images/02e2f370f2ca7a4f8dfa512d58e60668944f3415d0a5bd9db1a1fbc01d970bb5.png" />
 </div>
 </div>
 </section>
@@ -1197,8 +1247,8 @@ Running simulation for: --cats 2048 and --bandwidth 3
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_cost_1</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">temperature</span><span class="p">,</span> <span class="n">min_value</span><span class="p">,</span> <span class="n">max_value</span><span class="p">):</span>
     <span class="nb">range</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">max_value</span> <span class="o">-</span> <span class="n">min_value</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s1">&#39;room&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Living Room&quot;</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s1">&#39;time_of_day&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;room&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Living Room&quot;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span><span class="p">:</span>
             <span class="c1"># randomly pick a temperature in this range</span>
             <span class="n">selected_temperature</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span> <span class="mi">29</span><span class="p">)</span>
             <span class="c1"># the absolute difference between selected temperature and proposed temperature</span>
@@ -1206,7 +1256,7 @@ Running simulation for: --cats 2048 and --bandwidth 3
                 <span class="k">return</span> <span class="n">USER_LIKED_TEMPERATURE</span>
             <span class="k">else</span><span class="p">:</span>
                 <span class="k">return</span> <span class="n">USER_DISLIKED_TEMPERATURE</span>
-        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s1">&#39;time_of_day&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;afternoon&quot;</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;afternoon&quot;</span><span class="p">:</span>
             <span class="n">selected_temperature</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">18</span><span class="p">)</span>
             <span class="c1"># the absolute difference between selected temperature and proposed temperature</span>
             <span class="k">if</span> <span class="n">math</span><span class="o">.</span><span class="n">fabs</span><span class="p">(</span><span class="n">selected_temperature</span> <span class="o">-</span> <span class="n">temperature</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mf">5.0</span><span class="p">:</span>
@@ -1215,8 +1265,8 @@ Running simulation for: --cats 2048 and --bandwidth 3
                 <span class="k">return</span> <span class="n">USER_DISLIKED_TEMPERATURE</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">USER_DISLIKED_TEMPERATURE</span>
-    <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s1">&#39;room&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Bedroom&quot;</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s1">&#39;time_of_day&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span><span class="p">:</span>
+    <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;room&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Bedroom&quot;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span><span class="p">:</span>
             <span class="c1"># randomly pick a temperature in this range</span>
             <span class="n">selected_temperature</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">18</span><span class="p">)</span>
             <span class="c1"># the absolute difference between selected temperature and proposed temperature</span>
@@ -1224,7 +1274,7 @@ Running simulation for: --cats 2048 and --bandwidth 3
                 <span class="k">return</span> <span class="n">USER_LIKED_TEMPERATURE</span>
             <span class="k">else</span><span class="p">:</span>
                 <span class="k">return</span> <span class="n">USER_DISLIKED_TEMPERATURE</span>
-        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s1">&#39;time_of_day&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;afternoon&quot;</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;afternoon&quot;</span><span class="p">:</span>
             <span class="c1"># randomly pick a temperature in this range</span>
             <span class="n">selected_temperature</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">18</span><span class="p">)</span>
             <span class="c1"># the absolute difference between selected temperature and proposed temperature</span>
@@ -1243,11 +1293,20 @@ Running simulation for: --cats 2048 and --bandwidth 3
 <p>To make it easy to show the effect of the cost function changing we are going to modify the run_simulation function. It is a little less readable now, but it supports accepting a list of cost functions and it will operate over each cost function in turn.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">run_simulation_multiple_cost_functions</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">rooms</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">cost_functions</span><span class="p">,</span> <span class="n">min_value</span><span class="p">,</span> <span class="n">max_value</span><span class="p">,</span> <span class="n">do_learn</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">run_simulation_multiple_cost_functions</span><span class="p">(</span>
+    <span class="n">vw</span><span class="p">,</span>
+    <span class="n">num_iterations</span><span class="p">,</span>
+    <span class="n">rooms</span><span class="p">,</span>
+    <span class="n">times_of_day</span><span class="p">,</span>
+    <span class="n">cost_functions</span><span class="p">,</span>
+    <span class="n">min_value</span><span class="p">,</span>
+    <span class="n">max_value</span><span class="p">,</span>
+    <span class="n">do_learn</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="p">):</span>
 
     <span class="n">reward_rate</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="n">hits</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">cost_sum</span> <span class="o">=</span> <span class="mf">0.</span>
+    <span class="n">cost_sum</span> <span class="o">=</span> <span class="mf">0.0</span>
 
     <span class="n">start_counter</span> <span class="o">=</span> <span class="mi">1</span>
     <span class="n">end_counter</span> <span class="o">=</span> <span class="n">start_counter</span> <span class="o">+</span> <span class="n">num_iterations</span>
@@ -1258,18 +1317,20 @@ Running simulation for: --cats 2048 and --bandwidth 3
             <span class="c1"># 2. Choose time of day for a given room</span>
             <span class="n">time_of_day</span> <span class="o">=</span> <span class="n">choose_time_of_day</span><span class="p">(</span><span class="n">times_of_day</span><span class="p">)</span>
             <span class="c1"># 3. Pass context to vw to get a temperature</span>
-            <span class="n">context</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;room&#39;</span><span class="p">:</span> <span class="n">room</span><span class="p">,</span> <span class="s1">&#39;time_of_day&#39;</span><span class="p">:</span> <span class="n">time_of_day</span><span class="p">}</span>
+            <span class="n">context</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;room&quot;</span><span class="p">:</span> <span class="n">room</span><span class="p">,</span> <span class="s2">&quot;time_of_day&quot;</span><span class="p">:</span> <span class="n">time_of_day</span><span class="p">}</span>
             <span class="n">temperature</span><span class="p">,</span> <span class="n">pdf_value</span> <span class="o">=</span> <span class="n">predict_temperature</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">context</span><span class="p">)</span>
-            
+
             <span class="c1"># 4. Get cost of the action we chose</span>
             <span class="n">cost</span> <span class="o">=</span> <span class="n">cost_function</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">temperature</span><span class="p">,</span> <span class="n">min_value</span><span class="p">,</span> <span class="n">max_value</span><span class="p">)</span>
-            <span class="k">if</span> <span class="n">cost</span> <span class="o">&lt;=</span> <span class="o">-</span><span class="mf">0.75</span><span class="p">:</span> <span class="c1"># count something as a hit only if it has a high reward</span>
+            <span class="k">if</span> <span class="n">cost</span> <span class="o">&lt;=</span> <span class="o">-</span><span class="mf">0.75</span><span class="p">:</span>  <span class="c1"># count something as a hit only if it has a high reward</span>
                 <span class="n">hits</span> <span class="o">+=</span> <span class="mi">1</span>
             <span class="n">cost_sum</span> <span class="o">+=</span> <span class="n">cost</span>
 
             <span class="k">if</span> <span class="n">do_learn</span><span class="p">:</span>
                 <span class="c1"># 5. Inform VW of what happened so we can learn from it</span>
-                <span class="n">txt_ex</span> <span class="o">=</span> <span class="n">to_vw_example_format</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">cats_label</span><span class="o">=</span><span class="p">(</span><span class="n">temperature</span><span class="p">,</span> <span class="n">cost</span><span class="p">,</span> <span class="n">pdf_value</span><span class="p">))</span>
+                <span class="n">txt_ex</span> <span class="o">=</span> <span class="n">to_vw_example_format</span><span class="p">(</span>
+                    <span class="n">context</span><span class="p">,</span> <span class="n">cats_label</span><span class="o">=</span><span class="p">(</span><span class="n">temperature</span><span class="p">,</span> <span class="n">cost</span><span class="p">,</span> <span class="n">pdf_value</span><span class="p">)</span>
+                <span class="p">)</span>
                 <span class="n">vw_format</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">txt_ex</span><span class="p">,</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">LabelType</span><span class="o">.</span><span class="n">CONTINUOUS</span><span class="p">)</span>
                 <span class="c1"># 6. Learn</span>
                 <span class="n">vw</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">vw_format</span><span class="p">)</span>
@@ -1277,8 +1338,8 @@ Running simulation for: --cats 2048 and --bandwidth 3
                 <span class="n">vw</span><span class="o">.</span><span class="n">finish_example</span><span class="p">(</span><span class="n">vw_format</span><span class="p">)</span>
 
             <span class="c1"># We negate this so that on the plot instead of minimizing cost, we are maximizing reward</span>
-            <span class="n">reward_rate</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="o">*</span><span class="n">cost_sum</span><span class="o">/</span><span class="n">i</span><span class="p">)</span>
-        
+            <span class="n">reward_rate</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span> <span class="o">*</span> <span class="n">cost_sum</span> <span class="o">/</span> <span class="n">i</span><span class="p">)</span>
+
         <span class="n">start_counter</span> <span class="o">=</span> <span class="n">end_counter</span>
         <span class="n">end_counter</span> <span class="o">=</span> <span class="n">start_counter</span> <span class="o">+</span> <span class="n">num_iterations</span>
 
@@ -1301,20 +1362,33 @@ Running simulation for: --cats 2048 and --bandwidth 3
 <span class="n">bandwidth</span> <span class="o">=</span> <span class="mi">2</span>
 
 <span class="c1"># Instantiate VW learner</span>
-<span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;--cats </span><span class="si">{</span><span class="n">num_actions</span><span class="si">}</span><span class="s2">  --bandwidth </span><span class="si">{</span><span class="n">bandwidth</span><span class="si">}</span><span class="s2"> --min_value 0 --max_value 32 --json --chain_hash --coin --epsilon 0.2 -q :: --quiet&quot;</span><span class="p">)</span>
+<span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span>
+    <span class="sa">f</span><span class="s2">&quot;--cats </span><span class="si">{</span><span class="n">num_actions</span><span class="si">}</span><span class="s2">  --bandwidth </span><span class="si">{</span><span class="n">bandwidth</span><span class="si">}</span><span class="s2"> --min_value 0 --max_value 32 --json --chain_hash --coin --epsilon 0.2 -q :: --quiet&quot;</span>
+<span class="p">)</span>
 
 <span class="n">num_iterations_per_cost_func</span> <span class="o">=</span> <span class="mi">5000</span>
 <span class="n">cost_functions</span> <span class="o">=</span> <span class="p">[</span><span class="n">get_cost</span><span class="p">,</span> <span class="n">get_cost_1</span><span class="p">]</span>
 <span class="n">total_iterations</span> <span class="o">=</span> <span class="n">num_iterations_per_cost_func</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">cost_functions</span><span class="p">)</span>
 
-<span class="n">ctr</span><span class="p">,</span> <span class="n">hits</span> <span class="o">=</span> <span class="n">run_simulation_multiple_cost_functions</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations_per_cost_func</span><span class="p">,</span> <span class="n">rooms</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">cost_functions</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="n">do_learn</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">ctr</span><span class="p">,</span> <span class="n">hits</span> <span class="o">=</span> <span class="n">run_simulation_multiple_cost_functions</span><span class="p">(</span>
+    <span class="n">vw</span><span class="p">,</span>
+    <span class="n">num_iterations_per_cost_func</span><span class="p">,</span>
+    <span class="n">rooms</span><span class="p">,</span>
+    <span class="n">times_of_day</span><span class="p">,</span>
+    <span class="n">cost_functions</span><span class="p">,</span>
+    <span class="mi">0</span><span class="p">,</span>
+    <span class="mi">32</span><span class="p">,</span>
+    <span class="n">do_learn</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="p">)</span>
 <span class="n">vw</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>
-<span class="n">plot_reward_rate</span><span class="p">(</span><span class="n">total_iterations</span><span class="p">,</span> <span class="n">ctr</span><span class="p">,</span> <span class="s1">&#39;reward rate with num_actions = 32 and bandwidth = 1&#39;</span><span class="p">)</span>
+<span class="n">plot_reward_rate</span><span class="p">(</span>
+    <span class="n">total_iterations</span><span class="p">,</span> <span class="n">ctr</span><span class="p">,</span> <span class="s2">&quot;reward rate with num_actions = 32 and bandwidth = 1&quot;</span>
+<span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/b5232bc58004e3cfa6af3c9588075dbdd0246df67afdefe2314127fac9cfe2e4.png" src="../_images/b5232bc58004e3cfa6af3c9588075dbdd0246df67afdefe2314127fac9cfe2e4.png" />
+<img alt="../_images/8dbbcc28e25040cf4a8c850775e137d8c79c316725ffc269e1b04b212b406eab.png" src="../_images/8dbbcc28e25040cf4a8c850775e137d8c79c316725ffc269e1b04b212b406eab.png" />
 </div>
 </div>
 </section>
@@ -1329,20 +1403,33 @@ Running simulation for: --cats 2048 and --bandwidth 3
 <span class="n">bandwidth</span> <span class="o">=</span> <span class="mi">2</span>
 
 <span class="c1"># Instantiate VW learner</span>
-<span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;--cats </span><span class="si">{</span><span class="n">num_actions</span><span class="si">}</span><span class="s2"> --bandwidth </span><span class="si">{</span><span class="n">bandwidth</span><span class="si">}</span><span class="s2"> --min_value 0 --max_value 32 --json --chain_hash --coin --epsilon 0.2 -q :: --quiet&quot;</span><span class="p">)</span>
+<span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span>
+    <span class="sa">f</span><span class="s2">&quot;--cats </span><span class="si">{</span><span class="n">num_actions</span><span class="si">}</span><span class="s2"> --bandwidth </span><span class="si">{</span><span class="n">bandwidth</span><span class="si">}</span><span class="s2"> --min_value 0 --max_value 32 --json --chain_hash --coin --epsilon 0.2 -q :: --quiet&quot;</span>
+<span class="p">)</span>
 
 <span class="n">num_iterations_per_cost_func</span> <span class="o">=</span> <span class="mi">5000</span>
 <span class="n">cost_functions</span> <span class="o">=</span> <span class="p">[</span><span class="n">get_cost</span><span class="p">,</span> <span class="n">get_cost_1</span><span class="p">]</span>
 <span class="n">total_iterations</span> <span class="o">=</span> <span class="n">num_iterations_per_cost_func</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">cost_functions</span><span class="p">)</span>
 
-<span class="n">ctr</span><span class="p">,</span> <span class="n">hits</span> <span class="o">=</span> <span class="n">run_simulation_multiple_cost_functions</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations_per_cost_func</span><span class="p">,</span> <span class="n">rooms</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">cost_functions</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="n">do_learn</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">ctr</span><span class="p">,</span> <span class="n">hits</span> <span class="o">=</span> <span class="n">run_simulation_multiple_cost_functions</span><span class="p">(</span>
+    <span class="n">vw</span><span class="p">,</span>
+    <span class="n">num_iterations_per_cost_func</span><span class="p">,</span>
+    <span class="n">rooms</span><span class="p">,</span>
+    <span class="n">times_of_day</span><span class="p">,</span>
+    <span class="n">cost_functions</span><span class="p">,</span>
+    <span class="mi">0</span><span class="p">,</span>
+    <span class="mi">32</span><span class="p">,</span>
+    <span class="n">do_learn</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+<span class="p">)</span>
 <span class="n">vw</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>
-<span class="n">plot_reward_rate</span><span class="p">(</span><span class="n">total_iterations</span><span class="p">,</span> <span class="n">ctr</span><span class="p">,</span> <span class="s1">&#39;reward rate with num_actions = 32 and bandwidth = 1&#39;</span><span class="p">)</span>
+<span class="n">plot_reward_rate</span><span class="p">(</span>
+    <span class="n">total_iterations</span><span class="p">,</span> <span class="n">ctr</span><span class="p">,</span> <span class="s2">&quot;reward rate with num_actions = 32 and bandwidth = 1&quot;</span>
+<span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/716848bcb158df008dd7159e28af27c7e5362bc1e339e90d74518232646ef68d.png" src="../_images/716848bcb158df008dd7159e28af27c7e5362bc1e339e90d74518232646ef68d.png" />
+<img alt="../_images/d989ada5ef395df565e3632f3e5ed5732dd47679bfb5bb1137e0cbc3b3807a14.png" src="../_images/d989ada5ef395df565e3632f3e5ed5732dd47679bfb5bb1137e0cbc3b3807a14.png" />
 </div>
 </div>
 </section>
@@ -1357,28 +1444,28 @@ Running simulation for: --cats 2048 and --bandwidth 3
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_smooth_cost</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">temperature</span><span class="p">,</span> <span class="n">min_value</span><span class="p">,</span> <span class="n">max_value</span><span class="p">):</span>
     <span class="nb">range</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">max_value</span> <span class="o">-</span> <span class="n">min_value</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s1">&#39;room&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Living Room&quot;</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s1">&#39;time_of_day&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;room&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Living Room&quot;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span><span class="p">:</span>
             <span class="c1"># randomly pick a temperature in this range</span>
             <span class="n">selected_temperature</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span> <span class="mi">29</span><span class="p">)</span>
             <span class="c1"># the absolute difference between selected temperature and proposed temperature</span>
             <span class="n">cost</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="o">-</span> <span class="n">math</span><span class="o">.</span><span class="n">fabs</span><span class="p">(</span><span class="n">selected_temperature</span> <span class="o">-</span> <span class="n">temperature</span><span class="p">)</span> <span class="o">/</span> <span class="nb">range</span>
             <span class="k">return</span> <span class="o">-</span><span class="mf">1.0</span> <span class="o">*</span> <span class="n">cost</span>
-        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s1">&#39;time_of_day&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;afternoon&quot;</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;afternoon&quot;</span><span class="p">:</span>
             <span class="n">selected_temperature</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">18</span><span class="p">)</span>
             <span class="c1"># the absolute difference between selected temperature and proposed temperature</span>
             <span class="n">cost</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="o">-</span> <span class="n">math</span><span class="o">.</span><span class="n">fabs</span><span class="p">(</span><span class="n">selected_temperature</span> <span class="o">-</span> <span class="n">temperature</span><span class="p">)</span> <span class="o">/</span> <span class="nb">range</span>
             <span class="k">return</span> <span class="o">-</span><span class="mf">1.0</span> <span class="o">*</span> <span class="n">cost</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">USER_DISLIKED_TEMPERATURE</span>
-    <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s1">&#39;room&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Bedroom&quot;</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s1">&#39;time_of_day&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span><span class="p">:</span>
+    <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;room&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Bedroom&quot;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span><span class="p">:</span>
             <span class="c1"># randomly pick a temperature in this range</span>
             <span class="n">selected_temperature</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">18</span><span class="p">)</span>
             <span class="c1"># the absolute difference between selected temperature and proposed temperature</span>
             <span class="n">cost</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="o">-</span> <span class="n">math</span><span class="o">.</span><span class="n">fabs</span><span class="p">(</span><span class="n">selected_temperature</span> <span class="o">-</span> <span class="n">temperature</span><span class="p">)</span> <span class="o">/</span> <span class="nb">range</span>
             <span class="k">return</span> <span class="o">-</span><span class="mf">1.0</span> <span class="o">*</span> <span class="n">cost</span>
-        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s1">&#39;time_of_day&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;afternoon&quot;</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;afternoon&quot;</span><span class="p">:</span>
             <span class="c1"># randomly pick a temperature in this range</span>
             <span class="n">selected_temperature</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">18</span><span class="p">)</span>
             <span class="c1"># the absolute difference between selected temperature and proposed temperature</span>
@@ -1409,8 +1496,19 @@ Running simulation for: --cats 2048 and --bandwidth 3
         <span class="k">if</span> <span class="n">bd</span> <span class="o">&gt;=</span> <span class="n">actions</span><span class="p">:</span>
             <span class="k">continue</span>
         <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Running simulation for: --cats </span><span class="si">{</span><span class="n">actions</span><span class="si">}</span><span class="s2"> and --bandwidth </span><span class="si">{</span><span class="n">bd</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-        <span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;--cats </span><span class="si">{</span><span class="n">actions</span><span class="si">}</span><span class="s2">  --bandwidth </span><span class="si">{</span><span class="n">bd</span><span class="si">}</span><span class="s2"> --min_value 0 --max_value 32 --json --chain_hash --coin --epsilon 0.2 -q :: --quiet&quot;</span><span class="p">)</span>
-        <span class="n">rr</span><span class="p">,</span> <span class="n">hits</span> <span class="o">=</span> <span class="n">run_simulation</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">rooms</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">get_smooth_cost</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="n">do_learn</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span>
+            <span class="sa">f</span><span class="s2">&quot;--cats </span><span class="si">{</span><span class="n">actions</span><span class="si">}</span><span class="s2">  --bandwidth </span><span class="si">{</span><span class="n">bd</span><span class="si">}</span><span class="s2"> --min_value 0 --max_value 32 --json --chain_hash --coin --epsilon 0.2 -q :: --quiet&quot;</span>
+        <span class="p">)</span>
+        <span class="n">rr</span><span class="p">,</span> <span class="n">hits</span> <span class="o">=</span> <span class="n">run_simulation</span><span class="p">(</span>
+            <span class="n">vw</span><span class="p">,</span>
+            <span class="n">num_iterations</span><span class="p">,</span>
+            <span class="n">rooms</span><span class="p">,</span>
+            <span class="n">times_of_day</span><span class="p">,</span>
+            <span class="n">get_smooth_cost</span><span class="p">,</span>
+            <span class="mi">0</span><span class="p">,</span>
+            <span class="mi">32</span><span class="p">,</span>
+            <span class="n">do_learn</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="p">)</span>
         <span class="n">vw</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>
         <span class="n">data</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">actions</span><span class="p">)][</span><span class="nb">str</span><span class="p">(</span><span class="n">bd</span><span class="p">)]</span> <span class="o">=</span> <span class="p">(</span><span class="n">rr</span><span class="p">,</span> <span class="n">hits</span><span class="p">)</span>
 
@@ -1536,7 +1634,7 @@ Running simulation for: --cats 2048 and --bandwidth 3
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 25
 </pre></div>
 </div>
-<img alt="../_images/bdc42ac6f91ded3c1f51cbb6f5ca89953abcc0822740f6c9be1d96ddaf286197.png" src="../_images/bdc42ac6f91ded3c1f51cbb6f5ca89953abcc0822740f6c9be1d96ddaf286197.png" />
+<img alt="../_images/d34a61ef6246164431949fb0d5b049be677195e3be1768f018c671cb902817c8.png" src="../_images/d34a61ef6246164431949fb0d5b049be677195e3be1768f018c671cb902817c8.png" />
 </div>
 </div>
 </section>

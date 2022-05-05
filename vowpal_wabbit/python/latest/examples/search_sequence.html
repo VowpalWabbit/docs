@@ -510,43 +510,53 @@ const thebe_selector_output = ".output, .cell_output"
         <span class="c1"># you can test program options with sch.po_exists</span>
         <span class="c1"># and get their values with sch.po_get -&gt; string and</span>
         <span class="c1"># sch.po_get_int -&gt; int</span>
-        <span class="k">if</span> <span class="n">sch</span><span class="o">.</span><span class="n">po_exists</span><span class="p">(</span><span class="s1">&#39;search&#39;</span><span class="p">):</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;found --search&#39;</span><span class="p">)</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;--search value =&#39;</span><span class="p">,</span> <span class="n">sch</span><span class="o">.</span><span class="n">po_get</span><span class="p">(</span><span class="s1">&#39;search&#39;</span><span class="p">),</span> <span class="s1">&#39;, type =&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">sch</span><span class="o">.</span><span class="n">po_get</span><span class="p">(</span><span class="s1">&#39;search&#39;</span><span class="p">)))</span>
+        <span class="k">if</span> <span class="n">sch</span><span class="o">.</span><span class="n">po_exists</span><span class="p">(</span><span class="s2">&quot;search&quot;</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;found --search&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span>
+                <span class="s2">&quot;--search value =&quot;</span><span class="p">,</span>
+                <span class="n">sch</span><span class="o">.</span><span class="n">po_get</span><span class="p">(</span><span class="s2">&quot;search&quot;</span><span class="p">),</span>
+                <span class="s2">&quot;, type =&quot;</span><span class="p">,</span>
+                <span class="nb">type</span><span class="p">(</span><span class="n">sch</span><span class="o">.</span><span class="n">po_get</span><span class="p">(</span><span class="s2">&quot;search&quot;</span><span class="p">)),</span>
+            <span class="p">)</span>
 
         <span class="c1"># set whatever options you want</span>
-        <span class="n">sch</span><span class="o">.</span><span class="n">set_options</span><span class="p">(</span> <span class="n">sch</span><span class="o">.</span><span class="n">AUTO_HAMMING_LOSS</span> <span class="o">|</span> <span class="n">sch</span><span class="o">.</span><span class="n">AUTO_CONDITION_FEATURES</span> <span class="p">)</span>
+        <span class="n">sch</span><span class="o">.</span><span class="n">set_options</span><span class="p">(</span><span class="n">sch</span><span class="o">.</span><span class="n">AUTO_HAMMING_LOSS</span> <span class="o">|</span> <span class="n">sch</span><span class="o">.</span><span class="n">AUTO_CONDITION_FEATURES</span><span class="p">)</span>
 
-    <span class="k">def</span> <span class="nf">_run</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sentence</span><span class="p">):</span>   <span class="c1"># it&#39;s called _run to remind you that you shouldn&#39;t call it directly!</span>
+    <span class="k">def</span> <span class="nf">_run</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">sentence</span>
+    <span class="p">):</span>  <span class="c1"># it&#39;s called _run to remind you that you shouldn&#39;t call it directly!</span>
         <span class="n">output</span> <span class="o">=</span> <span class="p">[]</span>
         <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">sentence</span><span class="p">)):</span>
-            <span class="n">pos</span><span class="p">,</span><span class="n">word</span> <span class="o">=</span> <span class="n">sentence</span><span class="p">[</span><span class="n">n</span><span class="p">]</span>
+            <span class="n">pos</span><span class="p">,</span> <span class="n">word</span> <span class="o">=</span> <span class="n">sentence</span><span class="p">[</span><span class="n">n</span><span class="p">]</span>
             <span class="c1"># use &quot;with...as...&quot; to guarantee that the example is finished properly</span>
-            <span class="n">ex</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">vw</span><span class="o">.</span><span class="n">example</span><span class="p">({</span><span class="s1">&#39;w&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">word</span><span class="p">]})</span>
-            <span class="n">pred</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sch</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">examples</span><span class="o">=</span><span class="n">ex</span><span class="p">,</span> <span class="n">my_tag</span><span class="o">=</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">oracle</span><span class="o">=</span><span class="n">pos</span><span class="p">,</span> <span class="n">condition</span><span class="o">=</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="s1">&#39;p&#39;</span><span class="p">))</span>
-            <span class="n">vw</span><span class="o">.</span><span class="n">finish_example</span><span class="p">([</span><span class="n">ex</span><span class="p">])</span> <span class="c1"># must pass the example in as a list because search is a MultiEx reduction</span>
+            <span class="n">ex</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">vw</span><span class="o">.</span><span class="n">example</span><span class="p">({</span><span class="s2">&quot;w&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">word</span><span class="p">]})</span>
+            <span class="n">pred</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sch</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span>
+                <span class="n">examples</span><span class="o">=</span><span class="n">ex</span><span class="p">,</span> <span class="n">my_tag</span><span class="o">=</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">oracle</span><span class="o">=</span><span class="n">pos</span><span class="p">,</span> <span class="n">condition</span><span class="o">=</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="s2">&quot;p&quot;</span><span class="p">)</span>
+            <span class="p">)</span>
+            <span class="n">vw</span><span class="o">.</span><span class="n">finish_example</span><span class="p">(</span>
+                <span class="p">[</span><span class="n">ex</span><span class="p">]</span>
+            <span class="p">)</span>  <span class="c1"># must pass the example in as a list because search is a MultiEx reduction</span>
             <span class="n">output</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">pred</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">output</span>
 
+
 <span class="c1"># wow! your data can be ANY type you want... does NOT have to be VW examples</span>
-<span class="n">DET</span>  <span class="o">=</span> <span class="mi">1</span>
+<span class="n">DET</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="n">NOUN</span> <span class="o">=</span> <span class="mi">2</span>
 <span class="n">VERB</span> <span class="o">=</span> <span class="mi">3</span>
-<span class="n">ADJ</span>  <span class="o">=</span> <span class="mi">4</span>
-<span class="n">my_dataset</span> <span class="o">=</span> <span class="p">[</span> <span class="p">[(</span><span class="n">DET</span> <span class="p">,</span> <span class="s1">&#39;the&#39;</span><span class="p">),</span>
-                <span class="p">(</span><span class="n">NOUN</span><span class="p">,</span> <span class="s1">&#39;monster&#39;</span><span class="p">),</span>
-                <span class="p">(</span><span class="n">VERB</span><span class="p">,</span> <span class="s1">&#39;ate&#39;</span><span class="p">),</span>
-                <span class="p">(</span><span class="n">DET</span> <span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">),</span>
-                <span class="p">(</span><span class="n">ADJ</span> <span class="p">,</span> <span class="s1">&#39;big&#39;</span><span class="p">),</span>
-                <span class="p">(</span><span class="n">NOUN</span><span class="p">,</span> <span class="s1">&#39;sandwich&#39;</span><span class="p">)],</span>
-               <span class="p">[(</span><span class="n">DET</span> <span class="p">,</span> <span class="s1">&#39;the&#39;</span><span class="p">),</span>
-                <span class="p">(</span><span class="n">NOUN</span><span class="p">,</span> <span class="s1">&#39;sandwich&#39;</span><span class="p">),</span>
-                <span class="p">(</span><span class="n">VERB</span><span class="p">,</span> <span class="s1">&#39;was&#39;</span><span class="p">),</span>
-                <span class="p">(</span><span class="n">ADJ</span> <span class="p">,</span> <span class="s1">&#39;tasty&#39;</span><span class="p">)],</span>
-               <span class="p">[(</span><span class="n">NOUN</span><span class="p">,</span> <span class="s1">&#39;it&#39;</span><span class="p">),</span>
-                <span class="p">(</span><span class="n">VERB</span><span class="p">,</span> <span class="s1">&#39;ate&#39;</span><span class="p">),</span>
-                <span class="p">(</span><span class="n">NOUN</span><span class="p">,</span> <span class="s1">&#39;it&#39;</span><span class="p">),</span>
-                <span class="p">(</span><span class="n">ADJ</span> <span class="p">,</span> <span class="s1">&#39;all&#39;</span><span class="p">)]</span> <span class="p">]</span>
+<span class="n">ADJ</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="n">my_dataset</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">[</span>
+        <span class="p">(</span><span class="n">DET</span><span class="p">,</span> <span class="s2">&quot;the&quot;</span><span class="p">),</span>
+        <span class="p">(</span><span class="n">NOUN</span><span class="p">,</span> <span class="s2">&quot;monster&quot;</span><span class="p">),</span>
+        <span class="p">(</span><span class="n">VERB</span><span class="p">,</span> <span class="s2">&quot;ate&quot;</span><span class="p">),</span>
+        <span class="p">(</span><span class="n">DET</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">),</span>
+        <span class="p">(</span><span class="n">ADJ</span><span class="p">,</span> <span class="s2">&quot;big&quot;</span><span class="p">),</span>
+        <span class="p">(</span><span class="n">NOUN</span><span class="p">,</span> <span class="s2">&quot;sandwich&quot;</span><span class="p">),</span>
+    <span class="p">],</span>
+    <span class="p">[(</span><span class="n">DET</span><span class="p">,</span> <span class="s2">&quot;the&quot;</span><span class="p">),</span> <span class="p">(</span><span class="n">NOUN</span><span class="p">,</span> <span class="s2">&quot;sandwich&quot;</span><span class="p">),</span> <span class="p">(</span><span class="n">VERB</span><span class="p">,</span> <span class="s2">&quot;was&quot;</span><span class="p">),</span> <span class="p">(</span><span class="n">ADJ</span><span class="p">,</span> <span class="s2">&quot;tasty&quot;</span><span class="p">)],</span>
+    <span class="p">[(</span><span class="n">NOUN</span><span class="p">,</span> <span class="s2">&quot;it&quot;</span><span class="p">),</span> <span class="p">(</span><span class="n">VERB</span><span class="p">,</span> <span class="s2">&quot;ate&quot;</span><span class="p">),</span> <span class="p">(</span><span class="n">NOUN</span><span class="p">,</span> <span class="s2">&quot;it&quot;</span><span class="p">),</span> <span class="p">(</span><span class="n">ADJ</span><span class="p">,</span> <span class="s2">&quot;all&quot;</span><span class="p">)],</span>
+<span class="p">]</span>
 
 
 <span class="c1"># initialize VW as usual, but use &#39;hook&#39; as the search_task</span>
@@ -556,14 +566,14 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="n">sequenceLabeler</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">init_search_task</span><span class="p">(</span><span class="n">SequenceLabeler</span><span class="p">)</span>
 
 <span class="c1"># train it on the above dataset ten times; the my_dataset.__iter__ feeds into _run above</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;training!&#39;</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="n">sys</span><span class="o">.</span><span class="n">stderr</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;training!&quot;</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="n">sys</span><span class="o">.</span><span class="n">stderr</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
     <span class="n">sequenceLabeler</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">my_dataset</span><span class="p">)</span>
 
 <span class="c1"># now see the predictions on a test sentence</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;predicting!&#39;</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="n">sys</span><span class="o">.</span><span class="n">stderr</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">sequenceLabeler</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span> <span class="p">[(</span><span class="mi">1</span><span class="p">,</span><span class="n">w</span><span class="p">)</span> <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="s2">&quot;the sandwich ate a monster&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">()]</span> <span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;should have printed: [1, 2, 3, 1, 2]&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;predicting!&quot;</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="n">sys</span><span class="o">.</span><span class="n">stderr</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sequenceLabeler</span><span class="o">.</span><span class="n">predict</span><span class="p">([(</span><span class="mi">1</span><span class="p">,</span> <span class="n">w</span><span class="p">)</span> <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="s2">&quot;the sandwich ate a monster&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">()]))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;should have printed: [1, 2, 3, 1, 2]&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>

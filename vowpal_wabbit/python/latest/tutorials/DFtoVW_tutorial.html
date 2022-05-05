@@ -667,24 +667,26 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># VW output parsing function/class</span>
 <span class="k">class</span> <span class="nc">VWLogParser</span><span class="p">:</span>
     <span class="sd">&quot;&quot;&quot;Parser for Vowpal Wabbit output log&quot;&quot;&quot;</span>
-    
+
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">file_path_or_list</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;The file name or list of lines to parse&quot;&quot;&quot;</span>
         <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">file_path_or_list</span><span class="p">,</span> <span class="p">(</span><span class="nb">list</span><span class="p">,</span> <span class="nb">str</span><span class="p">)):</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">file_path_or_list</span> <span class="o">=</span> <span class="n">file_path_or_list</span>
         <span class="k">else</span><span class="p">:</span>
-            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;Argument `fname` should be a str (for file path) or a list of log lines&quot;</span><span class="p">)</span>
-    
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span>
+                <span class="s2">&quot;Argument `fname` should be a str (for file path) or a list of log lines&quot;</span>
+            <span class="p">)</span>
+
     <span class="k">def</span> <span class="nf">parse</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Parse the output from `vw` command, return dataframe/dictionnaries with the associated data.&quot;&quot;&quot;</span>
-        <span class="c1"># Init containers </span>
+        <span class="c1"># Init containers</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">table_lst</span> <span class="o">=</span> <span class="p">[]</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">params</span> <span class="o">=</span> <span class="p">{}</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">metrics</span> <span class="o">=</span> <span class="p">{}</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">inside_table</span> <span class="o">=</span> <span class="kc">False</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">after_table</span> <span class="o">=</span> <span class="kc">False</span>
-        
+
         <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">file_path_or_list</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
             <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">file_path_or_list</span><span class="p">:</span>
                 <span class="bp">self</span><span class="o">.</span><span class="n">_parse_vw_row</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
@@ -692,7 +694,6 @@ const thebe_selector_output = ".output, .cell_output"
             <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">file_path_or_list</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
                 <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
                     <span class="bp">self</span><span class="o">.</span><span class="n">_parse_vw_row</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
-            
 
         <span class="bp">self</span><span class="o">.</span><span class="n">df</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_output_df</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">table_lst</span><span class="p">)</span>
 
@@ -713,7 +714,9 @@ const thebe_selector_output = ".output, .cell_output"
     <span class="k">def</span> <span class="nf">_make_output_df</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">lst</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Make dataframe from the list&quot;&quot;&quot;</span>
         <span class="c1"># Make columns from first and second elements of the list</span>
-        <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">first_row</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">second_row</span><span class="si">}</span><span class="s2">&quot;</span> <span class="k">for</span> <span class="p">(</span><span class="n">first_row</span><span class="p">,</span> <span class="n">second_row</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">lst</span><span class="p">[:</span><span class="mi">2</span><span class="p">])]</span>
+        <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">first_row</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">second_row</span><span class="si">}</span><span class="s2">&quot;</span> <span class="k">for</span> <span class="p">(</span><span class="n">first_row</span><span class="p">,</span> <span class="n">second_row</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">lst</span><span class="p">[:</span><span class="mi">2</span><span class="p">])</span>
+        <span class="p">]</span>
 
         <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">lst</span><span class="p">[</span><span class="mi">2</span><span class="p">:],</span> <span class="n">columns</span><span class="o">=</span><span class="n">columns</span><span class="p">)</span>
 
@@ -731,13 +734,17 @@ const thebe_selector_output = ".output, .cell_output"
     <span class="k">def</span> <span class="nf">_parse_vw_row</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">row</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Parse row and add parsed elements to instance attributes params, metrics and table_lst&quot;&quot;&quot;</span>
         <span class="k">if</span> <span class="s2">&quot;=&quot;</span> <span class="ow">in</span> <span class="n">row</span><span class="p">:</span>
-            <span class="n">param_name</span><span class="p">,</span> <span class="n">value</span> <span class="o">=</span> <span class="p">[</span><span class="n">element</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">row</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;=&quot;</span><span class="p">,</span> <span class="n">maxsplit</span><span class="o">=</span><span class="mi">1</span><span class="p">)]</span>
+            <span class="n">param_name</span><span class="p">,</span> <span class="n">value</span> <span class="o">=</span> <span class="p">[</span>
+                <span class="n">element</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">row</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;=&quot;</span><span class="p">,</span> <span class="n">maxsplit</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+            <span class="p">]</span>
             <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">after_table</span><span class="p">:</span>
                 <span class="bp">self</span><span class="o">.</span><span class="n">metrics</span><span class="p">[</span><span class="n">param_name</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cast_string</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
             <span class="k">else</span><span class="p">:</span>
                 <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="p">[</span><span class="n">param_name</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cast_string</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
         <span class="k">elif</span> <span class="s2">&quot;:&quot;</span> <span class="ow">in</span> <span class="n">row</span><span class="p">:</span>
-            <span class="n">param_name</span><span class="p">,</span> <span class="n">value</span> <span class="o">=</span> <span class="p">[</span><span class="n">element</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">row</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;:&quot;</span><span class="p">,</span> <span class="n">maxsplit</span><span class="o">=</span><span class="mi">1</span><span class="p">)]</span>
+            <span class="n">param_name</span><span class="p">,</span> <span class="n">value</span> <span class="o">=</span> <span class="p">[</span>
+                <span class="n">element</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">row</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;:&quot;</span><span class="p">,</span> <span class="n">maxsplit</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+            <span class="p">]</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="p">[</span><span class="n">param_name</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cast_string</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
 
         <span class="k">elif</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">after_table</span><span class="p">:</span>
@@ -755,14 +762,14 @@ const thebe_selector_output = ".output, .cell_output"
     <span class="kn">import</span> <span class="nn">requests</span>
     <span class="kn">from</span> <span class="nn">io</span> <span class="kn">import</span> <span class="n">BytesIO</span>
     <span class="kn">from</span> <span class="nn">rarfile</span> <span class="kn">import</span> <span class="n">RarFile</span>
-    
+
     <span class="n">URL_PM_CITIES</span> <span class="o">=</span> <span class="s2">&quot;https://archive.ics.uci.edu/ml/machine-learning-databases/00394/FiveCitiePMData.rar&quot;</span>
 
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Downloading data at </span><span class="si">{</span><span class="n">URL_PM_CITIES</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">URL_PM_CITIES</span><span class="p">)</span>
     <span class="n">bcontent</span> <span class="o">=</span> <span class="n">BytesIO</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
     <span class="n">rf</span> <span class="o">=</span> <span class="n">RarFile</span><span class="p">(</span><span class="n">bcontent</span><span class="p">)</span>
-    
+
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Extracting content in folder </span><span class="si">{</span><span class="nb">repr</span><span class="p">(</span><span class="n">dest_dir</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="n">rf</span><span class="o">.</span><span class="n">extractall</span><span class="p">(</span><span class="n">dest_dir</span><span class="p">)</span>
 
@@ -773,41 +780,51 @@ const thebe_selector_output = ".output, .cell_output"
         <span class="n">fpath</span> <span class="o">=</span> <span class="n">join</span><span class="p">(</span><span class="n">folder_path</span><span class="p">,</span> <span class="n">fname</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span>
             <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Importing file: </span><span class="si">{</span><span class="n">fpath</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-        <span class="n">city_name</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;pm$&quot;</span><span class="p">,</span> <span class="n">repl</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">string</span><span class="o">=</span><span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s2">&quot;^[a-z]+&quot;</span><span class="p">,</span> <span class="n">string</span><span class="o">=</span><span class="n">fname</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span><span class="o">.</span><span class="n">group</span><span class="p">())</span>
-        
+        <span class="n">city_name</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span>
+            <span class="s2">&quot;pm$&quot;</span><span class="p">,</span> <span class="n">repl</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">string</span><span class="o">=</span><span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s2">&quot;^[a-z]+&quot;</span><span class="p">,</span> <span class="n">string</span><span class="o">=</span><span class="n">fname</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span><span class="o">.</span><span class="n">group</span><span class="p">()</span>
+        <span class="p">)</span>
+
         <span class="n">df_city</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">fpath</span><span class="p">)</span>
-        <span class="n">df_city_clean</span> <span class="o">=</span> <span class="p">(</span><span class="n">df_city</span>
-                         <span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">city</span><span class="o">=</span><span class="n">city_name</span><span class="p">)</span>
-                         <span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;No&quot;</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="n">col</span> <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">df_city</span><span class="o">.</span><span class="n">columns</span> <span class="k">if</span> <span class="p">(</span><span class="s2">&quot;PM&quot;</span> <span class="ow">in</span> <span class="n">col</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">col</span> <span class="o">!=</span> <span class="s2">&quot;PM_US Post&quot;</span><span class="p">)])</span>
-                         <span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;PM_US Post&quot;</span><span class="p">:</span> <span class="s2">&quot;PM&quot;</span><span class="p">})</span>
-                         <span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;PM&quot;</span><span class="p">])</span>
+        <span class="n">df_city_clean</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="n">df_city</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">city</span><span class="o">=</span><span class="n">city_name</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">drop</span><span class="p">(</span>
+                <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;No&quot;</span><span class="p">]</span>
+                <span class="o">+</span> <span class="p">[</span>
+                    <span class="n">col</span>
+                    <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">df_city</span><span class="o">.</span><span class="n">columns</span>
+                    <span class="k">if</span> <span class="p">(</span><span class="s2">&quot;PM&quot;</span> <span class="ow">in</span> <span class="n">col</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">col</span> <span class="o">!=</span> <span class="s2">&quot;PM_US Post&quot;</span><span class="p">)</span>
+                <span class="p">]</span>
+            <span class="p">)</span>
+            <span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;PM_US Post&quot;</span><span class="p">:</span> <span class="s2">&quot;PM&quot;</span><span class="p">})</span>
+            <span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;PM&quot;</span><span class="p">])</span>
         <span class="p">)</span>
         <span class="n">df_lst</span> <span class="o">+=</span> <span class="p">[</span><span class="n">df_city_clean</span><span class="p">]</span>
-    
+
     <span class="n">df_city</span> <span class="o">=</span> <span class="p">(</span>
-        <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span><span class="n">df_lst</span><span class="p">)</span> <span class="c1"># append dataframes</span>
-        <span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">frac</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">123</span><span class="p">)</span> <span class="c1"># shuffle</span>
+        <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span><span class="n">df_lst</span><span class="p">)</span>  <span class="c1"># append dataframes</span>
+        <span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">frac</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">123</span><span class="p">)</span>  <span class="c1"># shuffle</span>
         <span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
     <span class="p">)</span>
-    
+
     <span class="k">return</span> <span class="n">df_city</span>
 
 
-<span class="c1"># Model weight inspection functions                </span>
+<span class="c1"># Model weight inspection functions</span>
 <span class="k">def</span> <span class="nf">get_feature_names</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
     <span class="n">cat_names</span> <span class="o">=</span> <span class="n">get_cat_feature_names</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
     <span class="n">num_names</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">number</span><span class="p">)</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
-    
+
     <span class="k">return</span> <span class="n">cat_names</span> <span class="o">+</span> <span class="n">num_names</span>
 
 
 <span class="k">def</span> <span class="nf">get_cat_feature_names</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
     <span class="n">unique_values_cat</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="nb">object</span><span class="p">)</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">s</span><span class="p">:</span> <span class="n">s</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span>
-    <span class="n">cat_names</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s2">=</span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2">&quot;</span> 
-                 <span class="k">for</span> <span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">unique_values</span><span class="p">)</span> <span class="ow">in</span> <span class="n">unique_values_cat</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
-                 <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">unique_values</span>
+    <span class="n">cat_names</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s2">=</span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="k">for</span> <span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">unique_values</span><span class="p">)</span> <span class="ow">in</span> <span class="n">unique_values_cat</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">unique_values</span>
     <span class="p">]</span>
-    
+
     <span class="k">return</span> <span class="n">cat_names</span>
 
 
@@ -905,11 +922,14 @@ The full label of some features (the non obvious ones):
 <p>The most correlated (&gt; 0.95) variable(s):</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
- <span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
- <span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">id_vars</span><span class="o">=</span><span class="s2">&quot;index&quot;</span><span class="p">,</span> <span class="n">value_name</span><span class="o">=</span><span class="s2">&quot;corr&quot;</span><span class="p">)</span>
- <span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="k">lambda</span> <span class="n">df</span><span class="p">:</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;index&quot;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;variable&quot;</span><span class="p">]]</span> <span class="c1"># to get lower triangular part of the matrix</span>
- <span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="k">lambda</span> <span class="n">df</span><span class="p">:</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;corr&quot;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mf">0.95</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">(</span>
+    <span class="n">df</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
+    <span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+    <span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">id_vars</span><span class="o">=</span><span class="s2">&quot;index&quot;</span><span class="p">,</span> <span class="n">value_name</span><span class="o">=</span><span class="s2">&quot;corr&quot;</span><span class="p">)</span>
+    <span class="o">.</span><span class="n">loc</span><span class="p">[</span>
+        <span class="k">lambda</span> <span class="n">df</span><span class="p">:</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;index&quot;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;variable&quot;</span><span class="p">]</span>
+    <span class="p">]</span>  <span class="c1"># to get lower triangular part of the matrix</span>
+    <span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="k">lambda</span> <span class="n">df</span><span class="p">:</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;corr&quot;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mf">0.95</span><span class="p">]</span>
 <span class="p">)</span>
 </pre></div>
 </div>
@@ -940,7 +960,21 @@ The full label of some features (the non obvious ones):
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="s2">&quot;PM&quot;</span>
-<span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;year&#39;</span><span class="p">,</span> <span class="s1">&#39;month&#39;</span><span class="p">,</span> <span class="s1">&#39;day&#39;</span><span class="p">,</span> <span class="s1">&#39;hour&#39;</span><span class="p">,</span> <span class="s1">&#39;season&#39;</span><span class="p">,</span> <span class="s1">&#39;DEWP&#39;</span><span class="p">,</span> <span class="s1">&#39;HUMI&#39;</span><span class="p">,</span> <span class="s1">&#39;PRES&#39;</span><span class="p">,</span> <span class="s1">&#39;TEMP&#39;</span><span class="p">,</span> <span class="s1">&#39;cbwd&#39;</span><span class="p">,</span> <span class="s1">&#39;Iws&#39;</span><span class="p">,</span> <span class="s1">&#39;precipitation&#39;</span><span class="p">,</span> <span class="s1">&#39;city&#39;</span><span class="p">]</span>
+<span class="n">x</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;year&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;month&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;day&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;hour&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;season&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;DEWP&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;HUMI&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;PRES&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;TEMP&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;cbwd&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Iws&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;precipitation&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;city&quot;</span><span class="p">,</span>
+<span class="p">]</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;label:&quot;</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;features:&quot;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
@@ -1056,11 +1090,22 @@ And the last 10 lines:<div class="cell docutils container">
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">scatter_var</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;average_loss&quot;</span><span class="p">,</span> <span class="s2">&quot;since_last&quot;</span><span class="p">]</span>
-<span class="n">g</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">relplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df_iter</span><span class="p">[</span><span class="n">scatter_var</span> <span class="o">+</span> <span class="p">[</span><span class="s2">&quot;example_counter&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">id_vars</span><span class="o">=</span><span class="s2">&quot;example_counter&quot;</span><span class="p">),</span> 
-                <span class="n">x</span><span class="o">=</span><span class="s2">&quot;example_counter&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="s2">&quot;variable&quot;</span><span class="p">,</span>
-                <span class="n">col_wrap</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">facet_kws</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;sharey&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span> <span class="s1">&#39;sharex&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">},</span> 
-                <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;scatter&quot;</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">aspect</span><span class="o">=</span><span class="mf">1.5</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">.5</span><span class="p">)</span>
-<span class="n">g</span><span class="o">.</span><span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;Scatter plot of losses&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="n">SUPTITLE_FONTSIZE</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="n">SUPTITLE_FONTWEIGHT</span><span class="p">)</span>
+<span class="n">g</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">relplot</span><span class="p">(</span>
+    <span class="n">data</span><span class="o">=</span><span class="n">df_iter</span><span class="p">[</span><span class="n">scatter_var</span> <span class="o">+</span> <span class="p">[</span><span class="s2">&quot;example_counter&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">id_vars</span><span class="o">=</span><span class="s2">&quot;example_counter&quot;</span><span class="p">),</span>
+    <span class="n">x</span><span class="o">=</span><span class="s2">&quot;example_counter&quot;</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">,</span>
+    <span class="n">col</span><span class="o">=</span><span class="s2">&quot;variable&quot;</span><span class="p">,</span>
+    <span class="n">col_wrap</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
+    <span class="n">facet_kws</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;sharey&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span> <span class="s2">&quot;sharex&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">},</span>
+    <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;scatter&quot;</span><span class="p">,</span>
+    <span class="n">s</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>
+    <span class="n">height</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span>
+    <span class="n">aspect</span><span class="o">=</span><span class="mf">1.5</span><span class="p">,</span>
+    <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span>
+    <span class="s2">&quot;Scatter plot of losses&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="n">SUPTITLE_FONTSIZE</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="n">SUPTITLE_FONTWEIGHT</span>
+<span class="p">)</span>
 <span class="n">g</span><span class="o">.</span><span class="n">set_titles</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{col_name}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="n">TITLE_FONTSIZE</span><span class="p">)</span>
 <span class="n">g</span><span class="o">.</span><span class="n">fig</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
 </pre></div>
@@ -1079,10 +1124,24 @@ And the last 10 lines:<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">distr_vars</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;current_label&quot;</span><span class="p">,</span> <span class="s2">&quot;current_predict&quot;</span><span class="p">,</span> <span class="s2">&quot;current_features&quot;</span><span class="p">,</span> <span class="s2">&quot;example_weight&quot;</span><span class="p">]</span>
 
-<span class="n">g</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">displot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df_iter</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">start_idx</span><span class="p">:,</span> <span class="n">distr_vars</span><span class="p">]</span><span class="o">.</span><span class="n">melt</span><span class="p">(),</span> 
-                <span class="n">x</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="s2">&quot;variable&quot;</span><span class="p">,</span> <span class="n">multiple</span><span class="o">=</span><span class="s2">&quot;dodge&quot;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s2">&quot;variable&quot;</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span>
-                <span class="n">common_bins</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">facet_kws</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">sharex</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">sharey</span><span class="o">=</span><span class="kc">False</span><span class="p">),</span> <span class="n">col_wrap</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
-<span class="n">g</span><span class="o">.</span><span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;Distribution of selected metrics&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="n">SUPTITLE_FONTSIZE</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="n">SUPTITLE_FONTWEIGHT</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.05</span><span class="p">)</span>
+<span class="n">g</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">displot</span><span class="p">(</span>
+    <span class="n">data</span><span class="o">=</span><span class="n">df_iter</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">start_idx</span><span class="p">:,</span> <span class="n">distr_vars</span><span class="p">]</span><span class="o">.</span><span class="n">melt</span><span class="p">(),</span>
+    <span class="n">x</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">,</span>
+    <span class="n">col</span><span class="o">=</span><span class="s2">&quot;variable&quot;</span><span class="p">,</span>
+    <span class="n">multiple</span><span class="o">=</span><span class="s2">&quot;dodge&quot;</span><span class="p">,</span>
+    <span class="n">hue</span><span class="o">=</span><span class="s2">&quot;variable&quot;</span><span class="p">,</span>
+    <span class="n">bins</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span>
+    <span class="n">common_bins</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">facet_kws</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">sharex</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">sharey</span><span class="o">=</span><span class="kc">False</span><span class="p">),</span>
+    <span class="n">col_wrap</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>
+    <span class="n">height</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span>
+    <span class="s2">&quot;Distribution of selected metrics&quot;</span><span class="p">,</span>
+    <span class="n">fontsize</span><span class="o">=</span><span class="n">SUPTITLE_FONTSIZE</span><span class="p">,</span>
+    <span class="n">fontweight</span><span class="o">=</span><span class="n">SUPTITLE_FONTWEIGHT</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="mf">1.05</span><span class="p">,</span>
+<span class="p">)</span>
 <span class="n">g</span><span class="o">.</span><span class="n">set_titles</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{col_name}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="n">TITLE_FONTSIZE</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
@@ -1099,17 +1158,26 @@ And the last 10 lines:<div class="cell docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">error</span> <span class="o">=</span> <span class="n">df_iter</span><span class="o">.</span><span class="n">current_label</span> <span class="o">-</span> <span class="n">df_iter</span><span class="o">.</span><span class="n">current_predict</span>
 
 <span class="n">f</span><span class="p">,</span> <span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="n">ax2</span><span class="p">)</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">7</span><span class="p">),</span> <span class="n">ncols</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-<span class="n">f</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;Predictions and errors&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="n">SUPTITLE_FONTSIZE</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="n">SUPTITLE_FONTWEIGHT</span><span class="p">)</span>
+<span class="n">f</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span>
+    <span class="s2">&quot;Predictions and errors&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="n">SUPTITLE_FONTSIZE</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="n">SUPTITLE_FONTWEIGHT</span>
+<span class="p">)</span>
 
 <span class="c1"># Scatterplot pred vs truth</span>
-<span class="n">sns</span><span class="o">.</span><span class="n">scatterplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df_iter</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">start_idx</span><span class="p">:],</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;current_predict&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;current_label&quot;</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax1</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">.15</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">scatterplot</span><span class="p">(</span>
+    <span class="n">data</span><span class="o">=</span><span class="n">df_iter</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">start_idx</span><span class="p">:],</span>
+    <span class="n">x</span><span class="o">=</span><span class="s2">&quot;current_predict&quot;</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="s2">&quot;current_label&quot;</span><span class="p">,</span>
+    <span class="n">ax</span><span class="o">=</span><span class="n">ax1</span><span class="p">,</span>
+    <span class="n">s</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+    <span class="n">alpha</span><span class="o">=</span><span class="mf">0.15</span><span class="p">,</span>
+<span class="p">)</span>
 <span class="n">ax1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Prediction vs truth&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="n">TITLE_FONTSIZE</span><span class="p">)</span>
-<span class="n">max_range</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">df_iter</span><span class="p">[[</span><span class="s2">&quot;current_label&quot;</span><span class="p">,</span> <span class="s2">&quot;current_predict&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">.99</span><span class="p">)</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>
+<span class="n">max_range</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">df_iter</span><span class="p">[[</span><span class="s2">&quot;current_label&quot;</span><span class="p">,</span> <span class="s2">&quot;current_predict&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.99</span><span class="p">)</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>
 <span class="n">ax1</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="n">max_range</span><span class="p">])</span>
 <span class="n">ax1</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="n">max_range</span><span class="p">])</span>
 
 <span class="c1"># Adding x=y line</span>
-<span class="c1">#range_x = range(0, int(df_iter[[&quot;current_predict&quot;, &quot;current_label&quot;]].max().min()))</span>
+<span class="c1"># range_x = range(0, int(df_iter[[&quot;current_predict&quot;, &quot;current_label&quot;]].max().min()))</span>
 <span class="n">range_x</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">max_range</span><span class="p">)</span>
 <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">range_x</span><span class="p">,</span> <span class="n">range_x</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s2">&quot;:&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">2.5</span><span class="p">)</span>
 
@@ -1133,12 +1201,24 @@ And the last 10 lines:<div class="cell docutils container">
 <span class="n">feature_names</span> <span class="o">=</span> <span class="n">get_feature_names</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 
 <span class="c1"># Get weights from feature names</span>
-<span class="n">weights_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([(</span><span class="n">name</span><span class="p">,</span> <span class="n">get_weight_from_name</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">name</span><span class="p">),</span> <span class="s2">&quot;=&quot;</span> <span class="ow">in</span> <span class="n">name</span><span class="p">)</span> <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">feature_names</span><span class="p">],</span> 
-                          <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;vw_feature_name&quot;</span><span class="p">,</span> <span class="s2">&quot;weight&quot;</span><span class="p">,</span> <span class="s2">&quot;is_cat&quot;</span><span class="p">])</span>
+<span class="n">weights_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
+    <span class="p">[(</span><span class="n">name</span><span class="p">,</span> <span class="n">get_weight_from_name</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">name</span><span class="p">),</span> <span class="s2">&quot;=&quot;</span> <span class="ow">in</span> <span class="n">name</span><span class="p">)</span> <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">feature_names</span><span class="p">],</span>
+    <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;vw_feature_name&quot;</span><span class="p">,</span> <span class="s2">&quot;weight&quot;</span><span class="p">,</span> <span class="s2">&quot;is_cat&quot;</span><span class="p">],</span>
+<span class="p">)</span>
 
 <span class="c1"># Adding columns for easier visualization</span>
-<span class="n">weights_df</span><span class="p">[</span><span class="s2">&quot;feature_name&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">weights_df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">row</span><span class="p">:</span> <span class="n">row</span><span class="o">.</span><span class="n">vw_feature_name</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;=&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="k">if</span> <span class="n">row</span><span class="o">.</span><span class="n">is_cat</span> <span class="k">else</span> <span class="n">row</span><span class="o">.</span><span class="n">vw_feature_name</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">weights_df</span><span class="p">[</span><span class="s2">&quot;feature_value&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">weights_df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">row</span><span class="p">:</span> <span class="n">row</span><span class="o">.</span><span class="n">vw_feature_name</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;=&quot;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">zfill</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="k">if</span> <span class="n">row</span><span class="o">.</span><span class="n">is_cat</span> <span class="k">else</span> <span class="n">row</span><span class="o">.</span><span class="n">vw_feature_name</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">weights_df</span><span class="p">[</span><span class="s2">&quot;feature_name&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">weights_df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span>
+    <span class="k">lambda</span> <span class="n">row</span><span class="p">:</span> <span class="n">row</span><span class="o">.</span><span class="n">vw_feature_name</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;=&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">row</span><span class="o">.</span><span class="n">is_cat</span>
+    <span class="k">else</span> <span class="n">row</span><span class="o">.</span><span class="n">vw_feature_name</span><span class="p">,</span>
+    <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">weights_df</span><span class="p">[</span><span class="s2">&quot;feature_value&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">weights_df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span>
+    <span class="k">lambda</span> <span class="n">row</span><span class="p">:</span> <span class="n">row</span><span class="o">.</span><span class="n">vw_feature_name</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;=&quot;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">zfill</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">row</span><span class="o">.</span><span class="n">is_cat</span>
+    <span class="k">else</span> <span class="n">row</span><span class="o">.</span><span class="n">vw_feature_name</span><span class="p">,</span>
+    <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+<span class="p">)</span>
 <span class="n">weights_df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">([</span><span class="s2">&quot;feature_name&quot;</span><span class="p">,</span> <span class="s2">&quot;feature_value&quot;</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -1146,9 +1226,24 @@ And the last 10 lines:<div class="cell docutils container">
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">g</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">catplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">weights_df</span><span class="p">[</span><span class="k">lambda</span> <span class="n">df</span><span class="p">:</span> <span class="n">df</span><span class="o">.</span><span class="n">is_cat</span><span class="p">],</span> <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;bar&quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;feature_value&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;weight&quot;</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="s2">&quot;feature_name&quot;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s2">&quot;feature_name&quot;</span><span class="p">,</span>
-                <span class="n">col_wrap</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">sharex</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">sharey</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">aspect</span><span class="o">=</span><span class="mf">1.5</span><span class="p">,</span> <span class="n">dodge</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-<span class="n">g</span><span class="o">.</span><span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;Feature weights (categorical features)&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="n">SUPTITLE_FONTSIZE</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="n">SUPTITLE_FONTWEIGHT</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">g</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">catplot</span><span class="p">(</span>
+    <span class="n">data</span><span class="o">=</span><span class="n">weights_df</span><span class="p">[</span><span class="k">lambda</span> <span class="n">df</span><span class="p">:</span> <span class="n">df</span><span class="o">.</span><span class="n">is_cat</span><span class="p">],</span>
+    <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;bar&quot;</span><span class="p">,</span>
+    <span class="n">x</span><span class="o">=</span><span class="s2">&quot;feature_value&quot;</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="s2">&quot;weight&quot;</span><span class="p">,</span>
+    <span class="n">col</span><span class="o">=</span><span class="s2">&quot;feature_name&quot;</span><span class="p">,</span>
+    <span class="n">hue</span><span class="o">=</span><span class="s2">&quot;feature_name&quot;</span><span class="p">,</span>
+    <span class="n">col_wrap</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
+    <span class="n">sharex</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">sharey</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">aspect</span><span class="o">=</span><span class="mf">1.5</span><span class="p">,</span>
+    <span class="n">dodge</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span>
+    <span class="s2">&quot;Feature weights (categorical features)&quot;</span><span class="p">,</span>
+    <span class="n">fontsize</span><span class="o">=</span><span class="n">SUPTITLE_FONTSIZE</span><span class="p">,</span>
+    <span class="n">fontweight</span><span class="o">=</span><span class="n">SUPTITLE_FONTWEIGHT</span><span class="p">,</span>
+<span class="p">)</span>
 <span class="n">g</span><span class="o">.</span><span class="n">set_titles</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{col_name}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="n">TITLE_FONTSIZE</span><span class="p">)</span>
 
 <span class="c1"># Add horizontal bar at y=0</span>
@@ -1177,7 +1272,9 @@ And the last 10 lines:<div class="cell docutils container">
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
-<span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">weights_df</span><span class="p">[</span><span class="k">lambda</span> <span class="n">df</span><span class="p">:</span> <span class="n">df</span><span class="o">.</span><span class="n">is_cat</span> <span class="o">==</span> <span class="kc">False</span><span class="p">],</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;feature_name&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;weight&quot;</span><span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span>
+    <span class="n">data</span><span class="o">=</span><span class="n">weights_df</span><span class="p">[</span><span class="k">lambda</span> <span class="n">df</span><span class="p">:</span> <span class="n">df</span><span class="o">.</span><span class="n">is_cat</span> <span class="o">==</span> <span class="kc">False</span><span class="p">],</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;feature_name&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;weight&quot;</span>
+<span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Feature weights (numerical features)&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="n">TITLE_FONTSIZE</span><span class="p">)</span>
 
 <span class="c1"># Set xlabels in bold, remove x-axis title</span>
@@ -1216,7 +1313,11 @@ And the last 10 lines:<div class="cell docutils container">
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span><span class="p">,</span> <span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="n">ax2</span><span class="p">)</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="n">ncols</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-<span class="n">f</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;Distribution of the target (PM)&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="n">SUPTITLE_FONTSIZE</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="n">SUPTITLE_FONTWEIGHT</span><span class="p">)</span>
+<span class="n">f</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span>
+    <span class="s2">&quot;Distribution of the target (PM)&quot;</span><span class="p">,</span>
+    <span class="n">fontsize</span><span class="o">=</span><span class="n">SUPTITLE_FONTSIZE</span><span class="p">,</span>
+    <span class="n">fontweight</span><span class="o">=</span><span class="n">SUPTITLE_FONTWEIGHT</span><span class="p">,</span>
+<span class="p">)</span>
 
 <span class="n">df</span><span class="p">[</span><span class="s2">&quot;PM&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">bins</span><span class="o">=</span><span class="mi">40</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax1</span><span class="p">)</span>
 <span class="n">ax1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;No transformation&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="n">TITLE_FONTSIZE</span><span class="p">)</span>
@@ -1247,14 +1348,18 @@ And the last 10 lines:<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Datetime namespace</span>
 <span class="n">datetime_features</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;year&quot;</span><span class="p">,</span> <span class="s2">&quot;month&quot;</span><span class="p">,</span> <span class="s2">&quot;day&quot;</span><span class="p">,</span> <span class="s2">&quot;hour&quot;</span><span class="p">,</span> <span class="s2">&quot;season&quot;</span><span class="p">]</span>
-<span class="n">ns_datetime</span> <span class="o">=</span> <span class="n">Namespace</span><span class="p">(</span><span class="n">features</span><span class="o">=</span><span class="p">[</span><span class="n">Feature</span><span class="p">(</span><span class="n">col</span><span class="p">)</span> <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">datetime_features</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;datetime_ns&quot;</span><span class="p">)</span>
+<span class="n">ns_datetime</span> <span class="o">=</span> <span class="n">Namespace</span><span class="p">(</span>
+    <span class="n">features</span><span class="o">=</span><span class="p">[</span><span class="n">Feature</span><span class="p">(</span><span class="n">col</span><span class="p">)</span> <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">datetime_features</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;datetime_ns&quot;</span>
+<span class="p">)</span>
 
 <span class="c1"># City namespace</span>
 <span class="n">ns_city</span> <span class="o">=</span> <span class="n">Namespace</span><span class="p">(</span><span class="n">features</span><span class="o">=</span><span class="n">Feature</span><span class="p">(</span><span class="s2">&quot;city&quot;</span><span class="p">),</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;city_ns&quot;</span><span class="p">)</span>
 
 <span class="c1"># Weather namespace</span>
-<span class="n">weather_features</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;DEWP&#39;</span><span class="p">,</span> <span class="s1">&#39;HUMI&#39;</span><span class="p">,</span> <span class="s1">&#39;PRES&#39;</span><span class="p">,</span> <span class="s1">&#39;TEMP&#39;</span><span class="p">,</span> <span class="s1">&#39;cbwd&#39;</span><span class="p">,</span> <span class="s1">&#39;Iws&#39;</span><span class="p">,</span> <span class="s1">&#39;precipitation&#39;</span><span class="p">]</span>
-<span class="n">ns_weather</span> <span class="o">=</span> <span class="n">Namespace</span><span class="p">(</span><span class="n">features</span><span class="o">=</span><span class="p">[</span><span class="n">Feature</span><span class="p">(</span><span class="n">col</span><span class="p">)</span> <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">weather_features</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;weather_ns&quot;</span><span class="p">)</span>
+<span class="n">weather_features</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;DEWP&quot;</span><span class="p">,</span> <span class="s2">&quot;HUMI&quot;</span><span class="p">,</span> <span class="s2">&quot;PRES&quot;</span><span class="p">,</span> <span class="s2">&quot;TEMP&quot;</span><span class="p">,</span> <span class="s2">&quot;cbwd&quot;</span><span class="p">,</span> <span class="s2">&quot;Iws&quot;</span><span class="p">,</span> <span class="s2">&quot;precipitation&quot;</span><span class="p">]</span>
+<span class="n">ns_weather</span> <span class="o">=</span> <span class="n">Namespace</span><span class="p">(</span>
+    <span class="n">features</span><span class="o">=</span><span class="p">[</span><span class="n">Feature</span><span class="p">(</span><span class="n">col</span><span class="p">)</span> <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">weather_features</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;weather_ns&quot;</span>
+<span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1264,7 +1369,9 @@ And the last 10 lines:<div class="cell docutils container">
 <h3>4.3. Converting to VW format and training model<a class="headerlink" href="#converting-to-vw-format-and-training-model" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">converter_advanced</span> <span class="o">=</span> <span class="n">DFtoVW</span><span class="p">(</span><span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">namespaces</span><span class="o">=</span><span class="p">[</span><span class="n">ns_datetime</span><span class="p">,</span> <span class="n">ns_weather</span><span class="p">,</span> <span class="n">ns_city</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="n">label</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">converter_advanced</span> <span class="o">=</span> <span class="n">DFtoVW</span><span class="p">(</span>
+    <span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">namespaces</span><span class="o">=</span><span class="p">[</span><span class="n">ns_datetime</span><span class="p">,</span> <span class="n">ns_weather</span><span class="p">,</span> <span class="n">ns_city</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="n">label</span>
+<span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1292,7 +1399,9 @@ And the last 10 lines:<div class="cell docutils container">
 <p>In this new model we will add interactions between the “weather” namespace and all the namespaces.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">model_advanced</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="n">arg_str</span><span class="o">=</span><span class="s2">&quot;--redefine W:=weather_ns --interactions W:&quot;</span><span class="p">,</span> <span class="n">P</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">enable_logging</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">model_advanced</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span>
+    <span class="n">arg_str</span><span class="o">=</span><span class="s2">&quot;--redefine W:=weather_ns --interactions W:&quot;</span><span class="p">,</span> <span class="n">P</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">enable_logging</span><span class="o">=</span><span class="kc">True</span>
+<span class="p">)</span>
 
 <span class="k">for</span> <span class="n">ex</span> <span class="ow">in</span> <span class="n">examples_advanced</span><span class="p">:</span>
     <span class="n">model_advanced</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
@@ -1308,7 +1417,9 @@ And the last 10 lines:<div class="cell docutils container">
 <p>We transform the labels and predictions using exponential function (since the target is log-transformed) so they can be compared with the ones of section 3.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">params_advanced</span><span class="p">,</span> <span class="n">df_iter_advanced</span><span class="p">,</span> <span class="n">metrics_advanced</span> <span class="o">=</span> <span class="n">VWLogParser</span><span class="p">(</span><span class="n">model_advanced</span><span class="o">.</span><span class="n">get_log</span><span class="p">())</span><span class="o">.</span><span class="n">parse</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">params_advanced</span><span class="p">,</span> <span class="n">df_iter_advanced</span><span class="p">,</span> <span class="n">metrics_advanced</span> <span class="o">=</span> <span class="n">VWLogParser</span><span class="p">(</span>
+    <span class="n">model_advanced</span><span class="o">.</span><span class="n">get_log</span><span class="p">()</span>
+<span class="p">)</span><span class="o">.</span><span class="n">parse</span><span class="p">()</span>
 
 <span class="n">df_iter_advanced</span><span class="o">.</span><span class="n">current_label</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">df_iter_advanced</span><span class="o">.</span><span class="n">current_label</span><span class="p">)</span>
 <span class="n">df_iter_advanced</span><span class="o">.</span><span class="n">current_predict</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">df_iter_advanced</span><span class="o">.</span><span class="n">current_predict</span><span class="p">)</span>
@@ -1321,7 +1432,11 @@ And the last 10 lines:<div class="cell docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">error_advanced</span> <span class="o">=</span> <span class="n">df_iter_advanced</span><span class="o">.</span><span class="n">current_label</span> <span class="o">-</span> <span class="n">df_iter_advanced</span><span class="o">.</span><span class="n">current_predict</span>
 
 <span class="n">f</span><span class="p">,</span> <span class="p">((</span><span class="n">ax1</span><span class="p">,</span> <span class="n">ax2</span><span class="p">),</span> <span class="p">(</span><span class="n">ax3</span><span class="p">,</span> <span class="n">ax4</span><span class="p">))</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">12</span><span class="p">),</span> <span class="n">ncols</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">nrows</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-<span class="n">f</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;Predictions, labels and errors&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="n">SUPTITLE_FONTSIZE</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="n">SUPTITLE_FONTWEIGHT</span><span class="p">)</span>
+<span class="n">f</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span>
+    <span class="s2">&quot;Predictions, labels and errors&quot;</span><span class="p">,</span>
+    <span class="n">fontsize</span><span class="o">=</span><span class="n">SUPTITLE_FONTSIZE</span><span class="p">,</span>
+    <span class="n">fontweight</span><span class="o">=</span><span class="n">SUPTITLE_FONTWEIGHT</span><span class="p">,</span>
+<span class="p">)</span>
 
 <span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">df_iter_advanced</span><span class="o">.</span><span class="n">current_label</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">start_idx</span><span class="p">:],</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;blue&quot;</span><span class="p">)</span>
 <span class="n">ax1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Distribution of current_label&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="n">TITLE_FONTSIZE</span><span class="p">)</span>
@@ -1329,12 +1444,18 @@ And the last 10 lines:<div class="cell docutils container">
 <span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">df_iter_advanced</span><span class="o">.</span><span class="n">current_predict</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">start_idx</span><span class="p">:],</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;orange&quot;</span><span class="p">)</span>
 <span class="n">ax2</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Distribution of current_predict&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="n">TITLE_FONTSIZE</span><span class="p">)</span>
 
-<span class="n">sns</span><span class="o">.</span><span class="n">scatterplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df_iter_advanced</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">start_idx</span><span class="p">:],</span> 
-                <span class="n">x</span><span class="o">=</span><span class="s2">&quot;current_predict&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;current_label&quot;</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax3</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">.15</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">scatterplot</span><span class="p">(</span>
+    <span class="n">data</span><span class="o">=</span><span class="n">df_iter_advanced</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">start_idx</span><span class="p">:],</span>
+    <span class="n">x</span><span class="o">=</span><span class="s2">&quot;current_predict&quot;</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="s2">&quot;current_label&quot;</span><span class="p">,</span>
+    <span class="n">ax</span><span class="o">=</span><span class="n">ax3</span><span class="p">,</span>
+    <span class="n">s</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+    <span class="n">alpha</span><span class="o">=</span><span class="mf">0.15</span><span class="p">,</span>
+<span class="p">)</span>
 <span class="n">ax3</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Prediction vs truth&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="n">TITLE_FONTSIZE</span><span class="p">)</span>
 
 <span class="c1"># Add x=y line</span>
-<span class="n">max_range</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">df_iter</span><span class="p">[[</span><span class="s2">&quot;current_label&quot;</span><span class="p">,</span> <span class="s2">&quot;current_predict&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">.99</span><span class="p">)</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>
+<span class="n">max_range</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">df_iter</span><span class="p">[[</span><span class="s2">&quot;current_label&quot;</span><span class="p">,</span> <span class="s2">&quot;current_predict&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.99</span><span class="p">)</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>
 <span class="n">ax3</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">max_range</span><span class="p">)</span>
 <span class="n">ax3</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">max_range</span><span class="p">)</span>
 <span class="n">range_x</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">max_range</span><span class="p">)</span>
@@ -1357,14 +1478,19 @@ And the last 10 lines:<div class="cell docutils container">
 <p>The model in section 2 is called “simple” and the current model (with interactions and log-transformed target) is called “advanced”.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">loss_type</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1"># 1 for L1-loss, 2 for L2-loss</span>
-<span class="n">n_iter</span> <span class="o">=</span> <span class="mi">10_000</span> <span class="c1"># Number of iterations on which to compute the loss (for moving average and final value)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">loss_type</span> <span class="o">=</span> <span class="mi">1</span>  <span class="c1"># 1 for L1-loss, 2 for L2-loss</span>
+<span class="n">n_iter</span> <span class="o">=</span> <span class="mi">10_000</span>  <span class="c1"># Number of iterations on which to compute the loss (for moving average and final value)</span>
 
-<span class="n">df_loss</span> <span class="o">=</span> <span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">error</span><span class="p">,</span> <span class="n">error_advanced</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">keys</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;simple&quot;</span><span class="p">,</span> <span class="s2">&quot;advanced&quot;</span><span class="p">])</span>
-           <span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">power</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">loss_type</span><span class="p">)))</span>
+<span class="n">df_loss</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">error</span><span class="p">,</span> <span class="n">error_advanced</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">keys</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;simple&quot;</span><span class="p">,</span> <span class="s2">&quot;advanced&quot;</span><span class="p">])</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span>
+    <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">power</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">loss_type</span><span class="p">)</span>
+<span class="p">)</span>
 
 <span class="n">f</span><span class="p">,</span> <span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="n">ax2</span><span class="p">)</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">ncols</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mf">5.5</span><span class="p">))</span>
-<span class="n">f</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s2">&quot;Comparison of models&#39; performance&quot;</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="n">SUPTITLE_FONTWEIGHT</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="n">SUPTITLE_FONTSIZE</span><span class="p">)</span>
+<span class="n">f</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span>
+    <span class="s2">&quot;Comparison of models&#39; performance&quot;</span><span class="p">,</span>
+    <span class="n">fontweight</span><span class="o">=</span><span class="n">SUPTITLE_FONTWEIGHT</span><span class="p">,</span>
+    <span class="n">fontsize</span><span class="o">=</span><span class="n">SUPTITLE_FONTSIZE</span><span class="p">,</span>
+<span class="p">)</span>
 
 <span class="n">df_loss</span><span class="o">.</span><span class="n">rolling</span><span class="p">(</span><span class="n">n_iter</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax1</span><span class="p">)</span>
 <span class="n">ax1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Moving average of loss (over </span><span class="si">{</span><span class="n">n_iter</span><span class="si">:</span><span class="s2">,</span><span class="si">}</span><span class="s2"> iterations)&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
@@ -1374,7 +1500,13 @@ And the last 10 lines:<div class="cell docutils container">
 
 <span class="n">loss_last_it</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;gray&quot;</span><span class="p">)</span>
 <span class="n">ax2</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Loss computed on the last </span><span class="si">{</span><span class="n">n_iter</span><span class="si">:</span><span class="s2">,</span><span class="si">}</span><span class="s2"> iterations&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
-<span class="n">ax2</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">.75</span><span class="p">,</span> <span class="n">loss_last_it</span><span class="o">.</span><span class="n">advanced</span> <span class="o">*</span> <span class="mf">1.025</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;Δ% loss= </span><span class="si">{</span><span class="n">pct_diff_loss</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="n">SUPTITLE_FONTWEIGHT</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">text</span><span class="p">(</span>
+    <span class="mf">0.75</span><span class="p">,</span>
+    <span class="n">loss_last_it</span><span class="o">.</span><span class="n">advanced</span> <span class="o">*</span> <span class="mf">1.025</span><span class="p">,</span>
+    <span class="sa">f</span><span class="s2">&quot;Δ% loss= </span><span class="si">{</span><span class="n">pct_diff_loss</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span>
+    <span class="n">fontweight</span><span class="o">=</span><span class="n">SUPTITLE_FONTWEIGHT</span><span class="p">,</span>
+<span class="p">)</span>
 <span class="n">ax2</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">ax2</span><span class="o">.</span><span class="n">get_xticklabels</span><span class="p">(),</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">13</span><span class="p">,</span> <span class="n">rotation</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
