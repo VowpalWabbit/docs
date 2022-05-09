@@ -42,5 +42,6 @@ var searchData=
   ['experimental',['experimental',['../structVW_1_1config_1_1option__builder.html#a3fa79c5f73be001800f949747a18bf8a',1,'VW::config::option_builder']]],
   ['explore_5feval_5fsetup',['explore_eval_setup',['../namespaceVW_1_1reductions.html#a6359b86b6061ca9b7a6252aa6311d9c3',1,'VW::reductions']]],
   ['export_5fexample',['export_example',['../namespaceVW.html#a189b2455ab65ce4c5f7d72a361bad75d',1,'VW']]],
-  ['expreplay_5fsetup',['expreplay_setup',['../namespaceVW_1_1reductions.html#ac0ab6fa17defbab14a1828966642ca2e',1,'VW::reductions']]]
+  ['expreplay_5fsetup',['expreplay_setup',['../namespaceVW_1_1reductions.html#ac0ab6fa17defbab14a1828966642ca2e',1,'VW::reductions']]],
+  ['extract_5fignored_5ffeature',['extract_ignored_feature',['../namespaceVW_1_1details.html#a580c44ca1c1098e4caf58ccd2b7cb3d2',1,'VW::details']]]
 ];

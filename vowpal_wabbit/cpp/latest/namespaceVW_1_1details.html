@@ -157,6 +157,9 @@ Functions</h2></td></tr>
 <tr class="separator:a7be5bf400217849488ddc681486a842f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a871aa56b01b26d70b06ff0b3039f516a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structVW_1_1namespace__extent.html">namespace_extent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#a871aa56b01b26d70b06ff0b3039f516a">unflatten_namespace_extents</a> (const std::vector&lt; std::pair&lt; bool, uint64_t &gt;&gt; &amp;extents)</td></tr>
 <tr class="separator:a871aa56b01b26d70b06ff0b3039f516a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a580c44ca1c1098e4caf58ccd2b7cb3d2"><td class="memItemLeft" align="right" valign="top">std::tuple&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#a580c44ca1c1098e4caf58ccd2b7cb3d2">extract_ignored_feature</a> (<a class="el" href="namespaceVW.html#a909e5c86e4a38cb08ec00a0831dc105d">VW::string_view</a> namespace_feature)</td></tr>
+<tr class="memdesc:a580c44ca1c1098e4caf58ccd2b7cb3d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract namespace, feature name, and optional feature value from ignored feature string.  <a href="#a580c44ca1c1098e4caf58ccd2b7cb3d2">More...</a><br /></td></tr>
+<tr class="separator:a580c44ca1c1098e4caf58ccd2b7cb3d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe4ff571e599545ffc1a1356de1c6a5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#abe4ff571e599545ffc1a1356de1c6a5d">global_print_newline</a> (const std::vector&lt; std::unique_ptr&lt; <a class="el" href="structVW_1_1io_1_1writer.html">VW::io::writer</a> &gt;&gt; &amp;final_prediction_sink, <a class="el" href="structVW_1_1io_1_1logger.html">VW::io::logger</a> &amp;logger)</td></tr>
 <tr class="separator:abe4ff571e599545ffc1a1356de1c6a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -327,6 +330,33 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a580c44ca1c1098e4caf58ccd2b7cb3d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a580c44ca1c1098e4caf58ccd2b7cb3d2">&#9670;&nbsp;</a></span>extract_ignored_feature()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::tuple&lt;std::string, std::string&gt; VW::details::extract_ignored_feature </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceVW.html#a909e5c86e4a38cb08ec00a0831dc105d">VW::string_view</a>&#160;</td>
+          <td class="paramname"><em>namespace_feature</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Extract namespace, feature name, and optional feature value from ignored feature string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">namespace_feature</td><td>namespace|feature:feature_value. Feature value is optional and if it is supplied chain_hash is applied </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::tuple&lt;std::string, std::string&gt; (namespace, feature) </dd></dl>
 
 </div>
 </div>
@@ -736,7 +766,7 @@ template&lt;std::size_t ArrayLength, std::size_t... IntegerSequence&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 9 2022 15:35:36 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon May 9 2022 18:35:01 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
