@@ -68,7 +68,7 @@ var searchData=
   ['get_5flog_5fcount',['get_log_count',['../structVW_1_1io_1_1logger.html#a5b56d00cdf8dddf547bc7e27632ae2b1',1,'VW::io::logger']]],
   ['get_5flog_5flevel',['get_log_level',['../namespaceVW_1_1io.html#a7ad16c5f90facc29df5eb8d3222dfffe',1,'VW::io']]],
   ['get_5floss',['get_loss',['../classVW_1_1loss__function.html#ad2ccf4f581e24e1d64f45671c23c9c7c',1,'VW::loss_function::get_loss()'],['../structVW_1_1reductions_1_1cats_1_1cats.html#ab770180e86ba19b4e530f1dcb8987fd3',1,'VW::reductions::cats::cats::get_loss()']]],
-  ['get_5floss_5ffunction',['get_loss_function',['../namespaceVW.html#a6fdd55aca1716ccdcf1bd7d3e0e404ca',1,'VW']]],
+  ['get_5floss_5ffunction',['get_loss_function',['../namespaceVW.html#aafbd242c32250ce5b04d6ce43f2b4b73',1,'VW']]],
   ['get_5flower_5fbound',['get_lower_bound',['../structVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__score.html#a9643e1ac7caa3257d28504d69d7a774f',1,'VW::reductions::epsilon_decay::epsilon_decay_score']]],
   ['get_5fmask',['get_mask',['../structSearch_1_1search.html#af19188755a72fe300ad7293ef155f512',1,'Search::search']]],
   ['get_5fmetatask_5fdata',['get_metatask_data',['../structSearch_1_1search.html#a2ae695e32965086c2dea60681bbc8f18',1,'Search::search']]],
