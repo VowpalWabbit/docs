@@ -28,6 +28,7 @@ var searchData=
   ['metatask_5fdata',['metatask_data',['../structSearch_1_1search.html#abb2ad964ac4c41bb6649da3549a276c9',1,'Search::search']]],
   ['metatask_5fname',['metatask_name',['../structSearch_1_1search.html#a5555842a7681f12739d61635faf89c53',1,'Search::search::metatask_name()'],['../structSearch_1_1search__metatask.html#aecf1da2f6b5b8598d0e285d488f71456',1,'Search::search_metatask::metatask_name()']]],
   ['metric_5flabeled',['metric_labeled',['../structVW_1_1cb__explore__adf_1_1cb__explore__metrics.html#a5bd2c1ef6c7469581ca2f90f4ace2db0',1,'VW::cb_explore_adf::cb_explore_metrics']]],
+  ['metric_5foutput_5fhooks',['metric_output_hooks',['../structVW_1_1workspace.html#ad6f7b5e2277cfec0b91b54a310836150',1,'VW::workspace']]],
   ['metric_5fpredict_5fin_5flearn',['metric_predict_in_learn',['../structVW_1_1cb__explore__adf_1_1cb__explore__metrics.html#afcc8e7a3780f653b74f1fcad0e1b8507',1,'VW::cb_explore_adf::cb_explore_metrics']]],
   ['metric_5fsum_5fcost',['metric_sum_cost',['../structVW_1_1cb__explore__adf_1_1cb__explore__metrics.html#a78d16a74d792bce64aa16b20f1a77aac',1,'VW::cb_explore_adf::cb_explore_metrics']]],
   ['metric_5fsum_5fcost_5ffirst',['metric_sum_cost_first',['../structVW_1_1cb__explore__adf_1_1cb__explore__metrics.html#a2d6caf5ea8146ef00130ddc99ca84970',1,'VW::cb_explore_adf::cb_explore_metrics']]],
