@@ -43,7 +43,6 @@ var searchData=
   ['v_5farray_3c_20t_2c_20typename_20std_3a_3aenable_5fif_3c_20std_3a_3ais_5ftrivially_5fcopyable_3c_20t_20_3e_3a_3avalue_20_3e_3a_3atype_20_3e',['v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;',['../structVW_1_1v__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_b889746ac0d5b5a66c0cc84b6b35321b.html',1,'VW']]],
   ['v_5farray_3c_20uint32_5ft_20_3e',['v_array&lt; uint32_t &gt;',['../structVW_1_1v__array.html',1,'VW']]],
   ['v_5farray_3c_20vw_3a_3acb_5fcontinuous_3a_3acontinuous_5flabel_5felm_20_3e',['v_array&lt; VW::cb_continuous::continuous_label_elm &gt;',['../structVW_1_1v__array.html',1,'VW']]],
-  ['v_5farray_3c_20vw_3a_3aexample_20_2a_3e',['v_array&lt; VW::example *&gt;',['../structVW_1_1v__array.html',1,'VW']]],
   ['v_5farray_5fpool',['v_array_pool',['../namespaceVW.html#a07630cfca8cc0e4357e1dfc3dc9219ad',1,'VW']]],
   ['v_5farray_5fpool_2eh',['v_array_pool.h',['../v__array__pool_8h.html',1,'']]],
   ['valid_5fconfig_5fsize',['valid_config_size',['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a0262972152bb39b5886cccca614e0488',1,'VW::reductions::automl::interaction_config_manager']]],

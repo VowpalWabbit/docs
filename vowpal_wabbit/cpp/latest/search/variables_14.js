@@ -9,7 +9,7 @@ var searchData=
   ['task_5fname',['task_name',['../structSearch_1_1search.html#a4864e478d4bb7af53e04a84cec754e3b',1,'Search::search::task_name()'],['../structSearch_1_1search__task.html#ad2c6420e44a300be33991333d9be5190',1,'Search::search_task::task_name()']]],
   ['test_5flabel',['test_label',['../structVW_1_1label__parser.html#a2d1f377b0a595c29bdde094c187f72e2',1,'VW::label_parser']]],
   ['test_5fonly',['test_only',['../structVW_1_1example.html#abbd0dc1b9eabbb55521b1135aef400af',1,'VW::example']]],
-  ['text_5freader',['text_reader',['../structparser.html#ae5bf8bbf70835b2ed99dc77c625821ad',1,'parser']]],
+  ['text_5freader',['text_reader',['../structparser.html#a5c9554a625788fb4b69cddfe1337b632',1,'parser']]],
   ['text_5fregressor_5fname',['text_regressor_name',['../structVW_1_1workspace.html#aa0641fbbfdbea79b75a96952742241be',1,'VW::workspace']]],
   ['text_5fstate',['text_state',['../structContext.html#ac34c3323257dbeacad07e50c8444c4d8',1,'Context']]],
   ['the_5flabel_5fparser',['the_label_parser',['../namespaceVW_1_1cb__continuous.html#a5992a27e761bb5f499635adc1ab76aa1',1,'VW::cb_continuous']]],

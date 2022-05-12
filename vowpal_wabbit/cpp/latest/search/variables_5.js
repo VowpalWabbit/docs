@@ -25,7 +25,7 @@ var searchData=
   ['example_5fparser',['example_parser',['../structVW_1_1workspace.html#aee857c5e4d572d09c9243a8f9a9e3aac',1,'VW::workspace']]],
   ['example_5fpool',['example_pool',['../structparser.html#a42190a234293feb3066bfbaa25981239',1,'parser']]],
   ['example_5fqueue_5flimit',['example_queue_limit',['../structparser.html#a22832e405bb961a4c4f19654723aef48',1,'parser']]],
-  ['examples',['examples',['../structContext.html#ae8796c8735f1a3adf7ec4b4fb19fc5c0',1,'Context']]],
+  ['examples',['examples',['../structContext.html#a96bc573c2586987b77830f7f16818229',1,'Context']]],
   ['examples_5fdont_5fchange',['EXAMPLES_DONT_CHANGE',['../namespaceSearch.html#a00f1706c73f53da6977b3358e53c8e58',1,'Search']]],
   ['exc_5fptr',['exc_ptr',['../structparser.html#abef922392d111bc5567e672df2d35e57',1,'parser']]],
   ['exclusions',['exclusions',['../structVW_1_1reductions_1_1automl_1_1exclusion__config.html#ae857a2d3e34884b0da756320a3f1c897',1,'VW::reductions::automl::exclusion_config']]],

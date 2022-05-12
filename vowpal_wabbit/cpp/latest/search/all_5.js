@@ -88,7 +88,7 @@ var searchData=
   ['example_5fpredict_5fbuilder_2eh',['example_predict_builder.h',['../example__predict__builder_8h.html',1,'']]],
   ['example_5fqueue_5flimit',['example_queue_limit',['../structparser.html#a22832e405bb961a4c4f19654723aef48',1,'parser']]],
   ['example_5ftype',['example_type',['../namespaceCCB.html#a58ee4b1ece77de222418e9eb75203cf5',1,'CCB::example_type()'],['../namespaceVW_1_1slates.html#a894cb7b1b775c40313bbb5e1c4b48a50',1,'VW::slates::example_type()']]],
-  ['examples',['examples',['../structContext.html#ae8796c8735f1a3adf7ec4b4fb19fc5c0',1,'Context']]],
+  ['examples',['examples',['../structContext.html#a96bc573c2586987b77830f7f16818229',1,'Context']]],
   ['examples_5fdont_5fchange',['EXAMPLES_DONT_CHANGE',['../namespaceSearch.html#a00f1706c73f53da6977b3358e53c8e58',1,'Search']]],
   ['exc_5fptr',['exc_ptr',['../structparser.html#abef922392d111bc5567e672df2d35e57',1,'parser']]],
   ['exclusion_5fconfig',['exclusion_config',['../structVW_1_1reductions_1_1automl_1_1exclusion__config.html',1,'VW::reductions::automl::exclusion_config'],['../structVW_1_1reductions_1_1automl_1_1exclusion__config.html#a0024c603eafe1b6d8598883ab6de7914',1,'VW::reductions::automl::exclusion_config::exclusion_config()']]],
