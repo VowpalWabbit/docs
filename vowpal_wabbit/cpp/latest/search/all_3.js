@@ -267,5 +267,6 @@ var searchData=
   ['currentname',['currentname',['../structparser.html#a3ca43653ae1c9d497786cd80e1a0ca96',1,'parser']]],
   ['currentnamespace',['CurrentNamespace',['../structContext.html#a9d1381c22ba19a9ca58b7c0f615eaa3a',1,'Context']]],
   ['custom_5findex_5fmask',['custom_index_mask',['../structVW_1_1reductions_1_1cbify__adf__data.html#a5b7068159a3b76f22a53804ee1b9c508',1,'VW::reductions::cbify_adf_data']]],
+  ['custom_5fparser',['custom_parser',['../structVW_1_1workspace.html#af05c8a6107d440f708276b3b05438098',1,'VW::workspace']]],
   ['custom_5fstreambuf_2eh',['custom_streambuf.h',['../custom__streambuf_8h.html',1,'']]]
 ];
