@@ -10,6 +10,7 @@ var searchData=
   ['random_5fseed',['random_seed',['../structVW_1_1workspace.html#a88fb5dc54e601b5264cfbd3422f9c521',1,'VW::workspace']]],
   ['random_5fstate',['random_state',['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a623df420d3bfa705193e4c2e6054d292',1,'VW::reductions::automl::interaction_config_manager']]],
   ['random_5fweights',['random_weights',['../structVW_1_1workspace.html#a0450fdc35ec3c3f247b0c4142f79bb65',1,'VW::workspace']]],
+  ['randomized_5fsvd',['randomized_SVD',['../structVW_1_1cb__explore__adf_1_1cb__explore__adf__large__action__space.html#a2bc599cf1025f7f8617d8bc7d4018037',1,'VW::cb_explore_adf::cb_explore_adf_large_action_space']]],
   ['raw_5fprediction',['raw_prediction',['../structVW_1_1workspace.html#a72755b57b42c9839b75e7d23b15e739a',1,'VW::workspace']]],
   ['rawnumber',['RawNumber',['../structVWReaderHandler.html#a9870a1ade24c032861d85e3e66115d8c',1,'VWReaderHandler']]],
   ['read',['read',['../structVW_1_1io_1_1reader.html#af6cd732e31ec7607969056ae53306ffb',1,'VW::io::reader::read()'],['../classvw__slim_1_1model__parser.html#a6a4b4c66d6434e8ed056c179da2b3d84',1,'vw_slim::model_parser::read(const char *field_name, size_t field_length, const char **ret)'],['../classvw__slim_1_1model__parser.html#a8c4f61a6b2983c7a4ec1db165c97a564',1,'vw_slim::model_parser::read(const char *field_name, T &amp;val)'],['../classvw__slim_1_1model__parser.html#a345c79436574e3274ea4703f81e42994',1,'vw_slim::model_parser::read(const char *field_name, T &amp;val)']]],

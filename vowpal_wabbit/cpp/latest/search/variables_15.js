@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['u',['U',['../structVW_1_1cb__explore__adf_1_1cb__explore__adf__large__action__space.html#a859286c802b9db4fe04c6aab1a9c2593',1,'VW::cb_explore_adf::cb_explore_adf_large_action_space']]],
   ['uint64_5fone',['UINT64_ONE',['../crossplat__compat_8h.html#a409526622742cba7837fe43789181429',1,'crossplat_compat.h']]],
   ['uint64_5fzero',['UINT64_ZERO',['../crossplat__compat_8h.html#a37a701f1f4d986b80b3f376ceb1c9e07',1,'crossplat_compat.h']]],
   ['uint_5fdedup_5fstate',['uint_dedup_state',['../structContext.html#a7860fc9d6dea4fcdae612a69a71cb7be',1,'Context']]],

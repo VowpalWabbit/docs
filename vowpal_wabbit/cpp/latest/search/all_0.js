@@ -1,6 +1,7 @@
 var searchData=
 [
   ['_5f_5ffilename_5f_5f',['__FILENAME__',['../vw__exception_8h.html#a5fccb4fc71e44089a1b1a77fc76c0b68',1,'vw_exception.h']]],
+  ['_5fa',['_A',['../structVW_1_1cb__explore__adf_1_1cb__explore__adf__large__action__space.html#a840f671d51f78d662f89edb8f851ae8f',1,'VW::cb_explore_adf::cb_explore_adf_large_action_space']]],
   ['_5fbacking_5fbuffer',['_backing_buffer',['../structVW_1_1details_1_1cache__temp__buffer.html#a6bc6741107af3702b3ded999ee6ce822',1,'VW::details::cache_temp_buffer']]],
   ['_5fcache_5ftemp_5fbuffer',['_cache_temp_buffer',['../structparser.html#afa8555ea9b1fe7fb9f00a9e0a9b185d1',1,'parser']]],
   ['_5fchain_5fhash',['_chain_hash',['../structContext.html#a3e11715e9663da2a10fabad26402269b',1,'Context']]],
@@ -11,6 +12,7 @@ var searchData=
   ['_5ffinal_5frun',['_final_run',['../classSearch_1_1BaseTask.html#a1789338f2860d67101b8ecbb694b18b7',1,'Search::BaseTask']]],
   ['_5fforeach_5faction',['_foreach_action',['../classSearch_1_1BaseTask.html#acb3dc8905bed89cd9f7b62879aa13260',1,'Search::BaseTask']]],
   ['_5ffunc',['_func',['../classVW_1_1io_1_1details_1_1function__ptr__sink.html#aff04887a3a4d03be4feaecf250f5be60',1,'VW::io::details::function_ptr_sink::_func()'],['../classVW_1_1io_1_1details_1_1function__ptr__legacy__sink.html#ac21d3f5e13f363d6c3164cdf15dcf969',1,'VW::io::details::function_ptr_legacy_sink::_func()']]],
+  ['_5fgenerate_5fa',['_generate_A',['../structVW_1_1cb__explore__adf_1_1cb__explore__adf__large__action__space.html#a952b3ff33713c1545877fa45258f5654',1,'VW::cb_explore_adf::cb_explore_adf_large_action_space']]],
   ['_5fgenerate_5finteractions_5fobject_5fcache',['_generate_interactions_object_cache',['../structVW_1_1workspace.html#abce3009065273c92c4bbfb49f313326e',1,'VW::workspace']]],
   ['_5fhash_5ffunc',['_hash_func',['../structContext.html#a3f368c83c1b6d60e9b14b6268e3dafc4',1,'Context']]],
   ['_5fhash_5fseed',['_hash_seed',['../structContext.html#a01afa98e493b634961472d26228817ff',1,'Context']]],
@@ -32,11 +34,14 @@ var searchData=
   ['_5fmodel_5fversion',['_model_version',['../structVW_1_1reductions_1_1active.html#a4ad13d2442a681a9f12c46018f446e95',1,'VW::reductions::active']]],
   ['_5fp_5fbase',['_p_base',['../structVW_1_1reductions_1_1pmf__to__pdf__reduction.html#a3b40657cd28b07b8bb5fd614665487c7',1,'VW::reductions::pmf_to_pdf_reduction']]],
   ['_5fparse_5fmask',['_parse_mask',['../structContext.html#a2f83e8c7eb3745ae12fd41dd525b613e',1,'Context']]],
+  ['_5fpopulate_5fall_5fsvd_5fcomponents',['_populate_all_SVD_components',['../structVW_1_1cb__explore__adf_1_1cb__explore__adf__large__action__space.html#aad2e8c52ba6b590a99efa1fd6478e9bc',1,'VW::cb_explore_adf::cb_explore_adf_large_action_space']]],
   ['_5fpost_5fprediction',['_post_prediction',['../classSearch_1_1BaseTask.html#a4e1d2ad328f2cc573f2c99dbafd0b9e2',1,'Search::BaseTask']]],
   ['_5frandom_5fstate',['_random_state',['../structVW_1_1reductions_1_1active.html#aff7ce78d4b917ab4a8d6c3c96e679969',1,'VW::reductions::active::_random_state()'],['../structVW_1_1reductions_1_1expreplay_1_1expreplay.html#a188f39cab60abb2f50432061d40d2bf8',1,'VW::reductions::expreplay::expreplay::_random_state()']]],
   ['_5freduction_5ffeatures',['_reduction_features',['../structVW_1_1flat__example.html#af4162bdf34972cb23de187bd6ac405f2',1,'VW::flat_example::_reduction_features()'],['../structVW_1_1example__predict.html#af8636281f693ee8fb744970406791142',1,'VW::example_predict::_reduction_features()']]],
   ['_5freuse_5fmem',['_reuse_mem',['../structContext.html#a715ce82969edf6ca51f8458f50eb238b',1,'Context']]],
+  ['_5fs',['_S',['../structVW_1_1cb__explore__adf_1_1cb__explore__adf__large__action__space.html#a0bcab07901727a5a6468075eb211a7cc',1,'VW::cb_explore_adf::cb_explore_adf_large_action_space']]],
   ['_5fscored_5fconfigs',['_scored_configs',['../structVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#a326fc4e67b21cf649ccd4d46b9c053d4',1,'VW::reductions::epsilon_decay::epsilon_decay_data']]],
+  ['_5fset_5fall_5fsvd_5fcomponents',['_set_all_svd_components',['../structVW_1_1cb__explore__adf_1_1cb__explore__adf__large__action__space.html#a32917b102fd9402d7c5c5af173cc6a67',1,'VW::cb_explore_adf::cb_explore_adf_large_action_space']]],
   ['_5fshared_5fdata',['_shared_data',['../structparser.html#a29f98b675dc11176078222fccd8afeeb',1,'parser::_shared_data()'],['../structVW_1_1reductions_1_1active.html#af731146226ff4857651d9a6bc1f584b4',1,'VW::reductions::active::_shared_data()']]],
   ['_5fspdlog_5fstderr_5flogger',['_spdlog_stderr_logger',['../structVW_1_1io_1_1details_1_1logger__impl.html#a794e60682470dba78e41ab08bf48575d',1,'VW::io::details::logger_impl']]],
   ['_5fspdlog_5fstdout_5flogger',['_spdlog_stdout_logger',['../structVW_1_1io_1_1details_1_1logger__impl.html#ad0ea97a34a4dd08e7be7f4a8afb74755',1,'VW::io::details::logger_impl']]],
@@ -44,6 +49,7 @@ var searchData=
   ['_5ftemporary_5fcache_5fbuffer',['_temporary_cache_buffer',['../structVW_1_1details_1_1cache__temp__buffer.html#a66852b16aa6f98874889ea4a8ec35799',1,'VW::details::cache_temp_buffer']]],
   ['_5ftrace_5fmessage',['_trace_message',['../structtrace__message__wrapper.html#a84c304d2df916c59062e121c81cc4dec',1,'trace_message_wrapper']]],
   ['_5funused',['_UNUSED',['../vw__exception_8h.html#a674dd1ba0db34c463bbf7e37ffef7a7c',1,'vw_exception.h']]],
+  ['_5fv',['_V',['../structVW_1_1cb__explore__adf_1_1cb__explore__adf__large__action__space.html#ad440ce01db4b155bd074c49e1dcc349a',1,'VW::cb_explore_adf::cb_explore_adf_large_action_space']]],
   ['_5fweights',['_weights',['../structVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#a52ed292faa88d1b6326201ad6b45bf25',1,'VW::reductions::epsilon_decay::epsilon_decay_data']]],
   ['_5fwith_5foutput_5fstring',['_with_output_string',['../classSearch_1_1BaseTask.html#a1999fd3295a1cfc9ed6ae1638977304c',1,'Search::BaseTask']]]
 ];
