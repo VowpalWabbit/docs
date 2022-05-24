@@ -110,7 +110,7 @@ var searchData=
   ['autolink_2eh',['autolink.h',['../autolink_8h.html',1,'']]],
   ['autolink_5fnamespace',['autolink_namespace',['../constant_8h.html#ac2bad8142eb4b0916e5a556988a08ffd',1,'constant.h']]],
   ['autolink_5fsetup',['autolink_setup',['../namespaceVW_1_1reductions.html#a933182652dd4ec23f11f4524de35e2db',1,'VW::reductions']]],
-  ['automl',['automl',['../structVW_1_1reductions_1_1automl_1_1automl.html',1,'VW::reductions::automl::automl&lt; CMType &gt;'],['../structVW_1_1reductions_1_1automl_1_1automl.html#a5672ad2a75951f415e83d66d8275acb3',1,'VW::reductions::automl::automl::automl()']]],
+  ['automl',['automl',['../structVW_1_1reductions_1_1automl_1_1automl.html',1,'VW::reductions::automl::automl&lt; CMType &gt;'],['../structVW_1_1reductions_1_1automl_1_1automl.html#a7821b346af57533e9e4c759286ba91ee',1,'VW::reductions::automl::automl::automl()']]],
   ['automl_2eh',['automl.h',['../automl_8h.html',1,'']]],
   ['automl_5falpha',['automl_alpha',['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a74f5bd892c19cdd73b25ab26c5dc7d14',1,'VW::reductions::automl::interaction_config_manager']]],
   ['automl_5fsetup',['automl_setup',['../namespaceVW_1_1reductions.html#a7a59da5065ab7af3e82e8a0c055f7c45',1,'VW::reductions']]],

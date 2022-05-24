@@ -72,7 +72,7 @@ var searchData=
   ['log_5fmulti_2eh',['log_multi.h',['../log__multi_8h.html',1,'']]],
   ['log_5fmulti_5fsetup',['log_multi_setup',['../namespaceVW_1_1reductions.html#a7cd37900a9767ba16dab1cf5dfa29093',1,'VW::reductions']]],
   ['log_5fsummary',['log_summary',['../structVW_1_1io_1_1logger.html#ac047f70212d20d729cbc8f22848f5f64',1,'VW::io::logger']]],
-  ['logger',['logger',['../structVW_1_1io_1_1logger.html',1,'VW::io::logger'],['../structVW_1_1workspace.html#a64e66403030d2917810f6684439c38dc',1,'VW::workspace::logger()']]],
+  ['logger',['logger',['../structVW_1_1io_1_1logger.html',1,'VW::io::logger'],['../structVW_1_1workspace.html#a64e66403030d2917810f6684439c38dc',1,'VW::workspace::logger()'],['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a9bd02c88b9d9cd3c55c4703916176a01',1,'VW::reductions::automl::interaction_config_manager::logger()'],['../structVW_1_1reductions_1_1automl_1_1automl.html#a886eadafb79f517c0ee13e4e8e32574f',1,'VW::reductions::automl::automl::logger()']]],
   ['logger_2eh',['logger.h',['../logger_8h.html',1,'']]],
   ['logger_5fimpl',['logger_impl',['../structVW_1_1io_1_1details_1_1logger__impl.html',1,'VW::io::details::logger_impl'],['../structVW_1_1io_1_1details_1_1logger__impl.html#adb547ae3f6a6957be5a04776d355ea45',1,'VW::io::details::logger_impl::logger_impl()']]],
   ['logger_5flegacy_5foutput_5ffunc_5ft',['logger_legacy_output_func_t',['../namespaceVW_1_1io.html#a52dbd68a7427bf3765f22254b4bfd664',1,'VW::io']]],
