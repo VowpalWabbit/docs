@@ -26,7 +26,7 @@ var searchData=
   ['cb_5fexplore_5fadf_5fcover_5fsetup',['cb_explore_adf_cover_setup',['../namespaceVW_1_1reductions.html#a97c1e82b283f6350cdcb9067e88f0667',1,'VW::reductions']]],
   ['cb_5fexplore_5fadf_5ffirst_5fsetup',['cb_explore_adf_first_setup',['../namespaceVW_1_1reductions.html#abe7d0974c38f8184d38b0e08206aa95e',1,'VW::reductions']]],
   ['cb_5fexplore_5fadf_5fgreedy_5fsetup',['cb_explore_adf_greedy_setup',['../namespaceVW_1_1reductions.html#acd6d1071bf38a026f7e1f4d27eeed12b',1,'VW::reductions']]],
-  ['cb_5fexplore_5fadf_5flarge_5faction_5fspace',['cb_explore_adf_large_action_space',['../structVW_1_1cb__explore__adf_1_1cb__explore__adf__large__action__space.html#a0eab9d626d393d9b417b11e6e76d09f2',1,'VW::cb_explore_adf::cb_explore_adf_large_action_space']]],
+  ['cb_5fexplore_5fadf_5flarge_5faction_5fspace',['cb_explore_adf_large_action_space',['../structVW_1_1cb__explore__adf_1_1cb__explore__adf__large__action__space.html#ab18cf59d59568b8f065a2f0d7dd28538',1,'VW::cb_explore_adf::cb_explore_adf_large_action_space']]],
   ['cb_5fexplore_5fadf_5flarge_5faction_5fspace_5fsetup',['cb_explore_adf_large_action_space_setup',['../namespaceVW_1_1reductions.html#ad203dde0f06e3e5f2c337c47229a52a3',1,'VW::reductions']]],
   ['cb_5fexplore_5fadf_5fregcb_5fsetup',['cb_explore_adf_regcb_setup',['../namespaceVW_1_1reductions.html#af37541cd806146038dda99d7e0f7a254',1,'VW::reductions']]],
   ['cb_5fexplore_5fadf_5frnd_5fsetup',['cb_explore_adf_rnd_setup',['../namespaceVW_1_1reductions.html#acf559c090f2f78058132c21e20f17449',1,'VW::reductions']]],
