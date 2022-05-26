@@ -24,7 +24,7 @@ var searchData=
   ['set_5fminmax',['set_minmax',['../structVW_1_1workspace.html#ae69e4a48a58425fcf057ba4fcb20478c',1,'VW::workspace']]],
   ['shared_5fex_5findex',['SHARED_EX_INDEX',['../constant_8h.html#a753d241bccb62003b885fb0b2ae9c802',1,'constant.h']]],
   ['shared_5ftype',['SHARED_TYPE',['../constant_8h.html#a186c53aa4337a15980d33920c6f34e62',1,'constant.h']]],
-  ['shrink_5ffactors',['shrink_factors',['../structVW_1_1cb__explore__adf_1_1cb__explore__adf__large__action__space.html#ab3bfd9400e00dbc0c4ee4ac948dcfe98',1,'VW::cb_explore_adf::cb_explore_adf_large_action_space']]],
+  ['shrink_5ffactors',['shrink_factors',['../structVW_1_1cb__explore__adf_1_1cb__explore__adf__large__action__space.html#af0e1e133b16da90985e0de69d9612ad2',1,'VW::cb_explore_adf::cb_explore_adf_large_action_space']]],
   ['simple',['simple',['../structVW_1_1polylabel.html#a11c3b9a45cdd58b4fdf089ccd63934b9',1,'VW::polylabel']]],
   ['simple_5flabel_5fparser',['simple_label_parser',['../simple__label__parser_8h.html#acbb92378600bf33b817d526dc158c891',1,'simple_label_parser.h']]],
   ['skip_5fgram_5ftransformer',['skip_gram_transformer',['../structVW_1_1workspace.html#ad441ca13e9cf4a5f4395a2e3030cb04b',1,'VW::workspace']]],
