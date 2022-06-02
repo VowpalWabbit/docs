@@ -49,6 +49,7 @@ var searchData=
   ['stdin_5foff',['stdin_off',['../structVW_1_1workspace.html#ae301e173affcaf23717e4690ee11e179',1,'VW::workspace']]],
   ['stdout_5fadapter',['stdout_adapter',['../structVW_1_1workspace.html#a601bad8ac8905c24e9205355b248744e',1,'VW::workspace']]],
   ['step',['step',['../structGD_1_1multipredict__info.html#add0a35e5ea303b2e490b8c3f4530b502',1,'GD::multipredict_info']]],
+  ['store_5fin_5freduction_5ffeatures',['store_in_reduction_features',['../structINTERACTIONS_1_1interactions__generator.html#a7133f2ed324a97bf35b56f45aadf95c5',1,'INTERACTIONS::interactions_generator']]],
   ['str_5fvalue',['str_value',['../structVW_1_1audit__strings.html#af1c09026a5b37b513d7bc0a57bbd0e87',1,'VW::audit_strings']]],
   ['stream',['stream',['../structContext.html#afc6ea8b2127497162b91837ff2cadeb9',1,'Context']]],
   ['stream_5fend',['stream_end',['../structContext.html#a4d1c6c8c56361542025129612e1da6aa',1,'Context']]],

@@ -18,6 +18,7 @@ var searchData=
   ['experimental',['experimental',['../namespaceVW_1_1experimental.html',1,'VW']]],
   ['expreplay',['expreplay',['../namespaceVW_1_1reductions_1_1expreplay.html',1,'VW::reductions']]],
   ['flatbuffer',['flatbuffer',['../namespaceVW_1_1parsers_1_1flatbuffer.html',1,'VW::parsers']]],
+  ['generated_5finteractions',['generated_interactions',['../namespaceVW_1_1generated__interactions.html',1,'VW']]],
   ['greedy',['greedy',['../namespaceVW_1_1cb__explore__adf_1_1greedy.html',1,'VW::cb_explore_adf']]],
   ['io',['io',['../namespaceVW_1_1io.html',1,'VW']]],
   ['lda',['lda',['../namespaceVW_1_1reductions_1_1lda.html',1,'VW::reductions']]],
