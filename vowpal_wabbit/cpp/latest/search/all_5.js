@@ -92,7 +92,7 @@ var searchData=
   ['examples_5fdont_5fchange',['EXAMPLES_DONT_CHANGE',['../namespaceSearch.html#a00f1706c73f53da6977b3358e53c8e58',1,'Search']]],
   ['exc_5fptr',['exc_ptr',['../structparser.html#abef922392d111bc5567e672df2d35e57',1,'parser']]],
   ['exclusion_5fconfig',['exclusion_config',['../structVW_1_1reductions_1_1automl_1_1exclusion__config.html',1,'VW::reductions::automl::exclusion_config'],['../structVW_1_1reductions_1_1automl_1_1exclusion__config.html#a0024c603eafe1b6d8598883ab6de7914',1,'VW::reductions::automl::exclusion_config::exclusion_config()']]],
-  ['exclusions',['exclusions',['../structVW_1_1reductions_1_1automl_1_1exclusion__config.html#ae857a2d3e34884b0da756320a3f1c897',1,'VW::reductions::automl::exclusion_config']]],
+  ['exclusions',['exclusions',['../structVW_1_1reductions_1_1automl_1_1exclusion__config.html#a790df35748337a9883d21324b2496fe8',1,'VW::reductions::automl::exclusion_config']]],
   ['expand',['EXPAND',['../vw__exception_8h.html#ae4b532a93c757194ec73b6790a3e6b1f',1,'vw_exception.h']]],
   ['expand_5fquadratics_5fwildcard_5finteractions',['expand_quadratics_wildcard_interactions',['../namespaceINTERACTIONS.html#afaa06b631fa37347e7bacaa8b6ba67fa',1,'INTERACTIONS']]],
   ['experimental',['experimental',['../structVW_1_1config_1_1option__builder.html#a3fa79c5f73be001800f949747a18bf8a',1,'VW::config::option_builder']]],
