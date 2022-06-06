@@ -6,6 +6,7 @@ var searchData=
   ['cats_5fpdf_2eh',['cats_pdf.h',['../cats__pdf_8h.html',1,'']]],
   ['cats_5ftree_2eh',['cats_tree.h',['../cats__tree_8h.html',1,'']]],
   ['cb_2eh',['cb.h',['../cb_8h.html',1,'']]],
+  ['cb_5factions_5fmask_2eh',['cb_actions_mask.h',['../cb__actions__mask_8h.html',1,'']]],
   ['cb_5fadf_2eh',['cb_adf.h',['../cb__adf_8h.html',1,'']]],
   ['cb_5falgs_2eh',['cb_algs.h',['../cb__algs_8h.html',1,'']]],
   ['cb_5fcontinuous_5flabel_2eh',['cb_continuous_label.h',['../cb__continuous__label_8h.html',1,'']]],

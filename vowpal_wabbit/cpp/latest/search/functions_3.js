@@ -17,6 +17,7 @@ var searchData=
   ['cats_5fpdf_5fsetup',['cats_pdf_setup',['../namespaceVW_1_1reductions.html#a74c3964caebb103dead0dee9c95fc0d0',1,'VW::reductions']]],
   ['cats_5fsetup',['cats_setup',['../namespaceVW_1_1reductions.html#a27395d5adcb03add89bb9933d515f2d0',1,'VW::reductions']]],
   ['cats_5ftree_5fsetup',['cats_tree_setup',['../namespaceVW_1_1reductions.html#a50e43a8799a4bd2f79e76fa03c1630e7',1,'VW::reductions']]],
+  ['cb_5factions_5fmask_5fsetup',['cb_actions_mask_setup',['../namespaceVW_1_1reductions.html#a7b8ae663108482d00d5c479973a5a7e6',1,'VW::reductions']]],
   ['cb_5fadf_5fsetup',['cb_adf_setup',['../namespaceVW_1_1reductions.html#a9448aa2b42b756b4a0fc8eb03f90d052',1,'VW::reductions']]],
   ['cb_5falgs_5fsetup',['cb_algs_setup',['../namespaceVW_1_1reductions.html#a366af120575c8a6d01ebff41b12a7fa8',1,'VW::reductions']]],
   ['cb_5fclass',['cb_class',['../structCB_1_1cb__class.html#a279503f9bd38d5edca15a926ee48b9a0',1,'CB::cb_class::cb_class()=default'],['../structCB_1_1cb__class.html#ab369fc1c9fbdd40ae31f13439354dbfa',1,'CB::cb_class::cb_class(float cost, uint32_t action, float probability)']]],
