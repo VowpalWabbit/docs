@@ -7,12 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>Contextual Bandit Content Personalization &#8212; VowpalWabbit latest documentation</title>
-    
-  <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<script>
+  document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+  document.documentElement.dataset.theme = localStorage.getItem("theme") || "light"
+</script>
 
-    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=92025949c220c2e29695" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=92025949c220c2e29695" rel="stylesheet">
+
+
   <link rel="stylesheet"
     href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
   <link rel="preload" as="font" type="font/woff2" crossorigin
@@ -26,9 +30,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
     <link rel="stylesheet" type="text/css" href="../_static/nav.css" />
-    
+
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695">
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -50,16 +54,16 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Python Basics" href="python_first_steps.html" />
     <link rel="prev" title="Contextual Bandits" href="python_Contextual_bandits_and_Vowpal_Wabbit.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="docsearch:language" content="None">
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-    
-    <div class="container-fluid" id="banner"></div>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+    <div class="bd-header-announcement container-fluid" id="banner">
+      
+
+    </div>
 
     
     <div class="navbar_container main_nav_container">
@@ -251,13 +255,13 @@ const thebe_selector_output = ".output, .cell_output"
 </script>
 
 
-    <div class="container-xl">
-      <div class="row">
+    <div class="bd-container container-xl">
+      <div class="bd-container__inner row">
           
-            
-            <!-- Only show if we have sidebars configured, else just a small margin  -->
-            <div class="col-12 col-md-3 bd-sidebar">
-              <div class="sidebar-start-items"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+
+<!-- Only show if we have sidebars configured, else just a small margin  -->
+<div class="bd-sidebar-primary col-12 col-md-3 bd-sidebar">
+  <div class="sidebar-start-items"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
 </form><a href="https://vowpalwabbit.org/docs/">
@@ -439,19 +443,20 @@ const thebe_selector_output = ".output, .cell_output"
 
   </div>
 </nav>
-              </div>
-              <div class="sidebar-end-items">
-              </div>
-            </div>
-            
-          
+  </div>
+  <div class="sidebar-end-items">
+  </div>
+</div>
+
 
           
-          <div class="d-none d-xl-block col-xl-2 bd-toc">
-            
-              
-              <div class="toc-item">
-                
+
+
+<div class="bd-sidebar-secondary d-none d-xl-block col-xl-2 bd-toc">
+  
+    
+    <div class="toc-item">
+      
 <div class="tocsection onthispage mt-5 pt-1 pb-3">
     <i class="fas fa-list"></i> On this page
 </div>
@@ -564,10 +569,10 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 
 </nav>
-              </div>
-              
-              <div class="toc-item">
-                
+    </div>
+    
+    <div class="toc-item">
+      
 
 <div class="tocsection editthispage">
     <a href="https://github.com/VowpalWabbit/vowpal_wabbit/edit/master/python/docs/source/tutorials/python_Simulating_a_news_personalization_scenario_using_Contextual_Bandits.ipynb">
@@ -575,17 +580,15 @@ const thebe_selector_output = ".output, .cell_output"
     </a>
 </div>
 
-              </div>
-              
-            
-          </div>
-          
+    </div>
+    
+  
+</div>
+
 
           
           
-            
-          
-          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+          <div class="bd-content col-12 col-md-9 col-xl-7">
               
     
     
@@ -597,7 +600,7 @@ const thebe_selector_output = ".output, .cell_output"
     </a>
     
 
-              <div>
+              <article class="bd-article" role="main">
                 
   <section id="contextual-bandit-content-personalization">
 <h1>Contextual Bandit Content Personalization<a class="headerlink" href="#contextual-bandit-content-personalization" title="Permalink to this headline">#</a></h1>
@@ -960,7 +963,7 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/f633ff9c6fe59249321580e84cd6ffc1f80f3ae62c5a427c6fcd318b19472562.png" src="../_images/f633ff9c6fe59249321580e84cd6ffc1f80f3ae62c5a427c6fcd318b19472562.png" />
+<img alt="../_images/8b88a358260310336fbcab2b41e6cd248e7c4d5e49a1243d239cc58ae77270f4.png" src="../_images/8b88a358260310336fbcab2b41e6cd248e7c4d5e49a1243d239cc58ae77270f4.png" />
 </div>
 </div>
 <section id="aside-interactions">
@@ -979,7 +982,7 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/36fb7190080ce79e523c2470c5d999d29bfea6ff1ac0325d12b8fe5fa2d0c60f.png" src="../_images/36fb7190080ce79e523c2470c5d999d29bfea6ff1ac0325d12b8fe5fa2d0c60f.png" />
+<img alt="../_images/566817a87c7edd91796181d3011911b2190810dc703ae06b3650160f1f8664bf.png" src="../_images/566817a87c7edd91796181d3011911b2190810dc703ae06b3650160f1f8664bf.png" />
 </div>
 </div>
 </section>
@@ -1002,7 +1005,7 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/bd52d07e07f4783540d12fc9ad641f9b02c3979be54de22279c54e357ca4ddc1.png" src="../_images/bd52d07e07f4783540d12fc9ad641f9b02c3979be54de22279c54e357ca4ddc1.png" />
+<img alt="../_images/741355fc9b118dcdbbbb8d296a396174b3b7d2e0a4afd1b893f7998730e78911.png" src="../_images/741355fc9b118dcdbbbb8d296a396174b3b7d2e0a4afd1b893f7998730e78911.png" />
 </div>
 </div>
 </section>
@@ -1277,7 +1280,7 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/78cad803c66db3e59bde24fca0c013056bc241f33d1f7b54ca4a53ed63f74ceb.png" src="../_images/78cad803c66db3e59bde24fca0c013056bc241f33d1f7b54ca4a53ed63f74ceb.png" />
+<img alt="../_images/2dd67503cd92ffe84a33612db7f5a24df25817847bda33f616cb1ff8b7c79586.png" src="../_images/2dd67503cd92ffe84a33612db7f5a24df25817847bda33f616cb1ff8b7c79586.png" />
 </div>
 </div>
 <p><strong>Note:</strong> The initial spike in CTR depends on the rewards received for the first few examples. When you run on your own, you may see something different initially because our simulator is designed to have randomness.</p>
@@ -1310,7 +1313,7 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/2f8abc0dba5692891e03d8ad1c918d00f2143390061ea76d958a60b3c0a1c99d.png" src="../_images/2f8abc0dba5692891e03d8ad1c918d00f2143390061ea76d958a60b3c0a1c99d.png" />
+<img alt="../_images/8834391f90936a59557957ac189058664e47610491b4a13d7cef3e763659076e.png" src="../_images/8834391f90936a59557957ac189058664e47610491b4a13d7cef3e763659076e.png" />
 </div>
 </div>
 </section>
@@ -1404,7 +1407,7 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/df3f977adbcced5808d6cc16b0eae678a25d52831cbb141e9a99f3fbd472ab1c.png" src="../_images/df3f977adbcced5808d6cc16b0eae678a25d52831cbb141e9a99f3fbd472ab1c.png" />
+<img alt="../_images/d3ed66ccf5aa58bf33334bc89cb246bae5721e8a77451b353db0273c0c9d4da9.png" src="../_images/d3ed66ccf5aa58bf33334bc89cb246bae5721e8a77451b353db0273c0c9d4da9.png" />
 </div>
 </div>
 </section>
@@ -1437,7 +1440,7 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/ca458f0f6feae4f8171e72c4060382916c06f6ad4fc8ce6c488cd5771d506c2a.png" src="../_images/ca458f0f6feae4f8171e72c4060382916c06f6ad4fc8ce6c488cd5771d506c2a.png" />
+<img alt="../_images/416e5cb0464fc00defafac63b87da1232eec83284d7b47bbf796e3762dd3881f.png" src="../_images/416e5cb0464fc00defafac63b87da1232eec83284d7b47bbf796e3762dd3881f.png" />
 </div>
 </div>
 </section>
@@ -1469,53 +1472,57 @@ const thebe_selector_output = ".output, .cell_output"
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
+              </article>
               
 
+
               
-              <!-- Previous / next buttons -->
+              <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="python_Contextual_bandits_and_Vowpal_Wabbit.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Contextual Bandits</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="python_first_steps.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Python Basics</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
+  <a class='left-prev' id="prev-link" href="python_Contextual_bandits_and_Vowpal_Wabbit.html" title="previous page">
+      <i class="fas fa-angle-left"></i>
+      <div class="prev-next-info">
+          <p class="prev-next-subtitle">previous</p>
+          <p class="prev-next-title">Contextual Bandits</p>
+      </div>
+  </a>
+  <a class='right-next' id="next-link" href="python_first_steps.html" title="next page">
+  <div class="prev-next-info">
+      <p class="prev-next-subtitle">next</p>
+      <p class="prev-next-title">Python Basics</p>
+  </div>
+  <i class="fas fa-angle-right"></i>
+  </a>
 </div>
+              </footer>
               
-          </main>
+          </div>
           
-
       </div>
     </div>
+
+  
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695"></script>
 
-<footer class="footer mt-5 mt-md-0">
-  <div class="container">
-    
-    <div class="footer-item">
-      <p class="copyright">
+
+<footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    <p class="copyright">
     &copy; Copyright 2021, John langford et al.<br>
 </p>
-    </div>
-    
-    <div class="footer-item">
-      <p class="sphinx-version">
+  </div>
+  
+  <div class="footer-item">
+    <p class="sphinx-version">
 Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.5.0.<br>
 </p>
-    </div>
-    
   </div>
+  
+</div>
 </footer>
 <script type="text/javascript" src="https://js.monitor.azure.com/scripts/c/ms.analytics-web-3.min.js">
 </script>
