@@ -39,6 +39,5 @@ var searchData=
   ['live_5finteractions',['live_interactions',['../structVW_1_1reductions_1_1automl_1_1aml__score.html#aed393e1fda7eee23e2903e1afcbdf60d',1,'VW::reductions::automl::aml_score']]],
   ['loaded_5fdictionaries',['loaded_dictionaries',['../structVW_1_1workspace.html#a40c9de1e1015c27d3d5b098481acbad7',1,'VW::workspace']]],
   ['logger',['logger',['../structVW_1_1workspace.html#a64e66403030d2917810f6684439c38dc',1,'VW::workspace::logger()'],['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a9bd02c88b9d9cd3c55c4703916176a01',1,'VW::reductions::automl::interaction_config_manager::logger()'],['../structVW_1_1reductions_1_1automl_1_1automl.html#a886eadafb79f517c0ee13e4e8e32574f',1,'VW::reductions::automl::automl::logger()']]],
-  ['loss',['loss',['../structVW_1_1example.html#a6b45287a6e699a3fc3d3a2f7a916728b',1,'VW::example::loss()'],['../structVW_1_1workspace.html#a7353810c29b1e203dc46ea27098aa634',1,'VW::workspace::loss()']]],
-  ['lower_5fbound',['lower_bound',['../structVW_1_1reductions_1_1automl_1_1exclusion__config.html#a1f3f5d0259442246214650b3e172510f',1,'VW::reductions::automl::exclusion_config']]]
+  ['loss',['loss',['../structVW_1_1example.html#a6b45287a6e699a3fc3d3a2f7a916728b',1,'VW::example::loss()'],['../structVW_1_1workspace.html#a7353810c29b1e203dc46ea27098aa634',1,'VW::workspace::loss()']]]
 ];

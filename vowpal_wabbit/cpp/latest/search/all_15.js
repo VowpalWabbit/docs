@@ -21,12 +21,12 @@ var searchData=
   ['unknown_5fs',['unknown_s',['../namespaceVW_1_1experimental_1_1error__code.html#a91f4888701cac87d262a46e6bfb5ebae',1,'VW::experimental::error_code']]],
   ['unset',['unset',['../namespaceCCB.html#a58ee4b1ece77de222418e9eb75203cf5ae2181b5014a67159cc230c8fe0d6c5b6',1,'CCB::unset()'],['../namespaceVW_1_1slates.html#a894cb7b1b775c40313bbb5e1c4b48a50ae2181b5014a67159cc230c8fe0d6c5b6',1,'VW::slates::unset()']]],
   ['update',['update',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#a94e981844ac9c0bdaa6d4bde9a61d894',1,'VW::distributionally_robust::ChiSquared::update()'],['../structVW_1_1LEARNER_1_1learner.html#af994d66959b825bc3b92af991529c7e6',1,'VW::LEARNER::learner::update()'],['../structVW_1_1scored__config.html#ae4d8726062ffc45b6f6f7b71f418b3d4',1,'VW::scored_config::update()'],['../structshared__data.html#ad3b0fc9176c689eb63bf255499223c62',1,'shared_data::update()']]],
-  ['update_5fbounds',['update_bounds',['../structVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__score.html#aaf43a420ee4d44ab044e437442fe3792',1,'VW::reductions::epsilon_decay::epsilon_decay_score']]],
   ['update_5fchamp',['update_champ',['../structVW_1_1reductions_1_1automl_1_1config__manager.html#a965bb06fd2456ea45ff7b8f3ed31e482',1,'VW::reductions::automl::config_manager::update_champ()'],['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#aaf52e448d97b6b0f366585189935e647',1,'VW::reductions::automl::interaction_config_manager::update_champ()']]],
   ['update_5fcount',['update_count',['../structVW_1_1scored__config.html#aa516d7719993364b78d706803a4042a3',1,'VW::scored_config']]],
   ['update_5fdump_5finterval',['update_dump_interval',['../structshared__data.html#a86dc26ad7249ba38f03f8a2c6f315f37',1,'shared_data']]],
   ['update_5fextent_5finteractions_5fif_5fnew_5fnamespace_5fseen',['update_extent_interactions_if_new_namespace_seen',['../structINTERACTIONS_1_1interactions__generator.html#ab17bcc0b4ddfb903a6595ce3024cf886',1,'INTERACTIONS::interactions_generator']]],
   ['update_5ff',['update_f',['../structVW_1_1LEARNER_1_1details_1_1learn__data.html#a925c6335bd811bf24016ad9f5e6bc373',1,'VW::LEARNER::details::learn_data']]],
   ['update_5finteractions_5fif_5fnew_5fnamespace_5fseen',['update_interactions_if_new_namespace_seen',['../structINTERACTIONS_1_1interactions__generator.html#a1ac90c2a9db9000d2ad3ba15a4254135',1,'INTERACTIONS::interactions_generator']]],
-  ['updated_5fprediction',['updated_prediction',['../structVW_1_1example.html#aa8000eb1844bf87ad4eaffed342f6206',1,'VW::example']]]
+  ['updated_5fprediction',['updated_prediction',['../structVW_1_1example.html#aa8000eb1844bf87ad4eaffed342f6206',1,'VW::example']]],
+  ['upper_5fbound',['upper_bound',['../structVW_1_1scored__config.html#a0f7699ea313ea40dcbb8ff3769530109',1,'VW::scored_config']]]
 ];

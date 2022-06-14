@@ -24,7 +24,6 @@ var searchData=
   ['_5flog_5fchamp_5fchanges',['_log_champ_changes',['../structVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#a733e710bcfe3102db8dd407f014f0d78',1,'VW::reductions::epsilon_decay::epsilon_decay_data']]],
   ['_5flog_5fcount',['_log_count',['../structVW_1_1io_1_1details_1_1logger__impl.html#a2dfa73b16695c65e8a9a3d80586cc3c5',1,'VW::io::details::logger_impl']]],
   ['_5flogger',['_logger',['../structContext.html#ad3811b13f99528c1d398c3ec17cc334f',1,'Context::_logger()'],['../structVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#a1b181ca4f11c6c4e72a08ab1556e3ea4',1,'VW::reductions::epsilon_decay::epsilon_decay_data::_logger()']]],
-  ['_5flower_5fbound',['_lower_bound',['../structVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__score.html#af70acc64a378a9870df41ff311d09794',1,'VW::reductions::epsilon_decay::epsilon_decay_score']]],
   ['_5fmax_5flimit',['_max_limit',['../structVW_1_1io_1_1details_1_1logger__impl.html#a537d6f00b481b7a3bf8ca361829fc661',1,'VW::io::details::logger_impl']]],
   ['_5fmax_5fseen_5flabel',['_max_seen_label',['../structVW_1_1reductions_1_1active.html#afc9c2511594af4dcd42a1281fbd75622',1,'VW::reductions::active']]],
   ['_5fmaybe_5foverride_5fprediction',['_maybe_override_prediction',['../classSearch_1_1BaseTask.html#a4d7e476f06a5d561b800cef4e5243727',1,'Search::BaseTask']]],
