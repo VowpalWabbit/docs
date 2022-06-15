@@ -123,6 +123,7 @@ var searchData=
   ['process_5fquadratic_5finteraction',['process_quadratic_interaction',['../namespaceINTERACTIONS.html#aaea6570ca6c9cf7f69b12116c7b758cf',1,'INTERACTIONS']]],
   ['progress_5fadd',['progress_add',['../structVW_1_1workspace.html#a9365651f6a3a4f67c5b00cd2f416b116',1,'VW::workspace']]],
   ['progress_5farg',['progress_arg',['../structVW_1_1workspace.html#a61f33a51a9aa8ee569e58bdd344f8d11',1,'VW::workspace']]],
+  ['promote_5fmodel',['promote_model',['../structVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#aa964982ed88d47406babbfa49ee11c4f',1,'VW::reductions::epsilon_decay::epsilon_decay_data']]],
   ['ptag',['ptag',['../search_8h.html#a16c781c81b198570915b518cac73c4ec',1,'search.h']]],
   ['ptr_5fqueue',['ptr_queue',['../classVW_1_1ptr__queue.html',1,'VW::ptr_queue&lt; T &gt;'],['../classVW_1_1ptr__queue.html#a309ec3256a71c0f9ea6f6dc5338c5958',1,'VW::ptr_queue::ptr_queue()']]],
   ['ptr_5fqueue_3c_20vw_3a_3aexample_20_3e',['ptr_queue&lt; VW::example &gt;',['../classVW_1_1ptr__queue.html',1,'VW']]],

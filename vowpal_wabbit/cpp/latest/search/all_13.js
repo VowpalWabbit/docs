@@ -142,6 +142,7 @@ var searchData=
   ['shared_5ffeature_5fmerger_2eh',['shared_feature_merger.h',['../shared__feature__merger_8h.html',1,'']]],
   ['shared_5ffeature_5fmerger_5fsetup',['shared_feature_merger_setup',['../namespaceVW_1_1reductions.html#ada00c381880f857913e58db35ec1317f',1,'VW::reductions']]],
   ['shared_5ftype',['SHARED_TYPE',['../constant_8h.html#a186c53aa4337a15980d33920c6f34e62',1,'constant.h']]],
+  ['shift_5fmodel',['shift_model',['../structVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#aab50191e126d9960e4dda55b4a2b1d46',1,'VW::reductions::epsilon_decay::epsilon_decay_data']]],
   ['short_5fname',['short_name',['../structVW_1_1config_1_1option__builder.html#ab001a5b75b29db80869a1810f4d11f88',1,'VW::config::option_builder::short_name(const std::string &amp;short_name)'],['../structVW_1_1config_1_1option__builder.html#a2702a8948cf5ce938fa85b26e7d8a08e',1,'VW::config::option_builder::short_name(char short_name)']]],
   ['shrink_5ffactors',['shrink_factors',['../structVW_1_1cb__explore__adf_1_1cb__explore__adf__large__action__space.html#af0e1e133b16da90985e0de69d9612ad2',1,'VW::cb_explore_adf::cb_explore_adf_large_action_space']]],
   ['shrink_5fto_5ffit',['shrink_to_fit',['../structVW_1_1v__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_b889746ac0d5b5a66c0cc84b6b35321b.html#ac2433b1b0a015e3ee69746f77a289849',1,'VW::v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;']]],

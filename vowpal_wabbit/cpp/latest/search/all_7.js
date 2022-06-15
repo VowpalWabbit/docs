@@ -92,7 +92,6 @@ var searchData=
   ['get_5fmacro',['GET_MACRO',['../vw__exception_8h.html#a84890a00d8c73dde4e766ef13c716e10',1,'vw_exception.h']]],
   ['get_5fmask',['get_mask',['../structSearch_1_1search.html#af19188755a72fe300ad7293ef155f512',1,'Search::search']]],
   ['get_5fmetatask_5fdata',['get_metatask_data',['../structSearch_1_1search.html#a2ae695e32965086c2dea60681bbc8f18',1,'Search::search']]],
-  ['get_5fmodel_5fidx',['get_model_idx',['../structVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__score.html#afdb27e550ad76c52790feee1848f9559',1,'VW::reductions::epsilon_decay::epsilon_decay_score']]],
   ['get_5fmultilabel_5fpredictions',['get_multilabel_predictions',['../namespaceVW.html#a273f5f1c98414ba01411de006c60c966',1,'VW']]],
   ['get_5fname',['get_name',['../structVW_1_1details_1_1input__parser.html#a6d7d8a3c2f84676d570bbbcca5479547',1,'VW::details::input_parser']]],
   ['get_5fnum_5ffeatures',['get_num_features',['../structVW_1_1example.html#a2f761fbab9ab50cd21c9ef0b019e9667',1,'VW::example']]],

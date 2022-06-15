@@ -55,6 +55,7 @@ var searchData=
   ['process_5fcubic_5finteraction',['process_cubic_interaction',['../namespaceINTERACTIONS.html#ab7abecaa30d2da53976732595d9fa361',1,'INTERACTIONS']]],
   ['process_5fgeneric_5finteraction',['process_generic_interaction',['../namespaceINTERACTIONS.html#ad566668c70b5dec4f9cae61f7bf7461d',1,'INTERACTIONS']]],
   ['process_5fquadratic_5finteraction',['process_quadratic_interaction',['../namespaceINTERACTIONS.html#aaea6570ca6c9cf7f69b12116c7b758cf',1,'INTERACTIONS']]],
+  ['promote_5fmodel',['promote_model',['../structVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#aa964982ed88d47406babbfa49ee11c4f',1,'VW::reductions::epsilon_decay::epsilon_decay_data']]],
   ['ptr_5fqueue',['ptr_queue',['../classVW_1_1ptr__queue.html#a309ec3256a71c0f9ea6f6dc5338c5958',1,'VW::ptr_queue']]],
   ['push',['push',['../classVW_1_1ptr__queue.html#acc297cbc891cd074634fbd4a75489f0a',1,'VW::ptr_queue']]],
   ['push_5fback',['push_back',['../structfeatures.html#ad204b1a4e0ca9b16b5db3b6261c14423',1,'features::push_back(feature_value v, feature_index i)'],['../structfeatures.html#aa28a4671b8b606064198b620beebddc4',1,'features::push_back(feature_value v, feature_index i, uint64_t ns_hash)'],['../structVW_1_1v__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_b889746ac0d5b5a66c0cc84b6b35321b.html#af68367c61ffe18a4de2c75f8c29bd7b5',1,'VW::v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;::push_back()']]],
