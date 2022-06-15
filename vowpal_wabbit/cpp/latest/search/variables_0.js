@@ -46,5 +46,6 @@ var searchData=
   ['_5fv',['_V',['../structVW_1_1cb__explore__adf_1_1cb__explore__adf__large__action__space.html#ad440ce01db4b155bd074c49e1dcc349a',1,'VW::cb_explore_adf::cb_explore_adf_large_action_space']]],
   ['_5fweight_5findices',['_weight_indices',['../structVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#a175e4fec128f17345b9cd3f19e4ec55f',1,'VW::reductions::epsilon_decay::epsilon_decay_data']]],
   ['_5fweights',['_weights',['../structVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#a64bbc0c5871b2e98039e6283eaef3667',1,'VW::reductions::epsilon_decay::epsilon_decay_data']]],
-  ['_5fwith_5foutput_5fstring',['_with_output_string',['../classSearch_1_1BaseTask.html#a1999fd3295a1cfc9ed6ae1638977304c',1,'Search::BaseTask']]]
+  ['_5fwith_5foutput_5fstring',['_with_output_string',['../classSearch_1_1BaseTask.html#a1999fd3295a1cfc9ed6ae1638977304c',1,'Search::BaseTask']]],
+  ['_5fwpp',['_wpp',['../structVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#ab5cbdcaa0b16dacd14be27b0e8a03e26',1,'VW::reductions::epsilon_decay::epsilon_decay_data']]]
 ];
