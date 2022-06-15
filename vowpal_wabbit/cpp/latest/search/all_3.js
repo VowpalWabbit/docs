@@ -139,6 +139,7 @@ var searchData=
   ['chain_5fhash',['chain_hash',['../namespaceVW.html#a678c9814055a1d31aca35531904aa0de',1,'VW']]],
   ['chain_5fhash_5fjson',['chain_hash_json',['../structVW_1_1workspace.html#a8b98ced6eb89c0287ec871fd01160c9f',1,'VW::workspace::chain_hash_json()'],['../structinput__options.html#a541f854b01aec3b796f40f3739b93675',1,'input_options::chain_hash_json()']]],
   ['chain_5fhash_5fstatic',['chain_hash_static',['../namespaceVW.html#a88885e568d9a4f4eb0aa41e6208e39bc',1,'VW']]],
+  ['champ_5fscores',['champ_scores',['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a64ee784a6dfa7415ae4725f5570f54f5',1,'VW::reductions::automl::interaction_config_manager']]],
   ['check_5fholdout_5fevery_5fn_5fpasses',['check_holdout_every_n_passes',['../structVW_1_1workspace.html#ab6dac51e5b236f6e4c812f365d96bb35',1,'VW::workspace']]],
   ['check_5flength_5fmatches',['check_length_matches',['../namespaceVW_1_1model__utils_1_1details.html#a822741e25c98c7a9843c7ac856da0975',1,'VW::model_utils::details']]],
   ['check_5fone_5fof',['check_one_of',['../structVW_1_1config_1_1option__group__definition.html#ae177a8ef66282e0bcdcac58f7ff17d97',1,'VW::config::option_group_definition']]],

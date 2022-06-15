@@ -50,6 +50,7 @@ var searchData=
   ['ccb_5flabel_5fparser',['ccb_label_parser',['../namespaceCCB.html#af676bb5d849c0f58768702f50237951f',1,'CCB']]],
   ['ccb_5fslot_5fnamespace',['ccb_slot_namespace',['../constant_8h.html#aa0d4c4765f8f076fb7e1fe34fe8de1ed',1,'constant.h']]],
   ['chain_5fhash_5fjson',['chain_hash_json',['../structVW_1_1workspace.html#a8b98ced6eb89c0287ec871fd01160c9f',1,'VW::workspace::chain_hash_json()'],['../structinput__options.html#a541f854b01aec3b796f40f3739b93675',1,'input_options::chain_hash_json()']]],
+  ['champ_5fscores',['champ_scores',['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a64ee784a6dfa7415ae4725f5570f54f5',1,'VW::reductions::automl::interaction_config_manager']]],
   ['check_5fholdout_5fevery_5fn_5fpasses',['check_holdout_every_n_passes',['../structVW_1_1workspace.html#ab6dac51e5b236f6e4c812f365d96bb35',1,'VW::workspace']]],
   ['children',['children',['../structnode__socks.html#a7ed2657a18004dbca8ac585405efdd56',1,'node_socks']]],
   ['chisq',['chisq',['../structVW_1_1scored__config.html#a214b539da10b3eefd1274d09b6a4472d',1,'VW::scored_config']]],
