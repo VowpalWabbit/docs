@@ -25,7 +25,7 @@ var searchData=
   ['with_5foutput_5fstring',['with_output_string',['../classSearch_1_1BaseTask.html#a91cae7d703dc5c6213f36e23d696de93',1,'Search::BaseTask']]],
   ['words',['words',['../structparser.html#ab5a5d63e69677436cba0278783f50578',1,'parser']]],
   ['workspace',['workspace',['../structVW_1_1workspace.html',1,'VW::workspace'],['../structVW_1_1workspace.html#a6c09bb48919f9417c4c3a1c53650534e',1,'VW::workspace::workspace(VW::io::logger logger)'],['../structVW_1_1workspace.html#ab6750a1f7090d0fba8fcbb9e4f3b26ad',1,'VW::workspace::workspace(const VW::workspace &amp;)=delete'],['../structVW_1_1workspace.html#a915021756e7248789093967d010d73ed',1,'VW::workspace::workspace(const VW::workspace &amp;&amp;)=delete']]],
-  ['wpp',['wpp',['../structVW_1_1workspace.html#a3510119148d38226ff3388c447dbe235',1,'VW::workspace']]],
+  ['wpp',['wpp',['../structVW_1_1workspace.html#a3510119148d38226ff3388c447dbe235',1,'VW::workspace::wpp()'],['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a4c1e89de9a9b65f80a258f3ff58900e2',1,'VW::reductions::automl::interaction_config_manager::wpp()']]],
   ['wrap_5fchar',['wrap_char',['../namespaceVW.html#a2df9a38d00dfa94b1694b2a6d8a7f225aa18f1925a241b0238b3728ca0b400a74',1,'VW']]],
   ['wrap_5fsocket_5fdescriptor',['wrap_socket_descriptor',['../namespaceVW_1_1io.html#a9e41560d8a75f8e8da16232f5cb3c637',1,'VW::io']]],
   ['wrap_5fspace',['wrap_space',['../namespaceVW.html#a2df9a38d00dfa94b1694b2a6d8a7f225abe98e7b80cc11a14facfdc37c99d4ca0',1,'VW']]],

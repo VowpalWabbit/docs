@@ -57,7 +57,7 @@ var searchData=
   ['int_5fof_5fstring',['int_of_string',['../parse__primitives_8h.html#a9404f9cada6aeb0cebc185ef796fe82f',1,'int_of_string(VW::string_view s, char *&amp;end, VW::io::logger &amp;logger):&#160;parse_primitives.h'],['../parse__primitives_8h.html#a34221b312690003a6f614af8e4647e3d',1,'int_of_string(VW::string_view s, VW::io::logger &amp;logger):&#160;parse_primitives.h']]],
   ['interact_2eh',['interact.h',['../interact_8h.html',1,'']]],
   ['interact_5fsetup',['interact_setup',['../namespaceVW_1_1reductions.html#ad2bf7320a1798fff9699b691c052f2fa',1,'VW::reductions']]],
-  ['interaction_5fconfig_5fmanager',['interaction_config_manager',['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html',1,'VW::reductions::automl::interaction_config_manager'],['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a188b62f6861b51f0f2a885e19e11d18e',1,'VW::reductions::automl::interaction_config_manager::interaction_config_manager()']]],
+  ['interaction_5fconfig_5fmanager',['interaction_config_manager',['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html',1,'VW::reductions::automl::interaction_config_manager'],['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a9ac046499e305efc09e96de6bcb2409a',1,'VW::reductions::automl::interaction_config_manager::interaction_config_manager()']]],
   ['interaction_5fground_2eh',['interaction_ground.h',['../interaction__ground_8h.html',1,'']]],
   ['interaction_5fground_5fsetup',['interaction_ground_setup',['../namespaceVW_1_1reductions.html#aa4b3f948a4e2d2d8af9aab29a9a68c15',1,'VW::reductions']]],
   ['interaction_5fns_5fend',['interaction_ns_end',['../namespaceINTERACTIONS.html#ad03527522a7fe5b0b38ede5186f365ec',1,'INTERACTIONS']]],

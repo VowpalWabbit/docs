@@ -850,7 +850,7 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/636590db7676b41379233c5885508d33c26fa0a49b75b1898aad2db3099f30ac.png" src="../_images/636590db7676b41379233c5885508d33c26fa0a49b75b1898aad2db3099f30ac.png" />
+<img alt="../_images/9f9302cc81ff28bda3ad9dadec8c9c819dc8966b5f5d2d1878a6cf5098dc661e.png" src="../_images/9f9302cc81ff28bda3ad9dadec8c9c819dc8966b5f5d2d1878a6cf5098dc661e.png" />
 </div>
 </div>
 </section>
@@ -883,7 +883,7 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/bc3ecc75da3ba592e3f810511a411bac5eff60809c192546ec7346cfe5be25ae.png" src="../_images/bc3ecc75da3ba592e3f810511a411bac5eff60809c192546ec7346cfe5be25ae.png" />
+<img alt="../_images/dd92e2242e35e596ca5e75e8a5a319d8038a67abdf970b5b24630b97d3a1c086.png" src="../_images/dd92e2242e35e596ca5e75e8a5a319d8038a67abdf970b5b24630b97d3a1c086.png" />
 </div>
 </div>
 </section>
@@ -1066,22 +1066,41 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 1024 and --bandwidth 25
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 0
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">KeyboardInterrupt</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="nn">Input In [12],</span> in <span class="ni">&lt;cell line: 8&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">     </span><span class="mi">14</span> <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Running simulation for: --cats </span><span class="si">{</span><span class="n">actions</span><span class="si">}</span><span class="s2"> and --bandwidth </span><span class="si">{</span><span class="n">bd</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">15</span> <span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span>
+<span class="g g-Whitespace">     </span><span class="mi">16</span>     <span class="sa">f</span><span class="s2">&quot;--cats </span><span class="si">{</span><span class="n">actions</span><span class="si">}</span><span class="s2">  --bandwidth </span><span class="si">{</span><span class="n">bd</span><span class="si">}</span><span class="s2"> --min_value 0 --max_value 32 --json --chain_hash --coin --epsilon 0.2 -q :: --quiet&quot;</span>
+<span class="g g-Whitespace">     </span><span class="mi">17</span> <span class="p">)</span>
+<span class="ne">---&gt; </span><span class="mi">18</span> <span class="n">rr</span><span class="p">,</span> <span class="n">hits</span> <span class="o">=</span> <span class="n">run_simulation</span><span class="p">(</span>
+<span class="g g-Whitespace">     </span><span class="mi">19</span>     <span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">rooms</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">get_cost</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="n">do_learn</span><span class="o">=</span><span class="kc">True</span>
+<span class="g g-Whitespace">     </span><span class="mi">20</span> <span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">21</span> <span class="n">vw</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>
+<span class="g g-Whitespace">     </span><span class="mi">23</span> <span class="n">data</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">actions</span><span class="p">)][</span><span class="nb">str</span><span class="p">(</span><span class="n">bd</span><span class="p">)]</span> <span class="o">=</span> <span class="p">(</span><span class="n">rr</span><span class="p">,</span> <span class="n">hits</span><span class="p">)</span>
+
+<span class="nn">Input In [7],</span> in <span class="ni">run_simulation</span><span class="nt">(vw, num_iterations, rooms, times_of_day, cost_function, min_value, max_value, do_learn)</span>
+<span class="g g-Whitespace">     </span><span class="mi">21</span> <span class="c1"># 3. Pass context to vw to get a temperature</span>
+<span class="g g-Whitespace">     </span><span class="mi">22</span> <span class="n">context</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;room&quot;</span><span class="p">:</span> <span class="n">room</span><span class="p">,</span> <span class="s2">&quot;time_of_day&quot;</span><span class="p">:</span> <span class="n">time_of_day</span><span class="p">}</span>
+<span class="ne">---&gt; </span><span class="mi">23</span> <span class="n">temperature</span><span class="p">,</span> <span class="n">pdf_value</span> <span class="o">=</span> <span class="n">predict_temperature</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">context</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">25</span> <span class="c1"># 4. Get cost of the action we chose</span>
+<span class="g g-Whitespace">     </span><span class="mi">26</span> <span class="n">cost</span> <span class="o">=</span> <span class="n">cost_function</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">temperature</span><span class="p">,</span> <span class="n">min_value</span><span class="p">,</span> <span class="n">max_value</span><span class="p">)</span>
+
+<span class="nn">Input In [5],</span> in <span class="ni">predict_temperature</span><span class="nt">(vw, context)</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="k">def</span> <span class="nf">predict_temperature</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">context</span><span class="p">):</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span>     <span class="n">vw_text_example</span> <span class="o">=</span> <span class="n">to_vw_example_format</span><span class="p">(</span><span class="n">context</span><span class="p">)</span>
+<span class="ne">----&gt; </span><span class="mi">3</span>     <span class="k">return</span> <span class="n">vw</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">vw_text_example</span><span class="p">)</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.9.13/x64/lib/python3.9/site-packages/vowpalwabbit/pyvw.py:704,</span> in <span class="ni">Workspace.predict</span><span class="nt">(self, ec, prediction_type)</span>
+<span class="g g-Whitespace">    </span><span class="mi">701</span>     <span class="n">ec</span><span class="o">.</span><span class="n">setup_example</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">703</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">ec</span><span class="p">,</span> <span class="n">Example</span><span class="p">):</span>
+<span class="ne">--&gt; </span><span class="mi">704</span>     <span class="n">pylibvw</span><span class="o">.</span><span class="n">vw</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ec</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">705</span> <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">706</span>     <span class="n">pylibvw</span><span class="o">.</span><span class="n">vw</span><span class="o">.</span><span class="n">predict_multi</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ec</span><span class="p">)</span>
+
+<span class="ne">KeyboardInterrupt</span>: 
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 25
-</pre></div>
-</div>
-<img alt="../_images/dcf83bcdc82d40ee3f598993af8ed47352ce2058d6cb3bd80a1f4a7c71297acb.png" src="../_images/dcf83bcdc82d40ee3f598993af8ed47352ce2058d6cb3bd80a1f4a7c71297acb.png" />
 </div>
 </div>
 </section>
@@ -1115,88 +1134,6 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 <span class="n">plot_reward_sweep</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">,</span> <span class="n">num_actions</span><span class="p">,</span> <span class="n">bandwidths</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 8 and --bandwidth 0
-Running simulation for: --cats 8 and --bandwidth 1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 8 and --bandwidth 2
-Running simulation for: --cats 8 and --bandwidth 3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 32 and --bandwidth 0
-Running simulation for: --cats 32 and --bandwidth 1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 32 and --bandwidth 2
-Running simulation for: --cats 32 and --bandwidth 3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 32 and --bandwidth 25
-Running simulation for: --cats 64 and --bandwidth 0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 64 and --bandwidth 1
-Running simulation for: --cats 64 and --bandwidth 2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 64 and --bandwidth 3
-Running simulation for: --cats 64 and --bandwidth 25
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 128 and --bandwidth 0
-Running simulation for: --cats 128 and --bandwidth 1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 128 and --bandwidth 2
-Running simulation for: --cats 128 and --bandwidth 3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 128 and --bandwidth 25
-Running simulation for: --cats 256 and --bandwidth 0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 256 and --bandwidth 1
-Running simulation for: --cats 256 and --bandwidth 2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 256 and --bandwidth 3
-Running simulation for: --cats 256 and --bandwidth 25
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 512 and --bandwidth 0
-Running simulation for: --cats 512 and --bandwidth 1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 512 and --bandwidth 2
-Running simulation for: --cats 512 and --bandwidth 3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 512 and --bandwidth 25
-Running simulation for: --cats 1024 and --bandwidth 0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 1024 and --bandwidth 1
-Running simulation for: --cats 1024 and --bandwidth 2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 1024 and --bandwidth 3
-Running simulation for: --cats 1024 and --bandwidth 25
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 0
-Running simulation for: --cats 2048 and --bandwidth 1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 2
-Running simulation for: --cats 2048 and --bandwidth 3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 25
-</pre></div>
-</div>
-<img alt="../_images/a193cf3ad87a168fdcf4abe76ae77bd89dd950350ac95b04fa3353d1af35a454.png" src="../_images/a193cf3ad87a168fdcf4abe76ae77bd89dd950350ac95b04fa3353d1af35a454.png" />
 </div>
 </div>
 </section>
@@ -1390,9 +1327,6 @@ Running simulation for: --cats 2048 and --bandwidth 3
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../_images/4cefe88efc219ff7df25984ba88d07b41f23d95a026e2b90bb7961f72d54ca04.png" src="../_images/4cefe88efc219ff7df25984ba88d07b41f23d95a026e2b90bb7961f72d54ca04.png" />
-</div>
 </div>
 </section>
 <section id="id4">
@@ -1430,9 +1364,6 @@ Running simulation for: --cats 2048 and --bandwidth 3
 <span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../_images/bd62bc4112d086697b27f6b258a78388beb24fbd40288e268c2fbdef81af37c4.png" src="../_images/bd62bc4112d086697b27f6b258a78388beb24fbd40288e268c2fbdef81af37c4.png" />
 </div>
 </div>
 </section>
@@ -1518,126 +1449,6 @@ Running simulation for: --cats 2048 and --bandwidth 3
 <span class="n">plot_reward_sweep</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">,</span> <span class="n">num_actions</span><span class="p">,</span> <span class="n">bandwidths</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 8 and --bandwidth 0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 8 and --bandwidth 1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 8 and --bandwidth 2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 8 and --bandwidth 3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 32 and --bandwidth 0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 32 and --bandwidth 1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 32 and --bandwidth 2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 32 and --bandwidth 3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 32 and --bandwidth 25
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 64 and --bandwidth 0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 64 and --bandwidth 1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 64 and --bandwidth 2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 64 and --bandwidth 3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 64 and --bandwidth 25
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 128 and --bandwidth 0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 128 and --bandwidth 1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 128 and --bandwidth 2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 128 and --bandwidth 3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 128 and --bandwidth 25
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 256 and --bandwidth 0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 256 and --bandwidth 1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 256 and --bandwidth 2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 256 and --bandwidth 3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 256 and --bandwidth 25
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 512 and --bandwidth 0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 512 and --bandwidth 1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 512 and --bandwidth 2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 512 and --bandwidth 3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 512 and --bandwidth 25
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 1024 and --bandwidth 0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 1024 and --bandwidth 1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 1024 and --bandwidth 2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 1024 and --bandwidth 3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 1024 and --bandwidth 25
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 25
-</pre></div>
-</div>
-<img alt="../_images/838c1b5f9136b3c9da8cebbdd086aa5b64a2f0356e275e056750eed2b367424d.png" src="../_images/838c1b5f9136b3c9da8cebbdd086aa5b64a2f0356e275e056750eed2b367424d.png" />
 </div>
 </div>
 </section>
