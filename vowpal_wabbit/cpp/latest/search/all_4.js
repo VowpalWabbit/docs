@@ -41,7 +41,6 @@ var searchData=
   ['default_5fpattern',['default_pattern',['../namespaceVW_1_1io_1_1details.html#a10e5fd4df3142d76f8a58e7ea812dd12',1,'VW::io::details']]],
   ['default_5freduction_5fstack_5fsetup',['default_reduction_stack_setup',['../structVW_1_1default__reduction__stack__setup.html',1,'VW::default_reduction_stack_setup'],['../structVW_1_1default__reduction__stack__setup.html#ab52f53b4e6e01ab619bbc7b7f7ca4490',1,'VW::default_reduction_stack_setup::default_reduction_stack_setup(VW::workspace &amp;all, VW::config::options_i &amp;options)'],['../structVW_1_1default__reduction__stack__setup.html#a698f670053e583466b9ab08ac15efb27',1,'VW::default_reduction_stack_setup::default_reduction_stack_setup()']]],
   ['default_5fstate',['default_state',['../structContext.html#a0e0a976e8e6bf9b15f095758b5094521',1,'Context']]],
-  ['default_5ftau',['DEFAULT_TAU',['../distributionally__robust_8h.html#a211700867992d9a992485c8d36c64e20',1,'distributionally_robust.h']]],
   ['default_5ftolerance',['DEFAULT_TOLERANCE',['../vw__math_8h.html#a0e355e0dcb761f1b89524e0e77fd14bd',1,'vw_math.h']]],
   ['default_5fvalue',['default_value',['../structVW_1_1config_1_1typed__option.html#af50bd66f1e41a19ba3ac6e3184584d9f',1,'VW::config::typed_option::default_value()'],['../structVW_1_1config_1_1option__builder.html#abd7158382bc9312da5c8d0caa7cd63da',1,'VW::config::option_builder::default_value()']]],
   ['default_5fvalue_5fsupplied',['default_value_supplied',['../structVW_1_1config_1_1typed__option.html#ad5485f8cc959e530eaef3bf90ae87bb8',1,'VW::config::typed_option']]],

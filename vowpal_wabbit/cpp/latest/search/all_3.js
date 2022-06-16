@@ -247,6 +247,7 @@ var searchData=
   ['create_5fdefault_5flogger',['create_default_logger',['../structVW_1_1io_1_1logger.html#a446ff4d4e455a492b4388a58bf6a07d8',1,'VW::io::logger::create_default_logger()'],['../namespaceVW_1_1io.html#a320c76af5bc4c3e1a89309cd5b916bf0',1,'VW::io::create_default_logger()']]],
   ['create_5fnull_5flogger',['create_null_logger',['../structVW_1_1io_1_1logger.html#a3ee782ca9daac00da9a0cb349071733c',1,'VW::io::logger::create_null_logger()'],['../namespaceVW_1_1io.html#abded10f9d1291725518a9699aabba30d',1,'VW::io::create_null_logger()']]],
   ['create_5fvector_5fwriter',['create_vector_writer',['../namespaceVW_1_1io.html#ae757f4f258f87ef5b1ceb012d3e356d2',1,'VW::io']]],
+  ['cresseread_5fdefault_5ftau',['CRESSEREAD_DEFAULT_TAU',['../distributionally__robust_8h.html#acd87134c90917382ddfdde2797d5fcf6',1,'distributionally_robust.h']]],
   ['critical',['critical',['../namespaceVW_1_1io.html#aaf6d3dfe9781b53c9fbc2908a8f0641ca7e85bcb66fb9a809d5ab4f62a8b8bea8',1,'VW::io']]],
   ['crossplat_5fcompat_2eh',['crossplat_compat.h',['../crossplat__compat_8h.html',1,'']]],
   ['cs',['cs',['../structVW_1_1polylabel.html#ae27d27fecee505f9b5ce0d253921676f',1,'VW::polylabel::cs()'],['../namespaceVW.html#adf253bc5d95217ce3aadf6e2421dafd2a95cc64dd2825f9df13ec4ad683ecf339',1,'VW::cs()']]],

@@ -13,6 +13,7 @@ var searchData=
   ['baseline_5factions',['baseline_actions',['../structDecisionServiceInteraction.html#a8b11b8481da92f85361d5310f7d656f9',1,'DecisionServiceInteraction']]],
   ['baseline_5fchallenger_5fcb_2eh',['baseline_challenger_cb.h',['../baseline__challenger__cb_8h.html',1,'']]],
   ['baseline_5fchallenger_5fcb_5fsetup',['baseline_challenger_cb_setup',['../namespaceVW_1_1reductions.html#a0aacee0698df58f7add703a5348583c4',1,'VW::reductions']]],
+  ['baseline_5fdefault_5ftau',['BASELINE_DEFAULT_TAU',['../distributionally__robust_8h.html#a2bae02294573745c33f1cdcc8cd9b0ad',1,'distributionally_robust.h']]],
   ['baseline_5fenabled',['baseline_enabled',['../namespaceVW_1_1reductions_1_1baseline.html#a9db21a818ffb3d3d666b24f4f1d809c1',1,'VW::reductions::baseline']]],
   ['baseline_5fenabled_5fmessage_5fnamespace',['baseline_enabled_message_namespace',['../constant_8h.html#a82e4d47d3c4860a560f346a3a993ab03',1,'constant.h']]],
   ['baseline_5fsetup',['baseline_setup',['../namespaceVW_1_1reductions.html#abb8913fd95f8c5bb1dfe956bf25da320',1,'VW::reductions']]],
