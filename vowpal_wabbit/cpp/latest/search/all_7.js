@@ -103,6 +103,7 @@ var searchData=
   ['get_5foutput_5ffiles',['get_output_files',['../classio__buf.html#acea29f17983f2a999feb815fbcc68df0',1,'io_buf']]],
   ['get_5foutput_5flocation',['get_output_location',['../namespaceVW_1_1io.html#acdd00bcfa4079aa83dc0791cc256ea2f',1,'VW::io']]],
   ['get_5fparameter',['get_parameter',['../classVW_1_1loss__function.html#a9200f22e1accbd1284fd7088957e69ae',1,'VW::loss_function']]],
+  ['get_5fphi',['get_phi',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#a08403e6029394f0007c8fb01bc3324e3',1,'VW::distributionally_robust::ChiSquared']]],
   ['get_5fpid',['get_pid',['../namespaceVW.html#a33ca5617f73211fc230cb29051046d0c',1,'VW']]],
   ['get_5fpmf',['get_pmf',['../structvw__dbg.html#ad0e139fefdac9d085c5dd353d884f7c9',1,'vw_dbg']]],
   ['get_5fpmf_2eh',['get_pmf.h',['../get__pmf_8h.html',1,'']]],
