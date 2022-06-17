@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Migration Guide &#8212; rl_client 0.0.1 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
@@ -13,6 +13,7 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     
     <link rel="index" title="Index" href="genindex.html" />
@@ -42,10 +43,10 @@
           <div class="body" role="main">
             
   <section id="migration-guide">
-<h1>Migration Guide<a class="headerlink" href="#migration-guide" title="Permalink to this headline">¶</a></h1>
+<h1>Migration Guide<a class="headerlink" href="#migration-guide" title="Permalink to this heading">¶</a></h1>
 <p>This document is intended for users who are migrating from the old version of these bindings.</p>
 <section id="naming-changes">
-<h2>1. Naming changes<a class="headerlink" href="#naming-changes" title="Permalink to this headline">¶</a></h2>
+<h2>1. Naming changes<a class="headerlink" href="#naming-changes" title="Permalink to this heading">¶</a></h2>
 <p>To conform with PEP 8 the following renames have been completed.</p>
 <ul class="simple">
 <li><p><cite>rl_client.live_model</cite> -&gt; <a class="reference internal" href="rl_client.html#rl_client.LiveModel" title="rl_client.LiveModel"><code class="xref py py-meth docutils literal notranslate"><span class="pre">rl_client.LiveModel()</span></code></a></p></li>
@@ -55,7 +56,7 @@
 </ul>
 </section>
 <section id="error-callback">
-<h2>2. Error Callback<a class="headerlink" href="#error-callback" title="Permalink to this headline">¶</a></h2>
+<h2>2. Error Callback<a class="headerlink" href="#error-callback" title="Permalink to this heading">¶</a></h2>
 <p>The error callback no longer needs to be a class that inherits from <cite>rl_client.error_callback</cite>. Now it should simply be a function which has a signature of <cite>void(int, string)</cite>, and can include closure values.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">my_error_callback</span><span class="p">(</span><span class="n">rl_client</span><span class="o">.</span><span class="n">error_callback</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">on_error</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">error_code</span><span class="p">,</span> <span class="n">error_message</span><span class="p">):</span>
@@ -80,7 +81,7 @@
 </div>
 </section>
 <section id="init">
-<h2>3. Init<a class="headerlink" href="#init" title="Permalink to this headline">¶</a></h2>
+<h2>3. Init<a class="headerlink" href="#init" title="Permalink to this heading">¶</a></h2>
 <p><cite>init</cite> no longer needs to be called.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">client</span> <span class="o">=</span> <span class="n">rl_client</span><span class="o">.</span><span class="n">live_model</span><span class="p">(</span><span class="n">config</span><span class="p">)</span>
 <span class="n">client</span><span class="o">.</span><span class="n">init</span><span class="p">()</span>
@@ -92,7 +93,7 @@
 </div>
 </section>
 <section id="choose-rank-return-value">
-<h2>4. <cite>choose_rank</cite> return value<a class="headerlink" href="#choose-rank-return-value" title="Permalink to this headline">¶</a></h2>
+<h2>4. <cite>choose_rank</cite> return value<a class="headerlink" href="#choose-rank-return-value" title="Permalink to this heading">¶</a></h2>
 <p><cite>choose_rank</cite> no longer returns a tuple, but now returns a <a class="reference internal" href="rl_client.html#rl_client.RankingResponse" title="rl_client.RankingResponse"><code class="xref py py-meth docutils literal notranslate"><span class="pre">rl_client.RankingResponse()</span></code></a> object that contains the same information as was contained in the tuple.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">model_id</span><span class="p">,</span> <span class="n">chosen_action_id</span><span class="p">,</span> <span class="n">actions_probabilities</span><span class="p">,</span> <span class="n">event_id</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">choose_rank</span><span class="p">(</span><span class="n">context</span><span class="p">)</span>
 </pre></div>
@@ -144,7 +145,7 @@
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -166,7 +167,7 @@
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.2.
     </div>
   </body>
 </html>

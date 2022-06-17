@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>rl_client Reference &#8212; rl_client 0.0.1 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
@@ -13,6 +13,7 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     
     <link rel="index" title="Index" href="genindex.html" />
@@ -46,7 +47,7 @@
           <div class="body" role="main">
             
   <section id="module-rl_client">
-<span id="rl-client-reference"></span><h1>rl_client Reference<a class="headerlink" href="#module-rl_client" title="Permalink to this headline">¶</a></h1>
+<span id="rl-client-reference"></span><h1>rl_client Reference<a class="headerlink" href="#module-rl_client" title="Permalink to this heading">¶</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="rl_client.Configuration">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">rl_client.</span></span><span class="sig-name descname"><span class="pre">Configuration</span></span><a class="headerlink" href="#rl_client.Configuration" title="Permalink to this definition">¶</a></dt>
@@ -56,13 +57,13 @@
 <span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#rl_client.Configuration" title="rl_client.Configuration"><span class="pre">rl_client.Configuration</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">defval</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#rl_client.Configuration.get" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get a config value or default.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>name</strong> – Name of configuration value to get</p></li>
 <li><p><strong>defval</strong> – Value to return if name does not exist</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>string value from config</p>
 </dd>
 </dl>
@@ -97,7 +98,7 @@
 <blockquote>
 <div><p>Request prediction for given context and use the given event_id</p>
 <dl class="field-list simple">
-<dt class="field-odd">rtype</dt>
+<dt class="field-odd">rtype<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference internal" href="#rl_client.RankingResponse" title="rl_client.RankingResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">rl_client.RankingResponse</span></code></a></p>
 </dd>
 </dl>
@@ -107,7 +108,7 @@
 <blockquote>
 <div><p>Request prediction for given context and let an event id be generated</p>
 <dl class="field-list simple">
-<dt class="field-odd">rtype</dt>
+<dt class="field-odd">rtype<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference internal" href="#rl_client.RankingResponse" title="rl_client.RankingResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">rl_client.RankingResponse</span></code></a></p>
 </dd>
 </dl>
@@ -163,7 +164,7 @@
 <em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">actions_probabilities</span></span><a class="headerlink" href="#rl_client.RankingResponse.actions_probabilities" title="Permalink to this definition">¶</a></dt>
 <dd><p>The list of action ids and corresponding probabilities</p>
 <dl class="field-list simple">
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.10)">list</a>[(<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)">int</a>,<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)">float</a>)]</p>
 </dd>
 </dl>
@@ -174,7 +175,7 @@
 <em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">chosen_action_id</span></span><a class="headerlink" href="#rl_client.RankingResponse.chosen_action_id" title="Permalink to this definition">¶</a></dt>
 <dd><p>Action chosen</p>
 <dl class="field-list simple">
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)">int</a></p>
 </dd>
 </dl>
@@ -185,7 +186,7 @@
 <em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">event_id</span></span><a class="headerlink" href="#rl_client.RankingResponse.event_id" title="Permalink to this definition">¶</a></dt>
 <dd><p>Either the supplied event ID or auto generated if none was given</p>
 <dl class="field-list simple">
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)">str</a></p>
 </dd>
 </dl>
@@ -196,7 +197,7 @@
 <em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">model_id</span></span><a class="headerlink" href="#rl_client.RankingResponse.model_id" title="Permalink to this definition">¶</a></dt>
 <dd><p>ID of model used to make this prediction</p>
 <dl class="field-list simple">
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)">str</a></p>
 </dd>
 </dl>
@@ -209,10 +210,10 @@
 <span class="sig-prename descclassname"><span class="pre">rl_client.</span></span><span class="sig-name descname"><span class="pre">create_config_from_json</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config_json</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#rl_client.Configuration" title="rl_client.Configuration"><span class="pre">rl_client.Configuration</span></a></span></span><a class="headerlink" href="#rl_client.create_config_from_json" title="Permalink to this definition">¶</a></dt>
 <dd><p>Parse the input as JSON and return an <a class="reference internal" href="#rl_client.Configuration" title="rl_client.Configuration"><code class="xref py py-class docutils literal notranslate"><span class="pre">rl_client.Configuration</span></code></a> object which contains each field.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>config_json</strong> – JSON string to parse</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="#rl_client.Configuration" title="rl_client.Configuration"><code class="xref py py-class docutils literal notranslate"><span class="pre">rl_client.Configuration</span></code></a> object containing parsed values</p>
 </dd>
 </dl>
@@ -250,7 +251,7 @@
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -275,7 +276,7 @@
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.2.
     </div>
   </body>
 </html>
