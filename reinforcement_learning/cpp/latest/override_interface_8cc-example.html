@@ -97,15 +97,15 @@ $(document).ready(function(){initNavTree('override_interface_8cc-example.html','
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;fstream&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;mutex&gt;</span></div>
-<div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &quot;config_utility.h&quot;</span></div>
-<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="live__model_8h.html">live_model.h</a>&quot;</span></div>
-<div class="line"><span class="preprocessor">#include &quot;factory_resolver.h&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &quot;constants.h&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;factory_resolver.h&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="live__model_8h.html">live_model.h</a>&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &quot;sender.h&quot;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#include &lt;fstream&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;mutex&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Namespace manipulation for brevity</span></div>
 <div class="line"><span class="keyword">namespace </span>r = <a class="code" href="namespacereinforcement__learning.html">reinforcement_learning</a>;</div>
@@ -116,36 +116,30 @@ $(document).ready(function(){initNavTree('override_interface_8cc-example.html','
 <div class="line"><span class="keyword">class </span>ostream_sender : <span class="keyword">public</span> r::i_sender</div>
 <div class="line">{</div>
 <div class="line"><span class="keyword">public</span>:</div>
-<div class="line">  ostream_sender(std::ostream &amp;stream, std::mutex &amp;mutex)</div>
-<div class="line">      : _stream(stream),</div>
-<div class="line">        _mutex(mutex) {}</div>
+<div class="line">  ostream_sender(std::ostream&amp; stream, std::mutex&amp; mutex) : _stream(stream), _mutex(mutex) {}</div>
 <div class="line"> </div>
-<div class="line">  <span class="keyword">virtual</span> <span class="keywordtype">int</span> init(<span class="keyword">const</span> u::configuration&amp; config, r::api_status *status)<span class="keyword"> override</span></div>
-<div class="line"><span class="keyword">  </span>{</div>
-<div class="line">    <span class="keywordflow">return</span> err::success;</div>
-<div class="line">  }</div>
+<div class="line">  <span class="keywordtype">int</span> init(<span class="keyword">const</span> u::configuration&amp; config, r::api_status* status)<span class="keyword"> override </span>{ <span class="keywordflow">return</span> err::success; }</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">protected</span>:</div>
-<div class="line">  <span class="keywordtype">int</span> v_send(<span class="keyword">const</span> buffer &amp;data, r::api_status *status)<span class="keyword"> override</span></div>
+<div class="line">  <span class="keywordtype">int</span> v_send(<span class="keyword">const</span> buffer&amp; data, r::api_status* status)<span class="keyword"> override</span></div>
 <div class="line"><span class="keyword">  </span>{</div>
 <div class="line">    std::lock_guard&lt;std::mutex&gt; lock(_mutex);</div>
-<div class="line">    _stream.write(<span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span><span class="keywordtype">char</span> *<span class="keyword">&gt;</span>(data-&gt;body_begin()), data-&gt;body_filled_size());</div>
+<div class="line">    _stream.write(<span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(data-&gt;body_begin()), data-&gt;body_filled_size());</div>
 <div class="line">    _stream &lt;&lt; std::endl;</div>
 <div class="line">    <span class="keywordflow">return</span> err::success;</div>
 <div class="line">  }</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">private</span>:</div>
-<div class="line">  std::ostream &amp;_stream;</div>
-<div class="line">  std::mutex &amp;_mutex;</div>
+<div class="line">  std::ostream&amp; _stream;</div>
+<div class="line">  std::mutex&amp; _mutex;</div>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Load contents of file into a string</span></div>
-<div class="line"><span class="keywordtype">int</span> load_file(<span class="keyword">const</span> std::string &amp;file_name, std::string &amp;config_str)</div>
+<div class="line"><span class="keywordtype">int</span> load_file(<span class="keyword">const</span> std::string&amp; file_name, std::string&amp; config_str)</div>
 <div class="line">{</div>
 <div class="line">  std::ifstream fs;</div>
 <div class="line">  fs.open(file_name);</div>
-<div class="line">  <span class="keywordflow">if</span> (!fs.good())</div>
-<div class="line">    <span class="keywordflow">return</span> err::invalid_argument;</div>
+<div class="line">  <span class="keywordflow">if</span> (!fs.good()) { <span class="keywordflow">return</span> err::invalid_argument; }</div>
 <div class="line">  std::stringstream buffer;</div>
 <div class="line">  buffer &lt;&lt; fs.rdbuf();</div>
 <div class="line">  config_str = buffer.str();</div>
@@ -153,7 +147,7 @@ $(document).ready(function(){initNavTree('override_interface_8cc-example.html','
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Load config from json file</span></div>
-<div class="line"><span class="keywordtype">int</span> load_config_from_json(<span class="keyword">const</span> std::string &amp;file_name, u::configuration &amp;cfg)</div>
+<div class="line"><span class="keywordtype">int</span> load_config_from_json(<span class="keyword">const</span> std::string&amp; file_name, u::configuration&amp; cfg)</div>
 <div class="line">{</div>
 <div class="line">  std::string config_str;</div>
 <div class="line">  <a name="a0"></a><a class="code" href="api__status_8h.html#a11385635c23358843d733b2e6f3241c4">RETURN_IF_FAIL</a>(load_file(file_name, config_str));</div>
@@ -175,19 +169,21 @@ $(document).ready(function(){initNavTree('override_interface_8cc-example.html','
 <div class="line">  std::mutex cout_mutex;</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Define a create function to be used in the factory.</span></div>
-<div class="line">  <span class="keyword">auto</span> <span class="keyword">const</span> create_ostream_sender_fn =</div>
-<div class="line">      [&amp;](r::i_sender **retval, <span class="keyword">const</span> u::configuration &amp;, r::error_callback_fn *error_callback, r::i_trace *trace, r::api_status *) {</div>
-<div class="line">        *retval = <span class="keyword">new</span> ostream_sender(std::cout, cout_mutex);</div>
-<div class="line">        <span class="keywordflow">return</span> err::success;</div>
-<div class="line">      };</div>
+<div class="line">  <span class="keyword">auto</span> <span class="keyword">const</span> create_ostream_sender_fn = [&amp;](r::i_sender** retval, <span class="keyword">const</span> u::configuration&amp;,</div>
+<div class="line">                                            r::error_callback_fn* error_callback, r::i_trace* trace, r::api_status*) {</div>
+<div class="line">    *retval = <span class="keyword">new</span> ostream_sender(std::cout, cout_mutex);</div>
+<div class="line">    <span class="keywordflow">return</span> err::success;</div>
+<div class="line">  };</div>
 <div class="line"> </div>
-<div class="line">  <span class="comment">// Create a local factory and register the create function with it using the corresponding implementation keys defined in constants.h</span></div>
+<div class="line">  <span class="comment">// Create a local factory and register the create function with it using the corresponding implementation keys defined</span></div>
+<div class="line">  <span class="comment">// in constants.h</span></div>
 <div class="line">  r::sender_factory_t stdout_logger_factory;</div>
 <div class="line">  stdout_logger_factory.register_type(r::value::OBSERVATION_EH_SENDER, create_ostream_sender_fn);</div>
 <div class="line">  stdout_logger_factory.register_type(r::value::INTERACTION_EH_SENDER, create_ostream_sender_fn);</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Default factories defined in factory_resolver.h are passed as well as the custom stdout logger.</span></div>
-<div class="line">  r::live_model model(config, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>, &amp;r::trace_logger_factory, &amp;r::data_transport_factory, &amp;r::model_factory, &amp;stdout_logger_factory);</div>
+<div class="line">  r::live_model model(config, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>, &amp;r::trace_logger_factory, &amp;r::data_transport_factory, &amp;r::model_factory,</div>
+<div class="line">      &amp;stdout_logger_factory);</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordflow">if</span> (model.init(&amp;status) != err::success)</div>
 <div class="line">  {</div>
@@ -197,8 +193,8 @@ $(document).ready(function(){initNavTree('override_interface_8cc-example.html','
 <div class="line"> </div>
 <div class="line">  r::ranking_response response;</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordtype">char</span> <span class="keyword">const</span> *<span class="keyword">const</span> event_id = <span class="stringliteral">&quot;event_id&quot;</span>;</div>
-<div class="line">  <span class="keyword">const</span> <span class="keyword">auto</span> context =</div>
+<div class="line">  <span class="keywordtype">char</span> <span class="keyword">const</span>* <span class="keyword">const</span> event_id = <span class="stringliteral">&quot;event_id&quot;</span>;</div>
+<div class="line">  <span class="keyword">const</span> <span class="keyword">auto</span>* <span class="keyword">const</span> context =</div>
 <div class="line">      R<span class="stringliteral">&quot;({&quot;GUser&quot;:{&quot;id&quot;:&quot;a&quot;,&quot;major&quot;:&quot;eng&quot;,&quot;hobby&quot;:&quot;hiking&quot;},&quot;_multi&quot;:[ { &quot;TAction&quot;:{&quot;a1&quot;:&quot;f1&quot;} },{&quot;TAction&quot;:{&quot;a2&quot;:&quot;f2&quot;}}]})&quot;;</span></div>
 <div class="line"><span class="stringliteral">  </span><span class="keywordtype">float</span> outcome = 1.0f;</div>
 <div class="line"> </div>
@@ -218,8 +214,8 @@ $(document).ready(function(){initNavTree('override_interface_8cc-example.html','
 <div class="line">}</div>
 </div><!-- fragment --> </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespacereinforcement__learning_html"><div class="ttname"><a href="namespacereinforcement__learning.html">reinforcement_learning</a></div><div class="ttdoc">[Error Generator]</div><div class="ttdef"><b>Definition:</b> live_model.h:24</div></div>
-<div class="ttc" id="aapi__status_8h_html_a11385635c23358843d733b2e6f3241c4"><div class="ttname"><a href="api__status_8h.html#a11385635c23358843d733b2e6f3241c4">RETURN_IF_FAIL</a></div><div class="ttdeci">#define RETURN_IF_FAIL(x)</div><div class="ttdoc">Error reporting macro to test and return on error.</div><div class="ttdef"><b>Definition:</b> api_status.h:234</div></div>
+<div class="ttc" id="anamespacereinforcement__learning_html"><div class="ttname"><a href="namespacereinforcement__learning.html">reinforcement_learning</a></div><div class="ttdoc">[Error Generator]</div><div class="ttdef"><b>Definition:</b> live_model.h:23</div></div>
+<div class="ttc" id="aapi__status_8h_html_a11385635c23358843d733b2e6f3241c4"><div class="ttname"><a href="api__status_8h.html#a11385635c23358843d733b2e6f3241c4">RETURN_IF_FAIL</a></div><div class="ttdeci">#define RETURN_IF_FAIL(x)</div><div class="ttdoc">Error reporting macro to test and return on error.</div><div class="ttdef"><b>Definition:</b> api_status.h:249</div></div>
 <div class="ttc" id="alive__model_8h_html"><div class="ttname"><a href="live__model_8h.html">live_model.h</a></div><div class="ttdoc">RL Inference API definition.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

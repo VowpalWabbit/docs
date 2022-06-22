@@ -99,7 +99,8 @@ $(document).ready(function(){initNavTree('basic_usage_cpp_8cc-example.html','');
 <div class="fragment"><div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &quot;basic_usage_cpp.h&quot;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> main() {</div>
+<div class="line"><span class="keywordtype">int</span> main()</div>
+<div class="line">{</div>
 <div class="line">  <span class="comment">// return basic_usage_cb();</span></div>
 <div class="line">  <span class="comment">// return basic_usage_ca();</span></div>
 <div class="line">  <span class="comment">// return basic_usage_ccb();</span></div>
@@ -107,14 +108,16 @@ $(document).ready(function(){initNavTree('basic_usage_cpp_8cc-example.html','');
 <div class="line">  <span class="keywordflow">return</span> basic_usage_multistep();</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> basic_usage_cb() {</div>
-<div class="line">  <span class="keywordtype">char</span> <span class="keyword">const</span> * <span class="keyword">const</span>  event_id = <span class="stringliteral">&quot;event_id&quot;</span>;</div>
-<div class="line">  <span class="keywordtype">char</span> <span class="keyword">const</span> * <span class="keyword">const</span> context = R<span class="stringliteral">&quot;({&quot;shared&quot;:{&quot;sf&quot;:1},&quot;_multi&quot;:[ { &quot;TAction&quot;:{&quot;af&quot;:1} },{&quot;TAction&quot;:{&quot;af&quot;:2}}]})&quot;;</span></div>
-<div class="line"><span class="stringliteral">  </span><span class="keywordtype">float</span> outcome  = 1.0f;</div>
+<div class="line"><span class="keywordtype">int</span> basic_usage_cb()</div>
+<div class="line">{</div>
+<div class="line">  <span class="keywordtype">char</span> <span class="keyword">const</span>* <span class="keyword">const</span> event_id = <span class="stringliteral">&quot;event_id&quot;</span>;</div>
+<div class="line">  <span class="keywordtype">char</span> <span class="keyword">const</span>* <span class="keyword">const</span> context = R<span class="stringliteral">&quot;({&quot;shared&quot;:{&quot;sf&quot;:1},&quot;_multi&quot;:[ { &quot;TAction&quot;:{&quot;af&quot;:1} },{&quot;TAction&quot;:{&quot;af&quot;:2}}]})&quot;;</span></div>
+<div class="line"><span class="stringliteral">  </span><span class="keywordtype">float</span> outcome = 1.0f;</div>
 <div class="line"> </div>
 <div class="line">  u::configuration config;</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (load_config_from_json(<span class="stringliteral">&quot;client.json&quot;</span>, config) != err::success) {</div>
+<div class="line">  <span class="keywordflow">if</span> (load_config_from_json(<span class="stringliteral">&quot;client.json&quot;</span>, config) != err::success)</div>
+<div class="line">  {</div>
 <div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Unable to Load file: client.json&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line">    <span class="keywordflow">return</span> -1;</div>
 <div class="line">  }</div>
@@ -123,7 +126,8 @@ $(document).ready(function(){initNavTree('basic_usage_cpp_8cc-example.html','');
 <div class="line"> </div>
 <div class="line">  r::live_model rl(config);</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (rl.init(&amp;status) != err::success) {</div>
+<div class="line">  <span class="keywordflow">if</span> (rl.init(&amp;status) != err::success)</div>
+<div class="line">  {</div>
 <div class="line">    std::cout &lt;&lt; status.get_error_msg() &lt;&lt; std::endl;</div>
 <div class="line">    <span class="keywordflow">return</span> -1;</div>
 <div class="line">  }</div>
@@ -131,13 +135,15 @@ $(document).ready(function(){initNavTree('basic_usage_cpp_8cc-example.html','');
 <div class="line">  <span class="comment">// Response class</span></div>
 <div class="line">  r::ranking_response response;</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (rl.choose_rank(event_id, context, response, &amp;status) != err::success) {</div>
+<div class="line">  <span class="keywordflow">if</span> (rl.choose_rank(event_id, context, response, &amp;status) != err::success)</div>
+<div class="line">  {</div>
 <div class="line">    std::cout &lt;&lt; status.get_error_msg() &lt;&lt; std::endl;</div>
 <div class="line">    <span class="keywordflow">return</span> -1;</div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordtype">size_t</span> chosen_action;</div>
-<div class="line">  <span class="keywordflow">if</span> (response.get_chosen_action_id(chosen_action, &amp;status) != err::success) {</div>
+<div class="line">  <span class="keywordtype">size_t</span> chosen_action = 0;</div>
+<div class="line">  <span class="keywordflow">if</span> (response.get_chosen_action_id(chosen_action, &amp;status) != err::success)</div>
+<div class="line">  {</div>
 <div class="line">    std::cout &lt;&lt; status.get_error_msg() &lt;&lt; std::endl;</div>
 <div class="line">    <span class="keywordflow">return</span> -1;</div>
 <div class="line">  }</div>
@@ -145,7 +151,8 @@ $(document).ready(function(){initNavTree('basic_usage_cpp_8cc-example.html','');
 <div class="line"> </div>
 <div class="line">  <span class="comment">//     Report received outcome (Optional: if this call is not made, default missing outcome is applied)</span></div>
 <div class="line">  <span class="comment">//     Missing outcome can be thought of as negative reinforcement</span></div>
-<div class="line">  <span class="keywordflow">if</span> (rl.report_outcome(event_id, outcome, &amp;status) != err::success) {</div>
+<div class="line">  <span class="keywordflow">if</span> (rl.report_outcome(event_id, outcome, &amp;status) != err::success)</div>
+<div class="line">  {</div>
 <div class="line">    std::cout &lt;&lt; status.get_error_msg() &lt;&lt; std::endl;</div>
 <div class="line">    <span class="keywordflow">return</span> -1;</div>
 <div class="line">  }</div>
@@ -153,14 +160,16 @@ $(document).ready(function(){initNavTree('basic_usage_cpp_8cc-example.html','');
 <div class="line">  <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> basic_usage_ca() {</div>
-<div class="line">  <span class="keywordtype">char</span> <span class="keyword">const</span> * <span class="keyword">const</span>  event_id = <span class="stringliteral">&quot;event_id&quot;</span>;</div>
+<div class="line"><span class="keywordtype">int</span> basic_usage_ca()</div>
+<div class="line">{</div>
+<div class="line">  <span class="keywordtype">char</span> <span class="keyword">const</span>* <span class="keyword">const</span> event_id = <span class="stringliteral">&quot;event_id&quot;</span>;</div>
 <div class="line">  std::string context = R<span class="stringliteral">&quot;({&quot;f1&quot;:1,&quot;f2&quot;:1,&quot;f3&quot;:1,&quot;f4&quot;:1,&quot;f5&quot;:1})&quot;;</span></div>
-<div class="line"><span class="stringliteral">  </span><span class="keywordtype">float</span> outcome  = 1.0f;</div>
+<div class="line"><span class="stringliteral">  </span><span class="keywordtype">float</span> outcome = 1.0f;</div>
 <div class="line"> </div>
 <div class="line">  u::configuration config;</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span>( load_config_from_json(<span class="stringliteral">&quot;client.json&quot;</span>, config) != err::success ) {</div>
+<div class="line">  <span class="keywordflow">if</span> (load_config_from_json(<span class="stringliteral">&quot;client.json&quot;</span>, config) != err::success)</div>
+<div class="line">  {</div>
 <div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Unable to Load file: client.json&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line">    <span class="keywordflow">return</span> -1;</div>
 <div class="line">  }</div>
@@ -169,7 +178,8 @@ $(document).ready(function(){initNavTree('basic_usage_cpp_8cc-example.html','');
 <div class="line"> </div>
 <div class="line">  r::live_model rl(config);</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span>( rl.init(&amp;status) != err::success ) {</div>
+<div class="line">  <span class="keywordflow">if</span> (rl.init(&amp;status) != err::success)</div>
+<div class="line">  {</div>
 <div class="line">    std::cout &lt;&lt; status.get_error_msg() &lt;&lt; std::endl;</div>
 <div class="line">    <span class="keywordflow">return</span> -1;</div>
 <div class="line">  }</div>
@@ -177,7 +187,8 @@ $(document).ready(function(){initNavTree('basic_usage_cpp_8cc-example.html','');
 <div class="line">  <span class="comment">// Response class</span></div>
 <div class="line">  r::continuous_action_response response;</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span>( rl.request_continuous_action(event_id, context, response, &amp;status) != err::success ) {</div>
+<div class="line">  <span class="keywordflow">if</span> (rl.request_continuous_action(event_id, context, response, &amp;status) != err::success)</div>
+<div class="line">  {</div>
 <div class="line">    std::cout &lt;&lt; status.get_error_msg() &lt;&lt; std::endl;</div>
 <div class="line">    <span class="keywordflow">return</span> -1;</div>
 <div class="line">  }</div>
@@ -188,7 +199,8 @@ $(document).ready(function(){initNavTree('basic_usage_cpp_8cc-example.html','');
 <div class="line"> </div>
 <div class="line">  <span class="comment">//     Report received outcome (Optional: if this call is not made, default missing outcome is applied)</span></div>
 <div class="line">  <span class="comment">//     Missing outcome can be thought of as negative reinforcement</span></div>
-<div class="line">  <span class="keywordflow">if</span>( rl.report_outcome(event_id, outcome, &amp;status) != err::success ) {</div>
+<div class="line">  <span class="keywordflow">if</span> (rl.report_outcome(event_id, outcome, &amp;status) != err::success)</div>
+<div class="line">  {</div>
 <div class="line">    std::cout &lt;&lt; status.get_error_msg() &lt;&lt; std::endl;</div>
 <div class="line">    <span class="keywordflow">return</span> -1;</div>
 <div class="line">  }</div>
@@ -196,12 +208,15 @@ $(document).ready(function(){initNavTree('basic_usage_cpp_8cc-example.html','');
 <div class="line">  <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> basic_usage_ccb() {</div>
-<div class="line">  <span class="keywordtype">char</span> <span class="keyword">const</span>* <span class="keyword">const</span> context = R<span class="stringliteral">&quot;({&quot;shared&quot;:{&quot;sf&quot;:1},&quot;_multi&quot;:[ { &quot;TAction&quot;:{&quot;af&quot;:1} },{&quot;TAction&quot;:{&quot;af&quot;:2}},{&quot;TAction&quot;:{&quot;af&quot;:3}}],&quot;_slots&quot;:[{&quot;f&quot;:1}, {&quot;f&quot;:2}]})&quot;;</span></div>
+<div class="line"><span class="keywordtype">int</span> basic_usage_ccb()</div>
+<div class="line">{</div>
+<div class="line">  <span class="keywordtype">char</span> <span class="keyword">const</span>* <span class="keyword">const</span> context =</div>
+<div class="line">      R<span class="stringliteral">&quot;({&quot;shared&quot;:{&quot;sf&quot;:1},&quot;_multi&quot;:[ { &quot;TAction&quot;:{&quot;af&quot;:1} },{&quot;TAction&quot;:{&quot;af&quot;:2}},{&quot;TAction&quot;:{&quot;af&quot;:3}}],&quot;_slots&quot;:[{&quot;f&quot;:1}, {&quot;f&quot;:2}]})&quot;;</span></div>
 <div class="line"><span class="stringliteral"></span> </div>
 <div class="line"><span class="stringliteral">  u::configuration config;</span></div>
 <div class="line"><span class="stringliteral"></span> </div>
-<div class="line"><span class="stringliteral">  </span><span class="keywordflow">if</span> (load_config_from_json(<span class="stringliteral">&quot;client.json&quot;</span>, config) != err::success) {</div>
+<div class="line"><span class="stringliteral">  </span><span class="keywordflow">if</span> (load_config_from_json(<span class="stringliteral">&quot;client.json&quot;</span>, config) != err::success)</div>
+<div class="line">  {</div>
 <div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Unable to Load file: client.json&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line">    <span class="keywordflow">return</span> -1;</div>
 <div class="line">  }</div>
@@ -210,7 +225,8 @@ $(document).ready(function(){initNavTree('basic_usage_cpp_8cc-example.html','');
 <div class="line"> </div>
 <div class="line">  r::live_model rl(config);</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (rl.init(&amp;status) != err::success) {</div>
+<div class="line">  <span class="keywordflow">if</span> (rl.init(&amp;status) != err::success)</div>
+<div class="line">  {</div>
 <div class="line">    std::cout &lt;&lt; status.get_error_msg() &lt;&lt; std::endl;</div>
 <div class="line">    <span class="keywordflow">return</span> -1;</div>
 <div class="line">  }</div>
@@ -218,14 +234,17 @@ $(document).ready(function(){initNavTree('basic_usage_cpp_8cc-example.html','');
 <div class="line">  <span class="comment">// Response class</span></div>
 <div class="line">  r::decision_response response;</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (rl.request_decision(context, response, &amp;status) != err::success) {</div>
+<div class="line">  <span class="keywordflow">if</span> (rl.request_decision(context, response, &amp;status) != err::success)</div>
+<div class="line">  {</div>
 <div class="line">    std::cout &lt;&lt; status.get_error_msg() &lt;&lt; std::endl;</div>
 <div class="line">    <span class="keywordflow">return</span> -1;</div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; r : response) {</div>
+<div class="line">  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; r : response)</div>
+<div class="line">  {</div>
 <div class="line">    <span class="keyword">const</span> <span class="keyword">auto</span> chosen_action = r.get_action_id();</div>
-<div class="line">    <span class="keywordflow">if</span> (rl.report_outcome(r.get_slot_id(), 1.0f, &amp;status) != err::success) {</div>
+<div class="line">    <span class="keywordflow">if</span> (rl.report_outcome(r.get_slot_id(), 1.0f, &amp;status) != err::success)</div>
+<div class="line">    {</div>
 <div class="line">      std::cout &lt;&lt; status.get_error_msg() &lt;&lt; std::endl;</div>
 <div class="line">      <span class="keywordflow">return</span> -1;</div>
 <div class="line">    }</div>
@@ -233,12 +252,15 @@ $(document).ready(function(){initNavTree('basic_usage_cpp_8cc-example.html','');
 <div class="line">  <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> basic_usage_slates() {</div>
-<div class="line">  std::string context = R<span class="stringliteral">&quot;({&quot;shared&quot;:{&quot;sf&quot;:1},&quot;_multi&quot;:[ {&quot;_slot_id&quot;:0,&quot;TAction&quot;:{&quot;af&quot;:1} },{&quot;_slot_id&quot;:0,&quot;TAction&quot;:{&quot;af&quot;:2}},{&quot;_slot_id&quot;:1,&quot;TAction&quot;:{&quot;af&quot;:3}},{&quot;_slot_id&quot;:1,&quot;TAction&quot;:{&quot;af&quot;:4}}],&quot;_slots&quot;:[{&quot;f&quot;:1}, {&quot;f&quot;:2}]})&quot;;</span></div>
+<div class="line"><span class="keywordtype">int</span> basic_usage_slates()</div>
+<div class="line">{</div>
+<div class="line">  std::string context =</div>
+<div class="line">      R<span class="stringliteral">&quot;({&quot;shared&quot;:{&quot;sf&quot;:1},&quot;_multi&quot;:[ {&quot;_slot_id&quot;:0,&quot;TAction&quot;:{&quot;af&quot;:1} },{&quot;_slot_id&quot;:0,&quot;TAction&quot;:{&quot;af&quot;:2}},{&quot;_slot_id&quot;:1,&quot;TAction&quot;:{&quot;af&quot;:3}},{&quot;_slot_id&quot;:1,&quot;TAction&quot;:{&quot;af&quot;:4}}],&quot;_slots&quot;:[{&quot;f&quot;:1}, {&quot;f&quot;:2}]})&quot;;</span></div>
 <div class="line"><span class="stringliteral"></span> </div>
 <div class="line"><span class="stringliteral">  u::configuration config;</span></div>
 <div class="line"><span class="stringliteral"></span> </div>
-<div class="line"><span class="stringliteral">  </span><span class="keywordflow">if</span> (load_config_from_json(<span class="stringliteral">&quot;client.json&quot;</span>, config) != err::success) {</div>
+<div class="line"><span class="stringliteral">  </span><span class="keywordflow">if</span> (load_config_from_json(<span class="stringliteral">&quot;client.json&quot;</span>, config) != err::success)</div>
+<div class="line">  {</div>
 <div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Unable to Load file: client.json&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line">    <span class="keywordflow">return</span> -1;</div>
 <div class="line">  }</div>
@@ -247,7 +269,8 @@ $(document).ready(function(){initNavTree('basic_usage_cpp_8cc-example.html','');
 <div class="line"> </div>
 <div class="line">  r::live_model rl(config);</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (rl.init(&amp;status) != err::success) {</div>
+<div class="line">  <span class="keywordflow">if</span> (rl.init(&amp;status) != err::success)</div>
+<div class="line">  {</div>
 <div class="line">    std::cout &lt;&lt; status.get_error_msg() &lt;&lt; std::endl;</div>
 <div class="line">    <span class="keywordflow">return</span> -1;</div>
 <div class="line">  }</div>
@@ -255,26 +278,28 @@ $(document).ready(function(){initNavTree('basic_usage_cpp_8cc-example.html','');
 <div class="line">  <span class="comment">// Response class</span></div>
 <div class="line">  r::multi_slot_response response;</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (rl.request_multi_slot_decision(<span class="stringliteral">&quot;event_id&quot;</span>, context, response, &amp;status) != err::success) {</div>
+<div class="line">  <span class="keywordflow">if</span> (rl.request_multi_slot_decision(<span class="stringliteral">&quot;event_id&quot;</span>, context, response, &amp;status) != err::success)</div>
+<div class="line">  {</div>
 <div class="line">    std::cout &lt;&lt; status.get_error_msg() &lt;&lt; std::endl;</div>
 <div class="line">    <span class="keywordflow">return</span> -1;</div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; r : response) {</div>
-<div class="line">    <span class="keyword">const</span> <span class="keyword">auto</span> chosen_action = r.get_action_id();</div>
-<div class="line">  }</div>
+<div class="line">  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; r : response) { <span class="keyword">const</span> <span class="keyword">auto</span> chosen_action = r.get_action_id(); }</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (rl.report_outcome(<span class="stringliteral">&quot;event_id&quot;</span>, 1.0f, &amp;status) != err::success) {</div>
+<div class="line">  <span class="keywordflow">if</span> (rl.report_outcome(<span class="stringliteral">&quot;event_id&quot;</span>, 1.0f, &amp;status) != err::success)</div>
+<div class="line">  {</div>
 <div class="line">    std::cout &lt;&lt; status.get_error_msg() &lt;&lt; std::endl;</div>
 <div class="line">    <span class="keywordflow">return</span> -1;</div>
 <div class="line">  }</div>
 <div class="line">  <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> basic_usage_multistep() {</div>
+<div class="line"><span class="keywordtype">int</span> basic_usage_multistep()</div>
+<div class="line">{</div>
 <div class="line">  u::configuration config;</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (load_config_from_json(<span class="stringliteral">&quot;client.json&quot;</span>, config) != err::success) {</div>
+<div class="line">  <span class="keywordflow">if</span> (load_config_from_json(<span class="stringliteral">&quot;client.json&quot;</span>, config) != err::success)</div>
+<div class="line">  {</div>
 <div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Unable to Load file: client.json&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line">    <span class="keywordflow">return</span> -1;</div>
 <div class="line">  }</div>
@@ -283,7 +308,8 @@ $(document).ready(function(){initNavTree('basic_usage_cpp_8cc-example.html','');
 <div class="line"> </div>
 <div class="line">  r::live_model rl(config);</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (rl.init(&amp;status) != err::success) {</div>
+<div class="line">  <span class="keywordflow">if</span> (rl.init(&amp;status) != err::success)</div>
+<div class="line">  {</div>
 <div class="line">    std::cout &lt;&lt; status.get_error_msg() &lt;&lt; std::endl;</div>
 <div class="line">    <span class="keywordflow">return</span> -1;</div>
 <div class="line">  }</div>
@@ -294,7 +320,8 @@ $(document).ready(function(){initNavTree('basic_usage_cpp_8cc-example.html','');
 <div class="line">  {</div>
 <div class="line">    <span class="keyword">const</span> std::string context1 = R<span class="stringliteral">&quot;({&quot;shared&quot;:{&quot;F1&quot;: 1.0}, &quot;_multi&quot;: [{&quot;AF1&quot;: 2.0}, {&quot;AF1&quot;: 3.0}]})&quot;;</span></div>
 <div class="line"><span class="stringliteral">    r::ranking_response response1;</span></div>
-<div class="line"><span class="stringliteral">    </span><span class="keywordflow">if</span> (rl.request_episodic_decision(<span class="stringliteral">&quot;event1&quot;</span>, <span class="keyword">nullptr</span>, context1.c_str(), response1, episode1, &amp;status) != err::success) {</div>
+<div class="line"><span class="stringliteral">    </span><span class="keywordflow">if</span> (rl.request_episodic_decision(<span class="stringliteral">&quot;event1&quot;</span>, <span class="keyword">nullptr</span>, context1.c_str(), response1, episode1, &amp;status) != err::success)</div>
+<div class="line">    {</div>
 <div class="line">      std::cout &lt;&lt; status.get_error_msg() &lt;&lt; std::endl;</div>
 <div class="line">      <span class="keywordflow">return</span> -1;</div>
 <div class="line">    }</div>
@@ -303,7 +330,8 @@ $(document).ready(function(){initNavTree('basic_usage_cpp_8cc-example.html','');
 <div class="line">  {</div>
 <div class="line">    <span class="keyword">const</span> std::string context1 = R<span class="stringliteral">&quot;({&quot;shared&quot;:{&quot;F2&quot;: 1.0}, &quot;_multi&quot;: [{&quot;AF2&quot;: 2.0}, {&quot;AF2&quot;: 3.0}]})&quot;;</span></div>
 <div class="line"><span class="stringliteral">    r::ranking_response response1;</span></div>
-<div class="line"><span class="stringliteral">    </span><span class="keywordflow">if</span> (rl.request_episodic_decision(<span class="stringliteral">&quot;event1&quot;</span>, <span class="keyword">nullptr</span>, context1.c_str(), response1, episode2, &amp;status) != err::success) {</div>
+<div class="line"><span class="stringliteral">    </span><span class="keywordflow">if</span> (rl.request_episodic_decision(<span class="stringliteral">&quot;event1&quot;</span>, <span class="keyword">nullptr</span>, context1.c_str(), response1, episode2, &amp;status) != err::success)</div>
+<div class="line">    {</div>
 <div class="line">      std::cout &lt;&lt; status.get_error_msg() &lt;&lt; std::endl;</div>
 <div class="line">      <span class="keywordflow">return</span> -1;</div>
 <div class="line">    }</div>
@@ -312,7 +340,9 @@ $(document).ready(function(){initNavTree('basic_usage_cpp_8cc-example.html','');
 <div class="line">  {</div>
 <div class="line">    <span class="keyword">const</span> std::string context2 = R<span class="stringliteral">&quot;({&quot;shared&quot;:{&quot;F1&quot;: 4.0}, &quot;_multi&quot;: [{&quot;AF1&quot;: 2.0}, {&quot;AF1&quot;: 3.0}]})&quot;;</span></div>
 <div class="line"><span class="stringliteral">    r::ranking_response response2;</span></div>
-<div class="line"><span class="stringliteral">    </span><span class="keywordflow">if</span> (rl.request_episodic_decision(<span class="stringliteral">&quot;event2&quot;</span>, <span class="stringliteral">&quot;event1&quot;</span>, context2.c_str(), response2, episode1, &amp;status) != err::success) {</div>
+<div class="line"><span class="stringliteral">    </span><span class="keywordflow">if</span> (rl.request_episodic_decision(<span class="stringliteral">&quot;event2&quot;</span>, <span class="stringliteral">&quot;event1&quot;</span>, context2.c_str(), response2, episode1, &amp;status) !=</div>
+<div class="line">        err::success)</div>
+<div class="line">    {</div>
 <div class="line">      std::cout &lt;&lt; status.get_error_msg() &lt;&lt; std::endl;</div>
 <div class="line">      <span class="keywordflow">return</span> -1;</div>
 <div class="line">    }</div>
@@ -321,21 +351,25 @@ $(document).ready(function(){initNavTree('basic_usage_cpp_8cc-example.html','');
 <div class="line">  {</div>
 <div class="line">    <span class="keyword">const</span> std::string context2 = R<span class="stringliteral">&quot;({&quot;shared&quot;:{&quot;F2&quot;: 4.0}, &quot;_multi&quot;: [{&quot;AF2&quot;: 2.0}, {&quot;AF2&quot;: 3.0}]})&quot;;</span></div>
 <div class="line"><span class="stringliteral">    r::ranking_response response2;</span></div>
-<div class="line"><span class="stringliteral">    </span><span class="keywordflow">if</span> (rl.request_episodic_decision(<span class="stringliteral">&quot;event2&quot;</span>, <span class="stringliteral">&quot;event1&quot;</span>, context2.c_str(), response2, episode2, &amp;status) != err::success) {</div>
+<div class="line"><span class="stringliteral">    </span><span class="keywordflow">if</span> (rl.request_episodic_decision(<span class="stringliteral">&quot;event2&quot;</span>, <span class="stringliteral">&quot;event1&quot;</span>, context2.c_str(), response2, episode2, &amp;status) !=</div>
+<div class="line">        err::success)</div>
+<div class="line">    {</div>
 <div class="line">      std::cout &lt;&lt; status.get_error_msg() &lt;&lt; std::endl;</div>
 <div class="line">      <span class="keywordflow">return</span> -1;</div>
 <div class="line">    }</div>
 <div class="line">  }</div>
 <div class="line"> </div>
 <div class="line">  {</div>
-<div class="line">    <span class="keywordflow">if</span> (rl.report_outcome(episode1.get_episode_id(), <span class="stringliteral">&quot;event1&quot;</span>, 1.0f, &amp;status) != err::success) {</div>
+<div class="line">    <span class="keywordflow">if</span> (rl.report_outcome(episode1.get_episode_id(), <span class="stringliteral">&quot;event1&quot;</span>, 1.0f, &amp;status) != err::success)</div>
+<div class="line">    {</div>
 <div class="line">      std::cout &lt;&lt; status.get_error_msg() &lt;&lt; std::endl;</div>
 <div class="line">      <span class="keywordflow">return</span> -1;</div>
 <div class="line">    }</div>
 <div class="line">  }</div>
 <div class="line"> </div>
 <div class="line">  {</div>
-<div class="line">    <span class="keywordflow">if</span> (rl.report_outcome(episode2.get_episode_id(), <span class="stringliteral">&quot;event2&quot;</span>, 1.0f, &amp;status) != err::success) {</div>
+<div class="line">    <span class="keywordflow">if</span> (rl.report_outcome(episode2.get_episode_id(), <span class="stringliteral">&quot;event2&quot;</span>, 1.0f, &amp;status) != err::success)</div>
+<div class="line">    {</div>
 <div class="line">      std::cout &lt;&lt; status.get_error_msg() &lt;&lt; std::endl;</div>
 <div class="line">      <span class="keywordflow">return</span> -1;</div>
 <div class="line">    }</div>
@@ -346,11 +380,12 @@ $(document).ready(function(){initNavTree('basic_usage_cpp_8cc-example.html','');
 <div class="line"> </div>
 <div class="line"><span class="comment">// Helper methods</span></div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> load_config_from_json(<span class="keyword">const</span> std::string&amp; file_name, u::configuration&amp; config) {</div>
+<div class="line"><span class="keywordtype">int</span> load_config_from_json(<span class="keyword">const</span> std::string&amp; file_name, u::configuration&amp; config)</div>
+<div class="line">{</div>
 <div class="line">  std::string config_str;</div>
 <div class="line">  <span class="comment">// Load contents of config file into a string</span></div>
 <div class="line">  <span class="keyword">const</span> <span class="keyword">auto</span> scode = load_file(file_name, config_str);</div>
-<div class="line">  <span class="keywordflow">if</span> ( scode != 0 ) <span class="keywordflow">return</span> scode;</div>
+<div class="line">  <span class="keywordflow">if</span> (scode != 0) { <span class="keywordflow">return</span> scode; }</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Use library supplied convenience method to parse json and build config object</span></div>
 <div class="line">  <span class="comment">// namespace cfg=reinforcement_learning::utility::config;</span></div>
@@ -358,11 +393,11 @@ $(document).ready(function(){initNavTree('basic_usage_cpp_8cc-example.html','');
 <div class="line">  <span class="keywordflow">return</span> cfg::create_from_json(config_str, config);</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> load_file(<span class="keyword">const</span> std::string&amp; file_name, std::string&amp; config_str) {</div>
+<div class="line"><span class="keywordtype">int</span> load_file(<span class="keyword">const</span> std::string&amp; file_name, std::string&amp; config_str)</div>
+<div class="line">{</div>
 <div class="line">  std::ifstream fs;</div>
 <div class="line">  fs.open(file_name);</div>
-<div class="line">  <span class="keywordflow">if</span> ( !fs.good() )</div>
-<div class="line">    <span class="keywordflow">return</span> reinforcement_learning::error_code::invalid_argument;</div>
+<div class="line">  <span class="keywordflow">if</span> (!fs.good()) { <span class="keywordflow">return</span> reinforcement_learning::error_code::invalid_argument; }</div>
 <div class="line">  std::stringstream buffer;</div>
 <div class="line">  buffer &lt;&lt; fs.rdbuf();</div>
 <div class="line">  config_str = buffer.str();</div>

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['error_5ffn_110',['error_fn',['../classreinforcement__learning_1_1live__model.html#a37d99bc96291b9d889be20648d46feda',1,'reinforcement_learning::live_model']]],
-  ['error_5ffn_5ft_111',['error_fn_t',['../classreinforcement__learning_1_1live__model.html#a1bd09b20f5ea6cc1c94f6a56a1cc2046',1,'reinforcement_learning::live_model']]]
+  ['error_5ffn_110',['error_fn',['../classreinforcement__learning_1_1live__model.html#a00e64d8e13e96c8da8f2ff4870df5a94',1,'reinforcement_learning::live_model']]],
+  ['error_5ffn_5ft_111',['error_fn_t',['../classreinforcement__learning_1_1live__model.html#a510b680448e093434434cd5051c7a599',1,'reinforcement_learning::live_model']]]
 ];
