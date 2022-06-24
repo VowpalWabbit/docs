@@ -55,7 +55,7 @@ var searchData=
   ['check_5fscore_5fbounds',['check_score_bounds',['../structVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#aa84fc1083835f87ea67e1f9fa5efb1bc',1,'VW::reductions::epsilon_decay::epsilon_decay_data']]],
   ['checksum',['checksum',['../classvw__slim_1_1model__parser.html#a8ccc4980a5dcab48729ebd09a188b6f2',1,'vw_slim::model_parser']]],
   ['chisq_5fonedof_5fisf',['chisq_onedof_isf',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#aaa304b1059a1a4e246d0763eb3ea83dd',1,'VW::distributionally_robust::ChiSquared']]],
-  ['chisquared',['ChiSquared',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#a4c5e70598285f281e5f074f2f0710efb',1,'VW::distributionally_robust::ChiSquared']]],
+  ['chisquared',['ChiSquared',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#a4394d033dd882ea535d7ec0c2707b2cc',1,'VW::distributionally_robust::ChiSquared']]],
   ['choose',['choose',['../namespaceVW_1_1math.html#a77171e0aba4b8c9fc8d5f49d2dd8d83f',1,'VW::math']]],
   ['clamp',['clamp',['../namespaceVW_1_1math.html#a7a1ee8356abb810e0ebaf3626ad591b7',1,'VW::math']]],
   ['classweight_5fsetup',['classweight_setup',['../namespaceVW_1_1reductions.html#af7e39cb6b5c7780412bc53eb0f5cf757',1,'VW::reductions']]],

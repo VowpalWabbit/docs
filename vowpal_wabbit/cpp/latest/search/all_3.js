@@ -149,7 +149,7 @@ var searchData=
   ['children',['children',['../structnode__socks.html#a7ed2657a18004dbca8ac585405efdd56',1,'node_socks']]],
   ['chisq',['chisq',['../structVW_1_1scored__config.html#a214b539da10b3eefd1274d09b6a4472d',1,'VW::scored_config']]],
   ['chisq_5fonedof_5fisf',['chisq_onedof_isf',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#aaa304b1059a1a4e246d0763eb3ea83dd',1,'VW::distributionally_robust::ChiSquared']]],
-  ['chisquared',['ChiSquared',['../classVW_1_1distributionally__robust_1_1ChiSquared.html',1,'VW::distributionally_robust::ChiSquared'],['../classVW_1_1distributionally__robust_1_1ChiSquared.html#a4c5e70598285f281e5f074f2f0710efb',1,'VW::distributionally_robust::ChiSquared::ChiSquared()']]],
+  ['chisquared',['ChiSquared',['../classVW_1_1distributionally__robust_1_1ChiSquared.html',1,'VW::distributionally_robust::ChiSquared'],['../classVW_1_1distributionally__robust_1_1ChiSquared.html#a4394d033dd882ea535d7ec0c2707b2cc',1,'VW::distributionally_robust::ChiSquared::ChiSquared()']]],
   ['choose',['choose',['../namespaceVW_1_1math.html#a77171e0aba4b8c9fc8d5f49d2dd8d83f',1,'VW::math']]],
   ['chosen_5faction',['chosen_action',['../structVW_1_1continuous__actions_1_1reduction__features.html#a7787a47aa964d286d2424fea39cca0b7',1,'VW::continuous_actions::reduction_features::chosen_action()'],['../constant_8h.html#a9a8e2a00065278a565d6e3b4a4de10c2',1,'CHOSEN_ACTION():&#160;constant.h']]],
   ['clamp',['clamp',['../namespaceVW_1_1math.html#a7a1ee8356abb810e0ebaf3626ad591b7',1,'VW::math']]],
