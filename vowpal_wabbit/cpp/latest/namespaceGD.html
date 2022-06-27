@@ -99,6 +99,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGD_1_1gd.html">gd</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structGD_1_1multipredict__info.html">multipredict_info</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -138,7 +140,7 @@ Functions</h2></td></tr>
 <tr class="separator:a9bafe5eba6c07a382cf0fcab8d01c27b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a862cbe40c5b70a7715e8a6d2d846fc2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGD.html#a862cbe40c5b70a7715e8a6d2d846fc2e">save_load_regressor</a> (<a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;all, <a class="el" href="classio__buf.html">io_buf</a> &amp;model_file, bool read, bool text)</td></tr>
 <tr class="separator:a862cbe40c5b70a7715e8a6d2d846fc2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6857ce7375c03a3466b8980b038fa3fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGD.html#a6857ce7375c03a3466b8980b038fa3fd">save_load_online_state</a> (<a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;all, <a class="el" href="classio__buf.html">io_buf</a> &amp;model_file, bool read, bool text, double &amp;total_weight, GD::gd *g=nullptr, uint32_t ftrl_size=0)</td></tr>
+<tr class="memitem:a6857ce7375c03a3466b8980b038fa3fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGD.html#a6857ce7375c03a3466b8980b038fa3fd">save_load_online_state</a> (<a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;all, <a class="el" href="classio__buf.html">io_buf</a> &amp;model_file, bool read, bool text, double &amp;total_weight, <a class="el" href="structGD_1_1gd.html">GD::gd</a> *g=nullptr, uint32_t ftrl_size=0)</td></tr>
 <tr class="separator:a6857ce7375c03a3466b8980b038fa3fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a233e8417eefdbbe50584f4e9cb7dee87"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a233e8417eefdbbe50584f4e9cb7dee87"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceGD.html#a233e8417eefdbbe50584f4e9cb7dee87">vec_add_multipredict</a> (<a class="el" href="structGD_1_1multipredict__info.html">multipredict_info</a>&lt; T &gt; &amp;mp, const float fx, uint64_t fi)</td></tr>
@@ -433,102 +435,8 @@ template&lt;class DataT , class WeightOrIndexT , void(*)(DataT &amp;, float, Wei
 
 </div>
 </div>
-<a id="aea2989a284844643946ea26f3d77a09c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea2989a284844643946ea26f3d77a09c">&#9670;&nbsp;</a></span>foreach_feature() <span class="overload">[4/8]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class DataT , class WeightOrIndexT , void(*)(DataT &amp;, float, WeightOrIndexT) FuncT&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GD::foreach_feature </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;&#160;</td>
-          <td class="paramname"><em>all</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structVW_1_1example.html">VW::example</a> &amp;&#160;</td>
-          <td class="paramname"><em>ec</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">DataT &amp;&#160;</td>
-          <td class="paramname"><em>dat</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a51ac69138f26544eeb42942cdc151981"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51ac69138f26544eeb42942cdc151981">&#9670;&nbsp;</a></span>foreach_feature() <span class="overload">[5/8]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class DataT , class WeightOrIndexT , void(*)(DataT &amp;, float, WeightOrIndexT) FuncT&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GD::foreach_feature </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;&#160;</td>
-          <td class="paramname"><em>all</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structVW_1_1example.html">VW::example</a> &amp;&#160;</td>
-          <td class="paramname"><em>ec</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">DataT &amp;&#160;</td>
-          <td class="paramname"><em>dat</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t &amp;&#160;</td>
-          <td class="paramname"><em>num_interacted_features</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="aa924a63c7727becca2835592a5741a9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa924a63c7727becca2835592a5741a9c">&#9670;&nbsp;</a></span>foreach_feature() <span class="overload">[6/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa924a63c7727becca2835592a5741a9c">&#9670;&nbsp;</a></span>foreach_feature() <span class="overload">[4/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -591,6 +499,100 @@ template&lt;class DataT , class WeightOrIndexT , void(*)(DataT &amp;, float, Wei
           <td></td>
           <td class="paramtype"><a class="el" href="structINTERACTIONS_1_1generate__interactions__object__cache.html">INTERACTIONS::generate_interactions_object_cache</a> &amp;&#160;</td>
           <td class="paramname"><em>cache</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aea2989a284844643946ea26f3d77a09c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea2989a284844643946ea26f3d77a09c">&#9670;&nbsp;</a></span>foreach_feature() <span class="overload">[5/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DataT , class WeightOrIndexT , void(*)(DataT &amp;, float, WeightOrIndexT) FuncT&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GD::foreach_feature </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;&#160;</td>
+          <td class="paramname"><em>all</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structVW_1_1example.html">VW::example</a> &amp;&#160;</td>
+          <td class="paramname"><em>ec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DataT &amp;&#160;</td>
+          <td class="paramname"><em>dat</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a51ac69138f26544eeb42942cdc151981"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51ac69138f26544eeb42942cdc151981">&#9670;&nbsp;</a></span>foreach_feature() <span class="overload">[6/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DataT , class WeightOrIndexT , void(*)(DataT &amp;, float, WeightOrIndexT) FuncT&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GD::foreach_feature </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;&#160;</td>
+          <td class="paramname"><em>all</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structVW_1_1example.html">VW::example</a> &amp;&#160;</td>
+          <td class="paramname"><em>ec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DataT &amp;&#160;</td>
+          <td class="paramname"><em>dat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t &amp;&#160;</td>
+          <td class="paramname"><em>num_interacted_features</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1114,7 +1116,7 @@ template&lt;class WeightsT &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GD::gd *&#160;</td>
+          <td class="paramtype"><a class="el" href="structGD_1_1gd.html">GD::gd</a> *&#160;</td>
           <td class="paramname"><em>g</em> = <code>nullptr</code>, </td>
         </tr>
         <tr>
@@ -1298,7 +1300,7 @@ template&lt;class T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 24 2022 20:23:52 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 27 2022 14:40:00 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -33,7 +33,7 @@ var searchData=
   ['init_5ffeatures',['init_features',['../namespaceVW.html#a556b1fcb45c9e73bfd3afb432bd71185',1,'VW']]],
   ['init_5fnode_5fcosts',['init_node_costs',['../structVW_1_1reductions_1_1cats_1_1cats__tree.html#a5236c5f134bfcc9dd101f6c5b5a4bb32',1,'VW::reductions::cats::cats_tree']]],
   ['initial',['initial',['../structsimple__label__reduction__features.html#a1480d951626ca2e794e3acee38f1f3d4',1,'simple_label_reduction_features']]],
-  ['initial_5fconstant',['initial_constant',['../structVW_1_1workspace.html#a8bac625a986f688013d55d5fda5844fc',1,'VW::workspace']]],
+  ['initial_5fconstant',['initial_constant',['../structVW_1_1workspace.html#a8bac625a986f688013d55d5fda5844fc',1,'VW::workspace::initial_constant()'],['../structGD_1_1gd.html#acbc1082b2cf38f270011cf3c6ab78079',1,'GD::gd::initial_constant()']]],
   ['initial_5fregressors',['initial_regressors',['../structVW_1_1workspace.html#a39d0ca7b190e757104872dd951ffabf2',1,'VW::workspace']]],
   ['initial_5ft',['initial_t',['../structVW_1_1workspace.html#afa89d7c4280de1cf77c8437a4063218f',1,'VW::workspace']]],
   ['initial_5fweight',['initial_weight',['../structVW_1_1workspace.html#a5ce0a725f475e4da41a41cc58edfd6bb',1,'VW::workspace']]],

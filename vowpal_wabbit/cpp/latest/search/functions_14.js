@@ -16,6 +16,7 @@ var searchData=
   ['update_5fdump_5finterval',['update_dump_interval',['../structshared__data.html#a86dc26ad7249ba38f03f8a2c6f315f37',1,'shared_data']]],
   ['update_5fextent_5finteractions_5fif_5fnew_5fnamespace_5fseen',['update_extent_interactions_if_new_namespace_seen',['../structINTERACTIONS_1_1interactions__generator.html#ab17bcc0b4ddfb903a6595ce3024cf886',1,'INTERACTIONS::interactions_generator']]],
   ['update_5finteractions_5fif_5fnew_5fnamespace_5fseen',['update_interactions_if_new_namespace_seen',['../structINTERACTIONS_1_1interactions__generator.html#a1ac90c2a9db9000d2ad3ba15a4254135',1,'INTERACTIONS::interactions_generator']]],
+  ['update_5fstatistics',['update_statistics',['../structCB__ADF_1_1cb__adf.html#a911635753a7f008770499af7efae7847',1,'CB_ADF::cb_adf']]],
   ['update_5fweights',['update_weights',['../structVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#ac4f097e4a70663a72f8ed2434d7388ce',1,'VW::reductions::epsilon_decay::epsilon_decay_data']]],
   ['upper_5fbound',['upper_bound',['../structVW_1_1scored__config.html#a0f7699ea313ea40dcbb8ff3769530109',1,'VW::scored_config']]]
 ];

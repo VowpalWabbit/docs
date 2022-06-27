@@ -13,6 +13,7 @@ var searchData=
   ['_5ffinal_5frun',['_final_run',['../classSearch_1_1BaseTask.html#a1789338f2860d67101b8ecbb694b18b7',1,'Search::BaseTask']]],
   ['_5fforeach_5faction',['_foreach_action',['../classSearch_1_1BaseTask.html#acb3dc8905bed89cd9f7b62879aa13260',1,'Search::BaseTask']]],
   ['_5ffunc',['_func',['../classVW_1_1io_1_1details_1_1function__ptr__sink.html#aff04887a3a4d03be4feaecf250f5be60',1,'VW::io::details::function_ptr_sink::_func()'],['../classVW_1_1io_1_1details_1_1function__ptr__legacy__sink.html#ac21d3f5e13f363d6c3164cdf15dcf969',1,'VW::io::details::function_ptr_legacy_sink::_func()']]],
+  ['_5fgen_5fcs',['_gen_cs',['../structCB__ADF_1_1cb__adf.html#ad0a5ea60f7c61cd194de52973b560aa3',1,'CB_ADF::cb_adf']]],
   ['_5fgenerate_5fa',['_generate_A',['../structVW_1_1cb__explore__adf_1_1cb__explore__adf__large__action__space.html#a952b3ff33713c1545877fa45258f5654',1,'VW::cb_explore_adf::cb_explore_adf_large_action_space']]],
   ['_5fgenerate_5finteractions_5fobject_5fcache',['_generate_interactions_object_cache',['../structVW_1_1workspace.html#abce3009065273c92c4bbfb49f313326e',1,'VW::workspace']]],
   ['_5fhash_5ffunc',['_hash_func',['../structContext.html#a3f368c83c1b6d60e9b14b6268e3dafc4',1,'Context']]],

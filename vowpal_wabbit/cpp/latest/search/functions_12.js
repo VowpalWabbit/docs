@@ -71,6 +71,7 @@ var searchData=
   ['set_5fprint_5fexample',['set_print_example',['../structVW_1_1LEARNER_1_1common__learner__builder.html#a6685a6a79d41a8396db5a1e78ec07cb1',1,'VW::LEARNER::common_learner_builder']]],
   ['set_5frandom_5fstate',['set_random_state',['../structVW_1_1rand__state.html#a9de725cf53af77e5e57cafbae7345fc3',1,'VW::rand_state']]],
   ['set_5fsave_5fload',['set_save_load',['../structVW_1_1LEARNER_1_1common__learner__builder.html#a627c5141cf0eec0469e5b9570e2ec21e',1,'VW::LEARNER::common_learner_builder']]],
+  ['set_5fscorer',['set_scorer',['../structCB__ADF_1_1cb__adf.html#a570ef90943e45966b031307c0e251c2b',1,'CB_ADF::cb_adf']]],
   ['set_5fsensitivity',['set_sensitivity',['../structVW_1_1LEARNER_1_1common__learner__builder.html#a8ccb03722e85a41a8019366a93c00cf2',1,'VW::LEARNER::common_learner_builder']]],
   ['set_5fstring',['set_string',['../structVW_1_1metric__sink.html#ad57ecdeb03cac319e171cc1d02a4091c',1,'VW::metric_sink']]],
   ['set_5ftag',['set_tag',['../classSearch_1_1predictor.html#a10fe2af6821e6fa60ef8b07a29435e12',1,'Search::predictor']]],

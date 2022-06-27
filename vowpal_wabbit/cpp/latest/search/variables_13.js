@@ -41,6 +41,7 @@ var searchData=
   ['sorted',['sorted',['../structVW_1_1example.html#ab9050ee843f96b866eb55641b8e9679c',1,'VW::example']]],
   ['space_5fnames',['space_names',['../structfeatures.html#ac3bc8bb26c26c054e6e9046b2ca80b95',1,'features']]],
   ['sparse',['sparse',['../classparameters.html#a83947face4285f451b42f9283ea127e8',1,'parameters']]],
+  ['sparse_5fl2',['sparse_l2',['../structGD_1_1gd.html#a934bd483b640444633119e5fb83dfc3c',1,'GD::gd']]],
   ['sparse_5fweights',['sparse_weights',['../classparameters.html#a276f4673850e9650c1360a78c9afab97',1,'parameters']]],
   ['spelling_5ffeatures',['spelling_features',['../structVW_1_1workspace.html#ae1554e16748cc811a124f4a2b671799a',1,'VW::workspace']]],
   ['spelling_5fnamespace',['spelling_namespace',['../constant_8h.html#a277c1a47ab86f3c52c7711d09f781a2c',1,'constant.h']]],
