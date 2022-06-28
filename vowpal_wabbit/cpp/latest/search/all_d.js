@@ -73,6 +73,7 @@ var searchData=
   ['model_5futils_2eh',['model_utils.h',['../model__utils_8h.html',1,'']]],
   ['more_5finfo_5frequired_5ffor_5fclasses',['more_info_required_for_classes',['../structVW_1_1active__multiclass__prediction.html#ab9814a36e47b7f06526ebb1d978515b5',1,'VW::active_multiclass_prediction']]],
   ['move_5ffeature_5fnamespace',['move_feature_namespace',['../namespaceVW.html#ab9e00af55935c42d32d1c2c5c244150e',1,'VW']]],
+  ['move_5foffsets',['move_offsets',['../classdense__parameters.html#a0809b7f606ffd6681d2ef69b34fd1472',1,'dense_parameters']]],
   ['moved_5fobject_5fpool',['moved_object_pool',['../structVW_1_1moved__object__pool.html',1,'VW::moved_object_pool&lt; T &gt;'],['../structVW_1_1moved__object__pool.html#a576da638798a649601d6c423a497a998',1,'VW::moved_object_pool::moved_object_pool()']]],
   ['moved_5fobject_5fpool_3c_20interactions_3a_3aextent_5finteraction_5fexpansion_5fstack_5fitem_20_3e',['moved_object_pool&lt; INTERACTIONS::extent_interaction_expansion_stack_item &gt;',['../structVW_1_1moved__object__pool.html',1,'VW']]],
   ['mtr',['mtr',['../namespaceVW.html#afc6602380e780c653a55bf44b6e5c881af80a6c5780922a877062945f3fe22753',1,'VW']]],

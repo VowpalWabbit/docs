@@ -21,6 +21,7 @@ var searchData=
   ['might_5finsert',['might_insert',['../classBeam_1_1beam.html#a27a76654671cb98e49e203f38097df57',1,'Beam::beam']]],
   ['model_5fparser',['model_parser',['../classvw__slim_1_1model__parser.html#a60531cc8473aa75a7be9a324f35f6d88',1,'vw_slim::model_parser']]],
   ['move_5ffeature_5fnamespace',['move_feature_namespace',['../namespaceVW.html#ab9e00af55935c42d32d1c2c5c244150e',1,'VW']]],
+  ['move_5foffsets',['move_offsets',['../classdense__parameters.html#a0809b7f606ffd6681d2ef69b34fd1472',1,'dense_parameters']]],
   ['moved_5fobject_5fpool',['moved_object_pool',['../structVW_1_1moved__object__pool.html#a576da638798a649601d6c423a497a998',1,'VW::moved_object_pool']]],
   ['multiclass_5fpred_5fto_5fstring',['multiclass_pred_to_string',['../namespaceVW_1_1debug.html#a9c0a9968718373271b11fb4f69a94382',1,'VW::debug']]],
   ['multilabel_5foaa_5fsetup',['multilabel_oaa_setup',['../namespaceVW_1_1reductions.html#a67f6c10668d890000101032e5b60b244',1,'VW::reductions']]],

@@ -2,7 +2,6 @@ var searchData=
 [
   ['kappa',['kappa',['../structVW_1_1distributionally__robust_1_1Duals.html#ab744a1ccbb7609311140f578b7353e1b',1,'VW::distributionally_robust::Duals']]],
   ['keep',['keep',['../structVW_1_1config_1_1option__builder.html#a84c18f2707244a81ed1a9a3e2c58fccd',1,'VW::config::option_builder']]],
-  ['keep_5fconfigs',['keep_configs',['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a44490e298c83bf5461dd5f4202b05318',1,'VW::reductions::automl::interaction_config_manager']]],
   ['kernel_5fsvm_2eh',['kernel_svm.h',['../kernel__svm_8h.html',1,'']]],
   ['kernel_5fsvm_5fsetup',['kernel_svm_setup',['../namespaceVW_1_1reductions.html#a549fc22ed64a1ef7311b26720dc42f7a',1,'VW::reductions']]],
   ['key',['key',['../structContext.html#a0643ecc80c34c5d21230efca9c86f4eb',1,'Context::key()'],['../structBaseState.html#a0f4b60a1d1d484bd651940215aaba368',1,'BaseState::Key()'],['../classArrayToPdfState.html#aba45e5a81119b0165657c1fe3b63e60d',1,'ArrayToPdfState::Key()'],['../classLabelObjectState.html#a47611d41986eded3d43b95724f660a4c',1,'LabelObjectState::Key()'],['../classDefaultState.html#afcb9efce34b9225167a8547011b87d60',1,'DefaultState::Key()'],['../classDecisionServiceState.html#a53d96ac24c32b9a1653cab0491917ee5',1,'DecisionServiceState::Key()'],['../structVWReaderHandler.html#aefff7b0abd4ce342f40241494816e7b3',1,'VWReaderHandler::Key()']]],

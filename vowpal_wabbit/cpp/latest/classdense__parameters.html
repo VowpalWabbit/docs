@@ -146,8 +146,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1772cb19915bffdda3f6596ebe73a280"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7dbdf74082a8952d7f77fe827eef21c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdense__parameters.html#ae7dbdf74082a8952d7f77fe827eef21c">set_zero</a> (size_t offset)</td></tr>
 <tr class="separator:ae7dbdf74082a8952d7f77fe827eef21c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f23bd502c41c3782e4fe2fe68f7aeb8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdense__parameters.html#a1f23bd502c41c3782e4fe2fe68f7aeb8">copy_offsets</a> (const size_t from, const size_t to, const size_t params_per_problem)</td></tr>
-<tr class="separator:a1f23bd502c41c3782e4fe2fe68f7aeb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0809b7f606ffd6681d2ef69b34fd1472"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdense__parameters.html#a0809b7f606ffd6681d2ef69b34fd1472">move_offsets</a> (const size_t from, const size_t to, const size_t params_per_problem, bool swap=false)</td></tr>
+<tr class="separator:a0809b7f606ffd6681d2ef69b34fd1472"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4e7cdcb003ec6c74d655ffb58e9e5ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdense__parameters.html#aa4e7cdcb003ec6c74d655ffb58e9e5ba">clear_offset</a> (const size_t offset, const size_t params_per_problem)</td></tr>
 <tr class="separator:aa4e7cdcb003ec6c74d655ffb58e9e5ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab18ff8dd1a000af48b7225e64853b6e4"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdense__parameters.html#ab18ff8dd1a000af48b7225e64853b6e4">mask</a> () const</td></tr>
@@ -445,48 +445,6 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1f23bd502c41c3782e4fe2fe68f7aeb8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f23bd502c41c3782e4fe2fe68f7aeb8">&#9670;&nbsp;</a></span>copy_offsets()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void dense_parameters::copy_offsets </td>
-          <td>(</td>
-          <td class="paramtype">const size_t&#160;</td>
-          <td class="paramname"><em>from</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const size_t&#160;</td>
-          <td class="paramname"><em>to</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const size_t&#160;</td>
-          <td class="paramname"><em>params_per_problem</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a2bbd36d1a565d7816da97b54e1029f23"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2bbd36d1a565d7816da97b54e1029f23">&#9670;&nbsp;</a></span>end()</h2>
 
@@ -551,6 +509,54 @@ Public Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0809b7f606ffd6681d2ef69b34fd1472"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0809b7f606ffd6681d2ef69b34fd1472">&#9670;&nbsp;</a></span>move_offsets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dense_parameters::move_offsets </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>to</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>params_per_problem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>swap</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -930,7 +936,7 @@ template&lt;typename Lambda &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 28 2022 20:29:58 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 28 2022 21:37:52 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

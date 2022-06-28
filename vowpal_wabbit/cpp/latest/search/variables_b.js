@@ -1,7 +1,6 @@
 var searchData=
 [
   ['kappa',['kappa',['../structVW_1_1distributionally__robust_1_1Duals.html#ab744a1ccbb7609311140f578b7353e1b',1,'VW::distributionally_robust::Duals']]],
-  ['keep_5fconfigs',['keep_configs',['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a44490e298c83bf5461dd5f4202b05318',1,'VW::reductions::automl::interaction_config_manager']]],
   ['key',['key',['../structContext.html#a0643ecc80c34c5d21230efca9c86f4eb',1,'Context']]],
   ['key_5flength',['key_length',['../structContext.html#a54c7294c2b973d14c8e6dded158652e3',1,'Context']]],
   ['kill_5fcache',['kill_cache',['../structinput__options.html#a6fe3da7ab2e63463ae83afd2615f7fc5',1,'input_options']]],

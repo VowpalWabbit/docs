@@ -92,7 +92,6 @@ var searchData=
   ['copy_5fexample_5fdata_5fwith_5flabel',['copy_example_data_with_label',['../namespaceVW.html#a51f22667a1c11c2a523ea3fcf42b8d34',1,'VW']]],
   ['copy_5fexample_5fmetadata',['copy_example_metadata',['../namespaceVW.html#af392a5d3678ff1b726f8a9f2720ac89e',1,'VW']]],
   ['copy_5fexample_5fto_5fadf',['copy_example_to_adf',['../structVW_1_1reductions_1_1cbify__adf__data.html#a295875616a2a898e89e84ca58d75d250',1,'VW::reductions::cbify_adf_data']]],
-  ['copy_5foffsets',['copy_offsets',['../classdense__parameters.html#a1f23bd502c41c3782e4fe2fe68f7aeb8',1,'dense_parameters']]],
   ['copy_5fto',['copy_to',['../classio__buf.html#a6fc5dfa66ea7487155fcafd57a45ec90',1,'io_buf']]],
   ['count_5flabel',['count_label',['../namespaceVW.html#ade7c66e76f0dc0b979504435741b275b',1,'VW']]],
   ['count_5flabel_5fsetup',['count_label_setup',['../namespaceVW_1_1reductions.html#a1f6081575b93a41fd460eb682232459d',1,'VW::reductions']]],
