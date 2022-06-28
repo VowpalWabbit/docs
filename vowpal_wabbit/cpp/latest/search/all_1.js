@@ -68,6 +68,7 @@ var searchData=
   ['allreducethreads',['AllReduceThreads',['../classAllReduceThreads.html',1,'AllReduceThreads'],['../classAllReduceThreads.html#a55bf6976a5fb1cd2dc036b2899c29a07',1,'AllReduceThreads::AllReduceThreads(AllReduceThreads *root, const size_t ptotal, const size_t pnode, bool quiet=false)'],['../classAllReduceThreads.html#a8cccbdd0a46a186fd867529aa0f6c491',1,'AllReduceThreads::AllReduceThreads(const size_t ptotal, const size_t pnode, bool quiet=false)']]],
   ['allreducetype',['AllReduceType',['../allreduce_8h.html#ac80f47c3b2731d9979f60e1b2f6af364',1,'allreduce.h']]],
   ['aml_5fscore',['aml_score',['../structVW_1_1reductions_1_1automl_1_1aml__score.html',1,'VW::reductions::automl::aml_score'],['../structVW_1_1reductions_1_1automl_1_1aml__score.html#a370febfb3ee20d9c851f1966c0982c39',1,'VW::reductions::automl::aml_score::aml_score()'],['../structVW_1_1reductions_1_1automl_1_1aml__score.html#affeae66b1935e096d8c4e141a0b6c242',1,'VW::reductions::automl::aml_score::aml_score(double alpha, double tau)'],['../structVW_1_1reductions_1_1automl_1_1aml__score.html#a7a145c9a77072b37adb0ce8efc1e70bc',1,'VW::reductions::automl::aml_score::aml_score(VW::scored_config sc, uint64_t config_index, bool eligible_to_inactivate, interaction_vec_t &amp;live_interactions)']]],
+  ['anonymous_5fnamespace_7bautoml_5futil_2eh_7d',['anonymous_namespace{automl_util.h}',['../namespaceanonymous__namespace_02automl__util_8h_03.html',1,'']]],
   ['api_5fstatus',['api_status',['../classVW_1_1experimental_1_1api__status.html',1,'VW::experimental::api_status'],['../classVW_1_1experimental_1_1api__status.html#a83460b76f47b7b76ee50d4c40e7f8826',1,'VW::experimental::api_status::api_status()']]],
   ['api_5fstatus_2eh',['api_status.h',['../api__status_8h.html',1,'']]],
   ['append_5fempty_5fnewline_5fexample_5ffor_5fdriver',['append_empty_newline_example_for_driver',['../parse__example__json_8h.html#ade850e3003a482ebb0b70b1c28ae2921',1,'parse_example_json.h']]],
@@ -113,8 +114,10 @@ var searchData=
   ['automl',['automl',['../structVW_1_1reductions_1_1automl_1_1automl.html',1,'VW::reductions::automl::automl&lt; CMType &gt;'],['../structVW_1_1reductions_1_1automl_1_1automl.html#a7821b346af57533e9e4c759286ba91ee',1,'VW::reductions::automl::automl::automl()']]],
   ['automl_2eh',['automl.h',['../automl_8h.html',1,'']]],
   ['automl_5festimator_5fdecay',['automl_estimator_decay',['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#ac6c9943ff7c0de71b54f5cfa1237ff65',1,'VW::reductions::automl::interaction_config_manager']]],
+  ['automl_5fiomodel_2eh',['automl_iomodel.h',['../automl_2automl__iomodel_8h.html',1,'(Global Namespace)'],['../automl__iomodel_8h.html',1,'(Global Namespace)']]],
   ['automl_5fsetup',['automl_setup',['../namespaceVW_1_1reductions.html#a7a59da5065ab7af3e82e8a0c055f7c45',1,'VW::reductions']]],
   ['automl_5fsignificance_5flevel',['automl_significance_level',['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#acb11145818ae5f0d8d754c87449cc26d',1,'VW::reductions::automl::interaction_config_manager']]],
   ['automl_5fstate',['automl_state',['../namespaceVW_1_1reductions_1_1automl.html#a73822d9332c63d629d0c7ca5121706e3',1,'VW::reductions::automl']]],
+  ['automl_5futil_2eh',['automl_util.h',['../automl__util_8h.html',1,'']]],
   ['avg_5floss_5fregressors',['avg_loss_regressors',['../structGEN__CS_1_1cb__to__cs.html#ae63989605eba00d78586ecc741a4e8fa',1,'GEN_CS::cb_to_cs']]]
 ];
