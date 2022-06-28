@@ -22,6 +22,7 @@ var searchData=
   ['index_5fqueue',['index_queue',['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a716069c3b24d092dc7b0782f85f48433',1,'VW::reductions::automl::interaction_config_manager']]],
   ['index_5fsequence',['index_sequence',['../classVW_1_1details_1_1index__sequence.html',1,'VW::details']]],
   ['index_5fsequence_3c_20integers_2e_2e_2e_20_3e',['index_sequence&lt; Integers... &gt;',['../classVW_1_1details_1_1index__sequence.html',1,'VW::details']]],
+  ['index_5fwithout_5fstride',['index_without_stride',['../classdense__iterator.html#a2d60364855560dea8fffd7f610b666d6',1,'dense_iterator']]],
   ['indexing',['indexing',['../structVW_1_1workspace.html#a5c8ca74e6cfa887a7a8d26cb88ab3eed',1,'VW::workspace']]],
   ['indices',['indices',['../structVW_1_1example__predict.html#ae3bcd81025e590305eb4aa9c50e24ad4',1,'VW::example_predict::indices()'],['../structfeatures.html#a148deefbc0193790ff4233441f532cc0',1,'features::indices()']]],
   ['indices_5fto_5fvalues_5fignore_5flast_5findex',['indices_to_values_ignore_last_index',['../namespaceINTERACTIONS.html#a39db93fa48415de36ea84148fbf16d06',1,'INTERACTIONS']]],
