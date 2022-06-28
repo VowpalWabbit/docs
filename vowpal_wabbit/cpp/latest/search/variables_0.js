@@ -22,6 +22,7 @@ var searchData=
   ['_5fhash_5fseed',['_hash_seed',['../structContext.html#a01afa98e493b634961472d26228817ff',1,'Context']]],
   ['_5finner_5fcontext',['_inner_context',['../structtrace__message__wrapper.html#a77be7f3251c83f7279636db44bb39417',1,'trace_message_wrapper']]],
   ['_5flabel_5fparser',['_label_parser',['../structContext.html#addd3a95d416c65413a2acdf538a61b01',1,'Context']]],
+  ['_5flb_5ftrick',['_lb_trick',['../structVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#a43e743b8f88d68983c3851f36881b6fe',1,'VW::reductions::epsilon_decay::epsilon_decay_data']]],
   ['_5fldict',['_ldict',['../structContext.html#a4687edebc267ab55d3cc7857b7bd4686',1,'Context']]],
   ['_5flearner',['_learner',['../structVW_1_1LEARNER_1_1common__learner__builder.html#af2b6433be9bd2341b08e9d6b8c685bba',1,'VW::LEARNER::common_learner_builder']]],
   ['_5flocation',['_location',['../structVW_1_1io_1_1details_1_1logger__impl.html#abf567c6446e0dbacb7d9f5ed23d3dc83',1,'VW::io::details::logger_impl']]],

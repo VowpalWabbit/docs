@@ -106,8 +106,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab71e13e10175a0376fb7767dfc6e45a6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#ab71e13e10175a0376fb7767dfc6e45a6">epsilon_decay_data</a> (uint64_t model_count, uint64_t min_scope, double epsilon_decay_significance_level, double epsilon_decay_estimator_decay, <a class="el" href="classdense__parameters.html">dense_parameters</a> &amp;weights, <a class="el" href="structVW_1_1io_1_1logger.html">VW::io::logger</a> logger, bool log_champ_changes, bool constant_epsilon, uint32_t &amp;wpp)</td></tr>
-<tr class="separator:ab71e13e10175a0376fb7767dfc6e45a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68ed3f8c710cc85641966ddde2c2f3b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#a68ed3f8c710cc85641966ddde2c2f3b0">epsilon_decay_data</a> (uint64_t model_count, uint64_t min_scope, double epsilon_decay_significance_level, double epsilon_decay_estimator_decay, <a class="el" href="classdense__parameters.html">dense_parameters</a> &amp;weights, <a class="el" href="structVW_1_1io_1_1logger.html">VW::io::logger</a> logger, bool log_champ_changes, bool constant_epsilon, uint32_t &amp;wpp, bool lb_trick)</td></tr>
+<tr class="separator:a68ed3f8c710cc85641966ddde2c2f3b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4f097e4a70663a72f8ed2434d7388ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#ac4f097e4a70663a72f8ed2434d7388ce">update_weights</a> (<a class="el" href="namespaceVW_1_1LEARNER.html#af1a8de5607718807546f15b47300a4a3">VW::LEARNER::multi_learner</a> &amp;base, <a class="el" href="namespaceVW.html#a505a6662876c6cba2fcdebb6d21ebbd2">VW::multi_ex</a> &amp;examples)</td></tr>
 <tr class="separator:ac4f097e4a70663a72f8ed2434d7388ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa964982ed88d47406babbfa49ee11c4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#aa964982ed88d47406babbfa49ee11c4f">promote_model</a> (int64_t model_ind, int64_t swap_dist)</td></tr>
@@ -145,10 +145,12 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a191cd6461cee11dc4d892c7ec6de3480"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5cbdcaa0b16dacd14be27b0e8a03e26"><td class="memItemLeft" align="right" valign="top">uint32_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#ab5cbdcaa0b16dacd14be27b0e8a03e26">_wpp</a></td></tr>
 <tr class="separator:ab5cbdcaa0b16dacd14be27b0e8a03e26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43e743b8f88d68983c3851f36881b6fe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#a43e743b8f88d68983c3851f36881b6fe">_lb_trick</a></td></tr>
+<tr class="separator:a43e743b8f88d68983c3851f36881b6fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ab71e13e10175a0376fb7767dfc6e45a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab71e13e10175a0376fb7767dfc6e45a6">&#9670;&nbsp;</a></span>epsilon_decay_data()</h2>
+<a id="a68ed3f8c710cc85641966ddde2c2f3b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68ed3f8c710cc85641966ddde2c2f3b0">&#9670;&nbsp;</a></span>epsilon_decay_data()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -205,7 +207,13 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint32_t &amp;&#160;</td>
-          <td class="paramname"><em>wpp</em>&#160;</td>
+          <td class="paramname"><em>wpp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>lb_trick</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -447,6 +455,20 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a43e743b8f88d68983c3851f36881b6fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43e743b8f88d68983c3851f36881b6fe">&#9670;&nbsp;</a></span>_lb_trick</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool VW::reductions::epsilon_decay::epsilon_decay_data::_lb_trick</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a733e710bcfe3102db8dd407f014f0d78"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a733e710bcfe3102db8dd407f014f0d78">&#9670;&nbsp;</a></span>_log_champ_changes</h2>
 
@@ -551,7 +573,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 28 2022 21:37:53 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 28 2022 22:25:10 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
