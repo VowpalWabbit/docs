@@ -32,6 +32,7 @@ var searchData=
   ['marginal_5fsetup',['marginal_setup',['../namespaceVW_1_1reductions.html#a9ab0348ac4d025e15aa1f773b636979c',1,'VW::reductions']]],
   ['mask',['mask',['../classsparse__parameters.html#a889cb5ba13ea2a981a306caee24fb711',1,'sparse_parameters::mask()'],['../classparameters.html#a0211965b68a6021fc65d778564107ba0',1,'parameters::mask()'],['../classdense__parameters.html#ab18ff8dd1a000af48b7225e64853b6e4',1,'dense_parameters::mask()']]],
   ['max_5factions',['max_actions',['../structVW_1_1cb__explore__adf_1_1cb__explore__metrics.html#a152f694f66f8c8a02d67a9b8d04ac80e',1,'VW::cb_explore_adf::cb_explore_metrics']]],
+  ['max_5fconfigs',['MAX_CONFIGS',['../namespaceVW_1_1reductions_1_1automl_1_1anonymous__namespace_02automl__impl_8h_03.html#a76ca81cc9d63793c64396d0252a979de',1,'VW::reductions::automl::anonymous_namespace{automl_impl.h}']]],
   ['max_5fexamples',['max_examples',['../structVW_1_1workspace.html#a74503c26819a4c7aff237c0b2dac6a93',1,'VW::workspace']]],
   ['max_5flabel',['max_label',['../structshared__data.html#ab7a25e683bebc7347fa97d71e116f712',1,'shared_data']]],
   ['max_5flive_5fconfigs',['max_live_configs',['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a3abcc84226051246467a60cc91005dc6',1,'VW::reductions::automl::interaction_config_manager']]],

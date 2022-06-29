@@ -63,6 +63,7 @@ var searchData=
   ['confidence',['confidence',['../structVW_1_1example.html#a01cd72812b1c44881cd59fa4933efea9',1,'VW::example']]],
   ['config_5findex',['config_index',['../structVW_1_1reductions_1_1automl_1_1aml__score.html#afb91c1fe50a3b420291d2a2142efd19e',1,'VW::reductions::automl::aml_score']]],
   ['configs',['configs',['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#ac59fdd15caffc74e77ff69c869b02534',1,'VW::reductions::automl::interaction_config_manager']]],
+  ['configs_5fper_5fchamp_5fchange',['CONFIGS_PER_CHAMP_CHANGE',['../namespaceVW_1_1reductions_1_1automl_1_1anonymous__namespace_02automl__impl_8h_03.html#a188287ce6238a095ef166ec53b377a30',1,'VW::reductions::automl::anonymous_namespace{automl_impl.h}']]],
   ['constant',['constant',['../constant_8h.html#a756519f5578552c555ce0353b3fa4fc6',1,'constant.h']]],
   ['constant_5fa',['CONSTANT_A',['../namespaceexploration.html#abaf668aa89adbccbf973ed7087229251',1,'exploration']]],
   ['constant_5fc',['CONSTANT_C',['../namespaceexploration.html#ab280cae4f247977e79c90ad5bc2c3053',1,'exploration']]],
