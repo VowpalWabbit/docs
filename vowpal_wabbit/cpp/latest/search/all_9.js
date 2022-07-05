@@ -27,7 +27,7 @@ var searchData=
   ['indices',['indices',['../structVW_1_1example__predict.html#ae3bcd81025e590305eb4aa9c50e24ad4',1,'VW::example_predict::indices()'],['../structfeatures.html#a148deefbc0193790ff4233441f532cc0',1,'features::indices()']]],
   ['indices_5fto_5fvalues_5fignore_5flast_5findex',['indices_to_values_ignore_last_index',['../namespaceINTERACTIONS.html#a39db93fa48415de36ea84148fbf16d06',1,'INTERACTIONS']]],
   ['indices_5fto_5fvalues_5fone_5fbased',['indices_to_values_one_based',['../namespaceINTERACTIONS.html#aa9fabd214e4e23e254d5fd239ed3189b',1,'INTERACTIONS']]],
-  ['info',['info',['../namespaceVW_1_1io.html#aaf6d3dfe9781b53c9fbc2908a8f0641cacaf9b6b99962bf5c2264824231d7a40c',1,'VW::io']]],
+  ['info',['info',['../structVW_1_1io_1_1logger.html#ae378d065bef397d50d408b100e8ba7c1',1,'VW::io::logger::info()'],['../namespaceVW_1_1io.html#aaf6d3dfe9781b53c9fbc2908a8f0641cacaf9b6b99962bf5c2264824231d7a40c',1,'VW::io::info()']]],
   ['init',['init',['../structContext.html#a7d531bf9eec9ed966fbf356552a93cce',1,'Context::init()'],['../structVWReaderHandler.html#a31bf5cfc6faa07125444fa5fc364e38a',1,'VWReaderHandler::init()'],['../structVW_1_1reductions_1_1cats_1_1cats__tree.html#a0e4a7276546de9d28a4a203f08189e03',1,'VW::reductions::cats::cats_tree::init()'],['../structVW_1_1reductions_1_1offset__tree_1_1offset__tree.html#a9b6b07aae9a78aa2f2db6d1444542aa0',1,'VW::reductions::offset_tree::offset_tree::init()']]],
   ['init_5fadf_5fdata',['init_adf_data',['../structVW_1_1reductions_1_1cbify__adf__data.html#a4478fd0ebcf3f76f8917bcc0f81e6463',1,'VW::reductions::cbify_adf_data']]],
   ['init_5fdriver',['init_driver',['../structVW_1_1LEARNER_1_1learner.html#afd03cc32129409392a5640dcc5e80e6a',1,'VW::LEARNER::learner']]],

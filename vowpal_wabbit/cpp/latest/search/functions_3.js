@@ -106,6 +106,7 @@ var searchData=
   ['cressieread_5fduals',['cressieread_duals',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#a18ce6897cfadb81e0295e5a4b9a678f3',1,'VW::distributionally_robust::ChiSquared']]],
   ['cressieread_5flower_5fbound',['cressieread_lower_bound',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#a6b65cfedcf8ba90501310b29ec83730a',1,'VW::distributionally_robust::ChiSquared']]],
   ['cressieread_5fupper_5fbound',['cressieread_upper_bound',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#af471418142cc607cab4372220686c086',1,'VW::distributionally_robust::ChiSquared']]],
+  ['critical',['critical',['../structVW_1_1io_1_1logger.html#ae1556fe633341a927e9cb4d57cc435e5',1,'VW::io::logger']]],
   ['cs_5factive_5fsetup',['cs_active_setup',['../namespaceVW_1_1reductions.html#ad0910e8a930ed35e60778eb01dd3ac8a',1,'VW::reductions']]],
   ['cs_5fldf_5flearn_5for_5fpredict',['cs_ldf_learn_or_predict',['../namespaceGEN__CS.html#ad02dcc827dd31ac16e8546c66bcdd042',1,'GEN_CS']]],
   ['cs_5fprep_5flabels',['cs_prep_labels',['../namespaceGEN__CS.html#a4a716c5192015558b0ca7ff53a962435',1,'GEN_CS']]],

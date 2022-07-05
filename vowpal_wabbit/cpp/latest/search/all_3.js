@@ -251,7 +251,7 @@ var searchData=
   ['cressieread_5fduals',['cressieread_duals',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#a18ce6897cfadb81e0295e5a4b9a678f3',1,'VW::distributionally_robust::ChiSquared']]],
   ['cressieread_5flower_5fbound',['cressieread_lower_bound',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#a6b65cfedcf8ba90501310b29ec83730a',1,'VW::distributionally_robust::ChiSquared']]],
   ['cressieread_5fupper_5fbound',['cressieread_upper_bound',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#af471418142cc607cab4372220686c086',1,'VW::distributionally_robust::ChiSquared']]],
-  ['critical',['critical',['../namespaceVW_1_1io.html#aaf6d3dfe9781b53c9fbc2908a8f0641ca7e85bcb66fb9a809d5ab4f62a8b8bea8',1,'VW::io']]],
+  ['critical',['critical',['../structVW_1_1io_1_1logger.html#ae1556fe633341a927e9cb4d57cc435e5',1,'VW::io::logger::critical()'],['../namespaceVW_1_1io.html#aaf6d3dfe9781b53c9fbc2908a8f0641ca7e85bcb66fb9a809d5ab4f62a8b8bea8',1,'VW::io::critical()']]],
   ['crossplat_5fcompat_2eh',['crossplat_compat.h',['../crossplat__compat_8h.html',1,'']]],
   ['cs',['cs',['../structVW_1_1polylabel.html#ae27d27fecee505f9b5ce0d253921676f',1,'VW::polylabel::cs()'],['../namespaceVW.html#adf253bc5d95217ce3aadf6e2421dafd2a95cc64dd2825f9df13ec4ad683ecf339',1,'VW::cs()']]],
   ['cs_5factive',['cs_active',['../structvw__dbg.html#a79efcf8fc3187c0d8e42730a419ed2a0',1,'vw_dbg']]],

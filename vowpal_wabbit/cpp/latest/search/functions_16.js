@@ -2,6 +2,7 @@ var searchData=
 [
   ['waitforsynchronization',['waitForSynchronization',['../classAllReduceSync.html#a16c5ea1af31dd85ca9b617da378d8bf1',1,'AllReduceSync']]],
   ['warm_5fcb_5fsetup',['warm_cb_setup',['../namespaceVW_1_1reductions.html#a922744f2d699bbfad1ff4691dbb40710',1,'VW::reductions']]],
+  ['warn',['warn',['../structVW_1_1io_1_1logger.html#a0f84bcd1bc6a7b8cc3a04a6ac9586e1b',1,'VW::io::logger']]],
   ['wclass',['wclass',['../structCOST__SENSITIVE_1_1wclass.html#ac914fb8aabd8555678a0211f644bba5e',1,'COST_SENSITIVE::wclass::wclass(float x, uint32_t class_index, float partial_prediction, float wap_value)'],['../structCOST__SENSITIVE_1_1wclass.html#a4e402a7d8db185c577b090893ba0a401',1,'COST_SENSITIVE::wclass::wclass()']]],
   ['weight_5fgen',['weight_gen',['../namespaceVW_1_1reductions_1_1bs.html#a788ac271be44833f91e133054ab76e17',1,'VW::reductions::bs']]],
   ['weighted_5fexamples',['weighted_examples',['../structshared__data.html#acea161d78c0bd3dab928b99268f46f9c',1,'shared_data']]],

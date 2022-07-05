@@ -28,7 +28,7 @@ var searchData=
   ['err_5ferror',['err_error',['../structVW_1_1io_1_1details_1_1logger__impl.html#a0f6ca7f491950ba86e989111ee343207',1,'VW::io::details::logger_impl::err_error()'],['../structVW_1_1io_1_1logger.html#ae8f54e8026a8cd82a6062df4236ebf08',1,'VW::io::logger::err_error()']]],
   ['err_5finfo',['err_info',['../structVW_1_1io_1_1details_1_1logger__impl.html#ace5f360fb835d29997f2cc94d8ac2602',1,'VW::io::details::logger_impl::err_info()'],['../structVW_1_1io_1_1logger.html#a9dddd95c103b1aec7a6fa72b984d9829',1,'VW::io::logger::err_info()']]],
   ['err_5fwarn',['err_warn',['../structVW_1_1io_1_1details_1_1logger__impl.html#a2930f839710d5af0c6a4f09139abb621',1,'VW::io::details::logger_impl::err_warn()'],['../structVW_1_1io_1_1logger.html#af2bad766a1400f5880d159777719c330',1,'VW::io::logger::err_warn()']]],
-  ['error',['error',['../structContext.html#aafced41f3e89369fbf1a02fce44cae5f',1,'Context::error()'],['../structVWReaderHandler.html#a530c57ae7488a6a1fb093e246916224f',1,'VWReaderHandler::error()']]],
+  ['error',['error',['../structContext.html#aafced41f3e89369fbf1a02fce44cae5f',1,'Context::error()'],['../structVWReaderHandler.html#a530c57ae7488a6a1fb093e246916224f',1,'VWReaderHandler::error()'],['../structVW_1_1io_1_1logger.html#abf6e310646f6ae5a2946f554995bf922',1,'VW::io::logger::error()']]],
   ['error_5fcode_5fdefinition',['ERROR_CODE_DEFINITION',['../error__data_8h.html#a4c40ddf91942f1e17537ef74ff4a57fa',1,'error_data.h']]],
   ['escaped_5ftokenize',['escaped_tokenize',['../parse__primitives_8h.html#ae5600a8846c21114564ebd52b6c5a953',1,'parse_primitives.h']]],
   ['eval_5fsum_5fft_5fsquared_5fof_5fgenerated_5fft',['eval_sum_ft_squared_of_generated_ft',['../namespaceINTERACTIONS.html#a248db354b89ae5091958a52b98dde09c',1,'INTERACTIONS']]],
