@@ -1,7 +1,6 @@
 var searchData=
 [
   ['_5fa',['_A',['../structVW_1_1cb__explore__adf_1_1cb__explore__adf__large__action__space.html#a840f671d51f78d662f89edb8f851ae8f',1,'VW::cb_explore_adf::cb_explore_adf_large_action_space']]],
-  ['_5fall_5fnormalized',['_all_normalized',['../structVW_1_1reductions_1_1automl_1_1automl.html#a8b2b1279073f15b2a72072462723a0db',1,'VW::reductions::automl::automl']]],
   ['_5fbacking_5fbuffer',['_backing_buffer',['../structVW_1_1details_1_1cache__temp__buffer.html#a6bc6741107af3702b3ded999ee6ce822',1,'VW::details::cache_temp_buffer']]],
   ['_5fcache_5ftemp_5fbuffer',['_cache_temp_buffer',['../structparser.html#afa8555ea9b1fe7fb9f00a9e0a9b185d1',1,'parser']]],
   ['_5fcb_5fadf_5faction_5fsum',['_cb_adf_action_sum',['../structVW_1_1reductions_1_1automl_1_1automl.html#ac5cdad8f2ed7f7fb0d72c001803c38d1',1,'VW::reductions::automl::automl']]],
@@ -15,6 +14,7 @@ var searchData=
   ['_5ffinal_5frun',['_final_run',['../classSearch_1_1BaseTask.html#a1789338f2860d67101b8ecbb694b18b7',1,'Search::BaseTask']]],
   ['_5fforeach_5faction',['_foreach_action',['../classSearch_1_1BaseTask.html#acb3dc8905bed89cd9f7b62879aa13260',1,'Search::BaseTask']]],
   ['_5ffunc',['_func',['../classVW_1_1io_1_1details_1_1function__ptr__sink.html#aff04887a3a4d03be4feaecf250f5be60',1,'VW::io::details::function_ptr_sink::_func()'],['../classVW_1_1io_1_1details_1_1function__ptr__legacy__sink.html#ac21d3f5e13f363d6c3164cdf15dcf969',1,'VW::io::details::function_ptr_legacy_sink::_func()']]],
+  ['_5fgd_5fnormalized',['_gd_normalized',['../structVW_1_1reductions_1_1automl_1_1automl.html#a63da50fde7c4fdc4707fdff1c3b139d1',1,'VW::reductions::automl::automl']]],
   ['_5fgd_5ftotal_5fweight',['_gd_total_weight',['../structVW_1_1reductions_1_1automl_1_1automl.html#a1edaf3d691f4296b198d7f9f94eddfe1',1,'VW::reductions::automl::automl']]],
   ['_5fgen_5fcs',['_gen_cs',['../structCB__ADF_1_1cb__adf.html#ad0a5ea60f7c61cd194de52973b560aa3',1,'CB_ADF::cb_adf']]],
   ['_5fgenerate_5finteractions_5fobject_5fcache',['_generate_interactions_object_cache',['../structVW_1_1workspace.html#abce3009065273c92c4bbfb49f313326e',1,'VW::workspace']]],

@@ -44,7 +44,7 @@ var searchData=
   ['total_5ffeatures',['total_features',['../structshared__data.html#aaedd51e57f247fce49e552319c267253',1,'shared_data']]],
   ['total_5flearn_5fcount',['total_learn_count',['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a79abf08aa1164f1ee0c582f1600efc35',1,'VW::reductions::automl::interaction_config_manager']]],
   ['total_5fsum_5ffeat_5fsq',['total_sum_feat_sq',['../structVW_1_1example.html#adc14c7160b5f0ec970ee0f3e47e24667',1,'VW::example::total_sum_feat_sq()'],['../structVW_1_1flat__example.html#a80f443ad7a865cfbaf6523f8115e4e9b',1,'VW::flat_example::total_sum_feat_sq()']]],
-  ['total_5fweight',['total_weight',['../structGD_1_1gd.html#a7977c3d3dee139e599e500f8483919d5',1,'GD::gd']]],
+  ['total_5fweight',['total_weight',['../structGD_1_1per__model__state.html#a8a5cba2c039a75b70d1641b57973d1d4',1,'GD::per_model_state']]],
   ['trace',['trace',['../namespaceVW_1_1io.html#aaf6d3dfe9781b53c9fbc2908a8f0641ca04a75036e9d520bb983c5ed03b8d0182',1,'VW::io']]],
   ['trace_5fmessage',['trace_message',['../structVW_1_1workspace.html#afc57cfdf63ebc3face3859e555b2ef7a',1,'VW::workspace']]],
   ['trace_5fmessage_5ft',['trace_message_t',['../error__reporting_8h.html#a98d6d6ac9c0371b98232d6c04df7ee99',1,'error_reporting.h']]],

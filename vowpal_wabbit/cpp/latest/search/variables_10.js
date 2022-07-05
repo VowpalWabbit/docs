@@ -18,6 +18,7 @@ var searchData=
   ['per_5ffeature_5fregularizer_5ftext',['per_feature_regularizer_text',['../structVW_1_1workspace.html#a58d47e80c1b51981b4202c8d770c63f8',1,'VW::workspace']]],
   ['per_5flive_5fmodel_5fstate_5fdouble',['per_live_model_state_double',['../structVW_1_1reductions_1_1automl_1_1automl.html#aea0626cac53fed25cd385677bae34875',1,'VW::reductions::automl::automl']]],
   ['per_5flive_5fmodel_5fstate_5fuint64',['per_live_model_state_uint64',['../structVW_1_1reductions_1_1automl_1_1automl.html#a0e4ed128b6bf4501ecc7b6ae6f10441d',1,'VW::reductions::automl::automl']]],
+  ['per_5fmodel_5fstates',['per_model_states',['../structGD_1_1gd.html#a60e4cf2572640ff9dd4ebf67d09922d0',1,'GD::gd']]],
   ['permutations',['permutations',['../structVW_1_1workspace.html#a06822d058953e626a9a8fda22074e168',1,'VW::workspace']]],
   ['pid_5ffile',['pid_file',['../structinput__options.html#a1a6cefc79283682f609257da002e0984',1,'input_options']]],
   ['port',['port',['../structinput__options.html#aa03a49a858b4a8182e7dc33ab39cbb0f',1,'input_options']]],
