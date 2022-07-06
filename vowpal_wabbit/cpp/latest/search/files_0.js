@@ -13,6 +13,6 @@ var searchData=
   ['autolink_2eh',['autolink.h',['../autolink_8h.html',1,'']]],
   ['automl_2eh',['automl.h',['../automl_8h.html',1,'']]],
   ['automl_5fimpl_2eh',['automl_impl.h',['../automl__impl_8h.html',1,'']]],
-  ['automl_5fiomodel_2eh',['automl_iomodel.h',['../automl_2automl__iomodel_8h.html',1,'(Global Namespace)'],['../automl__iomodel_8h.html',1,'(Global Namespace)']]],
+  ['automl_5fiomodel_2eh',['automl_iomodel.h',['../automl__iomodel_8h.html',1,'']]],
   ['automl_5futil_2eh',['automl_util.h',['../automl__util_8h.html',1,'']]]
 ];

@@ -18,7 +18,6 @@ var searchData=
   ['scope_5fexit_5fcaller',['scope_exit_caller',['../classVW_1_1details_1_1scope__exit__caller.html#adbdd65155d1fd230c6cdb901d0c7a7cd',1,'VW::details::scope_exit_caller::scope_exit_caller(TScopeExitLambda &amp;&amp;lambda) noexcept'],['../classVW_1_1details_1_1scope__exit__caller.html#a21514c50346968d8c8937ecb415f66b0',1,'VW::details::scope_exit_caller::scope_exit_caller(const scope_exit_caller &amp;)=delete'],['../classVW_1_1details_1_1scope__exit__caller.html#a2e5f511d6bc15121d63cfd45ab83f0e1',1,'VW::details::scope_exit_caller::scope_exit_caller(scope_exit_caller &amp;&amp;other) noexcept']]],
   ['scoped_5fcalloc_5for_5fthrow',['scoped_calloc_or_throw',['../memory_8h.html#a3af35e76b34d133a833f0510be29a35d',1,'memory.h']]],
   ['score_5fiterator',['score_iterator',['../classACTION__SCORE_1_1score__iterator.html#a10fbcf6f0c3748f86a1df809fbc1e2ff',1,'ACTION_SCORE::score_iterator']]],
-  ['scored_5fconfig',['scored_config',['../structVW_1_1scored__config.html#a97f4b7c4a4cb0342bca75c9db5783162',1,'VW::scored_config::scored_config()'],['../structVW_1_1scored__config.html#ac5605fccaa38bbecbef7d6fff491384a',1,'VW::scored_config::scored_config(double alpha, double tau)']]],
   ['scorer_5fsetup',['scorer_setup',['../namespaceVW_1_1reductions.html#a45b22144d5d541e8ff3abda551832ca9',1,'VW::reductions']]],
   ['search',['search',['../structSearch_1_1search.html#a43f210a82e87d89f35b5e2b4464172a7',1,'Search::search']]],
   ['search_5fsetup',['search_setup',['../namespaceVW_1_1reductions.html#a2d41dda85fe129154ae28eeb8a772d20',1,'VW::reductions']]],

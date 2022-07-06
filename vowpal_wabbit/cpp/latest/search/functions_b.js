@@ -21,7 +21,7 @@ var searchData=
   ['log_5fsummary',['log_summary',['../structVW_1_1io_1_1logger.html#ac047f70212d20d729cbc8f22848f5f64',1,'VW::io::logger']]],
   ['logger_5fimpl',['logger_impl',['../structVW_1_1io_1_1details_1_1logger__impl.html#adb547ae3f6a6957be5a04776d355ea45',1,'VW::io::details::logger_impl']]],
   ['loss',['loss',['../structSearch_1_1search.html#ac043f03704a4b004290936cb1dc6822f',1,'Search::search']]],
-  ['lower_5fbound',['lower_bound',['../structVW_1_1scored__config.html#a24fccb286fcd57d3f8f2fd1635abb6a9',1,'VW::scored_config']]],
+  ['lower_5fbound',['lower_bound',['../structVW_1_1estimator__config.html#a19231665bf606ffd7e8826f1b17ccf67',1,'VW::estimator_config']]],
   ['lower_5fbound_5fand_5fupdate',['lower_bound_and_update',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#a34f99bbca8ad8353401e83ced30b9fd3',1,'VW::distributionally_robust::ChiSquared']]],
   ['lrq_5fsetup',['lrq_setup',['../namespaceVW_1_1reductions.html#ae0df6b90749e31a4d416b7ba9cdda7cf',1,'VW::reductions']]],
   ['lrqfa_5fsetup',['lrqfa_setup',['../namespaceVW_1_1reductions.html#a6a2b2f71136489347e923f7868ea76db',1,'VW::reductions']]]

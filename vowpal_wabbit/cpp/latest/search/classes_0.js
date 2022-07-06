@@ -7,7 +7,7 @@ var searchData=
   ['allreducesockets',['AllReduceSockets',['../classAllReduceSockets.html',1,'']]],
   ['allreducesync',['AllReduceSync',['../classAllReduceSync.html',1,'']]],
   ['allreducethreads',['AllReduceThreads',['../classAllReduceThreads.html',1,'']]],
-  ['aml_5fscore',['aml_score',['../structVW_1_1reductions_1_1automl_1_1aml__score.html',1,'VW::reductions::automl']]],
+  ['aml_5festimator',['aml_estimator',['../structVW_1_1reductions_1_1automl_1_1aml__estimator.html',1,'VW::reductions::automl']]],
   ['api_5fstatus',['api_status',['../classVW_1_1experimental_1_1api__status.html',1,'VW::experimental']]],
   ['arraystate',['ArrayState',['../classArrayState.html',1,'']]],
   ['arraytopdfstate',['ArrayToPdfState',['../classArrayToPdfState.html',1,'']]],

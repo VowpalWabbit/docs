@@ -20,9 +20,9 @@ var searchData=
   ['unique_5fsort_5ffeatures',['unique_sort_features',['../unique__sort_8h.html#a5875203dd35e4df264ff446382de313e',1,'unique_sort.h']]],
   ['unknown_5fs',['unknown_s',['../namespaceVW_1_1experimental_1_1error__code.html#a91f4888701cac87d262a46e6bfb5ebae',1,'VW::experimental::error_code']]],
   ['unset',['unset',['../namespaceCCB.html#a58ee4b1ece77de222418e9eb75203cf5ae2181b5014a67159cc230c8fe0d6c5b6',1,'CCB::unset()'],['../namespaceVW_1_1slates.html#a894cb7b1b775c40313bbb5e1c4b48a50ae2181b5014a67159cc230c8fe0d6c5b6',1,'VW::slates::unset()']]],
-  ['update',['update',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#a94e981844ac9c0bdaa6d4bde9a61d894',1,'VW::distributionally_robust::ChiSquared::update()'],['../structVW_1_1LEARNER_1_1learner.html#af994d66959b825bc3b92af991529c7e6',1,'VW::LEARNER::learner::update()'],['../structVW_1_1scored__config.html#ae4d8726062ffc45b6f6f7b71f418b3d4',1,'VW::scored_config::update()'],['../structshared__data.html#ad3b0fc9176c689eb63bf255499223c62',1,'shared_data::update()']]],
+  ['update',['update',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#a94e981844ac9c0bdaa6d4bde9a61d894',1,'VW::distributionally_robust::ChiSquared::update()'],['../structVW_1_1estimator__config.html#a8d6fb9dd2552361500daee14c27e1b62',1,'VW::estimator_config::update()'],['../structVW_1_1LEARNER_1_1learner.html#af994d66959b825bc3b92af991529c7e6',1,'VW::LEARNER::learner::update()'],['../structshared__data.html#ad3b0fc9176c689eb63bf255499223c62',1,'shared_data::update()']]],
   ['update_5fchamp',['update_champ',['../structVW_1_1reductions_1_1automl_1_1config__manager.html#a965bb06fd2456ea45ff7b8f3ed31e482',1,'VW::reductions::automl::config_manager::update_champ()'],['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#aaf52e448d97b6b0f366585189935e647',1,'VW::reductions::automl::interaction_config_manager::update_champ()']]],
-  ['update_5fcount',['update_count',['../structVW_1_1scored__config.html#aa516d7719993364b78d706803a4042a3',1,'VW::scored_config']]],
+  ['update_5fcount',['update_count',['../structVW_1_1estimator__config.html#a86702caa083e455e4f403c197c2e2b72',1,'VW::estimator_config']]],
   ['update_5fdump_5finterval',['update_dump_interval',['../structshared__data.html#a86dc26ad7249ba38f03f8a2c6f315f37',1,'shared_data']]],
   ['update_5fextent_5finteractions_5fif_5fnew_5fnamespace_5fseen',['update_extent_interactions_if_new_namespace_seen',['../structINTERACTIONS_1_1interactions__generator.html#ab17bcc0b4ddfb903a6595ce3024cf886',1,'INTERACTIONS::interactions_generator']]],
   ['update_5ff',['update_f',['../structVW_1_1LEARNER_1_1details_1_1learn__data.html#a925c6335bd811bf24016ad9f5e6bc373',1,'VW::LEARNER::details::learn_data']]],
@@ -31,5 +31,5 @@ var searchData=
   ['update_5fstatistics',['update_statistics',['../structCB__ADF_1_1cb__adf.html#a911635753a7f008770499af7efae7847',1,'CB_ADF::cb_adf']]],
   ['update_5fweights',['update_weights',['../structVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#ac4f097e4a70663a72f8ed2434d7388ce',1,'VW::reductions::epsilon_decay::epsilon_decay_data']]],
   ['updated_5fprediction',['updated_prediction',['../structVW_1_1example.html#aa8000eb1844bf87ad4eaffed342f6206',1,'VW::example']]],
-  ['upper_5fbound',['upper_bound',['../structVW_1_1scored__config.html#a0f7699ea313ea40dcbb8ff3769530109',1,'VW::scored_config']]]
+  ['upper_5fbound',['upper_bound',['../structVW_1_1estimator__config.html#a929b97d18a33d9ae84027c3c28a50f24',1,'VW::estimator_config']]]
 ];

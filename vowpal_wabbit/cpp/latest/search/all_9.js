@@ -2,7 +2,7 @@ var searchData=
 [
   ['i',['i',['../unionexploration_1_1int__float.html#ad2bc6c4c956bde873b30883f1e1f73d3',1,'exploration::int_float']]],
   ['id',['id',['../structVW_1_1workspace.html#a1a5991719de1f9ac2db1d7f77a46e531',1,'VW::workspace::id()'],['../structVW_1_1reductions_1_1cats_1_1tree__node.html#a144b411b84491fef71c98112ecc70bb2',1,'VW::reductions::cats::tree_node::id()'],['../structVW_1_1reductions_1_1offset__tree_1_1tree__node.html#a1d865acba63cb90467b31604862fcc86',1,'VW::reductions::offset_tree::tree_node::id()']]],
-  ['ignore',['Ignore',['../classDefaultState.html#a0b4a49d922219a5b71926061b304ea21',1,'DefaultState::Ignore()'],['../structVW_1_1workspace.html#aba2139155728faa7aa46b66f3365d1f7',1,'VW::workspace::ignore()']]],
+  ['ignore',['ignore',['../structVW_1_1workspace.html#aba2139155728faa7aa46b66f3365d1f7',1,'VW::workspace::ignore()'],['../classDefaultState.html#a0b4a49d922219a5b71926061b304ea21',1,'DefaultState::Ignore()']]],
   ['ignore_5ffeatures',['ignore_features',['../structContext.html#a1e5aab30ccbabcd191378b8af21b8189',1,'Context']]],
   ['ignore_5ffeatures_5fdsjson',['ignore_features_dsjson',['../structVW_1_1workspace.html#af2bf617f88d6bd4081d2a2dbdbfaa12e',1,'VW::workspace']]],
   ['ignore_5flinear',['ignore_linear',['../structVW_1_1workspace.html#aadd1a2ddcd8c5a0a35c53b582cd0059c',1,'VW::workspace']]],
@@ -82,7 +82,7 @@ var searchData=
   ['io_5fadapter_2eh',['io_adapter.h',['../io__adapter_8h.html',1,'']]],
   ['io_5fbuf',['io_buf',['../classio__buf.html',1,'io_buf'],['../classio__buf.html#ae01bc5dd5cd7128faeff147ce34a1f36',1,'io_buf::io_buf()'],['../classio__buf.html#a0665faf40e41d643fc3aeda6915d7d9b',1,'io_buf::io_buf(io_buf &amp;other)=delete'],['../classio__buf.html#a05183ca2d42844f8e55a3e3334eba4fa',1,'io_buf::io_buf(io_buf &amp;&amp;other)=delete']]],
   ['io_5fbuf_2eh',['io_buf.h',['../io__buf_8h.html',1,'']]],
-  ['ips',['ips',['../structVW_1_1scored__config.html#ae8b16dca60656801855dfe0e29710eb5',1,'VW::scored_config::ips()'],['../namespaceVW.html#afc6602380e780c653a55bf44b6e5c881ade56be8fa19339d679efa6232455f342',1,'VW::ips()']]],
+  ['ips',['ips',['../structVW_1_1estimator__config.html#a584c17cbda8e9706de459d4aa56162b7',1,'VW::estimator_config::ips()'],['../namespaceVW.html#afc6602380e780c653a55bf44b6e5c881ade56be8fa19339d679efa6232455f342',1,'VW::ips()']]],
   ['is_5fcb_5fexplore_5fadf',['is_cb_explore_adf',['../classvw__slim_1_1vw__predict.html#a181a3da2b958c2bd94e89216f238758b',1,'vw_slim::vw_predict']]],
   ['is_5fccb_5finput_5fmodel',['is_ccb_input_model',['../structVW_1_1workspace.html#ab1739c8984ecdde64051dd1c815bcf61',1,'VW::workspace']]],
   ['is_5fchosen_5faction_5fset',['is_chosen_action_set',['../structVW_1_1continuous__actions_1_1reduction__features.html#a58f2153341949015b5c607ab1367af19',1,'VW::continuous_actions::reduction_features']]],
