@@ -38,6 +38,7 @@ var searchData=
   ['vw_5fgetactionscore',['VW_GetActionScore',['../vwdll_8h.html#a83da7b881eb1f5e8dc2a7ab2e6356ea1',1,'vwdll.h']]],
   ['vw_5fgetactionscorelength',['VW_GetActionScoreLength',['../vwdll_8h.html#a783dcf57cfd4c0db3c53ea6971223293',1,'vwdll.h']]],
   ['vw_5fgetauditdataa',['VW_GetAuditDataA',['../vwdll_8h.html#af4db8cbbf9473996d9824c596a383eaf',1,'vwdll.h']]],
+  ['vw_5fgetcatsactionpdfvalueprediction',['VW_GetCatsActionPdfValuePrediction',['../vwdll_8h.html#a8d6706703147180fad3308ef433a006c',1,'vwdll.h']]],
   ['vw_5fgetconfidence',['VW_GetConfidence',['../vwdll_8h.html#a60f5f4a6bfeaa877df6ba5751486a3ed',1,'vwdll.h']]],
   ['vw_5fgetcostsensitiveprediction',['VW_GetCostSensitivePrediction',['../vwdll_8h.html#a90c2614e6ff778ad6ae99c36361709a3',1,'vwdll.h']]],
   ['vw_5fgetexample',['VW_GetExample',['../vwdll_8h.html#ad722bc85beaf337b9a49a62a28940d39',1,'vwdll.h']]],
