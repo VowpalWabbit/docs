@@ -33,6 +33,7 @@ var searchData=
   ['_5fmax_5flimit',['_max_limit',['../structVW_1_1io_1_1details_1_1logger__impl.html#a537d6f00b481b7a3bf8ca361829fc661',1,'VW::io::details::logger_impl']]],
   ['_5fmax_5fseen_5flabel',['_max_seen_label',['../structVW_1_1reductions_1_1active.html#afc9c2511594af4dcd42a1281fbd75622',1,'VW::reductions::active']]],
   ['_5fmaybe_5foverride_5fprediction',['_maybe_override_prediction',['../classSearch_1_1BaseTask.html#a4d7e476f06a5d561b800cef4e5243727',1,'Search::BaseTask']]],
+  ['_5fmin_5fchamp_5fexamples',['_min_champ_examples',['../structVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#afcbd9a719702695d7b821c7781a01e63',1,'VW::reductions::epsilon_decay::epsilon_decay_data']]],
   ['_5fmin_5fscope',['_min_scope',['../structVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#a08ba80890e119456a72b0eb2781639c7',1,'VW::reductions::epsilon_decay::epsilon_decay_data']]],
   ['_5fmin_5fseen_5flabel',['_min_seen_label',['../structVW_1_1reductions_1_1active.html#aafed704f5f51a86712bbc84066609460',1,'VW::reductions::active']]],
   ['_5fmodel_5fversion',['_model_version',['../structVW_1_1reductions_1_1active.html#a4ad13d2442a681a9f12c46018f446e95',1,'VW::reductions::active']]],
