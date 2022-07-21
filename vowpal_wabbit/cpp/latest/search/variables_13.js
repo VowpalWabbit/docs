@@ -11,7 +11,7 @@ var searchData=
   ['scalars',['scalars',['../structVW_1_1polyprediction.html#a747649473c5af007406655b468bdb441',1,'VW::polyprediction']]],
   ['sch',['sch',['../classSearch_1_1BaseTask.html#a011d890a114aab7249e05018e476dc89',1,'Search::BaseTask']]],
   ['score',['score',['../structACTION__SCORE_1_1action__score.html#ad27ff92133e2effa2d6dfefe415b2db4',1,'ACTION_SCORE::action_score']]],
-  ['scorer',['scorer',['../structvw__dbg.html#a2249c9941952aee72dfd1fd1721ef163',1,'vw_dbg::scorer()'],['../structGEN__CS_1_1cb__to__cs.html#a1552d1d20ae26af989db7c160e288469',1,'GEN_CS::cb_to_cs::scorer()'],['../structGEN__CS_1_1cb__to__cs__adf.html#af04d1d44d5e5bc301a8d1d0fd61bb967',1,'GEN_CS::cb_to_cs_adf::scorer()'],['../structVW_1_1workspace.html#ab28290778c209624829b8a4c44d2eb29',1,'VW::workspace::scorer()']]],
+  ['scorer',['scorer',['../structvw__dbg.html#a2249c9941952aee72dfd1fd1721ef163',1,'vw_dbg::scorer()'],['../structGEN__CS_1_1cb__to__cs.html#a1552d1d20ae26af989db7c160e288469',1,'GEN_CS::cb_to_cs::scorer()'],['../structGEN__CS_1_1cb__to__cs__adf.html#af04d1d44d5e5bc301a8d1d0fd61bb967',1,'GEN_CS::cb_to_cs_adf::scorer()']]],
   ['sd',['sd',['../structVW_1_1workspace.html#aa3976f0cce4f766bf158839f19cbb350',1,'VW::workspace']]],
   ['search',['search',['../structvw__dbg.html#a714718400f44bb859325eee0b25ce79f',1,'vw_dbg']]],
   ['searchstr',['searchstr',['../structVW_1_1workspace.html#a0a487f35b64f40c6b1ff3c33fcdc2d01',1,'VW::workspace']]],

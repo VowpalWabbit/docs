@@ -35,7 +35,7 @@ var searchData=
   ['score',['score',['../structACTION__SCORE_1_1action__score.html#ad27ff92133e2effa2d6dfefe415b2db4',1,'ACTION_SCORE::action_score']]],
   ['score_5fiterator',['score_iterator',['../classACTION__SCORE_1_1score__iterator.html',1,'ACTION_SCORE::score_iterator'],['../classACTION__SCORE_1_1score__iterator.html#a10fbcf6f0c3748f86a1df809fbc1e2ff',1,'ACTION_SCORE::score_iterator::score_iterator()']]],
   ['scoreddual',['ScoredDual',['../namespaceVW_1_1distributionally__robust.html#a111de10eda4865240b6d93ccb4b51052',1,'VW::distributionally_robust']]],
-  ['scorer',['scorer',['../structvw__dbg.html#a2249c9941952aee72dfd1fd1721ef163',1,'vw_dbg::scorer()'],['../structGEN__CS_1_1cb__to__cs.html#a1552d1d20ae26af989db7c160e288469',1,'GEN_CS::cb_to_cs::scorer()'],['../structGEN__CS_1_1cb__to__cs__adf.html#af04d1d44d5e5bc301a8d1d0fd61bb967',1,'GEN_CS::cb_to_cs_adf::scorer()'],['../structVW_1_1workspace.html#ab28290778c209624829b8a4c44d2eb29',1,'VW::workspace::scorer()']]],
+  ['scorer',['scorer',['../structvw__dbg.html#a2249c9941952aee72dfd1fd1721ef163',1,'vw_dbg::scorer()'],['../structGEN__CS_1_1cb__to__cs.html#a1552d1d20ae26af989db7c160e288469',1,'GEN_CS::cb_to_cs::scorer()'],['../structGEN__CS_1_1cb__to__cs__adf.html#af04d1d44d5e5bc301a8d1d0fd61bb967',1,'GEN_CS::cb_to_cs_adf::scorer()']]],
   ['scorer_2eh',['scorer.h',['../scorer_8h.html',1,'']]],
   ['scorer_5fsetup',['scorer_setup',['../namespaceVW_1_1reductions.html#a45b22144d5d541e8ff3abda551832ca9',1,'VW::reductions']]],
   ['scores_5ft',['scores_t',['../structVW_1_1reductions_1_1offset__tree_1_1offset__tree.html#a79ae9c20d2265a9ce0d78621829d4203',1,'VW::reductions::offset_tree::offset_tree']]],
