@@ -2,6 +2,7 @@ var searchData=
 [
   ['a_5fs',['a_s',['../structVW_1_1polyprediction.html#abe21cff15e4830948ac50169a25a4c58',1,'VW::polyprediction']]],
   ['a_5fs_5fpred_5fto_5fstring',['a_s_pred_to_string',['../namespaceVW_1_1debug.html#ac1f41e063747ffaa76c8391743574b7a',1,'VW::debug']]],
+  ['aatop',['AAtop',['../structVW_1_1cb__explore__adf_1_1cb__explore__adf__large__action__space.html#ad6ec5ef5af66a3709c5e3c4f8b08a1e4',1,'VW::cb_explore_adf::cb_explore_adf_large_action_space']]],
   ['accept',['accept',['../structVW_1_1config_1_1base__option.html#a2cb0de0f2a79dc79491e513f45544c21',1,'VW::config::base_option::accept()'],['../structVW_1_1config_1_1typed__option.html#a194138ce24ea698b2683219ea45a4d89',1,'VW::config::typed_option::accept()']]],
   ['accumulate',['accumulate',['../accumulate_8h.html#a9c81db5bfb143b1ee5cbaf3fd2ba16bb',1,'accumulate.h']]],
   ['accumulate_2eh',['accumulate.h',['../accumulate_8h.html',1,'']]],
