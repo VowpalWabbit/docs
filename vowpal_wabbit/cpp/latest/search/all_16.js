@@ -63,6 +63,7 @@ var searchData=
   ['values_5fabove_5fand_5fincluding_5fzero',['VALUES_ABOVE_AND_INCLUDING_ZERO',['../namespaceVW_1_1details.html#a68e7a75400178beccf8b637920c81ca5',1,'VW::details']]],
   ['values_5fabove_5fzero',['VALUES_ABOVE_ZERO',['../namespaceVW_1_1details.html#adb1e84d42c34af5804f2f7266b4e0ef3',1,'VW::details']]],
   ['values_5fbelow_5fzero',['VALUES_BELOW_ZERO',['../namespaceVW_1_1details.html#a1850458f654ac1db570f37d2bd0235a2',1,'VW::details']]],
+  ['vanilla_5frand_5fsvd',['vanilla_rand_svd',['../namespaceVW_1_1cb__explore__adf.html#a4e25b8145f7bcb713488fca5bb5ac62fab3169f4e80288744509df53911a1d1e9',1,'VW::cb_explore_adf']]],
   ['vec_5fadd',['vec_add',['../namespaceGD.html#ae6fd589c071ed3a52da36fc819e7d224',1,'GD']]],
   ['vec_5fadd_5fmultipredict',['vec_add_multipredict',['../namespaceGD.html#a233e8417eefdbbe50584f4e9cb7dee87',1,'GD']]],
   ['vector_5fpool',['vector_pool',['../namespaceVW.html#ae39ca8662fac3c3327f8a94b6dbc0b14',1,'VW']]],

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['wrap_5ftype',['wrap_type',['../namespaceVW.html#a2df9a38d00dfa94b1694b2a6d8a7f225',1,'VW']]]
+  ['vw_5fpredict_5fexploration',['vw_predict_exploration',['../namespacevw__slim.html#a8b7398db5b92b2538fdd8e6593b746b3',1,'vw_slim']]]
 ];

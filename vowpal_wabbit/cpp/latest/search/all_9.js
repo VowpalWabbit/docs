@@ -10,6 +10,7 @@ var searchData=
   ['ignore_5fsome_5flinear',['ignore_some_linear',['../structVW_1_1workspace.html#a46f34e6768ebc227f54ae9ca817a5160',1,'VW::workspace']]],
   ['ignore_5fstate',['ignore_state',['../structContext.html#aefdc82512c706a86bb7785b81337ae8b',1,'Context']]],
   ['ignorestate',['IgnoreState',['../structIgnoreState.html',1,'IgnoreState&lt; audit &gt;'],['../structIgnoreState.html#a892ac9be3ae919960e4b58e4429df82b',1,'IgnoreState::IgnoreState()']]],
+  ['implementation_5ftype',['implementation_type',['../namespaceVW_1_1cb__explore__adf.html#a4e25b8145f7bcb713488fca5bb5ac62f',1,'VW::cb_explore_adf']]],
   ['import_5fexample',['import_example',['../namespaceVW.html#a1f4629d13bf8b26ee185f7e7c925c27d',1,'VW']]],
   ['in_5fpass_5fcounter',['in_pass_counter',['../structparser.html#a53510d464dc58fc86bce92c68a07a6b8',1,'parser']]],
   ['in_5fprocess_5fframes',['in_process_frames',['../structINTERACTIONS_1_1generate__interactions__object__cache.html#a1cca13f980633bfd603cd13296ec0b8c',1,'INTERACTIONS::generate_interactions_object_cache']]],

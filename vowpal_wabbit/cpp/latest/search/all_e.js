@@ -53,6 +53,7 @@ var searchData=
   ['noop_5fsensitivity_5fbase',['noop_sensitivity_base',['../namespaceVW_1_1LEARNER_1_1details.html#a2a3ed0c6688b367192d52cc5191556e6',1,'VW::LEARNER::details']]],
   ['noop_5fsetup',['noop_setup',['../namespaceVW_1_1reductions.html#a2ec8ed7d06f967f9c6156215863e47d5',1,'VW::reductions']]],
   ['nopred',['nopred',['../structVW_1_1polyprediction.html#aea73eaac29389ff1538e83401fb135b7',1,'VW::polyprediction::nopred()'],['../namespaceVW.html#a4f76045a06b3efe3c5c612b777b6c836a09eb1413668687809928cc79f86e2886',1,'VW::nopred()']]],
+  ['norm_5fthreshold',['NORM_THRESHOLD',['../namespaceVW.html#acd131031ecce56614c90f61159eed290',1,'VW']]],
   ['normal_5fweights',['normal_weights',['../structVW_1_1workspace.html#a890f8994b7d12fbbe4fff83501e12e9a',1,'VW::workspace']]],
   ['normalized',['normalized',['../classparameters.html#a151823ac932181e2ec63a13461bacc17',1,'parameters']]],
   ['normalized_5fidx',['normalized_idx',['../structVW_1_1workspace.html#a23ee88f7ef030182ec255a7a9008de13',1,'VW::workspace']]],

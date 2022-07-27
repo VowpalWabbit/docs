@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['aatop',['aatop',['../namespaceVW_1_1cb__explore__adf.html#a4e25b8145f7bcb713488fca5bb5ac62fa49acdc8d09bf60cff0987a7461ca2eff',1,'VW::cb_explore_adf']]],
   ['action',['action',['../namespaceCCB.html#a58ee4b1ece77de222418e9eb75203cf5a418c5509e2171d55b0aee5c2ea4442b5',1,'CCB::action()'],['../namespaceVW_1_1slates.html#a894cb7b1b775c40313bbb5e1c4b48a50a418c5509e2171d55b0aee5c2ea4442b5',1,'VW::slates::action()']]],
   ['action_5fpdf_5fvalue',['action_pdf_value',['../namespaceVW.html#a4f76045a06b3efe3c5c612b777b6c836a4a0b76be67ec342548cde44e9d897849',1,'VW']]],
   ['action_5fprobs',['action_probs',['../namespaceVW.html#a4f76045a06b3efe3c5c612b777b6c836aa78dde72b6338b01742027024d34eca6',1,'VW']]],

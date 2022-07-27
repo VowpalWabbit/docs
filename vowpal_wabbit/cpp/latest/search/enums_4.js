@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['output_5flocation',['output_location',['../namespaceVW_1_1io.html#ac0bb552479e3284943bb50d27084d074',1,'VW::io']]]
+  ['label_5ftype_5ft',['label_type_t',['../namespaceVW.html#adf253bc5d95217ce3aadf6e2421dafd2',1,'VW']]],
+  ['log_5flevel',['log_level',['../namespaceVW_1_1io.html#aaf6d3dfe9781b53c9fbc2908a8f0641c',1,'VW::io']]]
 ];
