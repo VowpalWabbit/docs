@@ -20,6 +20,7 @@ var searchData=
   ['mf_5fsetup',['mf_setup',['../namespaceVW_1_1reductions.html#af0da44d62d4ee75d60c36f7a988d3b62',1,'VW::reductions']]],
   ['might_5finsert',['might_insert',['../classBeam_1_1beam.html#a27a76654671cb98e49e203f38097df57',1,'Beam::beam']]],
   ['model_5fparser',['model_parser',['../classvw__slim_1_1model__parser.html#a60531cc8473aa75a7be9a324f35f6d88',1,'vw_slim::model_parser']]],
+  ['model_5fweight_5frand_5fsvd_5fimpl',['model_weight_rand_svd_impl',['../structVW_1_1cb__explore__adf_1_1cb__explore__adf__large__action__space.html#a11951299218b5dcbdcd567a24e3d1ddd',1,'VW::cb_explore_adf::cb_explore_adf_large_action_space']]],
   ['move_5ffeature_5fnamespace',['move_feature_namespace',['../namespaceVW.html#ab9e00af55935c42d32d1c2c5c244150e',1,'VW']]],
   ['move_5foffsets',['move_offsets',['../classdense__parameters.html#a0809b7f606ffd6681d2ef69b34fd1472',1,'dense_parameters']]],
   ['moved_5fobject_5fpool',['moved_object_pool',['../structVW_1_1moved__object__pool.html#a576da638798a649601d6c423a497a998',1,'VW::moved_object_pool']]],
