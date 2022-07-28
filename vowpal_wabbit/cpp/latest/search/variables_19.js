@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['y',['Y',['../structVW_1_1cb__explore__adf_1_1cb__explore__adf__large__action__space.html#af7a553ba95e43bf04f72e0ed9bd0f8a1',1,'VW::cb_explore_adf::cb_explore_adf_large_action_space']]]
+  ['y',['Y',['../structVW_1_1cb__explore__adf_1_1vanilla__rand__svd__impl.html#a429ed118a9147157212041d7326f1af9',1,'VW::cb_explore_adf::vanilla_rand_svd_impl::Y()'],['../structVW_1_1cb__explore__adf_1_1model__weight__rand__svd__impl.html#a6fd29fbe9b93cb2974d3ebf5fddc338e',1,'VW::cb_explore_adf::model_weight_rand_svd_impl::Y()']]]
 ];

@@ -35,7 +35,7 @@ var searchData=
   ['finalize_5fprediction',['finalize_prediction',['../namespaceGD.html#af34189c40871355c25fe36e2bdb79298',1,'GD']]],
   ['finalize_5fregressor',['finalize_regressor',['../parse__regressor_8h.html#a847c36648cd5a5a869497c6dc392f20e',1,'parse_regressor.h']]],
   ['finalname',['finalname',['../structparser.html#a5a8f056721273d58c5032b0494b4ae8c',1,'parser']]],
-  ['find_5fmax_5fvolume',['find_max_volume',['../structVW_1_1cb__explore__adf_1_1cb__explore__adf__large__action__space.html#ab33f78cb72ed594162bf237a90289d5d',1,'VW::cb_explore_adf::cb_explore_adf_large_action_space']]],
+  ['find_5fmax_5fvolume',['find_max_volume',['../structVW_1_1cb__explore__adf_1_1spanner__state.html#aa8b97e59111453eefca097bcd3672b0c',1,'VW::cb_explore_adf::spanner_state']]],
   ['find_5fopt',['find_opt',['../namespacevw__slim.html#a8157ee4f6e1d28024851aea42a48c8ff',1,'vw_slim::find_opt(std::string const &amp;command_line_args, std::string arg_name, std::vector&lt; T &gt; &amp;out_values)'],['../namespacevw__slim.html#aa2d959254412f3cc457c4da0bbd6efba',1,'vw_slim::find_opt(std::string const &amp;command_line_args, std::string arg_name)']]],
   ['find_5fopt_5ffloat',['find_opt_float',['../namespacevw__slim.html#a5811fae22ec0911241e0ff7c272934cd',1,'vw_slim']]],
   ['find_5fopt_5fint',['find_opt_int',['../namespacevw__slim.html#ad897b76fbe2d1c96675f63286ba06fb5',1,'vw_slim']]],
