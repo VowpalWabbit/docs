@@ -15,6 +15,8 @@ var searchData=
   ['oja_5fnewton_5fsetup',['oja_newton_setup',['../namespaceVW_1_1reductions.html#a95d6df1b7e548d958a2f0743e9f8ad2c',1,'VW::reductions']]],
   ['old_5fweighted_5flabeled_5fexamples',['old_weighted_labeled_examples',['../structshared__data.html#a22c93bc868692a1f3dbb5cc24ec1fa3a',1,'shared_data']]],
   ['one_5fof',['one_of',['../structVW_1_1config_1_1typed__option.html#ab41fb1c9ab27f46f362e6ab05710e58c',1,'VW::config::typed_option::one_of()'],['../structVW_1_1config_1_1option__builder.html#a460eacfd4e574dfce5bd815c923ce136',1,'VW::config::option_builder::one_of()']]],
+  ['one_5fpass_5fsvd',['one_pass_svd',['../namespaceVW_1_1cb__explore__adf.html#a4e25b8145f7bcb713488fca5bb5ac62faad88127daf97428a7f95444b0ef7fe90',1,'VW::cb_explore_adf']]],
+  ['one_5fpass_5fsvd_5fimpl',['one_pass_svd_impl',['../structVW_1_1cb__explore__adf_1_1one__pass__svd__impl.html',1,'VW::cb_explore_adf::one_pass_svd_impl'],['../structVW_1_1cb__explore__adf_1_1one__pass__svd__impl.html#acfab0de8e1c9853e471f756f9be2a761',1,'VW::cb_explore_adf::one_pass_svd_impl::one_pass_svd_impl()']]],
   ['one_5fstep',['one_step',['../structVW_1_1reductions_1_1automl_1_1automl.html#a8660040322c8f4c862625ee5a2ab448f',1,'VW::reductions::automl::automl']]],
   ['open_5fcompressed_5ffile_5freader',['open_compressed_file_reader',['../namespaceVW_1_1io.html#ae3d15f5cdf1ed5c88af05c93cdb7fd77',1,'VW::io']]],
   ['open_5fcompressed_5ffile_5fwriter',['open_compressed_file_writer',['../namespaceVW_1_1io.html#a6f3214e25b032ee68eec48ee13b0a7ab',1,'VW::io']]],
