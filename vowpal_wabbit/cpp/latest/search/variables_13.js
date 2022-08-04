@@ -23,6 +23,7 @@ var searchData=
   ['set_5fminmax',['set_minmax',['../structVW_1_1workspace.html#ae69e4a48a58425fcf057ba4fcb20478c',1,'VW::workspace']]],
   ['shared_5fex_5findex',['SHARED_EX_INDEX',['../constant_8h.html#a753d241bccb62003b885fb0b2ae9c802',1,'constant.h']]],
   ['shared_5ftype',['SHARED_TYPE',['../constant_8h.html#a186c53aa4337a15980d33920c6f34e62',1,'constant.h']]],
+  ['should_5fsave_5fpredict_5fonly_5fmodel',['should_save_predict_only_model',['../structVW_1_1reductions_1_1automl_1_1automl.html#a07ac1b6da86fadd5aa5d3843500bb0e6',1,'VW::reductions::automl::automl']]],
   ['shrink_5ffactors',['shrink_factors',['../structVW_1_1cb__explore__adf_1_1cb__explore__adf__large__action__space.html#a1711801d2c94874807d69f4346e116c2',1,'VW::cb_explore_adf::cb_explore_adf_large_action_space']]],
   ['simple',['simple',['../structVW_1_1polylabel.html#a11c3b9a45cdd58b4fdf089ccd63934b9',1,'VW::polylabel']]],
   ['simple_5flabel_5fparser',['simple_label_parser',['../simple__label__parser_8h.html#acbb92378600bf33b817d526dc158c891',1,'simple_label_parser.h']]],

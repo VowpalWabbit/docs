@@ -106,8 +106,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7821b346af57533e9e4c759286ba91ee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1reductions_1_1automl_1_1automl.html#a7821b346af57533e9e4c759286ba91ee">automl</a> (std::unique_ptr&lt; CMType &gt; <a class="el" href="structVW_1_1reductions_1_1automl_1_1automl.html#abd823b8e5344255fd6db056a2d000c9a">cm</a>, <a class="el" href="structVW_1_1io_1_1logger.html">VW::io::logger</a> *<a class="el" href="structVW_1_1reductions_1_1automl_1_1automl.html#a886eadafb79f517c0ee13e4e8e32574f">logger</a>)</td></tr>
-<tr class="separator:a7821b346af57533e9e4c759286ba91ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b5690a044833ba41934dc823abdfe14"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1reductions_1_1automl_1_1automl.html#a6b5690a044833ba41934dc823abdfe14">automl</a> (std::unique_ptr&lt; CMType &gt; <a class="el" href="structVW_1_1reductions_1_1automl_1_1automl.html#abd823b8e5344255fd6db056a2d000c9a">cm</a>, <a class="el" href="structVW_1_1io_1_1logger.html">VW::io::logger</a> *<a class="el" href="structVW_1_1reductions_1_1automl_1_1automl.html#a886eadafb79f517c0ee13e4e8e32574f">logger</a>, bool predict_only_model)</td></tr>
+<tr class="separator:a6b5690a044833ba41934dc823abdfe14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8660040322c8f4c862625ee5a2ab448f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1reductions_1_1automl_1_1automl.html#a8660040322c8f4c862625ee5a2ab448f">one_step</a> (<a class="el" href="namespaceVW_1_1LEARNER.html#af1a8de5607718807546f15b47300a4a3">multi_learner</a> &amp;base, <a class="el" href="namespaceVW.html#a505a6662876c6cba2fcdebb6d21ebbd2">multi_ex</a> &amp;ec, <a class="el" href="structCB_1_1cb__class.html">CB::cb_class</a> &amp;logged, uint64_t labelled_action)</td></tr>
 <tr class="separator:a8660040322c8f4c862625ee5a2ab448f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad79450d561a45fbb9d61a5aca621547a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1reductions_1_1automl_1_1automl.html#ad79450d561a45fbb9d61a5aca621547a">offset_learn</a> (<a class="el" href="namespaceVW_1_1LEARNER.html#af1a8de5607718807546f15b47300a4a3">multi_learner</a> &amp;base, <a class="el" href="namespaceVW.html#a505a6662876c6cba2fcdebb6d21ebbd2">multi_ex</a> &amp;ec, <a class="el" href="structCB_1_1cb__class.html">CB::cb_class</a> &amp;logged, uint64_t labelled_action)</td></tr>
@@ -125,10 +125,12 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a1d189aaa2b1a891d74e73f63702149c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7229c97fa05b421fbb80b5ee3fffff63"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1reductions_1_1automl_1_1automl.html#a7229c97fa05b421fbb80b5ee3fffff63">debug_reverse_learning_order</a> = false</td></tr>
 <tr class="separator:a7229c97fa05b421fbb80b5ee3fffff63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07ac1b6da86fadd5aa5d3843500bb0e6"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1reductions_1_1automl_1_1automl.html#a07ac1b6da86fadd5aa5d3843500bb0e6">should_save_predict_only_model</a></td></tr>
+<tr class="separator:a07ac1b6da86fadd5aa5d3843500bb0e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a7821b346af57533e9e4c759286ba91ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7821b346af57533e9e4c759286ba91ee">&#9670;&nbsp;</a></span>automl()</h2>
+<a id="a6b5690a044833ba41934dc823abdfe14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b5690a044833ba41934dc823abdfe14">&#9670;&nbsp;</a></span>automl()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -148,7 +150,13 @@ template&lt;typename CMType&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structVW_1_1io_1_1logger.html">VW::io::logger</a> *&#160;</td>
-          <td class="paramname"><em>logger</em>&#160;</td>
+          <td class="paramname"><em>logger</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>predict_only_model</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -347,13 +355,29 @@ template&lt;typename CMType&gt; </div>
 
 </div>
 </div>
+<a id="a07ac1b6da86fadd5aa5d3843500bb0e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07ac1b6da86fadd5aa5d3843500bb0e6">&#9670;&nbsp;</a></span>should_save_predict_only_model</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CMType&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">const bool <a class="el" href="structVW_1_1reductions_1_1automl_1_1automl.html">VW::reductions::automl::automl</a>&lt; CMType &gt;::should_save_predict_only_model</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>/__w/vowpal_wabbit/vowpal_wabbit/vowpalwabbit/core/include/vw/core/reductions/automl/<a class="el" href="automl__impl_8h.html">automl_impl.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 4 2022 20:43:57 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Aug 4 2022 21:19:14 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

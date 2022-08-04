@@ -59,6 +59,6 @@ var searchData=
   ['audit_5fregressor_5fsetup',['audit_regressor_setup',['../namespaceVW_1_1reductions.html#ab1d1c1f11d3b602d226efbd92cd19e68',1,'VW::reductions']]],
   ['audit_5fstrings',['audit_strings',['../structVW_1_1audit__strings.html#ac70f202d3aaa36f00566212a1175825e',1,'VW::audit_strings::audit_strings()=default'],['../structVW_1_1audit__strings.html#a998c84150315edd9262983010c8331f6',1,'VW::audit_strings::audit_strings(std::string ns, std::string name)'],['../structVW_1_1audit__strings.html#a3d79841a7c72843393161cbd90c80e0e',1,'VW::audit_strings::audit_strings(std::string ns, std::string name, std::string str_value)']]],
   ['autolink_5fsetup',['autolink_setup',['../namespaceVW_1_1reductions.html#a933182652dd4ec23f11f4524de35e2db',1,'VW::reductions']]],
-  ['automl',['automl',['../structVW_1_1reductions_1_1automl_1_1automl.html#a7821b346af57533e9e4c759286ba91ee',1,'VW::reductions::automl::automl']]],
+  ['automl',['automl',['../structVW_1_1reductions_1_1automl_1_1automl.html#a6b5690a044833ba41934dc823abdfe14',1,'VW::reductions::automl::automl']]],
   ['automl_5fsetup',['automl_setup',['../namespaceVW_1_1reductions.html#a7a59da5065ab7af3e82e8a0c055f7c45',1,'VW::reductions']]]
 ];

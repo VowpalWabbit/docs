@@ -113,7 +113,7 @@ var searchData=
   ['autolink_2eh',['autolink.h',['../autolink_8h.html',1,'']]],
   ['autolink_5fnamespace',['autolink_namespace',['../constant_8h.html#ac2bad8142eb4b0916e5a556988a08ffd',1,'constant.h']]],
   ['autolink_5fsetup',['autolink_setup',['../namespaceVW_1_1reductions.html#a933182652dd4ec23f11f4524de35e2db',1,'VW::reductions']]],
-  ['automl',['automl',['../structVW_1_1reductions_1_1automl_1_1automl.html',1,'VW::reductions::automl::automl&lt; CMType &gt;'],['../structVW_1_1reductions_1_1automl_1_1automl.html#a7821b346af57533e9e4c759286ba91ee',1,'VW::reductions::automl::automl::automl()']]],
+  ['automl',['automl',['../structVW_1_1reductions_1_1automl_1_1automl.html',1,'VW::reductions::automl::automl&lt; CMType &gt;'],['../structVW_1_1reductions_1_1automl_1_1automl.html#a6b5690a044833ba41934dc823abdfe14',1,'VW::reductions::automl::automl::automl()']]],
   ['automl_2eh',['automl.h',['../automl_8h.html',1,'']]],
   ['automl_5festimator_5fdecay',['automl_estimator_decay',['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#ac6c9943ff7c0de71b54f5cfa1237ff65',1,'VW::reductions::automl::interaction_config_manager']]],
   ['automl_5fimpl_2eh',['automl_impl.h',['../automl__impl_8h.html',1,'']]],
