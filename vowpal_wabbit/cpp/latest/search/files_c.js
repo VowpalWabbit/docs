@@ -3,6 +3,7 @@ var searchData=
   ['marginal_2eh',['marginal.h',['../marginal_8h.html',1,'']]],
   ['memory_2eh',['memory.h',['../memory_8h.html',1,'']]],
   ['memory_5ftree_2eh',['memory_tree.h',['../memory__tree_8h.html',1,'']]],
+  ['merge_2eh',['merge.h',['../merge_8h.html',1,'']]],
   ['metric_5fsink_2eh',['metric_sink.h',['../metric__sink_8h.html',1,'']]],
   ['metrics_2eh',['metrics.h',['../metrics_8h.html',1,'']]],
   ['mf_2eh',['mf.h',['../mf_8h.html',1,'']]],

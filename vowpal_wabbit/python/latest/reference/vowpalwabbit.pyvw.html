@@ -2079,6 +2079,36 @@ element is considered as an example</p></li>
 </dl>
 </dd></dl>
 
+<dl class="py function">
+<dt class="sig sig-object py" id="vowpalwabbit.pyvw.merge_models">
+<span class="sig-prename descclassname"><span class="pre">vowpalwabbit.pyvw.</span></span><span class="sig-name descname"><span class="pre">merge_models</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">models</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.merge_models" title="Permalink to this definition">#</a></dt>
+<dd><p>Merge the models loaded into separate workspaces into a single workspace which can then be serialized to a model.</p>
+<p>All of the given workspaces must use the exact same arguments, and only differ in training. <cite>–preserve_performance_counters</cite> should be used if models are loaded from disk and then given to this call.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>models</strong> (<em>List</em><em>[</em><a class="reference internal" href="#vowpalwabbit.pyvw.Workspace" title="vowpalwabbit.pyvw.Workspace"><em>Workspace</em></a><em>]</em>) – List of models to merge.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The merged workspace</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#vowpalwabbit.pyvw.Workspace" title="vowpalwabbit.pyvw.Workspace">Workspace</a></p>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">vowpalwabbit</span> <span class="kn">import</span> <span class="n">Workspace</span><span class="p">,</span> <span class="n">merge_models</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">model1</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">preserve_performance_counters</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">initial_regressor</span><span class="o">=</span><span class="s1">&#39;model1.model&#39;</span><span class="p">)</span> 
+<span class="gp">&gt;&gt;&gt; </span><span class="n">model2</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">preserve_performance_counters</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">initial_regressor</span><span class="o">=</span><span class="s1">&#39;model2.model&#39;</span><span class="p">)</span> 
+<span class="gp">&gt;&gt;&gt; </span><span class="n">merged_model</span> <span class="o">=</span> <span class="n">merge_models</span><span class="p">([</span><span class="n">model1</span><span class="p">,</span> <span class="n">model2</span><span class="p">])</span> 
+<span class="gp">&gt;&gt;&gt; </span><span class="n">merged_model</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">&#39;merged.model&#39;</span><span class="p">)</span> 
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is an experimental feature and may change in future releases.</p>
+</div>
+</dd></dl>
+
 <dl class="py class">
 <dt class="sig sig-object py" id="vowpalwabbit.pyvw.multiclass_label">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vowpalwabbit.pyvw.</span></span><span class="sig-name descname"><span class="pre">multiclass_label</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.multiclass_label" title="Permalink to this definition">#</a></dt>

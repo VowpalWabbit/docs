@@ -412,6 +412,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a76aaae1b56188dc3bfd7d9971d3802e1"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
 <tr class="memitem:a76aaae1b56188dc3bfd7d9971d3802e1"><td class="memTemplItemLeft" align="right" valign="top">std::unique_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a76aaae1b56188dc3bfd7d9971d3802e1">make_unique</a> (Args &amp;&amp;... params)</td></tr>
 <tr class="separator:a76aaae1b56188dc3bfd7d9971d3802e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12d8109f08353e84429ee24a613f5fa0"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a12d8109f08353e84429ee24a613f5fa0">merge_models</a> (const std::vector&lt; const <a class="el" href="structVW_1_1workspace.html">VW::workspace</a> *&gt; &amp;workspaces_to_merge, <a class="el" href="structVW_1_1io_1_1logger.html">VW::io::logger</a> *logger=nullptr)</td></tr>
+<tr class="separator:a12d8109f08353e84429ee24a613f5fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a170341cf31cdb4fb2da4cad71924c2f0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a170341cf31cdb4fb2da4cad71924c2f0">to_string</a> (const <a class="el" href="structMULTILABEL_1_1labels.html">MULTILABEL::labels</a> &amp;multilabels)</td></tr>
 <tr class="separator:a170341cf31cdb4fb2da4cad71924c2f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a307838cf95f16718e3b1499033a79a81"><td class="memTemplParams" colspan="2">template&lt;typename RetType , typename InputType &gt; </td></tr>
@@ -527,9 +529,9 @@ Functions</h2></td></tr>
 <tr class="separator:a7302611eef55f3a024f328b240f8e439"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bc59822edecfb2e609dd098c96a04e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVW_1_1workspace.html">VW::workspace</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a5bc59822edecfb2e609dd098c96a04e3">initialize_with_builder</a> (const std::string &amp;s, <a class="el" href="classio__buf.html">io_buf</a> *model=nullptr, bool skipModelLoad=false, <a class="el" href="error__reporting_8h.html#a98d6d6ac9c0371b98232d6c04df7ee99">trace_message_t</a> trace_listener=nullptr, void *trace_context=nullptr, std::unique_ptr&lt; <a class="el" href="structVW_1_1setup__base__i.html">VW::setup_base_i</a> &gt;=nullptr)</td></tr>
 <tr class="separator:a5bc59822edecfb2e609dd098c96a04e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1acc44b163a8387d2198dda5e8a3ccbe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="future__compat_8h.html#a8b8610e8e86287f2b68275bf31acefb8">VW_WARNING_STATE_PUSH</a> <a class="el" href="future__compat_8h.html#a586b956b1f90b982afb6aa52a878f7cd">VW_WARNING_DISABLE_BADLY_FORMED_XML</a> std::unique_ptr&lt; <a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a1acc44b163a8387d2198dda5e8a3ccbe">initialize_experimental</a> (std::unique_ptr&lt; <a class="el" href="structVW_1_1config_1_1options__i.html">config::options_i</a> &gt; options, std::unique_ptr&lt; <a class="el" href="structVW_1_1io_1_1reader.html">VW::io::reader</a> &gt; model_override_reader=nullptr, <a class="el" href="namespaceVW.html#a58dd7d81c6029805118e521ef7696f80">driver_output_func_t</a> driver_output_func=nullptr, void *driver_output_func_context=nullptr, <a class="el" href="namespaceVW_1_1io.html#a7be1e8b9b7c3eaea712ca1a06dd5f275">VW::io::logger_output_func_t</a> logger_output_func=nullptr, void *logger_output_func_context=nullptr, std::unique_ptr&lt; <a class="el" href="structVW_1_1setup__base__i.html">VW::setup_base_i</a> &gt; setup_base=nullptr)</td></tr>
-<tr class="memdesc:a1acc44b163a8387d2198dda5e8a3ccbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a workspace. This interface is currently experimental, but will replace the existing array of initialize functions.  <a href="#a1acc44b163a8387d2198dda5e8a3ccbe">More...</a><br /></td></tr>
-<tr class="separator:a1acc44b163a8387d2198dda5e8a3ccbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af99a2384371d58f1dfc12c9ec4ca4aa3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="future__compat_8h.html#a8b8610e8e86287f2b68275bf31acefb8">VW_WARNING_STATE_PUSH</a> <a class="el" href="future__compat_8h.html#a586b956b1f90b982afb6aa52a878f7cd">VW_WARNING_DISABLE_BADLY_FORMED_XML</a> std::unique_ptr&lt; <a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#af99a2384371d58f1dfc12c9ec4ca4aa3">initialize_experimental</a> (std::unique_ptr&lt; <a class="el" href="structVW_1_1config_1_1options__i.html">config::options_i</a> &gt; options, std::unique_ptr&lt; <a class="el" href="structVW_1_1io_1_1reader.html">VW::io::reader</a> &gt; model_override_reader=nullptr, <a class="el" href="namespaceVW.html#a58dd7d81c6029805118e521ef7696f80">driver_output_func_t</a> driver_output_func=nullptr, void *driver_output_func_context=nullptr, <a class="el" href="structVW_1_1io_1_1logger.html">VW::io::logger</a> *custom_logger=nullptr, std::unique_ptr&lt; <a class="el" href="structVW_1_1setup__base__i.html">VW::setup_base_i</a> &gt; setup_base=nullptr)</td></tr>
+<tr class="memdesc:af99a2384371d58f1dfc12c9ec4ca4aa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a workspace. This interface is currently experimental, but will replace the existing array of initialize functions.  <a href="#af99a2384371d58f1dfc12c9ec4ca4aa3">More...</a><br /></td></tr>
+<tr class="separator:af99a2384371d58f1dfc12c9ec4ca4aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa899e7b0b12a4f5b31ee9c88fcf79603"><td class="memItemLeft" align="right" valign="top"><a class="el" href="future__compat_8h.html#a2d17cd6c08058ed32e5fb9dc77629280">VW_WARNING_STATE_POP</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#aa899e7b0b12a4f5b31ee9c88fcf79603">cmd_string_replace_value</a> (std::stringstream *&amp;ss, std::string flag_to_replace, const std::string &amp;new_value)</td></tr>
 <tr class="separator:aa899e7b0b12a4f5b31ee9c88fcf79603"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54e76507ba333ccaf9eeb58a40fb712c"><td class="memItemLeft" align="right" valign="top">char **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a54e76507ba333ccaf9eeb58a40fb712c">to_argv</a> (std::string const &amp;s, int &amp;argc)</td></tr>
@@ -538,8 +540,8 @@ Functions</h2></td></tr>
 <tr class="separator:aaa53638dfb7741e4f9934805338d539c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a015a165994e26522f321eef57a990ef5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a015a165994e26522f321eef57a990ef5">free_args</a> (int argc, char *argv[])</td></tr>
 <tr class="separator:a015a165994e26522f321eef57a990ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a380938edfb77928b82057e47333b0b30"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a380938edfb77928b82057e47333b0b30">are_features_compatible</a> (<a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;vw1, <a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;vw2)</td></tr>
-<tr class="separator:a380938edfb77928b82057e47333b0b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff759bc3da0e31055b70753e9e4560e0"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#aff759bc3da0e31055b70753e9e4560e0">are_features_compatible</a> (const <a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;vw1, const <a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;vw2)</td></tr>
+<tr class="separator:aff759bc3da0e31055b70753e9e4560e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad03bc6dcdc5b741c04f0648dc5096db4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="future__compat_8h.html#a8b8610e8e86287f2b68275bf31acefb8">VW_WARNING_STATE_PUSH</a> <a class="el" href="future__compat_8h.html#a586b956b1f90b982afb6aa52a878f7cd">VW_WARNING_DISABLE_BADLY_FORMED_XML</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ad03bc6dcdc5b741c04f0648dc5096db4">finish</a> (<a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;all, bool delete_all=true)</td></tr>
 <tr class="memdesc:ad03bc6dcdc5b741c04f0648dc5096db4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call <a class="el" href="namespaceVW.html#ad03bc6dcdc5b741c04f0648dc5096db4" title="Call finish() after you are done with the vw instance. This cleans up memory usage if delete_all is t...">finish()</a> after you are done with the vw instance. This cleans up memory usage if delete_all is true. Finish will cause final stat printouts and model serialization to occur. IMPORTANT: If lifetime is managed by a unique_ptr from initialize_experimental, then you must call this with delete_all = false.  <a href="#ad03bc6dcdc5b741c04f0648dc5096db4">More...</a><br /></td></tr>
 <tr class="separator:ad03bc6dcdc5b741c04f0648dc5096db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1212,8 +1214,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a380938edfb77928b82057e47333b0b30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a380938edfb77928b82057e47333b0b30">&#9670;&nbsp;</a></span>are_features_compatible()</h2>
+<a id="aff759bc3da0e31055b70753e9e4560e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff759bc3da0e31055b70753e9e4560e0">&#9670;&nbsp;</a></span>are_features_compatible()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1221,13 +1223,13 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">const char* VW::are_features_compatible </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;&#160;</td>
           <td class="paramname"><em>vw1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;&#160;</td>
           <td class="paramname"><em>vw2</em>&#160;</td>
         </tr>
         <tr>
@@ -3325,8 +3327,8 @@ template&lt;typename WeightsT &gt; </div>
 
 </div>
 </div>
-<a id="a1acc44b163a8387d2198dda5e8a3ccbe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1acc44b163a8387d2198dda5e8a3ccbe">&#9670;&nbsp;</a></span>initialize_experimental()</h2>
+<a id="af99a2384371d58f1dfc12c9ec4ca4aa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af99a2384371d58f1dfc12c9ec4ca4aa3">&#9670;&nbsp;</a></span>initialize_experimental()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3358,14 +3360,8 @@ template&lt;typename WeightsT &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespaceVW_1_1io.html#a7be1e8b9b7c3eaea712ca1a06dd5f275">VW::io::logger_output_func_t</a>&#160;</td>
-          <td class="paramname"><em>logger_output_func</em> = <code>nullptr</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>logger_output_func_context</em> = <code>nullptr</code>, </td>
+          <td class="paramtype"><a class="el" href="structVW_1_1io_1_1logger.html">VW::io::logger</a> *&#160;</td>
+          <td class="paramname"><em>custom_logger</em> = <code>nullptr</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -3388,8 +3384,7 @@ template&lt;typename WeightsT &gt; </div>
     <tr><td class="paramname">model_override_reader</td><td>optional reading source to read the model from. Will override any model specified on the command line. </td></tr>
     <tr><td class="paramname">driver_output_func</td><td>optional function to forward driver ouput to </td></tr>
     <tr><td class="paramname">driver_output_func_context</td><td>context for driver_output_func </td></tr>
-    <tr><td class="paramname">logger_output_func</td><td>optional function to forward logger ouput to </td></tr>
-    <tr><td class="paramname">logger_output_func_context</td><td>context for logger_output_func </td></tr>
+    <tr><td class="paramname">custom_logger</td><td>optional custom logger object to override with </td></tr>
     <tr><td class="paramname">setup_base</td><td>optional advanced override of reduction stack </td></tr>
   </table>
   </dd>
@@ -3495,6 +3490,44 @@ template&lt;typename T , typename... Args&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a12d8109f08353e84429ee24a613f5fa0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12d8109f08353e84429ee24a613f5fa0">&#9670;&nbsp;</a></span>merge_models()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="structVW_1_1workspace.html">VW::workspace</a>&gt; VW::merge_models </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; const <a class="el" href="structVW_1_1workspace.html">VW::workspace</a> *&gt; &amp;&#160;</td>
+          <td class="paramname"><em>workspaces_to_merge</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structVW_1_1io_1_1logger.html">VW::io::logger</a> *&#160;</td>
+          <td class="paramname"><em>logger</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Merge several workspace objects into a single workspace. This merges weights and all training state. All given workspaces must be compatible, meaning they should have the same reduction stack and same training based options.</p>
+<p>Note: This is an experimental API.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">workspaces_to_merge</td><td>List of workspaces to merge. </td></tr>
+    <tr><td class="paramname">logger</td><td>Optional logger to be used for logging during function and is given to the resulting workspace </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::unique_ptr&lt;VW::workspace&gt; Pointer to the resulting workspace. </dd></dl>
 
 </div>
 </div>
@@ -5967,7 +6000,7 @@ template&lt;typename ContainerT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 5 2022 13:39:40 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 5 2022 18:29:42 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -77,7 +77,7 @@ var searchData=
   ['apply_5fconfig',['apply_config',['../structVW_1_1reductions_1_1automl_1_1config__manager.html#ad7a3e018498f143d096da58b904dff1f',1,'VW::reductions::automl::config_manager::apply_config()'],['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a33702685b3b7983b9d735578a8ec65bc',1,'VW::reductions::automl::interaction_config_manager::apply_config()']]],
   ['apply_5fpdrop',['apply_pdrop',['../namespaceVW.html#a6c133d5f9c3794fb08e22e65bc4c4475',1,'VW']]],
   ['ar_5fbuf_5fsize',['ar_buf_size',['../allreduce_8h.html#ae5dbb7bf6624bc7ee3c1a40fec4452e4',1,'allreduce.h']]],
-  ['are_5ffeatures_5fcompatible',['are_features_compatible',['../namespaceVW.html#a380938edfb77928b82057e47333b0b30',1,'VW']]],
+  ['are_5ffeatures_5fcompatible',['are_features_compatible',['../namespaceVW.html#aff759bc3da0e31055b70753e9e4560e0',1,'VW']]],
   ['are_5fsame',['are_same',['../namespaceVW_1_1math.html#a5283b8fa4ef629eb885fce24d672cf07',1,'VW::math']]],
   ['are_5fsame_5frel',['are_same_rel',['../namespaceVW_1_1math.html#abd18c415fd17e7a0f19d7941ef78726b',1,'VW::math']]],
   ['argmaxtask',['ArgmaxTask',['../namespaceArgmaxTask.html',1,'']]],

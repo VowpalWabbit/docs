@@ -26,6 +26,7 @@ var searchData=
   ['do_5flearning',['do_learning',['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a57d7279c40931d4889e6099fb076d744',1,'VW::reductions::automl::interaction_config_manager']]],
   ['do_5frecombination',['do_recombination',['../classBeam_1_1beam.html#a7c024b7c58509c405271300549fbfde0',1,'Beam::beam']]],
   ['do_5fswap',['do_swap',['../classVW_1_1details_1_1swap__guard__impl.html#aab5175200e844e9aec7344cee91512a4',1,'VW::details::swap_guard_impl::do_swap()'],['../classVW_1_1details_1_1swap__guard__impl__rvalue.html#a8bc7cd28e0cfdaeb2b20246662ff01c0',1,'VW::details::swap_guard_impl_rvalue::do_swap()']]],
+  ['do_5fweighting',['do_weighting',['../namespaceVW_1_1details.html#aa681657de3752dd96fc5f34af0999315',1,'VW::details']]],
   ['double',['Double',['../structVWReaderHandler.html#a9b1d990eb0240611a2f3ccce3afaa963',1,'VWReaderHandler']]],
   ['duals',['Duals',['../structVW_1_1distributionally__robust_1_1Duals.html#ab9b646730bc1ce5699d89e7e2bc42c06',1,'VW::distributionally_robust::Duals::Duals()'],['../structVW_1_1distributionally__robust_1_1Duals.html#adaabb8969d2a11a78804d49c51deabcd',1,'VW::distributionally_robust::Duals::Duals(bool unbounded, double kappa, double gamma, double beta, double n)']]],
   ['dummy_5ffunc',['dummy_func',['../namespaceGD.html#a654b239b0b90d7e0e47ce3bb1e221795',1,'GD']]],
