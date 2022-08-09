@@ -152,8 +152,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aeefad82f366a0b1dbf7313770e56d4dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb8ea4f5d1783c4aacb6b4c1f40af46f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceVW_1_1LEARNER.html#ab481a83a0a49d7b827babe725e135b20">base_learner</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1learner.html#aeb8ea4f5d1783c4aacb6b4c1f40af46f">get_learner_by_name_prefix</a> (const std::string &amp;reduction_name)</td></tr>
 <tr class="separator:aeb8ea4f5d1783c4aacb6b4c1f40af46f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69a0d667720b61e7608945f137d29833"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1learner.html#a69a0d667720b61e7608945f137d29833">merge</a> (const std::vector&lt; float &gt; &amp;example_counts, const std::vector&lt; const <a class="el" href="structVW_1_1workspace.html">VW::workspace</a> *&gt; &amp;all_workspaces, const std::vector&lt; void *&gt; &amp;all_data, <a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;output_workspace, void *output_data)</td></tr>
-<tr class="separator:a69a0d667720b61e7608945f137d29833"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a897ef0590a162f45d0e875e8b3b8c460"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1learner.html#a897ef0590a162f45d0e875e8b3b8c460">merge</a> (const std::vector&lt; float &gt; &amp;per_model_weighting, const <a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;base_workspace, const std::vector&lt; const <a class="el" href="structVW_1_1workspace.html">VW::workspace</a> *&gt; &amp;all_workspaces, const void *base_data, const std::vector&lt; void *&gt; &amp;all_data, <a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;output_workspace, void *output_data)</td></tr>
+<tr class="separator:a897ef0590a162f45d0e875e8b3b8c460"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfd41d93e375b3374cb0a490f0defaf8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1learner.html#abfd41d93e375b3374cb0a490f0defaf8">VW_ATTR</a> (nodiscard) bool has_merge() const</td></tr>
 <tr class="separator:abfd41d93e375b3374cb0a490f0defaf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2dc58b8b21599dc468f4bd7899a165e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1learner.html#ac2dc58b8b21599dc468f4bd7899a165e">VW_ATTR</a> (nodiscard) <a class="el" href="namespaceVW.html#a4f76045a06b3efe3c5c612b777b6c836">prediction_type_t</a> get_output_prediction_type() const</td></tr>
@@ -519,8 +519,8 @@ template&lt;class T, class E&gt; </div>
 
 </div>
 </div>
-<a id="a69a0d667720b61e7608945f137d29833"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69a0d667720b61e7608945f137d29833">&#9670;&nbsp;</a></span>merge()</h2>
+<a id="a897ef0590a162f45d0e875e8b3b8c460"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a897ef0590a162f45d0e875e8b3b8c460">&#9670;&nbsp;</a></span>merge()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -534,13 +534,25 @@ template&lt;class T, class E&gt; </div>
           <td class="memname">void <a class="el" href="structVW_1_1LEARNER_1_1learner.html">VW::LEARNER::learner</a>&lt; T, E &gt;::merge </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; float &gt; &amp;&#160;</td>
-          <td class="paramname"><em>example_counts</em>, </td>
+          <td class="paramname"><em>per_model_weighting</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &amp;&#160;</td>
+          <td class="paramname"><em>base_workspace</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const std::vector&lt; const <a class="el" href="structVW_1_1workspace.html">VW::workspace</a> *&gt; &amp;&#160;</td>
           <td class="paramname"><em>all_workspaces</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>base_data</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1250,7 +1262,7 @@ template&lt;class T, class E&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 5 2022 20:11:10 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 9 2022 15:01:53 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

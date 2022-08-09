@@ -129,8 +129,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a548785a5199a7c17cd24146e21280a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acaa3bf0d8422045f2983aad272624dc9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVW_1_1LEARNER_1_1reduction__learner__builder.html">reduction_learner_builder</a>&lt; DataT, ExampleT, BaseLearnerT &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1reduction__learner__builder.html#acaa3bf0d8422045f2983aad272624dc9">set_params_per_weight</a> (size_t params_per_weight)</td></tr>
 <tr class="separator:acaa3bf0d8422045f2983aad272624dc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8392708c8cee273c5facd844ff72719c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVW_1_1LEARNER_1_1reduction__learner__builder.html">reduction_learner_builder</a>&lt; DataT, ExampleT, BaseLearnerT &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1reduction__learner__builder.html#a8392708c8cee273c5facd844ff72719c">set_merge_with_all</a> (void(*merge_fn)(const std::vector&lt; float &gt; &amp;example_counts, const std::vector&lt; DataT *&gt; &amp;all_data, DataT &amp;output_data))</td></tr>
-<tr class="separator:a8392708c8cee273c5facd844ff72719c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41d645eefb429c4704e06ec99a5897ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVW_1_1LEARNER_1_1reduction__learner__builder.html">reduction_learner_builder</a>&lt; DataT, ExampleT, BaseLearnerT &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1reduction__learner__builder.html#a41d645eefb429c4704e06ec99a5897ce">set_merge_with_all</a> (void(*merge_fn)(const std::vector&lt; float &gt; &amp;per_model_weighting, const DataT &amp;base_data, const std::vector&lt; DataT *&gt; &amp;all_data, DataT &amp;output_data))</td></tr>
+<tr class="separator:a41d645eefb429c4704e06ec99a5897ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac42218a5cc04c1c93fd268ff0a6c1fb7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVW_1_1LEARNER_1_1learner.html">learner</a>&lt; DataT, ExampleT &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1LEARNER_1_1reduction__learner__builder.html#ac42218a5cc04c1c93fd268ff0a6c1fb7">build</a> (<a class="el" href="structVW_1_1io_1_1logger.html">VW::io::logger</a> *logger=nullptr)</td></tr>
 <tr class="separator:ac42218a5cc04c1c93fd268ff0a6c1fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structVW_1_1LEARNER_1_1common__learner__builder"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structVW_1_1LEARNER_1_1common__learner__builder')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structVW_1_1LEARNER_1_1common__learner__builder.html">VW::LEARNER::common_learner_builder&lt; FluentBuilderT, DataT, ExampleT, BaseLearnerT &gt;</a></td></tr>
@@ -272,8 +272,8 @@ template&lt;class DataT, class ExampleT, class BaseLearnerT&gt; </div>
 
 </div>
 </div>
-<a id="a8392708c8cee273c5facd844ff72719c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8392708c8cee273c5facd844ff72719c">&#9670;&nbsp;</a></span>set_merge_with_all()</h2>
+<a id="a41d645eefb429c4704e06ec99a5897ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41d645eefb429c4704e06ec99a5897ce">&#9670;&nbsp;</a></span>set_merge_with_all()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -286,7 +286,7 @@ template&lt;class DataT, class ExampleT, class BaseLearnerT&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="structVW_1_1LEARNER_1_1reduction__learner__builder.html">reduction_learner_builder</a>&lt;DataT, ExampleT, BaseLearnerT&gt;&amp; <a class="el" href="structVW_1_1LEARNER_1_1reduction__learner__builder.html">VW::LEARNER::reduction_learner_builder</a>&lt; DataT, ExampleT, BaseLearnerT &gt;::set_merge_with_all </td>
           <td>(</td>
-          <td class="paramtype">void(*)(const std::vector&lt; float &gt; &amp;example_counts, const std::vector&lt; DataT *&gt; &amp;all_data, DataT &amp;output_data)&#160;</td>
+          <td class="paramtype">void(*)(const std::vector&lt; float &gt; &amp;per_model_weighting, const DataT &amp;base_data, const std::vector&lt; DataT *&gt; &amp;all_data, DataT &amp;output_data)&#160;</td>
           <td class="paramname"><em>merge_fn</em></td><td>)</td>
           <td></td>
         </tr>
@@ -334,7 +334,7 @@ template&lt;class DataT, class ExampleT, class BaseLearnerT&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 5 2022 20:11:10 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 9 2022 15:01:53 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

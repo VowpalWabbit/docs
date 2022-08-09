@@ -2081,12 +2081,15 @@ element is considered as an example</p></li>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="vowpalwabbit.pyvw.merge_models">
-<span class="sig-prename descclassname"><span class="pre">vowpalwabbit.pyvw.</span></span><span class="sig-name descname"><span class="pre">merge_models</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">models</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.merge_models" title="Permalink to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">vowpalwabbit.pyvw.</span></span><span class="sig-name descname"><span class="pre">merge_models</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">base_model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">models</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.pyvw.merge_models" title="Permalink to this definition">#</a></dt>
 <dd><p>Merge the models loaded into separate workspaces into a single workspace which can then be serialized to a model.</p>
 <p>All of the given workspaces must use the exact same arguments, and only differ in training. <cite>–preserve_performance_counters</cite> should be used if models are loaded from disk and then given to this call.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>models</strong> (<em>List</em><em>[</em><a class="reference internal" href="#vowpalwabbit.pyvw.Workspace" title="vowpalwabbit.pyvw.Workspace"><em>Workspace</em></a><em>]</em>) – List of models to merge.</p>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>base_model</strong> (<em>Optional</em><em>[</em><a class="reference internal" href="#vowpalwabbit.pyvw.Workspace" title="vowpalwabbit.pyvw.Workspace"><em>Workspace</em></a><em>]</em>) – Base model the other models were based on. None, if they are trained from scratch.</p></li>
+<li><p><strong>models</strong> (<em>List</em><em>[</em><a class="reference internal" href="#vowpalwabbit.pyvw.Workspace" title="vowpalwabbit.pyvw.Workspace"><em>Workspace</em></a><em>]</em>) – List of models to merge.</p></li>
+</ul>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p>The merged workspace</p>
