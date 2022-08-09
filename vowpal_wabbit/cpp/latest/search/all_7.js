@@ -78,7 +78,7 @@ var searchData=
   ['get_5ffeature_5fnumber',['get_feature_number',['../namespaceVW.html#afd10f758297dd00700e4f4ffe84d09bb',1,'VW']]],
   ['get_5ffeatures',['get_features',['../namespaceVW.html#afcff3f775b9849bd635c6ec247f0ee97',1,'VW']]],
   ['get_5ffloat',['get_float',['../structVW_1_1metric__sink.html#a313ee592940c991c3f6ab6bc9b1775b9',1,'VW::metric_sink']]],
-  ['get_5fgen_5fcs',['get_gen_cs',['../structCB__ADF_1_1cb__adf.html#a5a30c9ff9482236a6724176140f71799',1,'CB_ADF::cb_adf']]],
+  ['get_5fgen_5fcs',['get_gen_cs',['../structCB__ADF_1_1cb__adf.html#a5a30c9ff9482236a6724176140f71799',1,'CB_ADF::cb_adf::get_gen_cs() const'],['../structCB__ADF_1_1cb__adf.html#ac8b89f821a14c08533e96b1b467b959a',1,'CB_ADF::cb_adf::get_gen_cs()']]],
   ['get_5fhistory_5flength',['get_history_length',['../structSearch_1_1search.html#a73258421dd81ba83cc58b31f9979b75e',1,'Search::search']]],
   ['get_5fimportance',['get_importance',['../namespaceVW.html#ae3b04ac2b827736ed5e49a8f69f13dd3',1,'VW']]],
   ['get_5finitial',['get_initial',['../namespaceVW.html#a55f918c20df5f23e00df44184bd58b5e',1,'VW']]],

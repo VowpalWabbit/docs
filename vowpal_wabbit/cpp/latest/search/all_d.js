@@ -46,7 +46,7 @@ var searchData=
   ['merand48',['merand48',['../rand48_8h.html#a64cab1594b4166e9442ee1429123044b',1,'rand48.h']]],
   ['merand48_5fboxmuller',['merand48_boxmuller',['../rand48_8h.html#a1a5d99f1fed8adf3248a30cae6b13437',1,'rand48.h']]],
   ['merand48_5fnoadvance',['merand48_noadvance',['../rand48_8h.html#a25a35c4d653d47b644ce40f0437f8101',1,'rand48.h']]],
-  ['merge',['merge',['../structVW_1_1LEARNER_1_1learner.html#ab66a19949d8af19ac2f527e5a28e974b',1,'VW::LEARNER::learner']]],
+  ['merge',['merge',['../structVW_1_1LEARNER_1_1learner.html#ac2dd31ec1fbe7d950c0a2e22a9e82bce',1,'VW::LEARNER::learner']]],
   ['merge_2eh',['merge.h',['../merge_8h.html',1,'']]],
   ['merge_5ffn',['merge_fn',['../namespaceVW_1_1LEARNER_1_1details.html#aaf844d2873103910165bdb067eb20a32',1,'VW::LEARNER::details']]],
   ['merge_5fmodels',['merge_models',['../namespaceVW.html#ae5920b03cd962fcbf3aad9bbc705f861',1,'VW']]],
