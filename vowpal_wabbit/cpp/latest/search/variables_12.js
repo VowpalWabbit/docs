@@ -2,7 +2,7 @@ var searchData=
 [
   ['random_5fpositive_5fweights',['random_positive_weights',['../structVW_1_1workspace.html#a0de238b943af553ec09a8ef23e9aa6bb',1,'VW::workspace']]],
   ['random_5fseed',['random_seed',['../structVW_1_1workspace.html#a88fb5dc54e601b5264cfbd3422f9c521',1,'VW::workspace']]],
-  ['random_5fstate',['random_state',['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a623df420d3bfa705193e4c2e6054d292',1,'VW::reductions::automl::interaction_config_manager']]],
+  ['random_5fstate',['random_state',['../structVW_1_1reductions_1_1automl_1_1config__oracle.html#a78d3dce32e5105c0424e71bc1741d5e7',1,'VW::reductions::automl::config_oracle']]],
   ['random_5fweights',['random_weights',['../structVW_1_1workspace.html#a0450fdc35ec3c3f247b0c4142f79bb65',1,'VW::workspace']]],
   ['raw_5fprediction',['raw_prediction',['../structVW_1_1workspace.html#a72755b57b42c9839b75e7d23b15e739a',1,'VW::workspace']]],
   ['read_5fcached_5flabel',['read_cached_label',['../structVW_1_1label__parser.html#a96f5af9464f646a53a5b853b96d38611',1,'VW::label_parser']]],

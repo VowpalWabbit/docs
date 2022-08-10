@@ -69,6 +69,7 @@ var searchData=
   ['do_5freset_5fsource',['do_reset_source',['../structVW_1_1workspace.html#a41cc6598448119a2e3478675cc683f02',1,'VW::workspace']]],
   ['do_5fswap',['do_swap',['../classVW_1_1details_1_1swap__guard__impl.html#aab5175200e844e9aec7344cee91512a4',1,'VW::details::swap_guard_impl::do_swap()'],['../classVW_1_1details_1_1swap__guard__impl__rvalue.html#a8bc7cd28e0cfdaeb2b20246662ff01c0',1,'VW::details::swap_guard_impl_rvalue::do_swap()']]],
   ['do_5fweighting',['do_weighting',['../namespaceVW_1_1details.html#aa681657de3752dd96fc5f34af0999315',1,'VW::details']]],
+  ['do_5fwork',['do_work',['../structVW_1_1reductions_1_1automl_1_1config__oracle.html#af5e9993e847bbe40dfb8aec52d67a69f',1,'VW::reductions::automl::config_oracle']]],
   ['done',['done',['../structparser.html#a73041b4f11e952967779e142d70f0e32',1,'parser']]],
   ['double',['Double',['../structVWReaderHandler.html#a9b1d990eb0240611a2f3ccce3afaa963',1,'VWReaderHandler']]],
   ['dr',['dr',['../namespaceVW.html#afc6602380e780c653a55bf44b6e5c881ab4688aaaaf17fad03225929fe56ad458',1,'VW']]],

@@ -15,7 +15,7 @@ var searchData=
   ['increment',['increment',['../structVW_1_1LEARNER_1_1learner.html#a30c2bcf54996490e0a4415e6509e9dfe',1,'VW::LEARNER::learner::increment()'],['../structVW_1_1reductions_1_1cbify__adf__data.html#a780182be66df7903ceb3b54acb6407f9',1,'VW::reductions::cbify_adf_data::increment()']]],
   ['index',['index',['../structLabelIndexState.html#a74debffb179393bae1b06ad872409acc',1,'LabelIndexState']]],
   ['index_5fname_5fmap',['index_name_map',['../structVW_1_1workspace.html#a68c2e292772d7e55f99c6458977f5f8e',1,'VW::workspace']]],
-  ['index_5fqueue',['index_queue',['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a716069c3b24d092dc7b0782f85f48433',1,'VW::reductions::automl::interaction_config_manager']]],
+  ['index_5fqueue',['index_queue',['../structVW_1_1reductions_1_1automl_1_1config__oracle.html#a5ba414c6efd7ecf440fc9519217e4134',1,'VW::reductions::automl::config_oracle::index_queue()'],['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a716069c3b24d092dc7b0782f85f48433',1,'VW::reductions::automl::interaction_config_manager::index_queue()']]],
   ['indexing',['indexing',['../structVW_1_1workspace.html#a5c8ca74e6cfa887a7a8d26cb88ab3eed',1,'VW::workspace']]],
   ['indices',['indices',['../structVW_1_1example__predict.html#ae3bcd81025e590305eb4aa9c50e24ad4',1,'VW::example_predict::indices()'],['../structfeatures.html#a148deefbc0193790ff4233441f532cc0',1,'features::indices()']]],
   ['initial',['initial',['../structsimple__label__reduction__features.html#a1480d951626ca2e794e3acee38f1f3d4',1,'simple_label_reduction_features']]],

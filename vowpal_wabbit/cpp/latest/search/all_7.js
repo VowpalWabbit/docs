@@ -146,7 +146,7 @@ var searchData=
   ['getk',['getK',['../classVW_1_1named__labels.html#a67c785be69b162b59cc7102965145435',1,'VW::named_labels']]],
   ['git_5fcommit',['git_commit',['../namespaceVW.html#a7d89e09709dcb4deeb550e17aa8ea75b',1,'VW']]],
   ['global_5fdata_2eh',['global_data.h',['../global__data_8h.html',1,'']]],
-  ['global_5flease',['global_lease',['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#ad482574c6c3a44ffa1e0c1edb9a79bf9',1,'VW::reductions::automl::interaction_config_manager']]],
+  ['global_5flease',['global_lease',['../structVW_1_1reductions_1_1automl_1_1config__oracle.html#a690f42e6869c0d1b28bf7b5292d9437c',1,'VW::reductions::automl::config_oracle::global_lease()'],['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#acb68de0338469e8f938607e6bdabb9c3',1,'VW::reductions::automl::interaction_config_manager::global_lease()']]],
   ['global_5fprint_5fnewline',['global_print_newline',['../namespaceVW_1_1details.html#abe4ff571e599545ffc1a1356de1c6a5d',1,'VW::details']]],
   ['global_5fweight',['global_weight',['../structVW_1_1flat__example.html#af22b235d38543a0c757241e20dcfa375',1,'VW::flat_example']]],
   ['gram_5fschmidt',['gram_schmidt',['../namespaceVW.html#a0eebf9b8e3b7d8ddd7593fbd86622d03',1,'VW::gram_schmidt(WeightsT &amp;weights, uint64_t d, const std::set&lt; uint64_t &gt; &amp;rows)'],['../namespaceVW.html#ac8602470da66bc17c925c87f2c328edf',1,'VW::gram_schmidt(Eigen::MatrixXf &amp;mat)'],['../namespaceVW.html#a5e16c7d797676b4aa14893841f5efaa1',1,'VW::gram_schmidt(Eigen::SparseMatrix&lt; float &gt; &amp;mat)']]],

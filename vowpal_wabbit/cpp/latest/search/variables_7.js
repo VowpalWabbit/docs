@@ -9,7 +9,7 @@ var searchData=
   ['get_5fpmf',['get_pmf',['../structvw__dbg.html#ad0e139fefdac9d085c5dd353d884f7c9',1,'vw_dbg']]],
   ['get_5fweight',['get_weight',['../structVW_1_1label__parser.html#ae7a6398d612487cb0ea8e7e422d3cc08',1,'VW::label_parser']]],
   ['git_5fcommit',['git_commit',['../namespaceVW.html#a7d89e09709dcb4deeb550e17aa8ea75b',1,'VW']]],
-  ['global_5flease',['global_lease',['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#ad482574c6c3a44ffa1e0c1edb9a79bf9',1,'VW::reductions::automl::interaction_config_manager']]],
+  ['global_5flease',['global_lease',['../structVW_1_1reductions_1_1automl_1_1config__oracle.html#a690f42e6869c0d1b28bf7b5292d9437c',1,'VW::reductions::automl::config_oracle::global_lease()'],['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#acb68de0338469e8f938607e6bdabb9c3',1,'VW::reductions::automl::interaction_config_manager::global_lease()']]],
   ['global_5fweight',['global_weight',['../structVW_1_1flat__example.html#af22b235d38543a0c757241e20dcfa375',1,'VW::flat_example']]],
   ['gravity',['gravity',['../structGD_1_1multipredict__info.html#a8255d21183a68c7d73504edc87388b0e',1,'GD::multipredict_info::gravity()'],['../structshared__data.html#a49f2656fcaf86ebab5009fdf70c0ef53',1,'shared_data::gravity()']]]
 ];

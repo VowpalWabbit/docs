@@ -83,7 +83,7 @@ var searchData=
   ['compute_5fspanner',['compute_spanner',['../structVW_1_1cb__explore__adf_1_1spanner__state.html#a19383cf75550d381f683d5d14a83a8b1',1,'VW::cb_explore_adf::spanner_state']]],
   ['concat',['concat',['../structfeatures.html#a3b04343635688a655d002d3ecd0f7fa5',1,'features']]],
   ['confidence_5fsetup',['confidence_setup',['../namespaceVW_1_1reductions.html#adf23f369dd2e0f077e79eb60d5ba6e2c',1,'VW::reductions']]],
-  ['config_5foracle',['config_oracle',['../structVW_1_1reductions_1_1automl_1_1config__manager.html#acd37ac8fb73a48071c3e4a34cd514529',1,'VW::reductions::automl::config_manager::config_oracle()'],['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a1378995caa780a118f0823d7f602e5e4',1,'VW::reductions::automl::interaction_config_manager::config_oracle()']]],
+  ['config_5foracle',['config_oracle',['../structVW_1_1reductions_1_1automl_1_1config__oracle.html#a7bafe127349b9d89fc0a589d9d66dfed',1,'VW::reductions::automl::config_oracle']]],
   ['constexpr_5fint_5fpow10',['constexpr_int_pow10',['../namespaceVW_1_1details.html#ad3879df5b180db6a789f312968940cad',1,'VW::details']]],
   ['constexpr_5fnegative_5fint_5fpow10',['constexpr_negative_int_pow10',['../namespaceVW_1_1details.html#a00f89d94c130db70248d92c279b9780f',1,'VW::details']]],
   ['constexpr_5fnegative_5fint_5fpow10_5fwith_5foffset',['constexpr_negative_int_pow10_with_offset',['../namespaceVW_1_1details.html#ab6ae5a8a298fa337a11f73c58392378f',1,'VW::details']]],
