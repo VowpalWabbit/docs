@@ -85,6 +85,7 @@ var searchData=
   ['io_5fbuf',['io_buf',['../classio__buf.html',1,'io_buf'],['../classio__buf.html#ae01bc5dd5cd7128faeff147ce34a1f36',1,'io_buf::io_buf()'],['../classio__buf.html#a0665faf40e41d643fc3aeda6915d7d9b',1,'io_buf::io_buf(io_buf &amp;other)=delete'],['../classio__buf.html#a05183ca2d42844f8e55a3e3334eba4fa',1,'io_buf::io_buf(io_buf &amp;&amp;other)=delete']]],
   ['io_5fbuf_2eh',['io_buf.h',['../io__buf_8h.html',1,'']]],
   ['ips',['ips',['../structVW_1_1estimator__config.html#a584c17cbda8e9706de459d4aa56162b7',1,'VW::estimator_config::ips()'],['../namespaceVW.html#afc6602380e780c653a55bf44b6e5c881ade56be8fa19339d679efa6232455f342',1,'VW::ips()']]],
+  ['is_5fallowed_5fto_5fremove',['is_allowed_to_remove',['../namespaceVW_1_1reductions_1_1automl.html#a6362a6a0954cbbb9faed46dd26090ea3',1,'VW::reductions::automl']]],
   ['is_5fcb_5fexplore_5fadf',['is_cb_explore_adf',['../classvw__slim_1_1vw__predict.html#a181a3da2b958c2bd94e89216f238758b',1,'vw_slim::vw_predict']]],
   ['is_5fccb_5finput_5fmodel',['is_ccb_input_model',['../structVW_1_1workspace.html#ab1739c8984ecdde64051dd1c815bcf61',1,'VW::workspace']]],
   ['is_5fchosen_5faction_5fset',['is_chosen_action_set',['../structVW_1_1continuous__actions_1_1reduction__features.html#a58f2153341949015b5c607ab1367af19',1,'VW::continuous_actions::reduction_features']]],
