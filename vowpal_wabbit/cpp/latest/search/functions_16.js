@@ -9,6 +9,7 @@ var searchData=
   ['what',['what',['../classVW_1_1vw__exception.html#a31eff794b28b77a6e244a0bea4a0cfa0',1,'VW::vw_exception']]],
   ['with_5foutput_5fstring',['with_output_string',['../classSearch_1_1BaseTask.html#a91cae7d703dc5c6213f36e23d696de93',1,'Search::BaseTask']]],
   ['workspace',['workspace',['../structVW_1_1workspace.html#a6c09bb48919f9417c4c3a1c53650534e',1,'VW::workspace::workspace(VW::io::logger logger)'],['../structVW_1_1workspace.html#ab6750a1f7090d0fba8fcbb9e4f3b26ad',1,'VW::workspace::workspace(const VW::workspace &amp;)=delete'],['../structVW_1_1workspace.html#a915021756e7248789093967d010d73ed',1,'VW::workspace::workspace(const VW::workspace &amp;&amp;)=delete']]],
+  ['worse',['worse',['../namespaceVW_1_1reductions_1_1automl.html#a6b5749316c3459499a75a87ee1dbb55f',1,'VW::reductions::automl']]],
   ['wrap_5fsocket_5fdescriptor',['wrap_socket_descriptor',['../namespaceVW_1_1io.html#a9e41560d8a75f8e8da16232f5cb3c637',1,'VW::io']]],
   ['wrap_5ftext',['wrap_text',['../namespaceVW.html#aa3895003f151896b7b116446b144ff8d',1,'VW']]],
   ['write',['write',['../structVW_1_1io_1_1writer.html#a2af8e9f79503058aca22933edd085c82',1,'VW::io::writer']]],

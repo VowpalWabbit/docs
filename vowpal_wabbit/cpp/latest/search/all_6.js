@@ -2,7 +2,7 @@ var searchData=
 [
   ['f',['f',['../unionexploration_1_1int__float.html#aae7ba8412357e474898bc44bc43ab394',1,'exploration::int_float']]],
   ['factorial',['factorial',['../namespaceVW_1_1math.html#a36fabad29dd6a60b30820b0dd1c119da',1,'VW::math']]],
-  ['fail_5fif_5fenabled',['fail_if_enabled',['../namespaceVW_1_1reductions.html#a420e3223c6bb3d2bda89c42db1a29349',1,'VW::reductions']]],
+  ['fail_5fif_5fenabled',['fail_if_enabled',['../namespaceVW_1_1reductions_1_1util.html#ad70e036a2153588164dbf3cc6f651e5c',1,'VW::reductions::util']]],
   ['fast_5fpow10',['fast_pow10',['../namespaceVW.html#a1c2be07eaaeaffca808d8d4106437a00',1,'VW']]],
   ['fast_5fpow10_2eh',['fast_pow10.h',['../fast__pow10_8h.html',1,'']]],
   ['feature',['feature',['../structfeature.html',1,'feature'],['../structfeature.html#a67f5aeaea85ac93019524af7e2cc8925',1,'feature::feature()=default'],['../structfeature.html#a15ba23cd8a38d89fab9fdc17ca9f8dee',1,'feature::feature(float _x, uint64_t _index)'],['../structfeature.html#a3953a8a8732281c7d9a3f7125ed02630',1,'feature::feature(const feature &amp;)=default'],['../structfeature.html#a68e494ef5a0658849ddd93164e37a395',1,'feature::feature(feature &amp;&amp;)=default']]],

@@ -146,10 +146,20 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ad9c7be1539e7381681389863337adf66"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1reductions_1_1automl.html#ad9c7be1539e7381681389863337adf66">count_namespaces</a> (const <a class="el" href="namespaceVW.html#a505a6662876c6cba2fcdebb6d21ebbd2">multi_ex</a> &amp;ecs, std::map&lt; <a class="el" href="namespaceVW.html#abbbfd142fffaccd884cf1762f553eb50">namespace_index</a>, uint64_t &gt; &amp;ns_counter)</td></tr>
+<tr class="separator:ad9c7be1539e7381681389863337adf66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a396d7624526c36e0be00d1ca652c1021"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1reductions_1_1automl.html#a396d7624526c36e0be00d1ca652c1021">gen_interactions</a> (bool ccb_on, std::map&lt; <a class="el" href="namespaceVW.html#abbbfd142fffaccd884cf1762f553eb50">namespace_index</a>, uint64_t &gt; &amp;ns_counter, std::string &amp;interaction_type, std::vector&lt; <a class="el" href="structVW_1_1reductions_1_1automl_1_1exclusion__config.html">exclusion_config</a> &gt; &amp;configs, std::vector&lt; std::pair&lt; <a class="el" href="structVW_1_1reductions_1_1automl_1_1aml__estimator.html">aml_estimator</a>, <a class="el" href="structVW_1_1estimator__config.html">estimator_config</a> &gt;&gt; &amp;estimators, uint64_t live_slot)</td></tr>
+<tr class="separator:a396d7624526c36e0be00d1ca652c1021"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef21db84edb0c085c87abe8a0098420b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1reductions_1_1automl.html#aef21db84edb0c085c87abe8a0098420b">apply_config</a> (<a class="el" href="structVW_1_1example.html">example</a> *ec, <a class="el" href="namespaceVW_1_1reductions_1_1automl.html#a612adafa4335a873205a21b52c86d2f7">interaction_vec_t</a> *live_interactions)</td></tr>
+<tr class="separator:aef21db84edb0c085c87abe8a0098420b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6362a6a0954cbbb9faed46dd26090ea3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1reductions_1_1automl.html#a6362a6a0954cbbb9faed46dd26090ea3">is_allowed_to_remove</a> (const unsigned char ns)</td></tr>
 <tr class="separator:a6362a6a0954cbbb9faed46dd26090ea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7816879b654725609af38b5f8c56cb6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1reductions_1_1automl.html#ad7816879b654725609af38b5f8c56cb6">clear_non_champ_weights</a> (<a class="el" href="classdense__parameters.html">dense_parameters</a> &amp;weights, uint32_t total, uint32_t &amp;wpp)</td></tr>
 <tr class="separator:ad7816879b654725609af38b5f8c56cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af294411275ada213f1b0927dfe25f871"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1reductions_1_1automl.html#af294411275ada213f1b0927dfe25f871">better</a> (bool lb_trick, <a class="el" href="structVW_1_1reductions_1_1automl_1_1aml__estimator.html">aml_estimator</a> &amp;challenger, <a class="el" href="structVW_1_1estimator__config.html">estimator_config</a> &amp;champ)</td></tr>
+<tr class="separator:af294411275ada213f1b0927dfe25f871"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b5749316c3459499a75a87ee1dbb55f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1reductions_1_1automl.html#a6b5749316c3459499a75a87ee1dbb55f">worse</a> ()</td></tr>
+<tr class="separator:a6b5749316c3459499a75a87ee1dbb55f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a612adafa4335a873205a21b52c86d2f7"></a>
@@ -236,6 +246,68 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="aef21db84edb0c085c87abe8a0098420b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef21db84edb0c085c87abe8a0098420b">&#9670;&nbsp;</a></span>apply_config()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VW::reductions::automl::apply_config </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structVW_1_1example.html">example</a> *&#160;</td>
+          <td class="paramname"><em>ec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceVW_1_1reductions_1_1automl.html#a612adafa4335a873205a21b52c86d2f7">interaction_vec_t</a> *&#160;</td>
+          <td class="paramname"><em>live_interactions</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af294411275ada213f1b0927dfe25f871"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af294411275ada213f1b0927dfe25f871">&#9670;&nbsp;</a></span>better()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool VW::reductions::automl::better </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>lb_trick</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structVW_1_1reductions_1_1automl_1_1aml__estimator.html">aml_estimator</a> &amp;&#160;</td>
+          <td class="paramname"><em>challenger</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structVW_1_1estimator__config.html">estimator_config</a> &amp;&#160;</td>
+          <td class="paramname"><em>champ</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ad7816879b654725609af38b5f8c56cb6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad7816879b654725609af38b5f8c56cb6">&#9670;&nbsp;</a></span>clear_non_champ_weights()</h2>
 
@@ -270,6 +342,86 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ad9c7be1539e7381681389863337adf66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9c7be1539e7381681389863337adf66">&#9670;&nbsp;</a></span>count_namespaces()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool VW::reductions::automl::count_namespaces </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceVW.html#a505a6662876c6cba2fcdebb6d21ebbd2">multi_ex</a> &amp;&#160;</td>
+          <td class="paramname"><em>ecs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::map&lt; <a class="el" href="namespaceVW.html#abbbfd142fffaccd884cf1762f553eb50">namespace_index</a>, uint64_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ns_counter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a396d7624526c36e0be00d1ca652c1021"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a396d7624526c36e0be00d1ca652c1021">&#9670;&nbsp;</a></span>gen_interactions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VW::reductions::automl::gen_interactions </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ccb_on</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::map&lt; <a class="el" href="namespaceVW.html#abbbfd142fffaccd884cf1762f553eb50">namespace_index</a>, uint64_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ns_counter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>interaction_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="structVW_1_1reductions_1_1automl_1_1exclusion__config.html">exclusion_config</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>configs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; std::pair&lt; <a class="el" href="structVW_1_1reductions_1_1automl_1_1aml__estimator.html">aml_estimator</a>, <a class="el" href="structVW_1_1estimator__config.html">estimator_config</a> &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>estimators</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>live_slot</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a6362a6a0954cbbb9faed46dd26090ea3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6362a6a0954cbbb9faed46dd26090ea3">&#9670;&nbsp;</a></span>is_allowed_to_remove()</h2>
 
@@ -288,10 +440,27 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a6b5749316c3459499a75a87ee1dbb55f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b5749316c3459499a75a87ee1dbb55f">&#9670;&nbsp;</a></span>worse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool VW::reductions::automl::worse </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 10 2022 19:50:00 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 10 2022 21:52:25 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -10,7 +10,7 @@ var searchData=
   ['gen_5fcs_5fexample_5fsm',['gen_cs_example_sm',['../namespaceGEN__CS.html#a31ce03da6c078b99b42430103557de58',1,'GEN_CS']]],
   ['gen_5fcs_5flabel',['gen_cs_label',['../namespaceGEN__CS.html#acd992def5da983965367ffaaa226b9be',1,'GEN_CS']]],
   ['gen_5fcs_5ftest_5fexample',['gen_cs_test_example',['../namespaceGEN__CS.html#a85b5eb15b4d9aac6d0d09bb0c9e984da',1,'GEN_CS']]],
-  ['gen_5finteractions',['gen_interactions',['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#ab7f38420ed8e08d160a7490b2992c2ed',1,'VW::reductions::automl::interaction_config_manager']]],
+  ['gen_5finteractions',['gen_interactions',['../namespaceVW_1_1reductions_1_1automl.html#a396d7624526c36e0be00d1ca652c1021',1,'VW::reductions::automl']]],
   ['gen_5fnegative_5fpow10s',['gen_negative_pow10s',['../namespaceVW_1_1details.html#ae2be77302bcacd0a0ec124678e260372',1,'VW::details']]],
   ['gen_5fpositive_5fpow10s',['gen_positive_pow10s',['../namespaceVW_1_1details.html#a49ac9f5d71c64d8d87e923b5c4d572d3',1,'VW::details']]],
   ['generate_5faomega',['generate_AOmega',['../structVW_1_1cb__explore__adf_1_1one__pass__svd__impl.html#aab8f018f57e6011d528ebe8ab9bf606a',1,'VW::cb_explore_adf::one_pass_svd_impl']]],

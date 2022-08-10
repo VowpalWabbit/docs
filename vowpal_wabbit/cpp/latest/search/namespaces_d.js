@@ -29,6 +29,7 @@ var searchData=
   ['parsers',['parsers',['../namespaceVW_1_1parsers.html',1,'VW']]],
   ['reductions',['reductions',['../namespaceVW_1_1reductions.html',1,'VW']]],
   ['slates',['slates',['../namespaceVW_1_1slates.html',1,'VW']]],
+  ['util',['util',['../namespaceVW_1_1reductions_1_1util.html',1,'VW::reductions']]],
   ['version_5fdefinitions',['version_definitions',['../namespaceVW_1_1version__definitions.html',1,'VW']]],
   ['vw',['VW',['../namespaceVW.html',1,'']]],
   ['vw_5fslim',['vw_slim',['../namespacevw__slim.html',1,'']]]

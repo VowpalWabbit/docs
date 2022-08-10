@@ -85,7 +85,7 @@ var searchData=
   ['ctx',['ctx',['../structVWReaderHandler.html#a9f3b6e73b45f4d591256d98089a1ccc1',1,'VWReaderHandler']]],
   ['cubic_5fconstant',['cubic_constant',['../constant_8h.html#a35e3ed020df3b2ca3e41057955905246',1,'constant.h']]],
   ['cubic_5fconstant2',['cubic_constant2',['../constant_8h.html#a834d38a058ed07e44f53e20e232c82aa',1,'constant.h']]],
-  ['current_5fchamp',['current_champ',['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#afc01a435685b2ba479442836b528df7f',1,'VW::reductions::automl::interaction_config_manager']]],
+  ['current_5fchamp',['current_champ',['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a29b6365653aa1324ecad874474899be3',1,'VW::reductions::automl::interaction_config_manager']]],
   ['current_5fit',['current_it',['../structINTERACTIONS_1_1feature__gen__data.html#a5802c147862db9d8aca5e72fe7be8abb',1,'INTERACTIONS::feature_gen_data']]],
   ['current_5fmaster',['current_master',['../structnode__socks.html#a8cad0619d240dff1372e89eedb2211ff',1,'node_socks']]],
   ['current_5fpass',['current_pass',['../structVW_1_1workspace.html#a22cd393be59738091f2919b9bf4aae08',1,'VW::workspace']]],

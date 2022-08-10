@@ -96,6 +96,7 @@ var searchData=
   ['copy_5fto',['copy_to',['../classio__buf.html#a6fc5dfa66ea7487155fcafd57a45ec90',1,'io_buf']]],
   ['count_5flabel',['count_label',['../namespaceVW.html#ade7c66e76f0dc0b979504435741b275b',1,'VW']]],
   ['count_5flabel_5fsetup',['count_label_setup',['../namespaceVW_1_1reductions.html#a1f6081575b93a41fd460eb682232459d',1,'VW::reductions']]],
+  ['count_5fnamespaces',['count_namespaces',['../namespaceVW_1_1reductions_1_1automl.html#ad9c7be1539e7381681389863337adf66',1,'VW::reductions::automl']]],
   ['create_5fbuffer_5fview',['create_buffer_view',['../namespaceVW_1_1io.html#a64fffb68e0d290a508476f0c8b160694',1,'VW::io']]],
   ['create_5fcustom_5fsink_5flogger',['create_custom_sink_logger',['../namespaceVW_1_1io.html#a4f919c655b6f037f503cd1d2ec3701b1',1,'VW::io']]],
   ['create_5fcustom_5fsink_5flogger_5flegacy',['create_custom_sink_logger_legacy',['../namespaceVW_1_1io.html#a6d082090958b291e909fe77f9c667138',1,'VW::io']]],
