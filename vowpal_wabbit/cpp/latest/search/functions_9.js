@@ -29,7 +29,7 @@ var searchData=
   ['int_5fmetric',['int_metric',['../structVW_1_1metric__sink__visitor.html#a276be1447438c81daeaa8c794829becd',1,'VW::metric_sink_visitor']]],
   ['int_5fof_5fstring',['int_of_string',['../parse__primitives_8h.html#a9404f9cada6aeb0cebc185ef796fe82f',1,'int_of_string(VW::string_view s, char *&amp;end, VW::io::logger &amp;logger):&#160;parse_primitives.h'],['../parse__primitives_8h.html#a34221b312690003a6f614af8e4647e3d',1,'int_of_string(VW::string_view s, VW::io::logger &amp;logger):&#160;parse_primitives.h']]],
   ['interact_5fsetup',['interact_setup',['../namespaceVW_1_1reductions.html#ad2bf7320a1798fff9699b691c052f2fa',1,'VW::reductions']]],
-  ['interaction_5fconfig_5fmanager',['interaction_config_manager',['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#ac81c79141165c181b0787fd8493ab8a8',1,'VW::reductions::automl::interaction_config_manager']]],
+  ['interaction_5fconfig_5fmanager',['interaction_config_manager',['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a552909c589ae10d392d1b4543d520b21',1,'VW::reductions::automl::interaction_config_manager']]],
   ['interaction_5fground_5fsetup',['interaction_ground_setup',['../namespaceVW_1_1reductions.html#aa4b3f948a4e2d2d8af9aab29a9a68c15',1,'VW::reductions']]],
   ['interaction_5fvalue',['INTERACTION_VALUE',['../namespaceINTERACTIONS.html#a85d42969fe5fe2302e2017a180202ed7',1,'INTERACTIONS']]],
   ['interaction_5fvec_5ft_5fto_5fstring',['interaction_vec_t_to_string',['../namespaceVW_1_1reductions.html#a1bd0da35deb0dad518b074cc1f90de7b',1,'VW::reductions']]],

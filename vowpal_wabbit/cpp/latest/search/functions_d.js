@@ -6,6 +6,7 @@ var searchData=
   ['necessary',['necessary',['../structVW_1_1config_1_1option__builder.html#ad77eeb7761b3ace8c185a1c759d62160',1,'VW::config::option_builder']]],
   ['new_5funused_5fexample',['new_unused_example',['../namespaceVW.html#a3846d133af77206c04acf204f01b5dba',1,'VW']]],
   ['next',['next',['../structVW_1_1details_1_1input__parser.html#a3aaa99c3b44baf727caa3fc2305bf931',1,'VW::details::input_parser']]],
+  ['next_5fnon_5fzero',['next_non_zero',['../classdense__iterator.html#ac96de30bfcd9bdbd2983b923e31033dc',1,'dense_iterator']]],
   ['nn_5fsetup',['nn_setup',['../namespaceVW_1_1reductions.html#ae3049e94f03a3c690a50665b94b2fcba',1,'VW::reductions']]],
   ['no_5flock_5fobject_5fpool',['no_lock_object_pool',['../structVW_1_1no__lock__object__pool.html#a55f60639f3260fab7a259890d83b6f0e',1,'VW::no_lock_object_pool::no_lock_object_pool()=default'],['../structVW_1_1no__lock__object__pool.html#a052f840458de1698921f7ab8af57e15f',1,'VW::no_lock_object_pool::no_lock_object_pool(size_t initial_chunk_size, TInitializer initializer={}, size_t chunk_size=8)']]],
   ['node_5fcost',['node_cost',['../structVW_1_1reductions_1_1cats_1_1node__cost.html#ac4f76249da7652a2e10c049388dae17a',1,'VW::reductions::cats::node_cost::node_cost()'],['../structVW_1_1reductions_1_1cats_1_1node__cost.html#a37a54397917359076cc56677c6b82774',1,'VW::reductions::cats::node_cost::node_cost(uint32_t node_id, float cost)']]],

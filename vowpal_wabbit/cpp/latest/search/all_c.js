@@ -36,7 +36,7 @@ var searchData=
   ['last_5fw',['last_w',['../structVW_1_1estimator__config.html#ad3c5088ded0c60bbde6ea7ae3a247049',1,'VW::estimator_config']]],
   ['lasteventid',['LastEventId',['../structdsjson__metrics.html#aa673f398cf06ec1740db6b90afd433e3',1,'dsjson_metrics']]],
   ['lasteventtime',['LastEventTime',['../structdsjson__metrics.html#af408836b971b1ba858d0033d3fb3211c',1,'dsjson_metrics']]],
-  ['lb_5ftrick',['lb_trick',['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a54936b551c3a2b2824742fe720605486',1,'VW::reductions::automl::interaction_config_manager']]],
+  ['lb_5ftrick',['lb_trick',['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#ae8b5d7c274c915697645d926de1124a2',1,'VW::reductions::automl::interaction_config_manager']]],
   ['lbl_5fparser',['lbl_parser',['../structparser.html#a4c24590fbd68c12a3ad2c3b0a714d102',1,'parser']]],
   ['lda',['lda',['../structVW_1_1workspace.html#a9d65c02f12dac8af000b913eb5aee9f3',1,'VW::workspace']]],
   ['lda_5fcore_2eh',['lda_core.h',['../lda__core_8h.html',1,'']]],

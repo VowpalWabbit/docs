@@ -21,6 +21,7 @@ var searchData=
   ['new',['New',['../namespaceVW_1_1reductions_1_1automl.html#a972530ec4a7a21fef5af9a5d7ae4379ca03c2e7e41ffc181a4e84080b4710e81e',1,'VW::reductions::automl']]],
   ['new_5funused_5fexample',['new_unused_example',['../namespaceVW.html#a3846d133af77206c04acf204f01b5dba',1,'VW']]],
   ['next',['next',['../structVW_1_1details_1_1input__parser.html#a3aaa99c3b44baf727caa3fc2305bf931',1,'VW::details::input_parser']]],
+  ['next_5fnon_5fzero',['next_non_zero',['../classdense__iterator.html#ac96de30bfcd9bdbd2983b923e31033dc',1,'dense_iterator']]],
   ['nn_2eh',['nn.h',['../nn_8h.html',1,'']]],
   ['nn_5foutput_5fnamespace',['nn_output_namespace',['../constant_8h.html#add9fa018879554a58b54f0b39a5c750b',1,'constant.h']]],
   ['nn_5fsetup',['nn_setup',['../namespaceVW_1_1reductions.html#ae3049e94f03a3c690a50665b94b2fcba',1,'VW::reductions']]],
