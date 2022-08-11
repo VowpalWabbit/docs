@@ -38,6 +38,7 @@ var searchData=
   ['option_5fbuilder',['option_builder',['../structVW_1_1config_1_1option__builder.html#af628f3b0349279c6a0e429602e9babdc',1,'VW::config::option_builder']]],
   ['option_5fgroup_5fdefinition',['option_group_definition',['../structVW_1_1config_1_1option__group__definition.html#a2073602ad99847e2640d7a33902f8cb9',1,'VW::config::option_group_definition']]],
   ['options_5fcli',['options_cli',['../structVW_1_1config_1_1options__cli.html#ae8dfd0bf12354ef94f130206d6e27d68',1,'VW::config::options_cli']]],
+  ['oracle_5frand_5fimpl',['oracle_rand_impl',['../structVW_1_1reductions_1_1automl_1_1oracle__rand__impl.html#a4ced81fc5e947d2f9ad6e92aa77a9dcc',1,'VW::reductions::automl::oracle_rand_impl']]],
   ['out_5fcritical',['out_critical',['../structVW_1_1io_1_1details_1_1logger__impl.html#a9fdcc13eb231a9ab3158da43c153c355',1,'VW::io::details::logger_impl::out_critical()'],['../structVW_1_1io_1_1logger.html#a89d423d39d9b1b809a16eae25044647f',1,'VW::io::logger::out_critical()']]],
   ['out_5ferror',['out_error',['../structVW_1_1io_1_1details_1_1logger__impl.html#a331365db6b58c9be0df8f177691e4cd7',1,'VW::io::details::logger_impl::out_error()'],['../structVW_1_1io_1_1logger.html#af71b61c0b5be11f980b120fb6edf5faf',1,'VW::io::logger::out_error()']]],
   ['out_5finfo',['out_info',['../structVW_1_1io_1_1details_1_1logger__impl.html#ad487bc666f784817a3a24dda8c60f20d',1,'VW::io::details::logger_impl::out_info()'],['../structVW_1_1io_1_1logger.html#abeea5f87c92cd49621579c529367fed4',1,'VW::io::logger::out_info()']]],

@@ -68,7 +68,7 @@ var searchData=
   ['escaped_5ftokenize',['escaped_tokenize',['../parse__primitives_8h.html#ae5600a8846c21114564ebd52b6c5a953',1,'parse_primitives.h']]],
   ['estimator_5fconfig',['estimator_config',['../structVW_1_1estimator__config.html',1,'VW::estimator_config'],['../structVW_1_1estimator__config.html#a9cc1bdf9d16ddddc1ff7b45c9598a990',1,'VW::estimator_config::estimator_config()'],['../structVW_1_1estimator__config.html#a73034c55a034e572da69861dae4079db',1,'VW::estimator_config::estimator_config(double alpha, double tau)']]],
   ['estimator_5fconfig_2eh',['estimator_config.h',['../estimator__config_8h.html',1,'']]],
-  ['estimators',['estimators',['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a57c01778af27333a87c738adaa4fa323',1,'VW::reductions::automl::interaction_config_manager']]],
+  ['estimators',['estimators',['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a8ab5bf2e4957e7302eae9914f15ffec2',1,'VW::reductions::automl::interaction_config_manager']]],
   ['eta',['eta',['../structVW_1_1workspace.html#ad79f6dc7d719ba0d0de5f829177fb745',1,'VW::workspace']]],
   ['eta_5fdecay_5frate',['eta_decay_rate',['../structVW_1_1workspace.html#a657b3989f456fadc02b1067dc3bc1db5',1,'VW::workspace']]],
   ['eval_5fsum_5fft_5fsquared_5fof_5fgenerated_5fft',['eval_sum_ft_squared_of_generated_ft',['../namespaceINTERACTIONS.html#a248db354b89ae5091958a52b98dde09c',1,'INTERACTIONS']]],

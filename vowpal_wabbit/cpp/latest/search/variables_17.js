@@ -11,10 +11,10 @@ var searchData=
   ['weighted_5flabeled_5fexamples',['weighted_labeled_examples',['../structshared__data.html#a92ff45eb41fa4b3ccab7576925c6acdc',1,'shared_data']]],
   ['weighted_5flabels',['weighted_labels',['../structshared__data.html#a462fe3c516f5d87de08862c7d7a9136d',1,'shared_data']]],
   ['weighted_5funlabeled_5fexamples',['weighted_unlabeled_examples',['../structshared__data.html#ac3d7065c2ec09563226497ab0805b4b5',1,'shared_data']]],
-  ['weights',['weights',['../structVW_1_1workspace.html#ace17d34fe89611ea454960f50c49feef',1,'VW::workspace::weights()'],['../structVW_1_1LEARNER_1_1learner.html#aa72097142563b721f185f8ae862ec29d',1,'VW::LEARNER::learner::weights()'],['../structGD_1_1multipredict__info.html#ac1993819a02763fa326ed38197ae2ee4',1,'GD::multipredict_info::weights()'],['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a35d87c2f56b338768915c3955ae0a9e5',1,'VW::reductions::automl::interaction_config_manager::weights()']]],
+  ['weights',['weights',['../structVW_1_1workspace.html#ace17d34fe89611ea454960f50c49feef',1,'VW::workspace::weights()'],['../structVW_1_1LEARNER_1_1learner.html#aa72097142563b721f185f8ae862ec29d',1,'VW::LEARNER::learner::weights()'],['../structGD_1_1multipredict__info.html#ac1993819a02763fa326ed38197ae2ee4',1,'GD::multipredict_info::weights()'],['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a399574cad98c22ebe5a4090fc6f8765e',1,'VW::reductions::automl::interaction_config_manager::weights()']]],
   ['wildcard_5fnamespace',['wildcard_namespace',['../constant_8h.html#aa97811baf6be533f89fe42c1043e7ab2',1,'constant.h']]],
   ['words',['words',['../structparser.html#ab5a5d63e69677436cba0278783f50578',1,'parser']]],
-  ['wpp',['wpp',['../structVW_1_1workspace.html#a3510119148d38226ff3388c447dbe235',1,'VW::workspace::wpp()'],['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a4c1e89de9a9b65f80a258f3ff58900e2',1,'VW::reductions::automl::interaction_config_manager::wpp()']]],
+  ['wpp',['wpp',['../structVW_1_1workspace.html#a3510119148d38226ff3388c447dbe235',1,'VW::workspace::wpp()'],['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#aaa8ff6bf29d0fff90fe247e3bb2a9880',1,'VW::reductions::automl::interaction_config_manager::wpp()']]],
   ['wrapping',['wrapping',['../structVW_1_1column__definition.html#a1634f0a00993f3b35e5d34f77c10d37f',1,'VW::column_definition']]],
   ['write_5fcache',['write_cache',['../structparser.html#a5f48db95a95c057288a00642d4cf9f14',1,'parser']]]
 ];

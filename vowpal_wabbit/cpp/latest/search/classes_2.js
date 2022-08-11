@@ -13,6 +13,7 @@ var searchData=
   ['cb_5fto_5fcs',['cb_to_cs',['../structGEN__CS_1_1cb__to__cs.html',1,'GEN_CS']]],
   ['cb_5fto_5fcs_5fadf',['cb_to_cs_adf',['../structGEN__CS_1_1cb__to__cs__adf.html',1,'GEN_CS']]],
   ['cbify_5fadf_5fdata',['cbify_adf_data',['../structVW_1_1reductions_1_1cbify__adf__data.html',1,'VW::reductions']]],
+  ['champdupe_5fimpl',['champdupe_impl',['../structVW_1_1reductions_1_1automl_1_1champdupe__impl.html',1,'VW::reductions::automl']]],
   ['chisquared',['ChiSquared',['../classVW_1_1distributionally__robust_1_1ChiSquared.html',1,'VW::distributionally_robust']]],
   ['cli_5fhelp_5fformatter',['cli_help_formatter',['../structVW_1_1config_1_1cli__help__formatter.html',1,'VW::config']]],
   ['cli_5foptions_5fserializer',['cli_options_serializer',['../structVW_1_1config_1_1cli__options__serializer.html',1,'VW::config']]],

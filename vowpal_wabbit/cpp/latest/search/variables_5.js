@@ -14,7 +14,7 @@ var searchData=
   ['end_5fit',['end_it',['../structINTERACTIONS_1_1feature__gen__data.html#a2294a786f788b6fd23517222aad41e79',1,'INTERACTIONS::feature_gen_data']]],
   ['end_5fpass',['end_pass',['../structVW_1_1example.html#ad5724857ac19bafb0ebf578613e83ee7',1,'VW::example']]],
   ['epsilon',['epsilon',['../structVW_1_1cb__explore__adf_1_1greedy_1_1reduction__features.html#a3616c21e0c6d6e6fcb7e09b55b34ae53',1,'VW::cb_explore_adf::greedy::reduction_features']]],
-  ['estimators',['estimators',['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a57c01778af27333a87c738adaa4fa323',1,'VW::reductions::automl::interaction_config_manager']]],
+  ['estimators',['estimators',['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a8ab5bf2e4957e7302eae9914f15ffec2',1,'VW::reductions::automl::interaction_config_manager']]],
   ['eta',['eta',['../structVW_1_1workspace.html#ad79f6dc7d719ba0d0de5f829177fb745',1,'VW::workspace']]],
   ['eta_5fdecay_5frate',['eta_decay_rate',['../structVW_1_1workspace.html#a657b3989f456fadc02b1067dc3bc1db5',1,'VW::workspace']]],
   ['event',['event',['../structCB__EVAL_1_1label.html#af295a09fa564952d45e7b016fc60e1ff',1,'CB_EVAL::label']]],

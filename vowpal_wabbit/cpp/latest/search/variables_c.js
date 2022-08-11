@@ -21,7 +21,6 @@ var searchData=
   ['last_5fw',['last_w',['../structVW_1_1estimator__config.html#ad3c5088ded0c60bbde6ea7ae3a247049',1,'VW::estimator_config']]],
   ['lasteventid',['LastEventId',['../structdsjson__metrics.html#aa673f398cf06ec1740db6b90afd433e3',1,'dsjson_metrics']]],
   ['lasteventtime',['LastEventTime',['../structdsjson__metrics.html#af408836b971b1ba858d0033d3fb3211c',1,'dsjson_metrics']]],
-  ['lb_5ftrick',['lb_trick',['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#ae8b5d7c274c915697645d926de1124a2',1,'VW::reductions::automl::interaction_config_manager']]],
   ['lbl_5fparser',['lbl_parser',['../structparser.html#a4c24590fbd68c12a3ad2c3b0a714d102',1,'parser']]],
   ['lda',['lda',['../structVW_1_1workspace.html#a9d65c02f12dac8af000b913eb5aee9f3',1,'VW::workspace']]],
   ['ldict',['ldict',['../structshared__data.html#a535958b995f49481d87c6d8fb62ab9ef',1,'shared_data']]],
@@ -41,6 +40,6 @@ var searchData=
   ['lineparseerror',['LineParseError',['../structdsjson__metrics.html#ab28dcf002ad9e0699e4ebfd6d3813b8c',1,'dsjson_metrics']]],
   ['live_5finteractions',['live_interactions',['../structVW_1_1reductions_1_1automl_1_1aml__estimator.html#ad2a15191e057f1271e3e590eed4216fb',1,'VW::reductions::automl::aml_estimator']]],
   ['loaded_5fdictionaries',['loaded_dictionaries',['../structVW_1_1workspace.html#a40c9de1e1015c27d3d5b098481acbad7',1,'VW::workspace']]],
-  ['logger',['logger',['../structVW_1_1workspace.html#a64e66403030d2917810f6684439c38dc',1,'VW::workspace::logger()'],['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a9bd02c88b9d9cd3c55c4703916176a01',1,'VW::reductions::automl::interaction_config_manager::logger()'],['../structVW_1_1reductions_1_1automl_1_1automl.html#a886eadafb79f517c0ee13e4e8e32574f',1,'VW::reductions::automl::automl::logger()']]],
+  ['logger',['logger',['../structVW_1_1workspace.html#a64e66403030d2917810f6684439c38dc',1,'VW::workspace::logger()'],['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#ac4bf530b9cd18e18c90942dc01d48c5c',1,'VW::reductions::automl::interaction_config_manager::logger()'],['../structVW_1_1reductions_1_1automl_1_1automl.html#a886eadafb79f517c0ee13e4e8e32574f',1,'VW::reductions::automl::automl::logger()']]],
   ['loss',['loss',['../structVW_1_1example.html#a6b45287a6e699a3fc3d3a2f7a916728b',1,'VW::example::loss()'],['../structVW_1_1workspace.html#a7353810c29b1e203dc46ea27098aa634',1,'VW::workspace::loss()']]]
 ];
