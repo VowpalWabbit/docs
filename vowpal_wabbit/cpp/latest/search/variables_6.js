@@ -3,6 +3,7 @@ var searchData=
   ['f',['f',['../unionexploration_1_1int__float.html#aae7ba8412357e474898bc44bc43ab394',1,'exploration::int_float']]],
   ['feature_5fcount',['feature_count',['../structNamespace.html#aa7695877ea34d84f25a12c44def2347b',1,'Namespace']]],
   ['feature_5fgroup',['feature_group',['../structNamespace.html#a7ba33baa864fb7a27d078a97cf842be7',1,'Namespace']]],
+  ['feature_5flist',['feature_list',['../classVW_1_1parsers_1_1csv__parser.html#a049f7a104c7ee6c8daa436a867d41bf1',1,'VW::parsers::csv_parser']]],
   ['feature_5fmask',['feature_mask',['../structVW_1_1workspace.html#a2b69dfb1a44e46fbaa0ba40ab05e0ad8',1,'VW::workspace']]],
   ['feature_5fspace',['feature_space',['../structVW_1_1example__predict.html#aff83d481714c0efece6cdec03f4cf6bb',1,'VW::example_predict']]],
   ['file_5fhash',['file_hash',['../structdictionary__info.html#a1ab499f54ad0f7cb77a6eb299a36f479',1,'dictionary_info']]],

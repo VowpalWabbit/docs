@@ -114,6 +114,7 @@ var searchData=
   ['cs_5fprep_5flabels',['cs_prep_labels',['../namespaceGEN__CS.html#a4a716c5192015558b0ca7ff53a962435',1,'GEN_CS']]],
   ['csldf_5fsetup',['csldf_setup',['../namespaceVW_1_1reductions.html#a2c6123a16c664994e7e4c6ff9f6105d0',1,'VW::reductions']]],
   ['csoaa_5fsetup',['csoaa_setup',['../namespaceVW_1_1reductions.html#a63c89c86fb7a6d6f54c5f07d43a23cc3',1,'VW::reductions']]],
+  ['csv_5fparser',['csv_parser',['../classVW_1_1parsers_1_1csv__parser.html#af1a0f2bd8129370a0aa7c7a1cd2db2ef',1,'VW::parsers::csv_parser']]],
   ['current_5fips',['current_ips',['../structVW_1_1estimator__config.html#a1469e8c73bc748c6776bd3a90554221e',1,'VW::estimator_config']]],
   ['current_5fstate',['current_state',['../structVWReaderHandler.html#a815ced4a606d3f1e66176cf0bf156bcc',1,'VWReaderHandler']]],
   ['currentnamespace',['CurrentNamespace',['../structContext.html#a9d1381c22ba19a9ca58b7c0f615eaa3a',1,'Context']]]

@@ -13,6 +13,7 @@ var searchData=
   ['feature_5fgroup_2eh',['feature_group.h',['../feature__group_8h.html',1,'']]],
   ['feature_5findex',['feature_index',['../feature__group_8h.html#a0100b371f093c4a60cd31557ff902c0d',1,'feature_group.h']]],
   ['feature_5findex_5fnum_5fbits',['feature_index_num_bits',['../classvw__slim_1_1vw__predict.html#a319098f444f533aafe6add9c9a0ac0de',1,'vw_slim::vw_predict']]],
+  ['feature_5flist',['feature_list',['../classVW_1_1parsers_1_1csv__parser.html#a049f7a104c7ee6c8daa436a867d41bf1',1,'VW::parsers::csv_parser']]],
   ['feature_5fmask',['feature_mask',['../structVW_1_1workspace.html#a2b69dfb1a44e46fbaa0ba40ab05e0ad8',1,'VW::workspace']]],
   ['feature_5foffset_5fguard',['feature_offset_guard',['../classvw__slim_1_1feature__offset__guard.html',1,'vw_slim::feature_offset_guard'],['../classvw__slim_1_1feature__offset__guard.html#aaa1c536091d662701bb6ea6fba5d46de',1,'vw_slim::feature_offset_guard::feature_offset_guard()']]],
   ['feature_5fpush_5fback',['feature_push_back',['../classvw__slim_1_1namespace__copy__guard.html#ab181e0938496d88d912485e3d0e183aa',1,'vw_slim::namespace_copy_guard']]],

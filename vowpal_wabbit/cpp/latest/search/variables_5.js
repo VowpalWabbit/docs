@@ -9,6 +9,7 @@ var searchData=
   ['empty_5faudit_5fstrings',['EMPTY_AUDIT_STRINGS',['../interactions__predict_8h.html#a92ee22947e48ebc245853352f43c5c79',1,'interactions_predict.h']]],
   ['empty_5fversion_5ffile',['EMPTY_VERSION_FILE',['../namespaceVW_1_1version__definitions.html#ab18b47007e482b7941289af58dc13a55',1,'VW::version_definitions']]],
   ['emptylines_5fseparate_5fexamples',['emptylines_separate_examples',['../structparser.html#a751fa0c146800b9ab19e9db245d16994',1,'parser']]],
+  ['enabled',['enabled',['../structVW_1_1parsers_1_1csv__parser__options.html#ac6f55f83f9e67c192e0d92921e9834f4',1,'VW::parsers::csv_parser_options']]],
   ['end_5findex',['end_index',['../structVW_1_1namespace__extent.html#ad4c20a0d5b90f1aded05ed438a19281b',1,'VW::namespace_extent']]],
   ['end_5fit',['end_it',['../structINTERACTIONS_1_1feature__gen__data.html#a2294a786f788b6fd23517222aad41e79',1,'INTERACTIONS::feature_gen_data']]],
   ['end_5fpass',['end_pass',['../structVW_1_1example.html#ad5724857ac19bafb0ebf578613e83ee7',1,'VW::example']]],

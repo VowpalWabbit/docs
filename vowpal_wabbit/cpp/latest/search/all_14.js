@@ -4,6 +4,7 @@ var searchData=
   ['table_5fformatter_2eh',['table_formatter.h',['../table__formatter_8h.html',1,'']]],
   ['tag',['tag',['../structVW_1_1example.html#a41edbcd2926f6c33324c7fcd497a7c54',1,'VW::example::tag()'],['../structVW_1_1flat__example.html#a7fde8c0f680ff673d9721756a53eb69c',1,'VW::flat_example::tag()']]],
   ['tag_5flen',['tag_len',['../structVW_1_1flat__example.html#a77851269313f78e92dc461fd35068e81',1,'VW::flat_example']]],
+  ['tag_5flist',['tag_list',['../classVW_1_1parsers_1_1csv__parser.html#a834a25030edab755990c28bb8e22f9d5',1,'VW::parsers::csv_parser']]],
   ['tag_5fstate',['tag_state',['../structContext.html#aa6d1824e347151def7ebfe71586de5a0',1,'Context']]],
   ['tag_5futils_2eh',['tag_utils.h',['../tag__utils_8h.html',1,'']]],
   ['tagstate',['TagState',['../structTagState.html',1,'TagState&lt; audit &gt;'],['../structTagState.html#a45e93c4c4eca7e556834771aac20e057',1,'TagState::TagState()']]],

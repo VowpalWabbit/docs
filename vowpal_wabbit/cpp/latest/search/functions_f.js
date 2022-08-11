@@ -1,6 +1,7 @@
 var searchData=
 [
   ['parse_5fcontext',['parse_context',['../parse__slates__example__json_8h.html#aa490fa876291a0176d726dd3ac2c2bf3',1,'parse_slates_example_json.h']]],
+  ['parse_5fcsv_5fexamples',['parse_csv_examples',['../namespaceVW_1_1parsers.html#a6f5ce055b7395af26d9516fb46140649',1,'VW::parsers']]],
   ['parse_5fdispatch',['parse_dispatch',['../parse__dispatch__loop_8h.html#a896e2dc3e71579cf8d67d3b89d5d4e64',1,'parse_dispatch_loop.h']]],
   ['parse_5fexample_5flabel',['parse_example_label',['../namespaceVW.html#a96a159e0a5ee9f2cb271a8f3760a125a',1,'VW::parse_example_label(string_view label, const VW::label_parser &amp;lbl_parser, const named_labels *ldict, label_parser_reuse_mem &amp;reuse_mem, example &amp;ec, VW::io::logger &amp;logger)'],['../namespaceVW.html#a1aed0253bec2ed2c16e4328ad6352ec2',1,'VW::parse_example_label(VW::workspace &amp;all, example &amp;ec, const std::string &amp;label)']]],
   ['parse_5fexamples',['parse_examples',['../classVW_1_1parsers_1_1flatbuffer_1_1parser.html#af8b3c0a54b678256b843b6a950bde8c3',1,'VW::parsers::flatbuffer::parser']]],

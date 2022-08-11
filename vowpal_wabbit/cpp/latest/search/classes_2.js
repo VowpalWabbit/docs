@@ -26,5 +26,7 @@ var searchData=
   ['config_5foracle',['config_oracle',['../structVW_1_1reductions_1_1automl_1_1config__oracle.html',1,'VW::reductions::automl']]],
   ['context',['Context',['../structContext.html',1,'']]],
   ['continuous_5flabel',['continuous_label',['../structVW_1_1cb__continuous_1_1continuous__label.html',1,'VW::cb_continuous']]],
-  ['continuous_5flabel_5felm',['continuous_label_elm',['../structVW_1_1cb__continuous_1_1continuous__label__elm.html',1,'VW::cb_continuous']]]
+  ['continuous_5flabel_5felm',['continuous_label_elm',['../structVW_1_1cb__continuous_1_1continuous__label__elm.html',1,'VW::cb_continuous']]],
+  ['csv_5fparser',['csv_parser',['../classVW_1_1parsers_1_1csv__parser.html',1,'VW::parsers']]],
+  ['csv_5fparser_5foptions',['csv_parser_options',['../structVW_1_1parsers_1_1csv__parser__options.html',1,'VW::parsers']]]
 ];

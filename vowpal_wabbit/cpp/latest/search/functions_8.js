@@ -1,6 +1,7 @@
 var searchData=
 [
   ['handle_5ffeatures_5fvalue',['handle_features_value',['../parse__slates__example__json_8h.html#a8aa996ba6ebd4f7297d16c0b28e405c4',1,'parse_slates_example_json.h']]],
+  ['handle_5fparse_5fargs',['handle_parse_args',['../classVW_1_1parsers_1_1csv__parser.html#abc05c240963f50a39973649d81d90219',1,'VW::parsers::csv_parser']]],
   ['has_5fempty_5finteraction',['has_empty_interaction',['../namespaceINTERACTIONS.html#ae0ef592134bc77a708e5d2df00e28643',1,'INTERACTIONS::has_empty_interaction(const std::array&lt; features, NUM_NAMESPACES &gt; &amp;feature_groups, const std::vector&lt; VW::namespace_index &gt; &amp;namespace_indexes)'],['../namespaceINTERACTIONS.html#a1071f975dddf9f87a6f45c4ce48a6ed1',1,'INTERACTIONS::has_empty_interaction(const std::array&lt; features, NUM_NAMESPACES &gt; &amp;feature_groups, const std::vector&lt; extent_term &gt; &amp;namespace_indexes)']]],
   ['has_5fempty_5finteraction_5fcubic',['has_empty_interaction_cubic',['../namespaceINTERACTIONS.html#ab1d474319ed96ab063be5cfd356cc5a0',1,'INTERACTIONS']]],
   ['has_5fempty_5finteraction_5fquadratic',['has_empty_interaction_quadratic',['../namespaceINTERACTIONS.html#a571ae402ec59b6b1b2f72059f1235c36',1,'INTERACTIONS']]],

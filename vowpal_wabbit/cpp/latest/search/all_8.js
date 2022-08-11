@@ -1,6 +1,7 @@
 var searchData=
 [
   ['handle_5ffeatures_5fvalue',['handle_features_value',['../parse__slates__example__json_8h.html#a8aa996ba6ebd4f7297d16c0b28e405c4',1,'parse_slates_example_json.h']]],
+  ['handle_5fparse_5fargs',['handle_parse_args',['../classVW_1_1parsers_1_1csv__parser.html#abc05c240963f50a39973649d81d90219',1,'VW::parsers::csv_parser']]],
   ['handler',['handler',['../structjson__parser.html#a0c02103e082e847fa4d44247f53a52b8',1,'json_parser']]],
   ['has_5fempty_5finteraction',['has_empty_interaction',['../namespaceINTERACTIONS.html#ae0ef592134bc77a708e5d2df00e28643',1,'INTERACTIONS::has_empty_interaction(const std::array&lt; features, NUM_NAMESPACES &gt; &amp;feature_groups, const std::vector&lt; VW::namespace_index &gt; &amp;namespace_indexes)'],['../namespaceINTERACTIONS.html#a1071f975dddf9f87a6f45c4ce48a6ed1',1,'INTERACTIONS::has_empty_interaction(const std::array&lt; features, NUM_NAMESPACES &gt; &amp;feature_groups, const std::vector&lt; extent_term &gt; &amp;namespace_indexes)']]],
   ['has_5fempty_5finteraction_5fcubic',['has_empty_interaction_cubic',['../namespaceINTERACTIONS.html#ab1d474319ed96ab063be5cfd356cc5a0',1,'INTERACTIONS']]],
@@ -24,6 +25,8 @@ var searchData=
   ['hasher',['hasher',['../structparser.html#a55a42ce8e7ad6637f28bc40d95356b21',1,'parser']]],
   ['hashstring',['hashstring',['../hashstring_8h.html#ad0c610591e5f64e2d6e5753b6f4266f8',1,'hashstring.h']]],
   ['hashstring_2eh',['hashstring.h',['../hashstring_8h.html',1,'']]],
+  ['header_5ffn',['header_fn',['../classVW_1_1parsers_1_1csv__parser.html#ad2f85c3ae28a23868965a19d7b45ffcf',1,'VW::parsers::csv_parser']]],
+  ['header_5fns',['header_ns',['../classVW_1_1parsers_1_1csv__parser.html#aec004e0be665890210bd7f288fe6c505',1,'VW::parsers::csv_parser']]],
   ['help',['help',['../structVW_1_1config_1_1option__builder.html#af0ab17d905621f08b1545d575c132dab',1,'VW::config::option_builder']]],
   ['help_5fformatter',['help_formatter',['../structVW_1_1config_1_1help__formatter.html',1,'VW::config']]],
   ['help_5fformatter_2eh',['help_formatter.h',['../help__formatter_8h.html',1,'']]],

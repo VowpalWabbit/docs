@@ -2,7 +2,7 @@ var searchData=
 [
   ['offset',['offset',['../structVW_1_1details_1_1invert__hash__info.html#accb54a0b742e5a2ef44b2bfb3b0e665c',1,'VW::details::invert_hash_info::offset()'],['../structINTERACTIONS_1_1extent__interaction__expansion__stack__item.html#adb98082a8e717734c516e75230379767',1,'INTERACTIONS::extent_interaction_expansion_stack_item::offset()']]],
   ['old_5fweighted_5flabeled_5fexamples',['old_weighted_labeled_examples',['../structshared__data.html#a22c93bc868692a1f3dbb5cc24ec1fa3a',1,'shared_data']]],
-  ['options',['options',['../structVW_1_1workspace.html#ad87a23d32e412e1af4a788e4ce6f11a2',1,'VW::workspace']]],
+  ['options',['options',['../structVW_1_1workspace.html#ad87a23d32e412e1af4a788e4ce6f11a2',1,'VW::workspace::options()'],['../classVW_1_1parsers_1_1csv__parser.html#a8563950ad1f96fc33414d93d063c7ac0',1,'VW::parsers::csv_parser::options()']]],
   ['original_5flabel_5fcost_5fstate',['original_label_cost_state',['../structContext.html#aa44a0ff03bc749b2daacf82368ba49fe',1,'Context']]],
   ['originallabelcost',['originalLabelCost',['../structDecisionServiceInteraction.html#a6cfb3cd1a774e916f97d213a0ed0a859',1,'DecisionServiceInteraction']]],
   ['originallabelcostfirstslot',['originalLabelCostFirstSlot',['../structDecisionServiceInteraction.html#a0176b1c151fe113ce0ffe9428725185b',1,'DecisionServiceInteraction']]],

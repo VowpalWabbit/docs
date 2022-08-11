@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['n',['n',['../structVW_1_1distributionally__robust_1_1Duals.html#ad72686b6b792efe744a034674dc09847',1,'VW::distributionally_robust::Duals::n()'],['../structVW_1_1reductions_1_1expreplay_1_1expreplay.html#a2563123c377deacbee6f4ec4fa5051e9',1,'VW::reductions::expreplay::expreplay::N()']]],
+  ['n',['N',['../structVW_1_1reductions_1_1expreplay_1_1expreplay.html#a2563123c377deacbee6f4ec4fa5051e9',1,'VW::reductions::expreplay::expreplay::N()'],['../structVW_1_1distributionally__robust_1_1Duals.html#ad72686b6b792efe744a034674dc09847',1,'VW::distributionally_robust::Duals::n()']]],
   ['name',['name',['../structVW_1_1audit__strings.html#aeda51a335733a0481b53d8057c22fdf9',1,'VW::audit_strings::name()'],['../structdictionary__info.html#aafd5bfbc5290ad275067a8cf3397970a',1,'dictionary_info::name()'],['../structNamespace.html#a2344df6d1bc705fc8afa24b2c9c79f57',1,'Namespace::name()'],['../structBaseState.html#a675dcc2bdda01de5cde893e77a6116b1',1,'BaseState::name()'],['../structVW_1_1primitive__feature__space.html#a8f5b0342e8c1f8c6d6e5648d14894a59',1,'VW::primitive_feature_space::name()']]],
   ['namespace_5fdictionaries',['namespace_dictionaries',['../structVW_1_1workspace.html#a7a54ee459d452d564df57ff42b799677',1,'VW::workspace']]],
   ['namespace_5fextents',['namespace_extents',['../structfeatures.html#af549d0f8686ce819c6467ff446ff86b3',1,'features']]],
@@ -30,6 +30,7 @@ var searchData=
   ['not_5fimplemented',['not_implemented',['../error__data_8h.html#ac0b7538a87fdb2c9510cdbdc8ac06573',1,'error_data.h']]],
   ['ns',['ns',['../structVW_1_1audit__strings.html#ae12b6141b6e9f12005f58916f9e90816',1,'VW::audit_strings']]],
   ['ns_5fcounter',['ns_counter',['../structVW_1_1reductions_1_1automl_1_1config__oracle.html#acc372f91c650cfde042d450369764fbe',1,'VW::reductions::automl::config_oracle::ns_counter()'],['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a36527915f839e8d92c35891b620ffdc4',1,'VW::reductions::automl::interaction_config_manager::ns_counter()']]],
+  ['ns_5fvalue',['ns_value',['../classVW_1_1parsers_1_1csv__parser.html#aa55054cc0cbeab2e75136f88c1a60ea4',1,'VW::parsers::csv_parser']]],
   ['num_5factions',['num_actions',['../structGEN__CS_1_1cb__to__cs.html#a2e90df436e7af9200081952367583d30',1,'GEN_CS::cb_to_cs::num_actions()'],['../structVW_1_1reductions_1_1cats_1_1cats.html#a666615e3086693da036c00e47094a7ac',1,'VW::reductions::cats::cats::num_actions()'],['../structVW_1_1reductions_1_1cbify__adf__data.html#a07a25062fa801804cb48466234620822',1,'VW::reductions::cbify_adf_data::num_actions()'],['../structVW_1_1reductions_1_1pmf__to__pdf__reduction.html#a8728e75b7e98590614b3e282899a2233',1,'VW::reductions::pmf_to_pdf_reduction::num_actions()']]],
   ['num_5fbits',['num_bits',['../structVW_1_1workspace.html#a0da53208830eed64d95200668d3eca1b',1,'VW::workspace']]],
   ['num_5fchildren',['num_children',['../structVW_1_1workspace.html#ab21f5313dee37603393088fd88d225e0',1,'VW::workspace']]],

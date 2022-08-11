@@ -6,6 +6,8 @@ var searchData=
   ['hash_5finv',['hash_inv',['../structVW_1_1workspace.html#a6a0affacdd26dc9bfdae40907d49f474',1,'VW::workspace']]],
   ['hash_5fseed',['hash_seed',['../structVW_1_1workspace.html#a4c78ac423f3507159f4d3b428250c2a3',1,'VW::workspace']]],
   ['hasher',['hasher',['../structparser.html#a55a42ce8e7ad6637f28bc40d95356b21',1,'parser']]],
+  ['header_5ffn',['header_fn',['../classVW_1_1parsers_1_1csv__parser.html#ad2f85c3ae28a23868965a19d7b45ffcf',1,'VW::parsers::csv_parser']]],
+  ['header_5fns',['header_ns',['../classVW_1_1parsers_1_1csv__parser.html#aec004e0be665890210bd7f288fe6c505',1,'VW::parsers::csv_parser']]],
   ['history_5fnamespace',['history_namespace',['../constant_8h.html#a622e9192f051b3662837af6d3d0fbac8',1,'constant.h']]],
   ['holdout_5fafter',['holdout_after',['../structVW_1_1workspace.html#a0b0e80a0b71a5d9aa42cdd79e0b5c894',1,'VW::workspace']]],
   ['holdout_5fbest_5floss',['holdout_best_loss',['../structshared__data.html#a00b7fa4030c40b18d1b612586aec46ea',1,'shared_data']]],
