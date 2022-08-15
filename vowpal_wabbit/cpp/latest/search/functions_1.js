@@ -39,6 +39,8 @@ var searchData=
   ['api_5fstatus',['api_status',['../classVW_1_1experimental_1_1api__status.html#a83460b76f47b7b76ee50d4c40e7f8826',1,'VW::experimental::api_status']]],
   ['append_5fempty_5fnewline_5fexample_5ffor_5fdriver',['append_empty_newline_example_for_driver',['../parse__example__json_8h.html#ade850e3003a482ebb0b70b1c28ae2921',1,'parse_example_json.h']]],
   ['apply_5fconfig',['apply_config',['../namespaceVW_1_1reductions_1_1automl.html#aef21db84edb0c085c87abe8a0098420b',1,'VW::reductions::automl']]],
+  ['apply_5fconfig_5fat_5fslot',['apply_config_at_slot',['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a86be79505aea2c6f2e965e55e08d5052',1,'VW::reductions::automl::interaction_config_manager']]],
+  ['apply_5fnew_5fchamp',['apply_new_champ',['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a5267ed1fb6abf232c463ad4747e1eda2',1,'VW::reductions::automl::interaction_config_manager']]],
   ['apply_5fpdrop',['apply_pdrop',['../namespaceVW.html#a6c133d5f9c3794fb08e22e65bc4c4475',1,'VW']]],
   ['are_5ffeatures_5fcompatible',['are_features_compatible',['../namespaceVW.html#aff759bc3da0e31055b70753e9e4560e0',1,'VW']]],
   ['are_5fsame',['are_same',['../namespaceVW_1_1math.html#a5283b8fa4ef629eb885fce24d672cf07',1,'VW::math']]],

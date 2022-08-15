@@ -156,6 +156,8 @@ Namespaces</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:a612adafa4335a873205a21b52c86d2f7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1reductions_1_1automl.html#a612adafa4335a873205a21b52c86d2f7">VW::reductions::automl::interaction_vec_t</a> = std::vector&lt; std::vector&lt; <a class="el" href="feature__group_8h.html#a6bf681255e2fe98ef5dd75040110a62b">namespace_index</a> &gt; &gt;</td></tr>
 <tr class="separator:a612adafa4335a873205a21b52c86d2f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14c00b7d817807250e08fef26ef38be2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1reductions_1_1automl.html#a14c00b7d817807250e08fef26ef38be2">VW::reductions::automl::estimator_vec_t</a> = std::vector&lt; std::pair&lt; aml_estimator, estimator_config &gt; &gt;</td></tr>
+<tr class="separator:a14c00b7d817807250e08fef26ef38be2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfce8b291c93c334ea7ca70526173103"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1reductions_1_1automl.html#acfce8b291c93c334ea7ca70526173103">VW::reductions::automl::priority_func</a> = float(const exclusion_config &amp;, const std::map&lt; <a class="el" href="feature__group_8h.html#a6bf681255e2fe98ef5dd75040110a62b">namespace_index</a>, uint64_t &gt; &amp;)</td></tr>
 <tr class="separator:acfce8b291c93c334ea7ca70526173103"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -176,8 +178,8 @@ Enumerations</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:ad9c7be1539e7381681389863337adf66"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1reductions_1_1automl.html#ad9c7be1539e7381681389863337adf66">VW::reductions::automl::count_namespaces</a> (const multi_ex &amp;ecs, std::map&lt; <a class="el" href="feature__group_8h.html#a6bf681255e2fe98ef5dd75040110a62b">namespace_index</a>, uint64_t &gt; &amp;ns_counter)</td></tr>
 <tr class="separator:ad9c7be1539e7381681389863337adf66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a396d7624526c36e0be00d1ca652c1021"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1reductions_1_1automl.html#a396d7624526c36e0be00d1ca652c1021">VW::reductions::automl::gen_interactions</a> (bool ccb_on, std::map&lt; <a class="el" href="feature__group_8h.html#a6bf681255e2fe98ef5dd75040110a62b">namespace_index</a>, uint64_t &gt; &amp;ns_counter, std::string &amp;interaction_type, std::vector&lt; exclusion_config &gt; &amp;configs, std::vector&lt; std::pair&lt; aml_estimator, estimator_config &gt;&gt; &amp;estimators, uint64_t live_slot)</td></tr>
-<tr class="separator:a396d7624526c36e0be00d1ca652c1021"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b725d40fcf2bad50056583402b474ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1reductions_1_1automl.html#a7b725d40fcf2bad50056583402b474ae">VW::reductions::automl::gen_interactions</a> (bool ccb_on, std::map&lt; <a class="el" href="feature__group_8h.html#a6bf681255e2fe98ef5dd75040110a62b">namespace_index</a>, uint64_t &gt; &amp;ns_counter, std::string &amp;interaction_type, std::vector&lt; exclusion_config &gt; &amp;configs, estimator_vec_t &amp;estimators, uint64_t live_slot)</td></tr>
+<tr class="separator:a7b725d40fcf2bad50056583402b474ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef21db84edb0c085c87abe8a0098420b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1reductions_1_1automl.html#aef21db84edb0c085c87abe8a0098420b">VW::reductions::automl::apply_config</a> (example *ec, interaction_vec_t *live_interactions)</td></tr>
 <tr class="separator:aef21db84edb0c085c87abe8a0098420b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6362a6a0954cbbb9faed46dd26090ea3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1reductions_1_1automl.html#a6362a6a0954cbbb9faed46dd26090ea3">VW::reductions::automl::is_allowed_to_remove</a> (const unsigned char ns)</td></tr>
@@ -229,7 +231,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 15 2022 13:27:27 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 15 2022 17:00:14 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

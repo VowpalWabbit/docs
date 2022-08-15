@@ -69,7 +69,6 @@ var searchData=
   ['do_5freset_5fsource',['do_reset_source',['../structVW_1_1workspace.html#a41cc6598448119a2e3478675cc683f02',1,'VW::workspace']]],
   ['do_5fswap',['do_swap',['../classVW_1_1details_1_1swap__guard__impl.html#aab5175200e844e9aec7344cee91512a4',1,'VW::details::swap_guard_impl::do_swap()'],['../classVW_1_1details_1_1swap__guard__impl__rvalue.html#a8bc7cd28e0cfdaeb2b20246662ff01c0',1,'VW::details::swap_guard_impl_rvalue::do_swap()']]],
   ['do_5fweighting',['do_weighting',['../namespaceVW_1_1details.html#aa681657de3752dd96fc5f34af0999315',1,'VW::details']]],
-  ['do_5fwork',['do_work',['../structVW_1_1reductions_1_1automl_1_1config__oracle.html#acbeb94b283e5f5b8ba13de5b7d55fb18',1,'VW::reductions::automl::config_oracle::do_work()'],['../structVW_1_1reductions_1_1automl_1_1oracle__rand__impl.html#a87ad6dc30a783e093fb96f68c645a608',1,'VW::reductions::automl::oracle_rand_impl::do_work()'],['../structVW_1_1reductions_1_1automl_1_1one__diff__impl.html#a943353a20e57239be9c7fb5fe49c5218',1,'VW::reductions::automl::one_diff_impl::do_work()'],['../structVW_1_1reductions_1_1automl_1_1champdupe__impl.html#a842d6fc327eec5dbf90d13c39a967c3a',1,'VW::reductions::automl::champdupe_impl::do_work()']]],
   ['done',['done',['../structparser.html#a73041b4f11e952967779e142d70f0e32',1,'parser']]],
   ['double',['Double',['../structVWReaderHandler.html#a9b1d990eb0240611a2f3ccce3afaa963',1,'VWReaderHandler']]],
   ['dr',['dr',['../namespaceVW.html#afc6602380e780c653a55bf44b6e5c881ab4688aaaaf17fad03225929fe56ad458',1,'VW']]],

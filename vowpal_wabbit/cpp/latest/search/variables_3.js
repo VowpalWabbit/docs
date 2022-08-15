@@ -62,7 +62,7 @@ var searchData=
   ['conditioning_5fnamespace',['conditioning_namespace',['../constant_8h.html#a315a4da9a17a4eda14c2e61824080c92',1,'constant.h']]],
   ['confidence',['confidence',['../structVW_1_1example.html#a01cd72812b1c44881cd59fa4933efea9',1,'VW::example']]],
   ['config_5findex',['config_index',['../structVW_1_1reductions_1_1automl_1_1aml__estimator.html#a7a50ddef4bd648ff68765a934e838343',1,'VW::reductions::automl::aml_estimator']]],
-  ['configs',['configs',['../structVW_1_1reductions_1_1automl_1_1config__oracle.html#a9bb34b8738d24f3f605900674902bc88',1,'VW::reductions::automl::config_oracle::configs()'],['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#ae40b0bd30abd280f1193307f6232aace',1,'VW::reductions::automl::interaction_config_manager::configs()']]],
+  ['configs',['configs',['../structVW_1_1reductions_1_1automl_1_1config__oracle.html#a4abd5bcf6190bf7ac427f70eada91db1',1,'VW::reductions::automl::config_oracle']]],
   ['configs_5fper_5fchamp_5fchange',['CONFIGS_PER_CHAMP_CHANGE',['../namespaceVW_1_1reductions_1_1automl_1_1anonymous__namespace_02automl__impl_8h_03.html#a188287ce6238a095ef166ec53b377a30',1,'VW::reductions::automl::anonymous_namespace{automl_impl.h}']]],
   ['constant',['constant',['../constant_8h.html#a756519f5578552c555ce0353b3fa4fc6',1,'constant.h']]],
   ['constant_5fa',['CONSTANT_A',['../namespaceexploration.html#abaf668aa89adbccbf973ed7087229251',1,'exploration']]],
