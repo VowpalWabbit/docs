@@ -110,8 +110,6 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1cb__explore__adf_1_1aatop__impl.html">aatop_impl</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1cb__explore__adf_1_1cb__explore__adf__base.html">cb_explore_adf_base</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1cb__explore__adf_1_1cb__explore__adf__large__action__space.html">cb_explore_adf_large_action_space</a></td></tr>
@@ -121,6 +119,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1cb__explore__adf_1_1model__weight__rand__svd__impl.html">model_weight_rand_svd_impl</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1cb__explore__adf_1_1one__pass__svd__impl.html">one_pass_svd_impl</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1cb__explore__adf_1_1one__rank__spanner__state.html">one_rank_spanner_state</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1cb__explore__adf_1_1shrink__factor__config.html">shrink_factor_config</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,7 +133,6 @@ Classes</h2></td></tr>
 Enumerations</h2></td></tr>
 <tr class="memitem:a4e25b8145f7bcb713488fca5bb5ac62f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1cb__explore__adf.html#a4e25b8145f7bcb713488fca5bb5ac62f">implementation_type</a> { <a class="el" href="namespaceVW_1_1cb__explore__adf.html#a4e25b8145f7bcb713488fca5bb5ac62fab3169f4e80288744509df53911a1d1e9">implementation_type::vanilla_rand_svd</a>, 
 <a class="el" href="namespaceVW_1_1cb__explore__adf.html#a4e25b8145f7bcb713488fca5bb5ac62fa2fc5dd8f2d52a2af72e02696da2d1924">implementation_type::model_weight_rand_svd</a>, 
-<a class="el" href="namespaceVW_1_1cb__explore__adf.html#a4e25b8145f7bcb713488fca5bb5ac62fa49acdc8d09bf60cff0987a7461ca2eff">implementation_type::aatop</a>, 
 <a class="el" href="namespaceVW_1_1cb__explore__adf.html#a4e25b8145f7bcb713488fca5bb5ac62faad88127daf97428a7f95444b0ef7fe90">implementation_type::one_pass_svd</a>
  }</td></tr>
 <tr class="separator:a4e25b8145f7bcb713488fca5bb5ac62f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,8 +143,8 @@ Functions</h2></td></tr>
 <tr class="separator:a9a7b608cba2aa775ba41ce214921428e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad98a0d792f967bf73964579782d9ed8b"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1cb__explore__adf.html#ad98a0d792f967bf73964579782d9ed8b">fill_tied</a> (const <a class="el" href="structVW_1_1v__array.html">v_array</a>&lt; <a class="el" href="structACTION__SCORE_1_1action__score.html">ACTION_SCORE::action_score</a> &gt; &amp;preds)</td></tr>
 <tr class="separator:ad98a0d792f967bf73964579782d9ed8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdfa2dafc1121830aecc9566d941320a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1cb__explore__adf.html#acdfa2dafc1121830aecc9566d941320a">find_max_volume</a> (const Eigen::MatrixXf &amp;U, uint64_t X_rid, Eigen::MatrixXf &amp;X, float &amp;max_volume, uint64_t &amp;U_rid)</td></tr>
-<tr class="separator:acdfa2dafc1121830aecc9566d941320a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab21c3b28ad3ed553245cca28b103807e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1cb__explore__adf.html#ab21c3b28ad3ed553245cca28b103807e">find_action_to_maximize_volume</a> (const Eigen::MatrixXf &amp;U, const Eigen::VectorXf &amp;phi, float &amp;max_volume, uint64_t &amp;U_rid)</td></tr>
+<tr class="separator:ab21c3b28ad3ed553245cca28b103807e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad10e8d2c6c19e6c364e3139c6e0e1c54"><td class="memTemplParams" colspan="2">template&lt;typename TripletType &gt; </td></tr>
 <tr class="memitem:ad10e8d2c6c19e6c364e3139c6e0e1c54"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1cb__explore__adf.html#ad10e8d2c6c19e6c364e3139c6e0e1c54">triplet_construction</a> (TripletType &amp;tc, float <a class="el" href="feature__group_8h.html#afe724f24bdc273f5a3bef924f94b4a4a">feature_value</a>, uint64_t <a class="el" href="feature__group_8h.html#a0100b371f093c4a60cd31557ff902c0d">feature_index</a>)</td></tr>
 <tr class="separator:ad10e8d2c6c19e6c364e3139c6e0e1c54"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,7 +176,6 @@ Functions</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a4e25b8145f7bcb713488fca5bb5ac62fab3169f4e80288744509df53911a1d1e9"></a>vanilla_rand_svd&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a4e25b8145f7bcb713488fca5bb5ac62fa2fc5dd8f2d52a2af72e02696da2d1924"></a>model_weight_rand_svd&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a4e25b8145f7bcb713488fca5bb5ac62fa49acdc8d09bf60cff0987a7461ca2eff"></a>aatop&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a4e25b8145f7bcb713488fca5bb5ac62faad88127daf97428a7f95444b0ef7fe90"></a>one_pass_svd&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
@@ -250,8 +248,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="acdfa2dafc1121830aecc9566d941320a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acdfa2dafc1121830aecc9566d941320a">&#9670;&nbsp;</a></span>find_max_volume()</h2>
+<a id="ab21c3b28ad3ed553245cca28b103807e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab21c3b28ad3ed553245cca28b103807e">&#9670;&nbsp;</a></span>find_action_to_maximize_volume()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -260,7 +258,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void VW::cb_explore_adf::find_max_volume </td>
+          <td class="memname">void VW::cb_explore_adf::find_action_to_maximize_volume </td>
           <td>(</td>
           <td class="paramtype">const Eigen::MatrixXf &amp;&#160;</td>
           <td class="paramname"><em>U</em>, </td>
@@ -268,14 +266,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>X_rid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Eigen::MatrixXf &amp;&#160;</td>
-          <td class="paramname"><em>X</em>, </td>
+          <td class="paramtype">const Eigen::VectorXf &amp;&#160;</td>
+          <td class="paramname"><em>phi</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -425,7 +417,7 @@ template&lt;typename TripletType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 12 2022 18:58:53 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 15 2022 13:27:27 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

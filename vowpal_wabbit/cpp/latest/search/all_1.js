@@ -2,8 +2,6 @@ var searchData=
 [
   ['a_5fs',['a_s',['../structVW_1_1polyprediction.html#abe21cff15e4830948ac50169a25a4c58',1,'VW::polyprediction']]],
   ['a_5fs_5fpred_5fto_5fstring',['a_s_pred_to_string',['../namespaceVW_1_1debug.html#ac1f41e063747ffaa76c8391743574b7a',1,'VW::debug']]],
-  ['aatop',['AAtop',['../structVW_1_1cb__explore__adf_1_1aatop__impl.html#adf38c8a27081a2d72ed7940237e6b980',1,'VW::cb_explore_adf::aatop_impl::AAtop()'],['../namespaceVW_1_1cb__explore__adf.html#a4e25b8145f7bcb713488fca5bb5ac62fa49acdc8d09bf60cff0987a7461ca2eff',1,'VW::cb_explore_adf::aatop()']]],
-  ['aatop_5fimpl',['aatop_impl',['../structVW_1_1cb__explore__adf_1_1aatop__impl.html',1,'VW::cb_explore_adf::aatop_impl'],['../structVW_1_1cb__explore__adf_1_1aatop__impl.html#a99d3b6bdc1bfbbfa1f9cf8e64882aa5f',1,'VW::cb_explore_adf::aatop_impl::aatop_impl()']]],
   ['accept',['accept',['../structVW_1_1config_1_1base__option.html#a2cb0de0f2a79dc79491e513f45544c21',1,'VW::config::base_option::accept()'],['../structVW_1_1config_1_1typed__option.html#a194138ce24ea698b2683219ea45a4d89',1,'VW::config::typed_option::accept()']]],
   ['accumulate',['accumulate',['../accumulate_8h.html#a9c81db5bfb143b1ee5cbaf3fd2ba16bb',1,'accumulate.h']]],
   ['accumulate_2eh',['accumulate.h',['../accumulate_8h.html',1,'']]],
