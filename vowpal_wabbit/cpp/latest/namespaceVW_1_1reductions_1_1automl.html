@@ -156,8 +156,8 @@ Enumerations</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:ad9c7be1539e7381681389863337adf66"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1reductions_1_1automl.html#ad9c7be1539e7381681389863337adf66">count_namespaces</a> (const <a class="el" href="namespaceVW.html#a505a6662876c6cba2fcdebb6d21ebbd2">multi_ex</a> &amp;ecs, std::map&lt; <a class="el" href="namespaceVW.html#abbbfd142fffaccd884cf1762f553eb50">namespace_index</a>, uint64_t &gt; &amp;ns_counter)</td></tr>
 <tr class="separator:ad9c7be1539e7381681389863337adf66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b725d40fcf2bad50056583402b474ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1reductions_1_1automl.html#a7b725d40fcf2bad50056583402b474ae">gen_interactions</a> (bool ccb_on, std::map&lt; <a class="el" href="namespaceVW.html#abbbfd142fffaccd884cf1762f553eb50">namespace_index</a>, uint64_t &gt; &amp;ns_counter, std::string &amp;interaction_type, std::vector&lt; <a class="el" href="structVW_1_1reductions_1_1automl_1_1exclusion__config.html">exclusion_config</a> &gt; &amp;configs, <a class="el" href="namespaceVW_1_1reductions_1_1automl.html#a14c00b7d817807250e08fef26ef38be2">estimator_vec_t</a> &amp;estimators, uint64_t live_slot)</td></tr>
-<tr class="separator:a7b725d40fcf2bad50056583402b474ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26076532bc4f886b3c1eb2aacd597763"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1reductions_1_1automl.html#a26076532bc4f886b3c1eb2aacd597763">gen_interactions_from_exclusions</a> (const bool ccb_on, const std::map&lt; <a class="el" href="namespaceVW.html#abbbfd142fffaccd884cf1762f553eb50">namespace_index</a>, uint64_t &gt; &amp;ns_counter, const std::string &amp;interaction_type, const std::set&lt; std::vector&lt; <a class="el" href="namespaceVW.html#abbbfd142fffaccd884cf1762f553eb50">namespace_index</a> &gt;&gt; &amp;exclusions, <a class="el" href="namespaceVW_1_1reductions_1_1automl.html#a612adafa4335a873205a21b52c86d2f7">interaction_vec_t</a> &amp;interactions)</td></tr>
+<tr class="separator:a26076532bc4f886b3c1eb2aacd597763"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef21db84edb0c085c87abe8a0098420b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1reductions_1_1automl.html#aef21db84edb0c085c87abe8a0098420b">apply_config</a> (<a class="el" href="structVW_1_1example.html">example</a> *ec, <a class="el" href="namespaceVW_1_1reductions_1_1automl.html#a612adafa4335a873205a21b52c86d2f7">interaction_vec_t</a> *live_interactions)</td></tr>
 <tr class="separator:aef21db84edb0c085c87abe8a0098420b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6362a6a0954cbbb9faed46dd26090ea3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1reductions_1_1automl.html#a6362a6a0954cbbb9faed46dd26090ea3">is_allowed_to_remove</a> (const unsigned char ns)</td></tr>
@@ -392,47 +392,41 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a7b725d40fcf2bad50056583402b474ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b725d40fcf2bad50056583402b474ae">&#9670;&nbsp;</a></span>gen_interactions()</h2>
+<a id="a26076532bc4f886b3c1eb2aacd597763"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26076532bc4f886b3c1eb2aacd597763">&#9670;&nbsp;</a></span>gen_interactions_from_exclusions()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void VW::reductions::automl::gen_interactions </td>
+          <td class="memname">void VW::reductions::automl::gen_interactions_from_exclusions </td>
           <td>(</td>
-          <td class="paramtype">bool&#160;</td>
+          <td class="paramtype">const bool&#160;</td>
           <td class="paramname"><em>ccb_on</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::map&lt; <a class="el" href="namespaceVW.html#abbbfd142fffaccd884cf1762f553eb50">namespace_index</a>, uint64_t &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::map&lt; <a class="el" href="namespaceVW.html#abbbfd142fffaccd884cf1762f553eb50">namespace_index</a>, uint64_t &gt; &amp;&#160;</td>
           <td class="paramname"><em>ns_counter</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>interaction_type</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="structVW_1_1reductions_1_1automl_1_1exclusion__config.html">exclusion_config</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>configs</em>, </td>
+          <td class="paramtype">const std::set&lt; std::vector&lt; <a class="el" href="namespaceVW.html#abbbfd142fffaccd884cf1762f553eb50">namespace_index</a> &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>exclusions</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespaceVW_1_1reductions_1_1automl.html#a14c00b7d817807250e08fef26ef38be2">estimator_vec_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>estimators</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>live_slot</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespaceVW_1_1reductions_1_1automl.html#a612adafa4335a873205a21b52c86d2f7">interaction_vec_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>interactions</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -482,7 +476,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 15 2022 18:32:22 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 15 2022 20:18:38 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
