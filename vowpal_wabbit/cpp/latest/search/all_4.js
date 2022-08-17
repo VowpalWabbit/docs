@@ -64,7 +64,7 @@ var searchData=
   ['disable_5fshared_5fweights',['DISABLE_SHARED_WEIGHTS',['../vw__slim__predict_8h.html#aa21b5b3836a1997883d40f9c96026444',1,'vw_slim_predict.h']]],
   ['distributionally_5frobust_2eh',['distributionally_robust.h',['../distributionally__robust_8h.html',1,'']]],
   ['dm',['dm',['../namespaceVW.html#afc6602380e780c653a55bf44b6e5c881a608e7dc116de7157306012b4f0be82ac',1,'VW']]],
-  ['do_5flearning',['do_learning',['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a614cda070d59519380e7229e14825013',1,'VW::reductions::automl::interaction_config_manager']]],
+  ['do_5flearning',['do_learning',['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a51f5f652805d6feb0f28a7f2f93bdb33',1,'VW::reductions::automl::interaction_config_manager']]],
   ['do_5frecombination',['do_recombination',['../classBeam_1_1beam.html#a7c024b7c58509c405271300549fbfde0',1,'Beam::beam']]],
   ['do_5freset_5fsource',['do_reset_source',['../structVW_1_1workspace.html#a41cc6598448119a2e3478675cc683f02',1,'VW::workspace']]],
   ['do_5fswap',['do_swap',['../classVW_1_1details_1_1swap__guard__impl.html#aab5175200e844e9aec7344cee91512a4',1,'VW::details::swap_guard_impl::do_swap()'],['../classVW_1_1details_1_1swap__guard__impl__rvalue.html#a8bc7cd28e0cfdaeb2b20246662ff01c0',1,'VW::details::swap_guard_impl_rvalue::do_swap()']]],

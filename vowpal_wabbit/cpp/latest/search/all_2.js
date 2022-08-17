@@ -29,7 +29,7 @@ var searchData=
   ['begin_5fscores',['begin_scores',['../namespaceACTION__SCORE.html#a8bc9f1c61d11a838adc67861ecd0155a',1,'ACTION_SCORE']]],
   ['best_5fconstant_2eh',['best_constant.h',['../best__constant_8h.html',1,'']]],
   ['beta',['beta',['../structVW_1_1distributionally__robust_1_1Duals.html#af225255f0c2895ff6b24e61226295326',1,'VW::distributionally_robust::Duals']]],
-  ['better',['better',['../namespaceVW_1_1reductions_1_1automl.html#af294411275ada213f1b0927dfe25f871',1,'VW::reductions::automl']]],
+  ['better',['better',['../structVW_1_1reductions_1_1automl_1_1aml__estimator.html#a015cb8605aaea51f21e7fee1c29b9ece',1,'VW::reductions::automl::aml_estimator']]],
   ['bfgs',['bfgs',['../structVW_1_1workspace.html#aead7aace93337cea621fd55cec162a44',1,'VW::workspace']]],
   ['bfgs_2eh',['bfgs.h',['../bfgs_8h.html',1,'']]],
   ['bfgs_5fsetup',['bfgs_setup',['../namespaceVW_1_1reductions.html#a41786fa7f5ed4ddc2d75d6bb5dcd2a12',1,'VW::reductions']]],
