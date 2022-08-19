@@ -70,7 +70,7 @@ var searchData=
   ['estimator_5fconfig_2eh',['estimator_config.h',['../estimator__config_8h.html',1,'']]],
   ['estimator_5fvec_5ft',['estimator_vec_t',['../namespaceVW_1_1reductions_1_1automl.html#ab3b98552a036f480d39c5de92cca79f7',1,'VW::reductions::automl']]],
   ['estimators',['estimators',['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#ad2fa0ddfa6bd13cb31a8856e172ad5b8',1,'VW::reductions::automl::interaction_config_manager']]],
-  ['eta',['eta',['../structVW_1_1workspace.html#ad79f6dc7d719ba0d0de5f829177fb745',1,'VW::workspace']]],
+  ['eta',['eta',['../structVW_1_1confidence__sequence_1_1ConfidenceSequence.html#a228b3a1cca30a11e33478ee9964a5609',1,'VW::confidence_sequence::ConfidenceSequence::eta()'],['../structVW_1_1workspace.html#ad79f6dc7d719ba0d0de5f829177fb745',1,'VW::workspace::eta()']]],
   ['eta_5fdecay_5frate',['eta_decay_rate',['../structVW_1_1workspace.html#a657b3989f456fadc02b1067dc3bc1db5',1,'VW::workspace']]],
   ['eval_5fsum_5fft_5fsquared_5fof_5fgenerated_5fft',['eval_sum_ft_squared_of_generated_ft',['../namespaceINTERACTIONS.html#a248db354b89ae5091958a52b98dde09c',1,'INTERACTIONS']]],
   ['event',['event',['../structCB__EVAL_1_1label.html#af295a09fa564952d45e7b016fc60e1ff',1,'CB_EVAL::label']]],

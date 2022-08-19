@@ -1,6 +1,8 @@
 var searchData=
 [
   ['_5f_5ffilename_5f_5f',['__FILENAME__',['../vw__exception_8h.html#a5fccb4fc71e44089a1b1a77fc76c0b68',1,'vw_exception.h']]],
+  ['_5f_5fstdcpp_5fmath_5fspec_5ffuncs_5f_5f',['__STDCPP_MATH_SPEC_FUNCS__',['../confidence__sequence_8h.html#a58f485f9da6a45af06142aeeb575457b',1,'confidence_sequence.h']]],
+  ['_5f_5fstdcpp_5fwant_5fmath_5fspec_5ffuncs_5f_5f',['__STDCPP_WANT_MATH_SPEC_FUNCS__',['../confidence__sequence_8h.html#aa7e835950c2d3375f6e599785723b3c7',1,'confidence_sequence.h']]],
   ['_5fa',['_A',['../structVW_1_1cb__explore__adf_1_1cb__explore__adf__large__action__space.html#a00633ffe2a0a570ec65ff9f2004902c7',1,'VW::cb_explore_adf::cb_explore_adf_large_action_space']]],
   ['_5faction_5findices',['_action_indices',['../structVW_1_1cb__explore__adf_1_1spanner__state.html#a6efe77ad9af6deedf2c79fad8f472eb3',1,'VW::cb_explore_adf::spanner_state::_action_indices()'],['../structVW_1_1cb__explore__adf_1_1one__rank__spanner__state.html#ae2e8139581834388ada2152c03f64e7b',1,'VW::cb_explore_adf::one_rank_spanner_state::_action_indices()']]],
   ['_5fapply_5fshrink_5ffactor',['_apply_shrink_factor',['../structVW_1_1cb__explore__adf_1_1shrink__factor__config.html#ae82e49166a1526012eae3283ffe2173b',1,'VW::cb_explore_adf::shrink_factor_config']]],

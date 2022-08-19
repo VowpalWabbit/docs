@@ -26,7 +26,7 @@ var searchData=
   ['decode_5finline_5fhex',['decode_inline_hex',['../namespaceVW.html#a68c70a944575aab16671c0e4ecded5e2',1,'VW']]],
   ['decrement_5foffset',['decrement_offset',['../namespaceVW_1_1LEARNER_1_1details.html#a8d2016123a1e185380a4d911cb4da30e',1,'VW::LEARNER::details::decrement_offset(example &amp;ex, const size_t increment, const size_t i)'],['../namespaceVW_1_1LEARNER_1_1details.html#ab527eea1667c31ecb5ad926fd4c43734',1,'VW::LEARNER::details::decrement_offset(multi_ex &amp;ec_seq, const size_t increment, const size_t i)']]],
   ['dedup_5fexamples',['dedup_examples',['../structContext.html#abbfca50865c4d8e467ec4af24dc59395',1,'Context']]],
-  ['default_5falpha',['DEFAULT_ALPHA',['../distributionally__robust_8h.html#aa0c9ea16a765d63a4294d81a9225148c',1,'distributionally_robust.h']]],
+  ['default_5falpha',['DEFAULT_ALPHA',['../confidence__sequence_8h.html#aa0c9ea16a765d63a4294d81a9225148c',1,'DEFAULT_ALPHA():&#160;confidence_sequence.h'],['../distributionally__robust_8h.html#aa0c9ea16a765d63a4294d81a9225148c',1,'DEFAULT_ALPHA():&#160;distributionally_robust.h']]],
   ['default_5fbits',['default_bits',['../structVW_1_1workspace.html#a46b7fcede46b35c05fe6d09d25d90c5e',1,'VW::workspace']]],
   ['default_5fcleanup',['default_cleanup',['../structVW_1_1default__cleanup.html',1,'VW']]],
   ['default_5fcleanup_3c_20vw_3a_3aexample_20_3e',['default_cleanup&lt; VW::example &gt;',['../structVW_1_1default__cleanup.html',1,'VW']]],

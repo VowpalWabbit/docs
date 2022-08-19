@@ -7,6 +7,7 @@ var searchData=
   ['parse_5fthread',['parse_thread',['../structVW_1_1workspace.html#a067da2035fd9915db780fc5d57d583aa',1,'VW::workspace']]],
   ['parser_5fmemory_5fto_5freuse',['parser_memory_to_reuse',['../structparser.html#a09703a07c41f669a8cdd3ecf29e986ae',1,'parser']]],
   ['partial_5fprediction',['partial_prediction',['../structCB_1_1cb__class.html#ae34e712b9e45423e3b92bc9c340e8908',1,'CB::cb_class::partial_prediction()'],['../structCOST__SENSITIVE_1_1wclass.html#ada5dfb9c23fce4f1e76e6920b2490be5',1,'COST_SENSITIVE::wclass::partial_prediction()'],['../structVW_1_1example.html#ac8f005c8cfb3d272b8ce9ca2c02d0bed',1,'VW::example::partial_prediction()']]],
+  ['partials',['partials',['../structVW_1_1confidence__sequence_1_1IncrementalFsum.html#aedd3671bb107f98c4674ca70ba862afa',1,'VW::confidence_sequence::IncrementalFsum']]],
   ['pass_5flength',['pass_length',['../structVW_1_1workspace.html#a7376cc626e52beb9af96c340fe3e65f2',1,'VW::workspace']]],
   ['passes_5fcomplete',['passes_complete',['../structVW_1_1workspace.html#af113154d6eeb3f4b134b8972607f5de2',1,'VW::workspace']]],
   ['passthrough',['passthrough',['../structVW_1_1example.html#a19d949b9487b8e3718e55d689cb19f8e',1,'VW::example']]],

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['t',['t',['../structshared__data.html#a40b662eb223f0c8fa01ad05494b7e08b',1,'shared_data']]],
+  ['t',['t',['../structVW_1_1confidence__sequence_1_1ConfidenceSequence.html#a2b59de4160b99eeaf27bdd33c0deeac6',1,'VW::confidence_sequence::ConfidenceSequence::t()'],['../structshared__data.html#a40b662eb223f0c8fa01ad05494b7e08b',1,'shared_data::t()']]],
   ['table_5fformatter_2eh',['table_formatter.h',['../table__formatter_8h.html',1,'']]],
   ['tag',['tag',['../structVW_1_1example.html#a41edbcd2926f6c33324c7fcd497a7c54',1,'VW::example::tag()'],['../structVW_1_1flat__example.html#a7fde8c0f680ff673d9721756a53eb69c',1,'VW::flat_example::tag()']]],
   ['tag_5flen',['tag_len',['../structVW_1_1flat__example.html#a77851269313f78e92dc461fd35068e81',1,'VW::flat_example']]],

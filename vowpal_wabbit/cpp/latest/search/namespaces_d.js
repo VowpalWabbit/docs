@@ -8,6 +8,7 @@ var searchData=
   ['cb_5fcontinuous',['cb_continuous',['../namespaceVW_1_1cb__continuous.html',1,'VW']]],
   ['cb_5fexplore_5fadf',['cb_explore_adf',['../namespaceVW_1_1cb__explore__adf.html',1,'VW']]],
   ['ccb',['ccb',['../namespaceVW_1_1reductions_1_1ccb.html',1,'VW::reductions']]],
+  ['confidence_5fsequence',['confidence_sequence',['../namespaceVW_1_1confidence__sequence.html',1,'VW']]],
   ['config',['config',['../namespaceVW_1_1config.html',1,'VW']]],
   ['continuous_5factions',['continuous_actions',['../namespaceVW_1_1continuous__actions.html',1,'VW']]],
   ['debug',['debug',['../namespaceVW_1_1debug.html',1,'VW']]],
