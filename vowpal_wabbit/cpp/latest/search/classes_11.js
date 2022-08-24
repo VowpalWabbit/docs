@@ -22,6 +22,7 @@ var searchData=
   ['spanningtree',['SpanningTree',['../classVW_1_1SpanningTree.html',1,'VW']]],
   ['sparse_5fiterator',['sparse_iterator',['../classsparse__iterator.html',1,'']]],
   ['sparse_5fparameters',['sparse_parameters',['../classsparse__parameters.html',1,'']]],
+  ['status_5fbuilder',['status_builder',['../structVW_1_1experimental_1_1status__builder.html',1,'VW::experimental']]],
   ['strict_5fparse_5fexception',['strict_parse_exception',['../classVW_1_1strict__parse__exception.html',1,'VW']]],
   ['stride_5fshift_5fguard',['stride_shift_guard',['../classvw__slim_1_1stride__shift__guard.html',1,'vw_slim']]],
   ['stringtostringstate',['StringToStringState',['../classStringToStringState.html',1,'']]],

@@ -29,7 +29,7 @@ var searchData=
   ['err_5finfo',['err_info',['../structVW_1_1io_1_1details_1_1logger__impl.html#ace5f360fb835d29997f2cc94d8ac2602',1,'VW::io::details::logger_impl::err_info()'],['../structVW_1_1io_1_1logger.html#a9dddd95c103b1aec7a6fa72b984d9829',1,'VW::io::logger::err_info()']]],
   ['err_5fwarn',['err_warn',['../structVW_1_1io_1_1details_1_1logger__impl.html#a2930f839710d5af0c6a4f09139abb621',1,'VW::io::details::logger_impl::err_warn()'],['../structVW_1_1io_1_1logger.html#af2bad766a1400f5880d159777719c330',1,'VW::io::logger::err_warn()']]],
   ['error',['error',['../structContext.html#aafced41f3e89369fbf1a02fce44cae5f',1,'Context::error()'],['../structVWReaderHandler.html#a530c57ae7488a6a1fb093e246916224f',1,'VWReaderHandler::error()'],['../structVW_1_1io_1_1logger.html#abf6e310646f6ae5a2946f554995bf922',1,'VW::io::logger::error()']]],
-  ['error_5fcode_5fdefinition',['ERROR_CODE_DEFINITION',['../error__data_8h.html#a4c40ddf91942f1e17537ef74ff4a57fa',1,'error_data.h']]],
+  ['error_5fcode_5fdefinition',['ERROR_CODE_DEFINITION',['../error__data_8h.html#a08ac002fc6054c05afd8f684da63f677',1,'error_data.h']]],
   ['escaped_5ftokenize',['escaped_tokenize',['../parse__primitives_8h.html#ae5600a8846c21114564ebd52b6c5a953',1,'parse_primitives.h']]],
   ['estimator_5fconfig',['estimator_config',['../structVW_1_1estimator__config.html#a9cc1bdf9d16ddddc1ff7b45c9598a990',1,'VW::estimator_config::estimator_config()'],['../structVW_1_1estimator__config.html#a73034c55a034e572da69861dae4079db',1,'VW::estimator_config::estimator_config(double alpha, double tau)']]],
   ['eval_5fsum_5fft_5fsquared_5fof_5fgenerated_5fft',['eval_sum_ft_squared_of_generated_ft',['../namespaceINTERACTIONS.html#a248db354b89ae5091958a52b98dde09c',1,'INTERACTIONS']]],

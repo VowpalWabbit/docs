@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['n',['N',['../structVW_1_1reductions_1_1expreplay_1_1expreplay.html#a2563123c377deacbee6f4ec4fa5051e9',1,'VW::reductions::expreplay::expreplay::N()'],['../structVW_1_1distributionally__robust_1_1Duals.html#ad72686b6b792efe744a034674dc09847',1,'VW::distributionally_robust::Duals::n()']]],
+  ['n',['n',['../structVW_1_1distributionally__robust_1_1Duals.html#ad72686b6b792efe744a034674dc09847',1,'VW::distributionally_robust::Duals::n()'],['../structVW_1_1reductions_1_1expreplay_1_1expreplay.html#a2563123c377deacbee6f4ec4fa5051e9',1,'VW::reductions::expreplay::expreplay::N()']]],
   ['name',['name',['../structVW_1_1audit__strings.html#aeda51a335733a0481b53d8057c22fdf9',1,'VW::audit_strings::name()'],['../structdictionary__info.html#aafd5bfbc5290ad275067a8cf3397970a',1,'dictionary_info::name()'],['../structNamespace.html#a2344df6d1bc705fc8afa24b2c9c79f57',1,'Namespace::name()'],['../structBaseState.html#a675dcc2bdda01de5cde893e77a6116b1',1,'BaseState::name()'],['../structVW_1_1primitive__feature__space.html#a8f5b0342e8c1f8c6d6e5648d14894a59',1,'VW::primitive_feature_space::name()']]],
   ['namespace_5fdictionaries',['namespace_dictionaries',['../structVW_1_1workspace.html#a7a54ee459d452d564df57ff42b799677',1,'VW::workspace']]],
   ['namespace_5fextents',['namespace_extents',['../structfeatures.html#af549d0f8686ce819c6467ff446ff86b3',1,'features']]],
@@ -27,7 +27,6 @@ var searchData=
   ['normalized',['normalized',['../classparameters.html#a151823ac932181e2ec63a13461bacc17',1,'parameters']]],
   ['normalized_5fidx',['normalized_idx',['../structVW_1_1workspace.html#a23ee88f7ef030182ec255a7a9008de13',1,'VW::workspace']]],
   ['normalized_5fsum_5fnorm_5fx',['normalized_sum_norm_x',['../structGD_1_1per__model__state.html#aa07278d4dadbeea9279ab07e4de5e266',1,'GD::per_model_state']]],
-  ['not_5fimplemented',['not_implemented',['../error__data_8h.html#ac0b7538a87fdb2c9510cdbdc8ac06573',1,'error_data.h']]],
   ['ns',['ns',['../structVW_1_1audit__strings.html#ae12b6141b6e9f12005f58916f9e90816',1,'VW::audit_strings']]],
   ['ns_5fcounter',['ns_counter',['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a30385c038d818cbc596b276e2e43a7e4',1,'VW::reductions::automl::interaction_config_manager']]],
   ['ns_5fvalue',['ns_value',['../classVW_1_1parsers_1_1csv__parser.html#aa55054cc0cbeab2e75136f88c1a60ea4',1,'VW::parsers::csv_parser']]],

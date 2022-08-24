@@ -36,6 +36,7 @@ var searchData=
   ['_7esocket_5fcloser',['~socket_closer',['../structVW_1_1io_1_1details_1_1socket__closer.html#aa54c996e134ed9e0a15e68e03692b61f',1,'VW::io::details::socket_closer']]],
   ['_7espanningtree',['~SpanningTree',['../classVW_1_1SpanningTree.html#a5037a1700c322fdf426a4e177b8a8b25',1,'VW::SpanningTree']]],
   ['_7esparse_5fparameters',['~sparse_parameters',['../classsparse__parameters.html#a51abfccaaa9f023f2a1794de176d5e5d',1,'sparse_parameters']]],
+  ['_7estatus_5fbuilder',['~status_builder',['../structVW_1_1experimental_1_1status__builder.html#a1210abfdbffb90a7359c3aff894afee6',1,'VW::experimental::status_builder']]],
   ['_7estrict_5fparse_5fexception',['~strict_parse_exception',['../classVW_1_1strict__parse__exception.html#a4293706e08b9bd4e9798648ceffe77ff',1,'VW::strict_parse_exception']]],
   ['_7estride_5fshift_5fguard',['~stride_shift_guard',['../classvw__slim_1_1stride__shift__guard.html#a3ffe0ed6488b88a0a81df2f4e82f880c',1,'vw_slim::stride_shift_guard']]],
   ['_7eswap_5fguard_5fimpl',['~swap_guard_impl',['../classVW_1_1details_1_1swap__guard__impl.html#a852f8fbb6f0a7a83e660e6218926c8e2',1,'VW::details::swap_guard_impl']]],

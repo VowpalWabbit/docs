@@ -9,7 +9,7 @@ var searchData=
   ['acquire_5fobject',['acquire_object',['../structVW_1_1moved__object__pool.html#a1a0ec2f168640b9a7b6a16264a090b9a',1,'VW::moved_object_pool']]],
   ['action_5fscore_5fcompare_5fgt',['action_score_compare_gt',['../namespaceVW.html#ac8becc8ccd3691b01f9bd6872675c9e9',1,'VW']]],
   ['action_5fscore_5fcompare_5flt',['action_score_compare_lt',['../namespaceVW.html#a1ba263e76513d7a0c4c65248cfcabc37',1,'VW']]],
-  ['active',['active',['../structVW_1_1reductions_1_1active.html#a3c5e3d02ba55a9b3a5f97ba0cb9ad86e',1,'VW::reductions::active']]],
+  ['active',['active',['../structVW_1_1reductions_1_1active.html#a9648272954663b5c43144e55be56b063',1,'VW::reductions::active']]],
   ['active_5fcover_5fsetup',['active_cover_setup',['../namespaceVW_1_1reductions.html#a1d0946f893fa6306fe0952ec8a977c87',1,'VW::reductions']]],
   ['active_5fsetup',['active_setup',['../namespaceVW_1_1reductions.html#a95f339899de075fd2f1f400fb9d271a8',1,'VW::reductions']]],
   ['add',['add',['../structVW_1_1config_1_1cli__options__serializer.html#a378e84742850b005fbdc559c538e6338',1,'VW::config::cli_options_serializer::add()'],['../structVW_1_1config_1_1option__group__definition.html#aad392b60a5d0ad5c6d4c5537677ca259',1,'VW::config::option_group_definition::add(option_builder&lt; T &gt; &amp;&amp;op)'],['../structVW_1_1config_1_1option__group__definition.html#a767e7bf0f58ac1db94925486071fe044',1,'VW::config::option_group_definition::add(option_builder&lt; T &gt; &amp;op)'],['../structVW_1_1config_1_1options__serializer__i.html#af7826e4efa76b62256152ea346737171',1,'VW::config::options_serializer_i::add()'],['../namespacefloat__aggregation.html#a5ecbfed960039d7edcca1337272cba9c',1,'float_aggregation::add()']]],

@@ -21,7 +21,7 @@ var searchData=
   ['action_5fsum',['action_sum',['../structGEN__CS_1_1cb__to__cs__adf.html#a603aadff469c9a586f031e2833c2e076',1,'GEN_CS::cb_to_cs_adf']]],
   ['action_5ftype',['ACTION_TYPE',['../constant_8h.html#aa24f88139565835c44463bfbf3e4cd34',1,'constant.h']]],
   ['actions',['actions',['../structDecisionServiceInteraction.html#a5dc3dbcb448871ba574eeb0eb2f3838c',1,'DecisionServiceInteraction::actions()'],['../classLabelObjectState.html#ac8c3b4ad435a3391d3788a3c27613aea',1,'LabelObjectState::actions()']]],
-  ['active',['active',['../structVW_1_1reductions_1_1active.html',1,'VW::reductions::active'],['../structBeam_1_1beam__element.html#a60ae4810410bb735e6af202cf7ffc131',1,'Beam::beam_element::active()'],['../structVW_1_1workspace.html#a13db26d284e2ec61861eaceb12b230f9',1,'VW::workspace::active()'],['../structVW_1_1reductions_1_1active.html#a3c5e3d02ba55a9b3a5f97ba0cb9ad86e',1,'VW::reductions::active::active()']]],
+  ['active',['active',['../structVW_1_1reductions_1_1active.html',1,'VW::reductions::active'],['../structBeam_1_1beam__element.html#a60ae4810410bb735e6af202cf7ffc131',1,'Beam::beam_element::active()'],['../structVW_1_1workspace.html#a13db26d284e2ec61861eaceb12b230f9',1,'VW::workspace::active()'],['../structVW_1_1reductions_1_1active.html#a9648272954663b5c43144e55be56b063',1,'VW::reductions::active::active()']]],
   ['active_2eh',['active.h',['../active_8h.html',1,'']]],
   ['active_5fc0',['active_c0',['../structVW_1_1reductions_1_1active.html#a841bcbdf85755e76c12172c91aefa72b',1,'VW::reductions::active']]],
   ['active_5fcover_2eh',['active_cover.h',['../active__cover_8h.html',1,'']]],

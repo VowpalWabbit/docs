@@ -219,6 +219,7 @@ var searchData=
   ['stash_5fguard',['stash_guard',['../namespaceVW.html#a796175c0f11a81f044a2d7cc8b151f13',1,'VW']]],
   ['state',['state',['../structVW_1_1reductions_1_1automl_1_1exclusion__config.html#a4db23060336a5b0d0be6db2eaa385a50',1,'VW::reductions::automl::exclusion_config']]],
   ['state_5fdata',['state_data',['../structINTERACTIONS_1_1generate__interactions__object__cache.html#a424b49286c9528e1b4b1635e33979233',1,'INTERACTIONS::generate_interactions_object_cache']]],
+  ['status_5fbuilder',['status_builder',['../structVW_1_1experimental_1_1status__builder.html',1,'VW::experimental::status_builder'],['../structVW_1_1experimental_1_1status__builder.html#a2881af9be6c61b9582393230c0e6a676',1,'VW::experimental::status_builder::status_builder(i_trace *trace, api_status *status, int code)'],['../structVW_1_1experimental_1_1status__builder.html#ad720e10280987898fb61b59a6bd293b6',1,'VW::experimental::status_builder::status_builder(const status_builder &amp;&amp;)=delete'],['../structVW_1_1experimental_1_1status__builder.html#acfe923ed74992b267d411f2eef3d6f44',1,'VW::experimental::status_builder::status_builder(const status_builder &amp;)=delete']]],
   ['std',['std',['../namespacestd.html',1,'']]],
   ['stdin_5foff',['stdin_off',['../structVW_1_1workspace.html#ae301e173affcaf23717e4690ee11e179',1,'VW::workspace']]],
   ['stdout_5fadapter',['stdout_adapter',['../structVW_1_1workspace.html#a601bad8ac8905c24e9205355b248744e',1,'VW::workspace']]],
