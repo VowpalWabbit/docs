@@ -1,7 +1,7 @@
 var searchData=
 [
   ['i',['i',['../unionexploration_1_1int__float.html#ad2bc6c4c956bde873b30883f1e1f73d3',1,'exploration::int_float']]],
-  ['i_5ftrace',['i_trace',['../namespaceVW_1_1experimental.html#a7007e1e09eab56e11242c09c8a244103',1,'VW::experimental']]],
+  ['i_5ftrace',['i_trace',['../namespaceVW_1_1experimental.html#a7a4a5996e6c202e5414c5ce770231352',1,'VW::experimental']]],
   ['id',['id',['../structVW_1_1workspace.html#a1a5991719de1f9ac2db1d7f77a46e531',1,'VW::workspace::id()'],['../structVW_1_1reductions_1_1cats_1_1tree__node.html#a144b411b84491fef71c98112ecc70bb2',1,'VW::reductions::cats::tree_node::id()'],['../structVW_1_1reductions_1_1offset__tree_1_1tree__node.html#a1d865acba63cb90467b31604862fcc86',1,'VW::reductions::offset_tree::tree_node::id()']]],
   ['ignore',['ignore',['../structVW_1_1workspace.html#aba2139155728faa7aa46b66f3365d1f7',1,'VW::workspace::ignore()'],['../classDefaultState.html#a0b4a49d922219a5b71926061b304ea21',1,'DefaultState::Ignore()']]],
   ['ignore_5ffeatures',['ignore_features',['../structContext.html#a1e5aab30ccbabcd191378b8af21b8189',1,'Context']]],
