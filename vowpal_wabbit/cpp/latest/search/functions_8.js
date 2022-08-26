@@ -15,8 +15,8 @@ var searchData=
   ['hash_5fspace',['hash_space',['../namespaceVW.html#aa72d95576975f92bae1d6699b36294bf',1,'VW']]],
   ['hash_5fspace_5fcstr',['hash_space_cstr',['../namespaceVW.html#a5d24eaf9c61e5ca306b1ec467d42ef4c',1,'VW']]],
   ['hash_5fspace_5fstatic',['hash_space_static',['../namespaceVW.html#afe967439ca1759e49a48658ec213505c',1,'VW']]],
-  ['hashall',['hashall',['../hashstring_8h.html#a679aef0b2b6e042e29d16def76ae1b0e',1,'hashstring.h']]],
-  ['hashstring',['hashstring',['../hashstring_8h.html#ad0c610591e5f64e2d6e5753b6f4266f8',1,'hashstring.h']]],
+  ['hashall',['hashall',['../hashstring_8h.html#acd24d1944bb5828bd8706c00acaa63f5',1,'hashstring.h']]],
+  ['hashstring',['hashstring',['../hashstring_8h.html#adcac7aeed404ab45135fcbdf0d10f2c5',1,'hashstring.h']]],
   ['help',['help',['../structVW_1_1config_1_1option__builder.html#af0ab17d905621f08b1545d575c132dab',1,'VW::config::option_builder']]],
   ['hidden',['hidden',['../structVW_1_1config_1_1option__builder.html#a3f396c3b570ca1631698525d2e2b760f',1,'VW::config::option_builder']]]
 ];

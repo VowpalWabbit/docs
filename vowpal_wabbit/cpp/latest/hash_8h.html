@@ -103,6 +103,7 @@ $(function() {
 <div class="textblock"><code>#include &quot;<a class="el" href="future__compat_8h.html">vw/common/future_compat.h</a>&quot;</code><br />
 <code>#include &lt;sys/types.h&gt;</code><br />
 <code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;cstring&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -117,16 +118,16 @@ Functions</h2></td></tr>
 <tr class="separator:af141aa5de22ad4b5c23c5d0e44a58272"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0969827f2d184289944119b2dc569b9c"><td class="memItemLeft" align="right" valign="top">static VW_STD14_CONSTEXPR uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#a0969827f2d184289944119b2dc569b9c">VW::details::fmix</a> (uint32_t h) noexcept</td></tr>
 <tr class="separator:a0969827f2d184289944119b2dc569b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a852fd9b5c7c40d9dab896a7b1b68bd52"><td class="memItemLeft" align="right" valign="top">static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#a852fd9b5c7c40d9dab896a7b1b68bd52">VW::details::getblock</a> (const uint32_t *p, int i) noexcept</td></tr>
-<tr class="separator:a852fd9b5c7c40d9dab896a7b1b68bd52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fe50f2e30103adf6d7b7812677b545a"><td class="memItemLeft" align="right" valign="top">VW_STD14_CONSTEXPR uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a8fe50f2e30103adf6d7b7812677b545a">VW::uniform_hash</a> (const void *key, size_t len, uint64_t seed)</td></tr>
-<tr class="separator:a8fe50f2e30103adf6d7b7812677b545a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab895a18954442f288c97979158e4b0d1"><td class="memItemLeft" align="right" valign="top">VW_STD14_CONSTEXPR uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash_8h.html#ab895a18954442f288c97979158e4b0d1">uniform_hash</a> (const void *key, size_t len, uint64_t seed)</td></tr>
-<tr class="separator:ab895a18954442f288c97979158e4b0d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a878c441589c36709e6c03da8bc285610"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#a878c441589c36709e6c03da8bc285610">VW::details::getblock</a> (const uint32_t *p, int i) noexcept</td></tr>
+<tr class="separator:a878c441589c36709e6c03da8bc285610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bf76acc68265292bdb5eba8687a6584"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a0bf76acc68265292bdb5eba8687a6584">VW::uniform_hash</a> (const void *key, size_t len, uint64_t seed)</td></tr>
+<tr class="separator:a0bf76acc68265292bdb5eba8687a6584"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebfd76382e62b02e8798e1d74aaffb9d"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash_8h.html#aebfd76382e62b02e8798e1d74aaffb9d">uniform_hash</a> (const void *key, size_t len, uint64_t seed)</td></tr>
+<tr class="separator:aebfd76382e62b02e8798e1d74aaffb9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ab895a18954442f288c97979158e4b0d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab895a18954442f288c97979158e4b0d1">&#9670;&nbsp;</a></span>uniform_hash()</h2>
+<a id="aebfd76382e62b02e8798e1d74aaffb9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebfd76382e62b02e8798e1d74aaffb9d">&#9670;&nbsp;</a></span>uniform_hash()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -135,7 +136,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">VW_STD14_CONSTEXPR uint64_t uniform_hash </td>
+          <td class="memname">uint64_t uniform_hash </td>
           <td>(</td>
           <td class="paramtype">const void *&#160;</td>
           <td class="paramname"><em>key</em>, </td>
@@ -170,7 +171,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 25 2022 20:46:42 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 26 2022 15:06:49 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -15,7 +15,7 @@ var searchData=
   ['merand48',['merand48',['../rand48_8h.html#a64cab1594b4166e9442ee1429123044b',1,'rand48.h']]],
   ['merand48_5fboxmuller',['merand48_boxmuller',['../rand48_8h.html#a1a5d99f1fed8adf3248a30cae6b13437',1,'rand48.h']]],
   ['merand48_5fnoadvance',['merand48_noadvance',['../rand48_8h.html#a25a35c4d653d47b644ce40f0437f8101',1,'rand48.h']]],
-  ['merge',['merge',['../structVW_1_1LEARNER_1_1learner.html#ac2dd31ec1fbe7d950c0a2e22a9e82bce',1,'VW::LEARNER::learner']]],
+  ['merge',['merge',['../structVW_1_1LEARNER_1_1learner.html#a7e9cad421692721cae87b624676997f5',1,'VW::LEARNER::learner']]],
   ['merge_5fmodels',['merge_models',['../namespaceVW.html#ae5920b03cd962fcbf3aad9bbc705f861',1,'VW']]],
   ['merge_5foptions_5ffrom_5fheader_5fstrings',['merge_options_from_header_strings',['../parse__args_8h.html#aba34d846bf56121fdebc9aec399c993e',1,'parse_args.h']]],
   ['metrics_5fsetup',['metrics_setup',['../namespaceVW_1_1reductions.html#a0f827e52ff7cad9dbcdf54b47ba5e505',1,'VW::reductions']]],
@@ -29,7 +29,7 @@ var searchData=
   ['multiclass_5fpred_5fto_5fstring',['multiclass_pred_to_string',['../namespaceVW_1_1debug.html#a9c0a9968718373271b11fb4f69a94382',1,'VW::debug']]],
   ['multilabel_5foaa_5fsetup',['multilabel_oaa_setup',['../namespaceVW_1_1reductions.html#a67f6c10668d890000101032e5b60b244',1,'VW::reductions']]],
   ['multiline_5flearn_5for_5fpredict',['multiline_learn_or_predict',['../namespaceVW_1_1LEARNER.html#ae567a4278ece0021d1272d708e25b749',1,'VW::LEARNER']]],
-  ['multipredict',['multipredict',['../structVW_1_1LEARNER_1_1learner.html#a44d1395545c9fd963b1a9fcf7982f514',1,'VW::LEARNER::learner::multipredict()'],['../namespaceVW_1_1reductions_1_1expreplay.html#a497f39fbdc15a1ce2938b53358a96bf1',1,'VW::reductions::expreplay::multipredict()']]],
+  ['multipredict',['multipredict',['../structVW_1_1LEARNER_1_1learner.html#adecaa5b6fa6b2ab24830a52a7a2783a9',1,'VW::LEARNER::learner::multipredict()'],['../namespaceVW_1_1reductions_1_1expreplay.html#a497f39fbdc15a1ce2938b53358a96bf1',1,'VW::reductions::expreplay::multipredict()']]],
   ['multistate',['MultiState',['../structMultiState.html#a18d362406bbf876095cd67a48487f840',1,'MultiState']]],
   ['must_5fbe_5fleft_5fsorted',['must_be_left_sorted',['../namespaceINTERACTIONS.html#a82537842aef36929fa2e8534514cebc1',1,'INTERACTIONS']]],
   ['mwt_5fsetup',['mwt_setup',['../namespaceVW_1_1reductions.html#a1b1c72bb11aff0e360709e15da52c48c',1,'VW::reductions']]]
