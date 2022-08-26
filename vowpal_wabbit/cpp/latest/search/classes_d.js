@@ -9,5 +9,6 @@ var searchData=
   ['node_5fcost',['node_cost',['../structVW_1_1reductions_1_1cats_1_1node__cost.html',1,'VW::reductions::cats']]],
   ['node_5fsocks',['node_socks',['../structnode__socks.html',1,'']]],
   ['noop_5foutput_5fstreambuf',['noop_output_streambuf',['../classVW_1_1io_1_1noop__output__streambuf.html',1,'VW::io']]],
+  ['ns_5fbased_5fconfig',['ns_based_config',['../structVW_1_1reductions_1_1automl_1_1ns__based__config.html',1,'VW::reductions::automl']]],
   ['ns_5fextent_5fiterator',['ns_extent_iterator',['../classns__extent__iterator.html',1,'']]]
 ];

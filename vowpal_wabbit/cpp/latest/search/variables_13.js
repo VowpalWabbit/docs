@@ -46,7 +46,7 @@ var searchData=
   ['sparse_5fweights',['sparse_weights',['../classparameters.html#a276f4673850e9650c1360a78c9afab97',1,'parameters']]],
   ['spelling_5ffeatures',['spelling_features',['../structVW_1_1workspace.html#ae1554e16748cc811a124f4a2b671799a',1,'VW::workspace']]],
   ['spelling_5fnamespace',['spelling_namespace',['../constant_8h.html#a277c1a47ab86f3c52c7711d09f781a2c',1,'constant.h']]],
-  ['state',['state',['../structVW_1_1reductions_1_1automl_1_1exclusion__config.html#a4db23060336a5b0d0be6db2eaa385a50',1,'VW::reductions::automl::exclusion_config']]],
+  ['state',['state',['../structVW_1_1reductions_1_1automl_1_1ns__based__config.html#a707c83939bf42cd10222f93d3c21177a',1,'VW::reductions::automl::ns_based_config']]],
   ['state_5fdata',['state_data',['../structINTERACTIONS_1_1generate__interactions__object__cache.html#a424b49286c9528e1b4b1635e33979233',1,'INTERACTIONS::generate_interactions_object_cache']]],
   ['stdin_5foff',['stdin_off',['../structVW_1_1workspace.html#ae301e173affcaf23717e4690ee11e179',1,'VW::workspace']]],
   ['stdout_5fadapter',['stdout_adapter',['../structVW_1_1workspace.html#a601bad8ac8905c24e9205355b248744e',1,'VW::workspace']]],

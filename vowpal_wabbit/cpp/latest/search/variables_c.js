@@ -28,7 +28,7 @@ var searchData=
   ['learn_5ff',['learn_f',['../structVW_1_1LEARNER_1_1details_1_1learn__data.html#a2959d6c09447d7a54588b33f24c4b347',1,'VW::LEARNER::details::learn_data']]],
   ['learn_5freturns_5fprediction',['learn_returns_prediction',['../structVW_1_1LEARNER_1_1learner.html#a8cac2d0d662aa9c5206f0709544a9a90',1,'VW::LEARNER::learner']]],
   ['learner',['learner',['../structvw__dbg.html#a2c56037d4e2c362b5dbd5f692a93da90',1,'vw_dbg']]],
-  ['lease',['lease',['../structVW_1_1reductions_1_1automl_1_1exclusion__config.html#aa1dfd00b2c1311797ebf983103d8a090',1,'VW::reductions::automl::exclusion_config']]],
+  ['lease',['lease',['../structVW_1_1reductions_1_1automl_1_1ns__based__config.html#a3ef571f03ce2932c1971d5a8c7b050b0',1,'VW::reductions::automl::ns_based_config']]],
   ['left',['left',['../structVW_1_1continuous__actions_1_1pdf__segment.html#a06bbb545deb2037a44617751e5dd1bb0',1,'VW::continuous_actions::pdf_segment']]],
   ['left_5fid',['left_id',['../structVW_1_1reductions_1_1cats_1_1tree__node.html#ad47b521d919b704c42b856f8b88ea1b2',1,'VW::reductions::cats::tree_node::left_id()'],['../structVW_1_1reductions_1_1offset__tree_1_1tree__node.html#a86135703b0a4baa43981339d92ed3fe9',1,'VW::reductions::offset_tree::tree_node::left_id()']]],
   ['left_5fonly',['left_only',['../structVW_1_1reductions_1_1cats_1_1tree__node.html#a54e352e33d1a6b857cfab469f85fa7ea',1,'VW::reductions::cats::tree_node']]],

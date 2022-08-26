@@ -27,7 +27,6 @@ var searchData=
   ['input',['input',['../structparser.html#a879fafa20463b21873abf1945c17f493',1,'parser']]],
   ['interaction_5fns_5fend',['interaction_ns_end',['../namespaceINTERACTIONS.html#ad03527522a7fe5b0b38ede5186f365ec',1,'INTERACTIONS']]],
   ['interaction_5fns_5fstart',['interaction_ns_start',['../namespaceINTERACTIONS.html#adf08db0bf4b65d619500a58517562f12',1,'INTERACTIONS']]],
-  ['interaction_5ftype',['interaction_type',['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#ab28ecedcddfc4994592711b56cd2669b',1,'VW::reductions::automl::interaction_config_manager']]],
   ['interactions',['interactions',['../structVW_1_1example__predict.html#aa38af8869087f4ebf553e34a77d1981e',1,'VW::example_predict::interactions()'],['../structVW_1_1workspace.html#ad707621b18f8975075b3373b6699bc3f',1,'VW::workspace::interactions()'],['../classSlotOutcomeList.html#a0fc1f14e08b16bdb49a5304f6e0d2baa',1,'SlotOutcomeList::interactions()']]],
   ['inv_5fhash_5fregressor_5fname',['inv_hash_regressor_name',['../structVW_1_1workspace.html#a8a4150e901445336a09ba8b49d126fcb',1,'VW::workspace']]],
   ['invalid_5fvw_5fexample',['INVALID_VW_EXAMPLE',['../vwdll_8h.html#ab50a2eeb73e146706e28920d92929ed9',1,'vwdll.h']]],

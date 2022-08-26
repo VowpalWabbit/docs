@@ -4,6 +4,7 @@ var searchData=
   ['early_5fterminate',['early_terminate',['../structVW_1_1workspace.html#a9130a68b27b5860681f921fe7aa64228',1,'VW::workspace']]],
   ['ec',['ec',['../classSearch_1_1BaseTask.html#a10360ccf2c6968bc17f6f04d946b0577',1,'Search::BaseTask']]],
   ['ecs',['ecs',['../structVW_1_1reductions_1_1cbify__adf__data.html#a5c2a336a1f69c6ec0a220f32c5babb31',1,'VW::reductions::cbify_adf_data']]],
+  ['elements',['elements',['../structVW_1_1reductions_1_1automl_1_1ns__based__config.html#ab5231b31fc6f34aca8f6b2bece8425d4',1,'VW::reductions::automl::ns_based_config']]],
   ['eligible_5fto_5finactivate',['eligible_to_inactivate',['../structVW_1_1reductions_1_1automl_1_1aml__estimator.html#a5a7df0c71be5ffa2de6b39f0eeca3e3a',1,'VW::reductions::automl::aml_estimator']]],
   ['empty',['empty',['../structVW_1_1polylabel.html#aad94f021d3a591bc7daf7f4de5d77d2c',1,'VW::polylabel']]],
   ['empty_5faudit_5fstrings',['EMPTY_AUDIT_STRINGS',['../interactions__predict_8h.html#a92ee22947e48ebc245853352f43c5c79',1,'interactions_predict.h']]],
@@ -31,7 +32,6 @@ var searchData=
   ['examples',['examples',['../structContext.html#a96bc573c2586987b77830f7f16818229',1,'Context']]],
   ['examples_5fdont_5fchange',['EXAMPLES_DONT_CHANGE',['../namespaceSearch.html#a00f1706c73f53da6977b3358e53c8e58',1,'Search']]],
   ['exc_5fptr',['exc_ptr',['../structparser.html#abef922392d111bc5567e672df2d35e57',1,'parser']]],
-  ['exclusions',['exclusions',['../structVW_1_1reductions_1_1automl_1_1exclusion__config.html#a790df35748337a9883d21324b2496fe8',1,'VW::reductions::automl::exclusion_config']]],
   ['explicit_5fincluded_5factions',['explicit_included_actions',['../structCCB_1_1label.html#af7a2d5daa79b468b8671712a4a01835b',1,'CCB::label::explicit_included_actions()'],['../structCCB_1_1reduction__features.html#a7b4dc06b9e1293fc465d99883454f253',1,'CCB::reduction_features::explicit_included_actions()']]],
   ['explore',['explore',['../structVW_1_1cb__explore__adf_1_1cb__explore__adf__base.html#a8f91aca20167b536fbe0c73f667e69f1',1,'VW::cb_explore_adf::cb_explore_adf_base']]],
   ['extent_5finteractions',['extent_interactions',['../structVW_1_1example__predict.html#a268f90acf852582bb0946c30f0557ff9',1,'VW::example_predict::extent_interactions()'],['../structVW_1_1workspace.html#ac5b414cf0351eb930d74a55844ed69e3',1,'VW::workspace::extent_interactions()']]]
