@@ -41,6 +41,8 @@ var searchData=
   ['_7estride_5fshift_5fguard',['~stride_shift_guard',['../classvw__slim_1_1stride__shift__guard.html#a3ffe0ed6488b88a0a81df2f4e82f880c',1,'vw_slim::stride_shift_guard']]],
   ['_7eswap_5fguard_5fimpl',['~swap_guard_impl',['../classVW_1_1details_1_1swap__guard__impl.html#a852f8fbb6f0a7a83e660e6218926c8e2',1,'VW::details::swap_guard_impl']]],
   ['_7eswap_5fguard_5fimpl_5frvalue',['~swap_guard_impl_rvalue',['../classVW_1_1details_1_1swap__guard__impl__rvalue.html#a0b49d31c92f6015e5296c94c3e1dbb40',1,'VW::details::swap_guard_impl_rvalue']]],
+  ['_7ethread_5fpool',['~thread_pool',['../classVW_1_1thread__pool.html#a4f8633a7f1f8b2badd8ecfe9c193ffc2',1,'VW::thread_pool']]],
+  ['_7ethreads_5fjoiner',['~threads_joiner',['../classVW_1_1threads__joiner.html#a0f4887cb24b647233133729534ab88cd',1,'VW::threads_joiner']]],
   ['_7etrace_5fmessage_5fwrapper',['~trace_message_wrapper',['../structtrace__message__wrapper.html#a67dba64b58b02aee80c8d68bd2897b67',1,'trace_message_wrapper']]],
   ['_7etyped_5foption_5fvisitor',['~typed_option_visitor',['../structVW_1_1config_1_1typed__option__visitor.html#a4770500721e208760d9f2bb7ffb0cba8',1,'VW::config::typed_option_visitor']]],
   ['_7ev_5farray',['~v_array',['../structVW_1_1v__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_b889746ac0d5b5a66c0cc84b6b35321b.html#a01889d8a2e97924d0737e912aef2f26b',1,'VW::v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;']]],
