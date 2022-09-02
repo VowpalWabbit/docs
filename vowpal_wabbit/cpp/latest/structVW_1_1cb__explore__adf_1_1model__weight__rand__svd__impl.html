@@ -106,8 +106,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7eb602eaed737eace03170e51a219b1f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1cb__explore__adf_1_1model__weight__rand__svd__impl.html#a7eb602eaed737eace03170e51a219b1f">model_weight_rand_svd_impl</a> (<a class="el" href="structVW_1_1workspace.html">VW::workspace</a> *all, uint64_t d, uint64_t seed, size_t total_size)</td></tr>
-<tr class="separator:a7eb602eaed737eace03170e51a219b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a033deaba0eb9ba7bf906bea2b705f0f8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1cb__explore__adf_1_1model__weight__rand__svd__impl.html#a033deaba0eb9ba7bf906bea2b705f0f8">model_weight_rand_svd_impl</a> (<a class="el" href="structVW_1_1workspace.html">VW::workspace</a> *all, uint64_t d, uint64_t seed, size_t total_size, size_t thread_pool_size)</td></tr>
+<tr class="separator:a033deaba0eb9ba7bf906bea2b705f0f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac93b117e447d45fe640a533f471874ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1cb__explore__adf_1_1model__weight__rand__svd__impl.html#ac93b117e447d45fe640a533f471874ea">run</a> (const <a class="el" href="namespaceVW.html#a505a6662876c6cba2fcdebb6d21ebbd2">multi_ex</a> &amp;examples, const std::vector&lt; float &gt; &amp;shrink_factors, Eigen::MatrixXf &amp;U, Eigen::VectorXf &amp;_S, Eigen::MatrixXf &amp;_V)</td></tr>
 <tr class="separator:ac93b117e447d45fe640a533f471874ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a393022bd8de08c81b76a0751bb93b7db"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1cb__explore__adf_1_1model__weight__rand__svd__impl.html#a393022bd8de08c81b76a0751bb93b7db">generate_model_weight_Y</a> (const <a class="el" href="namespaceVW.html#a505a6662876c6cba2fcdebb6d21ebbd2">multi_ex</a> &amp;examples, uint64_t &amp;max_existing_column, const std::vector&lt; float &gt; &amp;shrink_factors)</td></tr>
@@ -131,8 +131,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a3de4cdf147d90b95ebbf5538852b2b46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a7eb602eaed737eace03170e51a219b1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7eb602eaed737eace03170e51a219b1f">&#9670;&nbsp;</a></span>model_weight_rand_svd_impl()</h2>
+<a id="a033deaba0eb9ba7bf906bea2b705f0f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a033deaba0eb9ba7bf906bea2b705f0f8">&#9670;&nbsp;</a></span>model_weight_rand_svd_impl()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -159,7 +159,13 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>total_size</em>&#160;</td>
+          <td class="paramname"><em>total_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>thread_pool_size</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -385,7 +391,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 2 2022 17:44:58 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 2 2022 19:00:02 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
