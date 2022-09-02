@@ -7,7 +7,7 @@ var searchData=
   ['raw_5fprediction',['raw_prediction',['../structVW_1_1workspace.html#a72755b57b42c9839b75e7d23b15e739a',1,'VW::workspace']]],
   ['read_5fcached_5flabel',['read_cached_label',['../structVW_1_1label__parser.html#a96f5af9464f646a53a5b853b96d38611',1,'VW::label_parser']]],
   ['reader',['reader',['../structjson__parser.html#a7ccd95632770b12608291f09234000fb',1,'json_parser::reader()'],['../structparser.html#a7af863d61285cce4103bbea3ddf41c59',1,'parser::reader()']]],
-  ['ready_5fparsed_5fexamples',['ready_parsed_examples',['../structparser.html#a5fe824471da29d566951eccef30041bd',1,'parser']]],
+  ['ready_5fparsed_5fexamples',['ready_parsed_examples',['../structparser.html#ab1c634e369a951670e5e2b39b2be360a',1,'parser']]],
   ['redefine',['redefine',['../structVW_1_1workspace.html#a4db77f0861355170dead821c2b17e75e',1,'VW::workspace']]],
   ['redefine_5fsome',['redefine_some',['../structVW_1_1workspace.html#a21905006a34ca0579048fb609c30c5fd',1,'VW::workspace']]],
   ['reduction_5fstack',['reduction_stack',['../structVW_1_1default__reduction__stack__setup.html#a9098946999eb56e719a5ab3253b4d906',1,'VW::default_reduction_stack_setup']]],

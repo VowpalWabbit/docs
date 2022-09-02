@@ -9,7 +9,5 @@ var searchData=
   ['polyprediction',['polyprediction',['../structVW_1_1polyprediction.html',1,'VW']]],
   ['predictor',['predictor',['../classSearch_1_1predictor.html',1,'Search']]],
   ['primitive_5ffeature_5fspace',['primitive_feature_space',['../structVW_1_1primitive__feature__space.html',1,'VW']]],
-  ['probability_5fdensity_5ffunction_5fvalue',['probability_density_function_value',['../structVW_1_1continuous__actions_1_1probability__density__function__value.html',1,'VW::continuous_actions']]],
-  ['ptr_5fqueue',['ptr_queue',['../classVW_1_1ptr__queue.html',1,'VW']]],
-  ['ptr_5fqueue_3c_20vw_3a_3aexample_20_3e',['ptr_queue&lt; VW::example &gt;',['../classVW_1_1ptr__queue.html',1,'VW']]]
+  ['probability_5fdensity_5ffunction_5fvalue',['probability_density_function_value',['../structVW_1_1continuous__actions_1_1probability__density__function__value.html',1,'VW::continuous_actions']]]
 ];
