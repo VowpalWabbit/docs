@@ -7,22 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>Offline Policy Evaluation Using the Command Line &#8212; VowpalWabbit latest documentation</title>
-  <script>
-    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
-  </script>
-  
-  <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+<script>
+  document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+  document.documentElement.dataset.theme = localStorage.getItem("theme") || "light"
+</script>
 
-  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=92025949c220c2e29695" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=92025949c220c2e29695" rel="stylesheet">
+
+
   <link rel="stylesheet"
-    href="../_static/vendor/fontawesome/6.1.2/css/all.min.css">
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
   <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2">
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
   <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2">
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
@@ -30,9 +30,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
     <link rel="stylesheet" type="text/css" href="../_static/nav.css" />
-  
+
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b">
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695">
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -49,41 +49,23 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'tutorials/off_policy_evaluation';</script>
     <link rel="shortcut icon" href="../_static/favicon.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Contextual Bandits with Continuous Actions" href="python_cats.html" />
     <link rel="prev" title="Command Line for CSV Dataset" href="cmd_csv_with_iris_dataset.html" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="docsearch:language" content="None">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="docsearch:language" content="None">
   </head>
   
   
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
-
-  
-  <input type="checkbox" class="sidebar-toggle" name="__primary" id="__primary">
-  <label class="overlay overlay-primary" for="__primary"></label>
-
-  
-  <input type="checkbox" class="sidebar-toggle" name="__secondary" id="__secondary">
-  <label class="overlay overlay-secondary" for="__secondary"></label>
-
-  
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+    <div class="bd-header-announcement container-fluid" id="banner">
       
-<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
-  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form>
-    </div>
-  </div>
 
-  
+    </div>
+
+    
     <div class="navbar_container main_nav_container">
   <div class="container nav_wrapper">
     <div class="logo">
@@ -273,89 +255,16 @@ const thebe_selector_output = ".output, .cell_output"
 </script>
 
 
-  <div class="bd-container">
-    <div class="bd-container__inner bd-page-width">
-      
-      <div class="bd-sidebar-primary bd-sidebar">
-        
-  
-  <div class="sidebar-header-items sidebar-primary__section">
-    
-    
-      <div class="sidebar-header-items__center">
-      
-      <div class="navbar-center-item">
-        <nav class="navbar-nav">
-    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
-        Site Navigation
-    </p>
-    <ul id="navbar-main-elements" class="navbar-nav">
-        
-                <li class="nav-item current active">
-                    <a class="nav-link" href="index.html">
-                        Tutorials
-                    </a>
-                </li>
-                
+    <div class="bd-container container-xl">
+      <div class="bd-container__inner row">
+          
 
-                <li class="nav-item">
-                    <a class="nav-link" href="../examples/index.html">
-                        Examples
-                    </a>
-                </li>
-                
-
-                <li class="nav-item">
-                    <a class="nav-link" href="../reference/index.html">
-                        API Reference
-                    </a>
-                </li>
-                
-
-                <li class="nav-item">
-                    <a class="nav-link" href="../command_line_args.html">
-                        Command line options
-                    </a>
-                </li>
-                
-    </ul>
-</nav>
-      </div>
-      
-      </div>
-    
-
-    
-    
-    <div class="sidebar-header-items__end">
-      
-      <div class="navbar-end-item">
-        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
-    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
-    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
-    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
-</span>
-      </div>
-      
-      <div class="navbar-end-item">
-        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
-      </ul>
-      </div>
-      
-    </div>
-    
-  </div>
-
-  
-  <div class="sidebar-start-items sidebar-primary__section">
-    <div class="sidebar-start-items__item">
-<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+<!-- Only show if we have sidebars configured, else just a small margin  -->
+<div class="bd-sidebar-primary col-12 col-md-3 bd-sidebar">
+  <div class="sidebar-start-items"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
-  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form>
-    </div>
-    <div class="sidebar-start-items__item"><a href="https://vowpalwabbit.org/docs/">
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><a href="https://vowpalwabbit.org/docs/">
   latest
 </a>
 
@@ -363,36 +272,296 @@ const thebe_selector_output = ".output, .cell_output"
 
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
   <div class="bd-toc-item active">
-    None
+    <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="index.html">
+   Tutorials
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="cmd_first_steps.html">
+     Command Line Basics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="cmd_linear_regression.html">
+     Command Line Linear Regression
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="cmd_csv_with_iris_dataset.html">
+     Command Line for CSV Dataset
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Offline Policy Evaluation Using the Command Line
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="python_cats.html">
+     Contextual Bandits with Continuous Actions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="python_classification.html">
+     Classification
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="python_Contextual_bandits_and_Vowpal_Wabbit.html">
+     Contextual Bandits
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="python_Simulating_a_news_personalization_scenario_using_Contextual_Bandits.html">
+     Contextual Bandit Content Personalization
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="python_first_steps.html">
+     Python Basics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="python_slates.html">
+     Slates
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="DFtoVW_tutorial.html">
+     Pandas DataFrame to VowpalWabbit Format Conversion
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../examples/index.html">
+   Examples
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../examples/basics.html">
+     Python Basics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../examples/contextual_bandit.html">
+     Contextual Bandits
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../examples/mini_vw.html">
+     Mini VW
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../examples/poisson_regression.html">
+     Poisson Regression
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../examples/predict.html">
+     Predict comparison
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../examples/search_covington.html">
+     Search - Covington
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../examples/search_sequence_ldf.html">
+     Search - Sequence LDF
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../examples/search_sequence.html">
+     Search - Sequence
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../examples/search_speech_tagger.html">
+     Search - Speech Tagger
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../reference/index.html">
+   API Reference
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../reference/vowpalwabbit.html">
+     vowpalwabbit
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../reference/vowpalwabbit.dftovw.html">
+     vowpalwabbit.dftovw
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../reference/vowpalwabbit.sklearn.html">
+     vowpalwabbit.sklearn
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../reference/vowpalwabbit.pyvw.html">
+     vowpalwabbit.pyvw
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../reference/vowpalwabbit.pyvw.pylibvw.html">
+     vowpalwabbit.pyvw.pylibvw
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../reference/python_8110_900_migration_guide.html">
+     Python 8.11 to 9 migration
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../command_line_args.html">
+   Command line options
+  </a>
+ </li>
+</ul>
+
   </div>
 </nav>
-    </div>
   </div>
-  
-
-  
-  <div class="sidebar-end-items sidebar-primary__section">
-    <div class="sidebar-end-items__item">
-    </div>
+  <div class="sidebar-end-items">
   </div>
+</div>
 
-      </div>
-      <main class="bd-main">
-        
-        
-        <div class="bd-content">
-          <div class="bd-article-container">
-            
-            <div class="bd-header-article">
-                
-            </div>
-            
-            
-    
-    
 
-            <article class="bd-article" role="main">
+          
+
+
+<div class="bd-sidebar-secondary d-none d-xl-block col-xl-2 bd-toc">
+  
+    
+    <div class="toc-item">
+      
+<div class="tocsection onthispage mt-5 pt-1 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction-motivation">
+   Introduction &amp; Motivation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#batch-scenario-policy-evaluation-with-a-pre-trained-vw-policy-cb-format-data">
+   Batch scenario: policy evaluation with a pre-trained VW policy,
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     cb
+    </span>
+   </code>
+   -format data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#batch-scenario-policy-evaluation-with-a-pre-trained-vw-policy-cb-adf-format-data">
+   Batch scenario: policy evaluation with a pre-trained VW policy,
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     cb_adf
+    </span>
+   </code>
+   -format data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#online-scenario-policy-evaluation-with-an-incrementally-trained-vw-policy-cb-format-data">
+   Online scenario: policy evaluation with an incrementally trained VW policy,
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     cb
+    </span>
+   </code>
+   -format data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#online-scenario-policy-evaluation-with-an-incrementally-trained-vw-policy-cb-adf-format-data">
+   Online scenario: policy evaluation with an incrementally trained VW policy,
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     cb_adf
+    </span>
+   </code>
+   -format data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#legacy-policy-evaluation-with-cb-format-data-using-a-pre-trained-policy">
+   Legacy: policy evaluation with
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     cb
+    </span>
+   </code>
+   -format data, using a pre-trained policy
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#more-to-explore">
+   More to explore
+  </a>
+ </li>
+</ul>
+
+</nav>
+    </div>
+    
+    <div class="toc-item">
+      
+
+<div class="tocsection editthispage">
+    <a href="https://github.com/VowpalWabbit/vowpal_wabbit/edit/master/python/docs/source/tutorials/off_policy_evaluation.md">
+        <i class="fas fa-pencil-alt"></i> Edit this page
+    </a>
+</div>
+
+    </div>
+    
+  
+</div>
+
+
+          
+          
+          <div class="bd-content col-12 col-md-9 col-xl-7">
               
+    
+    
+
+              <article class="bd-article" role="main">
+                
   <section id="offline-policy-evaluation-using-the-command-line">
 <h1>Offline Policy Evaluation Using the Command Line<a class="headerlink" href="#offline-policy-evaluation-using-the-command-line" title="Permalink to this headline">#</a></h1>
 <div class="admonition-credit admonition">
@@ -677,13 +846,13 @@ vw (cb_algs.cc:161): direct method can not be used for evaluation --- it is bias
     </script>
     <script>kernelName = 'python3'</script>
 
-            </article>
-            
+              </article>
+              
 
-            
-            
-            <footer class="bd-footer-article">
-                <!-- Previous / next buttons -->
+
+              
+              <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
 <div class='prev-next-area'>
   <a class='left-prev' id="prev-link" href="cmd_csv_with_iris_dataset.html" title="previous page">
       <i class="fas fa-angle-left"></i>
@@ -700,154 +869,35 @@ vw (cb_algs.cc:161): direct method can not be used for evaluation --- it is bias
   <i class="fas fa-angle-right"></i>
   </a>
 </div>
-            </footer>
-            
-          </div>
-          
-          
-          
-            <div class="bd-sidebar-secondary bd-toc">
+              </footer>
               
-<div class="toc-item">
-  
-<div class="tocsection onthispage">
-    <i class="fas fa-list"></i> On this page
-</div>
-<nav id="bd-toc-nav" class="page-toc">
-    <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#introduction-motivation">
-   Introduction &amp; Motivation
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#batch-scenario-policy-evaluation-with-a-pre-trained-vw-policy-cb-format-data">
-   Batch scenario: policy evaluation with a pre-trained VW policy,
-   <code class="docutils literal notranslate">
-    <span class="pre">
-     cb
-    </span>
-   </code>
-   -format data
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#batch-scenario-policy-evaluation-with-a-pre-trained-vw-policy-cb-adf-format-data">
-   Batch scenario: policy evaluation with a pre-trained VW policy,
-   <code class="docutils literal notranslate">
-    <span class="pre">
-     cb_adf
-    </span>
-   </code>
-   -format data
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#online-scenario-policy-evaluation-with-an-incrementally-trained-vw-policy-cb-format-data">
-   Online scenario: policy evaluation with an incrementally trained VW policy,
-   <code class="docutils literal notranslate">
-    <span class="pre">
-     cb
-    </span>
-   </code>
-   -format data
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#online-scenario-policy-evaluation-with-an-incrementally-trained-vw-policy-cb-adf-format-data">
-   Online scenario: policy evaluation with an incrementally trained VW policy,
-   <code class="docutils literal notranslate">
-    <span class="pre">
-     cb_adf
-    </span>
-   </code>
-   -format data
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#legacy-policy-evaluation-with-cb-format-data-using-a-pre-trained-policy">
-   Legacy: policy evaluation with
-   <code class="docutils literal notranslate">
-    <span class="pre">
-     cb
-    </span>
-   </code>
-   -format data, using a pre-trained policy
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#more-to-explore">
-   More to explore
-  </a>
- </li>
-</ul>
-
-</nav>
-</div>
-
-<div class="toc-item">
-  
-
-<div class="tocsection editthispage">
-    <a href="https://github.com/VowpalWabbit/vowpal_wabbit/edit/master/python/docs/source/tutorials/off_policy_evaluation.md">
-        <i class="fas fa-pencil-alt"></i> Edit this page
-    </a>
-</div>
-
-</div>
-
-<div class="toc-item">
-  
-<div class="tocsection sourcelink">
-    <a href="../_sources/tutorials/off_policy_evaluation.md.txt">
-        <i class="fas fa-file-alt"></i> Show Source
-    </a>
-</div>
-
-</div>
-
-            </div>
-          
-          
-        </div>
-        <footer class="bd-footer-content">
-          <div class="bd-footer-content__inner">
-            
           </div>
-        </footer>
-        
-      </main>
+          
+      </div>
     </div>
-  </div>
 
   
-    
+  
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b"></script>
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695"></script>
 
 
-  <footer class="bd-footer"><div class="bd-footer__inner container">
+<footer class="bd-footer"><div class="bd-footer__inner container">
   
   <div class="footer-item">
-    
-<p class="copyright">
-
+    <p class="copyright">
     &copy; Copyright 2021, John langford et al.<br>
-
 </p>
-
   </div>
   
   <div class="footer-item">
-    
-<p class="sphinx-version">
+    <p class="sphinx-version">
 Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.5.0.<br>
 </p>
-
   </div>
   
 </div>
-  </footer>
+</footer>
 <script type="text/javascript" src="https://js.monitor.azure.com/scripts/c/ms.analytics-web-3.min.js">
 </script>
 <script>
