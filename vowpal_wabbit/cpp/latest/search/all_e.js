@@ -82,6 +82,7 @@ var searchData=
   ['num_5fsetup_5fexamples',['num_setup_examples',['../structparser.html#acbd63b0b06ea56d99c733fd603066c47',1,'parser']]],
   ['num_5fweights',['num_weights',['../namespaceVW.html#a04b594a4e250da0d08d159315c51449d',1,'VW']]],
   ['number_5fof_5fcombinations_5fwith_5frepetition',['number_of_combinations_with_repetition',['../namespaceVW_1_1math.html#a6bba0fe85cf39d89c5a9f13b58987dc1',1,'VW::math']]],
+  ['number_5fof_5fnon_5fdegenerate_5fsingular_5fvalues',['number_of_non_degenerate_singular_values',['../structVW_1_1cb__explore__adf_1_1cb__explore__adf__large__action__space.html#ab9382f37f42c586530ea4931c2738659',1,'VW::cb_explore_adf::cb_explore_adf_large_action_space']]],
   ['number_5fof_5fpermutations_5fwith_5frepetition',['number_of_permutations_with_repetition',['../namespaceVW_1_1math.html#a1a277e1f850e8b4281f2b504c33731eb',1,'VW::math']]],
   ['numberofeventszeroactions',['NumberOfEventsZeroActions',['../structdsjson__metrics.html#acfed6584417cf236d45d67dd86a292df',1,'dsjson_metrics']]],
   ['numberofskippedevents',['NumberOfSkippedEvents',['../structdsjson__metrics.html#a1ce31d4459d477b15c56f63cb5a289aa',1,'dsjson_metrics']]],
