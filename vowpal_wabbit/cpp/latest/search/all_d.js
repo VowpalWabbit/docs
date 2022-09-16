@@ -78,7 +78,7 @@ var searchData=
   ['model_5fparser_2eh',['model_parser.h',['../model__parser_8h.html',1,'']]],
   ['model_5futils_2eh',['model_utils.h',['../model__utils_8h.html',1,'']]],
   ['model_5fweight_5frand_5fsvd',['model_weight_rand_svd',['../namespaceVW_1_1cb__explore__adf.html#a4e25b8145f7bcb713488fca5bb5ac62fa2fc5dd8f2d52a2af72e02696da2d1924',1,'VW::cb_explore_adf']]],
-  ['model_5fweight_5frand_5fsvd_5fimpl',['model_weight_rand_svd_impl',['../structVW_1_1cb__explore__adf_1_1model__weight__rand__svd__impl.html',1,'VW::cb_explore_adf::model_weight_rand_svd_impl'],['../structVW_1_1cb__explore__adf_1_1model__weight__rand__svd__impl.html#a033deaba0eb9ba7bf906bea2b705f0f8',1,'VW::cb_explore_adf::model_weight_rand_svd_impl::model_weight_rand_svd_impl()']]],
+  ['model_5fweight_5frand_5fsvd_5fimpl',['model_weight_rand_svd_impl',['../classVW_1_1cb__explore__adf_1_1model__weight__rand__svd__impl.html',1,'VW::cb_explore_adf::model_weight_rand_svd_impl'],['../classVW_1_1cb__explore__adf_1_1model__weight__rand__svd__impl.html#a033deaba0eb9ba7bf906bea2b705f0f8',1,'VW::cb_explore_adf::model_weight_rand_svd_impl::model_weight_rand_svd_impl()']]],
   ['more_5finfo_5frequired_5ffor_5fclasses',['more_info_required_for_classes',['../structVW_1_1active__multiclass__prediction.html#ab9814a36e47b7f06526ebb1d978515b5',1,'VW::active_multiclass_prediction']]],
   ['move_5ffeature_5fnamespace',['move_feature_namespace',['../namespaceVW.html#ab9e00af55935c42d32d1c2c5c244150e',1,'VW']]],
   ['move_5foffsets',['move_offsets',['../classdense__parameters.html#a0809b7f606ffd6681d2ef69b34fd1472',1,'dense_parameters']]],

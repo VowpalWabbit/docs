@@ -6274,7 +6274,7 @@ wap_ldf
 
 .. code-block::
 
-    --wap_ldf <str>
+    --wap_ldf <m|mc|multiline|multiline-classifier>
 
 
 .. raw:: html
@@ -7472,7 +7472,7 @@ policy
 
 .. code-block::
 
-    --policy <str> (default: linear)
+    --policy <constant|linear> (default: linear)
 
 
 .. raw:: html
@@ -8850,41 +8850,6 @@ Rank for matrix factorization
 
 Rank sticks VW in matrix factorization mode. You'll need a relatively small
 learning rate like ``-l 0.01``.
-
-
-
-bfgs
-""""
-
-.. code-block::
-
-    --bfgs
-
-
-
-
-Option not supported by this reduction
-
-``--bfgs`` and ``--conjugate_gradient`` uses a batch optimizer based on LBFGS or
-nonlinear conjugate gradient method.  Of the two, ``--bfgs`` is recommended.
-To avoid overfitting, you should specify ``--l2``. You may also want to
-adjust ``--mem`` which controls the rank of an inverse hessian approximation
-used by LBFGS. ``--termination`` causes bfgs to terminate early when only a
-very small gradient remains.
-
-
-
-conjugate_gradient
-""""""""""""""""""
-
-.. code-block::
-
-    --conjugate_gradient
-
-
-
-
-Option not supported by this reduction
 
 
 [Reduction] Network sending Options

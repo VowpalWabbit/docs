@@ -3260,16 +3260,6 @@ const thebe_selector_output = ".output, .cell_output"
        rank
       </a>
      </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id73">
-       bfgs
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id74">
-       conjugate_gradient
-      </a>
-     </li>
     </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -3322,7 +3312,7 @@ const thebe_selector_output = ".output, .cell_output"
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id75">
+      <a class="reference internal nav-link" href="#id73">
        radius
       </a>
      </li>
@@ -3371,12 +3361,12 @@ const thebe_selector_output = ".output, .cell_output"
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id76">
+      <a class="reference internal nav-link" href="#id74">
        ftrl_alpha
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id77">
+      <a class="reference internal nav-link" href="#id75">
        ftrl_beta
       </a>
      </li>
@@ -3393,12 +3383,12 @@ const thebe_selector_output = ".output, .cell_output"
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id78">
+      <a class="reference internal nav-link" href="#id76">
        ftrl_alpha
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id79">
+      <a class="reference internal nav-link" href="#id77">
        ftrl_beta
       </a>
      </li>
@@ -3445,7 +3435,7 @@ const thebe_selector_output = ".output, .cell_output"
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id80">
+      <a class="reference internal nav-link" href="#id78">
        bandwidth
       </a>
      </li>
@@ -6620,7 +6610,7 @@ default bandwidth = unit_range / 2.0</p>
 <h3>[Reduction] Cost Sensitive Weighted All-Pairs with Label Dependent Features Options<a class="headerlink" href="#reduction-cost-sensitive-weighted-all-pairs-with-label-dependent-features-options" title="Permalink to this headline">#</a></h3>
 <section id="wap-ldf">
 <h4>wap_ldf<a class="headerlink" href="#wap-ldf" title="Permalink to this headline">#</a></h4>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">--</span><span class="n">wap_ldf</span> <span class="o">&lt;</span><span class="nb">str</span><span class="o">&gt;</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">--</span><span class="n">wap_ldf</span> <span class="o">&lt;</span><span class="n">m</span><span class="o">|</span><span class="n">mc</span><span class="o">|</span><span class="n">multiline</span><span class="o">|</span><span class="n">multiline</span><span class="o">-</span><span class="n">classifier</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <span class="option-tag">
@@ -7188,7 +7178,7 @@ default bandwidth = unit_range / 2.0</p>
 </section>
 <section id="policy">
 <h4>policy<a class="headerlink" href="#policy" title="Permalink to this headline">#</a></h4>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">--</span><span class="n">policy</span> <span class="o">&lt;</span><span class="nb">str</span><span class="o">&gt;</span> <span class="p">(</span><span class="n">default</span><span class="p">:</span> <span class="n">linear</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">--</span><span class="n">policy</span> <span class="o">&lt;</span><span class="n">constant</span><span class="o">|</span><span class="n">linear</span><span class="o">&gt;</span> <span class="p">(</span><span class="n">default</span><span class="p">:</span> <span class="n">linear</span><span class="p">)</span>
 </pre></div>
 </div>
 <span class="option-tag">
@@ -7870,26 +7860,6 @@ that to compute the step size via a parabolic approximation.</p>
 <p>Rank sticks VW in matrix factorization mode. You’ll need a relatively small
 learning rate like <code class="docutils literal notranslate"><span class="pre">-l</span> <span class="pre">0.01</span></code>.</p>
 </section>
-<section id="id73">
-<h4>bfgs<a class="headerlink" href="#id73" title="Permalink to this headline">#</a></h4>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">--</span><span class="n">bfgs</span>
-</pre></div>
-</div>
-<p>Option not supported by this reduction</p>
-<p><code class="docutils literal notranslate"><span class="pre">--bfgs</span></code> and <code class="docutils literal notranslate"><span class="pre">--conjugate_gradient</span></code> uses a batch optimizer based on LBFGS or
-nonlinear conjugate gradient method.  Of the two, <code class="docutils literal notranslate"><span class="pre">--bfgs</span></code> is recommended.
-To avoid overfitting, you should specify <code class="docutils literal notranslate"><span class="pre">--l2</span></code>. You may also want to
-adjust <code class="docutils literal notranslate"><span class="pre">--mem</span></code> which controls the rank of an inverse hessian approximation
-used by LBFGS. <code class="docutils literal notranslate"><span class="pre">--termination</span></code> causes bfgs to terminate early when only a
-very small gradient remains.</p>
-</section>
-<section id="id74">
-<h4>conjugate_gradient<a class="headerlink" href="#id74" title="Permalink to this headline">#</a></h4>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">--</span><span class="n">conjugate_gradient</span>
-</pre></div>
-</div>
-<p>Option not supported by this reduction</p>
-</section>
 </section>
 <section id="reduction-network-sending-options">
 <h3>[Reduction] Network sending Options<a class="headerlink" href="#reduction-network-sending-options" title="Permalink to this headline">#</a></h3>
@@ -7955,8 +7925,8 @@ predictions from the daemon VW.</p>
 </div>
 <p>Project the outputs to adapt to both the lipschitz and comparator norm</p>
 </section>
-<section id="id75">
-<h4>radius<a class="headerlink" href="#id75" title="Permalink to this headline">#</a></h4>
+<section id="id73">
+<h4>radius<a class="headerlink" href="#id73" title="Permalink to this headline">#</a></h4>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">--</span><span class="n">radius</span> <span class="o">&lt;</span><span class="nb">float</span><span class="o">&gt;</span>
 </pre></div>
 </div>
@@ -8022,15 +7992,15 @@ paper.</a></p>
     <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
 </span><p>PiSTOL: Parameter-free STOchastic Learning</p>
 </section>
-<section id="id76">
-<h4>ftrl_alpha<a class="headerlink" href="#id76" title="Permalink to this headline">#</a></h4>
+<section id="id74">
+<h4>ftrl_alpha<a class="headerlink" href="#id74" title="Permalink to this headline">#</a></h4>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">--</span><span class="n">ftrl_alpha</span> <span class="o">&lt;</span><span class="nb">float</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>Learning rate for FTRL optimization</p>
 </section>
-<section id="id77">
-<h4>ftrl_beta<a class="headerlink" href="#id77" title="Permalink to this headline">#</a></h4>
+<section id="id75">
+<h4>ftrl_beta<a class="headerlink" href="#id75" title="Permalink to this headline">#</a></h4>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">--</span><span class="n">ftrl_beta</span> <span class="o">&lt;</span><span class="nb">float</span><span class="o">&gt;</span>
 </pre></div>
 </div>
@@ -8050,15 +8020,15 @@ paper.</a></p>
     <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
 </span><p>Coin betting optimizer</p>
 </section>
-<section id="id78">
-<h4>ftrl_alpha<a class="headerlink" href="#id78" title="Permalink to this headline">#</a></h4>
+<section id="id76">
+<h4>ftrl_alpha<a class="headerlink" href="#id76" title="Permalink to this headline">#</a></h4>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">--</span><span class="n">ftrl_alpha</span> <span class="o">&lt;</span><span class="nb">float</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>Learning rate for FTRL optimization</p>
 </section>
-<section id="id79">
-<h4>ftrl_beta<a class="headerlink" href="#id79" title="Permalink to this headline">#</a></h4>
+<section id="id77">
+<h4>ftrl_beta<a class="headerlink" href="#id77" title="Permalink to this headline">#</a></h4>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">--</span><span class="n">ftrl_beta</span> <span class="o">&lt;</span><span class="nb">float</span><span class="o">&gt;</span>
 </pre></div>
 </div>
@@ -8122,8 +8092,8 @@ paper.</a></p>
     <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
 </span><p>Type of kernel</p>
 </section>
-<section id="id80">
-<h4>bandwidth<a class="headerlink" href="#id80" title="Permalink to this headline">#</a></h4>
+<section id="id78">
+<h4>bandwidth<a class="headerlink" href="#id78" title="Permalink to this headline">#</a></h4>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">--</span><span class="n">bandwidth</span> <span class="o">&lt;</span><span class="nb">float</span><span class="o">&gt;</span> <span class="p">(</span><span class="n">default</span><span class="p">:</span> <span class="mi">1</span><span class="p">)</span>
 </pre></div>
 </div>

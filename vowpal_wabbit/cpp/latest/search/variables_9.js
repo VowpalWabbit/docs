@@ -9,6 +9,7 @@ var searchData=
   ['ignore_5fsome',['ignore_some',['../structVW_1_1workspace.html#adb7c2aa536667110430169904f8b39d2',1,'VW::workspace']]],
   ['ignore_5fsome_5flinear',['ignore_some_linear',['../structVW_1_1workspace.html#a46f34e6768ebc227f54ae9ca817a5160',1,'VW::workspace']]],
   ['ignore_5fstate',['ignore_state',['../structContext.html#aefdc82512c706a86bb7785b81337ae8b',1,'Context']]],
+  ['impl',['impl',['../classVW_1_1cb__explore__adf_1_1cb__explore__adf__large__action__space.html#a91b4ee5b7b5af51d6656cff02741ef8e',1,'VW::cb_explore_adf::cb_explore_adf_large_action_space']]],
   ['in_5fpass_5fcounter',['in_pass_counter',['../structparser.html#a53510d464dc58fc86bce92c68a07a6b8',1,'parser']]],
   ['in_5fprocess_5fframes',['in_process_frames',['../structINTERACTIONS_1_1generate__interactions__object__cache.html#a1cca13f980633bfd603cd13296ec0b8c',1,'INTERACTIONS::generate_interactions_object_cache']]],
   ['inc',['inc',['../classLabelObjectState.html#a6d7683925b3cfe38f68d25e668da8969',1,'LabelObjectState']]],
