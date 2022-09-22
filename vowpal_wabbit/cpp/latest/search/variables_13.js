@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['s',['s',['../structVW_1_1confidence__sequence_1_1ConfidenceSequence.html#ab693edbbb97ce18a15f692ad788cf3ba',1,'VW::confidence_sequence::ConfidenceSequence']]],
+  ['s',['s',['../structVW_1_1confidence__sequence.html#a9342d77881aca497a1e1e90d7aaf684c',1,'VW::confidence_sequence']]],
   ['sample_5fpdf',['sample_pdf',['../structvw__dbg.html#a2ebd7b6dbc052d399e35264754de9dcf',1,'vw_dbg']]],
   ['save_5fload_5ff',['save_load_f',['../structVW_1_1LEARNER_1_1details_1_1save__load__data.html#ab55446c88dee4d34d7d2dad76d5b933d',1,'VW::LEARNER::details::save_load_data']]],
   ['save_5fmetric_5ff',['save_metric_f',['../structVW_1_1LEARNER_1_1details_1_1save__metric__data.html#acee61b14caef5ea581bfc2a73d6eb8e6',1,'VW::LEARNER::details::save_metric_data']]],
@@ -67,15 +67,15 @@ var searchData=
   ['sum_5floss',['sum_loss',['../structshared__data.html#aadcbe6fbce05c332e87da9aa517b439e',1,'shared_data']]],
   ['sum_5floss_5fsince_5flast_5fdump',['sum_loss_since_last_dump',['../structshared__data.html#ac170e7cf74cd37469fab0ea76bf19ff5',1,'shared_data']]],
   ['sum_5fnamespaces',['sum_namespaces',['../structVW_1_1cb__explore__adf_1_1cb__explore__metrics.html#af8e0095334269048c8ea23c48aee9a77',1,'VW::cb_explore_adf::cb_explore_metrics']]],
-  ['sumw',['sumw',['../structVW_1_1confidence__sequence_1_1ConfidenceSequence.html#abe0651d893ac4f2ff7849e3bf68890c7',1,'VW::confidence_sequence::ConfidenceSequence']]],
-  ['sumwr',['sumwr',['../structVW_1_1confidence__sequence_1_1ConfidenceSequence.html#a97d1530eacb8ff468ba1d35db5d4fbda',1,'VW::confidence_sequence::ConfidenceSequence']]],
-  ['sumwrxhathigh',['sumwrxhathigh',['../structVW_1_1confidence__sequence_1_1ConfidenceSequence.html#a498163980b99dfec0c387e88409b9ac3',1,'VW::confidence_sequence::ConfidenceSequence']]],
-  ['sumwrxhatlow',['sumwrxhatlow',['../structVW_1_1confidence__sequence_1_1ConfidenceSequence.html#a7ea3e4f3f3acf067c6afe4b8ae6fb19e',1,'VW::confidence_sequence::ConfidenceSequence']]],
-  ['sumwsq',['sumwsq',['../structVW_1_1confidence__sequence_1_1ConfidenceSequence.html#a7fffff3ae7ffea69e21b0e9ea0bb515c',1,'VW::confidence_sequence::ConfidenceSequence']]],
-  ['sumwsqr',['sumwsqr',['../structVW_1_1confidence__sequence_1_1ConfidenceSequence.html#ab2d6c23020590332959c21534e51aeac',1,'VW::confidence_sequence::ConfidenceSequence']]],
-  ['sumwsqrsq',['sumwsqrsq',['../structVW_1_1confidence__sequence_1_1ConfidenceSequence.html#ad8401cc00fb9674096dd35817e826c80',1,'VW::confidence_sequence::ConfidenceSequence']]],
-  ['sumwxhathigh',['sumwxhathigh',['../structVW_1_1confidence__sequence_1_1ConfidenceSequence.html#a7c56768a7fc3f33ea9bf72ddbd7d4127',1,'VW::confidence_sequence::ConfidenceSequence']]],
-  ['sumwxhatlow',['sumwxhatlow',['../structVW_1_1confidence__sequence_1_1ConfidenceSequence.html#aed85f9efaffc05e62392d5fffd3e5a56',1,'VW::confidence_sequence::ConfidenceSequence']]],
-  ['sumxhathighsq',['sumxhathighsq',['../structVW_1_1confidence__sequence_1_1ConfidenceSequence.html#affe980c3d20255400f847a0de5e4466b',1,'VW::confidence_sequence::ConfidenceSequence']]],
-  ['sumxhatlowsq',['sumxhatlowsq',['../structVW_1_1confidence__sequence_1_1ConfidenceSequence.html#ade6961ee6f7f5d75755053e0f14ab55f',1,'VW::confidence_sequence::ConfidenceSequence']]]
+  ['sumw',['sumw',['../structVW_1_1confidence__sequence.html#aaad6be4775fd0ed7374f8dd2d03d7f7f',1,'VW::confidence_sequence']]],
+  ['sumwr',['sumwr',['../structVW_1_1confidence__sequence.html#add147dbd9420d4dd28437c4d3e4d5ff9',1,'VW::confidence_sequence']]],
+  ['sumwrxhathigh',['sumwrxhathigh',['../structVW_1_1confidence__sequence.html#aec4097eac43e4675e4b5d6550376e8c8',1,'VW::confidence_sequence']]],
+  ['sumwrxhatlow',['sumwrxhatlow',['../structVW_1_1confidence__sequence.html#adc8088d50e97505345159b3af196a158',1,'VW::confidence_sequence']]],
+  ['sumwsq',['sumwsq',['../structVW_1_1confidence__sequence.html#ab9840572975abc77850fecc991484c05',1,'VW::confidence_sequence']]],
+  ['sumwsqr',['sumwsqr',['../structVW_1_1confidence__sequence.html#a7a5fd7b80d35c8c742048247df07df79',1,'VW::confidence_sequence']]],
+  ['sumwsqrsq',['sumwsqrsq',['../structVW_1_1confidence__sequence.html#a851ab123906a4ae45e9dc97e1927bea8',1,'VW::confidence_sequence']]],
+  ['sumwxhathigh',['sumwxhathigh',['../structVW_1_1confidence__sequence.html#a6efb591a0ee7b4af1449ecea430e5a2e',1,'VW::confidence_sequence']]],
+  ['sumwxhatlow',['sumwxhatlow',['../structVW_1_1confidence__sequence.html#a575ede6ffc758f1615e9ba1cbb090732',1,'VW::confidence_sequence']]],
+  ['sumxhathighsq',['sumxhathighsq',['../structVW_1_1confidence__sequence.html#afa8bc784190054e945e9b1914418f511',1,'VW::confidence_sequence']]],
+  ['sumxhatlowsq',['sumxhatlowsq',['../structVW_1_1confidence__sequence.html#a4c15f2840df6514489f91f0db54b4b64',1,'VW::confidence_sequence']]]
 ];

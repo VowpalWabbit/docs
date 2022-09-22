@@ -33,7 +33,7 @@ var searchData=
   ['invalid_5fvw_5fexample',['INVALID_VW_EXAMPLE',['../vwdll_8h.html#ab50a2eeb73e146706e28920d92929ed9',1,'vwdll.h']]],
   ['invalid_5fvw_5fhandle',['INVALID_VW_HANDLE',['../vwdll_8h.html#ab1541f2a2f55dedf8783039be5ac92bd',1,'vwdll.h']]],
   ['invariant_5fupdates',['invariant_updates',['../structVW_1_1workspace.html#a550fe0b2eaefd21c8d5fb5f57eb019cf',1,'VW::workspace']]],
-  ['ips',['ips',['../structVW_1_1estimator__config.html#a584c17cbda8e9706de459d4aa56162b7',1,'VW::estimator_config']]],
+  ['ips',['ips',['../structVW_1_1cressieread__estimator.html#a4bac22b8723f46161bd103d2a3a2dd39',1,'VW::cressieread_estimator']]],
   ['is_5fccb_5finput_5fmodel',['is_ccb_input_model',['../structVW_1_1workspace.html#ab1739c8984ecdde64051dd1c815bcf61',1,'VW::workspace']]],
   ['is_5fldf',['IS_LDF',['../namespaceSearch.html#a0cf0cfef46a3b6962d91d7de1ae67796',1,'Search']]],
   ['is_5fleaf',['is_leaf',['../structVW_1_1reductions_1_1cats_1_1tree__node.html#aaeca171a8bd84152998e5f84aac96a17',1,'VW::reductions::cats::tree_node::is_leaf()'],['../structVW_1_1reductions_1_1offset__tree_1_1tree__node.html#a0563f7cfb4856ce6cdc83ea4af258ca4',1,'VW::reductions::offset_tree::tree_node::is_leaf()']]],

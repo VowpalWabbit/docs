@@ -83,9 +83,9 @@ var searchData=
   ['compile_5flimits',['compile_limits',['../global__data_8h.html#af7b6693596eb1e6a21e0e854e278cbbe',1,'global_data.h']]],
   ['compute_5fspanner',['compute_spanner',['../classVW_1_1cb__explore__adf_1_1spanner__state.html#a7ee2ffcc7fed0043bb9b630e6bca2d12',1,'VW::cb_explore_adf::spanner_state::compute_spanner()'],['../classVW_1_1cb__explore__adf_1_1one__rank__spanner__state.html#a92d33062ded1318cffde787e0bf6a31e',1,'VW::cb_explore_adf::one_rank_spanner_state::compute_spanner()']]],
   ['concat',['concat',['../structfeatures.html#a3b04343635688a655d002d3ecd0f7fa5',1,'features']]],
+  ['confidence_5fsequence',['confidence_sequence',['../structVW_1_1confidence__sequence.html#aa3809df64d73607f55a0e8c57e6497f2',1,'VW::confidence_sequence']]],
   ['confidence_5fsetup',['confidence_setup',['../namespaceVW_1_1reductions.html#adf23f369dd2e0f077e79eb60d5ba6e2c',1,'VW::reductions']]],
-  ['confidencesequence',['ConfidenceSequence',['../structVW_1_1confidence__sequence_1_1ConfidenceSequence.html#ae7eed3470f8669942f97a1eb93086d43',1,'VW::confidence_sequence::ConfidenceSequence']]],
-  ['config_5foracle',['config_oracle',['../structVW_1_1reductions_1_1automl_1_1config__oracle.html#ae457863b5a8c907a6e3a8f906db3d17f',1,'VW::reductions::automl::config_oracle']]],
+  ['config_5foracle',['config_oracle',['../structVW_1_1reductions_1_1automl_1_1config__oracle.html#ad5ab4f8d88a1d0ea482544ca425f2f15',1,'VW::reductions::automl::config_oracle']]],
   ['constexpr_5fint_5fpow10',['constexpr_int_pow10',['../namespaceVW_1_1details.html#ad3879df5b180db6a789f312968940cad',1,'VW::details']]],
   ['constexpr_5fnegative_5fint_5fpow10',['constexpr_negative_int_pow10',['../namespaceVW_1_1details.html#a00f89d94c130db70248d92c279b9780f',1,'VW::details']]],
   ['constexpr_5fnegative_5fint_5fpow10_5fwith_5foffset',['constexpr_negative_int_pow10_with_offset',['../namespaceVW_1_1details.html#ab6ae5a8a298fa337a11f73c58392378f',1,'VW::details']]],
@@ -108,6 +108,7 @@ var searchData=
   ['create_5fvector_5fwriter',['create_vector_writer',['../namespaceVW_1_1io.html#ae757f4f258f87ef5b1ceb012d3e356d2',1,'VW::io']]],
   ['cressieread_5fbound',['cressieread_bound',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#adc332074981fce0af4619ad5d1c63bf7',1,'VW::distributionally_robust::ChiSquared']]],
   ['cressieread_5fduals',['cressieread_duals',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#a18ce6897cfadb81e0295e5a4b9a678f3',1,'VW::distributionally_robust::ChiSquared']]],
+  ['cressieread_5festimator',['cressieread_estimator',['../structVW_1_1cressieread__estimator.html#a99bd3b943d131ee06d592a5a75b8dbfb',1,'VW::cressieread_estimator::cressieread_estimator()'],['../structVW_1_1cressieread__estimator.html#a404effe1d7257b9e9aa9bea9873bc71c',1,'VW::cressieread_estimator::cressieread_estimator(double alpha, double tau)']]],
   ['cressieread_5flower_5fbound',['cressieread_lower_bound',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#a6b65cfedcf8ba90501310b29ec83730a',1,'VW::distributionally_robust::ChiSquared']]],
   ['cressieread_5fupper_5fbound',['cressieread_upper_bound',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#af471418142cc607cab4372220686c086',1,'VW::distributionally_robust::ChiSquared']]],
   ['critical',['critical',['../structVW_1_1io_1_1logger.html#ae1556fe633341a927e9cb4d57cc435e5',1,'VW::io::logger']]],
@@ -117,7 +118,7 @@ var searchData=
   ['csldf_5fsetup',['csldf_setup',['../namespaceVW_1_1reductions.html#a2c6123a16c664994e7e4c6ff9f6105d0',1,'VW::reductions']]],
   ['csoaa_5fsetup',['csoaa_setup',['../namespaceVW_1_1reductions.html#a63c89c86fb7a6d6f54c5f07d43a23cc3',1,'VW::reductions']]],
   ['csv_5fparser',['csv_parser',['../classVW_1_1parsers_1_1csv__parser.html#af1a0f2bd8129370a0aa7c7a1cd2db2ef',1,'VW::parsers::csv_parser']]],
-  ['current_5fips',['current_ips',['../structVW_1_1estimator__config.html#a1469e8c73bc748c6776bd3a90554221e',1,'VW::estimator_config']]],
+  ['current_5fips',['current_ips',['../structVW_1_1cressieread__estimator.html#a7e55e7098b8267ca62ac7d1b357139d8',1,'VW::cressieread_estimator']]],
   ['current_5fstate',['current_state',['../structVWReaderHandler.html#a815ced4a606d3f1e66176cf0bf156bcc',1,'VWReaderHandler']]],
   ['currentnamespace',['CurrentNamespace',['../structContext.html#a9d1381c22ba19a9ca58b7c0f615eaa3a',1,'Context']]]
 ];

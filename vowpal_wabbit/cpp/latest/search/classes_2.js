@@ -23,11 +23,12 @@ var searchData=
   ['common_5flearner_5fbuilder_3c_20reduction_5flearner_5fbuilder_3c_20char_2c_20examplet_2c_20baselearnert_20_3e_2c_20char_2c_20examplet_2c_20baselearnert_20_3e',['common_learner_builder&lt; reduction_learner_builder&lt; char, ExampleT, BaseLearnerT &gt;, char, ExampleT, BaseLearnerT &gt;',['../structVW_1_1LEARNER_1_1common__learner__builder.html',1,'VW::LEARNER']]],
   ['common_5flearner_5fbuilder_3c_20reduction_5flearner_5fbuilder_3c_20datat_2c_20examplet_2c_20baselearnert_20_3e_2c_20datat_2c_20examplet_2c_20baselearnert_20_3e',['common_learner_builder&lt; reduction_learner_builder&lt; DataT, ExampleT, BaseLearnerT &gt;, DataT, ExampleT, BaseLearnerT &gt;',['../structVW_1_1LEARNER_1_1common__learner__builder.html',1,'VW::LEARNER']]],
   ['conditional_5fcontextual_5fbandit_5foutcome',['conditional_contextual_bandit_outcome',['../structCCB_1_1conditional__contextual__bandit__outcome.html',1,'CCB']]],
-  ['confidencesequence',['ConfidenceSequence',['../structVW_1_1confidence__sequence_1_1ConfidenceSequence.html',1,'VW::confidence_sequence']]],
+  ['confidence_5fsequence',['confidence_sequence',['../structVW_1_1confidence__sequence.html',1,'VW']]],
   ['config_5foracle',['config_oracle',['../structVW_1_1reductions_1_1automl_1_1config__oracle.html',1,'VW::reductions::automl']]],
   ['context',['Context',['../structContext.html',1,'']]],
   ['continuous_5flabel',['continuous_label',['../structVW_1_1cb__continuous_1_1continuous__label.html',1,'VW::cb_continuous']]],
   ['continuous_5flabel_5felm',['continuous_label_elm',['../structVW_1_1cb__continuous_1_1continuous__label__elm.html',1,'VW::cb_continuous']]],
+  ['cressieread_5festimator',['cressieread_estimator',['../structVW_1_1cressieread__estimator.html',1,'VW']]],
   ['csv_5fparser',['csv_parser',['../classVW_1_1parsers_1_1csv__parser.html',1,'VW::parsers']]],
   ['csv_5fparser_5foptions',['csv_parser_options',['../structVW_1_1parsers_1_1csv__parser__options.html',1,'VW::parsers']]]
 ];

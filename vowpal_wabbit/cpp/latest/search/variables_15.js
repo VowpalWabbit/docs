@@ -7,7 +7,7 @@ var searchData=
   ['uint_5fstate',['uint_state',['../structContext.html#ab453e55e5f20d7d553a57133d7f1ab03',1,'Context']]],
   ['unbounded',['unbounded',['../structVW_1_1distributionally__robust_1_1Duals.html#af1922f2f51bb7502bcd472bd32a27f24',1,'VW::distributionally_robust::Duals']]],
   ['unknown_5fs',['unknown_s',['../namespaceVW_1_1experimental_1_1error__code.html#a91f4888701cac87d262a46e6bfb5ebae',1,'VW::experimental::error_code']]],
-  ['update_5fcount',['update_count',['../structVW_1_1confidence__sequence_1_1ConfidenceSequence.html#ad1a016d7d28470bd9e18ceab3a705a40',1,'VW::confidence_sequence::ConfidenceSequence::update_count()'],['../structVW_1_1estimator__config.html#a86702caa083e455e4f403c197c2e2b72',1,'VW::estimator_config::update_count()']]],
+  ['update_5fcount',['update_count',['../structVW_1_1confidence__sequence.html#abc97491696bd335bcad52f80a79824f8',1,'VW::confidence_sequence::update_count()'],['../structVW_1_1cressieread__estimator.html#a215516dcb1918f95d7fd0de8f6ac5ca5',1,'VW::cressieread_estimator::update_count()']]],
   ['update_5ff',['update_f',['../structVW_1_1LEARNER_1_1details_1_1learn__data.html#a925c6335bd811bf24016ad9f5e6bc373',1,'VW::LEARNER::details::learn_data']]],
   ['update_5fmultiplier',['update_multiplier',['../structGD_1_1gd.html#a35d42b9b3ef747b8da23d713e9cc6028',1,'GD::gd']]],
   ['updated_5fprediction',['updated_prediction',['../structVW_1_1example.html#aa8000eb1844bf87ad4eaffed342f6206',1,'VW::example']]]

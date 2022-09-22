@@ -9,7 +9,7 @@ var searchData=
   ['decision_5fservice_5fjson',['decision_service_json',['../structparser.html#a864a4006507e401f9794ef6ebaa7e24c',1,'parser']]],
   ['decision_5fservice_5fstate',['decision_service_state',['../structContext.html#a864f2926ef8ba88769fa0872f076af69',1,'Context']]],
   ['dedup_5fexamples',['dedup_examples',['../structContext.html#abbfca50865c4d8e467ec4af24dc59395',1,'Context']]],
-  ['default_5falpha',['DEFAULT_ALPHA',['../confidence__sequence_8h.html#aa0c9ea16a765d63a4294d81a9225148c',1,'DEFAULT_ALPHA():&#160;confidence_sequence.h'],['../distributionally__robust_8h.html#aa0c9ea16a765d63a4294d81a9225148c',1,'DEFAULT_ALPHA():&#160;distributionally_robust.h']]],
+  ['default_5falpha',['DEFAULT_ALPHA',['../distributionally__robust_8h.html#aa0c9ea16a765d63a4294d81a9225148c',1,'distributionally_robust.h']]],
   ['default_5fbits',['default_bits',['../structVW_1_1workspace.html#a46b7fcede46b35c05fe6d09d25d90c5e',1,'VW::workspace']]],
   ['default_5ffloat_5fformatting_5fdecimal_5fprecision',['DEFAULT_FLOAT_FORMATTING_DECIMAL_PRECISION',['../namespaceVW.html#af8eb5e597fb5fed66f7621c69136c5f7',1,'VW']]],
   ['default_5ffloat_5fprecision',['DEFAULT_FLOAT_PRECISION',['../namespaceVW.html#aef06ce0bb4447dff21e8a131b7a4a0b8',1,'VW']]],

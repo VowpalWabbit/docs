@@ -12,7 +12,7 @@ var searchData=
   ['adaptive',['adaptive',['../classparameters.html#ae32e0735531564f9764905fcc46190c2',1,'parameters']]],
   ['add_5fconstant',['add_constant',['../structVW_1_1workspace.html#ad761dc98a023f1e8c2a031cf8dcc02d4',1,'VW::workspace']]],
   ['adf_5flearner',['adf_learner',['../structVW_1_1reductions_1_1automl_1_1automl.html#a1d189aaa2b1a891d74e73f63702149c8',1,'VW::reductions::automl::automl']]],
-  ['adjust',['adjust',['../structVW_1_1confidence__sequence_1_1ConfidenceSequence.html#a82d7264e0b4c55fa0eb319fd0890f3d5',1,'VW::confidence_sequence::ConfidenceSequence']]],
+  ['adjust',['adjust',['../structVW_1_1confidence__sequence.html#a5135e36e1a500e1b7044042ea33c0e27',1,'VW::confidence_sequence']]],
   ['affix_5fconstant',['affix_constant',['../constant_8h.html#afe15f16dad3ceb280f08e853db17a03d',1,'constant.h']]],
   ['affix_5ffeatures',['affix_features',['../structVW_1_1workspace.html#a79257c69fccee5825b98dedeef98cd34',1,'VW::workspace']]],
   ['affix_5fnamespace',['affix_namespace',['../constant_8h.html#a88894f353e2009957517ea749f90d6d7',1,'constant.h']]],
@@ -21,7 +21,7 @@ var searchData=
   ['all',['all',['../structVW_1_1reductions_1_1expreplay_1_1expreplay.html#a72ebbd5cea355656300c83b7c0a933cb',1,'VW::reductions::expreplay::expreplay']]],
   ['all_5freduce',['all_reduce',['../structVW_1_1workspace.html#a7211fc6d0beebccda6b1221a1854ffb1',1,'VW::workspace']]],
   ['all_5freduce_5ftype',['all_reduce_type',['../structVW_1_1workspace.html#a215b52fbee86545485f592a779f18895',1,'VW::workspace']]],
-  ['alpha',['alpha',['../structVW_1_1confidence__sequence_1_1ConfidenceSequence.html#a3e7155b61fb96f322f15122a679ffe6d',1,'VW::confidence_sequence::ConfidenceSequence']]],
+  ['alpha',['alpha',['../structVW_1_1confidence__sequence.html#a34a7481d42c15973d2ebf3a820f3713d',1,'VW::confidence_sequence']]],
   ['aomega',['AOmega',['../classVW_1_1cb__explore__adf_1_1one__pass__svd__impl.html#a8c66534797268d5a92a2d56ffe67bca5',1,'VW::cb_explore_adf::one_pass_svd_impl']]],
   ['ar_5fbuf_5fsize',['ar_buf_size',['../allreduce_8h.html#ae5dbb7bf6624bc7ee3c1a40fec4452e4',1,'allreduce.h']]],
   ['array_5ffloat_5fstate',['array_float_state',['../structContext.html#ac5492ae0d8d2d852cbfc29c0b2142866',1,'Context']]],
@@ -34,7 +34,6 @@ var searchData=
   ['auto_5fcondition_5ffeatures',['AUTO_CONDITION_FEATURES',['../namespaceSearch.html#a64c3357ab3222147fb87242f94990116',1,'Search']]],
   ['auto_5fhamming_5floss',['AUTO_HAMMING_LOSS',['../namespaceSearch.html#a2e71a83a633bcffc3df35b1de1bec797',1,'Search']]],
   ['autolink_5fnamespace',['autolink_namespace',['../constant_8h.html#ac2bad8142eb4b0916e5a556988a08ffd',1,'constant.h']]],
-  ['automl_5festimator_5fdecay',['automl_estimator_decay',['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a56a3fa74d4610c920c16ed140591f8cf',1,'VW::reductions::automl::interaction_config_manager']]],
   ['automl_5fsignificance_5flevel',['automl_significance_level',['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#aef9a20d69bca17ffbd04c080b6401947',1,'VW::reductions::automl::interaction_config_manager']]],
   ['avg_5floss_5fregressors',['avg_loss_regressors',['../structGEN__CS_1_1cb__to__cs.html#ae63989605eba00d78586ecc741a4e8fa',1,'GEN_CS::cb_to_cs']]]
 ];
