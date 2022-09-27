@@ -6,11 +6,11 @@ var api__status_8h =
     [ "RETURN_ERROR_ARG", "api__status_8h.html#a5ac9ce264224243c932dcfccb4c37507", null ],
     [ "RETURN_ERROR_LS", "api__status_8h.html#ae53bad0e4f12115d8d210228f0d5c1ae", null ],
     [ "RETURN_IF_FAIL", "api__status_8h.html#a11385635c23358843d733b2e6f3241c4", null ],
-    [ "operator<<", "api__status_8h.html#ab28e0431543f333e40fc9370af6d1b44", null ],
+    [ "operator<<", "api__status_8h.html#ad10029838f334adb4d27a2011cf9d14e", null ],
     [ "report_error", "api__status_8h.html#a5a7c7e398b69d8a9caff1ab2e11653cb", null ],
-    [ "report_error", "api__status_8h.html#a374dec4970947c82e840b43fb0c36744", null ],
-    [ "report_error", "api__status_8h.html#ae16c5e95ad0479c4f3a401564fad90c9", null ],
-    [ "report_error", "api__status_8h.html#afdd6334682093884e472e2129cef3f51", null ],
-    [ "report_error", "api__status_8h.html#a6a7e7d1feccdcb16629933b4f92083ef", null ],
-    [ "report_error", "api__status_8h.html#a60d95ba38c91e2ef3fa8a7b3b3cfa607", null ]
+    [ "report_error", "api__status_8h.html#a0dd2105552e59675ceb4b0f609da2089", null ],
+    [ "report_error", "api__status_8h.html#abc3d282d1eebc79213d2075d3ce845cd", null ],
+    [ "report_error", "api__status_8h.html#a85145b1408e4e2546954d6579029295e", null ],
+    [ "report_error", "api__status_8h.html#a482a8f20c0a1a1e371e8d32205428228", null ],
+    [ "report_error", "api__status_8h.html#afc19d04214c926d3dc7bb2b7a6dcafb1", null ]
 ];
