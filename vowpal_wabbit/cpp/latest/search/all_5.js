@@ -49,7 +49,7 @@ var searchData=
   ['entityrelationtask',['EntityRelationTask',['../namespaceEntityRelationTask.html',1,'']]],
   ['epsilon',['epsilon',['../structVW_1_1cb__explore__adf_1_1greedy_1_1reduction__features.html#a3616c21e0c6d6e6fcb7e09b55b34ae53',1,'VW::cb_explore_adf::greedy::reduction_features']]],
   ['epsilon_5fdecay_2eh',['epsilon_decay.h',['../epsilon__decay_8h.html',1,'']]],
-  ['epsilon_5fdecay_5fdata',['epsilon_decay_data',['../structVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html',1,'VW::reductions::epsilon_decay::epsilon_decay_data'],['../structVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#a2844763d34b4846262bf2f041eb6dcbf',1,'VW::reductions::epsilon_decay::epsilon_decay_data::epsilon_decay_data()']]],
+  ['epsilon_5fdecay_5fdata',['epsilon_decay_data',['../structVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html',1,'VW::reductions::epsilon_decay::epsilon_decay_data'],['../structVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#a14f80bbb0ac8aefac4590892fb0043f1',1,'VW::reductions::epsilon_decay::epsilon_decay_data::epsilon_decay_data()']]],
   ['epsilon_5fdecay_5fsetup',['epsilon_decay_setup',['../namespaceVW_1_1reductions.html#aaea96973f468ba33c86caa4ad622766b',1,'VW::reductions']]],
   ['epsilon_5fgreedy',['epsilon_greedy',['../namespacevw__slim.html#a8b7398db5b92b2538fdd8e6593b746b3a7dca1fb324950bbf8a227f29005f1798',1,'vw_slim']]],
   ['epsilon_5freduction_5ffeatures_2eh',['epsilon_reduction_features.h',['../epsilon__reduction__features_8h.html',1,'']]],

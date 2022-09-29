@@ -12,7 +12,7 @@ var searchData=
   ['debug_5flog_2eh',['debug_log.h',['../debug__log_8h.html',1,'']]],
   ['debug_5fprint_2eh',['debug_print.h',['../debug__print_8h.html',1,'']]],
   ['debug_5freverse_5flearning_5forder',['debug_reverse_learning_order',['../structVW_1_1reductions_1_1automl_1_1automl.html#a7229c97fa05b421fbb80b5ee3fffff63',1,'VW::reductions::automl::automl']]],
-  ['decayed_5fepsilon',['decayed_epsilon',['../namespaceVW_1_1reductions_1_1epsilon__decay.html#a5d5bbc010a90d8cbd514567488854c90',1,'VW::reductions::epsilon_decay']]],
+  ['decayed_5fepsilon',['decayed_epsilon',['../namespaceVW_1_1reductions_1_1epsilon__decay.html#ae58e933882ff9ee089780327534eec90',1,'VW::reductions::epsilon_decay']]],
   ['decision_5fprobs',['decision_probs',['../namespaceVW.html#a4f76045a06b3efe3c5c612b777b6c836a0a1107ed44b212cea25e2da842e0cbbe',1,'VW']]],
   ['decision_5fscores',['decision_scores',['../structVW_1_1polyprediction.html#abf299c143eb5a5b0147e08dd0a7c82ad',1,'VW::polyprediction']]],
   ['decision_5fscores_2eh',['decision_scores.h',['../decision__scores_8h.html',1,'']]],

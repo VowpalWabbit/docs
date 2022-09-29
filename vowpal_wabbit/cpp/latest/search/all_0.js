@@ -36,6 +36,7 @@ var searchData=
   ['_5fhash_5ffunc',['_hash_func',['../structContext.html#a3f368c83c1b6d60e9b14b6268e3dafc4',1,'Context']]],
   ['_5fhash_5fseed',['_hash_seed',['../structContext.html#a01afa98e493b634961472d26228817ff',1,'Context']]],
   ['_5fimpl',['_impl',['../structVW_1_1reductions_1_1automl_1_1config__oracle.html#a1af89ed9cdb5816cb254a3d48fb834d0',1,'VW::reductions::automl::config_oracle']]],
+  ['_5finitial_5fepsilon',['_initial_epsilon',['../structVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#a9f5f3cdee17a689c046166b2d81db89b',1,'VW::reductions::epsilon_decay::epsilon_decay_data']]],
   ['_5finner_5fcontext',['_inner_context',['../structtrace__message__wrapper.html#a77be7f3251c83f7279636db44bb39417',1,'trace_message_wrapper']]],
   ['_5finteraction_5ftype',['_interaction_type',['../structVW_1_1reductions_1_1automl_1_1config__oracle.html#a0187088710bed289e5a4c4a35bb8590b',1,'VW::reductions::automl::config_oracle']]],
   ['_5flabel_5fparser',['_label_parser',['../structContext.html#addd3a95d416c65413a2acdf538a61b01',1,'Context']]],

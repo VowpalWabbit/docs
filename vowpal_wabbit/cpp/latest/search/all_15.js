@@ -28,7 +28,7 @@ var searchData=
   ['update_5finteractions_5fif_5fnew_5fnamespace_5fseen',['update_interactions_if_new_namespace_seen',['../structINTERACTIONS_1_1interactions__generator.html#a1ac90c2a9db9000d2ad3ba15a4254135',1,'INTERACTIONS::interactions_generator']]],
   ['update_5fmultiplier',['update_multiplier',['../structGD_1_1gd.html#a35d42b9b3ef747b8da23d713e9cc6028',1,'GD::gd']]],
   ['update_5fstatistics',['update_statistics',['../structCB__ADF_1_1cb__adf.html#a911635753a7f008770499af7efae7847',1,'CB_ADF::cb_adf']]],
-  ['update_5fweights',['update_weights',['../structVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#ac4f097e4a70663a72f8ed2434d7388ce',1,'VW::reductions::epsilon_decay::epsilon_decay_data']]],
+  ['update_5fweights',['update_weights',['../structVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#a94eb1e331e07da9a473918c9a32d72d4',1,'VW::reductions::epsilon_decay::epsilon_decay_data']]],
   ['updated_5fprediction',['updated_prediction',['../structVW_1_1example.html#aa8000eb1844bf87ad4eaffed342f6206',1,'VW::example']]],
   ['upper_5fbound',['upper_bound',['../structVW_1_1confidence__sequence.html#a91f7b68e8949edc8fde95d08f011525a',1,'VW::confidence_sequence::upper_bound()'],['../structVW_1_1cressieread__estimator.html#a1ac6a95b159457542ed4111f7001d369',1,'VW::cressieread_estimator::upper_bound()']]]
 ];
