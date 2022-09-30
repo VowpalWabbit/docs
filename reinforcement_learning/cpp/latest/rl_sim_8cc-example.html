@@ -100,11 +100,13 @@ $(document).ready(function(){initNavTree('rl_sim_8cc-example.html',''); initResi
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="live__model_8h.html">live_model.h</a>&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &quot;multistep.h&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &quot;person.h&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;rand48.h&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &quot;rl_sim_cpp.h&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &quot;simulation_stats.h&quot;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &lt;boost/uuid/random_generator.hpp&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;boost/uuid/uuid_io.hpp&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;cmath&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;thread&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">using namespace </span>std;</div>
@@ -165,7 +167,7 @@ $(document).ready(function(){initNavTree('rl_sim_8cc-example.html',''); initResi
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// What outcome did this action get?</span></div>
-<div class="line">    <span class="keyword">const</span> <span class="keyword">auto</span> outcome = p.get_outcome(_topics[chosen_action]);</div>
+<div class="line">    <span class="keyword">const</span> <span class="keyword">auto</span> outcome = p.get_outcome(_topics[chosen_action], _random_seed);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Report outcome received</span></div>
 <div class="line">    <span class="keywordflow">if</span> (_rl-&gt;report_outcome(req_id.c_str(), outcome, &amp;status) != err::success &amp;&amp; outcome &gt; 0.00001f)</div>
@@ -176,11 +178,13 @@ $(document).ready(function(){initNavTree('rl_sim_8cc-example.html',''); initResi
 <div class="line"> </div>
 <div class="line">    stats.record(p.id(), chosen_action, outcome);</div>
 <div class="line"> </div>
-<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; stats.count() &lt;&lt; <span class="stringliteral">&quot;, ctxt, &quot;</span> &lt;&lt; p.id() &lt;&lt; <span class="stringliteral">&quot;, action, &quot;</span> &lt;&lt; chosen_action &lt;&lt; <span class="stringliteral">&quot;, outcome, &quot;</span></div>
-<div class="line">              &lt;&lt; outcome &lt;&lt; <span class="stringliteral">&quot;, dist, &quot;</span> &lt;&lt; get_dist_str(response) &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; stats.get_stats(p.id(), chosen_action)</div>
-<div class="line">              &lt;&lt; std::endl;</div>
-<div class="line"> </div>
-<div class="line">    std::this_thread::sleep_for(std::chrono::milliseconds(2000));</div>
+<div class="line">    <span class="keywordflow">if</span> (!_quiet)</div>
+<div class="line">    {</div>
+<div class="line">      std::cout &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; stats.count() &lt;&lt; <span class="stringliteral">&quot;, ctxt, &quot;</span> &lt;&lt; p.id() &lt;&lt; <span class="stringliteral">&quot;, action, &quot;</span> &lt;&lt; chosen_action &lt;&lt; <span class="stringliteral">&quot;, outcome, &quot;</span></div>
+<div class="line">                &lt;&lt; outcome &lt;&lt; <span class="stringliteral">&quot;, dist, &quot;</span> &lt;&lt; get_dist_str(response) &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; stats.get_stats(p.id(), chosen_action)</div>
+<div class="line">                &lt;&lt; std::endl;</div>
+<div class="line">    }</div>
+<div class="line">    std::this_thread::sleep_for(std::chrono::milliseconds(_delay));</div>
 <div class="line">  }</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordflow">return</span> 0;</div>
@@ -201,6 +205,10 @@ $(document).ready(function(){initNavTree('rl_sim_8cc-example.html',''); initResi
 <div class="line"> </div>
 <div class="line">  <span class="keyword">const</span> <span class="keywordtype">size_t</span> episode_length = 2;</div>
 <div class="line">  <span class="keywordtype">size_t</span> episode_indx = 0;</div>
+<div class="line"> </div>
+<div class="line">  <span class="comment">// adjust the event count for the episode length</span></div>
+<div class="line">  _num_events *= episode_length;</div>
+<div class="line"> </div>
 <div class="line">  <span class="keywordflow">while</span> (_run_loop)</div>
 <div class="line">  {</div>
 <div class="line">    <span class="keyword">const</span> std::string episode_id = create_episode_id(episode_indx++);</div>
@@ -233,12 +241,15 @@ $(document).ready(function(){initNavTree('rl_sim_8cc-example.html',''); initResi
 <div class="line">        <span class="keywordflow">continue</span>;</div>
 <div class="line">      }</div>
 <div class="line"> </div>
-<div class="line">      <span class="keyword">const</span> <span class="keyword">auto</span> outcome_per_step = p.get_outcome(_topics[chosen_action]);</div>
+<div class="line">      <span class="keyword">const</span> <span class="keyword">auto</span> outcome_per_step = p.get_outcome(_topics[chosen_action], _random_seed);</div>
 <div class="line">      stats.record(p.id(), chosen_action, outcome_per_step);</div>
 <div class="line"> </div>
-<div class="line">      std::cout &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; stats.count() &lt;&lt; <span class="stringliteral">&quot;, ctxt, &quot;</span> &lt;&lt; p.id() &lt;&lt; <span class="stringliteral">&quot;, action, &quot;</span> &lt;&lt; chosen_action &lt;&lt; <span class="stringliteral">&quot;, outcome, &quot;</span></div>
-<div class="line">                &lt;&lt; outcome_per_step &lt;&lt; <span class="stringliteral">&quot;, dist, &quot;</span> &lt;&lt; get_dist_str(response) &lt;&lt; <span class="stringliteral">&quot;, &quot;</span></div>
-<div class="line">                &lt;&lt; stats.get_stats(p.id(), chosen_action) &lt;&lt; std::endl;</div>
+<div class="line">      <span class="keywordflow">if</span> (!_quiet)</div>
+<div class="line">      {</div>
+<div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; stats.count() &lt;&lt; <span class="stringliteral">&quot;, ctxt, &quot;</span> &lt;&lt; p.id() &lt;&lt; <span class="stringliteral">&quot;, action, &quot;</span> &lt;&lt; chosen_action &lt;&lt; <span class="stringliteral">&quot;, outcome, &quot;</span></div>
+<div class="line">                  &lt;&lt; outcome_per_step &lt;&lt; <span class="stringliteral">&quot;, dist, &quot;</span> &lt;&lt; get_dist_str(response) &lt;&lt; <span class="stringliteral">&quot;, &quot;</span></div>
+<div class="line">                  &lt;&lt; stats.get_stats(p.id(), chosen_action) &lt;&lt; std::endl;</div>
+<div class="line">      }</div>
 <div class="line"> </div>
 <div class="line">      episodic_outcome += outcome_per_step;</div>
 <div class="line">      previous_id = req_id;</div>
@@ -250,9 +261,8 @@ $(document).ready(function(){initNavTree('rl_sim_8cc-example.html',''); initResi
 <div class="line">      <span class="keywordflow">continue</span>;</div>
 <div class="line">    }</div>
 <div class="line"> </div>
-<div class="line">    std::this_thread::sleep_for(std::chrono::milliseconds(2000));</div>
+<div class="line">    std::this_thread::sleep_for(std::chrono::milliseconds(_delay));</div>
 <div class="line">  }</div>
-<div class="line"> </div>
 <div class="line">  <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 <div class="line"> </div>
@@ -274,17 +284,20 @@ $(document).ready(function(){initNavTree('rl_sim_8cc-example.html',''); initResi
 <div class="line">      <span class="keywordflow">continue</span>;</div>
 <div class="line">    }</div>
 <div class="line">    <span class="keyword">const</span> <span class="keyword">auto</span> chosen_action = response.get_chosen_action();</div>
-<div class="line">    <span class="keyword">const</span> <span class="keyword">auto</span> outcome = joint.get_outcome(chosen_action);</div>
+<div class="line">    <span class="keyword">const</span> <span class="keyword">auto</span> outcome = joint.get_outcome(chosen_action, _random_seed);</div>
 <div class="line">    <span class="keywordflow">if</span> (_rl-&gt;report_outcome(req_id.c_str(), outcome, &amp;status) != err::success &amp;&amp; outcome &gt; 0.00001f)</div>
 <div class="line">    { std::cout &lt;&lt; status.get_error_msg() &lt;&lt; std::endl; }</div>
 <div class="line"> </div>
 <div class="line">    stats.record(joint.id(), chosen_action, outcome);</div>
 <div class="line"> </div>
-<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; stats.count() &lt;&lt; <span class="stringliteral">&quot; - ctxt: &quot;</span> &lt;&lt; joint.id() &lt;&lt; <span class="stringliteral">&quot;, action: &quot;</span> &lt;&lt; chosen_action</div>
-<div class="line">              &lt;&lt; <span class="stringliteral">&quot;, outcome: &quot;</span> &lt;&lt; outcome &lt;&lt; <span class="stringliteral">&quot;, dist: &quot;</span> &lt;&lt; response.get_chosen_action_pdf_value() &lt;&lt; <span class="stringliteral">&quot;, &quot;</span></div>
-<div class="line">              &lt;&lt; stats.get_stats(joint.id(), chosen_action) &lt;&lt; std::endl;</div>
+<div class="line">    <span class="keywordflow">if</span> (!_quiet)</div>
+<div class="line">    {</div>
+<div class="line">      std::cout &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; stats.count() &lt;&lt; <span class="stringliteral">&quot; - ctxt: &quot;</span> &lt;&lt; joint.id() &lt;&lt; <span class="stringliteral">&quot;, action: &quot;</span> &lt;&lt; chosen_action</div>
+<div class="line">                &lt;&lt; <span class="stringliteral">&quot;, outcome: &quot;</span> &lt;&lt; outcome &lt;&lt; <span class="stringliteral">&quot;, dist: &quot;</span> &lt;&lt; response.get_chosen_action_pdf_value() &lt;&lt; <span class="stringliteral">&quot;, &quot;</span></div>
+<div class="line">                &lt;&lt; stats.get_stats(joint.id(), chosen_action) &lt;&lt; std::endl;</div>
+<div class="line">    }</div>
 <div class="line"> </div>
-<div class="line">    std::this_thread::sleep_for(std::chrono::milliseconds(2000));</div>
+<div class="line">    std::this_thread::sleep_for(std::chrono::milliseconds(_delay));</div>
 <div class="line">  }</div>
 <div class="line">  <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
@@ -316,7 +329,7 @@ $(document).ready(function(){initNavTree('rl_sim_8cc-example.html',''); initResi
 <div class="line">    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; response : decision)</div>
 <div class="line">    {</div>
 <div class="line">      <span class="keyword">const</span> <span class="keyword">auto</span> chosen_action = response.get_action_id();</div>
-<div class="line">      <span class="keyword">const</span> <span class="keyword">auto</span> outcome = p.get_outcome(_topics[chosen_action]);</div>
+<div class="line">      <span class="keyword">const</span> <span class="keyword">auto</span> outcome = p.get_outcome(_topics[chosen_action], _random_seed);</div>
 <div class="line"> </div>
 <div class="line">      <span class="comment">// Report outcome received</span></div>
 <div class="line">      <span class="keywordflow">if</span> (_rl-&gt;report_outcome(event_id.c_str(), index, outcome, &amp;status) != err::success &amp;&amp; outcome &gt; 0.00001f)</div>
@@ -327,13 +340,16 @@ $(document).ready(function(){initNavTree('rl_sim_8cc-example.html',''); initResi
 <div class="line"> </div>
 <div class="line">      stats.record(p.id(), chosen_action, outcome);</div>
 <div class="line"> </div>
-<div class="line">      std::cout &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; stats.count() &lt;&lt; <span class="stringliteral">&quot;, ctxt, &quot;</span> &lt;&lt; p.id() &lt;&lt; <span class="stringliteral">&quot;, action, &quot;</span> &lt;&lt; chosen_action &lt;&lt; <span class="stringliteral">&quot;, slot, &quot;</span> &lt;&lt; index</div>
-<div class="line">                &lt;&lt; <span class="stringliteral">&quot;, outcome, &quot;</span> &lt;&lt; outcome &lt;&lt; <span class="stringliteral">&quot;, dist, &quot;</span> &lt;&lt; get_dist_str(response) &lt;&lt; <span class="stringliteral">&quot;, &quot;</span></div>
-<div class="line">                &lt;&lt; stats.get_stats(p.id(), chosen_action) &lt;&lt; std::endl;</div>
+<div class="line">      <span class="keywordflow">if</span> (!_quiet)</div>
+<div class="line">      {</div>
+<div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; stats.count() &lt;&lt; <span class="stringliteral">&quot;, ctxt, &quot;</span> &lt;&lt; p.id() &lt;&lt; <span class="stringliteral">&quot;, action, &quot;</span> &lt;&lt; chosen_action &lt;&lt; <span class="stringliteral">&quot;, slot, &quot;</span></div>
+<div class="line">                  &lt;&lt; index &lt;&lt; <span class="stringliteral">&quot;, outcome, &quot;</span> &lt;&lt; outcome &lt;&lt; <span class="stringliteral">&quot;, dist, &quot;</span> &lt;&lt; get_dist_str(response) &lt;&lt; <span class="stringliteral">&quot;, &quot;</span></div>
+<div class="line">                  &lt;&lt; stats.get_stats(p.id(), chosen_action) &lt;&lt; std::endl;</div>
+<div class="line">      }</div>
 <div class="line">      index++;</div>
 <div class="line">    }</div>
 <div class="line"> </div>
-<div class="line">    std::this_thread::sleep_for(std::chrono::milliseconds(2000));</div>
+<div class="line">    std::this_thread::sleep_for(std::chrono::milliseconds(_delay));</div>
 <div class="line">  }</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordflow">return</span> 0;</div>
@@ -381,14 +397,16 @@ $(document).ready(function(){initNavTree('rl_sim_8cc-example.html',''); initResi
 <div class="line">    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; response : decision)</div>
 <div class="line">    {</div>
 <div class="line">      <span class="keyword">const</span> <span class="keyword">auto</span> chosen_action = response.get_action_id() + index * actions_per_slot;</div>
-<div class="line">      <span class="keyword">const</span> <span class="keyword">auto</span> slot_outcome = p.get_outcome(_topics[chosen_action]);  <span class="comment">// TODO per-slot weights?</span></div>
+<div class="line">      <span class="keyword">const</span> <span class="keyword">auto</span> slot_outcome = p.get_outcome(_topics[chosen_action], _random_seed);  <span class="comment">// TODO per-slot weights?</span></div>
 <div class="line">      stats.record(event_id, chosen_action, slot_outcome);</div>
 <div class="line">      outcome += slot_outcome;</div>
 <div class="line"> </div>
-<div class="line">      std::cout &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; stats.count() &lt;&lt; <span class="stringliteral">&quot;, ctxt, &quot;</span> &lt;&lt; p.id() &lt;&lt; <span class="stringliteral">&quot;, action, &quot;</span> &lt;&lt; chosen_action &lt;&lt; <span class="stringliteral">&quot;, slot, &quot;</span> &lt;&lt; index</div>
-<div class="line">                &lt;&lt; <span class="stringliteral">&quot;, outcome, &quot;</span> &lt;&lt; outcome &lt;&lt; <span class="stringliteral">&quot;, dist, &quot;</span> &lt;&lt; get_dist_str(response) &lt;&lt; <span class="stringliteral">&quot;, &quot;</span></div>
-<div class="line">                &lt;&lt; stats.get_stats(p.id(), chosen_action) &lt;&lt; std::endl;</div>
-<div class="line"> </div>
+<div class="line">      <span class="keywordflow">if</span> (!_quiet)</div>
+<div class="line">      {</div>
+<div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; stats.count() &lt;&lt; <span class="stringliteral">&quot;, ctxt, &quot;</span> &lt;&lt; p.id() &lt;&lt; <span class="stringliteral">&quot;, action, &quot;</span> &lt;&lt; chosen_action &lt;&lt; <span class="stringliteral">&quot;, slot, &quot;</span></div>
+<div class="line">                  &lt;&lt; index &lt;&lt; <span class="stringliteral">&quot;, outcome, &quot;</span> &lt;&lt; outcome &lt;&lt; <span class="stringliteral">&quot;, dist, &quot;</span> &lt;&lt; get_dist_str(response) &lt;&lt; <span class="stringliteral">&quot;, &quot;</span></div>
+<div class="line">                  &lt;&lt; stats.get_stats(p.id(), chosen_action) &lt;&lt; std::endl;</div>
+<div class="line">      }</div>
 <div class="line">      index++;</div>
 <div class="line">    }</div>
 <div class="line"> </div>
@@ -399,15 +417,23 @@ $(document).ready(function(){initNavTree('rl_sim_8cc-example.html',''); initResi
 <div class="line">      <span class="keywordflow">continue</span>;</div>
 <div class="line">    }</div>
 <div class="line"> </div>
-<div class="line">    std::this_thread::sleep_for(std::chrono::milliseconds(2000));</div>
+<div class="line">    std::this_thread::sleep_for(std::chrono::milliseconds(_delay));</div>
 <div class="line">  }</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line">person&amp; rl_sim::pick_a_random_person() { <span class="keywordflow">return</span> _people[rand() % _people.size()]; }</div>
+<div class="line">person&amp; rl_sim::pick_a_random_person()</div>
+<div class="line">{</div>
+<div class="line">  <span class="keywordtype">size_t</span> idx = <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(rand48(_random_seed) * (_people.size() + 1));</div>
+<div class="line">  <span class="keywordflow">return</span> _people[std::min(idx, _people.size() - 1)];</div>
+<div class="line">}</div>
 <div class="line"> </div>
-<div class="line">joint&amp; rl_sim::pick_a_random_joint() { <span class="keywordflow">return</span> _robot_joints[rand() % _robot_joints.size()]; }</div>
+<div class="line">joint&amp; rl_sim::pick_a_random_joint()</div>
+<div class="line">{</div>
+<div class="line">  <span class="keywordtype">size_t</span> idx = <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(rand48(_random_seed) * (_robot_joints.size() + 1));</div>
+<div class="line">  <span class="keywordflow">return</span> _robot_joints[std::min(idx, _robot_joints.size() - 1)];</div>
+<div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> rl_sim::load_config_from_json(<span class="keyword">const</span> std::string&amp; file_name, u::configuration&amp; config, r::api_status* status)</div>
 <div class="line">{</div>
@@ -464,7 +490,7 @@ $(document).ready(function(){initNavTree('rl_sim_8cc-example.html',''); initResi
 <div class="line">  }</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Trace log API calls to the console</span></div>
-<div class="line">  config.set(r::name::TRACE_LOG_IMPLEMENTATION, r::value::CONSOLE_TRACE_LOGGER);</div>
+<div class="line">  <span class="keywordflow">if</span> (!_quiet) { config.set(r::name::TRACE_LOG_IMPLEMENTATION, r::value::CONSOLE_TRACE_LOGGER); }</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Initialize the API</span></div>
 <div class="line">  _rl = std::unique_ptr&lt;r::live_model&gt;(<span class="keyword">new</span> r::live_model(config, _on_error, <span class="keyword">this</span>));</div>
@@ -474,7 +500,7 @@ $(document).ready(function(){initNavTree('rl_sim_8cc-example.html',''); initResi
 <div class="line">    <span class="keywordflow">return</span> -1;</div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot; API Config &quot;</span> &lt;&lt; config;</div>
+<div class="line">  <span class="keywordflow">if</span> (!_quiet) { std::cout &lt;&lt; <span class="stringliteral">&quot; API Config &quot;</span> &lt;&lt; config; }</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordflow">return</span> err::success;</div>
 <div class="line">}</div>
@@ -599,7 +625,16 @@ $(document).ready(function(){initNavTree('rl_sim_8cc-example.html',''); initResi
 <div class="line">  <span class="keywordflow">return</span> oss.str();</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line">std::string rl_sim::create_event_id() { <span class="keywordflow">return</span> boost::uuids::to_string(boost::uuids::random_generator()()); }</div>
+<div class="line">std::string rl_sim::create_event_id()</div>
+<div class="line">{</div>
+<div class="line">  <span class="keywordflow">if</span> (_num_events &gt; 0 &amp;&amp; ++_current_events &gt;= _num_events) { _run_loop = <span class="keyword">false</span>; }</div>
+<div class="line"> </div>
+<div class="line">  <span class="keywordflow">if</span> (_random_ids) { <span class="keywordflow">return</span> boost::uuids::to_string(boost::uuids::random_generator()()); }</div>
+<div class="line"> </div>
+<div class="line">  std::ostringstream oss;</div>
+<div class="line">  oss &lt;&lt; <span class="stringliteral">&quot;event_&quot;</span> &lt;&lt; _current_events;</div>
+<div class="line">  <span class="keywordflow">return</span> oss.str();</div>
+<div class="line">}</div>
 <div class="line"> </div>
 <div class="line">rl_sim::rl_sim(boost::program_options::variables_map vm) : _options(std::move(vm)), _loop_kind(CB)</div>
 <div class="line">{</div>
@@ -616,6 +651,12 @@ $(document).ready(function(){initNavTree('rl_sim_8cc-example.html',''); initResi
 <div class="line">  {</div>
 <div class="line">    _loop_kind = Multistep;</div>
 <div class="line">  }</div>
+<div class="line"> </div>
+<div class="line">  _num_events = _options[<span class="stringliteral">&quot;num_events&quot;</span>].as&lt;<span class="keywordtype">int</span>&gt;();</div>
+<div class="line">  _random_seed = _options[<span class="stringliteral">&quot;random_seed&quot;</span>].as&lt;uint64_t&gt;();</div>
+<div class="line">  _delay = _options[<span class="stringliteral">&quot;delay&quot;</span>].as&lt;int64_t&gt;();</div>
+<div class="line">  _quiet = _options[<span class="stringliteral">&quot;quiet&quot;</span>].as&lt;<span class="keywordtype">bool</span>&gt;();</div>
+<div class="line">  _random_ids = _options[<span class="stringliteral">&quot;random_ids&quot;</span>].as&lt;<span class="keywordtype">bool</span>&gt;();</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line">std::string get_dist_str(<span class="keyword">const</span> <a class="code" href="classreinforcement__learning_1_1ranking__response.html">reinforcement_learning::ranking_response</a>&amp; response)</div>
