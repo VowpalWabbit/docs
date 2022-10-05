@@ -27,7 +27,7 @@ var searchData=
   ['open_5fcompressed_5fstdout',['open_compressed_stdout',['../namespaceVW_1_1io.html#a3cef347f0db8e634c3cc1411000f066e',1,'VW::io']]],
   ['open_5ffile_5freader',['open_file_reader',['../namespaceVW_1_1io.html#a7f191f5e3f5c75296ba313668c1053cf',1,'VW::io']]],
   ['open_5ffile_5fwriter',['open_file_writer',['../namespaceVW_1_1io.html#a0b69952c6844cd86a2b59558ca41fb9a',1,'VW::io']]],
-  ['open_5fsocket',['open_socket',['../network_8h.html#ad59e38a48fbd3f57a2a093b480103a00',1,'network.h']]],
+  ['open_5fsocket',['open_socket',['../namespaceVW_1_1details.html#a241b8e9128a2658f14a5690883ee6b1e',1,'VW::details']]],
   ['open_5fstdin',['open_stdin',['../namespaceVW_1_1io.html#a2cfcec0518e7e412e2f66cc028c460ef',1,'VW::io']]],
   ['open_5fstdout',['open_stdout',['../namespaceVW_1_1io.html#aadfdf5156c7bd7ae07ce87ea122e34e1',1,'VW::io']]],
   ['operator_20bool',['operator bool',['../structVW_1_1cached__learner.html#a0f863266da5f4f5e6a85d3600848d9d7',1,'VW::cached_learner']]],
