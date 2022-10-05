@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['waitforsynchronization',['waitForSynchronization',['../classAllReduceSync.html#a16c5ea1af31dd85ca9b617da378d8bf1',1,'AllReduceSync']]],
+  ['wait_5ffor_5fsynchronization',['wait_for_synchronization',['../classVW_1_1AllReduceSync.html#a726430609727dba943e42e489157e638',1,'VW::AllReduceSync']]],
+  ['waitforsynchronization',['waitForSynchronization',['../classVW_1_1AllReduceSync.html#a303ea1d2c353cccdba95ea545f0f9bd0',1,'VW::AllReduceSync']]],
   ['wap_5fldf_5fnamespace',['wap_ldf_namespace',['../constant_8h.html#a08e7c9bf8fe6467dafd18a42120013e1',1,'constant.h']]],
   ['wap_5fvalue',['wap_value',['../structCOST__SENSITIVE_1_1wclass.html#ac6c25cd1d7f4be9de04cfd552dbff23e',1,'COST_SENSITIVE::wclass']]],
   ['warm_5fcb_2eh',['warm_cb.h',['../warm__cb_8h.html',1,'']]],

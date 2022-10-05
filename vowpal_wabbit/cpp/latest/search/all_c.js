@@ -58,7 +58,7 @@ var searchData=
   ['left_5fid',['left_id',['../structVW_1_1reductions_1_1cats_1_1tree__node.html#ad47b521d919b704c42b856f8b88ea1b2',1,'VW::reductions::cats::tree_node::left_id()'],['../structVW_1_1reductions_1_1offset__tree_1_1tree__node.html#a86135703b0a4baa43981339d92ed3fe9',1,'VW::reductions::offset_tree::tree_node::left_id()']]],
   ['left_5fonly',['left_only',['../structVW_1_1reductions_1_1cats_1_1tree__node.html#a54e352e33d1a6b857cfab469f85fa7ea',1,'VW::reductions::cats::tree_node']]],
   ['len',['len',['../structVW_1_1primitive__feature__space.html#a9105820ae67fbaa7a4ebf7af1c365821',1,'VW::primitive_feature_space']]],
-  ['length',['length',['../structData.html#a8632fc8c2fe2275f20712086a489be41',1,'Data::length()'],['../structVW_1_1workspace.html#ae78be71f5cd857899a811022ca1c03ab',1,'VW::workspace::length()']]],
+  ['length',['length',['../structVW_1_1Data.html#a4dc6289a89a124e486fd04804f081f2b',1,'VW::Data::length()'],['../structVW_1_1workspace.html#ae78be71f5cd857899a811022ca1c03ab',1,'VW::workspace::length()']]],
   ['limit',['limit',['../structVW_1_1workspace.html#a3b3431fa71587bbc18749957154677d2',1,'VW::workspace']]],
   ['limit_5fstrings',['limit_strings',['../structVW_1_1workspace.html#adccb7b6d53a0bc804af3e23045d8f1f6',1,'VW::workspace']]],
   ['line_5fnum',['line_num',['../classVW_1_1parsers_1_1csv__parser.html#a6329e630bf989c40507a684f114056b6',1,'VW::parsers::csv_parser']]],

@@ -18,7 +18,7 @@ var searchData=
   ['tnormal_5fweights',['tnormal_weights',['../structVW_1_1workspace.html#a8a029eb3c2e7f29cf8ecb0bcf5598528',1,'VW::workspace']]],
   ['tokens',['tokens',['../structVW_1_1label__parser__reuse__mem.html#abd4d46fe52aa8f9b495c9e2b7663935c',1,'VW::label_parser_reuse_mem']]],
   ['top_5faction_5findex',['TOP_ACTION_INDEX',['../constant_8h.html#ac761c6817afb4c15fe226ec2df85c024',1,'constant.h']]],
-  ['total',['total',['../classAllReduce.html#a4ab695c1c631c3db42936d03733db9e0',1,'AllReduce']]],
+  ['total',['total',['../classVW_1_1AllReduce.html#afcd95f2f6474ea81bf60a2b4c46e61e6',1,'VW::AllReduce']]],
   ['total_5fchamp_5fswitches',['total_champ_switches',['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a2f7b31e8fe3d92b9663d560c5c71e770',1,'VW::reductions::automl::interaction_config_manager']]],
   ['total_5ffeatures',['total_features',['../structshared__data.html#aaedd51e57f247fce49e552319c267253',1,'shared_data']]],
   ['total_5flearn_5fcount',['total_learn_count',['../structVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a9d678b697c5a3dc70087a2a2c066fe7d',1,'VW::reductions::automl::interaction_config_manager']]],

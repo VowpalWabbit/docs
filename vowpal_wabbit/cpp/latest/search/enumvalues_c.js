@@ -7,6 +7,6 @@ var searchData=
   ['slates',['slates',['../namespaceVW.html#adf253bc5d95217ce3aadf6e2421dafd2aba298a474e572b7bb22ea6b59e127028',1,'VW']]],
   ['slot',['slot',['../namespaceCCB.html#a58ee4b1ece77de222418e9eb75203cf5a5e97994ed38a2b2f984f3b2b75012bf8',1,'CCB::slot()'],['../namespaceVW_1_1slates.html#a894cb7b1b775c40313bbb5e1c4b48a50a5e97994ed38a2b2f984f3b2b75012bf8',1,'VW::slates::slot()']]],
   ['sm',['sm',['../namespaceVW.html#afc6602380e780c653a55bf44b6e5c881aed79acb0cd3d7f8320c53c7798335ef0',1,'VW']]],
-  ['socket',['Socket',['../allreduce_8h.html#ac80f47c3b2731d9979f60e1b2f6af364a69f69b59aae6f4ee1a47bbc1086ecdb4',1,'allreduce.h']]],
+  ['socket',['Socket',['../namespaceVW.html#afcbf8b082ac047cc76964fe62252c852a69f69b59aae6f4ee1a47bbc1086ecdb4',1,'VW']]],
   ['softmax',['softmax',['../namespacevw__slim.html#a8b7398db5b92b2538fdd8e6593b746b3ace2f1fbd249d24aabc07ac4488ab5b8c',1,'vw_slim']]]
 ];

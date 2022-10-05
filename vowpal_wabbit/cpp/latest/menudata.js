@@ -251,7 +251,6 @@ var menudata={children:[
 {text:"t",url:"globals_type.html#index_t"},
 {text:"v",url:"globals_type.html#index_v"},
 {text:"w",url:"globals_type.html#index_w"}]},
-{text:"Enumerations",url:"globals_enum.html"},
 {text:"Macros",url:"globals_defs.html",children:[
 {text:"_",url:"globals_defs.html#index__"},
 {text:"a",url:"globals_defs.html#index_a"},

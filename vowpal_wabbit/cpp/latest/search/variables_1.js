@@ -23,7 +23,7 @@ var searchData=
   ['all_5freduce_5ftype',['all_reduce_type',['../structVW_1_1workspace.html#a215b52fbee86545485f592a779f18895',1,'VW::workspace']]],
   ['alpha',['alpha',['../structVW_1_1confidence__sequence.html#a34a7481d42c15973d2ebf3a820f3713d',1,'VW::confidence_sequence']]],
   ['aomega',['AOmega',['../classVW_1_1cb__explore__adf_1_1one__pass__svd__impl.html#a8c66534797268d5a92a2d56ffe67bca5',1,'VW::cb_explore_adf::one_pass_svd_impl']]],
-  ['ar_5fbuf_5fsize',['ar_buf_size',['../allreduce_8h.html#ae5dbb7bf6624bc7ee3c1a40fec4452e4',1,'allreduce.h']]],
+  ['ar_5fbuf_5fsize',['AR_BUF_SIZE',['../namespaceVW_1_1details.html#aecec2a774671ecd2cd33a72a6a7314cc',1,'VW::details']]],
   ['array_5ffloat_5fstate',['array_float_state',['../structContext.html#ac5492ae0d8d2d852cbfc29c0b2142866',1,'Context']]],
   ['array_5fpdf_5fstate',['array_pdf_state',['../structContext.html#a0c63973499515bb8cca9f9ef28b95eb0',1,'Context']]],
   ['array_5fstate',['array_state',['../structContext.html#afffe902d655a213d67b5ed8bc930c945',1,'Context']]],

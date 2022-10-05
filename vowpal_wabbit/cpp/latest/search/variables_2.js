@@ -15,6 +15,6 @@ var searchData=
   ['bool_5fstate',['bool_state',['../structContext.html#a0dda584309012bded089bb76d8a5be5d',1,'Context']]],
   ['bound_5fsock',['bound_sock',['../structparser.html#a42519589c5014a70b532ce88d3b243ef',1,'parser']]],
   ['buf',['buf',['../structVW_1_1reductions_1_1expreplay_1_1expreplay.html#a2de112349ae2d53d078cdf61408ca9b7',1,'VW::reductions::expreplay::expreplay']]],
-  ['buffer',['buffer',['../structData.html#a6dc409011ac0912b2e8e16bb8fd5d5ad',1,'Data']]],
-  ['buffers',['buffers',['../classAllReduceSync.html#a9f9e0266fcc60ce2b7a0b06fb293e84d',1,'AllReduceSync']]]
+  ['buffer',['buffer',['../structVW_1_1Data.html#a674c8742bed0498e4184b57389e51dae',1,'VW::Data']]],
+  ['buffers',['buffers',['../classVW_1_1AllReduceSync.html#ac77944b013c55b2ea6feeae5142ff1e9',1,'VW::AllReduceSync']]]
 ];

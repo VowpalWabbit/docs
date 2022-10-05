@@ -1,7 +1,7 @@
 var searchData=
 [
   ['parameters',['parameters',['../classparameters.html',1,'']]],
-  ['parent',['parent',['../structnode__socks.html#a9107491c00d5f397f28b1bcf50093704',1,'node_socks']]],
+  ['parent',['parent',['../structVW_1_1details_1_1NodeSocks.html#aab29033a20004790007ecd17e353f7d6',1,'VW::details::NodeSocks']]],
   ['parent_5fid',['parent_id',['../structVW_1_1reductions_1_1cats_1_1tree__node.html#a963efbee0341063f968ade5d2309897c',1,'VW::reductions::cats::tree_node::parent_id()'],['../structVW_1_1reductions_1_1offset__tree_1_1tree__node.html#aed2c1377f18d2ab92e458a2540cf6488',1,'VW::reductions::offset_tree::tree_node::parent_id()']]],
   ['parse_5fargs_2eh',['parse_args.h',['../parse__args_8h.html',1,'']]],
   ['parse_5fcontext',['parse_context',['../parse__slates__example__json_8h.html#af0eb550b638313cb1ec4d285724f9fef',1,'parse_slates_example_json.h']]],
