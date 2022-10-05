@@ -87,6 +87,7 @@ var searchData=
   ['array_5ffloat_5fstate',['array_float_state',['../structContext.html#ac5492ae0d8d2d852cbfc29c0b2142866',1,'Context']]],
   ['array_5fparameters_2eh',['array_parameters.h',['../array__parameters_8h.html',1,'']]],
   ['array_5fparameters_5fdense_2eh',['array_parameters_dense.h',['../array__parameters__dense_8h.html',1,'']]],
+  ['array_5fparameters_5fsparse_2eh',['array_parameters_sparse.h',['../array__parameters__sparse_8h.html',1,'']]],
   ['array_5fpdf_5fstate',['array_pdf_state',['../structContext.html#a0c63973499515bb8cca9f9ef28b95eb0',1,'Context']]],
   ['array_5fstate',['array_state',['../structContext.html#afffe902d655a213d67b5ed8bc930c945',1,'Context']]],
   ['array_5fuint_5fstate',['array_uint_state',['../structContext.html#a4b41cc44be8c5ffcc29b8486e498dd03',1,'Context']]],
