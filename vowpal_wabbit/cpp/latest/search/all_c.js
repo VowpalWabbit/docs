@@ -78,7 +78,7 @@ var searchData=
   ['logger_2eh',['logger.h',['../logger_8h.html',1,'']]],
   ['logger_5fimpl',['logger_impl',['../structVW_1_1io_1_1details_1_1logger__impl.html',1,'VW::io::details::logger_impl'],['../structVW_1_1io_1_1details_1_1logger__impl.html#adb547ae3f6a6957be5a04776d355ea45',1,'VW::io::details::logger_impl::logger_impl()']]],
   ['logger_5flegacy_5foutput_5ffunc_5ft',['logger_legacy_output_func_t',['../namespaceVW_1_1io.html#a52dbd68a7427bf3765f22254b4bfd664',1,'VW::io']]],
-  ['logger_5foutput_5ffunc_5ft',['logger_output_func_t',['../namespaceVW_1_1io.html#a7be1e8b9b7c3eaea712ca1a06dd5f275',1,'VW::io']]],
+  ['logger_5foutput_5ffunc_5ft',['logger_output_func_t',['../namespaceVW_1_1io.html#ac6a4933fbf7b93c637cd2f301cbb900f',1,'VW::io']]],
   ['loss',['loss',['../structVW_1_1example.html#a6b45287a6e699a3fc3d3a2f7a916728b',1,'VW::example::loss()'],['../structVW_1_1workspace.html#a7353810c29b1e203dc46ea27098aa634',1,'VW::workspace::loss()'],['../structSearch_1_1search.html#ac043f03704a4b004290936cb1dc6822f',1,'Search::search::loss()']]],
   ['loss_5ffunction',['loss_function',['../classVW_1_1loss__function.html',1,'VW']]],
   ['loss_5ffunctions_2eh',['loss_functions.h',['../loss__functions_8h.html',1,'']]],
