@@ -193,6 +193,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1metric__sink__visitor.html">metric_sink_visitor</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1model__delta.html">model_delta</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1moved__object__pool.html">moved_object_pool</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1named__labels.html">named_labels</a></td></tr>
@@ -430,6 +432,8 @@ Functions</h2></td></tr>
 <tr class="separator:a76aaae1b56188dc3bfd7d9971d3802e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5920b03cd962fcbf3aad9bbc705f861"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="structVW_1_1workspace.html">VW::workspace</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ae5920b03cd962fcbf3aad9bbc705f861">merge_models</a> (const <a class="el" href="structVW_1_1workspace.html">VW::workspace</a> *base_workspace, const std::vector&lt; const <a class="el" href="structVW_1_1workspace.html">VW::workspace</a> *&gt; &amp;workspaces_to_merge, <a class="el" href="structVW_1_1io_1_1logger.html">VW::io::logger</a> *logger=nullptr)</td></tr>
 <tr class="separator:ae5920b03cd962fcbf3aad9bbc705f861"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fa2d7f6458d97d1eb5419924e5ef76f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVW_1_1model__delta.html">VW::model_delta</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a4fa2d7f6458d97d1eb5419924e5ef76f">merge_deltas</a> (const std::vector&lt; const <a class="el" href="structVW_1_1model__delta.html">VW::model_delta</a> *&gt; &amp;deltas_to_merge, <a class="el" href="structVW_1_1io_1_1logger.html">VW::io::logger</a> *logger=nullptr)</td></tr>
+<tr class="separator:a4fa2d7f6458d97d1eb5419924e5ef76f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a170341cf31cdb4fb2da4cad71924c2f0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a170341cf31cdb4fb2da4cad71924c2f0">to_string</a> (const <a class="el" href="structMULTILABEL_1_1labels.html">MULTILABEL::labels</a> &amp;multilabels)</td></tr>
 <tr class="separator:a170341cf31cdb4fb2da4cad71924c2f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a307838cf95f16718e3b1499033a79a81"><td class="memTemplParams" colspan="2">template&lt;typename RetType , typename InputType &gt; </td></tr>
@@ -3467,6 +3471,44 @@ template&lt;typename T , typename... Args&gt; </div>
 
 </div>
 </div>
+<a id="a4fa2d7f6458d97d1eb5419924e5ef76f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fa2d7f6458d97d1eb5419924e5ef76f">&#9670;&nbsp;</a></span>merge_deltas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structVW_1_1model__delta.html">VW::model_delta</a> VW::merge_deltas </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; const <a class="el" href="structVW_1_1model__delta.html">VW::model_delta</a> *&gt; &amp;&#160;</td>
+          <td class="paramname"><em>deltas_to_merge</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structVW_1_1io_1_1logger.html">VW::io::logger</a> *&#160;</td>
+          <td class="paramname"><em>logger</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Merge several model deltas into a single delta. This merges weights and all training state. All given deltas must be from compatible models, meaning they should have the same reduction stack and same training based options. All deltas are assumed to be generated using a single shared base workspace.</p>
+<p>Note: This is an experimental API.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deltas_to_merge</td><td>Vector of model deltas to merge. </td></tr>
+    <tr><td class="paramname">logger</td><td>Optional logger to be used for logging during function and is given to the resulting workspace </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::unique_ptr&lt;VW::workspace&gt; Pointer to the resulting workspace. </dd></dl>
+
+</div>
+</div>
 <a id="ae5920b03cd962fcbf3aad9bbc705f861"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae5920b03cd962fcbf3aad9bbc705f861">&#9670;&nbsp;</a></span>merge_models()</h2>
 
@@ -3504,7 +3546,7 @@ template&lt;typename T , typename... Args&gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">base_workspace</td><td>Optional common base model that all other models continued training from. If not supplied, then all models are assumed to be trained from scratch. </td></tr>
-    <tr><td class="paramname">workspaces_to_merge</td><td>List of workspaces to merge. </td></tr>
+    <tr><td class="paramname">workspaces_to_merge</td><td>Vector of workspaces to merge. </td></tr>
     <tr><td class="paramname">logger</td><td>Optional logger to be used for logging during function and is given to the resulting workspace </td></tr>
   </table>
   </dd>
@@ -6034,7 +6076,7 @@ template&lt;typename ContainerT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 6 2022 03:52:44 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 6 2022 15:10:29 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

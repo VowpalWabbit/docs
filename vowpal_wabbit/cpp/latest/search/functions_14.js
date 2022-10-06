@@ -11,6 +11,8 @@ var searchData=
   ['uniform_5frandom_5fmerand48_5fadvance',['uniform_random_merand48_advance',['../namespaceexploration.html#a5d99f2849ca698712b1a2a6e451019c5',1,'exploration']]],
   ['unique_5ffeatures',['unique_features',['../unique__sort_8h.html#a209bc72175c2bbe3c9977f6952b8db5e',1,'unique_sort.h']]],
   ['unique_5fsort_5ffeatures',['unique_sort_features',['../unique__sort_8h.html#a5875203dd35e4df264ff446382de313e',1,'unique_sort.h']]],
+  ['unsafe_5fget_5fworkspace_5fptr',['unsafe_get_workspace_ptr',['../structVW_1_1model__delta.html#aed0a075e9f381a5e4d879be0b02f6546',1,'VW::model_delta']]],
+  ['unsafe_5frelease_5fworkspace_5fptr',['unsafe_release_workspace_ptr',['../structVW_1_1model__delta.html#a37d1bd99776ca3a0732c894410fd7446',1,'VW::model_delta']]],
   ['update',['update',['../structVW_1_1confidence__sequence.html#a3e2f4a2fc56b1b356133513df3b9e529',1,'VW::confidence_sequence::update()'],['../structVW_1_1cressieread__estimator.html#a860080d6b4c82d9e168b0a9549cefd15',1,'VW::cressieread_estimator::update()'],['../classVW_1_1distributionally__robust_1_1ChiSquared.html#a94e981844ac9c0bdaa6d4bde9a61d894',1,'VW::distributionally_robust::ChiSquared::update()'],['../structVW_1_1LEARNER_1_1learner.html#aa64eaa8a3ea3ed282151876393ca8c8e',1,'VW::LEARNER::learner::update()'],['../structshared__data.html#ad3b0fc9176c689eb63bf255499223c62',1,'shared_data::update()']]],
   ['update_5fdump_5finterval',['update_dump_interval',['../structshared__data.html#a86dc26ad7249ba38f03f8a2c6f315f37',1,'shared_data']]],
   ['update_5fextent_5finteractions_5fif_5fnew_5fnamespace_5fseen',['update_extent_interactions_if_new_namespace_seen',['../structINTERACTIONS_1_1interactions__generator.html#ab17bcc0b4ddfb903a6595ce3024cf886',1,'INTERACTIONS::interactions_generator']]],

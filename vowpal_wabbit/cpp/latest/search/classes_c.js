@@ -5,6 +5,7 @@ var searchData=
   ['metric_5fsink',['metric_sink',['../structVW_1_1metric__sink.html',1,'VW']]],
   ['metric_5fsink_5fvisitor',['metric_sink_visitor',['../structVW_1_1metric__sink__visitor.html',1,'VW']]],
   ['min_5fdepth_5fbinary_5ftree',['min_depth_binary_tree',['../structVW_1_1reductions_1_1cats_1_1min__depth__binary__tree.html',1,'VW::reductions::cats::min_depth_binary_tree'],['../structVW_1_1reductions_1_1offset__tree_1_1min__depth__binary__tree.html',1,'VW::reductions::offset_tree::min_depth_binary_tree']]],
+  ['model_5fdelta',['model_delta',['../structVW_1_1model__delta.html',1,'VW']]],
   ['model_5fparser',['model_parser',['../classvw__slim_1_1model__parser.html',1,'vw_slim']]],
   ['model_5fweight_5frand_5fsvd_5fimpl',['model_weight_rand_svd_impl',['../classVW_1_1cb__explore__adf_1_1model__weight__rand__svd__impl.html',1,'VW::cb_explore_adf']]],
   ['moved_5fobject_5fpool',['moved_object_pool',['../structVW_1_1moved__object__pool.html',1,'VW']]],
