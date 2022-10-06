@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['data',['Data',['../structVW_1_1Data.html',1,'VW']]],
   ['decisionserviceinteraction',['DecisionServiceInteraction',['../structDecisionServiceInteraction.html',1,'']]],
   ['decisionservicestate',['DecisionServiceState',['../classDecisionServiceState.html',1,'']]],
   ['default_5fcleanup',['default_cleanup',['../structVW_1_1default__cleanup.html',1,'VW']]],

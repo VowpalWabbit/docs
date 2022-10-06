@@ -60,7 +60,6 @@ var searchData=
   ['buf',['buf',['../structVW_1_1reductions_1_1expreplay_1_1expreplay.html#a2de112349ae2d53d078cdf61408ca9b7',1,'VW::reductions::expreplay::expreplay']]],
   ['buf_5fread',['buf_read',['../classio__buf.html#a0fe43cbf0e4539940ad28f482c322cd9',1,'io_buf']]],
   ['buf_5fwrite',['buf_write',['../classio__buf.html#aaff9b1ba96e89f3abfa6105f1f369b34',1,'io_buf']]],
-  ['buffer',['buffer',['../structVW_1_1Data.html#a674c8742bed0498e4184b57389e51dae',1,'VW::Data']]],
   ['buffer_5fstart',['buffer_start',['../classio__buf.html#aa79ba9e0c96d4ebde9ef98493c629806',1,'io_buf']]],
   ['buffers',['buffers',['../classVW_1_1AllReduceSync.html#ac77944b013c55b2ea6feeae5142ff1e9',1,'VW::AllReduceSync']]],
   ['build',['build',['../structVW_1_1kskip__ngram__transformer.html#a8c5816562f81d079edb7e8ff51616867',1,'VW::kskip_ngram_transformer::build()'],['../structVW_1_1LEARNER_1_1reduction__learner__builder.html#ac42218a5cc04c1c93fd268ff0a6c1fb7',1,'VW::LEARNER::reduction_learner_builder::build()'],['../structVW_1_1LEARNER_1_1reduction__no__data__learner__builder.html#ac2d7082936547b28f8ef466940d9d0c1',1,'VW::LEARNER::reduction_no_data_learner_builder::build()'],['../structVW_1_1LEARNER_1_1base__learner__builder.html#a9c2fc579a8e26ece21cbaa565d24db05',1,'VW::LEARNER::base_learner_builder::build()']]],
