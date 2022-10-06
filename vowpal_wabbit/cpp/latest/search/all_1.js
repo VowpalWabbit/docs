@@ -15,8 +15,6 @@ var searchData=
   ['action_5fprobs',['action_probs',['../namespaceVW.html#a4f76045a06b3efe3c5c612b777b6c836aa78dde72b6338b01742027024d34eca6',1,'VW']]],
   ['action_5fscore',['action_score',['../structACTION__SCORE_1_1action__score.html',1,'ACTION_SCORE::action_score'],['../namespaceACTION__SCORE.html',1,'ACTION_SCORE']]],
   ['action_5fscore_2eh',['action_score.h',['../action__score_8h.html',1,'']]],
-  ['action_5fscore_5fcompare_5fgt',['action_score_compare_gt',['../namespaceVW.html#ac8becc8ccd3691b01f9bd6872675c9e9',1,'VW']]],
-  ['action_5fscore_5fcompare_5flt',['action_score_compare_lt',['../namespaceVW.html#a1ba263e76513d7a0c4c65248cfcabc37',1,'VW']]],
   ['action_5fscores',['action_scores',['../namespaceACTION__SCORE.html#a73cec56adace2b62e070a0686309704c',1,'ACTION_SCORE::action_scores()'],['../namespaceVW.html#a4f76045a06b3efe3c5c612b777b6c836a43568e6f9bdfff4805f9154606cde508',1,'VW::action_scores()']]],
   ['action_5fsum',['action_sum',['../structGEN__CS_1_1cb__to__cs__adf.html#a603aadff469c9a586f031e2833c2e076',1,'GEN_CS::cb_to_cs_adf']]],
   ['action_5ftype',['ACTION_TYPE',['../constant_8h.html#aa24f88139565835c44463bfbf3e4cd34',1,'constant.h']]],
