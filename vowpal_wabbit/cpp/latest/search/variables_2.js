@@ -15,5 +15,5 @@ var searchData=
   ['bool_5fstate',['bool_state',['../structContext.html#a0dda584309012bded089bb76d8a5be5d',1,'Context']]],
   ['bound_5fsock',['bound_sock',['../structparser.html#a42519589c5014a70b532ce88d3b243ef',1,'parser']]],
   ['buf',['buf',['../structVW_1_1reductions_1_1expreplay_1_1expreplay.html#a2de112349ae2d53d078cdf61408ca9b7',1,'VW::reductions::expreplay::expreplay']]],
-  ['buffers',['buffers',['../classVW_1_1AllReduceSync.html#ac77944b013c55b2ea6feeae5142ff1e9',1,'VW::AllReduceSync']]]
+  ['buffers',['buffers',['../classVW_1_1all__reduce__sync.html#a68a5af320f1e627c58dcc0011da5014a',1,'VW::all_reduce_sync']]]
 ];

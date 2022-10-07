@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['_7eallreduce',['~AllReduce',['../classVW_1_1AllReduce.html#afba39040b93ddaf467e431ff47422ffb',1,'VW::AllReduce']]],
-  ['_7eallreducesockets',['~AllReduceSockets',['../classVW_1_1AllReduceSockets.html#a3c7577bb38d8cbb40c1b591a7c27e84d',1,'VW::AllReduceSockets']]],
-  ['_7eallreducesync',['~AllReduceSync',['../classVW_1_1AllReduceSync.html#aa82f1606060c17922e5cafac7deaa4e0',1,'VW::AllReduceSync']]],
-  ['_7eallreducethreads',['~AllReduceThreads',['../classVW_1_1AllReduceThreads.html#af843fa0725b9000fc36c4271f08bf4c9',1,'VW::AllReduceThreads']]],
+  ['_7eall_5freduce_5fbase',['~all_reduce_base',['../classVW_1_1all__reduce__base.html#a7456cb1f07515afb607f7e6eefe347f0',1,'VW::all_reduce_base']]],
+  ['_7eall_5freduce_5fsockets',['~all_reduce_sockets',['../classVW_1_1all__reduce__sockets.html#a8f718e401a506b4c85db52a09ad9ea80',1,'VW::all_reduce_sockets']]],
+  ['_7eall_5freduce_5fsync',['~all_reduce_sync',['../classVW_1_1all__reduce__sync.html#ad8cff2090c92750363f90e4eb3902bd3',1,'VW::all_reduce_sync']]],
+  ['_7eall_5freduce_5fthreads',['~all_reduce_threads',['../classVW_1_1all__reduce__threads.html#a144a631a1c479315a669e8bb980e4c19',1,'VW::all_reduce_threads']]],
   ['_7ebase_5foption',['~base_option',['../structVW_1_1config_1_1base__option.html#a1ccaaadba500eee142ba5ce2665aba2b',1,'VW::config::base_option']]],
   ['_7ebeam',['~beam',['../classBeam_1_1beam.html#ad8860e13bb9bfce9474438d5183ec9fe',1,'Beam::beam']]],
   ['_7ecats_5ftree',['~cats_tree',['../structVW_1_1reductions_1_1cats_1_1cats__tree.html#ad801b645e2761d7214dac7cfe02be51c',1,'VW::reductions::cats::cats_tree']]],
@@ -23,7 +23,7 @@ var searchData=
   ['_7emetric_5fsink_5fvisitor',['~metric_sink_visitor',['../structVW_1_1metric__sink__visitor.html#ac0f739fd8a6246c75a6bd9057e25a103',1,'VW::metric_sink_visitor']]],
   ['_7enamespace_5fcopy_5fguard',['~namespace_copy_guard',['../classvw__slim_1_1namespace__copy__guard.html#a22d01b974d0f3c559eb5086ca065eb39',1,'vw_slim::namespace_copy_guard']]],
   ['_7eno_5flock_5fobject_5fpool',['~no_lock_object_pool',['../structVW_1_1no__lock__object__pool.html#a8b44b0d2968ab930cb65ce416a254c81',1,'VW::no_lock_object_pool']]],
-  ['_7enodesocks',['~NodeSocks',['../structVW_1_1details_1_1NodeSocks.html#ae89061c8a13631c0111e986cec66278f',1,'VW::details::NodeSocks']]],
+  ['_7enode_5fsocks',['~node_socks',['../structVW_1_1details_1_1node__socks.html#abc3ef1d48a928c56229bcdedc7a86e87',1,'VW::details::node_socks']]],
   ['_7eoptions_5fi',['~options_i',['../structVW_1_1config_1_1options__i.html#af552887c1e0b69fd3d0e8ab02eaa445d',1,'VW::config::options_i']]],
   ['_7epolyprediction',['~polyprediction',['../structVW_1_1polyprediction.html#afbc05a6589e279f807629a8d07fbd58b',1,'VW::polyprediction']]],
   ['_7ereader',['~reader',['../structVW_1_1io_1_1reader.html#acb42a09f82bb5363bb7518d459288128',1,'VW::io::reader']]],

@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['wait_5ffor_5fsynchronization',['wait_for_synchronization',['../classVW_1_1AllReduceSync.html#a726430609727dba943e42e489157e638',1,'VW::AllReduceSync']]],
-  ['waitforsynchronization',['waitForSynchronization',['../classVW_1_1AllReduceSync.html#a303ea1d2c353cccdba95ea545f0f9bd0',1,'VW::AllReduceSync']]],
+  ['wait_5ffor_5fsynchronization',['wait_for_synchronization',['../classVW_1_1all__reduce__sync.html#ac38537d76046cdb15ca7fa68bd0d22f0',1,'VW::all_reduce_sync']]],
+  ['waitforsynchronization',['waitForSynchronization',['../classVW_1_1all__reduce__sync.html#a782e4be476078c8362e8d28fd7b44c80',1,'VW::all_reduce_sync']]],
   ['wap_5fldf_5fnamespace',['wap_ldf_namespace',['../constant_8h.html#a08e7c9bf8fe6467dafd18a42120013e1',1,'constant.h']]],
   ['wap_5fvalue',['wap_value',['../structCOST__SENSITIVE_1_1wclass.html#ac6c25cd1d7f4be9de04cfd552dbff23e',1,'COST_SENSITIVE::wclass']]],
   ['warm_5fcb_2eh',['warm_cb.h',['../warm__cb_8h.html',1,'']]],

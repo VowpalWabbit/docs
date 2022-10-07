@@ -61,7 +61,7 @@ var searchData=
   ['buf_5fread',['buf_read',['../classio__buf.html#a0fe43cbf0e4539940ad28f482c322cd9',1,'io_buf']]],
   ['buf_5fwrite',['buf_write',['../classio__buf.html#aaff9b1ba96e89f3abfa6105f1f369b34',1,'io_buf']]],
   ['buffer_5fstart',['buffer_start',['../classio__buf.html#aa79ba9e0c96d4ebde9ef98493c629806',1,'io_buf']]],
-  ['buffers',['buffers',['../classVW_1_1AllReduceSync.html#ac77944b013c55b2ea6feeae5142ff1e9',1,'VW::AllReduceSync']]],
+  ['buffers',['buffers',['../classVW_1_1all__reduce__sync.html#a68a5af320f1e627c58dcc0011da5014a',1,'VW::all_reduce_sync']]],
   ['build',['build',['../structVW_1_1kskip__ngram__transformer.html#a8c5816562f81d079edb7e8ff51616867',1,'VW::kskip_ngram_transformer::build()'],['../structVW_1_1LEARNER_1_1reduction__learner__builder.html#ac42218a5cc04c1c93fd268ff0a6c1fb7',1,'VW::LEARNER::reduction_learner_builder::build()'],['../structVW_1_1LEARNER_1_1reduction__no__data__learner__builder.html#ac2d7082936547b28f8ef466940d9d0c1',1,'VW::LEARNER::reduction_no_data_learner_builder::build()'],['../structVW_1_1LEARNER_1_1base__learner__builder.html#a9c2fc579a8e26ece21cbaa565d24db05',1,'VW::LEARNER::base_learner_builder::build()']]],
   ['build_5fsetupfn_5fname_5fdict',['build_setupfn_name_dict',['../structVW_1_1workspace.html#a89abfb668c872684f5d098c96f611165',1,'VW::workspace']]],
   ['build_5ftree',['build_tree',['../structVW_1_1reductions_1_1cats_1_1min__depth__binary__tree.html#a525ba20637480b6cf8c0c0f3af87a160',1,'VW::reductions::cats::min_depth_binary_tree::build_tree()'],['../structVW_1_1reductions_1_1offset__tree_1_1min__depth__binary__tree.html#a90a11b26af8ebe71b21e49b8a5b7e76e',1,'VW::reductions::offset_tree::min_depth_binary_tree::build_tree()']]]

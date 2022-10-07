@@ -16,7 +16,7 @@ var searchData=
   ['no_5fdaemon',['no_daemon',['../structVW_1_1workspace.html#a86b5d4674454d654f1c44eaa98ef4d6b',1,'VW::workspace']]],
   ['no_5flabel_5fparser',['no_label_parser',['../namespaceno__label.html#ac83101e095dd622cb518eae12ab7c582',1,'no_label']]],
   ['no_5fwin_5fcounter',['no_win_counter',['../structGD_1_1gd.html#a73947bf10e25c0d3daf6068eddd5d157',1,'GD::gd']]],
-  ['node',['node',['../classVW_1_1AllReduce.html#ad3c888d009a733f30cc70ff9c4f41a35',1,'VW::AllReduce']]],
+  ['node',['node',['../classVW_1_1all__reduce__base.html#ab0ccd9fa43add37522a1237d08759dfd',1,'VW::all_reduce_base']]],
   ['node_5fid',['node_id',['../structVW_1_1reductions_1_1cats_1_1node__cost.html#a3c2fc8aaa010296675329cc799d39e4c',1,'VW::reductions::cats::node_cost']]],
   ['node_5fid_5fnamespace',['node_id_namespace',['../constant_8h.html#a2ba4a93b0663f069dc7518d27442b9d2',1,'constant.h']]],
   ['nodes',['nodes',['../structVW_1_1reductions_1_1cats_1_1min__depth__binary__tree.html#ae1a89c546ea2485a115a9b23151e9c88',1,'VW::reductions::cats::min_depth_binary_tree::nodes()'],['../structVW_1_1reductions_1_1offset__tree_1_1min__depth__binary__tree.html#a6ed0ae5f8fbfaa92a9e976b5dfb1b551',1,'VW::reductions::offset_tree::min_depth_binary_tree::nodes()']]],

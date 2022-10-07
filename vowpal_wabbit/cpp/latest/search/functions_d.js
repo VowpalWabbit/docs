@@ -10,7 +10,7 @@ var searchData=
   ['nn_5fsetup',['nn_setup',['../namespaceVW_1_1reductions.html#ae3049e94f03a3c690a50665b94b2fcba',1,'VW::reductions']]],
   ['no_5flock_5fobject_5fpool',['no_lock_object_pool',['../structVW_1_1no__lock__object__pool.html#a55f60639f3260fab7a259890d83b6f0e',1,'VW::no_lock_object_pool::no_lock_object_pool()=default'],['../structVW_1_1no__lock__object__pool.html#a052f840458de1698921f7ab8af57e15f',1,'VW::no_lock_object_pool::no_lock_object_pool(size_t initial_chunk_size, TInitializer initializer={}, size_t chunk_size=8)']]],
   ['node_5fcost',['node_cost',['../structVW_1_1reductions_1_1cats_1_1node__cost.html#ac4f76249da7652a2e10c049388dae17a',1,'VW::reductions::cats::node_cost::node_cost()'],['../structVW_1_1reductions_1_1cats_1_1node__cost.html#a37a54397917359076cc56677c6b82774',1,'VW::reductions::cats::node_cost::node_cost(uint32_t node_id, float cost)']]],
-  ['nodesocks',['NodeSocks',['../structVW_1_1details_1_1NodeSocks.html#a5035fd959edc0064dd652144e72b9035',1,'VW::details::NodeSocks']]],
+  ['node_5fsocks',['node_socks',['../structVW_1_1details_1_1node__socks.html#a550dcf0678b38d0eaced2813f64b95ed',1,'VW::details::node_socks']]],
   ['nonempty',['nonempty',['../structfeatures.html#a2985aa753c882122d770daf7efb2b993',1,'features']]],
   ['noop',['noop',['../namespaceVW_1_1LEARNER_1_1details.html#ab6418a44e5ca971e7eec25150b0f31d7',1,'VW::LEARNER::details']]],
   ['noop_5fmm',['noop_mm',['../global__data_8h.html#ab1679df7e12cefeb7ce4d0094b9d29b3',1,'global_data.h']]],

@@ -19,6 +19,7 @@ var searchData=
   ['second_5fobserved_5flabel',['second_observed_label',['../structshared__data.html#aa8665db15ad6cea576c387bfc1236e4a',1,'shared_data']]],
   ['seen_5ffirst',['seen_first',['../classFloatToFloatState__OriginalLabelCostHack.html#a72ccadad67ddb0e646ff915bd8833b93',1,'FloatToFloatState_OriginalLabelCostHack']]],
   ['segment',['segment',['../classArrayToPdfState.html#a90a676dd3c2fef026dfa3c4748501f33',1,'ArrayToPdfState']]],
+  ['selected_5fall_5freduce_5ftype',['selected_all_reduce_type',['../structVW_1_1workspace.html#a83266d2392b14f47d685beaef370252a',1,'VW::workspace']]],
   ['self_5finteraction',['self_interaction',['../structINTERACTIONS_1_1feature__gen__data.html#a9d489e35f7b4ba4f306a540c2877e9d7',1,'INTERACTIONS::feature_gen_data']]],
   ['sensitivity_5ff',['sensitivity_f',['../structVW_1_1LEARNER_1_1details_1_1sensitivity__data.html#a840509fd3b625ec47d016682f36ace48',1,'VW::LEARNER::details::sensitivity_data']]],
   ['set_5fminmax',['set_minmax',['../structVW_1_1workspace.html#ae69e4a48a58425fcf057ba4fcb20478c',1,'VW::workspace']]],
