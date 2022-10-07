@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['uintdedupstate',['UIntDedupState',['../classUIntDedupState.html',1,'']]],
-  ['uinttouintstate',['UIntToUIntState',['../classUIntToUIntState.html',1,'']]]
+  ['uintdedupstate',['UIntDedupState',['../structUIntDedupState.html',1,'']]],
+  ['uinttouintstate',['UIntToUIntState',['../structUIntToUIntState.html',1,'']]]
 ];

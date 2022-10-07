@@ -46,7 +46,7 @@ var searchData=
   ['probability',['probability',['../structCB_1_1cb__class.html#a19e59d902fb4918ba679fa5f73f582ac',1,'CB::cb_class']]],
   ['probability_5ftolerance',['probability_tolerance',['../constant_8h.html#a2d817f5db781c538da7d027e030909b8',1,'constant.h']]],
   ['probabilityofdrop',['probabilityOfDrop',['../structDecisionServiceInteraction.html#a0e2a393fe1b1427ca5ee5c3fb98ea785',1,'DecisionServiceInteraction']]],
-  ['probs',['probs',['../classLabelObjectState.html#adbe8675cee3239b2f7b77ac3e4a90e53',1,'LabelObjectState']]],
+  ['probs',['probs',['../structLabelObjectState.html#adbe8675cee3239b2f7b77ac3e4a90e53',1,'LabelObjectState']]],
   ['progress_5fadd',['progress_add',['../structVW_1_1workspace.html#a9365651f6a3a4f67c5b00cd2f416b116',1,'VW::workspace']]],
   ['progress_5farg',['progress_arg',['../structVW_1_1workspace.html#a61f33a51a9aa8ee569e58bdd344f8d11',1,'VW::workspace']]]
 ];

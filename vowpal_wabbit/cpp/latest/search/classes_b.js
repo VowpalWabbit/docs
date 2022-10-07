@@ -6,7 +6,7 @@ var searchData=
   ['label_5fparser_5freuse_5fmem',['label_parser_reuse_mem',['../structVW_1_1label__parser__reuse__mem.html',1,'VW']]],
   ['label_5ft',['label_t',['../structMULTICLASS_1_1label__t.html',1,'MULTICLASS']]],
   ['labelindexstate',['LabelIndexState',['../structLabelIndexState.html',1,'']]],
-  ['labelobjectstate',['LabelObjectState',['../classLabelObjectState.html',1,'']]],
+  ['labelobjectstate',['LabelObjectState',['../structLabelObjectState.html',1,'']]],
   ['labels',['labels',['../structMULTILABEL_1_1labels.html',1,'MULTILABEL']]],
   ['labelsinglepropertystate',['LabelSinglePropertyState',['../structLabelSinglePropertyState.html',1,'']]],
   ['labelstate',['LabelState',['../structLabelState.html',1,'']]],
@@ -16,5 +16,5 @@ var searchData=
   ['learner_3c_20datat_2c_20examplet_20_3e',['learner&lt; DataT, ExampleT &gt;',['../structVW_1_1LEARNER_1_1learner.html',1,'VW::LEARNER']]],
   ['logger',['logger',['../structVW_1_1io_1_1logger.html',1,'VW::io']]],
   ['logger_5fimpl',['logger_impl',['../structVW_1_1io_1_1details_1_1logger__impl.html',1,'VW::io::details']]],
-  ['loss_5ffunction',['loss_function',['../classVW_1_1loss__function.html',1,'VW']]]
+  ['loss_5ffunction',['loss_function',['../structVW_1_1loss__function.html',1,'VW']]]
 ];

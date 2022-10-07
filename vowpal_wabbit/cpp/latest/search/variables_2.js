@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['b',['B',['../classVW_1_1cb__explore__adf_1_1vanilla__rand__svd__impl.html#a860a5828755c06519a362ea876e377a3',1,'VW::cb_explore_adf::vanilla_rand_svd_impl::B()'],['../classVW_1_1cb__explore__adf_1_1model__weight__rand__svd__impl.html#ad952cf66f66fcc3f9fa36fd419cd1ee2',1,'VW::cb_explore_adf::model_weight_rand_svd_impl::B()']]],
+  ['b',['B',['../structVW_1_1cb__explore__adf_1_1vanilla__rand__svd__impl.html#a860a5828755c06519a362ea876e377a3',1,'VW::cb_explore_adf::vanilla_rand_svd_impl::B()'],['../structVW_1_1cb__explore__adf_1_1model__weight__rand__svd__impl.html#ad952cf66f66fcc3f9fa36fd419cd1ee2',1,'VW::cb_explore_adf::model_weight_rand_svd_impl::B()']]],
   ['bandwidth',['bandwidth',['../structVW_1_1reductions_1_1cats_1_1cats.html#a6cb336f40a44cdcb30ca15dc652067f8',1,'VW::reductions::cats::cats::bandwidth()'],['../structVW_1_1reductions_1_1pmf__to__pdf__reduction.html#a59e753236f616a2fa9af5f2bde758120',1,'VW::reductions::pmf_to_pdf_reduction::bandwidth()']]],
   ['base',['base',['../structVW_1_1LEARNER_1_1details_1_1func__data.html#a0a01044f98f1dec701b2b2801001e6e8',1,'VW::LEARNER::details::func_data::base()'],['../structVW_1_1LEARNER_1_1details_1_1learn__data.html#a31b610748194a1b4ea044d6d2558b9ca',1,'VW::LEARNER::details::learn_data::base()'],['../structVW_1_1LEARNER_1_1details_1_1save__load__data.html#a7a91b4e5837923cc15973b163aa6d7c9',1,'VW::LEARNER::details::save_load_data::base()'],['../structVW_1_1LEARNER_1_1details_1_1save__metric__data.html#a50627ad2760f895c9e1b935990141d1a',1,'VW::LEARNER::details::save_metric_data::base()'],['../structVW_1_1LEARNER_1_1details_1_1finish__example__data.html#aa07133ee786cd8efccb839c31d1a7cc7',1,'VW::LEARNER::details::finish_example_data::base()'],['../structVW_1_1reductions_1_1expreplay_1_1expreplay.html#a6859f863ea5d42a620469d3cde4b7ca2',1,'VW::reductions::expreplay::expreplay::base()']]],
   ['baseline_5factions',['baseline_actions',['../structDecisionServiceInteraction.html#a8b11b8481da92f85361d5310f7d656f9',1,'DecisionServiceInteraction']]],
@@ -15,5 +15,5 @@ var searchData=
   ['bool_5fstate',['bool_state',['../structContext.html#a0dda584309012bded089bb76d8a5be5d',1,'Context']]],
   ['bound_5fsock',['bound_sock',['../structparser.html#a42519589c5014a70b532ce88d3b243ef',1,'parser']]],
   ['buf',['buf',['../structVW_1_1reductions_1_1expreplay_1_1expreplay.html#a2de112349ae2d53d078cdf61408ca9b7',1,'VW::reductions::expreplay::expreplay']]],
-  ['buffers',['buffers',['../classVW_1_1all__reduce__sync.html#a68a5af320f1e627c58dcc0011da5014a',1,'VW::all_reduce_sync']]]
+  ['buffers',['buffers',['../structVW_1_1all__reduce__sync.html#a68a5af320f1e627c58dcc0011da5014a',1,'VW::all_reduce_sync']]]
 ];

@@ -2,7 +2,7 @@ var searchData=
 [
   ['early_5fstop_5fthres',['early_stop_thres',['../structGD_1_1gd.html#aea5b82195f447c6a115c80ef1fd7c6d2',1,'GD::gd']]],
   ['early_5fterminate',['early_terminate',['../structVW_1_1workspace.html#a9130a68b27b5860681f921fe7aa64228',1,'VW::workspace']]],
-  ['ec',['ec',['../classSearch_1_1BaseTask.html#a10360ccf2c6968bc17f6f04d946b0577',1,'Search::BaseTask']]],
+  ['ec',['ec',['../structSearch_1_1BaseTask.html#a10360ccf2c6968bc17f6f04d946b0577',1,'Search::BaseTask']]],
   ['ecs',['ecs',['../structVW_1_1reductions_1_1cbify__adf__data.html#a5c2a336a1f69c6ec0a220f32c5babb31',1,'VW::reductions::cbify_adf_data']]],
   ['elements',['elements',['../structVW_1_1reductions_1_1automl_1_1ns__based__config.html#ab5231b31fc6f34aca8f6b2bece8425d4',1,'VW::reductions::automl::ns_based_config']]],
   ['eligible_5fto_5finactivate',['eligible_to_inactivate',['../structVW_1_1reductions_1_1automl_1_1aml__estimator.html#a5a7df0c71be5ffa2de6b39f0eeca3e3a',1,'VW::reductions::automl::aml_estimator']]],
