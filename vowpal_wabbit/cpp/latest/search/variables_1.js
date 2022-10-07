@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['a_5fs',['a_s',['../structVW_1_1polyprediction.html#abe21cff15e4830948ac50169a25a4c58',1,'VW::polyprediction']]],
-  ['action',['action',['../structACTION__SCORE_1_1action__score.html#a3da08ec8bf04bb62c2435436de0b7beb',1,'ACTION_SCORE::action_score::action()'],['../structCB_1_1cb__class.html#a511b292fa65f62a62983677817b0e096',1,'CB::cb_class::action()'],['../structCB__EVAL_1_1label.html#a74e7d0b1d4b50ec21ae0dae9aa083946',1,'CB_EVAL::label::action()'],['../structVW_1_1cb__continuous_1_1continuous__label__elm.html#a3aebe64ba36297f71a1cb5d7b94a5d9e',1,'VW::cb_continuous::continuous_label_elm::action()'],['../structVW_1_1continuous__actions_1_1probability__density__function__value.html#a3102e2c2988ea567a378737163cd9f74',1,'VW::continuous_actions::probability_density_function_value::action()']]],
+  ['a_5fs',['a_s',['../structVW_1_1polyprediction.html#a1fc3526eaf84cc782348b4c4dc4a5032',1,'VW::polyprediction']]],
+  ['action',['action',['../structVW_1_1action__score.html#ae271cbfca1b2b493edffe754bb66bc58',1,'VW::action_score::action()'],['../structCB_1_1cb__class.html#a511b292fa65f62a62983677817b0e096',1,'CB::cb_class::action()'],['../structCB__EVAL_1_1label.html#a74e7d0b1d4b50ec21ae0dae9aa083946',1,'CB_EVAL::label::action()'],['../structVW_1_1cb__continuous_1_1continuous__label__elm.html#a3aebe64ba36297f71a1cb5d7b94a5d9e',1,'VW::cb_continuous::continuous_label_elm::action()'],['../structVW_1_1continuous__actions_1_1probability__density__function__value.html#a3102e2c2988ea567a378737163cd9f74',1,'VW::continuous_actions::probability_density_function_value::action()']]],
   ['action_5fcosts',['ACTION_COSTS',['../namespaceSearch.html#a86ee04bcb8443067b54b85e38e876cab',1,'Search']]],
   ['action_5fsum',['action_sum',['../structGEN__CS_1_1cb__to__cs__adf.html#a603aadff469c9a586f031e2833c2e076',1,'GEN_CS::cb_to_cs_adf']]],
   ['action_5ftype',['ACTION_TYPE',['../constant_8h.html#aa24f88139565835c44463bfbf3e4cd34',1,'constant.h']]],

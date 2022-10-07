@@ -2,7 +2,6 @@ var searchData=
 [
   ['v_5farray',['v_array',['../structVW_1_1v__array.html',1,'VW']]],
   ['v_5farray_3c_20action_20_3e',['v_array&lt; action &gt;',['../structVW_1_1v__array.html',1,'VW']]],
-  ['v_5farray_3c_20action_5fscore_20_3e',['v_array&lt; action_score &gt;',['../structVW_1_1v__array.html',1,'VW']]],
   ['v_5farray_3c_20char_20_3e',['v_array&lt; char &gt;',['../structVW_1_1v__array.html',1,'VW']]],
   ['v_5farray_3c_20feature_5findex_20_3e',['v_array&lt; feature_index &gt;',['../structVW_1_1v__array.html',1,'VW']]],
   ['v_5farray_3c_20feature_5fvalue_20_3e',['v_array&lt; feature_value &gt;',['../structVW_1_1v__array.html',1,'VW']]],

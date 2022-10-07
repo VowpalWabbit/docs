@@ -32,7 +32,7 @@ var searchData=
   ['predictneedsexample',['predictNeedsExample',['../structSearch_1_1search.html#a5666c275c0b94a402e542a9de27522d3',1,'Search::search']]],
   ['predictor',['predictor',['../classSearch_1_1predictor.html#a6a65220729da6d9ed4c74e54d0142cff',1,'Search::predictor']]],
   ['pretty_5flabel',['pretty_label',['../structSearch_1_1search.html#ab05522f089e76ec3ebe1012fb875c850',1,'Search::search']]],
-  ['print_5faction_5fscore',['print_action_score',['../namespaceACTION__SCORE.html#a3bb63bbc9b98f69cb9a706a51fcee61f',1,'ACTION_SCORE']]],
+  ['print_5faction_5fscore',['print_action_score',['../namespaceVW_1_1details.html#a4e8d93b31fa67f99a6d0363abd46cd4c',1,'VW::details']]],
   ['print_5faudit_5ffeatures',['print_audit_features',['../namespaceGD.html#a9bafe5eba6c07a382cf0fcab8d01c27b',1,'GD']]],
   ['print_5fdecision_5fscores',['print_decision_scores',['../namespaceVW.html#a9200aed70ae7671ee70fd1f9856f0416',1,'VW']]],
   ['print_5fexample',['print_example',['../structVW_1_1LEARNER_1_1learner.html#ae9e94cab7774c09e4a2140301c3f02be',1,'VW::LEARNER::learner']]],

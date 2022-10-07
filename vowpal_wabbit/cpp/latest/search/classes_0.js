@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['action_5fscore',['action_score',['../structACTION__SCORE_1_1action__score.html',1,'ACTION_SCORE']]],
+  ['action_5fscore',['action_score',['../structVW_1_1action__score.html',1,'VW']]],
+  ['action_5fscores_5fscore_5fiterator',['action_scores_score_iterator',['../classVW_1_1action__scores__score__iterator.html',1,'VW']]],
   ['active',['active',['../structVW_1_1reductions_1_1active.html',1,'VW::reductions']]],
   ['active_5fmulticlass_5fprediction',['active_multiclass_prediction',['../structVW_1_1active__multiclass__prediction.html',1,'VW']]],
   ['allreduce',['AllReduce',['../classVW_1_1AllReduce.html',1,'VW']]],
