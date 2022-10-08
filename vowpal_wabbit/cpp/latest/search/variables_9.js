@@ -19,7 +19,7 @@ var searchData=
   ['index_5fqueue',['index_queue',['../structVW_1_1reductions_1_1automl_1_1config__oracle.html#a131b0541c02bca0a5230ad9a13cf5a30',1,'VW::reductions::automl::config_oracle']]],
   ['indexing',['indexing',['../structVW_1_1workspace.html#a5c8ca74e6cfa887a7a8d26cb88ab3eed',1,'VW::workspace']]],
   ['indices',['indices',['../structVW_1_1example__predict.html#ae3bcd81025e590305eb4aa9c50e24ad4',1,'VW::example_predict::indices()'],['../structfeatures.html#a148deefbc0193790ff4233441f532cc0',1,'features::indices()']]],
-  ['initial',['initial',['../structsimple__label__reduction__features.html#a1480d951626ca2e794e3acee38f1f3d4',1,'simple_label_reduction_features']]],
+  ['initial',['initial',['../structVW_1_1simple__label__reduction__features.html#a06a9ec62cf0b1dfc1ab38b35879b5af0',1,'VW::simple_label_reduction_features']]],
   ['initial_5fconstant',['initial_constant',['../structVW_1_1workspace.html#a8bac625a986f688013d55d5fda5844fc',1,'VW::workspace::initial_constant()'],['../structGD_1_1gd.html#acbc1082b2cf38f270011cf3c6ab78079',1,'GD::gd::initial_constant()']]],
   ['initial_5fregressors',['initial_regressors',['../structVW_1_1workspace.html#a39d0ca7b190e757104872dd951ffabf2',1,'VW::workspace']]],
   ['initial_5ft',['initial_t',['../structVW_1_1workspace.html#afa89d7c4280de1cf77c8437a4063218f',1,'VW::workspace']]],

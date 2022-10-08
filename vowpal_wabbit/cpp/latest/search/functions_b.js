@@ -1,7 +1,6 @@
 var searchData=
 [
   ['label',['label',['../structVW_1_1slates_1_1label.html#af0eebbfb8ef1ccba8ade84bc364713f1',1,'VW::slates::label']]],
-  ['label_5fdata',['label_data',['../structlabel__data.html#a800529bafb869d908c46cb8f889e38e9',1,'label_data::label_data()'],['../structlabel__data.html#a84397d398f811484280a7f8a5c9390c3',1,'label_data::label_data(float label)']]],
   ['label_5ft',['label_t',['../structMULTICLASS_1_1label__t.html#ae24e23fa59cb45930453c489775440e8',1,'MULTICLASS::label_t::label_t()'],['../structMULTICLASS_1_1label__t.html#a728eea156aa3040188f110903658dbf4',1,'MULTICLASS::label_t::label_t(uint32_t label, float weight)']]],
   ['labelindexstate',['LabelIndexState',['../structLabelIndexState.html#a94f9b8264a3b0c2469d1c77b1dd5e6d8',1,'LabelIndexState']]],
   ['labelobjectstate',['LabelObjectState',['../structLabelObjectState.html#a7ae7603f3d305b4915dbc431acf58b15',1,'LabelObjectState']]],
