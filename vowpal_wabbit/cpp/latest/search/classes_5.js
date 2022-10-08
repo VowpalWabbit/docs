@@ -10,7 +10,7 @@ var searchData=
   ['floattofloatstate',['FloatToFloatState',['../structFloatToFloatState.html',1,'']]],
   ['floattofloatstate_3c_20audit_2c_20float_5faggregation_3a_3aset_20_3e',['FloatToFloatState&lt; audit, float_aggregation::set &gt;',['../structFloatToFloatState.html',1,'']]],
   ['floattofloatstate_5foriginallabelcosthack',['FloatToFloatState_OriginalLabelCostHack',['../structFloatToFloatState__OriginalLabelCostHack.html',1,'']]],
-  ['formatter_3c_20ccb_3a_3aexample_5ftype_20_3e',['formatter&lt; CCB::example_type &gt;',['../structfmt_1_1formatter_3_01CCB_1_1example__type_01_4.html',1,'fmt']]],
+  ['formatter_3c_20vw_3a_3accb_5fexample_5ftype_20_3e',['formatter&lt; VW::ccb_example_type &gt;',['../structfmt_1_1formatter_3_01VW_1_1ccb__example__type_01_4.html',1,'fmt']]],
   ['formatter_3c_20vw_3a_3areductions_3a_3aautoml_3a_3aautoml_5fstate_20_3e',['formatter&lt; VW::reductions::automl::automl_state &gt;',['../structfmt_1_1formatter_3_01VW_1_1reductions_1_1automl_1_1automl__state_01_4.html',1,'fmt']]],
   ['formatter_3c_20vw_3a_3areductions_3a_3aautoml_3a_3aconfig_5fstate_20_3e',['formatter&lt; VW::reductions::automl::config_state &gt;',['../structfmt_1_1formatter_3_01VW_1_1reductions_1_1automl_1_1config__state_01_4.html',1,'fmt']]],
   ['formatter_3c_20vw_3a_3areductions_3a_3aautoml_3a_3aconfig_5ftype_20_3e',['formatter&lt; VW::reductions::automl::config_type &gt;',['../structfmt_1_1formatter_3_01VW_1_1reductions_1_1automl_1_1config__type_01_4.html',1,'fmt']]],

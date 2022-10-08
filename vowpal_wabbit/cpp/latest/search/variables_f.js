@@ -6,7 +6,7 @@ var searchData=
   ['original_5flabel_5fcost_5fstate',['original_label_cost_state',['../structContext.html#aa44a0ff03bc749b2daacf82368ba49fe',1,'Context']]],
   ['originallabelcost',['originalLabelCost',['../structDecisionServiceInteraction.html#a6cfb3cd1a774e916f97d213a0ed0a859',1,'DecisionServiceInteraction']]],
   ['originallabelcostfirstslot',['originalLabelCostFirstSlot',['../structDecisionServiceInteraction.html#a0176b1c151fe113ce0ffe9428725185b',1,'DecisionServiceInteraction']]],
-  ['outcome',['outcome',['../structCCB_1_1label.html#a26688701390e4a716c0339ff18e24185',1,'CCB::label']]],
+  ['outcome',['outcome',['../structVW_1_1ccb__label.html#a6d3edbab9b17a1328c28e8bce029cb4e',1,'VW::ccb_label']]],
   ['output',['output',['../structparser.html#ab5a3b9e257151fde632741f95d18071f',1,'parser']]],
   ['output_5farray',['output_array',['../structArrayToVectorState.html#a4228f52b49bdaa970cca00319a904beb',1,'ArrayToVectorState']]],
   ['output_5fbool',['output_bool',['../structBoolToBoolState.html#a992594f6cfc11ec445918887aaf568d5',1,'BoolToBoolState']]],
