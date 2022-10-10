@@ -54,8 +54,8 @@ var searchData=
   ['is_5fring_5fexample',['is_ring_example',['../namespaceVW.html#ac6faac6a3b5c0a1c6243d143a5d896cd',1,'VW']]],
   ['is_5froot',['is_root',['../structVW_1_1reductions_1_1cats_1_1tree__node.html#a717a0a4c9dea75742565cc0d7bffe2fc',1,'VW::reductions::cats::tree_node']]],
   ['is_5ftest_5flabel',['is_test_label',['../namespaceCB.html#a178fc5ebdc6874d05fd07f20d4fe74a3',1,'CB']]],
+  ['is_5fvalid',['is_valid',['../structVW_1_1distributionally__robust_1_1ChiSquared.html#a38fd0a9a5d4b2934130e37b20e260b3c',1,'VW::distributionally_robust::ChiSquared']]],
   ['is_5fvalid_5fpdf',['is_valid_pdf',['../namespaceVW_1_1continuous__actions.html#a4f1b699c90c2a0efb59a20b42707ef48',1,'VW::continuous_actions']]],
   ['isbinary',['isbinary',['../structio__buf.html#a1974dd5257eaa530030fc59cce0589be',1,'io_buf']]],
-  ['isvalid',['isValid',['../structVW_1_1distributionally__robust_1_1ChiSquared.html#a34da3da74175a84535bbf48cacd5aed9',1,'VW::distributionally_robust::ChiSquared']]],
   ['iterator',['Iterator',['../structVW_1_1reductions_1_1automl_1_1Iterator.html#a4fd265eccbc4c36bff22fb11ae5685af',1,'VW::reductions::automl::Iterator::Iterator()'],['../structVW_1_1example__predict_1_1iterator.html#af617e83889521b881aa64c735f823365',1,'VW::example_predict::iterator::iterator()']]]
 ];
