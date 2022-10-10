@@ -5,7 +5,7 @@ var searchData=
   ['shared',['SHARED',['../namespaceVW.html#a596fabd45fcdfed3154eb263d035f069a049518eb4dc1859c7cebbe15876cfd63',1,'VW::SHARED()'],['../namespaceVW_1_1slates.html#a894cb7b1b775c40313bbb5e1c4b48a50a9e81e7b963c71363e2fb3eefcfecfc0e',1,'VW::slates::shared()']]],
   ['simple',['simple',['../namespaceVW.html#adf253bc5d95217ce3aadf6e2421dafd2a8dbdda48fb8748d6746f1965824e966a',1,'VW']]],
   ['slates',['slates',['../namespaceVW.html#adf253bc5d95217ce3aadf6e2421dafd2aba298a474e572b7bb22ea6b59e127028',1,'VW']]],
-  ['slot',['slot',['../namespaceVW_1_1slates.html#a894cb7b1b775c40313bbb5e1c4b48a50a5e97994ed38a2b2f984f3b2b75012bf8',1,'VW::slates::slot()'],['../namespaceVW.html#a596fabd45fcdfed3154eb263d035f069a0b688c5f3d542268089da39994214ab8',1,'VW::SLOT()']]],
+  ['slot',['SLOT',['../namespaceVW.html#a596fabd45fcdfed3154eb263d035f069a0b688c5f3d542268089da39994214ab8',1,'VW::SLOT()'],['../namespaceVW_1_1slates.html#a894cb7b1b775c40313bbb5e1c4b48a50a5e97994ed38a2b2f984f3b2b75012bf8',1,'VW::slates::slot()']]],
   ['sm',['sm',['../namespaceVW.html#afc6602380e780c653a55bf44b6e5c881aed79acb0cd3d7f8320c53c7798335ef0',1,'VW']]],
   ['socket',['SOCKET',['../namespaceVW.html#aecbec708e73772b227f6aed0dbc48f4ba75fbea08c09e684e6b3f3961761354fa',1,'VW']]],
   ['softmax',['softmax',['../namespacevw__slim.html#a8b7398db5b92b2538fdd8e6593b746b3ace2f1fbd249d24aabc07ac4488ab5b8c',1,'vw_slim']]]

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['n',['N',['../structVW_1_1reductions_1_1expreplay_1_1expreplay.html#a2563123c377deacbee6f4ec4fa5051e9',1,'VW::reductions::expreplay::expreplay::N()'],['../structVW_1_1distributionally__robust_1_1Duals.html#ad72686b6b792efe744a034674dc09847',1,'VW::distributionally_robust::Duals::n()']]],
+  ['n',['n',['../structVW_1_1distributionally__robust_1_1Duals.html#ad72686b6b792efe744a034674dc09847',1,'VW::distributionally_robust::Duals::n()'],['../structVW_1_1reductions_1_1expreplay_1_1expreplay.html#a2563123c377deacbee6f4ec4fa5051e9',1,'VW::reductions::expreplay::expreplay::N()']]],
   ['name',['name',['../structVW_1_1audit__strings.html#aeda51a335733a0481b53d8057c22fdf9',1,'VW::audit_strings::name()'],['../structdictionary__info.html#aafd5bfbc5290ad275067a8cf3397970a',1,'dictionary_info::name()'],['../structNamespace.html#a2344df6d1bc705fc8afa24b2c9c79f57',1,'Namespace::name()'],['../structBaseState.html#a675dcc2bdda01de5cde893e77a6116b1',1,'BaseState::name()'],['../structVW_1_1primitive__feature__space.html#a8f5b0342e8c1f8c6d6e5648d14894a59',1,'VW::primitive_feature_space::name()']]],
   ['namespace_5fdictionaries',['namespace_dictionaries',['../structVW_1_1workspace.html#a7a54ee459d452d564df57ff42b799677',1,'VW::workspace']]],
   ['namespace_5fextents',['namespace_extents',['../structfeatures.html#af549d0f8686ce819c6467ff446ff86b3',1,'features']]],
@@ -14,7 +14,7 @@ var searchData=
   ['no_5fbias',['no_bias',['../structVW_1_1workspace.html#a8d812b17f26a4ba7c5eab53f4694c593',1,'VW::workspace']]],
   ['no_5fcaching',['NO_CACHING',['../namespaceSearch.html#ac4845b2f404fb40ccda20dbbee8371ce',1,'Search']]],
   ['no_5fdaemon',['no_daemon',['../structVW_1_1workspace.html#a86b5d4674454d654f1c44eaa98ef4d6b',1,'VW::workspace']]],
-  ['no_5flabel_5fparser',['no_label_parser',['../namespaceno__label.html#ac83101e095dd622cb518eae12ab7c582',1,'no_label']]],
+  ['no_5flabel_5fparser_5fglobal',['no_label_parser_global',['../namespaceVW.html#aa71f40666bccceda6e7086826a217692',1,'VW']]],
   ['no_5fwin_5fcounter',['no_win_counter',['../structGD_1_1gd.html#a73947bf10e25c0d3daf6068eddd5d157',1,'GD::gd']]],
   ['node',['node',['../structVW_1_1all__reduce__base.html#ab0ccd9fa43add37522a1237d08759dfd',1,'VW::all_reduce_base']]],
   ['node_5fid',['node_id',['../structVW_1_1reductions_1_1cats_1_1node__cost.html#a3c2fc8aaa010296675329cc799d39e4c',1,'VW::reductions::cats::node_cost']]],

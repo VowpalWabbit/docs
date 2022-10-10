@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['n',['N',['../structVW_1_1reductions_1_1expreplay_1_1expreplay.html#a2563123c377deacbee6f4ec4fa5051e9',1,'VW::reductions::expreplay::expreplay::N()'],['../structVW_1_1distributionally__robust_1_1Duals.html#ad72686b6b792efe744a034674dc09847',1,'VW::distributionally_robust::Duals::n()']]],
+  ['n',['n',['../structVW_1_1distributionally__robust_1_1Duals.html#ad72686b6b792efe744a034674dc09847',1,'VW::distributionally_robust::Duals::n()'],['../structVW_1_1reductions_1_1expreplay_1_1expreplay.html#a2563123c377deacbee6f4ec4fa5051e9',1,'VW::reductions::expreplay::expreplay::N()']]],
   ['name',['name',['../structVW_1_1audit__strings.html#aeda51a335733a0481b53d8057c22fdf9',1,'VW::audit_strings::name()'],['../structdictionary__info.html#aafd5bfbc5290ad275067a8cf3397970a',1,'dictionary_info::name()'],['../structNamespace.html#a2344df6d1bc705fc8afa24b2c9c79f57',1,'Namespace::name()'],['../structBaseState.html#a675dcc2bdda01de5cde893e77a6116b1',1,'BaseState::name()'],['../structVW_1_1primitive__feature__space.html#a8f5b0342e8c1f8c6d6e5648d14894a59',1,'VW::primitive_feature_space::name()']]],
   ['named_5flabels',['named_labels',['../structVW_1_1named__labels.html',1,'VW::named_labels'],['../structVW_1_1named__labels.html#af54e798bcd0812a93175a682f528c7b3',1,'VW::named_labels::named_labels(std::string label_list)'],['../structVW_1_1named__labels.html#a7ae0f4fd5b1c03bf1ab262b8f28bc819',1,'VW::named_labels::named_labels(const named_labels &amp;other)'],['../structVW_1_1named__labels.html#af0e51d1a22463fc7c3184fe83b04618c',1,'VW::named_labels::named_labels(named_labels &amp;&amp;other) noexcept=delete']]],
   ['named_5flabels_2eh',['named_labels.h',['../named__labels_8h.html',1,'']]],
@@ -28,9 +28,9 @@ var searchData=
   ['no_5fbias',['no_bias',['../structVW_1_1workspace.html#a8d812b17f26a4ba7c5eab53f4694c593',1,'VW::workspace']]],
   ['no_5fcaching',['NO_CACHING',['../namespaceSearch.html#ac4845b2f404fb40ccda20dbbee8371ce',1,'Search']]],
   ['no_5fdaemon',['no_daemon',['../structVW_1_1workspace.html#a86b5d4674454d654f1c44eaa98ef4d6b',1,'VW::workspace']]],
-  ['no_5flabel',['no_label',['../namespaceno__label.html',1,'no_label'],['../namespaceno__label.html#a5134f3877944ee24987f5641bdbfbaa7',1,'no_label::no_label()']]],
+  ['no_5flabel',['no_label',['../namespaceno__label.html',1,'no_label'],['../namespaceVW.html#aea8d2ebbe4161eea72665049a79d59e5',1,'VW::no_label()']]],
   ['no_5flabel_2eh',['no_label.h',['../no__label_8h.html',1,'']]],
-  ['no_5flabel_5fparser',['no_label_parser',['../namespaceno__label.html#ac83101e095dd622cb518eae12ab7c582',1,'no_label']]],
+  ['no_5flabel_5fparser_5fglobal',['no_label_parser_global',['../namespaceVW.html#aa71f40666bccceda6e7086826a217692',1,'VW']]],
   ['no_5flock_5fobject_5fpool',['no_lock_object_pool',['../structVW_1_1no__lock__object__pool.html',1,'VW::no_lock_object_pool&lt; T, TInitializer, TCleanup &gt;'],['../structVW_1_1no__lock__object__pool.html#a55f60639f3260fab7a259890d83b6f0e',1,'VW::no_lock_object_pool::no_lock_object_pool()=default'],['../structVW_1_1no__lock__object__pool.html#a052f840458de1698921f7ab8af57e15f',1,'VW::no_lock_object_pool::no_lock_object_pool(size_t initial_chunk_size, TInitializer initializer={}, size_t chunk_size=8)']]],
   ['no_5flock_5fobject_5fpool_3c_20vw_3a_3aexample_2c_20default_5finitializer_3c_20vw_3a_3aexample_20_3e_2c_20default_5fcleanup_3c_20vw_3a_3aexample_20_3e_20_3e',['no_lock_object_pool&lt; VW::example, default_initializer&lt; VW::example &gt;, default_cleanup&lt; VW::example &gt; &gt;',['../structVW_1_1no__lock__object__pool.html',1,'VW']]],
   ['no_5fsanitize_5faddress',['NO_SANITIZE_ADDRESS',['../future__compat_8h.html#a69b1282ba1eedeb002fd3bb325d3570b',1,'future_compat.h']]],

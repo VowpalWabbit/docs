@@ -43,6 +43,7 @@ var searchData=
   ['is_5fallowed_5fto_5fremove',['is_allowed_to_remove',['../namespaceVW_1_1reductions_1_1automl.html#a143a8487b8ab3eb3a94fc9a3d9c32604',1,'VW::reductions::automl']]],
   ['is_5fcb_5fexplore_5fadf',['is_cb_explore_adf',['../structvw__slim_1_1vw__predict.html#a181a3da2b958c2bd94e89216f238758b',1,'vw_slim::vw_predict']]],
   ['is_5fchosen_5faction_5fset',['is_chosen_action_set',['../structVW_1_1continuous__actions_1_1reduction__features.html#a58f2153341949015b5c607ab1367af19',1,'VW::continuous_actions::reduction_features']]],
+  ['is_5fcs_5fexample_5fheader',['is_cs_example_header',['../namespaceVW.html#a421dd28dfefe37a3130d7da6eb3bb68b',1,'VW']]],
   ['is_5fcsoaa_5fldf',['is_csoaa_ldf',['../structvw__slim_1_1vw__predict.html#a9ba24efc479976aba999477520115862',1,'vw_slim::vw_predict']]],
   ['is_5fempty',['is_empty',['../structVW_1_1audit__strings.html#abf44d6c1c4c915b4f0d711424fdda57b',1,'VW::audit_strings']]],
   ['is_5ffrom_5fpool',['is_from_pool',['../structVW_1_1no__lock__object__pool.html#aabbcac9bc7ab6bec5de4f667f8863339',1,'VW::no_lock_object_pool::is_from_pool()'],['../structVW_1_1object__pool.html#a466b8aee57b8330deb321b038c6b654a',1,'VW::object_pool::is_from_pool()']]],

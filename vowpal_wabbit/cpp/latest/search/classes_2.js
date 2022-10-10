@@ -31,6 +31,8 @@ var searchData=
   ['continuous_5flabel',['continuous_label',['../structVW_1_1cb__continuous_1_1continuous__label.html',1,'VW::cb_continuous']]],
   ['continuous_5flabel_5felm',['continuous_label_elm',['../structVW_1_1cb__continuous_1_1continuous__label__elm.html',1,'VW::cb_continuous']]],
   ['cressieread_5festimator',['cressieread_estimator',['../structVW_1_1cressieread__estimator.html',1,'VW']]],
+  ['cs_5fclass',['cs_class',['../structVW_1_1cs__class.html',1,'VW']]],
+  ['cs_5flabel',['cs_label',['../structVW_1_1cs__label.html',1,'VW']]],
   ['csv_5fparser',['csv_parser',['../structVW_1_1parsers_1_1csv__parser.html',1,'VW::parsers']]],
   ['csv_5fparser_5foptions',['csv_parser_options',['../structVW_1_1parsers_1_1csv__parser__options.html',1,'VW::parsers']]]
 ];

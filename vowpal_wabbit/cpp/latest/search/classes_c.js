@@ -10,6 +10,7 @@ var searchData=
   ['model_5fweight_5frand_5fsvd_5fimpl',['model_weight_rand_svd_impl',['../structVW_1_1cb__explore__adf_1_1model__weight__rand__svd__impl.html',1,'VW::cb_explore_adf']]],
   ['moved_5fobject_5fpool',['moved_object_pool',['../structVW_1_1moved__object__pool.html',1,'VW']]],
   ['moved_5fobject_5fpool_3c_20interactions_3a_3aextent_5finteraction_5fexpansion_5fstack_5fitem_20_3e',['moved_object_pool&lt; INTERACTIONS::extent_interaction_expansion_stack_item &gt;',['../structVW_1_1moved__object__pool.html',1,'VW']]],
+  ['multiclass_5flabel',['multiclass_label',['../structVW_1_1multiclass__label.html',1,'VW']]],
   ['multipredict_5finfo',['multipredict_info',['../structGD_1_1multipredict__info.html',1,'GD']]],
   ['multistate',['MultiState',['../structMultiState.html',1,'']]]
 ];

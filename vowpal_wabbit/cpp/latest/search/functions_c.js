@@ -28,6 +28,7 @@ var searchData=
   ['move_5ffeature_5fnamespace',['move_feature_namespace',['../namespaceVW.html#ab9e00af55935c42d32d1c2c5c244150e',1,'VW']]],
   ['move_5foffsets',['move_offsets',['../structdense__parameters.html#a0809b7f606ffd6681d2ef69b34fd1472',1,'dense_parameters']]],
   ['moved_5fobject_5fpool',['moved_object_pool',['../structVW_1_1moved__object__pool.html#a576da638798a649601d6c423a497a998',1,'VW::moved_object_pool']]],
+  ['multiclass_5flabel',['multiclass_label',['../structVW_1_1multiclass__label.html#a94ab5c4e42fcb69ec3c1c66e0e34654e',1,'VW::multiclass_label::multiclass_label()'],['../structVW_1_1multiclass__label.html#a399250eb9798fb9aba549dda7ed11d13',1,'VW::multiclass_label::multiclass_label(uint32_t label, float weight)']]],
   ['multiclass_5fpred_5fto_5fstring',['multiclass_pred_to_string',['../namespaceVW_1_1debug.html#a9c0a9968718373271b11fb4f69a94382',1,'VW::debug']]],
   ['multilabel_5foaa_5fsetup',['multilabel_oaa_setup',['../namespaceVW_1_1reductions.html#a67f6c10668d890000101032e5b60b244',1,'VW::reductions']]],
   ['multiline_5flearn_5for_5fpredict',['multiline_learn_or_predict',['../namespaceVW_1_1LEARNER.html#ae567a4278ece0021d1272d708e25b749',1,'VW::LEARNER']]],

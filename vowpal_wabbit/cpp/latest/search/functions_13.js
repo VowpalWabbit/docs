@@ -4,7 +4,7 @@ var searchData=
   ['takedown',['takedown',['../namespaceGraphTask.html#adc3459a1c28beacb61d3d164b1b9f3c4',1,'GraphTask::takedown()'],['../namespaceSequenceSpanTask.html#a71802c71668faa68bc865f11f9f483f9',1,'SequenceSpanTask::takedown()']]],
   ['term_5fis_5fempty',['term_is_empty',['../namespaceINTERACTIONS.html#a08c43dcfb18bad357afa0e576b7f7404',1,'INTERACTIONS']]],
   ['test_5fadf_5fsequence',['test_adf_sequence',['../namespaceCB__ADF.html#ae983436306ba050ec90665b5558cf92b',1,'CB_ADF']]],
-  ['test_5flabel',['test_label',['../namespaceMULTICLASS.html#a95cadbeb4fe6dfe01342045d68b130f0',1,'MULTICLASS']]],
+  ['test_5fmulticlass_5flabel',['test_multiclass_label',['../namespaceVW.html#af052c4d9c5eb2817367ee6e79048efb7',1,'VW']]],
   ['textstate',['TextState',['../structTextState.html#a7b198588c0209d4a4166953cc341538f',1,'TextState']]],
   ['thread_5fpool',['thread_pool',['../structVW_1_1thread__pool.html#a013f6a1a4a8dd9fcda65671eade5cd5c',1,'VW::thread_pool']]],
   ['thread_5fsafe_5fqueue',['thread_safe_queue',['../structVW_1_1thread__safe__queue.html#ade21f65807e60b61bf09e08290422625',1,'VW::thread_safe_queue']]],

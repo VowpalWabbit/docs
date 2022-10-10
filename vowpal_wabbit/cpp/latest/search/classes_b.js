@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['label',['label',['../structCB_1_1label.html',1,'CB::label'],['../structCB__EVAL_1_1label.html',1,'CB_EVAL::label'],['../structVW_1_1slates_1_1label.html',1,'VW::slates::label'],['../structCOST__SENSITIVE_1_1label.html',1,'COST_SENSITIVE::label']]],
+  ['label',['label',['../structCB_1_1label.html',1,'CB::label'],['../structCB__EVAL_1_1label.html',1,'CB_EVAL::label'],['../structVW_1_1slates_1_1label.html',1,'VW::slates::label']]],
   ['label_5fparser',['label_parser',['../structVW_1_1label__parser.html',1,'VW']]],
   ['label_5fparser_5freuse_5fmem',['label_parser_reuse_mem',['../structVW_1_1label__parser__reuse__mem.html',1,'VW']]],
-  ['label_5ft',['label_t',['../structMULTICLASS_1_1label__t.html',1,'MULTICLASS']]],
   ['labelindexstate',['LabelIndexState',['../structLabelIndexState.html',1,'']]],
   ['labelobjectstate',['LabelObjectState',['../structLabelObjectState.html',1,'']]],
   ['labels',['labels',['../structMULTILABEL_1_1labels.html',1,'MULTILABEL']]],

@@ -29,7 +29,7 @@ var searchData=
   ['shrink_5ffact_5fconfig',['shrink_fact_config',['../structVW_1_1cb__explore__adf_1_1cb__explore__adf__large__action__space.html#a7888257b1d455e63ec0a4585f7198daf',1,'VW::cb_explore_adf::cb_explore_adf_large_action_space']]],
   ['shrink_5ffactors',['shrink_factors',['../structVW_1_1cb__explore__adf_1_1cb__explore__adf__large__action__space.html#a0dbe3ea037c819206800d4c631bb14f9',1,'VW::cb_explore_adf::cb_explore_adf_large_action_space']]],
   ['simple',['simple',['../structVW_1_1polylabel.html#ab02124c29bd97531446fea67dfcf1eaa',1,'VW::polylabel']]],
-  ['simple_5flabel_5fparser',['simple_label_parser',['../simple__label__parser_8h.html#acbb92378600bf33b817d526dc158c891',1,'simple_label_parser.h']]],
+  ['simple_5flabel_5fparser_5fglobal',['simple_label_parser_global',['../namespaceVW.html#ac1bfe7832e800f16cebfa847945472d6',1,'VW']]],
   ['skip_5fgram_5ftransformer',['skip_gram_transformer',['../structVW_1_1workspace.html#ad441ca13e9cf4a5f4395a2e3030cb04b',1,'VW::workspace']]],
   ['skiplearn',['skipLearn',['../structDecisionServiceInteraction.html#a939a412554f4bb0d03bb9886557d52cc',1,'DecisionServiceInteraction']]],
   ['slates',['slates',['../structVW_1_1polylabel.html#ab294bfaa4829c083078019390ff488bf',1,'VW::polylabel']]],

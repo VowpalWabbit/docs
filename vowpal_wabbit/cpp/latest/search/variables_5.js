@@ -6,7 +6,7 @@ var searchData=
   ['ecs',['ecs',['../structVW_1_1reductions_1_1cbify__adf__data.html#a5c2a336a1f69c6ec0a220f32c5babb31',1,'VW::reductions::cbify_adf_data']]],
   ['elements',['elements',['../structVW_1_1reductions_1_1automl_1_1ns__based__config.html#ab5231b31fc6f34aca8f6b2bece8425d4',1,'VW::reductions::automl::ns_based_config']]],
   ['eligible_5fto_5finactivate',['eligible_to_inactivate',['../structVW_1_1reductions_1_1automl_1_1aml__estimator.html#a5a7df0c71be5ffa2de6b39f0eeca3e3a',1,'VW::reductions::automl::aml_estimator']]],
-  ['empty',['empty',['../structVW_1_1polylabel.html#aad94f021d3a591bc7daf7f4de5d77d2c',1,'VW::polylabel']]],
+  ['empty',['empty',['../structVW_1_1polylabel.html#a72a917f91ef6b6e5733b84a9e0202d13',1,'VW::polylabel']]],
   ['empty_5faudit_5fstrings',['EMPTY_AUDIT_STRINGS',['../interactions__predict_8h.html#a92ee22947e48ebc245853352f43c5c79',1,'interactions_predict.h']]],
   ['empty_5fversion_5ffile',['EMPTY_VERSION_FILE',['../namespaceVW_1_1version__definitions.html#ab18b47007e482b7941289af58dc13a55',1,'VW::version_definitions']]],
   ['emptylines_5fseparate_5fexamples',['emptylines_separate_examples',['../structparser.html#a751fa0c146800b9ab19e9db245d16994',1,'parser']]],

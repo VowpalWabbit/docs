@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['ec_5fis_5fexample_5fheader',['ec_is_example_header',['../namespaceCB.html#ae4c1d8872c981abd321b7b6c1588eb6a',1,'CB::ec_is_example_header()'],['../namespaceCOST__SENSITIVE.html#a61dbf3b8e84940c0872fa6b7061405d4',1,'COST_SENSITIVE::ec_is_example_header()'],['../namespaceVW_1_1LEARNER.html#a8244fb35744a4bc42e3d3141d650b68d',1,'VW::LEARNER::ec_is_example_header()'],['../namespaceVW_1_1reductions_1_1ccb.html#a009a678db8f7de15cfaa5a103c009d30',1,'VW::reductions::ccb::ec_is_example_header()']]],
+  ['ec_5fis_5fexample_5fheader',['ec_is_example_header',['../namespaceCB.html#ae4c1d8872c981abd321b7b6c1588eb6a',1,'CB::ec_is_example_header()'],['../namespaceVW_1_1LEARNER.html#a8244fb35744a4bc42e3d3141d650b68d',1,'VW::LEARNER::ec_is_example_header()'],['../namespaceVW_1_1reductions_1_1ccb.html#a009a678db8f7de15cfaa5a103c009d30',1,'VW::reductions::ccb::ec_is_example_header()']]],
   ['ec_5fis_5fexample_5funset',['ec_is_example_unset',['../namespaceVW_1_1reductions_1_1ccb.html#a6c5d3fdfce3d92b10f822ab50cd9fb51',1,'VW::reductions::ccb']]],
   ['ect_5fsetup',['ect_setup',['../namespaceVW_1_1reductions.html#a2505d57b6d31a382cd99dab6b7736fc5',1,'VW::reductions']]],
   ['effn',['effn',['../structVW_1_1distributionally__robust_1_1ChiSquared.html#a54fc689e79a1b3cfc35740a6cfe0fa16',1,'VW::distributionally_robust::ChiSquared']]],

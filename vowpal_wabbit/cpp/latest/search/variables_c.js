@@ -3,7 +3,7 @@ var searchData=
   ['l',['l',['../structVW_1_1example.html#adfcc771a9e46a65130c9dcf8b18870e6',1,'VW::example::l()'],['../structVW_1_1flat__example.html#ac06ce4e30446607fac19572a00011d19',1,'VW::flat_example::l()'],['../structVW_1_1workspace.html#aeecce10973024deaf9ea0a4b4b144606',1,'VW::workspace::l()']]],
   ['l1_5flambda',['l1_lambda',['../structVW_1_1workspace.html#ae7797a50d730e07c4310a0d6826abf01',1,'VW::workspace']]],
   ['l2_5flambda',['l2_lambda',['../structVW_1_1workspace.html#a0892885d065a4eef0f904e8228d57d14',1,'VW::workspace']]],
-  ['label',['label',['../structMULTICLASS_1_1label__t.html#aa8b080653e3c08b5363152009728453d',1,'MULTICLASS::label_t::label()'],['../structVW_1_1simple__label.html#af2f88a3333bda3371519564b725df551',1,'VW::simple_label::label()']]],
+  ['label',['label',['../structVW_1_1multiclass__label.html#ad60261e4c5e6d9f19557536c432def79',1,'VW::multiclass_label::label()'],['../structVW_1_1simple__label.html#af2f88a3333bda3371519564b725df551',1,'VW::simple_label::label()']]],
   ['label_5faction_5ffirst_5foption',['label_action_first_option',['../structVW_1_1cb__explore__adf_1_1cb__explore__metrics.html#a6a7c1667355f42eb8d642d13955145f8',1,'VW::cb_explore_adf::cb_explore_metrics']]],
   ['label_5faction_5fnot_5ffirst',['label_action_not_first',['../structVW_1_1cb__explore__adf_1_1cb__explore__metrics.html#a29bc83ce95727c722647bbfbe08994f5',1,'VW::cb_explore_adf::cb_explore_metrics']]],
   ['label_5findex_5fstate',['label_index_state',['../structContext.html#a679ab3d8b198ccddba2ecc998480ba7f',1,'Context']]],
