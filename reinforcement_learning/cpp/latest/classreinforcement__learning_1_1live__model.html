@@ -121,6 +121,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3b0cc3316c1ca4ad1733e9d428d34126"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreinforcement__learning_1_1live__model.html#a3b0cc3316c1ca4ad1733e9d428d34126">live_model</a> (const <a class="el" href="classreinforcement__learning_1_1utility_1_1configuration.html">utility::configuration</a> &amp;config, <a class="el" href="classreinforcement__learning_1_1live__model.html#a00e64d8e13e96c8da8f2ff4870df5a94">error_fn</a> fn=nullptr, void *err_context=nullptr, trace_logger_factory_t *trace_factory=&amp;trace_logger_factory, data_transport_factory_t *t_factory=&amp;data_transport_factory, model_factory_t *m_factory=&amp;model_factory, sender_factory_t *s_factory=&amp;sender_factory, time_provider_factory_t *time_prov_factory=&amp;time_provider_factory)</td></tr>
 <tr class="memdesc:a3b0cc3316c1ca4ad1733e9d428d34126"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new live model object.  <a href="classreinforcement__learning_1_1live__model.html#a3b0cc3316c1ca4ad1733e9d428d34126">More...</a><br /></td></tr>
 <tr class="separator:a3b0cc3316c1ca4ad1733e9d428d34126"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad468c6c4217d9f77b357145290eb2178"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreinforcement__learning_1_1live__model.html#ad468c6c4217d9f77b357145290eb2178">live_model</a> (const <a class="el" href="classreinforcement__learning_1_1utility_1_1configuration.html">utility::configuration</a> &amp;config, std::function&lt; void(const <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> &amp;)&gt; error_cb, trace_logger_factory_t *trace_factory=&amp;trace_logger_factory, data_transport_factory_t *t_factory=&amp;data_transport_factory, model_factory_t *m_factory=&amp;model_factory, sender_factory_t *s_factory=&amp;sender_factory, time_provider_factory_t *time_prov_factory=&amp;time_provider_factory)</td></tr>
+<tr class="memdesc:ad468c6c4217d9f77b357145290eb2178"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new live model object.  <a href="classreinforcement__learning_1_1live__model.html#ad468c6c4217d9f77b357145290eb2178">More...</a><br /></td></tr>
+<tr class="separator:ad468c6c4217d9f77b357145290eb2178"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58d9f7ad5148b12aa4e6e6c02f324276"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreinforcement__learning_1_1live__model.html#a58d9f7ad5148b12aa4e6e6c02f324276">init</a> (<a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
 <tr class="memdesc:a58d9f7ad5148b12aa4e6e6c02f324276"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize inference library. Initialize the library and start the background threads used for model managment and sending actions and outcomes to the online trainer.  <a href="classreinforcement__learning_1_1live__model.html#a58d9f7ad5148b12aa4e6e6c02f324276">More...</a><br /></td></tr>
 <tr class="separator:a58d9f7ad5148b12aa4e6e6c02f324276"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -217,10 +220,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>request_episodic_decis
 <tr class="memitem:aa51b579ebc21fdcde6e1dc96033c141a"><td class="memItemLeft" align="right" valign="top"><a id="aa51b579ebc21fdcde6e1dc96033c141a"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>refresh_model</b> (<a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> *status=nullptr)</td></tr>
 <tr class="separator:aa51b579ebc21fdcde6e1dc96033c141a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70f338ea9c2971d0b5ce35fd8a031c52"><td class="memTemplParams" colspan="2">template&lt;typename ErrCntxt &gt; </td></tr>
-<tr class="memitem:a70f338ea9c2971d0b5ce35fd8a031c52"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classreinforcement__learning_1_1live__model.html#a70f338ea9c2971d0b5ce35fd8a031c52">live_model</a> (const <a class="el" href="classreinforcement__learning_1_1utility_1_1configuration.html">utility::configuration</a> &amp;config, <a class="el" href="classreinforcement__learning_1_1live__model.html#a510b680448e093434434cd5051c7a599">error_fn_t</a>&lt; ErrCntxt &gt; fn=nullptr, ErrCntxt *err_context=nullptr, trace_logger_factory_t *trace_factory=&amp;trace_logger_factory, data_transport_factory_t *t_factory=&amp;data_transport_factory, model_factory_t *m_factory=&amp;model_factory, sender_factory_t *s_factory=&amp;sender_factory, time_provider_factory_t *time_prov_factory=&amp;time_provider_factory)</td></tr>
-<tr class="memdesc:a70f338ea9c2971d0b5ce35fd8a031c52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new live model object.  <a href="classreinforcement__learning_1_1live__model.html#a70f338ea9c2971d0b5ce35fd8a031c52">More...</a><br /></td></tr>
-<tr class="separator:a70f338ea9c2971d0b5ce35fd8a031c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a844e2aa3867bf188e85e18a21af57829"><td class="memTemplParams" colspan="2">template&lt;typename ErrCntxt &gt; </td></tr>
+<tr class="memitem:a844e2aa3867bf188e85e18a21af57829"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classreinforcement__learning_1_1live__model.html#a844e2aa3867bf188e85e18a21af57829">live_model</a> (const <a class="el" href="classreinforcement__learning_1_1utility_1_1configuration.html">utility::configuration</a> &amp;config, <a class="el" href="classreinforcement__learning_1_1live__model.html#a510b680448e093434434cd5051c7a599">error_fn_t</a>&lt; ErrCntxt &gt; fn, ErrCntxt *err_context=nullptr, trace_logger_factory_t *trace_factory=&amp;trace_logger_factory, data_transport_factory_t *t_factory=&amp;data_transport_factory, model_factory_t *m_factory=&amp;model_factory, sender_factory_t *s_factory=&amp;sender_factory, time_provider_factory_t *time_prov_factory=&amp;time_provider_factory)</td></tr>
+<tr class="memdesc:a844e2aa3867bf188e85e18a21af57829"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new live model object.  <a href="classreinforcement__learning_1_1live__model.html#a844e2aa3867bf188e85e18a21af57829">More...</a><br /></td></tr>
+<tr class="separator:a844e2aa3867bf188e85e18a21af57829"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46791dd77ceee589993c150d92b605ab"><td class="memItemLeft" align="right" valign="top"><a id="a46791dd77ceee589993c150d92b605ab"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classreinforcement__learning_1_1live__model.html#a46791dd77ceee589993c150d92b605ab">live_model</a> (<a class="el" href="classreinforcement__learning_1_1live__model.html">live_model</a> &amp;&amp;other) noexcept</td></tr>
 <tr class="memdesc:a46791dd77ceee589993c150d92b605ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move constructor for live model object. <br /></td></tr>
@@ -292,7 +295,7 @@ template&lt;typename ErrCntxt &gt; </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3b0cc3316c1ca4ad1733e9d428d34126"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b0cc3316c1ca4ad1733e9d428d34126">&#9670;&nbsp;</a></span>live_model() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b0cc3316c1ca4ad1733e9d428d34126">&#9670;&nbsp;</a></span>live_model() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -376,8 +379,86 @@ template&lt;typename ErrCntxt &gt; </div>
 
 </div>
 </div>
-<a id="a70f338ea9c2971d0b5ce35fd8a031c52"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70f338ea9c2971d0b5ce35fd8a031c52">&#9670;&nbsp;</a></span>live_model() <span class="overload">[2/2]</span></h2>
+<a id="ad468c6c4217d9f77b357145290eb2178"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad468c6c4217d9f77b357145290eb2178">&#9670;&nbsp;</a></span>live_model() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">reinforcement_learning::live_model::live_model </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classreinforcement__learning_1_1utility_1_1configuration.html">utility::configuration</a> &amp;&#160;</td>
+          <td class="paramname"><em>config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; void(const <a class="el" href="classreinforcement__learning_1_1api__status.html">api_status</a> &amp;)&gt;&#160;</td>
+          <td class="paramname"><em>error_cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">trace_logger_factory_t *&#160;</td>
+          <td class="paramname"><em>trace_factory</em> = <code>&amp;trace_logger_factory</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">data_transport_factory_t *&#160;</td>
+          <td class="paramname"><em>t_factory</em> = <code>&amp;data_transport_factory</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">model_factory_t *&#160;</td>
+          <td class="paramname"><em>m_factory</em> = <code>&amp;model_factory</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sender_factory_t *&#160;</td>
+          <td class="paramname"><em>s_factory</em> = <code>&amp;sender_factory</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">time_provider_factory_t *&#160;</td>
+          <td class="paramname"><em>time_prov_factory</em> = <code>&amp;time_provider_factory</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a new live model object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">config</td><td>Name-Value based configuration </td></tr>
+    <tr><td class="paramname">error_cb</td><td>Error callback that takes no context </td></tr>
+    <tr><td class="paramname">t_factory</td><td>Transport factory. The default transport factory is initialized with a REST based transport that gets data from an Azure storage account </td></tr>
+    <tr><td class="paramname">m_factory</td><td>Model factory. The default model factory hydrates vw models used for local inference. </td></tr>
+    <tr><td class="paramname">sender_factory</td><td>Sender factory. The default factory provides two senders, one for interaction and the other for observation which logs to Event Hub. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a844e2aa3867bf188e85e18a21af57829"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a844e2aa3867bf188e85e18a21af57829">&#9670;&nbsp;</a></span>live_model() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -397,7 +478,7 @@ template&lt;typename ErrCntxt &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classreinforcement__learning_1_1live__model.html#a510b680448e093434434cd5051c7a599">error_fn_t</a>&lt; ErrCntxt &gt;&#160;</td>
-          <td class="paramname"><em>fn</em> = <code>nullptr</code>, </td>
+          <td class="paramname"><em>fn</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
