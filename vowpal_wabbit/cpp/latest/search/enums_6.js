@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['prediction_5ftype_5ft',['prediction_type_t',['../namespaceVW.html#a4f76045a06b3efe3c5c612b777b6c836',1,'VW']]]
+  ['wrap_5ftype_4653',['wrap_type',['../namespaceVW.html#a2df9a38d00dfa94b1694b2a6d8a7f225',1,'VW']]]
 ];

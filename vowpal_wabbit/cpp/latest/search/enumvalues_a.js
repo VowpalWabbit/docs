@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['pdf',['pdf',['../namespaceVW.html#a4f76045a06b3efe3c5c612b777b6c836a437175ba4191210ee004e1d937494d09',1,'VW']]],
-  ['prob',['prob',['../namespaceVW.html#a4f76045a06b3efe3c5c612b777b6c836a385e54735cbf7e164d5ca45c7419d3a9',1,'VW']]]
+  ['right_4686',['right',['../namespaceVW.html#a25419f1c421a5d40806d2e0636eb7bdba7c4f29407893c334a6cb7a87bf045c0d',1,'VW']]]
 ];

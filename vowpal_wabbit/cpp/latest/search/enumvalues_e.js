@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['unset',['unset',['../namespaceVW_1_1slates.html#a894cb7b1b775c40313bbb5e1c4b48a50ae2181b5014a67159cc230c8fe0d6c5b6',1,'VW::slates::unset()'],['../namespaceVW.html#a596fabd45fcdfed3154eb263d035f069a666a87025ab0d8965e221050c8948001',1,'VW::UNSET()']]]
+  ['warn_4700',['warn',['../namespaceVW_1_1io.html#aaf6d3dfe9781b53c9fbc2908a8f0641ca1ea4c3ab05ee0c6d4de30740443769cb',1,'VW::io']]],
+  ['wrap_5fchar_4701',['wrap_char',['../namespaceVW.html#a2df9a38d00dfa94b1694b2a6d8a7f225aa18f1925a241b0238b3728ca0b400a74',1,'VW']]],
+  ['wrap_5fspace_4702',['wrap_space',['../namespaceVW.html#a2df9a38d00dfa94b1694b2a6d8a7f225abe98e7b80cc11a14facfdc37c99d4ca0',1,'VW']]]
 ];
