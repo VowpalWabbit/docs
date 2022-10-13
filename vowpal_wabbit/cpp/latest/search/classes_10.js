@@ -1,8 +1,25 @@
 var searchData=
 [
-  ['rand_5fstate_2445',['rand_state',['../classVW_1_1rand__state.html',1,'VW']]],
-  ['reader_2446',['reader',['../classVW_1_1io_1_1reader.html',1,'VW::io']]],
-  ['reduction_5ffeatures_2447',['reduction_features',['../classVW_1_1generated__interactions_1_1reduction__features.html',1,'VW::generated_interactions::reduction_features'],['../classVW_1_1reduction__features.html',1,'VW::reduction_features'],['../classVW_1_1continuous__actions_1_1reduction__features.html',1,'VW::continuous_actions::reduction_features'],['../classVW_1_1cb__explore__adf_1_1greedy_1_1reduction__features.html',1,'VW::cb_explore_adf::greedy::reduction_features']]],
-  ['reduction_5flearner_5fbuilder_2448',['reduction_learner_builder',['../classVW_1_1LEARNER_1_1reduction__learner__builder.html',1,'VW::LEARNER']]],
-  ['reduction_5fno_5fdata_5flearner_5fbuilder_2449',['reduction_no_data_learner_builder',['../classVW_1_1LEARNER_1_1reduction__no__data__learner__builder.html',1,'VW::LEARNER']]]
+  ['save_5fload_5fdata_2317',['save_load_data',['../classVW_1_1LEARNER_1_1details_1_1save__load__data.html',1,'VW::LEARNER::details']]],
+  ['save_5fload_5fmodel_5fexception_2318',['save_load_model_exception',['../classVW_1_1save__load__model__exception.html',1,'VW']]],
+  ['save_5fmetric_5fdata_2319',['save_metric_data',['../classVW_1_1LEARNER_1_1details_1_1save__metric__data.html',1,'VW::LEARNER::details']]],
+  ['scope_5fexit_5fcaller_2320',['scope_exit_caller',['../classVW_1_1details_1_1scope__exit__caller.html',1,'VW::details']]],
+  ['search_2321',['search',['../classSearch_1_1search.html',1,'Search']]],
+  ['search_5fmetatask_2322',['search_metatask',['../classSearch_1_1search__metatask.html',1,'Search']]],
+  ['search_5ftask_2323',['search_task',['../classSearch_1_1search__task.html',1,'Search']]],
+  ['sensitivity_5fdata_2324',['sensitivity_data',['../classVW_1_1LEARNER_1_1details_1_1sensitivity__data.html',1,'VW::LEARNER::details']]],
+  ['setup_5fbase_5fi_2325',['setup_base_i',['../classVW_1_1setup__base__i.html',1,'VW']]],
+  ['shared_5fdata_2326',['shared_data',['../classshared__data.html',1,'']]],
+  ['simple_5flabel_2327',['simple_label',['../classVW_1_1simple__label.html',1,'VW']]],
+  ['simple_5flabel_5freduction_5ffeatures_2328',['simple_label_reduction_features',['../classVW_1_1simple__label__reduction__features.html',1,'VW']]],
+  ['slates_5fdata_2329',['slates_data',['../classVW_1_1reductions_1_1slates__data.html',1,'VW::reductions']]],
+  ['socket_2330',['socket',['../classVW_1_1io_1_1socket.html',1,'VW::io']]],
+  ['socket_5fcloser_2331',['socket_closer',['../classVW_1_1io_1_1details_1_1socket__closer.html',1,'VW::io::details']]],
+  ['spanningtree_2332',['SpanningTree',['../classVW_1_1SpanningTree.html',1,'VW']]],
+  ['sparse_5fiterator_2333',['sparse_iterator',['../classsparse__iterator.html',1,'']]],
+  ['sparse_5fparameters_2334',['sparse_parameters',['../classsparse__parameters.html',1,'']]],
+  ['status_5fbuilder_2335',['status_builder',['../classVW_1_1experimental_1_1status__builder.html',1,'VW::experimental']]],
+  ['strict_5fparse_5fexception_2336',['strict_parse_exception',['../classVW_1_1strict__parse__exception.html',1,'VW']]],
+  ['swap_5fguard_5fimpl_2337',['swap_guard_impl',['../classVW_1_1details_1_1swap__guard__impl.html',1,'VW::details']]],
+  ['swap_5fguard_5fimpl_5frvalue_2338',['swap_guard_impl_rvalue',['../classVW_1_1details_1_1swap__guard__impl__rvalue.html',1,'VW::details']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['json_5fparser_2387',['json_parser',['../classjson__parser.html',1,'']]]
+  ['kskip_5fngram_5ftransformer_2260',['kskip_ngram_transformer',['../classVW_1_1kskip__ngram__transformer.html',1,'VW']]]
 ];

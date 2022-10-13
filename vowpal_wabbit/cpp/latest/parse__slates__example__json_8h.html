@@ -103,208 +103,39 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="future__compat_8h.html">vw/common/future_compat.h</a>&quot;</code><br />
-<code>#include &lt;rapidjson/document.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="json__utils_8h.html">json_utils.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="example_8h.html">vw/core/example.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="hashstring_8h.html">vw/core/hashstring.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="json__utils_8h.html">vw/core/json_utils.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="label__parser_8h.html">vw/core/label_parser.h</a>&quot;</code><br />
+<code>#include &lt;unordered_map&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a23dbf6d24901b2a77e4dea37c7775d38"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parse__slates__example__json_8h.html#a23dbf6d24901b2a77e4dea37c7775d38">get_number</a> (const rapidjson::Value &amp;value)</td></tr>
-<tr class="separator:a23dbf6d24901b2a77e4dea37c7775d38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8aa996ba6ebd4f7297d16c0b28e405c4"><td class="memTemplParams" colspan="2">template&lt;bool audit&gt; </td></tr>
-<tr class="memitem:a8aa996ba6ebd4f7297d16c0b28e405c4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="parse__slates__example__json_8h.html#a8aa996ba6ebd4f7297d16c0b28e405c4">handle_features_value</a> (const char *key_namespace, const Value &amp;value, <a class="el" href="classVW_1_1example.html">VW::example</a> *current_example, std::vector&lt; <a class="el" href="classNamespace.html">Namespace</a>&lt; audit &gt;&gt; &amp;namespaces, <a class="el" href="hashstring_8h.html#a77dae8dac3c33439a15f7270f64cff8c">hash_func_t</a> hash_func, uint64_t hash_seed, uint64_t parse_mask, bool chain_hash)</td></tr>
-<tr class="separator:a8aa996ba6ebd4f7297d16c0b28e405c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff88543a0d7f47248b54770cfd89858c"><td class="memTemplParams" colspan="2">template&lt;bool audit&gt; </td></tr>
-<tr class="memitem:aff88543a0d7f47248b54770cfd89858c"><td class="memTemplItemLeft" align="right" valign="top">void <a class="el" href="future__compat_8h.html#aaf284e95bd2b735b9b87f108e94557e4">NO_SANITIZE_UNDEFINED</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="parse__slates__example__json_8h.html#aff88543a0d7f47248b54770cfd89858c">parse_context</a> (const Value &amp;context, const <a class="el" href="classVW_1_1label__parser.html">VW::label_parser</a> &amp;lbl_parser, <a class="el" href="hashstring_8h.html#a77dae8dac3c33439a15f7270f64cff8c">hash_func_t</a> hash_func, uint64_t hash_seed, uint64_t parse_mask, bool chain_hash, <a class="el" href="namespaceVW.html#a505a6662876c6cba2fcdebb6d21ebbd2">VW::multi_ex</a> &amp;examples, <a class="el" href="namespaceVW.html#a28e15f52840539d6b0c56aa196e11278">VW::example_factory_t</a> example_factory, void *ex_factory_context, <a class="el" href="namespaceVW.html#a505a6662876c6cba2fcdebb6d21ebbd2">VW::multi_ex</a> &amp;slot_examples, std::unordered_map&lt; uint64_t, <a class="el" href="classVW_1_1example.html">VW::example</a> * &gt; *dedup_examples=nullptr)</td></tr>
-<tr class="separator:aff88543a0d7f47248b54770cfd89858c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55c1f3163eb9002c5ee3c5e00b048d8c"><td class="memTemplParams" colspan="2">template&lt;bool audit&gt; </td></tr>
-<tr class="memitem:a55c1f3163eb9002c5ee3c5e00b048d8c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="parse__slates__example__json_8h.html#a55c1f3163eb9002c5ee3c5e00b048d8c">parse_slates_example_json</a> (const <a class="el" href="classVW_1_1label__parser.html">VW::label_parser</a> &amp;lbl_parser, <a class="el" href="hashstring_8h.html#a77dae8dac3c33439a15f7270f64cff8c">hash_func_t</a> hash_func, uint64_t hash_seed, uint64_t parse_mask, bool chain_hash, <a class="el" href="namespaceVW.html#a505a6662876c6cba2fcdebb6d21ebbd2">VW::multi_ex</a> &amp;examples, char *line, size_t, <a class="el" href="namespaceVW.html#a28e15f52840539d6b0c56aa196e11278">VW::example_factory_t</a> example_factory, void *ex_factory_context, std::unordered_map&lt; uint64_t, <a class="el" href="classVW_1_1example.html">VW::example</a> * &gt; *dedup_examples=nullptr)</td></tr>
-<tr class="separator:a55c1f3163eb9002c5ee3c5e00b048d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf1d45f6619d0248f662b634d6c0c8be"><td class="memTemplParams" colspan="2">template&lt;bool audit&gt; </td></tr>
-<tr class="memitem:aaf1d45f6619d0248f662b634d6c0c8be"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="parse__slates__example__json_8h.html#aaf1d45f6619d0248f662b634d6c0c8be">parse_slates_example_json</a> (const <a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, <a class="el" href="namespaceVW.html#a505a6662876c6cba2fcdebb6d21ebbd2">VW::multi_ex</a> &amp;examples, char *line, size_t, <a class="el" href="namespaceVW.html#a28e15f52840539d6b0c56aa196e11278">VW::example_factory_t</a> example_factory, void *ex_factory_context, std::unordered_map&lt; uint64_t, <a class="el" href="classVW_1_1example.html">VW::example</a> * &gt; *dedup_examples=nullptr)</td></tr>
-<tr class="separator:aaf1d45f6619d0248f662b634d6c0c8be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a43c284313a80c2a83478df4f12fbcc"><td class="memTemplParams" colspan="2">template&lt;bool audit&gt; </td></tr>
-<tr class="memitem:a9a43c284313a80c2a83478df4f12fbcc"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="parse__slates__example__json_8h.html#a9a43c284313a80c2a83478df4f12fbcc">parse_slates_example_dsjson</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, <a class="el" href="namespaceVW.html#a505a6662876c6cba2fcdebb6d21ebbd2">VW::multi_ex</a> &amp;examples, char *line, size_t, <a class="el" href="namespaceVW.html#a28e15f52840539d6b0c56aa196e11278">VW::example_factory_t</a> example_factory, void *ex_factory_context, <a class="el" href="classDecisionServiceInteraction.html">DecisionServiceInteraction</a> *data, std::unordered_map&lt; uint64_t, <a class="el" href="classVW_1_1example.html">VW::example</a> * &gt; *dedup_examples=nullptr)</td></tr>
-<tr class="separator:a9a43c284313a80c2a83478df4f12fbcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad728f0ac83d9408f3e590a4a5e678be"><td class="memTemplParams" colspan="2">template&lt;bool audit&gt; </td></tr>
+<tr class="memitem:aad728f0ac83d9408f3e590a4a5e678be"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="parse__slates__example__json_8h.html#aad728f0ac83d9408f3e590a4a5e678be">parse_slates_example_json</a> (const <a class="el" href="classVW_1_1label__parser.html">VW::label_parser</a> &amp;lbl_parser, <a class="el" href="hashstring_8h.html#a77dae8dac3c33439a15f7270f64cff8c">hash_func_t</a> hash_func, uint64_t hash_seed, uint64_t parse_mask, bool chain_hash, <a class="el" href="namespaceVW.html#a505a6662876c6cba2fcdebb6d21ebbd2">VW::multi_ex</a> &amp;examples, char *line, size_t length, <a class="el" href="namespaceVW.html#a28e15f52840539d6b0c56aa196e11278">VW::example_factory_t</a> example_factory, void *ex_factory_context, std::unordered_map&lt; uint64_t, <a class="el" href="classVW_1_1example.html">VW::example</a> * &gt; *dedup_examples=nullptr)</td></tr>
+<tr class="separator:aad728f0ac83d9408f3e590a4a5e678be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7d125e5c04bf92f5a70101b1a02b604"><td class="memTemplParams" colspan="2">template&lt;bool audit&gt; </td></tr>
+<tr class="memitem:ae7d125e5c04bf92f5a70101b1a02b604"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="parse__slates__example__json_8h.html#ae7d125e5c04bf92f5a70101b1a02b604">parse_slates_example_json</a> (const <a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, <a class="el" href="namespaceVW.html#a505a6662876c6cba2fcdebb6d21ebbd2">VW::multi_ex</a> &amp;examples, char *line, size_t length, <a class="el" href="namespaceVW.html#a28e15f52840539d6b0c56aa196e11278">VW::example_factory_t</a> example_factory, void *ex_factory_context, std::unordered_map&lt; uint64_t, <a class="el" href="classVW_1_1example.html">VW::example</a> * &gt; *dedup_examples=nullptr)</td></tr>
+<tr class="separator:ae7d125e5c04bf92f5a70101b1a02b604"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa62852a5cfc97e68a92656d1e54dcffe"><td class="memTemplParams" colspan="2">template&lt;bool audit&gt; </td></tr>
+<tr class="memitem:aa62852a5cfc97e68a92656d1e54dcffe"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="parse__slates__example__json_8h.html#aa62852a5cfc97e68a92656d1e54dcffe">parse_slates_example_dsjson</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, <a class="el" href="namespaceVW.html#a505a6662876c6cba2fcdebb6d21ebbd2">VW::multi_ex</a> &amp;examples, char *line, size_t length, <a class="el" href="namespaceVW.html#a28e15f52840539d6b0c56aa196e11278">VW::example_factory_t</a> example_factory, void *ex_factory_context, <a class="el" href="classDecisionServiceInteraction.html">DecisionServiceInteraction</a> *data, std::unordered_map&lt; uint64_t, <a class="el" href="classVW_1_1example.html">VW::example</a> * &gt; *dedup_examples=nullptr)</td></tr>
+<tr class="separator:aa62852a5cfc97e68a92656d1e54dcffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70afd38278e3d82b5336c6d74de7c29a"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parse__slates__example__json_8h.html#a70afd38278e3d82b5336c6d74de7c29a">parse_slates_example_json&lt; true &gt;</a> (const <a class="el" href="classVW_1_1label__parser.html">VW::label_parser</a> &amp;lbl_parser, <a class="el" href="hashstring_8h.html#a77dae8dac3c33439a15f7270f64cff8c">hash_func_t</a> hash_func, uint64_t hash_seed, uint64_t parse_mask, bool chain_hash, <a class="el" href="namespaceVW.html#a505a6662876c6cba2fcdebb6d21ebbd2">VW::multi_ex</a> &amp;examples, char *line, size_t length, <a class="el" href="namespaceVW.html#a28e15f52840539d6b0c56aa196e11278">VW::example_factory_t</a> example_factory, void *ex_factory_context, std::unordered_map&lt; uint64_t, <a class="el" href="classVW_1_1example.html">VW::example</a> * &gt; *dedup_examples)</td></tr>
+<tr class="separator:a70afd38278e3d82b5336c6d74de7c29a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1778fe876df3e072864dd1b92d35d30a"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parse__slates__example__json_8h.html#a1778fe876df3e072864dd1b92d35d30a">parse_slates_example_json&lt; false &gt;</a> (const <a class="el" href="classVW_1_1label__parser.html">VW::label_parser</a> &amp;lbl_parser, <a class="el" href="hashstring_8h.html#a77dae8dac3c33439a15f7270f64cff8c">hash_func_t</a> hash_func, uint64_t hash_seed, uint64_t parse_mask, bool chain_hash, <a class="el" href="namespaceVW.html#a505a6662876c6cba2fcdebb6d21ebbd2">VW::multi_ex</a> &amp;examples, char *line, size_t length, <a class="el" href="namespaceVW.html#a28e15f52840539d6b0c56aa196e11278">VW::example_factory_t</a> example_factory, void *ex_factory_context, std::unordered_map&lt; uint64_t, <a class="el" href="classVW_1_1example.html">VW::example</a> * &gt; *dedup_examples)</td></tr>
+<tr class="separator:a1778fe876df3e072864dd1b92d35d30a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefc4801170e48879e831941c332cd17d"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parse__slates__example__json_8h.html#aefc4801170e48879e831941c332cd17d">parse_slates_example_json&lt; true &gt;</a> (const <a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, <a class="el" href="namespaceVW.html#a505a6662876c6cba2fcdebb6d21ebbd2">VW::multi_ex</a> &amp;examples, char *line, size_t length, <a class="el" href="namespaceVW.html#a28e15f52840539d6b0c56aa196e11278">VW::example_factory_t</a> example_factory, void *ex_factory_context, std::unordered_map&lt; uint64_t, <a class="el" href="classVW_1_1example.html">VW::example</a> * &gt; *dedup_examples)</td></tr>
+<tr class="separator:aefc4801170e48879e831941c332cd17d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91e62fa9dae0346f6fd190b84392ea9b"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parse__slates__example__json_8h.html#a91e62fa9dae0346f6fd190b84392ea9b">parse_slates_example_json&lt; false &gt;</a> (const <a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, <a class="el" href="namespaceVW.html#a505a6662876c6cba2fcdebb6d21ebbd2">VW::multi_ex</a> &amp;examples, char *line, size_t length, <a class="el" href="namespaceVW.html#a28e15f52840539d6b0c56aa196e11278">VW::example_factory_t</a> example_factory, void *ex_factory_context, std::unordered_map&lt; uint64_t, <a class="el" href="classVW_1_1example.html">VW::example</a> * &gt; *dedup_examples)</td></tr>
+<tr class="separator:a91e62fa9dae0346f6fd190b84392ea9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefc28c2dbf61c29a2a3935bb7e747f56"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parse__slates__example__json_8h.html#aefc28c2dbf61c29a2a3935bb7e747f56">parse_slates_example_dsjson&lt; true &gt;</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, <a class="el" href="namespaceVW.html#a505a6662876c6cba2fcdebb6d21ebbd2">VW::multi_ex</a> &amp;examples, char *line, size_t length, <a class="el" href="namespaceVW.html#a28e15f52840539d6b0c56aa196e11278">VW::example_factory_t</a> example_factory, void *ex_factory_context, <a class="el" href="classDecisionServiceInteraction.html">DecisionServiceInteraction</a> *data, std::unordered_map&lt; uint64_t, <a class="el" href="classVW_1_1example.html">VW::example</a> * &gt; *dedup_examples)</td></tr>
+<tr class="separator:aefc28c2dbf61c29a2a3935bb7e747f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77f30a48c6b7185afc631816d62977d4"><td class="memItemLeft" align="right" valign="top">template void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parse__slates__example__json_8h.html#a77f30a48c6b7185afc631816d62977d4">parse_slates_example_dsjson&lt; false &gt;</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, <a class="el" href="namespaceVW.html#a505a6662876c6cba2fcdebb6d21ebbd2">VW::multi_ex</a> &amp;examples, char *line, size_t length, <a class="el" href="namespaceVW.html#a28e15f52840539d6b0c56aa196e11278">VW::example_factory_t</a> example_factory, void *ex_factory_context, <a class="el" href="classDecisionServiceInteraction.html">DecisionServiceInteraction</a> *data, std::unordered_map&lt; uint64_t, <a class="el" href="classVW_1_1example.html">VW::example</a> * &gt; *dedup_examples)</td></tr>
+<tr class="separator:a77f30a48c6b7185afc631816d62977d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a23dbf6d24901b2a77e4dea37c7775d38"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23dbf6d24901b2a77e4dea37c7775d38">&#9670;&nbsp;</a></span>get_number()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">float get_number </td>
-          <td>(</td>
-          <td class="paramtype">const rapidjson::Value &amp;&#160;</td>
-          <td class="paramname"><em>value</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8aa996ba6ebd4f7297d16c0b28e405c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8aa996ba6ebd4f7297d16c0b28e405c4">&#9670;&nbsp;</a></span>handle_features_value()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;bool audit&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void handle_features_value </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>key_namespace</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Value &amp;&#160;</td>
-          <td class="paramname"><em>value</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classVW_1_1example.html">VW::example</a> *&#160;</td>
-          <td class="paramname"><em>current_example</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="classNamespace.html">Namespace</a>&lt; audit &gt;&gt; &amp;&#160;</td>
-          <td class="paramname"><em>namespaces</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="hashstring_8h.html#a77dae8dac3c33439a15f7270f64cff8c">hash_func_t</a>&#160;</td>
-          <td class="paramname"><em>hash_func</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>hash_seed</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>parse_mask</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>chain_hash</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aff88543a0d7f47248b54770cfd89858c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff88543a0d7f47248b54770cfd89858c">&#9670;&nbsp;</a></span>parse_context()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;bool audit&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="future__compat_8h.html#aaf284e95bd2b735b9b87f108e94557e4">NO_SANITIZE_UNDEFINED</a> parse_context </td>
-          <td>(</td>
-          <td class="paramtype">const Value &amp;&#160;</td>
-          <td class="paramname"><em>context</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classVW_1_1label__parser.html">VW::label_parser</a> &amp;&#160;</td>
-          <td class="paramname"><em>lbl_parser</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="hashstring_8h.html#a77dae8dac3c33439a15f7270f64cff8c">hash_func_t</a>&#160;</td>
-          <td class="paramname"><em>hash_func</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>hash_seed</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>parse_mask</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>chain_hash</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceVW.html#a505a6662876c6cba2fcdebb6d21ebbd2">VW::multi_ex</a> &amp;&#160;</td>
-          <td class="paramname"><em>examples</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceVW.html#a28e15f52840539d6b0c56aa196e11278">VW::example_factory_t</a>&#160;</td>
-          <td class="paramname"><em>example_factory</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>ex_factory_context</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceVW.html#a505a6662876c6cba2fcdebb6d21ebbd2">VW::multi_ex</a> &amp;&#160;</td>
-          <td class="paramname"><em>slot_examples</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::unordered_map&lt; uint64_t, <a class="el" href="classVW_1_1example.html">VW::example</a> * &gt; *&#160;</td>
-          <td class="paramname"><em>dedup_examples</em> = <code>nullptr</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9a43c284313a80c2a83478df4f12fbcc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a43c284313a80c2a83478df4f12fbcc">&#9670;&nbsp;</a></span>parse_slates_example_dsjson()</h2>
+<a id="aa62852a5cfc97e68a92656d1e54dcffe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa62852a5cfc97e68a92656d1e54dcffe">&#9670;&nbsp;</a></span>parse_slates_example_dsjson()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -333,7 +164,7 @@ template&lt;bool audit&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>length</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -369,8 +200,136 @@ template&lt;bool audit&gt; </div>
 
 </div>
 </div>
-<a id="a55c1f3163eb9002c5ee3c5e00b048d8c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55c1f3163eb9002c5ee3c5e00b048d8c">&#9670;&nbsp;</a></span>parse_slates_example_json() <span class="overload">[1/2]</span></h2>
+<a id="a77f30a48c6b7185afc631816d62977d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77f30a48c6b7185afc631816d62977d4">&#9670;&nbsp;</a></span>parse_slates_example_dsjson&lt; false &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">template void <a class="el" href="parse__slates__example__json_8h.html#aa62852a5cfc97e68a92656d1e54dcffe">parse_slates_example_dsjson</a>&lt; false &gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;&#160;</td>
+          <td class="paramname"><em>all</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceVW.html#a505a6662876c6cba2fcdebb6d21ebbd2">VW::multi_ex</a> &amp;&#160;</td>
+          <td class="paramname"><em>examples</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceVW.html#a28e15f52840539d6b0c56aa196e11278">VW::example_factory_t</a>&#160;</td>
+          <td class="paramname"><em>example_factory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ex_factory_context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classDecisionServiceInteraction.html">DecisionServiceInteraction</a> *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::unordered_map&lt; uint64_t, <a class="el" href="classVW_1_1example.html">VW::example</a> * &gt; *&#160;</td>
+          <td class="paramname"><em>dedup_examples</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aefc28c2dbf61c29a2a3935bb7e747f56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefc28c2dbf61c29a2a3935bb7e747f56">&#9670;&nbsp;</a></span>parse_slates_example_dsjson&lt; true &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">template void <a class="el" href="parse__slates__example__json_8h.html#aa62852a5cfc97e68a92656d1e54dcffe">parse_slates_example_dsjson</a>&lt; true &gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;&#160;</td>
+          <td class="paramname"><em>all</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceVW.html#a505a6662876c6cba2fcdebb6d21ebbd2">VW::multi_ex</a> &amp;&#160;</td>
+          <td class="paramname"><em>examples</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceVW.html#a28e15f52840539d6b0c56aa196e11278">VW::example_factory_t</a>&#160;</td>
+          <td class="paramname"><em>example_factory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ex_factory_context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classDecisionServiceInteraction.html">DecisionServiceInteraction</a> *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::unordered_map&lt; uint64_t, <a class="el" href="classVW_1_1example.html">VW::example</a> * &gt; *&#160;</td>
+          <td class="paramname"><em>dedup_examples</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aad728f0ac83d9408f3e590a4a5e678be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad728f0ac83d9408f3e590a4a5e678be">&#9670;&nbsp;</a></span>parse_slates_example_json() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -423,7 +382,7 @@ template&lt;bool audit&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>length</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -453,8 +412,8 @@ template&lt;bool audit&gt; </div>
 
 </div>
 </div>
-<a id="aaf1d45f6619d0248f662b634d6c0c8be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf1d45f6619d0248f662b634d6c0c8be">&#9670;&nbsp;</a></span>parse_slates_example_json() <span class="overload">[2/2]</span></h2>
+<a id="ae7d125e5c04bf92f5a70101b1a02b604"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7d125e5c04bf92f5a70101b1a02b604">&#9670;&nbsp;</a></span>parse_slates_example_json() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -483,7 +442,7 @@ template&lt;bool audit&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>length</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -513,10 +472,290 @@ template&lt;bool audit&gt; </div>
 
 </div>
 </div>
+<a id="a1778fe876df3e072864dd1b92d35d30a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1778fe876df3e072864dd1b92d35d30a">&#9670;&nbsp;</a></span>parse_slates_example_json&lt; false &gt;() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">template void <a class="el" href="parse__slates__example__json_8h.html#ae7d125e5c04bf92f5a70101b1a02b604">parse_slates_example_json</a>&lt; false &gt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classVW_1_1label__parser.html">VW::label_parser</a> &amp;&#160;</td>
+          <td class="paramname"><em>lbl_parser</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="hashstring_8h.html#a77dae8dac3c33439a15f7270f64cff8c">hash_func_t</a>&#160;</td>
+          <td class="paramname"><em>hash_func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>hash_seed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>parse_mask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>chain_hash</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceVW.html#a505a6662876c6cba2fcdebb6d21ebbd2">VW::multi_ex</a> &amp;&#160;</td>
+          <td class="paramname"><em>examples</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceVW.html#a28e15f52840539d6b0c56aa196e11278">VW::example_factory_t</a>&#160;</td>
+          <td class="paramname"><em>example_factory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ex_factory_context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::unordered_map&lt; uint64_t, <a class="el" href="classVW_1_1example.html">VW::example</a> * &gt; *&#160;</td>
+          <td class="paramname"><em>dedup_examples</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a91e62fa9dae0346f6fd190b84392ea9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91e62fa9dae0346f6fd190b84392ea9b">&#9670;&nbsp;</a></span>parse_slates_example_json&lt; false &gt;() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">template void <a class="el" href="parse__slates__example__json_8h.html#ae7d125e5c04bf92f5a70101b1a02b604">parse_slates_example_json</a>&lt; false &gt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;&#160;</td>
+          <td class="paramname"><em>all</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceVW.html#a505a6662876c6cba2fcdebb6d21ebbd2">VW::multi_ex</a> &amp;&#160;</td>
+          <td class="paramname"><em>examples</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceVW.html#a28e15f52840539d6b0c56aa196e11278">VW::example_factory_t</a>&#160;</td>
+          <td class="paramname"><em>example_factory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ex_factory_context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::unordered_map&lt; uint64_t, <a class="el" href="classVW_1_1example.html">VW::example</a> * &gt; *&#160;</td>
+          <td class="paramname"><em>dedup_examples</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a70afd38278e3d82b5336c6d74de7c29a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70afd38278e3d82b5336c6d74de7c29a">&#9670;&nbsp;</a></span>parse_slates_example_json&lt; true &gt;() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">template void <a class="el" href="parse__slates__example__json_8h.html#ae7d125e5c04bf92f5a70101b1a02b604">parse_slates_example_json</a>&lt; true &gt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classVW_1_1label__parser.html">VW::label_parser</a> &amp;&#160;</td>
+          <td class="paramname"><em>lbl_parser</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="hashstring_8h.html#a77dae8dac3c33439a15f7270f64cff8c">hash_func_t</a>&#160;</td>
+          <td class="paramname"><em>hash_func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>hash_seed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>parse_mask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>chain_hash</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceVW.html#a505a6662876c6cba2fcdebb6d21ebbd2">VW::multi_ex</a> &amp;&#160;</td>
+          <td class="paramname"><em>examples</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceVW.html#a28e15f52840539d6b0c56aa196e11278">VW::example_factory_t</a>&#160;</td>
+          <td class="paramname"><em>example_factory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ex_factory_context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::unordered_map&lt; uint64_t, <a class="el" href="classVW_1_1example.html">VW::example</a> * &gt; *&#160;</td>
+          <td class="paramname"><em>dedup_examples</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aefc4801170e48879e831941c332cd17d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefc4801170e48879e831941c332cd17d">&#9670;&nbsp;</a></span>parse_slates_example_json&lt; true &gt;() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">template void <a class="el" href="parse__slates__example__json_8h.html#ae7d125e5c04bf92f5a70101b1a02b604">parse_slates_example_json</a>&lt; true &gt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;&#160;</td>
+          <td class="paramname"><em>all</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceVW.html#a505a6662876c6cba2fcdebb6d21ebbd2">VW::multi_ex</a> &amp;&#160;</td>
+          <td class="paramname"><em>examples</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceVW.html#a28e15f52840539d6b0c56aa196e11278">VW::example_factory_t</a>&#160;</td>
+          <td class="paramname"><em>example_factory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ex_factory_context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::unordered_map&lt; uint64_t, <a class="el" href="classVW_1_1example.html">VW::example</a> * &gt; *&#160;</td>
+          <td class="paramname"><em>dedup_examples</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 13 2022 13:08:58 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 13 2022 16:43:56 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

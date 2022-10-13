@@ -1,13 +1,13 @@
 var searchData=
 [
-  ['object_5fpool_2425',['object_pool',['../classVW_1_1object__pool.html',1,'VW']]],
-  ['object_5fpool_3c_20vw_3a_3aexample_20_3e_2426',['object_pool&lt; VW::example &gt;',['../classVW_1_1object__pool.html',1,'VW']]],
-  ['offset_5ftree_2427',['offset_tree',['../classVW_1_1reductions_1_1offset__tree_1_1offset__tree.html',1,'VW::reductions::offset_tree']]],
-  ['option_5fbuilder_2428',['option_builder',['../classVW_1_1config_1_1option__builder.html',1,'VW::config']]],
-  ['option_5fgroup_5fdefinition_2429',['option_group_definition',['../classVW_1_1config_1_1option__group__definition.html',1,'VW::config']]],
-  ['options_5fcli_2430',['options_cli',['../classVW_1_1config_1_1options__cli.html',1,'VW::config']]],
-  ['options_5fi_2431',['options_i',['../classVW_1_1config_1_1options__i.html',1,'VW::config']]],
-  ['options_5fname_5fextractor_2432',['options_name_extractor',['../classVW_1_1config_1_1options__name__extractor.html',1,'VW::config']]],
-  ['options_5fserializer_5fi_2433',['options_serializer_i',['../classVW_1_1config_1_1options__serializer__i.html',1,'VW::config']]],
-  ['owning_5fostream_2434',['owning_ostream',['../classVW_1_1io_1_1owning__ostream.html',1,'VW::io']]]
+  ['parameters_2302',['parameters',['../classparameters.html',1,'']]],
+  ['parser_2303',['parser',['../classVW_1_1parsers_1_1flatbuffer_1_1parser.html',1,'VW::parsers::flatbuffer::parser'],['../classparser.html',1,'parser']]],
+  ['pdf_5fsegment_2304',['pdf_segment',['../classVW_1_1continuous__actions_1_1pdf__segment.html',1,'VW::continuous_actions']]],
+  ['per_5fmodel_5fstate_2305',['per_model_state',['../classGD_1_1per__model__state.html',1,'GD']]],
+  ['pmf_5fto_5fpdf_5freduction_2306',['pmf_to_pdf_reduction',['../classVW_1_1reductions_1_1pmf__to__pdf__reduction.html',1,'VW::reductions']]],
+  ['polylabel_2307',['polylabel',['../classVW_1_1polylabel.html',1,'VW']]],
+  ['polyprediction_2308',['polyprediction',['../classVW_1_1polyprediction.html',1,'VW']]],
+  ['predictor_2309',['predictor',['../classSearch_1_1predictor.html',1,'Search']]],
+  ['primitive_5ffeature_5fspace_2310',['primitive_feature_space',['../classVW_1_1primitive__feature__space.html',1,'VW']]],
+  ['probability_5fdensity_5ffunction_5fvalue_2311',['probability_density_function_value',['../classVW_1_1continuous__actions_1_1probability__density__function__value.html',1,'VW::continuous_actions']]]
 ];
