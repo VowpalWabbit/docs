@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['kskip_5fngram_5ftransformer_2260',['kskip_ngram_transformer',['../classVW_1_1kskip__ngram__transformer.html',1,'VW']]]
+  ['kskip_5fngram_5ftransformer_2259',['kskip_ngram_transformer',['../classVW_1_1kskip__ngram__transformer.html',1,'VW']]]
 ];
