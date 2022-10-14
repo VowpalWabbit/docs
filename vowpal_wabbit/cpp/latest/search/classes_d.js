@@ -1,13 +1,13 @@
 var searchData=
 [
-  ['object_5fpool_2291',['object_pool',['../classVW_1_1object__pool.html',1,'VW']]],
-  ['object_5fpool_3c_20vw_3a_3aexample_20_3e_2292',['object_pool&lt; VW::example &gt;',['../classVW_1_1object__pool.html',1,'VW']]],
-  ['offset_5ftree_2293',['offset_tree',['../classVW_1_1reductions_1_1offset__tree_1_1offset__tree.html',1,'VW::reductions::offset_tree']]],
-  ['option_5fbuilder_2294',['option_builder',['../classVW_1_1config_1_1option__builder.html',1,'VW::config']]],
-  ['option_5fgroup_5fdefinition_2295',['option_group_definition',['../classVW_1_1config_1_1option__group__definition.html',1,'VW::config']]],
-  ['options_5fcli_2296',['options_cli',['../classVW_1_1config_1_1options__cli.html',1,'VW::config']]],
-  ['options_5fi_2297',['options_i',['../classVW_1_1config_1_1options__i.html',1,'VW::config']]],
-  ['options_5fname_5fextractor_2298',['options_name_extractor',['../classVW_1_1config_1_1options__name__extractor.html',1,'VW::config']]],
-  ['options_5fserializer_5fi_2299',['options_serializer_i',['../classVW_1_1config_1_1options__serializer__i.html',1,'VW::config']]],
-  ['owning_5fostream_2300',['owning_ostream',['../classVW_1_1io_1_1owning__ostream.html',1,'VW::io']]]
+  ['object_5fpool_2293',['object_pool',['../classVW_1_1object__pool.html',1,'VW']]],
+  ['object_5fpool_3c_20vw_3a_3aexample_20_3e_2294',['object_pool&lt; VW::example &gt;',['../classVW_1_1object__pool.html',1,'VW']]],
+  ['offset_5ftree_2295',['offset_tree',['../classVW_1_1reductions_1_1offset__tree_1_1offset__tree.html',1,'VW::reductions::offset_tree']]],
+  ['option_5fbuilder_2296',['option_builder',['../classVW_1_1config_1_1option__builder.html',1,'VW::config']]],
+  ['option_5fgroup_5fdefinition_2297',['option_group_definition',['../classVW_1_1config_1_1option__group__definition.html',1,'VW::config']]],
+  ['options_5fcli_2298',['options_cli',['../classVW_1_1config_1_1options__cli.html',1,'VW::config']]],
+  ['options_5fi_2299',['options_i',['../classVW_1_1config_1_1options__i.html',1,'VW::config']]],
+  ['options_5fname_5fextractor_2300',['options_name_extractor',['../classVW_1_1config_1_1options__name__extractor.html',1,'VW::config']]],
+  ['options_5fserializer_5fi_2301',['options_serializer_i',['../classVW_1_1config_1_1options__serializer__i.html',1,'VW::config']]],
+  ['owning_5fostream_2302',['owning_ostream',['../classVW_1_1io_1_1owning__ostream.html',1,'VW::io']]]
 ];
