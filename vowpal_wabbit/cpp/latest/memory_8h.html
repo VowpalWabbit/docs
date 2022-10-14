@@ -98,7 +98,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -115,11 +114,6 @@ $(function() {
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceVW"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html">VW</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:ac9b15880e88115a868bfaedde4c3553b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memory_8h.html#ac9b15880e88115a868bfaedde4c3553b">calloc_mergable_or_throw</a>&#160;&#160;&#160;<a class="el" href="memory_8h.html#a31107095512273d04723b552457790d8">calloc_or_throw</a></td></tr>
-<tr class="separator:ac9b15880e88115a868bfaedde4c3553b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -146,24 +140,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a76aaae1b56188dc3bfd7d9971d3802e1"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
 <tr class="memitem:a76aaae1b56188dc3bfd7d9971d3802e1"><td class="memTemplItemLeft" align="right" valign="top">std::unique_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a76aaae1b56188dc3bfd7d9971d3802e1">VW::make_unique</a> (Args &amp;&amp;... params)</td></tr>
 <tr class="separator:a76aaae1b56188dc3bfd7d9971d3802e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ac4280aeec54b7673b6376c04210c8b"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a5ac4280aeec54b7673b6376c04210c8b"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="memory_8h.html#a5ac4280aeec54b7673b6376c04210c8b">calloc_mergable_or_throw</a> (size_t nmemb)</td></tr>
+<tr class="separator:a5ac4280aeec54b7673b6376c04210c8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d7c2f582fe6b06111fd091cb0f5c6b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memory_8h.html#a8d7c2f582fe6b06111fd091cb0f5c6b1">free_it</a> (void *ptr)</td></tr>
 <tr class="separator:a8d7c2f582fe6b06111fd091cb0f5c6b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="ac9b15880e88115a868bfaedde4c3553b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9b15880e88115a868bfaedde4c3553b">&#9670;&nbsp;</a></span>calloc_mergable_or_throw</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define calloc_mergable_or_throw&#160;&#160;&#160;<a class="el" href="memory_8h.html#a31107095512273d04723b552457790d8">calloc_or_throw</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="afb75fb532543a6a20691d77219196715"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afb75fb532543a6a20691d77219196715">&#9670;&nbsp;</a></span>free_fn</h2>
@@ -196,6 +178,26 @@ template&lt;class T &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a5ac4280aeec54b7673b6376c04210c8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ac4280aeec54b7673b6376c04210c8b">&#9670;&nbsp;</a></span>calloc_mergable_or_throw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">T* calloc_mergable_or_throw </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>nmemb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a31107095512273d04723b552457790d8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a31107095512273d04723b552457790d8">&#9670;&nbsp;</a></span>calloc_or_throw() <span class="overload">[1/2]</span></h2>
 
@@ -304,7 +306,7 @@ template&lt;class T , typename... Args&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 14 2022 20:39:00 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 14 2022 22:26:25 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

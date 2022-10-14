@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['writeit_4533',['writeit',['../io__buf_8h.html#ac3dc74ce9e42a7cf9cb19834d4593d57',1,'io_buf.h']]],
-  ['writeitvar_4534',['writeitvar',['../io__buf_8h.html#aa441214d84044fca62cc7341883b7843',1,'io_buf.h']]]
+  ['writeit_4537',['WRITEIT',['../io__buf_8h.html#a47dcfe6f7208fcc463af08be229b2337',1,'io_buf.h']]],
+  ['writeitvar_4538',['WRITEITVAR',['../io__buf_8h.html#a86d74713db4b7070a879874be55e35b0',1,'io_buf.h']]]
 ];

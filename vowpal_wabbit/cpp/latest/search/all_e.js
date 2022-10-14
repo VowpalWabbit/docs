@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['n_1201',['n',['../classVW_1_1distributionally__robust_1_1Duals.html#ad72686b6b792efe744a034674dc09847',1,'VW::distributionally_robust::Duals::n()'],['../classVW_1_1reductions_1_1expreplay_1_1expreplay.html#a2563123c377deacbee6f4ec4fa5051e9',1,'VW::reductions::expreplay::expreplay::N()']]],
+  ['n_1201',['N',['../classVW_1_1reductions_1_1expreplay_1_1expreplay.html#a2563123c377deacbee6f4ec4fa5051e9',1,'VW::reductions::expreplay::expreplay::N()'],['../classVW_1_1distributionally__robust_1_1Duals.html#ad72686b6b792efe744a034674dc09847',1,'VW::distributionally_robust::Duals::n()']]],
   ['name_1202',['name',['../classVW_1_1audit__strings.html#aeda51a335733a0481b53d8057c22fdf9',1,'VW::audit_strings::name()'],['../classdictionary__info.html#aafd5bfbc5290ad275067a8cf3397970a',1,'dictionary_info::name()'],['../classNamespace.html#a2344df6d1bc705fc8afa24b2c9c79f57',1,'Namespace::name()'],['../classVW_1_1primitive__feature__space.html#a8f5b0342e8c1f8c6d6e5648d14894a59',1,'VW::primitive_feature_space::name()']]],
   ['named_5flabels_1203',['named_labels',['../classVW_1_1named__labels.html',1,'VW::named_labels'],['../classVW_1_1named__labels.html#af54e798bcd0812a93175a682f528c7b3',1,'VW::named_labels::named_labels(std::string label_list)'],['../classVW_1_1named__labels.html#a7ae0f4fd5b1c03bf1ab262b8f28bc819',1,'VW::named_labels::named_labels(const named_labels &amp;other)'],['../classVW_1_1named__labels.html#af0e51d1a22463fc7c3184fe83b04618c',1,'VW::named_labels::named_labels(named_labels &amp;&amp;other) noexcept=delete']]],
   ['named_5flabels_2eh_1204',['named_labels.h',['../named__labels_8h.html',1,'']]],
@@ -77,9 +77,9 @@ var searchData=
   ['num_5fsetup_5fexamples_1275',['num_setup_examples',['../classparser.html#acbd63b0b06ea56d99c733fd603066c47',1,'parser']]],
   ['num_5fweights_1276',['num_weights',['../namespaceVW.html#a04b594a4e250da0d08d159315c51449d',1,'VW']]],
   ['number_5fof_5fcombinations_5fwith_5frepetition_1277',['number_of_combinations_with_repetition',['../namespaceVW_1_1math.html#a6bba0fe85cf39d89c5a9f13b58987dc1',1,'VW::math']]],
-  ['number_5fof_5fpermutations_5fwith_5frepetition_1278',['number_of_permutations_with_repetition',['../namespaceVW_1_1math.html#a1a277e1f850e8b4281f2b504c33731eb',1,'VW::math']]],
-  ['numberofeventszeroactions_1279',['NumberOfEventsZeroActions',['../classdsjson__metrics.html#acfed6584417cf236d45d67dd86a292df',1,'dsjson_metrics']]],
-  ['numberofskippedevents_1280',['NumberOfSkippedEvents',['../classdsjson__metrics.html#a1ce31d4459d477b15c56f63cb5a289aa',1,'dsjson_metrics']]],
+  ['number_5fof_5fevents_5fzero_5factions_1278',['number_of_events_zero_actions',['../classdsjson__metrics.html#a01590b28a044444a729941ca3b914ba8',1,'dsjson_metrics']]],
+  ['number_5fof_5fpermutations_5fwith_5frepetition_1279',['number_of_permutations_with_repetition',['../namespaceVW_1_1math.html#a1a277e1f850e8b4281f2b504c33731eb',1,'VW::math']]],
+  ['number_5fof_5fskipped_5fevents_1280',['number_of_skipped_events',['../classdsjson__metrics.html#a837f11f2e828790e3fb17176c626493f',1,'dsjson_metrics']]],
   ['numeric_5fcasts_2eh_1281',['numeric_casts.h',['../numeric__casts_8h.html',1,'']]],
   ['numpasses_1282',['numpasses',['../classVW_1_1workspace.html#a5ae24e8ba75a6ea95102bbb4f1fc11ad',1,'VW::workspace']]]
 ];
