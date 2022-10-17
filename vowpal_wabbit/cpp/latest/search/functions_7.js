@@ -1,9 +1,9 @@
 var searchData=
 [
   ['handle_5fparse_5fargs_3086',['handle_parse_args',['../classVW_1_1parsers_1_1csv__parser.html#abc05c240963f50a39973649d81d90219',1,'VW::parsers::csv_parser']]],
-  ['has_5fempty_5finteraction_3087',['has_empty_interaction',['../namespaceINTERACTIONS.html#ae0ef592134bc77a708e5d2df00e28643',1,'INTERACTIONS::has_empty_interaction(const std::array&lt; features, NUM_NAMESPACES &gt; &amp;feature_groups, const std::vector&lt; VW::namespace_index &gt; &amp;namespace_indexes)'],['../namespaceINTERACTIONS.html#a1071f975dddf9f87a6f45c4ce48a6ed1',1,'INTERACTIONS::has_empty_interaction(const std::array&lt; features, NUM_NAMESPACES &gt; &amp;feature_groups, const std::vector&lt; extent_term &gt; &amp;namespace_indexes)']]],
-  ['has_5fempty_5finteraction_5fcubic_3088',['has_empty_interaction_cubic',['../namespaceINTERACTIONS.html#ab1d474319ed96ab063be5cfd356cc5a0',1,'INTERACTIONS']]],
-  ['has_5fempty_5finteraction_5fquadratic_3089',['has_empty_interaction_quadratic',['../namespaceINTERACTIONS.html#a571ae402ec59b6b1b2f72059f1235c36',1,'INTERACTIONS']]],
+  ['has_5fempty_5finteraction_3087',['has_empty_interaction',['../namespaceINTERACTIONS.html#a1595c14893891a1384cfbdc33ca9c185',1,'INTERACTIONS::has_empty_interaction(const std::array&lt; features, VW::NUM_NAMESPACES &gt; &amp;feature_groups, const std::vector&lt; VW::namespace_index &gt; &amp;namespace_indexes)'],['../namespaceINTERACTIONS.html#ad9fcf18eea38007588dd8080c141ac70',1,'INTERACTIONS::has_empty_interaction(const std::array&lt; features, VW::NUM_NAMESPACES &gt; &amp;feature_groups, const std::vector&lt; extent_term &gt; &amp;namespace_indexes)']]],
+  ['has_5fempty_5finteraction_5fcubic_3088',['has_empty_interaction_cubic',['../namespaceINTERACTIONS.html#ab7b5f3ac208853adc4c172a381408a59',1,'INTERACTIONS']]],
+  ['has_5fempty_5finteraction_5fquadratic_3089',['has_empty_interaction_quadratic',['../namespaceINTERACTIONS.html#ae0980d769c7040a441a71986a039e0ae',1,'INTERACTIONS']]],
   ['has_5fobserved_5fcost_3090',['has_observed_cost',['../classCB_1_1cb__class.html#a2f61508f2bac6020d397bb103f626a28',1,'CB::cb_class']]],
   ['hash_3091',['hash',['../classio__buf.html#a2897cff64e19135ab948ede8ec150a04',1,'io_buf']]],
   ['hash_5fextents_5fbegin_3092',['hash_extents_begin',['../classfeatures.html#a6aef3c800173ba6fd6d0017f5e0a097f',1,'features::hash_extents_begin(uint64_t hash)'],['../classfeatures.html#ab9088ef7796dd46498ae29400197c30a',1,'features::hash_extents_begin(uint64_t hash) const']]],

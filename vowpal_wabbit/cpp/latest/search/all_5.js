@@ -53,7 +53,7 @@ var searchData=
   ['escaped_5ftokenize_595',['escaped_tokenize',['../parse__primitives_8h.html#ae5600a8846c21114564ebd52b6c5a953',1,'parse_primitives.h']]],
   ['eta_596',['eta',['../classVW_1_1confidence__sequence.html#a43210dd1ce94ecf7acafffb4c66fbfdc',1,'VW::confidence_sequence::eta()'],['../classVW_1_1workspace.html#ad79f6dc7d719ba0d0de5f829177fb745',1,'VW::workspace::eta()']]],
   ['eta_5fdecay_5frate_597',['eta_decay_rate',['../classVW_1_1workspace.html#a657b3989f456fadc02b1067dc3bc1db5',1,'VW::workspace']]],
-  ['eval_5fsum_5fft_5fsquared_5fof_5fgenerated_5fft_598',['eval_sum_ft_squared_of_generated_ft',['../namespaceINTERACTIONS.html#a248db354b89ae5091958a52b98dde09c',1,'INTERACTIONS']]],
+  ['eval_5fsum_5fft_5fsquared_5fof_5fgenerated_5fft_598',['eval_sum_ft_squared_of_generated_ft',['../namespaceINTERACTIONS.html#a5b0e53c0bda099352c3360776bedf369',1,'INTERACTIONS']]],
   ['event_599',['event',['../classCB__EVAL_1_1label.html#af295a09fa564952d45e7b016fc60e1ff',1,'CB_EVAL::label']]],
   ['event_5fsum_600',['event_sum',['../classGEN__CS_1_1cb__to__cs__adf.html#a2aad7caed595926fb7fbbd43a653e384',1,'GEN_CS::cb_to_cs_adf']]],
   ['eventid_601',['eventId',['../classDecisionServiceInteraction.html#ad0a964d3f92f2a2883eb31ed4de022fc',1,'DecisionServiceInteraction']]],

@@ -28,7 +28,7 @@ var searchData=
   ['error_2906',['error',['../classVW_1_1io_1_1logger.html#abf6e310646f6ae5a2946f554995bf922',1,'VW::io::logger']]],
   ['error_5fcode_5fdefinition_2907',['ERROR_CODE_DEFINITION',['../error__data_8h.html#a08ac002fc6054c05afd8f684da63f677',1,'error_data.h']]],
   ['escaped_5ftokenize_2908',['escaped_tokenize',['../parse__primitives_8h.html#ae5600a8846c21114564ebd52b6c5a953',1,'parse_primitives.h']]],
-  ['eval_5fsum_5fft_5fsquared_5fof_5fgenerated_5fft_2909',['eval_sum_ft_squared_of_generated_ft',['../namespaceINTERACTIONS.html#a248db354b89ae5091958a52b98dde09c',1,'INTERACTIONS']]],
+  ['eval_5fsum_5fft_5fsquared_5fof_5fgenerated_5fft_2909',['eval_sum_ft_squared_of_generated_ft',['../namespaceINTERACTIONS.html#a5b0e53c0bda099352c3360776bedf369',1,'INTERACTIONS']]],
   ['example_2910',['example',['../classVW_1_1example.html#a5a55b0b3e1c45b9824916a97cb4f1814',1,'VW::example::example()=default'],['../classVW_1_1example.html#adee83a33bf82288cd7354043e053d01b',1,'VW::example::example(const example &amp;)=delete'],['../classVW_1_1example.html#a3ebfe8cd0a81a1b3ce6d566c669f2b86',1,'VW::example::example(example &amp;&amp;other)=default']]],
   ['example_5fis_5fnewline_2911',['example_is_newline',['../namespaceVW.html#ae8968ac994c443fc0dfd2e5fffb2615a',1,'VW::example_is_newline()'],['../example_8h.html#a4cacf4a3eba0557ca5147cf5b89ed05c',1,'example_is_newline():&#160;example.h']]],
   ['example_5fis_5fnewline_5fnot_5fheader_2912',['example_is_newline_not_header',['../namespaceCB__ALGS.html#a3c25c7ef165e877bb7ab2a4f063708ed',1,'CB_ALGS']]],

@@ -14,7 +14,7 @@ var searchData=
   ['baseline_5fchallenger_5fcb_5fsetup_160',['baseline_challenger_cb_setup',['../namespaceVW_1_1reductions.html#a0aacee0698df58f7add703a5348583c4',1,'VW::reductions']]],
   ['baseline_5fdefault_5ftau_161',['BASELINE_DEFAULT_TAU',['../distributionally__robust_8h.html#a2bae02294573745c33f1cdcc8cd9b0ad',1,'distributionally_robust.h']]],
   ['baseline_5fenabled_162',['baseline_enabled',['../namespaceVW_1_1reductions_1_1baseline.html#a9db21a818ffb3d3d666b24f4f1d809c1',1,'VW::reductions::baseline']]],
-  ['baseline_5fenabled_5fmessage_5fnamespace_163',['baseline_enabled_message_namespace',['../constant_8h.html#a82e4d47d3c4860a560f346a3a993ab03',1,'constant.h']]],
+  ['baseline_5fenabled_5fmessage_5fnamespace_163',['BASELINE_ENABLED_MESSAGE_NAMESPACE',['../namespaceVW_1_1details.html#aa1e45cd4c27fb1be7eabaa7a03990318',1,'VW::details']]],
   ['baseline_5fsetup_164',['baseline_setup',['../namespaceVW_1_1reductions.html#abb8913fd95f8c5bb1dfe956bf25da320',1,'VW::reductions']]],
   ['basetask_165',['BaseTask',['../classSearch_1_1BaseTask.html',1,'Search::BaseTask'],['../classSearch_1_1BaseTask.html#af111a9e4528a45e979e17aa55c908a65',1,'Search::BaseTask::BaseTask()']]],
   ['beam_166',['beam',['../classBeam_1_1beam.html',1,'Beam::beam&lt; T &gt;'],['../namespaceBeam.html',1,'Beam'],['../classBeam_1_1beam.html#a7f6fadaecce2f7782cb30fda0f31122d',1,'Beam::beam::beam()']]],

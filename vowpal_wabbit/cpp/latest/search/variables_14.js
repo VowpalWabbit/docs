@@ -16,7 +16,7 @@ var searchData=
   ['timestamp_4277',['timestamp',['../classDecisionServiceInteraction.html#a0df87aa1435feb01a1c3478ab1a0631b',1,'DecisionServiceInteraction']]],
   ['tnormal_5fweights_4278',['tnormal_weights',['../classVW_1_1workspace.html#a8a029eb3c2e7f29cf8ecb0bcf5598528',1,'VW::workspace']]],
   ['tokens_4279',['tokens',['../classVW_1_1label__parser__reuse__mem.html#abd4d46fe52aa8f9b495c9e2b7663935c',1,'VW::label_parser_reuse_mem']]],
-  ['top_5faction_5findex_4280',['TOP_ACTION_INDEX',['../constant_8h.html#ac761c6817afb4c15fe226ec2df85c024',1,'constant.h']]],
+  ['top_5faction_5findex_4280',['TOP_ACTION_INDEX',['../namespaceVW_1_1details.html#a5221d0bb0e49142ff05945b92a792a51',1,'VW::details']]],
   ['total_4281',['total',['../classVW_1_1all__reduce__base.html#aa527fbd5c585da9e4e8ae59fa06e91e1',1,'VW::all_reduce_base']]],
   ['total_5ffeatures_4282',['total_features',['../classshared__data.html#aaedd51e57f247fce49e552319c267253',1,'shared_data']]],
   ['total_5fsum_5ffeat_5fsq_4283',['total_sum_feat_sq',['../classVW_1_1example.html#adc14c7160b5f0ec970ee0f3e47e24667',1,'VW::example::total_sum_feat_sq()'],['../classVW_1_1flat__example.html#a80f443ad7a865cfbaf6523f8115e4e9b',1,'VW::flat_example::total_sum_feat_sq()']]],

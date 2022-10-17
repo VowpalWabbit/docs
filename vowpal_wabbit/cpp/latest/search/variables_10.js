@@ -11,7 +11,7 @@ var searchData=
   ['pass_5flength_4130',['pass_length',['../classVW_1_1workspace.html#a7376cc626e52beb9af96c340fe3e65f2',1,'VW::workspace']]],
   ['passes_5fcomplete_4131',['passes_complete',['../classVW_1_1workspace.html#af113154d6eeb3f4b134b8972607f5de2',1,'VW::workspace']]],
   ['passthrough_4132',['passthrough',['../classVW_1_1example.html#a19d949b9487b8e3718e55d689cb19f8e',1,'VW::example']]],
-  ['pdf_4133',['pdf',['../classVW_1_1continuous__actions_1_1reduction__features.html#a3018691ece399073ff358560ec527955',1,'VW::continuous_actions::reduction_features::pdf()'],['../classVW_1_1polyprediction.html#a758181cbeba06e2139e100c3ff002456',1,'VW::polyprediction::pdf()'],['../constant_8h.html#a388ce1121703e96c11e3818650c41e01',1,'PDF():&#160;constant.h']]],
+  ['pdf_4133',['pdf',['../classVW_1_1continuous__actions_1_1reduction__features.html#a3018691ece399073ff358560ec527955',1,'VW::continuous_actions::reduction_features::pdf()'],['../classVW_1_1polyprediction.html#a758181cbeba06e2139e100c3ff002456',1,'VW::polyprediction::pdf()'],['../namespaceVW_1_1details.html#a2689ca0fe6b1549d92063291832056a5',1,'VW::details::PDF()']]],
   ['pdf_5flim_4134',['pdf_lim',['../classVW_1_1reductions_1_1pmf__to__pdf__reduction.html#a8e2cff3b8319ab0bf7d91d6fe2bc997d',1,'VW::reductions::pmf_to_pdf_reduction']]],
   ['pdf_5fvalue_4135',['pdf_value',['../classVW_1_1cb__continuous_1_1continuous__label__elm.html#ac71b3dea68561b9d87c42f6e23034967',1,'VW::cb_continuous::continuous_label_elm::pdf_value()'],['../classVW_1_1polyprediction.html#ae6cfba655268f0a8cdfaeb278e7564fd',1,'VW::polyprediction::pdf_value()'],['../classVW_1_1continuous__actions_1_1probability__density__function__value.html#a47a847ad80671692a15002b5a2dfa58e',1,'VW::continuous_actions::probability_density_function_value::pdf_value()'],['../classVW_1_1continuous__actions_1_1pdf__segment.html#a3922e5847236d107b6cb5001289f58b1',1,'VW::continuous_actions::pdf_segment::pdf_value()']]],
   ['per_5ffeature_5fregularizer_5finput_4136',['per_feature_regularizer_input',['../classVW_1_1workspace.html#a7926ab93f0e6f04ba5c13b597840a495',1,'VW::workspace']]],
@@ -42,7 +42,7 @@ var searchData=
   ['prob_4161',['prob',['../classVW_1_1polyprediction.html#ab4de77f432cff44c31c051dbf77bb82f',1,'VW::polyprediction']]],
   ['probabilities_4162',['probabilities',['../classVW_1_1ccb__outcome.html#a442c55364db2dc7d9539261160a9f25f',1,'VW::ccb_outcome::probabilities()'],['../classDecisionServiceInteraction.html#a2f21287e8b294ecb77353d00be37c981',1,'DecisionServiceInteraction::probabilities()'],['../classVW_1_1slates_1_1label.html#ab80927f353c55f4ffaae1c0df00156fd',1,'VW::slates::label::probabilities()']]],
   ['probability_4163',['probability',['../classCB_1_1cb__class.html#a19e59d902fb4918ba679fa5f73f582ac',1,'CB::cb_class']]],
-  ['probability_5ftolerance_4164',['probability_tolerance',['../constant_8h.html#a2d817f5db781c538da7d027e030909b8',1,'constant.h']]],
+  ['probability_5ftolerance_4164',['PROBABILITY_TOLERANCE',['../namespaceVW_1_1details.html#ab175f07a065f6aa1fddd69578f64ae3c',1,'VW::details']]],
   ['probabilityofdrop_4165',['probabilityOfDrop',['../classDecisionServiceInteraction.html#a0e2a393fe1b1427ca5ee5c3fb98ea785',1,'DecisionServiceInteraction']]],
   ['progress_5fadd_4166',['progress_add',['../classVW_1_1workspace.html#a9365651f6a3a4f67c5b00cd2f416b116',1,'VW::workspace']]],
   ['progress_5farg_4167',['progress_arg',['../classVW_1_1workspace.html#a61f33a51a9aa8ee569e58bdd344f8d11',1,'VW::workspace']]]

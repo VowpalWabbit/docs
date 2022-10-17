@@ -1,9 +1,9 @@
 var searchData=
 [
   ['handle_5fparse_5fargs_875',['handle_parse_args',['../classVW_1_1parsers_1_1csv__parser.html#abc05c240963f50a39973649d81d90219',1,'VW::parsers::csv_parser']]],
-  ['has_5fempty_5finteraction_876',['has_empty_interaction',['../namespaceINTERACTIONS.html#ae0ef592134bc77a708e5d2df00e28643',1,'INTERACTIONS::has_empty_interaction(const std::array&lt; features, NUM_NAMESPACES &gt; &amp;feature_groups, const std::vector&lt; VW::namespace_index &gt; &amp;namespace_indexes)'],['../namespaceINTERACTIONS.html#a1071f975dddf9f87a6f45c4ce48a6ed1',1,'INTERACTIONS::has_empty_interaction(const std::array&lt; features, NUM_NAMESPACES &gt; &amp;feature_groups, const std::vector&lt; extent_term &gt; &amp;namespace_indexes)']]],
-  ['has_5fempty_5finteraction_5fcubic_877',['has_empty_interaction_cubic',['../namespaceINTERACTIONS.html#ab1d474319ed96ab063be5cfd356cc5a0',1,'INTERACTIONS']]],
-  ['has_5fempty_5finteraction_5fquadratic_878',['has_empty_interaction_quadratic',['../namespaceINTERACTIONS.html#a571ae402ec59b6b1b2f72059f1235c36',1,'INTERACTIONS']]],
+  ['has_5fempty_5finteraction_876',['has_empty_interaction',['../namespaceINTERACTIONS.html#a1595c14893891a1384cfbdc33ca9c185',1,'INTERACTIONS::has_empty_interaction(const std::array&lt; features, VW::NUM_NAMESPACES &gt; &amp;feature_groups, const std::vector&lt; VW::namespace_index &gt; &amp;namespace_indexes)'],['../namespaceINTERACTIONS.html#ad9fcf18eea38007588dd8080c141ac70',1,'INTERACTIONS::has_empty_interaction(const std::array&lt; features, VW::NUM_NAMESPACES &gt; &amp;feature_groups, const std::vector&lt; extent_term &gt; &amp;namespace_indexes)']]],
+  ['has_5fempty_5finteraction_5fcubic_877',['has_empty_interaction_cubic',['../namespaceINTERACTIONS.html#ab7b5f3ac208853adc4c172a381408a59',1,'INTERACTIONS']]],
+  ['has_5fempty_5finteraction_5fquadratic_878',['has_empty_interaction_quadratic',['../namespaceINTERACTIONS.html#ae0980d769c7040a441a71986a039e0ae',1,'INTERACTIONS']]],
   ['has_5fobserved_5fcost_879',['has_observed_cost',['../classCB_1_1cb__class.html#a2f61508f2bac6020d397bb103f626a28',1,'CB::cb_class']]],
   ['hash_880',['hash',['../classBeam_1_1beam__element.html#aa6e352c06b5e97fd8a49de0d35b36fde',1,'Beam::beam_element::hash()'],['../classVW_1_1namespace__extent.html#a56f2e4bb53c8909de61acb8eea886820',1,'VW::namespace_extent::hash()'],['../classINTERACTIONS_1_1feature__gen__data.html#ac423c4c48d7427dd0e895bab5b09b906',1,'INTERACTIONS::feature_gen_data::hash()'],['../classio__buf.html#a2897cff64e19135ab948ede8ec150a04',1,'io_buf::hash()']]],
   ['hash_2eh_881',['hash.h',['../hash_8h.html',1,'']]],
@@ -28,7 +28,7 @@ var searchData=
   ['help_5fformatter_900',['help_formatter',['../classVW_1_1config_1_1help__formatter.html',1,'VW::config']]],
   ['help_5fformatter_2eh_901',['help_formatter.h',['../help__formatter_8h.html',1,'']]],
   ['hidden_902',['hidden',['../classVW_1_1config_1_1option__builder.html#a3f396c3b570ca1631698525d2e2b760f',1,'VW::config::option_builder']]],
-  ['history_5fnamespace_903',['history_namespace',['../constant_8h.html#a622e9192f051b3662837af6d3d0fbac8',1,'constant.h']]],
+  ['history_5fnamespace_903',['HISTORY_NAMESPACE',['../namespaceVW_1_1details.html#a86d881169e3a599992c079f695cdca6f',1,'VW::details']]],
   ['holdout_5fafter_904',['holdout_after',['../classVW_1_1workspace.html#a0b0e80a0b71a5d9aa42cdd79e0b5c894',1,'VW::workspace']]],
   ['holdout_5fbest_5floss_905',['holdout_best_loss',['../classshared__data.html#a00b7fa4030c40b18d1b612586aec46ea',1,'shared_data']]],
   ['holdout_5fbest_5fpass_906',['holdout_best_pass',['../classshared__data.html#a8c6deb8f53fcc190fcfd469d3eaea6ab',1,'shared_data']]],

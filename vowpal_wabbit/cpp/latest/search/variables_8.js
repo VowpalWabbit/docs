@@ -6,7 +6,7 @@ var searchData=
   ['hasher_3944',['hasher',['../classparser.html#a55a42ce8e7ad6637f28bc40d95356b21',1,'parser']]],
   ['header_5ffn_3945',['header_fn',['../classVW_1_1parsers_1_1csv__parser.html#ad2f85c3ae28a23868965a19d7b45ffcf',1,'VW::parsers::csv_parser']]],
   ['header_5fns_3946',['header_ns',['../classVW_1_1parsers_1_1csv__parser.html#aec004e0be665890210bd7f288fe6c505',1,'VW::parsers::csv_parser']]],
-  ['history_5fnamespace_3947',['history_namespace',['../constant_8h.html#a622e9192f051b3662837af6d3d0fbac8',1,'constant.h']]],
+  ['history_5fnamespace_3947',['HISTORY_NAMESPACE',['../namespaceVW_1_1details.html#a86d881169e3a599992c079f695cdca6f',1,'VW::details']]],
   ['holdout_5fafter_3948',['holdout_after',['../classVW_1_1workspace.html#a0b0e80a0b71a5d9aa42cdd79e0b5c894',1,'VW::workspace']]],
   ['holdout_5fbest_5floss_3949',['holdout_best_loss',['../classshared__data.html#a00b7fa4030c40b18d1b612586aec46ea',1,'shared_data']]],
   ['holdout_5fbest_5fpass_3950',['holdout_best_pass',['../classshared__data.html#a8c6deb8f53fcc190fcfd469d3eaea6ab',1,'shared_data']]],

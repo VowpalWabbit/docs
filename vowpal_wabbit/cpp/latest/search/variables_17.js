@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['wap_5fldf_5fnamespace_4322',['wap_ldf_namespace',['../constant_8h.html#a08e7c9bf8fe6467dafd18a42120013e1',1,'constant.h']]],
+  ['wap_5fldf_5fnamespace_4322',['WAP_LDF_NAMESPACE',['../namespaceVW_1_1details.html#a5d1dafbe811e688251958b01609d71be',1,'VW::details']]],
   ['wap_5fvalue_4323',['wap_value',['../classVW_1_1cs__class.html#ab4d7d73f155ea806c0749924938250d3',1,'VW::cs_class']]],
   ['weight_4324',['weight',['../classCB_1_1label.html#a4d7a571a1e69a80df094698c0020f2e8',1,'CB::label::weight()'],['../classVW_1_1ccb__label.html#a0e47817cd011bf8fc4cd19a3d66c023b',1,'VW::ccb_label::weight()'],['../classVW_1_1example.html#aade08b9eb523419d11e87c6c847a32f5',1,'VW::example::weight()'],['../classVW_1_1multiclass__label.html#a11abae7432b44a2a2cb1b48b99daad69',1,'VW::multiclass_label::weight()'],['../classVW_1_1simple__label__reduction__features.html#a3f0037b0011f2d58efbdb7158c536e47',1,'VW::simple_label_reduction_features::weight()'],['../classVW_1_1slates_1_1label.html#a12cf62b7cbdc7917627aba1fea975b54',1,'VW::slates::label::weight()']]],
   ['weight_5fcomponents_4325',['weight_components',['../classVW_1_1details_1_1invert__hash__info.html#a20163cda042f18086ce800e03eaa1441',1,'VW::details::invert_hash_info']]],
@@ -12,7 +12,7 @@ var searchData=
   ['weighted_5flabels_4331',['weighted_labels',['../classshared__data.html#a462fe3c516f5d87de08862c7d7a9136d',1,'shared_data']]],
   ['weighted_5funlabeled_5fexamples_4332',['weighted_unlabeled_examples',['../classshared__data.html#ac3d7065c2ec09563226497ab0805b4b5',1,'shared_data']]],
   ['weights_4333',['weights',['../classVW_1_1workspace.html#ace17d34fe89611ea454960f50c49feef',1,'VW::workspace::weights()'],['../classVW_1_1LEARNER_1_1learner.html#aa72097142563b721f185f8ae862ec29d',1,'VW::LEARNER::learner::weights()'],['../classGD_1_1multipredict__info.html#ac1993819a02763fa326ed38197ae2ee4',1,'GD::multipredict_info::weights()']]],
-  ['wildcard_5fnamespace_4334',['wildcard_namespace',['../constant_8h.html#aa97811baf6be533f89fe42c1043e7ab2',1,'constant.h']]],
+  ['wildcard_5fnamespace_4334',['WILDCARD_NAMESPACE',['../namespaceVW_1_1details.html#a2d340467d15ac135bad271355d1ba836',1,'VW::details']]],
   ['words_4335',['words',['../classparser.html#ab5a5d63e69677436cba0278783f50578',1,'parser']]],
   ['wpp_4336',['wpp',['../classVW_1_1workspace.html#a3510119148d38226ff3388c447dbe235',1,'VW::workspace']]],
   ['wrapping_4337',['wrapping',['../classVW_1_1column__definition.html#a1634f0a00993f3b35e5d34f77c10d37f',1,'VW::column_definition']]],
