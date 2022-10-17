@@ -278,11 +278,13 @@ $(document).ready(function(){initNavTree('rl_sim_8cc-example.html',''); initResi
 <div class="line">    <span class="keyword">const</span> <span class="keyword">auto</span> req_id = create_event_id();</div>
 <div class="line">    r::api_status status;</div>
 <div class="line"> </div>
+<div class="line">    RL_IGNORE_DEPRECATED_USAGE_START</div>
 <div class="line">    <span class="keywordflow">if</span> (_rl-&gt;request_continuous_action(req_id.c_str(), context_json, response, &amp;status) != err::success)</div>
 <div class="line">    {</div>
 <div class="line">      std::cout &lt;&lt; status.get_error_msg() &lt;&lt; std::endl;</div>
 <div class="line">      <span class="keywordflow">continue</span>;</div>
 <div class="line">    }</div>
+<div class="line">    RL_IGNORE_DEPRECATED_USAGE_END</div>
 <div class="line">    <span class="keyword">const</span> <span class="keyword">auto</span> chosen_action = response.get_chosen_action();</div>
 <div class="line">    <span class="keyword">const</span> <span class="keyword">auto</span> outcome = joint.get_outcome(chosen_action, _random_seed);</div>
 <div class="line">    <span class="keywordflow">if</span> (_rl-&gt;report_outcome(req_id.c_str(), outcome, &amp;status) != err::success &amp;&amp; outcome &gt; 0.00001f)</div>
@@ -319,11 +321,13 @@ $(document).ready(function(){initNavTree('rl_sim_8cc-example.html',''); initResi
 <div class="line">    r::api_status status;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Choose an action</span></div>
+<div class="line">    RL_IGNORE_DEPRECATED_USAGE_START</div>
 <div class="line">    <span class="keywordflow">if</span> (_rl-&gt;request_multi_slot_decision(event_id.c_str(), context_json, decision, &amp;status) != err::success)</div>
 <div class="line">    {</div>
 <div class="line">      std::cout &lt;&lt; status.get_error_msg() &lt;&lt; std::endl;</div>
 <div class="line">      <span class="keywordflow">continue</span>;</div>
 <div class="line">    }</div>
+<div class="line">    RL_IGNORE_DEPRECATED_USAGE_END</div>
 <div class="line"> </div>
 <div class="line">    <span class="keyword">auto</span> index = 0;</div>
 <div class="line">    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; response : decision)</div>
@@ -384,11 +388,13 @@ $(document).ready(function(){initNavTree('rl_sim_8cc-example.html',''); initResi
 <div class="line">    r::api_status status;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Choose an action</span></div>
+<div class="line">    RL_IGNORE_DEPRECATED_USAGE_START</div>
 <div class="line">    <span class="keywordflow">if</span> (_rl-&gt;request_multi_slot_decision(event_id.c_str(), context_json.c_str(), decision, &amp;status) != err::success)</div>
 <div class="line">    {</div>
 <div class="line">      std::cout &lt;&lt; status.get_error_msg() &lt;&lt; std::endl;</div>
 <div class="line">      <span class="keywordflow">continue</span>;</div>
 <div class="line">    }</div>
+<div class="line">    RL_IGNORE_DEPRECATED_USAGE_END</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordtype">float</span> outcome = 0;</div>
 <div class="line">    <span class="keywordtype">int</span> index = 0;</div>

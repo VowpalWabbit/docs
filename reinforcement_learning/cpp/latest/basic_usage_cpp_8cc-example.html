@@ -187,11 +187,13 @@ $(document).ready(function(){initNavTree('basic_usage_cpp_8cc-example.html','');
 <div class="line">  <span class="comment">// Response class</span></div>
 <div class="line">  r::continuous_action_response response;</div>
 <div class="line"> </div>
+<div class="line">  RL_IGNORE_DEPRECATED_USAGE_START</div>
 <div class="line">  <span class="keywordflow">if</span> (rl.request_continuous_action(event_id, context, response, &amp;status) != err::success)</div>
 <div class="line">  {</div>
 <div class="line">    std::cout &lt;&lt; status.get_error_msg() &lt;&lt; std::endl;</div>
 <div class="line">    <span class="keywordflow">return</span> -1;</div>
 <div class="line">  }</div>
+<div class="line">  RL_IGNORE_DEPRECATED_USAGE_END</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordtype">float</span> chosen_action = response.get_chosen_action();</div>
 <div class="line"> </div>
@@ -234,11 +236,13 @@ $(document).ready(function(){initNavTree('basic_usage_cpp_8cc-example.html','');
 <div class="line">  <span class="comment">// Response class</span></div>
 <div class="line">  r::decision_response response;</div>
 <div class="line"> </div>
+<div class="line">  RL_IGNORE_DEPRECATED_USAGE_START</div>
 <div class="line">  <span class="keywordflow">if</span> (rl.request_decision(context, response, &amp;status) != err::success)</div>
 <div class="line">  {</div>
 <div class="line">    std::cout &lt;&lt; status.get_error_msg() &lt;&lt; std::endl;</div>
 <div class="line">    <span class="keywordflow">return</span> -1;</div>
 <div class="line">  }</div>
+<div class="line">  RL_IGNORE_DEPRECATED_USAGE_END</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; r : response)</div>
 <div class="line">  {</div>
@@ -278,11 +282,13 @@ $(document).ready(function(){initNavTree('basic_usage_cpp_8cc-example.html','');
 <div class="line">  <span class="comment">// Response class</span></div>
 <div class="line">  r::multi_slot_response response;</div>
 <div class="line"> </div>
+<div class="line">  RL_IGNORE_DEPRECATED_USAGE_START</div>
 <div class="line">  <span class="keywordflow">if</span> (rl.request_multi_slot_decision(<span class="stringliteral">&quot;event_id&quot;</span>, context, response, &amp;status) != err::success)</div>
 <div class="line">  {</div>
 <div class="line">    std::cout &lt;&lt; status.get_error_msg() &lt;&lt; std::endl;</div>
 <div class="line">    <span class="keywordflow">return</span> -1;</div>
 <div class="line">  }</div>
+<div class="line">  RL_IGNORE_DEPRECATED_USAGE_END</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; r : response) { <span class="keyword">const</span> <span class="keyword">auto</span> chosen_action = r.get_action_id(); }</div>
 <div class="line"> </div>
