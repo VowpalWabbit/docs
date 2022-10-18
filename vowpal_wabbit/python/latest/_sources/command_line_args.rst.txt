@@ -3948,6 +3948,34 @@ initial_epsilon
 Initial epsilon value
 
 
+
+shift_model_bounds
+""""""""""""""""""
+
+.. code-block::
+
+    --shift_model_bounds <uint> (default: 0)
+
+
+.. raw:: html
+
+    <span class="option-tag">
+        <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
+    </span>
+
+
+
+.. raw:: html
+
+    <a href="https://github.com/VowpalWabbit/vowpal_wabbit/wiki/Experimental">
+        <span class="option-tag option-warning">
+            <abbr title="This option is subject to change.">experimental</abbr>
+        </span>
+    </a>
+
+Shift maximum update_count for model i from champ_update_count^(i / num_models) to champ_update_count^((i + shift) / (num_models + shift))
+
+
 [Reduction] Explore Evaluation Options
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

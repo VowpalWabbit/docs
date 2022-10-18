@@ -40,12 +40,13 @@ var searchData=
   ['_5freduction_5ffeatures_37',['_reduction_features',['../classVW_1_1flat__example.html#af4162bdf34972cb23de187bd6ac405f2',1,'VW::flat_example::_reduction_features()'],['../classVW_1_1example__predict.html#af8636281f693ee8fb744970406791142',1,'VW::example_predict::_reduction_features()']]],
   ['_5freduction_5fstack_38',['_reduction_stack',['../classVW_1_1default__reduction__stack__setup.html#a6094c2acebd580cfdaf7e326484e07be',1,'VW::default_reduction_stack_setup']]],
   ['_5fsd_5fgravity_39',['_sd_gravity',['../classVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#a5f8a46d0bd16effec887519003862d7e',1,'VW::reductions::epsilon_decay::epsilon_decay_data']]],
-  ['_5fshort_5foptions_40',['_short_options',['../classVW_1_1config_1_1options__i.html#afe65910df6ffc9e46bdbe83939bd02a9',1,'VW::config::options_i']]],
-  ['_5fstatus_41',['_status',['../classVW_1_1experimental_1_1status__builder.html#ad2be8763fe358522057fb4bde4441c31',1,'VW::experimental::status_builder']]],
-  ['_5ftrace_5fmessage_42',['_trace_message',['../classtrace__message__wrapper.html#a84c304d2df916c59062e121c81cc4dec',1,'trace_message_wrapper']]],
-  ['_5funused_43',['_UNUSED',['../vw__exception_8h.html#a674dd1ba0db34c463bbf7e37ffef7a7c',1,'vw_exception.h']]],
-  ['_5fweight_5findices_44',['_weight_indices',['../classVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#a175e4fec128f17345b9cd3f19e4ec55f',1,'VW::reductions::epsilon_decay::epsilon_decay_data']]],
-  ['_5fweights_45',['_weights',['../classVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#a64bbc0c5871b2e98039e6283eaef3667',1,'VW::reductions::epsilon_decay::epsilon_decay_data']]],
-  ['_5fwith_5foutput_5fstring_46',['_with_output_string',['../classSearch_1_1BaseTask.html#a1999fd3295a1cfc9ed6ae1638977304c',1,'Search::BaseTask']]],
-  ['_5fwpp_47',['_wpp',['../classVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#ab5cbdcaa0b16dacd14be27b0e8a03e26',1,'VW::reductions::epsilon_decay::epsilon_decay_data']]]
+  ['_5fshift_5fmodel_5fbounds_40',['_shift_model_bounds',['../classVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#a1a9a0cca6aeed4bf6f6ec1319e6a42ec',1,'VW::reductions::epsilon_decay::epsilon_decay_data']]],
+  ['_5fshort_5foptions_41',['_short_options',['../classVW_1_1config_1_1options__i.html#afe65910df6ffc9e46bdbe83939bd02a9',1,'VW::config::options_i']]],
+  ['_5fstatus_42',['_status',['../classVW_1_1experimental_1_1status__builder.html#ad2be8763fe358522057fb4bde4441c31',1,'VW::experimental::status_builder']]],
+  ['_5ftrace_5fmessage_43',['_trace_message',['../classtrace__message__wrapper.html#a84c304d2df916c59062e121c81cc4dec',1,'trace_message_wrapper']]],
+  ['_5funused_44',['_UNUSED',['../vw__exception_8h.html#a674dd1ba0db34c463bbf7e37ffef7a7c',1,'vw_exception.h']]],
+  ['_5fweight_5findices_45',['_weight_indices',['../classVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#a175e4fec128f17345b9cd3f19e4ec55f',1,'VW::reductions::epsilon_decay::epsilon_decay_data']]],
+  ['_5fweights_46',['_weights',['../classVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#a64bbc0c5871b2e98039e6283eaef3667',1,'VW::reductions::epsilon_decay::epsilon_decay_data']]],
+  ['_5fwith_5foutput_5fstring_47',['_with_output_string',['../classSearch_1_1BaseTask.html#a1999fd3295a1cfc9ed6ae1638977304c',1,'Search::BaseTask']]],
+  ['_5fwpp_48',['_wpp',['../classVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#ab5cbdcaa0b16dacd14be27b0e8a03e26',1,'VW::reductions::epsilon_decay::epsilon_decay_data']]]
 ];

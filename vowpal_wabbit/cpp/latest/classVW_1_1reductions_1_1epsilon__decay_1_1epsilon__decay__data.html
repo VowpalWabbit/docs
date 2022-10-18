@@ -109,8 +109,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a14f80bbb0ac8aefac4590892fb0043f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#a14f80bbb0ac8aefac4590892fb0043f1">epsilon_decay_data</a> (uint64_t model_count, uint64_t min_scope, double epsilon_decay_significance_level, double epsilon_decay_estimator_decay, <a class="el" href="classdense__parameters.html">dense_parameters</a> &amp;weights, std::string epsilon_decay_audit_str, bool constant_epsilon, uint32_t &amp;wpp, bool lb_trick, uint64_t <a class="el" href="classVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#afcbd9a719702695d7b821c7781a01e63">_min_champ_examples</a>, float initial_epsilon)</td></tr>
-<tr class="separator:a14f80bbb0ac8aefac4590892fb0043f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15cca4a165ecec2bb5c82bfdc71c77ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#a15cca4a165ecec2bb5c82bfdc71c77ff">epsilon_decay_data</a> (uint64_t model_count, uint64_t min_scope, double epsilon_decay_significance_level, double epsilon_decay_estimator_decay, <a class="el" href="classdense__parameters.html">dense_parameters</a> &amp;weights, std::string epsilon_decay_audit_str, bool constant_epsilon, uint32_t &amp;wpp, bool lb_trick, uint64_t <a class="el" href="classVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#afcbd9a719702695d7b821c7781a01e63">_min_champ_examples</a>, float initial_epsilon, uint64_t shift_model_bounds)</td></tr>
+<tr class="separator:a15cca4a165ecec2bb5c82bfdc71c77ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94eb1e331e07da9a473918c9a32d72d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#a94eb1e331e07da9a473918c9a32d72d4">update_weights</a> (float init_ep, <a class="el" href="namespaceVW_1_1LEARNER.html#af1a8de5607718807546f15b47300a4a3">VW::LEARNER::multi_learner</a> &amp;base, <a class="el" href="namespaceVW.html#a505a6662876c6cba2fcdebb6d21ebbd2">VW::multi_ex</a> &amp;examples)</td></tr>
 <tr class="separator:a94eb1e331e07da9a473918c9a32d72d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa964982ed88d47406babbfa49ee11c4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#aa964982ed88d47406babbfa49ee11c4f">promote_model</a> (int64_t model_ind, int64_t swap_dist)</td></tr>
@@ -156,6 +156,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:afcbd9a719702695d7b821c7781a01e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f5f3cdee17a689c046166b2d81db89b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#a9f5f3cdee17a689c046166b2d81db89b">_initial_epsilon</a></td></tr>
 <tr class="separator:a9f5f3cdee17a689c046166b2d81db89b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a9a0cca6aeed4bf6f6ec1319e6a42ec"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#a1a9a0cca6aeed4bf6f6ec1319e6a42ec">_shift_model_bounds</a></td></tr>
+<tr class="separator:a1a9a0cca6aeed4bf6f6ec1319e6a42ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9fc9eb2eaced9b7bb4b610a09f5ff2b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#ad9fc9eb2eaced9b7bb4b610a09f5ff2b">per_live_model_state_double</a></td></tr>
 <tr class="separator:ad9fc9eb2eaced9b7bb4b610a09f5ff2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8a2f96d05d089c5810a98935def8f6d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#aa8a2f96d05d089c5810a98935def8f6d">per_live_model_state_uint64</a></td></tr>
@@ -172,8 +174,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a8352c16f172318de5cd63a01b1c98735"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a14f80bbb0ac8aefac4590892fb0043f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14f80bbb0ac8aefac4590892fb0043f1">&#9670;&nbsp;</a></span>epsilon_decay_data()</h2>
+<a id="a15cca4a165ecec2bb5c82bfdc71c77ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15cca4a165ecec2bb5c82bfdc71c77ff">&#9670;&nbsp;</a></span>epsilon_decay_data()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -242,7 +244,13 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>initial_epsilon</em>&#160;</td>
+          <td class="paramname"><em>initial_epsilon</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>shift_model_bounds</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -658,6 +666,20 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a1a9a0cca6aeed4bf6f6ec1319e6a42ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a9a0cca6aeed4bf6f6ec1319e6a42ec">&#9670;&nbsp;</a></span>_shift_model_bounds</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t VW::reductions::epsilon_decay::epsilon_decay_data::_shift_model_bounds</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a175e4fec128f17345b9cd3f19e4ec55f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a175e4fec128f17345b9cd3f19e4ec55f">&#9670;&nbsp;</a></span>_weight_indices</h2>
 
@@ -748,7 +770,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 18 2022 14:14:27 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 18 2022 17:24:37 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
