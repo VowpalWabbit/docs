@@ -136,7 +136,7 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ab17418c8747139674441f6d96e10aa16"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1LEARNER.html#ab17418c8747139674441f6d96e10aa16">single_learner</a> = <a class="el" href="classVW_1_1LEARNER_1_1learner.html">learner</a>&lt; char, <a class="el" href="classVW_1_1example.html">example</a> &gt;</td></tr>
 <tr class="memdesc:ab17418c8747139674441f6d96e10aa16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used for reductions that process single ::example objects at at time. It type erases the specific reduction object type.  <a href="namespaceVW_1_1LEARNER.html#ab17418c8747139674441f6d96e10aa16">More...</a><br /></td></tr>
 <tr class="separator:ab17418c8747139674441f6d96e10aa16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1a8de5607718807546f15b47300a4a3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1LEARNER.html#af1a8de5607718807546f15b47300a4a3">multi_learner</a> = <a class="el" href="classVW_1_1LEARNER_1_1learner.html">learner</a>&lt; char, <a class="el" href="namespaceVW.html#a505a6662876c6cba2fcdebb6d21ebbd2">multi_ex</a> &gt;</td></tr>
+<tr class="memitem:af1a8de5607718807546f15b47300a4a3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1LEARNER.html#af1a8de5607718807546f15b47300a4a3">multi_learner</a> = <a class="el" href="classVW_1_1LEARNER_1_1learner.html">learner</a>&lt; char, <a class="el" href="namespaceVW.html#a1dd7b95816f635bc6a5906d2b566c856">multi_ex</a> &gt;</td></tr>
 <tr class="memdesc:af1a8de5607718807546f15b47300a4a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used for multiline examples where there are several ::example objects required to describe the overall example. It type erases the specific reduction object type.  <a href="namespaceVW_1_1LEARNER.html#af1a8de5607718807546f15b47300a4a3">More...</a><br /></td></tr>
 <tr class="separator:af1a8de5607718807546f15b47300a4a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -160,7 +160,7 @@ Functions</h2></td></tr>
 <tr class="memitem:aee01f4fe4f1ec032609e818cfb0cebe4"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespaceVW_1_1LEARNER.html#ab17418c8747139674441f6d96e10aa16">single_learner</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1LEARNER.html#aee01f4fe4f1ec032609e818cfb0cebe4">as_singleline</a> (<a class="el" href="classVW_1_1LEARNER_1_1learner.html">learner</a>&lt; T, E &gt; *l)</td></tr>
 <tr class="separator:aee01f4fe4f1ec032609e818cfb0cebe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae567a4278ece0021d1272d708e25b749"><td class="memTemplParams" colspan="2">template&lt;bool is_learn&gt; </td></tr>
-<tr class="memitem:ae567a4278ece0021d1272d708e25b749"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1LEARNER.html#ae567a4278ece0021d1272d708e25b749">multiline_learn_or_predict</a> (<a class="el" href="namespaceVW_1_1LEARNER.html#af1a8de5607718807546f15b47300a4a3">multi_learner</a> &amp;base, <a class="el" href="namespaceVW.html#a505a6662876c6cba2fcdebb6d21ebbd2">multi_ex</a> &amp;examples, const uint64_t offset, const uint32_t id=0)</td></tr>
+<tr class="memitem:ae567a4278ece0021d1272d708e25b749"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1LEARNER.html#ae567a4278ece0021d1272d708e25b749">multiline_learn_or_predict</a> (<a class="el" href="namespaceVW_1_1LEARNER.html#af1a8de5607718807546f15b47300a4a3">multi_learner</a> &amp;base, <a class="el" href="namespaceVW.html#a1dd7b95816f635bc6a5906d2b566c856">multi_ex</a> &amp;examples, const uint64_t offset, const uint32_t id=0)</td></tr>
 <tr class="separator:ae567a4278ece0021d1272d708e25b749"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49999d9dc5b7fa848058419c7c7626f0"><td class="memTemplParams" colspan="2">template&lt;class DataT , class ExampleT , class BaseLearnerT &gt; </td></tr>
 <tr class="memitem:a49999d9dc5b7fa848058419c7c7626f0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="future__compat_8h.html#a2d17cd6c08058ed32e5fb9dc77629280">VW_WARNING_STATE_POP</a> <a class="el" href="classVW_1_1LEARNER_1_1reduction__learner__builder.html">reduction_learner_builder</a>&lt; DataT, ExampleT, BaseLearnerT &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1LEARNER.html#a49999d9dc5b7fa848058419c7c7626f0">make_reduction_learner</a> (std::unique_ptr&lt; DataT &gt; &amp;&amp;data, BaseLearnerT *base, void(*learn_fn)(DataT &amp;, BaseLearnerT &amp;, ExampleT &amp;), void(*predict_fn)(DataT &amp;, BaseLearnerT &amp;, ExampleT &amp;), const std::string &amp;name)</td></tr>
@@ -201,7 +201,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="classVW_1_1LEARNER_1_1learner.html">learner</a>&lt; char, <a class="el" href="namespaceVW.html#a505a6662876c6cba2fcdebb6d21ebbd2">multi_ex</a> &gt; VW::LEARNER::multi_learner</td>
+          <td class="memname">typedef <a class="el" href="classVW_1_1LEARNER_1_1learner.html">learner</a>&lt; char, <a class="el" href="namespaceVW.html#a1dd7b95816f635bc6a5906d2b566c856">multi_ex</a> &gt; VW::LEARNER::multi_learner</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -578,7 +578,7 @@ template&lt;bool is_learn&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespaceVW.html#a505a6662876c6cba2fcdebb6d21ebbd2">multi_ex</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespaceVW.html#a1dd7b95816f635bc6a5906d2b566c856">multi_ex</a> &amp;&#160;</td>
           <td class="paramname"><em>examples</em>, </td>
         </tr>
         <tr>
@@ -606,7 +606,7 @@ template&lt;bool is_learn&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 18 2022 17:24:37 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 19 2022 14:46:25 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

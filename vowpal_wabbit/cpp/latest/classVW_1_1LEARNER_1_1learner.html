@@ -215,7 +215,7 @@ class VW::LEARNER::learner&lt; T, E &gt;</h3>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>Type of the reduction data object stored. This allows this specific reduction to have it's own state. </td></tr>
-    <tr><td class="paramname">E</td><td>Example type this reduction supports. Must be one of ::example or <a class="el" href="namespaceVW.html#a505a6662876c6cba2fcdebb6d21ebbd2">multi_ex</a> </td></tr>
+    <tr><td class="paramname">E</td><td>Example type this reduction supports. Must be one of ::example or <a class="el" href="namespaceVW.html#a1dd7b95816f635bc6a5906d2b566c856">multi_ex</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -583,7 +583,7 @@ template&lt;class T , class E &gt; </div>
 <p>Will update the model according to the labels and examples supplied. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ec</td><td>The ::example object or <a class="el" href="namespaceVW.html#a505a6662876c6cba2fcdebb6d21ebbd2">multi_ex</a> to be operated on. This object <b>must</b> have a valid label set for every ::example in the field <a class="el" href="classVW_1_1example.html#adfcc771a9e46a65130c9dcf8b18870e6">example::l</a> that corresponds to the type this reduction expects. </td></tr>
+    <tr><td class="paramname">ec</td><td>The ::example object or <a class="el" href="namespaceVW.html#a1dd7b95816f635bc6a5906d2b566c856">multi_ex</a> to be operated on. This object <b>must</b> have a valid label set for every ::example in the field <a class="el" href="classVW_1_1example.html#adfcc771a9e46a65130c9dcf8b18870e6">example::l</a> that corresponds to the type this reduction expects. </td></tr>
     <tr><td class="paramname">i</td><td>This is the offset used for the weights in this call. If using multiple regressors/learners you can increment this value for each call. </td></tr>
   </table>
   </dd>
@@ -771,12 +771,12 @@ template&lt;class T , class E &gt; </div>
 <p>Make a prediction for the given example. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ec</td><td>The ::example object or <a class="el" href="namespaceVW.html#a505a6662876c6cba2fcdebb6d21ebbd2">multi_ex</a> to be operated on. This object <b>must</b> have a valid prediction allocated in the field <a class="el" href="classVW_1_1example.html#a9302a52e74bafd839a213cbba89cfe4a">example::pred</a> that corresponds to this reduction type. </td></tr>
+    <tr><td class="paramname">ec</td><td>The ::example object or <a class="el" href="namespaceVW.html#a1dd7b95816f635bc6a5906d2b566c856">multi_ex</a> to be operated on. This object <b>must</b> have a valid prediction allocated in the field <a class="el" href="classVW_1_1example.html#a9302a52e74bafd839a213cbba89cfe4a">example::pred</a> that corresponds to this reduction type. </td></tr>
     <tr><td class="paramname">i</td><td>This is the offset used for the weights in this call. If using multiple regressors/learners you can increment this value for each call. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The prediction calculated by this reduction be set on <a class="el" href="classVW_1_1example.html#a9302a52e74bafd839a213cbba89cfe4a">example::pred</a>. If <code>E</code> is <a class="el" href="namespaceVW.html#a505a6662876c6cba2fcdebb6d21ebbd2">multi_ex</a> then the prediction is set on the 0th item in the list. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The prediction calculated by this reduction be set on <a class="el" href="classVW_1_1example.html#a9302a52e74bafd839a213cbba89cfe4a">example::pred</a>. If <code>E</code> is <a class="el" href="namespaceVW.html#a1dd7b95816f635bc6a5906d2b566c856">multi_ex</a> then the prediction is set on the 0th item in the list. </dd></dl>
 
 </div>
 </div>
@@ -1441,7 +1441,7 @@ template&lt;class T , class E &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 18 2022 17:24:37 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 19 2022 14:46:25 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

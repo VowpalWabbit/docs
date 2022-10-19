@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Vowpal Wabbit: INTERACTIONS::generate_interactions_object_cache Class Reference</title>
+<title>Vowpal Wabbit: VW::details::extent_interaction_expansion_stack_item Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -92,66 +92,82 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceINTERACTIONS.html">INTERACTIONS</a></li><li class="navelem"><a class="el" href="classINTERACTIONS_1_1generate__interactions__object__cache.html">generate_interactions_object_cache</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceVW.html">VW</a></li><li class="navelem"><a class="el" href="namespaceVW_1_1details.html">details</a></li><li class="navelem"><a class="el" href="classVW_1_1details_1_1extent__interaction__expansion__stack__item.html">extent_interaction_expansion_stack_item</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="classINTERACTIONS_1_1generate__interactions__object__cache-members.html">List of all members</a>  </div>
+<a href="classVW_1_1details_1_1extent__interaction__expansion__stack__item-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">INTERACTIONS::generate_interactions_object_cache Class Reference</div>  </div>
+<div class="title">VW::details::extent_interaction_expansion_stack_item Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;interactions_predict.h&gt;</code></p>
+<p><code>#include &lt;interaction_generation_state.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a424b49286c9528e1b4b1635e33979233"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classINTERACTIONS_1_1feature__gen__data.html">feature_gen_data</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classINTERACTIONS_1_1generate__interactions__object__cache.html#a424b49286c9528e1b4b1635e33979233">state_data</a></td></tr>
-<tr class="separator:a424b49286c9528e1b4b1635e33979233"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8d50f36747fbf6b740dd67bdb775c73"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVW_1_1moved__object__pool.html">VW::moved_object_pool</a>&lt; <a class="el" href="classINTERACTIONS_1_1extent__interaction__expansion__stack__item.html">extent_interaction_expansion_stack_item</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classINTERACTIONS_1_1generate__interactions__object__cache.html#ac8d50f36747fbf6b740dd67bdb775c73">frame_pool</a></td></tr>
-<tr class="separator:ac8d50f36747fbf6b740dd67bdb775c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1cca13f980633bfd603cd13296ec0b8c"><td class="memItemLeft" align="right" valign="top">std::stack&lt; <a class="el" href="classINTERACTIONS_1_1extent__interaction__expansion__stack__item.html">extent_interaction_expansion_stack_item</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classINTERACTIONS_1_1generate__interactions__object__cache.html#a1cca13f980633bfd603cd13296ec0b8c">in_process_frames</a></td></tr>
-<tr class="separator:a1cca13f980633bfd603cd13296ec0b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3884bcde637d5e7da4465a1d3d797da9"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1details_1_1extent__interaction__expansion__stack__item.html#a3884bcde637d5e7da4465a1d3d797da9">current_term</a></td></tr>
+<tr class="separator:a3884bcde637d5e7da4465a1d3d797da9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae20a4ebb3df5a0588309fbb2d7655ed0"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1details_1_1extent__interaction__expansion__stack__item.html#ae20a4ebb3df5a0588309fbb2d7655ed0">prev_term</a></td></tr>
+<tr class="separator:ae20a4ebb3df5a0588309fbb2d7655ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb3973872955ad877dec42facb893306"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1details_1_1extent__interaction__expansion__stack__item.html#abb3973872955ad877dec42facb893306">offset</a></td></tr>
+<tr class="separator:abb3973872955ad877dec42facb893306"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16557093bf62e59d3e84d16b0b6ec000"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespaceVW_1_1details.html#a2b74247c2d10cb8d9b61d57be0470d67">features_range_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1details_1_1extent__interaction__expansion__stack__item.html#a16557093bf62e59d3e84d16b0b6ec000">so_far</a></td></tr>
+<tr class="separator:a16557093bf62e59d3e84d16b0b6ec000"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="ac8d50f36747fbf6b740dd67bdb775c73"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac8d50f36747fbf6b740dd67bdb775c73">&#9670;&nbsp;</a></span>frame_pool</h2>
+<a id="a3884bcde637d5e7da4465a1d3d797da9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3884bcde637d5e7da4465a1d3d797da9">&#9670;&nbsp;</a></span>current_term</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classVW_1_1moved__object__pool.html">VW::moved_object_pool</a>&lt;<a class="el" href="classINTERACTIONS_1_1extent__interaction__expansion__stack__item.html">extent_interaction_expansion_stack_item</a>&gt; INTERACTIONS::generate_interactions_object_cache::frame_pool</td>
+          <td class="memname">size_t VW::details::extent_interaction_expansion_stack_item::current_term</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a1cca13f980633bfd603cd13296ec0b8c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1cca13f980633bfd603cd13296ec0b8c">&#9670;&nbsp;</a></span>in_process_frames</h2>
+<a id="abb3973872955ad877dec42facb893306"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb3973872955ad877dec42facb893306">&#9670;&nbsp;</a></span>offset</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::stack&lt;<a class="el" href="classINTERACTIONS_1_1extent__interaction__expansion__stack__item.html">extent_interaction_expansion_stack_item</a>&gt; INTERACTIONS::generate_interactions_object_cache::in_process_frames</td>
+          <td class="memname">size_t VW::details::extent_interaction_expansion_stack_item::offset</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a424b49286c9528e1b4b1635e33979233"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a424b49286c9528e1b4b1635e33979233">&#9670;&nbsp;</a></span>state_data</h2>
+<a id="ae20a4ebb3df5a0588309fbb2d7655ed0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae20a4ebb3df5a0588309fbb2d7655ed0">&#9670;&nbsp;</a></span>prev_term</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="classINTERACTIONS_1_1feature__gen__data.html">feature_gen_data</a>&gt; INTERACTIONS::generate_interactions_object_cache::state_data</td>
+          <td class="memname">size_t VW::details::extent_interaction_expansion_stack_item::prev_term</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a16557093bf62e59d3e84d16b0b6ec000"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16557093bf62e59d3e84d16b0b6ec000">&#9670;&nbsp;</a></span>so_far</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="namespaceVW_1_1details.html#a2b74247c2d10cb8d9b61d57be0470d67">features_range_t</a>&gt; VW::details::extent_interaction_expansion_stack_item::so_far</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -159,12 +175,12 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/runner/work/vowpal_wabbit/vowpal_wabbit/vowpalwabbit/core/include/vw/core/<a class="el" href="interactions__predict_8h.html">interactions_predict.h</a></li>
+<li>/home/runner/work/vowpal_wabbit/vowpal_wabbit/vowpalwabbit/core/include/vw/core/<a class="el" href="interaction__generation__state_8h.html">interaction_generation_state.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 18 2022 17:24:37 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 19 2022 14:46:25 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -101,32 +101,20 @@ $(function() {
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">logger.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;fmt/core.h&gt;</code><br />
-<code>#include &lt;iostream&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="string__view_8h.html">vw/common/string_view.h</a>&quot;</code><br />
+<code>#include &lt;fmt/core.h&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
-<code>#include &lt;utility&gt;</code><br />
-<code>#include &lt;spdlog/sinks/base_sink.h&gt;</code><br />
-<code>#include &lt;spdlog/sinks/null_sink.h&gt;</code><br />
-<code>#include &lt;spdlog/sinks/stdout_color_sinks.h&gt;</code><br />
-<code>#include &lt;spdlog/sinks/stdout_sinks.h&gt;</code><br />
-<code>#include &lt;spdlog/spdlog.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="vw__exception_8h.html">vw/common/vw_exception.h</a>&quot;</code><br />
-<code>#include &lt;fmt/ostream.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1io_1_1details_1_1log__sink.html">VW::io::details::log_sink</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1io_1_1details_1_1logger__impl.html">VW::io::details::logger_impl</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1io_1_1details_1_1function__ptr__sink.html">VW::io::details::function_ptr_sink&lt; Mutex &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1io_1_1details_1_1function__ptr__legacy__sink.html">VW::io::details::function_ptr_legacy_sink&lt; Mutex &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1io_1_1logger.html">VW::io::logger</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,14 +143,14 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="separator:ac0bb552479e3284943bb50d27084d074"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf6d3dfe9781b53c9fbc2908a8f0641c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io.html#aaf6d3dfe9781b53c9fbc2908a8f0641c">VW::io::log_level</a> { <br />
-&#160;&#160;<a class="el" href="namespaceVW_1_1io.html#aaf6d3dfe9781b53c9fbc2908a8f0641cadfa40d9f44f7e32309f117401151cefb">VW::io::log_level::TRACE_LEVEL</a> = spdlog::level::trace, 
-<a class="el" href="namespaceVW_1_1io.html#aaf6d3dfe9781b53c9fbc2908a8f0641cae3561dbf665655fe4853f5ef3fdb6450">VW::io::log_level::DEBUG_LEVEL</a> = spdlog::level::debug, 
-<a class="el" href="namespaceVW_1_1io.html#aaf6d3dfe9781b53c9fbc2908a8f0641caec1715cd6b1c4768160c0f14f2d5c856">VW::io::log_level::INFO_LEVEL</a> = spdlog::level::info, 
-<a class="el" href="namespaceVW_1_1io.html#aaf6d3dfe9781b53c9fbc2908a8f0641caf169d7aae64be70fa360137df2c56da3">VW::io::log_level::WARN_LEVEL</a> = spdlog::level::warn, 
+&#160;&#160;<a class="el" href="namespaceVW_1_1io.html#aaf6d3dfe9781b53c9fbc2908a8f0641cadfa40d9f44f7e32309f117401151cefb">VW::io::log_level::TRACE_LEVEL</a> = 0, 
+<a class="el" href="namespaceVW_1_1io.html#aaf6d3dfe9781b53c9fbc2908a8f0641cae3561dbf665655fe4853f5ef3fdb6450">VW::io::log_level::DEBUG_LEVEL</a> = 1, 
+<a class="el" href="namespaceVW_1_1io.html#aaf6d3dfe9781b53c9fbc2908a8f0641caec1715cd6b1c4768160c0f14f2d5c856">VW::io::log_level::INFO_LEVEL</a> = 2, 
+<a class="el" href="namespaceVW_1_1io.html#aaf6d3dfe9781b53c9fbc2908a8f0641caf169d7aae64be70fa360137df2c56da3">VW::io::log_level::WARN_LEVEL</a> = 3, 
 <br />
-&#160;&#160;<a class="el" href="namespaceVW_1_1io.html#aaf6d3dfe9781b53c9fbc2908a8f0641ca0e9c70bbf331f239047470632224f90f">VW::io::log_level::ERROR_LEVEL</a> = spdlog::level::err, 
-<a class="el" href="namespaceVW_1_1io.html#aaf6d3dfe9781b53c9fbc2908a8f0641ca40c18d704f38d99ee7221f2ddbaf76fa">VW::io::log_level::CRITICAL_LEVEL</a> = spdlog::level::critical, 
-<a class="el" href="namespaceVW_1_1io.html#aaf6d3dfe9781b53c9fbc2908a8f0641cad47e3bea3f69cebbbb7435e30735edd2">VW::io::log_level::OFF_LEVEL</a> = spdlog::level::off
+&#160;&#160;<a class="el" href="namespaceVW_1_1io.html#aaf6d3dfe9781b53c9fbc2908a8f0641ca0e9c70bbf331f239047470632224f90f">VW::io::log_level::ERROR_LEVEL</a> = 4, 
+<a class="el" href="namespaceVW_1_1io.html#aaf6d3dfe9781b53c9fbc2908a8f0641ca40c18d704f38d99ee7221f2ddbaf76fa">VW::io::log_level::CRITICAL_LEVEL</a> = 5, 
+<a class="el" href="namespaceVW_1_1io.html#aaf6d3dfe9781b53c9fbc2908a8f0641cad47e3bea3f69cebbbb7435e30735edd2">VW::io::log_level::OFF_LEVEL</a> = 6
 <br />
  }</td></tr>
 <tr class="separator:aaf6d3dfe9781b53c9fbc2908a8f0641c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,16 +169,11 @@ Functions</h2></td></tr>
 <tr class="separator:a4f919c655b6f037f503cd1d2ec3701b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d082090958b291e909fe77f9c667138"><td class="memItemLeft" align="right" valign="top">logger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io.html#a6d082090958b291e909fe77f9c667138">VW::io::create_custom_sink_logger_legacy</a> (void *context, logger_legacy_output_func_t func)</td></tr>
 <tr class="separator:a6d082090958b291e909fe77f9c667138"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a07725660ca2670b09372f4d0a46f8430"><td class="memItemLeft" align="right" valign="top">const constexpr char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1io_1_1details.html#a07725660ca2670b09372f4d0a46f8430">VW::io::details::DEFAULT_PATTERN</a> = &quot;%^[%l]%$ %v&quot;</td></tr>
-<tr class="separator:a07725660ca2670b09372f4d0a46f8430"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 18 2022 17:24:37 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 19 2022 14:46:25 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
