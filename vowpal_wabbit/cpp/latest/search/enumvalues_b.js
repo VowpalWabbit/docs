@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['scalar_4446',['scalar',['../namespaceVW.html#a4f76045a06b3efe3c5c612b777b6c836aa27a6549ade38cc036f7b8c58a840510',1,'VW']]],
-  ['scalars_4447',['scalars',['../namespaceVW.html#a4f76045a06b3efe3c5c612b777b6c836a4f14d3acdc8c1cb2ac2f808f2afded32',1,'VW']]],
+  ['scalar_4446',['SCALAR',['../namespaceVW.html#a4f76045a06b3efe3c5c612b777b6c836a8f3d9a4b6a7b7f2c7afa61ca113d0db9',1,'VW']]],
+  ['scalars_4447',['SCALARS',['../namespaceVW.html#a4f76045a06b3efe3c5c612b777b6c836ae161246454fe724c3d735f5d8e455d03',1,'VW']]],
   ['shared_4448',['SHARED',['../namespaceVW.html#a596fabd45fcdfed3154eb263d035f069a049518eb4dc1859c7cebbe15876cfd63',1,'VW::SHARED()'],['../namespaceVW_1_1slates.html#a894cb7b1b775c40313bbb5e1c4b48a50a049518eb4dc1859c7cebbe15876cfd63',1,'VW::slates::SHARED()']]],
   ['simple_4449',['SIMPLE',['../namespaceVW.html#adf253bc5d95217ce3aadf6e2421dafd2ae5564829e2f85f6a6873a9d5c4f26d09',1,'VW']]],
   ['slates_4450',['SLATES',['../namespaceVW.html#adf253bc5d95217ce3aadf6e2421dafd2af9ebb3617356c80df5627bfd3f4dcc03',1,'VW']]],

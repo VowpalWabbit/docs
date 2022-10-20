@@ -53,7 +53,7 @@ var searchData=
   ['noop_5fsensitivity_1252',['noop_sensitivity',['../namespaceVW_1_1LEARNER_1_1details.html#af31e255ab36c188f849699950b1e1870',1,'VW::LEARNER::details']]],
   ['noop_5fsensitivity_5fbase_1253',['noop_sensitivity_base',['../namespaceVW_1_1LEARNER_1_1details.html#a2a3ed0c6688b367192d52cc5191556e6',1,'VW::LEARNER::details']]],
   ['noop_5fsetup_1254',['noop_setup',['../namespaceVW_1_1reductions.html#a2ec8ed7d06f967f9c6156215863e47d5',1,'VW::reductions']]],
-  ['nopred_1255',['nopred',['../classVW_1_1polyprediction.html#aea73eaac29389ff1538e83401fb135b7',1,'VW::polyprediction::nopred()'],['../namespaceVW.html#a4f76045a06b3efe3c5c612b777b6c836a09eb1413668687809928cc79f86e2886',1,'VW::nopred()']]],
+  ['nopred_1255',['nopred',['../classVW_1_1polyprediction.html#aea73eaac29389ff1538e83401fb135b7',1,'VW::polyprediction::nopred()'],['../namespaceVW.html#a4f76045a06b3efe3c5c612b777b6c836abb648acf3aeb55c0a65c77104d8762cd',1,'VW::NOPRED()']]],
   ['norm_5fthreshold_1256',['NORM_THRESHOLD',['../namespaceVW.html#acd131031ecce56614c90f61159eed290',1,'VW']]],
   ['normal_5fweights_1257',['normal_weights',['../classVW_1_1workspace.html#a890f8994b7d12fbbe4fff83501e12e9a',1,'VW::workspace']]],
   ['normalized_1258',['normalized',['../classparameters.html#a151823ac932181e2ec63a13461bacc17',1,'parameters']]],

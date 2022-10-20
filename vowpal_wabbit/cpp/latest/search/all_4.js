@@ -12,7 +12,7 @@ var searchData=
   ['debug_5flog_2eh_472',['debug_log.h',['../debug__log_8h.html',1,'']]],
   ['debug_5fprint_2eh_473',['debug_print.h',['../debug__print_8h.html',1,'']]],
   ['decayed_5fepsilon_474',['decayed_epsilon',['../namespaceVW_1_1reductions_1_1epsilon__decay.html#ae58e933882ff9ee089780327534eec90',1,'VW::reductions::epsilon_decay']]],
-  ['decision_5fprobs_475',['decision_probs',['../namespaceVW.html#a4f76045a06b3efe3c5c612b777b6c836a0a1107ed44b212cea25e2da842e0cbbe',1,'VW']]],
+  ['decision_5fprobs_475',['DECISION_PROBS',['../namespaceVW.html#a4f76045a06b3efe3c5c612b777b6c836a6d7890c9f626e55a821edc79967480e3',1,'VW']]],
   ['decision_5fscores_476',['decision_scores',['../classVW_1_1polyprediction.html#abf299c143eb5a5b0147e08dd0a7c82ad',1,'VW::polyprediction']]],
   ['decision_5fscores_2eh_477',['decision_scores.h',['../decision__scores_8h.html',1,'']]],
   ['decision_5fscores_5ft_478',['decision_scores_t',['../namespaceVW.html#a3768fd881d5a155fd39197bb5be1c1a4',1,'VW']]],
