@@ -40,10 +40,10 @@ var searchData=
   ['print_5ftext_5fby_5fref_4130',['print_text_by_ref',['../classVW_1_1workspace.html#a19d8bcfae41ec947f53a9e326ed6e435',1,'VW::workspace']]],
   ['priv_4131',['priv',['../classSearch_1_1search.html#a8e29701faa8a29f9ab75817000094dc8',1,'Search::search']]],
   ['prob_4132',['prob',['../classVW_1_1polyprediction.html#ab4de77f432cff44c31c051dbf77bb82f',1,'VW::polyprediction']]],
-  ['probabilities_4133',['probabilities',['../classVW_1_1ccb__outcome.html#a442c55364db2dc7d9539261160a9f25f',1,'VW::ccb_outcome::probabilities()'],['../classDecisionServiceInteraction.html#a2f21287e8b294ecb77353d00be37c981',1,'DecisionServiceInteraction::probabilities()'],['../classVW_1_1slates_1_1label.html#ab80927f353c55f4ffaae1c0df00156fd',1,'VW::slates::label::probabilities()']]],
+  ['probabilities_4133',['probabilities',['../classVW_1_1ccb__outcome.html#a442c55364db2dc7d9539261160a9f25f',1,'VW::ccb_outcome::probabilities()'],['../classVW_1_1details_1_1DecisionServiceInteraction.html#a582ed785bc3a428a0fda8eede44f69cf',1,'VW::details::DecisionServiceInteraction::probabilities()'],['../classVW_1_1slates_1_1label.html#ab80927f353c55f4ffaae1c0df00156fd',1,'VW::slates::label::probabilities()']]],
   ['probability_4134',['probability',['../classCB_1_1cb__class.html#a19e59d902fb4918ba679fa5f73f582ac',1,'CB::cb_class']]],
   ['probability_5ftolerance_4135',['PROBABILITY_TOLERANCE',['../namespaceVW_1_1details.html#ab175f07a065f6aa1fddd69578f64ae3c',1,'VW::details']]],
-  ['probabilityofdrop_4136',['probabilityOfDrop',['../classDecisionServiceInteraction.html#a0e2a393fe1b1427ca5ee5c3fb98ea785',1,'DecisionServiceInteraction']]],
+  ['probabilityofdrop_4136',['probabilityOfDrop',['../classVW_1_1details_1_1DecisionServiceInteraction.html#a476475a1c520853cb962154e53e1a2af',1,'VW::details::DecisionServiceInteraction']]],
   ['progress_5fadd_4137',['progress_add',['../classVW_1_1workspace.html#a9365651f6a3a4f67c5b00cd2f416b116',1,'VW::workspace']]],
   ['progress_5farg_4138',['progress_arg',['../classVW_1_1workspace.html#a61f33a51a9aa8ee569e58bdd344f8d11',1,'VW::workspace']]]
 ];

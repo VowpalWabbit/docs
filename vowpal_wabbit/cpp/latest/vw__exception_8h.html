@@ -138,8 +138,8 @@ Namespaces</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a8d5a15d30c3e6c363f5eea6432bd8780"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vw__exception_8h.html#a8d5a15d30c3e6c363f5eea6432bd8780">VW_EXPORT_EXCEPTION</a>&#160;&#160;&#160;<a class="el" href="vwvis_8h.html#aa47c18e82570992596ce6017e8491fce">VW_DLL_PUBLIC</a></td></tr>
 <tr class="separator:a8d5a15d30c3e6c363f5eea6432bd8780"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fccb4fc71e44089a1b1a77fc76c0b68"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vw__exception_8h.html#a5fccb4fc71e44089a1b1a77fc76c0b68">__FILENAME__</a>&#160;&#160;&#160;(strrchr(__FILE__, '/') ? strrchr(__FILE__, '/') + 1 : __FILE__)</td></tr>
-<tr class="separator:a5fccb4fc71e44089a1b1a77fc76c0b68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7c769e11d0c8cd71631f5e25de14b2e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vw__exception_8h.html#ae7c769e11d0c8cd71631f5e25de14b2e">VW_FILENAME</a>&#160;&#160;&#160;(strrchr(__FILE__, '/') ? strrchr(__FILE__, '/') + 1 : __FILE__)</td></tr>
+<tr class="separator:ae7c769e11d0c8cd71631f5e25de14b2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a08dc7c9e228832f9e243eff236be65"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vw__exception_8h.html#a9a08dc7c9e228832f9e243eff236be65">THROWERRNO</a>(args)</td></tr>
 <tr class="separator:a9a08dc7c9e228832f9e243eff236be65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6418ba1768107875abafe9a0b6b8b2ad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vw__exception_8h.html#a6418ba1768107875abafe9a0b6b8b2ad">THROW</a>(args)</td></tr>
@@ -167,20 +167,6 @@ Functions</h2></td></tr>
 <tr class="separator:a1b035bcd185bb470cfb4dbae9478facd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a5fccb4fc71e44089a1b1a77fc76c0b68"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5fccb4fc71e44089a1b1a77fc76c0b68">&#9670;&nbsp;</a></span>__FILENAME__</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define __FILENAME__&#160;&#160;&#160;(strrchr(__FILE__, '/') ? strrchr(__FILE__, '/') + 1 : __FILE__)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a674dd1ba0db34c463bbf7e37ffef7a7c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a674dd1ba0db34c463bbf7e37ffef7a7c">&#9670;&nbsp;</a></span>_UNUSED</h2>
 
@@ -272,10 +258,10 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    {                                                              \</div>
-<div class="line">      std::ostringstream __msg;                                    \</div>
-<div class="line">      __msg &lt;&lt; args;                                               \</div>
-<div class="line">      throw <a class="code" href="error__data_8h.html#a6409f01255692c377068defac02f819b">VW::vw_exception</a>(<a class="code" href="vw__exception_8h.html#a5fccb4fc71e44089a1b1a77fc76c0b68">__FILENAME__</a>, __LINE__, __msg.str()); \</div>
+<b>Value:</b><div class="fragment"><div class="line">    {                                                             \</div>
+<div class="line">      std::ostringstream __msg;                                   \</div>
+<div class="line">      __msg &lt;&lt; args;                                              \</div>
+<div class="line">      throw <a class="code" href="error__data_8h.html#a6409f01255692c377068defac02f819b">VW::vw_exception</a>(<a class="code" href="vw__exception_8h.html#ae7c769e11d0c8cd71631f5e25de14b2e">VW_FILENAME</a>, __LINE__, __msg.str()); \</div>
 <div class="line">    }</div>
 </div><!-- fragment -->
 </div>
@@ -305,10 +291,10 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    {                                                \</div>
-<div class="line">      std::ostringstream __msg;                      \</div>
-<div class="line">      __msg &lt;&lt; args;                                 \</div>
-<div class="line">      throw ex(<a class="code" href="vw__exception_8h.html#a5fccb4fc71e44089a1b1a77fc76c0b68">__FILENAME__</a>, __LINE__, __msg.str()); \</div>
+<b>Value:</b><div class="fragment"><div class="line">    {                                               \</div>
+<div class="line">      std::ostringstream __msg;                     \</div>
+<div class="line">      __msg &lt;&lt; args;                                \</div>
+<div class="line">      throw ex(<a class="code" href="vw__exception_8h.html#ae7c769e11d0c8cd71631f5e25de14b2e">VW_FILENAME</a>, __LINE__, __msg.str()); \</div>
 <div class="line">    }</div>
 </div><!-- fragment -->
 </div>
@@ -404,11 +390,11 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">      {                                                              \</div>
-<div class="line">        std::ostringstream __msg;                                    \</div>
-<div class="line">        __msg &lt;&lt; args;                                               \</div>
-<div class="line">        __msg &lt;&lt; <span class="stringliteral">&quot;, errno = &quot;</span> &lt;&lt; <a class="code" href="namespaceVW.html#a1b035bcd185bb470cfb4dbae9478facd">VW::strerror_to_string</a>(errno);      \</div>
-<div class="line">        throw <a class="code" href="error__data_8h.html#a6409f01255692c377068defac02f819b">VW::vw_exception</a>(<a class="code" href="vw__exception_8h.html#a5fccb4fc71e44089a1b1a77fc76c0b68">__FILENAME__</a>, __LINE__, __msg.str()); \</div>
+<b>Value:</b><div class="fragment"><div class="line">      {                                                             \</div>
+<div class="line">        std::ostringstream __msg;                                   \</div>
+<div class="line">        __msg &lt;&lt; args;                                              \</div>
+<div class="line">        __msg &lt;&lt; <span class="stringliteral">&quot;, errno = &quot;</span> &lt;&lt; <a class="code" href="namespaceVW.html#a1b035bcd185bb470cfb4dbae9478facd">VW::strerror_to_string</a>(errno);     \</div>
+<div class="line">        throw <a class="code" href="error__data_8h.html#a6409f01255692c377068defac02f819b">VW::vw_exception</a>(<a class="code" href="vw__exception_8h.html#ae7c769e11d0c8cd71631f5e25de14b2e">VW_FILENAME</a>, __LINE__, __msg.str()); \</div>
 <div class="line">      }</div>
 </div><!-- fragment -->
 </div>
@@ -455,13 +441,27 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ae7c769e11d0c8cd71631f5e25de14b2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7c769e11d0c8cd71631f5e25de14b2e">&#9670;&nbsp;</a></span>VW_FILENAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VW_FILENAME&#160;&#160;&#160;(strrchr(__FILE__, '/') ? strrchr(__FILE__, '/') + 1 : __FILE__)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
-<div class="ttc" id="avw__exception_8h_html_a5fccb4fc71e44089a1b1a77fc76c0b68"><div class="ttname"><a href="vw__exception_8h.html#a5fccb4fc71e44089a1b1a77fc76c0b68">__FILENAME__</a></div><div class="ttdeci">#define __FILENAME__</div><div class="ttdef"><b>Definition:</b> vw_exception.h:29</div></div>
 <div class="ttc" id="anamespaceVW_html_a1b035bcd185bb470cfb4dbae9478facd"><div class="ttname"><a href="namespaceVW.html#a1b035bcd185bb470cfb4dbae9478facd">VW::strerror_to_string</a></div><div class="ttdeci">std::string strerror_to_string(int error_number)</div><div class="ttdef"><b>Definition:</b> vw_exception.h:142</div></div>
 <div class="ttc" id="aerror__data_8h_html_a6409f01255692c377068defac02f819b"><div class="ttname"><a href="error__data_8h.html#a6409f01255692c377068defac02f819b">vw_exception</a></div><div class="ttdeci">vw_exception</div><div class="ttdef"><b>Definition:</b> error_data.h:13</div></div>
+<div class="ttc" id="avw__exception_8h_html_ae7c769e11d0c8cd71631f5e25de14b2e"><div class="ttname"><a href="vw__exception_8h.html#ae7c769e11d0c8cd71631f5e25de14b2e">VW_FILENAME</a></div><div class="ttdeci">#define VW_FILENAME</div><div class="ttdef"><b>Definition:</b> vw_exception.h:29</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 21 2022 17:21:07 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Oct 21 2022 19:11:19 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

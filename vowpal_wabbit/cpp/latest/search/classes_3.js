@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['decisionserviceinteraction_2202',['DecisionServiceInteraction',['../classDecisionServiceInteraction.html',1,'']]],
+  ['decisionserviceinteraction_2202',['DecisionServiceInteraction',['../classVW_1_1details_1_1DecisionServiceInteraction.html',1,'VW::details']]],
   ['default_5fcleanup_2203',['default_cleanup',['../classVW_1_1default__cleanup.html',1,'VW']]],
   ['default_5fcleanup_3c_20vw_3a_3aexample_20_3e_2204',['default_cleanup&lt; VW::example &gt;',['../classVW_1_1default__cleanup.html',1,'VW']]],
   ['default_5finitializer_2205',['default_initializer',['../classVW_1_1default__initializer.html',1,'VW']]],

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['named_5flabels_2270',['named_labels',['../classVW_1_1named__labels.html',1,'VW']]],
-  ['namespace_2271',['Namespace',['../classNamespace.html',1,'']]],
+  ['namespace_2271',['Namespace',['../classVW_1_1details_1_1Namespace.html',1,'VW::details']]],
   ['namespace_5fextent_2272',['namespace_extent',['../classVW_1_1namespace__extent.html',1,'VW']]],
   ['no_5flock_5fobject_5fpool_2273',['no_lock_object_pool',['../classVW_1_1no__lock__object__pool.html',1,'VW']]],
   ['no_5flock_5fobject_5fpool_3c_20t_2c_20default_5finitializer_3c_20t_20_3e_2c_20default_5fcleanup_3c_20t_20_3e_20_3e_2274',['no_lock_object_pool&lt; T, default_initializer&lt; T &gt;, default_cleanup&lt; T &gt; &gt;',['../classVW_1_1no__lock__object__pool.html',1,'VW']]],

@@ -23,7 +23,7 @@ var searchData=
   ['learn_5fcount_3984',['learn_count',['../classVW_1_1reductions_1_1cats_1_1tree__node.html#a9d784277d0b84578f4e9ba4785026509',1,'VW::reductions::cats::tree_node']]],
   ['learn_5ff_3985',['learn_f',['../classVW_1_1LEARNER_1_1details_1_1learn__data.html#a2959d6c09447d7a54588b33f24c4b347',1,'VW::LEARNER::details::learn_data']]],
   ['learn_5freturns_5fprediction_3986',['learn_returns_prediction',['../classVW_1_1LEARNER_1_1learner.html#a8cac2d0d662aa9c5206f0709544a9a90',1,'VW::LEARNER::learner']]],
-  ['learner_3987',['learner',['../classvw__dbg.html#a2c56037d4e2c362b5dbd5f692a93da90',1,'vw_dbg']]],
+  ['learner_3987',['LEARNER',['../classvw__dbg.html#a4d20d12825a9a71274d7d67b2fecc33c',1,'vw_dbg']]],
   ['learner_5fptr_3988',['learner_ptr',['../classVW_1_1LEARNER_1_1common__learner__builder.html#a9d7ea9ba35121433bc1a993367471ef0',1,'VW::LEARNER::common_learner_builder']]],
   ['left_3989',['left',['../classVW_1_1continuous__actions_1_1pdf__segment.html#a06bbb545deb2037a44617751e5dd1bb0',1,'VW::continuous_actions::pdf_segment']]],
   ['left_5fid_3990',['left_id',['../classVW_1_1reductions_1_1cats_1_1tree__node.html#ad47b521d919b704c42b856f8b88ea1b2',1,'VW::reductions::cats::tree_node::left_id()'],['../classVW_1_1reductions_1_1offset__tree_1_1tree__node.html#a86135703b0a4baa43981339d92ed3fe9',1,'VW::reductions::offset_tree::tree_node::left_id()']]],

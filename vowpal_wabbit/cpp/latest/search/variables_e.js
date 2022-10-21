@@ -1,10 +1,10 @@
 var searchData=
 [
   ['n_4044',['N',['../classVW_1_1reductions_1_1expreplay_1_1expreplay.html#a2563123c377deacbee6f4ec4fa5051e9',1,'VW::reductions::expreplay::expreplay::N()'],['../classVW_1_1distributionally__robust_1_1Duals.html#ad72686b6b792efe744a034674dc09847',1,'VW::distributionally_robust::Duals::n()']]],
-  ['name_4045',['name',['../classVW_1_1audit__strings.html#aeda51a335733a0481b53d8057c22fdf9',1,'VW::audit_strings::name()'],['../classdictionary__info.html#aafd5bfbc5290ad275067a8cf3397970a',1,'dictionary_info::name()'],['../classNamespace.html#a2344df6d1bc705fc8afa24b2c9c79f57',1,'Namespace::name()'],['../classVW_1_1primitive__feature__space.html#a8f5b0342e8c1f8c6d6e5648d14894a59',1,'VW::primitive_feature_space::name()']]],
+  ['name_4045',['name',['../classVW_1_1audit__strings.html#aeda51a335733a0481b53d8057c22fdf9',1,'VW::audit_strings::name()'],['../classdictionary__info.html#aafd5bfbc5290ad275067a8cf3397970a',1,'dictionary_info::name()'],['../classVW_1_1details_1_1Namespace.html#aa39ee878da9de2280f4d2c0e9cae219e',1,'VW::details::Namespace::name()'],['../classVW_1_1primitive__feature__space.html#a8f5b0342e8c1f8c6d6e5648d14894a59',1,'VW::primitive_feature_space::name()']]],
   ['namespace_5fdictionaries_4046',['namespace_dictionaries',['../classVW_1_1workspace.html#a7a54ee459d452d564df57ff42b799677',1,'VW::workspace']]],
   ['namespace_5fextents_4047',['namespace_extents',['../classfeatures.html#af549d0f8686ce819c6467ff446ff86b3',1,'features']]],
-  ['namespace_5fhash_4048',['namespace_hash',['../classNamespace.html#a1dcb4de5a4b2c43e6e96597dcd438228',1,'Namespace']]],
+  ['namespace_5fhash_4048',['namespace_hash',['../classVW_1_1details_1_1Namespace.html#acd7cf9bef3a7a8dc70084864bbf10ad7',1,'VW::details::Namespace']]],
   ['nb_5fex_5fregressors_4049',['nb_ex_regressors',['../classGEN__CS_1_1cb__to__cs.html#a01035400474484702805476f486fe449',1,'GEN_CS::cb_to_cs']]],
   ['neg_5fnorm_5fpower_4050',['neg_norm_power',['../classGD_1_1gd.html#a440b03aac0a095e7d81b5e00941deb7c',1,'GD::gd']]],
   ['neg_5fpower_5ft_4051',['neg_power_t',['../classGD_1_1gd.html#adaee104cddfb48c5c057c7562f25d38a',1,'GD::gd']]],

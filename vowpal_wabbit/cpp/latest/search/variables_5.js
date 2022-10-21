@@ -17,7 +17,7 @@ var searchData=
   ['eta_5fdecay_5frate_3861',['eta_decay_rate',['../classVW_1_1workspace.html#a657b3989f456fadc02b1067dc3bc1db5',1,'VW::workspace']]],
   ['event_3862',['event',['../classCB__EVAL_1_1label.html#af295a09fa564952d45e7b016fc60e1ff',1,'CB_EVAL::label']]],
   ['event_5fsum_3863',['event_sum',['../classGEN__CS_1_1cb__to__cs__adf.html#a2aad7caed595926fb7fbbd43a653e384',1,'GEN_CS::cb_to_cs_adf']]],
-  ['eventid_3864',['eventId',['../classDecisionServiceInteraction.html#ad0a964d3f92f2a2883eb31ed4de022fc',1,'DecisionServiceInteraction']]],
+  ['eventid_3864',['eventId',['../classVW_1_1details_1_1DecisionServiceInteraction.html#af30a678f62205b782b70a8805d405871',1,'VW::details::DecisionServiceInteraction']]],
   ['example_5fcounter_3865',['example_counter',['../classVW_1_1example.html#ab0bcd64cccdc902261114a3b591c9f58',1,'VW::example::example_counter()'],['../classVW_1_1flat__example.html#a709ef72efc46ef47c3a1948b5a1fb02f',1,'VW::flat_example::example_counter()']]],
   ['example_5fnumber_3866',['example_number',['../classshared__data.html#a0de1ca113ee6d22741ca6737a00cddd0',1,'shared_data']]],
   ['example_5fparser_3867',['example_parser',['../classVW_1_1workspace.html#aee857c5e4d572d09c9243a8f9a9e3aac',1,'VW::workspace']]],

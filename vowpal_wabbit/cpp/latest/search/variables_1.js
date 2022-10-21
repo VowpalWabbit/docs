@@ -5,7 +5,7 @@ var searchData=
   ['action_5fcosts_3707',['ACTION_COSTS',['../namespaceSearch.html#a86ee04bcb8443067b54b85e38e876cab',1,'Search']]],
   ['action_5fsum_3708',['action_sum',['../classGEN__CS_1_1cb__to__cs__adf.html#a603aadff469c9a586f031e2833c2e076',1,'GEN_CS::cb_to_cs_adf']]],
   ['action_5ftype_3709',['ACTION_TYPE',['../namespaceVW_1_1details.html#a23686bb949764499f34dbeb4ef323973',1,'VW::details']]],
-  ['actions_3710',['actions',['../classDecisionServiceInteraction.html#a5dc3dbcb448871ba574eeb0eb2f3838c',1,'DecisionServiceInteraction']]],
+  ['actions_3710',['actions',['../classVW_1_1details_1_1DecisionServiceInteraction.html#a8ced3552a0f913e4162741650cc29991',1,'VW::details::DecisionServiceInteraction']]],
   ['active_3711',['active',['../classVW_1_1workspace.html#a13db26d284e2ec61861eaceb12b230f9',1,'VW::workspace']]],
   ['active_5fc0_3712',['active_c0',['../classVW_1_1reductions_1_1active.html#a841bcbdf85755e76c12172c91aefa72b',1,'VW::reductions::active']]],
   ['active_5fmulticlass_3713',['active_multiclass',['../classVW_1_1polyprediction.html#a3cac575939db13cde68b4c1356733114',1,'VW::polyprediction']]],

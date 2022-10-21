@@ -1,8 +1,8 @@
 var searchData=
 [
   ['f_3875',['f',['../unionexploration_1_1int__float.html#aae7ba8412357e474898bc44bc43ab394',1,'exploration::int_float']]],
-  ['feature_5fcount_3876',['feature_count',['../classNamespace.html#aa7695877ea34d84f25a12c44def2347b',1,'Namespace']]],
-  ['feature_5fgroup_3877',['feature_group',['../classNamespace.html#a7ba33baa864fb7a27d078a97cf842be7',1,'Namespace']]],
+  ['feature_5fcount_3876',['feature_count',['../classVW_1_1details_1_1Namespace.html#abc9267873b0f06e5c82d28ad5d2839f4',1,'VW::details::Namespace']]],
+  ['feature_5fgroup_3877',['feature_group',['../classVW_1_1details_1_1Namespace.html#a73ffd7735c26a96884a48cfdd50ac11a',1,'VW::details::Namespace']]],
   ['feature_5flist_3878',['feature_list',['../classVW_1_1parsers_1_1csv__parser.html#a049f7a104c7ee6c8daa436a867d41bf1',1,'VW::parsers::csv_parser']]],
   ['feature_5fmask_3879',['feature_mask',['../classVW_1_1workspace.html#a2b69dfb1a44e46fbaa0ba40ab05e0ad8',1,'VW::workspace']]],
   ['feature_5fspace_3880',['feature_space',['../classVW_1_1example__predict.html#aff83d481714c0efece6cdec03f4cf6bb',1,'VW::example_predict']]],
@@ -23,6 +23,6 @@ var searchData=
   ['frame_5fpool_3895',['frame_pool',['../classVW_1_1details_1_1generate__interactions__object__cache.html#ad201999fa5b43545d9c1b45c3a6b988e',1,'VW::details::generate_interactions_object_cache']]],
   ['fs_3896',['fs',['../classVW_1_1flat__example.html#ada7dfc5df3473964d69cd361be424508',1,'VW::flat_example::fs()'],['../classVW_1_1primitive__feature__space.html#a7196cfc91add16e07c8ff2d442c640e3',1,'VW::primitive_feature_space::fs()']]],
   ['ft_5foffset_3897',['ft_offset',['../classVW_1_1flat__example.html#a3459cb3ce9e89949f3349c447e579c7b',1,'VW::flat_example::ft_offset()'],['../classVW_1_1example__predict.html#a538c4e64a1b4a0de9efbb9b81750cb86',1,'VW::example_predict::ft_offset()']]],
-  ['ftrs_3898',['ftrs',['../classNamespace.html#af7140895e79fff354ad484f6c5fb463f',1,'Namespace']]],
+  ['ftrs_3898',['ftrs',['../classVW_1_1details_1_1Namespace.html#aadf49045b8841007f71ad2e7c6814e2a',1,'VW::details::Namespace']]],
   ['func_3899',['func',['../classVW_1_1LEARNER_1_1details_1_1func__data.html#af3de34062533b36a0defaf2e5443c5a3',1,'VW::LEARNER::details::func_data']]]
 ];
