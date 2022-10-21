@@ -20,7 +20,7 @@ var searchData=
   ['action_5fsum_64',['action_sum',['../classGEN__CS_1_1cb__to__cs__adf.html#a603aadff469c9a586f031e2833c2e076',1,'GEN_CS::cb_to_cs_adf']]],
   ['action_5ftype_65',['ACTION_TYPE',['../namespaceVW_1_1details.html#a23686bb949764499f34dbeb4ef323973',1,'VW::details']]],
   ['actions_66',['actions',['../classDecisionServiceInteraction.html#a5dc3dbcb448871ba574eeb0eb2f3838c',1,'DecisionServiceInteraction']]],
-  ['active_67',['active',['../classVW_1_1reductions_1_1active.html',1,'VW::reductions::active'],['../classBeam_1_1beam__element.html#a60ae4810410bb735e6af202cf7ffc131',1,'Beam::beam_element::active()'],['../classVW_1_1workspace.html#a13db26d284e2ec61861eaceb12b230f9',1,'VW::workspace::active()'],['../classVW_1_1reductions_1_1active.html#a9648272954663b5c43144e55be56b063',1,'VW::reductions::active::active()']]],
+  ['active_67',['active',['../classVW_1_1reductions_1_1active.html',1,'VW::reductions::active'],['../classVW_1_1workspace.html#a13db26d284e2ec61861eaceb12b230f9',1,'VW::workspace::active()'],['../classVW_1_1reductions_1_1active.html#a9648272954663b5c43144e55be56b063',1,'VW::reductions::active::active()']]],
   ['active_2eh_68',['active.h',['../active_8h.html',1,'']]],
   ['active_5fc0_69',['active_c0',['../classVW_1_1reductions_1_1active.html#a841bcbdf85755e76c12172c91aefa72b',1,'VW::reductions::active']]],
   ['active_5fcover_2eh_70',['active_cover.h',['../active__cover_8h.html',1,'']]],

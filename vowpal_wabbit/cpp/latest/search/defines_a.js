@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['s_5fexploration_5fok_4513',['S_EXPLORATION_OK',['../explore_8h.html#a9819e7e96cd7591d9b59397d49860721',1,'explore.h']]],
-  ['sprintf_5fs_4514',['sprintf_s',['../crossplat__compat_8h.html#a6b6019110450b61a0b4acc55d7d336ca',1,'crossplat_compat.h']]],
-  ['strtok_5fs_4515',['strtok_s',['../crossplat__compat_8h.html#a832190fda79639e68038e8a2c0e2df02',1,'crossplat_compat.h']]]
+  ['throw_4486',['THROW',['../vw__exception_8h.html#a6418ba1768107875abafe9a0b6b8b2ad',1,'vw_exception.h']]],
+  ['throw_5fex_4487',['THROW_EX',['../vw__exception_8h.html#ad50abb70f1329aeedfb472f419c37494',1,'vw_exception.h']]],
+  ['throw_5for_5freturn_4488',['THROW_OR_RETURN',['../vw__exception_8h.html#ac56b8975466c9f2f8c864a7ca2058648',1,'vw_exception.h']]],
+  ['throw_5for_5freturn_5fnormal_4489',['THROW_OR_RETURN_NORMAL',['../vw__exception_8h.html#aed3f502493ab3d4d5331e89c6f9d213e',1,'vw_exception.h']]],
+  ['throw_5for_5freturn_5fvoid_4490',['THROW_OR_RETURN_VOID',['../vw__exception_8h.html#a02be463b33311c472f114b68bc40b910',1,'vw_exception.h']]],
+  ['throwerrno_4491',['THROWERRNO',['../vw__exception_8h.html#a9a08dc7c9e228832f9e243eff236be65',1,'vw_exception.h']]]
 ];

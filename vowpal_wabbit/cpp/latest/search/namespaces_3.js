@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['depparsertask_2385',['DepParserTask',['../namespaceDepParserTask.html',1,'']]]
+  ['entityrelationtask_2369',['EntityRelationTask',['../namespaceEntityRelationTask.html',1,'']]],
+  ['exploration_2370',['exploration',['../namespaceexploration.html',1,'']]]
 ];

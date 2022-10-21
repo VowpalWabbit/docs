@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['cdbg_4494',['cdbg',['../search_8h.html#a8951b71186b3b14ce155d67282587812',1,'cdbg():&#160;search.h'],['../search_8h.html#a8951b71186b3b14ce155d67282587812',1,'cdbg():&#160;search.h']]],
-  ['closesock_4495',['CLOSESOCK',['../allreduce_8h.html#a35da5532d470440b1afd69338e9053a8',1,'CLOSESOCK():&#160;allreduce.h'],['../spanning__tree_8h.html#a35da5532d470440b1afd69338e9053a8',1,'CLOSESOCK():&#160;spanning_tree.h']]],
-  ['correctedexp_4496',['correctedExp',['../correctedMath_8h.html#a9c796fdb44524ba9db47d99c594e3519',1,'correctedMath.h']]]
+  ['declare_5fmetatask_4467',['DECLARE_METATASK',['../search__meta_8h.html#aa9b72618a93bed688124de4212d654bd',1,'search_meta.h']]],
+  ['default_5ftolerance_4468',['DEFAULT_TOLERANCE',['../vw__math_8h.html#a0e355e0dcb761f1b89524e0e77fd14bd',1,'vw_math.h']]]
 ];
