@@ -98,6 +98,7 @@ $(document).ready(function(){initNavTree('rl_sim_8cc-example.html',''); initResi
 <div class="contents">
 <div class="fragment"><div class="line"><span class="preprocessor">#include &quot;constants.h&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="live__model_8h.html">live_model.h</a>&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;local_loop.h&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &quot;multistep.h&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &quot;person.h&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &quot;rand48.h&quot;</span></div>
@@ -469,6 +470,8 @@ $(document).ready(function(){initNavTree('rl_sim_8cc-example.html',''); initResi
 <div class="line">{</div>
 <div class="line">  r::api_status status;</div>
 <div class="line">  u::configuration config;</div>
+<div class="line"> </div>
+<div class="line">  <span class="keywordtype">bool</span> local_loop = <span class="keyword">false</span>;</div>
 <div class="line">  <span class="comment">// Load configuration from json config file</span></div>
 <div class="line">  <span class="keyword">const</span> <span class="keyword">auto</span> config_file = _options[<span class="stringliteral">&quot;json_config&quot;</span>].as&lt;std::string&gt;();</div>
 <div class="line">  <span class="keywordflow">if</span> (load_config_from_json(config_file, config, &amp;status) != err::success)</div>
@@ -477,15 +480,50 @@ $(document).ready(function(){initNavTree('rl_sim_8cc-example.html',''); initResi
 <div class="line">    <span class="keywordflow">return</span> -1;</div>
 <div class="line">  }</div>
 <div class="line"> </div>
+<div class="line">  <span class="keywordflow">if</span> (_options[<span class="stringliteral">&quot;local_loop&quot;</span>].as&lt;bool&gt;())</div>
+<div class="line">  {</div>
+<div class="line">    local_loop = <span class="keyword">true</span>;</div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Using --local_loop, replacing some config vars.&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line">    <span class="keywordflow">if</span> (_loop_kind != CB)</div>
+<div class="line">    {</div>
+<div class="line">      std::cerr &lt;&lt; <span class="stringliteral">&quot;--local_loop can only be used with cb.&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line">      <span class="keywordflow">return</span> -1;</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    config.set(r::name::INTERACTION_SENDER_IMPLEMENTATION, <span class="stringliteral">&quot;LOCAL_MODEL&quot;</span>);</div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Setting &quot;</span> &lt;&lt; r::name::INTERACTION_SENDER_IMPLEMENTATION &lt;&lt; <span class="stringliteral">&quot;=LOCAL_MODEL&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line">    config.set(r::name::OBSERVATION_SENDER_IMPLEMENTATION, <span class="stringliteral">&quot;LOCAL_MODEL&quot;</span>);</div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Setting &quot;</span> &lt;&lt; r::name::OBSERVATION_SENDER_IMPLEMENTATION &lt;&lt; <span class="stringliteral">&quot;=LOCAL_MODEL&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line">    config.set(r::name::MODEL_SRC, <span class="stringliteral">&quot;LOCAL_MODEL&quot;</span>);</div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Setting &quot;</span> &lt;&lt; r::name::MODEL_SRC &lt;&lt; <span class="stringliteral">&quot;=LOCAL_MODEL&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line">    config.set(r::name::MODEL_IMPLEMENTATION, <span class="stringliteral">&quot;VW&quot;</span>);</div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Setting &quot;</span> &lt;&lt; r::name::MODEL_IMPLEMENTATION &lt;&lt; <span class="stringliteral">&quot;=VW&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line">    config.set(r::name::PROTOCOL_VERSION, <span class="stringliteral">&quot;2&quot;</span>);</div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Setting &quot;</span> &lt;&lt; r::name::PROTOCOL_VERSION &lt;&lt; <span class="stringliteral">&quot;=2&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line">    config.set(r::name::OBSERVATION_SEND_BATCH_INTERVAL_MS, <span class="stringliteral">&quot;100&quot;</span>);</div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Setting &quot;</span> &lt;&lt; r::name::OBSERVATION_SEND_BATCH_INTERVAL_MS &lt;&lt; <span class="stringliteral">&quot;=100&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line">    config.set(r::name::MODEL_REFRESH_INTERVAL_MS, <span class="stringliteral">&quot;2000&quot;</span>);</div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Setting &quot;</span> &lt;&lt; r::name::MODEL_REFRESH_INTERVAL_MS &lt;&lt; <span class="stringliteral">&quot;=2000&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line">  }</div>
+<div class="line"> </div>
 <div class="line">  <span class="keywordflow">if</span> (_options[<span class="stringliteral">&quot;log_to_file&quot;</span>].as&lt;bool&gt;())</div>
 <div class="line">  {</div>
+<div class="line">    <span class="keywordflow">if</span> (local_loop)</div>
+<div class="line">    {</div>
+<div class="line">      std::cerr &lt;&lt; <span class="stringliteral">&quot;--local_loop and --log_to_file can&#39;t be used together.&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line">      <span class="keywordflow">return</span> -1;</div>
+<div class="line">    }</div>
 <div class="line">    config.set(r::name::INTERACTION_SENDER_IMPLEMENTATION, r::value::INTERACTION_FILE_SENDER);</div>
 <div class="line">    config.set(r::name::OBSERVATION_SENDER_IMPLEMENTATION, r::value::OBSERVATION_FILE_SENDER);</div>
 <div class="line">  }</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordflow">if</span> (!_options[<span class="stringliteral">&quot;get_model&quot;</span>].as&lt;bool&gt;())</div>
 <div class="line">  {</div>
-<div class="line">    <span class="comment">// Set the time provider to the clock time provider</span></div>
+<div class="line">    <span class="keywordflow">if</span> (local_loop)</div>
+<div class="line">    {</div>
+<div class="line">      std::cerr &lt;&lt; <span class="stringliteral">&quot;--local_loop and --get_model can&#39;t be used together.&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line">      <span class="keywordflow">return</span> -1;</div>
+<div class="line">    }</div>
 <div class="line">    config.set(r::name::MODEL_SRC, r::value::NO_MODEL_DATA);</div>
 <div class="line">  }</div>
 <div class="line"> </div>
@@ -497,6 +535,26 @@ $(document).ready(function(){initNavTree('rl_sim_8cc-example.html',''); initResi
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Trace log API calls to the console</span></div>
 <div class="line">  <span class="keywordflow">if</span> (!_quiet) { config.set(r::name::TRACE_LOG_IMPLEMENTATION, r::value::CONSOLE_TRACE_LOGGER); }</div>
+<div class="line"> </div>
+<div class="line">  <span class="keywordflow">if</span> (local_loop)</div>
+<div class="line">  {</div>
+<div class="line">    _local_model = std::unique_ptr&lt;local_model&gt;(<span class="keyword">new</span> local_model);</div>
+<div class="line">    <span class="keyword">auto</span>* raw_local_model = _local_model.get();</div>
+<div class="line">    r::data_transport_factory.register_type(<span class="stringliteral">&quot;LOCAL_MODEL&quot;</span>,</div>
+<div class="line">        [raw_local_model](r::model_management::i_data_transport** retval, <span class="keyword">const</span> r::utility::configuration&amp; config,</div>
+<div class="line">            r::i_trace* trace_logger, r::api_status* status) {</div>
+<div class="line">          raw_local_model-&gt;set_trace_logger(trace_logger);</div>
+<div class="line">          *retval = <span class="keyword">new</span> local_model_proxy(raw_local_model);</div>
+<div class="line">          <span class="keywordflow">return</span> 0;</div>
+<div class="line">        });</div>
+<div class="line">    r::sender_factory.register_type(<span class="stringliteral">&quot;LOCAL_MODEL&quot;</span>,</div>
+<div class="line">        [raw_local_model](r::i_sender** retval, <span class="keyword">const</span> r::utility::configuration&amp; config, r::error_callback_fn* error_cb,</div>
+<div class="line">            r::i_trace* trace_logger, r::api_status* status) {</div>
+<div class="line">          raw_local_model-&gt;set_trace_logger(trace_logger);</div>
+<div class="line">          *retval = <span class="keyword">new</span> local_model_proxy(raw_local_model);</div>
+<div class="line">          <span class="keywordflow">return</span> 0;</div>
+<div class="line">        });</div>
+<div class="line">  }</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Initialize the API</span></div>
 <div class="line">  _rl = std::unique_ptr&lt;r::live_model&gt;(<span class="keyword">new</span> r::live_model(config, _on_error, <span class="keyword">this</span>));</div>
