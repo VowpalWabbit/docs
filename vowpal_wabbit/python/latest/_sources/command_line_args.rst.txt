@@ -5258,6 +5258,198 @@ first_only
 Only explore the first action in a tie-breaking event
 
 
+[Reduction] Experimental: Contextual Bandit Exploration with ADF with large action space filtering Options
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+cb_explore_adf
+""""""""""""""
+
+.. code-block::
+
+    --cb_explore_adf
+
+
+.. raw:: html
+
+    <span class="option-tag">
+        <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
+    </span>
+
+
+.. raw:: html
+
+    <span class="option-tag">
+        <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
+    </span>
+
+
+Online explore-exploit for a contextual bandit problem with multiline action dependent features
+
+
+
+large_action_space
+""""""""""""""""""
+
+.. code-block::
+
+    --large_action_space
+
+
+.. raw:: html
+
+    <span class="option-tag">
+        <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
+    </span>
+
+
+.. raw:: html
+
+    <span class="option-tag">
+        <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
+    </span>
+
+
+.. raw:: html
+
+    <a href="https://github.com/VowpalWabbit/vowpal_wabbit/wiki/Experimental">
+        <span class="option-tag option-warning">
+            <abbr title="This option is subject to change.">experimental</abbr>
+        </span>
+    </a>
+
+Large action space filtering
+
+
+
+max_actions
+"""""""""""
+
+.. code-block::
+
+    --max_actions <uint> (default: 20)
+
+
+.. raw:: html
+
+    <span class="option-tag">
+        <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
+    </span>
+
+
+
+.. raw:: html
+
+    <a href="https://github.com/VowpalWabbit/vowpal_wabbit/wiki/Experimental">
+        <span class="option-tag option-warning">
+            <abbr title="This option is subject to change.">experimental</abbr>
+        </span>
+    </a>
+
+Max number of actions to hold
+
+
+
+spanner_c
+"""""""""
+
+.. code-block::
+
+    --spanner_c <float> (default: 2)
+
+
+.. raw:: html
+
+    <span class="option-tag">
+        <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
+    </span>
+
+
+
+.. raw:: html
+
+    <a href="https://github.com/VowpalWabbit/vowpal_wabbit/wiki/Experimental">
+        <span class="option-tag option-warning">
+            <abbr title="This option is subject to change.">experimental</abbr>
+        </span>
+    </a>
+
+Parameter for computing c-approximate spanner
+
+
+
+full_predictions
+""""""""""""""""
+
+.. code-block::
+
+    --full_predictions
+
+
+
+
+.. raw:: html
+
+    <a href="https://github.com/VowpalWabbit/vowpal_wabbit/wiki/Experimental">
+        <span class="option-tag option-warning">
+            <abbr title="This option is subject to change.">experimental</abbr>
+        </span>
+    </a>
+
+Full representation of the prediction's action probabilities, if not specified filtered out actions will not appear in the final predictions. If specified, filtered out actions will appear with a probability of zero
+
+
+
+thread_pool_size
+""""""""""""""""
+
+.. code-block::
+
+    --thread_pool_size <uint>
+
+
+
+
+Number of threads in the thread pool that will be used when running with one pass svd implementation (default svd implementation option). Default thread pool size will be half of the available hardware threads
+
+
+
+block_size
+""""""""""
+
+.. code-block::
+
+    --block_size <uint> (default: 0)
+
+
+
+
+Number of actions in a block to be scheduled for multithreading when using one pass svd implementation (by default, block_size = num_actions / thread_pool_size)
+
+
+
+two_pass_svd
+""""""""""""
+
+.. code-block::
+
+    --two_pass_svd
+
+
+
+
+.. raw:: html
+
+    <a href="https://github.com/VowpalWabbit/vowpal_wabbit/wiki/Experimental">
+        <span class="option-tag option-warning">
+            <abbr title="This option is subject to change.">experimental</abbr>
+        </span>
+    </a>
+
+A more accurate svd that is much slower than the default (one pass svd)
+
+
 [Reduction] Contextual Bandit Exploration Options
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
