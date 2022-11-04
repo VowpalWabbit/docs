@@ -705,6 +705,45 @@ const thebe_selector_output = ".output, .cell_output"
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">KeyboardInterrupt</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span> <span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">line</span> <span class="mi">9</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="k">for</span> <span class="n">ep</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mi">11</span><span class="p">):</span>
+<span class="g g-Whitespace">      </span><span class="mi">8</span>     <span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--cb_explore_adf -q UA --quiet --epsilon &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">ep</span><span class="p">))</span>
+<span class="ne">----&gt; </span><span class="mi">9</span>     <span class="n">ctr</span> <span class="o">=</span> <span class="n">run_simulation</span><span class="p">(</span>
+<span class="g g-Whitespace">     </span><span class="mi">10</span>         <span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">users</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">get_cost</span><span class="p">,</span> <span class="n">switch_rewards</span>
+<span class="g g-Whitespace">     </span><span class="mi">11</span>     <span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">12</span>     <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_iterations</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">ctr</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">13</span>     <span class="n">leg</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">ep</span><span class="p">))</span>
+
+<span class="nn">Cell In [1], line 138,</span> in <span class="ni">run_simulation</span><span class="nt">(vw, num_iterations, users, times_of_day, actions, cost_function, switch_rewards, do_learn)</span>
+<span class="g g-Whitespace">    </span><span class="mi">133</span>     <span class="n">vw_format</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">134</span>         <span class="n">to_vw_example_format</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="p">(</span><span class="n">action</span><span class="p">,</span> <span class="n">cost</span><span class="p">,</span> <span class="n">prob</span><span class="p">)),</span>
+<span class="g g-Whitespace">    </span><span class="mi">135</span>         <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">LabelType</span><span class="o">.</span><span class="n">CONTEXTUAL_BANDIT</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">136</span>     <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">137</span>     <span class="c1"># 6. Learn</span>
+<span class="ne">--&gt; </span><span class="mi">138</span>     <span class="n">vw</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">vw_format</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">140</span> <span class="c1"># We negate this so that on the plot instead of minimizing cost, we are maximizing reward</span>
+<span class="g g-Whitespace">    </span><span class="mi">141</span> <span class="n">ctr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span> <span class="o">*</span> <span class="n">cost_sum</span> <span class="o">/</span> <span class="n">i</span><span class="p">)</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/vowpalwabbit/pyvw.py:664,</span> in <span class="ni">Workspace.learn</span><span class="nt">(self, ec)</span>
+<span class="g g-Whitespace">    </span><span class="mi">661</span>     <span class="n">pylibvw</span><span class="o">.</span><span class="n">vw</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ec</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">663</span> <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">ec</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+<span class="ne">--&gt; </span><span class="mi">664</span>     <span class="n">pylibvw</span><span class="o">.</span><span class="n">vw</span><span class="o">.</span><span class="n">learn_multi</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ec</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">666</span> <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">667</span>     <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">668</span>         <span class="s2">&quot;expecting string or example object as ec argument for learn,&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">669</span>         <span class="s2">&quot; got </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="nb">type</span><span class="p">(</span><span class="n">ec</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">670</span>     <span class="p">)</span>
+
+<span class="ne">KeyboardInterrupt</span>: 
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 1200x720 with 0 Axes&gt;
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">

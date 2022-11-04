@@ -36,7 +36,7 @@ var searchData=
   ['scorer_5fsetup_1609',['scorer_setup',['../namespaceVW_1_1reductions.html#a45b22144d5d541e8ff3abda551832ca9',1,'VW::reductions']]],
   ['scores_5ft_1610',['scores_t',['../classVW_1_1reductions_1_1offset__tree_1_1offset__tree.html#a79ae9c20d2265a9ce0d78621829d4203',1,'VW::reductions::offset_tree::offset_tree']]],
   ['sd_1611',['sd',['../classVW_1_1workspace.html#aa3976f0cce4f766bf158839f19cbb350',1,'VW::workspace']]],
-  ['search_1612',['search',['../classSearch_1_1search.html',1,'Search::search'],['../namespaceSearch.html',1,'Search'],['../classvw__dbg.html#a773167f3be5e3ab11df93bc7fd62ecc2',1,'vw_dbg::SEARCH()'],['../classSearch_1_1search.html#a43f210a82e87d89f35b5e2b4464172a7',1,'Search::search::search()']]],
+  ['search_1612',['search',['../classSearch_1_1search.html',1,'Search::search'],['../namespaceSearch.html',1,'Search'],['../classSearch_1_1search.html#a43f210a82e87d89f35b5e2b4464172a7',1,'Search::search::search()'],['../classvw__dbg.html#a773167f3be5e3ab11df93bc7fd62ecc2',1,'vw_dbg::SEARCH()']]],
   ['search_2eh_1613',['search.h',['../search_8h.html',1,'']]],
   ['search_5fdep_5fparser_2eh_1614',['search_dep_parser.h',['../search__dep__parser_8h.html',1,'']]],
   ['search_5fentityrelationtask_2eh_1615',['search_entityrelationtask.h',['../search__entityrelationtask_8h.html',1,'']]],
