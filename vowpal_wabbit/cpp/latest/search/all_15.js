@@ -22,8 +22,9 @@ var searchData=
   ['update_5ff_1930',['update_f',['../classVW_1_1LEARNER_1_1details_1_1learn__data.html#a925c6335bd811bf24016ad9f5e6bc373',1,'VW::LEARNER::details::learn_data']]],
   ['update_5finteractions_5fif_5fnew_5fnamespace_5fseen_1931',['update_interactions_if_new_namespace_seen',['../classINTERACTIONS_1_1interactions__generator.html#a1ac90c2a9db9000d2ad3ba15a4254135',1,'INTERACTIONS::interactions_generator']]],
   ['update_5fmultiplier_1932',['update_multiplier',['../classGD_1_1gd.html#a35d42b9b3ef747b8da23d713e9cc6028',1,'GD::gd']]],
-  ['update_5fstatistics_1933',['update_statistics',['../classCB__ADF_1_1cb__adf.html#a911635753a7f008770499af7efae7847',1,'CB_ADF::cb_adf']]],
-  ['update_5fweights_1934',['update_weights',['../classVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#a94eb1e331e07da9a473918c9a32d72d4',1,'VW::reductions::epsilon_decay::epsilon_decay_data']]],
-  ['updated_5fprediction_1935',['updated_prediction',['../classVW_1_1example.html#aa8000eb1844bf87ad4eaffed342f6206',1,'VW::example']]],
-  ['upper_5fbound_1936',['upper_bound',['../classVW_1_1confidence__sequence.html#a91f7b68e8949edc8fde95d08f011525a',1,'VW::confidence_sequence::upper_bound()'],['../classVW_1_1cressieread__estimator.html#a1ac6a95b159457542ed4111f7001d369',1,'VW::cressieread_estimator::upper_bound()']]]
+  ['update_5fpredictions_1933',['update_predictions',['../classVW_1_1reductions_1_1cb__actions__mask.html#a440d04c4abc732d13828af72bf08fd29',1,'VW::reductions::cb_actions_mask']]],
+  ['update_5fstatistics_1934',['update_statistics',['../classCB__ADF_1_1cb__adf.html#a911635753a7f008770499af7efae7847',1,'CB_ADF::cb_adf']]],
+  ['update_5fweights_1935',['update_weights',['../classVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#a94eb1e331e07da9a473918c9a32d72d4',1,'VW::reductions::epsilon_decay::epsilon_decay_data']]],
+  ['updated_5fprediction_1936',['updated_prediction',['../classVW_1_1example.html#aa8000eb1844bf87ad4eaffed342f6206',1,'VW::example']]],
+  ['upper_5fbound_1937',['upper_bound',['../classVW_1_1confidence__sequence.html#a91f7b68e8949edc8fde95d08f011525a',1,'VW::confidence_sequence::upper_bound()'],['../classVW_1_1cressieread__estimator.html#a1ac6a95b159457542ed4111f7001d369',1,'VW::cressieread_estimator::upper_bound()']]]
 ];
