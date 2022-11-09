@@ -6,7 +6,7 @@ var api__status_8h =
     [ "RETURN_ERROR_ARG", "api__status_8h.html#a5ac9ce264224243c932dcfccb4c37507", null ],
     [ "RETURN_ERROR_LS", "api__status_8h.html#ae53bad0e4f12115d8d210228f0d5c1ae", null ],
     [ "RETURN_IF_FAIL", "api__status_8h.html#a11385635c23358843d733b2e6f3241c4", null ],
-    [ "operator<<", "api__status_8h.html#ad10029838f334adb4d27a2011cf9d14e", null ],
+    [ "operator<<", "api__status_8h.html#aae816c7c9d77fb9ce1aa358cd2958439", null ],
     [ "report_error", "api__status_8h.html#a5a7c7e398b69d8a9caff1ab2e11653cb", null ],
     [ "report_error", "api__status_8h.html#a0dd2105552e59675ceb4b0f609da2089", null ],
     [ "report_error", "api__status_8h.html#abc3d282d1eebc79213d2075d3ce845cd", null ],
