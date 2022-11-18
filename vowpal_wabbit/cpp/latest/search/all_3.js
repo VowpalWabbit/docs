@@ -20,7 +20,7 @@ var searchData=
   ['capacity_215',['capacity',['../classVW_1_1v__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_33e27e9ce8c36a8ad45bb4ffa0ccdb7cc.html#a9a1401ad95c2a26fbc70cfdbc9bc761d',1,'VW::v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;']]],
   ['cast_5fsigned_5fto_5funsigned_216',['cast_signed_to_unsigned',['../namespaceVW.html#ab77eacf4a0ad7002efc6ffdaf20fad9f',1,'VW']]],
   ['cast_5fto_5fsmaller_5ftype_217',['cast_to_smaller_type',['../namespaceVW.html#a307838cf95f16718e3b1499033a79a81',1,'VW']]],
-  ['cats_218',['cats',['../classVW_1_1reductions_1_1cats_1_1cats.html',1,'VW::reductions::cats::cats'],['../classvw__dbg.html#a7773429b87968def9354796a4a2246a7',1,'vw_dbg::CATS()'],['../classVW_1_1reductions_1_1cats_1_1cats.html#a080e8974a1beac1483e068d1f56fab51',1,'VW::reductions::cats::cats::cats()']]],
+  ['cats_218',['cats',['../classVW_1_1reductions_1_1cats_1_1cats.html',1,'VW::reductions::cats::cats'],['../classVW_1_1reductions_1_1cats_1_1cats.html#a080e8974a1beac1483e068d1f56fab51',1,'VW::reductions::cats::cats::cats()'],['../classvw__dbg.html#a7773429b87968def9354796a4a2246a7',1,'vw_dbg::CATS()']]],
   ['cats_2eh_219',['cats.h',['../cats_8h.html',1,'']]],
   ['cats_5fpdf_220',['CATS_PDF',['../classvw__dbg.html#a205303033435342ca63854ab9fc01c72',1,'vw_dbg']]],
   ['cats_5fpdf_2eh_221',['cats_pdf.h',['../cats__pdf_8h.html',1,'']]],
