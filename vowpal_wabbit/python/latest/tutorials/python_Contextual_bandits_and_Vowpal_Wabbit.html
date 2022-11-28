@@ -817,7 +817,7 @@ shared | s_1 s_2
 <p>Begin by loading the required Python packages:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>import pandas as pd
 </pre></div>
 </div>
 </div>
@@ -825,54 +825,54 @@ shared | s_1 s_2
 <p>Now, generate some sample training data that could originate from previous random trial (for example A/B test) for the contextual bandit to explore:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">train_data</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="p">{</span>
-        <span class="s2">&quot;action&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-        <span class="s2">&quot;cost&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
-        <span class="s2">&quot;probability&quot;</span><span class="p">:</span> <span class="mf">0.4</span><span class="p">,</span>
-        <span class="s2">&quot;feature1&quot;</span><span class="p">:</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;feature2&quot;</span><span class="p">:</span> <span class="s2">&quot;c&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;feature3&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="s2">&quot;action&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
-        <span class="s2">&quot;cost&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="s2">&quot;probability&quot;</span><span class="p">:</span> <span class="mf">0.2</span><span class="p">,</span>
-        <span class="s2">&quot;feature1&quot;</span><span class="p">:</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;feature2&quot;</span><span class="p">:</span> <span class="s2">&quot;d&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;feature3&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="s2">&quot;action&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
-        <span class="s2">&quot;cost&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-        <span class="s2">&quot;probability&quot;</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">,</span>
-        <span class="s2">&quot;feature1&quot;</span><span class="p">:</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;feature2&quot;</span><span class="p">:</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;feature3&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="s2">&quot;action&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
-        <span class="s2">&quot;cost&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-        <span class="s2">&quot;probability&quot;</span><span class="p">:</span> <span class="mf">0.3</span><span class="p">,</span>
-        <span class="s2">&quot;feature1&quot;</span><span class="p">:</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;feature2&quot;</span><span class="p">:</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;feature3&quot;</span><span class="p">:</span> <span class="s2">&quot;c&quot;</span><span class="p">,</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="s2">&quot;action&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
-        <span class="s2">&quot;cost&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-        <span class="s2">&quot;probability&quot;</span><span class="p">:</span> <span class="mf">0.7</span><span class="p">,</span>
-        <span class="s2">&quot;feature1&quot;</span><span class="p">:</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;feature2&quot;</span><span class="p">:</span> <span class="s2">&quot;d&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;feature3&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
-    <span class="p">},</span>
-<span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>train_data = [
+    {
+        &quot;action&quot;: 1,
+        &quot;cost&quot;: 2,
+        &quot;probability&quot;: 0.4,
+        &quot;feature1&quot;: &quot;a&quot;,
+        &quot;feature2&quot;: &quot;c&quot;,
+        &quot;feature3&quot;: &quot;&quot;,
+    },
+    {
+        &quot;action&quot;: 3,
+        &quot;cost&quot;: 0,
+        &quot;probability&quot;: 0.2,
+        &quot;feature1&quot;: &quot;b&quot;,
+        &quot;feature2&quot;: &quot;d&quot;,
+        &quot;feature3&quot;: &quot;&quot;,
+    },
+    {
+        &quot;action&quot;: 4,
+        &quot;cost&quot;: 1,
+        &quot;probability&quot;: 0.5,
+        &quot;feature1&quot;: &quot;a&quot;,
+        &quot;feature2&quot;: &quot;b&quot;,
+        &quot;feature3&quot;: &quot;&quot;,
+    },
+    {
+        &quot;action&quot;: 2,
+        &quot;cost&quot;: 1,
+        &quot;probability&quot;: 0.3,
+        &quot;feature1&quot;: &quot;a&quot;,
+        &quot;feature2&quot;: &quot;b&quot;,
+        &quot;feature3&quot;: &quot;c&quot;,
+    },
+    {
+        &quot;action&quot;: 3,
+        &quot;cost&quot;: 1,
+        &quot;probability&quot;: 0.7,
+        &quot;feature1&quot;: &quot;a&quot;,
+        &quot;feature2&quot;: &quot;d&quot;,
+        &quot;feature3&quot;: &quot;&quot;,
+    },
+]
 
-<span class="n">train_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">train_data</span><span class="p">)</span>
+train_df = pd.DataFrame(train_data)
 
-<span class="c1"># Add index to data frame</span>
-<span class="n">train_df</span><span class="p">[</span><span class="s2">&quot;index&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">train_df</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
-<span class="n">train_df</span> <span class="o">=</span> <span class="n">train_df</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s2">&quot;index&quot;</span><span class="p">)</span>
+# Add index to data frame
+train_df[&quot;index&quot;] = range(1, len(train_df) + 1)
+train_df = train_df.set_index(&quot;index&quot;)
 </pre></div>
 </div>
 </div>
@@ -883,26 +883,26 @@ shared | s_1 s_2
 <p>Next, create data for the contextual bandit to exploit to make decisions (for example features describing new users):</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">test_data</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="p">{</span><span class="s2">&quot;feature1&quot;</span><span class="p">:</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;feature2&quot;</span><span class="p">:</span> <span class="s2">&quot;c&quot;</span><span class="p">,</span> <span class="s2">&quot;feature3&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">},</span>
-    <span class="p">{</span><span class="s2">&quot;feature1&quot;</span><span class="p">:</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;feature2&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;feature3&quot;</span><span class="p">:</span> <span class="s2">&quot;b&quot;</span><span class="p">},</span>
-    <span class="p">{</span><span class="s2">&quot;feature1&quot;</span><span class="p">:</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;feature2&quot;</span><span class="p">:</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;feature3&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">},</span>
-    <span class="p">{</span><span class="s2">&quot;feature1&quot;</span><span class="p">:</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;feature2&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;feature3&quot;</span><span class="p">:</span> <span class="s2">&quot;b&quot;</span><span class="p">},</span>
-<span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>test_data = [
+    {&quot;feature1&quot;: &quot;b&quot;, &quot;feature2&quot;: &quot;c&quot;, &quot;feature3&quot;: &quot;&quot;},
+    {&quot;feature1&quot;: &quot;a&quot;, &quot;feature2&quot;: &quot;&quot;, &quot;feature3&quot;: &quot;b&quot;},
+    {&quot;feature1&quot;: &quot;b&quot;, &quot;feature2&quot;: &quot;b&quot;, &quot;feature3&quot;: &quot;&quot;},
+    {&quot;feature1&quot;: &quot;a&quot;, &quot;feature2&quot;: &quot;&quot;, &quot;feature3&quot;: &quot;b&quot;},
+]
 
-<span class="n">test_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">test_data</span><span class="p">)</span>
+test_df = pd.DataFrame(test_data)
 
-<span class="c1"># Add index to data frame</span>
-<span class="n">test_df</span><span class="p">[</span><span class="s2">&quot;index&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">test_df</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
-<span class="n">test_df</span> <span class="o">=</span> <span class="n">test_df</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s2">&quot;index&quot;</span><span class="p">)</span>
+# Add index to data frame
+test_df[&quot;index&quot;] = range(1, len(test_df) + 1)
+test_df = test_df.set_index(&quot;index&quot;)
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Your dataframes are:</span>
-<span class="n">train_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Your dataframes are:
+train_df.head()
 </pre></div>
 </div>
 </div>
@@ -994,7 +994,7 @@ shared | s_1 s_2
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">test_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>test_df.head()
 </pre></div>
 </div>
 </div>
@@ -1064,9 +1064,9 @@ shared | s_1 s_2
 <p>Use the following command for a contextual bandit with four possible actions:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">vowpalwabbit</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>import vowpalwabbit
 
-<span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--cb 4&quot;</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+vw = vowpalwabbit.Workspace(&quot;--cb 4&quot;, quiet=True)
 </pre></div>
 </div>
 </div>
@@ -1077,31 +1077,31 @@ shared | s_1 s_2
 <p>Now, call learn for each trained example on your Vowpal Wabbit model.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">train_df</span><span class="o">.</span><span class="n">index</span><span class="p">:</span>
-    <span class="n">action</span> <span class="o">=</span> <span class="n">train_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="s2">&quot;action&quot;</span><span class="p">]</span>
-    <span class="n">cost</span> <span class="o">=</span> <span class="n">train_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="s2">&quot;cost&quot;</span><span class="p">]</span>
-    <span class="n">probability</span> <span class="o">=</span> <span class="n">train_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="s2">&quot;probability&quot;</span><span class="p">]</span>
-    <span class="n">feature1</span> <span class="o">=</span> <span class="n">train_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="s2">&quot;feature1&quot;</span><span class="p">]</span>
-    <span class="n">feature2</span> <span class="o">=</span> <span class="n">train_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="s2">&quot;feature2&quot;</span><span class="p">]</span>
-    <span class="n">feature3</span> <span class="o">=</span> <span class="n">train_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="s2">&quot;feature3&quot;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>for i in train_df.index:
+    action = train_df.loc[i, &quot;action&quot;]
+    cost = train_df.loc[i, &quot;cost&quot;]
+    probability = train_df.loc[i, &quot;probability&quot;]
+    feature1 = train_df.loc[i, &quot;feature1&quot;]
+    feature2 = train_df.loc[i, &quot;feature2&quot;]
+    feature3 = train_df.loc[i, &quot;feature3&quot;]
 
-    <span class="c1"># Construct the example in the required vw format.</span>
-    <span class="n">learn_example</span> <span class="o">=</span> <span class="p">(</span>
-        <span class="nb">str</span><span class="p">(</span><span class="n">action</span><span class="p">)</span>
-        <span class="o">+</span> <span class="s2">&quot;:&quot;</span>
-        <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">cost</span><span class="p">)</span>
-        <span class="o">+</span> <span class="s2">&quot;:&quot;</span>
-        <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">probability</span><span class="p">)</span>
-        <span class="o">+</span> <span class="s2">&quot; | &quot;</span>
-        <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">feature1</span><span class="p">)</span>
-        <span class="o">+</span> <span class="s2">&quot; &quot;</span>
-        <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">feature2</span><span class="p">)</span>
-        <span class="o">+</span> <span class="s2">&quot; &quot;</span>
-        <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">feature3</span><span class="p">)</span>
-    <span class="p">)</span>
+    # Construct the example in the required vw format.
+    learn_example = (
+        str(action)
+        + &quot;:&quot;
+        + str(cost)
+        + &quot;:&quot;
+        + str(probability)
+        + &quot; | &quot;
+        + str(feature1)
+        + &quot; &quot;
+        + str(feature2)
+        + &quot; &quot;
+        + str(feature3)
+    )
 
-    <span class="c1"># Here we do the actual learning.</span>
-    <span class="n">vw</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">learn_example</span><span class="p">)</span>
+    # Here we do the actual learning.
+    vw.learn(learn_example)
 </pre></div>
 </div>
 </div>
@@ -1109,15 +1109,15 @@ shared | s_1 s_2
 <p>Use the model that was just trained on the train set to perform predictions on the test set. Construct the example like before but don’t include the label and pass it into <strong>predict</strong> instead of <strong>learn</strong>. For example:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">test_df</span><span class="o">.</span><span class="n">index</span><span class="p">:</span>
-    <span class="n">feature1</span> <span class="o">=</span> <span class="n">test_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">j</span><span class="p">,</span> <span class="s2">&quot;feature1&quot;</span><span class="p">]</span>
-    <span class="n">feature2</span> <span class="o">=</span> <span class="n">test_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">j</span><span class="p">,</span> <span class="s2">&quot;feature2&quot;</span><span class="p">]</span>
-    <span class="n">feature3</span> <span class="o">=</span> <span class="n">test_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">j</span><span class="p">,</span> <span class="s2">&quot;feature3&quot;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>for j in test_df.index:
+    feature1 = test_df.loc[j, &quot;feature1&quot;]
+    feature2 = test_df.loc[j, &quot;feature2&quot;]
+    feature3 = test_df.loc[j, &quot;feature3&quot;]
 
-    <span class="n">test_example</span> <span class="o">=</span> <span class="s2">&quot;| &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">feature1</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">feature2</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">feature3</span><span class="p">)</span>
+    test_example = &quot;| &quot; + str(feature1) + &quot; &quot; + str(feature2) + &quot; &quot; + str(feature3)
 
-    <span class="n">choice</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">test_example</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">j</span><span class="p">,</span> <span class="n">choice</span><span class="p">)</span>
+    choice = vw.predict(test_example)
+    print(j, choice)
 </pre></div>
 </div>
 </div>
@@ -1136,11 +1136,11 @@ shared | s_1 s_2
 <p>Finally, experiment with the cost structure to see that the contextual bandit updates its predictions accordingly.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vw</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">&quot;cb.model&quot;</span><span class="p">)</span>
-<span class="k">del</span> <span class="n">vw</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>vw.save(&quot;cb.model&quot;)
+del vw
 
-<span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--cb 4 -i cb.model&quot;</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">vw</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="s2">&quot;| a b&quot;</span><span class="p">))</span>
+vw = vowpalwabbit.Workspace(&quot;--cb 4 -i cb.model&quot;, quiet=True)
+print(vw.predict(&quot;| a b&quot;))
 </pre></div>
 </div>
 </div>

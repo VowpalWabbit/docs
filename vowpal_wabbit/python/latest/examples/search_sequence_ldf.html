@@ -497,85 +497,87 @@ const thebe_selector_output = ".output, .cell_output"
 <h1>Search - Sequence LDF<a class="headerlink" href="#search-sequence-ldf" title="Permalink to this headline">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
-<span class="kn">from</span> <span class="nn">vowpalwabbit</span> <span class="kn">import</span> <span class="n">pyvw</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>import sys
+from vowpalwabbit import pyvw
 
-<span class="c1"># wow! your data can be ANY type you want... does NOT have to be VW examples</span>
-<span class="n">DET</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="n">NOUN</span> <span class="o">=</span> <span class="mi">2</span>
-<span class="n">VERB</span> <span class="o">=</span> <span class="mi">3</span>
-<span class="n">ADJ</span> <span class="o">=</span> <span class="mi">4</span>
-<span class="n">my_dataset</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="p">[</span>
-        <span class="p">(</span><span class="n">DET</span><span class="p">,</span> <span class="s2">&quot;the&quot;</span><span class="p">),</span>
-        <span class="p">(</span><span class="n">NOUN</span><span class="p">,</span> <span class="s2">&quot;monster&quot;</span><span class="p">),</span>
-        <span class="p">(</span><span class="n">VERB</span><span class="p">,</span> <span class="s2">&quot;ate&quot;</span><span class="p">),</span>
-        <span class="p">(</span><span class="n">DET</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">),</span>
-        <span class="p">(</span><span class="n">ADJ</span><span class="p">,</span> <span class="s2">&quot;big&quot;</span><span class="p">),</span>
-        <span class="p">(</span><span class="n">NOUN</span><span class="p">,</span> <span class="s2">&quot;sandwich&quot;</span><span class="p">),</span>
-    <span class="p">],</span>
-    <span class="p">[(</span><span class="n">DET</span><span class="p">,</span> <span class="s2">&quot;the&quot;</span><span class="p">),</span> <span class="p">(</span><span class="n">NOUN</span><span class="p">,</span> <span class="s2">&quot;sandwich&quot;</span><span class="p">),</span> <span class="p">(</span><span class="n">VERB</span><span class="p">,</span> <span class="s2">&quot;was&quot;</span><span class="p">),</span> <span class="p">(</span><span class="n">ADJ</span><span class="p">,</span> <span class="s2">&quot;tasty&quot;</span><span class="p">)],</span>
-    <span class="p">[(</span><span class="n">NOUN</span><span class="p">,</span> <span class="s2">&quot;it&quot;</span><span class="p">),</span> <span class="p">(</span><span class="n">VERB</span><span class="p">,</span> <span class="s2">&quot;ate&quot;</span><span class="p">),</span> <span class="p">(</span><span class="n">NOUN</span><span class="p">,</span> <span class="s2">&quot;it&quot;</span><span class="p">),</span> <span class="p">(</span><span class="n">ADJ</span><span class="p">,</span> <span class="s2">&quot;all&quot;</span><span class="p">)],</span>
-<span class="p">]</span>
-
-
-<span class="k">class</span> <span class="nc">SequenceLabeler</span><span class="p">(</span><span class="n">pyvw</span><span class="o">.</span><span class="n">SearchTask</span><span class="p">):</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vw</span><span class="p">,</span> <span class="n">sch</span><span class="p">,</span> <span class="n">num_actions</span><span class="p">):</span>
-        <span class="c1"># you must must must initialize the parent class</span>
-        <span class="c1"># this will automatically store self.sch &lt;- sch, self.vw &lt;- vw</span>
-        <span class="n">pyvw</span><span class="o">.</span><span class="n">SearchTask</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vw</span><span class="p">,</span> <span class="n">sch</span><span class="p">,</span> <span class="n">num_actions</span><span class="p">)</span>
-
-        <span class="c1"># set whatever options you want</span>
-        <span class="n">sch</span><span class="o">.</span><span class="n">set_options</span><span class="p">(</span>
-            <span class="n">sch</span><span class="o">.</span><span class="n">AUTO_HAMMING_LOSS</span> <span class="o">|</span> <span class="n">sch</span><span class="o">.</span><span class="n">AUTO_CONDITION_FEATURES</span> <span class="o">|</span> <span class="n">sch</span><span class="o">.</span><span class="n">IS_LDF</span>
-        <span class="p">)</span>
-
-    <span class="k">def</span> <span class="nf">makeExample</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">word</span><span class="p">,</span> <span class="n">p</span><span class="p">):</span>
-        <span class="n">ex</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">example</span><span class="p">(</span>
-            <span class="p">{</span><span class="s2">&quot;w&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">word</span> <span class="o">+</span> <span class="s2">&quot;_&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">p</span><span class="p">)]},</span> <span class="n">labelType</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">vw</span><span class="o">.</span><span class="n">lCostSensitive</span>
-        <span class="p">)</span>
-        <span class="n">ex</span><span class="o">.</span><span class="n">set_label_string</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">p</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;:0&quot;</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">ex</span>
-
-    <span class="k">def</span> <span class="nf">_run</span><span class="p">(</span>
-        <span class="bp">self</span><span class="p">,</span> <span class="n">sentence</span>
-    <span class="p">):</span>  <span class="c1"># it&#39;s called _run to remind you that you shouldn&#39;t call it directly!</span>
-        <span class="n">output</span> <span class="o">=</span> <span class="p">[]</span>
-        <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">sentence</span><span class="p">)):</span>
-            <span class="n">pos</span><span class="p">,</span> <span class="n">word</span> <span class="o">=</span> <span class="n">sentence</span><span class="p">[</span><span class="n">n</span><span class="p">]</span>
-            <span class="c1"># use &quot;with...as...&quot; to guarantee that the example is finished properly</span>
-            <span class="n">ex</span> <span class="o">=</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">makeExample</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="n">p</span><span class="p">)</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="p">[</span><span class="n">DET</span><span class="p">,</span> <span class="n">NOUN</span><span class="p">,</span> <span class="n">VERB</span><span class="p">,</span> <span class="n">ADJ</span><span class="p">]]</span>
-            <span class="n">pred</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sch</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span>
-                <span class="n">examples</span><span class="o">=</span><span class="n">ex</span><span class="p">,</span> <span class="n">my_tag</span><span class="o">=</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">oracle</span><span class="o">=</span><span class="n">pos</span><span class="p">,</span> <span class="n">condition</span><span class="o">=</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="s2">&quot;p&quot;</span><span class="p">)</span>
-            <span class="p">)</span>
-            <span class="n">vw</span><span class="o">.</span><span class="n">finish_example</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
-            <span class="n">output</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">pred</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">output</span>
+# wow! your data can be ANY type you want... does NOT have to be VW examples
+DET = 1
+NOUN = 2
+VERB = 3
+ADJ = 4
+my_dataset = [
+    [
+        (DET, &quot;the&quot;),
+        (NOUN, &quot;monster&quot;),
+        (VERB, &quot;ate&quot;),
+        (DET, &quot;a&quot;),
+        (ADJ, &quot;big&quot;),
+        (NOUN, &quot;sandwich&quot;),
+    ],
+    [(DET, &quot;the&quot;), (NOUN, &quot;sandwich&quot;), (VERB, &quot;was&quot;), (ADJ, &quot;tasty&quot;)],
+    [(NOUN, &quot;it&quot;), (VERB, &quot;ate&quot;), (NOUN, &quot;it&quot;), (ADJ, &quot;all&quot;)],
+]
 
 
-<span class="c1"># initialize VW as usual, but use &#39;hook&#39; as the search_task</span>
-<span class="n">vw</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--search 0 --csoaa_ldf m --search_task hook&quot;</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+class SequenceLabeler(pyvw.SearchTask):
+    def __init__(self, vw, sch, num_actions):
+        # you must must must initialize the parent class
+        # this will automatically store self.sch &lt;- sch, self.vw &lt;- vw
+        pyvw.SearchTask.__init__(self, vw, sch, num_actions)
 
-<span class="c1"># tell VW to construct your search task object</span>
-<span class="n">sequenceLabeler</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">init_search_task</span><span class="p">(</span><span class="n">SequenceLabeler</span><span class="p">)</span>
+        # set whatever options you want
+        sch.set_options(
+            sch.AUTO_HAMMING_LOSS | sch.AUTO_CONDITION_FEATURES | sch.IS_LDF
+        )
 
-<span class="c1"># train it on the above dataset ten times; the my_dataset.__iter__ feeds into _run above</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;training!&quot;</span><span class="p">)</span>
-<span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
-    <span class="n">sequenceLabeler</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">my_dataset</span><span class="p">)</span>
-    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+    def makeExample(self, word, p):
+        ex = self.example(
+            {&quot;w&quot;: [word + &quot;_&quot; + str(p)]}, labelType=self.vw.lCostSensitive
+        )
+        ex.set_label_string(str(p) + &quot;:0&quot;)
+        return ex
 
-<span class="c1"># now see the predictions on a test sentence</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;predicting!&quot;</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="n">sys</span><span class="o">.</span><span class="n">stderr</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">sequenceLabeler</span><span class="o">.</span><span class="n">predict</span><span class="p">([(</span><span class="mi">1</span><span class="p">,</span> <span class="n">w</span><span class="p">)</span> <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="s2">&quot;the sandwich ate a monster&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">()]))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;should have printed: [1, 2, 3, 1, 2]&quot;</span><span class="p">)</span>
+    def _run(
+        self, sentence
+    ):  # it&#39;s called _run to remind you that you shouldn&#39;t call it directly!
+        output = []
+        for n in range(len(sentence)):
+            pos, word = sentence[n]
+            # use &quot;with...as...&quot; to guarantee that the example is finished properly
+            ex = [self.makeExample(word, p) for p in [DET, NOUN, VERB, ADJ]]
+            pred = self.sch.predict(
+                examples=ex, my_tag=n + 1, oracle=pos, condition=(n, &quot;p&quot;)
+            )
+            vw.finish_example(ex)
+            output.append(pred)
+        return output
+
+
+# initialize VW as usual, but use &#39;hook&#39; as the search_task
+vw = pyvw.Workspace(&quot;--search 0 --csoaa_ldf m --search_task hook&quot;, quiet=True)
+
+# tell VW to construct your search task object
+sequenceLabeler = vw.init_search_task(SequenceLabeler)
+
+# train it on the above dataset ten times; the my_dataset.__iter__ feeds into _run above
+print(&quot;training!&quot;)
+i = 0
+while i &lt; 10:
+    sequenceLabeler.learn(my_dataset)
+    i += 1
+
+# now see the predictions on a test sentence
+print(&quot;predicting!&quot;, file=sys.stderr)
+print(sequenceLabeler.predict([(1, w) for w in &quot;the sandwich ate a monster&quot;.split()]))
+print(&quot;should have printed: [1, 2, 3, 1, 2]&quot;)
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>training!
-[1, 2, 3, 1, 2]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1, 2, 3, 1, 2]
 should have printed: [1, 2, 3, 1, 2]
 </pre></div>
 </div>

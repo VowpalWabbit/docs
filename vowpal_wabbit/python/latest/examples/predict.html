@@ -497,148 +497,148 @@ const thebe_selector_output = ".output, .cell_output"
 <h1>Predict comparison<a class="headerlink" href="#predict-comparison" title="Permalink to this headline">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">vowpalwabbit</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>import vowpalwabbit
 
 
-<span class="k">def</span> <span class="nf">my_predict</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">ex</span><span class="p">):</span>
-    <span class="n">pp</span> <span class="o">=</span> <span class="mf">0.0</span>
-    <span class="k">for</span> <span class="n">f</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">ex</span><span class="o">.</span><span class="n">iter_features</span><span class="p">():</span>
-        <span class="n">pp</span> <span class="o">+=</span> <span class="n">vw</span><span class="o">.</span><span class="n">get_weight</span><span class="p">(</span><span class="n">f</span><span class="p">)</span> <span class="o">*</span> <span class="n">v</span>
-    <span class="k">return</span> <span class="n">pp</span>
+def my_predict(vw, ex):
+    pp = 0.0
+    for f, v in ex.iter_features():
+        pp += vw.get_weight(f) * v
+    return pp
 
 
-<span class="k">def</span> <span class="nf">ensure_close</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">eps</span><span class="o">=</span><span class="mf">1e-6</span><span class="p">):</span>
-    <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">a</span> <span class="o">-</span> <span class="n">b</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">eps</span><span class="p">:</span>
-        <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span>
-            <span class="s2">&quot;test failed: expected &quot;</span>
-            <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-            <span class="o">+</span> <span class="s2">&quot; and &quot;</span>
-            <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
-            <span class="o">+</span> <span class="s2">&quot; to be &quot;</span>
-            <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">eps</span><span class="p">)</span>
-            <span class="o">+</span> <span class="s2">&quot;-close, but they differ by &quot;</span>
-            <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">a</span> <span class="o">-</span> <span class="n">b</span><span class="p">))</span>
-        <span class="p">)</span>
+def ensure_close(a, b, eps=1e-6):
+    if abs(a - b) &gt; eps:
+        raise Exception(
+            &quot;test failed: expected &quot;
+            + str(a)
+            + &quot; and &quot;
+            + str(b)
+            + &quot; to be &quot;
+            + str(eps)
+            + &quot;-close, but they differ by &quot;
+            + str(abs(a - b))
+        )
 
 
-<span class="c1">###############################################################################</span>
-<span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--quiet&quot;</span><span class="p">)</span>
+###############################################################################
+vw = vowpalwabbit.Workspace(&quot;--quiet&quot;)
 
 
-<span class="c1">###############################################################################</span>
-<span class="n">vw</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="s2">&quot;1 |x a b&quot;</span><span class="p">)</span>
+###############################################################################
+vw.learn(&quot;1 |x a b&quot;)
 
 
-<span class="c1">###############################################################################</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# do some stuff with a read example:&quot;</span><span class="p">)</span>
-<span class="n">ex</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">example</span><span class="p">(</span><span class="s2">&quot;1 |x a b |y c&quot;</span><span class="p">)</span>
-<span class="n">ex</span><span class="o">.</span><span class="n">learn</span><span class="p">()</span>
-<span class="n">ex</span><span class="o">.</span><span class="n">learn</span><span class="p">()</span>
-<span class="n">ex</span><span class="o">.</span><span class="n">learn</span><span class="p">()</span>
-<span class="n">ex</span><span class="o">.</span><span class="n">learn</span><span class="p">()</span>
+###############################################################################
+print(&quot;# do some stuff with a read example:&quot;)
+ex = vw.example(&quot;1 |x a b |y c&quot;)
+ex.learn()
+ex.learn()
+ex.learn()
+ex.learn()
 
-<span class="n">updated_pred</span> <span class="o">=</span> <span class="n">ex</span><span class="o">.</span><span class="n">get_updated_prediction</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;current partial prediction =&quot;</span><span class="p">,</span> <span class="n">updated_pred</span><span class="p">)</span>
+updated_pred = ex.get_updated_prediction()
+print(&quot;current partial prediction =&quot;, updated_pred)
 
-<span class="c1"># compute our own prediction</span>
-<span class="nb">print</span><span class="p">(</span>
-    <span class="s2">&quot;        my view of example =&quot;</span><span class="p">,</span>
-    <span class="nb">str</span><span class="p">([(</span><span class="n">f</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">vw</span><span class="o">.</span><span class="n">get_weight</span><span class="p">(</span><span class="n">f</span><span class="p">))</span> <span class="k">for</span> <span class="n">f</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">ex</span><span class="o">.</span><span class="n">iter_features</span><span class="p">()]),</span>
-<span class="p">)</span>
-<span class="n">my_pred</span> <span class="o">=</span> <span class="n">my_predict</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">ex</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;     my partial prediction =&quot;</span><span class="p">,</span> <span class="n">my_pred</span><span class="p">)</span>
-<span class="n">ensure_close</span><span class="p">(</span><span class="n">updated_pred</span><span class="p">,</span> <span class="n">my_pred</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
-<span class="n">vw</span><span class="o">.</span><span class="n">finish_example</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
+# compute our own prediction
+print(
+    &quot;        my view of example =&quot;,
+    str([(f, v, vw.get_weight(f)) for f, v in ex.iter_features()]),
+)
+my_pred = my_predict(vw, ex)
+print(&quot;     my partial prediction =&quot;, my_pred)
+ensure_close(updated_pred, my_pred)
+print(&quot;&quot;)
+vw.finish_example(ex)
 
-<span class="c1">###############################################################################</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# make our own example from scratch&quot;</span><span class="p">)</span>
-<span class="n">ex</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">example</span><span class="p">()</span>
-<span class="n">ex</span><span class="o">.</span><span class="n">set_label_string</span><span class="p">(</span><span class="s2">&quot;0&quot;</span><span class="p">)</span>
-<span class="n">ex</span><span class="o">.</span><span class="n">push_features</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">])</span>
-<span class="n">ex</span><span class="o">.</span><span class="n">push_features</span><span class="p">(</span><span class="s2">&quot;y&quot;</span><span class="p">,</span> <span class="p">[(</span><span class="s2">&quot;c&quot;</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">)])</span>
-<span class="n">ex</span><span class="o">.</span><span class="n">setup_example</span><span class="p">()</span>
+###############################################################################
+print(&quot;# make our own example from scratch&quot;)
+ex = vw.example()
+ex.set_label_string(&quot;0&quot;)
+ex.push_features(&quot;x&quot;, [&quot;a&quot;, &quot;b&quot;])
+ex.push_features(&quot;y&quot;, [(&quot;c&quot;, 1.0)])
+ex.setup_example()
 
-<span class="nb">print</span><span class="p">(</span>
-    <span class="s2">&quot;        my view of example =&quot;</span><span class="p">,</span>
-    <span class="nb">str</span><span class="p">([(</span><span class="n">f</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">vw</span><span class="o">.</span><span class="n">get_weight</span><span class="p">(</span><span class="n">f</span><span class="p">))</span> <span class="k">for</span> <span class="n">f</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">ex</span><span class="o">.</span><span class="n">iter_features</span><span class="p">()]),</span>
-<span class="p">)</span>
-<span class="n">my_pred2</span> <span class="o">=</span> <span class="n">my_predict</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">ex</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;     my partial prediction =&quot;</span><span class="p">,</span> <span class="n">my_pred2</span><span class="p">)</span>
-<span class="n">ensure_close</span><span class="p">(</span><span class="n">my_pred</span><span class="p">,</span> <span class="n">my_pred2</span><span class="p">)</span>
+print(
+    &quot;        my view of example =&quot;,
+    str([(f, v, vw.get_weight(f)) for f, v in ex.iter_features()]),
+)
+my_pred2 = my_predict(vw, ex)
+print(&quot;     my partial prediction =&quot;, my_pred2)
+ensure_close(my_pred, my_pred2)
 
-<span class="n">ex</span><span class="o">.</span><span class="n">learn</span><span class="p">()</span>
-<span class="n">ex</span><span class="o">.</span><span class="n">learn</span><span class="p">()</span>
-<span class="n">ex</span><span class="o">.</span><span class="n">learn</span><span class="p">()</span>
-<span class="n">ex</span><span class="o">.</span><span class="n">learn</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;  final partial prediction =&quot;</span><span class="p">,</span> <span class="n">ex</span><span class="o">.</span><span class="n">get_updated_prediction</span><span class="p">())</span>
-<span class="n">ensure_close</span><span class="p">(</span><span class="n">ex</span><span class="o">.</span><span class="n">get_updated_prediction</span><span class="p">(),</span> <span class="n">my_predict</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">ex</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
-<span class="n">vw</span><span class="o">.</span><span class="n">finish_example</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
-
-
-<span class="c1">###############################################################################</span>
-<span class="n">exList</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">120</span><span class="p">):</span>
-    <span class="n">ex</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">example</span><span class="p">()</span>
-    <span class="n">exList</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
-
-<span class="c1"># this is the safe way to delete the examples for VW to reuse:</span>
-<span class="k">for</span> <span class="n">ex</span> <span class="ow">in</span> <span class="n">exList</span><span class="p">:</span>
-    <span class="n">vw</span><span class="o">.</span><span class="n">finish_example</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
-
-<span class="n">exList</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># this should __del__ the examples, we hope :)</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">120</span><span class="p">):</span>
-    <span class="n">ex</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">example</span><span class="p">()</span>
-    <span class="n">exList</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
-
-<span class="k">for</span> <span class="n">ex</span> <span class="ow">in</span> <span class="n">exList</span><span class="p">:</span>
-    <span class="n">vw</span><span class="o">.</span><span class="n">finish_example</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
+ex.learn()
+ex.learn()
+ex.learn()
+ex.learn()
+print(&quot;  final partial prediction =&quot;, ex.get_updated_prediction())
+ensure_close(ex.get_updated_prediction(), my_predict(vw, ex))
+print(&quot;&quot;)
+vw.finish_example(ex)
 
 
-<span class="c1">###############################################################################</span>
+###############################################################################
+exList = []
+for i in range(120):
+    ex = vw.example()
+    exList.append(ex)
 
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
-    <span class="n">ex</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">example</span><span class="p">(</span><span class="s2">&quot;1 foo| a b&quot;</span><span class="p">)</span>
-    <span class="n">ex</span><span class="o">.</span><span class="n">learn</span><span class="p">()</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;tag =&quot;</span><span class="p">,</span> <span class="n">ex</span><span class="o">.</span><span class="n">get_tag</span><span class="p">())</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;partial pred =&quot;</span><span class="p">,</span> <span class="n">ex</span><span class="o">.</span><span class="n">get_partial_prediction</span><span class="p">())</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;loss =&quot;</span><span class="p">,</span> <span class="n">ex</span><span class="o">.</span><span class="n">get_loss</span><span class="p">())</span>
+# this is the safe way to delete the examples for VW to reuse:
+for ex in exList:
+    vw.finish_example(ex)
 
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;label =&quot;</span><span class="p">,</span> <span class="n">ex</span><span class="o">.</span><span class="n">get_label</span><span class="p">())</span>
-    <span class="n">vw</span><span class="o">.</span><span class="n">finish_example</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
+exList = []  # this should __del__ the examples, we hope :)
+for i in range(120):
+    ex = vw.example()
+    exList.append(ex)
 
-
-<span class="c1"># to be safe, finish explicity (should happen by default anyway)</span>
-<span class="n">vw</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>
+for ex in exList:
+    vw.finish_example(ex)
 
 
-<span class="c1">###############################################################################</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# test some save/load behavior&quot;</span><span class="p">)</span>
-<span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--quiet -f test.model&quot;</span><span class="p">)</span>
-<span class="n">ex</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">example</span><span class="p">(</span><span class="s2">&quot;1 |x a b |y c&quot;</span><span class="p">)</span>
-<span class="n">ex</span><span class="o">.</span><span class="n">learn</span><span class="p">()</span>
-<span class="n">ex</span><span class="o">.</span><span class="n">learn</span><span class="p">()</span>
-<span class="n">ex</span><span class="o">.</span><span class="n">learn</span><span class="p">()</span>
-<span class="n">ex</span><span class="o">.</span><span class="n">learn</span><span class="p">()</span>
-<span class="n">before_save</span> <span class="o">=</span> <span class="n">ex</span><span class="o">.</span><span class="n">get_updated_prediction</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;before saving, prediction =&quot;</span><span class="p">,</span> <span class="n">before_save</span><span class="p">)</span>
-<span class="n">vw</span><span class="o">.</span><span class="n">finish_example</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
+###############################################################################
 
-<span class="n">vw</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>  <span class="c1"># this should create the file</span>
+for i in range(2):
+    ex = vw.example(&quot;1 foo| a b&quot;)
+    ex.learn()
+    print(&quot;tag =&quot;, ex.get_tag())
+    print(&quot;partial pred =&quot;, ex.get_partial_prediction())
+    print(&quot;loss =&quot;, ex.get_loss())
 
-<span class="c1"># now re-start vw by loading that model</span>
-<span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--quiet -i test.model&quot;</span><span class="p">)</span>
-<span class="n">ex</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">example</span><span class="p">(</span><span class="s2">&quot;1 |x a b |y c&quot;</span><span class="p">)</span>  <span class="c1"># test example</span>
-<span class="n">ex</span><span class="o">.</span><span class="n">learn</span><span class="p">()</span>
-<span class="n">after_save</span> <span class="o">=</span> <span class="n">ex</span><span class="o">.</span><span class="n">get_partial_prediction</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot; after saving, prediction =&quot;</span><span class="p">,</span> <span class="n">after_save</span><span class="p">)</span>
-<span class="n">vw</span><span class="o">.</span><span class="n">finish_example</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
+    print(&quot;label =&quot;, ex.get_label())
+    vw.finish_example(ex)
 
-<span class="n">ensure_close</span><span class="p">(</span><span class="n">before_save</span><span class="p">,</span> <span class="n">after_save</span><span class="p">)</span>
-<span class="n">vw</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>  <span class="c1"># this should create the file</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;done!&quot;</span><span class="p">)</span>
+# to be safe, finish explicity (should happen by default anyway)
+vw.finish()
+
+
+###############################################################################
+print(&quot;# test some save/load behavior&quot;)
+vw = vowpalwabbit.Workspace(&quot;--quiet -f test.model&quot;)
+ex = vw.example(&quot;1 |x a b |y c&quot;)
+ex.learn()
+ex.learn()
+ex.learn()
+ex.learn()
+before_save = ex.get_updated_prediction()
+print(&quot;before saving, prediction =&quot;, before_save)
+vw.finish_example(ex)
+
+vw.finish()  # this should create the file
+
+# now re-start vw by loading that model
+vw = vowpalwabbit.Workspace(&quot;--quiet -i test.model&quot;)
+ex = vw.example(&quot;1 |x a b |y c&quot;)  # test example
+ex.learn()
+after_save = ex.get_partial_prediction()
+print(&quot; after saving, prediction =&quot;, after_save)
+vw.finish_example(ex)
+
+ensure_close(before_save, after_save)
+vw.finish()  # this should create the file
+
+print(&quot;done!&quot;)
 </pre></div>
 </div>
 </div>

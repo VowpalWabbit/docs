@@ -598,11 +598,11 @@ const thebe_selector_output = ".output, .cell_output"
 <p>Let’s start by importing the python libraries we’ll use in this example:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">vowpalwabbit</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">random</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>import vowpalwabbit
+import matplotlib.pyplot as plt
+import pandas as pd
+import random
+import numpy as np
 </pre></div>
 </div>
 </div>
@@ -610,11 +610,11 @@ const thebe_selector_output = ".output, .cell_output"
 <p>Now, the simulator parameters:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">NUM_ITERATIONS</span> <span class="o">=</span> <span class="mi">2500</span>
-<span class="n">shared_contexts</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;corporate&quot;</span><span class="p">,</span> <span class="s2">&quot;trade&quot;</span><span class="p">]</span>
-<span class="n">torso_items</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;tshirt&quot;</span><span class="p">,</span> <span class="s2">&quot;buttonupshirt&quot;</span><span class="p">,</span> <span class="s2">&quot;highvis&quot;</span><span class="p">]</span>
-<span class="n">legs_items</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;workpants&quot;</span><span class="p">,</span> <span class="s2">&quot;formalpants&quot;</span><span class="p">,</span> <span class="s2">&quot;shorts&quot;</span><span class="p">]</span>
-<span class="n">feet_items</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;formalshoes&quot;</span><span class="p">,</span> <span class="s2">&quot;runners&quot;</span><span class="p">,</span> <span class="s2">&quot;flipflops&quot;</span><span class="p">,</span> <span class="s2">&quot;boots&quot;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>NUM_ITERATIONS = 2500
+shared_contexts = [&quot;corporate&quot;, &quot;trade&quot;]
+torso_items = [&quot;tshirt&quot;, &quot;buttonupshirt&quot;, &quot;highvis&quot;]
+legs_items = [&quot;workpants&quot;, &quot;formalpants&quot;, &quot;shorts&quot;]
+feet_items = [&quot;formalshoes&quot;, &quot;runners&quot;, &quot;flipflops&quot;, &quot;boots&quot;]
 </pre></div>
 </div>
 </div>
@@ -625,21 +625,21 @@ const thebe_selector_output = ".output, .cell_output"
 <p>Our reward function receives as arguments the shared context (the occasion) and the selected actions for each slot (the types of clothing). In order to reflect real world problems, and make it more dificult, we inject normal noise in the reward value.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">noise</span><span class="p">(</span><span class="n">center</span><span class="p">,</span> <span class="n">stddev</span><span class="o">=</span><span class="mf">0.075</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="n">center</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="mf">0.075</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>def noise(center, stddev=0.075):
+    return np.random.normal(loc=center, scale=0.075)
 
 
-<span class="k">def</span> <span class="nf">reward_function</span><span class="p">(</span><span class="n">shared_context</span><span class="p">,</span> <span class="n">torso_index</span><span class="p">,</span> <span class="n">legs_index</span><span class="p">,</span> <span class="n">feet_index</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">shared_context</span> <span class="o">==</span> <span class="s2">&quot;corporate&quot;</span><span class="p">:</span>
-        <span class="n">torso_values</span> <span class="o">=</span> <span class="p">[</span><span class="n">noise</span><span class="p">(</span><span class="mf">0.2</span><span class="p">),</span> <span class="n">noise</span><span class="p">(</span><span class="mf">0.3</span><span class="p">),</span> <span class="n">noise</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)]</span>
-        <span class="n">legs_val</span> <span class="o">=</span> <span class="p">[</span><span class="n">noise</span><span class="p">(</span><span class="mf">0.1</span><span class="p">),</span> <span class="n">noise</span><span class="p">(</span><span class="mf">0.3</span><span class="p">),</span> <span class="n">noise</span><span class="p">(</span><span class="mf">0.2</span><span class="p">)]</span>
-        <span class="n">feet_values</span> <span class="o">=</span> <span class="p">[</span><span class="n">noise</span><span class="p">(</span><span class="mf">0.4</span><span class="p">),</span> <span class="n">noise</span><span class="p">(</span><span class="mf">0.3</span><span class="p">),</span> <span class="n">noise</span><span class="p">(</span><span class="mf">0.05</span><span class="p">),</span> <span class="n">noise</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)]</span>
-    <span class="k">if</span> <span class="n">shared_context</span> <span class="o">==</span> <span class="s2">&quot;trade&quot;</span><span class="p">:</span>
-        <span class="n">torso_values</span> <span class="o">=</span> <span class="p">[</span><span class="n">noise</span><span class="p">(</span><span class="mf">0.15</span><span class="p">),</span> <span class="n">noise</span><span class="p">(</span><span class="mf">0.2</span><span class="p">),</span> <span class="n">noise</span><span class="p">(</span><span class="mf">0.3</span><span class="p">)]</span>
-        <span class="n">legs_val</span> <span class="o">=</span> <span class="p">[</span><span class="n">noise</span><span class="p">(</span><span class="mf">0.4</span><span class="p">),</span> <span class="n">noise</span><span class="p">(</span><span class="mf">0.2</span><span class="p">),</span> <span class="n">noise</span><span class="p">(</span><span class="mf">0.35</span><span class="p">)]</span>
-        <span class="n">feet_values</span> <span class="o">=</span> <span class="p">[</span><span class="n">noise</span><span class="p">(</span><span class="mf">0.15</span><span class="p">),</span> <span class="n">noise</span><span class="p">(</span><span class="mf">0.2</span><span class="p">),</span> <span class="n">noise</span><span class="p">(</span><span class="mf">0.1</span><span class="p">),</span> <span class="n">noise</span><span class="p">(</span><span class="mf">0.3</span><span class="p">)]</span>
+def reward_function(shared_context, torso_index, legs_index, feet_index):
+    if shared_context == &quot;corporate&quot;:
+        torso_values = [noise(0.2), noise(0.3), noise(0.1)]
+        legs_val = [noise(0.1), noise(0.3), noise(0.2)]
+        feet_values = [noise(0.4), noise(0.3), noise(0.05), noise(0.1)]
+    if shared_context == &quot;trade&quot;:
+        torso_values = [noise(0.15), noise(0.2), noise(0.3)]
+        legs_val = [noise(0.4), noise(0.2), noise(0.35)]
+        feet_values = [noise(0.15), noise(0.2), noise(0.1), noise(0.3)]
 
-    <span class="k">return</span> <span class="n">torso_values</span><span class="p">[</span><span class="n">torso_index</span><span class="p">]</span> <span class="o">+</span> <span class="n">legs_val</span><span class="p">[</span><span class="n">legs_index</span><span class="p">]</span> <span class="o">+</span> <span class="n">feet_values</span><span class="p">[</span><span class="n">feet_index</span><span class="p">]</span>
+    return torso_values[torso_index] + legs_val[legs_index] + feet_values[feet_index]
 </pre></div>
 </div>
 </div>
@@ -650,51 +650,51 @@ const thebe_selector_output = ".output, .cell_output"
 <p>The following piece of code generate examples that will be used for inference and training:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">generate_slates_text_format</span><span class="p">(</span><span class="n">shared_context</span><span class="p">):</span>
-    <span class="k">return</span> <span class="p">[</span>
-        <span class="sa">f</span><span class="s2">&quot;slates shared |User </span><span class="si">{</span><span class="n">shared_context</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;slates action 0 |Action tshirt&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;slates action 0 |Action buttonupshirt&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;slates action 0 |Action highvis&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;slates action 1 |Action workpants&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;slates action 1 |Action formalpants&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;slates action 1 |Action shorts&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;slates action 2 |Action formalshoes&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;slates action 2 |Action runners&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;slates action 2 |Action flipflops&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;slates action 2 |Action boots&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;slates slot |Slot torso&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;slates slot |Slot legs&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;slates slot |Slot feet&quot;</span><span class="p">,</span>
-    <span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>def generate_slates_text_format(shared_context):
+    return [
+        f&quot;slates shared |User {shared_context}&quot;,
+        &quot;slates action 0 |Action tshirt&quot;,
+        &quot;slates action 0 |Action buttonupshirt&quot;,
+        &quot;slates action 0 |Action highvis&quot;,
+        &quot;slates action 1 |Action workpants&quot;,
+        &quot;slates action 1 |Action formalpants&quot;,
+        &quot;slates action 1 |Action shorts&quot;,
+        &quot;slates action 2 |Action formalshoes&quot;,
+        &quot;slates action 2 |Action runners&quot;,
+        &quot;slates action 2 |Action flipflops&quot;,
+        &quot;slates action 2 |Action boots&quot;,
+        &quot;slates slot |Slot torso&quot;,
+        &quot;slates slot |Slot legs&quot;,
+        &quot;slates slot |Slot feet&quot;,
+    ]
 
 
-<span class="k">def</span> <span class="nf">generate_slates_text_format_with_label</span><span class="p">(</span>
-    <span class="n">shared_context</span><span class="p">,</span>
-    <span class="n">reward</span><span class="p">,</span>
-    <span class="n">chosen_torso_index</span><span class="p">,</span>
-    <span class="n">chosen_torso_prob</span><span class="p">,</span>
-    <span class="n">chosen_legs_index</span><span class="p">,</span>
-    <span class="n">chosen_legs_prob</span><span class="p">,</span>
-    <span class="n">chosen_feet_index</span><span class="p">,</span>
-    <span class="n">chosen_feet_prob</span><span class="p">,</span>
-<span class="p">):</span>
-    <span class="k">return</span> <span class="p">[</span>
-        <span class="sa">f</span><span class="s2">&quot;slates shared </span><span class="si">{</span><span class="o">-</span><span class="mi">1</span><span class="o">*</span><span class="n">reward</span><span class="si">}</span><span class="s2"> |User </span><span class="si">{</span><span class="n">shared_context</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;slates action 0 |Action tshirt&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;slates action 0 |Action buttonupshirt&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;slates action 0 |Action highvis&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;slates action 1 |Action workpants&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;slates action 1 |Action formalpants&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;slates action 1 |Action shorts&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;slates action 2 |Action formalshoes&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;slates action 2 |Action runners&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;slates action 2 |Action flipflops&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;slates action 2 |Action boots&quot;</span><span class="p">,</span>
-        <span class="sa">f</span><span class="s2">&quot;slates slot </span><span class="si">{</span><span class="n">chosen_torso_index</span><span class="si">}</span><span class="s2">:</span><span class="si">{</span><span class="n">chosen_torso_prob</span><span class="si">}</span><span class="s2"> |Slot torso&quot;</span><span class="p">,</span>
-        <span class="sa">f</span><span class="s2">&quot;slates slot </span><span class="si">{</span><span class="n">chosen_legs_index</span><span class="si">}</span><span class="s2">:</span><span class="si">{</span><span class="n">chosen_legs_prob</span><span class="si">}</span><span class="s2"> |Slot legs&quot;</span><span class="p">,</span>
-        <span class="sa">f</span><span class="s2">&quot;slates slot </span><span class="si">{</span><span class="n">chosen_feet_index</span><span class="si">}</span><span class="s2">:</span><span class="si">{</span><span class="n">chosen_feet_prob</span><span class="si">}</span><span class="s2"> |Slot feet&quot;</span><span class="p">,</span>
-    <span class="p">]</span>
+def generate_slates_text_format_with_label(
+    shared_context,
+    reward,
+    chosen_torso_index,
+    chosen_torso_prob,
+    chosen_legs_index,
+    chosen_legs_prob,
+    chosen_feet_index,
+    chosen_feet_prob,
+):
+    return [
+        f&quot;slates shared {-1*reward} |User {shared_context}&quot;,
+        &quot;slates action 0 |Action tshirt&quot;,
+        &quot;slates action 0 |Action buttonupshirt&quot;,
+        &quot;slates action 0 |Action highvis&quot;,
+        &quot;slates action 1 |Action workpants&quot;,
+        &quot;slates action 1 |Action formalpants&quot;,
+        &quot;slates action 1 |Action shorts&quot;,
+        &quot;slates action 2 |Action formalshoes&quot;,
+        &quot;slates action 2 |Action runners&quot;,
+        &quot;slates action 2 |Action flipflops&quot;,
+        &quot;slates action 2 |Action boots&quot;,
+        f&quot;slates slot {chosen_torso_index}:{chosen_torso_prob} |Slot torso&quot;,
+        f&quot;slates slot {chosen_legs_index}:{chosen_legs_prob} |Slot legs&quot;,
+        f&quot;slates slot {chosen_feet_index}:{chosen_feet_prob} |Slot feet&quot;,
+    ]
 </pre></div>
 </div>
 </div>
@@ -704,9 +704,9 @@ const thebe_selector_output = ".output, .cell_output"
 <p>Let’s create the <code class="docutils literal notranslate"><span class="pre">Workspace</span></code> instance we’ll use with this simulator</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">slates_vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span>
-    <span class="s2">&quot;--slates --epsilon 0.2 --interactions SA UAS US UA -l 0.05 --power_t 0&quot;</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="kc">True</span>
-<span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>slates_vw = vowpalwabbit.Workspace(
+    &quot;--slates --epsilon 0.2 --interactions SA UAS US UA -l 0.05 --power_t 0&quot;, quiet=True
+)
 </pre></div>
 </div>
 </div>
@@ -715,29 +715,29 @@ const thebe_selector_output = ".output, .cell_output"
 <p>Now, the core simulation loop:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">slates_rewards</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">NUM_ITERATIONS</span><span class="p">):</span>
-    <span class="n">shared_context</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">shared_contexts</span><span class="p">)</span>
-    <span class="n">slates_prediction</span> <span class="o">=</span> <span class="n">slates_vw</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">generate_slates_text_format</span><span class="p">(</span><span class="n">shared_context</span><span class="p">))</span>
-    <span class="n">torso_index</span><span class="p">,</span> <span class="n">torso_prob</span> <span class="o">=</span> <span class="n">slates_prediction</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
-    <span class="n">legs_index</span><span class="p">,</span> <span class="n">legs_prob</span> <span class="o">=</span> <span class="n">slates_prediction</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
-    <span class="n">feet_index</span><span class="p">,</span> <span class="n">feet_prob</span> <span class="o">=</span> <span class="n">slates_prediction</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
-    <span class="n">reward</span> <span class="o">=</span> <span class="n">reward_function</span><span class="p">(</span><span class="n">shared_context</span><span class="p">,</span> <span class="n">torso_index</span><span class="p">,</span> <span class="n">legs_index</span><span class="p">,</span> <span class="n">feet_index</span><span class="p">)</span>
-    <span class="n">slates_rewards</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">reward</span><span class="p">)</span>
-    <span class="n">slates_vw</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span>
-        <span class="n">generate_slates_text_format_with_label</span><span class="p">(</span>
-            <span class="n">shared_context</span><span class="p">,</span>
-            <span class="n">reward</span><span class="p">,</span>
-            <span class="n">torso_index</span><span class="p">,</span>
-            <span class="n">torso_prob</span><span class="p">,</span>
-            <span class="n">legs_index</span><span class="p">,</span>
-            <span class="n">legs_prob</span><span class="p">,</span>
-            <span class="n">feet_index</span><span class="p">,</span>
-            <span class="n">feet_prob</span><span class="p">,</span>
-        <span class="p">)</span>
-    <span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>slates_rewards = []
+for _ in range(NUM_ITERATIONS):
+    shared_context = random.choice(shared_contexts)
+    slates_prediction = slates_vw.predict(generate_slates_text_format(shared_context))
+    torso_index, torso_prob = slates_prediction[0][0]
+    legs_index, legs_prob = slates_prediction[1][0]
+    feet_index, feet_prob = slates_prediction[2][0]
+    reward = reward_function(shared_context, torso_index, legs_index, feet_index)
+    slates_rewards.append(reward)
+    slates_vw.learn(
+        generate_slates_text_format_with_label(
+            shared_context,
+            reward,
+            torso_index,
+            torso_prob,
+            legs_index,
+            legs_prob,
+            feet_index,
+            feet_prob,
+        )
+    )
 
-<span class="n">slates_vw</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>
+slates_vw.finish()
 </pre></div>
 </div>
 </div>
@@ -749,50 +749,50 @@ const thebe_selector_output = ".output, .cell_output"
 <p>Let’s try to solve the same problem by using CB with combinatorial actions:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">generate_combinations</span><span class="p">(</span><span class="n">shared_context</span><span class="p">,</span> <span class="n">torso_items</span><span class="p">,</span> <span class="n">legs_items</span><span class="p">,</span> <span class="n">feet_items</span><span class="p">):</span>
-    <span class="n">examples</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s2">&quot;shared |User </span><span class="si">{</span><span class="n">shared_context</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">]</span>
-    <span class="n">descriptions</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">torso</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">torso_items</span><span class="p">):</span>
-        <span class="k">for</span> <span class="n">j</span><span class="p">,</span> <span class="n">legs</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">legs_items</span><span class="p">):</span>
-            <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">feet</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">feet_items</span><span class="p">):</span>
-                <span class="n">examples</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;|Action torso=</span><span class="si">{</span><span class="n">torso</span><span class="si">}</span><span class="s2"> legs=</span><span class="si">{</span><span class="n">legs</span><span class="si">}</span><span class="s2"> feet=</span><span class="si">{</span><span class="n">feet</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-                <span class="n">descriptions</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">k</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>def generate_combinations(shared_context, torso_items, legs_items, feet_items):
+    examples = [f&quot;shared |User {shared_context}&quot;]
+    descriptions = []
+    for i, torso in enumerate(torso_items):
+        for j, legs in enumerate(legs_items):
+            for k, feet in enumerate(feet_items):
+                examples.append(f&quot;|Action torso={torso} legs={legs} feet={feet}&quot;)
+                descriptions.append((i, j, k))
 
-    <span class="k">return</span> <span class="n">examples</span><span class="p">,</span> <span class="n">descriptions</span>
-
-
-<span class="k">def</span> <span class="nf">sample_custom_pmf</span><span class="p">(</span><span class="n">pmf</span><span class="p">):</span>
-    <span class="n">total</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">pmf</span><span class="p">)</span>
-    <span class="n">scale</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">/</span> <span class="n">total</span>
-    <span class="n">pmf</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="o">*</span> <span class="n">scale</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">pmf</span><span class="p">]</span>
-    <span class="n">draw</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span>
-    <span class="n">sum_prob</span> <span class="o">=</span> <span class="mf">0.0</span>
-    <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">prob</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">pmf</span><span class="p">):</span>
-        <span class="n">sum_prob</span> <span class="o">+=</span> <span class="n">prob</span>
-        <span class="k">if</span> <span class="n">sum_prob</span> <span class="o">&gt;</span> <span class="n">draw</span><span class="p">:</span>
-            <span class="k">return</span> <span class="n">index</span><span class="p">,</span> <span class="n">prob</span>
+    return examples, descriptions
 
 
-<span class="n">cb_vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span>
-    <span class="s2">&quot;--cb_explore_adf --epsilon 0.2 --interactions AA AU AAU -l 0.05 --power_t 0&quot;</span><span class="p">,</span>
-    <span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-<span class="p">)</span>
+def sample_custom_pmf(pmf):
+    total = sum(pmf)
+    scale = 1 / total
+    pmf = [x * scale for x in pmf]
+    draw = random.random()
+    sum_prob = 0.0
+    for index, prob in enumerate(pmf):
+        sum_prob += prob
+        if sum_prob &gt; draw:
+            return index, prob
 
-<span class="n">cb_rewards</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">NUM_ITERATIONS</span><span class="p">):</span>
-    <span class="n">shared_context</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">shared_contexts</span><span class="p">)</span>
-    <span class="n">examples</span><span class="p">,</span> <span class="n">indices</span> <span class="o">=</span> <span class="n">generate_combinations</span><span class="p">(</span>
-        <span class="n">shared_context</span><span class="p">,</span> <span class="n">torso_items</span><span class="p">,</span> <span class="n">legs_items</span><span class="p">,</span> <span class="n">feet_items</span>
-    <span class="p">)</span>
-    <span class="n">cb_prediction</span> <span class="o">=</span> <span class="n">cb_vw</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">examples</span><span class="p">)</span>
-    <span class="n">chosen_index</span><span class="p">,</span> <span class="n">prob</span> <span class="o">=</span> <span class="n">sample_custom_pmf</span><span class="p">(</span><span class="n">cb_prediction</span><span class="p">)</span>
-    <span class="n">torso_index</span><span class="p">,</span> <span class="n">legs_index</span><span class="p">,</span> <span class="n">feet_index</span> <span class="o">=</span> <span class="n">indices</span><span class="p">[</span><span class="n">chosen_index</span><span class="p">]</span>
-    <span class="n">reward</span> <span class="o">=</span> <span class="n">reward_function</span><span class="p">(</span><span class="n">shared_context</span><span class="p">,</span> <span class="n">torso_index</span><span class="p">,</span> <span class="n">legs_index</span><span class="p">,</span> <span class="n">feet_index</span><span class="p">)</span>
-    <span class="n">cb_rewards</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">reward</span><span class="p">)</span>
-    <span class="n">examples</span><span class="p">[</span><span class="n">chosen_index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;0:</span><span class="si">{</span><span class="o">-</span><span class="mi">1</span><span class="o">*</span><span class="n">reward</span><span class="si">}</span><span class="s2">:</span><span class="si">{</span><span class="n">prob</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">examples</span><span class="p">[</span><span class="n">chosen_index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span>
-    <span class="n">cb_vw</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">examples</span><span class="p">)</span>
 
-<span class="n">cb_vw</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>
+cb_vw = vowpalwabbit.Workspace(
+    &quot;--cb_explore_adf --epsilon 0.2 --interactions AA AU AAU -l 0.05 --power_t 0&quot;,
+    quiet=True,
+)
+
+cb_rewards = []
+for _ in range(NUM_ITERATIONS):
+    shared_context = random.choice(shared_contexts)
+    examples, indices = generate_combinations(
+        shared_context, torso_items, legs_items, feet_items
+    )
+    cb_prediction = cb_vw.predict(examples)
+    chosen_index, prob = sample_custom_pmf(cb_prediction)
+    torso_index, legs_index, feet_index = indices[chosen_index]
+    reward = reward_function(shared_context, torso_index, legs_index, feet_index)
+    cb_rewards.append(reward)
+    examples[chosen_index + 1] = f&quot;0:{-1*reward}:{prob} {examples[chosen_index + 1]}&quot;
+    cb_vw.learn(examples)
+
+cb_vw.finish()
 </pre></div>
 </div>
 </div>
@@ -804,17 +804,17 @@ const thebe_selector_output = ".output, .cell_output"
 <p>Let’s plot the two runs so we can compare the result:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">cb_rewards</span><span class="p">)</span><span class="o">.</span><span class="n">expanding</span><span class="p">()</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">slates_rewards</span><span class="p">)</span><span class="o">.</span><span class="n">expanding</span><span class="p">()</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Iterations&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Average reward&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">([</span><span class="s2">&quot;cb&quot;</span><span class="p">,</span> <span class="s2">&quot;slates&quot;</span><span class="p">])</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>plt.plot(pd.Series(cb_rewards).expanding().mean())
+plt.plot(pd.Series(slates_rewards).expanding().mean())
+plt.xlabel(&quot;Iterations&quot;)
+plt.ylabel(&quot;Average reward&quot;)
+plt.legend([&quot;cb&quot;, &quot;slates&quot;])
+plt.show()
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/75da805c4a569dcab9861068b5d76ae4d6592d42cc95d5aea8817cda371ea46a.png" src="../_images/75da805c4a569dcab9861068b5d76ae4d6592d42cc95d5aea8817cda371ea46a.png" />
+<img alt="../_images/13539c3055b5851f5b7ca4d96ca26ef2853a525b2c8d441fd759ea72214fc086.png" src="../_images/13539c3055b5851f5b7ca4d96ca26ef2853a525b2c8d441fd759ea72214fc086.png" />
 </div>
 </div>
 <p>As we can see, Slates learns a better policy with lower regret.</p>

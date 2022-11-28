@@ -606,20 +606,20 @@ The context is therefore (room, time_of_day).</p>
 <p>Let’s first start with importing the necessary packages:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">vowpalwabbit</span>
-<span class="kn">import</span> <span class="nn">random</span>
-<span class="kn">import</span> <span class="nn">math</span>
-<span class="kn">import</span> <span class="nn">json</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>import matplotlib.pyplot as plt
+import vowpalwabbit
+import random
+import math
+import json
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># VW minimizes loss/cost, therefore we will pass cost as -reward</span>
-<span class="n">USER_LIKED_TEMPERATURE</span> <span class="o">=</span> <span class="o">-</span><span class="mf">1.0</span>
-<span class="n">USER_DISLIKED_TEMPERATURE</span> <span class="o">=</span> <span class="mf">0.0</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># VW minimizes loss/cost, therefore we will pass cost as -reward
+USER_LIKED_TEMPERATURE = -1.0
+USER_DISLIKED_TEMPERATURE = 0.0
 </pre></div>
 </div>
 </div>
@@ -632,68 +632,68 @@ The context is therefore (room, time_of_day).</p>
 <p>The reward function below specifies that we want the living room to be cold in the morning but warm in the afternoon. In reverse, we prefer the bedroom to be warm in the morning and cold in the afternoon. It looks dense but we are just simulating our hypothetical world in the format of the feedback the learner understands: cost. If the learner recommends a temperature that aligns with the reward function, we give a positive reward. Max reward is -1.0, min reward is 0 since VW learns in terms of cost, so we return a negative reward. In our simulated world this is the difference between the temperature recommended and the temperature chosen. If the difference is smaller than 5 degrees then we give a reward to the thermostat. This is a steep cost function.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_cost</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">temperature</span><span class="p">,</span> <span class="n">min_value</span><span class="p">,</span> <span class="n">max_value</span><span class="p">):</span>
-    <span class="nb">range</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">max_value</span> <span class="o">-</span> <span class="n">min_value</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;room&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Living Room&quot;</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span><span class="p">:</span>
-            <span class="c1"># randomly pick a temperature in this range</span>
-            <span class="n">selected_temperature</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">18</span><span class="p">)</span>
-            <span class="c1"># the absolute difference between selected temperature and proposed temperature</span>
-            <span class="k">if</span> <span class="n">math</span><span class="o">.</span><span class="n">fabs</span><span class="p">(</span><span class="n">selected_temperature</span> <span class="o">-</span> <span class="n">temperature</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mf">5.0</span><span class="p">:</span>
-                <span class="k">return</span> <span class="n">USER_LIKED_TEMPERATURE</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="k">return</span> <span class="n">USER_DISLIKED_TEMPERATURE</span>
-        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;afternoon&quot;</span><span class="p">:</span>
-            <span class="n">selected_temperature</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span> <span class="mi">29</span><span class="p">)</span>
-            <span class="c1"># the absolute difference between selected temperature and proposed temperature</span>
-            <span class="k">if</span> <span class="n">math</span><span class="o">.</span><span class="n">fabs</span><span class="p">(</span><span class="n">selected_temperature</span> <span class="o">-</span> <span class="n">temperature</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mf">5.0</span><span class="p">:</span>
-                <span class="k">return</span> <span class="n">USER_LIKED_TEMPERATURE</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="k">return</span> <span class="n">USER_DISLIKED_TEMPERATURE</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="k">return</span> <span class="n">USER_DISLIKED_TEMPERATURE</span>
-    <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;room&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Bedroom&quot;</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span><span class="p">:</span>
-            <span class="c1"># randomly pick a temperature in this range</span>
-            <span class="n">selected_temperature</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">22</span><span class="p">,</span> <span class="mi">29</span><span class="p">)</span>
-            <span class="c1"># the absolute difference between selected temperature and proposed temperature</span>
-            <span class="k">if</span> <span class="n">math</span><span class="o">.</span><span class="n">fabs</span><span class="p">(</span><span class="n">selected_temperature</span> <span class="o">-</span> <span class="n">temperature</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mf">5.0</span><span class="p">:</span>
-                <span class="k">return</span> <span class="n">USER_LIKED_TEMPERATURE</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="k">return</span> <span class="n">USER_DISLIKED_TEMPERATURE</span>
-        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;afternoon&quot;</span><span class="p">:</span>
-            <span class="c1"># randomly pick a temperature in this range</span>
-            <span class="n">selected_temperature</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">18</span><span class="p">)</span>
-            <span class="c1"># the absolute difference between selected temperature and proposed temperature</span>
-            <span class="k">if</span> <span class="n">math</span><span class="o">.</span><span class="n">fabs</span><span class="p">(</span><span class="n">selected_temperature</span> <span class="o">-</span> <span class="n">temperature</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mf">5.0</span><span class="p">:</span>
-                <span class="k">return</span> <span class="n">USER_LIKED_TEMPERATURE</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="k">return</span> <span class="n">USER_DISLIKED_TEMPERATURE</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="k">return</span> <span class="n">USER_DISLIKED_TEMPERATURE</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">USER_DISLIKED_TEMPERATURE</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>def get_cost(context, temperature, min_value, max_value):
+    range = float(max_value - min_value)
+    if context[&quot;room&quot;] == &quot;Living Room&quot;:
+        if context[&quot;time_of_day&quot;] == &quot;morning&quot;:
+            # randomly pick a temperature in this range
+            selected_temperature = random.uniform(15, 18)
+            # the absolute difference between selected temperature and proposed temperature
+            if math.fabs(selected_temperature - temperature) &lt; 5.0:
+                return USER_LIKED_TEMPERATURE
+            else:
+                return USER_DISLIKED_TEMPERATURE
+        elif context[&quot;time_of_day&quot;] == &quot;afternoon&quot;:
+            selected_temperature = random.uniform(25, 29)
+            # the absolute difference between selected temperature and proposed temperature
+            if math.fabs(selected_temperature - temperature) &lt; 5.0:
+                return USER_LIKED_TEMPERATURE
+            else:
+                return USER_DISLIKED_TEMPERATURE
+        else:
+            return USER_DISLIKED_TEMPERATURE
+    elif context[&quot;room&quot;] == &quot;Bedroom&quot;:
+        if context[&quot;time_of_day&quot;] == &quot;morning&quot;:
+            # randomly pick a temperature in this range
+            selected_temperature = random.uniform(22, 29)
+            # the absolute difference between selected temperature and proposed temperature
+            if math.fabs(selected_temperature - temperature) &lt; 5.0:
+                return USER_LIKED_TEMPERATURE
+            else:
+                return USER_DISLIKED_TEMPERATURE
+        elif context[&quot;time_of_day&quot;] == &quot;afternoon&quot;:
+            # randomly pick a temperature in this range
+            selected_temperature = random.uniform(15, 18)
+            # the absolute difference between selected temperature and proposed temperature
+            if math.fabs(selected_temperature - temperature) &lt; 5.0:
+                return USER_LIKED_TEMPERATURE
+            else:
+                return USER_DISLIKED_TEMPERATURE
+        else:
+            return USER_DISLIKED_TEMPERATURE
+    else:
+        return USER_DISLIKED_TEMPERATURE
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># This function modifies (context, temperature (i.e. action), cost, probability) to VW friendly json format</span>
-<span class="k">def</span> <span class="nf">to_vw_example_format</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">cats_label</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-    <span class="n">example_dict</span> <span class="o">=</span> <span class="p">{}</span>
-    <span class="k">if</span> <span class="n">cats_label</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="n">chosen_temp</span><span class="p">,</span> <span class="n">cost</span><span class="p">,</span> <span class="n">pdf_value</span> <span class="o">=</span> <span class="n">cats_label</span>
-        <span class="n">example_dict</span><span class="p">[</span><span class="s2">&quot;_label_ca&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
-            <span class="s2">&quot;action&quot;</span><span class="p">:</span> <span class="n">chosen_temp</span><span class="p">,</span>
-            <span class="s2">&quot;cost&quot;</span><span class="p">:</span> <span class="n">cost</span><span class="p">,</span>
-            <span class="s2">&quot;pdf_value&quot;</span><span class="p">:</span> <span class="n">pdf_value</span><span class="p">,</span>
-        <span class="p">}</span>
-    <span class="n">example_dict</span><span class="p">[</span><span class="s2">&quot;c&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
-        <span class="s2">&quot;room=</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">context</span><span class="p">[</span><span class="s2">&quot;room&quot;</span><span class="p">]):</span> <span class="mi">1</span><span class="p">,</span>
-        <span class="s2">&quot;time_of_day=</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]):</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">example_dict</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># This function modifies (context, temperature (i.e. action), cost, probability) to VW friendly json format
+def to_vw_example_format(context, cats_label=None):
+    example_dict = {}
+    if cats_label is not None:
+        chosen_temp, cost, pdf_value = cats_label
+        example_dict[&quot;_label_ca&quot;] = {
+            &quot;action&quot;: chosen_temp,
+            &quot;cost&quot;: cost,
+            &quot;pdf_value&quot;: pdf_value,
+        }
+    example_dict[&quot;c&quot;] = {
+        &quot;room={}&quot;.format(context[&quot;room&quot;]): 1,
+        &quot;time_of_day={}&quot;.format(context[&quot;time_of_day&quot;]): 1,
+    }
+    return json.dumps(example_dict)
 </pre></div>
 </div>
 </div>
@@ -708,9 +708,9 @@ We pass this example to VW and get the chosen action and the probability of chos
 Finally we return the chosen temperature and the probability of choosing it (we are going to need the probability when we learn form this example)</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">predict_temperature</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">context</span><span class="p">):</span>
-    <span class="n">vw_text_example</span> <span class="o">=</span> <span class="n">to_vw_example_format</span><span class="p">(</span><span class="n">context</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">vw</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">vw_text_example</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>def predict_temperature(vw, context):
+    vw_text_example = to_vw_example_format(context)
+    return vw.predict(vw_text_example)
 </pre></div>
 </div>
 </div>
@@ -722,16 +722,16 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 <p>We will choose between ‘Living Room’ and ‘Bedroom’ uniformly at random and also choose the time of day uniformly at random. We can think of this as tossing a coin to choose between the rooms (‘Living Room’ if heads and ‘Bedroom’ if tails) and another coin toss for choosing time of day.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rooms</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Living Room&quot;</span><span class="p">,</span> <span class="s2">&quot;Bedroom&quot;</span><span class="p">]</span>
-<span class="n">times_of_day</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;morning&quot;</span><span class="p">,</span> <span class="s2">&quot;afternoon&quot;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>rooms = [&quot;Living Room&quot;, &quot;Bedroom&quot;]
+times_of_day = [&quot;morning&quot;, &quot;afternoon&quot;]
 
 
-<span class="k">def</span> <span class="nf">choose_room</span><span class="p">(</span><span class="n">rooms</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">rooms</span><span class="p">)</span>
+def choose_room(rooms):
+    return random.choice(rooms)
 
 
-<span class="k">def</span> <span class="nf">choose_time_of_day</span><span class="p">(</span><span class="n">times_of_day</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">times_of_day</span><span class="p">)</span>
+def choose_time_of_day(times_of_day):
+    return random.choice(times_of_day)
 </pre></div>
 </div>
 </div>
@@ -748,51 +748,51 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 <p>The above steps are repeatedly executed during our simulations, so we define the process in the run_simulation function. The cost function must be supplied as this is essentially us simulating how the world works.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">run_simulation</span><span class="p">(</span>
-    <span class="n">vw</span><span class="p">,</span>
-    <span class="n">num_iterations</span><span class="p">,</span>
-    <span class="n">rooms</span><span class="p">,</span>
-    <span class="n">times_of_day</span><span class="p">,</span>
-    <span class="n">cost_function</span><span class="p">,</span>
-    <span class="n">min_value</span><span class="p">,</span>
-    <span class="n">max_value</span><span class="p">,</span>
-    <span class="n">do_learn</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-<span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>def run_simulation(
+    vw,
+    num_iterations,
+    rooms,
+    times_of_day,
+    cost_function,
+    min_value,
+    max_value,
+    do_learn=True,
+):
 
-    <span class="n">reward_rate</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="n">hits</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">cost_sum</span> <span class="o">=</span> <span class="mf">0.0</span>
+    reward_rate = []
+    hits = 0
+    cost_sum = 0.0
 
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_iterations</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
-        <span class="c1"># 1. In each simulation choose a room</span>
-        <span class="n">room</span> <span class="o">=</span> <span class="n">choose_room</span><span class="p">(</span><span class="n">rooms</span><span class="p">)</span>
-        <span class="c1"># 2. Choose time of day for a given room</span>
-        <span class="n">time_of_day</span> <span class="o">=</span> <span class="n">choose_time_of_day</span><span class="p">(</span><span class="n">times_of_day</span><span class="p">)</span>
-        <span class="c1"># 3. Pass context to vw to get a temperature</span>
-        <span class="n">context</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;room&quot;</span><span class="p">:</span> <span class="n">room</span><span class="p">,</span> <span class="s2">&quot;time_of_day&quot;</span><span class="p">:</span> <span class="n">time_of_day</span><span class="p">}</span>
-        <span class="n">temperature</span><span class="p">,</span> <span class="n">pdf_value</span> <span class="o">=</span> <span class="n">predict_temperature</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">context</span><span class="p">)</span>
+    for i in range(1, num_iterations + 1):
+        # 1. In each simulation choose a room
+        room = choose_room(rooms)
+        # 2. Choose time of day for a given room
+        time_of_day = choose_time_of_day(times_of_day)
+        # 3. Pass context to vw to get a temperature
+        context = {&quot;room&quot;: room, &quot;time_of_day&quot;: time_of_day}
+        temperature, pdf_value = predict_temperature(vw, context)
 
-        <span class="c1"># 4. Get cost of the action we chose</span>
-        <span class="n">cost</span> <span class="o">=</span> <span class="n">cost_function</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">temperature</span><span class="p">,</span> <span class="n">min_value</span><span class="p">,</span> <span class="n">max_value</span><span class="p">)</span>
-        <span class="k">if</span> <span class="n">cost</span> <span class="o">&lt;=</span> <span class="o">-</span><span class="mf">0.75</span><span class="p">:</span>  <span class="c1"># count something as a hit only if it has a high reward</span>
-            <span class="n">hits</span> <span class="o">+=</span> <span class="mi">1</span>
-        <span class="n">cost_sum</span> <span class="o">+=</span> <span class="n">cost</span>
+        # 4. Get cost of the action we chose
+        cost = cost_function(context, temperature, min_value, max_value)
+        if cost &lt;= -0.75:  # count something as a hit only if it has a high reward
+            hits += 1
+        cost_sum += cost
 
-        <span class="k">if</span> <span class="n">do_learn</span><span class="p">:</span>
-            <span class="c1"># 5. Inform VW of what happened so we can learn from it</span>
-            <span class="n">txt_ex</span> <span class="o">=</span> <span class="n">to_vw_example_format</span><span class="p">(</span>
-                <span class="n">context</span><span class="p">,</span> <span class="n">cats_label</span><span class="o">=</span><span class="p">(</span><span class="n">temperature</span><span class="p">,</span> <span class="n">cost</span><span class="p">,</span> <span class="n">pdf_value</span><span class="p">)</span>
-            <span class="p">)</span>
-            <span class="n">vw_format</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">txt_ex</span><span class="p">,</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">LabelType</span><span class="o">.</span><span class="n">CONTINUOUS</span><span class="p">)</span>
-            <span class="c1"># 6. Learn</span>
-            <span class="n">vw</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">vw_format</span><span class="p">)</span>
-            <span class="c1"># 7. Let VW know you&#39;re done with these objects</span>
-            <span class="n">vw</span><span class="o">.</span><span class="n">finish_example</span><span class="p">(</span><span class="n">vw_format</span><span class="p">)</span>
+        if do_learn:
+            # 5. Inform VW of what happened so we can learn from it
+            txt_ex = to_vw_example_format(
+                context, cats_label=(temperature, cost, pdf_value)
+            )
+            vw_format = vw.parse(txt_ex, vowpalwabbit.LabelType.CONTINUOUS)
+            # 6. Learn
+            vw.learn(vw_format)
+            # 7. Let VW know you&#39;re done with these objects
+            vw.finish_example(vw_format)
 
-        <span class="c1"># We negate this so that on the plot instead of minimizing cost, we are maximizing reward</span>
-        <span class="n">reward_rate</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span> <span class="o">*</span> <span class="n">cost_sum</span> <span class="o">/</span> <span class="n">i</span><span class="p">)</span>
+        # We negate this so that on the plot instead of minimizing cost, we are maximizing reward
+        reward_rate.append(-1 * cost_sum / i)
 
-    <span class="k">return</span> <span class="n">reward_rate</span><span class="p">,</span> <span class="n">hits</span>
+    return reward_rate, hits
 </pre></div>
 </div>
 </div>
@@ -800,13 +800,13 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 <p>We want to be able to visualize what is occurring, so we are going to plot the reward rate over each iteration of the simulation. If VW is showing temperatures the that are close to what the simulated world wants, the reward will be higher. Below is a little utility function to make showing the plot easier.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">plot_reward_rate</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">,</span> <span class="n">reward_rate</span><span class="p">,</span> <span class="n">title</span><span class="p">):</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_iterations</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">reward_rate</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;num_iterations&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;reward rate&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>def plot_reward_rate(num_iterations, reward_rate, title):
+    plt.show()
+    plt.plot(range(1, num_iterations + 1), reward_rate)
+    plt.xlabel(&quot;num_iterations&quot;, fontsize=14)
+    plt.ylabel(&quot;reward rate&quot;, fontsize=14)
+    plt.title(title)
+    plt.ylim([0, 1])
 </pre></div>
 </div>
 </div>
@@ -825,31 +825,31 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 <h3>With Learning<a class="headerlink" href="#with-learning" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">num_iterations</span> <span class="o">=</span> <span class="mi">5000</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>num_iterations = 5000
 
-<span class="n">num_actions</span> <span class="o">=</span> <span class="mi">32</span>
-<span class="n">bandwidth</span> <span class="o">=</span> <span class="mi">1</span>
+num_actions = 32
+bandwidth = 1
 
-<span class="c1"># Instantiate VW learner</span>
-<span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span>
-    <span class="s2">&quot;--cats &quot;</span>
-    <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">num_actions</span><span class="p">)</span>
-    <span class="o">+</span> <span class="s2">&quot;  --bandwidth &quot;</span>
-    <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">bandwidth</span><span class="p">)</span>
-    <span class="o">+</span> <span class="s2">&quot; --min_value 0 --max_value 32 --json --chain_hash --coin --epsilon 0.2 -q :: --quiet&quot;</span>
-<span class="p">)</span>
-<span class="n">ctr</span><span class="p">,</span> <span class="n">hits</span> <span class="o">=</span> <span class="n">run_simulation</span><span class="p">(</span>
-    <span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">rooms</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">get_cost</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="n">do_learn</span><span class="o">=</span><span class="kc">True</span>
-<span class="p">)</span>
-<span class="n">vw</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>
-<span class="n">plot_reward_rate</span><span class="p">(</span>
-    <span class="n">num_iterations</span><span class="p">,</span> <span class="n">ctr</span><span class="p">,</span> <span class="s2">&quot;reward rate with num_actions = 32 and bandwidth = 1&quot;</span>
-<span class="p">)</span>
+# Instantiate VW learner
+vw = vowpalwabbit.Workspace(
+    &quot;--cats &quot;
+    + str(num_actions)
+    + &quot;  --bandwidth &quot;
+    + str(bandwidth)
+    + &quot; --min_value 0 --max_value 32 --json --chain_hash --coin --epsilon 0.2 -q :: --quiet&quot;
+)
+ctr, hits = run_simulation(
+    vw, num_iterations, rooms, times_of_day, get_cost, 0, 32, do_learn=True
+)
+vw.finish()
+plot_reward_rate(
+    num_iterations, ctr, &quot;reward rate with num_actions = 32 and bandwidth = 1&quot;
+)
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/1ef57a6995c2816dd6b45c69202b9490a44ef397d0418a00b7f66d6fefb95708.png" src="../_images/1ef57a6995c2816dd6b45c69202b9490a44ef397d0418a00b7f66d6fefb95708.png" />
+<img alt="../_images/df6c5748ae9f7d23b08e9e5de48ea46b8402cc2addd82b935a0af2c029faa368.png" src="../_images/df6c5748ae9f7d23b08e9e5de48ea46b8402cc2addd82b935a0af2c029faa368.png" />
 </div>
 </div>
 </section>
@@ -858,31 +858,31 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 <p>Let’s do the same but without learning. The reward rate never improves and just hovers around 0.5</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">num_iterations</span> <span class="o">=</span> <span class="mi">5000</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>num_iterations = 5000
 
-<span class="n">num_actions</span> <span class="o">=</span> <span class="mi">32</span>
-<span class="n">bandwidth</span> <span class="o">=</span> <span class="mi">1</span>
+num_actions = 32
+bandwidth = 1
 
-<span class="c1"># Instantiate VW learner</span>
-<span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span>
-    <span class="s2">&quot;--cats &quot;</span>
-    <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">num_actions</span><span class="p">)</span>
-    <span class="o">+</span> <span class="s2">&quot;  --bandwidth &quot;</span>
-    <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">bandwidth</span><span class="p">)</span>
-    <span class="o">+</span> <span class="s2">&quot; --min_value 0 --max_value 32 --json --chain_hash --coin --epsilon 0.2 -q :: --quiet&quot;</span>
-<span class="p">)</span>
-<span class="n">ctr</span><span class="p">,</span> <span class="n">hits</span> <span class="o">=</span> <span class="n">run_simulation</span><span class="p">(</span>
-    <span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">rooms</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">get_cost</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="n">do_learn</span><span class="o">=</span><span class="kc">False</span>
-<span class="p">)</span>
-<span class="n">vw</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>
-<span class="n">plot_reward_rate</span><span class="p">(</span>
-    <span class="n">num_iterations</span><span class="p">,</span> <span class="n">ctr</span><span class="p">,</span> <span class="s2">&quot;click through rate with num_actions = 32 and bandwidth = 1&quot;</span>
-<span class="p">)</span>
+# Instantiate VW learner
+vw = vowpalwabbit.Workspace(
+    &quot;--cats &quot;
+    + str(num_actions)
+    + &quot;  --bandwidth &quot;
+    + str(bandwidth)
+    + &quot; --min_value 0 --max_value 32 --json --chain_hash --coin --epsilon 0.2 -q :: --quiet&quot;
+)
+ctr, hits = run_simulation(
+    vw, num_iterations, rooms, times_of_day, get_cost, 0, 32, do_learn=False
+)
+vw.finish()
+plot_reward_rate(
+    num_iterations, ctr, &quot;click through rate with num_actions = 32 and bandwidth = 1&quot;
+)
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/635e78256f684e5ce58edec55ade5be98a40684cfb552463e8d5c450cceb9f22.png" src="../_images/635e78256f684e5ce58edec55ade5be98a40684cfb552463e8d5c450cceb9f22.png" />
+<img alt="../_images/61bf7789f64421baea4023d0e32bc910d2c6709bf995dfba41f2fc7f94fac894.png" src="../_images/61bf7789f64421baea4023d0e32bc910d2c6709bf995dfba41f2fc7f94fac894.png" />
 </div>
 </div>
 </section>
@@ -892,38 +892,38 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 <p>Next let’s do a parameter sweep for different values of <code class="docutils literal notranslate"><span class="pre">num_actions</span></code> and <code class="docutils literal notranslate"><span class="pre">bandwidth</span></code>. We will use the below function to help us plot the reward rates for different combinations of <code class="docutils literal notranslate"><span class="pre">num_actions</span></code> and <code class="docutils literal notranslate"><span class="pre">bandwidths</span></code></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">plot_reward_sweep</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">bandwidths</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-    <span class="n">n_actions</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">actions</span><span class="p">)</span>
-    <span class="n">n_bandwidths</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">bandwidths</span><span class="p">)</span>
-    <span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">n_actions</span><span class="p">,</span> <span class="n">n_bandwidths</span><span class="p">)</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">actions</span><span class="p">)):</span>
-        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">bandwidths</span><span class="p">)):</span>
-            <span class="k">if</span> <span class="n">bandwidths</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">actions</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
-                <span class="n">axs</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;NA&quot;</span><span class="p">)</span>
-                <span class="k">continue</span>
-            <span class="n">reward_rate</span><span class="p">,</span> <span class="n">hits</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">actions</span><span class="p">[</span><span class="n">i</span><span class="p">])][</span><span class="nb">str</span><span class="p">(</span><span class="n">bandwidths</span><span class="p">[</span><span class="n">j</span><span class="p">])]</span>
-            <span class="n">hits_percentage</span> <span class="o">=</span> <span class="p">(</span><span class="n">hits</span> <span class="o">/</span> <span class="p">(</span><span class="n">num_iterations</span><span class="p">))</span> <span class="o">*</span> <span class="mi">100</span>
-            <span class="n">axs</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_iterations</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">reward_rate</span><span class="p">)</span>
-            <span class="n">axs</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span>
-                <span class="s2">&quot;hits </span><span class="si">{:.2f}</span><span class="s2">% TR </span><span class="si">{:.2f}</span><span class="s2">%&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">hits_percentage</span><span class="p">,</span> <span class="n">reward_rate</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="mi">100</span><span class="p">)</span>
-            <span class="p">)</span>
-            <span class="n">axs</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>def plot_reward_sweep(num_iterations, actions, bandwidths, data):
+    plt.show()
+    n_actions = len(actions)
+    n_bandwidths = len(bandwidths)
+    fig, axs = plt.subplots(n_actions, n_bandwidths)
+    for i in range(0, len(actions)):
+        for j in range(0, len(bandwidths)):
+            if bandwidths[j] &gt;= actions[i]:
+                axs[i, j].set_title(&quot;NA&quot;)
+                continue
+            reward_rate, hits = data[str(actions[i])][str(bandwidths[j])]
+            hits_percentage = (hits / (num_iterations)) * 100
+            axs[i, j].plot(range(1, num_iterations + 1), reward_rate)
+            axs[i, j].set_title(
+                &quot;hits {:.2f}% TR {:.2f}%&quot;.format(hits_percentage, reward_rate[-1] * 100)
+            )
+            axs[i, j].set_ylim([0, 1])
 
-    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">axs</span><span class="p">):</span>
-        <span class="k">for</span> <span class="n">j</span><span class="p">,</span> <span class="n">ax</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">row</span><span class="p">):</span>
-            <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;b: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">bandwidths</span><span class="p">[</span><span class="n">j</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">bandwidths</span><span class="p">)]),</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
-            <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;k: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">actions</span><span class="p">[</span><span class="n">i</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">actions</span><span class="p">)]),</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+    for i, row in enumerate(axs):
+        for j, ax in enumerate(row):
+            ax.set_xlabel(&quot;b: &quot; + str(bandwidths[j % len(bandwidths)]), fontsize=14)
+            ax.set_ylabel(&quot;k: &quot; + str(actions[i % len(actions)]), fontsize=14)
 
-    <span class="n">fig</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.04</span><span class="p">,</span> <span class="s2">&quot;num_iterations&quot;</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
-    <span class="n">fig</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.04</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="s2">&quot;reward_rate&quot;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">rotation</span><span class="o">=</span><span class="s2">&quot;vertical&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
-    <span class="n">fig</span><span class="o">.</span><span class="n">set_figheight</span><span class="p">(</span><span class="mi">18</span><span class="p">)</span>
-    <span class="n">fig</span><span class="o">.</span><span class="n">set_figwidth</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s2">&quot;#examples </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">))</span>
+    fig.text(0.5, 0.04, &quot;num_iterations&quot;, ha=&quot;center&quot;, fontsize=14)
+    fig.text(0.04, 0.5, &quot;reward_rate&quot;, va=&quot;center&quot;, rotation=&quot;vertical&quot;, fontsize=14)
+    fig.set_figheight(18)
+    fig.set_figwidth(30)
+    plt.suptitle(&quot;#examples {}&quot;.format(num_iterations))
 
-    <span class="c1"># Hide x labels and tick labels for top plots and y ticks for right plots.</span>
-    <span class="k">for</span> <span class="n">ax</span> <span class="ow">in</span> <span class="n">axs</span><span class="o">.</span><span class="n">flat</span><span class="p">:</span>
-        <span class="n">ax</span><span class="o">.</span><span class="n">label_outer</span><span class="p">()</span>
+    # Hide x labels and tick labels for top plots and y ticks for right plots.
+    for ax in axs.flat:
+        ax.label_outer()
 </pre></div>
 </div>
 </div>
@@ -934,31 +934,31 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 <p>We will also try all the combinaitons of the above action numbers with bandwidths ranging from 0 to 25. The smaller the bandwidth the smaller the smoothing range around the selected continuous value. Really large bandwidths will result in large smoothing ranges and could lead to results similar to uniform random.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># do parameter sweeping</span>
-<span class="n">data</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="n">num_actions</span> <span class="o">=</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="mi">128</span><span class="p">,</span> <span class="mi">256</span><span class="p">,</span> <span class="mi">512</span><span class="p">,</span> <span class="mi">1024</span><span class="p">,</span> <span class="mi">2048</span><span class="p">]</span>
-<span class="n">bandwidths</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">25</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># do parameter sweeping
+data = {}
+num_actions = [8, 32, 64, 128, 256, 512, 1024, 2048]
+bandwidths = [0, 1, 2, 3, 25]
 
-<span class="n">num_iterations</span> <span class="o">=</span> <span class="mi">5000</span>
+num_iterations = 5000
 
-<span class="k">for</span> <span class="n">actions</span> <span class="ow">in</span> <span class="n">num_actions</span><span class="p">:</span>
-    <span class="k">for</span> <span class="n">bd</span> <span class="ow">in</span> <span class="n">bandwidths</span><span class="p">:</span>
-        <span class="k">if</span> <span class="nb">str</span><span class="p">(</span><span class="n">actions</span><span class="p">)</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
-            <span class="n">data</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">actions</span><span class="p">)]</span> <span class="o">=</span> <span class="p">{}</span>
-        <span class="k">if</span> <span class="n">bd</span> <span class="o">&gt;=</span> <span class="n">actions</span><span class="p">:</span>
-            <span class="k">continue</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Running simulation for: --cats </span><span class="si">{</span><span class="n">actions</span><span class="si">}</span><span class="s2"> and --bandwidth </span><span class="si">{</span><span class="n">bd</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-        <span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span>
-            <span class="sa">f</span><span class="s2">&quot;--cats </span><span class="si">{</span><span class="n">actions</span><span class="si">}</span><span class="s2">  --bandwidth </span><span class="si">{</span><span class="n">bd</span><span class="si">}</span><span class="s2"> --min_value 0 --max_value 32 --json --chain_hash --coin --epsilon 0.2 -q :: --quiet&quot;</span>
-        <span class="p">)</span>
-        <span class="n">rr</span><span class="p">,</span> <span class="n">hits</span> <span class="o">=</span> <span class="n">run_simulation</span><span class="p">(</span>
-            <span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">rooms</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">get_cost</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="n">do_learn</span><span class="o">=</span><span class="kc">True</span>
-        <span class="p">)</span>
-        <span class="n">vw</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>
+for actions in num_actions:
+    for bd in bandwidths:
+        if str(actions) not in data:
+            data[str(actions)] = {}
+        if bd &gt;= actions:
+            continue
+        print(f&quot;Running simulation for: --cats {actions} and --bandwidth {bd}&quot;)
+        vw = vowpalwabbit.Workspace(
+            f&quot;--cats {actions}  --bandwidth {bd} --min_value 0 --max_value 32 --json --chain_hash --coin --epsilon 0.2 -q :: --quiet&quot;
+        )
+        rr, hits = run_simulation(
+            vw, num_iterations, rooms, times_of_day, get_cost, 0, 32, do_learn=True
+        )
+        vw.finish()
 
-        <span class="n">data</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">actions</span><span class="p">)][</span><span class="nb">str</span><span class="p">(</span><span class="n">bd</span><span class="p">)]</span> <span class="o">=</span> <span class="p">(</span><span class="n">rr</span><span class="p">,</span> <span class="n">hits</span><span class="p">)</span>
+        data[str(actions)][str(bd)] = (rr, hits)
 
-<span class="n">plot_reward_sweep</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">,</span> <span class="n">num_actions</span><span class="p">,</span> <span class="n">bandwidths</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+plot_reward_sweep(num_iterations, num_actions, bandwidths, data)
 </pre></div>
 </div>
 </div>
@@ -1080,7 +1080,7 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 25
 </pre></div>
 </div>
-<img alt="../_images/9fbff7973d22981ba077edb56c6d75a05b3eee76c1096e0daa571f3ec9cf89a5.png" src="../_images/9fbff7973d22981ba077edb56c6d75a05b3eee76c1096e0daa571f3ec9cf89a5.png" />
+<img alt="../_images/2162953fb5aac7300a62b743bfe7206e7e048b737f8fbdadaa45818834af0e37.png" src="../_images/2162953fb5aac7300a62b743bfe7206e7e048b737f8fbdadaa45818834af0e37.png" />
 </div>
 </div>
 </section>
@@ -1088,30 +1088,30 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 <h3>Without Learning<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># do parameter sweeping</span>
-<span class="n">data</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="n">num_actions</span> <span class="o">=</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="mi">128</span><span class="p">,</span> <span class="mi">256</span><span class="p">,</span> <span class="mi">512</span><span class="p">,</span> <span class="mi">1024</span><span class="p">,</span> <span class="mi">2048</span><span class="p">]</span>
-<span class="n">bandwidths</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">25</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># do parameter sweeping
+data = {}
+num_actions = [8, 32, 64, 128, 256, 512, 1024, 2048]
+bandwidths = [0, 1, 2, 3, 25]
 
-<span class="n">num_iterations</span> <span class="o">=</span> <span class="mi">5000</span>
+num_iterations = 5000
 
-<span class="k">for</span> <span class="n">actions</span> <span class="ow">in</span> <span class="n">num_actions</span><span class="p">:</span>
-    <span class="k">for</span> <span class="n">bd</span> <span class="ow">in</span> <span class="n">bandwidths</span><span class="p">:</span>
-        <span class="k">if</span> <span class="nb">str</span><span class="p">(</span><span class="n">actions</span><span class="p">)</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
-            <span class="n">data</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">actions</span><span class="p">)]</span> <span class="o">=</span> <span class="p">{}</span>
-        <span class="k">if</span> <span class="n">bd</span> <span class="o">&gt;=</span> <span class="n">actions</span><span class="p">:</span>
-            <span class="k">continue</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Running simulation for: --cats </span><span class="si">{</span><span class="n">actions</span><span class="si">}</span><span class="s2"> and --bandwidth </span><span class="si">{</span><span class="n">bd</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-        <span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span>
-            <span class="sa">f</span><span class="s2">&quot;--cats </span><span class="si">{</span><span class="n">actions</span><span class="si">}</span><span class="s2"> --bandwidth </span><span class="si">{</span><span class="n">bd</span><span class="si">}</span><span class="s2"> --min_value 0 --max_value 32 --json --chain_hash --coin --epsilon 0.2 -q :: --quiet&quot;</span>
-        <span class="p">)</span>
-        <span class="n">rr</span><span class="p">,</span> <span class="n">hits</span> <span class="o">=</span> <span class="n">run_simulation</span><span class="p">(</span>
-            <span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">rooms</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">get_cost</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="n">do_learn</span><span class="o">=</span><span class="kc">False</span>
-        <span class="p">)</span>
-        <span class="n">vw</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>
-        <span class="n">data</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">actions</span><span class="p">)][</span><span class="nb">str</span><span class="p">(</span><span class="n">bd</span><span class="p">)]</span> <span class="o">=</span> <span class="p">(</span><span class="n">rr</span><span class="p">,</span> <span class="n">hits</span><span class="p">)</span>
+for actions in num_actions:
+    for bd in bandwidths:
+        if str(actions) not in data:
+            data[str(actions)] = {}
+        if bd &gt;= actions:
+            continue
+        print(f&quot;Running simulation for: --cats {actions} and --bandwidth {bd}&quot;)
+        vw = vowpalwabbit.Workspace(
+            f&quot;--cats {actions} --bandwidth {bd} --min_value 0 --max_value 32 --json --chain_hash --coin --epsilon 0.2 -q :: --quiet&quot;
+        )
+        rr, hits = run_simulation(
+            vw, num_iterations, rooms, times_of_day, get_cost, 0, 32, do_learn=False
+        )
+        vw.finish()
+        data[str(actions)][str(bd)] = (rr, hits)
 
-<span class="n">plot_reward_sweep</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">,</span> <span class="n">num_actions</span><span class="p">,</span> <span class="n">bandwidths</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+plot_reward_sweep(num_iterations, num_actions, bandwidths, data)
 </pre></div>
 </div>
 </div>
@@ -1195,7 +1195,7 @@ Running simulation for: --cats 2048 and --bandwidth 3
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 25
 </pre></div>
 </div>
-<img alt="../_images/fd69478257a9f4ce46092e6f191f3a476a4b5bd2bc509657729b99830529922a.png" src="../_images/fd69478257a9f4ce46092e6f191f3a476a4b5bd2bc509657729b99830529922a.png" />
+<img alt="../_images/05dd52252eee31182b96ff0bd4552dfc03e7a9a2602f4d06a0899e2f28a6f47f.png" src="../_images/05dd52252eee31182b96ff0bd4552dfc03e7a9a2602f4d06a0899e2f28a6f47f.png" />
 </div>
 </div>
 </section>
@@ -1247,47 +1247,47 @@ Running simulation for: --cats 2048 and --bandwidth 3
 <p>Below we define the new cost function</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_cost_1</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">temperature</span><span class="p">,</span> <span class="n">min_value</span><span class="p">,</span> <span class="n">max_value</span><span class="p">):</span>
-    <span class="nb">range</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">max_value</span> <span class="o">-</span> <span class="n">min_value</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;room&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Living Room&quot;</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span><span class="p">:</span>
-            <span class="c1"># randomly pick a temperature in this range</span>
-            <span class="n">selected_temperature</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span> <span class="mi">29</span><span class="p">)</span>
-            <span class="c1"># the absolute difference between selected temperature and proposed temperature</span>
-            <span class="k">if</span> <span class="n">math</span><span class="o">.</span><span class="n">fabs</span><span class="p">(</span><span class="n">selected_temperature</span> <span class="o">-</span> <span class="n">temperature</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mf">5.0</span><span class="p">:</span>
-                <span class="k">return</span> <span class="n">USER_LIKED_TEMPERATURE</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="k">return</span> <span class="n">USER_DISLIKED_TEMPERATURE</span>
-        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;afternoon&quot;</span><span class="p">:</span>
-            <span class="n">selected_temperature</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">18</span><span class="p">)</span>
-            <span class="c1"># the absolute difference between selected temperature and proposed temperature</span>
-            <span class="k">if</span> <span class="n">math</span><span class="o">.</span><span class="n">fabs</span><span class="p">(</span><span class="n">selected_temperature</span> <span class="o">-</span> <span class="n">temperature</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mf">5.0</span><span class="p">:</span>
-                <span class="k">return</span> <span class="n">USER_LIKED_TEMPERATURE</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="k">return</span> <span class="n">USER_DISLIKED_TEMPERATURE</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="k">return</span> <span class="n">USER_DISLIKED_TEMPERATURE</span>
-    <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;room&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Bedroom&quot;</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span><span class="p">:</span>
-            <span class="c1"># randomly pick a temperature in this range</span>
-            <span class="n">selected_temperature</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">18</span><span class="p">)</span>
-            <span class="c1"># the absolute difference between selected temperature and proposed temperature</span>
-            <span class="k">if</span> <span class="n">math</span><span class="o">.</span><span class="n">fabs</span><span class="p">(</span><span class="n">selected_temperature</span> <span class="o">-</span> <span class="n">temperature</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mf">5.0</span><span class="p">:</span>
-                <span class="k">return</span> <span class="n">USER_LIKED_TEMPERATURE</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="k">return</span> <span class="n">USER_DISLIKED_TEMPERATURE</span>
-        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;afternoon&quot;</span><span class="p">:</span>
-            <span class="c1"># randomly pick a temperature in this range</span>
-            <span class="n">selected_temperature</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">18</span><span class="p">)</span>
-            <span class="c1"># the absolute difference between selected temperature and proposed temperature</span>
-            <span class="k">if</span> <span class="n">math</span><span class="o">.</span><span class="n">fabs</span><span class="p">(</span><span class="n">selected_temperature</span> <span class="o">-</span> <span class="n">temperature</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mf">5.0</span><span class="p">:</span>
-                <span class="k">return</span> <span class="n">USER_LIKED_TEMPERATURE</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="k">return</span> <span class="n">USER_DISLIKED_TEMPERATURE</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="k">return</span> <span class="n">USER_DISLIKED_TEMPERATURE</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">USER_DISLIKED_TEMPERATURE</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>def get_cost_1(context, temperature, min_value, max_value):
+    range = float(max_value - min_value)
+    if context[&quot;room&quot;] == &quot;Living Room&quot;:
+        if context[&quot;time_of_day&quot;] == &quot;morning&quot;:
+            # randomly pick a temperature in this range
+            selected_temperature = random.uniform(25, 29)
+            # the absolute difference between selected temperature and proposed temperature
+            if math.fabs(selected_temperature - temperature) &lt; 5.0:
+                return USER_LIKED_TEMPERATURE
+            else:
+                return USER_DISLIKED_TEMPERATURE
+        elif context[&quot;time_of_day&quot;] == &quot;afternoon&quot;:
+            selected_temperature = random.uniform(15, 18)
+            # the absolute difference between selected temperature and proposed temperature
+            if math.fabs(selected_temperature - temperature) &lt; 5.0:
+                return USER_LIKED_TEMPERATURE
+            else:
+                return USER_DISLIKED_TEMPERATURE
+        else:
+            return USER_DISLIKED_TEMPERATURE
+    elif context[&quot;room&quot;] == &quot;Bedroom&quot;:
+        if context[&quot;time_of_day&quot;] == &quot;morning&quot;:
+            # randomly pick a temperature in this range
+            selected_temperature = random.uniform(15, 18)
+            # the absolute difference between selected temperature and proposed temperature
+            if math.fabs(selected_temperature - temperature) &lt; 5.0:
+                return USER_LIKED_TEMPERATURE
+            else:
+                return USER_DISLIKED_TEMPERATURE
+        elif context[&quot;time_of_day&quot;] == &quot;afternoon&quot;:
+            # randomly pick a temperature in this range
+            selected_temperature = random.uniform(15, 18)
+            # the absolute difference between selected temperature and proposed temperature
+            if math.fabs(selected_temperature - temperature) &lt; 5.0:
+                return USER_LIKED_TEMPERATURE
+            else:
+                return USER_DISLIKED_TEMPERATURE
+        else:
+            return USER_DISLIKED_TEMPERATURE
+    else:
+        return USER_DISLIKED_TEMPERATURE
 </pre></div>
 </div>
 </div>
@@ -1295,57 +1295,57 @@ Running simulation for: --cats 2048 and --bandwidth 3
 <p>To make it easy to show the effect of the cost function changing we are going to modify the run_simulation function. It is a little less readable now, but it supports accepting a list of cost functions and it will operate over each cost function in turn.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">run_simulation_multiple_cost_functions</span><span class="p">(</span>
-    <span class="n">vw</span><span class="p">,</span>
-    <span class="n">num_iterations</span><span class="p">,</span>
-    <span class="n">rooms</span><span class="p">,</span>
-    <span class="n">times_of_day</span><span class="p">,</span>
-    <span class="n">cost_functions</span><span class="p">,</span>
-    <span class="n">min_value</span><span class="p">,</span>
-    <span class="n">max_value</span><span class="p">,</span>
-    <span class="n">do_learn</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-<span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>def run_simulation_multiple_cost_functions(
+    vw,
+    num_iterations,
+    rooms,
+    times_of_day,
+    cost_functions,
+    min_value,
+    max_value,
+    do_learn=True,
+):
 
-    <span class="n">reward_rate</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="n">hits</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">cost_sum</span> <span class="o">=</span> <span class="mf">0.0</span>
+    reward_rate = []
+    hits = 0
+    cost_sum = 0.0
 
-    <span class="n">start_counter</span> <span class="o">=</span> <span class="mi">1</span>
-    <span class="n">end_counter</span> <span class="o">=</span> <span class="n">start_counter</span> <span class="o">+</span> <span class="n">num_iterations</span>
-    <span class="k">for</span> <span class="n">cost_function</span> <span class="ow">in</span> <span class="n">cost_functions</span><span class="p">:</span>
-        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">start_counter</span><span class="p">,</span> <span class="n">end_counter</span><span class="p">):</span>
-            <span class="c1"># 1. In each simulation choose a room</span>
-            <span class="n">room</span> <span class="o">=</span> <span class="n">choose_room</span><span class="p">(</span><span class="n">rooms</span><span class="p">)</span>
-            <span class="c1"># 2. Choose time of day for a given room</span>
-            <span class="n">time_of_day</span> <span class="o">=</span> <span class="n">choose_time_of_day</span><span class="p">(</span><span class="n">times_of_day</span><span class="p">)</span>
-            <span class="c1"># 3. Pass context to vw to get a temperature</span>
-            <span class="n">context</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;room&quot;</span><span class="p">:</span> <span class="n">room</span><span class="p">,</span> <span class="s2">&quot;time_of_day&quot;</span><span class="p">:</span> <span class="n">time_of_day</span><span class="p">}</span>
-            <span class="n">temperature</span><span class="p">,</span> <span class="n">pdf_value</span> <span class="o">=</span> <span class="n">predict_temperature</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">context</span><span class="p">)</span>
+    start_counter = 1
+    end_counter = start_counter + num_iterations
+    for cost_function in cost_functions:
+        for i in range(start_counter, end_counter):
+            # 1. In each simulation choose a room
+            room = choose_room(rooms)
+            # 2. Choose time of day for a given room
+            time_of_day = choose_time_of_day(times_of_day)
+            # 3. Pass context to vw to get a temperature
+            context = {&quot;room&quot;: room, &quot;time_of_day&quot;: time_of_day}
+            temperature, pdf_value = predict_temperature(vw, context)
 
-            <span class="c1"># 4. Get cost of the action we chose</span>
-            <span class="n">cost</span> <span class="o">=</span> <span class="n">cost_function</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">temperature</span><span class="p">,</span> <span class="n">min_value</span><span class="p">,</span> <span class="n">max_value</span><span class="p">)</span>
-            <span class="k">if</span> <span class="n">cost</span> <span class="o">&lt;=</span> <span class="o">-</span><span class="mf">0.75</span><span class="p">:</span>  <span class="c1"># count something as a hit only if it has a high reward</span>
-                <span class="n">hits</span> <span class="o">+=</span> <span class="mi">1</span>
-            <span class="n">cost_sum</span> <span class="o">+=</span> <span class="n">cost</span>
+            # 4. Get cost of the action we chose
+            cost = cost_function(context, temperature, min_value, max_value)
+            if cost &lt;= -0.75:  # count something as a hit only if it has a high reward
+                hits += 1
+            cost_sum += cost
 
-            <span class="k">if</span> <span class="n">do_learn</span><span class="p">:</span>
-                <span class="c1"># 5. Inform VW of what happened so we can learn from it</span>
-                <span class="n">txt_ex</span> <span class="o">=</span> <span class="n">to_vw_example_format</span><span class="p">(</span>
-                    <span class="n">context</span><span class="p">,</span> <span class="n">cats_label</span><span class="o">=</span><span class="p">(</span><span class="n">temperature</span><span class="p">,</span> <span class="n">cost</span><span class="p">,</span> <span class="n">pdf_value</span><span class="p">)</span>
-                <span class="p">)</span>
-                <span class="n">vw_format</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">txt_ex</span><span class="p">,</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">LabelType</span><span class="o">.</span><span class="n">CONTINUOUS</span><span class="p">)</span>
-                <span class="c1"># 6. Learn</span>
-                <span class="n">vw</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">vw_format</span><span class="p">)</span>
-                <span class="c1"># 7. Let VW know you&#39;re done with these objects</span>
-                <span class="n">vw</span><span class="o">.</span><span class="n">finish_example</span><span class="p">(</span><span class="n">vw_format</span><span class="p">)</span>
+            if do_learn:
+                # 5. Inform VW of what happened so we can learn from it
+                txt_ex = to_vw_example_format(
+                    context, cats_label=(temperature, cost, pdf_value)
+                )
+                vw_format = vw.parse(txt_ex, vowpalwabbit.LabelType.CONTINUOUS)
+                # 6. Learn
+                vw.learn(vw_format)
+                # 7. Let VW know you&#39;re done with these objects
+                vw.finish_example(vw_format)
 
-            <span class="c1"># We negate this so that on the plot instead of minimizing cost, we are maximizing reward</span>
-            <span class="n">reward_rate</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span> <span class="o">*</span> <span class="n">cost_sum</span> <span class="o">/</span> <span class="n">i</span><span class="p">)</span>
+            # We negate this so that on the plot instead of minimizing cost, we are maximizing reward
+            reward_rate.append(-1 * cost_sum / i)
 
-        <span class="n">start_counter</span> <span class="o">=</span> <span class="n">end_counter</span>
-        <span class="n">end_counter</span> <span class="o">=</span> <span class="n">start_counter</span> <span class="o">+</span> <span class="n">num_iterations</span>
+        start_counter = end_counter
+        end_counter = start_counter + num_iterations
 
-    <span class="k">return</span> <span class="n">reward_rate</span><span class="p">,</span> <span class="n">hits</span>
+    return reward_rate, hits
 </pre></div>
 </div>
 </div>
@@ -1357,40 +1357,40 @@ Running simulation for: --cats 2048 and --bandwidth 3
 <p>Let us now switch to the second cost function after a few samples (running the first cost function). Recall that this cost function changes the preferences of the room temperatures but it is still working with the same continuous action space as before. We should see the learner pick up these changes and optimize towards the new preferences.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># use first reward function initially and then switch to second reward function</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># use first reward function initially and then switch to second reward function
 
-<span class="c1"># Instantiate learner in VW</span>
-<span class="n">num_actions</span> <span class="o">=</span> <span class="mi">128</span>
-<span class="n">bandwidth</span> <span class="o">=</span> <span class="mi">2</span>
+# Instantiate learner in VW
+num_actions = 128
+bandwidth = 2
 
-<span class="c1"># Instantiate VW learner</span>
-<span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span>
-    <span class="sa">f</span><span class="s2">&quot;--cats </span><span class="si">{</span><span class="n">num_actions</span><span class="si">}</span><span class="s2">  --bandwidth </span><span class="si">{</span><span class="n">bandwidth</span><span class="si">}</span><span class="s2"> --min_value 0 --max_value 32 --json --chain_hash --coin --epsilon 0.2 -q :: --quiet&quot;</span>
-<span class="p">)</span>
+# Instantiate VW learner
+vw = vowpalwabbit.Workspace(
+    f&quot;--cats {num_actions}  --bandwidth {bandwidth} --min_value 0 --max_value 32 --json --chain_hash --coin --epsilon 0.2 -q :: --quiet&quot;
+)
 
-<span class="n">num_iterations_per_cost_func</span> <span class="o">=</span> <span class="mi">5000</span>
-<span class="n">cost_functions</span> <span class="o">=</span> <span class="p">[</span><span class="n">get_cost</span><span class="p">,</span> <span class="n">get_cost_1</span><span class="p">]</span>
-<span class="n">total_iterations</span> <span class="o">=</span> <span class="n">num_iterations_per_cost_func</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">cost_functions</span><span class="p">)</span>
+num_iterations_per_cost_func = 5000
+cost_functions = [get_cost, get_cost_1]
+total_iterations = num_iterations_per_cost_func * len(cost_functions)
 
-<span class="n">ctr</span><span class="p">,</span> <span class="n">hits</span> <span class="o">=</span> <span class="n">run_simulation_multiple_cost_functions</span><span class="p">(</span>
-    <span class="n">vw</span><span class="p">,</span>
-    <span class="n">num_iterations_per_cost_func</span><span class="p">,</span>
-    <span class="n">rooms</span><span class="p">,</span>
-    <span class="n">times_of_day</span><span class="p">,</span>
-    <span class="n">cost_functions</span><span class="p">,</span>
-    <span class="mi">0</span><span class="p">,</span>
-    <span class="mi">32</span><span class="p">,</span>
-    <span class="n">do_learn</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-<span class="p">)</span>
-<span class="n">vw</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>
-<span class="n">plot_reward_rate</span><span class="p">(</span>
-    <span class="n">total_iterations</span><span class="p">,</span> <span class="n">ctr</span><span class="p">,</span> <span class="s2">&quot;reward rate with num_actions = 32 and bandwidth = 1&quot;</span>
-<span class="p">)</span>
+ctr, hits = run_simulation_multiple_cost_functions(
+    vw,
+    num_iterations_per_cost_func,
+    rooms,
+    times_of_day,
+    cost_functions,
+    0,
+    32,
+    do_learn=True,
+)
+vw.finish()
+plot_reward_rate(
+    total_iterations, ctr, &quot;reward rate with num_actions = 32 and bandwidth = 1&quot;
+)
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/89002b42111b58f307298621db00ad4a1ef9573767c459ed41597d54fbd1c200.png" src="../_images/89002b42111b58f307298621db00ad4a1ef9573767c459ed41597d54fbd1c200.png" />
+<img alt="../_images/4bae143e3b1367227912f86c9bb7fec6fec046a0f8979e0535df63fffc0c23b6.png" src="../_images/4bae143e3b1367227912f86c9bb7fec6fec046a0f8979e0535df63fffc0c23b6.png" />
 </div>
 </div>
 </section>
@@ -1398,40 +1398,40 @@ Running simulation for: --cats 2048 and --bandwidth 3
 <h3>Without Learning<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># use first reward function initially and then switch to second reward function</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># use first reward function initially and then switch to second reward function
 
-<span class="c1"># Instantiate learner in VW</span>
-<span class="n">num_actions</span> <span class="o">=</span> <span class="mi">128</span>
-<span class="n">bandwidth</span> <span class="o">=</span> <span class="mi">2</span>
+# Instantiate learner in VW
+num_actions = 128
+bandwidth = 2
 
-<span class="c1"># Instantiate VW learner</span>
-<span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span>
-    <span class="sa">f</span><span class="s2">&quot;--cats </span><span class="si">{</span><span class="n">num_actions</span><span class="si">}</span><span class="s2"> --bandwidth </span><span class="si">{</span><span class="n">bandwidth</span><span class="si">}</span><span class="s2"> --min_value 0 --max_value 32 --json --chain_hash --coin --epsilon 0.2 -q :: --quiet&quot;</span>
-<span class="p">)</span>
+# Instantiate VW learner
+vw = vowpalwabbit.Workspace(
+    f&quot;--cats {num_actions} --bandwidth {bandwidth} --min_value 0 --max_value 32 --json --chain_hash --coin --epsilon 0.2 -q :: --quiet&quot;
+)
 
-<span class="n">num_iterations_per_cost_func</span> <span class="o">=</span> <span class="mi">5000</span>
-<span class="n">cost_functions</span> <span class="o">=</span> <span class="p">[</span><span class="n">get_cost</span><span class="p">,</span> <span class="n">get_cost_1</span><span class="p">]</span>
-<span class="n">total_iterations</span> <span class="o">=</span> <span class="n">num_iterations_per_cost_func</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">cost_functions</span><span class="p">)</span>
+num_iterations_per_cost_func = 5000
+cost_functions = [get_cost, get_cost_1]
+total_iterations = num_iterations_per_cost_func * len(cost_functions)
 
-<span class="n">ctr</span><span class="p">,</span> <span class="n">hits</span> <span class="o">=</span> <span class="n">run_simulation_multiple_cost_functions</span><span class="p">(</span>
-    <span class="n">vw</span><span class="p">,</span>
-    <span class="n">num_iterations_per_cost_func</span><span class="p">,</span>
-    <span class="n">rooms</span><span class="p">,</span>
-    <span class="n">times_of_day</span><span class="p">,</span>
-    <span class="n">cost_functions</span><span class="p">,</span>
-    <span class="mi">0</span><span class="p">,</span>
-    <span class="mi">32</span><span class="p">,</span>
-    <span class="n">do_learn</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
-<span class="p">)</span>
-<span class="n">vw</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>
-<span class="n">plot_reward_rate</span><span class="p">(</span>
-    <span class="n">total_iterations</span><span class="p">,</span> <span class="n">ctr</span><span class="p">,</span> <span class="s2">&quot;reward rate with num_actions = 32 and bandwidth = 1&quot;</span>
-<span class="p">)</span>
+ctr, hits = run_simulation_multiple_cost_functions(
+    vw,
+    num_iterations_per_cost_func,
+    rooms,
+    times_of_day,
+    cost_functions,
+    0,
+    32,
+    do_learn=False,
+)
+vw.finish()
+plot_reward_rate(
+    total_iterations, ctr, &quot;reward rate with num_actions = 32 and bandwidth = 1&quot;
+)
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/2d6380e8412279a2f5491e697f217e7e5bb4bec4600054f94bf36404c62f74c1.png" src="../_images/2d6380e8412279a2f5491e697f217e7e5bb4bec4600054f94bf36404c62f74c1.png" />
+<img alt="../_images/a58cf4218ce60f35b67df72606e3bce9cbd45c09916856c6ce50b5513a264a70.png" src="../_images/a58cf4218ce60f35b67df72606e3bce9cbd45c09916856c6ce50b5513a264a70.png" />
 </div>
 </div>
 </section>
@@ -1444,39 +1444,39 @@ Running simulation for: --cats 2048 and --bandwidth 3
 <p>A slightly better cost function for our simulated world could be the difference between the temperature recommended and the temperature chosen. The smaller the difference the better the thermostat is doing. We are going to model that by taking the absolute cost: <code class="docutils literal notranslate"><span class="pre">1.0</span> <span class="pre">-</span> <span class="pre">|selected_temperature</span> <span class="pre">-</span> <span class="pre">predicted_temerature|</span> <span class="pre">/</span> <span class="pre">range</span></code> and the transforming that cost into a reward by multiplying it with <code class="docutils literal notranslate"><span class="pre">-1</span></code></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_smooth_cost</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">temperature</span><span class="p">,</span> <span class="n">min_value</span><span class="p">,</span> <span class="n">max_value</span><span class="p">):</span>
-    <span class="nb">range</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">max_value</span> <span class="o">-</span> <span class="n">min_value</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;room&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Living Room&quot;</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span><span class="p">:</span>
-            <span class="c1"># randomly pick a temperature in this range</span>
-            <span class="n">selected_temperature</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span> <span class="mi">29</span><span class="p">)</span>
-            <span class="c1"># the absolute difference between selected temperature and proposed temperature</span>
-            <span class="n">cost</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="o">-</span> <span class="n">math</span><span class="o">.</span><span class="n">fabs</span><span class="p">(</span><span class="n">selected_temperature</span> <span class="o">-</span> <span class="n">temperature</span><span class="p">)</span> <span class="o">/</span> <span class="nb">range</span>
-            <span class="k">return</span> <span class="o">-</span><span class="mf">1.0</span> <span class="o">*</span> <span class="n">cost</span>
-        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;afternoon&quot;</span><span class="p">:</span>
-            <span class="n">selected_temperature</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">18</span><span class="p">)</span>
-            <span class="c1"># the absolute difference between selected temperature and proposed temperature</span>
-            <span class="n">cost</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="o">-</span> <span class="n">math</span><span class="o">.</span><span class="n">fabs</span><span class="p">(</span><span class="n">selected_temperature</span> <span class="o">-</span> <span class="n">temperature</span><span class="p">)</span> <span class="o">/</span> <span class="nb">range</span>
-            <span class="k">return</span> <span class="o">-</span><span class="mf">1.0</span> <span class="o">*</span> <span class="n">cost</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="k">return</span> <span class="n">USER_DISLIKED_TEMPERATURE</span>
-    <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;room&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Bedroom&quot;</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span><span class="p">:</span>
-            <span class="c1"># randomly pick a temperature in this range</span>
-            <span class="n">selected_temperature</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">18</span><span class="p">)</span>
-            <span class="c1"># the absolute difference between selected temperature and proposed temperature</span>
-            <span class="n">cost</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="o">-</span> <span class="n">math</span><span class="o">.</span><span class="n">fabs</span><span class="p">(</span><span class="n">selected_temperature</span> <span class="o">-</span> <span class="n">temperature</span><span class="p">)</span> <span class="o">/</span> <span class="nb">range</span>
-            <span class="k">return</span> <span class="o">-</span><span class="mf">1.0</span> <span class="o">*</span> <span class="n">cost</span>
-        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;afternoon&quot;</span><span class="p">:</span>
-            <span class="c1"># randomly pick a temperature in this range</span>
-            <span class="n">selected_temperature</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">18</span><span class="p">)</span>
-            <span class="c1"># the absolute difference between selected temperature and proposed temperature</span>
-            <span class="n">cost</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="o">-</span> <span class="n">math</span><span class="o">.</span><span class="n">fabs</span><span class="p">(</span><span class="n">selected_temperature</span> <span class="o">-</span> <span class="n">temperature</span><span class="p">)</span> <span class="o">/</span> <span class="nb">range</span>
-            <span class="k">return</span> <span class="o">-</span><span class="mf">1.0</span> <span class="o">*</span> <span class="n">cost</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="k">return</span> <span class="n">USER_DISLIKED_TEMPERATURE</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">USER_DISLIKED_TEMPERATURE</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>def get_smooth_cost(context, temperature, min_value, max_value):
+    range = float(max_value - min_value)
+    if context[&quot;room&quot;] == &quot;Living Room&quot;:
+        if context[&quot;time_of_day&quot;] == &quot;morning&quot;:
+            # randomly pick a temperature in this range
+            selected_temperature = random.uniform(25, 29)
+            # the absolute difference between selected temperature and proposed temperature
+            cost = 1.0 - math.fabs(selected_temperature - temperature) / range
+            return -1.0 * cost
+        elif context[&quot;time_of_day&quot;] == &quot;afternoon&quot;:
+            selected_temperature = random.uniform(15, 18)
+            # the absolute difference between selected temperature and proposed temperature
+            cost = 1.0 - math.fabs(selected_temperature - temperature) / range
+            return -1.0 * cost
+        else:
+            return USER_DISLIKED_TEMPERATURE
+    elif context[&quot;room&quot;] == &quot;Bedroom&quot;:
+        if context[&quot;time_of_day&quot;] == &quot;morning&quot;:
+            # randomly pick a temperature in this range
+            selected_temperature = random.uniform(15, 18)
+            # the absolute difference between selected temperature and proposed temperature
+            cost = 1.0 - math.fabs(selected_temperature - temperature) / range
+            return -1.0 * cost
+        elif context[&quot;time_of_day&quot;] == &quot;afternoon&quot;:
+            # randomly pick a temperature in this range
+            selected_temperature = random.uniform(15, 18)
+            # the absolute difference between selected temperature and proposed temperature
+            cost = 1.0 - math.fabs(selected_temperature - temperature) / range
+            return -1.0 * cost
+        else:
+            return USER_DISLIKED_TEMPERATURE
+    else:
+        return USER_DISLIKED_TEMPERATURE
 </pre></div>
 </div>
 </div>
@@ -1484,37 +1484,37 @@ Running simulation for: --cats 2048 and --bandwidth 3
 <p>Let’s try the original paramter sweep with the new cost function <code class="docutils literal notranslate"><span class="pre">get_smooth_cost</span></code></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># do parameter sweeping</span>
-<span class="n">data</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="n">num_actions</span> <span class="o">=</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="mi">128</span><span class="p">,</span> <span class="mi">256</span><span class="p">,</span> <span class="mi">512</span><span class="p">,</span> <span class="mi">1024</span><span class="p">,</span> <span class="mi">2048</span><span class="p">]</span>
-<span class="n">bandwidths</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">25</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># do parameter sweeping
+data = {}
+num_actions = [8, 32, 64, 128, 256, 512, 1024, 2048]
+bandwidths = [0, 1, 2, 3, 25]
 
-<span class="n">num_iterations</span> <span class="o">=</span> <span class="mi">5000</span>
+num_iterations = 5000
 
-<span class="k">for</span> <span class="n">actions</span> <span class="ow">in</span> <span class="n">num_actions</span><span class="p">:</span>
-    <span class="k">for</span> <span class="n">bd</span> <span class="ow">in</span> <span class="n">bandwidths</span><span class="p">:</span>
-        <span class="k">if</span> <span class="nb">str</span><span class="p">(</span><span class="n">actions</span><span class="p">)</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
-            <span class="n">data</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">actions</span><span class="p">)]</span> <span class="o">=</span> <span class="p">{}</span>
-        <span class="k">if</span> <span class="n">bd</span> <span class="o">&gt;=</span> <span class="n">actions</span><span class="p">:</span>
-            <span class="k">continue</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Running simulation for: --cats </span><span class="si">{</span><span class="n">actions</span><span class="si">}</span><span class="s2"> and --bandwidth </span><span class="si">{</span><span class="n">bd</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-        <span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span>
-            <span class="sa">f</span><span class="s2">&quot;--cats </span><span class="si">{</span><span class="n">actions</span><span class="si">}</span><span class="s2">  --bandwidth </span><span class="si">{</span><span class="n">bd</span><span class="si">}</span><span class="s2"> --min_value 0 --max_value 32 --json --chain_hash --coin --epsilon 0.2 -q :: --quiet&quot;</span>
-        <span class="p">)</span>
-        <span class="n">rr</span><span class="p">,</span> <span class="n">hits</span> <span class="o">=</span> <span class="n">run_simulation</span><span class="p">(</span>
-            <span class="n">vw</span><span class="p">,</span>
-            <span class="n">num_iterations</span><span class="p">,</span>
-            <span class="n">rooms</span><span class="p">,</span>
-            <span class="n">times_of_day</span><span class="p">,</span>
-            <span class="n">get_smooth_cost</span><span class="p">,</span>
-            <span class="mi">0</span><span class="p">,</span>
-            <span class="mi">32</span><span class="p">,</span>
-            <span class="n">do_learn</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-        <span class="p">)</span>
-        <span class="n">vw</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>
-        <span class="n">data</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">actions</span><span class="p">)][</span><span class="nb">str</span><span class="p">(</span><span class="n">bd</span><span class="p">)]</span> <span class="o">=</span> <span class="p">(</span><span class="n">rr</span><span class="p">,</span> <span class="n">hits</span><span class="p">)</span>
+for actions in num_actions:
+    for bd in bandwidths:
+        if str(actions) not in data:
+            data[str(actions)] = {}
+        if bd &gt;= actions:
+            continue
+        print(f&quot;Running simulation for: --cats {actions} and --bandwidth {bd}&quot;)
+        vw = vowpalwabbit.Workspace(
+            f&quot;--cats {actions}  --bandwidth {bd} --min_value 0 --max_value 32 --json --chain_hash --coin --epsilon 0.2 -q :: --quiet&quot;
+        )
+        rr, hits = run_simulation(
+            vw,
+            num_iterations,
+            rooms,
+            times_of_day,
+            get_smooth_cost,
+            0,
+            32,
+            do_learn=True,
+        )
+        vw.finish()
+        data[str(actions)][str(bd)] = (rr, hits)
 
-<span class="n">plot_reward_sweep</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">,</span> <span class="n">num_actions</span><span class="p">,</span> <span class="n">bandwidths</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+plot_reward_sweep(num_iterations, num_actions, bandwidths, data)
 </pre></div>
 </div>
 </div>
@@ -1636,7 +1636,7 @@ Running simulation for: --cats 2048 and --bandwidth 3
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 25
 </pre></div>
 </div>
-<img alt="../_images/ad9e171b0305de9649c8052e9559852784481cef3eea5fc36e0812e28fd41805.png" src="../_images/ad9e171b0305de9649c8052e9559852784481cef3eea5fc36e0812e28fd41805.png" />
+<img alt="../_images/3cd4623184cd8d125075d4974efe66f8492357e4eed0ec1f94f745694185d4b4.png" src="../_images/3cd4623184cd8d125075d4974efe66f8492357e4eed0ec1f94f745694185d4b4.png" />
 </div>
 </div>
 </section>
