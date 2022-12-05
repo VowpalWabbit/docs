@@ -5,7 +5,7 @@ var searchData=
   ['parent_5fid_1351',['parent_id',['../classVW_1_1reductions_1_1cats_1_1tree__node.html#a963efbee0341063f968ade5d2309897c',1,'VW::reductions::cats::tree_node::parent_id()'],['../classVW_1_1reductions_1_1offset__tree_1_1tree__node.html#aed2c1377f18d2ab92e458a2540cf6488',1,'VW::reductions::offset_tree::tree_node::parent_id()']]],
   ['parse_5fargs_2eh_1352',['parse_args.h',['../parse__args_8h.html',1,'']]],
   ['parse_5fccb_5flabel_1353',['parse_ccb_label',['../namespaceVW.html#a39ebf9f61895246994252936367b0469',1,'VW']]],
-  ['parse_5fcsv_5fexamples_1354',['parse_csv_examples',['../namespaceVW_1_1parsers.html#a6f5ce055b7395af26d9516fb46140649',1,'VW::parsers']]],
+  ['parse_5fcsv_5fexamples_1354',['parse_csv_examples',['../namespaceVW_1_1parsers_1_1csv.html#ad44a1ed17c32bdf58913baa6f4d8489d',1,'VW::parsers::csv']]],
   ['parse_5fdispatch_1355',['parse_dispatch',['../parse__dispatch__loop_8h.html#a896e2dc3e71579cf8d67d3b89d5d4e64',1,'parse_dispatch_loop.h']]],
   ['parse_5fdispatch_5floop_2eh_1356',['parse_dispatch_loop.h',['../parse__dispatch__loop_8h.html',1,'']]],
   ['parse_5fexample_2eh_1357',['parse_example.h',['../parse__example_8h.html',1,'']]],

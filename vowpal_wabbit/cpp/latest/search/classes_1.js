@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['base_5flearner_5fbuilder_2179',['base_learner_builder',['../classVW_1_1LEARNER_1_1base__learner__builder.html',1,'VW::LEARNER']]],
-  ['base_5foption_2180',['base_option',['../classVW_1_1config_1_1base__option.html',1,'VW::config']]],
-  ['basetask_2181',['BaseTask',['../classSearch_1_1BaseTask.html',1,'Search']]]
+  ['base_5flearner_5fbuilder_2180',['base_learner_builder',['../classVW_1_1LEARNER_1_1base__learner__builder.html',1,'VW::LEARNER']]],
+  ['base_5foption_2181',['base_option',['../classVW_1_1config_1_1base__option.html',1,'VW::config']]],
+  ['basetask_2182',['BaseTask',['../classSearch_1_1BaseTask.html',1,'Search']]]
 ];

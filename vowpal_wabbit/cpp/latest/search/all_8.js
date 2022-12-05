@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['handle_5fparse_5fargs_855',['handle_parse_args',['../classVW_1_1parsers_1_1csv__parser.html#abc05c240963f50a39973649d81d90219',1,'VW::parsers::csv_parser']]],
+  ['handle_5fparse_5fargs_855',['handle_parse_args',['../classVW_1_1parsers_1_1csv_1_1csv__parser.html#aa912a49c9e2026fe537edd26a171f2b9',1,'VW::parsers::csv::csv_parser']]],
   ['has_5fempty_5finteraction_856',['has_empty_interaction',['../namespaceINTERACTIONS.html#a1595c14893891a1384cfbdc33ca9c185',1,'INTERACTIONS::has_empty_interaction(const std::array&lt; features, VW::NUM_NAMESPACES &gt; &amp;feature_groups, const std::vector&lt; VW::namespace_index &gt; &amp;namespace_indexes)'],['../namespaceINTERACTIONS.html#ad9fcf18eea38007588dd8080c141ac70',1,'INTERACTIONS::has_empty_interaction(const std::array&lt; features, VW::NUM_NAMESPACES &gt; &amp;feature_groups, const std::vector&lt; extent_term &gt; &amp;namespace_indexes)']]],
   ['has_5fempty_5finteraction_5fcubic_857',['has_empty_interaction_cubic',['../namespaceINTERACTIONS.html#ab7b5f3ac208853adc4c172a381408a59',1,'INTERACTIONS']]],
   ['has_5fempty_5finteraction_5fquadratic_858',['has_empty_interaction_quadratic',['../namespaceINTERACTIONS.html#ae0980d769c7040a441a71986a039e0ae',1,'INTERACTIONS']]],
@@ -22,8 +22,8 @@ var searchData=
   ['hasher_874',['hasher',['../classparser.html#a55a42ce8e7ad6637f28bc40d95356b21',1,'parser']]],
   ['hashstring_875',['hashstring',['../hashstring_8h.html#adcac7aeed404ab45135fcbdf0d10f2c5',1,'hashstring.h']]],
   ['hashstring_2eh_876',['hashstring.h',['../hashstring_8h.html',1,'']]],
-  ['header_5ffn_877',['header_fn',['../classVW_1_1parsers_1_1csv__parser.html#ad2f85c3ae28a23868965a19d7b45ffcf',1,'VW::parsers::csv_parser']]],
-  ['header_5fns_878',['header_ns',['../classVW_1_1parsers_1_1csv__parser.html#aec004e0be665890210bd7f288fe6c505',1,'VW::parsers::csv_parser']]],
+  ['header_5ffn_877',['header_fn',['../classVW_1_1parsers_1_1csv_1_1csv__parser.html#a91d1b5ec03a858a42e381436249b2cab',1,'VW::parsers::csv::csv_parser']]],
+  ['header_5fns_878',['header_ns',['../classVW_1_1parsers_1_1csv_1_1csv__parser.html#a48921486d0fd01753daced6a9c8519ff',1,'VW::parsers::csv::csv_parser']]],
   ['help_879',['help',['../classVW_1_1config_1_1option__builder.html#af0ab17d905621f08b1545d575c132dab',1,'VW::config::option_builder']]],
   ['help_5fformatter_880',['help_formatter',['../classVW_1_1config_1_1help__formatter.html',1,'VW::config']]],
   ['help_5fformatter_2eh_881',['help_formatter.h',['../help__formatter_8h.html',1,'']]],

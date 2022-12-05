@@ -47,7 +47,7 @@ var searchData=
   ['option_5fbuilder_2eh_1314',['option_builder.h',['../option__builder_8h.html',1,'']]],
   ['option_5fgroup_5fdefinition_1315',['option_group_definition',['../classVW_1_1config_1_1option__group__definition.html',1,'VW::config::option_group_definition'],['../classVW_1_1config_1_1option__group__definition.html#a2073602ad99847e2640d7a33902f8cb9',1,'VW::config::option_group_definition::option_group_definition()']]],
   ['option_5fgroup_5fdefinition_2eh_1316',['option_group_definition.h',['../option__group__definition_8h.html',1,'']]],
-  ['options_1317',['options',['../classVW_1_1workspace.html#ad87a23d32e412e1af4a788e4ce6f11a2',1,'VW::workspace::options()'],['../classVW_1_1parsers_1_1csv__parser.html#a8563950ad1f96fc33414d93d063c7ac0',1,'VW::parsers::csv_parser::options()']]],
+  ['options_1317',['options',['../classVW_1_1workspace.html#ad87a23d32e412e1af4a788e4ce6f11a2',1,'VW::workspace::options()'],['../classVW_1_1parsers_1_1csv_1_1csv__parser.html#aea09771e529fabe1a0209e380f781ccb',1,'VW::parsers::csv::csv_parser::options()']]],
   ['options_2eh_1318',['options.h',['../options_8h.html',1,'']]],
   ['options_5fcli_1319',['options_cli',['../classVW_1_1config_1_1options__cli.html',1,'VW::config::options_cli'],['../classVW_1_1config_1_1options__cli.html#ae8dfd0bf12354ef94f130206d6e27d68',1,'VW::config::options_cli::options_cli()']]],
   ['options_5fcli_2eh_1320',['options_cli.h',['../options__cli_8h.html',1,'']]],
