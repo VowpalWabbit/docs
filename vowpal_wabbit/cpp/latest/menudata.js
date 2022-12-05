@@ -197,9 +197,11 @@ var menudata={children:[
 {text:"f",url:"functions_type.html#index_f"},
 {text:"i",url:"functions_type.html#index_i"},
 {text:"m",url:"functions_type.html#index_m"},
+{text:"o",url:"functions_type.html#index_o"},
 {text:"p",url:"functions_type.html#index_p"},
 {text:"r",url:"functions_type.html#index_r"},
 {text:"s",url:"functions_type.html#index_s"},
+{text:"u",url:"functions_type.html#index_u"},
 {text:"v",url:"functions_type.html#index_v"}]},
 {text:"Related Functions",url:"functions_rela.html",children:[
 {text:"b",url:"functions_rela.html#index_b"},

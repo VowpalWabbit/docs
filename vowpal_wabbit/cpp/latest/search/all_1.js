@@ -15,7 +15,7 @@ var searchData=
   ['action_5fprobs_53',['ACTION_PROBS',['../namespaceVW.html#a4f76045a06b3efe3c5c612b777b6c836a029d9bb33faffbec445f7f24a65461c9',1,'VW']]],
   ['action_5fscore_54',['action_score',['../classVW_1_1action__score.html',1,'VW::action_score'],['../namespaceACTION__SCORE.html',1,'ACTION_SCORE']]],
   ['action_5fscore_2eh_55',['action_score.h',['../action__score_8h.html',1,'']]],
-  ['action_5fscores_56',['action_scores',['../namespaceVW.html#a2702c36414c2a3b9ee641b6bc2639e20',1,'VW::action_scores()'],['../namespaceVW.html#a4f76045a06b3efe3c5c612b777b6c836a5f4f7cf4a4acb8b44fc3284a75308a57',1,'VW::ACTION_SCORES()']]],
+  ['action_5fscores_56',['ACTION_SCORES',['../namespaceVW.html#a4f76045a06b3efe3c5c612b777b6c836a5f4f7cf4a4acb8b44fc3284a75308a57',1,'VW::ACTION_SCORES()'],['../namespaceVW.html#a2702c36414c2a3b9ee641b6bc2639e20',1,'VW::action_scores()']]],
   ['action_5fscores_5fscore_5fiterator_57',['action_scores_score_iterator',['../classVW_1_1action__scores__score__iterator.html',1,'VW::action_scores_score_iterator'],['../classVW_1_1action__scores__score__iterator.html#adfa1aefdc582f898e9d74a9cf6f7ed8e',1,'VW::action_scores_score_iterator::action_scores_score_iterator()']]],
   ['action_5fsum_58',['action_sum',['../classGEN__CS_1_1cb__to__cs__adf.html#a603aadff469c9a586f031e2833c2e076',1,'GEN_CS::cb_to_cs_adf']]],
   ['action_5ftype_59',['ACTION_TYPE',['../namespaceVW_1_1details.html#a23686bb949764499f34dbeb4ef323973',1,'VW::details']]],
