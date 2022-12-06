@@ -157,6 +157,14 @@ Functions</h2></td></tr>
 <tr class="separator:a0969827f2d184289944119b2dc569b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a878c441589c36709e6c03da8bc285610"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#a878c441589c36709e6c03da8bc285610">getblock</a> (const uint32_t *p, int i) noexcept</td></tr>
 <tr class="separator:a878c441589c36709e6c03da8bc285610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a126c3d12845973277c2e5b1de75ae8c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#a126c3d12845973277c2e5b1de75ae8c2">accumulate</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, <a class="el" href="classparameters.html">parameters</a> &amp;weights, size_t o)</td></tr>
+<tr class="separator:a126c3d12845973277c2e5b1de75ae8c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69a7d4006213c519fc2f2a8d68e8ba01"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#a69a7d4006213c519fc2f2a8d68e8ba01">accumulate_scalar</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, float local_sum)</td></tr>
+<tr class="separator:a69a7d4006213c519fc2f2a8d68e8ba01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8898e6d0cc3664be75119dee3dfe913"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#ad8898e6d0cc3664be75119dee3dfe913">accumulate_weighted_avg</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, <a class="el" href="classparameters.html">parameters</a> &amp;weights)</td></tr>
+<tr class="separator:ad8898e6d0cc3664be75119dee3dfe913"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0350e1f21ebe2ace2847bec2c13b0ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#ad0350e1f21ebe2ace2847bec2c13b0ba">accumulate_avg</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, <a class="el" href="classparameters.html">parameters</a> &amp;weights, size_t o)</td></tr>
+<tr class="separator:ad0350e1f21ebe2ace2847bec2c13b0ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa681657de3752dd96fc5f34af0999315"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:aa681657de3752dd96fc5f34af0999315"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#aa681657de3752dd96fc5f34af0999315">do_weighting</a> (size_t normalized_idx, uint64_t length, const float *local_weights, T &amp;weights)</td></tr>
 <tr class="separator:aa681657de3752dd96fc5f34af0999315"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -388,6 +396,130 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a126c3d12845973277c2e5b1de75ae8c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a126c3d12845973277c2e5b1de75ae8c2">&#9670;&nbsp;</a></span>accumulate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VW::details::accumulate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;&#160;</td>
+          <td class="paramname"><em>all</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classparameters.html">parameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>weights</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>o</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad0350e1f21ebe2ace2847bec2c13b0ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0350e1f21ebe2ace2847bec2c13b0ba">&#9670;&nbsp;</a></span>accumulate_avg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VW::details::accumulate_avg </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;&#160;</td>
+          <td class="paramname"><em>all</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classparameters.html">parameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>weights</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>o</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a69a7d4006213c519fc2f2a8d68e8ba01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69a7d4006213c519fc2f2a8d68e8ba01">&#9670;&nbsp;</a></span>accumulate_scalar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float VW::details::accumulate_scalar </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;&#160;</td>
+          <td class="paramname"><em>all</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>local_sum</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad8898e6d0cc3664be75119dee3dfe913"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8898e6d0cc3664be75119dee3dfe913">&#9670;&nbsp;</a></span>accumulate_weighted_avg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VW::details::accumulate_weighted_avg </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;&#160;</td>
+          <td class="paramname"><em>all</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classparameters.html">parameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>weights</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a971adb4da7f76db98bfc77c46b3ab0a0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a971adb4da7f76db98bfc77c46b3ab0a0">&#9670;&nbsp;</a></span>addbufs()</h2>
 
@@ -3115,7 +3247,7 @@ template&lt;typename UnusedDataT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 6 2022 13:57:28 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 6 2022 16:33:05 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
