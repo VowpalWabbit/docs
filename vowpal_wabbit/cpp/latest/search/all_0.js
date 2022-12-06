@@ -36,7 +36,7 @@ var searchData=
   ['_5fshift_5fmodel_5fbounds_33',['_shift_model_bounds',['../classVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#a1a9a0cca6aeed4bf6f6ec1319e6a42ec',1,'VW::reductions::epsilon_decay::epsilon_decay_data']]],
   ['_5fshort_5foptions_34',['_short_options',['../classVW_1_1config_1_1options__i.html#afe65910df6ffc9e46bdbe83939bd02a9',1,'VW::config::options_i']]],
   ['_5fstatus_35',['_status',['../classVW_1_1experimental_1_1status__builder.html#ad2be8763fe358522057fb4bde4441c31',1,'VW::experimental::status_builder']]],
-  ['_5funused_36',['_UNUSED',['../vw__exception_8h.html#a674dd1ba0db34c463bbf7e37ffef7a7c',1,'vw_exception.h']]],
+  ['_5funused_36',['_UNUSED',['../future__compat_8h.html#a674dd1ba0db34c463bbf7e37ffef7a7c',1,'future_compat.h']]],
   ['_5fweight_5findices_37',['_weight_indices',['../classVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#a175e4fec128f17345b9cd3f19e4ec55f',1,'VW::reductions::epsilon_decay::epsilon_decay_data']]],
   ['_5fweights_38',['_weights',['../classVW_1_1reductions_1_1epsilon__decay_1_1epsilon__decay__data.html#a64bbc0c5871b2e98039e6283eaef3667',1,'VW::reductions::epsilon_decay::epsilon_decay_data']]],
   ['_5fwith_5foutput_5fstring_39',['_with_output_string',['../classSearch_1_1BaseTask.html#a1999fd3295a1cfc9ed6ae1638977304c',1,'Search::BaseTask']]],

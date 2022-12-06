@@ -705,43 +705,6 @@ plt.show()
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">KeyboardInterrupt</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">line</span> <span class="mi">9</span>
-<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="k">for</span> <span class="n">ep</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mi">11</span><span class="p">):</span>
-<span class="g g-Whitespace">      </span><span class="mi">8</span>     <span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--cb_explore_adf -q UA --quiet --epsilon &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">ep</span><span class="p">))</span>
-<span class="ne">----&gt; </span><span class="mi">9</span>     <span class="n">ctr</span> <span class="o">=</span> <span class="n">run_simulation</span><span class="p">(</span>
-<span class="g g-Whitespace">     </span><span class="mi">10</span>         <span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">users</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">get_cost</span><span class="p">,</span> <span class="n">switch_rewards</span>
-<span class="g g-Whitespace">     </span><span class="mi">11</span>     <span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">12</span>     <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_iterations</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">ctr</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">13</span>     <span class="n">leg</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">ep</span><span class="p">))</span>
-
-<span class="nn">Cell In[1], line 125,</span> in <span class="ni">run_simulation</span><span class="nt">(vw, num_iterations, users, times_of_day, actions, cost_function, switch_rewards, do_learn)</span>
-<span class="g g-Whitespace">    </span><span class="mi">123</span> <span class="c1"># 3. Pass context to vw to get an action</span>
-<span class="g g-Whitespace">    </span><span class="mi">124</span> <span class="n">context</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;user&quot;</span><span class="p">:</span> <span class="n">user</span><span class="p">,</span> <span class="s2">&quot;time_of_day&quot;</span><span class="p">:</span> <span class="n">time_of_day</span><span class="p">}</span>
-<span class="ne">--&gt; </span><span class="mi">125</span> <span class="n">action</span><span class="p">,</span> <span class="n">prob</span> <span class="o">=</span> <span class="n">get_action</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">context</span><span class="p">,</span> <span class="n">actions</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">127</span> <span class="c1"># 4. Get cost of the action we chose</span>
-<span class="g g-Whitespace">    </span><span class="mi">128</span> <span class="n">cost</span> <span class="o">=</span> <span class="n">cost_function</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">action</span><span class="p">,</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="n">switch_rewards</span><span class="p">)</span>
-
-<span class="nn">Cell In[1], line 74,</span> in <span class="ni">get_action</span><span class="nt">(vw, context, actions)</span>
-<span class="g g-Whitespace">     </span><span class="mi">72</span> <span class="k">def</span> <span class="nf">get_action</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">context</span><span class="p">,</span> <span class="n">actions</span><span class="p">):</span>
-<span class="g g-Whitespace">     </span><span class="mi">73</span>     <span class="n">vw_text_example</span> <span class="o">=</span> <span class="n">to_vw_example_format</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">actions</span><span class="p">)</span>
-<span class="ne">---&gt; </span><span class="mi">74</span>     <span class="n">pmf</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">vw_text_example</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">75</span>     <span class="n">chosen_action_index</span><span class="p">,</span> <span class="n">prob</span> <span class="o">=</span> <span class="n">sample_custom_pmf</span><span class="p">(</span><span class="n">pmf</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">76</span>     <span class="k">return</span> <span class="n">actions</span><span class="p">[</span><span class="n">chosen_action_index</span><span class="p">],</span> <span class="n">prob</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/vowpalwabbit/pyvw.py:724,</span> in <span class="ni">Workspace.predict</span><span class="nt">(self, ec, prediction_type)</span>
-<span class="g g-Whitespace">    </span><span class="mi">722</span>     <span class="n">pylibvw</span><span class="o">.</span><span class="n">vw</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ec</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">723</span> <span class="k">else</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">724</span>     <span class="n">pylibvw</span><span class="o">.</span><span class="n">vw</span><span class="o">.</span><span class="n">predict_multi</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ec</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">726</span> <span class="k">if</span> <span class="n">prediction_type</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">727</span>     <span class="n">prediction_type</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_prediction_type</span><span class="p">()</span>
-
-<span class="ne">KeyboardInterrupt</span>: 
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
