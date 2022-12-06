@@ -89,7 +89,7 @@ var searchData=
   ['multiclass_5fpred_5fto_5fstring_1171',['multiclass_pred_to_string',['../namespaceVW_1_1debug.html#a9c0a9968718373271b11fb4f69a94382',1,'VW::debug']]],
   ['multiclass_5fprobs_1172',['MULTICLASS_PROBS',['../namespaceVW.html#a4f76045a06b3efe3c5c612b777b6c836a4f37af06f01b00614279f17914caef12',1,'VW']]],
   ['multiclasstask_1173',['MulticlassTask',['../namespaceMulticlassTask.html',1,'']]],
-  ['multilabel_1174',['MULTILABEL',['../namespaceMULTILABEL.html',1,'MULTILABEL'],['../namespaceMULTILABEL.html#a5e5e1e8ebd8c3d7f274c594c14766ee0',1,'MULTILABEL::multilabel()'],['../namespaceVW.html#adf253bc5d95217ce3aadf6e2421dafd2a99b9e229639a1ae8dce1b7865087a948',1,'VW::MULTILABEL()']]],
+  ['multilabel_1174',['MULTILABEL',['../namespaceMULTILABEL.html',1,'MULTILABEL'],['../namespaceVW.html#adf253bc5d95217ce3aadf6e2421dafd2a99b9e229639a1ae8dce1b7865087a948',1,'VW::MULTILABEL()'],['../namespaceMULTILABEL.html#a5e5e1e8ebd8c3d7f274c594c14766ee0',1,'MULTILABEL::multilabel()']]],
   ['multilabel_2eh_1175',['multilabel.h',['../multilabel_8h.html',1,'']]],
   ['multilabel_5foaa_2eh_1176',['multilabel_oaa.h',['../multilabel__oaa_8h.html',1,'']]],
   ['multilabel_5foaa_5fsetup_1177',['multilabel_oaa_setup',['../namespaceVW_1_1reductions.html#a67f6c10668d890000101032e5b60b244',1,'VW::reductions']]],
