@@ -433,8 +433,8 @@ Functions</h2></td></tr>
 <tr class="separator:ade7c66e76f0dc0b979504435741b275b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a945c8e920f1cf64998ea271d7bed2709"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a945c8e920f1cf64998ea271d7bed2709">get_best_constant</a> (const <a class="el" href="classVW_1_1loss__function.html">loss_function</a> &amp;loss_func, const <a class="el" href="classshared__data.html">shared_data</a> &amp;sd, float &amp;best_constant, float &amp;best_constant_loss)</td></tr>
 <tr class="separator:a945c8e920f1cf64998ea271d7bed2709"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2deccbfeef6dacd4a483d0d52ff2ca74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a2deccbfeef6dacd4a483d0d52ff2ca74">write_example_to_cache</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;output, <a class="el" href="classVW_1_1example.html">VW::example</a> *ex_ptr, <a class="el" href="classVW_1_1label__parser.html">VW::label_parser</a> &amp;lbl_parser, uint64_t parse_mask, <a class="el" href="classVW_1_1details_1_1cache__temp__buffer.html">VW::details::cache_temp_buffer</a> &amp;temp_buffer)</td></tr>
-<tr class="separator:a2deccbfeef6dacd4a483d0d52ff2ca74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf7e8fa88f4897ae1e6a2e076d1929ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#abf7e8fa88f4897ae1e6a2e076d1929ff">write_example_to_cache</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;output, <a class="el" href="classVW_1_1example.html">VW::example</a> *ex_ptr, <a class="el" href="classVW_1_1label__parser.html">VW::label_parser</a> &amp;lbl_parser, uint64_t parse_mask, VW::parsers::cache::details::cache_temp_buffer &amp;temp_buffer)</td></tr>
+<tr class="separator:abf7e8fa88f4897ae1e6a2e076d1929ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae455d2910ff6ee0086e635fd9c87a5a0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ae455d2910ff6ee0086e635fd9c87a5a0">read_example_from_cache</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> *all, <a class="el" href="classio__buf.html">io_buf</a> &amp;input, <a class="el" href="namespaceVW.html#a1dd7b95816f635bc6a5906d2b566c856">VW::multi_ex</a> &amp;examples)</td></tr>
 <tr class="separator:ae455d2910ff6ee0086e635fd9c87a5a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a655b3ade8d580e7fdb5f0bba479b8e9a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a655b3ade8d580e7fdb5f0bba479b8e9a">to_string</a> (const <a class="el" href="classVW_1_1cb__continuous_1_1continuous__label__elm.html">cb_continuous::continuous_label_elm</a> &amp;elm, int decimal_precision=<a class="el" href="namespaceVW_1_1details.html#a74adc19583dd54f95c368c1ea04ff5f1">details::DEFAULT_FLOAT_PRECISION</a>)</td></tr>
@@ -4355,6 +4355,9 @@ template&lt;typename T , typename... Args&gt; </div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int VW::read_example_from_cache </td>
@@ -4380,6 +4383,11 @@ template&lt;typename T , typename... Args&gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -6429,11 +6437,14 @@ template&lt;typename ContainerT &gt; </div>
 
 </div>
 </div>
-<a id="a2deccbfeef6dacd4a483d0d52ff2ca74"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2deccbfeef6dacd4a483d0d52ff2ca74">&#9670;&nbsp;</a></span>write_example_to_cache()</h2>
+<a id="abf7e8fa88f4897ae1e6a2e076d1929ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf7e8fa88f4897ae1e6a2e076d1929ff">&#9670;&nbsp;</a></span>write_example_to_cache()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void VW::write_example_to_cache </td>
@@ -6462,7 +6473,7 @@ template&lt;typename ContainerT &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classVW_1_1details_1_1cache__temp__buffer.html">VW::details::cache_temp_buffer</a> &amp;&#160;</td>
+          <td class="paramtype">VW::parsers::cache::details::cache_temp_buffer &amp;&#160;</td>
           <td class="paramname"><em>temp_buffer</em>&#160;</td>
         </tr>
         <tr>
@@ -6471,6 +6482,11 @@ template&lt;typename ContainerT &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -6623,7 +6639,7 @@ template&lt;typename ContainerT &gt; </div>
 <div class="ttc" id="anamespaceVW_html_a31bf6892187021f28960a19b5fede9b2"><div class="ttname"><a href="namespaceVW.html#a31bf6892187021f28960a19b5fede9b2">VW::scope_exit</a></div><div class="ttdeci">details::scope_exit_caller&lt; TScopeExitLambda &gt; scope_exit(TScopeExitLambda &amp;&amp;lambda) noexcept</div><div class="ttdef"><b>Definition:</b> scope_exit.h:68</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 6 2022 19:36:37 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 6 2022 20:20:32 for Vowpal Wabbit by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
