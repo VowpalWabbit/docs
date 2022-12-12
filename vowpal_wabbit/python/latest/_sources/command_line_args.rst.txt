@@ -5665,12 +5665,12 @@ Set number of live configs
 
 
 
-global_lease
-""""""""""""
+default_lease
+"""""""""""""
 
 .. code-block::
 
-    --global_lease <uint> (default: 4000)
+    --default_lease <uint> (default: 4000)
 
 
 .. raw:: html
@@ -5690,34 +5690,6 @@ global_lease
     </a>
 
 Set initial lease for automl interactions
-
-
-
-cm_type
-"""""""
-
-.. code-block::
-
-    --cm_type <interaction> (default: interaction)
-
-
-.. raw:: html
-
-    <span class="option-tag">
-        <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
-    </span>
-
-
-
-.. raw:: html
-
-    <a href="https://github.com/VowpalWabbit/vowpal_wabbit/wiki/Experimental">
-        <span class="option-tag option-warning">
-            <abbr title="This option is subject to change.">experimental</abbr>
-        </span>
-    </a>
-
-Set type of config manager
 
 
 
@@ -5773,7 +5745,7 @@ priority_challengers
         </span>
     </a>
 
-Set number of priority challengers to use
+Set number of priority challengers to use. Set to -1 to use half of total live configs.
 
 
 

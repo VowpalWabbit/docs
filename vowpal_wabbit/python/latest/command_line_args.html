@@ -2190,13 +2190,8 @@ const thebe_selector_output = ".output, .cell_output"
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#global-lease">
-       global_lease
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#cm-type">
-       cm_type
+      <a class="reference internal nav-link" href="#default-lease">
+       default_lease
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
@@ -6370,9 +6365,9 @@ default bandwidth = unit_range / 2.0</p>
     </span>
 </a><p>Set number of live configs</p>
 </section>
-<section id="global-lease">
-<h4>global_lease<a class="headerlink" href="#global-lease" title="Permalink to this headline">#</a></h4>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">--</span><span class="n">global_lease</span> <span class="o">&lt;</span><span class="n">uint</span><span class="o">&gt;</span> <span class="p">(</span><span class="n">default</span><span class="p">:</span> <span class="mi">4000</span><span class="p">)</span>
+<section id="default-lease">
+<h4>default_lease<a class="headerlink" href="#default-lease" title="Permalink to this headline">#</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">--</span><span class="n">default_lease</span> <span class="o">&lt;</span><span class="n">uint</span><span class="o">&gt;</span> <span class="p">(</span><span class="n">default</span><span class="p">:</span> <span class="mi">4000</span><span class="p">)</span>
 </pre></div>
 </div>
 <span class="option-tag">
@@ -6382,19 +6377,6 @@ default bandwidth = unit_range / 2.0</p>
         <abbr title="This option is subject to change.">experimental</abbr>
     </span>
 </a><p>Set initial lease for automl interactions</p>
-</section>
-<section id="cm-type">
-<h4>cm_type<a class="headerlink" href="#cm-type" title="Permalink to this headline">#</a></h4>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">--</span><span class="n">cm_type</span> <span class="o">&lt;</span><span class="n">interaction</span><span class="o">&gt;</span> <span class="p">(</span><span class="n">default</span><span class="p">:</span> <span class="n">interaction</span><span class="p">)</span>
-</pre></div>
-</div>
-<span class="option-tag">
-    <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
-</span><a href="https://github.com/VowpalWabbit/vowpal_wabbit/wiki/Experimental">
-    <span class="option-tag option-warning">
-        <abbr title="This option is subject to change.">experimental</abbr>
-    </span>
-</a><p>Set type of config manager</p>
 </section>
 <section id="priority-type">
 <h4>priority_type<a class="headerlink" href="#priority-type" title="Permalink to this headline">#</a></h4>
@@ -6420,7 +6402,7 @@ default bandwidth = unit_range / 2.0</p>
     <span class="option-tag option-warning">
         <abbr title="This option is subject to change.">experimental</abbr>
     </span>
-</a><p>Set number of priority challengers to use</p>
+</a><p>Set number of priority challengers to use. Set to -1 to use half of total live configs.</p>
 </section>
 <section id="verbose-metrics">
 <h4>verbose_metrics<a class="headerlink" href="#verbose-metrics" title="Permalink to this headline">#</a></h4>
