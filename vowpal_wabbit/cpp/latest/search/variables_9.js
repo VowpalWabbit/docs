@@ -30,6 +30,6 @@ var searchData=
   ['is_5fccb_5finput_5fmodel_4032',['is_ccb_input_model',['../classVW_1_1workspace.html#ab1739c8984ecdde64051dd1c815bcf61',1,'VW::workspace']]],
   ['is_5fldf_4033',['IS_LDF',['../namespaceSearch.html#a0cf0cfef46a3b6962d91d7de1ae67796',1,'Search']]],
   ['is_5fleaf_4034',['is_leaf',['../classVW_1_1reductions_1_1cats_1_1tree__node.html#aaeca171a8bd84152998e5f84aac96a17',1,'VW::reductions::cats::tree_node::is_leaf()'],['../classVW_1_1reductions_1_1offset__tree_1_1tree__node.html#a0563f7cfb4856ce6cdc83ea4af258ca4',1,'VW::reductions::offset_tree::tree_node::is_leaf()']]],
-  ['is_5fmore_5fthan_5ftwo_5flabels_5fobserved_4035',['is_more_than_two_labels_observed',['../classshared__data.html#a959e85b4cdc13fa50902e95ab83cc7c9',1,'shared_data']]],
+  ['is_5fmore_5fthan_5ftwo_5flabels_5fobserved_4035',['is_more_than_two_labels_observed',['../classVW_1_1shared__data.html#a3cc37ac6cbd82c2b5f5dd20685522913',1,'VW::shared_data']]],
   ['is_5fnewline_4036',['is_newline',['../classVW_1_1example.html#a435413fdf7bdce5c17d83768f70610bc',1,'VW::example']]]
 ];

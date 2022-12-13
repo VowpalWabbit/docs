@@ -9,12 +9,12 @@ var searchData=
   ['hexfloat_5fweights_3994',['hexfloat_weights',['../classVW_1_1workspace.html#af021cd46f2972aa2ad968f9b175b7629',1,'VW::workspace']]],
   ['history_5fnamespace_3995',['HISTORY_NAMESPACE',['../namespaceVW_1_1details.html#a86d881169e3a599992c079f695cdca6f',1,'VW::details']]],
   ['holdout_5fafter_3996',['holdout_after',['../classVW_1_1workspace.html#a0b0e80a0b71a5d9aa42cdd79e0b5c894',1,'VW::workspace']]],
-  ['holdout_5fbest_5floss_3997',['holdout_best_loss',['../classshared__data.html#a00b7fa4030c40b18d1b612586aec46ea',1,'shared_data']]],
-  ['holdout_5fbest_5fpass_3998',['holdout_best_pass',['../classshared__data.html#a8c6deb8f53fcc190fcfd469d3eaea6ab',1,'shared_data']]],
-  ['holdout_5fmulticlass_5flog_5floss_3999',['holdout_multiclass_log_loss',['../classshared__data.html#ab87cb3417f60f24650c9d8d33bf8f91a',1,'shared_data']]],
+  ['holdout_5fbest_5floss_3997',['holdout_best_loss',['../classVW_1_1shared__data.html#a6b08343c0d4e967b54635c157d826403',1,'VW::shared_data']]],
+  ['holdout_5fbest_5fpass_3998',['holdout_best_pass',['../classVW_1_1shared__data.html#a642b7266873843977363b2fc3cea5ead',1,'VW::shared_data']]],
+  ['holdout_5fmulticlass_5flog_5floss_3999',['holdout_multiclass_log_loss',['../classVW_1_1shared__data.html#a889e2dffa0c2ae12e684380d763ba268',1,'VW::shared_data']]],
   ['holdout_5fperiod_4000',['holdout_period',['../classVW_1_1workspace.html#a44a3f61ce210da4189f05eee8d5a46ee',1,'VW::workspace']]],
   ['holdout_5fset_5foff_4001',['holdout_set_off',['../classVW_1_1workspace.html#a9843c2eda8b54c2ad1f3e601eb5c3de5',1,'VW::workspace']]],
-  ['holdout_5fsum_5floss_4002',['holdout_sum_loss',['../classshared__data.html#afe9bf4ba48697932ceaa410adf60ec36',1,'shared_data']]],
-  ['holdout_5fsum_5floss_5fsince_5flast_5fdump_4003',['holdout_sum_loss_since_last_dump',['../classshared__data.html#a63e1cff7a359033bd68d65348782f772',1,'shared_data']]],
-  ['holdout_5fsum_5floss_5fsince_5flast_5fpass_4004',['holdout_sum_loss_since_last_pass',['../classshared__data.html#abb511c3a38ec3e9f907b011c8f69a571',1,'shared_data']]]
+  ['holdout_5fsum_5floss_4002',['holdout_sum_loss',['../classVW_1_1shared__data.html#a55def7841aa23663eb4c16083688838e',1,'VW::shared_data']]],
+  ['holdout_5fsum_5floss_5fsince_5flast_5fdump_4003',['holdout_sum_loss_since_last_dump',['../classVW_1_1shared__data.html#ac86279b5c0c81eb41342e15f5eb4ba8d',1,'VW::shared_data']]],
+  ['holdout_5fsum_5floss_5fsince_5flast_5fpass_4004',['holdout_sum_loss_since_last_pass',['../classVW_1_1shared__data.html#aad685ffeccd1472792fb1636e9dfb774',1,'VW::shared_data']]]
 ];

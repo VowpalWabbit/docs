@@ -14,7 +14,7 @@ var searchData=
   ['fill_5ftied_2972',['fill_tied',['../namespaceVW_1_1cb__explore__adf.html#a9ae6a3cfd8ce067ca4b34c6ca82faac3',1,'VW::cb_explore_adf']]],
   ['final_5frun_2973',['final_run',['../classSearch_1_1BaseTask.html#acf6f63de9181d30634b10bb83e674c35',1,'Search::BaseTask']]],
   ['finalize_2974',['finalize',['../classVW_1_1config_1_1option__builder.html#a05a693cc372129f0f8c571748c198dad',1,'VW::config::option_builder']]],
-  ['finalize_5fprediction_2975',['finalize_prediction',['../namespaceGD.html#af34189c40871355c25fe36e2bdb79298',1,'GD']]],
+  ['finalize_5fprediction_2975',['finalize_prediction',['../namespaceGD.html#a1b79e25179a6b48f0c7329407236bb82',1,'GD']]],
   ['finalize_5fregressor_2976',['finalize_regressor',['../parse__regressor_8h.html#a847c36648cd5a5a869497c6dc392f20e',1,'parse_regressor.h']]],
   ['finish_2977',['finish',['../namespaceSequenceTask__DemoLDF.html#ac3452e75b044ac0913f931ab9d39d856',1,'SequenceTask_DemoLDF::finish()'],['../classVW_1_1LEARNER_1_1learner.html#af45b985e7d4045d849e42a1375558fe7',1,'VW::LEARNER::learner::finish()'],['../namespaceSequenceSpanTask.html#a91dda7f62fa31f0848099ab9645616ce',1,'SequenceSpanTask::finish()'],['../namespaceArgmaxTask.html#a14a504368b11476cb755ebbfc488f340',1,'ArgmaxTask::finish()'],['../namespaceVW.html#ad03bc6dcdc5b741c04f0648dc5096db4',1,'VW::finish()']]],
   ['finish_5fcs_5fexample_2978',['finish_cs_example',['../namespaceVW_1_1details.html#ae1221994d6f62c6bd41919565c83882c',1,'VW::details::finish_cs_example(VW::workspace &amp;all, VW::example &amp;ec)'],['../namespaceVW_1_1details.html#a634209b3925af271398fdd96d9d5aa9d',1,'VW::details::finish_cs_example(VW::workspace &amp;all, T &amp;, VW::example &amp;ec)']]],

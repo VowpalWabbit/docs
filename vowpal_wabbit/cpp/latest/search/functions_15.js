@@ -5,7 +5,7 @@ var searchData=
   ['warm_5fcb_5fsetup_3675',['warm_cb_setup',['../namespaceVW_1_1reductions.html#a922744f2d699bbfad1ff4691dbb40710',1,'VW::reductions']]],
   ['warn_3676',['warn',['../classVW_1_1io_1_1details_1_1log__sink.html#a526b97c772780a5c3ff02d2264d41f23',1,'VW::io::details::log_sink::warn()'],['../classVW_1_1io_1_1logger.html#a0f84bcd1bc6a7b8cc3a04a6ac9586e1b',1,'VW::io::logger::warn()']]],
   ['weight_5fgen_3677',['weight_gen',['../namespaceVW_1_1reductions_1_1bs.html#a4ae3212f9168252bf06b5377c4cfd79a',1,'VW::reductions::bs']]],
-  ['weighted_5fexamples_3678',['weighted_examples',['../classshared__data.html#acea161d78c0bd3dab928b99268f46f9c',1,'shared_data']]],
+  ['weighted_5fexamples_3678',['weighted_examples',['../classVW_1_1shared__data.html#a3fdd9fa089371999b3dd8a701d8d2c02',1,'VW::shared_data']]],
   ['what_3679',['what',['../classVW_1_1vw__exception.html#a31eff794b28b77a6e244a0bea4a0cfa0',1,'VW::vw_exception']]],
   ['with_5foutput_5fstring_3680',['with_output_string',['../classSearch_1_1BaseTask.html#a91cae7d703dc5c6213f36e23d696de93',1,'Search::BaseTask']]],
   ['workspace_3681',['workspace',['../classVW_1_1workspace.html#a6c09bb48919f9417c4c3a1c53650534e',1,'VW::workspace::workspace(VW::io::logger logger)'],['../classVW_1_1workspace.html#ab6750a1f7090d0fba8fcbb9e4f3b26ad',1,'VW::workspace::workspace(const VW::workspace &amp;)=delete'],['../classVW_1_1workspace.html#a915021756e7248789093967d010d73ed',1,'VW::workspace::workspace(const VW::workspace &amp;&amp;)=delete']]],

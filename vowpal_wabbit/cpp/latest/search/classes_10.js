@@ -9,7 +9,7 @@ var searchData=
   ['search_5ftask_2373',['search_task',['../classSearch_1_1search__task.html',1,'Search']]],
   ['sensitivity_5fdata_2374',['sensitivity_data',['../classVW_1_1LEARNER_1_1details_1_1sensitivity__data.html',1,'VW::LEARNER::details']]],
   ['setup_5fbase_5fi_2375',['setup_base_i',['../classVW_1_1setup__base__i.html',1,'VW']]],
-  ['shared_5fdata_2376',['shared_data',['../classshared__data.html',1,'']]],
+  ['shared_5fdata_2376',['shared_data',['../classVW_1_1shared__data.html',1,'VW']]],
   ['simple_5flabel_2377',['simple_label',['../classVW_1_1simple__label.html',1,'VW']]],
   ['simple_5flabel_5freduction_5ffeatures_2378',['simple_label_reduction_features',['../classVW_1_1simple__label__reduction__features.html',1,'VW']]],
   ['slates_5fdata_2379',['slates_data',['../classVW_1_1reductions_1_1slates__data.html',1,'VW::reductions']]],

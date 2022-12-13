@@ -43,7 +43,7 @@ var searchData=
   ['constant_5fa_3858',['CONSTANT_A',['../namespaceexploration.html#abaf668aa89adbccbf973ed7087229251',1,'exploration']]],
   ['constant_5fc_3859',['CONSTANT_C',['../namespaceexploration.html#ab280cae4f247977e79c90ad5bc2c3053',1,'exploration']]],
   ['constant_5fnamespace_3860',['CONSTANT_NAMESPACE',['../namespaceVW_1_1details.html#a26f716806401dff8e1f7c931577fd93c',1,'VW::details']]],
-  ['contraction_3861',['contraction',['../classshared__data.html#a208ec97cf415ce6197c5508e59090982',1,'shared_data']]],
+  ['contraction_3861',['contraction',['../classVW_1_1shared__data.html#a380a49c252a5c99316280c1cf7613bf4',1,'VW::shared_data']]],
   ['cost_3862',['cost',['../classVW_1_1reductions_1_1cats_1_1node__cost.html#a7641b0f19a0c324b56347601bdc7eed3',1,'VW::reductions::cats::node_cost::cost()'],['../classVW_1_1slates_1_1label.html#ae02553fa48831fcbca891ed30e60fd29',1,'VW::slates::label::cost()'],['../classVW_1_1ccb__outcome.html#ac0f72ce58d0c8f895f2679da884b0b99',1,'VW::ccb_outcome::cost()'],['../classVW_1_1cb__continuous_1_1continuous__label__elm.html#aa8b78353c7f30e62f2c957217029e47b',1,'VW::cb_continuous::continuous_label_elm::cost()'],['../classCB_1_1cb__class.html#aba9eb88e830100c30273f7e008915d4d',1,'CB::cb_class::cost()']]],
   ['cost_5fsensitive_3863',['cost_sensitive',['../classVW_1_1workspace.html#a0630044e9f2418083cdab510e7ca2e6c',1,'VW::workspace']]],
   ['costs_3864',['costs',['../classVW_1_1cs__label.html#a240a26bfb99dae42b9df45d8835b1054',1,'VW::cs_label::costs()'],['../classCB_1_1label.html#a6e14bf93d493b2de26f8c4b85ffb2e9f',1,'CB::label::costs()'],['../classVW_1_1cb__continuous_1_1continuous__label.html#a5c8df23cff8932da98096a22ce4b2bf7',1,'VW::cb_continuous::continuous_label::costs()']]],

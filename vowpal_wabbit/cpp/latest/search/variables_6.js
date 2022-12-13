@@ -15,7 +15,7 @@ var searchData=
   ['finish_5fexample_5ff_3961',['finish_example_f',['../classVW_1_1LEARNER_1_1details_1_1finish__example__data.html#adaacde5955752d251276146355c9507d',1,'VW::LEARNER::details::finish_example_data']]],
   ['first_5fevent_5fid_3962',['first_event_id',['../classdsjson__metrics.html#ae493bde10acaa99cd706e9c731713027',1,'dsjson_metrics']]],
   ['first_5fevent_5ftime_3963',['first_event_time',['../classdsjson__metrics.html#a1448bd9af35c52420984f1f9104a80fb',1,'dsjson_metrics']]],
-  ['first_5fobserved_5flabel_3964',['first_observed_label',['../classshared__data.html#acdead5f80e8283d6600d35a837cd0b97',1,'shared_data']]],
+  ['first_5fobserved_5flabel_3964',['first_observed_label',['../classVW_1_1shared__data.html#afcd19feec1e33546a26cfa6421882f7a',1,'VW::shared_data']]],
   ['first_5fonly_3965',['first_only',['../classVW_1_1reductions_1_1pmf__to__pdf__reduction.html#afda612873fc2baeb3aa4bed298aeedb4',1,'VW::reductions::pmf_to_pdf_reduction']]],
   ['flatbuffer_3966',['flatbuffer',['../classVW_1_1details_1_1input__options.html#ad74f976baa487909c999b9e7df1b4952',1,'VW::details::input_options']]],
   ['fnv_5fprime_3967',['FNV_PRIME',['../namespaceVW_1_1details.html#a6d3007ff54d3b86bb5dfcf61a60943c4',1,'VW::details']]],

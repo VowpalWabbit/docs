@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['t_1891',['t',['../classshared__data.html#a40b662eb223f0c8fa01ad05494b7e08b',1,'shared_data::t()'],['../classVW_1_1confidence__sequence.html#a4e97f0243b575fee323444ff88fab5b8',1,'VW::confidence_sequence::t()']]],
+  ['t_1891',['t',['../classVW_1_1shared__data.html#a5775abda2a1b0538181b170d5ac7cfb3',1,'VW::shared_data::t()'],['../classVW_1_1confidence__sequence.html#a4e97f0243b575fee323444ff88fab5b8',1,'VW::confidence_sequence::t()']]],
   ['table_5fformatter_2eh_1892',['table_formatter.h',['../table__formatter_8h.html',1,'']]],
   ['tag_1893',['tag',['../classVW_1_1example.html#a41edbcd2926f6c33324c7fcd497a7c54',1,'VW::example::tag()'],['../classVW_1_1flat__example.html#acaa12f4e69f8f60e9f916a6379c2e77a',1,'VW::flat_example::tag()']]],
   ['tag_5flist_1894',['tag_list',['../classVW_1_1parsers_1_1csv_1_1csv__parser.html#a67b6ac48c5b1145df3a975f130c79db0',1,'VW::parsers::csv::csv_parser']]],
@@ -43,7 +43,7 @@ var searchData=
   ['topk_2eh_1931',['topk.h',['../topk_8h.html',1,'']]],
   ['topk_5fsetup_1932',['topk_setup',['../namespaceVW_1_1reductions.html#a43ddfc6f11f229aec5cb36c80fa30406',1,'VW::reductions']]],
   ['total_1933',['total',['../classVW_1_1all__reduce__base.html#aa527fbd5c585da9e4e8ae59fa06e91e1',1,'VW::all_reduce_base']]],
-  ['total_5ffeatures_1934',['total_features',['../classshared__data.html#aaedd51e57f247fce49e552319c267253',1,'shared_data']]],
+  ['total_5ffeatures_1934',['total_features',['../classVW_1_1shared__data.html#af11fff1aeea9b463e0ddfbc591bc79aa',1,'VW::shared_data']]],
   ['total_5fsum_5ffeat_5fsq_1935',['total_sum_feat_sq',['../classVW_1_1flat__example.html#a80f443ad7a865cfbaf6523f8115e4e9b',1,'VW::flat_example::total_sum_feat_sq()'],['../classVW_1_1example.html#adc14c7160b5f0ec970ee0f3e47e24667',1,'VW::example::total_sum_feat_sq()']]],
   ['total_5fweight_1936',['total_weight',['../classGD_1_1per__model__state.html#a8a5cba2c039a75b70d1641b57973d1d4',1,'GD::per_model_state']]],
   ['trace_5flevel_1937',['TRACE_LEVEL',['../namespaceVW_1_1io.html#aaf6d3dfe9781b53c9fbc2908a8f0641cadfa40d9f44f7e32309f117401151cefb',1,'VW::io']]],

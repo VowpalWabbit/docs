@@ -143,6 +143,6 @@ var searchData=
   ['global_5fweight_864',['global_weight',['../classVW_1_1flat__example.html#af22b235d38543a0c757241e20dcfa375',1,'VW::flat_example']]],
   ['gram_5fschmidt_865',['gram_schmidt',['../namespaceVW.html#a0eebf9b8e3b7d8ddd7593fbd86622d03',1,'VW::gram_schmidt(WeightsT &amp;weights, uint64_t d, const std::set&lt; uint64_t &gt; &amp;rows)'],['../namespaceVW.html#ac8602470da66bc17c925c87f2c328edf',1,'VW::gram_schmidt(Eigen::MatrixXf &amp;mat)'],['../namespaceVW.html#a5e16c7d797676b4aa14893841f5efaa1',1,'VW::gram_schmidt(Eigen::SparseMatrix&lt; float &gt; &amp;mat)']]],
   ['graphtask_866',['GraphTask',['../namespaceGraphTask.html',1,'']]],
-  ['gravity_867',['gravity',['../classGD_1_1multipredict__info.html#a8255d21183a68c7d73504edc87388b0e',1,'GD::multipredict_info::gravity()'],['../classshared__data.html#a49f2656fcaf86ebab5009fdf70c0ef53',1,'shared_data::gravity()']]],
+  ['gravity_867',['gravity',['../classGD_1_1multipredict__info.html#a8255d21183a68c7d73504edc87388b0e',1,'GD::multipredict_info::gravity()'],['../classVW_1_1shared__data.html#a88f22588da0951f56628fbeb4a8abd1e',1,'VW::shared_data::gravity()']]],
   ['guard_2eh_868',['guard.h',['../guard_8h.html',1,'']]]
 ];

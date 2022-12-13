@@ -13,5 +13,5 @@ var searchData=
   ['git_5fcommit_3984',['git_commit',['../namespaceVW.html#a7d89e09709dcb4deeb550e17aa8ea75b',1,'VW']]],
   ['git_5fcommit_3985',['GIT_COMMIT',['../namespaceVW.html#a07168230c85cd48992234212bb9088ea',1,'VW']]],
   ['global_5fweight_3986',['global_weight',['../classVW_1_1flat__example.html#af22b235d38543a0c757241e20dcfa375',1,'VW::flat_example']]],
-  ['gravity_3987',['gravity',['../classGD_1_1multipredict__info.html#a8255d21183a68c7d73504edc87388b0e',1,'GD::multipredict_info::gravity()'],['../classshared__data.html#a49f2656fcaf86ebab5009fdf70c0ef53',1,'shared_data::gravity()']]]
+  ['gravity_3987',['gravity',['../classGD_1_1multipredict__info.html#a8255d21183a68c7d73504edc87388b0e',1,'GD::multipredict_info::gravity()'],['../classVW_1_1shared__data.html#a88f22588da0951f56628fbeb4a8abd1e',1,'VW::shared_data::gravity()']]]
 ];

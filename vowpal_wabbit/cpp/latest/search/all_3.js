@@ -194,7 +194,7 @@ var searchData=
   ['continuous_5factions_5freduction_5ffeatures_2eh_392',['continuous_actions_reduction_features.h',['../continuous__actions__reduction__features_8h.html',1,'']]],
   ['continuous_5flabel_393',['continuous_label',['../classVW_1_1cb__continuous_1_1continuous__label.html',1,'VW::cb_continuous']]],
   ['continuous_5flabel_5felm_394',['continuous_label_elm',['../classVW_1_1cb__continuous_1_1continuous__label__elm.html',1,'VW::cb_continuous']]],
-  ['contraction_395',['contraction',['../classshared__data.html#a208ec97cf415ce6197c5508e59090982',1,'shared_data']]],
+  ['contraction_395',['contraction',['../classVW_1_1shared__data.html#a380a49c252a5c99316280c1cf7613bf4',1,'VW::shared_data']]],
   ['copy_5fexample_5fdata_396',['copy_example_data',['../namespaceVW.html#a438340cadb70ab8eb3e461e3e8106b00',1,'VW']]],
   ['copy_5fexample_5fdata_5fwith_5flabel_397',['copy_example_data_with_label',['../namespaceVW.html#a51f22667a1c11c2a523ea3fcf42b8d34',1,'VW']]],
   ['copy_5fexample_5fmetadata_398',['copy_example_metadata',['../namespaceVW.html#af392a5d3678ff1b726f8a9f2720ac89e',1,'VW']]],

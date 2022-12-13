@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['t_4318',['t',['../classshared__data.html#a40b662eb223f0c8fa01ad05494b7e08b',1,'shared_data::t()'],['../classVW_1_1confidence__sequence.html#a4e97f0243b575fee323444ff88fab5b8',1,'VW::confidence_sequence::t()']]],
+  ['t_4318',['t',['../classVW_1_1shared__data.html#a5775abda2a1b0538181b170d5ac7cfb3',1,'VW::shared_data::t()'],['../classVW_1_1confidence__sequence.html#a4e97f0243b575fee323444ff88fab5b8',1,'VW::confidence_sequence::t()']]],
   ['tag_4319',['tag',['../classVW_1_1example.html#a41edbcd2926f6c33324c7fcd497a7c54',1,'VW::example::tag()'],['../classVW_1_1flat__example.html#acaa12f4e69f8f60e9f916a6379c2e77a',1,'VW::flat_example::tag()']]],
   ['tag_5flist_4320',['tag_list',['../classVW_1_1parsers_1_1csv_1_1csv__parser.html#a67b6ac48c5b1145df3a975f130c79db0',1,'VW::parsers::csv::csv_parser']]],
   ['task_4321',['task',['../namespaceDepParserTask.html#a30fa83f93eb80f206e38dcb30c86a282',1,'DepParserTask::task()'],['../namespaceEntityRelationTask.html#acbc7d9b16ae9f0350fcd8b5d7091203a',1,'EntityRelationTask::task()'],['../namespaceGraphTask.html#aac9dec212f834eb3627fb692ff1f360e',1,'GraphTask::task()'],['../namespaceHookTask.html#ad6d4e76d26a7204f7ff5823e54a915c6',1,'HookTask::task()'],['../namespaceMulticlassTask.html#abd78c1450628c6d41ecf06b1df7f62b9',1,'MulticlassTask::task()'],['../namespaceSequenceTask.html#a5dbf798597bbe088538470af58dce9e1',1,'SequenceTask::task()'],['../namespaceSequenceSpanTask.html#a1a593028b8e39ec9c704258ac57864d0',1,'SequenceSpanTask::task()'],['../namespaceSequenceTaskCostToGo.html#a59cb7b8fdf76dc0bf4df56b14154194a',1,'SequenceTaskCostToGo::task()'],['../namespaceArgmaxTask.html#a0696433f27fcb50aad99db57dad89e23',1,'ArgmaxTask::task()'],['../namespaceSequenceTask__DemoLDF.html#a922359b40526d5ada023c945cb4812c8',1,'SequenceTask_DemoLDF::task()']]],
@@ -16,7 +16,7 @@ var searchData=
   ['tokens_4331',['tokens',['../classVW_1_1label__parser__reuse__mem.html#abd4d46fe52aa8f9b495c9e2b7663935c',1,'VW::label_parser_reuse_mem']]],
   ['top_5faction_5findex_4332',['TOP_ACTION_INDEX',['../namespaceVW_1_1details.html#a5221d0bb0e49142ff05945b92a792a51',1,'VW::details']]],
   ['total_4333',['total',['../classVW_1_1all__reduce__base.html#aa527fbd5c585da9e4e8ae59fa06e91e1',1,'VW::all_reduce_base']]],
-  ['total_5ffeatures_4334',['total_features',['../classshared__data.html#aaedd51e57f247fce49e552319c267253',1,'shared_data']]],
+  ['total_5ffeatures_4334',['total_features',['../classVW_1_1shared__data.html#af11fff1aeea9b463e0ddfbc591bc79aa',1,'VW::shared_data']]],
   ['total_5fsum_5ffeat_5fsq_4335',['total_sum_feat_sq',['../classVW_1_1flat__example.html#a80f443ad7a865cfbaf6523f8115e4e9b',1,'VW::flat_example::total_sum_feat_sq()'],['../classVW_1_1example.html#adc14c7160b5f0ec970ee0f3e47e24667',1,'VW::example::total_sum_feat_sq()']]],
   ['total_5fweight_4336',['total_weight',['../classGD_1_1per__model__state.html#a8a5cba2c039a75b70d1641b57973d1d4',1,'GD::per_model_state']]],
   ['trace_5fmessage_4337',['trace_message',['../classVW_1_1workspace.html#afc57cfdf63ebc3face3859e555b2ef7a',1,'VW::workspace::trace_message()'],['../classtrace__message__wrapper.html#aa6be33675dd695eb39219e96ed598ce8',1,'trace_message_wrapper::trace_message()']]],

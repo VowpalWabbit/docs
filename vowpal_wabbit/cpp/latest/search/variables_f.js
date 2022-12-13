@@ -1,7 +1,7 @@
 var searchData=
 [
   ['offset_4163',['offset',['../classVW_1_1details_1_1invert__hash__info.html#accb54a0b742e5a2ef44b2bfb3b0e665c',1,'VW::details::invert_hash_info::offset()'],['../classVW_1_1details_1_1extent__interaction__expansion__stack__item.html#abb3973872955ad877dec42facb893306',1,'VW::details::extent_interaction_expansion_stack_item::offset()']]],
-  ['old_5fweighted_5flabeled_5fexamples_4164',['old_weighted_labeled_examples',['../classshared__data.html#a22c93bc868692a1f3dbb5cc24ec1fa3a',1,'shared_data']]],
+  ['old_5fweighted_5flabeled_5fexamples_4164',['old_weighted_labeled_examples',['../classVW_1_1shared__data.html#a44e452d56433587f7704c04c2474f628',1,'VW::shared_data']]],
   ['options_4165',['options',['../classVW_1_1workspace.html#ad87a23d32e412e1af4a788e4ce6f11a2',1,'VW::workspace::options()'],['../classVW_1_1parsers_1_1csv_1_1csv__parser.html#aea09771e529fabe1a0209e380f781ccb',1,'VW::parsers::csv::csv_parser::options()']]],
   ['original_5flabel_5fcost_4166',['original_label_cost',['../classVW_1_1details_1_1decision__service__interaction.html#ab72bc048bb61ab6864442fb7937cdf32',1,'VW::details::decision_service_interaction']]],
   ['original_5flabel_5fcost_5ffirst_5fslot_4167',['original_label_cost_first_slot',['../classVW_1_1details_1_1decision__service__interaction.html#a9744ea60e686511f7c14d0189bb4444f',1,'VW::details::decision_service_interaction']]],

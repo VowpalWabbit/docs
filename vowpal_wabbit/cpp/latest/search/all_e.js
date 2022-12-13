@@ -47,7 +47,7 @@ var searchData=
   ['nonormalize_1259',['nonormalize',['../classVW_1_1workspace.html#a4c264d20961cbb6bc6b46406ffa33d8e',1,'VW::workspace']]],
   ['noop_1260',['noop',['../namespaceVW_1_1LEARNER_1_1details.html#ab6418a44e5ca971e7eec25150b0f31d7',1,'VW::LEARNER::details']]],
   ['noop_2eh_1261',['noop.h',['../noop_8h.html',1,'']]],
-  ['noop_5fmm_1262',['noop_mm',['../global__data_8h.html#ab1679df7e12cefeb7ce4d0094b9d29b3',1,'global_data.h']]],
+  ['noop_5fmm_1262',['noop_mm',['../global__data_8h.html#ab8aafeead6570c9c9d2ee9051a472466',1,'global_data.h']]],
   ['noop_5foutput_5fstreambuf_1263',['noop_output_streambuf',['../classVW_1_1io_1_1noop__output__streambuf.html',1,'VW::io']]],
   ['noop_5fpersist_5fmetrics_1264',['noop_persist_metrics',['../namespaceVW_1_1LEARNER_1_1details.html#a670f049d448167e28f88a5f7c4813bed',1,'VW::LEARNER::details']]],
   ['noop_5fsave_5fload_1265',['noop_save_load',['../namespaceVW_1_1LEARNER_1_1details.html#a42a279c991654d254921c903fb5b952b',1,'VW::LEARNER::details']]],

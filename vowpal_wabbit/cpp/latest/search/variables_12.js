@@ -10,7 +10,7 @@ var searchData=
   ['redefine_5fsome_4232',['redefine_some',['../classVW_1_1workspace.html#a21905006a34ca0579048fb609c30c5fd',1,'VW::workspace']]],
   ['reg_5fmode_4233',['reg_mode',['../classVW_1_1workspace.html#a0be6fd2c8554fe20a7d8c5873429659f',1,'VW::workspace']]],
   ['replay_5fcount_4234',['replay_count',['../classVW_1_1reductions_1_1expreplay_1_1expreplay.html#a8ccad80528755153461f872a0da5f224',1,'VW::reductions::expreplay::expreplay']]],
-  ['report_5fmulticlass_5flog_5floss_4235',['report_multiclass_log_loss',['../classshared__data.html#a95ee6d6b9595f0c04643502cf159d98e',1,'shared_data']]],
+  ['report_5fmulticlass_5flog_5floss_4235',['report_multiclass_log_loss',['../classVW_1_1shared__data.html#abaad0b614b684cff65383480e830f74b',1,'VW::shared_data']]],
   ['resettable_4236',['resettable',['../classparser.html#a31e92900e2b124f96f0b21a0e5303bed',1,'parser']]],
   ['rev_4237',['rev',['../classVW_1_1version__struct.html#ad2b08273263bb5ad28d224f47f191d9b',1,'VW::version_struct']]],
   ['right_4238',['right',['../classVW_1_1continuous__actions_1_1pdf__segment.html#a45ed7493ffd94927e42d27162d02e840',1,'VW::continuous_actions::pdf_segment']]],

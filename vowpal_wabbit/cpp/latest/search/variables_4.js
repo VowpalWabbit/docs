@@ -29,7 +29,7 @@ var searchData=
   ['dsjson_5fsum_5fcost_5foriginal_5fbaseline_3914',['dsjson_sum_cost_original_baseline',['../classdsjson__metrics.html#a6c40b15b8a09377f8ed3748adaf662ff',1,'dsjson_metrics']]],
   ['dsjson_5fsum_5fcost_5foriginal_5ffirst_5fslot_3915',['dsjson_sum_cost_original_first_slot',['../classdsjson__metrics.html#adc2cfdbcfb3209245f2cde39d9e24d09',1,'dsjson_metrics']]],
   ['dsjson_5fsum_5fcost_5foriginal_5flabel_5fequal_5fbaseline_5ffirst_5fslot_3916',['dsjson_sum_cost_original_label_equal_baseline_first_slot',['../classdsjson__metrics.html#a795f82a074737bb5932bb2faafb78022',1,'dsjson_metrics']]],
-  ['dump_5finterval_3917',['dump_interval',['../classshared__data.html#acc14d5e78772dd39829a82e4df2912d7',1,'shared_data']]],
+  ['dump_5finterval_3917',['dump_interval',['../classVW_1_1shared__data.html#ac9718a78c551599557a89f2e1223ff16',1,'VW::shared_data']]],
   ['dump_5fjson_5fweights_5finclude_5fextra_5fonline_5fstate_3918',['dump_json_weights_include_extra_online_state',['../classVW_1_1workspace.html#a14f27e53096b7f9887ba9a3af0efaa8c',1,'VW::workspace']]],
   ['dump_5fjson_5fweights_5finclude_5ffeature_5fnames_3919',['dump_json_weights_include_feature_names',['../classVW_1_1workspace.html#ada014e9abfaac61ea4a90636c4bcba00',1,'VW::workspace']]]
 ];

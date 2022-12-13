@@ -28,7 +28,7 @@ var searchData=
   ['_7escope_5fexit_5fcaller_2199',['~scope_exit_caller',['../classVW_1_1details_1_1scope__exit__caller.html#a4094efdd6be34a5adfdf11a3bc79b996',1,'VW::details::scope_exit_caller']]],
   ['_7esearch_2200',['~search',['../classSearch_1_1search.html#a94474ae1eae14f20a678ecdca7ff20aa',1,'Search::search']]],
   ['_7esetup_5fbase_5fi_2201',['~setup_base_i',['../classVW_1_1setup__base__i.html#a77470d2254f711c05ae417dc2d75ee03',1,'VW::setup_base_i']]],
-  ['_7eshared_5fdata_2202',['~shared_data',['../classshared__data.html#aeface363968ec81f96ef7c34f0ec7e60',1,'shared_data']]],
+  ['_7eshared_5fdata_2202',['~shared_data',['../classVW_1_1shared__data.html#ad09aa025044ea4a7c6c698e761e46897',1,'VW::shared_data']]],
   ['_7esocket_2203',['~socket',['../classVW_1_1io_1_1socket.html#a623937bd36d1734b649e88dce7151bbf',1,'VW::io::socket']]],
   ['_7esocket_5fcloser_2204',['~socket_closer',['../classVW_1_1io_1_1details_1_1socket__closer.html#aa54c996e134ed9e0a15e68e03692b61f',1,'VW::io::details::socket_closer']]],
   ['_7espanning_5ftree_2205',['~spanning_tree',['../classVW_1_1spanning__tree.html#aacdc005574a45493ffd144be1cd078b7',1,'VW::spanning_tree']]],

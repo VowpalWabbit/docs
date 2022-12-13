@@ -20,7 +20,7 @@ var searchData=
   ['event_5fsum_3937',['event_sum',['../classGEN__CS_1_1cb__to__cs__adf.html#a2aad7caed595926fb7fbbd43a653e384',1,'GEN_CS::cb_to_cs_adf']]],
   ['ex_5freduction_5ffeatures_3938',['ex_reduction_features',['../classVW_1_1flat__example.html#aca708edbe53565abf87055e09191736f',1,'VW::flat_example::ex_reduction_features()'],['../classVW_1_1example__predict.html#aa5baa42fbe3e76836d5d1c115b2e63aa',1,'VW::example_predict::ex_reduction_features()']]],
   ['example_5fcounter_3939',['example_counter',['../classVW_1_1flat__example.html#a709ef72efc46ef47c3a1948b5a1fb02f',1,'VW::flat_example::example_counter()'],['../classVW_1_1example.html#ab0bcd64cccdc902261114a3b591c9f58',1,'VW::example::example_counter()']]],
-  ['example_5fnumber_3940',['example_number',['../classshared__data.html#a0de1ca113ee6d22741ca6737a00cddd0',1,'shared_data']]],
+  ['example_5fnumber_3940',['example_number',['../classVW_1_1shared__data.html#ae946b2ff2f410efbc225b738f1fef572',1,'VW::shared_data']]],
   ['example_5fparser_3941',['example_parser',['../classVW_1_1workspace.html#aee857c5e4d572d09c9243a8f9a9e3aac',1,'VW::workspace']]],
   ['example_5fpool_3942',['example_pool',['../classparser.html#a42190a234293feb3066bfbaa25981239',1,'parser']]],
   ['example_5fqueue_5flimit_3943',['example_queue_limit',['../classparser.html#a22832e405bb961a4c4f19654723aef48',1,'parser']]],

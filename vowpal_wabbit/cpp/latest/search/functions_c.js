@@ -12,7 +12,7 @@ var searchData=
   ['node_5fsocks_3256',['node_socks',['../classVW_1_1details_1_1node__socks.html#a550dcf0678b38d0eaced2813f64b95ed',1,'VW::details::node_socks']]],
   ['nonempty_3257',['nonempty',['../classfeatures.html#a2985aa753c882122d770daf7efb2b993',1,'features']]],
   ['noop_3258',['noop',['../namespaceVW_1_1LEARNER_1_1details.html#ab6418a44e5ca971e7eec25150b0f31d7',1,'VW::LEARNER::details']]],
-  ['noop_5fmm_3259',['noop_mm',['../global__data_8h.html#ab1679df7e12cefeb7ce4d0094b9d29b3',1,'global_data.h']]],
+  ['noop_5fmm_3259',['noop_mm',['../global__data_8h.html#ab8aafeead6570c9c9d2ee9051a472466',1,'global_data.h']]],
   ['noop_5fpersist_5fmetrics_3260',['noop_persist_metrics',['../namespaceVW_1_1LEARNER_1_1details.html#a670f049d448167e28f88a5f7c4813bed',1,'VW::LEARNER::details']]],
   ['noop_5fsave_5fload_3261',['noop_save_load',['../namespaceVW_1_1LEARNER_1_1details.html#a42a279c991654d254921c903fb5b952b',1,'VW::LEARNER::details']]],
   ['noop_5fsensitivity_3262',['noop_sensitivity',['../namespaceVW_1_1LEARNER_1_1details.html#af31e255ab36c188f849699950b1e1870',1,'VW::LEARNER::details']]],
