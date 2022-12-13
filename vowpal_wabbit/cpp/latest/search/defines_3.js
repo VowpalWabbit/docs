@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['declare_5fmetatask_4564',['DECLARE_METATASK',['../search__meta_8h.html#aa9b72618a93bed688124de4212d654bd',1,'search_meta.h']]],
-  ['default_5ftolerance_4565',['DEFAULT_TOLERANCE',['../vw__math_8h.html#a0e355e0dcb761f1b89524e0e77fd14bd',1,'vw_math.h']]]
+  ['declare_5fmetatask_4562',['DECLARE_METATASK',['../search__meta_8h.html#aa9b72618a93bed688124de4212d654bd',1,'search_meta.h']]],
+  ['default_5ftolerance_4563',['DEFAULT_TOLERANCE',['../vw__math_8h.html#a0e355e0dcb761f1b89524e0e77fd14bd',1,'vw_math.h']]]
 ];
