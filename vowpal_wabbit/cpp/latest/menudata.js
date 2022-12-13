@@ -270,6 +270,5 @@ var menudata={children:[
 {text:"r",url:"globals_defs.html#index_r"},
 {text:"s",url:"globals_defs.html#index_s"},
 {text:"t",url:"globals_defs.html#index_t"},
-{text:"v",url:"globals_defs.html#index_v"},
-{text:"w",url:"globals_defs.html#index_w"}]}]}]},
+{text:"v",url:"globals_defs.html#index_v"}]}]}]},
 {text:"Wiki",url:"https://github.com/JohnLangford/vowpal_wabbit/wiki"}]}

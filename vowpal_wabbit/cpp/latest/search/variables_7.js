@@ -10,8 +10,8 @@ var searchData=
   ['generated_5fname_3977',['generated_name',['../classVW_1_1config_1_1options__name__extractor.html#a3335b4d823e548577f2e4394aeea86c5',1,'VW::config::options_name_extractor']]],
   ['get_5fpmf_3978',['GET_PMF',['../classvw__dbg.html#a013743f313758d5a68a0a72f620ceba4',1,'vw_dbg']]],
   ['get_5fweight_3979',['get_weight',['../classVW_1_1label__parser.html#ae7a6398d612487cb0ea8e7e422d3cc08',1,'VW::label_parser']]],
-  ['git_5fcommit_3980',['git_commit',['../namespaceVW.html#a7d89e09709dcb4deeb550e17aa8ea75b',1,'VW']]],
-  ['git_5fcommit_3981',['GIT_COMMIT',['../namespaceVW.html#a07168230c85cd48992234212bb9088ea',1,'VW']]],
+  ['git_5fcommit_3980',['GIT_COMMIT',['../namespaceVW.html#a07168230c85cd48992234212bb9088ea',1,'VW']]],
+  ['git_5fcommit_3981',['git_commit',['../namespaceVW.html#a7d89e09709dcb4deeb550e17aa8ea75b',1,'VW']]],
   ['global_5fweight_3982',['global_weight',['../classVW_1_1flat__example.html#af22b235d38543a0c757241e20dcfa375',1,'VW::flat_example']]],
   ['gravity_3983',['gravity',['../classGD_1_1multipredict__info.html#a8255d21183a68c7d73504edc87388b0e',1,'GD::multipredict_info::gravity()'],['../classVW_1_1shared__data.html#a88f22588da0951f56628fbeb4a8abd1e',1,'VW::shared_data::gravity()']]]
 ];
