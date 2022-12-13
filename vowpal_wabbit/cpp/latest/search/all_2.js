@@ -37,7 +37,7 @@ var searchData=
   ['bin_5fwrite_5ffixed_181',['bin_write_fixed',['../classio__buf.html#a3c0311f639b9062998f798bd0ce5da5f',1,'io_buf']]],
   ['binary_182',['BINARY',['../classvw__dbg.html#a73dbe83fd8d2f44045784ec4dfbd18f1',1,'vw_dbg']]],
   ['binary_2eh_183',['binary.h',['../binary_8h.html',1,'']]],
-  ['binary_5fprint_5fresult_5fby_5fref_184',['binary_print_result_by_ref',['../global__data_8h.html#a1ff4b8b3d4454be27125132023a39f72',1,'global_data.h']]],
+  ['binary_5fprint_5fresult_5fby_5fref_184',['binary_print_result_by_ref',['../namespaceVW_1_1details.html#a2e91d4de9bc5711699314a353175174a',1,'VW::details']]],
   ['binary_5fsetup_185',['binary_setup',['../namespaceVW_1_1reductions.html#ad5d20e58c2af62b73d93a17d149fe4ad',1,'VW::reductions']]],
   ['bool_5fmetric_186',['bool_metric',['../classVW_1_1metric__sink__visitor.html#a797a83c1203a2d66d9716df0965c7567',1,'VW::metric_sink_visitor']]],
   ['boosting_2eh_187',['boosting.h',['../boosting_8h.html',1,'']]],

@@ -106,7 +106,7 @@ var searchData=
   ['get_5fpmf_829',['GET_PMF',['../classvw__dbg.html#a013743f313758d5a68a0a72f620ceba4',1,'vw_dbg']]],
   ['get_5fpmf_2eh_830',['get_pmf.h',['../get__pmf_8h.html',1,'']]],
   ['get_5fpmf_5fsetup_831',['get_pmf_setup',['../namespaceVW_1_1reductions.html#aec10babf583251db52812e8858151158',1,'VW::reductions']]],
-  ['get_5fprediction_832',['get_prediction',['../namespaceVW.html#aabe692d026065cc4f681f477a11aa94d',1,'VW::get_prediction()'],['../global__data_8h.html#a25b250791d9515210792105415cef47f',1,'get_prediction():&#160;global_data.h']]],
+  ['get_5fprediction_832',['get_prediction',['../namespaceVW.html#aabe692d026065cc4f681f477a11aa94d',1,'VW::get_prediction()'],['../namespaceVW_1_1details.html#a5f6aab5babb198963122d47e746baf98',1,'VW::details::get_prediction()']]],
   ['get_5fprobability_833',['get_probability',['../namespaceCB.html#aea7d594fb4b7f7d2719b73edc414006a',1,'CB::get_probability(const VW::cb_continuous::continuous_label_elm &amp;elm)'],['../namespaceCB.html#a218654a63522f4c3fc49339d511bf48f',1,'CB::get_probability(const LabelElmT &amp;elm)']]],
   ['get_5frandom_834',['get_random',['../classVW_1_1rand__state.html#af8c6dd044ac2b68065aeb69bf26ed421',1,'VW::rand_state']]],
   ['get_5frandom_5fstate_835',['get_random_state',['../classVW_1_1workspace.html#ac9fd3ece79f323d37a7bc740f2e8fa07',1,'VW::workspace']]],
