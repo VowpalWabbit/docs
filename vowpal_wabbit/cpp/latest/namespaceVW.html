@@ -621,6 +621,11 @@ Functions</h2></td></tr>
 <tr class="memitem:a0ca21392d7d3e4749de9b1c212737882"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a0ca21392d7d3e4749de9b1c212737882">fmt_float</a> (float f, int max_decimal_places)</td></tr>
 <tr class="memdesc:a0ca21392d7d3e4749de9b1c212737882"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format float to string with max number of digits after the decimal place.  <a href="namespaceVW.html#a0ca21392d7d3e4749de9b1c212737882">More...</a><br /></td></tr>
 <tr class="separator:a0ca21392d7d3e4749de9b1c212737882"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1b11a8a6a4ee5259e4b4d95ffbac2d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ab1b11a8a6a4ee5259e4b4d95ffbac2d6">unique_features</a> (<a class="el" href="classfeatures.html">features</a> &amp;fs, int max=-1)</td></tr>
+<tr class="memdesc:ab1b11a8a6a4ee5259e4b4d95ffbac2d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all non unique features from a feature group.  <a href="namespaceVW.html#ab1b11a8a6a4ee5259e4b4d95ffbac2d6">More...</a><br /></td></tr>
+<tr class="separator:ab1b11a8a6a4ee5259e4b4d95ffbac2d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad1ac5793640a4456828e70fe0b13984"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#aad1ac5793640a4456828e70fe0b13984">unique_sort_features</a> (uint64_t parse_mask, <a class="el" href="classVW_1_1example.html">VW::example</a> &amp;ae)</td></tr>
+<tr class="separator:aad1ac5793640a4456828e70fe0b13984"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6be13bb02c0e4db9a08c33ad8ded5099"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classVW_1_1version__struct.html">version_struct</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a6be13bb02c0e4db9a08c33ad8ded5099">VERSION</a> (VW_VERSION_MAJOR, VW_VERSION_MINOR, VW_VERSION_PATCH)</td></tr>
 <tr class="separator:a6be13bb02c0e4db9a08c33ad8ded5099"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a26c5125e2b6aa1902d5c7a3fccf888"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classVW_1_1version__struct.html">version_struct</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a1a26c5125e2b6aa1902d5c7a3fccf888">version</a> (VW_VERSION_MAJOR, VW_VERSION_MINOR, VW_VERSION_PATCH)</td></tr>
@@ -6230,6 +6235,75 @@ template&lt;typename ContainerT &gt; </div>
 
 </div>
 </div>
+<a id="ab1b11a8a6a4ee5259e4b4d95ffbac2d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1b11a8a6a4ee5259e4b4d95ffbac2d6">&#9670;&nbsp;</a></span>unique_features()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VW::unique_features </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfeatures.html">features</a> &amp;&#160;</td>
+          <td class="paramname"><em>fs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>max</em> = <code>-1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove all non unique features from a feature group. </p>
+<ul>
+<li>Uniqueness is determined by feature index.</li>
+<li>This function requires the feature group to be sorted. For sorting see <a class="el" href="classfeatures.html#ac1d0ea5e77002bab482dc38d62e7acdb">features::sort</a>.</li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fs</td><td>Feature group to remove non-unique features from </td></tr>
+    <tr><td class="paramname">max</td><td>The maximum number of unique features to keep. -1 to keep all unique features. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aad1ac5793640a4456828e70fe0b13984"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad1ac5793640a4456828e70fe0b13984">&#9670;&nbsp;</a></span>unique_sort_features()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VW::unique_sort_features </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>parse_mask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classVW_1_1example.html">VW::example</a> &amp;&#160;</td>
+          <td class="paramname"><em>ae</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a6f8abb22399a85bccc9daf13bab0a77f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6f8abb22399a85bccc9daf13bab0a77f">&#9670;&nbsp;</a></span>valid_ns()</h2>
 
@@ -6749,7 +6823,7 @@ template&lt;typename ContainerT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 13 2022 15:52:49 for Vowpal Wabbit by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue Dec 13 2022 16:33:37 for Vowpal Wabbit by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
