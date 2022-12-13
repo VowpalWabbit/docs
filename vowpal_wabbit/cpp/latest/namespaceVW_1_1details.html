@@ -134,6 +134,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1details_1_1namespace__builder.html">namespace_builder</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1details_1_1input__options.html">input_options</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1details_1_1scope__exit__caller.html">scope_exit_caller</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -248,6 +250,10 @@ Functions</h2></td></tr>
 <tr class="separator:acc2c2d001dfa86cf0f24f8d4f2aa66c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd161b5913f14b45ec04238896eae7e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#abd161b5913f14b45ec04238896eae7e7">output_and_account_no_label_example</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, <a class="el" href="classVW_1_1example.html">VW::example</a> &amp;ec)</td></tr>
 <tr class="separator:abd161b5913f14b45ec04238896eae7e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6e9def607764f309f26ce429d40744d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#ad6e9def607764f309f26ce429d40744d">merge_options_from_header_strings</a> (const std::vector&lt; std::string &gt; &amp;strings, bool skip_interactions, <a class="el" href="classVW_1_1config_1_1options__i.html">VW::config::options_i</a> &amp;options, bool &amp;is_ccb_input_model)</td></tr>
+<tr class="separator:ad6e9def607764f309f26ce429d40744d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5da29d80576357dda401d403928e0978"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="feature__group_8h.html#ab770bf81983f504bd535130eaacff536">extent_term</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#a5da29d80576357dda401d403928e0978">parse_full_name_interactions</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, <a class="el" href="namespaceVW.html#a909e5c86e4a38cb08ec00a0831dc105d">VW::string_view</a> str)</td></tr>
+<tr class="separator:a5da29d80576357dda401d403928e0978"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a580c44ca1c1098e4caf58ccd2b7cb3d2"><td class="memItemLeft" align="right" valign="top">std::tuple&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#a580c44ca1c1098e4caf58ccd2b7cb3d2">extract_ignored_feature</a> (<a class="el" href="namespaceVW.html#a909e5c86e4a38cb08ec00a0831dc105d">VW::string_view</a> namespace_feature)</td></tr>
 <tr class="memdesc:a580c44ca1c1098e4caf58ccd2b7cb3d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract namespace, feature name, and optional feature value from ignored feature string.  <a href="namespaceVW_1_1details.html#a580c44ca1c1098e4caf58ccd2b7cb3d2">More...</a><br /></td></tr>
 <tr class="separator:a580c44ca1c1098e4caf58ccd2b7cb3d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1190,6 +1196,46 @@ template&lt;std::size_t ArrayLength, std::size_t... IntegerSequence&gt; </div>
 
 </div>
 </div>
+<a id="ad6e9def607764f309f26ce429d40744d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6e9def607764f309f26ce429d40744d">&#9670;&nbsp;</a></span>merge_options_from_header_strings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VW::details::merge_options_from_header_strings </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>strings</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>skip_interactions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classVW_1_1config_1_1options__i.html">VW::config::options_i</a> &amp;&#160;</td>
+          <td class="paramname"><em>options</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>is_ccb_input_model</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a241b8e9128a2658f14a5690883ee6b1e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a241b8e9128a2658f14a5690883ee6b1e">&#9670;&nbsp;</a></span>open_socket()</h2>
 
@@ -1483,6 +1529,34 @@ template&lt;typename UnusedDataT &gt; </div>
           <td></td>
           <td class="paramtype"><a class="el" href="classVW_1_1io_1_1logger.html">VW::io::logger</a> &amp;&#160;</td>
           <td class="paramname"><em>logger</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5da29d80576357dda401d403928e0978"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5da29d80576357dda401d403928e0978">&#9670;&nbsp;</a></span>parse_full_name_interactions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="feature__group_8h.html#ab770bf81983f504bd535130eaacff536">extent_term</a>&gt; VW::details::parse_full_name_interactions </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;&#160;</td>
+          <td class="paramname"><em>all</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceVW.html#a909e5c86e4a38cb08ec00a0831dc105d">VW::string_view</a>&#160;</td>
+          <td class="paramname"><em>str</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3320,7 +3394,7 @@ template&lt;typename UnusedDataT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 13 2022 13:42:28 for Vowpal Wabbit by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue Dec 13 2022 14:58:32 for Vowpal Wabbit by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
