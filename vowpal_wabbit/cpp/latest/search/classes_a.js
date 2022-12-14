@@ -1,15 +1,15 @@
 var searchData=
 [
-  ['label_2306',['label',['../classCB_1_1label.html',1,'CB::label'],['../classCB__EVAL_1_1label.html',1,'CB_EVAL::label'],['../classVW_1_1slates_1_1label.html',1,'VW::slates::label']]],
-  ['label_5fparser_2307',['label_parser',['../classVW_1_1label__parser.html',1,'VW']]],
-  ['label_5fparser_5freuse_5fmem_2308',['label_parser_reuse_mem',['../classVW_1_1label__parser__reuse__mem.html',1,'VW']]],
-  ['labels_2309',['labels',['../classMULTILABEL_1_1labels.html',1,'MULTILABEL']]],
-  ['las_5freduction_5ffeatures_2310',['las_reduction_features',['../classVW_1_1large__action__space_1_1las__reduction__features.html',1,'VW::large_action_space']]],
-  ['learn_5fdata_2311',['learn_data',['../classVW_1_1LEARNER_1_1details_1_1learn__data.html',1,'VW::LEARNER::details']]],
-  ['learner_2312',['learner',['../classVW_1_1LEARNER_1_1learner.html',1,'VW::LEARNER']]],
-  ['learner_3c_20datat_2c_20examplet_20_3e_2313',['learner&lt; DataT, ExampleT &gt;',['../classVW_1_1LEARNER_1_1learner.html',1,'VW::LEARNER']]],
-  ['log_5fsink_2314',['log_sink',['../classVW_1_1io_1_1details_1_1log__sink.html',1,'VW::io::details']]],
-  ['logger_2315',['logger',['../classVW_1_1io_1_1logger.html',1,'VW::io']]],
-  ['logger_5fimpl_2316',['logger_impl',['../classVW_1_1io_1_1details_1_1logger__impl.html',1,'VW::io::details']]],
-  ['loss_5ffunction_2317',['loss_function',['../classVW_1_1loss__function.html',1,'VW']]]
+  ['label_2301',['label',['../classCB_1_1label.html',1,'CB::label'],['../classCB__EVAL_1_1label.html',1,'CB_EVAL::label'],['../classVW_1_1slates_1_1label.html',1,'VW::slates::label']]],
+  ['label_5fparser_2302',['label_parser',['../classVW_1_1label__parser.html',1,'VW']]],
+  ['label_5fparser_5freuse_5fmem_2303',['label_parser_reuse_mem',['../classVW_1_1label__parser__reuse__mem.html',1,'VW']]],
+  ['labels_2304',['labels',['../classMULTILABEL_1_1labels.html',1,'MULTILABEL']]],
+  ['las_5freduction_5ffeatures_2305',['las_reduction_features',['../classVW_1_1large__action__space_1_1las__reduction__features.html',1,'VW::large_action_space']]],
+  ['learn_5fdata_2306',['learn_data',['../classVW_1_1LEARNER_1_1details_1_1learn__data.html',1,'VW::LEARNER::details']]],
+  ['learner_2307',['learner',['../classVW_1_1LEARNER_1_1learner.html',1,'VW::LEARNER']]],
+  ['learner_3c_20datat_2c_20examplet_20_3e_2308',['learner&lt; DataT, ExampleT &gt;',['../classVW_1_1LEARNER_1_1learner.html',1,'VW::LEARNER']]],
+  ['log_5fsink_2309',['log_sink',['../classVW_1_1io_1_1details_1_1log__sink.html',1,'VW::io::details']]],
+  ['logger_2310',['logger',['../classVW_1_1io_1_1logger.html',1,'VW::io']]],
+  ['logger_5fimpl_2311',['logger_impl',['../classVW_1_1io_1_1details_1_1logger__impl.html',1,'VW::io::details']]],
+  ['loss_5ffunction_2312',['loss_function',['../classVW_1_1loss__function.html',1,'VW']]]
 ];
