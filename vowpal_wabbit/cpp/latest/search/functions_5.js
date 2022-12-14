@@ -42,7 +42,7 @@ var searchData=
   ['free_5fargs_2996',['free_args',['../namespaceVW.html#a015a165994e26522f321eef57a990ef5',1,'VW']]],
   ['free_5fflatten_5fexample_2997',['free_flatten_example',['../namespaceVW.html#a1fbeff6889d3fc9b4818fdfd7a1616a0',1,'VW::free_flatten_example()'],['../example_8h.html#a06a9aa48b83dd5fc83923470bf6bff8b',1,'free_flatten_example(VW::flat_example *fec):&#160;example.h']]],
   ['free_5fit_2998',['free_it',['../memory_8h.html#a8d7c2f582fe6b06111fd091cb0f5c6b1',1,'memory.h']]],
-  ['free_5fparser_2999',['free_parser',['../parser_8h.html#a1980573996bb6bfdbbcbcbd79dc390d7',1,'parser.h']]],
+  ['free_5fparser_2999',['free_parser',['../namespaceVW_1_1details.html#adf35d081b8a82f8746d21778a1086973',1,'VW::details']]],
   ['freegrad_5fsetup_3000',['freegrad_setup',['../namespaceVW_1_1reductions.html#a8af52e6f1c30a6a948441e74300f285c',1,'VW::reductions']]],
   ['from_5fstring_3001',['from_string',['../classVW_1_1version__struct.html#af3f04eb10b57a3fb52192082200f8a5e',1,'VW::version_struct']]],
   ['ftrl_5fsetup_3002',['ftrl_setup',['../namespaceVW_1_1reductions.html#ae09432e7fee9fa8e09d30fb0305c8f8a',1,'VW::reductions']]]

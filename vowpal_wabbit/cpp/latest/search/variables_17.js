@@ -13,8 +13,8 @@ var searchData=
   ['weighted_5funlabeled_5fexamples_4380',['weighted_unlabeled_examples',['../classVW_1_1shared__data.html#ae8fa931c36abedfe2933e6bebdf60eff',1,'VW::shared_data']]],
   ['weights_4381',['weights',['../classVW_1_1workspace.html#ace17d34fe89611ea454960f50c49feef',1,'VW::workspace::weights()'],['../classVW_1_1LEARNER_1_1learner.html#aa72097142563b721f185f8ae862ec29d',1,'VW::LEARNER::learner::weights()'],['../classGD_1_1multipredict__info.html#ac1993819a02763fa326ed38197ae2ee4',1,'GD::multipredict_info::weights()']]],
   ['wildcard_5fnamespace_4382',['WILDCARD_NAMESPACE',['../namespaceVW_1_1details.html#a2d340467d15ac135bad271355d1ba836',1,'VW::details']]],
-  ['words_4383',['words',['../classparser.html#ab5a5d63e69677436cba0278783f50578',1,'parser']]],
+  ['words_4383',['words',['../classVW_1_1parser.html#ab672d9f4f2038055a73070cc79f01191',1,'VW::parser']]],
   ['wpp_4384',['wpp',['../classVW_1_1workspace.html#a3510119148d38226ff3388c447dbe235',1,'VW::workspace']]],
   ['wrapping_4385',['wrapping',['../classVW_1_1column__definition.html#a1634f0a00993f3b35e5d34f77c10d37f',1,'VW::column_definition']]],
-  ['write_5fcache_4386',['write_cache',['../classparser.html#a5f48db95a95c057288a00642d4cf9f14',1,'parser']]]
+  ['write_5fcache_4386',['write_cache',['../classVW_1_1parser.html#a978e6c290166be8a8585efd2dc56df42',1,'VW::parser']]]
 ];

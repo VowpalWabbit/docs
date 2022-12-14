@@ -19,7 +19,7 @@ var searchData=
   ['hash_5fspace_5fcstr_887',['hash_space_cstr',['../namespaceVW.html#a5d24eaf9c61e5ca306b1ec467d42ef4c',1,'VW']]],
   ['hash_5fspace_5fstatic_888',['hash_space_static',['../namespaceVW.html#afe967439ca1759e49a48658ec213505c',1,'VW']]],
   ['hashall_889',['hashall',['../hashstring_8h.html#acd24d1944bb5828bd8706c00acaa63f5',1,'hashstring.h']]],
-  ['hasher_890',['hasher',['../classparser.html#a55a42ce8e7ad6637f28bc40d95356b21',1,'parser']]],
+  ['hasher_890',['hasher',['../classVW_1_1parser.html#a2200385a63f22603bf28c75cfdef0bcc',1,'VW::parser']]],
   ['hashstring_891',['hashstring',['../hashstring_8h.html#adcac7aeed404ab45135fcbdf0d10f2c5',1,'hashstring.h']]],
   ['hashstring_2eh_892',['hashstring.h',['../hashstring_8h.html',1,'']]],
   ['header_5ffn_893',['header_fn',['../classVW_1_1parsers_1_1csv_1_1csv__parser.html#a91d1b5ec03a858a42e381436249b2cab',1,'VW::parsers::csv::csv_parser']]],

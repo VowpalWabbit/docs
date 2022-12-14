@@ -5,7 +5,7 @@ var searchData=
   ['cache_2eh_203',['cache.h',['../cache_8h.html',1,'']]],
   ['cache_5ffiles_204',['cache_files',['../classVW_1_1details_1_1input__options.html#aba76fbf9fd4f335f499d2105d8e92bc0',1,'VW::details::input_options']]],
   ['cache_5flabel_205',['cache_label',['../classVW_1_1label__parser.html#a6477305f9d0a0778c7c31171e68ec011',1,'VW::label_parser']]],
-  ['cache_5ftemp_5fbuffer_5fobj_206',['cache_temp_buffer_obj',['../classparser.html#afcb7342c10de7be6519c2d2b07b2fad5',1,'parser']]],
+  ['cache_5ftemp_5fbuffer_5fobj_206',['cache_temp_buffer_obj',['../classVW_1_1parser.html#a814f010cb35a2d630f6f05b7aacdf235',1,'VW::parser']]],
   ['cached_5flearner_207',['cached_learner',['../classVW_1_1cached__learner.html#a77469cf8d15648287247e3d8eb623b3f',1,'VW::cached_learner::cached_learner(VW::LEARNER::base_learner *learner=nullptr)'],['../classVW_1_1cached__learner.html#a85d2d615319a53475b1ea20ab00b46b4',1,'VW::cached_learner::cached_learner(VW::workspace &amp;all, VW::config::options_i &amp;options, VW::LEARNER::base_learner *learner=nullptr)'],['../classVW_1_1cached__learner.html',1,'VW::cached_learner']]],
   ['cached_5flearner_2eh_208',['cached_learner.h',['../cached__learner_8h.html',1,'']]],
   ['call_209',['call',['../classVW_1_1details_1_1scope__exit__caller.html#a7b6e9b9f80f4910d743bfcaf32b53307',1,'VW::details::scope_exit_caller']]],
@@ -259,7 +259,7 @@ var searchData=
   ['current_5fmaster_457',['current_master',['../classVW_1_1details_1_1node__socks.html#a762d8027f627dd68ad817697865cc1d9',1,'VW::details::node_socks']]],
   ['current_5fpass_458',['current_pass',['../classVW_1_1workspace.html#a22cd393be59738091f2919b9bf4aae08',1,'VW::workspace']]],
   ['current_5fterm_459',['current_term',['../classVW_1_1details_1_1extent__interaction__expansion__stack__item.html#a3884bcde637d5e7da4465a1d3d797da9',1,'VW::details::extent_interaction_expansion_stack_item']]],
-  ['currentname_460',['currentname',['../classparser.html#a3ca43653ae1c9d497786cd80e1a0ca96',1,'parser']]],
+  ['currentname_460',['currentname',['../classVW_1_1parser.html#ae568d2b41b76f828822c483bd7eae186',1,'VW::parser']]],
   ['custom_5findex_5fmask_461',['custom_index_mask',['../classVW_1_1reductions_1_1cbify__adf__data.html#a5b7068159a3b76f22a53804ee1b9c508',1,'VW::reductions::cbify_adf_data']]],
   ['custom_5fparser_462',['custom_parser',['../classVW_1_1workspace.html#af05c8a6107d440f708276b3b05438098',1,'VW::workspace']]],
   ['custom_5fstreambuf_2eh_463',['custom_streambuf.h',['../custom__streambuf_8h.html',1,'']]]

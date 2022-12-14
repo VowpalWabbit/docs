@@ -4,7 +4,7 @@ var searchData=
   ['cache_3813',['cache',['../classVW_1_1details_1_1input__options.html#ab9a1c4c2507cbec2ad51402d44c0d354',1,'VW::details::input_options']]],
   ['cache_5ffiles_3814',['cache_files',['../classVW_1_1details_1_1input__options.html#aba76fbf9fd4f335f499d2105d8e92bc0',1,'VW::details::input_options']]],
   ['cache_5flabel_3815',['cache_label',['../classVW_1_1label__parser.html#a6477305f9d0a0778c7c31171e68ec011',1,'VW::label_parser']]],
-  ['cache_5ftemp_5fbuffer_5fobj_3816',['cache_temp_buffer_obj',['../classparser.html#afcb7342c10de7be6519c2d2b07b2fad5',1,'parser']]],
+  ['cache_5ftemp_5fbuffer_5fobj_3816',['cache_temp_buffer_obj',['../classVW_1_1parser.html#a814f010cb35a2d630f6f05b7aacdf235',1,'VW::parser']]],
   ['cats_3817',['CATS',['../classvw__dbg.html#a7773429b87968def9354796a4a2246a7',1,'vw_dbg']]],
   ['cats_5fpdf_3818',['CATS_PDF',['../classvw__dbg.html#a205303033435342ca63854ab9fc01c72',1,'vw_dbg']]],
   ['cats_5ftree_3819',['CATS_TREE',['../classvw__dbg.html#aa8a3b27d3bdb20b62ab3b491f11393f2',1,'vw_dbg']]],
@@ -67,7 +67,7 @@ var searchData=
   ['current_5fmaster_3876',['current_master',['../classVW_1_1details_1_1node__socks.html#a762d8027f627dd68ad817697865cc1d9',1,'VW::details::node_socks']]],
   ['current_5fpass_3877',['current_pass',['../classVW_1_1workspace.html#a22cd393be59738091f2919b9bf4aae08',1,'VW::workspace']]],
   ['current_5fterm_3878',['current_term',['../classVW_1_1details_1_1extent__interaction__expansion__stack__item.html#a3884bcde637d5e7da4465a1d3d797da9',1,'VW::details::extent_interaction_expansion_stack_item']]],
-  ['currentname_3879',['currentname',['../classparser.html#a3ca43653ae1c9d497786cd80e1a0ca96',1,'parser']]],
+  ['currentname_3879',['currentname',['../classVW_1_1parser.html#ae568d2b41b76f828822c483bd7eae186',1,'VW::parser']]],
   ['custom_5findex_5fmask_3880',['custom_index_mask',['../classVW_1_1reductions_1_1cbify__adf__data.html#a5b7068159a3b76f22a53804ee1b9c508',1,'VW::reductions::cbify_adf_data']]],
   ['custom_5fparser_3881',['custom_parser',['../classVW_1_1workspace.html#af05c8a6107d440f708276b3b05438098',1,'VW::workspace']]]
 ];

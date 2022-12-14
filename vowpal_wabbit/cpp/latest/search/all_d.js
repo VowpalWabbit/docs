@@ -55,7 +55,7 @@ var searchData=
   ['metric_5fsink_5fvisitor_1161',['metric_sink_visitor',['../classVW_1_1metric__sink__visitor.html',1,'VW']]],
   ['metric_5fsum_5fcost_1162',['metric_sum_cost',['../classVW_1_1cb__explore__adf_1_1cb__explore__metrics.html#a78d16a74d792bce64aa16b20f1a77aac',1,'VW::cb_explore_adf::cb_explore_metrics']]],
   ['metric_5fsum_5fcost_5ffirst_1163',['metric_sum_cost_first',['../classVW_1_1cb__explore__adf_1_1cb__explore__metrics.html#a2d6caf5ea8146ef00130ddc99ca84970',1,'VW::cb_explore_adf::cb_explore_metrics']]],
-  ['metrics_1164',['metrics',['../classparser.html#ae97c6006e9009ad07071c0bce5769c4e',1,'parser']]],
+  ['metrics_1164',['metrics',['../classVW_1_1parser.html#a0f8c2d8e7e50baf6cb8e1021bb117c36',1,'VW::parser']]],
   ['metrics_2eh_1165',['metrics.h',['../metrics_8h.html',1,'']]],
   ['metrics_5fsetup_1166',['metrics_setup',['../namespaceVW_1_1reductions.html#a0f827e52ff7cad9dbcdf54b47ba5e505',1,'VW::reductions']]],
   ['mf_2eh_1167',['mf.h',['../mf_8h.html',1,'']]],

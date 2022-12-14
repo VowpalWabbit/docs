@@ -14,7 +14,7 @@ var searchData=
   ['line_5fto_5fexamples_5fjson_3c_20false_20_3e_3199',['line_to_examples_json&lt; false &gt;',['../parse__example__json_8h.html#ab0040043038fb14acc10bbe11cf372a9',1,'parse_example_json.h']]],
   ['line_5fto_5fexamples_5fjson_3c_20true_20_3e_3200',['line_to_examples_json&lt; true &gt;',['../parse__example__json_8h.html#ab8caab1d2894e502a03683fb176974be',1,'parse_example_json.h']]],
   ['linenumber_3201',['LineNumber',['../classVW_1_1vw__exception.html#a8ba6b06af8143510242c443b00b257da',1,'VW::vw_exception']]],
-  ['lock_5fdone_3202',['lock_done',['../parser_8h.html#a0e83599c20ec7a560ea71a498f012aee',1,'parser.h']]],
+  ['lock_5fdone_3202',['lock_done',['../namespaceVW_1_1details.html#ac545c8ee20cb04c156ec1fabf6513745',1,'VW::details']]],
   ['log_5fmulti_5fsetup_3203',['log_multi_setup',['../namespaceVW_1_1reductions.html#a7cd37900a9767ba16dab1cf5dfa29093',1,'VW::reductions']]],
   ['log_5fsummary_3204',['log_summary',['../classVW_1_1io_1_1logger.html#ac047f70212d20d729cbc8f22848f5f64',1,'VW::io::logger']]],
   ['logger_5fimpl_3205',['logger_impl',['../classVW_1_1io_1_1details_1_1logger__impl.html#ad72c4a138cb59df97f6aee0a15e8697d',1,'VW::io::details::logger_impl']]],

@@ -8,7 +8,7 @@ var searchData=
   ['task_5fname_4317',['task_name',['../classSearch_1_1search__task.html#ad2c6420e44a300be33991333d9be5190',1,'Search::search_task::task_name()'],['../classSearch_1_1search.html#a4864e478d4bb7af53e04a84cec754e3b',1,'Search::search::task_name()']]],
   ['test_5flabel_4318',['test_label',['../classVW_1_1label__parser.html#a2d1f377b0a595c29bdde094c187f72e2',1,'VW::label_parser']]],
   ['test_5fonly_4319',['test_only',['../classVW_1_1example.html#abbd0dc1b9eabbb55521b1135aef400af',1,'VW::example']]],
-  ['text_5freader_4320',['text_reader',['../classparser.html#a5c9554a625788fb4b69cddfe1337b632',1,'parser']]],
+  ['text_5freader_4320',['text_reader',['../classVW_1_1parser.html#ac1be96e8f3f53040b238d9e1eb6d0cac',1,'VW::parser']]],
   ['text_5fregressor_5fname_4321',['text_regressor_name',['../classVW_1_1workspace.html#aa0641fbbfdbea79b75a96952742241be',1,'VW::workspace']]],
   ['the_5flabel_5fparser_4322',['the_label_parser',['../namespaceVW_1_1cb__continuous.html#a5992a27e761bb5f499635adc1ab76aa1',1,'VW::cb_continuous']]],
   ['timestamp_4323',['timestamp',['../classVW_1_1details_1_1decision__service__interaction.html#a77010c5dd8a94bb7b05e687a7058ca70',1,'VW::details::decision_service_interaction']]],

@@ -43,7 +43,7 @@ var searchData=
   ['boosting_2eh_187',['boosting.h',['../boosting_8h.html',1,'']]],
   ['boosting_5fsetup_188',['boosting_setup',['../namespaceVW_1_1reductions.html#ac3a780dad77c3f7357ab8d3e0b7e852d',1,'VW::reductions']]],
   ['bound_5fport_189',['bound_port',['../classVW_1_1spanning__tree.html#a567a7b5ff64a458b96de9e240dd9a0f5',1,'VW::spanning_tree']]],
-  ['bound_5fsock_190',['bound_sock',['../classparser.html#a42519589c5014a70b532ce88d3b243ef',1,'parser']]],
+  ['bound_5fsock_190',['bound_sock',['../classVW_1_1parser.html#a4645a44b214e26f6a9bc8c3b48f4953d',1,'VW::parser']]],
   ['bs_2eh_191',['bs.h',['../bs_8h.html',1,'']]],
   ['bs_5fsetup_192',['bs_setup',['../namespaceVW_1_1reductions.html#aec343840f6c833f89ad1a509ec32b774',1,'VW::reductions']]],
   ['buf_193',['buf',['../classVW_1_1reductions_1_1expreplay_1_1expreplay.html#a7bc6a2def21fa2f1eae01cbd2d517e1b',1,'VW::reductions::expreplay::expreplay']]],

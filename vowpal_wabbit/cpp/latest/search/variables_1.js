@@ -20,7 +20,7 @@ var searchData=
   ['all_5freduce_3788',['all_reduce',['../classVW_1_1workspace.html#ac3b856d5dd71d046c36b6015df319cf1',1,'VW::workspace']]],
   ['alpha_3789',['alpha',['../classVW_1_1confidence__sequence.html#a34a7481d42c15973d2ebf3a820f3713d',1,'VW::confidence_sequence']]],
   ['ar_5fbuf_5fsize_3790',['AR_BUF_SIZE',['../namespaceVW_1_1details.html#aecec2a774671ecd2cd33a72a6a7314cc',1,'VW::details']]],
-  ['audit_3791',['audit',['../classparser.html#abb101905005cba3160d0a78339c2d302',1,'parser::audit()'],['../classVW_1_1workspace.html#a0c81d2b8bc9b6855fea00384e3d47623',1,'VW::workspace::audit()']]],
+  ['audit_3791',['audit',['../classVW_1_1parser.html#a895e9ba504e949eb350fc534636a1fa6',1,'VW::parser::audit()'],['../classVW_1_1workspace.html#a0c81d2b8bc9b6855fea00384e3d47623',1,'VW::workspace::audit()']]],
   ['audit_5fbuffer_3792',['audit_buffer',['../classVW_1_1workspace.html#a0f3d90765dddb364f2867718a0d4b8b9',1,'VW::workspace']]],
   ['audit_5fwriter_3793',['audit_writer',['../classVW_1_1workspace.html#a8375d00e9752db8dc93155b582fa7994',1,'VW::workspace']]],
   ['auto_5fcondition_5ffeatures_3794',['AUTO_CONDITION_FEATURES',['../namespaceSearch.html#a64c3357ab3222147fb87242f94990116',1,'Search']]],

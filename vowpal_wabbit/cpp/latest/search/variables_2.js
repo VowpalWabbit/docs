@@ -11,7 +11,7 @@ var searchData=
   ['bfgs_3806',['bfgs',['../classVW_1_1workspace.html#aead7aace93337cea621fd55cec162a44',1,'VW::workspace']]],
   ['bias_3807',['BIAS',['../namespaceexploration.html#af5f381e6405bb2a903cb4cf53b52a21f',1,'exploration']]],
   ['binary_3808',['BINARY',['../classvw__dbg.html#a73dbe83fd8d2f44045784ec4dfbd18f1',1,'vw_dbg']]],
-  ['bound_5fsock_3809',['bound_sock',['../classparser.html#a42519589c5014a70b532ce88d3b243ef',1,'parser']]],
+  ['bound_5fsock_3809',['bound_sock',['../classVW_1_1parser.html#a4645a44b214e26f6a9bc8c3b48f4953d',1,'VW::parser']]],
   ['buf_3810',['buf',['../classVW_1_1reductions_1_1expreplay_1_1expreplay.html#a7bc6a2def21fa2f1eae01cbd2d517e1b',1,'VW::reductions::expreplay::expreplay']]],
   ['buffers_3811',['buffers',['../classVW_1_1all__reduce__sync.html#a68a5af320f1e627c58dcc0011da5014a',1,'VW::all_reduce_sync']]]
 ];

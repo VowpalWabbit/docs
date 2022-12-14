@@ -14,7 +14,7 @@ var searchData=
   ['test_5flabel_1900',['test_label',['../classVW_1_1label__parser.html#a2d1f377b0a595c29bdde094c187f72e2',1,'VW::label_parser']]],
   ['test_5fmulticlass_5flabel_1901',['test_multiclass_label',['../namespaceVW.html#af052c4d9c5eb2817367ee6e79048efb7',1,'VW']]],
   ['test_5fonly_1902',['test_only',['../classVW_1_1example.html#abbd0dc1b9eabbb55521b1135aef400af',1,'VW::example']]],
-  ['text_5freader_1903',['text_reader',['../classparser.html#a5c9554a625788fb4b69cddfe1337b632',1,'parser']]],
+  ['text_5freader_1903',['text_reader',['../classVW_1_1parser.html#ac1be96e8f3f53040b238d9e1eb6d0cac',1,'VW::parser']]],
   ['text_5fregressor_5fname_1904',['text_regressor_name',['../classVW_1_1workspace.html#aa0641fbbfdbea79b75a96952742241be',1,'VW::workspace']]],
   ['text_5futils_2eh_1905',['text_utils.h',['../core_2include_2vw_2core_2text__utils_8h.html',1,'(Global Namespace)'],['../common_2include_2vw_2common_2text__utils_8h.html',1,'(Global Namespace)']]],
   ['the_5flabel_5fparser_1906',['the_label_parser',['../namespaceVW_1_1cb__continuous.html#a5992a27e761bb5f499635adc1ab76aa1',1,'VW::cb_continuous']]],

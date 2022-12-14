@@ -5,7 +5,7 @@ var searchData=
   ['parse_5flabel_4169',['parse_label',['../classVW_1_1label__parser.html#a876f636e2f941dd9353f519d60a3ae81',1,'VW::label_parser']]],
   ['parse_5fmask_4170',['parse_mask',['../classVW_1_1workspace.html#a68d900442a96b235c874558fc5a2c47f',1,'VW::workspace']]],
   ['parse_5fthread_4171',['parse_thread',['../classVW_1_1workspace.html#a067da2035fd9915db780fc5d57d583aa',1,'VW::workspace']]],
-  ['parser_5fmemory_5fto_5freuse_4172',['parser_memory_to_reuse',['../classparser.html#a09703a07c41f669a8cdd3ecf29e986ae',1,'parser']]],
+  ['parser_5fmemory_5fto_5freuse_4172',['parser_memory_to_reuse',['../classVW_1_1parser.html#ab446aaa87ccd46a82d898e40071820eb',1,'VW::parser']]],
   ['partial_5fprediction_4173',['partial_prediction',['../classCB_1_1cb__class.html#ae34e712b9e45423e3b92bc9c340e8908',1,'CB::cb_class::partial_prediction()'],['../classVW_1_1cs__class.html#ad00f4a16e9fc92d323bb8278968fc64b',1,'VW::cs_class::partial_prediction()'],['../classVW_1_1example.html#ac8f005c8cfb3d272b8ce9ca2c02d0bed',1,'VW::example::partial_prediction()']]],
   ['partials_4174',['partials',['../classVW_1_1incremental__f__sum.html#a67729843fa93caa2dfb2a284621f5b54',1,'VW::incremental_f_sum']]],
   ['pass_5flength_4175',['pass_length',['../classVW_1_1workspace.html#a7376cc626e52beb9af96c340fe3e65f2',1,'VW::workspace']]],

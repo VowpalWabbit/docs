@@ -7,6 +7,6 @@ var searchData=
   ['dense_5fiterator_2267',['dense_iterator',['../classdense__iterator.html',1,'']]],
   ['dense_5fparameters_2268',['dense_parameters',['../classdense__parameters.html',1,'']]],
   ['dictionary_5finfo_2269',['dictionary_info',['../classdictionary__info.html',1,'']]],
-  ['dsjson_5fmetrics_2270',['dsjson_metrics',['../classdsjson__metrics.html',1,'']]],
+  ['dsjson_5fmetrics_2270',['dsjson_metrics',['../classVW_1_1details_1_1dsjson__metrics.html',1,'VW::details']]],
   ['duals_2271',['Duals',['../classVW_1_1distributionally__robust_1_1Duals.html',1,'VW::distributionally_robust']]]
 ];
