@@ -173,7 +173,7 @@ Functions</h2></td></tr>
 <tr class="separator:a740cb3a6a2150cbc78d1695becb2bb32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d2b04ee68f1f9e9dd05592db7a1a71d"><td class="memItemLeft" align="right" valign="top">example *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a3d2b04ee68f1f9e9dd05592db7a1a71d">VW::read_example</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, const std::string &amp;example_line)</td></tr>
 <tr class="separator:a3d2b04ee68f1f9e9dd05592db7a1a71d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f4629d13bf8b26ee185f7e7c925c27d"><td class="memItemLeft" align="right" valign="top">example *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a1f4629d13bf8b26ee185f7e7c925c27d">VW::import_example</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, const std::string &amp;label, primitive_feature_space *<a class="el" href="classfeatures.html">features</a>, size_t len)</td></tr>
+<tr class="memitem:a1f4629d13bf8b26ee185f7e7c925c27d"><td class="memItemLeft" align="right" valign="top">example *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a1f4629d13bf8b26ee185f7e7c925c27d">VW::import_example</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, const std::string &amp;label, primitive_feature_space *features, size_t len)</td></tr>
 <tr class="separator:a1f4629d13bf8b26ee185f7e7c925c27d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00fa2aad68560ea1bb20bb1fd6920554"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a00fa2aad68560ea1bb20bb1fd6920554">VW::VW_DEPRECATED</a> (&quot;This function is no longer needed and will be removed. Use new/make_unique/make_shared or stack based as &quot; &quot;appropriate.&quot;) example *alloc_examples(size_t count)</td></tr>
 <tr class="separator:a00fa2aad68560ea1bb20bb1fd6920554"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -217,9 +217,9 @@ Functions</h2></td></tr>
 <tr class="separator:afd10f758297dd00700e4f4ffe84d09bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb275ca6d152e49b12121cc095da8b71"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#acb275ca6d152e49b12121cc095da8b71">VW::get_confidence</a> (example *ec)</td></tr>
 <tr class="separator:acb275ca6d152e49b12121cc095da8b71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcff3f775b9849bd635c6ec247f0ee97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfeature.html">feature</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#afcff3f775b9849bd635c6ec247f0ee97">VW::get_features</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, example *ec, size_t &amp;feature_number)</td></tr>
+<tr class="memitem:afcff3f775b9849bd635c6ec247f0ee97"><td class="memItemLeft" align="right" valign="top">feature *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#afcff3f775b9849bd635c6ec247f0ee97">VW::get_features</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, example *ec, size_t &amp;feature_number)</td></tr>
 <tr class="separator:afcff3f775b9849bd635c6ec247f0ee97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ed9d821e6acd459339e226387f079ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a6ed9d821e6acd459339e226387f079ca">VW::return_features</a> (<a class="el" href="classfeature.html">feature</a> *f)</td></tr>
+<tr class="memitem:a6ed9d821e6acd459339e226387f079ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a6ed9d821e6acd459339e226387f079ca">VW::return_features</a> (feature *f)</td></tr>
 <tr class="separator:a6ed9d821e6acd459339e226387f079ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac032564d90d6734a4d6a0068d4d3c1fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ac032564d90d6734a4d6a0068d4d3c1fa">VW::add_constant_feature</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, example *ec)</td></tr>
 <tr class="separator:ac032564d90d6734a4d6a0068d4d3c1fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -231,7 +231,7 @@ Functions</h2></td></tr>
 <tr class="separator:ad42d5729d554e6c19232fd790e5725de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a704974907564239e1f6c01dbdbc3e442"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a704974907564239e1f6c01dbdbc3e442">VW::empty_example</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, example &amp;ec)</td></tr>
 <tr class="separator:a704974907564239e1f6c01dbdbc3e442"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9e00af55935c42d32d1c2c5c244150e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ab9e00af55935c42d32d1c2c5c244150e">VW::move_feature_namespace</a> (example *dst, example *src, <a class="el" href="feature__group_8h.html#a6bf681255e2fe98ef5dd75040110a62b">namespace_index</a> c)</td></tr>
+<tr class="memitem:ab9e00af55935c42d32d1c2c5c244150e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ab9e00af55935c42d32d1c2c5c244150e">VW::move_feature_namespace</a> (example *dst, example *src, namespace_index c)</td></tr>
 <tr class="separator:ab9e00af55935c42d32d1c2c5c244150e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af392a5d3678ff1b726f8a9f2720ac89e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#af392a5d3678ff1b726f8a9f2720ac89e">VW::copy_example_metadata</a> (example *, const example *)</td></tr>
 <tr class="separator:af392a5d3678ff1b726f8a9f2720ac89e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -241,9 +241,9 @@ Functions</h2></td></tr>
 <tr class="separator:a51f22667a1c11c2a523ea3fcf42b8d34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a189b2455ab65ce4c5f7d72a361bad75d"><td class="memItemLeft" align="right" valign="top">primitive_feature_space *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a189b2455ab65ce4c5f7d72a361bad75d">VW::export_example</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, example *e, size_t &amp;len)</td></tr>
 <tr class="separator:a189b2455ab65ce4c5f7d72a361bad75d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6462425c8ca745f710bad1c1d9b5e46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ad6462425c8ca745f710bad1c1d9b5e46">VW::release_feature_space</a> (primitive_feature_space *<a class="el" href="classfeatures.html">features</a>, size_t len)</td></tr>
+<tr class="memitem:ad6462425c8ca745f710bad1c1d9b5e46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ad6462425c8ca745f710bad1c1d9b5e46">VW::release_feature_space</a> (primitive_feature_space *features, size_t len)</td></tr>
 <tr class="separator:ad6462425c8ca745f710bad1c1d9b5e46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1d82f751f07678f73bd421236477163"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ad1d82f751f07678f73bd421236477163">VW::releaseFeatureSpace</a> (primitive_feature_space *<a class="el" href="classfeatures.html">features</a>, size_t len)</td></tr>
+<tr class="memitem:ad1d82f751f07678f73bd421236477163"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ad1d82f751f07678f73bd421236477163">VW::releaseFeatureSpace</a> (primitive_feature_space *features, size_t len)</td></tr>
 <tr class="separator:ad1d82f751f07678f73bd421236477163"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1359c23db3f407d9052b18004290fd9f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a1359c23db3f407d9052b18004290fd9f">VW::save_predictor</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, const std::string &amp;reg_name)</td></tr>
 <tr class="separator:a1359c23db3f407d9052b18004290fd9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -281,7 +281,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 14 2022 21:51:05 for Vowpal Wabbit by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Dec 15 2022 16:18:28 for Vowpal Wabbit by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

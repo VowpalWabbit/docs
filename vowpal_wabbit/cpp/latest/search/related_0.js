@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['base_5flearner_5fbuilder_4513',['base_learner_builder',['../classVW_1_1LEARNER_1_1learner.html#a8cba1fb0a3332c4f77aca81593a6ed64',1,'VW::LEARNER::learner']]]
+  ['features_4516',['features',['../classVW_1_1details_1_1audit__features__iterator.html#a9c5e18d347164444540bd64ea0b22f8f',1,'VW::details::audit_features_iterator::features()'],['../classVW_1_1details_1_1ns__extent__iterator.html#a9c5e18d347164444540bd64ea0b22f8f',1,'VW::details::ns_extent_iterator::features()'],['../classVW_1_1details_1_1features__iterator.html#a9c5e18d347164444540bd64ea0b22f8f',1,'VW::details::features_iterator::features()']]]
 ];

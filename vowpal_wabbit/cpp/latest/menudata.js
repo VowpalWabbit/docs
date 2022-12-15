@@ -115,7 +115,8 @@ var menudata={children:[
 {text:"Class Hierarchy",url:"hierarchy.html"},
 {text:"Class Members",url:"functions.html",children:[
 {text:"All",url:"functions.html",children:[
-{text:"_",url:"functions.html#index__5F"},
+{text:":",url:"functions.html#index_:"},
+{text:"_",url:"functions__.html#index__5F"},
 {text:"a",url:"functions_a.html#index_a"},
 {text:"b",url:"functions_b.html#index_b"},
 {text:"c",url:"functions_c.html#index_c"},
@@ -206,9 +207,9 @@ var menudata={children:[
 {text:"u",url:"functions_type.html#index_u"},
 {text:"v",url:"functions_type.html#index_v"}]},
 {text:"Related Functions",url:"functions_rela.html",children:[
+{text:":",url:"functions_rela.html#index_:"},
 {text:"b",url:"functions_rela.html#index_b"},
 {text:"c",url:"functions_rela.html#index_c"},
-{text:"f",url:"functions_rela.html#index_f"},
 {text:"o",url:"functions_rela.html#index_o"},
 {text:"r",url:"functions_rela.html#index_r"},
 {text:"s",url:"functions_rela.html#index_s"},
