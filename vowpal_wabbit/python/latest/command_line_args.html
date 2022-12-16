@@ -2622,6 +2622,38 @@ const thebe_selector_output = ".output, .cell_output"
     </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#reduction-eigen-memory-tree-options">
+     [Reduction] Eigen Memory Tree Options
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#emt">
+       emt
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#emt-tree">
+       emt_tree
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#emt-leaf">
+       emt_leaf
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#emt-scorer">
+       emt_scorer
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#emt-router">
+       emt_router
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#reduction-recall-tree-options">
      [Reduction] Recall Tree Options
     </a>
@@ -7020,6 +7052,56 @@ default bandwidth = unit_range / 2.0</p>
 </pre></div>
 </div>
 <p>Turn on dream operations at reward based update as well</p>
+</section>
+</section>
+<section id="reduction-eigen-memory-tree-options">
+<h3>[Reduction] Eigen Memory Tree Options<a class="headerlink" href="#reduction-eigen-memory-tree-options" title="Permalink to this headline">#</a></h3>
+<section id="emt">
+<h4>emt<a class="headerlink" href="#emt" title="Permalink to this headline">#</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">--</span><span class="n">emt</span>
+</pre></div>
+</div>
+<span class="option-tag">
+    <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
+</span><span class="option-tag">
+    <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
+</span><p>Make an eigen memory tree</p>
+</section>
+<section id="emt-tree">
+<h4>emt_tree<a class="headerlink" href="#emt-tree" title="Permalink to this headline">#</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">--</span><span class="n">emt_tree</span> <span class="o">&lt;</span><span class="n">uint</span><span class="o">&gt;</span> <span class="p">(</span><span class="n">default</span><span class="p">:</span> <span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+<span class="option-tag">
+    <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
+</span><p>Indicates the maximum number of memories the tree can have</p>
+</section>
+<section id="emt-leaf">
+<h4>emt_leaf<a class="headerlink" href="#emt-leaf" title="Permalink to this headline">#</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">--</span><span class="n">emt_leaf</span> <span class="o">&lt;</span><span class="n">uint</span><span class="o">&gt;</span> <span class="p">(</span><span class="n">default</span><span class="p">:</span> <span class="mi">100</span><span class="p">)</span>
+</pre></div>
+</div>
+<span class="option-tag">
+    <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
+</span><p>Indicates the maximum number of memories a leaf can have</p>
+</section>
+<section id="emt-scorer">
+<h4>emt_scorer<a class="headerlink" href="#emt-scorer" title="Permalink to this headline">#</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">--</span><span class="n">emt_scorer</span> <span class="o">&lt;</span><span class="n">distance</span><span class="o">|</span><span class="n">not_self_consistent_rank</span><span class="o">|</span><span class="n">random</span><span class="o">|</span><span class="n">self_consistent_rank</span><span class="o">&gt;</span> <span class="p">(</span><span class="n">default</span><span class="p">:</span> <span class="n">self_consistent_rank</span><span class="p">)</span>
+</pre></div>
+</div>
+<span class="option-tag">
+    <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
+</span><p>Indicates the type of scorer to use</p>
+</section>
+<section id="emt-router">
+<h4>emt_router<a class="headerlink" href="#emt-router" title="Permalink to this headline">#</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">--</span><span class="n">emt_router</span> <span class="o">&lt;</span><span class="n">eigen</span><span class="o">|</span><span class="n">random</span><span class="o">&gt;</span> <span class="p">(</span><span class="n">default</span><span class="p">:</span> <span class="n">eigen</span><span class="p">)</span>
+</pre></div>
+</div>
+<span class="option-tag">
+    <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
+</span><p>Indicates the type of router to use</p>
 </section>
 </section>
 <section id="reduction-recall-tree-options">

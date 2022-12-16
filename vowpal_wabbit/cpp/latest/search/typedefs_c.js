@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['options_5fdeleter_5ftype_4433',['options_deleter_type',['../global__data_8h.html#a6a9836137e68daba98511b4fd85f2654',1,'global_data.h']]],
-  ['output_5fexample_5fprediction_5ffn_4434',['output_example_prediction_fn',['../classVW_1_1LEARNER_1_1details_1_1finish__example__data.html#ac1d852f8612398bc72f464329d93d2ab',1,'VW::LEARNER::details::finish_example_data']]]
+  ['namespace_4515',['namespace',['../example_8h.html#a4f6722032e24f19f7cdd9fe91be760b5',1,'namespace():&#160;example.h'],['../example__predict_8h.html#a511da809d5f11cdcaf90a383b35685b8',1,'namespace():&#160;example_predict.h'],['../label__parser_8h.html#adbfda7d954a68cf733df8790f39af2c1',1,'namespace():&#160;label_parser.h'],['../reduction__features_8h.html#ac01c74f7d74babea4aba197195822e22',1,'namespace():&#160;reduction_features.h']]],
+  ['namespace_5findex_4516',['namespace_index',['../namespaceVW.html#abbbfd142fffaccd884cf1762f553eb50',1,'VW']]]
 ];

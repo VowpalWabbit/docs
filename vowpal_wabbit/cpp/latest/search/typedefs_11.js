@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['update_5fstats_5ffn_4449',['update_stats_fn',['../classVW_1_1LEARNER_1_1details_1_1finish__example__data.html#a8954dfadf5ae81e1d8a89dc25c85a057',1,'VW::LEARNER::details::finish_example_data']]]
+  ['trace_5fmessage_5ft_4532',['trace_message_t',['../error__reporting_8h.html#a98d6d6ac9c0371b98232d6c04df7ee99',1,'error_reporting.h']]]
 ];

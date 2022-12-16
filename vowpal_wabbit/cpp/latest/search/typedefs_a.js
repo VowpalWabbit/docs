@@ -1,8 +1,10 @@
 var searchData=
 [
-  ['merge_5ffn_4426',['merge_fn',['../namespaceVW_1_1LEARNER_1_1details.html#a8c4e6c3a1b949063e46041674c20d52c',1,'VW::LEARNER::details']]],
-  ['merge_5fwith_5fall_5ffn_4427',['merge_with_all_fn',['../namespaceVW_1_1LEARNER_1_1details.html#a5e534849b6456ab0755e64db6007fe80',1,'VW::LEARNER::details']]],
-  ['multi_5fex_4428',['multi_ex',['../namespaceVW.html#a1dd7b95816f635bc6a5906d2b566c856',1,'VW']]],
-  ['multi_5ffn_4429',['multi_fn',['../classVW_1_1LEARNER_1_1details_1_1learn__data.html#ab4c1b1b0a919152b801ea761103a487b',1,'VW::LEARNER::details::learn_data']]],
-  ['multi_5flearner_4430',['multi_learner',['../namespaceVW_1_1LEARNER.html#af1a8de5607718807546f15b47300a4a3',1,'VW::LEARNER']]]
+  ['label_5ffeature_5fmap_4503',['label_feature_map',['../namespaceVW_1_1details.html#ae68f4189f484f9bb71f03a49cdda406a',1,'VW::details']]],
+  ['learner_5fcleanup_5fexample_5ffunc_4504',['learner_cleanup_example_func',['../namespaceVW.html#a01e5e5ff9ba5d0b3c97ecf8c26c247c5',1,'VW']]],
+  ['learner_5foutput_5fexample_5fprediction_5ffunc_4505',['learner_output_example_prediction_func',['../namespaceVW.html#a156a57ea684a604e7d550b8d124f8024',1,'VW']]],
+  ['learner_5fprint_5fupdate_5ffunc_4506',['learner_print_update_func',['../namespaceVW.html#a28fb916ca0365c6377f7c9118ffe384a',1,'VW']]],
+  ['learner_5fupdate_5fstats_5ffunc_4507',['learner_update_stats_func',['../namespaceVW.html#ab5ddc974ddc109cae8578a6dd6463038',1,'VW']]],
+  ['logger_5flegacy_5foutput_5ffunc_5ft_4508',['logger_legacy_output_func_t',['../namespaceVW_1_1io.html#a52dbd68a7427bf3765f22254b4bfd664',1,'VW::io']]],
+  ['logger_5foutput_5ffunc_5ft_4509',['logger_output_func_t',['../namespaceVW_1_1io.html#ac6a4933fbf7b93c637cd2f301cbb900f',1,'VW::io']]]
 ];

@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['namespace_4431',['namespace',['../example_8h.html#a4f6722032e24f19f7cdd9fe91be760b5',1,'namespace():&#160;example.h'],['../example__predict_8h.html#a511da809d5f11cdcaf90a383b35685b8',1,'namespace():&#160;example_predict.h'],['../label__parser_8h.html#adbfda7d954a68cf733df8790f39af2c1',1,'namespace():&#160;label_parser.h'],['../reduction__features_8h.html#ac01c74f7d74babea4aba197195822e22',1,'namespace():&#160;reduction_features.h']]],
-  ['namespace_5findex_4432',['namespace_index',['../namespaceVW.html#abbbfd142fffaccd884cf1762f553eb50',1,'VW']]]
+  ['merge_5ffn_4510',['merge_fn',['../namespaceVW_1_1LEARNER_1_1details.html#a8c4e6c3a1b949063e46041674c20d52c',1,'VW::LEARNER::details']]],
+  ['merge_5fwith_5fall_5ffn_4511',['merge_with_all_fn',['../namespaceVW_1_1LEARNER_1_1details.html#a5e534849b6456ab0755e64db6007fe80',1,'VW::LEARNER::details']]],
+  ['multi_5fex_4512',['multi_ex',['../namespaceVW.html#a1dd7b95816f635bc6a5906d2b566c856',1,'VW']]],
+  ['multi_5ffn_4513',['multi_fn',['../classVW_1_1LEARNER_1_1details_1_1learn__data.html#ab4c1b1b0a919152b801ea761103a487b',1,'VW::LEARNER::details::learn_data']]],
+  ['multi_5flearner_4514',['multi_learner',['../namespaceVW_1_1LEARNER.html#af1a8de5607718807546f15b47300a4a3',1,'VW::LEARNER']]]
 ];
