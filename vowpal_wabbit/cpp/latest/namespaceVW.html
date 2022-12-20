@@ -664,14 +664,8 @@ Functions</h2></td></tr>
 <tr class="memitem:af99a2384371d58f1dfc12c9ec4ca4aa3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="future__compat_8h.html#a8b8610e8e86287f2b68275bf31acefb8">VW_WARNING_STATE_PUSH</a> <a class="el" href="future__compat_8h.html#a586b956b1f90b982afb6aa52a878f7cd">VW_WARNING_DISABLE_BADLY_FORMED_XML</a> std::unique_ptr&lt; <a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#af99a2384371d58f1dfc12c9ec4ca4aa3">initialize_experimental</a> (std::unique_ptr&lt; <a class="el" href="classVW_1_1config_1_1options__i.html">config::options_i</a> &gt; options, std::unique_ptr&lt; <a class="el" href="classVW_1_1io_1_1reader.html">VW::io::reader</a> &gt; model_override_reader=nullptr, <a class="el" href="namespaceVW.html#a58dd7d81c6029805118e521ef7696f80">driver_output_func_t</a> driver_output_func=nullptr, void *driver_output_func_context=nullptr, <a class="el" href="classVW_1_1io_1_1logger.html">VW::io::logger</a> *custom_logger=nullptr, std::unique_ptr&lt; <a class="el" href="classVW_1_1setup__base__i.html">VW::setup_base_i</a> &gt; setup_base=nullptr)</td></tr>
 <tr class="memdesc:af99a2384371d58f1dfc12c9ec4ca4aa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a workspace. This interface is currently experimental, but will replace the existing array of initialize functions.  <a href="namespaceVW.html#af99a2384371d58f1dfc12c9ec4ca4aa3">More...</a><br /></td></tr>
 <tr class="separator:af99a2384371d58f1dfc12c9ec4ca4aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa899e7b0b12a4f5b31ee9c88fcf79603"><td class="memItemLeft" align="right" valign="top"><a class="el" href="future__compat_8h.html#a2d17cd6c08058ed32e5fb9dc77629280">VW_WARNING_STATE_POP</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#aa899e7b0b12a4f5b31ee9c88fcf79603">cmd_string_replace_value</a> (std::stringstream *&amp;ss, std::string flag_to_replace, const std::string &amp;new_value)</td></tr>
-<tr class="separator:aa899e7b0b12a4f5b31ee9c88fcf79603"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54e76507ba333ccaf9eeb58a40fb712c"><td class="memItemLeft" align="right" valign="top">char **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a54e76507ba333ccaf9eeb58a40fb712c">to_argv</a> (std::string const &amp;s, int &amp;argc)</td></tr>
-<tr class="separator:a54e76507ba333ccaf9eeb58a40fb712c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa53638dfb7741e4f9934805338d539c"><td class="memItemLeft" align="right" valign="top">char **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#aaa53638dfb7741e4f9934805338d539c">to_argv_escaped</a> (std::string const &amp;s, int &amp;argc)</td></tr>
-<tr class="separator:aaa53638dfb7741e4f9934805338d539c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a015a165994e26522f321eef57a990ef5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a015a165994e26522f321eef57a990ef5">free_args</a> (int argc, char *argv[])</td></tr>
-<tr class="separator:a015a165994e26522f321eef57a990ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad23e487574bc6c19c2fdaad789005308"><td class="memItemLeft" align="right" valign="top"><a class="el" href="future__compat_8h.html#a2d17cd6c08058ed32e5fb9dc77629280">VW_WARNING_STATE_POP</a> <a class="el" href="namespaceVW.html#a00fa2aad68560ea1bb20bb1fd6920554">VW_DEPRECATED</a>(&quot;VW no longer supports manipulating a command line with cmd_string_replace_value. This function will be removed in &quot; &quot;<a class="el" href="namespaceVW.html#a1a158922cae2795baabe23f49f783f74">VW</a> 10.&quot;) void cmd_string_replace_value(std <a class="el" href="namespaceVW.html#a00fa2aad68560ea1bb20bb1fd6920554">VW_DEPRECATED</a>(&quot;This functionality is now implemented by <a class="el" href="namespaceVW.html#a634c99ddf9b3cc7c7f650def077a8d91">VW::split_command_line</a> which supports escaping, etc. This function will &quot; &quot;be removed in <a class="el" href="namespaceVW.html#a1a158922cae2795baabe23f49f783f74">VW</a> 10.&quot;) char **to_argv(std <a class="el" href="namespaceVW.html#a00fa2aad68560ea1bb20bb1fd6920554">VW_DEPRECATED</a>(&quot;This functionality is now implemented by <a class="el" href="namespaceVW.html#a634c99ddf9b3cc7c7f650def077a8d91">VW::split_command_line</a> which supports escaping, etc. This function will &quot; &quot;be removed in <a class="el" href="namespaceVW.html#a1a158922cae2795baabe23f49f783f74">VW</a> 10.&quot;) char **to_argv_escaped(std void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ad23e487574bc6c19c2fdaad789005308">free_args</a> (int argc, char *argv[])</td></tr>
+<tr class="separator:ad23e487574bc6c19c2fdaad789005308"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff759bc3da0e31055b70753e9e4560e0"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#aff759bc3da0e31055b70753e9e4560e0">are_features_compatible</a> (const <a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;vw1, const <a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;vw2)</td></tr>
 <tr class="separator:aff759bc3da0e31055b70753e9e4560e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad03bc6dcdc5b741c04f0648dc5096db4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="future__compat_8h.html#a8b8610e8e86287f2b68275bf31acefb8">VW_WARNING_STATE_PUSH</a> <a class="el" href="future__compat_8h.html#a586b956b1f90b982afb6aa52a878f7cd">VW_WARNING_DISABLE_BADLY_FORMED_XML</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ad03bc6dcdc5b741c04f0648dc5096db4">finish</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, bool delete_all=true)</td></tr>
@@ -683,8 +677,6 @@ Functions</h2></td></tr>
 <tr class="separator:a6238d1a7d724d7343ee052dc696eb7ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5de08c7ab3051ed4990832c4991cd6c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a5de08c7ab3051ed4990832c4991cd6c1">end_parser</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all)</td></tr>
 <tr class="separator:a5de08c7ab3051ed4990832c4991cd6c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6faac6a3b5c0a1c6243d143a5d896cd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ac6faac6a3b5c0a1c6243d143a5d896cd">is_ring_example</a> (const <a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, const <a class="el" href="classVW_1_1example.html">example</a> *ae)</td></tr>
-<tr class="separator:ac6faac6a3b5c0a1c6243d143a5d896cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a740cb3a6a2150cbc78d1695becb2bb32"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVW_1_1example.html">example</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a740cb3a6a2150cbc78d1695becb2bb32">read_example</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, const char *example_line)</td></tr>
 <tr class="separator:a740cb3a6a2150cbc78d1695becb2bb32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d2b04ee68f1f9e9dd05592db7a1a71d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVW_1_1example.html">example</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a3d2b04ee68f1f9e9dd05592db7a1a71d">read_example</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, const std::string &amp;example_line)</td></tr>
@@ -1659,40 +1651,6 @@ template&lt;typename RetType , typename InputType &gt; </div>
 
 </div>
 </div>
-<a id="aa899e7b0b12a4f5b31ee9c88fcf79603"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa899e7b0b12a4f5b31ee9c88fcf79603">&#9670;&nbsp;</a></span>cmd_string_replace_value()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="future__compat_8h.html#a2d17cd6c08058ed32e5fb9dc77629280">VW_WARNING_STATE_POP</a> void VW::cmd_string_replace_value </td>
-          <td>(</td>
-          <td class="paramtype">std::stringstream *&amp;&#160;</td>
-          <td class="paramname"><em>ss</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>flag_to_replace</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>new_value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a438340cadb70ab8eb3e461e3e8106b00"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a438340cadb70ab8eb3e461e3e8106b00">&#9670;&nbsp;</a></span>copy_example_data()</h2>
 
@@ -2417,14 +2375,14 @@ template&lt;size_t num_cols&gt; </div>
 
 </div>
 </div>
-<a id="a015a165994e26522f321eef57a990ef5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a015a165994e26522f321eef57a990ef5">&#9670;&nbsp;</a></span>free_args()</h2>
+<a id="ad23e487574bc6c19c2fdaad789005308"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad23e487574bc6c19c2fdaad789005308">&#9670;&nbsp;</a></span>free_args()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void VW::free_args </td>
+          <td class="memname"><a class="el" href="future__compat_8h.html#a2d17cd6c08058ed32e5fb9dc77629280">VW_WARNING_STATE_POP</a> <a class="el" href="namespaceVW.html#a00fa2aad68560ea1bb20bb1fd6920554">VW_DEPRECATED</a> ( &quot;VW no longer supports manipulating a command line with cmd_string_replace_value. This function will be removed in &quot; &quot;<a class="el" href="namespaceVW.html#a1a158922cae2795baabe23f49f783f74">VW</a> 10.&quot;) void cmd_string_replace_value(std <a class="el" href="namespaceVW.html#a00fa2aad68560ea1bb20bb1fd6920554">VW_DEPRECATED</a> ( &quot;This functionality is now implemented by <a class="el" href="namespaceVW.html#a634c99ddf9b3cc7c7f650def077a8d91">VW::split_command_line</a> which supports escaping, etc. This function will &quot; &quot;be removed in <a class="el" href="namespaceVW.html#a1a158922cae2795baabe23f49f783f74">VW</a> 10.&quot;) char** to_argv(std <a class="el" href="namespaceVW.html#a00fa2aad68560ea1bb20bb1fd6920554">VW_DEPRECATED</a> ( &quot;This functionality is now implemented by <a class="el" href="namespaceVW.html#a634c99ddf9b3cc7c7f650def077a8d91">VW::split_command_line</a> which supports escaping, etc. This function will &quot; &quot;be removed in <a class="el" href="namespaceVW.html#a1a158922cae2795baabe23f49f783f74">VW</a> 10.&quot;) char** to_argv_escaped(std void VW::free_args </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>argc</em>, </td>
@@ -3752,34 +3710,6 @@ template&lt;typename WeightsT &gt; </div>
           <td class="paramtype">const <a class="el" href="classVW_1_1example.html">VW::example</a> &amp;&#160;</td>
           <td class="paramname"><em>ec</em></td><td>)</td>
           <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac6faac6a3b5c0a1c6243d143a5d896cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6faac6a3b5c0a1c6243d143a5d896cd">&#9670;&nbsp;</a></span>is_ring_example()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool VW::is_ring_example </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;&#160;</td>
-          <td class="paramname"><em>all</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classVW_1_1example.html">example</a> *&#160;</td>
-          <td class="paramname"><em>ae</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -5786,62 +5716,6 @@ Example:</h4>
 
 </div>
 </div>
-<a id="a54e76507ba333ccaf9eeb58a40fb712c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54e76507ba333ccaf9eeb58a40fb712c">&#9670;&nbsp;</a></span>to_argv()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char** VW::to_argv </td>
-          <td>(</td>
-          <td class="paramtype">std::string const &amp;&#160;</td>
-          <td class="paramname"><em>s</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int &amp;&#160;</td>
-          <td class="paramname"><em>argc</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aaa53638dfb7741e4f9934805338d539c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa53638dfb7741e4f9934805338d539c">&#9670;&nbsp;</a></span>to_argv_escaped()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char** VW::to_argv_escaped </td>
-          <td>(</td>
-          <td class="paramtype">std::string const &amp;&#160;</td>
-          <td class="paramname"><em>s</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int &amp;&#160;</td>
-          <td class="paramname"><em>argc</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a8eb4eceaff6e66ed1dceef02ef291c14"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8eb4eceaff6e66ed1dceef02ef291c14">&#9670;&nbsp;</a></span>to_string() <span class="overload">[1/15]</span></h2>
 
@@ -6934,7 +6808,7 @@ template&lt;typename ContainerT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 19 2022 22:53:30 for Vowpal Wabbit by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue Dec 20 2022 01:24:51 for Vowpal Wabbit by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
