@@ -109,6 +109,7 @@ $(function() {
 <div class="textblock"><code>#include &quot;<a class="el" href="label__parser_8h.html">vw/core/label_parser.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="multi__ex_8h.html">vw/core/multi_ex.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="vw__fwd_8h.html">vw/core/vw_fwd.h</a>&quot;</code><br />
+<code>#include &lt;cfloat&gt;</code><br />
 <code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 </div><table class="memberdecls">
@@ -139,8 +140,6 @@ Typedefs</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a421dd28dfefe37a3130d7da6eb3bb68b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a421dd28dfefe37a3130d7da6eb3bb68b">VW::is_cs_example_header</a> (const <a class="el" href="classVW_1_1example.html">VW::example</a> &amp;ec)</td></tr>
 <tr class="separator:a421dd28dfefe37a3130d7da6eb3bb68b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d8988d274fdaa941f9c899ed1bfcf48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a2d8988d274fdaa941f9c899ed1bfcf48">VW::default_cs_label</a> (cs_label &amp;ld)</td></tr>
-<tr class="separator:a2d8988d274fdaa941f9c899ed1bfcf48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1d938370e0bb399064e9837ba849b90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#aa1d938370e0bb399064e9837ba849b90">VW::details::output_cs_example</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, const <a class="el" href="classVW_1_1example.html">VW::example</a> &amp;ec)</td></tr>
 <tr class="separator:aa1d938370e0bb399064e9837ba849b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50351e0983ee0b961c304fca18d5bd2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#a50351e0983ee0b961c304fca18d5bd2b">VW::details::output_cs_example</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, const <a class="el" href="classVW_1_1example.html">VW::example</a> &amp;ec, const cs_label &amp;cs_label, uint32_t multiclass_prediction)</td></tr>
@@ -152,8 +151,8 @@ Functions</h2></td></tr>
 <tr class="separator:a634209b3925af271398fdd96d9d5aa9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6daa91fc9cfb0f10ed1c69fb956cdc8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#aa6daa91fc9cfb0f10ed1c69fb956cdc8">VW::details::print_cs_update</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, bool is_test, const <a class="el" href="classVW_1_1example.html">VW::example</a> &amp;ec, const <a class="el" href="namespaceVW.html#a1dd7b95816f635bc6a5906d2b566c856">VW::multi_ex</a> *ec_seq, bool multilabel, uint32_t prediction)</td></tr>
 <tr class="separator:aa6daa91fc9cfb0f10ed1c69fb956cdc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0899a871faa6d3f578d751b080f0ef56"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceCOST__SENSITIVE.html#a0899a871faa6d3f578d751b080f0ef56">COST_SENSITIVE::VW_DEPRECATED</a> (&quot;COST_SENSITIVE::default_label renamed to VW::default_cs_label. COST_SENSITIVE::default_label will be removed in &quot; &quot;<a class="el" href="feature__group_8h.html#a4bb9cef28a3fbdad6149609fd1c67281">VW</a> 10.&quot;) inline void default_label(<a class="el" href="feature__group_8h.html#a4bb9cef28a3fbdad6149609fd1c67281">VW</a></td></tr>
-<tr class="separator:a0899a871faa6d3f578d751b080f0ef56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e96a26c92714583492d45415a1a3679"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceCOST__SENSITIVE.html#a5e96a26c92714583492d45415a1a3679">COST_SENSITIVE::VW_DEPRECATED</a> (&quot;COST_SENSITIVE::default_label has been moved to VW::cs_label::reset_to_default. COST_SENSITIVE::default_label &quot; &quot;will be removed in &quot; &quot;<a class="el" href="feature__group_8h.html#a4bb9cef28a3fbdad6149609fd1c67281">VW</a> 10.&quot;) inline void default_label(<a class="el" href="feature__group_8h.html#a4bb9cef28a3fbdad6149609fd1c67281">VW</a></td></tr>
+<tr class="separator:a5e96a26c92714583492d45415a1a3679"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44609cf90e11aa031c9ea9190314677f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceCOST__SENSITIVE.html#a44609cf90e11aa031c9ea9190314677f">COST_SENSITIVE::VW_DEPRECATED</a> (&quot;COST_SENSITIVE::ec_is_example_header renamed to VW::is_cs_example_header. COST_SENSITIVE::ec_is_example_header &quot; &quot;will be removed in <a class="el" href="feature__group_8h.html#a4bb9cef28a3fbdad6149609fd1c67281">VW</a> 10.&quot;) inline bool ec_is_example_header(<a class="el" href="feature__group_8h.html#a4bb9cef28a3fbdad6149609fd1c67281">VW</a></td></tr>
 <tr class="separator:a44609cf90e11aa031c9ea9190314677f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52c2072faa9756929ab291197685bc59"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1model__utils.html#a52c2072faa9756929ab291197685bc59">VW::model_utils::read_model_field</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;, cs_class &amp;)</td></tr>
@@ -173,7 +172,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 20 2022 17:47:33 for Vowpal Wabbit by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Tue Dec 20 2022 19:00:04 for Vowpal Wabbit by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
