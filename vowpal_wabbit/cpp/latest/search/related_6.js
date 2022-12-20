@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['copy_5fexample_5fdata_4617',['copy_example_data',['../classVW_1_1example.html#ab8dccc9e56964ad2c109dc486eae9654',1,'VW::example']]],
-  ['read_5fmodel_5ffield_4618',['read_model_field',['../classVW_1_1distributionally__robust_1_1Duals.html#aef15a5551ea1ee70742039e39639bd13',1,'VW::distributionally_robust::Duals::read_model_field()'],['../classVW_1_1distributionally__robust_1_1ChiSquared.html#acc05389e4f644b2b459bef1e91757f21',1,'VW::distributionally_robust::ChiSquared::read_model_field()']]],
-  ['setup_5fexample_4619',['setup_example',['../classVW_1_1example.html#ab3a78547e49a44a2e78a489cb05fc178',1,'VW::example']]],
-  ['write_5fmodel_5ffield_4620',['write_model_field',['../classVW_1_1distributionally__robust_1_1Duals.html#a7f7f2fb18a8de9898fffe9123bd897cd',1,'VW::distributionally_robust::Duals::write_model_field()'],['../classVW_1_1distributionally__robust_1_1ChiSquared.html#aa2184c490d11c7de3f8e4e5643a22c9e',1,'VW::distributionally_robust::ChiSquared::write_model_field()']]]
+  ['copy_5fexample_5fdata_4721',['copy_example_data',['../classVW_1_1example.html#ab8dccc9e56964ad2c109dc486eae9654',1,'VW::example']]],
+  ['read_5fmodel_5ffield_4722',['read_model_field',['../classVW_1_1details_1_1Duals.html#a6266b246eaaa70035eef0fc9e984fcae',1,'VW::details::Duals::read_model_field()'],['../classVW_1_1estimators_1_1ChiSquared.html#af0a5437e45dae27312f39f7e4776b562',1,'VW::estimators::ChiSquared::read_model_field()']]],
+  ['setup_5fexample_4723',['setup_example',['../classVW_1_1example.html#ab3a78547e49a44a2e78a489cb05fc178',1,'VW::example']]],
+  ['write_5fmodel_5ffield_4724',['write_model_field',['../classVW_1_1details_1_1Duals.html#a8ca8f4b0a75e456c7de8d3445eb39aba',1,'VW::details::Duals::write_model_field()'],['../classVW_1_1estimators_1_1ChiSquared.html#a50b9704db1bf8c751877159b4cd25d65',1,'VW::estimators::ChiSquared::write_model_field()']]]
 ];

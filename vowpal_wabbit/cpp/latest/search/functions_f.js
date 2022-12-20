@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['qfunc_3442',['qfunc',['../classVW_1_1distributionally__robust_1_1Duals.html#aa6aab306e6dbac314ee6ce849a1570fb',1,'VW::distributionally_robust::Duals']]],
-  ['qlb_3443',['qlb',['../classVW_1_1distributionally__robust_1_1ChiSquared.html#ae78f8bffb99b858cbcb5be5a550a5a17',1,'VW::distributionally_robust::ChiSquared']]]
+  ['qfunc_3514',['qfunc',['../classVW_1_1details_1_1Duals.html#a6a8722168795148c5010d2bd7327d208',1,'VW::details::Duals']]],
+  ['qlb_3515',['qlb',['../classVW_1_1estimators_1_1ChiSquared.html#ae6b69829efff3224af1a13e72d6f8450',1,'VW::estimators::ChiSquared']]]
 ];
