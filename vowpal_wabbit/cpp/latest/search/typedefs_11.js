@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['trace_5fmessage_5ft_4573',['trace_message_t',['../error__reporting_8h.html#a98d6d6ac9c0371b98232d6c04df7ee99',1,'error_reporting.h']]]
+  ['trace_5fmessage_5ft_4571',['trace_message_t',['../namespaceVW.html#a7065f02164e09fc0756cf9a00138d753',1,'VW']]]
 ];

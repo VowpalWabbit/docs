@@ -18,7 +18,7 @@ var searchData=
   ['total_5ffeatures_4450',['total_features',['../classVW_1_1shared__data.html#af11fff1aeea9b463e0ddfbc591bc79aa',1,'VW::shared_data']]],
   ['total_5fsum_5ffeat_5fsq_4451',['total_sum_feat_sq',['../classVW_1_1flat__example.html#a80f443ad7a865cfbaf6523f8115e4e9b',1,'VW::flat_example::total_sum_feat_sq()'],['../classVW_1_1example.html#adc14c7160b5f0ec970ee0f3e47e24667',1,'VW::example::total_sum_feat_sq()']]],
   ['total_5fweight_4452',['total_weight',['../classGD_1_1per__model__state.html#a8a5cba2c039a75b70d1641b57973d1d4',1,'GD::per_model_state']]],
-  ['trace_5fmessage_4453',['trace_message',['../classVW_1_1workspace.html#afc57cfdf63ebc3face3859e555b2ef7a',1,'VW::workspace::trace_message()'],['../classtrace__message__wrapper.html#aa6be33675dd695eb39219e96ed598ce8',1,'trace_message_wrapper::trace_message()']]],
+  ['trace_5fmessage_4453',['trace_message',['../classVW_1_1workspace.html#afc57cfdf63ebc3face3859e555b2ef7a',1,'VW::workspace::trace_message()'],['../classtrace__message__wrapper.html#a5aff016a47eecb39deac552f9be32188',1,'trace_message_wrapper::trace_message()']]],
   ['trace_5fmessage_5fwrapper_5fcontext_4454',['trace_message_wrapper_context',['../classVW_1_1workspace.html#add7cb8733a5a49d8fb6e3cd586d1c1af',1,'VW::workspace']]],
   ['track_5fstack_4455',['TRACK_STACK',['../classvw__dbg.html#ab3711aedc3d066303d8fabb08d72dc0e',1,'vw_dbg']]],
   ['training_4456',['training',['../classVW_1_1workspace.html#a8d6c128e3261a27fe3eea15b24ce4f11',1,'VW::workspace']]],

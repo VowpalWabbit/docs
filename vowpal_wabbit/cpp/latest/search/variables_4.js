@@ -6,7 +6,7 @@ var searchData=
   ['debug_5fcurrent_5freduction_5fdepth_3989',['debug_current_reduction_depth',['../classVW_1_1example__predict.html#a11a0832e9361a75a60987078ca6cb0cd',1,'VW::example_predict']]],
   ['decision_5fscores_3990',['decision_scores',['../classVW_1_1polyprediction.html#abf299c143eb5a5b0147e08dd0a7c82ad',1,'VW::polyprediction']]],
   ['decision_5fservice_5fjson_3991',['decision_service_json',['../classVW_1_1parser.html#ad87fe909f94e728222f00f7e907e8b74',1,'VW::parser']]],
-  ['default_5falpha_3992',['DEFAULT_ALPHA',['../distributionally__robust_8h.html#aa0c9ea16a765d63a4294d81a9225148c',1,'distributionally_robust.h']]],
+  ['default_5falpha_3992',['DEFAULT_ALPHA',['../namespaceVW_1_1details.html#ad98271cf6dea7188a3e9ad0fee72ca61',1,'VW::details']]],
   ['default_5fbits_3993',['default_bits',['../classVW_1_1workspace.html#a46b7fcede46b35c05fe6d09d25d90c5e',1,'VW::workspace']]],
   ['default_5ffloat_5fformatting_5fdecimal_5fprecision_3994',['DEFAULT_FLOAT_FORMATTING_DECIMAL_PRECISION',['../namespaceVW_1_1details.html#af6a7eb9ea758d6cfa6e5b4ce1c75b47b',1,'VW::details']]],
   ['default_5ffloat_5fprecision_3995',['DEFAULT_FLOAT_PRECISION',['../namespaceVW_1_1details.html#a74adc19583dd54f95c368c1ea04ff5f1',1,'VW::details']]],

@@ -49,7 +49,7 @@ var searchData=
   ['costs_3961',['costs',['../classCB_1_1label.html#a6e14bf93d493b2de26f8c4b85ffb2e9f',1,'CB::label::costs()'],['../classVW_1_1cs__label.html#a240a26bfb99dae42b9df45d8835b1054',1,'VW::cs_label::costs()'],['../classVW_1_1cb__continuous_1_1continuous__label.html#a5c8df23cff8932da98096a22ce4b2bf7',1,'VW::cb_continuous::continuous_label::costs()']]],
   ['count_3962',['count',['../classGD_1_1multipredict__info.html#a45e42ef1577c53c56eaad9fcd0d83cc0',1,'GD::multipredict_info']]],
   ['count_5fnon_5fzero_5fcost_3963',['count_non_zero_cost',['../classVW_1_1cb__explore__adf_1_1cb__explore__metrics.html#aeac5d14dfc7aa32b3cca61dc81e14142',1,'VW::cb_explore_adf::cb_explore_metrics']]],
-  ['cresseread_5fdefault_5ftau_3964',['CRESSEREAD_DEFAULT_TAU',['../distributionally__robust_8h.html#acd87134c90917382ddfdde2797d5fcf6',1,'distributionally_robust.h']]],
+  ['cresseread_5fdefault_5ftau_3964',['CRESSEREAD_DEFAULT_TAU',['../namespaceVW_1_1details.html#a970d953b99253ff2619155c9ce2e2820',1,'VW::details']]],
   ['cs_3965',['cs',['../classVW_1_1polylabel.html#a98474b27edee815f9ec7cf436f349f06',1,'VW::polylabel']]],
   ['cs_5factive_3966',['CS_ACTIVE',['../classvw__dbg.html#afa7cb5e196c5b8f7b6e31a36b84d0b78',1,'vw_dbg']]],
   ['cs_5fdefault_5falpha_3967',['CS_DEFAULT_ALPHA',['../namespaceVW_1_1details.html#ad9fa6845935bdb380fad98cb3b2cc37e',1,'VW::details']]],
