@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['help_5fformatter_2380',['help_formatter',['../classVW_1_1config_1_1help__formatter.html',1,'VW::config']]]
+  ['help_5fformatter_2361',['help_formatter',['../classVW_1_1config_1_1help__formatter.html',1,'VW::config']]]
 ];

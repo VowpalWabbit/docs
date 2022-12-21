@@ -103,16 +103,8 @@ $(function() {
 <div class="title">parse_example_json.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="json__utils_8h.html">json_utils.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="parse__slates__example__json_8h.html">parse_slates_example_json.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="future__compat_8h.html">vw/common/future_compat.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="label__parser_8h.html">vw/core/label_parser.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="parser_8h.html">vw/core/parser.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="v__array_8h.html">vw/core/v_array.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="logger_8h.html">vw/io/logger.h</a>&quot;</code><br />
-<code>#include &lt;set&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
-<code>#include &lt;unordered_map&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="future__compat_8h.html">vw/common/future_compat.h</a>&quot;</code><br />
+<code>#include &quot;vw/json_parser/parse_example_json.h&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -127,15 +119,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a22ffb723e5feb4904bfb198a7a4668e8"><td class="memTemplParams" colspan="2">template&lt;bool audit&gt; </td></tr>
 <tr class="memitem:a22ffb723e5feb4904bfb198a7a4668e8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a22ffb723e5feb4904bfb198a7a4668e8">VW::read_line_json_s</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, <a class="el" href="namespaceVW.html#a1dd7b95816f635bc6a5906d2b566c856">VW::multi_ex</a> &amp;examples, char *line, size_t length, example_factory_t example_factory, void *ex_factory_context, std::unordered_map&lt; uint64_t, <a class="el" href="classVW_1_1example.html">VW::example</a> * &gt; *dedup_examples=nullptr)</td></tr>
 <tr class="separator:a22ffb723e5feb4904bfb198a7a4668e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a361da92cfd1138d0753cb678a89cb640"><td class="memTemplParams" colspan="2">template&lt;bool audit&gt; </td></tr>
-<tr class="memitem:a361da92cfd1138d0753cb678a89cb640"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a361da92cfd1138d0753cb678a89cb640">VW::read_line_decision_service_json</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, <a class="el" href="namespaceVW.html#a1dd7b95816f635bc6a5906d2b566c856">VW::multi_ex</a> &amp;examples, char *line, size_t length, bool copy_line, example_factory_t example_factory, void *ex_factory_context, <a class="el" href="classVW_1_1details_1_1decision__service__interaction.html">VW::details::decision_service_interaction</a> *data)</td></tr>
-<tr class="separator:a361da92cfd1138d0753cb678a89cb640"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af91ae01430594539d607be1bbc9dea34"><td class="memTemplParams" colspan="2">template&lt;bool audit&gt; </td></tr>
+<tr class="memitem:af91ae01430594539d607be1bbc9dea34"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW.html#af91ae01430594539d607be1bbc9dea34">VW::read_line_decision_service_json</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, <a class="el" href="namespaceVW.html#a1dd7b95816f635bc6a5906d2b566c856">VW::multi_ex</a> &amp;examples, char *line, size_t length, bool copy_line, example_factory_t example_factory, void *ex_factory_context, VW::parsers::json::decision_service_interaction *data)</td></tr>
+<tr class="separator:af91ae01430594539d607be1bbc9dea34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04173309c6c70b7f45d4bd35c3984bf4"><td class="memTemplParams" colspan="2">template&lt;bool audit&gt; </td></tr>
 <tr class="memitem:a04173309c6c70b7f45d4bd35c3984bf4"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="parse__example__json_8h.html#a04173309c6c70b7f45d4bd35c3984bf4">parse_line_json</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> *all, char *line, size_t num_chars, <a class="el" href="namespaceVW.html#a1dd7b95816f635bc6a5906d2b566c856">VW::multi_ex</a> &amp;examples)</td></tr>
 <tr class="separator:a04173309c6c70b7f45d4bd35c3984bf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7686863f25dc65b830728e35775c19aa"><td class="memTemplParams" colspan="2">template&lt;bool audit&gt; </td></tr>
-<tr class="memitem:a7686863f25dc65b830728e35775c19aa"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="parse__example__json_8h.html#a7686863f25dc65b830728e35775c19aa">line_to_examples_json</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> *all, <a class="el" href="namespaceVW.html#a909e5c86e4a38cb08ec00a0831dc105d">VW::string_view</a>, <a class="el" href="namespaceVW.html#a1dd7b95816f635bc6a5906d2b566c856">VW::multi_ex</a> &amp;examples)</td></tr>
-<tr class="separator:a7686863f25dc65b830728e35775c19aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a6c42386773dc237193befa26e6db7a"><td class="memTemplParams" colspan="2">template&lt;bool audit&gt; </td></tr>
+<tr class="memitem:a7a6c42386773dc237193befa26e6db7a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="parse__example__json_8h.html#a7a6c42386773dc237193befa26e6db7a">line_to_examples_json</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> *all, <a class="el" href="namespaceVW.html#a909e5c86e4a38cb08ec00a0831dc105d">VW::string_view</a> sv, <a class="el" href="namespaceVW.html#a1dd7b95816f635bc6a5906d2b566c856">VW::multi_ex</a> &amp;examples)</td></tr>
+<tr class="separator:a7a6c42386773dc237193befa26e6db7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad799de1f3cc4bbfa143d583006fb6500"><td class="memTemplParams" colspan="2">template&lt;bool audit&gt; </td></tr>
 <tr class="memitem:ad799de1f3cc4bbfa143d583006fb6500"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="parse__example__json_8h.html#ad799de1f3cc4bbfa143d583006fb6500">read_features_json</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> *all, <a class="el" href="classio__buf.html">io_buf</a> &amp;buf, <a class="el" href="namespaceVW.html#a1dd7b95816f635bc6a5906d2b566c856">VW::multi_ex</a> &amp;examples)</td></tr>
 <tr class="separator:ad799de1f3cc4bbfa143d583006fb6500"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,8 +145,8 @@ Functions</h2></td></tr>
 <tr class="separator:a5d395383c396dece1543369f276a238d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a7686863f25dc65b830728e35775c19aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7686863f25dc65b830728e35775c19aa">&#9670;&nbsp;</a></span>line_to_examples_json()</h2>
+<a id="a7a6c42386773dc237193befa26e6db7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a6c42386773dc237193befa26e6db7a">&#9670;&nbsp;</a></span>line_to_examples_json()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -171,7 +163,7 @@ template&lt;bool audit&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="namespaceVW.html#a909e5c86e4a38cb08ec00a0831dc105d">VW::string_view</a>&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>sv</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -196,7 +188,7 @@ template&lt;bool audit&gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">template void <a class="el" href="parse__example__json_8h.html#a7686863f25dc65b830728e35775c19aa">line_to_examples_json</a>&lt; false &gt; </td>
+          <td class="memname">template void <a class="el" href="parse__example__json_8h.html#a7a6c42386773dc237193befa26e6db7a">line_to_examples_json</a>&lt; false &gt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classVW_1_1workspace.html">VW::workspace</a> *&#160;</td>
           <td class="paramname"><em>all</em>, </td>
@@ -230,7 +222,7 @@ template&lt;bool audit&gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">template void <a class="el" href="parse__example__json_8h.html#a7686863f25dc65b830728e35775c19aa">line_to_examples_json</a>&lt; true &gt; </td>
+          <td class="memname">template void <a class="el" href="parse__example__json_8h.html#a7a6c42386773dc237193befa26e6db7a">line_to_examples_json</a>&lt; true &gt; </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classVW_1_1workspace.html">VW::workspace</a> *&#160;</td>
           <td class="paramname"><em>all</em>, </td>
@@ -486,7 +478,7 @@ template&lt;bool audit&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 21 2022 21:12:55 for Vowpal Wabbit by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Dec 21 2022 21:55:26 for Vowpal Wabbit by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

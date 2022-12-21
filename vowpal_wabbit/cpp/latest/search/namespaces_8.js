@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['multiclass_2524',['MULTICLASS',['../namespaceMULTICLASS.html',1,'']]],
-  ['multiclasstask_2525',['MulticlassTask',['../namespaceMulticlassTask.html',1,'']]],
-  ['multilabel_2526',['MULTILABEL',['../namespaceMULTILABEL.html',1,'']]],
-  ['mwt_2527',['MWT',['../namespaceMWT.html',1,'']]]
+  ['multiclass_2504',['MULTICLASS',['../namespaceMULTICLASS.html',1,'']]],
+  ['multiclasstask_2505',['MulticlassTask',['../namespaceMulticlassTask.html',1,'']]],
+  ['multilabel_2506',['MULTILABEL',['../namespaceMULTILABEL.html',1,'']]],
+  ['mwt_2507',['MWT',['../namespaceMWT.html',1,'']]]
 ];

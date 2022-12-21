@@ -1,15 +1,17 @@
 var searchData=
 [
-  ['label_5fdictionary_2eh_2684',['label_dictionary.h',['../label__dictionary_8h.html',1,'']]],
-  ['label_5fparser_2eh_2685',['label_parser.h',['../label__parser_8h.html',1,'']]],
-  ['label_5ftype_2eh_2686',['label_type.h',['../label__type_8h.html',1,'']]],
-  ['large_5faction_5fspace_5freduction_5ffeatures_2eh_2687',['large_action_space_reduction_features.h',['../large__action__space__reduction__features_8h.html',1,'']]],
-  ['lda_5fcore_2eh_2688',['lda_core.h',['../lda__core_8h.html',1,'']]],
-  ['learner_2eh_2689',['learner.h',['../learner_8h.html',1,'']]],
-  ['learner_5ffwd_2eh_2690',['learner_fwd.h',['../learner__fwd_8h.html',1,'']]],
-  ['log_5fmulti_2eh_2691',['log_multi.h',['../log__multi_8h.html',1,'']]],
-  ['logger_2eh_2692',['logger.h',['../logger_8h.html',1,'']]],
-  ['loss_5ffunctions_2eh_2693',['loss_functions.h',['../loss__functions_8h.html',1,'']]],
-  ['lrq_2eh_2694',['lrq.h',['../lrq_8h.html',1,'']]],
-  ['lrqfa_2eh_2695',['lrqfa.h',['../lrqfa_8h.html',1,'']]]
+  ['marginal_2eh_2675',['marginal.h',['../marginal_8h.html',1,'']]],
+  ['memory_2eh_2676',['memory.h',['../memory_8h.html',1,'']]],
+  ['memory_5ftree_2eh_2677',['memory_tree.h',['../memory__tree_8h.html',1,'']]],
+  ['merge_2eh_2678',['merge.h',['../merge_8h.html',1,'']]],
+  ['metric_5fsink_2eh_2679',['metric_sink.h',['../metric__sink_8h.html',1,'']]],
+  ['metrics_2eh_2680',['metrics.h',['../metrics_8h.html',1,'']]],
+  ['mf_2eh_2681',['mf.h',['../mf_8h.html',1,'']]],
+  ['model_5futils_2eh_2682',['model_utils.h',['../model__utils_8h.html',1,'']]],
+  ['multi_5fex_2eh_2683',['multi_ex.h',['../multi__ex_8h.html',1,'']]],
+  ['multi_5fmodel_5futils_2eh_2684',['multi_model_utils.h',['../multi__model__utils_8h.html',1,'']]],
+  ['multiclass_2eh_2685',['multiclass.h',['../multiclass_8h.html',1,'']]],
+  ['multilabel_2eh_2686',['multilabel.h',['../multilabel_8h.html',1,'']]],
+  ['multilabel_5foaa_2eh_2687',['multilabel_oaa.h',['../multilabel__oaa_8h.html',1,'']]],
+  ['mwt_2eh_2688',['mwt.h',['../mwt_8h.html',1,'']]]
 ];
