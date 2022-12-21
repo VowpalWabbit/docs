@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['workspace_2508',['workspace',['../classVW_1_1workspace.html',1,'VW']]],
-  ['writer_2509',['writer',['../classVW_1_1io_1_1writer.html',1,'VW::io']]],
-  ['writer_5fstream_5fbuf_2510',['writer_stream_buf',['../classVW_1_1io_1_1writer__stream__buf.html',1,'VW::io']]]
+  ['workspace_2509',['workspace',['../classVW_1_1workspace.html',1,'VW']]],
+  ['writer_2510',['writer',['../classVW_1_1io_1_1writer.html',1,'VW::io']]],
+  ['writer_5fstream_5fbuf_2511',['writer_stream_buf',['../classVW_1_1io_1_1writer__stream__buf.html',1,'VW::io']]]
 ];
