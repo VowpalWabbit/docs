@@ -1,14 +1,14 @@
 var searchData=
 [
-  ['parameters_2440',['parameters',['../classparameters.html',1,'']]],
-  ['parser_2441',['parser',['../classVW_1_1parser.html',1,'VW::parser'],['../classVW_1_1parsers_1_1flatbuffer_1_1parser.html',1,'VW::parsers::flatbuffer::parser']]],
-  ['pdf_5fsegment_2442',['pdf_segment',['../classVW_1_1continuous__actions_1_1pdf__segment.html',1,'VW::continuous_actions']]],
-  ['per_5fmodel_5fstate_2443',['per_model_state',['../classGD_1_1per__model__state.html',1,'GD']]],
-  ['pmf_5fto_5fpdf_5freduction_2444',['pmf_to_pdf_reduction',['../classVW_1_1reductions_1_1pmf__to__pdf__reduction.html',1,'VW::reductions']]],
-  ['polylabel_2445',['polylabel',['../classVW_1_1polylabel.html',1,'VW']]],
-  ['polyprediction_2446',['polyprediction',['../classVW_1_1polyprediction.html',1,'VW']]],
-  ['pre_5fsave_5fload_5fdata_2447',['pre_save_load_data',['../classVW_1_1LEARNER_1_1details_1_1pre__save__load__data.html',1,'VW::LEARNER::details']]],
-  ['predictor_2448',['predictor',['../classSearch_1_1predictor.html',1,'Search']]],
-  ['primitive_5ffeature_5fspace_2449',['primitive_feature_space',['../classVW_1_1primitive__feature__space.html',1,'VW']]],
-  ['probability_5fdensity_5ffunction_5fvalue_2450',['probability_density_function_value',['../classVW_1_1continuous__actions_1_1probability__density__function__value.html',1,'VW::continuous_actions']]]
+  ['parameters_2437',['parameters',['../classparameters.html',1,'']]],
+  ['parser_2438',['parser',['../classVW_1_1parser.html',1,'VW::parser'],['../classVW_1_1parsers_1_1flatbuffer_1_1parser.html',1,'VW::parsers::flatbuffer::parser']]],
+  ['pdf_5fsegment_2439',['pdf_segment',['../classVW_1_1continuous__actions_1_1pdf__segment.html',1,'VW::continuous_actions']]],
+  ['per_5fmodel_5fstate_2440',['per_model_state',['../classGD_1_1per__model__state.html',1,'GD']]],
+  ['pmf_5fto_5fpdf_5freduction_2441',['pmf_to_pdf_reduction',['../classVW_1_1reductions_1_1pmf__to__pdf__reduction.html',1,'VW::reductions']]],
+  ['polylabel_2442',['polylabel',['../classVW_1_1polylabel.html',1,'VW']]],
+  ['polyprediction_2443',['polyprediction',['../classVW_1_1polyprediction.html',1,'VW']]],
+  ['pre_5fsave_5fload_5fdata_2444',['pre_save_load_data',['../classVW_1_1LEARNER_1_1details_1_1pre__save__load__data.html',1,'VW::LEARNER::details']]],
+  ['predictor_2445',['predictor',['../classSearch_1_1predictor.html',1,'Search']]],
+  ['primitive_5ffeature_5fspace_2446',['primitive_feature_space',['../classVW_1_1primitive__feature__space.html',1,'VW']]],
+  ['probability_5fdensity_5ffunction_5fvalue_2447',['probability_density_function_value',['../classVW_1_1continuous__actions_1_1probability__density__function__value.html',1,'VW::continuous_actions']]]
 ];
