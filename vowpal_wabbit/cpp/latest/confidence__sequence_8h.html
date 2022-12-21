@@ -99,16 +99,16 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">confidence_sequence.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="io__buf_8h.html">vw/core/io_buf.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="metric__sink_8h.html">vw/core/metric_sink.h</a>&quot;</code><br />
-<code>#include &lt;algorithm&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="vw__fwd_8h.html">vw/core/vw_fwd.h</a>&quot;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -128,13 +128,6 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespaceVW_1_1model__utils"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1model__utils.html">VW::model_utils</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a58f485f9da6a45af06142aeeb575457b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="confidence__sequence_8h.html#a58f485f9da6a45af06142aeeb575457b">__STDCPP_MATH_SPEC_FUNCS__</a>&#160;&#160;&#160;201003L</td></tr>
-<tr class="separator:a58f485f9da6a45af06142aeeb575457b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7e835950c2d3375f6e599785723b3c7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="confidence__sequence_8h.html#aa7e835950c2d3375f6e599785723b3c7">__STDCPP_WANT_MATH_SPEC_FUNCS__</a>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:aa7e835950c2d3375f6e599785723b3c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a94dc230416bf9b71ceb14e8f405efd72"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1model__utils.html#a94dc230416bf9b71ceb14e8f405efd72">VW::model_utils::read_model_field</a> (<a class="el" href="classio__buf.html">io_buf</a> &amp;, <a class="el" href="classVW_1_1details_1_1incremental__f__sum.html">VW::details::incremental_f_sum</a> &amp;)</td></tr>
@@ -148,65 +141,13 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:aed5be319b0c3ecaca900a58789f5b3a9"><td class="memItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="confidence__sequence_8h.html#aed5be319b0c3ecaca900a58789f5b3a9">CS_DEFAULT_ALPHA</a> = 0.05f</td></tr>
-<tr class="separator:aed5be319b0c3ecaca900a58789f5b3a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9fa6845935bdb380fad98cb3b2cc37e"><td class="memItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#ad9fa6845935bdb380fad98cb3b2cc37e">VW::details::CS_DEFAULT_ALPHA</a> = 0.05f</td></tr>
+<tr class="separator:ad9fa6845935bdb380fad98cb3b2cc37e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a58f485f9da6a45af06142aeeb575457b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58f485f9da6a45af06142aeeb575457b">&#9670;&nbsp;</a></span>__STDCPP_MATH_SPEC_FUNCS__</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define __STDCPP_MATH_SPEC_FUNCS__&#160;&#160;&#160;201003L</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa7e835950c2d3375f6e599785723b3c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7e835950c2d3375f6e599785723b3c7">&#9670;&nbsp;</a></span>__STDCPP_WANT_MATH_SPEC_FUNCS__</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define __STDCPP_WANT_MATH_SPEC_FUNCS__&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="aed5be319b0c3ecaca900a58789f5b3a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed5be319b0c3ecaca900a58789f5b3a9">&#9670;&nbsp;</a></span>CS_DEFAULT_ALPHA</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr float CS_DEFAULT_ALPHA = 0.05f</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 21 2022 16:15:41 for Vowpal Wabbit by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Wed Dec 21 2022 17:01:36 for Vowpal Wabbit by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
