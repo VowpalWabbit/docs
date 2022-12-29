@@ -79,7 +79,7 @@ var searchData=
   ['error_5fdata_2eh_666',['error_data.h',['../error__data_8h.html',1,'']]],
   ['error_5flevel_667',['ERROR_LEVEL',['../namespaceVW_1_1io.html#aaf6d3dfe9781b53c9fbc2908a8f0641ca0e9c70bbf331f239047470632224f90f',1,'VW::io']]],
   ['error_5freporting_2eh_668',['error_reporting.h',['../error__reporting_8h.html',1,'']]],
-  ['escaped_5ftokenize_669',['escaped_tokenize',['../parse__primitives_8h.html#ae5600a8846c21114564ebd52b6c5a953',1,'parse_primitives.h']]],
+  ['escaped_5ftokenize_669',['escaped_tokenize',['../namespaceVW_1_1details.html#a0528432dcd6b58f7c1063115143f1880',1,'VW::details']]],
   ['estimator_5fvec_5ft_670',['estimator_vec_t',['../namespaceVW_1_1reductions_1_1automl.html#ab3b98552a036f480d39c5de92cca79f7',1,'VW::reductions::automl']]],
   ['estimators_671',['estimators',['../classVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#ad2fa0ddfa6bd13cb31a8856e172ad5b8',1,'VW::reductions::automl::interaction_config_manager']]],
   ['eta_672',['eta',['../classVW_1_1workspace.html#ad79f6dc7d719ba0d0de5f829177fb745',1,'VW::workspace::eta()'],['../classVW_1_1estimators_1_1confidence__sequence.html#a0cd30ae116528c07d421c18c63d8dd17',1,'VW::estimators::confidence_sequence::eta()']]],
