@@ -72,7 +72,7 @@ var searchData=
   ['vec_5fadd_2218',['vec_add',['../namespaceGD.html#ae6fd589c071ed3a52da36fc819e7d224',1,'GD']]],
   ['vec_5fadd_5fmultipredict_2219',['vec_add_multipredict',['../namespaceGD.html#a233e8417eefdbbe50584f4e9cb7dee87',1,'GD']]],
   ['vector_5fpool_2220',['vector_pool',['../namespaceVW.html#ae39ca8662fac3c3327f8a94b6dbc0b14',1,'VW']]],
-  ['verify_5fhash_2221',['verify_hash',['../classio__buf.html#aa0e2aa6f7e2c7c4c5d268b842a727275',1,'io_buf']]],
+  ['verify_5fhash_2221',['verify_hash',['../classVW_1_1io__buf.html#a4ddb7835f2e497c9442ba467ac1c43c8',1,'VW::io_buf']]],
   ['version_2222',['VERSION',['../namespaceVW.html#a6be13bb02c0e4db9a08c33ad8ded5099',1,'VW']]],
   ['version_2223',['version',['../namespaceVW.html#a1a26c5125e2b6aa1902d5c7a3fccf888',1,'VW']]],
   ['version_2eh_2224',['version.h',['../version_8h.html',1,'']]],

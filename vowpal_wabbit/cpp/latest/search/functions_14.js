@@ -13,7 +13,7 @@ var searchData=
   ['value_5fsupplied_3894',['value_supplied',['../classVW_1_1config_1_1typed__option.html#a6eb5617de17a4a508ec96486947a455e',1,'VW::config::typed_option']]],
   ['vec_5fadd_3895',['vec_add',['../namespaceGD.html#ae6fd589c071ed3a52da36fc819e7d224',1,'GD']]],
   ['vec_5fadd_5fmultipredict_3896',['vec_add_multipredict',['../namespaceGD.html#a233e8417eefdbbe50584f4e9cb7dee87',1,'GD']]],
-  ['verify_5fhash_3897',['verify_hash',['../classio__buf.html#aa0e2aa6f7e2c7c4c5d268b842a727275',1,'io_buf']]],
+  ['verify_5fhash_3897',['verify_hash',['../classVW_1_1io__buf.html#a4ddb7835f2e497c9442ba467ac1c43c8',1,'VW::io_buf']]],
   ['version_3898',['VERSION',['../namespaceVW.html#a6be13bb02c0e4db9a08c33ad8ded5099',1,'VW']]],
   ['version_3899',['version',['../namespaceVW.html#a1a26c5125e2b6aa1902d5c7a3fccf888',1,'VW']]],
   ['version_5fstruct_3900',['version_struct',['../classVW_1_1version__struct.html#ae1b252a01d68084e2d7a8ea3f2778dae',1,'VW::version_struct::version_struct(const char *v_str)'],['../classVW_1_1version__struct.html#a0b2c20a8707d1e42e81a0bf1f04df7fb',1,'VW::version_struct::version_struct(version_struct &amp;&amp;other) noexcept=default'],['../classVW_1_1version__struct.html#a223dc0f5a529f06a8ff2041a7c830dec',1,'VW::version_struct::version_struct(const version_struct &amp;other)=default'],['../classVW_1_1version__struct.html#ace4269b259846532bc32d90fe430d6af',1,'VW::version_struct::version_struct(int maj=0, int min=0, int rv=0)']]],

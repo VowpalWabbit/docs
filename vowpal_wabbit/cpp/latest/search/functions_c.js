@@ -21,9 +21,9 @@ var searchData=
   ['not_5fnull_3497',['not_null',['../classsparse__parameters.html#a391c2da96ed2b88d053c14684458b963',1,'sparse_parameters::not_null()'],['../classdense__parameters.html#ad19f1750ed9161abd89c1c071b2b709d',1,'dense_parameters::not_null()'],['../classparameters.html#a791d1245a747b229ff6a80a6f6783d5b',1,'parameters::not_null()']]],
   ['ns_5fbased_5fconfig_3498',['ns_based_config',['../classVW_1_1reductions_1_1automl_1_1ns__based__config.html#ad4494b15e89e561ce5f53c68501bd649',1,'VW::reductions::automl::ns_based_config::ns_based_config(set_ns_list_t &amp;&amp;ns_list, uint64_t lease, config_type conf_type)'],['../classVW_1_1reductions_1_1automl_1_1ns__based__config.html#a0ecc93f6aad72eaadf6eb153e6c38a98',1,'VW::reductions::automl::ns_based_config::ns_based_config(uint64_t lease=10)']]],
   ['ns_5fextent_5fiterator_3499',['ns_extent_iterator',['../classVW_1_1details_1_1ns__extent__iterator.html#a61edca63c3103efe117f23162572cb4a',1,'VW::details::ns_extent_iterator']]],
-  ['num_5ffiles_3500',['num_files',['../classio__buf.html#ab8485d590a3bf27b1de7dbe548506149',1,'io_buf']]],
-  ['num_5finput_5ffiles_3501',['num_input_files',['../classio__buf.html#a9e96ad28d318c8f2f0542945ee4abd18',1,'io_buf']]],
-  ['num_5foutput_5ffiles_3502',['num_output_files',['../classio__buf.html#a8ace80e6275fefec30eb34d0d7f65078',1,'io_buf']]],
+  ['num_5ffiles_3500',['num_files',['../classVW_1_1io__buf.html#aca615d6080086157c84e0035d1f341db',1,'VW::io_buf']]],
+  ['num_5finput_5ffiles_3501',['num_input_files',['../classVW_1_1io__buf.html#ad1fcd50591085d320f16084069914a78',1,'VW::io_buf']]],
+  ['num_5foutput_5ffiles_3502',['num_output_files',['../classVW_1_1io__buf.html#a436aff57d0498a280397a2b044e7709b',1,'VW::io_buf']]],
   ['num_5fweights_3503',['num_weights',['../namespaceVW.html#a04b594a4e250da0d08d159315c51449d',1,'VW']]],
   ['number_5fof_5fcombinations_5fwith_5frepetition_3504',['number_of_combinations_with_repetition',['../namespaceVW_1_1math.html#a6bba0fe85cf39d89c5a9f13b58987dc1',1,'VW::math']]],
   ['number_5fof_5fpermutations_5fwith_5frepetition_3505',['number_of_permutations_with_repetition',['../namespaceVW_1_1math.html#a1a277e1f850e8b4281f2b504c33731eb',1,'VW::math']]]

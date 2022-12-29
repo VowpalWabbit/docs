@@ -5,7 +5,7 @@ var searchData=
   ['has_5fempty_5finteraction_5fcubic_3347',['has_empty_interaction_cubic',['../namespaceINTERACTIONS.html#ae902af0455e1fb59d11957f2d6b97a30',1,'INTERACTIONS']]],
   ['has_5fempty_5finteraction_5fquadratic_3348',['has_empty_interaction_quadratic',['../namespaceINTERACTIONS.html#a49c6638073161bf790da8da25fbadc68',1,'INTERACTIONS']]],
   ['has_5fobserved_5fcost_3349',['has_observed_cost',['../classCB_1_1cb__class.html#a2f61508f2bac6020d397bb103f626a28',1,'CB::cb_class']]],
-  ['hash_3350',['hash',['../classio__buf.html#a2897cff64e19135ab948ede8ec150a04',1,'io_buf']]],
+  ['hash_3350',['hash',['../classVW_1_1io__buf.html#a51b160c3517a24c00a504c832cbdfc1f',1,'VW::io_buf']]],
   ['hash_5fextents_5fbegin_3351',['hash_extents_begin',['../classVW_1_1features.html#aead2646b8b62dadc6d02c6517f189c1e',1,'VW::features::hash_extents_begin(uint64_t hash) const'],['../classVW_1_1features.html#a669904aa2880a4ade3389b009c488d67',1,'VW::features::hash_extents_begin(uint64_t hash)']]],
   ['hash_5fextents_5fend_3352',['hash_extents_end',['../classVW_1_1features.html#af679a0bb8c1f9e0659fd26725ffb1567',1,'VW::features::hash_extents_end(uint64_t hash) const'],['../classVW_1_1features.html#a8463331853c34c940e8781ceb32ab866',1,'VW::features::hash_extents_end(uint64_t hash)']]],
   ['hash_5ffeature_3353',['hash_feature',['../namespaceVW.html#accec3be413c638722d20ed8842629547',1,'VW']]],
