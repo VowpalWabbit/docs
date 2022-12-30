@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['parameters_2532',['parameters',['../classparameters.html',1,'']]],
+  ['parameters_2532',['parameters',['../classVW_1_1parameters.html',1,'VW']]],
   ['parser_2533',['parser',['../classVW_1_1parser.html',1,'VW::parser'],['../classVW_1_1parsers_1_1flatbuffer_1_1parser.html',1,'VW::parsers::flatbuffer::parser']]],
   ['pdf_5fsegment_2534',['pdf_segment',['../classVW_1_1continuous__actions_1_1pdf__segment.html',1,'VW::continuous_actions']]],
   ['per_5fmodel_5fstate_2535',['per_model_state',['../classGD_1_1per__model__state.html',1,'GD']]],

@@ -23,7 +23,7 @@ var searchData=
   ['nopred_4438',['nopred',['../classVW_1_1polyprediction.html#abf9383a060df6edddd0e365b590ef698',1,'VW::polyprediction']]],
   ['norm_5fthreshold_4439',['NORM_THRESHOLD',['../namespaceVW.html#acd131031ecce56614c90f61159eed290',1,'VW']]],
   ['normal_5fweights_4440',['normal_weights',['../classVW_1_1workspace.html#a890f8994b7d12fbbe4fff83501e12e9a',1,'VW::workspace']]],
-  ['normalized_4441',['normalized',['../classparameters.html#a151823ac932181e2ec63a13461bacc17',1,'parameters']]],
+  ['normalized_4441',['normalized',['../classVW_1_1parameters.html#a7a4b607ec9a8f0b2232fc7851327dcd5',1,'VW::parameters']]],
   ['normalized_5fidx_4442',['normalized_idx',['../classVW_1_1workspace.html#a23ee88f7ef030182ec255a7a9008de13',1,'VW::workspace']]],
   ['normalized_5fsum_5fnorm_5fx_4443',['normalized_sum_norm_x',['../classGD_1_1per__model__state.html#aa07278d4dadbeea9279ab07e4de5e266',1,'GD::per_model_state']]],
   ['ns_4444',['ns',['../classVW_1_1audit__strings.html#ae12b6141b6e9f12005f58916f9e90816',1,'VW::audit_strings']]],

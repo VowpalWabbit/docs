@@ -8,7 +8,7 @@ var searchData=
   ['active_4041',['active',['../classVW_1_1workspace.html#a13db26d284e2ec61861eaceb12b230f9',1,'VW::workspace']]],
   ['active_5fc0_4042',['active_c0',['../classVW_1_1reductions_1_1active.html#a841bcbdf85755e76c12172c91aefa72b',1,'VW::reductions::active']]],
   ['active_5fmulticlass_4043',['active_multiclass',['../classVW_1_1polyprediction.html#a3cac575939db13cde68b4c1356733114',1,'VW::polyprediction']]],
-  ['adaptive_4044',['adaptive',['../classparameters.html#ae32e0735531564f9764905fcc46190c2',1,'parameters']]],
+  ['adaptive_4044',['adaptive',['../classVW_1_1parameters.html#a4b0bdd5326ead9699e3c68a3afaa6a0a',1,'VW::parameters']]],
   ['add_5fconstant_4045',['add_constant',['../classVW_1_1workspace.html#ad761dc98a023f1e8c2a031cf8dcc02d4',1,'VW::workspace']]],
   ['adf_5flearner_4046',['adf_learner',['../classVW_1_1reductions_1_1automl_1_1automl.html#a1d189aaa2b1a891d74e73f63702149c8',1,'VW::reductions::automl::automl']]],
   ['adjust_4047',['adjust',['../classVW_1_1estimators_1_1confidence__sequence.html#ae7e879a9f193dc896fe857033e47a844',1,'VW::estimators::confidence_sequence']]],
