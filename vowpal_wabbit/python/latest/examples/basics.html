@@ -499,7 +499,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p>Any application using the Python package needs to begin by importing <a class="reference internal" href="../reference/vowpalwabbit.html#module-vowpalwabbit" title="vowpalwabbit"><code class="xref py py-mod docutils literal notranslate"><span class="pre">vowpalwabbit</span></code></a>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>import vowpalwabbit
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">vowpalwabbit</span>
 </pre></div>
 </div>
 </div>
@@ -507,7 +507,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p>One we’ve imported <code class="docutils literal notranslate"><span class="pre">vowpalwabbit</span></code>, we can initialize VW either by passing a command line string (e.g., <code class="docutils literal notranslate"><span class="pre">&quot;--quiet</span> <span class="pre">-q</span> <span class="pre">ab</span> <span class="pre">--l2</span> <span class="pre">0.01&quot;</span></code>) or, in a more python-friendly manner, providing those as named arguments. Here we do the latter.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>vw = vowpalwabbit.Workspace(quiet=True, q=&quot;ab&quot;, l2=0.01)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">q</span><span class="o">=</span><span class="s2">&quot;ab&quot;</span><span class="p">,</span> <span class="n">l2</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -516,7 +516,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p>One way to create an example is to pass a string. This is the equivalent of a string in a VW file. For instance:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>ex = vw.example(&quot;1 |a two features |b more features here&quot;)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ex</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">example</span><span class="p">(</span><span class="s2">&quot;1 |a two features |b more features here&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -524,7 +524,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p>Documentation can be looked at with <code class="docutils literal notranslate"><span class="pre">help</span></code> or you can look it up in the <a class="reference internal" href="../reference/vowpalwabbit.html#vowpalwabbit.Workspace.learn" title="vowpalwabbit.Workspace.learn"><code class="xref py py-meth docutils literal notranslate"><span class="pre">generated</span> <span class="pre">docs</span></code></a>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>help(vw.learn)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="n">vw</span><span class="o">.</span><span class="n">learn</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -543,8 +543,8 @@ learn(ec: Union[ForwardRef(&#39;Example&#39;), List[ForwardRef(&#39;Example&#39;
 <p>Let’s run that learn function and get a prediction:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>vw.learn(ex)
-print(f&quot;current prediction = {ex.get_updated_prediction()}&quot;)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vw</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;current prediction = </span><span class="si">{</span><span class="n">ex</span><span class="o">.</span><span class="n">get_updated_prediction</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -558,10 +558,10 @@ print(f&quot;current prediction = {ex.get_updated_prediction()}&quot;)
 <p>Okay, so the prediction isn’t quite where we want it yet. Let’s learn a few more times and then print the prediction.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>for _ in range(4):
-    vw.learn(ex)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+    <span class="n">vw</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
 
-print(f&quot;current prediction = {ex.get_updated_prediction()}&quot;)
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;current prediction = </span><span class="si">{</span><span class="n">ex</span><span class="o">.</span><span class="n">get_updated_prediction</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -576,7 +576,7 @@ print(f&quot;current prediction = {ex.get_updated_prediction()}&quot;)
 <p>Note that in this setup there is no label provided, which means that this will be considered a test example.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>ex2 = vw.example({&quot;a&quot;: [&quot;features&quot;], &quot;b&quot;: [&quot;more&quot;, &quot;features&quot;, &quot;there&quot;]})
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ex2</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">example</span><span class="p">({</span><span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;features&quot;</span><span class="p">],</span> <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;more&quot;</span><span class="p">,</span> <span class="s2">&quot;features&quot;</span><span class="p">,</span> <span class="s2">&quot;there&quot;</span><span class="p">]})</span>
 </pre></div>
 </div>
 </div>
@@ -584,8 +584,8 @@ print(f&quot;current prediction = {ex.get_updated_prediction()}&quot;)
 <p>Given this example, we execute <code class="docutils literal notranslate"><span class="pre">learn</span></code>. But since it’s a test example (no label), this will only make a prediction!</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>vw.learn(ex2)
-print(f&quot;current prediction = {ex2.get_updated_prediction()}&quot;)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vw</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">ex2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;current prediction = </span><span class="si">{</span><span class="n">ex2</span><span class="o">.</span><span class="n">get_updated_prediction</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -600,11 +600,11 @@ print(f&quot;current prediction = {ex2.get_updated_prediction()}&quot;)
 <p>Let’s now give this example a label and train on it a few times:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>ex2.set_label_string(&quot;-2.0&quot;)
-for _ in range(5):
-    vw.learn(ex2)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ex2</span><span class="o">.</span><span class="n">set_label_string</span><span class="p">(</span><span class="s2">&quot;-2.0&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+    <span class="n">vw</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">ex2</span><span class="p">)</span>
 
-print(f&quot;current prediction = {ex2.get_updated_prediction()}&quot;)
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;current prediction = </span><span class="si">{</span><span class="n">ex2</span><span class="o">.</span><span class="n">get_updated_prediction</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -617,9 +617,9 @@ print(f&quot;current prediction = {ex2.get_updated_prediction()}&quot;)
 <p>Now we can go back and see how this has affected the prediction behavior on the original example <code class="docutils literal notranslate"><span class="pre">ex</span></code>. We do this first by removing the label and then calling <code class="docutils literal notranslate"><span class="pre">learn</span></code> to make a prediction.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>ex.set_label_string(&quot;&quot;)
-vw.learn(ex)
-print(f&quot;current prediction = {ex.get_updated_prediction()}&quot;)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ex</span><span class="o">.</span><span class="n">set_label_string</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+<span class="n">vw</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;current prediction = </span><span class="si">{</span><span class="n">ex</span><span class="o">.</span><span class="n">get_updated_prediction</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -632,12 +632,12 @@ print(f&quot;current prediction = {ex.get_updated_prediction()}&quot;)
 <p>Clearly this has had an impact on the prediction for the first example. Let’s put the label back and then iterate between learning on <code class="docutils literal notranslate"><span class="pre">ex</span></code> and <code class="docutils literal notranslate"><span class="pre">ex2</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>ex.set_label_string(&quot;1&quot;)
-for i in range(10):
-    vw.learn(ex)
-    vw.learn(ex2)
-    print(f&quot;ex prediction = {ex.get_updated_prediction()}&quot;)
-    print(f&quot;ex2 prediction = {ex2.get_updated_prediction()}&quot;)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ex</span><span class="o">.</span><span class="n">set_label_string</span><span class="p">(</span><span class="s2">&quot;1&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="n">vw</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
+    <span class="n">vw</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">ex2</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;ex prediction = </span><span class="si">{</span><span class="n">ex</span><span class="o">.</span><span class="n">get_updated_prediction</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;ex2 prediction = </span><span class="si">{</span><span class="n">ex2</span><span class="o">.</span><span class="n">get_updated_prediction</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -670,8 +670,8 @@ ex2 prediction = 0.0
 <p>Now that we’re done, it’s safest to tell VW that we’re done with these examples and that it can garbage collect them. (This should happen by default when they pass out of scope per Python’s build in garbage collector, but that may not run soon enough if you’re manipulating large numbers of examples at once!)</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>vw.finish_example(ex)
-vw.finish_example(ex2)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vw</span><span class="o">.</span><span class="n">finish_example</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
+<span class="n">vw</span><span class="o">.</span><span class="n">finish_example</span><span class="p">(</span><span class="n">ex2</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -679,7 +679,7 @@ vw.finish_example(ex2)
 <p>Finally, when we’re done with VW entirely, or perhaps want to start up a new VW instance, it’s good behavior to close out any old ones. This is especially important if we wanted to save a model to disk: calling <code class="docutils literal notranslate"><span class="pre">vw.finish()</span></code> tells it to write the file. You can add <code class="docutils literal notranslate"><span class="pre">f='mymodel'</span></code> to the initialization line of the <code class="docutils literal notranslate"><span class="pre">vw</span></code> object if you want to play around with this!</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>vw.finish()
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vw</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>

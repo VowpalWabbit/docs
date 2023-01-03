@@ -507,38 +507,38 @@ const thebe_selector_output = ".output, .cell_output"
 <h1>Classification<a class="headerlink" href="#classification" title="Permalink to this headline">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>import pandas as pd
-import sklearn
-import sklearn.model_selection
-import sklearn.datasets
-import vowpalwabbit
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">sklearn</span>
+<span class="kn">import</span> <span class="nn">sklearn.model_selection</span>
+<span class="kn">import</span> <span class="nn">sklearn.datasets</span>
+<span class="kn">import</span> <span class="nn">vowpalwabbit</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>iris_dataset = sklearn.datasets.load_iris()
-iris_dataframe = pd.DataFrame(
-    data=iris_dataset.data, columns=iris_dataset.feature_names
-)
-# vw expects labels starting from 1
-iris_dataframe[&quot;y&quot;] = iris_dataset.target + 1
-training_data, testing_data = sklearn.model_selection.train_test_split(
-    iris_dataframe, test_size=0.2
-)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">iris_dataset</span> <span class="o">=</span> <span class="n">sklearn</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">load_iris</span><span class="p">()</span>
+<span class="n">iris_dataframe</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
+    <span class="n">data</span><span class="o">=</span><span class="n">iris_dataset</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">iris_dataset</span><span class="o">.</span><span class="n">feature_names</span>
+<span class="p">)</span>
+<span class="c1"># vw expects labels starting from 1</span>
+<span class="n">iris_dataframe</span><span class="p">[</span><span class="s2">&quot;y&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">iris_dataset</span><span class="o">.</span><span class="n">target</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="n">training_data</span><span class="p">,</span> <span class="n">testing_data</span> <span class="o">=</span> <span class="n">sklearn</span><span class="o">.</span><span class="n">model_selection</span><span class="o">.</span><span class="n">train_test_split</span><span class="p">(</span>
+    <span class="n">iris_dataframe</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span>
+<span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>def to_vw_format(row):
-    res = f&quot;{int(row.y)} |&quot;
-    for idx, value in row.drop([&quot;y&quot;]).iteritems():
-        feature_name = idx.replace(&quot; &quot;, &quot;_&quot;).replace(&quot;(&quot;, &quot;&quot;).replace(&quot;)&quot;, &quot;&quot;)
-        res += f&quot; {feature_name}:{value}&quot;
-    return res
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">to_vw_format</span><span class="p">(</span><span class="n">row</span><span class="p">):</span>
+    <span class="n">res</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="nb">int</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">y</span><span class="p">)</span><span class="si">}</span><span class="s2"> |&quot;</span>
+    <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">row</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s2">&quot;y&quot;</span><span class="p">])</span><span class="o">.</span><span class="n">iteritems</span><span class="p">():</span>
+        <span class="n">feature_name</span> <span class="o">=</span> <span class="n">idx</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="s2">&quot;_&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;(&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;)&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+        <span class="n">res</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot; </span><span class="si">{</span><span class="n">feature_name</span><span class="si">}</span><span class="s2">:</span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="k">return</span> <span class="n">res</span>
 </pre></div>
 </div>
 </div>
@@ -548,43 +548,43 @@ training_data, testing_data = sklearn.model_selection.train_test_split(
 <p>Vowpal Wabbit has its own input format we can use. Let’s see what it looks like.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>for ex in training_data.head(10).apply(to_vw_format, axis=1):
-    print(ex)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">ex</span> <span class="ow">in</span> <span class="n">training_data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">to_vw_format</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3 | sepal_length_cm:7.3 sepal_width_cm:2.9 petal_length_cm:6.3 petal_width_cm:1.8
-2 | sepal_length_cm:5.9 sepal_width_cm:3.0 petal_length_cm:4.2 petal_width_cm:1.5
-3 | sepal_length_cm:5.6 sepal_width_cm:2.8 petal_length_cm:4.9 petal_width_cm:2.0
-2 | sepal_length_cm:6.4 sepal_width_cm:2.9 petal_length_cm:4.3 petal_width_cm:1.3
-2 | sepal_length_cm:5.5 sepal_width_cm:2.3 petal_length_cm:4.0 petal_width_cm:1.3
-1 | sepal_length_cm:4.8 sepal_width_cm:3.4 petal_length_cm:1.6 petal_width_cm:0.2
-2 | sepal_length_cm:6.5 sepal_width_cm:2.8 petal_length_cm:4.6 petal_width_cm:1.5
-1 | sepal_length_cm:5.0 sepal_width_cm:3.4 petal_length_cm:1.5 petal_width_cm:0.2
-2 | sepal_length_cm:6.0 sepal_width_cm:2.9 petal_length_cm:4.5 petal_width_cm:1.5
-3 | sepal_length_cm:6.3 sepal_width_cm:2.9 petal_length_cm:5.6 petal_width_cm:1.8
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2 | sepal_length_cm:6.4 sepal_width_cm:3.2 petal_length_cm:4.5 petal_width_cm:1.5
+3 | sepal_length_cm:6.4 sepal_width_cm:2.7 petal_length_cm:5.3 petal_width_cm:1.9
+1 | sepal_length_cm:5.2 sepal_width_cm:3.5 petal_length_cm:1.5 petal_width_cm:0.2
+3 | sepal_length_cm:6.2 sepal_width_cm:2.8 petal_length_cm:4.8 petal_width_cm:1.8
+3 | sepal_length_cm:6.8 sepal_width_cm:3.0 petal_length_cm:5.5 petal_width_cm:2.1
+1 | sepal_length_cm:4.6 sepal_width_cm:3.4 petal_length_cm:1.4 petal_width_cm:0.3
+2 | sepal_length_cm:5.6 sepal_width_cm:3.0 petal_length_cm:4.5 petal_width_cm:1.5
+2 | sepal_length_cm:5.0 sepal_width_cm:2.3 petal_length_cm:3.3 petal_width_cm:1.0
+1 | sepal_length_cm:4.7 sepal_width_cm:3.2 petal_length_cm:1.6 petal_width_cm:0.2
+1 | sepal_length_cm:5.7 sepal_width_cm:4.4 petal_length_cm:1.5 petal_width_cm:0.4
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
 </pre></div>
 </div>
@@ -592,320 +592,320 @@ training_data, testing_data = sklearn.model_selection.train_test_split(
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>vw = vowpalwabbit.Workspace(&quot;--oaa 3 --quiet&quot;)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--oaa 3 --quiet&quot;</span><span class="p">)</span>
 
-# learn from training set with multiple passes
-for example in training_data.apply(to_vw_format, axis=1):
-    vw.learn(example)
+<span class="c1"># learn from training set with multiple passes</span>
+<span class="k">for</span> <span class="n">example</span> <span class="ow">in</span> <span class="n">training_data</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">to_vw_format</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+    <span class="n">vw</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">example</span><span class="p">)</span>
 
-# predict from the testing set
-predictions = []
-for example in testing_data.apply(to_vw_format, axis=1):
-    predicted_class = vw.predict(example)
-    predictions.append(predicted_class)
+<span class="c1"># predict from the testing set</span>
+<span class="n">predictions</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">example</span> <span class="ow">in</span> <span class="n">testing_data</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">to_vw_format</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+    <span class="n">predicted_class</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">example</span><span class="p">)</span>
+    <span class="n">predictions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">predicted_class</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
-/tmp/ipykernel_2432/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
+/tmp/ipykernel_2327/3520888690.py:3: FutureWarning: iteritems is deprecated and will be removed in a future version. Use .items instead.
   for idx, value in row.drop([&quot;y&quot;]).iteritems():
 </pre></div>
 </div>
@@ -913,14 +913,14 @@ for example in testing_data.apply(to_vw_format, axis=1):
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>accuracy = len(testing_data[testing_data.y == predictions]) / len(testing_data)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">accuracy</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">testing_data</span><span class="p">[</span><span class="n">testing_data</span><span class="o">.</span><span class="n">y</span> <span class="o">==</span> <span class="n">predictions</span><span class="p">])</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">testing_data</span><span class="p">)</span>
 
-print(f&quot;Model accuracy {accuracy}&quot;)
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Model accuracy </span><span class="si">{</span><span class="n">accuracy</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Model accuracy 0.7666666666666667
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Model accuracy 0.5666666666666667
 </pre></div>
 </div>
 </div>

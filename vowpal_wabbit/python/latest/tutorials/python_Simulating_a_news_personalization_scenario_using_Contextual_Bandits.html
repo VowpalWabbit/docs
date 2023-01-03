@@ -623,11 +623,11 @@ const thebe_selector_output = ".output, .cell_output"
 <p>Let’s first start with importing the necessary packages:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>import vowpalwabbit
-import random
-import matplotlib.pyplot as plt
-import pandas as pd
-import itertools
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">vowpalwabbit</span>
+<span class="kn">import</span> <span class="nn">random</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">itertools</span>
 </pre></div>
 </div>
 </div>
@@ -639,9 +639,9 @@ import itertools
 <p>VW optimizes to minimize <strong>cost which is negative of reward</strong>. Therefore, we will always pass negative of reward as cost to VW.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># VW tries to minimize loss/cost, therefore we will pass cost as -reward
-USER_LIKED_ARTICLE = -1.0
-USER_DISLIKED_ARTICLE = 0.0
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># VW tries to minimize loss/cost, therefore we will pass cost as -reward</span>
+<span class="n">USER_LIKED_ARTICLE</span> <span class="o">=</span> <span class="o">-</span><span class="mf">1.0</span>
+<span class="n">USER_DISLIKED_ARTICLE</span> <span class="o">=</span> <span class="mf">0.0</span>
 </pre></div>
 </div>
 </div>
@@ -649,21 +649,21 @@ USER_DISLIKED_ARTICLE = 0.0
 <p>The reward function below specifies that Tom likes politics in the morning and music in the afternoon whereas Anna likes sports in the morning and politics in the afternoon. It looks dense but we are just simulating our hypothetical world in the format of the feedback the learner understands: cost. If the learner recommends an article that aligns with the reward function, we give a positive reward. In our simulated world this is a click.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>def get_cost(context, action):
-    if context[&quot;user&quot;] == &quot;Tom&quot;:
-        if context[&quot;time_of_day&quot;] == &quot;morning&quot; and action == &quot;politics&quot;:
-            return USER_LIKED_ARTICLE
-        elif context[&quot;time_of_day&quot;] == &quot;afternoon&quot; and action == &quot;music&quot;:
-            return USER_LIKED_ARTICLE
-        else:
-            return USER_DISLIKED_ARTICLE
-    elif context[&quot;user&quot;] == &quot;Anna&quot;:
-        if context[&quot;time_of_day&quot;] == &quot;morning&quot; and action == &quot;sports&quot;:
-            return USER_LIKED_ARTICLE
-        elif context[&quot;time_of_day&quot;] == &quot;afternoon&quot; and action == &quot;politics&quot;:
-            return USER_LIKED_ARTICLE
-        else:
-            return USER_DISLIKED_ARTICLE
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_cost</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">action</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;user&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Tom&quot;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;politics&quot;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">USER_LIKED_ARTICLE</span>
+        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;afternoon&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;music&quot;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">USER_LIKED_ARTICLE</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">USER_DISLIKED_ARTICLE</span>
+    <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;user&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Anna&quot;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;sports&quot;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">USER_LIKED_ARTICLE</span>
+        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;afternoon&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;politics&quot;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">USER_LIKED_ARTICLE</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">USER_DISLIKED_ARTICLE</span>
 </pre></div>
 </div>
 </div>
@@ -674,20 +674,20 @@ USER_DISLIKED_ARTICLE = 0.0
 <p>There are some things we need to do to get our input into a format VW understands. This function handles converting from our context as a dictionary, list of articles and the cost if there is one into the text format VW understands.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># This function modifies (context, action, cost, probability) to VW friendly format
-def to_vw_example_format(context, actions, cb_label=None):
-    if cb_label is not None:
-        chosen_action, cost, prob = cb_label
-    example_string = &quot;&quot;
-    example_string += &quot;shared |User user={} time_of_day={}\n&quot;.format(
-        context[&quot;user&quot;], context[&quot;time_of_day&quot;]
-    )
-    for action in actions:
-        if cb_label is not None and action == chosen_action:
-            example_string += &quot;0:{}:{} &quot;.format(cost, prob)
-        example_string += &quot;|Action article={} \n&quot;.format(action)
-    # Strip the last newline
-    return example_string[:-1]
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># This function modifies (context, action, cost, probability) to VW friendly format</span>
+<span class="k">def</span> <span class="nf">to_vw_example_format</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">cb_label</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">cb_label</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">chosen_action</span><span class="p">,</span> <span class="n">cost</span><span class="p">,</span> <span class="n">prob</span> <span class="o">=</span> <span class="n">cb_label</span>
+    <span class="n">example_string</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+    <span class="n">example_string</span> <span class="o">+=</span> <span class="s2">&quot;shared |User user=</span><span class="si">{}</span><span class="s2"> time_of_day=</span><span class="si">{}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+        <span class="n">context</span><span class="p">[</span><span class="s2">&quot;user&quot;</span><span class="p">],</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span>
+    <span class="p">)</span>
+    <span class="k">for</span> <span class="n">action</span> <span class="ow">in</span> <span class="n">actions</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">cb_label</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="n">chosen_action</span><span class="p">:</span>
+            <span class="n">example_string</span> <span class="o">+=</span> <span class="s2">&quot;0:</span><span class="si">{}</span><span class="s2">:</span><span class="si">{}</span><span class="s2"> &quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">cost</span><span class="p">,</span> <span class="n">prob</span><span class="p">)</span>
+        <span class="n">example_string</span> <span class="o">+=</span> <span class="s2">&quot;|Action article=</span><span class="si">{}</span><span class="s2"> </span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">action</span><span class="p">)</span>
+    <span class="c1"># Strip the last newline</span>
+    <span class="k">return</span> <span class="n">example_string</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -695,10 +695,10 @@ def to_vw_example_format(context, actions, cb_label=None):
 <p>To understand what’s going on here let’s go through an example. Here, it’s the morning and the user is Tom. There are four possible articles. So in the VW format there is one line that starts with shared, this is the shared context, followed by four lines each corresponding to an article.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>context = {&quot;user&quot;: &quot;Tom&quot;, &quot;time_of_day&quot;: &quot;morning&quot;}
-actions = [&quot;politics&quot;, &quot;sports&quot;, &quot;music&quot;, &quot;food&quot;]
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">context</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;user&quot;</span><span class="p">:</span> <span class="s2">&quot;Tom&quot;</span><span class="p">,</span> <span class="s2">&quot;time_of_day&quot;</span><span class="p">:</span> <span class="s2">&quot;morning&quot;</span><span class="p">}</span>
+<span class="n">actions</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;politics&quot;</span><span class="p">,</span> <span class="s2">&quot;sports&quot;</span><span class="p">,</span> <span class="s2">&quot;music&quot;</span><span class="p">,</span> <span class="s2">&quot;food&quot;</span><span class="p">]</span>
 
-print(to_vw_example_format(context, actions))
+<span class="nb">print</span><span class="p">(</span><span class="n">to_vw_example_format</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">actions</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -719,16 +719,16 @@ print(to_vw_example_format(context, actions))
 <p>So, given a list <code class="docutils literal notranslate"><span class="pre">[0.7,</span> <span class="pre">0.1,</span> <span class="pre">0.1,</span> <span class="pre">0.1]</span></code>, we would choose the first item with a 70% chance. <code class="docutils literal notranslate"><span class="pre">sample_custom_pmf</span></code> takes such a list and gives us the index it chose and what the probability of choosing that index was.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>def sample_custom_pmf(pmf):
-    total = sum(pmf)
-    scale = 1 / total
-    pmf = [x * scale for x in pmf]
-    draw = random.random()
-    sum_prob = 0.0
-    for index, prob in enumerate(pmf):
-        sum_prob += prob
-        if sum_prob &gt; draw:
-            return index, prob
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">sample_custom_pmf</span><span class="p">(</span><span class="n">pmf</span><span class="p">):</span>
+    <span class="n">total</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">pmf</span><span class="p">)</span>
+    <span class="n">scale</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">/</span> <span class="n">total</span>
+    <span class="n">pmf</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="o">*</span> <span class="n">scale</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">pmf</span><span class="p">]</span>
+    <span class="n">draw</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span>
+    <span class="n">sum_prob</span> <span class="o">=</span> <span class="mf">0.0</span>
+    <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">prob</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">pmf</span><span class="p">):</span>
+        <span class="n">sum_prob</span> <span class="o">+=</span> <span class="n">prob</span>
+        <span class="k">if</span> <span class="n">sum_prob</span> <span class="o">&gt;</span> <span class="n">draw</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">index</span><span class="p">,</span> <span class="n">prob</span>
 </pre></div>
 </div>
 </div>
@@ -742,11 +742,11 @@ print(to_vw_example_format(context, actions))
 </ol>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>def get_action(vw, context, actions):
-    vw_text_example = to_vw_example_format(context, actions)
-    pmf = vw.predict(vw_text_example)
-    chosen_action_index, prob = sample_custom_pmf(pmf)
-    return actions[chosen_action_index], prob
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_action</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">context</span><span class="p">,</span> <span class="n">actions</span><span class="p">):</span>
+    <span class="n">vw_text_example</span> <span class="o">=</span> <span class="n">to_vw_example_format</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">actions</span><span class="p">)</span>
+    <span class="n">pmf</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">vw_text_example</span><span class="p">)</span>
+    <span class="n">chosen_action_index</span><span class="p">,</span> <span class="n">prob</span> <span class="o">=</span> <span class="n">sample_custom_pmf</span><span class="p">(</span><span class="n">pmf</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">actions</span><span class="p">[</span><span class="n">chosen_action_index</span><span class="p">],</span> <span class="n">prob</span>
 </pre></div>
 </div>
 </div>
@@ -758,36 +758,36 @@ print(to_vw_example_format(context, actions))
 <p>We will choose between Tom and Anna uniformly at random and also choose their time of visit uniformly at random. You can think of this as us tossing a coin to choose between Tom and Anna (Anna if heads and Tom if tails) and another coin toss for choosing time of day.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>users = [&quot;Tom&quot;, &quot;Anna&quot;]
-times_of_day = [&quot;morning&quot;, &quot;afternoon&quot;]
-actions = [&quot;politics&quot;, &quot;sports&quot;, &quot;music&quot;, &quot;food&quot;, &quot;finance&quot;, &quot;health&quot;, &quot;camping&quot;]
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">users</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Tom&quot;</span><span class="p">,</span> <span class="s2">&quot;Anna&quot;</span><span class="p">]</span>
+<span class="n">times_of_day</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;morning&quot;</span><span class="p">,</span> <span class="s2">&quot;afternoon&quot;</span><span class="p">]</span>
+<span class="n">actions</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;politics&quot;</span><span class="p">,</span> <span class="s2">&quot;sports&quot;</span><span class="p">,</span> <span class="s2">&quot;music&quot;</span><span class="p">,</span> <span class="s2">&quot;food&quot;</span><span class="p">,</span> <span class="s2">&quot;finance&quot;</span><span class="p">,</span> <span class="s2">&quot;health&quot;</span><span class="p">,</span> <span class="s2">&quot;camping&quot;</span><span class="p">]</span>
 
 
-def choose_user(users):
-    return random.choice(users)
+<span class="k">def</span> <span class="nf">choose_user</span><span class="p">(</span><span class="n">users</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">users</span><span class="p">)</span>
 
 
-def choose_time_of_day(times_of_day):
-    return random.choice(times_of_day)
+<span class="k">def</span> <span class="nf">choose_time_of_day</span><span class="p">(</span><span class="n">times_of_day</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">times_of_day</span><span class="p">)</span>
 
 
-# display preference matrix
-def get_preference_matrix(cost_fun):
-    def expand_grid(data_dict):
-        rows = itertools.product(*data_dict.values())
-        return pd.DataFrame.from_records(rows, columns=data_dict.keys())
+<span class="c1"># display preference matrix</span>
+<span class="k">def</span> <span class="nf">get_preference_matrix</span><span class="p">(</span><span class="n">cost_fun</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">expand_grid</span><span class="p">(</span><span class="n">data_dict</span><span class="p">):</span>
+        <span class="n">rows</span> <span class="o">=</span> <span class="n">itertools</span><span class="o">.</span><span class="n">product</span><span class="p">(</span><span class="o">*</span><span class="n">data_dict</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+        <span class="k">return</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="o">.</span><span class="n">from_records</span><span class="p">(</span><span class="n">rows</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">data_dict</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
 
-    df = expand_grid({&quot;users&quot;: users, &quot;times_of_day&quot;: times_of_day, &quot;actions&quot;: actions})
-    df[&quot;cost&quot;] = df.apply(
-        lambda r: cost_fun({&quot;user&quot;: r[0], &quot;time_of_day&quot;: r[1]}, r[2]), axis=1
-    )
+    <span class="n">df</span> <span class="o">=</span> <span class="n">expand_grid</span><span class="p">({</span><span class="s2">&quot;users&quot;</span><span class="p">:</span> <span class="n">users</span><span class="p">,</span> <span class="s2">&quot;times_of_day&quot;</span><span class="p">:</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="s2">&quot;actions&quot;</span><span class="p">:</span> <span class="n">actions</span><span class="p">})</span>
+    <span class="n">df</span><span class="p">[</span><span class="s2">&quot;cost&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span>
+        <span class="k">lambda</span> <span class="n">r</span><span class="p">:</span> <span class="n">cost_fun</span><span class="p">({</span><span class="s2">&quot;user&quot;</span><span class="p">:</span> <span class="n">r</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s2">&quot;time_of_day&quot;</span><span class="p">:</span> <span class="n">r</span><span class="p">[</span><span class="mi">1</span><span class="p">]},</span> <span class="n">r</span><span class="p">[</span><span class="mi">2</span><span class="p">]),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span>
+    <span class="p">)</span>
 
-    return df.pivot_table(
-        index=[&quot;users&quot;, &quot;times_of_day&quot;], columns=&quot;actions&quot;, values=&quot;cost&quot;
-    )
+    <span class="k">return</span> <span class="n">df</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span>
+        <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;users&quot;</span><span class="p">,</span> <span class="s2">&quot;times_of_day&quot;</span><span class="p">],</span> <span class="n">columns</span><span class="o">=</span><span class="s2">&quot;actions&quot;</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="s2">&quot;cost&quot;</span>
+    <span class="p">)</span>
 
 
-get_preference_matrix(get_cost)
+<span class="n">get_preference_matrix</span><span class="p">(</span><span class="n">get_cost</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -894,39 +894,39 @@ get_preference_matrix(get_cost)
 <p>This is the same for every one of our simulations, so we define the process in the <code class="docutils literal notranslate"><span class="pre">run_simulation</span></code> function. The cost function must be supplied as this is essentially us simulating how the world works.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>def run_simulation(
-    vw, num_iterations, users, times_of_day, actions, cost_function, do_learn=True
-):
-    cost_sum = 0.0
-    ctr = []
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">run_simulation</span><span class="p">(</span>
+    <span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">users</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">cost_function</span><span class="p">,</span> <span class="n">do_learn</span><span class="o">=</span><span class="kc">True</span>
+<span class="p">):</span>
+    <span class="n">cost_sum</span> <span class="o">=</span> <span class="mf">0.0</span>
+    <span class="n">ctr</span> <span class="o">=</span> <span class="p">[]</span>
 
-    for i in range(1, num_iterations + 1):
-        # 1. In each simulation choose a user
-        user = choose_user(users)
-        # 2. Choose time of day for a given user
-        time_of_day = choose_time_of_day(times_of_day)
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_iterations</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="c1"># 1. In each simulation choose a user</span>
+        <span class="n">user</span> <span class="o">=</span> <span class="n">choose_user</span><span class="p">(</span><span class="n">users</span><span class="p">)</span>
+        <span class="c1"># 2. Choose time of day for a given user</span>
+        <span class="n">time_of_day</span> <span class="o">=</span> <span class="n">choose_time_of_day</span><span class="p">(</span><span class="n">times_of_day</span><span class="p">)</span>
 
-        # 3. Pass context to vw to get an action
-        context = {&quot;user&quot;: user, &quot;time_of_day&quot;: time_of_day}
-        action, prob = get_action(vw, context, actions)
+        <span class="c1"># 3. Pass context to vw to get an action</span>
+        <span class="n">context</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;user&quot;</span><span class="p">:</span> <span class="n">user</span><span class="p">,</span> <span class="s2">&quot;time_of_day&quot;</span><span class="p">:</span> <span class="n">time_of_day</span><span class="p">}</span>
+        <span class="n">action</span><span class="p">,</span> <span class="n">prob</span> <span class="o">=</span> <span class="n">get_action</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">context</span><span class="p">,</span> <span class="n">actions</span><span class="p">)</span>
 
-        # 4. Get cost of the action we chose
-        cost = cost_function(context, action)
-        cost_sum += cost
+        <span class="c1"># 4. Get cost of the action we chose</span>
+        <span class="n">cost</span> <span class="o">=</span> <span class="n">cost_function</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">action</span><span class="p">)</span>
+        <span class="n">cost_sum</span> <span class="o">+=</span> <span class="n">cost</span>
 
-        if do_learn:
-            # 5. Inform VW of what happened so we can learn from it
-            vw_format = vw.parse(
-                to_vw_example_format(context, actions, (action, cost, prob)),
-                vowpalwabbit.LabelType.CONTEXTUAL_BANDIT,
-            )
-            # 6. Learn
-            vw.learn(vw_format)
+        <span class="k">if</span> <span class="n">do_learn</span><span class="p">:</span>
+            <span class="c1"># 5. Inform VW of what happened so we can learn from it</span>
+            <span class="n">vw_format</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span>
+                <span class="n">to_vw_example_format</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="p">(</span><span class="n">action</span><span class="p">,</span> <span class="n">cost</span><span class="p">,</span> <span class="n">prob</span><span class="p">)),</span>
+                <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">LabelType</span><span class="o">.</span><span class="n">CONTEXTUAL_BANDIT</span><span class="p">,</span>
+            <span class="p">)</span>
+            <span class="c1"># 6. Learn</span>
+            <span class="n">vw</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">vw_format</span><span class="p">)</span>
 
-        # We negate this so that on the plot instead of minimizing cost, we are maximizing reward
-        ctr.append(-1 * cost_sum / i)
+        <span class="c1"># We negate this so that on the plot instead of minimizing cost, we are maximizing reward</span>
+        <span class="n">ctr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span> <span class="o">*</span> <span class="n">cost_sum</span> <span class="o">/</span> <span class="n">i</span><span class="p">)</span>
 
-    return ctr
+    <span class="k">return</span> <span class="n">ctr</span>
 </pre></div>
 </div>
 </div>
@@ -934,11 +934,11 @@ get_preference_matrix(get_cost)
 <p>We want to be able to visualize what is occurring, so we are going to plot the click through rate over each iteration of the simulation. If VW is showing actions the get rewards the ctr will be higher. Below is a little utility function to make showing the plot easier.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>def plot_ctr(num_iterations, ctr):
-    plt.plot(range(1, num_iterations + 1), ctr)
-    plt.xlabel(&quot;num_iterations&quot;, fontsize=14)
-    plt.ylabel(&quot;ctr&quot;, fontsize=14)
-    plt.ylim([0, 1])
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">plot_ctr</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">,</span> <span class="n">ctr</span><span class="p">):</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_iterations</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">ctr</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;num_iterations&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;ctr&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
 </pre></div>
 </div>
 </div>
@@ -951,18 +951,18 @@ get_preference_matrix(get_cost)
 <h3>With learning<a class="headerlink" href="#with-learning" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Instantiate learner in VW
-vw = vowpalwabbit.Workspace(&quot;--cb_explore_adf -q UA --quiet --epsilon 0.2&quot;)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Instantiate learner in VW</span>
+<span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--cb_explore_adf -q UA --quiet --epsilon 0.2&quot;</span><span class="p">)</span>
 
-num_iterations = 5000
-ctr = run_simulation(vw, num_iterations, users, times_of_day, actions, get_cost)
+<span class="n">num_iterations</span> <span class="o">=</span> <span class="mi">5000</span>
+<span class="n">ctr</span> <span class="o">=</span> <span class="n">run_simulation</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">users</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">get_cost</span><span class="p">)</span>
 
-plot_ctr(num_iterations, ctr)
+<span class="n">plot_ctr</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">,</span> <span class="n">ctr</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/4c3cb76b3b7ae8e8f76b880b8450ed23ba44c0c23ad401febc0fc50fb5f6c8d9.png" src="../_images/4c3cb76b3b7ae8e8f76b880b8450ed23ba44c0c23ad401febc0fc50fb5f6c8d9.png" />
+<img alt="../_images/69861ba4cfc7d2d8215e7d4c05f7c1e8054b8f4ad39cacc360953123df61a5ee.png" src="../_images/69861ba4cfc7d2d8215e7d4c05f7c1e8054b8f4ad39cacc360953123df61a5ee.png" />
 </div>
 </div>
 <section id="aside-interactions">
@@ -970,18 +970,18 @@ plot_ctr(num_iterations, ctr)
 <p>You’ll notice in the arguments we supply to VW, <strong>we include <code class="docutils literal notranslate"><span class="pre">-q</span> <span class="pre">UA</span></code></strong>. This is telling VW to create additional features which are the features in the (U)ser namespace and (A)ction namespaces multiplied together. This allows us to learn the interaction between when certain actions are good in certain times of days and for particular users. If we didn’t do that, the learning wouldn’t really work. We can see that in action below.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Instantiate learner in VW but without -q
-vw = vowpalwabbit.Workspace(&quot;--cb_explore_adf --quiet --epsilon 0.2&quot;)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Instantiate learner in VW but without -q</span>
+<span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--cb_explore_adf --quiet --epsilon 0.2&quot;</span><span class="p">)</span>
 
-num_iterations = 5000
-ctr = run_simulation(vw, num_iterations, users, times_of_day, actions, get_cost)
+<span class="n">num_iterations</span> <span class="o">=</span> <span class="mi">5000</span>
+<span class="n">ctr</span> <span class="o">=</span> <span class="n">run_simulation</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">users</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">get_cost</span><span class="p">)</span>
 
-plot_ctr(num_iterations, ctr)
+<span class="n">plot_ctr</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">,</span> <span class="n">ctr</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/32ef517391228089a5d2408ca30eecab942534bf0bfdaa3f6d988d1bd2e19622.png" src="../_images/32ef517391228089a5d2408ca30eecab942534bf0bfdaa3f6d988d1bd2e19622.png" />
+<img alt="../_images/bd9c91b728cdd1f591734105de948470b5cf1b187307fad35bfc0cd5f32c0d9d.png" src="../_images/bd9c91b728cdd1f591734105de948470b5cf1b187307fad35bfc0cd5f32c0d9d.png" />
 </div>
 </div>
 </section>
@@ -991,20 +991,20 @@ plot_ctr(num_iterations, ctr)
 <p>Let’s do the same thing again (with <code class="docutils literal notranslate"><span class="pre">-q</span></code>) but with do_learn set to False to show the effect if we don’t learn from the rewards. The ctr never improves are we just hover around 0.2.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Instantiate learner in VW
-vw = vowpalwabbit.Workspace(&quot;--cb_explore_adf -q UA --quiet --epsilon 0.2&quot;)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Instantiate learner in VW</span>
+<span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--cb_explore_adf -q UA --quiet --epsilon 0.2&quot;</span><span class="p">)</span>
 
-num_iterations = 5000
-ctr = run_simulation(
-    vw, num_iterations, users, times_of_day, actions, get_cost, do_learn=False
-)
+<span class="n">num_iterations</span> <span class="o">=</span> <span class="mi">5000</span>
+<span class="n">ctr</span> <span class="o">=</span> <span class="n">run_simulation</span><span class="p">(</span>
+    <span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">users</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">get_cost</span><span class="p">,</span> <span class="n">do_learn</span><span class="o">=</span><span class="kc">False</span>
+<span class="p">)</span>
 
-plot_ctr(num_iterations, ctr)
+<span class="n">plot_ctr</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">,</span> <span class="n">ctr</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/d6be42f581161d7b8f012d1918c66b7089a43aef441edaa9104bcbf4ce57283f.png" src="../_images/d6be42f581161d7b8f012d1918c66b7089a43aef441edaa9104bcbf4ce57283f.png" />
+<img alt="../_images/af39bdd020c8f733528bd10cc413053288a1b33643f195890eaeb083e9d1fc69.png" src="../_images/af39bdd020c8f733528bd10cc413053288a1b33643f195890eaeb083e9d1fc69.png" />
 </div>
 </div>
 </section>
@@ -1056,24 +1056,24 @@ plot_ctr(num_iterations, ctr)
 <p>This reward function is still working with actions that the learner has seen previously.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>def get_cost_new1(context, action):
-    if context[&quot;user&quot;] == &quot;Tom&quot;:
-        if context[&quot;time_of_day&quot;] == &quot;morning&quot; and action == &quot;politics&quot;:
-            return USER_LIKED_ARTICLE
-        elif context[&quot;time_of_day&quot;] == &quot;afternoon&quot; and action == &quot;sports&quot;:
-            return USER_LIKED_ARTICLE
-        else:
-            return USER_DISLIKED_ARTICLE
-    elif context[&quot;user&quot;] == &quot;Anna&quot;:
-        if context[&quot;time_of_day&quot;] == &quot;morning&quot; and action == &quot;sports&quot;:
-            return USER_LIKED_ARTICLE
-        elif context[&quot;time_of_day&quot;] == &quot;afternoon&quot; and action == &quot;sports&quot;:
-            return USER_LIKED_ARTICLE
-        else:
-            return USER_DISLIKED_ARTICLE
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_cost_new1</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">action</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;user&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Tom&quot;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;politics&quot;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">USER_LIKED_ARTICLE</span>
+        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;afternoon&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;sports&quot;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">USER_LIKED_ARTICLE</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">USER_DISLIKED_ARTICLE</span>
+    <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;user&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Anna&quot;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;sports&quot;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">USER_LIKED_ARTICLE</span>
+        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;afternoon&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;sports&quot;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">USER_LIKED_ARTICLE</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">USER_DISLIKED_ARTICLE</span>
 
 
-get_preference_matrix(get_cost_new1)
+<span class="n">get_preference_matrix</span><span class="p">(</span><span class="n">get_cost_new1</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1167,90 +1167,90 @@ get_preference_matrix(get_cost_new1)
 <p>To make it easy to show the effect of the cost function changing we are going to modify the <code class="docutils literal notranslate"><span class="pre">run_simulation</span></code> function. It is a little less readable now, but it supports accepting a list of cost functions and it will operate over each cost function in turn. This is perfect for what we need.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>def run_simulation_multiple_cost_functions(
-    vw, num_iterations, users, times_of_day, actions, cost_functions, do_learn=True
-):
-    cost_sum = 0.0
-    ctr = []
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">run_simulation_multiple_cost_functions</span><span class="p">(</span>
+    <span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">users</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">cost_functions</span><span class="p">,</span> <span class="n">do_learn</span><span class="o">=</span><span class="kc">True</span>
+<span class="p">):</span>
+    <span class="n">cost_sum</span> <span class="o">=</span> <span class="mf">0.0</span>
+    <span class="n">ctr</span> <span class="o">=</span> <span class="p">[]</span>
 
-    start_counter = 1
-    end_counter = start_counter + num_iterations
-    for cost_function in cost_functions:
-        for i in range(start_counter, end_counter):
-            # 1. in each simulation choose a user
-            user = choose_user(users)
-            # 2. choose time of day for a given user
-            time_of_day = choose_time_of_day(times_of_day)
+    <span class="n">start_counter</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">end_counter</span> <span class="o">=</span> <span class="n">start_counter</span> <span class="o">+</span> <span class="n">num_iterations</span>
+    <span class="k">for</span> <span class="n">cost_function</span> <span class="ow">in</span> <span class="n">cost_functions</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">start_counter</span><span class="p">,</span> <span class="n">end_counter</span><span class="p">):</span>
+            <span class="c1"># 1. in each simulation choose a user</span>
+            <span class="n">user</span> <span class="o">=</span> <span class="n">choose_user</span><span class="p">(</span><span class="n">users</span><span class="p">)</span>
+            <span class="c1"># 2. choose time of day for a given user</span>
+            <span class="n">time_of_day</span> <span class="o">=</span> <span class="n">choose_time_of_day</span><span class="p">(</span><span class="n">times_of_day</span><span class="p">)</span>
 
-            # Construct context based on chosen user and time of day
-            context = {&quot;user&quot;: user, &quot;time_of_day&quot;: time_of_day}
+            <span class="c1"># Construct context based on chosen user and time of day</span>
+            <span class="n">context</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;user&quot;</span><span class="p">:</span> <span class="n">user</span><span class="p">,</span> <span class="s2">&quot;time_of_day&quot;</span><span class="p">:</span> <span class="n">time_of_day</span><span class="p">}</span>
 
-            # 3. Use the get_action function we defined earlier
-            action, prob = get_action(vw, context, actions)
+            <span class="c1"># 3. Use the get_action function we defined earlier</span>
+            <span class="n">action</span><span class="p">,</span> <span class="n">prob</span> <span class="o">=</span> <span class="n">get_action</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">context</span><span class="p">,</span> <span class="n">actions</span><span class="p">)</span>
 
-            # 4. Get cost of the action we chose
-            cost = cost_function(context, action)
-            cost_sum += cost
+            <span class="c1"># 4. Get cost of the action we chose</span>
+            <span class="n">cost</span> <span class="o">=</span> <span class="n">cost_function</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">action</span><span class="p">)</span>
+            <span class="n">cost_sum</span> <span class="o">+=</span> <span class="n">cost</span>
 
-            if do_learn:
-                # 5. Inform VW of what happened so we can learn from it
-                vw_format = vw.parse(
-                    to_vw_example_format(context, actions, (action, cost, prob)),
-                    vowpalwabbit.LabelType.CONTEXTUAL_BANDIT,
-                )
-                # 6. Learn
-                vw.learn(vw_format)
+            <span class="k">if</span> <span class="n">do_learn</span><span class="p">:</span>
+                <span class="c1"># 5. Inform VW of what happened so we can learn from it</span>
+                <span class="n">vw_format</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span>
+                    <span class="n">to_vw_example_format</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="p">(</span><span class="n">action</span><span class="p">,</span> <span class="n">cost</span><span class="p">,</span> <span class="n">prob</span><span class="p">)),</span>
+                    <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">LabelType</span><span class="o">.</span><span class="n">CONTEXTUAL_BANDIT</span><span class="p">,</span>
+                <span class="p">)</span>
+                <span class="c1"># 6. Learn</span>
+                <span class="n">vw</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">vw_format</span><span class="p">)</span>
 
-            # We negate this so that on the plot instead of minimizing cost, we are maximizing reward
-            ctr.append(-1 * cost_sum / i)
-        start_counter = end_counter
-        end_counter = start_counter + num_iterations
+            <span class="c1"># We negate this so that on the plot instead of minimizing cost, we are maximizing reward</span>
+            <span class="n">ctr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span> <span class="o">*</span> <span class="n">cost_sum</span> <span class="o">/</span> <span class="n">i</span><span class="p">)</span>
+        <span class="n">start_counter</span> <span class="o">=</span> <span class="n">end_counter</span>
+        <span class="n">end_counter</span> <span class="o">=</span> <span class="n">start_counter</span> <span class="o">+</span> <span class="n">num_iterations</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>def run_simulation_multiple_cost_functions(
-    vw, num_iterations, users, times_of_day, actions, cost_functions, do_learn=True
-):
-    cost_sum = 0.0
-    ctr = []
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">run_simulation_multiple_cost_functions</span><span class="p">(</span>
+    <span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">users</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">cost_functions</span><span class="p">,</span> <span class="n">do_learn</span><span class="o">=</span><span class="kc">True</span>
+<span class="p">):</span>
+    <span class="n">cost_sum</span> <span class="o">=</span> <span class="mf">0.0</span>
+    <span class="n">ctr</span> <span class="o">=</span> <span class="p">[]</span>
 
-    start_counter = 1
-    end_counter = start_counter + num_iterations
-    for cost_function in cost_functions:
-        for i in range(start_counter, end_counter):
-            # 1. in each simulation choose a user
-            user = choose_user(users)
-            # 2. choose time of day for a given user
-            time_of_day = choose_time_of_day(times_of_day)
+    <span class="n">start_counter</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">end_counter</span> <span class="o">=</span> <span class="n">start_counter</span> <span class="o">+</span> <span class="n">num_iterations</span>
+    <span class="k">for</span> <span class="n">cost_function</span> <span class="ow">in</span> <span class="n">cost_functions</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">start_counter</span><span class="p">,</span> <span class="n">end_counter</span><span class="p">):</span>
+            <span class="c1"># 1. in each simulation choose a user</span>
+            <span class="n">user</span> <span class="o">=</span> <span class="n">choose_user</span><span class="p">(</span><span class="n">users</span><span class="p">)</span>
+            <span class="c1"># 2. choose time of day for a given user</span>
+            <span class="n">time_of_day</span> <span class="o">=</span> <span class="n">choose_time_of_day</span><span class="p">(</span><span class="n">times_of_day</span><span class="p">)</span>
 
-            # Construct context based on chosen user and time of day
-            context = {&quot;user&quot;: user, &quot;time_of_day&quot;: time_of_day}
+            <span class="c1"># Construct context based on chosen user and time of day</span>
+            <span class="n">context</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;user&quot;</span><span class="p">:</span> <span class="n">user</span><span class="p">,</span> <span class="s2">&quot;time_of_day&quot;</span><span class="p">:</span> <span class="n">time_of_day</span><span class="p">}</span>
 
-            # 3. Use the get_action function we defined earlier
-            action, prob = get_action(vw, context, actions)
+            <span class="c1"># 3. Use the get_action function we defined earlier</span>
+            <span class="n">action</span><span class="p">,</span> <span class="n">prob</span> <span class="o">=</span> <span class="n">get_action</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">context</span><span class="p">,</span> <span class="n">actions</span><span class="p">)</span>
 
-            # 4. Get cost of the action we chose
-            cost = cost_function(context, action)
-            cost_sum += cost
+            <span class="c1"># 4. Get cost of the action we chose</span>
+            <span class="n">cost</span> <span class="o">=</span> <span class="n">cost_function</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">action</span><span class="p">)</span>
+            <span class="n">cost_sum</span> <span class="o">+=</span> <span class="n">cost</span>
 
-            if do_learn:
-                # 5. Inform VW of what happened so we can learn from it
-                vw_format = vw.parse(
-                    to_vw_example_format(context, actions, (action, cost, prob)),
-                    vowpalwabbit.LabelType.CONTEXTUAL_BANDIT,
-                )
-                # 6. Learn
-                vw.learn(vw_format)
+            <span class="k">if</span> <span class="n">do_learn</span><span class="p">:</span>
+                <span class="c1"># 5. Inform VW of what happened so we can learn from it</span>
+                <span class="n">vw_format</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span>
+                    <span class="n">to_vw_example_format</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="p">(</span><span class="n">action</span><span class="p">,</span> <span class="n">cost</span><span class="p">,</span> <span class="n">prob</span><span class="p">)),</span>
+                    <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">LabelType</span><span class="o">.</span><span class="n">CONTEXTUAL_BANDIT</span><span class="p">,</span>
+                <span class="p">)</span>
+                <span class="c1"># 6. Learn</span>
+                <span class="n">vw</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">vw_format</span><span class="p">)</span>
 
-            # We negate this so that on the plot instead of minimizing cost, we are maximizing reward
-            ctr.append(-1 * cost_sum / i)
-        start_counter = end_counter
-        end_counter = start_counter + num_iterations
+            <span class="c1"># We negate this so that on the plot instead of minimizing cost, we are maximizing reward</span>
+            <span class="n">ctr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span> <span class="o">*</span> <span class="n">cost_sum</span> <span class="o">/</span> <span class="n">i</span><span class="p">)</span>
+        <span class="n">start_counter</span> <span class="o">=</span> <span class="n">end_counter</span>
+        <span class="n">end_counter</span> <span class="o">=</span> <span class="n">start_counter</span> <span class="o">+</span> <span class="n">num_iterations</span>
 
-    return ctr
+    <span class="k">return</span> <span class="n">ctr</span>
 </pre></div>
 </div>
 </div>
@@ -1261,25 +1261,25 @@ get_preference_matrix(get_cost_new1)
 <p>Let us now switch to the second reward function after a few samples (running the first reward function). Recall that this reward function changes the preferences of the web users but it is still working with the same action space as before. We should see the learner pick up these changes and optimize towards the new preferences.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># use first reward function initially and then switch to second reward function
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># use first reward function initially and then switch to second reward function</span>
 
-# Instantiate learner in VW
-vw = vowpalwabbit.Workspace(&quot;--cb_explore_adf -q UA --quiet --epsilon 0.2&quot;)
+<span class="c1"># Instantiate learner in VW</span>
+<span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--cb_explore_adf -q UA --quiet --epsilon 0.2&quot;</span><span class="p">)</span>
 
-num_iterations_per_cost_func = 5000
-cost_functions = [get_cost, get_cost_new1]
-total_iterations = num_iterations_per_cost_func * len(cost_functions)
+<span class="n">num_iterations_per_cost_func</span> <span class="o">=</span> <span class="mi">5000</span>
+<span class="n">cost_functions</span> <span class="o">=</span> <span class="p">[</span><span class="n">get_cost</span><span class="p">,</span> <span class="n">get_cost_new1</span><span class="p">]</span>
+<span class="n">total_iterations</span> <span class="o">=</span> <span class="n">num_iterations_per_cost_func</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">cost_functions</span><span class="p">)</span>
 
-ctr = run_simulation_multiple_cost_functions(
-    vw, num_iterations_per_cost_func, users, times_of_day, actions, cost_functions
-)
+<span class="n">ctr</span> <span class="o">=</span> <span class="n">run_simulation_multiple_cost_functions</span><span class="p">(</span>
+    <span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations_per_cost_func</span><span class="p">,</span> <span class="n">users</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">cost_functions</span>
+<span class="p">)</span>
 
-plot_ctr(total_iterations, ctr)
+<span class="n">plot_ctr</span><span class="p">(</span><span class="n">total_iterations</span><span class="p">,</span> <span class="n">ctr</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/0269cb8d33e89fbffd3e8b3d89bd5dde32ba434abaf1282096c50a95238409d8.png" src="../_images/0269cb8d33e89fbffd3e8b3d89bd5dde32ba434abaf1282096c50a95238409d8.png" />
+<img alt="../_images/71f2d3890c537d242f34af05da99406d4b1a410e445e59a13d5fc0db484b4abb.png" src="../_images/71f2d3890c537d242f34af05da99406d4b1a410e445e59a13d5fc0db484b4abb.png" />
 </div>
 </div>
 <p><strong>Note:</strong> The initial spike in CTR depends on the rewards received for the first few examples. When you run on your own, you may see something different initially because our simulator is designed to have randomness.</p>
@@ -1288,31 +1288,31 @@ plot_ctr(total_iterations, ctr)
 <h3>Without learning<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Do not learn
-# use first reward function initially and then switch to second reward function
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Do not learn</span>
+<span class="c1"># use first reward function initially and then switch to second reward function</span>
 
-# Instantiate learner in VW
-vw = vowpalwabbit.Workspace(&quot;--cb_explore_adf -q UA --quiet --epsilon 0.2&quot;)
+<span class="c1"># Instantiate learner in VW</span>
+<span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--cb_explore_adf -q UA --quiet --epsilon 0.2&quot;</span><span class="p">)</span>
 
-num_iterations_per_cost_func = 5000
-cost_functions = [get_cost, get_cost_new1]
-total_iterations = num_iterations_per_cost_func * len(cost_functions)
+<span class="n">num_iterations_per_cost_func</span> <span class="o">=</span> <span class="mi">5000</span>
+<span class="n">cost_functions</span> <span class="o">=</span> <span class="p">[</span><span class="n">get_cost</span><span class="p">,</span> <span class="n">get_cost_new1</span><span class="p">]</span>
+<span class="n">total_iterations</span> <span class="o">=</span> <span class="n">num_iterations_per_cost_func</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">cost_functions</span><span class="p">)</span>
 
-ctr = run_simulation_multiple_cost_functions(
-    vw,
-    num_iterations_per_cost_func,
-    users,
-    times_of_day,
-    actions,
-    cost_functions,
-    do_learn=False,
-)
-plot_ctr(total_iterations, ctr)
+<span class="n">ctr</span> <span class="o">=</span> <span class="n">run_simulation_multiple_cost_functions</span><span class="p">(</span>
+    <span class="n">vw</span><span class="p">,</span>
+    <span class="n">num_iterations_per_cost_func</span><span class="p">,</span>
+    <span class="n">users</span><span class="p">,</span>
+    <span class="n">times_of_day</span><span class="p">,</span>
+    <span class="n">actions</span><span class="p">,</span>
+    <span class="n">cost_functions</span><span class="p">,</span>
+    <span class="n">do_learn</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">plot_ctr</span><span class="p">(</span><span class="n">total_iterations</span><span class="p">,</span> <span class="n">ctr</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/4f96b1462645e6c26b91e3c7e43bc2f3f873321dad3a410aac89aeea752aeed7.png" src="../_images/4f96b1462645e6c26b91e3c7e43bc2f3f873321dad3a410aac89aeea752aeed7.png" />
+<img alt="../_images/5a2bf38c3fecc8df0bf91be345c5c583e00b4fe203fc4f92365fd28f7f9d3490.png" src="../_images/5a2bf38c3fecc8df0bf91be345c5c583e00b4fe203fc4f92365fd28f7f9d3490.png" />
 </div>
 </div>
 </section>
@@ -1363,21 +1363,21 @@ plot_ctr(total_iterations, ctr)
 </table>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>def get_cost_new2(context, action):
-    if context[&quot;user&quot;] == &quot;Tom&quot;:
-        if context[&quot;time_of_day&quot;] == &quot;morning&quot; and action == &quot;politics&quot;:
-            return USER_LIKED_ARTICLE
-        elif context[&quot;time_of_day&quot;] == &quot;afternoon&quot; and action == &quot;food&quot;:
-            return USER_LIKED_ARTICLE
-        else:
-            return USER_DISLIKED_ARTICLE
-    elif context[&quot;user&quot;] == &quot;Anna&quot;:
-        if context[&quot;time_of_day&quot;] == &quot;morning&quot; and action == &quot;food&quot;:
-            return USER_LIKED_ARTICLE
-        elif context[&quot;time_of_day&quot;] == &quot;afternoon&quot; and action == &quot;food&quot;:
-            return USER_LIKED_ARTICLE
-        else:
-            return USER_DISLIKED_ARTICLE
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_cost_new2</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">action</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;user&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Tom&quot;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;politics&quot;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">USER_LIKED_ARTICLE</span>
+        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;afternoon&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;food&quot;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">USER_LIKED_ARTICLE</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">USER_DISLIKED_ARTICLE</span>
+    <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;user&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Anna&quot;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;food&quot;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">USER_LIKED_ARTICLE</span>
+        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;afternoon&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;food&quot;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">USER_LIKED_ARTICLE</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">USER_DISLIKED_ARTICLE</span>
 </pre></div>
 </div>
 </div>
@@ -1388,25 +1388,25 @@ plot_ctr(total_iterations, ctr)
 <p>Let us now switch to the third reward function after a few samples (running the first reward function). Recall that this reward function changes the preferences of the users and is working with a <strong>different</strong> action space than before. We should see the learner pick up these changes and optimize towards the new preferences</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># use first reward function initially and then switch to third reward function
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># use first reward function initially and then switch to third reward function</span>
 
-# Instantiate learner in VW
-vw = vowpalwabbit.Workspace(&quot;--cb_explore_adf -q UA --quiet --epsilon 0.2&quot;)
+<span class="c1"># Instantiate learner in VW</span>
+<span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--cb_explore_adf -q UA --quiet --epsilon 0.2&quot;</span><span class="p">)</span>
 
-num_iterations_per_cost_func = 5000
-cost_functions = [get_cost, get_cost_new2]
-total_iterations = num_iterations_per_cost_func * len(cost_functions)
+<span class="n">num_iterations_per_cost_func</span> <span class="o">=</span> <span class="mi">5000</span>
+<span class="n">cost_functions</span> <span class="o">=</span> <span class="p">[</span><span class="n">get_cost</span><span class="p">,</span> <span class="n">get_cost_new2</span><span class="p">]</span>
+<span class="n">total_iterations</span> <span class="o">=</span> <span class="n">num_iterations_per_cost_func</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">cost_functions</span><span class="p">)</span>
 
-ctr = run_simulation_multiple_cost_functions(
-    vw, num_iterations_per_cost_func, users, times_of_day, actions, cost_functions
-)
+<span class="n">ctr</span> <span class="o">=</span> <span class="n">run_simulation_multiple_cost_functions</span><span class="p">(</span>
+    <span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations_per_cost_func</span><span class="p">,</span> <span class="n">users</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">cost_functions</span>
+<span class="p">)</span>
 
-plot_ctr(total_iterations, ctr)
+<span class="n">plot_ctr</span><span class="p">(</span><span class="n">total_iterations</span><span class="p">,</span> <span class="n">ctr</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/bdc4345c731d1d7da7d75ee727f9621f8188dc09e990376689410581cfc5a878.png" src="../_images/bdc4345c731d1d7da7d75ee727f9621f8188dc09e990376689410581cfc5a878.png" />
+<img alt="../_images/9cd19bd98aef7dbf6ac24d6c55cb384eb4c37bd4e1959bfcfc05653e97658d79.png" src="../_images/9cd19bd98aef7dbf6ac24d6c55cb384eb4c37bd4e1959bfcfc05653e97658d79.png" />
 </div>
 </div>
 </section>
@@ -1414,32 +1414,32 @@ plot_ctr(total_iterations, ctr)
 <h3>Without Learning<a class="headerlink" href="#id6" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Do not learn
-# use first reward function initially and then switch to third reward function
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Do not learn</span>
+<span class="c1"># use first reward function initially and then switch to third reward function</span>
 
-# Instantiate learner in VW
-vw = vowpalwabbit.Workspace(&quot;--cb_explore_adf -q UA --quiet --epsilon 0.2&quot;)
+<span class="c1"># Instantiate learner in VW</span>
+<span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--cb_explore_adf -q UA --quiet --epsilon 0.2&quot;</span><span class="p">)</span>
 
-num_iterations_per_cost_func = 5000
-cost_functions = [get_cost, get_cost_new2]
-total_iterations = num_iterations_per_cost_func * len(cost_functions)
+<span class="n">num_iterations_per_cost_func</span> <span class="o">=</span> <span class="mi">5000</span>
+<span class="n">cost_functions</span> <span class="o">=</span> <span class="p">[</span><span class="n">get_cost</span><span class="p">,</span> <span class="n">get_cost_new2</span><span class="p">]</span>
+<span class="n">total_iterations</span> <span class="o">=</span> <span class="n">num_iterations_per_cost_func</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">cost_functions</span><span class="p">)</span>
 
-ctr = run_simulation_multiple_cost_functions(
-    vw,
-    num_iterations_per_cost_func,
-    users,
-    times_of_day,
-    actions,
-    cost_functions,
-    do_learn=False,
-)
+<span class="n">ctr</span> <span class="o">=</span> <span class="n">run_simulation_multiple_cost_functions</span><span class="p">(</span>
+    <span class="n">vw</span><span class="p">,</span>
+    <span class="n">num_iterations_per_cost_func</span><span class="p">,</span>
+    <span class="n">users</span><span class="p">,</span>
+    <span class="n">times_of_day</span><span class="p">,</span>
+    <span class="n">actions</span><span class="p">,</span>
+    <span class="n">cost_functions</span><span class="p">,</span>
+    <span class="n">do_learn</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+<span class="p">)</span>
 
-plot_ctr(total_iterations, ctr)
+<span class="n">plot_ctr</span><span class="p">(</span><span class="n">total_iterations</span><span class="p">,</span> <span class="n">ctr</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/077e99a025fbecd709ffedbf25693dcc8368fe9c0c32945043844087aef055d3.png" src="../_images/077e99a025fbecd709ffedbf25693dcc8368fe9c0c32945043844087aef055d3.png" />
+<img alt="../_images/9b0cece05b91b63f4e945c60e8f2f0b35fecad4d79ee8cede15cc4f49f1119a0.png" src="../_images/9b0cece05b91b63f4e945c60e8f2f0b35fecad4d79ee8cede15cc4f49f1119a0.png" />
 </div>
 </div>
 </section>

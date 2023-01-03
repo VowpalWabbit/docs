@@ -610,7 +610,7 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 <p>Sometimes you have multiple interacting learning systems and want to be able to predict an offset rather than an absolute value.</p>
 <p>Now, we learn:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>vw house_dataset
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>vw<span class="w"> </span>house_dataset
 </pre></div>
 </div>
 <p><strong>Output:</strong></p>
@@ -754,7 +754,7 @@ total feature number = 15
 <p>At the end, some more straightforward totals are printed. The <code class="docutils literal notranslate"><span class="pre">best</span> <span class="pre">constant</span></code> and <code class="docutils literal notranslate"><span class="pre">best</span> <span class="pre">constant's</span> <span class="pre">loss</span></code> only work if you are using squared loss. Squared loss is the Vowpal Wabbit default. They compute the best constant’s predictor and the loss of the best constant predictor.</p>
 <p>If <code class="docutils literal notranslate"><span class="pre">average</span> <span class="pre">loss</span></code> is not better than <code class="docutils literal notranslate"><span class="pre">best</span> <span class="pre">constant's</span> <span class="pre">loss</span></code>, something is wrong. In this case, we have too few examples to generalize.</p>
 <p>If you want to overfit, use the following:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>vw house_dataset -l <span class="m">10</span> -c --passes <span class="m">25</span> --holdout_off
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>vw<span class="w"> </span>house_dataset<span class="w"> </span>-l<span class="w"> </span><span class="m">10</span><span class="w"> </span>-c<span class="w"> </span>--passes<span class="w"> </span><span class="m">25</span><span class="w"> </span>--holdout_off
 </pre></div>
 </div>
 <p>The progress section of the output is:</p>
@@ -776,7 +776,7 @@ total feature number = 15
 <p>Vowpal Wabbit learns the weights of the features and keeps them in an in memory vector by default.</p>
 <p>Add <code class="docutils literal notranslate"><span class="pre">-f</span> <span class="pre">filename</span></code> to save the final regressor weights to a file.</p>
 <p>For example:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>vw house_dataset -l <span class="m">10</span> -c --passes <span class="m">25</span> --holdout_off -f house.model
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>vw<span class="w"> </span>house_dataset<span class="w"> </span>-l<span class="w"> </span><span class="m">10</span><span class="w"> </span>-c<span class="w"> </span>--passes<span class="w"> </span><span class="m">25</span><span class="w"> </span>--holdout_off<span class="w"> </span>-f<span class="w"> </span>house.model
 </pre></div>
 </div>
 </section>
@@ -784,7 +784,7 @@ total feature number = 15
 <h2>Vowpal Wabbit predictions<a class="headerlink" href="#vowpal-wabbit-predictions" title="Permalink to this headline">#</a></h2>
 <p>We can make predictions in Vowpal Wabbit by supplying the <code class="docutils literal notranslate"><span class="pre">-p</span> <span class="pre">filename</span></code>.</p>
 <p>For example, to output them to standard out <code class="docutils literal notranslate"><span class="pre">stdout</span></code>:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>vw house_dataset -p /dev/stdout --quiet
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>vw<span class="w"> </span>house_dataset<span class="w"> </span>-p<span class="w"> </span>/dev/stdout<span class="w"> </span>--quiet
 </pre></div>
 </div>
 <p><strong>Output:</strong></p>
@@ -801,7 +801,7 @@ total feature number = 15
 <p>In the last example, Vowpal Wabbit predicted while it learned. The model was being built in memory incrementally, as it went over the examples.</p>
 <p>It is more common to learn first, then save the model to a file. Then, you make predictions using that saved model.</p>
 <p>Use <code class="docutils literal notranslate"><span class="pre">-i</span> <span class="pre">house.model</span></code> to load the initial model to memory. Add <code class="docutils literal notranslate"><span class="pre">-t</span></code> to specify <strong>test-only</strong> (do no learning):</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>vw -i house.model -t house_dataset -p /dev/stdout --quiet
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>vw<span class="w"> </span>-i<span class="w"> </span>house.model<span class="w"> </span>-t<span class="w"> </span>house_dataset<span class="w"> </span>-p<span class="w"> </span>/dev/stdout<span class="w"> </span>--quiet
 </pre></div>
 </div>
 <p><strong>Output:</strong></p>

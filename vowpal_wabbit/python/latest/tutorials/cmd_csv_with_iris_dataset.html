@@ -533,7 +533,7 @@ const thebe_selector_output = ".output, .cell_output"
 <h2>Training scenario and dataset<a class="headerlink" href="#training-scenario-and-dataset" title="Permalink to this headline">#</a></h2>
 <p>For this tutorial scenario, we want to use Vowpal Wabbit to help us classify iris plants into three species using the CSV format dataset. The dataset includes three iris species with 50 samples each as well as some properties of each flower.</p>
 <p>First, download the CSV iris dataset from the internet:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>wget https://github.com/VowpalWabbit/vowpal_wabbit/files/9203605/iris.csv -o iris.csv
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>wget<span class="w"> </span>https://github.com/VowpalWabbit/vowpal_wabbit/files/9203605/iris.csv<span class="w"> </span>-o<span class="w"> </span>iris.csv
 </pre></div>
 </div>
 <p>The <code class="docutils literal notranslate"><span class="pre">iris.csv</span></code> is what we are going to use in the following steps, and it looks like this:</p>
@@ -644,7 +644,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p>Next, we train a model and save it to a file.</p>
 <section id="with-full-parameters">
 <h3>With full parameters<a class="headerlink" href="#with-full-parameters" title="Permalink to this headline">#</a></h3>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>vw --csv -d iris.csv --csv_separator <span class="s2">&quot;,&quot;</span> --csv_header <span class="s2">&quot;_tag,Sepal|Length,Sepal|Width,Petal|Length,Petal|Width,_label&quot;</span> --csv_ns_value Sepal:1,Petal:1 --named_labels setosa,versicolor,virginica --oaa <span class="m">3</span> -f model.vw
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>vw<span class="w"> </span>--csv<span class="w"> </span>-d<span class="w"> </span>iris.csv<span class="w"> </span>--csv_separator<span class="w"> </span><span class="s2">&quot;,&quot;</span><span class="w"> </span>--csv_header<span class="w"> </span><span class="s2">&quot;_tag,Sepal|Length,Sepal|Width,Petal|Length,Petal|Width,_label&quot;</span><span class="w"> </span>--csv_ns_value<span class="w"> </span>Sepal:1,Petal:1<span class="w"> </span>--named_labels<span class="w"> </span>setosa,versicolor,virginica<span class="w"> </span>--oaa<span class="w"> </span><span class="m">3</span><span class="w"> </span>-f<span class="w"> </span>model.vw
 </pre></div>
 </div>
 <p>This tells Vowpal Wabbit to:</p>
@@ -708,7 +708,7 @@ total feature number = 750
 </pre></div>
 </div>
 <p>The command is as follows, and the output should be the same with full parameters:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>vw --csv -d iris.csv --named_labels setosa,versicolor,virginica --oaa <span class="m">3</span> -f model.vw
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>vw<span class="w"> </span>--csv<span class="w"> </span>-d<span class="w"> </span>iris.csv<span class="w"> </span>--named_labels<span class="w"> </span>setosa,versicolor,virginica<span class="w"> </span>--oaa<span class="w"> </span><span class="m">3</span><span class="w"> </span>-f<span class="w"> </span>model.vw
 </pre></div>
 </div>
 </section>
@@ -720,7 +720,7 @@ total feature number = 750
 </pre></div>
 </div>
 <p>We get a prediction by loading the model and supplying our test data:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>vw --csv -d test.csv --csv_header <span class="s2">&quot;Sepal|Length,Sepal|Width,Petal|Length,Petal|Width&quot;</span> --csv_no_file_header --named_labels setosa,versicolor,virginica --oaa <span class="m">3</span> -i model.vw -p predictions.txt
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>vw<span class="w"> </span>--csv<span class="w"> </span>-d<span class="w"> </span>test.csv<span class="w"> </span>--csv_header<span class="w"> </span><span class="s2">&quot;Sepal|Length,Sepal|Width,Petal|Length,Petal|Width&quot;</span><span class="w"> </span>--csv_no_file_header<span class="w"> </span>--named_labels<span class="w"> </span>setosa,versicolor,virginica<span class="w"> </span>--oaa<span class="w"> </span><span class="m">3</span><span class="w"> </span>-i<span class="w"> </span>model.vw<span class="w"> </span>-p<span class="w"> </span>predictions.txt
 </pre></div>
 </div>
 <p>Aside from the ones that are already explained in the <span class="xref myst">Training section</span>, This tells Vowpal Wabbit to:</p>

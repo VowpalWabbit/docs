@@ -527,7 +527,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p>For any vw project in python, we have to start by importing the pyvw library:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>import vowpalwabbit
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">vowpalwabbit</span>
 </pre></div>
 </div>
 </div>
@@ -535,23 +535,23 @@ const thebe_selector_output = ".output, .cell_output"
 <p>Now, let’s define our data first. We’ll do this first by defining the labels (one annoying thing is that labels in vw have to be integers):</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>DET = 1
-NOUN = 2
-VERB = 3
-ADJ = 4
-my_dataset = [
-    [
-        (DET, &quot;the&quot;),
-        (NOUN, &quot;monster&quot;),
-        (VERB, &quot;ate&quot;),
-        (DET, &quot;a&quot;),
-        (ADJ, &quot;big&quot;),
-        (NOUN, &quot;sandwich&quot;),
-    ],
-    [(DET, &quot;the&quot;), (NOUN, &quot;sandwich&quot;), (VERB, &quot;was&quot;), (ADJ, &quot;tasty&quot;)],
-    [(NOUN, &quot;it&quot;), (VERB, &quot;ate&quot;), (NOUN, &quot;it&quot;), (ADJ, &quot;all&quot;)],
-]
-print(my_dataset[2])
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">DET</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">NOUN</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">VERB</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">ADJ</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="n">my_dataset</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">[</span>
+        <span class="p">(</span><span class="n">DET</span><span class="p">,</span> <span class="s2">&quot;the&quot;</span><span class="p">),</span>
+        <span class="p">(</span><span class="n">NOUN</span><span class="p">,</span> <span class="s2">&quot;monster&quot;</span><span class="p">),</span>
+        <span class="p">(</span><span class="n">VERB</span><span class="p">,</span> <span class="s2">&quot;ate&quot;</span><span class="p">),</span>
+        <span class="p">(</span><span class="n">DET</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">),</span>
+        <span class="p">(</span><span class="n">ADJ</span><span class="p">,</span> <span class="s2">&quot;big&quot;</span><span class="p">),</span>
+        <span class="p">(</span><span class="n">NOUN</span><span class="p">,</span> <span class="s2">&quot;sandwich&quot;</span><span class="p">),</span>
+    <span class="p">],</span>
+    <span class="p">[(</span><span class="n">DET</span><span class="p">,</span> <span class="s2">&quot;the&quot;</span><span class="p">),</span> <span class="p">(</span><span class="n">NOUN</span><span class="p">,</span> <span class="s2">&quot;sandwich&quot;</span><span class="p">),</span> <span class="p">(</span><span class="n">VERB</span><span class="p">,</span> <span class="s2">&quot;was&quot;</span><span class="p">),</span> <span class="p">(</span><span class="n">ADJ</span><span class="p">,</span> <span class="s2">&quot;tasty&quot;</span><span class="p">)],</span>
+    <span class="p">[(</span><span class="n">NOUN</span><span class="p">,</span> <span class="s2">&quot;it&quot;</span><span class="p">),</span> <span class="p">(</span><span class="n">VERB</span><span class="p">,</span> <span class="s2">&quot;ate&quot;</span><span class="p">),</span> <span class="p">(</span><span class="n">NOUN</span><span class="p">,</span> <span class="s2">&quot;it&quot;</span><span class="p">),</span> <span class="p">(</span><span class="n">ADJ</span><span class="p">,</span> <span class="s2">&quot;all&quot;</span><span class="p">)],</span>
+<span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_dataset</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
 </pre></div>
 </div>
 </div>
@@ -569,34 +569,34 @@ print(my_dataset[2])
 <p>Here is a basic implementation of sequence labeling:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>class SequenceLabeler(vowpalwabbit.pyvw.SearchTask):
-    def __init__(self, vw, sch, num_actions):
-        # you must must must initialize the parent class
-        # this will automatically store self.sch &lt;- sch, self.vw &lt;- vw
-        vowpalwabbit.pyvw.SearchTask.__init__(self, vw, sch, num_actions)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">SequenceLabeler</span><span class="p">(</span><span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">pyvw</span><span class="o">.</span><span class="n">SearchTask</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vw</span><span class="p">,</span> <span class="n">sch</span><span class="p">,</span> <span class="n">num_actions</span><span class="p">):</span>
+        <span class="c1"># you must must must initialize the parent class</span>
+        <span class="c1"># this will automatically store self.sch &lt;- sch, self.vw &lt;- vw</span>
+        <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">pyvw</span><span class="o">.</span><span class="n">SearchTask</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vw</span><span class="p">,</span> <span class="n">sch</span><span class="p">,</span> <span class="n">num_actions</span><span class="p">)</span>
 
-        # set whatever options you want
-        sch.set_options(sch.AUTO_HAMMING_LOSS | sch.AUTO_CONDITION_FEATURES)
+        <span class="c1"># set whatever options you want</span>
+        <span class="n">sch</span><span class="o">.</span><span class="n">set_options</span><span class="p">(</span><span class="n">sch</span><span class="o">.</span><span class="n">AUTO_HAMMING_LOSS</span> <span class="o">|</span> <span class="n">sch</span><span class="o">.</span><span class="n">AUTO_CONDITION_FEATURES</span><span class="p">)</span>
 
-    def _run(
-        self, sentence
-    ):  # it&#39;s called _run to remind you that you shouldn&#39;t call it directly!
-        output = []
-        for n in range(len(sentence)):
-            pos, word = sentence[n]
-            # use &quot;with...as...&quot; to guarantee that the example is finished properly
-            ex = self.vw.example({&quot;w&quot;: [word]})
-            pred = self.sch.predict(
-                examples=ex,
-                my_tag=n + 1,
-                oracle=pos,
-                condition=[(n, &quot;p&quot;), (n - 1, &quot;q&quot;)],
-            )
-            self.vw.finish_example(
-                [ex]
-            )  # must pass the example in as a list because search is a MultiEx reduction
-            output.append(pred)
-        return output
+    <span class="k">def</span> <span class="nf">_run</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">sentence</span>
+    <span class="p">):</span>  <span class="c1"># it&#39;s called _run to remind you that you shouldn&#39;t call it directly!</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">sentence</span><span class="p">)):</span>
+            <span class="n">pos</span><span class="p">,</span> <span class="n">word</span> <span class="o">=</span> <span class="n">sentence</span><span class="p">[</span><span class="n">n</span><span class="p">]</span>
+            <span class="c1"># use &quot;with...as...&quot; to guarantee that the example is finished properly</span>
+            <span class="n">ex</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">vw</span><span class="o">.</span><span class="n">example</span><span class="p">({</span><span class="s2">&quot;w&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">word</span><span class="p">]})</span>
+            <span class="n">pred</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sch</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span>
+                <span class="n">examples</span><span class="o">=</span><span class="n">ex</span><span class="p">,</span>
+                <span class="n">my_tag</span><span class="o">=</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span>
+                <span class="n">oracle</span><span class="o">=</span><span class="n">pos</span><span class="p">,</span>
+                <span class="n">condition</span><span class="o">=</span><span class="p">[(</span><span class="n">n</span><span class="p">,</span> <span class="s2">&quot;p&quot;</span><span class="p">),</span> <span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;q&quot;</span><span class="p">)],</span>
+            <span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">vw</span><span class="o">.</span><span class="n">finish_example</span><span class="p">(</span>
+                <span class="p">[</span><span class="n">ex</span><span class="p">]</span>
+            <span class="p">)</span>  <span class="c1"># must pass the example in as a list because search is a MultiEx reduction</span>
+            <span class="n">output</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">pred</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">output</span>
 </pre></div>
 </div>
 </div>
@@ -614,7 +614,7 @@ print(my_dataset[2])
 <p>Now, we’re ready to train the model. We do this in three steps. First, we initialize a vw object, telling it that we have a <code class="docutils literal notranslate"><span class="pre">--search</span></code> task with 4 labels, second that the specific type of <code class="docutils literal notranslate"><span class="pre">--search_task</span></code> is <code class="docutils literal notranslate"><span class="pre">hook</span></code> (you will always use the <code class="docutils literal notranslate"><span class="pre">hook</span></code> task) and finally that we want it to be quiet and use a larger <code class="docutils literal notranslate"><span class="pre">ring_size</span></code> (you can ignore the <code class="docutils literal notranslate"><span class="pre">ring_size</span></code> for now).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>vw = vowpalwabbit.Workspace(&quot;--search 4 --search_task hook&quot;, quiet=True)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--search 4 --search_task hook&quot;</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -622,7 +622,7 @@ print(my_dataset[2])
 <p>Next, we need to initialize the search task. We use the <code class="docutils literal notranslate"><span class="pre">vw.init_search_task</span></code> function to do this:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>sequenceLabeler = vw.init_search_task(SequenceLabeler)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sequenceLabeler</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">init_search_task</span><span class="p">(</span><span class="n">SequenceLabeler</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -630,8 +630,8 @@ print(my_dataset[2])
 <p>Finally, we can train on the dataset we defined earlier, using <code class="docutils literal notranslate"><span class="pre">sequenceLabeler.learn</span></code> (the <code class="docutils literal notranslate"><span class="pre">.learn</span></code> function is inherited from the <code class="docutils literal notranslate"><span class="pre">pyvw.SearchTask</span></code> class). The <code class="docutils literal notranslate"><span class="pre">.learn</span></code> function takes any iterator over data. Whatever type of data it iterates over is what it will feed to your <code class="docutils literal notranslate"><span class="pre">_run</span></code> function.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>for i in range(10):
-    sequenceLabeler.learn(my_dataset)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="n">sequenceLabeler</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">my_dataset</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -639,8 +639,8 @@ print(my_dataset[2])
 <p>Of course, we want to see if it’s learned anything. So let’s create a single test example:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>test_example = [(1, w) for w in &quot;the sandwich ate a monster&quot;.split()]
-print(test_example)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">test_example</span> <span class="o">=</span> <span class="p">[(</span><span class="mi">1</span><span class="p">,</span> <span class="n">w</span><span class="p">)</span> <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="s2">&quot;the sandwich ate a monster&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">()]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">test_example</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -653,8 +653,8 @@ print(test_example)
 <p>We’ve used <code class="docutils literal notranslate"><span class="pre">0</span></code> as the labels so you can be sure that vw isn’t cheating and it’s actually making predictions:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>out = sequenceLabeler.predict(test_example)
-print(out)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">out</span> <span class="o">=</span> <span class="n">sequenceLabeler</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">test_example</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">out</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -670,36 +670,36 @@ print(out)
 <p>In the above example we used both AUTO_HAMMING_LOSS and AUTO_CONDITION_FEATURES. To make more explicit what these are doing, let’s rewrite our <code class="docutils literal notranslate"><span class="pre">SequenceLabeler</span></code> class without them! Here’s a version that gets rid of both simultaneously. It is only modestly more complex:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>class SequenceLabeler2(vowpalwabbit.pyvw.SearchTask):
-    def __init__(self, vw, sch, num_actions):
-        vowpalwabbit.pyvw.SearchTask.__init__(self, vw, sch, num_actions)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">SequenceLabeler2</span><span class="p">(</span><span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">pyvw</span><span class="o">.</span><span class="n">SearchTask</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vw</span><span class="p">,</span> <span class="n">sch</span><span class="p">,</span> <span class="n">num_actions</span><span class="p">):</span>
+        <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">pyvw</span><span class="o">.</span><span class="n">SearchTask</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vw</span><span class="p">,</span> <span class="n">sch</span><span class="p">,</span> <span class="n">num_actions</span><span class="p">)</span>
 
-    def _run(self, sentence):
-        output = []
-        loss = 0.0
-        for n in range(len(sentence)):
-            pos, word = sentence[n]
-            prevPred = output[n - 1] if n &gt; 0 else &quot;&lt;s&gt;&quot;
+    <span class="k">def</span> <span class="nf">_run</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sentence</span><span class="p">):</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">loss</span> <span class="o">=</span> <span class="mf">0.0</span>
+        <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">sentence</span><span class="p">)):</span>
+            <span class="n">pos</span><span class="p">,</span> <span class="n">word</span> <span class="o">=</span> <span class="n">sentence</span><span class="p">[</span><span class="n">n</span><span class="p">]</span>
+            <span class="n">prevPred</span> <span class="o">=</span> <span class="n">output</span><span class="p">[</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="k">if</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="s2">&quot;&lt;s&gt;&quot;</span>
 
-            ex = self.vw.example({&quot;w&quot;: [word], &quot;p&quot;: [prevPred]})
+            <span class="n">ex</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">vw</span><span class="o">.</span><span class="n">example</span><span class="p">({</span><span class="s2">&quot;w&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">word</span><span class="p">],</span> <span class="s2">&quot;p&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">prevPred</span><span class="p">]})</span>
 
-            pred = self.sch.predict(
-                examples=ex, my_tag=n + 1, oracle=pos, condition=(n, &quot;p&quot;)
-            )
-            vw.finish_example([ex])
+            <span class="n">pred</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sch</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span>
+                <span class="n">examples</span><span class="o">=</span><span class="n">ex</span><span class="p">,</span> <span class="n">my_tag</span><span class="o">=</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">oracle</span><span class="o">=</span><span class="n">pos</span><span class="p">,</span> <span class="n">condition</span><span class="o">=</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="s2">&quot;p&quot;</span><span class="p">)</span>
+            <span class="p">)</span>
+            <span class="n">vw</span><span class="o">.</span><span class="n">finish_example</span><span class="p">([</span><span class="n">ex</span><span class="p">])</span>
 
-            output.append(pred)
+            <span class="n">output</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">pred</span><span class="p">)</span>
 
-            if pred != pos:
-                loss += 1.0
+            <span class="k">if</span> <span class="n">pred</span> <span class="o">!=</span> <span class="n">pos</span><span class="p">:</span>
+                <span class="n">loss</span> <span class="o">+=</span> <span class="mf">1.0</span>
 
-        self.sch.loss(loss)
-        return output
+        <span class="bp">self</span><span class="o">.</span><span class="n">sch</span><span class="o">.</span><span class="n">loss</span><span class="p">(</span><span class="n">loss</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">output</span>
 
 
-sequenceLabeler2 = vw.init_search_task(SequenceLabeler2)
-sequenceLabeler2.learn(my_dataset)
-print(sequenceLabeler2.predict([(1, w) for w in &quot;the sandwich ate a monster&quot;.split()]))
+<span class="n">sequenceLabeler2</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">init_search_task</span><span class="p">(</span><span class="n">SequenceLabeler2</span><span class="p">)</span>
+<span class="n">sequenceLabeler2</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">my_dataset</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sequenceLabeler2</span><span class="o">.</span><span class="n">predict</span><span class="p">([(</span><span class="mi">1</span><span class="p">,</span> <span class="n">w</span><span class="p">)</span> <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="s2">&quot;the sandwich ate a monster&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">()]))</span>
 </pre></div>
 </div>
 </div>
@@ -719,24 +719,24 @@ print(sequenceLabeler2.predict([(1, w) for w in &quot;the sandwich ate a monster
 <p>Let’s also try a variant of dependency parsing to see that this doesn’t work just for sequence-labeling list tasks. First we need to define some data:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># the label for each word is its parent, or -1 for root
-my_dataset = [
-    [
-        (&quot;the&quot;, 1),  # 0
-        (&quot;monster&quot;, 2),  # 1
-        (&quot;ate&quot;, -1),  # 2
-        (&quot;a&quot;, 5),  # 3
-        (&quot;big&quot;, 5),  # 4
-        (&quot;sandwich&quot;, 2),
-    ],  # 5
-    [(&quot;the&quot;, 1), (&quot;sandwich&quot;, 2), (&quot;is&quot;, -1), (&quot;tasty&quot;, 2)],  # 0  # 1  # 2  # 3
-    [
-        (&quot;a&quot;, 1),  # 0
-        (&quot;sandwich&quot;, 2),  # 1
-        (&quot;ate&quot;, -1),  # 2
-        (&quot;itself&quot;, 2),  # 3
-    ],
-]
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># the label for each word is its parent, or -1 for root</span>
+<span class="n">my_dataset</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">[</span>
+        <span class="p">(</span><span class="s2">&quot;the&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>  <span class="c1"># 0</span>
+        <span class="p">(</span><span class="s2">&quot;monster&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span>  <span class="c1"># 1</span>
+        <span class="p">(</span><span class="s2">&quot;ate&quot;</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">),</span>  <span class="c1"># 2</span>
+        <span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span>  <span class="c1"># 3</span>
+        <span class="p">(</span><span class="s2">&quot;big&quot;</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span>  <span class="c1"># 4</span>
+        <span class="p">(</span><span class="s2">&quot;sandwich&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span>
+    <span class="p">],</span>  <span class="c1"># 5</span>
+    <span class="p">[(</span><span class="s2">&quot;the&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="s2">&quot;sandwich&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="s2">&quot;is&quot;</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="s2">&quot;tasty&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">)],</span>  <span class="c1"># 0  # 1  # 2  # 3</span>
+    <span class="p">[</span>
+        <span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>  <span class="c1"># 0</span>
+        <span class="p">(</span><span class="s2">&quot;sandwich&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span>  <span class="c1"># 1</span>
+        <span class="p">(</span><span class="s2">&quot;ate&quot;</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">),</span>  <span class="c1"># 2</span>
+        <span class="p">(</span><span class="s2">&quot;itself&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span>  <span class="c1"># 3</span>
+    <span class="p">],</span>
+<span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -745,57 +745,57 @@ my_dataset = [
 <p>The basic idea of a Covington-style dependency parser is to loop over all O(N^2) word pairs and ask if one is the parent of the other. In a real parser you would want to make sure that you don’t have cycles, that you have a unique root and (perhaps) that the resulting graph is projective. I’m not doing that here. Hopefully I’ll add a shift-reduce parser example later that <em>does</em> do this. Here’s an implementation of this idea:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>class CovingtonDepParser(vowpalwabbit.pyvw.SearchTask):
-    def __init__(self, vw, sch, num_actions):
-        vowpalwabbit.pyvw.SearchTask.__init__(self, vw, sch, num_actions)
-        sch.set_options(sch.AUTO_HAMMING_LOSS | sch.AUTO_CONDITION_FEATURES)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CovingtonDepParser</span><span class="p">(</span><span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">pyvw</span><span class="o">.</span><span class="n">SearchTask</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vw</span><span class="p">,</span> <span class="n">sch</span><span class="p">,</span> <span class="n">num_actions</span><span class="p">):</span>
+        <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">pyvw</span><span class="o">.</span><span class="n">SearchTask</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vw</span><span class="p">,</span> <span class="n">sch</span><span class="p">,</span> <span class="n">num_actions</span><span class="p">)</span>
+        <span class="n">sch</span><span class="o">.</span><span class="n">set_options</span><span class="p">(</span><span class="n">sch</span><span class="o">.</span><span class="n">AUTO_HAMMING_LOSS</span> <span class="o">|</span> <span class="n">sch</span><span class="o">.</span><span class="n">AUTO_CONDITION_FEATURES</span><span class="p">)</span>
 
-    def _run(self, sentence):
-        N = len(sentence)
-        # initialize our output so everything is a root
-        output = [-1 for i in range(N)]
-        for n in range(N):
-            wordN, parN = sentence[n]
-            for m in range(-1, N):
-                if m == n:
-                    continue
-                wordM = sentence[m][0] if m &gt; 0 else &quot;*root*&quot;
-                # ask the question: is m the parent of n?
-                isParent = 2 if m == parN else 1
+    <span class="k">def</span> <span class="nf">_run</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sentence</span><span class="p">):</span>
+        <span class="n">N</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">sentence</span><span class="p">)</span>
+        <span class="c1"># initialize our output so everything is a root</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">)]</span>
+        <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+            <span class="n">wordN</span><span class="p">,</span> <span class="n">parN</span> <span class="o">=</span> <span class="n">sentence</span><span class="p">[</span><span class="n">n</span><span class="p">]</span>
+            <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">N</span><span class="p">):</span>
+                <span class="k">if</span> <span class="n">m</span> <span class="o">==</span> <span class="n">n</span><span class="p">:</span>
+                    <span class="k">continue</span>
+                <span class="n">wordM</span> <span class="o">=</span> <span class="n">sentence</span><span class="p">[</span><span class="n">m</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="k">if</span> <span class="n">m</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="s2">&quot;*root*&quot;</span>
+                <span class="c1"># ask the question: is m the parent of n?</span>
+                <span class="n">isParent</span> <span class="o">=</span> <span class="mi">2</span> <span class="k">if</span> <span class="n">m</span> <span class="o">==</span> <span class="n">parN</span> <span class="k">else</span> <span class="mi">1</span>
 
-                # construct an example
-                dir = &quot;l&quot; if m &lt; n else &quot;r&quot;
-                ex = self.vw.example(
-                    {
-                        &quot;a&quot;: [wordN, dir + &quot;_&quot; + wordN],
-                        &quot;b&quot;: [wordM, dir + &quot;_&quot; + wordN],
-                        &quot;p&quot;: [wordN + &quot;_&quot; + wordM, dir + &quot;_&quot; + wordN + &quot;_&quot; + wordM],
-                        &quot;d&quot;: [
-                            str(m - n &lt;= d) + &quot;&lt;=&quot; + str(d)
-                            for d in [-8, -4, -2, -1, 1, 2, 4, 8]
-                        ]
-                        + [
-                            str(m - n &gt;= d) + &quot;&gt;=&quot; + str(d)
-                            for d in [-8, -4, -2, -1, 1, 2, 4, 8]
-                        ],
-                    }
-                )
-                pred = self.sch.predict(
-                    examples=ex,
-                    my_tag=(m + 1) * N + n + 1,
-                    oracle=isParent,
-                    condition=[
-                        (max(0, (m) * N + n + 1), &quot;p&quot;),
-                        (max(0, (m + 1) * N + n), &quot;q&quot;),
-                    ],
-                )
-                self.vw.finish_example(
-                    [ex]
-                )  # must pass the example in as a list because search is a MultiEx reduction
-                if pred == 2:
-                    output[n] = m
-                    break
-        return output
+                <span class="c1"># construct an example</span>
+                <span class="nb">dir</span> <span class="o">=</span> <span class="s2">&quot;l&quot;</span> <span class="k">if</span> <span class="n">m</span> <span class="o">&lt;</span> <span class="n">n</span> <span class="k">else</span> <span class="s2">&quot;r&quot;</span>
+                <span class="n">ex</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">vw</span><span class="o">.</span><span class="n">example</span><span class="p">(</span>
+                    <span class="p">{</span>
+                        <span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">wordN</span><span class="p">,</span> <span class="nb">dir</span> <span class="o">+</span> <span class="s2">&quot;_&quot;</span> <span class="o">+</span> <span class="n">wordN</span><span class="p">],</span>
+                        <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">wordM</span><span class="p">,</span> <span class="nb">dir</span> <span class="o">+</span> <span class="s2">&quot;_&quot;</span> <span class="o">+</span> <span class="n">wordN</span><span class="p">],</span>
+                        <span class="s2">&quot;p&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">wordN</span> <span class="o">+</span> <span class="s2">&quot;_&quot;</span> <span class="o">+</span> <span class="n">wordM</span><span class="p">,</span> <span class="nb">dir</span> <span class="o">+</span> <span class="s2">&quot;_&quot;</span> <span class="o">+</span> <span class="n">wordN</span> <span class="o">+</span> <span class="s2">&quot;_&quot;</span> <span class="o">+</span> <span class="n">wordM</span><span class="p">],</span>
+                        <span class="s2">&quot;d&quot;</span><span class="p">:</span> <span class="p">[</span>
+                            <span class="nb">str</span><span class="p">(</span><span class="n">m</span> <span class="o">-</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="n">d</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;&lt;=&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+                            <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="p">[</span><span class="o">-</span><span class="mi">8</span><span class="p">,</span> <span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
+                        <span class="p">]</span>
+                        <span class="o">+</span> <span class="p">[</span>
+                            <span class="nb">str</span><span class="p">(</span><span class="n">m</span> <span class="o">-</span> <span class="n">n</span> <span class="o">&gt;=</span> <span class="n">d</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;&gt;=&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+                            <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="p">[</span><span class="o">-</span><span class="mi">8</span><span class="p">,</span> <span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
+                        <span class="p">],</span>
+                    <span class="p">}</span>
+                <span class="p">)</span>
+                <span class="n">pred</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sch</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span>
+                    <span class="n">examples</span><span class="o">=</span><span class="n">ex</span><span class="p">,</span>
+                    <span class="n">my_tag</span><span class="o">=</span><span class="p">(</span><span class="n">m</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="n">N</span> <span class="o">+</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span>
+                    <span class="n">oracle</span><span class="o">=</span><span class="n">isParent</span><span class="p">,</span>
+                    <span class="n">condition</span><span class="o">=</span><span class="p">[</span>
+                        <span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="p">(</span><span class="n">m</span><span class="p">)</span> <span class="o">*</span> <span class="n">N</span> <span class="o">+</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="s2">&quot;p&quot;</span><span class="p">),</span>
+                        <span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="p">(</span><span class="n">m</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="n">N</span> <span class="o">+</span> <span class="n">n</span><span class="p">),</span> <span class="s2">&quot;q&quot;</span><span class="p">),</span>
+                    <span class="p">],</span>
+                <span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">vw</span><span class="o">.</span><span class="n">finish_example</span><span class="p">(</span>
+                    <span class="p">[</span><span class="n">ex</span><span class="p">]</span>
+                <span class="p">)</span>  <span class="c1"># must pass the example in as a list because search is a MultiEx reduction</span>
+                <span class="k">if</span> <span class="n">pred</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+                    <span class="n">output</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="o">=</span> <span class="n">m</span>
+                    <span class="k">break</span>
+        <span class="k">return</span> <span class="n">output</span>
 </pre></div>
 </div>
 </div>
@@ -805,13 +805,13 @@ my_dataset = [
 <p>We can train and run this parser with:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>vw = vowpalwabbit.Workspace(&quot;--search 2 --search_task hook&quot;, quiet=True)
-task = vw.init_search_task(CovingtonDepParser)
-for p in range(10):  # do ten passes over the training data
-    task.learn(my_dataset)
-print(&quot;testing&quot;)
-print(task.predict([(w, -1) for w in &quot;the monster ate a sandwich&quot;.split()]))
-print(&quot;should have printed [ 1 2 -1 4 2 ]&quot;)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--search 2 --search_task hook&quot;</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">task</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">init_search_task</span><span class="p">(</span><span class="n">CovingtonDepParser</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>  <span class="c1"># do ten passes over the training data</span>
+    <span class="n">task</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">my_dataset</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;testing&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">task</span><span class="o">.</span><span class="n">predict</span><span class="p">([(</span><span class="n">w</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="s2">&quot;the monster ate a sandwich&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">()]))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;should have printed [ 1 2 -1 4 2 ]&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -833,70 +833,70 @@ should have printed [ 1 2 -1 4 2 ]
 <p>Here’s a re-implementation of Covington using LDF:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>class CovingtonDepParserLDF(vowpalwabbit.pyvw.SearchTask):
-    def __init__(self, vw, sch, num_actions):
-        vowpalwabbit.pyvw.SearchTask.__init__(self, vw, sch, num_actions)
-        sch.set_options(
-            sch.AUTO_HAMMING_LOSS | sch.IS_LDF | sch.AUTO_CONDITION_FEATURES
-        )
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CovingtonDepParserLDF</span><span class="p">(</span><span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">pyvw</span><span class="o">.</span><span class="n">SearchTask</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vw</span><span class="p">,</span> <span class="n">sch</span><span class="p">,</span> <span class="n">num_actions</span><span class="p">):</span>
+        <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">pyvw</span><span class="o">.</span><span class="n">SearchTask</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vw</span><span class="p">,</span> <span class="n">sch</span><span class="p">,</span> <span class="n">num_actions</span><span class="p">)</span>
+        <span class="n">sch</span><span class="o">.</span><span class="n">set_options</span><span class="p">(</span>
+            <span class="n">sch</span><span class="o">.</span><span class="n">AUTO_HAMMING_LOSS</span> <span class="o">|</span> <span class="n">sch</span><span class="o">.</span><span class="n">IS_LDF</span> <span class="o">|</span> <span class="n">sch</span><span class="o">.</span><span class="n">AUTO_CONDITION_FEATURES</span>
+        <span class="p">)</span>
 
-    def makeExample(self, sentence, n, m):
-        wordN = sentence[n][0]
-        wordM = sentence[m][0] if m &gt;= 0 else &quot;*ROOT*&quot;
-        dir = &quot;l&quot; if m &lt; n else &quot;r&quot;
-        ex = self.vw.example(
-            {
-                &quot;a&quot;: [wordN, dir + &quot;_&quot; + wordN],
-                &quot;b&quot;: [wordM, dir + &quot;_&quot; + wordM],
-                &quot;p&quot;: [wordN + &quot;_&quot; + wordM, dir + &quot;_&quot; + wordN + &quot;_&quot; + wordM],
-                &quot;d&quot;: [
-                    str(m - n &lt;= d) + &quot;&lt;=&quot; + str(d)
-                    for d in [-8, -4, -2, -1, 1, 2, 4, 8]
-                ]
-                + [
-                    str(m - n &gt;= d) + &quot;&gt;=&quot; + str(d)
-                    for d in [-8, -4, -2, -1, 1, 2, 4, 8]
-                ],
-            },
-            labelType=self.vw.lCostSensitive,
-        )
-        ex.set_label_string(
-            str(m + 2) + &quot;:0&quot;
-        )  # project the m-indices (-1...N into 1...N+2)
-        return ex
+    <span class="k">def</span> <span class="nf">makeExample</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sentence</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">m</span><span class="p">):</span>
+        <span class="n">wordN</span> <span class="o">=</span> <span class="n">sentence</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">wordM</span> <span class="o">=</span> <span class="n">sentence</span><span class="p">[</span><span class="n">m</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="k">if</span> <span class="n">m</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="k">else</span> <span class="s2">&quot;*ROOT*&quot;</span>
+        <span class="nb">dir</span> <span class="o">=</span> <span class="s2">&quot;l&quot;</span> <span class="k">if</span> <span class="n">m</span> <span class="o">&lt;</span> <span class="n">n</span> <span class="k">else</span> <span class="s2">&quot;r&quot;</span>
+        <span class="n">ex</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">vw</span><span class="o">.</span><span class="n">example</span><span class="p">(</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">wordN</span><span class="p">,</span> <span class="nb">dir</span> <span class="o">+</span> <span class="s2">&quot;_&quot;</span> <span class="o">+</span> <span class="n">wordN</span><span class="p">],</span>
+                <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">wordM</span><span class="p">,</span> <span class="nb">dir</span> <span class="o">+</span> <span class="s2">&quot;_&quot;</span> <span class="o">+</span> <span class="n">wordM</span><span class="p">],</span>
+                <span class="s2">&quot;p&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">wordN</span> <span class="o">+</span> <span class="s2">&quot;_&quot;</span> <span class="o">+</span> <span class="n">wordM</span><span class="p">,</span> <span class="nb">dir</span> <span class="o">+</span> <span class="s2">&quot;_&quot;</span> <span class="o">+</span> <span class="n">wordN</span> <span class="o">+</span> <span class="s2">&quot;_&quot;</span> <span class="o">+</span> <span class="n">wordM</span><span class="p">],</span>
+                <span class="s2">&quot;d&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="nb">str</span><span class="p">(</span><span class="n">m</span> <span class="o">-</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="n">d</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;&lt;=&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+                    <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="p">[</span><span class="o">-</span><span class="mi">8</span><span class="p">,</span> <span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
+                <span class="p">]</span>
+                <span class="o">+</span> <span class="p">[</span>
+                    <span class="nb">str</span><span class="p">(</span><span class="n">m</span> <span class="o">-</span> <span class="n">n</span> <span class="o">&gt;=</span> <span class="n">d</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;&gt;=&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+                    <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="p">[</span><span class="o">-</span><span class="mi">8</span><span class="p">,</span> <span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
+                <span class="p">],</span>
+            <span class="p">},</span>
+            <span class="n">labelType</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">vw</span><span class="o">.</span><span class="n">lCostSensitive</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="n">ex</span><span class="o">.</span><span class="n">set_label_string</span><span class="p">(</span>
+            <span class="nb">str</span><span class="p">(</span><span class="n">m</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;:0&quot;</span>
+        <span class="p">)</span>  <span class="c1"># project the m-indices (-1...N into 1...N+2)</span>
+        <span class="k">return</span> <span class="n">ex</span>
 
-    def _run(self, sentence):
-        N = len(sentence)
-        # initialize our output so everything is a root
-        output = [-1 for i in range(N)]
-        for n in range(N):
-            # make LDF examples
-            examples = [
-                self.makeExample(sentence, n, m) for m in range(-1, N) if n != m
-            ]
+    <span class="k">def</span> <span class="nf">_run</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sentence</span><span class="p">):</span>
+        <span class="n">N</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">sentence</span><span class="p">)</span>
+        <span class="c1"># initialize our output so everything is a root</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">)]</span>
+        <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+            <span class="c1"># make LDF examples</span>
+            <span class="n">examples</span> <span class="o">=</span> <span class="p">[</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">makeExample</span><span class="p">(</span><span class="n">sentence</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">m</span><span class="p">)</span> <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">N</span><span class="p">)</span> <span class="k">if</span> <span class="n">n</span> <span class="o">!=</span> <span class="n">m</span>
+            <span class="p">]</span>
 
-            # truth
-            parN = sentence[n][1]
-            oracle = (
-                parN + 1 if parN &lt; n else parN
-            )  # have to -1 because we excluded n==m from list
+            <span class="c1"># truth</span>
+            <span class="n">parN</span> <span class="o">=</span> <span class="n">sentence</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+            <span class="n">oracle</span> <span class="o">=</span> <span class="p">(</span>
+                <span class="n">parN</span> <span class="o">+</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">parN</span> <span class="o">&lt;</span> <span class="n">n</span> <span class="k">else</span> <span class="n">parN</span>
+            <span class="p">)</span>  <span class="c1"># have to -1 because we excluded n==m from list</span>
 
-            # make a prediction
-            pred = self.sch.predict(
-                examples=examples,
-                my_tag=n + 1,
-                oracle=oracle,
-                condition=[(n, &quot;p&quot;), (n - 1, &quot;q&quot;)],
-            )
+            <span class="c1"># make a prediction</span>
+            <span class="n">pred</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sch</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span>
+                <span class="n">examples</span><span class="o">=</span><span class="n">examples</span><span class="p">,</span>
+                <span class="n">my_tag</span><span class="o">=</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span>
+                <span class="n">oracle</span><span class="o">=</span><span class="n">oracle</span><span class="p">,</span>
+                <span class="n">condition</span><span class="o">=</span><span class="p">[(</span><span class="n">n</span><span class="p">,</span> <span class="s2">&quot;p&quot;</span><span class="p">),</span> <span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;q&quot;</span><span class="p">)],</span>
+            <span class="p">)</span>
 
-            output[n] = (
-                pred - 1 if pred &lt; n else pred
-            )  # have to +1 because n==m excluded
+            <span class="n">output</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
+                <span class="n">pred</span> <span class="o">-</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">pred</span> <span class="o">&lt;</span> <span class="n">n</span> <span class="k">else</span> <span class="n">pred</span>
+            <span class="p">)</span>  <span class="c1"># have to +1 because n==m excluded</span>
 
-            for ex in examples:
-                ex.finish()  # clean up
+            <span class="k">for</span> <span class="n">ex</span> <span class="ow">in</span> <span class="n">examples</span><span class="p">:</span>
+                <span class="n">ex</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>  <span class="c1"># clean up</span>
 
-        return output
+        <span class="k">return</span> <span class="n">output</span>
 </pre></div>
 </div>
 </div>
@@ -916,11 +916,11 @@ should have printed [ 1 2 -1 4 2 ]
 <p>Given all this, we can now train and test our parser:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>vw = vowpalwabbit.Workspace(&quot;--search 0 --csoaa_ldf m --search_task hook&quot;, quiet=True)
-task = vw.init_search_task(CovingtonDepParserLDF)
-# BUG: This currently does not work because oracle generation is incorrect (generates invalid oracle values)#for p in range(2): # do two passes over the training data
-#    task.learn(my_dataset)
-# print(task.predict( [(w,-1) for w in &quot;the monster ate a sandwich&quot;.split()] ))
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--search 0 --csoaa_ldf m --search_task hook&quot;</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">task</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">init_search_task</span><span class="p">(</span><span class="n">CovingtonDepParserLDF</span><span class="p">)</span>
+<span class="c1"># BUG: This currently does not work because oracle generation is incorrect (generates invalid oracle values)#for p in range(2): # do two passes over the training data</span>
+<span class="c1">#    task.learn(my_dataset)</span>
+<span class="c1"># print(task.predict( [(w,-1) for w in &quot;the monster ate a sandwich&quot;.split()] ))</span>
 </pre></div>
 </div>
 </div>
@@ -934,11 +934,11 @@ task = vw.init_search_task(CovingtonDepParserLDF)
 <p>Here’s some word alignment data. The dataset is triples of <code class="docutils literal notranslate"><span class="pre">E,</span> <span class="pre">A,</span> <span class="pre">F</span></code> where <code class="docutils literal notranslate"><span class="pre">A[i]</span></code> = list of words <code class="docutils literal notranslate"><span class="pre">E[i]</span></code> aligned to, or <code class="docutils literal notranslate"><span class="pre">[]</span></code> for null-aligned:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>my_dataset = [
-    (&quot;the blue house&quot;.split(), ([0], [2], [1]), &quot;la maison bleue&quot;.split()),
-    (&quot;the house&quot;.split(), ([0], [1]), &quot;la maison&quot;.split()),
-    (&quot;the flower&quot;.split(), ([0], [1]), &quot;la fleur&quot;.split()),
-]
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_dataset</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span><span class="s2">&quot;the blue house&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">(),</span> <span class="p">([</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">]),</span> <span class="s2">&quot;la maison bleue&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">()),</span>
+    <span class="p">(</span><span class="s2">&quot;the house&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">(),</span> <span class="p">([</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">]),</span> <span class="s2">&quot;la maison&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">()),</span>
+    <span class="p">(</span><span class="s2">&quot;the flower&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">(),</span> <span class="p">([</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">]),</span> <span class="s2">&quot;la fleur&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">()),</span>
+<span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -946,12 +946,12 @@ task = vw.init_search_task(CovingtonDepParserLDF)
 <p>It’s going to be useful to compute alignment mismatches at the word level between true alignments (like <code class="docutils literal notranslate"><span class="pre">[1,2]</span></code>) and predicted alignments (like <code class="docutils literal notranslate"><span class="pre">[2,3,4]</span></code>). We use intersection-over-union error:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>def alignmentError(true, sys):
-    t = set(true)
-    s = set(sys)
-    if len(t | s) == 0:
-        return 0.0
-    return 1.0 - float(len(t &amp; s)) / float(len(t | s))
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">alignmentError</span><span class="p">(</span><span class="n">true</span><span class="p">,</span> <span class="n">sys</span><span class="p">):</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">true</span><span class="p">)</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">sys</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">t</span> <span class="o">|</span> <span class="n">s</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mf">0.0</span>
+    <span class="k">return</span> <span class="mf">1.0</span> <span class="o">-</span> <span class="nb">float</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">t</span> <span class="o">&amp;</span> <span class="n">s</span><span class="p">))</span> <span class="o">/</span> <span class="nb">float</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">t</span> <span class="o">|</span> <span class="n">s</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -959,87 +959,87 @@ task = vw.init_search_task(CovingtonDepParserLDF)
 <p>And now we can define our structured prediction task. This is also an LDF problem. Basically for each word on the English side, we’ll loop over all possible phrases on the Foreign side to which it could align (maximum phrase length of three). For each of these options we’ll create an example to be fed into the LDF classifier. We also ensure that the same foreign word cannot be covered by multiple English words, though this might not be a good idea in general.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>class WordAligner(vowpalwabbit.pyvw.SearchTask):
-    def __init__(self, vw, sch, num_actions):
-        vowpalwabbit.pyvw.SearchTask.__init__(self, vw, sch, num_actions)
-        sch.set_options(
-            sch.AUTO_HAMMING_LOSS | sch.IS_LDF | sch.AUTO_CONDITION_FEATURES
-        )
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">WordAligner</span><span class="p">(</span><span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">pyvw</span><span class="o">.</span><span class="n">SearchTask</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vw</span><span class="p">,</span> <span class="n">sch</span><span class="p">,</span> <span class="n">num_actions</span><span class="p">):</span>
+        <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">pyvw</span><span class="o">.</span><span class="n">SearchTask</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vw</span><span class="p">,</span> <span class="n">sch</span><span class="p">,</span> <span class="n">num_actions</span><span class="p">)</span>
+        <span class="n">sch</span><span class="o">.</span><span class="n">set_options</span><span class="p">(</span>
+            <span class="n">sch</span><span class="o">.</span><span class="n">AUTO_HAMMING_LOSS</span> <span class="o">|</span> <span class="n">sch</span><span class="o">.</span><span class="n">IS_LDF</span> <span class="o">|</span> <span class="n">sch</span><span class="o">.</span><span class="n">AUTO_CONDITION_FEATURES</span>
+        <span class="p">)</span>
 
-    def makeExample(self, E, F, i, j0, l):
-        f = &quot;Null&quot; if j0 is None else [F[j0 + k] for k in range(l + 1)]
-        ex = self.vw.example(
-            {
-                &quot;e&quot;: E[i],
-                &quot;f&quot;: f,
-                &quot;p&quot;: &quot;_&quot;.join(f),
-                &quot;l&quot;: str(l),
-                &quot;o&quot;: [str(i - j0), str(i - j0 - l)] if j0 is not None else [],
-            },
-            labelType=self.vw.lCostSensitive,
-        )
-        lab = &quot;Null&quot; if j0 is None else str(j0 + l)
-        ex.set_label_string(lab + &quot;:0&quot;)
-        return ex
+    <span class="k">def</span> <span class="nf">makeExample</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">E</span><span class="p">,</span> <span class="n">F</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">j0</span><span class="p">,</span> <span class="n">l</span><span class="p">):</span>
+        <span class="n">f</span> <span class="o">=</span> <span class="s2">&quot;Null&quot;</span> <span class="k">if</span> <span class="n">j0</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="p">[</span><span class="n">F</span><span class="p">[</span><span class="n">j0</span> <span class="o">+</span> <span class="n">k</span><span class="p">]</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">l</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)]</span>
+        <span class="n">ex</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">vw</span><span class="o">.</span><span class="n">example</span><span class="p">(</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;e&quot;</span><span class="p">:</span> <span class="n">E</span><span class="p">[</span><span class="n">i</span><span class="p">],</span>
+                <span class="s2">&quot;f&quot;</span><span class="p">:</span> <span class="n">f</span><span class="p">,</span>
+                <span class="s2">&quot;p&quot;</span><span class="p">:</span> <span class="s2">&quot;_&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">f</span><span class="p">),</span>
+                <span class="s2">&quot;l&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">l</span><span class="p">),</span>
+                <span class="s2">&quot;o&quot;</span><span class="p">:</span> <span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span> <span class="o">-</span> <span class="n">j0</span><span class="p">),</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span> <span class="o">-</span> <span class="n">j0</span> <span class="o">-</span> <span class="n">l</span><span class="p">)]</span> <span class="k">if</span> <span class="n">j0</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="p">[],</span>
+            <span class="p">},</span>
+            <span class="n">labelType</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">vw</span><span class="o">.</span><span class="n">lCostSensitive</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="n">lab</span> <span class="o">=</span> <span class="s2">&quot;Null&quot;</span> <span class="k">if</span> <span class="n">j0</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="nb">str</span><span class="p">(</span><span class="n">j0</span> <span class="o">+</span> <span class="n">l</span><span class="p">)</span>
+        <span class="n">ex</span><span class="o">.</span><span class="n">set_label_string</span><span class="p">(</span><span class="n">lab</span> <span class="o">+</span> <span class="s2">&quot;:0&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">ex</span>
 
-    def _run(self, alignedSentence):
-        E, A, F = alignedSentence
+    <span class="k">def</span> <span class="nf">_run</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">alignedSentence</span><span class="p">):</span>
+        <span class="n">E</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">F</span> <span class="o">=</span> <span class="n">alignedSentence</span>
 
-        # for each E word, we pick a F span
-        covered = {}  # which F words have been covered so far?
-        output = []
+        <span class="c1"># for each E word, we pick a F span</span>
+        <span class="n">covered</span> <span class="o">=</span> <span class="p">{}</span>  <span class="c1"># which F words have been covered so far?</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="p">[]</span>
 
-        for i in range(len(E)):
-            examples = []  # contains vw examples
-            spans = []  # contains triples (alignment error, index in examples, [range])
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">E</span><span class="p">)):</span>
+            <span class="n">examples</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># contains vw examples</span>
+            <span class="n">spans</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># contains triples (alignment error, index in examples, [range])</span>
 
-            # empty span:
-            examples.append(self.makeExample(E, F, i, None, None))
-            spans.append((alignmentError(A[i], []), 0, []))
+            <span class="c1"># empty span:</span>
+            <span class="n">examples</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">makeExample</span><span class="p">(</span><span class="n">E</span><span class="p">,</span> <span class="n">F</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">))</span>
+            <span class="n">spans</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">alignmentError</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="p">[]),</span> <span class="mi">0</span><span class="p">,</span> <span class="p">[]))</span>
 
-            # non-empty spans
-            for j0 in range(len(F)):
-                for l in range(3):  # max phrase length of 3
-                    if j0 + l &gt;= len(F):
-                        break
-                    if covered.has_key(j0 + l):
-                        break
+            <span class="c1"># non-empty spans</span>
+            <span class="k">for</span> <span class="n">j0</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">F</span><span class="p">)):</span>
+                <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>  <span class="c1"># max phrase length of 3</span>
+                    <span class="k">if</span> <span class="n">j0</span> <span class="o">+</span> <span class="n">l</span> <span class="o">&gt;=</span> <span class="nb">len</span><span class="p">(</span><span class="n">F</span><span class="p">):</span>
+                        <span class="k">break</span>
+                    <span class="k">if</span> <span class="n">covered</span><span class="o">.</span><span class="n">has_key</span><span class="p">(</span><span class="n">j0</span> <span class="o">+</span> <span class="n">l</span><span class="p">):</span>
+                        <span class="k">break</span>
 
-                    id = len(examples)
-                    examples.append(self.makeExample(E, F, i, j0, l))
-                    spans.append(
-                        (
-                            alignmentError(A[i], range(j0, j0 + l + 1)),
-                            id,
-                            range(j0, j0 + l + 1),
-                        )
-                    )
+                    <span class="nb">id</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">examples</span><span class="p">)</span>
+                    <span class="n">examples</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">makeExample</span><span class="p">(</span><span class="n">E</span><span class="p">,</span> <span class="n">F</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">j0</span><span class="p">,</span> <span class="n">l</span><span class="p">))</span>
+                    <span class="n">spans</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+                        <span class="p">(</span>
+                            <span class="n">alignmentError</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="nb">range</span><span class="p">(</span><span class="n">j0</span><span class="p">,</span> <span class="n">j0</span> <span class="o">+</span> <span class="n">l</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)),</span>
+                            <span class="nb">id</span><span class="p">,</span>
+                            <span class="nb">range</span><span class="p">(</span><span class="n">j0</span><span class="p">,</span> <span class="n">j0</span> <span class="o">+</span> <span class="n">l</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span>
+                        <span class="p">)</span>
+                    <span class="p">)</span>
 
-            sortedSpans = []
-            for s in spans:
-                sortedSpans.append(s)
-            sortedSpans.sort()
-            oracle = []
-            for id in range(len(sortedSpans)):
-                if sortedSpans[id][0] &gt; sortedSpans[0][0]:
-                    break
-                oracle.append(sortedSpans[id][1])
+            <span class="n">sortedSpans</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">spans</span><span class="p">:</span>
+                <span class="n">sortedSpans</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+            <span class="n">sortedSpans</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+            <span class="n">oracle</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">for</span> <span class="nb">id</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">sortedSpans</span><span class="p">)):</span>
+                <span class="k">if</span> <span class="n">sortedSpans</span><span class="p">[</span><span class="nb">id</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">sortedSpans</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]:</span>
+                    <span class="k">break</span>
+                <span class="n">oracle</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">sortedSpans</span><span class="p">[</span><span class="nb">id</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
 
-            pred = self.sch.predict(
-                examples=examples,
-                my_tag=i + 1,
-                oracle=oracle,
-                condition=[(i, &quot;p&quot;), (i - 1, &quot;q&quot;)],
-            )
+            <span class="n">pred</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sch</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span>
+                <span class="n">examples</span><span class="o">=</span><span class="n">examples</span><span class="p">,</span>
+                <span class="n">my_tag</span><span class="o">=</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span>
+                <span class="n">oracle</span><span class="o">=</span><span class="n">oracle</span><span class="p">,</span>
+                <span class="n">condition</span><span class="o">=</span><span class="p">[(</span><span class="n">i</span><span class="p">,</span> <span class="s2">&quot;p&quot;</span><span class="p">),</span> <span class="p">(</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;q&quot;</span><span class="p">)],</span>
+            <span class="p">)</span>
 
-            for ex in examples:
-                ex.finish()
+            <span class="k">for</span> <span class="n">ex</span> <span class="ow">in</span> <span class="n">examples</span><span class="p">:</span>
+                <span class="n">ex</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>
 
-            output.append(spans[pred][2])
-            for j in spans[pred][2]:
-                covered[j] = True
+            <span class="n">output</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">spans</span><span class="p">[</span><span class="n">pred</span><span class="p">][</span><span class="mi">2</span><span class="p">])</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">spans</span><span class="p">[</span><span class="n">pred</span><span class="p">][</span><span class="mi">2</span><span class="p">]:</span>
+                <span class="n">covered</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
 
-        return output
+        <span class="k">return</span> <span class="n">output</span>
 </pre></div>
 </div>
 </div>
@@ -1048,13 +1048,13 @@ task = vw.init_search_task(CovingtonDepParserLDF)
 <p>We can train and test this model to make sure it does the right thing:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>vw = vowpalwabbit.Workspace(
-    &quot;--search 0 --csoaa_ldf m --search_task hook -q ef -q ep&quot;, quiet=True
-)
-task = vw.init_search_task(WordAligner)
-# BUG: This is currently broken due to incorrect oracle generation. Currently under investigation.#for p in range(10):
-#    task.learn(my_dataset)
-# print(task.predict( (&quot;the blue flower&quot;.split(), ([],[],[]), &quot;la fleur bleue&quot;.split()) ))
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span>
+    <span class="s2">&quot;--search 0 --csoaa_ldf m --search_task hook -q ef -q ep&quot;</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="kc">True</span>
+<span class="p">)</span>
+<span class="n">task</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">init_search_task</span><span class="p">(</span><span class="n">WordAligner</span><span class="p">)</span>
+<span class="c1"># BUG: This is currently broken due to incorrect oracle generation. Currently under investigation.#for p in range(10):</span>
+<span class="c1">#    task.learn(my_dataset)</span>
+<span class="c1"># print(task.predict( (&quot;the blue flower&quot;.split(), ([],[],[]), &quot;la fleur bleue&quot;.split()) ))</span>
 </pre></div>
 </div>
 </div>

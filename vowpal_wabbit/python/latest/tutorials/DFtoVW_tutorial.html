@@ -646,17 +646,17 @@ const thebe_selector_output = ".output, .cell_output"
 <h2>Importing packages<a class="headerlink" href="#importing-packages" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>import os
-from os.path import join
-import re
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">from</span> <span class="nn">os.path</span> <span class="kn">import</span> <span class="n">join</span>
+<span class="kn">import</span> <span class="nn">re</span>
 
-import pandas as pd
-import matplotlib.pyplot as plt
-import numpy as np
-import seaborn as sns
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
 
-from vowpalwabbit.dftovw import DFtoVW
-from vowpalwabbit import Workspace
+<span class="kn">from</span> <span class="nn">vowpalwabbit.dftovw</span> <span class="kn">import</span> <span class="n">DFtoVW</span>
+<span class="kn">from</span> <span class="nn">vowpalwabbit</span> <span class="kn">import</span> <span class="n">Workspace</span>
 </pre></div>
 </div>
 </div>
@@ -666,174 +666,174 @@ from vowpalwabbit import Workspace
 <h2>Function and class definition<a class="headerlink" href="#function-and-class-definition" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># VW output parsing function/class
-class VWLogParser:
-    &quot;&quot;&quot;Parser for Vowpal Wabbit output log&quot;&quot;&quot;
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># VW output parsing function/class</span>
+<span class="k">class</span> <span class="nc">VWLogParser</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Parser for Vowpal Wabbit output log&quot;&quot;&quot;</span>
 
-    def __init__(self, file_path_or_list):
-        &quot;&quot;&quot;The file name or list of lines to parse&quot;&quot;&quot;
-        if isinstance(file_path_or_list, (list, str)):
-            self.file_path_or_list = file_path_or_list
-        else:
-            raise TypeError(
-                &quot;Argument `fname` should be a str (for file path) or a list of log lines&quot;
-            )
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">file_path_or_list</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;The file name or list of lines to parse&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">file_path_or_list</span><span class="p">,</span> <span class="p">(</span><span class="nb">list</span><span class="p">,</span> <span class="nb">str</span><span class="p">)):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">file_path_or_list</span> <span class="o">=</span> <span class="n">file_path_or_list</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span>
+                <span class="s2">&quot;Argument `fname` should be a str (for file path) or a list of log lines&quot;</span>
+            <span class="p">)</span>
 
-    def parse(self):
-        &quot;&quot;&quot;Parse the output from `vw` command, return dataframe/dictionnaries with the associated data.&quot;&quot;&quot;
-        # Init containers
-        self.table_lst = []
-        self.params = {}
-        self.metrics = {}
+    <span class="k">def</span> <span class="nf">parse</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Parse the output from `vw` command, return dataframe/dictionnaries with the associated data.&quot;&quot;&quot;</span>
+        <span class="c1"># Init containers</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">table_lst</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">params</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">metrics</span> <span class="o">=</span> <span class="p">{}</span>
 
-        self.inside_table = False
-        self.after_table = False
+        <span class="bp">self</span><span class="o">.</span><span class="n">inside_table</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">after_table</span> <span class="o">=</span> <span class="kc">False</span>
 
-        if isinstance(self.file_path_or_list, list):
-            for row in self.file_path_or_list:
-                self._parse_vw_row(row)
-        else:
-            with open(self.file_path_or_list, &quot;r&quot;) as f:
-                for row in f:
-                    self._parse_vw_row(row)
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">file_path_or_list</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">file_path_or_list</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_parse_vw_row</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">file_path_or_list</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">_parse_vw_row</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
 
-        self.df = self._make_output_df(self.table_lst)
+        <span class="bp">self</span><span class="o">.</span><span class="n">df</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_output_df</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">table_lst</span><span class="p">)</span>
 
-        return self.params, self.df, self.metrics
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">df</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">metrics</span>
 
-    def _cast_string(self, s):
-        &quot;&quot;&quot;Cast to float or int if possible&quot;&quot;&quot;
-        try:
-            out = float(s)
-        except ValueError:
-            out = s
-        else:
-            if out.is_integer():
-                out = int(out)
+    <span class="k">def</span> <span class="nf">_cast_string</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">s</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Cast to float or int if possible&quot;&quot;&quot;</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">out</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+            <span class="n">out</span> <span class="o">=</span> <span class="n">s</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">out</span><span class="o">.</span><span class="n">is_integer</span><span class="p">():</span>
+                <span class="n">out</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">out</span><span class="p">)</span>
 
-        return out
+        <span class="k">return</span> <span class="n">out</span>
 
-    def _make_output_df(self, lst):
-        &quot;&quot;&quot;Make dataframe from the list&quot;&quot;&quot;
-        # Make columns from first and second elements of the list
-        columns = [
-            f&quot;{first_row}_{second_row}&quot; for (first_row, second_row) in zip(*lst[:2])
-        ]
+    <span class="k">def</span> <span class="nf">_make_output_df</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">lst</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Make dataframe from the list&quot;&quot;&quot;</span>
+        <span class="c1"># Make columns from first and second elements of the list</span>
+        <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">first_row</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">second_row</span><span class="si">}</span><span class="s2">&quot;</span> <span class="k">for</span> <span class="p">(</span><span class="n">first_row</span><span class="p">,</span> <span class="n">second_row</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">lst</span><span class="p">[:</span><span class="mi">2</span><span class="p">])</span>
+        <span class="p">]</span>
 
-        df = pd.DataFrame(data=lst[2:], columns=columns)
+        <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">lst</span><span class="p">[</span><span class="mi">2</span><span class="p">:],</span> <span class="n">columns</span><span class="o">=</span><span class="n">columns</span><span class="p">)</span>
 
-        # Cast cols to appropriate types
-        int_cols = [&quot;example_counter&quot;, &quot;current_features&quot;]
-        for col in int_cols:
-            df[col] = df[col].astype(int)
+        <span class="c1"># Cast cols to appropriate types</span>
+        <span class="n">int_cols</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;example_counter&quot;</span><span class="p">,</span> <span class="s2">&quot;current_features&quot;</span><span class="p">]</span>
+        <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">int_cols</span><span class="p">:</span>
+            <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
 
-        float_cols = df.columns.drop(int_cols)
-        for col in float_cols:
-            df[col] = df[col].astype(float)
+        <span class="n">float_cols</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">int_cols</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">float_cols</span><span class="p">:</span>
+            <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
 
-        return df
+        <span class="k">return</span> <span class="n">df</span>
 
-    def _parse_vw_row(self, row):
-        &quot;&quot;&quot;Parse row and add parsed elements to instance attributes params, metrics and table_lst&quot;&quot;&quot;
-        if &quot;=&quot; in row:
-            param_name, value = [
-                element.strip() for element in row.split(&quot;=&quot;, maxsplit=1)
-            ]
-            if self.after_table:
-                self.metrics[param_name] = self._cast_string(value)
-            else:
-                self.params[param_name] = self._cast_string(value)
-        elif &quot;:&quot; in row:
-            param_name, value = [
-                element.strip() for element in row.split(&quot;:&quot;, maxsplit=1)
-            ]
-            self.params[param_name] = self._cast_string(value)
+    <span class="k">def</span> <span class="nf">_parse_vw_row</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">row</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Parse row and add parsed elements to instance attributes params, metrics and table_lst&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="s2">&quot;=&quot;</span> <span class="ow">in</span> <span class="n">row</span><span class="p">:</span>
+            <span class="n">param_name</span><span class="p">,</span> <span class="n">value</span> <span class="o">=</span> <span class="p">[</span>
+                <span class="n">element</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">row</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;=&quot;</span><span class="p">,</span> <span class="n">maxsplit</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+            <span class="p">]</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">after_table</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">metrics</span><span class="p">[</span><span class="n">param_name</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cast_string</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="p">[</span><span class="n">param_name</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cast_string</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="s2">&quot;:&quot;</span> <span class="ow">in</span> <span class="n">row</span><span class="p">:</span>
+            <span class="n">param_name</span><span class="p">,</span> <span class="n">value</span> <span class="o">=</span> <span class="p">[</span>
+                <span class="n">element</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">row</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;:&quot;</span><span class="p">,</span> <span class="n">maxsplit</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+            <span class="p">]</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="p">[</span><span class="n">param_name</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cast_string</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
 
-        elif not self.after_table:
-            if re.match(&quot;average\s+since&quot;, row):
-                self.inside_table = True
-            if row == &quot;\n&quot;:
-                self.inside_table = False
-                self.after_table = True
-            if self.inside_table:
-                self.table_lst += [row.split()]
-
-
-# Data import/download functions
-def download_data(dest_dir=&quot;PM_DATA&quot;):
-    import requests
-    from io import BytesIO
-    from rarfile import RarFile
-
-    URL_PM_CITIES = &quot;https://archive.ics.uci.edu/ml/machine-learning-databases/00394/FiveCitiePMData.rar&quot;
-
-    print(f&quot;Downloading data at {URL_PM_CITIES}&quot;)
-    r = requests.get(URL_PM_CITIES)
-    bcontent = BytesIO(r.content)
-    rf = RarFile(bcontent)
-
-    print(f&quot;Extracting content in folder {repr(dest_dir)}&quot;)
-    rf.extractall(dest_dir)
+        <span class="k">elif</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">after_table</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="s2">&quot;average\s+since&quot;</span><span class="p">,</span> <span class="n">row</span><span class="p">):</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">inside_table</span> <span class="o">=</span> <span class="kc">True</span>
+            <span class="k">if</span> <span class="n">row</span> <span class="o">==</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">inside_table</span> <span class="o">=</span> <span class="kc">False</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">after_table</span> <span class="o">=</span> <span class="kc">True</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">inside_table</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">table_lst</span> <span class="o">+=</span> <span class="p">[</span><span class="n">row</span><span class="o">.</span><span class="n">split</span><span class="p">()]</span>
 
 
-def import_data(folder_path, verbose=True):
-    df_lst = []
-    for fname in os.listdir(folder_path):
-        fpath = join(folder_path, fname)
-        if verbose:
-            print(f&quot;Importing file: {fpath}&quot;)
-        city_name = re.sub(
-            &quot;pm$&quot;, repl=&quot;&quot;, string=re.search(&quot;^[a-z]+&quot;, string=fname.lower()).group()
-        )
+<span class="c1"># Data import/download functions</span>
+<span class="k">def</span> <span class="nf">download_data</span><span class="p">(</span><span class="n">dest_dir</span><span class="o">=</span><span class="s2">&quot;PM_DATA&quot;</span><span class="p">):</span>
+    <span class="kn">import</span> <span class="nn">requests</span>
+    <span class="kn">from</span> <span class="nn">io</span> <span class="kn">import</span> <span class="n">BytesIO</span>
+    <span class="kn">from</span> <span class="nn">rarfile</span> <span class="kn">import</span> <span class="n">RarFile</span>
 
-        df_city = pd.read_csv(fpath)
-        df_city_clean = (
-            df_city.assign(city=city_name)
-            .drop(
-                columns=[&quot;No&quot;]
-                + [
-                    col
-                    for col in df_city.columns
-                    if (&quot;PM&quot; in col) and (col != &quot;PM_US Post&quot;)
-                ]
-            )
-            .rename(columns={&quot;PM_US Post&quot;: &quot;PM&quot;})
-            .dropna(subset=[&quot;PM&quot;])
-        )
-        df_lst += [df_city_clean]
+    <span class="n">URL_PM_CITIES</span> <span class="o">=</span> <span class="s2">&quot;https://archive.ics.uci.edu/ml/machine-learning-databases/00394/FiveCitiePMData.rar&quot;</span>
 
-    df_city = (
-        pd.concat(df_lst)  # append dataframes
-        .sample(frac=1, random_state=123)  # shuffle
-        .reset_index(drop=True)
-    )
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Downloading data at </span><span class="si">{</span><span class="n">URL_PM_CITIES</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">URL_PM_CITIES</span><span class="p">)</span>
+    <span class="n">bcontent</span> <span class="o">=</span> <span class="n">BytesIO</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+    <span class="n">rf</span> <span class="o">=</span> <span class="n">RarFile</span><span class="p">(</span><span class="n">bcontent</span><span class="p">)</span>
 
-    return df_city
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Extracting content in folder </span><span class="si">{</span><span class="nb">repr</span><span class="p">(</span><span class="n">dest_dir</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">rf</span><span class="o">.</span><span class="n">extractall</span><span class="p">(</span><span class="n">dest_dir</span><span class="p">)</span>
 
 
-# Model weight inspection functions
-def get_feature_names(df):
-    cat_names = get_cat_feature_names(df)
-    num_names = df.select_dtypes(np.number).columns.tolist()
+<span class="k">def</span> <span class="nf">import_data</span><span class="p">(</span><span class="n">folder_path</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+    <span class="n">df_lst</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">fname</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">folder_path</span><span class="p">):</span>
+        <span class="n">fpath</span> <span class="o">=</span> <span class="n">join</span><span class="p">(</span><span class="n">folder_path</span><span class="p">,</span> <span class="n">fname</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Importing file: </span><span class="si">{</span><span class="n">fpath</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">city_name</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span>
+            <span class="s2">&quot;pm$&quot;</span><span class="p">,</span> <span class="n">repl</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">string</span><span class="o">=</span><span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s2">&quot;^[a-z]+&quot;</span><span class="p">,</span> <span class="n">string</span><span class="o">=</span><span class="n">fname</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span><span class="o">.</span><span class="n">group</span><span class="p">()</span>
+        <span class="p">)</span>
 
-    return cat_names + num_names
+        <span class="n">df_city</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">fpath</span><span class="p">)</span>
+        <span class="n">df_city_clean</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="n">df_city</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">city</span><span class="o">=</span><span class="n">city_name</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">drop</span><span class="p">(</span>
+                <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;No&quot;</span><span class="p">]</span>
+                <span class="o">+</span> <span class="p">[</span>
+                    <span class="n">col</span>
+                    <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">df_city</span><span class="o">.</span><span class="n">columns</span>
+                    <span class="k">if</span> <span class="p">(</span><span class="s2">&quot;PM&quot;</span> <span class="ow">in</span> <span class="n">col</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">col</span> <span class="o">!=</span> <span class="s2">&quot;PM_US Post&quot;</span><span class="p">)</span>
+                <span class="p">]</span>
+            <span class="p">)</span>
+            <span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;PM_US Post&quot;</span><span class="p">:</span> <span class="s2">&quot;PM&quot;</span><span class="p">})</span>
+            <span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;PM&quot;</span><span class="p">])</span>
+        <span class="p">)</span>
+        <span class="n">df_lst</span> <span class="o">+=</span> <span class="p">[</span><span class="n">df_city_clean</span><span class="p">]</span>
+
+    <span class="n">df_city</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span><span class="n">df_lst</span><span class="p">)</span>  <span class="c1"># append dataframes</span>
+        <span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">frac</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">123</span><span class="p">)</span>  <span class="c1"># shuffle</span>
+        <span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">df_city</span>
 
 
-def get_cat_feature_names(df):
-    unique_values_cat = df.select_dtypes(object).apply(lambda s: s.dropna().unique())
-    cat_names = [
-        f&quot;{key}={value}&quot;
-        for (key, unique_values) in unique_values_cat.items()
-        for value in unique_values
-    ]
+<span class="c1"># Model weight inspection functions</span>
+<span class="k">def</span> <span class="nf">get_feature_names</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
+    <span class="n">cat_names</span> <span class="o">=</span> <span class="n">get_cat_feature_names</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+    <span class="n">num_names</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">number</span><span class="p">)</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
 
-    return cat_names
+    <span class="k">return</span> <span class="n">cat_names</span> <span class="o">+</span> <span class="n">num_names</span>
 
 
-def get_weight_from_name(model, feature_name, namespace_name=&quot; &quot;):
-    space_hash = model.hash_space(namespace_name)
-    feat_hash = model.hash_feature(feature_name, space_hash)
-    return model.get_weight(feat_hash)
+<span class="k">def</span> <span class="nf">get_cat_feature_names</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
+    <span class="n">unique_values_cat</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="nb">object</span><span class="p">)</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">s</span><span class="p">:</span> <span class="n">s</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span>
+    <span class="n">cat_names</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s2">=</span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="k">for</span> <span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">unique_values</span><span class="p">)</span> <span class="ow">in</span> <span class="n">unique_values_cat</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">unique_values</span>
+    <span class="p">]</span>
+
+    <span class="k">return</span> <span class="n">cat_names</span>
+
+
+<span class="k">def</span> <span class="nf">get_weight_from_name</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">feature_name</span><span class="p">,</span> <span class="n">namespace_name</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">):</span>
+    <span class="n">space_hash</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">hash_space</span><span class="p">(</span><span class="n">namespace_name</span><span class="p">)</span>
+    <span class="n">feat_hash</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">hash_feature</span><span class="p">(</span><span class="n">feature_name</span><span class="p">,</span> <span class="n">space_hash</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">model</span><span class="o">.</span><span class="n">get_weight</span><span class="p">(</span><span class="n">feat_hash</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -842,13 +842,13 @@ def get_weight_from_name(model, feature_name, namespace_name=&quot; &quot;):
 <h3>Constants<a class="headerlink" href="#constants" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Data
-DATA_FOLDER = &quot;PM_DATA&quot;
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Data</span>
+<span class="n">DATA_FOLDER</span> <span class="o">=</span> <span class="s2">&quot;PM_DATA&quot;</span>
 
-# Graphical
-SUPTITLE_FONTSIZE = 20
-SUPTITLE_FONTWEIGHT = &quot;bold&quot;
-TITLE_FONTSIZE = 15
+<span class="c1"># Graphical</span>
+<span class="n">SUPTITLE_FONTSIZE</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">SUPTITLE_FONTWEIGHT</span> <span class="o">=</span> <span class="s2">&quot;bold&quot;</span>
+<span class="n">TITLE_FONTSIZE</span> <span class="o">=</span> <span class="mi">15</span>
 </pre></div>
 </div>
 </div>
@@ -862,11 +862,11 @@ TITLE_FONTSIZE = 15
 <h3>1.1. Import<a class="headerlink" href="#import" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>if not (os.path.isdir(DATA_FOLDER) and len(os.listdir(DATA_FOLDER)) == 5):
-    download_data(DATA_FOLDER)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">DATA_FOLDER</span><span class="p">)</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">DATA_FOLDER</span><span class="p">))</span> <span class="o">==</span> <span class="mi">5</span><span class="p">):</span>
+    <span class="n">download_data</span><span class="p">(</span><span class="n">DATA_FOLDER</span><span class="p">)</span>
 
-df = import_data(DATA_FOLDER)
-df.head()
+<span class="n">df</span> <span class="o">=</span> <span class="n">import_data</span><span class="p">(</span><span class="n">DATA_FOLDER</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -890,7 +890,7 @@ The full label of some features (the non obvious ones):
 <p>The types of the columns:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>df.dtypes
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">dtypes</span>
 </pre></div>
 </div>
 </div>
@@ -898,13 +898,13 @@ The full label of some features (the non obvious ones):
 <p>Some columns (<code class="docutils literal notranslate"><span class="pre">year</span></code>, <code class="docutils literal notranslate"><span class="pre">month</span></code>, <code class="docutils literal notranslate"><span class="pre">day</span></code>, <code class="docutils literal notranslate"><span class="pre">hour</span></code>, <code class="docutils literal notranslate"><span class="pre">season</span></code>) have been imported as integer/float but <strong>should be treated as categorical</strong> by the model. Hence, we convert these columns to categorical (<code class="docutils literal notranslate"><span class="pre">str</span></code>) type.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>to_cat_cols = [&quot;year&quot;, &quot;month&quot;, &quot;day&quot;, &quot;hour&quot;, &quot;season&quot;]
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">to_cat_cols</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;year&quot;</span><span class="p">,</span> <span class="s2">&quot;month&quot;</span><span class="p">,</span> <span class="s2">&quot;day&quot;</span><span class="p">,</span> <span class="s2">&quot;hour&quot;</span><span class="p">,</span> <span class="s2">&quot;season&quot;</span><span class="p">]</span>
 
-for col in to_cat_cols:
-    df[col] = df[col].astype(str)
+<span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">to_cat_cols</span><span class="p">:</span>
+    <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
 
-# Pandas converts np.nan to &quot;nan&quot; when casting to float to object/str :(
-df[df == &quot;nan&quot;] = np.nan
+<span class="c1"># Pandas converts np.nan to &quot;nan&quot; when casting to float to object/str :(</span>
+<span class="n">df</span><span class="p">[</span><span class="n">df</span> <span class="o">==</span> <span class="s2">&quot;nan&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
 </pre></div>
 </div>
 </div>
@@ -912,8 +912,8 @@ df[df == &quot;nan&quot;] = np.nan
 <p>Also, we standardize the numerical variables so we can compare their relative importance.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>for col in df.select_dtypes(np.number).columns.difference([&quot;PM&quot;, &quot;log_PM&quot;]):
-    df[col] = (df[col] - df[col].mean()) / df[col].std()
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">number</span><span class="p">)</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">difference</span><span class="p">([</span><span class="s2">&quot;PM&quot;</span><span class="p">,</span> <span class="s2">&quot;log_PM&quot;</span><span class="p">]):</span>
+    <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">-</span> <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span> <span class="o">/</span> <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -924,15 +924,15 @@ df[df == &quot;nan&quot;] = np.nan
 <p>The most correlated (&gt; 0.95) variable(s):</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>(
-    df.corr()
-    .reset_index()
-    .melt(id_vars=&quot;index&quot;, value_name=&quot;corr&quot;)
-    .loc[
-        lambda df: df[&quot;index&quot;] &lt; df[&quot;variable&quot;]
-    ]  # to get lower triangular part of the matrix
-    .loc[lambda df: df[&quot;corr&quot;] &gt; 0.95]
-)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">(</span>
+    <span class="n">df</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
+    <span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+    <span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">id_vars</span><span class="o">=</span><span class="s2">&quot;index&quot;</span><span class="p">,</span> <span class="n">value_name</span><span class="o">=</span><span class="s2">&quot;corr&quot;</span><span class="p">)</span>
+    <span class="o">.</span><span class="n">loc</span><span class="p">[</span>
+        <span class="k">lambda</span> <span class="n">df</span><span class="p">:</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;index&quot;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;variable&quot;</span><span class="p">]</span>
+    <span class="p">]</span>  <span class="c1"># to get lower triangular part of the matrix</span>
+    <span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="k">lambda</span> <span class="n">df</span><span class="p">:</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;corr&quot;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mf">0.95</span><span class="p">]</span>
+<span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -940,7 +940,7 @@ df[df == &quot;nan&quot;] = np.nan
 <p>We drop the <code class="docutils literal notranslate"><span class="pre">Iprec</span></code> variable since it is almost perfectly correlated with the <code class="docutils literal notranslate"><span class="pre">precipitation</span></code> variable.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>df.drop(columns=[&quot;Iprec&quot;], inplace=True)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Iprec&quot;</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -961,28 +961,28 @@ df[df == &quot;nan&quot;] = np.nan
 <p>The current section illustrates the basic usage. Section 4 will present the advanced usage.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>y = &quot;PM&quot;
-x = [
-    &quot;year&quot;,
-    &quot;month&quot;,
-    &quot;day&quot;,
-    &quot;hour&quot;,
-    &quot;season&quot;,
-    &quot;DEWP&quot;,
-    &quot;HUMI&quot;,
-    &quot;PRES&quot;,
-    &quot;TEMP&quot;,
-    &quot;cbwd&quot;,
-    &quot;Iws&quot;,
-    &quot;precipitation&quot;,
-    &quot;city&quot;,
-]
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="s2">&quot;PM&quot;</span>
+<span class="n">x</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;year&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;month&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;day&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;hour&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;season&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;DEWP&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;HUMI&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;PRES&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;TEMP&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;cbwd&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Iws&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;precipitation&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;city&quot;</span><span class="p">,</span>
+<span class="p">]</span>
 
-print(&quot;label:&quot;, y)
-print(&quot;features:&quot;, x)
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;label:&quot;</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;features:&quot;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
 
-converter = DFtoVW.from_column_names(df=df, y=y, x=x)
-examples = converter.convert_df()
+<span class="n">converter</span> <span class="o">=</span> <span class="n">DFtoVW</span><span class="o">.</span><span class="n">from_column_names</span><span class="p">(</span><span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="p">)</span>
+<span class="n">examples</span> <span class="o">=</span> <span class="n">converter</span><span class="o">.</span><span class="n">convert_df</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -990,7 +990,7 @@ examples = converter.convert_df()
 <p>We can inspect the first few examples:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>examples[:5]
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">examples</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -1005,11 +1005,11 @@ examples = converter.convert_df()
 <p>Finally, if the feature name provided by the user is not found of the dataframe, the class will raise a <code class="docutils literal notranslate"><span class="pre">ValueError</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>try:
-    DFtoVW.from_column_names(df=df, y=y, x=[&quot;TEMP&quot;, &quot;COLUMN_NOT_IN_DF&quot;])
-except Exception as e:
-    print(type(e))
-    print(e)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">try</span><span class="p">:</span>
+    <span class="n">DFtoVW</span><span class="o">.</span><span class="n">from_column_names</span><span class="p">(</span><span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;TEMP&quot;</span><span class="p">,</span> <span class="s2">&quot;COLUMN_NOT_IN_DF&quot;</span><span class="p">])</span>
+<span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">e</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1020,12 +1020,12 @@ except Exception as e:
 <p>We now define the VW model. Note that we enable logging and also set the progress parameter (<code class="docutils literal notranslate"><span class="pre">P</span></code>) to 1 to log the information <em>for each example</em>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>model = Workspace(P=1, enable_logging=True)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="n">P</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">enable_logging</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
-for ex in examples:
-    model.learn(ex)
+<span class="k">for</span> <span class="n">ex</span> <span class="ow">in</span> <span class="n">examples</span><span class="p">:</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
 
-model.finish()
+<span class="n">model</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -1040,7 +1040,7 @@ model.finish()
 <p>Since we enable logging in the model definition (subsection 2.2), we can get the model’s log. The log is returned as a list of strings by the <code class="docutils literal notranslate"><span class="pre">vw.get_log</span></code> method. Below are the first 20 lines:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>model.get_log()[:20]
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">get_log</span><span class="p">()[:</span><span class="mi">20</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -1048,7 +1048,7 @@ model.finish()
 <br>
 And the last 10 lines:<div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>model.get_log()[-10:]
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">get_log</span><span class="p">()[</span><span class="o">-</span><span class="mi">10</span><span class="p">:]</span>
 </pre></div>
 </div>
 </div>
@@ -1063,24 +1063,24 @@ And the last 10 lines:<div class="cell docutils container">
 <p>The parsed information is available as <code class="docutils literal notranslate"><span class="pre">dict</span></code> or <code class="docutils literal notranslate"><span class="pre">DataFrame</span></code> objects that can be easily manipulated.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>log_parser = VWLogParser(model.get_log())
-params, df_iter, summary_metrics = log_parser.parse()
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">log_parser</span> <span class="o">=</span> <span class="n">VWLogParser</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">get_log</span><span class="p">())</span>
+<span class="n">params</span><span class="p">,</span> <span class="n">df_iter</span><span class="p">,</span> <span class="n">summary_metrics</span> <span class="o">=</span> <span class="n">log_parser</span><span class="o">.</span><span class="n">parse</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>print(&quot;Model&#39;s parameters&quot;)
-display(params)
-print(&quot;\n&quot;)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Model&#39;s parameters&quot;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">params</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
 
-print(&quot;Information at each iteration&quot;)
-display(df_iter)
-print(&quot;\n&quot;)
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Information at each iteration&quot;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">df_iter</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
 
-print(&quot;Summary metrics&quot;)
-display(summary_metrics)
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Summary metrics&quot;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">summary_metrics</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1091,25 +1091,25 @@ display(summary_metrics)
 <p>The following plots represent the average loss through time and the instantaneous loss:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>scatter_var = [&quot;average_loss&quot;, &quot;since_last&quot;]
-g = sns.relplot(
-    data=df_iter[scatter_var + [&quot;example_counter&quot;]].melt(id_vars=&quot;example_counter&quot;),
-    x=&quot;example_counter&quot;,
-    y=&quot;value&quot;,
-    col=&quot;variable&quot;,
-    col_wrap=3,
-    facet_kws={&quot;sharey&quot;: False, &quot;sharex&quot;: True},
-    kind=&quot;scatter&quot;,
-    s=4,
-    height=6,
-    aspect=1.5,
-    alpha=0.5,
-)
-g.fig.suptitle(
-    &quot;Scatter plot of losses&quot;, fontsize=SUPTITLE_FONTSIZE, fontweight=SUPTITLE_FONTWEIGHT
-)
-g.set_titles(&quot;{col_name}&quot;, size=TITLE_FONTSIZE)
-g.fig.tight_layout()
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">scatter_var</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;average_loss&quot;</span><span class="p">,</span> <span class="s2">&quot;since_last&quot;</span><span class="p">]</span>
+<span class="n">g</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">relplot</span><span class="p">(</span>
+    <span class="n">data</span><span class="o">=</span><span class="n">df_iter</span><span class="p">[</span><span class="n">scatter_var</span> <span class="o">+</span> <span class="p">[</span><span class="s2">&quot;example_counter&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">id_vars</span><span class="o">=</span><span class="s2">&quot;example_counter&quot;</span><span class="p">),</span>
+    <span class="n">x</span><span class="o">=</span><span class="s2">&quot;example_counter&quot;</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">,</span>
+    <span class="n">col</span><span class="o">=</span><span class="s2">&quot;variable&quot;</span><span class="p">,</span>
+    <span class="n">col_wrap</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
+    <span class="n">facet_kws</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;sharey&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span> <span class="s2">&quot;sharex&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">},</span>
+    <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;scatter&quot;</span><span class="p">,</span>
+    <span class="n">s</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>
+    <span class="n">height</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span>
+    <span class="n">aspect</span><span class="o">=</span><span class="mf">1.5</span><span class="p">,</span>
+    <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span>
+    <span class="s2">&quot;Scatter plot of losses&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="n">SUPTITLE_FONTSIZE</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="n">SUPTITLE_FONTWEIGHT</span>
+<span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">set_titles</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{col_name}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="n">TITLE_FONTSIZE</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">fig</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -1117,35 +1117,35 @@ g.fig.tight_layout()
 <p>In what follows, we consider the metrics recorded after the  50 000th iteration.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>start_idx = 50_000
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">start_idx</span> <span class="o">=</span> <span class="mi">50_000</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>distr_vars = [&quot;current_label&quot;, &quot;current_predict&quot;, &quot;current_features&quot;, &quot;example_weight&quot;]
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">distr_vars</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;current_label&quot;</span><span class="p">,</span> <span class="s2">&quot;current_predict&quot;</span><span class="p">,</span> <span class="s2">&quot;current_features&quot;</span><span class="p">,</span> <span class="s2">&quot;example_weight&quot;</span><span class="p">]</span>
 
-g = sns.displot(
-    data=df_iter.loc[start_idx:, distr_vars].melt(),
-    x=&quot;value&quot;,
-    col=&quot;variable&quot;,
-    multiple=&quot;dodge&quot;,
-    hue=&quot;variable&quot;,
-    bins=60,
-    common_bins=False,
-    facet_kws=dict(sharex=False, sharey=False),
-    col_wrap=4,
-    height=5,
-)
-g.fig.suptitle(
-    &quot;Distribution of selected metrics&quot;,
-    fontsize=SUPTITLE_FONTSIZE,
-    fontweight=SUPTITLE_FONTWEIGHT,
-    y=1.05,
-)
-g.set_titles(&quot;{col_name}&quot;, size=TITLE_FONTSIZE)
-plt.show()
+<span class="n">g</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">displot</span><span class="p">(</span>
+    <span class="n">data</span><span class="o">=</span><span class="n">df_iter</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">start_idx</span><span class="p">:,</span> <span class="n">distr_vars</span><span class="p">]</span><span class="o">.</span><span class="n">melt</span><span class="p">(),</span>
+    <span class="n">x</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">,</span>
+    <span class="n">col</span><span class="o">=</span><span class="s2">&quot;variable&quot;</span><span class="p">,</span>
+    <span class="n">multiple</span><span class="o">=</span><span class="s2">&quot;dodge&quot;</span><span class="p">,</span>
+    <span class="n">hue</span><span class="o">=</span><span class="s2">&quot;variable&quot;</span><span class="p">,</span>
+    <span class="n">bins</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span>
+    <span class="n">common_bins</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">facet_kws</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">sharex</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">sharey</span><span class="o">=</span><span class="kc">False</span><span class="p">),</span>
+    <span class="n">col_wrap</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>
+    <span class="n">height</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span>
+    <span class="s2">&quot;Distribution of selected metrics&quot;</span><span class="p">,</span>
+    <span class="n">fontsize</span><span class="o">=</span><span class="n">SUPTITLE_FONTSIZE</span><span class="p">,</span>
+    <span class="n">fontweight</span><span class="o">=</span><span class="n">SUPTITLE_FONTWEIGHT</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="mf">1.05</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">set_titles</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{col_name}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="n">TITLE_FONTSIZE</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -1157,37 +1157,37 @@ plt.show()
 <p>This section offers a visualization of the model’s predictions and compares them with the labels (the truth).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>error = df_iter.current_label - df_iter.current_predict
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">error</span> <span class="o">=</span> <span class="n">df_iter</span><span class="o">.</span><span class="n">current_label</span> <span class="o">-</span> <span class="n">df_iter</span><span class="o">.</span><span class="n">current_predict</span>
 
-f, (ax1, ax2) = plt.subplots(figsize=(20, 7), ncols=2)
-f.suptitle(
-    &quot;Predictions and errors&quot;, fontsize=SUPTITLE_FONTSIZE, fontweight=SUPTITLE_FONTWEIGHT
-)
+<span class="n">f</span><span class="p">,</span> <span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="n">ax2</span><span class="p">)</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">7</span><span class="p">),</span> <span class="n">ncols</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">f</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span>
+    <span class="s2">&quot;Predictions and errors&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="n">SUPTITLE_FONTSIZE</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="n">SUPTITLE_FONTWEIGHT</span>
+<span class="p">)</span>
 
-# Scatterplot pred vs truth
-sns.scatterplot(
-    data=df_iter.loc[start_idx:],
-    x=&quot;current_predict&quot;,
-    y=&quot;current_label&quot;,
-    ax=ax1,
-    s=2,
-    alpha=0.15,
-)
-ax1.set_title(&quot;Prediction vs truth&quot;, fontsize=TITLE_FONTSIZE)
-max_range = int(df_iter[[&quot;current_label&quot;, &quot;current_predict&quot;]].quantile(0.99).max())
-ax1.set_xlim([0, max_range])
-ax1.set_ylim([0, max_range])
+<span class="c1"># Scatterplot pred vs truth</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">scatterplot</span><span class="p">(</span>
+    <span class="n">data</span><span class="o">=</span><span class="n">df_iter</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">start_idx</span><span class="p">:],</span>
+    <span class="n">x</span><span class="o">=</span><span class="s2">&quot;current_predict&quot;</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="s2">&quot;current_label&quot;</span><span class="p">,</span>
+    <span class="n">ax</span><span class="o">=</span><span class="n">ax1</span><span class="p">,</span>
+    <span class="n">s</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+    <span class="n">alpha</span><span class="o">=</span><span class="mf">0.15</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Prediction vs truth&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="n">TITLE_FONTSIZE</span><span class="p">)</span>
+<span class="n">max_range</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">df_iter</span><span class="p">[[</span><span class="s2">&quot;current_label&quot;</span><span class="p">,</span> <span class="s2">&quot;current_predict&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.99</span><span class="p">)</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="n">max_range</span><span class="p">])</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="n">max_range</span><span class="p">])</span>
 
-# Adding x=y line
-# range_x = range(0, int(df_iter[[&quot;current_predict&quot;, &quot;current_label&quot;]].max().min()))
-range_x = range(0, max_range)
-ax1.plot(range_x, range_x, linestyle=&quot;:&quot;, color=&quot;red&quot;, linewidth=2.5)
+<span class="c1"># Adding x=y line</span>
+<span class="c1"># range_x = range(0, int(df_iter[[&quot;current_predict&quot;, &quot;current_label&quot;]].max().min()))</span>
+<span class="n">range_x</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">max_range</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">range_x</span><span class="p">,</span> <span class="n">range_x</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s2">&quot;:&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">2.5</span><span class="p">)</span>
 
-# Histogram of errors
-sns.histplot(error[start_idx:], ax=ax2)
-ax2.set_title(&quot;Distribution of errors&quot;, fontsize=TITLE_FONTSIZE)
+<span class="c1"># Histogram of errors</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">error</span><span class="p">[</span><span class="n">start_idx</span><span class="p">:],</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax2</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Distribution of errors&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="n">TITLE_FONTSIZE</span><span class="p">)</span>
 
-plt.show()
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -1199,59 +1199,59 @@ plt.show()
 <p>We build a dataframe with the model’s weights:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Get VW feature names
-feature_names = get_feature_names(df)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Get VW feature names</span>
+<span class="n">feature_names</span> <span class="o">=</span> <span class="n">get_feature_names</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 
-# Get weights from feature names
-weights_df = pd.DataFrame(
-    [(name, get_weight_from_name(model, name), &quot;=&quot; in name) for name in feature_names],
-    columns=[&quot;vw_feature_name&quot;, &quot;weight&quot;, &quot;is_cat&quot;],
-)
+<span class="c1"># Get weights from feature names</span>
+<span class="n">weights_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
+    <span class="p">[(</span><span class="n">name</span><span class="p">,</span> <span class="n">get_weight_from_name</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">name</span><span class="p">),</span> <span class="s2">&quot;=&quot;</span> <span class="ow">in</span> <span class="n">name</span><span class="p">)</span> <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">feature_names</span><span class="p">],</span>
+    <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;vw_feature_name&quot;</span><span class="p">,</span> <span class="s2">&quot;weight&quot;</span><span class="p">,</span> <span class="s2">&quot;is_cat&quot;</span><span class="p">],</span>
+<span class="p">)</span>
 
-# Adding columns for easier visualization
-weights_df[&quot;feature_name&quot;] = weights_df.apply(
-    lambda row: row.vw_feature_name.split(&quot;=&quot;)[0]
-    if row.is_cat
-    else row.vw_feature_name,
-    axis=1,
-)
-weights_df[&quot;feature_value&quot;] = weights_df.apply(
-    lambda row: row.vw_feature_name.split(&quot;=&quot;)[1].zfill(2)
-    if row.is_cat
-    else row.vw_feature_name,
-    axis=1,
-)
-weights_df.sort_values([&quot;feature_name&quot;, &quot;feature_value&quot;], inplace=True)
+<span class="c1"># Adding columns for easier visualization</span>
+<span class="n">weights_df</span><span class="p">[</span><span class="s2">&quot;feature_name&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">weights_df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span>
+    <span class="k">lambda</span> <span class="n">row</span><span class="p">:</span> <span class="n">row</span><span class="o">.</span><span class="n">vw_feature_name</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;=&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">row</span><span class="o">.</span><span class="n">is_cat</span>
+    <span class="k">else</span> <span class="n">row</span><span class="o">.</span><span class="n">vw_feature_name</span><span class="p">,</span>
+    <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">weights_df</span><span class="p">[</span><span class="s2">&quot;feature_value&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">weights_df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span>
+    <span class="k">lambda</span> <span class="n">row</span><span class="p">:</span> <span class="n">row</span><span class="o">.</span><span class="n">vw_feature_name</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;=&quot;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">zfill</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">row</span><span class="o">.</span><span class="n">is_cat</span>
+    <span class="k">else</span> <span class="n">row</span><span class="o">.</span><span class="n">vw_feature_name</span><span class="p">,</span>
+    <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">weights_df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">([</span><span class="s2">&quot;feature_name&quot;</span><span class="p">,</span> <span class="s2">&quot;feature_value&quot;</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>g = sns.catplot(
-    data=weights_df[lambda df: df.is_cat],
-    kind=&quot;bar&quot;,
-    x=&quot;feature_value&quot;,
-    y=&quot;weight&quot;,
-    col=&quot;feature_name&quot;,
-    hue=&quot;feature_name&quot;,
-    col_wrap=3,
-    sharex=False,
-    sharey=False,
-    aspect=1.5,
-    dodge=False,
-)
-g.fig.suptitle(
-    &quot;Feature weights (categorical features)&quot;,
-    fontsize=SUPTITLE_FONTSIZE,
-    fontweight=SUPTITLE_FONTWEIGHT,
-)
-g.set_titles(&quot;{col_name}&quot;, size=TITLE_FONTSIZE)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">g</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">catplot</span><span class="p">(</span>
+    <span class="n">data</span><span class="o">=</span><span class="n">weights_df</span><span class="p">[</span><span class="k">lambda</span> <span class="n">df</span><span class="p">:</span> <span class="n">df</span><span class="o">.</span><span class="n">is_cat</span><span class="p">],</span>
+    <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;bar&quot;</span><span class="p">,</span>
+    <span class="n">x</span><span class="o">=</span><span class="s2">&quot;feature_value&quot;</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="s2">&quot;weight&quot;</span><span class="p">,</span>
+    <span class="n">col</span><span class="o">=</span><span class="s2">&quot;feature_name&quot;</span><span class="p">,</span>
+    <span class="n">hue</span><span class="o">=</span><span class="s2">&quot;feature_name&quot;</span><span class="p">,</span>
+    <span class="n">col_wrap</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
+    <span class="n">sharex</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">sharey</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">aspect</span><span class="o">=</span><span class="mf">1.5</span><span class="p">,</span>
+    <span class="n">dodge</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span>
+    <span class="s2">&quot;Feature weights (categorical features)&quot;</span><span class="p">,</span>
+    <span class="n">fontsize</span><span class="o">=</span><span class="n">SUPTITLE_FONTSIZE</span><span class="p">,</span>
+    <span class="n">fontweight</span><span class="o">=</span><span class="n">SUPTITLE_FONTWEIGHT</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">set_titles</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{col_name}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="n">TITLE_FONTSIZE</span><span class="p">)</span>
 
-# Add horizontal bar at y=0
-for ax in g.axes.flat:
-    ax.axhline(0, color=&quot;gray&quot;, linestyle=&quot;:&quot;)
-g.fig.tight_layout()
+<span class="c1"># Add horizontal bar at y=0</span>
+<span class="k">for</span> <span class="n">ax</span> <span class="ow">in</span> <span class="n">g</span><span class="o">.</span><span class="n">axes</span><span class="o">.</span><span class="n">flat</span><span class="p">:</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;gray&quot;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s2">&quot;:&quot;</span><span class="p">)</span>
+<span class="n">g</span><span class="o">.</span><span class="n">fig</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -1273,20 +1273,20 @@ g.fig.tight_layout()
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>f, ax = plt.subplots(figsize=(12, 5))
-ax = sns.barplot(
-    data=weights_df[lambda df: df.is_cat == False], x=&quot;feature_name&quot;, y=&quot;weight&quot;
-)
-ax.set_title(&quot;Feature weights (numerical features)&quot;, fontsize=TITLE_FONTSIZE)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span>
+    <span class="n">data</span><span class="o">=</span><span class="n">weights_df</span><span class="p">[</span><span class="k">lambda</span> <span class="n">df</span><span class="p">:</span> <span class="n">df</span><span class="o">.</span><span class="n">is_cat</span> <span class="o">==</span> <span class="kc">False</span><span class="p">],</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;feature_name&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;weight&quot;</span>
+<span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Feature weights (numerical features)&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="n">TITLE_FONTSIZE</span><span class="p">)</span>
 
-# Set xlabels in bold, remove x-axis title
-ax.set_xticklabels(ax.get_xticklabels(), fontweight=SUPTITLE_FONTWEIGHT)
-ax.set(xlabel=None)
+<span class="c1"># Set xlabels in bold, remove x-axis title</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">ax</span><span class="o">.</span><span class="n">get_xticklabels</span><span class="p">(),</span> <span class="n">fontweight</span><span class="o">=</span><span class="n">SUPTITLE_FONTWEIGHT</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">xlabel</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
 
-# Add horizontal line
-ax.axhline(0, linestyle=&quot;:&quot;, color=&quot;gray&quot;)
+<span class="c1"># Add horizontal line</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s2">&quot;:&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;gray&quot;</span><span class="p">)</span>
 
-plt.show()
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -1301,7 +1301,7 @@ plt.show()
 <p>This section illustrates the <strong>advanced usage</strong> of <code class="docutils literal notranslate"><span class="pre">DFtoVW</span></code> class. To do so, we will need to import some specific classes from the <code class="docutils literal notranslate"><span class="pre">DFtoVW</span></code> module.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>from vowpalwabbit.DFtoVW import SimpleLabel, Namespace, Feature
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">vowpalwabbit.DFtoVW</span> <span class="kn">import</span> <span class="n">SimpleLabel</span><span class="p">,</span> <span class="n">Namespace</span><span class="p">,</span> <span class="n">Feature</span>
 </pre></div>
 </div>
 </div>
@@ -1313,20 +1313,20 @@ plt.show()
 <p>The distribution of the target is close to a log-normal distribution:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>f, (ax1, ax2) = plt.subplots(figsize=(12, 5), ncols=2)
-f.suptitle(
-    &quot;Distribution of the target (PM)&quot;,
-    fontsize=SUPTITLE_FONTSIZE,
-    fontweight=SUPTITLE_FONTWEIGHT,
-)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span><span class="p">,</span> <span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="n">ax2</span><span class="p">)</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="n">ncols</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">f</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span>
+    <span class="s2">&quot;Distribution of the target (PM)&quot;</span><span class="p">,</span>
+    <span class="n">fontsize</span><span class="o">=</span><span class="n">SUPTITLE_FONTSIZE</span><span class="p">,</span>
+    <span class="n">fontweight</span><span class="o">=</span><span class="n">SUPTITLE_FONTWEIGHT</span><span class="p">,</span>
+<span class="p">)</span>
 
-df[&quot;PM&quot;].hist(bins=40, ax=ax1)
-ax1.set_title(&quot;No transformation&quot;, fontsize=TITLE_FONTSIZE)
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;PM&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">bins</span><span class="o">=</span><span class="mi">40</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax1</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;No transformation&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="n">TITLE_FONTSIZE</span><span class="p">)</span>
 
-np.log(df[&quot;PM&quot;]).hist(bins=40, ax=ax2)
-ax2.set_title(&quot;Log-transformed&quot;, fontsize=TITLE_FONTSIZE)
+<span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;PM&quot;</span><span class="p">])</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">bins</span><span class="o">=</span><span class="mi">40</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax2</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Log-transformed&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="n">TITLE_FONTSIZE</span><span class="p">)</span>
 
-plt.show()
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -1335,8 +1335,8 @@ plt.show()
 <p>For a regression task, we use the <code class="docutils literal notranslate"><span class="pre">SimpleLabel</span></code> class (more details on this type in the <a class="reference external" href="https://github.com/VowpalWabbit/vowpal_wabbit/wiki/Input-format#simple">Input Format section of the wiki</a>) to represent the target.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>df[&quot;log_PM&quot;] = df[&quot;PM&quot;].apply(np.log)
-label = SimpleLabel(&quot;log_PM&quot;)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;log_PM&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;PM&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">)</span>
+<span class="n">label</span> <span class="o">=</span> <span class="n">SimpleLabel</span><span class="p">(</span><span class="s2">&quot;log_PM&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1347,20 +1347,20 @@ label = SimpleLabel(&quot;log_PM&quot;)
 <p>Namespaces are defined using the <code class="docutils literal notranslate"><span class="pre">Namespace</span></code> class. They are formed of a (list of) <code class="docutils literal notranslate"><span class="pre">Feature</span></code> and can have a name.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># Datetime namespace
-datetime_features = [&quot;year&quot;, &quot;month&quot;, &quot;day&quot;, &quot;hour&quot;, &quot;season&quot;]
-ns_datetime = Namespace(
-    features=[Feature(col) for col in datetime_features], name=&quot;datetime_ns&quot;
-)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Datetime namespace</span>
+<span class="n">datetime_features</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;year&quot;</span><span class="p">,</span> <span class="s2">&quot;month&quot;</span><span class="p">,</span> <span class="s2">&quot;day&quot;</span><span class="p">,</span> <span class="s2">&quot;hour&quot;</span><span class="p">,</span> <span class="s2">&quot;season&quot;</span><span class="p">]</span>
+<span class="n">ns_datetime</span> <span class="o">=</span> <span class="n">Namespace</span><span class="p">(</span>
+    <span class="n">features</span><span class="o">=</span><span class="p">[</span><span class="n">Feature</span><span class="p">(</span><span class="n">col</span><span class="p">)</span> <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">datetime_features</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;datetime_ns&quot;</span>
+<span class="p">)</span>
 
-# City namespace
-ns_city = Namespace(features=Feature(&quot;city&quot;), name=&quot;city_ns&quot;)
+<span class="c1"># City namespace</span>
+<span class="n">ns_city</span> <span class="o">=</span> <span class="n">Namespace</span><span class="p">(</span><span class="n">features</span><span class="o">=</span><span class="n">Feature</span><span class="p">(</span><span class="s2">&quot;city&quot;</span><span class="p">),</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;city_ns&quot;</span><span class="p">)</span>
 
-# Weather namespace
-weather_features = [&quot;DEWP&quot;, &quot;HUMI&quot;, &quot;PRES&quot;, &quot;TEMP&quot;, &quot;cbwd&quot;, &quot;Iws&quot;, &quot;precipitation&quot;]
-ns_weather = Namespace(
-    features=[Feature(col) for col in weather_features], name=&quot;weather_ns&quot;
-)
+<span class="c1"># Weather namespace</span>
+<span class="n">weather_features</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;DEWP&quot;</span><span class="p">,</span> <span class="s2">&quot;HUMI&quot;</span><span class="p">,</span> <span class="s2">&quot;PRES&quot;</span><span class="p">,</span> <span class="s2">&quot;TEMP&quot;</span><span class="p">,</span> <span class="s2">&quot;cbwd&quot;</span><span class="p">,</span> <span class="s2">&quot;Iws&quot;</span><span class="p">,</span> <span class="s2">&quot;precipitation&quot;</span><span class="p">]</span>
+<span class="n">ns_weather</span> <span class="o">=</span> <span class="n">Namespace</span><span class="p">(</span>
+    <span class="n">features</span><span class="o">=</span><span class="p">[</span><span class="n">Feature</span><span class="p">(</span><span class="n">col</span><span class="p">)</span> <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">weather_features</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;weather_ns&quot;</span>
+<span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1370,9 +1370,9 @@ ns_weather = Namespace(
 <h3>4.3. Converting to VW format and training model<a class="headerlink" href="#converting-to-vw-format-and-training-model" title="Permalink to this headline">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>converter_advanced = DFtoVW(
-    df=df, namespaces=[ns_datetime, ns_weather, ns_city], label=label
-)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">converter_advanced</span> <span class="o">=</span> <span class="n">DFtoVW</span><span class="p">(</span>
+    <span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">namespaces</span><span class="o">=</span><span class="p">[</span><span class="n">ns_datetime</span><span class="p">,</span> <span class="n">ns_weather</span><span class="p">,</span> <span class="n">ns_city</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="n">label</span>
+<span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1380,10 +1380,10 @@ ns_weather = Namespace(
 <p><code class="docutils literal notranslate"><span class="pre">Namespace</span></code> and <code class="docutils literal notranslate"><span class="pre">Feature</span></code> objects can be accessed using <code class="docutils literal notranslate"><span class="pre">DFtoVW</span></code>’s instance attributes <code class="docutils literal notranslate"><span class="pre">namespaces</span></code> and <code class="docutils literal notranslate"><span class="pre">features</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>for namespace in converter_advanced.namespaces:
-    print(&quot;namespace:&quot;, namespace.name)
-    for feature in namespace.features:
-        print(&quot;\tfeature:&quot;, feature.name)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">namespace</span> <span class="ow">in</span> <span class="n">converter_advanced</span><span class="o">.</span><span class="n">namespaces</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;namespace:&quot;</span><span class="p">,</span> <span class="n">namespace</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">feature</span> <span class="ow">in</span> <span class="n">namespace</span><span class="o">.</span><span class="n">features</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">feature:&quot;</span><span class="p">,</span> <span class="n">feature</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1391,8 +1391,8 @@ ns_weather = Namespace(
 <p>We can inspect the first few examples:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>examples_advanced = converter_advanced.convert_df()
-examples_advanced[:5]
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">examples_advanced</span> <span class="o">=</span> <span class="n">converter_advanced</span><span class="o">.</span><span class="n">convert_df</span><span class="p">()</span>
+<span class="n">examples_advanced</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -1400,14 +1400,14 @@ examples_advanced[:5]
 <p>In this new model we will add interactions between the “weather” namespace and all the namespaces.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>model_advanced = Workspace(
-    arg_str=&quot;--redefine W:=weather_ns --interactions W:&quot;, P=1, enable_logging=True
-)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">model_advanced</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span>
+    <span class="n">arg_str</span><span class="o">=</span><span class="s2">&quot;--redefine W:=weather_ns --interactions W:&quot;</span><span class="p">,</span> <span class="n">P</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">enable_logging</span><span class="o">=</span><span class="kc">True</span>
+<span class="p">)</span>
 
-for ex in examples_advanced:
-    model_advanced.learn(ex)
+<span class="k">for</span> <span class="n">ex</span> <span class="ow">in</span> <span class="n">examples_advanced</span><span class="p">:</span>
+    <span class="n">model_advanced</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
 
-model_advanced.finish()
+<span class="n">model_advanced</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -1418,54 +1418,54 @@ model_advanced.finish()
 <p>We transform the labels and predictions using exponential function (since the target is log-transformed) so they can be compared with the ones of section 3.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>params_advanced, df_iter_advanced, metrics_advanced = VWLogParser(
-    model_advanced.get_log()
-).parse()
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">params_advanced</span><span class="p">,</span> <span class="n">df_iter_advanced</span><span class="p">,</span> <span class="n">metrics_advanced</span> <span class="o">=</span> <span class="n">VWLogParser</span><span class="p">(</span>
+    <span class="n">model_advanced</span><span class="o">.</span><span class="n">get_log</span><span class="p">()</span>
+<span class="p">)</span><span class="o">.</span><span class="n">parse</span><span class="p">()</span>
 
-df_iter_advanced.current_label = np.exp(df_iter_advanced.current_label)
-df_iter_advanced.current_predict = np.exp(df_iter_advanced.current_predict)
+<span class="n">df_iter_advanced</span><span class="o">.</span><span class="n">current_label</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">df_iter_advanced</span><span class="o">.</span><span class="n">current_label</span><span class="p">)</span>
+<span class="n">df_iter_advanced</span><span class="o">.</span><span class="n">current_predict</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">df_iter_advanced</span><span class="o">.</span><span class="n">current_predict</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>error_advanced = df_iter_advanced.current_label - df_iter_advanced.current_predict
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">error_advanced</span> <span class="o">=</span> <span class="n">df_iter_advanced</span><span class="o">.</span><span class="n">current_label</span> <span class="o">-</span> <span class="n">df_iter_advanced</span><span class="o">.</span><span class="n">current_predict</span>
 
-f, ((ax1, ax2), (ax3, ax4)) = plt.subplots(figsize=(20, 12), ncols=2, nrows=2)
-f.suptitle(
-    &quot;Predictions, labels and errors&quot;,
-    fontsize=SUPTITLE_FONTSIZE,
-    fontweight=SUPTITLE_FONTWEIGHT,
-)
+<span class="n">f</span><span class="p">,</span> <span class="p">((</span><span class="n">ax1</span><span class="p">,</span> <span class="n">ax2</span><span class="p">),</span> <span class="p">(</span><span class="n">ax3</span><span class="p">,</span> <span class="n">ax4</span><span class="p">))</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">12</span><span class="p">),</span> <span class="n">ncols</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">nrows</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">f</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span>
+    <span class="s2">&quot;Predictions, labels and errors&quot;</span><span class="p">,</span>
+    <span class="n">fontsize</span><span class="o">=</span><span class="n">SUPTITLE_FONTSIZE</span><span class="p">,</span>
+    <span class="n">fontweight</span><span class="o">=</span><span class="n">SUPTITLE_FONTWEIGHT</span><span class="p">,</span>
+<span class="p">)</span>
 
-sns.histplot(df_iter_advanced.current_label.iloc[start_idx:], ax=ax1, color=&quot;blue&quot;)
-ax1.set_title(&quot;Distribution of current_label&quot;, fontsize=TITLE_FONTSIZE)
+<span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">df_iter_advanced</span><span class="o">.</span><span class="n">current_label</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">start_idx</span><span class="p">:],</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;blue&quot;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Distribution of current_label&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="n">TITLE_FONTSIZE</span><span class="p">)</span>
 
-sns.histplot(df_iter_advanced.current_predict.iloc[start_idx:], ax=ax2, color=&quot;orange&quot;)
-ax2.set_title(&quot;Distribution of current_predict&quot;, fontsize=TITLE_FONTSIZE)
+<span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">df_iter_advanced</span><span class="o">.</span><span class="n">current_predict</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">start_idx</span><span class="p">:],</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;orange&quot;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Distribution of current_predict&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="n">TITLE_FONTSIZE</span><span class="p">)</span>
 
-sns.scatterplot(
-    data=df_iter_advanced.iloc[start_idx:],
-    x=&quot;current_predict&quot;,
-    y=&quot;current_label&quot;,
-    ax=ax3,
-    s=2,
-    alpha=0.15,
-)
-ax3.set_title(&quot;Prediction vs truth&quot;, fontsize=TITLE_FONTSIZE)
+<span class="n">sns</span><span class="o">.</span><span class="n">scatterplot</span><span class="p">(</span>
+    <span class="n">data</span><span class="o">=</span><span class="n">df_iter_advanced</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">start_idx</span><span class="p">:],</span>
+    <span class="n">x</span><span class="o">=</span><span class="s2">&quot;current_predict&quot;</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="s2">&quot;current_label&quot;</span><span class="p">,</span>
+    <span class="n">ax</span><span class="o">=</span><span class="n">ax3</span><span class="p">,</span>
+    <span class="n">s</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+    <span class="n">alpha</span><span class="o">=</span><span class="mf">0.15</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Prediction vs truth&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="n">TITLE_FONTSIZE</span><span class="p">)</span>
 
-# Add x=y line
-max_range = int(df_iter[[&quot;current_label&quot;, &quot;current_predict&quot;]].quantile(0.99).max())
-ax3.set_xlim(0, max_range)
-ax3.set_ylim(0, max_range)
-range_x = range(0, max_range)
-ax3.plot(range_x, range_x, linestyle=&quot;:&quot;, color=&quot;red&quot;, linewidth=2.5)
+<span class="c1"># Add x=y line</span>
+<span class="n">max_range</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">df_iter</span><span class="p">[[</span><span class="s2">&quot;current_label&quot;</span><span class="p">,</span> <span class="s2">&quot;current_predict&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.99</span><span class="p">)</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">max_range</span><span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">max_range</span><span class="p">)</span>
+<span class="n">range_x</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">max_range</span><span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">range_x</span><span class="p">,</span> <span class="n">range_x</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s2">&quot;:&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">2.5</span><span class="p">)</span>
 
-sns.histplot(error_advanced, ax=ax4)
-ax4.set_title(&quot;Distribution of errors&quot;, fontsize=TITLE_FONTSIZE)
+<span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">error_advanced</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax4</span><span class="p">)</span>
+<span class="n">ax4</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Distribution of errors&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="n">TITLE_FONTSIZE</span><span class="p">)</span>
 
-plt.show()
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -1479,38 +1479,38 @@ plt.show()
 <p>The model in section 2 is called “simple” and the current model (with interactions and log-transformed target) is called “advanced”.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>loss_type = 1  # 1 for L1-loss, 2 for L2-loss
-n_iter = 10_000  # Number of iterations on which to compute the loss (for moving average and final value)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">loss_type</span> <span class="o">=</span> <span class="mi">1</span>  <span class="c1"># 1 for L1-loss, 2 for L2-loss</span>
+<span class="n">n_iter</span> <span class="o">=</span> <span class="mi">10_000</span>  <span class="c1"># Number of iterations on which to compute the loss (for moving average and final value)</span>
 
-df_loss = pd.concat([error, error_advanced], axis=1, keys=[&quot;simple&quot;, &quot;advanced&quot;]).apply(
-    lambda x: np.power(np.abs(x), loss_type)
-)
+<span class="n">df_loss</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">error</span><span class="p">,</span> <span class="n">error_advanced</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">keys</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;simple&quot;</span><span class="p">,</span> <span class="s2">&quot;advanced&quot;</span><span class="p">])</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span>
+    <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">power</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">loss_type</span><span class="p">)</span>
+<span class="p">)</span>
 
-f, (ax1, ax2) = plt.subplots(ncols=2, figsize=(15, 5.5))
-f.suptitle(
-    &quot;Comparison of models&#39; performance&quot;,
-    fontweight=SUPTITLE_FONTWEIGHT,
-    fontsize=SUPTITLE_FONTSIZE,
-)
+<span class="n">f</span><span class="p">,</span> <span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="n">ax2</span><span class="p">)</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">ncols</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mf">5.5</span><span class="p">))</span>
+<span class="n">f</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span>
+    <span class="s2">&quot;Comparison of models&#39; performance&quot;</span><span class="p">,</span>
+    <span class="n">fontweight</span><span class="o">=</span><span class="n">SUPTITLE_FONTWEIGHT</span><span class="p">,</span>
+    <span class="n">fontsize</span><span class="o">=</span><span class="n">SUPTITLE_FONTSIZE</span><span class="p">,</span>
+<span class="p">)</span>
 
-df_loss.rolling(n_iter).mean().plot(ax=ax1)
-ax1.set_title(f&quot;Moving average of loss (over {n_iter:,} iterations)&quot;, fontsize=15)
+<span class="n">df_loss</span><span class="o">.</span><span class="n">rolling</span><span class="p">(</span><span class="n">n_iter</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax1</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Moving average of loss (over </span><span class="si">{</span><span class="n">n_iter</span><span class="si">:</span><span class="s2">,</span><span class="si">}</span><span class="s2"> iterations)&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
 
-loss_last_it = df_loss.tail(n_iter).mean()
-pct_diff_loss = 100 * (loss_last_it.advanced / loss_last_it.simple - 1)
+<span class="n">loss_last_it</span> <span class="o">=</span> <span class="n">df_loss</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="n">n_iter</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="n">pct_diff_loss</span> <span class="o">=</span> <span class="mi">100</span> <span class="o">*</span> <span class="p">(</span><span class="n">loss_last_it</span><span class="o">.</span><span class="n">advanced</span> <span class="o">/</span> <span class="n">loss_last_it</span><span class="o">.</span><span class="n">simple</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
 
-loss_last_it.plot.bar(ax=ax2, color=&quot;gray&quot;)
-ax2.set_title(f&quot;Loss computed on the last {n_iter:,} iterations&quot;, fontsize=15)
-ax2.text(
-    0.75,
-    loss_last_it.advanced * 1.025,
-    f&quot;Δ% loss= {pct_diff_loss:.2f}&quot;,
-    fontsize=12,
-    fontweight=SUPTITLE_FONTWEIGHT,
-)
-ax2.set_xticklabels(ax2.get_xticklabels(), fontsize=13, rotation=0)
+<span class="n">loss_last_it</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;gray&quot;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Loss computed on the last </span><span class="si">{</span><span class="n">n_iter</span><span class="si">:</span><span class="s2">,</span><span class="si">}</span><span class="s2"> iterations&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">text</span><span class="p">(</span>
+    <span class="mf">0.75</span><span class="p">,</span>
+    <span class="n">loss_last_it</span><span class="o">.</span><span class="n">advanced</span> <span class="o">*</span> <span class="mf">1.025</span><span class="p">,</span>
+    <span class="sa">f</span><span class="s2">&quot;Δ% loss= </span><span class="si">{</span><span class="n">pct_diff_loss</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span>
+    <span class="n">fontweight</span><span class="o">=</span><span class="n">SUPTITLE_FONTWEIGHT</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">ax2</span><span class="o">.</span><span class="n">get_xticklabels</span><span class="p">(),</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">13</span><span class="p">,</span> <span class="n">rotation</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 
-plt.show()
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>

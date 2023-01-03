@@ -497,87 +497,87 @@ const thebe_selector_output = ".output, .cell_output"
 <h1>Contextual Bandits<a class="headerlink" href="#contextual-bandits" title="Permalink to this headline">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>import vowpalwabbit
-import pandas as pd
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">vowpalwabbit</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># generate sample data that could originate from previous random trial, e.g. AB test, for the CB to explore
-## data here are equivalent to example in https://github.com/VowpalWabbit/vowpal_wabbit/wiki/Logged-Contextual-Bandit-Example
-train_data = [
-    {
-        &quot;action&quot;: 1,
-        &quot;cost&quot;: 2,
-        &quot;probability&quot;: 0.4,
-        &quot;feature1&quot;: &quot;a&quot;,
-        &quot;feature2&quot;: &quot;c&quot;,
-        &quot;feature3&quot;: &quot;&quot;,
-    },
-    {
-        &quot;action&quot;: 3,
-        &quot;cost&quot;: 0,
-        &quot;probability&quot;: 0.2,
-        &quot;feature1&quot;: &quot;b&quot;,
-        &quot;feature2&quot;: &quot;d&quot;,
-        &quot;feature3&quot;: &quot;&quot;,
-    },
-    {
-        &quot;action&quot;: 4,
-        &quot;cost&quot;: 1,
-        &quot;probability&quot;: 0.5,
-        &quot;feature1&quot;: &quot;a&quot;,
-        &quot;feature2&quot;: &quot;b&quot;,
-        &quot;feature3&quot;: &quot;&quot;,
-    },
-    {
-        &quot;action&quot;: 2,
-        &quot;cost&quot;: 1,
-        &quot;probability&quot;: 0.3,
-        &quot;feature1&quot;: &quot;a&quot;,
-        &quot;feature2&quot;: &quot;b&quot;,
-        &quot;feature3&quot;: &quot;c&quot;,
-    },
-    {
-        &quot;action&quot;: 3,
-        &quot;cost&quot;: 1,
-        &quot;probability&quot;: 0.7,
-        &quot;feature1&quot;: &quot;a&quot;,
-        &quot;feature2&quot;: &quot;d&quot;,
-        &quot;feature3&quot;: &quot;&quot;,
-    },
-]
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># generate sample data that could originate from previous random trial, e.g. AB test, for the CB to explore</span>
+<span class="c1">## data here are equivalent to example in https://github.com/VowpalWabbit/vowpal_wabbit/wiki/Logged-Contextual-Bandit-Example</span>
+<span class="n">train_data</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;action&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="s2">&quot;cost&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+        <span class="s2">&quot;probability&quot;</span><span class="p">:</span> <span class="mf">0.4</span><span class="p">,</span>
+        <span class="s2">&quot;feature1&quot;</span><span class="p">:</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;feature2&quot;</span><span class="p">:</span> <span class="s2">&quot;c&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;feature3&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;action&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+        <span class="s2">&quot;cost&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="s2">&quot;probability&quot;</span><span class="p">:</span> <span class="mf">0.2</span><span class="p">,</span>
+        <span class="s2">&quot;feature1&quot;</span><span class="p">:</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;feature2&quot;</span><span class="p">:</span> <span class="s2">&quot;d&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;feature3&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;action&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+        <span class="s2">&quot;cost&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="s2">&quot;probability&quot;</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">,</span>
+        <span class="s2">&quot;feature1&quot;</span><span class="p">:</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;feature2&quot;</span><span class="p">:</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;feature3&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;action&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+        <span class="s2">&quot;cost&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="s2">&quot;probability&quot;</span><span class="p">:</span> <span class="mf">0.3</span><span class="p">,</span>
+        <span class="s2">&quot;feature1&quot;</span><span class="p">:</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;feature2&quot;</span><span class="p">:</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;feature3&quot;</span><span class="p">:</span> <span class="s2">&quot;c&quot;</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;action&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+        <span class="s2">&quot;cost&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="s2">&quot;probability&quot;</span><span class="p">:</span> <span class="mf">0.7</span><span class="p">,</span>
+        <span class="s2">&quot;feature1&quot;</span><span class="p">:</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;feature2&quot;</span><span class="p">:</span> <span class="s2">&quot;d&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;feature3&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="p">},</span>
+<span class="p">]</span>
 
-train_df = pd.DataFrame(train_data)
+<span class="n">train_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">train_data</span><span class="p">)</span>
 
-## add index to df
-train_df[&quot;index&quot;] = range(1, len(train_df) + 1)
-train_df = train_df.set_index(&quot;index&quot;)
+<span class="c1">## add index to df</span>
+<span class="n">train_df</span><span class="p">[</span><span class="s2">&quot;index&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">train_df</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">train_df</span> <span class="o">=</span> <span class="n">train_df</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s2">&quot;index&quot;</span><span class="p">)</span>
 
-# generate some test data that you want the CB to make decisions for, e.g. features describing new users, for the CB to exploit
-test_data = [
-    {&quot;feature1&quot;: &quot;b&quot;, &quot;feature2&quot;: &quot;c&quot;, &quot;feature3&quot;: &quot;&quot;},
-    {&quot;feature1&quot;: &quot;a&quot;, &quot;feature2&quot;: &quot;&quot;, &quot;feature3&quot;: &quot;b&quot;},
-    {&quot;feature1&quot;: &quot;b&quot;, &quot;feature2&quot;: &quot;b&quot;, &quot;feature3&quot;: &quot;&quot;},
-    {&quot;feature1&quot;: &quot;a&quot;, &quot;feature2&quot;: &quot;&quot;, &quot;feature3&quot;: &quot;b&quot;},
-]
+<span class="c1"># generate some test data that you want the CB to make decisions for, e.g. features describing new users, for the CB to exploit</span>
+<span class="n">test_data</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span><span class="s2">&quot;feature1&quot;</span><span class="p">:</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;feature2&quot;</span><span class="p">:</span> <span class="s2">&quot;c&quot;</span><span class="p">,</span> <span class="s2">&quot;feature3&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">&quot;feature1&quot;</span><span class="p">:</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;feature2&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;feature3&quot;</span><span class="p">:</span> <span class="s2">&quot;b&quot;</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">&quot;feature1&quot;</span><span class="p">:</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;feature2&quot;</span><span class="p">:</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;feature3&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">&quot;feature1&quot;</span><span class="p">:</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;feature2&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;feature3&quot;</span><span class="p">:</span> <span class="s2">&quot;b&quot;</span><span class="p">},</span>
+<span class="p">]</span>
 
-test_df = pd.DataFrame(test_data)
+<span class="n">test_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">test_data</span><span class="p">)</span>
 
-## add index to df
-test_df[&quot;index&quot;] = range(1, len(test_df) + 1)
-test_df = test_df.set_index(&quot;index&quot;)
+<span class="c1">## add index to df</span>
+<span class="n">test_df</span><span class="p">[</span><span class="s2">&quot;index&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">test_df</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">test_df</span> <span class="o">=</span> <span class="n">test_df</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s2">&quot;index&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># take a look at dataframes
-print(train_df)
-print(test_df)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># take a look at dataframes</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">train_df</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">test_df</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -601,46 +601,46 @@ index
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># create python model - this stores the model parameters in the python vw object; here a contextual bandit with four possible actions
-vw = vowpalwabbit.Workspace(&quot;--cb 4&quot;, quiet=True)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># create python model - this stores the model parameters in the python vw object; here a contextual bandit with four possible actions</span>
+<span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--cb 4&quot;</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
-# use the learn method to train the vw model, train model row by row using a loop
-for i in train_df.index:
-    ## provide data to cb in requested format
-    action = train_df.loc[i, &quot;action&quot;]
-    cost = train_df.loc[i, &quot;cost&quot;]
-    probability = train_df.loc[i, &quot;probability&quot;]
-    feature1 = train_df.loc[i, &quot;feature1&quot;]
-    feature2 = train_df.loc[i, &quot;feature2&quot;]
-    feature3 = train_df.loc[i, &quot;feature3&quot;]
-    ## do the actual learning
-    vw.learn(
-        str(action)
-        + &quot;:&quot;
-        + str(cost)
-        + &quot;:&quot;
-        + str(probability)
-        + &quot; | &quot;
-        + str(feature1)
-        + &quot; &quot;
-        + str(feature2)
-        + &quot; &quot;
-        + str(feature3)
-    )
+<span class="c1"># use the learn method to train the vw model, train model row by row using a loop</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">train_df</span><span class="o">.</span><span class="n">index</span><span class="p">:</span>
+    <span class="c1">## provide data to cb in requested format</span>
+    <span class="n">action</span> <span class="o">=</span> <span class="n">train_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="s2">&quot;action&quot;</span><span class="p">]</span>
+    <span class="n">cost</span> <span class="o">=</span> <span class="n">train_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="s2">&quot;cost&quot;</span><span class="p">]</span>
+    <span class="n">probability</span> <span class="o">=</span> <span class="n">train_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="s2">&quot;probability&quot;</span><span class="p">]</span>
+    <span class="n">feature1</span> <span class="o">=</span> <span class="n">train_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="s2">&quot;feature1&quot;</span><span class="p">]</span>
+    <span class="n">feature2</span> <span class="o">=</span> <span class="n">train_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="s2">&quot;feature2&quot;</span><span class="p">]</span>
+    <span class="n">feature3</span> <span class="o">=</span> <span class="n">train_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="s2">&quot;feature3&quot;</span><span class="p">]</span>
+    <span class="c1">## do the actual learning</span>
+    <span class="n">vw</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span>
+        <span class="nb">str</span><span class="p">(</span><span class="n">action</span><span class="p">)</span>
+        <span class="o">+</span> <span class="s2">&quot;:&quot;</span>
+        <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">cost</span><span class="p">)</span>
+        <span class="o">+</span> <span class="s2">&quot;:&quot;</span>
+        <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">probability</span><span class="p">)</span>
+        <span class="o">+</span> <span class="s2">&quot; | &quot;</span>
+        <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">feature1</span><span class="p">)</span>
+        <span class="o">+</span> <span class="s2">&quot; &quot;</span>
+        <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">feature2</span><span class="p">)</span>
+        <span class="o">+</span> <span class="s2">&quot; &quot;</span>
+        <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">feature3</span><span class="p">)</span>
+    <span class="p">)</span>
 
-# use the same model object that was trained to perform predictions
+<span class="c1"># use the same model object that was trained to perform predictions</span>
 
-# predict row by row and output results
-for j in test_df.index:
-    feature1 = test_df.loc[j, &quot;feature1&quot;]
-    feature2 = test_df.loc[j, &quot;feature2&quot;]
-    feature3 = test_df.loc[j, &quot;feature3&quot;]
-    choice = vw.predict(
-        &quot;| &quot; + str(feature1) + &quot; &quot; + str(feature2) + &quot; &quot; + str(feature3)
-    )
-    print(j, choice)
+<span class="c1"># predict row by row and output results</span>
+<span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">test_df</span><span class="o">.</span><span class="n">index</span><span class="p">:</span>
+    <span class="n">feature1</span> <span class="o">=</span> <span class="n">test_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">j</span><span class="p">,</span> <span class="s2">&quot;feature1&quot;</span><span class="p">]</span>
+    <span class="n">feature2</span> <span class="o">=</span> <span class="n">test_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">j</span><span class="p">,</span> <span class="s2">&quot;feature2&quot;</span><span class="p">]</span>
+    <span class="n">feature3</span> <span class="o">=</span> <span class="n">test_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">j</span><span class="p">,</span> <span class="s2">&quot;feature3&quot;</span><span class="p">]</span>
+    <span class="n">choice</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span>
+        <span class="s2">&quot;| &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">feature1</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">feature2</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">feature3</span><span class="p">)</span>
+    <span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">j</span><span class="p">,</span> <span class="n">choice</span><span class="p">)</span>
 
-# the CB assigns every instance to action 3 as it should per the cost structure of the train data; you can play with the cost structure to see that the CB updates its predictions accordingly
+<span class="c1"># the CB assigns every instance to action 3 as it should per the cost structure of the train data; you can play with the cost structure to see that the CB updates its predictions accordingly</span>
 </pre></div>
 </div>
 </div>
@@ -655,13 +655,13 @@ for j in test_df.index:
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span># BONUS: save and load the CB model
-# save model
-vw.save(&quot;cb.model&quot;)
-del vw
-# load from saved file
-vw = vowpalwabbit.Workspace(&quot;--cb 4 -i cb.model&quot;, quiet=True)
-print(vw.predict(&quot;| a b&quot;))
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># BONUS: save and load the CB model</span>
+<span class="c1"># save model</span>
+<span class="n">vw</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">&quot;cb.model&quot;</span><span class="p">)</span>
+<span class="k">del</span> <span class="n">vw</span>
+<span class="c1"># load from saved file</span>
+<span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--cb 4 -i cb.model&quot;</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">vw</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="s2">&quot;| a b&quot;</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
