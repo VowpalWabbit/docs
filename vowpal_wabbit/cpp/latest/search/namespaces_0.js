@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['action_5fscore_2623',['ACTION_SCORE',['../namespaceACTION__SCORE.html',1,'']]],
-  ['argmaxtask_2624',['ArgmaxTask',['../namespaceArgmaxTask.html',1,'']]]
+  ['action_5fscore_0',['ACTION_SCORE',['../namespaceACTION__SCORE.html',1,'']]],
+  ['argmaxtask_1',['ArgmaxTask',['../namespaceArgmaxTask.html',1,'']]]
 ];
