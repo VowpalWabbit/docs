@@ -2,8 +2,8 @@ var searchData=
 [
   ['scalar_0',['scalar',['../namespaceVW.html#a4f76045a06b3efe3c5c612b777b6c836aa27a6549ade38cc036f7b8c58a840510',1,'VW']]],
   ['scalar_1',['SCALAR',['../namespaceVW.html#a4f76045a06b3efe3c5c612b777b6c836a8f3d9a4b6a7b7f2c7afa61ca113d0db9',1,'VW']]],
-  ['scalars_2',['scalars',['../namespaceVW.html#a4f76045a06b3efe3c5c612b777b6c836a4f14d3acdc8c1cb2ac2f808f2afded32',1,'VW']]],
-  ['scalars_3',['SCALARS',['../namespaceVW.html#a4f76045a06b3efe3c5c612b777b6c836ae161246454fe724c3d735f5d8e455d03',1,'VW']]],
+  ['scalars_2',['SCALARS',['../namespaceVW.html#a4f76045a06b3efe3c5c612b777b6c836ae161246454fe724c3d735f5d8e455d03',1,'VW']]],
+  ['scalars_3',['scalars',['../namespaceVW.html#a4f76045a06b3efe3c5c612b777b6c836a4f14d3acdc8c1cb2ac2f808f2afded32',1,'VW']]],
   ['self_5fconsistent_5frank_4',['SELF_CONSISTENT_RANK',['../namespaceVW_1_1reductions_1_1eigen__memory__tree.html#a8d6e402a3b0772248993ffe9ac4d2dbaac8f22c24675c34f7977013add5318e00',1,'VW::reductions::eigen_memory_tree']]],
   ['shared_5',['SHARED',['../namespaceVW.html#a596fabd45fcdfed3154eb263d035f069a049518eb4dc1859c7cebbe15876cfd63',1,'VW::SHARED()'],['../namespaceVW_1_1slates.html#a894cb7b1b775c40313bbb5e1c4b48a50a049518eb4dc1859c7cebbe15876cfd63',1,'VW::slates::SHARED()']]],
   ['simple_6',['simple',['../namespaceVW.html#a41c81f994e2400fabf138c9f2b3d78e5a8dbdda48fb8748d6746f1965824e966a',1,'VW']]],

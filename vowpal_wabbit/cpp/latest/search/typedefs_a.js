@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['label_0',['label',['../namespaceCCB.html#a912f29db88d8ccae84051e8dc8b3d2df',1,'CCB::label()'],['../namespaceCOST__SENSITIVE.html#a52560170568337579930391e59943c20',1,'COST_SENSITIVE::label()']]],
+  ['label_0',['label',['../namespaceCB.html#abe05e419ff211212d1002b37928551a0',1,'CB::label()'],['../namespaceCB__EVAL.html#a8ec674268a319f4da62968a6bbc47c3f',1,'CB_EVAL::label()'],['../namespaceCCB.html#a912f29db88d8ccae84051e8dc8b3d2df',1,'CCB::label()'],['../namespaceCOST__SENSITIVE.html#a52560170568337579930391e59943c20',1,'COST_SENSITIVE::label()']]],
   ['label_5fdata_1',['label_data',['../simple__label_8h.html#aa38c2f62b36a5dfeff95c08320ebb6bc',1,'simple_label.h']]],
   ['label_5ffeature_5fmap_2',['label_feature_map',['../namespaceVW_1_1details.html#ae68f4189f484f9bb71f03a49cdda406a',1,'VW::details']]],
   ['label_5fparser_3',['label_parser',['../label__parser_8h.html#a22c6b11fd6789e734c17982d0f0ccce6',1,'label_parser.h']]],

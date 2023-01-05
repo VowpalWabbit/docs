@@ -19,7 +19,7 @@ var searchData=
   ['estimators_16',['estimators',['../classVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#ad2fa0ddfa6bd13cb31a8856e172ad5b8',1,'VW::reductions::automl::interaction_config_manager']]],
   ['eta_17',['eta',['../classVW_1_1estimators_1_1confidence__sequence.html#a0cd30ae116528c07d421c18c63d8dd17',1,'VW::estimators::confidence_sequence::eta()'],['../classVW_1_1workspace.html#ad79f6dc7d719ba0d0de5f829177fb745',1,'VW::workspace::eta()']]],
   ['eta_5fdecay_5frate_18',['eta_decay_rate',['../classVW_1_1workspace.html#a657b3989f456fadc02b1067dc3bc1db5',1,'VW::workspace']]],
-  ['event_19',['event',['../classCB__EVAL_1_1label.html#af295a09fa564952d45e7b016fc60e1ff',1,'CB_EVAL::label']]],
+  ['event_19',['event',['../classVW_1_1cb__eval__label.html#a188056fed25ce9bc326c8c4193643640',1,'VW::cb_eval_label']]],
   ['event_5fid_20',['event_id',['../classVW_1_1parsers_1_1json_1_1decision__service__interaction.html#adf357216351e40b43c337904fb932bd7',1,'VW::parsers::json::decision_service_interaction']]],
   ['event_5fsum_21',['event_sum',['../classGEN__CS_1_1cb__to__cs__adf.html#a2aad7caed595926fb7fbbd43a653e384',1,'GEN_CS::cb_to_cs_adf']]],
   ['ex_22',['ex',['../structVW_1_1reductions_1_1eigen__memory__tree_1_1emt__tree.html#aed0f0b410beb9b7ed880986271b1602f',1,'VW::reductions::eigen_memory_tree::emt_tree']]],

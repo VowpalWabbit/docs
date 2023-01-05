@@ -8,7 +8,7 @@ var searchData=
   ['has_5fempty_5finteraction_5fquadratic_5',['has_empty_interaction_quadratic',['../namespaceINTERACTIONS.html#a49c6638073161bf790da8da25fbadc68',1,'INTERACTIONS']]],
   ['has_5flegacy_5ffinish_6',['has_legacy_finish',['../classVW_1_1LEARNER_1_1learner.html#a92fa62de0c81785f843ce7581a38bf30',1,'VW::LEARNER::learner']]],
   ['has_5fmerge_7',['has_merge',['../classVW_1_1LEARNER_1_1learner.html#aa40861e5c276b4c37bcdd6fce6de3f3e',1,'VW::LEARNER::learner']]],
-  ['has_5fobserved_5fcost_8',['has_observed_cost',['../classCB_1_1cb__class.html#a2f61508f2bac6020d397bb103f626a28',1,'CB::cb_class']]],
+  ['has_5fobserved_5fcost_8',['has_observed_cost',['../classVW_1_1cb__class.html#aa99a84019728487c36eb81530345de54',1,'VW::cb_class']]],
   ['has_5foutput_5fexample_5fprediction_9',['has_output_example_prediction',['../classVW_1_1LEARNER_1_1learner.html#a928a06619767f16c94fe1b7af87c4ac1',1,'VW::LEARNER::learner']]],
   ['has_5fprint_5fupdate_10',['has_print_update',['../classVW_1_1LEARNER_1_1learner.html#a157526d9809f51533e44e113a8ed00e1',1,'VW::LEARNER::learner']]],
   ['has_5fsubtract_11',['has_subtract',['../classVW_1_1LEARNER_1_1learner.html#a8f3156b49ff9f55c128f249721ceb1d5',1,'VW::LEARNER::learner']]],

@@ -162,6 +162,8 @@ Functions</h2></td></tr>
 <tr class="separator:aa681657de3752dd96fc5f34af0999315"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e8d93b31fa67f99a6d0363abd46cd4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#a4e8d93b31fa67f99a6d0363abd46cd4c">print_action_score</a> (<a class="el" href="classVW_1_1io_1_1writer.html">VW::io::writer</a> *f, const <a class="el" href="classVW_1_1v__array.html">VW::v_array</a>&lt; <a class="el" href="classVW_1_1action__score.html">action_score</a> &gt; &amp;a_s, const <a class="el" href="classVW_1_1v__array.html">VW::v_array</a>&lt; char &gt; &amp;, <a class="el" href="classVW_1_1io_1_1logger.html">VW::io::logger</a> &amp;logger)</td></tr>
 <tr class="separator:a4e8d93b31fa67f99a6d0363abd46cd4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa430cc598dc5cbf2ab9ca8a3d9e1f62b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#aa430cc598dc5cbf2ab9ca8a3d9e1f62b">print_update_cb</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, bool is_test, const <a class="el" href="classVW_1_1example.html">VW::example</a> &amp;ec, const <a class="el" href="namespaceVW.html#a1dd7b95816f635bc6a5906d2b566c856">VW::multi_ex</a> *ec_seq, bool <a class="el" href="namespaceVW.html#a2702c36414c2a3b9ee641b6bc2639e20">action_scores</a>, const <a class="el" href="classVW_1_1cb__class.html">VW::cb_class</a> *known_cost)</td></tr>
+<tr class="separator:aa430cc598dc5cbf2ab9ca8a3d9e1f62b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1d938370e0bb399064e9837ba849b90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#aa1d938370e0bb399064e9837ba849b90">output_cs_example</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, const <a class="el" href="classVW_1_1example.html">VW::example</a> &amp;ec)</td></tr>
 <tr class="separator:aa1d938370e0bb399064e9837ba849b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50351e0983ee0b961c304fca18d5bd2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#a50351e0983ee0b961c304fca18d5bd2b">output_cs_example</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, const <a class="el" href="classVW_1_1example.html">VW::example</a> &amp;ec, const <a class="el" href="classVW_1_1cs__label.html">cs_label</a> &amp;<a class="el" href="classVW_1_1cs__label.html">cs_label</a>, uint32_t multiclass_prediction)</td></tr>
@@ -3019,6 +3021,58 @@ template&lt;typename UnusedDataT &gt; </div>
           <td></td>
           <td class="paramtype">const <a class="el" href="classVW_1_1example.html">VW::example</a> &amp;&#160;</td>
           <td class="paramname"><em>ec</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa430cc598dc5cbf2ab9ca8a3d9e1f62b" name="aa430cc598dc5cbf2ab9ca8a3d9e1f62b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa430cc598dc5cbf2ab9ca8a3d9e1f62b">&#9670;&#160;</a></span>print_update_cb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VW::details::print_update_cb </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;&#160;</td>
+          <td class="paramname"><em>all</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>is_test</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classVW_1_1example.html">VW::example</a> &amp;&#160;</td>
+          <td class="paramname"><em>ec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespaceVW.html#a1dd7b95816f635bc6a5906d2b566c856">VW::multi_ex</a> *&#160;</td>
+          <td class="paramname"><em>ec_seq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>action_scores</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classVW_1_1cb__class.html">VW::cb_class</a> *&#160;</td>
+          <td class="paramname"><em>known_cost</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['label_0',['label',['../classCB_1_1label.html',1,'CB::label'],['../classCB__EVAL_1_1label.html',1,'CB_EVAL::label'],['../classVW_1_1slates_1_1label.html',1,'VW::slates::label']]],
+  ['label_0',['label',['../classVW_1_1slates_1_1label.html',1,'VW::slates']]],
   ['label_5fparser_1',['label_parser',['../classVW_1_1label__parser.html',1,'VW']]],
   ['label_5fparser_5freuse_5fmem_2',['label_parser_reuse_mem',['../classVW_1_1label__parser__reuse__mem.html',1,'VW']]],
   ['labels_3',['labels',['../classMULTILABEL_1_1labels.html',1,'MULTILABEL']]],
