@@ -851,7 +851,7 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/061650ce16cc349d72be06cafbc24cf90254bfaed73349c246924212aa6b5e9e.png" src="../_images/061650ce16cc349d72be06cafbc24cf90254bfaed73349c246924212aa6b5e9e.png" />
+<img alt="../_images/8074c4fa07fe2108aaa776c10fc4483a7ad5a7767b4322e2fb4ee177bd1c6171.png" src="../_images/8074c4fa07fe2108aaa776c10fc4483a7ad5a7767b4322e2fb4ee177bd1c6171.png" />
 </div>
 </div>
 </section>
@@ -884,7 +884,7 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/f6d245ec4636ed835a6266023015d9fe0413e117b17c1e5f7019eeca8c4c9162.png" src="../_images/f6d245ec4636ed835a6266023015d9fe0413e117b17c1e5f7019eeca8c4c9162.png" />
+<img alt="../_images/99e6718b851347e7676919b761ae3a8df6728f1f3c732f2456d46f39947478bf.png" src="../_images/99e6718b851347e7676919b761ae3a8df6728f1f3c732f2456d46f39947478bf.png" />
 </div>
 </div>
 </section>
@@ -1082,7 +1082,139 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 25
 </pre></div>
 </div>
-<img alt="../_images/de2c83d704f25a399317b703555566d14ecf9b07b4e23f68da81bbf4bd34b58c.png" src="../_images/de2c83d704f25a399317b703555566d14ecf9b07b4e23f68da81bbf4bd34b58c.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Error in callback &lt;function flush_figures at 0x7fc7980f9d80&gt; (for post_execute):
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">KeyboardInterrupt</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="nn">File /opt/hostedtoolcache/Python/3.10.9/x64/lib/python3.10/site-packages/matplotlib_inline/backend_inline.py:126,</span> in <span class="ni">flush_figures</span><span class="nt">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">123</span> <span class="k">if</span> <span class="n">InlineBackend</span><span class="o">.</span><span class="n">instance</span><span class="p">()</span><span class="o">.</span><span class="n">close_figures</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">124</span>     <span class="c1"># ignore the tracking, just draw and close all figures</span>
+<span class="g g-Whitespace">    </span><span class="mi">125</span>     <span class="k">try</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">126</span>         <span class="k">return</span> <span class="n">show</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">127</span>     <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">128</span>         <span class="c1"># safely show traceback if in IPython, else raise</span>
+<span class="g g-Whitespace">    </span><span class="mi">129</span>         <span class="n">ip</span> <span class="o">=</span> <span class="n">get_ipython</span><span class="p">()</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.10.9/x64/lib/python3.10/site-packages/matplotlib_inline/backend_inline.py:90,</span> in <span class="ni">show</span><span class="nt">(close, block)</span>
+<span class="g g-Whitespace">     </span><span class="mi">88</span> <span class="k">try</span><span class="p">:</span>
+<span class="g g-Whitespace">     </span><span class="mi">89</span>     <span class="k">for</span> <span class="n">figure_manager</span> <span class="ow">in</span> <span class="n">Gcf</span><span class="o">.</span><span class="n">get_all_fig_managers</span><span class="p">():</span>
+<span class="ne">---&gt; </span><span class="mi">90</span>         <span class="n">display</span><span class="p">(</span>
+<span class="g g-Whitespace">     </span><span class="mi">91</span>             <span class="n">figure_manager</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">figure</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">92</span>             <span class="n">metadata</span><span class="o">=</span><span class="n">_fetch_figure_metadata</span><span class="p">(</span><span class="n">figure_manager</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">figure</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">93</span>         <span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">94</span> <span class="k">finally</span><span class="p">:</span>
+<span class="g g-Whitespace">     </span><span class="mi">95</span>     <span class="n">show</span><span class="o">.</span><span class="n">_to_draw</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.10.9/x64/lib/python3.10/site-packages/IPython/core/display_functions.py:298,</span> in <span class="ni">display</span><span class="nt">(include, exclude, metadata, transient, display_id, raw, clear, *objs, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">296</span>     <span class="n">publish_display_data</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">obj</span><span class="p">,</span> <span class="n">metadata</span><span class="o">=</span><span class="n">metadata</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">297</span> <span class="k">else</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">298</span>     <span class="n">format_dict</span><span class="p">,</span> <span class="n">md_dict</span> <span class="o">=</span> <span class="nb">format</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">include</span><span class="o">=</span><span class="n">include</span><span class="p">,</span> <span class="n">exclude</span><span class="o">=</span><span class="n">exclude</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">299</span>     <span class="k">if</span> <span class="ow">not</span> <span class="n">format_dict</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">300</span>         <span class="c1"># nothing to display (e.g. _ipython_display_ took over)</span>
+<span class="g g-Whitespace">    </span><span class="mi">301</span>         <span class="k">continue</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.10.9/x64/lib/python3.10/site-packages/IPython/core/formatters.py:177,</span> in <span class="ni">DisplayFormatter.format</span><span class="nt">(self, obj, include, exclude)</span>
+<span class="g g-Whitespace">    </span><span class="mi">175</span> <span class="n">md</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="g g-Whitespace">    </span><span class="mi">176</span> <span class="k">try</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">177</span>     <span class="n">data</span> <span class="o">=</span> <span class="n">formatter</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">178</span> <span class="k">except</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">179</span>     <span class="c1"># FIXME: log the exception</span>
+<span class="g g-Whitespace">    </span><span class="mi">180</span>     <span class="k">raise</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.10.9/x64/lib/python3.10/site-packages/decorator.py:232,</span> in <span class="ni">decorate.&lt;locals&gt;.fun</span><span class="nt">(*args, **kw)</span>
+<span class="g g-Whitespace">    </span><span class="mi">230</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">kwsyntax</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">231</span>     <span class="n">args</span><span class="p">,</span> <span class="n">kw</span> <span class="o">=</span> <span class="n">fix</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="n">kw</span><span class="p">,</span> <span class="n">sig</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">232</span> <span class="k">return</span> <span class="n">caller</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="o">*</span><span class="p">(</span><span class="n">extras</span> <span class="o">+</span> <span class="n">args</span><span class="p">),</span> <span class="o">**</span><span class="n">kw</span><span class="p">)</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.10.9/x64/lib/python3.10/site-packages/IPython/core/formatters.py:221,</span> in <span class="ni">catch_format_error</span><span class="nt">(method, self, *args, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">219</span><span class="w"> </span><span class="sd">&quot;&quot;&quot;show traceback on failed format call&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">220</span> <span class="k">try</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">221</span>     <span class="n">r</span> <span class="o">=</span> <span class="n">method</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">222</span> <span class="k">except</span> <span class="ne">NotImplementedError</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">223</span>     <span class="c1"># don&#39;t warn on NotImplementedErrors</span>
+<span class="g g-Whitespace">    </span><span class="mi">224</span>     <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_check_return</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.10.9/x64/lib/python3.10/site-packages/IPython/core/formatters.py:338,</span> in <span class="ni">BaseFormatter.__call__</span><span class="nt">(self, obj)</span>
+<span class="g g-Whitespace">    </span><span class="mi">336</span>     <span class="k">pass</span>
+<span class="g g-Whitespace">    </span><span class="mi">337</span> <span class="k">else</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">338</span>     <span class="k">return</span> <span class="n">printer</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">339</span> <span class="c1"># Finally look for special method names</span>
+<span class="g g-Whitespace">    </span><span class="mi">340</span> <span class="n">method</span> <span class="o">=</span> <span class="n">get_real_method</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">print_method</span><span class="p">)</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.10.9/x64/lib/python3.10/site-packages/IPython/core/pylabtools.py:152,</span> in <span class="ni">print_figure</span><span class="nt">(fig, fmt, bbox_inches, base64, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">149</span>     <span class="kn">from</span> <span class="nn">matplotlib.backend_bases</span> <span class="kn">import</span> <span class="n">FigureCanvasBase</span>
+<span class="g g-Whitespace">    </span><span class="mi">150</span>     <span class="n">FigureCanvasBase</span><span class="p">(</span><span class="n">fig</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">152</span> <span class="n">fig</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">print_figure</span><span class="p">(</span><span class="n">bytes_io</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">153</span> <span class="n">data</span> <span class="o">=</span> <span class="n">bytes_io</span><span class="o">.</span><span class="n">getvalue</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">154</span> <span class="k">if</span> <span class="n">fmt</span> <span class="o">==</span> <span class="s1">&#39;svg&#39;</span><span class="p">:</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.10.9/x64/lib/python3.10/site-packages/matplotlib/backend_bases.py:2325,</span> in <span class="ni">FigureCanvasBase.print_figure</span><span class="nt">(self, filename, dpi, facecolor, edgecolor, orientation, format, bbox_inches, pad_inches, bbox_extra_artists, backend, **kwargs)</span>
+<span class="g g-Whitespace">   </span><span class="mi">2322</span>         <span class="n">bbox_inches</span> <span class="o">=</span> <span class="n">bbox_inches</span><span class="o">.</span><span class="n">padded</span><span class="p">(</span><span class="n">pad_inches</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">2324</span>     <span class="c1"># call adjust_bbox to save only the given area</span>
+<span class="ne">-&gt; </span><span class="mi">2325</span>     <span class="n">restore_bbox</span> <span class="o">=</span> <span class="n">_tight_bbox</span><span class="o">.</span><span class="n">adjust_bbox</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">2326</span>         <span class="bp">self</span><span class="o">.</span><span class="n">figure</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">figure</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">fixed_dpi</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">2328</span>     <span class="n">_bbox_inches_restore</span> <span class="o">=</span> <span class="p">(</span><span class="n">bbox_inches</span><span class="p">,</span> <span class="n">restore_bbox</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">2329</span> <span class="k">else</span><span class="p">:</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.10.9/x64/lib/python3.10/site-packages/matplotlib/_tight_bbox.py:29,</span> in <span class="ni">adjust_bbox</span><span class="nt">(fig, bbox_inches, fixed_dpi)</span>
+<span class="g g-Whitespace">     </span><span class="mi">27</span> <span class="k">for</span> <span class="n">ax</span> <span class="ow">in</span> <span class="n">fig</span><span class="o">.</span><span class="n">axes</span><span class="p">:</span>
+<span class="g g-Whitespace">     </span><span class="mi">28</span>     <span class="n">locator_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ax</span><span class="o">.</span><span class="n">get_axes_locator</span><span class="p">())</span>
+<span class="ne">---&gt; </span><span class="mi">29</span>     <span class="n">current_pos</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">get_position</span><span class="p">(</span><span class="n">original</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">frozen</span><span class="p">()</span>
+<span class="g g-Whitespace">     </span><span class="mi">30</span>     <span class="n">ax</span><span class="o">.</span><span class="n">set_axes_locator</span><span class="p">(</span><span class="k">lambda</span> <span class="n">a</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">_pos</span><span class="o">=</span><span class="n">current_pos</span><span class="p">:</span> <span class="n">_pos</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">31</span>     <span class="c1"># override the method that enforces the aspect ratio on the Axes</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.10.9/x64/lib/python3.10/site-packages/matplotlib/axes/_base.py:1060,</span> in <span class="ni">_AxesBase.get_position</span><span class="nt">(self, original)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1058</span> <span class="n">locator</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_axes_locator</span><span class="p">()</span>
+<span class="g g-Whitespace">   </span><span class="mi">1059</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">locator</span><span class="p">:</span>
+<span class="ne">-&gt; </span><span class="mi">1060</span>     <span class="bp">self</span><span class="o">.</span><span class="n">apply_aspect</span><span class="p">()</span>
+<span class="g g-Whitespace">   </span><span class="mi">1061</span> <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_position</span><span class="o">.</span><span class="n">frozen</span><span class="p">()</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.10.9/x64/lib/python3.10/site-packages/matplotlib/axes/_base.py:1928,</span> in <span class="ni">_AxesBase.apply_aspect</span><span class="nt">(self, position)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1925</span> <span class="n">aspect</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_aspect</span><span class="p">()</span>
+<span class="g g-Whitespace">   </span><span class="mi">1927</span> <span class="k">if</span> <span class="n">aspect</span> <span class="o">==</span> <span class="s1">&#39;auto&#39;</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">_box_aspect</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+<span class="ne">-&gt; </span><span class="mi">1928</span>     <span class="bp">self</span><span class="o">.</span><span class="n">_set_position</span><span class="p">(</span><span class="n">position</span><span class="p">,</span> <span class="n">which</span><span class="o">=</span><span class="s1">&#39;active&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1929</span>     <span class="k">return</span>
+<span class="g g-Whitespace">   </span><span class="mi">1931</span> <span class="n">trans</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_figure</span><span class="p">()</span><span class="o">.</span><span class="n">transSubfigure</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.10.9/x64/lib/python3.10/site-packages/matplotlib/axes/_base.py:1102,</span> in <span class="ni">_AxesBase._set_position</span><span class="nt">(self, pos, which)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1100</span> <span class="k">for</span> <span class="n">ax</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_twinned_axes</span><span class="o">.</span><span class="n">get_siblings</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="g g-Whitespace">   </span><span class="mi">1101</span>     <span class="k">if</span> <span class="n">which</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;both&#39;</span><span class="p">,</span> <span class="s1">&#39;active&#39;</span><span class="p">):</span>
+<span class="ne">-&gt; </span><span class="mi">1102</span>         <span class="n">ax</span><span class="o">.</span><span class="n">_position</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">pos</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1103</span>     <span class="k">if</span> <span class="n">which</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;both&#39;</span><span class="p">,</span> <span class="s1">&#39;original&#39;</span><span class="p">):</span>
+<span class="g g-Whitespace">   </span><span class="mi">1104</span>         <span class="n">ax</span><span class="o">.</span><span class="n">_originalPosition</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">pos</span><span class="p">)</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.10.9/x64/lib/python3.10/site-packages/matplotlib/transforms.py:1061,</span> in <span class="ni">Bbox.set</span><span class="nt">(self, other)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1057</span> <span class="k">def</span> <span class="nf">set</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+<span class="g g-Whitespace">   </span><span class="mi">1058</span><span class="w">     </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">   </span><span class="mi">1059</span><span class="sd">     Set this bounding box from the &quot;frozen&quot; bounds of another `Bbox`.</span>
+<span class="g g-Whitespace">   </span><span class="mi">1060</span><span class="sd">     &quot;&quot;&quot;</span>
+<span class="ne">-&gt; </span><span class="mi">1061</span>     <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">any</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_points</span> <span class="o">!=</span> <span class="n">other</span><span class="o">.</span><span class="n">get_points</span><span class="p">()):</span>
+<span class="g g-Whitespace">   </span><span class="mi">1062</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_points</span> <span class="o">=</span> <span class="n">other</span><span class="o">.</span><span class="n">get_points</span><span class="p">()</span>
+<span class="g g-Whitespace">   </span><span class="mi">1063</span>         <span class="bp">self</span><span class="o">.</span><span class="n">invalidate</span><span class="p">()</span>
+
+<span class="nn">File &lt;__array_function__ internals&gt;:200,</span> in <span class="ni">any</span><span class="nt">(*args, **kwargs)</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.10.9/x64/lib/python3.10/site-packages/numpy/core/fromnumeric.py:2423,</span> in <span class="ni">any</span><span class="nt">(a, axis, out, keepdims, where)</span>
+<span class="g g-Whitespace">   </span><span class="mi">2333</span> <span class="nd">@array_function_dispatch</span><span class="p">(</span><span class="n">_any_dispatcher</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">2334</span> <span class="k">def</span> <span class="nf">any</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">keepdims</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">_NoValue</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">where</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">_NoValue</span><span class="p">):</span>
+<span class="g g-Whitespace">   </span><span class="mi">2335</span><span class="w">     </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">   </span><span class="mi">2336</span><span class="sd">     Test whether any array element along a given axis evaluates to True.</span>
+<span class="g g-Whitespace">   </span><span class="mi">2337</span><span class="sd"> </span>
+<span class="sd">   (...)</span>
+<span class="g g-Whitespace">   </span><span class="mi">2421</span><span class="sd"> </span>
+<span class="g g-Whitespace">   </span><span class="mi">2422</span><span class="sd">     &quot;&quot;&quot;</span>
+<span class="ne">-&gt; </span><span class="mi">2423</span>     <span class="k">return</span> <span class="n">_wrapreduction</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">logical_or</span><span class="p">,</span> <span class="s1">&#39;any&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="n">out</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">2424</span>                           <span class="n">keepdims</span><span class="o">=</span><span class="n">keepdims</span><span class="p">,</span> <span class="n">where</span><span class="o">=</span><span class="n">where</span><span class="p">)</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.10.9/x64/lib/python3.10/site-packages/numpy/core/fromnumeric.py:86,</span> in <span class="ni">_wrapreduction</span><span class="nt">(obj, ufunc, method, axis, dtype, out, **kwargs)</span>
+<span class="g g-Whitespace">     </span><span class="mi">83</span>         <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">     </span><span class="mi">84</span>             <span class="k">return</span> <span class="n">reduction</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="n">axis</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="n">out</span><span class="p">,</span> <span class="o">**</span><span class="n">passkwargs</span><span class="p">)</span>
+<span class="ne">---&gt; </span><span class="mi">86</span> <span class="k">return</span> <span class="n">ufunc</span><span class="o">.</span><span class="n">reduce</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">axis</span><span class="p">,</span> <span class="n">dtype</span><span class="p">,</span> <span class="n">out</span><span class="p">,</span> <span class="o">**</span><span class="n">passkwargs</span><span class="p">)</span>
+
+<span class="ne">KeyboardInterrupt</span>: 
+</pre></div>
+</div>
 </div>
 </div>
 </section>
@@ -1116,88 +1248,6 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 <span class="n">plot_reward_sweep</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">,</span> <span class="n">num_actions</span><span class="p">,</span> <span class="n">bandwidths</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 8 and --bandwidth 0
-Running simulation for: --cats 8 and --bandwidth 1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 8 and --bandwidth 2
-Running simulation for: --cats 8 and --bandwidth 3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 32 and --bandwidth 0
-Running simulation for: --cats 32 and --bandwidth 1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 32 and --bandwidth 2
-Running simulation for: --cats 32 and --bandwidth 3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 32 and --bandwidth 25
-Running simulation for: --cats 64 and --bandwidth 0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 64 and --bandwidth 1
-Running simulation for: --cats 64 and --bandwidth 2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 64 and --bandwidth 3
-Running simulation for: --cats 64 and --bandwidth 25
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 128 and --bandwidth 0
-Running simulation for: --cats 128 and --bandwidth 1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 128 and --bandwidth 2
-Running simulation for: --cats 128 and --bandwidth 3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 128 and --bandwidth 25
-Running simulation for: --cats 256 and --bandwidth 0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 256 and --bandwidth 1
-Running simulation for: --cats 256 and --bandwidth 2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 256 and --bandwidth 3
-Running simulation for: --cats 256 and --bandwidth 25
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 512 and --bandwidth 0
-Running simulation for: --cats 512 and --bandwidth 1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 512 and --bandwidth 2
-Running simulation for: --cats 512 and --bandwidth 3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 512 and --bandwidth 25
-Running simulation for: --cats 1024 and --bandwidth 0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 1024 and --bandwidth 1
-Running simulation for: --cats 1024 and --bandwidth 2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 1024 and --bandwidth 3
-Running simulation for: --cats 1024 and --bandwidth 25
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 0
-Running simulation for: --cats 2048 and --bandwidth 1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 2
-Running simulation for: --cats 2048 and --bandwidth 3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 25
-</pre></div>
-</div>
-<img alt="../_images/f8d5cca25823a6cc84c14c18e7c4b07747f4456a6dd2e2b3bb9a7481fad0bd68.png" src="../_images/f8d5cca25823a6cc84c14c18e7c4b07747f4456a6dd2e2b3bb9a7481fad0bd68.png" />
 </div>
 </div>
 </section>
@@ -1391,9 +1441,6 @@ Running simulation for: --cats 2048 and --bandwidth 3
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../_images/1d7fba29d1c86ffde2844f78b9031fa379985647a3ab717e8b8dd8faf9368f90.png" src="../_images/1d7fba29d1c86ffde2844f78b9031fa379985647a3ab717e8b8dd8faf9368f90.png" />
-</div>
 </div>
 </section>
 <section id="id4">
@@ -1431,9 +1478,6 @@ Running simulation for: --cats 2048 and --bandwidth 3
 <span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../_images/7ab2847ae48cb57691e6b6e487958baf35d82ceccde4e9fe2f215ffe6997b99e.png" src="../_images/7ab2847ae48cb57691e6b6e487958baf35d82ceccde4e9fe2f215ffe6997b99e.png" />
 </div>
 </div>
 </section>
@@ -1519,126 +1563,6 @@ Running simulation for: --cats 2048 and --bandwidth 3
 <span class="n">plot_reward_sweep</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">,</span> <span class="n">num_actions</span><span class="p">,</span> <span class="n">bandwidths</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 8 and --bandwidth 0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 8 and --bandwidth 1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 8 and --bandwidth 2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 8 and --bandwidth 3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 32 and --bandwidth 0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 32 and --bandwidth 1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 32 and --bandwidth 2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 32 and --bandwidth 3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 32 and --bandwidth 25
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 64 and --bandwidth 0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 64 and --bandwidth 1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 64 and --bandwidth 2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 64 and --bandwidth 3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 64 and --bandwidth 25
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 128 and --bandwidth 0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 128 and --bandwidth 1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 128 and --bandwidth 2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 128 and --bandwidth 3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 128 and --bandwidth 25
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 256 and --bandwidth 0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 256 and --bandwidth 1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 256 and --bandwidth 2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 256 and --bandwidth 3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 256 and --bandwidth 25
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 512 and --bandwidth 0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 512 and --bandwidth 1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 512 and --bandwidth 2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 512 and --bandwidth 3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 512 and --bandwidth 25
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 1024 and --bandwidth 0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 1024 and --bandwidth 1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 1024 and --bandwidth 2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 1024 and --bandwidth 3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 1024 and --bandwidth 25
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 25
-</pre></div>
-</div>
-<img alt="../_images/a5d1bc1e5155c450690efb21d955b826512bad2e84a46b3757010baaa39c63eb.png" src="../_images/a5d1bc1e5155c450690efb21d955b826512bad2e84a46b3757010baaa39c63eb.png" />
 </div>
 </div>
 </section>
