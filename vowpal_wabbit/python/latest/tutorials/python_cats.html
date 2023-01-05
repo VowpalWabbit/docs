@@ -631,7 +631,7 @@ The context is therefore (room, time_of_day).</p>
 <p>In the real world we will have to learn the room temperature preferences as we observe the interactions between the proposed temperature for each room and the one selected by the people living in the house. Since this is a simulation we will have to define the preference profile for each room. The reward that we provide to the learner will follow this preference profile. Our hope is to see if the learner can take better and better decisions as we see more samples which in turn means we are maximizing the reward.</p>
 <p>We will also modify the reward function in a few different ways and see if the CB learner picks up the changes. We will compare the TR with and without learning.</p>
 <p>VW minimizes the cost, which is defined as -reward. Therefore, we will pass the cost associated to each chosen action to VW.</p>
-<p>The reward function below specifies that we want the living room to be cold in the morning but warm in the afternoon. In reverse, we prefer the bedroom to be warm in the morning and cold in the afternoon. It looks dense but we are just simulating our hypothetical world in the format of the feedback the learner understands: cost. If the learner recommends a temperature that aligns with the reward function, we give a positive reward. Max reward is -1.0, min reward is 0 since VW learns in terms of cost, so we return a negative reward. In our simulated world this is the difference between the temperature recommended and the temperature chosen. If the difference is smaller than 5 degrees then we give a reward to the thermostat. This is a step cost function.</p>
+<p>The reward function below specifies that we want the living room to be cold in the morning but warm in the afternoon. In reverse, we prefer the bedroom to be warm in the morning and cold in the afternoon. It looks dense but we are just simulating our hypothetical world in the format of the feedback the learner understands: cost. If the learner recommends a temperature that aligns with the reward function, we give a positive reward. Max reward is -1.0, min reward is 0 since VW learns in terms of cost, so we return a negative reward. In our simulated world this is the difference between the temperature recommended and the temperature chosen. If the difference is smaller than 5 degrees then we give a reward to the thermostat. This is a steep/harsh cost function.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_cost</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">temperature</span><span class="p">,</span> <span class="n">min_value</span><span class="p">,</span> <span class="n">max_value</span><span class="p">):</span>
@@ -851,7 +851,7 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/21c627e3b3b6a984e59cdb4a9cbde0add33bf0b55ff970a90a87182942842084.png" src="../_images/21c627e3b3b6a984e59cdb4a9cbde0add33bf0b55ff970a90a87182942842084.png" />
+<img alt="../_images/2d84394366e8d16e73cd2a9f4d08d1a81b5afc22c82807bb93920fef78f98d12.png" src="../_images/2d84394366e8d16e73cd2a9f4d08d1a81b5afc22c82807bb93920fef78f98d12.png" />
 </div>
 </div>
 </section>
@@ -884,7 +884,7 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/754a973c63ffe9bf2b6bc5b4232f1df5d152c4d402b297c797252d8bf299bcf1.png" src="../_images/754a973c63ffe9bf2b6bc5b4232f1df5d152c4d402b297c797252d8bf299bcf1.png" />
+<img alt="../_images/eed01f7982e8c0868766345c9addd10de19b929b3b2a97f365ae4e03a7acad3b.png" src="../_images/eed01f7982e8c0868766345c9addd10de19b929b3b2a97f365ae4e03a7acad3b.png" />
 </div>
 </div>
 </section>
@@ -1082,7 +1082,7 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 25
 </pre></div>
 </div>
-<img alt="../_images/f5efd70ba81cf68fd6066439150b810f7f8d2424f181a92f05fdc84cc42a9a65.png" src="../_images/f5efd70ba81cf68fd6066439150b810f7f8d2424f181a92f05fdc84cc42a9a65.png" />
+<img alt="../_images/5df160aaf53fb23bfe3eb445d6134cdea40e33bb6e440a7efc4de4c164170ffd.png" src="../_images/5df160aaf53fb23bfe3eb445d6134cdea40e33bb6e440a7efc4de4c164170ffd.png" />
 </div>
 </div>
 </section>
@@ -1197,7 +1197,7 @@ Running simulation for: --cats 2048 and --bandwidth 3
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 25
 </pre></div>
 </div>
-<img alt="../_images/ba1080f31609a204ae00ffc0b91548a14b808d7be0bd19b6674af0b8fddbabf2.png" src="../_images/ba1080f31609a204ae00ffc0b91548a14b808d7be0bd19b6674af0b8fddbabf2.png" />
+<img alt="../_images/9857d5651a356aa18e40bd06820afab080875c6953ccca25da05a846297c1a3f.png" src="../_images/9857d5651a356aa18e40bd06820afab080875c6953ccca25da05a846297c1a3f.png" />
 </div>
 </div>
 </section>
@@ -1392,7 +1392,7 @@ Running simulation for: --cats 2048 and --bandwidth 3
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/9ee42732fa8974b34eb42fa5b4e156f192e450150359f067bda9057df86e1481.png" src="../_images/9ee42732fa8974b34eb42fa5b4e156f192e450150359f067bda9057df86e1481.png" />
+<img alt="../_images/61bf9ea1420b16ecd5aa354bd797608856f2d563087458c6cc5ef35cd59fe238.png" src="../_images/61bf9ea1420b16ecd5aa354bd797608856f2d563087458c6cc5ef35cd59fe238.png" />
 </div>
 </div>
 </section>
@@ -1433,7 +1433,7 @@ Running simulation for: --cats 2048 and --bandwidth 3
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/5e5cb715c2ffadcdc681b517ba1bd4f67418957b60dd4af202eb4bcbf0d8aa20.png" src="../_images/5e5cb715c2ffadcdc681b517ba1bd4f67418957b60dd4af202eb4bcbf0d8aa20.png" />
+<img alt="../_images/83d9f65c7203bbb05859ed4d573d687c33c19b4c84027cc7673594fed85ee4ae.png" src="../_images/83d9f65c7203bbb05859ed4d573d687c33c19b4c84027cc7673594fed85ee4ae.png" />
 </div>
 </div>
 </section>
@@ -1638,7 +1638,7 @@ Running simulation for: --cats 2048 and --bandwidth 3
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 25
 </pre></div>
 </div>
-<img alt="../_images/0b8ea9cfb1fd1b0431be186a0891739b58cc1013c6b4cad4eb0105f6e43da6d7.png" src="../_images/0b8ea9cfb1fd1b0431be186a0891739b58cc1013c6b4cad4eb0105f6e43da6d7.png" />
+<img alt="../_images/aa8eba642c977376484ecb2ddea85dbf06061a03ea89c14fd448a66759aa3e48.png" src="../_images/aa8eba642c977376484ecb2ddea85dbf06061a03ea89c14fd448a66759aa3e48.png" />
 </div>
 </div>
 </section>
