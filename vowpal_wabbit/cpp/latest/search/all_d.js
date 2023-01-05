@@ -77,7 +77,7 @@ var searchData=
   ['live_74',['Live',['../namespaceVW_1_1reductions_1_1automl.html#a972530ec4a7a21fef5af9a5d7ae4379ca955ad3298db330b5ee880c2c9e6f23a0',1,'VW::reductions::automl']]],
   ['live_5finteractions_75',['live_interactions',['../classVW_1_1reductions_1_1automl_1_1aml__estimator.html#a8470c59af0cadc66bf492b5e5b20655c',1,'VW::reductions::automl::aml_estimator']]],
   ['load_5fheader_5fmerge_5foptions_76',['load_header_merge_options',['../namespaceVW_1_1details.html#abf6e27d35d46765b313bfc4c39d1fce1',1,'VW::details']]],
-  ['loaded_5fdictionaries_77',['loaded_dictionaries',['../classVW_1_1workspace.html#a40c9de1e1015c27d3d5b098481acbad7',1,'VW::workspace']]],
+  ['loaded_5fdictionaries_77',['loaded_dictionaries',['../classVW_1_1workspace.html#ac77a67c124b0689fe37662ca6f7b483c',1,'VW::workspace']]],
   ['location_78',['location',['../classVW_1_1io_1_1details_1_1logger__impl.html#ae44948b3d17e809c2630dd9bf0140a3c',1,'VW::io::details::logger_impl']]],
   ['lock_5fdone_79',['lock_done',['../namespaceVW_1_1details.html#ac545c8ee20cb04c156ec1fabf6513745',1,'VW::details']]],
   ['log_5fcount_80',['log_count',['../classVW_1_1io_1_1details_1_1logger__impl.html#a5471ab46270833e4b3517a2a6ad5d685',1,'VW::io::details::logger_impl']]],

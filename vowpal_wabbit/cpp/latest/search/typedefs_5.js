@@ -1,7 +1,7 @@
 var searchData=
 [
   ['feature_0',['feature',['../feature__group_8h.html#aead87de58777de059b01e013f8b51969',1,'feature_group.h']]],
-  ['feature_5fdict_1',['feature_dict',['../global__data_8h.html#a68f285e8d845b11e06d67017871cbefa',1,'global_data.h']]],
+  ['feature_5fdict_1',['feature_dict',['../namespaceVW_1_1details.html#a56551be087b390449e1498ba088e1019',1,'VW::details']]],
   ['feature_5findex_2',['feature_index',['../feature__group_8h.html#a0c9cc5f0657b5e4547f9864e9d17805c',1,'feature_index():&#160;feature_group.h'],['../namespaceVW.html#ae293694568b9c5c686e2eed33c130e4f',1,'VW::feature_index()']]],
   ['feature_5fvalue_3',['feature_value',['../feature__group_8h.html#a3cfdda6417970b6fadf5f1937f8438ff',1,'feature_value():&#160;feature_group.h'],['../namespaceVW.html#a9d1f5f2c33d7157f79526004c20421a8',1,'VW::feature_value()']]],
   ['features_4',['features',['../feature__group_8h.html#a71f1fbe63f2955c31d98a8cb5d9222df',1,'feature_group.h']]],

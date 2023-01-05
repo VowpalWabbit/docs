@@ -2,8 +2,8 @@ var searchData=
 [
   ['n_0',['n',['../classVW_1_1details_1_1Duals.html#a637ee45e21a742feff38f41bc134f896',1,'VW::details::Duals']]],
   ['n_1',['N',['../classVW_1_1reductions_1_1expreplay_1_1expreplay.html#a2563123c377deacbee6f4ec4fa5051e9',1,'VW::reductions::expreplay::expreplay']]],
-  ['name_2',['name',['../classVW_1_1audit__strings.html#aeda51a335733a0481b53d8057c22fdf9',1,'VW::audit_strings::name()'],['../classdictionary__info.html#aafd5bfbc5290ad275067a8cf3397970a',1,'dictionary_info::name()'],['../classVW_1_1primitive__feature__space.html#a8f5b0342e8c1f8c6d6e5648d14894a59',1,'VW::primitive_feature_space::name()']]],
-  ['namespace_5fdictionaries_3',['namespace_dictionaries',['../classVW_1_1workspace.html#a7a54ee459d452d564df57ff42b799677',1,'VW::workspace']]],
+  ['name_2',['name',['../classVW_1_1audit__strings.html#aeda51a335733a0481b53d8057c22fdf9',1,'VW::audit_strings::name()'],['../classVW_1_1details_1_1dictionary__info.html#ae4c13b09ead447efd5dca770464ea18d',1,'VW::details::dictionary_info::name()'],['../classVW_1_1primitive__feature__space.html#a8f5b0342e8c1f8c6d6e5648d14894a59',1,'VW::primitive_feature_space::name()']]],
+  ['namespace_5fdictionaries_3',['namespace_dictionaries',['../classVW_1_1workspace.html#ac1c4e2dfc4b7a086ca13d76d2e0060c9',1,'VW::workspace']]],
   ['namespace_5fextents_4',['namespace_extents',['../classVW_1_1features.html#aef7d3f4c7e6f37cd3e41ccfd3e3c273d',1,'VW::features']]],
   ['nb_5fex_5fregressors_5',['nb_ex_regressors',['../classGEN__CS_1_1cb__to__cs.html#a01035400474484702805476f486fe449',1,'GEN_CS::cb_to_cs']]],
   ['neg_5fnorm_5fpower_6',['neg_norm_power',['../classGD_1_1gd.html#a440b03aac0a095e7d81b5e00941deb7c',1,'GD::gd']]],

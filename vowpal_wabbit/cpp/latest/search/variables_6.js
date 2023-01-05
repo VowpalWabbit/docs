@@ -4,7 +4,7 @@ var searchData=
   ['feature_5flist_1',['feature_list',['../classVW_1_1parsers_1_1csv_1_1csv__parser.html#a9de74a39d75a5dae526a94d903a2d870',1,'VW::parsers::csv::csv_parser']]],
   ['feature_5fmask_2',['feature_mask',['../classVW_1_1workspace.html#a2b69dfb1a44e46fbaa0ba40ab05e0ad8',1,'VW::workspace']]],
   ['feature_5fspace_3',['feature_space',['../classVW_1_1example__predict.html#aff83d481714c0efece6cdec03f4cf6bb',1,'VW::example_predict']]],
-  ['file_5fhash_4',['file_hash',['../classdictionary__info.html#a1ab499f54ad0f7cb77a6eb299a36f479',1,'dictionary_info']]],
+  ['file_5fhash_4',['file_hash',['../classVW_1_1details_1_1dictionary__info.html#a06d7240251825e9eccbda5be04ee7c36',1,'VW::details::dictionary_info']]],
   ['filled_5',['filled',['../classVW_1_1reductions_1_1expreplay_1_1expreplay.html#af090d90a05a4a51e0df6d700ae55ef35',1,'VW::reductions::expreplay::expreplay']]],
   ['final_5fprediction_5fsink_6',['final_prediction_sink',['../classVW_1_1workspace.html#a7988dbf3ee8a1f79ca8f47ad73108e54',1,'VW::workspace']]],
   ['final_5fregressor_5fname_7',['final_regressor_name',['../classVW_1_1workspace.html#a3a01bd40a1f009df4e66c2555e1fb2bb',1,'VW::workspace']]],

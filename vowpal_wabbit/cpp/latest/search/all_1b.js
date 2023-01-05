@@ -39,7 +39,7 @@ var searchData=
   ['_7eswap_5fguard_5fimpl_5frvalue_36',['~swap_guard_impl_rvalue',['../classVW_1_1details_1_1swap__guard__impl__rvalue.html#a0b49d31c92f6015e5296c94c3e1dbb40',1,'VW::details::swap_guard_impl_rvalue']]],
   ['_7ethread_5fpool_37',['~thread_pool',['../classVW_1_1thread__pool.html#a4f8633a7f1f8b2badd8ecfe9c193ffc2',1,'VW::thread_pool']]],
   ['_7ethreads_5fjoiner_38',['~threads_joiner',['../classVW_1_1threads__joiner.html#a0f4887cb24b647233133729534ab88cd',1,'VW::threads_joiner']]],
-  ['_7etrace_5fmessage_5fwrapper_39',['~trace_message_wrapper',['../classtrace__message__wrapper.html#a67dba64b58b02aee80c8d68bd2897b67',1,'trace_message_wrapper']]],
+  ['_7etrace_5fmessage_5fwrapper_39',['~trace_message_wrapper',['../classVW_1_1details_1_1trace__message__wrapper.html#a2c807f2b889f4145c9f4f4d1774c6158',1,'VW::details::trace_message_wrapper']]],
   ['_7etyped_5foption_5fvisitor_40',['~typed_option_visitor',['../classVW_1_1config_1_1typed__option__visitor.html#a4770500721e208760d9f2bb7ffb0cba8',1,'VW::config::typed_option_visitor']]],
   ['_7ev_5farray_41',['~v_array',['../classVW_1_1v__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_33e27e9ce8c36a8ad45bb4ffa0ccdb7cc.html#a01889d8a2e97924d0737e912aef2f26b',1,'VW::v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;']]],
   ['_7evw_5fargument_5fdisagreement_5fexception_42',['~vw_argument_disagreement_exception',['../classVW_1_1vw__argument__disagreement__exception.html#ad111eda2c2e5d0387d6fbba72af1ed01',1,'VW::vw_argument_disagreement_exception']]],

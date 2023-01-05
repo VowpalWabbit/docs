@@ -17,7 +17,7 @@ var searchData=
   ['default_5ftint_14',['DEFAULT_TINT',['../classVW_1_1config_1_1options__i.html#aa06ec8d22d8dabc7ae687846b0f9226d',1,'VW::config::options_i']]],
   ['dense_5fweights_15',['dense_weights',['../classVW_1_1parameters.html#a0594688a71cf7d70f997337b532f2ed6',1,'VW::parameters']]],
   ['depth_16',['depth',['../classVW_1_1reductions_1_1cats_1_1tree__node.html#acb1440e502f8187eded48f614bd3e59e',1,'VW::reductions::cats::tree_node']]],
-  ['dict_17',['dict',['../classdictionary__info.html#a2d11720a16042a4f08e04b63a9a1ab85',1,'dictionary_info']]],
+  ['dict_17',['dict',['../classVW_1_1details_1_1dictionary__info.html#a1911be899b26c9b1a5efe8c669bcf2be',1,'VW::details::dictionary_info']]],
   ['dictionary_5fnamespace_18',['DICTIONARY_NAMESPACE',['../namespaceVW_1_1details.html#adc1a181eff322e3266d1e8c3fbc0d39e',1,'VW::details']]],
   ['dictionary_5fpath_19',['dictionary_path',['../classVW_1_1workspace.html#ad31d947bacad4b327034a7bf16e837d5',1,'VW::workspace']]],
   ['do_5freset_5fsource_20',['do_reset_source',['../classVW_1_1workspace.html#a41cc6598448119a2e3478675cc683f02',1,'VW::workspace']]],

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Vowpal Wabbit: /nix/store/a6y2kfhvdjx5ga8xd9lih3mafyfw3v72-source/vowpalwabbit/core/include/vw/core/api_status.h File Reference</title>
+<title>Vowpal Wabbit: /nix/store/912j5fqkv0bafh2qi2qshyzk68zsyddl-source/vowpalwabbit/core/include/vw/core/api_status.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -132,10 +132,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ab0247d1a7a281031e680d2a5aa4111b4"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1experimental.html#ab0247d1a7a281031e680d2a5aa4111b4">VW::experimental::report_error</a> (api_status *status, int scode, const All &amp;... all)</td></tr>
 <tr class="memdesc:ab0247d1a7a281031e680d2a5aa4111b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main report_error template used to serialize error into <a class="el" href="classVW_1_1experimental_1_1api__status.html" title="Report status of all API calls.">api_status</a> The method most end users will use with a status code and a number of objects to be serialised into an <a class="el" href="classVW_1_1experimental_1_1api__status.html" title="Report status of all API calls.">api_status</a>.  <a href="namespaceVW_1_1experimental.html#ab0247d1a7a281031e680d2a5aa4111b4">More...</a><br /></td></tr>
 <tr class="separator:ab0247d1a7a281031e680d2a5aa4111b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76acf4d1a385141063e381c0bcec8ac2"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a76acf4d1a385141063e381c0bcec8ac2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classVW_1_1experimental_1_1status__builder.html">VW::experimental::status_builder</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="api__status_8h.html#a76acf4d1a385141063e381c0bcec8ac2">operator&lt;&lt;</a> (<a class="el" href="classVW_1_1experimental_1_1status__builder.html">VW::experimental::status_builder</a> &amp;sb, const T &amp;val)</td></tr>
-<tr class="memdesc:a76acf4d1a385141063e381c0bcec8ac2"><td class="mdescLeft">&#160;</td><td class="mdescRight">left shift operator to serialize types into stringstream held in status_builder  <a href="api__status_8h.html#a76acf4d1a385141063e381c0bcec8ac2">More...</a><br /></td></tr>
-<tr class="separator:a76acf4d1a385141063e381c0bcec8ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fd842cad672166b31e4c293c798154f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a8fd842cad672166b31e4c293c798154f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classVW_1_1experimental_1_1status__builder.html">VW::experimental::status_builder</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1experimental.html#a8fd842cad672166b31e4c293c798154f">VW::experimental::operator&lt;&lt;</a> (<a class="el" href="classVW_1_1experimental_1_1status__builder.html">VW::experimental::status_builder</a> &amp;sb, const T &amp;val)</td></tr>
+<tr class="memdesc:a8fd842cad672166b31e4c293c798154f"><td class="mdescLeft">&#160;</td><td class="mdescRight">left shift operator to serialize types into stringstream held in <a class="el" href="classVW_1_1experimental_1_1status__builder.html" title="Helper class used in report_error template funcstions to return status from API calls.">status_builder</a>  <a href="namespaceVW_1_1experimental.html#a8fd842cad672166b31e4c293c798154f">More...</a><br /></td></tr>
+<tr class="separator:a8fd842cad672166b31e4c293c798154f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20facf56cc9512534432585ef810022c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1experimental.html#a20facf56cc9512534432585ef810022c">VW::experimental::report_error</a> (status_builder &amp;sb)</td></tr>
 <tr class="memdesc:a20facf56cc9512534432585ef810022c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Terminates recursion of report_error.  <a href="namespaceVW_1_1experimental.html#a20facf56cc9512534432585ef810022c">More...</a><br /></td></tr>
 <tr class="separator:a20facf56cc9512534432585ef810022c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -269,53 +269,6 @@ Functions</h2></td></tr>
 <div class="line">    <span class="keywordflow">return</span> sb &lt;&lt; VW::experimental::error_code::code##_s</div>
 </div><!-- fragment -->
 <p>Error reporting macro used with left shift operator. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a76acf4d1a385141063e381c0bcec8ac2" name="a76acf4d1a385141063e381c0bcec8ac2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a76acf4d1a385141063e381c0bcec8ac2">&#9670;&#160;</a></span>operator&lt;&lt;()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classVW_1_1experimental_1_1status__builder.html">VW::experimental::status_builder</a> &amp; operator&lt;&lt; </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classVW_1_1experimental_1_1status__builder.html">VW::experimental::status_builder</a> &amp;&#160;</td>
-          <td class="paramname"><em>sb</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const T &amp;&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>left shift operator to serialize types into stringstream held in status_builder </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>Type to serialize </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">sb</td><td>Status builder that holds serialized error message </td></tr>
-    <tr><td class="paramname">val</td><td>Error code </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>reinforcement_learning::status_builder&amp; Passed in status builder so left shift operators can be chained together. </dd></dl>
 
 </div>
 </div>
