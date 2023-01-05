@@ -28,7 +28,7 @@ var searchData=
   ['learn_5ff_25',['learn_f',['../classVW_1_1LEARNER_1_1details_1_1learn__data.html#a2959d6c09447d7a54588b33f24c4b347',1,'VW::LEARNER::details::learn_data']]],
   ['learn_5freturns_5fprediction_26',['learn_returns_prediction',['../classVW_1_1LEARNER_1_1learner.html#a8cac2d0d662aa9c5206f0709544a9a90',1,'VW::LEARNER::learner']]],
   ['learner_27',['LEARNER',['../classvw__dbg.html#a4d20d12825a9a71274d7d67b2fecc33c',1,'vw_dbg']]],
-  ['learner_5fptr_28',['learner_ptr',['../classVW_1_1LEARNER_1_1common__learner__builder.html#a9d7ea9ba35121433bc1a993367471ef0',1,'VW::LEARNER::common_learner_builder']]],
+  ['learner_5fptr_28',['learner_ptr',['../classVW_1_1LEARNER_1_1common__learner__builder.html#a2e1d90a8ee7fb6f4e7266cd92f3d25fc',1,'VW::LEARNER::common_learner_builder']]],
   ['lease_29',['lease',['../classVW_1_1reductions_1_1automl_1_1ns__based__config.html#a3ef571f03ce2932c1971d5a8c7b050b0',1,'VW::reductions::automl::ns_based_config']]],
   ['left_30',['left',['../structVW_1_1reductions_1_1eigen__memory__tree_1_1emt__node.html#af3052ecbe574adbd986bdeb21a766da6',1,'VW::reductions::eigen_memory_tree::emt_node::left()'],['../classVW_1_1continuous__actions_1_1pdf__segment.html#a06bbb545deb2037a44617751e5dd1bb0',1,'VW::continuous_actions::pdf_segment::left()']]],
   ['left_5fid_31',['left_id',['../classVW_1_1reductions_1_1offset__tree_1_1tree__node.html#a86135703b0a4baa43981339d92ed3fe9',1,'VW::reductions::offset_tree::tree_node::left_id()'],['../classVW_1_1reductions_1_1cats_1_1tree__node.html#ad47b521d919b704c42b856f8b88ea1b2',1,'VW::reductions::cats::tree_node::left_id()']]],
