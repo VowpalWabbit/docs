@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>vowpalwabbit.pyvw.pylibvw &#8212; VowpalWabbit latest documentation</title>
 <script>
@@ -36,7 +36,9 @@
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".cell"
 const thebe_selector_input = "pre"
@@ -49,7 +51,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="next" title="Python 8.11 to 9 migration" href="python_8110_900_migration_guide.html" />
     <link rel="prev" title="vowpalwabbit.pyvw" href="vowpalwabbit.pyvw.html" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="docsearch:language" content="None">
+<meta name="docsearch:language" content="en">
   </head>
   
   
@@ -456,9 +458,1287 @@ const thebe_selector_output = ".output, .cell_output"
     
     <div class="toc-item">
       
+<div class="tocsection onthispage mt-5 pt-1 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
 
 <nav id="bd-toc-nav">
-    
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     vw
+    </span>
+   </code>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.__init__">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.__init__()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.audit_example">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.audit_example()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.finish">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.finish()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.get_arguments">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.get_arguments()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.get_enabled_reductions">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.get_enabled_reductions()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.get_holdout_sum_loss">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.get_holdout_sum_loss()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.get_id">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.get_id()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.get_learner_metrics">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.get_learner_metrics()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.get_options">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.get_options()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.get_search_ptr">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.get_search_ptr()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.get_stride">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.get_stride()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.get_sum_loss">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.get_sum_loss()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.get_weight">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.get_weight()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.get_weighted_examples">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.get_weighted_examples()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.hash_feature">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.hash_feature()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.hash_space">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.hash_space()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.json_weights">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.json_weights()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.lBinary">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.lBinary
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.lConditionalContextualBandit">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.lConditionalContextualBandit
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.lContextualBandit">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.lContextualBandit
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.lContextualBanditEval">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.lContextualBanditEval
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.lContinuous">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.lContinuous
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.lCostSensitive">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.lCostSensitive
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.lDefault">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.lDefault
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.lMax">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.lMax
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.lMulticlass">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.lMulticlass
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.lMultilabel">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.lMultilabel
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.lSimple">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.lSimple
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.lSlates">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.lSlates
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.learn">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.learn()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.learn_multi">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.learn_multi()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.num_weights">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.num_weights()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.pACTION_PDF_VALUE">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.pACTION_PDF_VALUE
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.pACTION_PROBS">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.pACTION_PROBS
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.pACTION_SCORES">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.pACTION_SCORES
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.pACTIVE_MULTICLASS">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.pACTIVE_MULTICLASS
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.pDECISION_SCORES">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.pDECISION_SCORES
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.pMULTICLASS">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.pMULTICLASS
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.pMULTICLASSPROBS">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.pMULTICLASSPROBS
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.pMULTILABELS">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.pMULTILABELS
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.pNOPRED">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.pNOPRED
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.pPDF">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.pPDF
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.pPROB">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.pPROB
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.pSCALAR">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.pSCALAR
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.pSCALARS">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.pSCALARS
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.predict">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.predict()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.predict_multi">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.predict_multi()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.run_parser">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.run_parser()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.save">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.save()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.set_weight">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.set_weight()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.setup_example">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.setup_example()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.tACTION">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.tACTION
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.tSHARED">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.tSHARED
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.tSLOT">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.tSLOT
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.tUNSET">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.tUNSET
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.vw.unsetup_example">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       vw.unsetup_example()
+      </span>
+     </code>
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     example
+    </span>
+   </code>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.__init__">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.__init__()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.ensure_namespace_exists">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.ensure_namespace_exists()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.erase_namespace">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.erase_namespace()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.feature">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.feature()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.feature_weight">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.feature_weight()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_action_pdf_value">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_action_pdf_value()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_action_scores">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_action_scores()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_active_multiclass">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_active_multiclass()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_cb_continuous_class">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_cb_continuous_class()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_cb_continuous_cost">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_cb_continuous_cost()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_cb_continuous_num_costs">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_cb_continuous_num_costs()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_cb_continuous_pdf_value">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_cb_continuous_pdf_value()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_cb_eval_action">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_cb_eval_action()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_cb_eval_class">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_cb_eval_class()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_cb_eval_cost">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_cb_eval_cost()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_cb_eval_num_costs">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_cb_eval_num_costs()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_cb_eval_partial_prediction">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_cb_eval_partial_prediction()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_cb_eval_probability">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_cb_eval_probability()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_cb_eval_weight">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_cb_eval_weight()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_cbandits_class">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_cbandits_class()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_cbandits_cost">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_cbandits_cost()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_cbandits_num_costs">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_cbandits_num_costs()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_cbandits_partial_prediction">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_cbandits_partial_prediction()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_cbandits_prediction">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_cbandits_prediction()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_cbandits_probability">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_cbandits_probability()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_cbandits_weight">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_cbandits_weight()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_ccb_action">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_ccb_action()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_ccb_cost">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_ccb_cost()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_ccb_explicitly_included_actions">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_ccb_explicitly_included_actions()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_ccb_has_outcome">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_ccb_has_outcome()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_ccb_num_explicitly_included_actions">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_ccb_num_explicitly_included_actions()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_ccb_num_probabilities">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_ccb_num_probabilities()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_ccb_probability">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_ccb_probability()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_ccb_type">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_ccb_type()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_ccb_weight">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_ccb_weight()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_costsensitive_class">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_costsensitive_class()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_costsensitive_cost">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_costsensitive_cost()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_costsensitive_num_costs">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_costsensitive_num_costs()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_costsensitive_partial_prediction">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_costsensitive_partial_prediction()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_costsensitive_prediction">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_costsensitive_prediction()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_costsensitive_wap_value">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_costsensitive_wap_value()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_decision_scores">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_decision_scores()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_example_counter">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_example_counter()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_feature_number">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_feature_number()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_ft_offset">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_ft_offset()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_loss">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_loss()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_multiclass_label">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_multiclass_label()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_multiclass_prediction">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_multiclass_prediction()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_multiclass_weight">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_multiclass_weight()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_multilabel_labels">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_multilabel_labels()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_multilabel_predictions">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_multilabel_predictions()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_partial_prediction">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_partial_prediction()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_pdf">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_pdf()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_prob">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_prob()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_scalars">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_scalars()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_simplelabel_initial">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_simplelabel_initial()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_simplelabel_label">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_simplelabel_label()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_simplelabel_prediction">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_simplelabel_prediction()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_simplelabel_weight">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_simplelabel_weight()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_slates_action">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_slates_action()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_slates_cost">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_slates_cost()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_slates_labeled">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_slates_labeled()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_slates_num_probabilities">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_slates_num_probabilities()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_slates_probability">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_slates_probability()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_slates_slot_id">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_slates_slot_id()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_slates_type">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_slates_type()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_slates_weight">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_slates_weight()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_tag">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_tag()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_topic_prediction">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_topic_prediction()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_total_sum_feat_sq">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_total_sum_feat_sq()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.get_updated_prediction">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.get_updated_prediction()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.namespace">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.namespace()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.num_features_in">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.num_features_in()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.num_namespaces">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.num_namespaces()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.pop_feature">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.pop_feature()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.pop_namespace">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.pop_namespace()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.push_feature_dict">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.push_feature_dict()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.push_feature_list">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.push_feature_list()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.push_hashed_feature">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.push_hashed_feature()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.push_namespace">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.push_namespace()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.set_label_string">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.set_label_string()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.set_test_only">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.set_test_only()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.pyvw.pylibvw.example.sum_feat_sq">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       example.sum_feat_sq()
+      </span>
+     </code>
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
 </nav>
     </div>
     
@@ -487,7 +1767,7 @@ const thebe_selector_output = ".output, .cell_output"
               <article class="bd-article" role="main">
                 
   <section id="vowpalwabbit-pyvw-pylibvw">
-<h1>vowpalwabbit.pyvw.pylibvw<a class="headerlink" href="#vowpalwabbit-pyvw-pylibvw" title="Permalink to this headline">#</a></h1>
+<h1>vowpalwabbit.pyvw.pylibvw<a class="headerlink" href="#vowpalwabbit-pyvw-pylibvw" title="Permalink to this heading">#</a></h1>
 <p>The Python bindings employ native bindings and then inherit from this in Python
 to add extra functionality. The classes on this page should not be directly
 instantiated. The types in <a class="reference internal" href="vowpalwabbit.html#module-vowpalwabbit" title="vowpalwabbit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">vowpalwabbit</span></code></a> should be used instead.</p>
@@ -1383,7 +2663,7 @@ instantiated. The types in <a class="reference internal" href="vowpalwabbit.html
   
   <div class="footer-item">
     <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.5.0.<br>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.3.0.<br>
 </p>
   </div>
   

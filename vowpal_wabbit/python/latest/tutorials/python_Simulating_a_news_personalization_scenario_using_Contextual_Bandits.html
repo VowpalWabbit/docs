@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>Contextual Bandit Content Personalization &#8212; VowpalWabbit latest documentation</title>
 <script>
@@ -36,7 +36,9 @@
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".cell"
 const thebe_selector_input = "pre"
@@ -49,7 +51,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="next" title="Python Basics" href="python_first_steps.html" />
     <link rel="prev" title="Contextual Bandits" href="python_Contextual_bandits_and_Vowpal_Wabbit.html" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="docsearch:language" content="None">
+<meta name="docsearch:language" content="en">
   </head>
   
   
@@ -602,7 +604,7 @@ const thebe_selector_output = ".output, .cell_output"
               <article class="bd-article" role="main">
                 
   <section id="contextual-bandit-content-personalization">
-<h1>Contextual Bandit Content Personalization<a class="headerlink" href="#contextual-bandit-content-personalization" title="Permalink to this headline">#</a></h1>
+<h1>Contextual Bandit Content Personalization<a class="headerlink" href="#contextual-bandit-content-personalization" title="Permalink to this heading">#</a></h1>
 <p>In the Contextual Bandit(CB) introduction tutorial, we learnt about CB and different CB algorithms. In this tutorial we will simulate the scenario of personalizing news content on a site, using CB, to users. The goal is to maximize user engagement quantified by measuring click through rate (CTR).</p>
 <p>Let’s recall that in a CB setting, a data point has four components,</p>
 <ul class="simple">
@@ -633,7 +635,7 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 <section id="simulate-reward">
-<h2>Simulate reward<a class="headerlink" href="#simulate-reward" title="Permalink to this headline">#</a></h2>
+<h2>Simulate reward<a class="headerlink" href="#simulate-reward" title="Permalink to this heading">#</a></h2>
 <p>In the real world, we will have to learn Tom and Anna’s preferences for articles as we observe their interactions. Since this is a simulation, we will have to define Tom and Anna’s preference profile. The reward that we provide to the learner will follow this preference profile. Our hope is to see if the learner can take better and better decisions as we see more samples which in turn means we are maximizing the reward.</p>
 <p>We will also modify the reward function in a few different ways and see if the CB learner picks up the changes. We will compare the CTR with and without learning.</p>
 <p>VW optimizes to minimize <strong>cost which is negative of reward</strong>. Therefore, we will always pass negative of reward as cost to VW.</p>
@@ -670,7 +672,7 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </section>
 <section id="understanding-vw-format">
-<h2>Understanding VW format<a class="headerlink" href="#understanding-vw-format" title="Permalink to this headline">#</a></h2>
+<h2>Understanding VW format<a class="headerlink" href="#understanding-vw-format" title="Permalink to this heading">#</a></h2>
 <p>There are some things we need to do to get our input into a format VW understands. This function handles converting from our context as a dictionary, list of articles and the cost if there is one into the text format VW understands.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -714,7 +716,7 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </section>
 <section id="getting-a-decision">
-<h2>Getting a decision<a class="headerlink" href="#getting-a-decision" title="Permalink to this headline">#</a></h2>
+<h2>Getting a decision<a class="headerlink" href="#getting-a-decision" title="Permalink to this heading">#</a></h2>
 <p>When we call VW we get a <em>pmf</em>, <a class="reference external" href="https://en.wikipedia.org/wiki/Probability_mass_function">probability mass function</a>, as the output. Since we are incorporating exploration into our strategy, VW will give us a list of probabilities over the set of actions. This means that the probability at a given index in the list corresponds to the likelihood of picking that specific action. In order to arrive at a decision/action, we will have to sample from this list.</p>
 <p>So, given a list <code class="docutils literal notranslate"><span class="pre">[0.7,</span> <span class="pre">0.1,</span> <span class="pre">0.1,</span> <span class="pre">0.1]</span></code>, we would choose the first item with a 70% chance. <code class="docutils literal notranslate"><span class="pre">sample_custom_pmf</span></code> takes such a list and gives us the index it chose and what the probability of choosing that index was.</p>
 <div class="cell docutils container">
@@ -753,7 +755,7 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </section>
 <section id="simulation-set-up">
-<h2>Simulation set up<a class="headerlink" href="#simulation-set-up" title="Permalink to this headline">#</a></h2>
+<h2>Simulation set up<a class="headerlink" href="#simulation-set-up" title="Permalink to this heading">#</a></h2>
 <p>Now that we have done all of the setup work and know how to interface with VW, let’s simulate the world of Tom and Anna. The scenario is they go to a website and are shown an article. Remember that the reward function allows us to define the worlds reaction to what VW recommends.</p>
 <p>We will choose between Tom and Anna uniformly at random and also choose their time of visit uniformly at random. You can think of this as us tossing a coin to choose between Tom and Anna (Anna if heads and Tom if tails) and another coin toss for choosing time of day.</p>
 <div class="cell docutils container">
@@ -945,10 +947,10 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </section>
 <section id="scenario-1">
-<h2>Scenario 1<a class="headerlink" href="#scenario-1" title="Permalink to this headline">#</a></h2>
+<h2>Scenario 1<a class="headerlink" href="#scenario-1" title="Permalink to this heading">#</a></h2>
 <p>We will use the first reward function <code class="docutils literal notranslate"><span class="pre">get_cost</span></code> and assume that Tom and Anna do not change their preferences over time and see what happens to user engagement as we learn. We will also see what happens when there is no learning. We will use the “no learning” case as our baseline to compare to.</p>
 <section id="with-learning">
-<h3>With learning<a class="headerlink" href="#with-learning" title="Permalink to this headline">#</a></h3>
+<h3>With learning<a class="headerlink" href="#with-learning" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Instantiate learner in VW</span>
@@ -962,11 +964,11 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/6e870522d38c121b9d112450f2610de5407332a4747c3037e0437829d1ade154.png" src="../_images/6e870522d38c121b9d112450f2610de5407332a4747c3037e0437829d1ade154.png" />
+<img alt="../_images/cede7c23e9e747fcb0b63d8da2785072c93a75d0384c6090cfc23ae92fc2cecc.png" src="../_images/cede7c23e9e747fcb0b63d8da2785072c93a75d0384c6090cfc23ae92fc2cecc.png" />
 </div>
 </div>
 <section id="aside-interactions">
-<h4>Aside: interactions<a class="headerlink" href="#aside-interactions" title="Permalink to this headline">#</a></h4>
+<h4>Aside: interactions<a class="headerlink" href="#aside-interactions" title="Permalink to this heading">#</a></h4>
 <p>You’ll notice in the arguments we supply to VW, <strong>we include <code class="docutils literal notranslate"><span class="pre">-q</span> <span class="pre">UA</span></code></strong>. This is telling VW to create additional features which are the features in the (U)ser namespace and (A)ction namespaces multiplied together. This allows us to learn the interaction between when certain actions are good in certain times of days and for particular users. If we didn’t do that, the learning wouldn’t really work. We can see that in action below.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -981,13 +983,13 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/07cfbc34f258d495e05356ed266bccabf7e70e8d1ee818f0744394db098107f1.png" src="../_images/07cfbc34f258d495e05356ed266bccabf7e70e8d1ee818f0744394db098107f1.png" />
+<img alt="../_images/a4460a29df5b1e1770d40995818b3fa210087ee5ad5485404be199eb2c22064d.png" src="../_images/a4460a29df5b1e1770d40995818b3fa210087ee5ad5485404be199eb2c22064d.png" />
 </div>
 </div>
 </section>
 </section>
 <section id="without-learning">
-<h3>Without learning<a class="headerlink" href="#without-learning" title="Permalink to this headline">#</a></h3>
+<h3>Without learning<a class="headerlink" href="#without-learning" title="Permalink to this heading">#</a></h3>
 <p>Let’s do the same thing again (with <code class="docutils literal notranslate"><span class="pre">-q</span></code>) but with do_learn set to False to show the effect if we don’t learn from the rewards. The ctr never improves are we just hover around 0.2.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1004,21 +1006,21 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/f14c100f7ebcf5423985ddf601f389d4d5692873fa62dbc3d6f1d2eca86e0a27.png" src="../_images/f14c100f7ebcf5423985ddf601f389d4d5692873fa62dbc3d6f1d2eca86e0a27.png" />
+<img alt="../_images/f0ca2c7c88a34d0667cd7aa18092aab45c033c92c25492a11f5a3fa63ef0d4cb.png" src="../_images/f0ca2c7c88a34d0667cd7aa18092aab45c033c92c25492a11f5a3fa63ef0d4cb.png" />
 </div>
 </div>
 </section>
 </section>
 <section id="scenario-2">
-<h2>Scenario 2<a class="headerlink" href="#scenario-2" title="Permalink to this headline">#</a></h2>
+<h2>Scenario 2<a class="headerlink" href="#scenario-2" title="Permalink to this heading">#</a></h2>
 <p>In the real world people’s preferences change over time. So now in the simulation we are going to incorporate two different cost functions, and swap over to the second one halfway through. Below is a a table of the new reward function we are going to use, <code class="docutils literal notranslate"><span class="pre">get_cost_1</span></code>:</p>
 <section id="tom">
-<h3>Tom<a class="headerlink" href="#tom" title="Permalink to this headline">#</a></h3>
-<table class="colwidths-auto table">
+<h3>Tom<a class="headerlink" href="#tom" title="Permalink to this heading">#</a></h3>
+<table class="table">
 <thead>
-<tr class="row-odd"><th class="text-left head"><p></p></th>
-<th class="text-center head"><p><code class="docutils literal notranslate"><span class="pre">get_cost</span></code></p></th>
-<th class="text-center head"><p><code class="docutils literal notranslate"><span class="pre">get_cost_new1</span></code></p></th>
+<tr class="row-odd"><th class="head text-left"><p></p></th>
+<th class="head text-center"><p><code class="docutils literal notranslate"><span class="pre">get_cost</span></code></p></th>
+<th class="head text-center"><p><code class="docutils literal notranslate"><span class="pre">get_cost_new1</span></code></p></th>
 </tr>
 </thead>
 <tbody>
@@ -1034,12 +1036,12 @@ const thebe_selector_output = ".output, .cell_output"
 </table>
 </section>
 <section id="anna">
-<h3>Anna<a class="headerlink" href="#anna" title="Permalink to this headline">#</a></h3>
-<table class="colwidths-auto table">
+<h3>Anna<a class="headerlink" href="#anna" title="Permalink to this heading">#</a></h3>
+<table class="table">
 <thead>
-<tr class="row-odd"><th class="text-left head"><p></p></th>
-<th class="text-center head"><p><code class="docutils literal notranslate"><span class="pre">get_cost</span></code></p></th>
-<th class="text-center head"><p><code class="docutils literal notranslate"><span class="pre">get_cost_new1</span></code></p></th>
+<tr class="row-odd"><th class="head text-left"><p></p></th>
+<th class="head text-center"><p><code class="docutils literal notranslate"><span class="pre">get_cost</span></code></p></th>
+<th class="head text-center"><p><code class="docutils literal notranslate"><span class="pre">get_cost_new1</span></code></p></th>
 </tr>
 </thead>
 <tbody>
@@ -1257,7 +1259,7 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </section>
 <section id="id1">
-<h3>With learning<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
+<h3>With learning<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
 <p>Let us now switch to the second reward function after a few samples (running the first reward function). Recall that this reward function changes the preferences of the web users but it is still working with the same action space as before. We should see the learner pick up these changes and optimize towards the new preferences.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1279,13 +1281,13 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/6c3238ef2bcae3703733f3967cad4621e4fe9d0f728ae16b0e1902a07019e735.png" src="../_images/6c3238ef2bcae3703733f3967cad4621e4fe9d0f728ae16b0e1902a07019e735.png" />
+<img alt="../_images/547fd7523a4e1ea2fe036b7028dc7874e00ac8e0cdfbbd2f0d205cf4bedc2d56.png" src="../_images/547fd7523a4e1ea2fe036b7028dc7874e00ac8e0cdfbbd2f0d205cf4bedc2d56.png" />
 </div>
 </div>
 <p><strong>Note:</strong> The initial spike in CTR depends on the rewards received for the first few examples. When you run on your own, you may see something different initially because our simulator is designed to have randomness.</p>
 </section>
 <section id="id2">
-<h3>Without learning<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h3>
+<h3>Without learning<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Do not learn</span>
@@ -1312,21 +1314,21 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/fa034ff8ab8f5a65321fa426a409238165278648df47d26c324a0b26c946967d.png" src="../_images/fa034ff8ab8f5a65321fa426a409238165278648df47d26c324a0b26c946967d.png" />
+<img alt="../_images/132edd2030de9d2a05c14a86f0bcbcd7912cfc0a5b4c10ac6f6d4faa3d612846.png" src="../_images/132edd2030de9d2a05c14a86f0bcbcd7912cfc0a5b4c10ac6f6d4faa3d612846.png" />
 </div>
 </div>
 </section>
 </section>
 <section id="scenario-3">
-<h2>Scenario 3<a class="headerlink" href="#scenario-3" title="Permalink to this headline">#</a></h2>
+<h2>Scenario 3<a class="headerlink" href="#scenario-3" title="Permalink to this heading">#</a></h2>
 <p>In this scenario we are going to start rewarding actions that have never seen a reward previously when we change the cost function.</p>
 <section id="id3">
-<h3>Tom<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h3>
-<table class="colwidths-auto table">
+<h3>Tom<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
+<table class="table">
 <thead>
-<tr class="row-odd"><th class="text-left head"><p></p></th>
-<th class="text-center head"><p><code class="docutils literal notranslate"><span class="pre">get_cost</span></code></p></th>
-<th class="text-center head"><p><code class="docutils literal notranslate"><span class="pre">get_cost_new2</span></code></p></th>
+<tr class="row-odd"><th class="head text-left"><p></p></th>
+<th class="head text-center"><p><code class="docutils literal notranslate"><span class="pre">get_cost</span></code></p></th>
+<th class="head text-center"><p><code class="docutils literal notranslate"><span class="pre">get_cost_new2</span></code></p></th>
 </tr>
 </thead>
 <tbody>
@@ -1342,12 +1344,12 @@ const thebe_selector_output = ".output, .cell_output"
 </table>
 </section>
 <section id="id4">
-<h3>Anna<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h3>
-<table class="colwidths-auto table">
+<h3>Anna<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h3>
+<table class="table">
 <thead>
-<tr class="row-odd"><th class="text-left head"><p></p></th>
-<th class="text-center head"><p><code class="docutils literal notranslate"><span class="pre">get_cost</span></code></p></th>
-<th class="text-center head"><p><code class="docutils literal notranslate"><span class="pre">get_cost_new2</span></code></p></th>
+<tr class="row-odd"><th class="head text-left"><p></p></th>
+<th class="head text-center"><p><code class="docutils literal notranslate"><span class="pre">get_cost</span></code></p></th>
+<th class="head text-center"><p><code class="docutils literal notranslate"><span class="pre">get_cost_new2</span></code></p></th>
 </tr>
 </thead>
 <tbody>
@@ -1384,7 +1386,7 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </section>
 <section id="id5">
-<h3>With learning<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h3>
+<h3>With learning<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h3>
 <p>Let us now switch to the third reward function after a few samples (running the first reward function). Recall that this reward function changes the preferences of the users and is working with a <strong>different</strong> action space than before. We should see the learner pick up these changes and optimize towards the new preferences</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1406,12 +1408,12 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/84194502def29a94fc47a0c2efb94e23e2f1a2e3a4b2d172e5e11b8afd03e857.png" src="../_images/84194502def29a94fc47a0c2efb94e23e2f1a2e3a4b2d172e5e11b8afd03e857.png" />
+<img alt="../_images/548c429e12b1bac6151e2acfd32abce8ada564ffb952e053fc2faaed23824295.png" src="../_images/548c429e12b1bac6151e2acfd32abce8ada564ffb952e053fc2faaed23824295.png" />
 </div>
 </div>
 </section>
 <section id="id6">
-<h3>Without Learning<a class="headerlink" href="#id6" title="Permalink to this headline">#</a></h3>
+<h3>Without Learning<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Do not learn</span>
@@ -1439,13 +1441,13 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/ee345e1222be5a9589419b2bc844e953de96cf2045b0af8c91dafc1b620381da.png" src="../_images/ee345e1222be5a9589419b2bc844e953de96cf2045b0af8c91dafc1b620381da.png" />
+<img alt="../_images/345152e147074af80c6689154514f4cce03febbd61eb2a0111a41327f59fcbf0.png" src="../_images/345152e147074af80c6689154514f4cce03febbd61eb2a0111a41327f59fcbf0.png" />
 </div>
 </div>
 </section>
 </section>
 <section id="summary">
-<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">#</a></h2>
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h2>
 <p>This tutorial aimed at showcasing a real world scenario where contextual bandit algorithms can be used. We were able to take a context and set of actions and learn what actions worked best for a given context. We saw that the learner was able to respond rapidly to changes in the world.  We showed that allowing the learner to interact with the world resulted in higher rewards than the no learning baseline.</p>
 <p>This tutorial worked with simplistic features. VW supports high dimensional sparse features, different exploration algorithms and policy evaluation approaches.</p>
 </section>
@@ -1517,7 +1519,7 @@ const thebe_selector_output = ".output, .cell_output"
   
   <div class="footer-item">
     <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.5.0.<br>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.3.0.<br>
 </p>
   </div>
   

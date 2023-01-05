@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>vowpalwabbit.dftovw &#8212; VowpalWabbit latest documentation</title>
 <script>
@@ -36,7 +36,9 @@
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".cell"
 const thebe_selector_input = "pre"
@@ -49,7 +51,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="next" title="vowpalwabbit.sklearn" href="vowpalwabbit.sklearn.html" />
     <link rel="prev" title="vowpalwabbit" href="vowpalwabbit.html" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="docsearch:language" content="None">
+<meta name="docsearch:language" content="en">
   </head>
   
   
@@ -471,6 +473,427 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal nav-link" href="#module-vowpalwabbit.dftovw">
    Module contents
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.dftovw.ContextualbanditLabel">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       ContextualbanditLabel
+      </span>
+     </code>
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vowpalwabbit.dftovw.ContextualbanditLabel.__init__">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         ContextualbanditLabel.__init__()
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vowpalwabbit.dftovw.ContextualbanditLabel.action">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         ContextualbanditLabel.action
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vowpalwabbit.dftovw.ContextualbanditLabel.cost">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         ContextualbanditLabel.cost
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vowpalwabbit.dftovw.ContextualbanditLabel.probability">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         ContextualbanditLabel.probability
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vowpalwabbit.dftovw.ContextualbanditLabel.process">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         ContextualbanditLabel.process()
+        </span>
+       </code>
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.dftovw.DFtoVW">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       DFtoVW
+      </span>
+     </code>
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vowpalwabbit.dftovw.DFtoVW.__init__">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         DFtoVW.__init__()
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vowpalwabbit.dftovw.DFtoVW.check_columns_type_and_values">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         DFtoVW.check_columns_type_and_values()
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vowpalwabbit.dftovw.DFtoVW.check_features_type">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         DFtoVW.check_features_type()
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vowpalwabbit.dftovw.DFtoVW.check_instance_columns">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         DFtoVW.check_instance_columns()
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vowpalwabbit.dftovw.DFtoVW.check_label_type">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         DFtoVW.check_label_type()
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vowpalwabbit.dftovw.DFtoVW.check_missing_columns_df">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         DFtoVW.check_missing_columns_df()
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vowpalwabbit.dftovw.DFtoVW.check_namespaces_type">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         DFtoVW.check_namespaces_type()
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vowpalwabbit.dftovw.DFtoVW.convert_df">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         DFtoVW.convert_df()
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vowpalwabbit.dftovw.DFtoVW.empty_col">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         DFtoVW.empty_col()
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vowpalwabbit.dftovw.DFtoVW.from_colnames">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         DFtoVW.from_colnames()
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vowpalwabbit.dftovw.DFtoVW.from_column_names">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         DFtoVW.from_column_names()
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vowpalwabbit.dftovw.DFtoVW.process_features">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         DFtoVW.process_features()
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vowpalwabbit.dftovw.DFtoVW.process_label_and_tag">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         DFtoVW.process_label_and_tag()
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vowpalwabbit.dftovw.DFtoVW.raise_missing_col_error">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         DFtoVW.raise_missing_col_error()
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vowpalwabbit.dftovw.DFtoVW.set_namespaces">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         DFtoVW.set_namespaces()
+        </span>
+       </code>
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.dftovw.Feature">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Feature
+      </span>
+     </code>
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vowpalwabbit.dftovw.Feature.__init__">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         Feature.__init__()
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vowpalwabbit.dftovw.Feature.process">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         Feature.process()
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vowpalwabbit.dftovw.Feature.value">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         Feature.value
+        </span>
+       </code>
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.dftovw.MultiLabel">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       MultiLabel
+      </span>
+     </code>
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vowpalwabbit.dftovw.MultiLabel.__init__">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         MultiLabel.__init__()
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vowpalwabbit.dftovw.MultiLabel.label">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         MultiLabel.label
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vowpalwabbit.dftovw.MultiLabel.process">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         MultiLabel.process()
+        </span>
+       </code>
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.dftovw.MulticlassLabel">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       MulticlassLabel
+      </span>
+     </code>
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vowpalwabbit.dftovw.MulticlassLabel.__init__">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         MulticlassLabel.__init__()
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vowpalwabbit.dftovw.MulticlassLabel.label">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         MulticlassLabel.label
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vowpalwabbit.dftovw.MulticlassLabel.process">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         MulticlassLabel.process()
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vowpalwabbit.dftovw.MulticlassLabel.weight">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         MulticlassLabel.weight
+        </span>
+       </code>
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.dftovw.Namespace">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Namespace
+      </span>
+     </code>
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vowpalwabbit.dftovw.Namespace.__init__">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         Namespace.__init__()
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vowpalwabbit.dftovw.Namespace.check_attributes_type">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         Namespace.check_attributes_type()
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vowpalwabbit.dftovw.Namespace.expected_type">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         Namespace.expected_type
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vowpalwabbit.dftovw.Namespace.process">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         Namespace.process()
+        </span>
+       </code>
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vowpalwabbit.dftovw.SimpleLabel">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       SimpleLabel
+      </span>
+     </code>
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vowpalwabbit.dftovw.SimpleLabel.__init__">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         SimpleLabel.__init__()
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vowpalwabbit.dftovw.SimpleLabel.label">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         SimpleLabel.label
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vowpalwabbit.dftovw.SimpleLabel.process">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         SimpleLabel.process()
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#vowpalwabbit.dftovw.SimpleLabel.weight">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         SimpleLabel.weight
+        </span>
+       </code>
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -502,16 +925,16 @@ const thebe_selector_output = ".output, .cell_output"
               <article class="bd-article" role="main">
                 
   <section id="vowpalwabbit-dftovw">
-<h1>vowpalwabbit.dftovw<a class="headerlink" href="#vowpalwabbit-dftovw" title="Permalink to this headline">#</a></h1>
+<h1>vowpalwabbit.dftovw<a class="headerlink" href="#vowpalwabbit-dftovw" title="Permalink to this heading">#</a></h1>
 <p>This is an optional module which implements a dataframe converter to VW format.</p>
 <section id="deprecated-alias">
-<h2>Deprecated alias<a class="headerlink" href="#deprecated-alias" title="Permalink to this headline">#</a></h2>
+<h2>Deprecated alias<a class="headerlink" href="#deprecated-alias" title="Permalink to this heading">#</a></h2>
 <div class="deprecated">
 <p><span class="versionmodified deprecated">Deprecated since version 9.0.0: </span>The module name <code class="docutils literal notranslate"><span class="pre">vowpalwabbit.DFtoVW</span></code> has been renamed to <a class="reference internal" href="#module-vowpalwabbit.dftovw" title="vowpalwabbit.dftovw"><code class="xref py py-mod docutils literal notranslate"><span class="pre">vowpalwabbit.dftovw</span></code></a>. Please use the new module name instead.</p>
 </div>
 </section>
 <section id="module-vowpalwabbit.dftovw">
-<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-vowpalwabbit.dftovw" title="Permalink to this headline">#</a></h2>
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-vowpalwabbit.dftovw" title="Permalink to this heading">#</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="vowpalwabbit.dftovw.ContextualbanditLabel">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vowpalwabbit.dftovw.</span></span><span class="sig-name descname"><span class="pre">ContextualbanditLabel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">action</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cost</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">probability</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.dftovw.ContextualbanditLabel" title="Permalink to this definition">#</a></dt>
@@ -522,7 +945,7 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">action</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cost</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">probability</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.dftovw.ContextualbanditLabel.__init__" title="Permalink to this definition">#</a></dt>
 <dd><p>Initialize a ContextualbanditLabel instance.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>action</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Hashable" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Hashable</span></code></a>) – The action taken where we observed the cost.</p></li>
 <li><p><strong>cost</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Hashable" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Hashable</span></code></a>) – The cost observed for this action (lower is better)</p></li>
@@ -534,19 +957,19 @@ const thebe_selector_output = ".output, .cell_output"
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="vowpalwabbit.dftovw.ContextualbanditLabel.action">
-<span class="sig-name descname"><span class="pre">action</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Any</span></em><a class="headerlink" href="#vowpalwabbit.dftovw.ContextualbanditLabel.action" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">action</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Any" title="(in Python v3.11)"><span class="pre">Any</span></a></em><a class="headerlink" href="#vowpalwabbit.dftovw.ContextualbanditLabel.action" title="Permalink to this definition">#</a></dt>
 <dd><p>Contextual bandit label action column name</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="vowpalwabbit.dftovw.ContextualbanditLabel.cost">
-<span class="sig-name descname"><span class="pre">cost</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Any</span></em><a class="headerlink" href="#vowpalwabbit.dftovw.ContextualbanditLabel.cost" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">cost</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Any" title="(in Python v3.11)"><span class="pre">Any</span></a></em><a class="headerlink" href="#vowpalwabbit.dftovw.ContextualbanditLabel.cost" title="Permalink to this definition">#</a></dt>
 <dd><p>Contextual bandit label cost column name</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="vowpalwabbit.dftovw.ContextualbanditLabel.probability">
-<span class="sig-name descname"><span class="pre">probability</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Any</span></em><a class="headerlink" href="#vowpalwabbit.dftovw.ContextualbanditLabel.probability" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">probability</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Any" title="(in Python v3.11)"><span class="pre">Any</span></a></em><a class="headerlink" href="#vowpalwabbit.dftovw.ContextualbanditLabel.probability" title="Permalink to this definition">#</a></dt>
 <dd><p>Contextual bandit label probability column name</p>
 </dd></dl>
 
@@ -555,13 +978,13 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="sig-name descname"><span class="pre">process</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.dftovw.ContextualbanditLabel.process" title="Permalink to this definition">#</a></dt>
 <dd><p>Returns the ContextualbanditLabel string representation.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>df</strong> (<a class="reference external" href="http://pandas.pydata.org/pandas-docs/dev/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.0.0.dev0+1076.g18bc585ae6)"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataFrame</span></code></a>) – The dataframe from which to select the column(s).</p>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>df</strong> (<a class="reference external" href="http://pandas.pydata.org/pandas-docs/dev/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.0.0.dev0+1078.gdab080e9ec)"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataFrame</span></code></a>) – The dataframe from which to select the column(s).</p>
 </dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p><a class="reference external" href="http://pandas.pydata.org/pandas-docs/dev/reference/api/pandas.Series.html#pandas.Series" title="(in pandas v2.0.0.dev0+1076.g18bc585ae6)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Series</span></code></a></p>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="http://pandas.pydata.org/pandas-docs/dev/reference/api/pandas.Series.html#pandas.Series" title="(in pandas v2.0.0.dev0+1078.gdab080e9ec)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Series</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>The ContextualbanditLabel string representation.</p>
 </dd>
 </dl>
@@ -583,9 +1006,9 @@ based on the target/features column names only.</p>
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">features</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">namespaces</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tag</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.dftovw.DFtoVW.__init__" title="Permalink to this definition">#</a></dt>
 <dd><p>Initialize a DFtoVW instance.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>df</strong> (<a class="reference external" href="http://pandas.pydata.org/pandas-docs/dev/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.0.0.dev0+1076.g18bc585ae6)"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataFrame</span></code></a>) – The dataframe to convert to VW input format.</p></li>
+<li><p><strong>df</strong> (<a class="reference external" href="http://pandas.pydata.org/pandas-docs/dev/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.0.0.dev0+1078.gdab080e9ec)"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataFrame</span></code></a>) – The dataframe to convert to VW input format.</p></li>
 <li><p><strong>features</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="#vowpalwabbit.dftovw.Feature" title="vowpalwabbit.dftovw.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference internal" href="#vowpalwabbit.dftovw.Feature" title="vowpalwabbit.dftovw.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a>], <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>]) – One or more Feature object(s).</p></li>
 <li><p><strong>namespaces</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="#vowpalwabbit.dftovw.Namespace" title="vowpalwabbit.dftovw.Namespace"><code class="xref py py-class docutils literal notranslate"><span class="pre">Namespace</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference internal" href="#vowpalwabbit.dftovw.Namespace" title="vowpalwabbit.dftovw.Namespace"><code class="xref py py-class docutils literal notranslate"><span class="pre">Namespace</span></code></a>], <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>]) – One or more Namespace object(s), each of being composed of one or
 more Feature object(s).</p></li>
@@ -644,10 +1067,10 @@ more Feature object(s).</p></li>
 <span class="sig-name descname"><span class="pre">check_features_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">features</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.dftovw.DFtoVW.check_features_type" title="Permalink to this definition">#</a></dt>
 <dd><p>Check if the features argument is of type Feature.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>features</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="#vowpalwabbit.dftovw.Feature" title="vowpalwabbit.dftovw.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference internal" href="#vowpalwabbit.dftovw.Feature" title="vowpalwabbit.dftovw.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a>]]) – (list of) Feature. The features argument to check.</p>
 </dd>
-<dt class="field-even">Raises</dt>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#TypeError" title="(in Python v3.11)"><strong>TypeError</strong></a> – If the features is not a Feature of a list of Feature.</p>
 </dd>
 </dl>
@@ -663,7 +1086,7 @@ type and the value range of the column. Also, the instance type in
 which the errors occur are prepend to the error message to be more
 explicit about where the error occurs in the formula.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Raises</dt>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#TypeError" title="(in Python v3.11)"><strong>TypeError</strong></a> – If a column is not of valid type.</p></li>
 <li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.11)"><strong>ValueError</strong></a> – If a column values are not in the valid range.</p></li>
@@ -677,7 +1100,7 @@ explicit about where the error occurs in the formula.</p>
 <span class="sig-name descname"><span class="pre">check_label_type</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.dftovw.DFtoVW.check_label_type" title="Permalink to this definition">#</a></dt>
 <dd><p>Check label type.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Raises</dt>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#TypeError" title="(in Python v3.11)"><strong>TypeError</strong></a> – If label is not of type SimpleLabel, MulticlassLabel, Multilabel, ContextualbanditLabel.</p>
 </dd>
 </dl>
@@ -694,7 +1117,7 @@ explicit about where the error occurs in the formula.</p>
 <span class="sig-name descname"><span class="pre">check_namespaces_type</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.dftovw.DFtoVW.check_namespaces_type" title="Permalink to this definition">#</a></dt>
 <dd><p>Check if namespaces arguments are of type Namespace.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Raises</dt>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#TypeError" title="(in Python v3.11)"><strong>TypeError</strong></a> – If namespaces are not of type Namespace or list of Namespace.</p>
 </dd>
 </dl>
@@ -705,10 +1128,10 @@ explicit about where the error occurs in the formula.</p>
 <span class="sig-name descname"><span class="pre">convert_df</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.dftovw.DFtoVW.convert_df" title="Permalink to this definition">#</a></dt>
 <dd><p>Main method that converts the dataframe to the VW format.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]</p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>The list of parsed lines in VW format.</p>
 </dd>
 </dl>
@@ -719,10 +1142,10 @@ explicit about where the error occurs in the formula.</p>
 <span class="sig-name descname"><span class="pre">empty_col</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.dftovw.DFtoVW.empty_col" title="Permalink to this definition">#</a></dt>
 <dd><p>Create an empty string column.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference external" href="http://pandas.pydata.org/pandas-docs/dev/reference/api/pandas.Series.html#pandas.Series" title="(in pandas v2.0.0.dev0+1076.g18bc585ae6)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Series</span></code></a></p>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="http://pandas.pydata.org/pandas-docs/dev/reference/api/pandas.Series.html#pandas.Series" title="(in pandas v2.0.0.dev0+1078.gdab080e9ec)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Series</span></code></a></p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>A column of empty string with as much rows as the input dataframe.</p>
 </dd>
 </dl>
@@ -738,17 +1161,17 @@ explicit about where the error occurs in the formula.</p>
 </div>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>y</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Hashable" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Hashable</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Hashable" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Hashable</span></code></a>]]) – (list of) any hashable type (str/int/float/tuple/etc.) representing a column name
 The column for the label.</p></li>
 <li><p><strong>x</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Hashable" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Hashable</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Hashable" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Hashable</span></code></a>]]) – (list of) any hashable type (str/int/float/tuple/etc.) representing a column name
 The column(s) for the feature(s).</p></li>
-<li><p><strong>df</strong> (<a class="reference external" href="http://pandas.pydata.org/pandas-docs/dev/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.0.0.dev0+1076.g18bc585ae6)"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataFrame</span></code></a>) – The dataframe used.</p></li>
+<li><p><strong>df</strong> (<a class="reference external" href="http://pandas.pydata.org/pandas-docs/dev/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.0.0.dev0+1078.gdab080e9ec)"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataFrame</span></code></a>) – The dataframe used.</p></li>
 <li><p><strong>label_type</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – The type of the label. Available labels: ‘simple_label’, ‘multiclass_label’, ‘multi_label’. (default: ‘simple_label’)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Raises</dt>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#TypeError" title="(in Python v3.11)"><strong>TypeError</strong></a> – If argument label is not of valid type.</p></li>
 <li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.11)"><strong>ValueError</strong></a> – If argument label_type is not valid.</p></li>
@@ -771,10 +1194,10 @@ The column(s) for the feature(s).</p></li>
 </pre></div>
 </div>
 <dl class="field-list simple">
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference internal" href="#vowpalwabbit.dftovw.DFtoVW" title="vowpalwabbit.dftovw.DFtoVW"><code class="xref py py-class docutils literal notranslate"><span class="pre">DFtoVW</span></code></a></p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>An initialized DFtoVW instance.</p>
 </dd>
 </dl>
@@ -785,17 +1208,17 @@ The column(s) for the feature(s).</p></li>
 <em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_column_names</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'simple_label'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.dftovw.DFtoVW.from_column_names" title="Permalink to this definition">#</a></dt>
 <dd><p>Build DFtoVW instance using column names only. Compared to <a class="reference internal" href="#vowpalwabbit.dftovw.DFtoVW.from_colnames" title="vowpalwabbit.dftovw.DFtoVW.from_colnames"><code class="xref py py-meth docutils literal notranslate"><span class="pre">DFtoVW.from_colnames()</span></code></a>, this method allows for y and label_type to be optional and args are named and cannot be positional.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>y</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Hashable" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Hashable</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Hashable" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Hashable</span></code></a>], <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>]) – (list of) any hashable type (str/int/float/tuple/etc.) representing a column name
 The column for the label. Optional.</p></li>
 <li><p><strong>x</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Hashable" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Hashable</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Hashable" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Hashable</span></code></a>]]) – (list of) any hashable type (str/int/float/tuple/etc.) representing a column name
 The column(s) for the feature(s).</p></li>
-<li><p><strong>df</strong> (<a class="reference external" href="http://pandas.pydata.org/pandas-docs/dev/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.0.0.dev0+1076.g18bc585ae6)"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataFrame</span></code></a>) – The dataframe used.</p></li>
+<li><p><strong>df</strong> (<a class="reference external" href="http://pandas.pydata.org/pandas-docs/dev/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.0.0.dev0+1078.gdab080e9ec)"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataFrame</span></code></a>) – The dataframe used.</p></li>
 <li><p><strong>label_type</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]) – The type of the label. Available labels: ‘simple_label’, ‘multiclass_label’, ‘multi_label’. (default: ‘simple_label’). Optional.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Raises</dt>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#TypeError" title="(in Python v3.11)"><strong>TypeError</strong></a> – If argument label is not of valid type.</p></li>
 <li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.11)"><strong>ValueError</strong></a> – If argument label_type is not valid.</p></li>
@@ -818,10 +1241,10 @@ The column(s) for the feature(s).</p></li>
 </pre></div>
 </div>
 <dl class="field-list simple">
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference internal" href="#vowpalwabbit.dftovw.DFtoVW" title="vowpalwabbit.dftovw.DFtoVW"><code class="xref py py-class docutils literal notranslate"><span class="pre">DFtoVW</span></code></a></p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>An initialized DFtoVW instance.</p>
 </dd>
 </dl>
@@ -832,13 +1255,13 @@ The column(s) for the feature(s).</p></li>
 <span class="sig-name descname"><span class="pre">process_features</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">features</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.dftovw.DFtoVW.process_features" title="Permalink to this definition">#</a></dt>
 <dd><p>Process the features (of a namespace) into a unique column.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>features</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference internal" href="#vowpalwabbit.dftovw.Feature" title="vowpalwabbit.dftovw.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a>]) – The list of Feature objects.</p>
 </dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p><a class="reference external" href="http://pandas.pydata.org/pandas-docs/dev/reference/api/pandas.Series.html#pandas.Series" title="(in pandas v2.0.0.dev0+1076.g18bc585ae6)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Series</span></code></a></p>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="http://pandas.pydata.org/pandas-docs/dev/reference/api/pandas.Series.html#pandas.Series" title="(in pandas v2.0.0.dev0+1078.gdab080e9ec)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Series</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>The column of the processed features.</p>
 </dd>
 </dl>
@@ -849,10 +1272,10 @@ The column(s) for the feature(s).</p></li>
 <span class="sig-name descname"><span class="pre">process_label_and_tag</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.dftovw.DFtoVW.process_label_and_tag" title="Permalink to this definition">#</a></dt>
 <dd><p>Process the label and tag into a unique column.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference external" href="http://pandas.pydata.org/pandas-docs/dev/reference/api/pandas.Series.html#pandas.Series" title="(in pandas v2.0.0.dev0+1076.g18bc585ae6)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Series</span></code></a></p>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="http://pandas.pydata.org/pandas-docs/dev/reference/api/pandas.Series.html#pandas.Series" title="(in pandas v2.0.0.dev0+1078.gdab080e9ec)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Series</span></code></a></p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>A column where each row is the processed label and tag.</p>
 </dd>
 </dl>
@@ -863,7 +1286,7 @@ The column(s) for the feature(s).</p></li>
 <span class="sig-name descname"><span class="pre">raise_missing_col_error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">missing_cols_dict</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.dftovw.DFtoVW.raise_missing_col_error" title="Permalink to this definition">#</a></dt>
 <dd><p>Raises error if some columns are missing.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Raises</dt>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.11)"><strong>ValueError</strong></a> – If one or more columns are not in the dataframe.</p>
 </dd>
 </dl>
@@ -874,13 +1297,13 @@ The column(s) for the feature(s).</p></li>
 <span class="sig-name descname"><span class="pre">set_namespaces</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">namespaces</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">features</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.dftovw.DFtoVW.set_namespaces" title="Permalink to this definition">#</a></dt>
 <dd><p>Set namespaces attributes. Only one of namespaces or features should be passed when being called.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>namespaces</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="#vowpalwabbit.dftovw.Namespace" title="vowpalwabbit.dftovw.Namespace"><code class="xref py py-class docutils literal notranslate"><span class="pre">Namespace</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference internal" href="#vowpalwabbit.dftovw.Namespace" title="vowpalwabbit.dftovw.Namespace"><code class="xref py py-class docutils literal notranslate"><span class="pre">Namespace</span></code></a>], <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>]) – The namespaces argument.</p></li>
 <li><p><strong>features</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="#vowpalwabbit.dftovw.Feature" title="vowpalwabbit.dftovw.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference internal" href="#vowpalwabbit.dftovw.Feature" title="vowpalwabbit.dftovw.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a>], <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>]) – The features argument.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Raises</dt>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.11)"><strong>ValueError</strong></a> – If argument ‘features’ or ‘namespaces’ are not valid.</p>
 </dd>
 </dl>
@@ -898,7 +1321,7 @@ The column(s) for the feature(s).</p></li>
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rename_feature</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">as_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.dftovw.Feature.__init__" title="Permalink to this definition">#</a></dt>
 <dd><p>Initialize a Feature instance.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>value</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Hashable" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Hashable</span></code></a>) – The column name with the value of the feature.</p></li>
 <li><p><strong>rename_feature</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]) – The name to use instead of the default (which is the column name defined in the value argument).</p></li>
@@ -913,13 +1336,13 @@ The column(s) for the feature(s).</p></li>
 <span class="sig-name descname"><span class="pre">process</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ensure_valid_values</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.dftovw.Feature.process" title="Permalink to this definition">#</a></dt>
 <dd><p>Returns the Feature string representation.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>df</strong> (<a class="reference external" href="http://pandas.pydata.org/pandas-docs/dev/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.0.0.dev0+1076.g18bc585ae6)"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataFrame</span></code></a>) – The dataframe from which to select the column(s).</p>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>df</strong> (<a class="reference external" href="http://pandas.pydata.org/pandas-docs/dev/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.0.0.dev0+1078.gdab080e9ec)"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataFrame</span></code></a>) – The dataframe from which to select the column(s).</p>
 </dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p><a class="reference external" href="http://pandas.pydata.org/pandas-docs/dev/reference/api/pandas.Series.html#pandas.Series" title="(in pandas v2.0.0.dev0+1076.g18bc585ae6)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Series</span></code></a></p>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="http://pandas.pydata.org/pandas-docs/dev/reference/api/pandas.Series.html#pandas.Series" title="(in pandas v2.0.0.dev0+1078.gdab080e9ec)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Series</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>The Feature string representation.</p>
 </dd>
 </dl>
@@ -927,7 +1350,7 @@ The column(s) for the feature(s).</p></li>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="vowpalwabbit.dftovw.Feature.value">
-<span class="sig-name descname"><span class="pre">value</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Any</span></em><a class="headerlink" href="#vowpalwabbit.dftovw.Feature.value" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">value</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Any" title="(in Python v3.11)"><span class="pre">Any</span></a></em><a class="headerlink" href="#vowpalwabbit.dftovw.Feature.value" title="Permalink to this definition">#</a></dt>
 <dd><p>Feature value column name</p>
 </dd></dl>
 
@@ -943,7 +1366,7 @@ The column(s) for the feature(s).</p></li>
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.dftovw.MultiLabel.__init__" title="Permalink to this definition">#</a></dt>
 <dd><p>Initialize a MultiLabel instance.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>label</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Hashable" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Hashable</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Hashable" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Hashable</span></code></a>]]) – The (list of) column name(s) of the multi label(s).</p>
 </dd>
 </dl>
@@ -951,7 +1374,7 @@ The column(s) for the feature(s).</p></li>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="vowpalwabbit.dftovw.MultiLabel.label">
-<span class="sig-name descname"><span class="pre">label</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Any</span></em><a class="headerlink" href="#vowpalwabbit.dftovw.MultiLabel.label" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">label</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Any" title="(in Python v3.11)"><span class="pre">Any</span></a></em><a class="headerlink" href="#vowpalwabbit.dftovw.MultiLabel.label" title="Permalink to this definition">#</a></dt>
 <dd><p>Multilabel label value column name</p>
 </dd></dl>
 
@@ -960,13 +1383,13 @@ The column(s) for the feature(s).</p></li>
 <span class="sig-name descname"><span class="pre">process</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.dftovw.MultiLabel.process" title="Permalink to this definition">#</a></dt>
 <dd><p>Returns the MultiLabel string representation.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>df</strong> (<a class="reference external" href="http://pandas.pydata.org/pandas-docs/dev/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.0.0.dev0+1076.g18bc585ae6)"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataFrame</span></code></a>) – The dataframe from which to select the column(s).</p>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>df</strong> (<a class="reference external" href="http://pandas.pydata.org/pandas-docs/dev/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.0.0.dev0+1078.gdab080e9ec)"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataFrame</span></code></a>) – The dataframe from which to select the column(s).</p>
 </dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p><a class="reference external" href="http://pandas.pydata.org/pandas-docs/dev/reference/api/pandas.Series.html#pandas.Series" title="(in pandas v2.0.0.dev0+1076.g18bc585ae6)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Series</span></code></a></p>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="http://pandas.pydata.org/pandas-docs/dev/reference/api/pandas.Series.html#pandas.Series" title="(in pandas v2.0.0.dev0+1078.gdab080e9ec)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Series</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>The MultiLabel string representation.</p>
 </dd>
 </dl>
@@ -984,7 +1407,7 @@ The column(s) for the feature(s).</p></li>
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weight</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.dftovw.MulticlassLabel.__init__" title="Permalink to this definition">#</a></dt>
 <dd><p>Initialize a MulticlassLabel instance.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>label</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Hashable" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Hashable</span></code></a>) – The column name with the multi class label.</p></li>
 <li><p><strong>weight</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Hashable" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Hashable</span></code></a>]) – The column name with the (importance) weight of the multi class label.</p></li>
@@ -995,7 +1418,7 @@ The column(s) for the feature(s).</p></li>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="vowpalwabbit.dftovw.MulticlassLabel.label">
-<span class="sig-name descname"><span class="pre">label</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Any</span></em><a class="headerlink" href="#vowpalwabbit.dftovw.MulticlassLabel.label" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">label</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Any" title="(in Python v3.11)"><span class="pre">Any</span></a></em><a class="headerlink" href="#vowpalwabbit.dftovw.MulticlassLabel.label" title="Permalink to this definition">#</a></dt>
 <dd><p>Multiclass label value column name</p>
 </dd></dl>
 
@@ -1006,10 +1429,10 @@ The column(s) for the feature(s).</p></li>
 <p>Args:
 df: The dataframe from which to select the column(s).</p>
 <dl class="field-list simple">
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference external" href="http://pandas.pydata.org/pandas-docs/dev/reference/api/pandas.Series.html#pandas.Series" title="(in pandas v2.0.0.dev0+1076.g18bc585ae6)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Series</span></code></a></p>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="http://pandas.pydata.org/pandas-docs/dev/reference/api/pandas.Series.html#pandas.Series" title="(in pandas v2.0.0.dev0+1078.gdab080e9ec)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Series</span></code></a></p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>The MulticlassLabel string representation.</p>
 </dd>
 </dl>
@@ -1017,7 +1440,7 @@ df: The dataframe from which to select the column(s).</p>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="vowpalwabbit.dftovw.MulticlassLabel.weight">
-<span class="sig-name descname"><span class="pre">weight</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Any</span></em><a class="headerlink" href="#vowpalwabbit.dftovw.MulticlassLabel.weight" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">weight</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Any" title="(in Python v3.11)"><span class="pre">Any</span></a></em><a class="headerlink" href="#vowpalwabbit.dftovw.MulticlassLabel.weight" title="Permalink to this definition">#</a></dt>
 <dd><p>Multiclass label weight column name</p>
 </dd></dl>
 
@@ -1035,7 +1458,7 @@ be composed of a Feature object or a list of Feature objects.</p>
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">features</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.dftovw.Namespace.__init__" title="Permalink to this definition">#</a></dt>
 <dd><p>Initialize a Namespace instance.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>features</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="#vowpalwabbit.dftovw.Feature" title="vowpalwabbit.dftovw.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference internal" href="#vowpalwabbit.dftovw.Feature" title="vowpalwabbit.dftovw.Feature"><code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></a>]]) – A (list of) Feature object(s) that form the namespace.</p></li>
 <li><p><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>]) – The name of the namespace.</p></li>
@@ -1059,7 +1482,7 @@ namespace.</p></li>
 <span class="sig-name descname"><span class="pre">check_attributes_type</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.dftovw.Namespace.check_attributes_type" title="Permalink to this definition">#</a></dt>
 <dd><p>Check if attributes are of valid type.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Raises</dt>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#TypeError" title="(in Python v3.11)"><strong>TypeError</strong></a> – If one of the attribute is not valid.</p>
 </dd>
 </dl>
@@ -1075,10 +1498,10 @@ namespace.</p></li>
 <span class="sig-name descname"><span class="pre">process</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.dftovw.Namespace.process" title="Permalink to this definition">#</a></dt>
 <dd><p>Returns the Namespace string representation</p>
 <dl class="field-list simple">
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></p>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>The Namespace string representation.</p>
 </dd>
 </dl>
@@ -1096,7 +1519,7 @@ namespace.</p></li>
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weight</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.dftovw.SimpleLabel.__init__" title="Permalink to this definition">#</a></dt>
 <dd><p>Initialize a SimpleLabel instance.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>label</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Hashable" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Hashable</span></code></a>) – The column name with the label.</p></li>
 <li><p><strong>weight</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Hashable" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Hashable</span></code></a>]) – The column name with the weight.</p></li>
@@ -1107,7 +1530,7 @@ namespace.</p></li>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="vowpalwabbit.dftovw.SimpleLabel.label">
-<span class="sig-name descname"><span class="pre">label</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Any</span></em><a class="headerlink" href="#vowpalwabbit.dftovw.SimpleLabel.label" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">label</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Any" title="(in Python v3.11)"><span class="pre">Any</span></a></em><a class="headerlink" href="#vowpalwabbit.dftovw.SimpleLabel.label" title="Permalink to this definition">#</a></dt>
 <dd><p>Simple label value column name</p>
 </dd></dl>
 
@@ -1116,13 +1539,13 @@ namespace.</p></li>
 <span class="sig-name descname"><span class="pre">process</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vowpalwabbit.dftovw.SimpleLabel.process" title="Permalink to this definition">#</a></dt>
 <dd><p>Returns the SimpleLabel string representation.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>df</strong> (<a class="reference external" href="http://pandas.pydata.org/pandas-docs/dev/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.0.0.dev0+1076.g18bc585ae6)"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataFrame</span></code></a>) – The dataframe from which to select the column.</p>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>df</strong> (<a class="reference external" href="http://pandas.pydata.org/pandas-docs/dev/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v2.0.0.dev0+1078.gdab080e9ec)"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataFrame</span></code></a>) – The dataframe from which to select the column.</p>
 </dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p><a class="reference external" href="http://pandas.pydata.org/pandas-docs/dev/reference/api/pandas.Series.html#pandas.Series" title="(in pandas v2.0.0.dev0+1076.g18bc585ae6)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Series</span></code></a></p>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="http://pandas.pydata.org/pandas-docs/dev/reference/api/pandas.Series.html#pandas.Series" title="(in pandas v2.0.0.dev0+1078.gdab080e9ec)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Series</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>The SimpleLabel string representation.</p>
 </dd>
 </dl>
@@ -1130,7 +1553,7 @@ namespace.</p></li>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="vowpalwabbit.dftovw.SimpleLabel.weight">
-<span class="sig-name descname"><span class="pre">weight</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Any</span></em><a class="headerlink" href="#vowpalwabbit.dftovw.SimpleLabel.weight" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">weight</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Any" title="(in Python v3.11)"><span class="pre">Any</span></a></em><a class="headerlink" href="#vowpalwabbit.dftovw.SimpleLabel.weight" title="Permalink to this definition">#</a></dt>
 <dd><p>Simple label weight column name</p>
 </dd></dl>
 
@@ -1205,7 +1628,7 @@ namespace.</p></li>
   
   <div class="footer-item">
     <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.5.0.<br>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.3.0.<br>
 </p>
   </div>
   

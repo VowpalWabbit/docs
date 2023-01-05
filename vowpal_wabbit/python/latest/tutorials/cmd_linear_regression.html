@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>Command Line Linear Regression &#8212; VowpalWabbit latest documentation</title>
 <script>
@@ -36,7 +36,9 @@
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".cell"
 const thebe_selector_input = "pre"
@@ -49,7 +51,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="next" title="Command Line for CSV Dataset" href="cmd_csv_with_iris_dataset.html" />
     <link rel="prev" title="Command Line Basics" href="cmd_first_steps.html" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="docsearch:language" content="None">
+<meta name="docsearch:language" content="en">
   </head>
   
   
@@ -566,7 +568,7 @@ const thebe_selector_output = ".output, .cell_output"
               <article class="bd-article" role="main">
                 
   <section id="command-line-linear-regression">
-<h1>Command Line Linear Regression<a class="headerlink" href="#command-line-linear-regression" title="Permalink to this headline">#</a></h1>
+<h1>Command Line Linear Regression<a class="headerlink" href="#command-line-linear-regression" title="Permalink to this heading">#</a></h1>
 <p>This tutorial demonstrates how to approach a regression problem with Vowpal Wabbit. It features an overview of a linear regression problem using a Vowpal Wabbit workflow tutorial with examples, introduces unique Vowpal Wabbit features, and explains how to structure input and understand the results.</p>
 <div class="admonition-prerequisites admonition">
 <p class="admonition-title">Prerequisites</p>
@@ -574,7 +576,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p><strong>Note:</strong> See <a class="reference internal" href="cmd_first_steps.html"><span class="doc std std-doc">Command Line Tutorial</span></a> for Vowpal Wabbit command line basics and a quick introduction to training and testing your model. See <a class="reference internal" href="python_first_steps.html"><span class="doc std std-doc">Python Tutorial</span></a> to explore the basics for using Python to pass some data to Vowpal Wabbit to learn a model and get a prediction.</p>
 </div>
 <section id="create-a-dataset">
-<h2>Create a dataset<a class="headerlink" href="#create-a-dataset" title="Permalink to this headline">#</a></h2>
+<h2>Create a dataset<a class="headerlink" href="#create-a-dataset" title="Permalink to this heading">#</a></h2>
 <p>Before we begin making predictions for regression problems, we need to create a dataset. For example, say we want to predict whether a house will require a new roof in the next 10 years.</p>
 <p>Create a training-set file in Vowpal Wabbit <code class="docutils literal notranslate"><span class="pre">house_dataset</span></code> and copy the following dataset:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">0</span> <span class="o">|</span> <span class="n">price</span><span class="p">:</span><span class="mf">.23</span> <span class="n">sqft</span><span class="p">:</span><span class="mf">.25</span> <span class="n">age</span><span class="p">:</span><span class="mf">.05</span> <span class="mi">2006</span>
@@ -583,7 +585,7 @@ const thebe_selector_output = ".output, .cell_output"
 </pre></div>
 </div>
 <section id="vowpal-wabbit-hashing-techniques">
-<h3>Vowpal Wabbit hashing techniques<a class="headerlink" href="#vowpal-wabbit-hashing-techniques" title="Permalink to this headline">#</a></h3>
+<h3>Vowpal Wabbit hashing techniques<a class="headerlink" href="#vowpal-wabbit-hashing-techniques" title="Permalink to this heading">#</a></h3>
 <p>Vowpal Wabbit hashes feature names into in-memory indexes by default unless the feature names are positive integers.</p>
 <p>For example, in the first line of the <code class="docutils literal notranslate"><span class="pre">house_dataset</span></code> example, the first three features use an index derived from a hash function while the last feature uses index <code class="docutils literal notranslate"><span class="pre">2006</span></code> directly. Also, the first three features have explicit values (<code class="docutils literal notranslate"><span class="pre">.23</span></code>, <code class="docutils literal notranslate"><span class="pre">.25</span></code>, and <code class="docutils literal notranslate"><span class="pre">.05</span></code> respectively) while the last, <code class="docutils literal notranslate"><span class="pre">2006</span></code> has an implicit default value of <code class="docutils literal notranslate"><span class="pre">1</span></code>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">0</span> <span class="o">|</span> <span class="n">price</span><span class="p">:</span><span class="mf">.23</span> <span class="n">sqft</span><span class="p">:</span><span class="mf">.25</span> <span class="n">age</span><span class="p">:</span><span class="mf">.05</span> <span class="mi">2006</span>
@@ -639,11 +641,11 @@ total feature number = 15
 </section>
 </section>
 <section id="vowpal-wabbit-output">
-<h2>Vowpal Wabbit output<a class="headerlink" href="#vowpal-wabbit-output" title="Permalink to this headline">#</a></h2>
+<h2>Vowpal Wabbit output<a class="headerlink" href="#vowpal-wabbit-output" title="Permalink to this heading">#</a></h2>
 <p>This section provides information on the various types of diagnostic output Vowpal Wabbit presents.</p>
 <p>Use <code class="docutils literal notranslate"><span class="pre">--quiet</span></code>  command to turn off diagnostic information in Vowpal Wabbit.</p>
 <section id="hash-function-bits">
-<h3>Hash function bits<a class="headerlink" href="#hash-function-bits" title="Permalink to this headline">#</a></h3>
+<h3>Hash function bits<a class="headerlink" href="#hash-function-bits" title="Permalink to this heading">#</a></h3>
 <p>The following output shows the number of bits from the hash function:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Num</span> <span class="n">weight</span> <span class="n">bits</span> <span class="o">=</span> <span class="mi">18</span>
 </pre></div>
@@ -653,7 +655,7 @@ total feature number = 15
 <p>For example: <code class="docutils literal notranslate"><span class="pre">vw</span> <span class="pre">-b</span> <span class="pre">10</span> <span class="pre">house_dataset</span></code></p>
 </section>
 <section id="learning-rate">
-<h3>Learning rate<a class="headerlink" href="#learning-rate" title="Permalink to this headline">#</a></h3>
+<h3>Learning rate<a class="headerlink" href="#learning-rate" title="Permalink to this heading">#</a></h3>
 <p>The following output shows the learning rate:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">learning</span> <span class="n">rate</span> <span class="o">=</span> <span class="mf">0.5</span>
 </pre></div>
@@ -667,7 +669,7 @@ total feature number = 15
 </div></blockquote>
 </section>
 <section id="initial-time">
-<h3>Initial time<a class="headerlink" href="#initial-time" title="Permalink to this headline">#</a></h3>
+<h3>Initial time<a class="headerlink" href="#initial-time" title="Permalink to this heading">#</a></h3>
 <p>The following output shows the initial time for learning rate decay:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">initial_t</span> <span class="o">=</span> <span class="mi">0</span>
 </pre></div>
@@ -678,7 +680,7 @@ total feature number = 15
 </div></blockquote>
 </section>
 <section id="power-on-learning-rate-decay">
-<h3>Power on learning rate decay<a class="headerlink" href="#power-on-learning-rate-decay" title="Permalink to this headline">#</a></h3>
+<h3>Power on learning rate decay<a class="headerlink" href="#power-on-learning-rate-decay" title="Permalink to this heading">#</a></h3>
 <p>The following output specifies the power on the learning rate decay:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">power_t</span> <span class="o">=</span> <span class="mf">0.5</span>
 </pre></div>
@@ -689,7 +691,7 @@ total feature number = 15
 </div></blockquote>
 </section>
 <section id="cache-files">
-<h3>Cache files<a class="headerlink" href="#cache-files" title="Permalink to this headline">#</a></h3>
+<h3>Cache files<a class="headerlink" href="#cache-files" title="Permalink to this heading">#</a></h3>
 <p>The following output shows that you are not using a cache file:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">using</span> <span class="n">no</span> <span class="n">cache</span>
 </pre></div>
@@ -702,7 +704,7 @@ total feature number = 15
 <p>For example: <code class="docutils literal notranslate"><span class="pre">vw</span> <span class="pre">-c</span> <span class="pre">--passes</span> <span class="pre">50</span> <span class="pre">-d</span> <span class="pre">house_dataset</span></code>. Or, if you wish to use a specific name for the cache file: <code class="docutils literal notranslate"><span class="pre">vw</span> <span class="pre">-c</span> <span class="pre">--passes</span> <span class="pre">50</span> <span class="pre">--cache_file</span> <span class="pre">housing.cache</span> <span class="pre">-d</span> <span class="pre">house_dataset</span></code></p>
 </section>
 <section id="data-sources">
-<h3>Data sources<a class="headerlink" href="#data-sources" title="Permalink to this headline">#</a></h3>
+<h3>Data sources<a class="headerlink" href="#data-sources" title="Permalink to this heading">#</a></h3>
 <p>The following output shows the source of the data:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Reading</span> <span class="n">datafile</span> <span class="o">=</span> <span class="n">house_dataset</span>
 </pre></div>
@@ -712,7 +714,7 @@ total feature number = 15
 </div></blockquote>
 </section>
 <section id="number-of-data-sources">
-<h3>Number of data sources<a class="headerlink" href="#number-of-data-sources" title="Permalink to this headline">#</a></h3>
+<h3>Number of data sources<a class="headerlink" href="#number-of-data-sources" title="Permalink to this heading">#</a></h3>
 <p>The following output shows the number of data sources:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">num</span> <span class="n">sources</span> <span class="o">=</span> <span class="mi">1</span>
 </pre></div>
@@ -721,7 +723,7 @@ total feature number = 15
 </section>
 </section>
 <section id="vowpal-wabbit-diagnostic-header">
-<h2>Vowpal Wabbit diagnostic header<a class="headerlink" href="#vowpal-wabbit-diagnostic-header" title="Permalink to this headline">#</a></h2>
+<h2>Vowpal Wabbit diagnostic header<a class="headerlink" href="#vowpal-wabbit-diagnostic-header" title="Permalink to this heading">#</a></h2>
 <p>Vowpal Wabbit prints live diagnostic information in the header like the following:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">average</span>  <span class="n">since</span>         <span class="n">example</span>        <span class="n">example</span>  <span class="n">current</span>  <span class="n">current</span>  <span class="n">current</span>
 <span class="n">loss</span>     <span class="n">last</span>          <span class="n">counter</span>         <span class="n">weight</span>    <span class="n">label</span>  <span class="n">predict</span> <span class="n">features</span>
@@ -772,7 +774,7 @@ total feature number = 15
 <p>The reason we have to add <code class="docutils literal notranslate"><span class="pre">--holdout_off</span></code> is that when running multiple-passes, Vowpal Wabbit automatically switches to ‘over-fit avoidance’ mode by holding-out 10% of the examples (the “1 in 10” period can be changed using <code class="docutils literal notranslate"><span class="pre">--holdout_period</span> <span class="pre">period</span></code>) and evaluating performance on the held-out data instead of using the online-training progressive loss.</p>
 </section>
 <section id="saving-your-model-into-a-file">
-<h2>Saving your model into a file<a class="headerlink" href="#saving-your-model-into-a-file" title="Permalink to this headline">#</a></h2>
+<h2>Saving your model into a file<a class="headerlink" href="#saving-your-model-into-a-file" title="Permalink to this heading">#</a></h2>
 <p>Vowpal Wabbit learns the weights of the features and keeps them in an in memory vector by default.</p>
 <p>Add <code class="docutils literal notranslate"><span class="pre">-f</span> <span class="pre">filename</span></code> to save the final regressor weights to a file.</p>
 <p>For example:</p>
@@ -781,7 +783,7 @@ total feature number = 15
 </div>
 </section>
 <section id="vowpal-wabbit-predictions">
-<h2>Vowpal Wabbit predictions<a class="headerlink" href="#vowpal-wabbit-predictions" title="Permalink to this headline">#</a></h2>
+<h2>Vowpal Wabbit predictions<a class="headerlink" href="#vowpal-wabbit-predictions" title="Permalink to this heading">#</a></h2>
 <p>We can make predictions in Vowpal Wabbit by supplying the <code class="docutils literal notranslate"><span class="pre">-p</span> <span class="pre">filename</span></code>.</p>
 <p>For example, to output them to standard out <code class="docutils literal notranslate"><span class="pre">stdout</span></code>:</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>vw<span class="w"> </span>house_dataset<span class="w"> </span>-p<span class="w"> </span>/dev/stdout<span class="w"> </span>--quiet
@@ -868,7 +870,7 @@ vw house_dataset --audit --quiet
 <p><code class="docutils literal notranslate"><span class="pre">1st-guess:0.5</span> <span class="pre">2nd-guess:3</span></code></p>
 </section>
 <section id="more-to-explore">
-<h2>More to explore<a class="headerlink" href="#more-to-explore" title="Permalink to this headline">#</a></h2>
+<h2>More to explore<a class="headerlink" href="#more-to-explore" title="Permalink to this heading">#</a></h2>
 <p>This tutorial only describes a fraction of Vowpal Wabbit’s capabilities. To explore more about other Vowpal Wabbit features and performance — loss functions, optimizers, and representations — including ridiculously fast active learning with clusters of thousands of machines, see the following resources:</p>
 <ul class="simple">
 <li><p>To learn how to approach a contextual bandits problem using Vowpal Wabbit — including how to  work with different contextual bandits approaches, how to format data, and understand the results — see the <a class="reference internal" href="python_Contextual_bandits_and_Vowpal_Wabbit.html"><span class="doc std std-doc">Contextual Bandit Reinforcement Learning Tutorial</span></a>.</p></li>
@@ -945,7 +947,7 @@ vw house_dataset --audit --quiet
   
   <div class="footer-item">
     <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.5.0.<br>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.3.0.<br>
 </p>
   </div>
   

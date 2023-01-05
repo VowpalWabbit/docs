@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>Python 8.11 to 9 migration &#8212; VowpalWabbit latest documentation</title>
 <script>
@@ -36,7 +36,9 @@
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".cell"
 const thebe_selector_input = "pre"
@@ -49,7 +51,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="next" title="Command line options" href="../command_line_args.html" />
     <link rel="prev" title="vowpalwabbit.pyvw.pylibvw" href="vowpalwabbit.pyvw.pylibvw.html" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="docsearch:language" content="None">
+<meta name="docsearch:language" content="en">
   </head>
   
   
@@ -555,13 +557,13 @@ const thebe_selector_output = ".output, .cell_output"
               <article class="bd-article" role="main">
                 
   <section id="python-8-11-to-9-migration">
-<h1>Python 8.11 to 9 migration<a class="headerlink" href="#python-8-11-to-9-migration" title="Permalink to this headline">#</a></h1>
+<h1>Python 8.11 to 9 migration<a class="headerlink" href="#python-8-11-to-9-migration" title="Permalink to this heading">#</a></h1>
 <p>You can do nothing and everything should still work when migrating to VW 9. But if you want to move to the new way to avoid deprecation warnings and future breaks here’s a rundown.</p>
 <section id="imports">
-<h2>Imports<a class="headerlink" href="#imports" title="Permalink to this headline">#</a></h2>
+<h2>Imports<a class="headerlink" href="#imports" title="Permalink to this heading">#</a></h2>
 <p>Modules are now direcly accessible from the root module. In the past <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">vowpalwabbit</span> <span class="pre">import</span> <span class="pre">...</span></code> was needed, but now <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">vowpalwabbit</span></code> and accessing with <code class="docutils literal notranslate"><span class="pre">.</span></code> will work.</p>
 <section id="pyvw">
-<h3><code class="docutils literal notranslate"><span class="pre">pyvw</span></code><a class="headerlink" href="#pyvw" title="Permalink to this headline">#</a></h3>
+<h3><code class="docutils literal notranslate"><span class="pre">pyvw</span></code><a class="headerlink" href="#pyvw" title="Permalink to this heading">#</a></h3>
 <p>The old <code class="docutils literal notranslate"><span class="pre">pyvw</span></code> types are now available under the root module.</p>
 <p>Instead of:</p>
 <div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">vowpalwabbit</span> <span class="kn">import</span> <span class="n">pyvw</span>
@@ -578,16 +580,16 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </section>
 <section id="dftovw">
-<h3><code class="docutils literal notranslate"><span class="pre">DFtoVW</span></code><a class="headerlink" href="#dftovw" title="Permalink to this headline">#</a></h3>
+<h3><code class="docutils literal notranslate"><span class="pre">DFtoVW</span></code><a class="headerlink" href="#dftovw" title="Permalink to this heading">#</a></h3>
 <p>Replace any reference to the old module name <code class="docutils literal notranslate"><span class="pre">DFtoVW</span></code> with <a class="reference internal" href="vowpalwabbit.dftovw.html#module-vowpalwabbit.dftovw" title="vowpalwabbit.dftovw"><code class="xref py py-mod docutils literal notranslate"><span class="pre">vowpalwabbit.dftovw</span></code></a>.</p>
 </section>
 <section id="sklearn-vw">
-<h3><code class="docutils literal notranslate"><span class="pre">sklearn_vw</span></code><a class="headerlink" href="#sklearn-vw" title="Permalink to this headline">#</a></h3>
+<h3><code class="docutils literal notranslate"><span class="pre">sklearn_vw</span></code><a class="headerlink" href="#sklearn-vw" title="Permalink to this heading">#</a></h3>
 <p>Replace any reference to the old module name <code class="docutils literal notranslate"><span class="pre">sklearn_vw</span></code> with <a class="reference internal" href="vowpalwabbit.sklearn.html#module-vowpalwabbit.sklearn" title="vowpalwabbit.sklearn"><code class="xref py py-class docutils literal notranslate"><span class="pre">vowpalwabbit.sklearn</span></code></a>.</p>
 </section>
 </section>
 <section id="class-names">
-<h2>Class names<a class="headerlink" href="#class-names" title="Permalink to this headline">#</a></h2>
+<h2>Class names<a class="headerlink" href="#class-names" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Replace <a class="reference internal" href="vowpalwabbit.pyvw.html#vowpalwabbit.pyvw.vw" title="vowpalwabbit.pyvw.vw"><code class="xref py py-class docutils literal notranslate"><span class="pre">vowpalwabbit.pyvw.vw</span></code></a> with <a class="reference internal" href="vowpalwabbit.html#vowpalwabbit.Workspace" title="vowpalwabbit.Workspace"><code class="xref py py-class docutils literal notranslate"><span class="pre">vowpalwabbit.Workspace</span></code></a></p></li>
 <li><p>Replace <a class="reference internal" href="vowpalwabbit.pyvw.html#vowpalwabbit.pyvw.example" title="vowpalwabbit.pyvw.example"><code class="xref py py-class docutils literal notranslate"><span class="pre">vowpalwabbit.pyvw.example</span></code></a> with <a class="reference internal" href="vowpalwabbit.html#vowpalwabbit.Example" title="vowpalwabbit.Example"><code class="xref py py-class docutils literal notranslate"><span class="pre">vowpalwabbit.Example</span></code></a></p></li>
@@ -602,11 +604,11 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </section>
 <section id="get-prediction">
-<h2><code class="docutils literal notranslate"><span class="pre">get_prediction</span></code><a class="headerlink" href="#get-prediction" title="Permalink to this headline">#</a></h2>
+<h2><code class="docutils literal notranslate"><span class="pre">get_prediction</span></code><a class="headerlink" href="#get-prediction" title="Permalink to this heading">#</a></h2>
 <p>Instead of calling the free function <a class="reference internal" href="vowpalwabbit.pyvw.html#vowpalwabbit.pyvw.get_prediction" title="vowpalwabbit.pyvw.get_prediction"><code class="xref py py-func docutils literal notranslate"><span class="pre">vowpalwabbit.pyvw.get_prediction()</span></code></a> call <a class="reference internal" href="vowpalwabbit.html#vowpalwabbit.Example.get_prediction" title="vowpalwabbit.Example.get_prediction"><code class="xref py py-meth docutils literal notranslate"><span class="pre">vowpalwabbit.Example.get_prediction()</span></code></a> on an <a class="reference internal" href="vowpalwabbit.html#vowpalwabbit.Example" title="vowpalwabbit.Example"><code class="xref py py-class docutils literal notranslate"><span class="pre">vowpalwabbit.Example</span></code></a> instance.</p>
 </section>
 <section id="label-types-and-prediction-types">
-<h2>Label types and prediction types<a class="headerlink" href="#label-types-and-prediction-types" title="Permalink to this headline">#</a></h2>
+<h2>Label types and prediction types<a class="headerlink" href="#label-types-and-prediction-types" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Instead of using the prediction type integer constants such as <a class="reference internal" href="vowpalwabbit.pyvw.pylibvw.html#vowpalwabbit.pyvw.pylibvw.vw.pSCALAR" title="vowpalwabbit.pyvw.pylibvw.vw.pSCALAR"><code class="xref py py-const docutils literal notranslate"><span class="pre">vowpalwabbit.pyvw.pylibvw.vw.pSCALAR</span></code></a> use the corresponding value in <a class="reference internal" href="vowpalwabbit.html#vowpalwabbit.PredictionType" title="vowpalwabbit.PredictionType"><code class="xref py py-class docutils literal notranslate"><span class="pre">vowpalwabbit.PredictionType</span></code></a></p></li>
 <li><p>Instead of using the label type integer constants such as <a class="reference internal" href="vowpalwabbit.pyvw.pylibvw.html#vowpalwabbit.pyvw.pylibvw.vw.lSimple" title="vowpalwabbit.pyvw.pylibvw.vw.lSimple"><code class="xref py py-const docutils literal notranslate"><span class="pre">vowpalwabbit.pyvw.pylibvw.vw.lSimple</span></code></a> use the corresponding value in <a class="reference internal" href="vowpalwabbit.html#vowpalwabbit.LabelType" title="vowpalwabbit.LabelType"><code class="xref py py-class docutils literal notranslate"><span class="pre">vowpalwabbit.LabelType</span></code></a></p>
@@ -619,14 +621,14 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </section>
 <section id="getting-a-label-from-an-example">
-<h2>Getting a label from an Example<a class="headerlink" href="#getting-a-label-from-an-example" title="Permalink to this headline">#</a></h2>
+<h2>Getting a label from an Example<a class="headerlink" href="#getting-a-label-from-an-example" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>If using <a class="reference internal" href="vowpalwabbit.html#vowpalwabbit.Example.get_label" title="vowpalwabbit.Example.get_label"><code class="xref py py-meth docutils literal notranslate"><span class="pre">vowpalwabbit.Example.get_label()</span></code></a>, you should change the parameter from a class type to a <a class="reference internal" href="vowpalwabbit.html#vowpalwabbit.LabelType" title="vowpalwabbit.LabelType"><code class="xref py py-class docutils literal notranslate"><span class="pre">vowpalwabbit.LabelType</span></code></a>.</p></li>
 <li><p>If calling <a class="reference internal" href="vowpalwabbit.html#vowpalwabbit.AbstractLabel.from_example" title="vowpalwabbit.AbstractLabel.from_example"><code class="xref py py-meth docutils literal notranslate"><span class="pre">vowpalwabbit.AbstractLabel.from_example()</span></code></a>. This has changed from a method on an existing instance to a static factory function which accepts an <a class="reference internal" href="vowpalwabbit.html#vowpalwabbit.Example" title="vowpalwabbit.Example"><code class="xref py py-class docutils literal notranslate"><span class="pre">vowpalwabbit.Example</span></code></a> and returns an instance of the correspodning label type. Using <a class="reference internal" href="vowpalwabbit.html#vowpalwabbit.Example.get_label" title="vowpalwabbit.Example.get_label"><code class="xref py py-meth docutils literal notranslate"><span class="pre">vowpalwabbit.Example.get_label()</span></code></a> is preferred.</p></li>
 </ul>
 </section>
 <section id="examplenamespace-push-features">
-<h2>ExampleNamespace.push_features<a class="headerlink" href="#examplenamespace-push-features" title="Permalink to this headline">#</a></h2>
+<h2>ExampleNamespace.push_features<a class="headerlink" href="#examplenamespace-push-features" title="Permalink to this heading">#</a></h2>
 <p>The first argument of <a class="reference internal" href="vowpalwabbit.html#vowpalwabbit.ExampleNamespace.push_features" title="vowpalwabbit.ExampleNamespace.push_features"><code class="xref py py-meth docutils literal notranslate"><span class="pre">vowpalwabbit.ExampleNamespace.push_features()</span></code></a> was removed as it was not needed and unused. Using two arguments is deprecated, to fix the callsites remove the first argument.</p>
 </section>
 </section>
@@ -697,7 +699,7 @@ const thebe_selector_output = ".output, .cell_output"
   
   <div class="footer-item">
     <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.5.0.<br>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.3.0.<br>
 </p>
   </div>
   

@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>Slates &#8212; VowpalWabbit latest documentation</title>
 <script>
@@ -36,7 +36,9 @@
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".cell"
 const thebe_selector_input = "pre"
@@ -49,7 +51,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="next" title="Pandas DataFrame to VowpalWabbit Format Conversion" href="DFtoVW_tutorial.html" />
     <link rel="prev" title="Python Basics" href="python_first_steps.html" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="docsearch:language" content="None">
+<meta name="docsearch:language" content="en">
   </head>
   
   
@@ -558,19 +560,19 @@ const thebe_selector_output = ".output, .cell_output"
               <article class="bd-article" role="main">
                 
   <section id="slates">
-<h1>Slates<a class="headerlink" href="#slates" title="Permalink to this headline">#</a></h1>
+<h1>Slates<a class="headerlink" href="#slates" title="Permalink to this heading">#</a></h1>
 <section id="combinatorial-bandits">
-<h2>Combinatorial bandits<a class="headerlink" href="#combinatorial-bandits" title="Permalink to this headline">#</a></h2>
+<h2>Combinatorial bandits<a class="headerlink" href="#combinatorial-bandits" title="Permalink to this heading">#</a></h2>
 <p>A common setting when using bandits is the desire to make multiple decisions jointly as each individual decision could impact the outcome of the others. For example, when optimizing the layout of a web page, you have a list of context boxes to decide upon, one usually only has whole-page metrics so the impact of all decisions are all connected and cant be associated with any single decision.</p>
 <p>One way to address this is, instead of making multiple decisions for each box, is make single decision with a combinatorial number of arms to cover every combination of individual decisions. This combinatorial explosion in the number of arms make traditional Contextual Bandits methods such as IPS (Inverse Propensity Score) untractable and requiring a large amount of data.</p>
 </section>
 <section id="the-slates-problem-setting">
-<h2>The Slates problem setting<a class="headerlink" href="#the-slates-problem-setting" title="Permalink to this headline">#</a></h2>
+<h2>The Slates problem setting<a class="headerlink" href="#the-slates-problem-setting" title="Permalink to this heading">#</a></h2>
 <p>The <a class="reference external" href="http://arxiv.org/abs/1605.04812">Slates</a> setting is an extension to the Contextual Bandits one. With Slates, there’s a set of slots (a slot is akin to a decision) and each slot has a set of associated actions. When making a decision, an action is selected for each slot based on the policy and which slot they are associated with.</p>
 <p>A single, global, reward is produced that signals the outcome of an entire slate of decisions. There’s a linearity assumption on the impact of each action on the observed reward.</p>
 </section>
 <section id="vowpal-wabbit-slates-example-format">
-<h2>Vowpal Wabbit Slates example format<a class="headerlink" href="#vowpal-wabbit-slates-example-format" title="Permalink to this headline">#</a></h2>
+<h2>Vowpal Wabbit Slates example format<a class="headerlink" href="#vowpal-wabbit-slates-example-format" title="Permalink to this heading">#</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">slates</span> <span class="n">shared</span> <span class="o">|</span> <span class="n">a</span>
 <span class="n">slates</span> <span class="n">action</span> <span class="mi">0</span> <span class="o">|</span> <span class="n">a</span>
 <span class="n">slates</span> <span class="n">action</span> <span class="mi">0</span> <span class="o">|</span> <span class="n">b</span>
@@ -584,7 +586,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p><code class="docutils literal notranslate"><span class="pre">slates</span> <span class="pre">shared</span></code> is the shared context for all of the decisions. Often these are user related features. Each <code class="docutils literal notranslate"><span class="pre">slates</span> <span class="pre">action</span></code> needs to tell which slot they are associated with, slots are 0-indexed. Finally, <code class="docutils literal notranslate"><span class="pre">slates</span> <span class="pre">slot</span></code> is used to list the features of each slot.</p>
 </section>
 <section id="scenario-outfit-optimization">
-<h2>Scenario: Outfit optimization<a class="headerlink" href="#scenario-outfit-optimization" title="Permalink to this headline">#</a></h2>
+<h2>Scenario: Outfit optimization<a class="headerlink" href="#scenario-outfit-optimization" title="Permalink to this heading">#</a></h2>
 <p>In this example our goal is to select the best outfit for the occasion, in this case it is a job interview. The shared context represents the kind of job being interviewed for, in our example it’s either <code class="docutils literal notranslate"><span class="pre">corporate</span></code> or <code class="docutils literal notranslate"><span class="pre">trade</span></code>.</p>
 <ul class="simple">
 <li><p>Each slot represent the clothing type, here it will be <code class="docutils literal notranslate"><span class="pre">torso</span></code>, <code class="docutils literal notranslate"><span class="pre">legs</span></code> and <code class="docutils literal notranslate"><span class="pre">footwear</span></code></p></li>
@@ -594,7 +596,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p>We will compare using Slates with CB to see its effectiveness.</p>
 <p><img alt="slates_scenario.png" src="../_images/slates_scenario.png" /></p>
 <section id="part-one-setup">
-<h3>Part One - setup<a class="headerlink" href="#part-one-setup" title="Permalink to this headline">#</a></h3>
+<h3>Part One - setup<a class="headerlink" href="#part-one-setup" title="Permalink to this heading">#</a></h3>
 <p>Let’s start by importing the python libraries we’ll use in this example:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -621,7 +623,7 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </section>
 <section id="reward-function">
-<h3>Reward function<a class="headerlink" href="#reward-function" title="Permalink to this headline">#</a></h3>
+<h3>Reward function<a class="headerlink" href="#reward-function" title="Permalink to this heading">#</a></h3>
 <p>Our reward function receives as arguments the shared context (the occasion) and the selected actions for each slot (the types of clothing). In order to reflect real world problems, and make it more dificult, we inject normal noise in the reward value.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -646,7 +648,7 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </section>
 <section id="id1">
-<h3>Slates<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
+<h3>Slates<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
 <p>The following piece of code generate examples that will be used for inference and training:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -700,7 +702,7 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 <section id="slates-simulation">
-<h4>Slates simulation<a class="headerlink" href="#slates-simulation" title="Permalink to this headline">#</a></h4>
+<h4>Slates simulation<a class="headerlink" href="#slates-simulation" title="Permalink to this heading">#</a></h4>
 <p>Let’s create the <code class="docutils literal notranslate"><span class="pre">Workspace</span></code> instance we’ll use with this simulator</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -745,7 +747,7 @@ const thebe_selector_output = ".output, .cell_output"
 </section>
 </section>
 <section id="contextual-bandit">
-<h3>Contextual Bandit<a class="headerlink" href="#contextual-bandit" title="Permalink to this headline">#</a></h3>
+<h3>Contextual Bandit<a class="headerlink" href="#contextual-bandit" title="Permalink to this heading">#</a></h3>
 <p>Let’s try to solve the same problem by using CB with combinatorial actions:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -800,7 +802,7 @@ const thebe_selector_output = ".output, .cell_output"
 </section>
 </section>
 <section id="comparison">
-<h2>Comparison<a class="headerlink" href="#comparison" title="Permalink to this headline">#</a></h2>
+<h2>Comparison<a class="headerlink" href="#comparison" title="Permalink to this heading">#</a></h2>
 <p>Let’s plot the two runs so we can compare the result:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -814,13 +816,13 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/0a32503fc5ff83753571716df7a0408de2b9cc6c25f27ba17c216ac2a020b84b.png" src="../_images/0a32503fc5ff83753571716df7a0408de2b9cc6c25f27ba17c216ac2a020b84b.png" />
+<img alt="../_images/eaf8d5cff5a2b3a3fa6f36a5edb0c6b8c20808cdab327943bcfc7468e622e002.png" src="../_images/eaf8d5cff5a2b3a3fa6f36a5edb0c6b8c20808cdab327943bcfc7468e622e002.png" />
 </div>
 </div>
 <p>As we can see, Slates learns a better policy with lower regret.</p>
 </section>
 <section id="summary">
-<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">#</a></h2>
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h2>
 <p>In this tutorial, we learned what Slates is, how to use it with VW and how it compares to solving the same problem with Contextual Bandits.</p>
 <p>For further information, visit the following links:</p>
 <ul class="simple">
@@ -896,7 +898,7 @@ const thebe_selector_output = ".output, .cell_output"
   
   <div class="footer-item">
     <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.5.0.<br>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.3.0.<br>
 </p>
   </div>
   
