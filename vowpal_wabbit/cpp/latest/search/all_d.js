@@ -47,7 +47,7 @@ var searchData=
   ['learner_44',['LEARNER',['../classvw__dbg.html#a4d20d12825a9a71274d7d67b2fecc33c',1,'vw_dbg']]],
   ['learner_45',['learner',['../classVW_1_1LEARNER_1_1learner.html',1,'VW::LEARNER']]],
   ['learner_2eh_46',['learner.h',['../learner_8h.html',1,'']]],
-  ['learner_5fbuild_5fdiagnostic_47',['learner_build_diagnostic',['../namespaceVW_1_1LEARNER_1_1details.html#a796a6e4f0611dad53868dafe59890543',1,'VW::LEARNER::details']]],
+  ['learner_5fbuild_5fdiagnostic_47',['learner_build_diagnostic',['../namespaceVW_1_1LEARNER_1_1details.html#a5f6e44b0dcedcecbd242b45a3b46f7ee',1,'VW::LEARNER::details']]],
   ['learner_5fcleanup_5fexample_5ffunc_48',['learner_cleanup_example_func',['../namespaceVW.html#a01e5e5ff9ba5d0b3c97ecf8c26c247c5',1,'VW']]],
   ['learner_5fcount_49',['learner_count',['../classVW_1_1reductions_1_1offset__tree_1_1offset__tree.html#ab497e4e063cf111e889d707cef38d042',1,'VW::reductions::offset_tree::offset_tree::learner_count()'],['../classVW_1_1reductions_1_1cats_1_1cats__tree.html#a2157221b9991e3463e083c647302dc42',1,'VW::reductions::cats::cats_tree::learner_count()']]],
   ['learner_5fdefines_5fown_5fsave_5fload_50',['learner_defines_own_save_load',['../classVW_1_1LEARNER_1_1learner.html#a9934869428c0f34892b60613c9133c41',1,'VW::LEARNER::learner']]],
