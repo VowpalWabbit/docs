@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['object_5fpool_0',['object_pool',['../classVW_1_1object__pool.html',1,'VW']]],
-  ['object_5fpool_3c_20vw_3a_3aexample_20_3e_1',['object_pool&lt; VW::example &gt;',['../classVW_1_1object__pool.html',1,'VW']]],
+  ['object_5fpool_5fimpl_0',['object_pool_impl',['../classVW_1_1details_1_1object__pool__impl.html',1,'VW::details']]],
+  ['object_5fpool_5fimpl_3c_20vw_3a_3aexample_20_3e_1',['object_pool_impl&lt; VW::example &gt;',['../classVW_1_1details_1_1object__pool__impl.html',1,'VW::details']]],
   ['offset_5ftree_2',['offset_tree',['../classVW_1_1reductions_1_1offset__tree_1_1offset__tree.html',1,'VW::reductions::offset_tree']]],
   ['one_5fdiff_5fimpl_3',['one_diff_impl',['../classVW_1_1reductions_1_1automl_1_1one__diff__impl.html',1,'VW::reductions::automl']]],
   ['one_5fdiff_5finclusion_5fimpl_4',['one_diff_inclusion_impl',['../classVW_1_1reductions_1_1automl_1_1one__diff__inclusion__impl.html',1,'VW::reductions::automl']]],

@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['k_0',['K',['../structVW_1_1reductions_1_1eigen__memory__tree_1_1emt__lru.html#ae9b35600a7ade9e38e71c83f7ae51583',1,'VW::reductions::eigen_memory_tree::emt_lru']]],
-  ['k_1',['k',['../classVW_1_1details_1_1g__tilde.html#aaf6fb173aa4c7303eda6bbd806c8f88b',1,'VW::details::g_tilde']]],
+  ['k_0',['k',['../classVW_1_1details_1_1g__tilde.html#aaf6fb173aa4c7303eda6bbd806c8f88b',1,'VW::details::g_tilde']]],
+  ['k_1',['K',['../structVW_1_1reductions_1_1eigen__memory__tree_1_1emt__lru.html#ae9b35600a7ade9e38e71c83f7ae51583',1,'VW::reductions::eigen_memory_tree::emt_lru']]],
   ['kappa_2',['kappa',['../classVW_1_1details_1_1Duals.html#ac3fba21922e1a5344b187d45cc5ee66e',1,'VW::details::Duals']]],
   ['keep_3',['keep',['../classVW_1_1config_1_1option__builder.html#a1448d3986fc4017ba2bf2fc178094bf8',1,'VW::config::option_builder']]],
   ['keep_5fbest_5ftwo_4',['keep_best_two',['../classVW_1_1reductions_1_1automl_1_1config__oracle.html#a9d77e651b52339be6cdbcf73028284b5',1,'VW::reductions::automl::config_oracle']]],

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Vowpal Wabbit: /nix/store/00jsachjqp932cpb8r01h6293md80ymi-source/vowpalwabbit/core/include/vw/core/object_pool.h File Reference</title>
+<title>Vowpal Wabbit: /nix/store/153ayxzkn8rzql922gwnjamhzkkjpdar-source/vowpalwabbit/core/include/vw/core/object_pool.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -75,7 +75,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle"><div class="title">object_pool.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -88,21 +89,30 @@ $(function() {
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1default__cleanup.html">VW::default_cleanup&lt; T &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVW_1_1details_1_1null__mutex.html">VW::details::null_mutex</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1default__initializer.html">VW::default_initializer&lt; T &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1details_1_1default__initializer.html">VW::details::default_initializer&lt; T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1no__lock__object__pool.html">VW::no_lock_object_pool&lt; T, TInitializer, TCleanup &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1details_1_1object__pool__impl.html">VW::details::object_pool_impl&lt; T, TMutex, TInitializer &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1moved__object__pool.html">VW::moved_object_pool&lt; T &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1object__pool.html">VW::object_pool&lt; T, TInitializer, TCleanup &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceVW"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html">VW</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespaceVW_1_1details"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html">VW::details</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ab75dcc9dae3349c4fe250321f4a98695"><td class="memTemplParams" colspan="2">template&lt;typename T , typename TInitializer  = details::default_initializer&lt;T&gt;&gt; </td></tr>
+<tr class="memitem:ab75dcc9dae3349c4fe250321f4a98695"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ab75dcc9dae3349c4fe250321f4a98695">VW::no_lock_object_pool</a> = details::object_pool_impl&lt; T, details::null_mutex, TInitializer &gt;</td></tr>
+<tr class="separator:ab75dcc9dae3349c4fe250321f4a98695"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad10ca9ecc195b1d27549802a75b90c1f"><td class="memTemplParams" colspan="2">template&lt;typename T , typename TInitializer  = details::default_initializer&lt;T&gt;&gt; </td></tr>
+<tr class="memitem:ad10ca9ecc195b1d27549802a75b90c1f"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ad10ca9ecc195b1d27549802a75b90c1f">VW::object_pool</a> = details::object_pool_impl&lt; T, std::mutex, TInitializer &gt;</td></tr>
+<tr class="separator:ad10ca9ecc195b1d27549802a75b90c1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
