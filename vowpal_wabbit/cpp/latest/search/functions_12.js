@@ -1,7 +1,7 @@
 var searchData=
 [
   ['takedown_0',['takedown',['../namespaceSequenceSpanTask.html#a71802c71668faa68bc865f11f9f483f9',1,'SequenceSpanTask::takedown()'],['../namespaceGraphTask.html#adc3459a1c28beacb61d3d164b1b9f3c4',1,'GraphTask::takedown()']]],
-  ['term_5fis_5fempty_1',['term_is_empty',['../namespaceINTERACTIONS.html#abfbb7a785ccbc6a474e6f20de004e9eb',1,'INTERACTIONS']]],
+  ['term_5fis_5fempty_1',['term_is_empty',['../namespaceVW_1_1details.html#a7854dbb419017ce29d018e588d405116',1,'VW::details']]],
   ['test_5fadf_5fsequence_2',['test_adf_sequence',['../namespaceCB__ADF.html#ae759cf88adbb6c2b9ea23997310fbc22',1,'CB_ADF']]],
   ['test_5fcb_5fadf_5fsequence_3',['test_cb_adf_sequence',['../namespaceVW.html#a10d1a5dc076ffcb8d6f2ccbef81b9c42',1,'VW']]],
   ['test_5flabel_4',['test_label',['../namespaceMULTICLASS.html#aac504a36550bbac7ffa3b2181ad032d9',1,'MULTICLASS']]],

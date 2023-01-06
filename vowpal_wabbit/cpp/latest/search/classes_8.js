@@ -7,7 +7,7 @@ var searchData=
   ['input_5fparser_4',['input_parser',['../classVW_1_1details_1_1input__parser.html',1,'VW::details']]],
   ['int_5ffloat_5',['int_float',['../unionVW_1_1explore_1_1details_1_1int__float.html',1,'VW::explore::details']]],
   ['interaction_5fconfig_5fmanager_6',['interaction_config_manager',['../classVW_1_1reductions_1_1automl_1_1interaction__config__manager.html',1,'VW::reductions::automl']]],
-  ['interactions_5fgenerator_7',['interactions_generator',['../classINTERACTIONS_1_1interactions__generator.html',1,'INTERACTIONS']]],
+  ['interactions_5fgenerator_7',['interactions_generator',['../classVW_1_1interactions__generator.html',1,'VW']]],
   ['invert_5fhash_5finfo_8',['invert_hash_info',['../classVW_1_1details_1_1invert__hash__info.html',1,'VW::details']]],
   ['io_5fbuf_9',['io_buf',['../classVW_1_1io__buf.html',1,'VW']]],
   ['is_5fvector_10',['is_vector',['../classVW_1_1config_1_1details_1_1is__vector.html',1,'VW::config::details']]],

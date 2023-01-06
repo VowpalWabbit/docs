@@ -52,7 +52,7 @@ var searchData=
   ['stdout_5fadapter_49',['stdout_adapter',['../classVW_1_1workspace.html#a601bad8ac8905c24e9205355b248744e',1,'VW::workspace']]],
   ['stdout_5flog_5fsink_50',['stdout_log_sink',['../classVW_1_1io_1_1details_1_1logger__impl.html#a24ae1602dd6062766d2323770d448b87',1,'VW::io::details::logger_impl']]],
   ['step_51',['step',['../classGD_1_1multipredict__info.html#add0a35e5ea303b2e490b8c3f4530b502',1,'GD::multipredict_info']]],
-  ['store_5fin_5freduction_5ffeatures_52',['store_in_reduction_features',['../classINTERACTIONS_1_1interactions__generator.html#a7133f2ed324a97bf35b56f45aadf95c5',1,'INTERACTIONS::interactions_generator']]],
+  ['store_5fin_5freduction_5ffeatures_52',['store_in_reduction_features',['../classVW_1_1interactions__generator.html#a9157ce3935bb5b16690787e13963699e',1,'VW::interactions_generator']]],
   ['str_5fvalue_53',['str_value',['../classVW_1_1audit__strings.html#af1c09026a5b37b513d7bc0a57bbd0e87',1,'VW::audit_strings']]],
   ['strict_5fparse_54',['strict_parse',['../classVW_1_1parser.html#aee245ee2e5f7cf104e2121cfb3ec712b',1,'VW::parser']]],
   ['stride_5fshift_55',['stride_shift',['../classVW_1_1details_1_1invert__hash__info.html#a6f4b50b8b392af5ea24d4a913b27c603',1,'VW::details::invert_hash_info']]],

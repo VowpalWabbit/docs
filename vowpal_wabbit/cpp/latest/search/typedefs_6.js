@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['generate_5ffunc_5ft_0',['generate_func_t',['../namespaceINTERACTIONS.html#a02dde3dd79338d4d1b5325d67d2daed9',1,'INTERACTIONS']]]
+  ['generate_5ffunc_5ft_0',['generate_func_t',['../namespaceVW.html#a44cf94755b617bfebd2b30725d42f8e5',1,'VW']]]
 ];

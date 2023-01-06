@@ -114,7 +114,7 @@ var searchData=
   ['multipredict_5ff_111',['multipredict_f',['../classVW_1_1LEARNER_1_1details_1_1learn__data.html#a3648233df4af98fe57f26917d6088b46',1,'VW::LEARNER::details::learn_data']]],
   ['multipredict_5finfo_112',['multipredict_info',['../classGD_1_1multipredict__info.html',1,'GD']]],
   ['murmurhash_5fx86_5f32_113',['murmurhash_x86_32',['../namespaceVW_1_1details.html#a3d5466df7ec25e0f4275725a11766377',1,'VW::details']]],
-  ['must_5fbe_5fleft_5fsorted_114',['must_be_left_sorted',['../namespaceINTERACTIONS.html#a82537842aef36929fa2e8534514cebc1',1,'INTERACTIONS']]],
+  ['must_5fbe_5fleft_5fsorted_114',['must_be_left_sorted',['../namespaceVW_1_1details.html#a9a43de53762f3fa345df9df108a22239',1,'VW::details']]],
   ['mwt_2eh_115',['mwt.h',['../mwt_8h.html',1,'']]],
   ['mwt_5fsetup_116',['mwt_setup',['../namespaceVW_1_1reductions.html#a9b45b46cef8b859542489605b0dcf267',1,'VW::reductions']]]
 ];
