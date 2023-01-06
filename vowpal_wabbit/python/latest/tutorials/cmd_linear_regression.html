@@ -534,6 +534,11 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#auditing">
+   Auditing
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#more-to-explore">
    More to explore
   </a>
@@ -810,20 +815,18 @@ total feature number = 15
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>0.000000
 1.000000 second_house
 0.000000 third_house
-&lt;/div&gt;
-
-Obviously the results are different this time, because in the first prediction example, we learned as we went, and made only one pass over the data. For the second example, we loaded an over-fitted (25 pass) model and used our dataset `house_dataset` with `-t` (testing only mode).
-
-&gt;**Note:** Always use a different dataset for testing vs training for real prediction settings.
-
-## Auditing
-
-Vowpal Wabbit has a built in `--audit` option that is helpful for debugging a machine learning application.
-
-Use `--audit` to output helpful information about predictions and features:
-
-```sh
-vw house_dataset --audit --quiet
+</pre></div>
+</div>
+<p>Obviously the results are different this time, because in the first prediction example, we learned as we went, and made only one pass over the data. For the second example, we loaded an over-fitted (25 pass) model and used our dataset <code class="docutils literal notranslate"><span class="pre">house_dataset</span></code> with <code class="docutils literal notranslate"><span class="pre">-t</span></code> (testing only mode).</p>
+<blockquote>
+<div><p><strong>Note:</strong> Always use a different dataset for testing vs training for real prediction settings.</p>
+</div></blockquote>
+</section>
+<section id="auditing">
+<h2>Auditing<a class="headerlink" href="#auditing" title="Permalink to this heading">#</a></h2>
+<p>Vowpal Wabbit has a built in <code class="docutils literal notranslate"><span class="pre">--audit</span></code> option that is helpful for debugging a machine learning application.</p>
+<p>Use <code class="docutils literal notranslate"><span class="pre">--audit</span></code> to output helpful information about predictions and features:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>vw<span class="w"> </span>house_dataset<span class="w"> </span>--audit<span class="w"> </span>--quiet
 </pre></div>
 </div>
 <p><strong>Output:</strong></p>
