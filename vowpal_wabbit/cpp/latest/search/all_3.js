@@ -27,7 +27,7 @@ var searchData=
   ['bfgs_24',['bfgs',['../classVW_1_1workspace.html#aead7aace93337cea621fd55cec162a44',1,'VW::workspace']]],
   ['bfgs_2eh_25',['bfgs.h',['../bfgs_8h.html',1,'']]],
   ['bfgs_5fsetup_26',['bfgs_setup',['../namespaceVW_1_1reductions.html#aa2c7dd518ae52d34848598eee6317cf4',1,'VW::reductions']]],
-  ['bias_27',['BIAS',['../namespaceexploration.html#af5f381e6405bb2a903cb4cf53b52a21f',1,'exploration']]],
+  ['bias_27',['BIAS',['../namespaceVW_1_1explore_1_1details.html#abd19b2167796d1e25af5e7ac51963424',1,'VW::explore::details']]],
   ['bin_5fread_28',['bin_read',['../namespaceVW_1_1details.html#ace561bd055602b3c1a0e7033007a99bd',1,'VW::details']]],
   ['bin_5fread_5ffixed_29',['bin_read_fixed',['../classVW_1_1io__buf.html#ab60cc117966a8c2ea88f805f098c297a',1,'VW::io_buf']]],
   ['bin_5ftext_5fread_5fwrite_30',['bin_text_read_write',['../namespaceVW_1_1details.html#ad63da6766ad15a54119da8d4de286d43',1,'VW::details']]],

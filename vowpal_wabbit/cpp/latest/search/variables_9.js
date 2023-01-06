@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['i_0',['i',['../unionexploration_1_1int__float.html#ad2bc6c4c956bde873b30883f1e1f73d3',1,'exploration::int_float']]],
+  ['i_0',['i',['../unionVW_1_1explore_1_1details_1_1int__float.html#acfaf355aae8941af428c005cfc6a53c6',1,'VW::explore::details::int_float']]],
   ['id_1',['id',['../classVW_1_1workspace.html#a1a5991719de1f9ac2db1d7f77a46e531',1,'VW::workspace::id()'],['../classVW_1_1reductions_1_1offset__tree_1_1tree__node.html#a1d865acba63cb90467b31604862fcc86',1,'VW::reductions::offset_tree::tree_node::id()'],['../classVW_1_1reductions_1_1cats_1_1tree__node.html#a144b411b84491fef71c98112ecc70bb2',1,'VW::reductions::cats::tree_node::id()']]],
   ['ignore_2',['ignore',['../classVW_1_1workspace.html#aba2139155728faa7aa46b66f3365d1f7',1,'VW::workspace']]],
   ['ignore_5ffeatures_5fdsjson_3',['ignore_features_dsjson',['../classVW_1_1workspace.html#af2bf617f88d6bd4081d2a2dbdbfaa12e',1,'VW::workspace']]],

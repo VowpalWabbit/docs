@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['f_0',['f',['../unionexploration_1_1int__float.html#aae7ba8412357e474898bc44bc43ab394',1,'exploration::int_float']]],
+  ['f_0',['f',['../unionVW_1_1explore_1_1details_1_1int__float.html#a0a4faed5b4def532b0060be14cd99ea9',1,'VW::explore::details::int_float']]],
   ['feature_5flist_1',['feature_list',['../classVW_1_1parsers_1_1csv_1_1csv__parser.html#a9de74a39d75a5dae526a94d903a2d870',1,'VW::parsers::csv::csv_parser']]],
   ['feature_5fmask_2',['feature_mask',['../classVW_1_1workspace.html#a2b69dfb1a44e46fbaa0ba40ab05e0ad8',1,'VW::workspace']]],
   ['feature_5fspace_3',['feature_space',['../classVW_1_1example__predict.html#aff83d481714c0efece6cdec03f4cf6bb',1,'VW::example_predict']]],

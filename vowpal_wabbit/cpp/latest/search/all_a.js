@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['i_0',['i',['../unionexploration_1_1int__float.html#ad2bc6c4c956bde873b30883f1e1f73d3',1,'exploration::int_float']]],
+  ['i_0',['i',['../unionVW_1_1explore_1_1details_1_1int__float.html#acfaf355aae8941af428c005cfc6a53c6',1,'VW::explore::details::int_float']]],
   ['i_5ftrace_1',['i_trace',['../namespaceVW_1_1experimental.html#a7a4a5996e6c202e5414c5ce770231352',1,'VW::experimental']]],
   ['id_2',['id',['../classVW_1_1reductions_1_1offset__tree_1_1tree__node.html#a1d865acba63cb90467b31604862fcc86',1,'VW::reductions::offset_tree::tree_node::id()'],['../classVW_1_1reductions_1_1cats_1_1tree__node.html#a144b411b84491fef71c98112ecc70bb2',1,'VW::reductions::cats::tree_node::id()'],['../classVW_1_1workspace.html#a1a5991719de1f9ac2db1d7f77a46e531',1,'VW::workspace::id()']]],
   ['ignore_3',['ignore',['../classVW_1_1workspace.html#aba2139155728faa7aa46b66f3365d1f7',1,'VW::workspace']]],
@@ -55,7 +55,7 @@ var searchData=
   ['insert_5fconfig_52',['insert_config',['../classVW_1_1reductions_1_1automl_1_1config__oracle.html#a2f830c90893b8d5290f29b759b557011',1,'VW::reductions::automl::config_oracle']]],
   ['insert_5fstarting_5fconfiguration_53',['insert_starting_configuration',['../classVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a444183478cb6acffcbb597d241e5c089',1,'VW::reductions::automl::interaction_config_manager::insert_starting_configuration()'],['../classVW_1_1reductions_1_1automl_1_1config__oracle.html#abfa2b4af5ec50fe1a0eb6fc3ec35c032',1,'VW::reductions::automl::config_oracle::insert_starting_configuration()']]],
   ['instantiate_5flearner_54',['instantiate_learner',['../namespaceVW_1_1details.html#a547e684aaa69d5da7d7d76a5e091c78d',1,'VW::details']]],
-  ['int_5ffloat_55',['int_float',['../unionexploration_1_1int__float.html',1,'exploration']]],
+  ['int_5ffloat_55',['int_float',['../unionVW_1_1explore_1_1details_1_1int__float.html',1,'VW::explore::details']]],
   ['int_5fmetric_56',['int_metric',['../classVW_1_1metric__sink__visitor.html#a276be1447438c81daeaa8c794829becd',1,'VW::metric_sink_visitor']]],
   ['int_5fof_5fstring_57',['int_of_string',['../namespaceVW_1_1details.html#afacaed9af79fc6b314f8592179c0bc53',1,'VW::details::int_of_string(VW::string_view s, VW::io::logger &amp;logger)'],['../namespaceVW_1_1details.html#a053abb4a09c9aae05b6ececc18401c03',1,'VW::details::int_of_string(VW::string_view s, char *&amp;end, VW::io::logger &amp;logger)']]],
   ['interact_2eh_58',['interact.h',['../interact_8h.html',1,'']]],

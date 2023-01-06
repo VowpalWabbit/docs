@@ -11,7 +11,8 @@ var searchData=
   ['example_2eh_8',['example.h',['../example_8h.html',1,'']]],
   ['example_5fpredict_2eh_9',['example_predict.h',['../example__predict_8h.html',1,'']]],
   ['explore_2eh_10',['explore.h',['../explore_8h.html',1,'']]],
-  ['explore_5feval_2eh_11',['explore_eval.h',['../explore__eval_8h.html',1,'']]],
-  ['explore_5finternal_2eh_12',['explore_internal.h',['../explore__internal_8h.html',1,'']]],
-  ['expreplay_2eh_13',['expreplay.h',['../expreplay_8h.html',1,'']]]
+  ['explore_5ferror_5fcodes_2eh_11',['explore_error_codes.h',['../explore__error__codes_8h.html',1,'']]],
+  ['explore_5feval_2eh_12',['explore_eval.h',['../explore__eval_8h.html',1,'']]],
+  ['explore_5finternal_2eh_13',['explore_internal.h',['../explore__internal_8h.html',1,'']]],
+  ['expreplay_2eh_14',['expreplay.h',['../expreplay_8h.html',1,'']]]
 ];

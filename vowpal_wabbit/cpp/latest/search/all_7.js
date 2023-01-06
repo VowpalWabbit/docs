@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['f_0',['f',['../unionexploration_1_1int__float.html#aae7ba8412357e474898bc44bc43ab394',1,'exploration::int_float']]],
+  ['f_0',['f',['../unionVW_1_1explore_1_1details_1_1int__float.html#a0a4faed5b4def532b0060be14cd99ea9',1,'VW::explore::details::int_float']]],
   ['factorial_1',['factorial',['../namespaceVW_1_1math.html#a36fabad29dd6a60b30820b0dd1c119da',1,'VW::math']]],
   ['fail_5fif_5fenabled_2',['fail_if_enabled',['../namespaceVW_1_1reductions_1_1util.html#ad70e036a2153588164dbf3cc6f651e5c',1,'VW::reductions::util']]],
   ['fast_5fpow10_3',['fast_pow10',['../namespaceVW.html#a1c2be07eaaeaffca808d8d4106437a00',1,'VW']]],

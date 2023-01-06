@@ -10,7 +10,7 @@ var searchData=
   ['begin_5fit_7',['begin_it',['../classVW_1_1details_1_1feature__gen__data.html#a0ba238ec164c138f7a5e5c15036b058e',1,'VW::details::feature_gen_data']]],
   ['beta_8',['beta',['../classVW_1_1details_1_1Duals.html#aa4e421223f438998809c5f33c6281e47',1,'VW::details::Duals']]],
   ['bfgs_9',['bfgs',['../classVW_1_1workspace.html#aead7aace93337cea621fd55cec162a44',1,'VW::workspace']]],
-  ['bias_10',['BIAS',['../namespaceexploration.html#af5f381e6405bb2a903cb4cf53b52a21f',1,'exploration']]],
+  ['bias_10',['BIAS',['../namespaceVW_1_1explore_1_1details.html#abd19b2167796d1e25af5e7ac51963424',1,'VW::explore::details']]],
   ['binary_11',['BINARY',['../classvw__dbg.html#a73dbe83fd8d2f44045784ec4dfbd18f1',1,'vw_dbg']]],
   ['bound_5fsock_12',['bound_sock',['../classVW_1_1parser.html#a4645a44b214e26f6a9bc8c3b48f4953d',1,'VW::parser']]],
   ['bounder_13',['bounder',['../structVW_1_1reductions_1_1eigen__memory__tree_1_1emt__tree.html#a9dcf7e35e738ca7ca69661df22dbc403',1,'VW::reductions::eigen_memory_tree::emt_tree']]],
