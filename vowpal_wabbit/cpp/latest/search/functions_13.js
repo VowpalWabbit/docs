@@ -2,7 +2,7 @@ var searchData=
 [
   ['unflatten_5fnamespace_5fextents_0',['unflatten_namespace_extents',['../namespaceVW_1_1details.html#a0996e537d37e115f5d75b27308866325',1,'VW::details']]],
   ['unflushed_5fbytes_5fcount_1',['unflushed_bytes_count',['../classVW_1_1io__buf.html#a17156d86b37d067157e7f30a325ac4e8',1,'VW::io_buf']]],
-  ['uniform_5fhash_2',['uniform_hash',['../namespaceVW.html#a0bf76acc68265292bdb5eba8687a6584',1,'VW::uniform_hash()'],['../hash_8h.html#aebfd76382e62b02e8798e1d74aaffb9d',1,'uniform_hash():&#160;hash.h']]],
+  ['uniform_5fhash_2',['uniform_hash',['../namespaceVW.html#afdb8435c51791bc920d5b3efa033f97b',1,'VW::uniform_hash()'],['../hash_8h.html#aebfd76382e62b02e8798e1d74aaffb9d',1,'uniform_hash():&#160;hash.h']]],
   ['uniform_5frandom_5fmerand48_3',['uniform_random_merand48',['../namespaceexploration.html#a181ae01106bcdd79234a1bf66d88d645',1,'exploration']]],
   ['uniform_5frandom_5fmerand48_5fadvance_4',['uniform_random_merand48_advance',['../namespaceexploration.html#a5d99f2849ca698712b1a2a6e451019c5',1,'exploration']]],
   ['unique_5ffeatures_5',['unique_features',['../namespaceVW.html#ab1b11a8a6a4ee5259e4b4d95ffbac2d6',1,'VW']]],

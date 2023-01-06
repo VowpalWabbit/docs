@@ -300,6 +300,8 @@ Typedefs</h2></td></tr>
 <tr class="separator:a21c59125b4b969b15b68105ba6dca34e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18d2933a60f354fb40cecc5f56265a22"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a18d2933a60f354fb40cecc5f56265a22">options_deleter_type</a> = void(*)(<a class="el" href="classVW_1_1config_1_1options__i.html">VW::config::options_i</a> *)</td></tr>
 <tr class="separator:a18d2933a60f354fb40cecc5f56265a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c7cf244c45db37ce65c6bc608bfd8be"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a2c7cf244c45db37ce65c6bc608bfd8be">hash_func_t</a> = uint32_t(*)(const char *, size_t, uint32_t)</td></tr>
+<tr class="separator:a2c7cf244c45db37ce65c6bc608bfd8be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5ddc974ddc109cae8578a6dd6463038"><td class="memTemplParams" colspan="2">template&lt;typename DataT , typename ExampleT &gt; </td></tr>
 <tr class="memitem:ab5ddc974ddc109cae8578a6dd6463038"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ab5ddc974ddc109cae8578a6dd6463038">learner_update_stats_func</a> = void(const <a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, <a class="el" href="classVW_1_1shared__data.html">shared_data</a> &amp;sd, const DataT &amp;, const ExampleT &amp;, <a class="el" href="classVW_1_1io_1_1logger.html">VW::io::logger</a> &amp;logger)</td></tr>
 <tr class="separator:ab5ddc974ddc109cae8578a6dd6463038"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -422,8 +424,8 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a0bf76acc68265292bdb5eba8687a6584"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a0bf76acc68265292bdb5eba8687a6584">uniform_hash</a> (const void *key, size_t len, uint64_t seed)</td></tr>
-<tr class="separator:a0bf76acc68265292bdb5eba8687a6584"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdb8435c51791bc920d5b3efa033f97b"><td class="memItemLeft" align="right" valign="top">VW_STD14_CONSTEXPR uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#afdb8435c51791bc920d5b3efa033f97b">uniform_hash</a> (const char *data, size_t len, uint32_t seed)</td></tr>
+<tr class="separator:afdb8435c51791bc920d5b3efa033f97b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac785d16a63879ff6c549c0dc07434cee"><td class="memTemplParams" colspan="2">template&lt;typename ContainerT &gt; </td></tr>
 <tr class="memitem:ac785d16a63879ff6c549c0dc07434cee"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ac785d16a63879ff6c549c0dc07434cee">tokenize</a> (char delim, <a class="el" href="namespaceVW.html#a909e5c86e4a38cb08ec00a0831dc105d">VW::string_view</a> s, ContainerT &amp;ret, bool allow_empty=false)</td></tr>
 <tr class="separator:ac785d16a63879ff6c549c0dc07434cee"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -527,6 +529,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a39f69c6c1066cd7e93f19af08002b1cb"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a39f69c6c1066cd7e93f19af08002b1cb"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classVW_1_1details_1_1swap__guard__impl__rvalue.html">details::swap_guard_impl_rvalue</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a39f69c6c1066cd7e93f19af08002b1cb">stash_guard</a> (T &amp;original_location) noexcept</td></tr>
 <tr class="separator:a39f69c6c1066cd7e93f19af08002b1cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a482d3883bf8d3151b1968cf3617b8765"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceVW.html#a2c7cf244c45db37ce65c6bc608bfd8be">hash_func_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a482d3883bf8d3151b1968cf3617b8765">get_hasher</a> (const std::string &amp;s)</td></tr>
+<tr class="separator:a482d3883bf8d3151b1968cf3617b8765"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71870200689a779f9792b179e01f4ab0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVW_1_1label__parser.html">label_parser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a71870200689a779f9792b179e01f4ab0">get_label_parser</a> (<a class="el" href="namespaceVW.html#a41c81f994e2400fabf138c9f2b3d78e5">VW::label_type_t</a> label_type)</td></tr>
 <tr class="separator:a71870200689a779f9792b179e01f4ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f47e9a8d623db6ab397699f51e420a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceVW.html#a909e5c86e4a38cb08ec00a0831dc105d">string_view</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a5f47e9a8d623db6ab397699f51e420a7">to_string</a> (<a class="el" href="namespaceVW.html#a41c81f994e2400fabf138c9f2b3d78e5">VW::label_type_t</a>)</td></tr>
@@ -566,7 +570,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ad02baddcc6a12d9f50d37c703a1812f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ad02baddcc6a12d9f50d37c703a1812f6">read_lines</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> *all, <a class="el" href="namespaceVW.html#a909e5c86e4a38cb08ec00a0831dc105d">VW::string_view</a> lines, <a class="el" href="namespaceVW.html#a1dd7b95816f635bc6a5906d2b566c856">VW::multi_ex</a> &amp;examples)</td></tr>
 <tr class="separator:ad02baddcc6a12d9f50d37c703a1812f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adec84b04d0b3569d4c7bdd87ece00c43"><td class="memTemplParams" colspan="2">template&lt;bool audit&gt; </td></tr>
-<tr class="memitem:adec84b04d0b3569d4c7bdd87ece00c43"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW.html#adec84b04d0b3569d4c7bdd87ece00c43">read_line_json_s</a> (const <a class="el" href="classVW_1_1label__parser.html">VW::label_parser</a> &amp;lbl_parser, <a class="el" href="hashstring_8h.html#a77dae8dac3c33439a15f7270f64cff8c">hash_func_t</a> hash_func, uint64_t hash_seed, uint64_t parse_mask, bool <a class="el" href="namespaceVW.html#a678c9814055a1d31aca35531904aa0de">chain_hash</a>, <a class="el" href="classVW_1_1label__parser__reuse__mem.html">VW::label_parser_reuse_mem</a> *reuse_mem, const <a class="el" href="classVW_1_1named__labels.html">VW::named_labels</a> *ldict, <a class="el" href="namespaceVW.html#a1dd7b95816f635bc6a5906d2b566c856">VW::multi_ex</a> &amp;examples, char *line, size_t length, <a class="el" href="namespaceVW.html#a28e15f52840539d6b0c56aa196e11278">example_factory_t</a> example_factory, void *ex_factory_context, <a class="el" href="classVW_1_1io_1_1logger.html">VW::io::logger</a> &amp;logger, std::unordered_map&lt; std::string, std::set&lt; std::string &gt; &gt; *ignore_features, std::unordered_map&lt; uint64_t, <a class="el" href="classVW_1_1example.html">VW::example</a> * &gt; *dedup_examples=nullptr)</td></tr>
+<tr class="memitem:adec84b04d0b3569d4c7bdd87ece00c43"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW.html#adec84b04d0b3569d4c7bdd87ece00c43">read_line_json_s</a> (const <a class="el" href="classVW_1_1label__parser.html">VW::label_parser</a> &amp;lbl_parser, <a class="el" href="namespaceVW.html#a2c7cf244c45db37ce65c6bc608bfd8be">hash_func_t</a> hash_func, uint64_t hash_seed, uint64_t parse_mask, bool <a class="el" href="namespaceVW.html#a678c9814055a1d31aca35531904aa0de">chain_hash</a>, <a class="el" href="classVW_1_1label__parser__reuse__mem.html">VW::label_parser_reuse_mem</a> *reuse_mem, const <a class="el" href="classVW_1_1named__labels.html">VW::named_labels</a> *ldict, <a class="el" href="namespaceVW.html#a1dd7b95816f635bc6a5906d2b566c856">VW::multi_ex</a> &amp;examples, char *line, size_t length, <a class="el" href="namespaceVW.html#a28e15f52840539d6b0c56aa196e11278">example_factory_t</a> example_factory, void *ex_factory_context, <a class="el" href="classVW_1_1io_1_1logger.html">VW::io::logger</a> &amp;logger, std::unordered_map&lt; std::string, std::set&lt; std::string &gt; &gt; *ignore_features, std::unordered_map&lt; uint64_t, <a class="el" href="classVW_1_1example.html">VW::example</a> * &gt; *dedup_examples=nullptr)</td></tr>
 <tr class="separator:adec84b04d0b3569d4c7bdd87ece00c43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22ffb723e5feb4904bfb198a7a4668e8"><td class="memTemplParams" colspan="2">template&lt;bool audit&gt; </td></tr>
 <tr class="memitem:a22ffb723e5feb4904bfb198a7a4668e8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a22ffb723e5feb4904bfb198a7a4668e8">read_line_json_s</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, <a class="el" href="namespaceVW.html#a1dd7b95816f635bc6a5906d2b566c856">VW::multi_ex</a> &amp;examples, char *line, size_t length, <a class="el" href="namespaceVW.html#a28e15f52840539d6b0c56aa196e11278">example_factory_t</a> example_factory, void *ex_factory_context, std::unordered_map&lt; uint64_t, <a class="el" href="classVW_1_1example.html">VW::example</a> * &gt; *dedup_examples=nullptr)</td></tr>
@@ -808,7 +812,7 @@ Functions</h2></td></tr>
 <tr class="separator:adc7e8422f06716ae0ebc1ec309cd19f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a678c9814055a1d31aca35531904aa0de"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a678c9814055a1d31aca35531904aa0de">chain_hash</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, const std::string &amp;name, const std::string &amp;value, uint64_t u)</td></tr>
 <tr class="separator:a678c9814055a1d31aca35531904aa0de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88885e568d9a4f4eb0aa41e6208e39bc"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a88885e568d9a4f4eb0aa41e6208e39bc">chain_hash_static</a> (const std::string &amp;name, const std::string &amp;value, uint64_t u, <a class="el" href="hashstring_8h.html#a77dae8dac3c33439a15f7270f64cff8c">hash_func_t</a> hash_func, uint64_t parse_mask)</td></tr>
+<tr class="memitem:a88885e568d9a4f4eb0aa41e6208e39bc"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a88885e568d9a4f4eb0aa41e6208e39bc">chain_hash_static</a> (const std::string &amp;name, const std::string &amp;value, uint64_t u, <a class="el" href="namespaceVW.html#a2c7cf244c45db37ce65c6bc608bfd8be">hash_func_t</a> hash_func, uint64_t parse_mask)</td></tr>
 <tr class="separator:a88885e568d9a4f4eb0aa41e6208e39bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2c22f7b3c1d7429f6cc2dfe4cbc6278"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ad2c22f7b3c1d7429f6cc2dfe4cbc6278">get_weight</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, uint32_t index, uint32_t offset)</td></tr>
 <tr class="separator:ad2c22f7b3c1d7429f6cc2dfe4cbc6278"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -949,6 +953,20 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="namespaceVW.html#a9d1f5f2c33d7157f79526004c20421a8">VW::feature_value</a> = typedef float</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2c7cf244c45db37ce65c6bc608bfd8be" name="a2c7cf244c45db37ce65c6bc608bfd8be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c7cf244c45db37ce65c6bc608bfd8be">&#9670;&#160;</a></span>hash_func_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespaceVW.html#a2c7cf244c45db37ce65c6bc608bfd8be">VW::hash_func_t</a> = typedef uint32_t (*)(const char*, size_t, uint32_t)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1303,34 +1321,34 @@ template&lt;typename T &gt; </div>
 <tr><td class="fieldname"><a id="a41c81f994e2400fabf138c9f2b3d78e5af9ebb3617356c80df5627bfd3f4dcc03" name="a41c81f994e2400fabf138c9f2b3d78e5af9ebb3617356c80df5627bfd3f4dcc03"></a>SLATES&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a41c81f994e2400fabf138c9f2b3d78e5af1f6870b41a34eadc38ec63399b8ddd4" name="a41c81f994e2400fabf138c9f2b3d78e5af1f6870b41a34eadc38ec63399b8ddd4"></a>NOLABEL&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a41c81f994e2400fabf138c9f2b3d78e5ab1fa9dd3af034b3ef4291579aa673c07" name="a41c81f994e2400fabf138c9f2b3d78e5ab1fa9dd3af034b3ef4291579aa673c07"></a>CONTINUOUS&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a41c81f994e2400fabf138c9f2b3d78e5a8dbdda48fb8748d6746f1965824e966a" name="a41c81f994e2400fabf138c9f2b3d78e5a8dbdda48fb8748d6746f1965824e966a"></a>simple&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000021">Deprecated:</a></b></dt><dd>"VW::label_type_t::simple has been renamed to VW::label_type_t::SIMPLE" <br  />
+<tr><td class="fieldname"><a id="a41c81f994e2400fabf138c9f2b3d78e5a8dbdda48fb8748d6746f1965824e966a" name="a41c81f994e2400fabf138c9f2b3d78e5a8dbdda48fb8748d6746f1965824e966a"></a>simple&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000022">Deprecated:</a></b></dt><dd>"VW::label_type_t::simple has been renamed to VW::label_type_t::SIMPLE" <br  />
  </dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="a41c81f994e2400fabf138c9f2b3d78e5ad0d7fdb6977b26929fb68c6083c0b439" name="a41c81f994e2400fabf138c9f2b3d78e5ad0d7fdb6977b26929fb68c6083c0b439"></a>cb&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000022">Deprecated:</a></b></dt><dd>"VW::label_type_t::cb has been renamed to VW::label_type_t::CB" <br  />
+<tr><td class="fieldname"><a id="a41c81f994e2400fabf138c9f2b3d78e5ad0d7fdb6977b26929fb68c6083c0b439" name="a41c81f994e2400fabf138c9f2b3d78e5ad0d7fdb6977b26929fb68c6083c0b439"></a>cb&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000023">Deprecated:</a></b></dt><dd>"VW::label_type_t::cb has been renamed to VW::label_type_t::CB" <br  />
  </dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="a41c81f994e2400fabf138c9f2b3d78e5a5d5a4935266f886cefb66e44f237fd33" name="a41c81f994e2400fabf138c9f2b3d78e5a5d5a4935266f886cefb66e44f237fd33"></a>cb_eval&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000023">Deprecated:</a></b></dt><dd>"VW::label_type_t::cb_eval has been renamed to VW::label_type_t::CB_EVAL" <br  />
+<tr><td class="fieldname"><a id="a41c81f994e2400fabf138c9f2b3d78e5a5d5a4935266f886cefb66e44f237fd33" name="a41c81f994e2400fabf138c9f2b3d78e5a5d5a4935266f886cefb66e44f237fd33"></a>cb_eval&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000024">Deprecated:</a></b></dt><dd>"VW::label_type_t::cb_eval has been renamed to VW::label_type_t::CB_EVAL" <br  />
  </dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="a41c81f994e2400fabf138c9f2b3d78e5a95cc64dd2825f9df13ec4ad683ecf339" name="a41c81f994e2400fabf138c9f2b3d78e5a95cc64dd2825f9df13ec4ad683ecf339"></a>cs&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000024">Deprecated:</a></b></dt><dd>"VW::label_type_t::cs has been renamed to VW::label_type_t::CS" <br  />
+<tr><td class="fieldname"><a id="a41c81f994e2400fabf138c9f2b3d78e5a95cc64dd2825f9df13ec4ad683ecf339" name="a41c81f994e2400fabf138c9f2b3d78e5a95cc64dd2825f9df13ec4ad683ecf339"></a>cs&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000025">Deprecated:</a></b></dt><dd>"VW::label_type_t::cs has been renamed to VW::label_type_t::CS" <br  />
  </dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="a41c81f994e2400fabf138c9f2b3d78e5a2ac9461055b0530d74ce809866aacc63" name="a41c81f994e2400fabf138c9f2b3d78e5a2ac9461055b0530d74ce809866aacc63"></a>multilabel&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000025">Deprecated:</a></b></dt><dd>"VW::label_type_t::multilabel has been renamed to VW::label_type_t::MULTILABEL" <br  />
+<tr><td class="fieldname"><a id="a41c81f994e2400fabf138c9f2b3d78e5a2ac9461055b0530d74ce809866aacc63" name="a41c81f994e2400fabf138c9f2b3d78e5a2ac9461055b0530d74ce809866aacc63"></a>multilabel&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000026">Deprecated:</a></b></dt><dd>"VW::label_type_t::multilabel has been renamed to VW::label_type_t::MULTILABEL" <br  />
  </dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="a41c81f994e2400fabf138c9f2b3d78e5aa0b3a0bee9f844f0c2999fe2ea393487" name="a41c81f994e2400fabf138c9f2b3d78e5aa0b3a0bee9f844f0c2999fe2ea393487"></a>multiclass&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000026">Deprecated:</a></b></dt><dd>"VW::label_type_t::multiclass has been renamed to VW::label_type_t::MULTICLASS" <br  />
+<tr><td class="fieldname"><a id="a41c81f994e2400fabf138c9f2b3d78e5aa0b3a0bee9f844f0c2999fe2ea393487" name="a41c81f994e2400fabf138c9f2b3d78e5aa0b3a0bee9f844f0c2999fe2ea393487"></a>multiclass&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000027">Deprecated:</a></b></dt><dd>"VW::label_type_t::multiclass has been renamed to VW::label_type_t::MULTICLASS" <br  />
  </dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="a41c81f994e2400fabf138c9f2b3d78e5ab56be107e02f16a1557fe6b820c07fff" name="a41c81f994e2400fabf138c9f2b3d78e5ab56be107e02f16a1557fe6b820c07fff"></a>ccb&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000027">Deprecated:</a></b></dt><dd>"VW::label_type_t::ccb has been renamed to VW::label_type_t::CCB" <br  />
+<tr><td class="fieldname"><a id="a41c81f994e2400fabf138c9f2b3d78e5ab56be107e02f16a1557fe6b820c07fff" name="a41c81f994e2400fabf138c9f2b3d78e5ab56be107e02f16a1557fe6b820c07fff"></a>ccb&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000028">Deprecated:</a></b></dt><dd>"VW::label_type_t::ccb has been renamed to VW::label_type_t::CCB" <br  />
  </dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="a41c81f994e2400fabf138c9f2b3d78e5aba298a474e572b7bb22ea6b59e127028" name="a41c81f994e2400fabf138c9f2b3d78e5aba298a474e572b7bb22ea6b59e127028"></a>slates&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000028">Deprecated:</a></b></dt><dd>"VW::label_type_t::slates has been renamed to VW::label_type_t::SLATES" <br  />
+<tr><td class="fieldname"><a id="a41c81f994e2400fabf138c9f2b3d78e5aba298a474e572b7bb22ea6b59e127028" name="a41c81f994e2400fabf138c9f2b3d78e5aba298a474e572b7bb22ea6b59e127028"></a>slates&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000029">Deprecated:</a></b></dt><dd>"VW::label_type_t::slates has been renamed to VW::label_type_t::SLATES" <br  />
  </dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="a41c81f994e2400fabf138c9f2b3d78e5abc4ce7e7f17742bd8f235d39dbf7f30c" name="a41c81f994e2400fabf138c9f2b3d78e5abc4ce7e7f17742bd8f235d39dbf7f30c"></a>nolabel&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000029">Deprecated:</a></b></dt><dd>"VW::label_type_t::nolabel has been renamed to VW::label_type_t::NOLABEL" <br  />
+<tr><td class="fieldname"><a id="a41c81f994e2400fabf138c9f2b3d78e5abc4ce7e7f17742bd8f235d39dbf7f30c" name="a41c81f994e2400fabf138c9f2b3d78e5abc4ce7e7f17742bd8f235d39dbf7f30c"></a>nolabel&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000030">Deprecated:</a></b></dt><dd>"VW::label_type_t::nolabel has been renamed to VW::label_type_t::NOLABEL" <br  />
  </dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="a41c81f994e2400fabf138c9f2b3d78e5ad2884efee751eb4746b685827c7efcd9" name="a41c81f994e2400fabf138c9f2b3d78e5ad2884efee751eb4746b685827c7efcd9"></a>continuous&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000030">Deprecated:</a></b></dt><dd>"VW::label_type_t::continuous has been renamed to VW::label_type_t::CONTINUOUS" <br  />
+<tr><td class="fieldname"><a id="a41c81f994e2400fabf138c9f2b3d78e5ad2884efee751eb4746b685827c7efcd9" name="a41c81f994e2400fabf138c9f2b3d78e5ad2884efee751eb4746b685827c7efcd9"></a>continuous&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000031">Deprecated:</a></b></dt><dd>"VW::label_type_t::continuous has been renamed to VW::label_type_t::CONTINUOUS" <br  />
  </dd></dl>
 </td></tr>
 </table>
@@ -1370,43 +1388,43 @@ template&lt;typename T &gt; </div>
 <tr><td class="fieldname"><a id="a4f76045a06b3efe3c5c612b777b6c836ad704deb0b70532dd81a25f05756b7372" name="a4f76045a06b3efe3c5c612b777b6c836ad704deb0b70532dd81a25f05756b7372"></a>ACTION_PDF_VALUE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a4f76045a06b3efe3c5c612b777b6c836a53166887a33a44e4dbf67777ce71ae5e" name="a4f76045a06b3efe3c5c612b777b6c836a53166887a33a44e4dbf67777ce71ae5e"></a>ACTIVE_MULTICLASS&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a4f76045a06b3efe3c5c612b777b6c836abb648acf3aeb55c0a65c77104d8762cd" name="a4f76045a06b3efe3c5c612b777b6c836abb648acf3aeb55c0a65c77104d8762cd"></a>NOPRED&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a4f76045a06b3efe3c5c612b777b6c836aa27a6549ade38cc036f7b8c58a840510" name="a4f76045a06b3efe3c5c612b777b6c836aa27a6549ade38cc036f7b8c58a840510"></a>scalar&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000053">Deprecated:</a></b></dt><dd>"VW::prediction_type_t::scalar has been renamed to VW::prediction_type_t::SCALAR" <br  />
+<tr><td class="fieldname"><a id="a4f76045a06b3efe3c5c612b777b6c836aa27a6549ade38cc036f7b8c58a840510" name="a4f76045a06b3efe3c5c612b777b6c836aa27a6549ade38cc036f7b8c58a840510"></a>scalar&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000054">Deprecated:</a></b></dt><dd>"VW::prediction_type_t::scalar has been renamed to VW::prediction_type_t::SCALAR" <br  />
  </dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="a4f76045a06b3efe3c5c612b777b6c836a4f14d3acdc8c1cb2ac2f808f2afded32" name="a4f76045a06b3efe3c5c612b777b6c836a4f14d3acdc8c1cb2ac2f808f2afded32"></a>scalars&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000054">Deprecated:</a></b></dt><dd>"VW::prediction_type_t::scalars has been renamed to VW::prediction_type_t::SCALARS" <br  />
+<tr><td class="fieldname"><a id="a4f76045a06b3efe3c5c612b777b6c836a4f14d3acdc8c1cb2ac2f808f2afded32" name="a4f76045a06b3efe3c5c612b777b6c836a4f14d3acdc8c1cb2ac2f808f2afded32"></a>scalars&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000055">Deprecated:</a></b></dt><dd>"VW::prediction_type_t::scalars has been renamed to VW::prediction_type_t::SCALARS" <br  />
  </dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="a4f76045a06b3efe3c5c612b777b6c836a43568e6f9bdfff4805f9154606cde508" name="a4f76045a06b3efe3c5c612b777b6c836a43568e6f9bdfff4805f9154606cde508"></a>action_scores&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000055">Deprecated:</a></b></dt><dd>"VW::prediction_type_t::action_scores has been renamed to VW::prediction_type_t::ACTION_SCORES" <br  />
+<tr><td class="fieldname"><a id="a4f76045a06b3efe3c5c612b777b6c836a43568e6f9bdfff4805f9154606cde508" name="a4f76045a06b3efe3c5c612b777b6c836a43568e6f9bdfff4805f9154606cde508"></a>action_scores&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000056">Deprecated:</a></b></dt><dd>"VW::prediction_type_t::action_scores has been renamed to VW::prediction_type_t::ACTION_SCORES" <br  />
  </dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="a4f76045a06b3efe3c5c612b777b6c836a437175ba4191210ee004e1d937494d09" name="a4f76045a06b3efe3c5c612b777b6c836a437175ba4191210ee004e1d937494d09"></a>pdf&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000056">Deprecated:</a></b></dt><dd>"VW::prediction_type_t::pdf has been renamed to VW::prediction_type_t::PDF" <br  />
+<tr><td class="fieldname"><a id="a4f76045a06b3efe3c5c612b777b6c836a437175ba4191210ee004e1d937494d09" name="a4f76045a06b3efe3c5c612b777b6c836a437175ba4191210ee004e1d937494d09"></a>pdf&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000057">Deprecated:</a></b></dt><dd>"VW::prediction_type_t::pdf has been renamed to VW::prediction_type_t::PDF" <br  />
  </dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="a4f76045a06b3efe3c5c612b777b6c836aa78dde72b6338b01742027024d34eca6" name="a4f76045a06b3efe3c5c612b777b6c836aa78dde72b6338b01742027024d34eca6"></a>action_probs&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000057">Deprecated:</a></b></dt><dd>"VW::prediction_type_t::action_probs has been renamed to VW::prediction_type_t::ACTION_PROBS" <br  />
+<tr><td class="fieldname"><a id="a4f76045a06b3efe3c5c612b777b6c836aa78dde72b6338b01742027024d34eca6" name="a4f76045a06b3efe3c5c612b777b6c836aa78dde72b6338b01742027024d34eca6"></a>action_probs&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000058">Deprecated:</a></b></dt><dd>"VW::prediction_type_t::action_probs has been renamed to VW::prediction_type_t::ACTION_PROBS" <br  />
  </dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="a4f76045a06b3efe3c5c612b777b6c836aa0b3a0bee9f844f0c2999fe2ea393487" name="a4f76045a06b3efe3c5c612b777b6c836aa0b3a0bee9f844f0c2999fe2ea393487"></a>multiclass&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000058">Deprecated:</a></b></dt><dd>"VW::prediction_type_t::multiclass has been renamed to VW::prediction_type_t::MULTICLASS" <br  />
+<tr><td class="fieldname"><a id="a4f76045a06b3efe3c5c612b777b6c836aa0b3a0bee9f844f0c2999fe2ea393487" name="a4f76045a06b3efe3c5c612b777b6c836aa0b3a0bee9f844f0c2999fe2ea393487"></a>multiclass&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000059">Deprecated:</a></b></dt><dd>"VW::prediction_type_t::multiclass has been renamed to VW::prediction_type_t::MULTICLASS" <br  />
  </dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="a4f76045a06b3efe3c5c612b777b6c836aaf52dc7962379f4397484a51c3a8c6a2" name="a4f76045a06b3efe3c5c612b777b6c836aaf52dc7962379f4397484a51c3a8c6a2"></a>multilabels&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000059">Deprecated:</a></b></dt><dd>"VW::prediction_type_t::multilabels has been renamed to VW::prediction_type_t::MULTILABELS" <br  />
+<tr><td class="fieldname"><a id="a4f76045a06b3efe3c5c612b777b6c836aaf52dc7962379f4397484a51c3a8c6a2" name="a4f76045a06b3efe3c5c612b777b6c836aaf52dc7962379f4397484a51c3a8c6a2"></a>multilabels&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000060">Deprecated:</a></b></dt><dd>"VW::prediction_type_t::multilabels has been renamed to VW::prediction_type_t::MULTILABELS" <br  />
  </dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="a4f76045a06b3efe3c5c612b777b6c836a385e54735cbf7e164d5ca45c7419d3a9" name="a4f76045a06b3efe3c5c612b777b6c836a385e54735cbf7e164d5ca45c7419d3a9"></a>prob&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000060">Deprecated:</a></b></dt><dd>"VW::prediction_type_t::prob has been renamed to VW::prediction_type_t::PROB" <br  />
+<tr><td class="fieldname"><a id="a4f76045a06b3efe3c5c612b777b6c836a385e54735cbf7e164d5ca45c7419d3a9" name="a4f76045a06b3efe3c5c612b777b6c836a385e54735cbf7e164d5ca45c7419d3a9"></a>prob&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000061">Deprecated:</a></b></dt><dd>"VW::prediction_type_t::prob has been renamed to VW::prediction_type_t::PROB" <br  />
  </dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="a4f76045a06b3efe3c5c612b777b6c836a48a2fd2fd3d6db94e3c90d57df991cce" name="a4f76045a06b3efe3c5c612b777b6c836a48a2fd2fd3d6db94e3c90d57df991cce"></a>multiclassprobs&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000061">Deprecated:</a></b></dt><dd>"VW::prediction_type_t::multiclassprobs has been renamed to VW::prediction_type_t::MULTICLASS_PROBS" <br  />
+<tr><td class="fieldname"><a id="a4f76045a06b3efe3c5c612b777b6c836a48a2fd2fd3d6db94e3c90d57df991cce" name="a4f76045a06b3efe3c5c612b777b6c836a48a2fd2fd3d6db94e3c90d57df991cce"></a>multiclassprobs&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000062">Deprecated:</a></b></dt><dd>"VW::prediction_type_t::multiclassprobs has been renamed to VW::prediction_type_t::MULTICLASS_PROBS" <br  />
  </dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="a4f76045a06b3efe3c5c612b777b6c836a0a1107ed44b212cea25e2da842e0cbbe" name="a4f76045a06b3efe3c5c612b777b6c836a0a1107ed44b212cea25e2da842e0cbbe"></a>decision_probs&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000062">Deprecated:</a></b></dt><dd>"VW::prediction_type_t::decision_probs has been renamed to VW::prediction_type_t::DECISION_PROBS" <br  />
+<tr><td class="fieldname"><a id="a4f76045a06b3efe3c5c612b777b6c836a0a1107ed44b212cea25e2da842e0cbbe" name="a4f76045a06b3efe3c5c612b777b6c836a0a1107ed44b212cea25e2da842e0cbbe"></a>decision_probs&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000063">Deprecated:</a></b></dt><dd>"VW::prediction_type_t::decision_probs has been renamed to VW::prediction_type_t::DECISION_PROBS" <br  />
  </dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="a4f76045a06b3efe3c5c612b777b6c836a4a0b76be67ec342548cde44e9d897849" name="a4f76045a06b3efe3c5c612b777b6c836a4a0b76be67ec342548cde44e9d897849"></a>action_pdf_value&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000063">Deprecated:</a></b></dt><dd>"VW::prediction_type_t::action_pdf_value has been renamed to VW::prediction_type_t::ACTION_PDF_VALUE" <br  />
+<tr><td class="fieldname"><a id="a4f76045a06b3efe3c5c612b777b6c836a4a0b76be67ec342548cde44e9d897849" name="a4f76045a06b3efe3c5c612b777b6c836a4a0b76be67ec342548cde44e9d897849"></a>action_pdf_value&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000064">Deprecated:</a></b></dt><dd>"VW::prediction_type_t::action_pdf_value has been renamed to VW::prediction_type_t::ACTION_PDF_VALUE" <br  />
  </dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="a4f76045a06b3efe3c5c612b777b6c836a737dd71e6fe9512b7b999ac567613bb8" name="a4f76045a06b3efe3c5c612b777b6c836a737dd71e6fe9512b7b999ac567613bb8"></a>active_multiclass&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000064">Deprecated:</a></b></dt><dd>"VW::prediction_type_t::active_multiclass has been renamed to VW::prediction_type_t::ACTIVE_MULTICLASS" <br  />
+<tr><td class="fieldname"><a id="a4f76045a06b3efe3c5c612b777b6c836a737dd71e6fe9512b7b999ac567613bb8" name="a4f76045a06b3efe3c5c612b777b6c836a737dd71e6fe9512b7b999ac567613bb8"></a>active_multiclass&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000065">Deprecated:</a></b></dt><dd>"VW::prediction_type_t::active_multiclass has been renamed to VW::prediction_type_t::ACTIVE_MULTICLASS" <br  />
  </dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="a4f76045a06b3efe3c5c612b777b6c836a09eb1413668687809928cc79f86e2886" name="a4f76045a06b3efe3c5c612b777b6c836a09eb1413668687809928cc79f86e2886"></a>nopred&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000065">Deprecated:</a></b></dt><dd>"VW::prediction_type_t::nopred has been renamed to VW::prediction_type_t::NOPRED" <br  />
+<tr><td class="fieldname"><a id="a4f76045a06b3efe3c5c612b777b6c836a09eb1413668687809928cc79f86e2886" name="a4f76045a06b3efe3c5c612b777b6c836a09eb1413668687809928cc79f86e2886"></a>nopred&#160;</td><td class="fielddoc"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000066">Deprecated:</a></b></dt><dd>"VW::prediction_type_t::nopred has been renamed to VW::prediction_type_t::NOPRED" <br  />
  </dd></dl>
 </td></tr>
 </table>
@@ -1525,7 +1543,7 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000082">Deprecated:</a></b></dt><dd>"This function is no longer needed and will be removed. Use new/make_unique/make_shared or stack based as " "appropriate." <br  />
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000083">Deprecated:</a></b></dt><dd>"This function is no longer needed and will be removed. Use new/make_unique/make_shared or stack based as " "appropriate." <br  />
  </dd></dl>
 
 </div>
@@ -1740,7 +1758,7 @@ template&lt;typename RetType , typename InputType &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="hashstring_8h.html#a77dae8dac3c33439a15f7270f64cff8c">hash_func_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespaceVW.html#a2c7cf244c45db37ce65c6bc608bfd8be">hash_func_t</a>&#160;</td>
           <td class="paramname"><em>hash_func</em>, </td>
         </tr>
         <tr>
@@ -1795,7 +1813,7 @@ template&lt;typename RetType , typename InputType &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000077">Deprecated:</a></b></dt><dd>"VW no longer supports manipulating a command line with cmd_string_replace_value. This function will be removed in " "VW 10." <br  />
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000078">Deprecated:</a></b></dt><dd>"VW no longer supports manipulating a command line with cmd_string_replace_value. This function will be removed in " "VW 10." <br  />
  </dd></dl>
 
 </div>
@@ -1945,7 +1963,7 @@ template&lt;typename RetType , typename InputType &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000083">Deprecated:</a></b></dt><dd>"This function is no longer needed and will be removed." <br  />
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000084">Deprecated:</a></b></dt><dd>"This function is no longer needed and will be removed." <br  />
  </dd></dl>
 
 </div>
@@ -2559,7 +2577,7 @@ template&lt;size_t num_cols&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000080">Deprecated:</a></b></dt><dd>"This function will be removed in VW 10." <br  />
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000081">Deprecated:</a></b></dt><dd>"This function will be removed in VW 10." <br  />
  </dd></dl>
 
 </div>
@@ -3002,6 +3020,24 @@ template&lt;bool is_learn&gt; </div>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a482d3883bf8d3151b1968cf3617b8765" name="a482d3883bf8d3151b1968cf3617b8765"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a482d3883bf8d3151b1968cf3617b8765">&#9670;&#160;</a></span>get_hasher()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceVW.html#a2c7cf244c45db37ce65c6bc608bfd8be">hash_func_t</a> VW::get_hasher </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -4154,7 +4190,7 @@ template&lt;typename WeightsT &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000081">Deprecated:</a></b></dt><dd>"It is no longer supported to query whether an example is a ring example. This function will be removed in VW 10" <br  />
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000082">Deprecated:</a></b></dt><dd>"It is no longer supported to query whether an example is a ring example. This function will be removed in VW 10" <br  />
  </dd></dl>
 
 </div>
@@ -4948,7 +4984,7 @@ template&lt;typename T , typename... Args&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000040">Deprecated:</a></b></dt><dd>"read_line moved to VW::parsers::text::read_line and should be used with a string_view" <br  />
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000041">Deprecated:</a></b></dt><dd>"read_line moved to VW::parsers::text::read_line and should be used with a string_view" <br  />
  </dd></dl>
 
 </div>
@@ -4992,7 +5028,7 @@ template&lt;typename T , typename... Args&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000039">Deprecated:</a></b></dt><dd>"read_line moved to VW::parsers::text::read_line" <br  />
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000040">Deprecated:</a></b></dt><dd>"read_line moved to VW::parsers::text::read_line" <br  />
  </dd></dl>
 
 </div>
@@ -5060,7 +5096,7 @@ template&lt;bool audit&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000048">Deprecated:</a></b></dt><dd>"read_line_decision_service_json moved to VW::parsers::json::read_line_decision_service_json" <br  />
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000049">Deprecated:</a></b></dt><dd>"read_line_decision_service_json moved to VW::parsers::json::read_line_decision_service_json" <br  />
  </dd></dl>
 
 </div>
@@ -5082,7 +5118,7 @@ template&lt;bool audit&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="hashstring_8h.html#a77dae8dac3c33439a15f7270f64cff8c">hash_func_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespaceVW.html#a2c7cf244c45db37ce65c6bc608bfd8be">hash_func_t</a>&#160;</td>
           <td class="paramname"><em>hash_func</em>, </td>
         </tr>
         <tr>
@@ -5170,7 +5206,7 @@ template&lt;bool audit&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000046">Deprecated:</a></b></dt><dd>"read_line_json_s moved to VW::parsers::json::read_line_json" <br  />
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000047">Deprecated:</a></b></dt><dd>"read_line_json_s moved to VW::parsers::json::read_line_json" <br  />
  </dd></dl>
 
 </div>
@@ -5232,7 +5268,7 @@ template&lt;bool audit&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000047">Deprecated:</a></b></dt><dd>"read_line_json_s moved to VW::parsers::json::read_line_json" <br  />
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000048">Deprecated:</a></b></dt><dd>"read_line_json_s moved to VW::parsers::json::read_line_json" <br  />
  </dd></dl>
 
 </div>
@@ -5282,7 +5318,7 @@ template&lt;bool audit&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000041">Deprecated:</a></b></dt><dd>"read_lines moved to VW::parsers::text::read_lines and should be used with a string_view" <br  />
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000042">Deprecated:</a></b></dt><dd>"read_lines moved to VW::parsers::text::read_lines and should be used with a string_view" <br  />
  </dd></dl>
 
 </div>
@@ -5326,7 +5362,7 @@ template&lt;bool audit&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000042">Deprecated:</a></b></dt><dd>"read_lines moved to VW::parsers::text::read_lines" <br  />
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000043">Deprecated:</a></b></dt><dd>"read_lines moved to VW::parsers::text::read_lines" <br  />
  </dd></dl>
 
 </div>
@@ -5662,7 +5698,7 @@ template&lt;&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000084">Deprecated:</a></b></dt><dd>"VW::releaseFeatureSpace renamed to VW::release_feature_space" <br  />
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000085">Deprecated:</a></b></dt><dd>"VW::releaseFeatureSpace renamed to VW::release_feature_space" <br  />
  </dd></dl>
 
 </div>
@@ -6411,7 +6447,7 @@ Example:</h4>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000078">Deprecated:</a></b></dt><dd>"This functionality is now implemented by VW::split_command_line which supports escaping, etc. This function will " "be removed in VW 10." <br  />
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000079">Deprecated:</a></b></dt><dd>"This functionality is now implemented by VW::split_command_line which supports escaping, etc. This function will " "be removed in VW 10." <br  />
  </dd></dl>
 
 </div>
@@ -6441,7 +6477,7 @@ Example:</h4>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000079">Deprecated:</a></b></dt><dd>"This functionality is now implemented by VW::split_command_line which supports escaping, etc. This function will " "be removed in VW 10." <br  />
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000080">Deprecated:</a></b></dt><dd>"This functionality is now implemented by VW::split_command_line which supports escaping, etc. This function will " "be removed in VW 10." <br  />
  </dd></dl>
 
 </div>
@@ -6962,8 +6998,8 @@ template&lt;typename ContainerT &gt; </div>
 
 </div>
 </div>
-<a id="a0bf76acc68265292bdb5eba8687a6584" name="a0bf76acc68265292bdb5eba8687a6584"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0bf76acc68265292bdb5eba8687a6584">&#9670;&#160;</a></span>uniform_hash()</h2>
+<a id="afdb8435c51791bc920d5b3efa033f97b" name="afdb8435c51791bc920d5b3efa033f97b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdb8435c51791bc920d5b3efa033f97b">&#9670;&#160;</a></span>uniform_hash()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6972,10 +7008,10 @@ template&lt;typename ContainerT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t VW::uniform_hash </td>
+          <td class="memname">VW_STD14_CONSTEXPR uint32_t VW::uniform_hash </td>
           <td>(</td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -6986,7 +7022,7 @@ template&lt;typename ContainerT &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>seed</em>&#160;</td>
         </tr>
         <tr>
@@ -7262,7 +7298,7 @@ template&lt;typename ContainerT &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000075">Deprecated:</a></b></dt><dd>"VW::version renamed to VW::VERSION" <br  />
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000076">Deprecated:</a></b></dt><dd>"VW::version renamed to VW::VERSION" <br  />
  </dd></dl>
 
 </div>
@@ -7506,7 +7542,7 @@ template&lt;typename ContainerT &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000076">Deprecated:</a></b></dt><dd>"VW::git_commit renamed to VW::GIT_COMMIT" <br  />
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000077">Deprecated:</a></b></dt><dd>"VW::git_commit renamed to VW::GIT_COMMIT" <br  />
  </dd></dl>
 
 </div>
