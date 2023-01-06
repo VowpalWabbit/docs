@@ -20,7 +20,7 @@ var searchData=
   ['cb_5flabel_5fparser_5fglobal_17',['cb_label_parser_global',['../namespaceVW.html#a01d9e9f987e6c8c8d5ceb5ef00f34ecf',1,'VW']]],
   ['cb_5fsample_18',['CB_SAMPLE',['../classvw__dbg.html#a0fa2266b9197b312663b8126f8535fc3',1,'vw_dbg']]],
   ['cb_5fsample_5fpdf_19',['CB_SAMPLE_PDF',['../classvw__dbg.html#aecf9719cdb0be18b728d98bf67b49f2a',1,'vw_dbg']]],
-  ['cb_5ftype_20',['cb_type',['../classGEN__CS_1_1cb__to__cs.html#a59af5b5ad541e703a950ca6189185bfa',1,'GEN_CS::cb_to_cs::cb_type()'],['../classGEN__CS_1_1cb__to__cs__adf.html#a9361684cf4b51c47c7cdf94bcb477c0e',1,'GEN_CS::cb_to_cs_adf::cb_type()']]],
+  ['cb_5ftype_20',['cb_type',['../classVW_1_1details_1_1cb__to__cs.html#aaa732b149a2b7a2fa1da7dd365b1169f',1,'VW::details::cb_to_cs::cb_type()'],['../classVW_1_1details_1_1cb__to__cs__adf.html#a8922845c2759b9e08cd1ba70c076493e',1,'VW::details::cb_to_cs_adf::cb_type()']]],
   ['cbify_21',['CBIFY',['../classvw__dbg.html#a6959591c889202bfe8f34d74f1fef490',1,'vw_dbg']]],
   ['ccb_22',['CCB',['../classvw__dbg.html#a9b007ff7361ef2891bce35ab2dc2b01f',1,'vw_dbg']]],
   ['ccb_5fid_5fnamespace_23',['CCB_ID_NAMESPACE',['../namespaceVW_1_1details.html#a31f7338108a8b14cdd1a408b9c3f355b',1,'VW::details']]],

@@ -29,7 +29,7 @@ var searchData=
   ['power_5ft_26',['power_t',['../classVW_1_1workspace.html#a3269e9e45076b9a037aa262b42651681',1,'VW::workspace']]],
   ['pre_5fsave_5fload_5ff_27',['pre_save_load_f',['../classVW_1_1LEARNER_1_1details_1_1pre__save__load__data.html#ac5c71710ed40c56ee597a3229456bd72',1,'VW::LEARNER::details::pre_save_load_data']]],
   ['pred_28',['pred',['../classGD_1_1multipredict__info.html#aac4beffce94984deb0731cd3d2746684',1,'GD::multipredict_info::pred()'],['../classVW_1_1example.html#a9302a52e74bafd839a213cbba89cfe4a',1,'VW::example::pred()']]],
-  ['pred_5fscores_29',['pred_scores',['../classGEN__CS_1_1cb__to__cs.html#a89609c460a22d2397620df10a067ec5a',1,'GEN_CS::cb_to_cs::pred_scores()'],['../classGEN__CS_1_1cb__to__cs__adf.html#adbb435eb67f55bd36082d6e6efd9486c',1,'GEN_CS::cb_to_cs_adf::pred_scores()']]],
+  ['pred_5fscores_29',['pred_scores',['../classVW_1_1details_1_1cb__to__cs.html#a3377d74d00821745c4440b4615e945bc',1,'VW::details::cb_to_cs::pred_scores()'],['../classVW_1_1details_1_1cb__to__cs__adf.html#a8f6ab0fb8f953c99b44957f3b21d913b',1,'VW::details::cb_to_cs_adf::pred_scores()']]],
   ['predict_30',['predict',['../classGD_1_1gd.html#a9d340888352134f4e95995c945a5d877',1,'GD::gd']]],
   ['predict_5ff_31',['predict_f',['../classVW_1_1LEARNER_1_1details_1_1learn__data.html#a4eba087d6f99fe7a164e4cc62fc08927',1,'VW::LEARNER::details::learn_data']]],
   ['predicted_5fclass_32',['predicted_class',['../classVW_1_1active__multiclass__prediction.html#ac2d89b36bfd8be92d0ebfd173180dc07',1,'VW::active_multiclass_prediction']]],

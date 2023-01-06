@@ -24,7 +24,7 @@ var searchData=
   ['action_5fscores_21',['action_scores',['../namespaceVW.html#a4f76045a06b3efe3c5c612b777b6c836a43568e6f9bdfff4805f9154606cde508',1,'VW::action_scores()'],['../namespaceACTION__SCORE.html#a78228be2969a82d56518aa5f2e88cf73',1,'ACTION_SCORE::action_scores()'],['../namespaceVW.html#a2702c36414c2a3b9ee641b6bc2639e20',1,'VW::action_scores()']]],
   ['action_5fscores_22',['ACTION_SCORES',['../namespaceVW.html#a4f76045a06b3efe3c5c612b777b6c836a5f4f7cf4a4acb8b44fc3284a75308a57',1,'VW']]],
   ['action_5fscores_5fscore_5fiterator_23',['action_scores_score_iterator',['../classVW_1_1action__scores__score__iterator.html#adfa1aefdc582f898e9d74a9cf6f7ed8e',1,'VW::action_scores_score_iterator::action_scores_score_iterator()'],['../classVW_1_1action__scores__score__iterator.html',1,'VW::action_scores_score_iterator']]],
-  ['action_5fsum_24',['action_sum',['../classGEN__CS_1_1cb__to__cs__adf.html#a603aadff469c9a586f031e2833c2e076',1,'GEN_CS::cb_to_cs_adf']]],
+  ['action_5fsum_24',['action_sum',['../classVW_1_1details_1_1cb__to__cs__adf.html#a95eb794ec5f34c60a8163d6bd358fac9',1,'VW::details::cb_to_cs_adf']]],
   ['action_5ftype_25',['ACTION_TYPE',['../namespaceVW_1_1details.html#a23686bb949764499f34dbeb4ef323973',1,'VW::details']]],
   ['actions_26',['actions',['../classVW_1_1parsers_1_1json_1_1decision__service__interaction.html#a81b0a4aeff6e67e75bdaeb1c55944b20',1,'VW::parsers::json::decision_service_interaction']]],
   ['active_27',['active',['../classVW_1_1reductions_1_1active.html#a9648272954663b5c43144e55be56b063',1,'VW::reductions::active::active()'],['../classVW_1_1workspace.html#a13db26d284e2ec61861eaceb12b230f9',1,'VW::workspace::active()'],['../classVW_1_1reductions_1_1active.html',1,'VW::reductions::active']]],
@@ -128,5 +128,5 @@ var searchData=
   ['automl_5fsetup_125',['automl_setup',['../namespaceVW_1_1reductions.html#acdf887dd521ec62752fa81fa097b61f8',1,'VW::reductions']]],
   ['automl_5fsignificance_5flevel_126',['automl_significance_level',['../classVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#aef9a20d69bca17ffbd04c080b6401947',1,'VW::reductions::automl::interaction_config_manager']]],
   ['automl_5fstate_127',['automl_state',['../namespaceVW_1_1reductions_1_1automl.html#a73822d9332c63d629d0c7ca5121706e3',1,'VW::reductions::automl']]],
-  ['avg_5floss_5fregressors_128',['avg_loss_regressors',['../classGEN__CS_1_1cb__to__cs.html#ae63989605eba00d78586ecc741a4e8fa',1,'GEN_CS::cb_to_cs']]]
+  ['avg_5floss_5fregressors_128',['avg_loss_regressors',['../classVW_1_1details_1_1cb__to__cs.html#a43c22eeb17e77729dfae257d49ee93ab',1,'VW::details::cb_to_cs']]]
 ];
