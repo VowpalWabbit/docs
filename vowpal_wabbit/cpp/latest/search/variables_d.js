@@ -42,8 +42,8 @@ var searchData=
   ['multiclass_39',['multiclass',['../classVW_1_1polyprediction.html#af9056e798b60c2f06024fa2cf4ae45c2',1,'VW::polyprediction']]],
   ['multiclass_5flabel_5fparser_5fglobal_40',['multiclass_label_parser_global',['../namespaceVW.html#a3d66e4a9ab28a38ff98ef823471340a2',1,'VW']]],
   ['multiclass_5flog_5floss_41',['multiclass_log_loss',['../classVW_1_1shared__data.html#a01515ba987108783a08bc33b231ef0dc',1,'VW::shared_data']]],
-  ['multilabel_42',['multilabel',['../namespaceMULTILABEL.html#a5e5e1e8ebd8c3d7f274c594c14766ee0',1,'MULTILABEL']]],
-  ['multilabels_43',['multilabels',['../classVW_1_1polylabel.html#a5b37fc21056032782c251167f1cd95a3',1,'VW::polylabel::multilabels()'],['../classVW_1_1polyprediction.html#a5d90ae1cf655e46886d797466ee60375',1,'VW::polyprediction::multilabels()']]],
+  ['multilabel_5flabel_5fparser_5fglobal_42',['multilabel_label_parser_global',['../namespaceVW.html#a8fa9a88c2a2df9e90a1cdaa479be6169',1,'VW']]],
+  ['multilabels_43',['multilabels',['../classVW_1_1polylabel.html#a27c4433e00cde14f0985b11e2be0942a',1,'VW::polylabel::multilabels()'],['../classVW_1_1polyprediction.html#a9b1e250ecfe35b1ed736a949315d38fb',1,'VW::polyprediction::multilabels()']]],
   ['multipredict_44',['multipredict',['../classGD_1_1gd.html#ad905016a43e986e59045d2754635eabc',1,'GD::gd']]],
   ['multipredict_5ff_45',['multipredict_f',['../classVW_1_1LEARNER_1_1details_1_1learn__data.html#a3648233df4af98fe57f26917d6088b46',1,'VW::LEARNER::details::learn_data']]]
 ];

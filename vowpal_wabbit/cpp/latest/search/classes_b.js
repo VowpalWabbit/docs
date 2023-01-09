@@ -10,5 +10,7 @@ var searchData=
   ['moved_5fobject_5fpool_7',['moved_object_pool',['../classVW_1_1moved__object__pool.html',1,'VW']]],
   ['moved_5fobject_5fpool_3c_20vw_3a_3adetails_3a_3aextent_5finteraction_5fexpansion_5fstack_5fitem_20_3e_8',['moved_object_pool&lt; VW::details::extent_interaction_expansion_stack_item &gt;',['../classVW_1_1moved__object__pool.html',1,'VW']]],
   ['multiclass_5flabel_9',['multiclass_label',['../classVW_1_1multiclass__label.html',1,'VW']]],
-  ['multipredict_5finfo_10',['multipredict_info',['../classGD_1_1multipredict__info.html',1,'GD']]]
+  ['multilabel_5flabel_10',['multilabel_label',['../classVW_1_1multilabel__label.html',1,'VW']]],
+  ['multilabel_5fprediction_11',['multilabel_prediction',['../classVW_1_1multilabel__prediction.html',1,'VW']]],
+  ['multipredict_5finfo_12',['multipredict_info',['../classGD_1_1multipredict__info.html',1,'GD']]]
 ];

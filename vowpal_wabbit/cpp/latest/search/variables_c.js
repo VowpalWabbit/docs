@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['l_0',['l',['../classVW_1_1flat__example.html#ac06ce4e30446607fac19572a00011d19',1,'VW::flat_example::l()'],['../classVW_1_1workspace.html#aeecce10973024deaf9ea0a4b4b144606',1,'VW::workspace::l()'],['../classVW_1_1example.html#adfcc771a9e46a65130c9dcf8b18870e6',1,'VW::example::l()']]],
+  ['l_0',['l',['../classVW_1_1flat__example.html#ac06ce4e30446607fac19572a00011d19',1,'VW::flat_example::l()'],['../classVW_1_1example.html#adfcc771a9e46a65130c9dcf8b18870e6',1,'VW::example::l()'],['../classVW_1_1workspace.html#aeecce10973024deaf9ea0a4b4b144606',1,'VW::workspace::l()']]],
   ['l1_5flambda_1',['l1_lambda',['../classVW_1_1workspace.html#ae7797a50d730e07c4310a0d6826abf01',1,'VW::workspace']]],
   ['l2_5flambda_2',['l2_lambda',['../classVW_1_1workspace.html#a0892885d065a4eef0f904e8228d57d14',1,'VW::workspace']]],
   ['label_3',['label',['../classVW_1_1multiclass__label.html#ad60261e4c5e6d9f19557536c432def79',1,'VW::multiclass_label::label()'],['../structVW_1_1reductions_1_1eigen__memory__tree_1_1emt__example.html#ad26c216c50ebdd65c2b205a34495ae1e',1,'VW::reductions::eigen_memory_tree::emt_example::label()'],['../classVW_1_1simple__label.html#af2f88a3333bda3371519564b725df551',1,'VW::simple_label::label()']]],
@@ -8,7 +8,7 @@ var searchData=
   ['label_5faction_5fnot_5ffirst_5',['label_action_not_first',['../classVW_1_1cb__explore__adf_1_1cb__explore__metrics.html#a29bc83ce95727c722647bbfbe08994f5',1,'VW::cb_explore_adf::cb_explore_metrics']]],
   ['label_5flist_6',['label_list',['../classVW_1_1parsers_1_1csv_1_1csv__parser.html#ad379efe86d749c2cf878175ed725079b',1,'VW::parsers::csv::csv_parser']]],
   ['label_5ftype_7',['label_type',['../classVW_1_1label__parser.html#aa9e6bd3aaf1bf6d8cb86eb7fe1990fc8',1,'VW::label_parser']]],
-  ['label_5fv_8',['label_v',['../classMULTILABEL_1_1labels.html#ab0696074f47cd7bfa8493108754c1c03',1,'MULTILABEL::labels']]],
+  ['label_5fv_8',['label_v',['../classVW_1_1multilabel__label.html#a334086397ecfd16537041203f680e987',1,'VW::multilabel_label::label_v()'],['../classVW_1_1multilabel__prediction.html#af73ac7c30463c626579fee957734d62b',1,'VW::multilabel_prediction::label_v()']]],
   ['labeled_9',['labeled',['../classVW_1_1slates_1_1label.html#a8ee43031c61a9a8a56d4c05bbec341ac',1,'VW::slates::label']]],
   ['lambda_5fmax_10',['lambda_max',['../classVW_1_1details_1_1countable__discrete__base.html#ad5229f74b4afc8aa17da744ab5c6a0de',1,'VW::details::countable_discrete_base']]],
   ['last_5fcompatible_5fversion_11',['LAST_COMPATIBLE_VERSION',['../namespaceVW_1_1version__definitions.html#a705965b39b52128f510483ca9d116135',1,'VW::version_definitions']]],
