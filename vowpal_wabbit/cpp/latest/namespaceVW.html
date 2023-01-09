@@ -722,6 +722,13 @@ Functions</h2></td></tr>
 <tr class="separator:a43bcb1c4c001c99799b93c456be46257"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63cb0649f1ff9a6968af2be502b0b586"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVW_1_1workspace.html">VW::workspace</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a63cb0649f1ff9a6968af2be502b0b586">initialize_with_builder</a> (const std::string &amp;s, <a class="el" href="classVW_1_1io__buf.html">io_buf</a> *model=nullptr, bool skip_model_load=false, <a class="el" href="namespaceVW.html#a7065f02164e09fc0756cf9a00138d753">trace_message_t</a> trace_listener=nullptr, void *trace_context=nullptr, std::unique_ptr&lt; <a class="el" href="classVW_1_1setup__base__i.html">VW::setup_base_i</a> &gt;=nullptr)</td></tr>
 <tr class="separator:a63cb0649f1ff9a6968af2be502b0b586"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f9d3fee714a1396002d94b49434db36"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a8f9d3fee714a1396002d94b49434db36">initialize</a> (std::unique_ptr&lt; <a class="el" href="classVW_1_1config_1_1options__i.html">config::options_i</a> &gt; options, std::unique_ptr&lt; <a class="el" href="classVW_1_1io_1_1reader.html">VW::io::reader</a> &gt; model_override_reader=nullptr, bool skip_model_load=false, <a class="el" href="namespaceVW.html#a58dd7d81c6029805118e521ef7696f80">driver_output_func_t</a> driver_output_func=nullptr, void *driver_output_func_context=nullptr, <a class="el" href="classVW_1_1io_1_1logger.html">VW::io::logger</a> *custom_logger=nullptr)</td></tr>
+<tr class="memdesc:a8f9d3fee714a1396002d94b49434db36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a workspace.  <a href="namespaceVW.html#a8f9d3fee714a1396002d94b49434db36">More...</a><br /></td></tr>
+<tr class="separator:a8f9d3fee714a1396002d94b49434db36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8c5d9ce9a84ba93a15628d8846403a2"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ae8c5d9ce9a84ba93a15628d8846403a2">seed_vw_model</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;vw_model, const std::vector&lt; std::string &gt; &amp;extra_args, <a class="el" href="namespaceVW.html#a58dd7d81c6029805118e521ef7696f80">driver_output_func_t</a> driver_output_func=nullptr, void *driver_output_func_context=nullptr, <a class="el" href="classVW_1_1io_1_1logger.html">VW::io::logger</a> *custom_logger=nullptr)</td></tr>
+<tr class="separator:ae8c5d9ce9a84ba93a15628d8846403a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7120b83681f0295746e8d5a3939b49b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a7120b83681f0295746e8d5a3939b49b3">finalize_driver</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all)</td></tr>
+<tr class="separator:a7120b83681f0295746e8d5a3939b49b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa47ba6aa992b15b2e783daf944536641"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#aa47ba6aa992b15b2e783daf944536641">initialize_experimental</a> (std::unique_ptr&lt; <a class="el" href="classVW_1_1config_1_1options__i.html">config::options_i</a> &gt; options, std::unique_ptr&lt; <a class="el" href="classVW_1_1io_1_1reader.html">VW::io::reader</a> &gt; model_override_reader=nullptr, <a class="el" href="namespaceVW.html#a58dd7d81c6029805118e521ef7696f80">driver_output_func_t</a> driver_output_func=nullptr, void *driver_output_func_context=nullptr, <a class="el" href="classVW_1_1io_1_1logger.html">VW::io::logger</a> *custom_logger=nullptr, std::unique_ptr&lt; <a class="el" href="classVW_1_1setup__base__i.html">VW::setup_base_i</a> &gt; setup_base=nullptr)</td></tr>
 <tr class="memdesc:aa47ba6aa992b15b2e783daf944536641"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a workspace. This interface is currently experimental, but will replace the existing array of initialize functions.  <a href="namespaceVW.html#aa47ba6aa992b15b2e783daf944536641">More...</a><br /></td></tr>
 <tr class="separator:aa47ba6aa992b15b2e783daf944536641"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1613,7 +1620,7 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000090">Deprecated:</a></b></dt><dd>"This function is no longer needed and will be removed. Use new/make_unique/make_shared or stack based as " "appropriate." <br  />
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000091">Deprecated:</a></b></dt><dd>"This function is no longer needed and will be removed. Use new/make_unique/make_shared or stack based as " "appropriate." <br  />
  </dd></dl>
 
 </div>
@@ -1883,7 +1890,7 @@ template&lt;typename RetType , typename InputType &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000085">Deprecated:</a></b></dt><dd>"VW no longer supports manipulating a command line with cmd_string_replace_value. This function will be removed in " "VW 10." <br  />
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000086">Deprecated:</a></b></dt><dd>"VW no longer supports manipulating a command line with cmd_string_replace_value. This function will be removed in " "VW 10." <br  />
  </dd></dl>
 
 </div>
@@ -2085,7 +2092,7 @@ template&lt;typename RetType , typename InputType &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000091">Deprecated:</a></b></dt><dd>"This function is no longer needed and will be removed." <br  />
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000092">Deprecated:</a></b></dt><dd>"This function is no longer needed and will be removed." <br  />
  </dd></dl>
 
 </div>
@@ -2449,6 +2456,25 @@ template&lt;typename RetType , typename InputType &gt; </div>
 
 </div>
 </div>
+<a id="a7120b83681f0295746e8d5a3939b49b3" name="a7120b83681f0295746e8d5a3939b49b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7120b83681f0295746e8d5a3939b49b3">&#9670;&#160;</a></span>finalize_driver()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VW::finalize_driver </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;&#160;</td>
+          <td class="paramname"><em>all</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >This is used to perform finalization steps the driver/cli would normally do. If using <a class="el" href="namespaceVW.html">VW</a> in library mode, this call is optional. Some things this function does are: print summary, finalize regressor, output metrics, etc </p>
+
+</div>
+</div>
 <a id="a20df3866bc7e212ae51fa9f50b764e78" name="a20df3866bc7e212ae51fa9f50b764e78"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a20df3866bc7e212ae51fa9f50b764e78">&#9670;&#160;</a></span>finish()</h2>
 
@@ -2739,7 +2765,7 @@ template&lt;size_t num_cols&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000088">Deprecated:</a></b></dt><dd>"This function will be removed in VW 10." <br  />
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000089">Deprecated:</a></b></dt><dd>"This function will be removed in VW 10." <br  />
  </dd></dl>
 
 </div>
@@ -4130,7 +4156,7 @@ template&lt;typename WeightsT &gt; </div>
 </div>
 </div>
 <a id="a16b20e4dc1397a3e90b5ee387e4cfea8" name="a16b20e4dc1397a3e90b5ee387e4cfea8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16b20e4dc1397a3e90b5ee387e4cfea8">&#9670;&#160;</a></span>initialize() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a16b20e4dc1397a3e90b5ee387e4cfea8">&#9670;&#160;</a></span>initialize() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4176,7 +4202,7 @@ template&lt;typename WeightsT &gt; </div>
 </div>
 </div>
 <a id="a235c02dd4acdb4c5642b42bd34e77462" name="a235c02dd4acdb4c5642b42bd34e77462"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a235c02dd4acdb4c5642b42bd34e77462">&#9670;&#160;</a></span>initialize() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a235c02dd4acdb4c5642b42bd34e77462">&#9670;&#160;</a></span>initialize() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4222,7 +4248,7 @@ template&lt;typename WeightsT &gt; </div>
 </div>
 </div>
 <a id="affdea548e13be2e769a92e0e97df3fea" name="affdea548e13be2e769a92e0e97df3fea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affdea548e13be2e769a92e0e97df3fea">&#9670;&#160;</a></span>initialize() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#affdea548e13be2e769a92e0e97df3fea">&#9670;&#160;</a></span>initialize() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4273,8 +4299,75 @@ template&lt;typename WeightsT &gt; </div>
 
 </div>
 </div>
+<a id="a8f9d3fee714a1396002d94b49434db36" name="a8f9d3fee714a1396002d94b49434db36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f9d3fee714a1396002d94b49434db36">&#9670;&#160;</a></span>initialize() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &gt; VW::initialize </td>
+          <td>(</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classVW_1_1config_1_1options__i.html">config::options_i</a> &gt;&#160;</td>
+          <td class="paramname"><em>options</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classVW_1_1io_1_1reader.html">VW::io::reader</a> &gt;&#160;</td>
+          <td class="paramname"><em>model_override_reader</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>skip_model_load</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceVW.html#a58dd7d81c6029805118e521ef7696f80">driver_output_func_t</a>&#160;</td>
+          <td class="paramname"><em>driver_output_func</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>driver_output_func_context</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classVW_1_1io_1_1logger.html">VW::io::logger</a> *&#160;</td>
+          <td class="paramname"><em>custom_logger</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize a workspace. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">options</td><td>The options to initialize the workspace with. Usually an instance of <a class="el" href="classVW_1_1config_1_1options__cli.html">VW::config::options_cli</a>. </td></tr>
+    <tr><td class="paramname">model_override_reader</td><td>optional reading source to read the model from. Will override any model specified on the command line. </td></tr>
+    <tr><td class="paramname">skip_model_load</td><td>If true both the model_override_reader and any model arguments will be ignored. </td></tr>
+    <tr><td class="paramname">driver_output_func</td><td>optional function to forward driver ouput to </td></tr>
+    <tr><td class="paramname">driver_output_func_context</td><td>context for driver_output_func </td></tr>
+    <tr><td class="paramname">custom_logger</td><td>optional custom logger object to override with </td></tr>
+    <tr><td class="paramname">setup_base</td><td>optional advanced override of reduction stack </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::unique_ptr&lt;VW::workspace&gt; initialized workspace </dd></dl>
+
+</div>
+</div>
 <a id="aed5626f423718d2fbddcb530598c15f3" name="aed5626f423718d2fbddcb530598c15f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed5626f423718d2fbddcb530598c15f3">&#9670;&#160;</a></span>initialize() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aed5626f423718d2fbddcb530598c15f3">&#9670;&#160;</a></span>initialize() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4480,6 +4573,8 @@ template&lt;typename WeightsT &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000085">Deprecated:</a></b></dt><dd>"For scenarios requiring the builder, initialize_experimental should be used." <br  />
+ </dd></dl>
 
 </div>
 </div>
@@ -4552,7 +4647,7 @@ template&lt;typename WeightsT &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000089">Deprecated:</a></b></dt><dd>"It is no longer supported to query whether an example is a ring example. This function will be removed in VW 10" <br  />
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000090">Deprecated:</a></b></dt><dd>"It is no longer supported to query whether an example is a ring example. This function will be removed in VW 10" <br  />
  </dd></dl>
 
 </div>
@@ -6060,7 +6155,7 @@ template&lt;&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000092">Deprecated:</a></b></dt><dd>"VW::releaseFeatureSpace renamed to VW::release_feature_space" <br  />
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000093">Deprecated:</a></b></dt><dd>"VW::releaseFeatureSpace renamed to VW::release_feature_space" <br  />
  </dd></dl>
 
 </div>
@@ -6204,8 +6299,55 @@ Example:</h4>
 </div><!-- fragment --> 
 </div>
 </div>
+<a id="ae8c5d9ce9a84ba93a15628d8846403a2" name="ae8c5d9ce9a84ba93a15628d8846403a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8c5d9ce9a84ba93a15628d8846403a2">&#9670;&#160;</a></span>seed_vw_model() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &gt; VW::seed_vw_model </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;&#160;</td>
+          <td class="paramname"><em>vw_model</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>extra_args</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceVW.html#a58dd7d81c6029805118e521ef7696f80">driver_output_func_t</a>&#160;</td>
+          <td class="paramname"><em>driver_output_func</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>driver_output_func_context</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classVW_1_1io_1_1logger.html">VW::io::logger</a> *&#160;</td>
+          <td class="paramname"><em>custom_logger</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Creates a workspace based off of another workspace. What this means is that the model weights and the <a class="el" href="classVW_1_1shared__data.html">shared_data</a> object are shared. This function needs to be used with caution. Reduction data is not shared, therefore this function is unsafe to use for situations where reduction state is required for proper operation such as marginal and cb_adf. Learn on a seeded instance is unsafe, and prediction is also potentiaslly unsafe. </p>
+
+</div>
+</div>
 <a id="ab404fd0dd281077244463bf4949575f3" name="ab404fd0dd281077244463bf4949575f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab404fd0dd281077244463bf4949575f3">&#9670;&#160;</a></span>seed_vw_model()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab404fd0dd281077244463bf4949575f3">&#9670;&#160;</a></span>seed_vw_model() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6809,7 +6951,7 @@ Example:</h4>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000086">Deprecated:</a></b></dt><dd>"This functionality is now implemented by VW::split_command_line which supports escaping, etc. This function will " "be removed in VW 10." <br  />
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000087">Deprecated:</a></b></dt><dd>"This functionality is now implemented by VW::split_command_line which supports escaping, etc. This function will " "be removed in VW 10." <br  />
  </dd></dl>
 
 </div>
@@ -6839,7 +6981,7 @@ Example:</h4>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000087">Deprecated:</a></b></dt><dd>"This functionality is now implemented by VW::split_command_line which supports escaping, etc. This function will " "be removed in VW 10." <br  />
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000088">Deprecated:</a></b></dt><dd>"This functionality is now implemented by VW::split_command_line which supports escaping, etc. This function will " "be removed in VW 10." <br  />
  </dd></dl>
 
 </div>
