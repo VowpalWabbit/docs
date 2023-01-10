@@ -28,5 +28,6 @@ var searchData=
   ['track_5fstack_25',['TRACK_STACK',['../classvw__dbg.html#ab3711aedc3d066303d8fabb08d72dc0e',1,'vw_dbg']]],
   ['training_26',['training',['../classVW_1_1workspace.html#a8d6c128e3261a27fe3eea15b24ce4f11',1,'VW::workspace']]],
   ['tree_5fbandwidth_27',['tree_bandwidth',['../classVW_1_1reductions_1_1pmf__to__pdf__reduction.html#a3e970be82e2324087cd2246c049ed595',1,'VW::reductions::pmf_to_pdf_reduction']]],
-  ['type_28',['type',['../classVW_1_1slates_1_1label.html#a3534b1caf54bde6f345dc0fd94379778',1,'VW::slates::label::type()'],['../classVW_1_1ccb__reduction__features.html#a73eb17707690525bb5363b65f4519390',1,'VW::ccb_reduction_features::type()'],['../classVW_1_1ccb__label.html#a601ea5ff4449c01700f9fa731b5167c1',1,'VW::ccb_label::type()']]]
+  ['triplets_28',['triplets',['../classVW_1_1cb__graph__feedback_1_1reduction__features.html#a91fa32c09953b848a9f262285136b40a',1,'VW::cb_graph_feedback::reduction_features']]],
+  ['type_29',['type',['../classVW_1_1slates_1_1label.html#a3534b1caf54bde6f345dc0fd94379778',1,'VW::slates::label::type()'],['../classVW_1_1ccb__reduction__features.html#a73eb17707690525bb5363b65f4519390',1,'VW::ccb_reduction_features::type()'],['../classVW_1_1ccb__label.html#a601ea5ff4449c01700f9fa731b5167c1',1,'VW::ccb_label::type()']]]
 ];

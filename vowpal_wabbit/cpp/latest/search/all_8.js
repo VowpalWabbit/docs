@@ -163,8 +163,9 @@ var searchData=
   ['global_5fprint_5fnewline_160',['global_print_newline',['../namespaceVW_1_1details.html#ae5b53db7f0c2b2d7346c1a1fc0c2a975',1,'VW::details']]],
   ['global_5fweight_161',['global_weight',['../classVW_1_1flat__example.html#af22b235d38543a0c757241e20dcfa375',1,'VW::flat_example']]],
   ['gram_5fschmidt_162',['gram_schmidt',['../namespaceVW.html#a0eebf9b8e3b7d8ddd7593fbd86622d03',1,'VW::gram_schmidt(WeightsT &amp;weights, uint64_t d, const std::set&lt; uint64_t &gt; &amp;rows)'],['../namespaceVW.html#ac8602470da66bc17c925c87f2c328edf',1,'VW::gram_schmidt(Eigen::MatrixXf &amp;mat)'],['../namespaceVW.html#a5e16c7d797676b4aa14893841f5efaa1',1,'VW::gram_schmidt(Eigen::SparseMatrix&lt; float &gt; &amp;mat)']]],
-  ['graphtask_163',['GraphTask',['../namespaceGraphTask.html',1,'']]],
-  ['gravity_164',['gravity',['../classVW_1_1details_1_1multipredict__info.html#a3ce99686811a936941cabdd523a6fae1',1,'VW::details::multipredict_info::gravity()'],['../classVW_1_1shared__data.html#a88f22588da0951f56628fbeb4a8abd1e',1,'VW::shared_data::gravity()']]],
-  ['gt_165',['gt',['../classVW_1_1details_1_1countable__discrete__base.html#a4358dc6485dbabd306a7ad7e24618405',1,'VW::details::countable_discrete_base']]],
-  ['guard_2eh_166',['guard.h',['../guard_8h.html',1,'']]]
+  ['graph_5ffeedback_5ftype_163',['GRAPH_FEEDBACK_TYPE',['../namespaceVW_1_1details.html#aea3a36ec8619d49b3384f67a33c86031',1,'VW::details']]],
+  ['graphtask_164',['GraphTask',['../namespaceGraphTask.html',1,'']]],
+  ['gravity_165',['gravity',['../classVW_1_1details_1_1multipredict__info.html#a3ce99686811a936941cabdd523a6fae1',1,'VW::details::multipredict_info::gravity()'],['../classVW_1_1shared__data.html#a88f22588da0951f56628fbeb4a8abd1e',1,'VW::shared_data::gravity()']]],
+  ['gt_166',['gt',['../classVW_1_1details_1_1countable__discrete__base.html#a4358dc6485dbabd306a7ad7e24618405',1,'VW::details::countable_discrete_base']]],
+  ['guard_2eh_167',['guard.h',['../guard_8h.html',1,'']]]
 ];
