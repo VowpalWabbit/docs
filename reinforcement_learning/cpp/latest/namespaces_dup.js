@@ -12,5 +12,5 @@ var namespaces_dup =
     [ "A full example of the expected context (note that newlines shouldn't be included):", "api_context_format.html#autotoc_md9", null ],
     [ "Zstandard compression", "compression.html#autotoc_md10", null ],
     [ "Dictionary-based action deduplication", "compression.html#autotoc_md11", null ],
-    [ "reinforcement_learning", "namespacereinforcement__learning.html", null ]
+    [ "reinforcement_learning", "namespacereinforcement__learning.html", "namespacereinforcement__learning" ]
 ];
