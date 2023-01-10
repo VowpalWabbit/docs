@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Vowpal Wabbit: /nix/store/3zfhm3yair7a6b4z6f6bh9k56y6a4ai8-source/vowpalwabbit/core/include/vw/core/cost_sensitive.h File Reference</title>
+<title>Vowpal Wabbit: /nix/store/d619ba30h5njcfzhp80mg33lg4hf0c25-source/vowpalwabbit/core/include/vw/core/cost_sensitive.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -82,7 +82,8 @@ $(function() {
   <div class="headertitle"><div class="title">cost_sensitive.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="label__parser_8h.html">vw/core/label_parser.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="action__score_8h.html">vw/core/action_score.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="label__parser_8h.html">vw/core/label_parser.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="multi__ex_8h.html">vw/core/multi_ex.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="vw__fwd_8h.html">vw/core/vw_fwd.h</a>&quot;</code><br />
 <code>#include &lt;cfloat&gt;</code><br />
@@ -129,6 +130,10 @@ Functions</h2></td></tr>
 <tr class="separator:a634209b3925af271398fdd96d9d5aa9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6daa91fc9cfb0f10ed1c69fb956cdc8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#aa6daa91fc9cfb0f10ed1c69fb956cdc8">VW::details::print_cs_update</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, bool is_test, const <a class="el" href="classVW_1_1example.html">VW::example</a> &amp;ec, const <a class="el" href="namespaceVW.html#a1dd7b95816f635bc6a5906d2b566c856">VW::multi_ex</a> *ec_seq, bool multilabel, uint32_t prediction)</td></tr>
 <tr class="separator:aa6daa91fc9cfb0f10ed1c69fb956cdc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3ded5d9ba559f73ef3a04152970c871"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#ac3ded5d9ba559f73ef3a04152970c871">VW::details::print_cs_update_multiclass</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, bool is_test, size_t num_features, uint32_t prediction)</td></tr>
+<tr class="separator:ac3ded5d9ba559f73ef3a04152970c871"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad029d2edeaf31d2cb1149642d3866dcf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#ad029d2edeaf31d2cb1149642d3866dcf">VW::details::print_cs_update_action_scores</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, bool is_test, size_t num_features, const <a class="el" href="namespaceVW.html#a2702c36414c2a3b9ee641b6bc2639e20">VW::action_scores</a> &amp;action_scores)</td></tr>
+<tr class="separator:ad029d2edeaf31d2cb1149642d3866dcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ddbd589c1e3f2d872c967567a563324"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#a4ddbd589c1e3f2d872c967567a563324">VW::details::update_stats_cs_label</a> (const <a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, shared_data &amp;sd, const <a class="el" href="classVW_1_1example.html">VW::example</a> &amp;ec, <a class="el" href="classVW_1_1io_1_1logger.html">VW::io::logger</a> &amp;logger)</td></tr>
 <tr class="separator:a4ddbd589c1e3f2d872c967567a563324"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a04e30a2d6605b3e5330ed0f87e44c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#a5a04e30a2d6605b3e5330ed0f87e44c5">VW::details::output_example_prediction_cs_label</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, const <a class="el" href="classVW_1_1example.html">VW::example</a> &amp;ec, <a class="el" href="classVW_1_1io_1_1logger.html">VW::io::logger</a> &amp;logger)</td></tr>
