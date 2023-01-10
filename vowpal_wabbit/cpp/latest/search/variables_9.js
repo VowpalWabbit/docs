@@ -15,7 +15,7 @@ var searchData=
   ['indexing_12',['indexing',['../classVW_1_1workspace.html#a5c8ca74e6cfa887a7a8d26cb88ab3eed',1,'VW::workspace']]],
   ['indices_13',['indices',['../classVW_1_1example__predict.html#ae3bcd81025e590305eb4aa9c50e24ad4',1,'VW::example_predict::indices()'],['../classVW_1_1features.html#a37378e9399be172af6314dc0c3774938',1,'VW::features::indices()']]],
   ['initial_14',['initial',['../classVW_1_1simple__label__reduction__features.html#a06a9ec62cf0b1dfc1ab38b35879b5af0',1,'VW::simple_label_reduction_features']]],
-  ['initial_5fconstant_15',['initial_constant',['../classVW_1_1workspace.html#a8bac625a986f688013d55d5fda5844fc',1,'VW::workspace::initial_constant()'],['../classGD_1_1gd.html#acbc1082b2cf38f270011cf3c6ab78079',1,'GD::gd::initial_constant()']]],
+  ['initial_5fconstant_15',['initial_constant',['../classVW_1_1workspace.html#a8bac625a986f688013d55d5fda5844fc',1,'VW::workspace::initial_constant()'],['../classVW_1_1reductions_1_1gd.html#ae53e4e966b8f3fc64f526696105b7b6f',1,'VW::reductions::gd::initial_constant()']]],
   ['initial_5fregressors_16',['initial_regressors',['../classVW_1_1workspace.html#a39d0ca7b190e757104872dd951ffabf2',1,'VW::workspace']]],
   ['initial_5ft_17',['initial_t',['../classVW_1_1workspace.html#afa89d7c4280de1cf77c8437a4063218f',1,'VW::workspace']]],
   ['initial_5fweight_18',['initial_weight',['../classVW_1_1workspace.html#a5ce0a725f475e4da41a41cc58edfd6bb',1,'VW::workspace']]],

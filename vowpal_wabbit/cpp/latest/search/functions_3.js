@@ -21,7 +21,7 @@ var searchData=
   ['do_5fswap_18',['do_swap',['../classVW_1_1details_1_1swap__guard__impl.html#aab5175200e844e9aec7344cee91512a4',1,'VW::details::swap_guard_impl::do_swap()'],['../classVW_1_1details_1_1swap__guard__impl__rvalue.html#a8bc7cd28e0cfdaeb2b20246662ff01c0',1,'VW::details::swap_guard_impl_rvalue::do_swap()']]],
   ['do_5fweighting_19',['do_weighting',['../namespaceVW_1_1details.html#aa681657de3752dd96fc5f34af0999315',1,'VW::details']]],
   ['duals_20',['Duals',['../classVW_1_1details_1_1Duals.html#ace249d9397ba7b380498e2b24d73d5ff',1,'VW::details::Duals::Duals()'],['../classVW_1_1details_1_1Duals.html#a4c7412b49af6a1636c998a3a648426c8',1,'VW::details::Duals::Duals(bool unbounded, double kappa, double gamma, double beta, double n)']]],
-  ['dummy_5ffunc_21',['dummy_func',['../namespaceGD.html#a654b239b0b90d7e0e47ce3bb1e221795',1,'GD']]],
+  ['dummy_5ffunc_21',['dummy_func',['../namespaceVW_1_1details.html#aa397e2c59000283581818336ce6d6b00',1,'VW::details']]],
   ['dump_5fregressor_22',['dump_regressor',['../namespaceVW_1_1details.html#a4bd0059a8db53c7cc7dbdee0bfe24bad',1,'VW::details::dump_regressor(VW::workspace &amp;all, io_buf &amp;buf, bool as_text)'],['../namespaceVW_1_1details.html#aaba122038dbeff9e27bf9ac17a4b3d8b',1,'VW::details::dump_regressor(VW::workspace &amp;all, const std::string &amp;reg_name, bool as_text)']]],
   ['dump_5fweights_5fto_5fjson_5fexperimental_23',['dump_weights_to_json_experimental',['../classVW_1_1workspace.html#a2511f756e18eabdc25d46b0997bf5928',1,'VW::workspace']]]
 ];

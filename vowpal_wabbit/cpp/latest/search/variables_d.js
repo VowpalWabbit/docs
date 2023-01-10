@@ -44,6 +44,6 @@ var searchData=
   ['multiclass_5flog_5floss_41',['multiclass_log_loss',['../classVW_1_1shared__data.html#a01515ba987108783a08bc33b231ef0dc',1,'VW::shared_data']]],
   ['multilabel_5flabel_5fparser_5fglobal_42',['multilabel_label_parser_global',['../namespaceVW.html#a8fa9a88c2a2df9e90a1cdaa479be6169',1,'VW']]],
   ['multilabels_43',['multilabels',['../classVW_1_1polylabel.html#a27c4433e00cde14f0985b11e2be0942a',1,'VW::polylabel::multilabels()'],['../classVW_1_1polyprediction.html#a9b1e250ecfe35b1ed736a949315d38fb',1,'VW::polyprediction::multilabels()']]],
-  ['multipredict_44',['multipredict',['../classGD_1_1gd.html#ad905016a43e986e59045d2754635eabc',1,'GD::gd']]],
+  ['multipredict_44',['multipredict',['../classVW_1_1reductions_1_1gd.html#ae14bf84a7fc6219d08701748ecaa98ae',1,'VW::reductions::gd']]],
   ['multipredict_5ff_45',['multipredict_f',['../classVW_1_1LEARNER_1_1details_1_1learn__data.html#a3648233df4af98fe57f26917d6088b46',1,'VW::LEARNER::details::learn_data']]]
 ];

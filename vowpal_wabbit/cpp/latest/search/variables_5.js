@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['early_5fstop_5fthres_0',['early_stop_thres',['../classGD_1_1gd.html#aea5b82195f447c6a115c80ef1fd7c6d2',1,'GD::gd']]],
+  ['early_5fstop_5fthres_0',['early_stop_thres',['../classVW_1_1reductions_1_1gd.html#a66f500854b8c5fd43fdd3486eca4a4fe',1,'VW::reductions::gd']]],
   ['early_5fterminate_1',['early_terminate',['../classVW_1_1workspace.html#a9130a68b27b5860681f921fe7aa64228',1,'VW::workspace']]],
   ['ec_2',['ec',['../classSearch_1_1BaseTask.html#a10360ccf2c6968bc17f6f04d946b0577',1,'Search::BaseTask']]],
   ['ecs_3',['ecs',['../classVW_1_1reductions_1_1cbify__adf__data.html#a5c2a336a1f69c6ec0a220f32c5babb31',1,'VW::reductions::cbify_adf_data']]],

@@ -12,5 +12,5 @@ var searchData=
   ['multiclass_5flabel_9',['multiclass_label',['../classVW_1_1multiclass__label.html',1,'VW']]],
   ['multilabel_5flabel_10',['multilabel_label',['../classVW_1_1multilabel__label.html',1,'VW']]],
   ['multilabel_5fprediction_11',['multilabel_prediction',['../classVW_1_1multilabel__prediction.html',1,'VW']]],
-  ['multipredict_5finfo_12',['multipredict_info',['../classGD_1_1multipredict__info.html',1,'GD']]]
+  ['multipredict_5finfo_12',['multipredict_info',['../classVW_1_1details_1_1multipredict__info.html',1,'VW::details']]]
 ];

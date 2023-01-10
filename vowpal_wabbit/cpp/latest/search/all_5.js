@@ -73,7 +73,7 @@ var searchData=
   ['dsjson_5fsum_5fcost_5foriginal_5ffirst_5fslot_70',['dsjson_sum_cost_original_first_slot',['../classVW_1_1details_1_1dsjson__metrics.html#a00b9f567a5775fd909688da3716439a9',1,'VW::details::dsjson_metrics']]],
   ['dsjson_5fsum_5fcost_5foriginal_5flabel_5fequal_5fbaseline_5ffirst_5fslot_71',['dsjson_sum_cost_original_label_equal_baseline_first_slot',['../classVW_1_1details_1_1dsjson__metrics.html#aee7ee21314b91c0236de0b2aeee5897c',1,'VW::details::dsjson_metrics']]],
   ['duals_72',['Duals',['../classVW_1_1details_1_1Duals.html#ace249d9397ba7b380498e2b24d73d5ff',1,'VW::details::Duals::Duals()'],['../classVW_1_1details_1_1Duals.html#a4c7412b49af6a1636c998a3a648426c8',1,'VW::details::Duals::Duals(bool unbounded, double kappa, double gamma, double beta, double n)'],['../classVW_1_1details_1_1Duals.html',1,'VW::details::Duals']]],
-  ['dummy_5ffunc_73',['dummy_func',['../namespaceGD.html#a654b239b0b90d7e0e47ce3bb1e221795',1,'GD']]],
+  ['dummy_5ffunc_73',['dummy_func',['../namespaceVW_1_1details.html#aa397e2c59000283581818336ce6d6b00',1,'VW::details']]],
   ['dump_5finterval_74',['dump_interval',['../classVW_1_1shared__data.html#ac9718a78c551599557a89f2e1223ff16',1,'VW::shared_data']]],
   ['dump_5fjson_5fweights_5finclude_5fextra_5fonline_5fstate_75',['dump_json_weights_include_extra_online_state',['../classVW_1_1workspace.html#a14f27e53096b7f9887ba9a3af0efaa8c',1,'VW::workspace']]],
   ['dump_5fjson_5fweights_5finclude_5ffeature_5fnames_76',['dump_json_weights_include_feature_names',['../classVW_1_1workspace.html#ada014e9abfaac61ea4a90636c4bcba00',1,'VW::workspace']]],
