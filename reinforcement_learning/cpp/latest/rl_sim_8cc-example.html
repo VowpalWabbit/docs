@@ -288,7 +288,9 @@ $(document).ready(function(){initNavTree('rl_sim_8cc-example.html',''); initResi
 <div class="line">    <span class="keyword">const</span> <span class="keyword">auto</span> chosen_action = response.get_chosen_action();</div>
 <div class="line">    <span class="keyword">const</span> <span class="keyword">auto</span> outcome = joint.get_outcome(chosen_action, _random_seed);</div>
 <div class="line">    <span class="keywordflow">if</span> (_rl-&gt;report_outcome(req_id.c_str(), outcome, &amp;status) != err::success &amp;&amp; outcome &gt; 0.00001f)</div>
-<div class="line">    { std::cout &lt;&lt; status.get_error_msg() &lt;&lt; std::endl; }</div>
+<div class="line">    {</div>
+<div class="line">      std::cout &lt;&lt; status.get_error_msg() &lt;&lt; std::endl;</div>
+<div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    stats.record(joint.id(), chosen_action, outcome);</div>
 <div class="line"> </div>
@@ -570,7 +572,9 @@ $(document).ready(function(){initNavTree('rl_sim_8cc-example.html',''); initResi
 <div class="line">  <span class="comment">// R&quot;(&quot;_multi&quot;: [ { &quot;TAction&quot;:{&quot;topic&quot;:&quot;HerbGarden&quot;} }, { &quot;TAction&quot;:{&quot;topic&quot;:&quot;MachineLearning&quot;} } ])&quot;;</span></div>
 <div class="line">  oss &lt;&lt; R<span class="stringliteral">&quot;(&quot;_multi&quot;: [ )&quot;;</span></div>
 <div class="line"><span class="stringliteral">  </span><span class="keywordflow">for</span> (<span class="keyword">auto</span> idx = 0; idx &lt; _topics.size() - 1; ++idx)</div>
-<div class="line">  { oss &lt;&lt; R<span class="stringliteral">&quot;({ &quot;TAction&quot;:{&quot;topic&quot;:&quot;)&quot; &lt;&lt; _topics[idx] &lt;&lt; R</span><span class="stringliteral">&quot;(&quot;} }, )&quot;; }</span></div>
+<div class="line">  {</div>
+<div class="line">    oss &lt;&lt; R<span class="stringliteral">&quot;({ &quot;TAction&quot;:{&quot;topic&quot;:&quot;)&quot; &lt;&lt; _topics[idx] &lt;&lt; R</span><span class="stringliteral">&quot;(&quot;} }, )&quot;;</span></div>
+<div class="line"><span class="stringliteral">  }</span></div>
 <div class="line"><span class="stringliteral">  oss &lt;&lt; R</span><span class="stringliteral">&quot;({ &quot;TAction&quot;:{&quot;topic&quot;:&quot;)&quot; &lt;&lt; _topics.back() &lt;&lt; R</span><span class="stringliteral">&quot;(&quot;} } ])&quot;;</span></div>
 <div class="line"><span class="stringliteral">  </span><span class="keywordflow">return</span> oss.str();</div>
 <div class="line">}</div>
@@ -645,18 +649,9 @@ $(document).ready(function(){initNavTree('rl_sim_8cc-example.html',''); initResi
 <div class="line">rl_sim::rl_sim(boost::program_options::variables_map vm) : _options(std::move(vm)), _loop_kind(CB)</div>
 <div class="line">{</div>
 <div class="line">  <span class="keywordflow">if</span> (_options[<span class="stringliteral">&quot;ccb&quot;</span>].as&lt;bool&gt;()) { _loop_kind = CCB; }</div>
-<div class="line">  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (_options[<span class="stringliteral">&quot;slates&quot;</span>].as&lt;bool&gt;())</div>
-<div class="line">  {</div>
-<div class="line">    _loop_kind = Slates;</div>
-<div class="line">  }</div>
-<div class="line">  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (_options[<span class="stringliteral">&quot;ca&quot;</span>].as&lt;bool&gt;())</div>
-<div class="line">  {</div>
-<div class="line">    _loop_kind = CA;</div>
-<div class="line">  }</div>
-<div class="line">  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (_options[<span class="stringliteral">&quot;multistep&quot;</span>].as&lt;bool&gt;())</div>
-<div class="line">  {</div>
-<div class="line">    _loop_kind = Multistep;</div>
-<div class="line">  }</div>
+<div class="line">  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (_options[<span class="stringliteral">&quot;slates&quot;</span>].as&lt;bool&gt;()) { _loop_kind = Slates; }</div>
+<div class="line">  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (_options[<span class="stringliteral">&quot;ca&quot;</span>].as&lt;bool&gt;()) { _loop_kind = CA; }</div>
+<div class="line">  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (_options[<span class="stringliteral">&quot;multistep&quot;</span>].as&lt;bool&gt;()) { _loop_kind = Multistep; }</div>
 <div class="line"> </div>
 <div class="line">  _num_events = _options[<span class="stringliteral">&quot;num_events&quot;</span>].as&lt;<span class="keywordtype">int</span>&gt;();</div>
 <div class="line">  _random_seed = _options[<span class="stringliteral">&quot;random_seed&quot;</span>].as&lt;uint64_t&gt;();</div>
@@ -714,8 +709,8 @@ $(document).ready(function(){initNavTree('rl_sim_8cc-example.html',''); initResi
 <div class="line">  ret += <span class="stringliteral">&quot;)&quot;</span>;</div>
 <div class="line">  <span class="keywordflow">return</span> ret;</div>
 <div class="line">}</div>
-<div class="ttc" id="aapi__status_8h_html_a11385635c23358843d733b2e6f3241c4"><div class="ttname"><a href="api__status_8h.html#a11385635c23358843d733b2e6f3241c4">RETURN_IF_FAIL</a></div><div class="ttdeci">#define RETURN_IF_FAIL(x)</div><div class="ttdoc">Error reporting macro to test and return on error.</div><div class="ttdef"><b>Definition:</b> api_status.h:246</div></div>
-<div class="ttc" id="aapi__status_8h_html_ae53bad0e4f12115d8d210228f0d5c1ae"><div class="ttname"><a href="api__status_8h.html#ae53bad0e4f12115d8d210228f0d5c1ae">RETURN_ERROR_LS</a></div><div class="ttdeci">#define RETURN_ERROR_LS(trace, status, code)</div><div class="ttdoc">Error reporting macro used with left shift operator.</div><div class="ttdef"><b>Definition:</b> api_status.h:239</div></div>
+<div class="ttc" id="aapi__status_8h_html_a11385635c23358843d733b2e6f3241c4"><div class="ttname"><a href="api__status_8h.html#a11385635c23358843d733b2e6f3241c4">RETURN_IF_FAIL</a></div><div class="ttdeci">#define RETURN_IF_FAIL(x)</div><div class="ttdoc">Error reporting macro to test and return on error.</div><div class="ttdef"><b>Definition:</b> api_status.h:244</div></div>
+<div class="ttc" id="aapi__status_8h_html_ae53bad0e4f12115d8d210228f0d5c1ae"><div class="ttname"><a href="api__status_8h.html#ae53bad0e4f12115d8d210228f0d5c1ae">RETURN_ERROR_LS</a></div><div class="ttdeci">#define RETURN_ERROR_LS(trace, status, code)</div><div class="ttdoc">Error reporting macro used with left shift operator.</div><div class="ttdef"><b>Definition:</b> api_status.h:237</div></div>
 <div class="ttc" id="aclassreinforcement__learning_1_1api__status_html"><div class="ttname"><a href="classreinforcement__learning_1_1api__status.html">reinforcement_learning::api_status</a></div><div class="ttdoc">Report status of all API calls.</div><div class="ttdef"><b>Definition:</b> api_status.h:22</div></div>
 <div class="ttc" id="aclassreinforcement__learning_1_1api__status_html_a802af4f7e9d6fab15c20f956b9390db5"><div class="ttname"><a href="classreinforcement__learning_1_1api__status.html#a802af4f7e9d6fab15c20f956b9390db5">reinforcement_learning::api_status::get_error_msg</a></div><div class="ttdeci">const char * get_error_msg() const</div><div class="ttdoc">(API Error Codes) Get the error msg string All API calls will return a status code....</div></div>
 <div class="ttc" id="aclassreinforcement__learning_1_1ranking__response_html"><div class="ttname"><a href="classreinforcement__learning_1_1ranking__response.html">reinforcement_learning::ranking_response</a></div><div class="ttdoc">choose_rank() returns the action choice using ranking_response. ranking_response contains all the act...</div><div class="ttdef"><b>Definition:</b> ranking_response.h:29</div></div>
