@@ -773,8 +773,6 @@ Functions</h2></td></tr>
 <tr class="separator:a8f9d3fee714a1396002d94b49434db36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8c5d9ce9a84ba93a15628d8846403a2"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ae8c5d9ce9a84ba93a15628d8846403a2">seed_vw_model</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;vw_model, const std::vector&lt; std::string &gt; &amp;extra_args, <a class="el" href="namespaceVW.html#a58dd7d81c6029805118e521ef7696f80">driver_output_func_t</a> driver_output_func=nullptr, void *driver_output_func_context=nullptr, <a class="el" href="classVW_1_1io_1_1logger.html">VW::io::logger</a> *custom_logger=nullptr)</td></tr>
 <tr class="separator:ae8c5d9ce9a84ba93a15628d8846403a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7120b83681f0295746e8d5a3939b49b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a7120b83681f0295746e8d5a3939b49b3">finalize_driver</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all)</td></tr>
-<tr class="separator:a7120b83681f0295746e8d5a3939b49b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa47ba6aa992b15b2e783daf944536641"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#aa47ba6aa992b15b2e783daf944536641">initialize_experimental</a> (std::unique_ptr&lt; <a class="el" href="classVW_1_1config_1_1options__i.html">config::options_i</a> &gt; options, std::unique_ptr&lt; <a class="el" href="classVW_1_1io_1_1reader.html">VW::io::reader</a> &gt; model_override_reader=nullptr, <a class="el" href="namespaceVW.html#a58dd7d81c6029805118e521ef7696f80">driver_output_func_t</a> driver_output_func=nullptr, void *driver_output_func_context=nullptr, <a class="el" href="classVW_1_1io_1_1logger.html">VW::io::logger</a> *custom_logger=nullptr, std::unique_ptr&lt; <a class="el" href="classVW_1_1setup__base__i.html">VW::setup_base_i</a> &gt; setup_base=nullptr)</td></tr>
 <tr class="memdesc:aa47ba6aa992b15b2e783daf944536641"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a workspace. This interface is currently experimental, but will replace the existing array of initialize functions.  <a href="namespaceVW.html#aa47ba6aa992b15b2e783daf944536641">More...</a><br /></td></tr>
 <tr class="separator:aa47ba6aa992b15b2e783daf944536641"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2499,25 +2497,6 @@ template&lt;typename RetType , typename InputType &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7120b83681f0295746e8d5a3939b49b3" name="a7120b83681f0295746e8d5a3939b49b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7120b83681f0295746e8d5a3939b49b3">&#9670;&#160;</a></span>finalize_driver()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void VW::finalize_driver </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;&#160;</td>
-          <td class="paramname"><em>all</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >This is used to perform finalization steps the driver/cli would normally do. If using <a class="el" href="namespaceVW.html">VW</a> in library mode, this call is optional. Some things this function does are: print summary, finalize regressor, output metrics, etc </p>
 
 </div>
 </div>
