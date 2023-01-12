@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['n_0',['n',['../classVW_1_1details_1_1Duals.html#a637ee45e21a742feff38f41bc134f896',1,'VW::details::Duals']]],
-  ['n_1',['N',['../classVW_1_1reductions_1_1expreplay_1_1expreplay.html#a2563123c377deacbee6f4ec4fa5051e9',1,'VW::reductions::expreplay::expreplay']]],
+  ['n_0',['N',['../classVW_1_1reductions_1_1expreplay_1_1expreplay.html#a2563123c377deacbee6f4ec4fa5051e9',1,'VW::reductions::expreplay::expreplay']]],
+  ['n_1',['n',['../classVW_1_1details_1_1Duals.html#a637ee45e21a742feff38f41bc134f896',1,'VW::details::Duals']]],
   ['name_2',['name',['../classVW_1_1audit__strings.html#aeda51a335733a0481b53d8057c22fdf9',1,'VW::audit_strings::name()'],['../classVW_1_1details_1_1dictionary__info.html#ae4c13b09ead447efd5dca770464ea18d',1,'VW::details::dictionary_info::name()'],['../classVW_1_1primitive__feature__space.html#a8f5b0342e8c1f8c6d6e5648d14894a59',1,'VW::primitive_feature_space::name()']]],
   ['named_5flabels_3',['named_labels',['../classVW_1_1named__labels.html#af54e798bcd0812a93175a682f528c7b3',1,'VW::named_labels::named_labels(std::string label_list)'],['../classVW_1_1named__labels.html#a7ae0f4fd5b1c03bf1ab262b8f28bc819',1,'VW::named_labels::named_labels(const named_labels &amp;other)'],['../classVW_1_1named__labels.html#af0e51d1a22463fc7c3184fe83b04618c',1,'VW::named_labels::named_labels(named_labels &amp;&amp;other) noexcept=delete'],['../classVW_1_1named__labels.html',1,'VW::named_labels']]],
   ['named_5flabels_2eh_4',['named_labels.h',['../named__labels_8h.html',1,'']]],
@@ -39,8 +39,8 @@ var searchData=
   ['node_5fid_5fnamespace_36',['NODE_ID_NAMESPACE',['../namespaceVW_1_1details.html#a3006355d8465181e3b89880ceacd278b',1,'VW::details']]],
   ['node_5fsocks_37',['node_socks',['../classVW_1_1details_1_1node__socks.html#a550dcf0678b38d0eaced2813f64b95ed',1,'VW::details::node_socks::node_socks()'],['../classVW_1_1details_1_1node__socks.html',1,'VW::details::node_socks']]],
   ['nodes_38',['nodes',['../classVW_1_1reductions_1_1offset__tree_1_1min__depth__binary__tree.html#a6ed0ae5f8fbfaa92a9e976b5dfb1b551',1,'VW::reductions::offset_tree::min_depth_binary_tree::nodes()'],['../classVW_1_1reductions_1_1cats_1_1min__depth__binary__tree.html#ae1a89c546ea2485a115a9b23151e9c88',1,'VW::reductions::cats::min_depth_binary_tree::nodes()']]],
-  ['nolabel_39',['nolabel',['../namespaceVW.html#a41c81f994e2400fabf138c9f2b3d78e5abc4ce7e7f17742bd8f235d39dbf7f30c',1,'VW']]],
-  ['nolabel_40',['NOLABEL',['../namespaceVW.html#a41c81f994e2400fabf138c9f2b3d78e5af1f6870b41a34eadc38ec63399b8ddd4',1,'VW']]],
+  ['nolabel_39',['NOLABEL',['../namespaceVW.html#a41c81f994e2400fabf138c9f2b3d78e5af1f6870b41a34eadc38ec63399b8ddd4',1,'VW']]],
+  ['nolabel_40',['nolabel',['../namespaceVW.html#a41c81f994e2400fabf138c9f2b3d78e5abc4ce7e7f17742bd8f235d39dbf7f30c',1,'VW']]],
   ['nominmax_41',['NOMINMAX',['../vw__math_8h.html#a9f918755b601cf4bffca775992e6fb90',1,'vw_math.h']]],
   ['nonempty_42',['nonempty',['../classVW_1_1features.html#a7b08ad2f08787e0da1410b32d955af6f',1,'VW::features']]],
   ['nonormalize_43',['nonormalize',['../classVW_1_1workspace.html#a4c264d20961cbb6bc6b46406ffa33d8e',1,'VW::workspace']]],
