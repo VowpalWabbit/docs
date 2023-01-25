@@ -100,7 +100,7 @@ var searchData=
   ['count_5flabel_97',['count_label',['../namespaceVW.html#ade7c66e76f0dc0b979504435741b275b',1,'VW']]],
   ['count_5flabel_5fsetup_98',['count_label_setup',['../namespaceVW_1_1reductions.html#a126c8a740c58793c741f55deb16f0a3c',1,'VW::reductions']]],
   ['count_5fnamespaces_99',['count_namespaces',['../namespaceVW_1_1reductions_1_1automl.html#ad9c7be1539e7381681389863337adf66',1,'VW::reductions::automl']]],
-  ['countable_5fdiscrete_5fbase_100',['countable_discrete_base',['../classVW_1_1details_1_1countable__discrete__base.html#a33c71e93543b54ef65c8e44daa1103e9',1,'VW::details::countable_discrete_base']]],
+  ['countable_5fdiscrete_5fbase_100',['countable_discrete_base',['../classVW_1_1details_1_1countable__discrete__base.html#a7210876b1dba3aa00f2d10ed8f5cffd7',1,'VW::details::countable_discrete_base']]],
   ['create_5fbuffer_5fview_101',['create_buffer_view',['../namespaceVW_1_1io.html#a695e28922891f4387c101453cf80bfcd',1,'VW::io']]],
   ['create_5fcustom_5fsink_5flogger_102',['create_custom_sink_logger',['../namespaceVW_1_1io.html#a4f919c655b6f037f503cd1d2ec3701b1',1,'VW::io']]],
   ['create_5fcustom_5fsink_5flogger_5flegacy_103',['create_custom_sink_logger_legacy',['../namespaceVW_1_1io.html#a6d082090958b291e909fe77f9c667138',1,'VW::io']]],

@@ -101,7 +101,7 @@ var searchData=
   ['rmin_98',['rmin',['../classVW_1_1estimators_1_1confidence__sequence.html#a09f7d995710ad4c300b96f55d4c1eaa5',1,'VW::estimators::confidence_sequence']]],
   ['rmin_5finit_99',['rmin_init',['../classVW_1_1estimators_1_1confidence__sequence.html#a5789f231424986a72db5dbacfb4149ed',1,'VW::estimators::confidence_sequence']]],
   ['root_100',['root',['../structVW_1_1reductions_1_1eigen__memory__tree_1_1emt__tree.html#a98d9a3f1b56c6a25d58147c8ce127d87',1,'VW::reductions::eigen_memory_tree::emt_tree']]],
-  ['root_5fbrentq_101',['root_brentq',['../classVW_1_1details_1_1countable__discrete__base.html#af1867a15e2b5df0eadc3f5a918fb11ce',1,'VW::details::countable_discrete_base']]],
+  ['root_5fbrentq_101',['root_brentq',['../classVW_1_1details_1_1countable__discrete__base.html#aaf56420bc78fa7de072d7ea134052495',1,'VW::details::countable_discrete_base']]],
   ['root_5fidx_102',['root_idx',['../classVW_1_1reductions_1_1offset__tree_1_1min__depth__binary__tree.html#a19838f9b050fb3b4ff5e428570965cbc',1,'VW::reductions::offset_tree::min_depth_binary_tree::root_idx()'],['../classVW_1_1reductions_1_1cats_1_1min__depth__binary__tree.html#a4a487e558b063b8db1efc80a8b57ae3a',1,'VW::reductions::cats::min_depth_binary_tree::root_idx()']]],
   ['rotl32_103',['rotl32',['../namespaceVW_1_1details.html#af141aa5de22ad4b5c23c5d0e44a58272',1,'VW::details']]],
   ['router_5fdecision_104',['router_decision',['../structVW_1_1reductions_1_1eigen__memory__tree_1_1emt__node.html#a81ef562596734c58128444c4357ce248',1,'VW::reductions::eigen_memory_tree::emt_node']]],
