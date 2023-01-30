@@ -1,7 +1,5 @@
 var NAVTREEINDEX0 =
 {
-"":[6,0,12,0],
-"":[6,0,12,1],
 "Build.html":[1],
 "Build.html#autotoc_md3":[3],
 "Build.html#autotoc_md4":[4],
@@ -124,8 +122,8 @@ var NAVTREEINDEX0 =
 "dir_d44c64559bbebec7f509842c48db8b23.html":[8,0,0],
 "err__constants_8h.html":[8,0,0,2],
 "err__constants_8h.html#a7ee931acdd46e901d29cd566edf03b48":[8,0,0,2,0],
-"err__constants_8h.html#a9e02480b74485258a64bf407704ea941":[8,0,0,2,2],
 "err__constants_8h.html#a9e02480b74485258a64bf407704ea941":[6,0,12,0,1],
+"err__constants_8h.html#a9e02480b74485258a64bf407704ea941":[8,0,0,2,2],
 "err__constants_8h.html#ab66aca13e1c7d08455a1af2484427758":[8,0,0,2,1],
 "err__constants_8h.html#ab66aca13e1c7d08455a1af2484427758":[6,0,12,0,0],
 "err__constants_8h_source.html":[8,0,0,2],
@@ -138,8 +136,8 @@ var NAVTREEINDEX0 =
 "functions_vars.html":[7,2,2],
 "globals.html":[8,1,0],
 "globals_defs.html":[8,1,1],
-"index.html":[],
 "index.html":[0],
+"index.html":[],
 "index.html#autotoc_md0":[0],
 "index.html#autotoc_md1":[1],
 "index.html#autotoc_md2":[2],
@@ -171,5 +169,7 @@ var NAVTREEINDEX0 =
 "structreinforcement__learning_1_1status__builder.html#a98f9424288e2acc44fab023bf0d60efb":[7,0,0,4,9],
 "structreinforcement__learning_1_1status__builder.html#ab58bc381a48ec1e464c074ffaf907579":[7,0,0,4,4],
 "structreinforcement__learning_1_1status__builder.html#ad293a5f661aed4ce3a9faa82b3e013ec":[7,0,0,4,1],
-"structreinforcement__learning_1_1status__builder.html#aef7a3df76c63afdd85f3b6d6e3b16559":[7,0,0,4,6]
+"structreinforcement__learning_1_1status__builder.html#aef7a3df76c63afdd85f3b6d6e3b16559":[7,0,0,4,6],
+"":[6,0,12,1],
+"":[6,0,12,0]
 };
