@@ -28,7 +28,7 @@ var searchData=
   ['interactions_25',['interactions',['../classVW_1_1example__predict.html#aa38af8869087f4ebf553e34a77d1981e',1,'VW::example_predict::interactions()'],['../classVW_1_1workspace.html#ad707621b18f8975075b3373b6699bc3f',1,'VW::workspace::interactions()']]],
   ['inv_5fhash_5fregressor_5fname_26',['inv_hash_regressor_name',['../classVW_1_1workspace.html#a8a4150e901445336a09ba8b49d126fcb',1,'VW::workspace']]],
   ['invariant_5fupdates_27',['invariant_updates',['../classVW_1_1workspace.html#a550fe0b2eaefd21c8d5fb5f57eb019cf',1,'VW::workspace']]],
-  ['ips_28',['ips',['../classVW_1_1cressieread__estimator.html#a4bac22b8723f46161bd103d2a3a2dd39',1,'VW::cressieread_estimator']]],
+  ['ips_28',['ips',['../classVW_1_1estimators_1_1cressieread.html#aa0698ae399fdb0ed815984dfa9411b43',1,'VW::estimators::cressieread']]],
   ['is_5fbrentq_29',['is_brentq',['../classVW_1_1details_1_1countable__discrete__base.html#abee4f73dd277d51a2e83a688b2010f36',1,'VW::details::countable_discrete_base']]],
   ['is_5fccb_5finput_5fmodel_30',['is_ccb_input_model',['../classVW_1_1workspace.html#ab1739c8984ecdde64051dd1c815bcf61',1,'VW::workspace']]],
   ['is_5fldf_31',['IS_LDF',['../namespaceSearch.html#a0cf0cfef46a3b6962d91d7de1ae67796',1,'Search']]],

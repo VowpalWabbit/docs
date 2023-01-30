@@ -31,7 +31,7 @@ var searchData=
   ['champ_5flog_5ffile_28',['champ_log_file',['../classVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a752bf7af1f5eebb7d11041502786c96e',1,'VW::reductions::automl::interaction_config_manager']]],
   ['check_5fholdout_5fevery_5fn_5fpasses_29',['check_holdout_every_n_passes',['../classVW_1_1workspace.html#ab6dac51e5b236f6e4c812f365d96bb35',1,'VW::workspace']]],
   ['children_30',['children',['../classVW_1_1details_1_1node__socks.html#a8267f0ec5849543593f97ae32dbd4a98',1,'VW::details::node_socks']]],
-  ['chisq_31',['chisq',['../classVW_1_1cressieread__estimator.html#a2b014a600d00dec9086e15ac29a76340',1,'VW::cressieread_estimator']]],
+  ['chisq_31',['chisq',['../classVW_1_1estimators_1_1cressieread.html#a2c474b63f43e02a853189aaaf7987314',1,'VW::estimators::cressieread']]],
   ['chosen_5faction_32',['chosen_action',['../classVW_1_1continuous__actions_1_1reduction__features.html#a7787a47aa964d286d2424fea39cca0b7',1,'VW::continuous_actions::reduction_features']]],
   ['chosen_5faction_33',['CHOSEN_ACTION',['../namespaceVW_1_1details.html#a26c8bd9b1937fe0401e4872f1401e1fa',1,'VW::details']]],
   ['class_5findex_34',['class_index',['../classVW_1_1cs__class.html#a2cf652c0bf75c3a4ee5dd087f666a5f4',1,'VW::cs_class']]],

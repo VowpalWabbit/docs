@@ -4,7 +4,7 @@ var searchData=
   ['ec_5fis_5fexample_5fheader_5fcb_1',['ec_is_example_header_cb',['../namespaceVW.html#afd2fd15f6d29b6ab1fe74480d0a2ddc8',1,'VW']]],
   ['ec_5fis_5fexample_5funset_2',['ec_is_example_unset',['../namespaceVW_1_1reductions_1_1ccb.html#a6c5d3fdfce3d92b10f822ab50cd9fb51',1,'VW::reductions::ccb']]],
   ['ect_5fsetup_3',['ect_setup',['../namespaceVW_1_1reductions.html#a22345313a80e68f26195ced03cb84f82',1,'VW::reductions']]],
-  ['effn_4',['effn',['../classVW_1_1estimators_1_1ChiSquared.html#a31b8d38a92c1cb0c86980a7ce97d4ac8',1,'VW::estimators::ChiSquared']]],
+  ['effn_4',['effn',['../classVW_1_1estimators_1_1chi__squared.html#a0cc5742c565a8e0ade09ee7a9c6984b5',1,'VW::estimators::chi_squared']]],
   ['eigen_5fmemory_5ftree_5fsetup_5',['eigen_memory_tree_setup',['../namespaceVW_1_1reductions.html#ad38b2258d4b4967722bf201442010fbd',1,'VW::reductions']]],
   ['elements_5fto_5fstring_6',['elements_to_string',['../namespaceVW_1_1reductions_1_1util.html#a087a3e5526c2f423df7b7f0f520a505e',1,'VW::reductions::util']]],
   ['emplace_5fback_7',['emplace_back',['../classVW_1_1v__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_33e27e9ce8c36a8ad45bb4ffa0ccdb7cc.html#a80149346d1485f9f9047799b07cfa883',1,'VW::v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;']]],

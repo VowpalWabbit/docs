@@ -9,7 +9,7 @@ var searchData=
   ['sample_5fpdf_2eh_6',['sample_pdf.h',['../sample__pdf_8h.html',1,'']]],
   ['sample_5fpdf_5fsetup_7',['sample_pdf_setup',['../namespaceVW_1_1reductions.html#a6346be3041212263c63f6c57f5655da5',1,'VW::reductions']]],
   ['sample_5fscores_8',['sample_scores',['../namespaceVW_1_1explore_1_1details.html#a97e8c471310528e8a8e94e693a624d7a',1,'VW::explore::details']]],
-  ['save_5fload_9',['save_load',['../classVW_1_1cb__explore__adf_1_1cb__explore__adf__base.html#a2253bde7f538a200b652075b9c508050',1,'VW::cb_explore_adf::cb_explore_adf_base::save_load()'],['../classVW_1_1LEARNER_1_1learner.html#a9129a600e89a45cad4b7db588ec864be',1,'VW::LEARNER::learner::save_load()'],['../classVW_1_1estimators_1_1ChiSquared.html#a072a3417b433d316092bf14680d36081',1,'VW::estimators::ChiSquared::save_load()']]],
+  ['save_5fload_9',['save_load',['../classVW_1_1cb__explore__adf_1_1cb__explore__adf__base.html#a2253bde7f538a200b652075b9c508050',1,'VW::cb_explore_adf::cb_explore_adf_base::save_load()'],['../classVW_1_1LEARNER_1_1learner.html#a9129a600e89a45cad4b7db588ec864be',1,'VW::LEARNER::learner::save_load()'],['../classVW_1_1estimators_1_1chi__squared.html#ae583288b3bf0b921d90fb19be5f46092',1,'VW::estimators::chi_squared::save_load()']]],
   ['save_5fload_5fdata_10',['save_load_data',['../classVW_1_1LEARNER_1_1details_1_1save__load__data.html',1,'VW::LEARNER::details']]],
   ['save_5fload_5ff_11',['save_load_f',['../classVW_1_1LEARNER_1_1details_1_1save__load__data.html#ab55446c88dee4d34d7d2dad76d5b933d',1,'VW::LEARNER::details::save_load_data']]],
   ['save_5fload_5fheader_12',['save_load_header',['../namespaceVW_1_1details.html#aca4cc697364f5dcddbe044cec576aa31',1,'VW::details']]],

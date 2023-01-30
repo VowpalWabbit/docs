@@ -119,7 +119,7 @@ var searchData=
   ['get_5foutput_5flocation_116',['get_output_location',['../namespaceVW_1_1io.html#acdd00bcfa4079aa83dc0791cc256ea2f',1,'VW::io']]],
   ['get_5foutput_5fprediction_5ftype_117',['get_output_prediction_type',['../classVW_1_1LEARNER_1_1learner.html#addb5ecdaced7bf52faf05b066994bb8e',1,'VW::LEARNER::learner']]],
   ['get_5fparameter_118',['get_parameter',['../classVW_1_1loss__function.html#a9200f22e1accbd1284fd7088957e69ae',1,'VW::loss_function']]],
-  ['get_5fphi_119',['get_phi',['../classVW_1_1estimators_1_1ChiSquared.html#a5cfbd4ac6604d9de332f1f205d5a191e',1,'VW::estimators::ChiSquared']]],
+  ['get_5fphi_119',['get_phi',['../classVW_1_1estimators_1_1chi__squared.html#a628867b68e6f543201b8527c7e5a6579',1,'VW::estimators::chi_squared']]],
   ['get_5fpid_120',['get_pid',['../namespaceVW.html#a33ca5617f73211fc230cb29051046d0c',1,'VW']]],
   ['get_5fpmf_121',['GET_PMF',['../classvw__dbg.html#a013743f313758d5a68a0a72f620ceba4',1,'vw_dbg']]],
   ['get_5fpmf_2eh_122',['get_pmf.h',['../get__pmf_8h.html',1,'']]],

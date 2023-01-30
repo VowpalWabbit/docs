@@ -51,7 +51,7 @@ var searchData=
   ['is_5froot_48',['is_root',['../classVW_1_1reductions_1_1cats_1_1tree__node.html#a717a0a4c9dea75742565cc0d7bffe2fc',1,'VW::reductions::cats::tree_node']]],
   ['is_5ftest_49',['is_test',['../classVW_1_1multilabel__label.html#a58821a8d1108f45c172b9010c326e84b',1,'VW::multilabel_label']]],
   ['is_5ftest_5flabel_50',['is_test_label',['../classVW_1_1cb__label.html#adcb6c2ef79ae1dd0a501db8f53401142',1,'VW::cb_label::is_test_label()'],['../classVW_1_1cs__label.html#af89aea4ad220c42171185bafa79bead7',1,'VW::cs_label::is_test_label()'],['../classVW_1_1ccb__label.html#a6e118cec3e417288f306415295903ee4',1,'VW::ccb_label::is_test_label()'],['../classVW_1_1cb__continuous_1_1continuous__label.html#aaf446281e824c5933656917aefc35e13',1,'VW::cb_continuous::continuous_label::is_test_label()']]],
-  ['is_5fvalid_51',['is_valid',['../classVW_1_1estimators_1_1ChiSquared.html#af128a5a916b3bdfaeddcc1716cabbc48',1,'VW::estimators::ChiSquared']]],
+  ['is_5fvalid_51',['is_valid',['../classVW_1_1estimators_1_1chi__squared.html#a69b4712e3d0d24b48112dcc8b170d7fb',1,'VW::estimators::chi_squared']]],
   ['is_5fvalid_5fpdf_52',['is_valid_pdf',['../namespaceVW_1_1continuous__actions.html#a4f1b699c90c2a0efb59a20b42707ef48',1,'VW::continuous_actions']]],
   ['isbinary_53',['isbinary',['../classVW_1_1io__buf.html#af0bfeb138372821a03432d54dd246dcb',1,'VW::io_buf']]],
   ['iterator_54',['iterator',['../classVW_1_1example__predict_1_1iterator.html#af617e83889521b881aa64c735f823365',1,'VW::example_predict::iterator']]],

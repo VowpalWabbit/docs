@@ -34,7 +34,7 @@ var searchData=
   ['multi_5fmodel_31',['multi_model',['../namespaceVW_1_1reductions_1_1multi__model.html',1,'VW::reductions']]],
   ['offset_5ftree_32',['offset_tree',['../namespaceVW_1_1reductions_1_1offset__tree.html',1,'VW::reductions']]],
   ['parsers_33',['parsers',['../namespaceVW_1_1parsers.html',1,'VW']]],
-  ['read_5fmodel_5ffield_34',['read_model_field',['../classVW_1_1details_1_1Duals.html#a6266b246eaaa70035eef0fc9e984fcae',1,'VW::details::Duals::read_model_field()'],['../classVW_1_1estimators_1_1ChiSquared.html#af0a5437e45dae27312f39f7e4776b562',1,'VW::estimators::ChiSquared::read_model_field()']]],
+  ['read_5fmodel_5ffield_34',['read_model_field',['../classVW_1_1details_1_1Duals.html#a6266b246eaaa70035eef0fc9e984fcae',1,'VW::details::Duals::read_model_field()'],['../classVW_1_1estimators_1_1chi__squared.html#afb01415981c0595d2eb2ec6db205af2d',1,'VW::estimators::chi_squared::read_model_field()']]],
   ['reductions_35',['reductions',['../namespaceVW_1_1reductions.html',1,'VW']]],
   ['setup_5fexample_36',['setup_example',['../classVW_1_1example.html#ab3a78547e49a44a2e78a489cb05fc178',1,'VW::example']]],
   ['slates_37',['slates',['../namespaceVW_1_1slates.html',1,'VW']]],
@@ -145,5 +145,5 @@ var searchData=
   ['vw_5fwarning_5fstate_5fpop_142',['VW_WARNING_STATE_POP',['../future__compat_8h.html#a2d17cd6c08058ed32e5fb9dc77629280',1,'future_compat.h']]],
   ['vw_5fwarning_5fstate_5fpush_143',['VW_WARNING_STATE_PUSH',['../future__compat_8h.html#a8b8610e8e86287f2b68275bf31acefb8',1,'future_compat.h']]],
   ['vwvis_2eh_144',['vwvis.h',['../vwvis_8h.html',1,'']]],
-  ['write_5fmodel_5ffield_145',['write_model_field',['../classVW_1_1estimators_1_1ChiSquared.html#a50b9704db1bf8c751877159b4cd25d65',1,'VW::estimators::ChiSquared::write_model_field()'],['../classVW_1_1details_1_1Duals.html#a8ca8f4b0a75e456c7de8d3445eb39aba',1,'VW::details::Duals::write_model_field()']]]
+  ['write_5fmodel_5ffield_145',['write_model_field',['../classVW_1_1estimators_1_1chi__squared.html#a2291c6c5cb4d619c6c9f016f89eff8a6',1,'VW::estimators::chi_squared::write_model_field()'],['../classVW_1_1details_1_1Duals.html#a8ca8f4b0a75e456c7de8d3445eb39aba',1,'VW::details::Duals::write_model_field()']]]
 ];

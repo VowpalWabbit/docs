@@ -26,8 +26,8 @@ var searchData=
   ['logger_23',['logger',['../classVW_1_1io_1_1logger.html#a31ee14d0cb1b7d0048c5bb8241684edc',1,'VW::io::logger::logger(logger &amp;&amp;) noexcept=default'],['../classVW_1_1io_1_1logger.html#a5f3243494248956b0d4ba0521a914deb',1,'VW::io::logger::logger(const logger &amp;)=default']]],
   ['logger_5fimpl_24',['logger_impl',['../classVW_1_1io_1_1details_1_1logger__impl.html#ad72c4a138cb59df97f6aee0a15e8697d',1,'VW::io::details::logger_impl']]],
   ['loss_25',['loss',['../classSearch_1_1search.html#ac043f03704a4b004290936cb1dc6822f',1,'Search::search']]],
-  ['lower_5fbound_26',['lower_bound',['../classVW_1_1cressieread__estimator.html#ac115d8df90804f26a48a1c54ae6a7476',1,'VW::cressieread_estimator::lower_bound()'],['../classVW_1_1estimators_1_1confidence__sequence__robust.html#aef8fd9605b218a4fb81f14e421e5cc1d',1,'VW::estimators::confidence_sequence_robust::lower_bound()'],['../classVW_1_1estimators_1_1confidence__sequence.html#a6ed3d38b18749709e8246ca3a4bb4094',1,'VW::estimators::confidence_sequence::lower_bound()']]],
-  ['lower_5fbound_5fand_5fupdate_27',['lower_bound_and_update',['../classVW_1_1estimators_1_1ChiSquared.html#a2a685595bf37c49039dc0715375ebb0f',1,'VW::estimators::ChiSquared']]],
+  ['lower_5fbound_26',['lower_bound',['../classVW_1_1estimators_1_1cressieread.html#a9dcc1c6dd3b9076b6b89f692353fa225',1,'VW::estimators::cressieread::lower_bound()'],['../classVW_1_1estimators_1_1confidence__sequence__robust.html#aef8fd9605b218a4fb81f14e421e5cc1d',1,'VW::estimators::confidence_sequence_robust::lower_bound()'],['../classVW_1_1estimators_1_1confidence__sequence.html#a6ed3d38b18749709e8246ca3a4bb4094',1,'VW::estimators::confidence_sequence::lower_bound()']]],
+  ['lower_5fbound_5fand_5fupdate_27',['lower_bound_and_update',['../classVW_1_1estimators_1_1chi__squared.html#a21c81f5fbfac4819d83f3fb636c85198',1,'VW::estimators::chi_squared']]],
   ['lrq_5fsetup_28',['lrq_setup',['../namespaceVW_1_1reductions.html#a7687ef6370f5a5bda2841730ec0fed78',1,'VW::reductions']]],
   ['lrqfa_5fsetup_29',['lrqfa_setup',['../namespaceVW_1_1reductions.html#a13e5d82bd73c2beecd4c9904d6a0de87',1,'VW::reductions']]]
 ];

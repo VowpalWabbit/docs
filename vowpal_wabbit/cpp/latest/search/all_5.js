@@ -13,7 +13,7 @@ var searchData=
   ['ecs_10',['ecs',['../classVW_1_1reductions_1_1cbify__adf__data.html#a5c2a336a1f69c6ec0a220f32c5babb31',1,'VW::reductions::cbify_adf_data']]],
   ['ect_2eh_11',['ect.h',['../ect_8h.html',1,'']]],
   ['ect_5fsetup_12',['ect_setup',['../namespaceVW_1_1reductions.html#a22345313a80e68f26195ced03cb84f82',1,'VW::reductions']]],
-  ['effn_13',['effn',['../classVW_1_1estimators_1_1ChiSquared.html#a31b8d38a92c1cb0c86980a7ce97d4ac8',1,'VW::estimators::ChiSquared']]],
+  ['effn_13',['effn',['../classVW_1_1estimators_1_1chi__squared.html#a0cc5742c565a8e0ade09ee7a9c6984b5',1,'VW::estimators::chi_squared']]],
   ['eigen_14',['EIGEN',['../namespaceVW_1_1reductions_1_1eigen__memory__tree.html#aa4449dec9656fcce91e656f71909a70cac9d9560db268703a1b8aa49a53022f67',1,'VW::reductions::eigen_memory_tree']]],
   ['eigen_5fmemory_5ftree_2eh_15',['eigen_memory_tree.h',['../eigen__memory__tree_8h.html',1,'']]],
   ['eigen_5fmemory_5ftree_5fsetup_16',['eigen_memory_tree_setup',['../namespaceVW_1_1reductions.html#ad38b2258d4b4967722bf201442010fbd',1,'VW::reductions']]],

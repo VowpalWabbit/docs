@@ -44,7 +44,7 @@ var searchData=
   ['correctedmath_2eh_41',['correctedMath.h',['../correctedMath_8h.html',1,'']]],
   ['cost_5fsensitive_2eh_42',['cost_sensitive.h',['../cost__sensitive_8h.html',1,'']]],
   ['count_5flabel_2eh_43',['count_label.h',['../count__label_8h.html',1,'']]],
-  ['cressieread_5festimator_2eh_44',['cressieread_estimator.h',['../cressieread__estimator_8h.html',1,'']]],
+  ['cressieread_2eh_44',['cressieread.h',['../cressieread_8h.html',1,'']]],
   ['crossplat_5fcompat_2eh_45',['crossplat_compat.h',['../crossplat__compat_8h.html',1,'']]],
   ['cs_5factive_2eh_46',['cs_active.h',['../cs__active_8h.html',1,'']]],
   ['csoaa_2eh_47',['csoaa.h',['../csoaa_8h.html',1,'']]],
