@@ -81,14 +81,16 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a077e5f526d13cf74a911a6e27fe0468a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1reductions_1_1multi__model.html#a077e5f526d13cf74a911a6e27fe0468a">clear_offset</a> (<a class="el" href="classVW_1_1dense__parameters.html">dense_parameters</a> &amp;weights, const size_t offset, const size_t params_per_problem)</td></tr>
-<tr class="separator:a077e5f526d13cf74a911a6e27fe0468a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f24b7d2f99e30e2d3942e2eae70025b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1reductions_1_1multi__model.html#a6f24b7d2f99e30e2d3942e2eae70025b">adjust_weights_single_model</a> (<a class="el" href="classVW_1_1dense__parameters.html">dense_parameters</a> &amp;weights, const size_t offset, const size_t params_per_problem)</td></tr>
-<tr class="separator:a6f24b7d2f99e30e2d3942e2eae70025b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adddceb6ee53e38ab3b4e99909322e448"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1reductions_1_1multi__model.html#adddceb6ee53e38ab3b4e99909322e448">clear_innermost_offset</a> (<a class="el" href="classVW_1_1dense__parameters.html">dense_parameters</a> &amp;weights, const size_t offset, const size_t overall_ppw_size, const size_t innermost_ppw_size)</td></tr>
+<tr class="separator:adddceb6ee53e38ab3b4e99909322e448"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16216f840453b0b7985afd603350b528"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1reductions_1_1multi__model.html#a16216f840453b0b7985afd603350b528">move_innermost_offsets</a> (<a class="el" href="classVW_1_1dense__parameters.html">dense_parameters</a> &amp;weights, const size_t from, const size_t to, const size_t overall_ppw_size, const size_t innermost_ppw_size, bool swap=false)</td></tr>
+<tr class="separator:a16216f840453b0b7985afd603350b528"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac06f744cccabe6cd83000910b172d102"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1reductions_1_1multi__model.html#ac06f744cccabe6cd83000910b172d102">reduce_innermost_model_weights</a> (<a class="el" href="classVW_1_1dense__parameters.html">dense_parameters</a> &amp;weights, const size_t offset, const size_t overall_ppw_size, const size_t innermost_ppw_size)</td></tr>
+<tr class="separator:ac06f744cccabe6cd83000910b172d102"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a6f24b7d2f99e30e2d3942e2eae70025b" name="a6f24b7d2f99e30e2d3942e2eae70025b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f24b7d2f99e30e2d3942e2eae70025b">&#9670;&#160;</a></span>adjust_weights_single_model()</h2>
+<a id="adddceb6ee53e38ab3b4e99909322e448" name="adddceb6ee53e38ab3b4e99909322e448"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adddceb6ee53e38ab3b4e99909322e448">&#9670;&#160;</a></span>clear_innermost_offset()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -97,7 +99,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void VW::reductions::multi_model::adjust_weights_single_model </td>
+          <td class="memname">void VW::reductions::multi_model::clear_innermost_offset </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classVW_1_1dense__parameters.html">dense_parameters</a> &amp;&#160;</td>
           <td class="paramname"><em>weights</em>, </td>
@@ -112,7 +114,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const size_t&#160;</td>
-          <td class="paramname"><em>params_per_problem</em>&#160;</td>
+          <td class="paramname"><em>overall_ppw_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>innermost_ppw_size</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -129,8 +137,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a077e5f526d13cf74a911a6e27fe0468a" name="a077e5f526d13cf74a911a6e27fe0468a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a077e5f526d13cf74a911a6e27fe0468a">&#9670;&#160;</a></span>clear_offset()</h2>
+<a id="a16216f840453b0b7985afd603350b528" name="a16216f840453b0b7985afd603350b528"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16216f840453b0b7985afd603350b528">&#9670;&#160;</a></span>move_innermost_offsets()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -139,7 +147,67 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void VW::reductions::multi_model::clear_offset </td>
+          <td class="memname">void VW::reductions::multi_model::move_innermost_offsets </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classVW_1_1dense__parameters.html">dense_parameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>weights</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>to</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>overall_ppw_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>innermost_ppw_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>swap</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac06f744cccabe6cd83000910b172d102" name="ac06f744cccabe6cd83000910b172d102"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac06f744cccabe6cd83000910b172d102">&#9670;&#160;</a></span>reduce_innermost_model_weights()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VW::reductions::multi_model::reduce_innermost_model_weights </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classVW_1_1dense__parameters.html">dense_parameters</a> &amp;&#160;</td>
           <td class="paramname"><em>weights</em>, </td>
@@ -154,7 +222,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const size_t&#160;</td>
-          <td class="paramname"><em>params_per_problem</em>&#160;</td>
+          <td class="paramname"><em>overall_ppw_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>innermost_ppw_size</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

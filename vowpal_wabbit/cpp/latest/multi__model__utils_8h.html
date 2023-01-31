@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Vowpal Wabbit: /nix/store/6psia8igncnr5k1ap921wz488dga8n72-source/vowpalwabbit/core/include/vw/core/multi_model_utils.h File Reference</title>
+<title>Vowpal Wabbit: /nix/store/9j61r2grbzrr5vg5lxlqdgssdaxw4j9m-source/vowpalwabbit/core/include/vw/core/multi_model_utils.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -82,7 +82,6 @@ $(function() {
 <div class="textblock"><code>#include &quot;<a class="el" href="random_8h.html">vw/common/random.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="array__parameters__dense_8h.html">vw/core/array_parameters_dense.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="learner_8h.html">vw/core/learner.h</a>&quot;</code><br />
-<code>#include &lt;queue&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -95,10 +94,12 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a077e5f526d13cf74a911a6e27fe0468a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1reductions_1_1multi__model.html#a077e5f526d13cf74a911a6e27fe0468a">VW::reductions::multi_model::clear_offset</a> (<a class="el" href="array__parameters__dense_8h.html#aa7e6d80479858c7f11e18f6f3392e5a9">dense_parameters</a> &amp;weights, const size_t offset, const size_t params_per_problem)</td></tr>
-<tr class="separator:a077e5f526d13cf74a911a6e27fe0468a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f24b7d2f99e30e2d3942e2eae70025b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1reductions_1_1multi__model.html#a6f24b7d2f99e30e2d3942e2eae70025b">VW::reductions::multi_model::adjust_weights_single_model</a> (<a class="el" href="array__parameters__dense_8h.html#aa7e6d80479858c7f11e18f6f3392e5a9">dense_parameters</a> &amp;weights, const size_t offset, const size_t params_per_problem)</td></tr>
-<tr class="separator:a6f24b7d2f99e30e2d3942e2eae70025b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adddceb6ee53e38ab3b4e99909322e448"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1reductions_1_1multi__model.html#adddceb6ee53e38ab3b4e99909322e448">VW::reductions::multi_model::clear_innermost_offset</a> (<a class="el" href="array__parameters__dense_8h.html#aa7e6d80479858c7f11e18f6f3392e5a9">dense_parameters</a> &amp;weights, const size_t offset, const size_t overall_ppw_size, const size_t innermost_ppw_size)</td></tr>
+<tr class="separator:adddceb6ee53e38ab3b4e99909322e448"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16216f840453b0b7985afd603350b528"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1reductions_1_1multi__model.html#a16216f840453b0b7985afd603350b528">VW::reductions::multi_model::move_innermost_offsets</a> (<a class="el" href="array__parameters__dense_8h.html#aa7e6d80479858c7f11e18f6f3392e5a9">dense_parameters</a> &amp;weights, const size_t from, const size_t to, const size_t overall_ppw_size, const size_t innermost_ppw_size, bool swap=false)</td></tr>
+<tr class="separator:a16216f840453b0b7985afd603350b528"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac06f744cccabe6cd83000910b172d102"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1reductions_1_1multi__model.html#ac06f744cccabe6cd83000910b172d102">VW::reductions::multi_model::reduce_innermost_model_weights</a> (<a class="el" href="array__parameters__dense_8h.html#aa7e6d80479858c7f11e18f6f3392e5a9">dense_parameters</a> &amp;weights, const size_t offset, const size_t overall_ppw_size, const size_t innermost_ppw_size)</td></tr>
+<tr class="separator:ac06f744cccabe6cd83000910b172d102"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
