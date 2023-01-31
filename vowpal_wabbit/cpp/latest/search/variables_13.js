@@ -16,7 +16,7 @@ var searchData=
   ['timestamp_13',['timestamp',['../classVW_1_1parsers_1_1json_1_1decision__service__interaction.html#abda8e632b3571f3dbe83df43bf639a21',1,'VW::parsers::json::decision_service_interaction']]],
   ['tnormal_5fweights_14',['tnormal_weights',['../classVW_1_1workspace.html#a8a029eb3c2e7f29cf8ecb0bcf5598528',1,'VW::workspace']]],
   ['tokens_15',['tokens',['../classVW_1_1label__parser__reuse__mem.html#abd4d46fe52aa8f9b495c9e2b7663935c',1,'VW::label_parser_reuse_mem']]],
-  ['tol_5fx_16',['tol_x',['../classVW_1_1details_1_1countable__discrete__base.html#a9e8ac9cc980100acb51794aff7aa84a5',1,'VW::details::countable_discrete_base']]],
+  ['tol_5fx_16',['tol_x',['../classVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a79a0fdbb700cba7ccb411b8f7e44cf62',1,'VW::reductions::automl::interaction_config_manager::tol_x()'],['../classVW_1_1details_1_1countable__discrete__base.html#a9e8ac9cc980100acb51794aff7aa84a5',1,'VW::details::countable_discrete_base::tol_x()']]],
   ['total_17',['total',['../classVW_1_1all__reduce__base.html#aa527fbd5c585da9e4e8ae59fa06e91e1',1,'VW::all_reduce_base']]],
   ['total_5fchamp_5fswitches_18',['total_champ_switches',['../classVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a2f7b31e8fe3d92b9663d560c5c71e770',1,'VW::reductions::automl::interaction_config_manager']]],
   ['total_5ffeatures_19',['total_features',['../classVW_1_1shared__data.html#af11fff1aeea9b463e0ddfbc591bc79aa',1,'VW::shared_data']]],
