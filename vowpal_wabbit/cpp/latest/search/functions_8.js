@@ -54,6 +54,6 @@ var searchData=
   ['is_5fvalid_51',['is_valid',['../classVW_1_1estimators_1_1chi__squared.html#a69b4712e3d0d24b48112dcc8b170d7fb',1,'VW::estimators::chi_squared']]],
   ['is_5fvalid_5fpdf_52',['is_valid_pdf',['../namespaceVW_1_1continuous__actions.html#a4f1b699c90c2a0efb59a20b42707ef48',1,'VW::continuous_actions']]],
   ['isbinary_53',['isbinary',['../classVW_1_1io__buf.html#af0bfeb138372821a03432d54dd246dcb',1,'VW::io_buf']]],
-  ['iterator_54',['Iterator',['../classVW_1_1reductions_1_1automl_1_1Iterator.html#a4fd265eccbc4c36bff22fb11ae5685af',1,'VW::reductions::automl::Iterator']]],
-  ['iterator_55',['iterator',['../classVW_1_1example__predict_1_1iterator.html#af617e83889521b881aa64c735f823365',1,'VW::example_predict::iterator']]]
+  ['iterator_54',['iterator',['../classVW_1_1example__predict_1_1iterator.html#af617e83889521b881aa64c735f823365',1,'VW::example_predict::iterator']]],
+  ['iterator_55',['Iterator',['../classVW_1_1reductions_1_1automl_1_1Iterator.html#a4fd265eccbc4c36bff22fb11ae5685af',1,'VW::reductions::automl::Iterator']]]
 ];
