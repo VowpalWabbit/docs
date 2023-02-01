@@ -16,7 +16,7 @@ var searchData=
   ['add_5fand_5fparse_13',['add_and_parse',['../classVW_1_1config_1_1options__i.html#a58de60af39721dc86899fa870005deda',1,'VW::config::options_i']]],
   ['add_5fcondition_14',['add_condition',['../classSearch_1_1predictor.html#a2f6875b66c4bc96daafda723ffaf34ec',1,'Search::predictor']]],
   ['add_5fcondition_5frange_15',['add_condition_range',['../classSearch_1_1predictor.html#a94aee8f7c3d20be135b965b4c3c46172',1,'Search::predictor']]],
-  ['add_5fconstant_5ffeature_16',['add_constant_feature',['../namespaceVW.html#ac032564d90d6734a4d6a0068d4d3c1fa',1,'VW']]],
+  ['add_5fconstant_5ffeature_16',['add_constant_feature',['../namespaceVW.html#a1b99c87f5c3db6dcc787b3449256efb8',1,'VW']]],
   ['add_5ffile_17',['add_file',['../classVW_1_1io__buf.html#aa9711accd9e09506156bf9495fa91618',1,'VW::io_buf::add_file(std::unique_ptr&lt; VW::io::writer &gt; &amp;&amp;file)'],['../classVW_1_1io__buf.html#a9222f332980acfc08fa9801f19ba61d7',1,'VW::io_buf::add_file(std::unique_ptr&lt; VW::io::reader &gt; &amp;&amp;file)']]],
   ['add_5flabel_18',['add_label',['../namespaceVW.html#a96187968fc158b672e089c3f4ccd7543',1,'VW']]],
   ['add_5fobs_19',['add_obs',['../classVW_1_1details_1_1g__tilde.html#a2af32251bb7d5c6c4bbffa4d907d2800',1,'VW::details::g_tilde::add_obs()'],['../classVW_1_1details_1_1countable__discrete__base.html#a93f604c24b1a0e135bdbf87fc7ecd7e8',1,'VW::details::countable_discrete_base::add_obs()']]],
