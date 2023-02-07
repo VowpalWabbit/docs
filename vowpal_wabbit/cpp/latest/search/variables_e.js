@@ -8,6 +8,5 @@ var searchData=
   ['outcome_5',['outcome',['../classVW_1_1ccb__label.html#a6d3edbab9b17a1328c28e8bce029cb4e',1,'VW::ccb_label']]],
   ['output_6',['output',['../classVW_1_1parser.html#a29a15b13a0608b86f480d43c9c8e9a79',1,'VW::parser']]],
   ['output_5fdone_7',['output_done',['../classVW_1_1parser.html#a66569d2054c5a5c1b9b82b9fc570e60a',1,'VW::parser']]],
-  ['output_5fexample_5fprediction_5ff_8',['output_example_prediction_f',['../classVW_1_1LEARNER_1_1details_1_1finish__example__data.html#abc37bd6ee7ca4b9766d05626b37b4acd',1,'VW::LEARNER::details::finish_example_data']]],
-  ['output_5flock_9',['output_lock',['../classVW_1_1parser.html#a2164ac1246b22fcda88038eb56078795',1,'VW::parser']]]
+  ['output_5flock_8',['output_lock',['../classVW_1_1parser.html#a2164ac1246b22fcda88038eb56078795',1,'VW::parser']]]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Vowpal Wabbit: /nix/store/xjy6jmgfykmpcxzcsnkk31870ad12k2r-source/vowpalwabbit/core/include/vw/core/automl_impl.h File Reference</title>
+<title>Vowpal Wabbit: /nix/store/6lixy7qmg10mjw63mhqhv27s95laiky9-source/vowpalwabbit/core/include/vw/core/automl_impl.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -86,6 +86,7 @@ $(function() {
 <code>#include &quot;<a class="el" href="array__parameters__dense_8h.html">vw/core/array_parameters_dense.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="learner_8h.html">vw/core/learner.h</a>&quot;</code><br />
 <code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
 <code>#include &lt;queue&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -143,8 +144,8 @@ Typedefs</h2></td></tr>
 <tr class="separator:ab3b98552a036f480d39c5de92cca79f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15976a5bb8c5f86a7b0b6045910fe6ef"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1reductions_1_1automl.html#a15976a5bb8c5f86a7b0b6045910fe6ef">VW::reductions::automl::set_ns_list_t</a> = std::set&lt; std::vector&lt; <a class="el" href="namespaceVW.html#abbbfd142fffaccd884cf1762f553eb50">VW::namespace_index</a> &gt; &gt;</td></tr>
 <tr class="separator:a15976a5bb8c5f86a7b0b6045910fe6ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac81cd18fca583f6e6d392351cd5d9948"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1reductions_1_1automl.html#ac81cd18fca583f6e6d392351cd5d9948">VW::reductions::automl::priority_func</a> = float(const ns_based_config &amp;, const std::map&lt; <a class="el" href="example__predict_8h.html#a067b486de4f4d17f3c7c4f2403efa955">namespace_index</a>, uint64_t &gt; &amp;)</td></tr>
-<tr class="separator:ac81cd18fca583f6e6d392351cd5d9948"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ae8a70f94e40504a5c5dccc0d39e96f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1reductions_1_1automl.html#a2ae8a70f94e40504a5c5dccc0d39e96f">VW::reductions::automl::priority_func</a> = std::function&lt; float(const ns_based_config &amp;, const std::map&lt; <a class="el" href="example__predict_8h.html#a067b486de4f4d17f3c7c4f2403efa955">namespace_index</a>, uint64_t &gt; &amp;)&gt;</td></tr>
+<tr class="separator:a2ae8a70f94e40504a5c5dccc0d39e96f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>

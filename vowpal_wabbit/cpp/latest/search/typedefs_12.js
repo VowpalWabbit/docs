@@ -1,4 +1,10 @@
 var searchData=
 [
-  ['update_5fstats_5ffn_0',['update_stats_fn',['../classVW_1_1LEARNER_1_1details_1_1finish__example__data.html#a0eb8ce0e1f737e6f613dc51b7148c20a',1,'VW::LEARNER::details::finish_example_data']]]
+  ['v_0',['V',['../structVW_1_1reductions_1_1eigen__memory__tree_1_1emt__lru.html#ac8602c963d41be756abe318f54587780',1,'VW::reductions::eigen_memory_tree::emt_lru']]],
+  ['v_5farray_1',['v_array',['../v__array_8h.html#ad5758602e2a70deacf79ee8b00b6e4cb',1,'v_array.h']]],
+  ['v_5farray_5fpool_2',['v_array_pool',['../namespaceVW.html#a07630cfca8cc0e4357e1dfc3dc9219ad',1,'VW']]],
+  ['value_5ftype_3',['value_type',['../classVW_1_1config_1_1typed__option.html#aba8098705f929692df00010f134ae4ea',1,'VW::config::typed_option::value_type()'],['../classVW_1_1action__scores__score__iterator.html#ad682afac780692a2e63f91bb0fcea0ab',1,'VW::action_scores_score_iterator::value_type()'],['../classVW_1_1details_1_1dense__iterator.html#ae1a8303c87c740c6f79fc24dc8a06719',1,'VW::details::dense_iterator::value_type()'],['../classVW_1_1details_1_1sparse__iterator.html#a753571608f43e73bdceb0cebaf42cc6f',1,'VW::details::sparse_iterator::value_type()'],['../classVW_1_1details_1_1audit__features__iterator.html#a8cc03dce57f451d9d5bfebc006605a3d',1,'VW::details::audit_features_iterator::value_type()'],['../classVW_1_1details_1_1ns__extent__iterator.html#ac2e40b9169ffebe2a9bb61ba0e1b595d',1,'VW::details::ns_extent_iterator::value_type()'],['../classVW_1_1details_1_1features__iterator.html#ae0ac9d1cc07a5dc734c4bae63470c6da',1,'VW::details::features_iterator::value_type()'],['../classVW_1_1v__array_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__trivially__copyable_33e27e9ce8c36a8ad45bb4ffa0ccdb7cc.html#a9f994a02baa2d6fc911c05bc0640ffe5',1,'VW::v_array&lt; T, typename std::enable_if&lt; std::is_trivially_copyable&lt; T &gt;::value &gt;::type &gt;::value_type()']]],
+  ['vector_5fpool_4',['vector_pool',['../namespaceVW.html#ae39ca8662fac3c3327f8a94b6dbc0b14',1,'VW']]],
+  ['void_5ffunc_5',['void_func',['../namespaceVW_1_1LEARNER_1_1details.html#abd78f8e9b03fd67cd96296e7f72a57cf',1,'VW::LEARNER::details']]],
+  ['vw_6',['vw',['../global__data_8h.html#a9953f828dd26f6e08b15104bf2e25a64',1,'global_data.h']]]
 ];

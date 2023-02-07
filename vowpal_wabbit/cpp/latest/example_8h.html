@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Vowpal Wabbit: /nix/store/xjy6jmgfykmpcxzcsnkk31870ad12k2r-source/vowpalwabbit/core/include/vw/core/example.h File Reference</title>
+<title>Vowpal Wabbit: /nix/store/6lixy7qmg10mjw63mhqhv27s95laiky9-source/vowpalwabbit/core/include/vw/core/example.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -100,6 +100,7 @@ $(function() {
 <code>#include &quot;<a class="el" href="slates__label_8h.html">vw/core/slates_label.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="v__array_8h.html">vw/core/v_array.h</a>&quot;</code><br />
 <code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -131,8 +132,8 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a28e15f52840539d6b0c56aa196e11278"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a28e15f52840539d6b0c56aa196e11278">VW::example_factory_t</a> = <a class="el" href="example_8h.html#ad8bc4e4e4b50871a4a048c3a6b6e5309">example</a> &amp;(*)(void *)</td></tr>
-<tr class="separator:a28e15f52840539d6b0c56aa196e11278"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5489a0fd240d8221e205b8773406f819"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a5489a0fd240d8221e205b8773406f819">VW::example_factory_t</a> = std::function&lt; <a class="el" href="example_8h.html#ad8bc4e4e4b50871a4a048c3a6b6e5309">example</a> &amp;()&gt;</td></tr>
+<tr class="separator:a5489a0fd240d8221e205b8773406f819"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83317d42673f61e3021102024f9912f0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="example_8h.html#a83317d42673f61e3021102024f9912f0">polylabel</a> = <a class="el" href="classVW_1_1polylabel.html">VW::polylabel</a></td></tr>
 <tr class="separator:a83317d42673f61e3021102024f9912f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1cc52ebe494dfad21be1555c8e4d6b7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="example_8h.html#ac1cc52ebe494dfad21be1555c8e4d6b7">polyprediction</a> = <a class="el" href="classVW_1_1polyprediction.html">VW::polyprediction</a></td></tr>
@@ -225,7 +226,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  <a class="code hl_function" href="namespaceVW_1_1details.html#a5b2f3c9a535483334cec9db91a8a817a">VW::details::add_passthrough_feature_magic</a>( \</div>
 <div class="line">      ec, __FILE__[0] * 483901 + __FILE__[1] * 3417 + __FILE__[2] * 8490177, i, x);</div>
-<div class="ttc" id="anamespaceVW_1_1details_html_a5b2f3c9a535483334cec9db91a8a817a"><div class="ttname"><a href="namespaceVW_1_1details.html#a5b2f3c9a535483334cec9db91a8a817a">VW::details::add_passthrough_feature_magic</a></div><div class="ttdeci">void add_passthrough_feature_magic(example &amp;ec, uint64_t magic, uint64_t i, float x)</div><div class="ttdef"><b>Definition:</b> example.h:172</div></div>
+<div class="ttc" id="anamespaceVW_1_1details_html_a5b2f3c9a535483334cec9db91a8a817a"><div class="ttname"><a href="namespaceVW_1_1details.html#a5b2f3c9a535483334cec9db91a8a817a">VW::details::add_passthrough_feature_magic</a></div><div class="ttdeci">void add_passthrough_feature_magic(example &amp;ec, uint64_t magic, uint64_t i, float x)</div><div class="ttdef"><b>Definition:</b> example.h:173</div></div>
 </div><!-- fragment -->
 </div>
 </div>

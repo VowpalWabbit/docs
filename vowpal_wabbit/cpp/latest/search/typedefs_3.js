@@ -1,7 +1,12 @@
 var searchData=
 [
-  ['decision_5fscores_5ft_0',['decision_scores_t',['../namespaceVW.html#a3768fd881d5a155fd39197bb5be1c1a4',1,'VW']]],
-  ['dense_5fparameters_1',['dense_parameters',['../array__parameters__dense_8h.html#aa7e6d80479858c7f11e18f6f3392e5a9',1,'array_parameters_dense.h']]],
-  ['difference_5ftype_2',['difference_type',['../classVW_1_1action__scores__score__iterator.html#a55b3ecae05adc242c001da7301a017f1',1,'VW::action_scores_score_iterator::difference_type()'],['../classVW_1_1details_1_1dense__iterator.html#a3a2591d9914a52bfb4ca223c93c46780',1,'VW::details::dense_iterator::difference_type()'],['../classVW_1_1details_1_1sparse__iterator.html#acae0904b9c7b1e0b740c058f8598c3f0',1,'VW::details::sparse_iterator::difference_type()'],['../classVW_1_1details_1_1audit__features__iterator.html#abb265d84e2187bddbf035a4b7e0e60c8',1,'VW::details::audit_features_iterator::difference_type()'],['../classVW_1_1details_1_1ns__extent__iterator.html#aabb92425cc945a741d350862077dd557',1,'VW::details::ns_extent_iterator::difference_type()'],['../classVW_1_1details_1_1features__iterator.html#ad1500d5936c2ebb005f9089e1c9d8ffd',1,'VW::details::features_iterator::difference_type()']]],
-  ['driver_5foutput_5ffunc_5ft_3',['driver_output_func_t',['../namespaceVW.html#a58dd7d81c6029805118e521ef7696f80',1,'VW']]]
+  ['emt_5ffeats_0',['emt_feats',['../namespaceVW_1_1reductions_1_1eigen__memory__tree.html#a08d4aa79e163a76bc6d7663667ea46aa',1,'VW::reductions::eigen_memory_tree']]],
+  ['estimator_5fvec_5ft_1',['estimator_vec_t',['../namespaceVW_1_1reductions_1_1automl.html#ab3b98552a036f480d39c5de92cca79f7',1,'VW::reductions::automl']]],
+  ['example_2',['example',['../example_8h.html#ad8bc4e4e4b50871a4a048c3a6b6e5309',1,'example.h']]],
+  ['example_5ffactory_5ft_3',['example_factory_t',['../namespaceVW.html#a5489a0fd240d8221e205b8773406f819',1,'VW']]],
+  ['example_5ffunc_4',['example_func',['../namespaceVW_1_1LEARNER_1_1details.html#a4da1adeb0dd812ef4f71fe8abf78deb4',1,'VW::LEARNER::details']]],
+  ['example_5fpredict_5',['example_predict',['../example__predict_8h.html#ae508cf02fc304e96bda9fbf66296d4f7',1,'example_predict.h']]],
+  ['example_5ftype_6',['example_type',['../namespaceCCB.html#a64fe3c3075c4064b91150d0d7e4a11e9',1,'CCB']]],
+  ['extent_5fiterator_7',['extent_iterator',['../classVW_1_1features.html#ac00a3b2f0e39487cc65a98ed12828915',1,'VW::features']]],
+  ['extent_5fterm_8',['extent_term',['../namespaceVW.html#aae9a8744cdc9c5ec6f9745986feeff35',1,'VW::extent_term()'],['../feature__group_8h.html#a8bb81b5203696361337bfa09d86eb41c',1,'extent_term():&#160;feature_group.h']]]
 ];

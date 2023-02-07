@@ -100,7 +100,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1fb54f9410f30e98d7d14820de1e8da8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1workspace.html#a1fb54f9410f30e98d7d14820de1e8da8">finish</a> ()</td></tr>
 <tr class="separator:a1fb54f9410f30e98d7d14820de1e8da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2511f756e18eabdc25d46b0997bf5928"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1workspace.html#a2511f756e18eabdc25d46b0997bf5928">dump_weights_to_json_experimental</a> ()</td></tr>
-<tr class="memdesc:a2511f756e18eabdc25d46b0997bf5928"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a JSON string with the current model state and invert hash lookup table. Base reduction in use must be gd and <a class="el" href="classVW_1_1workspace.html#a6a0affacdd26dc9bfdae40907d49f474">workspace.hash_inv</a> must be true. This function is experimental and subject to change.  <a href="classVW_1_1workspace.html#a2511f756e18eabdc25d46b0997bf5928">More...</a><br /></td></tr>
+<tr class="memdesc:a2511f756e18eabdc25d46b0997bf5928"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a JSON string with the current model state and invert hash lookup table. Bottom learner in use must be gd and <a class="el" href="classVW_1_1workspace.html#a6a0affacdd26dc9bfdae40907d49f474">workspace.hash_inv</a> must be true. This function is experimental and subject to change.  <a href="classVW_1_1workspace.html#a2511f756e18eabdc25d46b0997bf5928">More...</a><br /></td></tr>
 <tr class="separator:a2511f756e18eabdc25d46b0997bf5928"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae78be71f5cd857899a811022ca1c03ab"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1workspace.html#ae78be71f5cd857899a811022ca1c03ab">length</a> ()</td></tr>
 <tr class="separator:ae78be71f5cd857899a811022ca1c03ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -121,24 +121,24 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:abed4cf318e484976aefadfb62ffd08ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVW_1_1shared__data.html">VW::shared_data</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1workspace.html#abed4cf318e484976aefadfb62ffd08ec">sd</a></td></tr>
-<tr class="separator:abed4cf318e484976aefadfb62ffd08ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a483bc1f975827283cd32da89c1d2ca57"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classVW_1_1shared__data.html">VW::shared_data</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1workspace.html#a483bc1f975827283cd32da89c1d2ca57">sd</a></td></tr>
+<tr class="separator:a483bc1f975827283cd32da89c1d2ca57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa3f55b71d1b64e415ec6efd8721ed9e"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classVW_1_1parser.html">parser</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1workspace.html#aaa3f55b71d1b64e415ec6efd8721ed9e">example_parser</a></td></tr>
 <tr class="separator:aaa3f55b71d1b64e415ec6efd8721ed9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a067da2035fd9915db780fc5d57d583aa"><td class="memItemLeft" align="right" valign="top">std::thread&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1workspace.html#a067da2035fd9915db780fc5d57d583aa">parse_thread</a></td></tr>
 <tr class="separator:a067da2035fd9915db780fc5d57d583aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83266d2392b14f47d685beaef370252a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceVW.html#ae0ce4b384208ed3b9c010e1328dd82f6">all_reduce_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1workspace.html#a83266d2392b14f47d685beaef370252a">selected_all_reduce_type</a></td></tr>
 <tr class="separator:a83266d2392b14f47d685beaef370252a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3b856d5dd71d046c36b6015df319cf1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVW_1_1all__reduce__base.html">all_reduce_base</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1workspace.html#ac3b856d5dd71d046c36b6015df319cf1">all_reduce</a></td></tr>
-<tr class="separator:ac3b856d5dd71d046c36b6015df319cf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82d43b747be47d6abb0257150abde68a"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classVW_1_1all__reduce__base.html">all_reduce_base</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1workspace.html#a82d43b747be47d6abb0257150abde68a">all_reduce</a></td></tr>
+<tr class="separator:a82d43b747be47d6abb0257150abde68a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b98ced6eb89c0287ec871fd01160c9f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1workspace.html#a8b98ced6eb89c0287ec871fd01160c9f">chain_hash_json</a> = false</td></tr>
 <tr class="separator:a8b98ced6eb89c0287ec871fd01160c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeecce10973024deaf9ea0a4b4b144606"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceVW_1_1LEARNER.html#ab481a83a0a49d7b827babe725e135b20">VW::LEARNER::base_learner</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1workspace.html#aeecce10973024deaf9ea0a4b4b144606">l</a></td></tr>
-<tr class="separator:aeecce10973024deaf9ea0a4b4b144606"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0630044e9f2418083cdab510e7ca2e6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceVW_1_1LEARNER.html#ab481a83a0a49d7b827babe725e135b20">VW::LEARNER::base_learner</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1workspace.html#a0630044e9f2418083cdab510e7ca2e6c">cost_sensitive</a></td></tr>
-<tr class="separator:a0630044e9f2418083cdab510e7ca2e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0276645e3ce965fc62560a227232f72e"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1workspace.html#a0276645e3ce965fc62560a227232f72e">set_minmax</a> )(<a class="el" href="classVW_1_1shared__data.html">VW::shared_data</a> *<a class="el" href="classVW_1_1workspace.html#abed4cf318e484976aefadfb62ffd08ec">sd</a>, float label)</td></tr>
-<tr class="separator:a0276645e3ce965fc62560a227232f72e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a075a9a49b1eac9e77c9b7617e67fdc91"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classVW_1_1LEARNER_1_1learner.html">VW::LEARNER::learner</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1workspace.html#a075a9a49b1eac9e77c9b7617e67fdc91">l</a></td></tr>
+<tr class="separator:a075a9a49b1eac9e77c9b7617e67fdc91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d99d73484fd9b8531af82c0b01283e9"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classVW_1_1LEARNER_1_1learner.html">VW::LEARNER::learner</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1workspace.html#a9d99d73484fd9b8531af82c0b01283e9">cost_sensitive</a></td></tr>
+<tr class="separator:a9d99d73484fd9b8531af82c0b01283e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecd2ab01e4ca49f3d885041bf33cec88"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(float)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1workspace.html#aecd2ab01e4ca49f3d885041bf33cec88">set_minmax</a></td></tr>
+<tr class="separator:aecd2ab01e4ca49f3d885041bf33cec88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22cd393be59738091f2919b9bf4aae08"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1workspace.html#a22cd393be59738091f2919b9bf4aae08">current_pass</a></td></tr>
 <tr class="separator:a22cd393be59738091f2919b9bf4aae08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0da53208830eed64d95200668d3eca1b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1workspace.html#a0da53208830eed64d95200668d3eca1b">num_bits</a></td></tr>
@@ -175,8 +175,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a44af05567e6b4b84e3eac44568298920"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af36044ce94b18baefeb78f37147ceb34"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classVW_1_1details_1_1trace__message__wrapper.html">details::trace_message_wrapper</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1workspace.html#af36044ce94b18baefeb78f37147ceb34">trace_message_wrapper_context</a></td></tr>
 <tr class="separator:af36044ce94b18baefeb78f37147ceb34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc57cfdf63ebc3face3859e555b2ef7a"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; std::ostream &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1workspace.html#afc57cfdf63ebc3face3859e555b2ef7a">trace_message</a></td></tr>
-<tr class="separator:afc57cfdf63ebc3face3859e555b2ef7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a986b7d80cadd931211cd8a3145e9a2"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; std::ostream &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1workspace.html#a4a986b7d80cadd931211cd8a3145e9a2">trace_message</a></td></tr>
+<tr class="separator:a4a986b7d80cadd931211cd8a3145e9a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad87a23d32e412e1af4a788e4ce6f11a2"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classVW_1_1config_1_1options__i.html">VW::config::options_i</a>, <a class="el" href="namespaceVW.html#a18d2933a60f354fb40cecc5f56265a22">options_deleter_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1workspace.html#ad87a23d32e412e1af4a788e4ce6f11a2">options</a></td></tr>
 <tr class="separator:ad87a23d32e412e1af4a788e4ce6f11a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a487f35b64f40c6b1ff3c33fcdc2d01"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1workspace.html#a0a487f35b64f40c6b1ff3c33fcdc2d01">searchstr</a></td></tr>
@@ -456,7 +456,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Generate a JSON string with the current model state and invert hash lookup table. Base reduction in use must be gd and <a class="el" href="classVW_1_1workspace.html#a6a0affacdd26dc9bfdae40907d49f474">workspace.hash_inv</a> must be true. This function is experimental and subject to change. </p>
+<p>Generate a JSON string with the current model state and invert hash lookup table. Bottom learner in use must be gd and <a class="el" href="classVW_1_1workspace.html#a6a0affacdd26dc9bfdae40907d49f474">workspace.hash_inv</a> must be true. This function is experimental and subject to change. </p>
 <dl class="section return"><dt>Returns</dt><dd>std::string JSON formatted string </dd></dl>
 
 </div>
@@ -732,14 +732,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ac3b856d5dd71d046c36b6015df319cf1" name="ac3b856d5dd71d046c36b6015df319cf1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3b856d5dd71d046c36b6015df319cf1">&#9670;&#160;</a></span>all_reduce</h2>
+<a id="a82d43b747be47d6abb0257150abde68a" name="a82d43b747be47d6abb0257150abde68a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82d43b747be47d6abb0257150abde68a">&#9670;&#160;</a></span>all_reduce</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classVW_1_1all__reduce__base.html">all_reduce_base</a>* VW::workspace::all_reduce</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classVW_1_1all__reduce__base.html">all_reduce_base</a>&gt; VW::workspace::all_reduce</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -830,14 +830,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a0630044e9f2418083cdab510e7ca2e6c" name="a0630044e9f2418083cdab510e7ca2e6c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0630044e9f2418083cdab510e7ca2e6c">&#9670;&#160;</a></span>cost_sensitive</h2>
+<a id="a9d99d73484fd9b8531af82c0b01283e9" name="a9d99d73484fd9b8531af82c0b01283e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d99d73484fd9b8531af82c0b01283e9">&#9670;&#160;</a></span>cost_sensitive</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceVW_1_1LEARNER.html#ab481a83a0a49d7b827babe725e135b20">VW::LEARNER::base_learner</a>* VW::workspace::cost_sensitive</td>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="classVW_1_1LEARNER_1_1learner.html">VW::LEARNER::learner</a>&gt; VW::workspace::cost_sensitive</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1432,14 +1432,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aeecce10973024deaf9ea0a4b4b144606" name="aeecce10973024deaf9ea0a4b4b144606"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeecce10973024deaf9ea0a4b4b144606">&#9670;&#160;</a></span>l</h2>
+<a id="a075a9a49b1eac9e77c9b7617e67fdc91" name="a075a9a49b1eac9e77c9b7617e67fdc91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a075a9a49b1eac9e77c9b7617e67fdc91">&#9670;&#160;</a></span>l</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceVW_1_1LEARNER.html#ab481a83a0a49d7b827babe725e135b20">VW::LEARNER::base_learner</a>* VW::workspace::l</td>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="classVW_1_1LEARNER_1_1learner.html">VW::LEARNER::learner</a>&gt; VW::workspace::l</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2034,14 +2034,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="abed4cf318e484976aefadfb62ffd08ec" name="abed4cf318e484976aefadfb62ffd08ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abed4cf318e484976aefadfb62ffd08ec">&#9670;&#160;</a></span>sd</h2>
+<a id="a483bc1f975827283cd32da89c1d2ca57" name="a483bc1f975827283cd32da89c1d2ca57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a483bc1f975827283cd32da89c1d2ca57">&#9670;&#160;</a></span>sd</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classVW_1_1shared__data.html">VW::shared_data</a>* VW::workspace::sd</td>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="classVW_1_1shared__data.html">VW::shared_data</a>&gt; VW::workspace::sd</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2076,14 +2076,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a0276645e3ce965fc62560a227232f72e" name="a0276645e3ce965fc62560a227232f72e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0276645e3ce965fc62560a227232f72e">&#9670;&#160;</a></span>set_minmax</h2>
+<a id="aecd2ab01e4ca49f3d885041bf33cec88" name="aecd2ab01e4ca49f3d885041bf33cec88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecd2ab01e4ca49f3d885041bf33cec88">&#9670;&#160;</a></span>set_minmax</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* VW::workspace::set_minmax) (<a class="el" href="classVW_1_1shared__data.html">VW::shared_data</a> *<a class="el" href="classVW_1_1workspace.html#abed4cf318e484976aefadfb62ffd08ec">sd</a>, float label)</td>
+          <td class="memname">std::function&lt;void(float)&gt; VW::workspace::set_minmax</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2160,14 +2160,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="afc57cfdf63ebc3face3859e555b2ef7a" name="afc57cfdf63ebc3face3859e555b2ef7a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc57cfdf63ebc3face3859e555b2ef7a">&#9670;&#160;</a></span>trace_message</h2>
+<a id="a4a986b7d80cadd931211cd8a3145e9a2" name="a4a986b7d80cadd931211cd8a3145e9a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a986b7d80cadd931211cd8a3145e9a2">&#9670;&#160;</a></span>trace_message</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;std::ostream&gt; VW::workspace::trace_message</td>
+          <td class="memname">std::shared_ptr&lt;std::ostream&gt; VW::workspace::trace_message</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2245,7 +2245,7 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/nix/store/xjy6jmgfykmpcxzcsnkk31870ad12k2r-source/vowpalwabbit/core/include/vw/core/<a class="el" href="global__data_8h.html">global_data.h</a></li>
+<li>/nix/store/6lixy7qmg10mjw63mhqhv27s95laiky9-source/vowpalwabbit/core/include/vw/core/<a class="el" href="global__data_8h.html">global_data.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

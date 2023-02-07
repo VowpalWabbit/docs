@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['no_5fsanitize_5faddress_0',['NO_SANITIZE_ADDRESS',['../future__compat_8h.html#a69b1282ba1eedeb002fd3bb325d3570b',1,'future_compat.h']]],
-  ['no_5fsanitize_5fundefined_1',['NO_SANITIZE_UNDEFINED',['../future__compat_8h.html#aaf284e95bd2b735b9b87f108e94557e4',1,'future_compat.h']]],
-  ['nominmax_2',['NOMINMAX',['../vw__math_8h.html#a9f918755b601cf4bffca775992e6fb90',1,'vw_math.h']]]
+  ['learner_5fbuilder_5fdefine_0',['LEARNER_BUILDER_DEFINE',['../learner_8h.html#a487f90a5a4af6bd0a2190d0231d8e316',1,'learner.h']]]
 ];

@@ -151,8 +151,8 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a0fea9eb1155adae906e5833f102d0f6c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#a0fea9eb1155adae906e5833f102d0f6c">weight_map</a> = std::unordered_map&lt; uint64_t, <a class="el" href="namespaceVW.html#a5145ff2e7dd5be65bf321f88f984881f">VW::weight</a> * &gt;</td></tr>
-<tr class="separator:a0fea9eb1155adae906e5833f102d0f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27b4f0529691c7a8c8455311b95c80e7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#a27b4f0529691c7a8c8455311b95c80e7">weight_map</a> = std::unordered_map&lt; uint64_t, std::shared_ptr&lt; <a class="el" href="namespaceVW.html#a5145ff2e7dd5be65bf321f88f984881f">VW::weight</a> &gt; &gt;</td></tr>
+<tr class="separator:a27b4f0529691c7a8c8455311b95c80e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33a370691f25a5853eb125d4748e1820"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#a33a370691f25a5853eb125d4748e1820">ScoredDual</a> = std::pair&lt; double, <a class="el" href="classVW_1_1details_1_1Duals.html">VW::details::Duals</a> &gt;</td></tr>
 <tr class="separator:a33a370691f25a5853eb125d4748e1820"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56551be087b390449e1498ba088e1019"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#a56551be087b390449e1498ba088e1019">feature_dict</a> = std::unordered_map&lt; std::string, std::unique_ptr&lt; <a class="el" href="classVW_1_1features.html">VW::features</a> &gt; &gt;</td></tr>
@@ -300,13 +300,11 @@ Functions</h2></td></tr>
 <tr class="separator:a1a91491f06b875431e903c545cf5a0a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace6318095cf9cb45dd88182689b48924"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#ace6318095cf9cb45dd88182689b48924">cs_prep_labels</a> (<a class="el" href="namespaceVW.html#a1dd7b95816f635bc6a5906d2b566c856">VW::multi_ex</a> &amp;examples, std::vector&lt; <a class="el" href="classVW_1_1cb__label.html">VW::cb_label</a> &gt; &amp;cb_labels, <a class="el" href="classVW_1_1cs__label.html">VW::cs_label</a> &amp;cs_labels, std::vector&lt; <a class="el" href="classVW_1_1cs__label.html">VW::cs_label</a> &gt; &amp;prepped_cs_labels, uint64_t offset)</td></tr>
 <tr class="separator:ace6318095cf9cb45dd88182689b48924"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5967a89fcda6346803b88b76cbe5f20d"><td class="memTemplParams" colspan="2">template&lt;bool is_learn&gt; </td></tr>
-<tr class="memitem:a5967a89fcda6346803b88b76cbe5f20d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#a5967a89fcda6346803b88b76cbe5f20d">cs_ldf_learn_or_predict</a> (<a class="el" href="namespaceVW_1_1LEARNER.html#af1a8de5607718807546f15b47300a4a3">VW::LEARNER::multi_learner</a> &amp;base, <a class="el" href="namespaceVW.html#a1dd7b95816f635bc6a5906d2b566c856">VW::multi_ex</a> &amp;examples, std::vector&lt; <a class="el" href="classVW_1_1cb__label.html">VW::cb_label</a> &gt; &amp;cb_labels, <a class="el" href="classVW_1_1cs__label.html">VW::cs_label</a> &amp;cs_labels, std::vector&lt; <a class="el" href="classVW_1_1cs__label.html">VW::cs_label</a> &gt; &amp;prepped_cs_labels, bool predict_first, uint64_t offset, size_t id=0)</td></tr>
-<tr class="separator:a5967a89fcda6346803b88b76cbe5f20d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf52b778128ec9bfbbe2c601a272f11d"><td class="memTemplParams" colspan="2">template&lt;bool is_learn&gt; </td></tr>
+<tr class="memitem:adf52b778128ec9bfbbe2c601a272f11d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#adf52b778128ec9bfbbe2c601a272f11d">cs_ldf_learn_or_predict</a> (<a class="el" href="classVW_1_1LEARNER_1_1learner.html">VW::LEARNER::learner</a> &amp;base, <a class="el" href="namespaceVW.html#a1dd7b95816f635bc6a5906d2b566c856">VW::multi_ex</a> &amp;examples, std::vector&lt; <a class="el" href="classVW_1_1cb__label.html">VW::cb_label</a> &gt; &amp;cb_labels, <a class="el" href="classVW_1_1cs__label.html">VW::cs_label</a> &amp;cs_labels, std::vector&lt; <a class="el" href="classVW_1_1cs__label.html">VW::cs_label</a> &gt; &amp;prepped_cs_labels, bool predict_first, uint64_t offset, size_t id=0)</td></tr>
+<tr class="separator:adf52b778128ec9bfbbe2c601a272f11d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ea3a2cec86e4f7c82f7f0f01886e850"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#a5ea3a2cec86e4f7c82f7f0f01886e850">print_result_by_ref</a> (<a class="el" href="classVW_1_1io_1_1writer.html">VW::io::writer</a> *f, float res, float <a class="el" href="namespaceVW.html#a5145ff2e7dd5be65bf321f88f984881f">weight</a>, const <a class="el" href="classVW_1_1v__array.html">VW::v_array</a>&lt; char &gt; &amp;tag, <a class="el" href="classVW_1_1io_1_1logger.html">VW::io::logger</a> &amp;logger)</td></tr>
 <tr class="separator:a5ea3a2cec86e4f7c82f7f0f01886e850"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0f5a93d131670dcbdc969a67936cf42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#ac0f5a93d131670dcbdc969a67936cf42">noop_mm</a> (<a class="el" href="classVW_1_1shared__data.html">VW::shared_data</a> *, float label)</td></tr>
-<tr class="separator:ac0f5a93d131670dcbdc969a67936cf42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8653d772dadafe2914fe651f35cfb264"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#a8653d772dadafe2914fe651f35cfb264">compile_limits</a> (std::vector&lt; std::string &gt; limits, std::array&lt; uint32_t, <a class="el" href="namespaceVW.html#a8aea57a88a93c44bc9a5a33c22798a55">VW::NUM_NAMESPACES</a> &gt; &amp;dest, bool quiet, <a class="el" href="classVW_1_1io_1_1logger.html">VW::io::logger</a> &amp;logger)</td></tr>
 <tr class="separator:a8653d772dadafe2914fe651f35cfb264"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7ba9f7f6904dd319990b0d6fb9b4cdf"><td class="memItemLeft" align="right" valign="top">VW_STD14_CONSTEXPR uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#ad7ba9f7f6904dd319990b0d6fb9b4cdf">hashall</a> (const char *s, size_t len, uint32_t h)</td></tr>
@@ -473,8 +471,8 @@ Functions</h2></td></tr>
 <tr class="separator:a547e684aaa69d5da7d7d76a5e091c78d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8f4f24714e5b0eb8d7b7b27ddd0b6ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#af8f4f24714e5b0eb8d7b7b27ddd0b6ca">parse_sources</a> (<a class="el" href="classVW_1_1config_1_1options__i.html">config::options_i</a> &amp;options, <a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, <a class="el" href="classVW_1_1io__buf.html">io_buf</a> &amp;model, bool skip_model_load)</td></tr>
 <tr class="separator:af8f4f24714e5b0eb8d7b7b27ddd0b6ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a574aef3bc1b13632021841a99350ca08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#a574aef3bc1b13632021841a99350ca08">print_enabled_reductions</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, std::vector&lt; std::string &gt; &amp;enabled_reductions)</td></tr>
-<tr class="separator:a574aef3bc1b13632021841a99350ca08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91d60c998c6b002c1a78f6e75cb809ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#a91d60c998c6b002c1a78f6e75cb809ab">print_enabled_learners</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, std::vector&lt; std::string &gt; &amp;enabled_learners)</td></tr>
+<tr class="separator:a91d60c998c6b002c1a78f6e75cb809ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a1a1e4a4799a75f704f0305495b220d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#a0a1a1e4a4799a75f704f0305495b220d">parse_dictionary_argument</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, const std::string &amp;str)</td></tr>
 <tr class="separator:a0a1a1e4a4799a75f704f0305495b220d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae941e93a407fb297578ddcff7f4020a2"><td class="memTemplParams" colspan="2">template&lt;typename DispatchFuncT &gt; </td></tr>
@@ -518,8 +516,8 @@ Functions</h2></td></tr>
 <tr class="separator:adf35d081b8a82f8746d21778a1086973"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5b53db7f0c2b2d7346c1a1fc0c2a975"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#ae5b53db7f0c2b2d7346c1a1fc0c2a975">global_print_newline</a> (const std::vector&lt; std::unique_ptr&lt; <a class="el" href="classVW_1_1io_1_1writer.html">VW::io::writer</a> &gt; &gt; &amp;final_prediction_sink, <a class="el" href="classVW_1_1io_1_1logger.html">VW::io::logger</a> &amp;logger)</td></tr>
 <tr class="separator:ae5b53db7f0c2b2d7346c1a1fc0c2a975"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b8d4d330f29275604a9d9a4aea1a442"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#a6b8d4d330f29275604a9d9a4aea1a442">finalize_prediction</a> (<a class="el" href="classVW_1_1shared__data.html">VW::shared_data</a> *sd, <a class="el" href="classVW_1_1io_1_1logger.html">VW::io::logger</a> &amp;logger, float ret)</td></tr>
-<tr class="separator:a6b8d4d330f29275604a9d9a4aea1a442"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5b19f9931b85eec2211b53fa80a5489"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#ae5b19f9931b85eec2211b53fa80a5489">finalize_prediction</a> (<a class="el" href="classVW_1_1shared__data.html">VW::shared_data</a> &amp;sd, <a class="el" href="classVW_1_1io_1_1logger.html">VW::io::logger</a> &amp;logger, float ret)</td></tr>
+<tr class="separator:ae5b19f9931b85eec2211b53fa80a5489"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a855f2f7dc06c96f1ca6a667ce0690412"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#a855f2f7dc06c96f1ca6a667ce0690412">print_features</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, <a class="el" href="classVW_1_1example.html">VW::example</a> &amp;ec)</td></tr>
 <tr class="separator:a855f2f7dc06c96f1ca6a667ce0690412"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab627e53b594b718c5c42f3ca590308cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#ab627e53b594b718c5c42f3ca590308cd">print_audit_features</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;, <a class="el" href="classVW_1_1example.html">VW::example</a> &amp;ec)</td></tr>
@@ -716,14 +714,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a0fea9eb1155adae906e5833f102d0f6c" name="a0fea9eb1155adae906e5833f102d0f6c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0fea9eb1155adae906e5833f102d0f6c">&#9670;&#160;</a></span>weight_map</h2>
+<a id="a27b4f0529691c7a8c8455311b95c80e7" name="a27b4f0529691c7a8c8455311b95c80e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27b4f0529691c7a8c8455311b95c80e7">&#9670;&#160;</a></span>weight_map</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespaceVW_1_1details.html#a0fea9eb1155adae906e5833f102d0f6c">VW::details::weight_map</a> = typedef std::unordered_map&lt;uint64_t, <a class="el" href="namespaceVW.html#a5145ff2e7dd5be65bf321f88f984881f">VW::weight</a>*&gt;</td>
+          <td class="memname">using <a class="el" href="namespaceVW_1_1details.html#a27b4f0529691c7a8c8455311b95c80e7">VW::details::weight_map</a> = typedef std::unordered_map&lt;uint64_t, std::shared_ptr&lt;<a class="el" href="namespaceVW.html#a5145ff2e7dd5be65bf321f88f984881f">VW::weight</a>&gt; &gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1944,8 +1942,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a5967a89fcda6346803b88b76cbe5f20d" name="a5967a89fcda6346803b88b76cbe5f20d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5967a89fcda6346803b88b76cbe5f20d">&#9670;&#160;</a></span>cs_ldf_learn_or_predict()</h2>
+<a id="adf52b778128ec9bfbbe2c601a272f11d" name="adf52b778128ec9bfbbe2c601a272f11d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf52b778128ec9bfbbe2c601a272f11d">&#9670;&#160;</a></span>cs_ldf_learn_or_predict()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1955,7 +1953,7 @@ template&lt;bool is_learn&gt; </div>
         <tr>
           <td class="memname">void VW::details::cs_ldf_learn_or_predict </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceVW_1_1LEARNER.html#af1a8de5607718807546f15b47300a4a3">VW::LEARNER::multi_learner</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classVW_1_1LEARNER_1_1learner.html">VW::LEARNER::learner</a> &amp;&#160;</td>
           <td class="paramname"><em>base</em>, </td>
         </tr>
         <tr>
@@ -2333,8 +2331,8 @@ template&lt;class DataT &gt; </div>
 
 </div>
 </div>
-<a id="a6b8d4d330f29275604a9d9a4aea1a442" name="a6b8d4d330f29275604a9d9a4aea1a442"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b8d4d330f29275604a9d9a4aea1a442">&#9670;&#160;</a></span>finalize_prediction()</h2>
+<a id="ae5b19f9931b85eec2211b53fa80a5489" name="ae5b19f9931b85eec2211b53fa80a5489"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5b19f9931b85eec2211b53fa80a5489">&#9670;&#160;</a></span>finalize_prediction()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2342,7 +2340,7 @@ template&lt;class DataT &gt; </div>
         <tr>
           <td class="memname">float VW::details::finalize_prediction </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classVW_1_1shared__data.html">VW::shared_data</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classVW_1_1shared__data.html">VW::shared_data</a> &amp;&#160;</td>
           <td class="paramname"><em>sd</em>, </td>
         </tr>
         <tr>
@@ -4307,34 +4305,6 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ac0f5a93d131670dcbdc969a67936cf42" name="ac0f5a93d131670dcbdc969a67936cf42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0f5a93d131670dcbdc969a67936cf42">&#9670;&#160;</a></span>noop_mm()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void VW::details::noop_mm </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classVW_1_1shared__data.html">VW::shared_data</a> *&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>label</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a3ec95fb8be82b78b281d5ece26688c6c" name="a3ec95fb8be82b78b281d5ece26688c6c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3ec95fb8be82b78b281d5ece26688c6c">&#9670;&#160;</a></span>open_vw_binary_socket() <span class="overload">[1/2]</span></h2>
 
@@ -5259,14 +5229,14 @@ template&lt;typename DispatchFuncT &gt; </div>
 
 </div>
 </div>
-<a id="a574aef3bc1b13632021841a99350ca08" name="a574aef3bc1b13632021841a99350ca08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a574aef3bc1b13632021841a99350ca08">&#9670;&#160;</a></span>print_enabled_reductions()</h2>
+<a id="a91d60c998c6b002c1a78f6e75cb809ab" name="a91d60c998c6b002c1a78f6e75cb809ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91d60c998c6b002c1a78f6e75cb809ab">&#9670;&#160;</a></span>print_enabled_learners()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void VW::details::print_enabled_reductions </td>
+          <td class="memname">void VW::details::print_enabled_learners </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;&#160;</td>
           <td class="paramname"><em>all</em>, </td>
@@ -5275,7 +5245,7 @@ template&lt;typename DispatchFuncT &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::vector&lt; std::string &gt; &amp;&#160;</td>
-          <td class="paramname"><em>enabled_reductions</em>&#160;</td>
+          <td class="paramname"><em>enabled_learners</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

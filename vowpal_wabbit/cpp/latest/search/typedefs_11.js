@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['trace_5fmessage_5ft_0',['trace_message_t',['../namespaceVW.html#a7065f02164e09fc0756cf9a00138d753',1,'VW::trace_message_t()'],['../error__reporting_8h.html#a6c731410e1a145051e67ec9542f2e465',1,'trace_message_t():&#160;error_reporting.h']]]
+  ['update_5fstats_5ffunc_0',['update_stats_func',['../namespaceVW_1_1LEARNER_1_1details.html#a471f81dc9b65ac07afdec65cb0b43d24',1,'VW::LEARNER::details']]]
 ];
