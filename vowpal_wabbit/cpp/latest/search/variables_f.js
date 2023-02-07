@@ -43,6 +43,6 @@ var searchData=
   ['probability_40',['probability',['../classVW_1_1cb__class.html#ae195b2afce59d0121d601a691514b7d7',1,'VW::cb_class']]],
   ['probability_5fof_5fdrop_41',['probability_of_drop',['../classVW_1_1parsers_1_1json_1_1decision__service__interaction.html#a6b0e3912555c686530a635242e4f2de6',1,'VW::parsers::json::decision_service_interaction']]],
   ['probability_5ftolerance_42',['PROBABILITY_TOLERANCE',['../namespaceVW_1_1details.html#ab175f07a065f6aa1fddd69578f64ae3c',1,'VW::details']]],
-  ['progress_5fadd_43',['progress_add',['../classVW_1_1workspace.html#a9365651f6a3a4f67c5b00cd2f416b116',1,'VW::workspace']]],
-  ['progress_5farg_44',['progress_arg',['../classVW_1_1workspace.html#a61f33a51a9aa8ee569e58bdd344f8d11',1,'VW::workspace']]]
+  ['progress_5fadd_43',['progress_add',['../classVW_1_1shared__data.html#add44d64021dbb06f483039f2ea2706cd',1,'VW::shared_data']]],
+  ['progress_5farg_44',['progress_arg',['../classVW_1_1shared__data.html#a0781625dbc9296c5bd6f9c55156d26f0',1,'VW::shared_data']]]
 ];
