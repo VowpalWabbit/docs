@@ -169,10 +169,10 @@ $(document).ready(function(){initNavTree('override_interface_8cc-example.html','
 <div class="line">  std::mutex cout_mutex;</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Define a create function to be used in the factory.</span></div>
-<div class="line">  <span class="keyword">auto</span> <span class="keyword">const</span> create_ostream_sender_fn = [&amp;](r::i_sender** retval, <span class="keyword">const</span> u::configuration&amp;,</div>
+<div class="line">  <span class="keyword">auto</span> <span class="keyword">const</span> create_ostream_sender_fn = [&amp;](std::unique_ptr&lt;r::i_sender&gt;&amp; retval, <span class="keyword">const</span> u::configuration&amp;,</div>
 <div class="line">                                            r::error_callback_fn* error_callback, r::i_trace* trace, r::api_status*)</div>
 <div class="line">  {</div>
-<div class="line">    *retval = <span class="keyword">new</span> ostream_sender(std::cout, cout_mutex);</div>
+<div class="line">    retval.reset(<span class="keyword">new</span> ostream_sender(std::cout, cout_mutex));</div>
 <div class="line">    <span class="keywordflow">return</span> err::success;</div>
 <div class="line">  };</div>
 <div class="line"> </div>
