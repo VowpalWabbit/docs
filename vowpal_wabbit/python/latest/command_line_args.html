@@ -1662,6 +1662,28 @@ const thebe_selector_output = ".output, .cell_output"
     </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#reduction-explore-evaluation-options">
+     [Reduction] Explore Evaluation Options
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#explore-eval">
+       explore_eval
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#multiplier">
+       multiplier
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#target-rate">
+       target_rate
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#reduction-epsilon-decaying-exploration-options">
      [Reduction] Epsilon-Decaying Exploration Options
     </a>
@@ -1734,28 +1756,6 @@ const thebe_selector_output = ".output, .cell_output"
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#opt-func">
        opt_func
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#reduction-explore-evaluation-options">
-     [Reduction] Explore Evaluation Options
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#explore-eval">
-       explore_eval
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#multiplier">
-       multiplier
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#target-rate">
-       target_rate
       </a>
      </li>
     </ul>
@@ -5534,6 +5534,34 @@ default bandwidth = unit_range / 2.0</p>
 </span><p>Contextual bandit method to use</p>
 </section>
 </section>
+<section id="reduction-explore-evaluation-options">
+<h3>[Reduction] Explore Evaluation Options<a class="headerlink" href="#reduction-explore-evaluation-options" title="Permalink to this heading">#</a></h3>
+<section id="explore-eval">
+<h4>explore_eval<a class="headerlink" href="#explore-eval" title="Permalink to this heading">#</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">--</span><span class="n">explore_eval</span>
+</pre></div>
+</div>
+<span class="option-tag">
+    <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
+</span><span class="option-tag">
+    <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
+</span><p>Evaluate explore_eval adf policies</p>
+</section>
+<section id="multiplier">
+<h4>multiplier<a class="headerlink" href="#multiplier" title="Permalink to this heading">#</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">--</span><span class="n">multiplier</span> <span class="o">&lt;</span><span class="nb">float</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>Multiplier used to make all rejection sample probabilities &lt;= 1</p>
+</section>
+<section id="target-rate">
+<h4>target_rate<a class="headerlink" href="#target-rate" title="Permalink to this heading">#</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">--</span><span class="n">target_rate</span> <span class="o">&lt;</span><span class="nb">float</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>The target rate will be used to adjust the rejection rate in order to achieve an update count of #examples * target_rate</p>
+</section>
+</section>
 <section id="reduction-epsilon-decaying-exploration-options">
 <h3>[Reduction] Epsilon-Decaying Exploration Options<a class="headerlink" href="#reduction-epsilon-decaying-exploration-options" title="Permalink to this heading">#</a></h3>
 <section id="epsilon-decay">
@@ -5717,34 +5745,6 @@ default bandwidth = unit_range / 2.0</p>
         <abbr title="This option is subject to change.">experimental</abbr>
     </span>
 </a><p>Optimization function for estimation)</p>
-</section>
-</section>
-<section id="reduction-explore-evaluation-options">
-<h3>[Reduction] Explore Evaluation Options<a class="headerlink" href="#reduction-explore-evaluation-options" title="Permalink to this heading">#</a></h3>
-<section id="explore-eval">
-<h4>explore_eval<a class="headerlink" href="#explore-eval" title="Permalink to this heading">#</a></h4>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">--</span><span class="n">explore_eval</span>
-</pre></div>
-</div>
-<span class="option-tag">
-    <abbr title="This option is saved in the model and persist when the model is loaded.">keep</abbr>
-</span><span class="option-tag">
-    <abbr title="Supplying this option enables the given reduction. If more than one option is marked as 'enables reduction' in the same group, then all must be supplied for the reduction to be enabled.">enables reduction</abbr>
-</span><p>Evaluate explore_eval adf policies</p>
-</section>
-<section id="multiplier">
-<h4>multiplier<a class="headerlink" href="#multiplier" title="Permalink to this heading">#</a></h4>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">--</span><span class="n">multiplier</span> <span class="o">&lt;</span><span class="nb">float</span><span class="o">&gt;</span>
-</pre></div>
-</div>
-<p>Multiplier used to make all rejection sample probabilities &lt;= 1</p>
-</section>
-<section id="target-rate">
-<h4>target_rate<a class="headerlink" href="#target-rate" title="Permalink to this heading">#</a></h4>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">--</span><span class="n">target_rate</span> <span class="o">&lt;</span><span class="nb">float</span><span class="o">&gt;</span>
-</pre></div>
-</div>
-<p>The target rate will be used to adjust the rejection rate in order to achieve an update count of #examples * target_rate</p>
 </section>
 </section>
 <section id="reduction-cb-sample-options">
