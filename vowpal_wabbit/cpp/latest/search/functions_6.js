@@ -89,7 +89,7 @@ var searchData=
   ['get_5fmultilabel_5fpredictions_86',['get_multilabel_predictions',['../namespaceVW.html#afdcfac8b5b734f6bbbda6696b5b89319',1,'VW']]],
   ['get_5fname_87',['get_name',['../classVW_1_1details_1_1input__parser.html#a6d7d8a3c2f84676d570bbbcca5479547',1,'VW::details::input_parser::get_name()'],['../classVW_1_1LEARNER_1_1learner.html#ae87e4fc47763c6e1e3d7a99234358098',1,'VW::LEARNER::learner::get_name()']]],
   ['get_5fnum_5ffeatures_88',['get_num_features',['../classVW_1_1example.html#a2f761fbab9ab50cd21c9ef0b019e9667',1,'VW::example']]],
-  ['get_5fobject_89',['get_object',['../classVW_1_1details_1_1object__pool__impl.html#a145280261a1db2c806cbeb462fb03dad',1,'VW::details::object_pool_impl']]],
+  ['get_5fobject_89',['get_object',['../classVW_1_1details_1_1object__pool__impl.html#ac52adabd1c0ecba604713ef936def408',1,'VW::details::object_pool_impl']]],
   ['get_5fobserved_5fcost_5fcb_90',['get_observed_cost_cb',['../namespaceCB.html#a5172d13aba4200a1a92ddc7509bb82fb',1,'CB::get_observed_cost_cb()'],['../namespaceVW.html#a8801fdaaf4f1411485f8ca4867f59399',1,'VW::get_observed_cost_cb()']]],
   ['get_5fobserved_5fcost_5for_5fdefault_5fcb_5fadf_91',['get_observed_cost_or_default_cb_adf',['../namespaceCB__ADF.html#aec2717932fb9a5f8eacddc1384440784',1,'CB_ADF::get_observed_cost_or_default_cb_adf()'],['../namespaceVW.html#a6067c832d42e4f89565f32a61e4d9446',1,'VW::get_observed_cost_or_default_cb_adf()']]],
   ['get_5foption_92',['get_option',['../classVW_1_1config_1_1options__i.html#ac6ad8d5713a30d959e4b87a811bd2f54',1,'VW::config::options_i::get_option(const std::string &amp;key) const'],['../classVW_1_1config_1_1options__i.html#a066e39572b12f91b7fb922d730fec7d1',1,'VW::config::options_i::get_option(const std::string &amp;key)']]],

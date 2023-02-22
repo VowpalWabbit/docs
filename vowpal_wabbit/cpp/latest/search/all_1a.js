@@ -19,7 +19,7 @@ var searchData=
   ['_7eloss_5ffunction_16',['~loss_function',['../classVW_1_1loss__function.html#af3fc89f246fb37ec452c34ad1f8b89d4',1,'VW::loss_function']]],
   ['_7emetric_5fsink_5fvisitor_17',['~metric_sink_visitor',['../classVW_1_1metric__sink__visitor.html#ac0f739fd8a6246c75a6bd9057e25a103',1,'VW::metric_sink_visitor']]],
   ['_7enode_5fsocks_18',['~node_socks',['../classVW_1_1details_1_1node__socks.html#abc3ef1d48a928c56229bcdedc7a86e87',1,'VW::details::node_socks']]],
-  ['_7eobject_5fpool_5fimpl_19',['~object_pool_impl',['../classVW_1_1details_1_1object__pool__impl.html#a5bb8c7d8e757f1f4331559f121daad2a',1,'VW::details::object_pool_impl']]],
+  ['_7eobject_5fpool_5fimpl_19',['~object_pool_impl',['../classVW_1_1details_1_1object__pool__impl.html#a0fd62b613656c5923ec3bb62fe0f3d41',1,'VW::details::object_pool_impl']]],
   ['_7eoptions_5fi_20',['~options_i',['../classVW_1_1config_1_1options__i.html#a41af87ba504cb6a3f9e69d1b151cc711',1,'VW::config::options_i']]],
   ['_7epolyprediction_21',['~polyprediction',['../classVW_1_1polyprediction.html#afbc05a6589e279f807629a8d07fbd58b',1,'VW::polyprediction']]],
   ['_7ereader_22',['~reader',['../classVW_1_1io_1_1reader.html#acb42a09f82bb5363bb7518d459288128',1,'VW::io::reader']]],

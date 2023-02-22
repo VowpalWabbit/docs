@@ -94,7 +94,7 @@ var searchData=
   ['is_5fcs_5fexample_5fheader_91',['is_cs_example_header',['../namespaceVW.html#a421dd28dfefe37a3130d7da6eb3bb68b',1,'VW']]],
   ['is_5fempty_92',['is_empty',['../classVW_1_1audit__strings.html#abf44d6c1c4c915b4f0d711424fdda57b',1,'VW::audit_strings']]],
   ['is_5fexample_5ftype_93',['is_example_type',['../structVW_1_1is__example__type.html',1,'VW']]],
-  ['is_5ffrom_5fpool_94',['is_from_pool',['../classVW_1_1details_1_1object__pool__impl.html#ab85a61f00f0eb94bcaa264c0dc759ce3',1,'VW::details::object_pool_impl']]],
+  ['is_5ffrom_5fpool_94',['is_from_pool',['../classVW_1_1details_1_1object__pool__impl.html#a3e6c9b408933013409f3d4576c8b81e2',1,'VW::details::object_pool_impl']]],
   ['is_5finteraction_5fns_95',['is_interaction_ns',['../namespaceVW.html#a8d0fbc73112327686c1cc0da21e32cbd',1,'VW::is_interaction_ns()'],['../namespaceINTERACTIONS.html#a33286dfd58d6227a0f1e303cfdbd9651',1,'INTERACTIONS::is_interaction_ns()']]],
   ['is_5flabeled_96',['is_labeled',['../classVW_1_1cb__label.html#ab94d03f2ab08c1ed3e47e32d8a23e4b1',1,'VW::cb_label::is_labeled()'],['../classVW_1_1ccb__label.html#a404eabb648b2329ceffd94e45bfbee83',1,'VW::ccb_label::is_labeled()'],['../classVW_1_1multiclass__label.html#a5f8a1a2f86524137b896eed9ee3bdcd7',1,'VW::multiclass_label::is_labeled()'],['../classVW_1_1cb__continuous_1_1continuous__label.html#a5536d9e793c4f5282ef915cc087153fb',1,'VW::cb_continuous::continuous_label::is_labeled()']]],
   ['is_5fldf_97',['IS_LDF',['../namespaceSearch.html#a0cf0cfef46a3b6962d91d7de1ae67796',1,'Search']]],

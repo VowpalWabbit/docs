@@ -323,10 +323,10 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a01e5e5ff9ba5d0b3c97ecf8c26c247c5"><td class="memTemplParams" colspan="2">template&lt;typename DataT , typename ExampleT &gt; </td></tr>
 <tr class="memitem:a01e5e5ff9ba5d0b3c97ecf8c26c247c5"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a01e5e5ff9ba5d0b3c97ecf8c26c247c5">learner_cleanup_example_func</a> = void(DataT &amp;, ExampleT &amp;)</td></tr>
 <tr class="separator:a01e5e5ff9ba5d0b3c97ecf8c26c247c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab75dcc9dae3349c4fe250321f4a98695"><td class="memTemplParams" colspan="2">template&lt;typename T , typename TInitializer  = details::default_initializer&lt;T&gt;&gt; </td></tr>
+<tr class="memitem:ab75dcc9dae3349c4fe250321f4a98695"><td class="memTemplParams" colspan="2">template&lt;typename T , typename TInitializer  = details::default_factory&lt;T&gt;&gt; </td></tr>
 <tr class="memitem:ab75dcc9dae3349c4fe250321f4a98695"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ab75dcc9dae3349c4fe250321f4a98695">no_lock_object_pool</a> = <a class="el" href="classVW_1_1details_1_1object__pool__impl.html">details::object_pool_impl</a>&lt; T, <a class="el" href="structVW_1_1details_1_1null__mutex.html">details::null_mutex</a>, TInitializer &gt;</td></tr>
 <tr class="separator:ab75dcc9dae3349c4fe250321f4a98695"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad10ca9ecc195b1d27549802a75b90c1f"><td class="memTemplParams" colspan="2">template&lt;typename T , typename TInitializer  = details::default_initializer&lt;T&gt;&gt; </td></tr>
+<tr class="memitem:ad10ca9ecc195b1d27549802a75b90c1f"><td class="memTemplParams" colspan="2">template&lt;typename T , typename TInitializer  = details::default_factory&lt;T&gt;&gt; </td></tr>
 <tr class="memitem:ad10ca9ecc195b1d27549802a75b90c1f"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ad10ca9ecc195b1d27549802a75b90c1f">object_pool</a> = <a class="el" href="classVW_1_1details_1_1object__pool__impl.html">details::object_pool_impl</a>&lt; T, std::mutex, TInitializer &gt;</td></tr>
 <tr class="separator:ad10ca9ecc195b1d27549802a75b90c1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d84c0b22ccc706c4e743c46a5a8e50a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a3d84c0b22ccc706c4e743c46a5a8e50a">reduction_setup_fn</a> = std::shared_ptr&lt; <a class="el" href="classVW_1_1LEARNER_1_1learner.html">VW::LEARNER::learner</a> &gt;(*)(<a class="el" href="classVW_1_1setup__base__i.html">VW::setup_base_i</a> &amp;)</td></tr>
@@ -1170,7 +1170,7 @@ template&lt;typename DataT , typename ExampleT &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename TInitializer  = details::default_initializer&lt;T&gt;&gt; </div>
+template&lt;typename T , typename TInitializer  = details::default_factory&lt;T&gt;&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="namespaceVW.html#ab75dcc9dae3349c4fe250321f4a98695">VW::no_lock_object_pool</a> = typedef <a class="el" href="classVW_1_1details_1_1object__pool__impl.html">details::object_pool_impl</a>&lt;T, <a class="el" href="structVW_1_1details_1_1null__mutex.html">details::null_mutex</a>, TInitializer&gt;</td>
@@ -1186,7 +1186,7 @@ template&lt;typename T , typename TInitializer  = details::default_initializer&l
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename TInitializer  = details::default_initializer&lt;T&gt;&gt; </div>
+template&lt;typename T , typename TInitializer  = details::default_factory&lt;T&gt;&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="namespaceVW.html#ad10ca9ecc195b1d27549802a75b90c1f">VW::object_pool</a> = typedef <a class="el" href="classVW_1_1details_1_1object__pool__impl.html">details::object_pool_impl</a>&lt;T, std::mutex, TInitializer&gt;</td>
