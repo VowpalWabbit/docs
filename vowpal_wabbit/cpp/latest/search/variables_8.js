@@ -29,10 +29,11 @@ var searchData=
   ['inv_5fhash_5fregressor_5fname_26',['inv_hash_regressor_name',['../classVW_1_1workspace.html#a8a4150e901445336a09ba8b49d126fcb',1,'VW::workspace']]],
   ['invariant_5fupdates_27',['invariant_updates',['../classVW_1_1workspace.html#a550fe0b2eaefd21c8d5fb5f57eb019cf',1,'VW::workspace']]],
   ['ips_28',['ips',['../classVW_1_1estimators_1_1cressieread.html#aa0698ae399fdb0ed815984dfa9411b43',1,'VW::estimators::cressieread']]],
-  ['is_5fbrentq_29',['is_brentq',['../classVW_1_1details_1_1countable__discrete__base.html#abee4f73dd277d51a2e83a688b2010f36',1,'VW::details::countable_discrete_base::is_brentq()'],['../classVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a69ab325b414729ec1925e1e89953ad49',1,'VW::reductions::automl::interaction_config_manager::is_brentq()']]],
+  ['is_5fbrentq_29',['is_brentq',['../classVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a69ab325b414729ec1925e1e89953ad49',1,'VW::reductions::automl::interaction_config_manager::is_brentq()'],['../classVW_1_1details_1_1countable__discrete__base.html#abee4f73dd277d51a2e83a688b2010f36',1,'VW::details::countable_discrete_base::is_brentq()']]],
   ['is_5fccb_5finput_5fmodel_30',['is_ccb_input_model',['../classVW_1_1workspace.html#ab1739c8984ecdde64051dd1c815bcf61',1,'VW::workspace']]],
   ['is_5fldf_31',['IS_LDF',['../namespaceSearch.html#a0cf0cfef46a3b6962d91d7de1ae67796',1,'Search']]],
   ['is_5fleaf_32',['is_leaf',['../classVW_1_1reductions_1_1cats_1_1tree__node.html#aaeca171a8bd84152998e5f84aac96a17',1,'VW::reductions::cats::tree_node::is_leaf()'],['../classVW_1_1reductions_1_1offset__tree_1_1tree__node.html#a0563f7cfb4856ce6cdc83ea4af258ca4',1,'VW::reductions::offset_tree::tree_node::is_leaf()']]],
   ['is_5fmore_5fthan_5ftwo_5flabels_5fobserved_33',['is_more_than_two_labels_observed',['../classVW_1_1shared__data.html#a3cc37ac6cbd82c2b5f5dd20685522913',1,'VW::shared_data']]],
-  ['is_5fnewline_34',['is_newline',['../classVW_1_1example.html#a435413fdf7bdce5c17d83768f70610bc',1,'VW::example']]]
+  ['is_5fnewline_34',['is_newline',['../classVW_1_1example.html#a435413fdf7bdce5c17d83768f70610bc',1,'VW::example']]],
+  ['is_5fset_5ffeature_5fspace_5fhash_35',['is_set_feature_space_hash',['../classVW_1_1example__predict.html#ad3e445109622437d6794660b2df3947d',1,'VW::example_predict']]]
 ];

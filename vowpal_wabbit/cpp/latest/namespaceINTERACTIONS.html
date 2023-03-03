@@ -91,12 +91,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a9900ca6e5c92bd7eb365f37f174ce3a5"><td class="memTemplParams" colspan="2">template&lt;class DataT , class WeightOrIndexT , void(*)(DataT &amp;, float, WeightOrIndexT) FuncT, bool audit, void(*)(DataT &amp;, const <a class="el" href="classVW_1_1audit__strings.html">VW::audit_strings</a> *) audit_func, class WeightsT &gt; </td></tr>
 <tr class="memitem:a9900ca6e5c92bd7eb365f37f174ce3a5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#a9900ca6e5c92bd7eb365f37f174ce3a5">generate_interactions</a> (const std::vector&lt; std::vector&lt; <a class="el" href="namespaceVW.html#abbbfd142fffaccd884cf1762f553eb50">VW::namespace_index</a> &gt; &gt; &amp;interactions, const std::vector&lt; std::vector&lt; <a class="el" href="namespaceVW.html#aae9a8744cdc9c5ec6f9745986feeff35">VW::extent_term</a> &gt; &gt; &amp;extent_interactions, bool permutations, <a class="el" href="classVW_1_1example__predict.html">VW::example_predict</a> &amp;ec, DataT &amp;dat, WeightsT &amp;weights, size_t &amp;num_features, <a class="el" href="classVW_1_1details_1_1generate__interactions__object__cache.html">VW::details::generate_interactions_object_cache</a> &amp;cache)</td></tr>
 <tr class="separator:a9900ca6e5c92bd7eb365f37f174ce3a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7adf35fc60452f61da42f05a2f754fe"><td class="memTemplParams" colspan="2">template&lt;class R , class S , void(*)(R &amp;, float, S) T, bool audit, void(*)(R &amp;, const <a class="el" href="classVW_1_1audit__strings.html">VW::audit_strings</a> *) audit_func&gt; </td></tr>
-<tr class="memitem:aa7adf35fc60452f61da42f05a2f754fe"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#aa7adf35fc60452f61da42f05a2f754fe">generate_interactions</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, <a class="el" href="classVW_1_1example__predict.html">VW::example_predict</a> &amp;ec, R &amp;dat, size_t &amp;num_interacted_features)</td></tr>
-<tr class="separator:aa7adf35fc60452f61da42f05a2f754fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a612a68257198556a258037dff692977c"><td class="memTemplParams" colspan="2">template&lt;class R , class S , void(*)(R &amp;, float, S) T&gt; </td></tr>
-<tr class="memitem:a612a68257198556a258037dff692977c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceINTERACTIONS.html#a612a68257198556a258037dff692977c">generate_interactions</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, <a class="el" href="classVW_1_1example__predict.html">VW::example_predict</a> &amp;ec, R &amp;dat, size_t &amp;num_interacted_features)</td></tr>
-<tr class="separator:a612a68257198556a258037dff692977c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ab5a9e6f6b69975b1f7a8b2f9ba3b448d" name="ab5a9e6f6b69975b1f7a8b2f9ba3b448d"></a>
@@ -206,7 +200,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a9900ca6e5c92bd7eb365f37f174ce3a5" name="a9900ca6e5c92bd7eb365f37f174ce3a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9900ca6e5c92bd7eb365f37f174ce3a5">&#9670;&#160;</a></span>generate_interactions() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9900ca6e5c92bd7eb365f37f174ce3a5">&#9670;&#160;</a></span>generate_interactions()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -277,110 +271,6 @@ template&lt;class DataT , class WeightOrIndexT , void(*)(DataT &amp;, float, Wei
 </table>
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000035">Deprecated:</a></b></dt><dd>"Moved into VW namespace" <br  />
- </dd></dl>
-
-</div>
-</div>
-<a id="aa7adf35fc60452f61da42f05a2f754fe" name="aa7adf35fc60452f61da42f05a2f754fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7adf35fc60452f61da42f05a2f754fe">&#9670;&#160;</a></span>generate_interactions() <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class R , class S , void(*)(R &amp;, float, S) T, bool audit, void(*)(R &amp;, const <a class="el" href="classVW_1_1audit__strings.html">VW::audit_strings</a> *) audit_func&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void INTERACTIONS::generate_interactions </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;&#160;</td>
-          <td class="paramname"><em>all</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classVW_1_1example__predict.html">VW::example_predict</a> &amp;&#160;</td>
-          <td class="paramname"><em>ec</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">R &amp;&#160;</td>
-          <td class="paramname"><em>dat</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t &amp;&#160;</td>
-          <td class="paramname"><em>num_interacted_features</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000088">Deprecated:</a></b></dt><dd>"Moved to VW namespace" <br  />
- </dd></dl>
-
-</div>
-</div>
-<a id="a612a68257198556a258037dff692977c" name="a612a68257198556a258037dff692977c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a612a68257198556a258037dff692977c">&#9670;&#160;</a></span>generate_interactions() <span class="overload">[3/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class R , class S , void(*)(R &amp;, float, S) T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void INTERACTIONS::generate_interactions </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;&#160;</td>
-          <td class="paramname"><em>all</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classVW_1_1example__predict.html">VW::example_predict</a> &amp;&#160;</td>
-          <td class="paramname"><em>ec</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">R &amp;&#160;</td>
-          <td class="paramname"><em>dat</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t &amp;&#160;</td>
-          <td class="paramname"><em>num_interacted_features</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000089">Deprecated:</a></b></dt><dd>"Moved to VW namespace" <br  />
  </dd></dl>
 
 </div>

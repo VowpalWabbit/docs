@@ -96,14 +96,16 @@ Inheritance diagram for VW::setup_base_i:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aaa1281090266c728ee2f3b2461b173e1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1setup__base__i.html#aaa1281090266c728ee2f3b2461b173e1">delayed_state_attach</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;, <a class="el" href="classVW_1_1config_1_1options__i.html">VW::config::options_i</a> &amp;)=0</td></tr>
 <tr class="separator:aaa1281090266c728ee2f3b2461b173e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae35465183809edbb8cccf973a9803e42"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr&lt; <a class="el" href="classVW_1_1LEARNER_1_1learner.html">VW::LEARNER::learner</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1setup__base__i.html#ae35465183809edbb8cccf973a9803e42">setup_base_learner</a> ()=0</td></tr>
-<tr class="separator:ae35465183809edbb8cccf973a9803e42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9290d835d17bd0c49edac022d4a8ae7f"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr&lt; <a class="el" href="classVW_1_1LEARNER_1_1learner.html">VW::LEARNER::learner</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1setup__base__i.html#a9290d835d17bd0c49edac022d4a8ae7f">setup_base_learner</a> (size_t increment=1)=0</td></tr>
+<tr class="separator:a9290d835d17bd0c49edac022d4a8ae7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81a61b30a540681f7008fbb33e1bd8d6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classVW_1_1config_1_1options__i.html">VW::config::options_i</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1setup__base__i.html#a81a61b30a540681f7008fbb33e1bd8d6">get_options</a> ()=0</td></tr>
 <tr class="separator:a81a61b30a540681f7008fbb33e1bd8d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2472ac813066b271c83fee3885c0fd7e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classVW_1_1workspace.html">VW::workspace</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1setup__base__i.html#a2472ac813066b271c83fee3885c0fd7e">get_all_pointer</a> ()=0</td></tr>
 <tr class="separator:a2472ac813066b271c83fee3885c0fd7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78c1bdca9878eaaee5e4cad9567a08df"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1setup__base__i.html#a78c1bdca9878eaaee5e4cad9567a08df">get_setupfn_name</a> (<a class="el" href="namespaceVW.html#a3d84c0b22ccc706c4e743c46a5a8e50a">reduction_setup_fn</a> setup)=0</td></tr>
 <tr class="separator:a78c1bdca9878eaaee5e4cad9567a08df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad505130f5e9e652bc8b1b7b2fe684864"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1setup__base__i.html#ad505130f5e9e652bc8b1b7b2fe684864">get_ppw</a> ()=0</td></tr>
+<tr class="separator:ad505130f5e9e652bc8b1b7b2fe684864"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77470d2254f711c05ae417dc2d75ee03"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1setup__base__i.html#a77470d2254f711c05ae417dc2d75ee03">~setup_base_i</a> ()=default</td></tr>
 <tr class="separator:a77470d2254f711c05ae417dc2d75ee03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -226,6 +228,33 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ad505130f5e9e652bc8b1b7b2fe684864" name="ad505130f5e9e652bc8b1b7b2fe684864"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad505130f5e9e652bc8b1b7b2fe684864">&#9670;&#160;</a></span>get_ppw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual size_t VW::setup_base_i::get_ppw </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classVW_1_1cached__learner.html#ab8484ccf8b817edc5857842695321b97">VW::cached_learner</a>, and <a class="el" href="classVW_1_1default__reduction__stack__setup.html#a417fc36e752ab738b6ec8394573ed687">VW::default_reduction_stack_setup</a>.</p>
+
+</div>
+</div>
 <a id="a78c1bdca9878eaaee5e4cad9567a08df" name="a78c1bdca9878eaaee5e4cad9567a08df"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a78c1bdca9878eaaee5e4cad9567a08df">&#9670;&#160;</a></span>get_setupfn_name()</h2>
 
@@ -254,8 +283,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae35465183809edbb8cccf973a9803e42" name="ae35465183809edbb8cccf973a9803e42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae35465183809edbb8cccf973a9803e42">&#9670;&#160;</a></span>setup_base_learner()</h2>
+<a id="a9290d835d17bd0c49edac022d4a8ae7f" name="a9290d835d17bd0c49edac022d4a8ae7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9290d835d17bd0c49edac022d4a8ae7f">&#9670;&#160;</a></span>setup_base_learner()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -266,7 +295,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual std::shared_ptr&lt; <a class="el" href="classVW_1_1LEARNER_1_1learner.html">VW::LEARNER::learner</a> &gt; VW::setup_base_i::setup_base_learner </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>increment</em> = <code>1</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -277,12 +307,12 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classVW_1_1cached__learner.html#aa27a67859008388dd23000af5c53cf7e">VW::cached_learner</a>, and <a class="el" href="classVW_1_1default__reduction__stack__setup.html#a74592a0a3a28cbb1d9e595e498de5e2e">VW::default_reduction_stack_setup</a>.</p>
+<p>Implemented in <a class="el" href="classVW_1_1default__reduction__stack__setup.html#a171e160aad75dd25b2c3b81ccfff125b">VW::default_reduction_stack_setup</a>, and <a class="el" href="classVW_1_1cached__learner.html#aacddc99a04be56c809670526e4834fc8">VW::cached_learner</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/nix/store/dpvwsclqgybdkq96rm8p7h62mn81m5s2-source/vowpalwabbit/core/include/vw/core/<a class="el" href="setup__base_8h.html">setup_base.h</a></li>
+<li>/nix/store/cf8slnaw1h0lnn03rlcrr2zkdrd1j715-source/vowpalwabbit/core/include/vw/core/<a class="el" href="setup__base_8h.html">setup_base.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

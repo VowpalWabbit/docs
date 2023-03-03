@@ -524,8 +524,8 @@ Functions</h2></td></tr>
 <tr class="separator:ab627e53b594b718c5c42f3ca590308cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3682e44f1b087eaa2958d21420cae1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#ad3682e44f1b087eaa2958d21420cae1a">save_load_regressor_gd</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, <a class="el" href="classVW_1_1io__buf.html">VW::io_buf</a> &amp;model_file, bool read, bool text)</td></tr>
 <tr class="separator:ad3682e44f1b087eaa2958d21420cae1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7cdfbe4fb0f5bf20a7685a1227a0890"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#ac7cdfbe4fb0f5bf20a7685a1227a0890">save_load_online_state_gd</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, <a class="el" href="classVW_1_1io__buf.html">VW::io_buf</a> &amp;model_file, bool read, bool text, double &amp;total_weight, double &amp;normalized_sum_norm_x, <a class="el" href="classVW_1_1reductions_1_1gd.html">VW::reductions::gd</a> *g=nullptr, uint32_t ftrl_size=0)</td></tr>
-<tr class="separator:ac7cdfbe4fb0f5bf20a7685a1227a0890"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25b239d72c9949f1f3bdf9c16a853610"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#a25b239d72c9949f1f3bdf9c16a853610">save_load_online_state_gd</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, <a class="el" href="classVW_1_1io__buf.html">VW::io_buf</a> &amp;model_file, bool read, bool text, std::vector&lt; <a class="el" href="classVW_1_1reductions_1_1details_1_1per__model__state.html">VW::reductions::details::per_model_state</a> &gt; &amp;pms, <a class="el" href="classVW_1_1reductions_1_1gd.html">VW::reductions::gd</a> *g=nullptr, uint32_t ftrl_size=0)</td></tr>
+<tr class="separator:a25b239d72c9949f1f3bdf9c16a853610"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08701052028b7a4f3ac86a4f1a8fafc2"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a08701052028b7a4f3ac86a4f1a8fafc2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html#a08701052028b7a4f3ac86a4f1a8fafc2">vec_add_multipredict</a> (<a class="el" href="classVW_1_1details_1_1multipredict__info.html">multipredict_info</a>&lt; T &gt; &amp;mp, const float fx, uint64_t fi)</td></tr>
 <tr class="separator:a08701052028b7a4f3ac86a4f1a8fafc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -6217,8 +6217,8 @@ template&lt;bool Audit, typename KernelFuncT , typename AuditFuncT &gt; </div>
 
 </div>
 </div>
-<a id="ac7cdfbe4fb0f5bf20a7685a1227a0890" name="ac7cdfbe4fb0f5bf20a7685a1227a0890"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7cdfbe4fb0f5bf20a7685a1227a0890">&#9670;&#160;</a></span>save_load_online_state_gd()</h2>
+<a id="a25b239d72c9949f1f3bdf9c16a853610" name="a25b239d72c9949f1f3bdf9c16a853610"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25b239d72c9949f1f3bdf9c16a853610">&#9670;&#160;</a></span>save_load_online_state_gd()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6250,14 +6250,8 @@ template&lt;bool Audit, typename KernelFuncT , typename AuditFuncT &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>total_weight</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>normalized_sum_norm_x</em>, </td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classVW_1_1reductions_1_1details_1_1per__model__state.html">VW::reductions::details::per_model_state</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>pms</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
