@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['l_0',['l',['../classVW_1_1flat__example.html#ac06ce4e30446607fac19572a00011d19',1,'VW::flat_example::l()'],['../classVW_1_1example.html#adfcc771a9e46a65130c9dcf8b18870e6',1,'VW::example::l()'],['../classVW_1_1workspace.html#a075a9a49b1eac9e77c9b7617e67fdc91',1,'VW::workspace::l()']]],
+  ['l_0',['l',['../classVW_1_1workspace.html#a075a9a49b1eac9e77c9b7617e67fdc91',1,'VW::workspace::l()'],['../classVW_1_1example.html#adfcc771a9e46a65130c9dcf8b18870e6',1,'VW::example::l()']]],
   ['l1_5flambda_1',['l1_lambda',['../classVW_1_1workspace.html#ae7797a50d730e07c4310a0d6826abf01',1,'VW::workspace']]],
   ['l2_5flambda_2',['l2_lambda',['../classVW_1_1workspace.html#a0892885d065a4eef0f904e8228d57d14',1,'VW::workspace']]],
   ['label_3',['label',['../classVW_1_1multiclass__label.html#ad60261e4c5e6d9f19557536c432def79',1,'VW::multiclass_label::label()'],['../structVW_1_1reductions_1_1eigen__memory__tree_1_1emt__example.html#ad26c216c50ebdd65c2b205a34495ae1e',1,'VW::reductions::eigen_memory_tree::emt_example::label()'],['../classVW_1_1simple__label.html#af2f88a3333bda3371519564b725df551',1,'VW::simple_label::label()']]],

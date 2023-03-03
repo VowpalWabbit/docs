@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['n_0',['N',['../classVW_1_1reductions_1_1expreplay_1_1expreplay.html#a2563123c377deacbee6f4ec4fa5051e9',1,'VW::reductions::expreplay::expreplay']]],
-  ['n_1',['n',['../classVW_1_1details_1_1Duals.html#a637ee45e21a742feff38f41bc134f896',1,'VW::details::Duals']]],
+  ['n_0',['n',['../classVW_1_1details_1_1Duals.html#a637ee45e21a742feff38f41bc134f896',1,'VW::details::Duals']]],
+  ['n_1',['N',['../classVW_1_1reductions_1_1expreplay_1_1expreplay.html#a2563123c377deacbee6f4ec4fa5051e9',1,'VW::reductions::expreplay::expreplay']]],
   ['name_2',['name',['../classVW_1_1audit__strings.html#aeda51a335733a0481b53d8057c22fdf9',1,'VW::audit_strings::name()'],['../classVW_1_1details_1_1dictionary__info.html#ae4c13b09ead447efd5dca770464ea18d',1,'VW::details::dictionary_info::name()'],['../classVW_1_1primitive__feature__space.html#a8f5b0342e8c1f8c6d6e5648d14894a59',1,'VW::primitive_feature_space::name()']]],
   ['namespace_5fdictionaries_3',['namespace_dictionaries',['../classVW_1_1workspace.html#ac1c4e2dfc4b7a086ca13d76d2e0060c9',1,'VW::workspace']]],
   ['namespace_5fextents_4',['namespace_extents',['../classVW_1_1features.html#aef7d3f4c7e6f37cd3e41ccfd3e3c273d',1,'VW::features']]],
@@ -29,11 +29,11 @@ var searchData=
   ['ns_26',['ns',['../classVW_1_1audit__strings.html#ae12b6141b6e9f12005f58916f9e90816',1,'VW::audit_strings']]],
   ['ns_5fcounter_27',['ns_counter',['../classVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a30385c038d818cbc596b276e2e43a7e4',1,'VW::reductions::automl::interaction_config_manager']]],
   ['ns_5fvalue_28',['ns_value',['../classVW_1_1parsers_1_1csv_1_1csv__parser.html#ad65cb33a924aa8622eb2e9d988af20af',1,'VW::parsers::csv::csv_parser']]],
-  ['num_5factions_29',['num_actions',['../classHookTask_1_1task__data.html#a3cd682caa601613f82b1ff0dfefc0af2',1,'HookTask::task_data::num_actions()'],['../classVW_1_1details_1_1cb__to__cs.html#a0bbcfcfe4e5ddb1bc9520cc6edaa0ada',1,'VW::details::cb_to_cs::num_actions()'],['../classVW_1_1reductions_1_1pmf__to__pdf__reduction.html#a8728e75b7e98590614b3e282899a2233',1,'VW::reductions::pmf_to_pdf_reduction::num_actions()'],['../classVW_1_1reductions_1_1cbify__adf__data.html#a07a25062fa801804cb48466234620822',1,'VW::reductions::cbify_adf_data::num_actions()'],['../classVW_1_1reductions_1_1cats_1_1cats.html#a666615e3086693da036c00e47094a7ac',1,'VW::reductions::cats::cats::num_actions()']]],
+  ['num_5factions_29',['num_actions',['../classHookTask_1_1task__data.html#a3cd682caa601613f82b1ff0dfefc0af2',1,'HookTask::task_data::num_actions()'],['../classVW_1_1reductions_1_1pmf__to__pdf__reduction.html#a8728e75b7e98590614b3e282899a2233',1,'VW::reductions::pmf_to_pdf_reduction::num_actions()'],['../classVW_1_1reductions_1_1cbify__adf__data.html#a07a25062fa801804cb48466234620822',1,'VW::reductions::cbify_adf_data::num_actions()'],['../classVW_1_1reductions_1_1cats_1_1cats.html#a666615e3086693da036c00e47094a7ac',1,'VW::reductions::cats::cats::num_actions()'],['../classVW_1_1details_1_1cb__to__cs.html#a0bbcfcfe4e5ddb1bc9520cc6edaa0ada',1,'VW::details::cb_to_cs::num_actions()']]],
   ['num_5fbits_30',['num_bits',['../classVW_1_1workspace.html#a0da53208830eed64d95200668d3eca1b',1,'VW::workspace']]],
   ['num_5fchildren_31',['num_children',['../classVW_1_1details_1_1input__options.html#a83eadb4de3a2d35ad52948c76fdfc0ad',1,'VW::details::input_options']]],
   ['num_5fexamples_5ftaken_5ffrom_5fpool_32',['num_examples_taken_from_pool',['../classVW_1_1parser.html#af55ed1a116482c302ee868e444554877',1,'VW::parser']]],
-  ['num_5ffeatures_33',['num_features',['../classVW_1_1example.html#ad7ce85893d334a518274b0f99a3913af',1,'VW::example::num_features()'],['../classVW_1_1flat__example.html#a83caf8e60dcdaad8ac6aa299f79d70d0',1,'VW::flat_example::num_features()']]],
+  ['num_5ffeatures_33',['num_features',['../classVW_1_1example.html#ad7ce85893d334a518274b0f99a3913af',1,'VW::example']]],
   ['num_5ffeatures_5ffrom_5finteractions_34',['num_features_from_interactions',['../classVW_1_1example.html#ab944ea3c604f287e0e9d954ca1fda5d8',1,'VW::example']]],
   ['num_5ffinished_5fexamples_35',['num_finished_examples',['../classVW_1_1parser.html#a83d7ca3cac6cecf1d8d68135b900ae27',1,'VW::parser']]],
   ['num_5fnamespaces_36',['NUM_NAMESPACES',['../constant_8h.html#af6972edf713d5809ccd5658eca433d84',1,'NUM_NAMESPACES():&#160;constant.h'],['../namespaceVW.html#a8aea57a88a93c44bc9a5a33c22798a55',1,'VW::NUM_NAMESPACES()']]],

@@ -10,11 +10,10 @@ var searchData=
   ['generated_5fname_7',['generated_name',['../classVW_1_1config_1_1options__name__extractor.html#a3335b4d823e548577f2e4394aeea86c5',1,'VW::config::options_name_extractor']]],
   ['get_5fpmf_8',['GET_PMF',['../classvw__dbg.html#a013743f313758d5a68a0a72f620ceba4',1,'vw_dbg']]],
   ['get_5fweight_9',['get_weight',['../classVW_1_1label__parser.html#ae7a6398d612487cb0ea8e7e422d3cc08',1,'VW::label_parser']]],
-  ['git_5fcommit_10',['GIT_COMMIT',['../namespaceVW.html#a07168230c85cd48992234212bb9088ea',1,'VW']]],
-  ['git_5fcommit_11',['git_commit',['../namespaceVW.html#a7d89e09709dcb4deeb550e17aa8ea75b',1,'VW']]],
+  ['git_5fcommit_10',['git_commit',['../namespaceVW.html#a7d89e09709dcb4deeb550e17aa8ea75b',1,'VW']]],
+  ['git_5fcommit_11',['GIT_COMMIT',['../namespaceVW.html#a07168230c85cd48992234212bb9088ea',1,'VW']]],
   ['global_5fmetrics_12',['global_metrics',['../classVW_1_1workspace.html#a27c19a7ea654be0723adfb28a954de63',1,'VW::workspace']]],
-  ['global_5fweight_13',['global_weight',['../classVW_1_1flat__example.html#af22b235d38543a0c757241e20dcfa375',1,'VW::flat_example']]],
-  ['graph_5ffeedback_5ftype_14',['GRAPH_FEEDBACK_TYPE',['../namespaceVW_1_1details.html#aea3a36ec8619d49b3384f67a33c86031',1,'VW::details']]],
-  ['gravity_15',['gravity',['../classVW_1_1details_1_1multipredict__info.html#a3ce99686811a936941cabdd523a6fae1',1,'VW::details::multipredict_info::gravity()'],['../classVW_1_1shared__data.html#a88f22588da0951f56628fbeb4a8abd1e',1,'VW::shared_data::gravity()']]],
-  ['gt_16',['gt',['../classVW_1_1details_1_1countable__discrete__base.html#a4358dc6485dbabd306a7ad7e24618405',1,'VW::details::countable_discrete_base']]]
+  ['graph_5ffeedback_5ftype_13',['GRAPH_FEEDBACK_TYPE',['../namespaceVW_1_1details.html#aea3a36ec8619d49b3384f67a33c86031',1,'VW::details']]],
+  ['gravity_14',['gravity',['../classVW_1_1details_1_1multipredict__info.html#a3ce99686811a936941cabdd523a6fae1',1,'VW::details::multipredict_info::gravity()'],['../classVW_1_1shared__data.html#a88f22588da0951f56628fbeb4a8abd1e',1,'VW::shared_data::gravity()']]],
+  ['gt_15',['gt',['../classVW_1_1details_1_1countable__discrete__base.html#a4358dc6485dbabd306a7ad7e24618405',1,'VW::details::countable_discrete_base']]]
 ];
