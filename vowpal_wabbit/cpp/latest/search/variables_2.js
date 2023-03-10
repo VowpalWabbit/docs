@@ -73,7 +73,7 @@ var searchData=
   ['current_5fchamp_70',['current_champ',['../classVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a1e2841a0289a3e73e6eb545247f62bf1',1,'VW::reductions::automl::interaction_config_manager']]],
   ['current_5fit_71',['current_it',['../classVW_1_1details_1_1feature__gen__data.html#a478be2cf80fc61029397a1b767f74be5',1,'VW::details::feature_gen_data']]],
   ['current_5fmaster_72',['current_master',['../classVW_1_1details_1_1node__socks.html#a762d8027f627dd68ad817697865cc1d9',1,'VW::details::node_socks']]],
-  ['current_5fmodel_5fstate_73',['current_model_state',['../classVW_1_1reductions_1_1gd.html#a65b8527eccb220bbfda3d452ed8701af',1,'VW::reductions::gd']]],
+  ['current_5fmodel_5fstate_73',['current_model_state',['../classVW_1_1reductions_1_1gd.html#a38523116c74c01d605e83805039fcc0e',1,'VW::reductions::gd']]],
   ['current_5fpass_74',['current_pass',['../classVW_1_1workspace.html#a22cd393be59738091f2919b9bf4aae08',1,'VW::workspace']]],
   ['current_5fstate_75',['current_state',['../classVW_1_1reductions_1_1automl_1_1automl.html#a936e3585db146424ae8274fe1acca70e',1,'VW::reductions::automl::automl']]],
   ['current_5fterm_76',['current_term',['../classVW_1_1details_1_1extent__interaction__expansion__stack__item.html#a3884bcde637d5e7da4465a1d3d797da9',1,'VW::details::extent_interaction_expansion_stack_item']]],

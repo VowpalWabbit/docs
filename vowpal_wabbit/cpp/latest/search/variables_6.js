@@ -2,8 +2,8 @@ var searchData=
 [
   ['gamma_0',['gamma',['../classVW_1_1details_1_1Duals.html#a2b0a2517416c8632af54c2547e6213de',1,'VW::details::Duals']]],
   ['gd_1',['GD',['../classvw__dbg.html#a1e4332477255e73b6dc3175c9d3a6d4f',1,'vw_dbg']]],
-  ['gd_5fpredict_2',['GD_PREDICT',['../classvw__dbg.html#a77ef14f9206ee66a903b964614d27bd5',1,'vw_dbg']]],
-  ['gen_5fcs_3',['gen_cs',['../classVW_1_1reductions_1_1cb__adf.html#a643cd9b811561fd8d4728b11a5e19367',1,'VW::reductions::cb_adf']]],
+  ['gd_5fper_5fmodel_5fstates_2',['gd_per_model_states',['../classVW_1_1reductions_1_1gd.html#a6d29773ad56894d886fccca5656f1084',1,'VW::reductions::gd']]],
+  ['gd_5fpredict_3',['GD_PREDICT',['../classvw__dbg.html#a77ef14f9206ee66a903b964614d27bd5',1,'vw_dbg']]],
   ['generate_5finteractions_5fobject_5fcache_5fstate_4',['generate_interactions_object_cache_state',['../classVW_1_1workspace.html#a9439c4c2279c98dc9d39352b187f1370',1,'VW::workspace']]],
   ['generated_5fextent_5finteractions_5',['generated_extent_interactions',['../classVW_1_1interactions__generator.html#af5fab46974e1f19fff7fb8a467e7e8ff',1,'VW::interactions_generator::generated_extent_interactions()'],['../classVW_1_1large__action__space_1_1las__reduction__features.html#a32275a371c2986d8a8aee62ea1320435',1,'VW::large_action_space::las_reduction_features::generated_extent_interactions()']]],
   ['generated_5finteractions_6',['generated_interactions',['../classVW_1_1interactions__generator.html#af9971fd8bfe589eda0d6b2ae64dfd0fe',1,'VW::interactions_generator::generated_interactions()'],['../classVW_1_1large__action__space_1_1las__reduction__features.html#aac82fe7c765057ebbf34e851fa5855b1',1,'VW::large_action_space::las_reduction_features::generated_interactions()']]],

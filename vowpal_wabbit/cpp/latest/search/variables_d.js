@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['n_0',['N',['../classVW_1_1reductions_1_1expreplay_1_1expreplay.html#a2563123c377deacbee6f4ec4fa5051e9',1,'VW::reductions::expreplay::expreplay']]],
-  ['n_1',['n',['../classVW_1_1details_1_1Duals.html#a637ee45e21a742feff38f41bc134f896',1,'VW::details::Duals']]],
+  ['n_0',['n',['../classVW_1_1details_1_1Duals.html#a637ee45e21a742feff38f41bc134f896',1,'VW::details::Duals']]],
+  ['n_1',['N',['../classVW_1_1reductions_1_1expreplay_1_1expreplay.html#a2563123c377deacbee6f4ec4fa5051e9',1,'VW::reductions::expreplay::expreplay']]],
   ['name_2',['name',['../classVW_1_1audit__strings.html#aeda51a335733a0481b53d8057c22fdf9',1,'VW::audit_strings::name()'],['../classVW_1_1details_1_1dictionary__info.html#ae4c13b09ead447efd5dca770464ea18d',1,'VW::details::dictionary_info::name()'],['../classVW_1_1primitive__feature__space.html#a8f5b0342e8c1f8c6d6e5648d14894a59',1,'VW::primitive_feature_space::name()']]],
   ['namespace_5fdictionaries_3',['namespace_dictionaries',['../classVW_1_1workspace.html#ac1c4e2dfc4b7a086ca13d76d2e0060c9',1,'VW::workspace']]],
   ['namespace_5fextents_4',['namespace_extents',['../classVW_1_1features.html#aef7d3f4c7e6f37cd3e41ccfd3e3c273d',1,'VW::features']]],
@@ -25,7 +25,7 @@ var searchData=
   ['normalized_22',['normalized',['../classVW_1_1parameters.html#a7a4b607ec9a8f0b2232fc7851327dcd5',1,'VW::parameters']]],
   ['normalized_5fidx_23',['normalized_idx',['../classVW_1_1workspace.html#a23ee88f7ef030182ec255a7a9008de13',1,'VW::workspace']]],
   ['normalized_5finput_24',['normalized_input',['../classVW_1_1reductions_1_1gd.html#ae50fbd64ee0542be834b3ae9ef51bcfb',1,'VW::reductions::gd']]],
-  ['normalized_5fsum_5fnorm_5fx_25',['normalized_sum_norm_x',['../classVW_1_1reductions_1_1details_1_1per__model__state.html#a6dfa15971edc27fbf655128e2e5b2973',1,'VW::reductions::details::per_model_state']]],
+  ['normalized_5fsum_5fnorm_5fx_25',['normalized_sum_norm_x',['../classVW_1_1reductions_1_1details_1_1gd__per__model__state.html#afe312a58d37e063580b07caf65128961',1,'VW::reductions::details::gd_per_model_state']]],
   ['ns_26',['ns',['../classVW_1_1audit__strings.html#ae12b6141b6e9f12005f58916f9e90816',1,'VW::audit_strings']]],
   ['ns_5fcounter_27',['ns_counter',['../classVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#a30385c038d818cbc596b276e2e43a7e4',1,'VW::reductions::automl::interaction_config_manager']]],
   ['ns_5fvalue_28',['ns_value',['../classVW_1_1parsers_1_1csv_1_1csv__parser.html#ad65cb33a924aa8622eb2e9d988af20af',1,'VW::parsers::csv::csv_parser']]],
