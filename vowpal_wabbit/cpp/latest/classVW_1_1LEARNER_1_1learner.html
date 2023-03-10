@@ -190,10 +190,10 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a1536b316d2ea923b66c7cbd5452313ae"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1LEARNER_1_1learner.html#a1536b316d2ea923b66c7cbd5452313ae">weights</a></td></tr>
-<tr class="separator:a1536b316d2ea923b66c7cbd5452313ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61de3a96776a8fa79491c506f1086c70"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1LEARNER_1_1learner.html#a61de3a96776a8fa79491c506f1086c70">increment</a></td></tr>
-<tr class="separator:a61de3a96776a8fa79491c506f1086c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9da01bb27cfa99790815600f7d78d7d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1LEARNER_1_1learner.html#ad9da01bb27cfa99790815600f7d78d7d">feature_width</a> = 1</td></tr>
+<tr class="separator:ad9da01bb27cfa99790815600f7d78d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a154a6229cdc62236729ea6d9934b4878"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1LEARNER_1_1learner.html#a154a6229cdc62236729ea6d9934b4878">feature_width_below</a> = 1</td></tr>
+<tr class="separator:a154a6229cdc62236729ea6d9934b4878"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6122b633e0580c8cd3b7cfc6d2b40965"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1LEARNER_1_1learner.html#a6122b633e0580c8cd3b7cfc6d2b40965">learn_returns_prediction</a> = false</td></tr>
 <tr class="separator:a6122b633e0580c8cd3b7cfc6d2b40965"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -900,7 +900,7 @@ Friends</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ec</td><td>The <a class="el" href="example_8h.html#ad8bc4e4e4b50871a4a048c3a6b6e5309">example</a> object or <a class="el" href="namespaceVW.html#a1dd7b95816f635bc6a5906d2b566c856">multi_ex</a> to be operated on. This object <b>must</b> have a valid label set for every <a class="el" href="example_8h.html#ad8bc4e4e4b50871a4a048c3a6b6e5309">example</a> in the field <a class="el" href="classVW_1_1example.html#adfcc771a9e46a65130c9dcf8b18870e6">example::l</a> that corresponds to the type this learner expects. </td></tr>
-    <tr><td class="paramname">i</td><td>This is the offset used for the weights in this call. If using multiple regressors/learners you can increment this value for each call. </td></tr>
+    <tr><td class="paramname">i</td><td>This is the offset used for the feature_width in this call. If using multiple regressors/learners you can feature_width_below this value for each call. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1153,7 +1153,7 @@ Friends</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ec</td><td>The <a class="el" href="example_8h.html#ad8bc4e4e4b50871a4a048c3a6b6e5309">example</a> object or <a class="el" href="namespaceVW.html#a1dd7b95816f635bc6a5906d2b566c856">multi_ex</a> to be operated on. This object <b>must</b> have a valid prediction allocated in the field <a class="el" href="classVW_1_1example.html#a9302a52e74bafd839a213cbba89cfe4a">example::pred</a> that corresponds to this learner type. </td></tr>
-    <tr><td class="paramname">i</td><td>This is the offset used for the weights in this call. If using multiple regressors/learners you can increment this value for each call. </td></tr>
+    <tr><td class="paramname">i</td><td>This is the offset used for the feature_width in this call. If using multiple regressors/learners you can feature_width_below this value for each call. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1563,14 +1563,28 @@ template&lt;class ExampleT &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a61de3a96776a8fa79491c506f1086c70" name="a61de3a96776a8fa79491c506f1086c70"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a61de3a96776a8fa79491c506f1086c70">&#9670;&#160;</a></span>increment</h2>
+<a id="ad9da01bb27cfa99790815600f7d78d7d" name="ad9da01bb27cfa99790815600f7d78d7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9da01bb27cfa99790815600f7d78d7d">&#9670;&#160;</a></span>feature_width</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t VW::LEARNER::learner::increment</td>
+          <td class="memname">size_t VW::LEARNER::learner::feature_width = 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a154a6229cdc62236729ea6d9934b4878" name="a154a6229cdc62236729ea6d9934b4878"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a154a6229cdc62236729ea6d9934b4878">&#9670;&#160;</a></span>feature_width_below</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t VW::LEARNER::learner::feature_width_below = 1</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1591,22 +1605,8 @@ template&lt;class ExampleT &gt; </div>
 
 </div>
 </div>
-<a id="a1536b316d2ea923b66c7cbd5452313ae" name="a1536b316d2ea923b66c7cbd5452313ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1536b316d2ea923b66c7cbd5452313ae">&#9670;&#160;</a></span>weights</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t VW::LEARNER::learner::weights</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/nix/store/y78kfm19g0kfaglmhjx9ljiwkvjfiyx9-source/vowpalwabbit/core/include/vw/core/<a class="el" href="learner_8h.html">learner.h</a></li>
+<li>/nix/store/dy6rlkm1sdwbq3xzfg6agarlwm7vxmbb-source/vowpalwabbit/core/include/vw/core/<a class="el" href="learner_8h.html">learner.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

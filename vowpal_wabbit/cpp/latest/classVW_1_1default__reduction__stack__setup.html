@@ -107,8 +107,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a589ebfad7a36fbecdb2eb39483a093f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7192322d7e4716e0e1e73bf95b15b30e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1default__reduction__stack__setup.html#a7192322d7e4716e0e1e73bf95b15b30e">get_setupfn_name</a> (<a class="el" href="namespaceVW.html#a3d84c0b22ccc706c4e743c46a5a8e50a">reduction_setup_fn</a> setup) override</td></tr>
 <tr class="separator:a7192322d7e4716e0e1e73bf95b15b30e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a417fc36e752ab738b6ec8394573ed687"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1default__reduction__stack__setup.html#a417fc36e752ab738b6ec8394573ed687">get_ppw</a> () override</td></tr>
-<tr class="separator:a417fc36e752ab738b6ec8394573ed687"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31ed4dc1656b570eb2182fe737e0f0df"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1default__reduction__stack__setup.html#a31ed4dc1656b570eb2182fe737e0f0df">get_feature_width_above</a> () override</td></tr>
+<tr class="separator:a31ed4dc1656b570eb2182fe737e0f0df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classVW_1_1setup__base__i"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classVW_1_1setup__base__i')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classVW_1_1setup__base__i.html">VW::setup_base_i</a></td></tr>
 <tr class="memitem:aaa1281090266c728ee2f3b2461b173e1 inherit pub_methods_classVW_1_1setup__base__i"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1setup__base__i.html#aaa1281090266c728ee2f3b2461b173e1">delayed_state_attach</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;, <a class="el" href="classVW_1_1config_1_1options__i.html">VW::config::options_i</a> &amp;)=0</td></tr>
 <tr class="separator:aaa1281090266c728ee2f3b2461b173e1 inherit pub_methods_classVW_1_1setup__base__i"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -120,8 +120,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2472ac813066b271c83fee3885c0fd7e inherit pub_methods_classVW_1_1setup__base__i"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78c1bdca9878eaaee5e4cad9567a08df inherit pub_methods_classVW_1_1setup__base__i"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1setup__base__i.html#a78c1bdca9878eaaee5e4cad9567a08df">get_setupfn_name</a> (<a class="el" href="namespaceVW.html#a3d84c0b22ccc706c4e743c46a5a8e50a">reduction_setup_fn</a> setup)=0</td></tr>
 <tr class="separator:a78c1bdca9878eaaee5e4cad9567a08df inherit pub_methods_classVW_1_1setup__base__i"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad505130f5e9e652bc8b1b7b2fe684864 inherit pub_methods_classVW_1_1setup__base__i"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1setup__base__i.html#ad505130f5e9e652bc8b1b7b2fe684864">get_ppw</a> ()=0</td></tr>
-<tr class="separator:ad505130f5e9e652bc8b1b7b2fe684864 inherit pub_methods_classVW_1_1setup__base__i"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24267477c931b7971e2411a42a01fa7a inherit pub_methods_classVW_1_1setup__base__i"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1setup__base__i.html#a24267477c931b7971e2411a42a01fa7a">get_feature_width_above</a> ()=0</td></tr>
+<tr class="separator:a24267477c931b7971e2411a42a01fa7a inherit pub_methods_classVW_1_1setup__base__i"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77470d2254f711c05ae417dc2d75ee03 inherit pub_methods_classVW_1_1setup__base__i"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVW_1_1setup__base__i.html#a77470d2254f711c05ae417dc2d75ee03">~setup_base_i</a> ()=default</td></tr>
 <tr class="separator:a77470d2254f711c05ae417dc2d75ee03 inherit pub_methods_classVW_1_1setup__base__i"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -237,6 +237,33 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a31ed4dc1656b570eb2182fe737e0f0df" name="a31ed4dc1656b570eb2182fe737e0f0df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31ed4dc1656b570eb2182fe737e0f0df">&#9670;&#160;</a></span>get_feature_width_above()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t VW::default_reduction_stack_setup::get_feature_width_above </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classVW_1_1setup__base__i.html#a24267477c931b7971e2411a42a01fa7a">VW::setup_base_i</a>.</p>
+
+</div>
+</div>
 <a id="a7a0d4850cbf274ce59b56b8437f22af0" name="a7a0d4850cbf274ce59b56b8437f22af0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7a0d4850cbf274ce59b56b8437f22af0">&#9670;&#160;</a></span>get_options()</h2>
 
@@ -261,33 +288,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="classVW_1_1setup__base__i.html#a81a61b30a540681f7008fbb33e1bd8d6">VW::setup_base_i</a>.</p>
-
-</div>
-</div>
-<a id="a417fc36e752ab738b6ec8394573ed687" name="a417fc36e752ab738b6ec8394573ed687"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a417fc36e752ab738b6ec8394573ed687">&#9670;&#160;</a></span>get_ppw()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t VW::default_reduction_stack_setup::get_ppw </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="classVW_1_1setup__base__i.html#ad505130f5e9e652bc8b1b7b2fe684864">VW::setup_base_i</a>.</p>
 
 </div>
 </div>
@@ -348,7 +348,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/nix/store/y78kfm19g0kfaglmhjx9ljiwkvjfiyx9-source/vowpalwabbit/core/include/vw/core/<a class="el" href="reduction__stack_8h.html">reduction_stack.h</a></li>
+<li>/nix/store/dy6rlkm1sdwbq3xzfg6agarlwm7vxmbb-source/vowpalwabbit/core/include/vw/core/<a class="el" href="reduction__stack_8h.html">reduction_stack.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

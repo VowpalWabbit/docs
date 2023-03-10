@@ -76,7 +76,7 @@ var searchData=
   ['model_5futils_2eh_73',['model_utils.h',['../model__utils_8h.html',1,'']]],
   ['more_5finfo_5frequired_5ffor_5fclasses_74',['more_info_required_for_classes',['../classVW_1_1active__multiclass__prediction.html#ab9814a36e47b7f06526ebb1d978515b5',1,'VW::active_multiclass_prediction']]],
   ['move_5ffeature_5fnamespace_75',['move_feature_namespace',['../namespaceVW.html#ab9e00af55935c42d32d1c2c5c244150e',1,'VW']]],
-  ['move_5finnermost_5foffsets_76',['move_innermost_offsets',['../namespaceVW_1_1reductions_1_1multi__model.html#a16216f840453b0b7985afd603350b528',1,'VW::reductions::multi_model']]],
+  ['move_5finnermost_5foffsets_76',['move_innermost_offsets',['../namespaceVW_1_1reductions_1_1multi__model.html#a229e43b2d3c4ad4b26e67762940ffb56',1,'VW::reductions::multi_model']]],
   ['moved_5fobject_5fpool_77',['moved_object_pool',['../classVW_1_1moved__object__pool.html#a576da638798a649601d6c423a497a998',1,'VW::moved_object_pool::moved_object_pool()'],['../classVW_1_1moved__object__pool.html',1,'VW::moved_object_pool&lt; T &gt;']]],
   ['moved_5fobject_5fpool_3c_20vw_3a_3adetails_3a_3aextent_5finteraction_5fexpansion_5fstack_5fitem_20_3e_78',['moved_object_pool&lt; VW::details::extent_interaction_expansion_stack_item &gt;',['../classVW_1_1moved__object__pool.html',1,'VW']]],
   ['mtr_79',['MTR',['../namespaceVW.html#afc6602380e780c653a55bf44b6e5c881a7c6fab8b3b80d8d645c1638702cc0ce4',1,'VW']]],

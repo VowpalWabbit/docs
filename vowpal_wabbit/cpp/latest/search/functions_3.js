@@ -7,7 +7,7 @@ var searchData=
   ['debug_5fincrement_5fdepth_4',['debug_increment_depth',['../namespaceVW_1_1LEARNER_1_1details.html#a9f64c4c7fcde556a5c65ea7f0fcf12c7',1,'VW::LEARNER::details']]],
   ['decayed_5fepsilon_5',['decayed_epsilon',['../namespaceVW_1_1reductions_1_1epsilon__decay.html#ae58e933882ff9ee089780327534eec90',1,'VW::reductions::epsilon_decay']]],
   ['decode_5finline_5fhex_6',['decode_inline_hex',['../namespaceVW.html#a68c70a944575aab16671c0e4ecded5e2',1,'VW']]],
-  ['decrement_5foffset_7',['decrement_offset',['../namespaceVW_1_1LEARNER_1_1details.html#a1110a4dafefc10711822cfa5a0d79e69',1,'VW::LEARNER::details']]],
+  ['decrement_5foffset_7',['decrement_offset',['../namespaceVW_1_1LEARNER_1_1details.html#ae8959c6aa932dfb71ab75246978b63dd',1,'VW::LEARNER::details']]],
   ['deep_5fcopy_8',['deep_copy',['../classVW_1_1dense__parameters.html#af09c58570af71928e46edc8c50132a28',1,'VW::dense_parameters']]],
   ['default_5flabel_9',['default_label',['../namespaceCCB.html#ae13cfb9f40eed26cde3857970f481e9b',1,'CCB::default_label()'],['../namespaceVW_1_1slates.html#a1e6338c776c8f32ff9132e5934ed2177',1,'VW::slates::default_label()'],['../namespaceCOST__SENSITIVE.html#ab5631356ff49c06b8ae1ac78aaacac60',1,'COST_SENSITIVE::default_label()']]],
   ['default_5freduction_5fstack_5fsetup_10',['default_reduction_stack_setup',['../classVW_1_1default__reduction__stack__setup.html#ab52f53b4e6e01ab619bbc7b7f7ca4490',1,'VW::default_reduction_stack_setup::default_reduction_stack_setup(VW::workspace &amp;all, VW::config::options_i &amp;options)'],['../classVW_1_1default__reduction__stack__setup.html#a698f670053e583466b9ab08ac15efb27',1,'VW::default_reduction_stack_setup::default_reduction_stack_setup()']]],

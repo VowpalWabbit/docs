@@ -25,7 +25,7 @@ var searchData=
   ['decision_5fservice_5futils_2eh_22',['decision_service_utils.h',['../decision__service__utils_8h.html',1,'']]],
   ['declare_5fmetatask_23',['DECLARE_METATASK',['../search__meta_8h.html#aa9b72618a93bed688124de4212d654bd',1,'search_meta.h']]],
   ['decode_5finline_5fhex_24',['decode_inline_hex',['../namespaceVW.html#a68c70a944575aab16671c0e4ecded5e2',1,'VW']]],
-  ['decrement_5foffset_25',['decrement_offset',['../namespaceVW_1_1LEARNER_1_1details.html#a1110a4dafefc10711822cfa5a0d79e69',1,'VW::LEARNER::details']]],
+  ['decrement_5foffset_25',['decrement_offset',['../namespaceVW_1_1LEARNER_1_1details.html#ae8959c6aa932dfb71ab75246978b63dd',1,'VW::LEARNER::details']]],
   ['deep_5fcopy_26',['deep_copy',['../classVW_1_1dense__parameters.html#af09c58570af71928e46edc8c50132a28',1,'VW::dense_parameters']]],
   ['default_5falpha_27',['DEFAULT_ALPHA',['../namespaceVW_1_1details.html#ad98271cf6dea7188a3e9ad0fee72ca61',1,'VW::details']]],
   ['default_5fbits_28',['default_bits',['../classVW_1_1workspace.html#a46b7fcede46b35c05fe6d09d25d90c5e',1,'VW::workspace']]],
