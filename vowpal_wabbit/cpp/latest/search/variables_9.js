@@ -1,5 +1,5 @@
 var searchData=
 [
   ['json_0',['json',['../classVW_1_1details_1_1input__options.html#a81a75be99566e0f135203b22076e7803',1,'VW::details::input_options']]],
-  ['json_5fweights_5ffile_5fname_1',['json_weights_file_name',['../classVW_1_1workspace.html#a8b561280c4b4f6a2f1791488ff3fe918',1,'VW::workspace']]]
+  ['json_5fweights_5ffile_5fname_1',['json_weights_file_name',['../classVW_1_1details_1_1output__model__config.html#a593e443aed8c57cd14ad6b643cbef9e3',1,'VW::details::output_model_config']]]
 ];

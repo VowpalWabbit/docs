@@ -12,5 +12,8 @@ var searchData=
   ['options_5fname_5fextractor_9',['options_name_extractor',['../classVW_1_1config_1_1options__name__extractor.html',1,'VW::config']]],
   ['options_5fserializer_5fi_10',['options_serializer_i',['../classVW_1_1config_1_1options__serializer__i.html',1,'VW::config']]],
   ['oracle_5frand_5fimpl_11',['oracle_rand_impl',['../classVW_1_1reductions_1_1automl_1_1oracle__rand__impl.html',1,'VW::reductions::automl']]],
-  ['owning_5fostream_12',['owning_ostream',['../classVW_1_1io_1_1owning__ostream.html',1,'VW::io']]]
+  ['output_5fconfig_12',['output_config',['../classVW_1_1details_1_1output__config.html',1,'VW::details']]],
+  ['output_5fmodel_5fconfig_13',['output_model_config',['../classVW_1_1details_1_1output__model__config.html',1,'VW::details']]],
+  ['output_5fruntime_14',['output_runtime',['../classVW_1_1details_1_1output__runtime.html',1,'VW::details']]],
+  ['owning_5fostream_15',['owning_ostream',['../classVW_1_1io_1_1owning__ostream.html',1,'VW::io']]]
 ];

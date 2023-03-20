@@ -129,7 +129,7 @@ var searchData=
   ['vw_5ffilename_126',['VW_FILENAME',['../vw__exception_8h.html#ae7c769e11d0c8cd71631f5e25de14b2e',1,'vw_exception.h']]],
   ['vw_5ffwd_2eh_127',['vw_fwd.h',['../vw__fwd_8h.html',1,'']]],
   ['vw_5fget_5fmacro_128',['VW_GET_MACRO',['../vw__throw_8h.html#a777ea79708d6b7ade919dbb29c174b57',1,'vw_throw.h']]],
-  ['vw_5fis_5fmain_129',['vw_is_main',['../classVW_1_1workspace.html#a44af05567e6b4b84e3eac44568298920',1,'VW::workspace']]],
+  ['vw_5fis_5fmain_129',['vw_is_main',['../classVW_1_1details_1_1runtime__config.html#a0785495381a12daa996ff05cb5db0b0f',1,'VW::details::runtime_config']]],
   ['vw_5fline_130',['VW_LINE',['../vw__exception_8h.html#a750bcad00f5e2254860e62b7c9c81bd9',1,'vw_exception.h']]],
   ['vw_5flog_5fsink_131',['VW_LOG_SINK',['../debug__log_8h.html#af38b8deb09dc848104907552dd1355f0',1,'debug_log.h']]],
   ['vw_5fmath_2eh_132',['vw_math.h',['../vw__math_8h.html',1,'']]],

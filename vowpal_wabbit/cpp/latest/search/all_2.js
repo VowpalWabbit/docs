@@ -22,7 +22,7 @@ var searchData=
   ['best_5fconstant_2eh_19',['best_constant.h',['../best__constant_8h.html',1,'']]],
   ['beta_20',['beta',['../classVW_1_1details_1_1Duals.html#aa4e421223f438998809c5f33c6281e47',1,'VW::details::Duals']]],
   ['better_21',['better',['../classVW_1_1reductions_1_1automl_1_1aml__estimator.html#aab61c11f2d39051aeb28364f5a85b64f',1,'VW::reductions::automl::aml_estimator']]],
-  ['bfgs_22',['bfgs',['../classVW_1_1workspace.html#aead7aace93337cea621fd55cec162a44',1,'VW::workspace']]],
+  ['bfgs_22',['bfgs',['../classVW_1_1details_1_1reduction__state.html#ab35a47afb8b8cbc660063ba024d7cdb7',1,'VW::details::reduction_state']]],
   ['bfgs_2eh_23',['bfgs.h',['../bfgs_8h.html',1,'']]],
   ['bfgs_5fsetup_24',['bfgs_setup',['../namespaceVW_1_1reductions.html#a137cff49667ac94b488ebc634deafe58',1,'VW::reductions']]],
   ['bias_25',['BIAS',['../namespaceVW_1_1details.html#a432d695f58aa45accbdc2662e2530444',1,'VW::details']]],

@@ -8,5 +8,6 @@ var searchData=
   ['log_5fsink_5',['log_sink',['../classVW_1_1io_1_1details_1_1log__sink.html',1,'VW::io::details']]],
   ['logger_6',['logger',['../classVW_1_1io_1_1logger.html',1,'VW::io']]],
   ['logger_5fimpl_7',['logger_impl',['../classVW_1_1io_1_1details_1_1logger__impl.html',1,'VW::io::details']]],
-  ['loss_5ffunction_8',['loss_function',['../classVW_1_1loss__function.html',1,'VW']]]
+  ['loss_5fconfig_8',['loss_config',['../classVW_1_1details_1_1loss__config.html',1,'VW::details']]],
+  ['loss_5ffunction_9',['loss_function',['../classVW_1_1loss__function.html',1,'VW']]]
 ];

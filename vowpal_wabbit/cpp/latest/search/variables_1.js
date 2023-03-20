@@ -9,7 +9,7 @@ var searchData=
   ['begin_5findex_6',['begin_index',['../classVW_1_1namespace__extent.html#a5baa64e9ec5418497aaa1dd9b804f21b',1,'VW::namespace_extent']]],
   ['begin_5fit_7',['begin_it',['../classVW_1_1details_1_1feature__gen__data.html#a0ba238ec164c138f7a5e5c15036b058e',1,'VW::details::feature_gen_data']]],
   ['beta_8',['beta',['../classVW_1_1details_1_1Duals.html#aa4e421223f438998809c5f33c6281e47',1,'VW::details::Duals']]],
-  ['bfgs_9',['bfgs',['../classVW_1_1workspace.html#aead7aace93337cea621fd55cec162a44',1,'VW::workspace']]],
+  ['bfgs_9',['bfgs',['../classVW_1_1details_1_1reduction__state.html#ab35a47afb8b8cbc660063ba024d7cdb7',1,'VW::details::reduction_state']]],
   ['bias_10',['BIAS',['../namespaceVW_1_1details.html#a432d695f58aa45accbdc2662e2530444',1,'VW::details']]],
   ['binary_11',['BINARY',['../classvw__dbg.html#a73dbe83fd8d2f44045784ec4dfbd18f1',1,'vw_dbg']]],
   ['bound_5fsock_12',['bound_sock',['../classVW_1_1parser.html#a4645a44b214e26f6a9bc8c3b48f4953d',1,'VW::parser']]],
