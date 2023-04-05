@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['early_5fstop_5fthres_0',['early_stop_thres',['../classVW_1_1reductions_1_1gd.html#a66f500854b8c5fd43fdd3486eca4a4fe',1,'VW::reductions::gd']]],
+  ['early_5fstop_5fthres_0',['early_stop_thres',['../classVW_1_1reductions_1_1gd.html#a66f500854b8c5fd43fdd3486eca4a4fe',1,'VW::reductions::gd::early_stop_thres()'],['../classVW_1_1reductions_1_1ftrl.html#acc4eaf5763f725f93714c358b8065df4',1,'VW::reductions::ftrl::early_stop_thres()']]],
   ['early_5fterminate_1',['early_terminate',['../classVW_1_1details_1_1passes__config.html#a4d3fb9a9dad693e2d7c944ab48691ef7',1,'VW::details::passes_config']]],
   ['ec_2',['ec',['../classSearch_1_1BaseTask.html#a10360ccf2c6968bc17f6f04d946b0577',1,'Search::BaseTask']]],
   ['ecs_3',['ecs',['../classVW_1_1reductions_1_1cbify__adf__data.html#a5c2a336a1f69c6ec0a220f32c5babb31',1,'VW::reductions::cbify_adf_data']]],
@@ -19,7 +19,7 @@ var searchData=
   ['estimators_16',['estimators',['../classVW_1_1reductions_1_1automl_1_1interaction__config__manager.html#ad2fa0ddfa6bd13cb31a8856e172ad5b8',1,'VW::reductions::automl::interaction_config_manager']]],
   ['eta_17',['eta',['../classVW_1_1estimators_1_1confidence__sequence.html#a0cd30ae116528c07d421c18c63d8dd17',1,'VW::estimators::confidence_sequence::eta()'],['../classVW_1_1details_1_1update__rule__config.html#acc9a2ad81a7dd98b09b9ff924e394b1b',1,'VW::details::update_rule_config::eta()']]],
   ['eta_5fdecay_5frate_18',['eta_decay_rate',['../classVW_1_1details_1_1update__rule__config.html#a9739d8df4637f574d34bad23cf8b7bda',1,'VW::details::update_rule_config']]],
-  ['event_19',['event',['../classVW_1_1cb__eval__label.html#a188056fed25ce9bc326c8c4193643640',1,'VW::cb_eval_label']]],
+  ['event_19',['event',['../classVW_1_1cb__eval__label.html#a188056fed25ce9bc326c8c4193643640',1,'VW::cb_eval_label::event()'],['../classVW_1_1cb__with__observations__label.html#acd1e1c78a1dc5c9525f72c8938954a36',1,'VW::cb_with_observations_label::event()']]],
   ['event_5fid_20',['event_id',['../classVW_1_1parsers_1_1json_1_1decision__service__interaction.html#adf357216351e40b43c337904fb932bd7',1,'VW::parsers::json::decision_service_interaction']]],
   ['event_5fsum_21',['event_sum',['../classVW_1_1details_1_1cb__to__cs__per__model__state.html#a6c23f605394e972451c5b5b2b7d1c42e',1,'VW::details::cb_to_cs_per_model_state']]],
   ['ex_22',['ex',['../structVW_1_1reductions_1_1eigen__memory__tree_1_1emt__tree.html#aed0f0b410beb9b7ed880986271b1602f',1,'VW::reductions::eigen_memory_tree::emt_tree']]],

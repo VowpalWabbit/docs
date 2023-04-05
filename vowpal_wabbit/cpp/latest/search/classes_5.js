@@ -10,5 +10,7 @@ var searchData=
   ['formatter_3c_20vw_3a_3areductions_3a_3aautoml_3a_3aconfig_5fstate_20_3e_7',['formatter&lt; VW::reductions::automl::config_state &gt;',['../classfmt_1_1formatter_3_01VW_1_1reductions_1_1automl_1_1config__state_01_4.html',1,'fmt']]],
   ['formatter_3c_20vw_3a_3areductions_3a_3aautoml_3a_3aconfig_5ftype_20_3e_8',['formatter&lt; VW::reductions::automl::config_type &gt;',['../classfmt_1_1formatter_3_01VW_1_1reductions_1_1automl_1_1config__type_01_4.html',1,'fmt']]],
   ['formatter_3c_20vw_3a_3aslates_3a_3aexample_5ftype_20_3e_9',['formatter&lt; VW::slates::example_type &gt;',['../classfmt_1_1formatter_3_01VW_1_1slates_1_1example__type_01_4.html',1,'fmt']]],
-  ['formatter_3c_20vw_3a_3astring_5fview_20_3e_10',['formatter&lt; VW::string_view &gt;',['../classfmt_1_1formatter_3_01VW_1_1string__view_01_4.html',1,'fmt']]]
+  ['formatter_3c_20vw_3a_3astring_5fview_20_3e_10',['formatter&lt; VW::string_view &gt;',['../classfmt_1_1formatter_3_01VW_1_1string__view_01_4.html',1,'fmt']]],
+  ['ftrl_11',['ftrl',['../classVW_1_1reductions_1_1ftrl.html',1,'VW::reductions']]],
+  ['ftrl_5fupdate_5fdata_12',['ftrl_update_data',['../classVW_1_1reductions_1_1ftrl__update__data.html',1,'VW::reductions']]]
 ];

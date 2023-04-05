@@ -1,8 +1,8 @@
 var searchData=
 [
   ['l_0',['l',['../classVW_1_1workspace.html#a075a9a49b1eac9e77c9b7617e67fdc91',1,'VW::workspace::l()'],['../classVW_1_1example.html#adfcc771a9e46a65130c9dcf8b18870e6',1,'VW::example::l()']]],
-  ['l1_5flambda_1',['l1_lambda',['../classVW_1_1details_1_1loss__config.html#aecbd5e035e0f834608e3d090a2dc4aad',1,'VW::details::loss_config']]],
-  ['l2_5flambda_2',['l2_lambda',['../classVW_1_1details_1_1loss__config.html#a10ac2985c91565f024a5fa1d3ea1eb7a',1,'VW::details::loss_config']]],
+  ['l1_5flambda_1',['l1_lambda',['../classVW_1_1details_1_1loss__config.html#aecbd5e035e0f834608e3d090a2dc4aad',1,'VW::details::loss_config::l1_lambda()'],['../classVW_1_1reductions_1_1ftrl__update__data.html#ab3d3cd27026e50fedaf5799cc0616c1b',1,'VW::reductions::ftrl_update_data::l1_lambda()']]],
+  ['l2_5flambda_2',['l2_lambda',['../classVW_1_1details_1_1loss__config.html#a10ac2985c91565f024a5fa1d3ea1eb7a',1,'VW::details::loss_config::l2_lambda()'],['../classVW_1_1reductions_1_1ftrl__update__data.html#a21cba95fbbbafdf41e2dad1416744d60',1,'VW::reductions::ftrl_update_data::l2_lambda()']]],
   ['label_3',['label',['../classVW_1_1multiclass__label.html#ad60261e4c5e6d9f19557536c432def79',1,'VW::multiclass_label::label()'],['../structVW_1_1reductions_1_1eigen__memory__tree_1_1emt__example.html#ad26c216c50ebdd65c2b205a34495ae1e',1,'VW::reductions::eigen_memory_tree::emt_example::label()'],['../classVW_1_1simple__label.html#af2f88a3333bda3371519564b725df551',1,'VW::simple_label::label()']]],
   ['label_5faction_5ffirst_5foption_4',['label_action_first_option',['../classVW_1_1cb__explore__adf_1_1cb__explore__metrics.html#a6a7c1667355f42eb8d642d13955145f8',1,'VW::cb_explore_adf::cb_explore_metrics']]],
   ['label_5faction_5fnot_5ffirst_5',['label_action_not_first',['../classVW_1_1cb__explore__adf_1_1cb__explore__metrics.html#a29bc83ce95727c722647bbfbe08994f5',1,'VW::cb_explore_adf::cb_explore_metrics']]],
