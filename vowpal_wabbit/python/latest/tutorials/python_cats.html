@@ -850,7 +850,7 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/bf9fb862c0ab6f7e037341cd364323fc3bf3bd2f7d02f9e84d7912de1e99efd4.png" src="../_images/bf9fb862c0ab6f7e037341cd364323fc3bf3bd2f7d02f9e84d7912de1e99efd4.png" />
+<img alt="../_images/6d0f1f807eb0f87baa665b196798ec7dd7f2c9811fe44ac68bfeb0784dd73097.png" src="../_images/6d0f1f807eb0f87baa665b196798ec7dd7f2c9811fe44ac68bfeb0784dd73097.png" />
 </div>
 </div>
 </section>
@@ -883,7 +883,7 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/2e00840e501a63bcb28fe0b819e233030cb5692027801c610cd1b2fb85bd1d3a.png" src="../_images/2e00840e501a63bcb28fe0b819e233030cb5692027801c610cd1b2fb85bd1d3a.png" />
+<img alt="../_images/cc345503843cef20d7d40f00203da1ddb718f0d692d142969eb358165a40a996.png" src="../_images/cc345503843cef20d7d40f00203da1ddb718f0d692d142969eb358165a40a996.png" />
 </div>
 </div>
 </section>
@@ -1081,136 +1081,7 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 25
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Error in callback &lt;function flush_figures at 0x7fd3f7840040&gt; (for post_execute):
-</pre></div>
-</div>
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">KeyboardInterrupt</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="nn">File /opt/hostedtoolcache/Python/3.10.10/x64/lib/python3.10/site-packages/matplotlib_inline/backend_inline.py:126,</span> in <span class="ni">flush_figures</span><span class="nt">()</span>
-<span class="g g-Whitespace">    </span><span class="mi">123</span> <span class="k">if</span> <span class="n">InlineBackend</span><span class="o">.</span><span class="n">instance</span><span class="p">()</span><span class="o">.</span><span class="n">close_figures</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">124</span>     <span class="c1"># ignore the tracking, just draw and close all figures</span>
-<span class="g g-Whitespace">    </span><span class="mi">125</span>     <span class="k">try</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">126</span>         <span class="k">return</span> <span class="n">show</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">127</span>     <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">128</span>         <span class="c1"># safely show traceback if in IPython, else raise</span>
-<span class="g g-Whitespace">    </span><span class="mi">129</span>         <span class="n">ip</span> <span class="o">=</span> <span class="n">get_ipython</span><span class="p">()</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.10.10/x64/lib/python3.10/site-packages/matplotlib_inline/backend_inline.py:90,</span> in <span class="ni">show</span><span class="nt">(close, block)</span>
-<span class="g g-Whitespace">     </span><span class="mi">88</span> <span class="k">try</span><span class="p">:</span>
-<span class="g g-Whitespace">     </span><span class="mi">89</span>     <span class="k">for</span> <span class="n">figure_manager</span> <span class="ow">in</span> <span class="n">Gcf</span><span class="o">.</span><span class="n">get_all_fig_managers</span><span class="p">():</span>
-<span class="ne">---&gt; </span><span class="mi">90</span>         <span class="n">display</span><span class="p">(</span>
-<span class="g g-Whitespace">     </span><span class="mi">91</span>             <span class="n">figure_manager</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">figure</span><span class="p">,</span>
-<span class="g g-Whitespace">     </span><span class="mi">92</span>             <span class="n">metadata</span><span class="o">=</span><span class="n">_fetch_figure_metadata</span><span class="p">(</span><span class="n">figure_manager</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">figure</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">93</span>         <span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">94</span> <span class="k">finally</span><span class="p">:</span>
-<span class="g g-Whitespace">     </span><span class="mi">95</span>     <span class="n">show</span><span class="o">.</span><span class="n">_to_draw</span> <span class="o">=</span> <span class="p">[]</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.10.10/x64/lib/python3.10/site-packages/IPython/core/display_functions.py:298,</span> in <span class="ni">display</span><span class="nt">(include, exclude, metadata, transient, display_id, raw, clear, *objs, **kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">296</span>     <span class="n">publish_display_data</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">obj</span><span class="p">,</span> <span class="n">metadata</span><span class="o">=</span><span class="n">metadata</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">297</span> <span class="k">else</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">298</span>     <span class="n">format_dict</span><span class="p">,</span> <span class="n">md_dict</span> <span class="o">=</span> <span class="nb">format</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">include</span><span class="o">=</span><span class="n">include</span><span class="p">,</span> <span class="n">exclude</span><span class="o">=</span><span class="n">exclude</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">299</span>     <span class="k">if</span> <span class="ow">not</span> <span class="n">format_dict</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">300</span>         <span class="c1"># nothing to display (e.g. _ipython_display_ took over)</span>
-<span class="g g-Whitespace">    </span><span class="mi">301</span>         <span class="k">continue</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.10.10/x64/lib/python3.10/site-packages/IPython/core/formatters.py:179,</span> in <span class="ni">DisplayFormatter.format</span><span class="nt">(self, obj, include, exclude)</span>
-<span class="g g-Whitespace">    </span><span class="mi">177</span> <span class="n">md</span> <span class="o">=</span> <span class="kc">None</span>
-<span class="g g-Whitespace">    </span><span class="mi">178</span> <span class="k">try</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">179</span>     <span class="n">data</span> <span class="o">=</span> <span class="n">formatter</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">180</span> <span class="k">except</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">181</span>     <span class="c1"># FIXME: log the exception</span>
-<span class="g g-Whitespace">    </span><span class="mi">182</span>     <span class="k">raise</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.10.10/x64/lib/python3.10/site-packages/decorator.py:232,</span> in <span class="ni">decorate.&lt;locals&gt;.fun</span><span class="nt">(*args, **kw)</span>
-<span class="g g-Whitespace">    </span><span class="mi">230</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">kwsyntax</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">231</span>     <span class="n">args</span><span class="p">,</span> <span class="n">kw</span> <span class="o">=</span> <span class="n">fix</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="n">kw</span><span class="p">,</span> <span class="n">sig</span><span class="p">)</span>
-<span class="ne">--&gt; </span><span class="mi">232</span> <span class="k">return</span> <span class="n">caller</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="o">*</span><span class="p">(</span><span class="n">extras</span> <span class="o">+</span> <span class="n">args</span><span class="p">),</span> <span class="o">**</span><span class="n">kw</span><span class="p">)</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.10.10/x64/lib/python3.10/site-packages/IPython/core/formatters.py:223,</span> in <span class="ni">catch_format_error</span><span class="nt">(method, self, *args, **kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">221</span><span class="w"> </span><span class="sd">&quot;&quot;&quot;show traceback on failed format call&quot;&quot;&quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">222</span> <span class="k">try</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">223</span>     <span class="n">r</span> <span class="o">=</span> <span class="n">method</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">224</span> <span class="k">except</span> <span class="ne">NotImplementedError</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">225</span>     <span class="c1"># don&#39;t warn on NotImplementedErrors</span>
-<span class="g g-Whitespace">    </span><span class="mi">226</span>     <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_check_return</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.10.10/x64/lib/python3.10/site-packages/IPython/core/formatters.py:340,</span> in <span class="ni">BaseFormatter.__call__</span><span class="nt">(self, obj)</span>
-<span class="g g-Whitespace">    </span><span class="mi">338</span>     <span class="k">pass</span>
-<span class="g g-Whitespace">    </span><span class="mi">339</span> <span class="k">else</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">340</span>     <span class="k">return</span> <span class="n">printer</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">341</span> <span class="c1"># Finally look for special method names</span>
-<span class="g g-Whitespace">    </span><span class="mi">342</span> <span class="n">method</span> <span class="o">=</span> <span class="n">get_real_method</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">print_method</span><span class="p">)</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.10.10/x64/lib/python3.10/site-packages/IPython/core/pylabtools.py:152,</span> in <span class="ni">print_figure</span><span class="nt">(fig, fmt, bbox_inches, base64, **kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">149</span>     <span class="kn">from</span> <span class="nn">matplotlib.backend_bases</span> <span class="kn">import</span> <span class="n">FigureCanvasBase</span>
-<span class="g g-Whitespace">    </span><span class="mi">150</span>     <span class="n">FigureCanvasBase</span><span class="p">(</span><span class="n">fig</span><span class="p">)</span>
-<span class="ne">--&gt; </span><span class="mi">152</span> <span class="n">fig</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">print_figure</span><span class="p">(</span><span class="n">bytes_io</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">153</span> <span class="n">data</span> <span class="o">=</span> <span class="n">bytes_io</span><span class="o">.</span><span class="n">getvalue</span><span class="p">()</span>
-<span class="g g-Whitespace">    </span><span class="mi">154</span> <span class="k">if</span> <span class="n">fmt</span> <span class="o">==</span> <span class="s1">&#39;svg&#39;</span><span class="p">:</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.10.10/x64/lib/python3.10/site-packages/matplotlib/backend_bases.py:2346,</span> in <span class="ni">FigureCanvasBase.print_figure</span><span class="nt">(self, filename, dpi, facecolor, edgecolor, orientation, format, bbox_inches, pad_inches, bbox_extra_artists, backend, **kwargs)</span>
-<span class="g g-Whitespace">   </span><span class="mi">2344</span> <span class="k">if</span> <span class="n">bbox_inches</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">2345</span>     <span class="k">if</span> <span class="n">bbox_inches</span> <span class="o">==</span> <span class="s2">&quot;tight&quot;</span><span class="p">:</span>
-<span class="ne">-&gt; </span><span class="mi">2346</span>         <span class="n">bbox_inches</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">figure</span><span class="o">.</span><span class="n">get_tightbbox</span><span class="p">(</span>
-<span class="g g-Whitespace">   </span><span class="mi">2347</span>             <span class="n">renderer</span><span class="p">,</span> <span class="n">bbox_extra_artists</span><span class="o">=</span><span class="n">bbox_extra_artists</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">2348</span>         <span class="k">if</span> <span class="n">pad_inches</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">2349</span>             <span class="n">pad_inches</span> <span class="o">=</span> <span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;savefig.pad_inches&#39;</span><span class="p">]</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.10.10/x64/lib/python3.10/site-packages/matplotlib/figure.py:1753,</span> in <span class="ni">FigureBase.get_tightbbox</span><span class="nt">(self, renderer, bbox_extra_artists)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1749</span> <span class="k">if</span> <span class="n">ax</span><span class="o">.</span><span class="n">get_visible</span><span class="p">():</span>
-<span class="g g-Whitespace">   </span><span class="mi">1750</span>     <span class="c1"># some axes don&#39;t take the bbox_extra_artists kwarg so we</span>
-<span class="g g-Whitespace">   </span><span class="mi">1751</span>     <span class="c1"># need this conditional....</span>
-<span class="g g-Whitespace">   </span><span class="mi">1752</span>     <span class="k">try</span><span class="p">:</span>
-<span class="ne">-&gt; </span><span class="mi">1753</span>         <span class="n">bbox</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">get_tightbbox</span><span class="p">(</span>
-<span class="g g-Whitespace">   </span><span class="mi">1754</span>             <span class="n">renderer</span><span class="p">,</span> <span class="n">bbox_extra_artists</span><span class="o">=</span><span class="n">bbox_extra_artists</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1755</span>     <span class="k">except</span> <span class="ne">TypeError</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">1756</span>         <span class="n">bbox</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">get_tightbbox</span><span class="p">(</span><span class="n">renderer</span><span class="p">)</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.10.10/x64/lib/python3.10/site-packages/matplotlib/axes/_base.py:4385,</span> in <span class="ni">_AxesBase.get_tightbbox</span><span class="nt">(self, renderer, call_axes_locator, bbox_extra_artists, for_layout_only)</span>
-<span class="g g-Whitespace">   </span><span class="mi">4383</span> <span class="k">for</span> <span class="n">axis</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_axis_map</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
-<span class="g g-Whitespace">   </span><span class="mi">4384</span>     <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">axison</span> <span class="ow">and</span> <span class="n">axis</span><span class="o">.</span><span class="n">get_visible</span><span class="p">():</span>
-<span class="ne">-&gt; </span><span class="mi">4385</span>         <span class="n">ba</span> <span class="o">=</span> <span class="n">martist</span><span class="o">.</span><span class="n">_get_tightbbox_for_layout_only</span><span class="p">(</span><span class="n">axis</span><span class="p">,</span> <span class="n">renderer</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">4386</span>         <span class="k">if</span> <span class="n">ba</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">4387</span>             <span class="n">bb</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ba</span><span class="p">)</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.10.10/x64/lib/python3.10/site-packages/matplotlib/artist.py:1415,</span> in <span class="ni">_get_tightbbox_for_layout_only</span><span class="nt">(obj, *args, **kwargs)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1409</span><span class="w"> </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="g g-Whitespace">   </span><span class="mi">1410</span><span class="sd"> Matplotlib&#39;s `.Axes.get_tightbbox` and `.Axis.get_tightbbox` support a</span>
-<span class="g g-Whitespace">   </span><span class="mi">1411</span><span class="sd"> *for_layout_only* kwarg; this helper tries to use the kwarg but skips it</span>
-<span class="g g-Whitespace">   </span><span class="mi">1412</span><span class="sd"> when encountering third-party subclasses that do not support it.</span>
-<span class="g g-Whitespace">   </span><span class="mi">1413</span><span class="sd"> &quot;&quot;&quot;</span>
-<span class="g g-Whitespace">   </span><span class="mi">1414</span> <span class="k">try</span><span class="p">:</span>
-<span class="ne">-&gt; </span><span class="mi">1415</span>     <span class="k">return</span> <span class="n">obj</span><span class="o">.</span><span class="n">get_tightbbox</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="p">{</span><span class="o">**</span><span class="n">kwargs</span><span class="p">,</span> <span class="s2">&quot;for_layout_only&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">})</span>
-<span class="g g-Whitespace">   </span><span class="mi">1416</span> <span class="k">except</span> <span class="ne">TypeError</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">1417</span>     <span class="k">return</span> <span class="n">obj</span><span class="o">.</span><span class="n">get_tightbbox</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.10.10/x64/lib/python3.10/site-packages/matplotlib/axis.py:1333,</span> in <span class="ni">Axis.get_tightbbox</span><span class="nt">(self, renderer, for_layout_only)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1330</span> <span class="bp">self</span><span class="o">.</span><span class="n">_update_offset_text_position</span><span class="p">(</span><span class="n">tlb1</span><span class="p">,</span> <span class="n">tlb2</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1331</span> <span class="bp">self</span><span class="o">.</span><span class="n">offsetText</span><span class="o">.</span><span class="n">set_text</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">major</span><span class="o">.</span><span class="n">formatter</span><span class="o">.</span><span class="n">get_offset</span><span class="p">())</span>
-<span class="ne">-&gt; </span><span class="mi">1333</span> <span class="n">bboxes</span> <span class="o">=</span> <span class="p">[</span>
-<span class="g g-Whitespace">   </span><span class="mi">1334</span>     <span class="o">*</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">get_window_extent</span><span class="p">(</span><span class="n">renderer</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1335</span>       <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">offsetText</span><span class="p">]</span>
-<span class="g g-Whitespace">   </span><span class="mi">1336</span>       <span class="k">if</span> <span class="n">a</span><span class="o">.</span><span class="n">get_visible</span><span class="p">()),</span>
-<span class="g g-Whitespace">   </span><span class="mi">1337</span>     <span class="o">*</span><span class="n">tlb1</span><span class="p">,</span> <span class="o">*</span><span class="n">tlb2</span><span class="p">,</span>
-<span class="g g-Whitespace">   </span><span class="mi">1338</span> <span class="p">]</span>
-<span class="g g-Whitespace">   </span><span class="mi">1339</span> <span class="c1"># take care of label</span>
-<span class="g g-Whitespace">   </span><span class="mi">1340</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">label</span><span class="o">.</span><span class="n">get_visible</span><span class="p">():</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.10.10/x64/lib/python3.10/site-packages/matplotlib/axis.py:1334,</span> in <span class="ni">&lt;genexpr&gt;</span><span class="nt">(.0)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1330</span> <span class="bp">self</span><span class="o">.</span><span class="n">_update_offset_text_position</span><span class="p">(</span><span class="n">tlb1</span><span class="p">,</span> <span class="n">tlb2</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1331</span> <span class="bp">self</span><span class="o">.</span><span class="n">offsetText</span><span class="o">.</span><span class="n">set_text</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">major</span><span class="o">.</span><span class="n">formatter</span><span class="o">.</span><span class="n">get_offset</span><span class="p">())</span>
-<span class="g g-Whitespace">   </span><span class="mi">1333</span> <span class="n">bboxes</span> <span class="o">=</span> <span class="p">[</span>
-<span class="ne">-&gt; </span><span class="mi">1334</span>     <span class="o">*</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">get_window_extent</span><span class="p">(</span><span class="n">renderer</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1335</span>       <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">offsetText</span><span class="p">]</span>
-<span class="g g-Whitespace">   </span><span class="mi">1336</span>       <span class="k">if</span> <span class="n">a</span><span class="o">.</span><span class="n">get_visible</span><span class="p">()),</span>
-<span class="g g-Whitespace">   </span><span class="mi">1337</span>     <span class="o">*</span><span class="n">tlb1</span><span class="p">,</span> <span class="o">*</span><span class="n">tlb2</span><span class="p">,</span>
-<span class="g g-Whitespace">   </span><span class="mi">1338</span> <span class="p">]</span>
-<span class="g g-Whitespace">   </span><span class="mi">1339</span> <span class="c1"># take care of label</span>
-<span class="g g-Whitespace">   </span><span class="mi">1340</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">label</span><span class="o">.</span><span class="n">get_visible</span><span class="p">():</span>
-
-<span class="ne">KeyboardInterrupt</span>: 
-</pre></div>
-</div>
+<img alt="../_images/baeaf10aafd1a8e53c44ae29dd9915f94d57d7e7b89f42a01a723eba38f38158.png" src="../_images/baeaf10aafd1a8e53c44ae29dd9915f94d57d7e7b89f42a01a723eba38f38158.png" />
 </div>
 </div>
 </section>
@@ -1244,6 +1115,88 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 <span class="n">plot_reward_sweep</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">,</span> <span class="n">num_actions</span><span class="p">,</span> <span class="n">bandwidths</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 8 and --bandwidth 0
+Running simulation for: --cats 8 and --bandwidth 1
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 8 and --bandwidth 2
+Running simulation for: --cats 8 and --bandwidth 3
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 32 and --bandwidth 0
+Running simulation for: --cats 32 and --bandwidth 1
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 32 and --bandwidth 2
+Running simulation for: --cats 32 and --bandwidth 3
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 32 and --bandwidth 25
+Running simulation for: --cats 64 and --bandwidth 0
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 64 and --bandwidth 1
+Running simulation for: --cats 64 and --bandwidth 2
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 64 and --bandwidth 3
+Running simulation for: --cats 64 and --bandwidth 25
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 128 and --bandwidth 0
+Running simulation for: --cats 128 and --bandwidth 1
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 128 and --bandwidth 2
+Running simulation for: --cats 128 and --bandwidth 3
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 128 and --bandwidth 25
+Running simulation for: --cats 256 and --bandwidth 0
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 256 and --bandwidth 1
+Running simulation for: --cats 256 and --bandwidth 2
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 256 and --bandwidth 3
+Running simulation for: --cats 256 and --bandwidth 25
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 512 and --bandwidth 0
+Running simulation for: --cats 512 and --bandwidth 1
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 512 and --bandwidth 2
+Running simulation for: --cats 512 and --bandwidth 3
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 512 and --bandwidth 25
+Running simulation for: --cats 1024 and --bandwidth 0
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 1024 and --bandwidth 1
+Running simulation for: --cats 1024 and --bandwidth 2
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 1024 and --bandwidth 3
+Running simulation for: --cats 1024 and --bandwidth 25
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 0
+Running simulation for: --cats 2048 and --bandwidth 1
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 2
+Running simulation for: --cats 2048 and --bandwidth 3
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 25
+</pre></div>
+</div>
+<img alt="../_images/184692bdf8297a1b103836b5064c38049a70e809cf77fd1d03a813585933911c.png" src="../_images/184692bdf8297a1b103836b5064c38049a70e809cf77fd1d03a813585933911c.png" />
 </div>
 </div>
 </section>
@@ -1436,6 +1389,9 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<img alt="../_images/4f1195c8a3c45dd75eaaf354c88c14f138f2e9b88df53dd714aa65a87f1c66c7.png" src="../_images/4f1195c8a3c45dd75eaaf354c88c14f138f2e9b88df53dd714aa65a87f1c66c7.png" />
+</div>
 </div>
 </section>
 <section id="id4">
@@ -1473,6 +1429,9 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 <span class="p">)</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/32e6d8feefbcb2b644a8930d1be4457d0a15d6a6c3caf0a9f5307de30a70e068.png" src="../_images/32e6d8feefbcb2b644a8930d1be4457d0a15d6a6c3caf0a9f5307de30a70e068.png" />
 </div>
 </div>
 </section>
@@ -1558,6 +1517,126 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 <span class="n">plot_reward_sweep</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">,</span> <span class="n">num_actions</span><span class="p">,</span> <span class="n">bandwidths</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 8 and --bandwidth 0
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 8 and --bandwidth 1
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 8 and --bandwidth 2
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 8 and --bandwidth 3
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 32 and --bandwidth 0
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 32 and --bandwidth 1
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 32 and --bandwidth 2
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 32 and --bandwidth 3
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 32 and --bandwidth 25
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 64 and --bandwidth 0
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 64 and --bandwidth 1
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 64 and --bandwidth 2
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 64 and --bandwidth 3
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 64 and --bandwidth 25
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 128 and --bandwidth 0
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 128 and --bandwidth 1
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 128 and --bandwidth 2
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 128 and --bandwidth 3
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 128 and --bandwidth 25
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 256 and --bandwidth 0
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 256 and --bandwidth 1
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 256 and --bandwidth 2
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 256 and --bandwidth 3
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 256 and --bandwidth 25
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 512 and --bandwidth 0
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 512 and --bandwidth 1
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 512 and --bandwidth 2
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 512 and --bandwidth 3
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 512 and --bandwidth 25
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 1024 and --bandwidth 0
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 1024 and --bandwidth 1
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 1024 and --bandwidth 2
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 1024 and --bandwidth 3
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 1024 and --bandwidth 25
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 0
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 1
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 2
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 3
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 25
+</pre></div>
+</div>
+<img alt="../_images/d9111e68bed5678f536ad7cb946443b709751037d9e77fee7391e48c79372e65.png" src="../_images/d9111e68bed5678f536ad7cb946443b709751037d9e77fee7391e48c79372e65.png" />
 </div>
 </div>
 </section>
