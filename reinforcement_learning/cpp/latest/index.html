@@ -106,7 +106,7 @@ RL Inference API</h2>
 <h2><a class="anchor" id="autotoc_md2"></a>
 API Usage: Basic steps to using the RL Inference API</h2>
 <p><a class="el" href="classreinforcement__learning_1_1live__model.html" title="Interface class for the Inference API.">reinforcement_learning::live_model</a> class is the main driving interface of the RL Inference API</p><ul>
-<li>Instantiate and initialize live_model <div class="fragment"><div class="line">  r::live_model rl(config);</div>
+<li>Instantiate and initialize live_model <div class="fragment"><div class="line">  r::cb_loop rl(config);</div>
 </div><!-- fragment --><div class="fragment"><div class="line">  <span class="keywordflow">if</span> (rl.init(&amp;status) != err::success)</div>
 <div class="line">  {</div>
 <div class="line">    std::cout &lt;&lt; status.get_error_msg() &lt;&lt; std::endl;</div>
