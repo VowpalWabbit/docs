@@ -3,7 +3,7 @@ var searchData=
   ['handle_5fparse_5fargs_0',['handle_parse_args',['../classVW_1_1parsers_1_1csv_1_1csv__parser.html#aa912a49c9e2026fe537edd26a171f2b9',1,'VW::parsers::csv::csv_parser']]],
   ['has_5fadd_1',['has_add',['../classVW_1_1LEARNER_1_1learner.html#a6653e041adecf3c3a3d3cb542401f65a',1,'VW::LEARNER::learner']]],
   ['has_5fcleanup_5fexample_2',['has_cleanup_example',['../classVW_1_1LEARNER_1_1learner.html#ac9b952cb796765e8b1b68e02ad6ee290',1,'VW::LEARNER::learner']]],
-  ['has_5fempty_5finteraction_3',['has_empty_interaction',['../namespaceVW_1_1details.html#a13bdc5f4c0923ba0dca3c78ec931d52c',1,'VW::details::has_empty_interaction(const std::array&lt; VW::features, VW::NUM_NAMESPACES &gt; &amp;feature_groups, const std::vector&lt; VW::namespace_index &gt; &amp;namespace_indexes)'],['../namespaceVW_1_1details.html#a863127967fdbbed960cb80cdccd76a4e',1,'VW::details::has_empty_interaction(const std::array&lt; VW::features, VW::NUM_NAMESPACES &gt; &amp;feature_groups, const std::vector&lt; VW::extent_term &gt; &amp;namespace_indexes)']]],
+  ['has_5fempty_5finteraction_3',['has_empty_interaction',['../namespaceVW_1_1details.html#a863127967fdbbed960cb80cdccd76a4e',1,'VW::details::has_empty_interaction(const std::array&lt; VW::features, VW::NUM_NAMESPACES &gt; &amp;feature_groups, const std::vector&lt; VW::extent_term &gt; &amp;namespace_indexes)'],['../namespaceVW_1_1details.html#a13bdc5f4c0923ba0dca3c78ec931d52c',1,'VW::details::has_empty_interaction(const std::array&lt; VW::features, VW::NUM_NAMESPACES &gt; &amp;feature_groups, const std::vector&lt; VW::namespace_index &gt; &amp;namespace_indexes)']]],
   ['has_5fempty_5finteraction_5fcubic_4',['has_empty_interaction_cubic',['../namespaceVW_1_1details.html#a4ad219cb2000d1491ac73898be21d53c',1,'VW::details']]],
   ['has_5fempty_5finteraction_5fquadratic_5',['has_empty_interaction_quadratic',['../namespaceVW_1_1details.html#afd0614c5d6e013c1c8d2391bba571cd8',1,'VW::details']]],
   ['has_5flegacy_5ffinish_6',['has_legacy_finish',['../classVW_1_1LEARNER_1_1learner.html#a52e3802a514dc08c19151916105f7959',1,'VW::LEARNER::learner']]],
@@ -48,6 +48,5 @@ var searchData=
   ['holdout_5fset_5foff_45',['holdout_set_off',['../classVW_1_1details_1_1passes__config.html#a353ffbd43bb4f6eba81ca88ab80e5f3f',1,'VW::details::passes_config']]],
   ['holdout_5fsum_5floss_46',['holdout_sum_loss',['../classVW_1_1shared__data.html#a55def7841aa23663eb4c16083688838e',1,'VW::shared_data']]],
   ['holdout_5fsum_5floss_5fsince_5flast_5fdump_47',['holdout_sum_loss_since_last_dump',['../classVW_1_1shared__data.html#ac86279b5c0c81eb41342e15f5eb4ba8d',1,'VW::shared_data']]],
-  ['holdout_5fsum_5floss_5fsince_5flast_5fpass_48',['holdout_sum_loss_since_last_pass',['../classVW_1_1shared__data.html#aad685ffeccd1472792fb1636e9dfb774',1,'VW::shared_data']]],
-  ['hooktask_49',['HookTask',['../namespaceHookTask.html',1,'']]]
+  ['holdout_5fsum_5floss_5fsince_5flast_5fpass_48',['holdout_sum_loss_since_last_pass',['../classVW_1_1shared__data.html#aad685ffeccd1472792fb1636e9dfb774',1,'VW::shared_data']]]
 ];

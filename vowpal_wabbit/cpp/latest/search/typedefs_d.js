@@ -10,6 +10,5 @@ var searchData=
   ['prediction_5ftype_5ft_7',['prediction_type_t',['../prediction__type_8h.html#a616cf5b8698116040ab1334f66e7f605',1,'prediction_type.h']]],
   ['print_5fupdate_5ffunc_8',['print_update_func',['../namespaceVW_1_1LEARNER_1_1details.html#aad67ed1820f06920ab9754d5b3fdd5d8',1,'VW::LEARNER::details']]],
   ['priority_5ffunc_9',['priority_func',['../namespaceVW_1_1reductions_1_1automl.html#a2ae8a70f94e40504a5c5dccc0d39e96f',1,'VW::reductions::automl']]],
-  ['probability_5fdensity_5ffunction_10',['probability_density_function',['../namespaceVW_1_1continuous__actions.html#ad0ebee2a14615bea44da1eda8fc7c4c4',1,'VW::continuous_actions']]],
-  ['ptag_11',['ptag',['../search_8h.html#a16c781c81b198570915b518cac73c4ec',1,'search.h']]]
+  ['probability_5fdensity_5ffunction_10',['probability_density_function',['../namespaceVW_1_1continuous__actions.html#ad0ebee2a14615bea44da1eda8fc7c4c4',1,'VW::continuous_actions']]]
 ];

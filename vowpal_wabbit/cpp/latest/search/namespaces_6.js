@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['hooktask_0',['HookTask',['../namespaceHookTask.html',1,'']]]
+  ['multiclass_0',['MULTICLASS',['../namespaceMULTICLASS.html',1,'']]],
+  ['multilabel_1',['MULTILABEL',['../namespaceMULTILABEL.html',1,'']]]
 ];
