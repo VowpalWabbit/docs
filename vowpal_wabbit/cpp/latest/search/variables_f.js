@@ -22,7 +22,7 @@ var searchData=
   ['per_5ffeature_5fregularizer_5ftext_19',['per_feature_regularizer_text',['../classVW_1_1details_1_1output__model__config.html#a9ec78e108d8a0efa86bfc3304608ed12',1,'VW::details::output_model_config']]],
   ['per_5fmodel_5fstate_20',['per_model_state',['../classVW_1_1details_1_1cb__to__cs__adf__mtr.html#a76ee1959cd025e2407f3b298edc33606',1,'VW::details::cb_to_cs_adf_mtr']]],
   ['permutations_21',['permutations',['../classVW_1_1details_1_1feature__tweaks__config.html#aeaaaa8c632608bf0114b736498826c56',1,'VW::details::feature_tweaks_config']]],
-  ['pi_5fftrl_22',['pi_ftrl',['../classVW_1_1reductions_1_1interaction__ground__data.html#a272b3dfe026874b32d8df29d3a7f673d',1,'VW::reductions::interaction_ground_data']]],
+  ['pi_5fftrl_22',['pi_ftrl',['../classVW_1_1reductions_1_1igl_1_1igl__data.html#aca2fde845c41f912f922e93a55472ac5',1,'VW::reductions::igl::igl_data']]],
   ['pow10_5fbase_23',['POW10_BASE',['../namespaceVW_1_1details.html#adc22a38d5727e19cf766e30b86e1c218',1,'VW::details']]],
   ['power_5ft_24',['power_t',['../classVW_1_1details_1_1update__rule__config.html#a877b527c54e4613c0b6e8be7325a2707',1,'VW::details::update_rule_config']]],
   ['pred_25',['pred',['../classVW_1_1example.html#a9302a52e74bafd839a213cbba89cfe4a',1,'VW::example::pred()'],['../classVW_1_1details_1_1multipredict__info.html#af99957dd47d008a124cc3cb1bba63370',1,'VW::details::multipredict_info::pred()']]],
