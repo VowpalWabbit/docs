@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Vowpal Wabbit: /nix/store/6q1d3xbpmk72cw04qh98zqafv13dzmxr-source/vowpalwabbit/core/include/vw/core/reductions/eigen_memory_tree.h File Reference</title>
+<title>Vowpal Wabbit: /nix/store/yfhz907v1l5wc1357c105jy8biv3ahsk-source/vowpalwabbit/core/include/vw/core/reductions/eigen_memory_tree.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -130,6 +130,12 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespaceVW_1_1reductions_1_1eigen__memory__tree.html#aa4449dec9656fcce91e656f71909a70cac9d9560db268703a1b8aa49a53022f67">VW::reductions::eigen_memory_tree::EIGEN</a> = 2
  }</td></tr>
 <tr class="separator:aa4449dec9656fcce91e656f71909a70c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84ce53d5ecbba69353a028f1466eec87"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1reductions_1_1eigen__memory__tree.html#a84ce53d5ecbba69353a028f1466eec87">VW::reductions::eigen_memory_tree::emt_initial_type</a> : uint32_t { <a class="el" href="namespaceVW_1_1reductions_1_1eigen__memory__tree.html#a84ce53d5ecbba69353a028f1466eec87ab142d642e537e694b9314e1a56835f8d">VW::reductions::eigen_memory_tree::EUCLIDEAN</a> = 1
+, <a class="el" href="namespaceVW_1_1reductions_1_1eigen__memory__tree.html#a84ce53d5ecbba69353a028f1466eec87a0fceff26ae86a047835cafbb6cadb1b9">VW::reductions::eigen_memory_tree::GAUSSIAN</a> = 2
+, <a class="el" href="namespaceVW_1_1reductions_1_1eigen__memory__tree.html#a84ce53d5ecbba69353a028f1466eec87ae66ba018ef96aa5c78c8fba787f43717">VW::reductions::eigen_memory_tree::COSINE</a> = 3
+, <a class="el" href="namespaceVW_1_1reductions_1_1eigen__memory__tree.html#a84ce53d5ecbba69353a028f1466eec87ab50339a10e1de285ac99d4c3990b8693">VW::reductions::eigen_memory_tree::NONE</a> = 4
+ }</td></tr>
+<tr class="separator:a84ce53d5ecbba69353a028f1466eec87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -139,14 +145,16 @@ Functions</h2></td></tr>
 <tr class="separator:a97cf3ec3ca3465f65959936f2e23cdc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a705a5b94a1a8ca1cffc32f8ffe9b7c25"><td class="memItemLeft" align="right" valign="top">emt_router_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1reductions_1_1eigen__memory__tree.html#a705a5b94a1a8ca1cffc32f8ffe9b7c25">VW::reductions::eigen_memory_tree::emt_router_type_from_string</a> (<a class="el" href="namespaceVW.html#a909e5c86e4a38cb08ec00a0831dc105d">VW::string_view</a> val)</td></tr>
 <tr class="separator:a705a5b94a1a8ca1cffc32f8ffe9b7c25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eb3879cf81eb677b21f0b9faf37cbb3"><td class="memItemLeft" align="right" valign="top">emt_initial_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1reductions_1_1eigen__memory__tree.html#a4eb3879cf81eb677b21f0b9faf37cbb3">VW::reductions::eigen_memory_tree::emt_initial_type_from_string</a> (<a class="el" href="namespaceVW.html#a909e5c86e4a38cb08ec00a0831dc105d">VW::string_view</a> val)</td></tr>
+<tr class="separator:a4eb3879cf81eb677b21f0b9faf37cbb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e3258d92d54bc05d1e2ef6131064d37"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1reductions_1_1eigen__memory__tree.html#a5e3258d92d54bc05d1e2ef6131064d37">VW::reductions::eigen_memory_tree::emt_initial</a> (emt_initial_type initial_type, emt_feats f1, emt_feats f2)</td></tr>
+<tr class="separator:a5e3258d92d54bc05d1e2ef6131064d37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62f75a827af1d927eb6b6e06d75727aa"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1reductions_1_1eigen__memory__tree.html#a62f75a827af1d927eb6b6e06d75727aa">VW::reductions::eigen_memory_tree::emt_median</a> (std::vector&lt; float &gt; &amp;)</td></tr>
 <tr class="separator:a62f75a827af1d927eb6b6e06d75727aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ab337f9dee1a404c77486c0aa4146b2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1reductions_1_1eigen__memory__tree.html#a5ab337f9dee1a404c77486c0aa4146b2">VW::reductions::eigen_memory_tree::emt_inner</a> (const emt_feats &amp;, const emt_feats &amp;)</td></tr>
 <tr class="separator:a5ab337f9dee1a404c77486c0aa4146b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f525eb8b727d4ceff05b3f431397594"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1reductions_1_1eigen__memory__tree.html#a3f525eb8b727d4ceff05b3f431397594">VW::reductions::eigen_memory_tree::emt_norm</a> (const emt_feats &amp;)</td></tr>
 <tr class="separator:a3f525eb8b727d4ceff05b3f431397594"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b1d88f7d982f83a7ab9ef3f51f6d936"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1reductions_1_1eigen__memory__tree.html#a3b1d88f7d982f83a7ab9ef3f51f6d936">VW::reductions::eigen_memory_tree::emt_abs</a> (emt_feats &amp;)</td></tr>
-<tr class="separator:a3b1d88f7d982f83a7ab9ef3f51f6d936"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4d70d164d47271e7364fbca83424832"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1reductions_1_1eigen__memory__tree.html#ad4d70d164d47271e7364fbca83424832">VW::reductions::eigen_memory_tree::emt_scale</a> (emt_feats &amp;, float)</td></tr>
 <tr class="separator:ad4d70d164d47271e7364fbca83424832"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aece13118499ea22a4cb193f0c49ba870"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1reductions_1_1eigen__memory__tree.html#aece13118499ea22a4cb193f0c49ba870">VW::reductions::eigen_memory_tree::emt_normalize</a> (emt_feats &amp;)</td></tr>
