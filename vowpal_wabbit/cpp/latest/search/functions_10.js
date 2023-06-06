@@ -73,6 +73,6 @@ var searchData=
   ['root_5fbisect_70',['root_bisect',['../classVW_1_1details_1_1countable__discrete__base.html#a7178def4f8dfa0d7f79ae54a94c96537',1,'VW::details::countable_discrete_base']]],
   ['root_5fbrentq_71',['root_brentq',['../classVW_1_1details_1_1countable__discrete__base.html#a0420e49f664f7c1cbd135bc68e230307',1,'VW::details::countable_discrete_base']]],
   ['rotl32_72',['rotl32',['../namespaceVW_1_1details.html#af141aa5de22ad4b5c23c5d0e44a58272',1,'VW::details']]],
-  ['run_73',['run',['../classVW_1_1spanning__tree.html#a7f719c7190adbff2dc5e16374bdd4473',1,'VW::spanning_tree']]],
-  ['run_74',['Run',['../classVW_1_1spanning__tree.html#a7f0a9b1caa849fef0e0fb55cf20e9757',1,'VW::spanning_tree']]]
+  ['run_73',['Run',['../classVW_1_1spanning__tree.html#a7f0a9b1caa849fef0e0fb55cf20e9757',1,'VW::spanning_tree']]],
+  ['run_74',['run',['../classVW_1_1spanning__tree.html#a7f719c7190adbff2dc5e16374bdd4473',1,'VW::spanning_tree']]]
 ];

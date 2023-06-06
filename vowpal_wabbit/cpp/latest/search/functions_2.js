@@ -19,7 +19,7 @@ var searchData=
   ['cats_5fsetup_16',['cats_setup',['../namespaceVW_1_1reductions.html#a808e30edae8687049c24337dc46edee5',1,'VW::reductions']]],
   ['cats_5ftree_5fsetup_17',['cats_tree_setup',['../namespaceVW_1_1reductions.html#afdcceece8300f5b6c306119af177c130',1,'VW::reductions']]],
   ['cb_5factions_5fmask_5fsetup_18',['cb_actions_mask_setup',['../namespaceVW_1_1reductions.html#af04ac6487901d21f2e75facc95979935',1,'VW::reductions']]],
-  ['cb_5fadf_19',['cb_adf',['../classVW_1_1reductions_1_1cb__adf.html#a5e574d6ef883b174190ffc99cc95529c',1,'VW::reductions::cb_adf']]],
+  ['cb_5fadf_19',['cb_adf',['../classVW_1_1reductions_1_1cb__adf.html#ac1be34690a3762b652384fd7d38ab6a7',1,'VW::reductions::cb_adf']]],
   ['cb_5fadf_5fsetup_20',['cb_adf_setup',['../namespaceVW_1_1reductions.html#a0822eca03bb58da5d8881ee1e61cc394',1,'VW::reductions']]],
   ['cb_5falgs_5fsetup_21',['cb_algs_setup',['../namespaceVW_1_1reductions.html#a77387028dcddbb4e18aa0395f42474eb',1,'VW::reductions']]],
   ['cb_5fclass_22',['cb_class',['../classVW_1_1cb__class.html#a994f640534a95566fbd7332e2f27dbda',1,'VW::cb_class::cb_class()=default'],['../classVW_1_1cb__class.html#aaba81e45bca82c8cc9de50e6a63417f6',1,'VW::cb_class::cb_class(float cost, uint32_t action, float probability)']]],
