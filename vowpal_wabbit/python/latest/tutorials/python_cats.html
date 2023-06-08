@@ -850,7 +850,7 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/bf845f2445d2e212d0c2d9c71df3e952dd60ea2ca517d01b4422108f0d60272e.png" src="../_images/bf845f2445d2e212d0c2d9c71df3e952dd60ea2ca517d01b4422108f0d60272e.png" />
+<img alt="../_images/7d09578ec80efde78dbdf22b3b14b11e27c9d722c311be5a75877747dd55bbfc.png" src="../_images/7d09578ec80efde78dbdf22b3b14b11e27c9d722c311be5a75877747dd55bbfc.png" />
 </div>
 </div>
 </section>
@@ -883,7 +883,7 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/40b4d3aa990f39d8a922efa9cf5da0b86ea0b087514e60db4e9e619303cfa0b6.png" src="../_images/40b4d3aa990f39d8a922efa9cf5da0b86ea0b087514e60db4e9e619303cfa0b6.png" />
+<img alt="../_images/3e358e5d94ec5f4b72beb23a0afb589404e5d1fb4688329438489d55f0b6a06d.png" src="../_images/3e358e5d94ec5f4b72beb23a0afb589404e5d1fb4688329438489d55f0b6a06d.png" />
 </div>
 </div>
 </section>
@@ -1081,113 +1081,7 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 25
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Error in callback &lt;function _draw_all_if_interactive at 0x7f96b199a7a0&gt; (for post_execute):
-</pre></div>
-</div>
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">KeyboardInterrupt</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="nn">File /opt/hostedtoolcache/Python/3.10.11/x64/lib/python3.10/site-packages/matplotlib/pyplot.py:120,</span> in <span class="ni">_draw_all_if_interactive</span><span class="nt">()</span>
-<span class="g g-Whitespace">    </span><span class="mi">118</span> <span class="k">def</span> <span class="nf">_draw_all_if_interactive</span><span class="p">():</span>
-<span class="g g-Whitespace">    </span><span class="mi">119</span>     <span class="k">if</span> <span class="n">matplotlib</span><span class="o">.</span><span class="n">is_interactive</span><span class="p">():</span>
-<span class="ne">--&gt; </span><span class="mi">120</span>         <span class="n">draw_all</span><span class="p">()</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.10.11/x64/lib/python3.10/site-packages/matplotlib/_pylab_helpers.py:132,</span> in <span class="ni">Gcf.draw_all</span><span class="nt">(cls, force)</span>
-<span class="g g-Whitespace">    </span><span class="mi">130</span> <span class="k">for</span> <span class="n">manager</span> <span class="ow">in</span> <span class="bp">cls</span><span class="o">.</span><span class="n">get_all_fig_managers</span><span class="p">():</span>
-<span class="g g-Whitespace">    </span><span class="mi">131</span>     <span class="k">if</span> <span class="n">force</span> <span class="ow">or</span> <span class="n">manager</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">figure</span><span class="o">.</span><span class="n">stale</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">132</span>         <span class="n">manager</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">draw_idle</span><span class="p">()</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.10.11/x64/lib/python3.10/site-packages/matplotlib/backend_bases.py:2082,</span> in <span class="ni">FigureCanvasBase.draw_idle</span><span class="nt">(self, *args, **kwargs)</span>
-<span class="g g-Whitespace">   </span><span class="mi">2080</span> <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_is_idle_drawing</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">2081</span>     <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">_idle_draw_cntx</span><span class="p">():</span>
-<span class="ne">-&gt; </span><span class="mi">2082</span>         <span class="bp">self</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.10.11/x64/lib/python3.10/site-packages/matplotlib/backends/backend_agg.py:400,</span> in <span class="ni">FigureCanvasAgg.draw</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">    </span><span class="mi">396</span> <span class="c1"># Acquire a lock on the shared font cache.</span>
-<span class="g g-Whitespace">    </span><span class="mi">397</span> <span class="k">with</span> <span class="n">RendererAgg</span><span class="o">.</span><span class="n">lock</span><span class="p">,</span> \
-<span class="g g-Whitespace">    </span><span class="mi">398</span>      <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">toolbar</span><span class="o">.</span><span class="n">_wait_cursor_for_draw_cm</span><span class="p">()</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">toolbar</span>
-<span class="g g-Whitespace">    </span><span class="mi">399</span>       <span class="k">else</span> <span class="n">nullcontext</span><span class="p">()):</span>
-<span class="ne">--&gt; </span><span class="mi">400</span>     <span class="bp">self</span><span class="o">.</span><span class="n">figure</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">renderer</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">401</span>     <span class="c1"># A GUI class may be need to update a window using this draw, so</span>
-<span class="g g-Whitespace">    </span><span class="mi">402</span>     <span class="c1"># don&#39;t forget to call the superclass.</span>
-<span class="g g-Whitespace">    </span><span class="mi">403</span>     <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">draw</span><span class="p">()</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.10.11/x64/lib/python3.10/site-packages/matplotlib/artist.py:95,</span> in <span class="ni">_finalize_rasterization.&lt;locals&gt;.draw_wrapper</span><span class="nt">(artist, renderer, *args, **kwargs)</span>
-<span class="g g-Whitespace">     </span><span class="mi">93</span> <span class="nd">@wraps</span><span class="p">(</span><span class="n">draw</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">94</span> <span class="k">def</span> <span class="nf">draw_wrapper</span><span class="p">(</span><span class="n">artist</span><span class="p">,</span> <span class="n">renderer</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-<span class="ne">---&gt; </span><span class="mi">95</span>     <span class="n">result</span> <span class="o">=</span> <span class="n">draw</span><span class="p">(</span><span class="n">artist</span><span class="p">,</span> <span class="n">renderer</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">96</span>     <span class="k">if</span> <span class="n">renderer</span><span class="o">.</span><span class="n">_rasterizing</span><span class="p">:</span>
-<span class="g g-Whitespace">     </span><span class="mi">97</span>         <span class="n">renderer</span><span class="o">.</span><span class="n">stop_rasterizing</span><span class="p">()</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.10.11/x64/lib/python3.10/site-packages/matplotlib/artist.py:72,</span> in <span class="ni">allow_rasterization.&lt;locals&gt;.draw_wrapper</span><span class="nt">(artist, renderer)</span>
-<span class="g g-Whitespace">     </span><span class="mi">69</span>     <span class="k">if</span> <span class="n">artist</span><span class="o">.</span><span class="n">get_agg_filter</span><span class="p">()</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-<span class="g g-Whitespace">     </span><span class="mi">70</span>         <span class="n">renderer</span><span class="o">.</span><span class="n">start_filter</span><span class="p">()</span>
-<span class="ne">---&gt; </span><span class="mi">72</span>     <span class="k">return</span> <span class="n">draw</span><span class="p">(</span><span class="n">artist</span><span class="p">,</span> <span class="n">renderer</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">73</span> <span class="k">finally</span><span class="p">:</span>
-<span class="g g-Whitespace">     </span><span class="mi">74</span>     <span class="k">if</span> <span class="n">artist</span><span class="o">.</span><span class="n">get_agg_filter</span><span class="p">()</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.10.11/x64/lib/python3.10/site-packages/matplotlib/figure.py:3140,</span> in <span class="ni">Figure.draw</span><span class="nt">(self, renderer)</span>
-<span class="g g-Whitespace">   </span><span class="mi">3137</span>         <span class="c1"># ValueError can occur when resizing a window.</span>
-<span class="g g-Whitespace">   </span><span class="mi">3139</span> <span class="bp">self</span><span class="o">.</span><span class="n">patch</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">renderer</span><span class="p">)</span>
-<span class="ne">-&gt; </span><span class="mi">3140</span> <span class="n">mimage</span><span class="o">.</span><span class="n">_draw_list_compositing_images</span><span class="p">(</span>
-<span class="g g-Whitespace">   </span><span class="mi">3141</span>     <span class="n">renderer</span><span class="p">,</span> <span class="bp">self</span><span class="p">,</span> <span class="n">artists</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">suppressComposite</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">3143</span> <span class="k">for</span> <span class="n">sfig</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">subfigs</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">3144</span>     <span class="n">sfig</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">renderer</span><span class="p">)</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.10.11/x64/lib/python3.10/site-packages/matplotlib/image.py:131,</span> in <span class="ni">_draw_list_compositing_images</span><span class="nt">(renderer, parent, artists, suppress_composite)</span>
-<span class="g g-Whitespace">    </span><span class="mi">129</span> <span class="k">if</span> <span class="n">not_composite</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">has_images</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">130</span>     <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">artists</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">131</span>         <span class="n">a</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">renderer</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">132</span> <span class="k">else</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">133</span>     <span class="c1"># Composite any adjacent images together</span>
-<span class="g g-Whitespace">    </span><span class="mi">134</span>     <span class="n">image_group</span> <span class="o">=</span> <span class="p">[]</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.10.11/x64/lib/python3.10/site-packages/matplotlib/artist.py:72,</span> in <span class="ni">allow_rasterization.&lt;locals&gt;.draw_wrapper</span><span class="nt">(artist, renderer)</span>
-<span class="g g-Whitespace">     </span><span class="mi">69</span>     <span class="k">if</span> <span class="n">artist</span><span class="o">.</span><span class="n">get_agg_filter</span><span class="p">()</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-<span class="g g-Whitespace">     </span><span class="mi">70</span>         <span class="n">renderer</span><span class="o">.</span><span class="n">start_filter</span><span class="p">()</span>
-<span class="ne">---&gt; </span><span class="mi">72</span>     <span class="k">return</span> <span class="n">draw</span><span class="p">(</span><span class="n">artist</span><span class="p">,</span> <span class="n">renderer</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">73</span> <span class="k">finally</span><span class="p">:</span>
-<span class="g g-Whitespace">     </span><span class="mi">74</span>     <span class="k">if</span> <span class="n">artist</span><span class="o">.</span><span class="n">get_agg_filter</span><span class="p">()</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.10.11/x64/lib/python3.10/site-packages/matplotlib/axes/_base.py:3064,</span> in <span class="ni">_AxesBase.draw</span><span class="nt">(self, renderer)</span>
-<span class="g g-Whitespace">   </span><span class="mi">3061</span> <span class="k">if</span> <span class="n">artists_rasterized</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">3062</span>     <span class="n">_draw_rasterized</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">figure</span><span class="p">,</span> <span class="n">artists_rasterized</span><span class="p">,</span> <span class="n">renderer</span><span class="p">)</span>
-<span class="ne">-&gt; </span><span class="mi">3064</span> <span class="n">mimage</span><span class="o">.</span><span class="n">_draw_list_compositing_images</span><span class="p">(</span>
-<span class="g g-Whitespace">   </span><span class="mi">3065</span>     <span class="n">renderer</span><span class="p">,</span> <span class="bp">self</span><span class="p">,</span> <span class="n">artists</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">figure</span><span class="o">.</span><span class="n">suppressComposite</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">3067</span> <span class="n">renderer</span><span class="o">.</span><span class="n">close_group</span><span class="p">(</span><span class="s1">&#39;axes&#39;</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">3068</span> <span class="bp">self</span><span class="o">.</span><span class="n">stale</span> <span class="o">=</span> <span class="kc">False</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.10.11/x64/lib/python3.10/site-packages/matplotlib/image.py:131,</span> in <span class="ni">_draw_list_compositing_images</span><span class="nt">(renderer, parent, artists, suppress_composite)</span>
-<span class="g g-Whitespace">    </span><span class="mi">129</span> <span class="k">if</span> <span class="n">not_composite</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">has_images</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">130</span>     <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">artists</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">131</span>         <span class="n">a</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">renderer</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">132</span> <span class="k">else</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">133</span>     <span class="c1"># Composite any adjacent images together</span>
-<span class="g g-Whitespace">    </span><span class="mi">134</span>     <span class="n">image_group</span> <span class="o">=</span> <span class="p">[]</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.10.11/x64/lib/python3.10/site-packages/matplotlib/artist.py:72,</span> in <span class="ni">allow_rasterization.&lt;locals&gt;.draw_wrapper</span><span class="nt">(artist, renderer)</span>
-<span class="g g-Whitespace">     </span><span class="mi">69</span>     <span class="k">if</span> <span class="n">artist</span><span class="o">.</span><span class="n">get_agg_filter</span><span class="p">()</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-<span class="g g-Whitespace">     </span><span class="mi">70</span>         <span class="n">renderer</span><span class="o">.</span><span class="n">start_filter</span><span class="p">()</span>
-<span class="ne">---&gt; </span><span class="mi">72</span>     <span class="k">return</span> <span class="n">draw</span><span class="p">(</span><span class="n">artist</span><span class="p">,</span> <span class="n">renderer</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">73</span> <span class="k">finally</span><span class="p">:</span>
-<span class="g g-Whitespace">     </span><span class="mi">74</span>     <span class="k">if</span> <span class="n">artist</span><span class="o">.</span><span class="n">get_agg_filter</span><span class="p">()</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.10.11/x64/lib/python3.10/site-packages/matplotlib/lines.py:749,</span> in <span class="ni">Line2D.draw</span><span class="nt">(self, renderer)</span>
-<span class="g g-Whitespace">    </span><span class="mi">746</span> <span class="k">else</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">747</span>     <span class="n">subslice</span> <span class="o">=</span> <span class="kc">None</span>
-<span class="ne">--&gt; </span><span class="mi">749</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_path_effects</span><span class="p">():</span>
-<span class="g g-Whitespace">    </span><span class="mi">750</span>     <span class="kn">from</span> <span class="nn">matplotlib.patheffects</span> <span class="kn">import</span> <span class="n">PathEffectRenderer</span>
-<span class="g g-Whitespace">    </span><span class="mi">751</span>     <span class="n">renderer</span> <span class="o">=</span> <span class="n">PathEffectRenderer</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_path_effects</span><span class="p">(),</span> <span class="n">renderer</span><span class="p">)</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.10.11/x64/lib/python3.10/site-packages/matplotlib/artist.py:730,</span> in <span class="ni">Artist.get_path_effects</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">    </span><span class="mi">727</span>     <span class="bp">self</span><span class="o">.</span><span class="n">_path_effects</span> <span class="o">=</span> <span class="n">path_effects</span>
-<span class="g g-Whitespace">    </span><span class="mi">728</span>     <span class="bp">self</span><span class="o">.</span><span class="n">stale</span> <span class="o">=</span> <span class="kc">True</span>
-<span class="ne">--&gt; </span><span class="mi">730</span> <span class="k">def</span> <span class="nf">get_path_effects</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="g g-Whitespace">    </span><span class="mi">731</span>     <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_path_effects</span>
-<span class="g g-Whitespace">    </span><span class="mi">733</span> <span class="k">def</span> <span class="nf">get_figure</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-
-<span class="ne">KeyboardInterrupt</span>: 
-</pre></div>
-</div>
+<img alt="../_images/ac293617c900254072b63c32b1e28a7b72d2ed43ff575020a99238962d02307c.png" src="../_images/ac293617c900254072b63c32b1e28a7b72d2ed43ff575020a99238962d02307c.png" />
 </div>
 </div>
 </section>
@@ -1221,6 +1115,88 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 <span class="n">plot_reward_sweep</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">,</span> <span class="n">num_actions</span><span class="p">,</span> <span class="n">bandwidths</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 8 and --bandwidth 0
+Running simulation for: --cats 8 and --bandwidth 1
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 8 and --bandwidth 2
+Running simulation for: --cats 8 and --bandwidth 3
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 32 and --bandwidth 0
+Running simulation for: --cats 32 and --bandwidth 1
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 32 and --bandwidth 2
+Running simulation for: --cats 32 and --bandwidth 3
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 32 and --bandwidth 25
+Running simulation for: --cats 64 and --bandwidth 0
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 64 and --bandwidth 1
+Running simulation for: --cats 64 and --bandwidth 2
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 64 and --bandwidth 3
+Running simulation for: --cats 64 and --bandwidth 25
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 128 and --bandwidth 0
+Running simulation for: --cats 128 and --bandwidth 1
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 128 and --bandwidth 2
+Running simulation for: --cats 128 and --bandwidth 3
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 128 and --bandwidth 25
+Running simulation for: --cats 256 and --bandwidth 0
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 256 and --bandwidth 1
+Running simulation for: --cats 256 and --bandwidth 2
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 256 and --bandwidth 3
+Running simulation for: --cats 256 and --bandwidth 25
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 512 and --bandwidth 0
+Running simulation for: --cats 512 and --bandwidth 1
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 512 and --bandwidth 2
+Running simulation for: --cats 512 and --bandwidth 3
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 512 and --bandwidth 25
+Running simulation for: --cats 1024 and --bandwidth 0
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 1024 and --bandwidth 1
+Running simulation for: --cats 1024 and --bandwidth 2
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 1024 and --bandwidth 3
+Running simulation for: --cats 1024 and --bandwidth 25
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 0
+Running simulation for: --cats 2048 and --bandwidth 1
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 2
+Running simulation for: --cats 2048 and --bandwidth 3
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 25
+</pre></div>
+</div>
+<img alt="../_images/d2fd40f6df04c73a61c83cf0a4a2886b63e0f71f7dabfd530bfaa15d2f341d33.png" src="../_images/d2fd40f6df04c73a61c83cf0a4a2886b63e0f71f7dabfd530bfaa15d2f341d33.png" />
 </div>
 </div>
 </section>
@@ -1413,6 +1389,9 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<img alt="../_images/7c11d4147ec8718cce8f3114ca524d5ee27a24826417645a39012ffb115b35b0.png" src="../_images/7c11d4147ec8718cce8f3114ca524d5ee27a24826417645a39012ffb115b35b0.png" />
+</div>
 </div>
 </section>
 <section id="id4">
@@ -1450,6 +1429,9 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 <span class="p">)</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/ac24c48979b32cf7da73dce72d585b086b82c9f5217fb1e87a3bcd01d58beff3.png" src="../_images/ac24c48979b32cf7da73dce72d585b086b82c9f5217fb1e87a3bcd01d58beff3.png" />
 </div>
 </div>
 </section>
@@ -1535,6 +1517,126 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 <span class="n">plot_reward_sweep</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">,</span> <span class="n">num_actions</span><span class="p">,</span> <span class="n">bandwidths</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 8 and --bandwidth 0
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 8 and --bandwidth 1
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 8 and --bandwidth 2
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 8 and --bandwidth 3
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 32 and --bandwidth 0
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 32 and --bandwidth 1
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 32 and --bandwidth 2
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 32 and --bandwidth 3
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 32 and --bandwidth 25
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 64 and --bandwidth 0
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 64 and --bandwidth 1
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 64 and --bandwidth 2
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 64 and --bandwidth 3
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 64 and --bandwidth 25
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 128 and --bandwidth 0
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 128 and --bandwidth 1
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 128 and --bandwidth 2
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 128 and --bandwidth 3
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 128 and --bandwidth 25
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 256 and --bandwidth 0
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 256 and --bandwidth 1
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 256 and --bandwidth 2
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 256 and --bandwidth 3
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 256 and --bandwidth 25
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 512 and --bandwidth 0
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 512 and --bandwidth 1
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 512 and --bandwidth 2
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 512 and --bandwidth 3
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 512 and --bandwidth 25
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 1024 and --bandwidth 0
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 1024 and --bandwidth 1
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 1024 and --bandwidth 2
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 1024 and --bandwidth 3
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 1024 and --bandwidth 25
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 0
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 1
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 2
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 3
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 25
+</pre></div>
+</div>
+<img alt="../_images/b5746ff75df8c67fb4537dbd9a65535a5be4f153640a946f62ae3d45b21a554c.png" src="../_images/b5746ff75df8c67fb4537dbd9a65535a5be4f153640a946f62ae3d45b21a554c.png" />
 </div>
 </div>
 </section>
