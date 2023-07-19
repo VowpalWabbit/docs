@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['backing_5fbuffer_0',['backing_buffer',['../classVW_1_1parsers_1_1cache_1_1details_1_1cache__temp__buffer.html#a5aff04fd45041d0d2c2fcacda1e5ecd5',1,'VW::parsers::cache::details::cache_temp_buffer']]],
+  ['bandwidth_1',['bandwidth',['../classVW_1_1reductions_1_1cats_1_1cats.html#a6cb336f40a44cdcb30ca15dc652067f8',1,'VW::reductions::cats::cats::bandwidth()'],['../classVW_1_1reductions_1_1pmf__to__pdf__reduction.html#a59e753236f616a2fa9af5f2bde758120',1,'VW::reductions::pmf_to_pdf_reduction::bandwidth()']]],
+  ['base_2',['base',['../structVW_1_1reductions_1_1eigen__memory__tree_1_1emt__example.html#aed0f92e78d92942b6d963336e590a410',1,'VW::reductions::eigen_memory_tree::emt_example::base()'],['../classVW_1_1reductions_1_1expreplay_1_1expreplay.html#af8686acee732517c4d26c01c8455ad01',1,'VW::reductions::expreplay::expreplay::base()']]],
+  ['baseline_5factions_3',['baseline_actions',['../classVW_1_1parsers_1_1json_1_1decision__service__interaction.html#af73cc218338f04ff14adde70c0b4bc1b',1,'VW::parsers::json::decision_service_interaction']]],
+  ['baseline_5fdefault_5ftau_4',['BASELINE_DEFAULT_TAU',['../namespaceVW_1_1details.html#a065e634fa13f916518cd982c7ef14913',1,'VW::details']]],
+  ['baseline_5fenabled_5fmessage_5fnamespace_5',['BASELINE_ENABLED_MESSAGE_NAMESPACE',['../namespaceVW_1_1details.html#aa1e45cd4c27fb1be7eabaa7a03990318',1,'VW::details']]],
+  ['begin_5findex_6',['begin_index',['../classVW_1_1namespace__extent.html#a5baa64e9ec5418497aaa1dd9b804f21b',1,'VW::namespace_extent']]],
+  ['begin_5fit_7',['begin_it',['../classVW_1_1details_1_1feature__gen__data.html#a0ba238ec164c138f7a5e5c15036b058e',1,'VW::details::feature_gen_data']]],
+  ['beta_8',['beta',['../classVW_1_1details_1_1Duals.html#aa4e421223f438998809c5f33c6281e47',1,'VW::details::Duals']]],
+  ['bfgs_9',['bfgs',['../classVW_1_1details_1_1reduction__state.html#ab35a47afb8b8cbc660063ba024d7cdb7',1,'VW::details::reduction_state']]],
+  ['bias_10',['BIAS',['../namespaceVW_1_1details.html#a432d695f58aa45accbdc2662e2530444',1,'VW::details']]],
+  ['binary_11',['BINARY',['../classvw__dbg.html#a73dbe83fd8d2f44045784ec4dfbd18f1',1,'vw_dbg']]],
+  ['bound_5fsock_12',['bound_sock',['../classVW_1_1parser.html#a4645a44b214e26f6a9bc8c3b48f4953d',1,'VW::parser']]],
+  ['bounder_13',['bounder',['../structVW_1_1reductions_1_1eigen__memory__tree_1_1emt__tree.html#a9dcf7e35e738ca7ca69661df22dbc403',1,'VW::reductions::eigen_memory_tree::emt_tree']]],
+  ['buf_14',['buf',['../classVW_1_1reductions_1_1expreplay_1_1expreplay.html#a7bc6a2def21fa2f1eae01cbd2d517e1b',1,'VW::reductions::expreplay::expreplay']]],
+  ['buffers_15',['buffers',['../classVW_1_1all__reduce__sync.html#a68a5af320f1e627c58dcc0011da5014a',1,'VW::all_reduce_sync']]]
+];
