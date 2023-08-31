@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Vowpal Wabbit: /nix/store/3119sn3fghkglgbj94k3a7wldm13gw51-source/vowpalwabbit/core/include/vw/core/example.h File Reference</title>
+<title>Vowpal Wabbit: /nix/store/gz1fbxyxdc8yq9lhi3s4f4kc1ijfbbsn-source/vowpalwabbit/core/include/vw/core/example.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -96,6 +96,7 @@ $(function() {
 <code>#include &quot;<a class="el" href="multiclass_8h.html">vw/core/multiclass.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="multilabel_8h.html">vw/core/multilabel.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="no__label_8h.html">vw/core/no_label.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="prediction__type_8h.html">vw/core/prediction_type.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="prob__dist__cont_8h.html">vw/core/prob_dist_cont.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="simple__label_8h.html">vw/core/simple_label.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="slates__label_8h.html">vw/core/slates_label.h</a>&quot;</code><br />
@@ -148,6 +149,8 @@ Functions</h2></td></tr>
 <tr class="separator:a1b843d55755ec5a44f188d38c5f6fc92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9663e07b299bbc5fb9b81e55a238f30a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a9663e07b299bbc5fb9b81e55a238f30a">VW::to_string</a> (const <a class="el" href="v__array_8h.html#ad5758602e2a70deacf79ee8b00b6e4cb">v_array</a>&lt; float &gt; &amp;scalars, int decimal_precision=details::DEFAULT_FLOAT_PRECISION)</td></tr>
 <tr class="separator:a9663e07b299bbc5fb9b81e55a238f30a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95d5cf4070c194243f3e8e6f63b68d12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a95d5cf4070c194243f3e8e6f63b68d12">VW::swap_prediction</a> (<a class="el" href="example_8h.html#ac1cc52ebe494dfad21be1555c8e4d6b7">polyprediction</a> &amp;a, <a class="el" href="example_8h.html#ac1cc52ebe494dfad21be1555c8e4d6b7">polyprediction</a> &amp;b, <a class="el" href="namespaceVW.html#a4f76045a06b3efe3c5c612b777b6c836">prediction_type_t</a> prediction_type)</td></tr>
+<tr class="separator:a95d5cf4070c194243f3e8e6f63b68d12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8269c4e24893b5c2bb2d35b7a315c2fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#a8269c4e24893b5c2bb2d35b7a315c2fd">VW::flatten_features</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> &amp;all, <a class="el" href="example_8h.html#ad8bc4e4e4b50871a4a048c3a6b6e5309">example</a> &amp;ec, <a class="el" href="feature__group_8h.html#a71f1fbe63f2955c31d98a8cb5d9222df">features</a> &amp;fs)</td></tr>
 <tr class="separator:a8269c4e24893b5c2bb2d35b7a315c2fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8968ac994c443fc0dfd2e5fffb2615a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW.html#ae8968ac994c443fc0dfd2e5fffb2615a">VW::example_is_newline</a> (const <a class="el" href="example_8h.html#ad8bc4e4e4b50871a4a048c3a6b6e5309">example</a> &amp;ec)</td></tr>
@@ -207,7 +210,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  <a class="code hl_function" href="namespaceVW_1_1details.html#a5b2f3c9a535483334cec9db91a8a817a">VW::details::add_passthrough_feature_magic</a>( \</div>
 <div class="line">      ec, __FILE__[0] * 483901 + __FILE__[1] * 3417 + __FILE__[2] * 8490177, i, x);</div>
-<div class="ttc" id="anamespaceVW_1_1details_html_a5b2f3c9a535483334cec9db91a8a817a"><div class="ttname"><a href="namespaceVW_1_1details.html#a5b2f3c9a535483334cec9db91a8a817a">VW::details::add_passthrough_feature_magic</a></div><div class="ttdeci">void add_passthrough_feature_magic(example &amp;ec, uint64_t magic, uint64_t i, float x)</div><div class="ttdef"><b>Definition:</b> example.h:157</div></div>
+<div class="ttc" id="anamespaceVW_1_1details_html_a5b2f3c9a535483334cec9db91a8a817a"><div class="ttname"><a href="namespaceVW_1_1details.html#a5b2f3c9a535483334cec9db91a8a817a">VW::details::add_passthrough_feature_magic</a></div><div class="ttdeci">void add_passthrough_feature_magic(example &amp;ec, uint64_t magic, uint64_t i, float x)</div><div class="ttdef"><b>Definition:</b> example.h:159</div></div>
 </div><!-- fragment -->
 </div>
 </div>
