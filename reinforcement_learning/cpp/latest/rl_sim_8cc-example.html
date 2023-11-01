@@ -96,16 +96,20 @@ $(document).ready(function(){initNavTree('rl_sim_8cc-example.html',''); initResi
 <div class="title">rl_sim.cc</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;constants.h&quot;</span></div>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="api__status_8h.html">api_status.h</a>&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;constants.h&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;factory_resolver.h&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="live__model_8h.html">live_model.h</a>&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &quot;multistep.h&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &quot;person.h&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &quot;rand48.h&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &quot;rl_sim_cpp.h&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &quot;simulation_stats.h&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;trace_logger.h&quot;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &lt;boost/uuid/random_generator.hpp&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;boost/uuid/uuid_io.hpp&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;chrono&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;cmath&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;thread&gt;</span></div>
 <div class="line"> </div>
@@ -467,6 +471,69 @@ $(document).ready(function(){initNavTree('rl_sim_8cc-example.html',''); initResi
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> _on_error(<span class="keyword">const</span> <a name="_a3"></a><a class="code" href="classreinforcement__learning_1_1api__status.html">reinforcement_learning::api_status</a>&amp; status, rl_sim* psim) { psim-&gt;on_error(status); }</div>
 <div class="line"> </div>
+<div class="line"><span class="keyword">struct </span>throughput_tracking_sender : <span class="keyword">public</span> reinforcement_learning::i_sender</div>
+<div class="line">{</div>
+<div class="line">  throughput_tracking_sender(std::unique_ptr&lt;reinforcement_learning::i_sender&gt; inner_sender, std::string name,</div>
+<div class="line">      reinforcement_learning::i_trace* trace, <span class="keywordtype">int</span> print_interval)</div>
+<div class="line">      : _inner_sender(std::move(inner_sender)), _name(std::move(name)), _trace(trace), _print_interval(print_interval)</div>
+<div class="line">  {</div>
+<div class="line">  }</div>
+<div class="line"> </div>
+<div class="line">  <span class="keywordtype">int</span> init(</div>
+<div class="line">      <span class="keyword">const</span> <a name="_a4"></a><a class="code" href="classreinforcement__learning_1_1utility_1_1configuration.html">reinforcement_learning::utility::configuration</a>&amp; config, <a class="code" href="classreinforcement__learning_1_1api__status.html">reinforcement_learning::api_status</a>* status)<span class="keyword"> override</span></div>
+<div class="line"><span class="keyword">  </span>{</div>
+<div class="line">    _begin_time = std::chrono::steady_clock::now();</div>
+<div class="line">    <span class="keywordflow">return</span> _inner_sender-&gt;init(config, status);</div>
+<div class="line">  };</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">protected</span>:</div>
+<div class="line">  <span class="keywordtype">int</span> v_send(<span class="keyword">const</span> buffer&amp; data, <a class="code" href="classreinforcement__learning_1_1api__status.html">reinforcement_learning::api_status</a>* status = <span class="keyword">nullptr</span>)<span class="keyword"> override</span></div>
+<div class="line"><span class="keyword">  </span>{</div>
+<div class="line">    _bytes_sent += data-&gt;buffer_filled_size();</div>
+<div class="line">    _messages_sent++;</div>
+<div class="line">    _print_counter++;</div>
+<div class="line">    <span class="keywordflow">if</span> (_print_counter &gt;= _print_interval)</div>
+<div class="line">    {</div>
+<div class="line">      <span class="keyword">auto</span> now = std::chrono::steady_clock::now();</div>
+<div class="line">      <span class="keyword">auto</span> elapsed = std::chrono::duration_cast&lt;std::chrono::seconds&gt;(now - _begin_time).count();</div>
+<div class="line">      std::ostringstream oss;</div>
+<div class="line">      oss &lt;&lt; _name &lt;&lt; <span class="stringliteral">&quot; throughput: &quot;</span> &lt;&lt; _bytes_sent / elapsed &lt;&lt; <span class="stringliteral">&quot; bytes/s, &quot;</span></div>
+<div class="line">          &lt;&lt; <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(_messages_sent) / elapsed &lt;&lt; <span class="stringliteral">&quot; messages/s, &quot;</span> &lt;&lt; _bytes_sent &lt;&lt; <span class="stringliteral">&quot; total bytes, &quot;</span></div>
+<div class="line">          &lt;&lt; _messages_sent &lt;&lt; <span class="stringliteral">&quot; total messages.&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line">      TRACE_INFO(_trace, oss.str());</div>
+<div class="line">      _print_counter = 0;</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">return</span> _inner_sender-&gt;send(data, status);</div>
+<div class="line">  };</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">private</span>:</div>
+<div class="line">  std::unique_ptr&lt;reinforcement_learning::i_sender&gt; _inner_sender;</div>
+<div class="line">  std::string _name;</div>
+<div class="line">  <span class="keywordtype">size_t</span> _bytes_sent = 0;</div>
+<div class="line">  <span class="keywordtype">size_t</span> _messages_sent = 0;</div>
+<div class="line">  std::chrono::steady_clock::time_point _begin_time;</div>
+<div class="line">  reinforcement_learning::i_trace* _trace;</div>
+<div class="line">  <span class="keywordtype">int</span> _print_interval;</div>
+<div class="line">  <span class="keywordtype">int</span> _print_counter = 0;</div>
+<div class="line">};</div>
+<div class="line"> </div>
+<div class="line">reinforcement_learning::sender_factory_t::create_fn wrap_sender_generate_for_throughput_sender(<span class="keyword">const</span> std::string&amp; name)</div>
+<div class="line">{</div>
+<div class="line">  <span class="keywordflow">return</span> [=](std::unique_ptr&lt;reinforcement_learning::i_sender&gt;&amp; retval, <span class="keyword">const</span> u::configuration&amp; cfg,</div>
+<div class="line">             reinforcement_learning::error_callback_fn* error_cb, reinforcement_learning::i_trace* trace_logger,</div>
+<div class="line">             <a class="code" href="classreinforcement__learning_1_1api__status.html">reinforcement_learning::api_status</a>* status) -&gt; <span class="keywordtype">int</span></div>
+<div class="line">  {</div>
+<div class="line">    std::unique_ptr&lt;reinforcement_learning::i_sender&gt; sender;</div>
+<div class="line">    <span class="keyword">auto</span> res =</div>
+<div class="line">        reinforcement_learning::sender_factory.create(sender, name, cfg, std::move(error_cb), trace_logger, status);</div>
+<div class="line">    <a class="code" href="api__status_8h.html#a11385635c23358843d733b2e6f3241c4">RETURN_IF_FAIL</a>(res);</div>
+<div class="line">    <span class="keyword">auto</span> print_interval = cfg.get_int(<span class="stringliteral">&quot;thoughputsender.printinterval&quot;</span>, 1);</div>
+<div class="line">    retval.reset(<span class="keyword">new</span> throughput_tracking_sender(std::move(sender), name, trace_logger, print_interval));</div>
+<div class="line">    <span class="keywordflow">return</span> 0;</div>
+<div class="line">  };</div>
+<div class="line">}</div>
+<div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> rl_sim::init_rl()</div>
 <div class="line">{</div>
 <div class="line">  r::api_status status;</div>
@@ -475,13 +542,13 @@ $(document).ready(function(){initNavTree('rl_sim_8cc-example.html',''); initResi
 <div class="line">  <span class="keyword">const</span> <span class="keyword">auto</span> config_file = _options[<span class="stringliteral">&quot;json_config&quot;</span>].as&lt;std::string&gt;();</div>
 <div class="line">  <span class="keywordflow">if</span> (load_config_from_json(config_file, config, &amp;status) != err::success)</div>
 <div class="line">  {</div>
-<div class="line">    std::cout &lt;&lt; status.<a name="a4"></a><a class="code" href="classreinforcement__learning_1_1api__status.html#a802af4f7e9d6fab15c20f956b9390db5">get_error_msg</a>() &lt;&lt; std::endl;</div>
+<div class="line">    std::cout &lt;&lt; status.get_error_msg() &lt;&lt; std::endl;</div>
 <div class="line">    <span class="keywordflow">return</span> -1;</div>
 <div class="line">  }</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordflow">if</span> (_options[<span class="stringliteral">&quot;log_to_file&quot;</span>].as&lt;bool&gt;())</div>
 <div class="line">  {</div>
-<div class="line">    config.set(r::name::INTERACTION_SENDER_IMPLEMENTATION, r::value::INTERACTION_FILE_SENDER);</div>
+<div class="line">    config.<a name="a5"></a><a class="code" href="classreinforcement__learning_1_1utility_1_1configuration.html#ab856815720398480dda800928e19d191">set</a>(r::name::INTERACTION_SENDER_IMPLEMENTATION, r::value::INTERACTION_FILE_SENDER);</div>
 <div class="line">    config.set(r::name::OBSERVATION_SENDER_IMPLEMENTATION, r::value::OBSERVATION_FILE_SENDER);</div>
 <div class="line">  }</div>
 <div class="line"> </div>
@@ -500,8 +567,30 @@ $(document).ready(function(){initNavTree('rl_sim_8cc-example.html',''); initResi
 <div class="line">  <span class="comment">// Trace log API calls to the console</span></div>
 <div class="line">  <span class="keywordflow">if</span> (!_quiet) { config.set(r::name::TRACE_LOG_IMPLEMENTATION, r::value::CONSOLE_TRACE_LOGGER); }</div>
 <div class="line"> </div>
+<div class="line">  reinforcement_learning::sender_factory_t* sender_factory = &amp;reinforcement_learning::sender_factory;</div>
+<div class="line">  reinforcement_learning::sender_factory_t factory;</div>
+<div class="line">  <span class="keywordflow">if</span> (_options.count(<span class="stringliteral">&quot;throughput&quot;</span>) != 0u)</div>
+<div class="line">  {</div>
+<div class="line">    factory.register_type(reinforcement_learning::value::OBSERVATION_EH_SENDER,</div>
+<div class="line">        wrap_sender_generate_for_throughput_sender(reinforcement_learning::value::OBSERVATION_EH_SENDER));</div>
+<div class="line">    factory.register_type(reinforcement_learning::value::INTERACTION_EH_SENDER,</div>
+<div class="line">        wrap_sender_generate_for_throughput_sender(reinforcement_learning::value::INTERACTION_EH_SENDER));</div>
+<div class="line">    factory.register_type(reinforcement_learning::value::EPISODE_EH_SENDER,</div>
+<div class="line">        wrap_sender_generate_for_throughput_sender(reinforcement_learning::value::EPISODE_EH_SENDER));</div>
+<div class="line">    factory.register_type(reinforcement_learning::value::OBSERVATION_HTTP_API_SENDER,</div>
+<div class="line">        wrap_sender_generate_for_throughput_sender(reinforcement_learning::value::OBSERVATION_HTTP_API_SENDER));</div>
+<div class="line">    factory.register_type(reinforcement_learning::value::INTERACTION_HTTP_API_SENDER,</div>
+<div class="line">        wrap_sender_generate_for_throughput_sender(reinforcement_learning::value::INTERACTION_HTTP_API_SENDER));</div>
+<div class="line">    factory.register_type(reinforcement_learning::value::EPISODE_HTTP_API_SENDER,</div>
+<div class="line">        wrap_sender_generate_for_throughput_sender(reinforcement_learning::value::EPISODE_HTTP_API_SENDER));</div>
+<div class="line">    sender_factory = &amp;factory;</div>
+<div class="line">  }</div>
+<div class="line"> </div>
 <div class="line">  <span class="comment">// Initialize the API</span></div>
-<div class="line">  _rl = std::unique_ptr&lt;r::live_model&gt;(<span class="keyword">new</span> r::live_model(config, _on_error, <span class="keyword">this</span>));</div>
+<div class="line">  _rl = std::unique_ptr&lt;r::live_model&gt;(<span class="keyword">new</span> r::live_model(config, _on_error, <span class="keyword">this</span>,</div>
+<div class="line">      &amp;reinforcement_learning::trace_logger_factory, &amp;reinforcement_learning::data_transport_factory,</div>
+<div class="line">      &amp;reinforcement_learning::model_factory, sender_factory, &amp;reinforcement_learning::time_provider_factory));</div>
+<div class="line"> </div>
 <div class="line">  <span class="keywordflow">if</span> (_rl-&gt;init(&amp;status) != err::success)</div>
 <div class="line">  {</div>
 <div class="line">    std::cout &lt;&lt; status.get_error_msg() &lt;&lt; std::endl;</div>
@@ -609,7 +698,7 @@ $(document).ready(function(){initNavTree('rl_sim_8cc-example.html',''); initResi
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> rl_sim::on_error(<span class="keyword">const</span> <a class="code" href="classreinforcement__learning_1_1api__status.html">reinforcement_learning::api_status</a>&amp; status)</div>
 <div class="line">{</div>
-<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Background error in Inference API: &quot;</span> &lt;&lt; status.<a class="code" href="classreinforcement__learning_1_1api__status.html#a802af4f7e9d6fab15c20f956b9390db5">get_error_msg</a>() &lt;&lt; std::endl;</div>
+<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Background error in Inference API: &quot;</span> &lt;&lt; status.<a name="a6"></a><a class="code" href="classreinforcement__learning_1_1api__status.html#a802af4f7e9d6fab15c20f956b9390db5">get_error_msg</a>() &lt;&lt; std::endl;</div>
 <div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;Exiting simulation loop.&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line">  _run_loop = <span class="keyword">false</span>;</div>
 <div class="line">}</div>
@@ -709,11 +798,14 @@ $(document).ready(function(){initNavTree('rl_sim_8cc-example.html',''); initResi
 <div class="line">  ret += <span class="stringliteral">&quot;)&quot;</span>;</div>
 <div class="line">  <span class="keywordflow">return</span> ret;</div>
 <div class="line">}</div>
+<div class="ttc" id="aapi__status_8h_html"><div class="ttname"><a href="api__status_8h.html">api_status.h</a></div><div class="ttdoc">api_status definition. api_status is used to return error information to the caller....</div></div>
 <div class="ttc" id="aapi__status_8h_html_a11385635c23358843d733b2e6f3241c4"><div class="ttname"><a href="api__status_8h.html#a11385635c23358843d733b2e6f3241c4">RETURN_IF_FAIL</a></div><div class="ttdeci">#define RETURN_IF_FAIL(x)</div><div class="ttdoc">Error reporting macro to test and return on error.</div><div class="ttdef"><b>Definition:</b> api_status.h:244</div></div>
 <div class="ttc" id="aapi__status_8h_html_ae53bad0e4f12115d8d210228f0d5c1ae"><div class="ttname"><a href="api__status_8h.html#ae53bad0e4f12115d8d210228f0d5c1ae">RETURN_ERROR_LS</a></div><div class="ttdeci">#define RETURN_ERROR_LS(trace, status, code)</div><div class="ttdoc">Error reporting macro used with left shift operator.</div><div class="ttdef"><b>Definition:</b> api_status.h:237</div></div>
 <div class="ttc" id="aclassreinforcement__learning_1_1api__status_html"><div class="ttname"><a href="classreinforcement__learning_1_1api__status.html">reinforcement_learning::api_status</a></div><div class="ttdoc">Report status of all API calls.</div><div class="ttdef"><b>Definition:</b> api_status.h:22</div></div>
 <div class="ttc" id="aclassreinforcement__learning_1_1api__status_html_a802af4f7e9d6fab15c20f956b9390db5"><div class="ttname"><a href="classreinforcement__learning_1_1api__status.html#a802af4f7e9d6fab15c20f956b9390db5">reinforcement_learning::api_status::get_error_msg</a></div><div class="ttdeci">const char * get_error_msg() const</div><div class="ttdoc">(API Error Codes) Get the error msg string All API calls will return a status code....</div></div>
 <div class="ttc" id="aclassreinforcement__learning_1_1ranking__response_html"><div class="ttname"><a href="classreinforcement__learning_1_1ranking__response.html">reinforcement_learning::ranking_response</a></div><div class="ttdoc">choose_rank() returns the action choice using ranking_response. ranking_response contains all the act...</div><div class="ttdef"><b>Definition:</b> ranking_response.h:29</div></div>
+<div class="ttc" id="aclassreinforcement__learning_1_1utility_1_1configuration_html"><div class="ttname"><a href="classreinforcement__learning_1_1utility_1_1configuration.html">reinforcement_learning::utility::configuration</a></div><div class="ttdoc">Configuration class to initialize the API Represents a collection of (name,value) pairs used to confi...</div><div class="ttdef"><b>Definition:</b> configuration.h:31</div></div>
+<div class="ttc" id="aclassreinforcement__learning_1_1utility_1_1configuration_html_ab856815720398480dda800928e19d191"><div class="ttname"><a href="classreinforcement__learning_1_1utility_1_1configuration.html#ab856815720398480dda800928e19d191">reinforcement_learning::utility::configuration::set</a></div><div class="ttdeci">void set(const char *name, const char *value)</div><div class="ttdoc">Sets the value for a given name. It overrides any existing values for that name.</div></div>
 <div class="ttc" id="alive__model_8h_html"><div class="ttname"><a href="live__model_8h.html">live_model.h</a></div><div class="ttdoc">RL Inference API definition.</div></div>
 </div><!-- fragment --> </div><!-- contents -->
 </div><!-- doc-content -->
