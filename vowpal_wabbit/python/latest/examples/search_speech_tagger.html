@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" data-content_root="../">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Search - Speech Tagger &#8212; VowpalWabbit latest documentation</title>
 <script>
@@ -24,28 +23,30 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/nav.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=a88e75c7" />
+    <link rel="stylesheet" type="text/css" href="../_static/nav.css?v=5c63e7ba" />
 
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695">
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/documentation_options.js?v=f4332903"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <link rel="shortcut icon" href="../_static/favicon.png"/>
+    <script async="async" src="../_static/sphinx-thebe.js?v=afe5de03"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <link rel="icon" href="../_static/favicon.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="API Reference" href="../reference/index.html" />
@@ -521,7 +522,7 @@ const thebe_selector_output = ".output, .cell_output"
               <article class="bd-article" role="main">
                 
   <section id="search-speech-tagger">
-<h1>Search - Speech Tagger<a class="headerlink" href="#search-speech-tagger" title="Permalink to this heading">#</a></h1>
+<h1>Search - Speech Tagger<a class="headerlink" href="#search-speech-tagger" title="Link to this heading">#</a></h1>
 <p>This tutorial walks you through writing learning to search code using the VW python interface. Once you’ve completed this, you can graduate to the C++ version, which will be faster for the computer but more painful for you.</p>
 <p>The “learning to search” paradigm solves problems that look like the following. You have a sequence of decisions to make. At the end of making these decisions, the world tells you how bad your decisions were. You want to condition later decisions on earlier decisions. But thankfully, at “training time,” you have access to an <em>oracle</em> that will tell you the right answer.</p>
 <p>Let’s start with a simple example: sequence labeling for Part of Speech tagging. The goal is to take a sequence of words (“the monster ate a big sandwich”) and label them with their parts of speech (in this case: Det Noun Verb Det Adj Noun).</p>
@@ -668,7 +669,7 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 <p>If we look back at our POS tag definitions, this is DET NOUN VERB DET NOUN, which is indeed correct!</p>
 <section id="removing-the-auto-features">
-<h2>Removing the AUTO features<a class="headerlink" href="#removing-the-auto-features" title="Permalink to this heading">#</a></h2>
+<h2>Removing the AUTO features<a class="headerlink" href="#removing-the-auto-features" title="Link to this heading">#</a></h2>
 <p>In the above example we used both AUTO_HAMMING_LOSS and AUTO_CONDITION_FEATURES. To make more explicit what these are doing, let’s rewrite our <code class="docutils literal notranslate"><span class="pre">SequenceLabeler</span></code> class without them! Here’s a version that gets rid of both simultaneously. It is only modestly more complex:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -717,7 +718,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p><strong>Important Note:</strong> even though we’re not using AUTO_CONDITION_FEATURES, we <em>still</em> must tell the search process that this prediction depends on the previous prediction. We need to do this because the learning algorithm automatically memoizes certain computations, and so it needs to know that, when memoizing, to remember that this prediction <em>might have been different</em> if a previous decision were different.</p>
 </section>
 <section id="very-silly-covington-esqu-dependency-parsing">
-<h2>Very silly Covington-esqu dependency parsing<a class="headerlink" href="#very-silly-covington-esqu-dependency-parsing" title="Permalink to this heading">#</a></h2>
+<h2>Very silly Covington-esqu dependency parsing<a class="headerlink" href="#very-silly-covington-esqu-dependency-parsing" title="Link to this heading">#</a></h2>
 <p>Let’s also try a variant of dependency parsing to see that this doesn’t work just for sequence-labeling list tasks. First we need to define some data:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -828,7 +829,7 @@ should have printed [ 1 2 -1 4 2 ]
 <p>One could argue that a more natural way to do this would be with LDF rather than the inner loop over <code class="docutils literal notranslate"><span class="pre">m</span></code>. We’ll do that next.</p>
 </section>
 <section id="ldf-based-covington-style-dependency-parser">
-<h2>LDF-based Covington-style dependency parser<a class="headerlink" href="#ldf-based-covington-style-dependency-parser" title="Permalink to this heading">#</a></h2>
+<h2>LDF-based Covington-style dependency parser<a class="headerlink" href="#ldf-based-covington-style-dependency-parser" title="Link to this heading">#</a></h2>
 <p>One of the weirdnesses in the previous parser implementation is that it makes N-many binary decisions per word (“is word n my parent?”) rather than a single N-way decision. The latter makes more sense.</p>
 <p>The challenge is that you cannot set this up as a vanilla multiclass classification problem because (a) the number of “classes” is a function of the input (a length N sentence will have N classes) and (b) class “1” and “2” don’t mean anything consistently across examples.</p>
 <p>The way around this is label-dependent features (LDF). In LDF mode, the class ids are (essentially – see caveat below) irrelevant. Instead, you simply provide features that depend on the label (hence “LDF”). In particular, for each possible label, you provide a <em>different</em> feature vector, and the goal of learning is to pick one of those as the “correct” one.</p>
@@ -931,7 +932,7 @@ should have printed [ 1 2 -1 4 2 ]
 <p>There are two major things to notice in the initialization of VW. The first is that we say <code class="docutils literal notranslate"><span class="pre">--search</span> <span class="pre">0</span></code>. The zero labels argument to <code class="docutils literal notranslate"><span class="pre">--search</span></code> declares that this is going to be an LDF task. We also have to tell VW that we want an LDF-enabled cost-sensitive learner, which is what <code class="docutils literal notranslate"><span class="pre">--csoaa_ldf</span> <span class="pre">m</span></code> does (if you’re wondering, <code class="docutils literal notranslate"><span class="pre">m</span></code> means “multiline” – just treat it as something you have to do). The rest should be familiar.</p>
 </section>
 <section id="a-simple-word-alignment-model">
-<h2>A simple word-alignment model<a class="headerlink" href="#a-simple-word-alignment-model" title="Permalink to this heading">#</a></h2>
+<h2>A simple word-alignment model<a class="headerlink" href="#a-simple-word-alignment-model" title="Link to this heading">#</a></h2>
 <p>Okay, as a last example we’ll do a simple word alignment model in the spirit of the IBM models. Note that this will be a <em>supervised</em> model; doing unsupervised stuff is a bit trickier.</p>
 <p>Here’s some word alignment data. The dataset is triples of <code class="docutils literal notranslate"><span class="pre">E,</span> <span class="pre">A,</span> <span class="pre">F</span></code> where <code class="docutils literal notranslate"><span class="pre">A[i]</span></code> = list of words <code class="docutils literal notranslate"><span class="pre">E[i]</span></code> aligned to, or <code class="docutils literal notranslate"><span class="pre">[]</span></code> for null-aligned:</p>
 <div class="cell docutils container">
@@ -1131,7 +1132,7 @@ should have printed [ 1 2 -1 4 2 ]
   
   <div class="footer-item">
     <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.3.0.<br>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 7.2.6.<br>
 </p>
   </div>
   
