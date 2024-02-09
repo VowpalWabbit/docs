@@ -49,7 +49,7 @@ var searchData=
   ['bs_2eh_46',['bs.h',['../bs_8h.html',1,'']]],
   ['bs_5fsetup_47',['bs_setup',['../namespaceVW_1_1reductions.html#a1cbc68b5cc601f602d5f62f4e470fbdf',1,'VW::reductions']]],
   ['buf_48',['buf',['../classVW_1_1reductions_1_1expreplay_1_1expreplay.html#a7bc6a2def21fa2f1eae01cbd2d517e1b',1,'VW::reductions::expreplay::expreplay']]],
-  ['buf_5fread_49',['buf_read',['../classVW_1_1io__buf.html#a57d68e762f9f38aae6e8ae8619f3b4dc',1,'VW::io_buf']]],
+  ['buf_5fread_49',['buf_read',['../classVW_1_1io__buf.html#af4961f8dda336f21b696248fc2987b9c',1,'VW::io_buf']]],
   ['buf_5fwrite_50',['buf_write',['../classVW_1_1io__buf.html#aaf0e6ebf7ab3d76ba5a9a8daede7c217',1,'VW::io_buf']]],
   ['buffer_5fstart_51',['buffer_start',['../classVW_1_1io__buf.html#a22dffd3e0d88dbdb82a4ab55622bf61e',1,'VW::io_buf']]],
   ['buffers_52',['buffers',['../classVW_1_1all__reduce__sync.html#a68a5af320f1e627c58dcc0011da5014a',1,'VW::all_reduce_sync']]],
