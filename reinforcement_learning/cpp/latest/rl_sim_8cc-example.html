@@ -99,6 +99,7 @@ $(document).ready(function(){initNavTree('rl_sim_8cc-example.html',''); initResi
 <div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="api__status_8h.html">api_status.h</a>&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &quot;constants.h&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &quot;factory_resolver.h&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;future_compat.h&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &quot;<a class="code" href="live__model_8h.html">live_model.h</a>&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &quot;multistep.h&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &quot;person.h&quot;</span></div>
@@ -111,6 +112,7 @@ $(document).ready(function(){initNavTree('rl_sim_8cc-example.html',''); initResi
 <div class="line"><span class="preprocessor">#include &lt;boost/uuid/uuid_io.hpp&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;chrono&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;cmath&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;functional&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;thread&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">using namespace </span>std;</div>
@@ -585,6 +587,17 @@ $(document).ready(function(){initNavTree('rl_sim_8cc-example.html',''); initResi
 <div class="line">        wrap_sender_generate_for_throughput_sender(reinforcement_learning::value::EPISODE_HTTP_API_SENDER));</div>
 <div class="line">    sender_factory = &amp;factory;</div>
 <div class="line">  }</div>
+<div class="line">  <span class="comment">// probably incompatible with the throughput option?</span></div>
+<div class="line">  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (_options[<span class="stringliteral">&quot;azure_oauth_factories&quot;</span>].as&lt;bool&gt;())</div>
+<div class="line">  {</div>
+<div class="line"><span class="preprocessor">#ifdef LINK_AZURE_LIBS</span></div>
+<div class="line">    <span class="comment">// Note: This requires C++14 or better</span></div>
+<div class="line">    <span class="keyword">using namespace </span>std::placeholders;</div>
+<div class="line">    reinforcement_learning::oauth_callback_t callback =</div>
+<div class="line">        std::bind(&amp;AzureCredentials::get_credentials, &amp;_creds, _1, _2, _3);</div>
+<div class="line">    reinforcement_learning::register_default_factories_callback(callback);</div>
+<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line">  }</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Initialize the API</span></div>
 <div class="line">  _rl = std::unique_ptr&lt;r::live_model&gt;(<span class="keyword">new</span> r::live_model(config, _on_error, <span class="keyword">this</span>,</div>
@@ -735,7 +748,12 @@ $(document).ready(function(){initNavTree('rl_sim_8cc-example.html',''); initResi
 <div class="line">  <span class="keywordflow">return</span> oss.str();</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line">rl_sim::rl_sim(boost::program_options::variables_map vm) : _options(std::move(vm)), _loop_kind(CB)</div>
+<div class="line">rl_sim::rl_sim(boost::program_options::variables_map vm)</div>
+<div class="line">    : _options(std::move(vm))</div>
+<div class="line">    , _loop_kind(CB)</div>
+<div class="line">#ifdef LINK_AZURE_LIBS</div>
+<div class="line">    , _creds(_options[<span class="stringliteral">&quot;azure_tenant_id&quot;</span>].as&lt;std::string&gt;())</div>
+<div class="line">#endif</div>
 <div class="line">{</div>
 <div class="line">  <span class="keywordflow">if</span> (_options[<span class="stringliteral">&quot;ccb&quot;</span>].as&lt;bool&gt;()) { _loop_kind = CCB; }</div>
 <div class="line">  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (_options[<span class="stringliteral">&quot;slates&quot;</span>].as&lt;bool&gt;()) { _loop_kind = Slates; }</div>
