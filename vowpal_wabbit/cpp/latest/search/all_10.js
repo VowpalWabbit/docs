@@ -18,7 +18,7 @@ var searchData=
   ['parse_5fexample_5flabel_15',['parse_example_label',['../namespaceVW.html#a1aed0253bec2ed2c16e4328ad6352ec2',1,'VW::parse_example_label(VW::workspace &amp;all, example &amp;ec, const std::string &amp;label)'],['../namespaceVW.html#a96a159e0a5ee9f2cb271a8f3760a125a',1,'VW::parse_example_label(string_view label, const VW::label_parser &amp;lbl_parser, const named_labels *ldict, label_parser_reuse_mem &amp;reuse_mem, example &amp;ec, VW::io::logger &amp;logger)']]],
   ['parse_5fexample_5fslates_5fjson_2eh_16',['parse_example_slates_json.h',['../parse__example__slates__json_8h.html',1,'']]],
   ['parse_5fexample_5ftext_2eh_17',['parse_example_text.h',['../parse__example__text_8h.html',1,'']]],
-  ['parse_5fexamples_18',['parse_examples',['../classVW_1_1parsers_1_1flatbuffer_1_1parser.html#ac57afb7d3527d2bf9f112c569b67bb3e',1,'VW::parsers::flatbuffer::parser']]],
+  ['parse_5fexamples_18',['parse_examples',['../classVW_1_1parsers_1_1flatbuffer_1_1parser.html#ae58af930a84c19d51f37734fc9a0b2b6',1,'VW::parsers::flatbuffer::parser']]],
   ['parse_5ffloat_19',['parse_float',['../namespaceVW_1_1details.html#adbd6ecfb76acd22d070b6793a6088db4',1,'VW::details']]],
   ['parse_5ffull_5fname_5finteractions_20',['parse_full_name_interactions',['../namespaceVW_1_1details.html#a2dcef288db42e95bb01f306badc8a0e8',1,'VW::details']]],
   ['parse_5flabel_21',['parse_label',['../namespaceVW_1_1slates.html#a4c1fe4c21d5edbe3f65990e4c3f04d21',1,'VW::slates::parse_label()'],['../classVW_1_1label__parser.html#a876f636e2f941dd9353f519d60a3ae81',1,'VW::label_parser::parse_label()'],['../namespaceCCB.html#a0a2c7d6f98111ae4766b4094ed652f9a',1,'CCB::parse_label()']]],
