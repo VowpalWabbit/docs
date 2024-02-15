@@ -89,8 +89,8 @@ Classes</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a3bc57c44199ba1f1e959afa9785dac65"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1parsers_1_1flatbuffer.html#a3bc57c44199ba1f1e959afa9785dac65">flatbuffer_to_examples</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> *all, <a class="el" href="classVW_1_1io__buf.html">io_buf</a> &amp;buf, <a class="el" href="namespaceVW.html#a1dd7b95816f635bc6a5906d2b566c856">VW::multi_ex</a> &amp;examples)</td></tr>
 <tr class="separator:a3bc57c44199ba1f1e959afa9785dac65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad03876db3cd752b76ccb454c7ca9cba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1parsers_1_1flatbuffer.html#aad03876db3cd752b76ccb454c7ca9cba">read_span_flatbuffer</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> *all, const uint8_t *span, size_t length, <a class="el" href="namespaceVW.html#a5489a0fd240d8221e205b8773406f819">example_factory_t</a> example_factory, <a class="el" href="namespaceVW.html#a1dd7b95816f635bc6a5906d2b566c856">VW::multi_ex</a> &amp;examples)</td></tr>
-<tr class="separator:aad03876db3cd752b76ccb454c7ca9cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc65b6c58e739b8e4eb2a343266b2a24"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1parsers_1_1flatbuffer.html#adc65b6c58e739b8e4eb2a343266b2a24">read_span_flatbuffer</a> (<a class="el" href="classVW_1_1workspace.html">VW::workspace</a> *all, const uint8_t *span, size_t length, <a class="el" href="namespaceVW.html#a5489a0fd240d8221e205b8773406f819">example_factory_t</a> example_factory, <a class="el" href="namespaceVW.html#a1dd7b95816f635bc6a5906d2b566c856">VW::multi_ex</a> &amp;examples, <a class="el" href="namespaceVW.html#aff3702b28a27a39b71e86b253e59fc26">example_sink_f</a> example_sink=nullptr, <a class="el" href="classVW_1_1experimental_1_1api__status.html">VW::experimental::api_status</a> *status=nullptr)</td></tr>
+<tr class="separator:adc65b6c58e739b8e4eb2a343266b2a24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a3bc57c44199ba1f1e959afa9785dac65" name="a3bc57c44199ba1f1e959afa9785dac65"></a>
@@ -127,14 +127,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aad03876db3cd752b76ccb454c7ca9cba" name="aad03876db3cd752b76ccb454c7ca9cba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad03876db3cd752b76ccb454c7ca9cba">&#9670;&#160;</a></span>read_span_flatbuffer()</h2>
+<a id="adc65b6c58e739b8e4eb2a343266b2a24" name="adc65b6c58e739b8e4eb2a343266b2a24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc65b6c58e739b8e4eb2a343266b2a24">&#9670;&#160;</a></span>read_span_flatbuffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool VW::parsers::flatbuffer::read_span_flatbuffer </td>
+          <td class="memname">int VW::parsers::flatbuffer::read_span_flatbuffer </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classVW_1_1workspace.html">VW::workspace</a> *&#160;</td>
           <td class="paramname"><em>all</em>, </td>
@@ -161,7 +161,19 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="namespaceVW.html#a1dd7b95816f635bc6a5906d2b566c856">VW::multi_ex</a> &amp;&#160;</td>
-          <td class="paramname"><em>examples</em>&#160;</td>
+          <td class="paramname"><em>examples</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceVW.html#aff3702b28a27a39b71e86b253e59fc26">example_sink_f</a>&#160;</td>
+          <td class="paramname"><em>example_sink</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classVW_1_1experimental_1_1api__status.html">VW::experimental::api_status</a> *&#160;</td>
+          <td class="paramname"><em>status</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
