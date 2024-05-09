@@ -33,7 +33,7 @@
   <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695">
 
     <script src="../_static/documentation_options.js?v=f4332903"></script>
-    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
@@ -597,7 +597,7 @@
               <article class="bd-article" role="main">
                 
   <section id="contextual-bandit-content-personalization">
-<h1>Contextual Bandit Content Personalization<a class="headerlink" href="#contextual-bandit-content-personalization" title="Link to this heading">#</a></h1>
+<h1>Contextual Bandit Content Personalization<a class="headerlink" href="#contextual-bandit-content-personalization" title="Link to this heading">¶</a></h1>
 <p>In the Contextual Bandit(CB) introduction tutorial, we learnt about CB and different CB algorithms. In this tutorial we will simulate the scenario of personalizing news content on a site, using CB, to users. The goal is to maximize user engagement quantified by measuring click through rate (CTR).</p>
 <p>Let’s recall that in a CB setting, a data point has four components,</p>
 <ul class="simple">
@@ -628,7 +628,7 @@
 </div>
 </div>
 <section id="simulate-reward">
-<h2>Simulate reward<a class="headerlink" href="#simulate-reward" title="Link to this heading">#</a></h2>
+<h2>Simulate reward<a class="headerlink" href="#simulate-reward" title="Link to this heading">¶</a></h2>
 <p>In the real world, we will have to learn Tom and Anna’s preferences for articles as we observe their interactions. Since this is a simulation, we will have to define Tom and Anna’s preference profile. The reward that we provide to the learner will follow this preference profile. Our hope is to see if the learner can take better and better decisions as we see more samples which in turn means we are maximizing the reward.</p>
 <p>We will also modify the reward function in a few different ways and see if the CB learner picks up the changes. We will compare the CTR with and without learning.</p>
 <p>VW optimizes to minimize <strong>cost which is negative of reward</strong>. Therefore, we will always pass negative of reward as cost to VW.</p>
@@ -665,7 +665,7 @@
 </div>
 </section>
 <section id="understanding-vw-format">
-<h2>Understanding VW format<a class="headerlink" href="#understanding-vw-format" title="Link to this heading">#</a></h2>
+<h2>Understanding VW format<a class="headerlink" href="#understanding-vw-format" title="Link to this heading">¶</a></h2>
 <p>There are some things we need to do to get our input into a format VW understands. This function handles converting from our context as a dictionary, list of articles and the cost if there is one into the text format VW understands.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -709,7 +709,7 @@
 </div>
 </section>
 <section id="getting-a-decision">
-<h2>Getting a decision<a class="headerlink" href="#getting-a-decision" title="Link to this heading">#</a></h2>
+<h2>Getting a decision<a class="headerlink" href="#getting-a-decision" title="Link to this heading">¶</a></h2>
 <p>When we call VW we get a <em>pmf</em>, <a class="reference external" href="https://en.wikipedia.org/wiki/Probability_mass_function">probability mass function</a>, as the output. Since we are incorporating exploration into our strategy, VW will give us a list of probabilities over the set of actions. This means that the probability at a given index in the list corresponds to the likelihood of picking that specific action. In order to arrive at a decision/action, we will have to sample from this list.</p>
 <p>So, given a list <code class="docutils literal notranslate"><span class="pre">[0.7,</span> <span class="pre">0.1,</span> <span class="pre">0.1,</span> <span class="pre">0.1]</span></code>, we would choose the first item with a 70% chance. <code class="docutils literal notranslate"><span class="pre">sample_custom_pmf</span></code> takes such a list and gives us the index it chose and what the probability of choosing that index was.</p>
 <div class="cell docutils container">
@@ -748,7 +748,7 @@
 </div>
 </section>
 <section id="simulation-set-up">
-<h2>Simulation set up<a class="headerlink" href="#simulation-set-up" title="Link to this heading">#</a></h2>
+<h2>Simulation set up<a class="headerlink" href="#simulation-set-up" title="Link to this heading">¶</a></h2>
 <p>Now that we have done all of the setup work and know how to interface with VW, let’s simulate the world of Tom and Anna. The scenario is they go to a website and are shown an article. Remember that the reward function allows us to define the worlds reaction to what VW recommends.</p>
 <p>We will choose between Tom and Anna uniformly at random and also choose their time of visit uniformly at random. You can think of this as us tossing a coin to choose between Tom and Anna (Anna if heads and Tom if tails) and another coin toss for choosing time of day.</p>
 <div class="cell docutils container">
@@ -787,7 +787,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_2317/1199758655.py:22: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_2351/1199758655.py:22: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
   lambda r: cost_fun({&quot;user&quot;: r[0], &quot;time_of_day&quot;: r[1]}, r[2]), axis=1
 </pre></div>
 </div>
@@ -944,10 +944,10 @@
 </div>
 </section>
 <section id="scenario-1">
-<h2>Scenario 1<a class="headerlink" href="#scenario-1" title="Link to this heading">#</a></h2>
+<h2>Scenario 1<a class="headerlink" href="#scenario-1" title="Link to this heading">¶</a></h2>
 <p>We will use the first reward function <code class="docutils literal notranslate"><span class="pre">get_cost</span></code> and assume that Tom and Anna do not change their preferences over time and see what happens to user engagement as we learn. We will also see what happens when there is no learning. We will use the “no learning” case as our baseline to compare to.</p>
 <section id="with-learning">
-<h3>With learning<a class="headerlink" href="#with-learning" title="Link to this heading">#</a></h3>
+<h3>With learning<a class="headerlink" href="#with-learning" title="Link to this heading">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Instantiate learner in VW</span>
@@ -961,11 +961,11 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/7d3a75038ab28cb0e495b91ffacfe4100e854747a7c3310d7bbacf514109dea5.png" src="../_images/7d3a75038ab28cb0e495b91ffacfe4100e854747a7c3310d7bbacf514109dea5.png" />
+<img alt="../_images/76b953386e8a0f6326710d5ea458d8a33f6e72b242de96ee3fe76db7b7a40e8f.png" src="../_images/76b953386e8a0f6326710d5ea458d8a33f6e72b242de96ee3fe76db7b7a40e8f.png" />
 </div>
 </div>
 <section id="aside-interactions">
-<h4>Aside: interactions<a class="headerlink" href="#aside-interactions" title="Link to this heading">#</a></h4>
+<h4>Aside: interactions<a class="headerlink" href="#aside-interactions" title="Link to this heading">¶</a></h4>
 <p>You’ll notice in the arguments we supply to VW, <strong>we include <code class="docutils literal notranslate"><span class="pre">-q</span> <span class="pre">UA</span></code></strong>. This is telling VW to create additional features which are the features in the (U)ser namespace and (A)ction namespaces multiplied together. This allows us to learn the interaction between when certain actions are good in certain times of days and for particular users. If we didn’t do that, the learning wouldn’t really work. We can see that in action below.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -980,13 +980,13 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/f9904d1f3ce4c99add196c773df96585dd09a28872d4684ab353d1e7e398c292.png" src="../_images/f9904d1f3ce4c99add196c773df96585dd09a28872d4684ab353d1e7e398c292.png" />
+<img alt="../_images/366d81ad21dd31bd537310fce8933337dd86e631dd1d0f6060b1ae5c98df45f8.png" src="../_images/366d81ad21dd31bd537310fce8933337dd86e631dd1d0f6060b1ae5c98df45f8.png" />
 </div>
 </div>
 </section>
 </section>
 <section id="without-learning">
-<h3>Without learning<a class="headerlink" href="#without-learning" title="Link to this heading">#</a></h3>
+<h3>Without learning<a class="headerlink" href="#without-learning" title="Link to this heading">¶</a></h3>
 <p>Let’s do the same thing again (with <code class="docutils literal notranslate"><span class="pre">-q</span></code>) but with do_learn set to False to show the effect if we don’t learn from the rewards. The ctr never improves are we just hover around 0.2.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1003,16 +1003,16 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/d8bb75bc0299ab7c3620f80a512be49ecc2bf0baf1e133a12002327b78ee0af6.png" src="../_images/d8bb75bc0299ab7c3620f80a512be49ecc2bf0baf1e133a12002327b78ee0af6.png" />
+<img alt="../_images/a30620c5763f772f06935f881bf9bb4ae75017ebcd1bb9fbb4416ad95419a1e7.png" src="../_images/a30620c5763f772f06935f881bf9bb4ae75017ebcd1bb9fbb4416ad95419a1e7.png" />
 </div>
 </div>
 </section>
 </section>
 <section id="scenario-2">
-<h2>Scenario 2<a class="headerlink" href="#scenario-2" title="Link to this heading">#</a></h2>
+<h2>Scenario 2<a class="headerlink" href="#scenario-2" title="Link to this heading">¶</a></h2>
 <p>In the real world people’s preferences change over time. So now in the simulation we are going to incorporate two different cost functions, and swap over to the second one halfway through. Below is a a table of the new reward function we are going to use, <code class="docutils literal notranslate"><span class="pre">get_cost_1</span></code>:</p>
 <section id="tom">
-<h3>Tom<a class="headerlink" href="#tom" title="Link to this heading">#</a></h3>
+<h3>Tom<a class="headerlink" href="#tom" title="Link to this heading">¶</a></h3>
 <table class="table">
 <thead>
 <tr class="row-odd"><th class="head text-left"><p></p></th>
@@ -1033,7 +1033,7 @@
 </table>
 </section>
 <section id="anna">
-<h3>Anna<a class="headerlink" href="#anna" title="Link to this heading">#</a></h3>
+<h3>Anna<a class="headerlink" href="#anna" title="Link to this heading">¶</a></h3>
 <table class="table">
 <thead>
 <tr class="row-odd"><th class="head text-left"><p></p></th>
@@ -1077,7 +1077,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_2317/1199758655.py:22: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_2351/1199758655.py:22: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
   lambda r: cost_fun({&quot;user&quot;: r[0], &quot;time_of_day&quot;: r[1]}, r[2]), axis=1
 </pre></div>
 </div>
@@ -1260,7 +1260,7 @@
 </div>
 </section>
 <section id="id1">
-<h3>With learning<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<h3>With learning<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h3>
 <p>Let us now switch to the second reward function after a few samples (running the first reward function). Recall that this reward function changes the preferences of the web users but it is still working with the same action space as before. We should see the learner pick up these changes and optimize towards the new preferences.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1282,13 +1282,13 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/d8457c11e42e5a4d6364ee9293b48f6be245c43ac3fb7b63fa674746b278836e.png" src="../_images/d8457c11e42e5a4d6364ee9293b48f6be245c43ac3fb7b63fa674746b278836e.png" />
+<img alt="../_images/7f5e820738f4b29a573cec1da8355337320bc15f7b9859c5c77b05e3096fed4f.png" src="../_images/7f5e820738f4b29a573cec1da8355337320bc15f7b9859c5c77b05e3096fed4f.png" />
 </div>
 </div>
 <p><strong>Note:</strong> The initial spike in CTR depends on the rewards received for the first few examples. When you run on your own, you may see something different initially because our simulator is designed to have randomness.</p>
 </section>
 <section id="id2">
-<h3>Without learning<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<h3>Without learning<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Do not learn</span>
@@ -1315,16 +1315,16 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/52038acd91b555a40c5e8ed70351e68e468d8b4ea05276d2bea9fc9153fd68fa.png" src="../_images/52038acd91b555a40c5e8ed70351e68e468d8b4ea05276d2bea9fc9153fd68fa.png" />
+<img alt="../_images/00239f617c569706affc1dd8ba79c43afe57a123d456b10f7b16670841fe1f74.png" src="../_images/00239f617c569706affc1dd8ba79c43afe57a123d456b10f7b16670841fe1f74.png" />
 </div>
 </div>
 </section>
 </section>
 <section id="scenario-3">
-<h2>Scenario 3<a class="headerlink" href="#scenario-3" title="Link to this heading">#</a></h2>
+<h2>Scenario 3<a class="headerlink" href="#scenario-3" title="Link to this heading">¶</a></h2>
 <p>In this scenario we are going to start rewarding actions that have never seen a reward previously when we change the cost function.</p>
 <section id="id3">
-<h3>Tom<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<h3>Tom<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h3>
 <table class="table">
 <thead>
 <tr class="row-odd"><th class="head text-left"><p></p></th>
@@ -1345,7 +1345,7 @@
 </table>
 </section>
 <section id="id4">
-<h3>Anna<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<h3>Anna<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
 <table class="table">
 <thead>
 <tr class="row-odd"><th class="head text-left"><p></p></th>
@@ -1387,7 +1387,7 @@
 </div>
 </section>
 <section id="id5">
-<h3>With learning<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<h3>With learning<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
 <p>Let us now switch to the third reward function after a few samples (running the first reward function). Recall that this reward function changes the preferences of the users and is working with a <strong>different</strong> action space than before. We should see the learner pick up these changes and optimize towards the new preferences</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1409,12 +1409,12 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/5f9f5845d33c36c86fd31495d0929fd7a100746bffb45d7e679b5477c77c6d0c.png" src="../_images/5f9f5845d33c36c86fd31495d0929fd7a100746bffb45d7e679b5477c77c6d0c.png" />
+<img alt="../_images/379060c738b22da47d940c3b3956ca25af0a3eae96f0d68077464b93363bb579.png" src="../_images/379060c738b22da47d940c3b3956ca25af0a3eae96f0d68077464b93363bb579.png" />
 </div>
 </div>
 </section>
 <section id="id6">
-<h3>Without Learning<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<h3>Without Learning<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Do not learn</span>
@@ -1442,13 +1442,13 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/fa523dcfc93eefe3e0ee25a10998c72d17585fdab9743e747f1365823d52f594.png" src="../_images/fa523dcfc93eefe3e0ee25a10998c72d17585fdab9743e747f1365823d52f594.png" />
+<img alt="../_images/9b1d26c8ffd688c3d794e7a85dd14bb0ecd0dc265a9d3d9373b017c770fa83ea.png" src="../_images/9b1d26c8ffd688c3d794e7a85dd14bb0ecd0dc265a9d3d9373b017c770fa83ea.png" />
 </div>
 </div>
 </section>
 </section>
 <section id="summary">
-<h2>Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h2>
+<h2>Summary<a class="headerlink" href="#summary" title="Link to this heading">¶</a></h2>
 <p>This tutorial aimed at showcasing a real world scenario where contextual bandit algorithms can be used. We were able to take a context and set of actions and learn what actions worked best for a given context. We saw that the learner was able to respond rapidly to changes in the world.  We showed that allowing the learner to interact with the world resulted in higher rewards than the no learning baseline.</p>
 <p>This tutorial worked with simplistic features. VW supports high dimensional sparse features, different exploration algorithms and policy evaluation approaches.</p>
 </section>
@@ -1520,7 +1520,7 @@
   
   <div class="footer-item">
     <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 7.2.6.<br>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 7.3.7.<br>
 </p>
   </div>
   
