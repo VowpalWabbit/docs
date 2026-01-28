@@ -23,9 +23,9 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
     <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=a88e75c7" />
     <link rel="stylesheet" type="text/css" href="../_static/nav.css?v=5c63e7ba" />
 
@@ -33,7 +33,7 @@
   <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695">
 
     <script src="../_static/documentation_options.js?v=f4332903"></script>
-    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
@@ -601,11 +601,11 @@ The context is therefore (room, time_of_day).</p>
 <p>Let’s first start with importing the necessary packages:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">vowpalwabbit</span>
-<span class="kn">import</span> <span class="nn">random</span>
-<span class="kn">import</span> <span class="nn">math</span>
-<span class="kn">import</span> <span class="nn">json</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">vowpalwabbit</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
 </pre></div>
 </div>
 </div>
@@ -627,7 +627,7 @@ The context is therefore (room, time_of_day).</p>
 <p>The reward function below specifies that we want the living room to be cold in the morning but warm in the afternoon. In reverse, we prefer the bedroom to be warm in the morning and cold in the afternoon. It looks dense but we are just simulating our hypothetical world in the format of the feedback the learner understands: cost. If the learner recommends a temperature that aligns with the reward function, we give a positive reward. Max reward is -1.0, min reward is 0 since VW learns in terms of cost, so we return a negative reward. In our simulated world this is the difference between the temperature recommended and the temperature chosen. If the difference is smaller than 5 degrees then we give a reward to the thermostat. This is a steep/harsh cost function.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_cost</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">temperature</span><span class="p">,</span> <span class="n">min_value</span><span class="p">,</span> <span class="n">max_value</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">get_cost</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">temperature</span><span class="p">,</span> <span class="n">min_value</span><span class="p">,</span> <span class="n">max_value</span><span class="p">):</span>
     <span class="nb">range</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">max_value</span> <span class="o">-</span> <span class="n">min_value</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;room&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Living Room&quot;</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span><span class="p">:</span>
@@ -674,21 +674,18 @@ The context is therefore (room, time_of_day).</p>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># This function modifies (context, temperature (i.e. action), cost, probability) to VW friendly json format</span>
-<span class="k">def</span> <span class="nf">to_vw_example_format</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">cats_label</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-    <span class="n">example_dict</span> <span class="o">=</span> <span class="p">{}</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># This function modifies (context, temperature (i.e. action), cost, probability) to VW friendly format</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">to_vw_example_format</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">cats_label</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="c1"># Build context features</span>
+    <span class="n">context_str</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">k</span><span class="si">}</span><span class="s2">=</span><span class="si">{</span><span class="n">v</span><span class="si">}</span><span class="s2">&quot;</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">context</span><span class="o">.</span><span class="n">items</span><span class="p">()])</span>
+    
     <span class="k">if</span> <span class="n">cats_label</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
         <span class="n">chosen_temp</span><span class="p">,</span> <span class="n">cost</span><span class="p">,</span> <span class="n">pdf_value</span> <span class="o">=</span> <span class="n">cats_label</span>
-        <span class="n">example_dict</span><span class="p">[</span><span class="s2">&quot;_label_ca&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
-            <span class="s2">&quot;action&quot;</span><span class="p">:</span> <span class="n">chosen_temp</span><span class="p">,</span>
-            <span class="s2">&quot;cost&quot;</span><span class="p">:</span> <span class="n">cost</span><span class="p">,</span>
-            <span class="s2">&quot;pdf_value&quot;</span><span class="p">:</span> <span class="n">pdf_value</span><span class="p">,</span>
-        <span class="p">}</span>
-    <span class="n">example_dict</span><span class="p">[</span><span class="s2">&quot;c&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
-        <span class="s2">&quot;room=</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">context</span><span class="p">[</span><span class="s2">&quot;room&quot;</span><span class="p">]):</span> <span class="mi">1</span><span class="p">,</span>
-        <span class="s2">&quot;time_of_day=</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]):</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">example_dict</span><span class="p">)</span>
+        <span class="c1"># Format: ca action:cost:pdf_value | features</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;ca </span><span class="si">{</span><span class="n">chosen_temp</span><span class="si">}</span><span class="s2">:</span><span class="si">{</span><span class="n">cost</span><span class="si">}</span><span class="s2">:</span><span class="si">{</span><span class="n">pdf_value</span><span class="si">}</span><span class="s2"> | </span><span class="si">{</span><span class="n">context_str</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="c1"># For prediction, just return features</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;| </span><span class="si">{</span><span class="n">context_str</span><span class="si">}</span><span class="s2">&quot;</span>
 </pre></div>
 </div>
 </div>
@@ -703,7 +700,7 @@ We pass this example to VW and get the chosen action and the probability of chos
 Finally we return the chosen temperature and the probability of choosing it (we are going to need the probability when we learn form this example)</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">predict_temperature</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">context</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">predict_temperature</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">context</span><span class="p">):</span>
     <span class="n">vw_text_example</span> <span class="o">=</span> <span class="n">to_vw_example_format</span><span class="p">(</span><span class="n">context</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">vw</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">vw_text_example</span><span class="p">)</span>
 </pre></div>
@@ -721,11 +718,11 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 <span class="n">times_of_day</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;morning&quot;</span><span class="p">,</span> <span class="s2">&quot;afternoon&quot;</span><span class="p">]</span>
 
 
-<span class="k">def</span> <span class="nf">choose_room</span><span class="p">(</span><span class="n">rooms</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">choose_room</span><span class="p">(</span><span class="n">rooms</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">rooms</span><span class="p">)</span>
 
 
-<span class="k">def</span> <span class="nf">choose_time_of_day</span><span class="p">(</span><span class="n">times_of_day</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">choose_time_of_day</span><span class="p">(</span><span class="n">times_of_day</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">times_of_day</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -743,7 +740,7 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 <p>The above steps are repeatedly executed during our simulations, so we define the process in the run_simulation function. The cost function must be supplied as this is essentially us simulating how the world works.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">run_simulation</span><span class="p">(</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">run_simulation</span><span class="p">(</span>
     <span class="n">vw</span><span class="p">,</span>
     <span class="n">num_iterations</span><span class="p">,</span>
     <span class="n">rooms</span><span class="p">,</span>
@@ -794,7 +791,7 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 <p>We want to be able to visualize what is occurring, so we are going to plot the reward rate over each iteration of the simulation. If VW is showing temperatures the that are close to what the simulated world wants, the reward will be higher. Below is a little utility function to make showing the plot easier.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">plot_reward_rate</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">,</span> <span class="n">reward_rate</span><span class="p">,</span> <span class="n">title</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">plot_reward_rate</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">,</span> <span class="n">reward_rate</span><span class="p">,</span> <span class="n">title</span><span class="p">):</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_iterations</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">reward_rate</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;num_iterations&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
@@ -830,7 +827,7 @@ Finally we return the chosen temperature and the probability of choosing it (we 
     <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">num_actions</span><span class="p">)</span>
     <span class="o">+</span> <span class="s2">&quot;  --bandwidth &quot;</span>
     <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">bandwidth</span><span class="p">)</span>
-    <span class="o">+</span> <span class="s2">&quot; --min_value 0 --max_value 32 --json --chain_hash --coin --epsilon 0.2 -q :: --quiet&quot;</span>
+    <span class="o">+</span> <span class="s2">&quot; --min_value 0 --max_value 32 --chain_hash --coin --epsilon 0.2 -q :: --quiet&quot;</span>
 <span class="p">)</span>
 <span class="n">ctr</span><span class="p">,</span> <span class="n">hits</span> <span class="o">=</span> <span class="n">run_simulation</span><span class="p">(</span>
     <span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">rooms</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">get_cost</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="n">do_learn</span><span class="o">=</span><span class="kc">True</span>
@@ -843,7 +840,7 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/177044dcfc19d63cdf0cb8ab779dadb042555ecc41231863c781aabab3b24432.png" src="../_images/177044dcfc19d63cdf0cb8ab779dadb042555ecc41231863c781aabab3b24432.png" />
+<img alt="../_images/16677aa18ec9b7073e85208ac8f5c21e7512053393963bc0f7f6029aef65e388.png" src="../_images/16677aa18ec9b7073e85208ac8f5c21e7512053393963bc0f7f6029aef65e388.png" />
 </div>
 </div>
 </section>
@@ -863,7 +860,7 @@ Finally we return the chosen temperature and the probability of choosing it (we 
     <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">num_actions</span><span class="p">)</span>
     <span class="o">+</span> <span class="s2">&quot;  --bandwidth &quot;</span>
     <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">bandwidth</span><span class="p">)</span>
-    <span class="o">+</span> <span class="s2">&quot; --min_value 0 --max_value 32 --json --chain_hash --coin --epsilon 0.2 -q :: --quiet&quot;</span>
+    <span class="o">+</span> <span class="s2">&quot; --min_value 0 --max_value 32 --chain_hash --coin --epsilon 0.2 -q :: --quiet&quot;</span>
 <span class="p">)</span>
 <span class="n">ctr</span><span class="p">,</span> <span class="n">hits</span> <span class="o">=</span> <span class="n">run_simulation</span><span class="p">(</span>
     <span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">rooms</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">get_cost</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="n">do_learn</span><span class="o">=</span><span class="kc">False</span>
@@ -876,7 +873,7 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/7c0e68fa077cb4958f88fca9634c53d6823aa6d2a8402564b92a5605f9a1935c.png" src="../_images/7c0e68fa077cb4958f88fca9634c53d6823aa6d2a8402564b92a5605f9a1935c.png" />
+<img alt="../_images/9d91e41cb2850dd7e0d5ba0ec175da76c26311bc9e23c3036905b284929d928b.png" src="../_images/9d91e41cb2850dd7e0d5ba0ec175da76c26311bc9e23c3036905b284929d928b.png" />
 </div>
 </div>
 </section>
@@ -886,7 +883,7 @@ Finally we return the chosen temperature and the probability of choosing it (we 
 <p>Next let’s do a parameter sweep for different values of <code class="docutils literal notranslate"><span class="pre">num_actions</span></code> and <code class="docutils literal notranslate"><span class="pre">bandwidth</span></code>. We will use the below function to help us plot the reward rates for different combinations of <code class="docutils literal notranslate"><span class="pre">num_actions</span></code> and <code class="docutils literal notranslate"><span class="pre">bandwidths</span></code></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">plot_reward_sweep</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">bandwidths</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">plot_reward_sweep</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">bandwidths</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
     <span class="n">n_actions</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">actions</span><span class="p">)</span>
     <span class="n">n_bandwidths</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">bandwidths</span><span class="p">)</span>
@@ -943,166 +940,13 @@ Finally we return the chosen temperature and the probability of choosing it (we 
             <span class="k">continue</span>
         <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Running simulation for: --cats </span><span class="si">{</span><span class="n">actions</span><span class="si">}</span><span class="s2"> and --bandwidth </span><span class="si">{</span><span class="n">bd</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
         <span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span>
-            <span class="sa">f</span><span class="s2">&quot;--cats </span><span class="si">{</span><span class="n">actions</span><span class="si">}</span><span class="s2">  --bandwidth </span><span class="si">{</span><span class="n">bd</span><span class="si">}</span><span class="s2"> --min_value 0 --max_value 32 --json --chain_hash --coin --epsilon 0.2 -q :: --quiet&quot;</span>
+            <span class="sa">f</span><span class="s2">&quot;--cats </span><span class="si">{</span><span class="n">actions</span><span class="si">}</span><span class="s2">  --bandwidth </span><span class="si">{</span><span class="n">bd</span><span class="si">}</span><span class="s2"> --min_value 0 --max_value 32 --chain_hash --coin --epsilon 0.2 -q :: --quiet&quot;</span>
         <span class="p">)</span>
         <span class="n">rr</span><span class="p">,</span> <span class="n">hits</span> <span class="o">=</span> <span class="n">run_simulation</span><span class="p">(</span>
             <span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">rooms</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">get_cost</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="n">do_learn</span><span class="o">=</span><span class="kc">True</span>
         <span class="p">)</span>
         <span class="n">vw</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>
 
-        <span class="n">data</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">actions</span><span class="p">)][</span><span class="nb">str</span><span class="p">(</span><span class="n">bd</span><span class="p">)]</span> <span class="o">=</span> <span class="p">(</span><span class="n">rr</span><span class="p">,</span> <span class="n">hits</span><span class="p">)</span>
-
-<span class="n">plot_reward_sweep</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">,</span> <span class="n">num_actions</span><span class="p">,</span> <span class="n">bandwidths</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 8 and --bandwidth 0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 8 and --bandwidth 1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 8 and --bandwidth 2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 8 and --bandwidth 3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 32 and --bandwidth 0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 32 and --bandwidth 1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 32 and --bandwidth 2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 32 and --bandwidth 3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 32 and --bandwidth 25
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 64 and --bandwidth 0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 64 and --bandwidth 1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 64 and --bandwidth 2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 64 and --bandwidth 3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 64 and --bandwidth 25
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 128 and --bandwidth 0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 128 and --bandwidth 1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 128 and --bandwidth 2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 128 and --bandwidth 3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 128 and --bandwidth 25
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 256 and --bandwidth 0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 256 and --bandwidth 1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 256 and --bandwidth 2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 256 and --bandwidth 3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 256 and --bandwidth 25
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 512 and --bandwidth 0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 512 and --bandwidth 1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 512 and --bandwidth 2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 512 and --bandwidth 3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 512 and --bandwidth 25
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 1024 and --bandwidth 0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 1024 and --bandwidth 1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 1024 and --bandwidth 2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 1024 and --bandwidth 3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 1024 and --bandwidth 25
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 25
-</pre></div>
-</div>
-<img alt="../_images/5da2bc630b7310b8b468ff080aa1ed5082599ceb238a77a2e790b0eb94937cde.png" src="../_images/5da2bc630b7310b8b468ff080aa1ed5082599ceb238a77a2e790b0eb94937cde.png" />
-</div>
-</div>
-</section>
-<section id="id2">
-<h3>Without Learning<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h3>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># do parameter sweeping</span>
-<span class="n">data</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="n">num_actions</span> <span class="o">=</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="mi">128</span><span class="p">,</span> <span class="mi">256</span><span class="p">,</span> <span class="mi">512</span><span class="p">,</span> <span class="mi">1024</span><span class="p">,</span> <span class="mi">2048</span><span class="p">]</span>
-<span class="n">bandwidths</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">25</span><span class="p">]</span>
-
-<span class="n">num_iterations</span> <span class="o">=</span> <span class="mi">5000</span>
-
-<span class="k">for</span> <span class="n">actions</span> <span class="ow">in</span> <span class="n">num_actions</span><span class="p">:</span>
-    <span class="k">for</span> <span class="n">bd</span> <span class="ow">in</span> <span class="n">bandwidths</span><span class="p">:</span>
-        <span class="k">if</span> <span class="nb">str</span><span class="p">(</span><span class="n">actions</span><span class="p">)</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
-            <span class="n">data</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">actions</span><span class="p">)]</span> <span class="o">=</span> <span class="p">{}</span>
-        <span class="k">if</span> <span class="n">bd</span> <span class="o">&gt;=</span> <span class="n">actions</span><span class="p">:</span>
-            <span class="k">continue</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Running simulation for: --cats </span><span class="si">{</span><span class="n">actions</span><span class="si">}</span><span class="s2"> and --bandwidth </span><span class="si">{</span><span class="n">bd</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-        <span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span>
-            <span class="sa">f</span><span class="s2">&quot;--cats </span><span class="si">{</span><span class="n">actions</span><span class="si">}</span><span class="s2"> --bandwidth </span><span class="si">{</span><span class="n">bd</span><span class="si">}</span><span class="s2"> --min_value 0 --max_value 32 --json --chain_hash --coin --epsilon 0.2 -q :: --quiet&quot;</span>
-        <span class="p">)</span>
-        <span class="n">rr</span><span class="p">,</span> <span class="n">hits</span> <span class="o">=</span> <span class="n">run_simulation</span><span class="p">(</span>
-            <span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">rooms</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">get_cost</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="n">do_learn</span><span class="o">=</span><span class="kc">False</span>
-        <span class="p">)</span>
-        <span class="n">vw</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>
         <span class="n">data</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">actions</span><span class="p">)][</span><span class="nb">str</span><span class="p">(</span><span class="n">bd</span><span class="p">)]</span> <span class="o">=</span> <span class="p">(</span><span class="n">rr</span><span class="p">,</span> <span class="n">hits</span><span class="p">)</span>
 
 <span class="n">plot_reward_sweep</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">,</span> <span class="n">num_actions</span><span class="p">,</span> <span class="n">bandwidths</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
@@ -1189,7 +1033,110 @@ Running simulation for: --cats 2048 and --bandwidth 3
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 25
 </pre></div>
 </div>
-<img alt="../_images/908f07b28f4d4b2ce7776fd78b0f8f99032d6d0bc70835f485b43350f7c023d7.png" src="../_images/908f07b28f4d4b2ce7776fd78b0f8f99032d6d0bc70835f485b43350f7c023d7.png" />
+<img alt="../_images/98e1bcae42ddb502971f6fe120f50a3b901916a1df743d22c55b633136b8e53f.png" src="../_images/98e1bcae42ddb502971f6fe120f50a3b901916a1df743d22c55b633136b8e53f.png" />
+</div>
+</div>
+</section>
+<section id="id2">
+<h3>Without Learning<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># do parameter sweeping</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">num_actions</span> <span class="o">=</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="mi">128</span><span class="p">,</span> <span class="mi">256</span><span class="p">,</span> <span class="mi">512</span><span class="p">,</span> <span class="mi">1024</span><span class="p">,</span> <span class="mi">2048</span><span class="p">]</span>
+<span class="n">bandwidths</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">25</span><span class="p">]</span>
+
+<span class="n">num_iterations</span> <span class="o">=</span> <span class="mi">5000</span>
+
+<span class="k">for</span> <span class="n">actions</span> <span class="ow">in</span> <span class="n">num_actions</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">bd</span> <span class="ow">in</span> <span class="n">bandwidths</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">str</span><span class="p">(</span><span class="n">actions</span><span class="p">)</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+            <span class="n">data</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">actions</span><span class="p">)]</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="k">if</span> <span class="n">bd</span> <span class="o">&gt;=</span> <span class="n">actions</span><span class="p">:</span>
+            <span class="k">continue</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Running simulation for: --cats </span><span class="si">{</span><span class="n">actions</span><span class="si">}</span><span class="s2"> and --bandwidth </span><span class="si">{</span><span class="n">bd</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span>
+            <span class="sa">f</span><span class="s2">&quot;--cats </span><span class="si">{</span><span class="n">actions</span><span class="si">}</span><span class="s2"> --bandwidth </span><span class="si">{</span><span class="n">bd</span><span class="si">}</span><span class="s2"> --min_value 0 --max_value 32 --chain_hash --coin --epsilon 0.2 -q :: --quiet&quot;</span>
+        <span class="p">)</span>
+        <span class="n">rr</span><span class="p">,</span> <span class="n">hits</span> <span class="o">=</span> <span class="n">run_simulation</span><span class="p">(</span>
+            <span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">rooms</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">get_cost</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="n">do_learn</span><span class="o">=</span><span class="kc">False</span>
+        <span class="p">)</span>
+        <span class="n">vw</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>
+        <span class="n">data</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">actions</span><span class="p">)][</span><span class="nb">str</span><span class="p">(</span><span class="n">bd</span><span class="p">)]</span> <span class="o">=</span> <span class="p">(</span><span class="n">rr</span><span class="p">,</span> <span class="n">hits</span><span class="p">)</span>
+
+<span class="n">plot_reward_sweep</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">,</span> <span class="n">num_actions</span><span class="p">,</span> <span class="n">bandwidths</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 8 and --bandwidth 0
+Running simulation for: --cats 8 and --bandwidth 1
+Running simulation for: --cats 8 and --bandwidth 2
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 8 and --bandwidth 3
+Running simulation for: --cats 32 and --bandwidth 0
+Running simulation for: --cats 32 and --bandwidth 1
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 32 and --bandwidth 2
+Running simulation for: --cats 32 and --bandwidth 3
+Running simulation for: --cats 32 and --bandwidth 25
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 64 and --bandwidth 0
+Running simulation for: --cats 64 and --bandwidth 1
+Running simulation for: --cats 64 and --bandwidth 2
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 64 and --bandwidth 3
+Running simulation for: --cats 64 and --bandwidth 25
+Running simulation for: --cats 128 and --bandwidth 0
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 128 and --bandwidth 1
+Running simulation for: --cats 128 and --bandwidth 2
+Running simulation for: --cats 128 and --bandwidth 3
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 128 and --bandwidth 25
+Running simulation for: --cats 256 and --bandwidth 0
+Running simulation for: --cats 256 and --bandwidth 1
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 256 and --bandwidth 2
+Running simulation for: --cats 256 and --bandwidth 3
+Running simulation for: --cats 256 and --bandwidth 25
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 512 and --bandwidth 0
+Running simulation for: --cats 512 and --bandwidth 1
+Running simulation for: --cats 512 and --bandwidth 2
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 512 and --bandwidth 3
+Running simulation for: --cats 512 and --bandwidth 25
+Running simulation for: --cats 1024 and --bandwidth 0
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 1024 and --bandwidth 1
+Running simulation for: --cats 1024 and --bandwidth 2
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 1024 and --bandwidth 3
+Running simulation for: --cats 1024 and --bandwidth 25
+Running simulation for: --cats 2048 and --bandwidth 0
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 1
+Running simulation for: --cats 2048 and --bandwidth 2
+Running simulation for: --cats 2048 and --bandwidth 3
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 25
+</pre></div>
+</div>
+<img alt="../_images/04e67c6ffbd7312ba9a52e29f9813d7ed661f756769c4fe46fedf614186c05af.png" src="../_images/04e67c6ffbd7312ba9a52e29f9813d7ed661f756769c4fe46fedf614186c05af.png" />
 </div>
 </div>
 </section>
@@ -1241,7 +1188,7 @@ Running simulation for: --cats 2048 and --bandwidth 3
 <p>Below we define the new cost function</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_cost_1</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">temperature</span><span class="p">,</span> <span class="n">min_value</span><span class="p">,</span> <span class="n">max_value</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">get_cost_1</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">temperature</span><span class="p">,</span> <span class="n">min_value</span><span class="p">,</span> <span class="n">max_value</span><span class="p">):</span>
     <span class="nb">range</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">max_value</span> <span class="o">-</span> <span class="n">min_value</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;room&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Living Room&quot;</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span><span class="p">:</span>
@@ -1289,7 +1236,7 @@ Running simulation for: --cats 2048 and --bandwidth 3
 <p>To make it easy to show the effect of the cost function changing we are going to modify the run_simulation function. It is a little less readable now, but it supports accepting a list of cost functions and it will operate over each cost function in turn.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">run_simulation_multiple_cost_functions</span><span class="p">(</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">run_simulation_multiple_cost_functions</span><span class="p">(</span>
     <span class="n">vw</span><span class="p">,</span>
     <span class="n">num_iterations</span><span class="p">,</span>
     <span class="n">rooms</span><span class="p">,</span>
@@ -1358,7 +1305,7 @@ Running simulation for: --cats 2048 and --bandwidth 3
 
 <span class="c1"># Instantiate VW learner</span>
 <span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span>
-    <span class="sa">f</span><span class="s2">&quot;--cats </span><span class="si">{</span><span class="n">num_actions</span><span class="si">}</span><span class="s2">  --bandwidth </span><span class="si">{</span><span class="n">bandwidth</span><span class="si">}</span><span class="s2"> --min_value 0 --max_value 32 --json --chain_hash --coin --epsilon 0.2 -q :: --quiet&quot;</span>
+    <span class="sa">f</span><span class="s2">&quot;--cats </span><span class="si">{</span><span class="n">num_actions</span><span class="si">}</span><span class="s2">  --bandwidth </span><span class="si">{</span><span class="n">bandwidth</span><span class="si">}</span><span class="s2"> --min_value 0 --max_value 32 --chain_hash --coin --epsilon 0.2 -q :: --quiet&quot;</span>
 <span class="p">)</span>
 
 <span class="n">num_iterations_per_cost_func</span> <span class="o">=</span> <span class="mi">5000</span>
@@ -1383,7 +1330,7 @@ Running simulation for: --cats 2048 and --bandwidth 3
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/d2b0fbe482c73654fc2af55389daca23a0614816215cea1994e6ff55417e8794.png" src="../_images/d2b0fbe482c73654fc2af55389daca23a0614816215cea1994e6ff55417e8794.png" />
+<img alt="../_images/e3929e6b81067859a6c51f40624cdb3cf3b5b6136a0c04e100f5cfc7e9eb8131.png" src="../_images/e3929e6b81067859a6c51f40624cdb3cf3b5b6136a0c04e100f5cfc7e9eb8131.png" />
 </div>
 </div>
 </section>
@@ -1399,7 +1346,7 @@ Running simulation for: --cats 2048 and --bandwidth 3
 
 <span class="c1"># Instantiate VW learner</span>
 <span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span>
-    <span class="sa">f</span><span class="s2">&quot;--cats </span><span class="si">{</span><span class="n">num_actions</span><span class="si">}</span><span class="s2"> --bandwidth </span><span class="si">{</span><span class="n">bandwidth</span><span class="si">}</span><span class="s2"> --min_value 0 --max_value 32 --json --chain_hash --coin --epsilon 0.2 -q :: --quiet&quot;</span>
+    <span class="sa">f</span><span class="s2">&quot;--cats </span><span class="si">{</span><span class="n">num_actions</span><span class="si">}</span><span class="s2"> --bandwidth </span><span class="si">{</span><span class="n">bandwidth</span><span class="si">}</span><span class="s2"> --min_value 0 --max_value 32 --chain_hash --coin --epsilon 0.2 -q :: --quiet&quot;</span>
 <span class="p">)</span>
 
 <span class="n">num_iterations_per_cost_func</span> <span class="o">=</span> <span class="mi">5000</span>
@@ -1424,7 +1371,7 @@ Running simulation for: --cats 2048 and --bandwidth 3
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/c15d10ee41252d845a18c951cea708d969852c27ecff0cfaf8c019a61a3c3877.png" src="../_images/c15d10ee41252d845a18c951cea708d969852c27ecff0cfaf8c019a61a3c3877.png" />
+<img alt="../_images/7a3842beeaf4226de7a36c0ebd196cdbb07e95eda348b25def574c6eb41df301.png" src="../_images/7a3842beeaf4226de7a36c0ebd196cdbb07e95eda348b25def574c6eb41df301.png" />
 </div>
 </div>
 </section>
@@ -1437,7 +1384,7 @@ Running simulation for: --cats 2048 and --bandwidth 3
 <p>A slightly better cost function for our simulated world could be the difference between the temperature recommended and the temperature chosen. The smaller the difference the better the thermostat is doing. We are going to model that by taking the absolute cost: <code class="docutils literal notranslate"><span class="pre">1.0</span> <span class="pre">-</span> <span class="pre">|selected_temperature</span> <span class="pre">-</span> <span class="pre">predicted_temerature|</span> <span class="pre">/</span> <span class="pre">range</span></code> and the transforming that cost into a reward by multiplying it with <code class="docutils literal notranslate"><span class="pre">-1</span></code></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_smooth_cost</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">temperature</span><span class="p">,</span> <span class="n">min_value</span><span class="p">,</span> <span class="n">max_value</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">get_smooth_cost</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">temperature</span><span class="p">,</span> <span class="n">min_value</span><span class="p">,</span> <span class="n">max_value</span><span class="p">):</span>
     <span class="nb">range</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">max_value</span> <span class="o">-</span> <span class="n">min_value</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;room&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Living Room&quot;</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span><span class="p">:</span>
@@ -1492,7 +1439,7 @@ Running simulation for: --cats 2048 and --bandwidth 3
             <span class="k">continue</span>
         <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Running simulation for: --cats </span><span class="si">{</span><span class="n">actions</span><span class="si">}</span><span class="s2"> and --bandwidth </span><span class="si">{</span><span class="n">bd</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
         <span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span>
-            <span class="sa">f</span><span class="s2">&quot;--cats </span><span class="si">{</span><span class="n">actions</span><span class="si">}</span><span class="s2">  --bandwidth </span><span class="si">{</span><span class="n">bd</span><span class="si">}</span><span class="s2"> --min_value 0 --max_value 32 --json --chain_hash --coin --epsilon 0.2 -q :: --quiet&quot;</span>
+            <span class="sa">f</span><span class="s2">&quot;--cats </span><span class="si">{</span><span class="n">actions</span><span class="si">}</span><span class="s2">  --bandwidth </span><span class="si">{</span><span class="n">bd</span><span class="si">}</span><span class="s2"> --min_value 0 --max_value 32 --chain_hash --coin --epsilon 0.2 -q :: --quiet&quot;</span>
         <span class="p">)</span>
         <span class="n">rr</span><span class="p">,</span> <span class="n">hits</span> <span class="o">=</span> <span class="n">run_simulation</span><span class="p">(</span>
             <span class="n">vw</span><span class="p">,</span>
@@ -1513,111 +1460,77 @@ Running simulation for: --cats 2048 and --bandwidth 3
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 8 and --bandwidth 0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 8 and --bandwidth 1
+Running simulation for: --cats 8 and --bandwidth 1
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 8 and --bandwidth 2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 8 and --bandwidth 3
+Running simulation for: --cats 8 and --bandwidth 3
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 32 and --bandwidth 0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 32 and --bandwidth 1
+Running simulation for: --cats 32 and --bandwidth 1
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 32 and --bandwidth 2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 32 and --bandwidth 3
+Running simulation for: --cats 32 and --bandwidth 3
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 32 and --bandwidth 25
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 64 and --bandwidth 0
+Running simulation for: --cats 64 and --bandwidth 0
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 64 and --bandwidth 1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 64 and --bandwidth 2
+Running simulation for: --cats 64 and --bandwidth 2
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 64 and --bandwidth 3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 64 and --bandwidth 25
+Running simulation for: --cats 64 and --bandwidth 25
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 128 and --bandwidth 0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 128 and --bandwidth 1
+Running simulation for: --cats 128 and --bandwidth 1
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 128 and --bandwidth 2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 128 and --bandwidth 3
+Running simulation for: --cats 128 and --bandwidth 3
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 128 and --bandwidth 25
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 256 and --bandwidth 0
+Running simulation for: --cats 256 and --bandwidth 0
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 256 and --bandwidth 1
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 256 and --bandwidth 2
+Running simulation for: --cats 256 and --bandwidth 2
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 256 and --bandwidth 3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 256 and --bandwidth 25
+Running simulation for: --cats 256 and --bandwidth 25
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 512 and --bandwidth 0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 512 and --bandwidth 1
+Running simulation for: --cats 512 and --bandwidth 1
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 512 and --bandwidth 2
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 512 and --bandwidth 3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 512 and --bandwidth 25
+Running simulation for: --cats 512 and --bandwidth 25
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 1024 and --bandwidth 0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 1024 and --bandwidth 1
+Running simulation for: --cats 1024 and --bandwidth 1
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 1024 and --bandwidth 2
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 1024 and --bandwidth 3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 1024 and --bandwidth 25
+Running simulation for: --cats 1024 and --bandwidth 25
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 1
+Running simulation for: --cats 2048 and --bandwidth 1
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 2
@@ -1629,7 +1542,7 @@ Running simulation for: --cats 2048 and --bandwidth 3
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Running simulation for: --cats 2048 and --bandwidth 25
 </pre></div>
 </div>
-<img alt="../_images/ebb05a10cba10f5932103d549b276833445ae21a0be073a3a7b00835628e5920.png" src="../_images/ebb05a10cba10f5932103d549b276833445ae21a0be073a3a7b00835628e5920.png" />
+<img alt="../_images/bc8ff174d794f47c0059e402c24d69e3f098a08a5cb516c9be7f67294f83db52.png" src="../_images/bc8ff174d794f47c0059e402c24d69e3f098a08a5cb516c9be7f67294f83db52.png" />
 </div>
 </div>
 </section>
@@ -1702,7 +1615,7 @@ Running simulation for: --cats 2048 and --bandwidth 3
   
   <div class="footer-item">
     <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 7.4.7.<br>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 8.1.3.<br>
 </p>
   </div>
   

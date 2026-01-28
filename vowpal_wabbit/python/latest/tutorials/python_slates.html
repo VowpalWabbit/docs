@@ -23,9 +23,9 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
     <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=a88e75c7" />
     <link rel="stylesheet" type="text/css" href="../_static/nav.css?v=5c63e7ba" />
 
@@ -33,7 +33,7 @@
   <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695">
 
     <script src="../_static/documentation_options.js?v=f4332903"></script>
-    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
@@ -593,11 +593,11 @@
 <p>Let’s start by importing the python libraries we’ll use in this example:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">vowpalwabbit</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">random</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">vowpalwabbit</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 </pre></div>
 </div>
 </div>
@@ -620,11 +620,11 @@
 <p>Our reward function receives as arguments the shared context (the occasion) and the selected actions for each slot (the types of clothing). In order to reflect real world problems, and make it more dificult, we inject normal noise in the reward value.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">noise</span><span class="p">(</span><span class="n">center</span><span class="p">,</span> <span class="n">stddev</span><span class="o">=</span><span class="mf">0.075</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">noise</span><span class="p">(</span><span class="n">center</span><span class="p">,</span> <span class="n">stddev</span><span class="o">=</span><span class="mf">0.075</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="n">center</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="mf">0.075</span><span class="p">)</span>
 
 
-<span class="k">def</span> <span class="nf">reward_function</span><span class="p">(</span><span class="n">shared_context</span><span class="p">,</span> <span class="n">torso_index</span><span class="p">,</span> <span class="n">legs_index</span><span class="p">,</span> <span class="n">feet_index</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">reward_function</span><span class="p">(</span><span class="n">shared_context</span><span class="p">,</span> <span class="n">torso_index</span><span class="p">,</span> <span class="n">legs_index</span><span class="p">,</span> <span class="n">feet_index</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">shared_context</span> <span class="o">==</span> <span class="s2">&quot;corporate&quot;</span><span class="p">:</span>
         <span class="n">torso_values</span> <span class="o">=</span> <span class="p">[</span><span class="n">noise</span><span class="p">(</span><span class="mf">0.2</span><span class="p">),</span> <span class="n">noise</span><span class="p">(</span><span class="mf">0.3</span><span class="p">),</span> <span class="n">noise</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)]</span>
         <span class="n">legs_val</span> <span class="o">=</span> <span class="p">[</span><span class="n">noise</span><span class="p">(</span><span class="mf">0.1</span><span class="p">),</span> <span class="n">noise</span><span class="p">(</span><span class="mf">0.3</span><span class="p">),</span> <span class="n">noise</span><span class="p">(</span><span class="mf">0.2</span><span class="p">)]</span>
@@ -645,7 +645,7 @@
 <p>The following piece of code generate examples that will be used for inference and training:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">generate_slates_text_format</span><span class="p">(</span><span class="n">shared_context</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">generate_slates_text_format</span><span class="p">(</span><span class="n">shared_context</span><span class="p">):</span>
     <span class="k">return</span> <span class="p">[</span>
         <span class="sa">f</span><span class="s2">&quot;slates shared |User </span><span class="si">{</span><span class="n">shared_context</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
         <span class="s2">&quot;slates action 0 |Action tshirt&quot;</span><span class="p">,</span>
@@ -664,7 +664,7 @@
     <span class="p">]</span>
 
 
-<span class="k">def</span> <span class="nf">generate_slates_text_format_with_label</span><span class="p">(</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">generate_slates_text_format_with_label</span><span class="p">(</span>
     <span class="n">shared_context</span><span class="p">,</span>
     <span class="n">reward</span><span class="p">,</span>
     <span class="n">chosen_torso_index</span><span class="p">,</span>
@@ -744,7 +744,7 @@
 <p>Let’s try to solve the same problem by using CB with combinatorial actions:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">generate_combinations</span><span class="p">(</span><span class="n">shared_context</span><span class="p">,</span> <span class="n">torso_items</span><span class="p">,</span> <span class="n">legs_items</span><span class="p">,</span> <span class="n">feet_items</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">generate_combinations</span><span class="p">(</span><span class="n">shared_context</span><span class="p">,</span> <span class="n">torso_items</span><span class="p">,</span> <span class="n">legs_items</span><span class="p">,</span> <span class="n">feet_items</span><span class="p">):</span>
     <span class="n">examples</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s2">&quot;shared |User </span><span class="si">{</span><span class="n">shared_context</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">]</span>
     <span class="n">descriptions</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">torso</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">torso_items</span><span class="p">):</span>
@@ -756,7 +756,7 @@
     <span class="k">return</span> <span class="n">examples</span><span class="p">,</span> <span class="n">descriptions</span>
 
 
-<span class="k">def</span> <span class="nf">sample_custom_pmf</span><span class="p">(</span><span class="n">pmf</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">sample_custom_pmf</span><span class="p">(</span><span class="n">pmf</span><span class="p">):</span>
     <span class="n">total</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">pmf</span><span class="p">)</span>
     <span class="n">scale</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">/</span> <span class="n">total</span>
     <span class="n">pmf</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="o">*</span> <span class="n">scale</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">pmf</span><span class="p">]</span>
@@ -809,7 +809,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/a4558e8941520558159fa942ef33a05637c740f41199d1e3c80edbfc3fe87107.png" src="../_images/a4558e8941520558159fa942ef33a05637c740f41199d1e3c80edbfc3fe87107.png" />
+<img alt="../_images/1da9e2b0622afd4d7276cef5e1d51127869cf921759f63a48ecab70471ed6bf9.png" src="../_images/1da9e2b0622afd4d7276cef5e1d51127869cf921759f63a48ecab70471ed6bf9.png" />
 </div>
 </div>
 <p>As we can see, Slates learns a better policy with lower regret.</p>
@@ -891,7 +891,7 @@
   
   <div class="footer-item">
     <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 7.4.7.<br>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 8.1.3.<br>
 </p>
   </div>
   
