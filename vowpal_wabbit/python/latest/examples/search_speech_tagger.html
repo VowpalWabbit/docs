@@ -872,6 +872,13 @@ should have printed [ 1 2 -1 4 2 ]
 
             <span class="c1"># truth</span>
             <span class="n">parN</span> <span class="o">=</span> <span class="n">sentence</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+
+            <span class="c1"># In LDF mode, oracle is the 0-based index of the correct</span>
+            <span class="c1"># example in the examples list.</span>
+            <span class="c1"># Examples are ordered: m=-1, 0, ..., n-1, n+1, ..., N-1</span>
+            <span class="c1"># So the index of m=parN is:</span>
+            <span class="c1">#   parN + 1  when parN &lt; n  (m=-1 is at index 0, m=0 at 1, ...)</span>
+            <span class="c1">#   parN      when parN &gt; n  (m=n is skipped)</span>
             <span class="n">oracle</span> <span class="o">=</span> <span class="p">(</span>
                 <span class="n">parN</span> <span class="o">+</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">parN</span> <span class="o">&lt;</span> <span class="n">n</span> <span class="k">else</span> <span class="n">parN</span>
             <span class="p">)</span>  <span class="c1"># have to -1 because we excluded n==m from list</span>
@@ -884,8 +891,11 @@ should have printed [ 1 2 -1 4 2 ]
                 <span class="n">condition</span><span class="o">=</span><span class="p">[(</span><span class="n">n</span><span class="p">,</span> <span class="s2">&quot;p&quot;</span><span class="p">),</span> <span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;q&quot;</span><span class="p">)],</span>
             <span class="p">)</span>
 
+            <span class="c1"># Reverse mapping: convert 0-based example index back to m</span>
+            <span class="c1">#   index 0..n    =&gt; m = index - 1  (i.e., m=-1, 0, ..., n-1)</span>
+            <span class="c1">#   index n+1..N-1 =&gt; m = index      (i.e., m=n+1, ..., N-1)</span>
             <span class="n">output</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
-                <span class="n">pred</span> <span class="o">-</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">pred</span> <span class="o">&lt;</span> <span class="n">n</span> <span class="k">else</span> <span class="n">pred</span>
+                <span class="n">pred</span> <span class="o">-</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">pred</span> <span class="o">&lt;=</span> <span class="n">n</span> <span class="k">else</span> <span class="n">pred</span>
             <span class="p">)</span>  <span class="c1"># have to +1 because n==m excluded</span>
 
             <span class="k">for</span> <span class="n">ex</span> <span class="ow">in</span> <span class="n">examples</span><span class="p">:</span>
@@ -913,9 +923,64 @@ should have printed [ 1 2 -1 4 2 ]
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--search 0 --csoaa_ldf m --search_task hook&quot;</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">task</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">init_search_task</span><span class="p">(</span><span class="n">CovingtonDepParserLDF</span><span class="p">)</span>
-<span class="c1"># BUG: This currently does not work because oracle generation is incorrect (generates invalid oracle values)#for p in range(2): # do two passes over the training data</span>
-<span class="c1">#    task.learn(my_dataset)</span>
-<span class="c1"># print(task.predict( [(w,-1) for w in &quot;the monster ate a sandwich&quot;.split()] ))</span>
+<span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">):</span>  <span class="c1"># do passes over the training data</span>
+    <span class="n">task</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">my_dataset</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;testing LDF&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">task</span><span class="o">.</span><span class="n">predict</span><span class="p">([(</span><span class="n">w</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="s2">&quot;the monster ate a sandwich&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">()]))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;should have printed [ 1 2 -1 4 2 ]&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">AttributeError</span><span class="g g-Whitespace">                            </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">14</span><span class="p">],</span> <span class="n">line</span> <span class="mi">4</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">task</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">init_search_task</span><span class="p">(</span><span class="n">CovingtonDepParserLDF</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">):</span>  <span class="c1"># do passes over the training data</span>
+<span class="ne">----&gt; </span><span class="mi">4</span>     <span class="n">task</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">my_dataset</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;testing LDF&quot;</span><span class="p">)</span>
+<span class="nn">      6 print(task.predict([(w, -1) for w</span> in <span class="ni">&quot;the monster ate a sandwich&quot;.split</span><span class="nt">()]))</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/vowpalwabbit/pyvw.py:251,</span> in <span class="ni">SearchTask.learn</span><span class="nt">(self, data_iterator)</span>
+<span class="g g-Whitespace">    </span><span class="mi">244</span><span class="w"> </span><span class="sd">&quot;&quot;&quot;Train search task by providing an iterator of examples.</span>
+<span class="g g-Whitespace">    </span><span class="mi">245</span><span class="sd"> </span>
+<span class="g g-Whitespace">    </span><span class="mi">246</span><span class="sd"> Args:</span>
+<span class="g g-Whitespace">    </span><span class="mi">247</span><span class="sd">     data_iterator: iterable objects</span>
+<span class="g g-Whitespace">    </span><span class="mi">248</span><span class="sd">         Consists of examples to be learned</span>
+<span class="g g-Whitespace">    </span><span class="mi">249</span><span class="sd"> &quot;&quot;&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">250</span> <span class="k">for</span> <span class="n">my_example</span> <span class="ow">in</span> <span class="n">data_iterator</span><span class="o">.</span><span class="fm">__iter__</span><span class="p">():</span>
+<span class="ne">--&gt; </span><span class="mi">251</span>     <span class="bp">self</span><span class="o">.</span><span class="n">_call_vw</span><span class="p">(</span><span class="n">my_example</span><span class="p">,</span> <span class="n">isTest</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/vowpalwabbit/pyvw.py:239,</span> in <span class="ni">SearchTask._call_vw</span><span class="nt">(self, my_example, isTest, useOracle)</span>
+<span class="g g-Whitespace">    </span><span class="mi">237</span> <span class="bp">self</span><span class="o">.</span><span class="n">sch</span><span class="o">.</span><span class="n">set_structured_predict_hook</span><span class="p">(</span><span class="n">run</span><span class="p">,</span> <span class="n">setup</span><span class="p">,</span> <span class="n">takedown</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">238</span> <span class="bp">self</span><span class="o">.</span><span class="n">sch</span><span class="o">.</span><span class="n">set_force_oracle</span><span class="p">(</span><span class="n">useOracle</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">239</span> <span class="bp">self</span><span class="o">.</span><span class="n">vw</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">240</span>     <span class="bp">self</span><span class="o">.</span><span class="n">bogus_example</span>
+<span class="g g-Whitespace">    </span><span class="mi">241</span> <span class="p">)</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/vowpalwabbit/pyvw.py:719,</span> in <span class="ni">Workspace.learn</span><span class="nt">(self, ec)</span>
+<span class="g g-Whitespace">    </span><span class="mi">716</span>     <span class="n">pylibvw</span><span class="o">.</span><span class="n">vw</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ec</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">718</span> <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">ec</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+<span class="ne">--&gt; </span><span class="mi">719</span>     <span class="n">pylibvw</span><span class="o">.</span><span class="n">vw</span><span class="o">.</span><span class="n">learn_multi</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ec</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">721</span> <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">722</span>     <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">723</span>         <span class="s2">&quot;expecting string or example object as ec argument for learn,&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">724</span>         <span class="s2">&quot; got </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="nb">type</span><span class="p">(</span><span class="n">ec</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">725</span>     <span class="p">)</span>
+
+<span class="nn">File /opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/vowpalwabbit/pyvw.py:229,</span> in <span class="ni">SearchTask._call_vw.&lt;locals&gt;.run</span><span class="nt">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">228</span> <span class="k">def</span><span class="w"> </span><span class="nf">run</span><span class="p">():</span>
+<span class="ne">--&gt; </span><span class="mi">229</span>     <span class="bp">self</span><span class="o">.</span><span class="n">_output</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_run</span><span class="p">(</span><span class="n">my_example</span><span class="p">)</span>
+
+<span class="nn">Cell In[13], line 72,</span> in <span class="ni">CovingtonDepParserLDF._run</span><span class="nt">(self, sentence)</span>
+<span class="g g-Whitespace">     </span><span class="mi">67</span>     <span class="n">output</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
+<span class="g g-Whitespace">     </span><span class="mi">68</span>         <span class="n">pred</span> <span class="o">-</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">pred</span> <span class="o">&lt;=</span> <span class="n">n</span> <span class="k">else</span> <span class="n">pred</span>
+<span class="g g-Whitespace">     </span><span class="mi">69</span>     <span class="p">)</span>  <span class="c1"># have to +1 because n==m excluded</span>
+<span class="g g-Whitespace">     </span><span class="mi">71</span>     <span class="k">for</span> <span class="n">ex</span> <span class="ow">in</span> <span class="n">examples</span><span class="p">:</span>
+<span class="ne">---&gt; </span><span class="mi">72</span>         <span class="n">ex</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>  <span class="c1"># clean up</span>
+<span class="g g-Whitespace">     </span><span class="mi">74</span> <span class="k">return</span> <span class="n">output</span>
+
+<span class="ne">AttributeError</span>: &#39;Example&#39; object has no attribute &#39;finish&#39;
 </pre></div>
 </div>
 </div>
@@ -967,7 +1032,7 @@ should have printed [ 1 2 -1 4 2 ]
             <span class="p">{</span>
                 <span class="s2">&quot;e&quot;</span><span class="p">:</span> <span class="n">E</span><span class="p">[</span><span class="n">i</span><span class="p">],</span>
                 <span class="s2">&quot;f&quot;</span><span class="p">:</span> <span class="n">f</span><span class="p">,</span>
-                <span class="s2">&quot;p&quot;</span><span class="p">:</span> <span class="s2">&quot;_&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">f</span><span class="p">),</span>
+                <span class="s2">&quot;p&quot;</span><span class="p">:</span> <span class="s2">&quot;_&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">f</span><span class="p">)</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span> <span class="k">else</span> <span class="n">f</span><span class="p">,</span>
                 <span class="s2">&quot;l&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">l</span><span class="p">),</span>
                 <span class="s2">&quot;o&quot;</span><span class="p">:</span> <span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span> <span class="o">-</span> <span class="n">j0</span><span class="p">),</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span> <span class="o">-</span> <span class="n">j0</span> <span class="o">-</span> <span class="n">l</span><span class="p">)]</span> <span class="k">if</span> <span class="n">j0</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="p">[],</span>
             <span class="p">},</span>
@@ -997,23 +1062,20 @@ should have printed [ 1 2 -1 4 2 ]
                 <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>  <span class="c1"># max phrase length of 3</span>
                     <span class="k">if</span> <span class="n">j0</span> <span class="o">+</span> <span class="n">l</span> <span class="o">&gt;=</span> <span class="nb">len</span><span class="p">(</span><span class="n">F</span><span class="p">):</span>
                         <span class="k">break</span>
-                    <span class="k">if</span> <span class="n">covered</span><span class="o">.</span><span class="n">has_key</span><span class="p">(</span><span class="n">j0</span> <span class="o">+</span> <span class="n">l</span><span class="p">):</span>
+                    <span class="k">if</span> <span class="p">(</span><span class="n">j0</span> <span class="o">+</span> <span class="n">l</span><span class="p">)</span> <span class="ow">in</span> <span class="n">covered</span><span class="p">:</span>
                         <span class="k">break</span>
 
                     <span class="nb">id</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">examples</span><span class="p">)</span>
                     <span class="n">examples</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">makeExample</span><span class="p">(</span><span class="n">E</span><span class="p">,</span> <span class="n">F</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">j0</span><span class="p">,</span> <span class="n">l</span><span class="p">))</span>
                     <span class="n">spans</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
                         <span class="p">(</span>
-                            <span class="n">alignmentError</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="nb">range</span><span class="p">(</span><span class="n">j0</span><span class="p">,</span> <span class="n">j0</span> <span class="o">+</span> <span class="n">l</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)),</span>
+                            <span class="n">alignmentError</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">j0</span><span class="p">,</span> <span class="n">j0</span> <span class="o">+</span> <span class="n">l</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))),</span>
                             <span class="nb">id</span><span class="p">,</span>
-                            <span class="nb">range</span><span class="p">(</span><span class="n">j0</span><span class="p">,</span> <span class="n">j0</span> <span class="o">+</span> <span class="n">l</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span>
+                            <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">j0</span><span class="p">,</span> <span class="n">j0</span> <span class="o">+</span> <span class="n">l</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)),</span>
                         <span class="p">)</span>
                     <span class="p">)</span>
 
-            <span class="n">sortedSpans</span> <span class="o">=</span> <span class="p">[]</span>
-            <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">spans</span><span class="p">:</span>
-                <span class="n">sortedSpans</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
-            <span class="n">sortedSpans</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+            <span class="n">sortedSpans</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">spans</span><span class="p">)</span>
             <span class="n">oracle</span> <span class="o">=</span> <span class="p">[]</span>
             <span class="k">for</span> <span class="nb">id</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">sortedSpans</span><span class="p">)):</span>
                 <span class="k">if</span> <span class="n">sortedSpans</span><span class="p">[</span><span class="nb">id</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">sortedSpans</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]:</span>
@@ -1047,9 +1109,13 @@ should have printed [ 1 2 -1 4 2 ]
     <span class="s2">&quot;--search 0 --csoaa_ldf m --search_task hook -q ef -q ep&quot;</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="kc">True</span>
 <span class="p">)</span>
 <span class="n">task</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">init_search_task</span><span class="p">(</span><span class="n">WordAligner</span><span class="p">)</span>
-<span class="c1"># BUG: This is currently broken due to incorrect oracle generation. Currently under investigation.#for p in range(10):</span>
-<span class="c1">#    task.learn(my_dataset)</span>
-<span class="c1"># print(task.predict( (&quot;the blue flower&quot;.split(), ([],[],[]), &quot;la fleur bleue&quot;.split()) ))</span>
+<span class="c1"># NOTE: The WordAligner example has additional pre-existing issues beyond</span>
+<span class="c1"># oracle generation (Python 2 API, feature format changes) and needs</span>
+<span class="c1"># further updates to run correctly.</span>
+<span class="c1"># for p in range(10):</span>
+<span class="c1">#     task.learn(my_dataset)</span>
+<span class="c1"># print(task.predict((&quot;the blue flower&quot;.split(), ([], [], []), &quot;la fleur bleue&quot;.split())))</span>
+<span class="c1"># print(&quot;should have printed [[0], [2], [1]]&quot;)</span>
 </pre></div>
 </div>
 </div>
