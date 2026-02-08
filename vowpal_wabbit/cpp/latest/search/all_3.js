@@ -269,7 +269,7 @@ var searchData=
   ['cressieread_5fduals_266',['cressieread_duals',['../classVW_1_1estimators_1_1chi__squared.html#a5f75ce692271d485fb59f444b5f7eec0',1,'VW::estimators::chi_squared']]],
   ['cressieread_5flower_5fbound_267',['cressieread_lower_bound',['../classVW_1_1estimators_1_1chi__squared.html#afb6d59724800fbf600625d92f8f3c2ba',1,'VW::estimators::chi_squared']]],
   ['cressieread_5fupper_5fbound_268',['cressieread_upper_bound',['../classVW_1_1estimators_1_1chi__squared.html#a60f2d8c645a819935af26135d7cea309',1,'VW::estimators::chi_squared']]],
-  ['critical_269',['critical',['../classVW_1_1io_1_1logger.html#ae1556fe633341a927e9cb4d57cc435e5',1,'VW::io::logger::critical()'],['../classVW_1_1io_1_1details_1_1log__sink.html#ac12350e98ae7136601161c569be18bfc',1,'VW::io::details::log_sink::critical()']]],
+  ['critical_269',['critical',['../classVW_1_1io_1_1logger.html#a201d5abb9f0a64f9ffac3507f5f2bb98',1,'VW::io::logger::critical()'],['../classVW_1_1io_1_1details_1_1log__sink.html#ac12350e98ae7136601161c569be18bfc',1,'VW::io::details::log_sink::critical()']]],
   ['critical_5flevel_270',['CRITICAL_LEVEL',['../namespaceVW_1_1io.html#aaf6d3dfe9781b53c9fbc2908a8f0641ca40c18d704f38d99ee7221f2ddbaf76fa',1,'VW::io']]],
   ['crossplat_5fcompat_2eh_271',['crossplat_compat.h',['../crossplat__compat_8h.html',1,'']]],
   ['cs_272',['cs',['../namespaceVW.html#a41c81f994e2400fabf138c9f2b3d78e5a95cc64dd2825f9df13ec4ad683ecf339',1,'VW']]],

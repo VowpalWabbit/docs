@@ -115,7 +115,7 @@ var searchData=
   ['cressieread_5fduals_112',['cressieread_duals',['../classVW_1_1estimators_1_1chi__squared.html#a5f75ce692271d485fb59f444b5f7eec0',1,'VW::estimators::chi_squared']]],
   ['cressieread_5flower_5fbound_113',['cressieread_lower_bound',['../classVW_1_1estimators_1_1chi__squared.html#afb6d59724800fbf600625d92f8f3c2ba',1,'VW::estimators::chi_squared']]],
   ['cressieread_5fupper_5fbound_114',['cressieread_upper_bound',['../classVW_1_1estimators_1_1chi__squared.html#a60f2d8c645a819935af26135d7cea309',1,'VW::estimators::chi_squared']]],
-  ['critical_115',['critical',['../classVW_1_1io_1_1details_1_1log__sink.html#ac12350e98ae7136601161c569be18bfc',1,'VW::io::details::log_sink::critical()'],['../classVW_1_1io_1_1logger.html#ae1556fe633341a927e9cb4d57cc435e5',1,'VW::io::logger::critical()']]],
+  ['critical_115',['critical',['../classVW_1_1io_1_1details_1_1log__sink.html#ac12350e98ae7136601161c569be18bfc',1,'VW::io::details::log_sink::critical()'],['../classVW_1_1io_1_1logger.html#a201d5abb9f0a64f9ffac3507f5f2bb98',1,'VW::io::logger::critical()']]],
   ['cs_5factive_5fsetup_116',['cs_active_setup',['../namespaceVW_1_1reductions.html#a94f53c0078a3653eee412ff4805c6086',1,'VW::reductions']]],
   ['cs_5fclass_117',['cs_class',['../classVW_1_1cs__class.html#a637d74ca7b59bdef74b2675d71ddce09',1,'VW::cs_class::cs_class(float x, uint32_t class_index, float partial_prediction, float wap_value)'],['../classVW_1_1cs__class.html#aaa1dc69af9bfe87452a9efb098512786',1,'VW::cs_class::cs_class()=default']]],
   ['cs_5fldf_5flearn_5for_5fpredict_118',['cs_ldf_learn_or_predict',['../namespaceVW_1_1details.html#adf52b778128ec9bfbbe2c601a272f11d',1,'VW::details']]],
