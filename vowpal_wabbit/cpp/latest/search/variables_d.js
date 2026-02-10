@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['n_0',['N',['../classVW_1_1reductions_1_1expreplay_1_1expreplay.html#a2563123c377deacbee6f4ec4fa5051e9',1,'VW::reductions::expreplay::expreplay']]],
-  ['n_1',['n',['../classVW_1_1details_1_1Duals.html#a637ee45e21a742feff38f41bc134f896',1,'VW::details::Duals']]],
+  ['n_0',['n',['../classVW_1_1details_1_1Duals.html#a637ee45e21a742feff38f41bc134f896',1,'VW::details::Duals']]],
+  ['n_1',['N',['../classVW_1_1reductions_1_1expreplay_1_1expreplay.html#a2563123c377deacbee6f4ec4fa5051e9',1,'VW::reductions::expreplay::expreplay']]],
   ['name_2',['name',['../classVW_1_1audit__strings.html#aeda51a335733a0481b53d8057c22fdf9',1,'VW::audit_strings::name()'],['../classVW_1_1details_1_1dictionary__info.html#ae4c13b09ead447efd5dca770464ea18d',1,'VW::details::dictionary_info::name()'],['../classVW_1_1primitive__feature__space.html#a8f5b0342e8c1f8c6d6e5648d14894a59',1,'VW::primitive_feature_space::name()']]],
   ['namespace_5fdictionaries_3',['namespace_dictionaries',['../classVW_1_1details_1_1feature__tweaks__config.html#a5077d9268a44b0d138bea882b9ea6884',1,'VW::details::feature_tweaks_config']]],
   ['namespace_5fextents_4',['namespace_extents',['../classVW_1_1features.html#aef7d3f4c7e6f37cd3e41ccfd3e3c273d',1,'VW::features']]],
