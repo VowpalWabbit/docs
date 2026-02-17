@@ -84,6 +84,8 @@ $(function() {
 Functions</h2></td></tr>
 <tr class="memitem:aa252bac6eac97576695bc5755aa1129e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1confidence__sequence__utility.html#aa252bac6eac97576695bc5755aa1129e">binary_search</a> (float fhat, float delta, float sens, float tol=1e-6f)</td></tr>
 <tr class="separator:aa252bac6eac97576695bc5755aa1129e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8502328fb27912debe6f2e829a7b12fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1confidence__sequence__utility.html#a8502328fb27912debe6f2e829a7b12fc">get_cost_ranges</a> (float delta, <a class="el" href="classVW_1_1LEARNER_1_1learner.html">VW::LEARNER::learner</a> &amp;base, <a class="el" href="namespaceVW.html#a1dd7b95816f635bc6a5906d2b566c856">VW::multi_ex</a> &amp;examples, bool min_only, float min_cb_cost, float max_cb_cost, std::vector&lt; float &gt; &amp;min_costs, std::vector&lt; float &gt; &amp;max_costs, std::vector&lt; <a class="el" href="namespaceVW.html#a2702c36414c2a3b9ee641b6bc2639e20">VW::action_scores</a> &gt; &amp;ex_as, std::vector&lt; std::vector&lt; <a class="el" href="classVW_1_1cb__class.html">VW::cb_class</a> &gt; &gt; &amp;ex_costs)</td></tr>
+<tr class="separator:a8502328fb27912debe6f2e829a7b12fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -137,6 +139,98 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p >Binary search to find the largest weight w such that w * (fhat^2 - (fhat - w * sens)^2) &lt;= delta. See Section 7.1 in <a href="https://arxiv.org/pdf/1703.01014.pdf">https://arxiv.org/pdf/1703.01014.pdf</a>. </p>
+
+</div>
+</div>
+<a id="a8502328fb27912debe6f2e829a7b12fc" name="a8502328fb27912debe6f2e829a7b12fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8502328fb27912debe6f2e829a7b12fc">&#9670;&#160;</a></span>get_cost_ranges()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VW::confidence_sequence_utility::get_cost_ranges </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>delta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classVW_1_1LEARNER_1_1learner.html">VW::LEARNER::learner</a> &amp;&#160;</td>
+          <td class="paramname"><em>base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceVW.html#a1dd7b95816f635bc6a5906d2b566c856">VW::multi_ex</a> &amp;&#160;</td>
+          <td class="paramname"><em>examples</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>min_only</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>min_cb_cost</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>max_cb_cost</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; float &gt; &amp;&#160;</td>
+          <td class="paramname"><em>min_costs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; float &gt; &amp;&#160;</td>
+          <td class="paramname"><em>max_costs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespaceVW.html#a2702c36414c2a3b9ee641b6bc2639e20">VW::action_scores</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ex_as</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; std::vector&lt; <a class="el" href="classVW_1_1cb__class.html">VW::cb_class</a> &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ex_costs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Compute cost ranges [min_cost, max_cost] for each action using sensitivity analysis. Used by both RegCB and SquareCB reductions.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">delta</td><td>Threshold on empirical loss difference (controls confidence width). </td></tr>
+    <tr><td class="paramname">base</td><td>The base learner used for sensitivity queries. </td></tr>
+    <tr><td class="paramname">examples</td><td>The multiline example set (action predictions are backed up and restored). </td></tr>
+    <tr><td class="paramname">min_only</td><td>If true, only compute minimum costs (used by RegCB optimistic variant). </td></tr>
+    <tr><td class="paramname">min_cb_cost</td><td>Lower bound on <a class="el" href="namespaceCB.html">CB</a> costs (e.g., 0). </td></tr>
+    <tr><td class="paramname">max_cb_cost</td><td>Upper bound on <a class="el" href="namespaceCB.html">CB</a> costs (e.g., 1). </td></tr>
+    <tr><td class="paramname">min_costs</td><td>Output vector of minimum cost for each action. </td></tr>
+    <tr><td class="paramname">max_costs</td><td>Output vector of maximum cost for each action (unchanged if min_only). </td></tr>
+    <tr><td class="paramname">ex_as</td><td>Scratch buffer for backing up action scores. </td></tr>
+    <tr><td class="paramname">ex_costs</td><td>Scratch buffer for backing up <a class="el" href="namespaceCB.html">CB</a> costs. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

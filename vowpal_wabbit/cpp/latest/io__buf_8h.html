@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Vowpal Wabbit: /nix/store/z1db2364d3wsgw884mdq3sk1xcrrm2gw-source/vowpalwabbit/core/include/vw/core/io_buf.h File Reference</title>
+<title>Vowpal Wabbit: /nix/store/9fnc5sg4lcnw4nzbqk7pv0l28wlhjm7p-source/vowpalwabbit/core/include/vw/core/io_buf.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -76,7 +76,6 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
@@ -115,13 +114,6 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespaceVW_1_1details"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1details.html">VW::details</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a0c22473d07cad2574e26f457f9d0f80f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__buf_8h.html#a0c22473d07cad2574e26f457f9d0f80f">DEPRECATED_WRITEIT</a>(what,  str)</td></tr>
-<tr class="separator:a0c22473d07cad2574e26f457f9d0f80f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb96cd3c2c355f843e84c6939a2b9524"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__buf_8h.html#afb96cd3c2c355f843e84c6939a2b9524">DEPRECATED_WRITEITVAR</a>(what,  str,  mywhat)</td></tr>
-<tr class="separator:afb96cd3c2c355f843e84c6939a2b9524"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a446d21822c8dc0d06559cb93e4ae8317"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="io__buf_8h.html#a446d21822c8dc0d06559cb93e4ae8317">io_buf</a> = <a class="el" href="classVW_1_1io__buf.html">VW::io_buf</a></td></tr>
@@ -149,78 +141,6 @@ Variables</h2></td></tr>
 <tr class="memitem:aa3bbc0a0f68100c25d0dd4f7420f1c05"><td class="memItemLeft" align="right" valign="top">const desired_align&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceVW_1_1known__alignments.html#aa3bbc0a0f68100c25d0dd4f7420f1c05">VW::known_alignments::TEXT</a> = desired_align::align_for&lt;char&gt;()</td></tr>
 <tr class="separator:aa3bbc0a0f68100c25d0dd4f7420f1c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a0c22473d07cad2574e26f457f9d0f80f" name="a0c22473d07cad2574e26f457f9d0f80f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c22473d07cad2574e26f457f9d0f80f">&#9670;&#160;</a></span>DEPRECATED_WRITEIT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DEPRECATED_WRITEIT</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">what, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">str&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                                                 \</div>
-<div class="line">    msg &lt;&lt; str &lt;&lt; <span class="stringliteral">&quot; = &quot;</span> &lt;&lt; what &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;                                                                \</div>
-<div class="line">    ::VW::details::bin_text_read_write_fixed(model_file, (<span class="keywordtype">char</span>*)&amp;what, <span class="keyword">sizeof</span>(what), read, msg, text); \</div>
-<div class="line">  } <span class="keywordflow">while</span> (0);</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="afb96cd3c2c355f843e84c6939a2b9524" name="afb96cd3c2c355f843e84c6939a2b9524"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afb96cd3c2c355f843e84c6939a2b9524">&#9670;&#160;</a></span>DEPRECATED_WRITEITVAR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DEPRECATED_WRITEITVAR</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">what, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">str, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">mywhat&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keyword">auto</span> mywhat = (what);                                                                                    \</div>
-<div class="line">  <span class="keywordflow">do</span> {                                                                                                     \</div>
-<div class="line">    msg &lt;&lt; str &lt;&lt; <span class="stringliteral">&quot; = &quot;</span> &lt;&lt; mywhat &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;                                                                  \</div>
-<div class="line">    ::VW::details::bin_text_read_write_fixed(model_file, (<span class="keywordtype">char</span>*)&amp;mywhat, <span class="keyword">sizeof</span>(mywhat), read, msg, text); \</div>
-<div class="line">  } <span class="keywordflow">while</span> (0);</div>
-</div><!-- fragment -->
-</div>
-</div>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a446d21822c8dc0d06559cb93e4ae8317" name="a446d21822c8dc0d06559cb93e4ae8317"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a446d21822c8dc0d06559cb93e4ae8317">&#9670;&#160;</a></span>io_buf</h2>
