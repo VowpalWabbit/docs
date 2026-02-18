@@ -116,8 +116,8 @@ var searchData=
   ['router_5ftype_113',['router_type',['../structVW_1_1reductions_1_1eigen__memory__tree_1_1emt__tree.html#a3255df42beef68896860ec021961fc99',1,'VW::reductions::eigen_memory_tree::emt_tree']]],
   ['router_5fweights_114',['router_weights',['../structVW_1_1reductions_1_1eigen__memory__tree_1_1emt__node.html#ada795e916cb0702f1abc3fd880e9f77c',1,'VW::reductions::eigen_memory_tree::emt_node']]],
   ['row_115',['row',['../structVW_1_1cb__graph__feedback_1_1triplet.html#a5cae87e3dc6a2cdbfe56bfddfbb824d9',1,'VW::cb_graph_feedback::triplet']]],
-  ['run_116',['Run',['../classVW_1_1spanning__tree.html#a7f0a9b1caa849fef0e0fb55cf20e9757',1,'VW::spanning_tree']]],
-  ['run_117',['run',['../classVW_1_1spanning__tree.html#a7f719c7190adbff2dc5e16374bdd4473',1,'VW::spanning_tree']]],
+  ['run_116',['run',['../classVW_1_1spanning__tree.html#a7f719c7190adbff2dc5e16374bdd4473',1,'VW::spanning_tree']]],
+  ['run_117',['Run',['../classVW_1_1spanning__tree.html#a7f0a9b1caa849fef0e0fb55cf20e9757',1,'VW::spanning_tree']]],
   ['runtime_5fconfig_118',['runtime_config',['../classVW_1_1workspace.html#a42da0d7fe5d89a25e9192d79ad7c7e7f',1,'VW::workspace::runtime_config()'],['../classVW_1_1details_1_1runtime__config.html',1,'VW::details::runtime_config']]],
   ['runtime_5fstate_119',['runtime_state',['../classVW_1_1workspace.html#a3df96f96900556bb03952cd08cd160b7',1,'VW::workspace::runtime_state()'],['../classVW_1_1details_1_1runtime__state.html',1,'VW::details::runtime_state']]]
 ];
