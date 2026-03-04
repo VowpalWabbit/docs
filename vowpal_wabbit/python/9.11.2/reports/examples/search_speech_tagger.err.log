@@ -1,0 +1,77 @@
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
+    executenb(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/nbclient/client.py", line 1323, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/nbclient/client.py", line 709, in async_execute
+    await self.async_execute_cell(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/nbclient/client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/nbclient/client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+vw = vowpalwabbit.Workspace("--search 0 --csoaa_ldf m --search_task hook", quiet=True)
+task = vw.init_search_task(CovingtonDepParserLDF)
+for p in range(100):  # do passes over the training data
+    task.learn(my_dataset)
+print("testing LDF")
+print(task.predict([(w, -1) for w in "the monster ate a sandwich".split()]))
+print("should have printed [ 1 2 -1 4 2 ]")
+------------------
+
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mAttributeError[0m                            Traceback (most recent call last)
+Cell [0;32mIn[14], line 4[0m
+[1;32m      2[0m task [38;5;241m=[39m vw[38;5;241m.[39minit_search_task(CovingtonDepParserLDF)
+[1;32m      3[0m [38;5;28;01mfor[39;00m p [38;5;129;01min[39;00m [38;5;28mrange[39m([38;5;241m100[39m):  [38;5;66;03m# do passes over the training data[39;00m
+[0;32m----> 4[0m     [43mtask[49m[38;5;241;43m.[39;49m[43mlearn[49m[43m([49m[43mmy_dataset[49m[43m)[49m
+[1;32m      5[0m [38;5;28mprint[39m([38;5;124m"[39m[38;5;124mtesting LDF[39m[38;5;124m"[39m)
+[1;32m      6[0m [38;5;28mprint[39m(task[38;5;241m.[39mpredict([(w, [38;5;241m-[39m[38;5;241m1[39m) [38;5;28;01mfor[39;00m w [38;5;129;01min[39;00m [38;5;124m"[39m[38;5;124mthe monster ate a sandwich[39m[38;5;124m"[39m[38;5;241m.[39msplit()]))
+
+File [0;32m/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/vowpalwabbit/pyvw.py:251[0m, in [0;36mSearchTask.learn[0;34m(self, data_iterator)[0m
+[1;32m    244[0m [38;5;250m[39m[38;5;124;03m"""Train search task by providing an iterator of examples.[39;00m
+[1;32m    245[0m 
+[1;32m    246[0m [38;5;124;03mArgs:[39;00m
+[1;32m    247[0m [38;5;124;03m    data_iterator: iterable objects[39;00m
+[1;32m    248[0m [38;5;124;03m        Consists of examples to be learned[39;00m
+[1;32m    249[0m [38;5;124;03m"""[39;00m
+[1;32m    250[0m [38;5;28;01mfor[39;00m my_example [38;5;129;01min[39;00m data_iterator[38;5;241m.[39m[38;5;21m__iter__[39m():
+[0;32m--> 251[0m     [38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43m_call_vw[49m[43m([49m[43mmy_example[49m[43m,[49m[43m [49m[43misTest[49m[38;5;241;43m=[39;49m[38;5;28;43;01mFalse[39;49;00m[43m)[49m
+
+File [0;32m/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/vowpalwabbit/pyvw.py:239[0m, in [0;36mSearchTask._call_vw[0;34m(self, my_example, isTest, useOracle)[0m
+[1;32m    237[0m [38;5;28mself[39m[38;5;241m.[39msch[38;5;241m.[39mset_structured_predict_hook(run, setup, takedown)
+[1;32m    238[0m [38;5;28mself[39m[38;5;241m.[39msch[38;5;241m.[39mset_force_oracle(useOracle)
+[0;32m--> 239[0m [38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43mvw[49m[38;5;241;43m.[39;49m[43mlearn[49m[43m([49m
+[1;32m    240[0m [43m    [49m[38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43mbogus_example[49m
+[1;32m    241[0m [43m[49m[43m)[49m
+
+File [0;32m/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/vowpalwabbit/pyvw.py:719[0m, in [0;36mWorkspace.learn[0;34m(self, ec)[0m
+[1;32m    716[0m     pylibvw[38;5;241m.[39mvw[38;5;241m.[39mlearn([38;5;28mself[39m, ec)
+[1;32m    718[0m [38;5;28;01melif[39;00m [38;5;28misinstance[39m(ec, [38;5;28mlist[39m):
+[0;32m--> 719[0m     [43mpylibvw[49m[38;5;241;43m.[39;49m[43mvw[49m[38;5;241;43m.[39;49m[43mlearn_multi[49m[43m([49m[38;5;28;43mself[39;49m[43m,[49m[43m [49m[43mec[49m[43m)[49m
+[1;32m    721[0m [38;5;28;01melse[39;00m:
+[1;32m    722[0m     [38;5;28;01mraise[39;00m [38;5;167;01mTypeError[39;00m(
+[1;32m    723[0m         [38;5;124m"[39m[38;5;124mexpecting string or example object as ec argument for learn,[39m[38;5;124m"[39m
+[1;32m    724[0m         [38;5;124m"[39m[38;5;124m got [39m[38;5;132;01m%s[39;00m[38;5;124m"[39m [38;5;241m%[39m [38;5;28mtype[39m(ec)
+[1;32m    725[0m     )
+
+File [0;32m/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/vowpalwabbit/pyvw.py:229[0m, in [0;36mSearchTask._call_vw.<locals>.run[0;34m()[0m
+[1;32m    228[0m [38;5;28;01mdef[39;00m[38;5;250m [39m[38;5;21mrun[39m():
+[0;32m--> 229[0m     [38;5;28mself[39m[38;5;241m.[39m_output [38;5;241m=[39m [38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43m_run[49m[43m([49m[43mmy_example[49m[43m)[49m
+
+Cell [0;32mIn[13], line 72[0m, in [0;36mCovingtonDepParserLDF._run[0;34m(self, sentence)[0m
+[1;32m     67[0m     output[n] [38;5;241m=[39m (
+[1;32m     68[0m         pred [38;5;241m-[39m [38;5;241m1[39m [38;5;28;01mif[39;00m pred [38;5;241m<[39m[38;5;241m=[39m n [38;5;28;01melse[39;00m pred
+[1;32m     69[0m     )  [38;5;66;03m# have to +1 because n==m excluded[39;00m
+[1;32m     71[0m     [38;5;28;01mfor[39;00m ex [38;5;129;01min[39;00m examples:
+[0;32m---> 72[0m         [43mex[49m[38;5;241;43m.[39;49m[43mfinish[49m()  [38;5;66;03m# clean up[39;00m
+[1;32m     74[0m [38;5;28;01mreturn[39;00m output
+
+[0;31mAttributeError[0m: 'Example' object has no attribute 'finish'
+
