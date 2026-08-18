@@ -1800,7 +1800,7 @@
 <h2>Example usage<a class="headerlink" href="#example-usage" title="Link to this heading">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">vowpalwabbit</span><span class="w"> </span><span class="kn">import</span> <span class="n">Workspace</span><span class="p">,</span> <span class="n">Example</span>
 <span class="n">workspace</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">ex</span> <span class="o">=</span> <span class="n">Example</span><span class="p">(</span><span class="s1">&#39;1 | a b c&#39;</span><span class="p">)</span>
+<span class="n">ex</span> <span class="o">=</span> <span class="n">Example</span><span class="p">(</span><span class="s1">'1 | a b c'</span><span class="p">)</span>
 <span class="n">workspace</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
 <span class="n">workspace</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
 </pre></div>
@@ -2248,7 +2248,7 @@ you can optionally provide that value to avoid re-hashing it.</p>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">vowpalwabbit</span><span class="w"> </span><span class="kn">import</span> <span class="n">Workspace</span><span class="p">,</span> <span class="n">PredictionType</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">vw</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">ex</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">example</span><span class="p">(</span><span class="s1">&#39;1 |a two features |b more features here&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ex</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">example</span><span class="p">(</span><span class="s1">'1 |a two features |b more features here'</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">ex</span><span class="o">.</span><span class="n">get_prediction</span><span class="p">()</span>
 <span class="go">0.0</span>
 </pre></div>
@@ -2371,15 +2371,15 @@ paired with a value or not (if not, the value is assumed to be 1.0</p></li>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">vowpalwabbit</span><span class="w"> </span><span class="kn">import</span> <span class="n">Workspace</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">vw</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">ex</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">example</span><span class="p">(</span><span class="s1">&#39;1 |a two features |b more features here&#39;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">ex</span><span class="o">.</span><span class="n">push_features</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">])</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">ex</span><span class="o">.</span><span class="n">push_features</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="p">[(</span><span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="mf">1.</span><span class="p">),</span> <span class="s1">&#39;d&#39;</span><span class="p">])</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">space_hash</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">hash_space</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">feat_hash</span>  <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">hash_feature</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="n">space_hash</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">ex</span><span class="o">.</span><span class="n">push_features</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="p">[</span><span class="n">feat_hash</span><span class="p">])</span> <span class="c1">#&#39;x&#39; should match the space_hash!</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">ex</span><span class="o">.</span><span class="n">num_features_in</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ex</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">example</span><span class="p">(</span><span class="s1">'1 |a two features |b more features here'</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ex</span><span class="o">.</span><span class="n">push_features</span><span class="p">(</span><span class="s1">'x'</span><span class="p">,</span> <span class="p">[</span><span class="s1">'a'</span><span class="p">,</span> <span class="s1">'b'</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ex</span><span class="o">.</span><span class="n">push_features</span><span class="p">(</span><span class="s1">'y'</span><span class="p">,</span> <span class="p">[(</span><span class="s1">'c'</span><span class="p">,</span> <span class="mf">1.</span><span class="p">),</span> <span class="s1">'d'</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">space_hash</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">hash_space</span><span class="p">(</span><span class="s1">'x'</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">feat_hash</span>  <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">hash_feature</span><span class="p">(</span><span class="s1">'a'</span><span class="p">,</span> <span class="n">space_hash</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ex</span><span class="o">.</span><span class="n">push_features</span><span class="p">(</span><span class="s1">'x'</span><span class="p">,</span> <span class="p">[</span><span class="n">feat_hash</span><span class="p">])</span> <span class="c1">#'x' should match the space_hash!</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ex</span><span class="o">.</span><span class="n">num_features_in</span><span class="p">(</span><span class="s1">'x'</span><span class="p">)</span>
 <span class="go">3</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">ex</span><span class="o">.</span><span class="n">num_features_in</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ex</span><span class="o">.</span><span class="n">num_features_in</span><span class="p">(</span><span class="s1">'y'</span><span class="p">)</span>
 <span class="go">2</span>
 </pre></div>
 </div>
@@ -2908,11 +2908,11 @@ really need to touch this.</p>
 </dl>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">vowpalwabbit</span><span class="w"> </span><span class="kn">import</span> <span class="n">Workspace</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">vw1</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="s1">&#39;--audit&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">vw1</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="s1">'--audit'</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">vw2</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="n">audit</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">24</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">l2</span><span class="o">=</span><span class="mf">0.001</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">vw3</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--audit&quot;</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">26</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">vw4</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="n">q</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;ab&quot;</span><span class="p">,</span> <span class="s2">&quot;ac&quot;</span><span class="p">])</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">vw4</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="n">arg_list</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;--audit&quot;</span><span class="p">,</span> <span class="s2">&quot;--interactions&quot;</span><span class="p">,</span> <span class="s2">&quot;ab&quot;</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">vw3</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="s2">"--audit"</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">26</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">vw4</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="n">q</span><span class="o">=</span><span class="p">[</span><span class="s2">"ab"</span><span class="p">,</span> <span class="s2">"ac"</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">vw4</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="n">arg_list</span><span class="o">=</span><span class="p">[</span><span class="s2">"--audit"</span><span class="p">,</span> <span class="s2">"--interactions"</span><span class="p">,</span> <span class="s2">"ab"</span><span class="p">])</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -3147,13 +3147,13 @@ element is considered as an example</p></li>
 <p class="rubric">Examples</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">vowpalwabbit</span><span class="w"> </span><span class="kn">import</span> <span class="n">Workspace</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">model</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">ex</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="s2">&quot;0:0.1:0.75 | a:0.5 b:1 c:2&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ex</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="s2">"0:0.1:0.75 | a:0.5 b:1 c:2"</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
-<span class="go">&lt;class &#39;vowpalwabbit.pyvw.Example&#39;&gt;</span>
+<span class="go">&lt;class 'vowpalwabbit.pyvw.Example'&gt;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">model</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cb_adf</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">ex</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">parse</span><span class="p">([</span><span class="s2">&quot;| a:1 b:0.5&quot;</span><span class="p">,</span> <span class="s2">&quot;0:0.1:0.75 | a:0.5 b:1 c:2&quot;</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ex</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">parse</span><span class="p">([</span><span class="s2">"| a:1 b:0.5"</span><span class="p">,</span> <span class="s2">"0:0.1:0.75 | a:0.5 b:1 c:2"</span><span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span>
-<span class="go">&lt;class &#39;list&#39;&gt;</span>
+<span class="go">&lt;class 'list'&gt;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">len</span><span class="p">(</span><span class="n">ex</span><span class="p">)</span> <span class="c1"># Shows the multiline example is parsed</span>
 <span class="go">2</span>
 </pre></div>

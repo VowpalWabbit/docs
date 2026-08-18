@@ -583,8 +583,8 @@
 <p>Before we begin making predictions for regression problems, we need to create a dataset. For example, say we want to predict whether a house will require a new roof in the next 10 years.</p>
 <p>Create a training-set file in Vowpal Wabbit <code class="docutils literal notranslate"><span class="pre">house_dataset</span></code> and copy the following dataset:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">0</span> <span class="o">|</span> <span class="n">price</span><span class="p">:</span><span class="mf">.23</span> <span class="n">sqft</span><span class="p">:</span><span class="mf">.25</span> <span class="n">age</span><span class="p">:</span><span class="mf">.05</span> <span class="mi">2006</span>
-<span class="mi">1</span> <span class="mi">2</span> <span class="s1">&#39;second_house | price:.18 sqft:.15 age:.35 1976</span>
-<span class="mi">0</span> <span class="mi">1</span> <span class="mf">0.5</span> <span class="s1">&#39;third_house | price:.53 sqft:.32 age:.87 1924</span>
+<span class="mi">1</span> <span class="mi">2</span> <span class="s1">'second_house | price:.18 sqft:.15 age:.35 1976</span>
+<span class="mi">0</span> <span class="mi">1</span> <span class="mf">0.5</span> <span class="s1">'third_house | price:.53 sqft:.32 age:.87 1924</span>
 </pre></div>
 </div>
 <section id="vowpal-wabbit-hashing-techniques">
@@ -601,7 +601,7 @@
 <li><p>The features in the first line are <code class="docutils literal notranslate"><span class="pre">price</span></code>, <code class="docutils literal notranslate"><span class="pre">sqft</span></code>, <code class="docutils literal notranslate"><span class="pre">age</span></code>, and <code class="docutils literal notranslate"><span class="pre">2006</span></code>. Each feature may have an optional <code class="docutils literal notranslate"><span class="pre">:&lt;numeric_value&gt;</span></code> following it or, if the value is missing, an implied value of <code class="docutils literal notranslate"><span class="pre">1</span></code>.</p></li>
 </ul>
 <p>The label information for the second line is more complex:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span> <span class="mi">2</span> <span class="s1">&#39;second_house | price:.18 sqft:.15 age:.35 1976</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span> <span class="mi">2</span> <span class="s1">'second_house | price:.18 sqft:.15 age:.35 1976</span>
 </pre></div>
 </div>
 <ul class="simple">
@@ -610,7 +610,7 @@
 <li><p>A missing importance weight defaults to 1. <code class="docutils literal notranslate"><span class="pre">'second_house</span></code> is the tag. See Vowpal Wabbit live diagnostics section for more on importance weight.</p></li>
 </ul>
 <p>The third line is more straightforward, except for an additional number. In the label information following the importance weight, the <code class="docutils literal notranslate"><span class="pre">0.5</span></code> is an initial prediction.:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">0</span> <span class="mi">1</span> <span class="mf">0.5</span> <span class="s1">&#39;third_house | price:.53 sqft:.32 age:.87 1924</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">0</span> <span class="mi">1</span> <span class="mf">0.5</span> <span class="s1">'third_house | price:.53 sqft:.32 age:.87 1924</span>
 </pre></div>
 </div>
 <p>Sometimes you have multiple interacting learning systems and want to be able to predict an offset rather than an absolute value.</p>
@@ -637,7 +637,7 @@ weighted example sum = 4.000000
 weighted label sum = 2.000000
 average loss = 0.750000
 best constant = 0.500000
-best constant&#39;s loss = 0.250000
+best constant's loss = 0.250000
 total feature number = 15
 </pre></div>
 </div>
@@ -752,7 +752,7 @@ total feature number = 15
 <span class="n">weighted</span> <span class="n">label</span> <span class="nb">sum</span> <span class="o">=</span> <span class="mf">2.000000</span>
 <span class="n">average</span> <span class="n">loss</span> <span class="o">=</span> <span class="mf">0.750000</span>
 <span class="n">best</span> <span class="n">constant</span> <span class="o">=</span> <span class="mf">0.500000</span>
-<span class="n">best</span> <span class="n">constant</span><span class="s1">&#39;s loss = 0.250000</span>
+<span class="n">best</span> <span class="n">constant</span><span class="s1">'s loss = 0.250000</span>
 <span class="n">total</span> <span class="n">feature</span> <span class="n">number</span> <span class="o">=</span> <span class="mi">15</span>
 </pre></div>
 </div>

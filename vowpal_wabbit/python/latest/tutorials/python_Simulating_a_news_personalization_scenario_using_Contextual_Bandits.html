@@ -650,17 +650,17 @@
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">get_cost</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">action</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;user&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Tom&quot;</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;politics&quot;</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">"user"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"Tom"</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">"time_of_day"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"morning"</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">"politics"</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">USER_LIKED_ARTICLE</span>
-        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;afternoon&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;music&quot;</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">"time_of_day"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"afternoon"</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">"music"</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">USER_LIKED_ARTICLE</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">USER_DISLIKED_ARTICLE</span>
-    <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;user&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Anna&quot;</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;sports&quot;</span><span class="p">:</span>
+    <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">"user"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"Anna"</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">"time_of_day"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"morning"</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">"sports"</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">USER_LIKED_ARTICLE</span>
-        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;afternoon&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;politics&quot;</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">"time_of_day"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"afternoon"</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">"politics"</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">USER_LIKED_ARTICLE</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">USER_DISLIKED_ARTICLE</span>
@@ -678,14 +678,14 @@
 <span class="k">def</span><span class="w"> </span><span class="nf">to_vw_example_format</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">cb_label</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">cb_label</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
         <span class="n">chosen_action</span><span class="p">,</span> <span class="n">cost</span><span class="p">,</span> <span class="n">prob</span> <span class="o">=</span> <span class="n">cb_label</span>
-    <span class="n">example_string</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
-    <span class="n">example_string</span> <span class="o">+=</span> <span class="s2">&quot;shared |User user=</span><span class="si">{}</span><span class="s2"> time_of_day=</span><span class="si">{}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
-        <span class="n">context</span><span class="p">[</span><span class="s2">&quot;user&quot;</span><span class="p">],</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span>
+    <span class="n">example_string</span> <span class="o">=</span> <span class="s2">""</span>
+    <span class="n">example_string</span> <span class="o">+=</span> <span class="s2">"shared |User user=</span><span class="si">{}</span><span class="s2"> time_of_day=</span><span class="si">{}</span><span class="se">\n</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+        <span class="n">context</span><span class="p">[</span><span class="s2">"user"</span><span class="p">],</span> <span class="n">context</span><span class="p">[</span><span class="s2">"time_of_day"</span><span class="p">]</span>
     <span class="p">)</span>
     <span class="k">for</span> <span class="n">action</span> <span class="ow">in</span> <span class="n">actions</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">cb_label</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="n">chosen_action</span><span class="p">:</span>
-            <span class="n">example_string</span> <span class="o">+=</span> <span class="s2">&quot;0:</span><span class="si">{}</span><span class="s2">:</span><span class="si">{}</span><span class="s2"> &quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">cost</span><span class="p">,</span> <span class="n">prob</span><span class="p">)</span>
-        <span class="n">example_string</span> <span class="o">+=</span> <span class="s2">&quot;|Action article=</span><span class="si">{}</span><span class="s2"> </span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">action</span><span class="p">)</span>
+            <span class="n">example_string</span> <span class="o">+=</span> <span class="s2">"0:</span><span class="si">{}</span><span class="s2">:</span><span class="si">{}</span><span class="s2"> "</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">cost</span><span class="p">,</span> <span class="n">prob</span><span class="p">)</span>
+        <span class="n">example_string</span> <span class="o">+=</span> <span class="s2">"|Action article=</span><span class="si">{}</span><span class="s2"> </span><span class="se">\n</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">action</span><span class="p">)</span>
     <span class="c1"># Strip the last newline</span>
     <span class="k">return</span> <span class="n">example_string</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
 </pre></div>
@@ -695,8 +695,8 @@
 <p>To understand what’s going on here let’s go through an example. Here, it’s the morning and the user is Tom. There are four possible articles. So in the VW format there is one line that starts with shared, this is the shared context, followed by four lines each corresponding to an article.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">context</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;user&quot;</span><span class="p">:</span> <span class="s2">&quot;Tom&quot;</span><span class="p">,</span> <span class="s2">&quot;time_of_day&quot;</span><span class="p">:</span> <span class="s2">&quot;morning&quot;</span><span class="p">}</span>
-<span class="n">actions</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;politics&quot;</span><span class="p">,</span> <span class="s2">&quot;sports&quot;</span><span class="p">,</span> <span class="s2">&quot;music&quot;</span><span class="p">,</span> <span class="s2">&quot;food&quot;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">context</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"user"</span><span class="p">:</span> <span class="s2">"Tom"</span><span class="p">,</span> <span class="s2">"time_of_day"</span><span class="p">:</span> <span class="s2">"morning"</span><span class="p">}</span>
+<span class="n">actions</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"politics"</span><span class="p">,</span> <span class="s2">"sports"</span><span class="p">,</span> <span class="s2">"music"</span><span class="p">,</span> <span class="s2">"food"</span><span class="p">]</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">to_vw_example_format</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">actions</span><span class="p">))</span>
 </pre></div>
@@ -758,9 +758,9 @@
 <p>We will choose between Tom and Anna uniformly at random and also choose their time of visit uniformly at random. You can think of this as us tossing a coin to choose between Tom and Anna (Anna if heads and Tom if tails) and another coin toss for choosing time of day.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">users</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Tom&quot;</span><span class="p">,</span> <span class="s2">&quot;Anna&quot;</span><span class="p">]</span>
-<span class="n">times_of_day</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;morning&quot;</span><span class="p">,</span> <span class="s2">&quot;afternoon&quot;</span><span class="p">]</span>
-<span class="n">actions</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;politics&quot;</span><span class="p">,</span> <span class="s2">&quot;sports&quot;</span><span class="p">,</span> <span class="s2">&quot;music&quot;</span><span class="p">,</span> <span class="s2">&quot;food&quot;</span><span class="p">,</span> <span class="s2">&quot;finance&quot;</span><span class="p">,</span> <span class="s2">&quot;health&quot;</span><span class="p">,</span> <span class="s2">&quot;camping&quot;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">users</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Tom"</span><span class="p">,</span> <span class="s2">"Anna"</span><span class="p">]</span>
+<span class="n">times_of_day</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"morning"</span><span class="p">,</span> <span class="s2">"afternoon"</span><span class="p">]</span>
+<span class="n">actions</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"politics"</span><span class="p">,</span> <span class="s2">"sports"</span><span class="p">,</span> <span class="s2">"music"</span><span class="p">,</span> <span class="s2">"food"</span><span class="p">,</span> <span class="s2">"finance"</span><span class="p">,</span> <span class="s2">"health"</span><span class="p">,</span> <span class="s2">"camping"</span><span class="p">]</span>
 
 
 <span class="k">def</span><span class="w"> </span><span class="nf">choose_user</span><span class="p">(</span><span class="n">users</span><span class="p">):</span>
@@ -777,13 +777,13 @@
         <span class="n">rows</span> <span class="o">=</span> <span class="n">itertools</span><span class="o">.</span><span class="n">product</span><span class="p">(</span><span class="o">*</span><span class="n">data_dict</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
         <span class="k">return</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="o">.</span><span class="n">from_records</span><span class="p">(</span><span class="n">rows</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">data_dict</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
 
-    <span class="n">df</span> <span class="o">=</span> <span class="n">expand_grid</span><span class="p">({</span><span class="s2">&quot;users&quot;</span><span class="p">:</span> <span class="n">users</span><span class="p">,</span> <span class="s2">&quot;times_of_day&quot;</span><span class="p">:</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="s2">&quot;actions&quot;</span><span class="p">:</span> <span class="n">actions</span><span class="p">})</span>
-    <span class="n">df</span><span class="p">[</span><span class="s2">&quot;cost&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span>
-        <span class="k">lambda</span> <span class="n">r</span><span class="p">:</span> <span class="n">cost_fun</span><span class="p">({</span><span class="s2">&quot;user&quot;</span><span class="p">:</span> <span class="n">r</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s2">&quot;time_of_day&quot;</span><span class="p">:</span> <span class="n">r</span><span class="p">[</span><span class="mi">1</span><span class="p">]},</span> <span class="n">r</span><span class="p">[</span><span class="mi">2</span><span class="p">]),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">expand_grid</span><span class="p">({</span><span class="s2">"users"</span><span class="p">:</span> <span class="n">users</span><span class="p">,</span> <span class="s2">"times_of_day"</span><span class="p">:</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="s2">"actions"</span><span class="p">:</span> <span class="n">actions</span><span class="p">})</span>
+    <span class="n">df</span><span class="p">[</span><span class="s2">"cost"</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span>
+        <span class="k">lambda</span> <span class="n">r</span><span class="p">:</span> <span class="n">cost_fun</span><span class="p">({</span><span class="s2">"user"</span><span class="p">:</span> <span class="n">r</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s2">"time_of_day"</span><span class="p">:</span> <span class="n">r</span><span class="p">[</span><span class="mi">1</span><span class="p">]},</span> <span class="n">r</span><span class="p">[</span><span class="mi">2</span><span class="p">]),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span>
     <span class="p">)</span>
 
     <span class="k">return</span> <span class="n">df</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span>
-        <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;users&quot;</span><span class="p">,</span> <span class="s2">&quot;times_of_day&quot;</span><span class="p">],</span> <span class="n">columns</span><span class="o">=</span><span class="s2">&quot;actions&quot;</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="s2">&quot;cost&quot;</span>
+        <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s2">"users"</span><span class="p">,</span> <span class="s2">"times_of_day"</span><span class="p">],</span> <span class="n">columns</span><span class="o">=</span><span class="s2">"actions"</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="s2">"cost"</span>
     <span class="p">)</span>
 
 
@@ -792,8 +792,8 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3156/1199758655.py:22: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
-  lambda r: cost_fun({&quot;user&quot;: r[0], &quot;time_of_day&quot;: r[1]}, r[2]), axis=1
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3414/1199758655.py:22: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  lambda r: cost_fun({"user": r[0], "time_of_day": r[1]}, r[2]), axis=1
 </pre></div>
 </div>
 <div class="output text_html"><div>
@@ -911,7 +911,7 @@
         <span class="n">time_of_day</span> <span class="o">=</span> <span class="n">choose_time_of_day</span><span class="p">(</span><span class="n">times_of_day</span><span class="p">)</span>
 
         <span class="c1"># 3. Pass context to vw to get an action</span>
-        <span class="n">context</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;user&quot;</span><span class="p">:</span> <span class="n">user</span><span class="p">,</span> <span class="s2">&quot;time_of_day&quot;</span><span class="p">:</span> <span class="n">time_of_day</span><span class="p">}</span>
+        <span class="n">context</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"user"</span><span class="p">:</span> <span class="n">user</span><span class="p">,</span> <span class="s2">"time_of_day"</span><span class="p">:</span> <span class="n">time_of_day</span><span class="p">}</span>
         <span class="n">action</span><span class="p">,</span> <span class="n">prob</span> <span class="o">=</span> <span class="n">get_action</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">context</span><span class="p">,</span> <span class="n">actions</span><span class="p">)</span>
 
         <span class="c1"># 4. Get cost of the action we chose</span>
@@ -940,8 +940,8 @@
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">plot_ctr</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">,</span> <span class="n">ctr</span><span class="p">):</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_iterations</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">ctr</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;num_iterations&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;ctr&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">"num_iterations"</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">"ctr"</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
 </pre></div>
 </div>
@@ -956,7 +956,7 @@
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Instantiate learner in VW</span>
-<span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--cb_explore_adf -q UA --quiet --epsilon 0.2&quot;</span><span class="p">)</span>
+<span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">"--cb_explore_adf -q UA --quiet --epsilon 0.2"</span><span class="p">)</span>
 
 <span class="n">num_iterations</span> <span class="o">=</span> <span class="mi">5000</span>
 <span class="n">ctr</span> <span class="o">=</span> <span class="n">run_simulation</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">users</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">get_cost</span><span class="p">)</span>
@@ -966,7 +966,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/b4d476793d9e21a630d948bc6b87f6967d7cc019844be799d18dc363cdf2622f.png" src="../_images/b4d476793d9e21a630d948bc6b87f6967d7cc019844be799d18dc363cdf2622f.png" />
+<img alt="../_images/75439e527039ce3198748bf5966a2607a85e4ed190efb62e7589219ad90db345.png" src="../_images/75439e527039ce3198748bf5966a2607a85e4ed190efb62e7589219ad90db345.png" />
 </div>
 </div>
 <section id="aside-interactions">
@@ -975,7 +975,7 @@
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Instantiate learner in VW but without -q</span>
-<span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--cb_explore_adf --quiet --epsilon 0.2&quot;</span><span class="p">)</span>
+<span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">"--cb_explore_adf --quiet --epsilon 0.2"</span><span class="p">)</span>
 
 <span class="n">num_iterations</span> <span class="o">=</span> <span class="mi">5000</span>
 <span class="n">ctr</span> <span class="o">=</span> <span class="n">run_simulation</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">users</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">get_cost</span><span class="p">)</span>
@@ -985,7 +985,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/0fd6e238686ac6cb0ed712e4d159ec3e6b7b195a4602d7ff82b09edaf350b61d.png" src="../_images/0fd6e238686ac6cb0ed712e4d159ec3e6b7b195a4602d7ff82b09edaf350b61d.png" />
+<img alt="../_images/56bf5b53d82ce2332578bdf9e01806d9eb6e279907039642910d7f21f53e876f.png" src="../_images/56bf5b53d82ce2332578bdf9e01806d9eb6e279907039642910d7f21f53e876f.png" />
 </div>
 </div>
 </section>
@@ -996,7 +996,7 @@
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Instantiate learner in VW</span>
-<span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--cb_explore_adf -q UA --quiet --epsilon 0.2&quot;</span><span class="p">)</span>
+<span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">"--cb_explore_adf -q UA --quiet --epsilon 0.2"</span><span class="p">)</span>
 
 <span class="n">num_iterations</span> <span class="o">=</span> <span class="mi">5000</span>
 <span class="n">ctr</span> <span class="o">=</span> <span class="n">run_simulation</span><span class="p">(</span>
@@ -1008,7 +1008,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/1410551ff32195e7aaa78f83eb98cd708f6a0f3257fb172db12d9e4707a45557.png" src="../_images/1410551ff32195e7aaa78f83eb98cd708f6a0f3257fb172db12d9e4707a45557.png" />
+<img alt="../_images/388260a063ec096ba0e12f92a32bf43ebaf2d3dcc0276ef0e511564ecc894eef.png" src="../_images/388260a063ec096ba0e12f92a32bf43ebaf2d3dcc0276ef0e511564ecc894eef.png" />
 </div>
 </div>
 </section>
@@ -1061,17 +1061,17 @@
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">get_cost_new1</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">action</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;user&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Tom&quot;</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;politics&quot;</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">"user"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"Tom"</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">"time_of_day"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"morning"</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">"politics"</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">USER_LIKED_ARTICLE</span>
-        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;afternoon&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;sports&quot;</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">"time_of_day"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"afternoon"</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">"sports"</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">USER_LIKED_ARTICLE</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">USER_DISLIKED_ARTICLE</span>
-    <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;user&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Anna&quot;</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;sports&quot;</span><span class="p">:</span>
+    <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">"user"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"Anna"</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">"time_of_day"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"morning"</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">"sports"</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">USER_LIKED_ARTICLE</span>
-        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;afternoon&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;sports&quot;</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">"time_of_day"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"afternoon"</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">"sports"</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">USER_LIKED_ARTICLE</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">USER_DISLIKED_ARTICLE</span>
@@ -1082,8 +1082,8 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3156/1199758655.py:22: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
-  lambda r: cost_fun({&quot;user&quot;: r[0], &quot;time_of_day&quot;: r[1]}, r[2]), axis=1
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3414/1199758655.py:22: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  lambda r: cost_fun({"user": r[0], "time_of_day": r[1]}, r[2]), axis=1
 </pre></div>
 </div>
 <div class="output text_html"><div>
@@ -1191,7 +1191,7 @@
             <span class="n">time_of_day</span> <span class="o">=</span> <span class="n">choose_time_of_day</span><span class="p">(</span><span class="n">times_of_day</span><span class="p">)</span>
 
             <span class="c1"># Construct context based on chosen user and time of day</span>
-            <span class="n">context</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;user&quot;</span><span class="p">:</span> <span class="n">user</span><span class="p">,</span> <span class="s2">&quot;time_of_day&quot;</span><span class="p">:</span> <span class="n">time_of_day</span><span class="p">}</span>
+            <span class="n">context</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"user"</span><span class="p">:</span> <span class="n">user</span><span class="p">,</span> <span class="s2">"time_of_day"</span><span class="p">:</span> <span class="n">time_of_day</span><span class="p">}</span>
 
             <span class="c1"># 3. Use the get_action function we defined earlier</span>
             <span class="n">action</span><span class="p">,</span> <span class="n">prob</span> <span class="o">=</span> <span class="n">get_action</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">context</span><span class="p">,</span> <span class="n">actions</span><span class="p">)</span>
@@ -1235,7 +1235,7 @@
             <span class="n">time_of_day</span> <span class="o">=</span> <span class="n">choose_time_of_day</span><span class="p">(</span><span class="n">times_of_day</span><span class="p">)</span>
 
             <span class="c1"># Construct context based on chosen user and time of day</span>
-            <span class="n">context</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;user&quot;</span><span class="p">:</span> <span class="n">user</span><span class="p">,</span> <span class="s2">&quot;time_of_day&quot;</span><span class="p">:</span> <span class="n">time_of_day</span><span class="p">}</span>
+            <span class="n">context</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"user"</span><span class="p">:</span> <span class="n">user</span><span class="p">,</span> <span class="s2">"time_of_day"</span><span class="p">:</span> <span class="n">time_of_day</span><span class="p">}</span>
 
             <span class="c1"># 3. Use the get_action function we defined earlier</span>
             <span class="n">action</span><span class="p">,</span> <span class="n">prob</span> <span class="o">=</span> <span class="n">get_action</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">context</span><span class="p">,</span> <span class="n">actions</span><span class="p">)</span>
@@ -1272,7 +1272,7 @@
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># use first reward function initially and then switch to second reward function</span>
 
 <span class="c1"># Instantiate learner in VW</span>
-<span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--cb_explore_adf -q UA --quiet --epsilon 0.2&quot;</span><span class="p">)</span>
+<span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">"--cb_explore_adf -q UA --quiet --epsilon 0.2"</span><span class="p">)</span>
 
 <span class="n">num_iterations_per_cost_func</span> <span class="o">=</span> <span class="mi">5000</span>
 <span class="n">cost_functions</span> <span class="o">=</span> <span class="p">[</span><span class="n">get_cost</span><span class="p">,</span> <span class="n">get_cost_new1</span><span class="p">]</span>
@@ -1287,7 +1287,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/a0ebc560e9cd6bae5f2f1609807188c38493c5ccf5decd49d670dfb90de760e7.png" src="../_images/a0ebc560e9cd6bae5f2f1609807188c38493c5ccf5decd49d670dfb90de760e7.png" />
+<img alt="../_images/96783c412b6d86d15b19b7fddd987b40164132fddca29c91e9ba16faf73036f7.png" src="../_images/96783c412b6d86d15b19b7fddd987b40164132fddca29c91e9ba16faf73036f7.png" />
 </div>
 </div>
 <p><strong>Note:</strong> The initial spike in CTR depends on the rewards received for the first few examples. When you run on your own, you may see something different initially because our simulator is designed to have randomness.</p>
@@ -1300,7 +1300,7 @@
 <span class="c1"># use first reward function initially and then switch to second reward function</span>
 
 <span class="c1"># Instantiate learner in VW</span>
-<span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--cb_explore_adf -q UA --quiet --epsilon 0.2&quot;</span><span class="p">)</span>
+<span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">"--cb_explore_adf -q UA --quiet --epsilon 0.2"</span><span class="p">)</span>
 
 <span class="n">num_iterations_per_cost_func</span> <span class="o">=</span> <span class="mi">5000</span>
 <span class="n">cost_functions</span> <span class="o">=</span> <span class="p">[</span><span class="n">get_cost</span><span class="p">,</span> <span class="n">get_cost_new1</span><span class="p">]</span>
@@ -1320,7 +1320,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/66bbb3635f50c84bc47973dc830bfaae3ba260eddf7fc47e30297190d3f684d5.png" src="../_images/66bbb3635f50c84bc47973dc830bfaae3ba260eddf7fc47e30297190d3f684d5.png" />
+<img alt="../_images/9e0fe70a51d4fd19a027e9e2fd6d73ce813937ab5b1e7ca95fdcd96023297430.png" src="../_images/9e0fe70a51d4fd19a027e9e2fd6d73ce813937ab5b1e7ca95fdcd96023297430.png" />
 </div>
 </div>
 </section>
@@ -1372,17 +1372,17 @@
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">get_cost_new2</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">action</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;user&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Tom&quot;</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;politics&quot;</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">"user"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"Tom"</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">"time_of_day"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"morning"</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">"politics"</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">USER_LIKED_ARTICLE</span>
-        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;afternoon&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;food&quot;</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">"time_of_day"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"afternoon"</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">"food"</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">USER_LIKED_ARTICLE</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">USER_DISLIKED_ARTICLE</span>
-    <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;user&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Anna&quot;</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;food&quot;</span><span class="p">:</span>
+    <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">"user"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"Anna"</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">"time_of_day"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"morning"</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">"food"</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">USER_LIKED_ARTICLE</span>
-        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;afternoon&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;food&quot;</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">"time_of_day"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"afternoon"</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">"food"</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">USER_LIKED_ARTICLE</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">USER_DISLIKED_ARTICLE</span>
@@ -1399,7 +1399,7 @@
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># use first reward function initially and then switch to third reward function</span>
 
 <span class="c1"># Instantiate learner in VW</span>
-<span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--cb_explore_adf -q UA --quiet --epsilon 0.2&quot;</span><span class="p">)</span>
+<span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">"--cb_explore_adf -q UA --quiet --epsilon 0.2"</span><span class="p">)</span>
 
 <span class="n">num_iterations_per_cost_func</span> <span class="o">=</span> <span class="mi">5000</span>
 <span class="n">cost_functions</span> <span class="o">=</span> <span class="p">[</span><span class="n">get_cost</span><span class="p">,</span> <span class="n">get_cost_new2</span><span class="p">]</span>
@@ -1414,7 +1414,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/7f26dd0143f3dee4a83eefccb92046f9f5bb6d33f96c27da4a697de9e81ec72e.png" src="../_images/7f26dd0143f3dee4a83eefccb92046f9f5bb6d33f96c27da4a697de9e81ec72e.png" />
+<img alt="../_images/16167f3a3f8f74b7026d7ab3d6522272628f9e0e7e1fb47dc7b0edbda74cf5c2.png" src="../_images/16167f3a3f8f74b7026d7ab3d6522272628f9e0e7e1fb47dc7b0edbda74cf5c2.png" />
 </div>
 </div>
 </section>
@@ -1426,7 +1426,7 @@
 <span class="c1"># use first reward function initially and then switch to third reward function</span>
 
 <span class="c1"># Instantiate learner in VW</span>
-<span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--cb_explore_adf -q UA --quiet --epsilon 0.2&quot;</span><span class="p">)</span>
+<span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">"--cb_explore_adf -q UA --quiet --epsilon 0.2"</span><span class="p">)</span>
 
 <span class="n">num_iterations_per_cost_func</span> <span class="o">=</span> <span class="mi">5000</span>
 <span class="n">cost_functions</span> <span class="o">=</span> <span class="p">[</span><span class="n">get_cost</span><span class="p">,</span> <span class="n">get_cost_new2</span><span class="p">]</span>
@@ -1447,7 +1447,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/f6de83d06ee0fc19cfeecf42dc2972ff44a30c096c292e5ff3d3d0d74a9f54b2.png" src="../_images/f6de83d06ee0fc19cfeecf42dc2972ff44a30c096c292e5ff3d3d0d74a9f54b2.png" />
+<img alt="../_images/34a49be44b9be06dd8349853fa115e7b1f2242c0ecc912abd33e65eba08b5331.png" src="../_images/34a49be44b9be06dd8349853fa115e7b1f2242c0ecc912abd33e65eba08b5331.png" />
 </div>
 </div>
 </section>

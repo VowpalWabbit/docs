@@ -611,10 +611,10 @@
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">NUM_ITERATIONS</span> <span class="o">=</span> <span class="mi">2500</span>
-<span class="n">shared_contexts</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;corporate&quot;</span><span class="p">,</span> <span class="s2">&quot;trade&quot;</span><span class="p">]</span>
-<span class="n">torso_items</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;tshirt&quot;</span><span class="p">,</span> <span class="s2">&quot;buttonupshirt&quot;</span><span class="p">,</span> <span class="s2">&quot;highvis&quot;</span><span class="p">]</span>
-<span class="n">legs_items</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;workpants&quot;</span><span class="p">,</span> <span class="s2">&quot;formalpants&quot;</span><span class="p">,</span> <span class="s2">&quot;shorts&quot;</span><span class="p">]</span>
-<span class="n">feet_items</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;formalshoes&quot;</span><span class="p">,</span> <span class="s2">&quot;runners&quot;</span><span class="p">,</span> <span class="s2">&quot;flipflops&quot;</span><span class="p">,</span> <span class="s2">&quot;boots&quot;</span><span class="p">]</span>
+<span class="n">shared_contexts</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"corporate"</span><span class="p">,</span> <span class="s2">"trade"</span><span class="p">]</span>
+<span class="n">torso_items</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"tshirt"</span><span class="p">,</span> <span class="s2">"buttonupshirt"</span><span class="p">,</span> <span class="s2">"highvis"</span><span class="p">]</span>
+<span class="n">legs_items</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"workpants"</span><span class="p">,</span> <span class="s2">"formalpants"</span><span class="p">,</span> <span class="s2">"shorts"</span><span class="p">]</span>
+<span class="n">feet_items</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"formalshoes"</span><span class="p">,</span> <span class="s2">"runners"</span><span class="p">,</span> <span class="s2">"flipflops"</span><span class="p">,</span> <span class="s2">"boots"</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -630,11 +630,11 @@
 
 
 <span class="k">def</span><span class="w"> </span><span class="nf">reward_function</span><span class="p">(</span><span class="n">shared_context</span><span class="p">,</span> <span class="n">torso_index</span><span class="p">,</span> <span class="n">legs_index</span><span class="p">,</span> <span class="n">feet_index</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">shared_context</span> <span class="o">==</span> <span class="s2">&quot;corporate&quot;</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">shared_context</span> <span class="o">==</span> <span class="s2">"corporate"</span><span class="p">:</span>
         <span class="n">torso_values</span> <span class="o">=</span> <span class="p">[</span><span class="n">noise</span><span class="p">(</span><span class="mf">0.2</span><span class="p">),</span> <span class="n">noise</span><span class="p">(</span><span class="mf">0.3</span><span class="p">),</span> <span class="n">noise</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)]</span>
         <span class="n">legs_val</span> <span class="o">=</span> <span class="p">[</span><span class="n">noise</span><span class="p">(</span><span class="mf">0.1</span><span class="p">),</span> <span class="n">noise</span><span class="p">(</span><span class="mf">0.3</span><span class="p">),</span> <span class="n">noise</span><span class="p">(</span><span class="mf">0.2</span><span class="p">)]</span>
         <span class="n">feet_values</span> <span class="o">=</span> <span class="p">[</span><span class="n">noise</span><span class="p">(</span><span class="mf">0.4</span><span class="p">),</span> <span class="n">noise</span><span class="p">(</span><span class="mf">0.3</span><span class="p">),</span> <span class="n">noise</span><span class="p">(</span><span class="mf">0.05</span><span class="p">),</span> <span class="n">noise</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)]</span>
-    <span class="k">if</span> <span class="n">shared_context</span> <span class="o">==</span> <span class="s2">&quot;trade&quot;</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">shared_context</span> <span class="o">==</span> <span class="s2">"trade"</span><span class="p">:</span>
         <span class="n">torso_values</span> <span class="o">=</span> <span class="p">[</span><span class="n">noise</span><span class="p">(</span><span class="mf">0.15</span><span class="p">),</span> <span class="n">noise</span><span class="p">(</span><span class="mf">0.2</span><span class="p">),</span> <span class="n">noise</span><span class="p">(</span><span class="mf">0.3</span><span class="p">)]</span>
         <span class="n">legs_val</span> <span class="o">=</span> <span class="p">[</span><span class="n">noise</span><span class="p">(</span><span class="mf">0.4</span><span class="p">),</span> <span class="n">noise</span><span class="p">(</span><span class="mf">0.2</span><span class="p">),</span> <span class="n">noise</span><span class="p">(</span><span class="mf">0.35</span><span class="p">)]</span>
         <span class="n">feet_values</span> <span class="o">=</span> <span class="p">[</span><span class="n">noise</span><span class="p">(</span><span class="mf">0.15</span><span class="p">),</span> <span class="n">noise</span><span class="p">(</span><span class="mf">0.2</span><span class="p">),</span> <span class="n">noise</span><span class="p">(</span><span class="mf">0.1</span><span class="p">),</span> <span class="n">noise</span><span class="p">(</span><span class="mf">0.3</span><span class="p">)]</span>
@@ -652,20 +652,20 @@
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">generate_slates_text_format</span><span class="p">(</span><span class="n">shared_context</span><span class="p">):</span>
     <span class="k">return</span> <span class="p">[</span>
-        <span class="sa">f</span><span class="s2">&quot;slates shared |User </span><span class="si">{</span><span class="n">shared_context</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;slates action 0 |Action tshirt&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;slates action 0 |Action buttonupshirt&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;slates action 0 |Action highvis&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;slates action 1 |Action workpants&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;slates action 1 |Action formalpants&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;slates action 1 |Action shorts&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;slates action 2 |Action formalshoes&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;slates action 2 |Action runners&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;slates action 2 |Action flipflops&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;slates action 2 |Action boots&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;slates slot |Slot torso&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;slates slot |Slot legs&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;slates slot |Slot feet&quot;</span><span class="p">,</span>
+        <span class="sa">f</span><span class="s2">"slates shared |User </span><span class="si">{</span><span class="n">shared_context</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span>
+        <span class="s2">"slates action 0 |Action tshirt"</span><span class="p">,</span>
+        <span class="s2">"slates action 0 |Action buttonupshirt"</span><span class="p">,</span>
+        <span class="s2">"slates action 0 |Action highvis"</span><span class="p">,</span>
+        <span class="s2">"slates action 1 |Action workpants"</span><span class="p">,</span>
+        <span class="s2">"slates action 1 |Action formalpants"</span><span class="p">,</span>
+        <span class="s2">"slates action 1 |Action shorts"</span><span class="p">,</span>
+        <span class="s2">"slates action 2 |Action formalshoes"</span><span class="p">,</span>
+        <span class="s2">"slates action 2 |Action runners"</span><span class="p">,</span>
+        <span class="s2">"slates action 2 |Action flipflops"</span><span class="p">,</span>
+        <span class="s2">"slates action 2 |Action boots"</span><span class="p">,</span>
+        <span class="s2">"slates slot |Slot torso"</span><span class="p">,</span>
+        <span class="s2">"slates slot |Slot legs"</span><span class="p">,</span>
+        <span class="s2">"slates slot |Slot feet"</span><span class="p">,</span>
     <span class="p">]</span>
 
 
@@ -680,20 +680,20 @@
     <span class="n">chosen_feet_prob</span><span class="p">,</span>
 <span class="p">):</span>
     <span class="k">return</span> <span class="p">[</span>
-        <span class="sa">f</span><span class="s2">&quot;slates shared </span><span class="si">{</span><span class="o">-</span><span class="mi">1</span><span class="o">*</span><span class="n">reward</span><span class="si">}</span><span class="s2"> |User </span><span class="si">{</span><span class="n">shared_context</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;slates action 0 |Action tshirt&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;slates action 0 |Action buttonupshirt&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;slates action 0 |Action highvis&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;slates action 1 |Action workpants&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;slates action 1 |Action formalpants&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;slates action 1 |Action shorts&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;slates action 2 |Action formalshoes&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;slates action 2 |Action runners&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;slates action 2 |Action flipflops&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;slates action 2 |Action boots&quot;</span><span class="p">,</span>
-        <span class="sa">f</span><span class="s2">&quot;slates slot </span><span class="si">{</span><span class="n">chosen_torso_index</span><span class="si">}</span><span class="s2">:</span><span class="si">{</span><span class="n">chosen_torso_prob</span><span class="si">}</span><span class="s2"> |Slot torso&quot;</span><span class="p">,</span>
-        <span class="sa">f</span><span class="s2">&quot;slates slot </span><span class="si">{</span><span class="n">chosen_legs_index</span><span class="si">}</span><span class="s2">:</span><span class="si">{</span><span class="n">chosen_legs_prob</span><span class="si">}</span><span class="s2"> |Slot legs&quot;</span><span class="p">,</span>
-        <span class="sa">f</span><span class="s2">&quot;slates slot </span><span class="si">{</span><span class="n">chosen_feet_index</span><span class="si">}</span><span class="s2">:</span><span class="si">{</span><span class="n">chosen_feet_prob</span><span class="si">}</span><span class="s2"> |Slot feet&quot;</span><span class="p">,</span>
+        <span class="sa">f</span><span class="s2">"slates shared </span><span class="si">{</span><span class="o">-</span><span class="mi">1</span><span class="o">*</span><span class="n">reward</span><span class="si">}</span><span class="s2"> |User </span><span class="si">{</span><span class="n">shared_context</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span>
+        <span class="s2">"slates action 0 |Action tshirt"</span><span class="p">,</span>
+        <span class="s2">"slates action 0 |Action buttonupshirt"</span><span class="p">,</span>
+        <span class="s2">"slates action 0 |Action highvis"</span><span class="p">,</span>
+        <span class="s2">"slates action 1 |Action workpants"</span><span class="p">,</span>
+        <span class="s2">"slates action 1 |Action formalpants"</span><span class="p">,</span>
+        <span class="s2">"slates action 1 |Action shorts"</span><span class="p">,</span>
+        <span class="s2">"slates action 2 |Action formalshoes"</span><span class="p">,</span>
+        <span class="s2">"slates action 2 |Action runners"</span><span class="p">,</span>
+        <span class="s2">"slates action 2 |Action flipflops"</span><span class="p">,</span>
+        <span class="s2">"slates action 2 |Action boots"</span><span class="p">,</span>
+        <span class="sa">f</span><span class="s2">"slates slot </span><span class="si">{</span><span class="n">chosen_torso_index</span><span class="si">}</span><span class="s2">:</span><span class="si">{</span><span class="n">chosen_torso_prob</span><span class="si">}</span><span class="s2"> |Slot torso"</span><span class="p">,</span>
+        <span class="sa">f</span><span class="s2">"slates slot </span><span class="si">{</span><span class="n">chosen_legs_index</span><span class="si">}</span><span class="s2">:</span><span class="si">{</span><span class="n">chosen_legs_prob</span><span class="si">}</span><span class="s2"> |Slot legs"</span><span class="p">,</span>
+        <span class="sa">f</span><span class="s2">"slates slot </span><span class="si">{</span><span class="n">chosen_feet_index</span><span class="si">}</span><span class="s2">:</span><span class="si">{</span><span class="n">chosen_feet_prob</span><span class="si">}</span><span class="s2"> |Slot feet"</span><span class="p">,</span>
     <span class="p">]</span>
 </pre></div>
 </div>
@@ -705,7 +705,7 @@
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">slates_vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span>
-    <span class="s2">&quot;--slates --epsilon 0.2 --interactions SA UAS US UA -l 0.05 --power_t 0&quot;</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="kc">True</span>
+    <span class="s2">"--slates --epsilon 0.2 --interactions SA UAS US UA -l 0.05 --power_t 0"</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="kc">True</span>
 <span class="p">)</span>
 </pre></div>
 </div>
@@ -750,12 +750,12 @@
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">generate_combinations</span><span class="p">(</span><span class="n">shared_context</span><span class="p">,</span> <span class="n">torso_items</span><span class="p">,</span> <span class="n">legs_items</span><span class="p">,</span> <span class="n">feet_items</span><span class="p">):</span>
-    <span class="n">examples</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s2">&quot;shared |User </span><span class="si">{</span><span class="n">shared_context</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">]</span>
+    <span class="n">examples</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s2">"shared |User </span><span class="si">{</span><span class="n">shared_context</span><span class="si">}</span><span class="s2">"</span><span class="p">]</span>
     <span class="n">descriptions</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">torso</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">torso_items</span><span class="p">):</span>
         <span class="k">for</span> <span class="n">j</span><span class="p">,</span> <span class="n">legs</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">legs_items</span><span class="p">):</span>
             <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">feet</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">feet_items</span><span class="p">):</span>
-                <span class="n">examples</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;|Action torso=</span><span class="si">{</span><span class="n">torso</span><span class="si">}</span><span class="s2"> legs=</span><span class="si">{</span><span class="n">legs</span><span class="si">}</span><span class="s2"> feet=</span><span class="si">{</span><span class="n">feet</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="n">examples</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">"|Action torso=</span><span class="si">{</span><span class="n">torso</span><span class="si">}</span><span class="s2"> legs=</span><span class="si">{</span><span class="n">legs</span><span class="si">}</span><span class="s2"> feet=</span><span class="si">{</span><span class="n">feet</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
                 <span class="n">descriptions</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">k</span><span class="p">))</span>
 
     <span class="k">return</span> <span class="n">examples</span><span class="p">,</span> <span class="n">descriptions</span>
@@ -774,7 +774,7 @@
 
 
 <span class="n">cb_vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span>
-    <span class="s2">&quot;--cb_explore_adf --epsilon 0.2 --interactions AA AU AAU -l 0.05 --power_t 0&quot;</span><span class="p">,</span>
+    <span class="s2">"--cb_explore_adf --epsilon 0.2 --interactions AA AU AAU -l 0.05 --power_t 0"</span><span class="p">,</span>
     <span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
 <span class="p">)</span>
 
@@ -789,7 +789,7 @@
     <span class="n">torso_index</span><span class="p">,</span> <span class="n">legs_index</span><span class="p">,</span> <span class="n">feet_index</span> <span class="o">=</span> <span class="n">indices</span><span class="p">[</span><span class="n">chosen_index</span><span class="p">]</span>
     <span class="n">reward</span> <span class="o">=</span> <span class="n">reward_function</span><span class="p">(</span><span class="n">shared_context</span><span class="p">,</span> <span class="n">torso_index</span><span class="p">,</span> <span class="n">legs_index</span><span class="p">,</span> <span class="n">feet_index</span><span class="p">)</span>
     <span class="n">cb_rewards</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">reward</span><span class="p">)</span>
-    <span class="n">examples</span><span class="p">[</span><span class="n">chosen_index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;0:</span><span class="si">{</span><span class="o">-</span><span class="mi">1</span><span class="o">*</span><span class="n">reward</span><span class="si">}</span><span class="s2">:</span><span class="si">{</span><span class="n">prob</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">examples</span><span class="p">[</span><span class="n">chosen_index</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="n">examples</span><span class="p">[</span><span class="n">chosen_index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"0:</span><span class="si">{</span><span class="o">-</span><span class="mi">1</span><span class="o">*</span><span class="n">reward</span><span class="si">}</span><span class="s2">:</span><span class="si">{</span><span class="n">prob</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">examples</span><span class="p">[</span><span class="n">chosen_index</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span>
     <span class="n">cb_vw</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">examples</span><span class="p">)</span>
 
 <span class="n">cb_vw</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>
@@ -806,15 +806,15 @@
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">cb_rewards</span><span class="p">)</span><span class="o">.</span><span class="n">expanding</span><span class="p">()</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">slates_rewards</span><span class="p">)</span><span class="o">.</span><span class="n">expanding</span><span class="p">()</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Iterations&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Average reward&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">([</span><span class="s2">&quot;cb&quot;</span><span class="p">,</span> <span class="s2">&quot;slates&quot;</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">"Iterations"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">"Average reward"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">([</span><span class="s2">"cb"</span><span class="p">,</span> <span class="s2">"slates"</span><span class="p">])</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/f2e8209c48709bed1977cbd92a43b38ebaac34ac4e2cb96d7ab97667c0020f6a.png" src="../_images/f2e8209c48709bed1977cbd92a43b38ebaac34ac4e2cb96d7ab97667c0020f6a.png" />
+<img alt="../_images/9cf72d26832248897d12ebf8510a324aeeb673638b1563ddab13cef43629b7a0.png" src="../_images/9cf72d26832248897d12ebf8510a324aeeb673638b1563ddab13cef43629b7a0.png" />
 </div>
 </div>
 <p>As we can see, Slates learns a better policy with lower regret.</p>

@@ -494,15 +494,15 @@
 
 <span class="n">learnFromStrings</span> <span class="o">=</span> <span class="kc">False</span>
 
-<span class="c1"># this is a stupid program that basically mimics vw&#39;s behavior,</span>
+<span class="c1"># this is a stupid program that basically mimics vw's behavior,</span>
 <span class="c1"># mostly for the purpose of speed comparisons</span>
 
 
 <span class="k">def</span><span class="w"> </span><span class="nf">mini_vw</span><span class="p">(</span><span class="n">inputFile</span><span class="p">,</span> <span class="n">numPasses</span><span class="p">,</span> <span class="n">otherArgs</span><span class="p">):</span>
     <span class="n">vw</span> <span class="o">=</span> <span class="n">pyvw</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="n">otherArgs</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">numPasses</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;pass&#39;</span><span class="p">,</span> <span class="p">(</span><span class="n">p</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span>
-        <span class="n">h</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">inputFile</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'pass'</span><span class="p">,</span> <span class="p">(</span><span class="n">p</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span>
+        <span class="n">h</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">inputFile</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span>
         <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="n">h</span><span class="o">.</span><span class="n">readlines</span><span class="p">():</span>
             <span class="k">if</span> <span class="n">learnFromStrings</span><span class="p">:</span>
                 <span class="n">vw</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
@@ -514,13 +514,13 @@
         <span class="n">h</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     <span class="n">vw</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>
 
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;usage: mini_vw.py (inputFile) (#passes) (...other VW args...)&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'usage: mini_vw.py (inputFile) (#passes) (...other VW args...)'</span><span class="p">)</span>
         <span class="n">exit</span><span class="p">()</span>
     <span class="n">inputFile</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
     <span class="n">numPasses</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
-    <span class="n">otherArgs</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">3</span><span class="p">:])</span>
+    <span class="n">otherArgs</span> <span class="o">=</span> <span class="s1">' '</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">3</span><span class="p">:])</span>
 
     <span class="n">mini_vw</span><span class="p">(</span><span class="n">inputFile</span><span class="p">,</span> <span class="n">numPasses</span><span class="p">,</span> <span class="n">otherArgs</span><span class="p">)</span>
 </pre></div>

@@ -653,16 +653,16 @@
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">vowpalwabbit</span><span class="w"> </span><span class="kn">import</span> <span class="n">Workspace</span>
 
 <span class="c1"># Method 1: Command-line string</span>
-<span class="n">vw1</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--oaa 10 --bit_precision 24&quot;</span><span class="p">)</span>
+<span class="n">vw1</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="s2">"--oaa 10 --bit_precision 24"</span><span class="p">)</span>
 
 <span class="c1"># Method 2: Keyword arguments</span>
 <span class="n">vw2</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="n">oaa</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">bit_precision</span><span class="o">=</span><span class="mi">24</span><span class="p">)</span>
 
 <span class="c1"># Method 3: Argument list</span>
-<span class="n">vw3</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="n">arg_list</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;--oaa&quot;</span><span class="p">,</span> <span class="s2">&quot;10&quot;</span><span class="p">,</span> <span class="s2">&quot;--bit_precision&quot;</span><span class="p">,</span> <span class="s2">&quot;24&quot;</span><span class="p">])</span>
+<span class="n">vw3</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="n">arg_list</span><span class="o">=</span><span class="p">[</span><span class="s2">"--oaa"</span><span class="p">,</span> <span class="s2">"10"</span><span class="p">,</span> <span class="s2">"--bit_precision"</span><span class="p">,</span> <span class="s2">"24"</span><span class="p">])</span>
 
 <span class="c1"># Method 4: Mixed (all three are merged)</span>
-<span class="n">vw4</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--oaa 10&quot;</span><span class="p">,</span> <span class="n">bit_precision</span><span class="o">=</span><span class="mi">24</span><span class="p">)</span>
+<span class="n">vw4</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="s2">"--oaa 10"</span><span class="p">,</span> <span class="n">bit_precision</span><span class="o">=</span><span class="mi">24</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>All four examples above create equivalent configurations.</p>
@@ -699,7 +699,7 @@
 <h3>Single-Character Options<a class="headerlink" href="#single-character-options" title="Link to this heading">¶</a></h3>
 <p>Single-character options use a single dash on the command line but work the same way in Python:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># These are equivalent:</span>
-<span class="n">vw</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;-b 24 -l 0.1&quot;</span><span class="p">)</span>
+<span class="n">vw</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="s2">"-b 24 -l 0.1"</span><span class="p">)</span>
 <span class="n">vw</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="n">b</span><span class="o">=</span><span class="mi">24</span><span class="p">,</span> <span class="n">l</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -719,10 +719,10 @@
 <h3>Options with Multiple Values<a class="headerlink" href="#options-with-multiple-values" title="Link to this heading">¶</a></h3>
 <p>Some options can be specified multiple times. Use a list in Python:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Command line: vw -q ab -q cd --interactions abc</span>
-<span class="n">vw</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="n">q</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;ab&quot;</span><span class="p">,</span> <span class="s2">&quot;cd&quot;</span><span class="p">],</span> <span class="n">interactions</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;abc&quot;</span><span class="p">])</span>
+<span class="n">vw</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="n">q</span><span class="o">=</span><span class="p">[</span><span class="s2">"ab"</span><span class="p">,</span> <span class="s2">"cd"</span><span class="p">],</span> <span class="n">interactions</span><span class="o">=</span><span class="p">[</span><span class="s2">"abc"</span><span class="p">])</span>
 
 <span class="c1"># Or using arg_list for full control:</span>
-<span class="n">vw</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="n">arg_list</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;-q&quot;</span><span class="p">,</span> <span class="s2">&quot;ab&quot;</span><span class="p">,</span> <span class="s2">&quot;-q&quot;</span><span class="p">,</span> <span class="s2">&quot;cd&quot;</span><span class="p">,</span> <span class="s2">&quot;--interactions&quot;</span><span class="p">,</span> <span class="s2">&quot;abc&quot;</span><span class="p">])</span>
+<span class="n">vw</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="n">arg_list</span><span class="o">=</span><span class="p">[</span><span class="s2">"-q"</span><span class="p">,</span> <span class="s2">"ab"</span><span class="p">,</span> <span class="s2">"-q"</span><span class="p">,</span> <span class="s2">"cd"</span><span class="p">,</span> <span class="s2">"--interactions"</span><span class="p">,</span> <span class="s2">"abc"</span><span class="p">])</span>
 </pre></div>
 </div>
 </section>
@@ -730,10 +730,10 @@
 <h3>Options with Spaces or Special Characters<a class="headerlink" href="#options-with-spaces-or-special-characters" title="Link to this heading">¶</a></h3>
 <p>When option values contain spaces or special characters, use <code class="docutils literal notranslate"><span class="pre">arg_list</span></code> instead of <code class="docutils literal notranslate"><span class="pre">arg_str</span></code>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># WRONG: arg_str splits naively on spaces</span>
-<span class="n">vw</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--data &#39;my file.txt&#39;&quot;</span><span class="p">)</span>  <span class="c1"># Won&#39;t work correctly</span>
+<span class="n">vw</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="s2">"--data 'my file.txt'"</span><span class="p">)</span>  <span class="c1"># Won't work correctly</span>
 
 <span class="c1"># CORRECT: Use arg_list for precise control</span>
-<span class="n">vw</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="n">arg_list</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;--data&quot;</span><span class="p">,</span> <span class="s2">&quot;my file.txt&quot;</span><span class="p">])</span>
+<span class="n">vw</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="n">arg_list</span><span class="o">=</span><span class="p">[</span><span class="s2">"--data"</span><span class="p">,</span> <span class="s2">"my file.txt"</span><span class="p">])</span>
 </pre></div>
 </div>
 </section>
@@ -766,16 +766,16 @@
 <section id="feature-engineering">
 <h3>Feature Engineering<a class="headerlink" href="#feature-engineering" title="Link to this heading">¶</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Quadratic interactions between namespaces a and b</span>
-<span class="n">vw</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="n">q</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;ab&quot;</span><span class="p">],</span> <span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">vw</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="n">q</span><span class="o">=</span><span class="p">[</span><span class="s2">"ab"</span><span class="p">],</span> <span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
 <span class="c1"># Multiple quadratic interactions</span>
-<span class="n">vw</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="n">q</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;ab&quot;</span><span class="p">,</span> <span class="s2">&quot;ac&quot;</span><span class="p">,</span> <span class="s2">&quot;bc&quot;</span><span class="p">],</span> <span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">vw</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="n">q</span><span class="o">=</span><span class="p">[</span><span class="s2">"ab"</span><span class="p">,</span> <span class="s2">"ac"</span><span class="p">,</span> <span class="s2">"bc"</span><span class="p">],</span> <span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
 <span class="c1"># Cubic interactions</span>
-<span class="n">vw</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="n">cubic</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;abc&quot;</span><span class="p">],</span> <span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">vw</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="n">cubic</span><span class="o">=</span><span class="p">[</span><span class="s2">"abc"</span><span class="p">],</span> <span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
 <span class="c1"># General interactions syntax</span>
-<span class="n">vw</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="n">interactions</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;ab&quot;</span><span class="p">,</span> <span class="s2">&quot;abc&quot;</span><span class="p">],</span> <span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">vw</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="n">interactions</span><span class="o">=</span><span class="p">[</span><span class="s2">"ab"</span><span class="p">,</span> <span class="s2">"abc"</span><span class="p">],</span> <span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
@@ -796,13 +796,13 @@
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Save model after training</span>
 <span class="n">vw</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span>
     <span class="n">oaa</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
-    <span class="n">final_regressor</span><span class="o">=</span><span class="s2">&quot;model.vw&quot;</span><span class="p">,</span>  <span class="c1"># or f=&quot;model.vw&quot;</span>
+    <span class="n">final_regressor</span><span class="o">=</span><span class="s2">"model.vw"</span><span class="p">,</span>  <span class="c1"># or f="model.vw"</span>
     <span class="n">quiet</span><span class="o">=</span><span class="kc">True</span>
 <span class="p">)</span>
 
 <span class="c1"># Load existing model</span>
 <span class="n">vw</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span>
-    <span class="n">initial_regressor</span><span class="o">=</span><span class="s2">&quot;model.vw&quot;</span><span class="p">,</span>  <span class="c1"># or i=&quot;model.vw&quot;</span>
+    <span class="n">initial_regressor</span><span class="o">=</span><span class="s2">"model.vw"</span><span class="p">,</span>  <span class="c1"># or i="model.vw"</span>
     <span class="n">quiet</span><span class="o">=</span><span class="kc">True</span>
 <span class="p">)</span>
 </pre></div>
@@ -862,7 +862,7 @@
 <span class="n">config</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">get_config</span><span class="p">()</span>
 <span class="k">for</span> <span class="n">opt</span> <span class="ow">in</span> <span class="n">config</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">opt</span><span class="o">.</span><span class="n">value_supplied</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">opt</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">opt</span><span class="o">.</span><span class="n">value</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">opt</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">opt</span><span class="o">.</span><span class="n">value</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
@@ -872,18 +872,18 @@
 <h3>1. Duplicate Options<a class="headerlink" href="#duplicate-options" title="Link to this heading">¶</a></h3>
 <p>When using multiple configuration methods, options are merged. Duplicates result in the option being specified multiple times:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># This passes --oaa 5 --oaa 10 (might not be what you want)</span>
-<span class="n">vw</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--oaa 5&quot;</span><span class="p">,</span> <span class="n">oaa</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">vw</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="s2">"--oaa 5"</span><span class="p">,</span> <span class="n">oaa</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
 <section id="space-splitting-in-arg-str">
 <h3>2. Space-Splitting in arg_str<a class="headerlink" href="#space-splitting-in-arg-str" title="Link to this heading">¶</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">arg_str</span></code> is split by spaces, which can cause issues:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># WRONG: Splits into [&quot;--data&quot;, &quot;&#39;my&quot;, &quot;file.txt&#39;&quot;]</span>
-<span class="n">vw</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--data &#39;my file.txt&#39;&quot;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># WRONG: Splits into ["--data", "'my", "file.txt'"]</span>
+<span class="n">vw</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="s2">"--data 'my file.txt'"</span><span class="p">)</span>
 
 <span class="c1"># CORRECT: Use arg_list</span>
-<span class="n">vw</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="n">arg_list</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;--data&quot;</span><span class="p">,</span> <span class="s2">&quot;my file.txt&quot;</span><span class="p">])</span>
+<span class="n">vw</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="n">arg_list</span><span class="o">=</span><span class="p">[</span><span class="s2">"--data"</span><span class="p">,</span> <span class="s2">"my file.txt"</span><span class="p">])</span>
 </pre></div>
 </div>
 </section>
@@ -928,7 +928,7 @@ vw<span class="w"> </span>--help
 <span class="n">vw</span> <span class="o">=</span> <span class="n">Workspace</span><span class="p">(</span><span class="n">quiet</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">config</span> <span class="o">=</span> <span class="n">vw</span><span class="o">.</span><span class="n">get_config</span><span class="p">(</span><span class="n">filtered_enabled_reductions_only</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">opt</span> <span class="ow">in</span> <span class="n">config</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;--</span><span class="si">{</span><span class="n">opt</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">opt</span><span class="o">.</span><span class="n">help_str</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"--</span><span class="si">{</span><span class="n">opt</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">opt</span><span class="o">.</span><span class="n">help_str</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="n">vw</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>
 </pre></div>
 </div>

@@ -505,36 +505,36 @@
 <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="kn">import</span> <span class="n">figure</span>
 
-<span class="n">users</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Tom&quot;</span><span class="p">,</span> <span class="s2">&quot;Anna&quot;</span><span class="p">]</span>
-<span class="n">times_of_day</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;morning&quot;</span><span class="p">,</span> <span class="s2">&quot;afternoon&quot;</span><span class="p">]</span>
-<span class="n">actions</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;politics&quot;</span><span class="p">,</span> <span class="s2">&quot;sports&quot;</span><span class="p">,</span> <span class="s2">&quot;music&quot;</span><span class="p">,</span> <span class="s2">&quot;food&quot;</span><span class="p">,</span> <span class="s2">&quot;finance&quot;</span><span class="p">,</span> <span class="s2">&quot;health&quot;</span><span class="p">,</span> <span class="s2">&quot;camping&quot;</span><span class="p">]</span>
+<span class="n">users</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Tom"</span><span class="p">,</span> <span class="s2">"Anna"</span><span class="p">]</span>
+<span class="n">times_of_day</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"morning"</span><span class="p">,</span> <span class="s2">"afternoon"</span><span class="p">]</span>
+<span class="n">actions</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"politics"</span><span class="p">,</span> <span class="s2">"sports"</span><span class="p">,</span> <span class="s2">"music"</span><span class="p">,</span> <span class="s2">"food"</span><span class="p">,</span> <span class="s2">"finance"</span><span class="p">,</span> <span class="s2">"health"</span><span class="p">,</span> <span class="s2">"camping"</span><span class="p">]</span>
 
 <span class="n">USER_LIKED_ARTICLE</span> <span class="o">=</span> <span class="o">-</span><span class="mf">1.0</span>
 <span class="n">USER_DISLIKED_ARTICLE</span> <span class="o">=</span> <span class="mf">0.0</span>
 
 
 <span class="k">def</span><span class="w"> </span><span class="nf">get_cost</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">action</span><span class="p">,</span> <span class="n">switch</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;user&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Tom&quot;</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;politics&quot;</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">switch</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">"user"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"Tom"</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">"time_of_day"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"morning"</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">"politics"</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">switch</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">USER_LIKED_ARTICLE</span>
-        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;afternoon&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;music&quot;</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">switch</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">"time_of_day"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"afternoon"</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">"music"</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">switch</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">USER_LIKED_ARTICLE</span>
-        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;health&quot;</span> <span class="ow">and</span> <span class="n">switch</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">"time_of_day"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"morning"</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">"health"</span> <span class="ow">and</span> <span class="n">switch</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">USER_LIKED_ARTICLE</span>
-        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;afternoon&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;camping&quot;</span> <span class="ow">and</span> <span class="n">switch</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">"time_of_day"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"afternoon"</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">"camping"</span> <span class="ow">and</span> <span class="n">switch</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">USER_LIKED_ARTICLE</span>
-    <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;user&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Anna&quot;</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;sports&quot;</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">switch</span><span class="p">:</span>
+    <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">"user"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"Anna"</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">"time_of_day"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"morning"</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">"sports"</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">switch</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">USER_LIKED_ARTICLE</span>
         <span class="k">elif</span> <span class="p">(</span>
-            <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;afternoon&quot;</span>
-            <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;politics&quot;</span>
+            <span class="n">context</span><span class="p">[</span><span class="s2">"time_of_day"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"afternoon"</span>
+            <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">"politics"</span>
             <span class="ow">and</span> <span class="ow">not</span> <span class="n">switch</span>
         <span class="p">):</span>
             <span class="k">return</span> <span class="n">USER_LIKED_ARTICLE</span>
-        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;morning&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;food&quot;</span> <span class="ow">and</span> <span class="n">switch</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">context</span><span class="p">[</span><span class="s2">"time_of_day"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"morning"</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">"food"</span> <span class="ow">and</span> <span class="n">switch</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">USER_LIKED_ARTICLE</span>
-        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;afternoon&quot;</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">&quot;finance&quot;</span> <span class="ow">and</span> <span class="n">switch</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">context</span><span class="p">[</span><span class="s2">"time_of_day"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"afternoon"</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="s2">"finance"</span> <span class="ow">and</span> <span class="n">switch</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">USER_LIKED_ARTICLE</span>
 
     <span class="k">return</span> <span class="n">USER_DISLIKED_ARTICLE</span>
@@ -544,14 +544,14 @@
 <span class="k">def</span><span class="w"> </span><span class="nf">to_vw_example_format</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">cb_label</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">cb_label</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
         <span class="n">chosen_action</span><span class="p">,</span> <span class="n">cost</span><span class="p">,</span> <span class="n">prob</span> <span class="o">=</span> <span class="n">cb_label</span>
-    <span class="n">example_string</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
-    <span class="n">example_string</span> <span class="o">+=</span> <span class="s2">&quot;shared |User user=</span><span class="si">{}</span><span class="s2"> time_of_day=</span><span class="si">{}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
-        <span class="n">context</span><span class="p">[</span><span class="s2">&quot;user&quot;</span><span class="p">],</span> <span class="n">context</span><span class="p">[</span><span class="s2">&quot;time_of_day&quot;</span><span class="p">]</span>
+    <span class="n">example_string</span> <span class="o">=</span> <span class="s2">""</span>
+    <span class="n">example_string</span> <span class="o">+=</span> <span class="s2">"shared |User user=</span><span class="si">{}</span><span class="s2"> time_of_day=</span><span class="si">{}</span><span class="se">\n</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+        <span class="n">context</span><span class="p">[</span><span class="s2">"user"</span><span class="p">],</span> <span class="n">context</span><span class="p">[</span><span class="s2">"time_of_day"</span><span class="p">]</span>
     <span class="p">)</span>
     <span class="k">for</span> <span class="n">action</span> <span class="ow">in</span> <span class="n">actions</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">cb_label</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">action</span> <span class="o">==</span> <span class="n">chosen_action</span><span class="p">:</span>
-            <span class="n">example_string</span> <span class="o">+=</span> <span class="s2">&quot;0:</span><span class="si">{}</span><span class="s2">:</span><span class="si">{}</span><span class="s2"> &quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">cost</span><span class="p">,</span> <span class="n">prob</span><span class="p">)</span>
-        <span class="n">example_string</span> <span class="o">+=</span> <span class="s2">&quot;|Action article=</span><span class="si">{}</span><span class="s2"> </span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">action</span><span class="p">)</span>
+            <span class="n">example_string</span> <span class="o">+=</span> <span class="s2">"0:</span><span class="si">{}</span><span class="s2">:</span><span class="si">{}</span><span class="s2"> "</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">cost</span><span class="p">,</span> <span class="n">prob</span><span class="p">)</span>
+        <span class="n">example_string</span> <span class="o">+=</span> <span class="s2">"|Action article=</span><span class="si">{}</span><span class="s2"> </span><span class="se">\n</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">action</span><span class="p">)</span>
     <span class="c1"># Strip the last newline</span>
     <span class="k">return</span> <span class="n">example_string</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
 
@@ -589,13 +589,13 @@
         <span class="n">rows</span> <span class="o">=</span> <span class="n">itertools</span><span class="o">.</span><span class="n">product</span><span class="p">(</span><span class="o">*</span><span class="n">data_dict</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
         <span class="k">return</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="o">.</span><span class="n">from_records</span><span class="p">(</span><span class="n">rows</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">data_dict</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
 
-    <span class="n">df</span> <span class="o">=</span> <span class="n">expand_grid</span><span class="p">({</span><span class="s2">&quot;users&quot;</span><span class="p">:</span> <span class="n">users</span><span class="p">,</span> <span class="s2">&quot;times_of_day&quot;</span><span class="p">:</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="s2">&quot;actions&quot;</span><span class="p">:</span> <span class="n">actions</span><span class="p">})</span>
-    <span class="n">df</span><span class="p">[</span><span class="s2">&quot;cost&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span>
-        <span class="k">lambda</span> <span class="n">r</span><span class="p">:</span> <span class="n">cost_fun</span><span class="p">({</span><span class="s2">&quot;user&quot;</span><span class="p">:</span> <span class="n">r</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s2">&quot;time_of_day&quot;</span><span class="p">:</span> <span class="n">r</span><span class="p">[</span><span class="mi">1</span><span class="p">]},</span> <span class="n">r</span><span class="p">[</span><span class="mi">2</span><span class="p">]),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">expand_grid</span><span class="p">({</span><span class="s2">"users"</span><span class="p">:</span> <span class="n">users</span><span class="p">,</span> <span class="s2">"times_of_day"</span><span class="p">:</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="s2">"actions"</span><span class="p">:</span> <span class="n">actions</span><span class="p">})</span>
+    <span class="n">df</span><span class="p">[</span><span class="s2">"cost"</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span>
+        <span class="k">lambda</span> <span class="n">r</span><span class="p">:</span> <span class="n">cost_fun</span><span class="p">({</span><span class="s2">"user"</span><span class="p">:</span> <span class="n">r</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s2">"time_of_day"</span><span class="p">:</span> <span class="n">r</span><span class="p">[</span><span class="mi">1</span><span class="p">]},</span> <span class="n">r</span><span class="p">[</span><span class="mi">2</span><span class="p">]),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span>
     <span class="p">)</span>
 
     <span class="k">return</span> <span class="n">df</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span>
-        <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;users&quot;</span><span class="p">,</span> <span class="s2">&quot;times_of_day&quot;</span><span class="p">],</span> <span class="n">columns</span><span class="o">=</span><span class="s2">&quot;actions&quot;</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="s2">&quot;cost&quot;</span>
+        <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s2">"users"</span><span class="p">,</span> <span class="s2">"times_of_day"</span><span class="p">],</span> <span class="n">columns</span><span class="o">=</span><span class="s2">"actions"</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="s2">"cost"</span>
     <span class="p">)</span>
 
 
@@ -620,7 +620,7 @@
         <span class="n">time_of_day</span> <span class="o">=</span> <span class="n">choose_time_of_day</span><span class="p">(</span><span class="n">times_of_day</span><span class="p">)</span>
 
         <span class="c1"># 3. Pass context to vw to get an action</span>
-        <span class="n">context</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;user&quot;</span><span class="p">:</span> <span class="n">user</span><span class="p">,</span> <span class="s2">&quot;time_of_day&quot;</span><span class="p">:</span> <span class="n">time_of_day</span><span class="p">}</span>
+        <span class="n">context</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"user"</span><span class="p">:</span> <span class="n">user</span><span class="p">,</span> <span class="s2">"time_of_day"</span><span class="p">:</span> <span class="n">time_of_day</span><span class="p">}</span>
         <span class="n">action</span><span class="p">,</span> <span class="n">prob</span> <span class="o">=</span> <span class="n">get_action</span><span class="p">(</span><span class="n">vw</span><span class="p">,</span> <span class="n">context</span><span class="p">,</span> <span class="n">actions</span><span class="p">)</span>
 
         <span class="c1"># 4. Get cost of the action we chose</span>
@@ -644,8 +644,8 @@
 
 <span class="k">def</span><span class="w"> </span><span class="nf">plot_ctr</span><span class="p">(</span><span class="n">num_iterations</span><span class="p">,</span> <span class="n">ctr</span><span class="p">):</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_iterations</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">ctr</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;num_iterations&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;ctr&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">"num_iterations"</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">"ctr"</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
 </pre></div>
 </div>
@@ -660,7 +660,7 @@
 <span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">9</span><span class="p">),</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">80</span><span class="p">)</span>
 
 <span class="k">for</span> <span class="n">ep</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mi">11</span><span class="p">):</span>
-    <span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">&quot;--cb_explore_adf -q UA --quiet --epsilon &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">ep</span><span class="p">))</span>
+    <span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span><span class="s2">"--cb_explore_adf -q UA --quiet --epsilon "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">ep</span><span class="p">))</span>
     <span class="n">ctr</span> <span class="o">=</span> <span class="n">run_simulation</span><span class="p">(</span>
         <span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">users</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">get_cost</span><span class="p">,</span> <span class="n">switch_rewards</span>
     <span class="p">)</span>
@@ -669,37 +669,37 @@
 
 <span class="c1"># Instantiate learner in VW non-stationary epsilon</span>
 <span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span>
-    <span class="s2">&quot;--cb_explore_adf -q UA --quiet --epsilon_decay --model_count 1&quot;</span>
+    <span class="s2">"--cb_explore_adf -q UA --quiet --epsilon_decay --model_count 1"</span>
 <span class="p">)</span>
 <span class="n">ctr</span> <span class="o">=</span> <span class="n">run_simulation</span><span class="p">(</span>
     <span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">users</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">get_cost</span><span class="p">,</span> <span class="n">switch_rewards</span>
 <span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_iterations</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">ctr</span><span class="p">,</span> <span class="s2">&quot;--&quot;</span><span class="p">)</span>
-<span class="n">leg</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;Non-Stationary 1 Model&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_iterations</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">ctr</span><span class="p">,</span> <span class="s2">"--"</span><span class="p">)</span>
+<span class="n">leg</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">"Non-Stationary 1 Model"</span><span class="p">)</span>
 
 <span class="c1"># Instantiate learner in VW non-stationary epsilon</span>
 <span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span>
-    <span class="s2">&quot;--cb_explore_adf -q UA --quiet --epsilon_decay --model_count 4&quot;</span>
+    <span class="s2">"--cb_explore_adf -q UA --quiet --epsilon_decay --model_count 4"</span>
 <span class="p">)</span>
 <span class="n">ctr</span> <span class="o">=</span> <span class="n">run_simulation</span><span class="p">(</span>
     <span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">users</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">get_cost</span><span class="p">,</span> <span class="n">switch_rewards</span>
 <span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_iterations</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">ctr</span><span class="p">,</span> <span class="s2">&quot;--&quot;</span><span class="p">)</span>
-<span class="n">leg</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;Non-Stationary 4 Models&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_iterations</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">ctr</span><span class="p">,</span> <span class="s2">"--"</span><span class="p">)</span>
+<span class="n">leg</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">"Non-Stationary 4 Models"</span><span class="p">)</span>
 
 <span class="c1"># Instantiate learner in VW non-stationary epsilon</span>
 <span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span>
-    <span class="s2">&quot;--cb_explore_adf -q UA --quiet --epsilon_decay --model_count 32&quot;</span>
+    <span class="s2">"--cb_explore_adf -q UA --quiet --epsilon_decay --model_count 32"</span>
 <span class="p">)</span>
 <span class="n">ctr</span> <span class="o">=</span> <span class="n">run_simulation</span><span class="p">(</span>
     <span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">users</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">get_cost</span><span class="p">,</span> <span class="n">switch_rewards</span>
 <span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_iterations</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">ctr</span><span class="p">,</span> <span class="s2">&quot;--&quot;</span><span class="p">)</span>
-<span class="n">leg</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;Non-Stationary 32 Models&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_iterations</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">ctr</span><span class="p">,</span> <span class="s2">"--"</span><span class="p">)</span>
+<span class="n">leg</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">"Non-Stationary 32 Models"</span><span class="p">)</span>
 
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Accuracy of Models with Varying Epsilon Values&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">17</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Number of Iterations&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Click Through Rate&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">"Accuracy of Models with Varying Epsilon Values"</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">17</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">"Number of Iterations"</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">"Click Through Rate"</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">([</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">leg</span><span class="p">)</span>
 
@@ -718,37 +718,37 @@
 
 <span class="c1"># Instantiate learner in VW non-stationary epsilon</span>
 <span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span>
-    <span class="s2">&quot;--cb_explore_adf -q UA --quiet --epsilon_decay --model_count 1&quot;</span>
+    <span class="s2">"--cb_explore_adf -q UA --quiet --epsilon_decay --model_count 1"</span>
 <span class="p">)</span>
 <span class="n">ctr</span> <span class="o">=</span> <span class="n">run_simulation</span><span class="p">(</span>
     <span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">users</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">get_cost</span><span class="p">,</span> <span class="n">switch_rewards</span>
 <span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_iterations</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">ctr</span><span class="p">,</span> <span class="s2">&quot;--&quot;</span><span class="p">)</span>
-<span class="n">leg</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;Non-Stationary 1 Model&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_iterations</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">ctr</span><span class="p">,</span> <span class="s2">"--"</span><span class="p">)</span>
+<span class="n">leg</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">"Non-Stationary 1 Model"</span><span class="p">)</span>
 
 <span class="c1"># Instantiate learner in VW non-stationary epsilon</span>
 <span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span>
-    <span class="s2">&quot;--cb_explore_adf -q UA --quiet --epsilon_decay --model_count 4&quot;</span>
+    <span class="s2">"--cb_explore_adf -q UA --quiet --epsilon_decay --model_count 4"</span>
 <span class="p">)</span>
 <span class="n">ctr</span> <span class="o">=</span> <span class="n">run_simulation</span><span class="p">(</span>
     <span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">users</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">get_cost</span><span class="p">,</span> <span class="n">switch_rewards</span>
 <span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_iterations</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">ctr</span><span class="p">,</span> <span class="s2">&quot;--&quot;</span><span class="p">)</span>
-<span class="n">leg</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;Non-Stationary 4 Models&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_iterations</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">ctr</span><span class="p">,</span> <span class="s2">"--"</span><span class="p">)</span>
+<span class="n">leg</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">"Non-Stationary 4 Models"</span><span class="p">)</span>
 
 <span class="c1"># Instantiate learner in VW non-stationary epsilon</span>
 <span class="n">vw</span> <span class="o">=</span> <span class="n">vowpalwabbit</span><span class="o">.</span><span class="n">Workspace</span><span class="p">(</span>
-    <span class="s2">&quot;--cb_explore_adf -q UA --quiet --epsilon_decay --model_count 32&quot;</span>
+    <span class="s2">"--cb_explore_adf -q UA --quiet --epsilon_decay --model_count 32"</span>
 <span class="p">)</span>
 <span class="n">ctr</span> <span class="o">=</span> <span class="n">run_simulation</span><span class="p">(</span>
     <span class="n">vw</span><span class="p">,</span> <span class="n">num_iterations</span><span class="p">,</span> <span class="n">users</span><span class="p">,</span> <span class="n">times_of_day</span><span class="p">,</span> <span class="n">actions</span><span class="p">,</span> <span class="n">get_cost</span><span class="p">,</span> <span class="n">switch_rewards</span>
 <span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_iterations</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">ctr</span><span class="p">,</span> <span class="s2">&quot;--&quot;</span><span class="p">)</span>
-<span class="n">leg</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;Non-Stationary 32 Models&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num_iterations</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">ctr</span><span class="p">,</span> <span class="s2">"--"</span><span class="p">)</span>
+<span class="n">leg</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">"Non-Stationary 32 Models"</span><span class="p">)</span>
 
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Accuracy of Models with Varying Non-Stationary Model Counts&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">17</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Number of Iterations&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Click Through Rate&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">"Accuracy of Models with Varying Non-Stationary Model Counts"</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">17</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">"Number of Iterations"</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">"Click Through Rate"</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">([</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">leg</span><span class="p">)</span>
 
